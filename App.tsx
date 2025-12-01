@@ -15,8 +15,9 @@ import CardsView from './views/CardsView';
 import EmptyState from './components/EmptyState';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
+import { useUserProfile } from './hooks/useUserProfile';
 import { studyData as staticData } from './constants';
-import { StudyItem } from './types';
+import { StudyItem, Stats } from './types';
 
 const App: React.FC = () => {
     // Auth State
@@ -25,15 +26,29 @@ const App: React.FC = () => {
 
     // App State
     const [tab, setTab] = useState<string>('leitura');
-    const [savedIds, setSavedIds] = useState<string[]>([]);
     const [showStats, setShowStats] = useState(false);
     const [showPronounce, setShowPronounce] = useState(false);
     const [showImport, setShowImport] = useState(false);
     
     // Hooks
-    const { stats, recordResult, clearStats } = useStats();
-    // Use Firestore hook connected to current user
+    // 1. Items do Firestore (Textos)
     const { items: firebaseItems, addItem, deleteItem, loading: itemsLoading } = useStudyItems(user?.uid);
+    
+    // 2. Perfil do Usuário (Favoritos e Stats na Nuvem)
+    const { 
+        savedIds: cloudSavedIds, 
+        stats: cloudStats, 
+        updateFavorites: updateCloudFavorites, 
+        updateStats: updateCloudStats 
+    } = useUserProfile(user?.uid);
+
+    // 3. Estado Local (Fallback)
+    const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
+    const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
+
+    // Derived State (Decide se usa Nuvem ou Local)
+    const activeSavedIds = user ? cloudSavedIds : localSavedIds;
+    const activeStats = user ? cloudStats : localStats;
 
     // Auth Listener
     useEffect(() => {
@@ -44,17 +59,19 @@ const App: React.FC = () => {
         return () => unsubscribe();
     }, []);
 
-    // Load Local Settings (Saved IDs)
+    // Load Local Settings (Saved IDs) - Só carrega se não estiver logado
     useEffect(() => {
-        try {
-            const localSaved = localStorage.getItem('mandarin_hsk_recovery');
-            if (localSaved) {
-                setSavedIds(JSON.parse(localSaved));
+        if (!user) {
+            try {
+                const localSaved = localStorage.getItem('mandarin_hsk_recovery');
+                if (localSaved) {
+                    setLocalSavedIds(JSON.parse(localSaved));
+                }
+            } catch (e) {
+                console.error("Failed to load saved IDs", e);
             }
-        } catch (e) {
-            console.error("Failed to load saved IDs", e);
         }
-    }, []);
+    }, [user]);
 
     // Combine Data (Static + Firebase)
     const libraryData = useMemo(() => {
@@ -74,16 +91,52 @@ const App: React.FC = () => {
     const handleLogout = async () => {
         if (window.confirm("Deseja sair da conta?")) {
             await signOut(auth);
-            setSavedIds([]); // Optional: clear local saved state on logout
+            // Ao sair, o estado local assume (que estará vazio ou com dados antigos do localStorage)
         }
     };
 
     const toggleSave = (id: string) => {
-        const newIds = savedIds.includes(id) 
-            ? savedIds.filter(i => i !== id) 
-            : [...savedIds, id];
-        setSavedIds(newIds);
-        localStorage.setItem('mandarin_hsk_recovery', JSON.stringify(newIds));
+        const currentList = activeSavedIds;
+        const newIds = currentList.includes(id) 
+            ? currentList.filter(i => i !== id) 
+            : [...currentList, id];
+        
+        if (user) {
+            updateCloudFavorites(newIds);
+        } else {
+            setLocalSavedIds(newIds);
+            localStorage.setItem('mandarin_hsk_recovery', JSON.stringify(newIds));
+        }
+    };
+
+    const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general') => {
+        if (user) {
+            // Lógica de cálculo de estatísticas (replicada do hook local para o cloud)
+            const prev = activeStats;
+            const currentCounts = prev.wordCounts || {};
+            const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
+            
+            const newStats: Stats = {
+                correct: prev.correct + (isCorrect ? 1 : 0),
+                wrong: prev.wrong + (!isCorrect ? 1 : 0),
+                history: !isCorrect 
+                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50) 
+                    : prev.history,
+                wordCounts: { ...currentCounts, [word]: newCount }
+            };
+            updateCloudStats(newStats);
+        } else {
+            recordLocalResult(isCorrect, word, type);
+        }
+    };
+
+    const handleClearStats = () => {
+        if (user) {
+             const empty: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {} };
+             updateCloudStats(empty);
+        } else {
+            clearLocalStats();
+        }
     };
 
     const handleImportBatch = async (newItems: StudyItem[]) => {
@@ -99,6 +152,17 @@ const App: React.FC = () => {
             const { id, ...dataToSave } = item;
             await addItem(dataToSave);
         }
+    };
+
+    const handleSaveLabItem = async (item: StudyItem) => {
+        if (!user) {
+            alert("Você precisa estar logado para salvar.");
+            return;
+        }
+        // Remove ID to create a new entry in Firestore
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const { id, ...dataToSave } = item;
+        await addItem(dataToSave);
     };
 
     const handleDelete = async (id: string | number) => {
@@ -132,22 +196,29 @@ const App: React.FC = () => {
                 return (
                     <ReadingView 
                         data={libraryData} 
-                        savedIds={savedIds} 
+                        savedIds={activeSavedIds} 
                         onToggleSave={toggleSave} 
                         onOpenImport={() => setShowImport(true)}
                         onDeleteText={handleDelete}
                     />
                 );
             case 'revisao':
-                return <ReviewView data={libraryData} savedIds={savedIds} onRemove={toggleSave} />;
+                return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={toggleSave} />;
             case 'pratica':
-                return <PracticeView data={libraryData} savedIds={savedIds} onResult={recordResult} />;
+                return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
             case 'jogo':
-                return <GameView data={libraryData} onResult={recordResult} />;
+                return <GameView data={libraryData} onResult={handleRecordResult} />;
             case 'lab':
-                return <LabView data={libraryData} savedIds={savedIds} onResult={recordResult} />;
+                return (
+                    <LabView 
+                        data={libraryData} 
+                        savedIds={activeSavedIds} 
+                        onResult={handleRecordResult} 
+                        onSave={handleSaveLabItem}
+                    />
+                );
             case 'cards':
-                return <CardsView data={libraryData} savedIds={savedIds} onResult={recordResult} />;
+                return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
             default:
                 return null;
         }
@@ -177,9 +248,9 @@ const App: React.FC = () => {
             
             {showStats && (
                 <StatsModal 
-                    stats={stats} 
+                    stats={activeStats} 
                     onClose={() => setShowStats(false)} 
-                    onClear={clearStats} 
+                    onClear={handleClearStats} 
                 />
             )}
             
@@ -187,7 +258,7 @@ const App: React.FC = () => {
                 <PronunciationModal 
                     data={libraryData} 
                     onClose={() => setShowPronounce(false)} 
-                    onResult={recordResult} 
+                    onResult={handleRecordResult} 
                 />
             )}
 

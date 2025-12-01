@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import EmptyState from '../components/EmptyState';
+import Icon from '../components/Icon';
 import { StudyItem } from '../types';
 import { useSpeech } from '../hooks/useSpeech';
 
@@ -8,13 +9,15 @@ interface LabViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, text: string) => void;
+    onSave: (item: StudyItem) => void;
 }
 
-const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult }) => {
+const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult, onSave }) => {
     const [puzzle, setPuzzle] = useState<any>(null); 
     const [userOrder, setUserOrder] = useState<any[]>([]); 
     const [pool, setPool] = useState<any[]>([]); 
     const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle'); 
+    const [isSaved, setIsSaved] = useState(false);
     const speak = useSpeech();
 
     const initPuzzle = () => { 
@@ -33,6 +36,7 @@ const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult }) => {
                 setPool(p.shuffledItems); 
                 setUserOrder([]); 
                 setStatus('idle'); 
+                setIsSaved(false);
             } 
         } 
     }, [savedIds, puzzle]);
@@ -59,6 +63,13 @@ const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult }) => {
         } 
     };
 
+    const handleSaveClick = () => {
+        if (puzzle && puzzle.target) {
+            onSave(puzzle.target);
+            setIsSaved(true);
+        }
+    };
+
     const reset = () => setPuzzle(null);
 
     if (savedIds.length === 0) return <EmptyState msg="Precisa de vocabulário para o laboratório." icon="flask-conical" />; 
@@ -83,7 +94,32 @@ const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult }) => {
                     </button>
                 ))}
             </div>
-            {status === 'success' && (<button onClick={reset} className="w-full py-3 bg-brand-600 text-white rounded-xl font-bold shadow-lg animate-pop mt-4">Próximo Desafio</button>)}
+            
+            {status === 'success' && (
+                <div className="flex flex-col gap-3 mt-4 animate-pop">
+                    <button 
+                        onClick={handleSaveClick} 
+                        disabled={isSaved}
+                        className={`w-full py-3 rounded-xl font-bold shadow-sm flex items-center justify-center gap-2 transition-all ${isSaved ? 'bg-green-100 text-green-700' : 'bg-white border-2 border-brand-100 text-brand-600 hover:bg-brand-50'}`}
+                    >
+                        {isSaved ? (
+                            <>
+                                <Icon name="check-circle" size={20} />
+                                Salvo na Biblioteca!
+                            </>
+                        ) : (
+                            <>
+                                <Icon name="plus" size={20} />
+                                Salvar Cópia na Biblioteca
+                            </>
+                        )}
+                    </button>
+                    
+                    <button onClick={reset} className="w-full py-3 bg-brand-600 text-white rounded-xl font-bold shadow-lg hover:bg-brand-700 active:scale-95 transition-all">
+                        Próximo Desafio
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
