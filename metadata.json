@@ -1,0 +1,7 @@
+{
+  "name": "MemorizaTudo",
+  "description": "An interactive language learning application focusing on reading, listening, and deep thinking exercises.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
