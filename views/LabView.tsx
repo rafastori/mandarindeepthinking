@@ -1,125 +1,165 @@
-
-import React, { useState, useEffect } from 'react';
-import EmptyState from '../components/EmptyState';
+import React, { useState, useMemo, useEffect } from 'react';
 import Icon from '../components/Icon';
+import EmptyState from '../components/EmptyState';
 import { StudyItem } from '../types';
-import { useSpeech } from '../hooks/useSpeech';
+import { useSpeech } from '../hooks/useSpeech'; // <--- 1. Importando a fala
 
 interface LabViewProps {
     data: StudyItem[];
-    savedIds: string[];
-    onResult: (correct: boolean, text: string) => void;
-    onSave: (item: StudyItem) => void;
+    onResult: (correct: boolean, word: string) => void;
 }
 
-const LabView: React.FC<LabViewProps> = ({ data, savedIds, onResult, onSave }) => {
-    const [puzzle, setPuzzle] = useState<any>(null); 
-    const [userOrder, setUserOrder] = useState<any[]>([]); 
-    const [pool, setPool] = useState<any[]>([]); 
-    const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle'); 
-    const [isSaved, setIsSaved] = useState(false);
-    const speak = useSpeech();
+const LabView: React.FC<LabViewProps> = ({ data, onResult }) => {
+    const speak = useSpeech(); // <--- 2. Inicializando
+    const [currentIdx, setCurrentIdx] = useState(0);
+    const [selectedTokens, setSelectedTokens] = useState<{id: number, text: string}[]>([]);
+    const [shuffledTokens, setShuffledTokens] = useState<{id: number, text: string}[]>([]);
+    const [status, setStatus] = useState<'playing' | 'correct' | 'wrong'>('playing');
 
-    const initPuzzle = () => { 
-        const validSentences = data.filter(s => s.keywords.some(k => savedIds.includes(k.id))); 
-        if (validSentences.length === 0) return null; 
-        const target = validSentences[Math.floor(Math.random() * validSentences.length)]; 
-        const shuffled = [...target.tokens].sort(() => 0.5 - Math.random()); 
-        return { target, shuffledItems: shuffled.map((txt, i) => ({ id: i, text: txt, used: false })) }; 
+    // Filtra apenas frases longas (com mais de 1 token) para o jogo fazer sentido
+    const sentences = useMemo(() => {
+        return data.filter(item => item.tokens && item.tokens.length > 1)
+                   .sort(() => 0.5 - Math.random());
+    }, [data]);
+
+    const currentSentence = sentences[currentIdx];
+
+    // Reinicia o jogo para a frase atual
+    const initGame = () => {
+        if (!currentSentence) return;
+        
+        const tokens = currentSentence.tokens.map((t, i) => ({ id: i, text: t }));
+        setShuffledTokens([...tokens].sort(() => 0.5 - Math.random()));
+        setSelectedTokens([]);
+        setStatus('playing');
     };
 
-    useEffect(() => { 
-        if (!puzzle) { 
-            const p = initPuzzle(); 
-            if(p) { 
-                setPuzzle(p); 
-                setPool(p.shuffledItems); 
-                setUserOrder([]); 
-                setStatus('idle'); 
-                setIsSaved(false);
-            } 
-        } 
-    }, [savedIds, puzzle]);
+    useEffect(() => {
+        initGame();
+    }, [currentSentence]);
 
-    const handleSelect = (idx: number) => { 
-        if(status === 'success') return; 
-        const item = pool[idx]; 
-        const nextIndex = userOrder.length; 
-        if (item.text !== puzzle.target.tokens[nextIndex]) { 
-            setStatus('error'); 
-            onResult(false, puzzle.target.tokens[nextIndex] + " (Order)"); 
-            setTimeout(() => setStatus('idle'), 500); 
-            return; 
-        } 
-        const newPool = [...pool]; 
-        newPool[idx].used = true; 
-        setPool(newPool); 
-        const newOrder = [...userOrder, item]; 
-        setUserOrder(newOrder); 
-        if (newOrder.length === puzzle.target.tokens.length) { 
-            setStatus('success'); 
-            onResult(true, "Full Sentence"); 
-            speak(puzzle.target.chinese, puzzle.target.language || 'zh'); 
-        } 
+    const handleSelect = (tokenObj: {id: number, text: string}) => {
+        if (status !== 'playing') return;
+        setSelectedTokens([...selectedTokens, tokenObj]);
+        setShuffledTokens(shuffledTokens.filter(t => t.id !== tokenObj.id));
     };
 
-    const handleSaveClick = () => {
-        if (puzzle && puzzle.target) {
-            onSave(puzzle.target);
-            setIsSaved(true);
+    const handleUndo = (tokenObj: {id: number, text: string}) => {
+        if (status !== 'playing') return;
+        setSelectedTokens(selectedTokens.filter(t => t.id !== tokenObj.id));
+        setShuffledTokens([...shuffledTokens, tokenObj]);
+    };
+
+    const checkAnswer = () => {
+        const normalize = (str: string) => str.replace(/\s+/g, '').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase();
+        
+        const attempt = normalize(selectedTokens.map(t => t.text).join(''));
+        const target = normalize(currentSentence.tokens.join(''));
+
+        if (attempt === target) {
+            setStatus('correct');
+            
+            // <--- 3. FALA A FRASE AO ACERTAR
+            speak(currentSentence.chinese, currentSentence.language || 'zh');
+
+            setTimeout(() => {
+                onResult(true, "sentence_builder");
+                if (currentIdx < sentences.length - 1) {
+                    setCurrentIdx(prev => prev + 1);
+                } else {
+                    alert("Parabéns! Você completou todas as frases.");
+                    setCurrentIdx(0);
+                }
+            }, 2000); // Tempo aumentado para 2s para ouvir o áudio
+        } else {
+            setStatus('wrong');
+            onResult(false, "sentence_builder");
         }
     };
 
-    const reset = () => setPuzzle(null);
+    if (sentences.length === 0) {
+        return (
+            <div className="flex flex-col items-center justify-center h-full text-center p-6">
+                <EmptyState msg="Laboratório de Frases" icon="flask-conical" />
+                <p className="text-slate-400 text-sm mt-2">Adicione textos com frases completas para desbloquear este laboratório.</p>
+            </div>
+        );
+    }
 
-    if (savedIds.length === 0) return <EmptyState msg="Precisa de vocabulário para o laboratório." icon="flask-conical" />; 
-    if (!puzzle) return <div className="p-10 text-center text-slate-400">Carregando...</div>;
-
-    const isGerman = puzzle.target.language === 'de';
+    const isGerman = currentSentence.language === 'de';
 
     return (
-        <div className="p-4 flex flex-col h-full max-w-md mx-auto pb-24">
-            <div className="bg-slate-800 rounded-xl p-4 mb-4 shadow-lg">
-                <span className="text-[10px] text-brand-400 font-bold uppercase tracking-widest">Alvo</span>
-                <p className="text-white text-lg leading-relaxed">{puzzle.target.translation}</p>
-            </div>
-            <div className={`bg-white border-2 rounded-xl min-h-[100px] p-3 mb-6 flex flex-wrap gap-2 content-start transition-colors ${status === 'error' ? 'border-red-400 bg-red-50 animate-shake' : 'border-slate-200'} ${status === 'success' ? 'border-brand-500 bg-brand-50' : ''}`}>
-                {userOrder.length === 0 && <span className="text-slate-300 w-full text-center self-center">Toque nas palavras abaixo</span>}
-                {userOrder.map((item, i) => (<span key={i} className="bg-brand-600 text-white px-2 py-1 rounded shadow animate-pop">{item.text}</span>))}
-            </div>
-            <div className="flex flex-wrap justify-center gap-3 mb-auto">
-                {pool.map((item, i) => (
-                    <button key={i} onClick={() => !item.used && handleSelect(i)} className={`px-4 py-2 rounded-lg text-lg ${isGerman ? 'font-sans' : 'font-chinese'} shadow-sm border-b-2 transition-all ${item.used ? 'opacity-0 pointer-events-none scale-90' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50 active:translate-y-1 active:border-b-0'}`}>
-                        {item.text}
-                    </button>
-                ))}
-            </div>
-            
-            {status === 'success' && (
-                <div className="flex flex-col gap-3 mt-4 animate-pop">
-                    <button 
-                        onClick={handleSaveClick} 
-                        disabled={isSaved}
-                        className={`w-full py-3 rounded-xl font-bold shadow-sm flex items-center justify-center gap-2 transition-all ${isSaved ? 'bg-green-100 text-green-700' : 'bg-white border-2 border-brand-100 text-brand-600 hover:bg-brand-50'}`}
-                    >
-                        {isSaved ? (
-                            <>
-                                <Icon name="check-circle" size={20} />
-                                Salvo na Biblioteca!
-                            </>
-                        ) : (
-                            <>
-                                <Icon name="plus" size={20} />
-                                Salvar Cópia na Biblioteca
-                            </>
-                        )}
-                    </button>
-                    
-                    <button onClick={reset} className="w-full py-3 bg-brand-600 text-white rounded-xl font-bold shadow-lg hover:bg-brand-700 active:scale-95 transition-all">
-                        Próximo Desafio
-                    </button>
+        <div className="p-6 h-full flex flex-col pb-24 max-w-md mx-auto">
+            <div className="flex-1 flex flex-col justify-center">
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 text-center block">
+                    Frase {currentIdx + 1} de {sentences.length}
+                </span>
+                
+                {/* Área da Resposta */}
+                <div className={`min-h-[120px] bg-slate-100 rounded-2xl p-4 mb-6 flex flex-wrap gap-2 content-start border-2 transition-colors ${
+                    status === 'correct' ? 'border-green-400 bg-green-50' : 
+                    status === 'wrong' ? 'border-red-400 bg-red-50' : 'border-slate-200'
+                }`}>
+                    {selectedTokens.map((token) => (
+                        <button 
+                            key={token.id} 
+                            onClick={() => handleUndo(token)}
+                            className={`bg-white px-3 py-2 rounded-lg shadow-sm font-medium ${isGerman ? 'font-sans' : 'font-chinese'} animate-pop hover:bg-red-50 hover:text-red-500`}
+                        >
+                            {token.text}
+                        </button>
+                    ))}
+                    {selectedTokens.length === 0 && (
+                        <span className="text-slate-400 text-sm w-full text-center mt-8 self-center">Toque nas palavras abaixo...</span>
+                    )}
                 </div>
-            )}
+
+                {/* Tradução */}
+                <p className="text-center text-slate-500 italic mb-8 text-sm px-4">
+                    "{currentSentence.translation}"
+                </p>
+
+                {/* Área das Peças */}
+                <div className="flex flex-wrap gap-2 justify-center content-center min-h-[100px]">
+                    {shuffledTokens.map((token) => (
+                        <button
+                            key={token.id}
+                            onClick={() => handleSelect(token)}
+                            className={`bg-white border border-slate-200 text-slate-700 px-4 py-3 rounded-xl shadow-sm hover:border-brand-300 hover:shadow-md transition-all active:scale-95 ${isGerman ? 'font-sans' : 'font-chinese'} text-lg`}
+                        >
+                            {token.text}
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            {/* Controles */}
+            <div className="flex gap-3 mt-auto pt-6">
+                <button 
+                    onClick={initGame} 
+                    className="p-4 text-slate-400 hover:text-slate-600 rounded-xl bg-slate-50 active:bg-slate-200 transition-colors"
+                    title="Reiniciar Frase"
+                >
+                    <Icon name="rotate-ccw" size={24} />
+                </button>
+                
+                {status === 'wrong' ? (
+                    <button 
+                        onClick={initGame} 
+                        className="flex-1 bg-red-500 text-white font-bold rounded-xl shadow-lg hover:bg-red-600 transition-all py-4 animate-pulse"
+                    >
+                        Tentar Novamente
+                    </button>
+                ) : (
+                    <button 
+                        onClick={checkAnswer} 
+                        disabled={shuffledTokens.length > 0 || status === 'correct'}
+                        className="flex-1 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 disabled:opacity-50 disabled:shadow-none transition-all py-4"
+                    >
+                        {status === 'correct' ? 'Muito Bem!' : 'Verificar'}
+                    </button>
+                )}
+            </div>
         </div>
     );
 };

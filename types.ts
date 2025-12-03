@@ -1,4 +1,4 @@
-// types.ts
+import { Timestamp } from 'firebase/firestore';
 
 export interface Keyword {
     id: string;
@@ -9,14 +9,18 @@ export interface Keyword {
 }
 
 export interface StudyItem {
-    id: number | string; // Aceita ID numérico (antigo) ou string (Firebase)
-    chinese: string;
+    id: number | string;
+    chinese: string;     // Se for Texto: O texto todo. Se for Palavra: A palavra.
     pinyin: string;
     translation: string;
     tokens: string[];
     keywords: Keyword[];
     language?: 'zh' | 'de';
-    createdAt?: any; // <--- NOVA LINHA: Necessária para o banco de dados ordenar
+    createdAt?: any;
+    
+    // NOVOS CAMPOS PARA RESOLVER O PROBLEMA:
+    type?: 'text' | 'word';  // 'text' = Artigo/Frase (Aparece na Leitura). 'word' = Card (Não aparece).
+    originalSentence?: string; // Guarda a frase completa de onde a palavra saiu (para o Cloze).
 }
 
 export interface StatsHistory {
@@ -33,7 +37,6 @@ export interface Stats {
     wordCounts: Record<string, number>;
 }
 
-// Declaração global para bibliotecas externas
 declare global {
     interface Window {
         pinyinPro: {
