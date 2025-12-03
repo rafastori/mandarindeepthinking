@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import EmptyState from '../components/EmptyState';
 import Icon from '../components/Icon';
 import { StudyItem } from '../types';
+import { getSavedItems, CardItem } from '../utils/cardUtils';
 
 interface CardsViewProps {
     data: StudyItem[];
@@ -10,51 +11,49 @@ interface CardsViewProps {
 }
 
 const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
-    const [idx, setIdx] = useState(0); 
+    // Estado da Sessão
+    const [deck, setDeck] = useState<CardItem[]>([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [flipped, setFlipped] = useState(false);
     const [isFinished, setIsFinished] = useState(false);
-    const [sessionKey, setSessionKey] = useState(0); 
-    
-    const cards = useMemo(() => { 
-        let list: any[] = []; 
-        data.forEach(item => {
-            // CASO 1: Card solto (Firebase)
-            if (savedIds.includes(item.id.toString())) {
-                list.push({
-                    id: item.id,
-                    word: item.chinese,
-                    pinyin: item.pinyin,
-                    meaning: item.translation,
-                    sentence: { chinese: item.originalSentence || item.chinese },
-                    language: item.language
-                });
-            }
-            // CASO 2: Keyword dentro de texto
-            if (item.keywords) {
-                item.keywords.forEach(k => { 
-                    if (savedIds.includes(k.id)) {
-                        list.push({ ...k, sentence: item, language: item.language }); 
-                    }
-                });
-            }
-        });
+    const [isLoading, setIsLoading] = useState(true);
+
+    // Função que cria o baralho (Extraída para ser usada no Início e no Reiniciar)
+    const createNewDeck = useCallback(() => {
+        setIsLoading(true);
+        const items = getSavedItems(data, savedIds);
         
-        // CORREÇÃO AQUI: Filtra pelo CONTEÚDO da palavra, não pelo ID.
-        // Isso evita que "Hallo" apareça 2 vezes se foi salva em textos diferentes.
-        const unique = list.filter((v, i, a) => 
-            a.findIndex(t => (t.word.toLowerCase().trim() === v.word.toLowerCase().trim())) === i
-        );
+        if (items.length > 0) {
+            const shuffled = [...items].sort(() => 0.5 - Math.random());
+            setDeck(shuffled);
+        } else {
+            setDeck([]);
+        }
         
-        // Embaralha
-        return unique.sort(() => 0.5 - Math.random()); 
-    }, [savedIds, data, sessionKey]);
+        setCurrentIndex(0);
+        setFlipped(false);
+        setIsFinished(false);
+        setIsLoading(false);
+    }, [data, savedIds]);
+
+    // EFEITO DE INICIALIZAÇÃO COM TRAVA DE SEGURANÇA 🔒
+    useEffect(() => {
+        // Só cria o baralho se ele estiver VAZIO e tivermos dados para carregar.
+        // Isso impede que o baralho seja recriado quando você acerta uma carta (que atualiza o App.tsx).
+        if (deck.length === 0 && data.length > 0) {
+            createNewDeck();
+        } else if (data.length === 0 && !isLoading) {
+             setIsLoading(false); // Caso não tenha dados mesmo
+        }
+    }, [data, savedIds, deck.length, createNewDeck, isLoading]);
 
     const handleRestart = () => {
-        setIsFinished(false);
-        setIdx(0);
-        setFlipped(false);
-        setSessionKey(prev => prev + 1); 
+        createNewDeck(); // Força a recriação manual
     };
+
+    // --- RENDERIZAÇÃO ---
+
+    if (isLoading && deck.length === 0) return <div className="flex h-full items-center justify-center text-slate-400">Embaralhando...</div>;
 
     if (isFinished) {
         return (
@@ -62,9 +61,9 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
                 <div className="bg-blue-100 p-6 rounded-full mb-6 shadow-sm">
                     <Icon name="layers" size={64} className="text-blue-600" />
                 </div>
-                <h2 className="text-2xl font-bold text-slate-800 mb-2">Revisão Completa!</h2>
+                <h2 className="text-2xl font-bold text-slate-800 mb-2">Sessão Concluída!</h2>
                 <p className="text-slate-500 mb-8 max-w-xs">
-                    Você revisou <span className="font-bold text-slate-700">{cards.length} cartas</span> nesta sessão.
+                    Você revisou <span className="font-bold text-slate-700">{deck.length} cartas</span>.
                 </p>
                 <button 
                     onClick={handleRestart}
@@ -77,9 +76,13 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
         );
     }
 
-    if (cards.length === 0) return <EmptyState msg="Sem cards para revisar." icon="layers" />;
+    if (deck.length === 0) return <EmptyState msg="Sem cards para revisar." icon="layers" />;
 
-    const card = cards[idx]; 
+    const card = deck[currentIndex];
+    
+    // Proteção se o índice sair do limite
+    if (!card) return null;
+
     const isGerman = card.language === 'de';
 
     const getFontSize = (text: string) => {
@@ -89,23 +92,27 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
     };
 
     const next = (correct: boolean) => { 
-        onResult(correct, card.word); 
+        // 1. Vira a carta
         setFlipped(false); 
         
+        // 2. Registra resultado
+        onResult(correct, card.word); 
+
+        // 3. Aguarda animação (250ms) para trocar o conteúdo
         setTimeout(() => {
-            if (idx < cards.length - 1) {
-                setIdx(idx + 1);
+            if (currentIndex < deck.length - 1) {
+                setCurrentIndex(prev => prev + 1);
             } else {
                 setIsFinished(true);
             }
-        }, 200); 
+        }, 250); 
     };
 
     return (
         <div className="p-6 h-full flex flex-col items-center justify-center max-w-md mx-auto pb-24">
             <div className="w-full mb-4 flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-widest">
-                <span>Card {idx + 1} de {cards.length}</span>
-                <span>{Math.round(((idx + 1) / cards.length) * 100)}%</span>
+                <span>Card {currentIndex + 1} de {deck.length}</span>
+                <span>{Math.round(((currentIndex + 1) / deck.length) * 100)}%</span>
             </div>
 
             <div className="relative w-full aspect-[3/4] cursor-pointer perspective-1000 group" onClick={() => setFlipped(!flipped)}>
@@ -116,9 +123,11 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
                         <span className="text-xs text-slate-400 uppercase tracking-widest mb-4">
                             {isGerman ? 'Palavra' : 'Hanzi'}
                         </span>
+                        
                         <h2 className={`${getFontSize(card.word)} ${isGerman ? 'font-sans' : 'font-chinese'} font-bold text-slate-800 text-center break-words w-full`}>
                             {card.word}
                         </h2>
+                        
                         <span className="mt-8 text-xs text-brand-500 font-bold">Toque para virar</span>
                     </div>
 
@@ -130,9 +139,9 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
                         <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
                         <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
                         
-                        {card.sentence.chinese && card.sentence.chinese !== card.word && (
+                        {card.context && card.context !== card.word && (
                             <div className={`bg-white/10 p-3 rounded text-sm italic ${isGerman ? 'font-sans' : 'font-chinese'}`}>
-                                {card.sentence.chinese}
+                                {card.context}
                             </div>
                         )}
                     </div>
