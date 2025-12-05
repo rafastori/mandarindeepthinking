@@ -198,7 +198,7 @@ const App: React.FC = () => {
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
-            case 'jogo': return <GameView data={libraryData} onResult={handleRecordResult} />;
+            case 'jogo': return <GameView />;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;
             case 'criativo': 
                 return (

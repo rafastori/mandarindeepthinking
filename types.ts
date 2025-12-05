@@ -1,3 +1,4 @@
+
 import { Timestamp } from 'firebase/firestore';
 
 export interface Keyword {
@@ -35,6 +36,20 @@ export interface Stats {
     wrong: number;
     history: StatsHistory[];
     wordCounts: Record<string, number>;
+}
+
+export interface Player {
+  id: string;
+  name: string;
+  avatarUrl?: string;
+}
+
+export interface GameRoom {
+  id: string;
+  name: string;
+  players: Player[];
+  hostId: string;
+  createdAt: any;
 }
 
 declare global {
