@@ -1,6 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-// Schema para texto corrido (já existente)
 const studyItemSchema = {
   type: Type.ARRAY,
   items: {
@@ -16,7 +15,6 @@ const studyItemSchema = {
   }
 };
 
-// Schema para Card Único (já existente)
 const wordCardSchema = {
   type: Type.OBJECT,
   properties: {
@@ -28,7 +26,6 @@ const wordCardSchema = {
   required: ["word", "pinyin", "meaning", "example"]
 };
 
-// --- NOVO: Schema para Deck de Jogo (Array de Cards) ---
 const gameDeckSchema = {
   type: Type.ARRAY,
   items: {
@@ -44,7 +41,6 @@ const gameDeckSchema = {
 };
 
 export default async function handler(req, res) {
-  // ... (Headers de CORS mantêm iguais) ...
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -54,15 +50,14 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // Adicionamos 'topic' e 'difficulty' no destructuring
-    const { text, mode, targetLanguage = 'zh', type = 'text', word, context, topic, difficulty } = req.body; 
+    // ATUALIZAÇÃO 1: Recebemos 'exclude' do corpo da requisição
+    const { text, mode, targetLanguage = 'zh', type = 'text', word, context, topic, difficulty, exclude = [] } = req.body; 
+    
     const apiKey = process.env.VITE_API_KEY || process.env.GEMINI_API_KEY;
-
     if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
 
     const ai = new GoogleGenAI({ apiKey });
 
-    // --- ROTA 1: GERAR CARD ÚNICO (Clique do Usuário) ---
     if (type === 'card') {
         const prompt = `Analyze word: "${word}". Context: "${context}". Language: ${targetLanguage === 'de' ? 'German' : 'Mandarin'}. Output PT-BR.`;
         const response = await ai.models.generateContent({
@@ -73,16 +68,21 @@ export default async function handler(req, res) {
         return res.status(200).json(JSON.parse(response.text || "{}"));
     }
 
-    // --- ROTA 2: GERAR DECK DE JOGO (Novo) ---
     if (type === 'game_deck') {
         const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
-        // Gera 5 cartas baseadas no tópico (pode aumentar para 10 se quiser)
+        
+        // ATUALIZAÇÃO 2: Adicionamos a lista de exclusão ao prompt
+        const excludeInstruction = exclude.length > 0 
+            ? `IMPORTANT: Do NOT generate any of these words: ${exclude.join(', ')}.` 
+            : '';
+
         const prompt = `
             Generate 5 distinct, useful words related to the topic: "${topic}".
             Level: ${difficulty} (CEFR).
             Language: ${langName}.
             Output PT-BR for meanings.
             Ensure words are different from each other.
+            ${excludeInstruction}
         `;
         
         const response = await ai.models.generateContent({
@@ -90,14 +90,13 @@ export default async function handler(req, res) {
             contents: prompt,
             config: { 
                 responseMimeType: "application/json", 
-                responseSchema: gameDeckSchema, // Usa o schema de Array
-                temperature: 0.7 // Um pouco de criatividade
+                responseSchema: gameDeckSchema,
+                temperature: 0.8 // Aumentei um pouco a criatividade para evitar repetições
             },
         });
         return res.status(200).json(JSON.parse(response.text || "[]"));
     }
 
-    // --- ROTA 3: PROCESSAMENTO DE TEXTO (Padrão) ---
     let task = targetLanguage === 'de' ? "German text analysis" : "Mandarin text analysis";
     if (mode === 'translate') task = `Translate PT-BR to ${targetLanguage === 'de' ? 'German' : 'Mandarin'}`;
 

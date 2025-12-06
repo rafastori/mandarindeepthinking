@@ -2,7 +2,6 @@
 
 import { StudyItem, Keyword } from "../types";
 
-// Interface específica para as cartas do jogo
 export interface GameCard {
     word: string;
     pinyin: string;
@@ -10,12 +9,10 @@ export interface GameCard {
     example: string;
 }
 
-// LÓGICA INTELIGENTE: Alterna entre Local (IDX) e Produção (Vercel)
 const API_URL = import.meta.env.DEV 
   ? 'https://memorizatudo.vercel.app/api/generate' 
   : '/api/generate';
 
-// 1. Processamento em Lote (Texto Completo)
 export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: 'zh' | 'de' = 'zh'): Promise<StudyItem[]> => {
   try {
     const response = await fetch(API_URL, {
@@ -45,7 +42,6 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
   }
 };
 
-// 2. NOVA FUNÇÃO: Gera card único ao clicar (ESSA É A QUE FALTAVA)
 export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: 'zh' | 'de' = 'zh'): Promise<Keyword> => {
     try {
         const response = await fetch(API_URL, {
@@ -75,11 +71,12 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
     }
 };
 
-// 3. MULTIPLAYER: Gera um Deck de Cartas baseado em Tópico e Dificuldade
+// ATUALIZAÇÃO AQUI: Novo parâmetro excludeWords
 export const generateGameDeck = async (
     topic: string, 
     difficulty: string, 
-    targetLanguage: 'zh' | 'de'
+    targetLanguage: 'zh' | 'de',
+    excludeWords: string[] = [] // Padrão vazio
 ): Promise<GameCard[]> => {
     try {
         const response = await fetch(API_URL, {
@@ -89,7 +86,8 @@ export const generateGameDeck = async (
                 type: 'game_deck', 
                 topic, 
                 difficulty,
-                targetLanguage 
+                targetLanguage,
+                exclude: excludeWords // Envia para o backend
             }),
         });
 

@@ -39,10 +39,9 @@ export interface Player {
   id: string;
   name: string;
   avatarUrl?: string;
-  score?: number; // Adicionado score
+  score?: number; 
 }
 
-// --- NOVO: Interface para a Carta do Jogo ---
 export interface GameCard {
     word: string;
     pinyin: string;
@@ -50,7 +49,6 @@ export interface GameCard {
     example: string;
 }
 
-// --- ATUALIZADO: Interface da Sala com Estado de Jogo ---
 export interface GameRoom {
   id: string;
   name: string;
@@ -58,16 +56,21 @@ export interface GameRoom {
   hostId: string;
   createdAt: any;
   
-  // Controle da Partida
-  status: 'lobby' | 'review' | 'playing' | 'finished';
+  // CORREÇÃO AQUI: Adicionado 'regenerating'
+  status: 'lobby' | 'review' | 'playing' | 'finished' | 'regenerating';
+  
   config?: {
       topic: string;
       lang: 'zh' | 'de';
       diff: string;
   };
-  deck: GameCard[];        // Baralho atual
-  currentCardIndex?: number; // Qual carta estamos jogando
-  currentTurnPlayerId?: string; // De quem é a vez
+  
+  targetScore: number; 
+  teamScore: number;   
+  
+  deck: GameCard[];        
+  currentCardIndex?: number;
+  roundAnswers?: Record<string, boolean>; 
 }
 
 declare global {
