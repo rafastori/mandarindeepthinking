@@ -2,6 +2,14 @@
 
 import { StudyItem, Keyword } from "../types";
 
+// Interface específica para as cartas do jogo
+export interface GameCard {
+    word: string;
+    pinyin: string;
+    meaning: string;
+    example: string;
+}
+
 // LÓGICA INTELIGENTE: Alterna entre Local (IDX) e Produção (Vercel)
 const API_URL = import.meta.env.DEV 
   ? 'https://memorizatudo.vercel.app/api/generate' 
@@ -63,6 +71,32 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
         };
     } catch (error) {
         console.error("Card Error:", error);
+        throw error;
+    }
+};
+
+// 3. MULTIPLAYER: Gera um Deck de Cartas baseado em Tópico e Dificuldade
+export const generateGameDeck = async (
+    topic: string, 
+    difficulty: string, 
+    targetLanguage: 'zh' | 'de'
+): Promise<GameCard[]> => {
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                type: 'game_deck', 
+                topic, 
+                difficulty,
+                targetLanguage 
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar cartas do jogo");
+        return await response.json();
+    } catch (error) {
+        console.error("Game Deck Error:", error);
         throw error;
     }
 };

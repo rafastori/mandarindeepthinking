@@ -1,4 +1,3 @@
-
 import { Timestamp } from 'firebase/firestore';
 
 export interface Keyword {
@@ -11,17 +10,15 @@ export interface Keyword {
 
 export interface StudyItem {
     id: number | string;
-    chinese: string;     // Se for Texto: O texto todo. Se for Palavra: A palavra.
+    chinese: string;
     pinyin: string;
     translation: string;
     tokens: string[];
     keywords: Keyword[];
     language?: 'zh' | 'de';
     createdAt?: any;
-    
-    // NOVOS CAMPOS PARA RESOLVER O PROBLEMA:
-    type?: 'text' | 'word';  // 'text' = Artigo/Frase (Aparece na Leitura). 'word' = Card (Não aparece).
-    originalSentence?: string; // Guarda a frase completa de onde a palavra saiu (para o Cloze).
+    type?: 'text' | 'word';
+    originalSentence?: string;
 }
 
 export interface StatsHistory {
@@ -42,14 +39,35 @@ export interface Player {
   id: string;
   name: string;
   avatarUrl?: string;
+  score?: number; // Adicionado score
 }
 
+// --- NOVO: Interface para a Carta do Jogo ---
+export interface GameCard {
+    word: string;
+    pinyin: string;
+    meaning: string;
+    example: string;
+}
+
+// --- ATUALIZADO: Interface da Sala com Estado de Jogo ---
 export interface GameRoom {
   id: string;
   name: string;
   players: Player[];
   hostId: string;
   createdAt: any;
+  
+  // Controle da Partida
+  status: 'lobby' | 'review' | 'playing' | 'finished';
+  config?: {
+      topic: string;
+      lang: 'zh' | 'de';
+      diff: string;
+  };
+  deck: GameCard[];        // Baralho atual
+  currentCardIndex?: number; // Qual carta estamos jogando
+  currentTurnPlayerId?: string; // De quem é a vez
 }
 
 declare global {
