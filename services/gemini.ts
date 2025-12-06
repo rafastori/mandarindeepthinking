@@ -1,13 +1,9 @@
 /// <reference types="vite/client" />
 
-import { StudyItem, Keyword } from "../types";
+import { StudyItem, Keyword, GameCard } from "../types";
 
-export interface GameCard {
-    word: string;
-    pinyin: string;
-    meaning: string;
-    example: string;
-}
+// Exportamos a interface também daqui se precisar, ou usamos a do types.ts
+export { type GameCard } from "../types";
 
 const API_URL = import.meta.env.DEV 
   ? 'https://memorizatudo.vercel.app/api/generate' 
@@ -71,12 +67,11 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
     }
 };
 
-// ATUALIZAÇÃO AQUI: Novo parâmetro excludeWords
 export const generateGameDeck = async (
     topic: string, 
     difficulty: string, 
     targetLanguage: 'zh' | 'de',
-    excludeWords: string[] = [] // Padrão vazio
+    excludeWords: string[] = []
 ): Promise<GameCard[]> => {
     try {
         const response = await fetch(API_URL, {
@@ -87,7 +82,7 @@ export const generateGameDeck = async (
                 topic, 
                 difficulty,
                 targetLanguage,
-                exclude: excludeWords // Envia para o backend
+                exclude: excludeWords
             }),
         });
 

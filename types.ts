@@ -1,5 +1,3 @@
-import { Timestamp } from 'firebase/firestore';
-
 export interface Keyword {
     id: string;
     word: string;
@@ -42,11 +40,13 @@ export interface Player {
   score?: number; 
 }
 
+// ATUALIZAÇÃO: Card agora tem distratores
 export interface GameCard {
     word: string;
     pinyin: string;
     meaning: string;
     example: string;
+    distractors: string[]; // <--- NOVO
 }
 
 export interface GameRoom {
@@ -56,7 +56,6 @@ export interface GameRoom {
   hostId: string;
   createdAt: any;
   
-  // CORREÇÃO AQUI: Adicionado 'regenerating'
   status: 'lobby' | 'review' | 'playing' | 'finished' | 'regenerating';
   
   config?: {
@@ -69,6 +68,15 @@ export interface GameRoom {
   teamScore: number;   
   
   deck: GameCard[];        
+  
+  // MUDANÇA TOTAL NA LÓGICA DE CONTROLE
+  // Fila de índices de cartas disponíveis (ex: [0, 1, 2, 5])
+  cardQueue?: number[]; 
+  
+  // Mapeia qual carta está com qual jogador { 'user123': 0 }
+  activeHands?: Record<string, number>; 
+  
+  // Mantemos para compatibilidade temporária, mas não usaremos mais da mesma forma
   currentCardIndex?: number;
   roundAnswers?: Record<string, boolean>; 
 }

@@ -26,6 +26,7 @@ const wordCardSchema = {
   required: ["word", "pinyin", "meaning", "example"]
 };
 
+// ATUALIZAÇÃO: Schema agora inclui 'distractors'
 const gameDeckSchema = {
   type: Type.ARRAY,
   items: {
@@ -33,10 +34,15 @@ const gameDeckSchema = {
     properties: {
       word: { type: Type.STRING, description: "The word in target language" },
       pinyin: { type: Type.STRING, description: "Pronunciation" },
-      meaning: { type: Type.STRING, description: "Translation" },
-      example: { type: Type.STRING, description: "A simple usage example" }
+      meaning: { type: Type.STRING, description: "The correct translation (PT-BR)" },
+      example: { type: Type.STRING, description: "A simple usage example" },
+      distractors: { 
+          type: Type.ARRAY, 
+          items: { type: Type.STRING },
+          description: "3 plausible but INCORRECT translations in PT-BR to confuse the player."
+      }
     },
-    required: ["word", "pinyin", "meaning", "example"]
+    required: ["word", "pinyin", "meaning", "example", "distractors"]
   }
 };
 
@@ -50,10 +56,9 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // ATUALIZAÇÃO 1: Recebemos 'exclude' do corpo da requisição
     const { text, mode, targetLanguage = 'zh', type = 'text', word, context, topic, difficulty, exclude = [] } = req.body; 
-    
     const apiKey = process.env.VITE_API_KEY || process.env.GEMINI_API_KEY;
+
     if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
 
     const ai = new GoogleGenAI({ apiKey });
@@ -70,18 +75,17 @@ export default async function handler(req, res) {
 
     if (type === 'game_deck') {
         const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
-        
-        // ATUALIZAÇÃO 2: Adicionamos a lista de exclusão ao prompt
         const excludeInstruction = exclude.length > 0 
             ? `IMPORTANT: Do NOT generate any of these words: ${exclude.join(', ')}.` 
             : '';
 
+        // ATUALIZAÇÃO: Pedimos 10 cartas e distratores
         const prompt = `
-            Generate 5 distinct, useful words related to the topic: "${topic}".
+            Generate 10 distinct, useful words related to the topic: "${topic}".
             Level: ${difficulty} (CEFR).
             Language: ${langName}.
             Output PT-BR for meanings.
-            Ensure words are different from each other.
+            For each word, provide 3 'distractors' (incorrect meanings) that are plausible but wrong.
             ${excludeInstruction}
         `;
         
@@ -91,12 +95,13 @@ export default async function handler(req, res) {
             config: { 
                 responseMimeType: "application/json", 
                 responseSchema: gameDeckSchema,
-                temperature: 0.8 // Aumentei um pouco a criatividade para evitar repetições
+                temperature: 0.8
             },
         });
         return res.status(200).json(JSON.parse(response.text || "[]"));
     }
 
+    // Lógica padrão de texto...
     let task = targetLanguage === 'de' ? "German text analysis" : "Mandarin text analysis";
     if (mode === 'translate') task = `Translate PT-BR to ${targetLanguage === 'de' ? 'German' : 'Mandarin'}`;
 
