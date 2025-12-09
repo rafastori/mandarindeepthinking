@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Rápido Gemini</title>
+</head>
+<body>
+    <h1>Diagnóstico de Conexão Gemini</h1>
+    <button onclick="testarConexao()">Testar Conexão Direta</button>
+    <div id="resultado" style="margin-top: 20px; white-space: pre-wrap; font-family: monospace;"></div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.run/@google/genai"
+        }
+      }
+    </script>
+
+    <script type="module">
+        import { GoogleGenAI } from "@google/genai";
+
+        // COLE SUA CHAVE AQUI PARA O TESTE
+        const API_KEY = "AIzaSyDDAzUEIUJQBnsmGMeb7FJwYUE2jvdAO-4"; 
+
+        window.testarConexao = async () => {
+            const output = document.getElementById('resultado');
+            output.innerText = "Testando conexão com gemini-1.5-flash...\n";
+
+            try {
+                if (API_KEY === "SUA_CHAVE_AQUI") {
+                    throw new Error("Você esqueceu de colar a chave no arquivo test-api.html!");
+                }
+
+                const ai = new GoogleGenAI({ apiKey: API_KEY });
+                
+                // Teste simples de geração
+                const response = await ai.models.generateContent({
+                    model: 'gemini-1.5-flash',
+                    contents: 'Say "Hello, connection works!"',
+                });
+
+                const text = response.text();
+                output.innerText += `\n✅ SUCESSO!\nResposta da IA: ${text}`;
+
+            } catch (error) {
+                console.error(error);
+                output.innerText += `\n❌ FALHA:\n${error.message}`;
+                
+                if (error.message.includes("403") || error.message.includes("401")) {
+                    output.innerText += "\n\n-> DIAGNÓSTICO: Chave inválida ou API não habilitada no Google Cloud.";
+                } else if (error.message.includes("404")) {
+                    output.innerText += "\n\n-> DIAGNÓSTICO: Modelo não encontrado (verifique o nome).";
+                }
+            }
+        };
+    </script>
+</body>
+</html>

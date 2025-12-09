@@ -1,5 +1,7 @@
+// Usando a biblioteca que funcionou no seu teste
 import { GoogleGenAI, Type } from "@google/genai";
 
+// Schemas configurados com 'Type' (sintaxe da @google/genai)
 const studyItemSchema = {
   type: Type.ARRAY,
   items: {
@@ -26,20 +28,19 @@ const wordCardSchema = {
   required: ["word", "pinyin", "meaning", "example"]
 };
 
-// ATUALIZAÇÃO: Schema agora inclui 'distractors'
 const gameDeckSchema = {
   type: Type.ARRAY,
   items: {
     type: Type.OBJECT,
     properties: {
-      word: { type: Type.STRING, description: "The word in target language" },
+      word: { type: Type.STRING, description: "Word" },
       pinyin: { type: Type.STRING, description: "Pronunciation" },
-      meaning: { type: Type.STRING, description: "The correct translation (PT-BR)" },
-      example: { type: Type.STRING, description: "A simple usage example" },
+      meaning: { type: Type.STRING, description: "Translation (PT-BR)" },
+      example: { type: Type.STRING, description: "Example sentence" },
       distractors: { 
           type: Type.ARRAY, 
           items: { type: Type.STRING },
-          description: "3 plausible but INCORRECT translations in PT-BR to confuse the player."
+          description: "3 plausible but INCORRECT translations in PT-BR"
       }
     },
     required: ["word", "pinyin", "meaning", "example", "distractors"]
@@ -47,9 +48,10 @@ const gameDeckSchema = {
 };
 
 export default async function handler(req, res) {
+  // Headers CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
   res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
 
   if (req.method === 'OPTIONS') return res.status(200).end();
@@ -57,40 +59,48 @@ export default async function handler(req, res) {
 
   try {
     const { text, mode, targetLanguage = 'zh', type = 'text', word, context, topic, difficulty, exclude = [] } = req.body; 
+    
     const apiKey = process.env.VITE_API_KEY || process.env.GEMINI_API_KEY;
-
     if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
 
+    // Inicializa com a biblioteca NOVA
     const ai = new GoogleGenAI({ apiKey });
+    
+    // MODELO: Usamos o que você confirmou que funciona
+    const MODEL_NAME = 'gemini-2.5-flash';
 
+    // --- 1. GERAÇÃO DE CARD ---
     if (type === 'card') {
         const prompt = `Analyze word: "${word}". Context: "${context}". Language: ${targetLanguage === 'de' ? 'German' : 'Mandarin'}. Output PT-BR.`;
+        
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
+            model: MODEL_NAME,
             contents: prompt,
-            config: { responseMimeType: "application/json", responseSchema: wordCardSchema },
+            config: {
+                responseMimeType: "application/json",
+                responseSchema: wordCardSchema,
+            }
         });
-        return res.status(200).json(JSON.parse(response.text || "{}"));
+        // Na lib @google/genai, .text pode ser propriedade direta ou função dependendo da versão exata,
+        // mas o padrão JSON geralmente vem tratado ou acessível via .text() ou .text
+        const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+        return res.status(200).json(JSON.parse(jsonText || "{}"));
     }
 
+    // --- 2. GERAÇÃO DE JOGO ---
     if (type === 'game_deck') {
         const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
-        const excludeInstruction = exclude.length > 0 
-            ? `IMPORTANT: Do NOT generate any of these words: ${exclude.join(', ')}.` 
-            : '';
+        const excludeInstruction = exclude.length > 0 ? `Avoid words: ${exclude.join(', ')}.` : '';
 
-        // ATUALIZAÇÃO: Pedimos 10 cartas e distratores
         const prompt = `
-            Generate 10 distinct, useful words related to the topic: "${topic}".
-            Level: ${difficulty} (CEFR).
-            Language: ${langName}.
-            Output PT-BR for meanings.
-            For each word, provide 3 'distractors' (incorrect meanings) that are plausible but wrong.
+            Generate 5 distinct words for topic: "${topic}".
+            Level: ${difficulty}. Language: ${langName}.
+            Output PT-BR meanings.
             ${excludeInstruction}
         `;
         
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
+            model: MODEL_NAME,
             contents: prompt,
             config: { 
                 responseMimeType: "application/json", 
@@ -98,28 +108,39 @@ export default async function handler(req, res) {
                 temperature: 0.8
             },
         });
-        return res.status(200).json(JSON.parse(response.text || "[]"));
+        
+        const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+        return res.status(200).json(JSON.parse(jsonText || "[]"));
     }
 
-    // Lógica padrão de texto...
+    // --- 3. IMPORTAÇÃO DE TEXTO ---
     let task = targetLanguage === 'de' ? "German text analysis" : "Mandarin text analysis";
     if (mode === 'translate') task = `Translate PT-BR to ${targetLanguage === 'de' ? 'German' : 'Mandarin'}`;
 
     const prompt = `
       ${task}. Text: "${text}"
-      RULES: 1. Return JSON array. 2. Segment text. 3. 'keywords' array MUST BE EMPTY [].
+      RULES: 
+      1. Return JSON array. 
+      2. Segment text. 
+      3. 'keywords' array MUST BE EMPTY [].
+      4. TRANSLATE TO PORTUGUESE (PT-BR).
     `;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
-      config: { responseMimeType: "application/json", responseSchema: studyItemSchema, temperature: 0.1 },
+        model: MODEL_NAME,
+        contents: prompt,
+        config: { 
+            responseMimeType: "application/json", 
+            responseSchema: studyItemSchema, 
+            temperature: 0.1 
+        },
     });
 
-    res.status(200).json(JSON.parse(response.text || "[]"));
+    const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+    res.status(200).json(JSON.parse(jsonText || "[]"));
 
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).json({ error: error.message });
+    console.error("ERRO API:", error);
+    res.status(500).json({ error: error.message || "Erro interno" });
   }
 }

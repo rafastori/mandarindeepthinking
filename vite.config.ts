@@ -1,12 +1,11 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa'; // <--- 1. Importamos o plugin aqui
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // --- SUAS CONFIGURAÇÕES ANTIGAS (MANTIDAS) ---
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -20,15 +19,20 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       }
     },
-
-    // --- LISTA DE PLUGINS (ONDE A MÁGICA ACONTECE) ---
     plugins: [
-      react(), // Seu plugin React original
+      react(), 
       
-      // 2. Adicionamos a configuração do PWA aqui dentro
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['logo.png'],
+        // --- AQUI ESTÁ A CORREÇÃO MÁGICA ---
+        workbox: {
+            // Se o usuário tentar acessar algo offline, joga pro index.html
+            navigateFallback: '/index.html',
+            // MAS... se a url começar com /api, NÃO intercepta (deixa ir pro servidor)
+            navigateFallbackDenylist: [/^\/api/], 
+        },
+        // ------------------------------------
         manifest: {
           name: 'MemorizaTudo',
           short_name: 'MemorizaTudo',
