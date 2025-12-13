@@ -9,7 +9,7 @@ import ImportModal from './components/ImportModal';
 import ReadingView from './views/ReadingView';
 import ReviewView from './views/ReviewView';
 import PracticeView from './views/PracticeView';
-import GameView from './views/GameView';
+import GamesHub from './views/GamesHub';
 import CreativeView from './views/CreativeView';
 import LabView from './views/LabView';
 import CardsView from './views/CardsView';
@@ -198,7 +198,7 @@ const App: React.FC = () => {
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
-            case 'jogo': return <GameView />;
+            case 'jogo': return <GamesHub/>;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;
             case 'criativo': 
                 return (
