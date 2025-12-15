@@ -8,7 +8,7 @@ import GameRoom from './components/GameRoom';
 import SelectionPhase from './components/SelectionPhase';
 import GameOver from './components/GameOver';
 import { Loader2 } from 'lucide-react';
-import { generateGameData } from './services/geminiService';
+import { generateGameData } from "../../services/gemini";
 import * as Firestore from './services/firestoreService';
 
 interface PolyQuestProps {

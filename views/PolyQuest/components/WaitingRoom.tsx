@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Player, GameState, Language } from '../types';
 import Button from './Button';
 import { Users, Copy, CheckCircle2, Circle, Wand2, Lock, Unlock } from 'lucide-react';
-import { generateSourceMaterial } from '../services/geminiService';
+// ✅ CORREÇÃO: Usando serviço unificado da raiz
+import { generateSourceMaterial } from '../../../services/gemini';
 
 interface WaitingRoomProps {
   gameState: GameState;
-  playerId: string; // Current user ID
+  playerId: string;
   onStartSelection: () => void;
   onUpdateSettings: (settings: Partial<GameState>) => void;
   onToggleReady: (playerId: string) => void;
@@ -39,9 +40,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
     }
   };
 
-  // Logic to determine if text length is sufficient
-  // CJK languages (Mandarin, Japanese) don't use spaces, so we count characters.
-  // Others count words by splitting spaces.
   const isCJK = gameState.sourceLanguage === Language.MANDARIN || gameState.sourceLanguage === Language.JAPANESE;
   const currentCount = isCJK 
     ? gameState.sourceText.length 
@@ -54,7 +52,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
     <div className="min-h-screen bg-slate-50 p-4 md:p-8 flex items-center justify-center">
       <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
         
-        {/* Left Column: Player List */}
         <div className="lg:col-span-5 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col h-full">
           <div className="p-6 border-b border-slate-100 bg-slate-50">
             <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
@@ -101,7 +98,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
           </div>
         </div>
 
-        {/* Right Column: Configuration */}
         <div className="lg:col-span-7 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden flex flex-col">
           <div className="p-6 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
             <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
@@ -114,7 +110,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
           </div>
 
           <div className="p-6 space-y-6 flex-1">
-            {/* Language Selection */}
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-slate-500 mb-1">Idioma do Texto (Origem)</label>
@@ -123,7 +118,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
                   value={gameState.sourceLanguage}
                   onChange={(e) => {
                     const newLang = e.target.value as Language;
-                    // Reset text when language changes to ensure content matches TTS voice
                     onUpdateSettings({ 
                       sourceLanguage: newLang,
                       sourceText: newLang !== gameState.sourceLanguage ? '' : gameState.sourceText
@@ -147,7 +141,6 @@ const WaitingRoom: React.FC<WaitingRoomProps> = ({
               </div>
             </div>
 
-            {/* Source Text Input */}
             <div className="flex flex-col h-full min-h-[200px]">
               <div className="flex justify-between items-end mb-2">
                  <label className="block text-sm font-medium text-slate-500">Texto Base</label>
