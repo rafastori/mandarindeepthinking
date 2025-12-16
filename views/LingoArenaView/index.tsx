@@ -23,17 +23,17 @@ const shuffleArray = <T,>(array: T[]): T[] => {
     return newArray;
 };
 
-const GameView: React.FC = () => {
+const LingoArenaView: React.FC = () => {
     const [gameRooms, setGameRooms] = useState<GameRoom[]>([]);
     const [activeRoom, setActiveRoom] = useState<GameRoom | null>(null);
     const [newRoomName, setNewRoomName] = useState('');
     const [user, setUser] = useState<User | null>(null);
-    
+
     // Config States
     const [selectedTopics, setSelectedTopics] = useState<string[]>([TOPICS[0]]);
-    const [selectedLang, setSelectedLang] = useState<'zh'|'de'>('zh');
+    const [selectedLang, setSelectedLang] = useState<'zh' | 'de'>('zh');
     const [selectedDiff, setSelectedDiff] = useState('Iniciante');
-    const [targetScore, setTargetScore] = useState(20); 
+    const [targetScore, setTargetScore] = useState(20);
     const [loadingDeck, setLoadingDeck] = useState(false);
 
     const updateTimeoutRef = useRef<any>(null);
@@ -48,7 +48,7 @@ const GameView: React.FC = () => {
         const unsubscribe = onSnapshot(collection(db, 'gameRooms'), (snapshot) => {
             const rooms = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as GameRoom));
             setGameRooms(rooms);
-            
+
             if (activeRoom) {
                 const updated = rooms.find(r => r.id === activeRoom.id);
                 if (!updated) setActiveRoom(null);
@@ -135,30 +135,30 @@ const GameView: React.FC = () => {
             const excludeList = currentDeck.map(c => c.word);
 
             const newCards = await generateGameDeck(
-                topic, 
-                activeRoom.config?.diff || selectedDiff, 
+                topic,
+                activeRoom.config?.diff || selectedDiff,
                 activeRoom.config?.lang || selectedLang,
                 excludeList
             );
-            
+
             const ref = doc(db, 'gameRooms', activeRoom.id);
-            
+
             if (isRefill) {
                 // REFILL: Adiciona novas cartas ao deck E à fila (queue)
                 // Precisamos calcular os índices das novas cartas
                 const startIndex = currentDeck.length;
                 const newIndices = newCards.map((_, i) => startIndex + i);
-                
-                await updateDoc(ref, { 
-                    deck: [...currentDeck, ...newCards], 
+
+                await updateDoc(ref, {
+                    deck: [...currentDeck, ...newCards],
                     cardQueue: [...(activeRoom.cardQueue || []), ...newIndices], // Adiciona ao fim da fila
-                    status: 'playing' 
+                    status: 'playing'
                 });
             } else {
                 // SETUP INICIAL
                 await updateDoc(ref, { deck: newCards, status: 'review' });
             }
-        } catch(e) { console.error(e); alert("Erro ao gerar."); }
+        } catch (e) { console.error(e); alert("Erro ao gerar."); }
         finally { setLoadingDeck(false); }
     };
 
@@ -170,7 +170,7 @@ const GameView: React.FC = () => {
         const shuffledQueue = shuffleArray(indices);
 
         await updateDoc(doc(db, 'gameRooms', activeRoom.id), {
-            status: 'playing', 
+            status: 'playing',
             cardQueue: shuffledQueue,
             activeHands: {}, // Ninguém tem carta ainda
             teamScore: 0 // Começa com 0
@@ -183,7 +183,7 @@ const GameView: React.FC = () => {
     };
 
     const deleteRoom = async (id: string) => {
-        if(window.confirm("Excluir?")) {
+        if (window.confirm("Excluir?")) {
             await deleteDoc(doc(db, 'gameRooms', id));
             setActiveRoom(null);
         }
@@ -193,10 +193,10 @@ const GameView: React.FC = () => {
         if (!user) return;
         const ref = doc(db, 'gameRooms', id);
         const snap = await getDoc(ref);
-        if(snap.exists()){
+        if (snap.exists()) {
             const data = snap.data() as GameRoom;
             const updated = data.players.filter(p => p.id !== user.uid);
-            if(updated.length === 0) await deleteDoc(ref);
+            if (updated.length === 0) await deleteDoc(ref);
             else {
                 // Se sair, devolve a carta para a fila? Opcional. Vamos simplificar e descartar.
                 // Mas precisamos limpar a mão dele no activeHands
@@ -213,7 +213,7 @@ const GameView: React.FC = () => {
     const handleGameAction = async (result: 'CORRECT' | 'WRONG' | 'PASS' | 'GRAB') => {
         if (!activeRoom || !user) return;
         const ref = doc(db, 'gameRooms', activeRoom.id);
-        
+
         let newTeamScore = activeRoom.teamScore || 0;
         const currentHands = { ...(activeRoom.activeHands || {}) };
         let currentQueue = [...(activeRoom.cardQueue || [])];
@@ -232,7 +232,7 @@ const GameView: React.FC = () => {
                 const nextCard = currentQueue.shift(); // Tira do topo
                 if (nextCard !== undefined) currentHands[user.uid] = nextCard;
             }
-        } 
+        }
         else {
             // Processa resultado da carta atual
             if (currentCardIndex === undefined) return; // Segurança
@@ -268,7 +268,7 @@ const GameView: React.FC = () => {
         // Ajuste: Se o jogo começou e score <= 0 -> Perdeu.
         // Vamos considerar que se alguém errou e foi pra <= 0, perdeu.
         // Se for o GRAB inicial, score é 0, não perde.
-        const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG'; 
+        const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG';
 
         // Checagem de Refill (Se fila vazia e deck pequeno)
         // Se a fila está vazia e alguém tentou pegar carta (GRAB ou Auto-Pull falhou)
@@ -280,22 +280,22 @@ const GameView: React.FC = () => {
             await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [] });
         } else if (needsRefill && activeRoom.status !== 'regenerating') {
             // Entra em modo refill, salva estado atual
-            await updateDoc(ref, { 
-                status: 'regenerating', 
-                teamScore: newTeamScore, 
-                players: updatedPlayers, 
-                activeHands: currentHands, 
-                cardQueue: currentQueue 
+            await updateDoc(ref, {
+                status: 'regenerating',
+                teamScore: newTeamScore,
+                players: updatedPlayers,
+                activeHands: currentHands,
+                cardQueue: currentQueue
             });
             // Dispara geração
             setTimeout(() => handleGenerateCards(true), 100);
         } else {
             // Segue o jogo
-            await updateDoc(ref, { 
-                teamScore: newTeamScore, 
-                players: updatedPlayers, 
-                activeHands: currentHands, 
-                cardQueue: currentQueue 
+            await updateDoc(ref, {
+                teamScore: newTeamScore,
+                players: updatedPlayers,
+                activeHands: currentHands,
+                cardQueue: currentQueue
             });
         }
     };
@@ -309,9 +309,9 @@ const GameView: React.FC = () => {
                 <div className="bg-white p-4 shadow-sm border-b flex justify-between items-center z-20">
                     <div>
                         <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-                             <Icon name="users" size={20} className="text-brand-600"/> {activeRoom.name}
+                            <Icon name="users" size={20} className="text-brand-600" /> {activeRoom.name}
                         </h2>
-                        {activeRoom.status === 'lobby' ? <span className="text-xs text-slate-400">Lobby</span> : 
+                        {activeRoom.status === 'lobby' ? <span className="text-xs text-slate-400">Lobby</span> :
                             <div className="flex items-center gap-2 mt-1">
                                 <div className="h-2 w-24 bg-slate-200 rounded-full overflow-hidden">
                                     <div className={`h-full transition-all duration-500 ${activeRoom.teamScore < 0 ? 'bg-red-500' : 'bg-brand-500'}`} style={{ width: `${Math.min(100, Math.max(0, ((activeRoom.teamScore || 0) / (activeRoom.targetScore || 20)) * 100))}%` }} />
@@ -346,7 +346,7 @@ const GameView: React.FC = () => {
                 )}
 
                 {activeRoom?.status === 'lobby' && (
-                    <Lobby 
+                    <Lobby
                         room={activeRoom} isHost={activeRoom.hostId === user.uid}
                         selectedTopics={selectedTopics} selectedLang={selectedLang} selectedDiff={selectedDiff} targetScore={targetScore} loadingDeck={loadingDeck}
                         onToggleTopic={toggleTopic} setLang={setSelectedLang} setDiff={setSelectedDiff} setTargetScore={setTargetScore}
@@ -370,4 +370,4 @@ const GameView: React.FC = () => {
     );
 };
 
-export default GameView;
+export default LingoArenaView;

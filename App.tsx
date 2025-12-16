@@ -9,7 +9,9 @@ import ImportModal from './components/ImportModal';
 import ReadingView from './views/ReadingView';
 import ReviewView from './views/ReviewView';
 import PracticeView from './views/PracticeView';
-import GameView from './views/GameView';
+import LingoArenaView from './views/LingoArenaView';
+import PolyQuestView from './views/PolyQuestView';
+import GameSelector from './components/GameSelector';
 import CreativeView from './views/CreativeView';
 import LabView from './views/LabView';
 import CardsView from './views/CardsView';
@@ -27,10 +29,11 @@ const App: React.FC = () => {
     const [showStats, setShowStats] = useState(false);
     const [showPronounce, setShowPronounce] = useState(false);
     const [showImport, setShowImport] = useState(false);
-    
+    const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
+
     const { items: firebaseItems, addItem, deleteItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
-    
+
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
 
@@ -51,6 +54,13 @@ const App: React.FC = () => {
             if (localSaved) setLocalSavedIds(JSON.parse(localSaved));
         }
     }, [user]);
+
+    // Reset game selection when changing tabs
+    useEffect(() => {
+        if (tab !== 'jogo') {
+            setSelectedGame('selector');
+        }
+    }, [tab]);
 
     const libraryData = useMemo(() => [...firebaseItems, ...staticData], [firebaseItems]);
 
@@ -81,10 +91,10 @@ const App: React.FC = () => {
     };
 
     const toggleSave = (id: string) => {
-        const newIds = activeSavedIds.includes(id) 
-            ? activeSavedIds.filter(i => i !== id) 
+        const newIds = activeSavedIds.includes(id)
+            ? activeSavedIds.filter(i => i !== id)
             : [...activeSavedIds, id];
-        
+
         if (user) updateCloudFavorites(newIds);
         else {
             setLocalSavedIds(newIds);
@@ -97,18 +107,18 @@ const App: React.FC = () => {
             alert("Faça login para salvar palavras.");
             return;
         }
-        
+
         const newItem: Omit<StudyItem, 'id'> = {
             chinese: cardData.word,
             pinyin: cardData.pinyin,
             translation: cardData.meaning,
-            tokens: [cardData.word], 
+            tokens: [cardData.word],
             keywords: [cardData],
             language: cardData.language,
             type: 'word',
             originalSentence: context
         };
-        
+
         const newId = await addItem(newItem);
         if (newId) toggleSave(newId);
     };
@@ -118,12 +128,12 @@ const App: React.FC = () => {
             const prev = activeStats;
             const currentCounts = prev.wordCounts || {};
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
-            
+
             const newStats: Stats = {
                 correct: prev.correct + (isCorrect ? 1 : 0),
                 wrong: prev.wrong + (!isCorrect ? 1 : 0),
-                history: !isCorrect 
-                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50) 
+                history: !isCorrect
+                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
                 wordCounts: { ...currentCounts, [word]: newCount }
             };
@@ -138,7 +148,7 @@ const App: React.FC = () => {
             alert("Você precisa estar logado para salvar textos na nuvem.");
             return;
         }
-        
+
         // A MÁGICA DA ORDEM:
         // Invertemos a lista ([A, B, C] vira [C, B, A]) antes de salvar.
         // 1. Salvamos C (fica com horário mais antigo)
@@ -164,7 +174,7 @@ const App: React.FC = () => {
     const handleDelete = async (id: string | number) => {
         if (typeof id === 'string') {
             if (window.confirm("Tem certeza que deseja excluir permanentemente esta palavra/texto?")) {
-                toggleSave(id); 
+                toggleSave(id);
                 await deleteItem(id);
             }
         } else {
@@ -187,10 +197,10 @@ const App: React.FC = () => {
         switch (tab) {
             case 'leitura':
                 return (
-                    <ReadingView 
-                        data={libraryData} 
-                        savedIds={activeSavedIds} 
-                        onToggleSave={toggleSave} 
+                    <ReadingView
+                        data={libraryData}
+                        savedIds={activeSavedIds}
+                        onToggleSave={toggleSave}
                         onOpenImport={() => setShowImport(true)}
                         onDeleteText={handleDelete}
                         onSaveGeneratedCard={handleSaveGeneratedCard}
@@ -198,15 +208,23 @@ const App: React.FC = () => {
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
-            case 'jogo': return <GameView />;
+            case 'jogo':
+                if (selectedGame === 'selector') {
+                    return <GameSelector onSelectGame={setSelectedGame} />;
+                } else if (selectedGame === 'lingoarena') {
+                    return <LingoArenaView />;
+                } else if (selectedGame === 'polyquest') {
+                    return <PolyQuestView />;
+                }
+                return null;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;
-            case 'criativo': 
+            case 'criativo':
                 return (
-                    <CreativeView 
-                        data={libraryData} 
-                        savedIds={activeSavedIds} 
+                    <CreativeView
+                        data={libraryData}
+                        savedIds={activeSavedIds}
                         stats={activeStats} // <--- ADICIONE ESTA LINHA (Passando as estatísticas)
-                        onSave={handleSaveLabItem} 
+                        onSave={handleSaveLabItem}
                     />
                 );
             case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
@@ -216,11 +234,11 @@ const App: React.FC = () => {
 
     return (
         <div className="h-[100dvh] flex flex-col bg-slate-50 w-full overflow-hidden relative">
-            <Header 
-                user={user} 
-                onLogin={handleLogin} 
-                onLogout={handleLogout} 
-                onOpenStats={() => setShowStats(true)} 
+            <Header
+                user={user}
+                onLogin={handleLogin}
+                onLogout={handleLogout}
+                onOpenStats={() => setShowStats(true)}
                 onOpenPronounce={() => setShowPronounce(true)}
                 onResetAccount={handleResetAccount}
             />
