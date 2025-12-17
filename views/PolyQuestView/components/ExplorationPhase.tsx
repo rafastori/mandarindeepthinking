@@ -57,40 +57,44 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
         <div className="flex flex-col h-full gap-4 md:flex-row">
             {/* Área do Texto (Esquerda/Centro) */}
             <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border border-slate-200 overflow-y-auto">
-                <div className="mb-6 flex justify-between items-center">
-                    <div>
-                        <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                <div className="mb-6">
+                    {/* Title Row */}
+                    <div className="mb-4">
+                        <h2 className="text-xl sm:text-2xl font-bold text-slate-800 flex items-center gap-2">
                             <Icon name="search" className="text-emerald-600" />
                             Fase 1: Exploração
                         </h2>
-                        <p className="text-slate-500">
+                        <p className="text-sm text-slate-500 mt-1">
                             Clique nas palavras que você <span className="font-bold text-slate-700">não conhece</span> ou que parecem importantes.
                         </p>
                     </div>
+
+                    {/* Scoreboard and Action Row - Only for Host */}
                     {isHost && (
-                        <div className="flex items-center gap-4">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
                             {/* Scoreboard (All Players) */}
-                            <div className="flex items-center gap-3 overflow-x-auto max-w-[200px] sm:max-w-md no-scrollbar">
+                            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
                                 {room.players.map(p => (
-                                    <div key={p.id} className="flex items-center gap-2 px-2.5 py-1.5 rounded-xl border border-slate-200 bg-slate-50 shadow-sm truncate">
-                                        <div className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center text-[10px] uppercase font-bold text-slate-600">
+                                    <div key={p.id} className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-slate-200 bg-slate-50 shadow-sm flex-shrink-0">
+                                        <div className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[9px] uppercase font-bold text-slate-600">
                                             {p.name[0]}
                                         </div>
-                                        <div className="flex flex-col leading-tight items-start">
-                                            <span className="text-xs font-bold text-slate-800">{p.score || 0} pts</span>
-                                            <span className="text-[9px] font-semibold text-blue-600 uppercase">LVL {p.totalScore || 0}</span>
+                                        <div className="flex flex-col leading-tight">
+                                            <span className="text-[10px] font-bold text-slate-800">{p.score || 0} pts</span>
+                                            <span className="text-[8px] font-semibold text-blue-600 uppercase">LVL {p.totalScore || 0}</span>
                                         </div>
                                     </div>
                                 ))}
                             </div>
 
+                            {/* Action Button */}
                             <button
                                 onClick={onFinishExploration}
                                 disabled={uniqueSelectedWords.length === 0}
-                                className="px-6 py-2 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
+                                className="px-4 py-2 bg-emerald-600 text-white rounded-lg font-bold text-sm hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 flex-shrink-0"
                             >
                                 <span>Iniciar Quest</span>
-                                <Icon name="arrow-right" size={20} />
+                                <Icon name="arrow-right" size={18} />
                             </button>
                         </div>
                     )}
