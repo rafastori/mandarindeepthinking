@@ -37,14 +37,56 @@ const gameDeckSchema = {
       pinyin: { type: Type.STRING, description: "Pronunciation" },
       meaning: { type: Type.STRING, description: "Translation (PT-BR)" },
       example: { type: Type.STRING, description: "Example sentence" },
-      distractors: { 
-          type: Type.ARRAY, 
-          items: { type: Type.STRING },
-          description: "3 plausible but INCORRECT translations in PT-BR"
+      distractors: {
+        type: Type.ARRAY,
+        items: { type: Type.STRING },
+        description: "3 plausible but INCORRECT translations in PT-BR"
       }
     },
     required: ["word", "pinyin", "meaning", "example", "distractors"]
   }
+};
+
+const enigmasSchema = {
+  type: Type.ARRAY,
+  items: {
+    type: Type.OBJECT,
+    properties: {
+      word: { type: Type.STRING },
+      translation: { type: Type.STRING },
+      synonym: { type: Type.STRING },
+      alternatives: { type: Type.ARRAY, items: { type: Type.STRING } }
+    },
+    required: ["word", "translation", "synonym", "alternatives"]
+  }
+};
+
+const intruderSchema = {
+  type: Type.OBJECT,
+  properties: {
+    word: { type: Type.STRING },
+    translation: { type: Type.STRING },
+    reason: { type: Type.STRING }
+  },
+  required: ["word", "translation", "reason"]
+};
+
+const bossSchema = {
+  type: Type.OBJECT,
+  properties: {
+    originalSentence: { type: Type.STRING },
+    translation: { type: Type.STRING },
+    blocks: { type: Type.ARRAY, items: { type: Type.STRING } }
+  },
+  required: ["originalSentence", "translation", "blocks"]
+};
+
+const rawTextSchema = {
+  type: Type.OBJECT,
+  properties: {
+    text: { type: Type.STRING }
+  },
+  required: ["text"]
 };
 
 export default async function handler(req, res) {
@@ -58,62 +100,122 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    const { text, mode, targetLanguage = 'zh', type = 'text', word, context, topic, difficulty, exclude = [] } = req.body; 
-    
-    const apiKey = process.env.VITE_API_KEY || process.env.GEMINI_API_KEY;
+    const {
+      text, mode, targetLanguage = 'zh', type = 'text',
+      word, context, topic, difficulty, exclude = [],
+      words = [], sourceLang, targetLang
+    } = req.body;
+
+    // PRIORIDADE: GEMINI_API_KEY (segura, sem prefixo VITE_)
+    const apiKey = process.env.GEMINI_API_KEY || process.env.VITE_API_KEY;
     if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
 
-    // Inicializa com a biblioteca NOVA
     const ai = new GoogleGenAI({ apiKey });
-    
-    // MODELO: Usamos o que você confirmou que funciona
     const MODEL_NAME = 'gemini-2.5-flash';
 
     // --- 1. GERAÇÃO DE CARD ---
     if (type === 'card') {
-        const prompt = `Analyze word: "${word}". Context: "${context}". Language: ${targetLanguage === 'de' ? 'German' : 'Mandarin'}. Output PT-BR.`;
-        
-        const response = await ai.models.generateContent({
-            model: MODEL_NAME,
-            contents: prompt,
-            config: {
-                responseMimeType: "application/json",
-                responseSchema: wordCardSchema,
-            }
-        });
-        // Na lib @google/genai, .text pode ser propriedade direta ou função dependendo da versão exata,
-        // mas o padrão JSON geralmente vem tratado ou acessível via .text() ou .text
-        const jsonText = typeof response.text === 'function' ? response.text() : response.text;
-        return res.status(200).json(JSON.parse(jsonText || "{}"));
+      const prompt = `Analyze word: "${word}". Context: "${context}". Language: ${targetLanguage === 'de' ? 'German' : 'Mandarin'}. Output PT-BR.`;
+
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: wordCardSchema,
+        }
+      });
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "{}"));
     }
 
     // --- 2. GERAÇÃO DE JOGO ---
     if (type === 'game_deck') {
-        const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
-        const excludeInstruction = exclude.length > 0 ? `Avoid words: ${exclude.join(', ')}.` : '';
+      const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
+      const excludeInstruction = exclude.length > 0 ? `Avoid words: ${exclude.join(', ')}.` : '';
 
-        const prompt = `
+      const prompt = `
             Generate 5 distinct words for topic: "${topic}".
             Level: ${difficulty}. Language: ${langName}.
             Output PT-BR meanings.
             ${excludeInstruction}
         `;
-        
-        const response = await ai.models.generateContent({
-            model: MODEL_NAME,
-            contents: prompt,
-            config: { 
-                responseMimeType: "application/json", 
-                responseSchema: gameDeckSchema,
-                temperature: 0.8
-            },
-        });
-        
-        const jsonText = typeof response.text === 'function' ? response.text() : response.text;
-        return res.status(200).json(JSON.parse(jsonText || "[]"));
+
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: gameDeckSchema,
+          temperature: 0.8
+        },
+      });
+
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "[]"));
     }
 
-    // --- 3. IMPORTAÇÃO DE TEXTO ---
+    // --- 3. POLYQUEST: ENIGMAS ---
+    if (type === 'enigmas') {
+      const prompt = `Create study enigmas for these ${sourceLang} words: ${words.join(', ')}. Translate to ${targetLang}. Include 3 plausible alternatives and a synonym/clue in ${targetLang}.`;
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: enigmasSchema
+        }
+      });
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "[]"));
+    }
+
+    // --- 4. POLYQUEST: INTRUDER ---
+    if (type === 'intruder') {
+      const prompt = `Create an intruder word for a game. Context words (${targetLang}): ${context.join(', ')}. The intruder should be in ${targetLang}. Provide PT-BR translation and reason.`;
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: intruderSchema
+        }
+      });
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "{}"));
+    }
+
+    // --- 5. POLYQUEST: BOSS ---
+    if (type === 'boss') {
+      const prompt = `Final Boss Challenge. From this text: "${context}", choose a complex sentence. originalSentence and blocks MUST be in ${targetLang}. translation MUST be in Portuguese (Brazil).`;
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: bossSchema
+        }
+      });
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "{}"));
+    }
+
+    // --- 6. POLYQUEST: RAW TEXT ---
+    if (type === 'raw_text') {
+      const prompt = `Generate a creative text (40-60 words) in ${targetLang}. Theme: Culture or History. Return only the text object.`;
+      const response = await ai.models.generateContent({
+        model: MODEL_NAME,
+        contents: prompt,
+        config: {
+          responseMimeType: "application/json",
+          responseSchema: rawTextSchema
+        }
+      });
+      const jsonText = typeof response.text === 'function' ? response.text() : response.text;
+      return res.status(200).json(JSON.parse(jsonText || "{}"));
+    }
+
+    // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---
     let task = targetLanguage === 'de' ? "German text analysis" : "Mandarin text analysis";
     if (mode === 'translate') task = `Translate PT-BR to ${targetLanguage === 'de' ? 'German' : 'Mandarin'}`;
 
@@ -127,13 +229,13 @@ export default async function handler(req, res) {
     `;
 
     const response = await ai.models.generateContent({
-        model: MODEL_NAME,
-        contents: prompt,
-        config: { 
-            responseMimeType: "application/json", 
-            responseSchema: studyItemSchema, 
-            temperature: 0.1 
-        },
+      model: MODEL_NAME,
+      contents: prompt,
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: studyItemSchema,
+        temperature: 0.1
+      },
     });
 
     const jsonText = typeof response.text === 'function' ? response.text() : response.text;

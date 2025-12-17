@@ -331,14 +331,13 @@ export const generateEnigmas = async (
     // DEV MODE
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Enigmas");
-        // Hack: passando nomes de idiomas nos params existentes
         const systemPrompt = getSystemInstruction('enigmas', srcName, tgtName as any);
         const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
 
         return await callLocalGemini(userPrompt, systemPrompt);
     }
 
-    // PROD MODE
+    // PROD MODE - Usa endpoint seguro
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
@@ -368,8 +367,6 @@ export const generateIntruder = async (
     contextWords: string[],
     contentLang: string
 ): Promise<IntruderData> => {
-
-    // Helper duplicado, idealmente mover para utils
     const getLangName = (code: string) => {
         const map: Record<string, string> = {
             'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
@@ -389,6 +386,7 @@ export const generateIntruder = async (
         return await callLocalGemini(userPrompt, systemPrompt);
     }
 
+    // PROD MODE - Usa endpoint seguro
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
@@ -428,6 +426,7 @@ export const generateBossLevel = async (
         return await callLocalGemini(userPrompt, systemPrompt);
     }
 
+    // PROD MODE - Usa endpoint seguro
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
@@ -459,13 +458,14 @@ export const generateRawText = async (contentLang: string): Promise<string> => {
         return data.text;
     }
 
+    // PROD MODE - Usa endpoint seguro
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 type: 'raw_text',
-                targetLang: contentLang // Passando o código original 'de', 'zh'
+                targetLang: contentLang
             }),
         });
 
