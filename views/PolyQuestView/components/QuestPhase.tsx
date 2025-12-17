@@ -14,6 +14,8 @@ interface QuestPhaseProps {
     onTriggerIntruder: (intruderWord: string) => Promise<void>;
     onLockEnigma: (index: number) => Promise<boolean>;
     onUnlockEnigma: (index: number) => Promise<void>;
+    onRequestHelp: (index: number) => Promise<void>;
+    onProvideHelp: (index: number) => Promise<void>;
 }
 
 // Helper to get user color (consistent with BossPhase)
@@ -40,13 +42,16 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     onUpdateConfidence,
     onTriggerIntruder,
     onLockEnigma,
-    onUnlockEnigma
+    onUnlockEnigma,
+    onRequestHelp,
+    onProvideHelp
 }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [activeEnigmaIndex, setActiveEnigmaIndex] = useState<number | null>(null);
     const [showHint, setShowHint] = useState(false);
     const [eliminatedOptions, setEliminatedOptions] = useState<string[]>([]);
+    const [showOriginalText, setShowOriginalText] = useState(false);
 
     // Derived state for the modal options (shuffled once per open)
     const [currentOptions, setCurrentOptions] = useState<string[]>([]);
@@ -72,6 +77,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                         synonym: data.synonym,
                         isDiscovered: false,
                         attempts: 0,
+                        needsHelp: false
                     }));
                     onSetEnigmas(enigmas);
                 } catch (err) {
@@ -109,9 +115,20 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     // --- Interaction Handlers ---
 
     const handleCardClick = async (index: number) => {
-        // Prevent if solved or locked by someone else
         const enigma = room.enigmas[index];
         if (enigma.isDiscovered) return;
+
+        // Special Case: Helping someone
+        if (enigma.needsHelp && enigma.helpRequestedBy !== currentUserId) {
+            setActiveEnigmaIndex(index);
+            setShowHint(false);
+            setEliminatedOptions([]);
+            setCurrentOptions(shuffleArray([enigma.translation, ...enigma.alternatives]));
+            return;
+        }
+
+        // Standard Case: Locking for yourself
+        // Force unlock for yourself if it was returned to you? activeSolver handles it.
         if (enigma.activeSolver && enigma.activeSolver !== currentUserId) return;
 
         // Try to lock
@@ -129,7 +146,11 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
 
     const handleCloseModal = async () => {
         if (activeEnigmaIndex !== null) {
-            await onUnlockEnigma(activeEnigmaIndex);
+            // Only unlock if I am the active solver (don't mess with helps)
+            const enigma = room.enigmas[activeEnigmaIndex];
+            if (enigma.activeSolver === currentUserId) {
+                await onUnlockEnigma(activeEnigmaIndex);
+            }
             setActiveEnigmaIndex(null);
         }
     };
@@ -137,15 +158,24 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     const handleAnswerSubmit = async (answer: string) => {
         if (activeEnigmaIndex === null) return;
         const currentEnigma = room.enigmas[activeEnigmaIndex];
-
         const isCorrect = answer.toLowerCase() === currentEnigma.translation.toLowerCase();
 
-        // Optimistic close
-        setActiveEnigmaIndex(null);
-        await onUnlockEnigma(activeEnigmaIndex); // Unlock first? Or submit answer handles it?
-        // Actually, submitAnswer logic might handling unlocking or state change
-        // But for safety:
+        // Check if I am Helping
+        if (currentEnigma.needsHelp && currentEnigma.helpRequestedBy !== currentUserId) {
+            if (isCorrect) {
+                await onProvideHelp(activeEnigmaIndex);
+                setActiveEnigmaIndex(null); // Close modal automatically
+                // Maybe show a toast "Help sent!"?
+            } else {
+                // Wrong answer provided by helper... penalty? For now just shake or alert
+                alert("Resposta incorreta! Tente outra.");
+            }
+            return;
+        }
 
+        // Standard Answer
+        setActiveEnigmaIndex(null);
+        await onUnlockEnigma(activeEnigmaIndex);
         onAnswer(activeEnigmaIndex, answer, isCorrect);
     };
 
@@ -153,6 +183,12 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
         if (room.confidence <= 5 || showHint) return;
         await onUpdateConfidence(-5);
         setShowHint(true);
+    };
+
+    const handleRequestHelp = async () => {
+        if (activeEnigmaIndex === null) return;
+        await onRequestHelp(activeEnigmaIndex);
+        setActiveEnigmaIndex(null); // Close modal so others can see it/take it
     };
 
     const handleEliminate = async () => {
@@ -178,15 +214,27 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     const renderModal = () => {
         if (activeEnigmaIndex === null) return null;
         const enigma = room.enigmas[activeEnigmaIndex];
+        const isHelping = enigma.needsHelp && enigma.helpRequestedBy !== currentUserId;
+        const requester = enigma.helpRequestedBy ? room.players.find(p => p.id === enigma.helpRequestedBy) : null;
+        const returnedAfterHelp = enigma.helpedBy && !enigma.isDiscovered;
 
         return (
             <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
-                <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden scale-100 animate-in zoom-in-95 duration-200">
+                <div className={`bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden scale-100 animate-in zoom-in-95 duration-200 ${isHelping ? 'ring-4 ring-green-400' : ''}`}>
                     {/* Header */}
-                    <div className="bg-slate-50 border-b p-4 flex justify-between items-center">
+                    <div className={`border-b p-4 flex justify-between items-center ${isHelping ? 'bg-green-50' : 'bg-slate-50'}`}>
                         <h3 className="font-bold text-slate-700 flex items-center gap-2">
-                            <Icon name="lock-open" size={18} className="text-emerald-600" />
-                            Decifre a Palavra
+                            {isHelping ? (
+                                <>
+                                    <Icon name="life-buoy" size={18} className="text-green-600" />
+                                    <span className="text-green-800">AJUDANDO {requester?.name || 'Jogardor'} (+5 pts)</span>
+                                </>
+                            ) : (
+                                <>
+                                    <Icon name="lock-open" size={18} className="text-emerald-600" />
+                                    Decifre a Palavra
+                                </>
+                            )}
                         </h3>
                         <button onClick={handleCloseModal} className="text-slate-400 hover:text-slate-600">
                             <Icon name="x" size={24} />
@@ -195,9 +243,14 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
 
                     {/* Content */}
                     <div className="p-8 text-center space-y-6">
-                        {/* Context Phrase (Simulated/Placeholder or from Data if available) */}
-                        {/* Since we don't store the full sentence per word in this model, we show the word clearly */}
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 relative">
+                            {returnedAfterHelp ? (
+                                <div className="mb-4 bg-emerald-100 text-emerald-800 p-3 rounded-lg animate-pulse border border-emerald-200">
+                                    <p className="font-bold text-xs uppercase tracking-wider mb-1">💡 Dica do Parceiro Recebida!</p>
+                                    <p className="font-medium text-lg italic">"{enigma.synonym}"</p>
+                                </div>
+                            ) : null}
+
                             <p className="text-sm text-slate-500 uppercase tracking-wider mb-2">Palavra Oculta</p>
                             <h2 className="text-4xl font-bold text-slate-800">{enigma.word}</h2>
                             <p className="text-slate-400 mt-2 text-sm italic">Qual é o significado?</p>
@@ -214,7 +267,9 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                                         p-4 rounded-xl border-2 font-medium transition-all text-sm
                                         ${eliminatedOptions.includes(opt)
                                             ? 'opacity-20 bg-slate-100 border-slate-200 cursor-not-allowed'
-                                            : 'border-slate-100 bg-white hover:border-emerald-500 hover:bg-emerald-50 hover:shadow-md active:scale-95'
+                                            : isHelping
+                                                ? 'border-slate-100 bg-white hover:border-green-500 hover:bg-green-50 hover:shadow-md'
+                                                : 'border-slate-100 bg-white hover:border-emerald-500 hover:bg-emerald-50 hover:shadow-md active:scale-95'
                                         }
                                     `}
                                 >
@@ -224,28 +279,36 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                         </div>
 
                         {/* Helpers */}
-                        <div className="flex justify-center gap-4 pt-4 border-t border-slate-100">
-                            <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-                                Recompensa: {GAME_CONSTANTS.CORRECT_POINTS} pts
-                            </div>
+                        {!isHelping && (
+                            <div className="flex justify-center gap-4 pt-4 border-t border-slate-100">
+                                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+                                    Recompensa: {returnedAfterHelp ? 5 : GAME_CONSTANTS.CORRECT_POINTS} pts
+                                </div>
 
-                            <button
-                                onClick={handleSOS}
-                                disabled={showHint || room.confidence <= 5}
-                                className="flex items-center gap-1 text-xs font-bold text-yellow-600 hover:text-yellow-700 disabled:opacity-50"
-                            >
-                                <Icon name="sun" size={14} />
-                                Dica (-5)
-                            </button>
-                            <button
-                                onClick={handleSOS} // Placeholder for SOS request logic
-                                className="flex items-center gap-1 text-xs font-bold text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100 px-3 py-1 rounded-full transition-colors"
-                            >
-                                <Icon name="life-buoy" size={14} />
-                                PEDIR AJUDA (SOS)
-                            </button>
-                        </div>
-                        {showHint && enigma.synonym && (
+                                <button
+                                    onClick={handleSOS}
+                                    disabled={showHint || room.confidence <= 5 || !!returnedAfterHelp}
+                                    className="flex items-center gap-1 text-xs font-bold text-yellow-600 hover:text-yellow-700 disabled:opacity-50 transition-colors"
+                                >
+                                    <Icon name="sun" size={14} />
+                                    Dica (-5)
+                                </button>
+                                <button
+                                    onClick={handleRequestHelp}
+                                    disabled={enigma.needsHelp || !!returnedAfterHelp}
+                                    className={`flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full transition-colors ${enigma.needsHelp || returnedAfterHelp
+                                        ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
+                                        : 'text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100'
+                                        }`}
+                                >
+                                    <Icon name="life-buoy" size={14} />
+                                    {enigma.needsHelp ? 'Ajuda Solicitada' : 'PEDIR AJUDA (SOS)'}
+                                </button>
+                            </div>
+                        )}
+
+                        {/* Hint Display (Standard) */}
+                        {showHint && enigma.synonym && !returnedAfterHelp && (
                             <div className="text-sm text-blue-600 bg-blue-50 p-2 rounded-lg animate-in slide-in-from-bottom-2">
                                 💡 Dica: "{enigma.synonym}"
                             </div>
@@ -262,9 +325,16 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
             <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-slate-100 sticky top-0 z-40">
                 <ConfidenceBar confidence={room.confidence} />
 
-                <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-semibold">
-                        <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length} Palavras</span>
+                <div className="flex items-center gap-3">
+                    <button
+                        onClick={() => setShowOriginalText(true)}
+                        className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-semibold transition-colors"
+                    >
+                        <Icon name="book-open" size={16} />
+                        <span className="hidden sm:inline">Ver Texto</span>
+                    </button>
+                    <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-semibold">
+                        <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length}</span>
                     </div>
                     <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-semibold">
                         <Icon name="trophy" size={14} />
@@ -273,30 +343,67 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                 </div>
             </div>
 
+            {/* Original Text Modal */}
+            {showOriginalText && (
+                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-6 animate-in fade-in duration-200" onClick={() => setShowOriginalText(false)}>
+                    <div className="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative" onClick={e => e.stopPropagation()}>
+                        <button
+                            onClick={() => setShowOriginalText(false)}
+                            className="absolute top-4 right-4 p-2 text-slate-400 hover:bg-slate-100 rounded-full"
+                        >
+                            <Icon name="x" size={20} />
+                        </button>
+                        <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                            <Icon name="book-open" size={24} className="text-slate-600" />
+                            Texto Original
+                        </h3>
+                        <div className="prose prose-slate max-w-none bg-slate-50 p-6 rounded-xl border border-slate-200">
+                            <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-line">
+                                {room.config.originalText}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             {/* Grid Area */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-20">
                 {room.enigmas.map((enigma, index) => {
-                    // Determine User Styles if active
+                    // Determine User Styles
                     const activeUser = enigma.activeSolver
                         ? room.players.find(p => p.id === enigma.activeSolver)
                         : null;
 
-                    const userStyle = activeUser
-                        ? getUserColor(activeUser.id)
-                        : 'bg-white border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md';
+                    // Prioritize Red pulse if help is needed
+                    const containerClasses = [
+                        'relative p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col items-center justify-center gap-3 min-h-[160px] group'
+                    ];
+
+                    if (enigma.isDiscovered) {
+                        containerClasses.push('bg-emerald-50 border-emerald-200 opacity-80');
+                    } else if (enigma.needsHelp) {
+                        containerClasses.push('bg-red-50 border-red-400 border-dashed animate-pulse');
+                    } else if (activeUser) {
+                        containerClasses.push(getUserColor(activeUser.id));
+                    } else {
+                        containerClasses.push('bg-white border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md');
+                    }
 
                     return (
                         <button
                             key={index}
                             onClick={() => handleCardClick(index)}
+                            // Allow clicking if it needs help even if active? Maybe. For now standard lock rules.
                             disabled={enigma.isDiscovered || (!!enigma.activeSolver && enigma.activeSolver !== currentUserId)}
-                            className={`
-                                relative p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col items-center justify-center gap-3 min-h-[160px] group
-                                ${enigma.isDiscovered
-                                    ? 'bg-emerald-50 border-emerald-200 opacity-80'
-                                    : userStyle}
-                            `}
+                            className={containerClasses.join(' ')}
                         >
+                            {/* Needs Help Badge */}
+                            {!enigma.isDiscovered && enigma.needsHelp && (
+                                <div className="absolute top-3 right-3 text-red-500 animate-bounce">
+                                    <Icon name="life-buoy" size={20} />
+                                </div>
+                            )}
+
                             {/* Status Icon */}
                             {enigma.isDiscovered ? (
                                 <>

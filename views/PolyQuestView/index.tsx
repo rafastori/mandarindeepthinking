@@ -11,6 +11,7 @@ import { ExplorationPhase } from './components/ExplorationPhase';
 import { QuestPhase } from './components/QuestPhase';
 import { IntruderChallenge } from './components/IntruderChallenge';
 import { BossPhase } from './components/BossPhase';
+import { VictoryPhase } from './components/VictoryPhase';
 
 const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
@@ -39,7 +40,9 @@ const PolyQuestView: React.FC = () => {
         addBossBlock,
         removeBossBlock,
         lockEnigma,
-        unlockEnigma
+        unlockEnigma,
+        requestHelp,
+        provideHelp
     } = usePolyQuestRoom(user?.uid);
 
     useEffect(() => {
@@ -187,6 +190,8 @@ const PolyQuestView: React.FC = () => {
                                 onTriggerIntruder={(word) => triggerIntruder(activeRoom.id, word)}
                                 onLockEnigma={(idx) => lockEnigma(activeRoom.id, idx, user.uid)}
                                 onUnlockEnigma={(idx) => unlockEnigma(activeRoom.id, idx, user.uid)}
+                                onRequestHelp={(idx) => requestHelp(activeRoom.id, idx, user.uid)}
+                                onProvideHelp={(idx) => provideHelp(activeRoom.id, idx, user.uid)}
                             />
                         ) : activeRoom.phase === 'intruder' ? (
                             <IntruderChallenge
@@ -202,6 +207,12 @@ const PolyQuestView: React.FC = () => {
                                 onDamage={(dmg, fatal) => submitBossDamage(activeRoom.id, dmg, fatal)}
                                 onAddBlock={(text) => addBossBlock(activeRoom.id, text, user.uid)}
                                 onRemoveBlock={(blockId) => removeBossBlock(activeRoom.id, blockId)}
+                            />
+                        ) : activeRoom.phase === 'finished' ? (
+                            <VictoryPhase
+                                room={activeRoom}
+                                currentUserId={user.uid}
+                                onResetGame={handleLeaveRoom}
                             />
                         ) : (
                             <div className="text-center p-10">

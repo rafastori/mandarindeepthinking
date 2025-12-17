@@ -74,4 +74,12 @@ O jogo não acaba quando as cartas terminam.
 7. Encerramento
 - Tela de Vitória: Ranking final destacando o "Mestre Poliglota" (Maior Pontuação) e o "MVP Colaborativo" (Mais ajudas).
 - Biblioteca: Opção de salvar todas as palavras e frases aprendidas para estudo futuro.
-`;
+
+8 Adicionais a lógica:
+- na sala de colaboração a pontuação individual também deve ser mostrada em tempo real para todos os jogadores.
+- adicionar o botão de "Pedir Ajuda" para os jogadores que não conseguem acertar a palavra.
+- adicionar o botão de ver o texto original
+- adicionar tela final com o resultado final do jogo, deve ser como na imagem.
+- salvar o resultado final do jogo no banco de dados. Deixar salva a prontuação individual de cada jogador para que possa ser usada como histórico e ranking. toda vez que um usuário entrar no jogo ele mostrará qual é o seu nível em pontuação geral somada de todas as partidas.
+- fazer com que os dados salvos da bliblioteca da missão entrem no banco de dados da leitura, revisão como se fosse uma importação nativa.
+- No boss final, os kits de palavras devem ser arrastáveis, podendo alterar a posição com facilidade

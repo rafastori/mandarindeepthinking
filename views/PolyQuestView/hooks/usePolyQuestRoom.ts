@@ -335,13 +335,25 @@ export const usePolyQuestRoom = (userId?: string) => {
                 const player = players[playerIndex];
 
                 if (isCorrect) {
-                    // Pontuação
-                    player.score = (player.score || 0) + GAME_CONSTANTS.CORRECT_POINTS;
-                    player.consecutiveCorrect = (player.consecutiveCorrect || 0) + 1;
-                    if (player.consecutiveCorrect >= GAME_CONSTANTS.FATIGUE_THRESHOLD) {
-                        player.isFatigued = true;
-                        player.fatigueEndsAt = Date.now() + GAME_CONSTANTS.FATIGUE_DURATION;
+                    // Calculate points status
+                    const wasHelped = !!enigmas[enigmaIndex].helpedBy;
+                    const points = wasHelped ? GAME_CONSTANTS.HELP_RECEIVED_POINTS : GAME_CONSTANTS.CORRECT_POINTS;
+
+                    // Update player stats
+                    if (playerIndex !== -1) {
+                        players[playerIndex].score += points;
+                        players[playerIndex].consecutiveCorrect += 1;
+
+                        // Fatigue logic (simplified/removed for grid, but keeping stats)
+                        if (players[playerIndex].consecutiveCorrect >= GAME_CONSTANTS.FATIGUE_THRESHOLD) {
+                            players[playerIndex].isFatigued = true;
+                            players[playerIndex].fatigueEndsAt = Date.now() + GAME_CONSTANTS.FATIGUE_DURATION;
+                        }
+
+                        // Add game action
+                        // (Optional)
                     }
+                    players[playerIndex] = player;
                 } else {
                     player.consecutiveCorrect = 0;
                 }
@@ -495,6 +507,63 @@ export const usePolyQuestRoom = (userId?: string) => {
         }
     };
 
+    const requestHelp = async (roomId: string, enigmaIndex: number, playerId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const enigmas = [...roomData.enigmas];
+
+            // Toggle help needed
+            if (!enigmas[enigmaIndex].needsHelp) {
+                enigmas[enigmaIndex].needsHelp = true;
+                enigmas[enigmaIndex].helpRequestedBy = playerId;
+
+                // UNLOCK for others to help
+                delete enigmas[enigmaIndex].activeSolver;
+            }
+
+            await updateDoc(roomRef, { enigmas });
+        } catch (error) {
+            console.error("Request help error", error);
+        }
+    };
+
+    const provideHelp = async (roomId: string, enigmaIndex: number, helperId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const enigmas = [...roomData.enigmas];
+            const players = [...roomData.players];
+
+            const enigma = enigmas[enigmaIndex];
+            if (!enigma.needsHelp) return;
+
+            // 1. Mark as helped
+            enigma.needsHelp = false;
+            enigma.helpedBy = helperId;
+
+            // 2. Return lock to original requester
+            enigma.activeSolver = enigma.helpRequestedBy;
+
+            // 3. Reward Helper
+            const helperIndex = players.findIndex(p => p.id === helperId);
+            if (helperIndex !== -1) {
+                players[helperIndex].score += GAME_CONSTANTS.HELP_GIVEN_POINTS;
+                players[helperIndex].helpCount = (players[helperIndex].helpCount || 0) + 1;
+            }
+
+            await updateDoc(roomRef, { enigmas, players });
+        } catch (error) {
+            console.error("Provide help error", error);
+        }
+    };
+
     const startBossPhase = async (roomId: string, bossData: any): Promise<void> => {
         try {
             const roomRef = doc(db, 'polyquestRooms', roomId);
@@ -639,6 +708,8 @@ export const usePolyQuestRoom = (userId?: string) => {
         addBossBlock,
         removeBossBlock,
         lockEnigma,
-        unlockEnigma
+        unlockEnigma,
+        requestHelp,
+        provideHelp
     };
 };
