@@ -35,7 +35,9 @@ const PolyQuestView: React.FC = () => {
         triggerIntruder,
         resolveIntruder,
         startBossPhase,
-        submitBossDamage
+        submitBossDamage,
+        addBossBlock,
+        removeBossBlock
     } = usePolyQuestRoom(user?.uid);
 
     useEffect(() => {
@@ -194,6 +196,8 @@ const PolyQuestView: React.FC = () => {
                                 currentUserId={user.uid}
                                 onStartBoss={(bossData) => startBossPhase(activeRoom.id, bossData)}
                                 onDamage={(dmg, fatal) => submitBossDamage(activeRoom.id, dmg, fatal)}
+                                onAddBlock={(text) => addBossBlock(activeRoom.id, text, user.uid)}
+                                onRemoveBlock={(blockId) => removeBossBlock(activeRoom.id, blockId)}
                             />
                         ) : (
                             <div className="text-center p-10">

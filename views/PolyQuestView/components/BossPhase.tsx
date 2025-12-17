@@ -8,37 +8,54 @@ interface BossPhaseProps {
     currentUserId: string;
     onStartBoss: (bossData: BossLevelData) => void;
     onDamage: (damage: number, isFatal: boolean) => void;
+    onAddBlock: (text: string) => void;
+    onRemoveBlock: (blockId: string) => void;
 }
+
+const USER_COLORS = [
+    'border-pink-500 bg-pink-100 text-pink-900',
+    'border-blue-500 bg-blue-100 text-blue-900',
+    'border-green-500 bg-green-100 text-green-900',
+    'border-yellow-500 bg-yellow-100 text-yellow-900',
+    'border-purple-500 bg-purple-100 text-purple-900',
+    'border-orange-500 bg-orange-100 text-orange-900',
+];
+
+const getUserColor = (userId: string) => {
+    // Simple hash to pick a color
+    let hash = 0;
+    for (let i = 0; i < userId.length; i++) {
+        hash = userId.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const index = Math.abs(hash) % USER_COLORS.length;
+    return USER_COLORS[index];
+};
 
 export const BossPhase: React.FC<BossPhaseProps> = ({
     room,
     currentUserId,
     onStartBoss,
-    onDamage
+    onDamage,
+    onAddBlock,
+    onRemoveBlock
 }) => {
     const [loading, setLoading] = useState(false);
-    const [myBlocks, setMyBlocks] = useState<string[]>([]);
     const [feedback, setFeedback] = useState<'success' | 'error' | null>(null);
 
     // Initial Boss Generation (Only Host)
     useEffect(() => {
         const initBoss = async () => {
-            // Se já tem dados do boss, não gera de novo
             if (room.bossLevel) return;
-
-            // Só o host gera
             if (room.hostId !== currentUserId) return;
 
             setLoading(true);
             try {
-                // Usamos o texto original da sala ou um fallback
                 const textContext = room.config.originalText || "PolyQuest Context";
                 const bossData = await generateBossLevel(textContext, room.config.targetLang);
                 console.log("Boss Generated:", bossData);
                 onStartBoss(bossData);
             } catch (error) {
                 console.error("Failed to generate boss:", error);
-                // Fallback simples se a AI falhar (para não travar o jogo)
                 onStartBoss({
                     originalSentence: "Error generating boss level please try again",
                     translation: "Erro ao gerar nível do chefe, tente novamente",
@@ -52,32 +69,27 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
         initBoss();
     }, [room.phase, room.bossLevel, room.hostId, currentUserId, room.config.originalText, room.config.targetLang, onStartBoss]);
 
-    // Handle dropping/selecting blocks (Simplified to click for now)
-    const handleBlockClick = (block: string) => {
-        if (feedback) return; // Wait for feedback to clear
+    const placedBlocks = room.bossState?.placedBlocks || [];
 
-        const newBlocks = [...myBlocks, block];
-        setMyBlocks(newBlocks);
-
-        // Check if current construction is a prefix of validity? 
-        // Na verdade, a regra simplificada é: Montar a frase toda localmente.
-        // Se o usuário clicar em "ATACAR" (Enviar), verificamos.
+    const handleBlockClick = (blockText: string) => {
+        if (feedback) return;
+        onAddBlock(blockText);
     };
 
-    const handleReset = () => {
-        setMyBlocks([]);
-        setFeedback(null);
+    const handleRemoveBlock = (blockId: string) => {
+        if (feedback) return;
+        onRemoveBlock(blockId);
     };
 
     const handleAttack = () => {
         if (!room.bossLevel) return;
 
-        const constructedSentence = myBlocks.join('').replace(/\s+/g, '').toLowerCase(); // Comparação simplificada removendo espaços
+        // Construct sentence from shared state
+        const constructedSentence = placedBlocks.map(b => b.text).join('').replace(/\s+/g, '').toLowerCase();
         const targetSentence = room.bossLevel.originalSentence.replace(/\s+/g, '').toLowerCase();
 
         if (constructedSentence === targetSentence) {
             setFeedback('success');
-            // Delay to show success animation then trigger global win
             setTimeout(() => {
                 onDamage(100, true); // Fatal damage
             }, 1000);
@@ -85,8 +97,10 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
             setFeedback('error');
             setTimeout(() => {
                 setFeedback(null);
-                setMyBlocks([]);
-                onDamage(10, false); // 10 damage to confidence
+                // Maybe clear blocks on fail? Or keep them for correction? 
+                // Let's keep them (collaborative fixing).
+                // Just penalty.
+                onDamage(10, false);
             }, 1000);
         }
     };
@@ -101,12 +115,10 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
         );
     }
 
+    // Available blocks: Initial blocks minus Used blocks (by count)
+    // To permit duplicates if the sentence has duplicates, we check counts.
     const availableBlocks = room.bossLevel.blocks.filter(b =>
-        // Simples contagem de ocorrências para permitir blocos repetidos se necessário? 
-        // Por simplificação: Removemos da lista de disponíveis os que já foram usados?
-        // Melhor: Mostramos todos, mas desabilitamos os usados se contarmos por índice.
-        // Como strings podem ser iguais, ideal seria ter IDs nos blocos, mas por hora vamos filtrar por contagem.
-        myBlocks.filter(mb => mb === b).length < room.bossLevel.blocks.filter(ob => ob === b).length
+        placedBlocks.filter(pb => pb.text === b).length < room.bossLevel!.blocks.filter(ob => ob === b).length
     );
 
     return (
@@ -117,19 +129,31 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                     <Icon name="skull" size={120} />
                 </div>
 
-                <h2 className="text-xl font-bold mb-2 flex items-center gap-2">
-                    <Icon name="swords" />
-                    BOSS FINAL
-                </h2>
-
-                <p className="text-purple-100 text-lg mb-6 max-w-2xl">
-                    Reconstrua a frase correta para derrotar o chefe!
-                    <br />
-                    <span className="text-sm opacity-75">Tradução: "{room.bossLevel.translation}"</span>
-                </p>
+                <div className="flex justify-between items-start relative z-10">
+                    <div>
+                        <h2 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name="swords" />
+                            BOSS FINAL (Colaborativo)
+                        </h2>
+                        <p className="text-purple-100 text-lg mb-2 max-w-2xl">
+                            Reconstruam a frase JUNTOS!
+                            <br />
+                            <span className="text-sm opacity-75">Tradução: "{room.bossLevel.translation}"</span>
+                        </p>
+                    </div>
+                    {/* Players Legend */}
+                    <div className="bg-purple-800/50 p-2 rounded-lg text-xs">
+                        {room.players.map(p => (
+                            <div key={p.id} className="flex items-center gap-2 mb-1">
+                                <span className={`w-3 h-3 rounded-full border ${getUserColor(p.id).split(' ')[0].replace('border', 'bg')}`}></span>
+                                <span>{p.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
                 {/* Team Confidence Bar */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-4">
                     <Icon name="heart" className="text-red-400" />
                     <div className="flex-1 h-4 bg-purple-900/50 rounded-full overflow-hidden">
                         <div
@@ -147,34 +171,37 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                 ${feedback === 'success' ? 'border-green-500 bg-green-50' : ''}
                 ${feedback === 'error' ? 'border-red-500 bg-red-50' : 'border-slate-200'}
             `}>
-                {myBlocks.length === 0 && (
+                {placedBlocks.length === 0 && (
                     <span className="text-slate-400 italic w-full text-center">
-                        Clique nos blocos abaixo para montar a frase...
+                        Clan, cliquem nos blocos abaixo para montar a frase...
                     </span>
                 )}
 
-                {myBlocks.map((block, idx) => (
-                    <span key={idx} className="bg-purple-100 text-purple-800 px-3 py-1.5 rounded-lg border border-purple-200 font-medium animate-in fade-in zoom-in duration-200">
-                        {block}
-                    </span>
+                {placedBlocks.map((block) => (
+                    <button
+                        key={block.id}
+                        onClick={() => handleRemoveBlock(block.id)}
+                        className={`
+                            px-3 py-1.5 rounded-lg border-2 font-bold animate-in fade-in zoom-in duration-200
+                            hover:opacity-70 flex items-center gap-1
+                            ${getUserColor(block.placedBy)}
+                        `}
+                        title={`Colocado por alguém`}
+                    >
+                        {block.text}
+                        <Icon name="x" size={12} />
+                    </button>
                 ))}
             </div>
 
             {/* Controls */}
-            <div className="flex justify-between items-center mb-8">
-                <button
-                    onClick={handleReset}
-                    className="text-slate-500 hover:text-slate-700 font-medium px-4 py-2 hover:bg-slate-100 rounded-lg transition-colors"
-                >
-                    Limpar
-                </button>
-
+            <div className="flex justify-end items-center mb-8">
                 <button
                     onClick={handleAttack}
-                    disabled={myBlocks.length === 0}
+                    disabled={placedBlocks.length === 0}
                     className={`
                         px-8 py-3 rounded-xl font-bold text-lg shadow-lg flex items-center gap-2 transition-all
-                        ${myBlocks.length === 0
+                        ${placedBlocks.length === 0
                             ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
                             : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:scale-105 active:scale-95 hover:shadow-purple-500/25'
                         }

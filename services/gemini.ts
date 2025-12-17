@@ -117,6 +117,19 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         `;
     }
 
+    if (type === 'raw_text') {
+        const langName = getLangName(targetLang);
+        return `Você é um escritor criativo poliglota.
+        Escreva um texto curto, interessante e coerente em ${langName}.
+        O texto deve ter aproximadamente 40 a 60 palavras.
+        O tema deve ser variado (cultura, cotidiano, curiosidades, história).
+        
+        Retorne APENAS um JSON:
+        {
+            "text": "O texto gerado aqui..."
+        }`;
+    }
+
     return '';
 };
 
@@ -134,11 +147,24 @@ const callLocalGemini = async (prompt: string, systemInstruction: string) => {
         const text = response.text;
         if (!text) throw new Error("Sem resposta da IA");
 
-        return JSON.parse(text);
+        // Clean JSON formatting if necessary (sometimes AI returns markdown)
+        const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+
+        return JSON.parse(cleanText);
     } catch (error) {
         console.error("Local Gemini Error:", error);
         throw error;
     }
+};
+
+// Helper duplicado que estava sendo definido várias vezes dentro das funcoes
+const getLangName = (code: string) => {
+    const map: Record<string, string> = {
+        'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+        'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
+        'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+    };
+    return map[code] || code;
 };
 
 // --- IMPLEMENTAÇÃO HÍBRIDA (LOCAL vs PROD) ---
@@ -391,17 +417,6 @@ export const generateBossLevel = async (
     fullText: string,
     targetLang: string
 ): Promise<BossLevelData> => {
-
-    // Helper duplicado
-    const getLangName = (code: string) => {
-        const map: Record<string, string> = {
-            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
-            'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
-            'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
-        };
-        return map[code] || code;
-    };
-
     const langName = getLangName(targetLang);
 
     if (import.meta.env.DEV) {
@@ -427,6 +442,37 @@ export const generateBossLevel = async (
         return await response.json();
     } catch (error) {
         console.error("Boss Error:", error);
+        throw error;
+    }
+};
+
+export const generateRawText = async (targetLang: string): Promise<string> => {
+    const langName = getLangName(targetLang);
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Raw Text");
+        const systemPrompt = getSystemInstruction('raw_text', targetLang);
+        const userPrompt = `Gere um texto em ${langName}.`;
+
+        const data = await callLocalGemini(userPrompt, systemPrompt);
+        return data.text;
+    }
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'raw_text',
+                targetLang: targetLang // Passando o código original 'de', 'zh'
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar texto");
+        const data = await response.json();
+        return data.text;
+    } catch (error) {
+        console.error("Raw Text Error:", error);
         throw error;
     }
 };

@@ -3,6 +3,8 @@ import Icon from '../../../components/Icon';
 import { SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
 
+import { generateRawText } from '../../../services/gemini';
+
 interface CreateRoomModalProps {
     onClose: () => void;
     onCreate: (roomName: string, sourceLang: string, targetLang: string, text: string) => void;
@@ -13,6 +15,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
     const [sourceLang, setSourceLang] = useState('de');
     const [targetLang, setTargetLang] = useState('pt');
     const [text, setText] = useState('');
+    const [generating, setGenerating] = useState(false);
 
     const validation = validateText(text, GAME_CONSTANTS.MIN_WORDS);
     const canCreate = roomName.trim().length > 0 && validation.valid;
@@ -21,6 +24,19 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
         if (canCreate) {
             onCreate(roomName.trim(), sourceLang, targetLang, text);
             onClose();
+        }
+    };
+
+    const handleGenerateText = async () => {
+        setGenerating(true);
+        try {
+            const aiText = await generateRawText(sourceLang);
+            setText(aiText);
+        } catch (error) {
+            console.error("Failed to generate text:", error);
+            alert("Erro ao gerar texto com IA. Tente novamente.");
+        } finally {
+            setGenerating(false);
         }
     };
 
@@ -102,18 +118,44 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                             <label className="block text-sm font-semibold text-slate-700">
                                 Texto Base *
                             </label>
-                            <span className={`text-xs font-semibold ${validation.valid ? 'text-emerald-600' : 'text-red-600'
+                            <button
+                                onClick={handleGenerateText}
+                                disabled={generating}
+                                className={`
+                                    text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1 transition-all
+                                    ${generating
+                                        ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
+                                        : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                                    }
+                                `}
+                            >
+                                {generating ? (
+                                    <>
+                                        <Icon name="loader" size={12} className="animate-spin" />
+                                        Gerando...
+                                    </>
+                                ) : (
+                                    <>
+                                        <Icon name="sparkles" size={12} />
+                                        Gerar com IA
+                                    </>
+                                )}
+                            </button>
+                        </div>
+                        <div className="relative">
+                            <textarea
+                                value={text}
+                                onChange={(e) => setText(e.target.value)}
+                                rows={8}
+                                disabled={generating}
+                                placeholder={`Cole aqui um texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...\n\nMínimo de ${GAME_CONSTANTS.MIN_WORDS} palavras.`}
+                                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none font-mono text-sm disabled:opacity-50"
+                            />
+                            <span className={`absolute bottom-3 right-3 text-xs font-semibold ${validation.valid ? 'text-emerald-600' : 'text-slate-400'
                                 }`}>
-                                {validation.wordCount} / {GAME_CONSTANTS.MIN_WORDS} palavras
+                                {validation.wordCount} / {GAME_CONSTANTS.MIN_WORDS}
                             </span>
                         </div>
-                        <textarea
-                            value={text}
-                            onChange={(e) => setText(e.target.value)}
-                            rows={8}
-                            placeholder={`Cole aqui um texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...\n\nMínimo de ${GAME_CONSTANTS.MIN_WORDS} palavras.`}
-                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none font-mono text-sm"
-                        />
                         {!validation.valid && validation.error && (
                             <p className="text-xs text-red-600 mt-1 flex items-center gap-1">
                                 <Icon name="alert-circle" size={14} />
@@ -150,7 +192,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                     </button>
                     <button
                         onClick={handleCreate}
-                        disabled={!canCreate}
+                        disabled={!canCreate || generating}
                         className="px-8 py-3 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
                     >
                         <Icon name="plus" size={20} />

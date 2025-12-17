@@ -457,10 +457,53 @@ export const usePolyQuestRoom = (userId?: string) => {
             const roomRef = doc(db, 'polyquestRooms', roomId);
             await updateDoc(roomRef, {
                 phase: 'boss',
-                bossLevel: bossData
+                bossLevel: bossData,
+                bossState: { placedBlocks: [] }
             });
         } catch (error) {
             console.error('Error starting boss phase:', error);
+        }
+    };
+
+    const addBossBlock = async (roomId: string, text: string, userId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+            const roomData = roomSnap.data() as PolyQuestRoom;
+
+            const newBlock = {
+                id: crypto.randomUUID(),
+                text,
+                placedBy: userId,
+                placedAt: Date.now()
+            };
+
+            const currentBlocks = roomData.bossState?.placedBlocks || [];
+
+            await updateDoc(roomRef, {
+                "bossState.placedBlocks": [...currentBlocks, newBlock]
+            });
+        } catch (error) {
+            console.error('Error adding boss block:', error);
+        }
+    };
+
+    const removeBossBlock = async (roomId: string, blockId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+            const roomData = roomSnap.data() as PolyQuestRoom;
+
+            const currentBlocks = roomData.bossState?.placedBlocks || [];
+            const newBlocks = currentBlocks.filter((b: any) => b.id !== blockId);
+
+            await updateDoc(roomRef, {
+                "bossState.placedBlocks": newBlocks
+            });
+        } catch (error) {
+            console.error('Error removing boss block:', error);
         }
     };
 
@@ -549,6 +592,8 @@ export const usePolyQuestRoom = (userId?: string) => {
         triggerIntruder,
         resolveIntruder,
         startBossPhase,
-        submitBossDamage
+        submitBossDamage,
+        addBossBlock,
+        removeBossBlock
     };
 };

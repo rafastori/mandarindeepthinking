@@ -67,6 +67,16 @@ export interface PolyQuestRoom {
         blocks: string[];
     };
 
+    // Estado COLABORATIVO do Boss
+    bossState?: {
+        placedBlocks: {
+            id: string; // uuid
+            text: string;
+            placedBy: string; // userId
+            placedAt: number;
+        }[];
+    };
+
     // Combos e multiplicadores
     lastCorrectBy?: string; // ID do último jogador que acertou
     comboMultiplier: number; // 1.0, 1.5, 2.0, etc.
