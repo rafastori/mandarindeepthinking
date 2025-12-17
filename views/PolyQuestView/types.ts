@@ -61,8 +61,11 @@ export interface PolyQuestRoom {
     intruderFound?: boolean;
     intruderFoundBy?: string;
 
-    bossPhrase?: string;
-    bossPhraseBlocks?: string[];
+    bossLevel?: {
+        originalSentence: string;
+        translation: string;
+        blocks: string[];
+    };
 
     // Combos e multiplicadores
     lastCorrectBy?: string; // ID do último jogador que acertou

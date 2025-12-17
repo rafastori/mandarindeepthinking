@@ -261,6 +261,272 @@ export const usePolyQuestRoom = (userId?: string) => {
         }
     };
 
+    /**
+     * Alternar seleção de palavra na fase de exploração
+     */
+    const toggleWordSelection = async (roomId: string, word: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const selectedWords = roomData.selectedWords || [];
+
+            let newSelectedWords;
+            if (selectedWords.includes(word)) {
+                newSelectedWords = selectedWords.filter(w => w !== word);
+            } else {
+                newSelectedWords = [...selectedWords, word];
+            }
+
+            await updateDoc(roomRef, {
+                selectedWords: newSelectedWords
+            });
+        } catch (error) {
+            console.error('Error toggling word selection:', error);
+        }
+    };
+
+    const finishExploration = async (roomId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            await updateDoc(roomRef, {
+                phase: 'quest',
+                currentEnigmaIndex: 0
+            });
+        } catch (error) {
+            console.error('Error finishing exploration:', error);
+        }
+    };
+
+    /**
+     * Salvar enigmas gerados
+     */
+    const setEnigmas = async (roomId: string, enigmas: any[]): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            await updateDoc(roomRef, { enigmas });
+        } catch (error) {
+            console.error('Error setting enigmas:', error);
+        }
+    };
+
+    /**
+     * Submeter resposta para um enigma
+     */
+    const submitAnswer = async (roomId: string, playerId: string, enigmaIndex: number, answer: string, isCorrect: boolean): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const enigmas = [...roomData.enigmas];
+
+            if (!enigmas[enigmaIndex]) return;
+            const enigma = enigmas[enigmaIndex];
+
+            const players = [...roomData.players];
+            const playerIndex = players.findIndex(p => p.id === playerId);
+            if (playerIndex >= 0) {
+                const player = players[playerIndex];
+
+                if (isCorrect) {
+                    // Pontuação
+                    player.score = (player.score || 0) + GAME_CONSTANTS.CORRECT_POINTS;
+                    player.consecutiveCorrect = (player.consecutiveCorrect || 0) + 1;
+                    if (player.consecutiveCorrect >= GAME_CONSTANTS.FATIGUE_THRESHOLD) {
+                        player.isFatigued = true;
+                        player.fatigueEndsAt = Date.now() + GAME_CONSTANTS.FATIGUE_DURATION;
+                    }
+                } else {
+                    player.consecutiveCorrect = 0;
+                }
+                players[playerIndex] = player;
+            }
+
+            enigma.attempts = (enigma.attempts || 0) + 1;
+
+            if (isCorrect) {
+                enigma.isDiscovered = true;
+                enigma.discoveredBy = playerId;
+
+                const discoveredCount = enigmas.filter(e => e.isDiscovered).length + 1; // +1 pois este acabou de ser descoberto
+                const totalEnigmas = enigmas.length;
+                const progressPercent = discoveredCount / totalEnigmas;
+
+                // TRIGGER INTRUDER: Se chegou em 50% E ainda não teve intruso
+                if (progressPercent >= GAME_CONSTANTS.INTRUDER_TRIGGER_PERCENT && !roomData.intruderFound && roomData.intruderWord) {
+                    // Nota: A palavra intrusa precisa ser gerada antes ou agora. 
+                    // Simplificação: Se já temos uma definida (ex: no setup), usamos. 
+                    // Se não, o componente QuestPhase deve chamar a geração e depois o trigger.
+                    // Vamos deixar o QuestPhase lidar com o trigger para poder chamar a AI.
+                }
+
+                await updateDoc(roomRef, {
+                    players,
+                    enigmas,
+                    currentEnigmaIndex: Math.min(roomData.currentEnigmaIndex + 1, enigmas.length),
+                    lastCorrectBy: playerId
+                });
+
+                // Check for Boss Phase (All enigmas found)
+                const allDiscovered = enigmas.every(e => e.isDiscovered);
+                if (allDiscovered) {
+                    await updateDoc(roomRef, {
+                        phase: 'boss',
+                        // Boss generation will happen in UI component, or we can trigger it here if we had the text.
+                        // Ideally, QuestPhase detects "All solved" and calls startBossPhase similar to Intruder.
+                    });
+                }
+            } else {
+                const newConfidence = Math.max(0, roomData.confidence - GAME_CONSTANTS.ERROR_PENALTY);
+                if (newConfidence <= 0) {
+                    await updateDoc(roomRef, {
+                        confidence: newConfidence,
+                        players,
+                        enigmas,
+                        phase: 'finished',
+                        finishedAt: Timestamp.now()
+                    });
+                } else {
+                    await updateDoc(roomRef, {
+                        confidence: newConfidence,
+                        players,
+                        enigmas
+                    });
+                }
+            }
+        } catch (error) {
+            console.error('Error submitting answer:', error);
+        }
+    };
+
+    const triggerIntruder = async (roomId: string, intruderWord: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            await updateDoc(roomRef, {
+                phase: 'intruder',
+                intruderWord,
+                intruderFound: false,
+                intruderFoundBy: null
+            });
+        } catch (error) {
+            console.error('Error triggering intruder:', error);
+        }
+    };
+
+    const resolveIntruder = async (roomId: string, playerId: string, selectedWord: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+
+            if (!roomSnap.exists()) return;
+            const roomData = roomSnap.data() as PolyQuestRoom;
+
+            if (selectedWord.toLowerCase() === roomData.intruderWord?.toLowerCase()) {
+                // Sucesso!
+                const players = [...roomData.players];
+                const playerIndex = players.findIndex(p => p.id === playerId);
+                if (playerIndex >= 0) {
+                    players[playerIndex].score += GAME_CONSTANTS.INTRUDER_POINTS;
+                }
+
+                await updateDoc(roomRef, {
+                    phase: 'quest', // Volta para a quest
+                    intruderFound: true,
+                    intruderFoundBy: playerId,
+                    confidence: Math.min(100, (roomData.confidence || 0) + 10), // Bônus de vida
+                    players
+                });
+            } else {
+                // Erro no Intruso: Penalidade?
+                const newConfidence = Math.max(0, (roomData.confidence || 0) - GAME_CONSTANTS.ERROR_PENALTY);
+                await updateDoc(roomRef, { confidence: newConfidence });
+            }
+        } catch (error) {
+            console.error('Error resolving intruder:', error);
+        }
+    };
+
+    const startBossPhase = async (roomId: string, bossData: any): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            await updateDoc(roomRef, {
+                phase: 'boss',
+                bossLevel: bossData
+            });
+        } catch (error) {
+            console.error('Error starting boss phase:', error);
+        }
+    };
+
+    const submitBossDamage = async (roomId: string, damage: number, isFatal: boolean): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+
+            if (!roomSnap.exists()) return;
+            const roomData = roomSnap.data() as PolyQuestRoom;
+
+            if (isFatal) {
+                // Win!
+                await updateDoc(roomRef, {
+                    phase: 'finished',
+                    finishedAt: Timestamp.now(),
+                    // Bonus score can be calculated here
+                });
+            } else {
+                // Damage to Team Confidence
+                const newConfidence = Math.max(0, (roomData.confidence || 0) - damage);
+
+                await updateDoc(roomRef, {
+                    confidence: newConfidence
+                });
+
+                if (newConfidence <= 0) {
+                    await updateDoc(roomRef, {
+                        phase: 'finished',
+                        finishedAt: Timestamp.now()
+                    });
+                }
+            }
+        } catch (error) {
+            console.error('Error dealing boss damage:', error);
+        }
+    };
+
+    /**
+     * Limpar fadiga do jogador (chamado automaticamente ou manualmente)
+     */
+    const clearFatigue = async (roomId: string, playerId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const players = [...roomData.players];
+            const playerIndex = players.findIndex(p => p.id === playerId);
+
+            if (playerIndex >= 0 && players[playerIndex].isFatigued) {
+                players[playerIndex].isFatigued = false;
+                players[playerIndex].fatigueEndsAt = undefined;
+                players[playerIndex].consecutiveCorrect = 0; // Resetar contador ao sair da fadiga? Regra diz "evitar domínio", então sim.
+
+                await updateDoc(roomRef, {
+                    players
+                });
+            }
+        } catch (error) {
+            console.error('Error clearing fatigue:', error);
+        }
+    };
+
     return {
         rooms,
         activeRoom,
@@ -275,5 +541,14 @@ export const usePolyQuestRoom = (userId?: string) => {
         startGame,
         updatePhase,
         updateConfidence,
+        toggleWordSelection,
+        finishExploration,
+        setEnigmas,
+        submitAnswer,
+        clearFatigue,
+        triggerIntruder,
+        resolveIntruder,
+        startBossPhase,
+        submitBossDamage
     };
 };

@@ -64,6 +64,59 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     Os significados e distratores devem ser em Português.`;
     }
 
+
+    if (type === 'enigmas') {
+        const srcName = targetLang; // Parametro reutilizado como source
+        const tgtName = mode;       // Parametro reutilizado como target
+
+        return `Você é um tradutor especialista e criador de jogos.
+    Receberá uma lista de palavras em ${srcName}.
+    Para cada palavra, retorne um objeto JSON com:
+    {
+      "word": "a palavra original",
+      "translation": "a tradução correta para ${tgtName}",
+      "alternatives": ["alternativa incorreta 1", "alternativa incorreta 2", "alternativa incorreta 3"],
+      "synonym": "um sinônimo ou definição breve em ${tgtName} (para dica)"
+    }
+    As alternativas devem ser plausíveis mas incorretas.
+    Retorne APENAS o JSON Array.`;
+    }
+
+    if (type === 'intruder') {
+        const srcName = targetLang; // Reutilizando param
+        return `Você é um criador de jogos de linguagem.
+        Seu objetivo é criar uma "Palavra Intrusa" para um jogo de desafio.
+        Dado um texto ou lista de palavras em ${srcName}, sugira uma palavra que NÃO pertença ao contexto (seja anacrônica, de outro tópico ou absurda), mas que pareça plausível linguisticamente.
+        
+        Exemplo: Texto medieval -> Intruso: "Computador" (Computer).
+        Exemplo: Texto sobre frutas -> Intruso: "Carro" (Auto).
+
+        Retorne APENAS um JSON:
+        {
+            "word": "palavra intrusa no idioma original (${srcName})",
+            "translation": "tradução em Português",
+            "reason": "breve explicação do porquê é intruso"
+        }`;
+    }
+
+    if (type === 'boss') {
+        const srcName = targetLang;
+        return `Você é um 'Boss Final' de um jogo de idiomas.
+        Seu objetivo é desafiar os jogadores a reconstruir uma frase complexa.
+        Dado um texto em ${srcName}, escolha UMA frase chave (interessante e gramaticalmente rica).
+        Retorne APENAS um JSON:
+        {
+            "originalSentence": "A frase completa correta",
+            "translation": "Tradução em Português",
+            "blocks": ["bloco1", "bloco2", "bloco3", "bloco4"]
+        }
+        Regras para os blocos:
+        1. Divida a frase em 4 a 6 pedaços lógicos (chunks).
+        2. NÃO divida palavra por palavra, mas sim por sintagmas (ex: "O grande gato" | "comeu" | "o rato").
+        3. Embaralhe os blocos no array de retorno.
+        `;
+    }
+
     return '';
 };
 
@@ -219,6 +272,161 @@ export const generateGameDeck = async (
         return await response.json();
     } catch (error) {
         console.error("Game Deck Error:", error);
+        throw error;
+    }
+};
+
+export interface EnigmaData {
+    word: string;
+    translation: string;
+    alternatives: string[];
+    synonym: string;
+}
+
+export const generateEnigmas = async (
+    words: string[],
+    sourceLang: string,
+    targetLang: string
+): Promise<EnigmaData[]> => {
+    // Helper para nome do idioma
+    const getLangName = (code: string) => {
+        const map: Record<string, string> = {
+            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+            'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
+            'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        };
+        return map[code] || code;
+    };
+
+    const srcName = getLangName(sourceLang);
+    const tgtName = getLangName(targetLang);
+
+    // DEV MODE
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Enigmas");
+        // Hack: passando nomes de idiomas nos params existentes
+        const systemPrompt = getSystemInstruction('enigmas', srcName, tgtName as any);
+        const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
+
+        return await callLocalGemini(userPrompt, systemPrompt);
+    }
+
+    // PROD MODE
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'enigmas',
+                words,
+                sourceLang: srcName,
+                targetLang: tgtName
+            }),
+        });
+        if (!response.ok) throw new Error("Erro ao gerar enigmas");
+        return await response.json();
+    } catch (error) {
+        console.error("Enigmas Error:", error);
+        throw error;
+    }
+};
+
+export interface IntruderData {
+    word: string;
+    translation: string;
+    reason: string;
+}
+
+export const generateIntruder = async (
+    contextWords: string[],
+    targetLang: string
+): Promise<IntruderData> => {
+
+    // Helper duplicado, idealmente mover para utils
+    const getLangName = (code: string) => {
+        const map: Record<string, string> = {
+            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+            'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
+            'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        };
+        return map[code] || code;
+    };
+
+    const langName = getLangName(targetLang);
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Intruder");
+        const systemPrompt = getSystemInstruction('intruder', langName);
+        const userPrompt = `Contexto (palavras do texto): ${contextWords.slice(0, 20).join(', ')}...`;
+
+        return await callLocalGemini(userPrompt, systemPrompt);
+    }
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'intruder',
+                context: contextWords.slice(0, 20),
+                targetLang: langName
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar intruso");
+        return await response.json();
+    } catch (error) {
+        console.error("Intruder Error:", error);
+        throw error;
+    }
+};
+
+export interface BossLevelData {
+    originalSentence: string;
+    translation: string;
+    blocks: string[];
+}
+
+export const generateBossLevel = async (
+    fullText: string,
+    targetLang: string
+): Promise<BossLevelData> => {
+
+    // Helper duplicado
+    const getLangName = (code: string) => {
+        const map: Record<string, string> = {
+            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+            'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
+            'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        };
+        return map[code] || code;
+    };
+
+    const langName = getLangName(targetLang);
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Boss");
+        const systemPrompt = getSystemInstruction('boss', langName);
+        const userPrompt = `Texto base: ${fullText}`;
+
+        return await callLocalGemini(userPrompt, systemPrompt);
+    }
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'boss',
+                context: fullText,
+                targetLang: langName
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar boss");
+        return await response.json();
+    } catch (error) {
+        console.error("Boss Error:", error);
         throw error;
     }
 };

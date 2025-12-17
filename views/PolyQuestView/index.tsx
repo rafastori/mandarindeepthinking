@@ -7,6 +7,10 @@ import { createPlayerFromUser } from './utils';
 import { RoomList } from './components/RoomList';
 import { CreateRoomModal } from './components/CreateRoomModal';
 import { PolyQuestLobby } from './components/PolyQuestLobby';
+import { ExplorationPhase } from './components/ExplorationPhase';
+import { QuestPhase } from './components/QuestPhase';
+import { IntruderChallenge } from './components/IntruderChallenge';
+import { BossPhase } from './components/BossPhase';
 
 const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
@@ -23,6 +27,15 @@ const PolyQuestView: React.FC = () => {
         toggleReady,
         updateConfig,
         startGame,
+        updateConfidence,
+        toggleWordSelection,
+        finishExploration,
+        setEnigmas,
+        submitAnswer,
+        triggerIntruder,
+        resolveIntruder,
+        startBossPhase,
+        submitBossDamage
     } = usePolyQuestRoom(user?.uid);
 
     useEffect(() => {
@@ -143,16 +156,51 @@ const PolyQuestView: React.FC = () => {
                             </div>
                         </div>
                     ) : activeRoom ? (
-                        // Dentro de uma sala - mostrar lobby
-                        <PolyQuestLobby
-                            room={activeRoom}
-                            isHost={activeRoom.hostId === user.uid}
-                            currentUserId={user.uid}
-                            onToggleReady={handleToggleReady}
-                            onUpdateConfig={handleUpdateConfig}
-                            onStartGame={handleStartGame}
-                            onLeaveRoom={handleLeaveRoom}
-                        />
+                        activeRoom.phase === 'lobby' ? (
+                            <PolyQuestLobby
+                                room={activeRoom}
+                                isHost={activeRoom.hostId === user.uid}
+                                currentUserId={user.uid}
+                                onToggleReady={handleToggleReady}
+                                onUpdateConfig={handleUpdateConfig}
+                                onStartGame={handleStartGame}
+                                onLeaveRoom={handleLeaveRoom}
+                            />
+                        ) : activeRoom.phase === 'exploration' ? (
+                            <ExplorationPhase
+                                room={activeRoom}
+                                currentUserId={user.uid}
+                                onToggleWord={(word) => toggleWordSelection(activeRoom.id, word)}
+                                onFinishExploration={() => finishExploration(activeRoom.id)}
+                            />
+                        ) : activeRoom.phase === 'quest' ? (
+                            <QuestPhase
+                                room={activeRoom}
+                                currentUserId={user.uid}
+                                onSetEnigmas={(enigmas) => setEnigmas(activeRoom.id, enigmas)}
+                                onAnswer={(idx, ans, correct) => submitAnswer(activeRoom.id, user.uid, idx, ans, correct)}
+                                onUpdateConfidence={(delta) => updateConfidence(activeRoom.id, delta)}
+                                onTriggerIntruder={(word) => triggerIntruder(activeRoom.id, word)}
+                            />
+                        ) : activeRoom.phase === 'intruder' ? (
+                            <IntruderChallenge
+                                room={activeRoom}
+                                currentUserId={user.uid}
+                                onResolveIntruder={(word) => resolveIntruder(activeRoom.id, user.uid, word)}
+                            />
+                        ) : activeRoom.phase === 'boss' ? (
+                            <BossPhase
+                                room={activeRoom}
+                                currentUserId={user.uid}
+                                onStartBoss={(bossData) => startBossPhase(activeRoom.id, bossData)}
+                                onDamage={(dmg, fatal) => submitBossDamage(activeRoom.id, dmg, fatal)}
+                            />
+                        ) : (
+                            <div className="text-center p-10">
+                                <h3 className="text-xl font-bold mb-2">Fase em desenvolvimento: {activeRoom.phase}</h3>
+                                <p>Em breve...</p>
+                            </div>
+                        )
                     ) : (
                         // Fora de sala - mostrar lista de salas
                         <RoomList
