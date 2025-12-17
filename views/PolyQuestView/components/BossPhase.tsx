@@ -87,7 +87,6 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                 console.error("Failed to generate boss:", error);
                 onStartBoss({
                     originalSentence: "Error generating boss level please try again",
-                    translation: "Erro ao gerar nível do chefe, tente novamente",
                     blocks: ["Error", "generating", "boss", "level"]
                 });
             } finally {
@@ -169,8 +168,6 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                         </h2>
                         <p className="text-purple-100 text-lg mb-2 max-w-2xl">
                             Reconstruam a frase JUNTOS!
-                            <br />
-                            <span className="text-sm opacity-75 font-semibold">Pista (Tradução): "{room.bossLevel.translation}"</span>
                         </p>
                     </div>
                     {/* Players Legend */}

@@ -102,19 +102,19 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     if (type === 'boss') {
         const srcName = targetLang;
         return `Você é um 'Boss Final' de um jogo de idiomas.
-        Seu objetivo é desafiar os jogadores a reconstruir uma frase complexa.
-        Dado um texto em ${srcName}, escolha UMA frase chave (interessante e gramaticalmente rica).
+        Seu objetivo é desafiar os jogadores a reconstruir uma frase curta.
+        Dado um texto em ${srcName}, escolha UMA frase curta (não o texto completo).
         Retorne APENAS um JSON:
         {
-            "originalSentence": "A frase completa no idioma estudado (${srcName})",
-            "translation": "A tradução exata em Português (Brasil)",
+            "originalSentence": "A frase escolhida no idioma estudado (${srcName})",
             "blocks": ["bloco1", "bloco2", "bloco3", "bloco4"]
         }
         Regras para os blocos:
         1. Os blocos devem estar no idioma estudado (${srcName}).
         2. Divida a frase em 4 a 6 pedaços lógicos (chunks).
-        3. NÃO divida palavra por palavra, mas sim por sintagmas (ex: "O grande gato" | "comeu" | "o rato").
+        3. NÃO divida palavra por palavra, mas sim por sintagmas.
         4. Embaralhe os blocos no array de retorno.
+        5. NÃO inclua tradução.
         `;
     }
 
@@ -408,7 +408,6 @@ export const generateIntruder = async (
 
 export interface BossLevelData {
     originalSentence: string;
-    translation: string;
     blocks: string[];
 }
 

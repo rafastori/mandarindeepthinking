@@ -75,10 +75,9 @@ const bossSchema = {
   type: Type.OBJECT,
   properties: {
     originalSentence: { type: Type.STRING },
-    translation: { type: Type.STRING },
     blocks: { type: Type.ARRAY, items: { type: Type.STRING } }
   },
-  required: ["originalSentence", "translation", "blocks"]
+  required: ["originalSentence", "blocks"]
 };
 
 const rawTextSchema = {
@@ -187,7 +186,16 @@ export default async function handler(req, res) {
 
     // --- 5. POLYQUEST: BOSS ---
     if (type === 'boss') {
-      const prompt = `Final Boss Challenge. From this text: "${context}", choose a complex sentence. originalSentence and blocks MUST be in ${targetLang}. translation MUST be in Portuguese (Brazil).`;
+      const prompt = `Final Boss Challenge. From this text: "${context}", choose ONE short sentence (not the full text). 
+      Return:
+      - originalSentence: the chosen sentence in ${targetLang}
+      - blocks: the sentence divided into 4-6 logical chunks, SHUFFLED
+      
+      Rules for blocks:
+      1. Divide by phrases/syntagms, NOT word-by-word
+      2. Each block should make grammatical sense
+      3. Shuffle the blocks array
+      4. Do NOT include translation`;
       const response = await ai.models.generateContent({
         model: MODEL_NAME,
         contents: prompt,
