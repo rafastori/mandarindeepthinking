@@ -15,6 +15,7 @@ export interface PolyQuestPlayer {
     fatigueEndsAt?: number; // timestamp
     consecutiveCorrect: number;
     helpCount: number; // Para MVP Colaborativo
+    totalScore: number; // Ranking global acumulado
 }
 
 // Palavra/Enigma
@@ -134,7 +135,7 @@ export const SUPPORTED_LANGUAGES: Language[] = [
 
 // Constantes do jogo
 export const GAME_CONSTANTS = {
-    MIN_WORDS: 40,
+    MIN_WORDS: 1,
     INITIAL_CONFIDENCE: 100,
     ERROR_PENALTY: 15, // Porcentagem
     CORRECT_POINTS: 10,

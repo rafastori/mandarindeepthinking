@@ -68,14 +68,28 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
                         </p>
                     </div>
                     {isHost && (
-                        <button
-                            onClick={onFinishExploration}
-                            disabled={uniqueSelectedWords.length === 0}
-                            className="px-6 py-2 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
-                        >
-                            <span>Iniciar Quest</span>
-                            <Icon name="arrow-right" size={20} />
-                        </button>
+                        <div className="flex items-center gap-4">
+                            {/* Scoreboard (All Players) */}
+                            <div className="flex items-center gap-3 overflow-x-auto max-w-[200px] sm:max-w-md no-scrollbar">
+                                {room.players.map(p => (
+                                    <div key={p.id} className="flex items-center gap-2 px-2 py-1 rounded-lg text-xs font-bold border border-slate-200 bg-slate-50 shadow-sm truncate">
+                                        <div className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px] uppercase">
+                                            {p.name[0]}
+                                        </div>
+                                        <span>LVL {(p.totalScore || 0) + (p.score || 0)}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <button
+                                onClick={onFinishExploration}
+                                disabled={uniqueSelectedWords.length === 0}
+                                className="px-6 py-2 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
+                            >
+                                <span>Iniciar Quest</span>
+                                <Icon name="arrow-right" size={20} />
+                            </button>
+                        </div>
                     )}
                 </div>
 

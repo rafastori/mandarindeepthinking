@@ -80,7 +80,7 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
             setLoading(true);
             try {
                 const textContext = room.config.originalText || "PolyQuest Context";
-                const bossData = await generateBossLevel(textContext, room.config.targetLang);
+                const bossData = await generateBossLevel(textContext, room.config.sourceLang);
                 console.log("Boss Generated:", bossData);
                 onStartBoss(bossData);
             } catch (error) {
@@ -178,7 +178,7 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                         {room.players.map(p => (
                             <div key={p.id} className="flex items-center gap-2 mb-1">
                                 <span className={`w-3 h-3 rounded-full border ${getUserColor(p.id).split(' ')[0].replace('border', 'bg')}`}></span>
-                                <span>{p.name}</span>
+                                <span>{p.name} (LVL {(p.totalScore || 0) + (p.score || 0)})</span>
                             </div>
                         ))}
                     </div>

@@ -4,7 +4,7 @@ import { User } from 'firebase/auth';
 /**
  * Criar objeto de jogador a partir do usuário Firebase
  */
-export const createPlayerFromUser = (user: User): PolyQuestPlayer => {
+export const createPlayerFromUser = (user: User, totalScore: number = 0): PolyQuestPlayer => {
     return {
         id: user.uid,
         name: user.displayName || 'Anonymous',
@@ -14,6 +14,7 @@ export const createPlayerFromUser = (user: User): PolyQuestPlayer => {
         isFatigued: false,
         consecutiveCorrect: 0,
         helpCount: 0,
+        totalScore,
     };
 };
 

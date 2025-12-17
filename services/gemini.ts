@@ -365,7 +365,7 @@ export interface IntruderData {
 
 export const generateIntruder = async (
     contextWords: string[],
-    targetLang: string
+    contentLang: string
 ): Promise<IntruderData> => {
 
     // Helper duplicado, idealmente mover para utils
@@ -378,7 +378,7 @@ export const generateIntruder = async (
         return map[code] || code;
     };
 
-    const langName = getLangName(targetLang);
+    const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Intruder");
@@ -415,9 +415,9 @@ export interface BossLevelData {
 
 export const generateBossLevel = async (
     fullText: string,
-    targetLang: string
+    contentLang: string
 ): Promise<BossLevelData> => {
-    const langName = getLangName(targetLang);
+    const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Boss");
@@ -446,12 +446,12 @@ export const generateBossLevel = async (
     }
 };
 
-export const generateRawText = async (targetLang: string): Promise<string> => {
-    const langName = getLangName(targetLang);
+export const generateRawText = async (contentLang: string): Promise<string> => {
+    const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Raw Text");
-        const systemPrompt = getSystemInstruction('raw_text', targetLang);
+        const systemPrompt = getSystemInstruction('raw_text', contentLang);
         const userPrompt = `Gere um texto em ${langName}.`;
 
         const data = await callLocalGemini(userPrompt, systemPrompt);
@@ -464,7 +464,7 @@ export const generateRawText = async (targetLang: string): Promise<string> => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 type: 'raw_text',
-                targetLang: targetLang // Passando o código original 'de', 'zh'
+                targetLang: contentLang // Passando o código original 'de', 'zh'
             }),
         });
 

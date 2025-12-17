@@ -82,8 +82,8 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                             <div
                                 key={player.id}
                                 className={`flex items-center gap-3 p-3 rounded-lg border-2 transition-all ${player.isReady
-                                        ? 'bg-emerald-50 border-emerald-200'
-                                        : 'bg-slate-50 border-slate-200'
+                                    ? 'bg-emerald-50 border-emerald-200'
+                                    : 'bg-slate-50 border-slate-200'
                                     }`}
                             >
                                 {player.avatarUrl && (
@@ -102,8 +102,11 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                                             </span>
                                         )}
                                     </p>
-                                    <p className="text-xs text-slate-500">
-                                        {player.isReady ? '✅ Pronto' : '⏳ Aguardando'}
+                                    <p className="text-xs text-slate-500 flex items-center gap-2">
+                                        <span>{player.isReady ? '✅ Pronto' : '⏳ Aguardando'}</span>
+                                        <span className="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded text-[10px] font-black uppercase">
+                                            LVL {player.totalScore || 0}
+                                        </span>
                                     </p>
                                 </div>
                             </div>
@@ -121,7 +124,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                     <div className="grid grid-cols-2 gap-4">
                         <div>
                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma de Origem
+                                Idioma estudado
                             </label>
                             <select
                                 value={sourceLang}
@@ -139,7 +142,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
 
                         <div>
                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma de Destino
+                                Idioma nativo
                             </label>
                             <select
                                 value={targetLang}
@@ -211,8 +214,8 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                         <button
                             onClick={onToggleReady}
                             className={`px-6 py-3 rounded-lg font-semibold transition-all ${currentPlayer?.isReady
-                                    ? 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-                                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                                ? 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+                                : 'bg-blue-600 text-white hover:bg-blue-700'
                                 }`}
                         >
                             {currentPlayer?.isReady ? '❌ Cancelar' : '✅ Estou Pronto'}

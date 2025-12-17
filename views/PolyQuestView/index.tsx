@@ -50,7 +50,7 @@ const PolyQuestView: React.FC = () => {
     } = usePolyQuestRoom(user?.uid);
 
     const { addItem } = useStudyItems(user?.uid);
-    const { savedIds, updateFavorites } = useUserProfile(user?.uid);
+    const { savedIds, updateFavorites, totalScore } = useUserProfile(user?.uid);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
@@ -73,7 +73,7 @@ const PolyQuestView: React.FC = () => {
         targetLang: string,
         text: string
     ) => {
-        const player = createPlayerFromUser(user);
+        const player = createPlayerFromUser(user, totalScore);
         const roomId = await createRoom(
             roomName,
             {
@@ -95,7 +95,7 @@ const PolyQuestView: React.FC = () => {
     };
 
     const handleJoinRoom = async (roomId: string) => {
-        const player = createPlayerFromUser(user);
+        const player = createPlayerFromUser(user, totalScore);
         const success = await joinRoom(roomId, player);
 
         if (success) {

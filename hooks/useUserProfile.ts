@@ -8,6 +8,7 @@ const defaultStats: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {} 
 export const useUserProfile = (userId: string | null | undefined) => {
     const [savedIds, setSavedIds] = useState<string[]>([]);
     const [stats, setStats] = useState<Stats>(defaultStats);
+    const [totalScore, setTotalScore] = useState<number>(0);
 
     useEffect(() => {
         if (!userId) {
@@ -22,6 +23,7 @@ export const useUserProfile = (userId: string | null | undefined) => {
                 const data = docSnap.data();
                 setSavedIds(data.savedIds || []);
                 setStats(data.stats || defaultStats);
+                setTotalScore(data.totalScore || 0);
             } else {
                 // Cria o documento se não existir
                 setDoc(userRef, { savedIds: [], stats: defaultStats }, { merge: true });
@@ -43,5 +45,5 @@ export const useUserProfile = (userId: string | null | undefined) => {
         await setDoc(userRef, { stats: newStats }, { merge: true });
     };
 
-    return { savedIds, stats, updateFavorites, updateStats };
+    return { savedIds, stats, totalScore, updateFavorites, updateStats };
 };

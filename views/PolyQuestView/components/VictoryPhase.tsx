@@ -35,7 +35,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
         }
     }, [historySaved, currentUserId]); // Depend on historySaved to run once local
 
-    const targetLangName = SUPPORTED_LANGUAGES.find(l => l.code === room.config.targetLang)?.name || room.config.targetLang;
+    const sourceLangName = SUPPORTED_LANGUAGES.find(l => l.code === room.config.sourceLang)?.name || room.config.sourceLang;
 
     const toggleWordSelection = (index: number) => {
         const newSet = new Set(selectedWords);
@@ -91,7 +91,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
 
                     <h1 className="text-4xl font-extrabold text-slate-800 mb-2">Missão Cumprida!</h1>
                     <p className="text-slate-500 text-lg">
-                        A equipe dominou o idioma <span className="font-bold text-blue-600">{targetLangName}</span>.
+                        A equipe dominou o idioma <span className="font-bold text-blue-600">{sourceLangName}</span>.
                     </p>
 
                     {/* Podium */}
@@ -104,7 +104,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
                                     <div className="absolute -top-2 bg-slate-200 text-xs px-1.5 rounded-full border border-white">2º</div>
                                 </div>
                                 <div className="bg-slate-100 w-24 h-24 rounded-t-lg flex flex-col items-center justify-center border-t border-x border-slate-200">
-                                    <span className="font-bold text-slate-700 text-xl">{secondPlace.score}</span>
+                                    <span className="font-bold text-slate-700 text-xl">LVL {(secondPlace.totalScore || 0) + (secondPlace.score || 0)}</span>
                                     <span className="text-xs text-slate-500 max-w-[80px] truncate">{secondPlace.name}</span>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
                                 </div>
                                 <div className="bg-gradient-to-b from-yellow-50 to-yellow-100 w-32 h-32 rounded-t-xl flex flex-col items-center justify-center border-t border-x border-yellow-200 shadow-sm relative">
                                     <span className="text-xs font-bold text-yellow-600 uppercase tracking-wider mb-1">Vencedor</span>
-                                    <span className="font-extrabold text-slate-800 text-4xl">{winner.score}</span>
+                                    <span className="font-extrabold text-slate-800 text-4xl">LVL {(winner.totalScore || 0) + (winner.score || 0)}</span>
                                     <span className="text-sm font-semibold text-slate-700 mt-1 max-w-[100px] truncate">{winner.name}</span>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
                                     <div className="absolute -top-2 bg-orange-100 text-xs px-1.5 rounded-full border border-white">3º</div>
                                 </div>
                                 <div className="bg-orange-50 w-24 h-16 rounded-t-lg flex flex-col items-center justify-center border-t border-x border-orange-100">
-                                    <span className="font-bold text-slate-700 text-lg">{thirdPlace.score}</span>
+                                    <span className="font-bold text-slate-700 text-lg">LVL {(thirdPlace.totalScore || 0) + (thirdPlace.score || 0)}</span>
                                     <span className="text-xs text-slate-500 max-w-[80px] truncate">{thirdPlace.name}</span>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
                                 <div>
                                     <div className="flex items-baseline gap-2 mb-1">
                                         <h3 className="text-xl font-bold text-slate-800">{enigma.word}</h3>
-                                        <span className="text-xs font-bold text-slate-400 uppercase">{room.config.targetLang}</span>
+                                        <span className="text-xs font-bold text-slate-400 uppercase">{room.config.sourceLang}</span>
                                     </div>
                                     <div className="flex items-center gap-2 text-emerald-600 font-semibold">
                                         <Icon name="star" size={14} />

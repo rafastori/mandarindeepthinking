@@ -77,7 +77,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                     <div className="grid grid-cols-2 gap-4">
                         <div>
                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma de Origem *
+                                Idioma estudado *
                             </label>
                             <select
                                 value={sourceLang}
@@ -95,7 +95,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
 
                         <div>
                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma de Destino *
+                                Idioma nativo *
                             </label>
                             <select
                                 value={targetLang}
@@ -148,12 +148,12 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                                 onChange={(e) => setText(e.target.value)}
                                 rows={8}
                                 disabled={generating}
-                                placeholder={`Cole aqui um texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...\n\nMínimo de ${GAME_CONSTANTS.MIN_WORDS} palavras.`}
+                                placeholder={`Cole aqui um texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...\n\nSugerido mais de 30 palavras!`}
                                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none font-mono text-sm disabled:opacity-50"
                             />
                             <span className={`absolute bottom-3 right-3 text-xs font-semibold ${validation.valid ? 'text-emerald-600' : 'text-slate-400'
                                 }`}>
-                                {validation.wordCount} / {GAME_CONSTANTS.MIN_WORDS}
+                                {validation.wordCount} palavras
                             </span>
                         </div>
                         {!validation.valid && validation.error && (

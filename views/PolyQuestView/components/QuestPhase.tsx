@@ -102,7 +102,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
             const generateAndTrigger = async () => {
                 try {
                     const contextSample = room.enigmas.slice(0, 10).map(e => e.word);
-                    const intruderData = await generateIntruder(contextSample, room.config.targetLang);
+                    const intruderData = await generateIntruder(contextSample, room.config.sourceLang);
                     await onTriggerIntruder(intruderData.word);
                 } catch (err) {
                     await onTriggerIntruder("Unicorn");
@@ -345,7 +345,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                             <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] uppercase">
                                 {p.name[0]}
                             </div>
-                            <span>{p.score || 0}</span>
+                            <span>LVL {(p.totalScore || 0) + (p.score || 0)}</span>
                         </div>
                     ))}
                 </div>
@@ -430,7 +430,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                                     )}
                                     <span className="font-bold opacity-0 group-hover:opacity-100 transition-opacity text-slate-800">{enigma.word}</span>
                                     <span className="text-xs font-bold animate-pulse text-slate-500">
-                                        {activeUser?.id === currentUserId ? 'Resolvendo...' : `${activeUser?.name} resolvendo...`}
+                                        {activeUser?.id === currentUserId ? 'Resolvendo...' : `${activeUser?.name} (LVL ${(activeUser?.totalScore || 0) + (activeUser?.score || 0)})`}
                                     </span>
                                 </>
                             ) : (
