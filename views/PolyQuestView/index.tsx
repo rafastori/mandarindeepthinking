@@ -5,6 +5,7 @@ import Icon from '../../components/Icon';
 import { usePolyQuestRoom } from './hooks/usePolyQuestRoom';
 import { createPlayerFromUser } from './utils';
 import { useStudyItems } from '../../hooks/useStudyItems';
+import { useUserProfile } from '../../hooks/useUserProfile';
 import { RoomList } from './components/RoomList';
 import { CreateRoomModal } from './components/CreateRoomModal';
 import { PolyQuestLobby } from './components/PolyQuestLobby';
@@ -49,6 +50,7 @@ const PolyQuestView: React.FC = () => {
     } = usePolyQuestRoom(user?.uid);
 
     const { addItem } = useStudyItems(user?.uid);
+    const { savedIds, updateFavorites } = useUserProfile(user?.uid);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
@@ -136,9 +138,11 @@ const PolyQuestView: React.FC = () => {
         if (!activeRoom || !user) return;
         const enigmasToSave = activeRoom.enigmas.filter((_, i) => enigmaIndices.includes(i));
 
+        const newIds: string[] = [];
+
         for (const enigma of enigmasToSave) {
             // FIX: Ensure tokens and keywords are populated so ReadingView/Cards don't crash or hide it
-            await addItem({
+            const newId = await addItem({
                 chinese: enigma.word,
                 translation: enigma.translation,
                 pinyin: '', // Fallback empty
@@ -154,6 +158,13 @@ const PolyQuestView: React.FC = () => {
                 type: 'word',
                 originalSentence: `Projetos: PolyQuest`
             });
+
+            if (newId) newIds.push(newId);
+        }
+
+        if (newIds.length > 0) {
+            await updateFavorites([...savedIds, ...newIds]);
+            // alert(`Salvo ${newIds.length} palavras nos Favoritos!`); // Optional feedback
         }
     };
 
