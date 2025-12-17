@@ -37,7 +37,9 @@ const PolyQuestView: React.FC = () => {
         startBossPhase,
         submitBossDamage,
         addBossBlock,
-        removeBossBlock
+        removeBossBlock,
+        lockEnigma,
+        unlockEnigma
     } = usePolyQuestRoom(user?.uid);
 
     useEffect(() => {
@@ -183,6 +185,8 @@ const PolyQuestView: React.FC = () => {
                                 onAnswer={(idx, ans, correct) => submitAnswer(activeRoom.id, user.uid, idx, ans, correct)}
                                 onUpdateConfidence={(delta) => updateConfidence(activeRoom.id, delta)}
                                 onTriggerIntruder={(word) => triggerIntruder(activeRoom.id, word)}
+                                onLockEnigma={(idx) => lockEnigma(activeRoom.id, idx, user.uid)}
+                                onUnlockEnigma={(idx) => unlockEnigma(activeRoom.id, idx, user.uid)}
                             />
                         ) : activeRoom.phase === 'intruder' ? (
                             <IntruderChallenge

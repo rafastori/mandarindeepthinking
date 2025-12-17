@@ -452,6 +452,49 @@ export const usePolyQuestRoom = (userId?: string) => {
         }
     };
 
+    const lockEnigma = async (roomId: string, enigmaIndex: number, playerId: string): Promise<boolean> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return false;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const enigmas = [...roomData.enigmas];
+
+            // Check if already locked by someone else
+            if (enigmas[enigmaIndex].activeSolver && enigmas[enigmaIndex].activeSolver !== playerId) {
+                return false;
+            }
+
+            enigmas[enigmaIndex].activeSolver = playerId;
+
+            await updateDoc(roomRef, { enigmas });
+            return true;
+        } catch (error) {
+            console.error("Lock error", error);
+            return false;
+        }
+    };
+
+    const unlockEnigma = async (roomId: string, enigmaIndex: number, playerId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as PolyQuestRoom;
+            const enigmas = [...roomData.enigmas];
+
+            // Only unlock if locked by this player
+            if (enigmas[enigmaIndex].activeSolver === playerId) {
+                delete enigmas[enigmaIndex].activeSolver;
+                await updateDoc(roomRef, { enigmas });
+            }
+        } catch (error) {
+            console.error("Unlock error", error);
+        }
+    };
+
     const startBossPhase = async (roomId: string, bossData: any): Promise<void> => {
         try {
             const roomRef = doc(db, 'polyquestRooms', roomId);
@@ -594,6 +637,8 @@ export const usePolyQuestRoom = (userId?: string) => {
         startBossPhase,
         submitBossDamage,
         addBossBlock,
-        removeBossBlock
+        removeBossBlock,
+        lockEnigma,
+        unlockEnigma
     };
 };

@@ -29,6 +29,7 @@ export interface WordEnigma {
     helpedBy?: string; // ID do jogador que ajudou
     synonym?: string; // Gerado pela IA quando alguém pede ajuda
     attempts: number; // Quantas vezes foi tentada
+    activeSolver?: string; // ID do jogador que está tentando resolver no momento
 }
 
 // Configuração do jogo
