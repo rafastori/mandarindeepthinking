@@ -7,9 +7,12 @@ import {
     doc,
     updateDoc,
     deleteDoc,
+    setDoc,
     getDoc,
     arrayUnion,
     arrayRemove,
+    increment,
+    serverTimestamp,
     Timestamp
 } from 'firebase/firestore';
 import { PolyQuestRoom, PolyQuestPlayer, GameConfig, GAME_CONSTANTS } from '../types';
@@ -564,6 +567,30 @@ export const usePolyQuestRoom = (userId?: string) => {
         }
     };
 
+    const savePlayerHistory = async (roomId: string, userId: string, resultData: any) => {
+        try {
+            // 1. Save to History Collection
+            const historyRef = collection(db, 'users', userId, 'gameHistory');
+            await addDoc(historyRef, {
+                roomId,
+                ...resultData,
+                playedAt: serverTimestamp()
+            });
+
+            // 2. Update Global User Stats
+            const userRef = doc(db, 'users', userId);
+            // We use set with merge because user doc might not exist fully populated
+            await setDoc(userRef, {
+                totalScore: increment(resultData.score || 0),
+                gamesPlayed: increment(1),
+                lastPlayedAt: serverTimestamp()
+            }, { merge: true });
+
+        } catch (error) {
+            console.error("Error saving history:", error);
+        }
+    };
+
     const startBossPhase = async (roomId: string, bossData: any): Promise<void> => {
         try {
             const roomRef = doc(db, 'polyquestRooms', roomId);
@@ -616,6 +643,17 @@ export const usePolyQuestRoom = (userId?: string) => {
             });
         } catch (error) {
             console.error('Error removing boss block:', error);
+        }
+    };
+
+    const reorderBossBlocks = async (roomId: string, newOrder: any[]) => {
+        try {
+            const roomRef = doc(db, 'polyquestRooms', roomId);
+            await updateDoc(roomRef, {
+                'bossState.placedBlocks': newOrder
+            });
+        } catch (error) {
+            console.error("Reorder error", error);
         }
     };
 
@@ -710,6 +748,8 @@ export const usePolyQuestRoom = (userId?: string) => {
         lockEnigma,
         unlockEnigma,
         requestHelp,
-        provideHelp
+        provideHelp,
+        savePlayerHistory,
+        reorderBossBlocks
     };
 };

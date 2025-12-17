@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Icon from '../../../components/Icon';
 import { PolyQuestRoom, PolyQuestPlayer, WordEnigma, SUPPORTED_LANGUAGES } from '../types';
 
@@ -6,16 +6,34 @@ interface VictoryPhaseProps {
     room: PolyQuestRoom;
     currentUserId: string;
     onResetGame: () => void;
+    onSaveItems: (enigmaIndices: number[]) => Promise<void>;
+    onSaveHistory: (result: any) => Promise<void>;
 }
 
-export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId, onResetGame }) => {
+export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId, onResetGame, onSaveItems, onSaveHistory }) => {
     const [selectedWords, setSelectedWords] = useState<Set<number>>(new Set());
+    const [saving, setSaving] = useState(false);
+    const [historySaved, setHistorySaved] = useState(false);
 
     // Sort players by score
     const sortedPlayers = [...room.players].sort((a, b) => b.score - a.score);
     const winner = sortedPlayers[0];
     const secondPlace = sortedPlayers[1];
     const thirdPlace = sortedPlayers[2];
+
+    const myPlayer = room.players.find(p => p.id === currentUserId);
+
+    // Auto-save history on mount
+    useEffect(() => {
+        if (!historySaved && myPlayer) {
+            onSaveHistory({
+                score: myPlayer.score,
+                rank: sortedPlayers.findIndex(p => p.id === currentUserId) + 1,
+                totalPlayers: room.players.length,
+                won: room.confidence > 0 // Roughly
+            }).then(() => setHistorySaved(true));
+        }
+    }, [historySaved, currentUserId]); // Depend on historySaved to run once local
 
     const targetLangName = SUPPORTED_LANGUAGES.find(l => l.code === room.config.targetLang)?.name || room.config.targetLang;
 
@@ -38,9 +56,18 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
         }
     };
 
-    const handleSaveLibrary = () => {
-        alert(`Salvou ${selectedWords.size} palavras na biblioteca! (Simulado)`);
-        // Here we would implement the actual save logic
+    const handleSaveLibrary = async () => {
+        if (saving) return;
+        setSaving(true);
+        try {
+            await onSaveItems(Array.from(selectedWords));
+            alert(`Salvou ${selectedWords.size} palavras na biblioteca!`);
+        } catch (e) {
+            console.error(e);
+            alert("Erro ao salvar.");
+        } finally {
+            setSaving(false);
+        }
     };
 
     // Helper to extract a context sentence snippet (simple simulation)

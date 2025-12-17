@@ -8,8 +8,9 @@ interface BossPhaseProps {
     currentUserId: string;
     onStartBoss: (bossData: BossLevelData) => void;
     onDamage: (damage: number, isFatal: boolean) => void;
-    onAddBlock: (text: string) => void;
-    onRemoveBlock: (blockId: string) => void;
+    onAddBlock: (text: string) => Promise<void>;
+    onRemoveBlock: (blockId: string) => Promise<void>;
+    onReorderBlocks: (newOrder: any[]) => Promise<void>;
 }
 
 const USER_COLORS = [
@@ -37,10 +38,38 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
     onStartBoss,
     onDamage,
     onAddBlock,
-    onRemoveBlock
+    onRemoveBlock,
+    onReorderBlocks
 }) => {
     const [loading, setLoading] = useState(false);
     const [feedback, setFeedback] = useState<'success' | 'error' | null>(null);
+    const [draggedBlockIndex, setDraggedBlockIndex] = useState<number | null>(null);
+
+    // DnD Handlers
+    const handleDragStart = (e: React.DragEvent, index: number) => {
+        setDraggedBlockIndex(index);
+        e.dataTransfer.effectAllowed = "move";
+        // Optional: Set ghost image
+    };
+
+    const handleDragOver = (e: React.DragEvent, index: number) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+    };
+
+    const handleDrop = async (e: React.DragEvent, targetIndex: number) => {
+        e.preventDefault();
+        if (draggedBlockIndex === null) return;
+        if (draggedBlockIndex === targetIndex) return;
+
+        const placedBlocks = room.bossState?.placedBlocks || [];
+        const newBlocks = [...placedBlocks];
+        const [movedBlock] = newBlocks.splice(draggedBlockIndex, 1);
+        newBlocks.splice(targetIndex, 0, movedBlock);
+
+        await onReorderBlocks(newBlocks);
+        setDraggedBlockIndex(null);
+    };
 
     // Initial Boss Generation (Only Host)
     useEffect(() => {
@@ -85,8 +114,11 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
         if (!room.bossLevel) return;
 
         // Construct sentence from shared state
-        const constructedSentence = placedBlocks.map(b => b.text).join('').replace(/\s+/g, '').toLowerCase();
-        const targetSentence = room.bossLevel.originalSentence.replace(/\s+/g, '').toLowerCase();
+        // FIX: Remove all whitespace, punctuation, and symbols to avoid issues with different language punctuations (e.g., Chinese commas)
+        const normalize = (str: string) => str.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+
+        const constructedSentence = normalize(placedBlocks.map(b => b.text).join(''));
+        const targetSentence = normalize(room.bossLevel.originalSentence);
 
         if (constructedSentence === targetSentence) {
             setFeedback('success');
@@ -177,20 +209,27 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                     </span>
                 )}
 
-                {placedBlocks.map((block) => (
-                    <button
+                {placedBlocks.map((block, idx) => (
+                    <div
                         key={block.id}
-                        onClick={() => handleRemoveBlock(block.id)}
+                        draggable
+                        onDragStart={(e) => handleDragStart(e, idx)}
+                        onDragOver={(e) => handleDragOver(e, idx)}
+                        onDrop={(e) => handleDrop(e, idx)}
                         className={`
-                            px-3 py-1.5 rounded-lg border-2 font-bold animate-in fade-in zoom-in duration-200
-                            hover:opacity-70 flex items-center gap-1
+                            group relative px-4 py-2 rounded-lg font-bold shadow-sm animate-in zoom-in duration-200 cursor-move
                             ${getUserColor(block.placedBy)}
+                            ${draggedBlockIndex === idx ? 'opacity-50' : ''}
                         `}
-                        title={`Colocado por alguém`}
                     >
                         {block.text}
-                        <Icon name="x" size={12} />
-                    </button>
+                        <button
+                            onClick={(e) => { e.stopPropagation(); onRemoveBlock(block.id); }}
+                            className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md"
+                        >
+                            ×
+                        </button>
+                    </div>
                 ))}
             </div>
 

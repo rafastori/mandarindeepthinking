@@ -13,7 +13,7 @@ export interface StudyItem {
     translation: string;
     tokens: string[];
     keywords: Keyword[];
-    language?: 'zh' | 'de';
+    language?: string;
     createdAt?: any;
     type?: 'text' | 'word';
     originalSentence?: string;
@@ -34,10 +34,10 @@ export interface Stats {
 }
 
 export interface Player {
-  id: string;
-  name: string;
-  avatarUrl?: string;
-  score?: number; 
+    id: string;
+    name: string;
+    avatarUrl?: string;
+    score?: number;
 }
 
 // ATUALIZAÇÃO: Card agora tem distratores
@@ -50,35 +50,35 @@ export interface GameCard {
 }
 
 export interface GameRoom {
-  id: string;
-  name: string;
-  players: Player[];
-  hostId: string;
-  createdAt: any;
-  
-  status: 'lobby' | 'review' | 'playing' | 'finished' | 'regenerating';
-  
-  config?: {
-      topic: string;
-      lang: 'zh' | 'de';
-      diff: string;
-  };
-  
-  targetScore: number; 
-  teamScore: number;   
-  
-  deck: GameCard[];        
-  
-  // MUDANÇA TOTAL NA LÓGICA DE CONTROLE
-  // Fila de índices de cartas disponíveis (ex: [0, 1, 2, 5])
-  cardQueue?: number[]; 
-  
-  // Mapeia qual carta está com qual jogador { 'user123': 0 }
-  activeHands?: Record<string, number>; 
-  
-  // Mantemos para compatibilidade temporária, mas não usaremos mais da mesma forma
-  currentCardIndex?: number;
-  roundAnswers?: Record<string, boolean>; 
+    id: string;
+    name: string;
+    players: Player[];
+    hostId: string;
+    createdAt: any;
+
+    status: 'lobby' | 'review' | 'playing' | 'finished' | 'regenerating';
+
+    config?: {
+        topic: string;
+        lang: 'zh' | 'de';
+        diff: string;
+    };
+
+    targetScore: number;
+    teamScore: number;
+
+    deck: GameCard[];
+
+    // MUDANÇA TOTAL NA LÓGICA DE CONTROLE
+    // Fila de índices de cartas disponíveis (ex: [0, 1, 2, 5])
+    cardQueue?: number[];
+
+    // Mapeia qual carta está com qual jogador { 'user123': 0 }
+    activeHands?: Record<string, number>;
+
+    // Mantemos para compatibilidade temporária, mas não usaremos mais da mesma forma
+    currentCardIndex?: number;
+    roundAnswers?: Record<string, boolean>;
 }
 
 declare global {

@@ -336,10 +336,18 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                     <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-semibold">
                         <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length}</span>
                     </div>
-                    <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-50 text-amber-700 rounded-lg text-sm font-semibold">
-                        <Icon name="trophy" size={14} />
-                        <span>{room.players.find(p => p.id === currentUserId)?.score || 0} pts</span>
-                    </div>
+                </div>
+
+                {/* Scoreboard (All Players) */}
+                <div className="flex items-center gap-3 overflow-x-auto max-w-[200px] sm:max-w-md no-scrollbar">
+                    {room.players.map(p => (
+                        <div key={p.id} className={`flex items-center gap-2 px-2 py-1 rounded-lg text-xs font-bold border ${getUserColor(p.id)} shadow-sm truncate`}>
+                            <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] uppercase">
+                                {p.name[0]}
+                            </div>
+                            <span>{p.score || 0}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
 

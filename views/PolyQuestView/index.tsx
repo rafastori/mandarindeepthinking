@@ -4,6 +4,7 @@ import { onAuthStateChanged, User } from 'firebase/auth';
 import Icon from '../../components/Icon';
 import { usePolyQuestRoom } from './hooks/usePolyQuestRoom';
 import { createPlayerFromUser } from './utils';
+import { useStudyItems } from '../../hooks/useStudyItems';
 import { RoomList } from './components/RoomList';
 import { CreateRoomModal } from './components/CreateRoomModal';
 import { PolyQuestLobby } from './components/PolyQuestLobby';
@@ -42,8 +43,12 @@ const PolyQuestView: React.FC = () => {
         lockEnigma,
         unlockEnigma,
         requestHelp,
-        provideHelp
+        provideHelp,
+        reorderBossBlocks,
+        savePlayerHistory
     } = usePolyQuestRoom(user?.uid);
+
+    const { addItem } = useStudyItems(user?.uid);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
@@ -120,6 +125,41 @@ const PolyQuestView: React.FC = () => {
             targetLang,
             originalText: text,
         });
+    };
+
+    const handleTriggerIntruder = async (word: string) => {
+        if (!activeRoom) return;
+        await triggerIntruder(activeRoom.id, word);
+    };
+
+    const handleSaveItems = async (enigmaIndices: number[]) => {
+        if (!activeRoom || !user) return;
+        const enigmasToSave = activeRoom.enigmas.filter((_, i) => enigmaIndices.includes(i));
+
+        for (const enigma of enigmasToSave) {
+            // FIX: Ensure tokens and keywords are populated so ReadingView/Cards don't crash or hide it
+            await addItem({
+                chinese: enigma.word,
+                translation: enigma.translation,
+                pinyin: '', // Fallback empty
+                tokens: [enigma.word], // Must be an array with the word itself
+                keywords: [{
+                    id: Date.now().toString() + Math.random().toString().slice(2), // Temp ID
+                    word: enigma.word,
+                    pinyin: '',
+                    meaning: enigma.translation,
+                    language: activeRoom.config.targetLang as any
+                }],
+                language: activeRoom.config.targetLang,
+                type: 'word',
+                originalSentence: `Projetos: PolyQuest`
+            });
+        }
+    };
+
+    const handleSaveHistory = async (result: any) => {
+        if (!activeRoom || !user) return;
+        await savePlayerHistory(activeRoom.id, user.uid, result);
     };
 
     const handleStartGame = async () => {
@@ -207,12 +247,15 @@ const PolyQuestView: React.FC = () => {
                                 onDamage={(dmg, fatal) => submitBossDamage(activeRoom.id, dmg, fatal)}
                                 onAddBlock={(text) => addBossBlock(activeRoom.id, text, user.uid)}
                                 onRemoveBlock={(blockId) => removeBossBlock(activeRoom.id, blockId)}
+                                onReorderBlocks={(order) => reorderBossBlocks(activeRoom.id, order)}
                             />
                         ) : activeRoom.phase === 'finished' ? (
                             <VictoryPhase
                                 room={activeRoom}
                                 currentUserId={user.uid}
                                 onResetGame={handleLeaveRoom}
+                                onSaveItems={handleSaveItems}
+                                onSaveHistory={handleSaveHistory}
                             />
                         ) : (
                             <div className="text-center p-10">

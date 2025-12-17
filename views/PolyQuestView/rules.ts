@@ -77,9 +77,12 @@ O jogo não acaba quando as cartas terminam.
 
 8 Adicionais a lógica:
 - na sala de colaboração a pontuação individual também deve ser mostrada em tempo real para todos os jogadores.
-- adicionar o botão de "Pedir Ajuda" para os jogadores que não conseguem acertar a palavra.
+- adicionar o botão de "Pedir Ajuda" para os jogadores que não conseguem acertar a palavra - OKKK.
 - adicionar o botão de ver o texto original
-- adicionar tela final com o resultado final do jogo, deve ser como na imagem.
+- adicionar tela final com o resultado final do jogo, deve ser como na imagem - okkkk.
 - salvar o resultado final do jogo no banco de dados. Deixar salva a prontuação individual de cada jogador para que possa ser usada como histórico e ranking. toda vez que um usuário entrar no jogo ele mostrará qual é o seu nível em pontuação geral somada de todas as partidas.
 - fazer com que os dados salvos da bliblioteca da missão entrem no banco de dados da leitura, revisão como se fosse uma importação nativa.
 - No boss final, os kits de palavras devem ser arrastáveis, podendo alterar a posição com facilidade
+- o idioma de estudo é o primeiro idioma selecionado pelo usuário, logo no final do jogo ele mostrará qual é o seu nível em pontuação geral somada de todas as partidas e da partida atual. 
+- Missão Cumprida! A equipe dominou o idioma "DEVE SER O IDIOMA SELECIONADO PELO USUARIO" com as 40 palavras, é o idioma do texto original que deverá ser traduzido para o idioma que o usuário já sabe.
+`;
