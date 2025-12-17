@@ -72,11 +72,14 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
                             {/* Scoreboard (All Players) */}
                             <div className="flex items-center gap-3 overflow-x-auto max-w-[200px] sm:max-w-md no-scrollbar">
                                 {room.players.map(p => (
-                                    <div key={p.id} className="flex items-center gap-2 px-2 py-1 rounded-lg text-xs font-bold border border-slate-200 bg-slate-50 shadow-sm truncate">
-                                        <div className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px] uppercase">
+                                    <div key={p.id} className="flex items-center gap-2 px-2.5 py-1.5 rounded-xl border border-slate-200 bg-slate-50 shadow-sm truncate">
+                                        <div className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center text-[10px] uppercase font-bold text-slate-600">
                                             {p.name[0]}
                                         </div>
-                                        <span>LVL {(p.totalScore || 0) + (p.score || 0)}</span>
+                                        <div className="flex flex-col leading-tight items-start">
+                                            <span className="text-xs font-bold text-slate-800">{p.score || 0} pts</span>
+                                            <span className="text-[9px] font-semibold text-blue-600 uppercase">LVL {p.totalScore || 0}</span>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

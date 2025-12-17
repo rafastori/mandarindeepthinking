@@ -106,14 +106,15 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         Dado um texto em ${srcName}, escolha UMA frase chave (interessante e gramaticalmente rica).
         Retorne APENAS um JSON:
         {
-            "originalSentence": "A frase completa correta",
-            "translation": "Tradução em Português",
+            "originalSentence": "A frase completa no idioma estudado (${srcName})",
+            "translation": "A tradução exata em Português (Brasil)",
             "blocks": ["bloco1", "bloco2", "bloco3", "bloco4"]
         }
         Regras para os blocos:
-        1. Divida a frase em 4 a 6 pedaços lógicos (chunks).
-        2. NÃO divida palavra por palavra, mas sim por sintagmas (ex: "O grande gato" | "comeu" | "o rato").
-        3. Embaralhe os blocos no array de retorno.
+        1. Os blocos devem estar no idioma estudado (${srcName}).
+        2. Divida a frase em 4 a 6 pedaços lógicos (chunks).
+        3. NÃO divida palavra por palavra, mas sim por sintagmas (ex: "O grande gato" | "comeu" | "o rato").
+        4. Embaralhe os blocos no array de retorno.
         `;
     }
 

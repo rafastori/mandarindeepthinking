@@ -102,12 +102,15 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                                             </span>
                                         )}
                                     </p>
-                                    <p className="text-xs text-slate-500 flex items-center gap-2">
-                                        <span>{player.isReady ? '✅ Pronto' : '⏳ Aguardando'}</span>
-                                        <span className="bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded text-[10px] font-black uppercase">
-                                            LVL {player.totalScore || 0}
-                                        </span>
-                                    </p>
+                                    <div className="flex flex-col mt-0.5">
+                                        <p className="text-xs text-slate-500">{player.isReady ? '✅ Pronto' : '⏳ Aguardando'}</p>
+                                        <div className="flex items-center gap-2 mt-1">
+                                            <span className="text-[10px] font-bold text-slate-700">{player.score || 0} pts</span>
+                                            <span className="bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded text-[9px] font-black uppercase">
+                                                LVL {player.totalScore || 0}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))}

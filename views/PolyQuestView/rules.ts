@@ -82,4 +82,5 @@ O jogo não acaba quando as cartas terminam.
 - fazer com que os dados salvos da bliblioteca da missão entrem no banco de dados da leitura, revisão como se fosse uma importação nativa - OK.
 - o idioma de estudo é o primeiro idioma selecionado pelo usuário, logo no final do jogo ele mostrará qual é o seu nível em pontuação geral somada de todas as partidas e da partida atual - OK. 
 - Missão Cumprida! A equipe dominou o idioma "DEVE SER O IDIOMA SELECIONADO PELO USUARIO" com as 40 palavras, é o idioma do texto original que deverá ser traduzido para o idioma que o usuário já sabe - OK.
+- vamos trabalhar agora com a parte de segurança, preciso fazer o deploy para a vercel, porém a chave deve estar nas variáveis de ambiente da vercel, em anexo estou enviando como configurei, você poderia verificar e fazer o plano de migração de API local para a API escondida nas variáveis da vercel?
 `;

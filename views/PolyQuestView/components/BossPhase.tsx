@@ -170,7 +170,7 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                         <p className="text-purple-100 text-lg mb-2 max-w-2xl">
                             Reconstruam a frase JUNTOS!
                             <br />
-                            <span className="text-sm opacity-75">Tradução: "{room.bossLevel.translation}"</span>
+                            <span className="text-sm opacity-75 font-semibold">Pista (Tradução): "{room.bossLevel.translation}"</span>
                         </p>
                     </div>
                     {/* Players Legend */}
@@ -178,7 +178,10 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                         {room.players.map(p => (
                             <div key={p.id} className="flex items-center gap-2 mb-1">
                                 <span className={`w-3 h-3 rounded-full border ${getUserColor(p.id).split(' ')[0].replace('border', 'bg')}`}></span>
-                                <span>{p.name} (LVL {(p.totalScore || 0) + (p.score || 0)})</span>
+                                <div className="flex flex-col leading-tight">
+                                    <span className="font-bold">{p.name} ({p.score || 0} pts)</span>
+                                    <span className="text-[9px] opacity-75 uppercase font-bold text-white/80">LVL {p.totalScore || 0}</span>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -263,6 +266,6 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
                     </button>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };

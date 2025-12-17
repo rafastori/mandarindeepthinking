@@ -341,11 +341,14 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                 {/* Scoreboard (All Players) */}
                 <div className="flex items-center gap-3 overflow-x-auto max-w-[200px] sm:max-w-md no-scrollbar">
                     {room.players.map(p => (
-                        <div key={p.id} className={`flex items-center gap-2 px-2 py-1 rounded-lg text-xs font-bold border ${getUserColor(p.id)} shadow-sm truncate`}>
-                            <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] uppercase">
+                        <div key={p.id} className={`flex items-center gap-2 px-2.5 py-1 rounded-xl border ${getUserColor(p.id)} shadow-sm truncate mb-1`}>
+                            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px] uppercase font-bold">
                                 {p.name[0]}
                             </div>
-                            <span>LVL {(p.totalScore || 0) + (p.score || 0)}</span>
+                            <div className="flex flex-col leading-tight items-start">
+                                <span className="text-[11px] font-bold whitespace-nowrap">{p.score || 0} pts</span>
+                                <span className="text-[8px] opacity-75 font-semibold uppercase">LVL {p.totalScore || 0}</span>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -430,7 +433,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                                     )}
                                     <span className="font-bold opacity-0 group-hover:opacity-100 transition-opacity text-slate-800">{enigma.word}</span>
                                     <span className="text-xs font-bold animate-pulse text-slate-500">
-                                        {activeUser?.id === currentUserId ? 'Resolvendo...' : `${activeUser?.name} (LVL ${(activeUser?.totalScore || 0) + (activeUser?.score || 0)})`}
+                                        {activeUser?.id === currentUserId ? 'Resolvendo...' : `${activeUser?.name} (${activeUser?.score || 0} pts | LVL ${activeUser?.totalScore || 0})`}
                                     </span>
                                 </>
                             ) : (
