@@ -1,91 +1,23 @@
-// Usando a biblioteca que funcionou no seu teste
-import { GoogleGenAI, Type } from "@google/genai";
+// API Gemini - Usando sintaxe correta do @google/genai
+import { GoogleGenAI } from "@google/genai";
 
-// Schemas configurados com 'Type' (sintaxe da @google/genai)
-const studyItemSchema = {
-  type: Type.ARRAY,
-  items: {
-    type: Type.OBJECT,
-    properties: {
-      chinese: { type: Type.STRING },
-      pinyin: { type: Type.STRING },
-      translation: { type: Type.STRING },
-      tokens: { type: Type.ARRAY, items: { type: Type.STRING } },
-      keywords: { type: Type.ARRAY, items: { type: Type.STRING } }
-    },
-    required: ["chinese", "pinyin", "translation", "tokens", "keywords"]
-  }
-};
+// Helper para chamar o modelo Gemini
+const callGemini = async (genAI, prompt, systemInstruction = "") => {
+  const response = await genAI.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: prompt,
+    config: {
+      systemInstruction: systemInstruction,
+      responseMimeType: "application/json",
+    }
+  });
 
-const wordCardSchema = {
-  type: Type.OBJECT,
-  properties: {
-    word: { type: Type.STRING },
-    pinyin: { type: Type.STRING },
-    meaning: { type: Type.STRING },
-    example: { type: Type.STRING }
-  },
-  required: ["word", "pinyin", "meaning", "example"]
-};
+  const text = response.text;
+  if (!text) throw new Error("Sem resposta da IA");
 
-const gameDeckSchema = {
-  type: Type.ARRAY,
-  items: {
-    type: Type.OBJECT,
-    properties: {
-      word: { type: Type.STRING, description: "Word" },
-      pinyin: { type: Type.STRING, description: "Pronunciation" },
-      meaning: { type: Type.STRING, description: "Translation (PT-BR)" },
-      example: { type: Type.STRING, description: "Example sentence" },
-      distractors: {
-        type: Type.ARRAY,
-        items: { type: Type.STRING },
-        description: "3 plausible but INCORRECT translations in PT-BR"
-      }
-    },
-    required: ["word", "pinyin", "meaning", "example", "distractors"]
-  }
-};
-
-const enigmasSchema = {
-  type: Type.ARRAY,
-  items: {
-    type: Type.OBJECT,
-    properties: {
-      word: { type: Type.STRING },
-      translation: { type: Type.STRING },
-      synonym: { type: Type.STRING },
-      alternatives: { type: Type.ARRAY, items: { type: Type.STRING } }
-    },
-    required: ["word", "translation", "synonym", "alternatives"]
-  }
-};
-
-const intruderSchema = {
-  type: Type.OBJECT,
-  properties: {
-    word: { type: Type.STRING },
-    translation: { type: Type.STRING },
-    reason: { type: Type.STRING }
-  },
-  required: ["word", "translation", "reason"]
-};
-
-const bossSchema = {
-  type: Type.OBJECT,
-  properties: {
-    originalSentence: { type: Type.STRING },
-    blocks: { type: Type.ARRAY, items: { type: Type.STRING } }
-  },
-  required: ["originalSentence", "blocks"]
-};
-
-const rawTextSchema = {
-  type: Type.OBJECT,
-  properties: {
-    text: { type: Type.STRING }
-  },
-  required: ["text"]
+  // Limpa formatação markdown se houver
+  const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+  return JSON.parse(cleanText);
 };
 
 export default async function handler(req, res) {
@@ -110,116 +42,146 @@ export default async function handler(req, res) {
     if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
 
     const genAI = new GoogleGenAI({ apiKey });
-    const MODEL_NAME = 'gemini-2.5-flash';
-    const model = genAI.getGenerativeModel({
-      model: MODEL_NAME,
-      generationConfig: { responseMimeType: "application/json" }
-    });
 
     // --- 1. GERAÇÃO DE CARD ---
     if (type === 'card') {
-      const prompt = `Analyze word: "${word}". Context: "${context}". Language: ${targetLanguage === 'de' ? 'German' : 'Mandarin'}. Output PT-BR.`;
+      const langName = targetLanguage === 'de' ? 'Alemão' : 'Chinês (Mandarim)';
+      const systemPrompt = `Você é um professor de ${langName}.
+        Crie um cartão de estudo detalhado para a palavra/expressão solicitada.
+        Retorne APENAS um JSON com o formato:
+        { "word": "...", "pinyin": "...", "meaning": "...", "example": "..." }
+        O significado (meaning) deve ser em Português.`;
 
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: wordCardSchema }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "{}"));
+      const userPrompt = `Palavra: "${word}". Contexto: "${context}"`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- 2. GERAÇÃO DE JOGO ---
     if (type === 'game_deck') {
-      const langName = targetLanguage === 'de' ? 'German' : 'Mandarin Chinese';
-      const excludeInstruction = exclude.length > 0 ? `Avoid words: ${exclude.join(', ')}.` : '';
+      const langName = targetLanguage === 'de' ? 'Alemão' : 'Chinês (Mandarim)';
+      const excludeInstruction = exclude.length > 0 ? `Evite as palavras: ${exclude.join(', ')}.` : '';
 
-      const prompt = `
-            Generate 5 distinct words for topic: "${topic}".
-            Level: ${difficulty}. Language: ${langName}.
-            Output PT-BR meanings.
-            ${excludeInstruction}
-        `;
+      const systemPrompt = `Você é um criador de jogos educativos de ${langName}.
+        Crie um deck de cartas para o tópico solicitado.
+        Retorne APENAS um Array JSON de objetos.
+        Cada objeto (carta) deve ter:
+        { "word": "...", "pinyin": "...", "meaning": "...", "example": "...", "distractors": ["significado errado 1", "significado errado 2", "significado errado 3"] }
+        Os significados e distratores devem ser em Português.`;
 
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: gameDeckSchema, temperature: 0.8 }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "[]"));
+      const userPrompt = `Tópico: ${topic}. Dificuldade: ${difficulty}. Gere 5 palavras distintas. ${excludeInstruction}`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- 3. POLYQUEST: ENIGMAS ---
     if (type === 'enigmas') {
-      const prompt = `Create study enigmas for these ${sourceLang} words: ${words.join(', ')}. Translate to ${targetLang}. Include 3 plausible alternatives and a synonym/clue in ${targetLang}.`;
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: enigmasSchema }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "[]"));
+      const systemPrompt = `Você é um tradutor especialista e criador de jogos.
+        Receberá uma lista de palavras em ${sourceLang}.
+        Para cada palavra, retorne um objeto JSON com:
+        {
+          "word": "a palavra original",
+          "translation": "a tradução correta para ${targetLang}",
+          "alternatives": ["alternativa incorreta 1", "alternativa incorreta 2", "alternativa incorreta 3"],
+          "synonym": "um sinônimo ou definição breve em ${targetLang} (para dica)"
+        }
+        As alternativas devem ser plausíveis mas incorretas.
+        Retorne APENAS o JSON Array.`;
+
+      const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- 4. POLYQUEST: INTRUDER ---
     if (type === 'intruder') {
-      const prompt = `Create an intruder word for a game. Context words (${targetLang}): ${context.join(', ')}. The intruder should be in ${targetLang}. Provide PT-BR translation and reason.`;
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: intruderSchema }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "{}"));
+      const systemPrompt = `Você é um criador de jogos de linguagem.
+        Seu objetivo é criar uma "Palavra Intrusa" para um jogo de desafio.
+        Dado um texto ou lista de palavras, sugira uma palavra que NÃO pertença ao contexto.
+        
+        Retorne APENAS um JSON:
+        {
+            "word": "palavra intrusa no idioma original",
+            "translation": "tradução em Português",
+            "reason": "breve explicação do porquê é intruso"
+        }`;
+
+      const userPrompt = `Contexto (palavras do texto em ${targetLang}): ${Array.isArray(context) ? context.slice(0, 20).join(', ') : context}`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- 5. POLYQUEST: BOSS ---
     if (type === 'boss') {
-      const prompt = `Final Boss Challenge. From this text: "${context}", choose ONE short sentence (not the full text). 
-      Return:
-      - originalSentence: the chosen sentence in ${targetLang}
-      - blocks: the sentence divided into 4-6 logical chunks, SHUFFLED
-      
-      Rules for blocks:
-      1. Divide by phrases/syntagms, NOT word-by-word
-      2. Each block should make grammatical sense
-      3. Shuffle the blocks array
-      4. Do NOT include translation`;
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: bossSchema }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "{}"));
+      const systemPrompt = `Você é um 'Boss Final' de um jogo de idiomas.
+        Seu objetivo é desafiar os jogadores a reconstruir uma frase curta.
+        Dado um texto, escolha UMA frase curta (não o texto completo).
+        Retorne APENAS um JSON:
+        {
+            "originalSentence": "A frase escolhida no idioma estudado",
+            "blocks": ["bloco1", "bloco2", "bloco3", "bloco4"]
+        }
+        Regras para os blocos:
+        1. Divida a frase em 4 a 6 pedaços lógicos (chunks).
+        2. NÃO divida palavra por palavra, mas sim por sintagmas.
+        3. Embaralhe os blocos no array de retorno.
+        4. NÃO inclua tradução.`;
+
+      const userPrompt = `Texto base em ${targetLang}: ${context}`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- 6. POLYQUEST: RAW TEXT ---
     if (type === 'raw_text') {
-      const prompt = `Generate a creative text (40-60 words) in ${targetLang}. Theme: Culture or History. Return only the text object.`;
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseSchema: rawTextSchema }
-      });
-      const response = await result.response;
-      return res.status(200).json(JSON.parse(response.text() || "{}"));
+      const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês' };
+      const langName = langNames[targetLang] || targetLang;
+
+      const systemPrompt = `Você é um escritor criativo poliglota.
+        Escreva um texto curto, interessante e coerente em ${langName}.
+        O texto deve ter aproximadamente 40 a 60 palavras.
+        O tema deve ser variado (cultura, cotidiano, curiosidades, história).
+        
+        Retorne APENAS um JSON:
+        {
+            "text": "O texto gerado aqui..."
+        }`;
+
+      const userPrompt = `Gere um texto em ${langName}.`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
     }
 
     // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---
-    let task = targetLanguage === 'de' ? "German text analysis" : "Mandarin text analysis";
-    if (mode === 'translate') task = `Translate PT-BR to ${targetLanguage === 'de' ? 'German' : 'Mandarin'}`;
+    const langNames = { 'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês' };
+    const langName = langNames[targetLanguage] || targetLanguage;
 
-    const prompt = `
-      ${task}. Text: "${text}"
-      RULES: 
-      1. Return JSON array. 
-      2. Segment text. 
-      3. 'keywords' array MUST BE EMPTY [].
-      4. TRANSLATE TO PORTUGUESE (PT-BR).
-    `;
+    let systemPrompt = `Você é um professor experiente de ${langName}.`;
 
-    const result = await model.generateContent({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { responseSchema: studyItemSchema, temperature: 0.1 }
-    });
-    const response = await result.response;
-    return res.status(200).json(JSON.parse(response.text() || "[]"));
+    if (mode === 'translate') {
+      systemPrompt += `
+        O texto fornecido pelo usuário está em outra língua (provavelmente Português ou Inglês).
+        SUA TAREFA:
+        1. Traduza o texto para ${langName}.
+        2. Analise o texto JÁ TRADUZIDO em ${langName}.`;
+    } else {
+      systemPrompt += `
+        Analise o texto fornecido (que já está em ${langName}).`;
+    }
+
+    systemPrompt += `
+        Retorne APENAS um JSON (sem markdown).
+        O JSON deve ser uma lista (Array) de objetos, onde cada objeto representa uma frase/segmento do texto.
+        Cada objeto deve ter:
+        - chinese: a frase em ${langName} (original ou traduzida)
+        - pinyin: transcrição fonética (se chinês) ou nulo/vazio (se alemão)
+        - translation: tradução para Português (Brasil)
+        - tokens: array de strings com as palavras segmentadas
+        - keywords: array vazio []`;
+
+    const userPrompt = `Texto para analisar: "${text}"`;
+    const result = await callGemini(genAI, userPrompt, systemPrompt);
+    return res.status(200).json(result);
 
   } catch (error) {
     console.error("ERRO API:", error);
