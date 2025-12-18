@@ -7,7 +7,9 @@ import { StudyItem, Keyword, GameCard } from "../types";
 export { type GameCard } from "../types";
 
 // Configuração do cliente local
-const genAI = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const API_KEY = process.env.API_KEY || '';
+console.log('[Gemini] API Key status:', API_KEY ? `Loaded (${API_KEY.substring(0, 8)}...)` : 'MISSING!');
+const genAI = new GoogleGenAI({ apiKey: API_KEY });
 const MODEL_NAME = 'gemini-2.5-flash';
 
 // URL de produção (Vercel Functions)
