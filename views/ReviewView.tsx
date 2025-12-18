@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem } from '../types';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 
 interface ReviewViewProps {
     data: StudyItem[];
@@ -10,7 +11,9 @@ interface ReviewViewProps {
 }
 
 const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => {
+    const { speak } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
+
 
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {
@@ -75,8 +78,19 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
                     <div key={item.id} className="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden transition-all duration-300">
                         {/* CABEÇALHO (Sempre visível) */}
                         <div className="flex items-center justify-between p-4 cursor-pointer hover:bg-slate-50" onClick={() => setExpandedId(expandedId === item.id ? null : item.id)}>
-                            <div className="flex-1 min-w-0 pr-2">
+                            <div className="flex items-center gap-2 flex-1 min-w-0 pr-2">
                                 <h3 className={`${isGerman ? 'font-sans' : 'font-chinese'} text-xl font-bold text-brand-700 truncate`}>{item.word}</h3>
+                                {/* Botão de áudio */}
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        speak(item.word, (item.language || item.sentence.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                    }}
+                                    className="p-1.5 rounded-full text-slate-400 hover:text-brand-600 hover:bg-brand-50 transition-colors flex-shrink-0"
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name="volume-2" size={18} />
+                                </button>
                             </div>
 
                             <div className="flex items-center gap-3 flex-shrink-0">
@@ -91,6 +105,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
                                 </button>
                             </div>
                         </div>
+
 
                         {/* DETALHES (Expansível) */}
                         {expandedId === item.id && (
