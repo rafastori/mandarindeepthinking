@@ -2,6 +2,7 @@
 import React, { useMemo } from 'react';
 import Icon from '../../../components/Icon';
 import { PolyQuestRoom, PolyQuestPlayer, GAME_CONSTANTS } from '../types';
+import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 
 interface ExplorationPhaseProps {
     room: PolyQuestRoom;
@@ -16,6 +17,7 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
     onToggleWord,
     onFinishExploration,
 }) => {
+    const { speak } = usePuterSpeech();
     const isHost = room.hostId === currentUserId;
 
     // Simples tokenização mantendo pontuação e espaços para reconstrução visual
@@ -148,7 +150,19 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
                                 key={idx}
                                 className="bg-white p-3 rounded-xl border border-amber-200 shadow-sm flex justify-between items-center group animate-in slide-in-from-left-2"
                             >
-                                <span className="font-semibold text-slate-800">{word}</span>
+                                <div className="flex items-center gap-2">
+                                    <span className="font-semibold text-slate-800">{word}</span>
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            speak(word, (room.config.sourceLang || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                        }}
+                                        className="p-1 rounded-full text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 transition-colors"
+                                        title="Ouvir pronúncia"
+                                    >
+                                        <Icon name="volume-2" size={16} />
+                                    </button>
+                                </div>
                                 <button
                                     onClick={() => onToggleWord(word)}
                                     className="p-1 text-slate-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"

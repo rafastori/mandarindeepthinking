@@ -3,6 +3,7 @@ import EmptyState from '../components/EmptyState';
 import Icon from '../components/Icon';
 import { StudyItem } from '../types';
 import { getSavedItems, CardItem } from '../utils/cardUtils';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 
 interface CardsViewProps {
     data: StudyItem[];
@@ -11,6 +12,8 @@ interface CardsViewProps {
 }
 
 const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
+    const { speak } = usePuterSpeech();
+
     // Estado da Sessão
     const [deck, setDeck] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,14 +25,14 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
     const createNewDeck = useCallback(() => {
         setIsLoading(true);
         const items = getSavedItems(data, savedIds);
-        
+
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
             setDeck(shuffled);
         } else {
             setDeck([]);
         }
-        
+
         setCurrentIndex(0);
         setFlipped(false);
         setIsFinished(false);
@@ -43,7 +46,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
         if (deck.length === 0 && data.length > 0) {
             createNewDeck();
         } else if (data.length === 0 && !isLoading) {
-             setIsLoading(false); // Caso não tenha dados mesmo
+            setIsLoading(false); // Caso não tenha dados mesmo
         }
     }, [data, savedIds, deck.length, createNewDeck, isLoading]);
 
@@ -65,7 +68,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
                 <p className="text-slate-500 mb-8 max-w-xs">
                     Você revisou <span className="font-bold text-slate-700">{deck.length} cartas</span>.
                 </p>
-                <button 
+                <button
                     onClick={handleRestart}
                     className="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-brand-700 active:scale-95 transition-all flex items-center gap-2"
                 >
@@ -79,7 +82,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
     if (deck.length === 0) return <EmptyState msg="Sem cards para revisar." icon="layers" />;
 
     const card = deck[currentIndex];
-    
+
     // Proteção se o índice sair do limite
     if (!card) return null;
 
@@ -91,12 +94,12 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
         return 'text-6xl';
     };
 
-    const next = (correct: boolean) => { 
+    const next = (correct: boolean) => {
         // 1. Vira a carta
-        setFlipped(false); 
-        
+        setFlipped(false);
+
         // 2. Registra resultado
-        onResult(correct, card.word); 
+        onResult(correct, card.word);
 
         // 3. Aguarda animação (250ms) para trocar o conteúdo
         setTimeout(() => {
@@ -105,7 +108,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
             } else {
                 setIsFinished(true);
             }
-        }, 250); 
+        }, 250);
     };
 
     return (
@@ -117,28 +120,52 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
 
             <div className="relative w-full aspect-[3/4] cursor-pointer perspective-1000 group" onClick={() => setFlipped(!flipped)}>
                 <div className={`w-full h-full transition-all duration-500 transform-style-3d shadow-2xl rounded-2xl ${flipped ? 'rotate-y-180' : ''}`}>
-                    
+
                     {/* FRENTE */}
                     <div className="absolute inset-0 bg-white rounded-2xl flex flex-col items-center justify-center backface-hidden border-b-4 border-slate-100 p-4">
                         <span className="text-xs text-slate-400 uppercase tracking-widest mb-4">
                             {isGerman ? 'Palavra' : 'Hanzi'}
                         </span>
-                        
+
                         <h2 className={`${getFontSize(card.word)} ${isGerman ? 'font-sans' : 'font-chinese'} font-bold text-slate-800 text-center break-words w-full`}>
                             {card.word}
                         </h2>
-                        
-                        <span className="mt-8 text-xs text-brand-500 font-bold">Toque para virar</span>
+
+                        {/* Botão de áudio */}
+                        <button
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                            }}
+                            className="mt-4 p-3 rounded-full bg-brand-50 text-brand-600 hover:bg-brand-100 transition-colors"
+                            title="Ouvir pronúncia"
+                        >
+                            <Icon name="volume-2" size={24} />
+                        </button>
+
+                        <span className="mt-4 text-xs text-brand-500 font-bold">Toque para virar</span>
                     </div>
 
                     {/* VERSO */}
                     <div className="absolute inset-0 bg-slate-800 rounded-2xl flex flex-col items-center justify-center rotate-y-180 backface-hidden text-white p-6 text-center">
-                        <h2 className={`text-3xl ${isGerman ? 'font-sans' : 'font-chinese'} font-bold mb-2 break-words w-full`}>
-                            {card.word}
-                        </h2>
+                        <div className="flex items-center gap-3 mb-2">
+                            <h2 className={`text-3xl ${isGerman ? 'font-sans' : 'font-chinese'} font-bold break-words`}>
+                                {card.word}
+                            </h2>
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                }}
+                                className="p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors flex-shrink-0"
+                                title="Ouvir pronúncia"
+                            >
+                                <Icon name="volume-2" size={20} />
+                            </button>
+                        </div>
                         <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
                         <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
-                        
+
                         {card.context && card.context !== card.word && (
                             <div className={`bg-white/10 p-3 rounded text-sm italic ${isGerman ? 'font-sans' : 'font-chinese'}`}>
                                 {card.context}

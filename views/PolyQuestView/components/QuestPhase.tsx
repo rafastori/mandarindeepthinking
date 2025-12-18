@@ -4,6 +4,7 @@ import { PolyQuestRoom, WordEnigma, GAME_CONSTANTS } from '../types';
 import { ConfidenceBar } from './ConfidenceBar';
 import { generateEnigmas, generateIntruder } from '../../../services/gemini';
 import { shuffleArray } from '../utils';
+import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 
 interface QuestPhaseProps {
     room: PolyQuestRoom;
@@ -46,6 +47,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     onRequestHelp,
     onProvideHelp
 }) => {
+    const { speak } = usePuterSpeech();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [activeEnigmaIndex, setActiveEnigmaIndex] = useState<number | null>(null);
@@ -252,7 +254,19 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                             ) : null}
 
                             <p className="text-sm text-slate-500 uppercase tracking-wider mb-2">Palavra Oculta</p>
-                            <h2 className="text-4xl font-bold text-slate-800">{enigma.word}</h2>
+                            <div className="flex items-center justify-center gap-3">
+                                <h2 className="text-4xl font-bold text-slate-800">{enigma.word}</h2>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        speak(enigma.word, (room.config.sourceLang || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                    }}
+                                    className="p-2 rounded-full text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 transition-colors"
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name="volume-2" size={24} />
+                                </button>
+                            </div>
                             <p className="text-slate-400 mt-2 text-sm italic">Qual é o significado?</p>
                         </div>
 
