@@ -57,6 +57,14 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
         }
     };
 
+    // Helper to extract a context sentence snippet (simple simulation)
+    const getContextSnippet = (word: string) => {
+        if (!room.config.originalText) return `Apprentice learned: ${word}`;
+        const sentences = room.config.originalText.split(/[.!?]/);
+        const match = sentences.find(s => s.toLowerCase().includes(word.toLowerCase()));
+        return match ? match.trim() + "." : `... ${word} ...`;
+    };
+
     const handleSaveLibrary = async () => {
         if (saving) return;
         setSaving(true);
@@ -64,10 +72,12 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
             // Mapeia os índices selecionados para objetos com contexto real
             const itemsToSave = Array.from(selectedWords).map(index => {
                 const enigma = room.enigmas[index];
+                const context = getContextSnippet(enigma.word);
+                console.log('[VictoryPhase] Saving word:', enigma.word, 'with context:', context);
                 return {
                     word: enigma.word,
                     translation: enigma.translation,
-                    context: getContextSnippet(enigma.word)
+                    context: context
                 };
             });
             await onSaveItems(itemsToSave);
@@ -80,14 +90,6 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
         }
     };
 
-
-    // Helper to extract a context sentence snippet (simple simulation)
-    const getContextSnippet = (word: string) => {
-        if (!room.config.originalText) return `Apprentice learned: ${word}`;
-        const sentences = room.config.originalText.split(/[.!?]/);
-        const match = sentences.find(s => s.toLowerCase().includes(word.toLowerCase()));
-        return match ? match.trim() + "." : `... ${word} ...`;
-    };
 
     return (
         <div className="max-w-4xl mx-auto space-y-8 pb-12 animate-in fade-in duration-500">
