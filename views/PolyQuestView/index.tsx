@@ -71,7 +71,8 @@ const PolyQuestView: React.FC = () => {
         roomName: string,
         sourceLang: string,
         targetLang: string,
-        text: string
+        text: string,
+        tokens: string[]
     ) => {
         const player = createPlayerFromUser(user, totalScore);
         const roomId = await createRoom(
@@ -80,6 +81,7 @@ const PolyQuestView: React.FC = () => {
                 sourceLang,
                 targetLang,
                 originalText: text,
+                tokens,
                 minWords: 40,
             },
             player

@@ -481,3 +481,56 @@ export const generateRawText = async (contentLang: string): Promise<string> => {
         throw error;
     }
 };
+
+/**
+ * Tokeniza texto usando IA (Gemini) para segmentação precisa em qualquer idioma.
+ * Suporta idiomas CJK (Chinês, Japonês, Coreano) que não usam espaços.
+ */
+export const tokenizeTextWithAI = async (
+    text: string,
+    langCode: string
+): Promise<string[]> => {
+    const langName = getLangName(langCode);
+
+    const systemPrompt = `Você é um segmentador de texto especializado.
+Segmente o texto fornecido em tokens (palavras ou unidades significativas).
+
+REGRAS POR TIPO DE IDIOMA:
+- Para Chinês (zh): Segmente por palavras/morfemas lógicos, não caractere por caractere. Ex: "你好世界" → ["你好", "世界"]
+- Para Japonês (ja): Segmente por palavras, separando partículas. Ex: "日本語を勉強" → ["日本語", "を", "勉強"]
+- Para Coreano (ko): Segmente por palavras (usa espaços naturalmente). Ex: "안녕하세요 세계" → ["안녕하세요", "세계"]
+- Para idiomas ocidentais (de, fr, es, it, en, pt): Segmente por palavras, mantendo pontuação separada. Ex: "Guten Tag!" → ["Guten", "Tag", "!"]
+
+IMPORTANTE: Preserve espaços como tokens separados (" ") para manter a formatação visual.
+
+Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
+
+    const userPrompt = `Idioma: ${langName}. Texto: "${text}"`;
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Tokenization");
+        const data = await callLocalGemini(userPrompt, systemPrompt);
+        return data.tokens || [];
+    }
+
+    // PROD MODE - Usa endpoint seguro
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'tokenize',
+                text,
+                targetLang: langCode
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao tokenizar texto");
+        const data = await response.json();
+        return data.tokens || [];
+    } catch (error) {
+        console.error("Tokenization Error:", error);
+        throw error;
+    }
+};
+

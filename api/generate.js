@@ -134,7 +134,7 @@ export default async function handler(req, res) {
 
     // --- 6. POLYQUEST: RAW TEXT ---
     if (type === 'raw_text') {
-      const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês' };
+      const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
       const langName = langNames[targetLang] || targetLang;
 
       const systemPrompt = `Você é um escritor criativo poliglota.
@@ -148,6 +148,29 @@ export default async function handler(req, res) {
         }`;
 
       const userPrompt = `Gere um texto em ${langName}.`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
+    }
+
+    // --- 7. POLYQUEST: TOKENIZAÇÃO ---
+    if (type === 'tokenize') {
+      const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
+      const langName = langNames[targetLang] || targetLang;
+
+      const systemPrompt = `Você é um segmentador de texto especializado.
+Segmente o texto fornecido em tokens (palavras ou unidades significativas).
+
+REGRAS POR TIPO DE IDIOMA:
+- Para Chinês (zh): Segmente por palavras/morfemas lógicos, não caractere por caractere. Ex: "你好世界" → ["你好", "世界"]
+- Para Japonês (ja): Segmente por palavras, separando partículas. Ex: "日本語を勉強" → ["日本語", "を", "勉強"]
+- Para Coreano (ko): Segmente por palavras (usa espaços naturalmente). Ex: "안녕하세요 세계" → ["안녕하세요", "세계"]
+- Para idiomas ocidentais (de, fr, es, it, en, pt): Segmente por palavras, mantendo pontuação separada. Ex: "Guten Tag!" → ["Guten", "Tag", "!"]
+
+IMPORTANTE: Preserve espaços como tokens separados (" ") para manter a formatação visual.
+
+Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
+
+      const userPrompt = `Idioma: ${langName}. Texto: "${text}"`;
       const result = await callGemini(genAI, userPrompt, systemPrompt);
       return res.status(200).json(result);
     }

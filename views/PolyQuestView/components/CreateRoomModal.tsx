@@ -3,11 +3,11 @@ import Icon from '../../../components/Icon';
 import { SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
 
-import { generateRawText } from '../../../services/gemini';
+import { generateRawText, tokenizeTextWithAI } from '../../../services/gemini';
 
 interface CreateRoomModalProps {
     onClose: () => void;
-    onCreate: (roomName: string, sourceLang: string, targetLang: string, text: string) => void;
+    onCreate: (roomName: string, sourceLang: string, targetLang: string, text: string, tokens: string[]) => void;
 }
 
 export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCreate }) => {
@@ -16,14 +16,25 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
     const [targetLang, setTargetLang] = useState('pt');
     const [text, setText] = useState('');
     const [generating, setGenerating] = useState(false);
+    const [tokenizing, setTokenizing] = useState(false);
 
     const validation = validateText(text, GAME_CONSTANTS.MIN_WORDS);
     const canCreate = roomName.trim().length > 0 && validation.valid;
 
-    const handleCreate = () => {
-        if (canCreate) {
-            onCreate(roomName.trim(), sourceLang, targetLang, text);
+    const handleCreate = async () => {
+        if (!canCreate) return;
+
+        setTokenizing(true);
+        try {
+            // Tokenizar texto com IA antes de criar sala
+            const tokens = await tokenizeTextWithAI(text, sourceLang);
+            onCreate(roomName.trim(), sourceLang, targetLang, text, tokens);
             onClose();
+        } catch (error) {
+            console.error("Failed to tokenize text:", error);
+            alert("Erro ao processar texto. Tente novamente.");
+        } finally {
+            setTokenizing(false);
         }
     };
 
@@ -192,11 +203,20 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                     </button>
                     <button
                         onClick={handleCreate}
-                        disabled={!canCreate || generating}
+                        disabled={!canCreate || generating || tokenizing}
                         className="px-8 py-3 bg-emerald-600 text-white rounded-lg font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-2"
                     >
-                        <Icon name="plus" size={20} />
-                        <span>Criar Sala</span>
+                        {tokenizing ? (
+                            <>
+                                <Icon name="loader" size={20} className="animate-spin" />
+                                <span>Processando...</span>
+                            </>
+                        ) : (
+                            <>
+                                <Icon name="plus" size={20} />
+                                <span>Criar Sala</span>
+                            </>
+                        )}
                     </button>
                 </div>
             </div>

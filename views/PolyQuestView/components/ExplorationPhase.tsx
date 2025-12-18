@@ -20,27 +20,26 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
     const { speak } = usePuterSpeech();
     const isHost = room.hostId === currentUserId;
 
-    // Simples tokenização mantendo pontuação e espaços para reconstrução visual
-    // Separa por espaços mas mantém pontuação acoplada por enquanto, ou melhor:
-    // Uma regex que captura palavras e não-palavras
+    // Usa tokens pré-processados pela IA (suporta todos os idiomas incluindo CJK)
     const tokens = useMemo(() => {
-        // Match sequence of alphanumeric characters OR non-alphanumeric (punctuation/spaces)
-        // Isso é simplificado. Para línguas como chinês precisaria de segmentador específico, 
-        // mas vamos assumir separação por espaço/pontuação para línguas ocidentais por enquanto.
-        // Para o MVP (alemão -> português), split por espaço é o 'ok' inicial, 
-        // mas melhor usar regex para isolar pontuação se possível
+        // Se temos tokens pré-processados, usamos eles
+        if (room.config.tokens && room.config.tokens.length > 0) {
+            return room.config.tokens;
+        }
 
+        // Fallback para tokenização local (idiomas ocidentais)
         const text = room.config.originalText;
-        // Regex: (palavras) ou (espaços/pontuação)
-        // \w+ pega palavras alpha-numericas (incluindo underline, mas ok)
-        // Em unicode (para acentos) precisa de flag u ou range específico
-        // Vamos tentar algo mais robusto para pt/de
         return text.split(/(\s+|[.,!?;:()])/).filter(t => t.length > 0);
-    }, [room.config.originalText]);
+    }, [room.config.tokens, room.config.originalText]);
 
     const isWord = (token: string) => {
-        // Verifica se tem pelo menos uma letra, ignorando pontuação pura
-        return /[a-zA-Z\u00C0-\u00FF]/.test(token);
+        // Verifica se é uma palavra clicável (não apenas espaço ou pontuação pura)
+        const trimmed = token.trim();
+        if (trimmed.length === 0) return false;
+        if (/^[\s.,!?;:()]+$/.test(trimmed)) return false;
+
+        // Aceita letras latinas, CJK, Hangul, Hiragana, Katakana
+        return /[\p{L}\p{N}]/u.test(trimmed);
     };
 
     const handleWordClick = (token: string) => {

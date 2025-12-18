@@ -38,6 +38,7 @@ export interface GameConfig {
     sourceLang: string; // Código do idioma (ex: 'de', 'fr', 'es')
     targetLang: string; // Código do idioma (ex: 'pt', 'en')
     originalText: string;
+    tokens: string[];   // Tokens pré-processados pela IA
     minWords: number; // Mínimo de palavras no texto (padrão: 40)
 }
 
