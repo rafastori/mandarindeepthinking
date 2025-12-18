@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Icon from './Icon';
 import { StudyItem, Keyword } from '../types';
-import { useSpeech } from '../hooks/useSpeech';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 
 interface PronunciationModalProps {
     data: StudyItem[];
@@ -11,14 +11,14 @@ interface PronunciationModalProps {
 }
 
 const PronunciationModal: React.FC<PronunciationModalProps> = ({ data, onClose, onResult }) => {
-    const [target, setTarget] = useState<Keyword & { language?: 'zh'|'de' } | null>(null);
+    const [target, setTarget] = useState<Keyword & { language?: 'zh' | 'de' } | null>(null);
     const [status, setStatus] = useState<'idle' | 'listening' | 'success' | 'error'>('idle');
     const [transcript, setTranscript] = useState('');
     const [errorMsg, setErrorMsg] = useState('');
-    const speak = useSpeech();
+    const { speak } = usePuterSpeech();
 
     useEffect(() => {
-        const allKeywords = data.flatMap(s => s.keywords.map(k => ({...k, language: s.language || 'zh'})));
+        const allKeywords = data.flatMap(s => s.keywords.map(k => ({ ...k, language: s.language || 'zh' })));
         if (allKeywords.length > 0) {
             const random = allKeywords[Math.floor(Math.random() * allKeywords.length)];
             setTarget(random as any);
@@ -27,10 +27,10 @@ const PronunciationModal: React.FC<PronunciationModalProps> = ({ data, onClose, 
 
     const checkSimilarity = (input: string, targetWord: string, language: 'zh' | 'de') => {
         if (!input) return false;
-        
-        const cleanInput = input.trim().toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"");
-        const cleanTarget = targetWord.trim().toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"");
-        
+
+        const cleanInput = input.trim().toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g, "");
+        const cleanTarget = targetWord.trim().toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g, "");
+
         // Exact string match (always enabled)
         if (cleanInput.includes(cleanTarget) || cleanTarget.includes(cleanInput)) return true;
 
@@ -47,7 +47,7 @@ const PronunciationModal: React.FC<PronunciationModalProps> = ({ data, onClose, 
                 console.error("Error in Pinyin conversion", e);
             }
         }
-        
+
         // German is stricter (no fuzzy logic lib used here for now)
         return false;
     }
@@ -55,32 +55,32 @@ const PronunciationModal: React.FC<PronunciationModalProps> = ({ data, onClose, 
     const startListening = () => {
         setErrorMsg('');
         if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-            setErrorMsg("Browser does not support Speech Recognition."); 
+            setErrorMsg("Browser does not support Speech Recognition.");
             return;
         }
 
         try {
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             const recognition = new SpeechRecognition();
-            
+
             // Set language based on target item
             recognition.lang = target?.language === 'de' ? 'de-DE' : 'zh-CN';
-            
+
             recognition.interimResults = false;
             recognition.maxAlternatives = 1;
 
             recognition.onstart = () => setStatus('listening');
-            
+
             recognition.onresult = (event: any) => {
                 const result = event.results[0][0].transcript;
                 setTranscript(result);
-                
+
                 if (target && checkSimilarity(result, target.word, target.language || 'zh')) {
                     setStatus('success');
                     onResult(true, target.word, 'pronunciation');
-                    speak("Muito bem!", 'zh'); // Feedback simples
+                    speak("Muito bem!", 'pt'); // Feedback simples
                     setTimeout(() => {
-                        const allKeywords = data.flatMap(s => s.keywords.map(k => ({...k, language: s.language || 'zh'})));
+                        const allKeywords = data.flatMap(s => s.keywords.map(k => ({ ...k, language: s.language || 'zh' })));
                         setTarget(allKeywords[Math.floor(Math.random() * allKeywords.length)] as any);
                         setStatus('idle');
                         setTranscript('');
@@ -100,14 +100,14 @@ const PronunciationModal: React.FC<PronunciationModalProps> = ({ data, onClose, 
 
             recognition.onend = () => { if (status === 'listening') setStatus('idle'); };
             recognition.start();
-        } catch (e) { 
-            setErrorMsg("Error starting microphone."); 
+        } catch (e) {
+            setErrorMsg("Error starting microphone.");
         }
     };
 
     if (!target) {
         return (
-             <div className="fixed inset-0 z-[70] bg-black/80 backdrop-blur-sm flex items-center justify-center animate-pop p-4">
+            <div className="fixed inset-0 z-[70] bg-black/80 backdrop-blur-sm flex items-center justify-center animate-pop p-4">
                 <div className="bg-white w-full max-w-sm rounded-2xl shadow-2xl p-6 relative flex flex-col items-center text-center">
                     <button onClick={onClose} className="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
                         <Icon name="x" size={24} />

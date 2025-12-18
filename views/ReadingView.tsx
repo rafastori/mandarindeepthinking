@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, Keyword } from '../types';
-import { useSpeech } from '../hooks/useSpeech';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
 
 interface ReadingViewProps {
@@ -15,17 +15,17 @@ interface ReadingViewProps {
     onSaveGeneratedCard: (card: Keyword, context: string) => void;
 }
 
-const ReadingView: React.FC<ReadingViewProps> = ({ 
-    data, 
-    savedIds, 
-    onToggleSave, 
-    onOpenImport, 
+const ReadingView: React.FC<ReadingViewProps> = ({
+    data,
+    savedIds,
+    onToggleSave,
+    onOpenImport,
     onDeleteText,
     onSaveGeneratedCard
 }) => {
-    const speak = useSpeech();
+    const { speak } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
-    
+
     // Modal de confirmação
     const [confirmModal, setConfirmModal] = useState<{
         word: string;
@@ -45,11 +45,11 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             item.keywords?.forEach(k => {
                 if (savedIds.includes(k.id)) map.set(k.word.toLowerCase().trim(), k);
             });
-            
+
             // Itens que são palavras (cards salvos)
             // Agora verificamos também pelo tipo ou se é um token único salvo
             const isWordCard = item.type === 'word' || (item.tokens.length === 1 && savedIds.includes(item.id.toString()));
-            
+
             if (isWordCard) {
                 map.set(item.chinese.toLowerCase().trim(), {
                     id: item.id.toString(),
@@ -72,10 +72,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         if (!cleanToken) return;
 
         const savedKw = savedWordsMap.get(cleanToken.toLowerCase());
-        
+
         if (savedKw) {
-            // Se já existe, apenas fala (ou toggle favorito no futuro)
-            speak(savedKw.word, savedKw.language || 'zh');
+            // Se já existe, apenas fala
+            speak(savedKw.word, (savedKw.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
             return;
         }
 
@@ -92,11 +92,11 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         try {
             const lang = sentence.language || 'zh';
             const newCard = await generateWordCard(word, sentence.chinese, lang);
-            
+
             // ATUALIZADO: Passa a palavra E a frase de contexto para o App.tsx salvar
             onSaveGeneratedCard(newCard, sentence.chinese);
-            
-            speak(newCard.word, lang);
+
+            speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
         } catch (error) {
             console.error(error);
             alert("Erro ao processar. Verifique sua conexão.");
@@ -112,13 +112,13 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             const isLoading = loadingWord === cleanToken;
 
             return (
-                <span 
-                    key={i} 
-                    onClick={(e) => { e.stopPropagation(); handleTokenClick(token, sentence); }} 
+                <span
+                    key={i}
+                    onClick={(e) => { e.stopPropagation(); handleTokenClick(token, sentence); }}
                     className={`
                         inline-block px-1 mx-0.5 rounded transition-all border-b-2 mb-1 relative cursor-pointer
-                        ${isSaved 
-                            ? 'bg-brand-100 text-brand-800 border-brand-500 font-bold' 
+                        ${isSaved
+                            ? 'bg-brand-100 text-brand-800 border-brand-500 font-bold'
                             : 'hover:bg-brand-50 border-slate-300 border-dotted hover:border-brand-300 text-slate-700'
                         }
                         ${isLoading ? 'opacity-70 cursor-wait' : ''}
@@ -147,7 +147,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     {visibleData.map((item) => {
                         const isImported = typeof item.id === 'string';
                         const isGerman = item.language === 'de';
-                        
+
                         return (
                             <div key={item.id} className="bg-white rounded-xl p-5 shadow-sm border border-slate-100 w-full">
                                 <div className="flex flex-col gap-4">
@@ -160,9 +160,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                         `}>
                                             {renderSentence(item)}
                                         </div>
-                                        
+
                                         <div className="flex flex-col gap-2 flex-shrink-0 pt-1">
-                                            <button onClick={() => speak(item.chinese, item.language || 'zh')} className="text-brand-600 bg-brand-50 p-2 rounded-full">
+                                            <button onClick={() => speak(item.chinese, (item.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')} className="text-brand-600 bg-brand-50 p-2 rounded-full">
                                                 <Icon name="volume-2" size={18} />
                                             </button>
                                             {isImported && onDeleteText && (
@@ -194,7 +194,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     <div className="bg-white rounded-2xl p-6 w-full max-w-xs shadow-2xl animate-pop">
                         <h3 className="text-lg font-bold text-slate-800 mb-2">Traduzir e Salvar?</h3>
                         <p className="text-slate-600 mb-6">
-                            Deseja gerar o card para a palavra: <br/>
+                            Deseja gerar o card para a palavra: <br />
                             <span className="font-bold text-brand-600 text-xl block mt-2">{confirmModal.word}</span>
                         </p>
                         <div className="flex gap-3">

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem } from '../types';
-import { useSpeech } from '../hooks/useSpeech';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 
 interface PracticeViewProps {
     data: StudyItem[];
@@ -11,8 +11,8 @@ interface PracticeViewProps {
 }
 
 const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult }) => {
-    const speak = useSpeech();
-    
+    const { speak } = usePuterSpeech();
+
     // Estados do Jogo
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -23,7 +23,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     // Lógica para criar questões
     const questions = useMemo(() => {
         const list: any[] = [];
-        
+
         data.forEach(item => {
             // CASO 1: Item do Firebase
             if (savedIds.includes(item.id.toString()) && item.originalSentence) {
@@ -62,29 +62,29 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     const options = useMemo(() => {
         if (!questions[currentIndex]) return [];
         const correct = questions[currentIndex].word;
-        
+
         const distractors = questions
             .map(q => q.word)
             .filter(w => w !== correct)
             .sort(() => 0.5 - Math.random())
             .slice(0, 3);
-        
+
         return [...distractors, correct].sort(() => 0.5 - Math.random());
     }, [questions, currentIndex]);
 
     const handleAnswer = (option: string) => {
         if (showResult) return;
-        
+
         const currentQ = questions[currentIndex];
         const isCorrect = option === currentQ.word;
-        
+
         setSelectedOption(option);
         setShowResult(true);
-        
+
         if (isCorrect) {
-            speak(currentQ.sentence, currentQ.language || 'zh');
+            speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
         }
-        
+
         setTimeout(() => {
             onResult(isCorrect, currentQ.word);
             setSelectedOption(null);
@@ -126,7 +126,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
                 <p className="text-slate-500 mb-8 max-w-xs">
                     Você praticou <span className="font-bold text-slate-700">{questions.length} frases</span> hoje. Continue assim para fixar o vocabulário!
                 </p>
-                <button 
+                <button
                     onClick={handleRestart}
                     className="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-brand-700 active:scale-95 transition-all flex items-center gap-2"
                 >
@@ -140,18 +140,18 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     // --- TELA DO JOGO ---
     const currentQ = questions[currentIndex];
     // Proteção contra crash se a frase não contiver a palavra exata (acontece em algumas tokenizações)
-    const parts = currentQ.sentence.includes(currentQ.word) 
+    const parts = currentQ.sentence.includes(currentQ.word)
         ? currentQ.sentence.split(currentQ.word)
-        : [currentQ.sentence, ""]; 
-        
+        : [currentQ.sentence, ""];
+
     const isGerman = currentQ.language === 'de';
 
     return (
         <div className="p-6 h-full flex flex-col justify-center max-w-md mx-auto pb-24">
             {/* Barra de Progresso */}
             <div className="w-full bg-slate-100 h-2 rounded-full mb-6 overflow-hidden">
-                <div 
-                    className="bg-brand-500 h-full transition-all duration-500 ease-out" 
+                <div
+                    className="bg-brand-500 h-full transition-all duration-500 ease-out"
                     style={{ width: `${((currentIndex) / questions.length) * 100}%` }}
                 />
             </div>
@@ -161,20 +161,19 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
                     <span>Complete a frase</span>
                     <span>{currentIndex + 1} / {questions.length}</span>
                 </span>
-                
+
                 {/* Frase com buraco (Cloze) */}
                 <div className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-xl text-slate-800 leading-relaxed ${isGerman ? 'font-sans' : 'font-chinese'}`}>
                     {parts[0]}
-                    <span className={`inline-block min-w-[60px] border-b-2 mx-1 text-center font-bold transition-colors ${
-                        showResult 
+                    <span className={`inline-block min-w-[60px] border-b-2 mx-1 text-center font-bold transition-colors ${showResult
                             ? (selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400')
                             : 'text-brand-600 border-brand-500'
-                    }`}>
+                        }`}>
                         {showResult ? currentQ.word : "____"}
                     </span>
                     {parts.length > 1 ? parts[1] : ""}
                 </div>
-                
+
                 <p className="text-center text-slate-400 text-sm mt-4 italic">{currentQ.translation}</p>
             </div>
 

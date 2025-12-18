@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import StatsModal from './components/StatsModal';
 import PronunciationModal from './components/PronunciationModal';
 import ImportModal from './components/ImportModal';
+import PuterSuggestionModal from './components/PuterSuggestionModal';
 import ReadingView from './views/ReadingView';
 import ReviewView from './views/ReviewView';
 import PracticeView from './views/PracticeView';
@@ -19,8 +20,11 @@ import EmptyState from './components/EmptyState';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
+import { usePuterSpeech } from './hooks/usePuterSpeech';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword } from './types';
+
+const PUTER_SUGGESTION_KEY = 'puter_suggestion_shown';
 
 const App: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
@@ -29,10 +33,12 @@ const App: React.FC = () => {
     const [showStats, setShowStats] = useState(false);
     const [showPronounce, setShowPronounce] = useState(false);
     const [showImport, setShowImport] = useState(false);
+    const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
 
     const { items: firebaseItems, addItem, deleteItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
+    const { isPuterConnected, connectPuter, puterUsername } = usePuterSpeech();
 
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
@@ -40,13 +46,26 @@ const App: React.FC = () => {
     const activeSavedIds = user ? cloudSavedIds : localSavedIds;
     const activeStats = user ? cloudStats : localStats;
 
+    // Auth state listener
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            const wasLoggedOut = !user;
+            const isNowLoggedIn = !!currentUser;
+
             setUser(currentUser);
             setAuthLoading(false);
+
+            // Mostra sugestão do Puter após primeiro login
+            if (wasLoggedOut && isNowLoggedIn && !isPuterConnected) {
+                const alreadyShown = localStorage.getItem(PUTER_SUGGESTION_KEY);
+                if (!alreadyShown) {
+                    // Delay para melhor UX
+                    setTimeout(() => setShowPuterSuggestion(true), 1500);
+                }
+            }
         });
         return () => unsubscribe();
-    }, []);
+    }, [user, isPuterConnected]);
 
     useEffect(() => {
         if (!user) {
@@ -88,6 +107,17 @@ const App: React.FC = () => {
             console.error(error);
             alert("Erro ao limpar dados. Tente novamente.");
         }
+    };
+
+    const handleConnectPuter = async () => {
+        setShowPuterSuggestion(false);
+        localStorage.setItem(PUTER_SUGGESTION_KEY, 'true');
+        await connectPuter();
+    };
+
+    const handleDismissPuterSuggestion = () => {
+        setShowPuterSuggestion(false);
+        localStorage.setItem(PUTER_SUGGESTION_KEY, 'true');
     };
 
     const toggleSave = (id: string) => {
@@ -149,12 +179,6 @@ const App: React.FC = () => {
             return;
         }
 
-        // A MÁGICA DA ORDEM:
-        // Invertemos a lista ([A, B, C] vira [C, B, A]) antes de salvar.
-        // 1. Salvamos C (fica com horário mais antigo)
-        // 2. Salvamos B
-        // 3. Salvamos A (fica com horário mais recente)
-        // Resultado na tela (ordenado por mais recente): A, B, C.
         const itemsToSave = [...newItems].reverse();
 
         for (const item of itemsToSave) {
@@ -223,7 +247,7 @@ const App: React.FC = () => {
                     <CreativeView
                         data={libraryData}
                         savedIds={activeSavedIds}
-                        stats={activeStats} // <--- ADICIONE ESTA LINHA (Passando as estatísticas)
+                        stats={activeStats}
                         onSave={handleSaveLabItem}
                     />
                 );
@@ -241,6 +265,9 @@ const App: React.FC = () => {
                 onOpenStats={() => setShowStats(true)}
                 onOpenPronounce={() => setShowPronounce(true)}
                 onResetAccount={handleResetAccount}
+                isPuterConnected={isPuterConnected}
+                puterUsername={puterUsername}
+                onConnectPuter={handleConnectPuter}
             />
             <main className="flex-1 overflow-y-auto w-full no-scrollbar">
                 <div className="max-w-3xl mx-auto h-full">
@@ -251,6 +278,12 @@ const App: React.FC = () => {
             {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {} }) : clearLocalStats()} />}
             {showPronounce && <PronunciationModal data={libraryData} onClose={() => setShowPronounce(false)} onResult={handleRecordResult} />}
             {showImport && <ImportModal onClose={() => setShowImport(false)} onImport={handleImportBatch} />}
+            {showPuterSuggestion && (
+                <PuterSuggestionModal
+                    onConnect={handleConnectPuter}
+                    onDismiss={handleDismissPuterSuggestion}
+                />
+            )}
         </div>
     );
 };

@@ -89,4 +89,24 @@ declare global {
         webkitSpeechRecognition: any;
         SpeechRecognition: any;
     }
+
+    // Puter SDK Types
+    const puter: {
+        ai: {
+            txt2speech: (text: string, options?: {
+                provider?: 'aws-polly' | 'openai' | 'elevenlabs';
+                voice?: string;
+                model?: string;
+                language?: string;
+                engine?: 'standard' | 'neural' | 'generative';
+                response_format?: string;
+            }) => Promise<HTMLAudioElement>;
+        };
+        auth: {
+            isSignedIn: () => boolean;
+            signIn: () => Promise<{ username: string }>;
+            signOut: () => Promise<void>;
+            getUser: () => { username: string } | null;
+        };
+    };
 }

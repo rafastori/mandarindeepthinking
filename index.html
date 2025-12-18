@@ -1,35 +1,52 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MemorizaTudo</title>
-    
-    <script src="https://unpkg.com/pinyin-pro@3.18.3/dist/index.js"></script>
 
-    <style>
-      .perspective-1000 { perspective: 1000px; }
-      .transform-style-3d { transform-style: preserve-3d; }
-      .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
-      .rotate-y-180 { transform: rotateY(180deg); }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemorizaTudo</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: { sans: ['Inter', 'sans-serif'], chinese: ['Noto Sans SC', 'sans-serif'] },
-            colors: { brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 700: '#047857', 800: '#065f46' } }
-          }
+  <script src="https://unpkg.com/pinyin-pro@3.18.3/dist/index.js"></script>
+  <!-- Puter SDK para Text-to-Speech com IA -->
+  <script src="https://js.puter.com/v2/"></script>
+
+  <style>
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'], chinese: ['Noto Sans SC', 'sans-serif'] },
+          colors: { brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 700: '#047857', 800: '#065f46' } }
         }
       }
-    </script>
-  </head>
-  <body>
-    <div id="root" class="h-full w-full"></div>
-    
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root" class="h-full w-full"></div>
+
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
