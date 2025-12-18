@@ -154,7 +154,7 @@ const PolyQuestView: React.FC = () => {
                     meaning: enigma.translation,
                     language: activeRoom.config.targetLang as any
                 }],
-                language: activeRoom.config.targetLang,
+                language: activeRoom.config.targetLang as 'zh' | 'de' | 'pt' | 'en',
                 type: 'word',
                 originalSentence: `Projetos: PolyQuest`
             });

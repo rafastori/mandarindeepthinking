@@ -3,7 +3,7 @@ export interface Keyword {
     word: string;
     pinyin: string;
     meaning: string;
-    language?: 'zh' | 'de';
+    language?: 'zh' | 'de' | 'pt' | 'en';
 }
 
 export interface StudyItem {
@@ -13,7 +13,7 @@ export interface StudyItem {
     translation: string;
     tokens: string[];
     keywords: Keyword[];
-    language?: string;
+    language?: 'zh' | 'de' | 'pt' | 'en';
     createdAt?: any;
     type?: 'text' | 'word';
     originalSentence?: string;

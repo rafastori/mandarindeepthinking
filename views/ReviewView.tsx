@@ -11,7 +11,7 @@ interface ReviewViewProps {
 
 const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
-    
+
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {
         let items: {
@@ -20,8 +20,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
             pinyin: string;
             meaning: string;
             sourceId: string;
-            language?: 'zh' | 'de';
-            sentence: { chinese: string; translation: string; language?: 'zh' | 'de' };
+            language?: 'zh' | 'de' | 'pt' | 'en';
+            sentence: { chinese: string; translation: string; language?: 'zh' | 'de' | 'pt' | 'en' };
         }[] = [];
 
         data.forEach(item => {
@@ -65,12 +65,12 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
     return (
         <div className="p-4 space-y-3 pb-24">
             <h2 className="font-bold text-slate-800 text-lg mb-4 flex items-center gap-2">
-                <Icon name="bookmark" size={20} className="text-brand-600"/> Revisão ({savedItems.length})
+                <Icon name="bookmark" size={20} className="text-brand-600" /> Revisão ({savedItems.length})
             </h2>
-            
+
             {savedItems.map(item => {
                 const isGerman = item.language === 'de' || item.sentence.language === 'de';
-                
+
                 return (
                     <div key={item.id} className="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden transition-all duration-300">
                         {/* CABEÇALHO (Sempre visível) */}
@@ -78,13 +78,13 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
                             <div className="flex-1 min-w-0 pr-2">
                                 <h3 className={`${isGerman ? 'font-sans' : 'font-chinese'} text-xl font-bold text-brand-700 truncate`}>{item.word}</h3>
                             </div>
-                            
+
                             <div className="flex items-center gap-3 flex-shrink-0">
                                 <span className="text-xs text-slate-400 hover:text-brand-600 font-medium uppercase tracking-wide">
                                     {expandedId === item.id ? 'Recolher' : 'Detalhes'}
                                 </span>
-                                <button 
-                                    onClick={(e) => { e.stopPropagation(); onRemove(item.sourceId); }} 
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onRemove(item.sourceId); }}
                                     className="text-slate-300 hover:text-red-500 hover:bg-red-50 p-1 rounded-full transition-colors"
                                 >
                                     <Icon name="trash-2" size={18} />
@@ -100,7 +100,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove }) => 
                                     <p className="font-medium text-brand-600 text-lg">{item.pinyin}</p>
                                     <p className="text-slate-700 mt-2 font-medium">{item.meaning}</p>
                                 </div>
-                                
+
                                 {/* Contexto */}
                                 {item.sentence.chinese && item.sentence.chinese !== item.word && (
                                     <div className="bg-white p-3 rounded border border-slate-200">

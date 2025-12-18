@@ -18,7 +18,10 @@ const API_URL = '/api/generate';
 // --- FUNÇÕES AUXILIARES PARA GERAÇÃO LOCAL (PROMPTS) ---
 
 const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' | 'translate' = 'direct') => {
-    const langName = targetLang === 'de' ? 'Alemão' : 'Chinês (Mandarim)';
+    const langNames: Record<string, string> = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês'
+    };
+    const langName = langNames[targetLang] || targetLang;
 
     if (type === 'analysis') {
         let prompt = `Você é um professor experiente de ${langName}.`;
@@ -172,7 +175,7 @@ const getLangName = (code: string) => {
 
 // --- IMPLEMENTAÇÃO HÍBRIDA (LOCAL vs PROD) ---
 
-export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: 'zh' | 'de' = 'zh'): Promise<StudyItem[]> => {
+export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: 'zh' | 'de' | 'pt' | 'en' = 'zh'): Promise<StudyItem[]> => {
     // DEV MODE: Usa SDK local
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Text Analysis");
@@ -222,7 +225,7 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
     }
 };
 
-export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: 'zh' | 'de' = 'zh'): Promise<Keyword> => {
+export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: 'zh' | 'de' | 'pt' | 'en' = 'zh'): Promise<Keyword> => {
     // DEV MODE
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Word Card");
@@ -271,7 +274,7 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
 export const generateGameDeck = async (
     topic: string,
     difficulty: string,
-    targetLanguage: 'zh' | 'de',
+    targetLanguage: 'zh' | 'de' | 'pt' | 'en',
     excludeWords: string[] = []
 ): Promise<GameCard[]> => {
     // DEV MODE

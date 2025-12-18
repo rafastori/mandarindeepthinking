@@ -6,7 +6,7 @@ export interface CardItem {
     pinyin: string;
     meaning: string;
     context: string;
-    language?: 'zh' | 'de';
+    language?: 'zh' | 'de' | 'pt' | 'en';
     sourceId: string;
 }
 
