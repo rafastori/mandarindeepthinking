@@ -141,7 +141,7 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
 
 const callLocalGemini = async (prompt: string, systemInstruction: string) => {
     try {
-        const response = await genAI.models.generateContent({
+        const response = await (genAI as any).models.generateContent({
             model: MODEL_NAME,
             contents: prompt,
             config: {
