@@ -134,29 +134,28 @@ const PolyQuestView: React.FC = () => {
         await triggerIntruder(activeRoom.id, word);
     };
 
-    const handleSaveItems = async (enigmaIndices: number[]) => {
+    const handleSaveItems = async (itemsToSave: { word: string; translation: string; context: string }[]) => {
         if (!activeRoom || !user) return;
-        const enigmasToSave = activeRoom.enigmas.filter((_, i) => enigmaIndices.includes(i));
 
         const newIds: string[] = [];
 
-        for (const enigma of enigmasToSave) {
+        for (const item of itemsToSave) {
             // FIX: Ensure tokens and keywords are populated so ReadingView/Cards don't crash or hide it
             const newId = await addItem({
-                chinese: enigma.word,
-                translation: enigma.translation,
+                chinese: item.word,
+                translation: item.translation,
                 pinyin: '', // Fallback empty
-                tokens: [enigma.word], // Must be an array with the word itself
+                tokens: [item.word], // Must be an array with the word itself
                 keywords: [{
                     id: Date.now().toString() + Math.random().toString().slice(2), // Temp ID
-                    word: enigma.word,
+                    word: item.word,
                     pinyin: '',
-                    meaning: enigma.translation,
+                    meaning: item.translation,
                     language: activeRoom.config.targetLang as any
                 }],
                 language: activeRoom.config.targetLang as 'zh' | 'de' | 'pt' | 'en',
                 type: 'word',
-                originalSentence: `Projetos: PolyQuest`
+                originalSentence: item.context // Usa o contexto real do texto original
             });
 
             if (newId) newIds.push(newId);
@@ -167,6 +166,7 @@ const PolyQuestView: React.FC = () => {
             // alert(`Salvo ${newIds.length} palavras nos Favoritos!`); // Optional feedback
         }
     };
+
 
     const handleSaveHistory = async (result: any) => {
         if (!activeRoom || !user) return;

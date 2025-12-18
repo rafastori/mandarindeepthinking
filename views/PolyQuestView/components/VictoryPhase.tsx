@@ -6,9 +6,10 @@ interface VictoryPhaseProps {
     room: PolyQuestRoom;
     currentUserId: string;
     onResetGame: () => void;
-    onSaveItems: (enigmaIndices: number[]) => Promise<void>;
+    onSaveItems: (items: { word: string; translation: string; context: string }[]) => Promise<void>;
     onSaveHistory: (result: any) => Promise<void>;
 }
+
 
 export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId, onResetGame, onSaveItems, onSaveHistory }) => {
     const [selectedWords, setSelectedWords] = useState<Set<number>>(new Set());
@@ -60,7 +61,16 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
         if (saving) return;
         setSaving(true);
         try {
-            await onSaveItems(Array.from(selectedWords));
+            // Mapeia os índices selecionados para objetos com contexto real
+            const itemsToSave = Array.from(selectedWords).map(index => {
+                const enigma = room.enigmas[index];
+                return {
+                    word: enigma.word,
+                    translation: enigma.translation,
+                    context: getContextSnippet(enigma.word)
+                };
+            });
+            await onSaveItems(itemsToSave);
             alert(`Salvou ${selectedWords.size} palavras na biblioteca!`);
         } catch (e) {
             console.error(e);
@@ -69,6 +79,7 @@ export const VictoryPhase: React.FC<VictoryPhaseProps> = ({ room, currentUserId,
             setSaving(false);
         }
     };
+
 
     // Helper to extract a context sentence snippet (simple simulation)
     const getContextSnippet = (word: string) => {
