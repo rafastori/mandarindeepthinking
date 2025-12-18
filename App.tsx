@@ -4,7 +4,6 @@ import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/aut
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import StatsModal from './components/StatsModal';
-import PronunciationModal from './components/PronunciationModal';
 import ImportModal from './components/ImportModal';
 import PuterSuggestionModal from './components/PuterSuggestionModal';
 import ReadingView from './views/ReadingView';
@@ -31,7 +30,6 @@ const App: React.FC = () => {
     const [authLoading, setAuthLoading] = useState(true);
     const [tab, setTab] = useState<string>('leitura');
     const [showStats, setShowStats] = useState(false);
-    const [showPronounce, setShowPronounce] = useState(false);
     const [showImport, setShowImport] = useState(false);
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
@@ -263,7 +261,6 @@ const App: React.FC = () => {
                 onLogin={handleLogin}
                 onLogout={handleLogout}
                 onOpenStats={() => setShowStats(true)}
-                onOpenPronounce={() => setShowPronounce(true)}
                 onResetAccount={handleResetAccount}
                 isPuterConnected={isPuterConnected}
                 puterUsername={puterUsername}
@@ -276,7 +273,6 @@ const App: React.FC = () => {
             </main>
             <Navigation activeTab={tab} onTabChange={setTab} />
             {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {} }) : clearLocalStats()} />}
-            {showPronounce && <PronunciationModal data={libraryData} onClose={() => setShowPronounce(false)} onResult={handleRecordResult} />}
             {showImport && <ImportModal onClose={() => setShowImport(false)} onImport={handleImportBatch} />}
             {showPuterSuggestion && (
                 <PuterSuggestionModal

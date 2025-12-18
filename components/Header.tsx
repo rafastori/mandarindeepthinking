@@ -8,7 +8,6 @@ interface HeaderProps {
     onLogin: () => void;
     onLogout: () => void;
     onOpenStats: () => void;
-    onOpenPronounce: () => void;
     onResetAccount: () => void;
     // Novas props para Puter
     isPuterConnected: boolean;
@@ -21,7 +20,6 @@ const Header: React.FC<HeaderProps> = ({
     onLogin,
     onLogout,
     onOpenStats,
-    onOpenPronounce,
     onResetAccount,
     isPuterConnected,
     puterUsername,
@@ -38,17 +36,14 @@ const Header: React.FC<HeaderProps> = ({
                 {/* Indicador de Áudio - Verde = TTS padrão, Azul = Puter IA */}
                 <div
                     className={`p-2 rounded-full transition-colors ${isPuterConnected
-                            ? 'bg-blue-500/30 text-blue-200'
-                            : 'bg-white/20 text-white'
+                        ? 'bg-blue-500/30 text-blue-200'
+                        : 'bg-white/20 text-white'
                         }`}
                     title={isPuterConnected ? 'Áudio IA (Puter)' : 'Áudio padrão'}
                 >
                     <Icon name="volume-2" size={18} />
                 </div>
 
-                <button onClick={onOpenPronounce} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">
-                    <Icon name="mic" size={18} />
-                </button>
                 <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">
                     <Icon name="bar-chart-2" size={18} />
                 </button>
