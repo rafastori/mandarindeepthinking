@@ -16,10 +16,9 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
         { id: 'cards', icon: 'layers', label: 'Cards' },
     ];
 
-    // 2. Itens que ficam no MENU "Treino" (Secundários)
+    // 2. Itens que ficam no MENU "Treino" (Secundários) - SEM jogo que agora é destaque
     const trainingTabs = [
         { id: 'pratica', icon: 'edit-3', label: 'Prática' },
-        { id: 'jogo', icon: 'gamepad-2', label: 'Jogo' },
         { id: 'lab', icon: 'flask-conical', label: 'Lab' },
         { id: 'criativo', icon: 'sparkles', label: 'Criativo' },
     ];
@@ -41,7 +40,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
         <>
             {/* Fundo escuro para fechar o menu ao clicar fora */}
             {isMenuOpen && (
-                <div 
+                <div
                     className="fixed inset-0 bg-black/20 z-40 backdrop-blur-[1px]"
                     onClick={() => setIsMenuOpen(false)}
                 />
@@ -79,15 +78,14 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
                         <button
                             key={tab.id}
                             onClick={() => handleMainClick(tab.id)}
-                            className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${
-                                activeTab === tab.id 
-                                    ? 'text-brand-600 -translate-y-1' 
+                            className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${activeTab === tab.id
+                                    ? 'text-brand-600 -translate-y-1'
                                     : 'text-slate-400 active:bg-slate-50'
-                            }`}
+                                }`}
                         >
-                            <Icon 
-                                name={tab.icon} 
-                                size={24} 
+                            <Icon
+                                name={tab.icon}
+                                size={24}
                                 className={`mb-1 transition-transform ${activeTab === tab.id ? 'scale-110' : ''}`}
                                 fill={activeTab === tab.id ? "currentColor" : "none"}
                             />
@@ -95,20 +93,41 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
                         </button>
                     ))}
 
+                    {/* Botão "Jogo" com DESTAQUE colorido */}
+                    <button
+                        onClick={() => handleMainClick('jogo')}
+                        className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${activeTab === 'jogo'
+                                ? '-translate-y-1'
+                                : 'active:bg-slate-50'
+                            }`}
+                    >
+                        <div className={`p-2 rounded-xl transition-all ${activeTab === 'jogo'
+                                ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 shadow-lg shadow-emerald-200 scale-110'
+                                : 'bg-gradient-to-r from-emerald-400 to-cyan-400'
+                            }`}>
+                            <Icon
+                                name="gamepad-2"
+                                size={20}
+                                className="text-white"
+                            />
+                        </div>
+                        <span className={`text-[10px] font-bold tracking-wide mt-1 ${activeTab === 'jogo' ? 'text-emerald-600' : 'text-slate-500'
+                            }`}>Jogo</span>
+                    </button>
+
                     {/* Botão "Treino" (Mais) */}
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${
-                            isMoreActive || isMenuOpen
-                                ? 'text-brand-600' 
+                        className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${isMoreActive || isMenuOpen
+                                ? 'text-brand-600'
                                 : 'text-slate-400 active:bg-slate-50'
-                        }`}
+                            }`}
                     >
                         <div className={`p-1 rounded-full transition-all ${isMenuOpen ? 'bg-brand-100 rotate-45' : ''}`}>
                             {/* Ícone de Grid ou Plus para indicar "Mais" */}
-                            <Icon 
-                                name="plus" 
-                                size={24} 
+                            <Icon
+                                name="plus"
+                                size={24}
                                 className={`transition-transform`}
                             />
                         </div>

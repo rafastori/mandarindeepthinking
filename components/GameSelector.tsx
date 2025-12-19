@@ -9,11 +9,6 @@ const GameSelector: React.FC<GameSelectorProps> = ({ onSelectGame }) => {
     return (
         <div className="flex flex-col items-center justify-center h-full p-6 bg-gradient-to-br from-slate-50 to-slate-100">
             <div className="max-w-2xl w-full">
-                <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold text-slate-800 mb-2">Escolha seu Jogo</h1>
-                    <p className="text-slate-500">Selecione qual jogo você quer jogar</p>
-                </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* LingoArena Card */}
                     <button

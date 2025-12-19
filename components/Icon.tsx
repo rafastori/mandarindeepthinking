@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-    BookOpen, 
-    List, 
-    Edit3, 
-    Gamepad2, 
-    FlaskConical, 
-    Layers, 
-    Mic, 
-    BarChart2, 
+import {
+    BookOpen,
+    List,
+    Edit3,
+    Gamepad2,
+    FlaskConical,
+    Layers,
+    Mic,
+    BarChart2,
     BrainCircuit,
     ChevronDown,
     Trash2,
@@ -21,7 +21,8 @@ import {
     Sparkles,
     Info,
     Plus,
-    RotateCcw
+    RotateCcw,
+    Swords
 } from 'lucide-react';
 
 export interface IconProps {
@@ -53,7 +54,8 @@ const icons: Record<string, React.ElementType> = {
     'sparkles': Sparkles,
     'info': Info,
     'plus': Plus,
-    'rotate-ccw': RotateCcw
+    'rotate-ccw': RotateCcw,
+    'swords': Swords
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
