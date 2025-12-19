@@ -251,7 +251,7 @@ const App: React.FC = () => {
                     />
                 );
             case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
-            case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} />;
+            case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
             default: return null;
         }
     };
