@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import { db } from '../services/firebase';
-import { 
-  collection, 
-  query, 
-  orderBy, 
-  onSnapshot, 
-  addDoc, 
-  deleteDoc, 
-  doc, 
-  serverTimestamp, 
-  getDocs, // <--- NOVO
-  writeBatch // <--- NOVO (Para deletar em lote, mais rápido)
+import {
+  collection,
+  query,
+  orderBy,
+  onSnapshot,
+  addDoc,
+  deleteDoc,
+  doc,
+  serverTimestamp,
+  getDocs,
+  writeBatch,
+  updateDoc
 } from 'firebase/firestore';
 import { StudyItem } from '../types';
 
@@ -38,7 +39,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
       ...data,
       createdAt: serverTimestamp()
     });
-    return docRef.id; 
+    return docRef.id;
   };
 
   const deleteItem = async (id: string) => {
@@ -46,29 +47,33 @@ export const useStudyItems = (userId: string | null | undefined) => {
     await deleteDoc(doc(db, 'users', userId, 'items', id));
   };
 
+  // NOVA FUNÇÃO: Atualiza um item (ex: trocar idioma)
+  const updateItem = async (id: string, data: Partial<StudyItem>) => {
+    if (!userId) return;
+    await updateDoc(doc(db, 'users', userId, 'items', id), data);
+  };
+
   // NOVA FUNÇÃO: DELETA TUDO DE UMA VEZ
   const clearLibrary = async () => {
     if (!userId) return;
-    
-    try {
-        const q = query(collection(db, 'users', userId, 'items'));
-        const snapshot = await getDocs(q);
-        
-        // O Firestore só permite deletar em lotes de 500. 
-        // Como é um app pessoal, um batch resolve.
-        const batch = writeBatch(db);
-        
-        snapshot.forEach((doc) => {
-            batch.delete(doc.ref);
-        });
 
-        await batch.commit();
-        console.log("Biblioteca limpa com sucesso.");
+    try {
+      const q = query(collection(db, 'users', userId, 'items'));
+      const snapshot = await getDocs(q);
+
+      const batch = writeBatch(db);
+
+      snapshot.forEach((doc) => {
+        batch.delete(doc.ref);
+      });
+
+      await batch.commit();
+      console.log("Biblioteca limpa com sucesso.");
     } catch (error) {
-        console.error("Erro ao limpar biblioteca:", error);
-        throw error;
+      console.error("Erro ao limpar biblioteca:", error);
+      throw error;
     }
   };
 
-  return { items, loading, addItem, deleteItem, clearLibrary };
+  return { items, loading, addItem, deleteItem, updateItem, clearLibrary };
 };

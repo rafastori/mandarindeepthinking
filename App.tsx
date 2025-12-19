@@ -15,6 +15,7 @@ import GameSelector from './components/GameSelector';
 import CreativeView from './views/CreativeView';
 import LabView from './views/LabView';
 import CardsView from './views/CardsView';
+import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
@@ -34,7 +35,7 @@ const App: React.FC = () => {
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
 
-    const { items: firebaseItems, addItem, deleteItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
+    const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, puterUsername } = usePuterSpeech();
 
@@ -228,7 +229,7 @@ const App: React.FC = () => {
                         onSaveGeneratedCard={handleSaveGeneratedCard}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
@@ -250,6 +251,7 @@ const App: React.FC = () => {
                     />
                 );
             case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
+            case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} />;
             default: return null;
         }
     };
