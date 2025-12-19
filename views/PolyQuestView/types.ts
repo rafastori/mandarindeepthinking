@@ -119,19 +119,20 @@ export interface GameResult {
 export interface Language {
     code: string;
     name: string;
-    flag: string; // Emoji da bandeira
+    flag: string; // Emoji da bandeira (fallback)
+    isoCode: string; // Código ISO para flag-icons CSS
 }
 
 export const SUPPORTED_LANGUAGES: Language[] = [
-    { code: 'de', name: 'Alemão', flag: '🇩🇪' },
-    { code: 'fr', name: 'Francês', flag: '🇫🇷' },
-    { code: 'es', name: 'Espanhol', flag: '🇪🇸' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-    { code: 'en', name: 'Inglês', flag: '🇬🇧' },
-    { code: 'pt', name: 'Português', flag: '🇧🇷' },
-    { code: 'zh', name: 'Chinês', flag: '🇨🇳' },
-    { code: 'ja', name: 'Japonês', flag: '🇯🇵' },
-    { code: 'ko', name: 'Coreano', flag: '🇰🇷' },
+    { code: 'de', name: 'Alemão', flag: '🇩🇪', isoCode: 'de' },
+    { code: 'fr', name: 'Francês', flag: '🇫🇷', isoCode: 'fr' },
+    { code: 'es', name: 'Espanhol', flag: '🇪🇸', isoCode: 'es' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹', isoCode: 'it' },
+    { code: 'en', name: 'Inglês', flag: '🇬🇧', isoCode: 'gb' },
+    { code: 'pt', name: 'Português', flag: '🇧🇷', isoCode: 'br' },
+    { code: 'zh', name: 'Chinês', flag: '🇨🇳', isoCode: 'cn' },
+    { code: 'ja', name: 'Japonês', flag: '🇯🇵', isoCode: 'jp' },
+    { code: 'ko', name: 'Coreano', flag: '🇰🇷', isoCode: 'kr' },
 ];
 
 // Constantes do jogo

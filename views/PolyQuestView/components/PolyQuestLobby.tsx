@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Icon from '../../../components/Icon';
+import FlagSelect from '../../../components/FlagSelect';
 import { PolyQuestRoom, SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
 
@@ -125,41 +126,21 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                 <div className="space-y-4">
                     {/* Idiomas */}
                     <div className="grid grid-cols-2 gap-4">
-                        <div>
-                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma estudado
-                            </label>
-                            <select
-                                value={sourceLang}
-                                onChange={(e) => setSourceLang(e.target.value)}
-                                disabled={!isHost}
-                                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:bg-slate-100 disabled:cursor-not-allowed"
-                            >
-                                {SUPPORTED_LANGUAGES.map(lang => (
-                                    <option key={lang.code} value={lang.code}>
-                                        {lang.flag} {lang.name}
-                                    </option>
-                                ))}
-                            </select>
-                        </div>
+                        <FlagSelect
+                            options={SUPPORTED_LANGUAGES}
+                            value={sourceLang}
+                            onChange={setSourceLang}
+                            label="Idioma estudado"
+                            disabled={!isHost}
+                        />
 
-                        <div>
-                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                Idioma nativo
-                            </label>
-                            <select
-                                value={targetLang}
-                                onChange={(e) => setTargetLang(e.target.value)}
-                                disabled={!isHost}
-                                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:bg-slate-100 disabled:cursor-not-allowed"
-                            >
-                                {SUPPORTED_LANGUAGES.map(lang => (
-                                    <option key={lang.code} value={lang.code}>
-                                        {lang.flag} {lang.name}
-                                    </option>
-                                ))}
-                            </select>
-                        </div>
+                        <FlagSelect
+                            options={SUPPORTED_LANGUAGES}
+                            value={targetLang}
+                            onChange={setTargetLang}
+                            label="Idioma nativo"
+                            disabled={!isHost}
+                        />
                     </div>
 
                     {/* Texto Base */}

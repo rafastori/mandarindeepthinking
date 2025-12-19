@@ -128,7 +128,6 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         return `Você é um escritor criativo poliglota.
         Escreva um texto curto, interessante e coerente em ${langName}.
         O texto deve ter aproximadamente 40 a 60 palavras.
-        O tema deve ser variado (cultura, cotidiano, curiosidades, história).
         
         Retorne APENAS um JSON:
         {
@@ -450,13 +449,17 @@ export const generateBossLevel = async (
     }
 };
 
-export const generateRawText = async (contentLang: string): Promise<string> => {
+export const generateRawText = async (contentLang: string, customPrompt?: string): Promise<string> => {
     const langName = getLangName(contentLang);
+
+    // Constrói o prompt do usuário baseado na instrução customizada ou padrão
+    const userPrompt = customPrompt?.trim()
+        ? `Gere um texto em ${langName} sobre: ${customPrompt}`
+        : `Gere um texto em ${langName}. O tema deve ser variado (cultura, cotidiano, curiosidades, história).`;
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Raw Text");
         const systemPrompt = getSystemInstruction('raw_text', contentLang);
-        const userPrompt = `Gere um texto em ${langName}.`;
 
         const data = await callLocalGemini(userPrompt, systemPrompt);
         return data.text;
@@ -469,7 +472,8 @@ export const generateRawText = async (contentLang: string): Promise<string> => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 type: 'raw_text',
-                targetLang: contentLang
+                targetLang: contentLang,
+                customPrompt: customPrompt
             }),
         });
 

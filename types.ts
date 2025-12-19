@@ -2,15 +2,15 @@
 export type SupportedLanguage = 'zh' | 'de' | 'pt' | 'en' | 'fr' | 'es' | 'it' | 'ja' | 'ko';
 
 // Lista de idiomas disponíveis para estudo (excluindo português que é língua nativa)
-export const STUDY_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [
-    { code: 'de', name: 'Alemão', flag: '🇩🇪' },
-    { code: 'fr', name: 'Francês', flag: '🇫🇷' },
-    { code: 'es', name: 'Espanhol', flag: '🇪🇸' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-    { code: 'en', name: 'Inglês', flag: '🇬🇧' },
-    { code: 'zh', name: 'Chinês', flag: '🇨🇳' },
-    { code: 'ja', name: 'Japonês', flag: '🇯🇵' },
-    { code: 'ko', name: 'Coreano', flag: '🇰🇷' },
+export const STUDY_LANGUAGES: { code: SupportedLanguage; name: string; flag: string; isoCode: string }[] = [
+    { code: 'de', name: 'Alemão', flag: '🇩🇪', isoCode: 'de' },
+    { code: 'fr', name: 'Francês', flag: '🇫🇷', isoCode: 'fr' },
+    { code: 'es', name: 'Espanhol', flag: '🇪🇸', isoCode: 'es' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹', isoCode: 'it' },
+    { code: 'en', name: 'Inglês', flag: '🇬🇧', isoCode: 'gb' },
+    { code: 'zh', name: 'Chinês', flag: '🇨🇳', isoCode: 'cn' },
+    { code: 'ja', name: 'Japonês', flag: '🇯🇵', isoCode: 'jp' },
+    { code: 'ko', name: 'Coreano', flag: '🇰🇷', isoCode: 'kr' },
 ];
 
 export interface Keyword {

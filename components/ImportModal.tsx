@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Icon from './Icon';
 import { processTextWithGemini, generateRawText } from '../services/gemini';
 import { StudyItem, SupportedLanguage, STUDY_LANGUAGES } from '../types';
+import 'flag-icons/css/flag-icons.min.css';
 
 interface ImportModalProps {
     onClose: () => void;
@@ -10,6 +11,7 @@ interface ImportModalProps {
 
 const ImportModal: React.FC<ImportModalProps> = ({ onClose, onImport }) => {
     const [text, setText] = useState('');
+    const [aiPrompt, setAiPrompt] = useState('');
     const [loading, setLoading] = useState(false);
     const [generating, setGenerating] = useState(false);
     const [language, setLanguage] = useState<SupportedLanguage>('zh');
@@ -21,7 +23,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ onClose, onImport }) => {
     const handleGenerateText = async () => {
         setGenerating(true);
         try {
-            const generatedText = await generateRawText(language);
+            const generatedText = await generateRawText(language, aiPrompt);
             setText(generatedText);
         } catch (error) {
             console.error(error);
@@ -74,7 +76,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ onClose, onImport }) => {
                                         : 'border-slate-100 text-slate-500 hover:border-slate-300'
                                         }`}
                                 >
-                                    <span className="text-xl">{lang.flag}</span>
+                                    <span className={`fi fi-${lang.isoCode} text-2xl rounded-sm`}></span>
                                     <span className="font-medium text-xs">{lang.name}</span>
                                 </button>
                             ))}
@@ -97,31 +99,48 @@ const ImportModal: React.FC<ImportModalProps> = ({ onClose, onImport }) => {
                         </button>
                     </div>
 
-                    {/* 3. Área de Texto com botão de gerar */}
+                    {/* 3. Área de Texto */}
                     <div className="relative">
                         <textarea
                             value={text}
                             onChange={(e) => setText(e.target.value)}
                             placeholder={`Cole aqui seu texto em ${selectedLangName}...`}
-                            className="w-full h-40 p-4 pr-12 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all resize-none text-slate-700 placeholder:text-slate-300 leading-relaxed"
+                            className="w-full h-40 p-4 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all resize-none text-slate-700 placeholder:text-slate-300 leading-relaxed"
                         />
+                    </div>
+
+                    {/* 4. Campo de prompt para IA personalizada */}
+                    <div className="mt-3">
+                        <input
+                            type="text"
+                            value={aiPrompt}
+                            onChange={(e) => setAiPrompt(e.target.value)}
+                            placeholder="Se desejar que a IA gere um texto mais específico descreva aqui"
+                            className="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all text-slate-700 placeholder:text-slate-400 text-sm"
+                        />
+                    </div>
+
+                    {/* 5. Dica + Botão Gerar com IA */}
+                    <div className="mt-3 flex items-center gap-3">
+                        <div className="flex-1 flex items-start gap-2 text-xs text-slate-400 bg-slate-50 p-2 rounded-lg">
+                            <Icon name="info" size={14} className="mt-0.5 flex-shrink-0" />
+                            <p>Cole um texto ou use o botão mágico ✨ para gerar automaticamente.</p>
+                        </div>
                         <button
                             onClick={handleGenerateText}
                             disabled={generating || loading}
                             title={`Gerar texto em ${selectedLangName} com IA`}
-                            className="absolute top-3 right-3 p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md hover:shadow-lg"
+                            className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md hover:shadow-lg font-medium text-sm whitespace-nowrap"
                         >
                             {generating ? (
                                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                             ) : (
-                                <Icon name="wand-2" size={20} />
+                                <>
+                                    <Icon name="wand-2" size={18} />
+                                    <span className="hidden sm:inline">Gerar</span>
+                                </>
                             )}
                         </button>
-                    </div>
-
-                    <div className="mt-2 flex items-start gap-2 text-xs text-slate-400 bg-slate-50 p-2 rounded-lg">
-                        <Icon name="info" size={14} className="mt-0.5 flex-shrink-0" />
-                        <p>Cole um texto ou use o botão mágico ✨ para gerar automaticamente.</p>
                     </div>
                 </div>
 
