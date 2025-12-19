@@ -22,7 +22,10 @@ import {
     Info,
     Plus,
     RotateCcw,
-    Swords
+    Swords,
+    Zap,
+    Flame,
+    Trophy
 } from 'lucide-react';
 
 export interface IconProps {
@@ -55,7 +58,10 @@ const icons: Record<string, React.ElementType> = {
     'info': Info,
     'plus': Plus,
     'rotate-ccw': RotateCcw,
-    'swords': Swords
+    'swords': Swords,
+    'zap': Zap,
+    'flame': Flame,
+    'trophy': Trophy
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

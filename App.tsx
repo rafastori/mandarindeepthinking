@@ -37,7 +37,7 @@ const App: React.FC = () => {
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
-    const { isPuterConnected, connectPuter, puterUsername } = usePuterSpeech();
+    const { isPuterConnected, isPuterEnabled, connectPuter, disconnectPuter, togglePuterEnabled, puterUsername } = usePuterSpeech();
 
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
@@ -265,8 +265,11 @@ const App: React.FC = () => {
                 onOpenStats={() => setShowStats(true)}
                 onResetAccount={handleResetAccount}
                 isPuterConnected={isPuterConnected}
+                isPuterEnabled={isPuterEnabled}
                 puterUsername={puterUsername}
                 onConnectPuter={handleConnectPuter}
+                onDisconnectPuter={disconnectPuter}
+                onTogglePuter={togglePuterEnabled}
             />
             <main className="flex-1 overflow-y-auto w-full no-scrollbar">
                 <div className="max-w-3xl mx-auto h-full">

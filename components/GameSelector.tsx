@@ -16,8 +16,8 @@ const GameSelector: React.FC<GameSelectorProps> = ({ onSelectGame }) => {
                         className="group bg-white rounded-2xl p-8 shadow-lg border-2 border-slate-200 hover:border-brand-400 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-left"
                     >
                         <div className="flex flex-col items-center text-center">
-                            <div className="w-20 h-20 bg-gradient-to-br from-brand-400 to-brand-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <Icon name="swords" size={40} className="text-white" />
+                            <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-rose-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 shadow-lg shadow-orange-200 transition-all duration-300">
+                                <Icon name="flame" size={40} className="text-white" fill="currentColor" />
                             </div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-2">LingoArena</h2>
                             <p className="text-slate-600 text-sm mb-4">

@@ -8,6 +8,7 @@ interface UserMenuDropdownProps {
     puterUsername: string | null;
     onLogout: () => void;
     onConnectPuter: () => void;
+    onDisconnectPuter: () => void;
     onResetAccount: () => void;
 }
 
@@ -21,6 +22,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     puterUsername,
     onLogout,
     onConnectPuter,
+    onDisconnectPuter,
     onResetAccount
 }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -85,7 +87,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                     {/* Opções */}
                     <div className="p-2">
                         {/* Conectar ao Puter */}
-                        {!isPuterConnected ? (
+                        {!isPuterConnected && (
                             <button
                                 onClick={() => handleAction(onConnectPuter)}
                                 className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-blue-50 text-slate-700 hover:text-blue-700 transition-colors"
@@ -98,16 +100,25 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                     <p className="text-xs text-slate-500">Áudio com IA</p>
                                 </div>
                             </button>
-                        ) : (
-                            <div className="flex items-center gap-3 px-3 py-2.5 text-slate-500">
-                                <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                                    <Icon name="check" size={16} className="text-green-600" />
+                        )}
+
+                        {isPuterConnected && (
+                            <button
+                                onClick={() => {
+                                    if (window.confirm("Deseja sair da conta Puter?")) {
+                                        handleAction(onDisconnectPuter);
+                                    }
+                                }}
+                                className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-orange-50 text-slate-700 hover:text-orange-700 transition-colors"
+                            >
+                                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                                    <Icon name="log-out" size={16} className="text-orange-600" />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-medium text-green-700">Puter Conectado</p>
-                                    <p className="text-xs text-slate-500">Áudio IA ativo</p>
+                                    <p className="text-sm font-medium">Sair do Puter</p>
+                                    <p className="text-xs text-slate-500">Desconectar áudio IA</p>
                                 </div>
-                            </div>
+                            </button>
                         )}
 
                         <div className="h-px bg-slate-100 my-2" />
