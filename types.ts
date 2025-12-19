@@ -1,9 +1,24 @@
+// Tipo centralizado para idiomas suportados
+export type SupportedLanguage = 'zh' | 'de' | 'pt' | 'en' | 'fr' | 'es' | 'it' | 'ja' | 'ko';
+
+// Lista de idiomas disponíveis para estudo (excluindo português que é língua nativa)
+export const STUDY_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [
+    { code: 'de', name: 'Alemão', flag: '🇩🇪' },
+    { code: 'fr', name: 'Francês', flag: '🇫🇷' },
+    { code: 'es', name: 'Espanhol', flag: '🇪🇸' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+    { code: 'en', name: 'Inglês', flag: '🇬🇧' },
+    { code: 'zh', name: 'Chinês', flag: '🇨🇳' },
+    { code: 'ja', name: 'Japonês', flag: '🇯🇵' },
+    { code: 'ko', name: 'Coreano', flag: '🇰🇷' },
+];
+
 export interface Keyword {
     id: string;
     word: string;
     pinyin: string;
     meaning: string;
-    language?: 'zh' | 'de' | 'pt' | 'en';
+    language?: SupportedLanguage;
 }
 
 export interface StudyItem {
@@ -13,7 +28,7 @@ export interface StudyItem {
     translation: string;
     tokens: string[];
     keywords: Keyword[];
-    language?: 'zh' | 'de' | 'pt' | 'en';
+    language?: SupportedLanguage;
     createdAt?: any;
     type?: 'text' | 'word';
     originalSentence?: string;

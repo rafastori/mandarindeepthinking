@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
-import { StudyItem, Keyword } from '../types';
+import { StudyItem, Keyword, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
 
@@ -162,9 +162,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                         </div>
 
                                         <div className="flex flex-col gap-2 flex-shrink-0 pt-1">
-                                            <button onClick={() => speak(item.chinese, (item.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')} className="text-brand-600 bg-brand-50 p-2 rounded-full">
-                                                <Icon name="volume-2" size={18} />
-                                            </button>
+                                            <div className="flex items-center gap-1">
+                                                <span className="text-[10px] font-bold text-slate-400 uppercase">{item.language || 'zh'}</span>
+                                                <button onClick={() => speak(item.chinese, (item.language || 'zh') as SupportedLanguage)} className="text-brand-600 bg-brand-50 p-2 rounded-full">
+                                                    <Icon name="volume-2" size={18} />
+                                                </button>
+                                            </div>
                                             {isImported && onDeleteText && (
                                                 <button onClick={(e) => { e.stopPropagation(); onDeleteText(item.id); }} className="text-slate-400 bg-slate-50 p-2 rounded-full hover:text-red-500">
                                                     <Icon name="trash-2" size={18} />

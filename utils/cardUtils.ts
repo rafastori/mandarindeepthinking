@@ -1,4 +1,4 @@
-import { StudyItem } from '../types';
+import { StudyItem, SupportedLanguage } from '../types';
 
 export interface CardItem {
     id: string;
@@ -6,7 +6,7 @@ export interface CardItem {
     pinyin: string;
     meaning: string;
     context: string;
-    language?: 'zh' | 'de' | 'pt' | 'en';
+    language?: SupportedLanguage;
     sourceId: string;
 }
 

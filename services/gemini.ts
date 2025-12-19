@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 import { GoogleGenAI } from "@google/genai";
-import { StudyItem, Keyword, GameCard } from "../types";
+import { StudyItem, Keyword, GameCard, SupportedLanguage } from "../types";
 
 // Exportamos a interface também daqui se precisar, ou usamos a do types.ts
 export { type GameCard } from "../types";
@@ -175,7 +175,7 @@ const getLangName = (code: string) => {
 
 // --- IMPLEMENTAÇÃO HÍBRIDA (LOCAL vs PROD) ---
 
-export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: 'zh' | 'de' | 'pt' | 'en' = 'zh'): Promise<StudyItem[]> => {
+export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: SupportedLanguage = 'zh'): Promise<StudyItem[]> => {
     // DEV MODE: Usa SDK local
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Text Analysis");
@@ -225,7 +225,7 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
     }
 };
 
-export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: 'zh' | 'de' | 'pt' | 'en' = 'zh'): Promise<Keyword> => {
+export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: SupportedLanguage = 'zh'): Promise<Keyword> => {
     // DEV MODE
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Word Card");
@@ -274,7 +274,7 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
 export const generateGameDeck = async (
     topic: string,
     difficulty: string,
-    targetLanguage: 'zh' | 'de' | 'pt' | 'en',
+    targetLanguage: SupportedLanguage,
     excludeWords: string[] = []
 ): Promise<GameCard[]> => {
     // DEV MODE

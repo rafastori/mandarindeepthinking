@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { SupportedLanguage } from '../types';
 
 /**
  * Hook para síntese de voz com Puter TTS (IA) e fallback para Web Speech API
@@ -87,17 +88,22 @@ export const usePuterSpeech = () => {
     }, []);
 
     // Fallback para Web Speech API
-    const fallbackSpeak = useCallback((text: string, language: 'zh' | 'de' | 'pt' | 'en' = 'zh') => {
+    const fallbackSpeak = useCallback((text: string, language: SupportedLanguage = 'zh') => {
         if (!('speechSynthesis' in window)) return;
 
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
 
-        const langMap: Record<string, string> = {
+        const langMap: Record<SupportedLanguage, string> = {
             'zh': 'zh-CN',
             'de': 'de-DE',
             'pt': 'pt-BR',
             'en': 'en-US',
+            'fr': 'fr-FR',
+            'es': 'es-ES',
+            'it': 'it-IT',
+            'ja': 'ja-JP',
+            'ko': 'ko-KR',
         };
 
         const targetLangCode = langMap[language] || 'zh-CN';
@@ -118,7 +124,7 @@ export const usePuterSpeech = () => {
     }, [voices]);
 
     // Função principal de fala
-    const speak = useCallback(async (text: string, language: 'zh' | 'de' | 'pt' | 'en' = 'zh') => {
+    const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh') => {
         // Tenta usar Puter primeiro se conectado
         if (isPuterConnected && typeof puter !== 'undefined') {
             try {
