@@ -334,69 +334,40 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     };
 
     return (
-        <div className="space-y-6">
-            {/* Top Bar */}
-            <div className="flex items-center justify-between bg-white p-3 rounded-xl shadow-sm border border-slate-100 sticky top-0 z-40 gap-2">
-                {/* Left: Confidence Bar */}
-                <div className="flex-shrink-0">
+        <div className="space-y-4">
+            {/* Top Bar - Confidence, Progresso e Scoreboard */}
+            <div className="bg-white rounded-xl shadow-sm border border-slate-100 sticky top-0 z-40 overflow-hidden">
+                {/* Linha superior: Confidence e Prção ogresso */}
+                <div className="flex items-center justify-between p-3 border-b border-slate-100">
                     <ConfidenceBar confidence={room.confidence} />
+                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-bold text-sm shadow-sm">
+                        <Icon name="sparkles" size={16} />
+                        <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length} Enigmas</span>
+                    </div>
                 </div>
 
-                {/* Center: Ver Texto Original (destaque) */}
-                <button
-                    onClick={() => setShowOriginalText(true)}
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-bold shadow-md hover:shadow-lg hover:from-emerald-600 hover:to-emerald-700 transition-all active:scale-95"
-                    title="Ver texto original completo"
-                >
-                    <Icon name="book-open" size={24} />
-                    <span className="hidden sm:inline">Texto Original</span>
-                </button>
-
-                {/* Right: Progress + Scoreboard */}
-                <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-semibold">
-                        <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length}</span>
-                    </div>
-                    <div className="hidden md:flex items-center gap-2 overflow-x-auto max-w-xs no-scrollbar">
-                        {room.players.map(p => (
-                            <div key={p.id} className={`flex items-center gap-1.5 px-2 py-1 rounded-xl border ${getUserColor(p.id)} shadow-sm`}>
-                                <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[9px] uppercase font-bold">
+                {/* Linha inferior: Scoreboard bonito - sempre visível */}
+                <div className="flex items-center justify-center gap-3 p-2 bg-gradient-to-r from-slate-50 to-slate-100 overflow-x-auto no-scrollbar">
+                    {room.players.map(p => (
+                        <div
+                            key={p.id}
+                            className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border-2 shadow-sm transition-all ${getUserColor(p.id)}`}
+                        >
+                            {p.avatarUrl ? (
+                                <img src={p.avatarUrl} className="w-6 h-6 rounded-full" alt={p.name} />
+                            ) : (
+                                <div className="w-6 h-6 rounded-full bg-white/30 flex items-center justify-center text-[10px] uppercase font-bold">
                                     {p.name[0]}
                                 </div>
-                                <span className="text-[10px] font-bold whitespace-nowrap">{p.score || 0}</span>
+                            )}
+                            <div className="flex flex-col leading-none">
+                                <span className="text-[11px] font-bold">{p.name.split(' ')[0]}</span>
+                                <span className="text-[10px] opacity-80 font-semibold">{p.score || 0} pts</span>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
-
-            {/* Original Text Modal - Full Screen with Scroll */}
-            {showOriginalText && (
-                <div className="fixed inset-0 bg-black/70 z-50 flex flex-col animate-in fade-in duration-200">
-                    {/* Header fixo - título centralizado */}
-                    <div className="bg-white p-4 border-b shadow-sm flex items-center justify-center relative">
-                        <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-                            <Icon name="book-open" size={24} className="text-emerald-600" />
-                            Texto Original
-                        </h3>
-                        <button
-                            onClick={() => setShowOriginalText(false)}
-                            className="absolute right-4 flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition-colors"
-                        >
-                            <Icon name="x" size={20} />
-                            <span>Fechar</span>
-                        </button>
-                    </div>
-                    {/* Conteúdo com scroll */}
-                    <div className="flex-1 overflow-y-auto p-6 bg-slate-50">
-                        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
-                            <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-line">
-                                {room.config.originalText}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            )}
 
             {/* Grid Area */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-20">

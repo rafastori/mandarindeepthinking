@@ -18,6 +18,7 @@ import { VictoryPhase } from './components/VictoryPhase';
 const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
+    const [showOriginalText, setShowOriginalText] = useState(false);
 
     const {
         rooms,
@@ -194,6 +195,19 @@ const PolyQuestView: React.FC = () => {
                             {activeRoom ? `Sala: ${activeRoom.name}` : 'Aventura de Aprendizado Multiplayer'}
                         </p>
                     </div>
+
+                    {/* Botão Texto Original - visível durante quest/exploration */}
+                    {activeRoom && (activeRoom.phase === 'quest' || activeRoom.phase === 'exploration') && (
+                        <button
+                            onClick={() => setShowOriginalText(true)}
+                            className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-bold shadow-md hover:shadow-lg transition-all active:scale-95"
+                            title="Ver texto original"
+                        >
+                            <Icon name="book-open" size={20} />
+                            <span className="hidden sm:inline text-sm">Texto</span>
+                        </button>
+                    )}
+
                     {activeRoom && (
                         <button
                             onClick={handleLeaveRoom}
@@ -204,6 +218,32 @@ const PolyQuestView: React.FC = () => {
                     )}
                 </div>
             </div>
+
+            {/* Modal Texto Original */}
+            {showOriginalText && activeRoom && (
+                <div className="fixed inset-0 bg-black/70 z-50 flex flex-col animate-in fade-in duration-200">
+                    <div className="bg-white p-4 border-b shadow-sm flex items-center justify-center relative">
+                        <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
+                            <Icon name="book-open" size={24} className="text-emerald-600" />
+                            Texto Original
+                        </h3>
+                        <button
+                            onClick={() => setShowOriginalText(false)}
+                            className="absolute right-4 flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition-colors"
+                        >
+                            <Icon name="x" size={20} />
+                            <span>Fechar</span>
+                        </button>
+                    </div>
+                    <div className="flex-1 overflow-y-auto p-6 bg-slate-50">
+                        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+                            <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-line">
+                                {activeRoom.config.originalText}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Main Content */}
             <div className="flex-1 overflow-y-auto p-6">
