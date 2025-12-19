@@ -12,17 +12,21 @@ import { SupportedLanguage } from '../types';
  */
 export const usePuterSpeech = () => {
     const [isPuterConnected, setIsPuterConnected] = useState(false);
-    const [isPuterEnabled, setIsPuterEnabled] = useState(() => {
-        const saved = localStorage.getItem('puter_audio_enabled');
-        return saved === null ? true : saved === 'true';
-    });
     const [puterUsername, setPuterUsername] = useState<string | null>(null);
     const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
-    // Persiste estado de habilitação
+    // Carrega vozes do navegador para fallback
     useEffect(() => {
-        localStorage.setItem('puter_audio_enabled', String(isPuterEnabled));
-    }, [isPuterEnabled]);
+        const loadVoices = () => {
+            const available = window.speechSynthesis?.getVoices() || [];
+            setVoices(available);
+        };
+
+        loadVoices();
+        if (window.speechSynthesis?.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+        }
+    }, []);
 
     // Verifica status do Puter ao montar
     useEffect(() => {
@@ -60,7 +64,6 @@ export const usePuterSpeech = () => {
             if (result?.username) {
                 setIsPuterConnected(true);
                 setPuterUsername(result.username);
-                setIsPuterEnabled(true); // Ativa ao logar
                 return true;
             }
             return false;
@@ -82,10 +85,6 @@ export const usePuterSpeech = () => {
         } catch (e) {
             console.error('Erro ao desconectar do Puter:', e);
         }
-    }, []);
-
-    const togglePuterEnabled = useCallback(() => {
-        setIsPuterEnabled(prev => !prev);
     }, []);
 
     // Fallback para Web Speech API
@@ -126,8 +125,8 @@ export const usePuterSpeech = () => {
 
     // Função principal de fala
     const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh') => {
-        // Tenta usar Puter se estiver conectado E habilitado
-        if (isPuterConnected && isPuterEnabled && typeof puter !== 'undefined') {
+        // Tenta usar Puter se estiver conectado
+        if (isPuterConnected && typeof puter !== 'undefined') {
             try {
                 const audio = await puter.ai.txt2speech(text, {
                     provider: 'openai',
@@ -147,15 +146,13 @@ export const usePuterSpeech = () => {
 
         // Fallback para Web Speech API
         fallbackSpeak(text, language);
-    }, [isPuterConnected, isPuterEnabled, fallbackSpeak]);
+    }, [isPuterConnected, fallbackSpeak]);
 
     return {
         speak,
         isPuterConnected,
-        isPuterEnabled,
         connectPuter,
         disconnectPuter,
-        togglePuterEnabled,
         puterUsername
     };
 };
