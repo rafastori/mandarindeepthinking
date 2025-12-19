@@ -22,7 +22,7 @@ const GameSelector: React.FC<GameSelectorProps> = ({ onSelectGame }) => {
                     >
                         <div className="flex flex-col items-center text-center">
                             <div className="w-20 h-20 bg-gradient-to-br from-brand-400 to-brand-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <Icon name="users" size={40} className="text-white" />
+                                <Icon name="swords" size={40} className="text-white" />
                             </div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-2">LingoArena</h2>
                             <p className="text-slate-600 text-sm mb-4">
@@ -47,12 +47,10 @@ const GameSelector: React.FC<GameSelectorProps> = ({ onSelectGame }) => {
                             </div>
                             <h2 className="text-2xl font-bold text-slate-800 mb-2">PolyQuest</h2>
                             <p className="text-slate-600 text-sm mb-4">
-                                Aventura solo de aprendizado com desafios progressivos e conquistas personalizadas
+                                Desafio Cooperativo
                             </p>
                             <div className="flex flex-wrap gap-2 justify-center">
-                                <span className="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold">Solo</span>
-                                <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">Progressivo</span>
-                                <span className="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-xs font-semibold">Em Breve</span>
+                                <span className="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold">Multiplayer Cooperativo</span>
                             </div>
                         </div>
                     </button>

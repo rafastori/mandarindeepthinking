@@ -153,9 +153,9 @@ const PolyQuestView: React.FC = () => {
                     word: item.word,
                     pinyin: '',
                     meaning: item.translation,
-                    language: activeRoom.config.targetLang as any
+                    language: activeRoom.config.sourceLang as any // Idioma do texto original
                 }],
-                language: activeRoom.config.targetLang as 'zh' | 'de' | 'pt' | 'en',
+                language: activeRoom.config.sourceLang as any, // Idioma do texto original para TTS
                 type: 'word',
                 originalSentence: item.context // Usa o contexto real do texto original
             });
