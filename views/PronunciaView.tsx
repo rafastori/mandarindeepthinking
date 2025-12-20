@@ -1,8 +1,9 @@
-import React, { useState, useMemo, useRef, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 import { pinyin } from 'pinyin-pro';
 
 interface PronunciaViewProps {
@@ -25,19 +26,6 @@ interface PracticeItem {
     translation: string;
     language: SupportedLanguage;
 }
-
-// Mapeamento de idiomas para códigos do Web Speech API
-const langMap: Record<SupportedLanguage, string> = {
-    'zh': 'zh-CN',
-    'de': 'de-DE',
-    'ja': 'ja-JP',
-    'ko': 'ko-KR',
-    'fr': 'fr-FR',
-    'es': 'es-ES',
-    'it': 'it-IT',
-    'en': 'en-US',
-    'pt': 'pt-BR',
-};
 
 // Converte hanzi para pinyin sem tons usando pinyin-pro
 const hanziToPinyin = (text: string): string => {
@@ -109,6 +97,18 @@ const containsCJKCharacters = (text: string): boolean => {
 
 const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult }) => {
     const { speak } = usePuterSpeech();
+    const {
+        isListening,
+        isProcessing,
+        isSupported,
+        transcript,
+        error,
+        isModelLoading,
+        modelProgress,
+        startListening,
+        stopListening,
+        resetTranscript
+    } = useSpeechRecognition();
 
     const [mode, setMode] = useState<'frases' | 'palavras'>('frases');
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -119,14 +119,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
     const [hasSaved, setHasSaved] = useState(false);
     const [lastTranscript, setLastTranscript] = useState('');
     const [lastSimilarity, setLastSimilarity] = useState(0);
-    const [isListening, setIsListening] = useState(false);
     const [comparisonInfo, setComparisonInfo] = useState('');
-
-    const recognitionRef = useRef<any>(null);
-    const transcriptRef = useRef('');
-
-    const isSupported = typeof window !== 'undefined' &&
-        ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window);
 
     // Preparar dados baseado no modo
     const items: PracticeItem[] = useMemo(() => {
@@ -141,9 +134,10 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
         } else {
             const words: PracticeItem[] = [];
             data.forEach(item => {
-                if (savedIds.includes(item.id.toString())) {
+                const itemId = item.id.toString();
+                if (savedIds.includes(itemId)) {
                     words.push({
-                        id: item.id.toString(),
+                        id: itemId,
                         text: item.chinese,
                         pinyin: item.pinyin || '',
                         translation: item.translation,
@@ -172,25 +166,22 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
 
     // Calcula similaridade - converte hanzi→pinyin se necessário
     const computeSimilarity = useCallback((item: PracticeItem, spoken: string): { similarity: number; info: string } => {
+        if (!item) return { similarity: 0, info: '' };
+
         if (isCJKLanguage(item.language)) {
-            // Para chinês: converter ambos para pinyin e comparar
             const expectedPinyin = item.pinyin ? normalizePinyin(item.pinyin) : hanziToPinyin(item.text);
-
-            // Se o reconhecimento retornou hanzi, converter para pinyin
             const spokenPinyin = containsCJKCharacters(spoken) ? hanziToPinyin(spoken) : normalizeText(spoken);
-
             const similarity = calculateSimilarity(expectedPinyin, spokenPinyin);
             return {
                 similarity,
-                info: `"${expectedPinyin}" vs "${spokenPinyin}"`
+                info: `${expectedPinyin} vs ${spokenPinyin}`
             };
         }
 
-        // Para idiomas ocidentais
         const normalizedText = normalizeText(item.text);
         const normalizedSpoken = normalizeText(spoken);
         const similarity = calculateSimilarity(normalizedText, normalizedSpoken);
-        return { similarity, info: `"${normalizedText}" vs "${normalizedSpoken}"` };
+        return { similarity, info: `${normalizedText} vs ${normalizedSpoken}` };
     }, []);
 
     const handleListen = () => {
@@ -201,52 +192,24 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
     const startRecording = useCallback(() => {
         if (!isSupported || !currentItem) return;
 
-        const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-        recognitionRef.current = new SpeechRecognition();
-        recognitionRef.current.continuous = true;
-        recognitionRef.current.interimResults = true;
-        recognitionRef.current.lang = langMap[currentItem.language] || 'zh-CN';
-
-        transcriptRef.current = '';
-
-        recognitionRef.current.onresult = (event: any) => {
-            let fullTranscript = '';
-            for (let i = 0; i < event.results.length; i++) {
-                fullTranscript += event.results[i][0].transcript;
-            }
-            transcriptRef.current = fullTranscript;
-        };
-
-        recognitionRef.current.onerror = (event: any) => {
-            if (event.error !== 'no-speech' && event.error !== 'aborted') {
-                console.error('Speech error:', event.error);
-            }
-        };
-
-        try {
-            recognitionRef.current.start();
-            setIsListening(true);
-            setShowResult(false);
-            setLastTranscript('');
-            setLastSimilarity(0);
-            setComparisonInfo('');
-        } catch (err) {
-            console.error('Failed to start:', err);
-        }
-    }, [isSupported, currentItem]);
+        resetTranscript();
+        startListening(currentItem.language, currentItem.text);
+        setShowResult(false);
+        setLastTranscript('');
+        setLastSimilarity(0);
+        setComparisonInfo('');
+    }, [isSupported, currentItem, startListening, resetTranscript]);
 
     const stopRecording = useCallback(() => {
-        if (recognitionRef.current) {
-            recognitionRef.current.stop();
-        }
-        setIsListening(false);
+        stopListening();
+    }, [stopListening]);
 
-        const finalTranscript = transcriptRef.current;
+    // Efeito para processar o resultado quando o reconhecimento para
+    useEffect(() => {
+        if (!isListening && transcript && !showResult) {
+            const result = computeSimilarity(currentItem, transcript);
 
-        if (finalTranscript && currentItem) {
-            const result = computeSimilarity(currentItem, finalTranscript);
-
-            setLastTranscript(finalTranscript);
+            setLastTranscript(transcript);
             setLastSimilarity(result.similarity);
             setComparisonInfo(result.info);
             setShowResult(true);
@@ -260,20 +223,14 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
                     if (exists) return prev;
                     return [...prev, {
                         text: currentItem.text,
-                        spoken: finalTranscript,
+                        spoken: transcript,
                         similarity: result.similarity,
                         language: currentItem.language
                     }];
                 });
             }
-        } else {
-            setShowResult(true);
-            setLastTranscript('(Não detectado)');
-            setLastSimilarity(0);
-            setComparisonInfo('Nenhum áudio capturado');
-            setAttempts(prev => prev + 1);
         }
-    }, [currentItem, computeSimilarity]);
+    }, [isListening, transcript, currentItem, computeSimilarity, showResult]);
 
     const handleRecord = () => {
         if (isListening) {
@@ -289,7 +246,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
         setLastTranscript('');
         setLastSimilarity(0);
         setComparisonInfo('');
-        transcriptRef.current = '';
+        resetTranscript();
     };
 
     const handlePrev = () => {
@@ -298,7 +255,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
         setLastTranscript('');
         setLastSimilarity(0);
         setComparisonInfo('');
-        transcriptRef.current = '';
+        resetTranscript();
     };
 
     const handleSaveProgress = () => {
@@ -318,7 +275,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
         setLastTranscript('');
         setLastSimilarity(0);
         setComparisonInfo('');
-        transcriptRef.current = '';
+        resetTranscript();
     };
 
     const handleRemoveMissed = (text: string) => {
@@ -362,7 +319,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
 
                 <div className="flex items-center gap-2">
                     <div className={`text-sm font-bold px-3 py-1.5 rounded-lg ${attempts > 0 && score / attempts >= 0.7 ? 'bg-emerald-100 text-emerald-700'
-                            : attempts > 0 ? 'bg-orange-100 text-orange-700' : 'bg-slate-100 text-slate-600'
+                        : attempts > 0 ? 'bg-orange-100 text-orange-700' : 'bg-slate-100 text-slate-600'
                         }`}>
                         ✅ {score}/{attempts}
                     </div>
@@ -408,7 +365,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
                         <div className={`p-3 rounded-xl mb-4 ${lastSimilarity >= 70 ? 'bg-emerald-50 border border-emerald-200' : 'bg-orange-50 border border-orange-200'}`}>
                             <p className="text-xs font-semibold mb-1 text-slate-500">Você disse:</p>
                             <p className={`text-base font-bold ${lastSimilarity >= 70 ? 'text-emerald-700' : 'text-orange-700'}`}>"{lastTranscript}"</p>
-                            {comparisonInfo && <p className="text-xs text-slate-400 mt-1">Pinyin: {comparisonInfo}</p>}
+                            {comparisonInfo && <p className="text-xs text-slate-400 mt-1">Comparação: {comparisonInfo}</p>}
                             <div className="mt-1 flex items-center justify-center gap-2">
                                 <span className="text-lg">{lastSimilarity >= 70 ? '✅' : '🔄'}</span>
                                 <span className="font-bold text-slate-700 text-sm">{lastSimilarity}%</span>
@@ -417,12 +374,20 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
                     )}
 
                     <button onClick={handleRecord}
-                        className={`w-full py-3 rounded-xl font-bold text-base transition-all ${isListening ? 'bg-red-500 text-white animate-pulse shadow-lg shadow-red-200' : 'bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-md hover:shadow-lg'}`}>
+                        disabled={isProcessing}
+                        className={`w-full py-3 rounded-xl font-bold text-base transition-all ${isListening ? 'bg-red-500 text-white animate-pulse shadow-lg shadow-red-200' : isProcessing ? 'bg-slate-200 text-slate-500 cursor-wait' : 'bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-md hover:shadow-lg'}`}>
                         <span className="flex items-center justify-center gap-2">
-                            <Icon name="mic" size={20} />
-                            {isListening ? 'Gravando... (Toque para parar)' : '🎤 Gravar'}
+                            <Icon name={isListening ? "mic" : isProcessing ? "refresh-cw" : "mic"} size={20} className={isProcessing ? 'animate-spin' : ''} />
+                            {isListening ? 'Gravando... (Toque para parar)' : isProcessing ? 'Aguardando conferência...' : '🎤 Gravar'}
                         </span>
                     </button>
+
+                    {error && (
+                        <div className="mt-4 p-3 bg-red-50 border border-red-100 rounded-xl text-red-600 text-[10px] sm:text-xs flex items-center gap-2 text-left">
+                            <Icon name="x" size={14} className="flex-shrink-0" />
+                            <span>Erro: {error}</span>
+                        </div>
+                    )}
                 </div>
 
                 <div className="flex items-center gap-4 mt-4">
@@ -430,6 +395,22 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
                     <span className="text-slate-600 font-semibold text-sm">{currentIndex + 1} / {items.length}</span>
                     <button onClick={handleNext} className="p-2 bg-white rounded-full shadow-md hover:shadow-lg">→</button>
                 </div>
+
+                {isModelLoading && !isNaN(modelProgress) && (
+                    <div className="mt-6 w-full max-w-sm px-4">
+                        <div className="flex justify-between mb-2">
+                            <span className="text-xs font-bold text-brand-600 animate-pulse">Iniciando motor Whisper Local...</span>
+                            <span className="text-xs font-bold text-brand-700">{Math.round(modelProgress)}%</span>
+                        </div>
+                        <div className="w-full bg-slate-200 rounded-full h-2 overflow-hidden shadow-inner">
+                            <div
+                                className="bg-gradient-to-r from-brand-400 to-brand-600 h-full rounded-full transition-all duration-300 ease-out"
+                                style={{ width: `${modelProgress}%` }}
+                            />
+                        </div>
+                        <p className="text-[10px] text-slate-400 mt-2 text-center">Isso acontece apenas na primeira vez (~77MB)</p>
+                    </div>
+                )}
             </div>
 
             {/* Lista de erros */}

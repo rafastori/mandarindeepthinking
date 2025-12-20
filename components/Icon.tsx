@@ -25,7 +25,15 @@ import {
     Swords,
     Zap,
     Flame,
-    Trophy
+    Trophy,
+    Download,
+    Upload,
+    Chrome,
+    RefreshCw,
+    Save,
+    PlusCircle,
+    Check,
+    AlertCircle
 } from 'lucide-react';
 
 export interface IconProps {
@@ -61,7 +69,15 @@ const icons: Record<string, React.ElementType> = {
     'swords': Swords,
     'zap': Zap,
     'flame': Flame,
-    'trophy': Trophy
+    'trophy': Trophy,
+    'download': Download,
+    'upload': Upload,
+    'chrome': Chrome,
+    'refresh-cw': RefreshCw,
+    'save': Save,
+    'plus-circle': PlusCircle,
+    'check': Check,
+    'alert-circle': AlertCircle
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

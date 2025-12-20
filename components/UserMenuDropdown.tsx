@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { User } from 'firebase/auth';
 import Icon from './Icon';
+import { RecognitionEngine } from '../hooks/useSpeechRecognition';
 
 interface UserMenuDropdownProps {
     user: User;
@@ -12,6 +13,8 @@ interface UserMenuDropdownProps {
     onResetAccount: () => void;
     onExportData: () => void;
     onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string }>;
+    engine: RecognitionEngine;
+    onEngineChange: (engine: RecognitionEngine) => void;
 }
 
 /**
@@ -27,7 +30,9 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     onDisconnectPuter,
     onResetAccount,
     onExportData,
-    onImportData
+    onImportData,
+    engine,
+    onEngineChange
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [showImportModal, setShowImportModal] = useState(false);
@@ -157,6 +162,29 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                     </div>
                                 </button>
                             )}
+
+                            <div className="h-px bg-slate-100 my-2" />
+
+                            {/* Configurações de Voz */}
+                            <div className="px-3 py-2">
+                                <p className="text-[10px] text-slate-400 uppercase font-bold mb-2 flex items-center gap-1">
+                                    <Icon name="mic" size={12} /> Reconhecimento de Voz
+                                </p>
+                                <div className="flex bg-slate-100 p-1 rounded-lg">
+                                    <button
+                                        onClick={() => onEngineChange('native')}
+                                        className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'native' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                    >
+                                        <Icon name="chrome" size={10} /> Nativo
+                                    </button>
+                                    <button
+                                        onClick={() => onEngineChange('whisper')}
+                                        className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'whisper' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                    >
+                                        <Icon name="zap" size={10} /> Whisper
+                                    </button>
+                                </div>
+                            </div>
 
                             <div className="h-px bg-slate-100 my-2" />
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from './Icon';
 import { UserMenuDropdown } from './UserMenuDropdown';
 import { User } from 'firebase/auth';
+import { RecognitionEngine } from '../hooks/useSpeechRecognition';
 
 interface HeaderProps {
     user: User | null;
@@ -17,6 +18,9 @@ interface HeaderProps {
     // Props para Export/Import
     onExportData: () => void;
     onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string }>;
+    // Configurações de Voz
+    engine: RecognitionEngine;
+    onEngineChange: (engine: RecognitionEngine) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -30,7 +34,9 @@ const Header: React.FC<HeaderProps> = ({
     onConnectPuter,
     onDisconnectPuter,
     onExportData,
-    onImportData
+    onImportData,
+    engine,
+    onEngineChange
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -58,6 +64,8 @@ const Header: React.FC<HeaderProps> = ({
                         onDisconnectPuter={onDisconnectPuter}
                         onExportData={onExportData}
                         onImportData={onImportData}
+                        engine={engine}
+                        onEngineChange={onEngineChange}
                     />
                 ) : (
                     <button

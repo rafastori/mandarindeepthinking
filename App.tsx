@@ -21,6 +21,7 @@ import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
 import { usePuterSpeech } from './hooks/usePuterSpeech';
+import { useSpeechRecognition } from './hooks/useSpeechRecognition';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword } from './types';
 
@@ -38,6 +39,7 @@ const App: React.FC = () => {
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
+    const { engine, setEngine } = useSpeechRecognition();
 
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
@@ -270,6 +272,8 @@ const App: React.FC = () => {
                 onDisconnectPuter={disconnectPuter}
                 onExportData={exportData}
                 onImportData={importData}
+                engine={engine}
+                onEngineChange={setEngine}
             />
             <main className="flex-1 overflow-y-auto w-full no-scrollbar">
                 <div className="max-w-3xl mx-auto h-full">
