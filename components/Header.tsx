@@ -14,6 +14,9 @@ interface HeaderProps {
     puterUsername: string | null;
     onConnectPuter: () => void;
     onDisconnectPuter: () => void;
+    // Props para Export/Import
+    onExportData: () => void;
+    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string }>;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -25,7 +28,9 @@ const Header: React.FC<HeaderProps> = ({
     isPuterConnected,
     puterUsername,
     onConnectPuter,
-    onDisconnectPuter
+    onDisconnectPuter,
+    onExportData,
+    onImportData
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -51,6 +56,8 @@ const Header: React.FC<HeaderProps> = ({
                         onConnectPuter={onConnectPuter}
                         onResetAccount={onResetAccount}
                         onDisconnectPuter={onDisconnectPuter}
+                        onExportData={onExportData}
+                        onImportData={onImportData}
                     />
                 ) : (
                     <button

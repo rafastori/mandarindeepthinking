@@ -35,7 +35,7 @@ const App: React.FC = () => {
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
 
-    const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, loading: itemsLoading } = useStudyItems(user?.uid);
+    const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
 
@@ -268,6 +268,8 @@ const App: React.FC = () => {
                 puterUsername={puterUsername}
                 onConnectPuter={handleConnectPuter}
                 onDisconnectPuter={disconnectPuter}
+                onExportData={exportData}
+                onImportData={importData}
             />
             <main className="flex-1 overflow-y-auto w-full no-scrollbar">
                 <div className="max-w-3xl mx-auto h-full">

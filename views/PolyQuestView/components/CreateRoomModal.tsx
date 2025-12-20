@@ -40,6 +40,8 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
     };
 
     const handleGenerateText = async () => {
+        console.log('[CreateRoomModal] aiPrompt:', aiPrompt);
+        console.log('[CreateRoomModal] sourceLang:', sourceLang);
         setGenerating(true);
         try {
             const aiText = await generateRawText(sourceLang, aiPrompt);
@@ -149,7 +151,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                             type="text"
                             value={aiPrompt}
                             onChange={(e) => setAiPrompt(e.target.value)}
-                            placeholder="Se desejar que a IA gere um texto mais específico descreva aqui"
+                            placeholder="Insira um contexto para a IA"
                             className="w-full p-3 rounded-xl border border-slate-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all text-slate-700 placeholder:text-slate-400 text-sm"
                         />
                     </div>
