@@ -115,7 +115,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ onClose, onImport }) => {
                             type="text"
                             value={aiPrompt}
                             onChange={(e) => setAiPrompt(e.target.value)}
-                            placeholder="Se desejar que a IA gere um texto mais específico descreva aqui"
+                            placeholder="Insira um contexto para a IA"
                             className="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all text-slate-700 placeholder:text-slate-400 text-sm"
                         />
                     </div>

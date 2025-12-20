@@ -134,20 +134,25 @@ export default async function handler(req, res) {
 
     // --- 6. POLYQUEST: RAW TEXT ---
     if (type === 'raw_text') {
+      const { customPrompt } = req.body;
       const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
       const langName = langNames[targetLang] || targetLang;
 
       const systemPrompt = `Você é um escritor criativo poliglota.
         Escreva um texto curto, interessante e coerente em ${langName}.
         O texto deve ter aproximadamente 40 a 60 palavras.
-        O tema deve ser variado (cultura, cotidiano, curiosidades, história).
         
         Retorne APENAS um JSON:
         {
             "text": "O texto gerado aqui..."
         }`;
 
-      const userPrompt = `Gere um texto em ${langName}.`;
+      // Usa o customPrompt se fornecido, senão gera tema variado
+      const hasCustomPrompt = customPrompt && customPrompt.trim().length > 0;
+      const userPrompt = hasCustomPrompt
+        ? `Gere um texto em ${langName} sobre: ${customPrompt.trim()}`
+        : `Gere um texto em ${langName}. O tema deve ser variado (cultura, cotidiano, curiosidades, história).`;
+
       const result = await callGemini(genAI, userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
