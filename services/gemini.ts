@@ -452,10 +452,19 @@ export const generateBossLevel = async (
 export const generateRawText = async (contentLang: string, customPrompt?: string): Promise<string> => {
     const langName = getLangName(contentLang);
 
+    // Valida se existe um prompt customizado não-vazio
+    const hasCustomPrompt = customPrompt && customPrompt.trim().length > 0;
+
+    // Log para debug
+    console.log('[generateRawText] customPrompt recebido:', customPrompt);
+    console.log('[generateRawText] hasCustomPrompt:', hasCustomPrompt);
+
     // Constrói o prompt do usuário baseado na instrução customizada ou padrão
-    const userPrompt = customPrompt?.trim()
-        ? `Gere um texto em ${langName} sobre: ${customPrompt}`
+    const userPrompt = hasCustomPrompt
+        ? `Gere um texto em ${langName} sobre: ${customPrompt.trim()}`
         : `Gere um texto em ${langName}. O tema deve ser variado (cultura, cotidiano, curiosidades, história).`;
+
+    console.log('[generateRawText] userPrompt final:', userPrompt);
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Raw Text");
