@@ -92,26 +92,26 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const playableTrains = selectedPiece ? getPlayableTrains(selectedPiece) : [];
 
     return (
-        <div className="h-full flex flex-col p-4">
-            {/* Header */}
-            <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-4 text-white mb-4 flex justify-between items-center">
-                <div>
-                    <h2 className="font-bold text-lg flex items-center gap-2">
-                        🎲 Dominó Mexicano
+        <div className="h-full flex flex-col p-2 sm:p-4 overflow-hidden">
+            {/* Header - compact */}
+            <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-3 text-white mb-2 flex justify-between items-center flex-shrink-0">
+                <div className="min-w-0">
+                    <h2 className="font-bold text-base sm:text-lg flex items-center gap-1">
+                        🎲 Dominó
                     </h2>
-                    <p className="text-orange-100 text-sm">
+                    <p className="text-orange-100 text-xs truncate">
                         Vez de: {room.players.find(p => p.id === room.currentTurn)?.name}
                         {isMyTurn && ' (Você!)'}
                     </p>
                 </div>
-                <div className="text-right">
-                    <p className="text-sm text-orange-100">Monte</p>
-                    <p className="text-2xl font-bold">{room.boneyard.length}</p>
+                <div className="text-right flex-shrink-0">
+                    <p className="text-[10px] text-orange-100">Monte</p>
+                    <p className="text-xl font-bold">{room.boneyard.length}</p>
                 </div>
             </div>
 
-            {/* Hub + Trains */}
-            <div className="flex-1 bg-green-800 rounded-xl p-4 overflow-auto mb-4">
+            {/* Hub + Trains - scrollable */}
+            <div className="flex-1 bg-green-800 rounded-xl p-2 sm:p-4 overflow-y-auto mb-2 min-h-0">
                 {/* Hub Central */}
                 <div className="flex justify-center mb-6">
                     {room.hubPiece && (
@@ -182,25 +182,25 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
             </div>
 
-            {/* My Hand */}
-            <div className="bg-white rounded-xl p-4 shadow-lg border-2 border-slate-200">
-                <div className="flex justify-between items-center mb-3">
-                    <h3 className="font-bold text-slate-700">
-                        Minha Mão ({myHand.length} peças)
+            {/* My Hand - compact */}
+            <div className="bg-white rounded-xl p-3 shadow-lg border-2 border-slate-200 flex-shrink-0">
+                <div className="flex justify-between items-center mb-2">
+                    <h3 className="font-bold text-slate-700 text-sm">
+                        Minha Mão ({myHand.length})
                     </h3>
                     {isMyTurn && (
-                        <div className="flex gap-2">
+                        <div className="flex gap-1">
                             <button
                                 onClick={handleDraw}
                                 disabled={room.boneyard.length === 0}
-                                className="px-3 py-1 bg-blue-500 text-white rounded-lg text-sm font-medium disabled:opacity-50"
+                                className="px-2 py-1 bg-blue-500 text-white rounded-lg text-xs font-medium disabled:opacity-50"
                             >
-                                <Icon name="download" size={14} className="inline mr-1" />
+                                <Icon name="download" size={12} className="inline mr-1" />
                                 Comprar
                             </button>
                             <button
                                 onClick={handlePass}
-                                className="px-3 py-1 bg-slate-500 text-white rounded-lg text-sm font-medium"
+                                className="px-2 py-1 bg-slate-500 text-white rounded-lg text-xs font-medium"
                             >
                                 Passar
                             </button>
@@ -208,7 +208,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     )}
                 </div>
 
-                <div className="flex gap-2 overflow-x-auto pb-2">
+                <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
                     {myHand.map(piece => {
                         const canPlay = isMyTurn && getPlayableTrains(piece).length > 0;
                         return (
@@ -219,31 +219,31 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 selected={selectedPiece?.id === piece.id}
                                 disabled={!isMyTurn}
                                 onClick={() => handleSelectPiece(piece)}
-                                size="md"
+                                size="sm"
                             />
                         );
                     })}
                 </div>
 
                 {selectedPiece && (
-                    <p className="text-xs text-orange-600 mt-2">
-                        Peça selecionada! Clique em um trem destacado para jogar.
+                    <p className="text-[10px] text-orange-600 mt-1">
+                        Clique em um trem destacado para jogar.
                     </p>
                 )}
             </div>
 
-            {/* Players Scoreboard */}
-            <div className="flex gap-2 mt-4 overflow-x-auto">
+            {/* Players Scoreboard - compact */}
+            <div className="flex gap-1 mt-2 overflow-x-auto flex-shrink-0">
                 {room.players.map(p => (
                     <div
                         key={p.id}
                         className={`
-                            flex-shrink-0 px-3 py-2 rounded-lg text-sm
+                            flex-shrink-0 px-2 py-1 rounded-lg text-xs
                             ${p.id === room.currentTurn ? 'bg-orange-100 text-orange-800' : 'bg-slate-100'}
                         `}
                     >
-                        <span className="font-bold">{p.name}</span>
-                        <span className="ml-2 text-slate-500">{p.hand.length} peças</span>
+                        <span className="font-bold">{p.name.split(' ')[0]}</span>
+                        <span className="ml-1 text-slate-500">{p.hand.length}</span>
                     </div>
                 ))}
             </div>

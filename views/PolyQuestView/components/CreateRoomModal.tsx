@@ -116,18 +116,23 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                         <label className="block text-sm font-semibold text-slate-700 mb-2">
                             Nível de Dificuldade *
                         </label>
-                        <div className="grid grid-cols-3 gap-3">
-                            {['Iniciante', 'Intermediário', 'Avançado'].map((level) => (
+                        <div className="flex flex-wrap gap-2">
+                            {[
+                                { id: 'Iniciante', label: 'Iniciante', emoji: '🌱' },
+                                { id: 'Intermediário', label: 'Intermed.', emoji: '📚' },
+                                { id: 'Avançado', label: 'Avançado', emoji: '🎓' }
+                            ].map((level) => (
                                 <button
-                                    key={level}
+                                    key={level.id}
                                     type="button"
-                                    onClick={() => setDifficulty(level)}
-                                    className={`px-4 py-3 rounded-xl text-sm font-bold transition-all border-2 ${difficulty === level
+                                    onClick={() => setDifficulty(level.id)}
+                                    className={`flex-1 min-w-[90px] px-3 py-2.5 rounded-xl text-sm font-bold transition-all border-2 flex items-center justify-center gap-1.5 ${difficulty === level.id
                                         ? 'bg-emerald-50 border-emerald-500 text-emerald-700 shadow-md'
                                         : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
                                         }`}
                                 >
-                                    {level}
+                                    <span>{level.emoji}</span>
+                                    <span>{level.label}</span>
                                 </button>
                             ))}
                         </div>
