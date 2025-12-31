@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Icon from '../../../components/Icon';
 import { DominoRoom, DominoPiece as DominoPieceType, Train } from '../types';
 import { DominoPiece } from './DominoPiece';
+import { PlayerHand } from './PlayerHand';
 
 interface GameBoardProps {
     room: DominoRoom;
@@ -9,6 +10,7 @@ interface GameBoardProps {
     onPlacePiece: (pieceId: string, trainId: string, flipped: boolean) => Promise<boolean>;
     onDrawPiece: () => Promise<DominoPieceType | null>;
     onPassTurn: () => void;
+    onReorderHand?: (newOrder: DominoPieceType[]) => void;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
@@ -16,72 +18,67 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     currentUserId,
     onPlacePiece,
     onDrawPiece,
-    onPassTurn
+    onPassTurn,
+    onReorderHand
 }) => {
     const [selectedPiece, setSelectedPiece] = useState<DominoPieceType | null>(null);
-    const [isFlipped, setIsFlipped] = useState(false);
+    const [localHand, setLocalHand] = useState<DominoPieceType[] | null>(null);
+    const [dragOverTrain, setDragOverTrain] = useState<string | null>(null);
 
     const isMyTurn = room.currentTurn === currentUserId;
     const currentPlayer = room.players.find(p => p.id === currentUserId);
-    const myHand = currentPlayer?.hand || [];
+    const serverHand = currentPlayer?.hand || [];
+    const myHand = localHand || serverHand;
+    const currentTurnPlayer = room.players.find(p => p.id === room.currentTurn);
+
+    // Sync local hand with server when server changes
+    React.useEffect(() => {
+        if (JSON.stringify(serverHand.map(p => p.id)) !== JSON.stringify(localHand?.map(p => p.id))) {
+            setLocalHand(null);
+        }
+    }, [serverHand]);
 
     const canPlayOnTrain = (piece: DominoPieceType, train: Train): { canPlay: boolean; needsFlip: boolean } => {
-        // Termo i conecta com Definição i
-        // A ponta do trem expõe um índice. Precisamos de uma peça que tenha esse índice em um dos lados.
         const targetIndex = train.openEndIndex;
-
-        if (piece.leftIndex === targetIndex) {
-            return { canPlay: true, needsFlip: false };
-        }
-        if (piece.rightIndex === targetIndex) {
-            return { canPlay: true, needsFlip: true };
-        }
+        if (piece.leftIndex === targetIndex) return { canPlay: true, needsFlip: false };
+        if (piece.rightIndex === targetIndex) return { canPlay: true, needsFlip: true };
         return { canPlay: false, needsFlip: false };
     };
 
     const getPlayableTrains = (piece: DominoPieceType): Train[] => {
         return room.trains.filter(train => {
-            // Pode jogar no próprio trem ou no mexicano
-            // Ou em trens abertos de outros
-            const canAccess = train.ownerId === null || // Mexicano
-                train.ownerId === currentUserId || // Próprio
-                train.isOpen; // Aberto
-
+            const canAccess = train.ownerId === null || train.ownerId === currentUserId || train.isOpen;
             if (!canAccess) return false;
-
-            const { canPlay } = canPlayOnTrain(piece, train);
-            return canPlay;
+            return canPlayOnTrain(piece, train).canPlay;
         });
     };
 
     const handleSelectPiece = (piece: DominoPieceType) => {
         if (!isMyTurn) return;
-
-        if (selectedPiece?.id === piece.id) {
-            setSelectedPiece(null);
-            setIsFlipped(false);
-        } else {
-            setSelectedPiece(piece);
-            setIsFlipped(false);
-        }
+        setSelectedPiece(selectedPiece?.id === piece.id ? null : piece);
     };
 
-    const handlePlaceOnTrain = async (train: Train) => {
-        if (!selectedPiece || !isMyTurn) return;
+    const handlePlaceOnTrain = async (train: Train, pieceId?: string) => {
+        const piece = pieceId
+            ? myHand.find(p => p.id === pieceId)
+            : selectedPiece;
 
-        const { canPlay, needsFlip } = canPlayOnTrain(selectedPiece, train);
+        if (!piece || !isMyTurn) return;
+
+        const { canPlay, needsFlip } = canPlayOnTrain(piece, train);
         if (!canPlay) return;
 
-        const success = await onPlacePiece(selectedPiece.id, train.id, needsFlip);
+        const success = await onPlacePiece(piece.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
-            setIsFlipped(false);
+            setLocalHand(null); // Reset to sync with server
         }
     };
 
     const handleDraw = async () => {
         if (!isMyTurn || room.boneyard.length === 0) return;
         await onDrawPiece();
+        setLocalHand(null); // Reset to sync with server
     };
 
     const handlePass = () => {
@@ -89,80 +86,179 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         onPassTurn();
     };
 
+    const handleReorderHand = (newOrder: DominoPieceType[]) => {
+        setLocalHand(newOrder);
+        onReorderHand?.(newOrder);
+    };
+
+    // Drag and drop handlers for trains
+    const handleDragOver = (e: React.DragEvent, trainId: string) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        setDragOverTrain(trainId);
+    };
+
+    const handleDragLeave = () => {
+        setDragOverTrain(null);
+    };
+
+    const handleDropOnTrain = async (e: React.DragEvent, train: Train) => {
+        e.preventDefault();
+        setDragOverTrain(null);
+
+        const pieceId = e.dataTransfer.getData('text/plain');
+        if (pieceId) {
+            await handlePlaceOnTrain(train, pieceId);
+        }
+    };
+
     const playableTrains = selectedPiece ? getPlayableTrains(selectedPiece) : [];
+    const playablePieceIds = myHand.filter(p => getPlayableTrains(p).length > 0).map(p => p.id);
+    const hasPlayablePiece = playablePieceIds.length > 0;
 
     return (
-        <div className="h-full flex flex-col p-2 sm:p-4 overflow-hidden">
-            {/* Header - compact */}
-            <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-3 text-white mb-2 flex justify-between items-center flex-shrink-0">
-                <div className="min-w-0">
-                    <h2 className="font-bold text-base sm:text-lg flex items-center gap-1">
-                        🎲 Dominó
-                    </h2>
-                    <p className="text-orange-100 text-xs truncate">
-                        Vez de: {room.players.find(p => p.id === room.currentTurn)?.name}
-                        {isMyTurn && ' (Você!)'}
-                    </p>
-                </div>
-                <div className="text-right flex-shrink-0">
-                    <p className="text-[10px] text-orange-100">Monte</p>
-                    <p className="text-xl font-bold">{room.boneyard.length}</p>
+        <div className="h-full flex flex-col bg-gradient-to-b from-slate-100 to-slate-200 overflow-hidden">
+            {/* Header */}
+            <div className="flex-shrink-0 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 p-3 shadow-lg">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur">
+                            <span className="text-2xl">🎲</span>
+                        </div>
+                        <div>
+                            <h2 className="font-bold text-white text-sm">Dominó Mexicano</h2>
+                            <div className="flex items-center gap-2">
+                                <span className={`w-2 h-2 rounded-full ${isMyTurn ? 'bg-green-400 animate-pulse' : 'bg-white/30'}`} />
+                                <p className="text-white/80 text-xs">
+                                    {isMyTurn ? 'Sua vez!' : `Vez de ${currentTurnPlayer?.name.split(' ')[0]}`}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <div className="text-center bg-white/10 rounded-lg px-3 py-1.5 backdrop-blur">
+                            <p className="text-[10px] text-white/60 uppercase tracking-wider">Monte</p>
+                            <p className="text-xl font-bold text-white">{room.boneyard.length}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            {/* Hub + Trains - scrollable */}
-            <div className="flex-1 bg-green-800 rounded-xl p-2 sm:p-4 overflow-y-auto mb-2 min-h-0">
+            {/* Players Row */}
+            <div className="flex-shrink-0 flex gap-2 p-2 overflow-x-auto bg-white/50 backdrop-blur border-b border-slate-200">
+                {room.players.map((p, idx) => (
+                    <div
+                        key={p.id}
+                        className={`
+                            flex items-center gap-2 px-3 py-1.5 rounded-full transition-all flex-shrink-0
+                            ${p.id === room.currentTurn
+                                ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md'
+                                : 'bg-white text-slate-700 shadow-sm'}
+                        `}
+                    >
+                        <span className="text-sm">
+                            {idx === 0 ? '👑' : p.id === currentUserId ? '👤' : '🎮'}
+                        </span>
+                        <span className="font-medium text-xs">{p.name.split(' ')[0]}</span>
+                        <span className={`
+                            px-1.5 py-0.5 rounded-full text-[10px] font-bold
+                            ${p.id === room.currentTurn ? 'bg-white/20' : 'bg-slate-100'}
+                        `}>
+                            {p.hand.length}
+                        </span>
+                    </div>
+                ))}
+            </div>
+
+            {/* Game Area */}
+            <div className="flex-1 overflow-y-auto p-3 min-h-0">
                 {/* Hub Central */}
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center mb-4">
                     {room.hubPiece && (
                         <div className="text-center">
-                            <p className="text-white text-xs mb-2 font-bold">🌟 HUB CENTRAL 🌟</p>
-                            <DominoPiece piece={room.hubPiece} size="lg" disabled />
+                            <div className="inline-flex items-center gap-1 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold mb-2">
+                                <span>⭐</span>
+                                <span>HUB CENTRAL</span>
+                                <span>⭐</span>
+                            </div>
+                            <div className="transform hover:scale-105 transition-transform">
+                                <DominoPiece piece={room.hubPiece} size="lg" />
+                            </div>
                         </div>
                     )}
                 </div>
 
-                {/* Trains */}
-                <div className="space-y-4">
+                {/* Trains with drop zones */}
+                <div className="space-y-3">
                     {room.trains.map(train => {
-                        const owner = train.ownerId
-                            ? room.players.find(p => p.id === train.ownerId)
-                            : null;
+                        const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
                         const isMexican = train.ownerId === null;
+                        const isMyTrain = train.ownerId === currentUserId;
                         const isPlayable = playableTrains.some(t => t.id === train.id);
+                        const canAccess = isMexican || isMyTrain || train.isOpen;
+                        const isDragOver = dragOverTrain === train.id;
 
                         return (
                             <div
                                 key={train.id}
-                                className={`
-                                    bg-green-700/50 rounded-lg p-3
-                                    ${isPlayable ? 'ring-2 ring-yellow-400 cursor-pointer' : ''}
-                                `}
+                                onDragOver={(e) => canAccess && isMyTurn && handleDragOver(e, train.id)}
+                                onDragLeave={handleDragLeave}
+                                onDrop={(e) => canAccess && isMyTurn && handleDropOnTrain(e, train)}
                                 onClick={() => isPlayable && handlePlaceOnTrain(train)}
+                                className={`
+                                    rounded-xl p-3 transition-all
+                                    ${isMexican
+                                        ? 'bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200'
+                                        : isMyTrain
+                                            ? 'bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200'
+                                            : 'bg-white border border-slate-200'}
+                                    ${isPlayable
+                                        ? 'ring-2 ring-green-400 ring-offset-2 cursor-pointer shadow-lg shadow-green-100'
+                                        : 'shadow-sm'}
+                                    ${isDragOver && canAccess
+                                        ? 'ring-4 ring-blue-400 ring-offset-2 scale-[1.02] bg-blue-50'
+                                        : ''}
+                                    ${canAccess && isMyTurn && !isPlayable ? 'hover:ring-2 hover:ring-blue-300' : ''}
+                                `}
                             >
-                                <div className="flex items-center gap-2 mb-2">
-                                    <span className="text-lg">
-                                        {isMexican ? '🚂' : (train.isOpen ? '🔓' : '🔒')}
-                                    </span>
-                                    <span className="text-white font-medium text-sm">
-                                        {isMexican ? 'Trem Mexicano' : `Trem de ${owner?.name}`}
-                                    </span>
-                                    {train.isOpen && !isMexican && (
-                                        <span className="text-xs bg-yellow-500 text-yellow-900 px-2 py-0.5 rounded-full">
-                                            ABERTO
+                                <div className="flex items-center justify-between mb-2">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-lg">
+                                            {isMexican ? '🚂' : train.isOpen ? '🔓' : isMyTrain ? '🏠' : '🔒'}
                                         </span>
-                                    )}
-                                    {isPlayable && (
-                                        <span className="text-xs bg-green-500 text-white px-2 py-0.5 rounded-full ml-auto">
-                                            PODE JOGAR
+                                        <span className={`font-semibold text-sm ${isMexican ? 'text-amber-700' : isMyTrain ? 'text-emerald-700' : 'text-slate-600'}`}>
+                                            {isMexican ? 'Trem Mexicano' : isMyTrain ? 'Meu Trem' : `${owner?.name.split(' ')[0]}`}
                                         </span>
-                                    )}
+                                        {train.isOpen && !isMexican && (
+                                            <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded-full text-[10px] font-bold">
+                                                ABERTO
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        {isDragOver && canAccess && (
+                                            <span className="flex items-center gap-1 px-2 py-1 bg-blue-500 text-white rounded-full text-[10px] font-bold animate-pulse">
+                                                <Icon name="download" size={10} />
+                                                SOLTAR AQUI
+                                            </span>
+                                        )}
+                                        {isPlayable && !isDragOver && (
+                                            <span className="flex items-center gap-1 px-2 py-1 bg-green-500 text-white rounded-full text-[10px] font-bold">
+                                                <Icon name="check" size={10} />
+                                                JOGAR
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
 
-                                <div className="flex gap-2 overflow-x-auto pb-2">
+                                <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
                                     {train.pieces.length === 0 ? (
-                                        <div className="text-green-400/50 text-xs italic">
-                                            Ponta: [{train.openEndIndex}] {train.openEndText}
+                                        <div className={`
+                                            flex items-center gap-2 text-xs italic py-3 px-4 rounded-lg border-2 border-dashed
+                                            ${isDragOver ? 'border-blue-400 bg-blue-50 text-blue-600' : 'border-slate-200 bg-slate-50 text-slate-400'}
+                                        `}>
+                                            <span>{isDragOver ? '📥' : '📍'}</span>
+                                            <span>{isDragOver ? 'Solte a peça aqui' : `Ponta: ${train.openEndText}`}</span>
                                         </div>
                                     ) : (
                                         train.pieces.map((placed, idx) => (
@@ -171,7 +267,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                                 piece={placed.piece}
                                                 flipped={placed.orientation === 'flipped'}
                                                 size="sm"
-                                                disabled
                                             />
                                         ))
                                     )}
@@ -182,70 +277,72 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
             </div>
 
-            {/* My Hand - compact */}
-            <div className="bg-white rounded-xl p-3 shadow-lg border-2 border-slate-200 flex-shrink-0">
-                <div className="flex justify-between items-center mb-2">
-                    <h3 className="font-bold text-slate-700 text-sm">
-                        Minha Mão ({myHand.length})
-                    </h3>
+            {/* My Hand */}
+            <div className={`
+                flex-shrink-0 border-t-2 bg-white p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]
+                ${isMyTurn ? 'border-orange-400' : 'border-slate-200'}
+            `}>
+                <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                        <span className="text-lg">🎯</span>
+                        <h3 className="font-bold text-slate-700 text-sm">
+                            Minha Mão
+                            <span className="ml-1 text-slate-400">({myHand.length} peças)</span>
+                        </h3>
+                        {!hasPlayablePiece && isMyTurn && room.boneyard.length > 0 && (
+                            <span className="px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full text-[10px] font-bold">
+                                Sem jogadas - Compre!
+                            </span>
+                        )}
+                    </div>
+
                     {isMyTurn && (
-                        <div className="flex gap-1">
+                        <div className="flex gap-2">
                             <button
                                 onClick={handleDraw}
                                 disabled={room.boneyard.length === 0}
-                                className="px-2 py-1 bg-blue-500 text-white rounded-lg text-xs font-medium disabled:opacity-50"
+                                className="flex items-center gap-1.5 px-3 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg disabled:opacity-50 disabled:shadow-none transition-all active:scale-95"
                             >
-                                <Icon name="download" size={12} className="inline mr-1" />
+                                <Icon name="plus-circle" size={14} />
                                 Comprar
                             </button>
                             <button
                                 onClick={handlePass}
-                                className="px-2 py-1 bg-slate-500 text-white rounded-lg text-xs font-medium"
+                                className="flex items-center gap-1.5 px-3 py-2 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300 transition-all active:scale-95"
                             >
+                                <Icon name="skip-forward" size={14} />
                                 Passar
                             </button>
                         </div>
                     )}
                 </div>
 
-                <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
-                    {myHand.map(piece => {
-                        const canPlay = isMyTurn && getPlayableTrains(piece).length > 0;
-                        return (
-                            <DominoPiece
-                                key={piece.id}
-                                piece={piece}
-                                orientation="vertical"
-                                selected={selectedPiece?.id === piece.id}
-                                disabled={!isMyTurn}
-                                onClick={() => handleSelectPiece(piece)}
-                                size="sm"
-                            />
-                        );
-                    })}
-                </div>
+                <PlayerHand
+                    pieces={myHand}
+                    isMyTurn={isMyTurn}
+                    selectedPieceId={selectedPiece?.id || null}
+                    playablePieceIds={playablePieceIds}
+                    onSelectPiece={handleSelectPiece}
+                    onReorderPieces={handleReorderHand}
+                />
 
                 {selectedPiece && (
-                    <p className="text-[10px] text-orange-600 mt-1">
-                        Clique em um trem destacado para jogar.
-                    </p>
-                )}
-            </div>
-
-            {/* Players Scoreboard - compact */}
-            <div className="flex gap-1 mt-2 overflow-x-auto flex-shrink-0">
-                {room.players.map(p => (
-                    <div
-                        key={p.id}
-                        className={`
-                            flex-shrink-0 px-2 py-1 rounded-lg text-xs
-                            ${p.id === room.currentTurn ? 'bg-orange-100 text-orange-800' : 'bg-slate-100'}
-                        `}
-                    >
-                        <span className="font-bold">{p.name.split(' ')[0]}</span>
-                        <span className="ml-1 text-slate-500">{p.hand.length}</span>
+                    <div className="flex items-center gap-2 mt-2 p-2 bg-orange-50 rounded-lg border border-orange-200">
+                        <span className="text-orange-500">👆</span>
+                        <p className="text-xs text-orange-700 font-medium">
+                            Arraste para um trem ou clique em um trem destacado para jogar
+                        </p>
                     </div>
-                ))}
+                )}
+
+                {!isMyTurn && (
+                    <div className="flex items-center justify-center gap-2 mt-2 p-2 bg-slate-100 rounded-lg">
+                        <div className="animate-spin" style={{ animationDuration: '3s' }}>
+                            <Icon name="clock" size={14} className="text-slate-400" />
+                        </div>
+                        <p className="text-xs text-slate-500">Aguardando {currentTurnPlayer?.name.split(' ')[0]}...</p>
+                    </div>
+                )}
             </div>
         </div>
     );
