@@ -45,11 +45,18 @@ export default async function handler(req, res) {
 
     // --- 1. GERAÇÃO DE CARD ---
     if (type === 'card') {
-      const langName = targetLanguage === 'de' ? 'Alemão' : 'Chinês (Mandarim)';
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+      };
+      const langName = langNames[targetLanguage] || targetLanguage;
+      const isCJK = ['zh', 'ja', 'ko'].includes(targetLanguage);
+
       const systemPrompt = `Você é um professor de ${langName}.
         Crie um cartão de estudo detalhado para a palavra/expressão solicitada.
         Retorne APENAS um JSON com o formato:
         { "word": "...", "pinyin": "...", "meaning": "...", "example": "..." }
+        ${isCJK ? 'O campo pinyin deve conter a transcrição fonética.' : 'O campo pinyin deve ser deixado vazio ou com null.'}
         O significado (meaning) deve ser em Português.`;
 
       const userPrompt = `Palavra: "${word}". Contexto: "${context}"`;
@@ -59,7 +66,11 @@ export default async function handler(req, res) {
 
     // --- 2. GERAÇÃO DE JOGO ---
     if (type === 'game_deck') {
-      const langName = targetLanguage === 'de' ? 'Alemão' : 'Chinês (Mandarim)';
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+      };
+      const langName = langNames[targetLanguage] || targetLanguage;
       const excludeInstruction = exclude.length > 0 ? `Evite as palavras: ${exclude.join(', ')}.` : '';
 
       const systemPrompt = `Você é um criador de jogos educativos de ${langName}.
@@ -181,7 +192,10 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
     }
 
     // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---
-    const langNames = { 'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês' };
+    const langNames = {
+      'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+      'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+    };
     const langName = langNames[targetLanguage] || targetLanguage;
 
     let systemPrompt = `Você é um professor experiente de ${langName}.`;
@@ -197,12 +211,13 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
         Analise o texto fornecido (que já está em ${langName}).`;
     }
 
+    const isCJK = ['zh', 'ja', 'ko'].includes(targetLanguage);
     systemPrompt += `
         Retorne APENAS um JSON (sem markdown).
         O JSON deve ser uma lista (Array) de objetos, onde cada objeto representa uma frase/segmento do texto.
         Cada objeto deve ter:
         - chinese: a frase em ${langName} (original ou traduzida)
-        - pinyin: transcrição fonética (se chinês) ou nulo/vazio (se alemão)
+        - pinyin: ${isCJK ? 'transcrição fonética' : 'deixe vazio ou null'}
         - translation: tradução para Português (Brasil)
         - tokens: array de strings com as palavras segmentadas
         - keywords: array vazio []`;

@@ -19,7 +19,8 @@ const API_URL = '/api/generate';
 
 const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' | 'translate' = 'direct') => {
     const langNames: Record<string, string> = {
-        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês'
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
     };
     const langName = langNames[targetLang] || targetLang;
 
@@ -53,10 +54,12 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     }
 
     if (type === 'card') {
+        const isCJK = ['zh', 'ja', 'ko'].includes(targetLang);
         return `Você é um professor de ${langName}.
     Crie um cartão de estudo detalhado para a palavra/expressão solicitada.
     Retorne APENAS um JSON com o formato:
     { "word": "...", "pinyin": "...", "meaning": "...", "language": "${targetLang}" }
+    ${isCJK ? 'O campo pinyin deve conter a transcrição fonética.' : 'O campo pinyin deve ser deixado vazio ou com null.'}
     O significado (meaning) deve ser em Português.`;
     }
 
@@ -165,9 +168,8 @@ const callLocalGemini = async (prompt: string, systemInstruction: string) => {
 // Helper duplicado que estava sendo definido várias vezes dentro das funcoes
 const getLangName = (code: string) => {
     const map: Record<string, string> = {
-        'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
-        'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
-        'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
     };
     return map[code] || code;
 };

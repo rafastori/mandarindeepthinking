@@ -19,6 +19,7 @@ const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showOriginalText, setShowOriginalText] = useState(false);
+    const [showExitConfirm, setShowExitConfirm] = useState(false);
 
     const {
         rooms,
@@ -28,6 +29,7 @@ const PolyQuestView: React.FC = () => {
         createRoom,
         joinRoom,
         leaveRoom,
+        deleteRoom,
         toggleReady,
         updateConfig,
         startGame,
@@ -57,6 +59,33 @@ const PolyQuestView: React.FC = () => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
         return () => unsubscribe();
     }, []);
+
+    // Trava de Navegação (Back Button / Refresh)
+    useEffect(() => {
+        if (!activeRoom) return;
+
+        // 1. Bloqueia botão voltar do navegador/celular
+        const blockBack = () => {
+            history.pushState(null, '', location.href);
+            setShowExitConfirm(true);
+        };
+
+        // Adiciona estado inicial para podermos "voltar" para o mesmo lugar
+        history.pushState(null, '', location.href);
+        window.addEventListener('popstate', blockBack);
+
+        // 2. Bloqueia fechar aba/recarregar
+        const blockReload = (e: BeforeUnloadEvent) => {
+            e.preventDefault();
+            e.returnValue = '';
+        };
+        window.addEventListener('beforeunload', blockReload);
+
+        return () => {
+            window.removeEventListener('popstate', blockBack);
+            window.removeEventListener('beforeunload', blockReload);
+        };
+    }, [activeRoom]);
 
     if (!user) {
         return (
@@ -111,7 +140,21 @@ const PolyQuestView: React.FC = () => {
 
     const handleLeaveRoom = async () => {
         if (activeRoom) {
+            setShowExitConfirm(true);
+        }
+    };
+
+    const confirmLeave = async () => {
+        if (activeRoom) {
             await leaveRoom(activeRoom.id, user.uid);
+            setShowExitConfirm(false);
+        }
+    };
+
+    const handleDeleteRoom = async () => {
+        if (activeRoom) {
+            await deleteRoom(activeRoom.id);
+            setShowExitConfirm(false); // Caso estivesse aberto
         }
     };
 
@@ -265,6 +308,7 @@ const PolyQuestView: React.FC = () => {
                                 onUpdateConfig={handleUpdateConfig}
                                 onStartGame={handleStartGame}
                                 onLeaveRoom={handleLeaveRoom}
+                                onDeleteRoom={handleDeleteRoom}
                             />
                         ) : activeRoom.phase === 'exploration' ? (
                             <ExplorationPhase
@@ -333,6 +377,36 @@ const PolyQuestView: React.FC = () => {
                     onClose={() => setShowCreateModal(false)}
                     onCreate={handleCreateRoom}
                 />
+            )}
+
+            {/* EXIT CONFIRMATION MODAL */}
+            {showExitConfirm && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm animate-in fade-in duration-200">
+                    <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl animate-pop">
+                        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Icon name="log-out" size={32} className="text-red-600" />
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-800 text-center mb-2">Deseja sair do jogo?</h3>
+                        <p className="text-slate-600 text-center mb-8">
+                            Se você sair agora, seu progresso nesta partida será perdido. Os outros jogadores continuarão jogando.
+                        </p>
+                        <div className="flex flex-col gap-3">
+                            <button
+                                onClick={confirmLeave}
+                                className="w-full py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 shadow-md transition-all active:scale-95 flex items-center justify-center gap-2"
+                            >
+                                <Icon name="log-out" size={20} />
+                                Sim, desejo sair
+                            </button>
+                            <button
+                                onClick={() => setShowExitConfirm(false)}
+                                className="w-full py-4 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-all active:scale-95"
+                            >
+                                Continuar Jogando
+                            </button>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );

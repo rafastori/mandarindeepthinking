@@ -95,6 +95,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
         initializeEnigmas();
     }, []);
 
+    /* DESABILITADO PROVISORIAMENTE: Lógica do Intruso
     useEffect(() => {
         if (room.intruderFound || room.intruderWord) return;
         const totalEnigmas = room.enigmas.length;
@@ -113,6 +114,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
             generateAndTrigger();
         }
     }, [room.enigmas, room.intruderFound, room.intruderWord]);
+    */
 
     // --- Interaction Handlers ---
 

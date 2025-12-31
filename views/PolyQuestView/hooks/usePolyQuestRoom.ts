@@ -143,15 +143,11 @@ export const usePolyQuestRoom = (userId?: string) => {
             const roomData = roomSnap.data() as PolyQuestRoom;
             const updatedPlayers = roomData.players.filter(p => p.id !== playerId);
 
-            if (updatedPlayers.length === 0) {
-                // Última pessoa saiu, deletar sala
-                await deleteDoc(roomRef);
-            } else {
-                // Atualizar lista de jogadores
-                await updateDoc(roomRef, {
-                    players: updatedPlayers
-                });
-            }
+            // ATUALIZAÇÃO: Sala NÃO é mais deletada automaticamente quando a última pessoa sai.
+            // Apenas removemos o jogador da lista.
+            await updateDoc(roomRef, {
+                players: updatedPlayers
+            });
 
             setActiveRoom(null);
         } catch (error) {

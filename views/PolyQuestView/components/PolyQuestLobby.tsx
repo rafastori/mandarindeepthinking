@@ -12,6 +12,7 @@ interface PolyQuestLobbyProps {
     onUpdateConfig: (sourceLang: string, targetLang: string, text: string) => void;
     onStartGame: () => void;
     onLeaveRoom: () => void;
+    onDeleteRoom: () => void;
 }
 
 export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
@@ -22,6 +23,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     onUpdateConfig,
     onStartGame,
     onLeaveRoom,
+    onDeleteRoom,
 }) => {
     const [sourceLang, setSourceLang] = useState(room.config.sourceLang);
     const [targetLang, setTargetLang] = useState(room.config.targetLang);
@@ -65,12 +67,24 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                             </p>
                         </div>
                     </div>
-                    <button
-                        onClick={onLeaveRoom}
-                        className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg font-semibold transition-colors"
-                    >
-                        Sair
-                    </button>
+                    <div className="flex gap-2">
+                        {isHost && (
+                            <button
+                                onClick={() => { if (window.confirm("Tem certeza que deseja DELETAR esta sala permanentemente?")) onDeleteRoom(); }}
+                                className="px-4 py-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg font-semibold transition-colors flex items-center gap-2"
+                                title="Deletar sala (apenas host)"
+                            >
+                                <Icon name="trash-2" size={18} />
+                                <span className="hidden sm:inline">Deletar Sala</span>
+                            </button>
+                        )}
+                        <button
+                            onClick={onLeaveRoom}
+                            className="px-4 py-2 text-slate-600 hover:bg-slate-50 rounded-lg font-semibold transition-colors"
+                        >
+                            Sair
+                        </button>
+                    </div>
                 </div>
 
                 {/* Jogadores */}
