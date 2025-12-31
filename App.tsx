@@ -11,6 +11,7 @@ import ReviewView from './views/ReviewView';
 import PracticeView from './views/PracticeView';
 import LingoArenaView from './views/LingoArenaView';
 import PolyQuestView from './views/PolyQuestView';
+import DominoView from './views/DominoView';
 import GameSelector from './components/GameSelector';
 import CreativeView from './views/CreativeView';
 import LabView from './views/LabView';
@@ -34,7 +35,7 @@ const App: React.FC = () => {
     const [showStats, setShowStats] = useState(false);
     const [showImport, setShowImport] = useState(false);
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
-    const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest'>('selector');
+    const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest' | 'domino'>('selector');
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
@@ -240,6 +241,8 @@ const App: React.FC = () => {
                     return <LingoArenaView />;
                 } else if (selectedGame === 'polyquest') {
                     return <PolyQuestView />;
+                } else if (selectedGame === 'domino') {
+                    return <DominoView />;
                 }
                 return null;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;

@@ -153,6 +153,39 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         }`;
     }
 
+    if (type === 'domino_terms') {
+        const { context, sourceLang, targetLang, customTopic, difficulty } = mode as any;
+        const langNames: Record<string, string> = {
+            'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+            'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        };
+        const srcName = langNames[sourceLang || ''] || sourceLang;
+        const tgtName = langNames[targetLang || ''] || 'Português';
+
+        let contextInstructions = '';
+        if (context === 'language') {
+            contextInstructions = `CONTEXTO: Tradução de idiomas.\nIDIOMAS: De ${srcName} para ${tgtName}.\nO "term" deve estar em ${srcName} e a "definition" em ${tgtName}.`;
+        } else if (context === 'custom') {
+            contextInstructions = `CONTEXTO: ${customTopic}.\nO "term" é o conceito/palavra e a "definition" é sua explicação ou tradução.`;
+        } else {
+            const contextNames: Record<string, string> = {
+                'medicine': 'Medicina', 'computing': 'Computação', 'engineering': 'Engenharia',
+                'chemistry': 'Química', 'biology': 'Biologia', 'law': 'Direito'
+            };
+            contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.`;
+        }
+
+        return `Você é um especialista em educação. Gere 13 pares de Termo/Definição únicos para um jogo de dominó.
+        NÍVEL: ${difficulty}.
+        ${contextInstructions}
+        
+        REGRAS:
+        1. Gere EXATAMENTE 13 pares diferentes.
+        2. Os termos devem ser únicos e não se repetir.
+        3. As definições devem ser curtas (1-3 palavras).
+        4. Retorne APENAS um JSON Array: [{ "term": "...", "definition": "..." }, ...]`;
+    }
+
     return '';
 };
 
@@ -566,6 +599,41 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
         return data.tokens || [];
     } catch (error) {
         console.error("Tokenization Error:", error);
+        throw error;
+    }
+};
+
+/**
+ * Gera 13 pares Termo/Definição para o Dominó Mexicano
+ */
+export const generateDominoTerms = async (
+    context: string,
+    config: { sourceLang?: string; targetLang?: string; customTopic?: string; difficulty: string }
+): Promise<{ term: string; definition: string }[]> => {
+    const payload = {
+        type: 'domino_terms',
+        context,
+        ...config
+    };
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Domino Terms");
+        const systemPrompt = getSystemInstruction('domino_terms', 'pt', payload as any);
+        const userPrompt = `Gere os 13 termos para o contexto ${context}.`;
+        return await callLocalGemini(userPrompt, systemPrompt);
+    }
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar termos do dominó");
+        return await response.json();
+    } catch (error) {
+        console.error("Domino Terms Error:", error);
         throw error;
     }
 };

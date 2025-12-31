@@ -1,0 +1,246 @@
+import React from 'react';
+import Icon from '../../../components/Icon';
+import FlagSelect from '../../../components/FlagSelect';
+import { STUDY_LANGUAGES, SupportedLanguage } from '../../../types';
+import { DominoRoom, DominoConfig, CONTEXT_OPTIONS, DOMINO_CONSTANTS } from '../types';
+
+// Lista completa incluindo Português para tradução
+const ALL_LANGUAGES = [
+    ...STUDY_LANGUAGES,
+    { code: 'pt' as SupportedLanguage, name: 'Português', flag: '🇧🇷', isoCode: 'br' }
+];
+
+interface DominoLobbyProps {
+    room: DominoRoom;
+    isHost: boolean;
+    currentUserId: string;
+    onToggleReady: (ready: boolean) => void;
+    onUpdateConfig: (config: Partial<DominoConfig>) => void;
+    onStartGame: () => void;
+    onLeaveRoom: () => void;
+    onDeleteRoom: () => void;
+}
+
+export const DominoLobby: React.FC<DominoLobbyProps> = ({
+    room,
+    isHost,
+    currentUserId,
+    onToggleReady,
+    onUpdateConfig,
+    onStartGame,
+    onLeaveRoom,
+    onDeleteRoom
+}) => {
+    const currentUserReady = room.players.find(p => p.id === currentUserId)?.isReady || false;
+    const allReady = room.players.every(p => p.isReady || p.id === room.hostId);
+    const canStart = room.players.length >= DOMINO_CONSTANTS.MIN_PLAYERS && allReady;
+
+    return (
+        <div className="max-w-2xl mx-auto p-4">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-6 text-white mb-6 shadow-xl">
+                <div className="flex justify-between items-start">
+                    <div>
+                        <h1 className="text-2xl font-bold flex items-center gap-2">
+                            🎲 {room.name}
+                        </h1>
+                        <p className="text-orange-100 mt-1">
+                            {room.players.length}/{DOMINO_CONSTANTS.MAX_PLAYERS} jogadores
+                        </p>
+                    </div>
+                    <button
+                        onClick={onLeaveRoom}
+                        className="p-2 bg-white/20 rounded-lg hover:bg-white/30"
+                    >
+                        <Icon name="log-out" size={20} />
+                    </button>
+                </div>
+            </div>
+
+            {/* Players */}
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100 mb-6">
+                <h3 className="text-xs font-bold text-slate-400 uppercase mb-3 flex items-center gap-2">
+                    <Icon name="users" size={14} /> Jogadores
+                </h3>
+                <div className="grid grid-cols-2 gap-3">
+                    {room.players.map(player => (
+                        <div
+                            key={player.id}
+                            className={`flex items-center gap-3 p-3 rounded-lg ${player.isReady ? 'bg-green-50 border border-green-200' : 'bg-slate-50'
+                                }`}
+                        >
+                            {player.avatarUrl ? (
+                                <img
+                                    src={player.avatarUrl}
+                                    alt={player.name}
+                                    className="w-10 h-10 rounded-full"
+                                />
+                            ) : (
+                                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">
+                                    {player.name.charAt(0)}
+                                </div>
+                            )}
+                            <div className="flex-1 min-w-0">
+                                <p className="font-bold text-slate-700 truncate">{player.name}</p>
+                                {player.id === room.hostId && (
+                                    <p className="text-xs text-orange-600 font-medium">Host</p>
+                                )}
+                            </div>
+                            {player.isReady && (
+                                <Icon name="check-circle" className="text-green-500" size={20} />
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Config */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 mb-6">
+                <h3 className="font-bold text-slate-700 mb-4 flex items-center gap-2">
+                    <Icon name="settings" size={20} className="text-brand-500" />
+                    Configuração
+                </h3>
+
+                {isHost ? (
+                    <div className="space-y-4">
+                        {/* Contexto */}
+                        <div>
+                            <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                Contexto
+                            </label>
+                            <div className="grid grid-cols-4 gap-2">
+                                {CONTEXT_OPTIONS.map(opt => (
+                                    <button
+                                        key={opt.value}
+                                        onClick={() => onUpdateConfig({ context: opt.value })}
+                                        className={`p-3 rounded-lg text-center transition-all ${room.config.context === opt.value
+                                            ? 'bg-orange-100 text-orange-700 ring-2 ring-orange-500'
+                                            : 'bg-slate-50 hover:bg-slate-100'
+                                            }`}
+                                    >
+                                        <span className="text-xl block mb-1">{opt.icon}</span>
+                                        <span className="text-xs font-medium">{opt.label}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Idiomas (se contexto = language) */}
+                        {room.config.context === 'language' && (
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                        Idioma de Origem
+                                    </label>
+                                    <FlagSelect
+                                        options={STUDY_LANGUAGES}
+                                        value={room.config.sourceLang || 'de'}
+                                        onChange={(val) => onUpdateConfig({ sourceLang: val as SupportedLanguage })}
+                                        placeholder="Selecione"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                        Traduzir para
+                                    </label>
+                                    <FlagSelect
+                                        options={ALL_LANGUAGES}
+                                        value={room.config.targetLang || 'pt'}
+                                        onChange={(val) => onUpdateConfig({ targetLang: val as SupportedLanguage })}
+                                        placeholder="Selecione"
+                                    />
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Tópico Personalizado */}
+                        {room.config.context === 'custom' && (
+                            <div>
+                                <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                    Tópico Personalizado
+                                </label>
+                                <input
+                                    type="text"
+                                    value={room.config.customTopic || ''}
+                                    onChange={(e) => onUpdateConfig({ customTopic: e.target.value })}
+                                    placeholder="Ex: Anatomia Humana, React Hooks, etc."
+                                    className="w-full p-3 border rounded-xl"
+                                />
+                            </div>
+                        )}
+
+                        {/* Dificuldade */}
+                        <div>
+                            <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                Dificuldade
+                            </label>
+                            <div className="flex gap-2">
+                                {['Iniciante', 'Intermediário', 'Avançado'].map(diff => (
+                                    <button
+                                        key={diff}
+                                        onClick={() => onUpdateConfig({ difficulty: diff as any })}
+                                        className={`flex-1 py-2 rounded-lg font-medium transition-all ${room.config.difficulty === diff
+                                            ? 'bg-orange-500 text-white'
+                                            : 'bg-slate-100 hover:bg-slate-200'
+                                            }`}
+                                    >
+                                        {diff}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Botão Iniciar */}
+                        <button
+                            onClick={onStartGame}
+                            disabled={!canStart}
+                            className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-bold shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
+                        >
+                            <Icon name="play" size={20} />
+                            Iniciar Jogo
+                        </button>
+                        {room.players.length < DOMINO_CONSTANTS.MIN_PLAYERS && (
+                            <p className="text-center text-red-500 text-xs">
+                                Mínimo {DOMINO_CONSTANTS.MIN_PLAYERS} jogadores
+                            </p>
+                        )}
+                    </div>
+                ) : (
+                    <div className="text-center py-8">
+                        <Icon name="clock" size={48} className="mx-auto text-slate-300 mb-4" />
+                        <p className="text-slate-600 font-medium">Aguardando Host iniciar...</p>
+                        <div className="mt-4 p-4 bg-slate-50 rounded-xl text-left inline-block">
+                            <p className="text-xs text-slate-400 uppercase font-bold mb-2">Config Atual</p>
+                            <p className="text-sm">Contexto: <b>{room.config.context}</b></p>
+                            <p className="text-sm">Dificuldade: <b>{room.config.difficulty}</b></p>
+                        </div>
+                    </div>
+                )}
+            </div>
+
+            {/* Ready Button (non-host) */}
+            {!isHost && (
+                <button
+                    onClick={() => onToggleReady(!currentUserReady)}
+                    className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 ${currentUserReady
+                        ? 'bg-green-500 text-white'
+                        : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+                        }`}
+                >
+                    <Icon name={currentUserReady ? 'check-circle' : 'circle'} size={20} />
+                    {currentUserReady ? 'Pronto!' : 'Marcar como Pronto'}
+                </button>
+            )}
+
+            {/* Delete Room (host only) */}
+            {isHost && (
+                <button
+                    onClick={onDeleteRoom}
+                    className="w-full mt-4 py-3 text-red-500 hover:bg-red-50 rounded-xl font-medium"
+                >
+                    Deletar Sala
+                </button>
+            )}
+        </div>
+    );
+};

@@ -130,7 +130,44 @@ export default async function handler(req, res) {
       return res.status(200).json(result);
     }
 
-    // --- 5. POLYQUEST: BOSS ---
+    // --- 5. DOMINO: TERMS ---
+    if (type === 'domino_terms') {
+      const { context, sourceLang, targetLang, customTopic, difficulty } = req.body;
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+      };
+      const srcName = langNames[sourceLang] || sourceLang;
+      const tgtName = langNames[targetLang] || 'Português';
+
+      let contextInstructions = '';
+      if (context === 'language') {
+        contextInstructions = `CONTEXTO: Tradução de idiomas.\nIDIOMAS: De ${srcName} para ${tgtName}.\nO "term" deve estar em ${srcName} e a "definition" em ${tgtName}.`;
+      } else if (context === 'custom') {
+        contextInstructions = `CONTEXTO: ${customTopic}.\nO "term" é o conceito/palavra e a "definition" é sua explicação ou tradução.`;
+      } else {
+        const contextNames = {
+          'medicine': 'Medicina', 'computing': 'Computação', 'engineering': 'Engenharia',
+          'chemistry': 'Química', 'biology': 'Biologia', 'law': 'Direito'
+        };
+        contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.`;
+      }
+
+      const systemPrompt = `Você é um especialista em educação. Gere 13 pares de Termo/Definição únicos para um jogo de dominó.
+        NÍVEL: ${difficulty}.
+        ${contextInstructions}
+        
+        REGRAS:
+        1. Gere EXATAMENTE 13 pares diferentes.
+        2. Os termos devem ser únicos e não se repetir.
+        3. As definições devem ser curtas (1-3 palavras).
+        4. Retorne APENAS um JSON Array: [{ "term": "...", "definition": "..." }, ...]`;
+
+      const result = await callGemini(genAI, `Gere os 13 termos para o contexto ${context}.`, systemPrompt);
+      return res.status(200).json(result);
+    }
+
+    // --- 6. POLYQUEST: BOSS ---
     if (type === 'boss') {
       const systemPrompt = `Você é um 'Boss Final' de um jogo de idiomas.
         Seu objetivo é desafiar os jogadores a reconstruir uma frase curta.
