@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../../services/firebase';
 import { collection, addDoc, onSnapshot, doc, updateDoc, arrayUnion, getDoc, deleteDoc } from 'firebase/firestore';
-import { GameRoom, Player } from '../../types';
+import { GameRoom, Player, SupportedLanguage } from '../../types';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { generateGameDeck } from '../../services/gemini';
 import Icon from '../../components/Icon';
@@ -31,7 +31,7 @@ const LingoArenaView: React.FC = () => {
 
     // Config States
     const [selectedTopics, setSelectedTopics] = useState<string[]>([TOPICS[0]]);
-    const [selectedLang, setSelectedLang] = useState<'zh' | 'de'>('zh');
+    const [selectedLang, setSelectedLang] = useState<SupportedLanguage>('zh');
     const [selectedDiff, setSelectedDiff] = useState('Iniciante');
     const [targetScore, setTargetScore] = useState(20);
     const [loadingDeck, setLoadingDeck] = useState(false);

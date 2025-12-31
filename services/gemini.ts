@@ -17,7 +17,7 @@ const API_URL = '/api/generate';
 
 // --- FUNÇÕES AUXILIARES PARA GERAÇÃO LOCAL (PROMPTS) ---
 
-const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' | 'translate' = 'direct') => {
+const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' | 'translate' | string = 'direct', difficulty: string = 'Iniciante') => {
     const langNames: Record<string, string> = {
         'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
         'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
@@ -64,11 +64,13 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     }
 
     if (type === 'game') {
+        const isCJK = ['zh', 'ja', 'ko'].includes(targetLang);
         return `Você é um criador de jogos educativos de ${langName}.
     Crie um deck de cartas para o tópico solicitado.
     Retorne APENAS um Array JSON de objetos.
     Cada objeto (carta) deve ter:
     { "word": "...", "pinyin": "...", "meaning": "...", "example": "...", "distractors": ["significado errado 1", "significado errado 2", "significado errado 3"] }
+    ${isCJK ? 'O campo pinyin deve conter a transcrição fonética.' : 'O campo pinyin deve ser deixado vazio ou com null.'}
     Os significados e distratores devem ser em Português.`;
     }
 
@@ -78,7 +80,12 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         const tgtName = mode;       // Parametro reutilizado como target
 
         return `Você é um tradutor especialista e criador de jogos.
-    Receberá uma lista de palavras em ${srcName}.
+    NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}. (Crie enigmas apropriados para este nível).
+    
+    CONTEXTO (TEXTO BASE):
+    Receberá uma lista de palavras extraídas de um texto.
+    
+    SUA TAREFA:
     Para cada palavra, retorne um objeto JSON com:
     {
       "word": "a palavra original",
@@ -94,7 +101,10 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         const srcName = targetLang; // Reutilizando param
         return `Você é um criador de jogos de linguagem.
         Seu objetivo é criar uma "Palavra Intrusa" para um jogo de desafio.
-        Dado um texto ou lista de palavras em ${srcName}, sugira uma palavra que NÃO pertença ao contexto (seja anacrônica, de outro tópico ou absurda), mas que pareça plausível linguisticamente.
+        NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}.
+        
+        CONTEXTO (TEXTO BASE):
+        Dado um texto ou lista de palavras em ${srcName}, sugira uma palavra que NÃO pertença ao contexto (seja anacrônica, de outro tópico ou absurda), mas que pareça plausível linguisticamente e adequada ao nível ${difficulty}.
         
         Exemplo: Texto medieval -> Intruso: "Computador" (Computer).
         Exemplo: Texto sobre frutas -> Intruso: "Carro" (Auto).
@@ -111,7 +121,12 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         const srcName = targetLang;
         return `Você é um 'Boss Final' de um jogo de idiomas.
         Seu objetivo é desafiar os jogadores a reconstruir uma frase curta.
+        NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}. (Escolha uma frase com complexidade adequada ao nível).
+        
+        CONTEXTO (TEXTO BASE):
         Dado um texto em ${srcName}, escolha UMA frase curta (não o texto completo).
+        
+        SUA TAREFA:
         Retorne APENAS um JSON:
         {
             "originalSentence": "A frase escolhida no idioma estudado (${srcName})",
@@ -319,7 +334,8 @@ export interface EnigmaData {
 export const generateEnigmas = async (
     words: string[],
     sourceLang: string,
-    targetLang: string
+    targetLang: string,
+    difficulty: string = 'Iniciante'
 ): Promise<EnigmaData[]> => {
     // Helper para nome do idioma
     const getLangName = (code: string) => {
@@ -337,7 +353,7 @@ export const generateEnigmas = async (
     // DEV MODE
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Enigmas");
-        const systemPrompt = getSystemInstruction('enigmas', srcName, tgtName as any);
+        const systemPrompt = getSystemInstruction('enigmas', sourceLang, targetLang, difficulty);
         const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
 
         return await callLocalGemini(userPrompt, systemPrompt);
@@ -352,7 +368,8 @@ export const generateEnigmas = async (
                 type: 'enigmas',
                 words,
                 sourceLang: srcName,
-                targetLang: tgtName
+                targetLang: tgtName,
+                difficulty
             }),
         });
         if (!response.ok) throw new Error("Erro ao gerar enigmas");
@@ -371,7 +388,8 @@ export interface IntruderData {
 
 export const generateIntruder = async (
     contextWords: string[],
-    contentLang: string
+    contentLang: string,
+    difficulty: string = 'Iniciante'
 ): Promise<IntruderData> => {
     const getLangName = (code: string) => {
         const map: Record<string, string> = {
@@ -386,7 +404,7 @@ export const generateIntruder = async (
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Intruder");
-        const systemPrompt = getSystemInstruction('intruder', langName);
+        const systemPrompt = getSystemInstruction('intruder', contentLang, 'direct', difficulty);
         const userPrompt = `Contexto (palavras do texto): ${contextWords.slice(0, 20).join(', ')}...`;
 
         return await callLocalGemini(userPrompt, systemPrompt);
@@ -400,7 +418,8 @@ export const generateIntruder = async (
             body: JSON.stringify({
                 type: 'intruder',
                 context: contextWords.slice(0, 20),
-                targetLang: langName
+                targetLang: langName,
+                difficulty
             }),
         });
 
@@ -419,13 +438,14 @@ export interface BossLevelData {
 
 export const generateBossLevel = async (
     fullText: string,
-    contentLang: string
+    contentLang: string,
+    difficulty: string = 'Iniciante'
 ): Promise<BossLevelData> => {
     const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Boss");
-        const systemPrompt = getSystemInstruction('boss', langName);
+        const systemPrompt = getSystemInstruction('boss', contentLang, 'direct', difficulty);
         const userPrompt = `Texto base: ${fullText}`;
 
         return await callLocalGemini(userPrompt, systemPrompt);
@@ -439,7 +459,8 @@ export const generateBossLevel = async (
             body: JSON.stringify({
                 type: 'boss',
                 context: fullText,
-                targetLang: langName
+                targetLang: langName,
+                difficulty
             }),
         });
 

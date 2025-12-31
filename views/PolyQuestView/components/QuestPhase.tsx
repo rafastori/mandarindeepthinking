@@ -70,7 +70,8 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                     const enigmasData = await generateEnigmas(
                         room.selectedWords,
                         room.config.sourceLang,
-                        room.config.targetLang
+                        room.config.targetLang,
+                        room.config.difficulty
                     );
                     const enigmas: WordEnigma[] = enigmasData.map(data => ({
                         word: data.word,
@@ -105,7 +106,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
             const generateAndTrigger = async () => {
                 try {
                     const contextSample = room.enigmas.slice(0, 10).map(e => e.word);
-                    const intruderData = await generateIntruder(contextSample, room.config.sourceLang);
+                    const intruderData = await generateIntruder(contextSample, room.config.sourceLang, room.config.difficulty);
                     await onTriggerIntruder(intruderData.word);
                 } catch (err) {
                     await onTriggerIntruder("Unicorn");

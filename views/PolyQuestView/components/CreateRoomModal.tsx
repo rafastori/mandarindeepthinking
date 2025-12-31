@@ -7,7 +7,7 @@ import { generateRawText, tokenizeTextWithAI } from '../../../services/gemini';
 
 interface CreateRoomModalProps {
     onClose: () => void;
-    onCreate: (roomName: string, sourceLang: string, targetLang: string, text: string, tokens: string[]) => void;
+    onCreate: (roomName: string, sourceLang: string, targetLang: string, text: string, tokens: string[], difficulty: string) => void;
 }
 
 export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCreate }) => {
@@ -16,6 +16,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
     const [targetLang, setTargetLang] = useState('pt');
     const [text, setText] = useState('');
     const [aiPrompt, setAiPrompt] = useState('');
+    const [difficulty, setDifficulty] = useState('Iniciante');
     const [generating, setGenerating] = useState(false);
     const [tokenizing, setTokenizing] = useState(false);
 
@@ -29,7 +30,7 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
         try {
             // Tokenizar texto com IA antes de criar sala
             const tokens = await tokenizeTextWithAI(text, sourceLang);
-            onCreate(roomName.trim(), sourceLang, targetLang, text, tokens);
+            onCreate(roomName.trim(), sourceLang, targetLang, text, tokens, difficulty);
             onClose();
         } catch (error) {
             console.error("Failed to tokenize text:", error);
@@ -107,6 +108,28 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
                                 label="Idioma nativo *"
                             />
                             <p className="text-xs text-slate-500 mt-1">Idioma para traduzir</p>
+                        </div>
+                    </div>
+
+                    {/* Dificuldade */}
+                    <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">
+                            Nível de Dificuldade *
+                        </label>
+                        <div className="grid grid-cols-3 gap-3">
+                            {['Iniciante', 'Intermediário', 'Avançado'].map((level) => (
+                                <button
+                                    key={level}
+                                    type="button"
+                                    onClick={() => setDifficulty(level)}
+                                    className={`px-4 py-3 rounded-xl text-sm font-bold transition-all border-2 ${difficulty === level
+                                        ? 'bg-emerald-50 border-emerald-500 text-emerald-700 shadow-md'
+                                        : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
+                                        }`}
+                                >
+                                    {level}
+                                </button>
+                            ))}
                         </div>
                     </div>
 

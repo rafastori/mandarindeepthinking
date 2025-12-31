@@ -71,6 +71,7 @@ export default async function handler(req, res) {
         'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
       };
       const langName = langNames[targetLanguage] || targetLanguage;
+      const isCJK = ['zh', 'ja', 'ko'].includes(targetLanguage);
       const excludeInstruction = exclude.length > 0 ? `Evite as palavras: ${exclude.join(', ')}.` : '';
 
       const systemPrompt = `Você é um criador de jogos educativos de ${langName}.
@@ -78,6 +79,7 @@ export default async function handler(req, res) {
         Retorne APENAS um Array JSON de objetos.
         Cada objeto (carta) deve ter:
         { "word": "...", "pinyin": "...", "meaning": "...", "example": "...", "distractors": ["significado errado 1", "significado errado 2", "significado errado 3"] }
+        ${isCJK ? 'O campo pinyin deve conter a transcrição fonética.' : 'O campo pinyin deve ser deixado vazio ou com null.'}
         Os significados e distratores devem ser em Português.`;
 
       const userPrompt = `Tópico: ${topic}. Dificuldade: ${difficulty}. Gere 5 palavras distintas. ${excludeInstruction}`;
@@ -88,6 +90,9 @@ export default async function handler(req, res) {
     // --- 3. POLYQUEST: ENIGMAS ---
     if (type === 'enigmas') {
       const systemPrompt = `Você é um tradutor especialista e criador de jogos.
+        NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}. (Crie enigmas apropriados para este nível).
+        
+        CONTEXTO (TEXTO BASE):
         Receberá uma lista de palavras em ${sourceLang}.
         Para cada palavra, retorne um objeto JSON com:
         {
@@ -108,7 +113,10 @@ export default async function handler(req, res) {
     if (type === 'intruder') {
       const systemPrompt = `Você é um criador de jogos de linguagem.
         Seu objetivo é criar uma "Palavra Intrusa" para um jogo de desafio.
-        Dado um texto ou lista de palavras, sugira uma palavra que NÃO pertença ao contexto.
+        NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}.
+        
+        CONTEXTO (TEXTO BASE):
+        Dado um texto ou lista de palavras, sugira uma palavra que NÃO pertença ao contexto, mas adequada ao nível ${difficulty}.
         
         Retorne APENAS um JSON:
         {
@@ -126,6 +134,9 @@ export default async function handler(req, res) {
     if (type === 'boss') {
       const systemPrompt = `Você é um 'Boss Final' de um jogo de idiomas.
         Seu objetivo é desafiar os jogadores a reconstruir uma frase curta.
+        NÍVEL DE LINGUAGEM DESEJADO: ${difficulty}. (Escolha uma frase com complexidade adequada ao nível).
+        
+        CONTEXTO (TEXTO BASE):
         Dado um texto, escolha UMA frase curta (não o texto completo).
         Retorne APENAS um JSON:
         {

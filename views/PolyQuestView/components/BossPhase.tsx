@@ -80,7 +80,7 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
             setLoading(true);
             try {
                 const textContext = room.config.originalText || "PolyQuest Context";
-                const bossData = await generateBossLevel(textContext, room.config.sourceLang);
+                const bossData = await generateBossLevel(textContext, room.config.sourceLang, room.config.difficulty);
                 console.log("Boss Generated:", bossData);
                 onStartBoss(bossData);
             } catch (error) {

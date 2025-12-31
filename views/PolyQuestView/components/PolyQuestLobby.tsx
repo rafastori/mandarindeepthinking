@@ -9,7 +9,7 @@ interface PolyQuestLobbyProps {
     isHost: boolean;
     currentUserId: string;
     onToggleReady: () => void;
-    onUpdateConfig: (sourceLang: string, targetLang: string, text: string) => void;
+    onUpdateConfig: (sourceLang: string, targetLang: string, text: string, difficulty: string) => void;
     onStartGame: () => void;
     onLeaveRoom: () => void;
     onDeleteRoom: () => void;
@@ -28,6 +28,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     const [sourceLang, setSourceLang] = useState(room.config.sourceLang);
     const [targetLang, setTargetLang] = useState(room.config.targetLang);
     const [text, setText] = useState(room.config.originalText);
+    const [difficulty, setDifficulty] = useState(room.config.difficulty || 'Iniciante');
 
     const currentPlayer = room.players.find(p => p.id === currentUserId);
     const allReady = room.players.every(p => p.isReady);
@@ -35,7 +36,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
 
     const handleConfigChange = () => {
         if (isHost && validation.valid) {
-            onUpdateConfig(sourceLang, targetLang, text);
+            onUpdateConfig(sourceLang, targetLang, text, difficulty);
         }
     };
 
@@ -47,7 +48,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
             }, 500);
             return () => clearTimeout(timer);
         }
-    }, [sourceLang, targetLang, text]);
+    }, [sourceLang, targetLang, text, difficulty]);
 
     const canStart = isHost && allReady && validation.valid && room.players.length > 0;
 
@@ -155,6 +156,28 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                             label="Idioma nativo"
                             disabled={!isHost}
                         />
+                    </div>
+
+                    {/* Dificuldade */}
+                    <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">
+                            Nível de Dificuldade
+                        </label>
+                        <div className="grid grid-cols-3 gap-2">
+                            {['Iniciante', 'Intermediário', 'Avançado'].map((level) => (
+                                <button
+                                    key={level}
+                                    onClick={() => setDifficulty(level)}
+                                    disabled={!isHost}
+                                    className={`px-3 py-2 rounded-lg text-sm font-bold transition-all border-2 ${difficulty === level
+                                        ? 'bg-emerald-50 border-emerald-500 text-emerald-700'
+                                        : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-slate-300'
+                                        } ${!isHost ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                >
+                                    {level}
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Texto Base */}

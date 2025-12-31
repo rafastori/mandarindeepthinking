@@ -102,7 +102,8 @@ const PolyQuestView: React.FC = () => {
         sourceLang: string,
         targetLang: string,
         text: string,
-        tokens: string[]
+        tokens: string[],
+        difficulty: string
     ) => {
         const player = createPlayerFromUser(user, totalScore);
         const roomId = await createRoom(
@@ -113,6 +114,7 @@ const PolyQuestView: React.FC = () => {
                 originalText: text,
                 tokens,
                 minWords: 40,
+                difficulty,
             },
             player
         );
@@ -166,12 +168,13 @@ const PolyQuestView: React.FC = () => {
         }
     };
 
-    const handleUpdateConfig = async (sourceLang: string, targetLang: string, text: string) => {
+    const handleUpdateConfig = async (sourceLang: string, targetLang: string, text: string, difficulty: string) => {
         if (!activeRoom) return;
         await updateConfig(activeRoom.id, {
             sourceLang,
             targetLang,
             originalText: text,
+            difficulty,
         });
     };
 

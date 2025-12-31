@@ -75,7 +75,7 @@ export interface GameRoom {
 
     config?: {
         topic: string;
-        lang: 'zh' | 'de';
+        lang: SupportedLanguage;
         diff: string;
     };
 

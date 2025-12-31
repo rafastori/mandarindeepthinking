@@ -40,6 +40,7 @@ export interface GameConfig {
     originalText: string;
     tokens: string[];   // Tokens pré-processados pela IA
     minWords: number; // Mínimo de palavras no texto (padrão: 40)
+    difficulty: string; // 'Iniciante' | 'Intermediário' | 'Avançado'
 }
 
 // Sala do PolyQuest

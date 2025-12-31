@@ -1,10 +1,11 @@
 import React from 'react';
 import Icon from '../../components/Icon';
-import { GameRoom } from '../../types';
+import FlagSelect from '../../components/FlagSelect';
+import { GameRoom, STUDY_LANGUAGES, SupportedLanguage } from '../../types';
 
 // Constante de tópicos movida para cá para ser usada no select
 export const TOPICS = [
-    "Comida & Bebida", "Viagem", "Trabalho", "Família", 
+    "Comida & Bebida", "Viagem", "Trabalho", "Família",
     "Natureza", "Cidade", "Sentimentos", "Casa", "Tecnologia", "Esportes"
 ];
 
@@ -13,13 +14,13 @@ interface LobbyProps {
     isHost: boolean;
     // Config States
     selectedTopics: string[];
-    selectedLang: 'zh' | 'de';
+    selectedLang: SupportedLanguage;
     selectedDiff: string;
     targetScore: number;
     loadingDeck: boolean;
     // Setters
     onToggleTopic: (topic: string) => void;
-    setLang: (l: 'zh' | 'de') => void;
+    setLang: (l: SupportedLanguage) => void;
     setDiff: (d: string) => void;
     setTargetScore: (s: number) => void;
     // Actions
@@ -58,7 +59,7 @@ export const Lobby: React.FC<LobbyProps> = ({
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 animate-in fade-in slide-in-from-bottom-4">
                 <h3 className="font-bold text-slate-700 mb-6 flex items-center gap-2 text-lg">
-                    <Icon name="settings" size={24} className="text-brand-500" /> 
+                    <Icon name="settings" size={24} className="text-brand-500" />
                     Configuração
                 </h3>
 
@@ -66,10 +67,12 @@ export const Lobby: React.FC<LobbyProps> = ({
                     <div className="space-y-6">
                         <div>
                             <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">1. Idioma</label>
-                            <div className="grid grid-cols-2 gap-3">
-                                <button onClick={() => setLang('zh')} className={`p-3 rounded-xl border-2 font-bold flex items-center justify-center gap-2 transition-all ${selectedLang === 'zh' ? 'border-brand-500 bg-brand-50 text-brand-700' : 'border-slate-100 text-slate-400 hover:border-slate-200'}`}><span>🇨🇳</span> Mandarim</button>
-                                <button onClick={() => setLang('de')} className={`p-3 rounded-xl border-2 font-bold flex items-center justify-center gap-2 transition-all ${selectedLang === 'de' ? 'border-brand-500 bg-brand-50 text-brand-700' : 'border-slate-100 text-slate-400 hover:border-slate-200'}`}><span>🇩🇪</span> Alemão</button>
-                            </div>
+                            <FlagSelect
+                                options={STUDY_LANGUAGES}
+                                value={selectedLang}
+                                onChange={(val) => setLang(val as SupportedLanguage)}
+                                placeholder="Escolha um idioma"
+                            />
                         </div>
                         <div>
                             <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">2. Dificuldade</label>
