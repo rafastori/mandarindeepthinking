@@ -44,6 +44,42 @@ const LingoArenaView: React.FC = () => {
         return () => unsubscribe();
     }, []);
 
+    // Cleanup old rooms (>24h) - runs once on mount
+    useEffect(() => {
+        const cleanupOldRooms = async () => {
+            const snapshot = await getDoc(doc(db, '_meta', 'lastCleanup'));
+            const lastCleanup = snapshot.exists() ? snapshot.data()?.time?.toDate?.() : null;
+            const now = new Date();
+
+            // Only run cleanup once per hour
+            if (lastCleanup && (now.getTime() - lastCleanup.getTime()) < 3600000) return;
+
+            const roomsSnapshot = await onSnapshot(collection(db, 'gameRooms'), async (snap) => {
+                const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+
+                for (const roomDoc of snap.docs) {
+                    const data = roomDoc.data() as GameRoom;
+                    const createdAt = data.createdAt?.toDate?.() || new Date(0);
+
+                    // Delete if older than 24h OR if finished and older than 1h
+                    const isOld = createdAt < twentyFourHoursAgo;
+                    const isFinishedAndStale = data.status === 'finished' &&
+                        createdAt < new Date(Date.now() - 60 * 60 * 1000);
+
+                    if (isOld || isFinishedAndStale) {
+                        console.log(`🧹 Cleaning up old room: ${roomDoc.id}`);
+                        await deleteDoc(doc(db, 'gameRooms', roomDoc.id));
+                    }
+                }
+            });
+
+            // Unsubscribe immediately - we just wanted one check
+            setTimeout(() => roomsSnapshot(), 100);
+        };
+
+        cleanupOldRooms().catch(console.error);
+    }, []);
+
     useEffect(() => {
         const unsubscribe = onSnapshot(collection(db, 'gameRooms'), (snapshot) => {
             const rooms = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as GameRoom));

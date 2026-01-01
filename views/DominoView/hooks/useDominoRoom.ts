@@ -52,6 +52,39 @@ export const useDominoRoom = (userId?: string) => {
     const [activeRoom, setActiveRoom] = useState<DominoRoom | null>(null);
     const [loading, setLoading] = useState(true);
 
+    // Cleanup old rooms (>24h or finished >1h) - runs once on mount
+    useEffect(() => {
+        const cleanupOldRooms = async () => {
+            try {
+                const roomsRef = collection(db, 'dominoRooms');
+                const unsubCleanup = onSnapshot(roomsRef, async (snap) => {
+                    const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+                    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+
+                    for (const roomDoc of snap.docs) {
+                        const data = roomDoc.data();
+                        const createdAt = data.createdAt?.toDate?.() || new Date(0);
+
+                        const isOld = createdAt < twentyFourHoursAgo;
+                        const isFinishedAndStale = data.phase === 'finished' && createdAt < oneHourAgo;
+
+                        if (isOld || isFinishedAndStale) {
+                            console.log(`🧹 Cleaning up old domino room: ${roomDoc.id}`);
+                            await deleteDoc(doc(db, 'dominoRooms', roomDoc.id));
+                        }
+                    }
+                });
+
+                // Unsubscribe after one check
+                setTimeout(() => unsubCleanup(), 200);
+            } catch (e) {
+                console.error('Cleanup error:', e);
+            }
+        };
+
+        cleanupOldRooms();
+    }, []);
+
     // Listener para salas
     useEffect(() => {
         const unsubscribe = onSnapshot(
