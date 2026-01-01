@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Icon from '../../../components/Icon';
 import { DominoRoom, DominoPiece as DominoPieceType, Train } from '../types';
 import { DominoPiece } from './DominoPiece';
 import { PlayerHand } from './PlayerHand';
 import { HandViewModal } from './HandViewModal';
 import { TrainViewModal } from './TrainViewModal';
+import { DominoPieceModal } from './DominoPieceModal';
 
 interface GameBoardProps {
     room: DominoRoom;
@@ -30,20 +31,61 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
     const [showHandModal, setShowHandModal] = useState(false);
     const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
+    const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
+    const [focusedTrainId, setFocusedTrainId] = useState<string | null>(null); // null = My Train
 
     // Auto-scroll ref
     const trainRefs = React.useRef<{ [key: string]: HTMLDivElement | null }>({});
 
-    // Scroll to end of my train when piece added
-    React.useEffect(() => {
+    // Keep track of focused index for each train to "Scale Up" the center piece
+    // Key: trainId, Value: focused index
+    // Using a map ref to avoid re-renders on every scroll event
+    const focusedIndicesRef = useRef<{ [trainId: string]: number }>({});
+    const [, setForceUpdate] = useState(0); // Force render for scroll updates if we want smooth react state
+
+    const handleTrainScroll = (trainId: string) => {
+        const container = trainRefs.current[trainId];
+        if (!container) return;
+
+        const center = container.scrollLeft + container.clientWidth / 2;
+        const children = Array.from(container.children);
+
+        // Find closest child to center
+        let closestIndex = -1;
+        let minDistance = Infinity;
+
+        children.forEach((child, index) => {
+            if (!(child instanceof HTMLElement)) return;
+            // Ignore spacers/padding at start/end if any
+            const childCenter = child.offsetLeft + child.offsetWidth / 2;
+            const distance = Math.abs(center - childCenter);
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestIndex = index;
+            }
+        });
+
+        if (focusedIndicesRef.current[trainId] !== closestIndex) {
+            focusedIndicesRef.current[trainId] = closestIndex;
+            // Debounce or optimize this? For now, request animation frame or simple state set
+            // Ideally we animate via CSS based on scroll-position, but that is complex.
+            // Let's force re-render to apply 'scale' classes.
+            setForceUpdate(prev => prev + 1);
+        }
+    };
+
+    // Auto-scroll to end of my train when piece added
+    useEffect(() => {
         const myTrain = room.trains.find(t => t.ownerId === currentUserId);
         if (myTrain && trainRefs.current[myTrain.id]) {
-            trainRefs.current[myTrain.id]?.scrollTo({
-                left: trainRefs.current[myTrain.id]?.scrollWidth,
-                behavior: 'smooth'
-            });
+            setTimeout(() => {
+                trainRefs.current[myTrain.id]?.scrollTo({
+                    left: trainRefs.current[myTrain.id]?.scrollWidth,
+                    behavior: 'smooth'
+                });
+            }, 100);
         }
-    }, [room.trains]); // Simple dependency, optimizes later if needed
+    }, [room.trains]);
 
     const isMyTurn = room.currentTurn === currentUserId;
     const currentPlayer = room.players.find(p => p.id === currentUserId);
@@ -52,7 +94,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const currentTurnPlayer = room.players.find(p => p.id === room.currentTurn);
 
     // Sync local hand with server when server changes
-    React.useEffect(() => {
+    useEffect(() => {
         if (JSON.stringify(serverHand.map(p => p.id)) !== JSON.stringify(localHand?.map(p => p.id))) {
             setLocalHand(null);
         }
@@ -91,14 +133,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         const success = await onPlacePiece(piece.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
-            setLocalHand(null); // Reset to sync with server
+            setLocalHand(null);
         }
     };
 
     const handleDraw = async () => {
         if (!isMyTurn || room.boneyard.length === 0) return;
         await onDrawPiece();
-        setLocalHand(null); // Reset to sync with server
+        setLocalHand(null);
     };
 
     const handlePass = () => {
@@ -220,141 +262,211 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     )}
                 </div>
 
-                {/* Trains with drop zones */}
-                <div className="space-y-3">
-                    {room.trains.map(train => {
-                        const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
-                        const isMexican = train.ownerId === null;
-                        const isMyTrain = train.ownerId === currentUserId;
-                        const isPlayable = playableTrains.some(t => t.id === train.id);
-                        const canAccess = isMexican || isMyTrain || train.isOpen;
-                        const isDragOver = dragOverTrain === train.id;
+                {/* Main Train View - Shows focused train (My Train by default) */}
+                {(() => {
+                    const myTrain = room.trains.find(t => t.ownerId === currentUserId);
+                    const focusedTrain = focusedTrainId
+                        ? room.trains.find(t => t.id === focusedTrainId)
+                        : myTrain;
 
-                        return (
-                            <div
-                                key={train.id}
-                                data-train-id={train.id}
-                                onDragOver={(e) => canAccess && isMyTurn && handleDragOver(e, train.id)}
-                                onDragLeave={handleDragLeave}
-                                onDrop={(e) => canAccess && isMyTurn && handleDropOnTrain(e, train)}
-                                onClick={() => isPlayable && handlePlaceOnTrain(train)}
-                                className={`
-                                    rounded-xl p-3 transition-all
-                                    ${isMexican
-                                        ? 'bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200'
-                                        : isMyTrain
-                                            ? 'bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200'
-                                            : 'bg-white border border-slate-200'}
-                                    ${isPlayable
-                                        ? 'ring-2 ring-green-400 ring-offset-2 cursor-pointer shadow-lg shadow-green-100'
-                                        : 'shadow-sm'}
-                                    ${isDragOver && canAccess
-                                        ? 'ring-4 ring-blue-400 ring-offset-2 scale-[1.02] bg-blue-50'
-                                        : ''}
-                                    ${canAccess && isMyTurn && !isPlayable ? 'hover:ring-2 hover:ring-blue-300' : ''}
-                                `}
-                            >
-                                <div className="flex items-center justify-between mb-2">
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-lg">
-                                            {isMexican ? '🚂' : train.isOpen ? '🔓' : isMyTrain ? '🏠' : '🔒'}
+                    if (!focusedTrain) return null;
+
+                    const isMexican = focusedTrain.ownerId === null;
+                    const isMyTrain = focusedTrain.ownerId === currentUserId;
+                    const isPlayable = playableTrains.some(t => t.id === focusedTrain.id);
+                    const canAccess = isMexican || isMyTrain || focusedTrain.isOpen;
+                    const isDragOver = dragOverTrain === focusedTrain.id;
+                    const owner = focusedTrain.ownerId ? room.players.find(p => p.id === focusedTrain.ownerId) : null;
+
+                    return (
+                        <div
+                            data-train-id={focusedTrain.id}
+                            onDragOver={(e) => canAccess && isMyTurn && handleDragOver(e, focusedTrain.id)}
+                            onDragLeave={handleDragLeave}
+                            onDrop={(e) => canAccess && isMyTurn && handleDropOnTrain(e, focusedTrain)}
+                            onClick={() => isPlayable && handlePlaceOnTrain(focusedTrain)}
+                            className={`
+                                rounded-2xl p-4 transition-all relative mb-4
+                                ${isMyTrain
+                                    ? 'bg-gradient-to-br from-emerald-50 via-white to-teal-50'
+                                    : isMexican
+                                        ? 'bg-gradient-to-br from-amber-50 via-white to-orange-50 border border-amber-200'
+                                        : 'bg-gradient-to-br from-slate-50 via-white to-slate-100 border border-slate-200'}
+                                ${isPlayable ? 'ring-2 ring-green-400 cursor-pointer shadow-lg' : 'shadow-md'}
+                                ${isDragOver && canAccess ? 'ring-4 ring-blue-400 scale-[1.01] bg-blue-50' : ''}
+                            `}
+                        >
+                            {/* Header */}
+                            <div className="flex items-center justify-between mb-3">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-2xl">
+                                        {isMexican ? '🚂' : isMyTrain ? '🏠' : focusedTrain.isOpen ? '🔓' : '🔒'}
+                                    </span>
+                                    <div>
+                                        <span className={`font-bold text-base ${isMexican ? 'text-amber-700' : isMyTrain ? 'text-emerald-700' : 'text-slate-700'}`}>
+                                            {isMexican ? 'Trem Mexicano' : isMyTrain ? 'Meu Trem' : `Trem de ${owner?.name.split(' ')[0]}`}
                                         </span>
-                                        <span className={`font-semibold text-sm ${isMexican ? 'text-amber-700' : isMyTrain ? 'text-emerald-700' : 'text-slate-600'}`}>
-                                            {isMexican ? 'Trem Mexicano' : isMyTrain ? 'Meu Trem' : `${owner?.name.split(' ')[0]}`}
-                                        </span>
-                                        {train.isOpen && !isMexican && (
-                                            <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded-full text-[10px] font-bold">
-                                                ABERTO
-                                            </span>
-                                        )}
-                                        {/* View All Button for My Train */}
-                                        {isMyTrain && (
-                                            <button
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    setViewingTrain(train);
-                                                }}
-                                                className="ml-2 px-2 py-0.5 bg-slate-800 text-white text-[10px] font-bold rounded-md flex items-center gap-1 active:scale-95 transition-transform"
-                                            >
-                                                Ver Tudo
-                                            </button>
-                                        )}
+                                        <div className="flex items-center gap-2 mt-0.5">
+                                            <span className="text-xs text-slate-400">{focusedTrain.pieces.length} peças</span>
+                                            {focusedTrain.isOpen && !isMexican && (
+                                                <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded-full text-[10px] font-bold">
+                                                    ABERTO
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2">
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    {!isMyTrain && (
                                         <button
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                setViewingTrain(train);
+                                                setFocusedTrainId(null); // Back to My Train
                                             }}
-                                            className="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors"
-                                            title="Ver melhor"
+                                            className="px-3 py-1 bg-slate-200 text-slate-600 text-xs font-bold rounded-lg hover:bg-slate-300 transition-colors"
                                         >
-                                            <Icon name="maximize-2" size={14} />
+                                            ← Voltar
                                         </button>
-                                        {isDragOver && canAccess && (
-                                            <span className="flex items-center gap-1 px-2 py-1 bg-blue-500 text-white rounded-full text-[10px] font-bold animate-pulse">
-                                                <Icon name="download" size={10} />
-                                                SOLTAR AQUI
-                                            </span>
-                                        )}
-                                        {isPlayable && !isDragOver && (
-                                            <span className="flex items-center gap-1 px-2 py-1 bg-green-500 text-white rounded-full text-[10px] font-bold">
-                                                <Icon name="check" size={10} />
-                                                JOGAR
-                                            </span>
-                                        )}
-                                    </div>
-                                </div>
-
-                                <div
-                                    className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin"
-                                    ref={el => { if (el) trainRefs.current[train.id] = el; }}
-                                >
-                                    {train.pieces.length === 0 ? (
-                                        <div className={`
-                                            flex items-center gap-2 text-xs italic py-3 px-4 rounded-lg border-2 border-dashed flex-shrink-0
-                                            ${isDragOver ? 'border-blue-400 bg-blue-50 text-blue-600' : 'border-slate-200 bg-slate-50 text-slate-400'}
-                                        `}>
-                                            <span>{isDragOver ? '📥' : '📍'}</span>
-                                            <span>{isDragOver ? 'Solte a peça aqui' : `Ponta: ${train.openEndText}`}</span>
-                                        </div>
-                                    ) : (
-                                        <>
-                                            {train.pieces.map((placed, idx) => {
-                                                const isLast = idx === train.pieces.length - 1;
-                                                return (
-                                                    <div
-                                                        key={`${train.id}-${idx}`}
-                                                        className={`transform transition-all ${isLast ? 'scale-110 mx-2 z-10' : 'scale-95 opacity-90'}`}
-                                                    >
-                                                        <DominoPiece
-                                                            piece={placed.piece}
-                                                            flipped={placed.orientation === 'flipped'}
-                                                            size={isLast ? "md" : "sm"}
-                                                        />
-                                                    </div>
-                                                );
-                                            })}
-
-                                            {/* Drop Zone Placeholder at the end */}
-                                            {canAccess && isMyTurn && (
-                                                <div className={`
-                                                    min-w-[60px] h-[40px] rounded-lg border-2 border-dashed flex items-center justify-center transition-all ml-2
-                                                    ${isDragOver
-                                                        ? 'border-blue-400 bg-blue-50 w-[80px] opacity-100'
-                                                        : 'border-slate-200 w-[10px] opacity-0 hover:opacity-100 hover:w-[60px]'}
-                                                `}>
-                                                    {isDragOver && <Icon name="download" size={16} className="text-blue-400 animate-bounce" />}
-                                                </div>
-                                            )}
-                                        </>
+                                    )}
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setViewingTrain(focusedTrain);
+                                        }}
+                                        className="px-3 py-1 bg-slate-800 text-white text-xs font-bold rounded-lg hover:bg-slate-700 transition-colors"
+                                    >
+                                        Ver Tudo
+                                    </button>
+                                    {isDragOver && canAccess && (
+                                        <span className="flex items-center gap-1 px-2 py-1 bg-blue-500 text-white rounded-full text-[10px] font-bold animate-pulse">
+                                            <Icon name="download" size={10} />
+                                            SOLTAR
+                                        </span>
+                                    )}
+                                    {isPlayable && !isDragOver && (
+                                        <span className="flex items-center gap-1 px-2 py-1 bg-green-500 text-white rounded-full text-[10px] font-bold">
+                                            <Icon name="check" size={10} />
+                                            JOGAR
+                                        </span>
                                     )}
                                 </div>
                             </div>
-                        );
-                    })}
+
+                            {/* Carousel */}
+                            <div
+                                className="flex items-center gap-4 overflow-x-auto pb-4 pt-2 scrollbar-hide snap-x snap-mandatory"
+                                style={{ paddingLeft: '40%', paddingRight: '40%' }}
+                                ref={el => { if (el) trainRefs.current[focusedTrain.id] = el; }}
+                                onScroll={() => handleTrainScroll(focusedTrain.id)}
+                            >
+                                {focusedTrain.pieces.length === 0 ? (
+                                    <div className="flex items-center justify-center w-full py-8 text-slate-400">
+                                        <div className="text-center">
+                                            <span className="text-3xl">📍</span>
+                                            <p className="text-sm mt-2">Ponta: {focusedTrain.openEndText}</p>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <>
+                                        {focusedTrain.pieces.map((placed, idx) => {
+                                            const isFocused = focusedIndicesRef.current[focusedTrain.id] === idx;
+                                            return (
+                                                <div
+                                                    key={`${focusedTrain.id}-${idx}`}
+                                                    className={`
+                                                        transform transition-all duration-300 snap-center flex-shrink-0 cursor-pointer
+                                                        ${isFocused
+                                                            ? 'scale-150 z-20 opacity-100 drop-shadow-xl'
+                                                            : 'scale-75 opacity-50 blur-[0.5px] grayscale-[0.3]'}
+                                                    `}
+                                                    onDoubleClick={(e) => {
+                                                        e.stopPropagation();
+                                                        setViewingPiece(placed.piece);
+                                                    }}
+                                                >
+                                                    <DominoPiece
+                                                        piece={placed.piece}
+                                                        flipped={placed.orientation === 'flipped'}
+                                                        size="md"
+                                                    />
+                                                </div>
+                                            );
+                                        })}
+                                        {/* Drop Zone */}
+                                        {canAccess && isMyTurn && (
+                                            <div className="snap-center flex-shrink-0">
+                                                <div className={`
+                                                    w-[70px] h-[45px] rounded-xl border-2 border-dashed flex items-center justify-center transition-all
+                                                    ${isDragOver ? 'border-blue-500 bg-blue-100 text-blue-600' : 'border-slate-300 text-slate-400 bg-slate-50'}
+                                                `}>
+                                                    <Icon name={isDragOver ? "download" : "plus"} size={18} />
+                                                </div>
+                                            </div>
+                                        )}
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                    );
+                })()}
+
+                {/* Other Trains Bar */}
+                <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                    {room.trains
+                        .filter(t => t.ownerId !== currentUserId) // Exclude My Train
+                        .map(train => {
+                            const isMexican = train.ownerId === null;
+                            const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
+                            const isPlayable = playableTrains.some(t => t.id === train.id);
+                            const isFocused = focusedTrainId === train.id;
+                            const isDragOver = dragOverTrain === train.id;
+
+                            return (
+                                <div
+                                    key={train.id}
+                                    data-train-id={train.id}
+                                    onClick={() => isPlayable && handlePlaceOnTrain(train)}
+                                    onDoubleClick={(e) => {
+                                        e.stopPropagation();
+                                        setFocusedTrainId(train.id);
+                                    }}
+                                    onDragOver={(e) => isMyTurn && handleDragOver(e, train.id)}
+                                    onDragLeave={handleDragLeave}
+                                    onDrop={(e) => isMyTurn && handleDropOnTrain(e, train)}
+                                    className={`
+                                        flex-shrink-0 p-3 rounded-xl transition-all cursor-pointer min-w-[120px]
+                                        ${isMexican
+                                            ? 'bg-amber-50 border border-amber-200'
+                                            : 'bg-slate-50 border border-slate-200'}
+                                        ${isFocused ? 'ring-2 ring-blue-400' : ''}
+                                        ${isPlayable ? 'ring-2 ring-green-400' : ''}
+                                        ${isDragOver ? 'ring-2 ring-blue-500 bg-blue-50' : ''}
+                                        hover:shadow-md
+                                    `}
+                                >
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <span className="text-sm">{isMexican ? '🚂' : train.isOpen ? '🔓' : '🔒'}</span>
+                                        <span className="text-xs font-bold text-slate-600 truncate">
+                                            {isMexican ? 'Mexicano' : owner?.name.split(' ')[0]}
+                                        </span>
+                                    </div>
+                                    <div className="flex gap-1 overflow-hidden">
+                                        {train.pieces.slice(-3).map((p, i) => (
+                                            <div key={i} className="w-6 h-8 bg-white rounded border border-slate-200 flex items-center justify-center text-[8px] font-bold text-slate-400">
+                                                {p.piece.leftIndex}|{p.piece.rightIndex}
+                                            </div>
+                                        ))}
+                                        {train.pieces.length === 0 && (
+                                            <span className="text-[10px] text-slate-400">Vazio</span>
+                                        )}
+                                    </div>
+                                    <p className="text-[10px] text-slate-400 mt-1">{train.pieces.length} peças • Toque 2x para ver</p>
+                                </div>
+                            );
+                        })}
                 </div>
             </div>
+
             {/* My Hand */}
             <div className={`
                 flex-shrink-0 border-t-2 bg-white p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]
@@ -408,7 +520,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     selectedPieceId={selectedPiece?.id || null}
                     playablePieceIds={playablePieceIds}
                     onSelectPiece={handleSelectPiece}
-                    onReorderPieces={handleReorderHand}
                     onDragStart={handleHandDragStart}
                     onDragEnd={handleHandDragEnd}
                     onTrainHover={(trainId) => setDragOverTrain(trainId)}
@@ -417,16 +528,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         const train = room.trains.find(t => t.id === trainId);
                         if (train) await handlePlaceOnTrain(train, pieceId);
                     }}
+                    onPieceDoubleClick={(piece) => setViewingPiece(piece)}
                 />
-
-                {selectedPiece && (
-                    <div className="flex items-center gap-2 mt-2 p-2 bg-orange-50 rounded-lg border border-orange-200">
-                        <span className="text-orange-500">👆</span>
-                        <p className="text-xs text-orange-700 font-medium">
-                            Arraste para um trem ou clique em um trem destacado para jogar
-                        </p>
-                    </div>
-                )}
 
                 {!isMyTurn && (
                     <div className="flex items-center justify-center gap-2 mt-2 p-2 bg-slate-100 rounded-lg">
@@ -459,6 +562,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     />
                 )
             }
+
+            {/* Piece Detail Modal */}
+            {viewingPiece && (
+                <DominoPieceModal
+                    piece={viewingPiece}
+                    isOpen={true}
+                    onClose={() => setViewingPiece(null)}
+                />
+            )}
         </div>
     );
 };

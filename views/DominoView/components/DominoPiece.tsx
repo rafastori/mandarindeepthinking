@@ -1,8 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { DominoPiece as DominoPieceType } from '../types';
-
-import Icon from '../../../components/Icon';
-import { DominoPieceModal } from './DominoPieceModal';
 
 interface DominoPieceProps {
     piece: DominoPieceType;
@@ -12,6 +9,7 @@ interface DominoPieceProps {
     disabled?: boolean;
     canPlay?: boolean;
     onClick?: () => void;
+    onDoubleClick?: () => void;
     size?: 'sm' | 'md' | 'lg';
     draggable?: boolean;
 }
@@ -24,12 +22,10 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
     disabled = false,
     canPlay = false,
     onClick,
+    onDoubleClick,
     size = 'md',
     draggable = false
 }) => {
-    const [showModal, setShowModal] = useState(false);
-    const longPressTimer = useRef<NodeJS.Timeout | null>(null);
-    const [isLongPress, setIsLongPress] = useState(false);
 
     const leftText = flipped ? piece.rightText : piece.leftText;
     const rightText = flipped ? piece.leftText : piece.rightText;
@@ -51,11 +47,11 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         }
     };
 
-    // Double click to preview
+    // Double click handler
     const handleDoubleClick = (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
-        setShowModal(true);
+        onDoubleClick?.();
     };
 
     // 3D color effects
@@ -128,7 +124,7 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                 <div
                     onClick={handleClick}
                     onDoubleClick={handleDoubleClick}
-                    className={`flex flex-col ${containerClasses} ${config.height} select-none touch-none`}
+                    className={`flex flex-col ${containerClasses} ${config.height} select-none`}
                     style={{ transform: selected ? 'perspective(500px) rotateX(-5deg) translateY(-4px)' : '' }}
                 >
                     <div className={`
@@ -150,8 +146,6 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                         <span className={`${config.index} opacity-60 font-medium`}>{rightIndex}</span>
                     </div>
                 </div>
-
-                <DominoPieceModal piece={piece} isOpen={showModal} onClose={() => setShowModal(false)} />
             </>
         );
     }
@@ -167,7 +161,6 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                 {renderSide(leftText, leftIndex, true)}
                 {renderSide(rightText, rightIndex, false)}
             </div>
-            {showModal && <DominoPieceModal piece={piece} isOpen={showModal} onClose={() => setShowModal(false)} />}
         </>
     );
 };

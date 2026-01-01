@@ -8,12 +8,11 @@ interface PlayerHandProps {
     selectedPieceId: string | null;
     playablePieceIds: string[];
     onSelectPiece: (piece: DominoPieceType) => void;
-    onReorderPieces: (newOrder: DominoPieceType[]) => void;
-    onDragPieceToTrain?: (pieceId: string) => void;
     onDragStart?: (pieceId: string) => void;
     onDragEnd?: () => void;
     onTrainHover?: (trainId: string | null) => void;
     onTrainDrop?: (trainId: string, pieceId: string) => void;
+    onPieceDoubleClick?: (piece: DominoPieceType) => void;
 }
 
 export const PlayerHand: React.FC<PlayerHandProps> = ({
@@ -22,103 +21,88 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
     selectedPieceId,
     playablePieceIds,
     onSelectPiece,
-    onReorderPieces,
-    onDragPieceToTrain,
     onDragStart,
     onDragEnd,
     onTrainHover,
-    onTrainDrop
+    onTrainDrop,
+    onPieceDoubleClick
 }) => {
-    // Custom Drag State
     const [draggingId, setDraggingId] = useState<string | null>(null);
     const [ghostPos, setGhostPos] = useState({ x: 0, y: 0 });
-    const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
 
     const dragRef = useRef<{
         active: boolean;
-        timer: NodeJS.Timeout | null;
         startPos: { x: number; y: number };
         pieceId: string | null;
-        index: number | null;
+        piece: DominoPieceType | null;
     }>({
         active: false,
-        timer: null,
         startPos: { x: 0, y: 0 },
         pieceId: null,
-        index: null
+        piece: null
     });
+
+    // Double-tap detection
+    const lastTapRef = useRef<{ time: number; pieceId: string | null }>({ time: 0, pieceId: null });
 
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-    // Cancel drag on unmount
-    useEffect(() => {
-        return () => {
-            if (dragRef.current.timer) clearTimeout(dragRef.current.timer);
-        };
-    }, []);
+    const handlePointerDown = (e: React.PointerEvent, piece: DominoPieceType) => {
+        // Check for double-tap first
+        const now = Date.now();
+        if (lastTapRef.current.pieceId === piece.id && now - lastTapRef.current.time < 300) {
+            e.preventDefault();
+            onPieceDoubleClick?.(piece);
+            lastTapRef.current = { time: 0, pieceId: null };
+            return;
+        }
+        lastTapRef.current = { time: now, pieceId: piece.id };
 
-    const handlePointerDown = (e: React.PointerEvent, piece: DominoPieceType, index: number) => {
-        // Prevent default only if necessary, but we need scroll to work initially
-        // e.preventDefault(); 
-
+        // Store start position for direction detection
         dragRef.current = {
             active: false,
-            timer: setTimeout(() => startDrag(e.clientX, e.clientY, piece, index), 1000), // 1000ms long press
             startPos: { x: e.clientX, y: e.clientY },
             pieceId: piece.id,
-            index: index
+            piece: piece
         };
-    };
-
-    const startDrag = (x: number, y: number, piece: DominoPieceType, index: number) => {
-        dragRef.current.active = true;
-        setDraggingId(piece.id);
-        setGhostPos({ x, y });
-        onDragStart?.(piece.id);
-
-        // Vibrate if supported
-        if (navigator.vibrate) navigator.vibrate(50);
     };
 
     const handlePointerMove = (e: React.PointerEvent) => {
-        if (!dragRef.current.pieceId) return;
+        if (!dragRef.current.pieceId || !dragRef.current.piece) return;
+
+        const deltaX = e.clientX - dragRef.current.startPos.x;
+        const deltaY = e.clientY - dragRef.current.startPos.y;
+        const absX = Math.abs(deltaX);
+        const absY = Math.abs(deltaY);
 
         if (!dragRef.current.active) {
-            // Check if moved too much - cancel long press (Scroll detection)
-            const moveX = Math.abs(e.clientX - dragRef.current.startPos.x);
-            const moveY = Math.abs(e.clientY - dragRef.current.startPos.y);
+            // Direction detection: determine if horizontal scroll or vertical drag
+            const totalMove = Math.sqrt(absX * absX + absY * absY);
 
-            if (moveX > 10 || moveY > 10) {
-                if (dragRef.current.timer) {
-                    clearTimeout(dragRef.current.timer);
-                    dragRef.current.timer = null;
-                    dragRef.current.pieceId = null; // Reset
+            if (totalMove > 15) {
+                // Check direction
+                if (absY > absX && deltaY < -10) {
+                    // Moving UP = start drag to train
+                    e.preventDefault();
+                    dragRef.current.active = true;
+                    setDraggingId(dragRef.current.pieceId);
+                    setGhostPos({ x: e.clientX, y: e.clientY });
+                    onDragStart?.(dragRef.current.pieceId);
+
+                    if (navigator.vibrate) navigator.vibrate(30);
+                } else if (absX > absY) {
+                    // Moving HORIZONTAL = cancel and allow scroll
+                    dragRef.current.pieceId = null;
+                    dragRef.current.piece = null;
                 }
             }
         } else {
-            // Dragging Logic
-            e.preventDefault(); // Stop scrolling while dragging
+            // Already dragging - update ghost position and check targets
+            e.preventDefault();
             setGhostPos({ x: e.clientX, y: e.clientY });
 
-            // Check collisions
+            // Check train targets
             const elements = document.elementsFromPoint(e.clientX, e.clientY);
-
-            // 1. Check Reorder (Internal)
-            let foundIndex = false;
-            for (const el of elements) {
-                const indexAttr = el.getAttribute('data-index');
-                if (indexAttr) {
-                    const idx = parseInt(indexAttr);
-                    if (idx !== dragRef.current.index) {
-                        setDragOverIndex(idx);
-                    }
-                    foundIndex = true;
-                    break;
-                }
-            }
-            if (!foundIndex) setDragOverIndex(null);
-
-            // 2. Check Train (External)
             let foundTrain = false;
             for (const el of elements) {
                 const trainId = el.getAttribute('data-train-id');
@@ -133,86 +117,69 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
     };
 
     const handlePointerUp = (e: React.PointerEvent) => {
-        if (dragRef.current.timer) {
-            clearTimeout(dragRef.current.timer);
-            dragRef.current.timer = null;
-        }
+        if (dragRef.current.active && dragRef.current.pieceId) {
+            onTrainHover?.(null);
 
-        if (dragRef.current.active && dragRef.current.pieceId && dragRef.current.index !== null) {
-            // Dropping
-            onTrainHover?.(null); // Clear highlight
-
-            // Check Drop Target
+            // Check if dropped on a train
             const elements = document.elementsFromPoint(e.clientX, e.clientY);
-            let droppedOnTrain = false;
-
             for (const el of elements) {
                 const trainId = el.getAttribute('data-train-id');
                 if (trainId) {
                     onTrainDrop?.(trainId, dragRef.current.pieceId);
-                    droppedOnTrain = true;
                     break;
                 }
-            }
-
-            // If not dropped on train, check reorder
-            if (!droppedOnTrain && dragOverIndex !== null && dragOverIndex !== dragRef.current.index) {
-                const newPieces = [...pieces];
-                const [moved] = newPieces.splice(dragRef.current.index, 1);
-                newPieces.splice(dragOverIndex, 0, moved);
-                onReorderPieces(newPieces);
             }
 
             onDragEnd?.();
         }
 
         // Reset
-        dragRef.current = { active: false, timer: null, startPos: { x: 0, y: 0 }, pieceId: null, index: null };
+        dragRef.current = { active: false, startPos: { x: 0, y: 0 }, pieceId: null, piece: null };
         setDraggingId(null);
-        setDragOverIndex(null);
+    };
+
+    const handlePointerCancel = () => {
+        dragRef.current = { active: false, startPos: { x: 0, y: 0 }, pieceId: null, piece: null };
+        setDraggingId(null);
+        onTrainHover?.(null);
     };
 
     return (
-        <div className="relative select-none"> {/* Allow touch scrolling on wrapper */}
+        <div className="relative select-none">
             {/* Instructions */}
             <div className="flex items-center gap-2 mb-2 text-xs text-slate-500">
                 <span>💡</span>
-                <span>Segure por 1 segundo para arrastar • Clique para selecionar • Duplo clique para detalhes</span>
+                <span>Arraste para cima ↑ para jogar • Toque duplo para ampliar</span>
             </div>
 
-            {/* Pieces Container */}
+            {/* Pieces Container - Native horizontal scroll */}
             <div
                 ref={scrollContainerRef}
-                className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory px-4 touch-pan-x" // touch-pan-x allows horizontal scroll
-                style={{ touchAction: draggingId ? 'none' : 'pan-x' }} // Disable scroll ONLY when dragging
+                className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory px-4"
+                style={{
+                    touchAction: draggingId ? 'none' : 'pan-x',
+                    WebkitOverflowScrolling: 'touch'
+                }}
                 onPointerMove={handlePointerMove}
                 onPointerUp={handlePointerUp}
-                onContextMenu={(e) => e.preventDefault()} // Disable context menu
-                onWheel={(e) => {
-                    if (scrollContainerRef.current && e.deltaY !== 0) {
-                        scrollContainerRef.current.scrollLeft += e.deltaY;
-                    }
-                }}
+                onPointerCancel={handlePointerCancel}
+                onContextMenu={(e) => e.preventDefault()}
             >
-                {pieces.map((piece, index) => {
+                {pieces.map((piece) => {
                     const isPlayable = playablePieceIds.includes(piece.id);
                     const isSelected = selectedPieceId === piece.id;
                     const isDragged = draggingId === piece.id;
-                    const isDraggedOver = dragOverIndex === index && !isDragged;
 
                     return (
                         <div
                             key={piece.id}
-                            data-index={index}
-                            onPointerDown={(e) => handlePointerDown(e, piece, index)}
+                            onPointerDown={(e) => handlePointerDown(e, piece)}
                             className={`
                                 flex-shrink-0 transition-all duration-200 snap-start
-                                ${isDraggedOver ? 'transform scale-95 opacity-80' : ''}
-                                ${isDragged ? 'opacity-30' : ''}
+                                ${isDragged ? 'opacity-30 scale-95' : ''}
                             `}
                             style={{
-                                marginLeft: isDraggedOver ? '20px' : '0', // Subtle shift
-                                transition: 'margin-left 0.2s ease'
+                                touchAction: draggingId ? 'none' : 'pan-x' // Allow horizontal scroll on cards
                             }}
                         >
                             <DominoPiece
@@ -241,7 +208,7 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
                     style={{
                         left: ghostPos.x,
                         top: ghostPos.y,
-                        transform: 'translate(-50%, -50%) rotate(-5deg)'
+                        transform: 'translate(-50%, -50%) rotate(-3deg)'
                     }}
                 >
                     <DominoPiece
