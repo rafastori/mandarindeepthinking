@@ -53,6 +53,7 @@ export interface Player {
     name: string;
     avatarUrl?: string;
     score?: number;
+    isBot?: boolean;
 }
 
 // ATUALIZAÇÃO: Card agora tem distratores

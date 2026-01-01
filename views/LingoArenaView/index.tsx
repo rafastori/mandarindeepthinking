@@ -118,6 +118,38 @@ const LingoArenaView: React.FC = () => {
         }
     };
 
+    // BOT Names pool
+    const BOT_NAMES = ['Ada', 'Tesla', 'Newton', 'Darwin', 'Curie', 'Einstein', 'Turing', 'Lovelace'];
+
+    const addBot = async () => {
+        if (!activeRoom || activeRoom.players.length >= 4) return;
+
+        // Pick a random name not already used
+        const usedNames = activeRoom.players.filter(p => p.isBot).map(p => p.name.replace('Bot ', ''));
+        const availableNames = BOT_NAMES.filter(n => !usedNames.includes(n));
+        const botName = availableNames.length > 0
+            ? availableNames[Math.floor(Math.random() * availableNames.length)]
+            : `Bot${Date.now().toString().slice(-4)}`;
+
+        const newBot: Player = {
+            id: `bot_${Date.now()}`,
+            name: `Bot ${botName}`,
+            score: 0,
+            isBot: true
+        };
+
+        await updateDoc(doc(db, 'gameRooms', activeRoom.id), {
+            players: arrayUnion(newBot)
+        });
+    };
+
+    const removeBot = async (botId: string) => {
+        if (!activeRoom) return;
+        const ref = doc(db, 'gameRooms', activeRoom.id);
+        const updatedPlayers = activeRoom.players.filter(p => p.id !== botId);
+        await updateDoc(ref, { players: updatedPlayers });
+    };
+
     const restartGame = async () => {
         if (!activeRoom || !window.confirm("Reiniciar partida?")) return;
         const resetPlayers = activeRoom.players.map(p => ({ ...p, score: 0 }));
@@ -300,6 +332,95 @@ const LingoArenaView: React.FC = () => {
         }
     };
 
+    // --- BOT AUTO-PLAY LOGIC ---
+    const botPlayRef = useRef<NodeJS.Timeout | null>(null);
+
+    // Helper to execute BOT action
+    const executeBotAction = async (botId: string, action: 'CORRECT' | 'WRONG' | 'PASS' | 'GRAB') => {
+        if (!activeRoom) return;
+        const ref = doc(db, 'gameRooms', activeRoom.id);
+
+        let newTeamScore = activeRoom.teamScore || 0;
+        const currentHands = { ...(activeRoom.activeHands || {}) };
+        let currentQueue = [...(activeRoom.cardQueue || [])];
+        const currentCardIndex = currentHands[botId];
+
+        const updatePlayerScore = (points: number) => {
+            return activeRoom.players.map(p => p.id === botId ? { ...p, score: (p.score || 0) + points } : p);
+        };
+        let updatedPlayers = activeRoom.players;
+
+        if (action === 'GRAB') {
+            if (currentQueue.length > 0) {
+                const nextCard = currentQueue.shift();
+                if (nextCard !== undefined) currentHands[botId] = nextCard;
+            }
+        } else {
+            if (currentCardIndex === undefined) return;
+
+            if (action === 'CORRECT') {
+                newTeamScore += 1;
+                updatedPlayers = updatePlayerScore(1);
+            } else if (action === 'WRONG') {
+                newTeamScore -= 3;
+                updatedPlayers = updatePlayerScore(-3);
+                currentQueue.push(currentCardIndex);
+            }
+
+            delete currentHands[botId];
+            if (currentQueue.length > 0) {
+                const nextCard = currentQueue.shift();
+                if (nextCard !== undefined) currentHands[botId] = nextCard;
+            }
+        }
+
+        const isWin = newTeamScore >= (activeRoom.targetScore || 20);
+        const isGameOverLoss = newTeamScore <= 0 && action === 'WRONG';
+
+        if (isWin || isGameOverLoss) {
+            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [] });
+        } else {
+            await updateDoc(ref, { teamScore: newTeamScore, players: updatedPlayers, activeHands: currentHands, cardQueue: currentQueue });
+        }
+    };
+
+    // Effect to trigger BOT actions
+    useEffect(() => {
+        if (!activeRoom || activeRoom.status !== 'playing' || !user) return;
+        if (activeRoom.hostId !== user.uid) return; // Only host runs bot logic
+
+        // Find bots that need to act
+        const bots = activeRoom.players.filter(p => p.isBot);
+        if (bots.length === 0) return;
+
+        // Clear existing timeout
+        if (botPlayRef.current) clearTimeout(botPlayRef.current);
+
+        // For each bot, check if they need to act
+        for (const bot of bots) {
+            const botHasCard = activeRoom.activeHands?.[bot.id] !== undefined;
+            const queueHasCards = (activeRoom.cardQueue?.length || 0) > 0;
+
+            if (!botHasCard && queueHasCards) {
+                // Bot needs to grab a card
+                botPlayRef.current = setTimeout(() => {
+                    executeBotAction(bot.id, 'GRAB');
+                }, 1500 + Math.random() * 1000); // 1.5-2.5s delay
+            } else if (botHasCard) {
+                // Bot has a card, needs to answer
+                botPlayRef.current = setTimeout(() => {
+                    // 70% accuracy
+                    const isCorrect = Math.random() < 0.7;
+                    executeBotAction(bot.id, isCorrect ? 'CORRECT' : 'WRONG');
+                }, 2500 + Math.random() * 2000); // 2.5-4.5s delay
+            }
+        }
+
+        return () => {
+            if (botPlayRef.current) clearTimeout(botPlayRef.current);
+        };
+    }, [activeRoom?.activeHands, activeRoom?.cardQueue, activeRoom?.status]);
+
     if (!user) return <div className="p-10 text-center text-slate-400">Faça login para jogar.</div>;
 
     return (
@@ -351,6 +472,8 @@ const LingoArenaView: React.FC = () => {
                         selectedTopics={selectedTopics} selectedLang={selectedLang} selectedDiff={selectedDiff} targetScore={targetScore} loadingDeck={loadingDeck}
                         onToggleTopic={toggleTopic} setLang={setSelectedLang} setDiff={setSelectedDiff} setTargetScore={setTargetScore}
                         onStart={() => handleGenerateCards(false)}
+                        onAddBot={addBot}
+                        onRemoveBot={removeBot}
                     />
                 )}
 

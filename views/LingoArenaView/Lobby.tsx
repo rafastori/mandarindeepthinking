@@ -25,23 +25,42 @@ interface LobbyProps {
     setTargetScore: (s: number) => void;
     // Actions
     onStart: () => void;
+    onAddBot?: () => void;
+    onRemoveBot?: (botId: string) => void;
 }
 
 export const Lobby: React.FC<LobbyProps> = ({
     room, isHost, selectedTopics, selectedLang, selectedDiff, targetScore, loadingDeck,
-    onToggleTopic, setLang, setDiff, setTargetScore, onStart
+    onToggleTopic, setLang, setDiff, setTargetScore, onStart, onAddBot, onRemoveBot
 }) => {
+    const botCount = room.players.filter(p => p.isBot).length;
+    const canAddBot = room.players.length < 4;
+
     return (
         <>
             {/* Área de Jogadores */}
             <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100 mb-4">
-                <h3 className="text-xs font-bold text-slate-400 uppercase mb-3 flex items-center gap-2">
-                    <Icon name="users" size={14} /> Jogadores Conectados ({room.players.length})
-                </h3>
+                <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-xs font-bold text-slate-400 uppercase flex items-center gap-2">
+                        <Icon name="users" size={14} /> Jogadores ({room.players.length}/4)
+                    </h3>
+                    {isHost && canAddBot && onAddBot && (
+                        <button
+                            onClick={onAddBot}
+                            className="flex items-center gap-1 px-3 py-1.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-lg hover:bg-purple-200 transition-colors"
+                        >
+                            <span>🤖</span> Adicionar BOT
+                        </button>
+                    )}
+                </div>
                 <div className="grid grid-cols-2 gap-3">
                     {room.players.map(player => (
-                        <div key={player.id} className="flex items-center gap-3 p-2 bg-slate-50 rounded-lg">
-                            {player.avatarUrl ? (
+                        <div key={player.id} className={`flex items-center gap-3 p-2 rounded-lg ${player.isBot ? 'bg-purple-50 border border-purple-200' : 'bg-slate-50'}`}>
+                            {player.isBot ? (
+                                <div className="w-8 h-8 rounded-full bg-purple-200 flex items-center justify-center text-lg">
+                                    🤖
+                                </div>
+                            ) : player.avatarUrl ? (
                                 <img src={player.avatarUrl} alt={player.name} className="w-8 h-8 rounded-full border border-slate-200" />
                             ) : (
                                 <div className="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">
@@ -51,7 +70,16 @@ export const Lobby: React.FC<LobbyProps> = ({
                             <div className="flex-1 min-w-0">
                                 <p className="text-sm font-bold text-slate-700 truncate">{player.name}</p>
                                 {player.id === room.hostId && <p className="text-[10px] text-brand-600 font-medium">Host</p>}
+                                {player.isBot && <p className="text-[10px] text-purple-600 font-medium">BOT</p>}
                             </div>
+                            {isHost && player.isBot && onRemoveBot && (
+                                <button
+                                    onClick={() => onRemoveBot(player.id)}
+                                    className="text-red-400 hover:text-red-600 p-1"
+                                >
+                                    <Icon name="x" size={14} />
+                                </button>
+                            )}
                         </div>
                     ))}
                 </div>
