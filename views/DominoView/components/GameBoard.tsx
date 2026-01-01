@@ -3,6 +3,8 @@ import Icon from '../../../components/Icon';
 import { DominoRoom, DominoPiece as DominoPieceType, Train } from '../types';
 import { DominoPiece } from './DominoPiece';
 import { PlayerHand } from './PlayerHand';
+import { HandViewModal } from './HandViewModal';
+import { TrainViewModal } from './TrainViewModal';
 
 interface GameBoardProps {
     room: DominoRoom;
@@ -24,6 +26,24 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const [selectedPiece, setSelectedPiece] = useState<DominoPieceType | null>(null);
     const [localHand, setLocalHand] = useState<DominoPieceType[] | null>(null);
     const [dragOverTrain, setDragOverTrain] = useState<string | null>(null);
+    const [draggingPieceId, setDraggingPieceId] = useState<string | null>(null);
+
+    const [showHandModal, setShowHandModal] = useState(false);
+    const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
+
+    // Auto-scroll ref
+    const trainRefs = React.useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+    // Scroll to end of my train when piece added
+    React.useEffect(() => {
+        const myTrain = room.trains.find(t => t.ownerId === currentUserId);
+        if (myTrain && trainRefs.current[myTrain.id]) {
+            trainRefs.current[myTrain.id]?.scrollTo({
+                left: trainRefs.current[myTrain.id]?.scrollWidth,
+                behavior: 'smooth'
+            });
+        }
+    }, [room.trains]); // Simple dependency, optimizes later if needed
 
     const isMyTurn = room.currentTurn === currentUserId;
     const currentPlayer = room.players.find(p => p.id === currentUserId);
@@ -112,57 +132,69 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         }
     };
 
-    const playableTrains = selectedPiece ? getPlayableTrains(selectedPiece) : [];
+    const handleHandDragStart = (pieceId: string) => {
+        setDraggingPieceId(pieceId);
+    };
+
+    const handleHandDragEnd = () => {
+        setDraggingPieceId(null);
+    };
+
+    const effectiveSelectedPiece = draggingPieceId
+        ? myHand.find(p => p.id === draggingPieceId) || null
+        : selectedPiece;
+
+    const playableTrains = effectiveSelectedPiece ? getPlayableTrains(effectiveSelectedPiece) : [];
     const playablePieceIds = myHand.filter(p => getPlayableTrains(p).length > 0).map(p => p.id);
     const hasPlayablePiece = playablePieceIds.length > 0;
 
     return (
         <div className="h-full flex flex-col bg-gradient-to-b from-slate-100 to-slate-200 overflow-hidden">
             {/* Header */}
-            <div className="flex-shrink-0 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 p-3 shadow-lg">
+            <div className="flex-shrink-0 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 p-2 shadow-lg z-10">
                 <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur">
-                            <span className="text-2xl">🎲</span>
+                    <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur">
+                            <span className="text-lg">🎲</span>
                         </div>
                         <div>
-                            <h2 className="font-bold text-white text-sm">Dominó Mexicano</h2>
-                            <div className="flex items-center gap-2">
-                                <span className={`w-2 h-2 rounded-full ${isMyTurn ? 'bg-green-400 animate-pulse' : 'bg-white/30'}`} />
-                                <p className="text-white/80 text-xs">
-                                    {isMyTurn ? 'Sua vez!' : `Vez de ${currentTurnPlayer?.name.split(' ')[0]}`}
+                            <h2 className="font-bold text-white text-xs leading-none">Dominó</h2>
+                            <div className="flex items-center gap-1.5 mt-0.5">
+                                <span className={`w-1.5 h-1.5 rounded-full ${isMyTurn ? 'bg-green-400 animate-pulse' : 'bg-white/30'}`} />
+                                <p className="text-white/90 text-[10px] font-medium leading-none">
+                                    {isMyTurn ? 'Sua vez' : `Vez de ${currentTurnPlayer?.name.split(' ')[0]}`}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                        <div className="text-center bg-white/10 rounded-lg px-3 py-1.5 backdrop-blur">
-                            <p className="text-[10px] text-white/60 uppercase tracking-wider">Monte</p>
-                            <p className="text-xl font-bold text-white">{room.boneyard.length}</p>
+                    <div className="flex items-center gap-2">
+                        <div className="text-center bg-white/10 rounded-lg px-2 py-1 backdrop-blur min-w-[50px]">
+                            <p className="text-[9px] text-white/70 uppercase tracking-widest leading-none mb-0.5">Monte</p>
+                            <p className="text-sm font-bold text-white leading-none">{room.boneyard.length}</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Players Row */}
-            <div className="flex-shrink-0 flex gap-2 p-2 overflow-x-auto bg-white/50 backdrop-blur border-b border-slate-200">
+            <div className="flex-shrink-0 flex gap-1.5 p-1.5 overflow-x-auto bg-white/60 backdrop-blur border-b border-slate-200 no-scrollbar">
                 {room.players.map((p, idx) => (
                     <div
                         key={p.id}
                         className={`
-                            flex items-center gap-2 px-3 py-1.5 rounded-full transition-all flex-shrink-0
+                            flex items-center gap-1.5 px-2 py-1 rounded-full transition-all flex-shrink-0
                             ${p.id === room.currentTurn
-                                ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md'
-                                : 'bg-white text-slate-700 shadow-sm'}
+                                ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-sm ring-1 ring-orange-200'
+                                : 'bg-white text-slate-600 border border-slate-100'}
                         `}
                     >
-                        <span className="text-sm">
-                            {idx === 0 ? '👑' : p.id === currentUserId ? '👤' : '🎮'}
+                        <span className="text-xs">
+                            {idx === 0 ? '👑' : p.id === currentUserId ? '👤' : '🤖'}
                         </span>
-                        <span className="font-medium text-xs">{p.name.split(' ')[0]}</span>
+                        <span className="font-bold text-[10px] truncate max-w-[60px]">{p.name.split(' ')[0]}</span>
                         <span className={`
-                            px-1.5 py-0.5 rounded-full text-[10px] font-bold
-                            ${p.id === room.currentTurn ? 'bg-white/20' : 'bg-slate-100'}
+                            px-1.5 py-0.5 rounded-full text-[9px] font-bold min-w-[20px] text-center
+                            ${p.id === room.currentTurn ? 'bg-white/20' : 'bg-slate-100 text-slate-500'}
                         `}>
                             {p.hand.length}
                         </span>
@@ -182,7 +214,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 <span>⭐</span>
                             </div>
                             <div className="transform hover:scale-105 transition-transform">
-                                <DominoPiece piece={room.hubPiece} size="lg" />
+                                <DominoPiece piece={room.hubPiece} size="md" />
                             </div>
                         </div>
                     )}
@@ -201,6 +233,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         return (
                             <div
                                 key={train.id}
+                                data-train-id={train.id}
                                 onDragOver={(e) => canAccess && isMyTurn && handleDragOver(e, train.id)}
                                 onDragLeave={handleDragLeave}
                                 onDrop={(e) => canAccess && isMyTurn && handleDropOnTrain(e, train)}
@@ -234,8 +267,30 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                                 ABERTO
                                             </span>
                                         )}
+                                        {/* View All Button for My Train */}
+                                        {isMyTrain && (
+                                            <button
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    setViewingTrain(train);
+                                                }}
+                                                className="ml-2 px-2 py-0.5 bg-slate-800 text-white text-[10px] font-bold rounded-md flex items-center gap-1 active:scale-95 transition-transform"
+                                            >
+                                                Ver Tudo
+                                            </button>
+                                        )}
                                     </div>
                                     <div className="flex items-center gap-2">
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setViewingTrain(train);
+                                            }}
+                                            className="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors"
+                                            title="Ver melhor"
+                                        >
+                                            <Icon name="maximize-2" size={14} />
+                                        </button>
                                         {isDragOver && canAccess && (
                                             <span className="flex items-center gap-1 px-2 py-1 bg-blue-500 text-white rounded-full text-[10px] font-bold animate-pulse">
                                                 <Icon name="download" size={10} />
@@ -251,24 +306,48 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                     </div>
                                 </div>
 
-                                <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+                                <div
+                                    className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin"
+                                    ref={el => { if (el) trainRefs.current[train.id] = el; }}
+                                >
                                     {train.pieces.length === 0 ? (
                                         <div className={`
-                                            flex items-center gap-2 text-xs italic py-3 px-4 rounded-lg border-2 border-dashed
+                                            flex items-center gap-2 text-xs italic py-3 px-4 rounded-lg border-2 border-dashed flex-shrink-0
                                             ${isDragOver ? 'border-blue-400 bg-blue-50 text-blue-600' : 'border-slate-200 bg-slate-50 text-slate-400'}
                                         `}>
                                             <span>{isDragOver ? '📥' : '📍'}</span>
                                             <span>{isDragOver ? 'Solte a peça aqui' : `Ponta: ${train.openEndText}`}</span>
                                         </div>
                                     ) : (
-                                        train.pieces.map((placed, idx) => (
-                                            <DominoPiece
-                                                key={`${train.id}-${idx}`}
-                                                piece={placed.piece}
-                                                flipped={placed.orientation === 'flipped'}
-                                                size="sm"
-                                            />
-                                        ))
+                                        <>
+                                            {train.pieces.map((placed, idx) => {
+                                                const isLast = idx === train.pieces.length - 1;
+                                                return (
+                                                    <div
+                                                        key={`${train.id}-${idx}`}
+                                                        className={`transform transition-all ${isLast ? 'scale-110 mx-2 z-10' : 'scale-95 opacity-90'}`}
+                                                    >
+                                                        <DominoPiece
+                                                            piece={placed.piece}
+                                                            flipped={placed.orientation === 'flipped'}
+                                                            size={isLast ? "md" : "sm"}
+                                                        />
+                                                    </div>
+                                                );
+                                            })}
+
+                                            {/* Drop Zone Placeholder at the end */}
+                                            {canAccess && isMyTurn && (
+                                                <div className={`
+                                                    min-w-[60px] h-[40px] rounded-lg border-2 border-dashed flex items-center justify-center transition-all ml-2
+                                                    ${isDragOver
+                                                        ? 'border-blue-400 bg-blue-50 w-[80px] opacity-100'
+                                                        : 'border-slate-200 w-[10px] opacity-0 hover:opacity-100 hover:w-[60px]'}
+                                                `}>
+                                                    {isDragOver && <Icon name="download" size={16} className="text-blue-400 animate-bounce" />}
+                                                </div>
+                                            )}
+                                        </>
                                     )}
                                 </div>
                             </div>
@@ -276,7 +355,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     })}
                 </div>
             </div>
-
             {/* My Hand */}
             <div className={`
                 flex-shrink-0 border-t-2 bg-white p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]
@@ -307,6 +385,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 Comprar
                             </button>
                             <button
+                                onClick={() => setShowHandModal(true)}
+                                className="flex items-center gap-1.5 px-3 py-2 bg-slate-700 text-white rounded-xl text-xs font-bold hover:bg-slate-800 transition-all active:scale-95"
+                            >
+                                <Icon name="layout-grid" size={14} />
+                                Ver Tudo
+                            </button>
+                            <button
                                 onClick={handlePass}
                                 className="flex items-center gap-1.5 px-3 py-2 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300 transition-all active:scale-95"
                             >
@@ -324,6 +409,14 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     playablePieceIds={playablePieceIds}
                     onSelectPiece={handleSelectPiece}
                     onReorderPieces={handleReorderHand}
+                    onDragStart={handleHandDragStart}
+                    onDragEnd={handleHandDragEnd}
+                    onTrainHover={(trainId) => setDragOverTrain(trainId)}
+                    onTrainDrop={async (trainId, pieceId) => {
+                        setDragOverTrain(null);
+                        const train = room.trains.find(t => t.id === trainId);
+                        if (train) await handlePlaceOnTrain(train, pieceId);
+                    }}
                 />
 
                 {selectedPiece && (
@@ -344,6 +437,28 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     </div>
                 )}
             </div>
+
+            {/* Hand View Modal */}
+            {
+                showHandModal && (
+                    <HandViewModal
+                        pieces={myHand}
+                        onClose={() => setShowHandModal(false)}
+                        onReorder={handleReorderHand}
+                    />
+                )
+            }
+
+            {/* Train View Modal */}
+            {
+                viewingTrain && (
+                    <TrainViewModal
+                        train={viewingTrain}
+                        isMyTrain={viewingTrain?.ownerId === currentUserId}
+                        onClose={() => setViewingTrain(null)}
+                    />
+                )
+            }
         </div>
     );
 };

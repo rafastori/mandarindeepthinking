@@ -21,6 +21,7 @@ import {
     DOMINO_CONSTANTS
 } from '../types';
 import { generateDominoTerms } from '../../../services/gemini';
+import { calculateBotMove } from '../utils/botLogic';
 
 /**
  * Gera as 91 peças de dominó a partir dos 13 pares
@@ -69,8 +70,51 @@ export const useDominoRoom = (userId?: string) => {
 
                 if (activeRoom) {
                     const updated = roomsData.find(r => r.id === activeRoom.id);
-                    if (updated) setActiveRoom(updated);
-                    else setActiveRoom(null);
+                    if (updated) {
+                        setActiveRoom(updated);
+
+                        // Bot Logic Trigger (Host Only)
+                        // If game is playing, it's a bot's turn, and I am the host => Make move
+                        if (updated.phase === 'playing' && userId === updated.hostId) {
+                            const currentPlayer = updated.players.find(p => p.id === updated.currentTurn);
+                            if (currentPlayer && currentPlayer.isBot) {
+                                // Add small delay for realism
+                                const timer = setTimeout(async () => {
+                                    const move = calculateBotMove(updated, currentPlayer.id);
+                                    console.log(`🤖 Bot ${currentPlayer.name} chose:`, move);
+
+                                    if (move.action === 'place' && move.pieceId && move.trainId) {
+                                        await placePiece(updated.id, move.pieceId, move.trainId, move.flipped || false);
+                                    } else if (move.action === 'draw') {
+                                        const drawn = await drawPiece(updated.id, currentPlayer.id);
+                                        // Optional: if drawn piece is playable, play immediately (recursive logic or next turn?)
+                                        // Standard rules often say: draw 1. If playable, play. Else pass.
+                                        // V1 Simplification: Bot draws. Next turn logic will see hand changed (or turn pass needed).
+                                        // Actually, if we just draw, the turn stays with Bot? No, drawPiece doesn't pass turn.
+                                        // So we need to Check if drawn piece is playable.
+
+                                        if (drawn) {
+                                            // Re-evaluate immediately with new hand?
+                                            // For simplicity V1: Just draw. The Effect will trigger again?
+                                            // No, unless we built-in a "post-draw" check.
+                                            // Let's implement immediate pass if draw logic requires, OR let effect re-trigger if state changes?
+                                            // If we draw, `updated` state might not reflect immediately in this closure. 
+                                            // But drawing updates DB -> triggers snapshot -> triggers this Effect again.
+                                            // So this is safe!
+                                        } else {
+                                            // Empty boneyard?
+                                            await passTurn(updated.id, currentPlayer.id);
+                                        }
+                                    } else {
+                                        await passTurn(updated.id, currentPlayer.id);
+                                    }
+                                }, 1500);
+                                return () => clearTimeout(timer);
+                            }
+                        }
+                    } else {
+                        setActiveRoom(null);
+                    }
                 }
             },
             (error) => {
@@ -80,7 +124,7 @@ export const useDominoRoom = (userId?: string) => {
         );
 
         return () => unsubscribe();
-    }, [activeRoom?.id]);
+    }, [activeRoom?.id, userId]); // Added userId dependency
 
     const createRoom = async (
         roomName: string,
@@ -139,12 +183,62 @@ export const useDominoRoom = (userId?: string) => {
             if (!roomSnap.exists()) return;
 
             const roomData = roomSnap.data() as DominoRoom;
+
+            // If host leaves, we might want to end game or assign new host?
+            // For now, if host leaves, bots stop.
+
             const updatedPlayers = roomData.players.filter(p => p.id !== playerId);
 
             await updateDoc(roomRef, { players: updatedPlayers });
             setActiveRoom(null);
         } catch (error) {
             console.error('Error leaving room:', error);
+        }
+    };
+
+    const addBot = async (roomId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+            if (roomData.players.length >= DOMINO_CONSTANTS.MAX_PLAYERS) return;
+
+            const botId = `bot-${Date.now()}`;
+            const botNames = ['Roboto', 'DaVinci', 'Tesla', 'Curie', 'Einstein', 'Ada', 'Turing'];
+            const existingNames = roomData.players.map(p => p.name);
+            const availableNames = botNames.filter(n => !existingNames.includes(n));
+            const botName = availableNames[Math.floor(Math.random() * availableNames.length)] || `Bot ${Math.floor(Math.random() * 100)}`;
+
+            const botPlayer: DominoPlayer = {
+                id: botId,
+                name: botName,
+                avatarUrl: '', // Could be a bot avatar URL
+                hand: [],
+                score: 0,
+                isReady: true, // Bots are always ready
+                isBot: true
+            };
+
+            await updateDoc(roomRef, { players: arrayUnion(botPlayer) });
+        } catch (error) {
+            console.error('Error adding bot:', error);
+        }
+    };
+
+    const removeBot = async (roomId: string, botId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+            const updatedPlayers = roomData.players.filter(p => p.id !== botId);
+
+            await updateDoc(roomRef, { players: updatedPlayers });
+        } catch (error) {
+            console.error('Error removing bot:', error);
         }
     };
 
@@ -230,16 +324,7 @@ export const useDominoRoom = (userId?: string) => {
             }));
 
             // 6. Inicializar trens
-            const trains: Train[] = [
-                {
-                    id: 'mexican',
-                    ownerId: null,
-                    pieces: [],
-                    isOpen: true,
-                    openEndIndex: 12,
-                    openEndText: termPairs[12].definition
-                }
-            ];
+            const trains: Train[] = [];
 
             updatedPlayers.forEach(p => {
                 trains.push({
@@ -438,6 +523,8 @@ export const useDominoRoom = (userId?: string) => {
         startGame,
         placePiece,
         drawPiece,
+        addBot,
+        removeBot,
         passTurn
     };
 };

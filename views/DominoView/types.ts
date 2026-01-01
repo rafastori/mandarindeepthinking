@@ -54,6 +54,7 @@ export interface DominoPlayer {
     hand: DominoPiece[];
     score: number;
     isReady: boolean;
+    isBot?: boolean;
 }
 
 // Configuração do jogo

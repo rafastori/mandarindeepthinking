@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { DominoPiece as DominoPieceType } from '../types';
+
 import Icon from '../../../components/Icon';
+import { DominoPieceModal } from './DominoPieceModal';
 
 interface DominoPieceProps {
     piece: DominoPieceType;
@@ -13,86 +15,6 @@ interface DominoPieceProps {
     size?: 'sm' | 'md' | 'lg';
     draggable?: boolean;
 }
-
-// Modal para visualizar texto completo
-const TextPreviewModal: React.FC<{
-    piece: DominoPieceType;
-    flipped?: boolean;
-    onClose: () => void;
-}> = ({ piece, flipped = false, onClose }) => {
-    const leftText = flipped ? piece.rightText : piece.leftText;
-    const rightText = flipped ? piece.leftText : piece.rightText;
-    const leftIndex = flipped ? piece.rightIndex : piece.leftIndex;
-    const rightIndex = flipped ? piece.leftIndex : piece.rightIndex;
-
-    return (
-        <div
-            className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
-            onClick={onClose}
-        >
-            <div
-                className="bg-white rounded-2xl max-w-sm w-full shadow-2xl"
-                onClick={e => e.stopPropagation()}
-            >
-                <div className="p-4 border-b border-slate-100 flex justify-between items-center">
-                    <h3 className="font-bold text-slate-800 flex items-center gap-2">
-                        🎲 Detalhes da Peça
-                    </h3>
-                    <button
-                        onClick={onClose}
-                        className="p-2 hover:bg-slate-100 rounded-lg transition-colors"
-                    >
-                        <Icon name="x" size={20} className="text-slate-500" />
-                    </button>
-                </div>
-                <div className="p-4 space-y-4">
-                    {/* Lado Esquerdo/Superior */}
-                    <div className="bg-gradient-to-r from-sky-50 to-sky-100 rounded-xl p-4 border border-sky-200">
-                        <div className="flex items-center gap-2 mb-2">
-                            <span className="w-6 h-6 bg-sky-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                                {leftIndex}
-                            </span>
-                            <span className="text-xs text-sky-600 font-medium uppercase">Termo</span>
-                        </div>
-                        <p className="text-sky-900 font-semibold text-lg break-words">{leftText}</p>
-                    </div>
-
-                    {/* Separador */}
-                    <div className="flex items-center gap-3">
-                        <div className="flex-1 h-px bg-slate-200" />
-                        <span className="text-slate-400">↔</span>
-                        <div className="flex-1 h-px bg-slate-200" />
-                    </div>
-
-                    {/* Lado Direito/Inferior */}
-                    <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-xl p-4 border border-emerald-200">
-                        <div className="flex items-center gap-2 mb-2">
-                            <span className="w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                                {rightIndex}
-                            </span>
-                            <span className="text-xs text-emerald-600 font-medium uppercase">Definição</span>
-                        </div>
-                        <p className="text-emerald-900 font-semibold text-lg break-words">{rightText}</p>
-                    </div>
-
-                    {piece.isHub && (
-                        <div className="bg-amber-50 rounded-xl p-3 border border-amber-200 text-center">
-                            <span className="text-amber-700 font-medium text-sm">⭐ Esta é a peça central (Hub)</span>
-                        </div>
-                    )}
-                </div>
-                <div className="p-4 border-t border-slate-100">
-                    <button
-                        onClick={onClose}
-                        className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-semibold transition-colors"
-                    >
-                        Fechar
-                    </button>
-                </div>
-            </div>
-        </div>
-    );
-};
 
 export const DominoPiece: React.FC<DominoPieceProps> = ({
     piece,
@@ -115,7 +37,7 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
     const rightIndex = flipped ? piece.leftIndex : piece.rightIndex;
 
     const sizeConfig = {
-        sm: { container: 'min-w-[75px]', text: 'text-[9px]', index: 'text-[7px]', padding: 'p-1.5', height: 'h-[60px]' },
+        sm: { container: 'min-w-[85px]', text: 'text-[9px]', index: 'text-[7px]', padding: 'p-1', height: 'h-[60px]' },
         md: { container: 'min-w-[100px]', text: 'text-[11px]', index: 'text-[8px]', padding: 'p-2', height: 'h-[80px]' },
         lg: { container: 'min-w-[130px]', text: 'text-sm', index: 'text-[9px]', padding: 'p-2.5', height: 'h-[100px]' }
     };
@@ -123,36 +45,7 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
     const config = sizeConfig[size];
     const isDouble = leftIndex === rightIndex;
 
-    // Long press handlers for preview
-    const handlePointerDown = () => {
-        setIsLongPress(false);
-        longPressTimer.current = setTimeout(() => {
-            setIsLongPress(true);
-            setShowModal(true);
-        }, 500); // 500ms for long press
-    };
-
-    const handlePointerUp = () => {
-        if (longPressTimer.current) {
-            clearTimeout(longPressTimer.current);
-            longPressTimer.current = null;
-        }
-    };
-
-    const handlePointerLeave = () => {
-        if (longPressTimer.current) {
-            clearTimeout(longPressTimer.current);
-            longPressTimer.current = null;
-        }
-    };
-
     const handleClick = (e: React.MouseEvent) => {
-        // Don't trigger click if it was a long press
-        if (isLongPress) {
-            setIsLongPress(false);
-            return;
-        }
-
         if (onClick) {
             onClick();
         }
@@ -218,10 +111,10 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         const colors = isLeft ? leftColors : rightColors;
         return (
             <div className={`
-                flex-1 ${config.padding} text-center flex flex-col justify-center
+                flex-1 ${config.padding} text-center flex flex-col justify-center items-center
                 ${colors.bg} ${colors.border} ${colors.shadow}
             `}>
-                <span className={`block truncate leading-tight font-semibold ${config.text} ${colors.text}`}>
+                <span className={`block w-full break-words leading-tight font-semibold ${config.text} ${colors.text} ${text.length > 8 ? 'line-clamp-2' : ''}`}>
                     {text}
                 </span>
                 <span className={`${config.index} opacity-60 font-medium mt-0.5`}>{index}</span>
@@ -235,9 +128,6 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                 <div
                     onClick={handleClick}
                     onDoubleClick={handleDoubleClick}
-                    onPointerDown={handlePointerDown}
-                    onPointerUp={handlePointerUp}
-                    onPointerLeave={handlePointerLeave}
                     className={`flex flex-col ${containerClasses} ${config.height} select-none touch-none`}
                     style={{ transform: selected ? 'perspective(500px) rotateX(-5deg) translateY(-4px)' : '' }}
                 >
@@ -245,7 +135,7 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                         flex-1 ${config.padding} text-center flex flex-col justify-center
                         ${leftColors.bg} border-b border-white/20 ${leftColors.shadow}
                     `}>
-                        <span className={`block truncate leading-tight font-semibold ${config.text} ${leftColors.text}`}>
+                        <span className={`block w-full break-words leading-tight font-semibold ${config.text} ${leftColors.text} ${leftText.length > 8 ? 'line-clamp-2' : ''}`}>
                             {leftText}
                         </span>
                         <span className={`${config.index} opacity-60 font-medium`}>{leftIndex}</span>
@@ -254,13 +144,14 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
                         flex-1 ${config.padding} text-center flex flex-col justify-center
                         ${rightColors.bg} ${rightColors.shadow}
                     `}>
-                        <span className={`block truncate leading-tight font-semibold ${config.text} ${rightColors.text}`}>
+                        <span className={`block w-full break-words leading-tight font-semibold ${config.text} ${rightColors.text} ${rightText.length > 8 ? 'line-clamp-2' : ''}`}>
                             {rightText}
                         </span>
                         <span className={`${config.index} opacity-60 font-medium`}>{rightIndex}</span>
                     </div>
                 </div>
-                {showModal && <TextPreviewModal piece={piece} flipped={flipped} onClose={() => setShowModal(false)} />}
+
+                <DominoPieceModal piece={piece} isOpen={showModal} onClose={() => setShowModal(false)} />
             </>
         );
     }
@@ -270,16 +161,13 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
             <div
                 onClick={handleClick}
                 onDoubleClick={handleDoubleClick}
-                onPointerDown={handlePointerDown}
-                onPointerUp={handlePointerUp}
-                onPointerLeave={handlePointerLeave}
                 className={`flex ${containerClasses} select-none`}
                 style={{ transform: selected ? 'perspective(500px) rotateY(5deg) translateY(-4px)' : '' }}
             >
                 {renderSide(leftText, leftIndex, true)}
                 {renderSide(rightText, rightIndex, false)}
             </div>
-            {showModal && <TextPreviewModal piece={piece} flipped={flipped} onClose={() => setShowModal(false)} />}
+            {showModal && <DominoPieceModal piece={piece} isOpen={showModal} onClose={() => setShowModal(false)} />}
         </>
     );
 };

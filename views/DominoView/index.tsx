@@ -46,7 +46,9 @@ const DominoView: React.FC = () => {
         startGame,
         placePiece,
         drawPiece,
-        passTurn
+        passTurn,
+        addBot,
+        removeBot
     } = useDominoRoom(userId);
 
     const { addItem } = useStudyItems(userId);
@@ -198,6 +200,8 @@ const DominoView: React.FC = () => {
                         onStartGame={handleStartGame}
                         onLeaveRoom={handleLeaveRoom}
                         onDeleteRoom={handleDeleteRoom}
+                        onAddBot={() => addBot(activeRoom.id)}
+                        onRemoveBot={(botId) => removeBot(activeRoom.id, botId)}
                     />
                     {/* Exit Confirmation Modal */}
                     {showExitConfirm && (

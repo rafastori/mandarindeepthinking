@@ -261,29 +261,33 @@ const App: React.FC = () => {
         }
     };
 
+    const isFullscreenGame = tab === 'jogo' && selectedGame === 'domino';
+
     return (
         <div className="h-[100dvh] flex flex-col bg-slate-50 w-full overflow-hidden relative">
-            <Header
-                user={user}
-                onLogin={handleLogin}
-                onLogout={handleLogout}
-                onOpenStats={() => setShowStats(true)}
-                onResetAccount={handleResetAccount}
-                isPuterConnected={isPuterConnected}
-                puterUsername={puterUsername}
-                onConnectPuter={handleConnectPuter}
-                onDisconnectPuter={disconnectPuter}
-                onExportData={exportData}
-                onImportData={importData}
-                engine={engine}
-                onEngineChange={setEngine}
-            />
-            <main className="flex-1 overflow-y-auto w-full no-scrollbar">
-                <div className="max-w-3xl mx-auto h-full">
+            {!isFullscreenGame && (
+                <Header
+                    user={user}
+                    onLogin={handleLogin}
+                    onLogout={handleLogout}
+                    onOpenStats={() => setShowStats(true)}
+                    onResetAccount={handleResetAccount}
+                    isPuterConnected={isPuterConnected}
+                    puterUsername={puterUsername}
+                    onConnectPuter={handleConnectPuter}
+                    onDisconnectPuter={disconnectPuter}
+                    onExportData={exportData}
+                    onImportData={importData}
+                    engine={engine}
+                    onEngineChange={setEngine}
+                />
+            )}
+            <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
+                <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
                     {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
                 </div>
             </main>
-            <Navigation activeTab={tab} onTabChange={setTab} />
+            {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
             {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {} }) : clearLocalStats()} />}
             {showImport && <ImportModal onClose={() => setShowImport(false)} onImport={handleImportBatch} />}
             {showPuterSuggestion && (

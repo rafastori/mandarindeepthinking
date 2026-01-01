@@ -16,9 +16,11 @@ interface DominoLobbyProps {
     currentUserId: string;
     onToggleReady: (ready: boolean) => void;
     onUpdateConfig: (config: Partial<DominoConfig>) => void;
-    onStartGame: () => void;
+    onStartGame: () => Promise<void> | void;
     onLeaveRoom: () => void;
     onDeleteRoom: () => void;
+    onAddBot?: () => void;
+    onRemoveBot?: (botId: string) => void;
 }
 
 export const DominoLobby: React.FC<DominoLobbyProps> = ({
@@ -29,8 +31,22 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
     onUpdateConfig,
     onStartGame,
     onLeaveRoom,
-    onDeleteRoom
+    onDeleteRoom,
+    onAddBot,
+    onRemoveBot
 }) => {
+    const [isStarting, setIsStarting] = React.useState(false);
+
+    const handleStart = async () => {
+        setIsStarting(true);
+        try {
+            await onStartGame();
+        } catch (error) {
+            console.error(error);
+            setIsStarting(false);
+        }
+    };
+
     const currentUserReady = room.players.find(p => p.id === currentUserId)?.isReady || false;
     const allReady = room.players.every(p => p.isReady || p.id === room.hostId);
     const canStart = room.players.length >= DOMINO_CONSTANTS.MIN_PLAYERS && allReady;
@@ -76,21 +92,48 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                                     className="w-10 h-10 rounded-full"
                                 />
                             ) : (
-                                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold">
-                                    {player.name.charAt(0)}
+                                <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${player.isBot
+                                    ? 'bg-purple-100 text-purple-700'
+                                    : 'bg-brand-100 text-brand-700'
+                                    }`}>
+                                    {player.isBot ? <Icon name="bot" size={20} /> : player.name.charAt(0)}
                                 </div>
                             )}
                             <div className="flex-1 min-w-0">
-                                <p className="font-bold text-slate-700 truncate">{player.name}</p>
+                                <div className="flex items-center gap-1">
+                                    <p className="font-bold text-slate-700 truncate">{player.name}</p>
+                                    {player.isBot && <span className="text-[10px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded-full font-bold">BOT</span>}
+                                </div>
                                 {player.id === room.hostId && (
                                     <p className="text-xs text-orange-600 font-medium">Host</p>
                                 )}
                             </div>
-                            {player.isReady && (
+                            {player.isReady && !player.isBot && (
                                 <Icon name="check-circle" className="text-green-500" size={20} />
+                            )}
+                            {isHost && player.isBot && onRemoveBot && (
+                                <button
+                                    onClick={() => onRemoveBot(player.id)}
+                                    className="p-1.5 text-red-400 hover:bg-red-50 rounded-lg transition-colors"
+                                    title="Remover Bot"
+                                >
+                                    <Icon name="trash-2" size={16} />
+                                </button>
                             )}
                         </div>
                     ))}
+
+                    {isHost && room.players.length < DOMINO_CONSTANTS.MAX_PLAYERS && onAddBot && (
+                        <button
+                            onClick={onAddBot}
+                            className="flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-dashed border-slate-200 text-slate-400 hover:border-purple-300 hover:bg-purple-50 hover:text-purple-600 transition-all group"
+                        >
+                            <div className="w-10 h-10 rounded-full bg-slate-50 group-hover:bg-purple-100 flex items-center justify-center transition-colors">
+                                <Icon name="plus" size={20} />
+                            </div>
+                            <span className="font-medium">Adicionar Bot</span>
+                        </button>
+                    )}
                 </div>
             </div>
 
@@ -192,12 +235,23 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
 
                         {/* Botão Iniciar */}
                         <button
-                            onClick={onStartGame}
-                            disabled={!canStart}
-                            className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-bold shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
+                            onClick={handleStart}
+                            disabled={!canStart || isStarting}
+                            className={`w-full py-4 text-white rounded-xl font-bold shadow-lg disabled:opacity-50 flex items-center justify-center gap-2 transition-all
+                                ${isStarting ? 'bg-slate-400 cursor-not-allowed' : 'bg-gradient-to-r from-orange-500 to-red-500'}
+                            `}
                         >
-                            <Icon name="play" size={20} />
-                            Iniciar Jogo
+                            {isStarting ? (
+                                <>
+                                    <Icon name="loader" size={20} className="animate-spin" />
+                                    Criando...
+                                </>
+                            ) : (
+                                <>
+                                    <Icon name="play" size={20} />
+                                    Iniciar Jogo
+                                </>
+                            )}
                         </button>
                         {room.players.length < DOMINO_CONSTANTS.MIN_PLAYERS && (
                             <p className="text-center text-red-500 text-xs">
