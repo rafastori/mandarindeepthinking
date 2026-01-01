@@ -379,15 +379,12 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                                             ? 'scale-150 z-20 opacity-100 drop-shadow-xl'
                                                             : 'scale-75 opacity-50 blur-[0.5px] grayscale-[0.3]'}
                                                     `}
-                                                    onDoubleClick={(e) => {
-                                                        e.stopPropagation();
-                                                        setViewingPiece(placed.piece);
-                                                    }}
                                                 >
                                                     <DominoPiece
                                                         piece={placed.piece}
                                                         flipped={placed.orientation === 'flipped'}
                                                         size="md"
+                                                        onDoubleClick={() => setViewingPiece(placed.piece)}
                                                     />
                                                 </div>
                                             );
