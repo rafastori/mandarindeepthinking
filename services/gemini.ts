@@ -19,7 +19,7 @@ const API_URL = '/api/generate';
 
 const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' | 'translate' | string = 'direct', difficulty: string = 'Iniciante') => {
     const langNames: Record<string, string> = {
-        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português', 'en': 'Inglês',
         'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
     };
     const langName = langNames[targetLang] || targetLang;
@@ -156,7 +156,7 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     if (type === 'domino_terms') {
         const { context, sourceLang, targetLang, customTopic, difficulty } = mode as any;
         const langNames: Record<string, string> = {
-            'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+            'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português', 'en': 'Inglês',
             'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
         };
         const srcName = langNames[sourceLang || ''] || sourceLang;
@@ -216,7 +216,7 @@ const callLocalGemini = async (prompt: string, systemInstruction: string) => {
 // Helper duplicado que estava sendo definido várias vezes dentro das funcoes
 const getLangName = (code: string) => {
     const map: Record<string, string> = {
-        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português', 'en': 'Inglês',
         'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
     };
     return map[code] || code;
@@ -373,7 +373,7 @@ export const generateEnigmas = async (
     // Helper para nome do idioma
     const getLangName = (code: string) => {
         const map: Record<string, string> = {
-            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+            'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português',
             'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
             'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
         };
@@ -426,7 +426,7 @@ export const generateIntruder = async (
 ): Promise<IntruderData> => {
     const getLangName = (code: string) => {
         const map: Record<string, string> = {
-            'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português',
+            'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português',
             'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol',
             'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
         };
@@ -552,8 +552,12 @@ export const generateRawText = async (contentLang: string, customPrompt?: string
 };
 
 /**
- * Tokeniza texto usando IA (Gemini) para segmentação precisa em qualquer idioma.
- * Suporta idiomas CJK (Chinês, Japonês, Coreano) que não usam espaços.
+ * Tokeniza texto usando IA (Gemini) para segmentação PALAVRA POR PALAVRA.
+ * Especialmente importante para idiomas CJK (Chinês, Japonês, Coreano) que não usam espaços.
+ * 
+ * RETORNO ESPERADO: Array de strings onde cada elemento é UMA palavra clicável.
+ * Exemplo Chinês: ["城市", "，", "一个", "充满", "活力", "的", "世界", "。"]
+ * Exemplo Alemão: ["Guten", " ", "Tag", "!"]
  */
 export const tokenizeTextWithAI = async (
     text: string,
@@ -561,24 +565,49 @@ export const tokenizeTextWithAI = async (
 ): Promise<string[]> => {
     const langName = getLangName(langCode);
 
-    const systemPrompt = `Você é um segmentador de texto especializado.
-Segmente o texto fornecido em tokens (palavras ou unidades significativas).
+    // PROMPT EXTREMAMENTE CLARO para segmentação palavra-por-palavra
+    const systemPrompt = `Você é um segmentador de texto linguístico profissional.
 
-REGRAS POR TIPO DE IDIOMA:
-- Para Chinês (zh): Segmente por palavras/morfemas lógicos, não caractere por caractere. Ex: "你好世界" → ["你好", "世界"]
-- Para Japonês (ja): Segmente por palavras, separando partículas. Ex: "日本語を勉強" → ["日本語", "を", "勉強"]
-- Para Coreano (ko): Segmente por palavras (usa espaços naturalmente). Ex: "안녕하세요 세계" → ["안녕하세요", "세계"]
-- Para idiomas ocidentais (de, fr, es, it, en, pt): Segmente por palavras, mantendo pontuação separada. Ex: "Guten Tag!" → ["Guten", "Tag", "!"]
+SUA ÚNICA TAREFA: Dividir o texto em PALAVRAS INDIVIDUAIS para um app de aprendizado de idiomas.
 
-IMPORTANTE: Preserve espaços como tokens separados (" ") para manter a formatação visual.
+IDIOMA DO TEXTO: ${langName}
 
-Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
+REGRAS OBRIGATÓRIAS:
 
-    const userPrompt = `Idioma: ${langName}. Texto: "${text}"`;
+1. CHINÊS (zh):
+   - Cada PALAVRA deve ser um elemento separado no array
+   - Exemplos de palavras: "喜欢" (gostar), "流行" (popular), "普通话" (mandarim), "城市" (cidade)
+   - NÃO separe caractere por caractere! "喜欢" é UMA palavra, não "喜" + "欢"
+   - Pontuação chinesa (，。！？) deve ser elemento separado
+   - Exemplo correto: "我喜欢学中文。" → ["我", "喜欢", "学", "中文", "。"]
+   - Exemplo ERRADO: ["我", "喜", "欢", "学", "中", "文", "。"]
+
+2. JAPONÊS (ja):
+   - Palavras completas, partículas separadas
+   - Exemplo: "日本語を勉強します" → ["日本語", "を", "勉強", "します"]
+
+3. COREANO (ko):
+   - Use os espaços naturais do idioma
+   - Exemplo: "한국어를 공부합니다" → ["한국어를", " ", "공부합니다"]
+
+4. IDIOMAS OCIDENTAIS (de, fr, es, it, en, pt):
+   - Separe por espaços
+   - Pontuação deve ser elemento separado
+   - Exemplo: "Guten Tag!" → ["Guten", " ", "Tag", "!"]
+
+FORMATO DE RESPOSTA:
+Retorne APENAS um JSON válido: { "tokens": ["palavra1", "palavra2", ...] }
+
+NÃO inclua explicações, apenas o JSON.`;
+
+    const userPrompt = `Segmente este texto em ${langName} em palavras individuais:
+
+"${text}"`;
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Tokenization");
+        console.log("[Tokenization] Using Local Gemini SDK");
         const data = await callLocalGemini(userPrompt, systemPrompt);
+        console.log("[Tokenization] Result:", data.tokens?.slice(0, 15), "...");
         return data.tokens || [];
     }
 
@@ -596,6 +625,7 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
 
         if (!response.ok) throw new Error("Erro ao tokenizar texto");
         const data = await response.json();
+        console.log("[Tokenization] PROD Result:", data.tokens?.slice(0, 15), "...");
         return data.tokens || [];
     } catch (error) {
         console.error("Tokenization Error:", error);

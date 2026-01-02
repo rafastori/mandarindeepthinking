@@ -3,7 +3,7 @@ import Icon from '../../../components/Icon';
 import FlagSelect from '../../../components/FlagSelect';
 import { SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
-import { generateRawText, tokenizeTextWithAI } from '../../../services/gemini';
+import { generateRawText } from '../../../services/gemini';
 
 interface CreateRoomModalProps {
     onClose: () => void;
@@ -26,18 +26,10 @@ export const CreateRoomModal: React.FC<CreateRoomModalProps> = ({ onClose, onCre
     const handleCreate = async () => {
         if (!canCreate) return;
 
-        setTokenizing(true);
-        try {
-            // Tokenizar texto com IA antes de criar sala
-            const tokens = await tokenizeTextWithAI(text, sourceLang);
-            onCreate(roomName.trim(), sourceLang, targetLang, text, tokens, difficulty);
-            onClose();
-        } catch (error) {
-            console.error("Failed to tokenize text:", error);
-            alert("Erro ao processar texto. Tente novamente.");
-        } finally {
-            setTokenizing(false);
-        }
+        // NÃO fazemos tokenização aqui - será feito ao iniciar o jogo (Fase de Exploração)
+        // Isso evita problemas de sincronização entre dispositivos
+        onCreate(roomName.trim(), sourceLang, targetLang, text, [], difficulty);
+        onClose();
     };
 
     const handleGenerateText = async () => {

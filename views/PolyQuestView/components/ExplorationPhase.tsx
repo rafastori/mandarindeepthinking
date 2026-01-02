@@ -1,14 +1,16 @@
 
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Icon from '../../../components/Icon';
 import { PolyQuestRoom, PolyQuestPlayer, GAME_CONSTANTS } from '../types';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
+import { tokenizeTextWithAI } from '../../../services/gemini';
 
 interface ExplorationPhaseProps {
     room: PolyQuestRoom;
     currentUserId: string;
     onToggleWord: (word: string) => void;
     onFinishExploration: () => void;
+    onUpdateConfig?: (config: Partial<{ tokens: string[] }>) => void;  // Para salvar tokens
 }
 
 export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
@@ -16,21 +18,79 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
     currentUserId,
     onToggleWord,
     onFinishExploration,
+    onUpdateConfig,
 }) => {
     const { speak } = usePuterSpeech();
     const isHost = room.hostId === currentUserId;
 
-    // Usa tokens pré-processados pela IA (suporta todos os idiomas incluindo CJK)
-    const tokens = useMemo(() => {
-        // Se temos tokens pré-processados, usamos eles
+    // Estado para tokens e loading
+    const [tokens, setTokens] = useState<string[]>([]);
+    const [isTokenizing, setIsTokenizing] = useState(false);
+    const [tokenError, setTokenError] = useState<string | null>(null);
+
+    // Efeito para carregar/gerar tokens
+    useEffect(() => {
+        // Se já temos tokens da room, usa eles
         if (room.config.tokens && room.config.tokens.length > 0) {
-            return room.config.tokens;
+            setTokens(room.config.tokens);
+            return;
         }
 
-        // Fallback para tokenização local (idiomas ocidentais)
-        const text = room.config.originalText;
-        return text.split(/(\s+|[.,!?;:()])/).filter(t => t.length > 0);
-    }, [room.config.tokens, room.config.originalText]);
+        // Idiomas CJK que precisam de tokenização por IA (não têm espaços entre palavras)
+        const CJK_LANGUAGES = ['zh', 'ja', 'ko'];
+        const isCJK = CJK_LANGUAGES.includes(room.config.sourceLang);
+
+        // Se NÃO é CJK, usa tokenização local (split por espaços) - SEM custo de API
+        if (!isCJK) {
+            console.log('[ExplorationPhase] Using LOCAL tokenization for Western language:', room.config.sourceLang);
+            const localTokens = room.config.originalText
+                .split(/(\s+|[.,!?;:()])/)
+                .filter(t => t.length > 0);
+            setTokens(localTokens);
+
+            // Salva na sala para outros jogadores
+            if (isHost && onUpdateConfig && localTokens.length > 0) {
+                onUpdateConfig({ tokens: localTokens });
+            }
+            return;
+        }
+
+        // Apenas para idiomas CJK: usa IA para tokenização correta
+        const generateTokens = async () => {
+            setIsTokenizing(true);
+            setTokenError(null);
+
+            try {
+                console.log('[ExplorationPhase] Using AI tokenization for CJK language:', room.config.sourceLang);
+                const aiTokens = await tokenizeTextWithAI(
+                    room.config.originalText,
+                    room.config.sourceLang
+                );
+
+                console.log('[ExplorationPhase] Got tokens:', aiTokens.length);
+                setTokens(aiTokens);
+
+                // Se temos callback para salvar, salva os tokens na sala (só host faz isso)
+                if (isHost && onUpdateConfig && aiTokens.length > 0) {
+                    console.log('[ExplorationPhase] Saving tokens to room...');
+                    onUpdateConfig({ tokens: aiTokens });
+                }
+            } catch (error) {
+                console.error('[ExplorationPhase] Tokenization failed:', error);
+                setTokenError('Erro ao processar texto. Tente recarregar.');
+
+                // Fallback local para não travar o jogo completamente
+                const fallbackTokens = room.config.originalText
+                    .split(/(\s+|[.,!?;:()]|[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]+)/)
+                    .filter(t => t.length > 0);
+                setTokens(fallbackTokens);
+            } finally {
+                setIsTokenizing(false);
+            }
+        };
+
+        generateTokens();
+    }, [room.config.tokens, room.config.originalText, room.config.sourceLang, isHost, onUpdateConfig]);
 
     const isWord = (token: string) => {
         // Verifica se é uma palavra clicável (não apenas espaço ou pontuação pura)
@@ -102,7 +162,25 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
                 </div>
 
                 <div className="prose prose-lg max-w-none leading-loose text-slate-700">
-                    {tokens.map((token, index) => {
+                    {/* Loading State */}
+                    {isTokenizing && (
+                        <div className="flex flex-col items-center justify-center py-12 text-center">
+                            <Icon name="loader" size={48} className="text-emerald-600 animate-spin mb-4" />
+                            <p className="text-slate-600 font-medium">Processando texto com IA...</p>
+                            <p className="text-slate-400 text-sm mt-1">Identificando palavras para estudo</p>
+                        </div>
+                    )}
+
+                    {/* Error State */}
+                    {tokenError && !isTokenizing && (
+                        <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center mb-4">
+                            <Icon name="alert-circle" size={24} className="text-red-500 mx-auto mb-2" />
+                            <p className="text-red-700 font-medium">{tokenError}</p>
+                        </div>
+                    )}
+
+                    {/* Tokens Display */}
+                    {!isTokenizing && tokens.map((token, index) => {
                         const cleanToken = token.trim();
                         const validWord = isWord(cleanToken);
                         const isSelected = room.selectedWords.includes(cleanToken);

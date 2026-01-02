@@ -319,6 +319,7 @@ const PolyQuestView: React.FC = () => {
                                 currentUserId={user.uid}
                                 onToggleWord={(word) => toggleWordSelection(activeRoom.id, word)}
                                 onFinishExploration={() => finishExploration(activeRoom.id)}
+                                onUpdateConfig={(cfg) => updateConfig(activeRoom.id, cfg)}
                             />
                         ) : activeRoom.phase === 'quest' ? (
                             <QuestPhase
