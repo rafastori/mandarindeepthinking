@@ -33,7 +33,13 @@ import {
     Save,
     PlusCircle,
     Check,
-    AlertCircle
+    AlertCircle,
+    LayoutGrid,
+    Loader,
+    Inbox,
+    ArrowLeft,
+    Maximize2,
+    Minimize2
 } from 'lucide-react';
 
 export interface IconProps {
@@ -77,7 +83,13 @@ const icons: Record<string, React.ElementType> = {
     'save': Save,
     'plus-circle': PlusCircle,
     'check': Check,
-    'alert-circle': AlertCircle
+    'alert-circle': AlertCircle,
+    'layout-grid': LayoutGrid,
+    'loader': Loader,
+    'inbox': Inbox,
+    'arrow-left': ArrowLeft,
+    'maximize-2': Maximize2,
+    'minimize-2': Minimize2
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

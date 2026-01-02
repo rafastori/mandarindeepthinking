@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../../services/firebase';
-import { collection, addDoc, onSnapshot, doc, updateDoc, arrayUnion, getDoc, deleteDoc } from 'firebase/firestore';
+import { collection, addDoc, onSnapshot, doc, updateDoc, arrayUnion, getDoc, deleteDoc, runTransaction } from 'firebase/firestore';
 import { GameRoom, Player, SupportedLanguage } from '../../types';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { generateGameDeck } from '../../services/gemini';
@@ -339,11 +339,37 @@ const LingoArenaView: React.FC = () => {
 
         // Lógica de Ação
         if (result === 'GRAB') {
-            // Apenas pega uma carta se não tiver
-            if (currentQueue.length > 0) {
-                const nextCard = currentQueue.shift(); // Tira do topo
-                if (nextCard !== undefined) currentHands[user.uid] = nextCard;
+            // Usa transação para garantir que apenas um jogador pegue a carta
+            try {
+                await runTransaction(db, async (transaction) => {
+                    const roomSnap = await transaction.get(ref);
+                    if (!roomSnap.exists()) return;
+
+                    const roomData = roomSnap.data() as GameRoom;
+                    const freshQueue = [...(roomData.cardQueue || [])];
+                    const freshHands = { ...(roomData.activeHands || {}) };
+
+                    // Se o usuário já tem carta, não faz nada
+                    if (freshHands[user.uid] !== undefined) return;
+
+                    // Se não há cartas na fila, não faz nada
+                    if (freshQueue.length === 0) return;
+
+                    // Pega a próxima carta disponível
+                    const nextCard = freshQueue.shift();
+                    if (nextCard !== undefined) {
+                        freshHands[user.uid] = nextCard;
+                    }
+
+                    transaction.update(ref, {
+                        cardQueue: freshQueue,
+                        activeHands: freshHands
+                    });
+                });
+            } catch (e) {
+                console.warn('Transaction failed, card may already be taken');
             }
+            return; // GRAB é tratado completamente na transação
         }
         else {
             // Processa resultado da carta atual
@@ -431,10 +457,37 @@ const LingoArenaView: React.FC = () => {
         let updatedPlayers = activeRoom.players;
 
         if (action === 'GRAB') {
-            if (currentQueue.length > 0) {
-                const nextCard = currentQueue.shift();
-                if (nextCard !== undefined) currentHands[botId] = nextCard;
+            // BOT também usa transação para garantir atomicidade
+            try {
+                await runTransaction(db, async (transaction) => {
+                    const roomSnap = await transaction.get(ref);
+                    if (!roomSnap.exists()) return;
+
+                    const roomData = roomSnap.data() as GameRoom;
+                    const freshQueue = [...(roomData.cardQueue || [])];
+                    const freshHands = { ...(roomData.activeHands || {}) };
+
+                    // Se o bot já tem carta, não faz nada
+                    if (freshHands[botId] !== undefined) return;
+
+                    // Se não há cartas na fila, não faz nada
+                    if (freshQueue.length === 0) return;
+
+                    // Pega a próxima carta disponível
+                    const nextCard = freshQueue.shift();
+                    if (nextCard !== undefined) {
+                        freshHands[botId] = nextCard;
+                    }
+
+                    transaction.update(ref, {
+                        cardQueue: freshQueue,
+                        activeHands: freshHands
+                    });
+                });
+            } catch (e) {
+                console.warn('Bot transaction failed');
             }
+            return; // GRAB tratado na transação
         } else {
             if (currentCardIndex === undefined) return;
 

@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { createPortal } from 'react-dom';
+import React, { useState, useEffect } from 'react';
 import Icon from '../../../components/Icon';
 import { DominoPiece as DominoPieceType } from '../types';
 import { DominoPiece } from './DominoPiece';
@@ -35,165 +34,53 @@ const playSuccessSound = () => {
 
 export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, onReorder }) => {
     const [localPieces, setLocalPieces] = useState<DominoPieceType[]>(pieces);
-    const [draggingId, setDraggingId] = useState<string | null>(null);
-    const [ghostStyle, setGhostStyle] = useState<React.CSSProperties>({});
-    const [didReorder, setDidReorder] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-    const dragRef = useRef<{
-        active: boolean;
-        pieceId: string | null;
-        currentIndex: number;
-        originalIndex: number;
-        elementRect: DOMRect | null;
-        rafId: number | null;
-        pendingPos: { x: number; y: number } | null;
-    }>({
-        active: false,
-        pieceId: null,
-        currentIndex: 0,
-        originalIndex: 0,
-        elementRect: null,
-        rafId: null,
-        pendingPos: null
-    });
-
-    // Sync props when not dragging
+    // Sync with props
     useEffect(() => {
-        if (!dragRef.current.active) {
-            setLocalPieces(pieces);
-        }
+        setLocalPieces(pieces);
     }, [pieces]);
 
-    // Global pointer move handler
-    const handleGlobalPointerMove = useCallback((e: PointerEvent) => {
-        if (!dragRef.current.active) return;
-        e.preventDefault();
-
-        // Queue position update for RAF
-        dragRef.current.pendingPos = { x: e.clientX, y: e.clientY };
-
-        if (!dragRef.current.rafId) {
-            dragRef.current.rafId = requestAnimationFrame(() => {
-                const pos = dragRef.current.pendingPos;
-                if (pos && dragRef.current.elementRect) {
-                    setGhostStyle({
-                        left: pos.x,
-                        top: pos.y,
-                        width: dragRef.current.elementRect.width,
-                        height: dragRef.current.elementRect.height
-                    });
-
-                    // Find hover target
-                    const elements = document.elementsFromPoint(pos.x, pos.y);
-                    let targetIndex: number | null = null;
-
-                    for (const el of elements) {
-                        const indexAttr = el.getAttribute('data-reorder-index');
-                        if (indexAttr) {
-                            targetIndex = parseInt(indexAttr);
-                            break;
-                        }
-                    }
-
-                    // Swap if needed
-                    if (targetIndex !== null && targetIndex !== dragRef.current.currentIndex) {
-                        const oldIndex = dragRef.current.currentIndex;
-
-                        setLocalPieces(prev => {
-                            const copy = [...prev];
-                            const [moved] = copy.splice(oldIndex, 1);
-                            copy.splice(targetIndex!, 0, moved);
-                            return copy;
-                        });
-
-                        dragRef.current.currentIndex = targetIndex;
-                        setDidReorder(true);
-
-                        // Haptic
-                        if (navigator.vibrate) navigator.vibrate(10);
-                    }
-                }
-                dragRef.current.rafId = null;
-            });
-        }
-    }, []);
-
-    // Global pointer up handler
-    const handleGlobalPointerUp = useCallback(() => {
-        if (!dragRef.current.active) return;
-
-        // Cancel pending RAF
-        if (dragRef.current.rafId) {
-            cancelAnimationFrame(dragRef.current.rafId);
-            dragRef.current.rafId = null;
-        }
-
-        // Play success sound if reordered
-        if (didReorder) {
+    const handlePieceClick = (index: number) => {
+        if (selectedIndex === null) {
+            // Select first piece
+            setSelectedIndex(index);
+        } else if (selectedIndex === index) {
+            // Deselect
+            setSelectedIndex(null);
+        } else {
+            // Swap pieces
+            const newPieces = [...localPieces];
+            [newPieces[selectedIndex], newPieces[index]] = [newPieces[index], newPieces[selectedIndex]];
+            setLocalPieces(newPieces);
+            onReorder(newPieces);
+            setSelectedIndex(null);
             playSuccessSound();
-            setDidReorder(false);
+            if (navigator.vibrate) navigator.vibrate(30);
         }
-
-        // Commit changes
-        onReorder(localPieces);
-
-        // Reset
-        dragRef.current = {
-            active: false,
-            pieceId: null,
-            currentIndex: 0,
-            originalIndex: 0,
-            elementRect: null,
-            rafId: null,
-            pendingPos: null
-        };
-        setDraggingId(null);
-    }, [localPieces, onReorder, didReorder]);
-
-    // Attach/detach global listeners
-    useEffect(() => {
-        if (draggingId) {
-            window.addEventListener('pointermove', handleGlobalPointerMove, { passive: false });
-            window.addEventListener('pointerup', handleGlobalPointerUp);
-
-            return () => {
-                window.removeEventListener('pointermove', handleGlobalPointerMove);
-                window.removeEventListener('pointerup', handleGlobalPointerUp);
-            };
-        }
-    }, [draggingId, handleGlobalPointerMove, handleGlobalPointerUp]);
-
-    const handlePointerDown = (e: React.PointerEvent, piece: DominoPieceType, index: number) => {
-        e.preventDefault();
-        const element = e.currentTarget as HTMLElement;
-        const rect = element.getBoundingClientRect();
-
-        dragRef.current = {
-            active: true,
-            pieceId: piece.id,
-            currentIndex: index,
-            originalIndex: index,
-            elementRect: rect,
-            rafId: null,
-            pendingPos: null
-        };
-
-        setDraggingId(piece.id);
-        setDidReorder(false);
-        setGhostStyle({
-            left: e.clientX,
-            top: e.clientY,
-            width: rect.width,
-            height: rect.height
-        });
     };
 
-    const draggingPiece = localPieces.find(p => p.id === draggingId);
+    const handleMoveLeft = (index: number) => {
+        if (index === 0) return;
+        const newPieces = [...localPieces];
+        [newPieces[index - 1], newPieces[index]] = [newPieces[index], newPieces[index - 1]];
+        setLocalPieces(newPieces);
+        onReorder(newPieces);
+        playSuccessSound();
+    };
+
+    const handleMoveRight = (index: number) => {
+        if (index === localPieces.length - 1) return;
+        const newPieces = [...localPieces];
+        [newPieces[index + 1], newPieces[index]] = [newPieces[index], newPieces[index + 1]];
+        setLocalPieces(newPieces);
+        onReorder(newPieces);
+        playSuccessSound();
+    };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm touch-none">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden">
-
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 border-b border-slate-100 bg-slate-50">
                     <div className="flex items-center gap-2">
@@ -210,35 +97,61 @@ export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, o
 
                 {/* Instruction */}
                 <div className="px-4 py-2 bg-blue-50 text-blue-700 text-xs text-center">
-                    Segure e arraste para reorganizar suas peças
+                    {selectedIndex !== null
+                        ? '✨ Toque em outra peça para trocar posição'
+                        : 'Toque em uma peça para selecionar, depois toque em outra para trocar'}
                 </div>
 
                 {/* Grid */}
-                <div className="flex-1 overflow-y-auto p-6 bg-slate-100">
-                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+                <div className="flex-1 overflow-y-auto p-4 bg-slate-100">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                         {localPieces.map((piece, index) => {
-                            const isBeingDragged = draggingId === piece.id;
+                            const isSelected = selectedIndex === index;
 
                             return (
                                 <div
                                     key={piece.id}
-                                    data-reorder-index={index}
-                                    onPointerDown={(e) => handlePointerDown(e, piece, index)}
+                                    onClick={() => handlePieceClick(index)}
                                     className={`
-                                        relative rounded-xl transition-transform duration-150 p-2 flex justify-center items-center select-none
-                                        ${isBeingDragged
-                                            ? 'opacity-30 scale-95 bg-blue-100 border-2 border-dashed border-blue-300'
-                                            : 'bg-white shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing border border-slate-200'}
+                                        relative rounded-xl p-3 flex flex-col items-center select-none cursor-pointer transition-all
+                                        ${isSelected
+                                            ? 'bg-blue-100 border-2 border-blue-500 ring-2 ring-blue-300 scale-105 shadow-lg'
+                                            : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300'}
                                     `}
                                 >
-                                    <span className="absolute top-1 left-2 text-[10px] font-mono text-slate-300">
+                                    {/* Position number */}
+                                    <span className="absolute top-1 left-2 text-[10px] font-mono text-slate-400">
                                         {index + 1}
                                     </span>
-                                    <DominoPiece
-                                        piece={piece}
-                                        size="md"
-                                        orientation="vertical"
-                                    />
+
+                                    {/* Move buttons when selected */}
+                                    {isSelected && (
+                                        <div className="absolute top-1 right-1 flex gap-1">
+                                            <button
+                                                onClick={(e) => { e.stopPropagation(); handleMoveLeft(index); }}
+                                                disabled={index === 0}
+                                                className="w-5 h-5 flex items-center justify-center bg-blue-500 text-white rounded text-xs disabled:opacity-30"
+                                            >
+                                                ←
+                                            </button>
+                                            <button
+                                                onClick={(e) => { e.stopPropagation(); handleMoveRight(index); }}
+                                                disabled={index === localPieces.length - 1}
+                                                className="w-5 h-5 flex items-center justify-center bg-blue-500 text-white rounded text-xs disabled:opacity-30"
+                                            >
+                                                →
+                                            </button>
+                                        </div>
+                                    )}
+
+                                    <div className="mt-2">
+                                        <DominoPiece
+                                            piece={piece}
+                                            size="md"
+                                            orientation="vertical"
+                                            selected={isSelected}
+                                        />
+                                    </div>
                                 </div>
                             );
                         })}
@@ -253,40 +166,23 @@ export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, o
                 </div>
 
                 {/* Footer */}
-                <div className="p-4 bg-white border-t border-slate-100 flex justify-end">
+                <div className="p-4 bg-white border-t border-slate-100 flex justify-between items-center">
+                    {selectedIndex !== null && (
+                        <button
+                            onClick={() => setSelectedIndex(null)}
+                            className="px-4 py-2 text-slate-600 text-sm"
+                        >
+                            Cancelar seleção
+                        </button>
+                    )}
                     <button
                         onClick={onClose}
-                        className="px-6 py-2 bg-slate-800 text-white rounded-xl font-bold hover:bg-slate-700 transition-transform active:scale-95"
+                        className="px-6 py-2 bg-slate-800 text-white rounded-xl font-bold hover:bg-slate-700 transition-colors ml-auto"
                     >
                         Fechar
                     </button>
                 </div>
             </div>
-
-            {/* Ghost Portal */}
-            {draggingId && draggingPiece && createPortal(
-                <div
-                    className="fixed pointer-events-none z-[100] drop-shadow-2xl"
-                    style={{
-                        left: ghostStyle.left,
-                        top: ghostStyle.top,
-                        width: ghostStyle.width,
-                        height: ghostStyle.height,
-                        transform: 'translate(-50%, -50%) rotate(-5deg) scale(1.05)',
-                        transition: 'transform 0.05s ease-out'
-                    }}
-                >
-                    <div className="bg-white rounded-xl p-2 h-full w-full flex items-center justify-center border-2 border-blue-400 shadow-xl">
-                        <DominoPiece
-                            piece={draggingPiece}
-                            size="md"
-                            orientation="vertical"
-                            selected={true}
-                        />
-                    </div>
-                </div>,
-                document.body
-            )}
         </div>
     );
 };
