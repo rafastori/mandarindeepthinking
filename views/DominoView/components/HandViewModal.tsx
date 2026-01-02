@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import Icon from '../../../components/Icon';
 import { DominoPiece as DominoPieceType } from '../types';
@@ -10,119 +10,185 @@ interface HandViewModalProps {
     onReorder: (newOrder: DominoPieceType[]) => void;
 }
 
-export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, onReorder }) => {
-    // Local state for 'live' sorting
-    const [localPieces, setLocalPieces] = useState<DominoPieceType[]>(pieces);
-    const [isDragging, setIsDragging] = useState(false);
-    const [draggingId, setDraggingId] = useState<string | null>(null);
+// Simple success sound using Web Audio API
+const playSuccessSound = () => {
+    try {
+        const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
 
-    // Ghost Element State
-    const [ghostPos, setGhostPos] = useState({ x: 0, y: 0 });
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        oscillator.frequency.setValueAtTime(880, audioContext.currentTime); // A5 note
+        oscillator.frequency.setValueAtTime(1108.73, audioContext.currentTime + 0.1); // C#6 note
+
+        gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.2);
+    } catch (e) {
+        // Audio not supported
+    }
+};
+
+export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, onReorder }) => {
+    const [localPieces, setLocalPieces] = useState<DominoPieceType[]>(pieces);
+    const [draggingId, setDraggingId] = useState<string | null>(null);
+    const [ghostStyle, setGhostStyle] = useState<React.CSSProperties>({});
+    const [didReorder, setDidReorder] = useState(false);
 
     const dragRef = useRef<{
         active: boolean;
-        startX: number;
-        startY: number;
         pieceId: string | null;
-        currentIndex: number | null;
-        elementWidth: number;
-        elementHeight: number;
+        currentIndex: number;
+        originalIndex: number;
+        elementRect: DOMRect | null;
+        rafId: number | null;
+        pendingPos: { x: number; y: number } | null;
     }>({
         active: false,
-        startX: 0,
-        startY: 0,
         pieceId: null,
-        currentIndex: null,
-        elementWidth: 0,
-        elementHeight: 0
+        currentIndex: 0,
+        originalIndex: 0,
+        elementRect: null,
+        rafId: null,
+        pendingPos: null
     });
 
-    // Valid drop indices ref to avoid recalculating unnecessarily, but elementsFromPoint is safer
-
-    // Sync props to local state if props change (and not dragging)
+    // Sync props when not dragging
     useEffect(() => {
-        if (!isDragging) {
+        if (!dragRef.current.active) {
             setLocalPieces(pieces);
         }
-    }, [pieces, isDragging]);
+    }, [pieces]);
 
-    const handlePointerDown = (e: React.PointerEvent, piece: DominoPieceType, index: number) => {
-        const element = e.currentTarget as HTMLElement;
-        element.setPointerCapture(e.pointerId);
-
-        const rect = element.getBoundingClientRect();
-
-        dragRef.current = {
-            active: true,
-            startX: e.clientX,
-            startY: e.clientY,
-            pieceId: piece.id,
-            currentIndex: index,
-            elementWidth: rect.width,
-            elementHeight: rect.height
-        };
-
-        setDraggingId(piece.id);
-        setIsDragging(true);
-        setGhostPos({ x: e.clientX, y: e.clientY });
-    };
-
-    const handlePointerMove = (e: React.PointerEvent) => {
-        if (!dragRef.current.active || !dragRef.current.pieceId) return;
+    // Global pointer move handler
+    const handleGlobalPointerMove = useCallback((e: PointerEvent) => {
+        if (!dragRef.current.active) return;
         e.preventDefault();
 
-        // Update Ghost Position
-        setGhostPos({ x: e.clientX, y: e.clientY });
+        // Queue position update for RAF
+        dragRef.current.pendingPos = { x: e.clientX, y: e.clientY };
 
-        // Find hover target
-        const elements = document.elementsFromPoint(e.clientX, e.clientY);
-        let targetIndex: number | null = null;
+        if (!dragRef.current.rafId) {
+            dragRef.current.rafId = requestAnimationFrame(() => {
+                const pos = dragRef.current.pendingPos;
+                if (pos && dragRef.current.elementRect) {
+                    setGhostStyle({
+                        left: pos.x,
+                        top: pos.y,
+                        width: dragRef.current.elementRect.width,
+                        height: dragRef.current.elementRect.height
+                    });
 
-        for (const el of elements) {
-            const indexAttr = el.getAttribute('data-index');
-            if (indexAttr) {
-                targetIndex = parseInt(indexAttr);
-                break;
-            }
-        }
+                    // Find hover target
+                    const elements = document.elementsFromPoint(pos.x, pos.y);
+                    let targetIndex: number | null = null;
 
-        // Live Sort Logic
-        if (targetIndex !== null && targetIndex !== dragRef.current.currentIndex) {
-            const oldIndex = dragRef.current.currentIndex!;
-            const newIndex = targetIndex;
+                    for (const el of elements) {
+                        const indexAttr = el.getAttribute('data-reorder-index');
+                        if (indexAttr) {
+                            targetIndex = parseInt(indexAttr);
+                            break;
+                        }
+                    }
 
-            // Swap in local state
-            setLocalPieces(prev => {
-                const copy = [...prev];
-                const [moved] = copy.splice(oldIndex, 1);
-                copy.splice(newIndex, 0, moved);
-                return copy;
+                    // Swap if needed
+                    if (targetIndex !== null && targetIndex !== dragRef.current.currentIndex) {
+                        const oldIndex = dragRef.current.currentIndex;
+
+                        setLocalPieces(prev => {
+                            const copy = [...prev];
+                            const [moved] = copy.splice(oldIndex, 1);
+                            copy.splice(targetIndex!, 0, moved);
+                            return copy;
+                        });
+
+                        dragRef.current.currentIndex = targetIndex;
+                        setDidReorder(true);
+
+                        // Haptic
+                        if (navigator.vibrate) navigator.vibrate(10);
+                    }
+                }
+                dragRef.current.rafId = null;
             });
-
-            // Update ref to new index so we don't swap repeatedly
-            dragRef.current.currentIndex = newIndex;
-
-            // Haptic Feedback
-            if (navigator.vibrate) navigator.vibrate(10);
         }
-    };
+    }, []);
 
-    const handlePointerUp = (e: React.PointerEvent) => {
+    // Global pointer up handler
+    const handleGlobalPointerUp = useCallback(() => {
         if (!dragRef.current.active) return;
 
-        const element = e.currentTarget as HTMLElement;
-        element.releasePointerCapture(e.pointerId);
+        // Cancel pending RAF
+        if (dragRef.current.rafId) {
+            cancelAnimationFrame(dragRef.current.rafId);
+            dragRef.current.rafId = null;
+        }
+
+        // Play success sound if reordered
+        if (didReorder) {
+            playSuccessSound();
+            setDidReorder(false);
+        }
 
         // Commit changes
         onReorder(localPieces);
 
         // Reset
-        dragRef.current = { active: false, startX: 0, startY: 0, pieceId: null, currentIndex: null, elementWidth: 0, elementHeight: 0 };
+        dragRef.current = {
+            active: false,
+            pieceId: null,
+            currentIndex: 0,
+            originalIndex: 0,
+            elementRect: null,
+            rafId: null,
+            pendingPos: null
+        };
         setDraggingId(null);
-        setIsDragging(false);
+    }, [localPieces, onReorder, didReorder]);
+
+    // Attach/detach global listeners
+    useEffect(() => {
+        if (draggingId) {
+            window.addEventListener('pointermove', handleGlobalPointerMove, { passive: false });
+            window.addEventListener('pointerup', handleGlobalPointerUp);
+
+            return () => {
+                window.removeEventListener('pointermove', handleGlobalPointerMove);
+                window.removeEventListener('pointerup', handleGlobalPointerUp);
+            };
+        }
+    }, [draggingId, handleGlobalPointerMove, handleGlobalPointerUp]);
+
+    const handlePointerDown = (e: React.PointerEvent, piece: DominoPieceType, index: number) => {
+        e.preventDefault();
+        const element = e.currentTarget as HTMLElement;
+        const rect = element.getBoundingClientRect();
+
+        dragRef.current = {
+            active: true,
+            pieceId: piece.id,
+            currentIndex: index,
+            originalIndex: index,
+            elementRect: rect,
+            rafId: null,
+            pendingPos: null
+        };
+
+        setDraggingId(piece.id);
+        setDidReorder(false);
+        setGhostStyle({
+            left: e.clientX,
+            top: e.clientY,
+            width: rect.width,
+            height: rect.height
+        });
     };
 
-    const draggingPiece = pieces.find(p => p.id === draggingId);
+    const draggingPiece = localPieces.find(p => p.id === draggingId);
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm touch-none">
@@ -142,8 +208,13 @@ export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, o
                     </button>
                 </div>
 
+                {/* Instruction */}
+                <div className="px-4 py-2 bg-blue-50 text-blue-700 text-xs text-center">
+                    Segure e arraste para reorganizar suas peças
+                </div>
+
                 {/* Grid */}
-                <div className="flex-1 overflow-y-auto p-6 bg-slate-100 touch-pan-y">
+                <div className="flex-1 overflow-y-auto p-6 bg-slate-100">
                     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
                         {localPieces.map((piece, index) => {
                             const isBeingDragged = draggingId === piece.id;
@@ -151,39 +222,23 @@ export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, o
                             return (
                                 <div
                                     key={piece.id}
-                                    data-index={index}
+                                    data-reorder-index={index}
                                     onPointerDown={(e) => handlePointerDown(e, piece, index)}
-                                    // Attach events to specific elements is tricky if they move. 
-                                    // Better to attach Global Pointer Move/Up to window? 
-                                    // But using Capture on the element works if the element moves?
-                                    // Actually, if we swap elements in DOM, the captured element might be unmounted or moved?
-                                    // React Reconciliation keeps the key, so the DOM node should conceptually stay or move.
-                                    // PointerCapture is attached to the DOM node. If React destroys it, capture is lost.
-                                    // Safe ref access: always attach move/up to the element we captured.
-                                    onPointerMove={isBeingDragged ? handlePointerMove : undefined}
-                                    onPointerUp={isBeingDragged ? handlePointerUp : undefined}
                                     className={`
-                                        relative rounded-xl transition-all duration-200 p-2 flex justify-center items-center select-none
+                                        relative rounded-xl transition-transform duration-150 p-2 flex justify-center items-center select-none
                                         ${isBeingDragged
-                                            ? 'opacity-0' // Invisible placeholder
+                                            ? 'opacity-30 scale-95 bg-blue-100 border-2 border-dashed border-blue-300'
                                             : 'bg-white shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing border border-slate-200'}
                                     `}
-                                    style={{
-                                        // If dragged, occupy space but show nothing
-                                    }}
                                 >
-                                    {!isBeingDragged && (
-                                        <>
-                                            <span className="absolute top-1 left-2 text-[10px] font-mono text-slate-300">
-                                                {index + 1}
-                                            </span>
-                                            <DominoPiece
-                                                piece={piece}
-                                                size="md"
-                                                orientation="vertical"
-                                            />
-                                        </>
-                                    )}
+                                    <span className="absolute top-1 left-2 text-[10px] font-mono text-slate-300">
+                                        {index + 1}
+                                    </span>
+                                    <DominoPiece
+                                        piece={piece}
+                                        size="md"
+                                        orientation="vertical"
+                                    />
                                 </div>
                             );
                         })}
@@ -209,18 +264,19 @@ export const HandViewModal: React.FC<HandViewModalProps> = ({ pieces, onClose, o
             </div>
 
             {/* Ghost Portal */}
-            {isDragging && draggingPiece && createPortal(
+            {draggingId && draggingPiece && createPortal(
                 <div
                     className="fixed pointer-events-none z-[100] drop-shadow-2xl"
                     style={{
-                        left: ghostPos.x,
-                        top: ghostPos.y,
-                        width: dragRef.current.elementWidth,
-                        height: dragRef.current.elementHeight,
-                        transform: 'translate(-50%, -50%) rotate(-5deg)',
+                        left: ghostStyle.left,
+                        top: ghostStyle.top,
+                        width: ghostStyle.width,
+                        height: ghostStyle.height,
+                        transform: 'translate(-50%, -50%) rotate(-5deg) scale(1.05)',
+                        transition: 'transform 0.05s ease-out'
                     }}
                 >
-                    <div className="bg-white rounded-xl p-2 h-full w-full flex items-center justify-center border-2 border-blue-400">
+                    <div className="bg-white rounded-xl p-2 h-full w-full flex items-center justify-center border-2 border-blue-400 shadow-xl">
                         <DominoPiece
                             piece={draggingPiece}
                             size="md"

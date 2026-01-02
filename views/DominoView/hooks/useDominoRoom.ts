@@ -120,22 +120,62 @@ export const useDominoRoom = (userId?: string) => {
                                         await placePiece(updated.id, move.pieceId, move.trainId, move.flipped || false);
                                     } else if (move.action === 'draw') {
                                         const drawn = await drawPiece(updated.id, currentPlayer.id);
-                                        // Optional: if drawn piece is playable, play immediately (recursive logic or next turn?)
-                                        // Standard rules often say: draw 1. If playable, play. Else pass.
-                                        // V1 Simplification: Bot draws. Next turn logic will see hand changed (or turn pass needed).
-                                        // Actually, if we just draw, the turn stays with Bot? No, drawPiece doesn't pass turn.
-                                        // So we need to Check if drawn piece is playable.
 
                                         if (drawn) {
-                                            // Re-evaluate immediately with new hand?
-                                            // For simplicity V1: Just draw. The Effect will trigger again?
-                                            // No, unless we built-in a "post-draw" check.
-                                            // Let's implement immediate pass if draw logic requires, OR let effect re-trigger if state changes?
-                                            // If we draw, `updated` state might not reflect immediately in this closure. 
-                                            // But drawing updates DB -> triggers snapshot -> triggers this Effect again.
-                                            // So this is safe!
+                                            // Check if the drawn piece can be played immediately
+                                            // We need to re-fetch the current room state to get updated player hand
+                                            const roomSnap = await getDoc(doc(db, 'dominoRooms', updated.id));
+                                            if (roomSnap.exists()) {
+                                                const updatedRoom = roomSnap.data() as DominoRoom;
+                                                const updatedPlayer = updatedRoom.players.find(p => p.id === currentPlayer.id);
+
+                                                if (updatedPlayer) {
+                                                    // Check if the drawn piece can be played
+                                                    const drawnPiece = updatedPlayer.hand.find(p => p.id === drawn.id);
+                                                    if (drawnPiece) {
+                                                        // Find if it can be played on any valid train
+                                                        const validTrains = updatedRoom.trains.filter(train => {
+                                                            const isMexican = train.ownerId === null;
+                                                            const isMine = train.ownerId === currentPlayer.id;
+                                                            return isMexican || isMine || train.isOpen;
+                                                        });
+
+                                                        let canPlayDrawn = false;
+                                                        let playTrainId = '';
+                                                        let needsFlip = false;
+
+                                                        for (const train of validTrains) {
+                                                            if (drawnPiece.leftIndex === train.openEndIndex) {
+                                                                canPlayDrawn = true;
+                                                                playTrainId = train.id;
+                                                                needsFlip = false;
+                                                                break;
+                                                            }
+                                                            if (drawnPiece.rightIndex === train.openEndIndex) {
+                                                                canPlayDrawn = true;
+                                                                playTrainId = train.id;
+                                                                needsFlip = true;
+                                                                break;
+                                                            }
+                                                        }
+
+                                                        if (canPlayDrawn) {
+                                                            // Small delay then play the drawn piece
+                                                            setTimeout(async () => {
+                                                                await placePiece(updated.id, drawnPiece.id, playTrainId, needsFlip);
+                                                            }, 800);
+                                                            return;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            // Drawn piece cannot be played - must pass (opens train)
+                                            setTimeout(async () => {
+                                                await passTurn(updated.id, currentPlayer.id);
+                                            }, 500);
                                         } else {
-                                            // Empty boneyard?
+                                            // Boneyard empty - pass
                                             await passTurn(updated.id, currentPlayer.id);
                                         }
                                     } else {
@@ -522,8 +562,13 @@ export const useDominoRoom = (userId?: string) => {
 
             const newConsecutivePasses = roomData.consecutivePasses + 1;
 
-            // Se todos passaram, termina o jogo
-            if (newConsecutivePasses >= roomData.players.length) {
+            // Jogo só termina se todos passaram E o boneyard está vazio
+            // Se ainda há peças no boneyard, jogadores devem comprar antes de passar
+            const boneyardEmpty = roomData.boneyard.length === 0;
+            const allPlayersPassed = newConsecutivePasses >= roomData.players.length;
+
+            if (allPlayersPassed && boneyardEmpty) {
+                // Todos passaram e não há mais peças para comprar - fim de jogo
                 await updateDoc(roomRef, {
                     phase: 'finished',
                     trains: updatedTrains,

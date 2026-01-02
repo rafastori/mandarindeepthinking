@@ -1,11 +1,12 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { SupportedLanguage } from '../types';
 
 /**
  * Hook para síntese de voz com Puter TTS (IA) e fallback para Web Speech API
  * 
  * Retorna:
- * - speak: função para falar texto
+ * - speak: função para falar texto (retorna Promise)
+ * - speakSequence: fala múltiplos textos em sequência, aguardando cada um terminar
  * - isPuterConnected: true se Puter está disponível e logado
  * - connectPuter: função para iniciar login no Puter
  * - puterUsername: nome do usuário Puter (se logado)
@@ -14,6 +15,8 @@ export const usePuterSpeech = () => {
     const [isPuterConnected, setIsPuterConnected] = useState(false);
     const [puterUsername, setPuterUsername] = useState<string | null>(null);
     const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+    const speakingRef = useRef(false);
+    const queueRef = useRef<Array<{ text: string; language: SupportedLanguage; resolve: () => void }>>([]);
 
     // Carrega vozes do navegador para fallback
     useEffect(() => {
@@ -87,44 +90,65 @@ export const usePuterSpeech = () => {
         }
     }, []);
 
-    // Fallback para Web Speech API
-    const fallbackSpeak = useCallback((text: string, language: SupportedLanguage = 'zh') => {
-        if (!('speechSynthesis' in window)) return;
-
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-
-        const langMap: Record<SupportedLanguage, string> = {
-            'zh': 'zh-CN',
-            'de': 'de-DE',
-            'pt': 'pt-BR',
-            'en': 'en-US',
-            'fr': 'fr-FR',
-            'es': 'es-ES',
-            'it': 'it-IT',
-            'ja': 'ja-JP',
-            'ko': 'ko-KR',
-        };
-
-        const targetLangCode = langMap[language] || 'zh-CN';
-        const targetLangShort = language;
-
-        utterance.lang = targetLangCode;
-
-        if (voices.length > 0) {
-            const specificVoice = voices.find(v => v.lang === targetLangCode) ||
-                voices.find(v => v.lang.startsWith(targetLangShort));
-            if (specificVoice) {
-                utterance.voice = specificVoice;
+    // Fallback para Web Speech API - retorna Promise
+    const fallbackSpeak = useCallback((text: string, language: SupportedLanguage = 'zh'): Promise<void> => {
+        return new Promise((resolve) => {
+            if (!('speechSynthesis' in window)) {
+                resolve();
+                return;
             }
-        }
 
-        utterance.rate = 0.9;
-        window.speechSynthesis.speak(utterance);
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+
+            const langMap: Record<SupportedLanguage, string[]> = {
+                'zh': ['zh-CN', 'zh-TW', 'zh'],
+                'de': ['de-DE', 'de-AT', 'de'],
+                'pt': ['pt-BR', 'pt-PT', 'pt'],
+                'en': ['en-US', 'en-GB', 'en'],
+                'fr': ['fr-FR', 'fr-CA', 'fr'],
+                'es': ['es-ES', 'es-MX', 'es'],
+                'it': ['it-IT', 'it'],
+                'ja': ['ja-JP', 'ja'],
+                'ko': ['ko-KR', 'ko'],
+            };
+
+            const targetLangCodes = langMap[language] || ['zh-CN'];
+            const primaryLangCode = targetLangCodes[0];
+
+            utterance.lang = primaryLangCode;
+
+            if (voices.length > 0) {
+                let selectedVoice: SpeechSynthesisVoice | undefined;
+
+                for (const langCode of targetLangCodes) {
+                    selectedVoice = voices.find(v => v.lang === langCode);
+                    if (selectedVoice) break;
+
+                    selectedVoice = voices.find(v => v.lang.startsWith(langCode.split('-')[0]));
+                    if (selectedVoice) break;
+                }
+
+                if (selectedVoice) {
+                    utterance.voice = selectedVoice;
+                    utterance.lang = selectedVoice.lang;
+                }
+            }
+
+            utterance.rate = 0.9;
+
+            utterance.onend = () => resolve();
+            utterance.onerror = () => resolve();
+
+            window.speechSynthesis.speak(utterance);
+
+            // Fallback timeout in case onend doesn't fire
+            setTimeout(() => resolve(), 10000);
+        });
     }, [voices]);
 
-    // Função principal de fala
-    const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh') => {
+    // Função principal de fala - retorna Promise
+    const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh'): Promise<void> => {
         // Tenta usar Puter se estiver conectado
         if (isPuterConnected && typeof puter !== 'undefined') {
             try {
@@ -145,11 +169,21 @@ export const usePuterSpeech = () => {
         }
 
         // Fallback para Web Speech API
-        fallbackSpeak(text, language);
+        await fallbackSpeak(text, language);
     }, [isPuterConnected, fallbackSpeak]);
+
+    // Fala múltiplos textos em sequência
+    const speakSequence = useCallback(async (items: Array<{ text: string; language: SupportedLanguage }>): Promise<void> => {
+        for (const item of items) {
+            await speak(item.text, item.language);
+            // Small pause between items
+            await new Promise(resolve => setTimeout(resolve, 300));
+        }
+    }, [speak]);
 
     return {
         speak,
+        speakSequence,
         isPuterConnected,
         connectPuter,
         disconnectPuter,

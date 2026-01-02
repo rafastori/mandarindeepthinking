@@ -34,9 +34,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
     const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
     const [focusedTrainId, setFocusedTrainId] = useState<string | null>(null); // null = My Train
+    const [autoPassPending, setAutoPassPending] = useState(false);
 
     // TTS Hook
-    const { speak } = usePuterSpeech();
+    const { speakSequence, speak } = usePuterSpeech();
 
     // Auto-scroll ref
     const trainRefs = React.useRef<{ [key: string]: HTMLDivElement | null }>({});
@@ -77,6 +78,61 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             setForceUpdate(prev => prev + 1);
         }
     };
+
+    // Track open trains to detect new opens
+    const prevOpenTrainsRef = useRef<Set<string>>(new Set());
+
+    // Sound alert when a train becomes open
+    const playTrainOpenSound = () => {
+        try {
+            const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+
+            // Alert sound: descending notes
+            oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime); // E5
+            oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime + 0.15); // C5
+            oscillator.frequency.setValueAtTime(392, audioContext.currentTime + 0.3); // G4
+
+            gainNode.gain.setValueAtTime(0.15, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.45);
+
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.45);
+        } catch (e) {
+            // Audio not supported
+        }
+    };
+
+    // Detect when trains become open
+    useEffect(() => {
+        const currentlyOpenTrains = new Set(
+            room.trains.filter(t => t.isOpen && t.ownerId !== null).map(t => t.id)
+        );
+
+        // Check for newly opened trains
+        currentlyOpenTrains.forEach(trainId => {
+            if (!prevOpenTrainsRef.current.has(trainId)) {
+                // This train just opened - play sound
+                const train = room.trains.find(t => t.id === trainId);
+                const owner = train?.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
+
+                playTrainOpenSound();
+
+                // Optional: TTS announcement
+                if (owner && owner.id !== currentUserId) {
+                    setTimeout(() => {
+                        speak(`${owner.name.split(' ')[0]} deixou o trem aberto`, 'pt');
+                    }, 500);
+                }
+            }
+        });
+
+        prevOpenTrainsRef.current = currentlyOpenTrains;
+    }, [room.trains]);
 
     // Auto-scroll to end of my train when piece added
     useEffect(() => {
@@ -150,32 +206,64 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             // TTS: Speak original term in game language, then translation in Portuguese
             // Only for human players (not bots)
             if (originalTerm && translation) {
-                const gameLang = room.config.sourceLang || 'zh';
+                // For language context, use the game language. For other contexts (Biology, Medicine, etc.), use Portuguese
+                const isLanguageContext = room.config.context === 'language';
+                const termLang = isLanguageContext ? (room.config.sourceLang || 'pt') : 'pt';
 
-                // Only speak translation if it's not too long
+                // Only speak translation if it's not too long and different from original
                 const translationToSpeak = translation.length <= 50 ? translation : '';
+                const shouldSpeakTranslation = translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase();
 
-                // First: speak the original term in game language
-                speak(originalTerm, gameLang);
+                // Use speakSequence to wait for each TTS to finish
+                const sequence: Array<{ text: string; language: any }> = [
+                    { text: originalTerm, language: termLang }
+                ];
 
-                // After 1.5 seconds: speak translation in Portuguese (if different and not empty)
-                if (translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase()) {
-                    setTimeout(() => {
-                        speak(translationToSpeak, 'pt');
-                    }, 1500);
+                if (shouldSpeakTranslation) {
+                    sequence.push({ text: translationToSpeak, language: 'pt' });
                 }
+
+                speakSequence(sequence);
             }
         }
     };
 
     const handleDraw = async () => {
         if (!isMyTurn || room.boneyard.length === 0) return;
-        await onDrawPiece();
+        const drawnPiece = await onDrawPiece();
         setLocalHand(null);
+
+        // After drawing, check if the drawn piece can be played
+        if (drawnPiece) {
+            // Check if this piece can play on any valid train
+            const validTrains = room.trains.filter(train => {
+                const isMexican = train.ownerId === null;
+                const isMine = train.ownerId === currentUserId;
+                return isMexican || isMine || train.isOpen;
+            });
+
+            let canPlay = false;
+            for (const train of validTrains) {
+                if (drawnPiece.leftIndex === train.openEndIndex || drawnPiece.rightIndex === train.openEndIndex) {
+                    canPlay = true;
+                    break;
+                }
+            }
+
+            // If can't play drawn piece, auto-pass after 0.5s
+            if (!canPlay) {
+                setAutoPassPending(true);
+                setTimeout(() => {
+                    setAutoPassPending(false);
+                    onPassTurn();
+                }, 500);
+            }
+        }
     };
 
     const handlePass = () => {
         if (!isMyTurn) return;
+        setAutoPassPending(false);
         onPassTurn();
     };
 
@@ -537,10 +625,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                             </button>
                             <button
                                 onClick={handlePass}
-                                className="flex items-center gap-1.5 px-3 py-2 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300 transition-all active:scale-95"
+                                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${autoPassPending
+                                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg animate-pulse'
+                                    : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+                                    }`}
                             >
                                 <Icon name="skip-forward" size={14} />
-                                Passar
+                                {autoPassPending ? 'Passando...' : 'Passar'}
                             </button>
                         </div>
                     )}
@@ -601,6 +692,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                     piece={viewingPiece}
                     isOpen={true}
                     onClose={() => setViewingPiece(null)}
+                    termPairs={room.termPairs}
+                    gameConfig={room.config}
                 />
             )}
         </div>

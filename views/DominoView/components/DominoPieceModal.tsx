@@ -1,7 +1,8 @@
 import React from 'react';
 import Icon from '../../../components/Icon';
-import { DominoPiece as DominoPieceType, Train } from '../types';
+import { DominoPiece as DominoPieceType, Train, TermPair, DominoConfig } from '../types';
 import { DominoPiece } from './DominoPiece';
+import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 
 interface DominoPieceModalProps {
     piece: DominoPieceType;
@@ -9,6 +10,8 @@ interface DominoPieceModalProps {
     onClose: () => void;
     possibleTrains?: Train[]; // Trains this piece can be played on
     onPlay?: (trainId: string) => void;
+    termPairs?: TermPair[]; // Term pairs to find translations
+    gameConfig?: DominoConfig; // Game config for TTS language
 }
 
 export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
@@ -16,9 +19,32 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
     isOpen,
     onClose,
     possibleTrains = [],
-    onPlay
+    onPlay,
+    termPairs = [],
+    gameConfig
 }) => {
+    const { speak } = usePuterSpeech();
+
     if (!isOpen) return null;
+
+    // Find term pairs for left and right indexes
+    const leftTermPair = termPairs.find(tp => tp.index === piece.leftIndex);
+    const rightTermPair = termPairs.find(tp => tp.index === piece.rightIndex);
+
+    // Determine what to show: term is the "original" word, definition is the "translation"
+    const leftTerm = leftTermPair?.term || piece.leftText;
+    const leftDefinition = leftTermPair?.definition || '';
+    const rightTerm = rightTermPair?.term || piece.rightText;
+    const rightDefinition = rightTermPair?.definition || '';
+
+    // Determine TTS language: for language context use sourceLang, otherwise pt-BR
+    const isLanguageContext = gameConfig?.context === 'language';
+    const termLang = isLanguageContext ? (gameConfig?.sourceLang || 'pt') : 'pt';
+
+    const handleSpeak = (text: string, isDefinition: boolean = false) => {
+        // Definitions are always in Portuguese, terms use the game language
+        speak(text, isDefinition ? 'pt' : termLang);
+    };
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
@@ -45,17 +71,40 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
                         <DominoPiece piece={piece} size="lg" />
                     </div>
 
-                    {/* Text Details using Styles from old modal */}
+                    {/* Text Details */}
                     <div className="space-y-4 mb-6">
                         {/* Lado Esquerdo/Superior */}
                         <div className="bg-gradient-to-r from-sky-50 to-sky-100 rounded-xl p-4 border border-sky-200 shadow-sm">
-                            <div className="flex items-center gap-2 mb-2">
-                                <span className="w-6 h-6 bg-sky-500 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
-                                    {piece.leftIndex}
-                                </span>
-                                <span className="text-xs text-sky-600 font-bold uppercase tracking-wider">Parte 1</span>
+                            <div className="flex items-center justify-between mb-2">
+                                <div className="flex items-center gap-2">
+                                    <span className="w-6 h-6 bg-sky-500 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
+                                        {piece.leftIndex}
+                                    </span>
+                                    <span className="text-xs text-sky-600 font-bold uppercase tracking-wider">Parte 1</span>
+                                </div>
+                                <button
+                                    onClick={() => handleSpeak(leftTerm)}
+                                    className="p-2 bg-sky-200 hover:bg-sky-300 rounded-full transition-colors"
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name="volume-2" size={16} className="text-sky-700" />
+                                </button>
                             </div>
-                            <p className="text-sky-900 font-semibold text-lg break-words leading-relaxed">{piece.leftText}</p>
+                            <p className="text-sky-900 font-bold text-lg break-words leading-relaxed">{leftTerm}</p>
+                            {leftDefinition && leftDefinition !== leftTerm && (
+                                <div className="flex items-center gap-2 mt-2">
+                                    <p className="text-sky-700 text-sm opacity-75 break-words flex-1">
+                                        {leftDefinition}
+                                    </p>
+                                    <button
+                                        onClick={() => handleSpeak(leftDefinition, true)}
+                                        className="p-1.5 bg-sky-100 hover:bg-sky-200 rounded-full transition-colors flex-shrink-0"
+                                        title="Ouvir tradução"
+                                    >
+                                        <Icon name="volume-2" size={12} className="text-sky-600" />
+                                    </button>
+                                </div>
+                            )}
                         </div>
 
                         {/* Separador */}
@@ -67,13 +116,36 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
 
                         {/* Lado Direito/Inferior */}
                         <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-xl p-4 border border-emerald-200 shadow-sm">
-                            <div className="flex items-center gap-2 mb-2">
-                                <span className="w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
-                                    {piece.rightIndex}
-                                </span>
-                                <span className="text-xs text-emerald-600 font-bold uppercase tracking-wider">Parte 2</span>
+                            <div className="flex items-center justify-between mb-2">
+                                <div className="flex items-center gap-2">
+                                    <span className="w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-sm">
+                                        {piece.rightIndex}
+                                    </span>
+                                    <span className="text-xs text-emerald-600 font-bold uppercase tracking-wider">Parte 2</span>
+                                </div>
+                                <button
+                                    onClick={() => handleSpeak(rightTerm)}
+                                    className="p-2 bg-emerald-200 hover:bg-emerald-300 rounded-full transition-colors"
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name="volume-2" size={16} className="text-emerald-700" />
+                                </button>
                             </div>
-                            <p className="text-emerald-900 font-semibold text-lg break-words leading-relaxed">{piece.rightText}</p>
+                            <p className="text-emerald-900 font-bold text-lg break-words leading-relaxed">{rightTerm}</p>
+                            {rightDefinition && rightDefinition !== rightTerm && (
+                                <div className="flex items-center gap-2 mt-2">
+                                    <p className="text-emerald-700 text-sm opacity-75 break-words flex-1">
+                                        {rightDefinition}
+                                    </p>
+                                    <button
+                                        onClick={() => handleSpeak(rightDefinition, true)}
+                                        className="p-1.5 bg-emerald-100 hover:bg-emerald-200 rounded-full transition-colors flex-shrink-0"
+                                        title="Ouvir tradução"
+                                    >
+                                        <Icon name="volume-2" size={12} className="text-emerald-600" />
+                                    </button>
+                                </div>
+                            )}
                         </div>
 
                         {piece.isHub && (

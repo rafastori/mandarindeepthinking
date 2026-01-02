@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { auth } from '../../services/firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import Icon from '../../components/Icon';
 import { useDominoRoom } from './hooks/useDominoRoom';
 import { useStudyItems } from '../../hooks/useStudyItems';
 import { useUserProfile } from '../../hooks/useUserProfile';
+import { usePuterSpeech } from '../../hooks/usePuterSpeech';
 import { DominoPlayer, DominoConfig, DOMINO_CONSTANTS, TermPair } from './types';
 import { DominoLobby } from './components/DominoLobby';
 import { GameBoard } from './components/GameBoard';
@@ -53,6 +54,30 @@ const DominoView: React.FC = () => {
 
     const { addItem } = useStudyItems(userId);
     const { savedIds, updateFavorites } = useUserProfile(userId);
+    const { speakSequence } = usePuterSpeech();
+    const gameEndTTSPlayed = useRef(false);
+
+    // TTS for game end announcement
+    useEffect(() => {
+        if (activeRoom?.phase === 'finished' && !gameEndTTSPlayed.current) {
+            gameEndTTSPlayed.current = true;
+
+            // Find winner
+            const sortedPlayers = [...activeRoom.players].sort((a, b) => a.hand.length - b.hand.length);
+            const winner = sortedPlayers[0];
+
+            // Sequential announcements
+            speakSequence([
+                { text: `Fim de Jogo! ${winner.name} venceu! Parabéns!`, language: 'pt' },
+                { text: 'Você pode salvar as palavras do jogo ou voltar ao Lobby', language: 'pt' }
+            ]);
+        }
+
+        // Reset when game restarts
+        if (activeRoom?.phase === 'lobby' || activeRoom?.phase === 'playing') {
+            gameEndTTSPlayed.current = false;
+        }
+    }, [activeRoom?.phase]);
 
     // Navigation Guard - bloqueia saída acidental
     useEffect(() => {
