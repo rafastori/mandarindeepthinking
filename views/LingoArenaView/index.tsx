@@ -5,6 +5,8 @@ import { GameRoom, Player, SupportedLanguage } from '../../types';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { generateGameDeck } from '../../services/gemini';
 import Icon from '../../components/Icon';
+import { useStudyItems } from '../../hooks/useStudyItems';
+import { useUserProfile } from '../../hooks/useUserProfile';
 
 // Sub-componentes
 import { RoomList } from './RoomList';
@@ -36,7 +38,44 @@ const LingoArenaView: React.FC = () => {
     const [targetScore, setTargetScore] = useState(20);
     const [loadingDeck, setLoadingDeck] = useState(false);
 
+    // Hooks for saving words
+    const { addItem } = useStudyItems(user?.uid);
+    const { savedIds, updateFavorites } = useUserProfile(user?.uid);
+
     const updateTimeoutRef = useRef<any>(null);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    // Fullscreen functions
+    const enterFullscreen = () => {
+        try {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+                setIsFullscreen(true);
+            }
+        } catch (e) {
+            console.warn('Fullscreen not supported');
+        }
+    };
+
+    const exitFullscreen = () => {
+        try {
+            if (document.fullscreenElement && document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+            setIsFullscreen(false);
+        } catch (e) {
+            console.warn('Exit fullscreen failed');
+        }
+    };
+
+    // Detect fullscreen changes
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    }, []);
 
     // Auth & Listeners
     useEffect(() => {
@@ -233,6 +272,10 @@ const LingoArenaView: React.FC = () => {
     // Inicializa a fila de cartas ao começar
     const startGame = async () => {
         if (!activeRoom) return;
+
+        // Enter fullscreen when game starts
+        enterFullscreen();
+
         // Cria array de índices [0, 1, 2...] e embaralha
         const indices = Array.from({ length: activeRoom.deck.length }, (_, i) => i);
         const shuffledQueue = shuffleArray(indices);
@@ -241,7 +284,8 @@ const LingoArenaView: React.FC = () => {
             status: 'playing',
             cardQueue: shuffledQueue,
             activeHands: {}, // Ninguém tem carta ainda
-            teamScore: 0 // Começa com 0
+            teamScore: 0, // Começa com 0
+            roundsPlayed: 0 // Reset rounds counter
         });
     };
 
@@ -332,20 +376,18 @@ const LingoArenaView: React.FC = () => {
 
         // Checagem de Fim de Jogo ou Refill
         const isWin = newTeamScore >= (activeRoom.targetScore || 20);
-        const isLoss = newTeamScore <= 0 && activeRoom.teamScore !== 0; // Perde se cair pra zero ou menos (exceto no start exato se for 0)
-        // Ajuste: Se o jogo começou e score <= 0 -> Perdeu.
-        // Vamos considerar que se alguém errou e foi pra <= 0, perdeu.
-        // Se for o GRAB inicial, score é 0, não perde.
-        const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG';
+        const roundsPlayed = (activeRoom.roundsPlayed || 0) + (result === 'CORRECT' || result === 'WRONG' ? 1 : 0);
+        // Game over por score negativo só ocorre após 4 rodadas
+        const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG' && roundsPlayed >= 4;
 
         // Checagem de Refill (Se fila vazia e deck pequeno)
         // Se a fila está vazia e alguém tentou pegar carta (GRAB ou Auto-Pull falhou)
         const needsRefill = currentQueue.length === 0;
 
         if (isWin) {
-            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [] });
+            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [], roundsPlayed });
         } else if (isGameOverLoss) {
-            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [] });
+            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [], roundsPlayed });
         } else if (needsRefill && activeRoom.status !== 'regenerating') {
             // Entra em modo refill, salva estado atual
             await updateDoc(ref, {
@@ -353,7 +395,8 @@ const LingoArenaView: React.FC = () => {
                 teamScore: newTeamScore,
                 players: updatedPlayers,
                 activeHands: currentHands,
-                cardQueue: currentQueue
+                cardQueue: currentQueue,
+                roundsPlayed
             });
             // Dispara geração
             setTimeout(() => handleGenerateCards(true), 100);
@@ -363,7 +406,8 @@ const LingoArenaView: React.FC = () => {
                 teamScore: newTeamScore,
                 players: updatedPlayers,
                 activeHands: currentHands,
-                cardQueue: currentQueue
+                cardQueue: currentQueue,
+                roundsPlayed
             });
         }
     };
@@ -445,8 +489,8 @@ const LingoArenaView: React.FC = () => {
             } else if (botHasCard) {
                 // Bot has a card, needs to answer
                 botPlayRef.current = setTimeout(() => {
-                    // 70% accuracy
-                    const isCorrect = Math.random() < 0.7;
+                    // 95% accuracy (improved from 70%)
+                    const isCorrect = Math.random() < 0.95;
                     executeBotAction(bot.id, isCorrect ? 'CORRECT' : 'WRONG');
                 }, 2500 + Math.random() * 2000); // 2.5-4.5s delay
             }
@@ -477,10 +521,18 @@ const LingoArenaView: React.FC = () => {
                         }
                     </div>
                     <div className="flex gap-2">
+                        {/* Fullscreen toggle button */}
+                        <button
+                            onClick={() => isFullscreen ? exitFullscreen() : enterFullscreen()}
+                            className="p-2 text-slate-400 hover:text-brand-600 bg-slate-50 rounded-lg"
+                            title={isFullscreen ? 'Sair da tela cheia' : 'Tela cheia'}
+                        >
+                            <Icon name={isFullscreen ? 'minimize-2' : 'maximize-2'} size={18} />
+                        </button>
                         {activeRoom.hostId === user.uid && activeRoom.status !== 'lobby' && (
                             <button onClick={restartGame} className="p-2 text-slate-400 hover:text-orange-500 bg-slate-50 rounded-lg"><Icon name="rotate-ccw" size={18} /></button>
                         )}
-                        <button onClick={() => leaveRoom(activeRoom.id)} className="text-red-500 font-bold text-sm bg-red-50 px-3 py-1 rounded-lg">Sair</button>
+                        <button onClick={() => { exitFullscreen(); leaveRoom(activeRoom.id); }} className="text-red-500 font-bold text-sm bg-red-50 px-3 py-1 rounded-lg">Sair</button>
                     </div>
                 </div>
             )}
@@ -522,7 +574,40 @@ const LingoArenaView: React.FC = () => {
                 )}
 
                 {activeRoom?.status === 'finished' && (
-                    <GameOver room={activeRoom} isHost={activeRoom.hostId === user.uid} onRestart={restartGame} onDelete={() => deleteRoom(activeRoom.id)} />
+                    <GameOver
+                        room={activeRoom}
+                        isHost={activeRoom.hostId === user.uid}
+                        onRestart={restartGame}
+                        onDelete={() => deleteRoom(activeRoom.id)}
+                        onSaveWords={async (words) => {
+                            if (!activeRoom || !user) return;
+                            const newIds: string[] = [];
+
+                            for (const w of words) {
+                                const newId = await addItem({
+                                    chinese: w.word,
+                                    translation: w.meaning,
+                                    pinyin: w.pinyin || '',
+                                    tokens: [w.word],
+                                    keywords: [{
+                                        id: Date.now().toString() + Math.random().toString().slice(2),
+                                        word: w.word,
+                                        pinyin: w.pinyin || '',
+                                        meaning: w.meaning,
+                                        language: activeRoom.config?.lang
+                                    }],
+                                    language: activeRoom.config?.lang,
+                                    type: 'word',
+                                    originalSentence: ''
+                                });
+                                if (newId) newIds.push(newId);
+                            }
+
+                            if (newIds.length > 0 && savedIds) {
+                                await updateFavorites([...savedIds, ...newIds]);
+                            }
+                        }}
+                    />
                 )}
             </div>
         </div>

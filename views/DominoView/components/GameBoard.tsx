@@ -6,6 +6,7 @@ import { PlayerHand } from './PlayerHand';
 import { HandViewModal } from './HandViewModal';
 import { TrainViewModal } from './TrainViewModal';
 import { DominoPieceModal } from './DominoPieceModal';
+import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 
 interface GameBoardProps {
     room: DominoRoom;
@@ -33,6 +34,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
     const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
     const [focusedTrainId, setFocusedTrainId] = useState<string | null>(null); // null = My Train
+
+    // TTS Hook
+    const { speak } = usePuterSpeech();
 
     // Auto-scroll ref
     const trainRefs = React.useRef<{ [key: string]: HTMLDivElement | null }>({});
@@ -130,10 +134,37 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         const { canPlay, needsFlip } = canPlayOnTrain(piece, train);
         if (!canPlay) return;
 
+        // Get the connected index to find the term pair
+        const connectedIndex = train.openEndIndex;
+
+        // Find the term pair for this index
+        const termPair = room.termPairs.find(tp => tp.index === connectedIndex);
+        const originalTerm = termPair?.term || '';    // Word in game language (e.g., "Übersetzung")
+        const translation = termPair?.definition || ''; // Translation in Portuguese (e.g., "tradução")
+
         const success = await onPlacePiece(piece.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
             setLocalHand(null);
+
+            // TTS: Speak original term in game language, then translation in Portuguese
+            // Only for human players (not bots)
+            if (originalTerm && translation) {
+                const gameLang = room.config.sourceLang || 'zh';
+
+                // Only speak translation if it's not too long
+                const translationToSpeak = translation.length <= 50 ? translation : '';
+
+                // First: speak the original term in game language
+                speak(originalTerm, gameLang);
+
+                // After 1.5 seconds: speak translation in Portuguese (if different and not empty)
+                if (translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase()) {
+                    setTimeout(() => {
+                        speak(translationToSpeak, 'pt');
+                    }, 1500);
+                }
+            }
         }
     };
 
@@ -291,7 +322,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                     ? 'bg-gradient-to-br from-emerald-50 via-white to-teal-50'
                                     : isMexican
                                         ? 'bg-gradient-to-br from-amber-50 via-white to-orange-50 border border-amber-200'
-                                        : 'bg-gradient-to-br from-slate-50 via-white to-slate-100 border border-slate-200'}
+                                        : focusedTrain.isOpen
+                                            ? 'bg-gradient-to-br from-yellow-50 via-white to-orange-50 border-2 border-yellow-400'
+                                            : 'bg-gradient-to-br from-slate-50 via-white to-slate-100 border border-slate-200'}
                                 ${isPlayable ? 'ring-2 ring-green-400 cursor-pointer shadow-lg' : 'shadow-md'}
                                 ${isDragOver && canAccess ? 'ring-4 ring-blue-400 scale-[1.01] bg-blue-50' : ''}
                             `}
@@ -434,7 +467,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                         flex-shrink-0 p-3 rounded-xl transition-all cursor-pointer min-w-[120px]
                                         ${isMexican
                                             ? 'bg-amber-50 border border-amber-200'
-                                            : 'bg-slate-50 border border-slate-200'}
+                                            : train.isOpen
+                                                ? 'bg-yellow-50 border-2 border-yellow-400'
+                                                : 'bg-slate-50 border border-slate-200'}
                                         ${isFocused ? 'ring-2 ring-blue-400' : ''}
                                         ${isPlayable ? 'ring-2 ring-green-400' : ''}
                                         ${isDragOver ? 'ring-2 ring-blue-500 bg-blue-50' : ''}

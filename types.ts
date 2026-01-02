@@ -95,6 +95,9 @@ export interface GameRoom {
     // Mantemos para compatibilidade temporária, mas não usaremos mais da mesma forma
     currentCardIndex?: number;
     roundAnswers?: Record<string, boolean>;
+
+    // Contador de rodadas jogadas (para game over após 4 rodadas)
+    roundsPlayed?: number;
 }
 
 declare global {

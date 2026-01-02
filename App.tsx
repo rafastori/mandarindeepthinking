@@ -261,7 +261,7 @@ const App: React.FC = () => {
         }
     };
 
-    const isFullscreenGame = tab === 'jogo' && selectedGame === 'domino';
+    const isFullscreenGame = tab === 'jogo' && (selectedGame === 'domino' || selectedGame === 'lingoarena');
 
     return (
         <div className="h-[100dvh] flex flex-col bg-slate-50 w-full overflow-hidden relative">
