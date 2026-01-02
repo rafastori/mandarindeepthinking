@@ -176,11 +176,16 @@ export const usePolyQuestRoom = (userId?: string) => {
             const roomData = roomSnap.data() as PolyQuestRoom;
             const updatedPlayers = roomData.players.filter(p => p.id !== playerId);
 
-            // ATUALIZAÇÃO: Sala NÃO é mais deletada automaticamente quando a última pessoa sai.
-            // Apenas removemos o jogador da lista.
-            await updateDoc(roomRef, {
-                players: updatedPlayers
-            });
+            // AUTO-CLEANUP: Se última pessoa saiu, deleta a sala do Firestore
+            if (updatedPlayers.length === 0) {
+                console.log('[PolyQuest] Last player left, deleting room:', roomId);
+                await deleteDoc(roomRef);
+            } else {
+                // Ainda tem jogadores, apenas atualiza a lista
+                await updateDoc(roomRef, {
+                    players: updatedPlayers
+                });
+            }
 
             setActiveRoom(null);
         } catch (error) {
@@ -225,13 +230,20 @@ export const usePolyQuestRoom = (userId?: string) => {
 
     /**
      * Atualizar configuração da sala (apenas host)
+     * USA DOT NOTATION para fazer MERGE ao invés de sobrescrever todo o config!
      */
     const updateConfig = async (roomId: string, config: Partial<GameConfig>): Promise<void> => {
         try {
             const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                config
-            });
+
+            // Cria objeto com dot notation para cada campo de config
+            // Isso FAZ MERGE ao invés de sobrescrever todo o objeto config
+            const updates: Record<string, any> = {};
+            for (const [key, value] of Object.entries(config)) {
+                updates[`config.${key}`] = value;
+            }
+
+            await updateDoc(roomRef, updates);
         } catch (error) {
             console.error('Error updating config:', error);
         }

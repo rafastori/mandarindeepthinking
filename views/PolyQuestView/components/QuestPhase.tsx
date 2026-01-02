@@ -17,6 +17,7 @@ interface QuestPhaseProps {
     onUnlockEnigma: (index: number) => Promise<void>;
     onRequestHelp: (index: number) => Promise<void>;
     onProvideHelp: (index: number) => Promise<void>;
+    onShowOriginalText?: () => void;  // Para abrir modal de texto original
 }
 
 // Helper to get user color (consistent with BossPhase)
@@ -45,7 +46,8 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     onLockEnigma,
     onUnlockEnigma,
     onRequestHelp,
-    onProvideHelp
+    onProvideHelp,
+    onShowOriginalText
 }) => {
     const { speak } = usePuterSpeech();
     const [loading, setLoading] = useState(true);
@@ -321,6 +323,18 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                                     <Icon name="life-buoy" size={14} />
                                     {enigma.needsHelp ? 'Ajuda Solicitada' : 'PEDIR AJUDA (SOS)'}
                                 </button>
+                                {onShowOriginalText && (
+                                    <button
+                                        onClick={() => {
+                                            setActiveEnigmaIndex(null);
+                                            onShowOriginalText();
+                                        }}
+                                        className="p-2 rounded-full transition-colors text-blue-500 hover:text-blue-700 bg-blue-50 hover:bg-blue-100"
+                                        title="Ver Texto Original"
+                                    >
+                                        <Icon name="book-open" size={18} />
+                                    </button>
+                                )}
                             </div>
                         )}
 

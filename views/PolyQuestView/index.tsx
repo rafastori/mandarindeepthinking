@@ -14,12 +14,14 @@ import { QuestPhase } from './components/QuestPhase';
 import { IntruderChallenge } from './components/IntruderChallenge';
 import { BossPhase } from './components/BossPhase';
 import { VictoryPhase } from './components/VictoryPhase';
+import { usePuterSpeech } from '../../hooks/usePuterSpeech';
 
 const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showOriginalText, setShowOriginalText] = useState(false);
     const [showExitConfirm, setShowExitConfirm] = useState(false);
+    const { speak } = usePuterSpeech();
 
     const {
         rooms,
@@ -273,6 +275,15 @@ const PolyQuestView: React.FC = () => {
                             <Icon name="book-open" size={24} className="text-emerald-600" />
                             Texto Original
                         </h3>
+                        {/* TTS Button */}
+                        <button
+                            onClick={() => speak(activeRoom.config.originalText, (activeRoom.config.sourceLang || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                            className="absolute left-4 flex items-center gap-2 px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 rounded-lg font-semibold transition-colors"
+                            title="Ouvir texto"
+                        >
+                            <Icon name="volume-2" size={20} />
+                            <span>Ouvir</span>
+                        </button>
                         <button
                             onClick={() => setShowOriginalText(false)}
                             className="absolute right-4 flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition-colors"
@@ -333,6 +344,7 @@ const PolyQuestView: React.FC = () => {
                                 onUnlockEnigma={(idx) => unlockEnigma(activeRoom.id, idx, user.uid)}
                                 onRequestHelp={(idx) => requestHelp(activeRoom.id, idx, user.uid)}
                                 onProvideHelp={(idx) => provideHelp(activeRoom.id, idx, user.uid)}
+                                onShowOriginalText={() => setShowOriginalText(true)}
                             />
                         ) : activeRoom.phase === 'intruder' ? (
                             <IntruderChallenge
