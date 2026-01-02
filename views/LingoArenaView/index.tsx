@@ -269,6 +269,17 @@ const LingoArenaView: React.FC = () => {
         finally { setLoadingDeck(false); }
     };
 
+    // Trigger Refill Effect (Host Only)
+    useEffect(() => {
+        if (!activeRoom || !user || activeRoom.hostId !== user.uid) return;
+
+        // Se status mudou para 'regenerating' e não estamos carregando, dispara!
+        if (activeRoom.status === 'regenerating' && !loadingDeck) {
+            console.log("⚡ Refill Triggered via Status Change");
+            handleGenerateCards(true).catch(console.error);
+        }
+    }, [activeRoom?.status, loadingDeck, activeRoom?.hostId, user?.uid]);
+
     // Safety Net: Monitora travamentos na geração de cartas (Host apenas)
     useEffect(() => {
         if (!activeRoom || !user || activeRoom.hostId !== user.uid) return;
@@ -351,115 +362,112 @@ const LingoArenaView: React.FC = () => {
         if (!activeRoom || !user) return;
         const ref = doc(db, 'gameRooms', activeRoom.id);
 
-        let newTeamScore = activeRoom.teamScore || 0;
-        const currentHands = { ...(activeRoom.activeHands || {}) };
-        let currentQueue = [...(activeRoom.cardQueue || [])];
-        const currentCardIndex = currentHands[user.uid]; // Carta atual do user
+        try {
+            await runTransaction(db, async (transaction) => {
+                const roomSnap = await transaction.get(ref);
+                if (!roomSnap.exists()) throw "Room not found";
 
-        // Atualiza Players (Score Individual)
-        const updatePlayerScore = (points: number) => {
-            return activeRoom.players.map(p => p.id === user.uid ? { ...p, score: (p.score || 0) + points } : p);
-        };
-        let updatedPlayers = activeRoom.players;
+                const room = roomSnap.data() as GameRoom;
+                if (room.status !== 'playing' && room.status !== 'regenerating') return;
 
-        // Lógica de Ação
-        if (result === 'GRAB') {
-            // Usa transação para garantir que apenas um jogador pegue a carta
-            try {
-                await runTransaction(db, async (transaction) => {
-                    const roomSnap = await transaction.get(ref);
-                    if (!roomSnap.exists()) return;
+                const freshQueue = [...(room.cardQueue || [])];
+                const freshHands = { ...(room.activeHands || {}) };
+                let newTeamScore = room.teamScore || 0;
+                let updatedPlayers = room.players;
+                let roundsPlayed = room.roundsPlayed || 0; // Read from DB
 
-                    const roomData = roomSnap.data() as GameRoom;
-                    const freshQueue = [...(roomData.cardQueue || [])];
-                    const freshHands = { ...(roomData.activeHands || {}) };
+                // Helper to update score
+                const updateScore = (points: number) => {
+                    updatedPlayers = updatedPlayers.map(p => p.id === user.uid ? { ...p, score: (p.score || 0) + points } : p);
+                    newTeamScore += points;
+                };
 
-                    // Se o usuário já tem carta, não faz nada
+                // LÓGICA DE AÇÃO
+                if (result === 'GRAB') {
+                    // Só pode pegar se não tiver carta
                     if (freshHands[user.uid] !== undefined) return;
-
-                    // Se não há cartas na fila, não faz nada
+                    // Só pode pegar se tiver carta na fila
                     if (freshQueue.length === 0) return;
 
-                    // Pega a próxima carta disponível
                     const nextCard = freshQueue.shift();
-                    if (nextCard !== undefined) {
-                        freshHands[user.uid] = nextCard;
+                    if (nextCard !== undefined) freshHands[user.uid] = nextCard;
+                } else {
+                    // Lógica para CORRECT, WRONG, PASS
+                    const currentCardIndex = freshHands[user.uid];
+                    if (currentCardIndex === undefined) return; // Não tem carta para responder
+
+                    if (result === 'CORRECT') {
+                        updateScore(1);
+                        roundsPlayed++;
+                    } else if (result === 'WRONG') {
+                        updateScore(-3);
+                        roundsPlayed++;
+                        freshQueue.push(currentCardIndex); // Devolve para o fim
+                    } else if (result === 'PASS') {
+                        freshQueue.push(currentCardIndex); // Devolve para o fim
                     }
 
-                    transaction.update(ref, {
-                        cardQueue: freshQueue,
-                        activeHands: freshHands
-                    });
-                });
-            } catch (e) {
-                console.warn('Transaction failed, card may already be taken');
-            }
-            return; // GRAB é tratado completamente na transação
-        }
-        else {
-            // Processa resultado da carta atual
-            if (currentCardIndex === undefined) return; // Segurança
+                    // Remove carta atual
+                    delete freshHands[user.uid];
 
-            if (result === 'CORRECT') {
-                newTeamScore += 1;
-                updatedPlayers = updatePlayerScore(1);
-                // Carta é descartada (não volta pra fila)
-            } else if (result === 'WRONG') {
-                newTeamScore -= 3;
-                updatedPlayers = updatePlayerScore(-3);
-                // Carta volta pro final da fila
-                currentQueue.push(currentCardIndex);
-            } else if (result === 'PASS') {
-                // Sem mudança de pontos
-                // Carta volta pro final da fila
-                currentQueue.push(currentCardIndex);
-            }
+                    // AUTO-PULL: Tenta pegar a próxima imediatamente
+                    if (freshQueue.length > 0) {
+                        const nextCard = freshQueue.shift();
+                        if (nextCard !== undefined) freshHands[user.uid] = nextCard;
+                    }
+                }
 
-            // Remove a carta atual da mão
-            delete currentHands[user.uid];
+                // CHECK GAME OVER / REFILL
+                const isWin = newTeamScore >= (room.targetScore || 20);
+                const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG' && roundsPlayed >= 4;
+                const needsRefill = freshQueue.length === 0 && Object.keys(freshHands).length === 0 && !isWin && !isGameOverLoss;
+                // Nota: O Auto-Refill original era triggado apenas se queue vazia. 
+                // Agora, se queue vazia E mãos vazias (ninguém tem carta), precisamos de refill urgente?
+                // O safety net cuida disso. Mas vamos manter o trigger se for óbvio.
+                // Na vdd, o previous logic triggava se queue == 0.
 
-            // AUTO-PULL: Já tenta pegar a próxima imediatamente para fluidez
-            if (currentQueue.length > 0) {
-                const nextCard = currentQueue.shift();
-                if (nextCard !== undefined) currentHands[user.uid] = nextCard;
-            }
-        }
+                const updates: any = {
+                    teamScore: newTeamScore,
+                    players: updatedPlayers,
+                    activeHands: freshHands,
+                    cardQueue: freshQueue, // IMPORTANTE: Atualiza a fila atômica
+                    roundsPlayed: roundsPlayed
+                };
 
-        // Checagem de Fim de Jogo ou Refill
-        const isWin = newTeamScore >= (activeRoom.targetScore || 20);
-        const roundsPlayed = (activeRoom.roundsPlayed || 0) + (result === 'CORRECT' || result === 'WRONG' ? 1 : 0);
-        // Game over por score negativo só ocorre após 4 rodadas
-        const isGameOverLoss = newTeamScore <= 0 && result === 'WRONG' && roundsPlayed >= 4;
+                if (isWin || isGameOverLoss) {
+                    updates.status = 'finished';
+                    updates.activeHands = {};
+                    updates.cardQueue = [];
+                } else if (freshQueue.length === 0 && room.status !== 'regenerating') {
+                    // Trigger Refill flag
+                    updates.status = 'regenerating';
+                    // Não chamamos handleGenerateCards dentro da transaction (é async side-effect).
+                    // O SafetyNet ou um useEffect vai pegar essa mudança de status.
+                    // Mas para ser rápido, podemos agendar.
+                }
 
-        // Checagem de Refill (Se fila vazia e deck pequeno)
-        // Se a fila está vazia e alguém tentou pegar carta (GRAB ou Auto-Pull falhou)
-        const needsRefill = currentQueue.length === 0;
-
-        if (isWin) {
-            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [], roundsPlayed });
-        } else if (isGameOverLoss) {
-            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [], roundsPlayed });
-        } else if (needsRefill && activeRoom.status !== 'regenerating') {
-            // Entra em modo refill, salva estado atual
-            await updateDoc(ref, {
-                status: 'regenerating',
-                teamScore: newTeamScore,
-                players: updatedPlayers,
-                activeHands: currentHands,
-                cardQueue: currentQueue,
-                roundsPlayed
+                transaction.update(ref, updates);
             });
-            // Dispara geração
-            setTimeout(() => handleGenerateCards(true), 100);
-        } else {
-            // Segue o jogo
-            await updateDoc(ref, {
-                teamScore: newTeamScore,
-                players: updatedPlayers,
-                activeHands: currentHands,
-                cardQueue: currentQueue,
-                roundsPlayed
-            });
+
+            // Pós-transaction side-effects
+            // Se definimos status='regenerating', precisamos chamar a cloud function ou local generator.
+            // O código original chamava handleGenerateCards(true) no setTimeout.
+            // Vamos replicar isso verificando o estado APÓS a transação?
+            // Não temos o estado novo aqui fácil.
+            // Mas o SafetyNet que implementamos no passo anterior (Step 1537) vai ver "regenerating" e disparar.
+            // EDIT: O SafetyNet espera 5 segundos. Isso é lento para UX.
+            // Melhor disparar manualmente se acharmos que precisa.
+            // Mas activeRoom ainda é o antigo.
+            // Solução: Se queue era pequena, disparamos speculative refill?
+            // Ou confiamos no listener onSnapshot que vai atualizar activeRoom -> trigger effect?
+            // Melhor: O código original tinha `needsRefill` logic.
+            // Vou confiar no SafetyNet POR ENQUANTO, mas se ficar lento, ajusto.
+            // Espere, o SafetyNet é "Stuck".
+            // Preciso de um trigger normal.
+            // Vou adicionar um useEffect para triggerar refill quando status muda para regenerating.
+
+        } catch (e) {
+            console.error("Action transaction failed", e);
         }
     };
 
@@ -471,74 +479,79 @@ const LingoArenaView: React.FC = () => {
         if (!activeRoom) return;
         const ref = doc(db, 'gameRooms', activeRoom.id);
 
-        let newTeamScore = activeRoom.teamScore || 0;
-        const currentHands = { ...(activeRoom.activeHands || {}) };
-        let currentQueue = [...(activeRoom.cardQueue || [])];
-        const currentCardIndex = currentHands[botId];
+        try {
+            await runTransaction(db, async (transaction) => {
+                const roomSnap = await transaction.get(ref);
+                if (!roomSnap.exists()) return;
 
-        const updatePlayerScore = (points: number) => {
-            return activeRoom.players.map(p => p.id === botId ? { ...p, score: (p.score || 0) + points } : p);
-        };
-        let updatedPlayers = activeRoom.players;
+                const room = roomSnap.data() as GameRoom;
+                if (room.status !== 'playing' && room.status !== 'regenerating') return;
 
-        if (action === 'GRAB') {
-            // BOT também usa transação para garantir atomicidade
-            try {
-                await runTransaction(db, async (transaction) => {
-                    const roomSnap = await transaction.get(ref);
-                    if (!roomSnap.exists()) return;
+                const freshQueue = [...(room.cardQueue || [])];
+                const freshHands = { ...(room.activeHands || {}) };
+                let newTeamScore = room.teamScore || 0;
+                let updatedPlayers = room.players;
+                let roundsPlayed = room.roundsPlayed || 0;
 
-                    const roomData = roomSnap.data() as GameRoom;
-                    const freshQueue = [...(roomData.cardQueue || [])];
-                    const freshHands = { ...(roomData.activeHands || {}) };
+                const updateScore = (points: number) => {
+                    updatedPlayers = updatedPlayers.map(p => p.id === botId ? { ...p, score: (p.score || 0) + points } : p);
+                    newTeamScore += points;
+                };
 
-                    // Se o bot já tem carta, não faz nada
+                if (action === 'GRAB') {
                     if (freshHands[botId] !== undefined) return;
-
-                    // Se não há cartas na fila, não faz nada
                     if (freshQueue.length === 0) return;
-
-                    // Pega a próxima carta disponível
                     const nextCard = freshQueue.shift();
-                    if (nextCard !== undefined) {
-                        freshHands[botId] = nextCard;
+                    if (nextCard !== undefined) freshHands[botId] = nextCard;
+                } else {
+                    const currentCardIndex = freshHands[botId];
+                    if (currentCardIndex === undefined) return;
+
+                    if (action === 'CORRECT') {
+                        updateScore(1);
+                        roundsPlayed++;
+                    } else if (action === 'WRONG') {
+                        updateScore(-3);
+                        roundsPlayed++;
+                        freshQueue.push(currentCardIndex);
+                    } else {
+                        // PASS
+                        freshQueue.push(currentCardIndex);
                     }
 
-                    transaction.update(ref, {
-                        cardQueue: freshQueue,
-                        activeHands: freshHands
-                    });
-                });
-            } catch (e) {
-                console.warn('Bot transaction failed');
-            }
-            return; // GRAB tratado na transação
-        } else {
-            if (currentCardIndex === undefined) return;
+                    delete freshHands[botId];
 
-            if (action === 'CORRECT') {
-                newTeamScore += 1;
-                updatedPlayers = updatePlayerScore(1);
-            } else if (action === 'WRONG') {
-                newTeamScore -= 3;
-                updatedPlayers = updatePlayerScore(-3);
-                currentQueue.push(currentCardIndex);
-            }
+                    if (freshQueue.length > 0) {
+                        const nextCard = freshQueue.shift();
+                        if (nextCard !== undefined) freshHands[botId] = nextCard;
+                    }
+                }
 
-            delete currentHands[botId];
-            if (currentQueue.length > 0) {
-                const nextCard = currentQueue.shift();
-                if (nextCard !== undefined) currentHands[botId] = nextCard;
-            }
-        }
+                const isWin = newTeamScore >= (room.targetScore || 20);
+                const isGameOverLoss = newTeamScore <= 0 && action === 'WRONG' && roundsPlayed >= 4;
+                // Bot refill logic: same as user
+                const needsRefill = freshQueue.length === 0;
 
-        const isWin = newTeamScore >= (activeRoom.targetScore || 20);
-        const isGameOverLoss = newTeamScore <= 0 && action === 'WRONG';
+                const updates: any = {
+                    teamScore: newTeamScore,
+                    players: updatedPlayers,
+                    activeHands: freshHands,
+                    cardQueue: freshQueue,
+                    roundsPlayed
+                };
 
-        if (isWin || isGameOverLoss) {
-            await updateDoc(ref, { status: 'finished', teamScore: newTeamScore, players: updatedPlayers, activeHands: {}, cardQueue: [] });
-        } else {
-            await updateDoc(ref, { teamScore: newTeamScore, players: updatedPlayers, activeHands: currentHands, cardQueue: currentQueue });
+                if (isWin || isGameOverLoss) {
+                    updates.status = 'finished';
+                    updates.activeHands = {};
+                    updates.cardQueue = [];
+                } else if (freshQueue.length === 0 && room.status !== 'regenerating') {
+                    updates.status = 'regenerating';
+                }
+
+                transaction.update(ref, updates);
+            });
+        } catch (e) {
+            console.error("Bot transaction failed", e);
         }
     };
 
