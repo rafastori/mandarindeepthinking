@@ -237,7 +237,20 @@ const App: React.FC = () => {
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
-                    return <GameSelector onSelectGame={setSelectedGame} />;
+                    return (
+                        <GameSelector onSelectGame={(game) => {
+                            if (game === 'domino') {
+                                // Tenta entrar em fullscreen automaticamente (Gesto do usuário válido aqui)
+                                try {
+                                    document.documentElement.requestFullscreen()
+                                        .then(() => setIsGameFullscreen(true))
+                                        .catch(e => console.log('Auto-fs failed', e));
+                                } catch (e) { /* ignore */ }
+                                setIsGameFullscreen(true); // Garante que a UI se adapte mesmo se o browser bloquear
+                            }
+                            setSelectedGame(game);
+                        }} />
+                    );
                 } else if (selectedGame === 'lingoarena') {
                     return <LingoArenaView />;
                 } else if (selectedGame === 'polyquest') {

@@ -78,6 +78,22 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         }
     };
 
+    const enterFullscreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen()
+                .then(() => onToggleFullscreen?.(true))
+                .catch(e => console.log(e));
+        }
+    };
+
+    const exitFullscreen = () => {
+        if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen()
+                .then(() => onToggleFullscreen?.(false))
+                .catch(e => console.log(e));
+        }
+    };
+
     // Sync fullscreen state
     useEffect(() => {
         const handleFSChange = () => {
@@ -157,6 +173,8 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
             if (room) setActiveRoom(room);
             setShowCreateModal(false);
             setRoomName('');
+            // Retorna ao fullscreen após criar (evita bug do teclado)
+            setTimeout(() => enterFullscreen(), 100);
         }
     };
 
@@ -466,7 +484,11 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
                         </button>
 
                         <button
-                            onClick={() => setShowCreateModal(true)}
+                            onClick={() => {
+                                // Sai do fullscreen temporariamente para evitar bug visual do teclado no mobile
+                                if (isFullscreen) exitFullscreen();
+                                setShowCreateModal(true);
+                            }}
                             className="px-8 py-4 bg-white text-orange-600 rounded-2xl font-bold flex items-center gap-3 hover:bg-orange-50 shadow-lg transform hover:scale-105 transition-all text-lg"
                         >
                             <Icon name="plus-circle" size={24} />
