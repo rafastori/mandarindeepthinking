@@ -269,6 +269,31 @@ const LingoArenaView: React.FC = () => {
         finally { setLoadingDeck(false); }
     };
 
+    // Safety Net: Monitora travamentos na geração de cartas (Host apenas)
+    useEffect(() => {
+        if (!activeRoom || !user || activeRoom.hostId !== user.uid) return;
+
+        // Caso 1: Status 'playing' mas fila vazia (Travou sem disparar refill)
+        const isStuckEmpty = activeRoom.status === 'playing' && (activeRoom.cardQueue?.length || 0) === 0;
+
+        // Caso 2: Status 'regenerating' mas travado (Ex: Host recarregou a página enquanto gerava)
+        // Verificamos !loadingDeck para garantir que não estamos gerando agora mesmo neste cliente
+        const isStuckRegenerating = activeRoom.status === 'regenerating' && !loadingDeck;
+
+        if (isStuckEmpty || isStuckRegenerating) {
+            console.log("⚠️ Safety Net: Detectado necessidade de regeneração", { isStuckEmpty, isStuckRegenerating });
+
+            // Espera um pouco para evitar race conditions ou loops rápidos
+            const timer = setTimeout(() => {
+                // Se ainda estiver travado, tenta gerar novamente
+                handleGenerateCards(true)
+                    .catch(err => console.error("Safety Net retry failed:", err));
+            }, 5000); // 5 segundos de tolerância
+
+            return () => clearTimeout(timer);
+        }
+    }, [activeRoom?.status, activeRoom?.cardQueue?.length, loadingDeck, user?.uid, activeRoom?.hostId]);
+
     // Inicializa a fila de cartas ao começar
     const startGame = async () => {
         if (!activeRoom) return;
