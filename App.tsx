@@ -36,6 +36,7 @@ const App: React.FC = () => {
     const [showImport, setShowImport] = useState(false);
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest' | 'domino'>('selector');
+    const [isGameFullscreen, setIsGameFullscreen] = useState(false);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
@@ -242,7 +243,15 @@ const App: React.FC = () => {
                 } else if (selectedGame === 'polyquest') {
                     return <PolyQuestView />;
                 } else if (selectedGame === 'domino') {
-                    return <DominoView />;
+                    return (
+                        <DominoView
+                            onBack={() => {
+                                setSelectedGame('selector');
+                                setIsGameFullscreen(false);
+                            }}
+                            onToggleFullscreen={setIsGameFullscreen}
+                        />
+                    );
                 }
                 return null;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;
@@ -261,7 +270,7 @@ const App: React.FC = () => {
         }
     };
 
-    const isFullscreenGame = tab === 'jogo' && (selectedGame === 'domino' || selectedGame === 'lingoarena');
+    const isFullscreenGame = tab === 'jogo' && (selectedGame === 'lingoarena' || (selectedGame === 'domino' && isGameFullscreen));
 
     return (
         <div className="h-[100dvh] flex flex-col bg-slate-50 w-full overflow-hidden relative">

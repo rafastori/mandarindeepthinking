@@ -10,12 +10,18 @@ import { DominoPlayer, DominoConfig, DOMINO_CONSTANTS, TermPair } from './types'
 import { DominoLobby } from './components/DominoLobby';
 import { GameBoard } from './components/GameBoard';
 
-const DominoView: React.FC = () => {
+interface DominoViewProps {
+    onBack?: () => void;
+    onToggleFullscreen?: (isFullscreen: boolean) => void;
+}
+
+const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showExitConfirm, setShowExitConfirm] = useState(false);
     const [savedTerms, setSavedTerms] = useState<number[]>([]);
     const [roomName, setRoomName] = useState('');
+    const [isFullscreen, setIsFullscreen] = useState(false);
     const [config, setConfig] = useState<DominoConfig>({
         context: 'language',
         sourceLang: 'de',
@@ -56,6 +62,35 @@ const DominoView: React.FC = () => {
     const { savedIds, updateFavorites } = useUserProfile(userId);
     const { speakSequence } = usePuterSpeech();
     const gameEndTTSPlayed = useRef(false);
+
+    // Fullscreen functions
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen()
+                .then(() => onToggleFullscreen?.(true))
+                .catch(e => console.log(e));
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen()
+                    .then(() => onToggleFullscreen?.(false))
+                    .catch(e => console.log(e));
+            }
+        }
+    };
+
+    // Sync fullscreen state
+    useEffect(() => {
+        const handleFSChange = () => {
+            const isFull = !!document.fullscreenElement;
+            setIsFullscreen(isFull);
+            onToggleFullscreen?.(isFull);
+        };
+        document.addEventListener('fullscreenchange', handleFSChange);
+        return () => {
+            document.removeEventListener('fullscreenchange', handleFSChange);
+            onToggleFullscreen?.(false); // Reset on unmount
+        };
+    }, []);
 
     // TTS for game end announcement
     useEffect(() => {
@@ -194,10 +229,14 @@ const DominoView: React.FC = () => {
     // Se não logado
     if (!user) {
         return (
-            <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                <Icon name="lock" size={64} className="text-slate-300 mb-4" />
+            <div className="flex flex-col items-center justify-center h-full p-8 text-center animate-in fade-in duration-500">
+                <div className="w-24 h-24 bg-slate-100 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                    <Icon name="lock" size={40} className="text-slate-400" />
+                </div>
                 <h2 className="text-2xl font-bold text-slate-800 mb-2">Acesso Restrito</h2>
-                <p className="text-slate-500">Faça login para jogar Dominó Mexicano.</p>
+                <p className="text-slate-500 mb-8 max-w-sm mx-auto">
+                    Faça login para jogar Dominó Mexicano e competir com outros jogadores.
+                </p>
             </div>
         );
     }
@@ -205,8 +244,9 @@ const DominoView: React.FC = () => {
     // Loading
     if (loading) {
         return (
-            <div className="flex items-center justify-center h-full">
-                <Icon name="loader" size={48} className="text-brand-500 animate-spin" />
+            <div className="flex flex-col items-center justify-center h-full animate-in fade-in">
+                <Icon name="loader" size={48} className="text-brand-500 animate-spin mb-4" />
+                <p className="text-slate-400 font-medium">Conectando ao servidor...</p>
             </div>
         );
     }
@@ -230,20 +270,20 @@ const DominoView: React.FC = () => {
                     />
                     {/* Exit Confirmation Modal */}
                     {showExitConfirm && (
-                        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                            <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
+                        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
+                            <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl animate-in zoom-in-95">
                                 <h2 className="text-xl font-bold text-slate-800 mb-2">Sair da Sala?</h2>
                                 <p className="text-slate-600 mb-6">Você ainda poderá voltar depois.</p>
                                 <div className="flex gap-2">
                                     <button
                                         onClick={() => setShowExitConfirm(false)}
-                                        className="flex-1 py-3 bg-slate-100 text-slate-700 rounded-xl font-medium"
+                                        className="flex-1 py-3 bg-slate-100 text-slate-700 rounded-xl font-medium hover:bg-slate-200 transition-colors"
                                     >
                                         Cancelar
                                     </button>
                                     <button
                                         onClick={confirmLeave}
-                                        className="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold"
+                                        className="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold hover:bg-red-600 transition-colors delay-75"
                                     >
                                         Sair
                                     </button>
@@ -315,9 +355,9 @@ const DominoView: React.FC = () => {
             };
 
             return (
-                <div className="max-w-2xl mx-auto p-6">
-                    <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 text-white shadow-2xl mb-8 text-center">
-                        <Icon name="trophy" size={64} className="mx-auto mb-4" />
+                <div className="max-w-2xl mx-auto p-6 animate-in slide-in-from-bottom-8 duration-500">
+                    <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 text-white shadow-2xl mb-8 text-center ring-4 ring-orange-200">
+                        <Icon name="trophy" size={64} className="mx-auto mb-4 drop-shadow-md animate-bounce" />
                         <h2 className="text-3xl font-bold mb-2">Fim de Jogo!</h2>
                         <p className="text-xl opacity-90">
                             {winner.hand.length === 0
@@ -326,38 +366,38 @@ const DominoView: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="bg-white rounded-xl shadow p-6 mb-6">
-                        <h3 className="font-bold text-slate-700 mb-4">Ranking Final</h3>
+                    <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+                        <h3 className="font-bold text-slate-700 mb-4 border-b pb-2">Ranking Final</h3>
                         {sortedPlayers.map((p, idx) => (
-                            <div key={p.id} className="flex items-center justify-between py-2 border-b last:border-0">
+                            <div key={p.id} className="flex items-center justify-between py-3 border-b border-slate-50 last:border-0 hover:bg-slate-50 px-2 rounded-lg transition-colors">
                                 <div className="flex items-center gap-3">
-                                    <span className="text-2xl">
-                                        {idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : ''}
+                                    <span className="text-2xl w-8 text-center">
+                                        {idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`}
                                     </span>
-                                    <span className="font-medium">{p.name}</span>
+                                    <span className="font-medium text-slate-800">{p.name}</span>
                                 </div>
-                                <span className="text-slate-500">{p.hand.length} peças</span>
+                                <span className="text-slate-500 font-mono bg-slate-100 px-2 py-1 rounded text-xs">{p.hand.length} peças</span>
                             </div>
                         ))}
                     </div>
 
                     {/* Salvar Termos */}
-                    <div className="bg-white rounded-xl shadow p-6 mb-6">
+                    <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
                         <h3 className="font-bold text-slate-700 mb-4 flex items-center gap-2">
                             <Icon name="bookmark" size={20} className="text-orange-500" />
-                            Salvar Termos
+                            Salvar Termos da Partida
                         </h3>
                         <p className="text-slate-500 text-sm mb-4">
                             Selecione os termos que deseja salvar no seu banco pessoal:
                         </p>
-                        <div className="grid grid-cols-2 gap-2 max-h-64 overflow-y-auto mb-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-64 overflow-y-auto mb-4 pr-1">
                             {activeRoom.termPairs?.map((term, idx) => (
                                 <button
                                     key={idx}
                                     onClick={() => toggleTermSave(idx)}
-                                    className={`p-3 rounded-lg text-left text-sm transition-all ${savedTerms.includes(idx)
-                                        ? 'bg-orange-100 border-2 border-orange-500'
-                                        : 'bg-slate-50 border-2 border-transparent hover:border-slate-200'
+                                    className={`p-3 rounded-xl text-left text-sm transition-all border-2 ${savedTerms.includes(idx)
+                                        ? 'bg-orange-50 border-orange-400 shadow-sm'
+                                        : 'bg-white border-slate-100 hover:border-slate-300'
                                         }`}
                                 >
                                     <p className="font-bold text-slate-800 truncate">{term.term}</p>
@@ -368,7 +408,7 @@ const DominoView: React.FC = () => {
                         {savedTerms.length > 0 && (
                             <button
                                 onClick={handleSaveSelected}
-                                className="w-full py-3 bg-orange-500 text-white rounded-xl font-bold"
+                                className="w-full py-4 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 transition-colors shadow-lg hover:shadow-orange-500/30 active:scale-95"
                             >
                                 Salvar {savedTerms.length} Termos
                             </button>
@@ -377,7 +417,7 @@ const DominoView: React.FC = () => {
 
                     <button
                         onClick={confirmLeave}
-                        className="w-full py-3 bg-brand-600 text-white rounded-xl font-bold hover:bg-brand-700"
+                        className="w-full py-4 bg-slate-800 text-white rounded-xl font-bold hover:bg-slate-900 transition-colors shadow-lg"
                     >
                         Voltar ao Lobby
                     </button>
@@ -386,47 +426,142 @@ const DominoView: React.FC = () => {
         }
     }
 
-    // Lista de salas
+    // Lista de salas (Lobby View)
     return (
-        <div className="max-w-4xl mx-auto p-4">
-            <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
-                    🎲 Dominó Mexicano
-                </h1>
-                <button
-                    onClick={() => setShowCreateModal(true)}
-                    className="px-4 py-2 bg-brand-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-brand-700"
-                >
-                    <Icon name="plus" size={18} />
-                    Criar Sala
-                </button>
+        <div className="max-w-6xl mx-auto p-4 md:p-8 animate-in fade-in duration-500">
+            {/* Hero Header */}
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 shadow-2xl p-8 mb-10">
+                <div className="absolute top-0 right-0 p-12 opacity-10 transform translate-x-1/3 -translate-y-1/3 pointer-events-none">
+                    <Icon name="gamepad-2" size={300} className="text-white" />
+                </div>
+
+                <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div>
+                        <div className="flex items-center gap-4 mb-2">
+                            {onBack && (
+                                <button
+                                    onClick={onBack}
+                                    className="p-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-full transition-all text-white border border-white/30"
+                                    title="Voltar aos Jogos"
+                                >
+                                    <Icon name="arrow-left" size={24} />
+                                </button>
+                            )}
+                            <h1 className="text-4xl font-bold text-white tracking-tight drop-shadow-md">
+                                Dominó Mexicano
+                            </h1>
+                        </div>
+                        <p className="text-orange-100 text-lg max-w-lg leading-relaxed">
+                            Conecte-se, aprenda e divirta-se. Jogue dominó enquanto expande seu vocabulário.
+                        </p>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                        <button
+                            onClick={toggleFullscreen}
+                            className="p-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-2xl transition-all text-white border border-white/30"
+                            title={isFullscreen ? "Sair do Fullscreen" : "Modo Imersivo"}
+                        >
+                            <Icon name={isFullscreen ? "minimize-2" : "maximize-2"} size={24} />
+                        </button>
+
+                        <button
+                            onClick={() => setShowCreateModal(true)}
+                            className="px-8 py-4 bg-white text-orange-600 rounded-2xl font-bold flex items-center gap-3 hover:bg-orange-50 shadow-lg transform hover:scale-105 transition-all text-lg"
+                        >
+                            <Icon name="plus-circle" size={24} />
+                            Criar Nova Sala
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            {/* Room Filters/Header */}
+            <div className="flex items-center justify-between mb-6 px-2">
+                <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                    Salas Disponíveis
+                    <span className="text-sm font-normal text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+                        {rooms.filter(r => r.phase === 'lobby').length} online
+                    </span>
+                </h2>
             </div>
 
             {rooms.length === 0 ? (
-                <div className="text-center py-12 text-slate-400">
-                    <Icon name="inbox" size={48} className="mx-auto mb-4 opacity-50" />
-                    <p>Nenhuma sala disponível.</p>
-                    <p className="text-sm">Crie uma nova sala para começar!</p>
+                <div className="flex flex-col items-center justify-center py-20 bg-slate-50 rounded-3xl border-2 border-dashed border-slate-200">
+                    <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mb-6">
+                        <Icon name="layers" size={40} className="text-slate-400" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-700 mb-2">Nenhuma sala encontrada</h3>
+                    <p className="text-slate-500 mb-8 max-w-md text-center">
+                        O lobby está vazio no momento. Que tal ser o primeiro a criar uma sala e convidar amigos?
+                    </p>
+                    <button
+                        onClick={() => setShowCreateModal(true)}
+                        className="px-6 py-3 bg-brand-600 text-white rounded-xl font-bold hover:bg-brand-700 transition-colors shadow-md"
+                    >
+                        Criar Primeira Sala
+                    </button>
                 </div>
             ) : (
-                <div className="grid gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {rooms.filter(r => r.phase === 'lobby').map(room => (
                         <div
                             key={room.id}
-                            className="bg-white rounded-xl p-4 shadow-sm border border-slate-100 flex justify-between items-center hover:shadow-md transition-shadow"
+                            className="group bg-white rounded-2xl p-1 shadow-sm border border-slate-100 hover:shadow-xl hover:border-orange-200 transition-all duration-300 transform hover:-translate-y-1"
                         >
-                            <div>
-                                <h3 className="font-bold text-slate-800">{room.name}</h3>
-                                <p className="text-sm text-slate-500">
-                                    {room.players.length}/{DOMINO_CONSTANTS.MAX_PLAYERS} jogadores
-                                </p>
+                            <div className="bg-slate-50 rounded-xl p-5 h-full flex flex-col">
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h3 className="font-bold text-lg text-slate-800 mb-1 group-hover:text-orange-600 transition-colors">
+                                            {room.name}
+                                        </h3>
+                                        <span className="inline-flex items-center gap-1 text-xs font-medium text-green-600 bg-green-50 px-2 py-0.5 rounded-full border border-green-100">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                                            Aguardando Jogadores
+                                        </span>
+                                    </div>
+                                    <div className="bg-white p-2 rounded-lg shadow-sm border border-slate-100">
+                                        <span className="text-xs font-bold text-slate-500 block text-center uppercase tracking-wider text-[10px]">
+                                            Players
+                                        </span>
+                                        <span className="text-lg font-bold text-slate-800 block text-center leading-none mt-1">
+                                            {room.players.length}<span className="text-slate-400 text-sm">/{DOMINO_CONSTANTS.MAX_PLAYERS}</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="flex-1">
+                                    <div className="flex -space-x-2 overflow-hidden py-2 pl-1">
+                                        {room.players.map((p, i) => (
+                                            <div
+                                                key={p.id}
+                                                className="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white text-xs font-bold uppercase shadow-sm"
+                                                title={p.name}
+                                            >
+                                                {p.avatarUrl ? (
+                                                    <img src={p.avatarUrl} alt={p.name} className="h-full w-full rounded-full object-cover" />
+                                                ) : (
+                                                    p.name.charAt(0)
+                                                )}
+                                            </div>
+                                        ))}
+                                        {Array.from({ length: Math.max(0, DOMINO_CONSTANTS.MAX_PLAYERS - room.players.length) }).map((_, i) => (
+                                            <div
+                                                key={`empty-${i}`}
+                                                className="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-slate-100 border-2 border-dashed border-slate-300 flex items-center justify-center"
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <button
+                                    onClick={() => handleJoinRoom(room.id)}
+                                    disabled={room.players.length >= DOMINO_CONSTANTS.MAX_PLAYERS}
+                                    className="w-full mt-4 py-3 bg-white text-slate-700 border-2 border-slate-200 rounded-xl font-bold hover:bg-orange-50 hover:border-orange-500 hover:text-orange-600 transition-all disabled:opacity-50 disabled:hover:bg-white disabled:hover:border-slate-200 disabled:hover:text-slate-700"
+                                >
+                                    {room.players.length >= DOMINO_CONSTANTS.MAX_PLAYERS ? 'Sala Cheia' : 'Entrar na Sala'}
+                                </button>
                             </div>
-                            <button
-                                onClick={() => handleJoinRoom(room.id)}
-                                className="px-4 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600"
-                            >
-                                Entrar
-                            </button>
                         </div>
                     ))}
                 </div>
@@ -434,31 +569,51 @@ const DominoView: React.FC = () => {
 
             {/* Modal Criar Sala */}
             {showCreateModal && (
-                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                    <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-2xl animate-in zoom-in duration-200">
-                        <h2 className="text-xl font-bold text-slate-800 mb-4">Nova Sala</h2>
-
-                        <input
-                            type="text"
-                            value={roomName}
-                            onChange={(e) => setRoomName(e.target.value)}
-                            placeholder="Nome da sala"
-                            className="w-full p-3 border rounded-xl mb-4"
-                        />
-
-                        <div className="flex gap-2 justify-end">
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
+                    <div className="bg-white rounded-3xl p-8 w-full max-w-lg shadow-2xl animate-in zoom-in-95 duration-200 border border-slate-100">
+                        <div className="flex justify-between items-start mb-6">
+                            <div>
+                                <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                                    <Icon name="plus-circle" className="text-orange-500" />
+                                    Criar Nova Sala
+                                </h2>
+                                <p className="text-slate-500 mt-1">Configure sua sala e convide amigos.</p>
+                            </div>
                             <button
                                 onClick={() => setShowCreateModal(false)}
-                                className="px-4 py-2 text-slate-600 hover:bg-slate-100 rounded-lg"
+                                className="p-2 hover:bg-slate-100 rounded-full text-slate-400 hover:text-slate-600 transition-colors"
+                            >
+                                <Icon name="x" size={20} />
+                            </button>
+                        </div>
+
+                        <div className="space-y-4 mb-8">
+                            <div>
+                                <label className="block text-sm font-bold text-slate-700 mb-2">Nome da Sala</label>
+                                <input
+                                    type="text"
+                                    value={roomName}
+                                    onChange={(e) => setRoomName(e.target.value)}
+                                    placeholder="Ex: Dominó dos Amigos"
+                                    className="w-full p-4 border-2 border-slate-200 rounded-xl focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10 outline-none transition-all font-medium text-slate-800 placeholder:text-slate-400"
+                                    autoFocus
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex gap-3 justify-end pt-4 border-t border-slate-100">
+                            <button
+                                onClick={() => setShowCreateModal(false)}
+                                className="px-6 py-3 text-slate-600 hover:bg-slate-50 rounded-xl font-bold transition-colors"
                             >
                                 Cancelar
                             </button>
                             <button
                                 onClick={handleCreateRoom}
                                 disabled={!roomName.trim()}
-                                className="px-4 py-2 bg-brand-600 text-white rounded-lg font-bold disabled:opacity-50"
+                                className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-xl font-bold hover:shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:transform-none disabled:shadow-none"
                             >
-                                Criar
+                                Criar Sala
                             </button>
                         </div>
                     </div>
