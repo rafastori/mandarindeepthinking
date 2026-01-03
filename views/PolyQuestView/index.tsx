@@ -15,12 +15,14 @@ import { IntruderChallenge } from './components/IntruderChallenge';
 import { BossPhase } from './components/BossPhase';
 import { VictoryPhase } from './components/VictoryPhase';
 import { usePuterSpeech } from '../../hooks/usePuterSpeech';
+import { processTextWithGemini } from '../../services/gemini';
 
 const PolyQuestView: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showOriginalText, setShowOriginalText] = useState(false);
     const [showExitConfirm, setShowExitConfirm] = useState(false);
+    const [savingToReading, setSavingToReading] = useState(false);
     const { speak } = usePuterSpeech();
 
     const {
@@ -297,6 +299,46 @@ const PolyQuestView: React.FC = () => {
                             <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-line">
                                 {activeRoom.config.originalText}
                             </p>
+                        </div>
+                        {/* Save to Reading Button */}
+                        <div className="max-w-3xl mx-auto mt-4">
+                            <button
+                                onClick={async () => {
+                                    if (!activeRoom.config.originalText) return;
+                                    setSavingToReading(true);
+                                    try {
+                                        const studyItems = await processTextWithGemini(
+                                            activeRoom.config.originalText,
+                                            'direct',
+                                            activeRoom.config.sourceLang as any
+                                        );
+                                        for (const item of studyItems) {
+                                            await addItem(item);
+                                        }
+                                        alert(`✅ Texto salvo na aba de Leitura! (${studyItems.length} sentenças)`);
+                                        setShowOriginalText(false);
+                                    } catch (error) {
+                                        console.error('Error saving to reading:', error);
+                                        alert('❌ Erro ao salvar. Tente novamente.');
+                                    } finally {
+                                        setSavingToReading(false);
+                                    }
+                                }}
+                                disabled={savingToReading || !activeRoom.config.originalText}
+                                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 text-white rounded-xl font-bold transition-colors shadow-lg"
+                            >
+                                {savingToReading ? (
+                                    <>
+                                        <Icon name="loader" size={20} className="animate-spin" />
+                                        <span>Processando com IA...</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Icon name="download" size={20} />
+                                        <span>Salvar na Aba de Leitura</span>
+                                    </>
+                                )}
+                            </button>
                         </div>
                     </div>
                 </div>
