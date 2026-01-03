@@ -25,7 +25,11 @@ const shuffleArray = <T,>(array: T[]): T[] => {
     return newArray;
 };
 
-const LingoArenaView: React.FC = () => {
+interface LingoArenaViewProps {
+    onBack?: () => void;
+}
+
+const LingoArenaView: React.FC<LingoArenaViewProps> = ({ onBack }) => {
     const [gameRooms, setGameRooms] = useState<GameRoom[]>([]);
     const [activeRoom, setActiveRoom] = useState<GameRoom | null>(null);
     const [newRoomName, setNewRoomName] = useState('');
@@ -630,7 +634,21 @@ const LingoArenaView: React.FC = () => {
 
             <div className="flex-1 overflow-y-auto p-4 pb-24">
                 {!activeRoom && (
-                    <RoomList rooms={gameRooms} newRoomName={newRoomName} setNewRoomName={setNewRoomName} onCreateRoom={createRoom} onJoinRoom={joinRoom} />
+                    <>
+                        {/* Botão Voltar para página de jogos */}
+                        {onBack && (
+                            <div className="mb-4">
+                                <button
+                                    onClick={onBack}
+                                    className="flex items-center gap-2 px-4 py-2 text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-xl transition-colors font-medium"
+                                >
+                                    <Icon name="arrow-left" size={18} />
+                                    Voltar aos Jogos
+                                </button>
+                            </div>
+                        )}
+                        <RoomList rooms={gameRooms} newRoomName={newRoomName} setNewRoomName={setNewRoomName} onCreateRoom={createRoom} onJoinRoom={joinRoom} />
+                    </>
                 )}
 
                 {activeRoom && activeRoom.status !== 'lobby' && activeRoom.status !== 'finished' && (

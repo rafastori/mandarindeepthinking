@@ -252,9 +252,9 @@ const App: React.FC = () => {
                         }} />
                     );
                 } else if (selectedGame === 'lingoarena') {
-                    return <LingoArenaView />;
+                    return <LingoArenaView onBack={() => setSelectedGame('selector')} />;
                 } else if (selectedGame === 'polyquest') {
-                    return <PolyQuestView />;
+                    return <PolyQuestView onBack={() => setSelectedGame('selector')} />;
                 } else if (selectedGame === 'domino') {
                     return (
                         <DominoView

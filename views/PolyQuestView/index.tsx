@@ -17,7 +17,11 @@ import { VictoryPhase } from './components/VictoryPhase';
 import { usePuterSpeech } from '../../hooks/usePuterSpeech';
 import { processTextWithGemini } from '../../services/gemini';
 
-const PolyQuestView: React.FC = () => {
+interface PolyQuestViewProps {
+    onBack?: () => void;
+}
+
+const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
     const [user, setUser] = useState<User | null>(null);
     const [showCreateModal, setShowCreateModal] = useState(false);
     const [showOriginalText, setShowOriginalText] = useState(false);
@@ -420,11 +424,25 @@ const PolyQuestView: React.FC = () => {
                         )
                     ) : (
                         // Fora de sala - mostrar lista de salas
-                        <RoomList
-                            rooms={rooms}
-                            onJoinRoom={handleJoinRoom}
-                            onCreateRoom={() => setShowCreateModal(true)}
-                        />
+                        <>
+                            {/* Botão Voltar para página de jogos */}
+                            {onBack && (
+                                <div className="mb-4">
+                                    <button
+                                        onClick={onBack}
+                                        className="flex items-center gap-2 px-4 py-2 text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-xl transition-colors font-medium"
+                                    >
+                                        <Icon name="arrow-left" size={18} />
+                                        Voltar aos Jogos
+                                    </button>
+                                </div>
+                            )}
+                            <RoomList
+                                rooms={rooms}
+                                onJoinRoom={handleJoinRoom}
+                                onCreateRoom={() => setShowCreateModal(true)}
+                            />
+                        </>
                     )}
                 </div>
             </div>
