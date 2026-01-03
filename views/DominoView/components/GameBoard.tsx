@@ -15,6 +15,9 @@ interface GameBoardProps {
     onDrawPiece: () => Promise<DominoPieceType | null>;
     onPassTurn: () => void;
     onReorderHand?: (newOrder: DominoPieceType[]) => void;
+    onExit?: () => void;
+    onToggleFullscreen?: () => void;
+    isFullscreen?: boolean;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
@@ -23,7 +26,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     onPlacePiece,
     onDrawPiece,
     onPassTurn,
-    onReorderHand
+    onReorderHand,
+    onExit,
+    onToggleFullscreen,
+    isFullscreen
 }) => {
     const [selectedPiece, setSelectedPiece] = useState<DominoPieceType | null>(null);
     const [localHand, setLocalHand] = useState<DominoPieceType[] | null>(null);
@@ -333,6 +339,26 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                             <p className="text-[9px] text-white/70 uppercase tracking-widest leading-none mb-0.5">Monte</p>
                             <p className="text-sm font-bold text-white leading-none">{room.boneyard.length}</p>
                         </div>
+                        {/* Fullscreen Toggle */}
+                        {onToggleFullscreen && (
+                            <button
+                                onClick={onToggleFullscreen}
+                                className="p-2 bg-white/20 rounded-lg hover:bg-white/30 text-white transition-colors"
+                                title={isFullscreen ? "Sair do Fullscreen" : "Fullscreen"}
+                            >
+                                <Icon name={isFullscreen ? "minimize-2" : "maximize-2"} size={18} />
+                            </button>
+                        )}
+                        {/* Exit Button */}
+                        {onExit && (
+                            <button
+                                onClick={onExit}
+                                className="p-2 bg-white/20 rounded-lg hover:bg-red-500/80 text-white transition-colors"
+                                title="Sair do Jogo"
+                            >
+                                <Icon name="log-out" size={18} />
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>
@@ -606,35 +632,40 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                         )}
                     </div>
 
-                    {isMyTurn && (
-                        <div className="flex gap-2">
-                            <button
-                                onClick={handleDraw}
-                                disabled={room.boneyard.length === 0}
-                                className="flex items-center gap-1.5 px-3 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg disabled:opacity-50 disabled:shadow-none transition-all active:scale-95"
-                            >
-                                <Icon name="plus-circle" size={14} />
-                                Comprar
-                            </button>
-                            <button
-                                onClick={() => setShowHandModal(true)}
-                                className="flex items-center gap-1.5 px-3 py-2 bg-slate-700 text-white rounded-xl text-xs font-bold hover:bg-slate-800 transition-all active:scale-95"
-                            >
-                                <Icon name="layout-grid" size={14} />
-                                Ver Tudo
-                            </button>
-                            <button
-                                onClick={handlePass}
-                                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${autoPassPending
-                                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg animate-pulse'
-                                    : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-                                    }`}
-                            >
-                                <Icon name="skip-forward" size={14} />
-                                {autoPassPending ? 'Passando...' : 'Passar'}
-                            </button>
-                        </div>
-                    )}
+                    <div className="flex gap-2">
+                        {/* Ver Tudo - sempre visível para reorganizar */}
+                        <button
+                            onClick={() => setShowHandModal(true)}
+                            className="flex items-center gap-1.5 px-3 py-2 bg-slate-700 text-white rounded-xl text-xs font-bold hover:bg-slate-800 transition-all active:scale-95"
+                        >
+                            <Icon name="layout-grid" size={14} />
+                            Ver Tudo
+                        </button>
+
+                        {/* Ações de turno - só na minha vez */}
+                        {isMyTurn && (
+                            <>
+                                <button
+                                    onClick={handleDraw}
+                                    disabled={room.boneyard.length === 0}
+                                    className="flex items-center gap-1.5 px-3 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg disabled:opacity-50 disabled:shadow-none transition-all active:scale-95"
+                                >
+                                    <Icon name="plus-circle" size={14} />
+                                    Comprar
+                                </button>
+                                <button
+                                    onClick={handlePass}
+                                    className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${autoPassPending
+                                        ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg animate-pulse'
+                                        : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+                                        }`}
+                                >
+                                    <Icon name="skip-forward" size={14} />
+                                    {autoPassPending ? 'Passando...' : 'Passar'}
+                                </button>
+                            </>
+                        )}
+                    </div>
                 </div>
 
                 <PlayerHand

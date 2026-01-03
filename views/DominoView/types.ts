@@ -55,6 +55,8 @@ export interface DominoPlayer {
     score: number;
     isReady: boolean;
     isBot?: boolean;
+    isPaused?: boolean;      // Jogador pausado (saiu temporariamente)
+    pausedAt?: any;          // Timestamp de quando pausou (para timeout 2min)
 }
 
 // Configuração do jogo
@@ -63,6 +65,7 @@ export interface DominoConfig {
     sourceLang?: SupportedLanguage;
     targetLang?: SupportedLanguage;
     customTopic?: string;
+    customContext?: string;  // Contexto adicional (disponível para TODOS os modos)
     difficulty: 'Iniciante' | 'Intermediário' | 'Avançado';
 }
 

@@ -367,6 +367,7 @@ export const useDominoRoom = (userId?: string) => {
                 sourceLang: roomData.config.sourceLang,
                 targetLang: roomData.config.targetLang,
                 customTopic: roomData.config.customTopic,
+                customContext: roomData.config.customContext,
                 difficulty: roomData.config.difficulty
             });
 
@@ -587,6 +588,190 @@ export const useDominoRoom = (userId?: string) => {
         }
     };
 
+    // ========== NOVAS FUNÇÕES DE PERSISTÊNCIA ==========
+
+    /**
+     * Pausa o jogador (saída temporária - pode voltar em até 2 min)
+     * Cartas ficam congeladas na mão dele
+     */
+    const pausePlayer = async (roomId: string, playerId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+
+            const updatedPlayers = roomData.players.map(p => {
+                if (p.id === playerId) {
+                    return { ...p, isPaused: true, pausedAt: Timestamp.now() };
+                }
+                return p;
+            });
+
+            // Se é a vez do jogador pausado, passa pro próximo
+            let newTurn = roomData.currentTurn;
+            if (roomData.currentTurn === playerId && roomData.phase === 'playing') {
+                const playerIndex = roomData.players.findIndex(p => p.id === playerId);
+                const nextPlayerIndex = (playerIndex + 1) % roomData.players.length;
+                newTurn = roomData.players[nextPlayerIndex].id;
+            }
+
+            await updateDoc(roomRef, {
+                players: updatedPlayers,
+                currentTurn: newTurn
+            });
+
+            setActiveRoom(null);
+        } catch (error) {
+            console.error('Error pausing player:', error);
+        }
+    };
+
+    /**
+     * Retorna um jogador pausado ao jogo (se ainda dentro do timeout de 2 min)
+     */
+    const resumePlayer = async (roomId: string, playerId: string): Promise<boolean> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return false;
+
+            const roomData = roomSnap.data() as DominoRoom;
+            const player = roomData.players.find(p => p.id === playerId);
+
+            if (!player || !player.isPaused) return false;
+
+            // Verificar timeout (2 minutos = 120000 ms)
+            if (player.pausedAt) {
+                const pausedTime = player.pausedAt.toDate?.() || new Date(player.pausedAt);
+                const now = new Date();
+                const elapsedMs = now.getTime() - pausedTime.getTime();
+
+                if (elapsedMs > 120000) {
+                    // Timeout expirado - forçar saída permanente
+                    await permanentLeave(roomId, playerId);
+                    return false;
+                }
+            }
+
+            const updatedPlayers = roomData.players.map(p => {
+                if (p.id === playerId) {
+                    return { ...p, isPaused: false, pausedAt: null };
+                }
+                return p;
+            });
+
+            await updateDoc(roomRef, { players: updatedPlayers });
+            return true;
+        } catch (error) {
+            console.error('Error resuming player:', error);
+            return false;
+        }
+    };
+
+    /**
+     * Saída permanente - remove jogador e devolve cartas ao boneyard
+     */
+    const permanentLeave = async (roomId: string, playerId: string): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+            const leavingPlayer = roomData.players.find(p => p.id === playerId);
+
+            // Devolve cartas ao boneyard (embaralhadas)
+            let newBoneyard = [...roomData.boneyard];
+            if (leavingPlayer && leavingPlayer.hand.length > 0) {
+                newBoneyard = [...newBoneyard, ...leavingPlayer.hand].sort(() => Math.random() - 0.5);
+            }
+
+            // Remove trem do jogador
+            const newTrains = roomData.trains.filter(t => t.ownerId !== playerId);
+
+            // Remove jogador
+            const updatedPlayers = roomData.players.filter(p => p.id !== playerId);
+
+            // Se era a vez dele, passa pro próximo
+            let newTurn = roomData.currentTurn;
+            if (roomData.currentTurn === playerId && updatedPlayers.length > 0) {
+                const oldIndex = roomData.players.findIndex(p => p.id === playerId);
+                const nextIndex = oldIndex % updatedPlayers.length;
+                newTurn = updatedPlayers[nextIndex]?.id || updatedPlayers[0]?.id;
+            }
+
+            // Se não sobrou ninguém ou só bots, finaliza
+            const humanPlayers = updatedPlayers.filter(p => !p.isBot);
+            if (humanPlayers.length === 0 || updatedPlayers.length < 2) {
+                await updateDoc(roomRef, {
+                    phase: 'finished',
+                    players: updatedPlayers,
+                    boneyard: newBoneyard,
+                    trains: newTrains,
+                    finishedAt: Timestamp.now()
+                });
+            } else {
+                await updateDoc(roomRef, {
+                    players: updatedPlayers,
+                    boneyard: newBoneyard,
+                    trains: newTrains,
+                    currentTurn: newTurn
+                });
+            }
+
+            setActiveRoom(null);
+        } catch (error) {
+            console.error('Error permanent leave:', error);
+        }
+    };
+
+    /**
+     * Verifica salas onde o usuário está (para auto-rejoin)
+     */
+    const findActiveRoomForUser = (allRooms: DominoRoom[], usrId: string): DominoRoom | null => {
+        if (!usrId) return null;
+
+        for (const room of allRooms) {
+            const player = room.players.find(p => p.id === usrId);
+            if (player && room.phase !== 'finished') {
+                // Se está pausado há mais de 2 min, não conta
+                if (player.isPaused && player.pausedAt) {
+                    const pausedTime = player.pausedAt.toDate?.() || new Date(player.pausedAt);
+                    const elapsedMs = Date.now() - pausedTime.getTime();
+                    if (elapsedMs > 120000) continue; // Skip - timeout expirado
+                }
+                return room;
+            }
+        }
+        return null;
+    };
+
+    /**
+     * Reordena a mão do jogador (persiste no Firebase)
+     */
+    const reorderPlayerHand = async (roomId: string, playerId: string, newOrder: DominoPiece[]): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+
+            const updatedPlayers = roomData.players.map(p => {
+                if (p.id === playerId) {
+                    return { ...p, hand: newOrder };
+                }
+                return p;
+            });
+
+            await updateDoc(roomRef, { players: updatedPlayers });
+        } catch (error) {
+            console.error('Error reordering hand:', error);
+        }
+    };
+
     return {
         rooms,
         activeRoom,
@@ -603,6 +788,12 @@ export const useDominoRoom = (userId?: string) => {
         drawPiece,
         addBot,
         removeBot,
-        passTurn
+        passTurn,
+        // Novas funções de persistência
+        pausePlayer,
+        resumePlayer,
+        permanentLeave,
+        findActiveRoomForUser,
+        reorderPlayerHand
     };
 };

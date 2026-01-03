@@ -36,10 +36,20 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
     onRemoveBot
 }) => {
     const [isStarting, setIsStarting] = React.useState(false);
+    // Estado local para inputs de texto (evita lag ao digitar)
+    const [localCustomContext, setLocalCustomContext] = React.useState(room.config.customContext || '');
+    const [localCustomTopic, setLocalCustomTopic] = React.useState(room.config.customTopic || '');
 
     const handleStart = async () => {
         setIsStarting(true);
         try {
+            // Envia o contexto local para o Firebase antes de iniciar
+            if (localCustomContext || localCustomTopic) {
+                await onUpdateConfig({
+                    customContext: localCustomContext || undefined,
+                    customTopic: localCustomTopic || undefined
+                });
+            }
             await onStartGame();
         } catch (error) {
             console.error(error);
@@ -196,7 +206,7 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                             </div>
                         )}
 
-                        {/* Tópico Personalizado */}
+                        {/* Tópico Personalizado (só para modo custom) */}
                         {room.config.context === 'custom' && (
                             <div>
                                 <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
@@ -204,10 +214,35 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                                 </label>
                                 <input
                                     type="text"
-                                    value={room.config.customTopic || ''}
-                                    onChange={(e) => onUpdateConfig({ customTopic: e.target.value })}
+                                    value={localCustomTopic}
+                                    onChange={(e) => setLocalCustomTopic(e.target.value)}
                                     placeholder="Ex: Anatomia Humana, React Hooks, etc."
                                     className="w-full p-3 border rounded-xl"
+                                />
+                            </div>
+                        )}
+
+                        {/* Contexto Adicional (disponível para TODOS os modos) */}
+                        {room.config.context !== 'custom' && (
+                            <div>
+                                <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
+                                    Especificar Contexto (opcional)
+                                </label>
+                                <input
+                                    type="text"
+                                    value={localCustomContext}
+                                    onChange={(e) => setLocalCustomContext(e.target.value)}
+                                    placeholder={
+                                        room.config.context === 'chemistry' ? 'Ex: Tabela periódica, Química orgânica...' :
+                                            room.config.context === 'medicine' ? 'Ex: Cardiologia, Farmacologia...' :
+                                                room.config.context === 'computing' ? 'Ex: React, Python, Banco de dados...' :
+                                                    room.config.context === 'engineering' ? 'Ex: Elétrica, Mecânica, Civil...' :
+                                                        room.config.context === 'biology' ? 'Ex: Genética, Botânica, Zoologia...' :
+                                                            room.config.context === 'law' ? 'Ex: Direito Civil, Penal, Trabalhista...' :
+                                                                room.config.context === 'language' ? 'Ex: Verbos, Comida, Viagem...' :
+                                                                    'Ex: Tema específico...'
+                                    }
+                                    className="w-full p-3 border rounded-xl bg-slate-50"
                                 />
                             </div>
                         )}

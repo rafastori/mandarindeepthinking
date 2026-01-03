@@ -55,13 +55,40 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         drawPiece,
         passTurn,
         addBot,
-        removeBot
+        removeBot,
+        // Novas funções de persistência
+        pausePlayer,
+        resumePlayer,
+        permanentLeave,
+        findActiveRoomForUser,
+        reorderPlayerHand
     } = useDominoRoom(userId);
 
     const { addItem } = useStudyItems(userId);
     const { savedIds, updateFavorites } = useUserProfile(userId);
     const { speakSequence } = usePuterSpeech();
     const gameEndTTSPlayed = useRef(false);
+
+    // Auto-rejoin: Verifica se tem sala ativa pendente ao montar
+    useEffect(() => {
+        if (userId && rooms.length > 0 && !activeRoom) {
+            const pendingRoom = findActiveRoomForUser(rooms, userId);
+            if (pendingRoom) {
+                const player = pendingRoom.players.find(p => p.id === userId);
+                if (player?.isPaused) {
+                    // Tenta resumir o jogador pausado
+                    resumePlayer(pendingRoom.id, userId).then(success => {
+                        if (success) {
+                            setActiveRoom(pendingRoom);
+                        }
+                    });
+                } else {
+                    // Jogador ativo na sala
+                    setActiveRoom(pendingRoom);
+                }
+            }
+        }
+    }, [userId, rooms.length, activeRoom]);
 
     // Fullscreen functions
     const toggleFullscreen = () => {
@@ -324,24 +351,61 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
                         }
                         onDrawPiece={() => drawPiece(activeRoom.id, userId)}
                         onPassTurn={() => passTurn(activeRoom.id, userId)}
+                        onReorderHand={(newOrder) => reorderPlayerHand(activeRoom.id, userId, newOrder)}
+                        onExit={() => setShowExitConfirm(true)}
+                        onToggleFullscreen={toggleFullscreen}
+                        isFullscreen={isFullscreen}
                     />
                     {showExitConfirm && (
-                        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                            <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
-                                <h2 className="text-xl font-bold text-red-600 mb-2">⚠️ Jogo em Andamento</h2>
-                                <p className="text-slate-600 mb-6">Se sair agora, você perderá sua posição no jogo.</p>
-                                <div className="flex gap-2">
+                        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
+                            <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl animate-in zoom-in-95">
+                                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <Icon name="pause-circle" size={32} className="text-orange-600" />
+                                </div>
+                                <h2 className="text-xl font-bold text-slate-800 text-center mb-2">Sair do Jogo?</h2>
+                                <p className="text-slate-500 text-center text-sm mb-6">
+                                    Escolha como deseja sair da partida:
+                                </p>
+
+                                <div className="space-y-3">
+                                    {/* Opção 1: Pausar */}
+                                    <button
+                                        onClick={async () => {
+                                            await pausePlayer(activeRoom.id, userId);
+                                            setShowExitConfirm(false);
+                                            if (onBack) onBack();
+                                        }}
+                                        className="w-full py-4 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 transition-colors flex items-center justify-center gap-3 shadow-lg"
+                                    >
+                                        <Icon name="pause" size={20} />
+                                        <div className="text-left">
+                                            <span className="block">Pausar Partida</span>
+                                            <span className="text-xs font-normal opacity-80">Posso voltar em até 2 min</span>
+                                        </div>
+                                    </button>
+
+                                    {/* Opção 2: Sair Permanentemente */}
+                                    <button
+                                        onClick={async () => {
+                                            await permanentLeave(activeRoom.id, userId);
+                                            setShowExitConfirm(false);
+                                            if (onBack) onBack();
+                                        }}
+                                        className="w-full py-4 bg-red-500 text-white rounded-xl font-bold hover:bg-red-600 transition-colors flex items-center justify-center gap-3"
+                                    >
+                                        <Icon name="log-out" size={20} />
+                                        <div className="text-left">
+                                            <span className="block">Sair Permanentemente</span>
+                                            <span className="text-xs font-normal opacity-80">Minhas cartas voltam ao baralho</span>
+                                        </div>
+                                    </button>
+
+                                    {/* Cancelar */}
                                     <button
                                         onClick={() => setShowExitConfirm(false)}
-                                        className="flex-1 py-3 bg-slate-100 text-slate-700 rounded-xl font-medium"
+                                        className="w-full py-3 bg-slate-100 text-slate-700 rounded-xl font-medium hover:bg-slate-200 transition-colors"
                                     >
                                         Continuar Jogando
-                                    </button>
-                                    <button
-                                        onClick={confirmLeave}
-                                        className="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold"
-                                    >
-                                        Sair
                                     </button>
                                 </div>
                             </div>

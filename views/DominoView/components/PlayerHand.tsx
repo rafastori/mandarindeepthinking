@@ -67,11 +67,14 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
         };
     };
 
-    const handlePointerMove = (e: React.PointerEvent) => {
+    const handlePointerMove = (e: PointerEvent | React.PointerEvent) => {
         if (!dragRef.current.pieceId || !dragRef.current.piece) return;
 
-        const deltaX = e.clientX - dragRef.current.startPos.x;
-        const deltaY = e.clientY - dragRef.current.startPos.y;
+        const clientX = 'clientX' in e ? e.clientX : 0;
+        const clientY = 'clientY' in e ? e.clientY : 0;
+
+        const deltaX = clientX - dragRef.current.startPos.x;
+        const deltaY = clientY - dragRef.current.startPos.y;
         const absX = Math.abs(deltaX);
         const absY = Math.abs(deltaY);
 
@@ -86,7 +89,7 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
                     e.preventDefault();
                     dragRef.current.active = true;
                     setDraggingId(dragRef.current.pieceId);
-                    setGhostPos({ x: e.clientX, y: e.clientY });
+                    setGhostPos({ x: clientX, y: clientY });
                     onDragStart?.(dragRef.current.pieceId);
 
                     if (navigator.vibrate) navigator.vibrate(30);
@@ -99,10 +102,10 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
         } else {
             // Already dragging - update ghost position and check targets
             e.preventDefault();
-            setGhostPos({ x: e.clientX, y: e.clientY });
+            setGhostPos({ x: clientX, y: clientY });
 
             // Check train targets
-            const elements = document.elementsFromPoint(e.clientX, e.clientY);
+            const elements = document.elementsFromPoint(clientX, clientY);
             let foundTrain = false;
             for (const el of elements) {
                 const trainId = el.getAttribute('data-train-id');
@@ -116,12 +119,15 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
         }
     };
 
-    const handlePointerUp = (e: React.PointerEvent) => {
+    const handlePointerUp = (e: PointerEvent | React.PointerEvent) => {
+        const clientX = 'clientX' in e ? e.clientX : 0;
+        const clientY = 'clientY' in e ? e.clientY : 0;
+
         if (dragRef.current.active && dragRef.current.pieceId) {
             onTrainHover?.(null);
 
             // Check if dropped on a train
-            const elements = document.elementsFromPoint(e.clientX, e.clientY);
+            const elements = document.elementsFromPoint(clientX, clientY);
             for (const el of elements) {
                 const trainId = el.getAttribute('data-train-id');
                 if (trainId) {
@@ -143,6 +149,24 @@ export const PlayerHand: React.FC<PlayerHandProps> = ({
         setDraggingId(null);
         onTrainHover?.(null);
     };
+
+    // Add document-level listeners when dragging
+    useEffect(() => {
+        if (draggingId) {
+            const onMove = (e: PointerEvent) => handlePointerMove(e);
+            const onUp = (e: PointerEvent) => handlePointerUp(e);
+
+            document.addEventListener('pointermove', onMove);
+            document.addEventListener('pointerup', onUp);
+            document.addEventListener('pointercancel', handlePointerCancel);
+
+            return () => {
+                document.removeEventListener('pointermove', onMove);
+                document.removeEventListener('pointerup', onUp);
+                document.removeEventListener('pointercancel', handlePointerCancel);
+            };
+        }
+    }, [draggingId]);
 
     return (
         <div className="relative select-none">

@@ -154,7 +154,7 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
     }
 
     if (type === 'domino_terms') {
-        const { context, sourceLang, targetLang, customTopic, difficulty } = mode as any;
+        const { context, sourceLang, targetLang, customTopic, customContext, difficulty } = mode as any;
         const langNames: Record<string, string> = {
             'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português', 'en': 'Inglês',
             'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
@@ -165,6 +165,9 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         let contextInstructions = '';
         if (context === 'language') {
             contextInstructions = `CONTEXTO: Tradução de idiomas.\nIDIOMAS: De ${srcName} para ${tgtName}.\nO "term" deve estar em ${srcName} e a "definition" em ${tgtName}.`;
+            if (customContext) {
+                contextInstructions += `\nTEMA ESPECÍFICO: ${customContext}. Foque os termos nesse tema.`;
+            }
         } else if (context === 'custom') {
             contextInstructions = `CONTEXTO: ${customTopic}.\nO "term" é o conceito/palavra e a "definition" é sua explicação ou tradução.`;
         } else {
@@ -172,7 +175,11 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
                 'medicine': 'Medicina', 'computing': 'Computação', 'engineering': 'Engenharia',
                 'chemistry': 'Química', 'biology': 'Biologia', 'law': 'Direito'
             };
-            contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.`;
+            contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.`;
+            if (customContext) {
+                contextInstructions += `\nESPECIFICIDADE: ${customContext}. Foque os termos nessa área específica.`;
+            }
+            contextInstructions += `\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.`;
         }
 
         return `Você é um especialista em educação. Gere 13 pares de Termo/Definição únicos para um jogo de dominó.
@@ -638,7 +645,7 @@ NÃO inclua explicações, apenas o JSON.`;
  */
 export const generateDominoTerms = async (
     context: string,
-    config: { sourceLang?: string; targetLang?: string; customTopic?: string; difficulty: string }
+    config: { sourceLang?: string; targetLang?: string; customTopic?: string; customContext?: string; difficulty: string }
 ): Promise<{ term: string; definition: string }[]> => {
     const payload = {
         type: 'domino_terms',
