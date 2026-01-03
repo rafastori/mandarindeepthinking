@@ -233,9 +233,9 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         }
     };
 
-    const handleStartGame = async () => {
+    const handleStartGame = async (configOverride?: Partial<DominoConfig>) => {
         if (activeRoom && isHost) {
-            await startGame(activeRoom.id);
+            await startGame(activeRoom.id, configOverride);
         }
     };
 

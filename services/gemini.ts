@@ -653,9 +653,13 @@ export const generateDominoTerms = async (
         ...config
     };
 
+    // Debug: Log what's being sent to Gemini
+    console.log('[generateDominoTerms] Payload:', payload);
+
     if (import.meta.env.DEV) {
         console.log("Using Local Gemini SDK for Domino Terms");
         const systemPrompt = getSystemInstruction('domino_terms', 'pt', payload as any);
+        console.log('[generateDominoTerms] System prompt:', systemPrompt);
         const userPrompt = `Gere os 13 termos para o contexto ${context}.`;
         return await callLocalGemini(userPrompt, systemPrompt);
     }

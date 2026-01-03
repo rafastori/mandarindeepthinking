@@ -354,7 +354,11 @@ export const useDominoRoom = (userId?: string) => {
         }
     };
 
-    const startGame = async (roomId: string): Promise<void> => {
+    /**
+     * Inicia o jogo. configOverride permite passar valores diretamente
+     * sem depender do Firebase (evita problemas de sincronização)
+     */
+    const startGame = async (roomId: string, configOverride?: Partial<DominoConfig>): Promise<void> => {
         try {
             const roomRef = doc(db, 'dominoRooms', roomId);
             const roomSnap = await getDoc(roomRef);
@@ -362,13 +366,26 @@ export const useDominoRoom = (userId?: string) => {
 
             const roomData = roomSnap.data() as DominoRoom;
 
+            // Merge: configOverride tem prioridade sobre Firebase
+            const finalConfig = { ...roomData.config, ...configOverride };
+
+            // Debug: Log config being used
+            console.log('[startGame] Final config (merged):', {
+                context: finalConfig.context,
+                customContext: finalConfig.customContext,
+                customTopic: finalConfig.customTopic,
+                difficulty: finalConfig.difficulty,
+                sourceLang: finalConfig.sourceLang,
+                targetLang: finalConfig.targetLang
+            });
+
             // 1. Gerar 13 termos via IA
-            const terms = await generateDominoTerms(roomData.config.context, {
-                sourceLang: roomData.config.sourceLang,
-                targetLang: roomData.config.targetLang,
-                customTopic: roomData.config.customTopic,
-                customContext: roomData.config.customContext,
-                difficulty: roomData.config.difficulty
+            const terms = await generateDominoTerms(finalConfig.context, {
+                sourceLang: finalConfig.sourceLang,
+                targetLang: finalConfig.targetLang,
+                customTopic: finalConfig.customTopic,
+                customContext: finalConfig.customContext,
+                difficulty: finalConfig.difficulty
             });
 
             // 2. Criar termPairs com índices

@@ -152,11 +152,26 @@ export const usePuterSpeech = () => {
         // Tenta usar Puter se estiver conectado
         if (isPuterConnected && typeof puter !== 'undefined') {
             try {
+                // Mapeamento de idiomas para códigos AWS Polly e vozes
+                const voiceMap: Record<SupportedLanguage, { lang: string; voice: string }> = {
+                    'pt': { lang: 'pt-BR', voice: 'Camila' },     // Português brasileiro
+                    'zh': { lang: 'cmn-CN', voice: 'Zhiyu' },     // Chinês mandarim
+                    'de': { lang: 'de-DE', voice: 'Vicki' },      // Alemão
+                    'en': { lang: 'en-US', voice: 'Joanna' },     // Inglês
+                    'fr': { lang: 'fr-FR', voice: 'Celine' },     // Francês
+                    'es': { lang: 'es-ES', voice: 'Lucia' },      // Espanhol
+                    'it': { lang: 'it-IT', voice: 'Bianca' },     // Italiano
+                    'ja': { lang: 'ja-JP', voice: 'Mizuki' },     // Japonês
+                    'ko': { lang: 'ko-KR', voice: 'Seoyeon' },    // Coreano
+                };
+
+                const config = voiceMap[language] || voiceMap['pt'];
+
+                // Usa AWS Polly (provider padrão) com idioma explícito
                 const audio = await puter.ai.txt2speech(text, {
-                    provider: 'openai',
-                    model: 'gpt-4o-mini-tts',
-                    voice: 'nova',
-                    response_format: 'mp3'
+                    language: config.lang,
+                    voice: config.voice,
+                    engine: 'neural'  // Vozes neurais são mais naturais
                 });
 
                 if (audio && typeof audio.play === 'function') {

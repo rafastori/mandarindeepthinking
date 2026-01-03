@@ -16,7 +16,7 @@ interface DominoLobbyProps {
     currentUserId: string;
     onToggleReady: (ready: boolean) => void;
     onUpdateConfig: (config: Partial<DominoConfig>) => void;
-    onStartGame: () => Promise<void> | void;
+    onStartGame: (configOverride?: Partial<DominoConfig>) => Promise<void> | void;
     onLeaveRoom: () => void;
     onDeleteRoom: () => void;
     onAddBot?: () => void;
@@ -43,14 +43,16 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
     const handleStart = async () => {
         setIsStarting(true);
         try {
-            // Envia o contexto local para o Firebase antes de iniciar
-            if (localCustomContext || localCustomTopic) {
-                await onUpdateConfig({
-                    customContext: localCustomContext || undefined,
-                    customTopic: localCustomTopic || undefined
-                });
-            }
-            await onStartGame();
+            // Passa o config diretamente para startGame (sem depender do Firebase)
+            console.log('[DominoLobby] Starting with config:', {
+                customContext: localCustomContext,
+                customTopic: localCustomTopic
+            });
+
+            await onStartGame({
+                customContext: localCustomContext || undefined,
+                customTopic: localCustomTopic || undefined
+            });
         } catch (error) {
             console.error(error);
             setIsStarting(false);
