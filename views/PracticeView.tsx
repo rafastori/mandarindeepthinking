@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem } from '../types';
@@ -11,7 +11,7 @@ interface PracticeViewProps {
 }
 
 const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop } = usePuterSpeech();
 
     // Estados do Jogo
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,13 +20,26 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     const [isFinished, setIsFinished] = useState(false);
     const [sessionKey, setSessionKey] = useState(0); // Usado para forçar o re-embaralhamento
 
-    // Lógica para criar questões
+    // Ref para armazenar snapshot estável dos dados (evita re-render causar re-shuffle)
+    const dataSnapshotRef = useRef<{ data: StudyItem[]; savedIds: string[] } | null>(null);
+
+    // Atualiza o snapshot apenas quando sessionKey muda (início de nova sessão)
+    useEffect(() => {
+        dataSnapshotRef.current = { data, savedIds };
+    }, [sessionKey]); // Propositalmente NÃO inclui data/savedIds
+
+    // Lógica para criar questões - usa o snapshot, não props diretas
     const questions = useMemo(() => {
+        // Usa o snapshot se disponível, senão usa props (primeira renderização)
+        const snapshot = dataSnapshotRef.current || { data, savedIds };
+        const currentData = snapshot.data;
+        const currentSavedIds = snapshot.savedIds;
+
         const list: any[] = [];
 
-        data.forEach(item => {
+        currentData.forEach(item => {
             // CASO 1: Item do Firebase
-            if (savedIds.includes(item.id.toString()) && item.originalSentence) {
+            if (currentSavedIds.includes(item.id.toString()) && item.originalSentence) {
                 list.push({
                     id: item.id,
                     word: item.chinese,
@@ -40,7 +53,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
             // CASO 2: Item estático
             if (item.keywords) {
                 item.keywords.forEach(k => {
-                    if (savedIds.includes(k.id)) {
+                    if (currentSavedIds.includes(k.id)) {
                         list.push({
                             id: k.id,
                             word: k.word,
@@ -56,7 +69,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
 
         // Embaralha sempre que o sessionKey mudar (Nova Sessão)
         return list.sort(() => 0.5 - Math.random());
-    }, [data, savedIds, sessionKey]);
+    }, [sessionKey]); // Depende APENAS de sessionKey
 
     // Opções de resposta
     const options = useMemo(() => {
@@ -81,29 +94,39 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
         setSelectedOption(option);
         setShowResult(true);
 
-        if (isCorrect) {
-            speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
-        }
+        // Removido: Não reproduz automaticamente. Usuário precisa clicar no botão de áudio.
 
-        setTimeout(() => {
-            onResult(isCorrect, currentQ.word);
-            setSelectedOption(null);
-            setShowResult(false);
-
-            // Lógica de Progressão (Linear)
-            if (currentIndex < questions.length - 1) {
-                setCurrentIndex(prev => prev + 1);
-            } else {
-                setIsFinished(true); // Fim da sessão
-            }
-        }, 2000);
+        // Registra o resultado imediatamente, mas NÃO avança automaticamente
+        onResult(isCorrect, currentQ.word);
     };
+
 
     const handleRestart = () => {
         setIsFinished(false);
         setCurrentIndex(0);
         setSessionKey(prev => prev + 1); // Força novo embaralhamento
     };
+
+    // Navegação manual
+    const handleNext = () => {
+        stop(); // Para qualquer áudio em reprodução
+        setSelectedOption(null);
+        setShowResult(false);
+        if (currentIndex < questions.length - 1) {
+            setCurrentIndex(prev => prev + 1);
+        } else {
+            setIsFinished(true);
+        }
+    };
+
+    const handlePrevious = () => {
+        if (currentIndex > 0) {
+            setSelectedOption(null);
+            setShowResult(false);
+            setCurrentIndex(prev => prev - 1);
+        }
+    };
+
 
     // --- TELA DE ERRO (Poucos itens) ---
     if (questions.length < 4) {
@@ -165,14 +188,31 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
                 {/* Frase com buraco (Cloze) */}
                 <div className={`bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-xl text-slate-800 leading-relaxed ${isGerman ? 'font-sans' : 'font-chinese'}`}>
                     {parts[0]}
-                    <span className={`inline-block min-w-[60px] border-b-2 mx-1 text-center font-bold transition-colors ${showResult
-                            ? (selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400')
-                            : 'text-brand-600 border-brand-500'
-                        }`}>
-                        {showResult ? currentQ.word : "____"}
-                    </span>
+                    {showResult ? (
+                        // Palavra clicável para TTS (só após responder)
+                        <button
+                            onClick={() => speak(currentQ.word, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                            className={`inline-block min-w-[60px] border-b-2 mx-1 text-center font-bold transition-colors cursor-pointer hover:opacity-80 active:scale-95 ${selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400'}`}
+                            title="Clique para ouvir a palavra"
+                        >
+                            {currentQ.word}
+                        </button>
+                    ) : (
+                        <span className="inline-block min-w-[60px] border-b-2 mx-1 text-center font-bold text-brand-600 border-brand-500">
+                            ____
+                        </span>
+                    )}
                     {parts.length > 1 ? parts[1] : ""}
                 </div>
+
+                {/* Botão de áudio para frase completa */}
+                <button
+                    onClick={() => speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                    className="mt-3 flex items-center justify-center gap-2 text-sm text-slate-500 hover:text-brand-600 transition-colors mx-auto"
+                >
+                    <Icon name="volume-2" size={18} />
+                    <span>Ouvir frase</span>
+                </button>
 
                 <p className="text-center text-slate-400 text-sm mt-4 italic">{currentQ.translation}</p>
             </div>
@@ -197,6 +237,28 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
                         </button>
                     );
                 })}
+            </div>
+
+            {/* Botões de Navegação - Sempre visíveis */}
+            <div className="flex gap-3 mt-6">
+                <button
+                    onClick={handlePrevious}
+                    disabled={currentIndex === 0}
+                    className="flex-1 py-3 text-slate-500 font-bold bg-slate-100 rounded-xl hover:bg-slate-200 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                >
+                    Voltar
+                </button>
+                <button
+                    onClick={handleNext}
+                    disabled={!showResult}
+                    className={`flex-[2] py-3 font-bold rounded-xl shadow-md transition-all flex items-center justify-center gap-2 ${showResult
+                        ? 'bg-brand-600 text-white hover:bg-brand-700'
+                        : 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                        }`}
+                >
+                    {currentIndex < questions.length - 1 ? 'Próximo' : 'Concluir'}
+                    <Icon name="arrow-right" size={18} />
+                </button>
             </div>
         </div>
     );

@@ -17,6 +17,7 @@ export const usePuterSpeech = () => {
     const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
     const speakingRef = useRef(false);
     const queueRef = useRef<Array<{ text: string; language: SupportedLanguage; resolve: () => void }>>([]);
+    const currentAudioRef = useRef<HTMLAudioElement | null>(null); // Ref para áudio Puter atual
 
     // Carrega vozes do navegador para fallback
     useEffect(() => {
@@ -175,7 +176,9 @@ export const usePuterSpeech = () => {
                 });
 
                 if (audio && typeof audio.play === 'function') {
+                    currentAudioRef.current = audio; // Armazena referência para poder parar
                     await audio.play();
+                    // Não limpa a ref aqui - deixa o stop() fazer isso se necessário
                     return; // Sucesso com Puter
                 }
             } catch (e) {
@@ -196,9 +199,38 @@ export const usePuterSpeech = () => {
         }
     }, [speak]);
 
+    // Para qualquer áudio em reprodução
+    const stop = useCallback(() => {
+        // Para Web Speech API
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+        }
+        // Para áudio Puter (HTMLAudioElement ou similar)
+        if (currentAudioRef.current) {
+            try {
+                // Tenta pause() - método padrão de HTMLAudioElement
+                if (typeof currentAudioRef.current.pause === 'function') {
+                    currentAudioRef.current.pause();
+                }
+                // Tenta resetar o tempo
+                if ('currentTime' in currentAudioRef.current) {
+                    currentAudioRef.current.currentTime = 0;
+                }
+                // Tenta stop() caso o objeto tenha esse método
+                if (typeof (currentAudioRef.current as any).stop === 'function') {
+                    (currentAudioRef.current as any).stop();
+                }
+            } catch (e) {
+                console.warn('Erro ao parar áudio:', e);
+            }
+            currentAudioRef.current = null;
+        }
+    }, []);
+
     return {
         speak,
         speakSequence,
+        stop,
         isPuterConnected,
         connectPuter,
         disconnectPuter,
