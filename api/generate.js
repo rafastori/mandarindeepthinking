@@ -132,7 +132,7 @@ export default async function handler(req, res) {
 
     // --- 5. DOMINO: TERMS ---
     if (type === 'domino_terms') {
-      const { context, sourceLang, targetLang, customTopic, difficulty } = req.body;
+      const { context, sourceLang, targetLang, customTopic, customContext, difficulty } = req.body;
       const langNames = {
         'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
         'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
@@ -141,8 +141,11 @@ export default async function handler(req, res) {
       const tgtName = langNames[targetLang] || 'Português';
 
       let contextInstructions = '';
+
+      const additionalContext = customContext ? `\nTEMA ESPECÍFICO: ${customContext}. Foque os termos nesse tema.` : '';
+
       if (context === 'language') {
-        contextInstructions = `CONTEXTO: Tradução de idiomas.\nIDIOMAS: De ${srcName} para ${tgtName}.\nO "term" deve estar em ${srcName} e a "definition" em ${tgtName}.`;
+        contextInstructions = `CONTEXTO: Tradução de idiomas.\nIDIOMAS: De ${srcName} para ${tgtName}.\nO "term" deve estar em ${srcName} e a "definition" em ${tgtName}.${additionalContext}`;
       } else if (context === 'custom') {
         contextInstructions = `CONTEXTO: ${customTopic}.\nO "term" é o conceito/palavra e a "definition" é sua explicação ou tradução.`;
       } else {
@@ -150,7 +153,7 @@ export default async function handler(req, res) {
           'medicine': 'Medicina', 'computing': 'Computação', 'engineering': 'Engenharia',
           'chemistry': 'Química', 'biology': 'Biologia', 'law': 'Direito'
         };
-        contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.`;
+        contextInstructions = `CONTEXTO: Termos de ${contextNames[context] || context}.\nO "term" é o termo técnico e a "definition" é sua explicação simples em Português.${additionalContext}`;
       }
 
       const systemPrompt = `Você é um especialista em educação. Gere 13 pares de Termo/Definição únicos para um jogo de dominó.

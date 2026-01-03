@@ -40,6 +40,23 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
     const [localCustomContext, setLocalCustomContext] = React.useState(room.config.customContext || '');
     const [localCustomTopic, setLocalCustomTopic] = React.useState(room.config.customTopic || '');
 
+    // Debounce para persistir inputs no Firebase (UX: não perder o que digitou)
+    React.useEffect(() => {
+        const timeout = setTimeout(() => {
+            const hasChangedContext = localCustomContext !== (room.config.customContext || '');
+            const hasChangedTopic = localCustomTopic !== (room.config.customTopic || '');
+
+            if (hasChangedContext || hasChangedTopic) {
+                onUpdateConfig({
+                    customContext: localCustomContext || undefined,
+                    customTopic: localCustomTopic || undefined
+                });
+            }
+        }, 800);
+
+        return () => clearTimeout(timeout);
+    }, [localCustomContext, localCustomTopic]);
+
     const handleStart = async () => {
         setIsStarting(true);
         try {
@@ -295,6 +312,11 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                                 Mínimo {DOMINO_CONSTANTS.MIN_PLAYERS} jogadores
                             </p>
                         )}
+
+                        {/* Debug Info para Mobile */}
+                        <div className="text-[10px] text-slate-300 text-center mt-2 font-mono">
+                            CTX: {localCustomContext || '-'} | TOP: {localCustomTopic || '-'} | v1.2.6
+                        </div>
                     </div>
                 ) : (
                     <div className="text-center py-8">

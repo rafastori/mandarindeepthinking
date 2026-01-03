@@ -505,6 +505,12 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 style={{ paddingLeft: '40%', paddingRight: '40%' }}
                                 ref={el => { if (el) trainRefs.current[focusedTrain.id] = el; }}
                                 onScroll={() => handleTrainScroll(focusedTrain.id)}
+                                onWheel={(e) => {
+                                    // Permite scroll horizontal com a roda do mouse (PC)
+                                    if (e.deltaY !== 0) {
+                                        e.currentTarget.scrollLeft += e.deltaY;
+                                    }
+                                }}
                             >
                                 {focusedTrain.pieces.length === 0 ? (
                                     <div className="flex items-center justify-center w-full py-8 text-slate-400">
