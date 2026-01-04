@@ -515,12 +515,6 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 {turnTimer}
                             </span>
                         </div>
-                        {/* Clock icon when not your turn */}
-                        {!isMyTurn && (
-                            <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full shadow flex items-center justify-center">
-                                <Icon name="clock" size={12} className="text-slate-400" />
-                            </div>
-                        )}
                     </div>
 
                     {/* Hub Piece */}

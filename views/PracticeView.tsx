@@ -203,7 +203,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     const isGerman = currentQ.language === 'de';
 
     return (
-        <div className="p-4 h-full flex flex-col max-w-md mx-auto pb-20">
+        <div className="p-4 h-full fl-upex flex-col max-w-md mx-auto pb-20">
             {/* Barra de Progresso */}
             <div className="w-full bg-slate-100 h-1.5 rounded-full mb-3 overflow-hidden">
                 <div

@@ -148,7 +148,7 @@ export const usePuterSpeech = () => {
         });
     }, [voices]);
 
-    // Função principal de fala - retorna Promise
+    // Função principal de fala - retorna Promise que resolve quando o áudio TERMINA
     const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh'): Promise<void> => {
         // Tenta usar Puter se estiver conectado
         if (isPuterConnected && typeof puter !== 'undefined') {
@@ -177,9 +177,29 @@ export const usePuterSpeech = () => {
 
                 if (audio && typeof audio.play === 'function') {
                     currentAudioRef.current = audio; // Armazena referência para poder parar
-                    await audio.play();
-                    // Não limpa a ref aqui - deixa o stop() fazer isso se necessário
-                    return; // Sucesso com Puter
+
+                    // Retorna Promise que resolve quando o áudio TERMINA de tocar
+                    return new Promise<void>((resolve) => {
+                        // Listener para quando o áudio terminar
+                        const onEnded = () => {
+                            audio.removeEventListener?.('ended', onEnded);
+                            resolve();
+                        };
+
+                        // Adiciona listener de fim
+                        if (typeof audio.addEventListener === 'function') {
+                            audio.addEventListener('ended', onEnded);
+                        }
+
+                        // Inicia reprodução
+                        audio.play().catch(() => resolve());
+
+                        // Fallback timeout de 15s caso o evento ended não dispare
+                        setTimeout(() => {
+                            audio.removeEventListener?.('ended', onEnded);
+                            resolve();
+                        }, 15000);
+                    });
                 }
             } catch (e) {
                 console.warn('Puter TTS falhou, usando fallback:', e);
@@ -194,8 +214,8 @@ export const usePuterSpeech = () => {
     const speakSequence = useCallback(async (items: Array<{ text: string; language: SupportedLanguage }>): Promise<void> => {
         for (const item of items) {
             await speak(item.text, item.language);
-            // Small pause between items
-            await new Promise(resolve => setTimeout(resolve, 300));
+            // Pausa de 1 segundo entre itens para evitar sobreposição
+            await new Promise(resolve => setTimeout(resolve, 1000));
         }
     }, [speak]);
 
