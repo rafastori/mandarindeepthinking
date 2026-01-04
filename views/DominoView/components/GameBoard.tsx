@@ -174,9 +174,18 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         const interval = setInterval(() => {
             setTurnTimer(prev => {
                 if (prev <= 1) {
-                    // Timer expired - auto pass if it's my turn
+                    // Timer expired - if it's my turn, draw a card first then pass
                     if (isMyTurn) {
-                        onPassTurn();
+                        // Draw a card if boneyard has cards, then pass
+                        if (room.boneyard.length > 0) {
+                            onDrawPiece().then(() => {
+                                // After drawing, pass the turn
+                                setTimeout(() => onPassTurn(), 500);
+                            });
+                        } else {
+                            // No cards to draw, just pass
+                            onPassTurn();
+                        }
                     }
                     return 60; // Reset
                 }
@@ -185,7 +194,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [room.phase, isMyTurn, onPassTurn]);
+    }, [room.phase, room.boneyard.length, isMyTurn, onPassTurn, onDrawPiece]);
 
     // Sync local hand with server when server changes
     useEffect(() => {
@@ -193,6 +202,56 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             setLocalHand(null);
         }
     }, [serverHand]);
+
+    // Track players with one piece for "Uno!" style alert
+    const playersWithOnePieceRef = useRef<Set<string>>(new Set());
+
+    // Alert when a player has only one piece left
+    useEffect(() => {
+        if (room.phase !== 'playing') return;
+
+        room.players.forEach(player => {
+            if (player.hand.length === 1 && !playersWithOnePieceRef.current.has(player.id)) {
+                // Player just got to 1 piece - announce!
+                playersWithOnePieceRef.current.add(player.id);
+
+                // Play alert sound
+                try {
+                    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+                    // Dramatic rising notes
+                    const notes = [440, 554.37, 659.25, 880]; // A4, C#5, E5, A5
+                    notes.forEach((freq, i) => {
+                        const osc = audioContext.createOscillator();
+                        const gain = audioContext.createGain();
+                        osc.connect(gain);
+                        gain.connect(audioContext.destination);
+                        osc.type = 'sine';
+                        osc.frequency.setValueAtTime(freq, audioContext.currentTime + i * 0.1);
+                        gain.gain.setValueAtTime(0.15, audioContext.currentTime + i * 0.1);
+                        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + i * 0.1 + 0.15);
+                        osc.start(audioContext.currentTime + i * 0.1);
+                        osc.stop(audioContext.currentTime + i * 0.1 + 0.15);
+                    });
+                } catch (e) { }
+
+                // TTS announcement
+                const playerName = player.name.split(' ')[0];
+                const isMe = player.id === currentUserId;
+                const message = isMe
+                    ? 'Atenção! Você tem apenas uma peça!'
+                    : `Atenção! ${playerName} tem apenas uma peça!`;
+
+                setTimeout(() => {
+                    speak(message, 'pt');
+                }, 500);
+            }
+
+            // Remove from set if player has more than 1 piece again (drew a piece)
+            if (player.hand.length > 1 && playersWithOnePieceRef.current.has(player.id)) {
+                playersWithOnePieceRef.current.delete(player.id);
+            }
+        });
+    }, [room.players, room.phase, currentUserId, speak]);
 
     const canPlayOnTrain = (piece: DominoPieceType, train: Train): { canPlay: boolean; needsFlip: boolean } => {
         const targetIndex = train.openEndIndex;
