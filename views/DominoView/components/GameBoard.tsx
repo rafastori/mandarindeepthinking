@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Icon from '../../../components/Icon';
-import { DominoRoom, DominoPiece as DominoPieceType, Train } from '../types';
+import { DominoRoom, DominoPiece as DominoPieceType, Train, EmoteBroadcast } from '../types';
 import { DominoPiece } from './DominoPiece';
 import { PlayerHand } from './PlayerHand';
 import { HandViewModal } from './HandViewModal';
 import { TrainViewModal } from './TrainViewModal';
 import { DominoPieceModal } from './DominoPieceModal';
+import { EmotePanel, EmoteDisplay } from './EmotePanel';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 
 interface GameBoardProps {
@@ -15,6 +16,7 @@ interface GameBoardProps {
     onDrawPiece: () => Promise<DominoPieceType | null>;
     onPassTurn: () => void;
     onReorderHand?: (newOrder: DominoPieceType[]) => void;
+    onSendEmote?: (emote: EmoteBroadcast) => void;
     onExit?: () => void;
     onToggleFullscreen?: () => void;
     isFullscreen?: boolean;
@@ -27,6 +29,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     onDrawPiece,
     onPassTurn,
     onReorderHand,
+    onSendEmote,
     onExit,
     onToggleFullscreen,
     isFullscreen
@@ -41,6 +44,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
     const [focusedTrainId, setFocusedTrainId] = useState<string | null>(null); // null = My Train
     const [autoPassPending, setAutoPassPending] = useState(false);
+    const [turnTimer, setTurnTimer] = useState(60); // 60 segundos por turno
 
     // TTS Hook
     const { speakSequence, speak } = usePuterSpeech();
@@ -158,6 +162,30 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const serverHand = currentPlayer?.hand || [];
     const myHand = localHand || serverHand;
     const currentTurnPlayer = room.players.find(p => p.id === room.currentTurn);
+
+    // Turn timer - reset when turn changes, countdown each second
+    useEffect(() => {
+        setTurnTimer(60); // Reset timer when turn changes
+    }, [room.currentTurn]);
+
+    useEffect(() => {
+        if (room.phase !== 'playing') return;
+
+        const interval = setInterval(() => {
+            setTurnTimer(prev => {
+                if (prev <= 1) {
+                    // Timer expired - auto pass if it's my turn
+                    if (isMyTurn) {
+                        onPassTurn();
+                    }
+                    return 60; // Reset
+                }
+                return prev - 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [room.phase, isMyTurn, onPassTurn]);
 
     // Sync local hand with server when server changes
     useEffect(() => {
@@ -391,8 +419,52 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
             {/* Game Area */}
             <div className="flex-1 overflow-y-auto p-3 min-h-0">
-                {/* Hub Central */}
-                <div className="flex justify-center mb-4">
+                {/* Emote Display - floating emotes from other players */}
+                <EmoteDisplay emotes={room.emotes || []} currentUserId={currentUserId} />
+
+                {/* Hub Central with Emote Button */}
+                <div className="flex items-center justify-center gap-4 mb-4">
+                    {/* Turn Timer - Circular countdown */}
+                    <div className="relative w-16 h-16 flex-shrink-0">
+                        {/* Background circle */}
+                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <circle
+                                cx="18"
+                                cy="18"
+                                r="16"
+                                fill="none"
+                                stroke="#e2e8f0"
+                                strokeWidth="3"
+                            />
+                            {/* Progress circle */}
+                            <circle
+                                cx="18"
+                                cy="18"
+                                r="16"
+                                fill="none"
+                                stroke={turnTimer <= 10 ? '#ef4444' : turnTimer <= 30 ? '#f59e0b' : '#22c55e'}
+                                strokeWidth="3"
+                                strokeDasharray="100.53"
+                                strokeDashoffset={100.53 - (turnTimer / 60) * 100.53}
+                                strokeLinecap="round"
+                                className="transition-all duration-1000"
+                            />
+                        </svg>
+                        {/* Timer text */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <span className={`text-lg font-bold ${turnTimer <= 10 ? 'text-red-500 animate-pulse' : turnTimer <= 30 ? 'text-amber-500' : 'text-slate-700'}`}>
+                                {turnTimer}
+                            </span>
+                        </div>
+                        {/* Clock icon when not your turn */}
+                        {!isMyTurn && (
+                            <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full shadow flex items-center justify-center">
+                                <Icon name="clock" size={12} className="text-slate-400" />
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Hub Piece */}
                     {room.hubPiece && (
                         <div className="text-center">
                             <div className="inline-flex items-center gap-1 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold mb-2">
@@ -404,6 +476,15 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                                 <DominoPiece piece={room.hubPiece} size="md" />
                             </div>
                         </div>
+                    )}
+
+                    {/* Emote Panel - highlighted button */}
+                    {onSendEmote && (
+                        <EmotePanel
+                            onSendEmote={onSendEmote}
+                            currentUserId={currentUserId}
+                            currentUserName={currentPlayer?.name || 'Jogador'}
+                        />
                     )}
                 </div>
 

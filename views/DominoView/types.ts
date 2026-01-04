@@ -69,6 +69,16 @@ export interface DominoConfig {
     difficulty: 'Iniciante' | 'Intermediário' | 'Avançado';
 }
 
+// Emote broadcast para interações
+export interface EmoteBroadcast {
+    emoteId: string;
+    emoji: string;
+    soundType?: 'applause' | 'laugh' | 'bell' | 'horn' | 'tick' | 'party';
+    senderId: string;
+    senderName: string;
+    timestamp: number;
+}
+
 // Sala do jogo
 export interface DominoRoom {
     id: string;
@@ -87,6 +97,9 @@ export interface DominoRoom {
     hubPiece?: DominoPiece;
     currentTurn: string;
     consecutivePasses: number;
+
+    // Interações (emotes)
+    emotes: EmoteBroadcast[];
 
     createdAt: any;
     startedAt?: any;

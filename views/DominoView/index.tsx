@@ -6,7 +6,7 @@ import { useDominoRoom } from './hooks/useDominoRoom';
 import { useStudyItems } from '../../hooks/useStudyItems';
 import { useUserProfile } from '../../hooks/useUserProfile';
 import { usePuterSpeech } from '../../hooks/usePuterSpeech';
-import { DominoPlayer, DominoConfig, DOMINO_CONSTANTS, TermPair } from './types';
+import { DominoPlayer, DominoConfig, DOMINO_CONSTANTS, TermPair, EmoteBroadcast } from './types';
 import { DominoLobby } from './components/DominoLobby';
 import { GameBoard } from './components/GameBoard';
 
@@ -61,7 +61,8 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         resumePlayer,
         permanentLeave,
         findActiveRoomForUser,
-        reorderPlayerHand
+        reorderPlayerHand,
+        sendEmote
     } = useDominoRoom(userId);
 
     const { addItem } = useStudyItems(userId);
@@ -352,6 +353,7 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
                         onDrawPiece={() => drawPiece(activeRoom.id, userId)}
                         onPassTurn={() => passTurn(activeRoom.id, userId)}
                         onReorderHand={(newOrder) => reorderPlayerHand(activeRoom.id, userId, newOrder)}
+                        onSendEmote={(emote) => sendEmote(activeRoom.id, emote)}
                         onExit={() => setShowExitConfirm(true)}
                         onToggleFullscreen={toggleFullscreen}
                         isFullscreen={isFullscreen}

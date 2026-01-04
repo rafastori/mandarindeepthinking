@@ -18,6 +18,7 @@ import {
     DominoPiece,
     Train,
     TermPair,
+    EmoteBroadcast,
     DOMINO_CONSTANTS
 } from '../types';
 import { generateDominoTerms } from '../../../services/gemini';
@@ -216,6 +217,7 @@ export const useDominoRoom = (userId?: string) => {
                 trains: [],
                 currentTurn: '',
                 consecutivePasses: 0,
+                emotes: [],
                 createdAt: new Date(),
             };
 
@@ -789,6 +791,27 @@ export const useDominoRoom = (userId?: string) => {
         }
     };
 
+    /**
+     * Envia um emote para todos os jogadores da sala
+     */
+    const sendEmote = async (roomId: string, emote: EmoteBroadcast): Promise<void> => {
+        try {
+            const roomRef = doc(db, 'dominoRooms', roomId);
+            const roomSnap = await getDoc(roomRef);
+            if (!roomSnap.exists()) return;
+
+            const roomData = roomSnap.data() as DominoRoom;
+
+            // Manter apenas os últimos 10 emotes para não poluir o documento
+            const existingEmotes = roomData.emotes || [];
+            const updatedEmotes = [...existingEmotes, emote].slice(-10);
+
+            await updateDoc(roomRef, { emotes: updatedEmotes });
+        } catch (error) {
+            console.error('Error sending emote:', error);
+        }
+    };
+
     return {
         rooms,
         activeRoom,
@@ -811,6 +834,7 @@ export const useDominoRoom = (userId?: string) => {
         resumePlayer,
         permanentLeave,
         findActiveRoomForUser,
-        reorderPlayerHand
+        reorderPlayerHand,
+        sendEmote
     };
 };
