@@ -17,7 +17,7 @@ interface HeaderProps {
     onDisconnectPuter: () => void;
     // Props para Export/Import
     onExportData: () => void;
-    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string }>;
+    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
     // Configurações de Voz
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;

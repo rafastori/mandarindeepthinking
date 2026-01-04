@@ -12,7 +12,7 @@ interface UserMenuDropdownProps {
     onDisconnectPuter: () => void;
     onResetAccount: () => void;
     onExportData: () => void;
-    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string }>;
+    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
 }
@@ -80,7 +80,17 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
         setImporting(false);
 
         if (result.success) {
-            alert(`✅ Importação concluída! ${result.count} itens importados.`);
+            let msg = `✅ Importação concluída! ${result.count} itens importados.`;
+            if (result.profile) {
+                const extras: string[] = [];
+                if (result.profile.savedIds?.length) extras.push(`${result.profile.savedIds.length} favoritos`);
+                if (result.profile.stats) extras.push('estatísticas');
+                if (result.profile.totalScore) extras.push(`pontuação: ${result.profile.totalScore}`);
+                if (extras.length > 0) {
+                    msg += `\n\n📊 Perfil restaurado: ${extras.join(', ')}`;
+                }
+            }
+            alert(msg);
         } else {
             alert(`❌ Erro: ${result.error}`);
         }

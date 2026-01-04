@@ -75,19 +75,20 @@ export const useStudyItems = (userId: string | null | undefined) => {
     }
   };
 
-  // EXPORTAR DADOS: Gera arquivo JSON para download
-  const exportData = () => {
+  // EXPORTAR DADOS: Gera arquivo JSON para download (v1.2.0 - inclui profile e IDs)
+  const exportData = (profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
     if (!userId || items.length === 0) {
       alert("Nenhum dado para exportar!");
       return;
     }
 
     const payload = {
-      version: "1.0.0",
+      version: "1.2.0",
       exportedAt: new Date().toISOString(),
       userId: userId,
       itemCount: items.length,
       data: items.map(item => ({
+        id: item.id, // NOVO: preserva o ID original para restauração correta
         chinese: item.chinese,
         pinyin: item.pinyin,
         translation: item.translation,
@@ -95,7 +96,14 @@ export const useStudyItems = (userId: string | null | undefined) => {
         tokens: item.tokens || [],
         keywords: item.keywords || [],
         originalSentence: item.originalSentence || null,
-      }))
+        type: item.type || 'text', // NOVO: preserva o tipo
+      })),
+      // Novo: dados de perfil para backup completo
+      profile: profileData ? {
+        savedIds: profileData.savedIds || [],
+        stats: profileData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {} },
+        totalScore: profileData.totalScore || 0
+      } : null
     };
 
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
@@ -110,8 +118,13 @@ export const useStudyItems = (userId: string | null | undefined) => {
     URL.revokeObjectURL(url);
   };
 
-  // IMPORTAR DADOS: Carrega arquivo JSON e insere no Firestore
-  const importData = async (file: File, mode: 'merge' | 'replace'): Promise<{ success: boolean; count: number; error?: string }> => {
+  // IMPORTAR DADOS: Carrega arquivo JSON e insere no Firestore (v1.2.0 - preserva IDs)
+  const importData = async (file: File, mode: 'merge' | 'replace'): Promise<{
+    success: boolean;
+    count: number;
+    error?: string;
+    profile?: { savedIds: string[]; stats: any; totalScore: number } | null;
+  }> => {
     if (!userId) return { success: false, count: 0, error: "Usuário não autenticado" };
 
     try {
@@ -146,7 +159,11 @@ export const useStudyItems = (userId: string | null | undefined) => {
         const batch = writeBatch(db);
 
         chunk.forEach((item: any) => {
-          const docRef = doc(collection(db, 'users', userId, 'items'));
+          // v1.2.0+: usa ID original se disponível, senão gera novo
+          const docRef = item.id && typeof item.id === 'string'
+            ? doc(db, 'users', userId, 'items', item.id)
+            : doc(collection(db, 'users', userId, 'items'));
+
           batch.set(docRef, {
             chinese: item.chinese,
             pinyin: item.pinyin || '',
@@ -155,6 +172,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
             tokens: item.tokens || [],
             keywords: item.keywords || [],
             originalSentence: item.originalSentence || null,
+            type: item.type || 'text', // Preserva o tipo do item
             createdAt: serverTimestamp()
           });
         });
@@ -164,7 +182,13 @@ export const useStudyItems = (userId: string | null | undefined) => {
       }
 
       console.log(`Importação concluída: ${imported} itens`);
-      return { success: true, count: imported };
+
+      // Retorna profile se existir no backup (v1.1.0+)
+      return {
+        success: true,
+        count: imported,
+        profile: payload.profile || null
+      };
 
     } catch (error: any) {
       console.error("Erro na importação:", error);

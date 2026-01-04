@@ -39,7 +39,7 @@ const App: React.FC = () => {
     const [isGameFullscreen, setIsGameFullscreen] = useState(false);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
@@ -209,6 +209,41 @@ const App: React.FC = () => {
         }
     };
 
+    // Wrapper para exportar dados completos (inclui profile)
+    const handleExportData = () => {
+        exportData({
+            savedIds: cloudSavedIds,
+            stats: cloudStats,
+            totalScore: cloudTotalScore
+        });
+    };
+
+    // Wrapper para importar dados e processar profile
+    const handleImportData = async (file: File, mode: 'merge' | 'replace') => {
+        const result = await importData(file, mode);
+
+        // Se importação bem sucedida e tem profile, restaura dados de perfil
+        if (result.success && result.profile) {
+            const { savedIds: importedSavedIds, stats: importedStats, totalScore: importedTotalScore } = result.profile;
+
+            // savedIds: merge (união com existentes, sem duplicatas)
+            if (importedSavedIds?.length) {
+                const mergedIds = [...new Set([...cloudSavedIds, ...importedSavedIds])];
+                await updateCloudFavorites(mergedIds);
+            }
+
+            // stats: substituir pelos importados
+            if (importedStats) {
+                await updateCloudStats(importedStats);
+            }
+
+            // totalScore: Podemos adicionar lógica aqui se necessário no futuro
+            console.log('Profile restaurado:', { importedSavedIds, importedStats, importedTotalScore });
+        }
+
+        return result;
+    };
+
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
 
     const renderView = () => {
@@ -298,8 +333,8 @@ const App: React.FC = () => {
                     puterUsername={puterUsername}
                     onConnectPuter={handleConnectPuter}
                     onDisconnectPuter={disconnectPuter}
-                    onExportData={exportData}
-                    onImportData={importData}
+                    onExportData={handleExportData}
+                    onImportData={handleImportData}
                     engine={engine}
                     onEngineChange={setEngine}
                 />
