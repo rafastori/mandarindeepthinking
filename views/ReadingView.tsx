@@ -125,11 +125,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     if (!item.folderPath) return true;
                 }
 
-                return activeFolderFilters.some(filterPath => {
-                    if (item.folderPath === filterPath) return true;
-                    if (item.folderPath?.startsWith(filterPath + '/')) return true;
-                    return false;
-                });
+                // MATCH EXATO: apenas mostra itens cuja pasta está explicitamente selecionada
+                return activeFolderFilters.includes(item.folderPath || '');
             });
         }
 

@@ -46,11 +46,45 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         setExpandedPaths(newExpanded);
     };
 
+    // Coleta todos os caminhos descendentes de um nó
+    const getAllDescendantPaths = (nodePath: string): string[] => {
+        const paths: string[] = [];
+        const findNode = (nodes: FolderNode[]): FolderNode | null => {
+            for (const node of nodes) {
+                if (node.path === nodePath) return node;
+                const found = findNode(node.children);
+                if (found) return found;
+            }
+            return null;
+        };
+
+        const collectPaths = (node: FolderNode) => {
+            node.children.forEach(child => {
+                paths.push(child.path);
+                collectPaths(child);
+            });
+        };
+
+        const node = findNode(folderTree);
+        if (node) {
+            collectPaths(node);
+        }
+        return paths;
+    };
+
     const toggleSelect = (path: string) => {
-        const newSelected = selectedPaths.includes(path)
-            ? selectedPaths.filter(p => p !== path)
-            : [...selectedPaths, path];
-        onSelect(newSelected);
+        const isCurrentlySelected = selectedPaths.includes(path);
+        const descendantPaths = getAllDescendantPaths(path);
+
+        if (isCurrentlySelected) {
+            // Desmarcar: remove apenas este path (não afeta filhos)
+            const newSelected = selectedPaths.filter(p => p !== path);
+            onSelect(newSelected);
+        } else {
+            // Marcar: adiciona este path E todos os filhos
+            const newSelected = new Set([...selectedPaths, path, ...descendantPaths]);
+            onSelect(Array.from(newSelected));
+        }
     };
 
     const selectAll = () => {

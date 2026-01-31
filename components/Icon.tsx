@@ -3,6 +3,7 @@ import {
     BookOpen,
     List,
     Edit3,
+    Edit2,
     Gamepad2,
     FlaskConical,
     Layers,
@@ -10,6 +11,7 @@ import {
     BarChart2,
     BrainCircuit,
     ChevronDown,
+    ChevronRight,
     Trash2,
     BookmarkMinus,
     Bookmark,
@@ -39,7 +41,11 @@ import {
     Inbox,
     ArrowLeft,
     Maximize2,
-    Minimize2
+    Minimize2,
+    Folder,
+    FolderTree,
+    FolderPlus,
+    Filter
 } from 'lucide-react';
 
 export interface IconProps {
@@ -53,6 +59,7 @@ const icons: Record<string, React.ElementType> = {
     'book-open': BookOpen,
     'list': List,
     'edit-3': Edit3,
+    'edit-2': Edit2,
     'gamepad-2': Gamepad2,
     'flask-conical': FlaskConical,
     'layers': Layers,
@@ -60,6 +67,7 @@ const icons: Record<string, React.ElementType> = {
     'bar-chart-2': BarChart2,
     'brain-circuit': BrainCircuit,
     'chevron-down': ChevronDown,
+    'chevron-right': ChevronRight,
     'trash-2': Trash2,
     'bookmark-minus': BookmarkMinus,
     'bookmark': Bookmark,
@@ -89,7 +97,11 @@ const icons: Record<string, React.ElementType> = {
     'inbox': Inbox,
     'arrow-left': ArrowLeft,
     'maximize-2': Maximize2,
-    'minimize-2': Minimize2
+    'minimize-2': Minimize2,
+    'folder': Folder,
+    'folder-tree': FolderTree,
+    'folder-plus': FolderPlus,
+    'filter': Filter
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
