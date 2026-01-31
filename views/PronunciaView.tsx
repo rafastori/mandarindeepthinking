@@ -10,6 +10,7 @@ interface PronunciaViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult?: (isCorrect: boolean, word: string, type: 'pronunciation') => void;
+    activeFolderFilters?: string[];
 }
 
 interface MissedWord {
@@ -95,7 +96,7 @@ const containsCJKCharacters = (text: string): boolean => {
     return /[\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff\uac00-\ud7af]/.test(text);
 };
 
-const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult }) => {
+const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech();
     const {
         isListening,
@@ -123,8 +124,48 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
 
     // Preparar dados baseado no modo
     const items: PracticeItem[] = useMemo(() => {
+        // Aplica filtro de pasta primeiro
+        // 1. Identifica palavras permitidas (que aparecem nos textos das pastas selecionadas)
+        const allowedWords = new Set<string>();
+        const clean = (text: string) => text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
+
+        if (activeFolderFilters.length > 0) {
+            data.forEach(item => {
+                if (item.type !== 'word') {
+                    // Verifica se o TEXTO está na pasta
+                    const inFolder = activeFolderFilters.some(filterPath => {
+                        if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                        return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                    });
+
+                    if (inFolder) {
+                        item.tokens?.forEach(t => allowedWords.add(clean(t)));
+                        item.keywords?.forEach(k => allowedWords.add(clean(k.word)));
+                    }
+                }
+            });
+        }
+
+        // 2. Filtra dados (União: Está na pasta OU é uma palavra que aparece na pasta)
+        const filteredData = activeFolderFilters.length === 0 ? data : data.filter(item => {
+            // Verifica pasta explícita
+            const explicitMatch = activeFolderFilters.some(filterPath => {
+                if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+            });
+
+            if (explicitMatch) return true;
+
+            // Verifica associação dinâmica (apenas para cards de palavra)
+            if (item.type === 'word' && allowedWords.has(clean(item.chinese))) {
+                return true;
+            }
+
+            return false;
+        });
+
         if (mode === 'frases') {
-            return data.map(item => ({
+            return filteredData.map(item => ({
                 id: item.id.toString(),
                 text: item.chinese,
                 pinyin: item.pinyin || '',
@@ -133,7 +174,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
             }));
         } else {
             const words: PracticeItem[] = [];
-            data.forEach(item => {
+            filteredData.forEach(item => {
                 const itemId = item.id.toString();
                 if (savedIds.includes(itemId)) {
                     words.push({
@@ -160,7 +201,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult 
             });
             return words;
         }
-    }, [data, savedIds, mode]);
+    }, [data, savedIds, mode, activeFolderFilters]);
 
     const currentItem = items[currentIndex];
 

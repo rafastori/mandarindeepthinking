@@ -34,12 +34,13 @@ const App: React.FC = () => {
     const [tab, setTab] = useState<string>('leitura');
     const [showStats, setShowStats] = useState(false);
     const [showImport, setShowImport] = useState(false);
+    const [initialImportFolder, setInitialImportFolder] = useState('');
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest' | 'domino'>('selector');
     const [isGameFullscreen, setIsGameFullscreen] = useState(false);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
@@ -176,7 +177,7 @@ const App: React.FC = () => {
         }
     };
 
-    const handleImportBatch = async (newItems: StudyItem[]) => {
+    const handleImportBatch = async (newItems: StudyItem[], folderPath: string) => {
         if (!user) {
             alert("Você precisa estar logado para salvar textos na nuvem.");
             return;
@@ -187,8 +188,17 @@ const App: React.FC = () => {
         for (const item of itemsToSave) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { id, ...dataToSave } = item;
-            await addItem(dataToSave);
+            await addItem({ ...dataToSave, folderPath });
         }
+
+        // Limpa o folder inicial após import
+        setInitialImportFolder('');
+    };
+
+    // Abre modal de importação com pasta pré-selecionada
+    const handleOpenImportInFolder = (folderPath: string) => {
+        setInitialImportFolder(folderPath);
+        setShowImport(true);
     };
 
     const handleSaveLabItem = async (item: StudyItem) => {
@@ -264,12 +274,17 @@ const App: React.FC = () => {
                         savedIds={activeSavedIds}
                         onToggleSave={toggleSave}
                         onOpenImport={() => setShowImport(true)}
+                        onOpenImportInFolder={handleOpenImportInFolder}
                         onDeleteText={handleDelete}
                         onSaveGeneratedCard={handleSaveGeneratedCard}
+                        onUpdateItem={updateItem}
+                        activeFolderFilters={activeFolderFilters}
+                        onUpdateFolderFilters={updateFolderFilters}
+                        userId={user?.uid}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} />;
-            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} />;
+            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
                     return (
@@ -302,7 +317,7 @@ const App: React.FC = () => {
                     );
                 }
                 return null;
-            case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} />;
+            case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             case 'criativo':
                 return (
                     <CreativeView
@@ -312,8 +327,8 @@ const App: React.FC = () => {
                         onSave={handleSaveLabItem}
                     />
                 );
-            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
-            case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} />;
+            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
+            case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             default: return null;
         }
     };
@@ -346,7 +361,14 @@ const App: React.FC = () => {
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
             {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {} }) : clearLocalStats()} />}
-            {showImport && <ImportModal onClose={() => setShowImport(false)} onImport={handleImportBatch} />}
+            {showImport && (
+                <ImportModal
+                    onClose={() => { setShowImport(false); setInitialImportFolder(''); }}
+                    onImport={handleImportBatch}
+                    existingItems={libraryData}
+                    initialFolder={initialImportFolder}
+                />
+            )}
             {showPuterSuggestion && (
                 <PuterSuggestionModal
                     onConnect={handleConnectPuter}

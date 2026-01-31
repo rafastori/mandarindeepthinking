@@ -32,6 +32,7 @@ export interface StudyItem {
     createdAt?: any;
     type?: 'text' | 'word';
     originalSentence?: string;
+    folderPath?: string; // Ex: "Aula 1" ou "Curso/Aula 1/Gramática"
 }
 
 export interface StatsHistory {

@@ -21,9 +21,10 @@ interface ReviewViewProps {
     savedIds: string[];
     onRemove: (id: string) => void;
     onUpdateLanguage?: (id: string, data: Partial<StudyItem>) => void;
+    activeFolderFilters?: string[];
 }
 
-const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage }) => {
+const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
     const [selectionMode, setSelectionMode] = useState(false);
@@ -44,7 +45,47 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
             sentence: { chinese: string; translation: string; language?: SupportedLanguage };
         }[] = [];
 
-        data.forEach(item => {
+        // Filtra dados por pasta se houver filtros ativos
+        // 1. Identifica palavras permitidas (que aparecem nos textos das pastas selecionadas)
+        const allowedWords = new Set<string>();
+        const clean = (text: string) => text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
+
+        if (activeFolderFilters.length > 0) {
+            data.forEach(item => {
+                if (item.type !== 'word') {
+                    // Verifica se o TEXTO está na pasta
+                    const inFolder = activeFolderFilters.some(filterPath => {
+                        if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                        return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                    });
+
+                    if (inFolder) {
+                        item.tokens?.forEach(t => allowedWords.add(clean(t)));
+                        item.keywords?.forEach(k => allowedWords.add(clean(k.word)));
+                    }
+                }
+            });
+        }
+
+        // 2. Filtra dados (União: Está na pasta OU é uma palavra que aparece na pasta)
+        const filteredData = activeFolderFilters.length === 0 ? data : data.filter(item => {
+            // Verifica pasta explícita
+            const explicitMatch = activeFolderFilters.some(filterPath => {
+                if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+            });
+
+            if (explicitMatch) return true;
+
+            // Verifica associação dinâmica (apenas para cards de palavra)
+            if (item.type === 'word' && allowedWords.has(clean(item.chinese))) {
+                return true;
+            }
+
+            return false;
+        });
+
+        filteredData.forEach(item => {
             // CASO 1: A palavra é um item importado (Novo sistema Firebase)
             if (savedIds.includes(item.id.toString())) {
                 items.push({
@@ -77,7 +118,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
         });
 
         return items.filter((v, i, a) => a.findIndex(t => (t.id === v.id)) === i).reverse();
-    }, [savedIds, data]);
+    }, [savedIds, data, activeFolderFilters]);
 
     const toggleSelection = (id: string) => {
         const newSelected = new Set(selectedIds);

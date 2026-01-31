@@ -7,9 +7,10 @@ import { usePuterSpeech } from '../hooks/usePuterSpeech'; // Atualizado para Put
 interface LabViewProps {
     data: StudyItem[];
     onResult: (correct: boolean, word: string) => void;
+    activeFolderFilters?: string[];
 }
 
-const LabView: React.FC<LabViewProps> = ({ data, onResult }) => {
+const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech(); // Usando Puter TTS
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedTokens, setSelectedTokens] = useState<{ id: number, text: string }[]>([]);
@@ -18,9 +19,24 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult }) => {
 
     // Filtra apenas frases longas (com mais de 1 token) para o jogo fazer sentido
     const sentences = useMemo(() => {
-        return data.filter(item => item.tokens && item.tokens.length > 1)
+        // Filtra dados por pasta se houver filtros ativos
+        let filteredData = data;
+        if (activeFolderFilters.length > 0) {
+            filteredData = data.filter(item => {
+                if (activeFolderFilters.includes('__uncategorized__')) {
+                    if (!item.folderPath) return true;
+                }
+                return activeFolderFilters.some(filterPath => {
+                    if (item.folderPath === filterPath) return true;
+                    if (item.folderPath?.startsWith(filterPath + '/')) return true;
+                    return false;
+                });
+            });
+        }
+
+        return filteredData.filter(item => item.tokens && item.tokens.length > 1)
             .sort(() => 0.5 - Math.random());
-    }, [data]);
+    }, [data, activeFolderFilters]);
 
     const currentSentence = sentences[currentIdx];
 

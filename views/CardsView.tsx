@@ -9,9 +9,10 @@ interface CardsViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
+    activeFolderFilters?: string[];
 }
 
-const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
+const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech();
 
     // Estado da Sessão
@@ -24,7 +25,48 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
     // Função que cria o baralho (Extraída para ser usada no Início e no Reiniciar)
     const createNewDeck = useCallback(() => {
         setIsLoading(true);
-        const items = getSavedItems(data, savedIds);
+
+        // Filtra dados por pasta se houver filtros ativos
+        // 1. Identifica palavras permitidas (que aparecem nos textos das pastas selecionadas)
+        const allowedWords = new Set<string>();
+        const clean = (text: string) => text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
+
+        if (activeFolderFilters.length > 0) {
+            data.forEach(item => {
+                if (item.type !== 'word') {
+                    // Verifica se o TEXTO está na pasta
+                    const inFolder = activeFolderFilters.some(filterPath => {
+                        if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                        return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                    });
+
+                    if (inFolder) {
+                        item.tokens?.forEach(t => allowedWords.add(clean(t)));
+                        item.keywords?.forEach(k => allowedWords.add(clean(k.word)));
+                    }
+                }
+            });
+        }
+
+        // 2. Filtra dados (União: Está na pasta OU é uma palavra que aparece na pasta)
+        const filteredData = activeFolderFilters.length === 0 ? data : data.filter(item => {
+            // Verifica pasta explícita
+            const explicitMatch = activeFolderFilters.some(filterPath => {
+                if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+            });
+
+            if (explicitMatch) return true;
+
+            // Verifica associação dinâmica (apenas para cards de palavra)
+            if (item.type === 'word' && allowedWords.has(clean(item.chinese))) {
+                return true;
+            }
+
+            return false;
+        });
+
+        const items = getSavedItems(filteredData, savedIds);
 
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
@@ -37,18 +79,16 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult }) => {
         setFlipped(false);
         setIsFinished(false);
         setIsLoading(false);
-    }, [data, savedIds]);
+    }, [data, savedIds, activeFolderFilters]);
 
     // EFEITO DE INICIALIZAÇÃO COM TRAVA DE SEGURANÇA 🔒
+    // EFEITO DE INICIALIZAÇÃO E REAÇÃO A FILTROS
     useEffect(() => {
-        // Só cria o baralho se ele estiver VAZIO e tivermos dados para carregar.
-        // Isso impede que o baralho seja recriado quando você acerta uma carta (que atualiza o App.tsx).
-        if (deck.length === 0 && data.length > 0) {
-            createNewDeck();
-        } else if (data.length === 0 && !isLoading) {
-            setIsLoading(false); // Caso não tenha dados mesmo
-        }
-    }, [data, savedIds, deck.length, createNewDeck, isLoading]);
+        // Se mudarem os filtros ou dados principais, recria o baralho
+        // A proteção deck.length === 0 é removida aqui para permitir que filtros recarreguem o deck
+        // Mas precisamos cuidar para não ficar recriando em loop infinito se createNewDeck for instável
+        createNewDeck();
+    }, [createNewDeck]); // createNewDeck já depende de activeFolderFilters, então isso funciona
 
     const handleRestart = () => {
         createNewDeck(); // Força a recriação manual

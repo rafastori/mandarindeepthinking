@@ -8,9 +8,10 @@ interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
+    activeFolderFilters?: string[];
 }
 
-const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult }) => {
+const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
     const { speak, stop } = usePuterSpeech();
 
     // Estados do Jogo
@@ -23,13 +24,15 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
     // Ref para armazenar snapshot estável dos dados (evita re-render causar re-shuffle)
     const dataSnapshotRef = useRef<{ data: StudyItem[]; savedIds: string[] } | null>(null);
 
-    // Atualiza o snapshot apenas quando sessionKey muda (início de nova sessão)
     useEffect(() => {
         dataSnapshotRef.current = { data, savedIds };
-    }, [sessionKey]); // Propositalmente NÃO inclui data/savedIds
+    }, [data, savedIds]); // Mantém sempre atualizado quando dados mudam
 
     // Função para limpar pontuação (mesma do ReadingView)
     const cleanPunctuation = (text: string) => text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´。，！？；：）】」』、]/g, "").trim();
+
+    // Chave estável para filtros (evita re-shuffle quando stats mudam)
+    const filtersKey = useMemo(() => activeFolderFilters.sort().join(','), [activeFolderFilters]);
 
     // Mapa de palavras salvas - MESMA LÓGICA DO ReadingView
     const savedWordsMap = useMemo(() => {
@@ -37,9 +40,50 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
         const currentData = snapshot.data;
         const currentSavedIds = snapshot.savedIds;
 
+        // 1. Identifica palavras permitidas (que aparecem nos textos das pastas selecionadas)
+        const allowedWords = new Set<string>();
+
+        if (activeFolderFilters.length > 0) {
+            currentData.forEach(item => {
+                if (item.type !== 'word') {
+                    // Verifica se o TEXTO está na pasta
+                    const inFolder = activeFolderFilters.some(filterPath => {
+                        if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                        return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                    });
+
+                    if (inFolder) {
+                        item.tokens?.forEach(t => allowedWords.add(cleanPunctuation(t).toLowerCase()));
+                        item.keywords?.forEach(k => allowedWords.add(cleanPunctuation(k.word).toLowerCase()));
+                    }
+                }
+            });
+        }
+
         const map = new Map<string, Keyword>();
 
         currentData.forEach(item => {
+            // Verifica se o item deve ser incluído (Lógica de União)
+            let isVisible = false;
+            if (activeFolderFilters.length === 0) {
+                isVisible = true;
+            } else {
+                // Check 1: Pasta explícita
+                const explicitMatch = activeFolderFilters.some(filterPath => {
+                    if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                    return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                });
+
+                if (explicitMatch) isVisible = true;
+
+                // Check 2: Associação dinâmica (palavra dentro de texto da pasta)
+                if (!isVisible && item.type === 'word' && allowedWords.has(cleanPunctuation(item.chinese).toLowerCase())) {
+                    isVisible = true;
+                }
+            }
+
+            if (!isVisible) return;
+
             // Keywords internas (dados legados/estáticos)
             item.keywords?.forEach(k => {
                 if (currentSavedIds.includes(k.id)) {
@@ -62,7 +106,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
         });
 
         return map;
-    }, [sessionKey]);
+    }, [sessionKey, filtersKey]); // Estável: só muda com sessão ou CONTEÚDO dos filtros
 
     // Gera questões baseadas nas frases da Leitura que contêm palavras salvas
     const questions = useMemo(() => {
@@ -71,7 +115,8 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
 
         const list: any[] = [];
 
-        // Para cada texto na aba Leitura (type !== 'word')
+        // Usa TODOS os textos da biblioteca como fonte de frases (contexto expandido)
+        // Isso permite praticar palavras de uma lista usando frases de outras lições
         currentData.forEach(item => {
             if (item.type === 'word') return; // Pula itens de palavra individual
             if (!item.tokens || item.tokens.length === 0) return; // Precisa ter tokens
@@ -100,7 +145,14 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult })
 
         // Embaralha sempre que o sessionKey mudar (Nova Sessão)
         return list.sort(() => 0.5 - Math.random());
-    }, [sessionKey, savedWordsMap]);
+    }, [sessionKey, savedWordsMap, filtersKey]);
+
+    // Recarrega sessão se os dados chegarem depois (evita tela branca inicial)
+    useEffect(() => {
+        if (questions.length === 0 && data.length > 0) {
+            setSessionKey(prev => prev + 1);
+        }
+    }, [data.length]);
 
     // Opções de resposta - distratores vêm do savedWordsMap
     const options = useMemo(() => {

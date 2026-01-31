@@ -9,11 +9,13 @@ export const useUserProfile = (userId: string | null | undefined) => {
     const [savedIds, setSavedIds] = useState<string[]>([]);
     const [stats, setStats] = useState<Stats>(defaultStats);
     const [totalScore, setTotalScore] = useState<number>(0);
+    const [activeFolderFilters, setActiveFolderFilters] = useState<string[]>([]);
 
     useEffect(() => {
         if (!userId) {
             setSavedIds([]);
             setStats(defaultStats);
+            setActiveFolderFilters([]);
             return;
         }
 
@@ -24,9 +26,10 @@ export const useUserProfile = (userId: string | null | undefined) => {
                 setSavedIds(data.savedIds || []);
                 setStats(data.stats || defaultStats);
                 setTotalScore(data.totalScore || 0);
+                setActiveFolderFilters(data.activeFolderFilters || []);
             } else {
                 // Cria o documento se não existir
-                setDoc(userRef, { savedIds: [], stats: defaultStats }, { merge: true });
+                setDoc(userRef, { savedIds: [], stats: defaultStats, activeFolderFilters: [] }, { merge: true });
             }
         });
 
@@ -45,5 +48,11 @@ export const useUserProfile = (userId: string | null | undefined) => {
         await setDoc(userRef, { stats: newStats }, { merge: true });
     };
 
-    return { savedIds, stats, totalScore, updateFavorites, updateStats };
+    const updateFolderFilters = async (newFilters: string[]) => {
+        if (!userId) return;
+        const userRef = doc(db, 'users', userId);
+        await setDoc(userRef, { activeFolderFilters: newFilters }, { merge: true });
+    };
+
+    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters };
 };
