@@ -7,8 +7,6 @@ import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
 import { renameFolder, deleteFolderWithItems, uncategorizeFolder, moveItemsToFolder, extractFolderPaths } from '../services/folderService';
 import ExportModal, { ExportConfig } from '../components/ExportModal';
-// import { jsPDF } from 'jspdf'; // Not used for text-pdf
-// import html2canvas from 'html2canvas'; // Not used for text-pdf
 
 // Estilos para PDF (invisível na tela)
 const PDF_STYLES = {
@@ -158,143 +156,112 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         return result;
     };
 
-    // Função PRINCIPAL de Exportação
+    // Função PRINCIPAL de Exportação (Mobile-Safe)
     const handleExport = async (config: ExportConfig) => {
         const { filename, type } = config;
         const selectedItems = filteredData.filter(item => selectedIds.has(item.id.toString()));
         if (selectedItems.length === 0) return;
 
+        // FECHAR modal IMEDIATAMENTE
         setShowExportModal(false);
 
         try {
-            if (type === 'txt') {
-                let content = '';
+            console.log(`[Export] Starting ${type.toUpperCase()} export...`);
 
-                // Formato LIMPO (Padrão PDF)
-                // Sem cabeçalho global, apenas conteúdo?
-                // O usuário pediu "igual ao PDF padrão simples".
-                // PDF Simple tem apenas Text + Translation.
-                // Vamos adicionar um cabeçalho mínimo ou nada?
-                // "eliminar o pdf e texto com metadados"
+            // Prepara os itens para a API
+            const exportItems = selectedItems.map(item => ({
+                text: formatTokensToText(item.tokens),
+                translation: item.translation || ''
+            }));
+            console.log('[Export] Items to export:', exportItems.length);
 
-                selectedItems.forEach((item, index) => {
-                    const formattedText = formatTokensToText(item.tokens);
-                    // Apenas texto e tradução
-                    content += `${formattedText}\n`;
-                    content += `${item.translation}\n\n`;
-                });
+            // Chama a API Python (unificada para TXT e PDF)
+            const response = await fetch('/api/export-pdf', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ items: exportItems, filename, type })
+            });
 
-                // Salvar TXT
-                await saveFile(content, filename, 'txt', 'text/plain');
+            console.log('[Export] Response status:', response.status);
 
-            } else if (type === 'pdf') {
-                // Geração de PDF com TEXTO SELECIONÁVEL (via Native Print)
-                const iframe = document.createElement('iframe');
-                iframe.style.position = 'fixed';
-                iframe.style.right = '0';
-                iframe.style.bottom = '0';
-                iframe.style.width = '0';
-                iframe.style.height = '0';
-                iframe.style.border = '0';
-                document.body.appendChild(iframe);
-
-                const doc = iframe.contentWindow?.document;
-                if (!doc) return;
-
-                let htmlContent = '';
-                selectedItems.forEach((item, i) => {
-                    const text = formatTokensToText(item.tokens);
-                    const translation = item.translation || '';
-
-                    htmlContent += `
-                        <div class="item">
-                            <div class="zh">${text}</div>
-                            <div class="tr">${translation}</div>
-                        </div>
-                   `;
-                });
-
-                doc.open();
-                doc.write(`
-                    <html>
-                    <head>
-                        <title>${filename}</title>
-                        <style>
-                            @page { size: A4; margin: 20mm; }
-                            body { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; padding: 20px; color: #000; }
-                            .header { text-align: center; border-bottom: 2px solid #333; margin-bottom: 30px; padding-bottom: 10px; }
-                            .title { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
-                            .date { font-size: 12px; color: #666; }
-                            .item { margin-bottom: 20px; page-break-inside: avoid; }
-                            .zh { font-size: 18px; line-height: 1.5; margin-bottom: 4px; font-weight: 500; }
-                            .tr { font-size: 14px; color: #444; font-style: italic; }
-                        </style>
-                    </head>
-                    <body>
-                         <div class="header">
-                            <div class="title">TEXTOS EXPORTADOS</div>
-                            <div class="date">${new Date().toLocaleDateString('pt-BR')}</div>
-                        </div>
-                        ${htmlContent}
-                    </body>
-                    </html>
-                `);
-                doc.close();
-
-                // Aguarda renderização e imprime
-                setTimeout(() => {
-                    iframe.contentWindow?.focus();
-                    iframe.contentWindow?.print();
-
-                    // Remove após impressão (delay para garantir que o diálogo abriu)
-                    setTimeout(() => {
-                        document.body.removeChild(iframe);
-                    }, 5000);
-                }, 500);
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('[Export] Error response:', errorText);
+                try {
+                    const error = JSON.parse(errorText);
+                    throw new Error(error.error || 'Erro ao exportar');
+                } catch {
+                    throw new Error(`Erro ${response.status}: ${errorText}`);
+                }
             }
+
+            // Baixa o arquivo
+            const blob = await response.blob();
+            console.log('[Export] Blob size:', blob.size, 'bytes');
+
+            await saveBlob(blob, filename, type);
+            console.log('[Export] Download triggered!');
 
             // Limpa seleção após sucesso
             setSelectedIds(new Set());
             setSelectionMode(false);
 
-        } catch (error) {
-            console.error(error);
-            alert("Erro ao exportar arquivo. Tente novamente.");
+        } catch (error: any) {
+            console.error('[Export] ERRO CAPTURADO:', error);
+            alert(`Erro ao exportar: ${error.message || error}`);
         }
     };
 
+    // Salva arquivo de TEXTO (Mobile-Safe)
     const saveFile = async (content: string, filename: string, extension: string, mimeType: string) => {
-        // @ts-ignore - File System Access API
+        // @ts-ignore - File System Access API (Desktop Chrome/Edge)
         if (window.showSaveFilePicker) {
             try {
                 // @ts-ignore
                 const handle = await window.showSaveFilePicker({
                     suggestedName: `${filename}.${extension}`,
-                    types: [{
-                        description: 'Arquivo de Texto',
-                        accept: { [mimeType]: [`.${extension}`] },
-                    }],
+                    types: [{ description: 'Arquivo', accept: { [mimeType]: [`.${extension}`] } }],
                 });
                 const writable = await handle.createWritable();
                 await writable.write(content);
                 await writable.close();
                 return;
-            } catch (err) {
-                if ((err as Error).name === 'AbortError') return; // Cancelado pelo usuário
-                // Fallback se der erro
+            } catch (err: any) {
+                if (err.name === 'AbortError') return;
             }
         }
 
-        // Fallback: Download via Blob
+        // Fallback Robusto (Mobile/Safari)
         const blob = new Blob([content], { type: `${mimeType};charset=utf-8` });
+        await saveBlob(blob, filename, extension);
+    };
+
+    // Salva BLOB (PDF ou qualquer binário) - Mobile-Safe
+    const saveBlob = async (blob: Blob, filename: string, extension: string) => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = `${filename}.${extension}`;
+
+        // TRUQUE MOBILE: Forçar abertura em nova aba para iOS
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            a.target = '_blank';
+        }
+
+        a.style.display = 'none';
         document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+
+        // setTimeout(0) limpa a pilha de execução - mais confiável em mobile
+        await new Promise<void>((resolve) => {
+            setTimeout(() => {
+                a.click();
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    resolve();
+                }, 100);
+            }, 0);
+        });
     };
 
     // Funções de seleção
