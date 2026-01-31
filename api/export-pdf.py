@@ -125,7 +125,8 @@ def generate_pdf(items: list) -> bytes:
     date_str = datetime.now().strftime('%d/%m/%Y')
     pdf.cell(0, 5, txt=f"Exportado em {date_str}", ln=True, align='C')
     
-    pdf.ln(15)
+    # Posiciona após o cabeçalho (47mm = header height)
+    pdf.set_y(60)
     
     # ════════════════════════════════════════════════════════════
     # ITENS (Layout simples)
@@ -138,19 +139,25 @@ def generate_pdf(items: list) -> bytes:
         # Verifica se precisa de nova página
         if pdf.get_y() > 250:
             pdf.add_page()
-            pdf.ln(10)
+            pdf.set_y(20)
+        
+        # IMPORTANTE: Reset X para margem esquerda antes de cada célula
+        pdf.set_x(LEFT_MARGIN)
         
         # Texto em Chinês
-        pdf.set_font(font, size=15)
+        pdf.set_font(font, size=14)
         pdf.set_text_color(17, 24, 39)  # Gray-900
-        pdf.multi_cell(CONTENT_WIDTH, 8, txt=text)
+        pdf.multi_cell(CONTENT_WIDTH, 7, txt=text)
+        
+        # Reset X novamente para a tradução
+        pdf.set_x(LEFT_MARGIN)
         
         # Tradução
         pdf.set_font(font, size=11)
         pdf.set_text_color(75, 85, 99)  # Gray-600
         pdf.multi_cell(CONTENT_WIDTH, 6, txt=translation)
         
-        pdf.ln(10)
+        pdf.ln(8)
     
     # ════════════════════════════════════════════════════════════
     # RODAPÉ
