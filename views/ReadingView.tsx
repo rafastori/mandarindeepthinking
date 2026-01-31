@@ -6,6 +6,57 @@ import { StudyItem, Keyword, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
 import { renameFolder, deleteFolderWithItems, uncategorizeFolder, moveItemsToFolder, extractFolderPaths } from '../services/folderService';
+import ExportModal, { ExportConfig } from '../components/ExportModal';
+// import { jsPDF } from 'jspdf'; // Not used for text-pdf
+// import html2canvas from 'html2canvas'; // Not used for text-pdf
+
+// Estilos para PDF (invisível na tela)
+const PDF_STYLES = {
+    container: {
+        position: 'fixed' as const,
+        top: '-9999px',
+        left: '-9999px',
+        width: '210mm', // A4
+        minHeight: '297mm',
+        backgroundColor: 'white',
+        padding: '20mm',
+        color: 'black',
+        fontFamily: 'Arial, sans-serif',
+        zIndex: -50
+    },
+    header: {
+        borderBottom: '2px solid #333',
+        marginBottom: '20px',
+        paddingBottom: '10px'
+    },
+    title: {
+        fontSize: '24px',
+        fontWeight: 'bold',
+        marginBottom: '5px'
+    },
+    date: {
+        fontSize: '14px',
+        color: '#666'
+    },
+    item: {
+        marginBottom: '15px',
+        pageBreakInside: 'avoid' as const
+    },
+    chinese: {
+        fontSize: '18px',
+        marginBottom: '5px',
+        lineHeight: 1.5
+    },
+    translation: {
+        fontSize: '14px',
+        color: '#444',
+        fontStyle: 'italic'
+    },
+    divider: {
+        borderBottom: '1px solid #eee',
+        marginTop: '15px'
+    }
+};
 
 interface ReadingViewProps {
     data: StudyItem[];
@@ -43,6 +94,11 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
     // Estado do FolderTree
     const [showFolderTree, setShowFolderTree] = useState(false);
+
+    // Estado do ExportModal
+    const [showExportModal, setShowExportModal] = useState(false);
+    // Ref para o container de geração de PDF
+    const pdfContainerRef = React.useRef<HTMLDivElement>(null);
 
     // Modal de confirmação para cards
     const [confirmModal, setConfirmModal] = useState<{
@@ -102,39 +158,143 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         return result;
     };
 
-    // Função para exportar textos selecionados como TXT
-    const exportSelectedAsText = () => {
-        if (selectedIds.size === 0) return;
-
+    // Função PRINCIPAL de Exportação
+    const handleExport = async (config: ExportConfig) => {
+        const { filename, type } = config;
         const selectedItems = filteredData.filter(item => selectedIds.has(item.id.toString()));
+        if (selectedItems.length === 0) return;
 
-        let content = '═══════════════════════════════════════\n';
-        content += '   TEXTOS EXPORTADOS - MemorizaTudo\n';
-        content += '   ' + new Date().toLocaleDateString('pt-BR') + '\n';
-        content += '═══════════════════════════════════════\n\n';
+        setShowExportModal(false);
 
-        selectedItems.forEach((item, index) => {
-            const formattedText = formatTokensToText(item.tokens);
-            content += `[${index + 1}] PASTA: ${item.folderPath || 'Sem Categoria'}\n`;
-            content += `TEXTO ORIGINAL (${item.language?.toUpperCase() || 'ZH'}):\n`;
-            content += formattedText + '\n\n';
-            content += `TRADUÇÃO:\n`;
-            content += item.translation + '\n';
-            content += '\n───────────────────────────────────────\n\n';
-        });
+        try {
+            if (type === 'txt') {
+                let content = '';
 
-        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                // Formato LIMPO (Padrão PDF)
+                // Sem cabeçalho global, apenas conteúdo?
+                // O usuário pediu "igual ao PDF padrão simples".
+                // PDF Simple tem apenas Text + Translation.
+                // Vamos adicionar um cabeçalho mínimo ou nada?
+                // "eliminar o pdf e texto com metadados"
+
+                selectedItems.forEach((item, index) => {
+                    const formattedText = formatTokensToText(item.tokens);
+                    // Apenas texto e tradução
+                    content += `${formattedText}\n`;
+                    content += `${item.translation}\n\n`;
+                });
+
+                // Salvar TXT
+                await saveFile(content, filename, 'txt', 'text/plain');
+
+            } else if (type === 'pdf') {
+                // Geração de PDF com TEXTO SELECIONÁVEL (via Native Print)
+                const iframe = document.createElement('iframe');
+                iframe.style.position = 'fixed';
+                iframe.style.right = '0';
+                iframe.style.bottom = '0';
+                iframe.style.width = '0';
+                iframe.style.height = '0';
+                iframe.style.border = '0';
+                document.body.appendChild(iframe);
+
+                const doc = iframe.contentWindow?.document;
+                if (!doc) return;
+
+                let htmlContent = '';
+                selectedItems.forEach((item, i) => {
+                    const text = formatTokensToText(item.tokens);
+                    const translation = item.translation || '';
+
+                    htmlContent += `
+                        <div class="item">
+                            <div class="zh">${text}</div>
+                            <div class="tr">${translation}</div>
+                        </div>
+                   `;
+                });
+
+                doc.open();
+                doc.write(`
+                    <html>
+                    <head>
+                        <title>${filename}</title>
+                        <style>
+                            @page { size: A4; margin: 20mm; }
+                            body { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; padding: 20px; color: #000; }
+                            .header { text-align: center; border-bottom: 2px solid #333; margin-bottom: 30px; padding-bottom: 10px; }
+                            .title { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
+                            .date { font-size: 12px; color: #666; }
+                            .item { margin-bottom: 20px; page-break-inside: avoid; }
+                            .zh { font-size: 18px; line-height: 1.5; margin-bottom: 4px; font-weight: 500; }
+                            .tr { font-size: 14px; color: #444; font-style: italic; }
+                        </style>
+                    </head>
+                    <body>
+                         <div class="header">
+                            <div class="title">TEXTOS EXPORTADOS</div>
+                            <div class="date">${new Date().toLocaleDateString('pt-BR')}</div>
+                        </div>
+                        ${htmlContent}
+                    </body>
+                    </html>
+                `);
+                doc.close();
+
+                // Aguarda renderização e imprime
+                setTimeout(() => {
+                    iframe.contentWindow?.focus();
+                    iframe.contentWindow?.print();
+
+                    // Remove após impressão (delay para garantir que o diálogo abriu)
+                    setTimeout(() => {
+                        document.body.removeChild(iframe);
+                    }, 5000);
+                }, 500);
+            }
+
+            // Limpa seleção após sucesso
+            setSelectedIds(new Set());
+            setSelectionMode(false);
+
+        } catch (error) {
+            console.error(error);
+            alert("Erro ao exportar arquivo. Tente novamente.");
+        }
+    };
+
+    const saveFile = async (content: string, filename: string, extension: string, mimeType: string) => {
+        // @ts-ignore - File System Access API
+        if (window.showSaveFilePicker) {
+            try {
+                // @ts-ignore
+                const handle = await window.showSaveFilePicker({
+                    suggestedName: `${filename}.${extension}`,
+                    types: [{
+                        description: 'Arquivo de Texto',
+                        accept: { [mimeType]: [`.${extension}`] },
+                    }],
+                });
+                const writable = await handle.createWritable();
+                await writable.write(content);
+                await writable.close();
+                return;
+            } catch (err) {
+                if ((err as Error).name === 'AbortError') return; // Cancelado pelo usuário
+                // Fallback se der erro
+            }
+        }
+
+        // Fallback: Download via Blob
+        const blob = new Blob([content], { type: `${mimeType};charset=utf-8` });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `textos-${new Date().toISOString().slice(0, 10)}.txt`;
+        a.download = `${filename}.${extension}`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
-
-        setSelectedIds(new Set());
-        setSelectionMode(false);
     };
 
     // Funções de seleção
@@ -420,7 +580,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                     Mover
                                 </button>
                                 <button
-                                    onClick={exportSelectedAsText}
+                                    onClick={() => setShowExportModal(true)}
                                     disabled={selectedIds.size === 0}
                                     className={`flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-sm transition-all ${selectedIds.size > 0
                                         ? 'bg-emerald-500 text-white shadow-md hover:bg-emerald-600'
@@ -428,7 +588,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                         }`}
                                 >
                                     <Icon name="download" size={16} />
-                                    Exportar TXT
+                                    Exportar
                                 </button>
                             </div>
                         </div>
@@ -595,6 +755,16 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     </div>
                 </div>
             )}
+
+            <ExportModal
+                isOpen={showExportModal}
+                onClose={() => setShowExportModal(false)}
+                onConfirm={handleExport}
+                count={selectedIds.size}
+            />
+
+            {/* Container Invisível para PDF */}
+            <div ref={pdfContainerRef} style={PDF_STYLES.container as any}></div>
         </div>
     );
 };

@@ -15,6 +15,15 @@ interface CardsViewProps {
 const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech();
 
+    // Refs para dados estáveis (Snapshot)
+    const dataSnapshotRef = React.useRef<{ data: StudyItem[], savedIds: string[] } | null>(null);
+    if (!dataSnapshotRef.current && data.length > 0) {
+        dataSnapshotRef.current = { data, savedIds };
+    }
+
+    // Chave estável para filtros
+    const filtersKey = React.useMemo(() => (activeFolderFilters || []).sort().join(','), [activeFolderFilters]);
+
     // Estado da Sessão
     const [deck, setDeck] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,13 +35,17 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
     const createNewDeck = useCallback(() => {
         setIsLoading(true);
 
+        const snapshot = dataSnapshotRef.current || { data, savedIds };
+        const currentData = snapshot.data;
+        const currentSavedIds = snapshot.savedIds;
+
         // Filtra dados por pasta se houver filtros ativos
         // 1. Identifica palavras permitidas (que aparecem nos textos das pastas selecionadas)
         const allowedWords = new Set<string>();
         const clean = (text: string) => text.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
 
         if (activeFolderFilters.length > 0) {
-            data.forEach(item => {
+            currentData.forEach(item => {
                 if (item.type !== 'word') {
                     // Verifica se o TEXTO está na pasta
                     const inFolder = activeFolderFilters.some(filterPath => {
@@ -49,7 +62,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
         }
 
         // 2. Filtra dados (União: Está na pasta OU é uma palavra que aparece na pasta)
-        const filteredData = activeFolderFilters.length === 0 ? data : data.filter(item => {
+        const filteredData = activeFolderFilters.length === 0 ? currentData : currentData.filter(item => {
             // Verifica pasta explícita
             const explicitMatch = activeFolderFilters.some(filterPath => {
                 if (filterPath === '__uncategorized__' && !item.folderPath) return true;
@@ -66,7 +79,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
             return false;
         });
 
-        const items = getSavedItems(filteredData, savedIds);
+        const items = getSavedItems(filteredData, currentSavedIds);
 
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
@@ -79,16 +92,21 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
         setFlipped(false);
         setIsFinished(false);
         setIsLoading(false);
-    }, [data, savedIds, activeFolderFilters]);
+    }, [filtersKey]); // Depende APENAS da chave de filtros (estável)
 
     // EFEITO DE INICIALIZAÇÃO COM TRAVA DE SEGURANÇA 🔒
     // EFEITO DE INICIALIZAÇÃO E REAÇÃO A FILTROS
     useEffect(() => {
-        // Se mudarem os filtros ou dados principais, recria o baralho
-        // A proteção deck.length === 0 é removida aqui para permitir que filtros recarreguem o deck
-        // Mas precisamos cuidar para não ficar recriando em loop infinito se createNewDeck for instável
+        // Se mudarem os filtros (filtersKey), recria o baralho
+        if (deck.length === 0 && data.length > 0) {
+            createNewDeck();
+        }
+    }, [data.length]); // Inicializa quando dados chegam
+
+    // Recria se FILTROS mudarem (usando a chave estável)
+    useEffect(() => {
         createNewDeck();
-    }, [createNewDeck]); // createNewDeck já depende de activeFolderFilters, então isso funciona
+    }, [filtersKey]);
 
     const handleRestart = () => {
         createNewDeck(); // Força a recriação manual
