@@ -75,20 +75,27 @@ export const useStudyItems = (userId: string | null | undefined) => {
     }
   };
 
-  // EXPORTAR DADOS: Gera arquivo JSON para download (v1.2.0 - inclui profile e IDs)
+  // EXPORTAR DADOS: Gera arquivo JSON para download (v1.3.0 - inclui folderPath e nome customizável)
   const exportData = (profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
     if (!userId || items.length === 0) {
       alert("Nenhum dado para exportar!");
       return;
     }
 
+    // Pergunta ao usuário o nome do arquivo
+    const defaultName = `backup-memorizatudo-${new Date().toISOString().slice(0, 10)}`;
+    const fileName = prompt('Nome do arquivo de backup:', defaultName);
+
+    // Se o usuário cancelar o prompt, não exporta
+    if (fileName === null) return;
+
     const payload = {
-      version: "1.2.0",
+      version: "1.3.0",
       exportedAt: new Date().toISOString(),
       userId: userId,
       itemCount: items.length,
       data: items.map(item => ({
-        id: item.id, // NOVO: preserva o ID original para restauração correta
+        id: item.id,
         chinese: item.chinese,
         pinyin: item.pinyin,
         translation: item.translation,
@@ -96,9 +103,11 @@ export const useStudyItems = (userId: string | null | undefined) => {
         tokens: item.tokens || [],
         keywords: item.keywords || [],
         originalSentence: item.originalSentence || null,
-        type: item.type || 'text', // NOVO: preserva o tipo
+        type: item.type || 'text',
+        folderPath: item.folderPath || null,  // NOVO: preserva estrutura de pastas
+        createdAt: item.createdAt || null,     // NOVO: preserva data de criação
       })),
-      // Novo: dados de perfil para backup completo
+      // Dados de perfil para backup completo
       profile: profileData ? {
         savedIds: profileData.savedIds || [],
         stats: profileData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {} },
@@ -111,7 +120,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
     const a = document.createElement('a');
     a.href = url;
-    a.download = `backup-memorizatudo-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `${fileName || defaultName}.json`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -172,8 +181,9 @@ export const useStudyItems = (userId: string | null | undefined) => {
             tokens: item.tokens || [],
             keywords: item.keywords || [],
             originalSentence: item.originalSentence || null,
-            type: item.type || 'text', // Preserva o tipo do item
-            createdAt: serverTimestamp()
+            type: item.type || 'text',
+            folderPath: item.folderPath || null,  // v1.3.0: restaura estrutura de pastas
+            createdAt: item.createdAt || serverTimestamp()  // Usa original se disponível
           });
         });
 
