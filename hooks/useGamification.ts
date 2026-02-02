@@ -25,6 +25,13 @@ const WEEKLY_REWARDS: InventoryItem[] = [
 
 const getTodayISO = () => new Date().toISOString().split('T')[0];
 
+export type BonusType = 'streak10' | 'streak30' | null;
+
+export interface PendingBonus {
+    type: BonusType;
+    points: number;
+}
+
 export interface UseGamificationResult {
     sessionStats: SessionStats;
     streak: number;
@@ -43,6 +50,8 @@ export interface UseGamificationResult {
     getUpdatedStats: () => Partial<Stats>;
     newAchievements: Achievement[];
     newInventoryItem: InventoryItem | null;
+    pendingBonus: PendingBonus | null;
+    clearPendingBonus: () => void;
 }
 
 export function useGamification(
@@ -74,6 +83,7 @@ export function useGamification(
     const [newAchievements, setNewAchievements] = useState<Achievement[]>([]);
     const [newInventoryItem, setNewInventoryItem] = useState<InventoryItem | null>(null);
     const [sessionInventory, setSessionInventory] = useState<InventoryItem[]>([]);
+    const [pendingBonus, setPendingBonus] = useState<PendingBonus | null>(null);
 
     const activeTabRef = useRef<string>('leitura');
     const lastTickRef = useRef<number>(Date.now());
@@ -201,14 +211,25 @@ export function useGamification(
 
         // Base points
         let pointsGained = 10;
+        let bonusType: BonusType = null;
+        let bonusPoints = 0;
 
         // Bonus: +100 for every 30 consecutive (checked first since 30 is also divisible by 10)
         if (consecutive > 0 && consecutive % 30 === 0) {
-            pointsGained += 100;
+            bonusPoints = 100;
+            pointsGained += bonusPoints;
+            bonusType = 'streak30';
         }
         // Bonus: +30 for every 10 consecutive (but not if already got the 30 bonus)
         else if (consecutive > 0 && consecutive % 10 === 0) {
-            pointsGained += 30;
+            bonusPoints = 30;
+            pointsGained += bonusPoints;
+            bonusType = 'streak10';
+        }
+
+        // Trigger celebration if bonus earned
+        if (bonusType) {
+            setPendingBonus({ type: bonusType, points: bonusPoints });
         }
 
         setSessionStats(prev => ({
@@ -307,6 +328,10 @@ export function useGamification(
         };
     }, [sessionStats, persistedStats, sessionPoints, sessionInventory]);
 
+    const clearPendingBonus = useCallback(() => {
+        setPendingBonus(null);
+    }, []);
+
     const currentAvatar = inventory.find(i => i.type === 'avatar') || null;
 
     return {
@@ -327,5 +352,7 @@ export function useGamification(
         getUpdatedStats,
         newAchievements,
         newInventoryItem,
+        pendingBonus,
+        clearPendingBonus,
     };
 }

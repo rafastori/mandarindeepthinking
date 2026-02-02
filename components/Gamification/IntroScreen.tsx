@@ -128,7 +128,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-3 gap-2">
                     <div className="bg-white/5 rounded-xl p-2 text-center">
                         <Flame className={`w-5 h-5 mx-auto mb-1 ${streak > 0 ? 'text-orange-400' : 'text-slate-500'}`} />
                         <p className="text-lg font-bold text-white">{streak}</p>
@@ -139,11 +139,8 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                         <p className="text-lg font-bold text-white">{formatTime(totalTime)}</p>
                         <p className="text-[10px] text-slate-400">Tempo</p>
                     </div>
-                    <div className="bg-white/5 rounded-xl p-2 text-center">
-                        <Zap className="w-5 h-5 mx-auto mb-1 text-green-400" />
-                        <p className="text-lg font-bold text-white">{totalCorrect}</p>
-                        <p className="text-[10px] text-slate-400">Acertos</p>
-                    </div>
+
+                    {/* Removed Correct Answers Card */}
                     <div className="bg-white/5 rounded-xl p-2 text-center">
                         <Star className="w-5 h-5 mx-auto mb-1 text-amber-400 fill-current" />
                         <p className="text-lg font-bold text-white">{points}</p>
@@ -179,15 +176,15 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                                         </div>
                                     )}
                                     <div className={`flex items-center gap-3 rounded-xl p-2 transition-all ${item.isCurrentUser
-                                            ? 'bg-indigo-500/30 border border-indigo-400/50 ring-2 ring-indigo-400/30'
-                                            : item.rank === 1
-                                                ? 'bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30'
-                                                : 'bg-white/5'
+                                        ? 'bg-indigo-500/30 border border-indigo-400/50 ring-2 ring-indigo-400/30'
+                                        : item.rank === 1
+                                            ? 'bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30'
+                                            : 'bg-white/5'
                                         }`}>
                                         <span className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold ${item.rank === 1 ? 'bg-yellow-500 text-yellow-900' :
-                                                item.rank === 2 ? 'bg-slate-300 text-slate-700' :
-                                                    item.rank === 3 ? 'bg-amber-600 text-amber-100' :
-                                                        'bg-slate-600 text-slate-300'
+                                            item.rank === 2 ? 'bg-slate-300 text-slate-700' :
+                                                item.rank === 3 ? 'bg-amber-600 text-amber-100' :
+                                                    'bg-slate-600 text-slate-300'
                                             }`}>
                                             {item.rank}
                                         </span>
@@ -198,7 +195,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                                                 {item.isCurrentUser && <span className="text-xs ml-1 text-indigo-300">(você)</span>}
                                             </p>
                                             <p className="text-xs text-slate-400">
-                                                {item.entry.correct} acertos • {formatTime(item.entry.totalTime)}
+                                                {formatTime(item.entry.totalTime)}
                                             </p>
                                         </div>
                                         <div className="text-right">

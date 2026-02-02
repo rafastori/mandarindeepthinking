@@ -20,6 +20,7 @@ import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
 import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
+import BonusCelebration from './components/Gamification/BonusCelebration';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
@@ -482,6 +483,13 @@ const App: React.FC = () => {
                         setShowSessionSummary(false);
                         setFinalSessionStats(null);
                     }}
+                />
+            )}
+            {gamification.pendingBonus && (
+                <BonusCelebration
+                    bonusType={gamification.pendingBonus.type}
+                    bonusPoints={gamification.pendingBonus.points}
+                    onClose={gamification.clearPendingBonus}
                 />
             )}
         </div>
