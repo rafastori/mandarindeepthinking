@@ -59,7 +59,17 @@ export function useGamification(
         pointsEarned: 0,
     });
 
-    // These are derived from persistedStats + session changes
+    // Baseline stats (snapshot at start of session) to avoid double counting
+    const baselineStatsRef = useRef<Stats>(persistedStats);
+
+    // On mount (or when user changes), update baseline if it's the first load
+    useEffect(() => {
+        if (persistedStats.lastLoginDate !== baselineStatsRef.current.lastLoginDate) {
+            baselineStatsRef.current = persistedStats;
+        }
+    }, [persistedStats.lastLoginDate]);
+
+    // These are derived from baseline + session changes
     const [sessionPoints, setSessionPoints] = useState(0);
     const [newAchievements, setNewAchievements] = useState<Achievement[]>([]);
     const [newInventoryItem, setNewInventoryItem] = useState<InventoryItem | null>(null);
@@ -71,11 +81,14 @@ export function useGamification(
     const isSessionActiveRef = useRef<boolean>(false);
     const consecutiveCorrectRef = useRef<number>(0); // Track consecutive correct answers for bonuses
 
-    // Read values directly from persistedStats (Firebase source of truth)
-    const streak = persistedStats.streak || 0;
-    const points = (persistedStats.points || 0) + sessionPoints;
-    const totalCorrect = persistedStats.correct || 0;
-    const totalTime = persistedStats.totalTime || 0;
+    // Read values from BASELINE + Session Delta
+    // We do NOT use persistedStats for accumulating fields because persistedStats 
+    // updates to include our partial session data, leading to double counting.
+    const streak = persistedStats.streak || 0; // Streak is handled via specific logic, so we can use persisted
+    const points = (baselineStatsRef.current.points || 0) + sessionPoints;
+    const totalCorrect = (baselineStatsRef.current.correct || 0) + sessionStats.correctAnswers;
+    const totalTime = (baselineStatsRef.current.totalTime || 0) + Object.values(sessionStats.tabTime).reduce((a, b) => a + b, 0); // Recalculate total time from baseline + current session
+
     const achievements = persistedStats.achievements || [];
     const inventory = [...(persistedStats.inventory || []), ...sessionInventory];
 
@@ -217,6 +230,9 @@ export function useGamification(
     }, []);
 
     const startSession = useCallback(() => {
+        // Update baseline to current persisted stats when starting a new session
+        baselineStatsRef.current = persistedStats;
+
         setSessionStats({
             startTime: Date.now(),
             wordsReviewed: 0,
@@ -229,9 +245,10 @@ export function useGamification(
         setNewAchievements([]);
         setNewInventoryItem(null);
         setSessionInventory([]);
+        consecutiveCorrectRef.current = 0;
         lastTickRef.current = Date.now();
         isSessionActiveRef.current = true;
-    }, []);
+    }, [persistedStats]);
 
     const endSession = useCallback((): SessionStats => {
         isSessionActiveRef.current = false;
@@ -244,19 +261,19 @@ export function useGamification(
         // Calculate total session time
         const totalSessionTime = Object.values(sessionStats.tabTime).reduce((a, b) => a + b, 0);
 
-        // Build updated stats to persist
+        // Build updated stats to persist using BASELINE + DELTA
         const updatedStats: Stats = {
-            ...persistedStats,
-            correct: (persistedStats.correct || 0) + sessionStats.correctAnswers,
-            wrong: (persistedStats.wrong || 0) + sessionStats.wrongAnswers,
+            ...persistedStats, // Keep other fields
+            correct: (baselineStatsRef.current.correct || 0) + sessionStats.correctAnswers,
+            wrong: (baselineStatsRef.current.wrong || 0) + sessionStats.wrongAnswers,
             history: persistedStats.history || [],
             wordCounts: persistedStats.wordCounts || {},
-            totalTime: (persistedStats.totalTime || 0) + totalSessionTime,
+            totalTime: (baselineStatsRef.current.totalTime || 0) + totalSessionTime,
             tabTime: Object.entries(sessionStats.tabTime).reduce((acc, [tab, time]) => {
-                acc[tab] = (persistedStats.tabTime?.[tab] || 0) + time;
+                acc[tab] = (baselineStatsRef.current.tabTime?.[tab] || 0) + time;
                 return acc;
             }, {} as Record<string, number>),
-            points: (persistedStats.points || 0) + sessionPoints,
+            points: (baselineStatsRef.current.points || 0) + sessionPoints,
             streak: persistedStats.streak || 0,
             lastLoginDate: persistedStats.lastLoginDate,
             inventory: [...(persistedStats.inventory || []), ...sessionInventory],
@@ -278,11 +295,11 @@ export function useGamification(
     const getUpdatedStats = useCallback((): Partial<Stats> => {
         const totalSessionTime = Object.values(sessionStats.tabTime).reduce((a, b) => a + b, 0);
         return {
-            points: (persistedStats.points || 0) + sessionPoints,
+            points: (baselineStatsRef.current.points || 0) + sessionPoints,
             streak: persistedStats.streak || 0,
-            totalTime: (persistedStats.totalTime || 0) + totalSessionTime,
+            totalTime: (baselineStatsRef.current.totalTime || 0) + totalSessionTime,
             tabTime: Object.entries(sessionStats.tabTime).reduce((acc, [tab, time]) => {
-                acc[tab] = (persistedStats.tabTime?.[tab] || 0) + time;
+                acc[tab] = (baselineStatsRef.current.tabTime?.[tab] || 0) + time;
                 return acc;
             }, {} as Record<string, number>),
             inventory: [...(persistedStats.inventory || []), ...sessionInventory],

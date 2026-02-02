@@ -66,19 +66,25 @@ const App: React.FC = () => {
 
     const gamification = useGamification(activeStats, handleGamificationStatsUpdate);
     const { entries: leaderboard, userRank, loading: leaderboardLoading, updateUserScore } = useLeaderboard(user?.uid);
+    const lastLeaderboardUpdateRef = React.useRef<number>(0);
 
-    // Update leaderboard score when stats change
+    // Update leaderboard score when stats change (Debounced 30s)
     useEffect(() => {
         if (user && activeStats.points !== undefined) {
-            updateUserScore(
-                user.uid,
-                user.displayName || 'Anônimo',
-                gamification.currentAvatar?.icon,
-                activeStats.points || 0,
-                activeStats.totalTime || 0,
-                activeStats.streak || 0,
-                activeStats.correct || 0
-            );
+            const now = Date.now();
+            // Only update if 30s passed to save reads/writes
+            if (now - lastLeaderboardUpdateRef.current > 30000) {
+                updateUserScore(
+                    user.uid,
+                    user.displayName || 'Anônimo',
+                    gamification.currentAvatar?.icon,
+                    activeStats.points || 0,
+                    activeStats.totalTime || 0,
+                    activeStats.streak || 0,
+                    activeStats.correct || 0
+                );
+                lastLeaderboardUpdateRef.current = now;
+            }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, activeStats.points, activeStats.totalTime, activeStats.streak, activeStats.correct]);
@@ -220,8 +226,8 @@ const App: React.FC = () => {
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
 
             const newStats: Stats = {
-                correct: prev.correct + (isCorrect ? 1 : 0),
-                wrong: prev.wrong + (!isCorrect ? 1 : 0),
+                correct: (prev.correct || 0) + (isCorrect ? 1 : 0),
+                wrong: (prev.wrong || 0) + (!isCorrect ? 1 : 0),
                 history: !isCorrect
                     ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
