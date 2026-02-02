@@ -3,6 +3,7 @@ import Icon from './Icon';
 import { UserMenuDropdown } from './UserMenuDropdown';
 import { User } from 'firebase/auth';
 import { RecognitionEngine } from '../hooks/useSpeechRecognition';
+import { Flame, Star } from 'lucide-react';
 
 interface HeaderProps {
     user: User | null;
@@ -21,6 +22,9 @@ interface HeaderProps {
     // Configurações de Voz
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
+    // Gamification
+    streak?: number;
+    points?: number;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -36,7 +40,9 @@ const Header: React.FC<HeaderProps> = ({
     onExportData,
     onImportData,
     engine,
-    onEngineChange
+    onEngineChange,
+    streak = 0,
+    points = 0
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -46,6 +52,17 @@ const Header: React.FC<HeaderProps> = ({
             </div>
 
             <div className="flex items-center gap-3">
+                {/* Gamification Stats */}
+                {streak > 0 && (
+                    <div className="flex items-center gap-1 bg-orange-500/20 px-2 py-1 rounded-full" title={`Ofensiva de ${streak} dias`}>
+                        <Flame className="w-4 h-4 text-orange-400" />
+                        <span className="text-sm font-bold text-orange-300">{streak}</span>
+                    </div>
+                )}
+                <div className="flex items-center gap-1 bg-amber-500/20 px-2 py-1 rounded-full" title={`${points} pontos`}>
+                    <Star className="w-4 h-4 text-amber-400 fill-current" />
+                    <span className="text-sm font-bold text-amber-300">{points.toLocaleString()}</span>
+                </div>
 
                 <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">
                     <Icon name="bar-chart-2" size={18} />

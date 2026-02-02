@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { auth, googleProvider } from './services/firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import Header from './components/Header';
@@ -18,13 +18,17 @@ import LabView from './views/LabView';
 import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
+import IntroScreen from './components/Gamification/IntroScreen';
+import SessionSummary from './components/Gamification/SessionSummary';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
 import { usePuterSpeech } from './hooks/usePuterSpeech';
 import { useSpeechRecognition } from './hooks/useSpeechRecognition';
+import { useGamification } from './hooks/useGamification';
+import { useLeaderboard } from './hooks/useLeaderboard';
 import { studyData as staticData } from './constants';
-import { StudyItem, Stats, Keyword } from './types';
+import { StudyItem, Stats, Keyword, SessionStats } from './types';
 
 const PUTER_SUGGESTION_KEY = 'puter_suggestion_shown';
 
@@ -38,6 +42,9 @@ const App: React.FC = () => {
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest' | 'domino'>('selector');
     const [isGameFullscreen, setIsGameFullscreen] = useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [showSessionSummary, setShowSessionSummary] = useState(false);
+    const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
@@ -49,6 +56,48 @@ const App: React.FC = () => {
 
     const activeSavedIds = user ? cloudSavedIds : localSavedIds;
     const activeStats = user ? cloudStats : localStats;
+
+    // Gamification hook
+    const handleGamificationStatsUpdate = useCallback((stats: Stats) => {
+        if (user) {
+            updateCloudStats(stats);
+        }
+    }, [user, updateCloudStats]);
+
+    const gamification = useGamification(activeStats, handleGamificationStatsUpdate);
+    const { entries: leaderboard, userRank, loading: leaderboardLoading, updateUserScore } = useLeaderboard(user?.uid);
+
+    // Update leaderboard score when stats change
+    useEffect(() => {
+        if (user && activeStats.points !== undefined) {
+            updateUserScore(
+                user.uid,
+                user.displayName || 'Anônimo',
+                gamification.currentAvatar?.icon,
+                activeStats.points || 0,
+                activeStats.totalTime || 0,
+                activeStats.streak || 0,
+                activeStats.correct || 0
+            );
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [user, activeStats.points, activeStats.totalTime, activeStats.streak, activeStats.correct]);
+
+    // Check and update streak on app load
+    useEffect(() => {
+        if (user && !authLoading && !itemsLoading) {
+            const updatedStats = gamification.checkAndUpdateStreak(activeStats);
+            if (updatedStats !== activeStats) {
+                updateCloudStats(updatedStats);
+            }
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [user, authLoading, itemsLoading]);
+
+    // Track tab changes for time tracking
+    useEffect(() => {
+        gamification.setActiveTab(tab);
+    }, [tab, gamification]);
 
     // Auth state listener
     useEffect(() => {
@@ -158,6 +207,13 @@ const App: React.FC = () => {
     };
 
     const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general') => {
+        // Track in gamification
+        if (isCorrect) {
+            gamification.recordCorrect();
+        } else {
+            gamification.recordWrong();
+        }
+
         if (user) {
             const prev = activeStats;
             const currentCounts = prev.wordCounts || {};
@@ -169,7 +225,9 @@ const App: React.FC = () => {
                 history: !isCorrect
                     ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
-                wordCounts: { ...currentCounts, [word]: newCount }
+                wordCounts: { ...currentCounts, [word]: newCount },
+                // Preserve gamification fields
+                ...gamification.getUpdatedStats()
             };
             updateCloudStats(newStats);
         } else {
@@ -335,13 +393,45 @@ const App: React.FC = () => {
 
     const isFullscreenGame = tab === 'jogo' && (selectedGame === 'lingoarena' || (selectedGame === 'domino' && isGameFullscreen));
 
+    // Handle ending session (shows summary)
+    const handleEndSession = () => {
+        const stats = gamification.endSession();
+        setFinalSessionStats(stats);
+        setShowSessionSummary(true);
+    };
+
+    // Handle starting session (dismisses intro)
+    const handleStartSession = () => {
+        gamification.startSession();
+        setShowIntro(false);
+    };
+
+    // Show IntroScreen on app load (for logged-in users)
+    if (showIntro && user && !authLoading && !itemsLoading) {
+        return (
+            <IntroScreen
+                stats={activeStats}
+                userName={user.displayName || 'Estudante'}
+                userAvatar={gamification.currentAvatar?.icon}
+                onStart={handleStartSession}
+                leaderboard={leaderboard}
+                userRank={userRank}
+                currentUserId={user.uid}
+                leaderboardLoading={leaderboardLoading}
+            />
+        );
+    }
+
     return (
         <div className="h-[100dvh] flex flex-col bg-slate-50 w-full overflow-hidden relative">
             {!isFullscreenGame && (
                 <Header
                     user={user}
                     onLogin={handleLogin}
-                    onLogout={handleLogout}
+                    onLogout={() => {
+                        handleEndSession();
+                        handleLogout();
+                    }}
                     onOpenStats={() => setShowStats(true)}
                     onResetAccount={handleResetAccount}
                     isPuterConnected={isPuterConnected}
@@ -352,6 +442,8 @@ const App: React.FC = () => {
                     onImportData={handleImportData}
                     engine={engine}
                     onEngineChange={setEngine}
+                    streak={gamification.streak}
+                    points={gamification.points}
                 />
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
@@ -373,6 +465,17 @@ const App: React.FC = () => {
                 <PuterSuggestionModal
                     onConnect={handleConnectPuter}
                     onDismiss={handleDismissPuterSuggestion}
+                />
+            )}
+            {showSessionSummary && finalSessionStats && (
+                <SessionSummary
+                    sessionStats={finalSessionStats}
+                    newAchievements={gamification.newAchievements}
+                    newInventoryItem={gamification.newInventoryItem}
+                    onClose={() => {
+                        setShowSessionSummary(false);
+                        setFinalSessionStats(null);
+                    }}
                 />
             )}
         </div>

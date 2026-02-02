@@ -47,6 +47,43 @@ export interface Stats {
     wrong: number;
     history: StatsHistory[];
     wordCounts: Record<string, number>;
+    // Gamification fields
+    totalTime?: number; // Total time in seconds
+    tabTime?: Record<string, number>; // Time per tab in seconds
+    streak?: number; // Consecutive days
+    lastLoginDate?: string; // ISO date string YYYY-MM-DD
+    points?: number; // Total XP/points
+    inventory?: InventoryItem[];
+    achievements?: Achievement[];
+}
+
+export interface InventoryItem {
+    id: string;
+    name: string;
+    icon: string; // Emoji or lucide icon name
+    unlockedAt: string; // ISO date
+    type: 'avatar' | 'badge' | 'powerup';
+}
+
+export interface Achievement {
+    id: string;
+    name: string;
+    description: string;
+    icon: string;
+    unlockedAt?: string; // ISO date, undefined if locked
+    progress?: number; // 0-100
+    target?: number; // e.g., 7 for "7-day streak"
+}
+
+// Session stats for the summary screen
+export interface SessionStats {
+    startTime: number; // timestamp
+    endTime?: number;
+    wordsReviewed: number;
+    correctAnswers: number;
+    wrongAnswers: number;
+    tabTime: Record<string, number>;
+    pointsEarned: number;
 }
 
 export interface Player {
