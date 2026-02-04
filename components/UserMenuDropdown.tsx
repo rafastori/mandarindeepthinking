@@ -13,6 +13,8 @@ interface UserMenuDropdownProps {
     onResetAccount: () => void;
     onExportData: () => void;
     onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
+    onExportTextApp?: () => void;
+    onImportTextFile?: (file: File) => Promise<{ success: boolean; count: number; error?: string }>;
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
 }
@@ -31,6 +33,8 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     onResetAccount,
     onExportData,
     onImportData,
+    onExportTextApp,
+    onImportTextFile,
     engine,
     onEngineChange
 }) => {
@@ -38,8 +42,10 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     const [showImportModal, setShowImportModal] = useState(false);
     const [importFile, setImportFile] = useState<File | null>(null);
     const [importing, setImporting] = useState(false);
+    const [importingText, setImportingText] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
+    const textFileInputRef = useRef<HTMLInputElement>(null);
 
     // Fecha o menu ao clicar fora
     useEffect(() => {
@@ -70,6 +76,22 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
         }
         // Reset input para permitir selecionar o mesmo arquivo novamente
         if (fileInputRef.current) fileInputRef.current.value = '';
+    };
+
+    const handleTextFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file && onImportTextFile) {
+            setIsOpen(false);
+            setImportingText(true);
+            const result = await onImportTextFile(file);
+            setImportingText(false);
+            if (result.success) {
+                alert(`✅ Importação concluída! ${result.count} itens importados.`);
+            } else {
+                alert(`❌ Erro: ${result.error}`);
+            }
+        }
+        if (textFileInputRef.current) textFileInputRef.current.value = '';
     };
 
     const handleImport = async (mode: 'merge' | 'replace') => {

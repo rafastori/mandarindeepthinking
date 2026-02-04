@@ -240,7 +240,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
 
             {/* Sidebar Drawer */}
             <div className={`
-                fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 transform transition-transform duration-300 flex flex-col
+                fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 transform transition-transform duration-300 flex flex-col overflow-hidden
                 ${isOpen ? 'translate-x-0' : '-translate-x-full'}
                 md:relative md:translate-x-0 md:shadow-none md:border-r md:border-slate-200
             `}>
@@ -275,7 +275,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                 </div>
 
                 {/* Folder List - Scrollable */}
-                <div className="flex-1 overflow-y-auto p-2">
+                <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain p-2 pb-20">
                     {/* Sem Categoria */}
                     {uncategorizedCount > 0 && (
                         <div
