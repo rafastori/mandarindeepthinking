@@ -250,6 +250,45 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
 
                             <div className="h-px bg-slate-100 my-2" />
 
+                            {/* Exportar Texto/Pasta App */}
+                            {onExportTextApp && (
+                                <button
+                                    onClick={() => handleAction(onExportTextApp)}
+                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-teal-50 text-slate-700 hover:text-teal-700 transition-colors"
+                                >
+                                    <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
+                                        <Icon name="file-text" size={16} className="text-teal-600" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Exportar Texto/Pasta App</p>
+                                        <p className="text-xs text-slate-500">Selecionados (sem stats)</p>
+                                    </div>
+                                </button>
+                            )}
+
+                            {/* Importar Texto/Pasta */}
+                            {onImportTextFile && (
+                                <button
+                                    onClick={() => textFileInputRef.current?.click()}
+                                    disabled={importingText}
+                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-cyan-50 text-slate-700 hover:text-cyan-700 transition-colors disabled:opacity-50"
+                                >
+                                    <div className="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center">
+                                        {importingText ? (
+                                            <div className="w-4 h-4 border-2 border-cyan-200 border-t-cyan-600 rounded-full animate-spin" />
+                                        ) : (
+                                            <Icon name="file-plus" size={16} className="text-cyan-600" />
+                                        )}
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Importar Texto/Pasta</p>
+                                        <p className="text-xs text-slate-500">JSON (sem stats)</p>
+                                    </div>
+                                </button>
+                            )}
+
+                            <div className="h-px bg-slate-100 my-2" />
+
                             {/* Limpar Dados */}
                             <button
                                 onClick={() => handleAction(onResetAccount)}
@@ -283,12 +322,20 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                     </div>
                 )}
 
-                {/* Input file oculto */}
+                {/* Input file oculto para backup completo */}
                 <input
                     ref={fileInputRef}
                     type="file"
                     accept=".json"
                     onChange={handleFileSelect}
+                    className="hidden"
+                />
+                {/* Input file oculto para importar texto/pasta */}
+                <input
+                    ref={textFileInputRef}
+                    type="file"
+                    accept=".json"
+                    onChange={handleTextFileSelect}
                     className="hidden"
                 />
             </div>

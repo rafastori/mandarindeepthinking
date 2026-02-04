@@ -19,6 +19,8 @@ interface HeaderProps {
     // Props para Export/Import
     onExportData: () => void;
     onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
+    onExportTextApp?: () => void;
+    onImportTextFile?: (file: File) => Promise<{ success: boolean; count: number; error?: string }>;
     // Configurações de Voz
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
@@ -39,6 +41,8 @@ const Header: React.FC<HeaderProps> = ({
     onDisconnectPuter,
     onExportData,
     onImportData,
+    onExportTextApp,
+    onImportTextFile,
     engine,
     onEngineChange,
     streak = 0,
@@ -81,6 +85,8 @@ const Header: React.FC<HeaderProps> = ({
                         onDisconnectPuter={onDisconnectPuter}
                         onExportData={onExportData}
                         onImportData={onImportData}
+                        onExportTextApp={onExportTextApp}
+                        onImportTextFile={onImportTextFile}
                         engine={engine}
                         onEngineChange={onEngineChange}
                     />

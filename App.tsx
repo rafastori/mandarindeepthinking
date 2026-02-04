@@ -319,6 +319,104 @@ const App: React.FC = () => {
         return result;
     };
 
+    // Export only selected items (text/folder) without stats
+    const handleExportTextApp = () => {
+        // Filter items based on active folder filters (if any)
+        let selectedItems = libraryData;
+
+        if (activeFolderFilters && activeFolderFilters.length > 0) {
+            selectedItems = libraryData.filter(item => {
+                if (!item.folderPath) {
+                    return activeFolderFilters.includes('__uncategorized__');
+                }
+                return activeFolderFilters.some(filter =>
+                    item.folderPath === filter || item.folderPath?.startsWith(filter + '/')
+                );
+            });
+        }
+
+        if (selectedItems.length === 0) {
+            alert('❌ Nenhum item para exportar.');
+            return;
+        }
+
+        // Export only essential fields (no performance stats)
+        const cleanItems = selectedItems.map(item => ({
+            id: item.id,
+            chinese: item.chinese,
+            pinyin: item.pinyin,
+            translation: item.translation,
+            tokens: item.tokens,
+            keywords: item.keywords,
+            language: item.language,
+            type: item.type,
+            originalSentence: item.originalSentence,
+            folderPath: item.folderPath,
+        }));
+
+        const blob = new Blob([JSON.stringify({ items: cleanItems }, null, 2)], { type: 'application/json' });
+
+        // Prompt user for filename
+        const defaultName = `memorizatudo-texto-${new Date().toISOString().split('T')[0]}`;
+        const fileName = prompt('Nome do arquivo:', defaultName);
+        if (!fileName) return; // User cancelled
+
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${fileName}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        alert(`✅ Exportados ${cleanItems.length} itens com sucesso!`);
+    };
+
+    // Import text/folder JSON (items only, no stats)
+    const handleImportTextFile = async (file: File): Promise<{ success: boolean; count: number; error?: string }> => {
+        try {
+            const text = await file.text();
+            const data = JSON.parse(text);
+
+            if (!data.items || !Array.isArray(data.items)) {
+                return { success: false, count: 0, error: 'Arquivo inválido. Deve conter um array "items".' };
+            }
+
+            // Add items to library using existing addItem function
+            let importedCount = 0;
+            for (const item of data.items) {
+                // Skip if invalid
+                if (!item.chinese || !item.translation) continue;
+
+                // Create clean item for import (Firebase doesn't accept undefined)
+                const newItem: StudyItem = {
+                    id: item.id || `imported-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
+                    chinese: item.chinese,
+                    pinyin: item.pinyin || '',
+                    translation: item.translation,
+                    tokens: item.tokens || [],
+                    keywords: item.keywords || [],
+                    language: item.language || 'zh',
+                    type: item.type || 'text',
+                    createdAt: new Date(),
+                };
+
+                // Only add optional fields if they have values
+                if (item.originalSentence) newItem.originalSentence = item.originalSentence;
+                if (item.folderPath) newItem.folderPath = item.folderPath;
+
+                await addItem(newItem);
+                importedCount++;
+            }
+
+            return { success: true, count: importedCount };
+        } catch (error: any) {
+            console.error('Error importing text file:', error);
+            return { success: false, count: 0, error: error.message || 'Erro ao processar arquivo JSON.' };
+        }
+    };
+
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
 
     const renderView = () => {
@@ -447,6 +545,8 @@ const App: React.FC = () => {
                     onDisconnectPuter={disconnectPuter}
                     onExportData={handleExportData}
                     onImportData={handleImportData}
+                    onExportTextApp={handleExportTextApp}
+                    onImportTextFile={handleImportTextFile}
                     engine={engine}
                     onEngineChange={setEngine}
                     streak={gamification.streak}
