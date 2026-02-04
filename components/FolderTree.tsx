@@ -240,12 +240,12 @@ const FolderTree: React.FC<FolderTreeProps> = ({
 
             {/* Sidebar Drawer */}
             <div className={`
-                fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 transform transition-transform duration-300
+                fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 transform transition-transform duration-300 flex flex-col
                 ${isOpen ? 'translate-x-0' : '-translate-x-full'}
                 md:relative md:translate-x-0 md:shadow-none md:border-r md:border-slate-200
             `}>
                 {/* Header */}
-                <div className="flex items-center justify-between p-4 border-b border-slate-100">
+                <div className="flex items-center justify-between p-4 border-b border-slate-100 flex-shrink-0">
                     <h3 className="font-bold text-slate-800 flex items-center gap-2">
                         <Icon name="folder-tree" size={18} className="text-brand-600" />
                         Pastas
@@ -256,7 +256,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center gap-2 p-3 border-b border-slate-100 bg-slate-50">
+                <div className="flex items-center gap-2 p-3 border-b border-slate-100 bg-slate-50 flex-shrink-0">
                     <button
                         onClick={selectAll}
                         className="text-xs font-medium text-brand-600 hover:text-brand-700 px-2 py-1 hover:bg-brand-50 rounded"
@@ -274,8 +274,8 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                     </span>
                 </div>
 
-                {/* Folder List */}
-                <div className="overflow-y-auto flex-1 p-2" style={{ maxHeight: 'calc(100vh - 140px)' }}>
+                {/* Folder List - Scrollable */}
+                <div className="flex-1 overflow-y-auto p-2">
                     {/* Sem Categoria */}
                     {uncategorizedCount > 0 && (
                         <div

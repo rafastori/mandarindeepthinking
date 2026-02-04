@@ -1,7 +1,8 @@
-import React from 'react';
-import { Flame, Trophy, Star, Play, Clock, Zap, ChevronRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Flame, Trophy, Star, Play, Clock, ChevronRight, ExternalLink } from 'lucide-react';
 import { Stats } from '../../types';
 import { LeaderboardEntry } from '../../hooks/useLeaderboard';
+import LeaderboardModal from './LeaderboardModal';
 
 interface IntroScreenProps {
     stats: Stats;
@@ -28,6 +29,9 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
     const points = stats.points || 0;
     const totalTime = stats.totalTime || 0;
     const totalCorrect = stats.correct || 0;
+
+    const [isLeaderboardSelected, setIsLeaderboardSelected] = useState(false);
+    const [showLeaderboardModal, setShowLeaderboardModal] = useState(false);
 
     const formatTime = (seconds: number) => {
         if (seconds < 60) return `${seconds}s`;
@@ -149,13 +153,22 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                 </div>
             </div>
 
-            {/* Leaderboard */}
-            <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-4 mb-4 w-full max-w-md border border-white/20">
+            {/* Leaderboard - Clickable Container */}
+            <div
+                className={`relative backdrop-blur-lg rounded-3xl p-4 mb-4 w-full max-w-md cursor-pointer transition-all duration-300 ${isLeaderboardSelected
+                        ? 'bg-gradient-to-br from-amber-500/30 via-yellow-500/20 to-amber-500/30 border-2 border-amber-400 ring-4 ring-amber-500/30 scale-[1.02]'
+                        : 'bg-white/10 border border-white/20 hover:bg-white/15'
+                    }`}
+                onClick={() => setIsLeaderboardSelected(!isLeaderboardSelected)}
+            >
                 <div className="flex items-center gap-2 mb-3">
-                    <Trophy className="w-5 h-5 text-yellow-400" />
+                    <Trophy className={`w-5 h-5 ${isLeaderboardSelected ? 'text-yellow-300' : 'text-yellow-400'}`} />
                     <h3 className="text-white font-semibold">Ranking Global</h3>
                     {leaderboardLoading && (
                         <span className="text-xs text-slate-400 ml-auto">Carregando...</span>
+                    )}
+                    {!leaderboardLoading && !isLeaderboardSelected && (
+                        <span className="text-xs text-slate-400 ml-auto">Toque para selecionar</span>
                     )}
                 </div>
 
@@ -208,6 +221,20 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                         })}
                     </div>
                 )}
+
+                {/* Open Full Ranking Button - Shows when selected */}
+                {isLeaderboardSelected && (
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setShowLeaderboardModal(true);
+                        }}
+                        className="mt-3 w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-amber-900 font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-amber-500/30"
+                    >
+                        <ExternalLink className="w-4 h-4" />
+                        Abrir Ranking Completo
+                    </button>
+                )}
             </div>
 
             {/* Streak Motivation */}
@@ -230,6 +257,19 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
                 Começar a Estudar
                 <ChevronRight className="w-4 h-4" />
             </button>
+
+            {/* Leaderboard Modal */}
+            {showLeaderboardModal && (
+                <LeaderboardModal
+                    leaderboard={leaderboard}
+                    currentUserId={currentUserId}
+                    userRank={userRank}
+                    onClose={() => {
+                        setShowLeaderboardModal(false);
+                        setIsLeaderboardSelected(false);
+                    }}
+                />
+            )}
         </div>
     );
 };

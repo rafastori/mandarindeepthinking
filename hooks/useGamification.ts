@@ -23,7 +23,12 @@ const WEEKLY_REWARDS: InventoryItem[] = [
     { id: 'badge_diamond', name: 'Diamante', icon: '💎', unlockedAt: '', type: 'badge' },
 ];
 
-const getTodayISO = () => new Date().toISOString().split('T')[0];
+const getLocalISODate = (date: Date = new Date()) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+};
 
 export type BonusType = 'streak10' | 'streak30' | null;
 
@@ -130,7 +135,7 @@ export function useGamification(
 
     const checkAchievements = useCallback((stats: Stats): Achievement[] => {
         const unlocked: Achievement[] = [];
-        const today = getTodayISO();
+        const today = getLocalISODate();
         const existingAchievements = stats.achievements || [];
 
         ALL_ACHIEVEMENTS.forEach(ach => {
@@ -168,7 +173,7 @@ export function useGamification(
     }, []);
 
     const checkAndUpdateStreak = useCallback((stats: Stats): Stats => {
-        const today = getTodayISO();
+        const today = getLocalISODate();
         const lastLogin = stats.lastLoginDate;
 
         if (!lastLogin) {
@@ -179,11 +184,11 @@ export function useGamification(
             return stats;
         }
 
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        const yesterdayISO = yesterday.toISOString().split('T')[0];
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+        const yesterday = getLocalISODate(yesterdayDate);
 
-        if (lastLogin === yesterdayISO) {
+        if (lastLogin === yesterday) {
             const newStreak = (stats.streak || 0) + 1;
 
             // Check for weekly reward (every 7 days)
@@ -204,6 +209,20 @@ export function useGamification(
         // Streak broken
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
+
+    // Check streak on mount/update
+    useEffect(() => {
+        // We check against persistedStats (baseline)
+        const updated = checkAndUpdateStreak(persistedStats);
+
+        // If streak or login date changed, trigger update
+        if (updated.streak !== persistedStats.streak || updated.lastLoginDate !== persistedStats.lastLoginDate) {
+            // We need to update the baseline immediately to reflect this change
+            // to avoid "flicker" or double updates, although onStatsUpdate will eventually trigger re-render
+            baselineStatsRef.current = updated;
+            onStatsUpdate(updated);
+        }
+    }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate, persistedStats]);
 
     const recordCorrect = useCallback(() => {
         consecutiveCorrectRef.current += 1;
