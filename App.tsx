@@ -384,8 +384,11 @@ const App: React.FC = () => {
             }
 
             // Add items to library using existing addItem function
+            // Reverse order since display shows newest first
             let importedCount = 0;
-            for (const item of data.items) {
+            const itemsToImport = [...data.items].reverse();
+
+            for (const item of itemsToImport) {
                 // Skip if invalid
                 if (!item.chinese || !item.translation) continue;
 
@@ -399,7 +402,6 @@ const App: React.FC = () => {
                     keywords: item.keywords || [],
                     language: item.language || 'zh',
                     type: item.type || 'text',
-                    createdAt: new Date(),
                 };
 
                 // Only add optional fields if they have values
