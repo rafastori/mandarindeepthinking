@@ -15,6 +15,9 @@ interface CardsViewProps {
 const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
     const { speak } = usePuterSpeech();
 
+    // Estado para inverter lados (Definição <-> Palavra)
+    const [invertSide, setInvertSide] = useState(false);
+
     // Refs para dados estáveis (Snapshot)
     const dataSnapshotRef = React.useRef<{ data: StudyItem[], savedIds: string[] } | null>(null);
     if (!dataSnapshotRef.current && data.length > 0) {
@@ -173,6 +176,16 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
         <div className="p-6 h-full flex flex-col items-center justify-center max-w-md mx-auto pb-24">
             <div className="w-full mb-4 flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-widest">
                 <span>Card {currentIndex + 1} de {deck.length}</span>
+
+                <button
+                    onClick={() => setInvertSide(!invertSide)}
+                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg transition-colors ${invertSide ? 'bg-brand-100 text-brand-600' : 'hover:bg-slate-100'}`}
+                    title="Inverter lados (Definição primeiro)"
+                >
+                    <Icon name="arrow-left-right" size={14} />
+                    <span>{invertSide ? 'Invertido' : 'Normal'}</span>
+                </button>
+
                 <span>{Math.round(((currentIndex + 1) / deck.length) * 100)}%</span>
             </div>
 
@@ -182,24 +195,26 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                     {/* FRENTE */}
                     <div className="absolute inset-0 bg-white rounded-2xl flex flex-col items-center justify-center backface-hidden border-b-4 border-slate-100 p-4">
                         <span className="text-xs text-slate-400 uppercase tracking-widest mb-4">
-                            {isGerman ? 'Palavra' : 'Hanzi'}
+                            {invertSide ? 'Definição' : (isGerman ? 'Palavra' : 'Hanzi')}
                         </span>
 
-                        <h2 className={`${getFontSize(card.word)} ${isGerman ? 'font-sans' : 'font-chinese'} font-bold text-slate-800 text-center break-words w-full`}>
-                            {card.word}
+                        <h2 className={`${invertSide ? 'text-2xl font-medium' : getFontSize(card.word) + ' ' + (isGerman ? 'font-sans' : 'font-chinese') + ' font-bold'} text-slate-800 text-center break-words w-full`}>
+                            {invertSide ? card.meaning : card.word}
                         </h2>
 
-                        {/* Botão de áudio */}
-                        <button
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
-                            }}
-                            className="mt-4 p-3 rounded-full bg-brand-50 text-brand-600 hover:bg-brand-100 transition-colors"
-                            title="Ouvir pronúncia"
-                        >
-                            <Icon name="volume-2" size={24} />
-                        </button>
+                        {/* Botão de áudio (Só mostra na frente se NÃO estiver invertido, ou se quiser dar a dica do áudio) */}
+                        {!invertSide && (
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                }}
+                                className="mt-4 p-3 rounded-full bg-brand-50 text-brand-600 hover:bg-brand-100 transition-colors"
+                                title="Ouvir pronúncia"
+                            >
+                                <Icon name="volume-2" size={24} />
+                            </button>
+                        )}
 
                         <span className="mt-4 text-xs text-brand-500 font-bold">Toque para virar</span>
                     </div>
@@ -222,6 +237,11 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                             </button>
                         </div>
                         <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
+
+                        {/* Se estiver invertido, a definição já foi vista, mas mantemos para reforço. Se quiser ocultar: 
+                           {!invertSide && <p className="text-lg mb-6 opacity-90">{card.meaning}</p>} 
+                           Mas o Anki geralmente mostra tudo no verso. Vou manter.
+                        */}
                         <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
 
                         {card.context && card.context !== card.word && (

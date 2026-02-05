@@ -20,6 +20,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
     const [showResult, setShowResult] = useState(false);
     const [isFinished, setIsFinished] = useState(false);
     const [sessionKey, setSessionKey] = useState(0); // Usado para forçar o re-embaralhamento
+    const [invertPractice, setInvertPractice] = useState(false); // Estado para inverter (PT -> ZH)
 
     // Ref para armazenar snapshot estável dos dados (evita re-render causar re-shuffle)
     const dataSnapshotRef = useRef<{ data: StudyItem[]; savedIds: string[] } | null>(null);
@@ -265,43 +266,87 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             </div>
 
             <div className="mb-4 flex-shrink-0">
-                <span className="text-[10px] font-bold text-brand-600 uppercase tracking-wider mb-1 block flex justify-between">
-                    <span>Complete a frase</span>
+                <span className="text-[10px] font-bold text-brand-600 uppercase tracking-wider mb-1 block flex justify-between items-center">
+                    <span>{invertPractice ? 'Traduza a palavra' : 'Complete a frase'}</span>
+
+                    <button
+                        onClick={() => setInvertPractice(!invertPractice)}
+                        className={`flex items-center gap-1.5 px-2 py-0.5 rounded-lg border transition-colors ${invertPractice ? 'bg-brand-100 text-brand-600 border-brand-200' : 'bg-white border-slate-200 text-slate-400 hover:bg-slate-50'}`}
+                        title="Inverter (Português -> Estrangeiro)"
+                    >
+                        <Icon name="arrow-left-right" size={12} />
+                        <span>{invertPractice ? 'PT ➔ ' + (isGerman ? 'DE' : 'ZH') : 'Normal'}</span>
+                    </button>
+
                     <span>{currentIndex + 1} / {questions.length}</span>
                 </span>
 
-                {/* Frase com buraco (Cloze) */}
-                <div className={`bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-base text-slate-800 leading-relaxed ${isGerman ? 'font-sans' : 'font-chinese'}`}>
-                    {parts[0]}
-                    {showResult ? (
-                        // Palavra clicável para TTS (só após responder)
+                {/* ÁREA DE PERGUNTA (CONDICIONAL) */}
+                {invertPractice && !showResult ? (
+                    // MODO INVERTIDO (Apenas exibe PT)
+                    <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center justify-center min-h-[160px] animate-in fade-in slide-in-from-bottom-2">
+                        <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Traduza</p>
+
+                        <h3 className="text-xl font-bold text-slate-800 text-center mb-2 leading-snug">
+                            {currentQ.translation}
+                        </h3>
+
+                        <div className="h-px w-16 bg-brand-200 my-3"></div>
+
+                        <p className="text-brand-600 font-medium text-center">
+                            {currentQ.wordMeaning}
+                        </p>
+
+                        <div className="mt-4 p-2 bg-slate-50 rounded-lg text-xs text-slate-400 italic">
+                            Selecione a palavra em {isGerman ? 'Alemão' : 'Chinês'} abaixo
+                        </div>
+                    </div>
+                ) : (
+                    // MODO NORMAL (ou Resultado do Invertido)
+                    <div className={`bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-base text-slate-800 leading-relaxed ${isGerman ? 'font-sans' : 'font-chinese'}`}>
+                        {parts[0]}
+                        {showResult ? (
+                            // Palavra clicável para TTS (só após responder)
+                            <button
+                                onClick={() => speak(currentQ.word, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                                className={`inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold transition-colors cursor-pointer hover:opacity-80 active:scale-95 ${selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400'}`}
+                                title="Clique para ouvir a palavra"
+                            >
+                                {currentQ.word}
+                            </button>
+                        ) : (
+                            <span className="inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold text-brand-600 border-brand-500">
+                                ____
+                            </span>
+                        )}
+                        {parts.length > 1 ? parts[1] : ""}
+
+                        {/* Se for resultado do invertido, destaca que a frase foi revelada */}
+                        {invertPractice && showResult && (
+                            <div className="mt-2 text-xs text-green-600 font-bold block text-center animate-in fade-in">
+                                Frase Original Revelada!
+                            </div>
+                        )}
+                    </div>
+                )}
+
+                {/* Botões de Apoio (Áudio/Tradução) - Só mostra no modo Normal ou quando Invertido JÁ RESPONDEU */}
+                {(!invertPractice || showResult) && (
+                    <>
+                        {/* Botão de áudio para frase completa */}
                         <button
-                            onClick={() => speak(currentQ.word, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
-                            className={`inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold transition-colors cursor-pointer hover:opacity-80 active:scale-95 ${selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400'}`}
-                            title="Clique para ouvir a palavra"
+                            onClick={() => speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                            className="mt-2 flex items-center justify-center gap-1.5 text-xs text-slate-500 hover:text-brand-600 transition-colors mx-auto"
                         >
-                            {currentQ.word}
+                            <Icon name="volume-2" size={14} />
+                            <span>Ouvir frase</span>
                         </button>
-                    ) : (
-                        <span className="inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold text-brand-600 border-brand-500">
-                            ____
-                        </span>
-                    )}
-                    {parts.length > 1 ? parts[1] : ""}
-                </div>
 
-                {/* Botão de áudio para frase completa */}
-                <button
-                    onClick={() => speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
-                    className="mt-2 flex items-center justify-center gap-1.5 text-xs text-slate-500 hover:text-brand-600 transition-colors mx-auto"
-                >
-                    <Icon name="volume-2" size={14} />
-                    <span>Ouvir frase</span>
-                </button>
-
-                {/* Tradução da palavra + Tradução da frase */}
-                <p className="text-center text-brand-600 text-xs font-medium mt-2">{currentQ.wordMeaning}</p>
-                <p className="text-center text-slate-400 text-xs mt-1 italic">{currentQ.translation}</p>
+                        {/* Tradução da palavra + Tradução da frase */}
+                        <p className="text-center text-brand-600 text-xs font-medium mt-2">{currentQ.wordMeaning}</p>
+                        <p className="text-center text-slate-400 text-xs mt-1 italic">{currentQ.translation}</p>
+                    </>
+                )}
             </div>
 
             <div className="grid gap-2 flex-1">
