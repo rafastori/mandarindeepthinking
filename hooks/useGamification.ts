@@ -210,8 +210,11 @@ export function useGamification(
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
 
-    // Check streak on mount/update
+    // Check streak on mount/update - only when user logs in or stats change
     useEffect(() => {
+        // Only check streak if we have valid stats
+        if (!persistedStats) return;
+
         // We check against persistedStats (baseline)
         const updated = checkAndUpdateStreak(persistedStats);
 
@@ -222,7 +225,8 @@ export function useGamification(
             baselineStatsRef.current = updated;
             onStatsUpdate(updated);
         }
-    }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate, persistedStats]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [checkAndUpdateStreak, persistedStats]);
 
     const recordCorrect = useCallback(() => {
         consecutiveCorrectRef.current += 1;
@@ -271,7 +275,23 @@ export function useGamification(
 
     const startSession = useCallback(() => {
         // Update baseline to current persisted stats when starting a new session
-        baselineStatsRef.current = persistedStats;
+        // PROTECTION: If we have a calculated streak/login that is newer than persisted (waiting for cloud sync), keep it!
+        const currentBaseline = baselineStatsRef.current;
+        const currentLogin = currentBaseline.lastLoginDate;
+        const persistedLogin = persistedStats.lastLoginDate;
+
+        // If local has a login date, and (persisted has none OR local is newer), keep local
+        if (currentLogin && (!persistedLogin || currentLogin > persistedLogin)) {
+            // Local is newer (or persisted is empty), preserve streak and date
+            // We must merge persistedStats OTHER fields but keep our streak/date
+            baselineStatsRef.current = {
+                ...persistedStats,
+                streak: currentBaseline.streak,
+                lastLoginDate: currentLogin
+            };
+        } else {
+            baselineStatsRef.current = persistedStats;
+        }
 
         setSessionStats({
             startTime: Date.now(),
@@ -314,8 +334,8 @@ export function useGamification(
                 return acc;
             }, {} as Record<string, number>),
             points: (baselineStatsRef.current.points || 0) + sessionPoints,
-            streak: persistedStats.streak || 0,
-            lastLoginDate: persistedStats.lastLoginDate,
+            streak: baselineStatsRef.current.streak || 0,
+            lastLoginDate: baselineStatsRef.current.lastLoginDate,
             inventory: [...(persistedStats.inventory || []), ...sessionInventory],
             achievements: persistedStats.achievements || [],
         };
@@ -336,7 +356,10 @@ export function useGamification(
         const totalSessionTime = Object.values(sessionStats.tabTime).reduce((a, b) => a + b, 0);
         return {
             points: (baselineStatsRef.current.points || 0) + sessionPoints,
-            streak: persistedStats.streak || 0,
+            // CRITICAL FIX: Use baselineStatsRef for streak/login to ensure we catch recent updates 
+            // that might not have synced to persistedStats yet (avoids race condition)
+            streak: baselineStatsRef.current.streak || 0,
+            lastLoginDate: baselineStatsRef.current.lastLoginDate,
             totalTime: (baselineStatsRef.current.totalTime || 0) + totalSessionTime,
             tabTime: Object.entries(sessionStats.tabTime).reduce((acc, [tab, time]) => {
                 acc[tab] = (baselineStatsRef.current.tabTime?.[tab] || 0) + time;
