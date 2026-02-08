@@ -30,6 +30,35 @@ const getLocalISODate = (date: Date = new Date()) => {
     return `${year}-${month}-${day}`;
 };
 
+// Helper to normalize date strings (handle DD/MM/YYYY, YYYY/MM/DD, etc)
+const normalizeDate = (dateStr: string): string => {
+    if (!dateStr) return isNaN(new Date().getTime()) ? '' : getLocalISODate(); // Fallback
+
+    // Check for DD/MM/YYYY (common manual entry error in Firebase)
+    // Regex matches 1-2 digits, slash, 1-2 digits, slash, 4 digits
+    if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateStr)) {
+        const parts = dateStr.split('/');
+        // Assuming DD/MM/YYYY
+        const day = parts[0].padStart(2, '0');
+        const month = parts[1].padStart(2, '0');
+        const year = parts[2];
+        return `${year}-${month}-${day}`;
+    }
+
+    // Check for YYYY/MM/DD
+    if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(dateStr)) {
+        return dateStr.replace(/\//g, '-');
+    }
+
+    // Try standard parsing
+    const date = new Date(dateStr);
+    if (!isNaN(date.getTime())) {
+        return getLocalISODate(date);
+    }
+
+    return dateStr; // Return original if parsing fails (will likely fail logic checks but avoids crash)
+};
+
 export type BonusType = 'streak10' | 'streak30' | null;
 
 export interface PendingBonus {
@@ -175,21 +204,35 @@ export function useGamification(
     const checkAndUpdateStreak = useCallback((stats: Stats): Stats => {
         const today = getLocalISODate();
         const lastLogin = stats.lastLoginDate;
+        const currentStreak = stats.streak || 0;
 
+        // If no last login date, start new streak
         if (!lastLogin) {
             return { ...stats, streak: 1, lastLoginDate: today };
         }
 
+        // If last login was today, keep current streak
         if (lastLogin === today) {
             return stats;
         }
 
-        const yesterdayDate = new Date();
-        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-        const yesterday = getLocalISODate(yesterdayDate);
+        // Calculate days since last login
+        // Use normalizeDate to ensure consistent YYYY-MM-DD format for parsing
+        // This fixes bugs where DD/MM/YYYY (manual firebase entry) is parsed as MM/DD/YYYY by new Date()
+        const normalizedLastLogin = normalizeDate(lastLogin);
 
-        if (lastLogin === yesterday) {
-            const newStreak = (stats.streak || 0) + 1;
+        const lastLoginDateObj = new Date(normalizedLastLogin);
+        // Fix for timezone offset issues: use setHours(0,0,0,0) to compare pure dates
+        // But since we use YYYY-MM-DD strings, new Date("YYYY-MM-DD") is usually UTC. 
+        // Let's stick to simple string → date conversion which works if both are YYYY-MM-DD
+
+        const todayDateObj = new Date(today);
+        const diffTime = Math.abs(todayDateObj.getTime() - lastLoginDateObj.getTime());
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        // If last login was yesterday, increment streak
+        if (diffDays === 1) {
+            const newStreak = currentStreak + 1;
 
             // Check for weekly reward (every 7 days)
             if (newStreak > 0 && newStreak % 7 === 0) {
@@ -206,7 +249,22 @@ export function useGamification(
             return { ...stats, streak: newStreak, lastLoginDate: today };
         }
 
-        // Streak broken
+        // If last login was more than 1 day ago, streak is broken
+        // BUT: if streak was manually set in Firebase (streak > 1), 
+        // we need to check if the streak is still valid
+        if (diffDays > 1) {
+            // If streak was manually set to a value > 1, 
+            // it means the user wants to keep that streak
+            // Only reset if the streak is 1 (new streak) or if the gap is too large
+            if (currentStreak > 1 && diffDays <= 2) {
+                // Small gap, keep the streak but don't increment
+                return { ...stats, streak: currentStreak, lastLoginDate: today };
+            }
+            // Streak broken - reset to 1
+            return { ...stats, streak: 1, lastLoginDate: today };
+        }
+
+        // Fallback - should not reach here
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
 
