@@ -48,7 +48,7 @@ const App: React.FC = () => {
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, loading: statsLoading } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
@@ -92,14 +92,14 @@ const App: React.FC = () => {
 
     // Check and update streak on app load
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading) {
+        if (user && !authLoading && !itemsLoading && !statsLoading) {
             const updatedStats = gamification.checkAndUpdateStreak(activeStats);
             if (updatedStats !== activeStats) {
                 updateCloudStats(updatedStats);
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [user, authLoading, itemsLoading]);
+    }, [user, authLoading, itemsLoading, statsLoading]);
 
     // Track tab changes for time tracking
     useEffect(() => {
@@ -514,7 +514,7 @@ const App: React.FC = () => {
     };
 
     // Show IntroScreen on app load (for logged-in users)
-    if (showIntro && user && !authLoading && !itemsLoading) {
+    if (showIntro && user && !authLoading && !itemsLoading && !statsLoading) {
         return (
             <IntroScreen
                 stats={activeStats}
@@ -557,7 +557,7 @@ const App: React.FC = () => {
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
-                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
+                    {(itemsLoading || statsLoading) && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}

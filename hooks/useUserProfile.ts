@@ -10,14 +10,18 @@ export const useUserProfile = (userId: string | null | undefined) => {
     const [stats, setStats] = useState<Stats>(defaultStats);
     const [totalScore, setTotalScore] = useState<number>(0);
     const [activeFolderFilters, setActiveFolderFilters] = useState<string[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (!userId) {
             setSavedIds([]);
             setStats(defaultStats);
             setActiveFolderFilters([]);
+            setLoading(false);
             return;
         }
+
+        setLoading(true); // Reset loading when userId changes
 
         const userRef = doc(db, 'users', userId);
         const unsubscribe = onSnapshot(userRef, (docSnap) => {
@@ -28,9 +32,11 @@ export const useUserProfile = (userId: string | null | undefined) => {
                 setTotalScore(data.totalScore || 0);
                 setActiveFolderFilters(data.activeFolderFilters || []);
             } else {
-                // Cria o documento se não existir
+                // Cria o documento se não existir - mas não sobrescreve loading até persistir?
+                // Na verdade, onSnapshot dispara logo, se não existir, cria e a gente assume defaultStats
                 setDoc(userRef, { savedIds: [], stats: defaultStats, activeFolderFilters: [] }, { merge: true });
             }
+            setLoading(false); // Data loaded (or default set)
         });
 
         return () => unsubscribe();
@@ -54,5 +60,5 @@ export const useUserProfile = (userId: string | null | undefined) => {
         await setDoc(userRef, { activeFolderFilters: newFilters }, { merge: true });
     };
 
-    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters };
+    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters, loading };
 };
