@@ -27,6 +27,8 @@ export const useUserProfile = (userId: string | null | undefined) => {
         const unsubscribe = onSnapshot(userRef, (docSnap) => {
             if (docSnap.exists()) {
                 const data = docSnap.data();
+                console.log('[PROFILE DEBUG] Firestore Data:', data);
+                console.log('[PROFILE DEBUG] data.stats:', data.stats);
                 setSavedIds(data.savedIds || []);
                 setStats(data.stats || defaultStats);
                 setTotalScore(data.totalScore || 0);

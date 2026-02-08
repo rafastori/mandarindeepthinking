@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Stats, SessionStats, InventoryItem, Achievement } from '../types';
+import { normalizeDate, getLocalISODate, getDaysDifference } from '../utils/dateUtils';
 
 // Define all available achievements
 const ALL_ACHIEVEMENTS: Omit<Achievement, 'unlockedAt' | 'progress'>[] = [
@@ -23,41 +24,7 @@ const WEEKLY_REWARDS: InventoryItem[] = [
     { id: 'badge_diamond', name: 'Diamante', icon: '💎', unlockedAt: '', type: 'badge' },
 ];
 
-const getLocalISODate = (date: Date = new Date()) => {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-};
-
-// Helper to normalize date strings (handle DD/MM/YYYY, YYYY/MM/DD, etc)
-const normalizeDate = (dateStr: string): string => {
-    if (!dateStr) return isNaN(new Date().getTime()) ? '' : getLocalISODate(); // Fallback
-
-    // Check for DD/MM/YYYY (common manual entry error in Firebase)
-    // Regex matches 1-2 digits, slash, 1-2 digits, slash, 4 digits
-    if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateStr)) {
-        const parts = dateStr.split('/');
-        // Assuming DD/MM/YYYY
-        const day = parts[0].padStart(2, '0');
-        const month = parts[1].padStart(2, '0');
-        const year = parts[2];
-        return `${year}-${month}-${day}`;
-    }
-
-    // Check for YYYY/MM/DD
-    if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(dateStr)) {
-        return dateStr.replace(/\//g, '-');
-    }
-
-    // Try standard parsing
-    const date = new Date(dateStr);
-    if (!isNaN(date.getTime())) {
-        return getLocalISODate(date);
-    }
-
-    return dateStr; // Return original if parsing fails (will likely fail logic checks but avoids crash)
-};
+// Date helpers imported from utils/dateUtils
 
 export type BonusType = 'streak10' | 'streak30' | null;
 
@@ -203,38 +170,39 @@ export function useGamification(
 
     const checkAndUpdateStreak = useCallback((stats: Stats): Stats => {
         const today = getLocalISODate();
-        const lastLogin = stats.lastLoginDate;
+        const lastLoginRaw = stats.lastLoginDate;
         const currentStreak = stats.streak || 0;
 
-        // If no last login date, start new streak
+        // CRITICAL: Normalize the lastLogin date FIRST
+        const lastLogin = normalizeDate(lastLoginRaw);
+
+        // Debug logs
+        console.log('[STREAK CALC] today:', today);
+        console.log('[STREAK CALC] lastLogin (normalized):', lastLogin);
+        console.log('[STREAK CALC] currentStreak:', currentStreak);
+
+        // 1. New User or No Login Data
         if (!lastLogin) {
+            console.log('[STREAK CALC] No lastLogin -> Start streak 1');
             return { ...stats, streak: 1, lastLoginDate: today };
         }
 
-        // If last login was today, keep current streak
+        // 2. Already logged in today
         if (lastLogin === today) {
+            console.log('[STREAK CALC] Login is today -> Keep streak:', currentStreak);
             return stats;
         }
 
-        // Calculate days since last login
-        // Use normalizeDate to ensure consistent YYYY-MM-DD format for parsing
-        // This fixes bugs where DD/MM/YYYY (manual firebase entry) is parsed as MM/DD/YYYY by new Date()
-        const normalizedLastLogin = normalizeDate(lastLogin);
+        // 3. Calculate difference
+        const diffDays = getDaysDifference(lastLogin, today);
+        console.log('[STREAK CALC] diffDays:', diffDays);
 
-        const lastLoginDateObj = new Date(normalizedLastLogin);
-        // Fix for timezone offset issues: use setHours(0,0,0,0) to compare pure dates
-        // But since we use YYYY-MM-DD strings, new Date("YYYY-MM-DD") is usually UTC. 
-        // Let's stick to simple string → date conversion which works if both are YYYY-MM-DD
-
-        const todayDateObj = new Date(today);
-        const diffTime = Math.abs(todayDateObj.getTime() - lastLoginDateObj.getTime());
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-        // If last login was yesterday, increment streak
+        // 4. Consecutive Day (Yesterday)
         if (diffDays === 1) {
             const newStreak = currentStreak + 1;
+            console.log('[STREAK CALC] Consecutive day -> Increment to:', newStreak);
 
-            // Check for weekly reward (every 7 days)
+            // Check for weekly reward (logic remains same)
             if (newStreak > 0 && newStreak % 7 === 0) {
                 const rewardIndex = Math.floor(newStreak / 7) - 1;
                 const reward = WEEKLY_REWARDS[rewardIndex % WEEKLY_REWARDS.length];
@@ -245,46 +213,26 @@ export function useGamification(
                     setNewInventoryItem(newItem);
                 }
             }
-
             return { ...stats, streak: newStreak, lastLoginDate: today };
         }
 
-        // If last login was more than 1 day ago, streak is broken
-        // BUT: if streak was manually set in Firebase (streak > 1), 
-        // we need to check if the streak is still valid
+        // 5. Broken Streak (Gap > 1 day)
+        // PROTECT MANUAL EDITS: If DB has a streak > 1, allow a small gap (2 days) to rescue it
+        // ignoring 1-day streaks (new users) to avoid noise
         if (diffDays > 1) {
-            // If streak was manually set to a value > 1, 
-            // it means the user wants to keep that streak
-            // Only reset if the streak is 1 (new streak) or if the gap is too large
             if (currentStreak > 1 && diffDays <= 2) {
-                // Small gap, keep the streak but don't increment
-                return { ...stats, streak: currentStreak, lastLoginDate: today };
+                console.log('[STREAK CALC] Rescue: Small gap, maintain streak:', currentStreak);
+                return { ...stats, streak: currentStreak, lastLoginDate: today }; // Update date, keep streak
             }
-            // Streak broken - reset to 1
+            console.log('[STREAK CALC] Gap too large -> Reset to 1');
             return { ...stats, streak: 1, lastLoginDate: today };
         }
 
-        // Fallback - should not reach here
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
 
-    // Check streak on mount/update - only when user logs in or stats change
-    useEffect(() => {
-        // Only check streak if we have valid stats
-        if (!persistedStats) return;
-
-        // We check against persistedStats (baseline)
-        const updated = checkAndUpdateStreak(persistedStats);
-
-        // If streak or login date changed, trigger update
-        if (updated.streak !== persistedStats.streak || updated.lastLoginDate !== persistedStats.lastLoginDate) {
-            // We need to update the baseline immediately to reflect this change
-            // to avoid "flicker" or double updates, although onStatsUpdate will eventually trigger re-render
-            baselineStatsRef.current = updated;
-            onStatsUpdate(updated);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [checkAndUpdateStreak, persistedStats]);
+    // STREAK CHECK REMOVED: Managed by App.tsx to ensure single execution and robust loading gates.
+    // Previously, this effect caused race conditions by running on defaultStats before Firebase loaded.
 
     const recordCorrect = useCallback(() => {
         consecutiveCorrectRef.current += 1;
@@ -333,23 +281,39 @@ export function useGamification(
 
     const startSession = useCallback(() => {
         // Update baseline to current persisted stats when starting a new session
-        // PROTECTION: If we have a calculated streak/login that is newer than persisted (waiting for cloud sync), keep it!
         const currentBaseline = baselineStatsRef.current;
-        const currentLogin = currentBaseline.lastLoginDate;
-        const persistedLogin = persistedStats.lastLoginDate;
+        const persisted = persistedStats;
 
-        // If local has a login date, and (persisted has none OR local is newer), keep local
-        if (currentLogin && (!persistedLogin || currentLogin > persistedLogin)) {
-            // Local is newer (or persisted is empty), preserve streak and date
-            // We must merge persistedStats OTHER fields but keep our streak/date
-            baselineStatsRef.current = {
-                ...persistedStats,
-                streak: currentBaseline.streak,
-                lastLoginDate: currentLogin
-            };
+        // SINGLE TRUTH: We trust persistedStats logic UNLESS it's clearly stale/empty vs local
+        // But for streak, we always want the HIGHEST value to prevent overwrites
+
+        let newBaseline = { ...persisted };
+
+        const persistedStreak = persisted.streak || 0;
+        const localStreak = currentBaseline.streak || 0;
+
+        // Validation: If persisted streak is higher or equal, it wins.
+        if (persistedStreak >= localStreak) {
+            newBaseline.streak = persistedStreak;
+            newBaseline.lastLoginDate = persisted.lastLoginDate;
         } else {
-            baselineStatsRef.current = persistedStats;
+            // Local is higher. Why?
+            // Maybe we just incremented it locally and it hasn't synced back yet?
+            // Trust local ONLY if the date is also newer or same
+            const persistedDate = normalizeDate(persisted.lastLoginDate);
+            const localDate = normalizeDate(currentBaseline.lastLoginDate);
+
+            if (localDate >= persistedDate) {
+                console.log('[SESSION] Trusting local streak (newer/higher):', localStreak);
+                newBaseline.streak = localStreak;
+                newBaseline.lastLoginDate = currentBaseline.lastLoginDate;
+            } else {
+                // Local streak is higher but date is older? Weird. Trust persisted to be safe.
+                newBaseline.streak = persistedStreak;
+            }
         }
+
+        baselineStatsRef.current = newBaseline;
 
         setSessionStats({
             startTime: Date.now(),

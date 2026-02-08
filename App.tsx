@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { auth, googleProvider } from './services/firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import Header from './components/Header';
@@ -90,16 +90,41 @@ const App: React.FC = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, activeStats.points, activeStats.totalTime, activeStats.streak, activeStats.correct]);
 
+    // Flag to ensure streak is checked exactly once per session/load
+    const hasCheckedStreak = useRef(false);
+
+    // Reset flag when user changes (e.g. logout/login)
+    useEffect(() => {
+        hasCheckedStreak.current = false;
+    }, [user]);
+
     // Check and update streak on app load
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading && !statsLoading) {
-            const updatedStats = gamification.checkAndUpdateStreak(activeStats);
-            if (updatedStats !== activeStats) {
-                updateCloudStats(updatedStats);
+        if (user && !authLoading && !itemsLoading && !statsLoading && !hasCheckedStreak.current) {
+            // SAFETY CHECK: If streak is 0, we might still be waiting for the real value from Firebase.
+            // Unless it's a brand new user (who has no stats)
+
+            const hasData = activeStats.streak > 0 || activeStats.lastLoginDate || Object.keys(activeStats.wordCounts || {}).length > 0;
+
+            if (hasData) {
+                const updatedStats = gamification.checkAndUpdateStreak(activeStats);
+
+                // Only update if something actually changed to avoid loop
+                // Note: checkAndUpdateStreak might return same object now, but let's be safe
+                if (updatedStats.streak !== activeStats.streak || updatedStats.lastLoginDate !== activeStats.lastLoginDate) {
+                    console.log('[APP DEBUG] Updating streak from', activeStats.streak, 'to', updatedStats.streak);
+                    updateCloudStats(updatedStats);
+                } else {
+                    console.log('[APP DEBUG] Streak check passed, no changes.');
+                }
+                // Mark as checked to prevent future re-runs
+                hasCheckedStreak.current = true;
+            } else {
+                console.log('[APP DEBUG] Skipping streak check - stats seem empty/default');
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [user, authLoading, itemsLoading, statsLoading]);
+    }, [user, authLoading, itemsLoading, statsLoading, activeStats]);
 
     // Track tab changes for time tracking
     useEffect(() => {
