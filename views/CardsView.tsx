@@ -4,15 +4,18 @@ import Icon from '../components/Icon';
 import { StudyItem } from '../types';
 import { getSavedItems, CardItem } from '../utils/cardUtils';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { Star } from 'lucide-react';
 
 interface CardsViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
     activeFolderFilters?: string[];
+    studyMoreIds?: string[];
+    onToggleStudyMore?: (wordId: string) => void;
 }
 
-const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
+const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
     const { speak } = usePuterSpeech();
 
     // Estado para inverter lados (Definição <-> Palavra)
@@ -86,7 +89,12 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
 
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
-            setDeck(shuffled);
+            // Boost: duplicate study-more items for 2x frequency
+            const withBoost = shuffled.flatMap(card =>
+                studyMoreIds.includes(card.sourceId) ? [card, { ...card, id: card.id + '-boost' }] : [card]
+            );
+            const reShuffle = withBoost.sort(() => 0.5 - Math.random());
+            setDeck(reShuffle);
         } else {
             setDeck([]);
         }
@@ -238,16 +246,30 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                         </div>
                         <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
 
-                        {/* Se estiver invertido, a definição já foi vista, mas mantemos para reforço. Se quiser ocultar: 
-                           {!invertSide && <p className="text-lg mb-6 opacity-90">{card.meaning}</p>} 
-                           Mas o Anki geralmente mostra tudo no verso. Vou manter.
-                        */}
                         <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
 
                         {card.context && card.context !== card.word && (
                             <div className={`bg-white/10 p-3 rounded text-sm italic ${isGerman ? 'font-sans' : 'font-chinese'}`}>
                                 {card.context}
                             </div>
+                        )}
+
+                        {/* Study More toggle */}
+                        {onToggleStudyMore && (
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    onToggleStudyMore(card.sourceId);
+                                }}
+                                className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(card.sourceId)
+                                        ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
+                                        : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
+                                    }`}
+                                title={studyMoreIds.includes(card.sourceId) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
+                            >
+                                <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(card.sourceId) ? 'fill-current' : ''}`} />
+                                {studyMoreIds.includes(card.sourceId) ? 'Estudar Mais ✓' : 'Estudar Mais'}
+                            </button>
                         )}
                     </div>
                 </div>

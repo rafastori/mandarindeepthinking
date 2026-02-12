@@ -3,15 +3,18 @@ import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, Keyword } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { Star } from 'lucide-react';
 
 interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
     activeFolderFilters?: string[];
+    studyMoreIds?: string[];
+    onToggleStudyMore?: (wordId: string) => void;
 }
 
-const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
+const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
     const { speak, stop } = usePuterSpeech();
 
     // Estados do Jogo
@@ -144,8 +147,13 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             });
         });
 
+        // Boost: duplicate study-more questions for 2x frequency
+        const withBoost = list.flatMap(q =>
+            studyMoreIds.includes(q.id) ? [q, { ...q }] : [q]
+        );
+
         // Embaralha sempre que o sessionKey mudar (Nova Sessão)
-        return list.sort(() => 0.5 - Math.random());
+        return withBoost.sort(() => 0.5 - Math.random());
     }, [sessionKey, savedWordsMap, filtersKey]);
 
     // Recarrega sessão se os dados chegarem depois (evita tela branca inicial)
@@ -345,6 +353,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                         {/* Tradução da palavra + Tradução da frase */}
                         <p className="text-center text-brand-600 text-xs font-medium mt-2">{currentQ.wordMeaning}</p>
                         <p className="text-center text-slate-400 text-xs mt-1 italic">{currentQ.translation}</p>
+
+                        {/* Study More toggle - visible after answering */}
+                        {showResult && onToggleStudyMore && (
+                            <button
+                                onClick={() => onToggleStudyMore(currentQ.id)}
+                                className={`mt-2 mx-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(currentQ.id)
+                                        ? 'bg-amber-100 text-amber-700 border border-amber-300'
+                                        : 'bg-slate-100 text-slate-500 hover:bg-slate-200 border border-slate-200'
+                                    }`}
+                                title={studyMoreIds.includes(currentQ.id) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
+                            >
+                                <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(currentQ.id) ? 'fill-current text-amber-500' : ''}`} />
+                                {studyMoreIds.includes(currentQ.id) ? 'Estudar Mais ✓' : 'Estudar Mais'}
+                            </button>
+                        )}
                     </>
                 )}
             </div>

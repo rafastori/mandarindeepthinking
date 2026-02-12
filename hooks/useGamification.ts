@@ -44,6 +44,7 @@ export interface UseGamificationResult {
     currentAvatar: InventoryItem | null;
     startSession: () => void;
     endSession: () => SessionStats;
+    getSessionPreview: () => SessionStats;
     recordCorrect: () => void;
     recordWrong: () => void;
     setActiveTab: (tab: string) => void;
@@ -332,6 +333,13 @@ export function useGamification(
         isSessionActiveRef.current = true;
     }, [persistedStats]);
 
+    const getSessionPreview = useCallback((): SessionStats => {
+        return {
+            ...sessionStats,
+            endTime: Date.now(),
+        };
+    }, [sessionStats]);
+
     const endSession = useCallback((): SessionStats => {
         isSessionActiveRef.current = false;
 
@@ -409,6 +417,7 @@ export function useGamification(
         currentAvatar,
         startSession,
         endSession,
+        getSessionPreview,
         recordCorrect,
         recordWrong,
         setActiveTab,

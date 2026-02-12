@@ -473,8 +473,8 @@ const App: React.FC = () => {
                         userId={user?.uid}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} />;
-            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
+            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
                     return (
@@ -517,7 +517,7 @@ const App: React.FC = () => {
                         onSave={handleSaveLabItem}
                     />
                 );
-            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
+            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
             case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             default: return null;
         }
@@ -530,6 +530,23 @@ const App: React.FC = () => {
         const stats = gamification.endSession();
         setFinalSessionStats(stats);
         setShowSessionSummary(true);
+    };
+
+    // Handle opening session summary from header (preview, no end)
+    const handleOpenSessionSummary = () => {
+        const stats = gamification.getSessionPreview();
+        setFinalSessionStats(stats);
+        setShowSessionSummary(true);
+    };
+
+    // Toggle "study more" for a word
+    const handleToggleStudyMore = (wordId: string) => {
+        const currentIds = activeStats.studyMoreIds || [];
+        const newIds = currentIds.includes(wordId)
+            ? currentIds.filter(id => id !== wordId)
+            : [...currentIds, wordId];
+        const newStats: Stats = { ...activeStats, studyMoreIds: newIds, ...gamification.getUpdatedStats() };
+        if (user) updateCloudStats(newStats);
     };
 
     // Handle starting session (dismisses intro)
@@ -565,6 +582,7 @@ const App: React.FC = () => {
                         handleLogout();
                     }}
                     onOpenStats={() => setShowStats(true)}
+                    onOpenSessionSummary={handleOpenSessionSummary}
                     onResetAccount={handleResetAccount}
                     isPuterConnected={isPuterConnected}
                     puterUsername={puterUsername}

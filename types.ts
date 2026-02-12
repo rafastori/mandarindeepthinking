@@ -55,6 +55,7 @@ export interface Stats {
     points?: number; // Total XP/points
     inventory?: InventoryItem[];
     achievements?: Achievement[];
+    studyMoreIds?: string[]; // IDs de palavras marcadas para "estudar mais" (2x frequência)
 }
 
 export interface InventoryItem {

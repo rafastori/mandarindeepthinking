@@ -3,6 +3,7 @@ import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { Star } from 'lucide-react';
 
 const SUPPORTED_LANGUAGES: { code: SupportedLanguage; label: string }[] = [
     { code: 'zh', label: '中文 (Chinês)' },
@@ -22,9 +23,11 @@ interface ReviewViewProps {
     onRemove: (id: string) => void;
     onUpdateLanguage?: (id: string, data: Partial<StudyItem>) => void;
     activeFolderFilters?: string[];
+    studyMoreIds?: string[];
+    onToggleStudyMore?: (wordId: string) => void;
 }
 
-const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage, activeFolderFilters = [] }) => {
+const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
     const { speak } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
     const [selectionMode, setSelectionMode] = useState(false);
@@ -274,7 +277,9 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                 return (
                     <div
                         key={item.id}
-                        className={`bg-white rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-200 ${isSelected ? 'border-red-400 bg-red-50' : 'border-slate-100'
+                        className={`rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-200 ${isSelected ? 'border-red-400 bg-red-50'
+                                : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
+                                    : 'bg-white border-slate-100'
                             }`}
                     >
                         {/* CABEÇALHO */}
@@ -354,7 +359,24 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                             </div>
 
                             {!selectionMode && (
-                                <div className="flex items-center gap-3 flex-shrink-0">
+                                <div className="flex items-center gap-2 flex-shrink-0">
+                                    {/* Study More toggle */}
+                                    {onToggleStudyMore && (
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                onToggleStudyMore(item.sourceId);
+                                            }}
+                                            className={`p-1.5 rounded-full transition-colors ${studyMoreIds.includes(item.sourceId)
+                                                    ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-100'
+                                                    : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'
+                                                }`}
+                                            title={studyMoreIds.includes(item.sourceId) ? 'Remover de Estudar Mais' : 'Estudar Mais (2x frequência)'}
+                                        >
+                                            <Star className={`w-[18px] h-[18px] ${studyMoreIds.includes(item.sourceId) ? 'fill-current' : ''}`} />
+                                        </button>
+                                    )}
+
                                     <span className="text-xs text-slate-400 hover:text-brand-600 font-medium uppercase tracking-wide">
                                         {expandedId === item.id ? 'Recolher' : 'Detalhes'}
                                     </span>

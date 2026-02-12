@@ -3,13 +3,14 @@ import Icon from './Icon';
 import { UserMenuDropdown } from './UserMenuDropdown';
 import { User } from 'firebase/auth';
 import { RecognitionEngine } from '../hooks/useSpeechRecognition';
-import { Flame, Star } from 'lucide-react';
+import { Flame, Star, Trophy } from 'lucide-react';
 
 interface HeaderProps {
     user: User | null;
     onLogin: () => void;
     onLogout: () => void;
     onOpenStats: () => void;
+    onOpenSessionSummary: () => void;
     onResetAccount: () => void;
     // Props para Puter
     isPuterConnected: boolean;
@@ -34,6 +35,7 @@ const Header: React.FC<HeaderProps> = ({
     onLogin,
     onLogout,
     onOpenStats,
+    onOpenSessionSummary,
     onResetAccount,
     isPuterConnected,
     puterUsername,
@@ -52,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
             <div className="flex items-center gap-2">
                 <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain rounded-lg shadow-sm" />
-                <h1 className="text-lg font-bold tracking-tight">MemorizaTudo</h1>
+                <h1 className="text-lg font-bold tracking-tight"></h1>
             </div>
 
             <div className="flex items-center gap-3">
@@ -68,7 +70,11 @@ const Header: React.FC<HeaderProps> = ({
                     <span className="text-sm font-bold text-amber-300">{points.toLocaleString()}</span>
                 </div>
 
-                <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">
+                <button onClick={onOpenSessionSummary} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Resumo da Sessão">
+                    <Trophy className="w-[18px] h-[18px]" />
+                </button>
+
+                <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Estatísticas">
                     <Icon name="bar-chart-2" size={18} />
                 </button>
 
