@@ -3,7 +3,17 @@ import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { Stats } from '../types';
 
-const defaultStats: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {} };
+const defaultStats: Stats = {
+    correct: 0,
+    wrong: 0,
+    history: [],
+    wordCounts: {},
+    points: 0,
+    streak: 0,
+    totalTime: 0,
+    inventory: [],
+    achievements: []
+};
 
 export const useUserProfile = (userId: string | null | undefined) => {
     const [savedIds, setSavedIds] = useState<string[]>([]);

@@ -71,7 +71,7 @@ const App: React.FC = () => {
 
     // Update leaderboard score when stats change (Debounced 30s)
     useEffect(() => {
-        if (user && activeStats.points !== undefined) {
+        if (user && !userLoading) {
             const now = Date.now();
             // Only update if 30s passed to save reads/writes
             if (now - lastLeaderboardUpdateRef.current > 30000) {
