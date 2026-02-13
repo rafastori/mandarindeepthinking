@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Stats, SessionStats, InventoryItem, Achievement } from '../types';
-import { normalizeDate, getLocalISODate, getDaysDifference } from '../utils/dateUtils';
 
 // Define all available achievements
 const ALL_ACHIEVEMENTS: Omit<Achievement, 'unlockedAt' | 'progress'>[] = [
@@ -24,7 +23,12 @@ const WEEKLY_REWARDS: InventoryItem[] = [
     { id: 'badge_diamond', name: 'Diamante', icon: '💎', unlockedAt: '', type: 'badge' },
 ];
 
-// Date helpers imported from utils/dateUtils
+const getLocalISODate = (date: Date = new Date()) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+};
 
 export type BonusType = 'streak10' | 'streak30' | null;
 
@@ -44,7 +48,6 @@ export interface UseGamificationResult {
     currentAvatar: InventoryItem | null;
     startSession: () => void;
     endSession: () => SessionStats;
-    getSessionPreview: () => SessionStats;
     recordCorrect: () => void;
     recordWrong: () => void;
     setActiveTab: (tab: string) => void;
@@ -171,39 +174,24 @@ export function useGamification(
 
     const checkAndUpdateStreak = useCallback((stats: Stats): Stats => {
         const today = getLocalISODate();
-        const lastLoginRaw = stats.lastLoginDate;
-        const currentStreak = stats.streak || 0;
+        const lastLogin = stats.lastLoginDate;
 
-        // CRITICAL: Normalize the lastLogin date FIRST
-        const lastLogin = normalizeDate(lastLoginRaw);
-
-        // Debug logs
-        console.log('[STREAK CALC] today:', today);
-        console.log('[STREAK CALC] lastLogin (normalized):', lastLogin);
-        console.log('[STREAK CALC] currentStreak:', currentStreak);
-
-        // 1. New User or No Login Data
         if (!lastLogin) {
-            console.log('[STREAK CALC] No lastLogin -> Start streak 1');
             return { ...stats, streak: 1, lastLoginDate: today };
         }
 
-        // 2. Already logged in today
         if (lastLogin === today) {
-            console.log('[STREAK CALC] Login is today -> Keep streak:', currentStreak);
             return stats;
         }
 
-        // 3. Calculate difference
-        const diffDays = getDaysDifference(lastLogin, today);
-        console.log('[STREAK CALC] diffDays:', diffDays);
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+        const yesterday = getLocalISODate(yesterdayDate);
 
-        // 4. Consecutive Day (Yesterday)
-        if (diffDays === 1) {
-            const newStreak = currentStreak + 1;
-            console.log('[STREAK CALC] Consecutive day -> Increment to:', newStreak);
+        if (lastLogin === yesterday) {
+            const newStreak = (stats.streak || 0) + 1;
 
-            // Check for weekly reward (logic remains same)
+            // Check for weekly reward (every 7 days)
             if (newStreak > 0 && newStreak % 7 === 0) {
                 const rewardIndex = Math.floor(newStreak / 7) - 1;
                 const reward = WEEKLY_REWARDS[rewardIndex % WEEKLY_REWARDS.length];
@@ -214,26 +202,27 @@ export function useGamification(
                     setNewInventoryItem(newItem);
                 }
             }
+
             return { ...stats, streak: newStreak, lastLoginDate: today };
         }
 
-        // 5. Broken Streak (Gap > 1 day)
-        // PROTECT MANUAL EDITS: If DB has a streak > 1, allow a small gap (2 days) to rescue it
-        // ignoring 1-day streaks (new users) to avoid noise
-        if (diffDays > 1) {
-            if (currentStreak > 1 && diffDays <= 2) {
-                console.log('[STREAK CALC] Rescue: Small gap, maintain streak:', currentStreak);
-                return { ...stats, streak: currentStreak, lastLoginDate: today }; // Update date, keep streak
-            }
-            console.log('[STREAK CALC] Gap too large -> Reset to 1');
-            return { ...stats, streak: 1, lastLoginDate: today };
-        }
-
+        // Streak broken
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
 
-    // STREAK CHECK REMOVED: Managed by App.tsx to ensure single execution and robust loading gates.
-    // Previously, this effect caused race conditions by running on defaultStats before Firebase loaded.
+    // Check streak on mount/update
+    useEffect(() => {
+        // We check against persistedStats (baseline)
+        const updated = checkAndUpdateStreak(persistedStats);
+
+        // If streak or login date changed, trigger update
+        if (updated.streak !== persistedStats.streak || updated.lastLoginDate !== persistedStats.lastLoginDate) {
+            // We need to update the baseline immediately to reflect this change
+            // to avoid "flicker" or double updates, although onStatsUpdate will eventually trigger re-render
+            baselineStatsRef.current = updated;
+            onStatsUpdate(updated);
+        }
+    }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate, persistedStats]);
 
     const recordCorrect = useCallback(() => {
         consecutiveCorrectRef.current += 1;
@@ -282,39 +271,7 @@ export function useGamification(
 
     const startSession = useCallback(() => {
         // Update baseline to current persisted stats when starting a new session
-        const currentBaseline = baselineStatsRef.current;
-        const persisted = persistedStats;
-
-        // SINGLE TRUTH: We trust persistedStats logic UNLESS it's clearly stale/empty vs local
-        // But for streak, we always want the HIGHEST value to prevent overwrites
-
-        let newBaseline = { ...persisted };
-
-        const persistedStreak = persisted.streak || 0;
-        const localStreak = currentBaseline.streak || 0;
-
-        // Validation: If persisted streak is higher or equal, it wins.
-        if (persistedStreak >= localStreak) {
-            newBaseline.streak = persistedStreak;
-            newBaseline.lastLoginDate = persisted.lastLoginDate;
-        } else {
-            // Local is higher. Why?
-            // Maybe we just incremented it locally and it hasn't synced back yet?
-            // Trust local ONLY if the date is also newer or same
-            const persistedDate = normalizeDate(persisted.lastLoginDate);
-            const localDate = normalizeDate(currentBaseline.lastLoginDate);
-
-            if (localDate >= persistedDate) {
-                console.log('[SESSION] Trusting local streak (newer/higher):', localStreak);
-                newBaseline.streak = localStreak;
-                newBaseline.lastLoginDate = currentBaseline.lastLoginDate;
-            } else {
-                // Local streak is higher but date is older? Weird. Trust persisted to be safe.
-                newBaseline.streak = persistedStreak;
-            }
-        }
-
-        baselineStatsRef.current = newBaseline;
+        baselineStatsRef.current = persistedStats;
 
         setSessionStats({
             startTime: Date.now(),
@@ -332,13 +289,6 @@ export function useGamification(
         lastTickRef.current = Date.now();
         isSessionActiveRef.current = true;
     }, [persistedStats]);
-
-    const getSessionPreview = useCallback((): SessionStats => {
-        return {
-            ...sessionStats,
-            endTime: Date.now(),
-        };
-    }, [sessionStats]);
 
     const endSession = useCallback((): SessionStats => {
         isSessionActiveRef.current = false;
@@ -364,8 +314,8 @@ export function useGamification(
                 return acc;
             }, {} as Record<string, number>),
             points: (baselineStatsRef.current.points || 0) + sessionPoints,
-            streak: baselineStatsRef.current.streak || 0,
-            lastLoginDate: baselineStatsRef.current.lastLoginDate,
+            streak: persistedStats.streak || 0,
+            lastLoginDate: persistedStats.lastLoginDate,
             inventory: [...(persistedStats.inventory || []), ...sessionInventory],
             achievements: persistedStats.achievements || [],
         };
@@ -386,10 +336,7 @@ export function useGamification(
         const totalSessionTime = Object.values(sessionStats.tabTime).reduce((a, b) => a + b, 0);
         return {
             points: (baselineStatsRef.current.points || 0) + sessionPoints,
-            // CRITICAL FIX: Use baselineStatsRef for streak/login to ensure we catch recent updates 
-            // that might not have synced to persistedStats yet (avoids race condition)
-            streak: baselineStatsRef.current.streak || 0,
-            lastLoginDate: baselineStatsRef.current.lastLoginDate,
+            streak: persistedStats.streak || 0,
             totalTime: (baselineStatsRef.current.totalTime || 0) + totalSessionTime,
             tabTime: Object.entries(sessionStats.tabTime).reduce((acc, [tab, time]) => {
                 acc[tab] = (baselineStatsRef.current.tabTime?.[tab] || 0) + time;
@@ -417,7 +364,6 @@ export function useGamification(
         currentAvatar,
         startSession,
         endSession,
-        getSessionPreview,
         recordCorrect,
         recordWrong,
         setActiveTab,

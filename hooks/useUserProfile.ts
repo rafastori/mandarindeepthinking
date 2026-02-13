@@ -3,52 +3,34 @@ import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { Stats } from '../types';
 
-const defaultStats: Stats = {
-    correct: 0,
-    wrong: 0,
-    history: [],
-    wordCounts: {},
-    points: 0,
-    streak: 0,
-    totalTime: 0,
-    inventory: [],
-    achievements: []
-};
+const defaultStats: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] };
 
 export const useUserProfile = (userId: string | null | undefined) => {
     const [savedIds, setSavedIds] = useState<string[]>([]);
     const [stats, setStats] = useState<Stats>(defaultStats);
     const [totalScore, setTotalScore] = useState<number>(0);
     const [activeFolderFilters, setActiveFolderFilters] = useState<string[]>([]);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (!userId) {
             setSavedIds([]);
             setStats(defaultStats);
             setActiveFolderFilters([]);
-            setLoading(false);
             return;
         }
-
-        setLoading(true); // Reset loading when userId changes
 
         const userRef = doc(db, 'users', userId);
         const unsubscribe = onSnapshot(userRef, (docSnap) => {
             if (docSnap.exists()) {
                 const data = docSnap.data();
-                console.log('[PROFILE DEBUG] Firestore Data:', data);
-                console.log('[PROFILE DEBUG] data.stats:', data.stats);
                 setSavedIds(data.savedIds || []);
                 setStats(data.stats || defaultStats);
                 setTotalScore(data.totalScore || 0);
                 setActiveFolderFilters(data.activeFolderFilters || []);
             } else {
-                // Cria o documento se não existir - mas não sobrescreve loading até persistir?
-                // Na verdade, onSnapshot dispara logo, se não existir, cria e a gente assume defaultStats
+                // Cria o documento se não existir
                 setDoc(userRef, { savedIds: [], stats: defaultStats, activeFolderFilters: [] }, { merge: true });
             }
-            setLoading(false); // Data loaded (or default set)
         });
 
         return () => unsubscribe();
@@ -72,5 +54,5 @@ export const useUserProfile = (userId: string | null | undefined) => {
         await setDoc(userRef, { activeFolderFilters: newFilters }, { merge: true });
     };
 
-    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters, loading };
+    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters };
 };

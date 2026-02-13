@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { auth, googleProvider } from './services/firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import Header from './components/Header';
@@ -48,7 +48,7 @@ const App: React.FC = () => {
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
     const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, loading: statsLoading } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
@@ -71,7 +71,7 @@ const App: React.FC = () => {
 
     // Update leaderboard score when stats change (Debounced 30s)
     useEffect(() => {
-        if (user && !statsLoading) {
+        if (user && activeStats.points !== undefined) {
             const now = Date.now();
             // Only update if 30s passed to save reads/writes
             if (now - lastLeaderboardUpdateRef.current > 30000) {
@@ -90,41 +90,16 @@ const App: React.FC = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, activeStats.points, activeStats.totalTime, activeStats.streak, activeStats.correct]);
 
-    // Flag to ensure streak is checked exactly once per session/load
-    const hasCheckedStreak = useRef(false);
-
-    // Reset flag when user changes (e.g. logout/login)
-    useEffect(() => {
-        hasCheckedStreak.current = false;
-    }, [user]);
-
     // Check and update streak on app load
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading && !statsLoading && !hasCheckedStreak.current) {
-            // SAFETY CHECK: If streak is 0, we might still be waiting for the real value from Firebase.
-            // Unless it's a brand new user (who has no stats)
-
-            const hasData = activeStats.streak > 0 || activeStats.lastLoginDate || Object.keys(activeStats.wordCounts || {}).length > 0;
-
-            if (hasData) {
-                const updatedStats = gamification.checkAndUpdateStreak(activeStats);
-
-                // Only update if something actually changed to avoid loop
-                // Note: checkAndUpdateStreak might return same object now, but let's be safe
-                if (updatedStats.streak !== activeStats.streak || updatedStats.lastLoginDate !== activeStats.lastLoginDate) {
-                    console.log('[APP DEBUG] Updating streak from', activeStats.streak, 'to', updatedStats.streak);
-                    updateCloudStats(updatedStats);
-                } else {
-                    console.log('[APP DEBUG] Streak check passed, no changes.');
-                }
-                // Mark as checked to prevent future re-runs
-                hasCheckedStreak.current = true;
-            } else {
-                console.log('[APP DEBUG] Skipping streak check - stats seem empty/default');
+        if (user && !authLoading && !itemsLoading) {
+            const updatedStats = gamification.checkAndUpdateStreak(activeStats);
+            if (updatedStats !== activeStats) {
+                updateCloudStats(updatedStats);
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [user, authLoading, itemsLoading, statsLoading, activeStats]);
+    }, [user, authLoading, itemsLoading]);
 
     // Track tab changes for time tracking
     useEffect(() => {
@@ -267,6 +242,17 @@ const App: React.FC = () => {
         }
     };
 
+    const handleToggleStudyMore = (wordId: string) => {
+        const currentIds = activeStats.studyMoreIds || [];
+        const newIds = currentIds.includes(wordId)
+            ? currentIds.filter(id => id !== wordId)
+            : [...currentIds, wordId];
+
+        if (user) {
+            updateCloudStats({ ...activeStats, studyMoreIds: newIds });
+        }
+    };
+
     const handleImportBatch = async (newItems: StudyItem[], folderPath: string) => {
         if (!user) {
             alert("Você precisa estar logado para salvar textos na nuvem.");
@@ -342,106 +328,6 @@ const App: React.FC = () => {
         }
 
         return result;
-    };
-
-    // Export only selected items (text/folder) without stats
-    const handleExportTextApp = () => {
-        // Filter items based on active folder filters (if any)
-        let selectedItems = libraryData;
-
-        if (activeFolderFilters && activeFolderFilters.length > 0) {
-            selectedItems = libraryData.filter(item => {
-                if (!item.folderPath) {
-                    return activeFolderFilters.includes('__uncategorized__');
-                }
-                return activeFolderFilters.some(filter =>
-                    item.folderPath === filter || item.folderPath?.startsWith(filter + '/')
-                );
-            });
-        }
-
-        if (selectedItems.length === 0) {
-            alert('❌ Nenhum item para exportar.');
-            return;
-        }
-
-        // Export only essential fields (no performance stats)
-        const cleanItems = selectedItems.map(item => ({
-            id: item.id,
-            chinese: item.chinese,
-            pinyin: item.pinyin,
-            translation: item.translation,
-            tokens: item.tokens,
-            keywords: item.keywords,
-            language: item.language,
-            type: item.type,
-            originalSentence: item.originalSentence,
-            folderPath: item.folderPath,
-        }));
-
-        const blob = new Blob([JSON.stringify({ items: cleanItems }, null, 2)], { type: 'application/json' });
-
-        // Prompt user for filename
-        const defaultName = `memorizatudo-texto-${new Date().toISOString().split('T')[0]}`;
-        const fileName = prompt('Nome do arquivo:', defaultName);
-        if (!fileName) return; // User cancelled
-
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${fileName}.json`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-
-        alert(`✅ Exportados ${cleanItems.length} itens com sucesso!`);
-    };
-
-    // Import text/folder JSON (items only, no stats)
-    const handleImportTextFile = async (file: File): Promise<{ success: boolean; count: number; error?: string }> => {
-        try {
-            const text = await file.text();
-            const data = JSON.parse(text);
-
-            if (!data.items || !Array.isArray(data.items)) {
-                return { success: false, count: 0, error: 'Arquivo inválido. Deve conter um array "items".' };
-            }
-
-            // Add items to library using existing addItem function
-            // Reverse order since display shows newest first
-            let importedCount = 0;
-            const itemsToImport = [...data.items].reverse();
-
-            for (const item of itemsToImport) {
-                // Skip if invalid
-                if (!item.chinese || !item.translation) continue;
-
-                // Create clean item for import (Firebase doesn't accept undefined)
-                const newItem: StudyItem = {
-                    id: item.id || `imported-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
-                    chinese: item.chinese,
-                    pinyin: item.pinyin || '',
-                    translation: item.translation,
-                    tokens: item.tokens || [],
-                    keywords: item.keywords || [],
-                    language: item.language || 'zh',
-                    type: item.type || 'text',
-                };
-
-                // Only add optional fields if they have values
-                if (item.originalSentence) newItem.originalSentence = item.originalSentence;
-                if (item.folderPath) newItem.folderPath = item.folderPath;
-
-                await addItem(newItem);
-                importedCount++;
-            }
-
-            return { success: true, count: importedCount };
-        } catch (error: any) {
-            console.error('Error importing text file:', error);
-            return { success: false, count: 0, error: error.message || 'Erro ao processar arquivo JSON.' };
-        }
     };
 
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
@@ -532,31 +418,22 @@ const App: React.FC = () => {
         setShowSessionSummary(true);
     };
 
-    // Handle opening session summary from header (preview, no end)
-    const handleOpenSessionSummary = () => {
-        const stats = gamification.getSessionPreview();
-        setFinalSessionStats(stats);
-        setShowSessionSummary(true);
-    };
-
-    // Toggle "study more" for a word
-    const handleToggleStudyMore = (wordId: string) => {
-        const currentIds = activeStats.studyMoreIds || [];
-        const newIds = currentIds.includes(wordId)
-            ? currentIds.filter(id => id !== wordId)
-            : [...currentIds, wordId];
-        const newStats: Stats = { ...activeStats, studyMoreIds: newIds, ...gamification.getUpdatedStats() };
-        if (user) updateCloudStats(newStats);
-    };
-
     // Handle starting session (dismisses intro)
     const handleStartSession = () => {
         gamification.startSession();
         setShowIntro(false);
     };
 
+    const handleOpenSessionSummary = () => {
+        setFinalSessionStats({
+            ...gamification.sessionStats,
+            endTime: Date.now()
+        });
+        setShowSessionSummary(true);
+    };
+
     // Show IntroScreen on app load (for logged-in users)
-    if (showIntro && user && !authLoading && !itemsLoading && !statsLoading) {
+    if (showIntro && user && !authLoading && !itemsLoading) {
         return (
             <IntroScreen
                 stats={activeStats}
@@ -590,8 +467,6 @@ const App: React.FC = () => {
                     onDisconnectPuter={disconnectPuter}
                     onExportData={handleExportData}
                     onImportData={handleImportData}
-                    onExportTextApp={handleExportTextApp}
-                    onImportTextFile={handleImportTextFile}
                     engine={engine}
                     onEngineChange={setEngine}
                     streak={gamification.streak}
@@ -600,7 +475,7 @@ const App: React.FC = () => {
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
-                    {(itemsLoading || statsLoading) && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
+                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
