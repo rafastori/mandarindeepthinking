@@ -83,8 +83,16 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onUpdateFolderFilters,
     userId
 }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop, playingId } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
+
+    // Estado do modal de edição
+    const [editModal, setEditModal] = useState<{
+        item: StudyItem;
+        chinese: string;
+        pinyin: string;
+        translation: string;
+    } | null>(null);
 
     // Estados para modo de seleção
     const [selectionMode, setSelectionMode] = useState(false);
@@ -283,6 +291,46 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     const cancelSelection = () => {
         setSelectionMode(false);
         setSelectedIds(new Set());
+    };
+
+    // Excluir itens selecionados
+    const handleDeleteSelected = () => {
+        if (selectedIds.size === 0 || !onDeleteText) return;
+        const count = selectedIds.size;
+        if (!window.confirm(`Tem certeza que deseja excluir ${count} item(s)?`)) return;
+
+        selectedIds.forEach(id => onDeleteText(id));
+        setSelectedIds(new Set());
+        setSelectionMode(false);
+    };
+
+    // Abrir modal de edição (apenas 1 item)
+    const handleEditSelected = () => {
+        if (selectedIds.size !== 1) return;
+        const itemId = Array.from(selectedIds)[0];
+        const item = filteredData.find(i => i.id.toString() === itemId);
+        if (!item) return;
+
+        setEditModal({
+            item,
+            chinese: item.chinese,
+            pinyin: item.pinyin || '',
+            translation: item.translation || ''
+        });
+    };
+
+    // Salvar edição
+    const handleSaveEdit = () => {
+        if (!editModal || !onUpdateItem) return;
+        onUpdateItem(editModal.item.id.toString(), {
+            chinese: editModal.chinese,
+            pinyin: editModal.pinyin,
+            translation: editModal.translation,
+            tokens: editModal.chinese.split(/\s+/)
+        });
+        setEditModal(null);
+        setSelectedIds(new Set());
+        setSelectionMode(false);
     };
 
     // Mapa Global de Palavras
@@ -531,7 +579,30 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 </span>
                             </div>
 
-                            <div className="flex items-center gap-2 justify-end">
+                            <div className="flex items-center gap-2 justify-end flex-wrap">
+                                <button
+                                    onClick={handleEditSelected}
+                                    disabled={selectedIds.size !== 1}
+                                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-sm transition-all ${selectedIds.size === 1
+                                        ? 'bg-blue-500 text-white shadow-md hover:bg-blue-600'
+                                        : 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                                        }`}
+                                    title="Selecione exatamente 1 item"
+                                >
+                                    <Icon name="edit-3" size={16} />
+                                    Editar
+                                </button>
+                                <button
+                                    onClick={handleDeleteSelected}
+                                    disabled={selectedIds.size === 0 || !onDeleteText}
+                                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-sm transition-all ${selectedIds.size > 0
+                                        ? 'bg-red-500 text-white shadow-md hover:bg-red-600'
+                                        : 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                                        }`}
+                                >
+                                    <Icon name="trash-2" size={16} />
+                                    Excluir
+                                </button>
                                 <button
                                     onClick={openMoveModal}
                                     disabled={selectedIds.size === 0}
@@ -622,8 +693,18 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                             <div className="flex flex-col gap-2 flex-shrink-0 pt-1">
                                                 <div className="flex items-center gap-1">
                                                     <span className="text-[10px] font-bold text-slate-400 uppercase">{item.language || 'zh'}</span>
-                                                    <button onClick={() => speak(item.chinese, (item.language || 'zh') as SupportedLanguage)} className="text-brand-600 bg-brand-50 p-2 rounded-full">
-                                                        <Icon name="volume-2" size={18} />
+                                                    <button
+                                                        onClick={() => {
+                                                            const audioId = `reading-${item.id}`;
+                                                            if (playingId === audioId) {
+                                                                stop();
+                                                            } else {
+                                                                speak(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
+                                                            }
+                                                        }}
+                                                        className={`p-2 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
+                                                    >
+                                                        <Icon name={playingId === `reading-${item.id}` ? 'square' : 'volume-2'} size={18} />
                                                     </button>
                                                 </div>
                                                 {isImported && onDeleteText && (
@@ -726,6 +807,63 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 onConfirm={handleExport}
                 count={selectedIds.size}
             />
+
+            {/* MODAL DE EDIÇÃO */}
+            {editModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
+                    <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-2xl animate-pop">
+                        <h3 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                            <Icon name="edit-3" size={20} className="text-blue-500" />
+                            Editar Texto
+                        </h3>
+
+                        <div className="space-y-4">
+                            <div>
+                                <label className="text-sm font-medium text-slate-600 mb-1 block">Texto Original</label>
+                                <textarea
+                                    value={editModal.chinese}
+                                    onChange={(e) => setEditModal({ ...editModal, chinese: e.target.value })}
+                                    className="w-full p-3 border border-slate-200 rounded-xl focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 min-h-[80px] resize-y"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="text-sm font-medium text-slate-600 mb-1 block">Pronúncia / Pinyin</label>
+                                <input
+                                    type="text"
+                                    value={editModal.pinyin}
+                                    onChange={(e) => setEditModal({ ...editModal, pinyin: e.target.value })}
+                                    className="w-full p-3 border border-slate-200 rounded-xl focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="text-sm font-medium text-slate-600 mb-1 block">Tradução</label>
+                                <textarea
+                                    value={editModal.translation}
+                                    onChange={(e) => setEditModal({ ...editModal, translation: e.target.value })}
+                                    className="w-full p-3 border border-slate-200 rounded-xl focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 min-h-[60px] resize-y"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex gap-3 mt-6">
+                            <button
+                                onClick={() => setEditModal(null)}
+                                className="flex-1 py-3 text-slate-500 font-medium hover:bg-slate-100 rounded-xl"
+                            >
+                                Cancelar
+                            </button>
+                            <button
+                                onClick={handleSaveEdit}
+                                className="flex-1 py-3 bg-blue-500 text-white font-bold rounded-xl hover:bg-blue-600 shadow-md"
+                            >
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Container Invisível para PDF */}
             <div ref={pdfContainerRef} style={PDF_STYLES.container as any}></div>

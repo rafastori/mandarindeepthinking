@@ -16,7 +16,7 @@ interface CardsViewProps {
 }
 
 const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop, playingId } = usePuterSpeech();
 
     // Estado para inverter lados (Definição <-> Palavra)
     const [invertSide, setInvertSide] = useState(false);
@@ -215,12 +215,17 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                             <button
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                    const audioId = `card-front-${currentIndex}`;
+                                    if (playingId === audioId) {
+                                        stop();
+                                    } else {
+                                        speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                    }
                                 }}
-                                className="mt-4 p-3 rounded-full bg-brand-50 text-brand-600 hover:bg-brand-100 transition-colors"
+                                className={`mt-4 p-3 rounded-full transition-colors ${playingId === `card-front-${currentIndex}` ? 'bg-brand-600 text-white animate-pulse' : 'bg-brand-50 text-brand-600 hover:bg-brand-100'}`}
                                 title="Ouvir pronúncia"
                             >
-                                <Icon name="volume-2" size={24} />
+                                <Icon name={playingId === `card-front-${currentIndex}` ? 'square' : 'volume-2'} size={24} />
                             </button>
                         )}
 
@@ -236,12 +241,17 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                             <button
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+                                    const audioId = `card-back-${currentIndex}`;
+                                    if (playingId === audioId) {
+                                        stop();
+                                    } else {
+                                        speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                    }
                                 }}
-                                className="p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors flex-shrink-0"
+                                className={`p-2 rounded-full transition-colors flex-shrink-0 ${playingId === `card-back-${currentIndex}` ? 'bg-white/40 text-white animate-pulse' : 'bg-white/20 text-white hover:bg-white/30'}`}
                                 title="Ouvir pronúncia"
                             >
-                                <Icon name="volume-2" size={20} />
+                                <Icon name={playingId === `card-back-${currentIndex}` ? 'square' : 'volume-2'} size={20} />
                             </button>
                         </div>
                         <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
@@ -262,8 +272,8 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                                     onToggleStudyMore(card.sourceId);
                                 }}
                                 className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(card.sourceId)
-                                        ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
-                                        : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
+                                    ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
+                                    : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
                                     }`}
                                 title={studyMoreIds.includes(card.sourceId) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
                             >

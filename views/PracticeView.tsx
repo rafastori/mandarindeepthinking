@@ -15,7 +15,7 @@ interface PracticeViewProps {
 }
 
 const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
-    const { speak, stop } = usePuterSpeech();
+    const { speak, stop, playingId } = usePuterSpeech();
 
     // Estados do Jogo
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -316,8 +316,15 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                         {showResult ? (
                             // Palavra clicável para TTS (só após responder)
                             <button
-                                onClick={() => speak(currentQ.word, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
-                                className={`inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold transition-colors cursor-pointer hover:opacity-80 active:scale-95 ${selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400'}`}
+                                onClick={() => {
+                                    const audioId = `practice-word-${currentIndex}`;
+                                    if (playingId === audioId) {
+                                        stop();
+                                    } else {
+                                        speak(currentQ.word, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                    }
+                                }}
+                                className={`inline-block min-w-[40px] border-b-2 mx-0.5 text-center font-bold transition-colors cursor-pointer hover:opacity-80 active:scale-95 ${selectedOption === currentQ.word ? 'text-green-600 border-green-500' : 'text-red-500 border-red-400'} ${playingId === `practice-word-${currentIndex}` ? 'animate-pulse' : ''}`}
                                 title="Clique para ouvir a palavra"
                             >
                                 {currentQ.word}
@@ -343,11 +350,18 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                     <>
                         {/* Botão de áudio para frase completa */}
                         <button
-                            onClick={() => speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
+                            onClick={() => {
+                                const audioId = `practice-sentence-${currentIndex}`;
+                                if (playingId === audioId) {
+                                    stop();
+                                } else {
+                                    speak(currentQ.sentence, (currentQ.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                }
+                            }}
                             className="mt-2 flex items-center justify-center gap-1.5 text-xs text-slate-500 hover:text-brand-600 transition-colors mx-auto"
                         >
-                            <Icon name="volume-2" size={14} />
-                            <span>Ouvir frase</span>
+                            <Icon name={playingId === `practice-sentence-${currentIndex}` ? 'square' : 'volume-2'} size={14} />
+                            <span>{playingId === `practice-sentence-${currentIndex}` ? 'Parar' : 'Ouvir frase'}</span>
                         </button>
 
                         {/* Tradução da palavra + Tradução da frase */}
@@ -359,8 +373,8 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                             <button
                                 onClick={() => onToggleStudyMore(currentQ.id)}
                                 className={`mt-2 mx-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(currentQ.id)
-                                        ? 'bg-amber-100 text-amber-700 border border-amber-300'
-                                        : 'bg-slate-100 text-slate-500 hover:bg-slate-200 border border-slate-200'
+                                    ? 'bg-amber-100 text-amber-700 border border-amber-300'
+                                    : 'bg-slate-100 text-slate-500 hover:bg-slate-200 border border-slate-200'
                                     }`}
                                 title={studyMoreIds.includes(currentQ.id) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
                             >

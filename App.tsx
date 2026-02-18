@@ -471,6 +471,8 @@ const App: React.FC = () => {
                     onEngineChange={setEngine}
                     streak={gamification.streak}
                     points={gamification.points}
+                    onExportTextApp={() => exportData()}
+                    onImportTextFile={(file) => importData(file, 'merge')}
                 />
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>

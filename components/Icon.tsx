@@ -45,7 +45,10 @@ import {
     Folder,
     FolderTree,
     FolderPlus,
-    Filter
+    Filter,
+    Square,
+    FolderInput,
+    ArrowLeftRight
 } from 'lucide-react';
 
 export interface IconProps {
@@ -101,7 +104,10 @@ const icons: Record<string, React.ElementType> = {
     'folder': Folder,
     'folder-tree': FolderTree,
     'folder-plus': FolderPlus,
-    'filter': Filter
+    'filter': Filter,
+    'square': Square,
+    'folder-input': FolderInput,
+    'arrow-left-right': ArrowLeftRight
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

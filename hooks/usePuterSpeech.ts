@@ -15,6 +15,7 @@ export const usePuterSpeech = () => {
     const [isPuterConnected, setIsPuterConnected] = useState(false);
     const [puterUsername, setPuterUsername] = useState<string | null>(null);
     const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+    const [playingId, setPlayingId] = useState<string | null>(null); // ID do item em reprodução
     const speakingRef = useRef(false);
     const queueRef = useRef<Array<{ text: string; language: SupportedLanguage; resolve: () => void }>>([]);
     const currentAudioRef = useRef<HTMLAudioElement | null>(null); // Ref para áudio Puter atual
@@ -138,18 +139,60 @@ export const usePuterSpeech = () => {
 
             utterance.rate = 0.9;
 
-            utterance.onend = () => resolve();
-            utterance.onerror = () => resolve();
+            utterance.onend = () => { setPlayingId(null); resolve(); };
+            utterance.onerror = () => { setPlayingId(null); resolve(); };
 
             window.speechSynthesis.speak(utterance);
 
             // Fallback timeout in case onend doesn't fire
-            setTimeout(() => resolve(), 10000);
+            setTimeout(() => { setPlayingId(null); resolve(); }, 10000);
         });
     }, [voices]);
 
+    // Para qualquer áudio em reprodução
+    const stop = useCallback(() => {
+        // Para Web Speech API
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+        }
+        // Para áudio Puter (HTMLAudioElement ou similar)
+        if (currentAudioRef.current) {
+            try {
+                // Tenta pause() - método padrão de HTMLAudioElement
+                if (typeof currentAudioRef.current.pause === 'function') {
+                    currentAudioRef.current.pause();
+                }
+                // Tenta resetar o tempo
+                if ('currentTime' in currentAudioRef.current) {
+                    currentAudioRef.current.currentTime = 0;
+                }
+                // Tenta stop() caso o objeto tenha esse método
+                if (typeof (currentAudioRef.current as any).stop === 'function') {
+                    (currentAudioRef.current as any).stop();
+                }
+            } catch (e) {
+                console.warn('Erro ao parar áudio:', e);
+            }
+            currentAudioRef.current = null;
+        }
+        setPlayingId(null);
+    }, []);
+
     // Função principal de fala - retorna Promise que resolve quando o áudio TERMINA
-    const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh'): Promise<void> => {
+    // id: identificador opcional do item (para toggle play/pause na UI)
+    const speak = useCallback(async (text: string, language: SupportedLanguage = 'zh', id?: string): Promise<void> => {
+        // Se já está tocando este mesmo ID, para e retorna (toggle)
+        if (id && playingId === id) {
+            stop();
+            return;
+        }
+
+        // Para qualquer áudio anterior antes de iniciar novo
+        stop();
+
+        // Seta o ID em reprodução
+        if (id) setPlayingId(id);
+
         // Tenta usar Puter se estiver conectado
         if (isPuterConnected && typeof puter !== 'undefined') {
             try {
@@ -183,6 +226,7 @@ export const usePuterSpeech = () => {
                         // Listener para quando o áudio terminar
                         const onEnded = () => {
                             audio.removeEventListener?.('ended', onEnded);
+                            setPlayingId(null);
                             resolve();
                         };
 
@@ -192,23 +236,25 @@ export const usePuterSpeech = () => {
                         }
 
                         // Inicia reprodução
-                        audio.play().catch(() => resolve());
+                        audio.play().catch(() => { setPlayingId(null); resolve(); });
 
                         // Fallback timeout de 15s caso o evento ended não dispare
                         setTimeout(() => {
                             audio.removeEventListener?.('ended', onEnded);
+                            setPlayingId(null);
                             resolve();
                         }, 15000);
                     });
                 }
             } catch (e) {
                 console.warn('Puter TTS falhou, usando fallback:', e);
+                setPlayingId(null);
             }
         }
 
         // Fallback para Web Speech API
         await fallbackSpeak(text, language);
-    }, [isPuterConnected, fallbackSpeak]);
+    }, [isPuterConnected, fallbackSpeak, playingId, stop]);
 
     // Fala múltiplos textos em sequência
     const speakSequence = useCallback(async (items: Array<{ text: string; language: SupportedLanguage }>): Promise<void> => {
@@ -219,38 +265,11 @@ export const usePuterSpeech = () => {
         }
     }, [speak]);
 
-    // Para qualquer áudio em reprodução
-    const stop = useCallback(() => {
-        // Para Web Speech API
-        if ('speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-        }
-        // Para áudio Puter (HTMLAudioElement ou similar)
-        if (currentAudioRef.current) {
-            try {
-                // Tenta pause() - método padrão de HTMLAudioElement
-                if (typeof currentAudioRef.current.pause === 'function') {
-                    currentAudioRef.current.pause();
-                }
-                // Tenta resetar o tempo
-                if ('currentTime' in currentAudioRef.current) {
-                    currentAudioRef.current.currentTime = 0;
-                }
-                // Tenta stop() caso o objeto tenha esse método
-                if (typeof (currentAudioRef.current as any).stop === 'function') {
-                    (currentAudioRef.current as any).stop();
-                }
-            } catch (e) {
-                console.warn('Erro ao parar áudio:', e);
-            }
-            currentAudioRef.current = null;
-        }
-    }, []);
-
     return {
         speak,
         speakSequence,
         stop,
+        playingId,
         isPuterConnected,
         connectPuter,
         disconnectPuter,

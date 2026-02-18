@@ -28,7 +28,7 @@ interface ReviewViewProps {
 }
 
 const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop, playingId } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
     const [selectionMode, setSelectionMode] = useState(false);
     const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
@@ -278,8 +278,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                     <div
                         key={item.id}
                         className={`rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-200 ${isSelected ? 'border-red-400 bg-red-50'
-                                : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
-                                    : 'bg-white border-slate-100'
+                            : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
+                                : 'bg-white border-slate-100'
                             }`}
                     >
                         {/* CABEÇALHO */}
@@ -346,12 +346,17 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                                             <button
                                                 onClick={(e) => {
                                                     e.stopPropagation();
-                                                    speak(item.word, (item.language || item.sentence.language || 'zh') as SupportedLanguage);
+                                                    const audioId = `review-${item.sourceId}`;
+                                                    if (playingId === audioId) {
+                                                        stop();
+                                                    } else {
+                                                        speak(item.word, (item.language || item.sentence.language || 'zh') as SupportedLanguage, audioId);
+                                                    }
                                                 }}
-                                                className="p-1.5 rounded-full text-slate-400 hover:text-brand-600 hover:bg-brand-50 transition-colors flex-shrink-0"
+                                                className={`p-1.5 rounded-full transition-colors flex-shrink-0 ${playingId === `review-${item.sourceId}` ? 'text-white bg-brand-600 animate-pulse' : 'text-slate-400 hover:text-brand-600 hover:bg-brand-50'}`}
                                                 title="Ouvir pronúncia"
                                             >
-                                                <Icon name="volume-2" size={18} />
+                                                <Icon name={playingId === `review-${item.sourceId}` ? 'square' : 'volume-2'} size={18} />
                                             </button>
                                         )}
                                     </div>
@@ -368,8 +373,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                                                 onToggleStudyMore(item.sourceId);
                                             }}
                                             className={`p-1.5 rounded-full transition-colors ${studyMoreIds.includes(item.sourceId)
-                                                    ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-100'
-                                                    : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'
+                                                ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-100'
+                                                : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'
                                                 }`}
                                             title={studyMoreIds.includes(item.sourceId) ? 'Remover de Estudar Mais' : 'Estudar Mais (2x frequência)'}
                                         >
