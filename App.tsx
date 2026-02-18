@@ -28,6 +28,7 @@ import { usePuterSpeech } from './hooks/usePuterSpeech';
 import { useSpeechRecognition } from './hooks/useSpeechRecognition';
 import { useGamification } from './hooks/useGamification';
 import { useLeaderboard } from './hooks/useLeaderboard';
+import { useCloudSync } from './hooks/useCloudSync';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword, SessionStats } from './types';
 
@@ -47,8 +48,9 @@ const App: React.FC = () => {
     const [showSessionSummary, setShowSessionSummary] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
-    const { items: firebaseItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
+    const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
+    const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
@@ -134,6 +136,20 @@ const App: React.FC = () => {
         }
     }, [user]);
 
+    // One-time migration: Firebase legado -> IndexedDB local
+    useEffect(() => {
+        if (user && !authLoading && !itemsLoading && needsMigration()) {
+            console.log('🔄 Migração necessária, iniciando...');
+            migrateFromFirebase().then(result => {
+                if (result.success && result.itemCount > 0) {
+                    console.log(`✅ Migração automática concluída: ${result.itemCount} itens`);
+                    window.location.reload(); // Recarrega para refletir dados migrados
+                }
+            });
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [user, authLoading, itemsLoading]);
+
     // Reset game selection when changing tabs
     useEffect(() => {
         if (tab !== 'jogo') {
@@ -141,7 +157,7 @@ const App: React.FC = () => {
         }
     }, [tab]);
 
-    const libraryData = useMemo(() => [...firebaseItems, ...staticData], [firebaseItems]);
+    const libraryData = useMemo(() => [...localItems, ...staticData], [localItems]);
 
     const handleLogin = async () => {
         try { await signInWithPopup(auth, googleProvider); } catch (e) { console.error(e); }
@@ -255,7 +271,7 @@ const App: React.FC = () => {
 
     const handleImportBatch = async (newItems: StudyItem[], folderPath: string) => {
         if (!user) {
-            alert("Você precisa estar logado para salvar textos na nuvem.");
+            alert("Você precisa estar logado para salvar textos.");
             return;
         }
 
@@ -308,26 +324,43 @@ const App: React.FC = () => {
     const handleImportData = async (file: File, mode: 'merge' | 'replace') => {
         const result = await importData(file, mode);
 
-        // Se importação bem sucedida e tem profile, restaura dados de perfil
+        // Se importação bem sucedida e tem profile, restaura dados de perfil localmente
         if (result.success && result.profile) {
             const { savedIds: importedSavedIds, stats: importedStats, totalScore: importedTotalScore } = result.profile;
 
-            // savedIds: merge (união com existentes, sem duplicatas)
             if (importedSavedIds?.length) {
                 const mergedIds = [...new Set([...cloudSavedIds, ...importedSavedIds])];
                 await updateCloudFavorites(mergedIds);
             }
 
-            // stats: substituir pelos importados
             if (importedStats) {
                 await updateCloudStats(importedStats);
             }
 
-            // totalScore: Podemos adicionar lógica aqui se necessário no futuro
-            console.log('Profile restaurado:', { importedSavedIds, importedStats, importedTotalScore });
+            console.log('Profile restaurado localmente:', { importedSavedIds, importedStats, importedTotalScore });
         }
 
         return result;
+    };
+
+    // Cloud Backup/Restore handlers
+    const handleBackupToCloud = async () => {
+        const confirmed = window.confirm('Deseja fazer backup de todos os seus dados na nuvem?\nIsso substituirá o backup anterior.');
+        if (!confirmed) return;
+        const success = await backupToCloud();
+        if (success) {
+            alert('✅ Backup realizado com sucesso!');
+        }
+    };
+
+    const handleRestoreFromCloud = async () => {
+        const confirmed = window.confirm('⚠️ Restaurar backup da nuvem?\nIsso substituirá todos os dados locais pelos dados do último backup.');
+        if (!confirmed) return;
+        const result = await restoreFromCloud();
+        if (result.success) {
+            alert(`✅ Backup restaurado! ${result.itemCount} itens recuperados.\nRecarregando o app...`);
+            window.location.reload(); // Recarrega para refletir dados restaurados
+        }
     };
 
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
@@ -473,11 +506,14 @@ const App: React.FC = () => {
                     points={gamification.points}
                     onExportTextApp={() => exportData()}
                     onImportTextFile={(file) => importData(file, 'merge')}
+                    onBackupToCloud={handleBackupToCloud}
+                    onRestoreFromCloud={handleRestoreFromCloud}
+                    isSyncing={isSyncing}
                 />
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
-                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Sincronizando...</div> : renderView()}
+                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Carregando dados locais...</div> : renderView()}
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}

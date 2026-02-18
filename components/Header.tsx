@@ -28,6 +28,10 @@ interface HeaderProps {
     // Gamification
     streak?: number;
     points?: number;
+    // Cloud Sync
+    onBackupToCloud?: () => void;
+    onRestoreFromCloud?: () => void;
+    isSyncing?: boolean;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -48,7 +52,10 @@ const Header: React.FC<HeaderProps> = ({
     engine,
     onEngineChange,
     streak = 0,
-    points = 0
+    points = 0,
+    onBackupToCloud,
+    onRestoreFromCloud,
+    isSyncing
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -95,6 +102,9 @@ const Header: React.FC<HeaderProps> = ({
                         onImportTextFile={onImportTextFile}
                         engine={engine}
                         onEngineChange={onEngineChange}
+                        onBackupToCloud={onBackupToCloud}
+                        onRestoreFromCloud={onRestoreFromCloud}
+                        isSyncing={isSyncing}
                     />
                 ) : (
                     <button

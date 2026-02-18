@@ -17,6 +17,10 @@ interface UserMenuDropdownProps {
     onImportTextFile?: (file: File) => Promise<{ success: boolean; count: number; error?: string }>;
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
+    // Cloud Sync
+    onBackupToCloud?: () => void;
+    onRestoreFromCloud?: () => void;
+    isSyncing?: boolean;
 }
 
 /**
@@ -36,7 +40,10 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     onExportTextApp,
     onImportTextFile,
     engine,
-    onEngineChange
+    onEngineChange,
+    onBackupToCloud,
+    onRestoreFromCloud,
+    isSyncing
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [showImportModal, setShowImportModal] = useState(false);
@@ -288,6 +295,48 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                             )}
 
                             <div className="h-px bg-slate-100 my-2" />
+
+                            {/* ☁️ Backup na Nuvem */}
+                            {onBackupToCloud && (
+                                <button
+                                    onClick={() => handleAction(onBackupToCloud)}
+                                    disabled={isSyncing}
+                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-sky-50 text-slate-700 hover:text-sky-700 transition-colors disabled:opacity-50"
+                                >
+                                    <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center">
+                                        {isSyncing ? (
+                                            <div className="w-4 h-4 border-2 border-sky-200 border-t-sky-600 rounded-full animate-spin" />
+                                        ) : (
+                                            <Icon name="upload" size={16} className="text-sky-600" />
+                                        )}
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Backup na Nuvem</p>
+                                        <p className="text-xs text-slate-500">Salvar dados online</p>
+                                    </div>
+                                </button>
+                            )}
+
+                            {/* ☁️ Restaurar da Nuvem */}
+                            {onRestoreFromCloud && (
+                                <button
+                                    onClick={() => handleAction(onRestoreFromCloud)}
+                                    disabled={isSyncing}
+                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 transition-colors disabled:opacity-50"
+                                >
+                                    <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                                        {isSyncing ? (
+                                            <div className="w-4 h-4 border-2 border-indigo-200 border-t-indigo-600 rounded-full animate-spin" />
+                                        ) : (
+                                            <Icon name="download" size={16} className="text-indigo-600" />
+                                        )}
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Restaurar da Nuvem</p>
+                                        <p className="text-xs text-slate-500">Baixar último backup</p>
+                                    </div>
+                                </button>
+                            )}
 
                             {/* Limpar Dados */}
                             <button

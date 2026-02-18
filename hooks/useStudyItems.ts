@@ -1,96 +1,112 @@
-import { useState, useEffect } from 'react';
-import { db } from '../services/firebase';
-import {
-  collection,
-  query,
-  orderBy,
-  onSnapshot,
-  addDoc,
-  deleteDoc,
-  doc,
-  serverTimestamp,
-  getDocs,
-  writeBatch,
-  updateDoc
-} from 'firebase/firestore';
+import { useState, useEffect, useCallback } from 'react';
+import { localDB } from '../services/localDB';
 import { StudyItem } from '../types';
 
+/**
+ * useStudyItems - Hook LOCAL-FIRST para gerenciar itens de estudo.
+ * 
+ * Todos os dados são lidos e escritos no IndexedDB local.
+ * O Firebase é usado APENAS para backup/restore manual (via useCloudSync).
+ */
 export const useStudyItems = (userId: string | null | undefined) => {
   const [items, setItems] = useState<StudyItem[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // Carrega itens do IndexedDB na inicialização
   useEffect(() => {
     if (!userId) {
       setItems([]);
       setLoading(false);
       return;
     }
-    const q = query(collection(db, 'users', userId, 'items'), orderBy('createdAt', 'desc'));
-    const unsubscribe = onSnapshot(q, (snap) => {
-      setItems(snap.docs.map(doc => ({ id: doc.id, ...doc.data() } as StudyItem)));
-      setLoading(false);
-    });
-    return () => unsubscribe();
+
+    let cancelled = false;
+
+    const loadItems = async () => {
+      try {
+        const localItems = await localDB.getAllItems();
+        if (!cancelled) {
+          // Ordena por createdAt descrescente (mais recentes primeiro)
+          localItems.sort((a, b) => {
+            const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+            const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+            return dateB - dateA;
+          });
+          setItems(localItems);
+          setLoading(false);
+        }
+      } catch (error) {
+        console.error('Erro ao carregar itens do IndexedDB:', error);
+        if (!cancelled) {
+          setItems([]);
+          setLoading(false);
+        }
+      }
+    };
+
+    loadItems();
+
+    return () => { cancelled = true; };
   }, [userId]);
 
-  const addItem = async (data: Omit<StudyItem, 'id'>) => {
+  // Adiciona um novo item
+  const addItem = useCallback(async (data: Omit<StudyItem, 'id'>): Promise<string | null> => {
     if (!userId) return null;
-    const docRef = await addDoc(collection(db, 'users', userId, 'items'), {
+
+    // Gera um ID único localmente
+    const id = `local_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const newItem: StudyItem = {
       ...data,
-      createdAt: serverTimestamp()
-    });
-    return docRef.id;
-  };
+      id,
+      createdAt: new Date().toISOString(),
+    };
 
-  const deleteItem = async (id: string) => {
+    await localDB.putItem(newItem);
+    setItems(prev => [newItem, ...prev]);
+    return id;
+  }, [userId]);
+
+  // Remove um item
+  const deleteItem = useCallback(async (id: string) => {
     if (!userId) return;
-    await deleteDoc(doc(db, 'users', userId, 'items', id));
-  };
+    await localDB.deleteItem(id);
+    setItems(prev => prev.filter(item => item.id !== id));
+  }, [userId]);
 
-  // NOVA FUNÇÃO: Atualiza um item (ex: trocar idioma)
-  const updateItem = async (id: string, data: Partial<StudyItem>) => {
-    if (!userId) return;
-    await updateDoc(doc(db, 'users', userId, 'items', id), data);
-  };
-
-  // NOVA FUNÇÃO: DELETA TUDO DE UMA VEZ
-  const clearLibrary = async () => {
+  // Atualiza um item parcialmente
+  const updateItem = useCallback(async (id: string, data: Partial<StudyItem>) => {
     if (!userId) return;
 
-    try {
-      const q = query(collection(db, 'users', userId, 'items'));
-      const snapshot = await getDocs(q);
+    // Encontra o item atual
+    const currentItem = items.find(item => item.id === id);
+    if (!currentItem) return;
 
-      const batch = writeBatch(db);
+    const updatedItem = { ...currentItem, ...data };
+    await localDB.putItem(updatedItem);
+    setItems(prev => prev.map(item => item.id === id ? updatedItem : item));
+  }, [userId, items]);
 
-      snapshot.forEach((doc) => {
-        batch.delete(doc.ref);
-      });
+  // Limpa toda a biblioteca local
+  const clearLibrary = useCallback(async () => {
+    if (!userId) return;
+    await localDB.clearItems();
+    setItems([]);
+    console.log('Biblioteca local limpa com sucesso.');
+  }, [userId]);
 
-      await batch.commit();
-      console.log("Biblioteca limpa com sucesso.");
-    } catch (error) {
-      console.error("Erro ao limpar biblioteca:", error);
-      throw error;
-    }
-  };
-
-  // EXPORTAR DADOS: Gera arquivo JSON para download (v1.3.0 - inclui folderPath e nome customizável)
-  const exportData = (profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
+  // EXPORTAR DADOS: Gera arquivo JSON para download
+  const exportData = useCallback((profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
     if (!userId || items.length === 0) {
-      alert("Nenhum dado para exportar!");
+      alert('Nenhum dado para exportar!');
       return;
     }
 
-    // Pergunta ao usuário o nome do arquivo
     const defaultName = `backup-memorizatudo-${new Date().toISOString().slice(0, 10)}`;
     const fileName = prompt('Nome do arquivo de backup:', defaultName);
-
-    // Se o usuário cancelar o prompt, não exporta
     if (fileName === null) return;
 
     const payload = {
-      version: "1.3.0",
+      version: '2.0.0', // Nova versão local-first
       exportedAt: new Date().toISOString(),
       userId: userId,
       itemCount: items.length,
@@ -104,10 +120,9 @@ export const useStudyItems = (userId: string | null | undefined) => {
         keywords: item.keywords || [],
         originalSentence: item.originalSentence || null,
         type: item.type || 'text',
-        folderPath: item.folderPath || null,  // NOVO: preserva estrutura de pastas
-        createdAt: item.createdAt || null,     // NOVO: preserva data de criação
+        folderPath: item.folderPath || null,
+        createdAt: item.createdAt || null,
       })),
-      // Dados de perfil para backup completo
       profile: profileData ? {
         savedIds: profileData.savedIds || [],
         stats: profileData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {} },
@@ -125,86 +140,79 @@ export const useStudyItems = (userId: string | null | undefined) => {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-  };
+  }, [userId, items]);
 
-  // IMPORTAR DADOS: Carrega arquivo JSON e insere no Firestore (v1.2.0 - preserva IDs)
-  const importData = async (file: File, mode: 'merge' | 'replace'): Promise<{
+  // IMPORTAR DADOS: Carrega arquivo JSON e insere no IndexedDB local
+  const importData = useCallback(async (file: File, mode: 'merge' | 'replace'): Promise<{
     success: boolean;
     count: number;
     error?: string;
     profile?: { savedIds: string[]; stats: any; totalScore: number } | null;
   }> => {
-    if (!userId) return { success: false, count: 0, error: "Usuário não autenticado" };
+    if (!userId) return { success: false, count: 0, error: 'Usuário não autenticado' };
 
     try {
       const text = await file.text();
       const payload = JSON.parse(text);
 
-      // Validação básica
       if (!payload.data || !Array.isArray(payload.data)) {
-        return { success: false, count: 0, error: "Arquivo inválido: formato incorreto" };
+        return { success: false, count: 0, error: 'Arquivo inválido: formato incorreto' };
       }
 
-      // Filtra itens válidos (devem ter chinese e translation)
       const validItems = payload.data.filter((item: any) =>
         item.chinese && item.translation
       );
 
       if (validItems.length === 0) {
-        return { success: false, count: 0, error: "Nenhum item válido encontrado no arquivo" };
+        return { success: false, count: 0, error: 'Nenhum item válido encontrado no arquivo' };
       }
 
       // Se modo 'replace', limpa biblioteca primeiro
       if (mode === 'replace') {
-        await clearLibrary();
+        await localDB.clearItems();
       }
 
-      // Insere em batches (limite de 500 por batch do Firestore)
-      const BATCH_SIZE = 400;
-      let imported = 0;
+      // Prepara itens para inserção local
+      const itemsToInsert: StudyItem[] = validItems.map((item: any) => ({
+        id: item.id && typeof item.id === 'string'
+          ? item.id
+          : `imported_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        chinese: item.chinese,
+        pinyin: item.pinyin || '',
+        translation: item.translation,
+        language: item.language || 'zh',
+        tokens: item.tokens || [],
+        keywords: item.keywords || [],
+        originalSentence: item.originalSentence || null,
+        type: item.type || 'text',
+        folderPath: item.folderPath || null,
+        createdAt: item.createdAt || new Date().toISOString(),
+      }));
 
-      for (let i = 0; i < validItems.length; i += BATCH_SIZE) {
-        const chunk = validItems.slice(i, i + BATCH_SIZE);
-        const batch = writeBatch(db);
+      await localDB.bulkPutItems(itemsToInsert);
 
-        chunk.forEach((item: any) => {
-          // v1.2.0+: usa ID original se disponível, senão gera novo
-          const docRef = item.id && typeof item.id === 'string'
-            ? doc(db, 'users', userId, 'items', item.id)
-            : doc(collection(db, 'users', userId, 'items'));
+      // Recarrega do banco para refletir tudo
+      const allItems = await localDB.getAllItems();
+      allItems.sort((a, b) => {
+        const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+        const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+        return dateB - dateA;
+      });
+      setItems(allItems);
 
-          batch.set(docRef, {
-            chinese: item.chinese,
-            pinyin: item.pinyin || '',
-            translation: item.translation,
-            language: item.language || 'zh',
-            tokens: item.tokens || [],
-            keywords: item.keywords || [],
-            originalSentence: item.originalSentence || null,
-            type: item.type || 'text',
-            folderPath: item.folderPath || null,  // v1.3.0: restaura estrutura de pastas
-            createdAt: item.createdAt || serverTimestamp()  // Usa original se disponível
-          });
-        });
+      console.log(`Importação local concluída: ${itemsToInsert.length} itens`);
 
-        await batch.commit();
-        imported += chunk.length;
-      }
-
-      console.log(`Importação concluída: ${imported} itens`);
-
-      // Retorna profile se existir no backup (v1.1.0+)
       return {
         success: true,
-        count: imported,
+        count: itemsToInsert.length,
         profile: payload.profile || null
       };
 
     } catch (error: any) {
-      console.error("Erro na importação:", error);
-      return { success: false, count: 0, error: error.message || "Erro ao processar arquivo" };
+      console.error('Erro na importação:', error);
+      return { success: false, count: 0, error: error.message || 'Erro ao processar arquivo' };
     }
-  };
+  }, [userId]);
 
   return { items, loading, addItem, deleteItem, updateItem, clearLibrary, exportData, importData };
 };

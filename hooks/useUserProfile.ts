@@ -1,58 +1,80 @@
-import { useState, useEffect } from 'react';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
-import { db } from '../services/firebase';
+import { useState, useEffect, useCallback } from 'react';
+import { localDB, LocalProfile } from '../services/localDB';
 import { Stats } from '../types';
 
 const defaultStats: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] };
 
+/**
+ * useUserProfile - Hook LOCAL-FIRST para gerenciar perfil do usuário.
+ * 
+ * Stats, savedIds e filtros são armazenados localmente no IndexedDB.
+ * O Firebase é usado SOMENTE para Leaderboard (via useLeaderboard) e backup manual.
+ */
 export const useUserProfile = (userId: string | null | undefined) => {
     const [savedIds, setSavedIds] = useState<string[]>([]);
     const [stats, setStats] = useState<Stats>(defaultStats);
     const [totalScore, setTotalScore] = useState<number>(0);
     const [activeFolderFilters, setActiveFolderFilters] = useState<string[]>([]);
+    const [profileLoaded, setProfileLoaded] = useState(false);
 
+    // Carrega perfil do IndexedDB na inicialização
     useEffect(() => {
         if (!userId) {
             setSavedIds([]);
             setStats(defaultStats);
             setActiveFolderFilters([]);
+            setProfileLoaded(false);
             return;
         }
 
-        const userRef = doc(db, 'users', userId);
-        const unsubscribe = onSnapshot(userRef, (docSnap) => {
-            if (docSnap.exists()) {
-                const data = docSnap.data();
-                setSavedIds(data.savedIds || []);
-                setStats(data.stats || defaultStats);
-                setTotalScore(data.totalScore || 0);
-                setActiveFolderFilters(data.activeFolderFilters || []);
-            } else {
-                // Cria o documento se não existir
-                setDoc(userRef, { savedIds: [], stats: defaultStats, activeFolderFilters: [] }, { merge: true });
-            }
-        });
+        let cancelled = false;
 
-        return () => unsubscribe();
+        const loadProfile = async () => {
+            try {
+                const profile = await localDB.getProfile();
+                if (!cancelled) {
+                    setSavedIds(profile.savedIds || []);
+                    setStats(profile.stats || defaultStats);
+                    setTotalScore(profile.totalScore || 0);
+                    setActiveFolderFilters(profile.activeFolderFilters || []);
+                    setProfileLoaded(true);
+                }
+            } catch (error) {
+                console.error('Erro ao carregar perfil do IndexedDB:', error);
+                if (!cancelled) {
+                    setProfileLoaded(true); // Marca como carregado mesmo com erro (usa defaults)
+                }
+            }
+        };
+
+        loadProfile();
+
+        return () => { cancelled = true; };
     }, [userId]);
 
-    const updateFavorites = async (newIds: string[]) => {
+    // Atualiza favoritos
+    const updateFavorites = useCallback(async (newIds: string[]) => {
         if (!userId) return;
-        const userRef = doc(db, 'users', userId);
-        await setDoc(userRef, { savedIds: newIds }, { merge: true });
-    };
+        setSavedIds(newIds);
+        await localDB.updateProfile({ savedIds: newIds });
+    }, [userId]);
 
-    const updateStats = async (newStats: Stats) => {
+    // Atualiza stats
+    const updateStats = useCallback(async (newStats: Stats) => {
         if (!userId) return;
-        const userRef = doc(db, 'users', userId);
-        await setDoc(userRef, { stats: newStats }, { merge: true });
-    };
+        setStats(newStats);
+        // Calcula totalScore a partir dos points
+        const newTotalScore = newStats.points || 0;
+        setTotalScore(newTotalScore);
+        await localDB.updateProfile({ stats: newStats, totalScore: newTotalScore });
+    }, [userId]);
 
-    const updateFolderFilters = async (newFilters: string[]) => {
+    // Atualiza filtros de pasta
+    const updateFolderFilters = useCallback(async (newFilters: string[]) => {
         if (!userId) return;
-        const userRef = doc(db, 'users', userId);
-        await setDoc(userRef, { activeFolderFilters: newFilters }, { merge: true });
-    };
+        setActiveFolderFilters(newFilters);
+        await localDB.updateProfile({ activeFolderFilters: newFilters });
+    }, [userId]);
 
-    return { savedIds, stats, totalScore, activeFolderFilters, updateFavorites, updateStats, updateFolderFilters };
+    return { savedIds, stats, totalScore, activeFolderFilters, profileLoaded, updateFavorites, updateStats, updateFolderFilters };
 };
