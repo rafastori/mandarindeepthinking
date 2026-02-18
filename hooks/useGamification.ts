@@ -77,8 +77,9 @@ export function useGamification(
     const baselineStatsRef = useRef<Stats>(persistedStats);
 
     // On mount (or when user changes), update baseline if it's the first load
+    // IMPORTANT: Never update baseline during an active session to avoid double-counting
     useEffect(() => {
-        if (persistedStats.lastLoginDate !== baselineStatsRef.current.lastLoginDate) {
+        if (!isSessionActiveRef.current && persistedStats.lastLoginDate !== baselineStatsRef.current.lastLoginDate) {
             baselineStatsRef.current = persistedStats;
         }
     }, [persistedStats.lastLoginDate]);
@@ -210,19 +211,17 @@ export function useGamification(
         return { ...stats, streak: 1, lastLoginDate: today };
     }, []);
 
-    // Check streak on mount/update
+    // Check streak on mount/update — only trigger on login date or streak changes
     useEffect(() => {
-        // We check against persistedStats (baseline)
         const updated = checkAndUpdateStreak(persistedStats);
 
         // If streak or login date changed, trigger update
         if (updated.streak !== persistedStats.streak || updated.lastLoginDate !== persistedStats.lastLoginDate) {
-            // We need to update the baseline immediately to reflect this change
-            // to avoid "flicker" or double updates, although onStatsUpdate will eventually trigger re-render
             baselineStatsRef.current = updated;
             onStatsUpdate(updated);
         }
-    }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate, persistedStats]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate]);
 
     const recordCorrect = useCallback(() => {
         consecutiveCorrectRef.current += 1;

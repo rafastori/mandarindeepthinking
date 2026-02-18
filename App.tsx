@@ -49,7 +49,7 @@ const App: React.FC = () => {
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
@@ -62,10 +62,10 @@ const App: React.FC = () => {
 
     // Gamification hook
     const handleGamificationStatsUpdate = useCallback((stats: Stats) => {
-        if (user) {
+        if (user && profileLoaded) {
             updateCloudStats(stats);
         }
-    }, [user, updateCloudStats]);
+    }, [user, profileLoaded, updateCloudStats]);
 
     const gamification = useGamification(activeStats, handleGamificationStatsUpdate);
     const { entries: leaderboard, userRank, loading: leaderboardLoading, updateUserScore } = useLeaderboard(user?.uid);
@@ -73,7 +73,7 @@ const App: React.FC = () => {
 
     // Update leaderboard score when stats change (Debounced 30s)
     useEffect(() => {
-        if (user && activeStats.points !== undefined) {
+        if (user && activeStats.points !== undefined && profileLoaded) {
             const now = Date.now();
             // Only update if 30s passed to save reads/writes
             if (now - lastLeaderboardUpdateRef.current > 30000) {
@@ -94,7 +94,7 @@ const App: React.FC = () => {
 
     // Check and update streak on app load
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading) {
+        if (user && !authLoading && !itemsLoading && profileLoaded) {
             const updatedStats = gamification.checkAndUpdateStreak(activeStats);
             if (updatedStats !== activeStats) {
                 updateCloudStats(updatedStats);
@@ -138,7 +138,7 @@ const App: React.FC = () => {
 
     // One-time migration: Firebase legado -> IndexedDB local
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading && needsMigration()) {
+        if (user && !authLoading && !itemsLoading && profileLoaded && needsMigration()) {
             console.log('🔄 Migração necessária, iniciando...');
             migrateFromFirebase().then(result => {
                 if (result.success && result.itemCount > 0) {
@@ -243,13 +243,14 @@ const App: React.FC = () => {
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
 
             const newStats: Stats = {
+                ...prev, // Preserva todos os campos existentes (lastLoginDate, studyMoreIds, etc.)
                 correct: (prev.correct || 0) + (isCorrect ? 1 : 0),
                 wrong: (prev.wrong || 0) + (!isCorrect ? 1 : 0),
                 history: !isCorrect
                     ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
                 wordCounts: { ...currentCounts, [word]: newCount },
-                // Preserve gamification fields
+                // Sobrescreve com campos de gamification atualizados
                 ...gamification.getUpdatedStats()
             };
             updateCloudStats(newStats);
@@ -466,7 +467,7 @@ const App: React.FC = () => {
     };
 
     // Show IntroScreen on app load (for logged-in users)
-    if (showIntro && user && !authLoading && !itemsLoading) {
+    if (showIntro && user && !authLoading && !itemsLoading && profileLoaded) {
         return (
             <IntroScreen
                 stats={activeStats}
