@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, SupportedLanguage } from '../types';
@@ -16,6 +16,10 @@ const SUPPORTED_LANGUAGES: { code: SupportedLanguage; label: string }[] = [
     { code: 'en', label: 'English (Inglês)' },
     { code: 'pt', label: 'Português' },
 ];
+
+// Normalize text: remove diacritics/accents (e.g. "hǎo" -> "hao")
+const normalize = (text: string) =>
+    text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
 interface ReviewViewProps {
     data: StudyItem[];
@@ -35,6 +39,10 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
     const [editingLangId, setEditingLangId] = useState<string | null>(null);
     const [editingContextId, setEditingContextId] = useState<string | null>(null);
     const [editedContext, setEditedContext] = useState('');
+    const [searchQuery, setSearchQuery] = useState('');
+    const [highlightedId, setHighlightedId] = useState<string | null>(null);
+    const [matchedIds, setMatchedIds] = useState<string[]>([]);
+    const [matchIndex, setMatchIndex] = useState(0);
 
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {
@@ -167,6 +175,55 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
 
     const [showBulkLangDropdown, setShowBulkLangDropdown] = useState(false);
 
+    const handleSearch = useCallback((query: string) => {
+        setSearchQuery(query);
+        if (!query.trim()) {
+            setHighlightedId(null);
+            setMatchedIds([]);
+            setMatchIndex(0);
+            return;
+        }
+        const q = normalize(query.trim());
+        const matches = savedItems.filter(item =>
+            normalize(item.word).includes(q) ||
+            normalize(item.pinyin).includes(q) ||
+            normalize(item.meaning).includes(q)
+        );
+        setMatchedIds(matches.map(m => m.id));
+        setMatchIndex(0);
+        if (matches.length > 0) {
+            setHighlightedId(matches[0].id);
+        } else {
+            setHighlightedId(null);
+        }
+    }, [savedItems]);
+
+    const handleNextMatch = useCallback(() => {
+        if (matchedIds.length === 0) return;
+        const nextIdx = (matchIndex + 1) % matchedIds.length;
+        setMatchIndex(nextIdx);
+        setHighlightedId(matchedIds[nextIdx]);
+    }, [matchedIds, matchIndex]);
+
+    const handlePrevMatch = useCallback(() => {
+        if (matchedIds.length === 0) return;
+        const prevIdx = (matchIndex - 1 + matchedIds.length) % matchedIds.length;
+        setMatchIndex(prevIdx);
+        setHighlightedId(matchedIds[prevIdx]);
+    }, [matchedIds, matchIndex]);
+
+    // Scroll to highlighted item after render
+    useEffect(() => {
+        if (!highlightedId) return;
+        const timer = setTimeout(() => {
+            const el = document.getElementById(`review-item-${highlightedId}`);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 100);
+        return () => clearTimeout(timer);
+    }, [highlightedId]);
+
     const handleBulkLanguageChange = (newLang: SupportedLanguage) => {
         if (!onUpdateLanguage || selectedIds.size === 0) return;
 
@@ -189,6 +246,40 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                     <Icon name="bookmark" size={20} className="text-brand-600" />
                     Revisão ({savedItems.length})
                 </h2>
+
+                {/* Campo de pesquisa */}
+                <div className="flex items-center gap-1.5 px-2 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors flex-1 mx-2 max-w-[220px]">
+                    <Icon name="search" size={15} className="text-slate-400 flex-shrink-0" />
+                    <input
+                        type="text"
+                        value={searchQuery}
+                        onChange={(e) => handleSearch(e.target.value)}
+                        placeholder="Pesquisar..."
+                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 outline-none w-full"
+                    />
+                    {searchQuery && (
+                        <>
+                            {matchedIds.length > 0 && (
+                                <span className="text-[10px] text-slate-500 font-semibold whitespace-nowrap flex-shrink-0">
+                                    {matchIndex + 1}/{matchedIds.length}
+                                </span>
+                            )}
+                            {matchedIds.length > 1 && (
+                                <div className="flex flex-col flex-shrink-0 -gap-0.5">
+                                    <button onClick={handlePrevMatch} className="text-slate-400 hover:text-brand-600 leading-none p-0" title="Anterior">
+                                        <Icon name="chevron-up" size={13} />
+                                    </button>
+                                    <button onClick={handleNextMatch} className="text-slate-400 hover:text-brand-600 leading-none p-0" title="Próximo">
+                                        <Icon name="chevron-down" size={13} />
+                                    </button>
+                                </div>
+                            )}
+                            <button onClick={() => handleSearch('')} className="text-slate-400 hover:text-slate-600 flex-shrink-0">
+                                <Icon name="x" size={13} />
+                            </button>
+                        </>
+                    )}
+                </div>
 
                 {!selectionMode ? (
                     <button
@@ -277,9 +368,11 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                 return (
                     <div
                         key={item.id}
-                        className={`rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-200 ${isSelected ? 'border-red-400 bg-red-50'
-                            : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
-                                : 'bg-white border-slate-100'
+                        id={`review-item-${item.id}`}
+                        className={`rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-300 ${isSelected ? 'border-red-400 bg-red-50'
+                            : highlightedId === item.id ? 'border-brand-500 bg-brand-50 ring-2 ring-brand-300'
+                                : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
+                                    : 'bg-white border-slate-100'
                             }`}
                     >
                         {/* CABEÇALHO */}
