@@ -43,6 +43,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
     const [highlightedId, setHighlightedId] = useState<string | null>(null);
     const [matchedIds, setMatchedIds] = useState<string[]>([]);
     const [matchIndex, setMatchIndex] = useState(0);
+    const [searchActive, setSearchActive] = useState(false);
 
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {
@@ -240,6 +241,53 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
 
     return (
         <div className="p-4 space-y-3 pb-24">
+            {/* Barra de pesquisa sticky (visível apenas quando pesquisa ativa) */}
+            {searchActive && (
+                <div className="sticky top-0 z-50 -mx-4 px-4 py-2.5 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+                    <div className="flex items-center gap-2">
+                        <Icon name="search" size={18} className="text-brand-500 flex-shrink-0" />
+                        <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => handleSearch(e.target.value)}
+                            placeholder="Pesquisar..."
+                            className="bg-slate-100 text-base text-slate-700 placeholder-slate-400 outline-none w-full px-3 py-2 rounded-xl focus:ring-2 focus:ring-brand-300 transition-all"
+                            autoFocus
+                        />
+                        {matchedIds.length > 0 && (
+                            <span className="text-xs text-slate-500 font-bold whitespace-nowrap flex-shrink-0">
+                                {matchIndex + 1}/{matchedIds.length}
+                            </span>
+                        )}
+                        {matchedIds.length > 1 && (
+                            <div className="flex items-center gap-1 flex-shrink-0">
+                                <button
+                                    onClick={handlePrevMatch}
+                                    className="p-1.5 rounded-lg text-slate-500 hover:text-brand-600 hover:bg-brand-50 transition-colors"
+                                    title="Anterior"
+                                >
+                                    <Icon name="chevron-up" size={20} />
+                                </button>
+                                <button
+                                    onClick={handleNextMatch}
+                                    className="p-1.5 rounded-lg text-slate-500 hover:text-brand-600 hover:bg-brand-50 transition-colors"
+                                    title="Próximo"
+                                >
+                                    <Icon name="chevron-down" size={20} />
+                                </button>
+                            </div>
+                        )}
+                        <button
+                            onClick={() => { handleSearch(''); setSearchActive(false); }}
+                            className="p-1.5 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors flex-shrink-0"
+                            title="Fechar pesquisa"
+                        >
+                            <Icon name="x" size={18} />
+                        </button>
+                    </div>
+                </div>
+            )}
+
             {/* Header com botão de seleção */}
             <div className="flex items-center justify-between mb-4">
                 <h2 className="font-bold text-slate-800 text-lg flex items-center gap-2">
@@ -247,55 +295,34 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
                     Revisão ({savedItems.length})
                 </h2>
 
-                {/* Campo de pesquisa */}
-                <div className="flex items-center gap-1.5 px-2 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors flex-1 mx-2 max-w-[220px]">
-                    <Icon name="search" size={15} className="text-slate-400 flex-shrink-0" />
-                    <input
-                        type="text"
-                        value={searchQuery}
-                        onChange={(e) => handleSearch(e.target.value)}
-                        placeholder="Pesquisar..."
-                        className="bg-transparent text-sm text-slate-700 placeholder-slate-400 outline-none w-full"
-                    />
-                    {searchQuery && (
-                        <>
-                            {matchedIds.length > 0 && (
-                                <span className="text-[10px] text-slate-500 font-semibold whitespace-nowrap flex-shrink-0">
-                                    {matchIndex + 1}/{matchedIds.length}
-                                </span>
-                            )}
-                            {matchedIds.length > 1 && (
-                                <div className="flex flex-col flex-shrink-0 -gap-0.5">
-                                    <button onClick={handlePrevMatch} className="text-slate-400 hover:text-brand-600 leading-none p-0" title="Anterior">
-                                        <Icon name="chevron-up" size={13} />
-                                    </button>
-                                    <button onClick={handleNextMatch} className="text-slate-400 hover:text-brand-600 leading-none p-0" title="Próximo">
-                                        <Icon name="chevron-down" size={13} />
-                                    </button>
-                                </div>
-                            )}
-                            <button onClick={() => handleSearch('')} className="text-slate-400 hover:text-slate-600 flex-shrink-0">
-                                <Icon name="x" size={13} />
-                            </button>
-                        </>
+                <div className="flex items-center gap-2">
+                    {/* Botão de pesquisa (quando não está pesquisando) */}
+                    {!searchActive && (
+                        <button
+                            onClick={() => setSearchActive(true)}
+                            className="p-1.5 rounded-lg text-slate-400 hover:text-brand-600 hover:bg-brand-50 transition-colors"
+                            title="Pesquisar"
+                        >
+                            <Icon name="search" size={18} />
+                        </button>
+                    )}
+
+                    {!selectionMode ? (
+                        <button
+                            onClick={() => setSelectionMode(true)}
+                            className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                        >
+                            Selecionar
+                        </button>
+                    ) : (
+                        <button
+                            onClick={cancelSelection}
+                            className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                        >
+                            Cancelar
+                        </button>
                     )}
                 </div>
-
-                {!selectionMode ? (
-                    <button
-                        onClick={() => setSelectionMode(true)}
-                        className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
-                    >
-                        Selecionar
-                    </button>
-                ) : (
-                    <button
-                        onClick={cancelSelection}
-                        className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
-                    >
-                        Cancelar
-                    </button>
-                )}
             </div>
 
             {/* Barra de ações quando em modo seleção */}

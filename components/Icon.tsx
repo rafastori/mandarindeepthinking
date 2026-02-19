@@ -48,7 +48,9 @@ import {
     Filter,
     Square,
     FolderInput,
-    ArrowLeftRight
+    ArrowLeftRight,
+    Search,
+    ChevronUp
 } from 'lucide-react';
 
 export interface IconProps {
@@ -107,7 +109,9 @@ const icons: Record<string, React.ElementType> = {
     'filter': Filter,
     'square': Square,
     'folder-input': FolderInput,
-    'arrow-left-right': ArrowLeftRight
+    'arrow-left-right': ArrowLeftRight,
+    'search': Search,
+    'chevron-up': ChevronUp
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
