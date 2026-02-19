@@ -18,7 +18,7 @@ const MIGRATION_KEY = 'localFirstMigrated';
 export interface CloudSyncResult {
     backupToCloud: () => Promise<boolean>;
     restoreFromCloud: () => Promise<{ success: boolean; itemCount: number }>;
-    migrateFromFirebase: () => Promise<{ success: boolean; itemCount: number }>;
+    migrateFromFirebase: () => Promise<{ success: boolean; itemCount: number; hasData: boolean }>;
     needsMigration: () => boolean;
     isSyncing: boolean;
     lastBackupAt: string | null;
@@ -116,65 +116,108 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
     }, [userId]);
 
     /**
-     * Migração one-time: Lê dados do Firebase legado (coleção items + doc de perfil)
-     * e importa para o IndexedDB local. Também cria o primeiro backup blob.
+     * Migração para dispositivo novo ou primeira vez após atualização local-first.
+     * 
+     * Estratégia: Tenta backup blob PRIMEIRO (mais recente), senão lê Firebase legado.
+     * Isso garante que dados novos (criados após a primeira migração) não se percam.
      */
-    const migrateFromFirebase = useCallback(async (): Promise<{ success: boolean; itemCount: number }> => {
-        if (!userId) return { success: false, itemCount: 0 };
+    const migrateFromFirebase = useCallback(async (): Promise<{ success: boolean; itemCount: number; hasData: boolean }> => {
+        if (!userId) return { success: false, itemCount: 0, hasData: false };
 
         setIsSyncing(true);
         try {
-            console.log('🔄 Iniciando migração do Firebase para local...');
+            console.log('🔄 Iniciando migração para dispositivo local...');
 
-            // 1. Lê todos os itens da coleção legada
-            const itemsQuery = query(
-                collection(db, 'users', userId, 'items'),
-                orderBy('createdAt', 'desc')
-            );
-            const itemsSnap = await getDocs(itemsQuery);
-            const items: StudyItem[] = itemsSnap.docs.map(d => ({
-                id: d.id,
-                ...d.data()
-            } as StudyItem));
+            let items: StudyItem[] = [];
+            let profile: LocalProfile = localDB.getDefaultProfile();
+            let source = 'none';
 
-            // 2. Lê o perfil legado (doc do usuário)
-            const userDocSnap = await getDoc(doc(db, 'users', userId));
-            const userData = userDocSnap.exists() ? userDocSnap.data() : {};
+            // 1. Tenta restaurar do backup blob (dados mais recentes)
+            try {
+                const backupRef = doc(db, 'users', userId, 'backups', 'data');
+                const backupSnap = await getDoc(backupRef);
 
-            const profile: LocalProfile = {
-                savedIds: userData.savedIds || [],
-                stats: userData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] },
-                totalScore: userData.totalScore || 0,
-                activeFolderFilters: userData.activeFolderFilters || [],
-                lastBackupAt: new Date().toISOString(),
-            };
+                if (backupSnap.exists()) {
+                    const backupData = backupSnap.data();
+                    items = backupData.items || [];
+                    profile = backupData.profile || localDB.getDefaultProfile();
+                    source = 'backup-blob';
+                    console.log(`📦 Backup blob encontrado: ${items.length} itens, ${profile.stats?.points || 0} pontos`);
+                }
+            } catch (e) {
+                console.warn('Erro ao ler backup blob, tentando Firebase legado...', e);
+            }
 
-            // 3. Salva no IndexedDB local
+            // 2. Se não encontrou backup blob, tenta Firebase legado
+            if (source === 'none') {
+                try {
+                    const itemsQuery = query(
+                        collection(db, 'users', userId, 'items'),
+                        orderBy('createdAt', 'desc')
+                    );
+                    const itemsSnap = await getDocs(itemsQuery);
+                    items = itemsSnap.docs.map(d => ({
+                        id: d.id,
+                        ...d.data()
+                    } as StudyItem));
+
+                    const userDocSnap = await getDoc(doc(db, 'users', userId));
+                    const userData = userDocSnap.exists() ? userDocSnap.data() : {};
+
+                    profile = {
+                        savedIds: userData.savedIds || [],
+                        stats: userData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] },
+                        totalScore: userData.totalScore || 0,
+                        activeFolderFilters: userData.activeFolderFilters || [],
+                        lastBackupAt: new Date().toISOString(),
+                    };
+
+                    source = 'firebase-legacy';
+                    console.log(`📂 Firebase legado: ${items.length} itens, ${profile.stats?.points || 0} pontos`);
+                } catch (e) {
+                    console.warn('Erro ao ler Firebase legado:', e);
+                }
+            }
+
+            // 3. Verifica se há dados para migrar (itens OU stats com progresso)
+            const hasData = items.length > 0 ||
+                (profile.stats?.correct || 0) > 0 ||
+                (profile.stats?.points || 0) > 0 ||
+                (profile.totalScore || 0) > 0;
+
+            if (!hasData) {
+                console.log('📭 Nenhum dado encontrado para migrar (usuário novo).');
+                localStorage.setItem(`${MIGRATION_KEY}_${userId}`, new Date().toISOString());
+                return { success: true, itemCount: 0, hasData: false };
+            }
+
+            // 4. Salva no IndexedDB local
             await localDB.importAll({ items, profile });
 
-            // 4. Cria primeiro backup no novo formato (blob)
-            const backupData = {
-                version: '2.0.0',
-                backedUpAt: new Date().toISOString(),
-                itemCount: items.length,
-                items: items,
-                profile: profile,
-                migratedFrom: 'firebase-legacy',
-            };
-            const backupRef = doc(db, 'users', userId, 'backups', 'data');
-            await setDoc(backupRef, backupData);
+            // 5. Se veio do Firebase legado, cria backup blob para próximo dispositivo
+            if (source === 'firebase-legacy') {
+                const backupData = {
+                    version: '2.0.0',
+                    backedUpAt: new Date().toISOString(),
+                    itemCount: items.length,
+                    items: items,
+                    profile: profile,
+                    migratedFrom: source,
+                };
+                const backupRef = doc(db, 'users', userId, 'backups', 'data');
+                await setDoc(backupRef, backupData);
+            }
 
-            // 5. Marca como migrado
+            // 6. Marca como migrado
             localStorage.setItem(`${MIGRATION_KEY}_${userId}`, new Date().toISOString());
 
-            console.log(`✅ Migração concluída: ${items.length} itens migrados para local + backup criado.`);
-            return { success: true, itemCount: items.length };
+            console.log(`✅ Migração concluída (${source}): ${items.length} itens, ${profile.stats?.points || 0} pontos.`);
+            return { success: true, itemCount: items.length, hasData: true };
 
         } catch (error) {
             console.error('Erro na migração:', error);
-            // Marca como migrado mesmo em caso de erro para não travar o app
             localStorage.setItem(`${MIGRATION_KEY}_${userId}`, 'error');
-            return { success: false, itemCount: 0 };
+            return { success: false, itemCount: 0, hasData: false };
         } finally {
             setIsSyncing(false);
         }

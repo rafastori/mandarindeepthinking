@@ -54,6 +54,9 @@ const App: React.FC = () => {
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
 
+    // Bloqueia operações de stats até migração completar (evita zerar dados em dispositivo novo)
+    const [migrationDone, setMigrationDone] = useState(false);
+
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
 
@@ -62,10 +65,10 @@ const App: React.FC = () => {
 
     // Gamification hook
     const handleGamificationStatsUpdate = useCallback((stats: Stats) => {
-        if (user && profileLoaded) {
+        if (user && profileLoaded && migrationDone) {
             updateCloudStats(stats);
         }
-    }, [user, profileLoaded, updateCloudStats]);
+    }, [user, profileLoaded, migrationDone, updateCloudStats]);
 
     const gamification = useGamification(activeStats, handleGamificationStatsUpdate);
     const { entries: leaderboard, userRank, loading: leaderboardLoading, updateUserScore } = useLeaderboard(user?.uid);
@@ -73,7 +76,7 @@ const App: React.FC = () => {
 
     // Update leaderboard score when stats change (Debounced 30s)
     useEffect(() => {
-        if (user && activeStats.points !== undefined && profileLoaded) {
+        if (user && activeStats.points !== undefined && profileLoaded && migrationDone) {
             const now = Date.now();
             // Only update if 30s passed to save reads/writes
             if (now - lastLeaderboardUpdateRef.current > 30000) {
@@ -94,7 +97,7 @@ const App: React.FC = () => {
 
     // Check and update streak on app load
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading && profileLoaded) {
+        if (user && !authLoading && !itemsLoading && profileLoaded && migrationDone) {
             const updatedStats = gamification.checkAndUpdateStreak(activeStats);
             if (updatedStats !== activeStats) {
                 updateCloudStats(updatedStats);
@@ -136,19 +139,33 @@ const App: React.FC = () => {
         }
     }, [user]);
 
-    // One-time migration: Firebase legado -> IndexedDB local
+    // One-time migration: Firebase/Cloud -> IndexedDB local
+    // CRITICAL: Deve rodar ANTES de qualquer efeito que escreva stats
     useEffect(() => {
-        if (user && !authLoading && !itemsLoading && profileLoaded && needsMigration()) {
+        if (!user || authLoading) return;
+
+        if (needsMigration()) {
             console.log('🔄 Migração necessária, iniciando...');
             migrateFromFirebase().then(result => {
-                if (result.success && result.itemCount > 0) {
-                    console.log(`✅ Migração automática concluída: ${result.itemCount} itens`);
-                    window.location.reload(); // Recarrega para refletir dados migrados
+                if (result.success) {
+                    if (result.hasData) {
+                        console.log('✅ Migração concluída, recarregando...');
+                        window.location.reload();
+                    } else {
+                        // Usuário novo sem dados — pode prosseguir normalmente
+                        setMigrationDone(true);
+                    }
+                } else {
+                    // Erro na migração — prossegue com dados locais (vazios)
+                    setMigrationDone(true);
                 }
             });
+        } else {
+            // Já foi migrado anteriormente — segue normal
+            setMigrationDone(true);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [user, authLoading, itemsLoading]);
+    }, [user, authLoading]);
 
     // Reset game selection when changing tabs
     useEffect(() => {
