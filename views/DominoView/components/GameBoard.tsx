@@ -36,125 +36,49 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 }) => {
     const [selectedPiece, setSelectedPiece] = useState<DominoPieceType | null>(null);
     const [localHand, setLocalHand] = useState<DominoPieceType[] | null>(null);
-    const [dragOverTrain, setDragOverTrain] = useState<string | null>(null);
-    const [draggingPieceId, setDraggingPieceId] = useState<string | null>(null);
 
     const [showHandModal, setShowHandModal] = useState(false);
     const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
     const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
-    const [focusedTrainId, setFocusedTrainId] = useState<string | null>(null); // null = My Train
     const [autoPassPending, setAutoPassPending] = useState(false);
-    const [turnTimer, setTurnTimer] = useState(60); // 60 segundos por turno
+    const [turnTimer, setTurnTimer] = useState(60);
 
-    // TTS Hook
     const { speakSequence, speak } = usePuterSpeech();
-
-    // Auto-scroll ref
-    const trainRefs = React.useRef<{ [key: string]: HTMLDivElement | null }>({});
-
-    // Keep track of focused index for each train to "Scale Up" the center piece
-    // Key: trainId, Value: focused index
-    // Using a map ref to avoid re-renders on every scroll event
-    const focusedIndicesRef = useRef<{ [trainId: string]: number }>({});
-    const [, setForceUpdate] = useState(0); // Force render for scroll updates if we want smooth react state
-
-    const handleTrainScroll = (trainId: string) => {
-        const container = trainRefs.current[trainId];
-        if (!container) return;
-
-        const center = container.scrollLeft + container.clientWidth / 2;
-        const children = Array.from(container.children);
-
-        // Find closest child to center
-        let closestIndex = -1;
-        let minDistance = Infinity;
-
-        children.forEach((child, index) => {
-            if (!(child instanceof HTMLElement)) return;
-            // Ignore spacers/padding at start/end if any
-            const childCenter = child.offsetLeft + child.offsetWidth / 2;
-            const distance = Math.abs(center - childCenter);
-            if (distance < minDistance) {
-                minDistance = distance;
-                closestIndex = index;
-            }
-        });
-
-        if (focusedIndicesRef.current[trainId] !== closestIndex) {
-            focusedIndicesRef.current[trainId] = closestIndex;
-            // Debounce or optimize this? For now, request animation frame or simple state set
-            // Ideally we animate via CSS based on scroll-position, but that is complex.
-            // Let's force re-render to apply 'scale' classes.
-            setForceUpdate(prev => prev + 1);
-        }
-    };
-
-    // Track open trains to detect new opens
     const prevOpenTrainsRef = useRef<Set<string>>(new Set());
 
-    // Sound alert when a train becomes open
+    // Sound effects
     const playTrainOpenSound = () => {
         try {
-            const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-            const oscillator = audioContext.createOscillator();
-            const gainNode = audioContext.createGain();
-
-            oscillator.connect(gainNode);
-            gainNode.connect(audioContext.destination);
-
-            // Alert sound: descending notes
-            oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime); // E5
-            oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime + 0.15); // C5
-            oscillator.frequency.setValueAtTime(392, audioContext.currentTime + 0.3); // G4
-
-            gainNode.gain.setValueAtTime(0.15, audioContext.currentTime);
-            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.45);
-
-            oscillator.start(audioContext.currentTime);
-            oscillator.stop(audioContext.currentTime + 0.45);
-        } catch (e) {
-            // Audio not supported
-        }
+            const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.frequency.setValueAtTime(659.25, ctx.currentTime);
+            osc.frequency.setValueAtTime(523.25, ctx.currentTime + 0.15);
+            osc.frequency.setValueAtTime(392, ctx.currentTime + 0.3);
+            gain.gain.setValueAtTime(0.15, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.45);
+            osc.start(ctx.currentTime);
+            osc.stop(ctx.currentTime + 0.45);
+        } catch (e) { }
     };
 
-    // Detect when trains become open
     useEffect(() => {
         const currentlyOpenTrains = new Set(
             room.trains.filter(t => t.isOpen && t.ownerId !== null).map(t => t.id)
         );
-
-        // Check for newly opened trains
         currentlyOpenTrains.forEach(trainId => {
             if (!prevOpenTrainsRef.current.has(trainId)) {
-                // This train just opened - play sound
                 const train = room.trains.find(t => t.id === trainId);
                 const owner = train?.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
-
                 playTrainOpenSound();
-
-                // Optional: TTS announcement
                 if (owner && owner.id !== currentUserId) {
-                    setTimeout(() => {
-                        speak(`${owner.name.split(' ')[0]} deixou o trem aberto`, 'pt');
-                    }, 500);
+                    setTimeout(() => speak(`${owner.name.split(' ')[0]} deixou o trem aberto`, 'pt'), 500);
                 }
             }
         });
-
         prevOpenTrainsRef.current = currentlyOpenTrains;
-    }, [room.trains]);
-
-    // Auto-scroll to end of my train when piece added
-    useEffect(() => {
-        const myTrain = room.trains.find(t => t.ownerId === currentUserId);
-        if (myTrain && trainRefs.current[myTrain.id]) {
-            setTimeout(() => {
-                trainRefs.current[myTrain.id]?.scrollTo({
-                    left: trainRefs.current[myTrain.id]?.scrollWidth,
-                    behavior: 'smooth'
-                });
-            }, 100);
-        }
     }, [room.trains]);
 
     const isMyTurn = room.currentTurn === currentUserId;
@@ -163,97 +87,64 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const myHand = localHand || serverHand;
     const currentTurnPlayer = room.players.find(p => p.id === room.currentTurn);
 
-    // Turn timer - reset when turn changes, countdown each second
-    useEffect(() => {
-        setTurnTimer(60); // Reset timer when turn changes
-    }, [room.currentTurn]);
+    useEffect(() => { setTurnTimer(60); }, [room.currentTurn]);
 
     useEffect(() => {
         if (room.phase !== 'playing') return;
-
         const interval = setInterval(() => {
             setTurnTimer(prev => {
                 if (prev <= 1) {
-                    // Timer expired - if it's my turn, draw a card first then pass
                     if (isMyTurn) {
-                        // Draw a card if boneyard has cards, then pass
                         if (room.boneyard.length > 0) {
-                            onDrawPiece().then(() => {
-                                // After drawing, pass the turn
-                                setTimeout(() => onPassTurn(), 500);
-                            });
-                        } else {
-                            // No cards to draw, just pass
-                            onPassTurn();
-                        }
+                            onDrawPiece().then(() => setTimeout(() => onPassTurn(), 500));
+                        } else onPassTurn();
                     }
-                    return 60; // Reset
+                    return 60;
                 }
                 return prev - 1;
             });
         }, 1000);
-
         return () => clearInterval(interval);
     }, [room.phase, room.boneyard.length, isMyTurn, onPassTurn, onDrawPiece]);
 
-    // Sync local hand with server when server changes
     useEffect(() => {
         if (JSON.stringify(serverHand.map(p => p.id)) !== JSON.stringify(localHand?.map(p => p.id))) {
             setLocalHand(null);
         }
     }, [serverHand]);
 
-    // Track players with one piece for "Uno!" style alert
     const playersWithOnePieceRef = useRef<Set<string>>(new Set());
-
-    // Alert when a player has only one piece left
     useEffect(() => {
         if (room.phase !== 'playing') return;
-
         room.players.forEach(player => {
             if (player.hand.length === 1 && !playersWithOnePieceRef.current.has(player.id)) {
-                // Player just got to 1 piece - announce!
                 playersWithOnePieceRef.current.add(player.id);
-
-                // Play alert sound
                 try {
-                    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-                    // Dramatic rising notes
-                    const notes = [440, 554.37, 659.25, 880]; // A4, C#5, E5, A5
+                    const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+                    const notes = [440, 554.37, 659.25, 880];
                     notes.forEach((freq, i) => {
-                        const osc = audioContext.createOscillator();
-                        const gain = audioContext.createGain();
+                        const osc = ctx.createOscillator();
+                        const gain = ctx.createGain();
                         osc.connect(gain);
-                        gain.connect(audioContext.destination);
-                        osc.type = 'sine';
-                        osc.frequency.setValueAtTime(freq, audioContext.currentTime + i * 0.1);
-                        gain.gain.setValueAtTime(0.15, audioContext.currentTime + i * 0.1);
-                        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + i * 0.1 + 0.15);
-                        osc.start(audioContext.currentTime + i * 0.1);
-                        osc.stop(audioContext.currentTime + i * 0.1 + 0.15);
+                        gain.connect(ctx.destination);
+                        osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.1);
+                        gain.gain.setValueAtTime(0.15, ctx.currentTime + i * 0.1);
+                        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.1 + 0.15);
+                        osc.start(ctx.currentTime + i * 0.1);
+                        osc.stop(ctx.currentTime + i * 0.1 + 0.15);
                     });
                 } catch (e) { }
-
-                // TTS announcement
-                const playerName = player.name.split(' ')[0];
                 const isMe = player.id === currentUserId;
-                const message = isMe
-                    ? 'Atenção! Você tem apenas uma peça!'
-                    : `Atenção! ${playerName} tem apenas uma peça!`;
-
-                setTimeout(() => {
-                    speak(message, 'pt');
-                }, 500);
+                const msg = isMe ? 'Atenção! Você tem apenas uma peça!' : `Atenção! ${player.name.split(' ')[0]} tem apenas uma peça!`;
+                setTimeout(() => speak(msg, 'pt'), 500);
             }
-
-            // Remove from set if player has more than 1 piece again (drew a piece)
             if (player.hand.length > 1 && playersWithOnePieceRef.current.has(player.id)) {
                 playersWithOnePieceRef.current.delete(player.id);
             }
         });
     }, [room.players, room.phase, currentUserId, speak]);
 
-    const canPlayOnTrain = (piece: DominoPieceType, train: Train): { canPlay: boolean; needsFlip: boolean } => {
+    const canPlayOnTrain = (piece: DominoPieceType, train: Train) => {
         const targetIndex = train.openEndIndex;
         if (piece.leftIndex === targetIndex) return { canPlay: true, needsFlip: false };
         if (piece.rightIndex === targetIndex) return { canPlay: true, needsFlip: true };
@@ -273,49 +164,29 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         setSelectedPiece(selectedPiece?.id === piece.id ? null : piece);
     };
 
-    const handlePlaceOnTrain = async (train: Train, pieceId?: string) => {
-        const piece = pieceId
-            ? myHand.find(p => p.id === pieceId)
-            : selectedPiece;
-
-        if (!piece || !isMyTurn) return;
-
-        const { canPlay, needsFlip } = canPlayOnTrain(piece, train);
+    const handlePlaceOnTrain = async (train: Train) => {
+        if (!selectedPiece || !isMyTurn) return;
+        const { canPlay, needsFlip } = canPlayOnTrain(selectedPiece, train);
         if (!canPlay) return;
 
-        // Get the connected index to find the term pair
         const connectedIndex = train.openEndIndex;
-
-        // Find the term pair for this index
         const termPair = room.termPairs.find(tp => tp.index === connectedIndex);
-        const originalTerm = termPair?.term || '';    // Word in game language (e.g., "Übersetzung")
-        const translation = termPair?.definition || ''; // Translation in Portuguese (e.g., "tradução")
+        const originalTerm = termPair?.term || '';
+        const translation = termPair?.definition || '';
 
-        const success = await onPlacePiece(piece.id, train.id, needsFlip);
+        const success = await onPlacePiece(selectedPiece.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
             setLocalHand(null);
 
-            // TTS: Speak original term in game language, then translation in Portuguese
-            // Only for human players (not bots)
             if (originalTerm && translation) {
-                // For language context, use the game language. For other contexts (Biology, Medicine, etc.), use Portuguese
                 const isLanguageContext = room.config.context === 'language';
                 const termLang = isLanguageContext ? (room.config.sourceLang || 'pt') : 'pt';
-
-                // Only speak translation if it's not too long and different from original
                 const translationToSpeak = translation.length <= 50 ? translation : '';
                 const shouldSpeakTranslation = translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase();
 
-                // Use speakSequence to wait for each TTS to finish
-                const sequence: Array<{ text: string; language: any }> = [
-                    { text: originalTerm, language: termLang }
-                ];
-
-                if (shouldSpeakTranslation) {
-                    sequence.push({ text: translationToSpeak, language: 'pt' });
-                }
-
+                const sequence: Array<{ text: string; language: any }> = [{ text: originalTerm, language: termLang }];
+                if (shouldSpeakTranslation) sequence.push({ text: translationToSpeak, language: 'pt' });
                 speakSequence(sequence);
             }
         }
@@ -325,31 +196,17 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         if (!isMyTurn || room.boneyard.length === 0) return;
         const drawnPiece = await onDrawPiece();
         setLocalHand(null);
-
-        // After drawing, check if the drawn piece can be played
         if (drawnPiece) {
-            // Check if this piece can play on any valid train
-            const validTrains = room.trains.filter(train => {
-                const isMexican = train.ownerId === null;
-                const isMine = train.ownerId === currentUserId;
-                return isMexican || isMine || train.isOpen;
-            });
-
-            let canPlay = false;
-            for (const train of validTrains) {
-                if (drawnPiece.leftIndex === train.openEndIndex || drawnPiece.rightIndex === train.openEndIndex) {
-                    canPlay = true;
-                    break;
-                }
-            }
-
-            // If can't play drawn piece, auto-pass after 0.5s
+            const validTrains = room.trains.filter(train => train.ownerId === null || train.ownerId === currentUserId || train.isOpen);
+            let canPlay = validTrains.some(train => drawnPiece.leftIndex === train.openEndIndex || drawnPiece.rightIndex === train.openEndIndex);
             if (!canPlay) {
                 setAutoPassPending(true);
                 setTimeout(() => {
                     setAutoPassPending(false);
                     onPassTurn();
                 }, 500);
+            } else {
+                setSelectedPiece(drawnPiece);
             }
         }
     };
@@ -360,504 +217,237 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         onPassTurn();
     };
 
-    const handleReorderHand = (newOrder: DominoPieceType[]) => {
-        setLocalHand(newOrder);
-        onReorderHand?.(newOrder);
-    };
-
-    // Drag and drop handlers for trains
-    const handleDragOver = (e: React.DragEvent, trainId: string) => {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = 'move';
-        setDragOverTrain(trainId);
-    };
-
-    const handleDragLeave = () => {
-        setDragOverTrain(null);
-    };
-
-    const handleDropOnTrain = async (e: React.DragEvent, train: Train) => {
-        e.preventDefault();
-        setDragOverTrain(null);
-
-        const pieceId = e.dataTransfer.getData('text/plain');
-        if (pieceId) {
-            await handlePlaceOnTrain(train, pieceId);
-        }
-    };
-
-    const handleHandDragStart = (pieceId: string) => {
-        setDraggingPieceId(pieceId);
-    };
-
-    const handleHandDragEnd = () => {
-        setDraggingPieceId(null);
-    };
-
-    const effectiveSelectedPiece = draggingPieceId
-        ? myHand.find(p => p.id === draggingPieceId) || null
-        : selectedPiece;
-
-    const playableTrains = effectiveSelectedPiece ? getPlayableTrains(effectiveSelectedPiece) : [];
+    const playableTrains = selectedPiece ? getPlayableTrains(selectedPiece) : [];
     const playablePieceIds = myHand.filter(p => getPlayableTrains(p).length > 0).map(p => p.id);
     const hasPlayablePiece = playablePieceIds.length > 0;
 
     return (
-        <div className="h-full flex flex-col bg-gradient-to-b from-slate-100 to-slate-200 overflow-hidden">
-            {/* Header */}
-            <div className="flex-shrink-0 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 p-2 shadow-lg z-10">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur">
-                            <span className="text-lg">🎲</span>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-white text-xs leading-none">Dominó</h2>
-                            <div className="flex items-center gap-1.5 mt-0.5">
-                                <span className={`w-1.5 h-1.5 rounded-full ${isMyTurn ? 'bg-green-400 animate-pulse' : 'bg-white/30'}`} />
-                                <p className="text-white/90 text-[10px] font-medium leading-none">
-                                    {isMyTurn ? 'Sua vez' : `Vez de ${currentTurnPlayer?.name.split(' ')[0]}`}
-                                </p>
+        <div className="h-full flex flex-col bg-slate-800 overflow-hidden font-sans">
+            {/* Header / HUD (Top 10%) */}
+            <div className="flex-shrink-0 bg-slate-900 px-4 py-3 flex items-center justify-between shadow-md z-10 border-b border-slate-700">
+                <div className="flex items-center gap-3">
+                    <button onClick={onExit} className="p-2 text-slate-400 hover:text-white bg-slate-800 rounded-full transition-colors">
+                        <Icon name="log-out" size={16} />
+                    </button>
+                    {onToggleFullscreen && (
+                        <button onClick={onToggleFullscreen} className="p-2 text-slate-400 hover:text-white bg-slate-800 rounded-full transition-colors">
+                            <Icon name={isFullscreen ? "minimize-2" : "maximize-2"} size={16} />
+                        </button>
+                    )}
+                </div>
+
+                {/* Player Avatars */}
+                <div className="flex gap-2 items-center justify-center flex-1 mx-4">
+                    {room.players.map(p => {
+                        const isTurn = p.id === room.currentTurn;
+                        const isMe = p.id === currentUserId;
+                        const isUno = p.hand.length === 1;
+                        return (
+                            <div key={p.id} className={`
+                                relative flex flex-col items-center transition-all duration-300
+                                ${isTurn ? 'scale-110' : 'opacity-70 scale-95'}
+                                ${isUno ? 'animate-bounce' : ''}
+                            `}>
+                                <div className={`
+                                    w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-lg relative
+                                    ${isTurn ? 'ring-4 ring-green-500 bg-slate-700' : 'ring-2 ring-slate-600 bg-slate-800'}
+                                `}>
+                                    {isMe ? '👤' : '🤖'}
+                                    <div className="absolute -bottom-2 -right-2 bg-slate-900 text-white text-[9px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-slate-700">
+                                        {p.hand.length}
+                                    </div>
+                                    {isUno && (
+                                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[8px] font-bold px-2 py-0.5 rounded shadow-lg whitespace-nowrap uppercase tracking-wider">
+                                            1 Peça!
+                                        </div>
+                                    )}
+                                </div>
+                                <span className={`text-[10px] mt-2 font-bold max-w-[50px] truncate ${isTurn ? 'text-green-400' : 'text-slate-400'}`}>
+                                    {p.name.split(' ')[0]}
+                                </span>
                             </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="text-center bg-white/10 rounded-lg px-2 py-1 backdrop-blur min-w-[50px]">
-                            <p className="text-[9px] text-white/70 uppercase tracking-widest leading-none mb-0.5">Monte</p>
-                            <p className="text-sm font-bold text-white leading-none">{room.boneyard.length}</p>
-                        </div>
-                        {/* Fullscreen Toggle */}
-                        {onToggleFullscreen && (
-                            <button
-                                onClick={onToggleFullscreen}
-                                className="p-2 bg-white/20 rounded-lg hover:bg-white/30 text-white transition-colors"
-                                title={isFullscreen ? "Sair do Fullscreen" : "Fullscreen"}
-                            >
-                                <Icon name={isFullscreen ? "minimize-2" : "maximize-2"} size={18} />
-                            </button>
-                        )}
-                        {/* Exit Button */}
-                        {onExit && (
-                            <button
-                                onClick={onExit}
-                                className="p-2 bg-white/20 rounded-lg hover:bg-red-500/80 text-white transition-colors"
-                                title="Sair do Jogo"
-                            >
-                                <Icon name="log-out" size={18} />
-                            </button>
-                        )}
-                    </div>
+                        );
+                    })}
+                </div>
+
+                {/* Timer */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 ring-2 ring-slate-700">
+                    <span className={`text-sm font-bold ${turnTimer <= 10 ? 'text-red-500 animate-pulse' : 'text-slate-300'}`}>
+                        {turnTimer}
+                    </span>
                 </div>
             </div>
 
-            {/* Players Row */}
-            <div className="flex-shrink-0 flex gap-1.5 p-1.5 overflow-x-auto bg-white/60 backdrop-blur border-b border-slate-200 no-scrollbar">
-                {room.players.map((p, idx) => (
-                    <div
-                        key={p.id}
-                        className={`
-                            flex items-center gap-1.5 px-2 py-1 rounded-full transition-all flex-shrink-0
-                            ${p.id === room.currentTurn
-                                ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-sm ring-1 ring-orange-200'
-                                : 'bg-white text-slate-600 border border-slate-100'}
-                        `}
-                    >
-                        <span className="text-xs">
-                            {idx === 0 ? '👑' : p.id === currentUserId ? '👤' : '🤖'}
-                        </span>
-                        <span className="font-bold text-[10px] truncate max-w-[60px]">{p.name.split(' ')[0]}</span>
-                        <span className={`
-                            px-1.5 py-0.5 rounded-full text-[9px] font-bold min-w-[20px] text-center
-                            ${p.id === room.currentTurn ? 'bg-white/20' : 'bg-slate-100 text-slate-500'}
-                        `}>
-                            {p.hand.length}
-                        </span>
-                    </div>
-                ))}
-            </div>
+            {/* Board Area: Stacked Trains (Central 60%) */}
+            <div className="flex-1 overflow-y-auto overflow-x-hidden relative scrollbar-hide bg-[#1c2e26] p-4 flex flex-col gap-4">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
 
-            {/* Game Area */}
-            <div className="flex-1 overflow-y-auto p-3 min-h-0">
-                {/* Emote Display - floating emotes from other players */}
                 <EmoteDisplay emotes={room.emotes || []} currentUserId={currentUserId} />
 
-                {/* Hub Central with Emote Button */}
-                <div className="flex items-center justify-center gap-4 mb-4">
-                    {/* Turn Timer - Circular countdown */}
-                    <div className="relative w-16 h-16 flex-shrink-0">
-                        {/* Background circle */}
-                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                            <circle
-                                cx="18"
-                                cy="18"
-                                r="16"
-                                fill="none"
-                                stroke="#e2e8f0"
-                                strokeWidth="3"
-                            />
-                            {/* Progress circle */}
-                            <circle
-                                cx="18"
-                                cy="18"
-                                r="16"
-                                fill="none"
-                                stroke={turnTimer <= 10 ? '#ef4444' : turnTimer <= 30 ? '#f59e0b' : '#22c55e'}
-                                strokeWidth="3"
-                                strokeDasharray="100.53"
-                                strokeDashoffset={100.53 - (turnTimer / 60) * 100.53}
-                                strokeLinecap="round"
-                                className="transition-all duration-1000"
-                            />
-                        </svg>
-                        {/* Timer text */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <span className={`text-lg font-bold ${turnTimer <= 10 ? 'text-red-500 animate-pulse' : turnTimer <= 30 ? 'text-amber-500' : 'text-slate-700'}`}>
-                                {turnTimer}
-                            </span>
+                {onSendEmote && (
+                    <div className="absolute top-4 right-4 z-20 opacity-50 hover:opacity-100 transition-opacity">
+                        <EmotePanel onSendEmote={onSendEmote} currentUserId={currentUserId} currentUserName={currentPlayer?.name || 'Jogador'} />
+                    </div>
+                )}
+
+                {/* Hub Piece Marker */}
+                {room.hubPiece && (
+                    <div className="self-center flex flex-col items-center mb-2 z-10">
+                        <span className="text-[10px] font-bold text-emerald-300/60 uppercase tracking-widest mb-1">Início</span>
+                        <div className="scale-75 opacity-90">
+                            <DominoPiece piece={room.hubPiece} onClick={() => setViewingPiece(room.hubPiece!)} />
                         </div>
                     </div>
+                )}
 
-                    {/* Hub Piece */}
-                    {room.hubPiece && (
-                        <div className="text-center">
-                            <div className="inline-flex items-center gap-1 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold mb-2">
-                                <span>⭐</span>
-                                <span>HUB CENTRAL</span>
-                                <span>⭐</span>
-                            </div>
-                            <div className="transform hover:scale-105 transition-transform">
-                                <DominoPiece piece={room.hubPiece} size="md" />
-                            </div>
-                        </div>
-                    )}
+                {/* Vertical Train List. Ordered: Mexican -> My Train -> Others */}
+                <div className="flex flex-col gap-4 z-10 max-w-2xl mx-auto w-full">
+                    {[
+                        room.trains.find(t => t.ownerId === null),
+                        room.trains.find(t => t.ownerId === currentUserId),
+                        ...room.trains.filter(t => t.ownerId !== null && t.ownerId !== currentUserId)
+                    ].filter(Boolean).map(train => {
+                        if (!train) return null;
 
-                    {/* Emote Panel - highlighted button */}
-                    {onSendEmote && (
-                        <EmotePanel
-                            onSendEmote={onSendEmote}
-                            currentUserId={currentUserId}
-                            currentUserName={currentPlayer?.name || 'Jogador'}
-                        />
-                    )}
-                </div>
+                        const isMexican = train.ownerId === null;
+                        const isMine = train.ownerId === currentUserId;
+                        const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
+                        const canAccess = isMexican || isMine || train.isOpen;
+                        const isPlayable = playableTrains.some(t => t.id === train.id);
 
-                {/* Main Train View - Shows focused train (My Train by default) */}
-                {(() => {
-                    const myTrain = room.trains.find(t => t.ownerId === currentUserId);
-                    const focusedTrain = focusedTrainId
-                        ? room.trains.find(t => t.id === focusedTrainId)
-                        : myTrain;
+                        // Calculate the single "End Piece" visualization natively using CSS
+                        const endText = train.openEndText;
+                        const endIdx = train.openEndIndex;
 
-                    if (!focusedTrain) return null;
-
-                    const isMexican = focusedTrain.ownerId === null;
-                    const isMyTrain = focusedTrain.ownerId === currentUserId;
-                    const isPlayable = playableTrains.some(t => t.id === focusedTrain.id);
-                    const canAccess = isMexican || isMyTrain || focusedTrain.isOpen;
-                    const isDragOver = dragOverTrain === focusedTrain.id;
-                    const owner = focusedTrain.ownerId ? room.players.find(p => p.id === focusedTrain.ownerId) : null;
-
-                    return (
-                        <div
-                            data-train-id={focusedTrain.id}
-                            onDragOver={(e) => canAccess && isMyTurn && handleDragOver(e, focusedTrain.id)}
-                            onDragLeave={handleDragLeave}
-                            onDrop={(e) => canAccess && isMyTurn && handleDropOnTrain(e, focusedTrain)}
-                            onClick={() => isPlayable && handlePlaceOnTrain(focusedTrain)}
-                            className={`
-                                rounded-2xl p-4 transition-all relative mb-4
-                                ${isMyTrain
-                                    ? 'bg-gradient-to-br from-emerald-50 via-white to-teal-50'
-                                    : isMexican
-                                        ? 'bg-gradient-to-br from-amber-50 via-white to-orange-50 border border-amber-200'
-                                        : focusedTrain.isOpen
-                                            ? 'bg-gradient-to-br from-yellow-50 via-white to-orange-50 border-2 border-yellow-400'
-                                            : 'bg-gradient-to-br from-slate-50 via-white to-slate-100 border border-slate-200'}
-                                ${isPlayable ? 'ring-2 ring-green-400 cursor-pointer shadow-lg' : 'shadow-md'}
-                                ${isDragOver && canAccess ? 'ring-4 ring-blue-400 scale-[1.01] bg-blue-50' : ''}
-                            `}
-                        >
-                            {/* Header */}
-                            <div className="flex items-center justify-between mb-3">
-                                <div className="flex items-center gap-2">
-                                    <span className="text-2xl">
-                                        {isMexican ? '🚂' : isMyTrain ? '🏠' : focusedTrain.isOpen ? '🔓' : '🔒'}
-                                    </span>
-                                    <div>
-                                        <span className={`font-bold text-base ${isMexican ? 'text-amber-700' : isMyTrain ? 'text-emerald-700' : 'text-slate-700'}`}>
-                                            {isMexican ? 'Trem Mexicano' : isMyTrain ? 'Meu Trem' : `Trem de ${owner?.name.split(' ')[0]}`}
-                                        </span>
-                                        <div className="flex items-center gap-2 mt-0.5">
-                                            <span className="text-xs text-slate-400">{focusedTrain.pieces.length} peças</span>
-                                            {focusedTrain.isOpen && !isMexican && (
-                                                <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded-full text-[10px] font-bold">
-                                                    ABERTO
-                                                </span>
-                                            )}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    {!isMyTrain && (
-                                        <button
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                setFocusedTrainId(null); // Back to My Train
-                                            }}
-                                            className="px-3 py-1 bg-slate-200 text-slate-600 text-xs font-bold rounded-lg hover:bg-slate-300 transition-colors"
-                                        >
-                                            ← Voltar
-                                        </button>
-                                    )}
-                                    <button
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setViewingTrain(focusedTrain);
-                                        }}
-                                        className="px-3 py-1 bg-slate-800 text-white text-xs font-bold rounded-lg hover:bg-slate-700 transition-colors"
-                                    >
-                                        Ver Tudo
-                                    </button>
-                                    {isDragOver && canAccess && (
-                                        <span className="flex items-center gap-1 px-2 py-1 bg-blue-500 text-white rounded-full text-[10px] font-bold animate-pulse">
-                                            <Icon name="download" size={10} />
-                                            SOLTAR
-                                        </span>
-                                    )}
-                                    {isPlayable && !isDragOver && (
-                                        <span className="flex items-center gap-1 px-2 py-1 bg-green-500 text-white rounded-full text-[10px] font-bold">
-                                            <Icon name="check" size={10} />
-                                            JOGAR
-                                        </span>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Carousel */}
-                            <div
-                                className="flex items-center gap-4 overflow-x-auto pb-4 pt-2 scrollbar-hide snap-x snap-mandatory"
-                                style={{ paddingLeft: '40%', paddingRight: '40%' }}
-                                ref={el => { if (el) trainRefs.current[focusedTrain.id] = el; }}
-                                onScroll={() => handleTrainScroll(focusedTrain.id)}
-                                onWheel={(e) => {
-                                    // Permite scroll horizontal com a roda do mouse (PC)
-                                    if (e.deltaY !== 0) {
-                                        e.currentTarget.scrollLeft += e.deltaY;
-                                    }
-                                }}
-                            >
-                                {focusedTrain.pieces.length === 0 ? (
-                                    <div className="flex items-center justify-center w-full py-8 text-slate-400">
-                                        <div className="text-center">
-                                            <span className="text-3xl">📍</span>
-                                            <p className="text-sm mt-2">Ponta: {focusedTrain.openEndText}</p>
-                                        </div>
-                                    </div>
-                                ) : (
-                                    <>
-                                        {focusedTrain.pieces.map((placed, idx) => {
-                                            const isFocused = focusedIndicesRef.current[focusedTrain.id] === idx;
-                                            return (
-                                                <div
-                                                    key={`${focusedTrain.id}-${idx}`}
-                                                    className={`
-                                                        transform transition-all duration-300 snap-center flex-shrink-0 cursor-pointer
-                                                        ${isFocused
-                                                            ? 'scale-150 z-20 opacity-100 drop-shadow-xl'
-                                                            : 'scale-75 opacity-50 blur-[0.5px] grayscale-[0.3]'}
-                                                    `}
-                                                >
-                                                    <DominoPiece
-                                                        piece={placed.piece}
-                                                        flipped={placed.orientation === 'flipped'}
-                                                        size="md"
-                                                        onDoubleClick={() => setViewingPiece(placed.piece)}
-                                                    />
-                                                </div>
-                                            );
-                                        })}
-                                        {/* Drop Zone */}
-                                        {canAccess && isMyTurn && (
-                                            <div className="snap-center flex-shrink-0">
-                                                <div className={`
-                                                    w-[70px] h-[45px] rounded-xl border-2 border-dashed flex items-center justify-center transition-all
-                                                    ${isDragOver ? 'border-blue-500 bg-blue-100 text-blue-600' : 'border-slate-300 text-slate-400 bg-slate-50'}
-                                                `}>
-                                                    <Icon name={isDragOver ? "download" : "plus"} size={18} />
-                                                </div>
-                                            </div>
+                        return (
+                            <div key={train.id}
+                                onClick={() => isPlayable ? handlePlaceOnTrain(train) : setViewingTrain(train)}
+                                className={`
+                                flex items-center bg-slate-800 rounded-xl shadow-lg border-2 transition-all p-2 pl-3 relative overflow-hidden group h-[80px]
+                                ${isPlayable ? 'border-green-400 ring-2 ring-green-900/50 cursor-pointer shadow-green-900/40 hover:-translate-y-0.5 hover:shadow-xl' : 'border-slate-700 cursor-pointer hover:bg-slate-750'}
+                                ${!canAccess ? 'opacity-50 grayscale hover:grayscale-0 transition-all' : ''}
+                            `}>
+                                {/* Tiny Info Col */}
+                                <div className="flex flex-col items-center justify-center w-[50px] flex-shrink-0 relative z-10 select-none">
+                                    <div className="relative">
+                                        <span className="text-3xl filter drop-shadow-md">{isMexican ? '🚂' : isMine ? '🏠' : train.isOpen ? '🔓' : '🔒'}</span>
+                                        {train.isOpen && !isMexican && (
+                                            <div className="absolute -top-1 -right-2 bg-yellow-500 w-3 h-3 rounded-full border-2 border-slate-800 animate-pulse" title="Trem Aberto" />
                                         )}
-                                    </>
+                                    </div>
+                                    <div className="bg-slate-900/80 text-slate-300 text-[10px] font-black px-1.5 py-0.5 mt-1 rounded ring-1 ring-slate-700 shadow-inner">
+                                        {train.pieces.length}
+                                    </div>
+                                </div>
+
+                                {/* The End Piece "Mouth" */}
+                                <div className="flex-1 relative z-10 h-[64px] ml-2 min-w-0">
+                                    {train.pieces.length === 0 ? (
+                                        <div className="w-full h-full bg-slate-700/50 rounded-lg border-2 border-dashed border-slate-600 flex items-center justify-between text-slate-400 px-3 overflow-hidden">
+                                            <span className="text-sm font-bold truncate flex-1 break-words leading-tight" title={endText}>{endText}</span>
+                                            <span className="text-xs font-black opacity-50 ml-2 flex-shrink-0">{endIdx}</span>
+                                        </div>
+                                    ) : (
+                                        <div className={`
+                                            flex items-center justify-between w-full h-full bg-slate-50 rounded-lg shadow-inner border-b-4 transition-all px-3 overflow-hidden
+                                            ${isPlayable ? 'bg-emerald-50 border-emerald-400 ring-2 ring-emerald-400' : 'border-slate-300'}
+                                        `}>
+                                            <span className={`text-base sm:text-lg font-black line-clamp-2 leading-tight flex-1 text-left mr-2 ${isPlayable ? 'text-emerald-950' : 'text-slate-800'}`}>
+                                                {endText}
+                                            </span>
+                                            <div className={`flex items-center justify-center rounded-md px-2 py-1 flex-shrink-0 ${isPlayable ? 'bg-emerald-200/50' : 'bg-slate-200/50'}`}>
+                                                <span className={`text-sm font-black ${isPlayable ? 'text-emerald-900' : 'text-slate-600'}`}>{endIdx}</span>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* Play Overlay */}
+                                {isPlayable && (
+                                    <div className="absolute inset-0 bg-green-500/10 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <div className="bg-green-500 text-white font-black text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+                                            <Icon name="check" size={14} /> JOGAR
+                                        </div>
+                                    </div>
+                                )}
+                                {/* Expand Overlay */}
+                                {!isPlayable && (
+                                    <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <div className="bg-slate-800 text-slate-300 font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow-lg flex items-center gap-2 border border-slate-700 backdrop-blur-sm">
+                                            <Icon name="search" size={12} /> Ver Fila
+                                        </div>
+                                    </div>
                                 )}
                             </div>
-                        </div>
-                    );
-                })()}
-
-                {/* Other Trains Bar */}
-                <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-                    {room.trains
-                        .filter(t => t.ownerId !== currentUserId) // Exclude My Train
-                        .map(train => {
-                            const isMexican = train.ownerId === null;
-                            const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
-                            const isPlayable = playableTrains.some(t => t.id === train.id);
-                            const isFocused = focusedTrainId === train.id;
-                            const isDragOver = dragOverTrain === train.id;
-
-                            return (
-                                <div
-                                    key={train.id}
-                                    data-train-id={train.id}
-                                    onClick={() => isPlayable && handlePlaceOnTrain(train)}
-                                    onDoubleClick={(e) => {
-                                        e.stopPropagation();
-                                        setFocusedTrainId(train.id);
-                                    }}
-                                    onDragOver={(e) => isMyTurn && handleDragOver(e, train.id)}
-                                    onDragLeave={handleDragLeave}
-                                    onDrop={(e) => isMyTurn && handleDropOnTrain(e, train)}
-                                    className={`
-                                        flex-shrink-0 p-3 rounded-xl transition-all cursor-pointer min-w-[120px]
-                                        ${isMexican
-                                            ? 'bg-amber-50 border border-amber-200'
-                                            : train.isOpen
-                                                ? 'bg-yellow-50 border-2 border-yellow-400'
-                                                : 'bg-slate-50 border border-slate-200'}
-                                        ${isFocused ? 'ring-2 ring-blue-400' : ''}
-                                        ${isPlayable ? 'ring-2 ring-green-400' : ''}
-                                        ${isDragOver ? 'ring-2 ring-blue-500 bg-blue-50' : ''}
-                                        hover:shadow-md
-                                    `}
-                                >
-                                    <div className="flex items-center gap-2 mb-2">
-                                        <span className="text-sm">{isMexican ? '🚂' : train.isOpen ? '🔓' : '🔒'}</span>
-                                        <span className="text-xs font-bold text-slate-600 truncate">
-                                            {isMexican ? 'Mexicano' : owner?.name.split(' ')[0]}
-                                        </span>
-                                    </div>
-                                    <div className="flex gap-1 overflow-hidden">
-                                        {train.pieces.slice(-3).map((p, i) => (
-                                            <div key={i} className="w-6 h-8 bg-white rounded border border-slate-200 flex items-center justify-center text-[8px] font-bold text-slate-400">
-                                                {p.piece.leftIndex}|{p.piece.rightIndex}
-                                            </div>
-                                        ))}
-                                        {train.pieces.length === 0 && (
-                                            <span className="text-[10px] text-slate-400">Vazio</span>
-                                        )}
-                                    </div>
-                                    <p className="text-[10px] text-slate-400 mt-1">{train.pieces.length} peças • Toque 2x para ver</p>
-                                </div>
-                            );
-                        })}
+                        )
+                    })}
                 </div>
             </div>
 
-            {/* My Hand */}
-            <div className={`
-                flex-shrink-0 border-t-2 bg-white p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]
-                ${isMyTurn ? 'border-orange-400' : 'border-slate-200'}
-            `}>
-                <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                        <span className="text-lg">🎯</span>
-                        <h3 className="font-bold text-slate-700 text-sm">
-                            Minha Mão
-                            <span className="ml-1 text-slate-400">({myHand.length} peças)</span>
-                        </h3>
-                        {!hasPlayablePiece && isMyTurn && room.boneyard.length > 0 && (
-                            <span className="px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full text-[10px] font-bold">
-                                Sem jogadas - Compre!
-                            </span>
-                        )}
+            {/* Bridge: Action Bar (10%) */}
+            {isMyTurn && (
+                <div className="flex-shrink-0 bg-slate-900 px-4 py-3 flex items-center justify-between z-20 border-t border-slate-700 shadow-xl relative mt-[-1px]">
+                    <div className="flex-1 flex justify-start">
+                        {/* Status Message */}
+                        {hasPlayablePiece ? (
+                            <div className="flex items-center gap-2 text-green-400 text-sm font-bold bg-green-400/10 px-3 py-1.5 rounded-full border border-green-500/20">
+                                <span className="animate-pulse">●</span> Escolha o destino
+                            </div>
+                        ) : room.boneyard.length > 0 ? (
+                            <div className="flex items-center gap-2 text-amber-400 text-sm font-bold bg-amber-400/10 px-3 py-1.5 rounded-full border border-amber-500/20">
+                                <span>⚠️</span> Nenhuma jogada, compre pedra
+                            </div>
+                        ) : null}
                     </div>
 
-                    <div className="flex gap-2">
-                        {/* Ver Tudo - sempre visível para reorganizar */}
-                        <button
-                            onClick={() => setShowHandModal(true)}
-                            className="flex items-center gap-1.5 px-3 py-2 bg-slate-700 text-white rounded-xl text-xs font-bold hover:bg-slate-800 transition-all active:scale-95"
+                    <div className="flex items-center gap-3">
+                        <button onClick={handleDraw} disabled={room.boneyard.length === 0}
+                            className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 disabled:bg-slate-800 disabled:opacity-50 text-white px-5 py-2.5 rounded-xl font-black transition-all active:scale-95 shadow-lg border-b-4 border-slate-900 hover:border-slate-800 disabled:border-slate-900"
                         >
-                            <Icon name="layout-grid" size={14} />
-                            Ver Tudo
+                            <span className="text-xl leading-none">🧱</span>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] text-slate-300 uppercase leading-none">Comprar</span>
+                                <span className="text-sm leading-none mt-0.5">{room.boneyard.length} restam</span>
+                            </div>
                         </button>
 
-                        {/* Ações de turno - só na minha vez */}
-                        {isMyTurn && (
-                            <>
-                                <button
-                                    onClick={handleDraw}
-                                    disabled={room.boneyard.length === 0}
-                                    className="flex items-center gap-1.5 px-3 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg disabled:opacity-50 disabled:shadow-none transition-all active:scale-95"
-                                >
-                                    <Icon name="plus-circle" size={14} />
-                                    Comprar
-                                </button>
-                                <button
-                                    onClick={handlePass}
-                                    className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${autoPassPending
-                                        ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg animate-pulse'
-                                        : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-                                        }`}
-                                >
-                                    <Icon name="skip-forward" size={14} />
-                                    {autoPassPending ? 'Passando...' : 'Passar'}
-                                </button>
-                            </>
-                        )}
+                        <button onClick={handlePass}
+                            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-black transition-all active:scale-95 shadow-lg border-b-4 
+                                ${autoPassPending ? 'bg-red-500 hover:bg-red-400 text-white border-red-700 animate-pulse' : 'bg-slate-700 hover:bg-slate-600 text-slate-300 border-slate-900 hover:border-slate-800'}
+                            `}
+                        >
+                            <span className="text-xl leading-none">⏭️</span>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] opacity-70 uppercase leading-none">Ação</span>
+                                <span className="text-sm leading-none mt-0.5">{autoPassPending ? 'Passando' : 'Passar'}</span>
+                            </div>
+                        </button>
                     </div>
                 </div>
+            )}
 
+            {/* Bottom Dock: My Hand (20%) */}
+            <div className={`flex-shrink-0 bg-slate-800 border-t ${isMyTurn ? 'border-green-500 shadow-[0_-4px_20px_rgba(34,197,94,0.15)]' : 'border-slate-700'} relative z-30 transition-all`}>
                 <PlayerHand
                     pieces={myHand}
                     isMyTurn={isMyTurn}
                     selectedPieceId={selectedPiece?.id || null}
                     playablePieceIds={playablePieceIds}
                     onSelectPiece={handleSelectPiece}
-                    onDragStart={handleHandDragStart}
-                    onDragEnd={handleHandDragEnd}
-                    onTrainHover={(trainId) => setDragOverTrain(trainId)}
-                    onTrainDrop={async (trainId, pieceId) => {
-                        setDragOverTrain(null);
-                        const train = room.trains.find(t => t.id === trainId);
-                        if (train) await handlePlaceOnTrain(train, pieceId);
-                    }}
                     onPieceDoubleClick={(piece) => setViewingPiece(piece)}
                 />
-
-                {!isMyTurn && (
-                    <div className="flex items-center justify-center gap-2 mt-2 p-2 bg-slate-100 rounded-lg">
-                        <div className="animate-spin" style={{ animationDuration: '3s' }}>
-                            <Icon name="clock" size={14} className="text-slate-400" />
-                        </div>
-                        <p className="text-xs text-slate-500">Aguardando {currentTurnPlayer?.name.split(' ')[0]}...</p>
-                    </div>
-                )}
             </div>
 
-            {/* Hand View Modal */}
-            {
-                showHandModal && (
-                    <HandViewModal
-                        pieces={myHand}
-                        onClose={() => setShowHandModal(false)}
-                        onReorder={handleReorderHand}
-                    />
-                )
-            }
-
-            {/* Train View Modal */}
-            {
-                viewingTrain && (
-                    <TrainViewModal
-                        train={viewingTrain}
-                        isMyTrain={viewingTrain?.ownerId === currentUserId}
-                        onClose={() => setViewingTrain(null)}
-                    />
-                )
-            }
-
-            {/* Piece Detail Modal */}
+            {/* Modals */}
+            {viewingTrain && (
+                <TrainViewModal
+                    train={viewingTrain}
+                    isMyTrain={viewingTrain?.ownerId === currentUserId}
+                    onClose={() => setViewingTrain(null)}
+                    onPieceClick={(piece) => setViewingPiece(piece)}
+                />
+            )}
             {viewingPiece && (
                 <DominoPieceModal
                     piece={viewingPiece}
