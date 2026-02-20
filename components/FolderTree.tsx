@@ -10,6 +10,7 @@ interface FolderTreeProps {
     onImportInFolder?: (folderPath: string) => void;
     onRenameFolder?: (oldPath: string, newPath: string) => void;
     onDeleteFolder?: (path: string) => void;
+    onMoveFolder?: (path: string) => void;
     isOpen: boolean;
     onClose: () => void;
 }
@@ -21,6 +22,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     onImportInFolder,
     onRenameFolder,
     onDeleteFolder,
+    onMoveFolder,
     isOpen,
     onClose
 }) => {
@@ -38,7 +40,8 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     // Constrói árvore de pastas
     const folderTree = useMemo(() => buildFolderTree(data), [data]);
 
-    const toggleExpanded = (path: string) => {
+    const toggleExpanded = (path: string, e?: React.MouseEvent) => {
+        if (e) e.stopPropagation();
         const newExpanded = new Set(expandedPaths);
         if (newExpanded.has(path)) {
             newExpanded.delete(path);
@@ -46,6 +49,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
             newExpanded.add(path);
         }
         setExpandedPaths(newExpanded);
+        setActiveActionPath(null); // Fecha as opções ao recolher/expandir
     };
 
     // Coleta todos os caminhos descendentes de um nó
@@ -128,7 +132,8 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         setActiveActionPath(null); // fecha o menu de ações
     };
 
-    const handleContainerClick = (path: string) => {
+    const handleContainerClick = (path: string, e: React.MouseEvent) => {
+        e.stopPropagation();
         if (activeActionPath === path) {
             setActiveActionPath(null); // toggle off se clicar de novo
         } else {
@@ -151,12 +156,12 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                         ${hasChildren ? 'bg-white border-[1px] border-slate-200 hover:border-slate-300 shadow-sm' : 'bg-white border-[1px] border-transparent hover:bg-slate-50 hover:border-slate-100'}
                     `}
                     style={{ marginLeft: `${depth * 24}px` }}
-                    onClick={() => handleContainerClick(node.path)}
+                    onClick={(e) => handleContainerClick(node.path, e)}
                     onDoubleClick={(e) => {
                         e.stopPropagation();
                         // Impede seleção de texto acidental no duplo clique
                         window.getSelection()?.removeAllRanges();
-                        if (hasChildren) toggleExpanded(node.path);
+                        if (hasChildren) toggleExpanded(node.path, e);
                     }}
                 >
                     {/* Folder Icon as Checkbox */}
@@ -198,6 +203,15 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                     {/* Action Buttons (visible ONLY when container is clicked) */}
                     {isActionsVisible && !isEditing ? (
                         <div className="flex items-center gap-1 shrink-0 ml-2 animate-in fade-in slide-in-from-right-4 duration-200">
+                            {hasChildren && (
+                                <button
+                                    onClick={(e) => toggleExpanded(node.path, e)}
+                                    className="p-2 bg-slate-50 hover:bg-slate-100 rounded-lg text-slate-500 transition-colors"
+                                    title={isExpanded ? "Recolher" : "Expandir"}
+                                >
+                                    <Icon name={isExpanded ? "chevron-down" : "chevron-right"} size={18} />
+                                </button>
+                            )}
                             {onImportInFolder && (
                                 <button
                                     onClick={(e) => { e.stopPropagation(); onImportInFolder(node.path); }}
@@ -214,6 +228,15 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                                     title="Renomear"
                                 >
                                     <Icon name="edit-2" size={18} />
+                                </button>
+                            )}
+                            {onMoveFolder && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onMoveFolder(node.path); setActiveActionPath(null); }}
+                                    className="p-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg text-indigo-600 transition-colors"
+                                    title="Mover pasta"
+                                >
+                                    <Icon name="corner-down-right" size={18} />
                                 </button>
                             )}
                             {onDeleteFolder && (
@@ -293,7 +316,11 @@ const FolderTree: React.FC<FolderTreeProps> = ({
             </div>
 
             {/* Folder List - Scrollable */}
-            <div className="flex-1 overflow-y-auto overscroll-contain p-4 pb-24" onClick={(e) => setActiveActionPath(null)}>
+            <div
+                className="flex-1 overflow-y-auto overscroll-contain p-4 pb-24"
+                onClick={(e) => setActiveActionPath(null)}
+                onScroll={() => setActiveActionPath(null)}
+            >
                 <div className="max-w-4xl mx-auto space-y-1">
                     {/* Sem Categoria */}
                     {uncategorizedCount > 0 && (

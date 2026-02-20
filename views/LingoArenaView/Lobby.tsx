@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '../../components/Icon';
 import FlagSelect from '../../components/FlagSelect';
 import { GameRoom, STUDY_LANGUAGES, SupportedLanguage } from '../../types';
+import { GameContentSelectorModal } from '../DominoView/components/GameContentSelectorModal';
 
 // Constante de tópicos movida para cá para ser usada no select
 export const TOPICS = [
@@ -18,11 +19,15 @@ interface LobbyProps {
     selectedDiff: string;
     targetScore: number;
     loadingDeck: boolean;
+    context: string;
+    selectedFolderIds: string[];
     // Setters
     onToggleTopic: (topic: string) => void;
     setLang: (l: SupportedLanguage) => void;
     setDiff: (d: string) => void;
     setTargetScore: (s: number) => void;
+    setContext: (c: string) => void;
+    setSelectedFolderIds: (ids: string[]) => void;
     // Actions
     onStart: () => void;
     onAddBot?: () => void;
@@ -31,8 +36,11 @@ interface LobbyProps {
 
 export const Lobby: React.FC<LobbyProps> = ({
     room, isHost, selectedTopics, selectedLang, selectedDiff, targetScore, loadingDeck,
-    onToggleTopic, setLang, setDiff, setTargetScore, onStart, onAddBot, onRemoveBot
+    context, selectedFolderIds,
+    onToggleTopic, setLang, setDiff, setTargetScore, setContext, setSelectedFolderIds,
+    onStart, onAddBot, onRemoveBot
 }) => {
+    const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
     const botCount = room.players.filter(p => p.isBot).length;
     const canAddBot = room.players.length < 4;
 
@@ -111,26 +119,64 @@ export const Lobby: React.FC<LobbyProps> = ({
                             </select>
                         </div>
                         <div>
-                            <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">3. Tópicos (Múltipla Escolha)</label>
-                            <div className="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-1 custom-scrollbar">
-                                {TOPICS.map(topic => {
-                                    const isSelected = selectedTopics.includes(topic);
-                                    return (
-                                        <button key={topic} onClick={() => onToggleTopic(topic)} className={`p-3 text-sm rounded-lg text-left transition-all ${isSelected ? 'bg-purple-100 text-purple-700 font-bold shadow-sm ring-1 ring-purple-500' : 'bg-slate-50 text-slate-600 hover:bg-slate-100'}`}>
-                                            {topic}
-                                            {isSelected && <Icon name="check" size={14} className="float-right mt-0.5" />}
-                                        </button>
-                                    );
-                                })}
+                            <label className="text-xs font-bold text-slate-400 uppercase mb-3 block">3. Fonte de Palavras</label>
+
+                            <div className="flex bg-slate-100 p-1 rounded-xl mb-4">
+                                <button
+                                    onClick={() => setContext('gemini')}
+                                    className={`flex-1 py-2 text-sm font-bold rounded-lg transition-all ${context !== 'library' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                >
+                                    Tópicos Automáticos (IA)
+                                </button>
+                                <button
+                                    onClick={() => setContext('library')}
+                                    className={`flex-1 py-2 text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${context === 'library' ? 'bg-white text-purple-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                >
+                                    <Icon name="book" size={14} /> Minha Biblioteca
+                                </button>
                             </div>
-                            <p className="text-[10px] text-slate-400 mt-2">Selecionados: {selectedTopics.join(', ')}</p>
+
+                            {context === 'library' ? (
+                                <div className="bg-brand-50 p-4 rounded-xl border border-brand-100">
+                                    <label className="text-xs font-bold text-brand-600 uppercase mb-2 flex items-center gap-1">
+                                        <Icon name="folder" size={14} /> Minhas Pastas
+                                    </label>
+                                    <button
+                                        onClick={() => setIsFolderModalOpen(true)}
+                                        className="w-full bg-white border-2 border-brand-200 text-brand-700 font-bold py-3 rounded-xl flex items-center justify-between px-4 hover:border-brand-400 transition-colors"
+                                    >
+                                        <span className="truncate">
+                                            {selectedFolderIds && selectedFolderIds.length > 0
+                                                ? `${selectedFolderIds.length} pasta(s) selecionada(s)`
+                                                : 'Escolher Pastas de Estudo...'}
+                                        </span>
+                                        <Icon name="chevron-right" size={20} />
+                                    </button>
+                                </div>
+                            ) : (
+                                <>
+                                    <div className="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-1 custom-scrollbar">
+                                        {TOPICS.map(topic => {
+                                            const isSelected = selectedTopics.includes(topic);
+                                            return (
+                                                <button key={topic} onClick={() => onToggleTopic(topic)} className={`p-3 text-sm rounded-lg text-left transition-all ${isSelected ? 'bg-purple-100 text-purple-700 font-bold shadow-sm ring-1 ring-purple-500' : 'bg-slate-50 text-slate-600 hover:bg-slate-100'}`}>
+                                                    {topic}
+                                                    {isSelected && <Icon name="check" size={14} className="float-right mt-0.5" />}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                    <p className="text-[10px] text-slate-400 mt-2">Selecionados: {selectedTopics.join(', ')}</p>
+                                </>
+                            )}
                         </div>
+
                         <div className="mt-4">
                             <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">4. Meta: {targetScore} pts</label>
                             <input type="range" min="5" max="100" step="5" value={targetScore} onChange={(e) => setTargetScore(Number(e.target.value))} className="w-full h-2 bg-slate-200 rounded-lg cursor-pointer accent-brand-600" />
                         </div>
 
-                        <button onClick={onStart} disabled={loadingDeck || room.players.length < 2} className="w-full bg-brand-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-brand-200 mt-4 flex items-center justify-center gap-2 hover:bg-brand-700 disabled:opacity-50">
+                        <button onClick={onStart} disabled={loadingDeck || room.players.length < 2 || (context === 'library' && selectedFolderIds.length === 0)} className="w-full bg-brand-600 text-white py-4 rounded-xl font-bold shadow-lg shadow-brand-200 mt-4 flex items-center justify-center gap-2 hover:bg-brand-700 disabled:opacity-50">
                             {loadingDeck ? "Criando Cartas..." : <><Icon name="sparkles" size={20} /> Gerar Partida</>}
                         </button>
                         {room.players.length < 2 && <p className="text-center text-red-500 text-xs mt-2">Mínimo 2 jogadores.</p>}
@@ -149,6 +195,14 @@ export const Lobby: React.FC<LobbyProps> = ({
                     </div>
                 )}
             </div>
+
+            <GameContentSelectorModal
+                isOpen={isFolderModalOpen}
+                onClose={() => setIsFolderModalOpen(false)}
+                currentUserId={room.hostId}
+                initialSelectedPaths={selectedFolderIds}
+                onConfirmSelection={(paths) => setSelectedFolderIds(paths)}
+            />
         </>
     );
 };

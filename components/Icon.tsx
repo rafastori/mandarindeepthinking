@@ -50,7 +50,8 @@ import {
     FolderInput,
     ArrowLeftRight,
     Search,
-    ChevronUp
+    ChevronUp,
+    CornerDownRight
 } from 'lucide-react';
 
 export interface IconProps {
@@ -111,7 +112,8 @@ const icons: Record<string, React.ElementType> = {
     'folder-input': FolderInput,
     'arrow-left-right': ArrowLeftRight,
     'search': Search,
-    'chevron-up': ChevronUp
+    'chevron-up': ChevronUp,
+    'corner-down-right': CornerDownRight
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

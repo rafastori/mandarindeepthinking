@@ -176,13 +176,15 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
         }
     };
 
-    const handleUpdateConfig = async (sourceLang: string, targetLang: string, text: string, difficulty: string) => {
+    const handleUpdateConfig = async (sourceLang: string, targetLang: string, text: string, difficulty: string, context?: string, selectedFolderIds?: string[]) => {
         if (!activeRoom) return;
         await updateConfig(activeRoom.id, {
             sourceLang,
             targetLang,
             originalText: text,
             difficulty,
+            context,
+            selectedFolderIds
         });
     };
 

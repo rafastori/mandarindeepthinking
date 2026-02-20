@@ -358,9 +358,10 @@ export const useDominoRoom = (userId?: string) => {
 
     /**
      * Inicia o jogo. configOverride permite passar valores diretamente
-     * sem depender do Firebase (evita problemas de sincronização)
+     * sem depender do Firebase (evita problemas de sincronização).
+     * externalPairs permite injetar termos pre-carregados da biblioteca pessoal.
      */
-    const startGame = async (roomId: string, configOverride?: Partial<DominoConfig>): Promise<void> => {
+    const startGame = async (roomId: string, configOverride?: Partial<DominoConfig>, externalPairs?: TermPair[]): Promise<void> => {
         try {
             const roomRef = doc(db, 'dominoRooms', roomId);
             const roomSnap = await getDoc(roomRef);
@@ -378,24 +379,46 @@ export const useDominoRoom = (userId?: string) => {
                 customTopic: finalConfig.customTopic,
                 difficulty: finalConfig.difficulty,
                 sourceLang: finalConfig.sourceLang,
-                targetLang: finalConfig.targetLang
-            });
-
-            // 1. Gerar 13 termos via IA
-            const terms = await generateDominoTerms(finalConfig.context, {
-                sourceLang: finalConfig.sourceLang,
                 targetLang: finalConfig.targetLang,
-                customTopic: finalConfig.customTopic,
-                customContext: finalConfig.customContext,
-                difficulty: finalConfig.difficulty
+                selectedFolderIds: finalConfig.selectedFolderIds
             });
 
-            // 2. Criar termPairs com índices
-            const termPairs: TermPair[] = terms.map((t, idx) => ({
-                index: idx,
-                term: t.term,
-                definition: t.definition
-            }));
+            let termPairs: TermPair[] = [];
+
+            // Se o modo for biblioteca e forneceram os pares externamente, usamos eles
+            if (finalConfig.context === 'library' && externalPairs && externalPairs.length >= 13) {
+                // Embaralha e pega 13
+                const shuffled = [...externalPairs].sort(() => Math.random() - 0.5);
+                const selected13 = shuffled.slice(0, 13);
+
+                termPairs = selected13.map((t, idx) => ({
+                    index: idx,
+                    term: t.term,
+                    definition: t.definition
+                }));
+            } else {
+                // Modo IA Normal (Gemini)
+                // 1. Gerar 13 termos via IA
+                const terms = await generateDominoTerms(finalConfig.context, {
+                    sourceLang: finalConfig.sourceLang,
+                    targetLang: finalConfig.targetLang,
+                    customTopic: finalConfig.customTopic,
+                    customContext: finalConfig.customContext,
+                    difficulty: finalConfig.difficulty
+                });
+
+                // 2. Criar termPairs com índices
+                termPairs = terms.map((t, idx) => ({
+                    index: idx,
+                    term: t.term,
+                    definition: t.definition
+                }));
+            }
+
+            // Fallback fail-safe
+            if (termPairs.length < 13) {
+                throw new Error("Não há termos suficientes (mínimo de 13 pares) para iniciar o dominó.");
+            }
 
             // 3. Gerar 91 peças
             let deck = generateDeck(termPairs);

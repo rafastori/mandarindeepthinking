@@ -3,6 +3,7 @@ import Icon from '../../../components/Icon';
 import FlagSelect from '../../../components/FlagSelect';
 import { STUDY_LANGUAGES, SupportedLanguage } from '../../../types';
 import { DominoRoom, DominoConfig, CONTEXT_OPTIONS, DOMINO_CONSTANTS } from '../types';
+import { GameContentSelectorModal } from './GameContentSelectorModal';
 
 // Lista completa incluindo Português para tradução
 const ALL_LANGUAGES = [
@@ -36,6 +37,7 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
     onRemoveBot
 }) => {
     const [isStarting, setIsStarting] = React.useState(false);
+    const [isFolderModalOpen, setIsFolderModalOpen] = React.useState(false);
     // Estado local para inputs de texto (evita lag ao digitar)
     const [localCustomContext, setLocalCustomContext] = React.useState(room.config.customContext || '');
     const [localCustomTopic, setLocalCustomTopic] = React.useState(room.config.customTopic || '');
@@ -180,24 +182,51 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                             <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
                                 Contexto
                             </label>
-                            <div className="grid grid-cols-4 gap-2">
+                            <div className="grid grid-cols-3 gap-2">
                                 {CONTEXT_OPTIONS.map(opt => (
                                     <button
                                         key={opt.value}
                                         onClick={() => onUpdateConfig({ context: opt.value })}
                                         className={`p-3 rounded-lg text-center transition-all ${room.config.context === opt.value
-                                            ? 'bg-orange-100 text-orange-700 ring-2 ring-orange-500'
+                                            ? 'bg-brand-100 text-brand-700 ring-2 ring-brand-500 shadow-sm'
                                             : 'bg-slate-50 hover:bg-slate-100'
                                             }`}
                                     >
-                                        <span className="text-xl block mb-1">{opt.icon}</span>
-                                        <span className="text-xs font-medium">{opt.label}</span>
+                                        <span className="text-2xl block mb-2">{opt.icon}</span>
+                                        <span className="text-xs font-bold uppercase tracking-wider">{opt.label}</span>
                                     </button>
                                 ))}
                             </div>
                         </div>
 
-                        {/* Idiomas (se contexto = language) */}
+                        {/* Modais/Opções Dinâmicas por Contexto */}
+
+                        {/* 1. Biblioteca Pessoal */}
+                        {room.config.context === 'library' && (
+                            <div className="bg-brand-50 p-4 rounded-xl border border-brand-100">
+                                <label className="text-xs font-bold text-brand-600 uppercase mb-2 flex items-center gap-1">
+                                    <Icon name="folder" size={14} /> Minhas Pastas
+                                </label>
+                                <button
+                                    onClick={() => setIsFolderModalOpen(true)}
+                                    className="w-full bg-white border-2 border-brand-200 text-brand-700 font-bold py-3 rounded-xl flex items-center justify-between px-4 hover:border-brand-400 transition-colors"
+                                >
+                                    <span className="truncate">
+                                        {room.config.selectedFolderIds && room.config.selectedFolderIds.length > 0
+                                            ? `${room.config.selectedFolderIds.length} pasta(s) selecionada(s)`
+                                            : 'Escolher Pastas de Estudo...'}
+                                    </span>
+                                    <Icon name="chevron-right" size={20} />
+                                </button>
+                                {(!room.config.selectedFolderIds || room.config.selectedFolderIds.length === 0) && (
+                                    <p className="text-xs text-red-500 mt-2 font-medium">
+                                        Selecione ao menos 1 pasta para jogar.
+                                    </p>
+                                )}
+                            </div>
+                        )}
+
+                        {/* 2. Idiomas (se contexto = language) */}
                         {room.config.context === 'language' && (
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
@@ -225,7 +254,7 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                             </div>
                         )}
 
-                        {/* Tópico Personalizado (só para modo custom) */}
+                        {/* 3. Tópico Personalizado (só para modo custom) */}
                         {room.config.context === 'custom' && (
                             <div>
                                 <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
@@ -241,8 +270,8 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                             </div>
                         )}
 
-                        {/* Contexto Adicional (disponível para TODOS os modos) */}
-                        {room.config.context !== 'custom' && (
+                        {/* 4. Contexto Adicional (disponível para modos estáticos não-library) */}
+                        {room.config.context !== 'custom' && room.config.context !== 'library' && (
                             <div>
                                 <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
                                     Especificar Contexto (opcional)
@@ -354,6 +383,17 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
                     Deletar Sala
                 </button>
             )}
+
+            {/* Selector Modal */}
+            <GameContentSelectorModal
+                isOpen={isFolderModalOpen}
+                onClose={() => setIsFolderModalOpen(false)}
+                currentUserId={currentUserId}
+                initialSelectedPaths={room.config.selectedFolderIds || []}
+                onConfirmSelection={(paths) => {
+                    onUpdateConfig({ selectedFolderIds: paths });
+                }}
+            />
         </div>
     );
 };

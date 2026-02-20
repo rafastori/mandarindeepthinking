@@ -326,6 +326,27 @@ const App: React.FC = () => {
         }
     };
 
+    const handleMoveFolder = async (path: string) => {
+        if (!user?.uid) return alert("Você precisa estar logado.");
+
+        const folderName = path.split('/').pop() || path;
+        const newParent = window.prompt(`Mover a pasta "${folderName}" para dentro de qual pasta?\n\nDeixe vazio para mover para a raiz.\nExemplo: Destino/Subpasta`);
+
+        if (newParent === null) return; // Cancelado
+
+        const cleanParent = newParent.trim().replace(/\/$/, ''); // Remove trailing slash if any
+        const newPath = cleanParent ? `${cleanParent}/${folderName}` : folderName;
+
+        if (newPath === path) return; // Nenhuma mudança
+
+        const result = await renameFolder(user.uid, path, newPath);
+        if (result.success) {
+            alert(`Pasta movida para "${newPath}"! ${result.updatedCount} item(s) atualizado(s).`);
+        } else {
+            alert(`Erro ao mover: ${result.error}`);
+        }
+    };
+
     const handleDeleteFolder = async (path: string) => {
         if (!user?.uid) return alert("Você precisa estar logado.");
 
@@ -591,6 +612,7 @@ const App: React.FC = () => {
                 onSelect={updateFolderFilters}
                 onImportInFolder={handleOpenImportInFolder}
                 onRenameFolder={handleRenameFolder}
+                onMoveFolder={handleMoveFolder}
                 onDeleteFolder={handleDeleteFolder}
                 isOpen={showGlobalFolderTree}
                 onClose={() => setShowGlobalFolderTree(false)}

@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../../services/firebase';
 import { collection, addDoc, onSnapshot, doc, updateDoc, arrayUnion, getDoc, deleteDoc, runTransaction } from 'firebase/firestore';
-import { GameRoom, Player, SupportedLanguage } from '../../types';
+import { GameRoom, Player, SupportedLanguage, GameCard } from '../../types';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { generateGameDeck } from '../../services/gemini';
 import Icon from '../../components/Icon';
 import { useStudyItems } from '../../hooks/useStudyItems';
 import { useUserProfile } from '../../hooks/useUserProfile';
+import { useGameDataLoader } from '../../hooks/useGameDataLoader'; // Novo Adapter
 
 // Sub-componentes
 import { RoomList } from './RoomList';
@@ -42,9 +43,14 @@ const LingoArenaView: React.FC<LingoArenaViewProps> = ({ onBack }) => {
     const [targetScore, setTargetScore] = useState(20);
     const [loadingDeck, setLoadingDeck] = useState(false);
 
-    // Hooks for saving words
-    const { addItem } = useStudyItems(user?.uid);
+    // Novas Variáveis de Configuração de Contexto
+    const [selectedFolderIds, setSelectedFolderIds] = useState<string[]>([]);
+    const [context, setContext] = useState<string>('gemini');
+
+    // Hooks for saving words and loading Library
+    const { items, addItem } = useStudyItems(user?.uid);
     const { savedIds, updateFavorites } = useUserProfile(user?.uid);
+    const { gameCards: libraryCards } = useGameDataLoader({ items, activeFolderIds: selectedFolderIds }); // Pre-load local cards
 
     const updateTimeoutRef = useRef<any>(null);
     const [isFullscreen, setIsFullscreen] = useState(false);
@@ -152,12 +158,18 @@ const LingoArenaView: React.FC<LingoArenaViewProps> = ({ onBack }) => {
         if (updateTimeoutRef.current) clearTimeout(updateTimeoutRef.current);
         updateTimeoutRef.current = setTimeout(async () => {
             await updateDoc(doc(db, 'gameRooms', activeRoom.id), {
-                config: { topic: selectedTopics.join(', '), lang: selectedLang, diff: selectedDiff },
+                config: {
+                    topic: selectedTopics.join(', '),
+                    lang: selectedLang,
+                    diff: selectedDiff,
+                    selectedFolderIds: selectedFolderIds,
+                    context: context
+                },
                 targetScore: targetScore
             });
         }, 500);
         return () => clearTimeout(updateTimeoutRef.current);
-    }, [selectedTopics, selectedLang, selectedDiff, targetScore, activeRoom?.id]);
+    }, [selectedTopics, selectedLang, selectedDiff, targetScore, selectedFolderIds, context, activeRoom?.id]);
 
     // --- ACTIONS ---
 
@@ -241,16 +253,35 @@ const LingoArenaView: React.FC<LingoArenaViewProps> = ({ onBack }) => {
         if (!activeRoom || !user) return;
         if (!isRefill) setLoadingDeck(true);
         try {
-            const topic = activeRoom.config?.topic || selectedTopics.join(', ');
+            let newCards: GameCard[] = [];
             const currentDeck = activeRoom.deck || [];
             const excludeList = currentDeck.map(c => c.word);
 
-            const newCards = await generateGameDeck(
-                topic,
-                activeRoom.config?.diff || selectedDiff,
-                activeRoom.config?.lang || selectedLang,
-                excludeList
-            );
+            if (activeRoom.config?.context === 'library') {
+                // MODO BIBLIOTECA LOCAL
+                // Embaralha todas as cartas disponíveis na pasta e pega a fatia do tamanho da rodada (ex: 20 per refill).
+                // Precisamos garantir que não pegue repetidas.
+                const available = libraryCards.filter(c => !excludeList.includes(c.word));
+                // Opcionalmente, shuffle antes de fatiar
+                const shuffled = [...available].sort(() => 0.5 - Math.random());
+                // Pegar no máximo 20 cartas por vez para não estourar a fila
+                newCards = shuffled.slice(0, 20);
+
+                if (newCards.length === 0) {
+                    alert("Não há (mais) palavras válidas o suficiente nestas pastas.");
+                    setLoadingDeck(false);
+                    return;
+                }
+            } else {
+                // MODO IA (Padrão)
+                const topicToGen = activeRoom.config?.topic || selectedTopics.join(', ');
+                newCards = await generateGameDeck(
+                    topicToGen,
+                    activeRoom.config?.diff || selectedDiff,
+                    activeRoom.config?.lang || selectedLang,
+                    excludeList
+                );
+            }
 
             const ref = doc(db, 'gameRooms', activeRoom.id);
 
@@ -667,7 +698,9 @@ const LingoArenaView: React.FC<LingoArenaViewProps> = ({ onBack }) => {
                     <Lobby
                         room={activeRoom} isHost={activeRoom.hostId === user.uid}
                         selectedTopics={selectedTopics} selectedLang={selectedLang} selectedDiff={selectedDiff} targetScore={targetScore} loadingDeck={loadingDeck}
+                        context={context} selectedFolderIds={selectedFolderIds}
                         onToggleTopic={toggleTopic} setLang={setSelectedLang} setDiff={setSelectedDiff} setTargetScore={setTargetScore}
+                        setContext={setContext} setSelectedFolderIds={setSelectedFolderIds}
                         onStart={() => handleGenerateCards(false)}
                         onAddBot={addBot}
                         onRemoveBot={removeBot}

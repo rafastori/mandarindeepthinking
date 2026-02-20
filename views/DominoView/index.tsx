@@ -9,6 +9,7 @@ import { usePuterSpeech } from '../../hooks/usePuterSpeech';
 import { DominoPlayer, DominoConfig, DOMINO_CONSTANTS, TermPair, EmoteBroadcast } from './types';
 import { DominoLobby } from './components/DominoLobby';
 import { GameBoard } from './components/GameBoard';
+import { useGameDataLoader } from '../../hooks/useGameDataLoader';
 
 interface DominoViewProps {
     onBack?: () => void;
@@ -26,7 +27,8 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         context: 'language',
         sourceLang: 'de',
         targetLang: 'pt',
-        difficulty: 'Iniciante'
+        difficulty: 'Iniciante',
+        selectedFolderIds: [] // Inicializa vazio
     });
 
     // Auth state
@@ -65,10 +67,18 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
         sendEmote
     } = useDominoRoom(userId);
 
+    const { items } = useStudyItems(userId); // Extract items safely
     const { addItem } = useStudyItems(userId);
     const { savedIds, updateFavorites } = useUserProfile(userId);
     const { speakSequence } = usePuterSpeech();
     const gameEndTTSPlayed = useRef(false);
+
+    // Pre-load external vocabulary for library games
+    const { gamePairs } = useGameDataLoader({
+        items: items,
+        activeFolderIds: activeRoom?.config.selectedFolderIds || [],
+        requireBothSides: true // Domino precisa de frente e verso
+    });
 
     // Auto-rejoin: Verifica se tem sala ativa pendente ao montar
     useEffect(() => {
@@ -236,7 +246,27 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
 
     const handleStartGame = async (configOverride?: Partial<DominoConfig>) => {
         if (activeRoom && isHost) {
-            await startGame(activeRoom.id, configOverride);
+            // Se for do tipo biblioteca, validamos se tem cartas suficientes
+            const finalContext = configOverride?.context || activeRoom.config.context;
+
+            if (finalContext === 'library') {
+                if (gamePairs.length < 13) {
+                    alert(`Sua seleção tem apenas ${gamePairs.length} cartas válidas. O dominó requer no mínimo 13 cartas de frente e verso.`);
+                    return;
+                }
+
+                // Formato exigido pela engine (embora gamePairs já seja muito parecido, garantimos a tipagem)
+                const genericPairs = gamePairs.map((p, idx) => ({
+                    index: idx,
+                    term: p.term,
+                    definition: p.definition,
+                    originalRefId: p.originalRefId
+                }));
+
+                await startGame(activeRoom.id, configOverride, genericPairs);
+            } else {
+                await startGame(activeRoom.id, configOverride);
+            }
         }
     };
 

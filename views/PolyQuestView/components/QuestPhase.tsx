@@ -5,6 +5,8 @@ import { ConfidenceBar } from './ConfidenceBar';
 import { generateEnigmas, generateIntruder } from '../../../services/gemini';
 import { shuffleArray } from '../utils';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
+import { useStudyItems } from '../../../hooks/useStudyItems';
+import { useGameDataLoader } from '../../../hooks/useGameDataLoader';
 
 interface QuestPhaseProps {
     room: PolyQuestRoom;
@@ -55,7 +57,15 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
     const [activeEnigmaIndex, setActiveEnigmaIndex] = useState<number | null>(null);
     const [showHint, setShowHint] = useState(false);
     const [eliminatedOptions, setEliminatedOptions] = useState<string[]>([]);
-    const [showOriginalText, setShowOriginalText] = useState(false);
+    const [showOriginalTextState, setShowOriginalText] = useState(false);
+
+    // Integrando biblioteca local
+    const { items } = useStudyItems(currentUserId);
+    const { gameCards } = useGameDataLoader({
+        items,
+        activeFolderIds: room.config.context === 'library' ? room.config.selectedFolderIds || [] : [],
+        requireBothSides: true
+    });
 
     // Derived state for the modal options (shuffled once per open)
     const [currentOptions, setCurrentOptions] = useState<string[]>([]);
@@ -69,22 +79,41 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                 try {
                     setLoading(true);
                     setError(null);
-                    const enigmasData = await generateEnigmas(
-                        room.selectedWords,
-                        room.config.sourceLang,
-                        room.config.targetLang,
-                        room.config.difficulty
-                    );
-                    const enigmas: WordEnigma[] = enigmasData.map(data => ({
-                        word: data.word,
-                        translation: data.translation,
-                        alternatives: data.alternatives,
-                        synonym: data.synonym,
-                        isDiscovered: false,
-                        attempts: 0,
-                        needsHelp: false
-                    }));
-                    onSetEnigmas(enigmas);
+
+                    if (room.config.context === 'library') {
+                        // MODO BIBLIOTECA LOCAL
+                        const enigmas: WordEnigma[] = room.selectedWords.map(word => {
+                            const cardMatch = gameCards.find(c => c.word === word);
+                            return {
+                                word: word,
+                                translation: cardMatch ? cardMatch.meaning : '???',
+                                alternatives: cardMatch ? cardMatch.distractors : ['Alternativa 1', 'Alternativa 2', 'Alternativa 3'],
+                                synonym: cardMatch ? (cardMatch.pinyin || 'Tente lembrar do contexto!') : 'Sem dica cadastrada',
+                                isDiscovered: false,
+                                attempts: 0,
+                                needsHelp: false
+                            };
+                        });
+                        onSetEnigmas(enigmas);
+                    } else {
+                        // MODO IA ORIGINAL
+                        const enigmasData = await generateEnigmas(
+                            room.selectedWords,
+                            room.config.sourceLang,
+                            room.config.targetLang,
+                            room.config.difficulty
+                        );
+                        const enigmas: WordEnigma[] = enigmasData.map(data => ({
+                            word: data.word,
+                            translation: data.translation,
+                            alternatives: data.alternatives,
+                            synonym: data.synonym,
+                            isDiscovered: false,
+                            attempts: 0,
+                            needsHelp: false
+                        }));
+                        onSetEnigmas(enigmas);
+                    }
                 } catch (err) {
                     console.error('Erro ao gerar enigmas:', err);
                     setError('Erro ao gerar enigmas. Tente novamente.');
@@ -96,7 +125,7 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
             }
         };
         initializeEnigmas();
-    }, []);
+    }, [room.enigmas.length, room.selectedWords, room.config.context, gameCards]);
 
     /* DESABILITADO PROVISORIAMENTE: Lógica do Intruso
     useEffect(() => {

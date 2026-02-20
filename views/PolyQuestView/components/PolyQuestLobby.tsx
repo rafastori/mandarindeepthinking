@@ -3,13 +3,14 @@ import Icon from '../../../components/Icon';
 import FlagSelect from '../../../components/FlagSelect';
 import { PolyQuestRoom, SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
+import { GameContentSelectorModal } from '../../DominoView/components/GameContentSelectorModal';
 
 interface PolyQuestLobbyProps {
     room: PolyQuestRoom;
     isHost: boolean;
     currentUserId: string;
     onToggleReady: () => void;
-    onUpdateConfig: (sourceLang: string, targetLang: string, text: string, difficulty: string) => void;
+    onUpdateConfig: (sourceLang: string, targetLang: string, text: string, difficulty: string, context?: string, selectedFolderIds?: string[]) => void;
     onStartGame: () => void;
     onLeaveRoom: () => void;
     onDeleteRoom: () => void;
@@ -29,14 +30,17 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     const [targetLang, setTargetLang] = useState(room.config.targetLang);
     const [text, setText] = useState(room.config.originalText);
     const [difficulty, setDifficulty] = useState(room.config.difficulty || 'Iniciante');
+    const [context, setContext] = useState(room.config.context || 'gemini');
+    const [selectedFolderIds, setSelectedFolderIds] = useState<string[]>(room.config.selectedFolderIds || []);
+    const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
 
     const currentPlayer = room.players.find(p => p.id === currentUserId);
     const allReady = room.players.every(p => p.isReady);
-    const validation = validateText(text, GAME_CONSTANTS.MIN_WORDS);
+    const validation = context === 'gemini' ? validateText(text, GAME_CONSTANTS.MIN_WORDS) : { valid: selectedFolderIds.length > 0, wordCount: 0, error: 'Selecione ao menos 1 pasta' };
 
     const handleConfigChange = () => {
-        if (isHost && validation.valid) {
-            onUpdateConfig(sourceLang, targetLang, text, difficulty);
+        if (isHost && (context === 'library' || validation.valid)) {
+            onUpdateConfig(sourceLang, targetLang, text, difficulty, context, selectedFolderIds);
         }
     };
 
@@ -48,7 +52,7 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
             }, 500);
             return () => clearTimeout(timer);
         }
-    }, [sourceLang, targetLang, text, difficulty]);
+    }, [sourceLang, targetLang, text, difficulty, context, selectedFolderIds]);
 
     const canStart = isHost && allReady && validation.valid && room.players.length > 0;
 
@@ -180,27 +184,69 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                         </div>
                     </div>
 
-                    {/* Texto Base */}
+                    {/* Modo de Jogo & Fonte */}
                     <div>
-                        <div className="flex items-center justify-between mb-2">
-                            <label className="block text-sm font-semibold text-slate-700">
-                                Texto Base
-                            </label>
-                            <span className={`text-xs font-semibold ${validation.valid ? 'text-emerald-600' : 'text-red-600'
-                                }`}>
-                                {validation.wordCount} / {GAME_CONSTANTS.MIN_WORDS} palavras
-                            </span>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">
+                            Fonte de Palavras
+                        </label>
+                        <div className="flex bg-slate-100 p-1 rounded-xl mb-4">
+                            <button
+                                onClick={() => setContext('gemini')}
+                                disabled={!isHost}
+                                className={`flex-1 py-2 text-sm font-bold rounded-lg transition-all ${context !== 'library' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'} ${!isHost ? 'opacity-70 cursor-not-allowed' : ''}`}
+                            >
+                                Texto Base (IA)
+                            </button>
+                            <button
+                                onClick={() => setContext('library')}
+                                disabled={!isHost}
+                                className={`flex-1 py-2 text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${context === 'library' ? 'bg-white text-purple-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'} ${!isHost ? 'opacity-70 cursor-not-allowed' : ''}`}
+                            >
+                                <Icon name="book" size={14} /> Minha Biblioteca
+                            </button>
                         </div>
-                        <textarea
-                            value={text}
-                            onChange={(e) => setText(e.target.value)}
-                            disabled={!isHost}
-                            rows={6}
-                            placeholder={`Cole aqui o texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...`}
-                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:bg-slate-100 disabled:cursor-not-allowed resize-none"
-                        />
-                        {!validation.valid && validation.error && (
-                            <p className="text-xs text-red-600 mt-1">{validation.error}</p>
+
+                        {context === 'library' ? (
+                            <div className="bg-purple-50 p-4 rounded-xl border border-purple-100 mb-4">
+                                <label className="text-xs font-bold text-purple-600 uppercase mb-2 flex items-center gap-1">
+                                    <Icon name="folder" size={14} /> Minhas Pastas
+                                </label>
+                                <button
+                                    onClick={() => isHost && setIsFolderModalOpen(true)}
+                                    disabled={!isHost}
+                                    className={`w-full bg-white border-2 border-purple-200 text-purple-700 font-bold py-3 rounded-xl flex items-center justify-between px-4 transition-colors ${isHost ? 'hover:border-purple-400' : 'opacity-70 cursor-not-allowed'}`}
+                                >
+                                    <span className="truncate">
+                                        {selectedFolderIds && selectedFolderIds.length > 0
+                                            ? `${selectedFolderIds.length} pasta(s) selecionada(s)`
+                                            : 'Escolher Pastas de Estudo...'}
+                                    </span>
+                                    {isHost && <Icon name="chevron-right" size={20} />}
+                                </button>
+                            </div>
+                        ) : (
+                            <div>
+                                <div className="flex items-center justify-between mb-2">
+                                    <label className="block text-sm font-semibold text-slate-700">
+                                        Texto Base
+                                    </label>
+                                    <span className={`text-xs font-semibold ${validation.valid ? 'text-emerald-600' : 'text-red-600'
+                                        }`}>
+                                        {validation.wordCount} / {GAME_CONSTANTS.MIN_WORDS} palavras
+                                    </span>
+                                </div>
+                                <textarea
+                                    value={text}
+                                    onChange={(e) => setText(e.target.value)}
+                                    disabled={!isHost}
+                                    rows={6}
+                                    placeholder={`Cole aqui o texto em ${SUPPORTED_LANGUAGES.find(l => l.code === sourceLang)?.name || sourceLang}...`}
+                                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:bg-slate-100 disabled:cursor-not-allowed resize-none"
+                                />
+                                {!validation.valid && validation.error && (
+                                    <p className="text-xs text-red-600 mt-1">{validation.error}</p>
+                                )}
+                            </div>
                         )}
                     </div>
                 </div>
@@ -256,6 +302,17 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                     </div>
                 </div>
             </div>
+
+            {/* Modal de Pastas */}
+            <GameContentSelectorModal
+                isOpen={isFolderModalOpen}
+                onClose={() => setIsFolderModalOpen(false)}
+                currentUserId={room.hostId}
+                initialSelectedPaths={selectedFolderIds}
+                onConfirmSelection={(paths) => {
+                    if (isHost) setSelectedFolderIds(paths);
+                }}
+            />
         </div>
     );
 };

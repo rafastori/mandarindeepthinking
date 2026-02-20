@@ -9,13 +9,15 @@ export type DominoContext =
     | 'chemistry'     // Termos químicos
     | 'biology'       // Termos biológicos
     | 'law'           // Termos jurídicos
+    | 'library'       // Biblioteca Pessoal de Estudo
     | 'custom';       // Personalizado
 
-// Par termo/definição gerado pela IA
+// Par termo/definição gerado pela IA ou selecionado da biblioteca
 export interface TermPair {
     index: number;      // 0-12
     term: string;       // Palavra no idioma estudado ou termo técnico
     definition: string; // Tradução ou definição
+    originalRefId?: string; // ID original do banco do usuário (para gamificação)
 }
 
 // Peça de dominó
@@ -67,6 +69,7 @@ export interface DominoConfig {
     customTopic?: string;
     customContext?: string;  // Contexto adicional (disponível para TODOS os modos)
     difficulty: 'Iniciante' | 'Intermediário' | 'Avançado';
+    selectedFolderIds?: string[]; // IDs das pastas da biblioteca selecionadas pelo usuário
 }
 
 // Emote broadcast para interações
@@ -118,6 +121,7 @@ export const DOMINO_CONSTANTS = {
 
 // Contextos disponíveis para seleção
 export const CONTEXT_OPTIONS: { value: DominoContext; label: string; icon: string }[] = [
+    { value: 'library', label: 'Biblioteca', icon: '📚' },
     { value: 'language', label: 'Idiomas', icon: '🌍' },
     { value: 'medicine', label: 'Medicina', icon: '🏥' },
     { value: 'computing', label: 'Computação', icon: '💻' },

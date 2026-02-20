@@ -8,6 +8,7 @@ import { TrainViewModal } from './TrainViewModal';
 import { DominoPieceModal } from './DominoPieceModal';
 import { EmotePanel, EmoteDisplay } from './EmotePanel';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
+import { useUserProfile } from '../../../hooks/useUserProfile';
 
 interface GameBoardProps {
     room: DominoRoom;
@@ -164,6 +165,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         setSelectedPiece(selectedPiece?.id === piece.id ? null : piece);
     };
 
+    const { stats, updateStats } = useUserProfile(currentUserId);
+
     const handlePlaceOnTrain = async (train: Train) => {
         if (!selectedPiece || !isMyTurn) return;
         const { canPlay, needsFlip } = canPlayOnTrain(selectedPiece, train);
@@ -173,11 +176,18 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         const termPair = room.termPairs.find(tp => tp.index === connectedIndex);
         const originalTerm = termPair?.term || '';
         const translation = termPair?.definition || '';
+        const refId = termPair?.originalRefId;
 
         const success = await onPlacePiece(selectedPiece.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
             setLocalHand(null);
+
+            // Progress/Gamification: Ganhar pontos por acerto com cartas próprias
+            if (refId) {
+                // Dominó dá 2 exp por jogada certa
+                updateStats({ ...stats, points: (stats.points || 0) + 2 });
+            }
 
             if (originalTerm && translation) {
                 const isLanguageContext = room.config.context === 'language';

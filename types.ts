@@ -102,6 +102,7 @@ export interface GameCard {
     meaning: string;
     example: string;
     distractors: string[]; // <--- NOVO
+    originalRefId?: string; // Para gamificação e link com a biblioteca pessoal
 }
 
 export interface GameRoom {
@@ -117,6 +118,8 @@ export interface GameRoom {
         topic: string;
         lang: SupportedLanguage;
         diff: string;
+        selectedFolderIds?: string[]; // Array de IDs das pastas do Modo Biblioteca
+        context?: string; // Ex: 'library' ou 'gemini'
     };
 
     targetScore: number;

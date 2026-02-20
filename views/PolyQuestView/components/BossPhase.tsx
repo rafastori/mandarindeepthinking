@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { PolyQuestRoom } from '../types';
 import { generateBossLevel, BossLevelData } from '../../../services/gemini';
 import Icon from '../../../components/Icon';
+import { useStudyItems } from '../../../hooks/useStudyItems';
+import { useGameDataLoader } from '../../../hooks/useGameDataLoader';
 
 interface BossPhaseProps {
     room: PolyQuestRoom;
@@ -45,6 +47,14 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
     const [feedback, setFeedback] = useState<'success' | 'error' | null>(null);
     const [draggedBlockIndex, setDraggedBlockIndex] = useState<number | null>(null);
 
+    // Integrando biblioteca local
+    const { items } = useStudyItems(currentUserId);
+    const { gamePairs } = useGameDataLoader({
+        items,
+        activeFolderIds: room.config.context === 'library' ? room.config.selectedFolderIds || [] : [],
+        requireBothSides: true
+    });
+
     // DnD Handlers
     const handleDragStart = (e: React.DragEvent, index: number) => {
         setDraggedBlockIndex(index);
@@ -79,10 +89,47 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
 
             setLoading(true);
             try {
-                const textContext = room.config.originalText || "PolyQuest Context";
-                const bossData = await generateBossLevel(textContext, room.config.sourceLang, room.config.difficulty);
-                console.log("Boss Generated:", bossData);
-                onStartBoss(bossData);
+                if (room.config.context === 'library') {
+                    // MODO BIBLIOTECA
+                    // Tenta achar itens com originalSentence para usar como boss level, se não houver, improvisa
+                    const itemsWithSentences = items.filter(i => {
+                        const isSelected = (room.config.selectedFolderIds || []).some(filterPath => {
+                            if (filterPath === '__uncategorized__' && !i.folderPath) return true;
+                            return i.folderPath === filterPath || i.folderPath?.startsWith(filterPath + '/');
+                        });
+                        return isSelected && i.originalSentence && i.originalSentence.length > 5;
+                    });
+
+                    let bossData: BossLevelData;
+
+                    if (itemsWithSentences.length > 0) {
+                        const randomItem = itemsWithSentences[Math.floor(Math.random() * itemsWithSentences.length)];
+                        // Separa a frase original em blocos usando split por espaço ou CJK
+                        const isCJK = ['zh', 'ja', 'ko'].includes(room.config.sourceLang);
+                        const blocks = isCJK
+                            ? randomItem.originalSentence!.split(/(\s+|[.,!?;:()]|[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]+)/).filter(t => t.trim().length > 0)
+                            : randomItem.originalSentence!.split(/\s+/).filter(t => t.trim().length > 0);
+
+                        bossData = {
+                            originalSentence: randomItem.originalSentence!,
+                            blocks: blocks
+                        };
+                    } else {
+                        // Improviso: pega 5 termos aleatórios das cartas para formarem um "mega combo" de tradução reversa.
+                        const shuffledPairs = [...gamePairs].sort(() => 0.5 - Math.random()).slice(0, 5);
+                        bossData = {
+                            originalSentence: shuffledPairs.map(p => p.term).join(' '),
+                            blocks: shuffledPairs.map(p => p.term)
+                        };
+                    }
+                    onStartBoss(bossData);
+                } else {
+                    // MODO IA ORIGINAL
+                    const textContext = room.config.originalText || "PolyQuest Context";
+                    const bossData = await generateBossLevel(textContext, room.config.sourceLang, room.config.difficulty);
+                    console.log("Boss Generated:", bossData);
+                    onStartBoss(bossData);
+                }
             } catch (error) {
                 console.error("Failed to generate boss:", error);
                 onStartBoss({
@@ -94,8 +141,9 @@ export const BossPhase: React.FC<BossPhaseProps> = ({
             }
         };
 
+        if (room.config.context === 'library' && gamePairs.length === 0) return; // Wait for data loader
         initBoss();
-    }, [room.phase, room.bossLevel, room.hostId, currentUserId, room.config.originalText, room.config.targetLang, onStartBoss]);
+    }, [room.phase, room.bossLevel, room.hostId, currentUserId, room.config.originalText, room.config.context, room.config.targetLang, onStartBoss, gamePairs, items]);
 
     const placedBlocks = room.bossState?.placedBlocks || [];
 
