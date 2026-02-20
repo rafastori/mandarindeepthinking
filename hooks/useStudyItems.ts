@@ -94,6 +94,63 @@ export const useStudyItems = (userId: string | null | undefined) => {
     console.log('Biblioteca local limpa com sucesso.');
   }, [userId]);
 
+  // Renomeia ou move uma pasta e seus itens
+  const renameFolderLocal = useCallback(async (oldPath: string, newPath: string) => {
+    if (!userId) return { success: false, updatedCount: 0 };
+
+    const updatedItems = items.filter(item =>
+      item.folderPath === oldPath || item.folderPath?.startsWith(`${oldPath}/`)
+    ).map(item => ({
+      ...item,
+      folderPath: item.folderPath!.replace(oldPath, newPath)
+    }));
+
+    if (updatedItems.length > 0) {
+      await localDB.bulkPutItems(updatedItems);
+      setItems(prev => prev.map(item => {
+        const updated = updatedItems.find(u => u.id === item.id);
+        return updated || item;
+      }));
+    }
+    return { success: true, updatedCount: updatedItems.length };
+  }, [userId, items]);
+
+  // Deleta uma pasta e todos os seus itens
+  const deleteFolderLocal = useCallback(async (folderPath: string) => {
+    if (!userId) return { success: false, deletedCount: 0 };
+
+    const idsToDelete = items.filter(item =>
+      item.folderPath === folderPath || item.folderPath?.startsWith(`${folderPath}/`)
+    ).map(item => item.id);
+
+    if (idsToDelete.length > 0) {
+      await localDB.bulkDeleteItems(idsToDelete);
+      setItems(prev => prev.filter(item => !idsToDelete.includes(item.id)));
+    }
+    return { success: true, deletedCount: idsToDelete.length };
+  }, [userId, items]);
+
+  // Remove a categoria de todos os itens da pasta (move para Sem Categoria)
+  const uncategorizeFolderLocal = useCallback(async (folderPath: string) => {
+    if (!userId) return { success: false, movedCount: 0 };
+
+    const updatedItems = items.filter(item =>
+      item.folderPath === folderPath || item.folderPath?.startsWith(`${folderPath}/`)
+    ).map(item => ({
+      ...item,
+      folderPath: null
+    }));
+
+    if (updatedItems.length > 0) {
+      await localDB.bulkPutItems(updatedItems);
+      setItems(prev => prev.map(item => {
+        const updated = updatedItems.find(u => u.id === item.id);
+        return updated || item;
+      }));
+    }
+    return { success: true, movedCount: updatedItems.length };
+  }, [userId, items]);
+
   // EXPORTAR DADOS: Gera arquivo JSON para download
   const exportData = useCallback((profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
     if (!userId || items.length === 0) {
@@ -214,5 +271,17 @@ export const useStudyItems = (userId: string | null | undefined) => {
     }
   }, [userId]);
 
-  return { items, loading, addItem, deleteItem, updateItem, clearLibrary, exportData, importData };
+  return {
+    items,
+    loading,
+    addItem,
+    deleteItem,
+    updateItem,
+    clearLibrary,
+    exportData,
+    importData,
+    renameFolderLocal,
+    deleteFolderLocal,
+    uncategorizeFolderLocal
+  };
 };

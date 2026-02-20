@@ -19,7 +19,6 @@ import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
 import FolderTree from './components/FolderTree';
-import { renameFolder, deleteFolderWithItems, uncategorizeFolder } from './services/folderService';
 import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
@@ -51,7 +50,7 @@ const App: React.FC = () => {
     const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
-    const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
+    const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
@@ -318,11 +317,11 @@ const App: React.FC = () => {
     const handleRenameFolder = async (oldPath: string, newPath: string) => {
         if (!user?.uid) return alert("Você precisa estar logado.");
 
-        const result = await renameFolder(user.uid, oldPath, newPath);
+        const result = await renameFolderLocal(oldPath, newPath);
         if (result.success) {
             alert(`Pasta renomeada! ${result.updatedCount} item(s) atualizado(s).`);
         } else {
-            alert(`Erro ao renomear: ${result.error}`);
+            alert(`Erro ao renomear.`);
         }
     };
 
@@ -339,11 +338,11 @@ const App: React.FC = () => {
 
         if (newPath === path) return; // Nenhuma mudança
 
-        const result = await renameFolder(user.uid, path, newPath);
+        const result = await renameFolderLocal(path, newPath);
         if (result.success) {
             alert(`Pasta movida para "${newPath}"! ${result.updatedCount} item(s) atualizado(s).`);
         } else {
-            alert(`Erro ao mover: ${result.error}`);
+            alert(`Erro ao mover.`);
         }
     };
 
@@ -356,18 +355,18 @@ const App: React.FC = () => {
         );
 
         if (action) {
-            const result = await deleteFolderWithItems(user.uid, path);
+            const result = await deleteFolderLocal(path);
             if (result.success) {
                 alert(`${result.deletedCount} item(s) excluído(s).`);
             } else {
-                alert(`Erro: ${result.error}`);
+                alert(`Erro ao excluir.`);
             }
         } else {
-            const result = await uncategorizeFolder(user.uid, path);
+            const result = await uncategorizeFolderLocal(path);
             if (result.success) {
                 alert(`${result.movedCount} item(s) movido(s) para "Sem Categoria".`);
             } else {
-                alert(`Erro: ${result.error}`);
+                alert(`Erro ao mover.`);
             }
         }
     };

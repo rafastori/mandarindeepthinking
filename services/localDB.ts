@@ -131,6 +131,22 @@ export const localDB = {
         });
     },
 
+    /** Deleta múltiplos itens de uma vez (batch) */
+    async bulkDeleteItems(ids: (string | number)[]): Promise<void> {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(ITEMS_STORE, 'readwrite');
+            const store = tx.objectStore(ITEMS_STORE);
+
+            for (const id of ids) {
+                store.delete(id as IDBValidKey);
+            }
+
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => reject(tx.error);
+        });
+    },
+
     /** Limpa todos os itens */
     async clearItems(): Promise<void> {
         await withStore(ITEMS_STORE, 'readwrite', (store) => store.clear());
