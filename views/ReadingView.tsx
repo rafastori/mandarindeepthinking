@@ -1,11 +1,10 @@
 import React, { useMemo, useState } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
-import FolderTree from '../components/FolderTree';
 import { StudyItem, Keyword, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
-import { renameFolder, deleteFolderWithItems, uncategorizeFolder, moveItemsToFolder, extractFolderPaths } from '../services/folderService';
+import { moveItemsToFolder, extractFolderPaths } from '../services/folderService';
 import ExportModal, { ExportConfig } from '../components/ExportModal';
 
 // Estilos para PDF (invisível na tela)
@@ -97,9 +96,6 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     // Estados para modo de seleção
     const [selectionMode, setSelectionMode] = useState(false);
     const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
-
-    // Estado do FolderTree
-    const [showFolderTree, setShowFolderTree] = useState(false);
 
     // Estado do ExportModal
     const [showExportModal, setShowExportModal] = useState(false);
@@ -393,50 +389,6 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         }
     };
 
-    // Handlers para FolderTree
-    const handleImportInFolder = (folderPath: string) => {
-        if (onOpenImportInFolder) {
-            onOpenImportInFolder(folderPath);
-        }
-        setShowFolderTree(false);
-    };
-
-    const handleRenameFolder = async (oldPath: string, newPath: string) => {
-        if (!userId) return alert("Você precisa estar logado.");
-
-        const result = await renameFolder(userId, oldPath, newPath);
-        if (result.success) {
-            alert(`Pasta renomeada! ${result.updatedCount} item(s) atualizado(s).`);
-        } else {
-            alert(`Erro ao renomear: ${result.error}`);
-        }
-    };
-
-    const handleDeleteFolder = async (path: string) => {
-        if (!userId) return alert("Você precisa estar logado.");
-
-        const action = window.confirm(
-            `Deseja excluir todos os itens da pasta "${path}"?\n\n` +
-            `Clique "OK" para excluir tudo, ou "Cancelar" para mover para "Sem Categoria".`
-        );
-
-        if (action) {
-            const result = await deleteFolderWithItems(userId, path);
-            if (result.success) {
-                alert(`${result.deletedCount} item(s) excluído(s).`);
-            } else {
-                alert(`Erro: ${result.error}`);
-            }
-        } else {
-            const result = await uncategorizeFolder(userId, path);
-            if (result.success) {
-                alert(`${result.movedCount} item(s) movido(s) para "Sem Categoria".`);
-            } else {
-                alert(`Erro: ${result.error}`);
-            }
-        }
-    };
-
     // Mover itens selecionados
     const openMoveModal = () => {
         if (selectedIds.size === 0) return;
@@ -492,18 +444,6 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
     return (
         <div className="p-4 space-y-4 pb-24 relative min-h-full">
-            {/* FolderTree Sidebar */}
-            <FolderTree
-                data={data}
-                selectedPaths={activeFolderFilters}
-                onSelect={onUpdateFolderFilters}
-                onImportInFolder={handleImportInFolder}
-                onRenameFolder={handleRenameFolder}
-                onDeleteFolder={handleDeleteFolder}
-                isOpen={showFolderTree}
-                onClose={() => setShowFolderTree(false)}
-            />
-
             {filteredData.length === 0 && activeFolderFilters.length === 0 ? (
                 <div className="flex flex-col items-center justify-center h-[60vh] text-center">
                     <EmptyState msg="Biblioteca vazia." icon="book-open" />
@@ -514,19 +454,6 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     {/* Header com botões */}
                     <div className="flex items-center justify-between mb-4 gap-2">
                         <div className="flex items-center gap-2">
-                            <button
-                                onClick={() => setShowFolderTree(true)}
-                                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-brand-600 bg-brand-50 hover:bg-brand-100 rounded-lg transition-colors"
-                            >
-                                <Icon name="folder-tree" size={16} />
-                                Pastas
-                                {activeFolderFilters.length > 0 && (
-                                    <span className="bg-brand-500 text-white text-xs px-1.5 rounded-full">
-                                        {activeFolderFilters.length}
-                                    </span>
-                                )}
-                            </button>
-
                             <h2 className="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <Icon name="book-open" size={20} className="text-brand-600" />
                                 Leitura ({filteredData.length})

@@ -11,6 +11,7 @@ interface HeaderProps {
     onLogout: () => void;
     onOpenStats: () => void;
     onOpenSessionSummary: () => void;
+    onOpenFolders: () => void;
     onResetAccount: () => void;
     // Props para Puter
     isPuterConnected: boolean;
@@ -40,6 +41,7 @@ const Header: React.FC<HeaderProps> = ({
     onLogout,
     onOpenStats,
     onOpenSessionSummary,
+    onOpenFolders,
     onResetAccount,
     isPuterConnected,
     puterUsername,
@@ -79,6 +81,10 @@ const Header: React.FC<HeaderProps> = ({
 
                 <button onClick={onOpenSessionSummary} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Resumo da Sessão">
                     <Trophy className="w-[18px] h-[18px]" />
+                </button>
+
+                <button onClick={onOpenFolders} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Pastas">
+                    <Icon name="folder-tree" size={18} />
                 </button>
 
                 <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Estatísticas">

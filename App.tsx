@@ -18,6 +18,8 @@ import LabView from './views/LabView';
 import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
+import FolderTree from './components/FolderTree';
+import { renameFolder, deleteFolderWithItems, uncategorizeFolder } from './services/folderService';
 import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
@@ -46,6 +48,7 @@ const App: React.FC = () => {
     const [isGameFullscreen, setIsGameFullscreen] = useState(false);
     const [showIntro, setShowIntro] = useState(true);
     const [showSessionSummary, setShowSessionSummary] = useState(false);
+    const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading } = useStudyItems(user?.uid);
@@ -309,6 +312,43 @@ const App: React.FC = () => {
     const handleOpenImportInFolder = (folderPath: string) => {
         setInitialImportFolder(folderPath);
         setShowImport(true);
+        setShowGlobalFolderTree(false);
+    };
+
+    const handleRenameFolder = async (oldPath: string, newPath: string) => {
+        if (!user?.uid) return alert("Você precisa estar logado.");
+
+        const result = await renameFolder(user.uid, oldPath, newPath);
+        if (result.success) {
+            alert(`Pasta renomeada! ${result.updatedCount} item(s) atualizado(s).`);
+        } else {
+            alert(`Erro ao renomear: ${result.error}`);
+        }
+    };
+
+    const handleDeleteFolder = async (path: string) => {
+        if (!user?.uid) return alert("Você precisa estar logado.");
+
+        const action = window.confirm(
+            `Deseja excluir todos os itens da pasta "${path}"?\n\n` +
+            `Clique "OK" para excluir tudo, ou "Cancelar" para mover para "Sem Categoria".`
+        );
+
+        if (action) {
+            const result = await deleteFolderWithItems(user.uid, path);
+            if (result.success) {
+                alert(`${result.deletedCount} item(s) excluído(s).`);
+            } else {
+                alert(`Erro: ${result.error}`);
+            }
+        } else {
+            const result = await uncategorizeFolder(user.uid, path);
+            if (result.success) {
+                alert(`${result.movedCount} item(s) movido(s) para "Sem Categoria".`);
+            } else {
+                alert(`Erro: ${result.error}`);
+            }
+        }
     };
 
     const handleSaveLabItem = async (item: StudyItem) => {
@@ -511,6 +551,7 @@ const App: React.FC = () => {
                     }}
                     onOpenStats={() => setShowStats(true)}
                     onOpenSessionSummary={handleOpenSessionSummary}
+                    onOpenFolders={() => setShowGlobalFolderTree(true)}
                     onResetAccount={handleResetAccount}
                     isPuterConnected={isPuterConnected}
                     puterUsername={puterUsername}
@@ -544,6 +585,16 @@ const App: React.FC = () => {
                     initialFolder={initialImportFolder}
                 />
             )}
+            <FolderTree
+                data={libraryData}
+                selectedPaths={activeFolderFilters}
+                onSelect={updateFolderFilters}
+                onImportInFolder={handleOpenImportInFolder}
+                onRenameFolder={handleRenameFolder}
+                onDeleteFolder={handleDeleteFolder}
+                isOpen={showGlobalFolderTree}
+                onClose={() => setShowGlobalFolderTree(false)}
+            />
             {showPuterSuggestion && (
                 <PuterSuggestionModal
                     onConnect={handleConnectPuter}

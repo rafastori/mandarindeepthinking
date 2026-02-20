@@ -27,6 +27,8 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     const [expandedPaths, setExpandedPaths] = useState<Set<string>>(new Set());
     const [editingPath, setEditingPath] = useState<string | null>(null);
     const [editValue, setEditValue] = useState('');
+    // Qual pasta está com os botões de ação a mostra
+    const [activeActionPath, setActiveActionPath] = useState<string | null>(null);
 
     // Conta itens sem pasta
     const uncategorizedCount = useMemo(() => {
@@ -101,6 +103,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         e.stopPropagation();
         setEditingPath(path);
         setEditValue(path.split('/').pop() || path);
+        setActiveActionPath(null); // fecha o menu de ações
     };
 
     const confirmRename = () => {
@@ -122,6 +125,15 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         if (window.confirm(`Tem certeza que deseja excluir a pasta "${path}"?\n\nIsso afetará ${itemCount} item(s).`)) {
             onDeleteFolder?.(path);
         }
+        setActiveActionPath(null); // fecha o menu de ações
+    };
+
+    const handleContainerClick = (path: string) => {
+        if (activeActionPath === path) {
+            setActiveActionPath(null); // toggle off se clicar de novo
+        } else {
+            setActiveActionPath(path);
+        }
     };
 
     const renderFolderNode = (node: FolderNode, depth: number = 0) => {
@@ -129,41 +141,39 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         const isSelected = selectedPaths.includes(node.path);
         const hasChildren = node.children.length > 0;
         const isEditing = editingPath === node.path;
+        const isActionsVisible = activeActionPath === node.path;
 
         return (
-            <div key={node.path}>
+            <div key={node.path} className="mb-1">
                 <div
                     className={`
-                        flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all group
-                        ${isSelected ? 'bg-brand-100 text-brand-700' : 'hover:bg-slate-100'}
+                        flex items-center gap-3 px-4 py-3 rounded-xl cursor-default transition-all group
+                        ${hasChildren ? 'bg-white border-[1px] border-slate-200 hover:border-slate-300 shadow-sm' : 'bg-white border-[1px] border-transparent hover:bg-slate-50 hover:border-slate-100'}
                     `}
-                    style={{ paddingLeft: `${12 + depth * 16}px` }}
-                    onClick={() => toggleSelect(node.path)}
+                    style={{ marginLeft: `${depth * 24}px` }}
+                    onClick={() => handleContainerClick(node.path)}
+                    onDoubleClick={(e) => {
+                        e.stopPropagation();
+                        // Impede seleção de texto acidental no duplo clique
+                        window.getSelection()?.removeAllRanges();
+                        if (hasChildren) toggleExpanded(node.path);
+                    }}
                 >
-                    {/* Expand/Collapse */}
-                    {hasChildren ? (
-                        <button
-                            onClick={(e) => { e.stopPropagation(); toggleExpanded(node.path); }}
-                            className="p-0.5 hover:bg-slate-200 rounded"
-                        >
-                            <Icon name={isExpanded ? 'chevron-down' : 'chevron-right'} size={14} className="text-slate-400" />
-                        </button>
-                    ) : (
-                        <span className="w-5" />
-                    )}
-
-                    {/* Checkbox */}
-                    <div
-                        className={`
-                            w-4 h-4 rounded border-2 flex items-center justify-center transition-all flex-shrink-0
-                            ${isSelected ? 'bg-brand-500 border-brand-500 text-white' : 'border-slate-300'}
-                        `}
+                    {/* Folder Icon as Checkbox */}
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            toggleSelect(node.path);
+                        }}
+                        className={`p-1 -ml-1 rounded-lg shrink-0 transition-all ${isSelected ? 'text-brand-600 scale-110' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}`}
+                        title={isSelected ? "Desmarcar pasta" : "Selecionar pasta"}
                     >
-                        {isSelected && <Icon name="check" size={10} />}
-                    </div>
-
-                    {/* Folder Icon */}
-                    <Icon name="folder" size={16} className={isSelected ? 'text-brand-600' : 'text-slate-400'} />
+                        <Icon
+                            name="folder"
+                            size={isSelected ? 24 : 22}
+                            className={isSelected ? "fill-current" : ""}
+                        />
+                    </button>
 
                     {/* Name or Edit Input */}
                     {isEditing ? (
@@ -173,54 +183,63 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                             onChange={(e) => setEditValue(e.target.value)}
                             onBlur={confirmRename}
                             onKeyDown={(e) => e.key === 'Enter' && confirmRename()}
-                            className="flex-1 px-2 py-0.5 border border-brand-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                            className="flex-1 px-3 py-1.5 border border-brand-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-brand-500 min-w-0"
                             autoFocus
                             onClick={(e) => e.stopPropagation()}
                         />
                     ) : (
-                        <span className="flex-1 text-sm font-medium truncate">{node.name}</span>
+                        <span
+                            className={`flex-1 text-base truncate select-none ${isSelected ? 'font-bold text-brand-800' : 'font-medium text-slate-700'}`}
+                        >
+                            {node.name}
+                        </span>
                     )}
 
-                    {/* Item Count */}
-                    <span className="text-xs text-slate-400 bg-slate-100 px-1.5 rounded-full">
-                        {node.itemCount}
-                    </span>
-
-                    {/* Action Buttons (visible on hover) */}
-                    <div className="hidden group-hover:flex items-center gap-1">
-                        {onImportInFolder && (
-                            <button
-                                onClick={(e) => { e.stopPropagation(); onImportInFolder(node.path); }}
-                                className="p-1 hover:bg-brand-100 rounded text-brand-600"
-                                title="Importar nesta pasta"
-                            >
-                                <Icon name="plus" size={14} />
-                            </button>
-                        )}
-                        {onRenameFolder && (
-                            <button
-                                onClick={(e) => startRename(node.path, e)}
-                                className="p-1 hover:bg-slate-200 rounded text-slate-500"
-                                title="Renomear"
-                            >
-                                <Icon name="edit-2" size={14} />
-                            </button>
-                        )}
-                        {onDeleteFolder && (
-                            <button
-                                onClick={(e) => handleDelete(node.path, e)}
-                                className="p-1 hover:bg-red-100 rounded text-red-500"
-                                title="Excluir pasta"
-                            >
-                                <Icon name="trash-2" size={14} />
-                            </button>
-                        )}
-                    </div>
+                    {/* Action Buttons (visible ONLY when container is clicked) */}
+                    {isActionsVisible && !isEditing ? (
+                        <div className="flex items-center gap-1 shrink-0 ml-2 animate-in fade-in slide-in-from-right-4 duration-200">
+                            {onImportInFolder && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onImportInFolder(node.path); }}
+                                    className="p-2 bg-brand-50 hover:bg-brand-100 rounded-lg text-brand-600 transition-colors"
+                                    title="Importar nesta pasta"
+                                >
+                                    <Icon name="plus" size={18} />
+                                </button>
+                            )}
+                            {onRenameFolder && (
+                                <button
+                                    onClick={(e) => startRename(node.path, e)}
+                                    className="p-2 bg-amber-50 hover:bg-amber-100 rounded-lg text-amber-600 transition-colors"
+                                    title="Renomear"
+                                >
+                                    <Icon name="edit-2" size={18} />
+                                </button>
+                            )}
+                            {onDeleteFolder && (
+                                <button
+                                    onClick={(e) => handleDelete(node.path, e)}
+                                    className="p-2 bg-red-50 hover:bg-red-100 rounded-lg text-red-500 transition-colors"
+                                    title="Excluir pasta"
+                                >
+                                    <Icon name="trash-2" size={18} />
+                                </button>
+                            )}
+                        </div>
+                    ) : (
+                        /* Item Count (visible when actions are NOT visible, or always) */
+                        <span
+                            className={`text-xs font-bold px-2 py-0.5 rounded-full shrink-0 ${hasChildren ? 'bg-purple-500 text-white shadow-sm' : 'bg-slate-100 text-slate-500'}`}
+                            title={hasChildren ? "Possui subpastas (duplo clique para expandir)" : `${node.itemCount} itens`}
+                        >
+                            {node.itemCount}
+                        </span>
+                    )}
                 </div>
 
                 {/* Children */}
                 {isExpanded && hasChildren && (
-                    <div>
+                    <div className="mt-1">
                         {node.children.map(child => renderFolderNode(child, depth + 1))}
                     </div>
                 )}
@@ -228,75 +247,81 @@ const FolderTree: React.FC<FolderTreeProps> = ({
         );
     };
 
+    // Reseta activeActionPath e setEditingPath se a modal fechar
+    const handleClose = () => {
+        setActiveActionPath(null);
+        setEditingPath(null);
+        onClose();
+    };
+
     if (!isOpen) return null;
 
     return (
-        <>
-            {/* Backdrop */}
-            <div
-                className="fixed inset-0 bg-black/30 z-40 md:hidden"
-                onClick={onClose}
-            />
-
-            {/* Sidebar Drawer */}
-            <div className={`
-                fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 transform transition-transform duration-300 flex flex-col overflow-hidden
-                ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-                md:relative md:translate-x-0 md:shadow-none md:border-r md:border-slate-200
-            `}>
-                {/* Header */}
-                <div className="flex items-center justify-between p-4 border-b border-slate-100 flex-shrink-0">
-                    <h3 className="font-bold text-slate-800 flex items-center gap-2">
-                        <Icon name="folder-tree" size={18} className="text-brand-600" />
+        <div className="fixed inset-0 z-[100] flex flex-col bg-slate-100/95 backdrop-blur-sm animate-in fade-in zoom-in-95 duration-200" onClick={() => setActiveActionPath(null)}>
+            {/* Header / Top Bar */}
+            <div className="flex items-center justify-between p-4 bg-white border-b border-slate-200 shadow-sm shrink-0" onClick={e => e.stopPropagation()}>
+                <div className="flex items-center gap-3">
+                    <button onClick={handleClose} className="p-2 -ml-2 text-slate-500 hover:bg-slate-100 rounded-full transition-colors">
+                        <Icon name="x" size={24} />
+                    </button>
+                    <h3 className="font-bold text-slate-800 text-xl flex items-center gap-2">
+                        <Icon name="folder-tree" size={24} className="text-brand-600" />
                         Pastas
                     </h3>
-                    <button onClick={onClose} className="p-1.5 hover:bg-slate-100 rounded-lg md:hidden">
-                        <Icon name="x" size={18} className="text-slate-400" />
-                    </button>
                 </div>
-
-                {/* Actions */}
-                <div className="flex items-center gap-2 p-3 border-b border-slate-100 bg-slate-50 flex-shrink-0">
-                    <button
-                        onClick={selectAll}
-                        className="text-xs font-medium text-brand-600 hover:text-brand-700 px-2 py-1 hover:bg-brand-50 rounded"
-                    >
-                        Selecionar Tudo
-                    </button>
-                    <button
-                        onClick={clearSelection}
-                        className="text-xs font-medium text-slate-500 hover:text-slate-700 px-2 py-1 hover:bg-slate-100 rounded"
-                    >
-                        Limpar
-                    </button>
-                    <span className="ml-auto text-xs text-slate-400">
-                        {selectedPaths.length > 0 ? `${selectedPaths.length} selecionada(s)` : 'Mostrando tudo'}
-                    </span>
+                <div className="text-sm font-medium text-slate-500">
+                    {selectedPaths.length > 0 ? `${selectedPaths.length} selecionada(s)` : 'Mostrando tudo'}
                 </div>
+            </div>
 
-                {/* Folder List - Scrollable */}
-                <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain p-2 pb-20">
+            {/* Actions Bar */}
+            <div className="flex items-center gap-3 p-4 bg-white border-b border-slate-200 shrink-0 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] z-10" onClick={e => e.stopPropagation()}>
+                <button
+                    onClick={selectAll}
+                    className="flex-1 bg-brand-50 text-brand-700 font-bold py-3 rounded-xl hover:bg-brand-100 transition-colors active:scale-95 flex items-center justify-center gap-2"
+                >
+                    <Icon name="check-square" size={18} />
+                    Selecionar Tudo
+                </button>
+                <button
+                    onClick={clearSelection}
+                    className="flex-1 bg-slate-100 text-slate-600 font-bold py-3 rounded-xl hover:bg-slate-200 transition-colors active:scale-95 flex items-center justify-center gap-2"
+                >
+                    <Icon name="square" size={18} />
+                    Limpar Seleção
+                </button>
+            </div>
+
+            {/* Folder List - Scrollable */}
+            <div className="flex-1 overflow-y-auto overscroll-contain p-4 pb-24" onClick={(e) => setActiveActionPath(null)}>
+                <div className="max-w-4xl mx-auto space-y-1">
                     {/* Sem Categoria */}
                     {uncategorizedCount > 0 && (
                         <div
                             className={`
-                                flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all
-                                ${selectedPaths.includes('__uncategorized__') ? 'bg-amber-100 text-amber-700' : 'hover:bg-slate-100'}
+                                flex items-center gap-3 px-4 py-3 rounded-xl cursor-default transition-all mb-2
+                                bg-white border-[1px] border-transparent hover:bg-slate-50 hover:border-slate-100
                             `}
-                            onClick={() => toggleSelect('__uncategorized__')}
                         >
-                            <span className="w-5" />
-                            <div
-                                className={`
-                                    w-4 h-4 rounded border-2 flex items-center justify-center transition-all flex-shrink-0
-                                    ${selectedPaths.includes('__uncategorized__') ? 'bg-amber-500 border-amber-500 text-white' : 'border-slate-300'}
-                                `}
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    toggleSelect('__uncategorized__');
+                                }}
+                                className={`p-1 -ml-1 rounded-lg shrink-0 transition-all ${selectedPaths.includes('__uncategorized__') ? 'text-amber-500 scale-110' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}`}
+                                title={selectedPaths.includes('__uncategorized__') ? "Desmarcar" : "Selecionar"}
                             >
-                                {selectedPaths.includes('__uncategorized__') && <Icon name="check" size={10} />}
-                            </div>
-                            <Icon name="inbox" size={16} className="text-amber-500" />
-                            <span className="flex-1 text-sm font-medium text-slate-600 italic">Sem Categoria</span>
-                            <span className="text-xs text-slate-400 bg-slate-100 px-1.5 rounded-full">
+                                <Icon
+                                    name="inbox"
+                                    size={selectedPaths.includes('__uncategorized__') ? 24 : 22}
+                                    className={selectedPaths.includes('__uncategorized__') ? "fill-current" : ""}
+                                />
+                            </button>
+
+                            <span className={`flex-1 text-base font-medium truncate italic select-none ${selectedPaths.includes('__uncategorized__') ? 'text-amber-800 font-bold' : 'text-slate-600'}`}>
+                                Sem Categoria
+                            </span>
+                            <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full shrink-0">
                                 {uncategorizedCount}
                             </span>
                         </div>
@@ -306,15 +331,24 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                     {folderTree.length > 0 ? (
                         folderTree.map(node => renderFolderNode(node))
                     ) : (
-                        <div className="text-center text-slate-400 py-8">
-                            <Icon name="folder-plus" size={32} className="mx-auto mb-2 opacity-50" />
-                            <p className="text-sm">Nenhuma pasta ainda.</p>
-                            <p className="text-xs mt-1">Importe um texto para criar sua primeira pasta.</p>
+                        <div className="text-center text-slate-400 py-16 bg-white rounded-2xl border-2 border-dashed border-slate-200" onClick={e => e.stopPropagation()}>
+                            <Icon name="folder-plus" size={48} className="mx-auto mb-4 opacity-50 text-slate-300" />
+                            <p className="text-lg font-bold text-slate-600 mb-1">Nenhuma pasta ainda.</p>
+                            <p className="text-sm text-slate-500">Importe um texto para criar sua primeira pasta.</p>
                         </div>
                     )}
                 </div>
             </div>
-        </>
+
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-100 via-slate-100 to-transparent flex justify-center pb-8 sm:pb-4 pointer-events-none">
+                <button
+                    onClick={handleClose}
+                    className="bg-brand-600 text-white font-bold text-lg py-3 px-12 rounded-full shadow-xl pointer-events-auto hover:bg-brand-700 active:scale-95 transition-all"
+                >
+                    Concluído
+                </button>
+            </div>
+        </div>
     );
 };
 
