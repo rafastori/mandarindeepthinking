@@ -190,8 +190,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             }
 
             if (originalTerm && translation) {
-                const isLanguageContext = room.config.context === 'language';
-                const termLang = isLanguageContext ? (room.config.sourceLang || 'pt') : 'pt';
+                const termLang = room.config.sourceLang || 'pt';
                 const translationToSpeak = translation.length <= 50 ? translation : '';
                 const shouldSpeakTranslation = translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase();
 

@@ -37,13 +37,13 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
     const rightTerm = rightTermPair?.term || piece.rightText;
     const rightDefinition = rightTermPair?.definition || '';
 
-    // Determine TTS language: for language context use sourceLang, otherwise pt-BR
-    const isLanguageContext = gameConfig?.context === 'language';
-    const termLang = isLanguageContext ? (gameConfig?.sourceLang || 'pt') : 'pt';
+    // Determine TTS language: always respect the sourceLang, falling back to pt
+    const termLang = gameConfig?.sourceLang || 'zh'; // zh is a safer default if no generic provided, but mostly config injects it. Let's use sourceLang || 'pt' since that's what was there.
+    const actualTermLang = gameConfig?.sourceLang || 'pt';
 
     const handleSpeak = (text: string, isDefinition: boolean = false) => {
         // Definitions are always in Portuguese, terms use the game language
-        speak(text, isDefinition ? 'pt' : termLang);
+        speak(text, isDefinition ? 'pt' : actualTermLang);
     };
 
     return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Icon from '../../../components/Icon';
 import { Train, DominoPiece as DominoPieceType } from '../types';
 import { DominoPiece } from './DominoPiece';
@@ -11,6 +11,15 @@ interface TrainViewModalProps {
 }
 
 export const TrainViewModal: React.FC<TrainViewModalProps> = ({ train, isMyTrain, onClose, onPieceClick }) => {
+    const endOfTrainRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        // Auto scroll para o fim do trem ao montar
+        if (endOfTrainRef.current) {
+            endOfTrainRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [train.pieces.length]);
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/90 backdrop-blur-md">
             <div className="bg-slate-800 rounded-3xl shadow-2xl w-full max-w-5xl h-[80vh] flex flex-col overflow-hidden border border-slate-700">
@@ -37,37 +46,37 @@ export const TrainViewModal: React.FC<TrainViewModalProps> = ({ train, isMyTrain
                 </div>
 
                 {/* Train Track Viewer */}
-                <div className="flex-1 overflow-x-auto overflow-y-hidden relative bg-[#1c2e26] p-8 flex items-center snap-x snap-mandatory">
+                <div className="flex-1 overflow-y-auto overflow-x-hidden relative bg-[#1c2e26] p-8 flex flex-col items-center">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
 
                     {train.pieces.length === 0 ? (
-                        <div className="w-full flex justify-center text-slate-400 font-bold opacity-50 flex-col items-center">
+                        <div className="w-full h-full flex justify-center text-slate-400 font-bold opacity-50 flex-col items-center">
                             <span className="text-6xl mb-4 grayscale">👻</span>
                             <span>Ainda não há peças neste trem.</span>
                         </div>
                     ) : (
-                        <div className="flex items-center min-w-max pb-4 relative z-10 px-[10vw]">
+                        <div className="flex flex-col items-center min-h-max pb-32 relative z-10 w-full py-[5vh]">
                             {/* The "Head" or Origin point visualization */}
-                            <div className="flex items-center opacity-40 mr-2 flex-shrink-0 relative">
-                                <div className="w-4 h-4 rounded-full bg-green-500 animate-pulse absolute -left-6" />
-                                <div className="w-12 h-2 bg-slate-500 rounded-full" />
+                            <div className="flex flex-col items-center opacity-40 mb-2 flex-shrink-0 relative">
+                                <div className="w-4 h-4 rounded-full bg-green-500 animate-pulse absolute -top-6" />
+                                <div className="w-2 h-12 bg-slate-500 rounded-full" />
                             </div>
 
                             {train.pieces.map((placed, index) => {
-                                // Double dominoes are rendered vertically. Standard pieces are horizontal.
+                                // Feed Vertical: Duplos (x/x) ficam deitadinhos na horizontal. Normais ficam na vertical.
                                 const isDouble = placed.piece.leftIndex === placed.piece.rightIndex;
-                                const orientation = isDouble ? 'vertical' : 'horizontal';
+                                const orientation = isDouble ? 'horizontal' : 'vertical';
                                 const isLast = index === train.pieces.length - 1;
 
                                 return (
                                     <div
                                         key={`${train.id}-chain-${index}`}
-                                        className={`flex items-center snap-center hover:-translate-y-2 transition-transform cursor-pointer relative ${isDouble ? '-mx-2' : '-mx-1'} z-10 group`}
+                                        className={`flex flex-col items-center hover:scale-105 transition-transform cursor-pointer relative ${isDouble ? '-my-2' : '-my-1'} z-10 group`}
                                         onClick={() => onPieceClick?.(placed.piece)}
                                     >
                                         <div className={`
-                                            drop-shadow-2xl 
+                                            drop-shadow-2xl flex justify-center w-full
                                             ${isLast ? 'ring-4 ring-green-400 ring-offset-4 ring-offset-[#1c2e26] rounded-xl scale-110 z-20 shadow-green-900/50' : ''}
                                         `}>
                                             <DominoPiece
@@ -78,13 +87,14 @@ export const TrainViewModal: React.FC<TrainViewModalProps> = ({ train, isMyTrain
                                             />
                                         </div>
                                         {isLast && (
-                                            <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-green-500 text-white font-black text-[10px] px-2 py-1 rounded-full uppercase tracking-widest shadow-lg pointer-events-none whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div className="absolute top-1/2 -right-[100px] -translate-y-1/2 bg-green-500 text-white font-black text-[10px] px-2 py-1 rounded-full uppercase tracking-widest shadow-lg pointer-events-none whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
                                                 Ponta Atual
                                             </div>
                                         )}
                                     </div>
                                 );
                             })}
+                            <div ref={endOfTrainRef} className="h-10 w-full" />
                         </div>
                     )}
                 </div>
