@@ -21,7 +21,7 @@ import {
     EmoteBroadcast,
     DOMINO_CONSTANTS
 } from '../types';
-import { generateDominoTerms } from '../../../services/gemini';
+import { generateDominoTerms, summarizeDominoTranslations } from '../../../services/gemini';
 import { calculateBotMove } from '../utils/botLogic';
 
 /**
@@ -391,7 +391,12 @@ export const useDominoRoom = (userId?: string) => {
                 const shuffled = [...externalPairs].sort(() => Math.random() - 0.5);
                 const selected13 = shuffled.slice(0, 13);
 
-                termPairs = selected13.map((t, idx) => ({
+                // --- Geração Curta (Summarização) ---
+                console.log("[Domino Room] Encaminhando pares do library para compressão do Gemini...");
+                const summarizedPairs = await summarizeDominoTranslations(selected13, finalConfig.targetLang || 'pt');
+                console.log("[Domino Room] Gemini devolveu pares curtos:", summarizedPairs);
+
+                termPairs = summarizedPairs.map((t, idx) => ({
                     index: idx,
                     term: t.term,
                     definition: t.definition

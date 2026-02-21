@@ -31,7 +31,7 @@ import { useGamification } from './hooks/useGamification';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import { useCloudSync } from './hooks/useCloudSync';
 import { studyData as staticData } from './constants';
-import { StudyItem, Stats, Keyword, SessionStats } from './types';
+import { StudyItem, Stats, Keyword, SessionStats, StatsHistory } from './types';
 
 const PUTER_SUGGESTION_KEY = 'puter_suggestion_shown';
 
@@ -60,7 +60,7 @@ const App: React.FC = () => {
     const [migrationDone, setMigrationDone] = useState(false);
 
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
-    const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats } = useStats();
+    const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats, toggleIgnoredReviewWord: toggleLocalIgnoredReviewWord } = useStats();
 
     const activeSavedIds = user ? cloudSavedIds : localSavedIds;
     const activeStats = user ? cloudStats : localStats;
@@ -278,6 +278,26 @@ const App: React.FC = () => {
         }
     };
 
+    const handleToggleIgnoreWord = (word: string) => {
+        if (user) {
+            const prev = activeStats;
+            const currentIgnored = prev.ignoredReviewWords || [];
+            const isIgnored = currentIgnored.includes(word);
+
+            const newIgnored = isIgnored
+                ? currentIgnored.filter(w => w !== word)
+                : [...currentIgnored, word];
+
+            const newStats: Stats = {
+                ...prev,
+                ignoredReviewWords: newIgnored
+            };
+            updateCloudStats(newStats);
+        } else {
+            toggleLocalIgnoredReviewWord(word);
+        }
+    };
+
     const handleToggleStudyMore = (wordId: string) => {
         const currentIds = activeStats.studyMoreIds || [];
         const newIds = currentIds.includes(wordId)
@@ -470,7 +490,7 @@ const App: React.FC = () => {
                         userId={user?.uid}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
@@ -505,7 +525,7 @@ const App: React.FC = () => {
                 }
                 return null;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
-            case 'criativo':
+            case 'laboratorio':
                 return (
                     <CreativeView
                         data={libraryData}
@@ -596,7 +616,7 @@ const App: React.FC = () => {
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
-            {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {} }) : clearLocalStats()} />}
+            {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {}, ignoredReviewWords: [] }) : clearLocalStats()} onToggleIgnoreWord={handleToggleIgnoreWord} />}
             {showImport && (
                 <ImportModal
                     onClose={() => { setShowImport(false); setInitialImportFolder(''); }}

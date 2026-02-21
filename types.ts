@@ -56,6 +56,7 @@ export interface Stats {
     inventory?: InventoryItem[];
     achievements?: Achievement[];
     studyMoreIds?: string[]; // IDs de palavras marcadas para "estudar mais" (2x frequência)
+    ignoredReviewWords?: string[]; // Words ignored in the Review filter
 }
 
 export interface InventoryItem {

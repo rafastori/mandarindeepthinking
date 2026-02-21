@@ -21,12 +21,12 @@ export const useStats = () => {
         setStats(prev => {
             const currentCounts = prev.wordCounts || {};
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
-            
+
             const newStats: Stats = {
                 correct: prev.correct + (isCorrect ? 1 : 0),
                 wrong: prev.wrong + (!isCorrect ? 1 : 0),
-                history: !isCorrect 
-                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50) 
+                history: !isCorrect
+                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
                 wordCounts: { ...currentCounts, [word]: newCount }
             };
@@ -35,11 +35,29 @@ export const useStats = () => {
         });
     };
 
+    const toggleIgnoredReviewWord = (word: string) => {
+        setStats(prev => {
+            const currentIgnored = prev.ignoredReviewWords || [];
+            const isIgnored = currentIgnored.includes(word);
+
+            const newIgnored = isIgnored
+                ? currentIgnored.filter(w => w !== word)
+                : [...currentIgnored, word];
+
+            const newStats: Stats = {
+                ...prev,
+                ignoredReviewWords: newIgnored
+            };
+            localStorage.setItem('mandarin_hsk_stats', JSON.stringify(newStats));
+            return newStats;
+        });
+    };
+
     const clearStats = () => {
-        const empty: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {} };
+        const empty: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {}, ignoredReviewWords: [] };
         setStats(empty);
         localStorage.setItem('mandarin_hsk_stats', JSON.stringify(empty));
     };
 
-    return { stats, recordResult, clearStats };
+    return { stats, recordResult, clearStats, toggleIgnoredReviewWord };
 };

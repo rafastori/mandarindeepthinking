@@ -170,6 +170,33 @@ export default async function handler(req, res) {
       return res.status(200).json(result);
     }
 
+    // --- 5.1 DOMINO: TRANSLATION SUMMARIZE ---
+    if (type === 'domino_summarize') {
+      const { pairs, targetLang } = req.body;
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+      };
+      const tgtName = langNames[targetLang || 'pt'] || 'Português';
+
+      const systemPrompt = `Você é um especialista em educação e localização de jogos.
+
+SUA TAREFA OBRIGATÓRIA: 
+Você receberá pares de Termo (em outra língua) e Definição/Tradução (em ${tgtName}).
+Muitas definições são longas e explicativas demais para um bloquinho de jogo de Dominó.
+Você deve RESUMIR drasticamente a definição mantendo o mesmo significado exato.
+
+REGRAS RÍGIDAS:
+1. MANTENHA O TERMO ("term") INTACTO, exatamente como foi enviado! Apenas mexa na "definition".
+2. A definição ("definition") DEVE ter entre 1 a 3 palavras. Nunca mais que isso.
+3. Remova explicações em parênteses, sinônimos desnecessários ou detalhes longos. Mantenha só o coração da tradução em ${tgtName}.
+4. Retorne APENAS um array JSON: [{"term": "termo original", "definition": "resumo curto"}, ...]`;
+
+      const userPrompt = `Abaixo estão os pares a serem reduzidos (MAX 1 a 3 PALAVRAS na definição):\n${JSON.stringify(pairs)}`;
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
+    }
+
     // --- 6. POLYQUEST: BOSS ---
     if (type === 'boss') {
       const systemPrompt = `Você é um 'Boss Final' de um jogo de idiomas.

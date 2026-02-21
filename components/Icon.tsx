@@ -51,7 +51,11 @@ import {
     ArrowLeftRight,
     Search,
     ChevronUp,
-    CornerDownRight
+    CornerDownRight,
+    EyeOff,
+    Activity,
+    History,
+    XCircle
 } from 'lucide-react';
 
 export interface IconProps {
@@ -113,7 +117,11 @@ const icons: Record<string, React.ElementType> = {
     'arrow-left-right': ArrowLeftRight,
     'search': Search,
     'chevron-up': ChevronUp,
-    'corner-down-right': CornerDownRight
+    'corner-down-right': CornerDownRight,
+    'eye-off': EyeOff,
+    'activity': Activity,
+    'history': History,
+    'x-circle': XCircle
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

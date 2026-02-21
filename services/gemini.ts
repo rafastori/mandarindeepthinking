@@ -193,6 +193,27 @@ const getSystemInstruction = (type: string, targetLang: string, mode: 'direct' |
         4. Retorne APENAS um JSON Array: [{ "term": "...", "definition": "..." }, ...]`;
     }
 
+    if (type === 'domino_summarize') {
+        const langNames: Record<string, string> = {
+            'de': 'Alemão', 'zh': 'Chinês (Mandarim Simplificado)', 'pt': 'Português', 'en': 'Inglês',
+            'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+        };
+        const tgtName = langNames[targetLang || 'pt'] || 'Português';
+
+        return `Você é um especialista em educação e localização de jogos.
+
+SUA TAREFA OBRIGATÓRIA: 
+Você receberá pares de Termo (em outra língua) e Definição/Tradução (em ${tgtName}).
+Muitas definições são longas e explicativas demais para um bloquinho de jogo de Dominó.
+Você deve RESUMIR drasticamente a definição mantendo o mesmo significado exato.
+
+REGRAS RÍGIDAS:
+1. MANTENHA O TERMO ("term") INTACTO, exatamente como foi enviado! Apenas mexa na "definition".
+2. A definição ("definition") DEVE ter entre 1 a 3 palavras. Nunca mais que isso.
+3. Remova explicações em parênteses, sinônimos desnecessários ou detalhes longos. Mantenha só o coração da tradução em ${tgtName}.
+4. Retorne APENAS um array JSON: [{"term": "termo original", "definition": "resumo curto"}, ...]`;
+    }
+
     return '';
 };
 
@@ -675,6 +696,43 @@ export const generateDominoTerms = async (
         return await response.json();
     } catch (error) {
         console.error("Domino Terms Error:", error);
+        throw error;
+    }
+};
+
+/**
+ * Resume traduções longas dos terms do Domino para uso no contexto 'library'.
+ */
+export const summarizeDominoTranslations = async (
+    pairs: { term: string; definition: string }[],
+    targetLang: string = 'pt'
+): Promise<{ term: string; definition: string }[]> => {
+
+    // Payload enviado para a Vercel Functions (PROD) ou invocado via Local SDK (DEV)
+    const payload = {
+        type: 'domino_summarize',
+        pairs,
+        targetLang
+    };
+
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Domino Summarize");
+        const systemPrompt = getSystemInstruction('domino_summarize', targetLang);
+        const userPrompt = `Abaixo estão os pares a serem reduzidos (MAX 1 a 3 PALAVRAS na definição):\n${JSON.stringify(pairs)}`;
+        return await callLocalGemini(userPrompt, systemPrompt);
+    }
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) throw new Error("Erro ao resumir traduções do dominó");
+        return await response.json();
+    } catch (error) {
+        console.error("Domino Summarize Error:", error);
         throw error;
     }
 };

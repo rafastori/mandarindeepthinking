@@ -6,19 +6,20 @@ interface StatsModalProps {
     stats: Stats;
     onClose: () => void;
     onClear: () => void;
+    onToggleIgnoreWord?: (word: string) => void;
 }
 
-const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear }) => {
+const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear, onToggleIgnoreWord }) => {
     if (!stats) return null;
     const total = stats.correct + stats.wrong;
     const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
-    
+
     return (
         <div className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-end sm:items-center justify-center animate-pop">
             <div className="bg-white w-full max-w-md sm:rounded-2xl rounded-t-2xl shadow-2xl h-[80vh] flex flex-col overflow-hidden animate-slide-up sm:animate-none">
                 <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                     <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-                        <Icon name="activity" size={20} className="text-brand-600"/> Performance
+                        <Icon name="activity" size={20} className="text-brand-600" /> Performance
                     </h2>
                     <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-600">
                         <Icon name="x" size={24} />
@@ -47,7 +48,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear }) => {
                     <h3 className="font-bold text-slate-700 mb-3 flex items-center gap-2 text-sm uppercase tracking-wide">
                         <Icon name="history" size={16} /> Error History
                     </h3>
-                    {stats.history.length === 0 ? <p className="text-center text-slate-400 text-sm py-4">No errors recorded yet.</p> : 
+                    {stats.history.length === 0 ? <p className="text-center text-slate-400 text-sm py-4">No errors recorded yet.</p> :
                         <div className="space-y-2">
                             {stats.history.map((entry, idx) => (
                                 <div key={idx} className="flex justify-between items-center p-3 bg-red-50/50 rounded-lg border border-red-50">
@@ -55,9 +56,27 @@ const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear }) => {
                                         <span className="font-chinese font-bold text-slate-700 text-lg">{entry.word}</span>
                                         {stats.wordCounts && stats.wordCounts[entry.word] > 1 && (<span className="bg-red-200 text-red-800 text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm">{stats.wordCounts[entry.word]}x</span>)}
                                     </div>
-                                    <div className="text-right">
-                                        <span className="block text-[10px] font-bold text-red-400 uppercase">{entry.type === 'pronunciation' ? 'Pronunciation' : 'Error'}</span>
-                                        <span className="block text-[10px] text-slate-400">{entry.date}</span>
+                                    <div className="flex items-center gap-3">
+                                        <div className="text-right">
+                                            <span className="block text-[10px] font-bold text-red-400 uppercase">{entry.type === 'pronunciation' ? 'Pronunciation' : 'Error'}</span>
+                                            <span className="block text-[10px] text-slate-400">{entry.date}</span>
+                                        </div>
+                                        {onToggleIgnoreWord && (() => {
+                                            const isIgnored = stats.ignoredReviewWords?.includes(entry.word);
+                                            return (
+                                                <button
+                                                    onClick={() => onToggleIgnoreWord(entry.word)}
+                                                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs font-semibold transition-all shadow-sm ml-2 ${isIgnored
+                                                            ? 'bg-emerald-50 text-emerald-600 border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300'
+                                                            : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50 hover:text-slate-600 hover:border-slate-300'
+                                                        }`}
+                                                    title={isIgnored ? `Reativar erro de "${entry.word}" na revisão` : `Desativar erro de "${entry.word}" na revisão`}
+                                                >
+                                                    <Icon name={isIgnored ? "eye" : "eye-off"} size={14} />
+                                                    <span>{isIgnored ? 'Ativar' : 'Desativar'}</span>
+                                                </button>
+                                            );
+                                        })()}
                                     </div>
                                 </div>
                             ))}
