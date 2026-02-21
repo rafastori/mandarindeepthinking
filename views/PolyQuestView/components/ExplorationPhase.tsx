@@ -46,30 +46,6 @@ export const ExplorationPhase: React.FC<ExplorationPhaseProps> = ({
             return;
         }
 
-        // Se o contexto for Biblioteca, nós ignoramos IA e preenchemos os tokens com o vocabulário das pastas!
-        if (room.config.context === 'library') {
-            const libraryTokens = gamePairs.map(p => p.term).filter(Boolean);
-
-            // Embaralhamos para que não fiquem sempre na mesma ordem, limitando para que a tela não quebre
-            const shuffled = [...libraryTokens].sort(() => 0.5 - Math.random());
-            const slicedTokens = shuffled.slice(0, 100);
-
-            // Simula tokens na tela inserindo um espaço vazio entre as palavras para não grudarem caso sejam muitas.
-            // Para não quebrar o layout existente que itera sobre o array renderizando um após o outro
-            const spacedOutLibraryTokens: string[] = [];
-            slicedTokens.forEach(st => {
-                spacedOutLibraryTokens.push(st);
-                spacedOutLibraryTokens.push("   "); // Spacer Token
-            });
-
-            setTokens(spacedOutLibraryTokens);
-
-            if (isHost && onUpdateConfig && slicedTokens.length > 0) {
-                onUpdateConfig({ tokens: spacedOutLibraryTokens });
-            }
-            return;
-        }
-
         // Idiomas CJK que precisam de tokenização por IA (não têm espaços entre palavras)
         const CJK_LANGUAGES = ['zh', 'ja', 'ko'];
         const isCJK = CJK_LANGUAGES.includes(room.config.sourceLang);

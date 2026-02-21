@@ -4,6 +4,7 @@ import FlagSelect from '../../../components/FlagSelect';
 import { PolyQuestRoom, SUPPORTED_LANGUAGES, GAME_CONSTANTS } from '../types';
 import { validateText } from '../utils';
 import { GameContentSelectorModal } from '../../DominoView/components/GameContentSelectorModal';
+import { useStudyItems } from '../../../hooks/useStudyItems';
 
 interface PolyQuestLobbyProps {
     room: PolyQuestRoom;
@@ -34,9 +35,12 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     const [selectedFolderIds, setSelectedFolderIds] = useState<string[]>(room.config.selectedFolderIds || []);
     const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
 
+    // Fetch study items from the host's library
+    const { items: libraryItems } = useStudyItems(currentUserId);
+
     const currentPlayer = room.players.find(p => p.id === currentUserId);
     const allReady = room.players.every(p => p.isReady);
-    const validation = context === 'gemini' ? validateText(text, GAME_CONSTANTS.MIN_WORDS) : { valid: selectedFolderIds.length > 0, wordCount: 0, error: 'Selecione ao menos 1 pasta' };
+    const validation = context === 'gemini' ? validateText(text, GAME_CONSTANTS.MIN_WORDS) : { valid: selectedFolderIds.length > 0 && text.length > 0, wordCount: text.split(' ').length, error: 'Selecione ao menos 1 pasta contendo Textos ou Palavras.' };
 
     const handleConfigChange = () => {
         if (isHost && (context === 'library' || validation.valid)) {
@@ -53,6 +57,45 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
             return () => clearTimeout(timer);
         }
     }, [sourceLang, targetLang, text, difficulty, context, selectedFolderIds]);
+
+    // Build the "Library Text" dynamically whenever folders are selected
+    React.useEffect(() => {
+        if (context === 'library' && isHost) {
+            if (selectedFolderIds.length === 0) {
+                setText('');
+                return;
+            }
+
+            const inFolder = (itemPath?: string) => {
+                return selectedFolderIds.some(filterPath => {
+                    if (filterPath === '__uncategorized__' && !itemPath) return true;
+                    return itemPath === filterPath || itemPath?.startsWith(filterPath + '/');
+                });
+            };
+
+            const matchingItems = libraryItems.filter(i => inFolder(i.folderPath));
+
+            // Priority 1: Full texts
+            const textItems = matchingItems.filter(i => i.type === 'text' || (!i.type && (i.tokens?.length || 0) > 4));
+
+            if (textItems.length > 0) {
+                // Shuffle texts and pick top 2 or concatenate all to form a nice paragraph
+                const concatenatedText = textItems.slice(0, 3).map(t => t.chinese).join('\n\n');
+                setText(concatenatedText);
+            } else {
+                // Priority 2: Try to extract original sentences from words
+                const wordsWithSentences = matchingItems.filter(i => i.originalSentence);
+                if (wordsWithSentences.length > 0) {
+                    const concatenatedSentences = Array.from(new Set(wordsWithSentences.map(w => w.originalSentence))).slice(0, 5).join(' ');
+                    setText(concatenatedSentences);
+                } else {
+                    // Fallback to words
+                    const wordList = matchingItems.map(i => i.chinese).join(' ');
+                    setText(wordList);
+                }
+            }
+        }
+    }, [context, selectedFolderIds, libraryItems, isHost]);
 
     const canStart = isHost && allReady && validation.valid && room.players.length > 0;
 

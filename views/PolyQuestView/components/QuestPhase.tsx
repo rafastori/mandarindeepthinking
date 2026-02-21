@@ -80,40 +80,30 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                     setLoading(true);
                     setError(null);
 
-                    if (room.config.context === 'library') {
-                        // MODO BIBLIOTECA LOCAL
-                        const enigmas: WordEnigma[] = room.selectedWords.map(word => {
-                            const cardMatch = gameCards.find(c => c.word === word);
-                            return {
-                                word: word,
-                                translation: cardMatch ? cardMatch.meaning : '???',
-                                alternatives: cardMatch ? cardMatch.distractors : ['Alternativa 1', 'Alternativa 2', 'Alternativa 3'],
-                                synonym: cardMatch ? (cardMatch.pinyin || 'Tente lembrar do contexto!') : 'Sem dica cadastrada',
-                                isDiscovered: false,
-                                attempts: 0,
-                                needsHelp: false
-                            };
-                        });
-                        onSetEnigmas(enigmas);
-                    } else {
-                        // MODO IA ORIGINAL
-                        const enigmasData = await generateEnigmas(
-                            room.selectedWords,
-                            room.config.sourceLang,
-                            room.config.targetLang,
-                            room.config.difficulty
-                        );
-                        const enigmas: WordEnigma[] = enigmasData.map(data => ({
+                    // MODO UNIFICADO: A IA sempre gera a base (para não ficarmos com "???")
+                    const enigmasData = await generateEnigmas(
+                        room.selectedWords,
+                        room.config.sourceLang,
+                        room.config.targetLang,
+                        room.config.difficulty
+                    );
+
+                    const enigmas: WordEnigma[] = enigmasData.map(data => {
+                        // OVERRIDE: Se o usuário tem essa palavra na biblioteca, a tradução dele tem prioridade!
+                        const cardMatch = gameCards.find(c => c.word === data.word);
+
+                        return {
                             word: data.word,
-                            translation: data.translation,
-                            alternatives: data.alternatives,
-                            synonym: data.synonym,
+                            translation: cardMatch ? cardMatch.meaning : data.translation,
+                            alternatives: cardMatch && cardMatch.distractors.length > 0 ? cardMatch.distractors : data.alternatives,
+                            synonym: cardMatch && cardMatch.pinyin ? cardMatch.pinyin : data.synonym,
                             isDiscovered: false,
                             attempts: 0,
                             needsHelp: false
-                        }));
-                        onSetEnigmas(enigmas);
-                    }
+                        };
+                    });
+
+                    onSetEnigmas(enigmas);
                 } catch (err) {
                     console.error('Erro ao gerar enigmas:', err);
                     setError('Erro ao gerar enigmas. Tente novamente.');
