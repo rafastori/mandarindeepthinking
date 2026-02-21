@@ -12,9 +12,11 @@ interface PracticeViewProps {
     activeFolderFilters?: string[];
     studyMoreIds?: string[];
     onToggleStudyMore?: (wordId: string) => void;
+    showOnlyErrors?: boolean;
+    wordCounts?: Record<string, any>;
 }
 
-const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
+const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {} }) => {
     const { speak, stop, playingId } = usePuterSpeech();
 
     // Estados do Jogo
@@ -91,6 +93,8 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             // Keywords internas (dados legados/estáticos)
             item.keywords?.forEach(k => {
                 if (currentSavedIds.includes(k.id)) {
+                    // FILTRO DE ERROS LIFTED
+                    if (showOnlyErrors && (wordCounts[k.word]?.wrong || 0) <= 0) return;
                     map.set(k.word.toLowerCase().trim(), k);
                 }
             });
@@ -99,7 +103,11 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             const isWordCard = item.type === 'word' || (item.tokens?.length === 1 && currentSavedIds.includes(item.id.toString()));
 
             if (isWordCard && currentSavedIds.includes(item.id.toString())) {
-                map.set(item.chinese.toLowerCase().trim(), {
+                const chinese = item.chinese || '';
+                // FILTRO DE ERROS LIFTED
+                if (showOnlyErrors && (wordCounts[chinese]?.wrong || 0) <= 0) return;
+
+                map.set(chinese.toLowerCase().trim(), {
                     id: item.id.toString(),
                     word: item.chinese,
                     pinyin: item.pinyin,
@@ -110,7 +118,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
         });
 
         return map;
-    }, [sessionKey, filtersKey]); // Estável: só muda com sessão ou CONTEÚDO dos filtros
+    }, [sessionKey, filtersKey, showOnlyErrors]); // Estável: só muda com sessão, filtros ou toggle de Erros
 
     // Gera questões baseadas nas frases da Leitura que contêm palavras salvas
     const questions = useMemo(() => {

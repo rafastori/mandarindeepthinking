@@ -13,9 +13,11 @@ interface CardsViewProps {
     activeFolderFilters?: string[];
     studyMoreIds?: string[];
     onToggleStudyMore?: (wordId: string) => void;
+    showOnlyErrors?: boolean;
+    wordCounts?: Record<string, any>;
 }
 
-const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore }) => {
+const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {} }) => {
     const { speak, stop, playingId } = usePuterSpeech();
 
     // Estado para inverter lados (Definição <-> Palavra)
@@ -85,7 +87,20 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
             return false;
         });
 
-        const items = getSavedItems(filteredData, currentSavedIds);
+        // 3. NOVIDADE: Aplica filtro global de Erros (State Lifted do ReviewView)
+        const errorFilteredData = showOnlyErrors
+            ? filteredData.filter(item => {
+                if (item.type === 'word') {
+                    // Ignora items que não tem um erro registrado na estatística
+                    const chinese = item.chinese || '';
+                    return (wordCounts[chinese]?.wrong || 0) > 0;
+                }
+                // Textos não possuem cartão próprio neste nível de drill-down
+                return false;
+            })
+            : filteredData;
+
+        const items = getSavedItems(errorFilteredData, currentSavedIds);
 
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
@@ -108,11 +123,11 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
     // EFEITO DE INICIALIZAÇÃO COM TRAVA DE SEGURANÇA 🔒
     // EFEITO DE INICIALIZAÇÃO E REAÇÃO A FILTROS
     useEffect(() => {
-        // Se mudarem os filtros (filtersKey), recria o baralho
-        if (deck.length === 0 && data.length > 0) {
+        // Inicializa ou recria o baralho se houver mudança dependente profunda (dados core)
+        if (data.length > 0) {
             createNewDeck();
         }
-    }, [data.length]); // Inicializa quando dados chegam
+    }, [data.length, showOnlyErrors]); // Inicializa quando dados chegam OU erro toggle muda
 
     // Recria se FILTROS mudarem (usando a chave estável)
     useEffect(() => {

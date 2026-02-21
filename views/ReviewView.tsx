@@ -27,13 +27,27 @@ interface ReviewViewProps {
     onRemove: (id: string) => void;
     onUpdateLanguage?: (id: string, data: Partial<StudyItem>) => void;
     activeFolderFilters?: string[];
-    studyMoreIds?: string[];
-    onToggleStudyMore?: (wordId: string) => void;
-    wordCounts?: Record<string, number>;
-    ignoredReviewWords?: string[];
+    studyMoreIds: string[];
+    onToggleStudyMore: (wordId: string) => void;
+    wordCounts: Record<string, any>;
+    ignoredReviewWords: string[];
+    showOnlyErrors: boolean;
+    setShowOnlyErrors: (v: boolean) => void;
 }
 
-const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpdateLanguage, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, wordCounts = {}, ignoredReviewWords = [] }) => {
+const ReviewView: React.FC<ReviewViewProps> = ({
+    data,
+    savedIds,
+    onRemove,
+    onUpdateLanguage,
+    activeFolderFilters = [],
+    studyMoreIds,
+    onToggleStudyMore,
+    wordCounts,
+    ignoredReviewWords,
+    showOnlyErrors,
+    setShowOnlyErrors
+}) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
     const [selectionMode, setSelectionMode] = useState(false);
@@ -46,7 +60,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({ data, savedIds, onRemove, onUpd
     const [matchedIds, setMatchedIds] = useState<string[]>([]);
     const [matchIndex, setMatchIndex] = useState(0);
     const [searchActive, setSearchActive] = useState(false);
-    const [showOnlyErrors, setShowOnlyErrors] = useState(false);
+    // Modal Controls
+    const [selectedItem, setSelectedItem] = useState<any>(null);
 
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {

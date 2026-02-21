@@ -62,6 +62,9 @@ const App: React.FC = () => {
     const [localSavedIds, setLocalSavedIds] = useState<string[]>([]);
     const { stats: localStats, recordResult: recordLocalResult, clearStats: clearLocalStats, toggleIgnoredReviewWord: toggleLocalIgnoredReviewWord } = useStats();
 
+    // Filtro global das views de revisão
+    const [showOnlyErrors, setShowOnlyErrors] = useState(false);
+
     const activeSavedIds = user ? cloudSavedIds : localSavedIds;
     const activeStats = user ? cloudStats : localStats;
 
@@ -490,8 +493,8 @@ const App: React.FC = () => {
                         userId={user?.uid}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} />;
-            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} />;
+            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
                     return (
@@ -534,7 +537,7 @@ const App: React.FC = () => {
                         onSave={handleSaveLabItem}
                     />
                 );
-            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} />;
+            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} />;
             case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             default: return null;
         }
