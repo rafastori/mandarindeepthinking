@@ -93,7 +93,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                 if (item.type === 'word') {
                     // Ignora items que não tem um erro registrado na estatística
                     const chinese = item.chinese || '';
-                    return (wordCounts[chinese]?.wrong || 0) > 0;
+                    return (wordCounts[chinese] || 0) > 0;
                 }
                 // Textos não possuem cartão próprio neste nível de drill-down
                 return false;

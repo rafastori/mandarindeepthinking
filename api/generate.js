@@ -305,7 +305,20 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
     return res.status(200).json(result);
 
   } catch (error) {
-    console.error("ERRO API:", error);
-    res.status(500).json({ error: error.message || "Erro interno" });
+    // Melhoria para debug na Vercel: Logar o erro completo e a stack trace
+    console.error("ERRO API GEMINI NA VERCEL:", {
+      message: error.message,
+      name: error.name,
+      status: error.status,
+      stack: error.stack ? error.stack.split('\n').slice(0, 3) : undefined,
+      responseDetails: error.response || 'No response object',
+      // Caso seja um erro da Fetch API interna do node ou algo parecido
+      cause: error.cause
+    });
+
+    res.status(500).json({
+      error: error.message || "Erro interno",
+      details: error.status ? `Status: ${error.status}` : undefined
+    });
   }
 }

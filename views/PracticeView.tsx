@@ -94,7 +94,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             item.keywords?.forEach(k => {
                 if (currentSavedIds.includes(k.id)) {
                     // FILTRO DE ERROS LIFTED
-                    if (showOnlyErrors && (wordCounts[k.word]?.wrong || 0) <= 0) return;
+                    if (showOnlyErrors && (wordCounts[k.word] || 0) <= 0) return;
                     map.set(k.word.toLowerCase().trim(), k);
                 }
             });
@@ -105,7 +105,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             if (isWordCard && currentSavedIds.includes(item.id.toString())) {
                 const chinese = item.chinese || '';
                 // FILTRO DE ERROS LIFTED
-                if (showOnlyErrors && (wordCounts[chinese]?.wrong || 0) <= 0) return;
+                if (showOnlyErrors && (wordCounts[chinese] || 0) <= 0) return;
 
                 map.set(chinese.toLowerCase().trim(), {
                     id: item.id.toString(),
