@@ -152,7 +152,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
 
                 {/* Dropdown Menu */}
                 {isOpen && (
-                    <div className="absolute right-0 top-12 w-64 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden z-50 animate-pop">
+                    <div className="absolute right-0 top-12 w-64 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-y-auto overflow-x-hidden max-h-[80vh] z-50 animate-pop">
                         {/* Header do menu */}
                         <div className="p-4 bg-slate-50 border-b border-slate-100">
                             <p className="text-xs text-slate-500 uppercase font-bold">Olá</p>
