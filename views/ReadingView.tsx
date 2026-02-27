@@ -6,6 +6,8 @@ import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { generateWordCard } from '../services/gemini';
 import { moveItemsToFolder, extractFolderPaths } from '../services/folderService';
 import ExportModal, { ExportConfig } from '../components/ExportModal';
+import VoiceMicButton from '../components/VoiceMicButton';
+import type { useVoiceRecording } from '../hooks/useVoiceRecording';
 
 // Estilos para PDF (invisível na tela)
 const PDF_STYLES = {
@@ -67,6 +69,7 @@ interface ReadingViewProps {
     activeFolderFilters: string[];
     onUpdateFolderFilters: (filters: string[]) => void;
     userId?: string;
+    voiceRecording?: ReturnType<typeof useVoiceRecording>;
 }
 
 const ReadingView: React.FC<ReadingViewProps> = ({
@@ -80,7 +83,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onUpdateItem,
     activeFolderFilters,
     onUpdateFolderFilters,
-    userId
+    userId,
+    voiceRecording
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
@@ -578,7 +582,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         return (
                             <div
                                 key={item.id}
-                                className={`bg-white rounded-xl p-5 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : 'border-slate-100'
+                                className={`bg-white rounded-xl p-3 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : 'border-slate-100'
                                     }`}
                                 onClick={() => {
                                     if (selectionMode) {
@@ -586,16 +590,59 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                     }
                                 }}
                             >
-                                <div className="flex flex-col gap-4">
-                                    {/* Folder badge */}
-                                    {item.folderPath && (
-                                        <div className="flex items-center gap-1 text-xs text-slate-400">
-                                            <Icon name="folder" size={12} />
-                                            <span>{item.folderPath}</span>
+                                <div className="flex flex-col gap-2">
+                                    {/* Top bar: folder + actions */}
+                                    <div className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-1 text-xs text-slate-400 min-w-0 flex-1">
+                                            {item.folderPath && (
+                                                <>
+                                                    <Icon name="folder" size={12} className="flex-shrink-0" />
+                                                    <span className="truncate">{item.folderPath}</span>
+                                                </>
+                                            )}
                                         </div>
-                                    )}
 
-                                    <div className="flex justify-between items-start gap-3 w-full">
+                                        {!selectionMode && (
+                                            <div className="flex items-center gap-1 flex-shrink-0">
+                                                <span className="text-[10px] font-bold text-slate-400 uppercase">{item.language || 'zh'}</span>
+                                                <button
+                                                    onClick={() => {
+                                                        const audioId = `reading-${item.id}`;
+                                                        if (playingId === audioId) {
+                                                            stop();
+                                                        } else {
+                                                            speak(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
+                                                        }
+                                                    }}
+                                                    className={`p-1.5 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
+                                                >
+                                                    <Icon name={playingId === `reading-${item.id}` ? 'square' : 'volume-2'} size={16} />
+                                                </button>
+                                                {voiceRecording && (
+                                                    <VoiceMicButton
+                                                        wordId={item.id.toString()}
+                                                        hasRecording={voiceRecording.hasRecording(item.id.toString())}
+                                                        isRecording={voiceRecording.isRecording}
+                                                        isPlaying={voiceRecording.isPlaying}
+                                                        recordingWordId={voiceRecording.recordingWordId}
+                                                        playingWordId={voiceRecording.playingWordId}
+                                                        recordingTime={voiceRecording.recordingTime}
+                                                        onStartRecording={voiceRecording.startRecording}
+                                                        onStopRecording={voiceRecording.stopAndSave}
+                                                        onPlay={voiceRecording.playRecording}
+                                                        onStopPlaying={voiceRecording.stopPlaying}
+                                                    />
+                                                )}
+                                                {isImported && onDeleteText && (
+                                                    <button onClick={(e) => { e.stopPropagation(); onDeleteText(item.id); }} className="text-slate-400 p-1.5 rounded-full hover:text-red-500 hover:bg-red-50">
+                                                        <Icon name="trash-2" size={16} />
+                                                    </button>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    <div className="flex items-start gap-3 w-full">
                                         {/* Checkbox no modo seleção */}
                                         {selectionMode && (
                                             <div className={`w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-all flex-shrink-0 mt-1 ${isSelected
@@ -615,34 +662,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                         `}>
                                             {renderSentence(item)}
                                         </div>
-
-                                        {!selectionMode && (
-                                            <div className="flex flex-col gap-2 flex-shrink-0 pt-1">
-                                                <div className="flex items-center gap-1">
-                                                    <span className="text-[10px] font-bold text-slate-400 uppercase">{item.language || 'zh'}</span>
-                                                    <button
-                                                        onClick={() => {
-                                                            const audioId = `reading-${item.id}`;
-                                                            if (playingId === audioId) {
-                                                                stop();
-                                                            } else {
-                                                                speak(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
-                                                            }
-                                                        }}
-                                                        className={`p-2 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
-                                                    >
-                                                        <Icon name={playingId === `reading-${item.id}` ? 'square' : 'volume-2'} size={18} />
-                                                    </button>
-                                                </div>
-                                                {isImported && onDeleteText && (
-                                                    <button onClick={(e) => { e.stopPropagation(); onDeleteText(item.id); }} className="text-slate-400 bg-slate-50 p-2 rounded-full hover:text-red-500">
-                                                        <Icon name="trash-2" size={18} />
-                                                    </button>
-                                                )}
-                                            </div>
-                                        )}
                                     </div>
-                                    <div className="pt-3 border-t border-slate-50">
+                                    <div className="pt-2 border-t border-slate-50">
                                         <p className="text-slate-500 text-sm italic text-left">{item.translation}</p>
                                     </div>
                                 </div>

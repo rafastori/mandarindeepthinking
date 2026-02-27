@@ -24,8 +24,8 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
     const [roomName, setRoomName] = useState('');
     const [isFullscreen, setIsFullscreen] = useState(false);
     const [config, setConfig] = useState<DominoConfig>({
-        context: 'language',
-        sourceLang: 'de',
+        context: 'library',
+        sourceLang: 'zh',
         targetLang: 'pt',
         difficulty: 'Iniciante',
         selectedFolderIds: [] // Inicializa vazio
@@ -260,7 +260,8 @@ const DominoView: React.FC<DominoViewProps> = ({ onBack, onToggleFullscreen }) =
                     index: idx,
                     term: p.term,
                     definition: p.definition,
-                    originalRefId: p.originalRefId
+                    originalRefId: p.originalRefId,
+                    language: p.language
                 }));
 
                 await startGame(activeRoom.id, configOverride, genericPairs);

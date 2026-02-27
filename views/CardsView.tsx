@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import EmptyState from '../components/EmptyState';
 import Icon from '../components/Icon';
 import { StudyItem } from '../types';
 import { getSavedItems, CardItem } from '../utils/cardUtils';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { Star } from 'lucide-react';
+import VoiceMicButton from '../components/VoiceMicButton';
+import type { useVoiceRecording } from '../hooks/useVoiceRecording';
 
 interface CardsViewProps {
     data: StudyItem[];
@@ -15,13 +17,55 @@ interface CardsViewProps {
     onToggleStudyMore?: (wordId: string) => void;
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
+    voiceRecording?: ReturnType<typeof useVoiceRecording>;
 }
 
-const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {} }) => {
+const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {}, voiceRecording }) => {
     const { speak, stop, playingId } = usePuterSpeech();
 
     // Estado para inverter lados (Definição <-> Palavra)
     const [invertSide, setInvertSide] = useState(false);
+
+    // Font zoom state with localStorage persistence
+    const [fontScale, setFontScale] = useState(() => {
+        const saved = localStorage.getItem('cards-font-scale');
+        return saved ? parseFloat(saved) : 1;
+    });
+    const [showZoomPopover, setShowZoomPopover] = useState(false);
+    const zoomBtnRef = useRef<HTMLButtonElement>(null);
+    const zoomPopoverRef = useRef<HTMLDivElement>(null);
+
+    // Persist fontScale
+    useEffect(() => {
+        localStorage.setItem('cards-font-scale', fontScale.toString());
+    }, [fontScale]);
+
+    // Close zoom popover on click outside
+    useEffect(() => {
+        if (!showZoomPopover) return;
+        const handler = (e: MouseEvent) => {
+            if (zoomPopoverRef.current && !zoomPopoverRef.current.contains(e.target as Node) &&
+                zoomBtnRef.current && !zoomBtnRef.current.contains(e.target as Node)) {
+                setShowZoomPopover(false);
+            }
+        };
+        document.addEventListener('mousedown', handler);
+        return () => document.removeEventListener('mousedown', handler);
+    }, [showZoomPopover]);
+
+    const handleZoomIn = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setFontScale(prev => Math.min(2.0, Math.round((prev + 0.2) * 10) / 10));
+    };
+    const handleZoomOut = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setFontScale(prev => Math.max(0.6, Math.round((prev - 0.2) * 10) / 10));
+    };
+    const handleZoomReset = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setFontScale(1);
+        setShowZoomPopover(false);
+    };
 
     // Refs para dados estáveis (Snapshot)
     const dataSnapshotRef = React.useRef<{ data: StudyItem[], savedIds: string[] } | null>(null);
@@ -172,10 +216,9 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
 
     const isGerman = card.language === 'de';
 
-    const getFontSize = (text: string) => {
-        if (text.length > 20) return 'text-2xl';
-        if (text.length > 12) return 'text-4xl';
-        return 'text-6xl';
+    const getScaledFontSize = (text: string) => {
+        const base = text.length > 20 ? 24 : text.length > 12 ? 36 : 60; // px
+        return Math.round(base * fontScale);
     };
 
     const next = (correct: boolean) => {
@@ -200,6 +243,57 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
             <div className="w-full mb-4 flex-shrink-0 flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-widest">
                 <span>Card {currentIndex + 1} de {deck.length}</span>
 
+                {/* Zoom button */}
+                <div className="relative inline-flex">
+                    <button
+                        ref={zoomBtnRef}
+                        onClick={(e) => { e.stopPropagation(); setShowZoomPopover(!showZoomPopover); }}
+                        className={`flex items-center gap-1 px-2 py-1 rounded-lg transition-colors ${fontScale !== 1 ? 'bg-brand-100 text-brand-600' : 'hover:bg-slate-100'}`}
+                        title={`Zoom da fonte: ${fontScale}x`}
+                    >
+                        <Icon name="search" size={14} />
+                        {fontScale !== 1 && <span className="text-[10px]">{fontScale.toFixed(1)}x</span>}
+                    </button>
+
+                    {showZoomPopover && (
+                        <div
+                            ref={zoomPopoverRef}
+                            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 min-w-[48px] z-[100] animate-in fade-in slide-in-from-top-2 flex flex-col items-center gap-1"
+                        >
+                            {fontScale !== 1 && (
+                                <button
+                                    onClick={handleZoomReset}
+                                    className="p-2 rounded-lg hover:bg-slate-50 transition-colors text-slate-500 hover:text-brand-600"
+                                    title="Resetar zoom"
+                                >
+                                    <Icon name="rotate-ccw" size={18} />
+                                </button>
+                            )}
+                            <button
+                                onClick={handleZoomIn}
+                                disabled={fontScale >= 2.0}
+                                className="p-2 rounded-lg hover:bg-slate-50 transition-colors text-slate-600 hover:text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed"
+                                title="Ampliar"
+                            >
+                                <Icon name="zoom-in" size={18} />
+                            </button>
+                            <button
+                                onClick={handleZoomOut}
+                                disabled={fontScale <= 0.6}
+                                className="p-2 rounded-lg hover:bg-slate-50 transition-colors text-slate-600 hover:text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed"
+                                title="Reduzir"
+                            >
+                                <Icon name="zoom-out" size={18} />
+                            </button>
+
+                            {/* Arrow */}
+                            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-[-1px]">
+                                <div className="w-2.5 h-2.5 bg-white border-l border-t border-slate-200 transform rotate-45" />
+                            </div>
+                        </div>
+                    )}
+                </div>
+
                 <button
                     onClick={() => setInvertSide(!invertSide)}
                     className={`flex items-center gap-1.5 px-2 py-1 rounded-lg transition-colors ${invertSide ? 'bg-brand-100 text-brand-600' : 'hover:bg-slate-100'}`}
@@ -222,27 +316,48 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                                 {invertSide ? 'Definição' : (isGerman ? 'Palavra' : 'Hanzi')}
                             </span>
 
-                            <h2 className={`${invertSide ? 'text-2xl font-medium' : getFontSize(card.word) + ' ' + (isGerman ? 'font-sans' : 'font-chinese') + ' font-bold'} text-slate-800 text-center break-words w-full`}>
+                            <h2
+                                className={`${invertSide ? 'font-medium' : (isGerman ? 'font-sans' : 'font-chinese') + ' font-bold'} text-slate-800 text-center break-words w-full`}
+                                style={{ fontSize: invertSide ? Math.round(24 * fontScale) + 'px' : getScaledFontSize(card.word) + 'px' }}
+                            >
                                 {invertSide ? card.meaning : card.word}
                             </h2>
 
                             {/* Botão de áudio (Só mostra na frente se NÃO estiver invertido, ou se quiser dar a dica do áudio) */}
                             {!invertSide && (
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        const audioId = `card-front-${currentIndex}`;
-                                        if (playingId === audioId) {
-                                            stop();
-                                        } else {
-                                            speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
-                                        }
-                                    }}
-                                    className={`mt-4 p-3 rounded-full transition-colors ${playingId === `card-front-${currentIndex}` ? 'bg-brand-600 text-white animate-pulse' : 'bg-brand-50 text-brand-600 hover:bg-brand-100'}`}
-                                    title="Ouvir pronúncia"
-                                >
-                                    <Icon name={playingId === `card-front-${currentIndex}` ? 'square' : 'volume-2'} size={24} />
-                                </button>
+                                <div className="mt-4 flex items-center gap-2">
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            const audioId = `card-front-${currentIndex}`;
+                                            if (playingId === audioId) {
+                                                stop();
+                                            } else {
+                                                speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                            }
+                                        }}
+                                        className={`p-3 rounded-full transition-colors ${playingId === `card-front-${currentIndex}` ? 'bg-brand-600 text-white animate-pulse' : 'bg-brand-50 text-brand-600 hover:bg-brand-100'}`}
+                                        title="Ouvir pronúncia"
+                                    >
+                                        <Icon name={playingId === `card-front-${currentIndex}` ? 'square' : 'volume-2'} size={24} />
+                                    </button>
+                                    {voiceRecording && (
+                                        <VoiceMicButton
+                                            wordId={card.sourceId}
+                                            hasRecording={voiceRecording.hasRecording(card.sourceId)}
+                                            isRecording={voiceRecording.isRecording}
+                                            isPlaying={voiceRecording.isPlaying}
+                                            recordingWordId={voiceRecording.recordingWordId}
+                                            playingWordId={voiceRecording.playingWordId}
+                                            recordingTime={voiceRecording.recordingTime}
+                                            onStartRecording={voiceRecording.startRecording}
+                                            onStopRecording={voiceRecording.stopAndSave}
+                                            onPlay={voiceRecording.playRecording}
+                                            onStopPlaying={voiceRecording.stopPlaying}
+                                            size="md"
+                                        />
+                                    )}
+                                </div>
                             )}
 
                             <span className="mt-4 text-xs text-brand-500 font-bold">Toque para virar</span>
@@ -253,7 +368,10 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                     <div className="absolute inset-0 bg-slate-800 rounded-2xl rotate-y-180 backface-hidden text-white overflow-y-auto">
                         <div className="flex flex-col items-center justify-center min-h-full p-6 text-center">
                             <div className="flex items-center gap-3 mb-2">
-                                <h2 className={`text-3xl ${isGerman ? 'font-sans' : 'font-chinese'} font-bold break-words`}>
+                                <h2
+                                    className={`${isGerman ? 'font-sans' : 'font-chinese'} font-bold break-words`}
+                                    style={{ fontSize: Math.round(30 * fontScale) + 'px' }}
+                                >
                                     {card.word}
                                 </h2>
                                 <button
@@ -271,6 +389,22 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                                 >
                                     <Icon name={playingId === `card-back-${currentIndex}` ? 'square' : 'volume-2'} size={20} />
                                 </button>
+                                {voiceRecording && (
+                                    <VoiceMicButton
+                                        wordId={card.sourceId}
+                                        hasRecording={voiceRecording.hasRecording(card.sourceId)}
+                                        isRecording={voiceRecording.isRecording}
+                                        isPlaying={voiceRecording.isPlaying}
+                                        recordingWordId={voiceRecording.recordingWordId}
+                                        playingWordId={voiceRecording.playingWordId}
+                                        recordingTime={voiceRecording.recordingTime}
+                                        onStartRecording={voiceRecording.startRecording}
+                                        onStopRecording={voiceRecording.stopAndSave}
+                                        onPlay={voiceRecording.playRecording}
+                                        onStopPlaying={voiceRecording.stopPlaying}
+                                        variant="dark"
+                                    />
+                                )}
                             </div>
                             <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
 

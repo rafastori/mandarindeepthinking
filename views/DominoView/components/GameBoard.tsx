@@ -190,12 +190,13 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             }
 
             if (originalTerm && translation) {
-                const termLang = room.config.sourceLang || 'zh';
+                const termLang = termPair?.language || room.config.sourceLang || 'zh';
+                const targetLang = room.config.targetLang || 'pt';
                 const translationToSpeak = translation.length <= 50 ? translation : '';
                 const shouldSpeakTranslation = translationToSpeak && translationToSpeak.toLowerCase() !== originalTerm.toLowerCase();
 
                 const sequence: Array<{ text: string; language: any }> = [{ text: originalTerm, language: termLang }];
-                if (shouldSpeakTranslation) sequence.push({ text: translationToSpeak, language: 'pt' });
+                if (shouldSpeakTranslation) sequence.push({ text: translationToSpeak, language: targetLang });
                 speakSequence(sequence);
             }
         }

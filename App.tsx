@@ -30,6 +30,7 @@ import { useSpeechRecognition } from './hooks/useSpeechRecognition';
 import { useGamification } from './hooks/useGamification';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import { useCloudSync } from './hooks/useCloudSync';
+import { useVoiceRecording } from './hooks/useVoiceRecording';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword, SessionStats, StatsHistory } from './types';
 
@@ -55,6 +56,7 @@ const App: React.FC = () => {
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
+    const voiceRecording = useVoiceRecording();
 
     // Bloqueia operações de stats até migração completar (evita zerar dados em dispositivo novo)
     const [migrationDone, setMigrationDone] = useState(false);
@@ -491,9 +493,10 @@ const App: React.FC = () => {
                         activeFolderFilters={activeFolderFilters}
                         onUpdateFolderFilters={updateFolderFilters}
                         userId={user?.uid}
+                        voiceRecording={voiceRecording}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} />;
             case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
@@ -537,7 +540,7 @@ const App: React.FC = () => {
                         onSave={handleSaveLabItem}
                     />
                 );
-            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} />;
+            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} voiceRecording={voiceRecording} />;
             case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             default: return null;
         }

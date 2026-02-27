@@ -8,11 +8,12 @@
 import { StudyItem, Stats } from '../types';
 
 const DB_NAME = 'MandarinDeepThinkingDB';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 // Store names
 const ITEMS_STORE = 'items';
 const PROFILE_STORE = 'profile';
+const VOICE_STORE = 'voiceRecordings';
 
 // Profile keys
 const PROFILE_KEY = 'userProfile';
@@ -24,6 +25,14 @@ export interface LocalProfile {
     activeFolderFilters: string[];
     lastBackupAt?: string; // ISO date
     lastRestoreAt?: string; // ISO date
+}
+
+export interface VoiceRecording {
+    wordId: string;     // ID único da palavra/frase
+    audioBlob: Blob;    // O áudio gravado
+    mimeType: string;   // 'audio/webm' ou 'audio/mp4'
+    createdAt: string;  // ISO date
+    updatedAt: string;  // ISO date
 }
 
 const defaultProfile: LocalProfile = {
@@ -56,6 +65,11 @@ function openDB(): Promise<IDBDatabase> {
             // Profile store - key-value simples
             if (!db.objectStoreNames.contains(PROFILE_STORE)) {
                 db.createObjectStore(PROFILE_STORE);
+            }
+
+            // Voice recordings store (v2)
+            if (!db.objectStoreNames.contains(VOICE_STORE)) {
+                db.createObjectStore(VOICE_STORE, { keyPath: 'wordId' });
             }
         };
 
@@ -199,6 +213,40 @@ export const localDB = {
     /** Retorna o perfil padrão (útil para reset) */
     getDefaultProfile(): LocalProfile {
         return { ...defaultProfile };
+    },
+
+    // --- Voice Recordings ---
+
+    /** Retorna uma gravação de voz pelo wordId */
+    async getVoiceRecording(wordId: string): Promise<VoiceRecording | null> {
+        const result = await withStore<VoiceRecording | undefined>(
+            VOICE_STORE, 'readonly',
+            (store) => store.get(wordId)
+        );
+        return result || null;
+    },
+
+    /** Salva ou atualiza uma gravação de voz */
+    async saveVoiceRecording(recording: VoiceRecording): Promise<void> {
+        await withStore(VOICE_STORE, 'readwrite', (store) => store.put(recording));
+    },
+
+    /** Remove uma gravação de voz */
+    async deleteVoiceRecording(wordId: string): Promise<void> {
+        await withStore(VOICE_STORE, 'readwrite', (store) => store.delete(wordId));
+    },
+
+    /** Retorna todos os wordIds que possuem gravação (sem carregar blobs) */
+    async getAllVoiceRecordingIds(): Promise<string[]> {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(VOICE_STORE, 'readonly');
+            const store = tx.objectStore(VOICE_STORE);
+            const request = store.getAllKeys();
+
+            request.onsuccess = () => resolve(request.result as string[]);
+            request.onerror = () => reject(request.error);
+        });
     }
 };
 

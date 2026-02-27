@@ -34,9 +34,26 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     const [context, setContext] = useState(room.config.context || 'gemini');
     const [selectedFolderIds, setSelectedFolderIds] = useState<string[]>(room.config.selectedFolderIds || []);
     const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
+    const [selectedTextId, setSelectedTextId] = useState<string>('');
 
     // Fetch study items from the host's library
     const { items: libraryItems } = useStudyItems(currentUserId);
+
+    // Compute available text items from selected folders
+    const availableTexts = React.useMemo(() => {
+        if (context !== 'library' || selectedFolderIds.length === 0) return [];
+
+        const inFolder = (itemPath?: string) => {
+            return selectedFolderIds.some(filterPath => {
+                if (filterPath === '__uncategorized__' && !itemPath) return true;
+                return itemPath === filterPath || itemPath?.startsWith(filterPath + '/');
+            });
+        };
+
+        const matchingItems = libraryItems.filter(i => inFolder(i.folderPath));
+        // Full texts from Reading tab
+        return matchingItems.filter(i => i.type === 'text' || (!i.type && (i.tokens?.length || 0) > 4));
+    }, [context, selectedFolderIds, libraryItems]);
 
     const currentPlayer = room.players.find(p => p.id === currentUserId);
     const allReady = room.players.every(p => p.isReady);
@@ -58,44 +75,47 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
         }
     }, [sourceLang, targetLang, text, difficulty, context, selectedFolderIds]);
 
-    // Build the "Library Text" dynamically whenever folders are selected
+    // Build the "Library Text" dynamically whenever folders or selected text change
     React.useEffect(() => {
         if (context === 'library' && isHost) {
             if (selectedFolderIds.length === 0) {
                 setText('');
+                setSelectedTextId('');
                 return;
             }
 
+            // If there are full texts and one is selected, use it
+            if (availableTexts.length > 0) {
+                const chosen = selectedTextId
+                    ? availableTexts.find(t => t.id === selectedTextId)
+                    : availableTexts[0]; // Auto-select first
+
+                if (chosen) {
+                    setText(chosen.chinese);
+                    if (!selectedTextId) setSelectedTextId(chosen.id);
+                    return;
+                }
+            }
+
+            // Fallback: no full texts → use sentences or words
             const inFolder = (itemPath?: string) => {
                 return selectedFolderIds.some(filterPath => {
                     if (filterPath === '__uncategorized__' && !itemPath) return true;
                     return itemPath === filterPath || itemPath?.startsWith(filterPath + '/');
                 });
             };
-
             const matchingItems = libraryItems.filter(i => inFolder(i.folderPath));
 
-            // Priority 1: Full texts
-            const textItems = matchingItems.filter(i => i.type === 'text' || (!i.type && (i.tokens?.length || 0) > 4));
-
-            if (textItems.length > 0) {
-                // Shuffle texts and pick top 2 or concatenate all to form a nice paragraph
-                const concatenatedText = textItems.slice(0, 3).map(t => t.chinese).join('\n\n');
-                setText(concatenatedText);
+            const wordsWithSentences = matchingItems.filter(i => i.originalSentence);
+            if (wordsWithSentences.length > 0) {
+                const concatenatedSentences = Array.from(new Set(wordsWithSentences.map(w => w.originalSentence))).slice(0, 5).join(' ');
+                setText(concatenatedSentences);
             } else {
-                // Priority 2: Try to extract original sentences from words
-                const wordsWithSentences = matchingItems.filter(i => i.originalSentence);
-                if (wordsWithSentences.length > 0) {
-                    const concatenatedSentences = Array.from(new Set(wordsWithSentences.map(w => w.originalSentence))).slice(0, 5).join(' ');
-                    setText(concatenatedSentences);
-                } else {
-                    // Fallback to words
-                    const wordList = matchingItems.map(i => i.chinese).join(' ');
-                    setText(wordList);
-                }
+                const wordList = matchingItems.map(i => i.chinese).join(' ');
+                setText(wordList);
             }
         }
-    }, [context, selectedFolderIds, libraryItems, isHost]);
+    }, [context, selectedFolderIds, libraryItems, isHost, selectedTextId, availableTexts]);
 
     const canStart = isHost && allReady && validation.valid && room.players.length > 0;
 
@@ -250,22 +270,73 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                         </div>
 
                         {context === 'library' ? (
-                            <div className="bg-purple-50 p-4 rounded-xl border border-purple-100 mb-4">
-                                <label className="text-xs font-bold text-purple-600 uppercase mb-2 flex items-center gap-1">
-                                    <Icon name="folder" size={14} /> Minhas Pastas
-                                </label>
-                                <button
-                                    onClick={() => isHost && setIsFolderModalOpen(true)}
-                                    disabled={!isHost}
-                                    className={`w-full bg-white border-2 border-purple-200 text-purple-700 font-bold py-3 rounded-xl flex items-center justify-between px-4 transition-colors ${isHost ? 'hover:border-purple-400' : 'opacity-70 cursor-not-allowed'}`}
-                                >
-                                    <span className="truncate">
-                                        {selectedFolderIds && selectedFolderIds.length > 0
-                                            ? `${selectedFolderIds.length} pasta(s) selecionada(s)`
-                                            : 'Escolher Pastas de Estudo...'}
-                                    </span>
-                                    {isHost && <Icon name="chevron-right" size={20} />}
-                                </button>
+                            <div className="space-y-4">
+                                {/* Folder selector */}
+                                <div className="bg-purple-50 p-4 rounded-xl border border-purple-100">
+                                    <label className="text-xs font-bold text-purple-600 uppercase mb-2 flex items-center gap-1">
+                                        <Icon name="folder" size={14} /> Minhas Pastas
+                                    </label>
+                                    <button
+                                        onClick={() => isHost && setIsFolderModalOpen(true)}
+                                        disabled={!isHost}
+                                        className={`w-full bg-white border-2 border-purple-200 text-purple-700 font-bold py-3 rounded-xl flex items-center justify-between px-4 transition-colors ${isHost ? 'hover:border-purple-400' : 'opacity-70 cursor-not-allowed'}`}
+                                    >
+                                        <span className="truncate">
+                                            {selectedFolderIds && selectedFolderIds.length > 0
+                                                ? `${selectedFolderIds.length} pasta(s) selecionada(s)`
+                                                : 'Escolher Pastas de Estudo...'}
+                                        </span>
+                                        {isHost && <Icon name="chevron-right" size={20} />}
+                                    </button>
+                                </div>
+
+                                {/* Text selector dropdown - only when full texts exist */}
+                                {availableTexts.length > 0 && (
+                                    <div className="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                                        <label className="text-xs font-bold text-indigo-600 uppercase mb-2 flex items-center gap-1">
+                                            <Icon name="book-open" size={14} /> Texto da Leitura ({availableTexts.length})
+                                        </label>
+                                        <select
+                                            value={selectedTextId}
+                                            onChange={(e) => setSelectedTextId(e.target.value)}
+                                            disabled={!isHost}
+                                            className={`w-full bg-white border-2 border-indigo-200 text-indigo-700 font-bold py-3 rounded-xl px-4 transition-colors appearance-none cursor-pointer ${isHost ? 'hover:border-indigo-400' : 'opacity-70 cursor-not-allowed'}`}
+                                        >
+                                            {availableTexts.map((item) => (
+                                                <option key={item.id} value={item.id}>
+                                                    {item.chinese.substring(0, 60)}{item.chinese.length > 60 ? '…' : ''}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    </div>
+                                )}
+
+                                {/* Text preview (readonly) */}
+                                {text && (
+                                    <div>
+                                        <div className="flex items-center justify-between mb-2">
+                                            <label className="block text-sm font-semibold text-slate-700">
+                                                Prévia do Texto
+                                            </label>
+                                            <span className={`text-xs font-semibold ${text.length > 0 ? 'text-emerald-600' : 'text-red-600'}`}>
+                                                {text.split(/\s+/).filter(Boolean).length} palavras
+                                            </span>
+                                        </div>
+                                        <textarea
+                                            value={text}
+                                            readOnly
+                                            rows={5}
+                                            className="w-full px-4 py-3 border border-slate-200 rounded-lg bg-slate-50 text-slate-600 resize-none cursor-default text-sm"
+                                        />
+                                    </div>
+                                )}
+
+                                {selectedFolderIds.length > 0 && availableTexts.length === 0 && !text && (
+                                    <p className="text-xs text-amber-600 text-center">
+                                        <Icon name="alert-circle" size={14} className="inline mr-1" />
+                                        Nenhum texto completo encontrado nesta pasta. Usando frases ou palavras como fallback.
+                                    </p>
+                                )}
                             </div>
                         ) : (
                             <div>

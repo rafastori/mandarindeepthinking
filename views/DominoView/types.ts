@@ -18,6 +18,7 @@ export interface TermPair {
     term: string;       // Palavra no idioma estudado ou termo técnico
     definition: string; // Tradução ou definição
     originalRefId?: string; // ID original do banco do usuário (para gamificação)
+    language?: SupportedLanguage; // Idioma original da palavra no DB (ex: 'de', 'ja', 'es')
 }
 
 // Peça de dominó

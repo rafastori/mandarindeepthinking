@@ -4,6 +4,8 @@ import EmptyState from '../components/EmptyState';
 import { StudyItem, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { Star } from 'lucide-react';
+import VoiceMicButton from '../components/VoiceMicButton';
+import type { useVoiceRecording } from '../hooks/useVoiceRecording';
 
 const SUPPORTED_LANGUAGES: { code: SupportedLanguage; label: string }[] = [
     { code: 'zh', label: '中文 (Chinês)' },
@@ -33,6 +35,7 @@ interface ReviewViewProps {
     ignoredReviewWords: string[];
     showOnlyErrors: boolean;
     setShowOnlyErrors: (v: boolean) => void;
+    voiceRecording?: ReturnType<typeof useVoiceRecording>;
 }
 
 const ReviewView: React.FC<ReviewViewProps> = ({
@@ -46,7 +49,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({
     wordCounts,
     ignoredReviewWords,
     showOnlyErrors,
-    setShowOnlyErrors
+    setShowOnlyErrors,
+    voiceRecording
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -438,7 +442,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                         <div
                             key={item.id}
                             id={`review-item-${item.id}`}
-                            className={`rounded-lg shadow-sm border-2 overflow-hidden transition-all duration-300 ${isSelected ? 'border-red-400 bg-red-50'
+                            className={`rounded-lg shadow-sm border-2 transition-all duration-300 ${isSelected ? 'border-red-400 bg-red-50'
                                 : highlightedId === item.id ? 'border-brand-500 bg-brand-50 ring-2 ring-brand-300'
                                     : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
                                         : 'bg-white border-slate-100'
@@ -448,11 +452,14 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                             <div
                                 className={`flex items-center justify-between p-4 cursor-pointer transition-colors ${selectionMode ? 'hover:bg-slate-100' : 'hover:bg-slate-50'
                                     }`}
+                                onDoubleClick={() => {
+                                    if (!selectionMode) {
+                                        setExpandedId(expandedId === item.id ? null : item.id);
+                                    }
+                                }}
                                 onClick={() => {
                                     if (selectionMode) {
                                         toggleSelection(item.sourceId);
-                                    } else {
-                                        setExpandedId(expandedId === item.id ? null : item.id);
                                     }
                                 }}
                             >
@@ -521,6 +528,21 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                                     <Icon name={playingId === `review-${item.sourceId}` ? 'square' : 'volume-2'} size={18} />
                                                 </button>
                                             )}
+                                            {!selectionMode && voiceRecording && (
+                                                <VoiceMicButton
+                                                    wordId={item.sourceId}
+                                                    hasRecording={voiceRecording.hasRecording(item.sourceId)}
+                                                    isRecording={voiceRecording.isRecording}
+                                                    isPlaying={voiceRecording.isPlaying}
+                                                    recordingWordId={voiceRecording.recordingWordId}
+                                                    playingWordId={voiceRecording.playingWordId}
+                                                    recordingTime={voiceRecording.recordingTime}
+                                                    onStartRecording={voiceRecording.startRecording}
+                                                    onStopRecording={voiceRecording.stopAndSave}
+                                                    onPlay={voiceRecording.playRecording}
+                                                    onStopPlaying={voiceRecording.stopPlaying}
+                                                />
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -544,9 +566,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                             </button>
                                         )}
 
-                                        <span className="text-xs text-slate-400 hover:text-brand-600 font-medium uppercase tracking-wide">
-                                            {expandedId === item.id ? 'Recolher' : 'Detalhes'}
-                                        </span>
+
                                         <button
                                             onClick={(e) => { e.stopPropagation(); onRemove(item.sourceId); }}
                                             className="text-slate-300 hover:text-red-500 hover:bg-red-50 p-1 rounded-full transition-colors"
@@ -559,7 +579,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
 
                             {/* DETALHES (Expansível) - só mostra fora do modo seleção */}
                             {!selectionMode && expandedId === item.id && (
-                                <div className="bg-slate-50 p-4 border-t border-slate-100 animate-in fade-in slide-in-from-top-1">
+                                <div className="bg-slate-50 p-4 border-t border-slate-100 rounded-b-lg animate-in fade-in slide-in-from-top-1">
                                     <div className="mb-4">
                                         <span className="text-[10px] text-slate-400 font-bold uppercase block mb-1">
                                             {isGerman ? 'Pronúncia' : 'Pinyin'}

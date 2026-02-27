@@ -37,13 +37,14 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
     const rightTerm = rightTermPair?.term || piece.rightText;
     const rightDefinition = rightTermPair?.definition || '';
 
-    // Determine TTS language: always respect the sourceLang, falling back to pt
-    const termLang = gameConfig?.sourceLang || 'zh'; // zh is a safer default if no generic provided, but mostly config injects it. Let's use sourceLang || 'pt' since that's what was there.
-    const actualTermLang = gameConfig?.sourceLang || 'zh';
+    // Determine TTS language: Try the specific term pair language first, then fallback to config
+    const leftTermLang = leftTermPair?.language || gameConfig?.sourceLang || 'zh';
+    const rightTermLang = rightTermPair?.language || gameConfig?.sourceLang || 'zh';
+    const actualTargetLang = gameConfig?.targetLang || 'pt';
 
-    const handleSpeak = (text: string, isDefinition: boolean = false) => {
-        // Definitions are always in Portuguese, terms use the game language
-        speak(text, isDefinition ? 'pt' : actualTermLang);
+    const handleSpeak = (text: string, isDefinition: boolean = false, isLeft: boolean = true) => {
+        const lang = isDefinition ? actualTargetLang : (isLeft ? leftTermLang : rightTermLang);
+        speak(text, lang);
     };
 
     return (
@@ -83,7 +84,7 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
                                     <span className="text-xs text-sky-600 font-bold uppercase tracking-wider">Parte 1</span>
                                 </div>
                                 <button
-                                    onClick={() => handleSpeak(leftTerm)}
+                                    onClick={() => handleSpeak(leftTerm, false, true)}
                                     className="p-2 bg-sky-200 hover:bg-sky-300 rounded-full transition-colors"
                                     title="Ouvir pronúncia"
                                 >
@@ -97,7 +98,7 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
                                         {leftDefinition}
                                     </p>
                                     <button
-                                        onClick={() => handleSpeak(leftDefinition, true)}
+                                        onClick={() => handleSpeak(leftDefinition, true, true)}
                                         className="p-1.5 bg-sky-100 hover:bg-sky-200 rounded-full transition-colors flex-shrink-0"
                                         title="Ouvir tradução"
                                     >
@@ -124,7 +125,7 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
                                     <span className="text-xs text-emerald-600 font-bold uppercase tracking-wider">Parte 2</span>
                                 </div>
                                 <button
-                                    onClick={() => handleSpeak(rightTerm)}
+                                    onClick={() => handleSpeak(rightTerm, false, false)}
                                     className="p-2 bg-emerald-200 hover:bg-emerald-300 rounded-full transition-colors"
                                     title="Ouvir pronúncia"
                                 >
@@ -138,7 +139,7 @@ export const DominoPieceModal: React.FC<DominoPieceModalProps> = ({
                                         {rightDefinition}
                                     </p>
                                     <button
-                                        onClick={() => handleSpeak(rightDefinition, true)}
+                                        onClick={() => handleSpeak(rightDefinition, true, false)}
                                         className="p-1.5 bg-emerald-100 hover:bg-emerald-200 rounded-full transition-colors flex-shrink-0"
                                         title="Ouvir tradução"
                                     >

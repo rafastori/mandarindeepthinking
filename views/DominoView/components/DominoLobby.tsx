@@ -228,21 +228,21 @@ export const DominoLobby: React.FC<DominoLobbyProps> = ({
 
                         {/* 2. Idiomas (se contexto = language) */}
                         {room.config.context === 'language' && (
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-4 mt-4">
                                 <div>
-                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
-                                        Idioma de Origem
+                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block" title="O idioma usado para ler a palavra original">
+                                        Idioma Principal (Áudio)
                                     </label>
                                     <FlagSelect
                                         options={STUDY_LANGUAGES}
-                                        value={room.config.sourceLang || 'de'}
+                                        value={room.config.sourceLang || 'zh'}
                                         onChange={(val) => onUpdateConfig({ sourceLang: val as SupportedLanguage })}
                                         placeholder="Selecione"
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block">
-                                        Traduzir para
+                                    <label className="text-xs font-bold text-slate-400 uppercase mb-2 block" title="O idioma usado para ler a definição/tradução">
+                                        Idioma Secundário (Tradução)
                                     </label>
                                     <FlagSelect
                                         options={ALL_LANGUAGES}

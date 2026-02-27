@@ -5,6 +5,7 @@ export interface GameTermPair {
     term: string;
     definition: string;
     originalRefId: string; // the studyItem.id to link back logic/gamification
+    language?: import('../types').SupportedLanguage; // optional language from DB
 }
 
 interface UseGameDataLoaderOptions {
@@ -99,7 +100,8 @@ export const useGameDataLoader = ({
             pairs.push({
                 term: safeTerm,
                 definition: safeDef,
-                originalRefId: id
+                originalRefId: id,
+                language: item.language
             });
 
             // Popula GameCards (LingoArena)
