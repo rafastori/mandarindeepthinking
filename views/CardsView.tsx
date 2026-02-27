@@ -196,8 +196,8 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
     };
 
     return (
-        <div className="p-6 h-full flex flex-col items-center justify-center max-w-md mx-auto pb-24">
-            <div className="w-full mb-4 flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-widest">
+        <div className="p-4 sm:p-6 h-full flex flex-col max-w-md mx-auto pb-6">
+            <div className="w-full mb-4 flex-shrink-0 flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-widest">
                 <span>Card {currentIndex + 1} de {deck.length}</span>
 
                 <button
@@ -212,97 +212,101 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                 <span>{Math.round(((currentIndex + 1) / deck.length) * 100)}%</span>
             </div>
 
-            <div className="relative w-full aspect-[3/4] cursor-pointer perspective-1000 group" onClick={() => setFlipped(!flipped)}>
+            <div className="relative w-full flex-1 min-h-[300px] max-h-[600px] cursor-pointer perspective-1000 group mx-auto" onClick={() => setFlipped(!flipped)}>
                 <div className={`w-full h-full transition-all duration-500 transform-style-3d shadow-2xl rounded-2xl ${flipped ? 'rotate-y-180' : ''}`}>
 
                     {/* FRENTE */}
-                    <div className="absolute inset-0 bg-white rounded-2xl flex flex-col items-center justify-center backface-hidden border-b-4 border-slate-100 p-4">
-                        <span className="text-xs text-slate-400 uppercase tracking-widest mb-4">
-                            {invertSide ? 'Definição' : (isGerman ? 'Palavra' : 'Hanzi')}
-                        </span>
+                    <div className="absolute inset-0 bg-white rounded-2xl backface-hidden border-b-4 border-slate-100 overflow-y-auto">
+                        <div className="flex flex-col items-center justify-center min-h-full p-6">
+                            <span className="text-xs text-slate-400 uppercase tracking-widest mb-4">
+                                {invertSide ? 'Definição' : (isGerman ? 'Palavra' : 'Hanzi')}
+                            </span>
 
-                        <h2 className={`${invertSide ? 'text-2xl font-medium' : getFontSize(card.word) + ' ' + (isGerman ? 'font-sans' : 'font-chinese') + ' font-bold'} text-slate-800 text-center break-words w-full`}>
-                            {invertSide ? card.meaning : card.word}
-                        </h2>
+                            <h2 className={`${invertSide ? 'text-2xl font-medium' : getFontSize(card.word) + ' ' + (isGerman ? 'font-sans' : 'font-chinese') + ' font-bold'} text-slate-800 text-center break-words w-full`}>
+                                {invertSide ? card.meaning : card.word}
+                            </h2>
 
-                        {/* Botão de áudio (Só mostra na frente se NÃO estiver invertido, ou se quiser dar a dica do áudio) */}
-                        {!invertSide && (
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    const audioId = `card-front-${currentIndex}`;
-                                    if (playingId === audioId) {
-                                        stop();
-                                    } else {
-                                        speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
-                                    }
-                                }}
-                                className={`mt-4 p-3 rounded-full transition-colors ${playingId === `card-front-${currentIndex}` ? 'bg-brand-600 text-white animate-pulse' : 'bg-brand-50 text-brand-600 hover:bg-brand-100'}`}
-                                title="Ouvir pronúncia"
-                            >
-                                <Icon name={playingId === `card-front-${currentIndex}` ? 'square' : 'volume-2'} size={24} />
-                            </button>
-                        )}
+                            {/* Botão de áudio (Só mostra na frente se NÃO estiver invertido, ou se quiser dar a dica do áudio) */}
+                            {!invertSide && (
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        const audioId = `card-front-${currentIndex}`;
+                                        if (playingId === audioId) {
+                                            stop();
+                                        } else {
+                                            speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                        }
+                                    }}
+                                    className={`mt-4 p-3 rounded-full transition-colors ${playingId === `card-front-${currentIndex}` ? 'bg-brand-600 text-white animate-pulse' : 'bg-brand-50 text-brand-600 hover:bg-brand-100'}`}
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name={playingId === `card-front-${currentIndex}` ? 'square' : 'volume-2'} size={24} />
+                                </button>
+                            )}
 
-                        <span className="mt-4 text-xs text-brand-500 font-bold">Toque para virar</span>
+                            <span className="mt-4 text-xs text-brand-500 font-bold">Toque para virar</span>
+                        </div>
                     </div>
 
                     {/* VERSO */}
-                    <div className="absolute inset-0 bg-slate-800 rounded-2xl flex flex-col items-center justify-center rotate-y-180 backface-hidden text-white p-6 text-center">
-                        <div className="flex items-center gap-3 mb-2">
-                            <h2 className={`text-3xl ${isGerman ? 'font-sans' : 'font-chinese'} font-bold break-words`}>
-                                {card.word}
-                            </h2>
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    const audioId = `card-back-${currentIndex}`;
-                                    if (playingId === audioId) {
-                                        stop();
-                                    } else {
-                                        speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
-                                    }
-                                }}
-                                className={`p-2 rounded-full transition-colors flex-shrink-0 ${playingId === `card-back-${currentIndex}` ? 'bg-white/40 text-white animate-pulse' : 'bg-white/20 text-white hover:bg-white/30'}`}
-                                title="Ouvir pronúncia"
-                            >
-                                <Icon name={playingId === `card-back-${currentIndex}` ? 'square' : 'volume-2'} size={20} />
-                            </button>
-                        </div>
-                        <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
-
-                        <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
-
-                        {card.context && card.context !== card.word && (
-                            <div className={`bg-white/10 p-3 rounded text-sm italic ${isGerman ? 'font-sans' : 'font-chinese'}`}>
-                                {card.context}
+                    <div className="absolute inset-0 bg-slate-800 rounded-2xl rotate-y-180 backface-hidden text-white overflow-y-auto">
+                        <div className="flex flex-col items-center justify-center min-h-full p-6 text-center">
+                            <div className="flex items-center gap-3 mb-2">
+                                <h2 className={`text-3xl ${isGerman ? 'font-sans' : 'font-chinese'} font-bold break-words`}>
+                                    {card.word}
+                                </h2>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        const audioId = `card-back-${currentIndex}`;
+                                        if (playingId === audioId) {
+                                            stop();
+                                        } else {
+                                            speak(card.word, (card.language || 'zh') as 'zh' | 'de' | 'pt' | 'en', audioId);
+                                        }
+                                    }}
+                                    className={`p-2 rounded-full transition-colors flex-shrink-0 ${playingId === `card-back-${currentIndex}` ? 'bg-white/40 text-white animate-pulse' : 'bg-white/20 text-white hover:bg-white/30'}`}
+                                    title="Ouvir pronúncia"
+                                >
+                                    <Icon name={playingId === `card-back-${currentIndex}` ? 'square' : 'volume-2'} size={20} />
+                                </button>
                             </div>
-                        )}
+                            <p className="text-brand-400 text-xl mb-4">{card.pinyin}</p>
 
-                        {/* Study More toggle */}
-                        {onToggleStudyMore && (
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    onToggleStudyMore(card.sourceId);
-                                }}
-                                className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(card.sourceId)
-                                    ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
-                                    : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
-                                    }`}
-                                title={studyMoreIds.includes(card.sourceId) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
-                            >
-                                <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(card.sourceId) ? 'fill-current' : ''}`} />
-                                {studyMoreIds.includes(card.sourceId) ? 'Estudar Mais ✓' : 'Estudar Mais'}
-                            </button>
-                        )}
+                            <p className="text-lg mb-6 opacity-90">{card.meaning}</p>
+
+                            {card.context && card.context !== card.word && (
+                                <div className={`bg-white/10 p-3 rounded text-sm italic ${isGerman ? 'font-sans' : 'font-chinese'}`}>
+                                    {card.context}
+                                </div>
+                            )}
+
+                            {/* Study More toggle */}
+                            {onToggleStudyMore && (
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        onToggleStudyMore(card.sourceId);
+                                    }}
+                                    className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(card.sourceId)
+                                        ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
+                                        : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
+                                        }`}
+                                    title={studyMoreIds.includes(card.sourceId) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
+                                >
+                                    <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(card.sourceId) ? 'fill-current' : ''}`} />
+                                    {studyMoreIds.includes(card.sourceId) ? 'Estudar Mais ✓' : 'Estudar Mais'}
+                                </button>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className={`flex gap-4 mt-8 w-full transition-opacity duration-300 ${flipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                <button onClick={(e) => { e.stopPropagation(); next(false); }} className="flex-1 py-3 rounded-xl bg-red-100 text-red-600 font-bold shadow-sm active:scale-95 transition-transform">Errei</button>
-                <button onClick={(e) => { e.stopPropagation(); next(true); }} className="flex-1 py-3 rounded-xl bg-brand-100 text-brand-700 font-bold shadow-sm active:scale-95 transition-transform">Acertei</button>
+            <div className={`flex-shrink-0 flex gap-4 mt-auto pt-6 w-full transition-opacity duration-300 ${flipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+                <button onClick={(e) => { e.stopPropagation(); next(false); }} className="flex-1 py-4 rounded-xl bg-red-100 text-red-600 font-bold shadow-sm active:scale-95 transition-transform text-lg border-2 border-red-200 hover:bg-red-200">Errei</button>
+                <button onClick={(e) => { e.stopPropagation(); next(true); }} className="flex-1 py-4 rounded-xl bg-brand-100 text-brand-700 font-bold shadow-sm active:scale-95 transition-transform text-lg border-2 border-brand-200 hover:bg-brand-200">Acertei</button>
             </div>
         </div>
     );
