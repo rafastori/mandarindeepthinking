@@ -111,7 +111,9 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
         targetLang: string,
         text: string,
         tokens: string[],
-        difficulty: string
+        difficulty: string,
+        context?: string,
+        selectedFolderIds?: string[]
     ) => {
         const player = createPlayerFromUser(user, totalScore);
         const roomId = await createRoom(
@@ -123,6 +125,8 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
                 tokens,
                 minWords: 40,
                 difficulty,
+                context,
+                selectedFolderIds,
             },
             player
         );
@@ -454,6 +458,7 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
                 <CreateRoomModal
                     onClose={() => setShowCreateModal(false)}
                     onCreate={handleCreateRoom}
+                    currentUserId={user.uid}
                 />
             )}
 

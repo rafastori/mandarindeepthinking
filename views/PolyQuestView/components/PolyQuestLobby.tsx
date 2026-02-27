@@ -31,29 +31,12 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
     const [targetLang, setTargetLang] = useState(room.config.targetLang);
     const [text, setText] = useState(room.config.originalText);
     const [difficulty, setDifficulty] = useState(room.config.difficulty || 'Iniciante');
-    const [context, setContext] = useState(room.config.context || 'gemini');
+    const [context, setContext] = useState(room.config.context || 'library');
     const [selectedFolderIds, setSelectedFolderIds] = useState<string[]>(room.config.selectedFolderIds || []);
     const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
-    const [selectedTextId, setSelectedTextId] = useState<string>('');
 
     // Fetch study items from the host's library
     const { items: libraryItems } = useStudyItems(currentUserId);
-
-    // Compute available text items from selected folders
-    const availableTexts = React.useMemo(() => {
-        if (context !== 'library' || selectedFolderIds.length === 0) return [];
-
-        const inFolder = (itemPath?: string) => {
-            return selectedFolderIds.some(filterPath => {
-                if (filterPath === '__uncategorized__' && !itemPath) return true;
-                return itemPath === filterPath || itemPath?.startsWith(filterPath + '/');
-            });
-        };
-
-        const matchingItems = libraryItems.filter(i => inFolder(i.folderPath));
-        // Full texts from Reading tab
-        return matchingItems.filter(i => i.type === 'text' || (!i.type && (i.tokens?.length || 0) > 4));
-    }, [context, selectedFolderIds, libraryItems]);
 
     const currentPlayer = room.players.find(p => p.id === currentUserId);
     const allReady = room.players.every(p => p.isReady);
@@ -75,29 +58,14 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
         }
     }, [sourceLang, targetLang, text, difficulty, context, selectedFolderIds]);
 
-    // Build the "Library Text" dynamically whenever folders or selected text change
+    // Merge all text segments from selected folders into one complete lesson
     React.useEffect(() => {
         if (context === 'library' && isHost) {
             if (selectedFolderIds.length === 0) {
                 setText('');
-                setSelectedTextId('');
                 return;
             }
 
-            // If there are full texts and one is selected, use it
-            if (availableTexts.length > 0) {
-                const chosen = selectedTextId
-                    ? availableTexts.find(t => t.id === selectedTextId)
-                    : availableTexts[0]; // Auto-select first
-
-                if (chosen) {
-                    setText(chosen.chinese);
-                    if (!selectedTextId) setSelectedTextId(chosen.id);
-                    return;
-                }
-            }
-
-            // Fallback: no full texts → use sentences or words
             const inFolder = (itemPath?: string) => {
                 return selectedFolderIds.some(filterPath => {
                     if (filterPath === '__uncategorized__' && !itemPath) return true;
@@ -106,16 +74,24 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
             };
             const matchingItems = libraryItems.filter(i => inFolder(i.folderPath));
 
-            const wordsWithSentences = matchingItems.filter(i => i.originalSentence);
-            if (wordsWithSentences.length > 0) {
-                const concatenatedSentences = Array.from(new Set(wordsWithSentences.map(w => w.originalSentence))).slice(0, 5).join(' ');
-                setText(concatenatedSentences);
+            // Merge all text segments (full lessons) from the folders
+            const textItems = matchingItems.filter(i => i.type === 'text' || (!i.type && (i.tokens?.length || 0) > 4));
+
+            if (textItems.length > 0) {
+                const mergedText = textItems.map(t => t.chinese).join('\n\n');
+                setText(mergedText);
             } else {
-                const wordList = matchingItems.map(i => i.chinese).join(' ');
-                setText(wordList);
+                // Fallback: sentences or words
+                const wordsWithSentences = matchingItems.filter(i => i.originalSentence);
+                if (wordsWithSentences.length > 0) {
+                    const merged = Array.from(new Set(wordsWithSentences.map(w => w.originalSentence))).join(' ');
+                    setText(merged);
+                } else {
+                    setText(matchingItems.map(i => i.chinese).join(' '));
+                }
             }
         }
-    }, [context, selectedFolderIds, libraryItems, isHost, selectedTextId, availableTexts]);
+    }, [context, selectedFolderIds, libraryItems, isHost]);
 
     const canStart = isHost && allReady && validation.valid && room.players.length > 0;
 
@@ -290,33 +266,12 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                                     </button>
                                 </div>
 
-                                {/* Text selector dropdown - only when full texts exist */}
-                                {availableTexts.length > 0 && (
-                                    <div className="bg-indigo-50 p-4 rounded-xl border border-indigo-100">
-                                        <label className="text-xs font-bold text-indigo-600 uppercase mb-2 flex items-center gap-1">
-                                            <Icon name="book-open" size={14} /> Texto da Leitura ({availableTexts.length})
-                                        </label>
-                                        <select
-                                            value={selectedTextId}
-                                            onChange={(e) => setSelectedTextId(e.target.value)}
-                                            disabled={!isHost}
-                                            className={`w-full bg-white border-2 border-indigo-200 text-indigo-700 font-bold py-3 rounded-xl px-4 transition-colors appearance-none cursor-pointer ${isHost ? 'hover:border-indigo-400' : 'opacity-70 cursor-not-allowed'}`}
-                                        >
-                                            {availableTexts.map((item) => (
-                                                <option key={item.id} value={item.id}>
-                                                    {item.chinese.substring(0, 60)}{item.chinese.length > 60 ? '…' : ''}
-                                                </option>
-                                            ))}
-                                        </select>
-                                    </div>
-                                )}
-
                                 {/* Text preview (readonly) */}
                                 {text && (
                                     <div>
                                         <div className="flex items-center justify-between mb-2">
                                             <label className="block text-sm font-semibold text-slate-700">
-                                                Prévia do Texto
+                                                Prévia da Aula
                                             </label>
                                             <span className={`text-xs font-semibold ${text.length > 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                                                 {text.split(/\s+/).filter(Boolean).length} palavras
@@ -331,10 +286,10 @@ export const PolyQuestLobby: React.FC<PolyQuestLobbyProps> = ({
                                     </div>
                                 )}
 
-                                {selectedFolderIds.length > 0 && availableTexts.length === 0 && !text && (
+                                {selectedFolderIds.length > 0 && !text && (
                                     <p className="text-xs text-amber-600 text-center">
                                         <Icon name="alert-circle" size={14} className="inline mr-1" />
-                                        Nenhum texto completo encontrado nesta pasta. Usando frases ou palavras como fallback.
+                                        Nenhum conteúdo encontrado nesta pasta.
                                     </p>
                                 )}
                             </div>
