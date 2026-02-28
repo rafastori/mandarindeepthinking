@@ -1,0 +1,552 @@
+[
+  {
+    "chinese": "Lili, después del trabajo, ¿puedes ir conmigo al centro comercial a dar una vuelta?",
+    "pinyin": "",
+    "translation": "Lili, depois do trabalho, você pode ir comigo ao shopping para dar uma volta?",
+    "tokens": [
+      "Lili",
+      ",",
+      "después",
+      "del",
+      "trabajo",
+      ",",
+      "¿puedes",
+      "ir",
+      "conmigo",
+      "al",
+      "centro",
+      "comercial",
+      "a",
+      "dar",
+      "una",
+      "vuelta",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "después del trabajo",
+        "pinyin": "",
+        "meaning": "depois do trabalho"
+      },
+      {
+        "id": 2,
+        "word": "ir conmigo",
+        "pinyin": "",
+        "meaning": "ir comigo"
+      },
+      {
+        "id": 3,
+        "word": "centro comercial",
+        "pinyin": "",
+        "meaning": "shopping"
+      },
+      {
+        "id": 4,
+        "word": "dar una vuelta",
+        "pinyin": "",
+        "meaning": "dar uma volta, passear"
+      }
+    ],
+    "id": "local-1772299448584-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Claro. ¿Qué quieres comprar?",
+    "pinyin": "",
+    "translation": "Claro. O que você quer comprar?",
+    "tokens": [
+      "Claro",
+      ".",
+      "¿Qué",
+      "quieres",
+      "comprar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "Claro",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 6,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772299448584-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Mi amiga íntima se va a casar. Me gustaría elegir un regalo de bodas.",
+    "pinyin": "",
+    "translation": "Minha amiga íntima vai se casar. Eu gostaria de escolher um presente de casamento.",
+    "tokens": [
+      "Mi",
+      "amiga",
+      "íntima",
+      "se",
+      "va",
+      "a",
+      "casar",
+      ".",
+      "Me",
+      "gustaría",
+      "elegir",
+      "un",
+      "regalo",
+      "de",
+      "bodas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "amiga íntima",
+        "pinyin": "",
+        "meaning": "amiga íntima"
+      },
+      {
+        "id": 8,
+        "word": "se va a casar",
+        "pinyin": "",
+        "meaning": "vai se casar"
+      },
+      {
+        "id": 9,
+        "word": "me gustaría",
+        "pinyin": "",
+        "meaning": "eu gostaria"
+      },
+      {
+        "id": 10,
+        "word": "elegir",
+        "pinyin": "",
+        "meaning": "escolher"
+      },
+      {
+        "id": 11,
+        "word": "regalo de bodas",
+        "pinyin": "",
+        "meaning": "presente de casamento"
+      }
+    ],
+    "id": "local-1772299448584-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿No estaría bien simplemente darle un sobre rojo con dinero?",
+    "pinyin": "",
+    "translation": "Não seria bom simplesmente dar a ela um envelope vermelho com dinheiro?",
+    "tokens": [
+      "¿No",
+      "estaría",
+      "bien",
+      "simplemente",
+      "darle",
+      "un",
+      "sobre",
+      "rojo",
+      "con",
+      "dinero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "no estaría bien",
+        "pinyin": "",
+        "meaning": "não seria bom"
+      },
+      {
+        "id": 13,
+        "word": "simplemente",
+        "pinyin": "",
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 14,
+        "word": "darle",
+        "pinyin": "",
+        "meaning": "dar a ela/ele"
+      },
+      {
+        "id": 15,
+        "word": "sobre rojo",
+        "pinyin": "",
+        "meaning": "envelope vermelho"
+      },
+      {
+        "id": 16,
+        "word": "dinero",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772299448584-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Ella es mi mejor amiga. Quiero darle un regalo que sea diferente.",
+    "pinyin": "",
+    "translation": "Ela é minha melhor amiga. Quero dar a ela um presente que seja diferente.",
+    "tokens": [
+      "Ella",
+      "es",
+      "mi",
+      "mejor",
+      "amiga",
+      ".",
+      "Quiero",
+      "darle",
+      "un",
+      "regalo",
+      "que",
+      "sea",
+      "diferente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "mejor amiga",
+        "pinyin": "",
+        "meaning": "melhor amiga"
+      },
+      {
+        "id": 18,
+        "word": "quiero darle",
+        "pinyin": "",
+        "meaning": "quero dar a ela"
+      },
+      {
+        "id": 19,
+        "word": "regalo",
+        "pinyin": "",
+        "meaning": "presente"
+      },
+      {
+        "id": 20,
+        "word": "diferente",
+        "pinyin": "",
+        "meaning": "diferente"
+      }
+    ],
+    "id": "local-1772299448584-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Has pensado qué te gustaría comprar?",
+    "pinyin": "",
+    "translation": "Você já pensou o que gostaria de comprar?",
+    "tokens": [
+      "¿Has",
+      "pensado",
+      "qué",
+      "te",
+      "gustaría",
+      "comprar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "has pensado",
+        "pinyin": "",
+        "meaning": "você pensou"
+      },
+      {
+        "id": 22,
+        "word": "te gustaría",
+        "pinyin": "",
+        "meaning": "você gostaria"
+      }
+    ],
+    "id": "local-1772299448584-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Todavía no. ¿Tienes alguna buena idea?",
+    "pinyin": "",
+    "translation": "Ainda não. Você tem alguma boa ideia?",
+    "tokens": [
+      "Todavía",
+      "no",
+      ".",
+      "¿Tienes",
+      "alguna",
+      "buena",
+      "idea",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 23,
+        "word": "Todavía no",
+        "pinyin": "",
+        "meaning": "Ainda não"
+      },
+      {
+        "id": 24,
+        "word": "tienes",
+        "pinyin": "",
+        "meaning": "você tem"
+      },
+      {
+        "id": 25,
+        "word": "buena idea",
+        "pinyin": "",
+        "meaning": "boa ideia"
+      }
+    ],
+    "id": "local-1772299448584-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es bastante común regalar cosas como vajilla como regalo de bodas.",
+    "pinyin": "",
+    "translation": "É bastante comum presentear coisas como louça como presente de casamento.",
+    "tokens": [
+      "Es",
+      "bastante",
+      "común",
+      "regalar",
+      "cosas",
+      "como",
+      "vajilla",
+      "como",
+      "regalo",
+      "de",
+      "bodas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "bastante común",
+        "pinyin": "",
+        "meaning": "bastante comum"
+      },
+      {
+        "id": 27,
+        "word": "regalar",
+        "pinyin": "",
+        "meaning": "presentear"
+      },
+      {
+        "id": 28,
+        "word": "vajilla",
+        "pinyin": "",
+        "meaning": "louça, utensílios de mesa"
+      }
+    ],
+    "id": "local-1772299448584-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Eso es demasiado ordinario. Quiero algo un poco más especial.",
+    "pinyin": "",
+    "translation": "Isso é muito comum. Quero algo um pouco mais especial.",
+    "tokens": [
+      "Eso",
+      "es",
+      "demasiado",
+      "ordinario",
+      ".",
+      "Quiero",
+      "algo",
+      "un",
+      "poco",
+      "más",
+      "especial",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "demasiado ordinario",
+        "pinyin": "",
+        "meaning": "muito comum, demasiado ordinário"
+      },
+      {
+        "id": 30,
+        "word": "un poco más",
+        "pinyin": "",
+        "meaning": "um pouco mais"
+      },
+      {
+        "id": 31,
+        "word": "especial",
+        "pinyin": "",
+        "meaning": "especial"
+      }
+    ],
+    "id": "local-1772299448584-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Entonces consigue algo tradicional. ¿Qué tal un peine de laca?",
+    "pinyin": "",
+    "translation": "Então consiga algo tradicional. Que tal um pente de laca?",
+    "tokens": [
+      "Entonces",
+      "consigue",
+      "algo",
+      "tradicional",
+      ".",
+      "¿Qué",
+      "tal",
+      "un",
+      "peine",
+      "de",
+      "laca",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 33,
+        "word": "consigue",
+        "pinyin": "",
+        "meaning": "consiga, obtenha"
+      },
+      {
+        "id": 34,
+        "word": "tradicional",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 35,
+        "word": "Qué tal",
+        "pinyin": "",
+        "meaning": "Que tal"
+      },
+      {
+        "id": 36,
+        "word": "peine de laca",
+        "pinyin": "",
+        "meaning": "pente de laca"
+      }
+    ],
+    "id": "local-1772299448584-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Oh? ¿Qué significado tiene?",
+    "pinyin": "",
+    "translation": "Oh? Que significado tem?",
+    "tokens": [
+      "¿Oh",
+      "?",
+      "¿Qué",
+      "significado",
+      "tiene",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "significado",
+        "pinyin": "",
+        "meaning": "significado"
+      },
+      {
+        "id": 38,
+        "word": "tiene",
+        "pinyin": "",
+        "meaning": "tem"
+      }
+    ],
+    "id": "local-1772299448584-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "En China, esto significa que dos personas siempre estarán juntas.",
+    "pinyin": "",
+    "translation": "Na China, isso significa que duas pessoas sempre estarão juntas.",
+    "tokens": [
+      "En",
+      "China",
+      ",",
+      "esto",
+      "significa",
+      "que",
+      "dos",
+      "personas",
+      "siempre",
+      "estarán",
+      "juntas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 39,
+        "word": "En China",
+        "pinyin": "",
+        "meaning": "Na China"
+      },
+      {
+        "id": 40,
+        "word": "significa",
+        "pinyin": "",
+        "meaning": "significa"
+      },
+      {
+        "id": 41,
+        "word": "dos personas",
+        "pinyin": "",
+        "meaning": "duas pessoas"
+      },
+      {
+        "id": 42,
+        "word": "siempre estarán juntas",
+        "pinyin": "",
+        "meaning": "sempre estarão juntas"
+      }
+    ],
+    "id": "local-1772299448584-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Eso es genial. Vamos a echar un vistazo.",
+    "pinyin": "",
+    "translation": "Isso é ótimo. Vamos dar uma olhada.",
+    "tokens": [
+      "Eso",
+      "es",
+      "genial",
+      ".",
+      "Vamos",
+      "a",
+      "echar",
+      "un",
+      "vistazo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "genial",
+        "pinyin": "",
+        "meaning": "ótimo, legal"
+      },
+      {
+        "id": 44,
+        "word": "vamos a echar un vistazo",
+        "pinyin": "",
+        "meaning": "vamos dar uma olhada"
+      }
+    ],
+    "id": "local-1772299448584-12",
+    "language": "Espanhol"
+  }
+]

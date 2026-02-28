@@ -1,0 +1,650 @@
+[
+  {
+    "chinese": "A: ¿Qué estás viendo?",
+    "pinyin": null,
+    "translation": "A: O que você está vendo?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "estás",
+      "viendo?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qué",
+        "pinyin": null,
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "estás",
+        "pinyin": null,
+        "meaning": "está (verbo estar)"
+      },
+      {
+        "id": 3,
+        "word": "viendo",
+        "pinyin": null,
+        "meaning": "vendo (verbo ver)"
+      }
+    ],
+    "id": "local-1772297139599-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Un teatro de sombras.",
+    "pinyin": null,
+    "translation": "B: Um teatro de sombras.",
+    "tokens": [
+      "B:",
+      "Un",
+      "teatro",
+      "de",
+      "sombras."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "teatro",
+        "pinyin": null,
+        "meaning": "teatro"
+      },
+      {
+        "id": 2,
+        "word": "sombras",
+        "pinyin": null,
+        "meaning": "sombras"
+      }
+    ],
+    "id": "local-1772297139599-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Cómo no he visto esto?",
+    "pinyin": null,
+    "translation": "A: Como não vi isso?",
+    "tokens": [
+      "A:",
+      "¿Cómo",
+      "no",
+      "he",
+      "visto",
+      "esto?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cómo",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 2,
+        "word": "he visto",
+        "pinyin": null,
+        "meaning": "eu vi (pretérito perfeito)"
+      },
+      {
+        "id": 3,
+        "word": "esto",
+        "pinyin": null,
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772297139599-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es un arte folclórico tradicional chino. Hoy en día no mucha gente lo ve.",
+    "pinyin": null,
+    "translation": "B: É uma arte folclórica tradicional chinesa. Hoje em dia não muita gente a vê.",
+    "tokens": [
+      "B:",
+      "Es",
+      "un",
+      "arte",
+      "folclórico",
+      "tradicional",
+      "chino.",
+      "Hoy",
+      "en",
+      "día",
+      "no",
+      "mucha",
+      "gente",
+      "lo",
+      "ve."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arte",
+        "pinyin": null,
+        "meaning": "arte"
+      },
+      {
+        "id": 2,
+        "word": "folclórico",
+        "pinyin": null,
+        "meaning": "folclórico"
+      },
+      {
+        "id": 3,
+        "word": "tradicional",
+        "pinyin": null,
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "chino",
+        "pinyin": null,
+        "meaning": "chinês"
+      },
+      {
+        "id": 5,
+        "word": "hoy en día",
+        "pinyin": null,
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 6,
+        "word": "mucha",
+        "pinyin": null,
+        "meaning": "muita"
+      },
+      {
+        "id": 7,
+        "word": "gente",
+        "pinyin": null,
+        "meaning": "gente, pessoas"
+      },
+      {
+        "id": 8,
+        "word": "ve",
+        "pinyin": null,
+        "meaning": "vê (verbo ver)"
+      }
+    ],
+    "id": "local-1772297139599-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Esta es una historia de \"Viaje al Oeste\", ¿verdad?",
+    "pinyin": null,
+    "translation": "A: Esta é uma história de \"Jornada ao Oeste\", não é?",
+    "tokens": [
+      "A:",
+      "Esta",
+      "es",
+      "una",
+      "historia",
+      "de",
+      "\"Viaje",
+      "al",
+      "Oeste\",",
+      "¿verdad?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "historia",
+        "pinyin": null,
+        "meaning": "história"
+      },
+      {
+        "id": 2,
+        "word": "Viaje al Oeste",
+        "pinyin": null,
+        "meaning": "Jornada ao Oeste (clássico da literatura chinesa)"
+      },
+      {
+        "id": 3,
+        "word": "verdad",
+        "pinyin": null,
+        "meaning": "verdade (usado como 'não é?')"
+      }
+    ],
+    "id": "local-1772297139599-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. Estos personajes están todos hechos con pieles de animales o cartón.",
+    "pinyin": null,
+    "translation": "B: Sim. Esses personagens são todos feitos com peles de animais ou papelão.",
+    "tokens": [
+      "B:",
+      "Sí.",
+      "Estos",
+      "personajes",
+      "están",
+      "todos",
+      "hechos",
+      "con",
+      "pieles",
+      "de",
+      "animales",
+      "o",
+      "cartón."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "personajes",
+        "pinyin": null,
+        "meaning": "personagens"
+      },
+      {
+        "id": 2,
+        "word": "hechos",
+        "pinyin": null,
+        "meaning": "feitos"
+      },
+      {
+        "id": 3,
+        "word": "pieles",
+        "pinyin": null,
+        "meaning": "peles"
+      },
+      {
+        "id": 4,
+        "word": "animales",
+        "pinyin": null,
+        "meaning": "animais"
+      },
+      {
+        "id": 5,
+        "word": "cartón",
+        "pinyin": null,
+        "meaning": "papelão"
+      }
+    ],
+    "id": "local-1772297139599-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, ¿cómo se mueven?",
+    "pinyin": null,
+    "translation": "A: Então, como se movem?",
+    "tokens": [
+      "A:",
+      "Entonces,",
+      "¿cómo",
+      "se",
+      "mueven?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entonces",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "cómo",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "mueven",
+        "pinyin": null,
+        "meaning": "movem (verbo mover)"
+      }
+    ],
+    "id": "local-1772297139599-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Hay personas que los controlan.",
+    "pinyin": null,
+    "translation": "B: Há pessoas que os controlam.",
+    "tokens": [
+      "B:",
+      "Hay",
+      "personas",
+      "que",
+      "los",
+      "controlan."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hay",
+        "pinyin": null,
+        "meaning": "há, existem (verbo haber)"
+      },
+      {
+        "id": 2,
+        "word": "personas",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "controlan",
+        "pinyin": null,
+        "meaning": "controlam (verbo controlar)"
+      }
+    ],
+    "id": "local-1772297139599-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Eso es realmente interesante. ¿Hay algún lugar donde pueda ver una función?",
+    "pinyin": null,
+    "translation": "A: Isso é realmente interessante. Há algum lugar onde eu possa ver uma apresentação?",
+    "tokens": [
+      "A:",
+      "Eso",
+      "es",
+      "realmente",
+      "interesante.",
+      "¿Hay",
+      "algún",
+      "lugar",
+      "donde",
+      "pueda",
+      "ver",
+      "una",
+      "función?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "realmente",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "interesante",
+        "pinyin": null,
+        "meaning": "interessante"
+      },
+      {
+        "id": 3,
+        "word": "algún",
+        "pinyin": null,
+        "meaning": "algum"
+      },
+      {
+        "id": 4,
+        "word": "lugar",
+        "pinyin": null,
+        "meaning": "lugar"
+      },
+      {
+        "id": 5,
+        "word": "pueda",
+        "pinyin": null,
+        "meaning": "possa (verbo poder, subjuntivo)"
+      },
+      {
+        "id": 6,
+        "word": "función",
+        "pinyin": null,
+        "meaning": "apresentação, função"
+      }
+    ],
+    "id": "local-1772297139599-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿No vas a Beijing la próxima semana? Beijing tiene un lugar llamado \"Shichahai Shadow Art Performance Hotel\". Puedes ir allí para experimentarlo.",
+    "pinyin": null,
+    "translation": "B: Você não vai a Pequim na próxima semana? Pequim tem um lugar chamado \"Shichahai Shadow Art Performance Hotel\". Você pode ir lá para experimentá-lo.",
+    "tokens": [
+      "B:",
+      "¿No",
+      "vas",
+      "a",
+      "Beijing",
+      "la",
+      "próxima",
+      "semana?",
+      "Beijing",
+      "tiene",
+      "un",
+      "lugar",
+      "llamado",
+      "\"Shichahai",
+      "Shadow",
+      "Art",
+      "Performance",
+      "Hotel\".",
+      "Puedes",
+      "ir",
+      "allí",
+      "para",
+      "experimentarlo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vas",
+        "pinyin": null,
+        "meaning": "vai (verbo ir)"
+      },
+      {
+        "id": 2,
+        "word": "Beijing",
+        "pinyin": null,
+        "meaning": "Pequim"
+      },
+      {
+        "id": 3,
+        "word": "próxima",
+        "pinyin": null,
+        "meaning": "próxima"
+      },
+      {
+        "id": 4,
+        "word": "semana",
+        "pinyin": null,
+        "meaning": "semana"
+      },
+      {
+        "id": 5,
+        "word": "tiene",
+        "pinyin": null,
+        "meaning": "tem (verbo tener)"
+      },
+      {
+        "id": 6,
+        "word": "llamado",
+        "pinyin": null,
+        "meaning": "chamado"
+      },
+      {
+        "id": 7,
+        "word": "puedes",
+        "pinyin": null,
+        "meaning": "pode (verbo poder)"
+      },
+      {
+        "id": 8,
+        "word": "allí",
+        "pinyin": null,
+        "meaning": "lá"
+      },
+      {
+        "id": 9,
+        "word": "experimentarlo",
+        "pinyin": null,
+        "meaning": "experimentá-lo"
+      }
+    ],
+    "id": "local-1772297139599-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Definitivamente iré. Me pregunto si puedo aprender a montar un teatro de sombras.",
+    "pinyin": null,
+    "translation": "A: Definitivamente irei. Eu me pergunto se posso aprender a montar um teatro de sombras.",
+    "tokens": [
+      "A:",
+      "Definitivamente",
+      "iré.",
+      "Me",
+      "pregunto",
+      "si",
+      "puedo",
+      "aprender",
+      "a",
+      "montar",
+      "un",
+      "teatro",
+      "de",
+      "sombras."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "definitivamente",
+        "pinyin": null,
+        "meaning": "definitivamente"
+      },
+      {
+        "id": 2,
+        "word": "iré",
+        "pinyin": null,
+        "meaning": "irei (verbo ir, futuro)"
+      },
+      {
+        "id": 3,
+        "word": "me pregunto",
+        "pinyin": null,
+        "meaning": "eu me pergunto"
+      },
+      {
+        "id": 4,
+        "word": "puedo",
+        "pinyin": null,
+        "meaning": "posso (verbo poder)"
+      },
+      {
+        "id": 5,
+        "word": "aprender",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 6,
+        "word": "montar",
+        "pinyin": null,
+        "meaning": "montar"
+      }
+    ],
+    "id": "local-1772297139599-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No hay problema. Mi amigo estadounidense produjo su propio teatro de sombras. La próxima vez te lo presentaré.",
+    "pinyin": null,
+    "translation": "B: Não há problema. Meu amigo americano produziu seu próprio teatro de sombras. Da próxima vez eu o apresentarei a você.",
+    "tokens": [
+      "B:",
+      "No",
+      "hay",
+      "problema.",
+      "Mi",
+      "amigo",
+      "estadounidense",
+      "produjo",
+      "su",
+      "propio",
+      "teatro",
+      "de",
+      "sombras.",
+      "La",
+      "próxima",
+      "vez",
+      "te",
+      "lo",
+      "presentaré."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "no hay problema",
+        "pinyin": null,
+        "meaning": "não há problema"
+      },
+      {
+        "id": 2,
+        "word": "amigo",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "estadounidense",
+        "pinyin": null,
+        "meaning": "estadunidense, americano"
+      },
+      {
+        "id": 4,
+        "word": "produjo",
+        "pinyin": null,
+        "meaning": "produziu (verbo producir)"
+      },
+      {
+        "id": 5,
+        "word": "propio",
+        "pinyin": null,
+        "meaning": "próprio"
+      },
+      {
+        "id": 6,
+        "word": "próxima vez",
+        "pinyin": null,
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 7,
+        "word": "presentaré",
+        "pinyin": null,
+        "meaning": "apresentarei (verbo presentar, futuro)"
+      }
+    ],
+    "id": "local-1772297139599-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: De acuerdo, entonces está resuelto.",
+    "pinyin": null,
+    "translation": "A: De acordo, então está resolvido.",
+    "tokens": [
+      "A:",
+      "De",
+      "acuerdo,",
+      "entonces",
+      "está",
+      "resuelto."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "de acuerdo",
+        "pinyin": null,
+        "meaning": "de acordo"
+      },
+      {
+        "id": 2,
+        "word": "entonces",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "resuelto",
+        "pinyin": null,
+        "meaning": "resolvido"
+      }
+    ],
+    "id": "local-1772297139599-12",
+    "language": "Espanhol"
+  }
+]

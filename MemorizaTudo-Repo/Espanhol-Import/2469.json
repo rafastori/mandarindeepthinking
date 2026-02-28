@@ -1,0 +1,820 @@
+[
+  {
+    "chinese": "A: Hola, Gerente Wang. ¿Qué opina de este borrador de diseño?",
+    "pinyin": null,
+    "translation": "A: Olá, Gerente Wang. O que você acha deste rascunho de design?",
+    "tokens": [
+      "Hola",
+      ",",
+      "Gerente",
+      "Wang",
+      ".",
+      "¿Qué",
+      "opina",
+      "de",
+      "este",
+      "borrador",
+      "de",
+      "diseño",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hola",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Gerente",
+        "pinyin": null,
+        "meaning": "Gerente"
+      },
+      {
+        "id": 3,
+        "word": "opina",
+        "pinyin": null,
+        "meaning": "opina, pensa (do verbo opinar)"
+      },
+      {
+        "id": 4,
+        "word": "borrador",
+        "pinyin": null,
+        "meaning": "rascunho, esboço"
+      },
+      {
+        "id": 5,
+        "word": "diseño",
+        "pinyin": null,
+        "meaning": "design, projeto"
+      }
+    ],
+    "id": "local-1772299616501-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No se ve tan mal, pero siempre es diferente de lo que imaginé.",
+    "pinyin": null,
+    "translation": "B: Não parece tão ruim, mas sempre é diferente do que eu imaginei.",
+    "tokens": [
+      "No",
+      "se",
+      "ve",
+      "tan",
+      "mal",
+      ",",
+      "pero",
+      "siempre",
+      "es",
+      "diferente",
+      "de",
+      "lo",
+      "que",
+      "imaginé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ve",
+        "pinyin": null,
+        "meaning": "vê, parece (do verbo ver)"
+      },
+      {
+        "id": 2,
+        "word": "mal",
+        "pinyin": null,
+        "meaning": "mal, ruim"
+      },
+      {
+        "id": 3,
+        "word": "siempre",
+        "pinyin": null,
+        "meaning": "sempre"
+      },
+      {
+        "id": 4,
+        "word": "diferente",
+        "pinyin": null,
+        "meaning": "diferente"
+      },
+      {
+        "id": 5,
+        "word": "imaginé",
+        "pinyin": null,
+        "meaning": "imaginei (do verbo imaginar)"
+      }
+    ],
+    "id": "local-1772299616501-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Puede decirme las ideas que tenga.",
+    "pinyin": null,
+    "translation": "A: Pode me dizer as ideias que tiver.",
+    "tokens": [
+      "Puede",
+      "decirme",
+      "las",
+      "ideas",
+      "que",
+      "tenga",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puede",
+        "pinyin": null,
+        "meaning": "Pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "decirme",
+        "pinyin": null,
+        "meaning": "me dizer (do verbo decir)"
+      },
+      {
+        "id": 3,
+        "word": "ideas",
+        "pinyin": null,
+        "meaning": "ideias"
+      },
+      {
+        "id": 4,
+        "word": "tenga",
+        "pinyin": null,
+        "meaning": "tenha (do verbo tener, subjuntivo)"
+      }
+    ],
+    "id": "local-1772299616501-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No puedo decir exactamente qué es. Siento que le falta algo.",
+    "pinyin": null,
+    "translation": "B: Não consigo dizer exatamente o que é. Sinto que falta algo.",
+    "tokens": [
+      "No",
+      "puedo",
+      "decir",
+      "exactamente",
+      "qué",
+      "es",
+      ".",
+      "Siento",
+      "que",
+      "le",
+      "falta",
+      "algo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "puedo",
+        "pinyin": null,
+        "meaning": "posso (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "decir",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 3,
+        "word": "exactamente",
+        "pinyin": null,
+        "meaning": "exatamente"
+      },
+      {
+        "id": 4,
+        "word": "Siento",
+        "pinyin": null,
+        "meaning": "Sinto (do verbo sentir)"
+      },
+      {
+        "id": 5,
+        "word": "falta",
+        "pinyin": null,
+        "meaning": "falta (do verbo faltar)"
+      },
+      {
+        "id": 6,
+        "word": "algo",
+        "pinyin": null,
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772299616501-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La última vez dijo que sentía que el estilo era demasiado simple, así que esta vez agregué más elementos visuales. La interacción del usuario también es más compleja. Se lo dejaré para que le eche un vistazo.",
+    "pinyin": null,
+    "translation": "A: Da última vez você disse que achava o estilo muito simples, então desta vez adicionei mais elementos visuais. A interação do usuário também é mais complexa. Vou deixar para você dar uma olhada.",
+    "tokens": [
+      "La",
+      "última",
+      "vez",
+      "dijo",
+      "que",
+      "sentía",
+      "que",
+      "el",
+      "estilo",
+      "era",
+      "demasiado",
+      "simple",
+      ",",
+      "así",
+      "que",
+      "esta",
+      "vez",
+      "agregué",
+      "más",
+      "elementos",
+      "visuales",
+      ".",
+      "La",
+      "interacción",
+      "del",
+      "usuario",
+      "también",
+      "es",
+      "más",
+      "compleja",
+      ".",
+      "Se",
+      "lo",
+      "dejaré",
+      "para",
+      "que",
+      "le",
+      "eche",
+      "un",
+      "vistazo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "última vez",
+        "pinyin": null,
+        "meaning": "última vez"
+      },
+      {
+        "id": 2,
+        "word": "dijo",
+        "pinyin": null,
+        "meaning": "disse (do verbo decir)"
+      },
+      {
+        "id": 3,
+        "word": "sentía",
+        "pinyin": null,
+        "meaning": "sentia, achava (do verbo sentir)"
+      },
+      {
+        "id": 4,
+        "word": "estilo",
+        "pinyin": null,
+        "meaning": "estilo"
+      },
+      {
+        "id": 5,
+        "word": "demasiado",
+        "pinyin": null,
+        "meaning": "demasiado, muito"
+      },
+      {
+        "id": 6,
+        "word": "simple",
+        "pinyin": null,
+        "meaning": "simples"
+      },
+      {
+        "id": 7,
+        "word": "así que",
+        "pinyin": null,
+        "meaning": "então, por isso"
+      },
+      {
+        "id": 8,
+        "word": "agregué",
+        "pinyin": null,
+        "meaning": "adicionei (do verbo agregar)"
+      },
+      {
+        "id": 9,
+        "word": "elementos",
+        "pinyin": null,
+        "meaning": "elementos"
+      },
+      {
+        "id": 10,
+        "word": "visuales",
+        "pinyin": null,
+        "meaning": "visuais"
+      },
+      {
+        "id": 11,
+        "word": "interacción",
+        "pinyin": null,
+        "meaning": "interação"
+      },
+      {
+        "id": 12,
+        "word": "usuario",
+        "pinyin": null,
+        "meaning": "usuário"
+      },
+      {
+        "id": 13,
+        "word": "también",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 14,
+        "word": "compleja",
+        "pinyin": null,
+        "meaning": "complexa"
+      },
+      {
+        "id": 15,
+        "word": "dejaré",
+        "pinyin": null,
+        "meaning": "deixarei (do verbo dejar)"
+      },
+      {
+        "id": 16,
+        "word": "eche un vistazo",
+        "pinyin": null,
+        "meaning": "dê uma olhada (do verbo echar un vistazo)"
+      }
+    ],
+    "id": "local-1772299616501-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es demasiado complicado. ¿A los usuarios no les gustará?",
+    "pinyin": null,
+    "translation": "B: É muito complicado. Os usuários não gostarão?",
+    "tokens": [
+      "Es",
+      "demasiado",
+      "complicado",
+      ".",
+      "¿A",
+      "los",
+      "usuarios",
+      "no",
+      "les",
+      "gustará",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "demasiado",
+        "pinyin": null,
+        "meaning": "demasiado, muito"
+      },
+      {
+        "id": 2,
+        "word": "complicado",
+        "pinyin": null,
+        "meaning": "complicado"
+      },
+      {
+        "id": 3,
+        "word": "usuarios",
+        "pinyin": null,
+        "meaning": "usuários"
+      },
+      {
+        "id": 4,
+        "word": "gustará",
+        "pinyin": null,
+        "meaning": "gostará (do verbo gustar)"
+      }
+    ],
+    "id": "local-1772299616501-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces cambiaré esta parte, y eso le quitará un poco de la complejidad.",
+    "pinyin": null,
+    "translation": "A: Então vou mudar esta parte, e isso tirará um pouco da complexidade.",
+    "tokens": [
+      "Entonces",
+      "cambiaré",
+      "esta",
+      "parte",
+      ",",
+      "y",
+      "eso",
+      "le",
+      "quitará",
+      "un",
+      "poco",
+      "de",
+      "la",
+      "complejidad",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cambiaré",
+        "pinyin": null,
+        "meaning": "mudarei (do verbo cambiar)"
+      },
+      {
+        "id": 3,
+        "word": "parte",
+        "pinyin": null,
+        "meaning": "parte"
+      },
+      {
+        "id": 4,
+        "word": "quitará",
+        "pinyin": null,
+        "meaning": "tirará (do verbo quitar)"
+      },
+      {
+        "id": 5,
+        "word": "un poco",
+        "pinyin": null,
+        "meaning": "um pouco"
+      },
+      {
+        "id": 6,
+        "word": "complejidad",
+        "pinyin": null,
+        "meaning": "complexidade"
+      }
+    ],
+    "id": "local-1772299616501-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Este color...",
+    "pinyin": null,
+    "translation": "B: Esta cor...",
+    "tokens": [
+      "Este",
+      "color",
+      "..."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "color",
+        "pinyin": null,
+        "meaning": "cor"
+      }
+    ],
+    "id": "local-1772299616501-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Este es naranja. Son los tonos cálidos que le gustan.",
+    "pinyin": null,
+    "translation": "A: Este é laranja. São os tons quentes que você gosta.",
+    "tokens": [
+      "Este",
+      "es",
+      "naranja",
+      ".",
+      "Son",
+      "los",
+      "tonos",
+      "cálidos",
+      "que",
+      "le",
+      "gustan",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "naranja",
+        "pinyin": null,
+        "meaning": "laranja"
+      },
+      {
+        "id": 2,
+        "word": "tonos",
+        "pinyin": null,
+        "meaning": "tons"
+      },
+      {
+        "id": 3,
+        "word": "cálidos",
+        "pinyin": null,
+        "meaning": "quentes"
+      },
+      {
+        "id": 4,
+        "word": "gustan",
+        "pinyin": null,
+        "meaning": "gostam (do verbo gustar)"
+      }
+    ],
+    "id": "local-1772299616501-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Aunque me gustan los colores cálidos, este parece demasiado brillante.",
+    "pinyin": null,
+    "translation": "B: Embora eu goste de cores quentes, este parece muito brilhante.",
+    "tokens": [
+      "Aunque",
+      "me",
+      "gustan",
+      "los",
+      "colores",
+      "cálidos",
+      ",",
+      "este",
+      "parece",
+      "demasiado",
+      "brillante",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aunque",
+        "pinyin": null,
+        "meaning": "Embora"
+      },
+      {
+        "id": 2,
+        "word": "gustan",
+        "pinyin": null,
+        "meaning": "gostam (do verbo gustar)"
+      },
+      {
+        "id": 3,
+        "word": "colores",
+        "pinyin": null,
+        "meaning": "cores"
+      },
+      {
+        "id": 4,
+        "word": "cálidos",
+        "pinyin": null,
+        "meaning": "quentes"
+      },
+      {
+        "id": 5,
+        "word": "parece",
+        "pinyin": null,
+        "meaning": "parece (do verbo parecer)"
+      },
+      {
+        "id": 6,
+        "word": "demasiado",
+        "pinyin": null,
+        "meaning": "demasiado, muito"
+      },
+      {
+        "id": 7,
+        "word": "brillante",
+        "pinyin": null,
+        "meaning": "brilhante"
+      }
+    ],
+    "id": "local-1772299616501-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh, de acuerdo. Entonces lo cambiaré a algo más color crema. ¿Qué le parece?",
+    "pinyin": null,
+    "translation": "A: Ah, de acordo. Então vou mudar para algo mais cor de creme. O que você acha?",
+    "tokens": [
+      "Oh",
+      ",",
+      "de",
+      "acuerdo",
+      ".",
+      "Entonces",
+      "lo",
+      "cambiaré",
+      "a",
+      "algo",
+      "más",
+      "color",
+      "crema",
+      ".",
+      "¿Qué",
+      "le",
+      "parece",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "de acuerdo",
+        "pinyin": null,
+        "meaning": "de acordo"
+      },
+      {
+        "id": 2,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "cambiaré",
+        "pinyin": null,
+        "meaning": "mudarei (do verbo cambiar)"
+      },
+      {
+        "id": 4,
+        "word": "algo",
+        "pinyin": null,
+        "meaning": "algo"
+      },
+      {
+        "id": 5,
+        "word": "más",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 6,
+        "word": "color crema",
+        "pinyin": null,
+        "meaning": "cor de creme"
+      },
+      {
+        "id": 7,
+        "word": "parece",
+        "pinyin": null,
+        "meaning": "parece (do verbo parecer)"
+      }
+    ],
+    "id": "local-1772299616501-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Está bien. Pero esta ya es la quinta versión. Me temo que no hay suficiente tiempo. ¿Qué tal si lo olvidamos y usamos la primera versión después de todo?",
+    "pinyin": null,
+    "translation": "B: Está bem. Mas esta já é a quinta versão. Temo que não haja tempo suficiente. Que tal se esquecermos isso e usarmos a primeira versão afinal?",
+    "tokens": [
+      "Está",
+      "bien",
+      ".",
+      "Pero",
+      "esta",
+      "ya",
+      "es",
+      "la",
+      "quinta",
+      "versión",
+      ".",
+      "Me",
+      "temo",
+      "que",
+      "no",
+      "hay",
+      "suficiente",
+      "tiempo",
+      ".",
+      "¿Qué",
+      "tal",
+      "si",
+      "lo",
+      "olvidamos",
+      "y",
+      "usamos",
+      "la",
+      "primera",
+      "versión",
+      "después",
+      "de",
+      "todo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Está bien",
+        "pinyin": null,
+        "meaning": "Está bem, Ok"
+      },
+      {
+        "id": 2,
+        "word": "quinta",
+        "pinyin": null,
+        "meaning": "quinta"
+      },
+      {
+        "id": 3,
+        "word": "versión",
+        "pinyin": null,
+        "meaning": "versão"
+      },
+      {
+        "id": 4,
+        "word": "Me temo que",
+        "pinyin": null,
+        "meaning": "Temo que"
+      },
+      {
+        "id": 5,
+        "word": "hay",
+        "pinyin": null,
+        "meaning": "há, existe (do verbo haber)"
+      },
+      {
+        "id": 6,
+        "word": "suficiente",
+        "pinyin": null,
+        "meaning": "suficiente"
+      },
+      {
+        "id": 7,
+        "word": "tiempo",
+        "pinyin": null,
+        "meaning": "tempo"
+      },
+      {
+        "id": 8,
+        "word": "Qué tal si",
+        "pinyin": null,
+        "meaning": "Que tal se"
+      },
+      {
+        "id": 9,
+        "word": "olvidamos",
+        "pinyin": null,
+        "meaning": "esquecemos (do verbo olvidar)"
+      },
+      {
+        "id": 10,
+        "word": "usamos",
+        "pinyin": null,
+        "meaning": "usamos (do verbo usar)"
+      },
+      {
+        "id": 11,
+        "word": "primera",
+        "pinyin": null,
+        "meaning": "primeira"
+      },
+      {
+        "id": 12,
+        "word": "después de todo",
+        "pinyin": null,
+        "meaning": "afinal de contas"
+      }
+    ],
+    "id": "local-1772299616501-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Eh? De acuerdo, de acuerdo.",
+    "pinyin": null,
+    "translation": "A: Hã? De acordo, de acordo.",
+    "tokens": [
+      "¿Eh",
+      "?",
+      "De",
+      "acuerdo",
+      ",",
+      "de",
+      "acuerdo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh",
+        "pinyin": null,
+        "meaning": "Hã"
+      },
+      {
+        "id": 2,
+        "word": "De acuerdo",
+        "pinyin": null,
+        "meaning": "De acordo"
+      }
+    ],
+    "id": "local-1772299616501-12",
+    "language": "Espanhol"
+  }
+]

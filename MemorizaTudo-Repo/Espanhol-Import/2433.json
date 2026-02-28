@@ -1,0 +1,524 @@
+[
+  {
+    "chinese": "A: Director Chen, gracias por encontrar tiempo en su apretada agenda para invitarme a cenar.",
+    "pinyin": "",
+    "translation": "A: Diretor Chen, obrigado por encontrar tempo em sua agenda apertada para me convidar para jantar.",
+    "tokens": [
+      "A:",
+      "Director",
+      "Chen,",
+      "gracias",
+      "por",
+      "encontrar",
+      "tiempo",
+      "en",
+      "su",
+      "apretada",
+      "agenda",
+      "para",
+      "invitarme",
+      "a",
+      "cenar."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Director",
+        "pinyin": "",
+        "meaning": "Diretor"
+      },
+      {
+        "id": 3,
+        "word": "gracias",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 5,
+        "word": "encontrar",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 6,
+        "word": "tiempo",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 9,
+        "word": "apretada",
+        "pinyin": "",
+        "meaning": "apertada"
+      },
+      {
+        "id": 10,
+        "word": "agenda",
+        "pinyin": "",
+        "meaning": "agenda"
+      },
+      {
+        "id": 12,
+        "word": "invitarme",
+        "pinyin": "",
+        "meaning": "me convidar"
+      },
+      {
+        "id": 14,
+        "word": "cenar",
+        "pinyin": "",
+        "meaning": "jantar"
+      }
+    ],
+    "id": "local-1772297328961-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No seas tan educado. Es algo que debo hacer.",
+    "pinyin": "",
+    "translation": "B: Não seja tão educado. É algo que devo fazer.",
+    "tokens": [
+      "B:",
+      "No",
+      "seas",
+      "tan",
+      "educado.",
+      "Es",
+      "algo",
+      "que",
+      "debo",
+      "hacer."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "seas",
+        "pinyin": "",
+        "meaning": "seja (do verbo ser)"
+      },
+      {
+        "id": 4,
+        "word": "educado",
+        "pinyin": "",
+        "meaning": "educado"
+      },
+      {
+        "id": 6,
+        "word": "algo",
+        "pinyin": "",
+        "meaning": "algo"
+      },
+      {
+        "id": 8,
+        "word": "debo",
+        "pinyin": "",
+        "meaning": "devo (do verbo deber)"
+      },
+      {
+        "id": 9,
+        "word": "hacer",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772297328961-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Mira el menú. ¿Qué te gustaría comer?",
+    "pinyin": "",
+    "translation": "Olhe o cardápio. O que você gostaria de comer?",
+    "tokens": [
+      "Mira",
+      "el",
+      "menú.",
+      "¿Qué",
+      "te",
+      "gustaría",
+      "comer?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Mira",
+        "pinyin": "",
+        "meaning": "Olhe (do verbo mirar)"
+      },
+      {
+        "id": 2,
+        "word": "menú",
+        "pinyin": "",
+        "meaning": "cardápio"
+      },
+      {
+        "id": 5,
+        "word": "gustaría",
+        "pinyin": "",
+        "meaning": "gostaria (do verbo gustar)"
+      },
+      {
+        "id": 6,
+        "word": "comer",
+        "pinyin": "",
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772297328961-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Cualquier cosa. Tú pide.",
+    "pinyin": "",
+    "translation": "A: Qualquer coisa. Você pede.",
+    "tokens": [
+      "A:",
+      "Cualquier",
+      "cosa.",
+      "Tú",
+      "pide."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cualquier",
+        "pinyin": "",
+        "meaning": "Qualquer"
+      },
+      {
+        "id": 2,
+        "word": "cosa",
+        "pinyin": "",
+        "meaning": "coisa"
+      },
+      {
+        "id": 4,
+        "word": "pide",
+        "pinyin": "",
+        "meaning": "peça/pede (do verbo pedir)"
+      }
+    ],
+    "id": "local-1772297328961-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. ¿Cuándo llegaste a Shanghái?",
+    "pinyin": "",
+    "translation": "B: De acordo. Quando você chegou a Shanghái?",
+    "tokens": [
+      "B:",
+      "De",
+      "acuerdo.",
+      "¿Cuándo",
+      "llegaste",
+      "a",
+      "Shanghái?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 3,
+        "word": "Cuándo",
+        "pinyin": "",
+        "meaning": "Quando"
+      },
+      {
+        "id": 4,
+        "word": "llegaste",
+        "pinyin": "",
+        "meaning": "você chegou (do verbo llegar)"
+      }
+    ],
+    "id": "local-1772297328961-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Anoche.",
+    "pinyin": "",
+    "translation": "A: Ontem à noite.",
+    "tokens": [
+      "A:",
+      "Anoche."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Anoche",
+        "pinyin": "",
+        "meaning": "Ontem à noite"
+      }
+    ],
+    "id": "local-1772297328961-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh, entonces debes estar cansado ahora.",
+    "pinyin": "",
+    "translation": "B: Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "entonces",
+      "debes",
+      "estar",
+      "cansado",
+      "ahora."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "debes",
+        "pinyin": "",
+        "meaning": "você deve (do verbo deber)"
+      },
+      {
+        "id": 4,
+        "word": "estar",
+        "pinyin": "",
+        "meaning": "estar"
+      },
+      {
+        "id": 5,
+        "word": "cansado",
+        "pinyin": "",
+        "meaning": "cansado"
+      },
+      {
+        "id": 6,
+        "word": "ahora",
+        "pinyin": "",
+        "meaning": "agora"
+      }
+    ],
+    "id": "local-1772297328961-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Suelo viajar mucho por negocios, así que estoy acostumbrado.",
+    "pinyin": "",
+    "translation": "A: Costumo viajar muito a negócios, então estou acostumado.",
+    "tokens": [
+      "A:",
+      "Suelo",
+      "viajar",
+      "mucho",
+      "por",
+      "negocios,",
+      "así",
+      "que",
+      "estoy",
+      "acostumbrado."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Suelo",
+        "pinyin": "",
+        "meaning": "Costumo (do verbo soler)"
+      },
+      {
+        "id": 2,
+        "word": "viajar",
+        "pinyin": "",
+        "meaning": "viajar"
+      },
+      {
+        "id": 3,
+        "word": "mucho",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "negocios",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 6,
+        "word": "así que",
+        "pinyin": "",
+        "meaning": "então/por isso"
+      },
+      {
+        "id": 8,
+        "word": "estoy",
+        "pinyin": "",
+        "meaning": "estou (do verbo estar)"
+      },
+      {
+        "id": 9,
+        "word": "acostumbrado",
+        "pinyin": "",
+        "meaning": "acostumado"
+      }
+    ],
+    "id": "local-1772297328961-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Te daré la propuesta para que la veas.",
+    "pinyin": "",
+    "translation": "Vou te dar a proposta para você ver.",
+    "tokens": [
+      "Te",
+      "daré",
+      "la",
+      "propuesta",
+      "para",
+      "que",
+      "la",
+      "veas."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "daré",
+        "pinyin": "",
+        "meaning": "darei (do verbo dar)"
+      },
+      {
+        "id": 3,
+        "word": "propuesta",
+        "pinyin": "",
+        "meaning": "proposta"
+      },
+      {
+        "id": 7,
+        "word": "veas",
+        "pinyin": "",
+        "meaning": "veja (do verbo ver)"
+      }
+    ],
+    "id": "local-1772297328961-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No hay prisa. Podemos comer primero y hablar cuando terminemos.",
+    "pinyin": "",
+    "translation": "B: Não há pressa. Podemos comer primeiro e conversar quando terminarmos.",
+    "tokens": [
+      "B:",
+      "No",
+      "hay",
+      "prisa.",
+      "Podemos",
+      "comer",
+      "primero",
+      "y",
+      "hablar",
+      "cuando",
+      "terminemos."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No hay prisa",
+        "pinyin": "",
+        "meaning": "Não há pressa"
+      },
+      {
+        "id": 4,
+        "word": "Podemos",
+        "pinyin": "",
+        "meaning": "Podemos (do verbo poder)"
+      },
+      {
+        "id": 5,
+        "word": "comer",
+        "pinyin": "",
+        "meaning": "comer"
+      },
+      {
+        "id": 6,
+        "word": "primero",
+        "pinyin": "",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 8,
+        "word": "hablar",
+        "pinyin": "",
+        "meaning": "conversar"
+      },
+      {
+        "id": 9,
+        "word": "cuando",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 10,
+        "word": "terminemos",
+        "pinyin": "",
+        "meaning": "terminarmos (do verbo terminar)"
+      }
+    ],
+    "id": "local-1772297328961-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: De acuerdo.",
+    "pinyin": "",
+    "translation": "A: De acordo.",
+    "tokens": [
+      "A:",
+      "De",
+      "acuerdo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      }
+    ],
+    "id": "local-1772297328961-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Camarero. Nos gustaría ordenar.",
+    "pinyin": "",
+    "translation": "B: Garçom. Gostaríamos de pedir.",
+    "tokens": [
+      "B:",
+      "Camarero.",
+      "Nos",
+      "gustaría",
+      "ordenar."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Camarero",
+        "pinyin": "",
+        "meaning": "Garçom"
+      },
+      {
+        "id": 3,
+        "word": "gustaría",
+        "pinyin": "",
+        "meaning": "gostaríamos (do verbo gustar, aqui na forma 'nos gustaría')"
+      },
+      {
+        "id": 4,
+        "word": "ordenar",
+        "pinyin": "",
+        "meaning": "pedir/ordenar"
+      }
+    ],
+    "id": "local-1772297328961-11",
+    "language": "Espanhol"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "chinese": "This is a master test text.",
+    "pinyin": null,
+    "translation": "Este é um texto mestre de teste.",
+    "tokens": [
+      "This",
+      "is",
+      "a",
+      "master",
+      "test",
+      "text"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "master",
+        "pinyin": null,
+        "meaning": "mestre"
+      },
+      {
+        "id": 2,
+        "word": "test",
+        "pinyin": null,
+        "meaning": "teste"
+      },
+      {
+        "id": 3,
+        "word": "text",
+        "pinyin": null,
+        "meaning": "texto"
+      }
+    ],
+    "id": "local-1772294133400-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It is a very simple text for testing the intelligent cascading sync pipeline from English to all other languages.",
+    "pinyin": null,
+    "translation": "É um texto muito simples para testar o pipeline de sincronização em cascata inteligente do inglês para todos os outros idiomas.",
+    "tokens": [
+      "It",
+      "is",
+      "a",
+      "very",
+      "simple",
+      "text",
+      "for",
+      "testing",
+      "the",
+      "intelligent",
+      "cascading",
+      "sync",
+      "pipeline",
+      "from",
+      "English",
+      "to",
+      "all",
+      "other",
+      "languages"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "simple",
+        "pinyin": null,
+        "meaning": "simples"
+      },
+      {
+        "id": 2,
+        "word": "text",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 3,
+        "word": "testing",
+        "pinyin": null,
+        "meaning": "testando"
+      },
+      {
+        "id": 4,
+        "word": "intelligent",
+        "pinyin": null,
+        "meaning": "inteligente"
+      },
+      {
+        "id": 5,
+        "word": "cascading",
+        "pinyin": null,
+        "meaning": "em cascata"
+      },
+      {
+        "id": 6,
+        "word": "sync",
+        "pinyin": null,
+        "meaning": "sincronização"
+      },
+      {
+        "id": 7,
+        "word": "pipeline",
+        "pinyin": null,
+        "meaning": "pipeline"
+      },
+      {
+        "id": 8,
+        "word": "English",
+        "pinyin": null,
+        "meaning": "Inglês"
+      },
+      {
+        "id": 9,
+        "word": "languages",
+        "pinyin": null,
+        "meaning": "idiomas"
+      }
+    ],
+    "id": "local-1772294133400-1",
+    "language": "Inglês"
+  }
+]

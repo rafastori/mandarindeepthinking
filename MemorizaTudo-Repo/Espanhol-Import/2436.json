@@ -1,0 +1,406 @@
+[
+  {
+    "chinese": "A: Cariño, pronto nos quedaremos sin arroz y aceite.",
+    "pinyin": "",
+    "translation": "A: Amor, em breve ficaremos sem arroz e óleo.",
+    "tokens": [
+      "Cariño",
+      ",",
+      "pronto",
+      "nos",
+      "quedaremos",
+      "sin",
+      "arroz",
+      "y",
+      "aceite",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cariño",
+        "pinyin": "",
+        "meaning": "Amor / Querido(a)"
+      },
+      {
+        "id": 2,
+        "word": "pronto",
+        "pinyin": "",
+        "meaning": "em breve / logo"
+      },
+      {
+        "id": 3,
+        "word": "quedaremos sin",
+        "pinyin": "",
+        "meaning": "ficaremos sem"
+      },
+      {
+        "id": 4,
+        "word": "arroz",
+        "pinyin": "",
+        "meaning": "arroz"
+      },
+      {
+        "id": 5,
+        "word": "aceite",
+        "pinyin": "",
+        "meaning": "óleo"
+      }
+    ],
+    "id": "local-1772297472728-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Oh? Entonces compraré en Yihaodian. ¿Qué más necesitamos comprar?",
+    "pinyin": "",
+    "translation": "B: Ah? Então comprarei no Yihaodian. O que mais precisamos comprar?",
+    "tokens": [
+      "¿",
+      "Oh",
+      "?",
+      "Entonces",
+      "compraré",
+      "en",
+      "Yihaodian",
+      ".",
+      "¿",
+      "Qué",
+      "más",
+      "necesitamos",
+      "comprar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "compraré",
+        "pinyin": "",
+        "meaning": "comprarei"
+      },
+      {
+        "id": 3,
+        "word": "necesitamos",
+        "pinyin": "",
+        "meaning": "precisamos"
+      },
+      {
+        "id": 4,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772297472728-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: También necesitamos comprar papel higiénico.",
+    "pinyin": "",
+    "translation": "A: Também precisamos comprar papel higiênico.",
+    "tokens": [
+      "También",
+      "necesitamos",
+      "comprar",
+      "papel",
+      "higiénico",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "También",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 2,
+        "word": "papel higiénico",
+        "pinyin": "",
+        "meaning": "papel higiênico"
+      }
+    ],
+    "id": "local-1772297472728-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Tenemos jabón para platos y detergente?",
+    "pinyin": "",
+    "translation": "B: Temos sabão para louça e detergente?",
+    "tokens": [
+      "¿",
+      "Tenemos",
+      "jabón",
+      "para",
+      "platos",
+      "y",
+      "detergente",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tenemos",
+        "pinyin": "",
+        "meaning": "Temos"
+      },
+      {
+        "id": 2,
+        "word": "jabón para platos",
+        "pinyin": "",
+        "meaning": "sabão para louça"
+      },
+      {
+        "id": 3,
+        "word": "detergente",
+        "pinyin": "",
+        "meaning": "detergente"
+      }
+    ],
+    "id": "local-1772297472728-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. Oh, también necesitamos comprar leche en polvo y pañales para el bebé.",
+    "pinyin": "",
+    "translation": "A: Sim. Ah, também precisamos comprar leite em pó e fraldas para o bebê.",
+    "tokens": [
+      "Sí",
+      ".",
+      "Oh",
+      ",",
+      "también",
+      "necesitamos",
+      "comprar",
+      "leche",
+      "en",
+      "polvo",
+      "y",
+      "pañales",
+      "para",
+      "el",
+      "bebé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "leche en polvo",
+        "pinyin": "",
+        "meaning": "leite em pó"
+      },
+      {
+        "id": 3,
+        "word": "pañales",
+        "pinyin": "",
+        "meaning": "fraldas"
+      },
+      {
+        "id": 4,
+        "word": "bebé",
+        "pinyin": "",
+        "meaning": "bebê"
+      }
+    ],
+    "id": "local-1772297472728-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. ¿Tenemos aperitivos en casa?",
+    "pinyin": "",
+    "translation": "B: De acordo. Temos petiscos em casa?",
+    "tokens": [
+      "De",
+      "acuerdo",
+      ".",
+      "¿",
+      "Tenemos",
+      "aperitivos",
+      "en",
+      "casa",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 2,
+        "word": "aperitivos",
+        "pinyin": "",
+        "meaning": "petiscos / lanches"
+      },
+      {
+        "id": 3,
+        "word": "en casa",
+        "pinyin": "",
+        "meaning": "em casa"
+      }
+    ],
+    "id": "local-1772297472728-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí.",
+    "pinyin": "",
+    "translation": "A: Sim.",
+    "tokens": [
+      "Sí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772297472728-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Tenemos fideos instantáneos?",
+    "pinyin": "",
+    "translation": "B: Temos macarrão instantâneo?",
+    "tokens": [
+      "¿",
+      "Tenemos",
+      "fideos",
+      "instantáneos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fideos instantáneos",
+        "pinyin": "",
+        "meaning": "macarrão instantâneo"
+      }
+    ],
+    "id": "local-1772297472728-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No compres fideos instantáneos. No son saludables.",
+    "pinyin": "",
+    "translation": "A: Não compre macarrão instantâneo. Não são saudáveis.",
+    "tokens": [
+      "No",
+      "compres",
+      "fideos",
+      "instantáneos",
+      ".",
+      "No",
+      "son",
+      "saludables",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No compres",
+        "pinyin": "",
+        "meaning": "Não compre"
+      },
+      {
+        "id": 2,
+        "word": "fideos instantáneos",
+        "pinyin": "",
+        "meaning": "macarrão instantâneo"
+      },
+      {
+        "id": 3,
+        "word": "saludables",
+        "pinyin": "",
+        "meaning": "saudáveis"
+      }
+    ],
+    "id": "local-1772297472728-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo, de acuerdo. Oye, ya está todo comprado. Será entregado mañana.",
+    "pinyin": "",
+    "translation": "B: De acordo, de acordo. Ei, já está tudo comprado. Será entregue amanhã.",
+    "tokens": [
+      "De",
+      "acuerdo",
+      ",",
+      "de",
+      "acuerdo",
+      ".",
+      "Oye",
+      ",",
+      "ya",
+      "está",
+      "todo",
+      "comprado",
+      ".",
+      "Será",
+      "entregado",
+      "mañana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei / Ouça"
+      },
+      {
+        "id": 3,
+        "word": "ya",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 4,
+        "word": "todo",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 5,
+        "word": "comprado",
+        "pinyin": "",
+        "meaning": "comprado"
+      },
+      {
+        "id": 6,
+        "word": "Será entregado",
+        "pinyin": "",
+        "meaning": "Será entregue"
+      },
+      {
+        "id": 7,
+        "word": "mañana",
+        "pinyin": "",
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772297472728-9",
+    "language": "Espanhol"
+  }
+]

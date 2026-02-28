@@ -1,0 +1,567 @@
+[
+  {
+    "chinese": "A: Honey, your phone is ringing.",
+    "pinyin": "",
+    "translation": "A: Amor, seu telefone está tocando.",
+    "tokens": [
+      "Honey",
+      "your",
+      "phone",
+      "is",
+      "ringing"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Honey",
+        "pinyin": "",
+        "meaning": "Querido(a), amor"
+      },
+      {
+        "id": 2,
+        "word": "phone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 3,
+        "word": "ringing",
+        "pinyin": "",
+        "meaning": "tocando"
+      }
+    ],
+    "id": "local-1772292671827-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's a text message.",
+    "pinyin": "",
+    "translation": "É uma mensagem de texto.",
+    "tokens": [
+      "It's",
+      "a",
+      "text",
+      "message"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "text message",
+        "pinyin": "",
+        "meaning": "mensagem de texto"
+      }
+    ],
+    "id": "local-1772292671827-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I'm in the bathroom.",
+    "pinyin": "",
+    "translation": "B: Estou no banheiro.",
+    "tokens": [
+      "I'm",
+      "in",
+      "the",
+      "bathroom"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bathroom",
+        "pinyin": "",
+        "meaning": "banheiro"
+      }
+    ],
+    "id": "local-1772292671827-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Read it for me!",
+    "pinyin": "",
+    "translation": "Leia para mim!",
+    "tokens": [
+      "Read",
+      "it",
+      "for",
+      "me"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Read",
+        "pinyin": "",
+        "meaning": "Ler"
+      }
+    ],
+    "id": "local-1772292671827-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: On the 15th at 11:08, your bank card with the last four digits 8899 was charged 35,000 yuan renminbi.",
+    "pinyin": "",
+    "translation": "A: No dia 15, às 11:08, seu cartão de banco com os quatro últimos dígitos 8899 foi cobrado em 35.000 yuans renminbi.",
+    "tokens": [
+      "On",
+      "the",
+      "15th",
+      "at",
+      "11:08",
+      "your",
+      "bank",
+      "card",
+      "with",
+      "the",
+      "last",
+      "four",
+      "digits",
+      "8899",
+      "was",
+      "charged",
+      "35,000",
+      "yuan",
+      "renminbi"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "15th",
+        "pinyin": "",
+        "meaning": "décimo quinto, dia 15"
+      },
+      {
+        "id": 2,
+        "word": "bank card",
+        "pinyin": "",
+        "meaning": "cartão de banco"
+      },
+      {
+        "id": 3,
+        "word": "digits",
+        "pinyin": "",
+        "meaning": "dígitos"
+      },
+      {
+        "id": 4,
+        "word": "charged",
+        "pinyin": "",
+        "meaning": "cobrado"
+      },
+      {
+        "id": 5,
+        "word": "yuan renminbi",
+        "pinyin": "",
+        "meaning": "yuan renminbi (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772292671827-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Huh?",
+    "pinyin": "",
+    "translation": "Hã?",
+    "tokens": [
+      "Huh"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Huh",
+        "pinyin": "",
+        "meaning": "Hã? (expressão de surpresa/confusão)"
+      }
+    ],
+    "id": "local-1772292671827-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What do we do?",
+    "pinyin": "",
+    "translation": "O que fazemos?",
+    "tokens": [
+      "What",
+      "do",
+      "we",
+      "do"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "do",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292671827-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You're at home.",
+    "pinyin": "",
+    "translation": "Você está em casa.",
+    "tokens": [
+      "You're",
+      "at",
+      "home"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "home",
+        "pinyin": "",
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772292671827-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "How can you receive a notice that your credit card has been charged?",
+    "pinyin": "",
+    "translation": "Como você pode receber um aviso de que seu cartão de crédito foi cobrado?",
+    "tokens": [
+      "How",
+      "can",
+      "you",
+      "receive",
+      "a",
+      "notice",
+      "that",
+      "your",
+      "credit",
+      "card",
+      "has",
+      "been",
+      "charged"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "receive",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 2,
+        "word": "notice",
+        "pinyin": "",
+        "meaning": "aviso, notificação"
+      },
+      {
+        "id": 3,
+        "word": "credit card",
+        "pinyin": "",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 4,
+        "word": "charged",
+        "pinyin": "",
+        "meaning": "cobrado"
+      }
+    ],
+    "id": "local-1772292671827-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What?!",
+    "pinyin": "",
+    "translation": "B: O quê?!",
+    "tokens": [
+      "What"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What",
+        "pinyin": "",
+        "meaning": "O quê?"
+      }
+    ],
+    "id": "local-1772292671827-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Quick, let me see that!",
+    "pinyin": "",
+    "translation": "Rápido, deixe-me ver isso!",
+    "tokens": [
+      "Quick",
+      "let",
+      "me",
+      "see",
+      "that"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quick",
+        "pinyin": "",
+        "meaning": "Rápido"
+      },
+      {
+        "id": 2,
+        "word": "see",
+        "pinyin": "",
+        "meaning": "ver"
+      }
+    ],
+    "id": "local-1772292671827-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "My god!",
+    "pinyin": "",
+    "translation": "Meu Deus!",
+    "tokens": [
+      "My",
+      "god"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "My god",
+        "pinyin": "",
+        "meaning": "Meu Deus!"
+      }
+    ],
+    "id": "local-1772292671827-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "When did I spend so much money?",
+    "pinyin": "",
+    "translation": "Quando eu gastei tanto dinheiro?",
+    "tokens": [
+      "When",
+      "did",
+      "I",
+      "spend",
+      "so",
+      "much",
+      "money"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "spend",
+        "pinyin": "",
+        "meaning": "gastar"
+      },
+      {
+        "id": 2,
+        "word": "money",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772292671827-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Could it be that someone stole it and used it?",
+    "pinyin": "",
+    "translation": "A: Será que alguém roubou e usou?",
+    "tokens": [
+      "Could",
+      "it",
+      "be",
+      "that",
+      "someone",
+      "stole",
+      "it",
+      "and",
+      "used",
+      "it"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stole",
+        "pinyin": "",
+        "meaning": "roubou (passado de 'steal')"
+      },
+      {
+        "id": 2,
+        "word": "used",
+        "pinyin": "",
+        "meaning": "usou (passado de 'use')"
+      }
+    ],
+    "id": "local-1772292671827-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Huh?",
+    "pinyin": "",
+    "translation": "B: Hã?",
+    "tokens": [
+      "Huh"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Huh",
+        "pinyin": "",
+        "meaning": "Hã?"
+      }
+    ],
+    "id": "local-1772292671827-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Then what do I do now, honey?",
+    "pinyin": "",
+    "translation": "Então o que eu faço agora, amor?",
+    "tokens": [
+      "Then",
+      "what",
+      "do",
+      "I",
+      "do",
+      "now",
+      "honey"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "now",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "honey",
+        "pinyin": "",
+        "meaning": "amor, querido(a)"
+      }
+    ],
+    "id": "local-1772292671827-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Honey, don't worry.",
+    "pinyin": "",
+    "translation": "A: Amor, não se preocupe.",
+    "tokens": [
+      "Honey",
+      "don't",
+      "worry"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Honey",
+        "pinyin": "",
+        "meaning": "Amor, querido(a)"
+      },
+      {
+        "id": 2,
+        "word": "worry",
+        "pinyin": "",
+        "meaning": "preocupar-se"
+      }
+    ],
+    "id": "local-1772292671827-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "We just give the bank a call and freeze the account, then file a police report.",
+    "pinyin": "",
+    "translation": "Nós apenas ligamos para o banco e congelamos a conta, depois registramos um boletim de ocorrência.",
+    "tokens": [
+      "We",
+      "just",
+      "give",
+      "the",
+      "bank",
+      "a",
+      "call",
+      "and",
+      "freeze",
+      "the",
+      "account",
+      "then",
+      "file",
+      "a",
+      "police",
+      "report"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bank",
+        "pinyin": "",
+        "meaning": "banco"
+      },
+      {
+        "id": 2,
+        "word": "call",
+        "pinyin": "",
+        "meaning": "telefonema, ligar"
+      },
+      {
+        "id": 3,
+        "word": "freeze",
+        "pinyin": "",
+        "meaning": "congelar"
+      },
+      {
+        "id": 4,
+        "word": "account",
+        "pinyin": "",
+        "meaning": "conta"
+      },
+      {
+        "id": 5,
+        "word": "file a police report",
+        "pinyin": "",
+        "meaning": "registrar um boletim de ocorrência"
+      }
+    ],
+    "id": "local-1772292671827-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: No wonder my eye is twitching today!",
+    "pinyin": "",
+    "translation": "B: Não é à toa que meu olho está tremendo hoje!",
+    "tokens": [
+      "No",
+      "wonder",
+      "my",
+      "eye",
+      "is",
+      "twitching",
+      "today"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "no wonder",
+        "pinyin": "",
+        "meaning": "não é à toa, não admira"
+      },
+      {
+        "id": 2,
+        "word": "eye",
+        "pinyin": "",
+        "meaning": "olho"
+      },
+      {
+        "id": 3,
+        "word": "twitching",
+        "pinyin": "",
+        "meaning": "tremendo, contraindo involuntariamente"
+      },
+      {
+        "id": 4,
+        "word": "today",
+        "pinyin": "",
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772292671827-18",
+    "language": "Inglês"
+  }
+]

@@ -1,0 +1,790 @@
+[
+  {
+    "chinese": "A: 今週末、赤ちゃん用のチャイルドシートを買いにお店に行きましょう。",
+    "pinyin": null,
+    "translation": "A: Neste fim de semana, vamos à loja comprar uma cadeirinha de bebê.",
+    "tokens": [
+      "今週末",
+      "、",
+      "赤ちゃん",
+      "用",
+      "の",
+      "チャイルドシート",
+      "を",
+      "買い",
+      "に",
+      "お店",
+      "に",
+      "行きましょう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "今週末",
+        "pinyin": "konshūmatsu",
+        "meaning": "neste fim de semana"
+      },
+      {
+        "id": 1,
+        "word": "赤ちゃん",
+        "pinyin": "akachan",
+        "meaning": "bebê"
+      },
+      {
+        "id": 2,
+        "word": "用",
+        "pinyin": "yō",
+        "meaning": "para uso, para"
+      },
+      {
+        "id": 3,
+        "word": "チャイルドシート",
+        "pinyin": "chairudoshīto",
+        "meaning": "cadeirinha de bebê"
+      },
+      {
+        "id": 4,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "お店",
+        "pinyin": "omise",
+        "meaning": "loja"
+      },
+      {
+        "id": 6,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772295140703-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 分かった。でも、多くの人が買っていないのを見たよ。後部座席で大人が抱っこしていれば大丈夫だよ。",
+    "pinyin": null,
+    "translation": "B: Entendi. Mas, vi muitas pessoas que não compram. Se um adulto estiver segurando no banco de trás, está tudo bem.",
+    "tokens": [
+      "分かった",
+      "。",
+      "でも",
+      "、",
+      "多く",
+      "の",
+      "人",
+      "が",
+      "買って",
+      "いない",
+      "の",
+      "を",
+      "見た",
+      "よ",
+      "。",
+      "後部座席",
+      "で",
+      "大人",
+      "が",
+      "抱っこ",
+      "して",
+      "いれば",
+      "大丈夫",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "分かる",
+        "pinyin": "wakaru",
+        "meaning": "entender"
+      },
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "demo",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "多く",
+        "pinyin": "ooku",
+        "meaning": "muitos"
+      },
+      {
+        "id": 3,
+        "word": "人",
+        "pinyin": "hito",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 4,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver"
+      },
+      {
+        "id": 6,
+        "word": "後部座席",
+        "pinyin": "kōbu zaseki",
+        "meaning": "banco de trás"
+      },
+      {
+        "id": 7,
+        "word": "大人",
+        "pinyin": "otona",
+        "meaning": "adulto"
+      },
+      {
+        "id": 8,
+        "word": "抱っこする",
+        "pinyin": "dakkosuru",
+        "meaning": "segurar no colo (bebê)"
+      },
+      {
+        "id": 9,
+        "word": "大丈夫",
+        "pinyin": "daijōbu",
+        "meaning": "tudo bem"
+      }
+    ],
+    "id": "local-1772295140703-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 絶対に必要よ！多くの国では、子供をチャイルドシートに乗せないのは違法なの。",
+    "pinyin": null,
+    "translation": "A: É absolutamente necessário! Em muitos países, não colocar a criança na cadeirinha é ilegal.",
+    "tokens": [
+      "絶対",
+      "に",
+      "必要",
+      "よ",
+      "！",
+      "多く",
+      "の",
+      "国",
+      "で",
+      "は",
+      "、",
+      "子供",
+      "を",
+      "チャイルドシート",
+      "に",
+      "乗せ",
+      "ない",
+      "の",
+      "は",
+      "違法",
+      "な",
+      "の",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "絶対",
+        "pinyin": "zettai",
+        "meaning": "absolutamente"
+      },
+      {
+        "id": 1,
+        "word": "必要",
+        "pinyin": "hitsuyō",
+        "meaning": "necessário"
+      },
+      {
+        "id": 2,
+        "word": "多く",
+        "pinyin": "ooku",
+        "meaning": "muitos"
+      },
+      {
+        "id": 3,
+        "word": "国",
+        "pinyin": "kuni",
+        "meaning": "país"
+      },
+      {
+        "id": 4,
+        "word": "子供",
+        "pinyin": "kodomo",
+        "meaning": "criança"
+      },
+      {
+        "id": 5,
+        "word": "チャイルドシート",
+        "pinyin": "chairudoshīto",
+        "meaning": "cadeirinha de bebê"
+      },
+      {
+        "id": 6,
+        "word": "乗せる",
+        "pinyin": "noseru",
+        "meaning": "colocar (para sentar)"
+      },
+      {
+        "id": 7,
+        "word": "違法",
+        "pinyin": "ihō",
+        "meaning": "ilegal"
+      }
+    ],
+    "id": "local-1772295140703-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 分かった、分かった。買いたいなら買いましょう。どのブランドを買いたいか決めたの？",
+    "pinyin": null,
+    "translation": "B: Entendi, entendi. Se você quer comprar, vamos comprar. Já decidiu qual marca quer comprar?",
+    "tokens": [
+      "分かった",
+      "、",
+      "分かった",
+      "。",
+      "買い",
+      "たい",
+      "なら",
+      "買いましょう",
+      "。",
+      "どの",
+      "ブランド",
+      "を",
+      "買い",
+      "たい",
+      "か",
+      "決め",
+      "た",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "分かる",
+        "pinyin": "wakaru",
+        "meaning": "entender"
+      },
+      {
+        "id": 1,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "なら",
+        "pinyin": "nara",
+        "meaning": "se, se for o caso"
+      },
+      {
+        "id": 3,
+        "word": "どの",
+        "pinyin": "dono",
+        "meaning": "qual"
+      },
+      {
+        "id": 4,
+        "word": "ブランド",
+        "pinyin": "burando",
+        "meaning": "marca"
+      },
+      {
+        "id": 5,
+        "word": "決める",
+        "pinyin": "kimeru",
+        "meaning": "decidir"
+      }
+    ],
+    "id": "local-1772295140703-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: もちろん輸入品よ！ヨーロッパの基準を満たしている必要があるわ。",
+    "pinyin": null,
+    "translation": "A: Claro que é um produto importado! Precisa atender aos padrões europeus.",
+    "tokens": [
+      "もちろん",
+      "輸入品",
+      "よ",
+      "！",
+      "ヨーロッパ",
+      "の",
+      "基準",
+      "を",
+      "満たして",
+      "いる",
+      "必要",
+      "が",
+      "ある",
+      "わ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "もちろん",
+        "pinyin": "mochiron",
+        "meaning": "claro"
+      },
+      {
+        "id": 1,
+        "word": "輸入品",
+        "pinyin": "yunyūhin",
+        "meaning": "produto importado"
+      },
+      {
+        "id": 2,
+        "word": "ヨーロッパ",
+        "pinyin": "yōroppa",
+        "meaning": "Europa"
+      },
+      {
+        "id": 3,
+        "word": "基準",
+        "pinyin": "kijun",
+        "meaning": "padrão"
+      },
+      {
+        "id": 4,
+        "word": "満たす",
+        "pinyin": "mitasu",
+        "meaning": "atender, cumprir"
+      },
+      {
+        "id": 5,
+        "word": "必要",
+        "pinyin": "hitsuyō",
+        "meaning": "necessidade"
+      }
+    ],
+    "id": "local-1772295140703-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは安くないだろうね。",
+    "pinyin": null,
+    "translation": "B: Isso não deve ser barato, né.",
+    "tokens": [
+      "それ",
+      "は",
+      "安く",
+      "ない",
+      "だろう",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 1,
+        "word": "安い",
+        "pinyin": "yasui",
+        "meaning": "barato"
+      },
+      {
+        "id": 2,
+        "word": "だろう",
+        "pinyin": "darō",
+        "meaning": "provavelmente"
+      },
+      {
+        "id": 3,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de concordância"
+      }
+    ],
+    "id": "local-1772295140703-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 安くなくても、子供の安全のために買うべきよ。",
+    "pinyin": null,
+    "translation": "A: Mesmo que não seja barato, devemos comprar pela segurança da criança.",
+    "tokens": [
+      "安く",
+      "なく",
+      "ても",
+      "、",
+      "子供",
+      "の",
+      "安全",
+      "の",
+      "ため",
+      "に",
+      "買う",
+      "べき",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "安い",
+        "pinyin": "yasui",
+        "meaning": "barato"
+      },
+      {
+        "id": 1,
+        "word": "子供",
+        "pinyin": "kodomo",
+        "meaning": "criança"
+      },
+      {
+        "id": 2,
+        "word": "安全",
+        "pinyin": "anzen",
+        "meaning": "segurança"
+      },
+      {
+        "id": 3,
+        "word": "ため",
+        "pinyin": "tame",
+        "meaning": "para, por causa de"
+      },
+      {
+        "id": 4,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "べき",
+        "pinyin": "beki",
+        "meaning": "dever"
+      }
+    ],
+    "id": "local-1772295140703-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: もし買っても、家に持ち帰って、彼女が乗りたがらないことが分かったらどうする？そしたらどうするんだ？同僚は、子供が座るとすぐに泣き始めるって言ってたよ。",
+    "pinyin": null,
+    "translation": "B: E se comprarmos, levarmos para casa e descobrirmos que ela não quer sentar? O que faremos então? Meu colega disse que a criança dele começa a chorar assim que senta.",
+    "tokens": [
+      "もし",
+      "買って",
+      "も",
+      "、",
+      "家",
+      "に",
+      "持ち帰って",
+      "、",
+      "彼女",
+      "が",
+      "乗り",
+      "たがらない",
+      "こと",
+      "が",
+      "分かったら",
+      "どう",
+      "する",
+      "？",
+      "そしたら",
+      "どう",
+      "する",
+      "ん",
+      "だ",
+      "？",
+      "同僚",
+      "は",
+      "、",
+      "子供",
+      "が",
+      "座る",
+      "と",
+      "すぐ",
+      "に",
+      "泣き始める",
+      "って",
+      "言って",
+      "た",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "もし",
+        "pinyin": "moshi",
+        "meaning": "se"
+      },
+      {
+        "id": 1,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "家",
+        "pinyin": "ie",
+        "meaning": "casa"
+      },
+      {
+        "id": 3,
+        "word": "持ち帰る",
+        "pinyin": "mochikaeru",
+        "meaning": "levar para casa"
+      },
+      {
+        "id": 4,
+        "word": "彼女",
+        "pinyin": "kanojo",
+        "meaning": "ela"
+      },
+      {
+        "id": 5,
+        "word": "乗る",
+        "pinyin": "noru",
+        "meaning": "sentar/usar (veículo)"
+      },
+      {
+        "id": 6,
+        "word": "分かる",
+        "pinyin": "wakaru",
+        "meaning": "saber, descobrir"
+      },
+      {
+        "id": 7,
+        "word": "どうする",
+        "pinyin": "dōsuru",
+        "meaning": "o que fazer"
+      },
+      {
+        "id": 8,
+        "word": "そしたら",
+        "pinyin": "soshitara",
+        "meaning": "então (nesse caso)"
+      },
+      {
+        "id": 9,
+        "word": "同僚",
+        "pinyin": "dōryō",
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 10,
+        "word": "子供",
+        "pinyin": "kodomo",
+        "meaning": "criança"
+      },
+      {
+        "id": 11,
+        "word": "座る",
+        "pinyin": "suwaru",
+        "meaning": "sentar"
+      },
+      {
+        "id": 12,
+        "word": "すぐ",
+        "pinyin": "sugu",
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 13,
+        "word": "泣き始める",
+        "pinyin": "nakihajimeru",
+        "meaning": "começar a chorar"
+      },
+      {
+        "id": 14,
+        "word": "言う",
+        "pinyin": "iu",
+        "meaning": "dizer"
+      }
+    ],
+    "id": "local-1772295140703-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: だから、早めに買う必要があるのよ。小さいうちから乗り始めれば、慣れやすくなるわ。",
+    "pinyin": null,
+    "translation": "A: Por isso, precisamos comprar cedo. Se começarmos a usá-la desde pequena, ela se acostumará mais facilmente.",
+    "tokens": [
+      "だから",
+      "、",
+      "早め",
+      "に",
+      "買う",
+      "必要",
+      "が",
+      "ある",
+      "の",
+      "よ",
+      "。",
+      "小さい",
+      "うち",
+      "から",
+      "乗り始めれ",
+      "ば",
+      "、",
+      "慣れやすく",
+      "なる",
+      "わ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "だから",
+        "pinyin": "dakara",
+        "meaning": "por isso"
+      },
+      {
+        "id": 1,
+        "word": "早め",
+        "pinyin": "hayame",
+        "meaning": "antecipadamente, cedo"
+      },
+      {
+        "id": 2,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "必要",
+        "pinyin": "hitsuyō",
+        "meaning": "necessidade"
+      },
+      {
+        "id": 4,
+        "word": "小さい",
+        "pinyin": "chiisai",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 5,
+        "word": "うち",
+        "pinyin": "uchi",
+        "meaning": "enquanto"
+      },
+      {
+        "id": 6,
+        "word": "乗り始める",
+        "pinyin": "norihajimeru",
+        "meaning": "começar a usar/sentar"
+      },
+      {
+        "id": 7,
+        "word": "慣れる",
+        "pinyin": "nareru",
+        "meaning": "acostumar-se"
+      }
+    ],
+    "id": "local-1772295140703-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 分かった。君の言う通りだ、君。すべては私たちの子供のためだからね！",
+    "pinyin": null,
+    "translation": "B: Entendi. Você está certa, você. Tudo é pela nossa criança!",
+    "tokens": [
+      "分かった",
+      "。",
+      "君",
+      "の",
+      "言う",
+      "通り",
+      "だ",
+      "、",
+      "君",
+      "。",
+      "すべて",
+      "は",
+      "私たち",
+      "の",
+      "子供",
+      "の",
+      "ため",
+      "だ",
+      "から",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "分かる",
+        "pinyin": "wakaru",
+        "meaning": "entender"
+      },
+      {
+        "id": 1,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "言う",
+        "pinyin": "iu",
+        "meaning": "dizer"
+      },
+      {
+        "id": 3,
+        "word": "通り",
+        "pinyin": "tōri",
+        "meaning": "como, de acordo com"
+      },
+      {
+        "id": 4,
+        "word": "すべて",
+        "pinyin": "subete",
+        "meaning": "tudo"
+      },
+      {
+        "id": 5,
+        "word": "私たち",
+        "pinyin": "watashitachi",
+        "meaning": "nós"
+      },
+      {
+        "id": 6,
+        "word": "子供",
+        "pinyin": "kodomo",
+        "meaning": "criança"
+      },
+      {
+        "id": 7,
+        "word": "ため",
+        "pinyin": "tame",
+        "meaning": "para, em favor de"
+      },
+      {
+        "id": 8,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque"
+      },
+      {
+        "id": 9,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de ênfase"
+      }
+    ],
+    "id": "local-1772295140703-9",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,1226 @@
+[
+  {
+    "chinese": "A: Hotels sind ja so teuer!",
+    "pinyin": "",
+    "translation": "A: Hotéis são tão caros!",
+    "tokens": [
+      "A:",
+      "Hotels",
+      "sind",
+      "ja",
+      "so",
+      "teuer",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hotels",
+        "pinyin": "",
+        "meaning": "Hotéis"
+      },
+      {
+        "id": 2,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são (verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "ja",
+        "pinyin": "",
+        "meaning": "de fato, realmente (partícula de ênfase)"
+      },
+      {
+        "id": 4,
+        "word": "so",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 5,
+        "word": "teuer",
+        "pinyin": "",
+        "meaning": "caro"
+      }
+    ],
+    "id": "local-1772293407149-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Willst du verreisen?",
+    "pinyin": "",
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "B:",
+      "Willst",
+      "du",
+      "verreisen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Willst",
+        "pinyin": "",
+        "meaning": "Queres (do verbo 'wollen', querer)"
+      },
+      {
+        "id": 2,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "verreisen",
+        "pinyin": "",
+        "meaning": "viajar (para longe)"
+      }
+    ],
+    "id": "local-1772293407149-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja, ich habe vor, im Sommer nach New York zu reisen.",
+    "pinyin": "",
+    "translation": "A: Sim, eu pretendo viajar para Nova York no verão.",
+    "tokens": [
+      "A:",
+      "Ja",
+      ",",
+      "ich",
+      "habe",
+      "vor",
+      ",",
+      "im",
+      "Sommer",
+      "nach",
+      "New",
+      "York",
+      "zu",
+      "reisen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "habe vor",
+        "pinyin": "",
+        "meaning": "pretendo (do verbo 'vorhaben', ter a intenção de)"
+      },
+      {
+        "id": 4,
+        "word": "Sommer",
+        "pinyin": "",
+        "meaning": "verão"
+      },
+      {
+        "id": 5,
+        "word": "nach",
+        "pinyin": "",
+        "meaning": "para (destino geográfico)"
+      },
+      {
+        "id": 6,
+        "word": "reisen",
+        "pinyin": "",
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772293407149-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Aber wieso sind die Hotels nur so teuer?",
+    "pinyin": "",
+    "translation": "Mas por que os hotéis são só tão caros?",
+    "tokens": [
+      "Aber",
+      "wieso",
+      "sind",
+      "die",
+      "Hotels",
+      "nur",
+      "so",
+      "teuer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "wieso",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são (verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 4,
+        "word": "Hotels",
+        "pinyin": "",
+        "meaning": "Hotéis"
+      },
+      {
+        "id": 5,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "só, apenas"
+      },
+      {
+        "id": 6,
+        "word": "so",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 7,
+        "word": "teuer",
+        "pinyin": "",
+        "meaning": "caro"
+      }
+    ],
+    "id": "local-1772293407149-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Vielleicht suchst du mal auf Airbnb?",
+    "pinyin": "",
+    "translation": "B: Talvez você procure no Airbnb?",
+    "tokens": [
+      "B:",
+      "Vielleicht",
+      "suchst",
+      "du",
+      "mal",
+      "auf",
+      "Airbnb",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vielleicht",
+        "pinyin": "",
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "suchst",
+        "pinyin": "",
+        "meaning": "procuras (do verbo 'suchen', procurar)"
+      },
+      {
+        "id": 3,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 4,
+        "word": "mal",
+        "pinyin": "",
+        "meaning": "uma vez; partícula modal para suavizar"
+      },
+      {
+        "id": 5,
+        "word": "auf",
+        "pinyin": "",
+        "meaning": "em, sobre (preposição)"
+      }
+    ],
+    "id": "local-1772293407149-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was ist das?",
+    "pinyin": "",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "A:",
+      "Was",
+      "ist",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772293407149-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist eine Internetseite, auf der man Zimmer buchen kann.",
+    "pinyin": "",
+    "translation": "B: Essa é uma página da internet onde se pode reservar quartos.",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "eine",
+      "Internetseite",
+      ",",
+      "auf",
+      "der",
+      "man",
+      "Zimmer",
+      "buchen",
+      "kann",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das",
+        "pinyin": "",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "Internetseite",
+        "pinyin": "",
+        "meaning": "site, página da internet"
+      },
+      {
+        "id": 4,
+        "word": "auf der",
+        "pinyin": "",
+        "meaning": "onde (pronome relativo)"
+      },
+      {
+        "id": 5,
+        "word": "man",
+        "pinyin": "",
+        "meaning": "se (pronome impessoal)"
+      },
+      {
+        "id": 6,
+        "word": "Zimmer",
+        "pinyin": "",
+        "meaning": "quarto(s)"
+      },
+      {
+        "id": 7,
+        "word": "buchen",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 8,
+        "word": "kann",
+        "pinyin": "",
+        "meaning": "pode (do verbo 'können', poder)"
+      }
+    ],
+    "id": "local-1772293407149-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Aber das sind keine Hotels, sondern nur Zimmer in privaten Wohnungen.",
+    "pinyin": "",
+    "translation": "Mas não são hotéis, e sim apenas quartos em apartamentos particulares.",
+    "tokens": [
+      "Aber",
+      "das",
+      "sind",
+      "keine",
+      "Hotels",
+      ",",
+      "sondern",
+      "nur",
+      "Zimmer",
+      "in",
+      "privaten",
+      "Wohnungen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 3,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são (verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 4,
+        "word": "keine",
+        "pinyin": "",
+        "meaning": "nenhum(a) (negação)"
+      },
+      {
+        "id": 5,
+        "word": "Hotels",
+        "pinyin": "",
+        "meaning": "Hotéis"
+      },
+      {
+        "id": 6,
+        "word": "sondern",
+        "pinyin": "",
+        "meaning": "mas sim, e sim"
+      },
+      {
+        "id": 7,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 8,
+        "word": "Zimmer",
+        "pinyin": "",
+        "meaning": "quartos"
+      },
+      {
+        "id": 9,
+        "word": "privaten",
+        "pinyin": "",
+        "meaning": "particulares"
+      },
+      {
+        "id": 10,
+        "word": "Wohnungen",
+        "pinyin": "",
+        "meaning": "apartamentos, moradias"
+      }
+    ],
+    "id": "local-1772293407149-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Der Vermieter vermietet sein eigenes Gästezimmer, um etwas Geld dazu zu verdienen.",
+    "pinyin": "",
+    "translation": "O proprietário aluga seu próprio quarto de hóspedes para ganhar um dinheiro extra.",
+    "tokens": [
+      "Der",
+      "Vermieter",
+      "vermietet",
+      "sein",
+      "eigenes",
+      "Gästezimmer",
+      ",",
+      "um",
+      "etwas",
+      "Geld",
+      "dazu",
+      "zu",
+      "verdienen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vermieter",
+        "pinyin": "",
+        "meaning": "proprietário (que aluga)"
+      },
+      {
+        "id": 2,
+        "word": "vermietet",
+        "pinyin": "",
+        "meaning": "aluga (do verbo 'vermieten', alugar)"
+      },
+      {
+        "id": 3,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "seu/sua"
+      },
+      {
+        "id": 4,
+        "word": "eigenes",
+        "pinyin": "",
+        "meaning": "próprio(a)"
+      },
+      {
+        "id": 5,
+        "word": "Gästezimmer",
+        "pinyin": "",
+        "meaning": "quarto de hóspedes"
+      },
+      {
+        "id": 6,
+        "word": "um ... zu",
+        "pinyin": "",
+        "meaning": "para (com a finalidade de)"
+      },
+      {
+        "id": 7,
+        "word": "etwas",
+        "pinyin": "",
+        "meaning": "algo, um pouco"
+      },
+      {
+        "id": 8,
+        "word": "Geld",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 9,
+        "word": "dazu verdienen",
+        "pinyin": "",
+        "meaning": "ganhar um extra, complementar a renda"
+      }
+    ],
+    "id": "local-1772293407149-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Verstehe.",
+    "pinyin": "",
+    "translation": "A: Entendo.",
+    "tokens": [
+      "A:",
+      "Verstehe",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Verstehe",
+        "pinyin": "",
+        "meaning": "Entendo (do verbo 'verstehen', entender)"
+      }
+    ],
+    "id": "local-1772293407149-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Oh, da gibt's ja viele!",
+    "pinyin": "",
+    "translation": "Ah, tem tantos lá!",
+    "tokens": [
+      "Oh",
+      ",",
+      "da",
+      "gibt's",
+      "ja",
+      "viele",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "gibt's",
+        "pinyin": "",
+        "meaning": "há, existe (contração de 'gibt es')"
+      },
+      {
+        "id": 3,
+        "word": "ja",
+        "pinyin": "",
+        "meaning": "de fato, realmente (partícula de ênfase)"
+      },
+      {
+        "id": 4,
+        "word": "viele",
+        "pinyin": "",
+        "meaning": "muitos"
+      }
+    ],
+    "id": "local-1772293407149-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das hier sieht ganz gut aus.",
+    "pinyin": "",
+    "translation": "Este aqui parece bem bom.",
+    "tokens": [
+      "Das",
+      "hier",
+      "sieht",
+      "ganz",
+      "gut",
+      "aus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das hier",
+        "pinyin": "",
+        "meaning": "Este aqui"
+      },
+      {
+        "id": 2,
+        "word": "sieht ... aus",
+        "pinyin": "",
+        "meaning": "parece (do verbo separável 'aussehen', parecer)"
+      },
+      {
+        "id": 3,
+        "word": "ganz",
+        "pinyin": "",
+        "meaning": "bem, bastante"
+      },
+      {
+        "id": 4,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772293407149-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Etwas mehr als 600 RMB pro Nacht.",
+    "pinyin": "",
+    "translation": "Um pouco mais de 600 RMB por noite.",
+    "tokens": [
+      "Etwas",
+      "mehr",
+      "als",
+      "600",
+      "RMB",
+      "pro",
+      "Nacht",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Etwas",
+        "pinyin": "",
+        "meaning": "Um pouco"
+      },
+      {
+        "id": 2,
+        "word": "mehr als",
+        "pinyin": "",
+        "meaning": "mais que"
+      },
+      {
+        "id": 3,
+        "word": "pro",
+        "pinyin": "",
+        "meaning": "por (a cada)"
+      },
+      {
+        "id": 4,
+        "word": "Nacht",
+        "pinyin": "",
+        "meaning": "noite"
+      }
+    ],
+    "id": "local-1772293407149-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Hat auch eine Küche, da kann ich mir was kochen.",
+    "pinyin": "",
+    "translation": "Tem também uma cozinha, lá eu posso cozinhar algo para mim.",
+    "tokens": [
+      "Hat",
+      "auch",
+      "eine",
+      "Küche",
+      ",",
+      "da",
+      "kann",
+      "ich",
+      "mir",
+      "was",
+      "kochen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hat",
+        "pinyin": "",
+        "meaning": "Tem (do verbo 'haben', ter)"
+      },
+      {
+        "id": 2,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "Küche",
+        "pinyin": "",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 4,
+        "word": "da",
+        "pinyin": "",
+        "meaning": "lá, ali; ou 'porque' (conjunção)"
+      },
+      {
+        "id": 5,
+        "word": "kann",
+        "pinyin": "",
+        "meaning": "posso (do verbo 'können', poder)"
+      },
+      {
+        "id": 6,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 7,
+        "word": "mir",
+        "pinyin": "",
+        "meaning": "para mim (dativo de 'ich')"
+      },
+      {
+        "id": 8,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "algo (contração de 'etwas')"
+      },
+      {
+        "id": 9,
+        "word": "kochen",
+        "pinyin": "",
+        "meaning": "cozinhar"
+      }
+    ],
+    "id": "local-1772293407149-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber das ist keine ganze Wohnung, nur ein Zimmer.",
+    "pinyin": "",
+    "translation": "B: Mas não é um apartamento inteiro, só um quarto.",
+    "tokens": [
+      "B:",
+      "Aber",
+      "das",
+      "ist",
+      "keine",
+      "ganze",
+      "Wohnung",
+      ",",
+      "nur",
+      "ein",
+      "Zimmer",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 3,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 4,
+        "word": "keine",
+        "pinyin": "",
+        "meaning": "nenhuma (negação)"
+      },
+      {
+        "id": 5,
+        "word": "ganze",
+        "pinyin": "",
+        "meaning": "inteira"
+      },
+      {
+        "id": 6,
+        "word": "Wohnung",
+        "pinyin": "",
+        "meaning": "apartamento, moradia"
+      },
+      {
+        "id": 7,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "só, apenas"
+      },
+      {
+        "id": 8,
+        "word": "Zimmer",
+        "pinyin": "",
+        "meaning": "quarto"
+      }
+    ],
+    "id": "local-1772293407149-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Küche und Bad musst du dir mit anderen teilen.",
+    "pinyin": "",
+    "translation": "Cozinha e banheiro você tem que compartilhar com outros.",
+    "tokens": [
+      "Küche",
+      "und",
+      "Bad",
+      "musst",
+      "du",
+      "dir",
+      "mit",
+      "anderen",
+      "teilen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Küche",
+        "pinyin": "",
+        "meaning": "Cozinha"
+      },
+      {
+        "id": 2,
+        "word": "Bad",
+        "pinyin": "",
+        "meaning": "Banheiro"
+      },
+      {
+        "id": 3,
+        "word": "musst",
+        "pinyin": "",
+        "meaning": "tens que (do verbo 'müssen', ter que/dever)"
+      },
+      {
+        "id": 4,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 5,
+        "word": "dir",
+        "pinyin": "",
+        "meaning": "para si (dativo de 'du')"
+      },
+      {
+        "id": 6,
+        "word": "mit",
+        "pinyin": "",
+        "meaning": "com"
+      },
+      {
+        "id": 7,
+        "word": "anderen",
+        "pinyin": "",
+        "meaning": "outros"
+      },
+      {
+        "id": 8,
+        "word": "teilen",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      }
+    ],
+    "id": "local-1772293407149-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ach, das macht nichts.",
+    "pinyin": "",
+    "translation": "A: Ah, não tem problema.",
+    "tokens": [
+      "A:",
+      "Ach",
+      ",",
+      "das",
+      "macht",
+      "nichts",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ach",
+        "pinyin": "",
+        "meaning": "Ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "das macht nichts",
+        "pinyin": "",
+        "meaning": "não tem problema, não importa"
+      }
+    ],
+    "id": "local-1772293407149-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Aber, ist das sicher, mit anderen in einer Wohnung zu wohnen?",
+    "pinyin": "",
+    "translation": "Mas, é seguro morar com outros em um apartamento?",
+    "tokens": [
+      "Aber",
+      ",",
+      "ist",
+      "das",
+      "sicher",
+      ",",
+      "mit",
+      "anderen",
+      "in",
+      "einer",
+      "Wohnung",
+      "zu",
+      "wohnen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "sicher",
+        "pinyin": "",
+        "meaning": "seguro"
+      },
+      {
+        "id": 4,
+        "word": "mit",
+        "pinyin": "",
+        "meaning": "com"
+      },
+      {
+        "id": 5,
+        "word": "anderen",
+        "pinyin": "",
+        "meaning": "outros"
+      },
+      {
+        "id": 6,
+        "word": "Wohnung",
+        "pinyin": "",
+        "meaning": "apartamento, moradia"
+      },
+      {
+        "id": 7,
+        "word": "wohnen",
+        "pinyin": "",
+        "meaning": "morar"
+      }
+    ],
+    "id": "local-1772293407149-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Du kannst dir die Bewertungen ansehen.",
+    "pinyin": "",
+    "translation": "B: Você pode ver as avaliações.",
+    "tokens": [
+      "B:",
+      "Du",
+      "kannst",
+      "dir",
+      "die",
+      "Bewertungen",
+      "ansehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Du",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 2,
+        "word": "kannst",
+        "pinyin": "",
+        "meaning": "podes (do verbo 'können', poder)"
+      },
+      {
+        "id": 3,
+        "word": "dir",
+        "pinyin": "",
+        "meaning": "para si (dativo de 'du')"
+      },
+      {
+        "id": 4,
+        "word": "Bewertungen",
+        "pinyin": "",
+        "meaning": "avaliações"
+      },
+      {
+        "id": 5,
+        "word": "ansehen",
+        "pinyin": "",
+        "meaning": "ver, olhar (verbo separável)"
+      }
+    ],
+    "id": "local-1772293407149-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Die sind von Gästen, die schon mal dort übernachtet haben.",
+    "pinyin": "",
+    "translation": "Elas são de hóspedes que já se hospedaram lá.",
+    "tokens": [
+      "Die",
+      "sind",
+      "von",
+      "Gästen",
+      ",",
+      "die",
+      "schon",
+      "mal",
+      "dort",
+      "übernachtet",
+      "haben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Die",
+        "pinyin": "",
+        "meaning": "Elas"
+      },
+      {
+        "id": 2,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "Gästen",
+        "pinyin": "",
+        "meaning": "hóspedes"
+      },
+      {
+        "id": 4,
+        "word": "schon mal",
+        "pinyin": "",
+        "meaning": "já alguma vez"
+      },
+      {
+        "id": 5,
+        "word": "dort",
+        "pinyin": "",
+        "meaning": "lá"
+      },
+      {
+        "id": 6,
+        "word": "übernachtet haben",
+        "pinyin": "",
+        "meaning": "se hospedaram, pernoitaram (passado de 'übernachten')"
+      }
+    ],
+    "id": "local-1772293407149-19",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wenn viele kommentiert haben und die Bewertungen gut sind, sollte es kein Problem sein.",
+    "pinyin": "",
+    "translation": "Se muitos comentaram e as avaliações são boas, não deve haver problema.",
+    "tokens": [
+      "Wenn",
+      "viele",
+      "kommentiert",
+      "haben",
+      "und",
+      "die",
+      "Bewertungen",
+      "gut",
+      "sind",
+      ",",
+      "sollte",
+      "es",
+      "kein",
+      "Problem",
+      "sein",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wenn",
+        "pinyin": "",
+        "meaning": "Se (condicional)"
+      },
+      {
+        "id": 2,
+        "word": "viele",
+        "pinyin": "",
+        "meaning": "muitos"
+      },
+      {
+        "id": 3,
+        "word": "kommentiert haben",
+        "pinyin": "",
+        "meaning": "comentaram (passado de 'kommentieren')"
+      },
+      {
+        "id": 4,
+        "word": "Bewertungen",
+        "pinyin": "",
+        "meaning": "avaliações"
+      },
+      {
+        "id": 5,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom, boas"
+      },
+      {
+        "id": 6,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são (do verbo 'sein', ser/estar)"
+      },
+      {
+        "id": 7,
+        "word": "sollte",
+        "pinyin": "",
+        "meaning": "deveria (modo conjuntivo de 'sollen', dever)"
+      },
+      {
+        "id": 8,
+        "word": "kein Problem",
+        "pinyin": "",
+        "meaning": "nenhum problema"
+      },
+      {
+        "id": 9,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      }
+    ],
+    "id": "local-1772293407149-20",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Super! Dann such ich mal weiter!",
+    "pinyin": "",
+    "translation": "A: Ótimo! Então vou continuar procurando!",
+    "tokens": [
+      "A:",
+      "Super",
+      "!",
+      "Dann",
+      "such",
+      "ich",
+      "mal",
+      "weiter",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Super",
+        "pinyin": "",
+        "meaning": "Ótimo, legal"
+      },
+      {
+        "id": 2,
+        "word": "Dann",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "such ich",
+        "pinyin": "",
+        "meaning": "eu procuro (contração de 'suche ich')"
+      },
+      {
+        "id": 4,
+        "word": "mal",
+        "pinyin": "",
+        "meaning": "uma vez; partícula modal para suavizar"
+      },
+      {
+        "id": 5,
+        "word": "weiter",
+        "pinyin": "",
+        "meaning": "adiante, continuar"
+      }
+    ],
+    "id": "local-1772293407149-21",
+    "language": "Alemão"
+  }
+]

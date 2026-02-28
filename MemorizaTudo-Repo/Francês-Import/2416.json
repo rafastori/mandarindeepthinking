@@ -1,0 +1,533 @@
+[
+  {
+    "chinese": "Chérie, ton téléphone sonne. C'est un message texte.",
+    "pinyin": null,
+    "translation": "Querida, seu telefone está tocando. É uma mensagem de texto.",
+    "tokens": [
+      "Chérie",
+      ",",
+      "ton",
+      "téléphone",
+      "sonne",
+      ".",
+      "C'est",
+      "un",
+      "message",
+      "texte",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chérie",
+        "pinyin": null,
+        "meaning": "Querida (forma carinhosa de tratamento)"
+      },
+      {
+        "id": 2,
+        "word": "téléphone",
+        "pinyin": null,
+        "meaning": "telefone"
+      },
+      {
+        "id": 3,
+        "word": "sonne",
+        "pinyin": null,
+        "meaning": "toca / está tocando (do verbo 'sonner')"
+      },
+      {
+        "id": 4,
+        "word": "message texte",
+        "pinyin": null,
+        "meaning": "mensagem de texto"
+      }
+    ],
+    "id": "local-1772296050419-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je suis dans la salle de bain. Lis-le pour moi !",
+    "pinyin": null,
+    "translation": "Estou no banheiro. Leia-o para mim!",
+    "tokens": [
+      "Je",
+      "suis",
+      "dans",
+      "la",
+      "salle",
+      "de",
+      "bain",
+      ".",
+      "Lis-le",
+      "pour",
+      "moi",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "salle de bain",
+        "pinyin": null,
+        "meaning": "banheiro"
+      },
+      {
+        "id": 2,
+        "word": "Lis-le",
+        "pinyin": null,
+        "meaning": "Leia-o (verbo 'lire' no imperativo, com pronome)"
+      },
+      {
+        "id": 3,
+        "word": "pour moi",
+        "pinyin": null,
+        "meaning": "para mim"
+      }
+    ],
+    "id": "local-1772296050419-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Le 15 à 11h08, votre carte bancaire se terminant par 8899 a été débitée de 35 000 yuans renminbi.",
+    "pinyin": null,
+    "translation": "No dia 15 às 11h08, seu cartão bancário terminado em 8899 foi debitado em 35.000 yuans renminbi.",
+    "tokens": [
+      "Le",
+      "15",
+      "à",
+      "11h08",
+      ",",
+      "votre",
+      "carte",
+      "bancaire",
+      "se",
+      "terminant",
+      "par",
+      "8899",
+      "a",
+      "été",
+      "débitée",
+      "de",
+      "35",
+      "000",
+      "yuans",
+      "renminbi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "carte bancaire",
+        "pinyin": null,
+        "meaning": "cartão bancário"
+      },
+      {
+        "id": 2,
+        "word": "se terminant par",
+        "pinyin": null,
+        "meaning": "terminando em"
+      },
+      {
+        "id": 3,
+        "word": "a été débitée",
+        "pinyin": null,
+        "meaning": "foi debitada (voz passiva)"
+      },
+      {
+        "id": 4,
+        "word": "yuans renminbi",
+        "pinyin": null,
+        "meaning": "yuans renminbi (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772296050419-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Hein ? Qu'est-ce qu'on fait ?",
+    "pinyin": null,
+    "translation": "Hã? O que a gente faz?",
+    "tokens": [
+      "Hein",
+      "?",
+      "Qu'est-ce",
+      "qu'on",
+      "fait",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hein",
+        "pinyin": null,
+        "meaning": "Hã? / O quê? (interjeição de surpresa ou dúvida)"
+      },
+      {
+        "id": 2,
+        "word": "Qu'est-ce qu'on fait",
+        "pinyin": null,
+        "meaning": "O que nós fazemos? / O que a gente faz? (expressão interrogativa informal)"
+      }
+    ],
+    "id": "local-1772296050419-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Tu es à la maison.",
+    "pinyin": null,
+    "translation": "Você está em casa.",
+    "tokens": [
+      "Tu",
+      "es",
+      "à",
+      "la",
+      "maison",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "à la maison",
+        "pinyin": null,
+        "meaning": "em casa"
+      }
+    ],
+    "id": "local-1772296050419-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Comment peux-tu recevoir un avis que ta carte de crédit a été débitée ?",
+    "pinyin": null,
+    "translation": "Como você pode receber um aviso de que seu cartão de crédito foi debitado?",
+    "tokens": [
+      "Comment",
+      "peux-tu",
+      "recevoir",
+      "un",
+      "avis",
+      "que",
+      "ta",
+      "carte",
+      "de",
+      "crédit",
+      "a",
+      "été",
+      "débitée",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Comment peux-tu",
+        "pinyin": null,
+        "meaning": "Como você pode (interrogativo)"
+      },
+      {
+        "id": 2,
+        "word": "recevoir",
+        "pinyin": null,
+        "meaning": "receber"
+      },
+      {
+        "id": 3,
+        "word": "un avis",
+        "pinyin": null,
+        "meaning": "um aviso / uma notificação"
+      },
+      {
+        "id": 4,
+        "word": "carte de crédit",
+        "pinyin": null,
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 5,
+        "word": "a été débitée",
+        "pinyin": null,
+        "meaning": "foi debitada (voz passiva)"
+      }
+    ],
+    "id": "local-1772296050419-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Quoi ?! Vite, laisse-moi voir ça ! Mon Dieu ! Quand ai-je dépensé autant d'argent ?",
+    "pinyin": null,
+    "translation": "O quê?! Rápido, deixe-me ver isso! Meu Deus! Quando eu gastei tanto dinheiro?",
+    "tokens": [
+      "Quoi",
+      "?!",
+      "Vite",
+      ",",
+      "laisse-moi",
+      "voir",
+      "ça",
+      "!",
+      "Mon",
+      "Dieu",
+      "!",
+      "Quand",
+      "ai-je",
+      "dépensé",
+      "autant",
+      "d'argent",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quoi",
+        "pinyin": null,
+        "meaning": "O quê? (interjeição de surpresa ou indignação)"
+      },
+      {
+        "id": 2,
+        "word": "Vite",
+        "pinyin": null,
+        "meaning": "Rápido / Depressa"
+      },
+      {
+        "id": 3,
+        "word": "laisse-moi voir ça",
+        "pinyin": null,
+        "meaning": "deixe-me ver isso"
+      },
+      {
+        "id": 4,
+        "word": "Mon Dieu",
+        "pinyin": null,
+        "meaning": "Meu Deus!"
+      },
+      {
+        "id": 5,
+        "word": "ai-je dépensé",
+        "pinyin": null,
+        "meaning": "gastei (forma interrogativa invertida de 'j'ai dépensé')"
+      },
+      {
+        "id": 6,
+        "word": "autant d'argent",
+        "pinyin": null,
+        "meaning": "tanto dinheiro"
+      }
+    ],
+    "id": "local-1772296050419-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Se pourrait-il que quelqu'un l'ait volée et utilisée ?",
+    "pinyin": null,
+    "translation": "Seria possível que alguém a tenha roubado e usado?",
+    "tokens": [
+      "Se",
+      "pourrait-il",
+      "que",
+      "quelqu'un",
+      "l'ait",
+      "volée",
+      "et",
+      "utilisée",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Se pourrait-il que",
+        "pinyin": null,
+        "meaning": "Seria possível que / Poderia ser que (expressão de hipótese)"
+      },
+      {
+        "id": 2,
+        "word": "quelqu'un",
+        "pinyin": null,
+        "meaning": "alguém"
+      },
+      {
+        "id": 3,
+        "word": "l'ait volée",
+        "pinyin": null,
+        "meaning": "a tenha roubado (subjonctif passé do verbo 'voler', referindo-se à 'carte')"
+      },
+      {
+        "id": 4,
+        "word": "utilisée",
+        "pinyin": null,
+        "meaning": "usada"
+      }
+    ],
+    "id": "local-1772296050419-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Hein ? Alors qu'est-ce que je fais maintenant, chérie ?",
+    "pinyin": null,
+    "translation": "Hã? Então o que eu faço agora, querida?",
+    "tokens": [
+      "Hein",
+      "?",
+      "Alors",
+      "qu'est-ce",
+      "que",
+      "je",
+      "fais",
+      "maintenant",
+      ",",
+      "chérie",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hein",
+        "pinyin": null,
+        "meaning": "Hã? (interjeição de surpresa ou dúvida)"
+      },
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "qu'est-ce que je fais",
+        "pinyin": null,
+        "meaning": "o que eu faço? (interrogativo)"
+      },
+      {
+        "id": 4,
+        "word": "maintenant",
+        "pinyin": null,
+        "meaning": "agora"
+      },
+      {
+        "id": 5,
+        "word": "chérie",
+        "pinyin": null,
+        "meaning": "querida"
+      }
+    ],
+    "id": "local-1772296050419-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Chérie, ne t'inquiète pas. On appelle juste la banque pour bloquer le compte, puis on dépose une plainte à la police.",
+    "pinyin": null,
+    "translation": "Querida, não se preocupe. A gente liga para o banco para bloquear a conta, depois a gente registra uma queixa na polícia.",
+    "tokens": [
+      "Chérie",
+      ",",
+      "ne",
+      "t'inquiète",
+      "pas",
+      ".",
+      "On",
+      "appelle",
+      "juste",
+      "la",
+      "banque",
+      "pour",
+      "bloquer",
+      "le",
+      "compte",
+      ",",
+      "puis",
+      "on",
+      "dépose",
+      "une",
+      "plainte",
+      "à",
+      "la",
+      "police",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ne t'inquiète pas",
+        "pinyin": null,
+        "meaning": "não se preocupe (imperativo negativo)"
+      },
+      {
+        "id": 2,
+        "word": "On appelle",
+        "pinyin": null,
+        "meaning": "Nós ligamos / A gente liga (uso informal de 'on')"
+      },
+      {
+        "id": 3,
+        "word": "la banque",
+        "pinyin": null,
+        "meaning": "o banco"
+      },
+      {
+        "id": 4,
+        "word": "bloquer le compte",
+        "pinyin": null,
+        "meaning": "bloquear a conta"
+      },
+      {
+        "id": 5,
+        "word": "puis",
+        "pinyin": null,
+        "meaning": "depois / então"
+      },
+      {
+        "id": 6,
+        "word": "dépose une plainte",
+        "pinyin": null,
+        "meaning": "registra uma queixa / apresenta uma queixa"
+      },
+      {
+        "id": 7,
+        "word": "à la police",
+        "pinyin": null,
+        "meaning": "na polícia"
+      }
+    ],
+    "id": "local-1772296050419-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Pas étonnant que mon œil tressaille aujourd'hui !",
+    "pinyin": null,
+    "translation": "Não é de admirar que meu olho esteja tremendo hoje!",
+    "tokens": [
+      "Pas",
+      "étonnant",
+      "que",
+      "mon",
+      "œil",
+      "tressaille",
+      "aujourd'hui",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas étonnant que",
+        "pinyin": null,
+        "meaning": "Não é de admirar que / Não me surpreende que (expressão de constatação)"
+      },
+      {
+        "id": 2,
+        "word": "mon œil",
+        "pinyin": null,
+        "meaning": "meu olho"
+      },
+      {
+        "id": 3,
+        "word": "tressaille",
+        "pinyin": null,
+        "meaning": "treme / está tremendo (do verbo 'tressaillir' no subjuntivo presente)"
+      },
+      {
+        "id": 4,
+        "word": "aujourd'hui",
+        "pinyin": null,
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772296050419-10",
+    "language": "Francês"
+  }
+]

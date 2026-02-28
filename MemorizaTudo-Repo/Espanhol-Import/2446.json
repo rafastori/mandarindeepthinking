@@ -1,0 +1,530 @@
+[
+  {
+    "chinese": "A: ¡Cariño, me he puesto tan grande!",
+    "pinyin": null,
+    "translation": "A: Amor, eu engordei tanto!",
+    "tokens": [
+      "A:",
+      "¡Cariño,",
+      "me",
+      "he",
+      "puesto",
+      "tan",
+      "grande!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cariño",
+        "pinyin": "",
+        "meaning": "Amor, Carinho (tratamento afetivo)"
+      },
+      {
+        "id": 2,
+        "word": "me he puesto",
+        "pinyin": "",
+        "meaning": "eu me tornei / eu fiquei (neste contexto, engordei)"
+      },
+      {
+        "id": 3,
+        "word": "grande",
+        "pinyin": "",
+        "meaning": "grande (neste contexto, em tamanho, gordo)"
+      }
+    ],
+    "id": "local-1772298136164-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Quiero comprar una máquina para adelgazar!",
+    "pinyin": null,
+    "translation": "Quero comprar uma máquina para emagrecer!",
+    "tokens": [
+      "¡Quiero",
+      "comprar",
+      "una",
+      "máquina",
+      "para",
+      "adelgazar!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quiero",
+        "pinyin": "",
+        "meaning": "Eu quero (verbo 'querer')"
+      },
+      {
+        "id": 2,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "máquina",
+        "pinyin": "",
+        "meaning": "máquina"
+      },
+      {
+        "id": 4,
+        "word": "adelgazar",
+        "pinyin": "",
+        "meaning": "emagrecer"
+      }
+    ],
+    "id": "local-1772298136164-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué tipo quieres comprar?",
+    "pinyin": null,
+    "translation": "B: Que tipo você quer comprar?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "tipo",
+      "quieres",
+      "comprar?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué tipo",
+        "pinyin": "",
+        "meaning": "Que tipo"
+      },
+      {
+        "id": 2,
+        "word": "quieres",
+        "pinyin": "",
+        "meaning": "você quer (verbo 'querer')"
+      },
+      {
+        "id": 3,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772298136164-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Mira! ¿Qué tal esta cinta de correr?",
+    "pinyin": null,
+    "translation": "A: Olha! Que tal esta esteira?",
+    "tokens": [
+      "A:",
+      "¡Mira!",
+      "¿Qué",
+      "tal",
+      "esta",
+      "cinta",
+      "de",
+      "correr?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mira",
+        "pinyin": "",
+        "meaning": "Olha (verbo 'mirar' - olhar, ver)"
+      },
+      {
+        "id": 2,
+        "word": "Qué tal",
+        "pinyin": "",
+        "meaning": "Que tal"
+      },
+      {
+        "id": 3,
+        "word": "cinta de correr",
+        "pinyin": "",
+        "meaning": "esteira (literalmente: fita de correr)"
+      }
+    ],
+    "id": "local-1772298136164-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Sí, está bastante bien!",
+    "pinyin": null,
+    "translation": "B: Sim, está muito boa!",
+    "tokens": [
+      "B:",
+      "¡Sí,",
+      "está",
+      "bastante",
+      "bien!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "está",
+        "pinyin": "",
+        "meaning": "está (verbo 'estar')"
+      },
+      {
+        "id": 3,
+        "word": "bastante bien",
+        "pinyin": "",
+        "meaning": "muito bem / bastante boa"
+      }
+    ],
+    "id": "local-1772298136164-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Esta máquina elíptica puede ayudar a adelgazar tus piernas y tu cintura!",
+    "pinyin": null,
+    "translation": "A: Esta máquina elíptica pode ajudar a emagrecer suas pernas e sua cintura!",
+    "tokens": [
+      "A:",
+      "¡Esta",
+      "máquina",
+      "elíptica",
+      "puede",
+      "ayudar",
+      "a",
+      "adelgazar",
+      "tus",
+      "piernas",
+      "y",
+      "tu",
+      "cintura!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "máquina elíptica",
+        "pinyin": "",
+        "meaning": "máquina elíptica"
+      },
+      {
+        "id": 2,
+        "word": "puede ayudar",
+        "pinyin": "",
+        "meaning": "pode ajudar"
+      },
+      {
+        "id": 3,
+        "word": "adelgazar",
+        "pinyin": "",
+        "meaning": "emagrecer"
+      },
+      {
+        "id": 4,
+        "word": "piernas",
+        "pinyin": "",
+        "meaning": "pernas"
+      },
+      {
+        "id": 5,
+        "word": "cintura",
+        "pinyin": "",
+        "meaning": "cintura"
+      }
+    ],
+    "id": "local-1772298136164-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Parece que sería buena para ti.",
+    "pinyin": null,
+    "translation": "B: Parece que seria boa para você.",
+    "tokens": [
+      "B:",
+      "Parece",
+      "que",
+      "sería",
+      "buena",
+      "para",
+      "ti."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Parece que",
+        "pinyin": "",
+        "meaning": "Parece que"
+      },
+      {
+        "id": 2,
+        "word": "sería",
+        "pinyin": "",
+        "meaning": "seria (verbo 'ser' no condicional)"
+      },
+      {
+        "id": 3,
+        "word": "buena",
+        "pinyin": "",
+        "meaning": "boa"
+      },
+      {
+        "id": 4,
+        "word": "para ti",
+        "pinyin": "",
+        "meaning": "para você"
+      }
+    ],
+    "id": "local-1772298136164-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh, también hay un robot para perder peso aquí, ¡pero desafortunadamente es demasiado caro!",
+    "pinyin": null,
+    "translation": "A: Oh, também há um robô para perder peso aqui, mas infelizmente é muito caro!",
+    "tokens": [
+      "A:",
+      "Oh,",
+      "también",
+      "hay",
+      "un",
+      "robot",
+      "para",
+      "perder",
+      "peso",
+      "aquí,",
+      "¡pero",
+      "desafortunadamente",
+      "es",
+      "demasiado",
+      "caro!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há / tem (verbo 'haber')"
+      },
+      {
+        "id": 3,
+        "word": "perder peso",
+        "pinyin": "",
+        "meaning": "perder peso"
+      },
+      {
+        "id": 4,
+        "word": "aquí",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 5,
+        "word": "desafortunadamente",
+        "pinyin": "",
+        "meaning": "infelizmente"
+      },
+      {
+        "id": 6,
+        "word": "demasiado caro",
+        "pinyin": "",
+        "meaning": "muito caro / caro demais"
+      }
+    ],
+    "id": "local-1772298136164-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: El dinero no es problema.",
+    "pinyin": null,
+    "translation": "B: O dinheiro não é problema.",
+    "tokens": [
+      "B:",
+      "El",
+      "dinero",
+      "no",
+      "es",
+      "problema."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dinero",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "no es problema",
+        "pinyin": "",
+        "meaning": "não é problema"
+      }
+    ],
+    "id": "local-1772298136164-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Solo me preocupa que lo uses dos días y luego nunca más.",
+    "pinyin": null,
+    "translation": "Só me preocupa que você o use dois dias e depois nunca mais.",
+    "tokens": [
+      "Solo",
+      "me",
+      "preocupa",
+      "que",
+      "lo",
+      "uses",
+      "dos",
+      "días",
+      "y",
+      "luego",
+      "nunca",
+      "más."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Solo",
+        "pinyin": "",
+        "meaning": "Só / Apenas"
+      },
+      {
+        "id": 2,
+        "word": "me preocupa",
+        "pinyin": "",
+        "meaning": "me preocupa"
+      },
+      {
+        "id": 3,
+        "word": "uses",
+        "pinyin": "",
+        "meaning": "use (verbo 'usar' no subjuntivo)"
+      },
+      {
+        "id": 4,
+        "word": "dos días",
+        "pinyin": "",
+        "meaning": "dois dias"
+      },
+      {
+        "id": 5,
+        "word": "luego",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 6,
+        "word": "nunca más",
+        "pinyin": "",
+        "meaning": "nunca mais"
+      }
+    ],
+    "id": "local-1772298136164-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Esta vez te garantizo que no!",
+    "pinyin": null,
+    "translation": "A: Desta vez eu te garanto que não!",
+    "tokens": [
+      "A:",
+      "¡Esta",
+      "vez",
+      "te",
+      "garantizo",
+      "que",
+      "no!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esta vez",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "te garantizo",
+        "pinyin": "",
+        "meaning": "eu te garanto"
+      },
+      {
+        "id": 3,
+        "word": "que no",
+        "pinyin": "",
+        "meaning": "que não"
+      }
+    ],
+    "id": "local-1772298136164-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Está bien.",
+    "pinyin": null,
+    "translation": "B: Está bem.",
+    "tokens": [
+      "B:",
+      "Está",
+      "bien."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Está bien",
+        "pinyin": "",
+        "meaning": "Está bem"
+      }
+    ],
+    "id": "local-1772298136164-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Entonces cómpralo!",
+    "pinyin": null,
+    "translation": "Então compre!",
+    "tokens": [
+      "¡Entonces",
+      "cómpralo!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cómpralo",
+        "pinyin": "",
+        "meaning": "compre-o (imperativo de 'comprar' + pronome 'lo')"
+      }
+    ],
+    "id": "local-1772298136164-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Te apoyo!",
+    "pinyin": null,
+    "translation": "Te apoio!",
+    "tokens": [
+      "¡Te",
+      "apoyo!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Te apoyo",
+        "pinyin": "",
+        "meaning": "Te apoio (verbo 'apoyar' - apoiar)"
+      }
+    ],
+    "id": "local-1772298136164-13",
+    "language": "Espanhol"
+  }
+]

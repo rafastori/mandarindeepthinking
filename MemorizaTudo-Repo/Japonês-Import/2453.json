@@ -1,0 +1,1137 @@
+[
+  {
+    "chinese": "A: ホテルってすごく高いね！",
+    "pinyin": "",
+    "translation": "A: Hotéis são tão caros, né!",
+    "tokens": [
+      "ホテル",
+      "って",
+      "すごく",
+      "高い",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ホテル",
+        "pinyin": "hoteru",
+        "meaning": "hotel"
+      },
+      {
+        "id": 2,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 3,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "caro, alto"
+      },
+      {
+        "id": 4,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772298609199-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 旅行に行きたいの？",
+    "pinyin": "",
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "旅行",
+      "に",
+      "行き",
+      "たい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "旅行",
+        "pinyin": "ryokou",
+        "meaning": "viagem"
+      },
+      {
+        "id": 2,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "たい",
+        "pinyin": "tai",
+        "meaning": "querer (sufixo)"
+      },
+      {
+        "id": 4,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula de pergunta (informal)"
+      }
+    ],
+    "id": "local-1772298609199-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: うん。夏休みにニューヨークへ遊びに行く計画なんだけど、どうしてホテルってこんなに高いんだろう？",
+    "pinyin": "",
+    "translation": "A: Sim. Tenho planos de ir para Nova York nas férias de verão, mas por que os hotéis são tão caros assim?",
+    "tokens": [
+      "うん",
+      "。",
+      "夏休み",
+      "に",
+      "ニューヨーク",
+      "へ",
+      "遊び",
+      "に",
+      "行く",
+      "計画",
+      "なんだけど",
+      "、",
+      "どうして",
+      "ホテル",
+      "って",
+      "こんなに",
+      "高い",
+      "ん",
+      "だろう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "un",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "夏休み",
+        "pinyin": "natsuyasumi",
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 3,
+        "word": "ニューヨーク",
+        "pinyin": "nyūyōku",
+        "meaning": "Nova York"
+      },
+      {
+        "id": 4,
+        "word": "遊びに行く",
+        "pinyin": "asobi ni iku",
+        "meaning": "ir para se divertir/visitar"
+      },
+      {
+        "id": 5,
+        "word": "計画",
+        "pinyin": "keikaku",
+        "meaning": "plano"
+      },
+      {
+        "id": 6,
+        "word": "なんだけど",
+        "pinyin": "nandakedo",
+        "meaning": "mas, embora (para introduzir explicação ou transição)"
+      },
+      {
+        "id": 7,
+        "word": "どうして",
+        "pinyin": "doushite",
+        "meaning": "por que"
+      },
+      {
+        "id": 8,
+        "word": "ホテル",
+        "pinyin": "hoteru",
+        "meaning": "hotel"
+      },
+      {
+        "id": 9,
+        "word": "こんなに",
+        "pinyin": "konna ni",
+        "meaning": "tão, assim"
+      },
+      {
+        "id": 10,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "caro"
+      },
+      {
+        "id": 11,
+        "word": "だろう",
+        "pinyin": "darou",
+        "meaning": "eu me pergunto, provavelmente (conjectura)"
+      }
+    ],
+    "id": "local-1772298609199-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: Airbnbを見てみたらどう？",
+    "pinyin": "",
+    "translation": "B: Que tal dar uma olhada no Airbnb?",
+    "tokens": [
+      "Airbnb",
+      "を",
+      "見",
+      "て",
+      "み",
+      "たら",
+      "どう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Airbnb",
+        "pinyin": "ēānbī",
+        "meaning": "Airbnb"
+      },
+      {
+        "id": 2,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 3,
+        "word": "てみる",
+        "pinyin": "temiru",
+        "meaning": "tentar fazer (verbo + te-form + miru)"
+      },
+      {
+        "id": 4,
+        "word": "たらどう",
+        "pinyin": "tara dou",
+        "meaning": "que tal (expressão de sugestão)"
+      }
+    ],
+    "id": "local-1772298609199-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それって何？",
+    "pinyin": "",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "それ",
+      "って",
+      "何",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772298609199-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 部屋を予約できるインターネットサイトだよ。",
+    "pinyin": "",
+    "translation": "B: É um site de internet onde você pode reservar quartos.",
+    "tokens": [
+      "部屋",
+      "を",
+      "予約",
+      "できる",
+      "インターネットサイト",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "部屋",
+        "pinyin": "heya",
+        "meaning": "quarto"
+      },
+      {
+        "id": 2,
+        "word": "予約する",
+        "pinyin": "yoyaku suru",
+        "meaning": "reservar"
+      },
+      {
+        "id": 3,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 4,
+        "word": "インターネットサイト",
+        "pinyin": "intānetto saito",
+        "meaning": "site da internet"
+      },
+      {
+        "id": 5,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "でもホテルじゃなくて、ただの民家の一室なんだ。",
+    "pinyin": "",
+    "translation": "Mas não é um hotel, é apenas um quarto em uma casa particular.",
+    "tokens": [
+      "でも",
+      "ホテル",
+      "じゃなくて",
+      "、",
+      "ただの",
+      "民家",
+      "の",
+      "一室",
+      "なんだ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "demo",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "ホテル",
+        "pinyin": "hoteru",
+        "meaning": "hotel"
+      },
+      {
+        "id": 3,
+        "word": "じゃなくて",
+        "pinyin": "janakute",
+        "meaning": "não é (negativa de です)"
+      },
+      {
+        "id": 4,
+        "word": "ただの",
+        "pinyin": "tada no",
+        "meaning": "apenas, meramente"
+      },
+      {
+        "id": 5,
+        "word": "民家",
+        "pinyin": "minka",
+        "meaning": "casa particular, residência privada"
+      },
+      {
+        "id": 6,
+        "word": "一室",
+        "pinyin": "isshitsu",
+        "meaning": "um quarto"
+      },
+      {
+        "id": 7,
+        "word": "なんだ",
+        "pinyin": "nanda",
+        "meaning": "é (forma informal de なのです, para explicação)"
+      }
+    ],
+    "id": "local-1772298609199-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "家主が自分の空き部屋を貸して、ちょっとお金を稼ぐんだよ。",
+    "pinyin": "",
+    "translation": "O proprietário aluga seus quartos vagos e ganha um pouco de dinheiro.",
+    "tokens": [
+      "家主",
+      "が",
+      "自分",
+      "の",
+      "空き部屋",
+      "を",
+      "貸し",
+      "て",
+      "、",
+      "ちょっと",
+      "お金",
+      "を",
+      "稼ぐ",
+      "ん",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "家主",
+        "pinyin": "yanushi",
+        "meaning": "proprietário, senhorio"
+      },
+      {
+        "id": 2,
+        "word": "自分",
+        "pinyin": "jibun",
+        "meaning": "próprio, si mesmo"
+      },
+      {
+        "id": 3,
+        "word": "空き部屋",
+        "pinyin": "akibeya",
+        "meaning": "quarto vago"
+      },
+      {
+        "id": 4,
+        "word": "貸す",
+        "pinyin": "kasu",
+        "meaning": "alugar, emprestar"
+      },
+      {
+        "id": 5,
+        "word": "ちょっと",
+        "pinyin": "chotto",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 6,
+        "word": "お金",
+        "pinyin": "okane",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 7,
+        "word": "稼ぐ",
+        "pinyin": "kasegu",
+        "meaning": "ganhar (dinheiro)"
+      },
+      {
+        "id": 8,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/explicação"
+      }
+    ],
+    "id": "local-1772298609199-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: なるほど。わあ、たくさんあるね！",
+    "pinyin": "",
+    "translation": "A: Entendi. Uau, tem muitos!",
+    "tokens": [
+      "なるほど",
+      "。",
+      "わあ",
+      "、",
+      "たくさん",
+      "ある",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "なるほど",
+        "pinyin": "naruhodo",
+        "meaning": "entendi, claro, faz sentido"
+      },
+      {
+        "id": 2,
+        "word": "わあ",
+        "pinyin": "waa",
+        "meaning": "uau (interjeição)"
+      },
+      {
+        "id": 3,
+        "word": "たくさん",
+        "pinyin": "takusan",
+        "meaning": "muito, muitos"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir (para objetos inanimados)"
+      },
+      {
+        "id": 5,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772298609199-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "これ、なかなか良さそう。",
+    "pinyin": "",
+    "translation": "Este, parece muito bom.",
+    "tokens": [
+      "これ",
+      "、",
+      "なかなか",
+      "良さそう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "este"
+      },
+      {
+        "id": 2,
+        "word": "なかなか",
+        "pinyin": "nakanaka",
+        "meaning": "bastante, muito, surpreendentemente (de forma positiva)"
+      },
+      {
+        "id": 3,
+        "word": "良さそう",
+        "pinyin": "yosasou",
+        "meaning": "parece bom (良い + そう)"
+      }
+    ],
+    "id": "local-1772298609199-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "一泊600元ちょっとか。",
+    "pinyin": "",
+    "translation": "Custa um pouco mais de 600 yuans por uma noite.",
+    "tokens": [
+      "一泊",
+      "600",
+      "元",
+      "ちょっと",
+      "か",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "一泊",
+        "pinyin": "ippaku",
+        "meaning": "uma noite (de hospedagem)"
+      },
+      {
+        "id": 2,
+        "word": "元",
+        "pinyin": "gen/yuan",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 3,
+        "word": "ちょっと",
+        "pinyin": "chotto",
+        "meaning": "um pouco, um pouco mais"
+      },
+      {
+        "id": 4,
+        "word": "か",
+        "pinyin": "ka",
+        "meaning": "partícula de pergunta/dúvida"
+      }
+    ],
+    "id": "local-1772298609199-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "キッチンもあるから、自分で料理もできるね。",
+    "pinyin": "",
+    "translation": "Como também tem cozinha, posso cozinhar sozinho, né?",
+    "tokens": [
+      "キッチン",
+      "も",
+      "ある",
+      "から",
+      "、",
+      "自分",
+      "で",
+      "料理",
+      "も",
+      "できる",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "キッチン",
+        "pinyin": "kitchin",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 2,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir"
+      },
+      {
+        "id": 3,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque, então (partícula de razão)"
+      },
+      {
+        "id": 4,
+        "word": "自分",
+        "pinyin": "jibun",
+        "meaning": "próprio, si mesmo"
+      },
+      {
+        "id": 5,
+        "word": "料理",
+        "pinyin": "ryouri",
+        "meaning": "culinária, refeição"
+      },
+      {
+        "id": 6,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 7,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772298609199-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: でも、これはアパートじゃなくて、ただの部屋だよ。",
+    "pinyin": "",
+    "translation": "B: Mas isso não é um apartamento, é apenas um quarto.",
+    "tokens": [
+      "でも",
+      "、",
+      "これ",
+      "は",
+      "アパート",
+      "じゃなくて",
+      "、",
+      "ただの",
+      "部屋",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "demo",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "este"
+      },
+      {
+        "id": 3,
+        "word": "アパート",
+        "pinyin": "apāto",
+        "meaning": "apartamento"
+      },
+      {
+        "id": 4,
+        "word": "じゃなくて",
+        "pinyin": "janakute",
+        "meaning": "não é"
+      },
+      {
+        "id": 5,
+        "word": "ただの",
+        "pinyin": "tada no",
+        "meaning": "apenas, meramente"
+      },
+      {
+        "id": 6,
+        "word": "部屋",
+        "pinyin": "heya",
+        "meaning": "quarto"
+      },
+      {
+        "id": 7,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "キッチンとバスルームは他の人と共有しなきゃならないよ。",
+    "pinyin": "",
+    "translation": "Você terá que compartilhar a cozinha e o banheiro com outras pessoas.",
+    "tokens": [
+      "キッチン",
+      "と",
+      "バスルーム",
+      "は",
+      "他の人",
+      "と",
+      "共有",
+      "しなきゃ",
+      "ならない",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "キッチン",
+        "pinyin": "kitchin",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 2,
+        "word": "バスルーム",
+        "pinyin": "basurūmu",
+        "meaning": "banheiro"
+      },
+      {
+        "id": 3,
+        "word": "他の人",
+        "pinyin": "hoka no hito",
+        "meaning": "outras pessoas"
+      },
+      {
+        "id": 4,
+        "word": "共有する",
+        "pinyin": "kyouyuu suru",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 5,
+        "word": "しなきゃならない",
+        "pinyin": "shinakya naranai",
+        "meaning": "ter que fazer (forma contraída de しなければならない)"
+      },
+      {
+        "id": 6,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-13",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ああ、それは気にしないよ。",
+    "pinyin": "",
+    "translation": "A: Ah, não me importo com isso.",
+    "tokens": [
+      "ああ",
+      "、",
+      "それ",
+      "は",
+      "気に",
+      "しない",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": "aa",
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 3,
+        "word": "気にする",
+        "pinyin": "ki ni suru",
+        "meaning": "se importar, se preocupar"
+      },
+      {
+        "id": 4,
+        "word": "しない",
+        "pinyin": "shinai",
+        "meaning": "não fazer (negativo de する)"
+      },
+      {
+        "id": 5,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-14",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "でも、他の人と一緒に泊まるのって安全なの？",
+    "pinyin": "",
+    "translation": "Mas, é seguro ficar com outras pessoas?",
+    "tokens": [
+      "でも",
+      "、",
+      "他の人",
+      "と",
+      "一緒に",
+      "泊まる",
+      "の",
+      "って",
+      "安全",
+      "な",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "demo",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "他の人",
+        "pinyin": "hoka no hito",
+        "meaning": "outras pessoas"
+      },
+      {
+        "id": 3,
+        "word": "一緒に",
+        "pinyin": "issho ni",
+        "meaning": "junto com"
+      },
+      {
+        "id": 4,
+        "word": "泊まる",
+        "pinyin": "tomaru",
+        "meaning": "hospedar-se, ficar (pernoitar)"
+      },
+      {
+        "id": 5,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "nominalizador"
+      },
+      {
+        "id": 6,
+        "word": "って",
+        "pinyin": "tte",
+        "meaning": "tópico informal (informal de というのは)"
+      },
+      {
+        "id": 7,
+        "word": "安全",
+        "pinyin": "anzen",
+        "meaning": "segurança, seguro"
+      },
+      {
+        "id": 8,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula de pergunta (informal)"
+      }
+    ],
+    "id": "local-1772298609199-15",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: レビューを見ればいいよ。",
+    "pinyin": "",
+    "translation": "B: Você pode olhar as avaliações.",
+    "tokens": [
+      "レビュー",
+      "を",
+      "見",
+      "れ",
+      "ば",
+      "いい",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "レビュー",
+        "pinyin": "rebyū",
+        "meaning": "avaliação, review"
+      },
+      {
+        "id": 2,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 3,
+        "word": "ばいい",
+        "pinyin": "ba ii",
+        "meaning": "deveria, é bom fazer (expressão de sugestão)"
+      },
+      {
+        "id": 4,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-16",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "前に泊まった人が書いたものだから。",
+    "pinyin": "",
+    "translation": "Porque são escritos por pessoas que se hospedaram antes.",
+    "tokens": [
+      "前",
+      "に",
+      "泊まった",
+      "人",
+      "が",
+      "書いた",
+      "もの",
+      "だから",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "前",
+        "pinyin": "mae",
+        "meaning": "antes"
+      },
+      {
+        "id": 2,
+        "word": "泊まる",
+        "pinyin": "tomaru",
+        "meaning": "hospedar-se, ficar (pernoitar)"
+      },
+      {
+        "id": 3,
+        "word": "人",
+        "pinyin": "hito",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 4,
+        "word": "書く",
+        "pinyin": "kaku",
+        "meaning": "escrever"
+      },
+      {
+        "id": 5,
+        "word": "もの",
+        "pinyin": "mono",
+        "meaning": "coisa (nominalizador)"
+      },
+      {
+        "id": 6,
+        "word": "だから",
+        "pinyin": "dakara",
+        "meaning": "porque, por essa razão"
+      }
+    ],
+    "id": "local-1772298609199-17",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "たくさんの人がコメントしていて、評価も高ければ問題ないはずだよ。",
+    "pinyin": "",
+    "translation": "Se muitas pessoas comentaram e a avaliação for alta, não deve haver problema.",
+    "tokens": [
+      "たくさん",
+      "の",
+      "人",
+      "が",
+      "コメント",
+      "し",
+      "て",
+      "い",
+      "て",
+      "、",
+      "評価",
+      "も",
+      "高く",
+      "けれ",
+      "ば",
+      "問題",
+      "ない",
+      "はず",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "たくさん",
+        "pinyin": "takusan",
+        "meaning": "muito, muitos"
+      },
+      {
+        "id": 2,
+        "word": "人",
+        "pinyin": "hito",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 3,
+        "word": "コメントする",
+        "pinyin": "komento suru",
+        "meaning": "comentar"
+      },
+      {
+        "id": 4,
+        "word": "評価",
+        "pinyin": "hyouka",
+        "meaning": "avaliação, nota"
+      },
+      {
+        "id": 5,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "alto (no sentido de valor, nota)"
+      },
+      {
+        "id": 6,
+        "word": "ば",
+        "pinyin": "ba",
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 7,
+        "word": "問題",
+        "pinyin": "mondai",
+        "meaning": "problema"
+      },
+      {
+        "id": 8,
+        "word": "ない",
+        "pinyin": "nai",
+        "meaning": "não há, não existe"
+      },
+      {
+        "id": 9,
+        "word": "はず",
+        "pinyin": "hazu",
+        "meaning": "deve ser, é esperado que (presunção)"
+      },
+      {
+        "id": 10,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-18",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それはいいね。",
+    "pinyin": "",
+    "translation": "A: Isso é bom.",
+    "tokens": [
+      "それ",
+      "は",
+      "いい",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "ii",
+        "meaning": "bom"
+      },
+      {
+        "id": 3,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772298609199-19",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "もっと探してみるよ！",
+    "pinyin": "",
+    "translation": "Vou procurar mais!",
+    "tokens": [
+      "もっと",
+      "探し",
+      "て",
+      "みる",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "もっと",
+        "pinyin": "motto",
+        "meaning": "mais"
+      },
+      {
+        "id": 2,
+        "word": "探す",
+        "pinyin": "sagasu",
+        "meaning": "procurar"
+      },
+      {
+        "id": 3,
+        "word": "てみる",
+        "pinyin": "temiru",
+        "meaning": "tentar fazer (verbo + te-form + miru)"
+      },
+      {
+        "id": 4,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772298609199-20",
+    "language": "Japonês"
+  }
+]

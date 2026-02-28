@@ -1,0 +1,1098 @@
+[
+  {
+    "chinese": "小王，你看了我的邮件吗？",
+    "pinyin": "Xiǎo Wáng, nǐ kàn le wǒ de yóujiàn ma?",
+    "translation": "Xiao Wang, você viu meu e-mail?",
+    "tokens": [
+      "小王",
+      "，",
+      "你",
+      "看",
+      "了",
+      "我",
+      "的",
+      "邮件",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小王",
+        "pinyin": "Xiǎo Wáng",
+        "meaning": "Xiao Wang (nome/tratamento comum)"
+      },
+      {
+        "id": 2,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver, ler"
+      },
+      {
+        "id": 3,
+        "word": "邮件",
+        "pinyin": "yóujiàn",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 4,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772301105164-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有什么问题吗？",
+    "pinyin": "Yǒu shénme wèntí ma?",
+    "translation": "Há algum problema?",
+    "tokens": [
+      "有",
+      "什么",
+      "问题",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, haver"
+      },
+      {
+        "id": 6,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê, algum"
+      },
+      {
+        "id": 7,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772301105164-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我看了那封邮件。",
+    "pinyin": "Wǒ kàn le nà fēng yóujiàn.",
+    "translation": "Eu li aquele e-mail.",
+    "tokens": [
+      "我",
+      "看",
+      "了",
+      "那",
+      "封",
+      "邮件",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver, ler"
+      },
+      {
+        "id": 8,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "aquele, aquela"
+      },
+      {
+        "id": 9,
+        "word": "封",
+        "pinyin": "fēng",
+        "meaning": "classificador para cartas/e-mails"
+      },
+      {
+        "id": 3,
+        "word": "邮件",
+        "pinyin": "yóujiàn",
+        "meaning": "e-mail"
+      }
+    ],
+    "id": "local-1772301105164-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "它非常详细。",
+    "pinyin": "Tā fēicháng xiángxì.",
+    "translation": "Ele é muito detalhado.",
+    "tokens": [
+      "它",
+      "非常",
+      "详细",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para coisas/objetos)"
+      },
+      {
+        "id": 11,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 12,
+        "word": "详细",
+        "pinyin": "xiángxì",
+        "meaning": "detalhado"
+      }
+    ],
+    "id": "local-1772301105164-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我基本了解了这项工作是关于什么的。",
+    "pinyin": "Wǒ jīběn liǎojiě le zhè xiàng gōngzuò shì guānyú shénme de.",
+    "translation": "Basicamente entendi do que se trata este trabalho.",
+    "tokens": [
+      "我",
+      "基本",
+      "了解",
+      "了",
+      "这",
+      "项",
+      "工作",
+      "是",
+      "关于",
+      "什么",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 13,
+        "word": "基本",
+        "pinyin": "jīběn",
+        "meaning": "básico, basicamente"
+      },
+      {
+        "id": 14,
+        "word": "了解",
+        "pinyin": "liǎojiě",
+        "meaning": "entender, compreender"
+      },
+      {
+        "id": 15,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 16,
+        "word": "关于",
+        "pinyin": "guānyú",
+        "meaning": "sobre, a respeito de"
+      }
+    ],
+    "id": "local-1772301105164-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我这里有一份日常职责清单。",
+    "pinyin": "Wǒ zhèlǐ yǒu yī fèn rìcháng zhízé qīngdān.",
+    "translation": "Tenho uma lista de responsabilidades diárias aqui.",
+    "tokens": [
+      "我",
+      "这里",
+      "有",
+      "一",
+      "份",
+      "日常",
+      "职责",
+      "清单",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "这里",
+        "pinyin": "zhèlǐ",
+        "meaning": "aqui"
+      },
+      {
+        "id": 5,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, haver"
+      },
+      {
+        "id": 18,
+        "word": "份",
+        "pinyin": "fèn",
+        "meaning": "classificador para documentos/listas"
+      },
+      {
+        "id": 19,
+        "word": "日常",
+        "pinyin": "rìcháng",
+        "meaning": "diário"
+      },
+      {
+        "id": 20,
+        "word": "职责",
+        "pinyin": "zhízé",
+        "meaning": "responsabilidades, deveres"
+      },
+      {
+        "id": 21,
+        "word": "清单",
+        "pinyin": "qīngdān",
+        "meaning": "lista"
+      }
+    ],
+    "id": "local-1772301105164-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "上面列出了我周一到周五的工作日程。",
+    "pinyin": "Shàngmiàn liè chū le wǒ zhōuyī dào zhōuwǔ de gōngzuò rìchéng.",
+    "translation": "Nela estão listados meus horários de trabalho de segunda a sexta-feira.",
+    "tokens": [
+      "上面",
+      "列出",
+      "了",
+      "我",
+      "周一",
+      "到",
+      "周五",
+      "的",
+      "工作",
+      "日程",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "上面",
+        "pinyin": "shàngmiàn",
+        "meaning": "acima, nele/nela"
+      },
+      {
+        "id": 23,
+        "word": "列出",
+        "pinyin": "liè chū",
+        "meaning": "listar"
+      },
+      {
+        "id": 24,
+        "word": "周一到周五",
+        "pinyin": "zhōuyī dào zhōuwǔ",
+        "meaning": "de segunda a sexta-feira"
+      },
+      {
+        "id": 15,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 25,
+        "word": "日程",
+        "pinyin": "rìchéng",
+        "meaning": "cronograma, agenda"
+      }
+    ],
+    "id": "local-1772301105164-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你可以参考这份清单来安排你未来的工作。",
+    "pinyin": "Nǐ kěyǐ cānkǎo zhè fèn qīngdān lái ānpái nǐ wèilái de gōngzuò.",
+    "translation": "Você pode consultar esta lista para organizar seu trabalho futuro.",
+    "tokens": [
+      "你",
+      "可以",
+      "参考",
+      "这",
+      "份",
+      "清单",
+      "来",
+      "安排",
+      "你",
+      "未来",
+      "的",
+      "工作",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 27,
+        "word": "参考",
+        "pinyin": "cānkǎo",
+        "meaning": "consultar, referenciar"
+      },
+      {
+        "id": 21,
+        "word": "清单",
+        "pinyin": "qīngdān",
+        "meaning": "lista"
+      },
+      {
+        "id": 28,
+        "word": "安排",
+        "pinyin": "ānpái",
+        "meaning": "organizar, agendar"
+      },
+      {
+        "id": 29,
+        "word": "未来",
+        "pinyin": "wèilái",
+        "meaning": "futuro"
+      },
+      {
+        "id": 15,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772301105164-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "谢谢你。",
+    "pinyin": "Xièxie nǐ.",
+    "translation": "Obrigado.",
+    "tokens": [
+      "谢谢",
+      "你",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772301105164-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦对了，昨天我收到了一封来自客户的邮件，是关于销售的。",
+    "pinyin": "O duì le, zuótiān wǒ shōudào le yī fēng láizì kèhù de yóujiàn, shì guānyú xiāoshòu de.",
+    "translation": "Ah, a propósito, ontem recebi um e-mail de um cliente, sobre vendas.",
+    "tokens": [
+      "哦",
+      "对了",
+      "，",
+      "昨天",
+      "我",
+      "收到",
+      "了",
+      "一",
+      "封",
+      "来自",
+      "客户",
+      "的",
+      "邮件",
+      "，",
+      "是",
+      "关于",
+      "销售",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "哦对了",
+        "pinyin": "o duì le",
+        "meaning": "ah, a propósito"
+      },
+      {
+        "id": 32,
+        "word": "昨天",
+        "pinyin": "zuótiān",
+        "meaning": "ontem"
+      },
+      {
+        "id": 33,
+        "word": "收到",
+        "pinyin": "shōudào",
+        "meaning": "receber"
+      },
+      {
+        "id": 9,
+        "word": "封",
+        "pinyin": "fēng",
+        "meaning": "classificador para cartas/e-mails"
+      },
+      {
+        "id": 34,
+        "word": "客户",
+        "pinyin": "kèhù",
+        "meaning": "cliente"
+      },
+      {
+        "id": 3,
+        "word": "邮件",
+        "pinyin": "yóujiàn",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 16,
+        "word": "关于",
+        "pinyin": "guānyú",
+        "meaning": "sobre, a respeito de"
+      },
+      {
+        "id": 35,
+        "word": "销售",
+        "pinyin": "xiāoshòu",
+        "meaning": "vendas"
+      }
+    ],
+    "id": "local-1772301105164-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我该怎么处理？",
+    "pinyin": "Wǒ gāi zěnme chǔlǐ?",
+    "translation": "Como devo lidar com isso?",
+    "tokens": [
+      "我",
+      "该",
+      "怎么",
+      "处理",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 36,
+        "word": "该",
+        "pinyin": "gāi",
+        "meaning": "dever (verbo modal)"
+      },
+      {
+        "id": 37,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 38,
+        "word": "处理",
+        "pinyin": "chǔlǐ",
+        "meaning": "lidar, processar"
+      }
+    ],
+    "id": "local-1772301105164-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我们不负责销售，所以可以直接转交给李明。",
+    "pinyin": "Wǒmen bù fùzé xiāoshòu, suǒyǐ kěyǐ zhíjiē zhuǎnjiāo gěi Lǐ Míng.",
+    "translation": "Não somos responsáveis pelas vendas, então você pode encaminhá-lo diretamente para Li Ming.",
+    "tokens": [
+      "我们",
+      "不",
+      "负责",
+      "销售",
+      "，",
+      "所以",
+      "可以",
+      "直接",
+      "转交",
+      "给",
+      "李明",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 39,
+        "word": "负责",
+        "pinyin": "fùzé",
+        "meaning": "ser responsável por"
+      },
+      {
+        "id": 35,
+        "word": "销售",
+        "pinyin": "xiāoshòu",
+        "meaning": "vendas"
+      },
+      {
+        "id": 40,
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "portanto, então"
+      },
+      {
+        "id": 26,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 41,
+        "word": "直接",
+        "pinyin": "zhíjiē",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 42,
+        "word": "转交",
+        "pinyin": "zhuǎnjiāo",
+        "meaning": "encaminhar, transferir"
+      },
+      {
+        "id": 43,
+        "word": "李明",
+        "pinyin": "Lǐ Míng",
+        "meaning": "Li Ming (nome próprio)"
+      }
+    ],
+    "id": "local-1772301105164-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "他的电子邮件地址在员工联系信息清单上。",
+    "pinyin": "Tā de diànzǐ yóujiàn dìzhǐ zài yuángōng liánxì xìnxī qīngdān shàng.",
+    "translation": "O endereço de e-mail dele está na lista de informações de contato dos funcionários.",
+    "tokens": [
+      "他",
+      "的",
+      "电子邮件",
+      "地址",
+      "在",
+      "员工",
+      "联系",
+      "信息",
+      "清单",
+      "上",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "电子邮件",
+        "pinyin": "diànzǐ yóujiàn",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 45,
+        "word": "地址",
+        "pinyin": "dìzhǐ",
+        "meaning": "endereço"
+      },
+      {
+        "id": 46,
+        "word": "员工",
+        "pinyin": "yuángōng",
+        "meaning": "funcionário"
+      },
+      {
+        "id": 47,
+        "word": "联系",
+        "pinyin": "liánxì",
+        "meaning": "contato"
+      },
+      {
+        "id": 48,
+        "word": "信息",
+        "pinyin": "xìnxī",
+        "meaning": "informação"
+      },
+      {
+        "id": 21,
+        "word": "清单",
+        "pinyin": "qīngdān",
+        "meaning": "lista"
+      }
+    ],
+    "id": "local-1772301105164-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那技术问题呢？",
+    "pinyin": "Nà jìshù wèntí ne?",
+    "translation": "E os problemas técnicos?",
+    "tokens": [
+      "那",
+      "技术",
+      "问题",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, aquele"
+      },
+      {
+        "id": 49,
+        "word": "技术",
+        "pinyin": "jìshù",
+        "meaning": "técnico, tecnologia"
+      },
+      {
+        "id": 7,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      },
+      {
+        "id": 50,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa (e...?, e quanto a...?)"
+      }
+    ],
+    "id": "local-1772301105164-13",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "黄佳负责技术部门。",
+    "pinyin": "Huáng Jiā fùzé jìshù bùmén.",
+    "translation": "Huang Jia é responsável pelo departamento técnico.",
+    "tokens": [
+      "黄佳",
+      "负责",
+      "技术",
+      "部门",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 51,
+        "word": "黄佳",
+        "pinyin": "Huáng Jiā",
+        "meaning": "Huang Jia (nome próprio)"
+      },
+      {
+        "id": 39,
+        "word": "负责",
+        "pinyin": "fùzé",
+        "meaning": "ser responsável por"
+      },
+      {
+        "id": 49,
+        "word": "技术",
+        "pinyin": "jìshù",
+        "meaning": "técnico, tecnologia"
+      },
+      {
+        "id": 52,
+        "word": "部门",
+        "pinyin": "bùmén",
+        "meaning": "departamento"
+      }
+    ],
+    "id": "local-1772301105164-14",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "转交给他就可以了。",
+    "pinyin": "Zhuǎnjiāo gěi tā jiù kěyǐ le.",
+    "translation": "Você pode simplesmente encaminhá-lo para ele.",
+    "tokens": [
+      "转交",
+      "给",
+      "他",
+      "就",
+      "可以",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "转交",
+        "pinyin": "zhuǎnjiāo",
+        "meaning": "encaminhar, transferir"
+      },
+      {
+        "id": 26,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      }
+    ],
+    "id": "local-1772301105164-15",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "但我不认识他们。",
+    "pinyin": "Dàn wǒ bù rènshi tāmen.",
+    "translation": "Mas eu não os conheço.",
+    "tokens": [
+      "但",
+      "我",
+      "不",
+      "认识",
+      "他们",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 53,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "mas"
+      },
+      {
+        "id": 54,
+        "word": "认识",
+        "pinyin": "rènshi",
+        "meaning": "conhecer"
+      },
+      {
+        "id": 55,
+        "word": "他们",
+        "pinyin": "tāmen",
+        "meaning": "eles/elas"
+      }
+    ],
+    "id": "local-1772301105164-16",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "别担心，我今天早上已经给同事们发了邮件。",
+    "pinyin": "Bié dānxīn, wǒ jīntiān zǎoshang yǐjīng gěi tóngshìmen fā le yóujiàn.",
+    "translation": "Não se preocupe, já enviei e-mails aos colegas esta manhã.",
+    "tokens": [
+      "别",
+      "担心",
+      "，",
+      "我",
+      "今天",
+      "早上",
+      "已经",
+      "给",
+      "同事",
+      "们",
+      "发",
+      "了",
+      "邮件",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 56,
+        "word": "别",
+        "pinyin": "bié",
+        "meaning": "não (para proibições)"
+      },
+      {
+        "id": 57,
+        "word": "担心",
+        "pinyin": "dānxīn",
+        "meaning": "preocupar-se"
+      },
+      {
+        "id": 58,
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hoje"
+      },
+      {
+        "id": 59,
+        "word": "早上",
+        "pinyin": "zǎoshang",
+        "meaning": "manhã"
+      },
+      {
+        "id": 60,
+        "word": "已经",
+        "pinyin": "yǐjīng",
+        "meaning": "já"
+      },
+      {
+        "id": 61,
+        "word": "同事",
+        "pinyin": "tóngshì",
+        "meaning": "colega"
+      },
+      {
+        "id": 62,
+        "word": "发邮件",
+        "pinyin": "fā yóujiàn",
+        "meaning": "enviar e-mail"
+      }
+    ],
+    "id": "local-1772301105164-17",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "今天下午我还会安排一次交接会议，当面把你介绍给大家。",
+    "pinyin": "Jīntiān xiàwǔ wǒ hái huì ānpái yī cì jiāojiē huìyì, dāngmiàn bǎ nǐ jièshào gěi dàjiā.",
+    "translation": "Esta tarde também vou organizar uma reunião de transição para apresentá-lo pessoalmente a todos.",
+    "tokens": [
+      "今天",
+      "下午",
+      "我",
+      "还",
+      "会",
+      "安排",
+      "一",
+      "次",
+      "交接",
+      "会议",
+      "，",
+      "当面",
+      "把",
+      "你",
+      "介绍",
+      "给",
+      "大家",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 58,
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hoje"
+      },
+      {
+        "id": 63,
+        "word": "下午",
+        "pinyin": "xiàwǔ",
+        "meaning": "tarde"
+      },
+      {
+        "id": 28,
+        "word": "安排",
+        "pinyin": "ānpái",
+        "meaning": "organizar, agendar"
+      },
+      {
+        "id": 64,
+        "word": "交接",
+        "pinyin": "jiāojiē",
+        "meaning": "transição, handover"
+      },
+      {
+        "id": 65,
+        "word": "会议",
+        "pinyin": "huìyì",
+        "meaning": "reunião"
+      },
+      {
+        "id": 66,
+        "word": "当面",
+        "pinyin": "dāngmiàn",
+        "meaning": "pessoalmente, face a face"
+      },
+      {
+        "id": 67,
+        "word": "介绍",
+        "pinyin": "jièshào",
+        "meaning": "apresentar"
+      },
+      {
+        "id": 68,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1772301105164-18",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "非常感谢。",
+    "pinyin": "Fēicháng gǎnxiè.",
+    "translation": "Muito obrigado.",
+    "tokens": [
+      "非常",
+      "感谢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 69,
+        "word": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "agradecer, obrigado"
+      }
+    ],
+    "id": "local-1772301105164-19",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这是我的职责。",
+    "pinyin": "Zhè shì wǒ de zhízé.",
+    "translation": "Este é o meu dever/responsabilidade.",
+    "tokens": [
+      "这",
+      "是",
+      "我",
+      "的",
+      "职责",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "职责",
+        "pinyin": "zhízé",
+        "meaning": "responsabilidades, deveres"
+      }
+    ],
+    "id": "local-1772301105164-20",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我已经把所有交接文件都放在了“共享”文件里。",
+    "pinyin": "Wǒ yǐjīng bǎ suǒyǒu jiāojiē wénjiàn dōu fàng zài le “gòngxiǎng” wénjiàn lǐ.",
+    "translation": "Já coloquei todos os documentos de transição na pasta \"Compartilhada\".",
+    "tokens": [
+      "我",
+      "已经",
+      "把",
+      "所有",
+      "交接",
+      "文件",
+      "都",
+      "放",
+      "在",
+      "了",
+      "“",
+      "共享",
+      "”",
+      "文件",
+      "里",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 60,
+        "word": "已经",
+        "pinyin": "yǐjīng",
+        "meaning": "já"
+      },
+      {
+        "id": 70,
+        "word": "把",
+        "pinyin": "bǎ",
+        "meaning": "partícula (estrutura ba)"
+      },
+      {
+        "id": 71,
+        "word": "所有",
+        "pinyin": "suǒyǒu",
+        "meaning": "todos, todo"
+      },
+      {
+        "id": 64,
+        "word": "交接",
+        "pinyin": "jiāojiē",
+        "meaning": "transição, handover"
+      },
+      {
+        "id": 72,
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documento, arquivo"
+      },
+      {
+        "id": 73,
+        "word": "放",
+        "pinyin": "fàng",
+        "meaning": "colocar"
+      },
+      {
+        "id": 74,
+        "word": "共享",
+        "pinyin": "gòngxiǎng",
+        "meaning": "compartilhar, compartilhado"
+      }
+    ],
+    "id": "local-1772301105164-21",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "如果你还有问题，也可以打电话联系我。",
+    "pinyin": "Rúguǒ nǐ hái yǒu wèntí, yě kěyǐ dǎ diànhuà liánxì wǒ.",
+    "translation": "Se você ainda tiver dúvidas, também pode me ligar.",
+    "tokens": [
+      "如果",
+      "你",
+      "还",
+      "有",
+      "问题",
+      "，",
+      "也",
+      "可以",
+      "打电话",
+      "联系",
+      "我",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 75,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 76,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 5,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, haver"
+      },
+      {
+        "id": 7,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      },
+      {
+        "id": 26,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 77,
+        "word": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "meaning": "ligar, fazer uma chamada"
+      },
+      {
+        "id": 47,
+        "word": "联系",
+        "pinyin": "liánxì",
+        "meaning": "contato, contatar"
+      }
+    ],
+    "id": "local-1772301105164-22",
+    "language": "Chinês"
+  }
+]

@@ -1,0 +1,896 @@
+[
+  {
+    "chinese": "A: Hola. ¿Puedo preguntar si hay algo en lo que pueda ayudarte?",
+    "pinyin": null,
+    "translation": "A: Olá. Posso perguntar se há algo em que posso te ajudar?",
+    "tokens": [
+      "A:",
+      "Hola",
+      ".",
+      "¿Puedo",
+      "preguntar",
+      "si",
+      "hay",
+      "algo",
+      "en",
+      "lo",
+      "que",
+      "pueda",
+      "ayudarte",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hola",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Puedo",
+        "pinyin": null,
+        "meaning": "Posso (do verbo poder)"
+      },
+      {
+        "id": 3,
+        "word": "preguntar",
+        "pinyin": null,
+        "meaning": "perguntar"
+      },
+      {
+        "id": 4,
+        "word": "hay",
+        "pinyin": null,
+        "meaning": "há (do verbo haber)"
+      },
+      {
+        "id": 5,
+        "word": "algo",
+        "pinyin": null,
+        "meaning": "algo"
+      },
+      {
+        "id": 6,
+        "word": "pueda",
+        "pinyin": null,
+        "meaning": "possa (do verbo poder)"
+      },
+      {
+        "id": 7,
+        "word": "ayudarte",
+        "pinyin": null,
+        "meaning": "te ajudar"
+      }
+    ],
+    "id": "local-1772296262549-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Hola. Quiero recortar mi tarjeta.",
+    "pinyin": null,
+    "translation": "B: Olá. Quero cortar meu cartão.",
+    "tokens": [
+      "B:",
+      "Hola",
+      ".",
+      "Quiero",
+      "recortar",
+      "mi",
+      "tarjeta",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hola",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Quiero",
+        "pinyin": null,
+        "meaning": "Quero (do verbo querer)"
+      },
+      {
+        "id": 3,
+        "word": "recortar",
+        "pinyin": null,
+        "meaning": "cortar, aparar"
+      },
+      {
+        "id": 4,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      }
+    ],
+    "id": "local-1772296262549-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Compré un teléfono celular nuevo y no puedo usar mi tarjeta SIM original.",
+    "pinyin": null,
+    "translation": "Comprei um telefone celular novo e não consigo usar meu cartão SIM original.",
+    "tokens": [
+      "Compré",
+      "un",
+      "teléfono",
+      "celular",
+      "nuevo",
+      "y",
+      "no",
+      "puedo",
+      "usar",
+      "mi",
+      "tarjeta",
+      "SIM",
+      "original",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Compré",
+        "pinyin": null,
+        "meaning": "Comprei (do verbo comprar)"
+      },
+      {
+        "id": 2,
+        "word": "teléfono celular",
+        "pinyin": null,
+        "meaning": "telefone celular"
+      },
+      {
+        "id": 3,
+        "word": "nuevo",
+        "pinyin": null,
+        "meaning": "novo"
+      },
+      {
+        "id": 4,
+        "word": "puedo",
+        "pinyin": null,
+        "meaning": "consigo, posso (do verbo poder)"
+      },
+      {
+        "id": 5,
+        "word": "usar",
+        "pinyin": null,
+        "meaning": "usar"
+      },
+      {
+        "id": 6,
+        "word": "tarjeta SIM",
+        "pinyin": null,
+        "meaning": "cartão SIM"
+      },
+      {
+        "id": 7,
+        "word": "original",
+        "pinyin": null,
+        "meaning": "original"
+      }
+    ],
+    "id": "local-1772296262549-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Quieres una mini tarjeta, ¿verdad?",
+    "pinyin": null,
+    "translation": "A: Você quer um mini cartão, certo?",
+    "tokens": [
+      "A:",
+      "Quieres",
+      "una",
+      "mini",
+      "tarjeta",
+      ",",
+      "¿verdad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quieres",
+        "pinyin": null,
+        "meaning": "Você quer (do verbo querer)"
+      },
+      {
+        "id": 2,
+        "word": "mini tarjeta",
+        "pinyin": null,
+        "meaning": "mini cartão"
+      },
+      {
+        "id": 3,
+        "word": "¿verdad?",
+        "pinyin": null,
+        "meaning": "certo?, verdade?"
+      }
+    ],
+    "id": "local-1772296262549-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Okay.",
+    "pinyin": null,
+    "translation": "Ok.",
+    "tokens": [
+      "Okay",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      }
+    ],
+    "id": "local-1772296262549-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Necesito pagar?",
+    "pinyin": null,
+    "translation": "B: Preciso pagar?",
+    "tokens": [
+      "B:",
+      "¿Necesito",
+      "pagar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Necesito",
+        "pinyin": null,
+        "meaning": "Preciso (do verbo necesitar)"
+      },
+      {
+        "id": 2,
+        "word": "pagar",
+        "pinyin": null,
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772296262549-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No. Recortar una tarjeta es gratis.",
+    "pinyin": null,
+    "translation": "A: Não. Cortar um cartão é grátis.",
+    "tokens": [
+      "A:",
+      "No",
+      ".",
+      "Recortar",
+      "una",
+      "tarjeta",
+      "es",
+      "gratis",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "Recortar",
+        "pinyin": null,
+        "meaning": "Cortar, aparar"
+      },
+      {
+        "id": 3,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      },
+      {
+        "id": 4,
+        "word": "gratis",
+        "pinyin": null,
+        "meaning": "grátis"
+      }
+    ],
+    "id": "local-1772296262549-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Ya está hecho.",
+    "pinyin": null,
+    "translation": "Já está feito.",
+    "tokens": [
+      "Ya",
+      "está",
+      "hecho",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ya",
+        "pinyin": null,
+        "meaning": "Já"
+      },
+      {
+        "id": 2,
+        "word": "está hecho",
+        "pinyin": null,
+        "meaning": "está feito"
+      }
+    ],
+    "id": "local-1772296262549-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Gracias.",
+    "pinyin": null,
+    "translation": "B: Obrigado.",
+    "tokens": [
+      "B:",
+      "Gracias",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gracias",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772296262549-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Eh?",
+    "pinyin": null,
+    "translation": "Hã?",
+    "tokens": [
+      "¿Eh",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh",
+        "pinyin": null,
+        "meaning": "Hã? (interjeição de surpresa)"
+      }
+    ],
+    "id": "local-1772296262549-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Por qué no cabe la tarjeta?",
+    "pinyin": null,
+    "translation": "Por que o cartão não encaixa?",
+    "tokens": [
+      "¿Por",
+      "qué",
+      "no",
+      "cabe",
+      "la",
+      "tarjeta",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Por qué",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "cabe",
+        "pinyin": null,
+        "meaning": "cabe, encaixa (do verbo caber)"
+      },
+      {
+        "id": 3,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      }
+    ],
+    "id": "local-1772296262549-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Puedes ayudarme a echar un vistazo?",
+    "pinyin": null,
+    "translation": "Pode me ajudar a dar uma olhada?",
+    "tokens": [
+      "¿Puedes",
+      "ayudarme",
+      "a",
+      "echar",
+      "un",
+      "vistazo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puedes",
+        "pinyin": null,
+        "meaning": "Pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "ayudarme",
+        "pinyin": null,
+        "meaning": "me ajudar"
+      },
+      {
+        "id": 3,
+        "word": "echar un vistazo",
+        "pinyin": null,
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772296262549-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Tu celular es un iPhone 5, ¿verdad?",
+    "pinyin": null,
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "A:",
+      "Tu",
+      "celular",
+      "es",
+      "un",
+      "iPhone",
+      "5",
+      ",",
+      "¿verdad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "celular",
+        "pinyin": null,
+        "meaning": "celular"
+      },
+      {
+        "id": 2,
+        "word": "¿verdad?",
+        "pinyin": null,
+        "meaning": "certo?, verdade?"
+      }
+    ],
+    "id": "local-1772296262549-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí.",
+    "pinyin": null,
+    "translation": "B: Sim.",
+    "tokens": [
+      "B:",
+      "Sí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772296262549-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Los iPhone 5 no pueden usar mini tarjetas.",
+    "pinyin": null,
+    "translation": "A: Os iPhones 5 não podem usar mini cartões.",
+    "tokens": [
+      "A:",
+      "Los",
+      "iPhone",
+      "5",
+      "no",
+      "pueden",
+      "usar",
+      "mini",
+      "tarjetas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pueden",
+        "pinyin": null,
+        "meaning": "podem (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "usar",
+        "pinyin": null,
+        "meaning": "usar"
+      },
+      {
+        "id": 3,
+        "word": "mini tarjetas",
+        "pinyin": null,
+        "meaning": "mini cartões"
+      }
+    ],
+    "id": "local-1772296262549-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Solo el iPhone 4 puede usar una mini tarjeta.",
+    "pinyin": null,
+    "translation": "Somente o iPhone 4 pode usar um mini cartão.",
+    "tokens": [
+      "Solo",
+      "el",
+      "iPhone",
+      "4",
+      "puede",
+      "usar",
+      "una",
+      "mini",
+      "tarjeta",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Solo",
+        "pinyin": null,
+        "meaning": "Somente, apenas"
+      },
+      {
+        "id": 2,
+        "word": "puede",
+        "pinyin": null,
+        "meaning": "pode (do verbo poder)"
+      },
+      {
+        "id": 3,
+        "word": "usar",
+        "pinyin": null,
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "mini tarjeta",
+        "pinyin": null,
+        "meaning": "mini cartão"
+      }
+    ],
+    "id": "local-1772296262549-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Entonces qué hago?",
+    "pinyin": null,
+    "translation": "B: Então o que eu faço?",
+    "tokens": [
+      "B:",
+      "¿Entonces",
+      "qué",
+      "hago",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "qué",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "hago",
+        "pinyin": null,
+        "meaning": "faço (do verbo hacer)"
+      }
+    ],
+    "id": "local-1772296262549-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No hay problema.",
+    "pinyin": null,
+    "translation": "A: Não há problema.",
+    "tokens": [
+      "A:",
+      "No",
+      "hay",
+      "problema",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No hay problema",
+        "pinyin": null,
+        "meaning": "Não há problema"
+      }
+    ],
+    "id": "local-1772296262549-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Puedes cambiarla por una tarjeta nano SIM.",
+    "pinyin": null,
+    "translation": "Você pode trocá-la por um cartão nano SIM.",
+    "tokens": [
+      "Puedes",
+      "cambiarla",
+      "por",
+      "una",
+      "tarjeta",
+      "nano",
+      "SIM",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puedes",
+        "pinyin": null,
+        "meaning": "Você pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "cambiarla",
+        "pinyin": null,
+        "meaning": "trocá-la, substituí-la"
+      },
+      {
+        "id": 3,
+        "word": "tarjeta nano SIM",
+        "pinyin": null,
+        "meaning": "cartão nano SIM"
+      }
+    ],
+    "id": "local-1772296262549-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Esta es más pequeña que una mini y se usa específicamente en el iPhone 5.",
+    "pinyin": null,
+    "translation": "Esta é menor que uma mini e é usada especificamente no iPhone 5.",
+    "tokens": [
+      "Esta",
+      "es",
+      "más",
+      "pequeña",
+      "que",
+      "una",
+      "mini",
+      "y",
+      "se",
+      "usa",
+      "específicamente",
+      "en",
+      "el",
+      "iPhone",
+      "5",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "más pequeña",
+        "pinyin": null,
+        "meaning": "menor (mais pequena)"
+      },
+      {
+        "id": 2,
+        "word": "mini",
+        "pinyin": null,
+        "meaning": "mini (referindo-se à mini tarjeta)"
+      },
+      {
+        "id": 3,
+        "word": "se usa",
+        "pinyin": null,
+        "meaning": "é usada"
+      },
+      {
+        "id": 4,
+        "word": "específicamente",
+        "pinyin": null,
+        "meaning": "especificamente"
+      }
+    ],
+    "id": "local-1772296262549-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Tengo que pagar por esto?",
+    "pinyin": null,
+    "translation": "B: Tenho que pagar por isso?",
+    "tokens": [
+      "B:",
+      "¿Tengo",
+      "que",
+      "pagar",
+      "por",
+      "esto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tengo que",
+        "pinyin": null,
+        "meaning": "Tenho que (do verbo tener)"
+      },
+      {
+        "id": 2,
+        "word": "pagar",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 3,
+        "word": "esto",
+        "pinyin": null,
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772296262549-20",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La primera vez es gratis.",
+    "pinyin": null,
+    "translation": "A: A primeira vez é grátis.",
+    "tokens": [
+      "A:",
+      "La",
+      "primera",
+      "vez",
+      "es",
+      "gratis",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "primera vez",
+        "pinyin": null,
+        "meaning": "primeira vez"
+      },
+      {
+        "id": 2,
+        "word": "gratis",
+        "pinyin": null,
+        "meaning": "grátis"
+      }
+    ],
+    "id": "local-1772296262549-21",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Si necesitas reemplazar una tarjeta más tarde, deberás pagar 20 kuai por la tarifa de procesamiento.",
+    "pinyin": null,
+    "translation": "Se precisar substituir um cartão mais tarde, deverá pagar 20 kuai pela taxa de processamento.",
+    "tokens": [
+      "Si",
+      "necesitas",
+      "reemplazar",
+      "una",
+      "tarjeta",
+      "más",
+      "tarde",
+      ",",
+      "deberás",
+      "pagar",
+      "20",
+      "kuai",
+      "por",
+      "la",
+      "tarifa",
+      "de",
+      "procesamiento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "necesitas",
+        "pinyin": null,
+        "meaning": "precisar (do verbo necesitar)"
+      },
+      {
+        "id": 2,
+        "word": "reemplazar",
+        "pinyin": null,
+        "meaning": "substituir"
+      },
+      {
+        "id": 3,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      },
+      {
+        "id": 4,
+        "word": "más tarde",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 5,
+        "word": "deberás",
+        "pinyin": null,
+        "meaning": "deverá (do verbo deber)"
+      },
+      {
+        "id": 6,
+        "word": "pagar",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 7,
+        "word": "kuai",
+        "pinyin": null,
+        "meaning": "unidade monetária chinesa"
+      },
+      {
+        "id": 8,
+        "word": "tarifa de procesamiento",
+        "pinyin": null,
+        "meaning": "taxa de processamento"
+      }
+    ],
+    "id": "local-1772296262549-22",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Ok. Gracias.",
+    "pinyin": null,
+    "translation": "B: Ok. Obrigado.",
+    "tokens": [
+      "B:",
+      "Ok",
+      ".",
+      "Gracias",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "Gracias",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772296262549-23",
+    "language": "Espanhol"
+  }
+]

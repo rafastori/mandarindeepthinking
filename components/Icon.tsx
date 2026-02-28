@@ -57,7 +57,8 @@ import {
     History,
     XCircle,
     ZoomIn,
-    ZoomOut
+    ZoomOut,
+    Library
 } from 'lucide-react';
 
 export interface IconProps {
@@ -125,7 +126,8 @@ const icons: Record<string, React.ElementType> = {
     'history': History,
     'x-circle': XCircle,
     'zoom-in': ZoomIn,
-    'zoom-out': ZoomOut
+    'zoom-out': ZoomOut,
+    'library': Library
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

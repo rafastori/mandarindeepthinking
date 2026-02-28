@@ -1,0 +1,426 @@
+[
+  {
+    "chinese": "A: Tongtong, devine qui j'ai rencontré l'autre jour ?",
+    "pinyin": "",
+    "translation": "A: Tongtong, adivinha quem eu encontrei outro dia?",
+    "tokens": [
+      "A",
+      ":",
+      "Tongtong",
+      ",",
+      "devine",
+      "qui",
+      "j'ai",
+      "rencontré",
+      "l'autre",
+      "jour",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "devine",
+        "pinyin": "",
+        "meaning": "adivinha"
+      },
+      {
+        "id": 2,
+        "word": "rencontré",
+        "pinyin": "",
+        "meaning": "encontrei"
+      },
+      {
+        "id": 3,
+        "word": "l'autre jour",
+        "pinyin": "",
+        "meaning": "outro dia"
+      }
+    ],
+    "id": "local-1772296404884-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Qui ?",
+    "pinyin": "",
+    "translation": "B: Quem?",
+    "tokens": [
+      "B",
+      ":",
+      "Qui",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qui",
+        "pinyin": "",
+        "meaning": "Quem"
+      }
+    ],
+    "id": "local-1772296404884-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Mon ex-petit ami.",
+    "pinyin": "",
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "A",
+      ":",
+      "Mon",
+      "ex-petit",
+      "ami",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ex-petit ami",
+        "pinyin": "",
+        "meaning": "ex-namorado"
+      }
+    ],
+    "id": "local-1772296404884-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Vraiment ? Tu lui as parlé ?",
+    "pinyin": "",
+    "translation": "B: Verdade? Você falou com ele?",
+    "tokens": [
+      "B",
+      ":",
+      "Vraiment",
+      "?",
+      "Tu",
+      "lui",
+      "as",
+      "parlé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment",
+        "pinyin": "",
+        "meaning": "Verdade / Realmente"
+      },
+      {
+        "id": 2,
+        "word": "parlé",
+        "pinyin": "",
+        "meaning": "falou / conversou"
+      }
+    ],
+    "id": "local-1772296404884-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non. Il était avec une fille.",
+    "pinyin": "",
+    "translation": "A: Não. Ele estava com uma garota.",
+    "tokens": [
+      "A",
+      ":",
+      "Non",
+      ".",
+      "Il",
+      "était",
+      "avec",
+      "une",
+      "fille",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "était",
+        "pinyin": "",
+        "meaning": "estava (passado imperfeito de 'être')"
+      },
+      {
+        "id": 3,
+        "word": "fille",
+        "pinyin": "",
+        "meaning": "garota / filha"
+      }
+    ],
+    "id": "local-1772296404884-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'était cette maîtresse à lui qui vous a séparés ?",
+    "pinyin": "",
+    "translation": "B: Era aquela amante dele que separou vocês?",
+    "tokens": [
+      "B",
+      ":",
+      "C'était",
+      "cette",
+      "maîtresse",
+      "à",
+      "lui",
+      "qui",
+      "vous",
+      "a",
+      "séparés",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "maîtresse",
+        "pinyin": "",
+        "meaning": "amante / professora"
+      },
+      {
+        "id": 2,
+        "word": "séparés",
+        "pinyin": "",
+        "meaning": "separados"
+      }
+    ],
+    "id": "local-1772296404884-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non. Il en a une nouvelle.",
+    "pinyin": "",
+    "translation": "A: Não. Ele tem uma nova.",
+    "tokens": [
+      "A",
+      ":",
+      "Non",
+      ".",
+      "Il",
+      "en",
+      "a",
+      "une",
+      "nouvelle",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "en a",
+        "pinyin": "",
+        "meaning": "tem dela / tem uma"
+      },
+      {
+        "id": 2,
+        "word": "nouvelle",
+        "pinyin": "",
+        "meaning": "nova"
+      }
+    ],
+    "id": "local-1772296404884-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Hein ? Il trompe encore ? Comment est cette fille ?",
+    "pinyin": "",
+    "translation": "B: Hã? Ele trai de novo? Como é essa garota?",
+    "tokens": [
+      "B",
+      ":",
+      "Hein",
+      "?",
+      "Il",
+      "trompe",
+      "encore",
+      "?",
+      "Comment",
+      "est",
+      "cette",
+      "fille",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hein",
+        "pinyin": "",
+        "meaning": "Hã? / O quê?"
+      },
+      {
+        "id": 2,
+        "word": "trompe",
+        "pinyin": "",
+        "meaning": "engana / trai"
+      },
+      {
+        "id": 3,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "ainda / de novo"
+      }
+    ],
+    "id": "local-1772296404884-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Elle a l'air très jolie, mais on dirait qu'elle a fait de la chirurgie esthétique.",
+    "pinyin": "",
+    "translation": "A: Ela parece muito bonita, mas parece que fez cirurgia plástica.",
+    "tokens": [
+      "A",
+      ":",
+      "Elle",
+      "a",
+      "l'air",
+      "très",
+      "jolie",
+      ",",
+      "mais",
+      "on",
+      "dirait",
+      "qu'elle",
+      "a",
+      "fait",
+      "de",
+      "la",
+      "chirurgie",
+      "esthétique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "a l'air",
+        "pinyin": "",
+        "meaning": "parece / tem a aparência"
+      },
+      {
+        "id": 2,
+        "word": "jolie",
+        "pinyin": "",
+        "meaning": "bonita"
+      },
+      {
+        "id": 3,
+        "word": "on dirait",
+        "pinyin": "",
+        "meaning": "parece que / diríamos"
+      },
+      {
+        "id": 4,
+        "word": "chirurgie esthétique",
+        "pinyin": "",
+        "meaning": "cirurgia plástica"
+      }
+    ],
+    "id": "local-1772296404884-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ce n'est pas un si bon gars. Heureusement, tu as rompu avec lui.",
+    "pinyin": "",
+    "translation": "B: Ele não é um cara tão bom. Felizmente, você terminou com ele.",
+    "tokens": [
+      "B",
+      ":",
+      "Ce",
+      "n'est",
+      "pas",
+      "un",
+      "si",
+      "bon",
+      "gars",
+      ".",
+      "Heureusement",
+      ",",
+      "tu",
+      "as",
+      "rompu",
+      "avec",
+      "lui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "si bon",
+        "pinyin": "",
+        "meaning": "tão bom"
+      },
+      {
+        "id": 2,
+        "word": "gars",
+        "pinyin": "",
+        "meaning": "cara / rapaz"
+      },
+      {
+        "id": 3,
+        "word": "Heureusement",
+        "pinyin": "",
+        "meaning": "Felizmente"
+      },
+      {
+        "id": 4,
+        "word": "rompu avec",
+        "pinyin": "",
+        "meaning": "terminou com"
+      }
+    ],
+    "id": "local-1772296404884-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est sûr. À l'époque, j'ai dû être aveugle pour être avec lui.",
+    "pinyin": "",
+    "translation": "A: Com certeza. Naquela época, eu devo ter sido cega para estar com ele.",
+    "tokens": [
+      "A",
+      ":",
+      "C'est",
+      "sûr",
+      ".",
+      "À",
+      "l'époque",
+      ",",
+      "j'ai",
+      "dû",
+      "être",
+      "aveugle",
+      "pour",
+      "être",
+      "avec",
+      "lui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est sûr",
+        "pinyin": "",
+        "meaning": "Com certeza / É certo"
+      },
+      {
+        "id": 2,
+        "word": "À l'époque",
+        "pinyin": "",
+        "meaning": "Naquela época"
+      },
+      {
+        "id": 3,
+        "word": "j'ai dû",
+        "pinyin": "",
+        "meaning": "eu devo ter / eu tive que"
+      },
+      {
+        "id": 4,
+        "word": "aveugle",
+        "pinyin": "",
+        "meaning": "cega / cego"
+      }
+    ],
+    "id": "local-1772296404884-10",
+    "language": "Francês"
+  }
+]

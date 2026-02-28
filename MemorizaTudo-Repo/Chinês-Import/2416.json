@@ -1,0 +1,493 @@
+[
+  {
+    "chinese": "亲爱的，你的手机响了。是一条短信。",
+    "pinyin": "Qīn'ài de, nǐ de shǒujī xiǎng le. Shì yī tiáo duǎnxìn.",
+    "translation": "Querido(a), seu celular tocou. É uma mensagem de texto.",
+    "tokens": [
+      "亲爱的",
+      "，",
+      "你",
+      "的",
+      "手机",
+      "响",
+      "了",
+      "。",
+      "是",
+      "一",
+      "条",
+      "短信",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "亲爱的",
+        "pinyin": "qīn'ài de",
+        "meaning": "querido(a); meu amor"
+      },
+      {
+        "id": 2,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular; telefone móvel"
+      },
+      {
+        "id": 3,
+        "word": "响",
+        "pinyin": "xiǎng",
+        "meaning": "tocar (som); soar"
+      },
+      {
+        "id": 4,
+        "word": "短信",
+        "pinyin": "duǎnxìn",
+        "meaning": "mensagem de texto; SMS"
+      }
+    ],
+    "id": "local-1772296147265-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我在浴室呢。帮我读一下！",
+    "pinyin": "Wǒ zài yùshì ne. Bāng wǒ dú yīxià!",
+    "translation": "Estou no banheiro. Leia para mim!",
+    "tokens": [
+      "我",
+      "在",
+      "浴室",
+      "呢",
+      "。",
+      "帮",
+      "我",
+      "读",
+      "一下",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "浴室",
+        "pinyin": "yùshì",
+        "meaning": "banheiro; casa de banho"
+      },
+      {
+        "id": 2,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar; auxiliar"
+      },
+      {
+        "id": 3,
+        "word": "读",
+        "pinyin": "dú",
+        "meaning": "ler; estudar"
+      },
+      {
+        "id": 4,
+        "word": "一下",
+        "pinyin": "yīxià",
+        "meaning": "um pouco; brevemente (usado após um verbo para indicar uma ação curta ou casual)"
+      }
+    ],
+    "id": "local-1772296147265-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "15日11点08分，你的尾号8899的银行卡被扣款35000元人民币。嗯？怎么办？你明明在家，怎么会收到信用卡被扣款的通知？",
+    "pinyin": "Shíwǔ rì shíyī diǎn líng bā fēn, nǐ de wěihào bābā jiǔjiǔ de yínhángkǎ bèi kòukuǎn sānwàn wǔqiān yuán rénmínbì. Én? Zěnme bàn? Nǐ míngmíng zài jiā, zěnme huì shōudào xìnyòngkǎ bèi kòukuǎn de tōngzhī?",
+    "translation": "No dia 15, às 11h08, seu cartão bancário final 8899 foi debitado em 35.000 yuans chineses. Hum? O que fazer? Você estava claramente em casa, como pode ter recebido uma notificação de débito do cartão de crédito?",
+    "tokens": [
+      "15",
+      "日",
+      "11",
+      "点",
+      "08",
+      "分",
+      "，",
+      "你",
+      "的",
+      "尾号",
+      "8899",
+      "的",
+      "银行卡",
+      "被",
+      "扣款",
+      "35000",
+      "元",
+      "人民币",
+      "。",
+      "嗯",
+      "？",
+      "怎么",
+      "办",
+      "？",
+      "你",
+      "明明",
+      "在",
+      "家",
+      "，",
+      "怎么",
+      "会",
+      "收到",
+      "信用卡",
+      "被",
+      "扣款",
+      "的",
+      "通知",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "尾号",
+        "pinyin": "wěihào",
+        "meaning": "número final"
+      },
+      {
+        "id": 2,
+        "word": "银行卡",
+        "pinyin": "yínhángkǎ",
+        "meaning": "cartão bancário; cartão de débito"
+      },
+      {
+        "id": 3,
+        "word": "被",
+        "pinyin": "bèi",
+        "meaning": "partícula para indicar voz passiva"
+      },
+      {
+        "id": 4,
+        "word": "扣款",
+        "pinyin": "kòukuǎn",
+        "meaning": "debitar; deduzir (um pagamento)"
+      },
+      {
+        "id": 5,
+        "word": "人民币",
+        "pinyin": "rénmínbì",
+        "meaning": "Renminbi (moeda da China)"
+      },
+      {
+        "id": 6,
+        "word": "怎么办",
+        "pinyin": "zěnme bàn",
+        "meaning": "o que fazer? como resolver?"
+      },
+      {
+        "id": 7,
+        "word": "明明",
+        "pinyin": "míngmíng",
+        "meaning": "claramente; obviamente; evidentemente"
+      },
+      {
+        "id": 8,
+        "word": "收到",
+        "pinyin": "shōudào",
+        "meaning": "receber; obter"
+      },
+      {
+        "id": 9,
+        "word": "信用卡",
+        "pinyin": "xìnyòngkǎ",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 10,
+        "word": "通知",
+        "pinyin": "tōngzhī",
+        "meaning": "notificação; aviso"
+      }
+    ],
+    "id": "local-1772296147265-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "什么？！快给我看看！天哪！我什么时候花了这么多钱？",
+    "pinyin": "Shénme?! Kuài gěi wǒ kànkan! Tiān nà! Wǒ shénme shíhou huā le zhème duō qián?",
+    "translation": "O quê?! Me deixe ver rápido! Meu Deus! Quando foi que gastei tanto dinheiro?",
+    "tokens": [
+      "什么",
+      "？！",
+      "快",
+      "给",
+      "我",
+      "看看",
+      "！",
+      "天哪",
+      "！",
+      "我",
+      "什么",
+      "时候",
+      "花",
+      "了",
+      "这么",
+      "多",
+      "钱",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "快",
+        "pinyin": "kuài",
+        "meaning": "rápido; depressa"
+      },
+      {
+        "id": 2,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada; ver (verbo duplicado para indicar uma ação breve ou casual)"
+      },
+      {
+        "id": 3,
+        "word": "天哪",
+        "pinyin": "tiān nà",
+        "meaning": "Meu Deus!; Oh meu!; Céus!"
+      },
+      {
+        "id": 4,
+        "word": "什么时候",
+        "pinyin": "shénme shíhou",
+        "meaning": "quando"
+      },
+      {
+        "id": 5,
+        "word": "花",
+        "pinyin": "huā",
+        "meaning": "gastar (dinheiro); usar (tempo)"
+      },
+      {
+        "id": 6,
+        "word": "钱",
+        "pinyin": "qián",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772296147265-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "会不会是被别人偷走了盗刷了？",
+    "pinyin": "Huì bù huì shì bèi biérén tōu zǒu le dàoshuā le?",
+    "translation": "Será que foi roubado e usado de forma fraudulenta por outra pessoa?",
+    "tokens": [
+      "会",
+      "不",
+      "会",
+      "是",
+      "被",
+      "别人",
+      "偷走",
+      "了",
+      "盗刷",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "会不会",
+        "pinyin": "huì bù huì",
+        "meaning": "será que; talvez; é possível que"
+      },
+      {
+        "id": 2,
+        "word": "别人",
+        "pinyin": "biérén",
+        "meaning": "outras pessoas; outros"
+      },
+      {
+        "id": 3,
+        "word": "偷走",
+        "pinyin": "tōuzǒu",
+        "meaning": "roubar; levar furtivamente"
+      },
+      {
+        "id": 4,
+        "word": "盗刷",
+        "pinyin": "dàoshuā",
+        "meaning": "uso fraudulento (de cartão); clonagem (de cartão)"
+      }
+    ],
+    "id": "local-1772296147265-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "嗯？那我现在该怎么办呀，亲爱的？",
+    "pinyin": "Én? Nà wǒ xiànzài gāi zěnme bàn ya, qīn'ài de?",
+    "translation": "Hum? Então o que devo fazer agora, querido(a)?",
+    "tokens": [
+      "嗯",
+      "？",
+      "那",
+      "我",
+      "现在",
+      "该",
+      "怎么",
+      "办",
+      "呀",
+      "，",
+      "亲爱的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora; atualmente"
+      },
+      {
+        "id": 2,
+        "word": "该",
+        "pinyin": "gāi",
+        "meaning": "dever; ter que"
+      },
+      {
+        "id": 3,
+        "word": "怎么办",
+        "pinyin": "zěnme bàn",
+        "meaning": "o que fazer? como resolver?"
+      },
+      {
+        "id": 4,
+        "word": "亲爱的",
+        "pinyin": "qīn'ài de",
+        "meaning": "querido(a); meu amor"
+      }
+    ],
+    "id": "local-1772296147265-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "亲爱的，别担心。我们给银行打个电话，冻结账户，然后报警。",
+    "pinyin": "Qīn'ài de, bié dānxīn. Wǒmen gěi yínháng dǎ ge diànhuà, dòngjié zhànghù, ránhòu bàojǐng.",
+    "translation": "Querido(a), não se preocupe. Vamos ligar para o banco, congelar a conta e depois chamar a polícia.",
+    "tokens": [
+      "亲爱的",
+      "，",
+      "别",
+      "担心",
+      "。",
+      "我们",
+      "给",
+      "银行",
+      "打",
+      "个",
+      "电话",
+      "，",
+      "冻结",
+      "账户",
+      "，",
+      "然后",
+      "报警",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "亲爱的",
+        "pinyin": "qīn'ài de",
+        "meaning": "querido(a); meu amor"
+      },
+      {
+        "id": 2,
+        "word": "别",
+        "pinyin": "bié",
+        "meaning": "não (usado em imperativos); não faça"
+      },
+      {
+        "id": 3,
+        "word": "担心",
+        "pinyin": "dānxīn",
+        "meaning": "preocupar-se; estar preocupado"
+      },
+      {
+        "id": 4,
+        "word": "银行",
+        "pinyin": "yínháng",
+        "meaning": "banco"
+      },
+      {
+        "id": 5,
+        "word": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "meaning": "ligar; fazer uma chamada telefônica"
+      },
+      {
+        "id": 6,
+        "word": "冻结",
+        "pinyin": "dòngjié",
+        "meaning": "congelar (conta, fundos)"
+      },
+      {
+        "id": 7,
+        "word": "账户",
+        "pinyin": "zhànghù",
+        "meaning": "conta (bancária)"
+      },
+      {
+        "id": 8,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "depois; em seguida"
+      },
+      {
+        "id": 9,
+        "word": "报警",
+        "pinyin": "bàojǐng",
+        "meaning": "chamar a polícia; relatar à polícia"
+      }
+    ],
+    "id": "local-1772296147265-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "怪不得我今天眼皮一直跳！",
+    "pinyin": "Guàibude wǒ jīntiān yǎnpí yīzhí tiào!",
+    "translation": "Não é à toa que minha pálpebra tem tremido o dia todo!",
+    "tokens": [
+      "怪不得",
+      "我",
+      "今天",
+      "眼皮",
+      "一直",
+      "跳",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "怪不得",
+        "pinyin": "guàibude",
+        "meaning": "não é de admirar; não é à toa; não admira que"
+      },
+      {
+        "id": 2,
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hoje"
+      },
+      {
+        "id": 3,
+        "word": "眼皮",
+        "pinyin": "yǎnpí",
+        "meaning": "pálpebra"
+      },
+      {
+        "id": 4,
+        "word": "一直",
+        "pinyin": "yīzhí",
+        "meaning": "o tempo todo; continuamente; direto"
+      },
+      {
+        "id": 5,
+        "word": "跳",
+        "pinyin": "tiào",
+        "meaning": "pular; saltar; tremer (no contexto de pálpebra)"
+      }
+    ],
+    "id": "local-1772296147265-7",
+    "language": "Chinês"
+  }
+]

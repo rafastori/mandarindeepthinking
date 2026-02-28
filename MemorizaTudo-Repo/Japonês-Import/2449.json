@@ -1,0 +1,506 @@
+[
+  {
+    "chinese": "A: ちょっと、このソフトウェアは何ですか？",
+    "pinyin": "",
+    "translation": "A: Com licença, o que é este software?",
+    "tokens": [
+      "ちょっと",
+      "、",
+      "この",
+      "ソフトウェア",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ちょっと",
+        "pinyin": "chotto",
+        "meaning": "um pouco, com licença"
+      },
+      {
+        "id": 1,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 2,
+        "word": "ソフトウェア",
+        "pinyin": "sofuto-wea",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772298340718-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: Google ドライブです。",
+    "pinyin": "",
+    "translation": "B: É o Google Drive.",
+    "tokens": [
+      "Google",
+      "ドライブ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Google ドライブ",
+        "pinyin": "Gūguru Doraibu",
+        "meaning": "Google Drive"
+      }
+    ],
+    "id": "local-1772298340718-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 聞いたことがないですね。何に使っているんですか？",
+    "pinyin": "",
+    "translation": "A: Nunca ouvi falar. Para que serve?",
+    "tokens": [
+      "聞い",
+      "た",
+      "こと",
+      "が",
+      "ない",
+      "です",
+      "ね",
+      "。",
+      "何",
+      "に",
+      "使っ",
+      "て",
+      "いる",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "聞いたことがない",
+        "pinyin": "kiita koto ga nai",
+        "meaning": "nunca ouvi falar"
+      },
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "使う",
+        "pinyin": "tsukau",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772298340718-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: すごく便利な無料のオンライン文書ツールですよ。ファイルを保存したり共有したりできます。",
+    "pinyin": "",
+    "translation": "B: É uma ferramenta de documentos online gratuita e muito conveniente. Você pode salvar e compartilhar arquivos.",
+    "tokens": [
+      "すごく",
+      "便利",
+      "な",
+      "無料",
+      "の",
+      "オンライン",
+      "文書",
+      "ツール",
+      "です",
+      "よ",
+      "。",
+      "ファイル",
+      "を",
+      "保存",
+      "し",
+      "たり",
+      "共有",
+      "し",
+      "たり",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito (adv.)"
+      },
+      {
+        "id": 1,
+        "word": "便利",
+        "pinyin": "benri",
+        "meaning": "conveniente, útil"
+      },
+      {
+        "id": 2,
+        "word": "無料",
+        "pinyin": "muryō",
+        "meaning": "gratuito"
+      },
+      {
+        "id": 3,
+        "word": "オンライン",
+        "pinyin": "onrain",
+        "meaning": "online"
+      },
+      {
+        "id": 4,
+        "word": "文書",
+        "pinyin": "bunsho",
+        "meaning": "documento"
+      },
+      {
+        "id": 5,
+        "word": "ツール",
+        "pinyin": "tsūru",
+        "meaning": "ferramenta"
+      },
+      {
+        "id": 6,
+        "word": "ファイル",
+        "pinyin": "fairu",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 7,
+        "word": "保存する",
+        "pinyin": "hozon suru",
+        "meaning": "salvar"
+      },
+      {
+        "id": 8,
+        "word": "共有する",
+        "pinyin": "kyōyū suru",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 9,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder, conseguir"
+      }
+    ],
+    "id": "local-1772298340718-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 便利ですか？",
+    "pinyin": "",
+    "translation": "A: É conveniente?",
+    "tokens": [
+      "便利",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "便利",
+        "pinyin": "benri",
+        "meaning": "conveniente, útil"
+      }
+    ],
+    "id": "local-1772298340718-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: とても便利です。最近では、このようなクラウドストレージソフトウェアがたくさんあります。例えば、Baidu Cloud、SkyDrive、Dropboxなどです。",
+    "pinyin": "",
+    "translation": "B: É muito conveniente. Atualmente, existem muitos softwares de armazenamento em nuvem como este. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "とても",
+      "便利",
+      "です",
+      "。",
+      "最近",
+      "で",
+      "は",
+      "、",
+      "このよう",
+      "な",
+      "クラウドストレージソフトウェア",
+      "が",
+      "たくさん",
+      "あり",
+      "ます",
+      "。",
+      "例えば",
+      "、",
+      "Baidu Cloud",
+      "、",
+      "SkyDrive",
+      "、",
+      "Dropbox",
+      "など",
+      "です",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "とても",
+        "pinyin": "totemo",
+        "meaning": "muito (adv.)"
+      },
+      {
+        "id": 1,
+        "word": "便利",
+        "pinyin": "benri",
+        "meaning": "conveniente, útil"
+      },
+      {
+        "id": 2,
+        "word": "最近",
+        "pinyin": "saikin",
+        "meaning": "recentemente, ultimamente"
+      },
+      {
+        "id": 3,
+        "word": "このような",
+        "pinyin": "kono yō na",
+        "meaning": "como este, tal"
+      },
+      {
+        "id": 4,
+        "word": "クラウドストレージソフトウェア",
+        "pinyin": "kuraudo storēji sofuto-wea",
+        "meaning": "software de armazenamento em nuvem"
+      },
+      {
+        "id": 5,
+        "word": "たくさん",
+        "pinyin": "takusan",
+        "meaning": "muitos, muito"
+      },
+      {
+        "id": 6,
+        "word": "例えば",
+        "pinyin": "tatoeba",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 7,
+        "word": "など",
+        "pinyin": "nado",
+        "meaning": "etc., e assim por diante"
+      }
+    ],
+    "id": "local-1772298340718-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: クラウドストレージとは何ですか？",
+    "pinyin": "",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "クラウドストレージ",
+      "と",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "クラウドストレージ",
+        "pinyin": "kuraudo storēji",
+        "meaning": "armazenamento em nuvem"
+      },
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772298340718-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 簡単に言えば、Googleのクラウドドライブにファイルをアップロードすることです。ログインしていれば、異なるデバイスでこれらのドキュメントを利用できます。",
+    "pinyin": "",
+    "translation": "B: Simplificando, é fazer upload de arquivos para o Google Cloud Drive. Se você estiver logado, poderá usar esses documentos em diferentes dispositivos.",
+    "tokens": [
+      "簡単",
+      "に",
+      "言え",
+      "ば",
+      "、",
+      "Google",
+      "の",
+      "クラウドドライブ",
+      "に",
+      "ファイル",
+      "を",
+      "アップロード",
+      "する",
+      "こと",
+      "です",
+      "。",
+      "ログイン",
+      "し",
+      "て",
+      "いれ",
+      "ば",
+      "、",
+      "異なる",
+      "デバイス",
+      "で",
+      "これら",
+      "の",
+      "ドキュメント",
+      "を",
+      "利用",
+      "でき",
+      "ます",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "簡単に言えば",
+        "pinyin": "kantan ni ieba",
+        "meaning": "simplificando, em poucas palavras"
+      },
+      {
+        "id": 1,
+        "word": "Google クラウドドライブ",
+        "pinyin": "Gūguru Kuraudo Doraibu",
+        "meaning": "Google Cloud Drive"
+      },
+      {
+        "id": 2,
+        "word": "ファイル",
+        "pinyin": "fairu",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 3,
+        "word": "アップロードする",
+        "pinyin": "appurōdo suru",
+        "meaning": "fazer upload"
+      },
+      {
+        "id": 4,
+        "word": "ログインする",
+        "pinyin": "roguin suru",
+        "meaning": "fazer login"
+      },
+      {
+        "id": 5,
+        "word": "異なる",
+        "pinyin": "kotonaru",
+        "meaning": "diferente"
+      },
+      {
+        "id": 6,
+        "word": "デバイス",
+        "pinyin": "debaisu",
+        "meaning": "dispositivo"
+      },
+      {
+        "id": 7,
+        "word": "ドキュメント",
+        "pinyin": "dokyumento",
+        "meaning": "documento"
+      },
+      {
+        "id": 8,
+        "word": "利用する",
+        "pinyin": "riyō suru",
+        "meaning": "utilizar, usar"
+      }
+    ],
+    "id": "local-1772298340718-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、メモリを使わなくて済むんですね。それはとても便利ですね。",
+    "pinyin": "",
+    "translation": "A: Então, não preciso usar memória. Isso é muito conveniente, não é?",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "メモリ",
+      "を",
+      "使わ",
+      "なく",
+      "て",
+      "済む",
+      "ん",
+      "です",
+      "ね",
+      "。",
+      "それ",
+      "は",
+      "とても",
+      "便利",
+      "です",
+      "ね",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 1,
+        "word": "メモリ",
+        "pinyin": "memori",
+        "meaning": "memória"
+      },
+      {
+        "id": 2,
+        "word": "使わなくて済む",
+        "pinyin": "tsukawanakute sumu",
+        "meaning": "não precisar usar"
+      },
+      {
+        "id": 3,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 4,
+        "word": "とても",
+        "pinyin": "totemo",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "便利",
+        "pinyin": "benri",
+        "meaning": "conveniente, útil"
+      }
+    ],
+    "id": "local-1772298340718-8",
+    "language": "Japonês"
+  }
+]

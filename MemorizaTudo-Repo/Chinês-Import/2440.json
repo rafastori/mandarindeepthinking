@@ -1,0 +1,571 @@
+[
+  {
+    "chinese": "A: 接下来，我们有请王伟为大家讲几句。大家鼓掌欢迎！",
+    "pinyin": "A: Jiēxiàlái, wǒmen yǒu qǐng Wáng Wěi wèi dàjiā jiǎng jǐ jù. Dàjiā gǔzhǎng huānyíng!",
+    "translation": "A: A seguir, convidamos Wang Wei para dizer algumas palavras a todos. Aplaudam e deem as boas-vindas!",
+    "tokens": [
+      "A:",
+      "接下来",
+      "，",
+      "我们",
+      "有请",
+      "王伟",
+      "为",
+      "大家",
+      "讲",
+      "几句",
+      "。",
+      "大家",
+      "鼓掌",
+      "欢迎",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "接下来",
+        "pinyin": "jiēxiàlái",
+        "meaning": "a seguir, em seguida"
+      },
+      {
+        "id": 2,
+        "word": "有请",
+        "pinyin": "yǒuqǐng",
+        "meaning": "convidar, ter o prazer de convidar"
+      },
+      {
+        "id": 3,
+        "word": "王伟",
+        "pinyin": "Wáng Wěi",
+        "meaning": "Wang Wei (nome próprio)"
+      },
+      {
+        "id": 4,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "讲",
+        "pinyin": "jiǎng",
+        "meaning": "falar, dizer"
+      },
+      {
+        "id": 6,
+        "word": "几句",
+        "pinyin": "jǐ jù",
+        "meaning": "algumas palavras/frases"
+      },
+      {
+        "id": 7,
+        "word": "鼓掌",
+        "pinyin": "gǔzhǎng",
+        "meaning": "aplaudir"
+      },
+      {
+        "id": 8,
+        "word": "欢迎",
+        "pinyin": "huānyíng",
+        "meaning": "dar as boas-vindas"
+      }
+    ],
+    "id": "local-1772297822351-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 谢谢大家！首先，非常感谢各位为我举办这场聚会。",
+    "pinyin": "B: Xièxie dàjiā! Shǒuxiān, fēicháng gǎnxiè gèwèi wèi wǒ jǔbàn zhè chǎng jùhuì.",
+    "translation": "B: Obrigado a todos! Em primeiro lugar, muito obrigado a todos por organizarem esta festa para mim.",
+    "tokens": [
+      "B:",
+      "谢谢",
+      "大家",
+      "！",
+      "首先",
+      "，",
+      "非常",
+      "感谢",
+      "各位",
+      "为",
+      "我",
+      "举办",
+      "这场",
+      "聚会",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 2,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 3,
+        "word": "首先",
+        "pinyin": "shǒuxiān",
+        "meaning": "em primeiro lugar, primeiramente"
+      },
+      {
+        "id": 4,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 5,
+        "word": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "agradecer, gratidão"
+      },
+      {
+        "id": 6,
+        "word": "各位",
+        "pinyin": "gèwèi",
+        "meaning": "todos (formal)"
+      },
+      {
+        "id": 7,
+        "word": "举办",
+        "pinyin": "jǔbàn",
+        "meaning": "organizar, realizar"
+      },
+      {
+        "id": 8,
+        "word": "聚会",
+        "pinyin": "jùhuì",
+        "meaning": "reunião, festa"
+      }
+    ],
+    "id": "local-1772297822351-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我在这家公司工作了十年。这十年里，我学到了很多。非常感谢公司给我提供了一个学习和成长的平台！",
+    "pinyin": "B: Wǒ zài zhè jiā gōngsī gōngzuò le shí nián. Zhè shí nián lǐ, wǒ xuédào le hěnduō. Fēicháng gǎnxiè gōngsī gěi wǒ tígōng le yīgè xuéxí hé chéngzhǎng de píngtái!",
+    "translation": "B: Trabalhei nesta empresa por dez anos. Durante esses dez anos, aprendi muito. Muito obrigado à empresa por me proporcionar uma plataforma de aprendizado e crescimento!",
+    "tokens": [
+      "B:",
+      "我",
+      "在",
+      "这家",
+      "公司",
+      "工作",
+      "了",
+      "十年",
+      "。",
+      "这",
+      "十年",
+      "里",
+      "，",
+      "我",
+      "学到",
+      "了",
+      "很多",
+      "。",
+      "非常",
+      "感谢",
+      "公司",
+      "给",
+      "我",
+      "提供",
+      "了",
+      "一个",
+      "学习",
+      "和",
+      "成长",
+      "的",
+      "平台",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalhar, trabalho"
+      },
+      {
+        "id": 3,
+        "word": "十年",
+        "pinyin": "shí nián",
+        "meaning": "dez anos"
+      },
+      {
+        "id": 4,
+        "word": "学到",
+        "pinyin": "xuédào",
+        "meaning": "aprender, adquirir (conhecimento)"
+      },
+      {
+        "id": 5,
+        "word": "很多",
+        "pinyin": "hěnduō",
+        "meaning": "muito, muitos"
+      },
+      {
+        "id": 6,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 7,
+        "word": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "agradecer, gratidão"
+      },
+      {
+        "id": 8,
+        "word": "提供",
+        "pinyin": "tígōng",
+        "meaning": "oferecer, fornecer"
+      },
+      {
+        "id": 9,
+        "word": "学习",
+        "pinyin": "xuéxí",
+        "meaning": "estudar, aprender"
+      },
+      {
+        "id": 10,
+        "word": "成长",
+        "pinyin": "chéngzhǎng",
+        "meaning": "crescer, crescimento"
+      },
+      {
+        "id": 11,
+        "word": "平台",
+        "pinyin": "píngtái",
+        "meaning": "plataforma"
+      }
+    ],
+    "id": "local-1772297822351-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 感谢各位领导对我的栽培和指导！",
+    "pinyin": "B: Gǎnxiè gèwèi lǐngdǎo duì wǒ de zāipéi hé zhǐdǎo!",
+    "translation": "B: Agradeço a todos os líderes pelo meu desenvolvimento e orientação!",
+    "tokens": [
+      "B:",
+      "感谢",
+      "各位",
+      "领导",
+      "对",
+      "我",
+      "的",
+      "栽培",
+      "和",
+      "指导",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "agradecer, gratidão"
+      },
+      {
+        "id": 2,
+        "word": "各位",
+        "pinyin": "gèwèi",
+        "meaning": "todos (formal)"
+      },
+      {
+        "id": 3,
+        "word": "领导",
+        "pinyin": "lǐngdǎo",
+        "meaning": "líder, liderança"
+      },
+      {
+        "id": 4,
+        "word": "栽培",
+        "pinyin": "zāipéi",
+        "meaning": "cultivar, desenvolver, treinar"
+      },
+      {
+        "id": 5,
+        "word": "指导",
+        "pinyin": "zhǐdǎo",
+        "meaning": "orientar, guiar, orientação"
+      }
+    ],
+    "id": "local-1772297822351-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 感谢各位同事对我一直以来的支持与关爱！",
+    "pinyin": "B: Gǎnxiè gèwèi tóngshì duì wǒ yīzhí yǐlái de zhīchí yǔ guān'ài!",
+    "translation": "B: Agradeço a todos os colegas pelo apoio e carinho contínuos!",
+    "tokens": [
+      "B:",
+      "感谢",
+      "各位",
+      "同事",
+      "对",
+      "我",
+      "一直以来",
+      "的",
+      "支持",
+      "与",
+      "关爱",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "agradecer, gratidão"
+      },
+      {
+        "id": 2,
+        "word": "各位",
+        "pinyin": "gèwèi",
+        "meaning": "todos (formal)"
+      },
+      {
+        "id": 3,
+        "word": "同事",
+        "pinyin": "tóngshì",
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "一直以来",
+        "pinyin": "yīzhí yǐlái",
+        "meaning": "continuamente, desde sempre"
+      },
+      {
+        "id": 5,
+        "word": "支持",
+        "pinyin": "zhīchí",
+        "meaning": "apoiar, apoio"
+      },
+      {
+        "id": 6,
+        "word": "关爱",
+        "pinyin": "guān'ài",
+        "meaning": "cuidar, carinho, amor"
+      }
+    ],
+    "id": "local-1772297822351-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我非常荣幸能与大家一起工作。我会永远记住和大家在一起的时光！",
+    "pinyin": "B: Wǒ fēicháng róngxìng néng yǔ dàjiā yīqǐ gōngzuò. Wǒ huì yǒngyuǎn jìzhù hé dàjiā zài yīqǐ de shíguāng!",
+    "translation": "B: Sinto-me muito honrado em poder trabalhar com todos vocês. Sempre me lembrarei dos momentos que passamos juntos!",
+    "tokens": [
+      "B:",
+      "我",
+      "非常",
+      "荣幸",
+      "能",
+      "与",
+      "大家",
+      "一起",
+      "工作",
+      "。",
+      "我",
+      "会",
+      "永远",
+      "记住",
+      "和",
+      "大家",
+      "在",
+      "一起",
+      "的",
+      "时光",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 2,
+        "word": "荣幸",
+        "pinyin": "róngxìng",
+        "meaning": "ter a honra, honrado"
+      },
+      {
+        "id": 3,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 4,
+        "word": "一起",
+        "pinyin": "yīqǐ",
+        "meaning": "juntos"
+      },
+      {
+        "id": 5,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalhar, trabalho"
+      },
+      {
+        "id": 6,
+        "word": "永远",
+        "pinyin": "yǒngyuǎn",
+        "meaning": "para sempre, eternamente"
+      },
+      {
+        "id": 7,
+        "word": "记住",
+        "pinyin": "jìzhù",
+        "meaning": "lembrar, memorizar"
+      },
+      {
+        "id": 8,
+        "word": "时光",
+        "pinyin": "shíguāng",
+        "meaning": "tempo, momentos"
+      }
+    ],
+    "id": "local-1772297822351-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 最后，衷心祝愿大家身体健康，工作顺利，家庭幸福！",
+    "pinyin": "B: Zuìhòu, zhōngxīn zhùyuàn dàjiā shēntǐ jiànkāng, gōngzuò shùnlì, jiātíng xìngfú!",
+    "translation": "B: Por fim, desejo sinceramente a todos boa saúde, sucesso no trabalho e felicidade familiar!",
+    "tokens": [
+      "B:",
+      "最后",
+      "，",
+      "衷心",
+      "祝愿",
+      "大家",
+      "身体",
+      "健康",
+      "，",
+      "工作",
+      "顺利",
+      "，",
+      "家庭",
+      "幸福",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最后",
+        "pinyin": "zuìhòu",
+        "meaning": "finalmente, por último"
+      },
+      {
+        "id": 2,
+        "word": "衷心",
+        "pinyin": "zhōngxīn",
+        "meaning": "sincero, de coração"
+      },
+      {
+        "id": 3,
+        "word": "祝愿",
+        "pinyin": "zhùyuàn",
+        "meaning": "desejar"
+      },
+      {
+        "id": 4,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "身体",
+        "pinyin": "shēntǐ",
+        "meaning": "corpo, saúde"
+      },
+      {
+        "id": 6,
+        "word": "健康",
+        "pinyin": "jiànkāng",
+        "meaning": "saudável, saúde"
+      },
+      {
+        "id": 7,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 8,
+        "word": "顺利",
+        "pinyin": "shùnlì",
+        "meaning": "suave, bem-sucedido"
+      },
+      {
+        "id": 9,
+        "word": "家庭",
+        "pinyin": "jiātíng",
+        "meaning": "família, lar"
+      },
+      {
+        "id": 10,
+        "word": "幸福",
+        "pinyin": "xìngfú",
+        "meaning": "feliz, felicidade"
+      }
+    ],
+    "id": "local-1772297822351-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 来！大家干杯！",
+    "pinyin": "B: Lái! Dàjiā gānbēi!",
+    "translation": "B: Vamos! Um brinde a todos!",
+    "tokens": [
+      "B:",
+      "来",
+      "！",
+      "大家",
+      "干杯",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "来",
+        "pinyin": "lái",
+        "meaning": "vir, vamos lá"
+      },
+      {
+        "id": 2,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 3,
+        "word": "干杯",
+        "pinyin": "gānbēi",
+        "meaning": "fazer um brinde, saudar"
+      }
+    ],
+    "id": "local-1772297822351-7",
+    "language": "Chinês"
+  }
+]

@@ -1,0 +1,638 @@
+[
+  {
+    "chinese": "A: Oye, hermano. ¿Estás libre este fin de semana? ¿Quieres que nos veamos?",
+    "pinyin": "",
+    "translation": "A: Ei, irmão. Você está livre este fim de semana? Quer que a gente se veja?",
+    "tokens": [
+      "A:",
+      "Oye",
+      ",",
+      "hermano",
+      ".",
+      "¿Estás",
+      "libre",
+      "este",
+      "fin",
+      "de",
+      "semana",
+      "?",
+      "¿Quieres",
+      "que",
+      "nos",
+      "veamos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, ouça"
+      },
+      {
+        "id": 1,
+        "word": "hermano",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "libre",
+        "pinyin": "",
+        "meaning": "livre"
+      },
+      {
+        "id": 3,
+        "word": "fin de semana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "quieres que nos veamos",
+        "pinyin": "",
+        "meaning": "quer que a gente se veja"
+      }
+    ],
+    "id": "local-1772297955776-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Por qué quieres que nos veamos?",
+    "pinyin": "",
+    "translation": "B: Por que você quer que a gente se veja?",
+    "tokens": [
+      "B:",
+      "¿Por",
+      "qué",
+      "quieres",
+      "que",
+      "nos",
+      "veamos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Por qué",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 1,
+        "word": "quieres que nos veamos",
+        "pinyin": "",
+        "meaning": "quer que a gente se veja"
+      }
+    ],
+    "id": "local-1772297955776-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Jeje! Me caso, hermano. ¡Te estoy dando una invitación!",
+    "pinyin": "",
+    "translation": "A: Hehe! Eu vou casar, irmão. Estou te dando um convite!",
+    "tokens": [
+      "A:",
+      "¡Jeje!",
+      "Me",
+      "caso",
+      ",",
+      "hermano",
+      ".",
+      "¡Te",
+      "estoy",
+      "dando",
+      "una",
+      "invitación!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Me caso",
+        "pinyin": "",
+        "meaning": "Eu vou casar, caso-me"
+      },
+      {
+        "id": 1,
+        "word": "hermano",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "estoy dando",
+        "pinyin": "",
+        "meaning": "estou dando"
+      },
+      {
+        "id": 3,
+        "word": "invitación",
+        "pinyin": "",
+        "meaning": "convite"
+      }
+    ],
+    "id": "local-1772297955776-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Eh?! ¡Felicidades! ¿Cuántas mesas vas a organizar para tener?",
+    "pinyin": "",
+    "translation": "B: Hã?! Parabéns! Quantas mesas você vai organizar para ter?",
+    "tokens": [
+      "B:",
+      "¿Eh?!",
+      "¡Felicidades!",
+      "¿Cuántas",
+      "mesas",
+      "vas",
+      "a",
+      "organizar",
+      "para",
+      "tener",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Felicidades",
+        "pinyin": "",
+        "meaning": "Parabéns"
+      },
+      {
+        "id": 1,
+        "word": "Cuántas mesas",
+        "pinyin": "",
+        "meaning": "Quantas mesas"
+      },
+      {
+        "id": 2,
+        "word": "vas a organizar",
+        "pinyin": "",
+        "meaning": "vai organizar"
+      },
+      {
+        "id": 3,
+        "word": "tener",
+        "pinyin": "",
+        "meaning": "ter"
+      }
+    ],
+    "id": "local-1772297955776-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: 12 mesas. Hoy en día es difícil reservar un hotel y también es difícil conseguir un organizador de bodas. Lo planeamos hace un año.",
+    "pinyin": "",
+    "translation": "A: 12 mesas. Hoje em dia é difícil reservar um hotel e também é difícil conseguir um organizador de casamentos. Nós planejamos isso há um ano.",
+    "tokens": [
+      "A:",
+      "12",
+      "mesas",
+      ".",
+      "Hoy",
+      "en",
+      "día",
+      "es",
+      "difícil",
+      "reservar",
+      "un",
+      "hotel",
+      "y",
+      "también",
+      "es",
+      "difícil",
+      "conseguir",
+      "un",
+      "organizador",
+      "de",
+      "bodas",
+      ".",
+      "Lo",
+      "planeamos",
+      "hace",
+      "un",
+      "año",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Hoy en día",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 1,
+        "word": "difícil",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "reservar",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 3,
+        "word": "hotel",
+        "pinyin": "",
+        "meaning": "hotel"
+      },
+      {
+        "id": 4,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 5,
+        "word": "conseguir",
+        "pinyin": "",
+        "meaning": "conseguir"
+      },
+      {
+        "id": 6,
+        "word": "organizador de bodas",
+        "pinyin": "",
+        "meaning": "organizador de casamentos"
+      },
+      {
+        "id": 7,
+        "word": "planeamos",
+        "pinyin": "",
+        "meaning": "planejamos"
+      },
+      {
+        "id": 8,
+        "word": "hace un año",
+        "pinyin": "",
+        "meaning": "há um ano"
+      }
+    ],
+    "id": "local-1772297955776-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No hay nada que puedas hacer. ¡Podrías tener una boda de destino!",
+    "pinyin": "",
+    "translation": "B: Não há nada que você possa fazer. Você poderia fazer um casamento de destino!",
+    "tokens": [
+      "B:",
+      "No",
+      "hay",
+      "nada",
+      "que",
+      "puedas",
+      "hacer",
+      ".",
+      "¡Podrías",
+      "tener",
+      "una",
+      "boda",
+      "de",
+      "destino!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "No hay nada",
+        "pinyin": "",
+        "meaning": "Não há nada"
+      },
+      {
+        "id": 1,
+        "word": "puedas hacer",
+        "pinyin": "",
+        "meaning": "possa fazer"
+      },
+      {
+        "id": 2,
+        "word": "Podrías tener",
+        "pinyin": "",
+        "meaning": "Você poderia ter"
+      },
+      {
+        "id": 3,
+        "word": "boda de destino",
+        "pinyin": "",
+        "meaning": "casamento de destino"
+      }
+    ],
+    "id": "local-1772297955776-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Los padres no lo permitirán. Su pensamiento es muy tradicional.",
+    "pinyin": "",
+    "translation": "A: Os pais não permitirão. O pensamento deles é muito tradicional.",
+    "tokens": [
+      "A:",
+      "Los",
+      "padres",
+      "no",
+      "lo",
+      "permitirán",
+      ".",
+      "Su",
+      "pensamiento",
+      "es",
+      "muy",
+      "tradicional",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "padres",
+        "pinyin": "",
+        "meaning": "pais"
+      },
+      {
+        "id": 1,
+        "word": "permitirán",
+        "pinyin": "",
+        "meaning": "permitirão"
+      },
+      {
+        "id": 2,
+        "word": "pensamiento",
+        "pinyin": "",
+        "meaning": "pensamento"
+      },
+      {
+        "id": 3,
+        "word": "tradicional",
+        "pinyin": "",
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772297955776-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces, ¿piensas ir de luna de miel después de casarte?",
+    "pinyin": "",
+    "translation": "B: Então, você pensa em ir de lua de mel depois de se casar?",
+    "tokens": [
+      "B:",
+      "Entonces",
+      ",",
+      "¿piensas",
+      "ir",
+      "de",
+      "luna",
+      "de",
+      "miel",
+      "después",
+      "de",
+      "casarte",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 1,
+        "word": "piensas",
+        "pinyin": "",
+        "meaning": "você pensa"
+      },
+      {
+        "id": 2,
+        "word": "ir de luna de miel",
+        "pinyin": "",
+        "meaning": "ir de lua de mel"
+      },
+      {
+        "id": 3,
+        "word": "después de",
+        "pinyin": "",
+        "meaning": "depois de"
+      },
+      {
+        "id": 4,
+        "word": "casarte",
+        "pinyin": "",
+        "meaning": "se casar"
+      }
+    ],
+    "id": "local-1772297955776-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Por supuesto, de lo contrario mi esposa no estará contenta.",
+    "pinyin": "",
+    "translation": "A: Claro, caso contrário minha esposa não estará contente.",
+    "tokens": [
+      "A:",
+      "Por",
+      "supuesto",
+      ",",
+      "de",
+      "lo",
+      "contrario",
+      "mi",
+      "esposa",
+      "no",
+      "estará",
+      "contenta",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Por supuesto",
+        "pinyin": "",
+        "meaning": "Claro, por supuesto"
+      },
+      {
+        "id": 1,
+        "word": "de lo contrario",
+        "pinyin": "",
+        "meaning": "caso contrário"
+      },
+      {
+        "id": 2,
+        "word": "esposa",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 3,
+        "word": "estará contenta",
+        "pinyin": "",
+        "meaning": "estará contente"
+      }
+    ],
+    "id": "local-1772297955776-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Tu esposa es la novia que tenías en la universidad?",
+    "pinyin": "",
+    "translation": "B: Sua esposa é a namorada que você tinha na universidade?",
+    "tokens": [
+      "B:",
+      "¿Tu",
+      "esposa",
+      "es",
+      "la",
+      "novia",
+      "que",
+      "tenías",
+      "en",
+      "la",
+      "universidad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "esposa",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 1,
+        "word": "novia",
+        "pinyin": "",
+        "meaning": "namorada"
+      },
+      {
+        "id": 2,
+        "word": "tenías",
+        "pinyin": "",
+        "meaning": "tinha"
+      },
+      {
+        "id": 3,
+        "word": "universidad",
+        "pinyin": "",
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772297955776-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Rompimos hace mucho tiempo. El nombre de mi esposa es Yuanyuan. ¡No te equivoques y la llames de otra manera!",
+    "pinyin": "",
+    "translation": "A: Nós terminamos há muito tempo. O nome da minha esposa é Yuanyuan. Não se engane e a chame de outra forma!",
+    "tokens": [
+      "A:",
+      "Rompimos",
+      "hace",
+      "mucho",
+      "tiempo",
+      ".",
+      "El",
+      "nombre",
+      "de",
+      "mi",
+      "esposa",
+      "es",
+      "Yuanyuan",
+      ".",
+      "¡No",
+      "te",
+      "equivoques",
+      "y",
+      "la",
+      "llames",
+      "de",
+      "otra",
+      "manera!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Rompimos",
+        "pinyin": "",
+        "meaning": "Nós terminamos"
+      },
+      {
+        "id": 1,
+        "word": "hace mucho tiempo",
+        "pinyin": "",
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 2,
+        "word": "nombre",
+        "pinyin": "",
+        "meaning": "nome"
+      },
+      {
+        "id": 3,
+        "word": "esposa",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 4,
+        "word": "No te equivoques",
+        "pinyin": "",
+        "meaning": "Não se engane"
+      },
+      {
+        "id": 5,
+        "word": "llames",
+        "pinyin": "",
+        "meaning": "chame"
+      },
+      {
+        "id": 6,
+        "word": "de otra manera",
+        "pinyin": "",
+        "meaning": "de outra forma"
+      }
+    ],
+    "id": "local-1772297955776-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entendido. Nos vemos el fin de semana.",
+    "pinyin": "",
+    "translation": "B: Entendido. Nos vemos no fim de semana.",
+    "tokens": [
+      "B:",
+      "Entendido",
+      ".",
+      "Nos",
+      "vemos",
+      "el",
+      "fin",
+      "de",
+      "semana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Entendido",
+        "pinyin": "",
+        "meaning": "Entendido"
+      },
+      {
+        "id": 1,
+        "word": "Nos vemos",
+        "pinyin": "",
+        "meaning": "Nos vemos"
+      },
+      {
+        "id": 2,
+        "word": "fin de semana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772297955776-11",
+    "language": "Espanhol"
+  }
+]

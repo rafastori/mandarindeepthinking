@@ -1,0 +1,1122 @@
+[
+  {
+    "chinese": "A: ¿Dónde siente el dolor?",
+    "pinyin": null,
+    "translation": "A: Onde você sente a dor?",
+    "tokens": [
+      "A:",
+      "¿Dónde",
+      "siente",
+      "el",
+      "dolor",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dónde",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "siente",
+        "pinyin": null,
+        "meaning": "(você) sente (do verbo sentir)"
+      },
+      {
+        "id": 3,
+        "word": "dolor",
+        "pinyin": null,
+        "meaning": "dor"
+      }
+    ],
+    "id": "local-1772300758084-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Últimamente no he estado durmiendo y me canso fácilmente.",
+    "pinyin": null,
+    "translation": "B: Ultimamente não tenho dormido e me canso facilmente.",
+    "tokens": [
+      "B:",
+      "Últimamente",
+      "no",
+      "he",
+      "estado",
+      "durmiendo",
+      "y",
+      "me",
+      "canso",
+      "fácilmente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Últimamente",
+        "pinyin": null,
+        "meaning": "Ultimamente"
+      },
+      {
+        "id": 5,
+        "word": "durmiendo",
+        "pinyin": null,
+        "meaning": "dormindo (gerúndio de dormir)"
+      },
+      {
+        "id": 6,
+        "word": "me canso",
+        "pinyin": null,
+        "meaning": "eu me canso (do verbo cansarse)"
+      },
+      {
+        "id": 7,
+        "word": "fácilmente",
+        "pinyin": null,
+        "meaning": "facilmente"
+      }
+    ],
+    "id": "local-1772300758084-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Así que quiero ocuparme de esto.",
+    "pinyin": null,
+    "translation": "Então quero cuidar disso.",
+    "tokens": [
+      "Así",
+      "que",
+      "quiero",
+      "ocuparme",
+      "de",
+      "esto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "Así que",
+        "pinyin": null,
+        "meaning": "Assim que, Então"
+      },
+      {
+        "id": 9,
+        "word": "quiero",
+        "pinyin": null,
+        "meaning": "eu quero (do verbo querer)"
+      },
+      {
+        "id": 10,
+        "word": "ocuparme",
+        "pinyin": null,
+        "meaning": "me ocupar, cuidar"
+      },
+      {
+        "id": 11,
+        "word": "esto",
+        "pinyin": null,
+        "meaning": "isto"
+      }
+    ],
+    "id": "local-1772300758084-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Extienda su mano.",
+    "pinyin": null,
+    "translation": "A: Estenda sua mão.",
+    "tokens": [
+      "A:",
+      "Extienda",
+      "su",
+      "mano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "Extienda",
+        "pinyin": null,
+        "meaning": "Estenda (do verbo extender)"
+      },
+      {
+        "id": 13,
+        "word": "mano",
+        "pinyin": null,
+        "meaning": "mão"
+      }
+    ],
+    "id": "local-1772300758084-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Permítame tomarle el pulso.",
+    "pinyin": null,
+    "translation": "Permita-me tomar seu pulso.",
+    "tokens": [
+      "Permítame",
+      "tomarle",
+      "el",
+      "pulso",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 14,
+        "word": "Permítame",
+        "pinyin": null,
+        "meaning": "Permita-me"
+      },
+      {
+        "id": 15,
+        "word": "tomarle",
+        "pinyin": null,
+        "meaning": "tomar-lhe, tomar seu"
+      },
+      {
+        "id": 16,
+        "word": "pulso",
+        "pinyin": null,
+        "meaning": "pulso"
+      }
+    ],
+    "id": "local-1772300758084-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Saque la lengua.",
+    "pinyin": null,
+    "translation": "Mostre a língua.",
+    "tokens": [
+      "Saque",
+      "la",
+      "lengua",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "Saque",
+        "pinyin": null,
+        "meaning": "Tire, mostre (do verbo sacar)"
+      },
+      {
+        "id": 18,
+        "word": "lengua",
+        "pinyin": null,
+        "meaning": "língua"
+      }
+    ],
+    "id": "local-1772300758084-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Doctor, no es nada, ¿verdad?",
+    "pinyin": null,
+    "translation": "B: Doutor, não é nada, não é?",
+    "tokens": [
+      "B:",
+      "Doctor",
+      ",",
+      "no",
+      "es",
+      "nada",
+      ",",
+      "¿verdad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Doctor",
+        "pinyin": null,
+        "meaning": "Doutor"
+      },
+      {
+        "id": 20,
+        "word": "nada",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 21,
+        "word": "¿verdad?",
+        "pinyin": null,
+        "meaning": "não é?, verdade?"
+      }
+    ],
+    "id": "local-1772300758084-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No hay un gran problema.",
+    "pinyin": null,
+    "translation": "A: Não há um grande problema.",
+    "tokens": [
+      "A:",
+      "No",
+      "hay",
+      "un",
+      "gran",
+      "problema",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "No hay",
+        "pinyin": null,
+        "meaning": "Não há"
+      },
+      {
+        "id": 23,
+        "word": "gran",
+        "pinyin": null,
+        "meaning": "grande"
+      },
+      {
+        "id": 24,
+        "word": "problema",
+        "pinyin": null,
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772300758084-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Un poco deficiente en energía vital.",
+    "pinyin": null,
+    "translation": "Um pouco deficiente em energia vital.",
+    "tokens": [
+      "Un",
+      "poco",
+      "deficiente",
+      "en",
+      "energía",
+      "vital",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "poco",
+        "pinyin": null,
+        "meaning": "pouco"
+      },
+      {
+        "id": 26,
+        "word": "deficiente",
+        "pinyin": null,
+        "meaning": "deficiente"
+      },
+      {
+        "id": 27,
+        "word": "energía",
+        "pinyin": null,
+        "meaning": "energia"
+      },
+      {
+        "id": 28,
+        "word": "vital",
+        "pinyin": null,
+        "meaning": "vital"
+      }
+    ],
+    "id": "local-1772300758084-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Le recetaré una medicina.",
+    "pinyin": null,
+    "translation": "Vou te receitar um remédio.",
+    "tokens": [
+      "Le",
+      "recetaré",
+      "una",
+      "medicina",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "recetaré",
+        "pinyin": null,
+        "meaning": "receitarei (do verbo recetar)"
+      },
+      {
+        "id": 30,
+        "word": "medicina",
+        "pinyin": null,
+        "meaning": "remédio, medicina"
+      }
+    ],
+    "id": "local-1772300758084-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Cómo decocto la medicina?",
+    "pinyin": null,
+    "translation": "B: Como eu decoto o remédio?",
+    "tokens": [
+      "B:",
+      "¿Cómo",
+      "decocto",
+      "la",
+      "medicina",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "Cómo",
+        "pinyin": null,
+        "meaning": "Como"
+      },
+      {
+        "id": 32,
+        "word": "decocto",
+        "pinyin": null,
+        "meaning": "eu decoto (do verbo decoctar)"
+      },
+      {
+        "id": 33,
+        "word": "medicina",
+        "pinyin": null,
+        "meaning": "remédio, medicina"
+      }
+    ],
+    "id": "local-1772300758084-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Decocte dos veces, mezcle la decocción y bébala en dos tandas.",
+    "pinyin": null,
+    "translation": "A: Decocte duas vezes, misture a decocção e beba-a em duas levas.",
+    "tokens": [
+      "A:",
+      "Decocte",
+      "dos",
+      "veces",
+      ",",
+      "mezcle",
+      "la",
+      "decocción",
+      "y",
+      "bébala",
+      "en",
+      "dos",
+      "tandas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Decocte",
+        "pinyin": null,
+        "meaning": "Decote (do verbo decoctar)"
+      },
+      {
+        "id": 35,
+        "word": "dos veces",
+        "pinyin": null,
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 36,
+        "word": "mezcle",
+        "pinyin": null,
+        "meaning": "misture (do verbo mezclar)"
+      },
+      {
+        "id": 37,
+        "word": "decocción",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 38,
+        "word": "bébala",
+        "pinyin": null,
+        "meaning": "beba-a (do verbo beber)"
+      },
+      {
+        "id": 39,
+        "word": "tandas",
+        "pinyin": null,
+        "meaning": "levas, rodadas"
+      }
+    ],
+    "id": "local-1772300758084-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Una por la mañana y otra por la tarde.",
+    "pinyin": null,
+    "translation": "Uma de manhã e outra à tarde.",
+    "tokens": [
+      "Una",
+      "por",
+      "la",
+      "mañana",
+      "y",
+      "otra",
+      "por",
+      "la",
+      "tarde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 40,
+        "word": "mañana",
+        "pinyin": null,
+        "meaning": "manhã"
+      },
+      {
+        "id": 41,
+        "word": "tarde",
+        "pinyin": null,
+        "meaning": "tarde"
+      }
+    ],
+    "id": "local-1772300758084-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Eso significa que tengo que decoctar la medicina cada mañana cuando me levanto.",
+    "pinyin": null,
+    "translation": "B: Isso significa que tenho que decoctar o remédio toda manhã quando me levanto.",
+    "tokens": [
+      "B:",
+      "Eso",
+      "significa",
+      "que",
+      "tengo",
+      "que",
+      "decoctar",
+      "la",
+      "medicina",
+      "cada",
+      "mañana",
+      "cuando",
+      "me",
+      "levanto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "Eso",
+        "pinyin": null,
+        "meaning": "Isso"
+      },
+      {
+        "id": 43,
+        "word": "significa",
+        "pinyin": null,
+        "meaning": "significa (do verbo significar)"
+      },
+      {
+        "id": 44,
+        "word": "tengo que",
+        "pinyin": null,
+        "meaning": "tenho que"
+      },
+      {
+        "id": 45,
+        "word": "decoctar",
+        "pinyin": null,
+        "meaning": "decoctar"
+      },
+      {
+        "id": 46,
+        "word": "cada",
+        "pinyin": null,
+        "meaning": "cada"
+      },
+      {
+        "id": 47,
+        "word": "mañana",
+        "pinyin": null,
+        "meaning": "manhã"
+      },
+      {
+        "id": 48,
+        "word": "cuando",
+        "pinyin": null,
+        "meaning": "quando"
+      },
+      {
+        "id": 49,
+        "word": "me levanto",
+        "pinyin": null,
+        "meaning": "eu me levanto (do verbo levantarse)"
+      }
+    ],
+    "id": "local-1772300758084-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Si le parece una molestia, podemos decoctarla por usted.",
+    "pinyin": null,
+    "translation": "A: Se lhe parecer um incômodo, podemos decotá-la para você.",
+    "tokens": [
+      "A:",
+      "Si",
+      "le",
+      "parece",
+      "una",
+      "molestia",
+      ",",
+      "podemos",
+      "decoctarla",
+      "por",
+      "usted",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 50,
+        "word": "Si",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 51,
+        "word": "parece",
+        "pinyin": null,
+        "meaning": "parece (do verbo parecer)"
+      },
+      {
+        "id": 52,
+        "word": "molestia",
+        "pinyin": null,
+        "meaning": "incômodo, aborrecimento"
+      },
+      {
+        "id": 53,
+        "word": "podemos",
+        "pinyin": null,
+        "meaning": "nós podemos (do verbo poder)"
+      },
+      {
+        "id": 54,
+        "word": "decoctarla",
+        "pinyin": null,
+        "meaning": "decoctá-la"
+      },
+      {
+        "id": 55,
+        "word": "usted",
+        "pinyin": null,
+        "meaning": "você (formal)"
+      }
+    ],
+    "id": "local-1772300758084-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Es el hospital el que la decoctaría por mí?",
+    "pinyin": null,
+    "translation": "B: É o hospital que a decotaria para mim?",
+    "tokens": [
+      "B:",
+      "¿Es",
+      "el",
+      "hospital",
+      "el",
+      "que",
+      "la",
+      "decoctaría",
+      "por",
+      "mí",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 56,
+        "word": "hospital",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 57,
+        "word": "decoctaría",
+        "pinyin": null,
+        "meaning": "decoctaria (do verbo decoctar)"
+      },
+      {
+        "id": 58,
+        "word": "mí",
+        "pinyin": null,
+        "meaning": "mim"
+      }
+    ],
+    "id": "local-1772300758084-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí.",
+    "pinyin": null,
+    "translation": "A: Sim.",
+    "tokens": [
+      "A:",
+      "Sí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 59,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772300758084-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Paga una pequeña tarifa por la decocción.",
+    "pinyin": null,
+    "translation": "Você paga uma pequena taxa pela decocção.",
+    "tokens": [
+      "Paga",
+      "una",
+      "pequeña",
+      "tarifa",
+      "por",
+      "la",
+      "decocción",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 60,
+        "word": "Paga",
+        "pinyin": null,
+        "meaning": "(você) paga (do verbo pagar)"
+      },
+      {
+        "id": 61,
+        "word": "pequeña",
+        "pinyin": null,
+        "meaning": "pequena"
+      },
+      {
+        "id": 62,
+        "word": "tarifa",
+        "pinyin": null,
+        "meaning": "taxa, tarifa"
+      },
+      {
+        "id": 63,
+        "word": "decocción",
+        "pinyin": null,
+        "meaning": "decocção"
+      }
+    ],
+    "id": "local-1772300758084-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Luego el hospital puede decoctarla por usted y envasarla al vacío.",
+    "pinyin": null,
+    "translation": "Depois o hospital pode decotá-la para você e embalá-la a vácuo.",
+    "tokens": [
+      "Luego",
+      "el",
+      "hospital",
+      "puede",
+      "decoctarla",
+      "por",
+      "usted",
+      "y",
+      "envasarla",
+      "al",
+      "vacío",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 64,
+        "word": "Luego",
+        "pinyin": null,
+        "meaning": "Depois"
+      },
+      {
+        "id": 65,
+        "word": "hospital",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 66,
+        "word": "puede",
+        "pinyin": null,
+        "meaning": "pode (do verbo poder)"
+      },
+      {
+        "id": 67,
+        "word": "decoctarla",
+        "pinyin": null,
+        "meaning": "decoctá-la"
+      },
+      {
+        "id": 68,
+        "word": "envasarla",
+        "pinyin": null,
+        "meaning": "embalá-la (do verbo envasar)"
+      },
+      {
+        "id": 69,
+        "word": "vacío",
+        "pinyin": null,
+        "meaning": "vácuo"
+      }
+    ],
+    "id": "local-1772300758084-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Si la calienta al beberla, es más fácil de tomar.",
+    "pinyin": null,
+    "translation": "Se a aquecer ao bebê-la, é mais fácil de tomar.",
+    "tokens": [
+      "Si",
+      "la",
+      "calienta",
+      "al",
+      "beberla",
+      ",",
+      "es",
+      "más",
+      "fácil",
+      "de",
+      "tomar",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 70,
+        "word": "calienta",
+        "pinyin": null,
+        "meaning": "(você) aquece (do verbo calentar)"
+      },
+      {
+        "id": 71,
+        "word": "beberla",
+        "pinyin": null,
+        "meaning": "beber ela"
+      },
+      {
+        "id": 72,
+        "word": "más fácil",
+        "pinyin": null,
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 73,
+        "word": "tomar",
+        "pinyin": null,
+        "meaning": "tomar, beber"
+      }
+    ],
+    "id": "local-1772300758084-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces haré que la decocten por mí.",
+    "pinyin": null,
+    "translation": "B: Então farei com que a decoctem para mim.",
+    "tokens": [
+      "B:",
+      "Entonces",
+      "haré",
+      "que",
+      "la",
+      "decocten",
+      "por",
+      "mí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 74,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 75,
+        "word": "haré que",
+        "pinyin": null,
+        "meaning": "farei com que"
+      },
+      {
+        "id": 76,
+        "word": "decocten",
+        "pinyin": null,
+        "meaning": "decoctem (do verbo decoctar)"
+      },
+      {
+        "id": 77,
+        "word": "mí",
+        "pinyin": null,
+        "meaning": "mim"
+      }
+    ],
+    "id": "local-1772300758084-20",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Puedo obtenerla hoy?",
+    "pinyin": null,
+    "translation": "Posso obtê-la hoje?",
+    "tokens": [
+      "¿Puedo",
+      "obtenerla",
+      "hoy",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 78,
+        "word": "Puedo",
+        "pinyin": null,
+        "meaning": "Posso (do verbo poder)"
+      },
+      {
+        "id": 79,
+        "word": "obtenerla",
+        "pinyin": null,
+        "meaning": "obtê-la"
+      },
+      {
+        "id": 80,
+        "word": "hoy",
+        "pinyin": null,
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772300758084-21",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No, eso no funcionará.",
+    "pinyin": null,
+    "translation": "A: Não, isso não vai funcionar.",
+    "tokens": [
+      "A:",
+      "No",
+      ",",
+      "eso",
+      "no",
+      "funcionará",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 81,
+        "word": "No",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 82,
+        "word": "eso",
+        "pinyin": null,
+        "meaning": "isso"
+      },
+      {
+        "id": 83,
+        "word": "funcionará",
+        "pinyin": null,
+        "meaning": "funcionará (do verbo funcionar)"
+      }
+    ],
+    "id": "local-1772300758084-22",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "La decocción lleva tiempo.",
+    "pinyin": null,
+    "translation": "A decocção leva tempo.",
+    "tokens": [
+      "La",
+      "decocción",
+      "lleva",
+      "tiempo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 84,
+        "word": "decocción",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 85,
+        "word": "lleva tiempo",
+        "pinyin": null,
+        "meaning": "leva tempo"
+      }
+    ],
+    "id": "local-1772300758084-23",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Lo más pronto sería mañana que podría obtenerla.",
+    "pinyin": null,
+    "translation": "O mais cedo seria amanhã que você poderia obtê-la.",
+    "tokens": [
+      "Lo",
+      "más",
+      "pronto",
+      "sería",
+      "mañana",
+      "que",
+      "podría",
+      "obtenerla",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 86,
+        "word": "más pronto",
+        "pinyin": null,
+        "meaning": "mais cedo"
+      },
+      {
+        "id": 87,
+        "word": "mañana",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 88,
+        "word": "podría",
+        "pinyin": null,
+        "meaning": "(você) poderia (do verbo poder)"
+      },
+      {
+        "id": 89,
+        "word": "obtenerla",
+        "pinyin": null,
+        "meaning": "obtê-la"
+      }
+    ],
+    "id": "local-1772300758084-24",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Primero, vaya a pagar y luego vaya a la ventanilla para la decocción de la medicina y regístrese.",
+    "pinyin": null,
+    "translation": "Primeiro, vá pagar e depois vá ao balcão para a decocção do remédio e registre-se.",
+    "tokens": [
+      "Primero",
+      ",",
+      "vaya",
+      "a",
+      "pagar",
+      "y",
+      "luego",
+      "vaya",
+      "a",
+      "la",
+      "ventanilla",
+      "para",
+      "la",
+      "decocción",
+      "de",
+      "la",
+      "medicina",
+      "y",
+      "regístrese",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 90,
+        "word": "Primero",
+        "pinyin": null,
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 91,
+        "word": "vaya",
+        "pinyin": null,
+        "meaning": "vá (do verbo ir)"
+      },
+      {
+        "id": 92,
+        "word": "pagar",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 93,
+        "word": "luego",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 94,
+        "word": "ventanilla",
+        "pinyin": null,
+        "meaning": "balcão, guichê"
+      },
+      {
+        "id": 95,
+        "word": "decocción",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 96,
+        "word": "medicina",
+        "pinyin": null,
+        "meaning": "remédio, medicina"
+      },
+      {
+        "id": 97,
+        "word": "regístrese",
+        "pinyin": null,
+        "meaning": "registre-se (do verbo registrarse)"
+      }
+    ],
+    "id": "local-1772300758084-25",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Ok, gracias Doctor.",
+    "pinyin": null,
+    "translation": "B: Ok, obrigado Doutor.",
+    "tokens": [
+      "B:",
+      "Ok",
+      ",",
+      "gracias",
+      "Doctor",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 98,
+        "word": "gracias",
+        "pinyin": null,
+        "meaning": "obrigado(a)"
+      },
+      {
+        "id": 99,
+        "word": "Doctor",
+        "pinyin": null,
+        "meaning": "Doutor"
+      }
+    ],
+    "id": "local-1772300758084-26",
+    "language": "Espanhol"
+  }
+]

@@ -1,0 +1,877 @@
+[
+  {
+    "chinese": "스핀, 점프, 슬라이드. 와, 김연아 선수 동작 정말 아름답네요.",
+    "pinyin": "",
+    "translation": "A: Spin, salto, deslize. Uau, os movimentos da atleta Yuna Kim são realmente lindos.",
+    "tokens": [
+      "스핀",
+      ",",
+      "점프",
+      ",",
+      "슬라이드",
+      ".",
+      "와",
+      ",",
+      "김연아",
+      "선수",
+      "동작",
+      "정말",
+      "아름답네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "스핀",
+        "pinyin": "seupin",
+        "meaning": "spin"
+      },
+      {
+        "id": 2,
+        "word": "점프",
+        "pinyin": "jeompeu",
+        "meaning": "salto"
+      },
+      {
+        "id": 3,
+        "word": "슬라이드",
+        "pinyin": "seullaideu",
+        "meaning": "deslize"
+      },
+      {
+        "id": 4,
+        "word": "김연아",
+        "pinyin": "Gimyeon-a",
+        "meaning": "Kim Yuna (nome)"
+      },
+      {
+        "id": 5,
+        "word": "선수",
+        "pinyin": "seonsu",
+        "meaning": "atleta"
+      },
+      {
+        "id": 6,
+        "word": "동작",
+        "pinyin": "dongjak",
+        "meaning": "movimento"
+      },
+      {
+        "id": 7,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente"
+      },
+      {
+        "id": 8,
+        "word": "아름답다",
+        "pinyin": "areumdapda",
+        "meaning": "ser bonito/lindo"
+      }
+    ],
+    "id": "local-1772296015789-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "동계 올림픽 피겨스케이팅 보고 있어요? 아, 이 선수 그 한국의 어린 천재 선수군요.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à patinação artística dos Jogos Olímpicos de Inverno? Ah, essa atleta é aquela jovem atleta gênio da Coreia.",
+    "tokens": [
+      "동계",
+      "올림픽",
+      "피겨스케이팅",
+      "보고",
+      "있어요",
+      "?",
+      "아",
+      ",",
+      "이",
+      "선수",
+      "그",
+      "한국의",
+      "어린",
+      "천재",
+      "선수군요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "동계",
+        "pinyin": "donggye",
+        "meaning": "inverno"
+      },
+      {
+        "id": 10,
+        "word": "올림픽",
+        "pinyin": "ollimpik",
+        "meaning": "Olimpíadas"
+      },
+      {
+        "id": 11,
+        "word": "피겨스케이팅",
+        "pinyin": "pigyeoseukeiting",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 12,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 13,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "estar (para ação contínua)"
+      },
+      {
+        "id": 5,
+        "word": "선수",
+        "pinyin": "seonsu",
+        "meaning": "atleta"
+      },
+      {
+        "id": 14,
+        "word": "한국",
+        "pinyin": "Hanguk",
+        "meaning": "Coreia"
+      },
+      {
+        "id": 15,
+        "word": "어리다",
+        "pinyin": "eorida",
+        "meaning": "ser jovem"
+      },
+      {
+        "id": 16,
+        "word": "천재",
+        "pinyin": "cheonjae",
+        "meaning": "gênio"
+      }
+    ],
+    "id": "local-1772296015789-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "네. 동작이 너무 아름답죠!",
+    "pinyin": "",
+    "translation": "A: Sim. Os movimentos são tão lindos, não são?",
+    "tokens": [
+      "네",
+      ".",
+      "동작이",
+      "너무",
+      "아름답죠",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 6,
+        "word": "동작",
+        "pinyin": "dongjak",
+        "meaning": "movimento"
+      },
+      {
+        "id": 18,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demasiado"
+      },
+      {
+        "id": 8,
+        "word": "아름답다",
+        "pinyin": "areumdapda",
+        "meaning": "ser bonito/lindo"
+      }
+    ],
+    "id": "local-1772296015789-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "그런데 이번 동계 올림픽에서는 금메달 못 땄네요. 4년 전 밴쿠버 올림픽 때가 전성기였던 것 같아요.",
+    "pinyin": "",
+    "translation": "B: Mas ela não conseguiu a medalha de ouro nestes Jogos Olímpicos de Inverno. Acho que 4 anos atrás, nas Olimpíadas de Vancouver, era o auge dela.",
+    "tokens": [
+      "그런데",
+      "이번",
+      "동계",
+      "올림픽에서는",
+      "금메달",
+      "못",
+      "땄네요",
+      ".",
+      "4년",
+      "전",
+      "밴쿠버",
+      "올림픽",
+      "때가",
+      "전성기였던",
+      "것",
+      "같아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "그런데",
+        "pinyin": "geureonde",
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 20,
+        "word": "이번",
+        "pinyin": "ibeon",
+        "meaning": "esta vez, atual"
+      },
+      {
+        "id": 9,
+        "word": "동계",
+        "pinyin": "donggye",
+        "meaning": "inverno"
+      },
+      {
+        "id": 10,
+        "word": "올림픽",
+        "pinyin": "ollimpik",
+        "meaning": "Olimpíadas"
+      },
+      {
+        "id": 21,
+        "word": "금메달",
+        "pinyin": "geummedal",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 22,
+        "word": "못 따다",
+        "pinyin": "mot ttada",
+        "meaning": "não conseguir/ganhar (medalha)"
+      },
+      {
+        "id": 23,
+        "word": "4년",
+        "pinyin": "sanyeon",
+        "meaning": "4 anos"
+      },
+      {
+        "id": 24,
+        "word": "전",
+        "pinyin": "jeon",
+        "meaning": "atrás, antes"
+      },
+      {
+        "id": 25,
+        "word": "밴쿠버",
+        "pinyin": "Baenkubeo",
+        "meaning": "Vancouver"
+      },
+      {
+        "id": 26,
+        "word": "때",
+        "pinyin": "ttae",
+        "meaning": "tempo, quando"
+      },
+      {
+        "id": 27,
+        "word": "전성기",
+        "pinyin": "jeonseonggi",
+        "meaning": "auge, auge de popularidade"
+      },
+      {
+        "id": 28,
+        "word": "같다",
+        "pinyin": "gatda",
+        "meaning": "parecer, ser como"
+      }
+    ],
+    "id": "local-1772296015789-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "제 마음속에는 영원한 '빙판 위의 여왕'이에요! 이번에 금메달은 못 땄지만, 여전히 뛰어난 연기를 보여줬어요. 이번 동계 올림픽 끝나고 은퇴한다니 아쉽네요.",
+    "pinyin": "",
+    "translation": "A: No meu coração, ela é a eterna 'Rainha do Gelo'! Mesmo não tendo ganho a medalha de ouro desta vez, ela ainda mostrou uma performance excelente. É uma pena que ela vá se aposentar depois destes Jogos Olímpicos de Inverno.",
+    "tokens": [
+      "제",
+      "마음속에는",
+      "영원한",
+      "'",
+      "빙판",
+      "위의",
+      "여왕",
+      "'",
+      "이에요",
+      "!",
+      "이번에",
+      "금메달은",
+      "못",
+      "땄지만",
+      ",",
+      "여전히",
+      "뛰어난",
+      "연기를",
+      "보여줬어요",
+      ".",
+      "이번",
+      "동계",
+      "올림픽",
+      "끝나고",
+      "은퇴한다니",
+      "아쉽네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "저",
+        "pinyin": "jeo",
+        "meaning": "eu (forma humilde)"
+      },
+      {
+        "id": 30,
+        "word": "마음속",
+        "pinyin": "maeumsok",
+        "meaning": "no coração/mente"
+      },
+      {
+        "id": 31,
+        "word": "영원하다",
+        "pinyin": "yeongwonhada",
+        "meaning": "ser eterno"
+      },
+      {
+        "id": 32,
+        "word": "빙판",
+        "pinyin": "bingpan",
+        "meaning": "pista de gelo"
+      },
+      {
+        "id": 33,
+        "word": "위",
+        "pinyin": "wi",
+        "meaning": "em cima, acima"
+      },
+      {
+        "id": 34,
+        "word": "여왕",
+        "pinyin": "yeowang",
+        "meaning": "rainha"
+      },
+      {
+        "id": 35,
+        "word": "이다",
+        "pinyin": "ida",
+        "meaning": "ser (verbo de ligação)"
+      },
+      {
+        "id": 20,
+        "word": "이번",
+        "pinyin": "ibeon",
+        "meaning": "esta vez, atual"
+      },
+      {
+        "id": 21,
+        "word": "금메달",
+        "pinyin": "geummedal",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 22,
+        "word": "못 따다",
+        "pinyin": "mot ttada",
+        "meaning": "não conseguir/ganhar (medalha)"
+      },
+      {
+        "id": 36,
+        "word": "-지만",
+        "pinyin": "-jiman",
+        "meaning": "embora, mas"
+      },
+      {
+        "id": 37,
+        "word": "여전히",
+        "pinyin": "yeojeonhi",
+        "meaning": "ainda, mesmo assim"
+      },
+      {
+        "id": 38,
+        "word": "뛰어나다",
+        "pinyin": "ttwieonada",
+        "meaning": "ser excelente, extraordinário"
+      },
+      {
+        "id": 39,
+        "word": "연기",
+        "pinyin": "yeon-gi",
+        "meaning": "performance, atuação"
+      },
+      {
+        "id": 40,
+        "word": "보여주다",
+        "pinyin": "boyeojuda",
+        "meaning": "mostrar"
+      },
+      {
+        "id": 9,
+        "word": "동계",
+        "pinyin": "donggye",
+        "meaning": "inverno"
+      },
+      {
+        "id": 10,
+        "word": "올림픽",
+        "pinyin": "ollimpik",
+        "meaning": "Olimpíadas"
+      },
+      {
+        "id": 41,
+        "word": "끝나다",
+        "pinyin": "kkeutnada",
+        "meaning": "terminar, acabar"
+      },
+      {
+        "id": 42,
+        "word": "은퇴하다",
+        "pinyin": "euntoehanda",
+        "meaning": "aposentar-se"
+      },
+      {
+        "id": 43,
+        "word": "-다니",
+        "pinyin": "-dani",
+        "meaning": "ao ouvir que (expressa razão/reação)"
+      },
+      {
+        "id": 44,
+        "word": "아쉽다",
+        "pinyin": "aswipda",
+        "meaning": "ser uma pena, lamentável"
+      }
+    ],
+    "id": "local-1772296015789-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "이번 여자 싱글 우승자 소트니코바 선수도 정말 잘하네요. 게다가 겨우 17살이래요.",
+    "pinyin": "",
+    "translation": "B: A vencedora do single feminino desta vez, a atleta Sotnikova, também se saiu muito bem. Além disso, ela tem apenas 17 anos, dizem.",
+    "tokens": [
+      "이번",
+      "여자",
+      "싱글",
+      "우승자",
+      "소트니코바",
+      "선수도",
+      "정말",
+      "잘하네요",
+      ".",
+      "게다가",
+      "겨우",
+      "17살이래요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "이번",
+        "pinyin": "ibeon",
+        "meaning": "esta vez, atual"
+      },
+      {
+        "id": 45,
+        "word": "여자",
+        "pinyin": "yeoja",
+        "meaning": "mulher, feminino"
+      },
+      {
+        "id": 46,
+        "word": "싱글",
+        "pinyin": "singgeul",
+        "meaning": "single"
+      },
+      {
+        "id": 47,
+        "word": "우승자",
+        "pinyin": "useungja",
+        "meaning": "vencedora, campeã"
+      },
+      {
+        "id": 48,
+        "word": "소트니코바",
+        "pinyin": "Soteunnikoba",
+        "meaning": "Sotnikova (nome)"
+      },
+      {
+        "id": 5,
+        "word": "선수",
+        "pinyin": "seonsu",
+        "meaning": "atleta"
+      },
+      {
+        "id": 49,
+        "word": "-도",
+        "pinyin": "-do",
+        "meaning": "também"
+      },
+      {
+        "id": 7,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente"
+      },
+      {
+        "id": 50,
+        "word": "잘하다",
+        "pinyin": "jalhada",
+        "meaning": "fazer bem"
+      },
+      {
+        "id": 51,
+        "word": "게다가",
+        "pinyin": "gedaga",
+        "meaning": "além disso, ademais"
+      },
+      {
+        "id": 52,
+        "word": "겨우",
+        "pinyin": "gyeou",
+        "meaning": "apenas, mal"
+      },
+      {
+        "id": 53,
+        "word": "17살",
+        "pinyin": "yeolilgosal",
+        "meaning": "17 anos de idade"
+      },
+      {
+        "id": 54,
+        "word": "-래요",
+        "pinyin": "-raeyo",
+        "meaning": "(dizem que, ouvi dizer que)"
+      }
+    ],
+    "id": "local-1772296015789-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "네. 그런데 피겨스케이팅 정말 우아한 운동이네요. 저도 지금 배워 볼 수 있을까요?",
+    "pinyin": "",
+    "translation": "A: Sim. Mas a patinação artística é um esporte realmente elegante. Eu também conseguiria tentar aprender agora?",
+    "tokens": [
+      "네",
+      ".",
+      "그런데",
+      "피겨스케이팅",
+      "정말",
+      "우아한",
+      "운동이네요",
+      ".",
+      "저도",
+      "지금",
+      "배워",
+      "볼",
+      "수",
+      "있을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 19,
+        "word": "그런데",
+        "pinyin": "geureonde",
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 11,
+        "word": "피겨스케이팅",
+        "pinyin": "pigyeoseukeiting",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 7,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente"
+      },
+      {
+        "id": 55,
+        "word": "우아하다",
+        "pinyin": "uahada",
+        "meaning": "ser elegante"
+      },
+      {
+        "id": 56,
+        "word": "운동",
+        "pinyin": "undong",
+        "meaning": "esporte, exercício"
+      },
+      {
+        "id": 29,
+        "word": "저",
+        "pinyin": "jeo",
+        "meaning": "eu (forma humilde)"
+      },
+      {
+        "id": 49,
+        "word": "-도",
+        "pinyin": "-do",
+        "meaning": "também"
+      },
+      {
+        "id": 57,
+        "word": "지금",
+        "pinyin": "jigeum",
+        "meaning": "agora"
+      },
+      {
+        "id": 58,
+        "word": "배우다",
+        "pinyin": "baeuda",
+        "meaning": "aprender"
+      },
+      {
+        "id": 59,
+        "word": "-아/어 보다",
+        "pinyin": "-a/eo boda",
+        "meaning": "tentar fazer"
+      },
+      {
+        "id": 60,
+        "word": "-ㄹ 수 있다",
+        "pinyin": "-l su itda",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772296015789-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "당신이요? 꿈도 꾸지 마세요. TV에 나오는 저 선수들 봐요? 다 어릴 때부터 시작했잖아요. 지금 시작하면 너무 늦어요.",
+    "pinyin": "",
+    "translation": "B: Você? Nem sonhe com isso. Veja aqueles atletas que aparecem na TV? Todos eles começaram desde pequenos, não é? Se você começar agora, é tarde demais.",
+    "tokens": [
+      "당신이요",
+      "?",
+      "꿈도",
+      "꾸지",
+      "마세요",
+      ".",
+      "TV에",
+      "나오는",
+      "저",
+      "선수들",
+      "봐요",
+      "?",
+      "다",
+      "어릴",
+      "때부터",
+      "시작했잖아요",
+      ".",
+      "지금",
+      "시작하면",
+      "너무",
+      "늦어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 61,
+        "word": "당신",
+        "pinyin": "dangsin",
+        "meaning": "você"
+      },
+      {
+        "id": 62,
+        "word": "꿈",
+        "pinyin": "kkum",
+        "meaning": "sonho"
+      },
+      {
+        "id": 63,
+        "word": "꾸다",
+        "pinyin": "kkuda",
+        "meaning": "sonhar"
+      },
+      {
+        "id": 64,
+        "word": "-지 마세요",
+        "pinyin": "-ji maseyo",
+        "meaning": "por favor, não faça"
+      },
+      {
+        "id": 65,
+        "word": "TV",
+        "pinyin": "tibi",
+        "meaning": "TV"
+      },
+      {
+        "id": 66,
+        "word": "나오다",
+        "pinyin": "naoda",
+        "meaning": "aparecer, sair"
+      },
+      {
+        "id": 67,
+        "word": "저",
+        "pinyin": "jeo",
+        "meaning": "aquele, aqueles"
+      },
+      {
+        "id": 5,
+        "word": "선수",
+        "pinyin": "seonsu",
+        "meaning": "atleta"
+      },
+      {
+        "id": 68,
+        "word": "-들",
+        "pinyin": "-deul",
+        "meaning": "(sufixo plural)"
+      },
+      {
+        "id": 12,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 69,
+        "word": "다",
+        "pinyin": "da",
+        "meaning": "tudo, todos"
+      },
+      {
+        "id": 15,
+        "word": "어리다",
+        "pinyin": "eorida",
+        "meaning": "ser jovem"
+      },
+      {
+        "id": 70,
+        "word": "때부터",
+        "pinyin": "ttae-buteo",
+        "meaning": "desde a época de"
+      },
+      {
+        "id": 71,
+        "word": "시작하다",
+        "pinyin": "sijakhada",
+        "meaning": "começar"
+      },
+      {
+        "id": 72,
+        "word": "-잖아요",
+        "pinyin": "-janayo",
+        "meaning": "(terminação, buscando concordância, 'não é?')"
+      },
+      {
+        "id": 57,
+        "word": "지금",
+        "pinyin": "jigeum",
+        "meaning": "agora"
+      },
+      {
+        "id": 73,
+        "word": "-면",
+        "pinyin": "-myeon",
+        "meaning": "se, quando (condicional)"
+      },
+      {
+        "id": 18,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demasiado"
+      },
+      {
+        "id": 74,
+        "word": "늦다",
+        "pinyin": "neutda",
+        "meaning": "ser tarde, atrasado"
+      }
+    ],
+    "id": "local-1772296015789-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "경쟁하고 싶은 건 아니에요. 그냥 재미로 하고 싶어요.",
+    "pinyin": "",
+    "translation": "A: Não é que eu queira competir. Só quero fazer por diversão.",
+    "tokens": [
+      "경쟁하고",
+      "싶은",
+      "건",
+      "아니에요",
+      ".",
+      "그냥",
+      "재미로",
+      "하고",
+      "싶어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 75,
+        "word": "경쟁하다",
+        "pinyin": "gyeongjaenghada",
+        "meaning": "competir"
+      },
+      {
+        "id": 76,
+        "word": "-고 싶다",
+        "pinyin": "-go sipda",
+        "meaning": "querer fazer"
+      },
+      {
+        "id": 77,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa, fato"
+      },
+      {
+        "id": 78,
+        "word": "아니다",
+        "pinyin": "anida",
+        "meaning": "não ser"
+      },
+      {
+        "id": 79,
+        "word": "그냥",
+        "pinyin": "geunyang",
+        "meaning": "apenas, simplesmente"
+      },
+      {
+        "id": 80,
+        "word": "재미",
+        "pinyin": "jaemi",
+        "meaning": "diversão, interesse"
+      },
+      {
+        "id": 81,
+        "word": "-로",
+        "pinyin": "-ro",
+        "meaning": "por, com (instrumental/qualidade)"
+      },
+      {
+        "id": 82,
+        "word": "하다",
+        "pinyin": "hada",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772296015789-8",
+    "language": "Coreano"
+  }
+]

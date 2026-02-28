@@ -1,0 +1,168 @@
+[
+  {
+    "chinese": "Questo è un testo di prova master.",
+    "pinyin": null,
+    "translation": "Este é um texto de teste mestre.",
+    "tokens": [
+      "Questo",
+      "è",
+      "un",
+      "testo",
+      "di",
+      "prova",
+      "master",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questo",
+        "pinyin": null,
+        "meaning": "Este/Isto"
+      },
+      {
+        "id": 2,
+        "word": "è",
+        "pinyin": null,
+        "meaning": "é (verbo ser)"
+      },
+      {
+        "id": 3,
+        "word": "un",
+        "pinyin": null,
+        "meaning": "um"
+      },
+      {
+        "id": 4,
+        "word": "testo",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 5,
+        "word": "prova",
+        "pinyin": null,
+        "meaning": "teste/prova"
+      },
+      {
+        "id": 6,
+        "word": "master",
+        "pinyin": null,
+        "meaning": "mestre"
+      }
+    ],
+    "id": "local-1772301651561-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "È un testo molto semplice per testare la pipeline di sincronizzazione a cascata intelligente dall'inglese a tutte le altre lingue.",
+    "pinyin": null,
+    "translation": "É um texto muito simples para testar o pipeline de sincronização em cascata inteligente do inglês para todas as outras línguas.",
+    "tokens": [
+      "È",
+      "un",
+      "testo",
+      "molto",
+      "semplice",
+      "per",
+      "testare",
+      "la",
+      "pipeline",
+      "di",
+      "sincronizzazione",
+      "a",
+      "cascata",
+      "intelligente",
+      "dall'",
+      "inglese",
+      "a",
+      "tutte",
+      "le",
+      "altre",
+      "lingue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È",
+        "pinyin": null,
+        "meaning": "é (verbo ser)"
+      },
+      {
+        "id": 2,
+        "word": "testo",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 3,
+        "word": "molto",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "semplice",
+        "pinyin": null,
+        "meaning": "simples"
+      },
+      {
+        "id": 5,
+        "word": "testare",
+        "pinyin": null,
+        "meaning": "testar"
+      },
+      {
+        "id": 6,
+        "word": "pipeline",
+        "pinyin": null,
+        "meaning": "pipeline"
+      },
+      {
+        "id": 7,
+        "word": "sincronizzazione",
+        "pinyin": null,
+        "meaning": "sincronização"
+      },
+      {
+        "id": 8,
+        "word": "cascata",
+        "pinyin": null,
+        "meaning": "cascata"
+      },
+      {
+        "id": 9,
+        "word": "intelligente",
+        "pinyin": null,
+        "meaning": "inteligente"
+      },
+      {
+        "id": 10,
+        "word": "inglese",
+        "pinyin": null,
+        "meaning": "inglês"
+      },
+      {
+        "id": 11,
+        "word": "tutte",
+        "pinyin": null,
+        "meaning": "todas"
+      },
+      {
+        "id": 12,
+        "word": "altre",
+        "pinyin": null,
+        "meaning": "outras"
+      },
+      {
+        "id": 13,
+        "word": "lingue",
+        "pinyin": null,
+        "meaning": "línguas"
+      }
+    ],
+    "id": "local-1772301651561-1",
+    "language": "Italiano"
+  }
+]

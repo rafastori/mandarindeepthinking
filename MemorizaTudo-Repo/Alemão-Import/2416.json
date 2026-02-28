@@ -1,0 +1,451 @@
+[
+  {
+    "chinese": "A: Schatz, dein Handy klingelt. Es ist eine SMS.",
+    "pinyin": "",
+    "translation": "A: Querido(a), seu celular está tocando. É um SMS.",
+    "tokens": [
+      "A:",
+      "Schatz",
+      ",",
+      "dein",
+      "Handy",
+      "klingelt",
+      ".",
+      "Es",
+      "ist",
+      "eine",
+      "SMS",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "querido(a), tesouro"
+      },
+      {
+        "id": 2,
+        "word": "Handy",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "klingelt",
+        "pinyin": "",
+        "meaning": "toca (do verbo klingeln)"
+      },
+      {
+        "id": 4,
+        "word": "SMS",
+        "pinyin": "",
+        "meaning": "mensagem de texto, SMS"
+      }
+    ],
+    "id": "local-1772292688647-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich bin auf der Toilette. Lies sie mir vor!",
+    "pinyin": "",
+    "translation": "B: Eu estou no banheiro. Leia-me!",
+    "tokens": [
+      "B:",
+      "Ich",
+      "bin",
+      "auf",
+      "der",
+      "Toilette",
+      ".",
+      "Lies",
+      "sie",
+      "mir",
+      "vor",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Toilette",
+        "pinyin": "",
+        "meaning": "banheiro, sanitário"
+      },
+      {
+        "id": 2,
+        "word": "Lies vor",
+        "pinyin": "",
+        "meaning": "leia em voz alta (do verbo vorlesen)"
+      }
+    ],
+    "id": "local-1772292688647-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Am 15. um 11:08 Uhr wurde deiner Bankkarte mit den Endziffern 8899 ein Betrag von 35.000 Yuan Renminbi belastet. Hä? Was machen wir denn jetzt? Du bist doch zu Hause. Wie kannst du da eine Benachrichtigung bekommen, dass deine Kreditkarte belastet wurde?",
+    "pinyin": "",
+    "translation": "A: No dia 15, às 11:08, um valor de 35.000 Yuan Renminbi foi debitado do seu cartão bancário com os dígitos finais 8899. Hã? O que faremos agora? Você está em casa. Como pode ter recebido uma notificação de que seu cartão de crédito foi debitado?",
+    "tokens": [
+      "A:",
+      "Am",
+      "15",
+      ".",
+      "um",
+      "11",
+      ":",
+      "08",
+      "Uhr",
+      "wurde",
+      "deiner",
+      "Bankkarte",
+      "mit",
+      "den",
+      "Endziffern",
+      "8899",
+      "ein",
+      "Betrag",
+      "von",
+      "35.000",
+      "Yuan",
+      "Renminbi",
+      "belastet",
+      ".",
+      "Hä",
+      "?",
+      "Was",
+      "machen",
+      "wir",
+      "denn",
+      "jetzt",
+      "?",
+      "Du",
+      "bist",
+      "doch",
+      "zu",
+      "Hause",
+      ".",
+      "Wie",
+      "kannst",
+      "du",
+      "da",
+      "eine",
+      "Benachrichtigung",
+      "bekommen",
+      ",",
+      "dass",
+      "deine",
+      "Kreditkarte",
+      "belastet",
+      "wurde",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bankkarte",
+        "pinyin": "",
+        "meaning": "cartão bancário, cartão de débito"
+      },
+      {
+        "id": 2,
+        "word": "Endziffern",
+        "pinyin": "",
+        "meaning": "dígitos finais"
+      },
+      {
+        "id": 3,
+        "word": "Betrag",
+        "pinyin": "",
+        "meaning": "valor, quantia"
+      },
+      {
+        "id": 4,
+        "word": "Yuan Renminbi",
+        "pinyin": "",
+        "meaning": "Yuan Renminbi (moeda chinesa)"
+      },
+      {
+        "id": 5,
+        "word": "belastet",
+        "pinyin": "",
+        "meaning": "debitado, cobrado (do verbo belasten)"
+      },
+      {
+        "id": 6,
+        "word": "Hä?",
+        "pinyin": "",
+        "meaning": "Hã? O quê?"
+      },
+      {
+        "id": 7,
+        "word": "zu Hause",
+        "pinyin": "",
+        "meaning": "em casa"
+      },
+      {
+        "id": 8,
+        "word": "Benachrichtigung",
+        "pinyin": "",
+        "meaning": "notificação, aviso"
+      },
+      {
+        "id": 9,
+        "word": "Kreditkarte",
+        "pinyin": "",
+        "meaning": "cartão de crédito"
+      }
+    ],
+    "id": "local-1772292688647-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was?! Schnell, lass mich sehen! Mein Gott! Wann habe ich denn so viel Geld ausgegeben?",
+    "pinyin": "",
+    "translation": "B: O quê?! Rápido, deixe-me ver! Meu Deus! Quando foi que eu gastei tanto dinheiro?",
+    "tokens": [
+      "B:",
+      "Was",
+      "?!",
+      "Schnell",
+      ",",
+      "lass",
+      "mich",
+      "sehen",
+      "!",
+      "Mein",
+      "Gott",
+      "!",
+      "Wann",
+      "habe",
+      "ich",
+      "denn",
+      "so",
+      "viel",
+      "Geld",
+      "ausgegeben",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schnell",
+        "pinyin": "",
+        "meaning": "rápido"
+      },
+      {
+        "id": 2,
+        "word": "sehen",
+        "pinyin": "",
+        "meaning": "ver"
+      },
+      {
+        "id": 3,
+        "word": "Mein Gott!",
+        "pinyin": "",
+        "meaning": "Meu Deus!"
+      },
+      {
+        "id": 4,
+        "word": "ausgegeben",
+        "pinyin": "",
+        "meaning": "gasto (do verbo ausgeben)"
+      }
+    ],
+    "id": "local-1772292688647-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Könnte es sein, dass jemand sie gestohlen und benutzt hat?",
+    "pinyin": "",
+    "translation": "A: Poderia ser que alguém a tenha roubado e usado?",
+    "tokens": [
+      "A:",
+      "Könnte",
+      "es",
+      "sein",
+      ",",
+      "dass",
+      "jemand",
+      "sie",
+      "gestohlen",
+      "und",
+      "benutzt",
+      "hat",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gestohlen",
+        "pinyin": "",
+        "meaning": "roubado (do verbo stehlen)"
+      },
+      {
+        "id": 2,
+        "word": "benutzt",
+        "pinyin": "",
+        "meaning": "usado (do verbo benutzen)"
+      }
+    ],
+    "id": "local-1772292688647-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hä? Was mache ich denn jetzt, Schatz?",
+    "pinyin": "",
+    "translation": "B: Hã? O que eu faço agora, querido(a)?",
+    "tokens": [
+      "B:",
+      "Hä",
+      "?",
+      "Was",
+      "mache",
+      "ich",
+      "denn",
+      "jetzt",
+      ",",
+      "Schatz",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hä?",
+        "pinyin": "",
+        "meaning": "Hã? O quê?"
+      },
+      {
+        "id": 2,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "querido(a), tesouro"
+      }
+    ],
+    "id": "local-1772292688647-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Schatz, keine Panik. Wir rufen einfach bei der Bank an, lassen das Konto einfrieren und erstatten dann Anzeige bei der Polizei.",
+    "pinyin": "",
+    "translation": "A: Querido(a), sem pânico. Nós simplesmente ligamos para o banco, mandamos congelar a conta e depois apresentamos uma queixa à polícia.",
+    "tokens": [
+      "A:",
+      "Schatz",
+      ",",
+      "keine",
+      "Panik",
+      ".",
+      "Wir",
+      "rufen",
+      "einfach",
+      "bei",
+      "der",
+      "Bank",
+      "an",
+      ",",
+      "lassen",
+      "das",
+      "Konto",
+      "einfrieren",
+      "und",
+      "erstatten",
+      "dann",
+      "Anzeige",
+      "bei",
+      "der",
+      "Polizei",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "querido(a), tesouro"
+      },
+      {
+        "id": 2,
+        "word": "Panik",
+        "pinyin": "",
+        "meaning": "pânico"
+      },
+      {
+        "id": 3,
+        "word": "anrufen",
+        "pinyin": "",
+        "meaning": "ligar (rufen ... an)"
+      },
+      {
+        "id": 4,
+        "word": "Bank",
+        "pinyin": "",
+        "meaning": "banco"
+      },
+      {
+        "id": 5,
+        "word": "Konto",
+        "pinyin": "",
+        "meaning": "conta"
+      },
+      {
+        "id": 6,
+        "word": "einfrieren",
+        "pinyin": "",
+        "meaning": "congelar"
+      },
+      {
+        "id": 7,
+        "word": "Anzeige erstatten",
+        "pinyin": "",
+        "meaning": "prestar queixa, denunciar"
+      },
+      {
+        "id": 8,
+        "word": "Polizei",
+        "pinyin": "",
+        "meaning": "polícia"
+      }
+    ],
+    "id": "local-1772292688647-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kein Wunder, dass heute mein Auge zuckt!",
+    "pinyin": "",
+    "translation": "B: Não é à toa que meu olho está tremendo hoje!",
+    "tokens": [
+      "B:",
+      "Kein",
+      "Wunder",
+      ",",
+      "dass",
+      "heute",
+      "mein",
+      "Auge",
+      "zuckt",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kein Wunder",
+        "pinyin": "",
+        "meaning": "não é à toa, sem surpresa"
+      },
+      {
+        "id": 2,
+        "word": "Auge",
+        "pinyin": "",
+        "meaning": "olho"
+      },
+      {
+        "id": 3,
+        "word": "zuckt",
+        "pinyin": "",
+        "meaning": "treme, pisca (do verbo zucken)"
+      }
+    ],
+    "id": "local-1772292688647-7",
+    "language": "Alemão"
+  }
+]

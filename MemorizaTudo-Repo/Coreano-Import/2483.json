@@ -1,0 +1,869 @@
+[
+  {
+    "chinese": "샤오왕, 제 이메일 보셨어요? 질문 있으세요?",
+    "pinyin": "",
+    "translation": "A: Xiaowang, você viu meu e-mail? Você tem alguma pergunta?",
+    "tokens": [
+      "샤오왕",
+      ",",
+      "제",
+      "이메일",
+      "보셨어요",
+      "?",
+      "질문",
+      "있으세요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오왕",
+        "pinyin": "Shaowang",
+        "meaning": "Xiaowang (nome)"
+      },
+      {
+        "id": 2,
+        "word": "제",
+        "pinyin": "je",
+        "meaning": "meu/minha (forma humilde)"
+      },
+      {
+        "id": 3,
+        "word": "이메일",
+        "pinyin": "imeil",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 4,
+        "word": "보셨어요",
+        "pinyin": "bosyeosseoyo",
+        "meaning": "você viu? (formal polido)"
+      },
+      {
+        "id": 5,
+        "word": "질문",
+        "pinyin": "jilmun",
+        "meaning": "pergunta"
+      },
+      {
+        "id": 6,
+        "word": "있으세요",
+        "pinyin": "isseuseyo",
+        "meaning": "você tem? (formal polido)"
+      }
+    ],
+    "id": "local-1772301184459-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "그 이메일 봤습니다. 아주 자세해서, 대략적으로 어떤 업무인지 이해했습니다.",
+    "pinyin": "",
+    "translation": "B: Eu vi o e-mail. É muito detalhado, então entendi aproximadamente qual é a tarefa.",
+    "tokens": [
+      "그",
+      "이메일",
+      "봤습니다",
+      ".",
+      "아주",
+      "자세해서",
+      ",",
+      "대략적으로",
+      "어떤",
+      "업무인지",
+      "이해했습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그",
+        "pinyin": "geu",
+        "meaning": "aquele/a"
+      },
+      {
+        "id": 2,
+        "word": "이메일",
+        "pinyin": "imeil",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 3,
+        "word": "봤습니다",
+        "pinyin": "bwatsseumnida",
+        "meaning": "eu vi (formal polido)"
+      },
+      {
+        "id": 4,
+        "word": "아주",
+        "pinyin": "aju",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "자세해서",
+        "pinyin": "jasehaeseo",
+        "meaning": "por ser detalhado (de '자세하다': ser detalhado)"
+      },
+      {
+        "id": 6,
+        "word": "대략적으로",
+        "pinyin": "daeryakjeogeuro",
+        "meaning": "aproximadamente"
+      },
+      {
+        "id": 7,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 8,
+        "word": "업무",
+        "pinyin": "eopmu",
+        "meaning": "tarefa, trabalho"
+      },
+      {
+        "id": 9,
+        "word": "이해했습니다",
+        "pinyin": "ihaehaetseumnida",
+        "meaning": "eu entendi (formal polido)"
+      }
+    ],
+    "id": "local-1772301184459-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "여기 일상 업무 목록이 있습니다. 월요일부터 금요일까지 제 업무 일정이 나열되어 있으니, 이것을 참고하여 앞으로의 업무를 정리할 수 있습니다.",
+    "pinyin": "",
+    "translation": "A: Aqui está uma lista de tarefas diárias. Meu cronograma de trabalho de segunda a sexta-feira está listado, então você pode consultar isso para organizar seus futuros trabalhos.",
+    "tokens": [
+      "여기",
+      "일상",
+      "업무",
+      "목록이",
+      "있습니다",
+      ".",
+      "월요일부터",
+      "금요일까지",
+      "제",
+      "업무",
+      "일정이",
+      "나열되어",
+      "있으니",
+      ",",
+      "이것을",
+      "참고하여",
+      "앞으로의",
+      "업무를",
+      "정리할",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여기",
+        "pinyin": "yeogi",
+        "meaning": "aqui"
+      },
+      {
+        "id": 2,
+        "word": "일상",
+        "pinyin": "ilsang",
+        "meaning": "diário, cotidiano"
+      },
+      {
+        "id": 3,
+        "word": "업무",
+        "pinyin": "eopmu",
+        "meaning": "tarefa, trabalho"
+      },
+      {
+        "id": 4,
+        "word": "목록",
+        "pinyin": "mongnok",
+        "meaning": "lista"
+      },
+      {
+        "id": 5,
+        "word": "있습니다",
+        "pinyin": "isseumnida",
+        "meaning": "há, existe (formal polido)"
+      },
+      {
+        "id": 6,
+        "word": "월요일",
+        "pinyin": "woryoil",
+        "meaning": "segunda-feira"
+      },
+      {
+        "id": 7,
+        "word": "부터",
+        "pinyin": "buteo",
+        "meaning": "a partir de, desde"
+      },
+      {
+        "id": 8,
+        "word": "금요일",
+        "pinyin": "geumyoil",
+        "meaning": "sexta-feira"
+      },
+      {
+        "id": 9,
+        "word": "까지",
+        "pinyin": "kkaji",
+        "meaning": "até"
+      },
+      {
+        "id": 10,
+        "word": "제",
+        "pinyin": "je",
+        "meaning": "meu/minha"
+      },
+      {
+        "id": 11,
+        "word": "일정",
+        "pinyin": "iljeong",
+        "meaning": "cronograma, agenda"
+      },
+      {
+        "id": 12,
+        "word": "나열되어",
+        "pinyin": "naryeolldweo",
+        "meaning": "listado, enumerado (de '나열하다': listar)"
+      },
+      {
+        "id": 13,
+        "word": "있으니",
+        "pinyin": "isseuni",
+        "meaning": "como está, porque está (de '있다': estar/ter + '-으니': conjunção causal)"
+      },
+      {
+        "id": 14,
+        "word": "이것",
+        "pinyin": "igeot",
+        "meaning": "isto, esta coisa"
+      },
+      {
+        "id": 15,
+        "word": "참고하여",
+        "pinyin": "chamgohayeo",
+        "meaning": "consultando, referenciando (de '참고하다': consultar)"
+      },
+      {
+        "id": 16,
+        "word": "앞으로",
+        "pinyin": "apeuro",
+        "meaning": "daqui para frente, futuro"
+      },
+      {
+        "id": 17,
+        "word": "정리할 수 있습니다",
+        "pinyin": "jeongnihal su isseumnida",
+        "meaning": "pode organizar (de '정리하다': organizar + '-ㄹ 수 있다': poder)"
+      }
+    ],
+    "id": "local-1772301184459-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "감사합니다. 아, 그리고 어제 영업 관련 고객 이메일을 받았습니다. 어떻게 처리해야 하나요?",
+    "pinyin": "",
+    "translation": "B: Obrigado. Ah, e ontem recebi um e-mail de cliente relacionado a vendas. Como devo lidar com isso?",
+    "tokens": [
+      "감사합니다",
+      ".",
+      "아",
+      ",",
+      "그리고",
+      "어제",
+      "영업",
+      "관련",
+      "고객",
+      "이메일을",
+      "받았습니다",
+      ".",
+      "어떻게",
+      "처리해야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "감사합니다",
+        "pinyin": "gamsahamnida",
+        "meaning": "obrigado/a (formal polido)"
+      },
+      {
+        "id": 2,
+        "word": "그리고",
+        "pinyin": "geurigo",
+        "meaning": "e (conjunção)"
+      },
+      {
+        "id": 3,
+        "word": "어제",
+        "pinyin": "eoje",
+        "meaning": "ontem"
+      },
+      {
+        "id": 4,
+        "word": "영업",
+        "pinyin": "yeong-eop",
+        "meaning": "vendas, negócio"
+      },
+      {
+        "id": 5,
+        "word": "관련",
+        "pinyin": "gwallyeon",
+        "meaning": "relacionado a"
+      },
+      {
+        "id": 6,
+        "word": "고객",
+        "pinyin": "gogaek",
+        "meaning": "cliente"
+      },
+      {
+        "id": 7,
+        "word": "이메일",
+        "pinyin": "imeil",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 8,
+        "word": "받았습니다",
+        "pinyin": "badatsseumnida",
+        "meaning": "eu recebi (formal polido)"
+      },
+      {
+        "id": 9,
+        "word": "어떻게",
+        "pinyin": "eotteoke",
+        "meaning": "como"
+      },
+      {
+        "id": 10,
+        "word": "처리해야 하나요",
+        "pinyin": "cheorihaeya hanayo",
+        "meaning": "como devo lidar/processar? (de '처리하다': lidar, processar + '-어야 하다': dever + '-나요': final de pergunta)"
+      }
+    ],
+    "id": "local-1772301184459-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "저희는 영업 담당이 아니니, 리밍에게 직접 전달하면 됩니다. 리밍의 이메일 주소는 직원 연락처 목록에 있습니다.",
+    "pinyin": "",
+    "translation": "A: Nós não somos responsáveis pelas vendas, então você pode simplesmente passar para o Liming. O endereço de e-mail do Liming está na lista de contatos dos funcionários.",
+    "tokens": [
+      "저희는",
+      "영업",
+      "담당이",
+      "아니니",
+      ",",
+      "리밍에게",
+      "직접",
+      "전달하면",
+      "됩니다",
+      ".",
+      "리밍의",
+      "이메일",
+      "주소는",
+      "직원",
+      "연락처",
+      "목록에",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저희",
+        "pinyin": "jeohi",
+        "meaning": "nós (forma humilde)"
+      },
+      {
+        "id": 2,
+        "word": "영업",
+        "pinyin": "yeong-eop",
+        "meaning": "vendas"
+      },
+      {
+        "id": 3,
+        "word": "담당",
+        "pinyin": "damdang",
+        "meaning": "responsável, encarregado"
+      },
+      {
+        "id": 4,
+        "word": "아니니",
+        "pinyin": "anini",
+        "meaning": "porque não somos (de '아니다': não ser + '-으니': conjunção causal)"
+      },
+      {
+        "id": 5,
+        "word": "리밍",
+        "pinyin": "Liming",
+        "meaning": "Liming (nome)"
+      },
+      {
+        "id": 6,
+        "word": "에게",
+        "pinyin": "ege",
+        "meaning": "para (pessoa)"
+      },
+      {
+        "id": 7,
+        "word": "직접",
+        "pinyin": "jikjeop",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 8,
+        "word": "전달하면 됩니다",
+        "pinyin": "jeondalhamyeon doemnida",
+        "meaning": "basta entregar/passar (de '전달하다': entregar, passar + '-면 됩니다': basta que)"
+      },
+      {
+        "id": 9,
+        "word": "이메일 주소",
+        "pinyin": "imeil juso",
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 10,
+        "word": "직원",
+        "pinyin": "jigwon",
+        "meaning": "funcionário"
+      },
+      {
+        "id": 11,
+        "word": "연락처",
+        "pinyin": "yeollakcheo",
+        "meaning": "contato (informação)"
+      },
+      {
+        "id": 12,
+        "word": "목록",
+        "pinyin": "mongnok",
+        "meaning": "lista"
+      }
+    ],
+    "id": "local-1772301184459-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "기술적인 질문은요?",
+    "pinyin": "",
+    "translation": "B: E quanto às perguntas técnicas?",
+    "tokens": [
+      "기술적인",
+      "질문은요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기술적인",
+        "pinyin": "gisureojeogin",
+        "meaning": "técnico/a"
+      },
+      {
+        "id": 2,
+        "word": "질문",
+        "pinyin": "jilmun",
+        "meaning": "pergunta"
+      },
+      {
+        "id": 3,
+        "word": "은요",
+        "pinyin": "eunyo",
+        "meaning": "e (quanto a)? (sufixo de pergunta)"
+      }
+    ],
+    "id": "local-1772301184459-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "황지아 씨가 기술 부서를 담당합니다. 그에게 전달해도 괜찮습니다.",
+    "pinyin": "",
+    "translation": "A: A Sra. Hwang Jia é responsável pelo departamento técnico. Você pode passar para ela.",
+    "tokens": [
+      "황지아",
+      "씨가",
+      "기술",
+      "부서를",
+      "담당합니다",
+      ".",
+      "그에게",
+      "전달해도",
+      "괜찮습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "황지아",
+        "pinyin": "Hwang Jia",
+        "meaning": "Hwang Jia (nome)"
+      },
+      {
+        "id": 2,
+        "word": "씨",
+        "pinyin": "ssi",
+        "meaning": "Sr./Sra. (sufixo de tratamento)"
+      },
+      {
+        "id": 3,
+        "word": "기술 부서",
+        "pinyin": "gisureu buseo",
+        "meaning": "departamento técnico"
+      },
+      {
+        "id": 4,
+        "word": "담당합니다",
+        "pinyin": "damdanghamnida",
+        "meaning": "é responsável (formal polido)"
+      },
+      {
+        "id": 5,
+        "word": "그에게",
+        "pinyin": "geuege",
+        "meaning": "para ele/ela"
+      },
+      {
+        "id": 6,
+        "word": "전달해도 괜찮습니다",
+        "pinyin": "jeondalhaedo gwaenchaneumnida",
+        "meaning": "está tudo bem se você passar (de '전달하다': entregar + '-아/어도 괜찮다': está tudo bem se)"
+      }
+    ],
+    "id": "local-1772301184459-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "그런데 저는 그분들을 모릅니다.",
+    "pinyin": "",
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "그런데",
+      "저는",
+      "그분들을",
+      "모릅니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그런데",
+        "pinyin": "geureonde",
+        "meaning": "mas, contudo"
+      },
+      {
+        "id": 2,
+        "word": "저",
+        "pinyin": "jeo",
+        "meaning": "eu (forma humilde)"
+      },
+      {
+        "id": 3,
+        "word": "그분들",
+        "pinyin": "geubundeul",
+        "meaning": "eles/elas (plural formal de '그분': aquela pessoa)"
+      },
+      {
+        "id": 4,
+        "word": "모릅니다",
+        "pinyin": "moreumnida",
+        "meaning": "eu não sei/não conheço (formal polido)"
+      }
+    ],
+    "id": "local-1772301184459-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "걱정하지 마세요. 제가 오늘 아침에 동료들에게 이메일을 보냈고, 오늘 오후에 또 다른 인수인계 회의를 준비해서 당신을 모두에게 직접 소개시켜 드릴 거예요.",
+    "pinyin": "",
+    "translation": "A: Não se preocupe. Eu enviei um e-mail aos colegas hoje de manhã e vou preparar outra reunião de transição esta tarde para apresentá-lo a todos diretamente.",
+    "tokens": [
+      "걱정하지",
+      "마세요",
+      ".",
+      "제가",
+      "오늘",
+      "아침에",
+      "동료들에게",
+      "이메일을",
+      "보냈고",
+      ",",
+      "오늘",
+      "오후에",
+      "또",
+      "다른",
+      "인수인계",
+      "회의를",
+      "준비해서",
+      "당신을",
+      "모두에게",
+      "직접",
+      "소개시켜",
+      "드릴",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "걱정하지 마세요",
+        "pinyin": "geokjeonghaji maseyo",
+        "meaning": "não se preocupe (formal polido)"
+      },
+      {
+        "id": 2,
+        "word": "오늘",
+        "pinyin": "oneul",
+        "meaning": "hoje"
+      },
+      {
+        "id": 3,
+        "word": "아침",
+        "pinyin": "achim",
+        "meaning": "manhã"
+      },
+      {
+        "id": 4,
+        "word": "동료",
+        "pinyin": "dongnyo",
+        "meaning": "colega"
+      },
+      {
+        "id": 5,
+        "word": "이메일",
+        "pinyin": "imeil",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 6,
+        "word": "보냈고",
+        "pinyin": "bonaetgo",
+        "meaning": "enviei e... (de '보내다': enviar + '-고': e)"
+      },
+      {
+        "id": 7,
+        "word": "오후",
+        "pinyin": "ohu",
+        "meaning": "tarde (período do dia)"
+      },
+      {
+        "id": 8,
+        "word": "또 다른",
+        "pinyin": "tto dareun",
+        "meaning": "outro/a, mais um/a"
+      },
+      {
+        "id": 9,
+        "word": "인수인계",
+        "pinyin": "insuingye",
+        "meaning": "transição, handover"
+      },
+      {
+        "id": 10,
+        "word": "회의",
+        "pinyin": "hoeui",
+        "meaning": "reunião"
+      },
+      {
+        "id": 11,
+        "word": "준비해서",
+        "pinyin": "junbihaeseo",
+        "meaning": "preparando e então... (de '준비하다': preparar)"
+      },
+      {
+        "id": 12,
+        "word": "당신",
+        "pinyin": "dangsin",
+        "meaning": "você"
+      },
+      {
+        "id": 13,
+        "word": "모두",
+        "pinyin": "modu",
+        "meaning": "todos"
+      },
+      {
+        "id": 14,
+        "word": "직접",
+        "pinyin": "jikjeop",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 15,
+        "word": "소개시켜 드릴 거예요",
+        "pinyin": "sogaesikyeo deuril geoyeyo",
+        "meaning": "vou apresentá-lo/a (formal polido, futuro)"
+      }
+    ],
+    "id": "local-1772301184459-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "정말 감사합니다.",
+    "pinyin": "",
+    "translation": "B: Muito obrigado(a).",
+    "tokens": [
+      "정말",
+      "감사합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 2,
+        "word": "감사합니다",
+        "pinyin": "gamsahamnida",
+        "meaning": "obrigado/a (formal polido)"
+      }
+    ],
+    "id": "local-1772301184459-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "당연히 해야 할 일입니다. 제가 모든 인수인계 문서를 \"공유\" 파일에 이미 넣어두었습니다. 여전히 질문이 있으시면, 전화로도 저에게 연락하실 수 있습니다.",
+    "pinyin": "",
+    "translation": "A: É algo que devo fazer, claro. Já coloquei todos os documentos de transição no arquivo 'Compartilhado'. Se ainda tiver perguntas, pode entrar em contato comigo por telefone também.",
+    "tokens": [
+      "당연히",
+      "해야",
+      "할",
+      "일입니다",
+      ".",
+      "제가",
+      "모든",
+      "인수인계",
+      "문서를",
+      "공유",
+      "파일에",
+      "이미",
+      "넣어두었습니다",
+      ".",
+      "여전히",
+      "질문이",
+      "있으시면",
+      ",",
+      "전화로도",
+      "저에게",
+      "연락하실",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "당연히",
+        "pinyin": "dangyeonhi",
+        "meaning": "naturalmente, claro, obviamente"
+      },
+      {
+        "id": 2,
+        "word": "해야 할 일",
+        "pinyin": "haeya hal il",
+        "meaning": "algo a fazer, dever"
+      },
+      {
+        "id": 3,
+        "word": "모든",
+        "pinyin": "modeun",
+        "meaning": "todo/a/s"
+      },
+      {
+        "id": 4,
+        "word": "인수인계",
+        "pinyin": "insuingye",
+        "meaning": "transição, handover"
+      },
+      {
+        "id": 5,
+        "word": "문서",
+        "pinyin": "munseo",
+        "meaning": "documento"
+      },
+      {
+        "id": 6,
+        "word": "공유",
+        "pinyin": "gongyu",
+        "meaning": "compartilhado, compartilhamento"
+      },
+      {
+        "id": 7,
+        "word": "파일",
+        "pinyin": "pail",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 8,
+        "word": "이미",
+        "pinyin": "imi",
+        "meaning": "já"
+      },
+      {
+        "id": 9,
+        "word": "넣어두었습니다",
+        "pinyin": "neoeoduwotsseumnida",
+        "meaning": "já coloquei/mantive (formal polido)"
+      },
+      {
+        "id": 10,
+        "word": "여전히",
+        "pinyin": "yeojeonhi",
+        "meaning": "ainda, contudo"
+      },
+      {
+        "id": 11,
+        "word": "질문",
+        "pinyin": "jilmun",
+        "meaning": "pergunta"
+      },
+      {
+        "id": 12,
+        "word": "있으시면",
+        "pinyin": "isseusimyeon",
+        "meaning": "se você tiver (formal polido)"
+      },
+      {
+        "id": 13,
+        "word": "전화",
+        "pinyin": "jeonhwa",
+        "meaning": "telefone"
+      },
+      {
+        "id": 14,
+        "word": "로도",
+        "pinyin": "rodo",
+        "meaning": "por (meio) também"
+      },
+      {
+        "id": 15,
+        "word": "저에게",
+        "pinyin": "jeoege",
+        "meaning": "para mim"
+      },
+      {
+        "id": 16,
+        "word": "연락하실 수 있습니다",
+        "pinyin": "yeollakhasil su isseumnida",
+        "meaning": "você pode entrar em contato (formal polido)"
+      }
+    ],
+    "id": "local-1772301184459-10",
+    "language": "Coreano"
+  }
+]

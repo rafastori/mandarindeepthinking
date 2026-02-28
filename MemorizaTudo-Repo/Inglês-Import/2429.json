@@ -1,0 +1,404 @@
+[
+  {
+    "chinese": "A: Zoey, I've heard that your family bought a big TV. I really want to come by and have a look at it.",
+    "pinyin": null,
+    "translation": "A: Zoey, ouvi dizer que sua família comprou uma TV grande. Eu realmente quero ir aí dar uma olhada.",
+    "tokens": [
+      "Zoey",
+      "I've",
+      "heard",
+      "that",
+      "your",
+      "family",
+      "bought",
+      "a",
+      "big",
+      "TV",
+      "I",
+      "really",
+      "want",
+      "to",
+      "come",
+      "by",
+      "and",
+      "have",
+      "a",
+      "look",
+      "at",
+      "it"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "heard",
+        "pinyin": "",
+        "meaning": "ouvi dizer, soube (do verbo 'to hear')"
+      },
+      {
+        "id": 2,
+        "word": "bought",
+        "pinyin": "",
+        "meaning": "comprou (do verbo 'to buy')"
+      },
+      {
+        "id": 3,
+        "word": "come by",
+        "pinyin": "",
+        "meaning": "passar, vir até (um lugar)"
+      },
+      {
+        "id": 4,
+        "word": "have a look",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772292899597-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Welcome. Come in!",
+    "pinyin": null,
+    "translation": "B: Bem-vinda. Entre!",
+    "tokens": [
+      "Welcome",
+      "Come",
+      "in"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Welcome",
+        "pinyin": "",
+        "meaning": "Bem-vindo(a)"
+      },
+      {
+        "id": 2,
+        "word": "Come in",
+        "pinyin": "",
+        "meaning": "Entre"
+      }
+    ],
+    "id": "local-1772292899597-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Heh, this TV is really impressive! Hey, what's this little black cube?",
+    "pinyin": null,
+    "translation": "A: Heh, esta TV é realmente impressionante! Ei, o que é este pequeno cubo preto?",
+    "tokens": [
+      "Heh",
+      "this",
+      "TV",
+      "is",
+      "really",
+      "impressive",
+      "Hey",
+      "what's",
+      "this",
+      "little",
+      "black",
+      "cube"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "impressive",
+        "pinyin": "",
+        "meaning": "impressionante"
+      },
+      {
+        "id": 2,
+        "word": "cube",
+        "pinyin": "",
+        "meaning": "cubo"
+      }
+    ],
+    "id": "local-1772292899597-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh, this is a MiBox, a kind of internet TV box.",
+    "pinyin": null,
+    "translation": "B: Ah, esta é uma MiBox, um tipo de caixa de TV pela internet.",
+    "tokens": [
+      "Oh",
+      "this",
+      "is",
+      "a",
+      "MiBox",
+      "a",
+      "kind",
+      "of",
+      "internet",
+      "TV",
+      "box"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kind of",
+        "pinyin": "",
+        "meaning": "tipo de"
+      },
+      {
+        "id": 2,
+        "word": "internet TV box",
+        "pinyin": "",
+        "meaning": "aparelho de TV pela internet"
+      }
+    ],
+    "id": "local-1772292899597-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What does it do?",
+    "pinyin": null,
+    "translation": "A: O que ele faz?",
+    "tokens": [
+      "What",
+      "does",
+      "it",
+      "do"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "do",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292899597-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Here, look. This MiBox is connected to the internet. With it, you can watch online TV and play games. You can also play local videos and playback previously broadcast shows.",
+    "pinyin": null,
+    "translation": "B: Aqui, olha. Esta MiBox está conectada à internet. Com ela, você pode assistir TV online e jogar. Você também pode reproduzir vídeos locais e reprisar programas transmitidos anteriormente.",
+    "tokens": [
+      "Here",
+      "look",
+      "This",
+      "MiBox",
+      "is",
+      "connected",
+      "to",
+      "the",
+      "internet",
+      "With",
+      "it",
+      "you",
+      "can",
+      "watch",
+      "online",
+      "TV",
+      "and",
+      "play",
+      "games",
+      "You",
+      "can",
+      "also",
+      "play",
+      "local",
+      "videos",
+      "and",
+      "playback",
+      "previously",
+      "broadcast",
+      "shows"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "connected to",
+        "pinyin": "",
+        "meaning": "conectado a"
+      },
+      {
+        "id": 2,
+        "word": "online TV",
+        "pinyin": "",
+        "meaning": "TV online"
+      },
+      {
+        "id": 3,
+        "word": "play games",
+        "pinyin": "",
+        "meaning": "jogar"
+      },
+      {
+        "id": 4,
+        "word": "local videos",
+        "pinyin": "",
+        "meaning": "vídeos locais"
+      },
+      {
+        "id": 5,
+        "word": "playback",
+        "pinyin": "",
+        "meaning": "reproduzir, reprisar"
+      },
+      {
+        "id": 6,
+        "word": "previously broadcast shows",
+        "pinyin": "",
+        "meaning": "programas transmitidos anteriormente"
+      }
+    ],
+    "id": "local-1772292899597-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Whoa, it's really quite powerful!",
+    "pinyin": null,
+    "translation": "A: Uau, é realmente bem poderoso!",
+    "tokens": [
+      "Whoa",
+      "it's",
+      "really",
+      "quite",
+      "powerful"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Whoa",
+        "pinyin": "",
+        "meaning": "Uau (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "quite",
+        "pinyin": "",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 3,
+        "word": "powerful",
+        "pinyin": "",
+        "meaning": "poderoso"
+      }
+    ],
+    "id": "local-1772292899597-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yeah. Other than MiBox, there's also Apple TV, ComoTV and more. When we were picking out a TV box, it was really hard to decide.",
+    "pinyin": null,
+    "translation": "B: Sim. Além da MiBox, há também Apple TV, ComoTV e mais. Quando estávamos escolhendo um aparelho de TV, foi muito difícil decidir.",
+    "tokens": [
+      "Yeah",
+      "Other",
+      "than",
+      "MiBox",
+      "there's",
+      "also",
+      "Apple",
+      "TV",
+      "ComoTV",
+      "and",
+      "more",
+      "When",
+      "we",
+      "were",
+      "picking",
+      "out",
+      "a",
+      "TV",
+      "box",
+      "it",
+      "was",
+      "really",
+      "hard",
+      "to",
+      "decide"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Other than",
+        "pinyin": "",
+        "meaning": "Além de"
+      },
+      {
+        "id": 2,
+        "word": "picking out",
+        "pinyin": "",
+        "meaning": "escolhendo, selecionando"
+      },
+      {
+        "id": 3,
+        "word": "hard to decide",
+        "pinyin": "",
+        "meaning": "difícil de decidir"
+      }
+    ],
+    "id": "local-1772292899597-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: It seems like I'm really out of the loop. My house still uses cable. Later on, I'm going to buy a box too.",
+    "pinyin": null,
+    "translation": "A: Parece que estou realmente por fora. Minha casa ainda usa TV a cabo. Mais tarde, vou comprar um aparelho também.",
+    "tokens": [
+      "It",
+      "seems",
+      "like",
+      "I'm",
+      "really",
+      "out",
+      "of",
+      "the",
+      "loop",
+      "My",
+      "house",
+      "still",
+      "uses",
+      "cable",
+      "Later",
+      "on",
+      "I'm",
+      "going",
+      "to",
+      "buy",
+      "a",
+      "box",
+      "too"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seems like",
+        "pinyin": "",
+        "meaning": "parece que"
+      },
+      {
+        "id": 2,
+        "word": "out of the loop",
+        "pinyin": "",
+        "meaning": "por fora, desatualizado"
+      },
+      {
+        "id": 3,
+        "word": "uses cable",
+        "pinyin": "",
+        "meaning": "usa TV a cabo"
+      },
+      {
+        "id": 4,
+        "word": "Later on",
+        "pinyin": "",
+        "meaning": "Mais tarde"
+      },
+      {
+        "id": 5,
+        "word": "going to buy",
+        "pinyin": "",
+        "meaning": "vou comprar (indica intenção futura)"
+      }
+    ],
+    "id": "local-1772292899597-8",
+    "language": "Inglês"
+  }
+]

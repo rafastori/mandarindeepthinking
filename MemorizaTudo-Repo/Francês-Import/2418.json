@@ -1,0 +1,770 @@
+[
+  {
+    "chinese": "A: Bonjour. Puis-je vous demander en quoi je peux vous aider ?",
+    "pinyin": "",
+    "translation": "A: Bom dia. Posso perguntar em que posso ajudá-lo?",
+    "tokens": [
+      "Bonjour",
+      ".",
+      "Puis-je",
+      "vous",
+      "demander",
+      "en",
+      "quoi",
+      "je",
+      "peux",
+      "vous",
+      "aider",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Bom dia / Olá"
+      },
+      {
+        "id": 2,
+        "word": "Puis-je",
+        "pinyin": "",
+        "meaning": "Posso eu (forma interrogativa de 'Je peux')"
+      },
+      {
+        "id": 3,
+        "word": "demander",
+        "pinyin": "",
+        "meaning": "perguntar / pedir"
+      },
+      {
+        "id": 4,
+        "word": "aider",
+        "pinyin": "",
+        "meaning": "ajudar"
+      }
+    ],
+    "id": "local-1772296228846-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bonjour. Je voudrais découper ma carte. J'ai acheté un nouveau téléphone portable et je ne peux pas utiliser ma carte SIM originale.",
+    "pinyin": "",
+    "translation": "B: Bom dia. Eu gostaria de cortar meu cartão. Comprei um novo telefone celular e não consigo usar meu cartão SIM original.",
+    "tokens": [
+      "Bonjour",
+      ".",
+      "Je",
+      "voudrais",
+      "découper",
+      "ma",
+      "carte",
+      ".",
+      "J'ai",
+      "acheté",
+      "un",
+      "nouveau",
+      "téléphone",
+      "portable",
+      "et",
+      "je",
+      "ne",
+      "peux",
+      "pas",
+      "utiliser",
+      "ma",
+      "carte",
+      "SIM",
+      "originale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Bom dia / Olá"
+      },
+      {
+        "id": 2,
+        "word": "voudrais",
+        "pinyin": "",
+        "meaning": "gostaria (condicional de 'vouloir')"
+      },
+      {
+        "id": 3,
+        "word": "découper",
+        "pinyin": "",
+        "meaning": "cortar / recortar"
+      },
+      {
+        "id": 4,
+        "word": "carte",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 5,
+        "word": "acheté",
+        "pinyin": "",
+        "meaning": "comprado (particípio passado de 'acheter')"
+      },
+      {
+        "id": 6,
+        "word": "téléphone portable",
+        "pinyin": "",
+        "meaning": "telefone celular"
+      },
+      {
+        "id": 7,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar / utilizar"
+      },
+      {
+        "id": 8,
+        "word": "SIM",
+        "pinyin": "",
+        "meaning": "SIM (cartão SIM)"
+      },
+      {
+        "id": 9,
+        "word": "originale",
+        "pinyin": "",
+        "meaning": "original"
+      }
+    ],
+    "id": "local-1772296228846-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vous voulez une carte mini, n'est-ce pas ? D'accord.",
+    "pinyin": "",
+    "translation": "A: Você quer um cartão mini, não é? De acordo.",
+    "tokens": [
+      "Vous",
+      "voulez",
+      "une",
+      "carte",
+      "mini",
+      ",",
+      "n'est-ce",
+      "pas",
+      "?",
+      "D'accord",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "voulez",
+        "pinyin": "",
+        "meaning": "querem / quer (de 'vouloir')"
+      },
+      {
+        "id": 2,
+        "word": "carte",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 3,
+        "word": "mini",
+        "pinyin": "",
+        "meaning": "mini"
+      },
+      {
+        "id": 4,
+        "word": "n'est-ce pas",
+        "pinyin": "",
+        "meaning": "não é? / certo?"
+      },
+      {
+        "id": 5,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo / Ok"
+      }
+    ],
+    "id": "local-1772296228846-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Dois-je payer ?",
+    "pinyin": "",
+    "translation": "B: Devo pagar?",
+    "tokens": [
+      "Dois-je",
+      "payer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dois-je",
+        "pinyin": "",
+        "meaning": "Devo eu (forma interrogativa de 'Je dois')"
+      },
+      {
+        "id": 2,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772296228846-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non. Découper une carte est gratuit. C'est fait.",
+    "pinyin": "",
+    "translation": "A: Não. Cortar um cartão é grátis. Está feito.",
+    "tokens": [
+      "Non",
+      ".",
+      "Découper",
+      "une",
+      "carte",
+      "est",
+      "gratuit",
+      ".",
+      "C'est",
+      "fait",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "Découper",
+        "pinyin": "",
+        "meaning": "Cortar / Recortar"
+      },
+      {
+        "id": 3,
+        "word": "carte",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 4,
+        "word": "gratuit",
+        "pinyin": "",
+        "meaning": "gratuito / grátis"
+      },
+      {
+        "id": 5,
+        "word": "C'est fait",
+        "pinyin": "",
+        "meaning": "Está feito / Feito"
+      }
+    ],
+    "id": "local-1772296228846-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci. Hein ? Pourquoi la carte ne rentre-t-elle pas ? Pouvez-vous m'aider à y jeter un œil ?",
+    "pinyin": "",
+    "translation": "B: Obrigado. Hein? Por que o cartão não cabe? Você pode me ajudar a dar uma olhada?",
+    "tokens": [
+      "Merci",
+      ".",
+      "Hein",
+      "?",
+      "Pourquoi",
+      "la",
+      "carte",
+      "ne",
+      "rentre-t-elle",
+      "pas",
+      "?",
+      "Pouvez-vous",
+      "m'aider",
+      "à",
+      "y",
+      "jeter",
+      "un",
+      "œil",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci",
+        "pinyin": "",
+        "meaning": "Obrigado(a)"
+      },
+      {
+        "id": 2,
+        "word": "Hein",
+        "pinyin": "",
+        "meaning": "Hein? / O quê?"
+      },
+      {
+        "id": 3,
+        "word": "Pourquoi",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 4,
+        "word": "carte",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 5,
+        "word": "rentre",
+        "pinyin": "",
+        "meaning": "entra / cabe (de 'rentrer')"
+      },
+      {
+        "id": 6,
+        "word": "Pouvez-vous",
+        "pinyin": "",
+        "meaning": "Vocês podem / Você pode (de 'pouvoir')"
+      },
+      {
+        "id": 7,
+        "word": "aider",
+        "pinyin": "",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 8,
+        "word": "jeter un œil",
+        "pinyin": "",
+        "meaning": "dar uma olhada / lançar um olho"
+      }
+    ],
+    "id": "local-1772296228846-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Votre portable est un iPhone 5, n'est-ce pas ?",
+    "pinyin": "",
+    "translation": "A: Seu celular é um iPhone 5, não é?",
+    "tokens": [
+      "Votre",
+      "portable",
+      "est",
+      "un",
+      "iPhone",
+      "5",
+      ",",
+      "n'est-ce",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "portable",
+        "pinyin": "",
+        "meaning": "celular / portátil"
+      },
+      {
+        "id": 2,
+        "word": "iPhone 5",
+        "pinyin": "",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 3,
+        "word": "n'est-ce pas",
+        "pinyin": "",
+        "meaning": "não é? / certo?"
+      }
+    ],
+    "id": "local-1772296228846-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui.",
+    "pinyin": "",
+    "translation": "B: Sim.",
+    "tokens": [
+      "Oui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772296228846-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les iPhone 5 ne peuvent pas utiliser de cartes mini. Seul l'iPhone 4 peut utiliser une carte mini.",
+    "pinyin": "",
+    "translation": "A: Os iPhones 5 não podem usar cartões mini. Apenas o iPhone 4 pode usar um cartão mini.",
+    "tokens": [
+      "Les",
+      "iPhone",
+      "5",
+      "ne",
+      "peuvent",
+      "pas",
+      "utiliser",
+      "de",
+      "cartes",
+      "mini",
+      ".",
+      "Seul",
+      "l'iPhone",
+      "4",
+      "peut",
+      "utiliser",
+      "une",
+      "carte",
+      "mini",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iPhone 5",
+        "pinyin": "",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 2,
+        "word": "peuvent",
+        "pinyin": "",
+        "meaning": "podem (de 'pouvoir')"
+      },
+      {
+        "id": 3,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar / utilizar"
+      },
+      {
+        "id": 4,
+        "word": "cartes",
+        "pinyin": "",
+        "meaning": "cartões"
+      },
+      {
+        "id": 5,
+        "word": "mini",
+        "pinyin": "",
+        "meaning": "mini"
+      },
+      {
+        "id": 6,
+        "word": "Seul",
+        "pinyin": "",
+        "meaning": "Apenas / Somente"
+      },
+      {
+        "id": 7,
+        "word": "iPhone 4",
+        "pinyin": "",
+        "meaning": "iPhone 4"
+      },
+      {
+        "id": 8,
+        "word": "peut",
+        "pinyin": "",
+        "meaning": "pode (de 'pouvoir')"
+      }
+    ],
+    "id": "local-1772296228846-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, que dois-je faire ?",
+    "pinyin": "",
+    "translation": "B: Então, o que devo fazer?",
+    "tokens": [
+      "Alors",
+      ",",
+      "que",
+      "dois-je",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então / Assim"
+      },
+      {
+        "id": 2,
+        "word": "dois-je",
+        "pinyin": "",
+        "meaning": "devo eu (forma interrogativa de 'Je dois')"
+      },
+      {
+        "id": 3,
+        "word": "faire",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772296228846-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Pas de problème. Vous pouvez la changer pour une carte nano SIM. Celle-ci est plus petite qu'une mini et elle est spécifiquement utilisée dans l'iPhone 5.",
+    "pinyin": "",
+    "translation": "A: Sem problemas. Você pode trocá-la por um cartão nano SIM. Este é menor que um mini e é especificamente usado no iPhone 5.",
+    "tokens": [
+      "Pas",
+      "de",
+      "problème",
+      ".",
+      "Vous",
+      "pouvez",
+      "la",
+      "changer",
+      "pour",
+      "une",
+      "carte",
+      "nano",
+      "SIM",
+      ".",
+      "Celle-ci",
+      "est",
+      "plus",
+      "petite",
+      "qu'une",
+      "mini",
+      "et",
+      "elle",
+      "est",
+      "spécifiquement",
+      "utilisée",
+      "dans",
+      "l'iPhone",
+      "5",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas de problème",
+        "pinyin": "",
+        "meaning": "Sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "pouvez",
+        "pinyin": "",
+        "meaning": "podem / pode (de 'pouvoir')"
+      },
+      {
+        "id": 3,
+        "word": "changer",
+        "pinyin": "",
+        "meaning": "trocar / mudar"
+      },
+      {
+        "id": 4,
+        "word": "carte nano SIM",
+        "pinyin": "",
+        "meaning": "cartão nano SIM"
+      },
+      {
+        "id": 5,
+        "word": "petite",
+        "pinyin": "",
+        "meaning": "pequena"
+      },
+      {
+        "id": 6,
+        "word": "mini",
+        "pinyin": "",
+        "meaning": "mini"
+      },
+      {
+        "id": 7,
+        "word": "spécifiquement",
+        "pinyin": "",
+        "meaning": "especificamente"
+      },
+      {
+        "id": 8,
+        "word": "utilisée",
+        "pinyin": "",
+        "meaning": "usada (feminino de 'utilisé')"
+      },
+      {
+        "id": 9,
+        "word": "iPhone 5",
+        "pinyin": "",
+        "meaning": "iPhone 5"
+      }
+    ],
+    "id": "local-1772296228846-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Dois-je payer pour cela ?",
+    "pinyin": "",
+    "translation": "B: Devo pagar por isso?",
+    "tokens": [
+      "Dois-je",
+      "payer",
+      "pour",
+      "cela",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dois-je",
+        "pinyin": "",
+        "meaning": "Devo eu (forma interrogativa de 'Je dois')"
+      },
+      {
+        "id": 2,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 3,
+        "word": "cela",
+        "pinyin": "",
+        "meaning": "isso / aquilo"
+      }
+    ],
+    "id": "local-1772296228846-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est gratuit la première fois. Si vous devez remplacer une carte plus tard, vous devrez payer 20 kuai de frais de traitement.",
+    "pinyin": "",
+    "translation": "A: É grátis na primeira vez. Se você precisar substituir um cartão mais tarde, terá que pagar 20 yuans de taxa de processamento.",
+    "tokens": [
+      "C'est",
+      "gratuit",
+      "la",
+      "première",
+      "fois",
+      ".",
+      "Si",
+      "vous",
+      "devez",
+      "remplacer",
+      "une",
+      "carte",
+      "plus",
+      "tard",
+      ",",
+      "vous",
+      "devrez",
+      "payer",
+      "20",
+      "kuai",
+      "de",
+      "frais",
+      "de",
+      "traitement",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gratuit",
+        "pinyin": "",
+        "meaning": "gratuito / grátis"
+      },
+      {
+        "id": 2,
+        "word": "première fois",
+        "pinyin": "",
+        "meaning": "primeira vez"
+      },
+      {
+        "id": 3,
+        "word": "devez",
+        "pinyin": "",
+        "meaning": "devem / deve (de 'devoir')"
+      },
+      {
+        "id": 4,
+        "word": "remplacer",
+        "pinyin": "",
+        "meaning": "substituir"
+      },
+      {
+        "id": 5,
+        "word": "carte",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 6,
+        "word": "plus tard",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 7,
+        "word": "devrez",
+        "pinyin": "",
+        "meaning": "terão que / terá que (futuro de 'devoir')"
+      },
+      {
+        "id": 8,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 9,
+        "word": "20 kuai",
+        "pinyin": "",
+        "meaning": "20 yuans (Kuai é uma unidade monetária chinesa, coloquial para Yuan)"
+      },
+      {
+        "id": 10,
+        "word": "frais de traitement",
+        "pinyin": "",
+        "meaning": "taxa de processamento"
+      }
+    ],
+    "id": "local-1772296228846-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord. Merci.",
+    "pinyin": "",
+    "translation": "B: De acordo. Obrigado.",
+    "tokens": [
+      "D'accord",
+      ".",
+      "Merci",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo / Ok"
+      },
+      {
+        "id": 2,
+        "word": "Merci",
+        "pinyin": "",
+        "meaning": "Obrigado(a)"
+      }
+    ],
+    "id": "local-1772296228846-13",
+    "language": "Francês"
+  }
+]

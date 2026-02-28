@@ -1,0 +1,515 @@
+[
+  {
+    "chinese": "A: Marito, sono diventata così grande! Voglio comprare una macchina per dimagrire!",
+    "pinyin": null,
+    "translation": "A: Marido, eu engordei tanto! Quero comprar uma máquina para emagrecer!",
+    "tokens": [
+      "A:",
+      "Marito",
+      ",",
+      "sono",
+      "diventata",
+      "così",
+      "grande",
+      "!",
+      "Voglio",
+      "comprare",
+      "una",
+      "macchina",
+      "per",
+      "dimagrire",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Marito",
+        "pinyin": null,
+        "meaning": "Marido"
+      },
+      {
+        "id": 2,
+        "word": "sono diventata così grande",
+        "pinyin": null,
+        "meaning": "Eu engordei tanto (literalmente: me tornei tão grande)"
+      },
+      {
+        "id": 3,
+        "word": "Voglio",
+        "pinyin": null,
+        "meaning": "Eu quero"
+      },
+      {
+        "id": 4,
+        "word": "comprare",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "macchina per dimagrire",
+        "pinyin": null,
+        "meaning": "máquina para emagrecer"
+      }
+    ],
+    "id": "local-1772298155989-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Che tipo vuoi comprare?",
+    "pinyin": null,
+    "translation": "B: Que tipo você quer comprar?",
+    "tokens": [
+      "B:",
+      "Che",
+      "tipo",
+      "vuoi",
+      "comprare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Che tipo",
+        "pinyin": null,
+        "meaning": "Que tipo"
+      },
+      {
+        "id": 2,
+        "word": "vuoi",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 3,
+        "word": "comprare",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772298155989-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Guarda! Che ne dici di questo tapis roulant?",
+    "pinyin": null,
+    "translation": "A: Olhe! O que você acha desta esteira?",
+    "tokens": [
+      "A:",
+      "Guarda",
+      "!",
+      "Che",
+      "ne",
+      "dici",
+      "di",
+      "questo",
+      "tapis",
+      "roulant",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guarda",
+        "pinyin": null,
+        "meaning": "Olhe!"
+      },
+      {
+        "id": 2,
+        "word": "Che ne dici di",
+        "pinyin": null,
+        "meaning": "O que você acha de"
+      },
+      {
+        "id": 3,
+        "word": "questo",
+        "pinyin": null,
+        "meaning": "este / esta"
+      },
+      {
+        "id": 4,
+        "word": "tapis roulant",
+        "pinyin": null,
+        "meaning": "esteira"
+      }
+    ],
+    "id": "local-1772298155989-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì, è abbastanza buono!",
+    "pinyin": null,
+    "translation": "B: Sim, é bem bom!",
+    "tokens": [
+      "B:",
+      "Sì",
+      ",",
+      "è",
+      "abbastanza",
+      "buono",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "abbastanza",
+        "pinyin": null,
+        "meaning": "bastante / bem"
+      },
+      {
+        "id": 3,
+        "word": "buono",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772298155989-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Questa macchina ellittica può aiutare a snellire le tue gambe e la tua vita!",
+    "pinyin": null,
+    "translation": "A: Esta máquina elíptica pode ajudar a afinar suas pernas e sua cintura!",
+    "tokens": [
+      "A:",
+      "Questa",
+      "macchina",
+      "ellittica",
+      "può",
+      "aiutare",
+      "a",
+      "snellire",
+      "le",
+      "tue",
+      "gambe",
+      "e",
+      "la",
+      "tua",
+      "vita",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questa",
+        "pinyin": null,
+        "meaning": "Esta"
+      },
+      {
+        "id": 2,
+        "word": "macchina ellittica",
+        "pinyin": null,
+        "meaning": "máquina elíptica"
+      },
+      {
+        "id": 3,
+        "word": "può aiutare",
+        "pinyin": null,
+        "meaning": "pode ajudar"
+      },
+      {
+        "id": 4,
+        "word": "snellire",
+        "pinyin": null,
+        "meaning": "afinar / emagrecer"
+      },
+      {
+        "id": 5,
+        "word": "gambe",
+        "pinyin": null,
+        "meaning": "pernas"
+      },
+      {
+        "id": 6,
+        "word": "vita",
+        "pinyin": null,
+        "meaning": "cintura"
+      }
+    ],
+    "id": "local-1772298155989-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sembra che sarebbe buona per te.",
+    "pinyin": null,
+    "translation": "B: Parece que seria bom para você.",
+    "tokens": [
+      "B:",
+      "Sembra",
+      "che",
+      "sarebbe",
+      "buona",
+      "per",
+      "te",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sembra che",
+        "pinyin": null,
+        "meaning": "Parece que"
+      },
+      {
+        "id": 2,
+        "word": "sarebbe",
+        "pinyin": null,
+        "meaning": "seria"
+      },
+      {
+        "id": 3,
+        "word": "buona",
+        "pinyin": null,
+        "meaning": "boa"
+      },
+      {
+        "id": 4,
+        "word": "per te",
+        "pinyin": null,
+        "meaning": "para você"
+      }
+    ],
+    "id": "local-1772298155989-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh, c'è anche un robot per la perdita di peso qui, ma sfortunatamente è troppo costoso!",
+    "pinyin": null,
+    "translation": "A: Ah, tem também um robô para perda de peso aqui, mas infelizmente é muito caro!",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "c'è",
+      "anche",
+      "un",
+      "robot",
+      "per",
+      "la",
+      "perdita",
+      "di",
+      "peso",
+      "qui",
+      ",",
+      "ma",
+      "sfortunatamente",
+      "è",
+      "troppo",
+      "costoso",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "c'è",
+        "pinyin": null,
+        "meaning": "há / tem"
+      },
+      {
+        "id": 2,
+        "word": "anche",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "robot per la perdita di peso",
+        "pinyin": null,
+        "meaning": "robô para perda de peso"
+      },
+      {
+        "id": 4,
+        "word": "qui",
+        "pinyin": null,
+        "meaning": "aqui"
+      },
+      {
+        "id": 5,
+        "word": "ma",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 6,
+        "word": "sfortunatamente",
+        "pinyin": null,
+        "meaning": "infelizmente"
+      },
+      {
+        "id": 7,
+        "word": "troppo costoso",
+        "pinyin": null,
+        "meaning": "muito caro"
+      }
+    ],
+    "id": "local-1772298155989-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Il denaro non è un problema. Sono solo preoccupato che lo userai per due giorni e non lo userai mai più.",
+    "pinyin": null,
+    "translation": "B: O dinheiro não é um problema. Só estou preocupado que você o usará por dois dias e não o usará nunca mais.",
+    "tokens": [
+      "B:",
+      "Il",
+      "denaro",
+      "non",
+      "è",
+      "un",
+      "problema",
+      ".",
+      "Sono",
+      "solo",
+      "preoccupato",
+      "che",
+      "lo",
+      "userai",
+      "per",
+      "due",
+      "giorni",
+      "e",
+      "non",
+      "lo",
+      "userai",
+      "mai",
+      "più",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il denaro",
+        "pinyin": null,
+        "meaning": "O dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "non è un problema",
+        "pinyin": null,
+        "meaning": "não é um problema"
+      },
+      {
+        "id": 3,
+        "word": "Sono preoccupato",
+        "pinyin": null,
+        "meaning": "Estou preocupado"
+      },
+      {
+        "id": 4,
+        "word": "che",
+        "pinyin": null,
+        "meaning": "que"
+      },
+      {
+        "id": 5,
+        "word": "lo userai",
+        "pinyin": null,
+        "meaning": "você o usará"
+      },
+      {
+        "id": 6,
+        "word": "per due giorni",
+        "pinyin": null,
+        "meaning": "por dois dias"
+      },
+      {
+        "id": 7,
+        "word": "non... mai più",
+        "pinyin": null,
+        "meaning": "nunca mais"
+      }
+    ],
+    "id": "local-1772298155989-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Questa volta ti garantisco che non lo farò!",
+    "pinyin": null,
+    "translation": "A: Desta vez eu te garanto que não farei isso!",
+    "tokens": [
+      "A:",
+      "Questa",
+      "volta",
+      "ti",
+      "garantisco",
+      "che",
+      "non",
+      "lo",
+      "farò",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questa volta",
+        "pinyin": null,
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "ti garantisco",
+        "pinyin": null,
+        "meaning": "eu te garanto"
+      },
+      {
+        "id": 3,
+        "word": "non lo farò",
+        "pinyin": null,
+        "meaning": "não farei isso"
+      }
+    ],
+    "id": "local-1772298155989-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Allora compralo! Ti sostengo!",
+    "pinyin": null,
+    "translation": "B: Tudo bem. Então compre-o! Eu te apoio!",
+    "tokens": [
+      "B:",
+      "Va",
+      "bene",
+      ".",
+      "Allora",
+      "compralo",
+      "!",
+      "Ti",
+      "sostengo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": null,
+        "meaning": "Tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "compralo",
+        "pinyin": null,
+        "meaning": "compre-o"
+      },
+      {
+        "id": 4,
+        "word": "Ti sostengo",
+        "pinyin": null,
+        "meaning": "Eu te apoio"
+      }
+    ],
+    "id": "local-1772298155989-9",
+    "language": "Italiano"
+  }
+]

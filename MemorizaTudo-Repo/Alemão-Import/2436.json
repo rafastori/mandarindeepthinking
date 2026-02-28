@@ -1,0 +1,577 @@
+[
+  {
+    "chinese": "A: Schatz, unser Reis und Öl gehen bald aus.",
+    "pinyin": null,
+    "translation": "A: Amor, nosso arroz e óleo estão acabando em breve.",
+    "tokens": [
+      "A:",
+      "Schatz",
+      ",",
+      "unser",
+      "Reis",
+      "und",
+      "Öl",
+      "gehen",
+      "bald",
+      "aus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schatz",
+        "pinyin": null,
+        "meaning": "tesouro, querido(a), amor"
+      },
+      {
+        "id": 2,
+        "word": "unser",
+        "pinyin": null,
+        "meaning": "nosso(a)"
+      },
+      {
+        "id": 3,
+        "word": "Reis",
+        "pinyin": null,
+        "meaning": "arroz"
+      },
+      {
+        "id": 4,
+        "word": "Öl",
+        "pinyin": null,
+        "meaning": "óleo"
+      },
+      {
+        "id": 5,
+        "word": "ausgehen",
+        "pinyin": null,
+        "meaning": "acabar, esgotar (verbo separável)"
+      },
+      {
+        "id": 6,
+        "word": "bald",
+        "pinyin": null,
+        "meaning": "em breve"
+      }
+    ],
+    "id": "local-1772293113119-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ach ja?",
+    "pinyin": null,
+    "translation": "B: Ah é?",
+    "tokens": [
+      "B:",
+      "Ach",
+      "ja",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ach ja?",
+        "pinyin": null,
+        "meaning": "Ah é? / Ah sim?"
+      }
+    ],
+    "id": "local-1772293113119-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Dann bestell ich schnell welche bei Yihaodian.",
+    "pinyin": null,
+    "translation": "Então eu peço rapidamente alguns/algumas na Yihaodian.",
+    "tokens": [
+      "Dann",
+      "bestell",
+      "ich",
+      "schnell",
+      "welche",
+      "bei",
+      "Yihaodian",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "bestellen",
+        "pinyin": null,
+        "meaning": "pedir, encomendar"
+      },
+      {
+        "id": 3,
+        "word": "schnell",
+        "pinyin": null,
+        "meaning": "rápido(a), rapidamente"
+      },
+      {
+        "id": 4,
+        "word": "welche",
+        "pinyin": null,
+        "meaning": "alguns/algumas (pronome indefinido)"
+      },
+      {
+        "id": 5,
+        "word": "bei",
+        "pinyin": null,
+        "meaning": "na, em (preposição de lugar/empresa)"
+      }
+    ],
+    "id": "local-1772293113119-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Was brauchen wir noch?",
+    "pinyin": null,
+    "translation": "O que mais precisamos?",
+    "tokens": [
+      "Was",
+      "brauchen",
+      "wir",
+      "noch",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "brauchen",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "noch",
+        "pinyin": null,
+        "meaning": "ainda, mais (neste contexto)"
+      }
+    ],
+    "id": "local-1772293113119-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Toilettenpapier brauchen wir auch.",
+    "pinyin": null,
+    "translation": "A: Também precisamos de papel higiênico.",
+    "tokens": [
+      "A:",
+      "Toilettenpapier",
+      "brauchen",
+      "wir",
+      "auch",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Toilettenpapier",
+        "pinyin": null,
+        "meaning": "papel higiênico"
+      },
+      {
+        "id": 2,
+        "word": "brauchen",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "auch",
+        "pinyin": null,
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1772293113119-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Haben wir noch Spülmittel und Waschpulver?",
+    "pinyin": null,
+    "translation": "B: Ainda temos detergente e sabão em pó?",
+    "tokens": [
+      "B:",
+      "Haben",
+      "wir",
+      "noch",
+      "Spülmittel",
+      "und",
+      "Waschpulver",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "haben",
+        "pinyin": null,
+        "meaning": "ter"
+      },
+      {
+        "id": 2,
+        "word": "noch",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "Spülmittel",
+        "pinyin": null,
+        "meaning": "detergente (para louça)"
+      },
+      {
+        "id": 4,
+        "word": "Waschpulver",
+        "pinyin": null,
+        "meaning": "sabão em pó"
+      }
+    ],
+    "id": "local-1772293113119-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja.",
+    "pinyin": null,
+    "translation": "A: Sim.",
+    "tokens": [
+      "A:",
+      "Ja",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ja",
+        "pinyin": null,
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1772293113119-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ach ja, und Milchpulver und Windeln fürs Baby müssen wir auch besorgen.",
+    "pinyin": null,
+    "translation": "Ah sim, e também precisamos providenciar leite em pó e fraldas para o bebê.",
+    "tokens": [
+      "Ach",
+      "ja",
+      ",",
+      "und",
+      "Milchpulver",
+      "und",
+      "Windeln",
+      "fürs",
+      "Baby",
+      "müssen",
+      "wir",
+      "auch",
+      "besorgen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ach ja",
+        "pinyin": null,
+        "meaning": "Ah sim"
+      },
+      {
+        "id": 2,
+        "word": "und",
+        "pinyin": null,
+        "meaning": "e"
+      },
+      {
+        "id": 3,
+        "word": "Milchpulver",
+        "pinyin": null,
+        "meaning": "leite em pó"
+      },
+      {
+        "id": 4,
+        "word": "Windeln",
+        "pinyin": null,
+        "meaning": "fraldas"
+      },
+      {
+        "id": 5,
+        "word": "fürs (für das)",
+        "pinyin": null,
+        "meaning": "para o(a)"
+      },
+      {
+        "id": 6,
+        "word": "Baby",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 7,
+        "word": "müssen",
+        "pinyin": null,
+        "meaning": "ter que, dever"
+      },
+      {
+        "id": 8,
+        "word": "auch",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 9,
+        "word": "besorgen",
+        "pinyin": null,
+        "meaning": "providenciar, conseguir, comprar"
+      }
+    ],
+    "id": "local-1772293113119-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Alles klar.",
+    "pinyin": null,
+    "translation": "B: Tudo certo. / Ok.",
+    "tokens": [
+      "B:",
+      "Alles",
+      "klar",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alles klar",
+        "pinyin": null,
+        "meaning": "Tudo certo, ok"
+      }
+    ],
+    "id": "local-1772293113119-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Haben wir noch Snacks zu Hause?",
+    "pinyin": null,
+    "translation": "Ainda temos lanches em casa?",
+    "tokens": [
+      "Haben",
+      "wir",
+      "noch",
+      "Snacks",
+      "zu",
+      "Hause",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "haben",
+        "pinyin": null,
+        "meaning": "ter"
+      },
+      {
+        "id": 2,
+        "word": "noch",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "Snacks",
+        "pinyin": null,
+        "meaning": "lanches, petiscos"
+      },
+      {
+        "id": 4,
+        "word": "zu Hause",
+        "pinyin": null,
+        "meaning": "em casa"
+      }
+    ],
+    "id": "local-1772293113119-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja.",
+    "pinyin": null,
+    "translation": "A: Sim.",
+    "tokens": [
+      "A:",
+      "Ja",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ja",
+        "pinyin": null,
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1772293113119-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Und Instantnudeln?",
+    "pinyin": null,
+    "translation": "B: E macarrão instantâneo?",
+    "tokens": [
+      "B:",
+      "Und",
+      "Instantnudeln",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "und",
+        "pinyin": null,
+        "meaning": "e"
+      },
+      {
+        "id": 2,
+        "word": "Instantnudeln",
+        "pinyin": null,
+        "meaning": "macarrão instantâneo"
+      }
+    ],
+    "id": "local-1772293113119-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Keine Instantnudeln, die sind ungesund.",
+    "pinyin": null,
+    "translation": "A: Sem macarrão instantâneo, eles são prejudiciais à saúde.",
+    "tokens": [
+      "A:",
+      "Keine",
+      "Instantnudeln",
+      ",",
+      "die",
+      "sind",
+      "ungesund",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "keine",
+        "pinyin": null,
+        "meaning": "nenhum(a), nenhumas"
+      },
+      {
+        "id": 2,
+        "word": "Instantnudeln",
+        "pinyin": null,
+        "meaning": "macarrão instantâneo"
+      },
+      {
+        "id": 3,
+        "word": "sein",
+        "pinyin": null,
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 4,
+        "word": "ungesund",
+        "pinyin": null,
+        "meaning": "não-saudável, prejudicial à saúde"
+      }
+    ],
+    "id": "local-1772293113119-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, ja.",
+    "pinyin": null,
+    "translation": "B: Sim, sim.",
+    "tokens": [
+      "B:",
+      "Ja",
+      ",",
+      "ja",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ja",
+        "pinyin": null,
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1772293113119-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "So, alles bestellt.",
+    "pinyin": null,
+    "translation": "Pronto, tudo encomendado.",
+    "tokens": [
+      "So",
+      ",",
+      "alles",
+      "bestellt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "so",
+        "pinyin": null,
+        "meaning": "assim, então, pronto (neste contexto)"
+      },
+      {
+        "id": 2,
+        "word": "alles",
+        "pinyin": null,
+        "meaning": "tudo"
+      },
+      {
+        "id": 3,
+        "word": "bestellen",
+        "pinyin": null,
+        "meaning": "pedir, encomendar"
+      }
+    ],
+    "id": "local-1772293113119-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wird morgen geliefert.",
+    "pinyin": null,
+    "translation": "Será entregue amanhã.",
+    "tokens": [
+      "Wird",
+      "morgen",
+      "geliefert",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "werden",
+        "pinyin": null,
+        "meaning": "tornar-se, ser (no futuro/passiva)"
+      },
+      {
+        "id": 2,
+        "word": "morgen",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 3,
+        "word": "liefern",
+        "pinyin": null,
+        "meaning": "entregar"
+      }
+    ],
+    "id": "local-1772293113119-15",
+    "language": "Alemão"
+  }
+]

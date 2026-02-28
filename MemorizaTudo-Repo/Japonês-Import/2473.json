@@ -1,0 +1,807 @@
+[
+  {
+    "chinese": "A: また嫌な算数の時間だ。ああ、王暁明、学校が終わったらサッカーしに行こう。",
+    "pinyin": "",
+    "translation": "A: Ah, de novo a aula chata de matemática. Ah, Wang Xiaoming, vamos jogar futebol depois da escola.",
+    "tokens": [
+      "また",
+      "嫌な",
+      "算数",
+      "の",
+      "時間",
+      "だ",
+      "。",
+      "ああ",
+      "、",
+      "王暁明",
+      "、",
+      "学校",
+      "が",
+      "終わったら",
+      "サッカー",
+      "し",
+      "に",
+      "行こう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "また",
+        "pinyin": "mata",
+        "meaning": "novamente, de novo"
+      },
+      {
+        "id": 2,
+        "word": "嫌な",
+        "pinyin": "iya na",
+        "meaning": "desagradável, chato"
+      },
+      {
+        "id": 3,
+        "word": "算数",
+        "pinyin": "sansuu",
+        "meaning": "aritmética, matemática"
+      },
+      {
+        "id": 4,
+        "word": "時間",
+        "pinyin": "jikan",
+        "meaning": "tempo, aula"
+      },
+      {
+        "id": 5,
+        "word": "学校",
+        "pinyin": "gakkou",
+        "meaning": "escola"
+      },
+      {
+        "id": 6,
+        "word": "終わる",
+        "pinyin": "owaru",
+        "meaning": "terminar"
+      },
+      {
+        "id": 7,
+        "word": "サッカー",
+        "pinyin": "sakkaa",
+        "meaning": "futebol"
+      },
+      {
+        "id": 8,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772300117805-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 李佳、何を言っているんだ？立ち上がって、分数とは何か説明しなさい。",
+    "pinyin": "",
+    "translation": "B: Li Jia, o que você está dizendo? Levante-se e explique o que são frações.",
+    "tokens": [
+      "李佳",
+      "、",
+      "何",
+      "を",
+      "言って",
+      "いる",
+      "ん",
+      "だ",
+      "？",
+      "立ち上がって",
+      "、",
+      "分数",
+      "と",
+      "は",
+      "何",
+      "か",
+      "説明",
+      "しなさい",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      },
+      {
+        "id": 10,
+        "word": "言う",
+        "pinyin": "iu",
+        "meaning": "dizer"
+      },
+      {
+        "id": 11,
+        "word": "立ち上がる",
+        "pinyin": "tachiagaru",
+        "meaning": "levantar-se"
+      },
+      {
+        "id": 12,
+        "word": "分数",
+        "pinyin": "bunsuu",
+        "meaning": "fração"
+      },
+      {
+        "id": 13,
+        "word": "説明する",
+        "pinyin": "setsumei suru",
+        "meaning": "explicar"
+      }
+    ],
+    "id": "local-1772300117805-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 分数は、ある数が別の数の何部分であるかを示します。",
+    "pinyin": "",
+    "translation": "A: Frações mostram quantas partes um número é de outro número.",
+    "tokens": [
+      "分数",
+      "は",
+      "、",
+      "ある",
+      "数",
+      "が",
+      "別",
+      "の",
+      "数",
+      "の",
+      "何",
+      "部分",
+      "で",
+      "ある",
+      "か",
+      "を",
+      "示し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "分数",
+        "pinyin": "bunsuu",
+        "meaning": "fração"
+      },
+      {
+        "id": 14,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "certo, algum"
+      },
+      {
+        "id": 15,
+        "word": "数",
+        "pinyin": "kazu",
+        "meaning": "número"
+      },
+      {
+        "id": 16,
+        "word": "別",
+        "pinyin": "betsu",
+        "meaning": "outro, diferente"
+      },
+      {
+        "id": 17,
+        "word": "部分",
+        "pinyin": "bubun",
+        "meaning": "parte"
+      },
+      {
+        "id": 18,
+        "word": "示す",
+        "pinyin": "shimesu",
+        "meaning": "mostrar, indicar"
+      }
+    ],
+    "id": "local-1772300117805-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 例を挙げられますか？",
+    "pinyin": "",
+    "translation": "B: Pode dar um exemplo?",
+    "tokens": [
+      "例",
+      "を",
+      "挙げられ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "例",
+        "pinyin": "rei",
+        "meaning": "exemplo"
+      },
+      {
+        "id": 20,
+        "word": "挙げる",
+        "pinyin": "ageru",
+        "meaning": "dar (um exemplo), levantar"
+      }
+    ],
+    "id": "local-1772300117805-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 例えば、リンゴが3つあるうちの1つを取ったら、それは3分の1です。",
+    "pinyin": "",
+    "translation": "A: Por exemplo, se você pegar uma de três maçãs, é um terço.",
+    "tokens": [
+      "例えば",
+      "、",
+      "リンゴ",
+      "が",
+      "3つ",
+      "ある",
+      "うち",
+      "の",
+      "1つ",
+      "を",
+      "取ったら",
+      "、",
+      "それ",
+      "は",
+      "3分の1",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "例えば",
+        "pinyin": "tatoeba",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 22,
+        "word": "リンゴ",
+        "pinyin": "ringo",
+        "meaning": "maçã"
+      },
+      {
+        "id": 23,
+        "word": "3つ",
+        "pinyin": "mittsu",
+        "meaning": "três (coisas)"
+      },
+      {
+        "id": 24,
+        "word": "うち",
+        "pinyin": "uchi",
+        "meaning": "entre, dentro"
+      },
+      {
+        "id": 25,
+        "word": "1つ",
+        "pinyin": "hitotsu",
+        "meaning": "um (coisa)"
+      },
+      {
+        "id": 26,
+        "word": "取る",
+        "pinyin": "toru",
+        "meaning": "pegar"
+      },
+      {
+        "id": 27,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 28,
+        "word": "3分の1",
+        "pinyin": "san bun no ichi",
+        "meaning": "um terço"
+      }
+    ],
+    "id": "local-1772300117805-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 良い。では、どう書くのですか？",
+    "pinyin": "",
+    "translation": "B: Bom. Então, como se escreve?",
+    "tokens": [
+      "良い",
+      "。",
+      "では",
+      "、",
+      "どう",
+      "書く",
+      "の",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "良い",
+        "pinyin": "ii",
+        "meaning": "bom"
+      },
+      {
+        "id": 30,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então"
+      },
+      {
+        "id": 31,
+        "word": "どう",
+        "pinyin": "dou",
+        "meaning": "como"
+      },
+      {
+        "id": 32,
+        "word": "書く",
+        "pinyin": "kaku",
+        "meaning": "escrever"
+      }
+    ],
+    "id": "local-1772300117805-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: まず、分数の線を書きます。「上」は分子で、分数の線の上に書きます。「下」は分母で、下に書きます。",
+    "pinyin": "",
+    "translation": "A: Primeiro, desenhe a linha da fração. O 'cima' é o numerador, escreve-se acima da linha da fração. O 'baixo' é o denominador, escreve-se abaixo.",
+    "tokens": [
+      "まず",
+      "、",
+      "分数",
+      "の",
+      "線",
+      "を",
+      "書き",
+      "ます",
+      "。",
+      "「",
+      "上",
+      "」",
+      "は",
+      "分子",
+      "で",
+      "、",
+      "分数",
+      "の",
+      "線",
+      "の",
+      "上",
+      "に",
+      "書き",
+      "ます",
+      "。",
+      "「",
+      "下",
+      "」",
+      "は",
+      "分母",
+      "で",
+      "、",
+      "下",
+      "に",
+      "書き",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 33,
+        "word": "まず",
+        "pinyin": "mazu",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 12,
+        "word": "分数",
+        "pinyin": "bunsuu",
+        "meaning": "fração"
+      },
+      {
+        "id": 34,
+        "word": "線",
+        "pinyin": "sen",
+        "meaning": "linha"
+      },
+      {
+        "id": 32,
+        "word": "書く",
+        "pinyin": "kaku",
+        "meaning": "escrever"
+      },
+      {
+        "id": 35,
+        "word": "上",
+        "pinyin": "ue",
+        "meaning": "cima"
+      },
+      {
+        "id": 36,
+        "word": "分子",
+        "pinyin": "bunshi",
+        "meaning": "numerador"
+      },
+      {
+        "id": 37,
+        "word": "下",
+        "pinyin": "shita",
+        "meaning": "baixo"
+      },
+      {
+        "id": 38,
+        "word": "分母",
+        "pinyin": "bunbo",
+        "meaning": "denominador"
+      }
+    ],
+    "id": "local-1772300117805-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 良い。では、パーセンテージとは何ですか？",
+    "pinyin": "",
+    "translation": "B: Bom. Então, o que é porcentagem?",
+    "tokens": [
+      "良い",
+      "。",
+      "では",
+      "、",
+      "パーセンテージ",
+      "と",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "良い",
+        "pinyin": "ii",
+        "meaning": "bom"
+      },
+      {
+        "id": 30,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então"
+      },
+      {
+        "id": 39,
+        "word": "パーセンテージ",
+        "pinyin": "paasenteeji",
+        "meaning": "porcentagem"
+      },
+      {
+        "id": 9,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772300117805-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それは100に対する分数です。例えば、4分の1は25パーセント、2分の1は50パーセントです。",
+    "pinyin": "",
+    "translation": "A: É uma fração em relação a 100. Por exemplo, um quarto é 25 por cento, meio é 50 por cento.",
+    "tokens": [
+      "それ",
+      "は",
+      "100",
+      "に",
+      "対する",
+      "分数",
+      "です",
+      "。",
+      "例えば",
+      "、",
+      "4分の1",
+      "は",
+      "25",
+      "パーセント",
+      "、",
+      "2分の1",
+      "は",
+      "50",
+      "パーセント",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 40,
+        "word": "対する",
+        "pinyin": "taisuru",
+        "meaning": "em relação a, contra"
+      },
+      {
+        "id": 12,
+        "word": "分数",
+        "pinyin": "bunsuu",
+        "meaning": "fração"
+      },
+      {
+        "id": 21,
+        "word": "例えば",
+        "pinyin": "tatoeba",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 41,
+        "word": "4分の1",
+        "pinyin": "yon bun no ichi",
+        "meaning": "um quarto"
+      },
+      {
+        "id": 42,
+        "word": "パーセント",
+        "pinyin": "paasento",
+        "meaning": "por cento"
+      },
+      {
+        "id": 43,
+        "word": "2分の1",
+        "pinyin": "ni bun no ichi",
+        "meaning": "um meio, metade"
+      }
+    ],
+    "id": "local-1772300117805-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、「割」とは何ですか？",
+    "pinyin": "",
+    "translation": "B: Então, o que é 'wari' (décimo)?",
+    "tokens": [
+      "では",
+      "、",
+      "「",
+      "割",
+      "」",
+      "と",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então"
+      },
+      {
+        "id": 44,
+        "word": "割",
+        "pinyin": "wari",
+        "meaning": "décimo, 10 por cento (unidade)"
+      },
+      {
+        "id": 9,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772300117805-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 「1割」は10に対する分数です。例えば、「9割」は10分の9で、90パーセントでもあります。",
+    "pinyin": "",
+    "translation": "A: 'Um wari' é uma fração em relação a 10. Por exemplo, 'nove wari' é nove décimos, e também 90 por cento.",
+    "tokens": [
+      "「",
+      "1割",
+      "」",
+      "は",
+      "10",
+      "に",
+      "対する",
+      "分数",
+      "です",
+      "。",
+      "例えば",
+      "、",
+      "「",
+      "9割",
+      "」",
+      "は",
+      "10分の9",
+      "で",
+      "、",
+      "90",
+      "パーセント",
+      "で",
+      "も",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "1割",
+        "pinyin": "ichi wari",
+        "meaning": "um décimo, 10%"
+      },
+      {
+        "id": 40,
+        "word": "対する",
+        "pinyin": "taisuru",
+        "meaning": "em relação a, contra"
+      },
+      {
+        "id": 12,
+        "word": "分数",
+        "pinyin": "bunsuu",
+        "meaning": "fração"
+      },
+      {
+        "id": 21,
+        "word": "例えば",
+        "pinyin": "tatoeba",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 46,
+        "word": "9割",
+        "pinyin": "kyuu wari",
+        "meaning": "nove décimos, 90%"
+      },
+      {
+        "id": 47,
+        "word": "10分の9",
+        "pinyin": "juu bun no kyuu",
+        "meaning": "nove décimos"
+      },
+      {
+        "id": 42,
+        "word": "パーセント",
+        "pinyin": "paasento",
+        "meaning": "por cento"
+      }
+    ],
+    "id": "local-1772300117805-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 今後、授業中に寝ないでください！そして、話すのは禁止です！もしまた話したら、罰としてじっと立っていなさい！",
+    "pinyin": "",
+    "translation": "B: De agora em diante, não durma durante a aula! E falar é proibido! Se falar de novo, fique parado como punição!",
+    "tokens": [
+      "今後",
+      "、",
+      "授業中",
+      "に",
+      "寝ない",
+      "で",
+      "ください",
+      "！",
+      "そして",
+      "、",
+      "話す",
+      "の",
+      "は",
+      "禁止",
+      "です",
+      "！",
+      "もし",
+      "また",
+      "話したら",
+      "、",
+      "罰",
+      "と",
+      "して",
+      "じっと",
+      "立って",
+      "いなさい",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 48,
+        "word": "今後",
+        "pinyin": "kongo",
+        "meaning": "de agora em diante"
+      },
+      {
+        "id": 49,
+        "word": "授業中",
+        "pinyin": "jugyouchuu",
+        "meaning": "durante a aula"
+      },
+      {
+        "id": 50,
+        "word": "寝る",
+        "pinyin": "neru",
+        "meaning": "dormir"
+      },
+      {
+        "id": 51,
+        "word": "ください",
+        "pinyin": "kudasai",
+        "meaning": "por favor"
+      },
+      {
+        "id": 52,
+        "word": "そして",
+        "pinyin": "soshite",
+        "meaning": "e, então"
+      },
+      {
+        "id": 53,
+        "word": "話す",
+        "pinyin": "hanasu",
+        "meaning": "falar"
+      },
+      {
+        "id": 54,
+        "word": "禁止",
+        "pinyin": "kinshi",
+        "meaning": "proibido"
+      },
+      {
+        "id": 55,
+        "word": "もし",
+        "pinyin": "moshi",
+        "meaning": "se"
+      },
+      {
+        "id": 1,
+        "word": "また",
+        "pinyin": "mata",
+        "meaning": "novamente, de novo"
+      },
+      {
+        "id": 56,
+        "word": "罰",
+        "pinyin": "batsu",
+        "meaning": "punição"
+      },
+      {
+        "id": 57,
+        "word": "として",
+        "pinyin": "toshite",
+        "meaning": "como, na qualidade de"
+      },
+      {
+        "id": 58,
+        "word": "じっと",
+        "pinyin": "jitto",
+        "meaning": "parado, imóvel"
+      },
+      {
+        "id": 59,
+        "word": "立つ",
+        "pinyin": "tatsu",
+        "meaning": "ficar de pé"
+      }
+    ],
+    "id": "local-1772300117805-11",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,821 @@
+[
+  {
+    "chinese": "A: Vayamos a la tienda este fin de semana a comprar una silla de coche para el bebé.",
+    "pinyin": "",
+    "translation": "A: Vamos à loja neste fim de semana para comprar uma cadeirinha de carro para o bebê.",
+    "tokens": [
+      "Vayamos",
+      "a",
+      "la",
+      "tienda",
+      "este",
+      "fin",
+      "de",
+      "semana",
+      "a",
+      "comprar",
+      "una",
+      "silla",
+      "de",
+      "coche",
+      "para",
+      "el",
+      "bebé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vayamos",
+        "pinyin": "",
+        "meaning": "Vamos (subjuntivo de ir)"
+      },
+      {
+        "id": 2,
+        "word": "tienda",
+        "pinyin": "",
+        "meaning": "loja"
+      },
+      {
+        "id": 3,
+        "word": "fin de semana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "silla de coche",
+        "pinyin": "",
+        "meaning": "cadeirinha de carro"
+      },
+      {
+        "id": 6,
+        "word": "bebé",
+        "pinyin": "",
+        "meaning": "bebê"
+      }
+    ],
+    "id": "local-1772295025659-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. Pero he visto que mucha gente no las compra.",
+    "pinyin": "",
+    "translation": "B: De acordo. Mas tenho visto que muitas pessoas não as compram.",
+    "tokens": [
+      "De",
+      "acuerdo",
+      ".",
+      "Pero",
+      "he",
+      "visto",
+      "que",
+      "mucha",
+      "gente",
+      "no",
+      "las",
+      "compra",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 8,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 9,
+        "word": "he visto",
+        "pinyin": "",
+        "meaning": "tenho visto (verbo ver, pretérito perfeito composto)"
+      },
+      {
+        "id": 10,
+        "word": "mucha gente",
+        "pinyin": "",
+        "meaning": "muita gente"
+      },
+      {
+        "id": 11,
+        "word": "compra",
+        "pinyin": "",
+        "meaning": "compra (do verbo comprar, presente)"
+      }
+    ],
+    "id": "local-1772295025659-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Que sus hijos se sienten en el asiento trasero con un adulto sujetándolos está bien.",
+    "pinyin": "",
+    "translation": "Que seus filhos sentem-se no banco de trás com um adulto segurando-os está tudo bem.",
+    "tokens": [
+      "Que",
+      "sus",
+      "hijos",
+      "se",
+      "sienten",
+      "en",
+      "el",
+      "asiento",
+      "trasero",
+      "con",
+      "un",
+      "adulto",
+      "sujetándolos",
+      "está",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "hijos",
+        "pinyin": "",
+        "meaning": "filhos"
+      },
+      {
+        "id": 13,
+        "word": "se sienten",
+        "pinyin": "",
+        "meaning": "se sentam (do verbo sentir-se/sentar-se)"
+      },
+      {
+        "id": 14,
+        "word": "asiento trasero",
+        "pinyin": "",
+        "meaning": "banco traseiro"
+      },
+      {
+        "id": 15,
+        "word": "adulto",
+        "pinyin": "",
+        "meaning": "adulto"
+      },
+      {
+        "id": 16,
+        "word": "sujetándolos",
+        "pinyin": "",
+        "meaning": "segurando-os (do verbo sujetar)"
+      },
+      {
+        "id": 17,
+        "word": "está bien",
+        "pinyin": "",
+        "meaning": "está tudo bem / está certo"
+      }
+    ],
+    "id": "local-1772295025659-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Tenemos que tener una! En muchos países, es ilegal que los niños no viajen en una silla de coche.",
+    "pinyin": "",
+    "translation": "A: Temos que ter uma! Em muitos países, é ilegal que as crianças não viajem em uma cadeirinha de carro.",
+    "tokens": [
+      "¡",
+      "Tenemos",
+      "que",
+      "tener",
+      "una",
+      "!",
+      "En",
+      "muchos",
+      "países",
+      ",",
+      "es",
+      "ilegal",
+      "que",
+      "los",
+      "niños",
+      "no",
+      "viajen",
+      "en",
+      "una",
+      "silla",
+      "de",
+      "coche",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "Tenemos que",
+        "pinyin": "",
+        "meaning": "Temos que"
+      },
+      {
+        "id": 19,
+        "word": "tener",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 20,
+        "word": "países",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 21,
+        "word": "ilegal",
+        "pinyin": "",
+        "meaning": "ilegal"
+      },
+      {
+        "id": 22,
+        "word": "niños",
+        "pinyin": "",
+        "meaning": "crianças"
+      },
+      {
+        "id": 23,
+        "word": "viajen",
+        "pinyin": "",
+        "meaning": "viajem (do verbo viajar, subjuntivo)"
+      },
+      {
+        "id": 5,
+        "word": "silla de coche",
+        "pinyin": "",
+        "meaning": "cadeirinha de carro"
+      }
+    ],
+    "id": "local-1772295025659-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo, de acuerdo. Si quieres comprar una, entonces compraremos una.",
+    "pinyin": "",
+    "translation": "B: De acordo, de acordo. Se você quer comprar uma, então compraremos uma.",
+    "tokens": [
+      "De",
+      "acuerdo",
+      ",",
+      "de",
+      "acuerdo",
+      ".",
+      "Si",
+      "quieres",
+      "comprar",
+      "una",
+      ",",
+      "entonces",
+      "compraremos",
+      "una",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 24,
+        "word": "quieres",
+        "pinyin": "",
+        "meaning": "quer (do verbo querer)"
+      },
+      {
+        "id": 4,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 25,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 26,
+        "word": "compraremos",
+        "pinyin": "",
+        "meaning": "compraremos (do verbo comprar, futuro)"
+      }
+    ],
+    "id": "local-1772295025659-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Has decidido qué marca quieres comprar?",
+    "pinyin": "",
+    "translation": "Você decidiu qual marca quer comprar?",
+    "tokens": [
+      "¿",
+      "Has",
+      "decidido",
+      "qué",
+      "marca",
+      "quieres",
+      "comprar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "Has decidido",
+        "pinyin": "",
+        "meaning": "Você decidiu (do verbo decidir, pretérito perfeito composto)"
+      },
+      {
+        "id": 28,
+        "word": "marca",
+        "pinyin": "",
+        "meaning": "marca"
+      },
+      {
+        "id": 24,
+        "word": "quieres",
+        "pinyin": "",
+        "meaning": "quer (do verbo querer)"
+      },
+      {
+        "id": 4,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772295025659-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Una importada, por supuesto! Tiene que cumplir con los estándares europeos.",
+    "pinyin": "",
+    "translation": "A: Uma importada, é claro! Tem que cumprir com os padrões europeus.",
+    "tokens": [
+      "¡",
+      "Una",
+      "importada",
+      ",",
+      "por",
+      "supuesto",
+      "!",
+      "Tiene",
+      "que",
+      "cumplir",
+      "con",
+      "los",
+      "estándares",
+      "europeos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "importada",
+        "pinyin": "",
+        "meaning": "importada"
+      },
+      {
+        "id": 30,
+        "word": "por supuesto",
+        "pinyin": "",
+        "meaning": "é claro / por suposto"
+      },
+      {
+        "id": 31,
+        "word": "Tiene que",
+        "pinyin": "",
+        "meaning": "Tem que"
+      },
+      {
+        "id": 32,
+        "word": "cumplir",
+        "pinyin": "",
+        "meaning": "cumprir"
+      },
+      {
+        "id": 33,
+        "word": "estándares europeos",
+        "pinyin": "",
+        "meaning": "padrões europeus"
+      }
+    ],
+    "id": "local-1772295025659-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Eso no puede ser barato.",
+    "pinyin": "",
+    "translation": "B: Isso não pode ser barato.",
+    "tokens": [
+      "Eso",
+      "no",
+      "puede",
+      "ser",
+      "barato",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Eso",
+        "pinyin": "",
+        "meaning": "Isso"
+      },
+      {
+        "id": 35,
+        "word": "puede ser",
+        "pinyin": "",
+        "meaning": "pode ser (do verbo poder)"
+      },
+      {
+        "id": 36,
+        "word": "barato",
+        "pinyin": "",
+        "meaning": "barato"
+      }
+    ],
+    "id": "local-1772295025659-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Incluso si no es barata, deberíamos comprarla por la seguridad de nuestra hija.",
+    "pinyin": "",
+    "translation": "A: Mesmo se não for barata, deveríamos comprá-la pela segurança de nossa filha.",
+    "tokens": [
+      "Incluso",
+      "si",
+      "no",
+      "es",
+      "barata",
+      ",",
+      "deberíamos",
+      "comprarla",
+      "por",
+      "la",
+      "seguridad",
+      "de",
+      "nuestra",
+      "hija",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "Incluso",
+        "pinyin": "",
+        "meaning": "Mesmo / Inclusive"
+      },
+      {
+        "id": 38,
+        "word": "barata",
+        "pinyin": "",
+        "meaning": "barata (feminino de barato)"
+      },
+      {
+        "id": 39,
+        "word": "deberíamos",
+        "pinyin": "",
+        "meaning": "deveríamos (do verbo deber, condicional)"
+      },
+      {
+        "id": 40,
+        "word": "comprarla",
+        "pinyin": "",
+        "meaning": "comprá-la (comprar + la)"
+      },
+      {
+        "id": 41,
+        "word": "seguridad",
+        "pinyin": "",
+        "meaning": "segurança"
+      },
+      {
+        "id": 42,
+        "word": "hija",
+        "pinyin": "",
+        "meaning": "filha"
+      }
+    ],
+    "id": "local-1772295025659-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Y si la compramos, la traemos y descubrimos que ella no quiere viajar en ella?",
+    "pinyin": "",
+    "translation": "B: E se comprarmos, a trouxermos e descobrirmos que ela não quer viajar nela?",
+    "tokens": [
+      "¿",
+      "Y",
+      "si",
+      "la",
+      "compramos",
+      ",",
+      "la",
+      "traemos",
+      "y",
+      "descubrimos",
+      "que",
+      "ella",
+      "no",
+      "quiere",
+      "viajar",
+      "en",
+      "ella",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "compramos",
+        "pinyin": "",
+        "meaning": "compramos (do verbo comprar, presente/pretérito)"
+      },
+      {
+        "id": 44,
+        "word": "traemos",
+        "pinyin": "",
+        "meaning": "trazemos (do verbo traer)"
+      },
+      {
+        "id": 45,
+        "word": "descubrimos",
+        "pinyin": "",
+        "meaning": "descobrimos (do verbo descubrir)"
+      },
+      {
+        "id": 46,
+        "word": "quiere",
+        "pinyin": "",
+        "meaning": "quer (do verbo querer, presente)"
+      },
+      {
+        "id": 47,
+        "word": "viajar",
+        "pinyin": "",
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772295025659-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Entonces qué?",
+    "pinyin": "",
+    "translation": "Então o quê?",
+    "tokens": [
+      "¿",
+      "Entonces",
+      "qué",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      }
+    ],
+    "id": "local-1772295025659-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Mi compañero de trabajo dice que en cuanto su hijo se sienta en ella, empieza a llorar.",
+    "pinyin": "",
+    "translation": "Meu colega de trabalho diz que assim que o filho dele se senta nela, começa a chorar.",
+    "tokens": [
+      "Mi",
+      "compañero",
+      "de",
+      "trabajo",
+      "dice",
+      "que",
+      "en",
+      "cuanto",
+      "su",
+      "hijo",
+      "se",
+      "sienta",
+      "en",
+      "ella",
+      ",",
+      "empieza",
+      "a",
+      "llorar",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 48,
+        "word": "compañero de trabajo",
+        "pinyin": "",
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 49,
+        "word": "dice",
+        "pinyin": "",
+        "meaning": "diz (do verbo decir)"
+      },
+      {
+        "id": 50,
+        "word": "en cuanto",
+        "pinyin": "",
+        "meaning": "assim que / logo que"
+      },
+      {
+        "id": 51,
+        "word": "hijo",
+        "pinyin": "",
+        "meaning": "filho"
+      },
+      {
+        "id": 52,
+        "word": "se sienta",
+        "pinyin": "",
+        "meaning": "se senta (do verbo sentar-se)"
+      },
+      {
+        "id": 53,
+        "word": "empieza a llorar",
+        "pinyin": "",
+        "meaning": "começa a chorar (do verbo empezar)"
+      }
+    ],
+    "id": "local-1772295025659-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Así que necesitamos comprar una pronto.",
+    "pinyin": "",
+    "translation": "A: Então, precisamos comprar uma logo.",
+    "tokens": [
+      "Así",
+      "que",
+      "necesitamos",
+      "comprar",
+      "una",
+      "pronto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 54,
+        "word": "Así que",
+        "pinyin": "",
+        "meaning": "Então / Assim que"
+      },
+      {
+        "id": 55,
+        "word": "necesitamos",
+        "pinyin": "",
+        "meaning": "precisamos (do verbo necesitar)"
+      },
+      {
+        "id": 4,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 56,
+        "word": "pronto",
+        "pinyin": "",
+        "meaning": "logo / em breve"
+      }
+    ],
+    "id": "local-1772295025659-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Si empieza a viajar en ella cuando sea pequeña, le será más fácil acostumbrarse.",
+    "pinyin": "",
+    "translation": "Se ela começar a viajar nela quando for pequena, será mais fácil para ela se acostumar.",
+    "tokens": [
+      "Si",
+      "empieza",
+      "a",
+      "viajar",
+      "en",
+      "ella",
+      "cuando",
+      "sea",
+      "pequeña",
+      ",",
+      "le",
+      "será",
+      "más",
+      "fácil",
+      "acostumbrarse",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 57,
+        "word": "empieza a viajar",
+        "pinyin": "",
+        "meaning": "começa a viajar (do verbo empezar)"
+      },
+      {
+        "id": 58,
+        "word": "sea pequeña",
+        "pinyin": "",
+        "meaning": "for pequena (do verbo ser, subjuntivo)"
+      },
+      {
+        "id": 59,
+        "word": "le será",
+        "pinyin": "",
+        "meaning": "será para ela (do verbo ser, futuro)"
+      },
+      {
+        "id": 60,
+        "word": "más fácil",
+        "pinyin": "",
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 61,
+        "word": "acostumbrarse",
+        "pinyin": "",
+        "meaning": "acostumar-se"
+      }
+    ],
+    "id": "local-1772295025659-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. Lo que tú digas, cariño. ¡Todo es por nuestra hija!",
+    "pinyin": "",
+    "translation": "B: De acordo. O que você disser, querida. Tudo é pela nossa filha!",
+    "tokens": [
+      "De",
+      "acuerdo",
+      ".",
+      "Lo",
+      "que",
+      "tú",
+      "digas",
+      ",",
+      "cariño",
+      ".",
+      "¡",
+      "Todo",
+      "es",
+      "por",
+      "nuestra",
+      "hija",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 62,
+        "word": "Lo que tú digas",
+        "pinyin": "",
+        "meaning": "O que você disser (do verbo decir, subjuntivo)"
+      },
+      {
+        "id": 63,
+        "word": "cariño",
+        "pinyin": "",
+        "meaning": "carinho / querida"
+      },
+      {
+        "id": 64,
+        "word": "Todo",
+        "pinyin": "",
+        "meaning": "Tudo"
+      },
+      {
+        "id": 65,
+        "word": "por",
+        "pinyin": "",
+        "meaning": "por / pela"
+      },
+      {
+        "id": 42,
+        "word": "hija",
+        "pinyin": "",
+        "meaning": "filha"
+      }
+    ],
+    "id": "local-1772295025659-14",
+    "language": "Espanhol"
+  }
+]

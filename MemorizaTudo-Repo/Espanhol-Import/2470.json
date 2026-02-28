@@ -1,0 +1,489 @@
+[
+  {
+    "chinese": "A: Xiao Qin, ¿qué publicación estás mirando? ¡Estás tan concentrada!",
+    "pinyin": "",
+    "translation": "A: Xiao Qin, que publicação você está olhando? Você está tão concentrada!",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Qin,",
+      "¿qué",
+      "publicación",
+      "estás",
+      "mirando?",
+      "¡Estás",
+      "tan",
+      "concentrada!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "publicación",
+        "pinyin": "",
+        "meaning": "publicação"
+      },
+      {
+        "id": 2,
+        "word": "mirando",
+        "pinyin": "",
+        "meaning": "olhando"
+      },
+      {
+        "id": 3,
+        "word": "concentrada",
+        "pinyin": "",
+        "meaning": "concentrada"
+      }
+    ],
+    "id": "local-1772299834979-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh, estoy mirando una encuesta en internet sobre si los perros guía deberían entrar al metro.",
+    "pinyin": "",
+    "translation": "B: Oh, estou olhando uma pesquisa na internet sobre se os cães-guia deveriam entrar no metrô.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "estoy",
+      "mirando",
+      "una",
+      "encuesta",
+      "en",
+      "internet",
+      "sobre",
+      "si",
+      "los",
+      "perros",
+      "guía",
+      "deberían",
+      "entrar",
+      "al",
+      "metro."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "encuesta",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      },
+      {
+        "id": 2,
+        "word": "internet",
+        "pinyin": "",
+        "meaning": "internet"
+      },
+      {
+        "id": 3,
+        "word": "perros guía",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 4,
+        "word": "deberían",
+        "pinyin": "",
+        "meaning": "deveriam"
+      },
+      {
+        "id": 5,
+        "word": "entrar",
+        "pinyin": "",
+        "meaning": "entrar"
+      },
+      {
+        "id": 6,
+        "word": "metro",
+        "pinyin": "",
+        "meaning": "metrô"
+      }
+    ],
+    "id": "local-1772299834979-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Cuál es el resultado de la encuesta?",
+    "pinyin": "",
+    "translation": "A: Qual é o resultado da pesquisa?",
+    "tokens": [
+      "A:",
+      "¿Cuál",
+      "es",
+      "el",
+      "resultado",
+      "de",
+      "la",
+      "encuesta?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "resultado",
+        "pinyin": "",
+        "meaning": "resultado"
+      },
+      {
+        "id": 2,
+        "word": "encuesta",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      }
+    ],
+    "id": "local-1772299834979-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Las opiniones de todos difieren; algunas personas están de acuerdo, otras se oponen.",
+    "pinyin": "",
+    "translation": "B: As opiniões de todos diferem; algumas pessoas concordam, outras se opõem.",
+    "tokens": [
+      "B:",
+      "Las",
+      "opiniones",
+      "de",
+      "todos",
+      "difieren;",
+      "algunas",
+      "personas",
+      "están",
+      "de",
+      "acuerdo,",
+      "otras",
+      "se",
+      "oponen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "opiniones",
+        "pinyin": "",
+        "meaning": "opiniões"
+      },
+      {
+        "id": 2,
+        "word": "difieren",
+        "pinyin": "",
+        "meaning": "diferem"
+      },
+      {
+        "id": 3,
+        "word": "de acuerdo",
+        "pinyin": "",
+        "meaning": "concordam"
+      },
+      {
+        "id": 4,
+        "word": "se oponen",
+        "pinyin": "",
+        "meaning": "se opõem"
+      }
+    ],
+    "id": "local-1772299834979-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Todos los perros guía reciben entrenamiento. No atacarán a otros pasajeros. ¿Por qué se oponen a la idea?",
+    "pinyin": "",
+    "translation": "A: Todos os cães-guia recebem treinamento. Eles não atacarão outros passageiros. Por que se opõem à ideia?",
+    "tokens": [
+      "A:",
+      "Todos",
+      "los",
+      "perros",
+      "guía",
+      "reciben",
+      "entrenamiento.",
+      "No",
+      "atacarán",
+      "a",
+      "otros",
+      "pasajeros.",
+      "¿Por",
+      "qué",
+      "se",
+      "oponen",
+      "a",
+      "la",
+      "idea?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "perros guía",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 2,
+        "word": "entrenamiento",
+        "pinyin": "",
+        "meaning": "treinamento"
+      },
+      {
+        "id": 3,
+        "word": "atacarán",
+        "pinyin": "",
+        "meaning": "atacarão"
+      },
+      {
+        "id": 4,
+        "word": "pasajeros",
+        "pinyin": "",
+        "meaning": "passageiros"
+      },
+      {
+        "id": 5,
+        "word": "se oponen",
+        "pinyin": "",
+        "meaning": "se opõem"
+      },
+      {
+        "id": 6,
+        "word": "idea",
+        "pinyin": "",
+        "meaning": "ideia"
+      }
+    ],
+    "id": "local-1772299834979-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Exacto. Los perros guía son los ojos de la persona ciega. Permitir que el perro guía entre al metro no solo es conveniente para la persona ciega, también es respetuoso.",
+    "pinyin": "",
+    "translation": "B: Exato. Os cães-guia são os olhos da pessoa cega. Permitir que o cão-guia entre no metrô não é apenas conveniente para a pessoa cega, também é respeitoso.",
+    "tokens": [
+      "B:",
+      "Exacto.",
+      "Los",
+      "perros",
+      "guía",
+      "son",
+      "los",
+      "ojos",
+      "de",
+      "la",
+      "persona",
+      "ciega.",
+      "Permitir",
+      "que",
+      "el",
+      "perro",
+      "guía",
+      "entre",
+      "al",
+      "metro",
+      "no",
+      "solo",
+      "es",
+      "conveniente",
+      "para",
+      "la",
+      "persona",
+      "ciega,",
+      "también",
+      "es",
+      "respetuoso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Exacto",
+        "pinyin": "",
+        "meaning": "Exato"
+      },
+      {
+        "id": 2,
+        "word": "perros guía",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 3,
+        "word": "ojos",
+        "pinyin": "",
+        "meaning": "olhos"
+      },
+      {
+        "id": 4,
+        "word": "persona ciega",
+        "pinyin": "",
+        "meaning": "pessoa cega"
+      },
+      {
+        "id": 5,
+        "word": "Permitir",
+        "pinyin": "",
+        "meaning": "Permitir"
+      },
+      {
+        "id": 6,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      },
+      {
+        "id": 7,
+        "word": "respetuoso",
+        "pinyin": "",
+        "meaning": "respeitoso"
+      }
+    ],
+    "id": "local-1772299834979-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Shanghái ya permite que los perros guía vayan en el metro, pero en algunas ciudades todavía no está bien.",
+    "pinyin": "",
+    "translation": "A: Xangai já permite que os cães-guia andem no metrô, mas em algumas cidades ainda não está tudo bem.",
+    "tokens": [
+      "A:",
+      "Shanghái",
+      "ya",
+      "permite",
+      "que",
+      "los",
+      "perros",
+      "guía",
+      "vayan",
+      "en",
+      "el",
+      "metro,",
+      "pero",
+      "en",
+      "algunas",
+      "ciudades",
+      "todavía",
+      "no",
+      "está",
+      "bien."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Shanghái",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 2,
+        "word": "permite",
+        "pinyin": "",
+        "meaning": "permite"
+      },
+      {
+        "id": 3,
+        "word": "perros guía",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 4,
+        "word": "vayan",
+        "pinyin": "",
+        "meaning": "vão/andem"
+      },
+      {
+        "id": 5,
+        "word": "metro",
+        "pinyin": "",
+        "meaning": "metrô"
+      },
+      {
+        "id": 6,
+        "word": "ciudades",
+        "pinyin": "",
+        "meaning": "cidades"
+      },
+      {
+        "id": 7,
+        "word": "todavía",
+        "pinyin": "",
+        "meaning": "ainda"
+      }
+    ],
+    "id": "local-1772299834979-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Esta encuesta aún no ha terminado. Votemos de inmediato y demos nuestro apoyo.",
+    "pinyin": "",
+    "translation": "B: Esta pesquisa ainda não terminou. Vamos votar imediatamente e dar nosso apoio.",
+    "tokens": [
+      "B:",
+      "Esta",
+      "encuesta",
+      "aún",
+      "no",
+      "ha",
+      "terminado.",
+      "Votemos",
+      "de",
+      "inmediato",
+      "y",
+      "demos",
+      "nuestro",
+      "apoyo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "encuesta",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      },
+      {
+        "id": 2,
+        "word": "terminado",
+        "pinyin": "",
+        "meaning": "terminado"
+      },
+      {
+        "id": 3,
+        "word": "Votemos",
+        "pinyin": "",
+        "meaning": "Votemos"
+      },
+      {
+        "id": 4,
+        "word": "inmediato",
+        "pinyin": "",
+        "meaning": "imediato"
+      },
+      {
+        "id": 5,
+        "word": "apoyo",
+        "pinyin": "",
+        "meaning": "apoio"
+      }
+    ],
+    "id": "local-1772299834979-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Debemos hacerlo.",
+    "pinyin": "",
+    "translation": "A: Devemos fazer isso.",
+    "tokens": [
+      "A:",
+      "Debemos",
+      "hacerlo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Debemos",
+        "pinyin": "",
+        "meaning": "Devemos"
+      },
+      {
+        "id": 2,
+        "word": "hacerlo",
+        "pinyin": "",
+        "meaning": "fazer isso"
+      }
+    ],
+    "id": "local-1772299834979-8",
+    "language": "Espanhol"
+  }
+]

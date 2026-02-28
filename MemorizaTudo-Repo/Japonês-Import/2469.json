@@ -1,0 +1,889 @@
+[
+  {
+    "chinese": "A: 王部長、こんにちは。このデザイン案についてどう思いますか？",
+    "pinyin": null,
+    "translation": "A: Gerente Ou, olá. O que você acha desta proposta de design?",
+    "tokens": [
+      "A:",
+      "王部長",
+      "、",
+      "こんにちは",
+      "。",
+      "この",
+      "デザイン案",
+      "について",
+      "どう",
+      "思います",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "王部長",
+        "pinyin": "Ō buchoo",
+        "meaning": "Gerente Ou (sobrenome 王 + cargo 部長)"
+      },
+      {
+        "id": 2,
+        "word": "こんにちは",
+        "pinyin": "konnichiwa",
+        "meaning": "Olá"
+      },
+      {
+        "id": 3,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "Este(a)"
+      },
+      {
+        "id": 4,
+        "word": "デザイン案",
+        "pinyin": "dezain-an",
+        "meaning": "Proposta de design"
+      },
+      {
+        "id": 5,
+        "word": "について",
+        "pinyin": "ni tsuite",
+        "meaning": "Sobre, a respeito de"
+      },
+      {
+        "id": 6,
+        "word": "どう",
+        "pinyin": "doo",
+        "meaning": "Como, o que"
+      },
+      {
+        "id": 7,
+        "word": "思います",
+        "pinyin": "omoimasu",
+        "meaning": "Acha, pensa (forma ます de 思う)"
+      }
+    ],
+    "id": "local-1772299755458-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 悪くないですが、いつも私の想像とは違いますね。",
+    "pinyin": null,
+    "translation": "B: Não é ruim, mas sempre difere da minha imaginação, não é?",
+    "tokens": [
+      "B:",
+      "悪く",
+      "ない",
+      "ですが",
+      "、",
+      "いつも",
+      "私",
+      "の",
+      "想像",
+      "と",
+      "は",
+      "違い",
+      "ます",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "悪くない",
+        "pinyin": "warukunai",
+        "meaning": "Não é ruim"
+      },
+      {
+        "id": 2,
+        "word": "ですが",
+        "pinyin": "desu ga",
+        "meaning": "Mas, entretanto"
+      },
+      {
+        "id": 3,
+        "word": "いつも",
+        "pinyin": "itsumo",
+        "meaning": "Sempre"
+      },
+      {
+        "id": 4,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "Eu, meu(minha)"
+      },
+      {
+        "id": 5,
+        "word": "想像",
+        "pinyin": "soozoo",
+        "meaning": "Imaginação"
+      },
+      {
+        "id": 6,
+        "word": "とは違います",
+        "pinyin": "to wa chigaimasu",
+        "meaning": "É diferente de"
+      },
+      {
+        "id": 7,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "Partícula de confirmação, 'não é?'"
+      }
+    ],
+    "id": "local-1772299755458-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 何かアイデアがあれば教えてください。",
+    "pinyin": null,
+    "translation": "A: Se tiver alguma ideia, por favor, me diga.",
+    "tokens": [
+      "A:",
+      "何か",
+      "アイデア",
+      "が",
+      "あれ",
+      "ば",
+      "教え",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 2,
+        "word": "アイデア",
+        "pinyin": "aidea",
+        "meaning": "Ideia"
+      },
+      {
+        "id": 3,
+        "word": "あれば",
+        "pinyin": "areba",
+        "meaning": "Se houver/tiver (forma condicional de ある)"
+      },
+      {
+        "id": 4,
+        "word": "教えてください",
+        "pinyin": "oshiete kudasai",
+        "meaning": "Por favor, me diga/ensine"
+      }
+    ],
+    "id": "local-1772299755458-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 何がとははっきり言えません。何かが足りない気がします。",
+    "pinyin": null,
+    "translation": "B: Não consigo dizer exatamente o quê. Sinto que algo está faltando.",
+    "tokens": [
+      "B:",
+      "何",
+      "が",
+      "と",
+      "は",
+      "はっきり",
+      "言え",
+      "ません",
+      "。",
+      "何か",
+      "が",
+      "足りない",
+      "気",
+      "が",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何がとは",
+        "pinyin": "nani ga to wa",
+        "meaning": "Exatamente o que"
+      },
+      {
+        "id": 2,
+        "word": "はっきり",
+        "pinyin": "hakkiri",
+        "meaning": "Claramente, distintamente"
+      },
+      {
+        "id": 3,
+        "word": "言えません",
+        "pinyin": "iemasen",
+        "meaning": "Não consigo dizer (forma potencial negativa de 言える - poder dizer)"
+      },
+      {
+        "id": 4,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 5,
+        "word": "足りない",
+        "pinyin": "tarinai",
+        "meaning": "Faltando, insuficiente (forma negativa de 足りる)"
+      },
+      {
+        "id": 6,
+        "word": "気がします",
+        "pinyin": "ki ga shimasu",
+        "meaning": "Sinto que, tenho a sensação de que"
+      }
+    ],
+    "id": "local-1772299755458-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 前回、スタイルがシンプルすぎるとおっしゃったので、今回は視覚要素を増やしました。ユーザーインタラクションもより複雑になっています。ご覧になってください。",
+    "pinyin": null,
+    "translation": "A: Da última vez, o senhor disse que o estilo era muito simples, então desta vez aumentei os elementos visuais. A interação do usuário também está mais complexa. Por favor, dê uma olhada.",
+    "tokens": [
+      "A:",
+      "前回",
+      "、",
+      "スタイル",
+      "が",
+      "シンプル",
+      "すぎる",
+      "と",
+      "おっしゃった",
+      "ので",
+      "、",
+      "今回",
+      "は",
+      "視覚",
+      "要素",
+      "を",
+      "増やし",
+      "ました",
+      "。",
+      "ユーザー",
+      "インタラクション",
+      "も",
+      "より",
+      "複雑",
+      "に",
+      "なっています",
+      "。",
+      "ご覧",
+      "に",
+      "なっ",
+      "て",
+      "ください",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "前回",
+        "pinyin": "zenkai",
+        "meaning": "Da última vez"
+      },
+      {
+        "id": 2,
+        "word": "スタイル",
+        "pinyin": "sutairu",
+        "meaning": "Estilo"
+      },
+      {
+        "id": 3,
+        "word": "シンプルすぎる",
+        "pinyin": "shinpuru sugiru",
+        "meaning": "Simples demais (simples + すぎる)"
+      },
+      {
+        "id": 4,
+        "word": "おっしゃった",
+        "pinyin": "osshatta",
+        "meaning": "Disse (forma educada de 言った)"
+      },
+      {
+        "id": 5,
+        "word": "ので",
+        "pinyin": "node",
+        "meaning": "Porque, já que (razão)"
+      },
+      {
+        "id": 6,
+        "word": "今回",
+        "pinyin": "konkai",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 7,
+        "word": "視覚要素",
+        "pinyin": "shikaku yoozo",
+        "meaning": "Elemento visual"
+      },
+      {
+        "id": 8,
+        "word": "増やしました",
+        "pinyin": "fuyashimashita",
+        "meaning": "Aumentei (forma ます passada de 増やす)"
+      },
+      {
+        "id": 9,
+        "word": "ユーザーインタラクション",
+        "pinyin": "yūzā intarakushon",
+        "meaning": "Interação do usuário"
+      },
+      {
+        "id": 10,
+        "word": "より",
+        "pinyin": "yori",
+        "meaning": "Mais (comparativo)"
+      },
+      {
+        "id": 11,
+        "word": "複雑",
+        "pinyin": "fukuzatsu",
+        "meaning": "Complexo"
+      },
+      {
+        "id": 12,
+        "word": "になっています",
+        "pinyin": "ni natte imasu",
+        "meaning": "Tornou-se, está (em um estado de mudança)"
+      },
+      {
+        "id": 13,
+        "word": "ご覧になってください",
+        "pinyin": "goran ni natte kudasai",
+        "meaning": "Por favor, dê uma olhada (forma honorífica de 見て)"
+      }
+    ],
+    "id": "local-1772299755458-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 複雑すぎますね。ユーザーは気に入らないのではないでしょうか？",
+    "pinyin": null,
+    "translation": "B: Está muito complexo, não é? Os usuários não devem gostar, não?",
+    "tokens": [
+      "B:",
+      "複雑",
+      "すぎる",
+      "ます",
+      "ね",
+      "。",
+      "ユーザー",
+      "は",
+      "気に",
+      "入ら",
+      "ない",
+      "の",
+      "では",
+      "ない",
+      "でしょうか",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "複雑すぎます",
+        "pinyin": "fukuzatsu sugimasu",
+        "meaning": "Está muito complexo (complexo + すぎる)"
+      },
+      {
+        "id": 2,
+        "word": "ユーザー",
+        "pinyin": "yūzā",
+        "meaning": "Usuário"
+      },
+      {
+        "id": 3,
+        "word": "気に入らない",
+        "pinyin": "ki ni iranai",
+        "meaning": "Não gostar (forma negativa de 気に入る)"
+      },
+      {
+        "id": 4,
+        "word": "のではないでしょうか",
+        "pinyin": "no de wa nai deshoo ka",
+        "meaning": "Não seria o caso de...? / Não é que...?, não?"
+      }
+    ],
+    "id": "local-1772299755458-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: では、この部分を変更して、複雑さを少し取り除きます。",
+    "pinyin": null,
+    "translation": "A: Então, vou mudar esta parte e remover um pouco da complexidade.",
+    "tokens": [
+      "A:",
+      "では",
+      "、",
+      "この",
+      "部分",
+      "を",
+      "変更",
+      "し",
+      "て",
+      "、",
+      "複雑さ",
+      "を",
+      "少し",
+      "取り除き",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "Então, bem então"
+      },
+      {
+        "id": 2,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "Este(a)"
+      },
+      {
+        "id": 3,
+        "word": "部分",
+        "pinyin": "bubun",
+        "meaning": "Parte, seção"
+      },
+      {
+        "id": 4,
+        "word": "変更して",
+        "pinyin": "henkoo shite",
+        "meaning": "Alterar, modificar (forma て de 変更する)"
+      },
+      {
+        "id": 5,
+        "word": "複雑さ",
+        "pinyin": "fukuzatsusa",
+        "meaning": "Complexidade (substantivo de 複雑)"
+      },
+      {
+        "id": 6,
+        "word": "少し",
+        "pinyin": "sukoshi",
+        "meaning": "Um pouco"
+      },
+      {
+        "id": 7,
+        "word": "取り除きます",
+        "pinyin": "torinozokimasu",
+        "meaning": "Remover, eliminar (forma ます de 取り除く)"
+      }
+    ],
+    "id": "local-1772299755458-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: この色ですが…",
+    "pinyin": null,
+    "translation": "B: Sobre esta cor, uhm...",
+    "tokens": [
+      "B:",
+      "この",
+      "色",
+      "です",
+      "が",
+      "…"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "Este(a)"
+      },
+      {
+        "id": 2,
+        "word": "色",
+        "pinyin": "iro",
+        "meaning": "Cor"
+      },
+      {
+        "id": 3,
+        "word": "ですが",
+        "pinyin": "desu ga",
+        "meaning": "Mas, entretanto (usado para introduzir um tópico com uma pausa ou hesitação)"
+      }
+    ],
+    "id": "local-1772299755458-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: これはオレンジです。部長のお好きな暖色系です。",
+    "pinyin": null,
+    "translation": "A: Isso é laranja. É uma cor quente que o gerente gosta.",
+    "tokens": [
+      "A:",
+      "これ",
+      "は",
+      "オレンジ",
+      "です",
+      "。",
+      "部長",
+      "の",
+      "お",
+      "好き",
+      "な",
+      "暖色",
+      "系",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "オレンジ",
+        "pinyin": "orenji",
+        "meaning": "Laranja (cor)"
+      },
+      {
+        "id": 3,
+        "word": "部長",
+        "pinyin": "buchoo",
+        "meaning": "Gerente, chefe de departamento"
+      },
+      {
+        "id": 4,
+        "word": "お好きな",
+        "pinyin": "osukina",
+        "meaning": "Que você gosta (forma honorífica de 好きな)"
+      },
+      {
+        "id": 5,
+        "word": "暖色系",
+        "pinyin": "danshokukei",
+        "meaning": "Cores quentes"
+      }
+    ],
+    "id": "local-1772299755458-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 暖色系は好きですが、これは明るすぎるように思います。",
+    "pinyin": null,
+    "translation": "B: Gosto de cores quentes, mas acho que esta é muito clara.",
+    "tokens": [
+      "B:",
+      "暖色",
+      "系",
+      "は",
+      "好き",
+      "です",
+      "が",
+      "、",
+      "これ",
+      "は",
+      "明る",
+      "すぎる",
+      "よう",
+      "に",
+      "思います",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "暖色系",
+        "pinyin": "danshokukei",
+        "meaning": "Cores quentes"
+      },
+      {
+        "id": 2,
+        "word": "好きです",
+        "pinyin": "suki desu",
+        "meaning": "Gosto"
+      },
+      {
+        "id": 3,
+        "word": "ですが",
+        "pinyin": "desu ga",
+        "meaning": "Mas, entretanto"
+      },
+      {
+        "id": 4,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "Isto"
+      },
+      {
+        "id": 5,
+        "word": "明るすぎる",
+        "pinyin": "akarusugiru",
+        "meaning": "Muito claro, excessivamente brilhante (明るい + すぎる)"
+      },
+      {
+        "id": 6,
+        "word": "ように思います",
+        "pinyin": "yoo ni omoimasu",
+        "meaning": "Acho que, parece que (forma ます de 思う)"
+      }
+    ],
+    "id": "local-1772299755458-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ああ、分かりました。では、もっとクリーム色っぽいものに変更します。いかがでしょうか？",
+    "pinyin": null,
+    "translation": "A: Ah, entendi. Então, vou mudar para algo mais parecido com creme. O que acha?",
+    "tokens": [
+      "A:",
+      "ああ",
+      "、",
+      "分かり",
+      "ました",
+      "。",
+      "では",
+      "、",
+      "もっと",
+      "クリーム色",
+      "っぽい",
+      "もの",
+      "に",
+      "変更",
+      "し",
+      "ます",
+      "。",
+      "いかが",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": "aa",
+        "meaning": "Ah, oh (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "分かりました",
+        "pinyin": "wakarimashita",
+        "meaning": "Entendi, compreendi (forma ます passada de 分かる)"
+      },
+      {
+        "id": 3,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "Então, bem então"
+      },
+      {
+        "id": 4,
+        "word": "もっと",
+        "pinyin": "motto",
+        "meaning": "Mais (quantidade ou grau)"
+      },
+      {
+        "id": 5,
+        "word": "クリーム色っぽい",
+        "pinyin": "kurīmuiroppoi",
+        "meaning": "Cremoso, parecido com a cor creme"
+      },
+      {
+        "id": 6,
+        "word": "もの",
+        "pinyin": "mono",
+        "meaning": "Coisa, objeto (substantivo genérico)"
+      },
+      {
+        "id": 7,
+        "word": "変更します",
+        "pinyin": "henkoo shimasu",
+        "meaning": "Vou mudar, alterar (forma ます de 変更する)"
+      },
+      {
+        "id": 8,
+        "word": "いかがでしょうか",
+        "pinyin": "ikaga deshoo ka",
+        "meaning": "O que você acha? Como é? (expressão educada para perguntar a opinião)"
+      }
+    ],
+    "id": "local-1772299755458-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それでいいです。しかし、これで5つ目のバージョンです。時間がないのではないかと心配しています。結局、この案は忘れて最初のバージョンを使うというのはどうでしょうか？",
+    "pinyin": null,
+    "translation": "B: Tudo bem com isso. No entanto, esta é a 5ª versão. Estou preocupado que não tenhamos tempo. Afinal, o que você acha de esquecer esta proposta e usar a primeira versão?",
+    "tokens": [
+      "B:",
+      "それ",
+      "で",
+      "いい",
+      "です",
+      "。",
+      "しかし",
+      "、",
+      "これ",
+      "で",
+      "5つ目",
+      "の",
+      "バージョン",
+      "です",
+      "。",
+      "時間",
+      "が",
+      "ない",
+      "の",
+      "では",
+      "ない",
+      "か",
+      "と",
+      "心配",
+      "し",
+      "て",
+      "います",
+      "。",
+      "結局",
+      "、",
+      "この",
+      "案",
+      "は",
+      "忘れ",
+      "て",
+      "最初",
+      "の",
+      "バージョン",
+      "を",
+      "使う",
+      "と",
+      "いう",
+      "の",
+      "は",
+      "どう",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それでいいです",
+        "pinyin": "sore de ii desu",
+        "meaning": "Tudo bem com isso, está bom assim"
+      },
+      {
+        "id": 2,
+        "word": "しかし",
+        "pinyin": "shikashi",
+        "meaning": "No entanto, mas"
+      },
+      {
+        "id": 3,
+        "word": "5つ目",
+        "pinyin": "ittsutsume",
+        "meaning": "O quinto"
+      },
+      {
+        "id": 4,
+        "word": "バージョン",
+        "pinyin": "bājon",
+        "meaning": "Versão"
+      },
+      {
+        "id": 5,
+        "word": "時間がない",
+        "pinyin": "jikan ga nai",
+        "meaning": "Não ter tempo"
+      },
+      {
+        "id": 6,
+        "word": "のではないかと心配しています",
+        "pinyin": "no de wa nai ka to shinpai shite imasu",
+        "meaning": "Estou preocupado que talvez não haja/não seja"
+      },
+      {
+        "id": 7,
+        "word": "結局",
+        "pinyin": "kekkyoku",
+        "meaning": "Afinal, no final das contas"
+      },
+      {
+        "id": 8,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "Este(a)"
+      },
+      {
+        "id": 9,
+        "word": "案",
+        "pinyin": "an",
+        "meaning": "Proposta, plano"
+      },
+      {
+        "id": 10,
+        "word": "忘れて",
+        "pinyin": "wasurete",
+        "meaning": "Esquecer (forma て de 忘れる)"
+      },
+      {
+        "id": 11,
+        "word": "最初の",
+        "pinyin": "saisho no",
+        "meaning": "O primeiro"
+      },
+      {
+        "id": 12,
+        "word": "使う",
+        "pinyin": "tsukau",
+        "meaning": "Usar"
+      },
+      {
+        "id": 13,
+        "word": "というのはどうでしょうか",
+        "pinyin": "to iu no wa doo deshoo ka",
+        "meaning": "O que você acha de (fazer)?"
+      }
+    ],
+    "id": "local-1772299755458-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: えっ？分かりました、分かりました。",
+    "pinyin": null,
+    "translation": "A: Hã? Entendi, entendi.",
+    "tokens": [
+      "A:",
+      "えっ",
+      "？",
+      "分かり",
+      "ました",
+      "、",
+      "分かり",
+      "ました",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "えっ",
+        "pinyin": "e~",
+        "meaning": "Hã? O quê? (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "分かりました",
+        "pinyin": "wakarimashita",
+        "meaning": "Entendi, compreendi (forma ます passada de 分かる)"
+      }
+    ],
+    "id": "local-1772299755458-12",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,647 @@
+[
+  {
+    "chinese": "A: 샤오리우 씨, 오늘이 인턴 첫날이죠. 모르는 것이 있으면 언제든지 물어보세요.",
+    "pinyin": "",
+    "translation": "A: Xiaoliu, hoje é seu primeiro dia de estágio, certo? Se tiver algo que não saiba, pergunte a qualquer momento.",
+    "tokens": [
+      "A:",
+      "샤오리우",
+      "씨",
+      ",",
+      "오늘이",
+      "인턴",
+      "첫날이죠",
+      ".",
+      "모르는",
+      "것이",
+      "있으면",
+      "언제든지",
+      "물어보세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오리우",
+        "pinyin": "",
+        "meaning": "Xiaoliu (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "씨",
+        "pinyin": "",
+        "meaning": "Senhor(a) (sufixo honorífico)"
+      },
+      {
+        "id": 3,
+        "word": "오늘",
+        "pinyin": "",
+        "meaning": "hoje"
+      },
+      {
+        "id": 4,
+        "word": "인턴",
+        "pinyin": "",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 5,
+        "word": "첫날",
+        "pinyin": "",
+        "meaning": "primeiro dia"
+      },
+      {
+        "id": 6,
+        "word": "모르다",
+        "pinyin": "",
+        "meaning": "não saber"
+      },
+      {
+        "id": 7,
+        "word": "것",
+        "pinyin": "",
+        "meaning": "coisa"
+      },
+      {
+        "id": 8,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "existir, ter"
+      },
+      {
+        "id": 9,
+        "word": "언제든지",
+        "pinyin": "",
+        "meaning": "a qualquer momento"
+      },
+      {
+        "id": 10,
+        "word": "물어보다",
+        "pinyin": "",
+        "meaning": "perguntar"
+      }
+    ],
+    "id": "local-1772298818224-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 리 선생님. 무엇을 하면 될까요?",
+    "pinyin": "",
+    "translation": "B: Sim, Professor Lee. O que devo fazer?",
+    "tokens": [
+      "B:",
+      "네",
+      ",",
+      "리",
+      "선생님",
+      ".",
+      "무엇을",
+      "하면",
+      "될까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "리",
+        "pinyin": "",
+        "meaning": "Lee (sobrenome)"
+      },
+      {
+        "id": 3,
+        "word": "선생님",
+        "pinyin": "",
+        "meaning": "professor(a), senhor(a) (título respeitoso)"
+      },
+      {
+        "id": 4,
+        "word": "무엇",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 5,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 6,
+        "word": "되다",
+        "pinyin": "",
+        "meaning": "tornar-se, ser permitido"
+      }
+    ],
+    "id": "local-1772298818224-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 여기 서류들이 있습니다. 순서대로 정리해주세요. 어떤 서류가 유용한지, 그리고 \"무효\"라고 적힌 서류는 어떤 것인지 확인해보세요.",
+    "pinyin": "",
+    "translation": "A: Aqui estão os documentos. Por favor, organize-os em ordem. Verifique quais documentos são úteis e quais são os documentos marcados como 'inválido'.",
+    "tokens": [
+      "A:",
+      "여기",
+      "서류들이",
+      "있습니다",
+      ".",
+      "순서대로",
+      "정리해주세요",
+      ".",
+      "어떤",
+      "서류가",
+      "유용한지",
+      ",",
+      "그리고",
+      "\"무효\"",
+      "라고",
+      "적힌",
+      "서류는",
+      "어떤",
+      "것인지",
+      "확인해보세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여기",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 2,
+        "word": "서류",
+        "pinyin": "",
+        "meaning": "documento"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "existir, ter"
+      },
+      {
+        "id": 4,
+        "word": "순서대로",
+        "pinyin": "",
+        "meaning": "em ordem"
+      },
+      {
+        "id": 5,
+        "word": "정리하다",
+        "pinyin": "",
+        "meaning": "organizar"
+      },
+      {
+        "id": 6,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 7,
+        "word": "유용하다",
+        "pinyin": "",
+        "meaning": "ser útil"
+      },
+      {
+        "id": 8,
+        "word": "그리고",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 9,
+        "word": "무효",
+        "pinyin": "",
+        "meaning": "inválido, nulo"
+      },
+      {
+        "id": 10,
+        "word": "적히다",
+        "pinyin": "",
+        "meaning": "ser escrito, estar marcado"
+      },
+      {
+        "id": 11,
+        "word": "확인하다",
+        "pinyin": "",
+        "meaning": "verificar, confirmar"
+      }
+    ],
+    "id": "local-1772298818224-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 리 선생님. 이것들은 전부 무효 서류네요.",
+    "pinyin": "",
+    "translation": "B: Sim, Professor Lee. Estes são todos documentos inválidos.",
+    "tokens": [
+      "B:",
+      "네",
+      ",",
+      "리",
+      "선생님",
+      ".",
+      "이것들은",
+      "전부",
+      "무효",
+      "서류네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "리",
+        "pinyin": "",
+        "meaning": "Lee (sobrenome)"
+      },
+      {
+        "id": 3,
+        "word": "선생님",
+        "pinyin": "",
+        "meaning": "professor(a), senhor(a)"
+      },
+      {
+        "id": 4,
+        "word": "이것",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 5,
+        "word": "전부",
+        "pinyin": "",
+        "meaning": "tudo, totalmente"
+      },
+      {
+        "id": 6,
+        "word": "무효",
+        "pinyin": "",
+        "meaning": "inválido, nulo"
+      },
+      {
+        "id": 7,
+        "word": "서류",
+        "pinyin": "",
+        "meaning": "documento"
+      }
+    ],
+    "id": "local-1772298818224-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 좋아요, 그럼 처리하세요.",
+    "pinyin": "",
+    "translation": "A: Certo, então processe-os.",
+    "tokens": [
+      "A:",
+      "좋아요",
+      ",",
+      "그럼",
+      "처리하세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋다",
+        "pinyin": "",
+        "meaning": "ser bom, estar bem (좋아요 - ok, tudo bem)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "처리하다",
+        "pinyin": "",
+        "meaning": "processar, lidar com"
+      }
+    ],
+    "id": "local-1772298818224-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 쓰레기통에 버려도 될까요?",
+    "pinyin": "",
+    "translation": "B: Posso jogá-los no lixo?",
+    "tokens": [
+      "B:",
+      "쓰레기통에",
+      "버려도",
+      "될까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "쓰레기통",
+        "pinyin": "",
+        "meaning": "lixeira"
+      },
+      {
+        "id": 2,
+        "word": "버리다",
+        "pinyin": "",
+        "meaning": "jogar fora, descartar"
+      },
+      {
+        "id": 3,
+        "word": "되다",
+        "pinyin": "",
+        "meaning": "ser permitido"
+      }
+    ],
+    "id": "local-1772298818224-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니요. 회사 서류는 함부로 버릴 수 없어요. 중요한 정보가 들어있을 수도 있잖아요?",
+    "pinyin": "",
+    "translation": "A: Não. Você não pode descartar documentos da empresa de qualquer jeito. Pode haver informações importantes neles, sabe?",
+    "tokens": [
+      "A:",
+      "아니요",
+      ".",
+      "회사",
+      "서류는",
+      "함부로",
+      "버릴",
+      "수",
+      "없어요",
+      ".",
+      "중요한",
+      "정보가",
+      "들어있을",
+      "수도",
+      "있잖아요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니다",
+        "pinyin": "",
+        "meaning": "não ser (아니요 - não)"
+      },
+      {
+        "id": 2,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "서류",
+        "pinyin": "",
+        "meaning": "documento"
+      },
+      {
+        "id": 4,
+        "word": "함부로",
+        "pinyin": "",
+        "meaning": "descuidadamente, arbitrariamente"
+      },
+      {
+        "id": 5,
+        "word": "버리다",
+        "pinyin": "",
+        "meaning": "jogar fora, descartar"
+      },
+      {
+        "id": 6,
+        "word": "없다",
+        "pinyin": "",
+        "meaning": "não existir, não ter"
+      },
+      {
+        "id": 7,
+        "word": "중요하다",
+        "pinyin": "",
+        "meaning": "ser importante"
+      },
+      {
+        "id": 8,
+        "word": "정보",
+        "pinyin": "",
+        "meaning": "informação"
+      },
+      {
+        "id": 9,
+        "word": "들어있다",
+        "pinyin": "",
+        "meaning": "estar contido, estar dentro"
+      },
+      {
+        "id": 10,
+        "word": "~ㄹ 수도 있다",
+        "pinyin": "",
+        "meaning": "pode haver, pode ser"
+      },
+      {
+        "id": 11,
+        "word": "~잖아요",
+        "pinyin": "",
+        "meaning": "você sabe, não é?"
+      }
+    ],
+    "id": "local-1772298818224-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 손으로 찢을까요?",
+    "pinyin": "",
+    "translation": "B: Então devo rasgá-los com as mãos?",
+    "tokens": [
+      "B:",
+      "그럼",
+      "손으로",
+      "찢을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "손",
+        "pinyin": "",
+        "meaning": "mão"
+      },
+      {
+        "id": 3,
+        "word": "찢다",
+        "pinyin": "",
+        "meaning": "rasgar"
+      }
+    ],
+    "id": "local-1772298818224-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 하하, 물론 아니죠. 파쇄기를 사용하세요. 자, 제가 가르쳐 줄게요. 파쇄기를 켜고 서류를 천천히 넣으세요.",
+    "pinyin": "",
+    "translation": "A: Haha, claro que não. Use a fragmentadora. Venha, eu vou te ensinar. Ligue a fragmentadora e coloque os documentos lentamente.",
+    "tokens": [
+      "A:",
+      "하하",
+      ",",
+      "물론",
+      "아니죠",
+      ".",
+      "파쇄기를",
+      "사용하세요",
+      ".",
+      "자",
+      ",",
+      "제가",
+      "가르쳐",
+      "줄게요",
+      ".",
+      "파쇄기를",
+      "켜고",
+      "서류를",
+      "천천히",
+      "넣으세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "하하",
+        "pinyin": "",
+        "meaning": "haha (risada)"
+      },
+      {
+        "id": 2,
+        "word": "물론",
+        "pinyin": "",
+        "meaning": "claro"
+      },
+      {
+        "id": 3,
+        "word": "아니다",
+        "pinyin": "",
+        "meaning": "não ser"
+      },
+      {
+        "id": 4,
+        "word": "파쇄기",
+        "pinyin": "",
+        "meaning": "fragmentadora (de papel)"
+      },
+      {
+        "id": 5,
+        "word": "사용하다",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 6,
+        "word": "자",
+        "pinyin": "",
+        "meaning": "bem, então (interjeição)"
+      },
+      {
+        "id": 7,
+        "word": "저",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 8,
+        "word": "가르치다",
+        "pinyin": "",
+        "meaning": "ensinar"
+      },
+      {
+        "id": 9,
+        "word": "주다",
+        "pinyin": "",
+        "meaning": "dar (aqui: fazer algo por alguém)"
+      },
+      {
+        "id": 10,
+        "word": "켜다",
+        "pinyin": "",
+        "meaning": "ligar (um aparelho)"
+      },
+      {
+        "id": 11,
+        "word": "서류",
+        "pinyin": "",
+        "meaning": "documento"
+      },
+      {
+        "id": 12,
+        "word": "천천히",
+        "pinyin": "",
+        "meaning": "lentamente"
+      },
+      {
+        "id": 13,
+        "word": "넣다",
+        "pinyin": "",
+        "meaning": "colocar, inserir"
+      }
+    ],
+    "id": "local-1772298818224-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 감사합니다, 리 선생님.",
+    "pinyin": "",
+    "translation": "B: Obrigado, Professor Lee.",
+    "tokens": [
+      "B:",
+      "감사합니다",
+      ",",
+      "리",
+      "선생님",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "감사하다",
+        "pinyin": "",
+        "meaning": "ser grato (감사합니다 - obrigado)"
+      },
+      {
+        "id": 2,
+        "word": "리",
+        "pinyin": "",
+        "meaning": "Lee (sobrenome)"
+      },
+      {
+        "id": 3,
+        "word": "선생님",
+        "pinyin": "",
+        "meaning": "professor(a), senhor(a)"
+      }
+    ],
+    "id": "local-1772298818224-9",
+    "language": "Coreano"
+  }
+]

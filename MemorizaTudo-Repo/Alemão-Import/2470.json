@@ -1,0 +1,519 @@
+[
+  {
+    "chinese": "A: Xiao Qin, welchen Beitrag liest du da? Du bist ja ganz vertieft!",
+    "pinyin": null,
+    "translation": "A: Xiao Qin, que artigo você está lendo aí? Você está totalmente absorta!",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Qin,",
+      "welchen",
+      "Beitrag",
+      "liest",
+      "du",
+      "da?",
+      "Du",
+      "bist",
+      "ja",
+      "ganz",
+      "vertieft!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "welchen",
+        "pinyin": null,
+        "meaning": "qual (masculino, acusativo)"
+      },
+      {
+        "id": 2,
+        "word": "Beitrag",
+        "pinyin": null,
+        "meaning": "artigo, contribuição"
+      },
+      {
+        "id": 3,
+        "word": "liest",
+        "pinyin": null,
+        "meaning": "lê (do verbo 'lesen' - ler)"
+      },
+      {
+        "id": 4,
+        "word": "da",
+        "pinyin": null,
+        "meaning": "aí, lá"
+      },
+      {
+        "id": 5,
+        "word": "ganz",
+        "pinyin": null,
+        "meaning": "totalmente, completamente"
+      },
+      {
+        "id": 6,
+        "word": "vertieft",
+        "pinyin": null,
+        "meaning": "absorto, imerso"
+      }
+    ],
+    "id": "local-1772293785708-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ach, ich lese gerade eine Internet-Umfrage darüber, ob Blindenhunde in die U-Bahn dürfen sollen.",
+    "pinyin": null,
+    "translation": "B: Ah, estou lendo agora uma pesquisa de internet sobre se cães-guia devem poder entrar no metrô.",
+    "tokens": [
+      "B:",
+      "Ach,",
+      "ich",
+      "lese",
+      "gerade",
+      "eine",
+      "Internet-Umfrage",
+      "darüber,",
+      "ob",
+      "Blindenhunde",
+      "in",
+      "die",
+      "U-Bahn",
+      "dürfen",
+      "sollen."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "Ach",
+        "pinyin": null,
+        "meaning": "Ah! (interjeição)"
+      },
+      {
+        "id": 8,
+        "word": "gerade",
+        "pinyin": null,
+        "meaning": "agora, neste momento"
+      },
+      {
+        "id": 9,
+        "word": "Internet-Umfrage",
+        "pinyin": null,
+        "meaning": "pesquisa/enquete de internet"
+      },
+      {
+        "id": 10,
+        "word": "darüber",
+        "pinyin": null,
+        "meaning": "sobre isso, a respeito disso"
+      },
+      {
+        "id": 11,
+        "word": "ob",
+        "pinyin": null,
+        "meaning": "se (conjunção para orações subordinadas indiretas)"
+      },
+      {
+        "id": 12,
+        "word": "Blindenhunde",
+        "pinyin": null,
+        "meaning": "cães-guia (plural)"
+      },
+      {
+        "id": 13,
+        "word": "U-Bahn",
+        "pinyin": null,
+        "meaning": "metrô"
+      },
+      {
+        "id": 14,
+        "word": "dürfen",
+        "pinyin": null,
+        "meaning": "poder, ter permissão"
+      },
+      {
+        "id": 15,
+        "word": "sollen",
+        "pinyin": null,
+        "meaning": "dever (aqui: 'devem ter permissão')"
+      }
+    ],
+    "id": "local-1772293785708-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was ist das Ergebnis der Umfrage?",
+    "pinyin": null,
+    "translation": "A: Qual é o resultado da pesquisa?",
+    "tokens": [
+      "A:",
+      "Was",
+      "ist",
+      "das",
+      "Ergebnis",
+      "der",
+      "Umfrage?"
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "Was",
+        "pinyin": null,
+        "meaning": "o que, qual"
+      },
+      {
+        "id": 17,
+        "word": "Ergebnis",
+        "pinyin": null,
+        "meaning": "resultado"
+      },
+      {
+        "id": 18,
+        "word": "Umfrage",
+        "pinyin": null,
+        "meaning": "pesquisa, enquete"
+      }
+    ],
+    "id": "local-1772293785708-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Die Meinungen gehen auseinander; einige sind dafür, einige dagegen.",
+    "pinyin": null,
+    "translation": "B: As opiniões divergem; alguns são a favor, outros são contra.",
+    "tokens": [
+      "B:",
+      "Die",
+      "Meinungen",
+      "gehen",
+      "auseinander;",
+      "einige",
+      "sind",
+      "dafür,",
+      "einige",
+      "dagegen."
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Meinungen",
+        "pinyin": null,
+        "meaning": "opiniões (plural)"
+      },
+      {
+        "id": 20,
+        "word": "auseinandergehen",
+        "pinyin": null,
+        "meaning": "divergir, separar-se (neste contexto, as opiniões)"
+      },
+      {
+        "id": 21,
+        "word": "einige",
+        "pinyin": null,
+        "meaning": "alguns, algumas"
+      },
+      {
+        "id": 22,
+        "word": "dafür",
+        "pinyin": null,
+        "meaning": "a favor disso"
+      },
+      {
+        "id": 23,
+        "word": "dagegen",
+        "pinyin": null,
+        "meaning": "contra isso"
+      }
+    ],
+    "id": "local-1772293785708-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Blindenhunde werden alle ausgebildet. Sie greifen keine anderen Fahrgäste an. Warum sind einige dagegen?",
+    "pinyin": null,
+    "translation": "A: Todos os cães-guia são treinados. Eles não atacam outros passageiros. Por que alguns são contra?",
+    "tokens": [
+      "A:",
+      "Blindenhunde",
+      "werden",
+      "alle",
+      "ausgebildet.",
+      "Sie",
+      "greifen",
+      "keine",
+      "anderen",
+      "Fahrgäste",
+      "an.",
+      "Warum",
+      "sind",
+      "einige",
+      "dagegen?"
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "ausgebildet werden",
+        "pinyin": null,
+        "meaning": "ser treinado/formado (voz passiva)"
+      },
+      {
+        "id": 25,
+        "word": "greifen an",
+        "pinyin": null,
+        "meaning": "atacar (verbo 'angreifen')"
+      },
+      {
+        "id": 26,
+        "word": "keine",
+        "pinyin": null,
+        "meaning": "nenhum, nenhuma"
+      },
+      {
+        "id": 27,
+        "word": "Fahrgäste",
+        "pinyin": null,
+        "meaning": "passageiros (plural)"
+      },
+      {
+        "id": 28,
+        "word": "Warum",
+        "pinyin": null,
+        "meaning": "por que"
+      }
+    ],
+    "id": "local-1772293785708-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Eben. Blindenhunde sind die Augen der Blinden. Den Blindenhund in die U-Bahn zu lassen, ist nicht nur bequem für den Blinden, sondern auch eine Frage des Respekts.",
+    "pinyin": null,
+    "translation": "B: Exato. Cães-guia são os olhos dos cegos. Permitir que o cão-guia entre no metrô não é apenas conveniente para o cego, mas também uma questão de respeito.",
+    "tokens": [
+      "B:",
+      "Eben.",
+      "Blindenhunde",
+      "sind",
+      "die",
+      "Augen",
+      "der",
+      "Blinden.",
+      "Den",
+      "Blindenhund",
+      "in",
+      "die",
+      "U-Bahn",
+      "zu",
+      "lassen,",
+      "ist",
+      "nicht",
+      "nur",
+      "bequem",
+      "für",
+      "den",
+      "Blinden,",
+      "sondern",
+      "auch",
+      "eine",
+      "Frage",
+      "des",
+      "Respekts."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "Eben",
+        "pinyin": null,
+        "meaning": "exato, justamente"
+      },
+      {
+        "id": 30,
+        "word": "Augen",
+        "pinyin": null,
+        "meaning": "olhos (plural)"
+      },
+      {
+        "id": 31,
+        "word": "Blinden",
+        "pinyin": null,
+        "meaning": "cegos (substantivo, genitivo plural)"
+      },
+      {
+        "id": 32,
+        "word": "lassen",
+        "pinyin": null,
+        "meaning": "deixar, permitir"
+      },
+      {
+        "id": 33,
+        "word": "bequem",
+        "pinyin": null,
+        "meaning": "confortável, conveniente"
+      },
+      {
+        "id": 34,
+        "word": "nicht nur... sondern auch",
+        "pinyin": null,
+        "meaning": "não só... mas também"
+      },
+      {
+        "id": 35,
+        "word": "Frage",
+        "pinyin": null,
+        "meaning": "questão, pergunta"
+      },
+      {
+        "id": 36,
+        "word": "Respekt",
+        "pinyin": null,
+        "meaning": "respeito"
+      }
+    ],
+    "id": "local-1772293785708-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: In Shanghai dürfen Blindenhunde bereits in die U-Bahn, aber in einigen Städten ist das immer noch nicht erlaubt.",
+    "pinyin": null,
+    "translation": "A: Em Xangai, cães-guia já podem entrar no metrô, mas em algumas cidades isso ainda não é permitido.",
+    "tokens": [
+      "A:",
+      "In",
+      "Shanghai",
+      "dürfen",
+      "Blindenhunde",
+      "bereits",
+      "in",
+      "die",
+      "U-Bahn,",
+      "aber",
+      "in",
+      "einigen",
+      "Städten",
+      "ist",
+      "das",
+      "immer",
+      "noch",
+      "nicht",
+      "erlaubt."
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "bereits",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 38,
+        "word": "einigen",
+        "pinyin": null,
+        "meaning": "alguns, algumas (dativo plural)"
+      },
+      {
+        "id": 39,
+        "word": "Städten",
+        "pinyin": null,
+        "meaning": "cidades (dativo plural)"
+      },
+      {
+        "id": 40,
+        "word": "immer noch nicht",
+        "pinyin": null,
+        "meaning": "ainda não"
+      },
+      {
+        "id": 41,
+        "word": "erlaubt",
+        "pinyin": null,
+        "meaning": "permitido"
+      }
+    ],
+    "id": "local-1772293785708-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Diese Umfrage ist noch nicht beendet. Lasst uns sofort abstimmen und unsere Unterstützung zeigen.",
+    "pinyin": null,
+    "translation": "B: Esta pesquisa ainda não terminou. Vamos votar imediatamente e mostrar nosso apoio.",
+    "tokens": [
+      "B:",
+      "Diese",
+      "Umfrage",
+      "ist",
+      "noch",
+      "nicht",
+      "beendet.",
+      "Lasst",
+      "uns",
+      "sofort",
+      "abstimmen",
+      "und",
+      "unsere",
+      "Unterstützung",
+      "zeigen."
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "noch nicht",
+        "pinyin": null,
+        "meaning": "ainda não"
+      },
+      {
+        "id": 43,
+        "word": "beendet",
+        "pinyin": null,
+        "meaning": "terminado, finalizado"
+      },
+      {
+        "id": 44,
+        "word": "Lasst uns",
+        "pinyin": null,
+        "meaning": "vamos (imperativo para 'nós')"
+      },
+      {
+        "id": 45,
+        "word": "sofort",
+        "pinyin": null,
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 46,
+        "word": "abstimmen",
+        "pinyin": null,
+        "meaning": "votar"
+      },
+      {
+        "id": 47,
+        "word": "Unterstützung",
+        "pinyin": null,
+        "meaning": "apoio"
+      },
+      {
+        "id": 48,
+        "word": "zeigen",
+        "pinyin": null,
+        "meaning": "mostrar"
+      }
+    ],
+    "id": "local-1772293785708-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Unbedingt.",
+    "pinyin": null,
+    "translation": "A: Com certeza.",
+    "tokens": [
+      "A:",
+      "Unbedingt."
+    ],
+    "keywords": [
+      {
+        "id": 49,
+        "word": "Unbedingt",
+        "pinyin": null,
+        "meaning": "com certeza, absolutamente"
+      }
+    ],
+    "id": "local-1772293785708-8",
+    "language": "Alemão"
+  }
+]

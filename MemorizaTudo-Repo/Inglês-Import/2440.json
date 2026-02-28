@@ -1,0 +1,531 @@
+[
+  {
+    "chinese": "A: Next, we'd like to invite Wang Wei to say some words to everyone. Let's have a round of applause!",
+    "pinyin": null,
+    "translation": "A: Em seguida, gostaríamos de convidar Wang Wei para dizer algumas palavras a todos. Vamos dar uma salva de palmas!",
+    "tokens": [
+      "Next",
+      "we'd",
+      "like",
+      "to",
+      "invite",
+      "Wang",
+      "Wei",
+      "to",
+      "say",
+      "some",
+      "words",
+      "to",
+      "everyone",
+      "Let's",
+      "have",
+      "a",
+      "round",
+      "of",
+      "applause"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Next",
+        "pinyin": null,
+        "meaning": "Em seguida"
+      },
+      {
+        "id": 2,
+        "word": "invite",
+        "pinyin": null,
+        "meaning": "convidar"
+      },
+      {
+        "id": 3,
+        "word": "words",
+        "pinyin": null,
+        "meaning": "palavras"
+      },
+      {
+        "id": 4,
+        "word": "everyone",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "round of applause",
+        "pinyin": null,
+        "meaning": "salva de palmas"
+      }
+    ],
+    "id": "local-1772293170791-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you! First, thank you so much to everyone for organizing this party for me.",
+    "pinyin": null,
+    "translation": "B: Obrigado! Primeiro, muito obrigado a todos por organizarem esta festa para mim.",
+    "tokens": [
+      "Thank",
+      "you",
+      "First",
+      "thank",
+      "you",
+      "so",
+      "much",
+      "to",
+      "everyone",
+      "for",
+      "organizing",
+      "this",
+      "party",
+      "for",
+      "me"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "First",
+        "pinyin": null,
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 3,
+        "word": "so much",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "everyone",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "organizing",
+        "pinyin": null,
+        "meaning": "organizando"
+      },
+      {
+        "id": 6,
+        "word": "party",
+        "pinyin": null,
+        "meaning": "festa"
+      }
+    ],
+    "id": "local-1772293170791-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I've worked at this company for 10 years. In these 10 years, I've learned a lot. I'm very thankful to the company for giving me a platform to learn and grow!",
+    "pinyin": null,
+    "translation": "B: Eu trabalhei nesta empresa por 10 anos. Nestes 10 anos, aprendi muito. Sou muito grato à empresa por me dar uma plataforma para aprender e crescer!",
+    "tokens": [
+      "I've",
+      "worked",
+      "at",
+      "this",
+      "company",
+      "for",
+      "10",
+      "years",
+      "In",
+      "these",
+      "10",
+      "years",
+      "I've",
+      "learned",
+      "a",
+      "lot",
+      "I'm",
+      "very",
+      "thankful",
+      "to",
+      "the",
+      "company",
+      "for",
+      "giving",
+      "me",
+      "a",
+      "platform",
+      "to",
+      "learn",
+      "and",
+      "grow"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "worked",
+        "pinyin": null,
+        "meaning": "trabalhei"
+      },
+      {
+        "id": 2,
+        "word": "company",
+        "pinyin": null,
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "years",
+        "pinyin": null,
+        "meaning": "anos"
+      },
+      {
+        "id": 4,
+        "word": "learned",
+        "pinyin": null,
+        "meaning": "aprendi"
+      },
+      {
+        "id": 5,
+        "word": "a lot",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 6,
+        "word": "thankful",
+        "pinyin": null,
+        "meaning": "grato"
+      },
+      {
+        "id": 7,
+        "word": "giving",
+        "pinyin": null,
+        "meaning": "dando"
+      },
+      {
+        "id": 8,
+        "word": "platform",
+        "pinyin": null,
+        "meaning": "plataforma"
+      },
+      {
+        "id": 9,
+        "word": "learn",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 10,
+        "word": "grow",
+        "pinyin": null,
+        "meaning": "crescer"
+      }
+    ],
+    "id": "local-1772293170791-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you to each of the executives for mentoring me!",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos executivos por me orientarem!",
+    "tokens": [
+      "Thank",
+      "you",
+      "to",
+      "each",
+      "of",
+      "the",
+      "executives",
+      "for",
+      "mentoring",
+      "me"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "each",
+        "pinyin": null,
+        "meaning": "cada"
+      },
+      {
+        "id": 3,
+        "word": "executives",
+        "pinyin": null,
+        "meaning": "executivos"
+      },
+      {
+        "id": 4,
+        "word": "mentoring",
+        "pinyin": null,
+        "meaning": "orientando"
+      }
+    ],
+    "id": "local-1772293170791-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you to each of my colleagues for the support and care you've given me!",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos meus colegas pelo apoio e carinho que me deram!",
+    "tokens": [
+      "Thank",
+      "you",
+      "to",
+      "each",
+      "of",
+      "my",
+      "colleagues",
+      "for",
+      "the",
+      "support",
+      "and",
+      "care",
+      "you've",
+      "given",
+      "me"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "each",
+        "pinyin": null,
+        "meaning": "cada"
+      },
+      {
+        "id": 3,
+        "word": "colleagues",
+        "pinyin": null,
+        "meaning": "colegas"
+      },
+      {
+        "id": 4,
+        "word": "support",
+        "pinyin": null,
+        "meaning": "apoio"
+      },
+      {
+        "id": 5,
+        "word": "care",
+        "pinyin": null,
+        "meaning": "carinho"
+      },
+      {
+        "id": 6,
+        "word": "given",
+        "pinyin": null,
+        "meaning": "dado"
+      }
+    ],
+    "id": "local-1772293170791-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I am extremely honored to have had the chance to work with you all. I'll remember the time that I spent with everyone every day!",
+    "pinyin": null,
+    "translation": "B: Sinto-me extremamente honrado por ter tido a chance de trabalhar com todos vocês. Vou me lembrar do tempo que passei com todos todos os dias!",
+    "tokens": [
+      "I",
+      "am",
+      "extremely",
+      "honored",
+      "to",
+      "have",
+      "had",
+      "the",
+      "chance",
+      "to",
+      "work",
+      "with",
+      "you",
+      "all",
+      "I'll",
+      "remember",
+      "the",
+      "time",
+      "that",
+      "I",
+      "spent",
+      "with",
+      "everyone",
+      "every",
+      "day"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "extremely",
+        "pinyin": null,
+        "meaning": "extremamente"
+      },
+      {
+        "id": 2,
+        "word": "honored",
+        "pinyin": null,
+        "meaning": "honrado"
+      },
+      {
+        "id": 3,
+        "word": "chance",
+        "pinyin": null,
+        "meaning": "chance, oportunidade"
+      },
+      {
+        "id": 4,
+        "word": "work with",
+        "pinyin": null,
+        "meaning": "trabalhar com"
+      },
+      {
+        "id": 5,
+        "word": "you all",
+        "pinyin": null,
+        "meaning": "todos vocês"
+      },
+      {
+        "id": 6,
+        "word": "remember",
+        "pinyin": null,
+        "meaning": "lembrar"
+      },
+      {
+        "id": 7,
+        "word": "spent",
+        "pinyin": null,
+        "meaning": "passei"
+      },
+      {
+        "id": 8,
+        "word": "everyone",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 9,
+        "word": "every day",
+        "pinyin": null,
+        "meaning": "todos os dias"
+      }
+    ],
+    "id": "local-1772293170791-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Finally, it's my heartfelt wish for everyone that you be healthy, that your work goes smoothly and that your families are happy.",
+    "pinyin": null,
+    "translation": "B: Finalmente, é o meu desejo sincero para todos que sejam saudáveis, que o seu trabalho corra bem e que as suas famílias sejam felizes.",
+    "tokens": [
+      "Finally",
+      "it's",
+      "my",
+      "heartfelt",
+      "wish",
+      "for",
+      "everyone",
+      "that",
+      "you",
+      "be",
+      "healthy",
+      "that",
+      "your",
+      "work",
+      "goes",
+      "smoothly",
+      "and",
+      "that",
+      "your",
+      "families",
+      "are",
+      "happy"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Finally",
+        "pinyin": null,
+        "meaning": "Finalmente"
+      },
+      {
+        "id": 2,
+        "word": "heartfelt",
+        "pinyin": null,
+        "meaning": "sincero"
+      },
+      {
+        "id": 3,
+        "word": "wish",
+        "pinyin": null,
+        "meaning": "desejo"
+      },
+      {
+        "id": 4,
+        "word": "healthy",
+        "pinyin": null,
+        "meaning": "saudável"
+      },
+      {
+        "id": 5,
+        "word": "work goes smoothly",
+        "pinyin": null,
+        "meaning": "trabalho corra bem"
+      },
+      {
+        "id": 6,
+        "word": "families",
+        "pinyin": null,
+        "meaning": "famílias"
+      },
+      {
+        "id": 7,
+        "word": "happy",
+        "pinyin": null,
+        "meaning": "felizes"
+      }
+    ],
+    "id": "local-1772293170791-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Come on! Cheers everybody!",
+    "pinyin": null,
+    "translation": "B: Vamos lá! Saúde a todos!",
+    "tokens": [
+      "Come",
+      "on",
+      "Cheers",
+      "everybody"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Come on",
+        "pinyin": null,
+        "meaning": "Vamos lá"
+      },
+      {
+        "id": 2,
+        "word": "Cheers",
+        "pinyin": null,
+        "meaning": "Saúde"
+      },
+      {
+        "id": 3,
+        "word": "everybody",
+        "pinyin": null,
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1772293170791-7",
+    "language": "Inglês"
+  }
+]

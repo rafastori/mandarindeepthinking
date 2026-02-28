@@ -1,0 +1,671 @@
+[
+  {
+    "chinese": "A: Lili, ¿estás libre el próximo domingo? ¿Puedes venir a mi casa para enseñarme a hacer un pastel?",
+    "pinyin": null,
+    "translation": "A: Lili, você está livre no próximo domingo? Você pode vir à minha casa para me ensinar a fazer um bolo?",
+    "tokens": [
+      "A:",
+      "Lili,",
+      "¿estás",
+      "libre",
+      "el",
+      "próximo",
+      "domingo?",
+      "¿Puedes",
+      "venir",
+      "a",
+      "mi",
+      "casa",
+      "para",
+      "enseñarme",
+      "a",
+      "hacer",
+      "un",
+      "pastel?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "libre",
+        "pinyin": null,
+        "meaning": "livre"
+      },
+      {
+        "id": 2,
+        "word": "próximo",
+        "pinyin": null,
+        "meaning": "próximo"
+      },
+      {
+        "id": 3,
+        "word": "domingo",
+        "pinyin": null,
+        "meaning": "domingo"
+      },
+      {
+        "id": 4,
+        "word": "venir",
+        "pinyin": null,
+        "meaning": "vir"
+      },
+      {
+        "id": 5,
+        "word": "casa",
+        "pinyin": null,
+        "meaning": "casa"
+      },
+      {
+        "id": 6,
+        "word": "enseñarme",
+        "pinyin": null,
+        "meaning": "me ensinar"
+      },
+      {
+        "id": 7,
+        "word": "hacer",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 8,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296605146-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. ¿Por qué quieres hacer un pastel de repente?",
+    "pinyin": null,
+    "translation": "B: Sim. Por que você quer fazer um bolo de repente?",
+    "tokens": [
+      "B:",
+      "Sí.",
+      "¿Por",
+      "qué",
+      "quieres",
+      "hacer",
+      "un",
+      "pastel",
+      "de",
+      "repente?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sí",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "por qué",
+        "pinyin": null,
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "quieres",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 4,
+        "word": "hacer",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "de repente",
+        "pinyin": null,
+        "meaning": "de repente"
+      }
+    ],
+    "id": "local-1772296605146-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: El próximo mes es el cumpleaños de mi novio. Quiero darle una sorpresa.",
+    "pinyin": null,
+    "translation": "A: O próximo mês é o aniversário do meu namorado. Quero fazer uma surpresa para ele.",
+    "tokens": [
+      "A:",
+      "El",
+      "próximo",
+      "mes",
+      "es",
+      "el",
+      "cumpleaños",
+      "de",
+      "mi",
+      "novio.",
+      "Quiero",
+      "darle",
+      "una",
+      "sorpresa."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "próximo",
+        "pinyin": null,
+        "meaning": "próximo"
+      },
+      {
+        "id": 2,
+        "word": "mes",
+        "pinyin": null,
+        "meaning": "mês"
+      },
+      {
+        "id": 3,
+        "word": "cumpleaños",
+        "pinyin": null,
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "novio",
+        "pinyin": null,
+        "meaning": "namorado"
+      },
+      {
+        "id": 5,
+        "word": "quiero",
+        "pinyin": null,
+        "meaning": "eu quero"
+      },
+      {
+        "id": 6,
+        "word": "darle",
+        "pinyin": null,
+        "meaning": "dar a ele/ela"
+      },
+      {
+        "id": 7,
+        "word": "sorpresa",
+        "pinyin": null,
+        "meaning": "surpresa"
+      }
+    ],
+    "id": "local-1772296605146-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué tipo de pastel quieres hacer?",
+    "pinyin": null,
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "tipo",
+      "de",
+      "pastel",
+      "quieres",
+      "hacer?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qué",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "tipo",
+        "pinyin": null,
+        "meaning": "tipo"
+      },
+      {
+        "id": 3,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "quieres",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 5,
+        "word": "hacer",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772296605146-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Me gustaría hacer uno sencillo.",
+    "pinyin": null,
+    "translation": "A: Eu gostaria de fazer um simples.",
+    "tokens": [
+      "A:",
+      "Me",
+      "gustaría",
+      "hacer",
+      "uno",
+      "sencillo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "me gustaría",
+        "pinyin": null,
+        "meaning": "eu gostaria"
+      },
+      {
+        "id": 2,
+        "word": "hacer",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "sencillo",
+        "pinyin": null,
+        "meaning": "simples"
+      }
+    ],
+    "id": "local-1772296605146-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces hagamos un bizcocho chiffon. Este tipo de pastel es muy ligero. Puedes untarle mermelada y comerlo. También puede ser un pastel de cumpleaños. Es un tipo de pastel básico.",
+    "pinyin": null,
+    "translation": "B: Então vamos fazer um bolo chiffon. Esse tipo de bolo é muito leve. Você pode espalhar geleia nele e comê-lo. Também pode ser um bolo de aniversário. É um tipo de bolo básico.",
+    "tokens": [
+      "B:",
+      "Entonces",
+      "hagamos",
+      "un",
+      "bizcocho",
+      "chiffon.",
+      "Este",
+      "tipo",
+      "de",
+      "pastel",
+      "es",
+      "muy",
+      "ligero.",
+      "Puedes",
+      "untarle",
+      "mermelada",
+      "y",
+      "comerlo.",
+      "También",
+      "puede",
+      "ser",
+      "un",
+      "pastel",
+      "de",
+      "cumpleaños.",
+      "Es",
+      "un",
+      "tipo",
+      "de",
+      "pastel",
+      "básico."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entonces",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "hagamos",
+        "pinyin": null,
+        "meaning": "façamos"
+      },
+      {
+        "id": 3,
+        "word": "bizcocho",
+        "pinyin": null,
+        "meaning": "bolo/pão de ló"
+      },
+      {
+        "id": 4,
+        "word": "chiffon",
+        "pinyin": null,
+        "meaning": "chiffon"
+      },
+      {
+        "id": 5,
+        "word": "tipo",
+        "pinyin": null,
+        "meaning": "tipo"
+      },
+      {
+        "id": 6,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 7,
+        "word": "ligero",
+        "pinyin": null,
+        "meaning": "leve"
+      },
+      {
+        "id": 8,
+        "word": "puedes",
+        "pinyin": null,
+        "meaning": "você pode"
+      },
+      {
+        "id": 9,
+        "word": "untarle",
+        "pinyin": null,
+        "meaning": "untar nele/espalhar nele"
+      },
+      {
+        "id": 10,
+        "word": "mermelada",
+        "pinyin": null,
+        "meaning": "geleia"
+      },
+      {
+        "id": 11,
+        "word": "comerlo",
+        "pinyin": null,
+        "meaning": "comê-lo"
+      },
+      {
+        "id": 12,
+        "word": "también",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 13,
+        "word": "cumpleaños",
+        "pinyin": null,
+        "meaning": "aniversário"
+      },
+      {
+        "id": 14,
+        "word": "básico",
+        "pinyin": null,
+        "meaning": "básico"
+      }
+    ],
+    "id": "local-1772296605146-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Vale. Vale. ¿Qué necesito preparar?",
+    "pinyin": null,
+    "translation": "A: Certo. Certo. O que preciso preparar?",
+    "tokens": [
+      "A:",
+      "Vale.",
+      "Vale.",
+      "¿Qué",
+      "necesito",
+      "preparar?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vale",
+        "pinyin": null,
+        "meaning": "certo/ok"
+      },
+      {
+        "id": 2,
+        "word": "qué",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "necesito",
+        "pinyin": null,
+        "meaning": "eu preciso"
+      },
+      {
+        "id": 4,
+        "word": "preparar",
+        "pinyin": null,
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772296605146-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Necesitas comprar ingredientes: 100 gramos de harina de repostería, 5 huevos, 40 gramos de aceite, 70 gramos de azúcar granulada y 40 gramos de leche.",
+    "pinyin": null,
+    "translation": "B: Você precisa comprar ingredientes: 100 gramas de farinha de trigo para confeitaria, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar granulado e 40 gramas de leite.",
+    "tokens": [
+      "B:",
+      "Necesitas",
+      "comprar",
+      "ingredientes:",
+      "100",
+      "gramos",
+      "de",
+      "harina",
+      "de",
+      "repostería,",
+      "5",
+      "huevos,",
+      "40",
+      "gramos",
+      "de",
+      "aceite,",
+      "70",
+      "gramos",
+      "de",
+      "azúcar",
+      "granulada",
+      "y",
+      "40",
+      "gramos",
+      "de",
+      "leche."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "necesitas",
+        "pinyin": null,
+        "meaning": "você precisa"
+      },
+      {
+        "id": 2,
+        "word": "comprar",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "ingredientes",
+        "pinyin": null,
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 4,
+        "word": "gramos",
+        "pinyin": null,
+        "meaning": "gramas"
+      },
+      {
+        "id": 5,
+        "word": "harina de repostería",
+        "pinyin": null,
+        "meaning": "farinha de trigo para confeitaria"
+      },
+      {
+        "id": 6,
+        "word": "huevos",
+        "pinyin": null,
+        "meaning": "ovos"
+      },
+      {
+        "id": 7,
+        "word": "aceite",
+        "pinyin": null,
+        "meaning": "óleo"
+      },
+      {
+        "id": 8,
+        "word": "azúcar granulada",
+        "pinyin": null,
+        "meaning": "açúcar granulado"
+      },
+      {
+        "id": 9,
+        "word": "leche",
+        "pinyin": null,
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296605146-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué herramientas?",
+    "pinyin": null,
+    "translation": "A: Que ferramentas?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "herramientas?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qué",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "herramientas",
+        "pinyin": null,
+        "meaning": "ferramentas"
+      }
+    ],
+    "id": "local-1772296605146-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Una batidora de huevos, un horno y un molde para pastel de 8 pulgadas.",
+    "pinyin": null,
+    "translation": "B: Uma batedeira de ovos, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "B:",
+      "Una",
+      "batidora",
+      "de",
+      "huevos,",
+      "un",
+      "horno",
+      "y",
+      "un",
+      "molde",
+      "para",
+      "pastel",
+      "de",
+      "8",
+      "pulgadas."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "batidora de huevos",
+        "pinyin": null,
+        "meaning": "batedeira de ovos"
+      },
+      {
+        "id": 2,
+        "word": "horno",
+        "pinyin": null,
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "molde para pastel",
+        "pinyin": null,
+        "meaning": "forma de bolo"
+      },
+      {
+        "id": 4,
+        "word": "pulgadas",
+        "pinyin": null,
+        "meaning": "polegadas"
+      }
+    ],
+    "id": "local-1772296605146-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Vale. Iré a comprar las cosas después del trabajo.",
+    "pinyin": null,
+    "translation": "A: Certo. Vou comprar as coisas depois do trabalho.",
+    "tokens": [
+      "A:",
+      "Vale.",
+      "Iré",
+      "a",
+      "comprar",
+      "las",
+      "cosas",
+      "después",
+      "del",
+      "trabajo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vale",
+        "pinyin": null,
+        "meaning": "certo/ok"
+      },
+      {
+        "id": 2,
+        "word": "iré",
+        "pinyin": null,
+        "meaning": "irei (vou)"
+      },
+      {
+        "id": 3,
+        "word": "comprar",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "cosas",
+        "pinyin": null,
+        "meaning": "coisas"
+      },
+      {
+        "id": 5,
+        "word": "después del trabajo",
+        "pinyin": null,
+        "meaning": "depois do trabalho"
+      }
+    ],
+    "id": "local-1772296605146-10",
+    "language": "Espanhol"
+  }
+]

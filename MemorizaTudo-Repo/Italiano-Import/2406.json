@@ -1,0 +1,719 @@
+[
+  {
+    "chinese": "A: Andiamo al negozio questo fine settimana per comprare un seggiolino auto per la bambina.",
+    "pinyin": "",
+    "translation": "A: Vamos à loja neste fim de semana para comprar uma cadeirinha de carro para a bebê.",
+    "tokens": [
+      "Andiamo",
+      "al",
+      "negozio",
+      "questo",
+      "fine",
+      "settimana",
+      "per",
+      "comprare",
+      "un",
+      "seggiolino",
+      "auto",
+      "per",
+      "la",
+      "bambina",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Andiamo",
+        "pinyin": "",
+        "meaning": "Vamos"
+      },
+      {
+        "id": 2,
+        "word": "negozio",
+        "pinyin": "",
+        "meaning": "loja"
+      },
+      {
+        "id": 3,
+        "word": "fine settimana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "seggiolino auto",
+        "pinyin": "",
+        "meaning": "cadeirinha de carro"
+      },
+      {
+        "id": 6,
+        "word": "bambina",
+        "pinyin": "",
+        "meaning": "bebê / menina"
+      }
+    ],
+    "id": "local-1772295061169-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Ma ho visto che molte persone non li comprano.",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Mas vi que muitas pessoas não os compram.",
+    "tokens": [
+      "Va",
+      "bene",
+      ".",
+      "Ma",
+      "ho",
+      "visto",
+      "che",
+      "molte",
+      "persone",
+      "non",
+      "li",
+      "comprano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Tudo bem / Ok"
+      },
+      {
+        "id": 8,
+        "word": "ho visto",
+        "pinyin": "",
+        "meaning": "vi / eu vi"
+      },
+      {
+        "id": 9,
+        "word": "molte",
+        "pinyin": "",
+        "meaning": "muitas"
+      },
+      {
+        "id": 10,
+        "word": "persone",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 11,
+        "word": "comprano",
+        "pinyin": "",
+        "meaning": "compram"
+      }
+    ],
+    "id": "local-1772295061169-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Far sedere i loro figli sul sedile posteriore con un adulto che li tiene in braccio va bene.",
+    "pinyin": "",
+    "translation": "Fazer sentar seus filhos no banco traseiro com um adulto que os segura no colo está bem.",
+    "tokens": [
+      "Far",
+      "sedere",
+      "i",
+      "loro",
+      "figli",
+      "sul",
+      "sedile",
+      "posteriore",
+      "con",
+      "un",
+      "adulto",
+      "che",
+      "li",
+      "tiene",
+      "in",
+      "braccio",
+      "va",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "Far sedere",
+        "pinyin": "",
+        "meaning": "Fazer sentar"
+      },
+      {
+        "id": 13,
+        "word": "figli",
+        "pinyin": "",
+        "meaning": "filhos"
+      },
+      {
+        "id": 14,
+        "word": "sedile posteriore",
+        "pinyin": "",
+        "meaning": "banco traseiro"
+      },
+      {
+        "id": 15,
+        "word": "adulto",
+        "pinyin": "",
+        "meaning": "adulto"
+      },
+      {
+        "id": 16,
+        "word": "tiene in braccio",
+        "pinyin": "",
+        "meaning": "segura no colo"
+      },
+      {
+        "id": 17,
+        "word": "va bene",
+        "pinyin": "",
+        "meaning": "está bem"
+      }
+    ],
+    "id": "local-1772295061169-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Dobbiamo averne uno! In molti paesi, è illegale che i bambini non viaggino in un seggiolino auto.",
+    "pinyin": "",
+    "translation": "A: Precisamos ter um! Em muitos países, é ilegal que as crianças não viajem em uma cadeirinha de carro.",
+    "tokens": [
+      "Dobbiamo",
+      "averne",
+      "uno",
+      "!",
+      "In",
+      "molti",
+      "paesi",
+      ",",
+      "è",
+      "illegale",
+      "che",
+      "i",
+      "bambini",
+      "non",
+      "viaggino",
+      "in",
+      "un",
+      "seggiolino",
+      "auto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "Dobbiamo",
+        "pinyin": "",
+        "meaning": "Precisamos / Devemos"
+      },
+      {
+        "id": 19,
+        "word": "averne",
+        "pinyin": "",
+        "meaning": "ter um / disso"
+      },
+      {
+        "id": 20,
+        "word": "paesi",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 21,
+        "word": "illegale",
+        "pinyin": "",
+        "meaning": "ilegal"
+      },
+      {
+        "id": 22,
+        "word": "bambini",
+        "pinyin": "",
+        "meaning": "crianças"
+      },
+      {
+        "id": 23,
+        "word": "viaggino",
+        "pinyin": "",
+        "meaning": "viajem (subjuntivo)"
+      },
+      {
+        "id": 24,
+        "word": "seggiolino auto",
+        "pinyin": "",
+        "meaning": "cadeirinha de carro"
+      }
+    ],
+    "id": "local-1772295061169-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene, va bene. Se vuoi comprarne uno, allora ne compreremo uno. Hai deciso quale marca vuoi comprare?",
+    "pinyin": "",
+    "translation": "B: Tudo bem, tudo bem. Se você quiser comprar um, então compraremos um. Você decidiu qual marca quer comprar?",
+    "tokens": [
+      "Va",
+      "bene",
+      ",",
+      "va",
+      "bene",
+      ".",
+      "Se",
+      "vuoi",
+      "comprarne",
+      "uno",
+      ",",
+      "allora",
+      "ne",
+      "compreremo",
+      "uno",
+      ".",
+      "Hai",
+      "deciso",
+      "quale",
+      "marca",
+      "vuoi",
+      "comprare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Tudo bem"
+      },
+      {
+        "id": 26,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "você quer"
+      },
+      {
+        "id": 27,
+        "word": "comprarne",
+        "pinyin": "",
+        "meaning": "comprar um / disso"
+      },
+      {
+        "id": 28,
+        "word": "compreremo",
+        "pinyin": "",
+        "meaning": "compraremos"
+      },
+      {
+        "id": 29,
+        "word": "Hai deciso",
+        "pinyin": "",
+        "meaning": "Você decidiu"
+      },
+      {
+        "id": 30,
+        "word": "marca",
+        "pinyin": "",
+        "meaning": "marca"
+      }
+    ],
+    "id": "local-1772295061169-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Uno importato, ovviamente! Deve essere conforme agli standard europei.",
+    "pinyin": "",
+    "translation": "A: Um importado, obviamente! Deve estar em conformidade com os padrões europeus.",
+    "tokens": [
+      "Uno",
+      "importato",
+      ",",
+      "ovviamente",
+      "!",
+      "Deve",
+      "essere",
+      "conforme",
+      "agli",
+      "standard",
+      "europei",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "importato",
+        "pinyin": "",
+        "meaning": "importado"
+      },
+      {
+        "id": 32,
+        "word": "ovviamente",
+        "pinyin": "",
+        "meaning": "obviamente"
+      },
+      {
+        "id": 33,
+        "word": "Deve essere",
+        "pinyin": "",
+        "meaning": "Deve ser / estar"
+      },
+      {
+        "id": 34,
+        "word": "conforme",
+        "pinyin": "",
+        "meaning": "em conformidade"
+      },
+      {
+        "id": 35,
+        "word": "standard europei",
+        "pinyin": "",
+        "meaning": "padrões europeus"
+      }
+    ],
+    "id": "local-1772295061169-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non può essere economico.",
+    "pinyin": "",
+    "translation": "B: Não pode ser barato.",
+    "tokens": [
+      "Non",
+      "può",
+      "essere",
+      "economico",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 36,
+        "word": "Non può essere",
+        "pinyin": "",
+        "meaning": "Não pode ser"
+      },
+      {
+        "id": 37,
+        "word": "economico",
+        "pinyin": "",
+        "meaning": "barato"
+      }
+    ],
+    "id": "local-1772295061169-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Anche se non è economico, dovremmo comunque comprarlo per la sicurezza di nostra figlia.",
+    "pinyin": "",
+    "translation": "A: Mesmo que não seja barato, deveríamos comprá-lo pela segurança de nossa filha.",
+    "tokens": [
+      "Anche",
+      "se",
+      "non",
+      "è",
+      "economico",
+      ",",
+      "dovremmo",
+      "comunque",
+      "comprarlo",
+      "per",
+      "la",
+      "sicurezza",
+      "di",
+      "nostra",
+      "figlia",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "Anche se",
+        "pinyin": "",
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 39,
+        "word": "dovremmo",
+        "pinyin": "",
+        "meaning": "deveríamos"
+      },
+      {
+        "id": 40,
+        "word": "comunque",
+        "pinyin": "",
+        "meaning": "de qualquer forma / ainda assim"
+      },
+      {
+        "id": 41,
+        "word": "comprarlo",
+        "pinyin": "",
+        "meaning": "comprá-lo"
+      },
+      {
+        "id": 42,
+        "word": "sicurezza",
+        "pinyin": "",
+        "meaning": "segurança"
+      },
+      {
+        "id": 43,
+        "word": "nostra figlia",
+        "pinyin": "",
+        "meaning": "nossa filha"
+      }
+    ],
+    "id": "local-1772295061169-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: E se lo compriamo, lo portiamo a casa e scopriamo che non vuole starci? E allora? Il mio collega dice che appena suo figlio ci si siede, inizia a piangere.",
+    "pinyin": "",
+    "translation": "B: E se o comprarmos, o levarmos para casa e descobrirmos que ela não quer ficar nele? E então? Meu colega diz que assim que o filho dele se senta, começa a chorar.",
+    "tokens": [
+      "E",
+      "se",
+      "lo",
+      "compriamo",
+      ",",
+      "lo",
+      "portiamo",
+      "a",
+      "casa",
+      "e",
+      "scopriamo",
+      "che",
+      "non",
+      "vuole",
+      "starci",
+      "?",
+      "E",
+      "allora",
+      "?",
+      "Il",
+      "mio",
+      "collega",
+      "dice",
+      "che",
+      "appena",
+      "suo",
+      "figlio",
+      "ci",
+      "si",
+      "siede",
+      ",",
+      "inizia",
+      "a",
+      "piangere",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "compriamo",
+        "pinyin": "",
+        "meaning": "compramos / comprarmos"
+      },
+      {
+        "id": 45,
+        "word": "portiamo a casa",
+        "pinyin": "",
+        "meaning": "levamos para casa"
+      },
+      {
+        "id": 46,
+        "word": "scopriamo",
+        "pinyin": "",
+        "meaning": "descobrimos"
+      },
+      {
+        "id": 47,
+        "word": "non vuole starci",
+        "pinyin": "",
+        "meaning": "não quer ficar nele"
+      },
+      {
+        "id": 48,
+        "word": "E allora",
+        "pinyin": "",
+        "meaning": "E então"
+      },
+      {
+        "id": 49,
+        "word": "collega",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 50,
+        "word": "dice",
+        "pinyin": "",
+        "meaning": "diz"
+      },
+      {
+        "id": 51,
+        "word": "appena",
+        "pinyin": "",
+        "meaning": "assim que / logo que"
+      },
+      {
+        "id": 52,
+        "word": "si siede",
+        "pinyin": "",
+        "meaning": "se senta"
+      },
+      {
+        "id": 53,
+        "word": "inizia a piangere",
+        "pinyin": "",
+        "meaning": "começa a chorar"
+      }
+    ],
+    "id": "local-1772295061169-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Quindi dobbiamo comprarne uno presto. Se inizia a usarlo quando è piccola, le sarà più facile abituarsi.",
+    "pinyin": "",
+    "translation": "A: Então precisamos comprar um logo. Se ela começar a usá-lo quando for pequena, será mais fácil para ela se acostumar.",
+    "tokens": [
+      "Quindi",
+      "dobbiamo",
+      "comprarne",
+      "uno",
+      "presto",
+      ".",
+      "Se",
+      "inizia",
+      "a",
+      "usarlo",
+      "quando",
+      "è",
+      "piccola",
+      ",",
+      "le",
+      "sarà",
+      "più",
+      "facile",
+      "abituarsi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 54,
+        "word": "Quindi",
+        "pinyin": "",
+        "meaning": "Então / Portanto"
+      },
+      {
+        "id": 55,
+        "word": "dobbiamo",
+        "pinyin": "",
+        "meaning": "precisamos / devemos"
+      },
+      {
+        "id": 56,
+        "word": "comprarne",
+        "pinyin": "",
+        "meaning": "comprar um / disso"
+      },
+      {
+        "id": 57,
+        "word": "presto",
+        "pinyin": "",
+        "meaning": "logo / cedo"
+      },
+      {
+        "id": 58,
+        "word": "inizia a usarlo",
+        "pinyin": "",
+        "meaning": "começa a usá-lo"
+      },
+      {
+        "id": 59,
+        "word": "piccola",
+        "pinyin": "",
+        "meaning": "pequena"
+      },
+      {
+        "id": 60,
+        "word": "sarà più facile",
+        "pinyin": "",
+        "meaning": "será mais fácil"
+      },
+      {
+        "id": 61,
+        "word": "abituarsi",
+        "pinyin": "",
+        "meaning": "se acostumar"
+      }
+    ],
+    "id": "local-1772295061169-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Tutto quello che dici, cara. È tutto per nostra figlia!",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Tudo o que você diz, querida. É tudo pela nossa filha!",
+    "tokens": [
+      "Va",
+      "bene",
+      ".",
+      "Tutto",
+      "quello",
+      "che",
+      "dici",
+      ",",
+      "cara",
+      ".",
+      "È",
+      "tutto",
+      "per",
+      "nostra",
+      "figlia",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 62,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Tudo bem"
+      },
+      {
+        "id": 63,
+        "word": "Tutto quello che",
+        "pinyin": "",
+        "meaning": "Tudo o que"
+      },
+      {
+        "id": 64,
+        "word": "dici",
+        "pinyin": "",
+        "meaning": "você diz"
+      },
+      {
+        "id": 65,
+        "word": "cara",
+        "pinyin": "",
+        "meaning": "querida"
+      },
+      {
+        "id": 66,
+        "word": "È tutto per",
+        "pinyin": "",
+        "meaning": "É tudo por"
+      },
+      {
+        "id": 67,
+        "word": "nostra figlia",
+        "pinyin": "",
+        "meaning": "nossa filha"
+      }
+    ],
+    "id": "local-1772295061169-10",
+    "language": "Italiano"
+  }
+]

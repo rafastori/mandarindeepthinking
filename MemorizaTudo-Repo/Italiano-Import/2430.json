@@ -1,0 +1,636 @@
+[
+  {
+    "chinese": "A: Cosa stai guardando?",
+    "pinyin": null,
+    "translation": "A: O que você está assistindo?",
+    "tokens": [
+      "Cosa",
+      "stai",
+      "guardando",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa",
+        "pinyin": null,
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "stai guardando",
+        "pinyin": null,
+        "meaning": "você está assistindo"
+      }
+    ],
+    "id": "local-1772297166386-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Un teatro delle ombre.",
+    "pinyin": null,
+    "translation": "B: Um teatro de sombras.",
+    "tokens": [
+      "Un",
+      "teatro",
+      "delle",
+      "ombre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "teatro",
+        "pinyin": null,
+        "meaning": "teatro"
+      },
+      {
+        "id": 2,
+        "word": "ombre",
+        "pinyin": null,
+        "meaning": "sombras"
+      }
+    ],
+    "id": "local-1772297166386-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Come mai non l'ho visto?",
+    "pinyin": null,
+    "translation": "A: Como assim eu não o vi?",
+    "tokens": [
+      "Come",
+      "mai",
+      "non",
+      "l'ho",
+      "visto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Come mai",
+        "pinyin": null,
+        "meaning": "Como assim / Por que"
+      },
+      {
+        "id": 2,
+        "word": "non",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 3,
+        "word": "l'ho visto",
+        "pinyin": null,
+        "meaning": "eu o vi"
+      }
+    ],
+    "id": "local-1772297166386-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È un'arte popolare tradizionale cinese. Oggi non molte persone la guardano.",
+    "pinyin": null,
+    "translation": "B: É uma arte popular tradicional chinesa. Hoje não muitas pessoas a assistem.",
+    "tokens": [
+      "È",
+      "un'",
+      "arte",
+      "popolare",
+      "tradizionale",
+      "cinese",
+      ".",
+      "Oggi",
+      "non",
+      "molte",
+      "persone",
+      "la",
+      "guardano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arte popolare",
+        "pinyin": null,
+        "meaning": "arte popular"
+      },
+      {
+        "id": 2,
+        "word": "tradizionale",
+        "pinyin": null,
+        "meaning": "tradicional"
+      },
+      {
+        "id": 3,
+        "word": "cinese",
+        "pinyin": null,
+        "meaning": "chinês/chinesa"
+      },
+      {
+        "id": 4,
+        "word": "Oggi",
+        "pinyin": null,
+        "meaning": "Hoje"
+      },
+      {
+        "id": 5,
+        "word": "non molte",
+        "pinyin": null,
+        "meaning": "não muitas"
+      },
+      {
+        "id": 6,
+        "word": "persone",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 7,
+        "word": "guardano",
+        "pinyin": null,
+        "meaning": "assistir"
+      }
+    ],
+    "id": "local-1772297166386-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Questa è una storia di \"Viaggio in Occidente\", giusto?",
+    "pinyin": null,
+    "translation": "A: Esta é uma história de \"Viagem ao Ocidente\", certo?",
+    "tokens": [
+      "Questa",
+      "è",
+      "una",
+      "storia",
+      "di",
+      "\"Viaggio",
+      "in",
+      "Occidente\"",
+      ",",
+      "giusto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "storia",
+        "pinyin": null,
+        "meaning": "história"
+      },
+      {
+        "id": 2,
+        "word": "Viaggio in Occidente",
+        "pinyin": null,
+        "meaning": "Viagem ao Ocidente"
+      },
+      {
+        "id": 3,
+        "word": "giusto",
+        "pinyin": null,
+        "meaning": "certo / correto"
+      }
+    ],
+    "id": "local-1772297166386-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Questi personaggi sono tutti fatti con pelli di animali o cartone.",
+    "pinyin": null,
+    "translation": "B: Sim. Estes personagens são todos feitos com peles de animais ou papelão.",
+    "tokens": [
+      "Sì",
+      ".",
+      "Questi",
+      "personaggi",
+      "sono",
+      "tutti",
+      "fatti",
+      "con",
+      "pelli",
+      "di",
+      "animali",
+      "o",
+      "cartone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "personaggi",
+        "pinyin": null,
+        "meaning": "personagens"
+      },
+      {
+        "id": 3,
+        "word": "fatti con",
+        "pinyin": null,
+        "meaning": "feitos com"
+      },
+      {
+        "id": 4,
+        "word": "pelli",
+        "pinyin": null,
+        "meaning": "peles"
+      },
+      {
+        "id": 5,
+        "word": "animali",
+        "pinyin": null,
+        "meaning": "animais"
+      },
+      {
+        "id": 6,
+        "word": "cartone",
+        "pinyin": null,
+        "meaning": "papelão"
+      }
+    ],
+    "id": "local-1772297166386-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora come si muovono?",
+    "pinyin": null,
+    "translation": "A: Então como eles se movem?",
+    "tokens": [
+      "Allora",
+      "come",
+      "si",
+      "muovono",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "come",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "si muovono",
+        "pinyin": null,
+        "meaning": "se movem"
+      }
+    ],
+    "id": "local-1772297166386-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ci sono persone che li controllano.",
+    "pinyin": null,
+    "translation": "B: Existem pessoas que os controlam.",
+    "tokens": [
+      "Ci",
+      "sono",
+      "persone",
+      "che",
+      "li",
+      "controllano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ci sono",
+        "pinyin": null,
+        "meaning": "Existem"
+      },
+      {
+        "id": 2,
+        "word": "persone",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "controllano",
+        "pinyin": null,
+        "meaning": "controlam"
+      }
+    ],
+    "id": "local-1772297166386-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È davvero interessante. C'è un posto dove posso vedere uno spettacolo?",
+    "pinyin": null,
+    "translation": "A: É realmente interessante. Há um lugar onde posso ver um espetáculo?",
+    "tokens": [
+      "È",
+      "davvero",
+      "interessante",
+      ".",
+      "C'è",
+      "un",
+      "posto",
+      "dove",
+      "posso",
+      "vedere",
+      "uno",
+      "spettacolo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "davvero",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "interessante",
+        "pinyin": null,
+        "meaning": "interessante"
+      },
+      {
+        "id": 3,
+        "word": "C'è",
+        "pinyin": null,
+        "meaning": "Há / Existe"
+      },
+      {
+        "id": 4,
+        "word": "posto",
+        "pinyin": null,
+        "meaning": "lugar"
+      },
+      {
+        "id": 5,
+        "word": "vedere",
+        "pinyin": null,
+        "meaning": "ver"
+      },
+      {
+        "id": 6,
+        "word": "spettacolo",
+        "pinyin": null,
+        "meaning": "espetáculo"
+      }
+    ],
+    "id": "local-1772297166386-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non vai a Pechino la prossima settimana? Pechino ha un posto chiamato \"Shichahai Shadow Art Performance Hotel\". Puoi andarci per provarlo.",
+    "pinyin": null,
+    "translation": "B: Você não vai a Pequim na próxima semana? Pequim tem um lugar chamado \"Shichahai Shadow Art Performance Hotel\". Você pode ir lá para experimentar.",
+    "tokens": [
+      "Non",
+      "vai",
+      "a",
+      "Pechino",
+      "la",
+      "prossima",
+      "settimana",
+      "?",
+      "Pechino",
+      "ha",
+      "un",
+      "posto",
+      "chiamato",
+      "\"Shichahai",
+      "Shadow",
+      "Art",
+      "Performance",
+      "Hotel\"",
+      ".",
+      "Puoi",
+      "andarci",
+      "per",
+      "provarlo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pechino",
+        "pinyin": null,
+        "meaning": "Pequim"
+      },
+      {
+        "id": 2,
+        "word": "prossima settimana",
+        "pinyin": null,
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 3,
+        "word": "chiamato",
+        "pinyin": null,
+        "meaning": "chamado"
+      },
+      {
+        "id": 4,
+        "word": "Puoi",
+        "pinyin": null,
+        "meaning": "Você pode"
+      },
+      {
+        "id": 5,
+        "word": "andarci",
+        "pinyin": null,
+        "meaning": "ir lá"
+      },
+      {
+        "id": 6,
+        "word": "provarlo",
+        "pinyin": null,
+        "meaning": "experimentá-lo"
+      }
+    ],
+    "id": "local-1772297166386-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ci andrò sicuramente. Mi chiedo se posso imparare a mettere in scena un teatro delle ombre.",
+    "pinyin": null,
+    "translation": "A: Eu irei lá com certeza. Eu me pergunto se posso aprender a encenar um teatro de sombras.",
+    "tokens": [
+      "Ci",
+      "andrò",
+      "sicuramente",
+      ".",
+      "Mi",
+      "chiedo",
+      "se",
+      "posso",
+      "imparare",
+      "a",
+      "mettere",
+      "in",
+      "scena",
+      "un",
+      "teatro",
+      "delle",
+      "ombre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "andrò",
+        "pinyin": null,
+        "meaning": "irei"
+      },
+      {
+        "id": 2,
+        "word": "sicuramente",
+        "pinyin": null,
+        "meaning": "com certeza"
+      },
+      {
+        "id": 3,
+        "word": "Mi chiedo",
+        "pinyin": null,
+        "meaning": "Eu me pergunto"
+      },
+      {
+        "id": 4,
+        "word": "imparare",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 5,
+        "word": "mettere in scena",
+        "pinyin": null,
+        "meaning": "encenar"
+      },
+      {
+        "id": 6,
+        "word": "teatro delle ombre",
+        "pinyin": null,
+        "meaning": "teatro de sombras"
+      }
+    ],
+    "id": "local-1772297166386-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Nessun problema. Il mio amico americano ha prodotto il suo teatro delle ombre. La prossima volta te lo presenterò.",
+    "pinyin": null,
+    "translation": "B: Sem problema. Meu amigo americano produziu seu próprio teatro de sombras. Da próxima vez eu o apresentarei a você.",
+    "tokens": [
+      "Nessun",
+      "problema",
+      ".",
+      "Il",
+      "mio",
+      "amico",
+      "americano",
+      "ha",
+      "prodotto",
+      "il",
+      "suo",
+      "teatro",
+      "delle",
+      "ombre",
+      ".",
+      "La",
+      "prossima",
+      "volta",
+      "te",
+      "lo",
+      "presenterò",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nessun problema",
+        "pinyin": null,
+        "meaning": "Sem problema"
+      },
+      {
+        "id": 2,
+        "word": "amico",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "americano",
+        "pinyin": null,
+        "meaning": "americano"
+      },
+      {
+        "id": 4,
+        "word": "ha prodotto",
+        "pinyin": null,
+        "meaning": "produziu"
+      },
+      {
+        "id": 5,
+        "word": "suo",
+        "pinyin": null,
+        "meaning": "seu"
+      },
+      {
+        "id": 6,
+        "word": "prossima volta",
+        "pinyin": null,
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 7,
+        "word": "presenterò",
+        "pinyin": null,
+        "meaning": "apresentarei"
+      }
+    ],
+    "id": "local-1772297166386-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Okay, allora è deciso.",
+    "pinyin": null,
+    "translation": "A: Okay, então está decidido.",
+    "tokens": [
+      "Okay",
+      ",",
+      "allora",
+      "è",
+      "deciso",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "allora",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "è deciso",
+        "pinyin": null,
+        "meaning": "está decidido"
+      }
+    ],
+    "id": "local-1772297166386-12",
+    "language": "Italiano"
+  }
+]

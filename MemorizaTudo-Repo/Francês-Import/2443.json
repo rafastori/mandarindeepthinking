@@ -1,0 +1,633 @@
+[
+  {
+    "chinese": "A: Salut, frérot. Es-tu libre ce week-end ? Veux-tu qu'on se voie ?",
+    "pinyin": null,
+    "translation": "A: E aí, mano. Você está livre neste fim de semana? Quer que a gente se veja?",
+    "tokens": [
+      "A:",
+      "Salut",
+      ",",
+      "frérot",
+      ".",
+      "Es-tu",
+      "libre",
+      "ce",
+      "week-end",
+      "?",
+      "Veux-tu",
+      "qu'on",
+      "se",
+      "voie",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Salut",
+        "pinyin": null,
+        "meaning": "Olá, E aí"
+      },
+      {
+        "id": 3,
+        "word": "frérot",
+        "pinyin": null,
+        "meaning": "mano, irmãozinho (gíria)"
+      },
+      {
+        "id": 6,
+        "word": "libre",
+        "pinyin": null,
+        "meaning": "livre"
+      },
+      {
+        "id": 8,
+        "word": "week-end",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 11,
+        "word": "qu'on se voie",
+        "pinyin": null,
+        "meaning": "que a gente se veja (verbo 'se voir')"
+      }
+    ],
+    "id": "local-1772297930408-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Pourquoi veux-tu qu'on se voie ?",
+    "pinyin": null,
+    "translation": "B: Por que você quer que a gente se veja?",
+    "tokens": [
+      "B:",
+      "Pourquoi",
+      "veux-tu",
+      "qu'on",
+      "se",
+      "voie",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pourquoi",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "veux-tu",
+        "pinyin": null,
+        "meaning": "você quer (verbo 'vouloir')"
+      },
+      {
+        "id": 3,
+        "word": "qu'on se voie",
+        "pinyin": null,
+        "meaning": "que a gente se veja (verbo 'se voir')"
+      }
+    ],
+    "id": "local-1772297930408-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Hehe ! Je me marie, frérot. Je te donne une invitation !",
+    "pinyin": null,
+    "translation": "A: Hehe! Eu vou me casar, mano. Eu te dou um convite!",
+    "tokens": [
+      "A:",
+      "Hehe",
+      "!",
+      "Je",
+      "me",
+      "marie",
+      ",",
+      "frérot",
+      ".",
+      "Je",
+      "te",
+      "donne",
+      "une",
+      "invitation",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "me marie",
+        "pinyin": null,
+        "meaning": "me caso (verbo 'se marier')"
+      },
+      {
+        "id": 6,
+        "word": "frérot",
+        "pinyin": null,
+        "meaning": "mano, irmãozinho (gíria)"
+      },
+      {
+        "id": 9,
+        "word": "donne",
+        "pinyin": null,
+        "meaning": "dou (verbo 'donner')"
+      },
+      {
+        "id": 12,
+        "word": "invitation",
+        "pinyin": null,
+        "meaning": "convite"
+      }
+    ],
+    "id": "local-1772297930408-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Hein ?! Félicitations ! Combien de tables organises-tu ?",
+    "pinyin": null,
+    "translation": "B: Hein?! Parabéns! Quantas mesas você está organizando?",
+    "tokens": [
+      "B:",
+      "Hein",
+      "?!",
+      "Félicitations",
+      "!",
+      "Combien",
+      "de",
+      "tables",
+      "organises-tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hein",
+        "pinyin": null,
+        "meaning": "Hã? Quê?"
+      },
+      {
+        "id": 3,
+        "word": "Félicitations",
+        "pinyin": null,
+        "meaning": "Parabéns"
+      },
+      {
+        "id": 5,
+        "word": "Combien de",
+        "pinyin": null,
+        "meaning": "Quantos/Quantas"
+      },
+      {
+        "id": 7,
+        "word": "tables",
+        "pinyin": null,
+        "meaning": "mesas"
+      },
+      {
+        "id": 8,
+        "word": "organises-tu",
+        "pinyin": null,
+        "meaning": "você organiza (verbo 'organiser')"
+      }
+    ],
+    "id": "local-1772297930408-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: 12 tables. De nos jours, c'est difficile de réserver un hôtel et c'est aussi difficile de trouver un organisateur de mariage. Nous l'avons planifié il y a un an.",
+    "pinyin": null,
+    "translation": "A: 12 mesas. Hoje em dia, é difícil reservar um hotel e também é difícil encontrar um organizador de casamentos. Nós planejamos isso há um ano.",
+    "tokens": [
+      "A:",
+      "12",
+      "tables",
+      ".",
+      "De",
+      "nos",
+      "jours",
+      ",",
+      "c'est",
+      "difficile",
+      "de",
+      "réserver",
+      "un",
+      "hôtel",
+      "et",
+      "c'est",
+      "aussi",
+      "difficile",
+      "de",
+      "trouver",
+      "un",
+      "organisateur",
+      "de",
+      "mariage",
+      ".",
+      "Nous",
+      "l'avons",
+      "planifié",
+      "il",
+      "y",
+      "a",
+      "un",
+      "an",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "tables",
+        "pinyin": null,
+        "meaning": "mesas"
+      },
+      {
+        "id": 4,
+        "word": "De nos jours",
+        "pinyin": null,
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 9,
+        "word": "difficile",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 11,
+        "word": "réserver",
+        "pinyin": null,
+        "meaning": "reservar"
+      },
+      {
+        "id": 13,
+        "word": "hôtel",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 16,
+        "word": "aussi",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 20,
+        "word": "organisateur de mariage",
+        "pinyin": null,
+        "meaning": "organizador de casamento"
+      },
+      {
+        "id": 26,
+        "word": "l'avons planifié",
+        "pinyin": null,
+        "meaning": "o planejamos (verbo 'planifier')"
+      },
+      {
+        "id": 29,
+        "word": "il y a un an",
+        "pinyin": null,
+        "meaning": "há um ano"
+      }
+    ],
+    "id": "local-1772297930408-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il n'y a rien à faire. Tu pourrais faire un mariage à destination !",
+    "pinyin": null,
+    "translation": "B: Não há nada a fazer. Você poderia fazer um casamento de destino!",
+    "tokens": [
+      "B:",
+      "Il",
+      "n'y",
+      "a",
+      "rien",
+      "à",
+      "faire",
+      ".",
+      "Tu",
+      "pourrais",
+      "faire",
+      "un",
+      "mariage",
+      "à",
+      "destination",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il n'y a rien à faire",
+        "pinyin": null,
+        "meaning": "Não há nada a fazer, Não tem jeito"
+      },
+      {
+        "id": 9,
+        "word": "pourrais",
+        "pinyin": null,
+        "meaning": "poderia (verbo 'pouvoir' no condicional)"
+      },
+      {
+        "id": 12,
+        "word": "mariage à destination",
+        "pinyin": null,
+        "meaning": "casamento de destino"
+      }
+    ],
+    "id": "local-1772297930408-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les parents ne le permettront pas. Leur façon de penser est si traditionnelle.",
+    "pinyin": null,
+    "translation": "A: Os pais não permitirão isso. A forma de pensar deles é tão tradicional.",
+    "tokens": [
+      "A:",
+      "Les",
+      "parents",
+      "ne",
+      "le",
+      "permettront",
+      "pas",
+      ".",
+      "Leur",
+      "façon",
+      "de",
+      "penser",
+      "est",
+      "si",
+      "traditionnelle",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "parents",
+        "pinyin": null,
+        "meaning": "pais"
+      },
+      {
+        "id": 5,
+        "word": "permettront",
+        "pinyin": null,
+        "meaning": "permitirão (verbo 'permettre')"
+      },
+      {
+        "id": 9,
+        "word": "façon de penser",
+        "pinyin": null,
+        "meaning": "forma de pensar"
+      },
+      {
+        "id": 14,
+        "word": "traditionnelle",
+        "pinyin": null,
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772297930408-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, tu prévois de partir en lune de miel après t'être marié ?",
+    "pinyin": null,
+    "translation": "B: Então, você planeja ir para a lua de mel depois de se casar?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "tu",
+      "prévois",
+      "de",
+      "partir",
+      "en",
+      "lune",
+      "de",
+      "miel",
+      "après",
+      "t'être",
+      "marié",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 4,
+        "word": "prévois",
+        "pinyin": null,
+        "meaning": "planeja (verbo 'prévoir')"
+      },
+      {
+        "id": 6,
+        "word": "partir en lune de miel",
+        "pinyin": null,
+        "meaning": "ir para a lua de mel"
+      },
+      {
+        "id": 12,
+        "word": "t'être marié",
+        "pinyin": null,
+        "meaning": "ter se casado (verbo 'se marier')"
+      }
+    ],
+    "id": "local-1772297930408-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Bien sûr, sinon ma femme ne sera pas contente.",
+    "pinyin": null,
+    "translation": "A: Claro, senão minha esposa não ficará feliz.",
+    "tokens": [
+      "A:",
+      "Bien",
+      "sûr",
+      ",",
+      "sinon",
+      "ma",
+      "femme",
+      "ne",
+      "sera",
+      "pas",
+      "contente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien sûr",
+        "pinyin": null,
+        "meaning": "Claro"
+      },
+      {
+        "id": 4,
+        "word": "sinon",
+        "pinyin": null,
+        "meaning": "senão"
+      },
+      {
+        "id": 6,
+        "word": "femme",
+        "pinyin": null,
+        "meaning": "esposa, mulher"
+      },
+      {
+        "id": 9,
+        "word": "contente",
+        "pinyin": null,
+        "meaning": "contente, feliz"
+      }
+    ],
+    "id": "local-1772297930408-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ta femme, c'est la copine que tu avais à l'université ?",
+    "pinyin": null,
+    "translation": "B: Sua esposa é aquela namorada que você tinha na universidade?",
+    "tokens": [
+      "B:",
+      "Ta",
+      "femme",
+      ",",
+      "c'est",
+      "la",
+      "copine",
+      "que",
+      "tu",
+      "avais",
+      "à",
+      "l'université",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "femme",
+        "pinyin": null,
+        "meaning": "esposa"
+      },
+      {
+        "id": 6,
+        "word": "copine",
+        "pinyin": null,
+        "meaning": "namorada, amiga"
+      },
+      {
+        "id": 11,
+        "word": "l'université",
+        "pinyin": null,
+        "meaning": "a universidade"
+      }
+    ],
+    "id": "local-1772297930408-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: On a rompu il y a longtemps. Ma femme s'appelle Yuanyuan. Ne te trompe pas et ne l'appelle pas autrement !",
+    "pinyin": null,
+    "translation": "A: Nós terminamos faz tempo. Minha esposa se chama Yuanyuan. Não se engane e não a chame de outro jeito!",
+    "tokens": [
+      "A:",
+      "On",
+      "a",
+      "rompu",
+      "il",
+      "y",
+      "a",
+      "longtemps",
+      ".",
+      "Ma",
+      "femme",
+      "s'appelle",
+      "Yuanyuan",
+      ".",
+      "Ne",
+      "te",
+      "trompe",
+      "pas",
+      "et",
+      "ne",
+      "l'appelle",
+      "pas",
+      "autrement",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "rompu",
+        "pinyin": null,
+        "meaning": "rompido, terminado (verbo 'rompre')"
+      },
+      {
+        "id": 5,
+        "word": "il y a longtemps",
+        "pinyin": null,
+        "meaning": "há muito tempo, faz tempo"
+      },
+      {
+        "id": 11,
+        "word": "s'appelle",
+        "pinyin": null,
+        "meaning": "chama-se (verbo 's'appeler')"
+      },
+      {
+        "id": 15,
+        "word": "te trompe",
+        "pinyin": null,
+        "meaning": "se engane (verbo 'se tromper')"
+      },
+      {
+        "id": 22,
+        "word": "autrement",
+        "pinyin": null,
+        "meaning": "de outro modo, de outro jeito"
+      }
+    ],
+    "id": "local-1772297930408-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'ai compris. On se voit ce week-end.",
+    "pinyin": null,
+    "translation": "B: Entendi. A gente se vê neste fim de semana.",
+    "tokens": [
+      "B:",
+      "J'ai",
+      "compris",
+      ".",
+      "On",
+      "se",
+      "voit",
+      "ce",
+      "week-end",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'ai compris",
+        "pinyin": null,
+        "meaning": "Entendi (verbo 'comprendre')"
+      },
+      {
+        "id": 4,
+        "word": "On se voit",
+        "pinyin": null,
+        "meaning": "A gente se vê (verbo 'se voir')"
+      },
+      {
+        "id": 7,
+        "word": "week-end",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772297930408-11",
+    "language": "Francês"
+  }
+]

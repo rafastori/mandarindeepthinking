@@ -1,0 +1,648 @@
+[
+  {
+    "chinese": "A: Salve. Posso chiederle se c'è qualcosa con cui posso aiutarla?",
+    "pinyin": null,
+    "translation": "A: Olá. Posso perguntar se há algo com que posso ajudá-la?",
+    "tokens": [
+      "A:",
+      "Salve",
+      ".",
+      "Posso",
+      "chiederle",
+      "se",
+      "c'è",
+      "qualcosa",
+      "con",
+      "cui",
+      "posso",
+      "aiutarla",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Salve",
+        "pinyin": null,
+        "meaning": "Olá/Saudações"
+      },
+      {
+        "id": 2,
+        "word": "Posso",
+        "pinyin": null,
+        "meaning": "Posso (verbo 'potere')"
+      },
+      {
+        "id": 3,
+        "word": "chiederle",
+        "pinyin": null,
+        "meaning": "perguntar-lhe (verbo 'chiedere' + pronome 'le')"
+      },
+      {
+        "id": 4,
+        "word": "c'è",
+        "pinyin": null,
+        "meaning": "há/existe (verbo 'esserci')"
+      },
+      {
+        "id": 5,
+        "word": "qualcosa",
+        "pinyin": null,
+        "meaning": "algo/alguma coisa"
+      },
+      {
+        "id": 6,
+        "word": "con cui",
+        "pinyin": null,
+        "meaning": "com o qual/com que"
+      },
+      {
+        "id": 7,
+        "word": "aiutarla",
+        "pinyin": null,
+        "meaning": "ajudá-la (verbo 'aiutare' + pronome 'la')"
+      }
+    ],
+    "id": "local-1772296292570-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Salve. Vorrei tagliare la mia carta. Ho comprato un nuovo cellulare e non posso usare la mia SIM originale.",
+    "pinyin": null,
+    "translation": "B: Olá. Gostaria de cortar meu cartão. Comprei um celular novo e não consigo usar meu SIM original.",
+    "tokens": [
+      "B:",
+      "Salve",
+      ".",
+      "Vorrei",
+      "tagliare",
+      "la",
+      "mia",
+      "carta",
+      ".",
+      "Ho",
+      "comprato",
+      "un",
+      "nuovo",
+      "cellulare",
+      "e",
+      "non",
+      "posso",
+      "usare",
+      "la",
+      "mia",
+      "SIM",
+      "originale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "Vorrei",
+        "pinyin": null,
+        "meaning": "Gostaria (verbo 'volere' no condicional)"
+      },
+      {
+        "id": 9,
+        "word": "tagliare",
+        "pinyin": null,
+        "meaning": "cortar"
+      },
+      {
+        "id": 10,
+        "word": "carta",
+        "pinyin": null,
+        "meaning": "cartão/papel (neste contexto, cartão SIM)"
+      },
+      {
+        "id": 11,
+        "word": "Ho comprato",
+        "pinyin": null,
+        "meaning": "Eu comprei (verbo 'comprare' no passado próximo)"
+      },
+      {
+        "id": 12,
+        "word": "cellulare",
+        "pinyin": null,
+        "meaning": "celular"
+      },
+      {
+        "id": 13,
+        "word": "non posso",
+        "pinyin": null,
+        "meaning": "não consigo/não posso"
+      },
+      {
+        "id": 14,
+        "word": "usare",
+        "pinyin": null,
+        "meaning": "usar"
+      },
+      {
+        "id": 15,
+        "word": "originale",
+        "pinyin": null,
+        "meaning": "original"
+      }
+    ],
+    "id": "local-1772296292570-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Vuole una mini SIM, giusto? Va bene.",
+    "pinyin": null,
+    "translation": "A: Quer um mini SIM, certo? Tudo bem.",
+    "tokens": [
+      "A:",
+      "Vuole",
+      "una",
+      "mini",
+      "SIM",
+      ",",
+      "giusto",
+      "?",
+      "Va",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "Vuole",
+        "pinyin": null,
+        "meaning": "Você quer (verbo 'volere')"
+      },
+      {
+        "id": 17,
+        "word": "giusto",
+        "pinyin": null,
+        "meaning": "certo/correto"
+      },
+      {
+        "id": 18,
+        "word": "Va bene",
+        "pinyin": null,
+        "meaning": "Tudo bem/Está bem"
+      }
+    ],
+    "id": "local-1772296292570-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Devo pagare?",
+    "pinyin": null,
+    "translation": "B: Tenho que pagar?",
+    "tokens": [
+      "B:",
+      "Devo",
+      "pagare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Devo",
+        "pinyin": null,
+        "meaning": "Tenho que (verbo 'dovere')"
+      },
+      {
+        "id": 20,
+        "word": "pagare",
+        "pinyin": null,
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772296292570-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: No. Tagliare una carta è gratuito. È fatto.",
+    "pinyin": null,
+    "translation": "A: Não. Cortar um cartão é gratuito. Está feito.",
+    "tokens": [
+      "A:",
+      "No",
+      ".",
+      "Tagliare",
+      "una",
+      "carta",
+      "è",
+      "gratuito",
+      ".",
+      "È",
+      "fatto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "gratuito",
+        "pinyin": null,
+        "meaning": "gratuito/de graça"
+      },
+      {
+        "id": 22,
+        "word": "È fatto",
+        "pinyin": null,
+        "meaning": "Está feito/Pronto"
+      }
+    ],
+    "id": "local-1772296292570-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie. Eh? Perché la carta non entra? Può aiutarmi a dare un'occhiata?",
+    "pinyin": null,
+    "translation": "B: Obrigado. Hã? Por que o cartão não entra? Pode me ajudar a dar uma olhada?",
+    "tokens": [
+      "B:",
+      "Grazie",
+      ".",
+      "Eh",
+      "?",
+      "Perché",
+      "la",
+      "carta",
+      "non",
+      "entra",
+      "?",
+      "Può",
+      "aiutarmi",
+      "a",
+      "dare",
+      "un'occhiata",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 23,
+        "word": "Grazie",
+        "pinyin": null,
+        "meaning": "Obrigado/a"
+      },
+      {
+        "id": 24,
+        "word": "Perché",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 25,
+        "word": "non entra",
+        "pinyin": null,
+        "meaning": "não entra (verbo 'entrare')"
+      },
+      {
+        "id": 26,
+        "word": "Può",
+        "pinyin": null,
+        "meaning": "Pode (verbo 'potere')"
+      },
+      {
+        "id": 27,
+        "word": "aiutarmi",
+        "pinyin": null,
+        "meaning": "me ajudar (verbo 'aiutare' + pronome 'mi')"
+      },
+      {
+        "id": 28,
+        "word": "dare un'occhiata",
+        "pinyin": null,
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772296292570-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il suo cellulare è un iPhone 5, giusto?",
+    "pinyin": null,
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "A:",
+      "Il",
+      "suo",
+      "cellulare",
+      "è",
+      "un",
+      "iPhone",
+      "5",
+      ",",
+      "giusto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "suo",
+        "pinyin": null,
+        "meaning": "seu/sua (pronome possessivo)"
+      }
+    ],
+    "id": "local-1772296292570-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì.",
+    "pinyin": null,
+    "translation": "B: Sim.",
+    "tokens": [
+      "B:",
+      "Sì",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772296292570-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Gli iPhone 5 non possono usare le mini SIM. Solo l'iPhone 4 può usare una mini SIM.",
+    "pinyin": null,
+    "translation": "A: Os iPhones 5 não podem usar mini SIMs. Somente o iPhone 4 pode usar um mini SIM.",
+    "tokens": [
+      "A:",
+      "Gli",
+      "iPhone",
+      "5",
+      "non",
+      "possono",
+      "usare",
+      "le",
+      "mini",
+      "SIM",
+      ".",
+      "Solo",
+      "l'iPhone",
+      "4",
+      "può",
+      "usare",
+      "una",
+      "mini",
+      "SIM",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "possono",
+        "pinyin": null,
+        "meaning": "podem (verbo 'potere')"
+      },
+      {
+        "id": 32,
+        "word": "Solo",
+        "pinyin": null,
+        "meaning": "Só/Somente"
+      },
+      {
+        "id": 33,
+        "word": "può",
+        "pinyin": null,
+        "meaning": "pode (verbo 'potere')"
+      }
+    ],
+    "id": "local-1772296292570-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora cosa faccio?",
+    "pinyin": null,
+    "translation": "B: Então o que eu faço?",
+    "tokens": [
+      "B:",
+      "Allora",
+      "cosa",
+      "faccio",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então/Nesse caso"
+      },
+      {
+        "id": 35,
+        "word": "cosa",
+        "pinyin": null,
+        "meaning": "o que/coisa"
+      },
+      {
+        "id": 36,
+        "word": "faccio",
+        "pinyin": null,
+        "meaning": "faço (verbo 'fare')"
+      }
+    ],
+    "id": "local-1772296292570-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Nessun problema. Può cambiarla con una nano SIM. Questa è più piccola di una mini ed è usata specificamente nell'iPhone 5.",
+    "pinyin": null,
+    "translation": "A: Nenhum problema. Pode trocá-la por um nano SIM. Esta é menor que uma mini e é usada especificamente no iPhone 5.",
+    "tokens": [
+      "A:",
+      "Nessun",
+      "problema",
+      ".",
+      "Può",
+      "cambiarla",
+      "con",
+      "una",
+      "nano",
+      "SIM",
+      ".",
+      "Questa",
+      "è",
+      "più",
+      "piccola",
+      "di",
+      "una",
+      "mini",
+      "ed",
+      "è",
+      "usata",
+      "specificamente",
+      "nell'iPhone",
+      "5",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "Nessun problema",
+        "pinyin": null,
+        "meaning": "Nenhum problema"
+      },
+      {
+        "id": 38,
+        "word": "cambiarla",
+        "pinyin": null,
+        "meaning": "trocá-la (verbo 'cambiare' + pronome 'la')"
+      },
+      {
+        "id": 39,
+        "word": "Questa",
+        "pinyin": null,
+        "meaning": "Esta/Essa"
+      },
+      {
+        "id": 40,
+        "word": "più piccola",
+        "pinyin": null,
+        "meaning": "menor/mais pequena"
+      },
+      {
+        "id": 41,
+        "word": "usata",
+        "pinyin": null,
+        "meaning": "usada (particípio passado de 'usare')"
+      },
+      {
+        "id": 42,
+        "word": "specificamente",
+        "pinyin": null,
+        "meaning": "especificamente"
+      },
+      {
+        "id": 43,
+        "word": "nell'iPhone",
+        "pinyin": null,
+        "meaning": "no iPhone (preposição 'in' + artigo 'il' contraído)"
+      }
+    ],
+    "id": "local-1772296292570-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Devo pagare per questo?",
+    "pinyin": null,
+    "translation": "B: Tenho que pagar por isso?",
+    "tokens": [
+      "B:",
+      "Devo",
+      "pagare",
+      "per",
+      "questo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "per questo",
+        "pinyin": null,
+        "meaning": "por isso/por isto"
+      }
+    ],
+    "id": "local-1772296292570-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È gratuita la prima volta. Se in seguito dovesse sostituire una carta, dovrà pagare 20 kuai per la tassa di elaborazione.",
+    "pinyin": null,
+    "translation": "A: É gratuita pela primeira vez. Se depois precisar substituir um cartão, terá que pagar 20 kuai pela taxa de processamento.",
+    "tokens": [
+      "A:",
+      "È",
+      "gratuita",
+      "la",
+      "prima",
+      "volta",
+      ".",
+      "Se",
+      "in",
+      "seguito",
+      "dovesse",
+      "sostituire",
+      "una",
+      "carta",
+      ",",
+      "dovrà",
+      "pagare",
+      "20",
+      "kuai",
+      "per",
+      "la",
+      "tassa",
+      "di",
+      "elaborazione",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "prima volta",
+        "pinyin": null,
+        "meaning": "primeira vez"
+      },
+      {
+        "id": 46,
+        "word": "in seguito",
+        "pinyin": null,
+        "meaning": "depois/em seguida"
+      },
+      {
+        "id": 47,
+        "word": "dovesse",
+        "pinyin": null,
+        "meaning": "se tivesse que/se precisasse (verbo 'dovere' no subjuntivo imperfeito)"
+      },
+      {
+        "id": 48,
+        "word": "sostituire",
+        "pinyin": null,
+        "meaning": "substituir"
+      },
+      {
+        "id": 49,
+        "word": "dovrà",
+        "pinyin": null,
+        "meaning": "terá que (verbo 'dovere' no futuro)"
+      },
+      {
+        "id": 50,
+        "word": "tassa",
+        "pinyin": null,
+        "meaning": "taxa/imposto"
+      },
+      {
+        "id": 51,
+        "word": "elaborazione",
+        "pinyin": null,
+        "meaning": "processamento/elaboração"
+      }
+    ],
+    "id": "local-1772296292570-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ok. Grazie.",
+    "pinyin": null,
+    "translation": "B: Ok. Obrigado.",
+    "tokens": [
+      "B:",
+      "Ok",
+      ".",
+      "Grazie",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 52,
+        "word": "Ok",
+        "pinyin": null,
+        "meaning": "Ok/Certo"
+      }
+    ],
+    "id": "local-1772296292570-13",
+    "language": "Italiano"
+  }
+]

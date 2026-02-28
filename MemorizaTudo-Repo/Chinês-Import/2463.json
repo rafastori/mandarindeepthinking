@@ -1,0 +1,743 @@
+[
+  {
+    "chinese": "你好，有什么可以帮您的吗？",
+    "pinyin": "nǐ hǎo, yǒu shénme kěyǐ bāng nín de ma?",
+    "translation": "Olá, há algo em que posso ajudar?",
+    "tokens": [
+      "你",
+      "好",
+      "，",
+      "有",
+      "什么",
+      "可以",
+      "帮",
+      "您",
+      "的",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你好",
+        "pinyin": "nǐhǎo",
+        "meaning": "olá"
+      },
+      {
+        "id": 2,
+        "word": "有什么",
+        "pinyin": "yǒushénme",
+        "meaning": "o que tem, há o que"
+      },
+      {
+        "id": 3,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, ser possível"
+      },
+      {
+        "id": 4,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 5,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 6,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula de pergunta"
+      }
+    ],
+    "id": "local-1772299313787-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我想配一副眼镜。",
+    "pinyin": "wǒ xiǎng pèi yī fù yǎnjìng.",
+    "translation": "Eu gostaria de comprar um óculos.",
+    "tokens": [
+      "我",
+      "想",
+      "配",
+      "一",
+      "副",
+      "眼镜",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, desejar"
+      },
+      {
+        "id": 3,
+        "word": "配",
+        "pinyin": "pèi",
+        "meaning": "fazer sob medida, combinar (para óculos, chaves)"
+      },
+      {
+        "id": 4,
+        "word": "一副",
+        "pinyin": "yīfù",
+        "meaning": "um par (medida para óculos)"
+      },
+      {
+        "id": 5,
+        "word": "眼镜",
+        "pinyin": "yǎnjìng",
+        "meaning": "óculos"
+      }
+    ],
+    "id": "local-1772299313787-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "近视镜、平光镜还是老花镜？",
+    "pinyin": "jìnshìjìng, píngguāngjìng háishì lǎohuājìng?",
+    "translation": "Óculos de miopia, de grau zero ou de presbiopia?",
+    "tokens": [
+      "近视镜",
+      "、",
+      "平光镜",
+      "还是",
+      "老花镜",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "近视镜",
+        "pinyin": "jìnshìjìng",
+        "meaning": "óculos de miopia"
+      },
+      {
+        "id": 2,
+        "word": "平光镜",
+        "pinyin": "píngguāngjìng",
+        "meaning": "óculos de grau zero/neutro"
+      },
+      {
+        "id": 3,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ou (em perguntas)"
+      },
+      {
+        "id": 4,
+        "word": "老花镜",
+        "pinyin": "lǎohuājìng",
+        "meaning": "óculos de presbiopia/leitura"
+      }
+    ],
+    "id": "local-1772299313787-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "近视带散光。",
+    "pinyin": "jìnshì dài sǎnguāng.",
+    "translation": "Miopia com astigmatismo.",
+    "tokens": [
+      "近视",
+      "带",
+      "散光",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "近视",
+        "pinyin": "jìnshì",
+        "meaning": "miopia"
+      },
+      {
+        "id": 2,
+        "word": "带",
+        "pinyin": "dài",
+        "meaning": "ter, com, trazer"
+      },
+      {
+        "id": 3,
+        "word": "散光",
+        "pinyin": "sǎnguāng",
+        "meaning": "astigmatismo"
+      }
+    ],
+    "id": "local-1772299313787-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "您可以在这边挑选镜框。选好之后，到那边付款并进行验光。",
+    "pinyin": "nín kěyǐ zài zhè biān tiāoxuǎn jìngkuàng. xuǎn hǎo zhī hòu, dào nà biān fùkuǎn bìng jìnxíng yànguāng.",
+    "translation": "O senhor pode escolher a armação aqui. Depois de escolher, vá até lá para pagar e fazer o exame de vista.",
+    "tokens": [
+      "您",
+      "可以",
+      "在",
+      "这",
+      "边",
+      "挑选",
+      "镜框",
+      "。",
+      "选",
+      "好",
+      "之后",
+      "，",
+      "到",
+      "那",
+      "边",
+      "付款",
+      "并",
+      "进行",
+      "验光",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 2,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, ser possível"
+      },
+      {
+        "id": 3,
+        "word": "这边",
+        "pinyin": "zhèbiān",
+        "meaning": "aqui"
+      },
+      {
+        "id": 4,
+        "word": "挑选",
+        "pinyin": "tiāoxuǎn",
+        "meaning": "escolher, selecionar"
+      },
+      {
+        "id": 5,
+        "word": "镜框",
+        "pinyin": "jìngkuàng",
+        "meaning": "armação de óculos"
+      },
+      {
+        "id": 6,
+        "word": "选好",
+        "pinyin": "xuǎnhǎo",
+        "meaning": "ter escolhido, terminar de escolher"
+      },
+      {
+        "id": 7,
+        "word": "之后",
+        "pinyin": "zhīhòu",
+        "meaning": "depois de"
+      },
+      {
+        "id": 8,
+        "word": "那边",
+        "pinyin": "nàbiān",
+        "meaning": "lá"
+      },
+      {
+        "id": 9,
+        "word": "付款",
+        "pinyin": "fùkuǎn",
+        "meaning": "pagar"
+      },
+      {
+        "id": 10,
+        "word": "并",
+        "pinyin": "bìng",
+        "meaning": "e, além disso"
+      },
+      {
+        "id": 11,
+        "word": "进行",
+        "pinyin": "jìnxíng",
+        "meaning": "realizar, proceder"
+      },
+      {
+        "id": 12,
+        "word": "验光",
+        "pinyin": "yànguāng",
+        "meaning": "exame de vista, fazer exame de vista"
+      }
+    ],
+    "id": "local-1772299313787-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的。一副多少钱？",
+    "pinyin": "hǎo de. yī fù duōshǎo qián?",
+    "translation": "Certo. Quanto custa um par?",
+    "tokens": [
+      "好",
+      "的",
+      "。",
+      "一",
+      "副",
+      "多少",
+      "钱",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎode",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "一副",
+        "pinyin": "yīfù",
+        "meaning": "um par (medida para óculos)"
+      },
+      {
+        "id": 3,
+        "word": "多少钱",
+        "pinyin": "duōshǎoqián",
+        "meaning": "quanto custa"
+      }
+    ],
+    "id": "local-1772299313787-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有三种套餐价格：399、599、799。包括镜片、镜框、眼镜盒和擦镜布。",
+    "pinyin": "yǒu sān zhǒng tàocān jiàgé: sānbǎi jiǔshíjiǔ, wǔbǎi jiǔshíjiǔ, qībǎi jiǔshíjiǔ. bāokuò jìngpiàn, jìngkuàng, yǎnjìnghé hé cājìngbù.",
+    "translation": "Há três tipos de preços de pacotes: 399, 599, 799. Incluindo lentes, armação, estojo de óculos e pano de limpeza.",
+    "tokens": [
+      "有",
+      "三",
+      "种",
+      "套餐",
+      "价格",
+      "：",
+      "399",
+      "、",
+      "599",
+      "、",
+      "799",
+      "。",
+      "包括",
+      "镜片",
+      "、",
+      "镜框",
+      "、",
+      "眼镜盒",
+      "和",
+      "擦镜布",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, haver"
+      },
+      {
+        "id": 2,
+        "word": "三种",
+        "pinyin": "sānzhǒng",
+        "meaning": "três tipos"
+      },
+      {
+        "id": 3,
+        "word": "套餐",
+        "pinyin": "tàocān",
+        "meaning": "pacote, menu"
+      },
+      {
+        "id": 4,
+        "word": "价格",
+        "pinyin": "jiàgé",
+        "meaning": "preço"
+      },
+      {
+        "id": 5,
+        "word": "包括",
+        "pinyin": "bāokuò",
+        "meaning": "incluir"
+      },
+      {
+        "id": 6,
+        "word": "镜片",
+        "pinyin": "jìngpiàn",
+        "meaning": "lentes"
+      },
+      {
+        "id": 7,
+        "word": "镜框",
+        "pinyin": "jìngkuàng",
+        "meaning": "armação de óculos"
+      },
+      {
+        "id": 8,
+        "word": "眼镜盒",
+        "pinyin": "yǎnjìnghé",
+        "meaning": "estojo de óculos"
+      },
+      {
+        "id": 9,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 10,
+        "word": "擦镜布",
+        "pinyin": "cājìngbù",
+        "meaning": "pano de limpeza de óculos"
+      }
+    ],
+    "id": "local-1772299313787-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "多久可以取？",
+    "pinyin": "duōjiǔ kěyǐ qǔ?",
+    "translation": "Quanto tempo leva para retirar?",
+    "tokens": [
+      "多",
+      "久",
+      "可以",
+      "取",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "多久",
+        "pinyin": "duōjiǔ",
+        "meaning": "quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, ser possível"
+      },
+      {
+        "id": 3,
+        "word": "取",
+        "pinyin": "qǔ",
+        "meaning": "pegar, retirar"
+      }
+    ],
+    "id": "local-1772299313787-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "验光后一小时。",
+    "pinyin": "yànguāng hòu yī xiǎoshí.",
+    "translation": "Uma hora após o exame de vista.",
+    "tokens": [
+      "验光",
+      "后",
+      "一",
+      "小时",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "验光",
+        "pinyin": "yànguāng",
+        "meaning": "exame de vista"
+      },
+      {
+        "id": 2,
+        "word": "后",
+        "pinyin": "hòu",
+        "meaning": "depois, após"
+      },
+      {
+        "id": 3,
+        "word": "一小时",
+        "pinyin": "yīxiǎoshí",
+        "meaning": "uma hora"
+      }
+    ],
+    "id": "local-1772299313787-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有没有近视散光又可以当太阳镜的镜片？",
+    "pinyin": "yǒu méiyǒu jìnshì sǎnguāng yòu kěyǐ dāng tàiyángjìng de jìngpiàn?",
+    "translation": "Existem lentes para miopia e astigmatismo que também podem ser usadas como óculos de sol?",
+    "tokens": [
+      "有",
+      "没有",
+      "近视",
+      "散光",
+      "又",
+      "可以",
+      "当",
+      "太阳镜",
+      "的",
+      "镜片",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有没有",
+        "pinyin": "yǒuméiyǒu",
+        "meaning": "tem ou não tem, existe?"
+      },
+      {
+        "id": 2,
+        "word": "近视",
+        "pinyin": "jìnshì",
+        "meaning": "miopia"
+      },
+      {
+        "id": 3,
+        "word": "散光",
+        "pinyin": "sǎnguāng",
+        "meaning": "astigmatismo"
+      },
+      {
+        "id": 4,
+        "word": "又",
+        "pinyin": "yòu",
+        "meaning": "e, também"
+      },
+      {
+        "id": 5,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, ser possível"
+      },
+      {
+        "id": 6,
+        "word": "当",
+        "pinyin": "dāng",
+        "meaning": "servir como, ser"
+      },
+      {
+        "id": 7,
+        "word": "太阳镜",
+        "pinyin": "tàiyángjìng",
+        "meaning": "óculos de sol"
+      },
+      {
+        "id": 8,
+        "word": "镜片",
+        "pinyin": "jìngpiàn",
+        "meaning": "lentes"
+      }
+    ],
+    "id": "local-1772299313787-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有，但那是特殊镜片。没有套餐价，镜片和镜框要分开购买。一副至少要一千多。",
+    "pinyin": "yǒu, dàn nà shì tèshū jìngpiàn. méiyǒu tàocān jià, jìngpiàn hé jìngkuàng yào fēnkāi gòumǎi. yī fù zhìshǎo yào yī qiān duō.",
+    "translation": "Sim, mas essas são lentes especiais. Não há preço de pacote, as lentes e a armação precisam ser compradas separadamente. Um par custa pelo menos mais de mil.",
+    "tokens": [
+      "有",
+      "，",
+      "但",
+      "那",
+      "是",
+      "特殊",
+      "镜片",
+      "。",
+      "没有",
+      "套餐",
+      "价",
+      "，",
+      "镜片",
+      "和",
+      "镜框",
+      "要",
+      "分开",
+      "购买",
+      "。",
+      "一",
+      "副",
+      "至少",
+      "要",
+      "一千",
+      "多",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "sim, ter"
+      },
+      {
+        "id": 2,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "那是",
+        "pinyin": "nàshì",
+        "meaning": "isso é"
+      },
+      {
+        "id": 4,
+        "word": "特殊",
+        "pinyin": "tèshū",
+        "meaning": "especial"
+      },
+      {
+        "id": 5,
+        "word": "镜片",
+        "pinyin": "jìngpiàn",
+        "meaning": "lentes"
+      },
+      {
+        "id": 6,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "não ter"
+      },
+      {
+        "id": 7,
+        "word": "套餐价",
+        "pinyin": "tàocānjià",
+        "meaning": "preço de pacote"
+      },
+      {
+        "id": 8,
+        "word": "镜框",
+        "pinyin": "jìngkuàng",
+        "meaning": "armação de óculos"
+      },
+      {
+        "id": 9,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "precisar, querer"
+      },
+      {
+        "id": 10,
+        "word": "分开",
+        "pinyin": "fēnkāi",
+        "meaning": "separar, separadamente"
+      },
+      {
+        "id": 11,
+        "word": "购买",
+        "pinyin": "gòumǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 12,
+        "word": "一副",
+        "pinyin": "yīfù",
+        "meaning": "um par (medida para óculos)"
+      },
+      {
+        "id": 13,
+        "word": "至少",
+        "pinyin": "zhìshǎo",
+        "meaning": "pelo menos"
+      },
+      {
+        "id": 14,
+        "word": "一千多",
+        "pinyin": "yīqiānduō",
+        "meaning": "mais de mil"
+      }
+    ],
+    "id": "local-1772299313787-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "太贵了！我还是看看399的吧。",
+    "pinyin": "tài guì le! wǒ háishì kànkan sānbǎi jiǔshíjiǔ de ba.",
+    "translation": "Muito caro! Acho que vou dar uma olhada nos de 399.",
+    "tokens": [
+      "太",
+      "贵",
+      "了",
+      "！",
+      "我",
+      "还是",
+      "看看",
+      "399",
+      "的",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito (demasiado)"
+      },
+      {
+        "id": 2,
+        "word": "贵",
+        "pinyin": "guì",
+        "meaning": "caro"
+      },
+      {
+        "id": 3,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado/ênfase"
+      },
+      {
+        "id": 4,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 5,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "é melhor, ainda (indicando preferência ou reconsideração)"
+      },
+      {
+        "id": 6,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 7,
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "partícula que indica posse ou modificação"
+      },
+      {
+        "id": 8,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de sugestão ou incerteza"
+      }
+    ],
+    "id": "local-1772299313787-11",
+    "language": "Chinês"
+  }
+]

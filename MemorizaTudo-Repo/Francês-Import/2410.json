@@ -1,0 +1,1050 @@
+[
+  {
+    "chinese": "Mademoiselle, combien êtes-vous ?",
+    "pinyin": null,
+    "translation": "Senhorita, quantas pessoas são vocês?",
+    "tokens": [
+      "Mademoiselle",
+      ",",
+      "combien",
+      "êtes-vous",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mademoiselle",
+        "pinyin": null,
+        "meaning": "Senhorita"
+      },
+      {
+        "id": 2,
+        "word": "combien",
+        "pinyin": null,
+        "meaning": "quantos/quantas"
+      },
+      {
+        "id": 3,
+        "word": "êtes-vous",
+        "pinyin": null,
+        "meaning": "vocês são (verbo 'être')"
+      }
+    ],
+    "id": "local-1772295561407-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Deux.",
+    "pinyin": null,
+    "translation": "Duas.",
+    "tokens": [
+      "Deux",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Deux",
+        "pinyin": null,
+        "meaning": "Dois/Duas"
+      }
+    ],
+    "id": "local-1772295561407-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D'accord, voici votre numéro.",
+    "pinyin": null,
+    "translation": "Certo, aqui está o seu número.",
+    "tokens": [
+      "D'accord",
+      ",",
+      "voici",
+      "votre",
+      "numéro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "Certo, De acordo"
+      },
+      {
+        "id": 2,
+        "word": "voici",
+        "pinyin": null,
+        "meaning": "aqui está/aqui estão"
+      },
+      {
+        "id": 3,
+        "word": "votre",
+        "pinyin": null,
+        "meaning": "seu/sua (formal ou plural)"
+      },
+      {
+        "id": 4,
+        "word": "numéro",
+        "pinyin": null,
+        "meaning": "número"
+      }
+    ],
+    "id": "local-1772295561407-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Veuillez patienter un instant.",
+    "pinyin": null,
+    "translation": "Por favor, aguarde um instante.",
+    "tokens": [
+      "Veuillez",
+      "patienter",
+      "un",
+      "instant",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Veuillez",
+        "pinyin": null,
+        "meaning": "Por favor (forma educada de pedir)"
+      },
+      {
+        "id": 2,
+        "word": "patienter",
+        "pinyin": null,
+        "meaning": "esperar, aguardar"
+      },
+      {
+        "id": 3,
+        "word": "un instant",
+        "pinyin": null,
+        "meaning": "um instante, um momento"
+      }
+    ],
+    "id": "local-1772295561407-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Combien de temps devons-nous attendre ?",
+    "pinyin": null,
+    "translation": "Quanto tempo devemos esperar?",
+    "tokens": [
+      "Combien",
+      "de",
+      "temps",
+      "devons-nous",
+      "attendre",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Combien de temps",
+        "pinyin": null,
+        "meaning": "Quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "devons-nous",
+        "pinyin": null,
+        "meaning": "devemos nós (verbo 'devoir')"
+      },
+      {
+        "id": 3,
+        "word": "attendre",
+        "pinyin": null,
+        "meaning": "esperar, aguardar"
+      }
+    ],
+    "id": "local-1772295561407-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Ce n'est pas certain.",
+    "pinyin": null,
+    "translation": "Não é certo.",
+    "tokens": [
+      "Ce",
+      "n'est",
+      "pas",
+      "certain",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ce n'est pas",
+        "pinyin": null,
+        "meaning": "Não é"
+      },
+      {
+        "id": 2,
+        "word": "certain",
+        "pinyin": null,
+        "meaning": "certo"
+      }
+    ],
+    "id": "local-1772295561407-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Vous pouvez télécharger ce logiciel, puis aller vous promener.",
+    "pinyin": null,
+    "translation": "Vocês podem baixar este software, e depois ir passear.",
+    "tokens": [
+      "Vous",
+      "pouvez",
+      "télécharger",
+      "ce",
+      "logiciel",
+      ",",
+      "puis",
+      "aller",
+      "vous",
+      "promener",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vous pouvez",
+        "pinyin": null,
+        "meaning": "Vocês podem (verbo 'pouvoir')"
+      },
+      {
+        "id": 2,
+        "word": "télécharger",
+        "pinyin": null,
+        "meaning": "baixar, fazer download"
+      },
+      {
+        "id": 3,
+        "word": "logiciel",
+        "pinyin": null,
+        "meaning": "software"
+      },
+      {
+        "id": 4,
+        "word": "puis",
+        "pinyin": null,
+        "meaning": "depois, em seguida"
+      },
+      {
+        "id": 5,
+        "word": "aller vous promener",
+        "pinyin": null,
+        "meaning": "ir passear, ir dar uma volta"
+      }
+    ],
+    "id": "local-1772295561407-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Il vous indiquera l'état de la file d'attente.",
+    "pinyin": null,
+    "translation": "Ele indicará a vocês o status da fila de espera.",
+    "tokens": [
+      "Il",
+      "vous",
+      "indiquera",
+      "l'état",
+      "de",
+      "la",
+      "file",
+      "d'attente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il",
+        "pinyin": null,
+        "meaning": "Ele"
+      },
+      {
+        "id": 2,
+        "word": "indiquera",
+        "pinyin": null,
+        "meaning": "indicará (futuro de 'indiquer')"
+      },
+      {
+        "id": 3,
+        "word": "l'état",
+        "pinyin": null,
+        "meaning": "o estado, o status"
+      },
+      {
+        "id": 4,
+        "word": "file d'attente",
+        "pinyin": null,
+        "meaning": "fila de espera"
+      }
+    ],
+    "id": "local-1772295561407-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Oh !",
+    "pinyin": null,
+    "translation": "Oh!",
+    "tokens": [
+      "Oh",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": null,
+        "meaning": "Oh"
+      }
+    ],
+    "id": "local-1772295561407-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Tiens, qu'est-ce que c'est ?",
+    "pinyin": null,
+    "translation": "Olha, o que é isso?",
+    "tokens": [
+      "Tiens",
+      ",",
+      "qu'est-ce",
+      "que",
+      "c'est",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tiens",
+        "pinyin": null,
+        "meaning": "Olha (expressão para chamar a atenção)"
+      },
+      {
+        "id": 2,
+        "word": "qu'est-ce que c'est",
+        "pinyin": null,
+        "meaning": "o que é isso"
+      }
+    ],
+    "id": "local-1772295561407-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Le truc noir.",
+    "pinyin": null,
+    "translation": "A coisa preta.",
+    "tokens": [
+      "Le",
+      "truc",
+      "noir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "truc",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 2,
+        "word": "noir",
+        "pinyin": null,
+        "meaning": "preto/preta"
+      }
+    ],
+    "id": "local-1772295561407-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C'est un code QR.",
+    "pinyin": null,
+    "translation": "É um código QR.",
+    "tokens": [
+      "C'est",
+      "un",
+      "code",
+      "QR",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": null,
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "code QR",
+        "pinyin": null,
+        "meaning": "código QR"
+      }
+    ],
+    "id": "local-1772295561407-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Vous êtes tellement déconnectée.",
+    "pinyin": null,
+    "translation": "Você está tão desconectada.",
+    "tokens": [
+      "Vous",
+      "êtes",
+      "tellement",
+      "déconnectée",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vous êtes",
+        "pinyin": null,
+        "meaning": "Você está (verbo 'être')"
+      },
+      {
+        "id": 2,
+        "word": "tellement",
+        "pinyin": null,
+        "meaning": "tão, muito"
+      },
+      {
+        "id": 3,
+        "word": "déconnectée",
+        "pinyin": null,
+        "meaning": "desconectada"
+      }
+    ],
+    "id": "local-1772295561407-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Utilisez votre téléphone portable pour le scanner, et il vous redirigera automatiquement vers la page de téléchargement.",
+    "pinyin": null,
+    "translation": "Use seu telefone celular para escaneá-lo, e ele o redirecionará automaticamente para a página de download.",
+    "tokens": [
+      "Utilisez",
+      "votre",
+      "téléphone",
+      "portable",
+      "pour",
+      "le",
+      "scanner",
+      ",",
+      "et",
+      "il",
+      "vous",
+      "redirigera",
+      "automatiquement",
+      "vers",
+      "la",
+      "page",
+      "de",
+      "téléchargement",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Utilisez",
+        "pinyin": null,
+        "meaning": "Usem/Use (imperativo de 'utiliser')"
+      },
+      {
+        "id": 2,
+        "word": "téléphone portable",
+        "pinyin": null,
+        "meaning": "telefone celular"
+      },
+      {
+        "id": 3,
+        "word": "scanner",
+        "pinyin": null,
+        "meaning": "escanear, digitalizar"
+      },
+      {
+        "id": 4,
+        "word": "redirigera",
+        "pinyin": null,
+        "meaning": "redirecionará (futuro de 'rediriger')"
+      },
+      {
+        "id": 5,
+        "word": "automatiquement",
+        "pinyin": null,
+        "meaning": "automaticamente"
+      },
+      {
+        "id": 6,
+        "word": "page de téléchargement",
+        "pinyin": null,
+        "meaning": "página de download"
+      }
+    ],
+    "id": "local-1772295561407-13",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Oh, comme c'est avancé !",
+    "pinyin": null,
+    "translation": "Oh, como é avançado!",
+    "tokens": [
+      "Oh",
+      ",",
+      "comme",
+      "c'est",
+      "avancé",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "comme c'est",
+        "pinyin": null,
+        "meaning": "como é"
+      },
+      {
+        "id": 2,
+        "word": "avancé",
+        "pinyin": null,
+        "meaning": "avançado"
+      }
+    ],
+    "id": "local-1772295561407-14",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Les codes QR sont très utilisés !",
+    "pinyin": null,
+    "translation": "Os códigos QR são muito utilizados!",
+    "tokens": [
+      "Les",
+      "codes",
+      "QR",
+      "sont",
+      "très",
+      "utilisés",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "codes QR",
+        "pinyin": null,
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 2,
+        "word": "sont",
+        "pinyin": null,
+        "meaning": "são (verbo 'être')"
+      },
+      {
+        "id": 3,
+        "word": "très",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "utilisés",
+        "pinyin": null,
+        "meaning": "utilizados"
+      }
+    ],
+    "id": "local-1772295561407-15",
+    "language": "Francês"
+  },
+  {
+    "chinese": "La semaine dernière, je suis allé à un concert et je n'ai pas utilisé de billet.",
+    "pinyin": null,
+    "translation": "Na semana passada, fui a um show e não usei ingresso.",
+    "tokens": [
+      "La",
+      "semaine",
+      "dernière",
+      ",",
+      "je",
+      "suis",
+      "allé",
+      "à",
+      "un",
+      "concert",
+      "et",
+      "je",
+      "n'ai",
+      "pas",
+      "utilisé",
+      "de",
+      "billet",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La semaine dernière",
+        "pinyin": null,
+        "meaning": "A semana passada"
+      },
+      {
+        "id": 2,
+        "word": "je suis allé",
+        "pinyin": null,
+        "meaning": "eu fui"
+      },
+      {
+        "id": 3,
+        "word": "concert",
+        "pinyin": null,
+        "meaning": "concerto, show"
+      },
+      {
+        "id": 4,
+        "word": "je n'ai pas utilisé",
+        "pinyin": null,
+        "meaning": "eu não usei"
+      },
+      {
+        "id": 5,
+        "word": "billet",
+        "pinyin": null,
+        "meaning": "ingresso, bilhete"
+      }
+    ],
+    "id": "local-1772295561407-16",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Tout ce dont j'avais besoin, c'était d'un code QR.",
+    "pinyin": null,
+    "translation": "Tudo de que eu precisava, era um código QR.",
+    "tokens": [
+      "Tout",
+      "ce",
+      "dont",
+      "j'avais",
+      "besoin",
+      ",",
+      "c'était",
+      "d'un",
+      "code",
+      "QR",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tout ce dont",
+        "pinyin": null,
+        "meaning": "Tudo de que"
+      },
+      {
+        "id": 2,
+        "word": "j'avais besoin",
+        "pinyin": null,
+        "meaning": "eu precisava (ter necessidade de)"
+      },
+      {
+        "id": 3,
+        "word": "c'était",
+        "pinyin": null,
+        "meaning": "era"
+      },
+      {
+        "id": 4,
+        "word": "code QR",
+        "pinyin": null,
+        "meaning": "código QR"
+      }
+    ],
+    "id": "local-1772295561407-17",
+    "language": "Francês"
+  },
+  {
+    "chinese": "J'ai vu que beaucoup de magasins en ont tous.",
+    "pinyin": null,
+    "translation": "Eu vi que muitas lojas têm todos eles (códigos QR).",
+    "tokens": [
+      "J'ai",
+      "vu",
+      "que",
+      "beaucoup",
+      "de",
+      "magasins",
+      "en",
+      "ont",
+      "tous",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'ai vu",
+        "pinyin": null,
+        "meaning": "Eu vi"
+      },
+      {
+        "id": 2,
+        "word": "beaucoup de",
+        "pinyin": null,
+        "meaning": "muitos/muitas"
+      },
+      {
+        "id": 3,
+        "word": "magasins",
+        "pinyin": null,
+        "meaning": "lojas"
+      },
+      {
+        "id": 4,
+        "word": "en ont",
+        "pinyin": null,
+        "meaning": "têm deles/disso"
+      },
+      {
+        "id": 5,
+        "word": "tous",
+        "pinyin": null,
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1772295561407-18",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Donc si vous les scannez, obtiendrez-vous des informations sur leurs produits ?",
+    "pinyin": null,
+    "translation": "Então, se vocês os escanearem, obterão informações sobre seus produtos?",
+    "tokens": [
+      "Donc",
+      "si",
+      "vous",
+      "les",
+      "scannez",
+      ",",
+      "obtiendrez-vous",
+      "des",
+      "informations",
+      "sur",
+      "leurs",
+      "produits",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Donc",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "si",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 3,
+        "word": "scannez",
+        "pinyin": null,
+        "meaning": "escaneiam (verbo 'scanner')"
+      },
+      {
+        "id": 4,
+        "word": "obtiendrez-vous",
+        "pinyin": null,
+        "meaning": "obterão vocês (futuro de 'obtenir')"
+      },
+      {
+        "id": 5,
+        "word": "informations",
+        "pinyin": null,
+        "meaning": "informações"
+      },
+      {
+        "id": 6,
+        "word": "produits",
+        "pinyin": null,
+        "meaning": "produtos"
+      }
+    ],
+    "id": "local-1772295561407-19",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Oui.",
+    "pinyin": null,
+    "translation": "Sim.",
+    "tokens": [
+      "Oui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772295561407-20",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Beaucoup d'entreprises utilisent les codes QR pour la publicité.",
+    "pinyin": null,
+    "translation": "Muitas empresas usam os códigos QR para publicidade.",
+    "tokens": [
+      "Beaucoup",
+      "d'entreprises",
+      "utilisent",
+      "les",
+      "codes",
+      "QR",
+      "pour",
+      "la",
+      "publicité",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Beaucoup d'entreprises",
+        "pinyin": null,
+        "meaning": "Muitas empresas"
+      },
+      {
+        "id": 2,
+        "word": "utilisent",
+        "pinyin": null,
+        "meaning": "usam (verbo 'utiliser')"
+      },
+      {
+        "id": 3,
+        "word": "codes QR",
+        "pinyin": null,
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 4,
+        "word": "publicité",
+        "pinyin": null,
+        "meaning": "publicidade"
+      }
+    ],
+    "id": "local-1772295561407-21",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C'est vraiment pratique.",
+    "pinyin": null,
+    "translation": "É realmente prático.",
+    "tokens": [
+      "C'est",
+      "vraiment",
+      "pratique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": null,
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 3,
+        "word": "pratique",
+        "pinyin": null,
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1772295561407-22",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Tiens, il y a un code QR là-bas.",
+    "pinyin": null,
+    "translation": "Olha, tem um código QR lá.",
+    "tokens": [
+      "Tiens",
+      ",",
+      "il",
+      "y",
+      "a",
+      "un",
+      "code",
+      "QR",
+      "là-bas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tiens",
+        "pinyin": null,
+        "meaning": "Olha (expressão para chamar a atenção)"
+      },
+      {
+        "id": 2,
+        "word": "il y a",
+        "pinyin": null,
+        "meaning": "há, tem"
+      },
+      {
+        "id": 3,
+        "word": "code QR",
+        "pinyin": null,
+        "meaning": "código QR"
+      },
+      {
+        "id": 4,
+        "word": "là-bas",
+        "pinyin": null,
+        "meaning": "lá, ali"
+      }
+    ],
+    "id": "local-1772295561407-23",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je vais le scanner pour voir ce que c'est.",
+    "pinyin": null,
+    "translation": "Vou escaneá-lo para ver o que é.",
+    "tokens": [
+      "Je",
+      "vais",
+      "le",
+      "scanner",
+      "pour",
+      "voir",
+      "ce",
+      "que",
+      "c'est",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Je vais",
+        "pinyin": null,
+        "meaning": "Eu vou (futuro próximo)"
+      },
+      {
+        "id": 2,
+        "word": "scanner",
+        "pinyin": null,
+        "meaning": "escanear"
+      },
+      {
+        "id": 3,
+        "word": "pour voir",
+        "pinyin": null,
+        "meaning": "para ver"
+      },
+      {
+        "id": 4,
+        "word": "ce que c'est",
+        "pinyin": null,
+        "meaning": "o que é"
+      }
+    ],
+    "id": "local-1772295561407-24",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Ne scannez pas n'importe quoi.",
+    "pinyin": null,
+    "translation": "Não escaneiem qualquer coisa.",
+    "tokens": [
+      "Ne",
+      "scannez",
+      "pas",
+      "n'importe",
+      "quoi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ne ... pas",
+        "pinyin": null,
+        "meaning": "Não (negação)"
+      },
+      {
+        "id": 2,
+        "word": "scannez",
+        "pinyin": null,
+        "meaning": "escaneiem (imperativo de 'scanner')"
+      },
+      {
+        "id": 3,
+        "word": "n'importe quoi",
+        "pinyin": null,
+        "meaning": "qualquer coisa"
+      }
+    ],
+    "id": "local-1772295561407-25",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Certains codes QR pourraient contenir des virus.",
+    "pinyin": null,
+    "translation": "Alguns códigos QR poderiam conter vírus.",
+    "tokens": [
+      "Certains",
+      "codes",
+      "QR",
+      "pourraient",
+      "contenir",
+      "des",
+      "virus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Certains",
+        "pinyin": null,
+        "meaning": "Alguns"
+      },
+      {
+        "id": 2,
+        "word": "codes QR",
+        "pinyin": null,
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 3,
+        "word": "pourraient",
+        "pinyin": null,
+        "meaning": "poderiam (condicional de 'pouvoir')"
+      },
+      {
+        "id": 4,
+        "word": "contenir",
+        "pinyin": null,
+        "meaning": "conter"
+      },
+      {
+        "id": 5,
+        "word": "virus",
+        "pinyin": null,
+        "meaning": "vírus"
+      }
+    ],
+    "id": "local-1772295561407-26",
+    "language": "Francês"
+  }
+]

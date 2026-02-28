@@ -1,0 +1,606 @@
+[
+  {
+    "chinese": "A: A continuación, nos gustaría invitar a Wang Wei a dirigir unas palabras a todos. ¡Demos un aplauso!",
+    "pinyin": null,
+    "translation": "A: Em seguida, gostaríamos de convidar Wang Wei para dirigir algumas palavras a todos. Vamos dar uma salva de palmas!",
+    "tokens": [
+      "A:",
+      "A",
+      "continuación",
+      ",",
+      "nos",
+      "gustaría",
+      "invitar",
+      "a",
+      "Wang",
+      "Wei",
+      "a",
+      "dirigir",
+      "unas",
+      "palabras",
+      "a",
+      "todos",
+      ".",
+      "¡",
+      "Demos",
+      "un",
+      "aplauso",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "a continuación",
+        "pinyin": null,
+        "meaning": "em seguida"
+      },
+      {
+        "id": 2,
+        "word": "nos gustaría",
+        "pinyin": null,
+        "meaning": "gostaríamos"
+      },
+      {
+        "id": 3,
+        "word": "invitar",
+        "pinyin": null,
+        "meaning": "convidar"
+      },
+      {
+        "id": 4,
+        "word": "dirigir",
+        "pinyin": null,
+        "meaning": "dirigir, proferir"
+      },
+      {
+        "id": 5,
+        "word": "unas palabras",
+        "pinyin": null,
+        "meaning": "algumas palavras"
+      },
+      {
+        "id": 6,
+        "word": "todos",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 7,
+        "word": "demos",
+        "pinyin": null,
+        "meaning": "demos (subjuntivo de dar), vamos dar"
+      },
+      {
+        "id": 8,
+        "word": "aplauso",
+        "pinyin": null,
+        "meaning": "aplauso, salva de palmas"
+      }
+    ],
+    "id": "local-1772297770912-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Gracias! Primero, muchas gracias a todos por organizar esta fiesta para mí.",
+    "pinyin": null,
+    "translation": "B: Obrigado! Primeiro, muito obrigado a todos por organizarem esta festa para mim.",
+    "tokens": [
+      "B:",
+      "¡",
+      "Gracias",
+      "!",
+      "Primero",
+      ",",
+      "muchas",
+      "gracias",
+      "a",
+      "todos",
+      "por",
+      "organizar",
+      "esta",
+      "fiesta",
+      "para",
+      "mí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gracias",
+        "pinyin": null,
+        "meaning": "obrigado"
+      },
+      {
+        "id": 2,
+        "word": "primero",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 3,
+        "word": "muchas gracias",
+        "pinyin": null,
+        "meaning": "muito obrigado"
+      },
+      {
+        "id": 4,
+        "word": "organizar",
+        "pinyin": null,
+        "meaning": "organizar"
+      },
+      {
+        "id": 5,
+        "word": "fiesta",
+        "pinyin": null,
+        "meaning": "festa"
+      },
+      {
+        "id": 6,
+        "word": "para mí",
+        "pinyin": null,
+        "meaning": "para mim"
+      }
+    ],
+    "id": "local-1772297770912-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: He trabajado en esta empresa durante 10 años. En estos 10 años, he aprendido mucho. ¡Estoy muy agradecido a la empresa por darme una plataforma para aprender y crecer!",
+    "pinyin": null,
+    "translation": "B: Trabalhei nesta empresa durante 10 anos. Nestes 10 anos, aprendi muito. Sou muito grato à empresa por me dar uma plataforma para aprender e crescer!",
+    "tokens": [
+      "B:",
+      "He",
+      "trabajado",
+      "en",
+      "esta",
+      "empresa",
+      "durante",
+      "10",
+      "años",
+      ".",
+      "En",
+      "estos",
+      "10",
+      "años",
+      ",",
+      "he",
+      "aprendido",
+      "mucho",
+      ".",
+      "¡",
+      "Estoy",
+      "muy",
+      "agradecido",
+      "a",
+      "la",
+      "empresa",
+      "por",
+      "darme",
+      "una",
+      "plataforma",
+      "para",
+      "aprender",
+      "y",
+      "crecer",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "he trabajado",
+        "pinyin": null,
+        "meaning": "trabalhei"
+      },
+      {
+        "id": 2,
+        "word": "empresa",
+        "pinyin": null,
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "durante",
+        "pinyin": null,
+        "meaning": "durante"
+      },
+      {
+        "id": 4,
+        "word": "años",
+        "pinyin": null,
+        "meaning": "anos"
+      },
+      {
+        "id": 5,
+        "word": "he aprendido",
+        "pinyin": null,
+        "meaning": "aprendi"
+      },
+      {
+        "id": 6,
+        "word": "mucho",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 7,
+        "word": "estoy agradecido",
+        "pinyin": null,
+        "meaning": "sou grato"
+      },
+      {
+        "id": 8,
+        "word": "darme",
+        "pinyin": null,
+        "meaning": "me dar"
+      },
+      {
+        "id": 9,
+        "word": "plataforma",
+        "pinyin": null,
+        "meaning": "plataforma"
+      },
+      {
+        "id": 10,
+        "word": "aprender",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 11,
+        "word": "crecer",
+        "pinyin": null,
+        "meaning": "crescer"
+      }
+    ],
+    "id": "local-1772297770912-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Gracias a cada uno de los ejecutivos por guiarme!",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos executivos por me guiarem!",
+    "tokens": [
+      "B:",
+      "¡",
+      "Gracias",
+      "a",
+      "cada",
+      "uno",
+      "de",
+      "los",
+      "ejecutivos",
+      "por",
+      "guiarme",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gracias a",
+        "pinyin": null,
+        "meaning": "obrigado a"
+      },
+      {
+        "id": 2,
+        "word": "cada uno",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 3,
+        "word": "ejecutivos",
+        "pinyin": null,
+        "meaning": "executivos"
+      },
+      {
+        "id": 4,
+        "word": "guiarme",
+        "pinyin": null,
+        "meaning": "me guiar, guiar-me"
+      }
+    ],
+    "id": "local-1772297770912-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Gracias a cada uno de mis colegas por el apoyo y la atención que me han brindado!",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos meus colegas pelo apoio e atenção que me deram!",
+    "tokens": [
+      "B:",
+      "¡",
+      "Gracias",
+      "a",
+      "cada",
+      "uno",
+      "de",
+      "mis",
+      "colegas",
+      "por",
+      "el",
+      "apoyo",
+      "y",
+      "la",
+      "atención",
+      "que",
+      "me",
+      "han",
+      "brindado",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gracias a",
+        "pinyin": null,
+        "meaning": "obrigado a"
+      },
+      {
+        "id": 2,
+        "word": "cada uno",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 3,
+        "word": "colegas",
+        "pinyin": null,
+        "meaning": "colegas"
+      },
+      {
+        "id": 4,
+        "word": "apoyo",
+        "pinyin": null,
+        "meaning": "apoio"
+      },
+      {
+        "id": 5,
+        "word": "atención",
+        "pinyin": null,
+        "meaning": "atenção"
+      },
+      {
+        "id": 6,
+        "word": "han brindado",
+        "pinyin": null,
+        "meaning": "deram, ofereceram"
+      }
+    ],
+    "id": "local-1772297770912-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Me siento extremadamente honrado de haber tenido la oportunidad de trabajar con todos ustedes. ¡Recordaré el tiempo que pasé con todos cada día!",
+    "pinyin": null,
+    "translation": "B: Sinto-me extremamente honrado por ter tido a oportunidade de trabalhar com todos vocês. Recordarei o tempo que passei com todos a cada dia!",
+    "tokens": [
+      "B:",
+      "Me",
+      "siento",
+      "extremadamente",
+      "honrado",
+      "de",
+      "haber",
+      "tenido",
+      "la",
+      "oportunidad",
+      "de",
+      "trabajar",
+      "con",
+      "todos",
+      "ustedes",
+      ".",
+      "¡",
+      "Recordaré",
+      "el",
+      "tiempo",
+      "que",
+      "pasé",
+      "con",
+      "todos",
+      "cada",
+      "día",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "me siento",
+        "pinyin": null,
+        "meaning": "sinto-me"
+      },
+      {
+        "id": 2,
+        "word": "extremadamente",
+        "pinyin": null,
+        "meaning": "extremamente"
+      },
+      {
+        "id": 3,
+        "word": "honrado",
+        "pinyin": null,
+        "meaning": "honrado"
+      },
+      {
+        "id": 4,
+        "word": "haber tenido",
+        "pinyin": null,
+        "meaning": "ter tido"
+      },
+      {
+        "id": 5,
+        "word": "oportunidad",
+        "pinyin": null,
+        "meaning": "oportunidade"
+      },
+      {
+        "id": 6,
+        "word": "trabajar",
+        "pinyin": null,
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 7,
+        "word": "ustedes",
+        "pinyin": null,
+        "meaning": "vocês"
+      },
+      {
+        "id": 8,
+        "word": "recordaré",
+        "pinyin": null,
+        "meaning": "recordarei, lembrarei"
+      },
+      {
+        "id": 9,
+        "word": "tiempo",
+        "pinyin": null,
+        "meaning": "tempo"
+      },
+      {
+        "id": 10,
+        "word": "pasé",
+        "pinyin": null,
+        "meaning": "passei"
+      },
+      {
+        "id": 11,
+        "word": "cada día",
+        "pinyin": null,
+        "meaning": "a cada dia"
+      }
+    ],
+    "id": "local-1772297770912-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Finalmente, mi deseo de corazón para todos es que tengan salud, que su trabajo vaya bien y que sus familias sean felices.",
+    "pinyin": null,
+    "translation": "B: Finalmente, meu desejo de coração para todos é que tenham saúde, que o trabalho de vocês vá bem e que suas famílias sejam felizes.",
+    "tokens": [
+      "B:",
+      "Finalmente",
+      ",",
+      "mi",
+      "deseo",
+      "de",
+      "corazón",
+      "para",
+      "todos",
+      "es",
+      "que",
+      "tengan",
+      "salud",
+      ",",
+      "que",
+      "su",
+      "trabajo",
+      "vaya",
+      "bien",
+      "y",
+      "que",
+      "sus",
+      "familias",
+      "sean",
+      "felices",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "finalmente",
+        "pinyin": null,
+        "meaning": "finalmente"
+      },
+      {
+        "id": 2,
+        "word": "deseo",
+        "pinyin": null,
+        "meaning": "desejo"
+      },
+      {
+        "id": 3,
+        "word": "de corazón",
+        "pinyin": null,
+        "meaning": "de coração"
+      },
+      {
+        "id": 4,
+        "word": "tengan",
+        "pinyin": null,
+        "meaning": "tenham (subjuntivo de tener)"
+      },
+      {
+        "id": 5,
+        "word": "salud",
+        "pinyin": null,
+        "meaning": "saúde"
+      },
+      {
+        "id": 6,
+        "word": "trabajo",
+        "pinyin": null,
+        "meaning": "trabalho"
+      },
+      {
+        "id": 7,
+        "word": "vaya bien",
+        "pinyin": null,
+        "meaning": "vá bem (subjuntivo de ir)"
+      },
+      {
+        "id": 8,
+        "word": "familias",
+        "pinyin": null,
+        "meaning": "famílias"
+      },
+      {
+        "id": 9,
+        "word": "sean felices",
+        "pinyin": null,
+        "meaning": "sejam felizes (subjuntivo de ser)"
+      }
+    ],
+    "id": "local-1772297770912-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Vamos! ¡Salud a todos!",
+    "pinyin": null,
+    "translation": "B: Vamos! Saúde a todos!",
+    "tokens": [
+      "B:",
+      "¡",
+      "Vamos",
+      "!",
+      "¡",
+      "Salud",
+      "a",
+      "todos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vamos",
+        "pinyin": null,
+        "meaning": "vamos! (expressão de ânimo ou brinde)"
+      },
+      {
+        "id": 2,
+        "word": "salud",
+        "pinyin": null,
+        "meaning": "saúde! (brinde)"
+      },
+      {
+        "id": 3,
+        "word": "a todos",
+        "pinyin": null,
+        "meaning": "a todos"
+      }
+    ],
+    "id": "local-1772297770912-7",
+    "language": "Espanhol"
+  }
+]

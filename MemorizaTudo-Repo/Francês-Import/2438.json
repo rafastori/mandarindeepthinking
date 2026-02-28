@@ -1,0 +1,432 @@
+[
+  {
+    "chinese": "A: Xiao Chen, tu comptes acheter une voiture ?",
+    "pinyin": null,
+    "translation": "A: Xiao Chen, você pretende comprar um carro?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Chen,",
+      "tu",
+      "comptes",
+      "acheter",
+      "une",
+      "voiture",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "compter",
+        "pinyin": null,
+        "meaning": "pretender, tencionar"
+      },
+      {
+        "id": 2,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "voiture",
+        "pinyin": null,
+        "meaning": "carro"
+      }
+    ],
+    "id": "local-1772297591378-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui ! Xiao Sun, je comptais te demander ton avis.",
+    "pinyin": null,
+    "translation": "B: Sim! Xiao Sun, eu pretendia te pedir sua opinião.",
+    "tokens": [
+      "B:",
+      "Oui",
+      "!",
+      "Xiao",
+      "Sun,",
+      "je",
+      "comptais",
+      "te",
+      "demander",
+      "ton",
+      "avis",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "comptais",
+        "pinyin": null,
+        "meaning": "pretendia (passado de 'compter')"
+      },
+      {
+        "id": 3,
+        "word": "demander",
+        "pinyin": null,
+        "meaning": "pedir, perguntar"
+      },
+      {
+        "id": 4,
+        "word": "avis",
+        "pinyin": null,
+        "meaning": "opinião"
+      }
+    ],
+    "id": "local-1772297591378-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Quel est ton budget approximativement ?",
+    "pinyin": null,
+    "translation": "A: Qual é o seu orçamento aproximadamente?",
+    "tokens": [
+      "A:",
+      "Quel",
+      "est",
+      "ton",
+      "budget",
+      "approximativement",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quel",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 2,
+        "word": "budget",
+        "pinyin": null,
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "approximativement",
+        "pinyin": null,
+        "meaning": "aproximadamente"
+      }
+    ],
+    "id": "local-1772297591378-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Y compris l'immatriculation et les taxes, un peu plus de 200 000.",
+    "pinyin": null,
+    "translation": "B: Incluindo o registro e os impostos, um pouco mais de 200.000.",
+    "tokens": [
+      "B:",
+      "Y",
+      "compris",
+      "l'immatriculation",
+      "et",
+      "les",
+      "taxes,",
+      "un",
+      "peu",
+      "plus",
+      "de",
+      "200",
+      "000",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Y compris",
+        "pinyin": null,
+        "meaning": "Incluindo"
+      },
+      {
+        "id": 2,
+        "word": "immatriculation",
+        "pinyin": null,
+        "meaning": "emplacamento, registro de veículo"
+      },
+      {
+        "id": 3,
+        "word": "taxes",
+        "pinyin": null,
+        "meaning": "taxas, impostos"
+      },
+      {
+        "id": 4,
+        "word": "un peu plus de",
+        "pinyin": null,
+        "meaning": "um pouco mais de"
+      }
+    ],
+    "id": "local-1772297591378-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Envisages-tu une plaque de Shanghai ou une plaque extérieure ?",
+    "pinyin": null,
+    "translation": "A: Você considera uma placa de Xangai ou uma placa de fora?",
+    "tokens": [
+      "A:",
+      "Envisages-tu",
+      "une",
+      "plaque",
+      "de",
+      "Shanghai",
+      "ou",
+      "une",
+      "plaque",
+      "extérieure",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "envisager",
+        "pinyin": null,
+        "meaning": "considerar, prever"
+      },
+      {
+        "id": 2,
+        "word": "plaque",
+        "pinyin": null,
+        "meaning": "placa (de veículo)"
+      },
+      {
+        "id": 3,
+        "word": "extérieure",
+        "pinyin": null,
+        "meaning": "exterior, de fora"
+      }
+    ],
+    "id": "local-1772297591378-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Une plaque extérieure. Je compte l'utiliser le week-end. Je prends habituellement le bus de l'entreprise pour aller et revenir du travail. C'est très pratique.",
+    "pinyin": null,
+    "translation": "B: Uma placa exterior. Pretendo usá-lo no fim de semana. Eu geralmente pego o ônibus da empresa para ir e voltar do trabalho. É muito prático.",
+    "tokens": [
+      "B:",
+      "Une",
+      "plaque",
+      "extérieure",
+      ".",
+      "Je",
+      "compte",
+      "l'utiliser",
+      "le",
+      "week-end",
+      ".",
+      "Je",
+      "prends",
+      "habituellement",
+      "le",
+      "bus",
+      "de",
+      "l'entreprise",
+      "pour",
+      "aller",
+      "et",
+      "revenir",
+      "du",
+      "travail",
+      ".",
+      "C'est",
+      "très",
+      "pratique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "plaque extérieure",
+        "pinyin": null,
+        "meaning": "placa de fora (não da cidade)"
+      },
+      {
+        "id": 2,
+        "word": "compter l'utiliser",
+        "pinyin": null,
+        "meaning": "pretendo usá-lo"
+      },
+      {
+        "id": 3,
+        "word": "week-end",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "prendre",
+        "pinyin": null,
+        "meaning": "pegar"
+      },
+      {
+        "id": 5,
+        "word": "habituellement",
+        "pinyin": null,
+        "meaning": "habitualmente, geralmente"
+      },
+      {
+        "id": 6,
+        "word": "bus de l'entreprise",
+        "pinyin": null,
+        "meaning": "ônibus da empresa"
+      },
+      {
+        "id": 7,
+        "word": "aller et revenir",
+        "pinyin": null,
+        "meaning": "ir e voltar"
+      },
+      {
+        "id": 8,
+        "word": "travail",
+        "pinyin": null,
+        "meaning": "trabalho"
+      },
+      {
+        "id": 9,
+        "word": "pratique",
+        "pinyin": null,
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1772297591378-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Quel genre de voitures aimes-tu ?",
+    "pinyin": null,
+    "translation": "A: Que tipo de carros você gosta?",
+    "tokens": [
+      "A:",
+      "Quel",
+      "genre",
+      "de",
+      "voitures",
+      "aimes-tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quel genre de",
+        "pinyin": null,
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "voitures",
+        "pinyin": null,
+        "meaning": "carros"
+      },
+      {
+        "id": 3,
+        "word": "aimer",
+        "pinyin": null,
+        "meaning": "gostar, amar"
+      }
+    ],
+    "id": "local-1772297591378-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Des berlines. Elles ont le plus d'espace.",
+    "pinyin": null,
+    "translation": "B: Sedans. Elas têm o maior espaço.",
+    "tokens": [
+      "B:",
+      "Des",
+      "berlines",
+      ".",
+      "Elles",
+      "ont",
+      "le",
+      "plus",
+      "d'espace",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "berlines",
+        "pinyin": null,
+        "meaning": "sedans (tipo de carro)"
+      },
+      {
+        "id": 2,
+        "word": "espace",
+        "pinyin": null,
+        "meaning": "espaço"
+      },
+      {
+        "id": 3,
+        "word": "le plus de",
+        "pinyin": null,
+        "meaning": "o máximo de, o maior (comparativo)"
+      }
+    ],
+    "id": "local-1772297591378-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Jette un œil à la Buick Regal, la Toyota Camry et la Volkswagen Magotan. Ces voitures sont plutôt bonnes.",
+    "pinyin": null,
+    "translation": "A: Dê uma olhada no Buick Regal, no Toyota Camry e no Volkswagen Magotan. Esses carros são bastante bons.",
+    "tokens": [
+      "A:",
+      "Jette",
+      "un",
+      "œil",
+      "à",
+      "la",
+      "Buick",
+      "Regal,",
+      "la",
+      "Toyota",
+      "Camry",
+      "et",
+      "la",
+      "Volkswagen",
+      "Magotan",
+      ".",
+      "Ces",
+      "voitures",
+      "sont",
+      "plutôt",
+      "bonnes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Jeter un œil à",
+        "pinyin": null,
+        "meaning": "Dar uma olhada em (expressão idiomática)"
+      },
+      {
+        "id": 2,
+        "word": "plutôt",
+        "pinyin": null,
+        "meaning": "bastante, preferencialmente"
+      },
+      {
+        "id": 3,
+        "word": "bonnes",
+        "pinyin": null,
+        "meaning": "boas"
+      }
+    ],
+    "id": "local-1772297591378-8",
+    "language": "Francês"
+  }
+]

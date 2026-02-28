@@ -1,0 +1,784 @@
+[
+  {
+    "chinese": "A: 您好。请问有什么可以帮您的吗？",
+    "pinyin": "A: Nín hǎo. Qǐngwèn yǒu shénme kěyǐ bāng nín de ma?",
+    "translation": "A: Olá. Posso ajudar em alguma coisa?",
+    "tokens": [
+      "您好",
+      "。",
+      "请问",
+      "有",
+      "什么",
+      "可以",
+      "帮",
+      "您",
+      "的",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您好",
+        "pinyin": "nín hǎo",
+        "meaning": "Olá (formal)"
+      },
+      {
+        "id": 2,
+        "word": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "Com licença, posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 4,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 5,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 6,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772296325389-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 您好。我想剪卡。我买了个新手机，原来的SIM卡用不了了。",
+    "pinyin": "B: Nín hǎo. Wǒ xiǎng jiǎn kǎ. Wǒ mǎile gè xīn shǒujī, yuánlái de SIM kǎ yòng bùliǎo le.",
+    "translation": "B: Olá. Eu gostaria de cortar o chip. Comprei um celular novo, e o chip SIM antigo não funciona mais.",
+    "tokens": [
+      "您好",
+      "。",
+      "我",
+      "想",
+      "剪卡",
+      "。",
+      "我",
+      "买",
+      "了",
+      "个",
+      "新",
+      "手机",
+      "，",
+      "原来",
+      "的",
+      "SIM卡",
+      "用",
+      "不了",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您好",
+        "pinyin": "nín hǎo",
+        "meaning": "Olá (formal)"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar"
+      },
+      {
+        "id": 4,
+        "word": "剪卡",
+        "pinyin": "jiǎn kǎ",
+        "meaning": "cortar o chip (SIM card)"
+      },
+      {
+        "id": 5,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "新",
+        "pinyin": "xīn",
+        "meaning": "novo"
+      },
+      {
+        "id": 7,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 8,
+        "word": "原来",
+        "pinyin": "yuánlái",
+        "meaning": "original, anterior"
+      },
+      {
+        "id": 9,
+        "word": "SIM卡",
+        "pinyin": "SIM kǎ",
+        "meaning": "chip SIM"
+      },
+      {
+        "id": 10,
+        "word": "用不了",
+        "pinyin": "yòng bùliǎo",
+        "meaning": "não pode usar, não funciona"
+      }
+    ],
+    "id": "local-1772296325389-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 您要剪小卡是吗？好的。",
+    "pinyin": "A: Nín yào jiǎn xiǎo kǎ shì ma? Hǎo de.",
+    "translation": "A: O senhor quer cortar um chip pequeno, certo? Ok.",
+    "tokens": [
+      "您",
+      "要",
+      "剪",
+      "小卡",
+      "是",
+      "吗",
+      "？",
+      "好",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 2,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer, precisar"
+      },
+      {
+        "id": 3,
+        "word": "剪",
+        "pinyin": "jiǎn",
+        "meaning": "cortar"
+      },
+      {
+        "id": 4,
+        "word": "小卡",
+        "pinyin": "xiǎo kǎ",
+        "meaning": "chip pequeno (mini SIM, micro SIM)"
+      },
+      {
+        "id": 5,
+        "word": "是吗",
+        "pinyin": "shì ma",
+        "meaning": "certo? (partícula interrogativa para confirmar)"
+      },
+      {
+        "id": 6,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      }
+    ],
+    "id": "local-1772296325389-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 需要收费吗？",
+    "pinyin": "B: Xūyào shōufèi ma?",
+    "translation": "B: Precisa pagar alguma taxa?",
+    "tokens": [
+      "需要",
+      "收费",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "收费",
+        "pinyin": "shōufèi",
+        "meaning": "cobrar taxa, tarifa"
+      },
+      {
+        "id": 3,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772296325389-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不用。剪卡是免费的。好了。",
+    "pinyin": "A: Bùyòng. Jiǎn kǎ shì miǎnfèi de. Hǎole.",
+    "translation": "A: Não precisa. Cortar o chip é de graça. Pronto.",
+    "tokens": [
+      "不用",
+      "。",
+      "剪卡",
+      "是",
+      "免费",
+      "的",
+      "。",
+      "好",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不用",
+        "pinyin": "bùyòng",
+        "meaning": "não precisa"
+      },
+      {
+        "id": 2,
+        "word": "剪卡",
+        "pinyin": "jiǎn kǎ",
+        "meaning": "cortar o chip"
+      },
+      {
+        "id": 3,
+        "word": "免费",
+        "pinyin": "miǎnfèi",
+        "meaning": "grátis, gratuito"
+      },
+      {
+        "id": 4,
+        "word": "好了",
+        "pinyin": "hǎo le",
+        "meaning": "pronto, ok (indicando conclusão)"
+      }
+    ],
+    "id": "local-1772296325389-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 谢谢。咦？卡怎么放不进去？能帮我看看吗？",
+    "pinyin": "B: Xièxie. Yí? Kǎ zěnme fàng bù jìnqù? Néng bāng wǒ kànkan ma?",
+    "translation": "B: Obrigado. Ei? Como o chip não entra? Você pode dar uma olhada para mim?",
+    "tokens": [
+      "谢谢",
+      "。",
+      "咦",
+      "？",
+      "卡",
+      "怎么",
+      "放",
+      "不",
+      "进去",
+      "？",
+      "能",
+      "帮",
+      "我",
+      "看看",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 2,
+        "word": "咦",
+        "pinyin": "yí",
+        "meaning": "interjeição de surpresa, 'ei?'"
+      },
+      {
+        "id": 3,
+        "word": "卡",
+        "pinyin": "kǎ",
+        "meaning": "cartão, chip"
+      },
+      {
+        "id": 4,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como, por que (indicando surpresa ou problema)"
+      },
+      {
+        "id": 5,
+        "word": "放不进去",
+        "pinyin": "fàng bù jìnqù",
+        "meaning": "não consegue colocar para dentro"
+      },
+      {
+        "id": 6,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 7,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 8,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 9,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772296325389-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 您的手机是iPhone 5，对吗？",
+    "pinyin": "A: Nín de shǒujī shì iPhone 5, duì ma?",
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "您",
+      "的",
+      "手机",
+      "是",
+      "iPhone 5",
+      "，",
+      "对",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 2,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser"
+      },
+      {
+        "id": 4,
+        "word": "iPhone 5",
+        "pinyin": "iPhone wǔ",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 5,
+        "word": "对吗",
+        "pinyin": "duì ma",
+        "meaning": "certo?"
+      }
+    ],
+    "id": "local-1772296325389-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是的。",
+    "pinyin": "B: Shì de.",
+    "translation": "B: Sim.",
+    "tokens": [
+      "是",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是的",
+        "pinyin": "shì de",
+        "meaning": "sim, é isso"
+      }
+    ],
+    "id": "local-1772296325389-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: iPhone 5 用不了小卡的。只有iPhone 4 才能用小卡。",
+    "pinyin": "A: iPhone 5 yòng bùliǎo xiǎo kǎ de. Zhǐyǒu iPhone 4 cái néng yòng xiǎo kǎ.",
+    "translation": "A: O iPhone 5 não usa o chip pequeno. Somente o iPhone 4 pode usar o chip pequeno.",
+    "tokens": [
+      "iPhone 5",
+      "用",
+      "不了",
+      "小卡",
+      "的",
+      "。",
+      "只有",
+      "iPhone 4",
+      "才",
+      "能",
+      "用",
+      "小卡",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iPhone 5",
+        "pinyin": "iPhone wǔ",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 2,
+        "word": "用不了",
+        "pinyin": "yòng bùliǎo",
+        "meaning": "não pode usar, não funciona"
+      },
+      {
+        "id": 3,
+        "word": "小卡",
+        "pinyin": "xiǎo kǎ",
+        "meaning": "chip pequeno (mini SIM, micro SIM)"
+      },
+      {
+        "id": 4,
+        "word": "只有",
+        "pinyin": "zhǐyǒu",
+        "meaning": "somente, apenas"
+      },
+      {
+        "id": 5,
+        "word": "iPhone 4",
+        "pinyin": "iPhone sì",
+        "meaning": "iPhone 4"
+      },
+      {
+        "id": 6,
+        "word": "才能",
+        "pinyin": "cái néng",
+        "meaning": "somente então consegue"
+      }
+    ],
+    "id": "local-1772296325389-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那怎么办？",
+    "pinyin": "B: Nà zěnme bàn?",
+    "translation": "B: Então o que faço?",
+    "tokens": [
+      "那",
+      "怎么",
+      "办",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, aquele"
+      },
+      {
+        "id": 2,
+        "word": "怎么办",
+        "pinyin": "zěnme bàn",
+        "meaning": "o que fazer?"
+      }
+    ],
+    "id": "local-1772296325389-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 没问题。您可以换成nano SIM卡。这个比小卡更小，是iPhone 5专用的。",
+    "pinyin": "A: Méi wèntí. Nín kěyǐ huàn chéng nano SIM kǎ. Zhège bǐ xiǎo kǎ gèng xiǎo, shì iPhone 5 zhuānyòng de.",
+    "translation": "A: Sem problemas. O senhor pode trocar para um chip nano SIM. Este é ainda menor que o chip pequeno, é exclusivo para iPhone 5.",
+    "tokens": [
+      "没",
+      "问题",
+      "。",
+      "您",
+      "可以",
+      "换成",
+      "nano SIM卡",
+      "。",
+      "这个",
+      "比",
+      "小卡",
+      "更",
+      "小",
+      "，",
+      "是",
+      "iPhone 5",
+      "专用",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没问题",
+        "pinyin": "méi wèntí",
+        "meaning": "sem problema"
+      },
+      {
+        "id": 2,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 3,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 4,
+        "word": "换成",
+        "pinyin": "huànchéng",
+        "meaning": "trocar para"
+      },
+      {
+        "id": 5,
+        "word": "nano SIM卡",
+        "pinyin": "nano SIM kǎ",
+        "meaning": "chip nano SIM"
+      },
+      {
+        "id": 6,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este"
+      },
+      {
+        "id": 7,
+        "word": "比",
+        "pinyin": "bǐ",
+        "meaning": "comparar com"
+      },
+      {
+        "id": 8,
+        "word": "小卡",
+        "pinyin": "xiǎo kǎ",
+        "meaning": "chip pequeno"
+      },
+      {
+        "id": 9,
+        "word": "更",
+        "pinyin": "gèng",
+        "meaning": "ainda mais"
+      },
+      {
+        "id": 10,
+        "word": "小",
+        "pinyin": "xiǎo",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 11,
+        "word": "iPhone 5",
+        "pinyin": "iPhone wǔ",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 12,
+        "word": "专用",
+        "pinyin": "zhuānyòng",
+        "meaning": "exclusivo, especial para"
+      }
+    ],
+    "id": "local-1772296325389-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这个需要收费吗？",
+    "pinyin": "B: Zhège xūyào shōufèi ma?",
+    "translation": "B: Este precisa pagar alguma taxa?",
+    "tokens": [
+      "这个",
+      "需要",
+      "收费",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este"
+      },
+      {
+        "id": 2,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "收费",
+        "pinyin": "shōufèi",
+        "meaning": "cobrar taxa, tarifa"
+      },
+      {
+        "id": 4,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772296325389-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 第一次是免费的。如果以后您需要补卡，需要交20块钱的手续费。",
+    "pinyin": "A: Dì yī cì shì miǎnfèi de. Rúguǒ yǐhòu nín xūyào bǔ kǎ, xūyào jiāo èrshí kuài qián de shǒuxùfèi.",
+    "translation": "A: A primeira vez é de graça. Se depois o senhor precisar de uma substituição do chip, terá que pagar uma taxa de serviço de 20 yuans.",
+    "tokens": [
+      "第一",
+      "次",
+      "是",
+      "免费",
+      "的",
+      "。",
+      "如果",
+      "以后",
+      "您",
+      "需要",
+      "补卡",
+      "，",
+      "需要",
+      "交",
+      "20",
+      "块钱",
+      "的",
+      "手续费",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "第一次",
+        "pinyin": "dì yī cì",
+        "meaning": "a primeira vez"
+      },
+      {
+        "id": 2,
+        "word": "免费",
+        "pinyin": "miǎnfèi",
+        "meaning": "grátis, gratuito"
+      },
+      {
+        "id": 3,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 4,
+        "word": "以后",
+        "pinyin": "yǐhòu",
+        "meaning": "depois, no futuro"
+      },
+      {
+        "id": 5,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 6,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 7,
+        "word": "补卡",
+        "pinyin": "bǔ kǎ",
+        "meaning": "substituir o chip (repor um chip)"
+      },
+      {
+        "id": 8,
+        "word": "交",
+        "pinyin": "jiāo",
+        "meaning": "pagar"
+      },
+      {
+        "id": 9,
+        "word": "20块钱",
+        "pinyin": "èrshí kuài qián",
+        "meaning": "20 yuans (colloquial)"
+      },
+      {
+        "id": 10,
+        "word": "手续费",
+        "pinyin": "shǒuxùfèi",
+        "meaning": "taxa de serviço, taxa administrativa"
+      }
+    ],
+    "id": "local-1772296325389-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的。谢谢。",
+    "pinyin": "B: Hǎo de. Xièxie.",
+    "translation": "B: Ok. Obrigado.",
+    "tokens": [
+      "好",
+      "的",
+      "。",
+      "谢谢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772296325389-13",
+    "language": "Chinês"
+  }
+]

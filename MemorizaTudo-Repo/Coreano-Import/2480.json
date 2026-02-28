@@ -1,0 +1,741 @@
+[
+  {
+    "chinese": "A: 어디가 아프세요?",
+    "pinyin": "",
+    "translation": "A: Onde você está sentindo dor?",
+    "tokens": [
+      "어디가",
+      "아프세요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어디",
+        "pinyin": "",
+        "meaning": "onde"
+      },
+      {
+        "id": 2,
+        "word": "아프다",
+        "pinyin": "",
+        "meaning": "estar doente, doer"
+      }
+    ],
+    "id": "local-1772300904382-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 요즘 잠도 못 자고 쉽게 피로해져서 진료를 받고 싶어요.",
+    "pinyin": "",
+    "translation": "B: Ultimamente não consigo dormir e fico facilmente cansado, então gostaria de receber uma consulta médica.",
+    "tokens": [
+      "요즘",
+      "잠도",
+      "못",
+      "자고",
+      "쉽게",
+      "피로해져서",
+      "진료를",
+      "받고",
+      "싶어요."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "요즘",
+        "pinyin": "",
+        "meaning": "ultimamente, estes dias"
+      },
+      {
+        "id": 4,
+        "word": "잠을 자다",
+        "pinyin": "",
+        "meaning": "dormir"
+      },
+      {
+        "id": 5,
+        "word": "못",
+        "pinyin": "",
+        "meaning": "não conseguir (prefixo de negação)"
+      },
+      {
+        "id": 6,
+        "word": "쉽다",
+        "pinyin": "",
+        "meaning": "ser fácil"
+      },
+      {
+        "id": 7,
+        "word": "피로하다",
+        "pinyin": "",
+        "meaning": "estar cansado, fatigado"
+      },
+      {
+        "id": 8,
+        "word": "진료",
+        "pinyin": "",
+        "meaning": "consulta médica, tratamento"
+      },
+      {
+        "id": 9,
+        "word": "받다",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 10,
+        "word": "싶다",
+        "pinyin": "",
+        "meaning": "querer"
+      }
+    ],
+    "id": "local-1772300904382-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 손을 내밀어 보세요. 맥박을 좀 보겠습니다. 혀를 내밀어 보세요.",
+    "pinyin": "",
+    "translation": "A: Estenda sua mão, por favor. Vou verificar seu pulso. Estenda sua língua, por favor.",
+    "tokens": [
+      "손을",
+      "내밀어",
+      "보세요.",
+      "맥박을",
+      "좀",
+      "보겠습니다.",
+      "혀를",
+      "내밀어",
+      "보세요."
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "손",
+        "pinyin": "",
+        "meaning": "mão"
+      },
+      {
+        "id": 12,
+        "word": "내밀다",
+        "pinyin": "",
+        "meaning": "estender, mostrar"
+      },
+      {
+        "id": 13,
+        "word": "~아/어 보다",
+        "pinyin": "",
+        "meaning": "tentar fazer (expressão de tentativa)"
+      },
+      {
+        "id": 14,
+        "word": "맥박",
+        "pinyin": "",
+        "meaning": "pulso"
+      },
+      {
+        "id": 15,
+        "word": "좀",
+        "pinyin": "",
+        "meaning": "um pouco, por favor (partícula para suavizar)"
+      },
+      {
+        "id": 16,
+        "word": "보다",
+        "pinyin": "",
+        "meaning": "ver, olhar, verificar"
+      },
+      {
+        "id": 17,
+        "word": "혀",
+        "pinyin": "",
+        "meaning": "língua"
+      }
+    ],
+    "id": "local-1772300904382-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 의사 선생님, 별일 없겠죠?",
+    "pinyin": "",
+    "translation": "B: Doutor, não há nada de grave, certo?",
+    "tokens": [
+      "의사",
+      "선생님,",
+      "별일",
+      "없겠죠?"
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 19,
+        "word": "선생님",
+        "pinyin": "",
+        "meaning": "professor, senhor/senhora (tratamento honorífico)"
+      },
+      {
+        "id": 20,
+        "word": "별일",
+        "pinyin": "",
+        "meaning": "algo especial, algo incomum/grave"
+      },
+      {
+        "id": 21,
+        "word": "없다",
+        "pinyin": "",
+        "meaning": "não ter, não existir"
+      }
+    ],
+    "id": "local-1772300904382-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 큰 문제는 없어요. 기가 좀 허하시네요. 약을 처방해 드리겠습니다.",
+    "pinyin": "",
+    "translation": "A: Não há nenhum grande problema. Sua energia (qi) está um pouco fraca. Vou prescrever um remédio.",
+    "tokens": [
+      "큰",
+      "문제는",
+      "없어요.",
+      "기가",
+      "좀",
+      "허하시네요.",
+      "약을",
+      "처방해",
+      "드리겠습니다."
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "크다",
+        "pinyin": "",
+        "meaning": "ser grande"
+      },
+      {
+        "id": 23,
+        "word": "문제",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 24,
+        "word": "기 (氣)",
+        "pinyin": "",
+        "meaning": "energia vital, qi"
+      },
+      {
+        "id": 25,
+        "word": "허하다",
+        "pinyin": "",
+        "meaning": "estar fraco, deficiente"
+      },
+      {
+        "id": 26,
+        "word": "약",
+        "pinyin": "",
+        "meaning": "remédio"
+      },
+      {
+        "id": 27,
+        "word": "처방하다",
+        "pinyin": "",
+        "meaning": "prescrever (remédio)"
+      },
+      {
+        "id": 28,
+        "word": "드리다",
+        "pinyin": "",
+        "meaning": "dar (honorífico)"
+      }
+    ],
+    "id": "local-1772300904382-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 약은 어떻게 달여야 하나요?",
+    "pinyin": "",
+    "translation": "B: Como devo preparar o remédio (decoctá-lo)?",
+    "tokens": [
+      "약은",
+      "어떻게",
+      "달여야",
+      "하나요?"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 30,
+        "word": "달이다",
+        "pinyin": "",
+        "meaning": "decoctar, ferver (ervas medicinais)"
+      },
+      {
+        "id": 31,
+        "word": "~아야/어야 하다",
+        "pinyin": "",
+        "meaning": "deve-se, ter que"
+      }
+    ],
+    "id": "local-1772300904382-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 두 번 달여서 달인 물을 섞은 다음, 두 번에 나누어 드세요. 아침에 한 번, 저녁에 한 번이요.",
+    "pinyin": "",
+    "translation": "A: Decocte duas vezes, depois misture as águas decoctadas e divida em duas porções para beber. Uma vez pela manhã, uma vez à noite.",
+    "tokens": [
+      "두",
+      "번",
+      "달여서",
+      "달인",
+      "물을",
+      "섞은",
+      "다음,",
+      "두",
+      "번에",
+      "나누어",
+      "드세요.",
+      "아침에",
+      "한",
+      "번,",
+      "저녁에",
+      "한",
+      "번이요."
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "두",
+        "pinyin": "",
+        "meaning": "dois"
+      },
+      {
+        "id": 33,
+        "word": "번",
+        "pinyin": "",
+        "meaning": "vez, ocasião"
+      },
+      {
+        "id": 34,
+        "word": "물",
+        "pinyin": "",
+        "meaning": "água"
+      },
+      {
+        "id": 35,
+        "word": "섞다",
+        "pinyin": "",
+        "meaning": "misturar"
+      },
+      {
+        "id": 36,
+        "word": "다음",
+        "pinyin": "",
+        "meaning": "próximo, depois"
+      },
+      {
+        "id": 37,
+        "word": "나누다",
+        "pinyin": "",
+        "meaning": "dividir"
+      },
+      {
+        "id": 38,
+        "word": "드시다",
+        "pinyin": "",
+        "meaning": "comer/beber (honorífico)"
+      },
+      {
+        "id": 39,
+        "word": "아침",
+        "pinyin": "",
+        "meaning": "manhã"
+      },
+      {
+        "id": 40,
+        "word": "한",
+        "pinyin": "",
+        "meaning": "um"
+      },
+      {
+        "id": 41,
+        "word": "저녁",
+        "pinyin": "",
+        "meaning": "noite, вечер"
+      }
+    ],
+    "id": "local-1772300904382-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 매일 아침에 일어나서 약을 달여야 한다는 말씀이시죠?",
+    "pinyin": "",
+    "translation": "B: Então, o senhor está dizendo que devo preparar o remédio todas as manhãs ao acordar, certo?",
+    "tokens": [
+      "그럼",
+      "매일",
+      "아침에",
+      "일어나서",
+      "약을",
+      "달여야",
+      "한다는",
+      "말씀이시죠?"
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 43,
+        "word": "매일",
+        "pinyin": "",
+        "meaning": "todo dia"
+      },
+      {
+        "id": 44,
+        "word": "일어나다",
+        "pinyin": "",
+        "meaning": "levantar, acordar"
+      },
+      {
+        "id": 45,
+        "word": "말씀",
+        "pinyin": "",
+        "meaning": "fala, palavra (honorífico de 말)"
+      }
+    ],
+    "id": "local-1772300904382-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 번거로우시면 저희가 달여 드릴 수도 있어요.",
+    "pinyin": "",
+    "translation": "A: Se for incômodo, nós podemos prepará-lo (decoctá-lo) para você.",
+    "tokens": [
+      "번거로우시면",
+      "저희가",
+      "달여",
+      "드릴",
+      "수도",
+      "있어요."
+    ],
+    "keywords": [
+      {
+        "id": 46,
+        "word": "번거롭다",
+        "pinyin": "",
+        "meaning": "ser problemático, inconveniente"
+      },
+      {
+        "id": 47,
+        "word": "저희",
+        "pinyin": "",
+        "meaning": "nós (humilde)"
+      },
+      {
+        "id": 48,
+        "word": "~ㄹ/을 수 있다",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772300904382-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 병원에서 달여 준다는 말인가요?",
+    "pinyin": "",
+    "translation": "B: O senhor está dizendo que o hospital irá prepará-lo (decoctá-lo)?",
+    "tokens": [
+      "병원에서",
+      "달여",
+      "준다는",
+      "말인가요?"
+    ],
+    "keywords": [
+      {
+        "id": 49,
+        "word": "병원",
+        "pinyin": "",
+        "meaning": "hospital"
+      },
+      {
+        "id": 50,
+        "word": "주다",
+        "pinyin": "",
+        "meaning": "dar"
+      }
+    ],
+    "id": "local-1772300904382-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네. 약을 달이는 비용만 조금 내시면 병원에서 달여서 진공 포장해 드립니다. 드실 때 데워 드시면 더 드시기 편할 거예요.",
+    "pinyin": "",
+    "translation": "A: Sim. Se pagar apenas uma pequena taxa pelo preparo do remédio, o hospital o preparará e o embalará a vácuo para você. Será mais conveniente beber se aquecer na hora de tomar.",
+    "tokens": [
+      "네.",
+      "약을",
+      "달이는",
+      "비용만",
+      "조금",
+      "내시면",
+      "병원에서",
+      "달여서",
+      "진공",
+      "포장해",
+      "드립니다.",
+      "드실",
+      "때",
+      "데워",
+      "드시면",
+      "더",
+      "드시기",
+      "편할",
+      "거예요."
+    ],
+    "keywords": [
+      {
+        "id": 51,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 52,
+        "word": "비용",
+        "pinyin": "",
+        "meaning": "custo, despesa"
+      },
+      {
+        "id": 53,
+        "word": "조금",
+        "pinyin": "",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 54,
+        "word": "내다",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 55,
+        "word": "진공",
+        "pinyin": "",
+        "meaning": "vácuo"
+      },
+      {
+        "id": 56,
+        "word": "포장하다",
+        "pinyin": "",
+        "meaning": "embalar, empacotar"
+      },
+      {
+        "id": 57,
+        "word": "때",
+        "pinyin": "",
+        "meaning": "tempo, quando"
+      },
+      {
+        "id": 58,
+        "word": "데우다",
+        "pinyin": "",
+        "meaning": "aquecer"
+      },
+      {
+        "id": 59,
+        "word": "더",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 60,
+        "word": "편하다",
+        "pinyin": "",
+        "meaning": "ser confortável, conveniente"
+      }
+    ],
+    "id": "local-1772300904382-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 달여 주세요. 오늘 받을 수 있을까요?",
+    "pinyin": "",
+    "translation": "B: Então, por favor, preparem para mim. Poderia pegar hoje?",
+    "tokens": [
+      "그럼",
+      "달여",
+      "주세요.",
+      "오늘",
+      "받을",
+      "수",
+      "있을까요?"
+    ],
+    "keywords": [
+      {
+        "id": 61,
+        "word": "오늘",
+        "pinyin": "",
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772300904382-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니요, 그렇게는 안 돼요. 달이는 데 시간이 걸려요. 가장 빨리 받아도 내일이 될 거예요. 우선 가서 수납하시고, 약재 달이는 창구로 가서 접수하세요.",
+    "pinyin": "",
+    "translation": "A: Não, não é possível assim. Leva tempo para preparar. Mesmo que receba o mais rápido possível, será amanhã. Primeiro, vá e pague na recepção, e então vá ao balcão de preparo de ervas e faça o registro.",
+    "tokens": [
+      "아니요,",
+      "그렇게는",
+      "안",
+      "돼요.",
+      "달이는",
+      "데",
+      "시간이",
+      "걸려요.",
+      "가장",
+      "빨리",
+      "받아도",
+      "내일이",
+      "될",
+      "거예요.",
+      "우선",
+      "가서",
+      "수납하시고,",
+      "약재",
+      "달이는",
+      "창구로",
+      "가서",
+      "접수하세요."
+    ],
+    "keywords": [
+      {
+        "id": 62,
+        "word": "아니요",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 63,
+        "word": "그렇다",
+        "pinyin": "",
+        "meaning": "ser assim"
+      },
+      {
+        "id": 64,
+        "word": "안 되다",
+        "pinyin": "",
+        "meaning": "não ser possível/permitido"
+      },
+      {
+        "id": 65,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 66,
+        "word": "걸리다",
+        "pinyin": "",
+        "meaning": "levar (tempo)"
+      },
+      {
+        "id": 67,
+        "word": "가장",
+        "pinyin": "",
+        "meaning": "o mais"
+      },
+      {
+        "id": 68,
+        "word": "빠르다",
+        "pinyin": "",
+        "meaning": "ser rápido"
+      },
+      {
+        "id": 69,
+        "word": "내일",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 70,
+        "word": "되다",
+        "pinyin": "",
+        "meaning": "tornar-se, ser"
+      },
+      {
+        "id": 71,
+        "word": "우선",
+        "pinyin": "",
+        "meaning": "primeiro, antes de mais nada"
+      },
+      {
+        "id": 72,
+        "word": "가다",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 73,
+        "word": "수납하다",
+        "pinyin": "",
+        "meaning": "pagar (em um balcão)"
+      },
+      {
+        "id": 74,
+        "word": "약재",
+        "pinyin": "",
+        "meaning": "ingredientes medicinais, ervas medicinais"
+      },
+      {
+        "id": 75,
+        "word": "창구",
+        "pinyin": "",
+        "meaning": "balcão, guichê"
+      },
+      {
+        "id": 76,
+        "word": "접수하다",
+        "pinyin": "",
+        "meaning": "registrar, fazer a inscrição"
+      }
+    ],
+    "id": "local-1772300904382-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다, 의사 선생님.",
+    "pinyin": "",
+    "translation": "B: Entendido, doutor.",
+    "tokens": [
+      "알겠습니다,",
+      "의사",
+      "선생님."
+    ],
+    "keywords": [
+      {
+        "id": 77,
+        "word": "알다",
+        "pinyin": "",
+        "meaning": "saber, entender"
+      }
+    ],
+    "id": "local-1772300904382-13",
+    "language": "Coreano"
+  }
+]

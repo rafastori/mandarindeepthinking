@@ -1,0 +1,578 @@
+[
+  {
+    "chinese": "A: 릴리, 다음 주 일요일에 시간 괜찮아? 우리 집에 와서 케이크 만드는 법 좀 가르쳐 줄 수 있어?",
+    "pinyin": null,
+    "translation": "A: Lily, você está livre no próximo domingo? Você pode vir à minha casa e me ensinar como fazer bolo?",
+    "tokens": [
+      "릴리",
+      ",",
+      "다음",
+      "주",
+      "일요일",
+      "에",
+      "시간",
+      "괜찮아",
+      "?",
+      "우리",
+      "집",
+      "에",
+      "와서",
+      "케이크",
+      "만드는",
+      "법",
+      "좀",
+      "가르쳐",
+      "줄",
+      "수",
+      "있어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "릴리",
+        "pinyin": "Rilli",
+        "meaning": "Lily (nome)"
+      },
+      {
+        "id": 2,
+        "word": "다음 주",
+        "pinyin": "daeum ju",
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 3,
+        "word": "일요일",
+        "pinyin": "iryoil",
+        "meaning": "domingo"
+      },
+      {
+        "id": 4,
+        "word": "시간",
+        "pinyin": "sigan",
+        "meaning": "tempo, hora"
+      },
+      {
+        "id": 5,
+        "word": "괜찮아",
+        "pinyin": "gwaenchana",
+        "meaning": "estar bem, tudo bem (informal)"
+      },
+      {
+        "id": 6,
+        "word": "우리 집",
+        "pinyin": "uri jip",
+        "meaning": "minha casa (nossa casa)"
+      },
+      {
+        "id": 7,
+        "word": "와서",
+        "pinyin": "waseo",
+        "meaning": "vir e (fazer algo)"
+      },
+      {
+        "id": 8,
+        "word": "케이크",
+        "pinyin": "keikeu",
+        "meaning": "bolo (cake)"
+      },
+      {
+        "id": 9,
+        "word": "만드는 법",
+        "pinyin": "mandeuneun beop",
+        "meaning": "método de fazer, como fazer"
+      },
+      {
+        "id": 10,
+        "word": "가르쳐 줄 수 있어?",
+        "pinyin": "gareuchyeo jul su isseo?",
+        "meaning": "pode me ensinar?"
+      }
+    ],
+    "id": "local-1772296714175-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응. 갑자기 왜 케이크를 만들고 싶어?",
+    "pinyin": null,
+    "translation": "B: Sim. Por que você de repente quer fazer bolo?",
+    "tokens": [
+      "응",
+      ".",
+      "갑자기",
+      "왜",
+      "케이크",
+      "를",
+      "만들고",
+      "싶어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "eung",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "갑자기",
+        "pinyin": "gapjagi",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "왜",
+        "pinyin": "wae",
+        "meaning": "por que"
+      },
+      {
+        "id": 4,
+        "word": "만들고 싶어?",
+        "pinyin": "mandeulgo sipeo?",
+        "meaning": "quer fazer?"
+      }
+    ],
+    "id": "local-1772296714175-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 다음 달이 남자친구 생일이야. 깜짝 놀래켜 주고 싶어.",
+    "pinyin": null,
+    "translation": "A: O aniversário do meu namorado é no próximo mês. Quero surpreendê-lo.",
+    "tokens": [
+      "다음",
+      "달",
+      "이",
+      "남자친구",
+      "생일",
+      "이야",
+      ".",
+      "깜짝",
+      "놀래켜",
+      "주고",
+      "싶어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음 달",
+        "pinyin": "daeum dal",
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "남자친구",
+        "pinyin": "namjachingu",
+        "meaning": "namorado"
+      },
+      {
+        "id": 3,
+        "word": "생일",
+        "pinyin": "saengil",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "깜짝 놀래켜 주고 싶어",
+        "pinyin": "kkamjjak nollaekyeo jugo sipeo",
+        "meaning": "quero surpreender"
+      }
+    ],
+    "id": "local-1772296714175-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어떤 케이크를 만들고 싶어?",
+    "pinyin": null,
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "어떤",
+      "케이크",
+      "를",
+      "만들고",
+      "싶어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "만들고 싶어?",
+        "pinyin": "mandeulgo sipeo?",
+        "meaning": "quer fazer?"
+      }
+    ],
+    "id": "local-1772296714175-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 간단한 걸 만들고 싶어.",
+    "pinyin": null,
+    "translation": "A: Eu quero fazer algo simples.",
+    "tokens": [
+      "간단한",
+      "걸",
+      "만들고",
+      "싶어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "간단한",
+        "pinyin": "gandanhan",
+        "meaning": "simples"
+      },
+      {
+        "id": 2,
+        "word": "걸",
+        "pinyin": "geol",
+        "meaning": "coisa (contração de '것을')"
+      },
+      {
+        "id": 3,
+        "word": "만들고 싶어",
+        "pinyin": "mandeulgo sipeo",
+        "meaning": "quero fazer"
+      }
+    ],
+    "id": "local-1772296714175-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 쉬폰 케이크 만들자. 이 케이크는 아주 가벼워. 잼을 발라서 먹을 수도 있고, 생일 케이크로도 좋아. 기본 케이크야.",
+    "pinyin": null,
+    "translation": "B: Então vamos fazer bolo chiffon. Este bolo é muito leve. Você pode comê-lo com geleia, e também é bom como bolo de aniversário. É um bolo básico.",
+    "tokens": [
+      "그럼",
+      "쉬폰",
+      "케이크",
+      "만들자",
+      ".",
+      "이",
+      "케이크",
+      "는",
+      "아주",
+      "가벼워",
+      ".",
+      "잼",
+      "을",
+      "발라서",
+      "먹을",
+      "수도",
+      "있고",
+      ",",
+      "생일",
+      "케이크",
+      "로도",
+      "좋아",
+      ".",
+      "기본",
+      "케이크",
+      "야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "쉬폰 케이크",
+        "pinyin": "swipon keikeu",
+        "meaning": "bolo chiffon"
+      },
+      {
+        "id": 3,
+        "word": "만들자",
+        "pinyin": "mandeulja",
+        "meaning": "vamos fazer"
+      },
+      {
+        "id": 4,
+        "word": "아주",
+        "pinyin": "aju",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "가벼워",
+        "pinyin": "gabyeowo",
+        "meaning": "leve (de peso)"
+      },
+      {
+        "id": 6,
+        "word": "잼",
+        "pinyin": "jaem",
+        "meaning": "geleia, doce (jam)"
+      },
+      {
+        "id": 7,
+        "word": "발라서",
+        "pinyin": "baraseo",
+        "meaning": "espalhar e (verbo '바르다')"
+      },
+      {
+        "id": 8,
+        "word": "먹을 수도 있고",
+        "pinyin": "meogeul sudo itgo",
+        "meaning": "também pode comer"
+      },
+      {
+        "id": 9,
+        "word": "생일 케이크",
+        "pinyin": "saengil keikeu",
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 10,
+        "word": "좋아",
+        "pinyin": "joa",
+        "meaning": "bom, gostar (informal)"
+      },
+      {
+        "id": 11,
+        "word": "기본",
+        "pinyin": "gibon",
+        "meaning": "básico, base"
+      }
+    ],
+    "id": "local-1772296714175-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 알았어. 알았어. 뭘 준비해야 해?",
+    "pinyin": null,
+    "translation": "A: Entendi. Entendi. O que preciso preparar?",
+    "tokens": [
+      "알았어",
+      ".",
+      "알았어",
+      ".",
+      "뭘",
+      "준비해야",
+      "해",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알았어",
+        "pinyin": "arasseo",
+        "meaning": "entendi, ok (informal)"
+      },
+      {
+        "id": 2,
+        "word": "뭘",
+        "pinyin": "mwol",
+        "meaning": "o que (contração de '무엇을')"
+      },
+      {
+        "id": 3,
+        "word": "준비해야 해?",
+        "pinyin": "junbihaeya hae?",
+        "meaning": "preciso preparar?"
+      }
+    ],
+    "id": "local-1772296714175-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 재료를 사야 해: 박력분 100그램, 달걀 5개, 식용유 40그램, 설탕 70그램, 우유 40그램.",
+    "pinyin": null,
+    "translation": "B: Você precisa comprar os ingredientes: 100 gramas de farinha de trigo, 5 ovos, 40 gramas de óleo comestível, 70 gramas de açúcar, 40 gramas de leite.",
+    "tokens": [
+      "재료",
+      "를",
+      "사야",
+      "해",
+      ":",
+      "박력분",
+      "100",
+      "그램",
+      ",",
+      "달걀",
+      "5",
+      "개",
+      ",",
+      "식용유",
+      "40",
+      "그램",
+      ",",
+      "설탕",
+      "70",
+      "그램",
+      ",",
+      "우유",
+      "40",
+      "그램",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "재료",
+        "pinyin": "jaeryo",
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 2,
+        "word": "사야 해",
+        "pinyin": "saya hae",
+        "meaning": "precisa comprar"
+      },
+      {
+        "id": 3,
+        "word": "박력분",
+        "pinyin": "bangnyeokbun",
+        "meaning": "farinha de trigo (com baixo teor de glúten)"
+      },
+      {
+        "id": 4,
+        "word": "그램",
+        "pinyin": "geuraem",
+        "meaning": "grama"
+      },
+      {
+        "id": 5,
+        "word": "달걀",
+        "pinyin": "dalgyal",
+        "meaning": "ovo"
+      },
+      {
+        "id": 6,
+        "word": "개",
+        "pinyin": "gae",
+        "meaning": "contador para objetos"
+      },
+      {
+        "id": 7,
+        "word": "식용유",
+        "pinyin": "sigyongyu",
+        "meaning": "óleo comestível"
+      },
+      {
+        "id": 8,
+        "word": "설탕",
+        "pinyin": "seoltang",
+        "meaning": "açúcar"
+      },
+      {
+        "id": 9,
+        "word": "우유",
+        "pinyin": "uyu",
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296714175-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 도구는?",
+    "pinyin": null,
+    "translation": "A: E as ferramentas?",
+    "tokens": [
+      "도구",
+      "는",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "도구",
+        "pinyin": "dogu",
+        "meaning": "ferramenta, utensílio"
+      }
+    ],
+    "id": "local-1772296714175-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 핸드믹서, 오븐, 8인치 케이크 틀.",
+    "pinyin": null,
+    "translation": "B: Batedeira de mão, forno, forma de bolo de 8 polegadas.",
+    "tokens": [
+      "핸드믹서",
+      ",",
+      "오븐",
+      ",",
+      "8인치",
+      "케이크",
+      "틀",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "핸드믹서",
+        "pinyin": "haendeumikseo",
+        "meaning": "batedeira de mão (hand mixer)"
+      },
+      {
+        "id": 2,
+        "word": "오븐",
+        "pinyin": "obeun",
+        "meaning": "forno (oven)"
+      },
+      {
+        "id": 3,
+        "word": "인치",
+        "pinyin": "inchi",
+        "meaning": "polegada (inch)"
+      },
+      {
+        "id": 4,
+        "word": "케이크 틀",
+        "pinyin": "keikeu teul",
+        "meaning": "forma de bolo"
+      }
+    ],
+    "id": "local-1772296714175-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 알았어. 퇴근하고 사러 갈게.",
+    "pinyin": null,
+    "translation": "A: Entendi. Vou comprar depois do trabalho.",
+    "tokens": [
+      "알았어",
+      ".",
+      "퇴근하고",
+      "사러",
+      "갈게",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알았어",
+        "pinyin": "arasseo",
+        "meaning": "entendi, ok (informal)"
+      },
+      {
+        "id": 2,
+        "word": "퇴근하고",
+        "pinyin": "toegeunhago",
+        "meaning": "depois de sair do trabalho"
+      },
+      {
+        "id": 3,
+        "word": "사러 갈게",
+        "pinyin": "sareo galge",
+        "meaning": "irei comprar"
+      }
+    ],
+    "id": "local-1772296714175-10",
+    "language": "Coreano"
+  }
+]

@@ -1,0 +1,561 @@
+[
+  {
+    "chinese": "A: Chéri, je suis devenue si grosse !",
+    "pinyin": null,
+    "translation": "A: Querido(a), eu fiquei tão gorda!",
+    "tokens": [
+      "A:",
+      "Chéri",
+      ",",
+      "je",
+      "suis",
+      "devenue",
+      "si",
+      "grosse",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chéri",
+        "pinyin": null,
+        "meaning": "Querido(a)"
+      },
+      {
+        "id": 2,
+        "word": "devenue",
+        "pinyin": null,
+        "meaning": "fiquei/tornou-se (feminino)"
+      },
+      {
+        "id": 3,
+        "word": "grosse",
+        "pinyin": null,
+        "meaning": "gorda"
+      }
+    ],
+    "id": "local-1772298109525-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je veux acheter une machine pour perdre du poids !",
+    "pinyin": null,
+    "translation": "Eu quero comprar uma máquina para perder peso!",
+    "tokens": [
+      "Je",
+      "veux",
+      "acheter",
+      "une",
+      "machine",
+      "pour",
+      "perdre",
+      "du",
+      "poids",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "veux",
+        "pinyin": null,
+        "meaning": "quero"
+      },
+      {
+        "id": 2,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "machine",
+        "pinyin": null,
+        "meaning": "máquina"
+      },
+      {
+        "id": 4,
+        "word": "perdre du poids",
+        "pinyin": null,
+        "meaning": "perder peso"
+      }
+    ],
+    "id": "local-1772298109525-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Quel genre veux-tu acheter ?",
+    "pinyin": null,
+    "translation": "B: Que tipo você quer comprar?",
+    "tokens": [
+      "B:",
+      "Quel",
+      "genre",
+      "veux-tu",
+      "acheter",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quel genre",
+        "pinyin": null,
+        "meaning": "Que tipo"
+      },
+      {
+        "id": 2,
+        "word": "veux-tu",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 3,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772298109525-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Regarde !",
+    "pinyin": null,
+    "translation": "A: Olha!",
+    "tokens": [
+      "A:",
+      "Regarde",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Regarde",
+        "pinyin": null,
+        "meaning": "Olha/Veja"
+      }
+    ],
+    "id": "local-1772298109525-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Que penses-tu de ce tapis de course ?",
+    "pinyin": null,
+    "translation": "O que você acha desta esteira?",
+    "tokens": [
+      "Que",
+      "penses-tu",
+      "de",
+      "ce",
+      "tapis",
+      "de",
+      "course",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "penses-tu",
+        "pinyin": null,
+        "meaning": "você pensa/acha"
+      },
+      {
+        "id": 2,
+        "word": "tapis de course",
+        "pinyin": null,
+        "meaning": "esteira"
+      }
+    ],
+    "id": "local-1772298109525-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui, c'est plutôt bien !",
+    "pinyin": null,
+    "translation": "B: Sim, é bastante bom!",
+    "tokens": [
+      "B:",
+      "Oui",
+      ",",
+      "c'est",
+      "plutôt",
+      "bien",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "plutôt",
+        "pinyin": null,
+        "meaning": "bastante/muito"
+      },
+      {
+        "id": 2,
+        "word": "bien",
+        "pinyin": null,
+        "meaning": "bom/bem"
+      }
+    ],
+    "id": "local-1772298109525-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Cette machine elliptique peut aider à affiner tes jambes et ta taille !",
+    "pinyin": null,
+    "translation": "A: Esta máquina elíptica pode ajudar a afinar suas pernas e sua cintura!",
+    "tokens": [
+      "A:",
+      "Cette",
+      "machine",
+      "elliptique",
+      "peut",
+      "aider",
+      "à",
+      "affiner",
+      "tes",
+      "jambes",
+      "et",
+      "ta",
+      "taille",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "machine elliptique",
+        "pinyin": null,
+        "meaning": "máquina elíptica"
+      },
+      {
+        "id": 2,
+        "word": "peut",
+        "pinyin": null,
+        "meaning": "pode"
+      },
+      {
+        "id": 3,
+        "word": "aider",
+        "pinyin": null,
+        "meaning": "ajudar"
+      },
+      {
+        "id": 4,
+        "word": "affiner",
+        "pinyin": null,
+        "meaning": "afinar/tonificar"
+      },
+      {
+        "id": 5,
+        "word": "jambes",
+        "pinyin": null,
+        "meaning": "pernas"
+      },
+      {
+        "id": 6,
+        "word": "taille",
+        "pinyin": null,
+        "meaning": "cintura"
+      }
+    ],
+    "id": "local-1772298109525-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ça semble bien pour toi.",
+    "pinyin": null,
+    "translation": "B: Parece bom para você.",
+    "tokens": [
+      "B:",
+      "Ça",
+      "semble",
+      "bien",
+      "pour",
+      "toi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ça",
+        "pinyin": null,
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "semble",
+        "pinyin": null,
+        "meaning": "parece"
+      },
+      {
+        "id": 3,
+        "word": "pour toi",
+        "pinyin": null,
+        "meaning": "para você"
+      }
+    ],
+    "id": "local-1772298109525-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oh, il y a aussi un robot de perte de poids ici, mais malheureusement il est juste trop cher !",
+    "pinyin": null,
+    "translation": "A: Ah, também há um robô de perda de peso aqui, mas infelizmente é simplesmente muito caro!",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "il",
+      "y",
+      "a",
+      "aussi",
+      "un",
+      "robot",
+      "de",
+      "perte",
+      "de",
+      "poids",
+      "ici",
+      ",",
+      "mais",
+      "malheureusement",
+      "il",
+      "est",
+      "juste",
+      "trop",
+      "cher",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "il y a",
+        "pinyin": null,
+        "meaning": "há/tem"
+      },
+      {
+        "id": 2,
+        "word": "aussi",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "robot de perte de poids",
+        "pinyin": null,
+        "meaning": "robô de perda de peso"
+      },
+      {
+        "id": 4,
+        "word": "malheureusement",
+        "pinyin": null,
+        "meaning": "infelizmente"
+      },
+      {
+        "id": 5,
+        "word": "trop cher",
+        "pinyin": null,
+        "meaning": "muito caro"
+      }
+    ],
+    "id": "local-1772298109525-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: L'argent n'est pas un problème.",
+    "pinyin": null,
+    "translation": "B: Dinheiro não é um problema.",
+    "tokens": [
+      "B:",
+      "L'argent",
+      "n'est",
+      "pas",
+      "un",
+      "problème",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "L'argent",
+        "pinyin": null,
+        "meaning": "O dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "n'est pas",
+        "pinyin": null,
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "problème",
+        "pinyin": null,
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772298109525-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je suis juste préoccupé que tu l'utilises pendant deux jours et ne l'utilises plus jamais.",
+    "pinyin": null,
+    "translation": "Eu estou apenas preocupado que você o use por dois dias e nunca mais o use.",
+    "tokens": [
+      "Je",
+      "suis",
+      "juste",
+      "préoccupé",
+      "que",
+      "tu",
+      "l'utilises",
+      "pendant",
+      "deux",
+      "jours",
+      "et",
+      "ne",
+      "l'utilises",
+      "plus",
+      "jamais",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "préoccupé",
+        "pinyin": null,
+        "meaning": "preocupado"
+      },
+      {
+        "id": 2,
+        "word": "l'utilises",
+        "pinyin": null,
+        "meaning": "o use"
+      },
+      {
+        "id": 3,
+        "word": "pendant",
+        "pinyin": null,
+        "meaning": "durante/por"
+      },
+      {
+        "id": 4,
+        "word": "deux jours",
+        "pinyin": null,
+        "meaning": "dois dias"
+      },
+      {
+        "id": 5,
+        "word": "ne... plus jamais",
+        "pinyin": null,
+        "meaning": "nunca mais"
+      }
+    ],
+    "id": "local-1772298109525-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Cette fois, je te garantis que non !",
+    "pinyin": null,
+    "translation": "A: Desta vez, eu te garanto que não!",
+    "tokens": [
+      "A:",
+      "Cette",
+      "fois",
+      ",",
+      "je",
+      "te",
+      "garantis",
+      "que",
+      "non",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cette fois",
+        "pinyin": null,
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "garantis",
+        "pinyin": null,
+        "meaning": "garanto"
+      },
+      {
+        "id": 3,
+        "word": "que non",
+        "pinyin": null,
+        "meaning": "que não"
+      }
+    ],
+    "id": "local-1772298109525-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord.",
+    "pinyin": null,
+    "translation": "B: De acordo.",
+    "tokens": [
+      "B:",
+      "D'accord",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "De acordo/Ok"
+      }
+    ],
+    "id": "local-1772298109525-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Alors achète-le !",
+    "pinyin": null,
+    "translation": "Então compre-o!",
+    "tokens": [
+      "Alors",
+      "achète-le",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "achète-le",
+        "pinyin": null,
+        "meaning": "compre-o"
+      }
+    ],
+    "id": "local-1772298109525-13",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je te soutiens !",
+    "pinyin": null,
+    "translation": "Eu te apoio!",
+    "tokens": [
+      "Je",
+      "te",
+      "soutiens",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "soutiens",
+        "pinyin": null,
+        "meaning": "apoio"
+      }
+    ],
+    "id": "local-1772298109525-14",
+    "language": "Francês"
+  }
+]

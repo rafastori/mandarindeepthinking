@@ -1,0 +1,828 @@
+[
+  {
+    "chinese": "A: Salve, posso aiutarla in qualcosa?",
+    "pinyin": "",
+    "translation": "A: Olá, posso ajudá-lo(a) em algo?",
+    "tokens": [
+      "Salve",
+      ",",
+      "posso",
+      "aiutarla",
+      "in",
+      "qualcosa",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Salve",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "posso",
+        "pinyin": "",
+        "meaning": "posso (do verbo potere)"
+      },
+      {
+        "id": 3,
+        "word": "aiutarla",
+        "pinyin": "",
+        "meaning": "ajudá-la/ajudá-lo"
+      },
+      {
+        "id": 4,
+        "word": "qualcosa",
+        "pinyin": "",
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772299279455-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Vorrei farmi fare un paio di occhiali.",
+    "pinyin": "",
+    "translation": "B: Gostaria de mandar fazer um par de óculos.",
+    "tokens": [
+      "Vorrei",
+      "farmi",
+      "fare",
+      "un",
+      "paio",
+      "di",
+      "occhiali",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vorrei",
+        "pinyin": "",
+        "meaning": "Gostaria (do verbo volere)"
+      },
+      {
+        "id": 2,
+        "word": "farmi fare",
+        "pinyin": "",
+        "meaning": "mandar fazer para mim"
+      },
+      {
+        "id": 3,
+        "word": "paio",
+        "pinyin": "",
+        "meaning": "par"
+      },
+      {
+        "id": 4,
+        "word": "occhiali",
+        "pinyin": "",
+        "meaning": "óculos"
+      }
+    ],
+    "id": "local-1772299279455-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Occhiali per miopia, occhiali con lenti semplici o occhiali da lettura?",
+    "pinyin": "",
+    "translation": "A: Óculos para miopia, óculos com lentes simples ou óculos de leitura?",
+    "tokens": [
+      "Occhiali",
+      "per",
+      "miopia",
+      ",",
+      "occhiali",
+      "con",
+      "lenti",
+      "semplici",
+      "o",
+      "occhiali",
+      "da",
+      "lettura",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Occhiali",
+        "pinyin": "",
+        "meaning": "Óculos"
+      },
+      {
+        "id": 2,
+        "word": "miopia",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 3,
+        "word": "lenti",
+        "pinyin": "",
+        "meaning": "lentes"
+      },
+      {
+        "id": 4,
+        "word": "semplici",
+        "pinyin": "",
+        "meaning": "simples"
+      },
+      {
+        "id": 5,
+        "word": "lettura",
+        "pinyin": "",
+        "meaning": "leitura"
+      }
+    ],
+    "id": "local-1772299279455-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Occhiali per miopia con astigmatismo.",
+    "pinyin": "",
+    "translation": "B: Óculos para miopia com astigmatismo.",
+    "tokens": [
+      "Occhiali",
+      "per",
+      "miopia",
+      "con",
+      "astigmatismo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Occhiali",
+        "pinyin": "",
+        "meaning": "Óculos"
+      },
+      {
+        "id": 2,
+        "word": "miopia",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 3,
+        "word": "astigmatismo",
+        "pinyin": "",
+        "meaning": "astigmatismo"
+      }
+    ],
+    "id": "local-1772299279455-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Può scegliere una qualsiasi delle montature da questa parte.",
+    "pinyin": "",
+    "translation": "A: Pode escolher qualquer uma das armações desta parte.",
+    "tokens": [
+      "Può",
+      "scegliere",
+      "una",
+      "qualsiasi",
+      "delle",
+      "montature",
+      "da",
+      "questa",
+      "parte",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Può",
+        "pinyin": "",
+        "meaning": "Pode (do verbo potere)"
+      },
+      {
+        "id": 2,
+        "word": "scegliere",
+        "pinyin": "",
+        "meaning": "escolher"
+      },
+      {
+        "id": 3,
+        "word": "qualsiasi",
+        "pinyin": "",
+        "meaning": "qualquer"
+      },
+      {
+        "id": 4,
+        "word": "montature",
+        "pinyin": "",
+        "meaning": "armações"
+      },
+      {
+        "id": 5,
+        "word": "parte",
+        "pinyin": "",
+        "meaning": "parte, lado"
+      }
+    ],
+    "id": "local-1772299279455-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Dopo aver scelto un paio, può pagare e fare un esame della vista lì.",
+    "pinyin": "",
+    "translation": "Depois de escolher um par, pode pagar e fazer um exame de vista lá.",
+    "tokens": [
+      "Dopo",
+      "aver",
+      "scelto",
+      "un",
+      "paio",
+      ",",
+      "può",
+      "pagare",
+      "e",
+      "fare",
+      "un",
+      "esame",
+      "della",
+      "vista",
+      "lì",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dopo",
+        "pinyin": "",
+        "meaning": "Depois"
+      },
+      {
+        "id": 2,
+        "word": "scelto",
+        "pinyin": "",
+        "meaning": "escolhido (particípio passado de scegliere)"
+      },
+      {
+        "id": 3,
+        "word": "paio",
+        "pinyin": "",
+        "meaning": "par"
+      },
+      {
+        "id": 4,
+        "word": "pagare",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 5,
+        "word": "esame della vista",
+        "pinyin": "",
+        "meaning": "exame de vista"
+      },
+      {
+        "id": 6,
+        "word": "lì",
+        "pinyin": "",
+        "meaning": "lá"
+      }
+    ],
+    "id": "local-1772299279455-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Quanto costa un paio?",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Quanto custa um par?",
+    "tokens": [
+      "Va",
+      "bene",
+      ".",
+      "Quanto",
+      "costa",
+      "un",
+      "paio",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "Quanto",
+        "pinyin": "",
+        "meaning": "Quanto"
+      },
+      {
+        "id": 3,
+        "word": "costa",
+        "pinyin": "",
+        "meaning": "custa (do verbo costare)"
+      },
+      {
+        "id": 4,
+        "word": "paio",
+        "pinyin": "",
+        "meaning": "par"
+      }
+    ],
+    "id": "local-1772299279455-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ci sono tre prezzi pacchetto: 399, 599, 799.",
+    "pinyin": "",
+    "translation": "A: Existem três preços de pacote: 399, 599, 799.",
+    "tokens": [
+      "Ci",
+      "sono",
+      "tre",
+      "prezzi",
+      "pacchetto",
+      ":",
+      "399",
+      ",",
+      "599",
+      ",",
+      "799",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ci sono",
+        "pinyin": "",
+        "meaning": "Existem"
+      },
+      {
+        "id": 2,
+        "word": "prezzi",
+        "pinyin": "",
+        "meaning": "preços"
+      },
+      {
+        "id": 3,
+        "word": "pacchetto",
+        "pinyin": "",
+        "meaning": "pacote"
+      }
+    ],
+    "id": "local-1772299279455-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Includono le lenti, la montatura, un astuccio per occhiali e un panno per la pulizia.",
+    "pinyin": "",
+    "translation": "Incluem as lentes, a armação, um estojo para óculos e um pano para limpeza.",
+    "tokens": [
+      "Includono",
+      "le",
+      "lenti",
+      ",",
+      "la",
+      "montatura",
+      ",",
+      "un",
+      "astuccio",
+      "per",
+      "occhiali",
+      "e",
+      "un",
+      "panno",
+      "per",
+      "la",
+      "pulizia",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Includono",
+        "pinyin": "",
+        "meaning": "Incluem (do verbo includere)"
+      },
+      {
+        "id": 2,
+        "word": "lenti",
+        "pinyin": "",
+        "meaning": "lentes"
+      },
+      {
+        "id": 3,
+        "word": "montatura",
+        "pinyin": "",
+        "meaning": "armação"
+      },
+      {
+        "id": 4,
+        "word": "astuccio",
+        "pinyin": "",
+        "meaning": "estojo"
+      },
+      {
+        "id": 5,
+        "word": "panno",
+        "pinyin": "",
+        "meaning": "pano"
+      },
+      {
+        "id": 6,
+        "word": "pulizia",
+        "pinyin": "",
+        "meaning": "limpeza"
+      }
+    ],
+    "id": "local-1772299279455-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quanto tempo devo aspettare prima di poterli ritirare?",
+    "pinyin": "",
+    "translation": "B: Quanto tempo devo esperar antes de poder retirá-los?",
+    "tokens": [
+      "Quanto",
+      "tempo",
+      "devo",
+      "aspettare",
+      "prima",
+      "di",
+      "poterli",
+      "ritirare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quanto tempo",
+        "pinyin": "",
+        "meaning": "Quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "devo",
+        "pinyin": "",
+        "meaning": "devo (do verbo dovere)"
+      },
+      {
+        "id": 3,
+        "word": "aspettare",
+        "pinyin": "",
+        "meaning": "esperar"
+      },
+      {
+        "id": 4,
+        "word": "prima di",
+        "pinyin": "",
+        "meaning": "antes de"
+      },
+      {
+        "id": 5,
+        "word": "poterli",
+        "pinyin": "",
+        "meaning": "poder retirá-los"
+      },
+      {
+        "id": 6,
+        "word": "ritirare",
+        "pinyin": "",
+        "meaning": "retirar"
+      }
+    ],
+    "id": "local-1772299279455-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Un'ora dopo l'esame della vista.",
+    "pinyin": "",
+    "translation": "A: Uma hora depois do exame de vista.",
+    "tokens": [
+      "Un'ora",
+      "dopo",
+      "l'esame",
+      "della",
+      "vista",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Un'ora",
+        "pinyin": "",
+        "meaning": "Uma hora"
+      },
+      {
+        "id": 2,
+        "word": "dopo",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 3,
+        "word": "esame della vista",
+        "pinyin": "",
+        "meaning": "exame de vista"
+      }
+    ],
+    "id": "local-1772299279455-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Esiste un tipo di lente che è per miopia e astigmatismo e sono anche occhiali da sole?",
+    "pinyin": "",
+    "translation": "B: Existe um tipo de lente que é para miopia e astigmatismo e são também óculos de sol?",
+    "tokens": [
+      "Esiste",
+      "un",
+      "tipo",
+      "di",
+      "lente",
+      "che",
+      "è",
+      "per",
+      "miopia",
+      "e",
+      "astigmatismo",
+      "e",
+      "sono",
+      "anche",
+      "occhiali",
+      "da",
+      "sole",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esiste",
+        "pinyin": "",
+        "meaning": "Existe (do verbo esistere)"
+      },
+      {
+        "id": 2,
+        "word": "tipo",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 3,
+        "word": "lente",
+        "pinyin": "",
+        "meaning": "lente"
+      },
+      {
+        "id": 4,
+        "word": "miopia",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 5,
+        "word": "astigmatismo",
+        "pinyin": "",
+        "meaning": "astigmatismo"
+      },
+      {
+        "id": 6,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 7,
+        "word": "occhiali da sole",
+        "pinyin": "",
+        "meaning": "óculos de sol"
+      }
+    ],
+    "id": "local-1772299279455-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì, ma è un tipo di lente speciale.",
+    "pinyin": "",
+    "translation": "A: Sim, mas é um tipo de lente especial.",
+    "tokens": [
+      "Sì",
+      ",",
+      "ma",
+      "è",
+      "un",
+      "tipo",
+      "di",
+      "lente",
+      "speciale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "ma",
+        "pinyin": "",
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "tipo",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 4,
+        "word": "lente",
+        "pinyin": "",
+        "meaning": "lente"
+      },
+      {
+        "id": 5,
+        "word": "speciale",
+        "pinyin": "",
+        "meaning": "especial"
+      }
+    ],
+    "id": "local-1772299279455-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Non c'è un prezzo pacchetto e deve comprare le lenti e la montatura separatamente.",
+    "pinyin": "",
+    "translation": "Não há um preço de pacote e deve comprar as lentes e a armação separadamente.",
+    "tokens": [
+      "Non",
+      "c'è",
+      "un",
+      "prezzo",
+      "pacchetto",
+      "e",
+      "deve",
+      "comprare",
+      "le",
+      "lenti",
+      "e",
+      "la",
+      "montatura",
+      "separatamente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non c'è",
+        "pinyin": "",
+        "meaning": "Não há"
+      },
+      {
+        "id": 2,
+        "word": "prezzo",
+        "pinyin": "",
+        "meaning": "preço"
+      },
+      {
+        "id": 3,
+        "word": "pacchetto",
+        "pinyin": "",
+        "meaning": "pacote"
+      },
+      {
+        "id": 4,
+        "word": "deve",
+        "pinyin": "",
+        "meaning": "deve (do verbo dovere)"
+      },
+      {
+        "id": 5,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "lenti",
+        "pinyin": "",
+        "meaning": "lentes"
+      },
+      {
+        "id": 7,
+        "word": "montatura",
+        "pinyin": "",
+        "meaning": "armação"
+      },
+      {
+        "id": 8,
+        "word": "separatamente",
+        "pinyin": "",
+        "meaning": "separadamente"
+      }
+    ],
+    "id": "local-1772299279455-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Un paio costa almeno più di mille.",
+    "pinyin": "",
+    "translation": "Um par custa pelo menos mais de mil.",
+    "tokens": [
+      "Un",
+      "paio",
+      "costa",
+      "almeno",
+      "più",
+      "di",
+      "mille",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "paio",
+        "pinyin": "",
+        "meaning": "par"
+      },
+      {
+        "id": 2,
+        "word": "costa",
+        "pinyin": "",
+        "meaning": "custa (do verbo costare)"
+      },
+      {
+        "id": 3,
+        "word": "almeno",
+        "pinyin": "",
+        "meaning": "pelo menos"
+      },
+      {
+        "id": 4,
+        "word": "più di",
+        "pinyin": "",
+        "meaning": "mais de"
+      },
+      {
+        "id": 5,
+        "word": "mille",
+        "pinyin": "",
+        "meaning": "mil"
+      }
+    ],
+    "id": "local-1772299279455-14",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È costoso! Meglio che dia un'occhiata a quelli da 399.",
+    "pinyin": "",
+    "translation": "B: É caro! Melhor que eu dê uma olhada naqueles de 399.",
+    "tokens": [
+      "È",
+      "costoso",
+      "!",
+      "Meglio",
+      "che",
+      "dia",
+      "un'occhiata",
+      "a",
+      "quelli",
+      "da",
+      "399",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "costoso",
+        "pinyin": "",
+        "meaning": "caro"
+      },
+      {
+        "id": 2,
+        "word": "Meglio che",
+        "pinyin": "",
+        "meaning": "Melhor que"
+      },
+      {
+        "id": 3,
+        "word": "dia",
+        "pinyin": "",
+        "meaning": "dê (do verbo dare, subjuntivo)"
+      },
+      {
+        "id": 4,
+        "word": "un'occhiata",
+        "pinyin": "",
+        "meaning": "uma olhada"
+      },
+      {
+        "id": 5,
+        "word": "quelli",
+        "pinyin": "",
+        "meaning": "aqueles"
+      }
+    ],
+    "id": "local-1772299279455-15",
+    "language": "Italiano"
+  }
+]

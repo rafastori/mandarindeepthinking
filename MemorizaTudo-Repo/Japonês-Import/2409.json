@@ -1,0 +1,686 @@
+[
+  {
+    "chinese": "ウェーターさん、子供の誕生日ケーキを買いたいです。10人分くらいです。",
+    "pinyin": "",
+    "translation": "A: Garçom, eu gostaria de comprar um bolo de aniversário para criança. É para cerca de 10 pessoas.",
+    "tokens": [
+      "ウェーター",
+      "さん",
+      "、",
+      "子供",
+      "の",
+      "誕生日",
+      "ケーキ",
+      "を",
+      "買い",
+      "たい",
+      "です",
+      "。",
+      "10",
+      "人分",
+      "くらい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ウェーター",
+        "pinyin": "",
+        "meaning": "garçom"
+      },
+      {
+        "id": 2,
+        "word": "子供",
+        "pinyin": "",
+        "meaning": "criança"
+      },
+      {
+        "id": 3,
+        "word": "誕生日",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "買いたいです",
+        "pinyin": "",
+        "meaning": "eu quero comprar"
+      },
+      {
+        "id": 6,
+        "word": "10人分",
+        "pinyin": "",
+        "meaning": "para 10 pessoas"
+      },
+      {
+        "id": 7,
+        "word": "くらい",
+        "pinyin": "",
+        "meaning": "cerca de, aproximadamente"
+      }
+    ],
+    "id": "local-1772295481006-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "10人でしたら、12インチのケーキがちょうどいいでしょう。",
+    "pinyin": "",
+    "translation": "B: Se for para 10 pessoas, um bolo de 12 polegadas deve ser ideal.",
+    "tokens": [
+      "10人",
+      "でしたら",
+      "、",
+      "12インチ",
+      "の",
+      "ケーキ",
+      "が",
+      "ちょうどいい",
+      "でしょう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "10人",
+        "pinyin": "",
+        "meaning": "10 pessoas"
+      },
+      {
+        "id": 2,
+        "word": "でしたら",
+        "pinyin": "",
+        "meaning": "se for, caso seja"
+      },
+      {
+        "id": 3,
+        "word": "12インチ",
+        "pinyin": "",
+        "meaning": "12 polegadas"
+      },
+      {
+        "id": 4,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "ちょうどいい",
+        "pinyin": "",
+        "meaning": "justo, ideal, perfeito"
+      },
+      {
+        "id": 6,
+        "word": "でしょう",
+        "pinyin": "",
+        "meaning": "provavelmente, deve ser"
+      }
+    ],
+    "id": "local-1772295481006-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "では、どんな種類のケーキがありますか？",
+    "pinyin": "",
+    "translation": "A: Então, que tipos de bolo vocês têm?",
+    "tokens": [
+      "では",
+      "、",
+      "どんな",
+      "種類",
+      "の",
+      "ケーキ",
+      "が",
+      "あります",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então, bem"
+      },
+      {
+        "id": 2,
+        "word": "どんな",
+        "pinyin": "",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 3,
+        "word": "種類",
+        "pinyin": "",
+        "meaning": "tipo, variedade"
+      },
+      {
+        "id": 4,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "あります",
+        "pinyin": "",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772295481006-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "フルーツとクリームのケーキ、チョコレートケーキ、ムースケーキ、チーズケーキがございます。",
+    "pinyin": "",
+    "translation": "B: Temos bolo de frutas e creme, bolo de chocolate, bolo mousse e cheesecake.",
+    "tokens": [
+      "フルーツ",
+      "と",
+      "クリーム",
+      "の",
+      "ケーキ",
+      "、",
+      "チョコレートケーキ",
+      "、",
+      "ムースケーキ",
+      "、",
+      "チーズケーキ",
+      "が",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "フルーツ",
+        "pinyin": "",
+        "meaning": "frutas"
+      },
+      {
+        "id": 2,
+        "word": "クリーム",
+        "pinyin": "",
+        "meaning": "creme"
+      },
+      {
+        "id": 3,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "チョコレートケーキ",
+        "pinyin": "",
+        "meaning": "bolo de chocolate"
+      },
+      {
+        "id": 5,
+        "word": "ムースケーキ",
+        "pinyin": "",
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 6,
+        "word": "チーズケーキ",
+        "pinyin": "",
+        "meaning": "cheesecake"
+      },
+      {
+        "id": 7,
+        "word": "ございます",
+        "pinyin": "",
+        "meaning": "ter, existir (forma polida)"
+      }
+    ],
+    "id": "local-1772295481006-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ムースケーキの味はどうですか？",
+    "pinyin": "",
+    "translation": "A: Como é o sabor do bolo mousse?",
+    "tokens": [
+      "ムースケーキ",
+      "の",
+      "味",
+      "は",
+      "どう",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ムースケーキ",
+        "pinyin": "",
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 2,
+        "word": "味",
+        "pinyin": "",
+        "meaning": "sabor, gosto"
+      },
+      {
+        "id": 3,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1772295481006-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ムースケーキの味は、よりきめ細かく滑らかで、軽くてさっぱりしています。",
+    "pinyin": "",
+    "translation": "B: O sabor do bolo mousse é mais refinado e suave, leve e refrescante.",
+    "tokens": [
+      "ムースケーキ",
+      "の",
+      "味",
+      "は",
+      "、",
+      "より",
+      "きめ細かく",
+      "滑らかで",
+      "、",
+      "軽く",
+      "て",
+      "さっぱり",
+      "し",
+      "てい",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ムースケーキ",
+        "pinyin": "",
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 2,
+        "word": "味",
+        "pinyin": "",
+        "meaning": "sabor, gosto"
+      },
+      {
+        "id": 3,
+        "word": "より",
+        "pinyin": "",
+        "meaning": "mais (comparativo)"
+      },
+      {
+        "id": 4,
+        "word": "きめ細かい",
+        "pinyin": "",
+        "meaning": "refinado, detalhado"
+      },
+      {
+        "id": 5,
+        "word": "滑らか",
+        "pinyin": "",
+        "meaning": "suave, liso"
+      },
+      {
+        "id": 6,
+        "word": "軽い",
+        "pinyin": "",
+        "meaning": "leve"
+      },
+      {
+        "id": 7,
+        "word": "さっぱり",
+        "pinyin": "",
+        "meaning": "refrescante, leve e simples"
+      }
+    ],
+    "id": "local-1772295481006-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "では、12インチのムースケーキを買いたいです。",
+    "pinyin": "",
+    "translation": "A: Então, eu gostaria de comprar um bolo mousse de 12 polegadas.",
+    "tokens": [
+      "では",
+      "、",
+      "12インチ",
+      "の",
+      "ムースケーキ",
+      "を",
+      "買い",
+      "たい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então, bem"
+      },
+      {
+        "id": 2,
+        "word": "12インチ",
+        "pinyin": "",
+        "meaning": "12 polegadas"
+      },
+      {
+        "id": 3,
+        "word": "ムースケーキ",
+        "pinyin": "",
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 4,
+        "word": "買いたいです",
+        "pinyin": "",
+        "meaning": "eu quero comprar"
+      }
+    ],
+    "id": "local-1772295481006-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "承知いたしました。ただし、このケーキは事前のご注文が必要です。明日10時以降にお受け取りいただけます。",
+    "pinyin": "",
+    "translation": "B: Compreendido. No entanto, este bolo requer um pedido antecipado. Você pode retirá-lo amanhã após as 10h.",
+    "tokens": [
+      "承知",
+      "いたし",
+      "ました",
+      "。",
+      "ただし",
+      "、",
+      "この",
+      "ケーキ",
+      "は",
+      "事前",
+      "の",
+      "ご",
+      "注文",
+      "が",
+      "必要",
+      "です",
+      "。",
+      "明日",
+      "10時",
+      "以降",
+      "に",
+      "お",
+      "受け取り",
+      "いただけ",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "承知いたしました",
+        "pinyin": "",
+        "meaning": "compreendido, entendido (formal)"
+      },
+      {
+        "id": 2,
+        "word": "ただし",
+        "pinyin": "",
+        "meaning": "no entanto, porém"
+      },
+      {
+        "id": 3,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "事前",
+        "pinyin": "",
+        "meaning": "antecipadamente, prévio"
+      },
+      {
+        "id": 5,
+        "word": "ご注文",
+        "pinyin": "",
+        "meaning": "seu pedido (formal)"
+      },
+      {
+        "id": 6,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessário"
+      },
+      {
+        "id": 7,
+        "word": "明日",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 8,
+        "word": "10時",
+        "pinyin": "",
+        "meaning": "10 horas"
+      },
+      {
+        "id": 9,
+        "word": "以降",
+        "pinyin": "",
+        "meaning": "após, a partir de"
+      },
+      {
+        "id": 10,
+        "word": "お受け取りいただけます",
+        "pinyin": "",
+        "meaning": "pode retirar/receber (honorífico)"
+      }
+    ],
+    "id": "local-1772295481006-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ケーキは作りたてですか？",
+    "pinyin": "",
+    "translation": "A: O bolo é feito na hora?",
+    "tokens": [
+      "ケーキ",
+      "は",
+      "作りたて",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ケーキ",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 2,
+        "word": "作りたて",
+        "pinyin": "",
+        "meaning": "feito na hora, recém-feito"
+      }
+    ],
+    "id": "local-1772295481006-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "当店のシェフが毎朝作りたてをご用意しております。ご安心ください。",
+    "pinyin": "",
+    "translation": "B: Nossos chefs preparam bolos frescos todas as manhãs. Por favor, fique tranquilo.",
+    "tokens": [
+      "当店",
+      "の",
+      "シェフ",
+      "が",
+      "毎朝",
+      "作りたて",
+      "を",
+      "ご",
+      "用意",
+      "し",
+      "ており",
+      "ます",
+      "。",
+      "ご",
+      "安心",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当店",
+        "pinyin": "",
+        "meaning": "nossa loja"
+      },
+      {
+        "id": 2,
+        "word": "シェフ",
+        "pinyin": "",
+        "meaning": "chef"
+      },
+      {
+        "id": 3,
+        "word": "毎朝",
+        "pinyin": "",
+        "meaning": "toda manhã"
+      },
+      {
+        "id": 4,
+        "word": "作りたて",
+        "pinyin": "",
+        "meaning": "feito na hora, recém-feito"
+      },
+      {
+        "id": 5,
+        "word": "ご用意しております",
+        "pinyin": "",
+        "meaning": "estamos preparando (honorífico e humilde)"
+      },
+      {
+        "id": 6,
+        "word": "ご安心ください",
+        "pinyin": "",
+        "meaning": "por favor, fique tranquilo"
+      }
+    ],
+    "id": "local-1772295481006-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "お子様は何歳ですか？",
+    "pinyin": "",
+    "translation": "B: Quantos anos tem a criança?",
+    "tokens": [
+      "お",
+      "子様",
+      "は",
+      "何歳",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お子様",
+        "pinyin": "",
+        "meaning": "criança (respeitoso)"
+      },
+      {
+        "id": 2,
+        "word": "何歳",
+        "pinyin": "",
+        "meaning": "quantos anos"
+      }
+    ],
+    "id": "local-1772295481006-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "3歳です。",
+    "pinyin": "",
+    "translation": "A: Tem 3 anos.",
+    "tokens": [
+      "3歳",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "3歳",
+        "pinyin": "",
+        "meaning": "3 anos de idade"
+      }
+    ],
+    "id": "local-1772295481006-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "承知いたしました。3本のろうそくをお付けします。",
+    "pinyin": "",
+    "translation": "B: Compreendido. Incluirei 3 velas.",
+    "tokens": [
+      "承知",
+      "いたし",
+      "ました",
+      "。",
+      "3本",
+      "の",
+      "ろうそく",
+      "を",
+      "お",
+      "付け",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "承知いたしました",
+        "pinyin": "",
+        "meaning": "compreendido, entendido (formal)"
+      },
+      {
+        "id": 2,
+        "word": "3本",
+        "pinyin": "",
+        "meaning": "3 (contador para objetos longos e finos)"
+      },
+      {
+        "id": 3,
+        "word": "ろうそく",
+        "pinyin": "",
+        "meaning": "vela"
+      },
+      {
+        "id": 4,
+        "word": "お付けします",
+        "pinyin": "",
+        "meaning": "incluirei, anexarei (formal/humilde)"
+      }
+    ],
+    "id": "local-1772295481006-12",
+    "language": "Japonês"
+  }
+]

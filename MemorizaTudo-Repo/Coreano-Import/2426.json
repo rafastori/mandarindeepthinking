@@ -1,0 +1,625 @@
+[
+  {
+    "chinese": "A: 야, 네 컴퓨터 화면 너무 밝다. 눈 아프지 않아?",
+    "pinyin": "",
+    "translation": "A: Ei, a tela do seu computador está muito clara. Seus olhos não doem?",
+    "tokens": [
+      "야",
+      ",",
+      "네",
+      "컴퓨터",
+      "화면",
+      "너무",
+      "밝다",
+      ".",
+      "눈",
+      "아프지",
+      "않아",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "야",
+        "pinyin": "ya",
+        "meaning": "Ei, e aí (interjeição informal)"
+      },
+      {
+        "id": 2,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "Seu/Sua"
+      },
+      {
+        "id": 3,
+        "word": "컴퓨터",
+        "pinyin": "keompyuteo",
+        "meaning": "Computador"
+      },
+      {
+        "id": 4,
+        "word": "화면",
+        "pinyin": "hwamyeon",
+        "meaning": "Tela"
+      },
+      {
+        "id": 5,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "Muito, demasiadamente"
+      },
+      {
+        "id": 6,
+        "word": "밝다",
+        "pinyin": "bakda",
+        "meaning": "Ser claro, ser brilhante"
+      },
+      {
+        "id": 7,
+        "word": "눈",
+        "pinyin": "nun",
+        "meaning": "Olho"
+      },
+      {
+        "id": 8,
+        "word": "아프다",
+        "pinyin": "apeuda",
+        "meaning": "Doer, estar doente"
+      },
+      {
+        "id": 9,
+        "word": "않다",
+        "pinyin": "anta",
+        "meaning": "Não (negativa)"
+      }
+    ],
+    "id": "local-1772296894167-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 야, 난 상관 없어. 빨리 해야 해.",
+    "pinyin": "",
+    "translation": "B: Ei, não me importo. Preciso fazer isso rápido.",
+    "tokens": [
+      "야",
+      ",",
+      "난",
+      "상관",
+      "없어",
+      ".",
+      "빨리",
+      "해야",
+      "해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "야",
+        "pinyin": "ya",
+        "meaning": "Ei, e aí (interjeição informal)"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "Eu (informal)"
+      },
+      {
+        "id": 3,
+        "word": "상관없다",
+        "pinyin": "sanggwan eopda",
+        "meaning": "Não se importar, não ter relação"
+      },
+      {
+        "id": 4,
+        "word": "빨리",
+        "pinyin": "ppalli",
+        "meaning": "Rapidamente, depressa"
+      },
+      {
+        "id": 5,
+        "word": "하다",
+        "pinyin": "hada",
+        "meaning": "Fazer"
+      },
+      {
+        "id": 6,
+        "word": "-야 하다",
+        "pinyin": "-ya hada",
+        "meaning": "Ter que fazer, precisar fazer (obrigação)"
+      }
+    ],
+    "id": "local-1772296894167-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 넌 상관없지만 난 상관 있어. 너무 밝으면 잠을 못 자.",
+    "pinyin": "",
+    "translation": "A: Você não se importa, mas eu me importo. Se estiver muito claro, não consigo dormir.",
+    "tokens": [
+      "넌",
+      "상관없지만",
+      "난",
+      "상관",
+      "있어",
+      ".",
+      "너무",
+      "밝으면",
+      "잠을",
+      "못",
+      "자",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "너",
+        "pinyin": "neo",
+        "meaning": "Você (informal)"
+      },
+      {
+        "id": 2,
+        "word": "상관없다",
+        "pinyin": "sanggwan eopda",
+        "meaning": "Não se importar, não ter relação"
+      },
+      {
+        "id": 3,
+        "word": "-지만",
+        "pinyin": "-jiman",
+        "meaning": "Mas, embora (partícula de oposição)"
+      },
+      {
+        "id": 4,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "Eu (informal)"
+      },
+      {
+        "id": 5,
+        "word": "상관있다",
+        "pinyin": "sanggwan itda",
+        "meaning": "Se importar, ter relação"
+      },
+      {
+        "id": 6,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "Muito, demasiadamente"
+      },
+      {
+        "id": 7,
+        "word": "밝다",
+        "pinyin": "bakda",
+        "meaning": "Ser claro, ser brilhante"
+      },
+      {
+        "id": 8,
+        "word": "-으면",
+        "pinyin": "-eumyeon",
+        "meaning": "Se (partícula condicional)"
+      },
+      {
+        "id": 9,
+        "word": "잠",
+        "pinyin": "jam",
+        "meaning": "Sono"
+      },
+      {
+        "id": 10,
+        "word": "못",
+        "pinyin": "mot",
+        "meaning": "Não conseguir, não poder (advérbio)"
+      },
+      {
+        "id": 11,
+        "word": "자다",
+        "pinyin": "jada",
+        "meaning": "Dormir"
+      }
+    ],
+    "id": "local-1772296894167-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말? 그럼 미안. 바꿀게. 화면 밝기 어떻게 바꿔? 젠젠, 알아?",
+    "pinyin": "",
+    "translation": "B: Sério? Então desculpe. Vou mudar. Como mudo o brilho da tela? JenJen, sabe?",
+    "tokens": [
+      "정말",
+      "?",
+      "그럼",
+      "미안",
+      ".",
+      "바꿀게",
+      ".",
+      "화면",
+      "밝기",
+      "어떻게",
+      "바꿔",
+      "?",
+      "젠젠",
+      ",",
+      "알아",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "Realmente? Sério?"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "Então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "미안하다",
+        "pinyin": "mianhada",
+        "meaning": "Sentir muito, desculpar-se"
+      },
+      {
+        "id": 4,
+        "word": "바꾸다",
+        "pinyin": "bakkuda",
+        "meaning": "Mudar, trocar"
+      },
+      {
+        "id": 5,
+        "word": "-을게/-ㄹ게",
+        "pinyin": "-eulge/-lge",
+        "meaning": "Vou fazer (expressa intenção do falante)"
+      },
+      {
+        "id": 6,
+        "word": "화면",
+        "pinyin": "hwamyeon",
+        "meaning": "Tela"
+      },
+      {
+        "id": 7,
+        "word": "밝기",
+        "pinyin": "balkki",
+        "meaning": "Brilho (substantivo)"
+      },
+      {
+        "id": 8,
+        "word": "어떻게",
+        "pinyin": "eotteoke",
+        "meaning": "Como"
+      },
+      {
+        "id": 9,
+        "word": "알다",
+        "pinyin": "alda",
+        "meaning": "Saber, conhecer"
+      }
+    ],
+    "id": "local-1772296894167-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 내 건 데스크탑이야. 화면 아래쪽에 누르는 버튼 있어. 노트북이면 키보드에서 기능 기호 있는 키 있는지 찾아봐.",
+    "pinyin": "",
+    "translation": "A: O meu é um desktop. Tem um botão para apertar na parte de baixo da tela. Se for um notebook, procure por teclas com símbolos de função no teclado.",
+    "tokens": [
+      "내",
+      "건",
+      "데스크탑이야",
+      ".",
+      "화면",
+      "아래쪽에",
+      "누르는",
+      "버튼",
+      "있어",
+      ".",
+      "노트북이면",
+      "키보드에서",
+      "기능",
+      "기호",
+      "있는",
+      "키",
+      "있는지",
+      "찾아봐",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "내",
+        "pinyin": "nae",
+        "meaning": "Meu/Minha (informal)"
+      },
+      {
+        "id": 2,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "Coisa"
+      },
+      {
+        "id": 3,
+        "word": "데스크탑",
+        "pinyin": "deseukeutap",
+        "meaning": "Desktop"
+      },
+      {
+        "id": 4,
+        "word": "화면",
+        "pinyin": "hwamyeon",
+        "meaning": "Tela"
+      },
+      {
+        "id": 5,
+        "word": "아래쪽",
+        "pinyin": "araejjok",
+        "meaning": "Parte de baixo"
+      },
+      {
+        "id": 6,
+        "word": "누르다",
+        "pinyin": "nureuda",
+        "meaning": "Apertar, pressionar"
+      },
+      {
+        "id": 7,
+        "word": "버튼",
+        "pinyin": "beoteun",
+        "meaning": "Botão"
+      },
+      {
+        "id": 8,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "Ter, existir"
+      },
+      {
+        "id": 9,
+        "word": "노트북",
+        "pinyin": "noteubuk",
+        "meaning": "Notebook"
+      },
+      {
+        "id": 10,
+        "word": "-이면",
+        "pinyin": "-imyeon",
+        "meaning": "Se (partícula condicional, após substantivo)"
+      },
+      {
+        "id": 11,
+        "word": "키보드",
+        "pinyin": "kibodeu",
+        "meaning": "Teclado"
+      },
+      {
+        "id": 12,
+        "word": "-에서",
+        "pinyin": "-eseo",
+        "meaning": "Em, de (partícula de localização/origem)"
+      },
+      {
+        "id": 13,
+        "word": "기능",
+        "pinyin": "gineung",
+        "meaning": "Função"
+      },
+      {
+        "id": 14,
+        "word": "기호",
+        "pinyin": "giho",
+        "meaning": "Símbolo"
+      },
+      {
+        "id": 15,
+        "word": "키",
+        "pinyin": "ki",
+        "meaning": "Teclado, tecla (também chave)"
+      },
+      {
+        "id": 16,
+        "word": "찾다",
+        "pinyin": "chatda",
+        "meaning": "Procurar, encontrar"
+      },
+      {
+        "id": 17,
+        "word": "-아/어 보다",
+        "pinyin": "-a/eo boda",
+        "meaning": "Tentar fazer algo, experimentar fazer"
+      }
+    ],
+    "id": "local-1772296894167-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어디 보자. 이건 대비 조절, 이건 색깔. 오, 이게 밝기네. 좋아, 최대한 어둡게 했어. 좀 나아?",
+    "pinyin": "",
+    "translation": "B: Deixe-me ver. Isso é ajuste de contraste, isso é cor. Oh, isso é brilho. Ok, escureci ao máximo. Melhorou um pouco?",
+    "tokens": [
+      "어디",
+      "보자",
+      ".",
+      "이건",
+      "대비",
+      "조절",
+      ",",
+      "이건",
+      "색깔",
+      ".",
+      "오",
+      ",",
+      "이게",
+      "밝기네",
+      ".",
+      "좋아",
+      ",",
+      "최대한",
+      "어둡게",
+      "했어",
+      ".",
+      "좀",
+      "나아",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어디",
+        "pinyin": "eodi",
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "Ver, olhar"
+      },
+      {
+        "id": 3,
+        "word": "-자",
+        "pinyin": "-ja",
+        "meaning": "Vamos (partícula de sugestão informal)"
+      },
+      {
+        "id": 4,
+        "word": "이것",
+        "pinyin": "igeot",
+        "meaning": "Esta coisa, isso"
+      },
+      {
+        "id": 5,
+        "word": "대비",
+        "pinyin": "daebi",
+        "meaning": "Contraste"
+      },
+      {
+        "id": 6,
+        "word": "조절",
+        "pinyin": "jojeol",
+        "meaning": "Ajuste, controle"
+      },
+      {
+        "id": 7,
+        "word": "색깔",
+        "pinyin": "saekkal",
+        "meaning": "Cor"
+      },
+      {
+        "id": 8,
+        "word": "오",
+        "pinyin": "o",
+        "meaning": "Oh (interjeição de surpresa/percepção)"
+      },
+      {
+        "id": 9,
+        "word": "밝기",
+        "pinyin": "balkki",
+        "meaning": "Brilho (substantivo)"
+      },
+      {
+        "id": 10,
+        "word": "-네",
+        "pinyin": "-ne",
+        "meaning": "Partícula de exclamação/descoberta"
+      },
+      {
+        "id": 11,
+        "word": "좋다",
+        "pinyin": "jota",
+        "meaning": "Ser bom, estar bem"
+      },
+      {
+        "id": 12,
+        "word": "최대한",
+        "pinyin": "choedaehan",
+        "meaning": "Ao máximo"
+      },
+      {
+        "id": 13,
+        "word": "어둡다",
+        "pinyin": "eodupda",
+        "meaning": "Ser escuro"
+      },
+      {
+        "id": 14,
+        "word": "하다",
+        "pinyin": "hada",
+        "meaning": "Fazer"
+      },
+      {
+        "id": 15,
+        "word": "좀",
+        "pinyin": "jom",
+        "meaning": "Um pouco"
+      },
+      {
+        "id": 16,
+        "word": "낫다",
+        "pinyin": "natda",
+        "meaning": "Melhorar, ser melhor"
+      }
+    ],
+    "id": "local-1772296894167-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 훨씬 낫다. 이제 잘게. 잘 자!",
+    "pinyin": "",
+    "translation": "A: Muito melhor. Agora vou dormir. Durma bem!",
+    "tokens": [
+      "훨씬",
+      "낫다",
+      ".",
+      "이제",
+      "잘게",
+      ".",
+      "잘",
+      "자",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "훨씬",
+        "pinyin": "hwolssin",
+        "meaning": "Muito (mais), consideravelmente"
+      },
+      {
+        "id": 2,
+        "word": "낫다",
+        "pinyin": "natda",
+        "meaning": "Melhorar, ser melhor"
+      },
+      {
+        "id": 3,
+        "word": "이제",
+        "pinyin": "ije",
+        "meaning": "Agora"
+      },
+      {
+        "id": 4,
+        "word": "자다",
+        "pinyin": "jada",
+        "meaning": "Dormir"
+      },
+      {
+        "id": 5,
+        "word": "-을게/-ㄹ게",
+        "pinyin": "-eulge/-lge",
+        "meaning": "Vou fazer (expressa intenção do falante)"
+      },
+      {
+        "id": 6,
+        "word": "잘",
+        "pinyin": "jal",
+        "meaning": "Bem (advérbio)"
+      }
+    ],
+    "id": "local-1772296894167-6",
+    "language": "Coreano"
+  }
+]

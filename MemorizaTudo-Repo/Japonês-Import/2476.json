@@ -1,0 +1,717 @@
+[
+  {
+    "chinese": "A: こんにちは。お尋ねしますが、こちらは華美病院の健康診断部ですか？",
+    "pinyin": "",
+    "translation": "A: Olá. Gostaria de perguntar, este é o departamento de exames de saúde do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "こんにちは",
+      "。",
+      "お尋ねします",
+      "が",
+      "、",
+      "こちら",
+      "は",
+      "華美病院",
+      "の",
+      "健康診断部",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんにちは",
+        "pinyin": "konnichiwa",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "お尋ねします",
+        "pinyin": "otazune shimasu",
+        "meaning": "Gostaria de perguntar / Permita-me perguntar"
+      },
+      {
+        "id": 3,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "Este lugar / Aqui"
+      },
+      {
+        "id": 4,
+        "word": "華美病院",
+        "pinyin": "kami byōin",
+        "meaning": "Hospital Huamei (nome próprio)"
+      },
+      {
+        "id": 5,
+        "word": "健康診断部",
+        "pinyin": "kenkō shindan bu",
+        "meaning": "Departamento de exames de saúde"
+      }
+    ],
+    "id": "local-1772300337807-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい、そうです。何かお手伝いできることはございますか？",
+    "pinyin": "",
+    "translation": "B: Sim, é. Posso ajudar em algo?",
+    "tokens": [
+      "B:",
+      "はい",
+      "、",
+      "そう",
+      "です",
+      "。",
+      "何か",
+      "お",
+      "手伝い",
+      "できる",
+      "こと",
+      "は",
+      "ございます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "Algo"
+      },
+      {
+        "id": 3,
+        "word": "お手伝いできる",
+        "pinyin": "otetsudai dekiru",
+        "meaning": "Poder ajudar"
+      },
+      {
+        "id": 4,
+        "word": "ございます",
+        "pinyin": "gozaimasu",
+        "meaning": "Existe (forma formal de ある)"
+      }
+    ],
+    "id": "local-1772300337807-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: こちらでは入社時健康診断を行っていますか？",
+    "pinyin": "",
+    "translation": "A: Vocês realizam exames de saúde de admissão aqui?",
+    "tokens": [
+      "A:",
+      "こちら",
+      "で",
+      "は",
+      "入社時健康診断",
+      "を",
+      "行っ",
+      "て",
+      "います",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "Aqui / Neste lugar"
+      },
+      {
+        "id": 2,
+        "word": "入社時健康診断",
+        "pinyin": "nyūsha-ji kenkō shindan",
+        "meaning": "Exame de saúde de admissão"
+      },
+      {
+        "id": 3,
+        "word": "行う",
+        "pinyin": "okonau",
+        "meaning": "Realizar / Conduzir"
+      }
+    ],
+    "id": "local-1772300337807-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい、行っています。260元のパッケージがございます。",
+    "pinyin": "",
+    "translation": "B: Sim, realizamos. Temos um pacote de 260 yuans.",
+    "tokens": [
+      "B:",
+      "はい",
+      "、",
+      "行っ",
+      "て",
+      "います",
+      "。",
+      "260",
+      "元",
+      "の",
+      "パッケージ",
+      "が",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "行う",
+        "pinyin": "okonau",
+        "meaning": "Realizar / Conduzir"
+      },
+      {
+        "id": 3,
+        "word": "元",
+        "pinyin": "gen",
+        "meaning": "Yuan (moeda)"
+      },
+      {
+        "id": 4,
+        "word": "パッケージ",
+        "pinyin": "pakkeeji",
+        "meaning": "Pacote"
+      },
+      {
+        "id": 5,
+        "word": "ございます",
+        "pinyin": "gozaimasu",
+        "meaning": "Existe (forma formal de ある)"
+      }
+    ],
+    "id": "local-1772300337807-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: どのような項目が検査されますか？",
+    "pinyin": "",
+    "translation": "A: Quais itens são examinados?",
+    "tokens": [
+      "A:",
+      "どの",
+      "よう",
+      "な",
+      "項目",
+      "が",
+      "検査さ",
+      "れ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どのような",
+        "pinyin": "dono yō na",
+        "meaning": "Que tipo de / Quais"
+      },
+      {
+        "id": 2,
+        "word": "項目",
+        "pinyin": "kōmoku",
+        "meaning": "Item / Componente"
+      },
+      {
+        "id": 3,
+        "word": "検査する",
+        "pinyin": "kensa suru",
+        "meaning": "Examinar / Testar"
+      }
+    ],
+    "id": "local-1772300337807-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 基本的な身長、体重、血圧。血液検査、尿検査、Bモード超音波検査、そして心電図です。",
+    "pinyin": "",
+    "translation": "B: Os básicos: altura, peso, pressão arterial. Exame de sangue, exame de urina, ultrassonografia modo B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "基本",
+      "的",
+      "な",
+      "身長",
+      "、",
+      "体重",
+      "、",
+      "血圧",
+      "。",
+      "血液検査",
+      "、",
+      "尿検査",
+      "、",
+      "Bモード超音波検査",
+      "、",
+      "そして",
+      "心電図",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "基本的な",
+        "pinyin": "kihonteki na",
+        "meaning": "Básico / Fundamental"
+      },
+      {
+        "id": 2,
+        "word": "身長",
+        "pinyin": "shinchō",
+        "meaning": "Altura"
+      },
+      {
+        "id": 3,
+        "word": "体重",
+        "pinyin": "taijū",
+        "meaning": "Peso"
+      },
+      {
+        "id": 4,
+        "word": "血圧",
+        "pinyin": "ketsuatsu",
+        "meaning": "Pressão arterial"
+      },
+      {
+        "id": 5,
+        "word": "血液検査",
+        "pinyin": "ketsueki kensa",
+        "meaning": "Exame de sangue"
+      },
+      {
+        "id": 6,
+        "word": "尿検査",
+        "pinyin": "nyō kensa",
+        "meaning": "Exame de urina"
+      },
+      {
+        "id": 7,
+        "word": "Bモード超音波検査",
+        "pinyin": "B-mōdo chōonpa kensa",
+        "meaning": "Ultrassonografia modo B"
+      },
+      {
+        "id": 8,
+        "word": "そして",
+        "pinyin": "soshite",
+        "meaning": "E (conjunção)"
+      },
+      {
+        "id": 9,
+        "word": "心電図",
+        "pinyin": "shindenzu",
+        "meaning": "Eletrocardiograma"
+      }
+    ],
+    "id": "local-1772300337807-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: もし他の項目も検査してもらいたい場合、それは可能ですか？",
+    "pinyin": "",
+    "translation": "A: Se eu quiser que outros itens também sejam examinados, isso é possível?",
+    "tokens": [
+      "A:",
+      "もし",
+      "他",
+      "の",
+      "項目",
+      "も",
+      "検査し",
+      "て",
+      "もらい",
+      "たい",
+      "場合",
+      "、",
+      "それ",
+      "は",
+      "可能",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "もし",
+        "pinyin": "moshi",
+        "meaning": "Se (condicional)"
+      },
+      {
+        "id": 2,
+        "word": "他の",
+        "pinyin": "hoka no",
+        "meaning": "Outros"
+      },
+      {
+        "id": 3,
+        "word": "項目",
+        "pinyin": "kōmoku",
+        "meaning": "Item / Componente"
+      },
+      {
+        "id": 4,
+        "word": "検査してもらう",
+        "pinyin": "kensa shite morau",
+        "meaning": "Ter algo examinado (pedir que alguém examine para você)"
+      },
+      {
+        "id": 5,
+        "word": "場合",
+        "pinyin": "baai",
+        "meaning": "Caso / Situação"
+      },
+      {
+        "id": 6,
+        "word": "可能",
+        "pinyin": "kanō",
+        "meaning": "Possível"
+      }
+    ],
+    "id": "local-1772300337807-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい、可能です。個別の項目を追加し、その費用を支払っていただければ問題ありません。",
+    "pinyin": "",
+    "translation": "B: Sim, é possível. Não há problema se você adicionar itens individuais e pagar os custos.",
+    "tokens": [
+      "B:",
+      "はい",
+      "、",
+      "可能",
+      "です",
+      "。",
+      "個別",
+      "の",
+      "項目",
+      "を",
+      "追加し",
+      "、",
+      "その",
+      "費用",
+      "を",
+      "支払っ",
+      "て",
+      "いただけれ",
+      "ば",
+      "問題",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "可能",
+        "pinyin": "kanō",
+        "meaning": "Possível"
+      },
+      {
+        "id": 3,
+        "word": "個別",
+        "pinyin": "kobetsu",
+        "meaning": "Individual"
+      },
+      {
+        "id": 4,
+        "word": "項目",
+        "pinyin": "kōmoku",
+        "meaning": "Item / Componente"
+      },
+      {
+        "id": 5,
+        "word": "追加する",
+        "pinyin": "tsuika suru",
+        "meaning": "Adicionar"
+      },
+      {
+        "id": 6,
+        "word": "費用",
+        "pinyin": "hiyō",
+        "meaning": "Custo / Despesa"
+      },
+      {
+        "id": 7,
+        "word": "支払う",
+        "pinyin": "shiharau",
+        "meaning": "Pagar"
+      },
+      {
+        "id": 8,
+        "word": "問題ありません",
+        "pinyin": "mondai arimasen",
+        "meaning": "Não há problema / Está tudo bem"
+      }
+    ],
+    "id": "local-1772300337807-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 報告書は職場に直接郵送されますか？",
+    "pinyin": "",
+    "translation": "A: O relatório é enviado diretamente para o local de trabalho?",
+    "tokens": [
+      "A:",
+      "報告書",
+      "は",
+      "職場",
+      "に",
+      "直接",
+      "郵送さ",
+      "れ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "報告書",
+        "pinyin": "hōkokusho",
+        "meaning": "Relatório"
+      },
+      {
+        "id": 2,
+        "word": "職場",
+        "pinyin": "shokuba",
+        "meaning": "Local de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "直接",
+        "pinyin": "chokusetsu",
+        "meaning": "Diretamente"
+      },
+      {
+        "id": 4,
+        "word": "郵送する",
+        "pinyin": "yūsō suru",
+        "meaning": "Enviar por correio"
+      }
+    ],
+    "id": "local-1772300337807-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: いいえ、ご本人が受け取りに来るか、速達で送るか、どちらかになります。今すぐ予約のお手伝いをいたしましょうか？",
+    "pinyin": "",
+    "translation": "B: Não, o próprio indivíduo vem buscar, ou enviamos por correio expresso, uma das duas opções. Gostaria que eu o ajudasse a marcar uma consulta agora?",
+    "tokens": [
+      "B:",
+      "いいえ",
+      "、",
+      "ご本人",
+      "が",
+      "受け取り",
+      "に",
+      "来る",
+      "か",
+      "、",
+      "速達",
+      "で",
+      "送る",
+      "か",
+      "、",
+      "どちら",
+      "か",
+      "に",
+      "なり",
+      "ます",
+      "。",
+      "今すぐ",
+      "予約",
+      "の",
+      "お手伝い",
+      "を",
+      "いたし",
+      "ましょう",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "いいえ",
+        "pinyin": "iie",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "ご本人",
+        "pinyin": "go honnin",
+        "meaning": "O próprio indivíduo / A pessoa em questão"
+      },
+      {
+        "id": 3,
+        "word": "受け取りに来る",
+        "pinyin": "uketori ni kuru",
+        "meaning": "Vir buscar / Vir pegar"
+      },
+      {
+        "id": 4,
+        "word": "速達",
+        "pinyin": "sokutatsu",
+        "meaning": "Correio expresso / Entrega rápida"
+      },
+      {
+        "id": 5,
+        "word": "送る",
+        "pinyin": "okuru",
+        "meaning": "Enviar"
+      },
+      {
+        "id": 6,
+        "word": "どちらか",
+        "pinyin": "dochira ka",
+        "meaning": "Uma ou outra / Qualquer um dos dois"
+      },
+      {
+        "id": 7,
+        "word": "今すぐ",
+        "pinyin": "ima sugu",
+        "meaning": "Imediatamente / Agora mesmo"
+      },
+      {
+        "id": 8,
+        "word": "予約",
+        "pinyin": "yoyaku",
+        "meaning": "Reserva / Agendamento"
+      },
+      {
+        "id": 9,
+        "word": "お手伝い",
+        "pinyin": "otetsudai",
+        "meaning": "Ajuda (formal)"
+      },
+      {
+        "id": 10,
+        "word": "いたしましょうか",
+        "pinyin": "itashimashō ka",
+        "meaning": "Gostaria que eu fizesse? (forma humilde)"
+      }
+    ],
+    "id": "local-1772300337807-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 来週の月曜日に予約してください。",
+    "pinyin": "",
+    "translation": "A: Por favor, agende para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "来週",
+      "の",
+      "月曜日",
+      "に",
+      "予約し",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "来週",
+        "pinyin": "raishū",
+        "meaning": "Próxima semana"
+      },
+      {
+        "id": 2,
+        "word": "月曜日",
+        "pinyin": "getsuyōbi",
+        "meaning": "Segunda-feira"
+      },
+      {
+        "id": 3,
+        "word": "予約する",
+        "pinyin": "yoyaku suru",
+        "meaning": "Reservar / Agendar"
+      },
+      {
+        "id": 4,
+        "word": "してください",
+        "pinyin": "shite kudasai",
+        "meaning": "Por favor, faça"
+      }
+    ],
+    "id": "local-1772300337807-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 承知いたしました。基本的な情報をお教えください。",
+    "pinyin": "",
+    "translation": "B: Entendido. Por favor, forneça suas informações básicas.",
+    "tokens": [
+      "B:",
+      "承知し",
+      "て",
+      "いたし",
+      "まし",
+      "た",
+      "。",
+      "基本",
+      "的",
+      "な",
+      "情報",
+      "を",
+      "お",
+      "教え",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "承知いたしました",
+        "pinyin": "shōchi itashimashita",
+        "meaning": "Entendido / Compreendido (formal e humilde)"
+      },
+      {
+        "id": 2,
+        "word": "基本的な",
+        "pinyin": "kihonteki na",
+        "meaning": "Básico / Fundamental"
+      },
+      {
+        "id": 3,
+        "word": "情報",
+        "pinyin": "jōhō",
+        "meaning": "Informação"
+      },
+      {
+        "id": 4,
+        "word": "お教えください",
+        "pinyin": "o-oshie kudasai",
+        "meaning": "Por favor, diga / informe"
+      }
+    ],
+    "id": "local-1772300337807-11",
+    "language": "Japonês"
+  }
+]

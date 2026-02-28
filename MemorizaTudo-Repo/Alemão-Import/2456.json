@@ -1,0 +1,543 @@
+[
+  {
+    "chinese": "A: Xiao Liu, das ist dein erster Tag als Praktikantin. Wenn du etwas nicht verstehst, frag einfach.",
+    "pinyin": "",
+    "translation": "A: Xiao Liu, este é seu primeiro dia como estagiária. Se você não entender algo, é só perguntar.",
+    "tokens": [
+      "Xiao",
+      "Liu",
+      "das",
+      "ist",
+      "dein",
+      "erster",
+      "Tag",
+      "als",
+      "Praktikantin",
+      "Wenn",
+      "du",
+      "etwas",
+      "nicht",
+      "verstehst",
+      "frag",
+      "einfach"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "erster",
+        "pinyin": "",
+        "meaning": "primeiro(a)"
+      },
+      {
+        "id": 2,
+        "word": "Tag",
+        "pinyin": "",
+        "meaning": "dia"
+      },
+      {
+        "id": 3,
+        "word": "Praktikantin",
+        "pinyin": "",
+        "meaning": "estagiária"
+      },
+      {
+        "id": 4,
+        "word": "Wenn",
+        "pinyin": "",
+        "meaning": "se (conjunção)"
+      },
+      {
+        "id": 5,
+        "word": "etwas",
+        "pinyin": "",
+        "meaning": "algo, alguma coisa"
+      },
+      {
+        "id": 6,
+        "word": "verstehst",
+        "pinyin": "",
+        "meaning": "você entende (do verbo verstehen)"
+      },
+      {
+        "id": 7,
+        "word": "frag",
+        "pinyin": "",
+        "meaning": "pergunte (do verbo fragen)"
+      },
+      {
+        "id": 8,
+        "word": "einfach",
+        "pinyin": "",
+        "meaning": "simplesmente, apenas"
+      }
+    ],
+    "id": "local-1772293446726-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay, Frau Li. Was soll ich tun?",
+    "pinyin": "",
+    "translation": "B: Ok, Sra. Li. O que devo fazer?",
+    "tokens": [
+      "Okay",
+      "Frau",
+      "Li",
+      "Was",
+      "soll",
+      "ich",
+      "tun"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "Senhora, Sra."
+      },
+      {
+        "id": 2,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 3,
+        "word": "soll",
+        "pinyin": "",
+        "meaning": "devo (do verbo sollen)"
+      },
+      {
+        "id": 4,
+        "word": "tun",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772293446726-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Hier sind einige Dokumente. Sortiere sie bitte. Schau nach, welche davon nützlich sind und auf welchen \"null und nichtig\" steht.",
+    "pinyin": "",
+    "translation": "A: Aqui estão alguns documentos. Por favor, separe-os. Veja quais deles são úteis e em quais está escrito \"nulo e sem efeito\".",
+    "tokens": [
+      "Hier",
+      "sind",
+      "einige",
+      "Dokumente",
+      "Sortiere",
+      "sie",
+      "bitte",
+      "Schau",
+      "nach",
+      "welche",
+      "davon",
+      "nützlich",
+      "sind",
+      "und",
+      "auf",
+      "welchen",
+      "null",
+      "und",
+      "nichtig",
+      "steht"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hier",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 2,
+        "word": "einige",
+        "pinyin": "",
+        "meaning": "alguns, algumas"
+      },
+      {
+        "id": 3,
+        "word": "Dokumente",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 4,
+        "word": "Sortiere",
+        "pinyin": "",
+        "meaning": "separe, classifique (do verbo sortieren)"
+      },
+      {
+        "id": 5,
+        "word": "bitte",
+        "pinyin": "",
+        "meaning": "por favor"
+      },
+      {
+        "id": 6,
+        "word": "Schau nach",
+        "pinyin": "",
+        "meaning": "verifique, procure (do verbo nachschauen)"
+      },
+      {
+        "id": 7,
+        "word": "nützlich",
+        "pinyin": "",
+        "meaning": "útil"
+      },
+      {
+        "id": 8,
+        "word": "null und nichtig",
+        "pinyin": "",
+        "meaning": "nulo e sem efeito"
+      },
+      {
+        "id": 9,
+        "word": "steht",
+        "pinyin": "",
+        "meaning": "está escrito (do verbo stehen)"
+      }
+    ],
+    "id": "local-1772293446726-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay, Frau Li. Das sind alles ungültige Dokumente.",
+    "pinyin": "",
+    "translation": "B: Ok, Sra. Li. Estes são todos documentos inválidos.",
+    "tokens": [
+      "Okay",
+      "Frau",
+      "Li",
+      "Das",
+      "sind",
+      "alles",
+      "ungültige",
+      "Dokumente"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "Senhora, Sra."
+      },
+      {
+        "id": 2,
+        "word": "alles",
+        "pinyin": "",
+        "meaning": "tudo, todos"
+      },
+      {
+        "id": 3,
+        "word": "ungültige",
+        "pinyin": "",
+        "meaning": "inválidos (do adjetivo ungültig)"
+      },
+      {
+        "id": 4,
+        "word": "Dokumente",
+        "pinyin": "",
+        "meaning": "documentos"
+      }
+    ],
+    "id": "local-1772293446726-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Gut, dann entsorge sie.",
+    "pinyin": "",
+    "translation": "A: Certo, então descarte-os.",
+    "tokens": [
+      "Gut",
+      "dann",
+      "entsorge",
+      "sie"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gut",
+        "pinyin": "",
+        "meaning": "bom, certo"
+      },
+      {
+        "id": 2,
+        "word": "dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "entsorge",
+        "pinyin": "",
+        "meaning": "descarte (do verbo entsorgen)"
+      }
+    ],
+    "id": "local-1772293446726-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kann ich sie in den Papierkorb werfen?",
+    "pinyin": "",
+    "translation": "B: Posso jogá-los na lixeira?",
+    "tokens": [
+      "Kann",
+      "ich",
+      "sie",
+      "in",
+      "den",
+      "Papierkorb",
+      "werfen"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kann",
+        "pinyin": "",
+        "meaning": "posso (do verbo können)"
+      },
+      {
+        "id": 2,
+        "word": "Papierkorb",
+        "pinyin": "",
+        "meaning": "lixeira, cesto de papéis"
+      },
+      {
+        "id": 3,
+        "word": "werfen",
+        "pinyin": "",
+        "meaning": "jogar, atirar"
+      }
+    ],
+    "id": "local-1772293446726-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein. Firmenunterlagen darf man nicht einfach wegwerfen. Was ist, wenn sie wichtige Informationen enthalten?",
+    "pinyin": "",
+    "translation": "A: Não. Documentos da empresa não devem ser simplesmente jogados fora. E se eles contiverem informações importantes?",
+    "tokens": [
+      "Nein",
+      "Firmenunterlagen",
+      "darf",
+      "man",
+      "nicht",
+      "einfach",
+      "wegwerfen",
+      "Was",
+      "ist",
+      "wenn",
+      "sie",
+      "wichtige",
+      "Informationen",
+      "enthalten"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "Firmenunterlagen",
+        "pinyin": "",
+        "meaning": "documentos da empresa"
+      },
+      {
+        "id": 3,
+        "word": "darf",
+        "pinyin": "",
+        "meaning": "é permitido (do verbo dürfen)"
+      },
+      {
+        "id": 4,
+        "word": "man",
+        "pinyin": "",
+        "meaning": "alguém (pronome impessoal)"
+      },
+      {
+        "id": 5,
+        "word": "wegwerfen",
+        "pinyin": "",
+        "meaning": "jogar fora (verbo separável)"
+      },
+      {
+        "id": 6,
+        "word": "Was ist, wenn",
+        "pinyin": "",
+        "meaning": "e se"
+      },
+      {
+        "id": 7,
+        "word": "wichtige",
+        "pinyin": "",
+        "meaning": "importantes (do adjetivo wichtig)"
+      },
+      {
+        "id": 8,
+        "word": "Informationen",
+        "pinyin": "",
+        "meaning": "informações"
+      },
+      {
+        "id": 9,
+        "word": "enthalten",
+        "pinyin": "",
+        "meaning": "conter (verbo)"
+      }
+    ],
+    "id": "local-1772293446726-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Soll ich sie dann von Hand zerreißen?",
+    "pinyin": "",
+    "translation": "B: Então devo rasgá-los à mão?",
+    "tokens": [
+      "Soll",
+      "ich",
+      "sie",
+      "dann",
+      "von",
+      "Hand",
+      "zerreißen"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Soll",
+        "pinyin": "",
+        "meaning": "devo (do verbo sollen)"
+      },
+      {
+        "id": 2,
+        "word": "von Hand",
+        "pinyin": "",
+        "meaning": "à mão"
+      },
+      {
+        "id": 3,
+        "word": "zerreißen",
+        "pinyin": "",
+        "meaning": "rasgar, dilacerar"
+      }
+    ],
+    "id": "local-1772293446726-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Haha, natürlich nicht. Benutze den Aktenvernichter. Komm, ich zeig's dir. Schalte den Aktenvernichter ein und dann führ die Dokumente langsam ein.",
+    "pinyin": "",
+    "translation": "A: Haha, claro que não. Use o triturador de papel. Venha, eu te mostro. Ligue o triturador de papel e então insira os documentos lentamente.",
+    "tokens": [
+      "Haha",
+      "natürlich",
+      "nicht",
+      "Benutze",
+      "den",
+      "Aktenvernichter",
+      "Komm",
+      "ich",
+      "zeig's",
+      "dir",
+      "Schalte",
+      "den",
+      "Aktenvernichter",
+      "ein",
+      "und",
+      "dann",
+      "führ",
+      "die",
+      "Dokumente",
+      "langsam",
+      "ein"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "natürlich",
+        "pinyin": "",
+        "meaning": "naturalmente, claro"
+      },
+      {
+        "id": 2,
+        "word": "Benutze",
+        "pinyin": "",
+        "meaning": "use (do verbo benutzen)"
+      },
+      {
+        "id": 3,
+        "word": "Aktenvernichter",
+        "pinyin": "",
+        "meaning": "triturador de papel"
+      },
+      {
+        "id": 4,
+        "word": "Komm",
+        "pinyin": "",
+        "meaning": "venha (do verbo kommen)"
+      },
+      {
+        "id": 5,
+        "word": "zeig's",
+        "pinyin": "",
+        "meaning": "mostro (abreviação de zeige es)"
+      },
+      {
+        "id": 6,
+        "word": "dir",
+        "pinyin": "",
+        "meaning": "a você (pronome dativo)"
+      },
+      {
+        "id": 7,
+        "word": "Schalte ein",
+        "pinyin": "",
+        "meaning": "ligue, acenda (do verbo einschalten)"
+      },
+      {
+        "id": 8,
+        "word": "führ ein",
+        "pinyin": "",
+        "meaning": "insira (do verbo einführen)"
+      },
+      {
+        "id": 9,
+        "word": "langsam",
+        "pinyin": "",
+        "meaning": "lentamente"
+      }
+    ],
+    "id": "local-1772293446726-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Danke, Frau Li.",
+    "pinyin": "",
+    "translation": "B: Obrigado, Sra. Li.",
+    "tokens": [
+      "Danke",
+      "Frau",
+      "Li"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Danke",
+        "pinyin": "",
+        "meaning": "obrigado(a)"
+      },
+      {
+        "id": 2,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "Senhora, Sra."
+      }
+    ],
+    "id": "local-1772293446726-9",
+    "language": "Alemão"
+  }
+]

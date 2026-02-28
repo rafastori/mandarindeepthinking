@@ -1,0 +1,756 @@
+[
+  {
+    "chinese": "何を観ているの？",
+    "pinyin": "",
+    "translation": "A: O que você está assistindo?",
+    "tokens": [
+      "何",
+      "を",
+      "観て",
+      "いる",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "観る",
+        "pinyin": "",
+        "meaning": "assistir, ver"
+      }
+    ],
+    "id": "local-1772297240153-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "影絵芝居だよ。",
+    "pinyin": "",
+    "translation": "B: É um teatro de sombras.",
+    "tokens": [
+      "影絵芝居",
+      "だ",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "影絵芝居",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      }
+    ],
+    "id": "local-1772297240153-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "どうして今までこれを見たことがないんだろう？",
+    "pinyin": "",
+    "translation": "A: Por que eu nunca vi isso antes?",
+    "tokens": [
+      "どうして",
+      "今まで",
+      "これ",
+      "を",
+      "見たこと",
+      "が",
+      "ない",
+      "ん",
+      "だろう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "どうして",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 5,
+        "word": "今まで",
+        "pinyin": "",
+        "meaning": "até agora, até hoje"
+      },
+      {
+        "id": 6,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isso, este"
+      },
+      {
+        "id": 2,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 7,
+        "word": "〜たことがない",
+        "pinyin": "",
+        "meaning": "nunca ter feito (algo)"
+      }
+    ],
+    "id": "local-1772297240153-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "これは中国の伝統的な民間芸術なんだ。今はあまり見る人がいないんだよ。",
+    "pinyin": "",
+    "translation": "B: Esta é uma arte folclórica tradicional chinesa. Hoje em dia, não há muitas pessoas que a assistem.",
+    "tokens": [
+      "これ",
+      "は",
+      "中国",
+      "の",
+      "伝統的",
+      "な",
+      "民間芸術",
+      "なん",
+      "だ",
+      "。",
+      "今",
+      "は",
+      "あまり",
+      "見る",
+      "人",
+      "が",
+      "いない",
+      "ん",
+      "だよ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isso, este"
+      },
+      {
+        "id": 8,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 9,
+        "word": "伝統的",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 10,
+        "word": "民間芸術",
+        "pinyin": "",
+        "meaning": "arte folclórica, arte popular"
+      },
+      {
+        "id": 11,
+        "word": "今",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 12,
+        "word": "あまり",
+        "pinyin": "",
+        "meaning": "não muito, pouco"
+      },
+      {
+        "id": 2,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 13,
+        "word": "人",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 14,
+        "word": "いない",
+        "pinyin": "",
+        "meaning": "não existe (para seres vivos)"
+      }
+    ],
+    "id": "local-1772297240153-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "これ、「西遊記」の話だよね？",
+    "pinyin": "",
+    "translation": "A: Isso é a história de 'Jornada ao Oeste', certo?",
+    "tokens": [
+      "これ",
+      "、",
+      "「",
+      "西遊記",
+      "」",
+      "の",
+      "話",
+      "だ",
+      "よね",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isso, este"
+      },
+      {
+        "id": 15,
+        "word": "西遊記",
+        "pinyin": "",
+        "meaning": "Jornada ao Oeste (Viagem ao Oeste)"
+      },
+      {
+        "id": 16,
+        "word": "話",
+        "pinyin": "",
+        "meaning": "história, conto"
+      }
+    ],
+    "id": "local-1772297240153-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "そうだよ。これらの登場人物は全部、動物の皮か厚紙で作られているんだ。",
+    "pinyin": "",
+    "translation": "B: Isso mesmo. Todos esses personagens são feitos de pele de animal ou papelão grosso.",
+    "tokens": [
+      "そう",
+      "だ",
+      "よ",
+      "。",
+      "これら",
+      "の",
+      "登場人物",
+      "は",
+      "全部",
+      "、",
+      "動物",
+      "の",
+      "皮",
+      "か",
+      "厚紙",
+      "で",
+      "作られて",
+      "いる",
+      "ん",
+      "だ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "そう",
+        "pinyin": "",
+        "meaning": "isso mesmo, é assim"
+      },
+      {
+        "id": 18,
+        "word": "これら",
+        "pinyin": "",
+        "meaning": "estes, estas"
+      },
+      {
+        "id": 19,
+        "word": "登場人物",
+        "pinyin": "",
+        "meaning": "personagem (de uma peça, livro)"
+      },
+      {
+        "id": 20,
+        "word": "全部",
+        "pinyin": "",
+        "meaning": "tudo, todos"
+      },
+      {
+        "id": 21,
+        "word": "動物",
+        "pinyin": "",
+        "meaning": "animal"
+      },
+      {
+        "id": 22,
+        "word": "皮",
+        "pinyin": "",
+        "meaning": "pele, couro"
+      },
+      {
+        "id": 23,
+        "word": "厚紙",
+        "pinyin": "",
+        "meaning": "papelão grosso"
+      },
+      {
+        "id": 24,
+        "word": "作る",
+        "pinyin": "",
+        "meaning": "fazer, criar"
+      },
+      {
+        "id": 25,
+        "word": "〜で作られている",
+        "pinyin": "",
+        "meaning": "ser feito de (material)"
+      }
+    ],
+    "id": "local-1772297240153-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "じゃあ、どうやって動かしているの？",
+    "pinyin": "",
+    "translation": "A: Então, como os movimentam?",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "どうやって",
+      "動かして",
+      "いる",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 27,
+        "word": "どうやって",
+        "pinyin": "",
+        "meaning": "como (fazendo o quê)"
+      },
+      {
+        "id": 28,
+        "word": "動かす",
+        "pinyin": "",
+        "meaning": "mover, movimentar (transitivo)"
+      }
+    ],
+    "id": "local-1772297240153-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "それらを操る人がいるんだ。",
+    "pinyin": "",
+    "translation": "B: Há pessoas que os manipulam.",
+    "tokens": [
+      "それら",
+      "を",
+      "操る",
+      "人",
+      "が",
+      "いる",
+      "ん",
+      "だ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "それら",
+        "pinyin": "",
+        "meaning": "aqueles, aquelas"
+      },
+      {
+        "id": 30,
+        "word": "操る",
+        "pinyin": "",
+        "meaning": "manipular, operar, controlar"
+      },
+      {
+        "id": 13,
+        "word": "人",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 31,
+        "word": "いる",
+        "pinyin": "",
+        "meaning": "estar, haver (para seres vivos)"
+      }
+    ],
+    "id": "local-1772297240153-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "それは本当に面白いね。公演を観られる場所はある？",
+    "pinyin": "",
+    "translation": "A: Isso é realmente interessante. Há algum lugar onde se possa assistir a uma apresentação?",
+    "tokens": [
+      "それ",
+      "は",
+      "本当に",
+      "面白い",
+      "ね",
+      "。",
+      "公演",
+      "を",
+      "観られる",
+      "場所",
+      "は",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "それ",
+        "pinyin": "",
+        "meaning": "isso, aquele"
+      },
+      {
+        "id": 33,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 34,
+        "word": "面白い",
+        "pinyin": "",
+        "meaning": "interessante, divertido"
+      },
+      {
+        "id": 35,
+        "word": "公演",
+        "pinyin": "",
+        "meaning": "apresentação, espetáculo"
+      },
+      {
+        "id": 2,
+        "word": "観る",
+        "pinyin": "",
+        "meaning": "assistir, ver"
+      },
+      {
+        "id": 36,
+        "word": "場所",
+        "pinyin": "",
+        "meaning": "lugar, local"
+      },
+      {
+        "id": 37,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "estar, haver (para coisas inanimadas)"
+      }
+    ],
+    "id": "local-1772297240153-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "来週、北京に行くんでしょ？北京には「什刹海影絵芸術演出ホテル」という場所があるよ。そこに行って体験できるよ。",
+    "pinyin": "",
+    "translation": "B: Você vai para Pequim na próxima semana, certo? Em Pequim, há um lugar chamado 'Shichahai Shadow Art Performance Hotel'. Você pode ir lá e experimentar.",
+    "tokens": [
+      "来週",
+      "、",
+      "北京",
+      "に",
+      "行く",
+      "ん",
+      "でしょ",
+      "？",
+      "北京",
+      "に",
+      "は",
+      "「",
+      "什刹海影絵芸術演出ホテル",
+      "」",
+      "と",
+      "いう",
+      "場所",
+      "が",
+      "ある",
+      "よ",
+      "。",
+      "そこ",
+      "に",
+      "行って",
+      "体験",
+      "できる",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "来週",
+        "pinyin": "",
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 39,
+        "word": "北京",
+        "pinyin": "",
+        "meaning": "Pequim"
+      },
+      {
+        "id": 40,
+        "word": "行く",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 41,
+        "word": "什刹海影絵芸術演出ホテル",
+        "pinyin": "",
+        "meaning": "Hotel de Performance de Arte de Sombras Shichahai"
+      },
+      {
+        "id": 36,
+        "word": "場所",
+        "pinyin": "",
+        "meaning": "lugar, local"
+      },
+      {
+        "id": 37,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "estar, haver (para coisas inanimadas)"
+      },
+      {
+        "id": 42,
+        "word": "そこ",
+        "pinyin": "",
+        "meaning": "lá"
+      },
+      {
+        "id": 43,
+        "word": "体験する",
+        "pinyin": "",
+        "meaning": "experimentar (uma experiência)"
+      },
+      {
+        "id": 44,
+        "word": "できる",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772297240153-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "絶対に行くよ。影絵芝居を演じることを学べるかな？",
+    "pinyin": "",
+    "translation": "A: Com certeza irei! Posso aprender a encenar o teatro de sombras?",
+    "tokens": [
+      "絶対",
+      "に",
+      "行く",
+      "よ",
+      "。",
+      "影絵芝居",
+      "を",
+      "演じる",
+      "こと",
+      "を",
+      "学べる",
+      "かな",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "絶対に",
+        "pinyin": "",
+        "meaning": "com certeza, absolutamente"
+      },
+      {
+        "id": 40,
+        "word": "行く",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "影絵芝居",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 46,
+        "word": "演じる",
+        "pinyin": "",
+        "meaning": "atuar, encenar, interpretar"
+      },
+      {
+        "id": 47,
+        "word": "学ぶ",
+        "pinyin": "",
+        "meaning": "aprender"
+      },
+      {
+        "id": 48,
+        "word": "〜かな",
+        "pinyin": "",
+        "meaning": "Eu me pergunto se..., Será que...?"
+      }
+    ],
+    "id": "local-1772297240153-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "問題ないよ。僕のアメリカ人の友達は自分で影絵芝居を作ったんだ。今度彼に紹介してあげるよ。",
+    "pinyin": "",
+    "translation": "B: Sem problema. Meu amigo americano fez seu próprio teatro de sombras. Da próxima vez, vou apresentá-lo a você.",
+    "tokens": [
+      "問題",
+      "ない",
+      "よ",
+      "。",
+      "僕",
+      "の",
+      "アメリカ人",
+      "の",
+      "友達",
+      "は",
+      "自分",
+      "で",
+      "影絵芝居",
+      "を",
+      "作った",
+      "ん",
+      "だ",
+      "。",
+      "今度",
+      "彼",
+      "に",
+      "紹介して",
+      "あげる",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 49,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 50,
+        "word": "問題ない",
+        "pinyin": "",
+        "meaning": "sem problema, está tudo bem"
+      },
+      {
+        "id": 51,
+        "word": "僕",
+        "pinyin": "",
+        "meaning": "eu (masculino, informal)"
+      },
+      {
+        "id": 52,
+        "word": "アメリカ人",
+        "pinyin": "",
+        "meaning": "americano (nacionalidade)"
+      },
+      {
+        "id": 53,
+        "word": "友達",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 54,
+        "word": "自分",
+        "pinyin": "",
+        "meaning": "eu mesmo, si mesmo"
+      },
+      {
+        "id": 3,
+        "word": "影絵芝居",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 24,
+        "word": "作る",
+        "pinyin": "",
+        "meaning": "fazer, criar"
+      },
+      {
+        "id": 55,
+        "word": "今度",
+        "pinyin": "",
+        "meaning": "da próxima vez"
+      },
+      {
+        "id": 56,
+        "word": "彼",
+        "pinyin": "",
+        "meaning": "ele"
+      },
+      {
+        "id": 57,
+        "word": "紹介する",
+        "pinyin": "",
+        "meaning": "apresentar"
+      },
+      {
+        "id": 58,
+        "word": "〜てあげる",
+        "pinyin": "",
+        "meaning": "fazer algo por alguém"
+      }
+    ],
+    "id": "local-1772297240153-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "わかった、じゃあ決まりだね。",
+    "pinyin": "",
+    "translation": "A: Entendi, então está decidido!",
+    "tokens": [
+      "わかった",
+      "、",
+      "じゃあ",
+      "決まり",
+      "だ",
+      "ね",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 59,
+        "word": "わかる",
+        "pinyin": "",
+        "meaning": "entender"
+      },
+      {
+        "id": 26,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 60,
+        "word": "決まり",
+        "pinyin": "",
+        "meaning": "decisão, regra, acordo"
+      }
+    ],
+    "id": "local-1772297240153-12",
+    "language": "Japonês"
+  }
+]

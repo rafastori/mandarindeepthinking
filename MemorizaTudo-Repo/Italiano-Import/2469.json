@@ -1,0 +1,728 @@
+[
+  {
+    "chinese": "A: Ciao, Direttore Wang. Cosa ne pensi di questa bozza di design?",
+    "pinyin": "",
+    "translation": "A: Olá, Diretor Wang. O que você acha desta proposta de design?",
+    "tokens": [
+      "A:",
+      "Ciao",
+      "Direttore",
+      "Wang",
+      "Cosa",
+      "ne",
+      "pensi",
+      "di",
+      "questa",
+      "bozza",
+      "di",
+      "design"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ciao",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Direttore",
+        "pinyin": "",
+        "meaning": "Diretor"
+      },
+      {
+        "id": 3,
+        "word": "Cosa ne pensi",
+        "pinyin": "",
+        "meaning": "O que você acha"
+      },
+      {
+        "id": 4,
+        "word": "bozza",
+        "pinyin": "",
+        "meaning": "rascunho, proposta"
+      },
+      {
+        "id": 5,
+        "word": "design",
+        "pinyin": "",
+        "meaning": "design, projeto"
+      }
+    ],
+    "id": "local-1772299677660-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non sembra male, ma è sempre diverso da quello che avevo immaginato.",
+    "pinyin": "",
+    "translation": "B: Não parece ruim, mas é sempre diferente do que eu tinha imaginado.",
+    "tokens": [
+      "B:",
+      "Non",
+      "sembra",
+      "male",
+      "ma",
+      "è",
+      "sempre",
+      "diverso",
+      "da",
+      "quello",
+      "che",
+      "avevo",
+      "immaginato"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non sembra male",
+        "pinyin": "",
+        "meaning": "Não parece ruim"
+      },
+      {
+        "id": 2,
+        "word": "diverso",
+        "pinyin": "",
+        "meaning": "diferente"
+      },
+      {
+        "id": 3,
+        "word": "immaginato",
+        "pinyin": "",
+        "meaning": "imaginado"
+      }
+    ],
+    "id": "local-1772299677660-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Puoi dirmi qualsiasi idea tu abbia.",
+    "pinyin": "",
+    "translation": "A: Você pode me dizer qualquer ideia que você tenha.",
+    "tokens": [
+      "A:",
+      "Puoi",
+      "dirmi",
+      "qualsiasi",
+      "idea",
+      "tu",
+      "abbia"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puoi dirmi",
+        "pinyin": "",
+        "meaning": "Você pode me dizer"
+      },
+      {
+        "id": 2,
+        "word": "qualsiasi",
+        "pinyin": "",
+        "meaning": "qualquer"
+      },
+      {
+        "id": 3,
+        "word": "idea",
+        "pinyin": "",
+        "meaning": "ideia"
+      },
+      {
+        "id": 4,
+        "word": "abbia",
+        "pinyin": "",
+        "meaning": "tenha (subjuntivo)"
+      }
+    ],
+    "id": "local-1772299677660-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non riesco a dire esattamente cosa sia. Sento che manca qualcosa.",
+    "pinyin": "",
+    "translation": "B: Não consigo dizer exatamente o que é. Sinto que falta algo.",
+    "tokens": [
+      "B:",
+      "Non",
+      "riesco",
+      "a",
+      "dire",
+      "esattamente",
+      "cosa",
+      "sia",
+      "Sento",
+      "che",
+      "manca",
+      "qualcosa"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non riesco a dire",
+        "pinyin": "",
+        "meaning": "Não consigo dizer"
+      },
+      {
+        "id": 2,
+        "word": "esattamente",
+        "pinyin": "",
+        "meaning": "exatamente"
+      },
+      {
+        "id": 3,
+        "word": "cosa sia",
+        "pinyin": "",
+        "meaning": "o que seja (o que é)"
+      },
+      {
+        "id": 4,
+        "word": "Sento",
+        "pinyin": "",
+        "meaning": "Sinto"
+      },
+      {
+        "id": 5,
+        "word": "manca",
+        "pinyin": "",
+        "meaning": "falta"
+      },
+      {
+        "id": 6,
+        "word": "qualcosa",
+        "pinyin": "",
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772299677660-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: L'ultima volta hai detto che sentivi lo stile troppo semplice, quindi questa volta ho aggiunto più elementi visivi. L'interazione con l'utente è anche più complessa. Te lo lascio dare un'occhiata.",
+    "pinyin": "",
+    "translation": "A: Da última vez você disse que achava o estilo muito simples, então desta vez adicionei mais elementos visuais. A interação com o usuário também está mais complexa. Deixo você dar uma olhada.",
+    "tokens": [
+      "A:",
+      "L'ultima",
+      "volta",
+      "hai",
+      "detto",
+      "che",
+      "sentivi",
+      "lo",
+      "stile",
+      "troppo",
+      "semplice",
+      "quindi",
+      "questa",
+      "volta",
+      "ho",
+      "aggiunto",
+      "più",
+      "elementi",
+      "visivi",
+      "L'interazione",
+      "con",
+      "l'utente",
+      "è",
+      "anche",
+      "più",
+      "complessa",
+      "Te",
+      "lo",
+      "lascio",
+      "dare",
+      "un'occhiata"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "L'ultima volta",
+        "pinyin": "",
+        "meaning": "Da última vez"
+      },
+      {
+        "id": 2,
+        "word": "hai detto",
+        "pinyin": "",
+        "meaning": "você disse"
+      },
+      {
+        "id": 3,
+        "word": "sentivi",
+        "pinyin": "",
+        "meaning": "achava, sentia"
+      },
+      {
+        "id": 4,
+        "word": "stile",
+        "pinyin": "",
+        "meaning": "estilo"
+      },
+      {
+        "id": 5,
+        "word": "troppo semplice",
+        "pinyin": "",
+        "meaning": "muito simples"
+      },
+      {
+        "id": 6,
+        "word": "quindi",
+        "pinyin": "",
+        "meaning": "então, por isso"
+      },
+      {
+        "id": 7,
+        "word": "ho aggiunto",
+        "pinyin": "",
+        "meaning": "adicionei"
+      },
+      {
+        "id": 8,
+        "word": "elementi visivi",
+        "pinyin": "",
+        "meaning": "elementos visuais"
+      },
+      {
+        "id": 9,
+        "word": "L'interazione",
+        "pinyin": "",
+        "meaning": "A interação"
+      },
+      {
+        "id": 10,
+        "word": "utente",
+        "pinyin": "",
+        "meaning": "usuário"
+      },
+      {
+        "id": 11,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 12,
+        "word": "complessa",
+        "pinyin": "",
+        "meaning": "complexa"
+      },
+      {
+        "id": 13,
+        "word": "Te lo lascio",
+        "pinyin": "",
+        "meaning": "Deixo você"
+      },
+      {
+        "id": 14,
+        "word": "dare un'occhiata",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772299677660-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È troppo complicato. Agli utenti non piacerà?",
+    "pinyin": "",
+    "translation": "B: É muito complicado. Os usuários não vão gostar?",
+    "tokens": [
+      "B:",
+      "È",
+      "troppo",
+      "complicato",
+      "Agli",
+      "utenti",
+      "non",
+      "piacerà"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "troppo",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "complicato",
+        "pinyin": "",
+        "meaning": "complicado"
+      },
+      {
+        "id": 3,
+        "word": "Agli utenti",
+        "pinyin": "",
+        "meaning": "Aos usuários"
+      },
+      {
+        "id": 4,
+        "word": "non piacerà",
+        "pinyin": "",
+        "meaning": "não vai gostar"
+      }
+    ],
+    "id": "local-1772299677660-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora cambierò questa parte, e questo toglierà un po' della complessità.",
+    "pinyin": "",
+    "translation": "A: Então vou mudar esta parte, e isso vai tirar um pouco da complexidade.",
+    "tokens": [
+      "A:",
+      "Allora",
+      "cambierò",
+      "questa",
+      "parte",
+      "e",
+      "questo",
+      "toglierà",
+      "un",
+      "po'",
+      "della",
+      "complessità"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cambierò",
+        "pinyin": "",
+        "meaning": "mudarei, trocarei"
+      },
+      {
+        "id": 3,
+        "word": "parte",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": 4,
+        "word": "toglierà",
+        "pinyin": "",
+        "meaning": "tirará, removerá"
+      },
+      {
+        "id": 5,
+        "word": "un po'",
+        "pinyin": "",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 6,
+        "word": "complessità",
+        "pinyin": "",
+        "meaning": "complexidade"
+      }
+    ],
+    "id": "local-1772299677660-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questo colore...",
+    "pinyin": "",
+    "translation": "B: Esta cor...",
+    "tokens": [
+      "B:",
+      "Questo",
+      "colore"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "colore",
+        "pinyin": "",
+        "meaning": "cor"
+      }
+    ],
+    "id": "local-1772299677660-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Questo è arancione. Sono i toni caldi che ti piacciono.",
+    "pinyin": "",
+    "translation": "A: Este é laranja. São os tons quentes que você gosta.",
+    "tokens": [
+      "A:",
+      "Questo",
+      "è",
+      "arancione",
+      "Sono",
+      "i",
+      "toni",
+      "caldi",
+      "che",
+      "ti",
+      "piacciono"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arancione",
+        "pinyin": "",
+        "meaning": "laranja"
+      },
+      {
+        "id": 2,
+        "word": "toni caldi",
+        "pinyin": "",
+        "meaning": "tons quentes"
+      },
+      {
+        "id": 3,
+        "word": "ti piacciono",
+        "pinyin": "",
+        "meaning": "você gosta (plural)"
+      }
+    ],
+    "id": "local-1772299677660-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Anche se mi piacciono i colori caldi, questo sembra troppo brillante.",
+    "pinyin": "",
+    "translation": "B: Embora eu goste de cores quentes, este parece muito brilhante.",
+    "tokens": [
+      "B:",
+      "Anche",
+      "se",
+      "mi",
+      "piacciono",
+      "i",
+      "colori",
+      "caldi",
+      "questo",
+      "sembra",
+      "troppo",
+      "brillante"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Anche se",
+        "pinyin": "",
+        "meaning": "Embora, mesmo que"
+      },
+      {
+        "id": 2,
+        "word": "mi piacciono",
+        "pinyin": "",
+        "meaning": "eu gosto (plural)"
+      },
+      {
+        "id": 3,
+        "word": "colori caldi",
+        "pinyin": "",
+        "meaning": "cores quentes"
+      },
+      {
+        "id": 4,
+        "word": "sembra",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 5,
+        "word": "troppo brillante",
+        "pinyin": "",
+        "meaning": "muito brilhante"
+      }
+    ],
+    "id": "local-1772299677660-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh, ok. Allora lo cambierò in qualcosa di più color crema. Cosa ne pensi?",
+    "pinyin": "",
+    "translation": "A: Ah, ok. Então vou mudar para algo mais cor creme. O que você acha?",
+    "tokens": [
+      "A:",
+      "Oh",
+      "ok",
+      "Allora",
+      "lo",
+      "cambierò",
+      "in",
+      "qualcosa",
+      "di",
+      "più",
+      "color",
+      "crema",
+      "Cosa",
+      "ne",
+      "pensi"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ok",
+        "pinyin": "",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "cambierò",
+        "pinyin": "",
+        "meaning": "mudarei, trocarei"
+      },
+      {
+        "id": 4,
+        "word": "color crema",
+        "pinyin": "",
+        "meaning": "cor creme"
+      },
+      {
+        "id": 5,
+        "word": "Cosa ne pensi",
+        "pinyin": "",
+        "meaning": "O que você acha"
+      }
+    ],
+    "id": "local-1772299677660-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Ma questa è già la quinta versione. Temo non ci sia abbastanza tempo. Che ne dici se ce ne dimentichiamo e usiamo la prima versione, dopotutto?",
+    "pinyin": "",
+    "translation": "B: Está bem. Mas esta já é a quinta versão. Temo que não haja tempo suficiente. Que tal se esquecermos disso e usarmos a primeira versão, afinal?",
+    "tokens": [
+      "B:",
+      "Va",
+      "bene",
+      "Ma",
+      "questa",
+      "è",
+      "già",
+      "la",
+      "quinta",
+      "versione",
+      "Temo",
+      "non",
+      "ci",
+      "sia",
+      "abbastanza",
+      "tempo",
+      "Che",
+      "ne",
+      "dici",
+      "se",
+      "ce",
+      "ne",
+      "dimentichiamo",
+      "e",
+      "usiamo",
+      "la",
+      "prima",
+      "versione",
+      "dopotutto"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Está bem, ok"
+      },
+      {
+        "id": 2,
+        "word": "già",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "quinta versione",
+        "pinyin": "",
+        "meaning": "quinta versão"
+      },
+      {
+        "id": 4,
+        "word": "Temo",
+        "pinyin": "",
+        "meaning": "Temo"
+      },
+      {
+        "id": 5,
+        "word": "non ci sia",
+        "pinyin": "",
+        "meaning": "que não haja"
+      },
+      {
+        "id": 6,
+        "word": "abbastanza tempo",
+        "pinyin": "",
+        "meaning": "tempo suficiente"
+      },
+      {
+        "id": 7,
+        "word": "Che ne dici",
+        "pinyin": "",
+        "meaning": "Que tal"
+      },
+      {
+        "id": 8,
+        "word": "ce ne dimentichiamo",
+        "pinyin": "",
+        "meaning": "esquecemos disso"
+      },
+      {
+        "id": 9,
+        "word": "usiamo",
+        "pinyin": "",
+        "meaning": "usamos"
+      },
+      {
+        "id": 10,
+        "word": "prima versione",
+        "pinyin": "",
+        "meaning": "primeira versão"
+      },
+      {
+        "id": 11,
+        "word": "dopotutto",
+        "pinyin": "",
+        "meaning": "afinal"
+      }
+    ],
+    "id": "local-1772299677660-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Eh? Ok, ok.",
+    "pinyin": "",
+    "translation": "A: Hã? Ok, ok.",
+    "tokens": [
+      "A:",
+      "Eh",
+      "Ok",
+      "ok"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh?",
+        "pinyin": "",
+        "meaning": "Hã?"
+      },
+      {
+        "id": 2,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok, certo"
+      }
+    ],
+    "id": "local-1772299677660-12",
+    "language": "Italiano"
+  }
+]

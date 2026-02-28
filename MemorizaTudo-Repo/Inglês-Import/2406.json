@@ -1,0 +1,729 @@
+[
+  {
+    "chinese": "A: Let's go to the store this weekend to buy a car seat for the baby.",
+    "pinyin": null,
+    "translation": "A: Vamos à loja neste fim de semana para comprar uma cadeirinha de carro para o bebê.",
+    "tokens": [
+      "A:",
+      "Let's",
+      "go",
+      "to",
+      "the",
+      "store",
+      "this",
+      "weekend",
+      "to",
+      "buy",
+      "a",
+      "car",
+      "seat",
+      "for",
+      "the",
+      "baby",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Let's go",
+        "pinyin": null,
+        "meaning": "Vamos"
+      },
+      {
+        "id": 2,
+        "word": "store",
+        "pinyin": null,
+        "meaning": "loja"
+      },
+      {
+        "id": 3,
+        "word": "this weekend",
+        "pinyin": null,
+        "meaning": "neste fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "car seat",
+        "pinyin": null,
+        "meaning": "cadeirinha de carro"
+      },
+      {
+        "id": 5,
+        "word": "baby",
+        "pinyin": null,
+        "meaning": "bebê"
+      }
+    ],
+    "id": "local-1772292547658-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. But I've seen that a lot of people don't buy them.",
+    "pinyin": null,
+    "translation": "B: Ok. Mas eu vi que muitas pessoas não compram.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "But",
+      "I've",
+      "seen",
+      "that",
+      "a",
+      "lot",
+      "of",
+      "people",
+      "don't",
+      "buy",
+      "them",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "I've seen",
+        "pinyin": null,
+        "meaning": "eu vi"
+      },
+      {
+        "id": 3,
+        "word": "a lot of people",
+        "pinyin": null,
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 4,
+        "word": "don't buy",
+        "pinyin": null,
+        "meaning": "não compram"
+      }
+    ],
+    "id": "local-1772292547658-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Having their kids sit in the back seat with an adult holding on to them is fine.",
+    "pinyin": null,
+    "translation": "Ter seus filhos sentados no banco de trás com um adulto segurando-os está tudo bem.",
+    "tokens": [
+      "Having",
+      "their",
+      "kids",
+      "sit",
+      "in",
+      "the",
+      "back",
+      "seat",
+      "with",
+      "an",
+      "adult",
+      "holding",
+      "on",
+      "to",
+      "them",
+      "is",
+      "fine",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kids",
+        "pinyin": null,
+        "meaning": "crianças"
+      },
+      {
+        "id": 2,
+        "word": "back seat",
+        "pinyin": null,
+        "meaning": "banco de trás"
+      },
+      {
+        "id": 3,
+        "word": "adult",
+        "pinyin": null,
+        "meaning": "adulto"
+      },
+      {
+        "id": 4,
+        "word": "holding on to them",
+        "pinyin": null,
+        "meaning": "segurando-os"
+      },
+      {
+        "id": 5,
+        "word": "fine",
+        "pinyin": null,
+        "meaning": "tudo bem"
+      }
+    ],
+    "id": "local-1772292547658-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We have to have one! In many countries, it's illegal for children not to ride in a car seat.",
+    "pinyin": null,
+    "translation": "A: Temos que ter um! Em muitos países, é ilegal para crianças não andarem em uma cadeirinha de carro.",
+    "tokens": [
+      "A:",
+      "We",
+      "have",
+      "to",
+      "have",
+      "one",
+      "!",
+      "In",
+      "many",
+      "countries",
+      ",",
+      "it's",
+      "illegal",
+      "for",
+      "children",
+      "not",
+      "to",
+      "ride",
+      "in",
+      "a",
+      "car",
+      "seat",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "have to have",
+        "pinyin": null,
+        "meaning": "temos que ter"
+      },
+      {
+        "id": 2,
+        "word": "many countries",
+        "pinyin": null,
+        "meaning": "muitos países"
+      },
+      {
+        "id": 3,
+        "word": "illegal",
+        "pinyin": null,
+        "meaning": "ilegal"
+      },
+      {
+        "id": 4,
+        "word": "children",
+        "pinyin": null,
+        "meaning": "crianças"
+      },
+      {
+        "id": 5,
+        "word": "ride in a car seat",
+        "pinyin": null,
+        "meaning": "andar em uma cadeirinha de carro"
+      }
+    ],
+    "id": "local-1772292547658-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay, okay. If you want to buy one, then we'll buy one.",
+    "pinyin": null,
+    "translation": "B: Ok, ok. Se você quer comprar um, então vamos comprar um.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ",",
+      "okay",
+      ".",
+      "If",
+      "you",
+      "want",
+      "to",
+      "buy",
+      "one",
+      ",",
+      "then",
+      "we'll",
+      "buy",
+      "one",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "want to buy",
+        "pinyin": null,
+        "meaning": "quer comprar"
+      },
+      {
+        "id": 3,
+        "word": "we'll buy",
+        "pinyin": null,
+        "meaning": "vamos comprar"
+      }
+    ],
+    "id": "local-1772292547658-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Have you decided what brand you want to buy?",
+    "pinyin": null,
+    "translation": "Você já decidiu qual marca você quer comprar?",
+    "tokens": [
+      "Have",
+      "you",
+      "decided",
+      "what",
+      "brand",
+      "you",
+      "want",
+      "to",
+      "buy",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "decided",
+        "pinyin": null,
+        "meaning": "decidiu"
+      },
+      {
+        "id": 2,
+        "word": "brand",
+        "pinyin": null,
+        "meaning": "marca"
+      },
+      {
+        "id": 3,
+        "word": "want to buy",
+        "pinyin": null,
+        "meaning": "quer comprar"
+      }
+    ],
+    "id": "local-1772292547658-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: An imported one of course! It has to be up to European standards.",
+    "pinyin": null,
+    "translation": "A: Um importado, claro! Tem que estar de acordo com os padrões europeus.",
+    "tokens": [
+      "A:",
+      "An",
+      "imported",
+      "one",
+      "of",
+      "course",
+      "!",
+      "It",
+      "has",
+      "to",
+      "be",
+      "up",
+      "to",
+      "European",
+      "standards",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "imported",
+        "pinyin": null,
+        "meaning": "importado"
+      },
+      {
+        "id": 2,
+        "word": "of course",
+        "pinyin": null,
+        "meaning": "claro"
+      },
+      {
+        "id": 3,
+        "word": "has to be",
+        "pinyin": null,
+        "meaning": "tem que estar"
+      },
+      {
+        "id": 4,
+        "word": "up to",
+        "pinyin": null,
+        "meaning": "de acordo com"
+      },
+      {
+        "id": 5,
+        "word": "European standards",
+        "pinyin": null,
+        "meaning": "padrões europeus"
+      }
+    ],
+    "id": "local-1772292547658-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That can't be cheap.",
+    "pinyin": null,
+    "translation": "B: Isso não deve ser barato.",
+    "tokens": [
+      "B:",
+      "That",
+      "can't",
+      "be",
+      "cheap",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "can't be cheap",
+        "pinyin": null,
+        "meaning": "não deve ser barato"
+      }
+    ],
+    "id": "local-1772292547658-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Even if it's not cheap we should still buy it for the safety of our child.",
+    "pinyin": null,
+    "translation": "A: Mesmo que não seja barato, ainda deveríamos comprar pela segurança de nosso filho.",
+    "tokens": [
+      "A:",
+      "Even",
+      "if",
+      "it's",
+      "not",
+      "cheap",
+      "we",
+      "should",
+      "still",
+      "buy",
+      "it",
+      "for",
+      "the",
+      "safety",
+      "of",
+      "our",
+      "child",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Even if",
+        "pinyin": null,
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 2,
+        "word": "not cheap",
+        "pinyin": null,
+        "meaning": "não seja barato"
+      },
+      {
+        "id": 3,
+        "word": "should still buy",
+        "pinyin": null,
+        "meaning": "ainda deveríamos comprar"
+      },
+      {
+        "id": 4,
+        "word": "safety",
+        "pinyin": null,
+        "meaning": "segurança"
+      },
+      {
+        "id": 5,
+        "word": "child",
+        "pinyin": null,
+        "meaning": "filho/criança"
+      }
+    ],
+    "id": "local-1772292547658-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What if we buy it, bring it back and find that she doesn't want to ride in it?",
+    "pinyin": null,
+    "translation": "B: E se comprarmos, trouxermos para casa e descobrirmos que ela não quer andar nele?",
+    "tokens": [
+      "B:",
+      "What",
+      "if",
+      "we",
+      "buy",
+      "it",
+      ",",
+      "bring",
+      "it",
+      "back",
+      "and",
+      "find",
+      "that",
+      "she",
+      "doesn't",
+      "want",
+      "to",
+      "ride",
+      "in",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What if",
+        "pinyin": null,
+        "meaning": "E se"
+      },
+      {
+        "id": 2,
+        "word": "buy it",
+        "pinyin": null,
+        "meaning": "comprarmos"
+      },
+      {
+        "id": 3,
+        "word": "bring it back",
+        "pinyin": null,
+        "meaning": "trouxermos para casa"
+      },
+      {
+        "id": 4,
+        "word": "doesn't want to ride",
+        "pinyin": null,
+        "meaning": "não quer andar"
+      }
+    ],
+    "id": "local-1772292547658-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What then?",
+    "pinyin": null,
+    "translation": "O que faremos então?",
+    "tokens": [
+      "What",
+      "then",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What then",
+        "pinyin": null,
+        "meaning": "O que então/faremos então"
+      }
+    ],
+    "id": "local-1772292547658-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "My coworker says that as soon as his kid sits in it he starts crying.",
+    "pinyin": null,
+    "translation": "Meu colega de trabalho diz que assim que o filho dele senta nele, ele começa a chorar.",
+    "tokens": [
+      "My",
+      "coworker",
+      "says",
+      "that",
+      "as",
+      "soon",
+      "as",
+      "his",
+      "kid",
+      "sits",
+      "in",
+      "it",
+      "he",
+      "starts",
+      "crying",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "coworker",
+        "pinyin": null,
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "as soon as",
+        "pinyin": null,
+        "meaning": "assim que"
+      },
+      {
+        "id": 3,
+        "word": "kid",
+        "pinyin": null,
+        "meaning": "filho/criança"
+      },
+      {
+        "id": 4,
+        "word": "sits in it",
+        "pinyin": null,
+        "meaning": "senta nele"
+      },
+      {
+        "id": 5,
+        "word": "starts crying",
+        "pinyin": null,
+        "meaning": "começa a chorar"
+      }
+    ],
+    "id": "local-1772292547658-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: So we need to buy one early.",
+    "pinyin": null,
+    "translation": "A: Então precisamos comprar um cedo.",
+    "tokens": [
+      "A:",
+      "So",
+      "we",
+      "need",
+      "to",
+      "buy",
+      "one",
+      "early",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "need to buy",
+        "pinyin": null,
+        "meaning": "precisamos comprar"
+      },
+      {
+        "id": 2,
+        "word": "early",
+        "pinyin": null,
+        "meaning": "cedo"
+      }
+    ],
+    "id": "local-1772292547658-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "If she starts riding in it when she's little then it will be easier for her to get used to it.",
+    "pinyin": null,
+    "translation": "Se ela começar a andar nele quando for pequena, será mais fácil para ela se acostumar.",
+    "tokens": [
+      "If",
+      "she",
+      "starts",
+      "riding",
+      "in",
+      "it",
+      "when",
+      "she's",
+      "little",
+      "then",
+      "it",
+      "will",
+      "be",
+      "easier",
+      "for",
+      "her",
+      "to",
+      "get",
+      "used",
+      "to",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "starts riding",
+        "pinyin": null,
+        "meaning": "começar a andar"
+      },
+      {
+        "id": 2,
+        "word": "little",
+        "pinyin": null,
+        "meaning": "pequena"
+      },
+      {
+        "id": 3,
+        "word": "easier",
+        "pinyin": null,
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 4,
+        "word": "get used to it",
+        "pinyin": null,
+        "meaning": "se acostumar com isso"
+      }
+    ],
+    "id": "local-1772292547658-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. Whatever you say, dear. It's all for our child!",
+    "pinyin": null,
+    "translation": "B: Ok. O que você disser, querida. É tudo pelo nosso filho!",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Whatever",
+      "you",
+      "say",
+      ",",
+      "dear",
+      ".",
+      "It's",
+      "all",
+      "for",
+      "our",
+      "child",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "Whatever you say",
+        "pinyin": null,
+        "meaning": "O que você disser"
+      },
+      {
+        "id": 3,
+        "word": "dear",
+        "pinyin": null,
+        "meaning": "querida"
+      },
+      {
+        "id": 4,
+        "word": "all for our child",
+        "pinyin": null,
+        "meaning": "tudo pelo nosso filho"
+      }
+    ],
+    "id": "local-1772292547658-14",
+    "language": "Inglês"
+  }
+]

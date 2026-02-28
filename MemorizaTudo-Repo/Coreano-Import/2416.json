@@ -1,0 +1,598 @@
+[
+  {
+    "chinese": "A: 자기야, 전화 와. 문자 메시지야.",
+    "pinyin": "",
+    "translation": "A: Amor, o telefone está tocando. É uma mensagem de texto.",
+    "tokens": [
+      "자기야",
+      ",",
+      "전화",
+      "와",
+      ".",
+      "문자",
+      "메시지야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "자기야",
+        "pinyin": "",
+        "meaning": "amor, querido(a)"
+      },
+      {
+        "id": 2,
+        "word": "전화",
+        "pinyin": "",
+        "meaning": "telefone, ligação"
+      },
+      {
+        "id": 3,
+        "word": "오다",
+        "pinyin": "",
+        "meaning": "vir (aqui, o telefone está 'vindo'/tocando)"
+      },
+      {
+        "id": 4,
+        "word": "문자",
+        "pinyin": "",
+        "meaning": "mensagem de texto"
+      },
+      {
+        "id": 5,
+        "word": "메시지",
+        "pinyin": "",
+        "meaning": "mensagem"
+      }
+    ],
+    "id": "local-1772296195867-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 나 화장실이야. 대신 읽어줘!",
+    "pinyin": "",
+    "translation": "B: Estou no banheiro. Leia para mim, por favor!",
+    "tokens": [
+      "나",
+      "화장실이야",
+      ".",
+      "대신",
+      "읽어줘",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 2,
+        "word": "화장실",
+        "pinyin": "",
+        "meaning": "banheiro"
+      },
+      {
+        "id": 3,
+        "word": "대신",
+        "pinyin": "",
+        "meaning": "em vez de, no lugar de"
+      },
+      {
+        "id": 4,
+        "word": "읽다",
+        "pinyin": "",
+        "meaning": "ler"
+      }
+    ],
+    "id": "local-1772296195867-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 15일 11시 8분에, 마지막 네 자리가 8899인 당신의 은행 카드에서 3만 5천 위안이 인출되었습니다. 응? 어떡해? 당신은 집에 있잖아. 어떻게 신용카드가 청구되었다는 문자를 받을 수 있어?",
+    "pinyin": "",
+    "translation": "A: No dia 15, às 11h e 8 minutos, 35.000 yuans foram retirados do seu cartão de banco, cujos últimos quatro dígitos são 8899. Hã? O que faremos? Você está em casa. Como você pode receber uma mensagem dizendo que o seu cartão de crédito foi cobrado?",
+    "tokens": [
+      "15일",
+      "11시",
+      "8분에",
+      ",",
+      "마지막",
+      "네",
+      "자리가",
+      "8899인",
+      "당신의",
+      "은행",
+      "카드에서",
+      "3만",
+      "5천",
+      "위안이",
+      "인출되었습니다",
+      ".",
+      "응",
+      "?",
+      "어떡해",
+      "?",
+      "당신은",
+      "집에",
+      "있잖아",
+      ".",
+      "어떻게",
+      "신용카드가",
+      "청구되었다는",
+      "문자를",
+      "받을",
+      "수",
+      "있어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "15일",
+        "pinyin": "",
+        "meaning": "dia 15"
+      },
+      {
+        "id": 2,
+        "word": "11시",
+        "pinyin": "",
+        "meaning": "11 horas"
+      },
+      {
+        "id": 3,
+        "word": "8분",
+        "pinyin": "",
+        "meaning": "8 minutos"
+      },
+      {
+        "id": 4,
+        "word": "마지막",
+        "pinyin": "",
+        "meaning": "último"
+      },
+      {
+        "id": 5,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "quatro"
+      },
+      {
+        "id": 6,
+        "word": "자리",
+        "pinyin": "",
+        "meaning": "dígito, lugar"
+      },
+      {
+        "id": 7,
+        "word": "당신",
+        "pinyin": "",
+        "meaning": "você (formal, ou entre casais)"
+      },
+      {
+        "id": 8,
+        "word": "은행",
+        "pinyin": "",
+        "meaning": "banco"
+      },
+      {
+        "id": 9,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 10,
+        "word": "3만 5천",
+        "pinyin": "",
+        "meaning": "35.000"
+      },
+      {
+        "id": 11,
+        "word": "위안",
+        "pinyin": "",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 12,
+        "word": "인출되다",
+        "pinyin": "",
+        "meaning": "ser retirado (dinheiro)"
+      },
+      {
+        "id": 13,
+        "word": "어떡해",
+        "pinyin": "",
+        "meaning": "o que faremos? / o que fazer?"
+      },
+      {
+        "id": 14,
+        "word": "집",
+        "pinyin": "",
+        "meaning": "casa, lar"
+      },
+      {
+        "id": 15,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "estar, existir (있잖아: você está, sabe? - ênfase)"
+      },
+      {
+        "id": 16,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 17,
+        "word": "신용카드",
+        "pinyin": "",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 18,
+        "word": "청구되다",
+        "pinyin": "",
+        "meaning": "ser cobrado, ser debitado"
+      },
+      {
+        "id": 19,
+        "word": "문자",
+        "pinyin": "",
+        "meaning": "mensagem de texto"
+      },
+      {
+        "id": 20,
+        "word": "받다",
+        "pinyin": "",
+        "meaning": "receber"
+      }
+    ],
+    "id": "local-1772296195867-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭐라고?! 빨리, 그거 보여줘! 세상에! 내가 언제 이렇게 많은 돈을 썼어?",
+    "pinyin": "",
+    "translation": "B: O quê?! Rápido, me mostre isso! Meu Deus! Quando eu gastei tanto dinheiro assim?",
+    "tokens": [
+      "뭐라고",
+      "?!",
+      "빨리",
+      ",",
+      "그거",
+      "보여줘",
+      "!",
+      "세상에",
+      "!",
+      "내가",
+      "언제",
+      "이렇게",
+      "많은",
+      "돈을",
+      "썼어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뭐라고",
+        "pinyin": "",
+        "meaning": "o quê? / o que disse?"
+      },
+      {
+        "id": 2,
+        "word": "빨리",
+        "pinyin": "",
+        "meaning": "rápido"
+      },
+      {
+        "id": 3,
+        "word": "그거",
+        "pinyin": "",
+        "meaning": "aquilo"
+      },
+      {
+        "id": 4,
+        "word": "보여주다",
+        "pinyin": "",
+        "meaning": "mostrar"
+      },
+      {
+        "id": 5,
+        "word": "세상에",
+        "pinyin": "",
+        "meaning": "meu Deus! / Oh céus! (lit. 'no mundo')"
+      },
+      {
+        "id": 6,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 7,
+        "word": "언제",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 8,
+        "word": "이렇게",
+        "pinyin": "",
+        "meaning": "assim, deste jeito"
+      },
+      {
+        "id": 9,
+        "word": "많다",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 10,
+        "word": "돈",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 11,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "gastar, usar"
+      }
+    ],
+    "id": "local-1772296195867-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 누가 훔쳐서 쓴 걸까?",
+    "pinyin": "",
+    "translation": "A: Será que alguém roubou e usou?",
+    "tokens": [
+      "누가",
+      "훔쳐서",
+      "쓴",
+      "걸까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "누구",
+        "pinyin": "",
+        "meaning": "quem"
+      },
+      {
+        "id": 2,
+        "word": "훔치다",
+        "pinyin": "",
+        "meaning": "roubar"
+      },
+      {
+        "id": 3,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "usar, gastar"
+      },
+      {
+        "id": 4,
+        "word": "-ㄹ까",
+        "pinyin": "",
+        "meaning": "será que...? (expressa dúvida ou pergunta retórica)"
+      }
+    ],
+    "id": "local-1772296195867-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응? 그럼 나 지금 어떻게 해야 해, 자기야?",
+    "pinyin": "",
+    "translation": "B: Hã? Então, o que eu devo fazer agora, amor?",
+    "tokens": [
+      "응",
+      "?",
+      "그럼",
+      "나",
+      "지금",
+      "어떻게",
+      "해야",
+      "해",
+      ",",
+      "자기야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "",
+        "meaning": "hã? / sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 4,
+        "word": "지금",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 5,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 6,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer (해야 해: devo fazer)"
+      },
+      {
+        "id": 7,
+        "word": "자기야",
+        "pinyin": "",
+        "meaning": "amor, querido(a)"
+      }
+    ],
+    "id": "local-1772296195867-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 자기야, 걱정 마. 그냥 은행에 전화해서 계좌를 정지하고, 경찰에 신고하면 돼.",
+    "pinyin": "",
+    "translation": "A: Amor, não se preocupe. Apenas ligue para o banco para congelar a conta e denuncie à polícia.",
+    "tokens": [
+      "자기야",
+      ",",
+      "걱정",
+      "마",
+      ".",
+      "그냥",
+      "은행에",
+      "전화해서",
+      "계좌를",
+      "정지하고",
+      ",",
+      "경찰에",
+      "신고하면",
+      "돼",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "자기야",
+        "pinyin": "",
+        "meaning": "amor, querido(a)"
+      },
+      {
+        "id": 2,
+        "word": "걱정",
+        "pinyin": "",
+        "meaning": "preocupação"
+      },
+      {
+        "id": 3,
+        "word": "-지 마",
+        "pinyin": "",
+        "meaning": "não faça (proibição)"
+      },
+      {
+        "id": 4,
+        "word": "그냥",
+        "pinyin": "",
+        "meaning": "apenas, simplesmente"
+      },
+      {
+        "id": 5,
+        "word": "은행",
+        "pinyin": "",
+        "meaning": "banco"
+      },
+      {
+        "id": 6,
+        "word": "전화하다",
+        "pinyin": "",
+        "meaning": "telefonar"
+      },
+      {
+        "id": 7,
+        "word": "계좌",
+        "pinyin": "",
+        "meaning": "conta (bancária)"
+      },
+      {
+        "id": 8,
+        "word": "정지하다",
+        "pinyin": "",
+        "meaning": "parar, suspender, congelar"
+      },
+      {
+        "id": 9,
+        "word": "경찰",
+        "pinyin": "",
+        "meaning": "polícia"
+      },
+      {
+        "id": 10,
+        "word": "신고하다",
+        "pinyin": "",
+        "meaning": "denunciar, reportar"
+      },
+      {
+        "id": 11,
+        "word": "되다",
+        "pinyin": "",
+        "meaning": "estar ok, ser (있으면 돼: está ok se você fizer)"
+      }
+    ],
+    "id": "local-1772296195867-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 오늘따라 눈이 왜 이렇게 떨리나 했네!",
+    "pinyin": "",
+    "translation": "B: Eu me perguntei por que meus olhos estavam tremendo tanto hoje!",
+    "tokens": [
+      "오늘따라",
+      "눈이",
+      "왜",
+      "이렇게",
+      "떨리나",
+      "했네",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오늘따라",
+        "pinyin": "",
+        "meaning": "especialmente hoje, por alguma razão hoje"
+      },
+      {
+        "id": 2,
+        "word": "눈",
+        "pinyin": "",
+        "meaning": "olho"
+      },
+      {
+        "id": 3,
+        "word": "왜",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 4,
+        "word": "이렇게",
+        "pinyin": "",
+        "meaning": "tão, desta forma"
+      },
+      {
+        "id": 5,
+        "word": "떨리다",
+        "pinyin": "",
+        "meaning": "tremer"
+      },
+      {
+        "id": 6,
+        "word": "-나 하다",
+        "pinyin": "",
+        "meaning": "se perguntar se... (했네 indica uma realização)"
+      }
+    ],
+    "id": "local-1772296195867-7",
+    "language": "Coreano"
+  }
+]

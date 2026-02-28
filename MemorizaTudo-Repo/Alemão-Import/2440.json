@@ -1,0 +1,616 @@
+[
+  {
+    "chinese": "A: Als Nächstes möchten wir Wang Wei bitten, ein paar Worte an alle zu richten. Ein herzlicher Applaus!",
+    "pinyin": "",
+    "translation": "A: Em seguida, gostaríamos de pedir a Wang Wei que dirija algumas palavras a todos. Um aplauso caloroso!",
+    "tokens": [
+      "A:",
+      "Als",
+      "Nächstes",
+      "möchten",
+      "wir",
+      "Wang",
+      "Wei",
+      "bitten,",
+      "ein",
+      "paar",
+      "Worte",
+      "an",
+      "alle",
+      "zu",
+      "richten.",
+      "Ein",
+      "herzlicher",
+      "Applaus!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Als Nächstes",
+        "pinyin": "",
+        "meaning": "Em seguida, O próximo"
+      },
+      {
+        "id": 2,
+        "word": "möchten",
+        "pinyin": "",
+        "meaning": "gostaríamos (verbo modal, forma de cortesia de wollen)"
+      },
+      {
+        "id": 3,
+        "word": "bitten",
+        "pinyin": "",
+        "meaning": "pedir"
+      },
+      {
+        "id": 4,
+        "word": "ein paar",
+        "pinyin": "",
+        "meaning": "alguns, um par de"
+      },
+      {
+        "id": 5,
+        "word": "Worte",
+        "pinyin": "",
+        "meaning": "palavras (plural de Wort)"
+      },
+      {
+        "id": 6,
+        "word": "richten (an)",
+        "pinyin": "",
+        "meaning": "dirigir (a), endereçar"
+      },
+      {
+        "id": 7,
+        "word": "herzlicher",
+        "pinyin": "",
+        "meaning": "caloroso, cordial (adj. de Herz)"
+      },
+      {
+        "id": 8,
+        "word": "Applaus",
+        "pinyin": "",
+        "meaning": "aplauso"
+      }
+    ],
+    "id": "local-1772293196377-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Vielen Dank! Zuerst möchte ich mich bei allen ganz herzlich dafür bedanken, dass sie diese Feier für mich organisiert haben.",
+    "pinyin": "",
+    "translation": "B: Muito obrigado! Primeiro, gostaria de agradecer sinceramente a todos por terem organizado esta celebração para mim.",
+    "tokens": [
+      "B:",
+      "Vielen",
+      "Dank!",
+      "Zuerst",
+      "möchte",
+      "ich",
+      "mich",
+      "bei",
+      "allen",
+      "ganz",
+      "herzlich",
+      "dafür",
+      "bedanken,",
+      "dass",
+      "sie",
+      "diese",
+      "Feier",
+      "für",
+      "mich",
+      "organisiert",
+      "haben."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vielen Dank",
+        "pinyin": "",
+        "meaning": "Muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "Zuerst",
+        "pinyin": "",
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 3,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria"
+      },
+      {
+        "id": 4,
+        "word": "sich bedanken (bei jemandem für etwas)",
+        "pinyin": "",
+        "meaning": "agradecer (a alguém por algo)"
+      },
+      {
+        "id": 5,
+        "word": "ganz herzlich",
+        "pinyin": "",
+        "meaning": "muito sinceramente, de todo o coração"
+      },
+      {
+        "id": 6,
+        "word": "Feier",
+        "pinyin": "",
+        "meaning": "celebração, festa"
+      },
+      {
+        "id": 7,
+        "word": "organisiert haben",
+        "pinyin": "",
+        "meaning": "organizaram (Pretérito Perfeito)"
+      }
+    ],
+    "id": "local-1772293196377-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich arbeite seit 10 Jahren in dieser Firma. In diesen 10 Jahren habe ich sehr viel gelernt. Ich bin dem Unternehmen sehr dankbar, dass es mir eine Plattform gegeben hat, um zu lernen und zu wachsen!",
+    "pinyin": "",
+    "translation": "B: Trabalho nesta empresa há 10 anos. Nestes 10 anos, aprendi muito. Sou muito grato à empresa por ter me dado uma plataforma para aprender e crescer!",
+    "tokens": [
+      "B:",
+      "Ich",
+      "arbeite",
+      "seit",
+      "10",
+      "Jahren",
+      "in",
+      "dieser",
+      "Firma.",
+      "In",
+      "diesen",
+      "10",
+      "Jahren",
+      "habe",
+      "ich",
+      "sehr",
+      "viel",
+      "gelernt.",
+      "Ich",
+      "bin",
+      "dem",
+      "Unternehmen",
+      "sehr",
+      "dankbar,",
+      "dass",
+      "es",
+      "mir",
+      "eine",
+      "Plattform",
+      "gegeben",
+      "hat,",
+      "um",
+      "zu",
+      "lernen",
+      "und",
+      "zu",
+      "wachsen!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arbeite",
+        "pinyin": "",
+        "meaning": "trabalho (de arbeiten)"
+      },
+      {
+        "id": 2,
+        "word": "seit",
+        "pinyin": "",
+        "meaning": "há (tempo, desde)"
+      },
+      {
+        "id": 3,
+        "word": "Jahren",
+        "pinyin": "",
+        "meaning": "anos (plural de Jahr)"
+      },
+      {
+        "id": 4,
+        "word": "Firma",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 5,
+        "word": "sehr viel",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 6,
+        "word": "gelernt",
+        "pinyin": "",
+        "meaning": "aprendido (Particípio Passado de lernen)"
+      },
+      {
+        "id": 7,
+        "word": "dankbar (jemandem für etwas)",
+        "pinyin": "",
+        "meaning": "grato (a alguém por algo)"
+      },
+      {
+        "id": 8,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 9,
+        "word": "Plattform",
+        "pinyin": "",
+        "meaning": "plataforma"
+      },
+      {
+        "id": 10,
+        "word": "gegeben hat",
+        "pinyin": "",
+        "meaning": "deu (Pretérito Perfeito de geben)"
+      },
+      {
+        "id": 11,
+        "word": "um zu + Infinitiv",
+        "pinyin": "",
+        "meaning": "para (com finalidade)"
+      },
+      {
+        "id": 12,
+        "word": "lernen",
+        "pinyin": "",
+        "meaning": "aprender"
+      },
+      {
+        "id": 13,
+        "word": "wachsen",
+        "pinyin": "",
+        "meaning": "crescer"
+      }
+    ],
+    "id": "local-1772293196377-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich danke jedem einzelnen der Führungskräfte für die Unterstützung und Anleitung!",
+    "pinyin": "",
+    "translation": "B: Agradeço a cada um dos líderes pelo apoio e orientação!",
+    "tokens": [
+      "B:",
+      "Ich",
+      "danke",
+      "jedem",
+      "einzelnen",
+      "der",
+      "Führungskräfte",
+      "für",
+      "die",
+      "Unterstützung",
+      "und",
+      "Anleitung!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "danke",
+        "pinyin": "",
+        "meaning": "agradeço (de danken)"
+      },
+      {
+        "id": 2,
+        "word": "jedem einzelnen",
+        "pinyin": "",
+        "meaning": "a cada um, a cada indivíduo"
+      },
+      {
+        "id": 3,
+        "word": "Führungskräfte",
+        "pinyin": "",
+        "meaning": "executivos, líderes (plural de Führungskraft)"
+      },
+      {
+        "id": 4,
+        "word": "Unterstützung",
+        "pinyin": "",
+        "meaning": "apoio"
+      },
+      {
+        "id": 5,
+        "word": "Anleitung",
+        "pinyin": "",
+        "meaning": "orientação, instrução"
+      }
+    ],
+    "id": "local-1772293196377-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich danke jedem meiner Kollegen für die Unterstützung und Fürsorge, die ihr mir entgegengebracht habt!",
+    "pinyin": "",
+    "translation": "B: Agradeço a cada um dos meus colegas pelo apoio e cuidado que me deram!",
+    "tokens": [
+      "B:",
+      "Ich",
+      "danke",
+      "jedem",
+      "meiner",
+      "Kollegen",
+      "für",
+      "die",
+      "Unterstützung",
+      "und",
+      "Fürsorge,",
+      "die",
+      "ihr",
+      "mir",
+      "entgegengebracht",
+      "habt!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "danke",
+        "pinyin": "",
+        "meaning": "agradeço"
+      },
+      {
+        "id": 2,
+        "word": "jedem meiner Kollegen",
+        "pinyin": "",
+        "meaning": "a cada um dos meus colegas"
+      },
+      {
+        "id": 3,
+        "word": "Kollegen",
+        "pinyin": "",
+        "meaning": "colegas (plural de Kollege)"
+      },
+      {
+        "id": 4,
+        "word": "Fürsorge",
+        "pinyin": "",
+        "meaning": "cuidado, zelo"
+      },
+      {
+        "id": 5,
+        "word": "entgegengebracht habt",
+        "pinyin": "",
+        "meaning": "me trouxeram, me deram (de entgegenbringen)"
+      }
+    ],
+    "id": "local-1772293196377-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich fühle mich außerordentlich geehrt, die Gelegenheit gehabt zu haben, mit euch allen zusammenzuarbeiten. Ich werde die Zeit, die ich täglich mit euch verbracht habe, in guter Erinnerung behalten!",
+    "pinyin": "",
+    "translation": "B: Sinto-me extremamente honrado por ter tido a oportunidade de trabalhar com todos vocês. Guardarei com carinho a lembrança do tempo que passei com vocês diariamente!",
+    "tokens": [
+      "B:",
+      "Ich",
+      "fühle",
+      "mich",
+      "außerordentlich",
+      "geehrt,",
+      "die",
+      "Gelegenheit",
+      "gehabt",
+      "zu",
+      "haben,",
+      "mit",
+      "euch",
+      "allen",
+      "zusammenzuarbeiten.",
+      "Ich",
+      "werde",
+      "die",
+      "Zeit,",
+      "die",
+      "ich",
+      "täglich",
+      "mit",
+      "euch",
+      "verbracht",
+      "habe,",
+      "in",
+      "guter",
+      "Erinnerung",
+      "behalten!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sich fühlen",
+        "pinyin": "",
+        "meaning": "sentir-se"
+      },
+      {
+        "id": 2,
+        "word": "außerordentlich",
+        "pinyin": "",
+        "meaning": "extraordinariamente, extremamente"
+      },
+      {
+        "id": 3,
+        "word": "geehrt",
+        "pinyin": "",
+        "meaning": "honrado (Particípio Passado de ehren)"
+      },
+      {
+        "id": 4,
+        "word": "Gelegenheit",
+        "pinyin": "",
+        "meaning": "oportunidade"
+      },
+      {
+        "id": 5,
+        "word": "gehabt zu haben",
+        "pinyin": "",
+        "meaning": "ter tido (Infinitivo Perfeito)"
+      },
+      {
+        "id": 6,
+        "word": "euch allen",
+        "pinyin": "",
+        "meaning": "a todos vocês"
+      },
+      {
+        "id": 7,
+        "word": "zusammenzuarbeiten",
+        "pinyin": "",
+        "meaning": "colaborar, trabalhar junto (de zusammenarbeiten)"
+      },
+      {
+        "id": 8,
+        "word": "werde behalten",
+        "pinyin": "",
+        "meaning": "manterei, guardarei (Futuro de behalten)"
+      },
+      {
+        "id": 9,
+        "word": "täglich",
+        "pinyin": "",
+        "meaning": "diariamente"
+      },
+      {
+        "id": 10,
+        "word": "verbracht habe",
+        "pinyin": "",
+        "meaning": "passei (Pretérito Perfeito de verbringen)"
+      },
+      {
+        "id": 11,
+        "word": "in guter Erinnerung behalten",
+        "pinyin": "",
+        "meaning": "guardar em boa lembrança, lembrar com carinho"
+      },
+      {
+        "id": 12,
+        "word": "Erinnerung",
+        "pinyin": "",
+        "meaning": "lembrança, memória"
+      }
+    ],
+    "id": "local-1772293196377-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Abschließend wünsche ich euch von Herzen Gesundheit, einen reibungslosen Arbeitsablauf und glückliche Familien.",
+    "pinyin": "",
+    "translation": "B: Por fim, desejo-vos de coração saúde, um fluxo de trabalho tranquilo e famílias felizes.",
+    "tokens": [
+      "B:",
+      "Abschließend",
+      "wünsche",
+      "ich",
+      "euch",
+      "von",
+      "Herzen",
+      "Gesundheit,",
+      "einen",
+      "reibungslosen",
+      "Arbeitsablauf",
+      "und",
+      "glückliche",
+      "Familien."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Abschließend",
+        "pinyin": "",
+        "meaning": "Para finalizar, Concluindo"
+      },
+      {
+        "id": 2,
+        "word": "wünsche",
+        "pinyin": "",
+        "meaning": "desejo (de wünschen)"
+      },
+      {
+        "id": 3,
+        "word": "euch",
+        "pinyin": "",
+        "meaning": "a vocês"
+      },
+      {
+        "id": 4,
+        "word": "von Herzen",
+        "pinyin": "",
+        "meaning": "de coração"
+      },
+      {
+        "id": 5,
+        "word": "Gesundheit",
+        "pinyin": "",
+        "meaning": "saúde"
+      },
+      {
+        "id": 6,
+        "word": "reibungslosen",
+        "pinyin": "",
+        "meaning": "tranquilo, sem problemas (adj. de reibungslos)"
+      },
+      {
+        "id": 7,
+        "word": "Arbeitsablauf",
+        "pinyin": "",
+        "meaning": "fluxo de trabalho, processo de trabalho"
+      },
+      {
+        "id": 8,
+        "word": "glückliche",
+        "pinyin": "",
+        "meaning": "felizes (adj. de glücklich)"
+      },
+      {
+        "id": 9,
+        "word": "Familien",
+        "pinyin": "",
+        "meaning": "famílias (plural de Familie)"
+      }
+    ],
+    "id": "local-1772293196377-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Also dann! Prost alle zusammen!",
+    "pinyin": "",
+    "translation": "B: Então é isso! Saúde a todos!",
+    "tokens": [
+      "B:",
+      "Also",
+      "dann!",
+      "Prost",
+      "alle",
+      "zusammen!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Also dann",
+        "pinyin": "",
+        "meaning": "Então é isso, Bem, então"
+      },
+      {
+        "id": 2,
+        "word": "Prost",
+        "pinyin": "",
+        "meaning": "Saúde! (brinde)"
+      },
+      {
+        "id": 3,
+        "word": "alle zusammen",
+        "pinyin": "",
+        "meaning": "todos juntos, a todos"
+      }
+    ],
+    "id": "local-1772293196377-7",
+    "language": "Alemão"
+  }
+]

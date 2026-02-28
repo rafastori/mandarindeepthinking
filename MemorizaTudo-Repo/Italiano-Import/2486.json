@@ -1,0 +1,568 @@
+[
+  {
+    "chinese": "A: Domani devi portare il bambino all'Ospedale di Quartiere per le vaccinazioni. Hai chiesto un permesso?",
+    "pinyin": null,
+    "translation": "A: Amanhã você precisa levar a criança ao Hospital do Bairro para as vacinações. Você pediu uma licença?",
+    "tokens": [
+      "Domani",
+      "devi",
+      "portare",
+      "il",
+      "bambino",
+      "all'",
+      "Ospedale",
+      "di",
+      "Quartiere",
+      "per",
+      "le",
+      "vaccinazioni",
+      ".",
+      "Hai",
+      "chiesto",
+      "un",
+      "permesso",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Domani",
+        "pinyin": null,
+        "meaning": "Amanhã"
+      },
+      {
+        "id": 2,
+        "word": "devi portare",
+        "pinyin": null,
+        "meaning": "você precisa levar"
+      },
+      {
+        "id": 3,
+        "word": "bambino",
+        "pinyin": null,
+        "meaning": "criança"
+      },
+      {
+        "id": 4,
+        "word": "Ospedale di Quartiere",
+        "pinyin": null,
+        "meaning": "Hospital do Bairro"
+      },
+      {
+        "id": 5,
+        "word": "vaccinazioni",
+        "pinyin": null,
+        "meaning": "vacinações"
+      },
+      {
+        "id": 6,
+        "word": "chiesto un permesso",
+        "pinyin": null,
+        "meaning": "pediu uma licença"
+      }
+    ],
+    "id": "local-1772301303871-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì, ho chiesto un giorno libero. Tesoro, quali iniezioni farà il bambino domani?",
+    "pinyin": null,
+    "translation": "B: Sim, pedi um dia de folga. Querido, quais injeções a criança vai tomar amanhã?",
+    "tokens": [
+      "Sì",
+      ",",
+      "ho",
+      "chiesto",
+      "un",
+      "giorno",
+      "libero",
+      ".",
+      "Tesoro",
+      ",",
+      "quali",
+      "iniezioni",
+      "farà",
+      "il",
+      "bambino",
+      "domani",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "giorno libero",
+        "pinyin": null,
+        "meaning": "dia de folga"
+      },
+      {
+        "id": 3,
+        "word": "Tesoro",
+        "pinyin": null,
+        "meaning": "Querido/Amor"
+      },
+      {
+        "id": 4,
+        "word": "iniezioni",
+        "pinyin": null,
+        "meaning": "injeções"
+      },
+      {
+        "id": 5,
+        "word": "farà",
+        "pinyin": null,
+        "meaning": "fará/tomará"
+      },
+      {
+        "id": 6,
+        "word": "bambino",
+        "pinyin": null,
+        "meaning": "criança"
+      },
+      {
+        "id": 7,
+        "word": "domani",
+        "pinyin": null,
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772301303871-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Controllo. È il vaccino contro l'epatite B.",
+    "pinyin": null,
+    "translation": "A: Vou verificar. É a vacina contra a hepatite B.",
+    "tokens": [
+      "Controllo",
+      ".",
+      "È",
+      "il",
+      "vaccino",
+      "contro",
+      "l'",
+      "epatite",
+      "B",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Controllo",
+        "pinyin": null,
+        "meaning": "Vou verificar"
+      },
+      {
+        "id": 2,
+        "word": "vaccino",
+        "pinyin": null,
+        "meaning": "vacina"
+      },
+      {
+        "id": 3,
+        "word": "contro",
+        "pinyin": null,
+        "meaning": "contra"
+      },
+      {
+        "id": 4,
+        "word": "epatite B",
+        "pinyin": null,
+        "meaning": "hepatite B"
+      }
+    ],
+    "id": "local-1772301303871-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oh. È gratuito, vero?",
+    "pinyin": null,
+    "translation": "B: Oh. É gratuito, certo?",
+    "tokens": [
+      "Oh",
+      ".",
+      "È",
+      "gratuito",
+      ",",
+      "vero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gratuito",
+        "pinyin": null,
+        "meaning": "gratuito"
+      },
+      {
+        "id": 2,
+        "word": "vero",
+        "pinyin": null,
+        "meaning": "verdade/certo?"
+      }
+    ],
+    "id": "local-1772301303871-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ci sono vaccini cinesi e importati. Quelli cinesi sono gratuiti. C'è un costo per quelli importati.",
+    "pinyin": null,
+    "translation": "A: Existem vacinas chinesas e importadas. As chinesas são gratuitas. Há um custo para as importadas.",
+    "tokens": [
+      "Ci",
+      "sono",
+      "vaccini",
+      "cinesi",
+      "e",
+      "importati",
+      ".",
+      "Quelli",
+      "cinesi",
+      "sono",
+      "gratuiti",
+      ".",
+      "C'",
+      "è",
+      "un",
+      "costo",
+      "per",
+      "quelli",
+      "importati",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ci sono",
+        "pinyin": null,
+        "meaning": "Existem/Há"
+      },
+      {
+        "id": 2,
+        "word": "vaccini",
+        "pinyin": null,
+        "meaning": "vacinas"
+      },
+      {
+        "id": 3,
+        "word": "cinesi",
+        "pinyin": null,
+        "meaning": "chinesas"
+      },
+      {
+        "id": 4,
+        "word": "importati",
+        "pinyin": null,
+        "meaning": "importadas"
+      },
+      {
+        "id": 5,
+        "word": "gratuiti",
+        "pinyin": null,
+        "meaning": "gratuitos"
+      },
+      {
+        "id": 6,
+        "word": "C'è un costo",
+        "pinyin": null,
+        "meaning": "Há um custo"
+      }
+    ],
+    "id": "local-1772301303871-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quindi prendiamo quello cinese o quello importato?",
+    "pinyin": null,
+    "translation": "B: Então pegamos a chinesa ou a importada?",
+    "tokens": [
+      "Quindi",
+      "prendiamo",
+      "quello",
+      "cinese",
+      "o",
+      "quello",
+      "importato",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quindi",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "prendiamo",
+        "pinyin": null,
+        "meaning": "pegamos/tomamos"
+      },
+      {
+        "id": 3,
+        "word": "cinese",
+        "pinyin": null,
+        "meaning": "chinês"
+      },
+      {
+        "id": 4,
+        "word": "importato",
+        "pinyin": null,
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301303871-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Quello importato.",
+    "pinyin": null,
+    "translation": "A: A importada.",
+    "tokens": [
+      "Quello",
+      "importato",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "importato",
+        "pinyin": null,
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301303871-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ma la resistenza del nostro piccolino è molto buona e non si ammala. Non è davvero necessario prendere quello importato.",
+    "pinyin": null,
+    "translation": "B: Mas a resistência do nosso pequenino é muito boa e ele não fica doente. Não é realmente necessário pegar a importada.",
+    "tokens": [
+      "Ma",
+      "la",
+      "resistenza",
+      "del",
+      "nostro",
+      "piccolino",
+      "è",
+      "molto",
+      "buona",
+      "e",
+      "non",
+      "si",
+      "ammala",
+      ".",
+      "Non",
+      "è",
+      "davvero",
+      "necessario",
+      "prendere",
+      "quello",
+      "importato",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ma",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "resistenza",
+        "pinyin": null,
+        "meaning": "resistência"
+      },
+      {
+        "id": 3,
+        "word": "piccolino",
+        "pinyin": null,
+        "meaning": "pequenino"
+      },
+      {
+        "id": 4,
+        "word": "molto buona",
+        "pinyin": null,
+        "meaning": "muito boa"
+      },
+      {
+        "id": 5,
+        "word": "non si ammala",
+        "pinyin": null,
+        "meaning": "não fica doente"
+      },
+      {
+        "id": 6,
+        "word": "davvero necessario",
+        "pinyin": null,
+        "meaning": "realmente necessário"
+      },
+      {
+        "id": 7,
+        "word": "prendere",
+        "pinyin": null,
+        "meaning": "pegar/tomar"
+      },
+      {
+        "id": 8,
+        "word": "importato",
+        "pinyin": null,
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301303871-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non possiamo lesinare sui soldi che spendiamo per nostro figlio. Il vaccino importato è costoso, ma dovrebbe essere migliore e più sicuro. Hai quello che paghi.",
+    "pinyin": null,
+    "translation": "A: Não podemos economizar no dinheiro que gastamos com nosso filho. A vacina importada é cara, mas deveria ser melhor e mais segura. Você tem o que paga.",
+    "tokens": [
+      "Non",
+      "possiamo",
+      "lesinare",
+      "sui",
+      "soldi",
+      "che",
+      "spendiamo",
+      "per",
+      "nostro",
+      "figlio",
+      ".",
+      "Il",
+      "vaccino",
+      "importato",
+      "è",
+      "costoso",
+      ",",
+      "ma",
+      "dovrebbe",
+      "essere",
+      "migliore",
+      "e",
+      "più",
+      "sicuro",
+      ".",
+      "Hai",
+      "quello",
+      "che",
+      "paghi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non possiamo lesinare",
+        "pinyin": null,
+        "meaning": "Não podemos economizar"
+      },
+      {
+        "id": 2,
+        "word": "soldi",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "spendiamo",
+        "pinyin": null,
+        "meaning": "gastamos"
+      },
+      {
+        "id": 4,
+        "word": "figlio",
+        "pinyin": null,
+        "meaning": "filho"
+      },
+      {
+        "id": 5,
+        "word": "vaccino importato",
+        "pinyin": null,
+        "meaning": "vacina importada"
+      },
+      {
+        "id": 6,
+        "word": "costoso",
+        "pinyin": null,
+        "meaning": "caro"
+      },
+      {
+        "id": 7,
+        "word": "dovrebbe essere",
+        "pinyin": null,
+        "meaning": "deveria ser"
+      },
+      {
+        "id": 8,
+        "word": "migliore",
+        "pinyin": null,
+        "meaning": "melhor"
+      },
+      {
+        "id": 9,
+        "word": "più sicuro",
+        "pinyin": null,
+        "meaning": "mais seguro"
+      },
+      {
+        "id": 10,
+        "word": "Hai quello che paghi",
+        "pinyin": null,
+        "meaning": "Você tem o que paga / Você recebe o que paga"
+      }
+    ],
+    "id": "local-1772301303871-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: OK, capo. Quello che dici tu è legge. Ti darò ascolto.",
+    "pinyin": null,
+    "translation": "B: OK, chefe. O que você diz é lei. Vou te dar ouvidos.",
+    "tokens": [
+      "OK",
+      ",",
+      "capo",
+      ".",
+      "Quello",
+      "che",
+      "dici",
+      "tu",
+      "è",
+      "legge",
+      ".",
+      "Ti",
+      "darò",
+      "ascolto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "capo",
+        "pinyin": null,
+        "meaning": "chefe"
+      },
+      {
+        "id": 2,
+        "word": "Quello che dici tu è legge",
+        "pinyin": null,
+        "meaning": "O que você diz é lei"
+      },
+      {
+        "id": 3,
+        "word": "Ti darò ascolto",
+        "pinyin": null,
+        "meaning": "Vou te dar ouvidos / Vou te escutar"
+      }
+    ],
+    "id": "local-1772301303871-9",
+    "language": "Italiano"
+  }
+]

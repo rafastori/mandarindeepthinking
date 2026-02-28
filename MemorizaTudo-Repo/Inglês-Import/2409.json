@@ -1,0 +1,575 @@
+[
+  {
+    "chinese": "A: Waiter, I want to buy a birthday cake for my child. It's for about 10 people.",
+    "pinyin": null,
+    "translation": "A: Garçom, quero comprar um bolo de aniversário para o meu filho. É para cerca de 10 pessoas.",
+    "tokens": [
+      "Waiter",
+      ",",
+      "I",
+      "want",
+      "to",
+      "buy",
+      "a",
+      "birthday",
+      "cake",
+      "for",
+      "my",
+      "child",
+      ".",
+      "It's",
+      "for",
+      "about",
+      "10",
+      "people",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Waiter",
+        "pinyin": null,
+        "meaning": "Garçom"
+      },
+      {
+        "id": 2,
+        "word": "want to buy",
+        "pinyin": null,
+        "meaning": "quero comprar"
+      },
+      {
+        "id": 3,
+        "word": "birthday cake",
+        "pinyin": null,
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 4,
+        "word": "child",
+        "pinyin": null,
+        "meaning": "criança/filho(a)"
+      },
+      {
+        "id": 5,
+        "word": "about",
+        "pinyin": null,
+        "meaning": "cerca de"
+      },
+      {
+        "id": 6,
+        "word": "people",
+        "pinyin": null,
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772292565460-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: If there are 10 people, a 12-inch cake should be about right.",
+    "pinyin": null,
+    "translation": "B: Se são 10 pessoas, um bolo de 12 polegadas deve ser o suficiente.",
+    "tokens": [
+      "If",
+      "there",
+      "are",
+      "10",
+      "people",
+      ",",
+      "a",
+      "12-inch",
+      "cake",
+      "should",
+      "be",
+      "about",
+      "right",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "people",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 2,
+        "word": "12-inch cake",
+        "pinyin": null,
+        "meaning": "bolo de 12 polegadas"
+      },
+      {
+        "id": 3,
+        "word": "should be about right",
+        "pinyin": null,
+        "meaning": "deve ser o suficiente/adequado"
+      }
+    ],
+    "id": "local-1772292565460-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then what kinds of cake do you have?",
+    "pinyin": null,
+    "translation": "A: Então, que tipos de bolo vocês têm?",
+    "tokens": [
+      "Then",
+      "what",
+      "kinds",
+      "of",
+      "cake",
+      "do",
+      "you",
+      "have",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kinds of cake",
+        "pinyin": null,
+        "meaning": "tipos de bolo"
+      },
+      {
+        "id": 2,
+        "word": "have",
+        "pinyin": null,
+        "meaning": "ter/possuir"
+      }
+    ],
+    "id": "local-1772292565460-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: We've got fruit and cream cake, chocolate cake, mousse cake and cheese cake.",
+    "pinyin": null,
+    "translation": "B: Nós temos bolo de frutas e creme, bolo de chocolate, bolo mousse e cheesecake.",
+    "tokens": [
+      "We've",
+      "got",
+      "fruit",
+      "and",
+      "cream",
+      "cake",
+      ",",
+      "chocolate",
+      "cake",
+      ",",
+      "mousse",
+      "cake",
+      "and",
+      "cheese",
+      "cake",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "We've got",
+        "pinyin": null,
+        "meaning": "Nós temos"
+      },
+      {
+        "id": 2,
+        "word": "fruit and cream cake",
+        "pinyin": null,
+        "meaning": "bolo de frutas e creme"
+      },
+      {
+        "id": 3,
+        "word": "chocolate cake",
+        "pinyin": null,
+        "meaning": "bolo de chocolate"
+      },
+      {
+        "id": 4,
+        "word": "mousse cake",
+        "pinyin": null,
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 5,
+        "word": "cheese cake",
+        "pinyin": null,
+        "meaning": "cheesecake"
+      }
+    ],
+    "id": "local-1772292565460-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What's the flavor of the mousse cake?",
+    "pinyin": null,
+    "translation": "A: Qual é o sabor do bolo mousse?",
+    "tokens": [
+      "What's",
+      "the",
+      "flavor",
+      "of",
+      "the",
+      "mousse",
+      "cake",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "flavor",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 2,
+        "word": "mousse cake",
+        "pinyin": null,
+        "meaning": "bolo mousse"
+      }
+    ],
+    "id": "local-1772292565460-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: The flavor of the mousse cake is more fine and smooth, and light and refreshing.",
+    "pinyin": null,
+    "translation": "B: O sabor do bolo mousse é mais delicado e suave, e leve e refrescante.",
+    "tokens": [
+      "The",
+      "flavor",
+      "of",
+      "the",
+      "mousse",
+      "cake",
+      "is",
+      "more",
+      "fine",
+      "and",
+      "smooth",
+      ",",
+      "and",
+      "light",
+      "and",
+      "refreshing",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "flavor",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 2,
+        "word": "mousse cake",
+        "pinyin": null,
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 3,
+        "word": "fine",
+        "pinyin": null,
+        "meaning": "delicado"
+      },
+      {
+        "id": 4,
+        "word": "smooth",
+        "pinyin": null,
+        "meaning": "suave"
+      },
+      {
+        "id": 5,
+        "word": "light",
+        "pinyin": null,
+        "meaning": "leve"
+      },
+      {
+        "id": 6,
+        "word": "refreshing",
+        "pinyin": null,
+        "meaning": "refrescante"
+      }
+    ],
+    "id": "local-1772292565460-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then we want to buy a 12-inch mousse cake.",
+    "pinyin": null,
+    "translation": "A: Então queremos comprar um bolo mousse de 12 polegadas.",
+    "tokens": [
+      "Then",
+      "we",
+      "want",
+      "to",
+      "buy",
+      "a",
+      "12-inch",
+      "mousse",
+      "cake",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "want to buy",
+        "pinyin": null,
+        "meaning": "queremos comprar"
+      },
+      {
+        "id": 2,
+        "word": "12-inch mousse cake",
+        "pinyin": null,
+        "meaning": "bolo mousse de 12 polegadas"
+      }
+    ],
+    "id": "local-1772292565460-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. However, you need to order this cake in advance. You can pick it up after 10 o'clock tomorrow.",
+    "pinyin": null,
+    "translation": "B: Ok. No entanto, você precisa encomendar este bolo com antecedência. Pode retirá-lo depois das 10 horas amanhã.",
+    "tokens": [
+      "Okay",
+      ".",
+      "However",
+      ",",
+      "you",
+      "need",
+      "to",
+      "order",
+      "this",
+      "cake",
+      "in",
+      "advance",
+      ".",
+      "You",
+      "can",
+      "pick",
+      "it",
+      "up",
+      "after",
+      "10",
+      "o'clock",
+      "tomorrow",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "However",
+        "pinyin": null,
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "need to order",
+        "pinyin": null,
+        "meaning": "precisa encomendar"
+      },
+      {
+        "id": 3,
+        "word": "in advance",
+        "pinyin": null,
+        "meaning": "com antecedência"
+      },
+      {
+        "id": 4,
+        "word": "pick it up",
+        "pinyin": null,
+        "meaning": "retirá-lo"
+      },
+      {
+        "id": 5,
+        "word": "after",
+        "pinyin": null,
+        "meaning": "depois de"
+      },
+      {
+        "id": 6,
+        "word": "10 o'clock",
+        "pinyin": null,
+        "meaning": "10 horas"
+      },
+      {
+        "id": 7,
+        "word": "tomorrow",
+        "pinyin": null,
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772292565460-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Are your cakes freshly made?",
+    "pinyin": null,
+    "translation": "A: Os bolos de vocês são feitos na hora?",
+    "tokens": [
+      "Are",
+      "your",
+      "cakes",
+      "freshly",
+      "made",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cakes",
+        "pinyin": null,
+        "meaning": "bolos"
+      },
+      {
+        "id": 2,
+        "word": "freshly made",
+        "pinyin": null,
+        "meaning": "feitos na hora/frescos"
+      }
+    ],
+    "id": "local-1772292565460-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Our chefs freshly make them each morning. Relax.",
+    "pinyin": null,
+    "translation": "B: Nossos chefs os fazem frescos todas as manhãs. Relaxe.",
+    "tokens": [
+      "Our",
+      "chefs",
+      "freshly",
+      "make",
+      "them",
+      "each",
+      "morning",
+      ".",
+      "Relax",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chefs",
+        "pinyin": null,
+        "meaning": "chefs/cozinheiros"
+      },
+      {
+        "id": 2,
+        "word": "freshly make",
+        "pinyin": null,
+        "meaning": "fazem frescos/preparam na hora"
+      },
+      {
+        "id": 3,
+        "word": "each morning",
+        "pinyin": null,
+        "meaning": "todas as manhãs"
+      },
+      {
+        "id": 4,
+        "word": "Relax",
+        "pinyin": null,
+        "meaning": "Relaxe"
+      }
+    ],
+    "id": "local-1772292565460-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: May I ask how old your child is?",
+    "pinyin": null,
+    "translation": "B: Posso perguntar quantos anos seu filho tem?",
+    "tokens": [
+      "May",
+      "I",
+      "ask",
+      "how",
+      "old",
+      "your",
+      "child",
+      "is",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "May I ask",
+        "pinyin": null,
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 2,
+        "word": "how old",
+        "pinyin": null,
+        "meaning": "quantos anos"
+      },
+      {
+        "id": 3,
+        "word": "child",
+        "pinyin": null,
+        "meaning": "filho/criança"
+      }
+    ],
+    "id": "local-1772292565460-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Three years old.",
+    "pinyin": null,
+    "translation": "A: Três anos.",
+    "tokens": [
+      "Three",
+      "years",
+      "old",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Three years old",
+        "pinyin": null,
+        "meaning": "Três anos de idade"
+      }
+    ],
+    "id": "local-1772292565460-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. I'll help you get three candles.",
+    "pinyin": null,
+    "translation": "B: Ok. Vou ajudá-lo a pegar três velas.",
+    "tokens": [
+      "Okay",
+      ".",
+      "I'll",
+      "help",
+      "you",
+      "get",
+      "three",
+      "candles",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "help",
+        "pinyin": null,
+        "meaning": "ajudar"
+      },
+      {
+        "id": 2,
+        "word": "get",
+        "pinyin": null,
+        "meaning": "pegar/obter"
+      },
+      {
+        "id": 3,
+        "word": "three candles",
+        "pinyin": null,
+        "meaning": "três velas"
+      }
+    ],
+    "id": "local-1772292565460-12",
+    "language": "Inglês"
+  }
+]

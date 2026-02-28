@@ -1,0 +1,508 @@
+[
+  {
+    "chinese": "A: Ehi, lo schermo del tuo computer è così luminoso. Non trovi che sia difficile da guardare?",
+    "pinyin": null,
+    "translation": "A: Ei, a tela do seu computador está tão brilhante. Você não acha que é difícil de olhar?",
+    "tokens": [
+      "A:",
+      "Ehi,",
+      "lo",
+      "schermo",
+      "del",
+      "tuo",
+      "computer",
+      "è",
+      "così",
+      "luminoso.",
+      "Non",
+      "trovi",
+      "che",
+      "sia",
+      "difficile",
+      "da",
+      "guardare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ehi",
+        "pinyin": null,
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "schermo",
+        "pinyin": null,
+        "meaning": "tela"
+      },
+      {
+        "id": 3,
+        "word": "computer",
+        "pinyin": null,
+        "meaning": "computador"
+      },
+      {
+        "id": 4,
+        "word": "luminoso",
+        "pinyin": null,
+        "meaning": "brilhante, luminoso"
+      },
+      {
+        "id": 5,
+        "word": "Non trovi che",
+        "pinyin": null,
+        "meaning": "Você não acha que"
+      },
+      {
+        "id": 6,
+        "word": "difficile",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 7,
+        "word": "guardare",
+        "pinyin": null,
+        "meaning": "olhar, ver"
+      }
+    ],
+    "id": "local-1772296798012-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ehi, non mi interessa. Devo sbrigarmi.",
+    "pinyin": null,
+    "translation": "B: Ei, não me importa. Preciso me apressar.",
+    "tokens": [
+      "B:",
+      "Ehi,",
+      "non",
+      "mi",
+      "interessa.",
+      "Devo",
+      "sbrigarmi."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ehi",
+        "pinyin": null,
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "non mi interessa",
+        "pinyin": null,
+        "meaning": "não me importa"
+      },
+      {
+        "id": 3,
+        "word": "Devo",
+        "pinyin": null,
+        "meaning": "Devo"
+      },
+      {
+        "id": 4,
+        "word": "sbrigarmi",
+        "pinyin": null,
+        "meaning": "me apressar"
+      }
+    ],
+    "id": "local-1772296798012-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: A te non interessa, ma a me sì. Se è troppo luminoso non riuscirò a dormire.",
+    "pinyin": null,
+    "translation": "A: Pra você não importa, mas pra mim sim. Se for muito brilhante, não conseguirei dormir.",
+    "tokens": [
+      "A:",
+      "A",
+      "te",
+      "non",
+      "interessa,",
+      "ma",
+      "a",
+      "me",
+      "sì.",
+      "Se",
+      "è",
+      "troppo",
+      "luminoso",
+      "non",
+      "riuscirò",
+      "a",
+      "dormire."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "non interessa",
+        "pinyin": null,
+        "meaning": "não importa"
+      },
+      {
+        "id": 2,
+        "word": "a me sì",
+        "pinyin": null,
+        "meaning": "pra mim sim"
+      },
+      {
+        "id": 3,
+        "word": "troppo",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "luminoso",
+        "pinyin": null,
+        "meaning": "brilhante"
+      },
+      {
+        "id": 5,
+        "word": "riuscirò",
+        "pinyin": null,
+        "meaning": "conseguirei"
+      },
+      {
+        "id": 6,
+        "word": "dormire",
+        "pinyin": null,
+        "meaning": "dormir"
+      }
+    ],
+    "id": "local-1772296798012-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Davvero? Allora mi dispiace. Lo cambierò. Come si cambia la luminosità dello schermo? Zhenzhen, lo sai?",
+    "pinyin": null,
+    "translation": "B: Sério? Então me desculpe. Eu vou mudar. Como se muda o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "B:",
+      "Davvero?",
+      "Allora",
+      "mi",
+      "dispiace.",
+      "Lo",
+      "cambierò.",
+      "Come",
+      "si",
+      "cambia",
+      "la",
+      "luminosità",
+      "dello",
+      "schermo?",
+      "Zhenzhen,",
+      "lo",
+      "sai?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Davvero",
+        "pinyin": null,
+        "meaning": "Sério, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "mi dispiace",
+        "pinyin": null,
+        "meaning": "me desculpe"
+      },
+      {
+        "id": 4,
+        "word": "cambierò",
+        "pinyin": null,
+        "meaning": "mudarei"
+      },
+      {
+        "id": 5,
+        "word": "si cambia",
+        "pinyin": null,
+        "meaning": "se muda"
+      },
+      {
+        "id": 6,
+        "word": "luminosità",
+        "pinyin": null,
+        "meaning": "brilho, luminosidade"
+      },
+      {
+        "id": 7,
+        "word": "schermo",
+        "pinyin": null,
+        "meaning": "tela"
+      },
+      {
+        "id": 8,
+        "word": "lo sai",
+        "pinyin": null,
+        "meaning": "você sabe"
+      }
+    ],
+    "id": "local-1772296798012-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il mio è un desktop. In fondo allo schermo c'è un pulsante che puoi premere. Se è un laptop, cerca sulla tastiera per vedere se c'è un tasto con un simbolo di funzione.",
+    "pinyin": null,
+    "translation": "A: O meu é um desktop. No fundo da tela há um botão que você pode apertar. Se for um laptop, procure no teclado para ver se há uma tecla com um símbolo de função.",
+    "tokens": [
+      "A:",
+      "Il",
+      "mio",
+      "è",
+      "un",
+      "desktop.",
+      "In",
+      "fondo",
+      "allo",
+      "schermo",
+      "c'è",
+      "un",
+      "pulsante",
+      "che",
+      "puoi",
+      "premere.",
+      "Se",
+      "è",
+      "un",
+      "laptop,",
+      "cerca",
+      "sulla",
+      "tastiera",
+      "per",
+      "vedere",
+      "se",
+      "c'è",
+      "un",
+      "tasto",
+      "con",
+      "un",
+      "simbolo",
+      "di",
+      "funzione."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "desktop",
+        "pinyin": null,
+        "meaning": "computador de mesa"
+      },
+      {
+        "id": 2,
+        "word": "In fondo a",
+        "pinyin": null,
+        "meaning": "No fundo de"
+      },
+      {
+        "id": 3,
+        "word": "schermo",
+        "pinyin": null,
+        "meaning": "tela"
+      },
+      {
+        "id": 4,
+        "word": "c'è",
+        "pinyin": null,
+        "meaning": "há, existe"
+      },
+      {
+        "id": 5,
+        "word": "pulsante",
+        "pinyin": null,
+        "meaning": "botão"
+      },
+      {
+        "id": 6,
+        "word": "puoi premere",
+        "pinyin": null,
+        "meaning": "você pode apertar"
+      },
+      {
+        "id": 7,
+        "word": "laptop",
+        "pinyin": null,
+        "meaning": "notebook, laptop"
+      },
+      {
+        "id": 8,
+        "word": "cerca",
+        "pinyin": null,
+        "meaning": "procure"
+      },
+      {
+        "id": 9,
+        "word": "tastiera",
+        "pinyin": null,
+        "meaning": "teclado"
+      },
+      {
+        "id": 10,
+        "word": "tasto",
+        "pinyin": null,
+        "meaning": "tecla"
+      },
+      {
+        "id": 11,
+        "word": "simbolo",
+        "pinyin": null,
+        "meaning": "símbolo"
+      },
+      {
+        "id": 12,
+        "word": "funzione",
+        "pinyin": null,
+        "meaning": "função"
+      }
+    ],
+    "id": "local-1772296798012-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Vediamo. Questo regola il contrasto, questo è il colore. Oh, questa è la luminosità. Ok, l'ho reso più scuro che posso. Va un po' meglio?",
+    "pinyin": null,
+    "translation": "B: Vamos ver. Este ajusta o contraste, este é a cor. Oh, esta é a luminosidade. Ok, eu o deixei o mais escuro que posso. Está um pouco melhor?",
+    "tokens": [
+      "B:",
+      "Vediamo.",
+      "Questo",
+      "regola",
+      "il",
+      "contrasto,",
+      "questo",
+      "è",
+      "il",
+      "colore.",
+      "Oh,",
+      "questa",
+      "è",
+      "la",
+      "luminosità.",
+      "Ok,",
+      "l'ho",
+      "reso",
+      "più",
+      "scuro",
+      "che",
+      "posso.",
+      "Va",
+      "un",
+      "po'",
+      "meglio?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vediamo",
+        "pinyin": null,
+        "meaning": "Vamos ver"
+      },
+      {
+        "id": 2,
+        "word": "regola",
+        "pinyin": null,
+        "meaning": "ajusta, regula"
+      },
+      {
+        "id": 3,
+        "word": "contrasto",
+        "pinyin": null,
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "colore",
+        "pinyin": null,
+        "meaning": "cor"
+      },
+      {
+        "id": 5,
+        "word": "luminosità",
+        "pinyin": null,
+        "meaning": "brilho, luminosidade"
+      },
+      {
+        "id": 6,
+        "word": "l'ho reso",
+        "pinyin": null,
+        "meaning": "eu o tornei, eu o deixei"
+      },
+      {
+        "id": 7,
+        "word": "scuro",
+        "pinyin": null,
+        "meaning": "escuro"
+      },
+      {
+        "id": 8,
+        "word": "che posso",
+        "pinyin": null,
+        "meaning": "que posso"
+      },
+      {
+        "id": 9,
+        "word": "Va meglio",
+        "pinyin": null,
+        "meaning": "Está melhor"
+      },
+      {
+        "id": 10,
+        "word": "un po'",
+        "pinyin": null,
+        "meaning": "um pouco"
+      }
+    ],
+    "id": "local-1772296798012-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Va molto meglio. Vado a dormire. In bocca al lupo!",
+    "pinyin": null,
+    "translation": "A: Está muito melhor. Vou dormir. Boa sorte!",
+    "tokens": [
+      "A:",
+      "Va",
+      "molto",
+      "meglio.",
+      "Vado",
+      "a",
+      "dormire.",
+      "In",
+      "bocca",
+      "al",
+      "lupo!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va molto meglio",
+        "pinyin": null,
+        "meaning": "Está muito melhor"
+      },
+      {
+        "id": 2,
+        "word": "Vado a dormire",
+        "pinyin": null,
+        "meaning": "Vou dormir"
+      },
+      {
+        "id": 3,
+        "word": "In bocca al lupo!",
+        "pinyin": null,
+        "meaning": "Boa sorte! (literalmente: na boca do lobo!)"
+      }
+    ],
+    "id": "local-1772296798012-6",
+    "language": "Italiano"
+  }
+]

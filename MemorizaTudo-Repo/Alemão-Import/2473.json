@@ -1,0 +1,1012 @@
+[
+  {
+    "chinese": "A: Schon wieder Mathe, ich hasse es! Ah, Wang Xiaoming, lass uns nach der Schule Fußball spielen gehen.",
+    "pinyin": "",
+    "translation": "A: Matemática de novo, eu odeio isso! Ah, Wang Xiaoming, vamos jogar futebol depois da escola.",
+    "tokens": [
+      "Schon",
+      "wieder",
+      "Mathe",
+      ",",
+      "ich",
+      "hasse",
+      "es",
+      "!",
+      "Ah",
+      ",",
+      "Wang",
+      "Xiaoming",
+      ",",
+      "lass",
+      "uns",
+      "nach",
+      "der",
+      "Schule",
+      "Fußball",
+      "spielen",
+      "gehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "schon",
+        "pinyin": "",
+        "meaning": "já, novamente, realmente"
+      },
+      {
+        "id": 2,
+        "word": "wieder",
+        "pinyin": "",
+        "meaning": "novamente"
+      },
+      {
+        "id": 3,
+        "word": "Mathe",
+        "pinyin": "",
+        "meaning": "matemática (forma curta para Mathematik)"
+      },
+      {
+        "id": 4,
+        "word": "hassen",
+        "pinyin": "",
+        "meaning": "odiar"
+      },
+      {
+        "id": 5,
+        "word": "es",
+        "pinyin": "",
+        "meaning": "isso, ele/ela (neutro)"
+      },
+      {
+        "id": 6,
+        "word": "lassen",
+        "pinyin": "",
+        "meaning": "deixar, permitir, vamos"
+      },
+      {
+        "id": 7,
+        "word": "uns",
+        "pinyin": "",
+        "meaning": "nos"
+      },
+      {
+        "id": 8,
+        "word": "nach",
+        "pinyin": "",
+        "meaning": "depois de, para"
+      },
+      {
+        "id": 9,
+        "word": "die Schule",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 10,
+        "word": "Fußball",
+        "pinyin": "",
+        "meaning": "futebol"
+      },
+      {
+        "id": 11,
+        "word": "spielen",
+        "pinyin": "",
+        "meaning": "jogar, brincar"
+      },
+      {
+        "id": 12,
+        "word": "gehen",
+        "pinyin": "",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772293866572-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Li Jia, was sagst du da? Steh auf und erklär uns, was Brüche sind.",
+    "pinyin": "",
+    "translation": "B: Li Jia, o que você está dizendo? Levante-se e explique-nos o que são frações.",
+    "tokens": [
+      "Li",
+      "Jia",
+      ",",
+      "was",
+      "sagst",
+      "du",
+      "da",
+      "?",
+      "Steh",
+      "auf",
+      "und",
+      "erklär",
+      "uns",
+      ",",
+      "was",
+      "Brüche",
+      "sind",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "sagen",
+        "pinyin": "",
+        "meaning": "dizer"
+      },
+      {
+        "id": 3,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 4,
+        "word": "da",
+        "pinyin": "",
+        "meaning": "aí, aqui, então"
+      },
+      {
+        "id": 5,
+        "word": "aufstehen",
+        "pinyin": "",
+        "meaning": "levantar-se"
+      },
+      {
+        "id": 6,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 7,
+        "word": "erklären",
+        "pinyin": "",
+        "meaning": "explicar"
+      },
+      {
+        "id": 8,
+        "word": "uns",
+        "pinyin": "",
+        "meaning": "nos"
+      },
+      {
+        "id": 9,
+        "word": "der Bruch",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 10,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      }
+    ],
+    "id": "local-1772293866572-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Brüche zeigen an, in wie viele Teile ein Ganzes geteilt wird und wie viele dieser Teile gemeint sind.",
+    "pinyin": "",
+    "translation": "A: Frações indicam em quantas partes um todo é dividido e quantas dessas partes são consideradas.",
+    "tokens": [
+      "Brüche",
+      "zeigen",
+      "an",
+      ",",
+      "in",
+      "wie",
+      "viele",
+      "Teile",
+      "ein",
+      "Ganzes",
+      "geteilt",
+      "wird",
+      "und",
+      "wie",
+      "viele",
+      "dieser",
+      "Teile",
+      "gemeint",
+      "sind",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "der Bruch",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 2,
+        "word": "anzeigen",
+        "pinyin": "",
+        "meaning": "indicar, mostrar"
+      },
+      {
+        "id": 3,
+        "word": "in",
+        "pinyin": "",
+        "meaning": "em, para dentro"
+      },
+      {
+        "id": 4,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 5,
+        "word": "viel",
+        "pinyin": "",
+        "meaning": "muito(a), muitos(as)"
+      },
+      {
+        "id": 6,
+        "word": "der Teil",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": 7,
+        "word": "das Ganze",
+        "pinyin": "",
+        "meaning": "o todo, a totalidade"
+      },
+      {
+        "id": 8,
+        "word": "teilen",
+        "pinyin": "",
+        "meaning": "dividir, compartilhar"
+      },
+      {
+        "id": 9,
+        "word": "werden",
+        "pinyin": "",
+        "meaning": "tornar-se (auxiliar para voz passiva)"
+      },
+      {
+        "id": 10,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 11,
+        "word": "dieser",
+        "pinyin": "",
+        "meaning": "este(a), estes(as)"
+      },
+      {
+        "id": 12,
+        "word": "meinen",
+        "pinyin": "",
+        "meaning": "querer dizer, pretender"
+      },
+      {
+        "id": 13,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      }
+    ],
+    "id": "local-1772293866572-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kannst du ein Beispiel nennen?",
+    "pinyin": "",
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "Kannst",
+      "du",
+      "ein",
+      "Beispiel",
+      "nennen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "können",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 2,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "das Beispiel",
+        "pinyin": "",
+        "meaning": "exemplo"
+      },
+      {
+        "id": 4,
+        "word": "nennen",
+        "pinyin": "",
+        "meaning": "nomear, mencionar, chamar"
+      }
+    ],
+    "id": "local-1772293866572-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Zum Beispiel, wenn ich einen Apfel von drei Äpfeln nehme, ist das ein Drittel.",
+    "pinyin": "",
+    "translation": "A: Por exemplo, se eu pego uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "Zum",
+      "Beispiel",
+      ",",
+      "wenn",
+      "ich",
+      "einen",
+      "Apfel",
+      "von",
+      "drei",
+      "Äpfeln",
+      "nehme",
+      ",",
+      "ist",
+      "das",
+      "ein",
+      "Drittel",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zum Beispiel",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 2,
+        "word": "wenn",
+        "pinyin": "",
+        "meaning": "se, quando"
+      },
+      {
+        "id": 3,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "der Apfel",
+        "pinyin": "",
+        "meaning": "maçã"
+      },
+      {
+        "id": 5,
+        "word": "von",
+        "pinyin": "",
+        "meaning": "de, a partir de"
+      },
+      {
+        "id": 6,
+        "word": "drei",
+        "pinyin": "",
+        "meaning": "três"
+      },
+      {
+        "id": 7,
+        "word": "nehmen",
+        "pinyin": "",
+        "meaning": "pegar, tomar"
+      },
+      {
+        "id": 8,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 9,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso, aquele, a"
+      },
+      {
+        "id": 10,
+        "word": "das Drittel",
+        "pinyin": "",
+        "meaning": "um terço"
+      }
+    ],
+    "id": "local-1772293866572-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gut, und wie schreibt man das?",
+    "pinyin": "",
+    "translation": "B: Bom, e como se escreve isso?",
+    "tokens": [
+      "Gut",
+      ",",
+      "und",
+      "wie",
+      "schreibt",
+      "man",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom, bem"
+      },
+      {
+        "id": 2,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 3,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "schreiben",
+        "pinyin": "",
+        "meaning": "escrever"
+      },
+      {
+        "id": 5,
+        "word": "man",
+        "pinyin": "",
+        "meaning": "a gente, se (pronome impessoal)"
+      },
+      {
+        "id": 6,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso, aquele, a"
+      }
+    ],
+    "id": "local-1772293866572-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Zuerst schreibt man den Bruchstrich. \"Der Zähler\" steht über dem Bruchstrich. \"Der Nenner\" steht darunter.",
+    "pinyin": "",
+    "translation": "A: Primeiro se escreve o traço de fração. O \"numerador\" fica acima do traço de fração. O \"denominador\" fica abaixo.",
+    "tokens": [
+      "Zuerst",
+      "schreibt",
+      "man",
+      "den",
+      "Bruchstrich",
+      ".",
+      "\"",
+      "Der",
+      "Zähler",
+      "\"",
+      "steht",
+      "über",
+      "dem",
+      "Bruchstrich",
+      ".",
+      "\"",
+      "Der",
+      "Nenner",
+      "\"",
+      "steht",
+      "darunter",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zuerst",
+        "pinyin": "",
+        "meaning": "primeiro, em primeiro lugar"
+      },
+      {
+        "id": 2,
+        "word": "schreiben",
+        "pinyin": "",
+        "meaning": "escrever"
+      },
+      {
+        "id": 3,
+        "word": "man",
+        "pinyin": "",
+        "meaning": "a gente, se (pronome impessoal)"
+      },
+      {
+        "id": 4,
+        "word": "der Bruchstrich",
+        "pinyin": "",
+        "meaning": "traço de fração"
+      },
+      {
+        "id": 5,
+        "word": "der Zähler",
+        "pinyin": "",
+        "meaning": "numerador"
+      },
+      {
+        "id": 6,
+        "word": "stehen",
+        "pinyin": "",
+        "meaning": "ficar de pé, estar localizado"
+      },
+      {
+        "id": 7,
+        "word": "über",
+        "pinyin": "",
+        "meaning": "sobre, acima de"
+      },
+      {
+        "id": 8,
+        "word": "der Nenner",
+        "pinyin": "",
+        "meaning": "denominador"
+      },
+      {
+        "id": 9,
+        "word": "darunter",
+        "pinyin": "",
+        "meaning": "abaixo disso, por baixo"
+      }
+    ],
+    "id": "local-1772293866572-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gut. Und was ist ein Prozentsatz?",
+    "pinyin": "",
+    "translation": "B: Bom. E o que é uma porcentagem?",
+    "tokens": [
+      "Gut",
+      ".",
+      "Und",
+      "was",
+      "ist",
+      "ein",
+      "Prozentsatz",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom, bem"
+      },
+      {
+        "id": 2,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 3,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 4,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 5,
+        "word": "der Prozentsatz",
+        "pinyin": "",
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772293866572-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist ein Bruchteil von Hundert, zum Beispiel: ein Viertel sind fünfundzwanzig Prozent; ein Halb sind fünfzig Prozent.",
+    "pinyin": "",
+    "translation": "A: Isso é uma fração de cem, por exemplo: um quarto são vinte e cinco por cento; um meio são cinquenta por cento.",
+    "tokens": [
+      "Das",
+      "ist",
+      "ein",
+      "Bruchteil",
+      "von",
+      "Hundert",
+      ",",
+      "zum",
+      "Beispiel",
+      ":",
+      "ein",
+      "Viertel",
+      "sind",
+      "fünfundzwanzig",
+      "Prozent",
+      ";",
+      "ein",
+      "Halb",
+      "sind",
+      "fünfzig",
+      "Prozent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso, aquele, a"
+      },
+      {
+        "id": 2,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 3,
+        "word": "der Bruchteil",
+        "pinyin": "",
+        "meaning": "fração, parte"
+      },
+      {
+        "id": 4,
+        "word": "von",
+        "pinyin": "",
+        "meaning": "de, a partir de"
+      },
+      {
+        "id": 5,
+        "word": "Hundert",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 6,
+        "word": "zum Beispiel",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 7,
+        "word": "das Viertel",
+        "pinyin": "",
+        "meaning": "um quarto"
+      },
+      {
+        "id": 8,
+        "word": "fünfundzwanzig",
+        "pinyin": "",
+        "meaning": "vinte e cinco"
+      },
+      {
+        "id": 9,
+        "word": "das Prozent",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 10,
+        "word": "ein Halb",
+        "pinyin": "",
+        "meaning": "um meio"
+      },
+      {
+        "id": 11,
+        "word": "fünfzig",
+        "pinyin": "",
+        "meaning": "cinquenta"
+      }
+    ],
+    "id": "local-1772293866572-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Und was bedeutet \"Zehntel\"?",
+    "pinyin": "",
+    "translation": "B: E o que significa \"décimo\"?",
+    "tokens": [
+      "Und",
+      "was",
+      "bedeutet",
+      "\"",
+      "Zehntel",
+      "\"",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 2,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 3,
+        "word": "bedeuten",
+        "pinyin": "",
+        "meaning": "significar"
+      },
+      {
+        "id": 4,
+        "word": "das Zehntel",
+        "pinyin": "",
+        "meaning": "décimo"
+      }
+    ],
+    "id": "local-1772293866572-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: \"Zehntel\" sind Bruchteile von Zehn. Zum Beispiel sind \"neun Zehntel\" neun von zehn und auch neunzig Prozent.",
+    "pinyin": "",
+    "translation": "A: \"Décimos\" são frações de dez. Por exemplo, \"nove décimos\" são nove de dez e também noventa por cento.",
+    "tokens": [
+      "\"",
+      "Zehntel",
+      "\"",
+      "sind",
+      "Bruchteile",
+      "von",
+      "Zehn",
+      ".",
+      "Zum",
+      "Beispiel",
+      "sind",
+      "\"",
+      "neun",
+      "Zehntel",
+      "\"",
+      "neun",
+      "von",
+      "zehn",
+      "und",
+      "auch",
+      "neunzig",
+      "Prozent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "das Zehntel",
+        "pinyin": "",
+        "meaning": "décimo"
+      },
+      {
+        "id": 2,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 3,
+        "word": "der Bruchteil",
+        "pinyin": "",
+        "meaning": "fração, parte"
+      },
+      {
+        "id": 4,
+        "word": "von",
+        "pinyin": "",
+        "meaning": "de, a partir de"
+      },
+      {
+        "id": 5,
+        "word": "Zehn",
+        "pinyin": "",
+        "meaning": "dez"
+      },
+      {
+        "id": 6,
+        "word": "zum Beispiel",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 7,
+        "word": "neun",
+        "pinyin": "",
+        "meaning": "nove"
+      },
+      {
+        "id": 8,
+        "word": "zehn",
+        "pinyin": "",
+        "meaning": "dez"
+      },
+      {
+        "id": 9,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 10,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 11,
+        "word": "neunzig",
+        "pinyin": "",
+        "meaning": "noventa"
+      },
+      {
+        "id": 12,
+        "word": "das Prozent",
+        "pinyin": "",
+        "meaning": "por cento"
+      }
+    ],
+    "id": "local-1772293866572-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In Zukunft schläfst du nicht mehr im Unterricht! Und du darfst auch nicht reden! Wenn du noch einmal redest, musst du zur Strafe stehen",
+    "pinyin": "",
+    "translation": "B: No futuro você não dormirá mais na aula! E você também não tem permissão para falar! Se você falar mais uma vez, terá que ficar de pé como castigo.",
+    "tokens": [
+      "In",
+      "Zukunft",
+      "schläfst",
+      "du",
+      "nicht",
+      "mehr",
+      "im",
+      "Unterricht",
+      "!",
+      "Und",
+      "du",
+      "darfst",
+      "auch",
+      "nicht",
+      "reden",
+      "!",
+      "Wenn",
+      "du",
+      "noch",
+      "einmal",
+      "redest",
+      ",",
+      "musst",
+      "du",
+      "zur",
+      "Strafe",
+      "stehen"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in",
+        "pinyin": "",
+        "meaning": "em, para dentro"
+      },
+      {
+        "id": 2,
+        "word": "die Zukunft",
+        "pinyin": "",
+        "meaning": "futuro"
+      },
+      {
+        "id": 3,
+        "word": "schlafen",
+        "pinyin": "",
+        "meaning": "dormir"
+      },
+      {
+        "id": 4,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 5,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 6,
+        "word": "mehr",
+        "pinyin": "",
+        "meaning": "mais, não mais"
+      },
+      {
+        "id": 7,
+        "word": "der Unterricht",
+        "pinyin": "",
+        "meaning": "aula"
+      },
+      {
+        "id": 8,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 9,
+        "word": "dürfen",
+        "pinyin": "",
+        "meaning": "poder, ter permissão para"
+      },
+      {
+        "id": 10,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 11,
+        "word": "reden",
+        "pinyin": "",
+        "meaning": "falar, conversar"
+      },
+      {
+        "id": 12,
+        "word": "wenn",
+        "pinyin": "",
+        "meaning": "se, quando"
+      },
+      {
+        "id": 13,
+        "word": "noch einmal",
+        "pinyin": "",
+        "meaning": "mais uma vez"
+      },
+      {
+        "id": 14,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "ter que, dever"
+      },
+      {
+        "id": 15,
+        "word": "zur Strafe",
+        "pinyin": "",
+        "meaning": "como castigo"
+      },
+      {
+        "id": 16,
+        "word": "die Strafe",
+        "pinyin": "",
+        "meaning": "castigo, pena"
+      },
+      {
+        "id": 17,
+        "word": "stehen",
+        "pinyin": "",
+        "meaning": "ficar de pé"
+      }
+    ],
+    "id": "local-1772293866572-11",
+    "language": "Alemão"
+  }
+]

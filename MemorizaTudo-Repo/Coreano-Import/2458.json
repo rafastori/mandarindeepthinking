@@ -1,0 +1,701 @@
+[
+  {
+    "chinese": "A: 월드컵이 시작됐어요!",
+    "pinyin": null,
+    "translation": "A: A Copa do Mundo começou!",
+    "tokens": [
+      "월드컵이",
+      "시작됐어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "월드컵",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 2,
+        "word": "시작되다",
+        "pinyin": null,
+        "meaning": "começar, iniciar"
+      }
+    ],
+    "id": "local-1772299033200-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 올해 월드컵은 어디에서 열리나요?",
+    "pinyin": null,
+    "translation": "B: Onde a Copa do Mundo será realizada este ano?",
+    "tokens": [
+      "올해",
+      "월드컵은",
+      "어디에서",
+      "열리나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "올해",
+        "pinyin": null,
+        "meaning": "este ano"
+      },
+      {
+        "id": 2,
+        "word": "월드컵",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 3,
+        "word": "어디",
+        "pinyin": null,
+        "meaning": "onde"
+      },
+      {
+        "id": 4,
+        "word": "열리다",
+        "pinyin": null,
+        "meaning": "ser realizado, ser aberto"
+      }
+    ],
+    "id": "local-1772299033200-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 브라질! 축구 왕국! 올해 월드컵은 정말 볼만할 거예요!",
+    "pinyin": null,
+    "translation": "A: Brasil! Reino do futebol! A Copa do Mundo deste ano será realmente imperdível!",
+    "tokens": [
+      "브라질",
+      "!",
+      "축구",
+      "왕국",
+      "!",
+      "올해",
+      "월드컵은",
+      "정말",
+      "볼만할",
+      "거예요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "브라질",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "축구",
+        "pinyin": null,
+        "meaning": "futebol"
+      },
+      {
+        "id": 3,
+        "word": "왕국",
+        "pinyin": null,
+        "meaning": "reino"
+      },
+      {
+        "id": 4,
+        "word": "올해",
+        "pinyin": null,
+        "meaning": "este ano"
+      },
+      {
+        "id": 5,
+        "word": "월드컵",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 6,
+        "word": "정말",
+        "pinyin": null,
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 7,
+        "word": "볼만하다",
+        "pinyin": null,
+        "meaning": "valer a pena ver, ser interessante de assistir"
+      }
+    ],
+    "id": "local-1772299033200-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 브라질요? 그럼 저도 보고 싶네요.",
+    "pinyin": null,
+    "translation": "B: Brasil? Então eu também quero ver.",
+    "tokens": [
+      "브라질요",
+      "?",
+      "그럼",
+      "저도",
+      "보고",
+      "싶네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "브라질",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "저",
+        "pinyin": null,
+        "meaning": "eu (formal/humilde)"
+      },
+      {
+        "id": 4,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 5,
+        "word": "싶다",
+        "pinyin": null,
+        "meaning": "querer"
+      }
+    ],
+    "id": "local-1772299033200-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "브라질에는 예쁜 여자들이 많잖아요. 개막식에는 분명 활기찬 삼바춤이 있을 거예요.",
+    "pinyin": null,
+    "translation": "No Brasil tem muitas mulheres bonitas, né. Na cerimônia de abertura, com certeza, haverá samba animado.",
+    "tokens": [
+      "브라질에는",
+      "예쁜",
+      "여자들이",
+      "많잖아요",
+      ".",
+      "개막식에는",
+      "분명",
+      "활기찬",
+      "삼바춤이",
+      "있을",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "브라질",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "예쁘다",
+        "pinyin": null,
+        "meaning": "ser bonito(a)"
+      },
+      {
+        "id": 3,
+        "word": "여자",
+        "pinyin": null,
+        "meaning": "mulher"
+      },
+      {
+        "id": 4,
+        "word": "많다",
+        "pinyin": null,
+        "meaning": "ter muito(a)"
+      },
+      {
+        "id": 5,
+        "word": "개막식",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 6,
+        "word": "분명",
+        "pinyin": null,
+        "meaning": "claramente, com certeza"
+      },
+      {
+        "id": 7,
+        "word": "활기차다",
+        "pinyin": null,
+        "meaning": "ser animado, ser vibrante"
+      },
+      {
+        "id": 8,
+        "word": "삼바춤",
+        "pinyin": null,
+        "meaning": "dança de samba"
+      },
+      {
+        "id": 9,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "existir, haver"
+      }
+    ],
+    "id": "local-1772299033200-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "개막식은 며칠인가요?",
+    "pinyin": null,
+    "translation": "A cerimônia de abertura é em que dia?",
+    "tokens": [
+      "개막식은",
+      "며칠인가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "개막식",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 2,
+        "word": "며칠",
+        "pinyin": null,
+        "meaning": "qual dia, quantos dias"
+      }
+    ],
+    "id": "local-1772299033200-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 6월 14일, 상파울루에서요.",
+    "pinyin": null,
+    "translation": "A: Dia 14 de junho, em São Paulo.",
+    "tokens": [
+      "6월",
+      "14일",
+      ",",
+      "상파울루에서요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "6월",
+        "pinyin": null,
+        "meaning": "junho"
+      },
+      {
+        "id": 2,
+        "word": "14일",
+        "pinyin": null,
+        "meaning": "dia 14"
+      },
+      {
+        "id": 3,
+        "word": "상파울루",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      }
+    ],
+    "id": "local-1772299033200-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 상파울루요? 왜 리우에서 안 하는 거죠?",
+    "pinyin": null,
+    "translation": "B: São Paulo? Por que não no Rio?",
+    "tokens": [
+      "상파울루요",
+      "?",
+      "왜",
+      "리우에서",
+      "안",
+      "하는",
+      "거죠",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상파울루",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "왜",
+        "pinyin": null,
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "리우",
+        "pinyin": null,
+        "meaning": "Rio (de Janeiro)"
+      },
+      {
+        "id": 4,
+        "word": "하다",
+        "pinyin": null,
+        "meaning": "fazer, realizar"
+      }
+    ],
+    "id": "local-1772299033200-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "리우가 제일 유명하잖아요.",
+    "pinyin": null,
+    "translation": "O Rio é o mais famoso, não é?",
+    "tokens": [
+      "리우가",
+      "제일",
+      "유명하잖아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리우",
+        "pinyin": null,
+        "meaning": "Rio (de Janeiro)"
+      },
+      {
+        "id": 2,
+        "word": "제일",
+        "pinyin": null,
+        "meaning": "o mais, o primeiro"
+      },
+      {
+        "id": 3,
+        "word": "유명하다",
+        "pinyin": null,
+        "meaning": "ser famoso"
+      }
+    ],
+    "id": "local-1772299033200-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 상파울루는 브라질의 주요 도시 중 하나예요.",
+    "pinyin": null,
+    "translation": "A: São Paulo é uma das principais cidades do Brasil.",
+    "tokens": [
+      "상파울루는",
+      "브라질의",
+      "주요",
+      "도시",
+      "중",
+      "하나예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상파울루",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "브라질",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 3,
+        "word": "주요",
+        "pinyin": null,
+        "meaning": "principal, maior"
+      },
+      {
+        "id": 4,
+        "word": "도시",
+        "pinyin": null,
+        "meaning": "cidade"
+      },
+      {
+        "id": 5,
+        "word": "하나",
+        "pinyin": null,
+        "meaning": "um(a)"
+      }
+    ],
+    "id": "local-1772299033200-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "결승전은 리우에서 열릴 거예요.",
+    "pinyin": null,
+    "translation": "A final será realizada no Rio.",
+    "tokens": [
+      "결승전은",
+      "리우에서",
+      "열릴",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "결승전",
+        "pinyin": null,
+        "meaning": "final (partida)"
+      },
+      {
+        "id": 2,
+        "word": "리우",
+        "pinyin": null,
+        "meaning": "Rio (de Janeiro)"
+      },
+      {
+        "id": 3,
+        "word": "열리다",
+        "pinyin": null,
+        "meaning": "ser realizado, ser aberto"
+      }
+    ],
+    "id": "local-1772299033200-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 우리랑 브라질의 시차가 11시간이라니 너무 아쉽네요.",
+    "pinyin": null,
+    "translation": "B: Que pena que a diferença de fuso horário entre nós e o Brasil é de 11 horas.",
+    "tokens": [
+      "우리랑",
+      "브라질의",
+      "시차가",
+      "11시간이라니",
+      "너무",
+      "아쉽네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "우리",
+        "pinyin": null,
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "브라질",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 3,
+        "word": "시차",
+        "pinyin": null,
+        "meaning": "diferença de fuso horário"
+      },
+      {
+        "id": 4,
+        "word": "11시간",
+        "pinyin": null,
+        "meaning": "11 horas"
+      },
+      {
+        "id": 5,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 6,
+        "word": "아쉽다",
+        "pinyin": null,
+        "meaning": "ser uma pena, ser lamentável"
+      }
+    ],
+    "id": "local-1772299033200-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "이번에도 밤샘해야 할 것 같아요.",
+    "pinyin": null,
+    "translation": "Parece que terei que virar a noite novamente desta vez.",
+    "tokens": [
+      "이번에도",
+      "밤샘해야",
+      "할",
+      "것",
+      "같아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이번",
+        "pinyin": null,
+        "meaning": "esta vez"
+      },
+      {
+        "id": 2,
+        "word": "밤샘하다",
+        "pinyin": null,
+        "meaning": "virar a noite, passar a noite acordado"
+      },
+      {
+        "id": 3,
+        "word": "같다",
+        "pinyin": null,
+        "meaning": "parecer, ser como"
+      }
+    ],
+    "id": "local-1772299033200-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 전 먼저 슈퍼에 가서 레드불을 잔뜩 사 와야겠어요.",
+    "pinyin": null,
+    "translation": "A: Então, primeiro eu preciso ir ao supermercado e comprar um monte de Red Bull.",
+    "tokens": [
+      "그럼",
+      "전",
+      "먼저",
+      "슈퍼에",
+      "가서",
+      "레드불을",
+      "잔뜩",
+      "사",
+      "와야겠어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "저",
+        "pinyin": null,
+        "meaning": "eu (formal/humilde)"
+      },
+      {
+        "id": 3,
+        "word": "먼저",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "슈퍼",
+        "pinyin": null,
+        "meaning": "supermercado"
+      },
+      {
+        "id": 5,
+        "word": "가다",
+        "pinyin": null,
+        "meaning": "ir"
+      },
+      {
+        "id": 6,
+        "word": "레드불",
+        "pinyin": null,
+        "meaning": "Red Bull"
+      },
+      {
+        "id": 7,
+        "word": "잔뜩",
+        "pinyin": null,
+        "meaning": "muito, bastante"
+      },
+      {
+        "id": 8,
+        "word": "사다",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 9,
+        "word": "오다",
+        "pinyin": null,
+        "meaning": "vir (사 오다: comprar e trazer)"
+      }
+    ],
+    "id": "local-1772299033200-13",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "그 예쁜 여자들을 보려면 무슨 짓이든 할 거예요!",
+    "pinyin": null,
+    "translation": "Para ver aquelas mulheres bonitas, farei qualquer coisa!",
+    "tokens": [
+      "그",
+      "예쁜",
+      "여자들을",
+      "보려면",
+      "무슨",
+      "짓이든",
+      "할",
+      "거예요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그",
+        "pinyin": null,
+        "meaning": "aquele(a), esses(as)"
+      },
+      {
+        "id": 2,
+        "word": "예쁘다",
+        "pinyin": null,
+        "meaning": "ser bonito(a)"
+      },
+      {
+        "id": 3,
+        "word": "여자",
+        "pinyin": null,
+        "meaning": "mulher"
+      },
+      {
+        "id": 4,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 5,
+        "word": "무슨",
+        "pinyin": null,
+        "meaning": "que tipo de, qualquer"
+      },
+      {
+        "id": 6,
+        "word": "짓",
+        "pinyin": null,
+        "meaning": "ato, ação"
+      },
+      {
+        "id": 7,
+        "word": "하다",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772299033200-14",
+    "language": "Coreano"
+  }
+]

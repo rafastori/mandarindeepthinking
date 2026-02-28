@@ -1,0 +1,221 @@
+[
+  {
+    "chinese": "这是一个主测试文本。",
+    "pinyin": "Zhè shì yīgè zhǔ cèshì wénběn.",
+    "translation": "Este é um texto de teste principal.",
+    "tokens": [
+      "这",
+      "是",
+      "一个",
+      "主",
+      "测试",
+      "文本",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este/esta/isto"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser/estar"
+      },
+      {
+        "id": 3,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um/uma"
+      },
+      {
+        "id": 4,
+        "word": "主",
+        "pinyin": "zhǔ",
+        "meaning": "principal/mestre"
+      },
+      {
+        "id": 5,
+        "word": "测试",
+        "pinyin": "cèshì",
+        "meaning": "teste/testar"
+      },
+      {
+        "id": 6,
+        "word": "文本",
+        "pinyin": "wénběn",
+        "meaning": "texto"
+      },
+      {
+        "id": 7,
+        "word": "。",
+        "pinyin": "",
+        "meaning": "ponto final"
+      }
+    ],
+    "id": "local-1772301682015-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这是一个非常简单的文本，用于测试从英语到所有其他语言的智能级联同步管道。",
+    "pinyin": "Zhè shì yīgè fēicháng jiǎndān de wénběn, yòng yú cèshì cóng Yīngyǔ dào suǒyǒu qítā yǔyán de zhìnéng jílián tóngbù guǎndào.",
+    "translation": "Este é um texto muito simples, usado para testar um pipeline de sincronização em cascata inteligente do inglês para todos os outros idiomas.",
+    "tokens": [
+      "这",
+      "是",
+      "一个",
+      "非常",
+      "简单",
+      "的",
+      "文本",
+      "，",
+      "用于",
+      "测试",
+      "从",
+      "英语",
+      "到",
+      "所有",
+      "其他",
+      "语言",
+      "的",
+      "智能",
+      "级联",
+      "同步",
+      "管道",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este/esta/isto"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser/estar"
+      },
+      {
+        "id": 3,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um/uma"
+      },
+      {
+        "id": 8,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito/extremamente"
+      },
+      {
+        "id": 9,
+        "word": "简单",
+        "pinyin": "jiǎndān",
+        "meaning": "simples"
+      },
+      {
+        "id": 10,
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "partícula possessiva/modificadora"
+      },
+      {
+        "id": 6,
+        "word": "文本",
+        "pinyin": "wénběn",
+        "meaning": "texto"
+      },
+      {
+        "id": 11,
+        "word": "，",
+        "pinyin": "",
+        "meaning": "vírgula"
+      },
+      {
+        "id": 12,
+        "word": "用于",
+        "pinyin": "yòng yú",
+        "meaning": "usado para/com o propósito de"
+      },
+      {
+        "id": 5,
+        "word": "测试",
+        "pinyin": "cèshì",
+        "meaning": "teste/testar"
+      },
+      {
+        "id": 13,
+        "word": "从",
+        "pinyin": "cóng",
+        "meaning": "de/desde"
+      },
+      {
+        "id": 14,
+        "word": "英语",
+        "pinyin": "Yīngyǔ",
+        "meaning": "idioma inglês"
+      },
+      {
+        "id": 15,
+        "word": "到",
+        "pinyin": "dào",
+        "meaning": "para/até"
+      },
+      {
+        "id": 16,
+        "word": "所有",
+        "pinyin": "suǒyǒu",
+        "meaning": "todos/todas"
+      },
+      {
+        "id": 17,
+        "word": "其他",
+        "pinyin": "qítā",
+        "meaning": "outro/outra/outros/outras"
+      },
+      {
+        "id": 18,
+        "word": "语言",
+        "pinyin": "yǔyán",
+        "meaning": "idioma/língua"
+      },
+      {
+        "id": 19,
+        "word": "智能",
+        "pinyin": "zhìnéng",
+        "meaning": "inteligente"
+      },
+      {
+        "id": 20,
+        "word": "级联",
+        "pinyin": "jílián",
+        "meaning": "cascata/em cascata"
+      },
+      {
+        "id": 21,
+        "word": "同步",
+        "pinyin": "tóngbù",
+        "meaning": "sincronização/sincronizar"
+      },
+      {
+        "id": 22,
+        "word": "管道",
+        "pinyin": "guǎndào",
+        "meaning": "pipeline/tubulação"
+      },
+      {
+        "id": 7,
+        "word": "。",
+        "pinyin": "",
+        "meaning": "ponto final"
+      }
+    ],
+    "id": "local-1772301682015-1",
+    "language": "Chinês"
+  }
+]

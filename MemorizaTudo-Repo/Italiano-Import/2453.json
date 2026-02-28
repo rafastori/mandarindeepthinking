@@ -1,0 +1,920 @@
+[
+  {
+    "chinese": "A: Gli hotel sono così costosi!",
+    "pinyin": null,
+    "translation": "A: Os hotéis são tão caros!",
+    "tokens": [
+      "Gli",
+      "hotel",
+      "sono",
+      "così",
+      "costosi!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hotel",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 2,
+        "word": "sono",
+        "pinyin": null,
+        "meaning": "são (do verbo ser/estar)"
+      },
+      {
+        "id": 3,
+        "word": "così",
+        "pinyin": null,
+        "meaning": "tão, assim"
+      },
+      {
+        "id": 4,
+        "word": "costosi",
+        "pinyin": null,
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772298486592-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Vuoi viaggiare?",
+    "pinyin": null,
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "Vuoi",
+      "viaggiare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vuoi",
+        "pinyin": null,
+        "meaning": "Você quer (do verbo querer)"
+      },
+      {
+        "id": 2,
+        "word": "viaggiare",
+        "pinyin": null,
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772298486592-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì. Ho intenzione di viaggiare a New York per divertimento quest'estate.",
+    "pinyin": null,
+    "translation": "A: Sim. Eu pretendo viajar para Nova Iorque para me divertir neste verão.",
+    "tokens": [
+      "Sì",
+      ".",
+      "Ho",
+      "intenzione",
+      "di",
+      "viaggiare",
+      "a",
+      "New",
+      "York",
+      "per",
+      "divertimento",
+      "quest'estate",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Ho intenzione",
+        "pinyin": null,
+        "meaning": "Eu tenho intenção / Eu pretendo"
+      },
+      {
+        "id": 3,
+        "word": "viaggiare",
+        "pinyin": null,
+        "meaning": "viajar"
+      },
+      {
+        "id": 4,
+        "word": "per divertimento",
+        "pinyin": null,
+        "meaning": "para diversão / para me divertir"
+      },
+      {
+        "id": 5,
+        "word": "quest'estate",
+        "pinyin": null,
+        "meaning": "neste verão"
+      }
+    ],
+    "id": "local-1772298486592-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ma come possono gli hotel essere così costosi?",
+    "pinyin": null,
+    "translation": "Mas como os hotéis podem ser tão caros?",
+    "tokens": [
+      "Ma",
+      "come",
+      "possono",
+      "gli",
+      "hotel",
+      "essere",
+      "così",
+      "costosi?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ma",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "come",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "possono",
+        "pinyin": null,
+        "meaning": "podem (do verbo poder)"
+      },
+      {
+        "id": 4,
+        "word": "essere",
+        "pinyin": null,
+        "meaning": "ser"
+      },
+      {
+        "id": 5,
+        "word": "costosi",
+        "pinyin": null,
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772298486592-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Forse dovresti cercare su Airbnb?",
+    "pinyin": null,
+    "translation": "B: Talvez você devesse procurar no Airbnb?",
+    "tokens": [
+      "Forse",
+      "dovresti",
+      "cercare",
+      "su",
+      "Airbnb?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Forse",
+        "pinyin": null,
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "dovresti",
+        "pinyin": null,
+        "meaning": "você deveria (do verbo dever)"
+      },
+      {
+        "id": 3,
+        "word": "cercare",
+        "pinyin": null,
+        "meaning": "procurar"
+      },
+      {
+        "id": 4,
+        "word": "su",
+        "pinyin": null,
+        "meaning": "em, sobre, no/na"
+      }
+    ],
+    "id": "local-1772298486592-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Cos'è?",
+    "pinyin": null,
+    "translation": "A: O que é?",
+    "tokens": [
+      "Cos'è?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cos'è",
+        "pinyin": null,
+        "meaning": "O que é (contração de 'Cosa è')"
+      }
+    ],
+    "id": "local-1772298486592-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È un sito internet che ti permette di prenotare stanze.",
+    "pinyin": null,
+    "translation": "B: É um site de internet que te permite reservar quartos.",
+    "tokens": [
+      "È",
+      "un",
+      "sito",
+      "internet",
+      "che",
+      "ti",
+      "permette",
+      "di",
+      "prenotare",
+      "stanze",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È",
+        "pinyin": null,
+        "meaning": "É (do verbo ser/estar)"
+      },
+      {
+        "id": 2,
+        "word": "sito internet",
+        "pinyin": null,
+        "meaning": "site de internet"
+      },
+      {
+        "id": 3,
+        "word": "permette",
+        "pinyin": null,
+        "meaning": "permite (do verbo permitir)"
+      },
+      {
+        "id": 4,
+        "word": "prenotare",
+        "pinyin": null,
+        "meaning": "reservar, agendar"
+      },
+      {
+        "id": 5,
+        "word": "stanze",
+        "pinyin": null,
+        "meaning": "quartos"
+      }
+    ],
+    "id": "local-1772298486592-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Tuttavia, non sono hotel, sono solo stanze nelle case delle persone.",
+    "pinyin": null,
+    "translation": "No entanto, não são hotéis, são apenas quartos nas casas das pessoas.",
+    "tokens": [
+      "Tuttavia",
+      ",",
+      "non",
+      "sono",
+      "hotel",
+      ",",
+      "sono",
+      "solo",
+      "stanze",
+      "nelle",
+      "case",
+      "delle",
+      "persone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tuttavia",
+        "pinyin": null,
+        "meaning": "No entanto, porém"
+      },
+      {
+        "id": 2,
+        "word": "non sono",
+        "pinyin": null,
+        "meaning": "não são"
+      },
+      {
+        "id": 3,
+        "word": "solo",
+        "pinyin": null,
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 4,
+        "word": "stanze",
+        "pinyin": null,
+        "meaning": "quartos"
+      },
+      {
+        "id": 5,
+        "word": "nelle case",
+        "pinyin": null,
+        "meaning": "nas casas"
+      },
+      {
+        "id": 6,
+        "word": "persone",
+        "pinyin": null,
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772298486592-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Il proprietario affitta le sue stanze libere e guadagna un po'.",
+    "pinyin": null,
+    "translation": "O proprietário aluga seus quartos vagos e ganha um pouco.",
+    "tokens": [
+      "Il",
+      "proprietario",
+      "affitta",
+      "le",
+      "sue",
+      "stanze",
+      "libere",
+      "e",
+      "guadagna",
+      "un",
+      "po'",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "proprietario",
+        "pinyin": null,
+        "meaning": "proprietário"
+      },
+      {
+        "id": 2,
+        "word": "affitta",
+        "pinyin": null,
+        "meaning": "aluga (do verbo alugar)"
+      },
+      {
+        "id": 3,
+        "word": "stanze libere",
+        "pinyin": null,
+        "meaning": "quartos vagos/livres"
+      },
+      {
+        "id": 4,
+        "word": "guadagna",
+        "pinyin": null,
+        "meaning": "ganha (do verbo ganhar)"
+      },
+      {
+        "id": 5,
+        "word": "un po'",
+        "pinyin": null,
+        "meaning": "um pouco"
+      }
+    ],
+    "id": "local-1772298486592-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Capisco. Ehi, ce ne sono molti!",
+    "pinyin": null,
+    "translation": "A: Entendi. Ei, há muitos deles!",
+    "tokens": [
+      "Capisco",
+      ".",
+      "Ehi",
+      ",",
+      "ce",
+      "ne",
+      "sono",
+      "molti!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Capisco",
+        "pinyin": null,
+        "meaning": "Entendo (do verbo entender)"
+      },
+      {
+        "id": 2,
+        "word": "Ehi",
+        "pinyin": null,
+        "meaning": "Ei, olá"
+      },
+      {
+        "id": 3,
+        "word": "ce ne sono molti",
+        "pinyin": null,
+        "meaning": "há muitos deles"
+      }
+    ],
+    "id": "local-1772298486592-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Questo sembra abbastanza buono.",
+    "pinyin": null,
+    "translation": "Este parece muito bom.",
+    "tokens": [
+      "Questo",
+      "sembra",
+      "abbastanza",
+      "buono",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questo",
+        "pinyin": null,
+        "meaning": "Este"
+      },
+      {
+        "id": 2,
+        "word": "sembra",
+        "pinyin": null,
+        "meaning": "parece (do verbo parecer)"
+      },
+      {
+        "id": 3,
+        "word": "abbastanza",
+        "pinyin": null,
+        "meaning": "bastante, suficiente, razoavelmente"
+      },
+      {
+        "id": 4,
+        "word": "buono",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772298486592-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Poco più di 600 RMB a notte.",
+    "pinyin": null,
+    "translation": "Pouco mais de 600 RMB por noite.",
+    "tokens": [
+      "Poco",
+      "più",
+      "di",
+      "600",
+      "RMB",
+      "a",
+      "notte",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Poco più",
+        "pinyin": null,
+        "meaning": "Pouco mais"
+      },
+      {
+        "id": 2,
+        "word": "a notte",
+        "pinyin": null,
+        "meaning": "por noite"
+      }
+    ],
+    "id": "local-1772298486592-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ha anche una cucina, così posso cucinare da solo.",
+    "pinyin": null,
+    "translation": "Também tem uma cozinha, assim posso cozinhar sozinho.",
+    "tokens": [
+      "Ha",
+      "anche",
+      "una",
+      "cucina",
+      ",",
+      "così",
+      "posso",
+      "cucinare",
+      "da",
+      "solo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ha",
+        "pinyin": null,
+        "meaning": "Tem (do verbo ter)"
+      },
+      {
+        "id": 2,
+        "word": "anche",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "cucina",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 4,
+        "word": "così",
+        "pinyin": null,
+        "meaning": "assim"
+      },
+      {
+        "id": 5,
+        "word": "posso",
+        "pinyin": null,
+        "meaning": "posso (do verbo poder)"
+      },
+      {
+        "id": 6,
+        "word": "cucinare",
+        "pinyin": null,
+        "meaning": "cozinhar"
+      },
+      {
+        "id": 7,
+        "word": "da solo",
+        "pinyin": null,
+        "meaning": "sozinho(a)"
+      }
+    ],
+    "id": "local-1772298486592-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tuttavia, questo non è un appartamento, è solo una stanza.",
+    "pinyin": null,
+    "translation": "B: No entanto, este não é um apartamento, é apenas um quarto.",
+    "tokens": [
+      "Tuttavia",
+      ",",
+      "questo",
+      "non",
+      "è",
+      "un",
+      "appartamento",
+      ",",
+      "è",
+      "solo",
+      "una",
+      "stanza",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tuttavia",
+        "pinyin": null,
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "non è",
+        "pinyin": null,
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "appartamento",
+        "pinyin": null,
+        "meaning": "apartamento"
+      },
+      {
+        "id": 4,
+        "word": "solo",
+        "pinyin": null,
+        "meaning": "apenas"
+      },
+      {
+        "id": 5,
+        "word": "stanza",
+        "pinyin": null,
+        "meaning": "quarto"
+      }
+    ],
+    "id": "local-1772298486592-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Devi condividere la cucina e il bagno con gli altri.",
+    "pinyin": null,
+    "translation": "Você tem que compartilhar a cozinha e o banheiro com os outros.",
+    "tokens": [
+      "Devi",
+      "condividere",
+      "la",
+      "cucina",
+      "e",
+      "il",
+      "bagno",
+      "con",
+      "gli",
+      "altri",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Devi",
+        "pinyin": null,
+        "meaning": "Você deve/tem que (do verbo dever)"
+      },
+      {
+        "id": 2,
+        "word": "condividere",
+        "pinyin": null,
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 3,
+        "word": "cucina",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 4,
+        "word": "bagno",
+        "pinyin": null,
+        "meaning": "banheiro"
+      },
+      {
+        "id": 5,
+        "word": "con gli altri",
+        "pinyin": null,
+        "meaning": "com os outros"
+      }
+    ],
+    "id": "local-1772298486592-14",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh, non importa.",
+    "pinyin": null,
+    "translation": "A: Ah, não importa.",
+    "tokens": [
+      "Oh",
+      ",",
+      "non",
+      "importa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "non importa",
+        "pinyin": null,
+        "meaning": "não importa"
+      }
+    ],
+    "id": "local-1772298486592-15",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ma, è sicuro stare con altre persone?",
+    "pinyin": null,
+    "translation": "Mas, é seguro ficar com outras pessoas?",
+    "tokens": [
+      "Ma",
+      ",",
+      "è",
+      "sicuro",
+      "stare",
+      "con",
+      "altre",
+      "persone?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ma",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "è sicuro",
+        "pinyin": null,
+        "meaning": "é seguro"
+      },
+      {
+        "id": 3,
+        "word": "stare",
+        "pinyin": null,
+        "meaning": "ficar, estar"
+      },
+      {
+        "id": 4,
+        "word": "altre persone",
+        "pinyin": null,
+        "meaning": "outras pessoas"
+      }
+    ],
+    "id": "local-1772298486592-16",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Puoi guardare le recensioni.",
+    "pinyin": null,
+    "translation": "B: Você pode ver as avaliações.",
+    "tokens": [
+      "Puoi",
+      "guardare",
+      "le",
+      "recensioni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puoi",
+        "pinyin": null,
+        "meaning": "Você pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "guardare",
+        "pinyin": null,
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 3,
+        "word": "recensioni",
+        "pinyin": null,
+        "meaning": "avaliações, resenhas"
+      }
+    ],
+    "id": "local-1772298486592-17",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Sono scritte da persone che ci hanno soggiornato prima.",
+    "pinyin": null,
+    "translation": "São escritas por pessoas que ficaram lá antes.",
+    "tokens": [
+      "Sono",
+      "scritte",
+      "da",
+      "persone",
+      "che",
+      "ci",
+      "hanno",
+      "soggiornato",
+      "prima",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sono scritte",
+        "pinyin": null,
+        "meaning": "São escritas"
+      },
+      {
+        "id": 2,
+        "word": "persone",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "hanno soggiornato",
+        "pinyin": null,
+        "meaning": "ficaram, se hospedaram (do verbo 'soggiornare')"
+      },
+      {
+        "id": 4,
+        "word": "prima",
+        "pinyin": null,
+        "meaning": "antes"
+      }
+    ],
+    "id": "local-1772298486592-18",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Se molte persone hanno commentato e i voti sono alti, non dovrebbe essere un problema.",
+    "pinyin": null,
+    "translation": "Se muitas pessoas comentaram e as notas são altas, não deveria ser um problema.",
+    "tokens": [
+      "Se",
+      "molte",
+      "persone",
+      "hanno",
+      "commentato",
+      "e",
+      "i",
+      "voti",
+      "sono",
+      "alti",
+      ",",
+      "non",
+      "dovrebbe",
+      "essere",
+      "un",
+      "problema",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Se",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "molte persone",
+        "pinyin": null,
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 3,
+        "word": "hanno commentato",
+        "pinyin": null,
+        "meaning": "comentaram (do verbo comentar)"
+      },
+      {
+        "id": 4,
+        "word": "voti",
+        "pinyin": null,
+        "meaning": "notas, avaliações"
+      },
+      {
+        "id": 5,
+        "word": "alti",
+        "pinyin": null,
+        "meaning": "altos"
+      },
+      {
+        "id": 6,
+        "word": "non dovrebbe essere",
+        "pinyin": null,
+        "meaning": "não deveria ser"
+      },
+      {
+        "id": 7,
+        "word": "un problema",
+        "pinyin": null,
+        "meaning": "um problema"
+      }
+    ],
+    "id": "local-1772298486592-19",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ottimo. Continuerò a cercare!",
+    "pinyin": null,
+    "translation": "A: Ótimo. Continuarei a procurar!",
+    "tokens": [
+      "Ottimo",
+      ".",
+      "Continuerò",
+      "a",
+      "cercare!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ottimo",
+        "pinyin": null,
+        "meaning": "Ótimo"
+      },
+      {
+        "id": 2,
+        "word": "Continuerò",
+        "pinyin": null,
+        "meaning": "Continuarei (do verbo continuar)"
+      },
+      {
+        "id": 3,
+        "word": "cercare",
+        "pinyin": null,
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772298486592-20",
+    "language": "Italiano"
+  }
+]

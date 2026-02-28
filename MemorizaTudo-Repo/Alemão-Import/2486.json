@@ -1,0 +1,640 @@
+[
+  {
+    "chinese": "A: Morgen musst du das Baby ins Nachbarschaftskrankenhaus bringen, um es impfen zu lassen. Hast du dir freigenommen?",
+    "pinyin": "",
+    "translation": "A: Amanhã você tem que levar o bebê ao hospital do bairro para vaciná-lo. Você tirou folga?",
+    "tokens": [
+      "A:",
+      "Morgen",
+      "musst",
+      "du",
+      "das",
+      "Baby",
+      "ins",
+      "Nachbarschaftskrankenhaus",
+      "bringen",
+      ",",
+      "um",
+      "es",
+      "impfen",
+      "zu",
+      "lassen",
+      ".",
+      "Hast",
+      "du",
+      "dir",
+      "freigenommen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Morgen",
+        "pinyin": "",
+        "meaning": "Amanhã"
+      },
+      {
+        "id": 2,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "Ter que, dever (verbo modal)"
+      },
+      {
+        "id": 3,
+        "word": "Baby",
+        "pinyin": "",
+        "meaning": "Bebê"
+      },
+      {
+        "id": 4,
+        "word": "Nachbarschaftskrankenhaus",
+        "pinyin": "",
+        "meaning": "Hospital do bairro"
+      },
+      {
+        "id": 5,
+        "word": "bringen",
+        "pinyin": "",
+        "meaning": "Trazer, levar"
+      },
+      {
+        "id": 6,
+        "word": "impfen",
+        "pinyin": "",
+        "meaning": "Vacinar"
+      },
+      {
+        "id": 7,
+        "word": "lassen",
+        "pinyin": "",
+        "meaning": "Deixar, mandar (fazer algo)"
+      },
+      {
+        "id": 8,
+        "word": "freinehmen",
+        "pinyin": "",
+        "meaning": "Tirar folga"
+      }
+    ],
+    "id": "local-1772301224662-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, ich habe mir einen Tag freigenommen. Schatz, welche Impfungen bekommt das Baby morgen?",
+    "pinyin": "",
+    "translation": "B: Sim, eu tirei um dia de folga. Querido(a), quais vacinas o bebê vai tomar amanhã?",
+    "tokens": [
+      "B:",
+      "Ja",
+      ",",
+      "ich",
+      "habe",
+      "mir",
+      "einen",
+      "Tag",
+      "freigenommen",
+      ".",
+      "Schatz",
+      ",",
+      "welche",
+      "Impfungen",
+      "bekommt",
+      "das",
+      "Baby",
+      "morgen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 10,
+        "word": "Tag",
+        "pinyin": "",
+        "meaning": "Dia"
+      },
+      {
+        "id": 8,
+        "word": "freinehmen",
+        "pinyin": "",
+        "meaning": "Tirar folga"
+      },
+      {
+        "id": 11,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "Querido(a), Tesouro"
+      },
+      {
+        "id": 12,
+        "word": "Impfung",
+        "pinyin": "",
+        "meaning": "Vacina"
+      },
+      {
+        "id": 13,
+        "word": "bekommen",
+        "pinyin": "",
+        "meaning": "Receber, tomar"
+      },
+      {
+        "id": 3,
+        "word": "Baby",
+        "pinyin": "",
+        "meaning": "Bebê"
+      },
+      {
+        "id": 1,
+        "word": "Morgen",
+        "pinyin": "",
+        "meaning": "Amanhã"
+      }
+    ],
+    "id": "local-1772301224662-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich schaue mal nach. Es ist die Hepatitis-B-Impfung.",
+    "pinyin": "",
+    "translation": "A: Vou dar uma olhada. É a vacina contra Hepatite B.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "schaue",
+      "mal",
+      "nach",
+      ".",
+      "Es",
+      "ist",
+      "die",
+      "Hepatitis-B-Impfung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 14,
+        "word": "nachschauen",
+        "pinyin": "",
+        "meaning": "Dar uma olhada, verificar"
+      },
+      {
+        "id": 15,
+        "word": "Hepatitis-B-Impfung",
+        "pinyin": "",
+        "meaning": "Vacina contra Hepatite B"
+      }
+    ],
+    "id": "local-1772301224662-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Oh. Sie ist kostenlos, oder?",
+    "pinyin": "",
+    "translation": "B: Oh. Ela é gratuita, certo?",
+    "tokens": [
+      "B:",
+      "Oh",
+      ".",
+      "Sie",
+      "ist",
+      "kostenlos",
+      ",",
+      "oder",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "kostenlos",
+        "pinyin": "",
+        "meaning": "Gratuito, de graça"
+      },
+      {
+        "id": 17,
+        "word": "oder",
+        "pinyin": "",
+        "meaning": "Ou, certo?"
+      }
+    ],
+    "id": "local-1772301224662-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Es gibt chinesische und importierte Impfstoffe. Die chinesischen sind kostenlos. Für die importierten wird eine Gebühr erhoben.",
+    "pinyin": "",
+    "translation": "A: Existem vacinas chinesas e importadas. As chinesas são gratuitas. Para as importadas é cobrada uma taxa.",
+    "tokens": [
+      "A:",
+      "Es",
+      "gibt",
+      "chinesische",
+      "und",
+      "importierte",
+      "Impfstoffe",
+      ".",
+      "Die",
+      "chinesischen",
+      "sind",
+      "kostenlos",
+      ".",
+      "Für",
+      "die",
+      "importierten",
+      "wird",
+      "eine",
+      "Gebühr",
+      "erhoben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "Es gibt",
+        "pinyin": "",
+        "meaning": "Há, existem"
+      },
+      {
+        "id": 19,
+        "word": "chinesisch",
+        "pinyin": "",
+        "meaning": "Chinês(a)"
+      },
+      {
+        "id": 20,
+        "word": "importiert",
+        "pinyin": "",
+        "meaning": "Importado(a)"
+      },
+      {
+        "id": 21,
+        "word": "Impfstoff",
+        "pinyin": "",
+        "meaning": "Vacina (produto)"
+      },
+      {
+        "id": 16,
+        "word": "kostenlos",
+        "pinyin": "",
+        "meaning": "Gratuito, de graça"
+      },
+      {
+        "id": 22,
+        "word": "Gebühr",
+        "pinyin": "",
+        "meaning": "Taxa, tarifa"
+      },
+      {
+        "id": 23,
+        "word": "erheben",
+        "pinyin": "",
+        "meaning": "Cobrar, levantar"
+      }
+    ],
+    "id": "local-1772301224662-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Nehmen wir also die chinesischen oder die importierten?",
+    "pinyin": "",
+    "translation": "B: Então pegamos as chinesas ou as importadas?",
+    "tokens": [
+      "B:",
+      "Nehmen",
+      "wir",
+      "also",
+      "die",
+      "chinesischen",
+      "oder",
+      "die",
+      "importierten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "nehmen",
+        "pinyin": "",
+        "meaning": "Pegar, tomar"
+      },
+      {
+        "id": 25,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "Então, portanto"
+      },
+      {
+        "id": 19,
+        "word": "chinesisch",
+        "pinyin": "",
+        "meaning": "Chinês(a)"
+      },
+      {
+        "id": 17,
+        "word": "oder",
+        "pinyin": "",
+        "meaning": "Ou, certo?"
+      },
+      {
+        "id": 20,
+        "word": "importiert",
+        "pinyin": "",
+        "meaning": "Importado(a)"
+      }
+    ],
+    "id": "local-1772301224662-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Die importierten.",
+    "pinyin": "",
+    "translation": "A: As importadas.",
+    "tokens": [
+      "A:",
+      "Die",
+      "importierten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "importiert",
+        "pinyin": "",
+        "meaning": "Importado(a)"
+      }
+    ],
+    "id": "local-1772301224662-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber die Widerstandskraft unseres Kleinen ist sehr gut und er wird nicht krank. Es ist nicht wirklich notwendig, die importierte zu nehmen.",
+    "pinyin": "",
+    "translation": "B: Mas a resistência do nosso pequeno é muito boa e ele não fica doente. Não é realmente necessário pegar a importada.",
+    "tokens": [
+      "B:",
+      "Aber",
+      "die",
+      "Widerstandskraft",
+      "unseres",
+      "Kleinen",
+      "ist",
+      "sehr",
+      "gut",
+      "und",
+      "er",
+      "wird",
+      "nicht",
+      "krank",
+      ".",
+      "Es",
+      "ist",
+      "nicht",
+      "wirklich",
+      "notwendig",
+      ",",
+      "die",
+      "importierte",
+      "zu",
+      "nehmen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 27,
+        "word": "Widerstandskraft",
+        "pinyin": "",
+        "meaning": "Resistência"
+      },
+      {
+        "id": 28,
+        "word": "der/die/das Kleine",
+        "pinyin": "",
+        "meaning": "O/a pequeno(a) (referindo-se à criança)"
+      },
+      {
+        "id": 29,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "Bom"
+      },
+      {
+        "id": 30,
+        "word": "krank",
+        "pinyin": "",
+        "meaning": "Doente"
+      },
+      {
+        "id": 31,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "Realmente"
+      },
+      {
+        "id": 32,
+        "word": "notwendig",
+        "pinyin": "",
+        "meaning": "Necessário"
+      },
+      {
+        "id": 20,
+        "word": "importiert",
+        "pinyin": "",
+        "meaning": "Importado(a)"
+      },
+      {
+        "id": 24,
+        "word": "nehmen",
+        "pinyin": "",
+        "meaning": "Pegar, tomar"
+      }
+    ],
+    "id": "local-1772301224662-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wir können beim Geld, das wir für unser Kind ausgeben, nicht knausern. Der importierte Impfstoff ist teuer, aber er sollte besser und sicherer sein. Man bekommt, wofür man bezahlt.",
+    "pinyin": "",
+    "translation": "A: Não podemos ser mesquinhos com o dinheiro que gastamos com nosso filho. A vacina importada é cara, mas deveria ser melhor e mais segura. Você recebe pelo que paga.",
+    "tokens": [
+      "A:",
+      "Wir",
+      "können",
+      "beim",
+      "Geld",
+      ",",
+      "das",
+      "wir",
+      "für",
+      "unser",
+      "Kind",
+      "ausgeben",
+      ",",
+      "nicht",
+      "knausern",
+      ".",
+      "Der",
+      "importierte",
+      "Impfstoff",
+      "ist",
+      "teuer",
+      ",",
+      "aber",
+      "er",
+      "sollte",
+      "besser",
+      "und",
+      "sicherer",
+      "sein",
+      ".",
+      "Man",
+      "bekommt",
+      ",",
+      "wofür",
+      "man",
+      "bezahlt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 33,
+        "word": "Geld",
+        "pinyin": "",
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 34,
+        "word": "Kind",
+        "pinyin": "",
+        "meaning": "Criança, filho(a)"
+      },
+      {
+        "id": 35,
+        "word": "ausgeben",
+        "pinyin": "",
+        "meaning": "Gastar"
+      },
+      {
+        "id": 36,
+        "word": "knausern",
+        "pinyin": "",
+        "meaning": "Ser mesquinho, pechinchar"
+      },
+      {
+        "id": 20,
+        "word": "importiert",
+        "pinyin": "",
+        "meaning": "Importado(a)"
+      },
+      {
+        "id": 21,
+        "word": "Impfstoff",
+        "pinyin": "",
+        "meaning": "Vacina (produto)"
+      },
+      {
+        "id": 37,
+        "word": "teuer",
+        "pinyin": "",
+        "meaning": "Caro"
+      },
+      {
+        "id": 26,
+        "word": "Aber",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 38,
+        "word": "sollen",
+        "pinyin": "",
+        "meaning": "Dever (verbo modal)"
+      },
+      {
+        "id": 39,
+        "word": "besser",
+        "pinyin": "",
+        "meaning": "Melhor"
+      },
+      {
+        "id": 40,
+        "word": "sicher",
+        "pinyin": "",
+        "meaning": "Seguro"
+      },
+      {
+        "id": 13,
+        "word": "bekommen",
+        "pinyin": "",
+        "meaning": "Receber, tomar"
+      },
+      {
+        "id": 41,
+        "word": "bezahlen",
+        "pinyin": "",
+        "meaning": "Pagar"
+      },
+      {
+        "id": 42,
+        "word": "Man bekommt, wofür man bezahlt",
+        "pinyin": "",
+        "meaning": "Você recebe pelo que paga (expressão)"
+      }
+    ],
+    "id": "local-1772301224662-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: OK, Chef. Was du sagst, gilt. Ich werde dir zuhören.",
+    "pinyin": "",
+    "translation": "B: OK, Chefe. O que você diz vale. Eu vou te escutar.",
+    "tokens": [
+      "B:",
+      "OK",
+      ",",
+      "Chef",
+      ".",
+      "Was",
+      "du",
+      "sagst",
+      ",",
+      "gilt",
+      ".",
+      "Ich",
+      "werde",
+      "dir",
+      "zuhören",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "Chef",
+        "pinyin": "",
+        "meaning": "Chefe"
+      },
+      {
+        "id": 44,
+        "word": "gelten",
+        "pinyin": "",
+        "meaning": "Valer, ser válido"
+      },
+      {
+        "id": 45,
+        "word": "zuhören",
+        "pinyin": "",
+        "meaning": "Escutar, ouvir"
+      }
+    ],
+    "id": "local-1772301224662-9",
+    "language": "Alemão"
+  }
+]

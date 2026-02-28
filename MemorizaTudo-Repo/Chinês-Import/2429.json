@@ -1,0 +1,792 @@
+[
+  {
+    "chinese": "佐伊，我听说你家买了一台大电视。我真想过来看看。",
+    "pinyin": "Zuǒyī, wǒ tīngshuō nǐ jiā mǎile yī tái dà diànshì. Wǒ zhēn xiǎng guòlái kànkan.",
+    "translation": "A: Zoe, ouvi dizer que sua casa comprou uma TV grande. Eu realmente quero vir dar uma olhada.",
+    "tokens": [
+      "佐伊",
+      "，",
+      "我",
+      "听说",
+      "你家",
+      "买",
+      "了",
+      "一",
+      "台",
+      "大",
+      "电视",
+      "。",
+      "我",
+      "真",
+      "想",
+      "过来",
+      "看看",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "佐伊",
+        "pinyin": "Zuǒyī",
+        "meaning": "Zoe (nome)"
+      },
+      {
+        "id": 2,
+        "word": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "ouvir dizer"
+      },
+      {
+        "id": 3,
+        "word": "你家",
+        "pinyin": "nǐjiā",
+        "meaning": "sua casa"
+      },
+      {
+        "id": 4,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "一台",
+        "pinyin": "yī tái",
+        "meaning": "um (contador para máquinas/itens grandes)"
+      },
+      {
+        "id": 6,
+        "word": "大",
+        "pinyin": "dà",
+        "meaning": "grande"
+      },
+      {
+        "id": 7,
+        "word": "电视",
+        "pinyin": "diànshì",
+        "meaning": "televisão"
+      },
+      {
+        "id": 8,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "realmente"
+      },
+      {
+        "id": 9,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, desejar"
+      },
+      {
+        "id": 10,
+        "word": "过来",
+        "pinyin": "guòlái",
+        "meaning": "vir"
+      },
+      {
+        "id": 11,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772297029202-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "欢迎。进来吧！",
+    "pinyin": "Huānyíng. Jìnlái ba!",
+    "translation": "B: Bem-vindo. Pode entrar!",
+    "tokens": [
+      "欢迎",
+      "。",
+      "进来",
+      "吧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "欢迎",
+        "pinyin": "huānyíng",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "进来",
+        "pinyin": "jìnlái",
+        "meaning": "entrar"
+      },
+      {
+        "id": 3,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula (sugestão/convite)"
+      }
+    ],
+    "id": "local-1772297029202-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "嘿，这电视真气派！哎，这个小黑方块是什么？",
+    "pinyin": "Hēi, zhè diànshì zhēn qìpài! Āi, zhège xiǎo hēi fāngkuài shì shénme?",
+    "translation": "A: Ei, essa TV é realmente impressionante! Ei, o que é este pequeno quadrado preto?",
+    "tokens": [
+      "嘿",
+      "，",
+      "这",
+      "电视",
+      "真",
+      "气派",
+      "！",
+      "哎",
+      "，",
+      "这个",
+      "小",
+      "黑",
+      "方块",
+      "是",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "ei"
+      },
+      {
+        "id": 2,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este/esta"
+      },
+      {
+        "id": 3,
+        "word": "电视",
+        "pinyin": "diànshì",
+        "meaning": "televisão"
+      },
+      {
+        "id": 4,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "气派",
+        "pinyin": "qìpài",
+        "meaning": "impressionante, grandioso"
+      },
+      {
+        "id": 6,
+        "word": "哎",
+        "pinyin": "āi",
+        "meaning": "ei, oh (interjeição)"
+      },
+      {
+        "id": 7,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este/isto"
+      },
+      {
+        "id": 8,
+        "word": "小",
+        "pinyin": "xiǎo",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 9,
+        "word": "黑",
+        "pinyin": "hēi",
+        "meaning": "preto"
+      },
+      {
+        "id": 10,
+        "word": "方块",
+        "pinyin": "fāngkuài",
+        "meaning": "quadrado, bloco"
+      },
+      {
+        "id": 11,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 12,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772297029202-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦，这是小米盒子，一种网络电视盒。",
+    "pinyin": "Ó, zhè shì Xiǎomǐ hézi, yī zhǒng wǎngluò diànshì hé.",
+    "translation": "B: Ah, este é o Mi Box, um tipo de box de TV por internet.",
+    "tokens": [
+      "哦",
+      "，",
+      "这",
+      "是",
+      "小米",
+      "盒子",
+      "，",
+      "一",
+      "种",
+      "网络",
+      "电视",
+      "盒",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh"
+      },
+      {
+        "id": 2,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este/esta"
+      },
+      {
+        "id": 3,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 4,
+        "word": "小米盒子",
+        "pinyin": "Xiǎomǐ hézi",
+        "meaning": "Mi Box (marca de aparelho de TV inteligente)"
+      },
+      {
+        "id": 5,
+        "word": "一种",
+        "pinyin": "yī zhǒng",
+        "meaning": "um tipo de"
+      },
+      {
+        "id": 6,
+        "word": "网络电视盒",
+        "pinyin": "wǎngluò diànshì hé",
+        "meaning": "box de TV por internet"
+      }
+    ],
+    "id": "local-1772297029202-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "它是做什么用的？",
+    "pinyin": "Tā shì zuò shénme yòng de?",
+    "translation": "A: Para que ele serve?",
+    "tokens": [
+      "它",
+      "是",
+      "做",
+      "什么",
+      "用",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para coisas)"
+      },
+      {
+        "id": 2,
+        "word": "是...用的",
+        "pinyin": "shì...yòng de",
+        "meaning": "ser usado para (estrutura para perguntar propósito)"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772297029202-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "喏，你看。这个小米盒子是连接网络的。有了它，你可以看网络电视，玩游戏。你也可以播放本地视频，回看以前的节目。",
+    "pinyin": "Nuò, nǐ kàn. Zhège Xiǎomǐ hézi shì liánjiē wǎngluò de. Yǒule tā, nǐ kěyǐ kàn wǎngluò diànshì, wán yóuxì. Nǐ yě kěyǐ bòfàng běndì shìpín, huíkàn yǐqián de jiémù.",
+    "translation": "B: Olha, veja. Este Mi Box se conecta à internet. Com ele, você pode assistir TV online, jogar jogos. Você também pode reproduzir vídeos locais e rever programas anteriores.",
+    "tokens": [
+      "喏",
+      "，",
+      "你",
+      "看",
+      "。",
+      "这个",
+      "小米",
+      "盒子",
+      "是",
+      "连接",
+      "网络",
+      "的",
+      "。",
+      "有",
+      "了",
+      "它",
+      "，",
+      "你",
+      "可以",
+      "看",
+      "网络",
+      "电视",
+      "，",
+      "玩",
+      "游戏",
+      "。",
+      "你",
+      "也",
+      "可以",
+      "播放",
+      "本地",
+      "视频",
+      "，",
+      "回看",
+      "以前",
+      "的",
+      "节目",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "喏",
+        "pinyin": "nuò",
+        "meaning": "olha, veja (indicando algo)"
+      },
+      {
+        "id": 2,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 4,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este/isto"
+      },
+      {
+        "id": 5,
+        "word": "小米盒子",
+        "pinyin": "Xiǎomǐ hézi",
+        "meaning": "Mi Box"
+      },
+      {
+        "id": 6,
+        "word": "连接",
+        "pinyin": "liánjiē",
+        "meaning": "conectar"
+      },
+      {
+        "id": 7,
+        "word": "网络",
+        "pinyin": "wǎngluò",
+        "meaning": "rede, internet"
+      },
+      {
+        "id": 8,
+        "word": "有了",
+        "pinyin": "yǒule",
+        "meaning": "tendo, com"
+      },
+      {
+        "id": 9,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 10,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "assistir"
+      },
+      {
+        "id": 11,
+        "word": "网络电视",
+        "pinyin": "wǎngluò diànshì",
+        "meaning": "TV online"
+      },
+      {
+        "id": 12,
+        "word": "玩",
+        "pinyin": "wán",
+        "meaning": "jogar"
+      },
+      {
+        "id": 13,
+        "word": "游戏",
+        "pinyin": "yóuxì",
+        "meaning": "jogo"
+      },
+      {
+        "id": 14,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 15,
+        "word": "播放",
+        "pinyin": "bòfàng",
+        "meaning": "reproduzir, tocar"
+      },
+      {
+        "id": 16,
+        "word": "本地",
+        "pinyin": "běndì",
+        "meaning": "local"
+      },
+      {
+        "id": 17,
+        "word": "视频",
+        "pinyin": "shìpín",
+        "meaning": "vídeo"
+      },
+      {
+        "id": 18,
+        "word": "回看",
+        "pinyin": "huíkàn",
+        "meaning": "rever (programa), assistir de novo"
+      },
+      {
+        "id": 19,
+        "word": "以前",
+        "pinyin": "yǐqián",
+        "meaning": "antes, anterior"
+      },
+      {
+        "id": 20,
+        "word": "节目",
+        "pinyin": "jiémù",
+        "meaning": "programa (de TV)"
+      }
+    ],
+    "id": "local-1772297029202-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哇，它功能可真强大！",
+    "pinyin": "Wa, tā gōngnéng kě zhēn qiángdà!",
+    "translation": "A: Uau, suas funções são realmente poderosas!",
+    "tokens": [
+      "哇",
+      "，",
+      "它",
+      "功能",
+      "可",
+      "真",
+      "强大",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哇",
+        "pinyin": "wa",
+        "meaning": "uau (exclamação)"
+      },
+      {
+        "id": 2,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para coisas)"
+      },
+      {
+        "id": 3,
+        "word": "功能",
+        "pinyin": "gōngnéng",
+        "meaning": "função, recurso"
+      },
+      {
+        "id": 4,
+        "word": "可",
+        "pinyin": "kě",
+        "meaning": "realmente (intensificador)"
+      },
+      {
+        "id": 5,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "强大",
+        "pinyin": "qiángdà",
+        "meaning": "poderoso, forte"
+      }
+    ],
+    "id": "local-1772297029202-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是啊。除了小米盒子，还有苹果电视、科莫电视等。我们当初挑选电视盒子的时候，可纠结了。",
+    "pinyin": "Shì a. Chúle Xiǎomǐ hézi, hái yǒu Píngguǒ diànshì, Kēmò diànshì děng. Wǒmen dāngchū tiāoxuǎn diànshì hézi de shíhòu, kě jiūjié le.",
+    "translation": "B: Sim. Além do Mi Box, há também Apple TV, Kemo TV, etc. Nós ficamos bem indecisos quando escolhemos o box de TV na época.",
+    "tokens": [
+      "是",
+      "啊",
+      "。",
+      "除了",
+      "小米",
+      "盒子",
+      "，",
+      "还",
+      "有",
+      "苹果",
+      "电视",
+      "、",
+      "科莫",
+      "电视",
+      "等",
+      "。",
+      "我们",
+      "当初",
+      "挑选",
+      "电视",
+      "盒子",
+      "的",
+      "时候",
+      "，",
+      "可",
+      "纠结",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是啊",
+        "pinyin": "shì a",
+        "meaning": "sim, é isso"
+      },
+      {
+        "id": 2,
+        "word": "除了",
+        "pinyin": "chúle",
+        "meaning": "além de, exceto"
+      },
+      {
+        "id": 3,
+        "word": "小米盒子",
+        "pinyin": "Xiǎomǐ hézi",
+        "meaning": "Mi Box"
+      },
+      {
+        "id": 4,
+        "word": "还有",
+        "pinyin": "hái yǒu",
+        "meaning": "também tem, e também há"
+      },
+      {
+        "id": 5,
+        "word": "苹果电视",
+        "pinyin": "Píngguǒ diànshì",
+        "meaning": "Apple TV"
+      },
+      {
+        "id": 6,
+        "word": "科莫电视",
+        "pinyin": "Kēmò diànshì",
+        "meaning": "Kemo TV (transliteração de marca)"
+      },
+      {
+        "id": 7,
+        "word": "等",
+        "pinyin": "děng",
+        "meaning": "etc., e assim por diante"
+      },
+      {
+        "id": 8,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 9,
+        "word": "当初",
+        "pinyin": "dāngchū",
+        "meaning": "naquela época, originalmente"
+      },
+      {
+        "id": 10,
+        "word": "挑选",
+        "pinyin": "tiāoxuǎn",
+        "meaning": "escolher, selecionar"
+      },
+      {
+        "id": 11,
+        "word": "电视盒子",
+        "pinyin": "diànshì hézi",
+        "meaning": "box de TV"
+      },
+      {
+        "id": 12,
+        "word": "的时候",
+        "pinyin": "de shíhòu",
+        "meaning": "quando"
+      },
+      {
+        "id": 13,
+        "word": "可纠结了",
+        "pinyin": "kě jiūjié le",
+        "meaning": "ficou bem indeciso/complicado"
+      }
+    ],
+    "id": "local-1772297029202-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "看来我真是落伍了。我家还在用有线电视呢。过几天我也要去买个盒子。",
+    "pinyin": "Kànlái wǒ zhēn shì luòwǔ le. Wǒ jiā hái zài yòng yǒuxiàn diànshì ne. Guò jǐ tiān wǒ yě yào qù mǎi ge hézi.",
+    "translation": "A: Parece que eu realmente estou desatualizado. Minha casa ainda usa TV a cabo. Daqui a alguns dias, eu também vou comprar um box.",
+    "tokens": [
+      "看来",
+      "我",
+      "真",
+      "是",
+      "落伍",
+      "了",
+      "。",
+      "我家",
+      "还",
+      "在",
+      "用",
+      "有线电视",
+      "呢",
+      "。",
+      "过",
+      "几天",
+      "我",
+      "也",
+      "要",
+      "去",
+      "买",
+      "个",
+      "盒子",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看来",
+        "pinyin": "kànlái",
+        "meaning": "parece que"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "realmente"
+      },
+      {
+        "id": 4,
+        "word": "落伍",
+        "pinyin": "luòwǔ",
+        "meaning": "ultrapassado, antiquado"
+      },
+      {
+        "id": 5,
+        "word": "我家",
+        "pinyin": "wǒjiā",
+        "meaning": "minha casa"
+      },
+      {
+        "id": 6,
+        "word": "还在用",
+        "pinyin": "hái zài yòng",
+        "meaning": "ainda está usando"
+      },
+      {
+        "id": 7,
+        "word": "有线电视",
+        "pinyin": "yǒuxiàn diànshì",
+        "meaning": "TV a cabo"
+      },
+      {
+        "id": 8,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula (ênfase, continuidade)"
+      },
+      {
+        "id": 9,
+        "word": "过几天",
+        "pinyin": "guò jǐ tiān",
+        "meaning": "daqui a alguns dias"
+      },
+      {
+        "id": 10,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 11,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "ir (fazer algo no futuro)"
+      },
+      {
+        "id": 12,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 13,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 14,
+        "word": "个",
+        "pinyin": "ge",
+        "meaning": "um, uma (contador informal)"
+      },
+      {
+        "id": 15,
+        "word": "盒子",
+        "pinyin": "hézi",
+        "meaning": "box, caixa"
+      }
+    ],
+    "id": "local-1772297029202-8",
+    "language": "Chinês"
+  }
+]

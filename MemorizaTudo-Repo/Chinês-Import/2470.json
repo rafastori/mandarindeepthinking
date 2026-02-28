@@ -1,0 +1,657 @@
+[
+  {
+    "chinese": "小秦，你在看什么帖子？看得这么入迷！",
+    "pinyin": "Xiǎo Qín, nǐ zài kàn shénme tiězi? Kànde zhème rùmí!",
+    "translation": "A: Xiao Qin, o que você está lendo? Tão absorto!",
+    "tokens": [
+      "小秦",
+      "，",
+      "你",
+      "在",
+      "看",
+      "什么",
+      "帖子",
+      "？",
+      "看得",
+      "这么",
+      "入迷",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小秦",
+        "pinyin": "Xiǎo Qín",
+        "meaning": "Nome próprio, Xiao Qin"
+      },
+      {
+        "id": 2,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "Ver, ler, olhar"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "O quê"
+      },
+      {
+        "id": 4,
+        "word": "帖子",
+        "pinyin": "tiězi",
+        "meaning": "Postagem (online), tópico"
+      },
+      {
+        "id": 5,
+        "word": "看得",
+        "pinyin": "kànde",
+        "meaning": "(Estrutura que indica o resultado ou grau de uma ação, aqui: 'lê de forma que')"
+      },
+      {
+        "id": 6,
+        "word": "这么",
+        "pinyin": "zhème",
+        "meaning": "Tão, assim"
+      },
+      {
+        "id": 7,
+        "word": "入迷",
+        "pinyin": "rùmí",
+        "meaning": "Fascinado, absorto, encantado"
+      }
+    ],
+    "id": "local-1772299884876-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦，我在看一个关于导盲犬是否应该进入地铁的网上调查。",
+    "pinyin": "Ó, wǒ zài kàn yígè guānyú dǎomángquǎn shìfǒu yīnggāi jìnrù dìtiě de wǎngshàng diàochá.",
+    "translation": "B: Ah, estou lendo uma pesquisa online sobre se cães-guia devem ou não entrar no metrô.",
+    "tokens": [
+      "哦",
+      "，",
+      "我",
+      "在",
+      "看",
+      "一个",
+      "关于",
+      "导盲犬",
+      "是否",
+      "应该",
+      "进入",
+      "地铁",
+      "的",
+      "网上",
+      "调查",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "Ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "(Indica ação em andamento), em, estar em"
+      },
+      {
+        "id": 3,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "Ver, ler, olhar"
+      },
+      {
+        "id": 4,
+        "word": "关于",
+        "pinyin": "guānyú",
+        "meaning": "Sobre, a respeito de"
+      },
+      {
+        "id": 5,
+        "word": "导盲犬",
+        "pinyin": "dǎomángquǎn",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 6,
+        "word": "是否",
+        "pinyin": "shìfǒu",
+        "meaning": "Se, se ou não"
+      },
+      {
+        "id": 7,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "Dever, seria bom"
+      },
+      {
+        "id": 8,
+        "word": "进入",
+        "pinyin": "jìnrù",
+        "meaning": "Entrar"
+      },
+      {
+        "id": 9,
+        "word": "地铁",
+        "pinyin": "dìtiě",
+        "meaning": "Metrô"
+      },
+      {
+        "id": 10,
+        "word": "网上",
+        "pinyin": "wǎngshàng",
+        "meaning": "Online, na internet"
+      },
+      {
+        "id": 11,
+        "word": "调查",
+        "pinyin": "diàochá",
+        "meaning": "Pesquisa, inquérito"
+      }
+    ],
+    "id": "local-1772299884876-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "调查结果怎么样？",
+    "pinyin": "Diàochá jiéguǒ zěnmeyàng?",
+    "translation": "A: Como estão os resultados da pesquisa?",
+    "tokens": [
+      "调查",
+      "结果",
+      "怎么样",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "调查",
+        "pinyin": "diàochá",
+        "meaning": "Pesquisa, inquérito"
+      },
+      {
+        "id": 2,
+        "word": "结果",
+        "pinyin": "jiéguǒ",
+        "meaning": "Resultado"
+      },
+      {
+        "id": 3,
+        "word": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "meaning": "Como está?, que tal?"
+      }
+    ],
+    "id": "local-1772299884876-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "大家的意见不一，有人同意，有人反对。",
+    "pinyin": "Dàjiā de yìjiàn bùyī, yǒurén tóngyì, yǒurén fǎnduì.",
+    "translation": "B: As opiniões de todos são divididas, alguns concordam, alguns discordam.",
+    "tokens": [
+      "大家",
+      "的",
+      "意见",
+      "不一",
+      "，",
+      "有人",
+      "同意",
+      "，",
+      "有人",
+      "反对",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "Todos, todo mundo"
+      },
+      {
+        "id": 2,
+        "word": "意见",
+        "pinyin": "yìjiàn",
+        "meaning": "Opinião, sugestão"
+      },
+      {
+        "id": 3,
+        "word": "不一",
+        "pinyin": "bùyī",
+        "meaning": "Não uniforme, diferente, variado"
+      },
+      {
+        "id": 4,
+        "word": "有人",
+        "pinyin": "yǒurén",
+        "meaning": "Algumas pessoas, alguém"
+      },
+      {
+        "id": 5,
+        "word": "同意",
+        "pinyin": "tóngyì",
+        "meaning": "Concordar, consentir"
+      },
+      {
+        "id": 6,
+        "word": "反对",
+        "pinyin": "fǎnduì",
+        "meaning": "Opor-se, discordar"
+      }
+    ],
+    "id": "local-1772299884876-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "导盲犬都经过训练，不会攻击其他乘客，为什么会反对呢？",
+    "pinyin": "Dǎomángquǎn dōu jīngguò xùnliàn, bú huì gōngjí qítā chéngkè, wèishénme huì fǎnduì ne?",
+    "translation": "A: Os cães-guia são todos treinados, não atacarão outros passageiros, por que iriam se opor?",
+    "tokens": [
+      "导盲犬",
+      "都",
+      "经过",
+      "训练",
+      "，",
+      "不会",
+      "攻击",
+      "其他",
+      "乘客",
+      "，",
+      "为什么",
+      "会",
+      "反对",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "导盲犬",
+        "pinyin": "dǎomángquǎn",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 2,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "Todos, ambos"
+      },
+      {
+        "id": 3,
+        "word": "经过",
+        "pinyin": "jīngguò",
+        "meaning": "Passar por, através de, ter experimentado"
+      },
+      {
+        "id": 4,
+        "word": "训练",
+        "pinyin": "xùnliàn",
+        "meaning": "Treinamento, treinar"
+      },
+      {
+        "id": 5,
+        "word": "不会",
+        "pinyin": "bú huì",
+        "meaning": "Não vai, não pode, não sabe (como)"
+      },
+      {
+        "id": 6,
+        "word": "攻击",
+        "pinyin": "gōngjí",
+        "meaning": "Atacar"
+      },
+      {
+        "id": 7,
+        "word": "其他",
+        "pinyin": "qítā",
+        "meaning": "Outro, demais"
+      },
+      {
+        "id": 8,
+        "word": "乘客",
+        "pinyin": "chéngkè",
+        "meaning": "Passageiro"
+      },
+      {
+        "id": 9,
+        "word": "为什么",
+        "pinyin": "wèishénme",
+        "meaning": "Por quê"
+      },
+      {
+        "id": 10,
+        "word": "反对",
+        "pinyin": "fǎnduì",
+        "meaning": "Opor-se, discordar"
+      }
+    ],
+    "id": "local-1772299884876-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "可不是嘛。导盲犬是盲人的眼睛。让导盲犬进入地铁，不仅方便盲人，也是一种尊重。",
+    "pinyin": "Kě bú shì ma. Dǎomángquǎn shì mángrén de yǎnjīng. Ràng dǎomángquǎn jìnrù dìtiě, bùjǐn fāngbiàn mángrén, yě shì yìzhǒng zūnzhòng.",
+    "translation": "B: Exatamente! Cães-guia são os olhos das pessoas cegas. Permitir que cães-guia entrem no metrô não só facilita a vida das pessoas cegas, mas também é uma forma de respeito.",
+    "tokens": [
+      "可不是嘛",
+      "。",
+      "导盲犬",
+      "是",
+      "盲人",
+      "的",
+      "眼睛",
+      "。",
+      "让",
+      "导盲犬",
+      "进入",
+      "地铁",
+      "，",
+      "不仅",
+      "方便",
+      "盲人",
+      "，",
+      "也",
+      "是",
+      "一种",
+      "尊重",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可不是嘛",
+        "pinyin": "kě bú shì ma",
+        "meaning": "Exatamente!, É isso mesmo!"
+      },
+      {
+        "id": 2,
+        "word": "导盲犬",
+        "pinyin": "dǎomángquǎn",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 3,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "Ser, estar"
+      },
+      {
+        "id": 4,
+        "word": "盲人",
+        "pinyin": "mángrén",
+        "meaning": "Pessoa cega"
+      },
+      {
+        "id": 5,
+        "word": "眼睛",
+        "pinyin": "yǎnjīng",
+        "meaning": "Olho"
+      },
+      {
+        "id": 6,
+        "word": "让",
+        "pinyin": "ràng",
+        "meaning": "Deixar, permitir, fazer"
+      },
+      {
+        "id": 7,
+        "word": "进入",
+        "pinyin": "jìnrù",
+        "meaning": "Entrar"
+      },
+      {
+        "id": 8,
+        "word": "地铁",
+        "pinyin": "dìtiě",
+        "meaning": "Metrô"
+      },
+      {
+        "id": 9,
+        "word": "不仅",
+        "pinyin": "bùjǐn",
+        "meaning": "Não só"
+      },
+      {
+        "id": 10,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "Conveniente, facilitar"
+      },
+      {
+        "id": 11,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "Também"
+      },
+      {
+        "id": 12,
+        "word": "一种",
+        "pinyin": "yìzhǒng",
+        "meaning": "Um tipo de, uma espécie de"
+      },
+      {
+        "id": 13,
+        "word": "尊重",
+        "pinyin": "zūnzhòng",
+        "meaning": "Respeito, respeitar"
+      }
+    ],
+    "id": "local-1772299884876-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "上海已经允许导盲犬乘坐地铁了，但有些城市还不行。",
+    "pinyin": "Shànghǎi yǐjīng yǔnxǔ dǎomángquǎn chéngzuò dìtiě le, dàn yǒuxiē chéngshì hái bùxíng.",
+    "translation": "A: Xangai já permite que cães-guia andem no metrô, mas algumas cidades ainda não.",
+    "tokens": [
+      "上海",
+      "已经",
+      "允许",
+      "导盲犬",
+      "乘坐",
+      "地铁",
+      "了",
+      "，",
+      "但",
+      "有些",
+      "城市",
+      "还",
+      "不行",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上海",
+        "pinyin": "Shànghǎi",
+        "meaning": "Xangai (nome da cidade)"
+      },
+      {
+        "id": 2,
+        "word": "已经",
+        "pinyin": "yǐjīng",
+        "meaning": "Já"
+      },
+      {
+        "id": 3,
+        "word": "允许",
+        "pinyin": "yǔnxǔ",
+        "meaning": "Permitir, autorizar"
+      },
+      {
+        "id": 4,
+        "word": "导盲犬",
+        "pinyin": "dǎomángquǎn",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 5,
+        "word": "乘坐",
+        "pinyin": "chéngzuò",
+        "meaning": "Viajar (em veículo), embarcar"
+      },
+      {
+        "id": 6,
+        "word": "地铁",
+        "pinyin": "dìtiě",
+        "meaning": "Metrô"
+      },
+      {
+        "id": 7,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "Mas, porém"
+      },
+      {
+        "id": 8,
+        "word": "有些",
+        "pinyin": "yǒuxiē",
+        "meaning": "Alguns, um pouco"
+      },
+      {
+        "id": 9,
+        "word": "城市",
+        "pinyin": "chéngshì",
+        "meaning": "Cidade"
+      },
+      {
+        "id": 10,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 11,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "Não permitido, não está bem"
+      }
+    ],
+    "id": "local-1772299884876-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这个调查还没有结束，我们赶快去投票，表示支持吧。",
+    "pinyin": "Zhège diàochá hái méiyǒu jiéshù, wǒmen gǎnkuài qù tóupiào, biǎoshì zhīchí ba.",
+    "translation": "B: Esta pesquisa ainda não terminou, vamos nos apressar para votar e mostrar nosso apoio.",
+    "tokens": [
+      "这个",
+      "调查",
+      "还",
+      "没有",
+      "结束",
+      "，",
+      "我们",
+      "赶快",
+      "去",
+      "投票",
+      "，",
+      "表示",
+      "支持",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "Este, esta"
+      },
+      {
+        "id": 2,
+        "word": "调查",
+        "pinyin": "diàochá",
+        "meaning": "Pesquisa, inquérito"
+      },
+      {
+        "id": 3,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 4,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "Ainda não, não ter"
+      },
+      {
+        "id": 5,
+        "word": "结束",
+        "pinyin": "jiéshù",
+        "meaning": "Terminar, finalizar"
+      },
+      {
+        "id": 6,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "Nós"
+      },
+      {
+        "id": 7,
+        "word": "赶快",
+        "pinyin": "gǎnkuài",
+        "meaning": "Rapidamente, apressar-se"
+      },
+      {
+        "id": 8,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "Ir"
+      },
+      {
+        "id": 9,
+        "word": "投票",
+        "pinyin": "tóupiào",
+        "meaning": "Votar"
+      },
+      {
+        "id": 10,
+        "word": "表示",
+        "pinyin": "biǎoshì",
+        "meaning": "Expressar, demonstrar, mostrar"
+      },
+      {
+        "id": 11,
+        "word": "支持",
+        "pinyin": "zhīchí",
+        "meaning": "Apoiar, apoio"
+      }
+    ],
+    "id": "local-1772299884876-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "一定要。",
+    "pinyin": "Yīdìng yào.",
+    "translation": "A: Definitivamente (sim/faremos).",
+    "tokens": [
+      "一定",
+      "要",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "一定",
+        "pinyin": "yīdìng",
+        "meaning": "Certamente, definitivamente"
+      },
+      {
+        "id": 2,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "Querer, precisar, dever (neste contexto, sugere uma obrigação ou forte intenção de fazer)"
+      }
+    ],
+    "id": "local-1772299884876-8",
+    "language": "Chinês"
+  }
+]

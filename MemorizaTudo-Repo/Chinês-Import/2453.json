@@ -1,0 +1,985 @@
+[
+  {
+    "chinese": "A: 酒店太贵了！",
+    "pinyin": "A: Jiudian tai gui le!",
+    "translation": "A: O hotel está muito caro!",
+    "tokens": [
+      "A:",
+      "酒店",
+      "太",
+      "贵",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "酒店",
+        "pinyin": "jiudian",
+        "meaning": "hotel"
+      },
+      {
+        "id": 2,
+        "word": "太",
+        "pinyin": "tai",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 3,
+        "word": "贵",
+        "pinyin": "gui",
+        "meaning": "caro"
+      },
+      {
+        "id": 4,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado"
+      }
+    ],
+    "id": "local-1772298566776-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你想去旅行吗？",
+    "pinyin": "B: Ni xiang qu lvxing ma?",
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "B:",
+      "你",
+      "想",
+      "去",
+      "旅行",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你",
+        "pinyin": "ni",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "想",
+        "pinyin": "xiang",
+        "meaning": "querer, pensar"
+      },
+      {
+        "id": 3,
+        "word": "去",
+        "pinyin": "qu",
+        "meaning": "ir"
+      },
+      {
+        "id": 4,
+        "word": "旅行",
+        "pinyin": "lvxing",
+        "meaning": "viajar, viagem"
+      },
+      {
+        "id": 5,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772298566776-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是的。我计划暑假去纽约玩。但是酒店怎么会这么贵呢？",
+    "pinyin": "A: Shide. Wo jihua shujia qu Niuyue wan. Danshi jiudian zenme hui zheme gui ne?",
+    "translation": "A: Sim. Eu planejo ir a Nova York nas férias de verão para me divertir. Mas como os hotéis podem ser tão caros?",
+    "tokens": [
+      "A:",
+      "是的",
+      "。",
+      "我",
+      "计划",
+      "暑假",
+      "去",
+      "纽约",
+      "玩",
+      "。",
+      "但是",
+      "酒店",
+      "怎么",
+      "会",
+      "这么",
+      "贵",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是的",
+        "pinyin": "shide",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wo",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "计划",
+        "pinyin": "jihua",
+        "meaning": "planejar"
+      },
+      {
+        "id": 4,
+        "word": "暑假",
+        "pinyin": "shujia",
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 5,
+        "word": "纽约",
+        "pinyin": "Niuyue",
+        "meaning": "Nova York"
+      },
+      {
+        "id": 6,
+        "word": "玩",
+        "pinyin": "wan",
+        "meaning": "se divertir"
+      },
+      {
+        "id": 7,
+        "word": "但是",
+        "pinyin": "danshi",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 8,
+        "word": "酒店",
+        "pinyin": "jiudian",
+        "meaning": "hotel"
+      },
+      {
+        "id": 9,
+        "word": "怎么",
+        "pinyin": "zenme",
+        "meaning": "como?"
+      },
+      {
+        "id": 10,
+        "word": "会",
+        "pinyin": "hui",
+        "meaning": "pode (probabilidade)"
+      },
+      {
+        "id": 11,
+        "word": "这么",
+        "pinyin": "zheme",
+        "meaning": "tão, assim"
+      },
+      {
+        "id": 12,
+        "word": "贵",
+        "pinyin": "gui",
+        "meaning": "caro"
+      },
+      {
+        "id": 13,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772298566776-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 也许你应该看看爱彼迎？",
+    "pinyin": "B: Yexu ni yinggai kankan Aibiying?",
+    "translation": "B: Talvez você devesse dar uma olhada no Airbnb?",
+    "tokens": [
+      "B:",
+      "也许",
+      "你",
+      "应该",
+      "看看",
+      "爱彼迎",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "也许",
+        "pinyin": "yexu",
+        "meaning": "talvez"
+      },
+      {
+        "id": 2,
+        "word": "你",
+        "pinyin": "ni",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "应该",
+        "pinyin": "yinggai",
+        "meaning": "deveria"
+      },
+      {
+        "id": 4,
+        "word": "看看",
+        "pinyin": "kankan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 5,
+        "word": "爱彼迎",
+        "pinyin": "Aibiying",
+        "meaning": "Airbnb"
+      }
+    ],
+    "id": "local-1772298566776-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那是什么？",
+    "pinyin": "A: Na shi shenme?",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "A:",
+      "那",
+      "是",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "na",
+        "meaning": "aquilo, isso"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shi",
+        "meaning": "ser"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shenme",
+        "meaning": "o quê?"
+      }
+    ],
+    "id": "local-1772298566776-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 它是一个让你预订房间的网站。然而，它们不是酒店，只是人们家里的房间。房东出租自己的空余房间，赚点钱。",
+    "pinyin": "B: Ta shi yi ge rang ni yuding fangjian de wangzhan. Ran'er, tamen bushi jiudian, zhishi renmen jiali de fangjian. Fangdong chuzu ziji de kongyu fangjian, zhuan dian qian.",
+    "translation": "B: É um site que permite que você reserve quartos. No entanto, não são hotéis, são apenas quartos na casa das pessoas. Os anfitriões alugam seus quartos sobressalentes e ganham algum dinheiro.",
+    "tokens": [
+      "B:",
+      "它",
+      "是",
+      "一个",
+      "让",
+      "你",
+      "预订",
+      "房间",
+      "的",
+      "网站",
+      "。",
+      "然而",
+      "，",
+      "它们",
+      "不是",
+      "酒店",
+      "，",
+      "只是",
+      "人们",
+      "家里",
+      "的",
+      "房间",
+      "。",
+      "房东",
+      "出租",
+      "自己",
+      "的",
+      "空余",
+      "房间",
+      "，",
+      "赚",
+      "点",
+      "钱",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "它",
+        "pinyin": "ta",
+        "meaning": "ele/ela (para objetos)"
+      },
+      {
+        "id": 2,
+        "word": "一个",
+        "pinyin": "yi ge",
+        "meaning": "um (classificador)"
+      },
+      {
+        "id": 3,
+        "word": "让",
+        "pinyin": "rang",
+        "meaning": "permitir, deixar"
+      },
+      {
+        "id": 4,
+        "word": "预订",
+        "pinyin": "yuding",
+        "meaning": "reservar"
+      },
+      {
+        "id": 5,
+        "word": "房间",
+        "pinyin": "fangjian",
+        "meaning": "quarto"
+      },
+      {
+        "id": 6,
+        "word": "网站",
+        "pinyin": "wangzhan",
+        "meaning": "site"
+      },
+      {
+        "id": 7,
+        "word": "然而",
+        "pinyin": "ran'er",
+        "meaning": "no entanto"
+      },
+      {
+        "id": 8,
+        "word": "它们",
+        "pinyin": "tamen",
+        "meaning": "eles/elas (para objetos)"
+      },
+      {
+        "id": 9,
+        "word": "不是",
+        "pinyin": "bushi",
+        "meaning": "não é"
+      },
+      {
+        "id": 10,
+        "word": "酒店",
+        "pinyin": "jiudian",
+        "meaning": "hotel"
+      },
+      {
+        "id": 11,
+        "word": "只是",
+        "pinyin": "zhishi",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 12,
+        "word": "人们",
+        "pinyin": "renmen",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 13,
+        "word": "家里",
+        "pinyin": "jiali",
+        "meaning": "em casa"
+      },
+      {
+        "id": 14,
+        "word": "房东",
+        "pinyin": "fangdong",
+        "meaning": "anfitrião"
+      },
+      {
+        "id": 15,
+        "word": "出租",
+        "pinyin": "chuzu",
+        "meaning": "alugar"
+      },
+      {
+        "id": 16,
+        "word": "自己",
+        "pinyin": "ziji",
+        "meaning": "próprio"
+      },
+      {
+        "id": 17,
+        "word": "空余",
+        "pinyin": "kongyu",
+        "meaning": "sobressalente, vago"
+      },
+      {
+        "id": 18,
+        "word": "赚",
+        "pinyin": "zhuan",
+        "meaning": "ganhar (dinheiro)"
+      },
+      {
+        "id": 19,
+        "word": "点",
+        "pinyin": "dian",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 20,
+        "word": "钱",
+        "pinyin": "qian",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772298566776-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我明白了。嘿，有很多选择！这个看起来不错。每晚六百多人民币。它还有厨房，所以我可以自己做饭。",
+    "pinyin": "A: Wo mingbai le. Hei, you henduo xuanze! Zhege kanqilai bucuo. Meiwan liubai duo renminbi. Ta hai you chufang, suoyi wo keyi ziji zuofan.",
+    "translation": "A: Eu entendi. Ei, há muitas opções! Este parece bom. Mais de seiscentos RMB por noite. Ele também tem uma cozinha, então posso cozinhar minha própria comida.",
+    "tokens": [
+      "A:",
+      "我",
+      "明白",
+      "了",
+      "。",
+      "嘿",
+      "，",
+      "有",
+      "很多",
+      "选择",
+      "！",
+      "这个",
+      "看起来",
+      "不错",
+      "。",
+      "每晚",
+      "六百多",
+      "人民币",
+      "。",
+      "它",
+      "还",
+      "有",
+      "厨房",
+      "，",
+      "所以",
+      "我",
+      "可以",
+      "自己",
+      "做饭",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wo",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "明白",
+        "pinyin": "mingbai",
+        "meaning": "entender"
+      },
+      {
+        "id": 3,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado"
+      },
+      {
+        "id": 4,
+        "word": "嘿",
+        "pinyin": "hei",
+        "meaning": "ei"
+      },
+      {
+        "id": 5,
+        "word": "很多",
+        "pinyin": "henduo",
+        "meaning": "muitos"
+      },
+      {
+        "id": 6,
+        "word": "选择",
+        "pinyin": "xuanze",
+        "meaning": "opção"
+      },
+      {
+        "id": 7,
+        "word": "这个",
+        "pinyin": "zhege",
+        "meaning": "este"
+      },
+      {
+        "id": 8,
+        "word": "看起来",
+        "pinyin": "kanqilai",
+        "meaning": "parecer"
+      },
+      {
+        "id": 9,
+        "word": "不错",
+        "pinyin": "bucuo",
+        "meaning": "bom, não é ruim"
+      },
+      {
+        "id": 10,
+        "word": "每晚",
+        "pinyin": "meiwan",
+        "meaning": "por noite"
+      },
+      {
+        "id": 11,
+        "word": "六百多",
+        "pinyin": "liubai duo",
+        "meaning": "mais de seiscentos"
+      },
+      {
+        "id": 12,
+        "word": "人民币",
+        "pinyin": "renminbi",
+        "meaning": "Renminbi (moeda chinesa)"
+      },
+      {
+        "id": 13,
+        "word": "厨房",
+        "pinyin": "chufang",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 14,
+        "word": "所以",
+        "pinyin": "suoyi",
+        "meaning": "portanto, por isso"
+      },
+      {
+        "id": 15,
+        "word": "可以",
+        "pinyin": "keyi",
+        "meaning": "poder"
+      },
+      {
+        "id": 16,
+        "word": "自己",
+        "pinyin": "ziji",
+        "meaning": "próprio, a si mesmo"
+      },
+      {
+        "id": 17,
+        "word": "做饭",
+        "pinyin": "zuofan",
+        "meaning": "cozinhar"
+      }
+    ],
+    "id": "local-1772298566776-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 然而，这不是一套公寓，而只是一个房间。你必须和别人共用厨房和浴室。",
+    "pinyin": "B: Ran'er, zhe bushi yi tao gongyu, er zhishi yi ge fangjian. Ni bixu he bieren gongyong chufang he yushi.",
+    "translation": "B: No entanto, este não é um apartamento inteiro, é apenas um quarto. Você deve compartilhar a cozinha e o banheiro com outras pessoas.",
+    "tokens": [
+      "B:",
+      "然而",
+      "，",
+      "这",
+      "不是",
+      "一套",
+      "公寓",
+      "，",
+      "而",
+      "只是",
+      "一个",
+      "房间",
+      "。",
+      "你",
+      "必须",
+      "和",
+      "别人",
+      "共用",
+      "厨房",
+      "和",
+      "浴室",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "然而",
+        "pinyin": "ran'er",
+        "meaning": "no entanto"
+      },
+      {
+        "id": 2,
+        "word": "这",
+        "pinyin": "zhe",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 3,
+        "word": "不是",
+        "pinyin": "bushi",
+        "meaning": "não é"
+      },
+      {
+        "id": 4,
+        "word": "一套",
+        "pinyin": "yitao",
+        "meaning": "um (classificador para apartamento)"
+      },
+      {
+        "id": 5,
+        "word": "公寓",
+        "pinyin": "gongyu",
+        "meaning": "apartamento"
+      },
+      {
+        "id": 6,
+        "word": "只是",
+        "pinyin": "zhishi",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 7,
+        "word": "一个",
+        "pinyin": "yi ge",
+        "meaning": "um (classificador)"
+      },
+      {
+        "id": 8,
+        "word": "房间",
+        "pinyin": "fangjian",
+        "meaning": "quarto"
+      },
+      {
+        "id": 9,
+        "word": "你",
+        "pinyin": "ni",
+        "meaning": "você"
+      },
+      {
+        "id": 10,
+        "word": "必须",
+        "pinyin": "bixu",
+        "meaning": "dever, ter que"
+      },
+      {
+        "id": 11,
+        "word": "和",
+        "pinyin": "he",
+        "meaning": "e, com"
+      },
+      {
+        "id": 12,
+        "word": "别人",
+        "pinyin": "bieren",
+        "meaning": "outras pessoas"
+      },
+      {
+        "id": 13,
+        "word": "共用",
+        "pinyin": "gongyong",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 14,
+        "word": "厨房",
+        "pinyin": "chufang",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 15,
+        "word": "浴室",
+        "pinyin": "yushi",
+        "meaning": "banheiro"
+      }
+    ],
+    "id": "local-1772298566776-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦，那没关系。但是，和别人住在一起安全吗？",
+    "pinyin": "A: O, na meiguanxi. Danshi, he bieren zhuzaiyiqi anquan ma?",
+    "translation": "A: Oh, tudo bem. Mas é seguro morar com outras pessoas?",
+    "tokens": [
+      "A:",
+      "哦",
+      "，",
+      "那",
+      "没关系",
+      "。",
+      "但是",
+      "，",
+      "和",
+      "别人",
+      "住",
+      "在",
+      "一起",
+      "安全",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "o",
+        "meaning": "oh (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "那",
+        "pinyin": "na",
+        "meaning": "então, aquilo"
+      },
+      {
+        "id": 3,
+        "word": "没关系",
+        "pinyin": "meiguanxi",
+        "meaning": "tudo bem, sem problemas"
+      },
+      {
+        "id": 4,
+        "word": "但是",
+        "pinyin": "danshi",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 5,
+        "word": "和",
+        "pinyin": "he",
+        "meaning": "com"
+      },
+      {
+        "id": 6,
+        "word": "别人",
+        "pinyin": "bieren",
+        "meaning": "outras pessoas"
+      },
+      {
+        "id": 7,
+        "word": "住在一起",
+        "pinyin": "zhuzaiyiqi",
+        "meaning": "morar junto"
+      },
+      {
+        "id": 8,
+        "word": "安全",
+        "pinyin": "anquan",
+        "meaning": "seguro"
+      },
+      {
+        "id": 9,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772298566776-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你可以看看评论。它们是以前住过的人写的。如果很多人都评论过，而且评分很高，那应该没问题。",
+    "pinyin": "B: Ni keyi kankan pinglun. Tamen shi yiqian zhuguo de ren xie de. Ruguo henduoren dou pinglun guo, erqie pingfen hengao, na yinggai meiwenti.",
+    "translation": "B: Você pode dar uma olhada nos comentários. Eles são escritos por pessoas que já ficaram lá antes. Se muitas pessoas comentaram e a avaliação é alta, então não deve haver problema.",
+    "tokens": [
+      "B:",
+      "你",
+      "可以",
+      "看看",
+      "评论",
+      "。",
+      "它们",
+      "是",
+      "以前",
+      "住",
+      "过",
+      "的",
+      "人",
+      "写",
+      "的",
+      "。",
+      "如果",
+      "很多",
+      "人",
+      "都",
+      "评论",
+      "过",
+      "，",
+      "而且",
+      "评分",
+      "很",
+      "高",
+      "，",
+      "那",
+      "应该",
+      "没问题",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你",
+        "pinyin": "ni",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "可以",
+        "pinyin": "keyi",
+        "meaning": "poder"
+      },
+      {
+        "id": 3,
+        "word": "看看",
+        "pinyin": "kankan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 4,
+        "word": "评论",
+        "pinyin": "pinglun",
+        "meaning": "comentário, avaliar"
+      },
+      {
+        "id": 5,
+        "word": "它们",
+        "pinyin": "tamen",
+        "meaning": "eles/elas (para objetos)"
+      },
+      {
+        "id": 6,
+        "word": "以前",
+        "pinyin": "yiqian",
+        "meaning": "antes, no passado"
+      },
+      {
+        "id": 7,
+        "word": "住过",
+        "pinyin": "zhuguo",
+        "meaning": "já morou/ficou"
+      },
+      {
+        "id": 8,
+        "word": "人",
+        "pinyin": "ren",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 9,
+        "word": "写",
+        "pinyin": "xie",
+        "meaning": "escrever"
+      },
+      {
+        "id": 10,
+        "word": "如果",
+        "pinyin": "ruguo",
+        "meaning": "se, caso"
+      },
+      {
+        "id": 11,
+        "word": "很多",
+        "pinyin": "henduo",
+        "meaning": "muitos"
+      },
+      {
+        "id": 12,
+        "word": "都",
+        "pinyin": "dou",
+        "meaning": "todos"
+      },
+      {
+        "id": 13,
+        "word": "而且",
+        "pinyin": "erqie",
+        "meaning": "e também, além disso"
+      },
+      {
+        "id": 14,
+        "word": "评分",
+        "pinyin": "pingfen",
+        "meaning": "pontuação, avaliação"
+      },
+      {
+        "id": 15,
+        "word": "很高",
+        "pinyin": "hengao",
+        "meaning": "muito alto"
+      },
+      {
+        "id": 16,
+        "word": "那",
+        "pinyin": "na",
+        "meaning": "então"
+      },
+      {
+        "id": 17,
+        "word": "应该",
+        "pinyin": "yinggai",
+        "meaning": "deveria"
+      },
+      {
+        "id": 18,
+        "word": "没问题",
+        "pinyin": "meiwenti",
+        "meaning": "sem problema"
+      }
+    ],
+    "id": "local-1772298566776-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 太好了。我继续找！",
+    "pinyin": "A: Taihao le. Wo jixu zhao!",
+    "translation": "A: Ótimo. Vou continuar procurando!",
+    "tokens": [
+      "A:",
+      "太好了",
+      "。",
+      "我",
+      "继续",
+      "找",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "太好了",
+        "pinyin": "taihao le",
+        "meaning": "ótimo"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wo",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "继续",
+        "pinyin": "jixu",
+        "meaning": "continuar"
+      },
+      {
+        "id": 4,
+        "word": "找",
+        "pinyin": "zhao",
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772298566776-10",
+    "language": "Chinês"
+  }
+]

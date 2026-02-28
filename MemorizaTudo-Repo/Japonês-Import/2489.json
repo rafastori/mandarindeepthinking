@@ -1,0 +1,600 @@
+[
+  {
+    "chinese": "A: 私は本当に腹が立つ。一日中、私のあれこれに文句ばかり言っている。",
+    "pinyin": null,
+    "translation": "A: Eu estou realmente irritado(a). Você está reclamando das minhas coisas o dia inteiro.",
+    "tokens": [
+      "私",
+      "は",
+      "本当に",
+      "腹が立つ",
+      "。",
+      "一日中",
+      "、",
+      "私",
+      "の",
+      "あれこれ",
+      "に",
+      "文句",
+      "ばかり",
+      "言っている",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "本当に",
+        "pinyin": "hontouni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "腹が立つ",
+        "pinyin": "hara ga tatsu",
+        "meaning": "ficar irritado(a)"
+      },
+      {
+        "id": 4,
+        "word": "一日中",
+        "pinyin": "ichinichijū",
+        "meaning": "o dia inteiro"
+      },
+      {
+        "id": 5,
+        "word": "あれこれ",
+        "pinyin": "arekore",
+        "meaning": "diversas coisas, isso e aquilo"
+      },
+      {
+        "id": 6,
+        "word": "文句",
+        "pinyin": "monku",
+        "meaning": "reclamação"
+      },
+      {
+        "id": 7,
+        "word": "言っている",
+        "pinyin": "itte iru",
+        "meaning": "está dizendo/reclamando"
+      }
+    ],
+    "id": "local-1772301572626-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: あなたみたいな奥さん、本当にいるの？友達と食事に行くだけで、いちいち詳しく聞き出すし。",
+    "pinyin": null,
+    "translation": "A: Existe mesmo uma esposa como você? Só de sair para comer com amigos, você quer saber todos os detalhes um por um.",
+    "tokens": [
+      "あなた",
+      "みたい",
+      "な",
+      "奥さん",
+      "、",
+      "本当に",
+      "いる",
+      "の",
+      "？",
+      "友達",
+      "と",
+      "食事",
+      "に",
+      "行く",
+      "だけ",
+      "で",
+      "、",
+      "いちいち",
+      "詳しく",
+      "聞き出す",
+      "し",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 9,
+        "word": "みたいな",
+        "pinyin": "mitai na",
+        "meaning": "como, tipo (parecido com)"
+      },
+      {
+        "id": 10,
+        "word": "奥さん",
+        "pinyin": "okusan",
+        "meaning": "esposa (de outra pessoa)"
+      },
+      {
+        "id": 11,
+        "word": "本当に",
+        "pinyin": "hontouni",
+        "meaning": "realmente"
+      },
+      {
+        "id": 12,
+        "word": "いるの？",
+        "pinyin": "iru no?",
+        "meaning": "existe?"
+      },
+      {
+        "id": 13,
+        "word": "友達",
+        "pinyin": "tomodachi",
+        "meaning": "amigo"
+      },
+      {
+        "id": 14,
+        "word": "食事",
+        "pinyin": "shokuji",
+        "meaning": "refeição"
+      },
+      {
+        "id": 15,
+        "word": "だけで",
+        "pinyin": "dake de",
+        "meaning": "apenas por"
+      },
+      {
+        "id": 16,
+        "word": "いちいち",
+        "pinyin": "ichiichi",
+        "meaning": "um por um, detalhadamente"
+      },
+      {
+        "id": 17,
+        "word": "詳しく",
+        "pinyin": "kuwashiku",
+        "meaning": "detalhadamente"
+      },
+      {
+        "id": 18,
+        "word": "聞き出す",
+        "pinyin": "kikidasu",
+        "meaning": "extrair informações, perguntar em detalhes"
+      }
+    ],
+    "id": "local-1772301572626-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 秘書が送ってくるメッセージまでいちいち調べる。正気か？！",
+    "pinyin": null,
+    "translation": "A: Você até verifica cada mensagem que a secretária envia. Você está louca?!",
+    "tokens": [
+      "秘書",
+      "が",
+      "送って",
+      "くる",
+      "メッセージ",
+      "まで",
+      "いちいち",
+      "調べる",
+      "。",
+      "正気",
+      "か",
+      "？！"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "秘書",
+        "pinyin": "hisho",
+        "meaning": "secretária"
+      },
+      {
+        "id": 20,
+        "word": "送ってくる",
+        "pinyin": "okutte kuru",
+        "meaning": "enviar (para cá)"
+      },
+      {
+        "id": 21,
+        "word": "メッセージ",
+        "pinyin": "messēji",
+        "meaning": "mensagem"
+      },
+      {
+        "id": 22,
+        "word": "まで",
+        "pinyin": "made",
+        "meaning": "até (inclusive)"
+      },
+      {
+        "id": 23,
+        "word": "いちいち",
+        "pinyin": "ichiichi",
+        "meaning": "um por um, detalhadamente"
+      },
+      {
+        "id": 24,
+        "word": "調べる",
+        "pinyin": "shiraberu",
+        "meaning": "verificar, investigar"
+      },
+      {
+        "id": 25,
+        "word": "正気か",
+        "pinyin": "shōki ka",
+        "meaning": "Você está louco(a)? (lit. sanidade?)"
+      }
+    ],
+    "id": "local-1772301572626-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 前回の誕生日、私に相談もなくそんな高いケーキを買った。全くもってやりすぎだ！",
+    "pinyin": null,
+    "translation": "A: No meu último aniversário, você comprou um bolo tão caro sem nem me consultar. É demais, completamente exagerado!",
+    "tokens": [
+      "前回",
+      "の",
+      "誕生日",
+      "、",
+      "私",
+      "に",
+      "相談",
+      "も",
+      "なく",
+      "そんな",
+      "高い",
+      "ケーキ",
+      "を",
+      "買った",
+      "。",
+      "全く",
+      "もって",
+      "やりすぎ",
+      "だ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "前回",
+        "pinyin": "zenkai",
+        "meaning": "última vez"
+      },
+      {
+        "id": 27,
+        "word": "誕生日",
+        "pinyin": "tanjōbi",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 28,
+        "word": "私に",
+        "pinyin": "watashi ni",
+        "meaning": "para mim"
+      },
+      {
+        "id": 29,
+        "word": "相談もなく",
+        "pinyin": "sōdan mo naku",
+        "meaning": "sem nem consultar"
+      },
+      {
+        "id": 30,
+        "word": "そんな",
+        "pinyin": "sonna",
+        "meaning": "tal, tão (como esse)"
+      },
+      {
+        "id": 31,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "caro"
+      },
+      {
+        "id": 32,
+        "word": "ケーキ",
+        "pinyin": "kēki",
+        "meaning": "bolo"
+      },
+      {
+        "id": 33,
+        "word": "買った",
+        "pinyin": "katta",
+        "meaning": "comprou"
+      },
+      {
+        "id": 34,
+        "word": "全くもって",
+        "pinyin": "mattaku motte",
+        "meaning": "completamente, de fato"
+      },
+      {
+        "id": 35,
+        "word": "やりすぎ",
+        "pinyin": "yarisugi",
+        "meaning": "exagero, demais"
+      }
+    ],
+    "id": "local-1772301572626-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: サッカーの試合を見ている時でさえ、テレビのリモコンを巡って争う。もう我慢できない！",
+    "pinyin": null,
+    "translation": "A: Mesmo quando estou assistindo a um jogo de futebol, você briga pelo controle remoto da TV. Não aguento mais!",
+    "tokens": [
+      "サッカー",
+      "の",
+      "試合",
+      "を",
+      "見て",
+      "いる",
+      "時",
+      "でさえ",
+      "、",
+      "テレビ",
+      "の",
+      "リモコン",
+      "を",
+      "巡って",
+      "争う",
+      "。",
+      "もう",
+      "我慢",
+      "できない",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 36,
+        "word": "サッカー",
+        "pinyin": "sakkā",
+        "meaning": "futebol"
+      },
+      {
+        "id": 37,
+        "word": "試合",
+        "pinyin": "shiai",
+        "meaning": "jogo, partida"
+      },
+      {
+        "id": 38,
+        "word": "見ている",
+        "pinyin": "mite iru",
+        "meaning": "está assistindo"
+      },
+      {
+        "id": 39,
+        "word": "時でさえ",
+        "pinyin": "toki de sae",
+        "meaning": "mesmo quando"
+      },
+      {
+        "id": 40,
+        "word": "テレビ",
+        "pinyin": "terebi",
+        "meaning": "TV"
+      },
+      {
+        "id": 41,
+        "word": "リモコン",
+        "pinyin": "rimokon",
+        "meaning": "controle remoto"
+      },
+      {
+        "id": 42,
+        "word": "巡って",
+        "pinyin": "megutte",
+        "meaning": "em torno de, por causa de"
+      },
+      {
+        "id": 43,
+        "word": "争う",
+        "pinyin": "arasou",
+        "meaning": "brigar, disputar"
+      },
+      {
+        "id": 44,
+        "word": "もう",
+        "pinyin": "mō",
+        "meaning": "já, mais (em negação: não mais)"
+      },
+      {
+        "id": 45,
+        "word": "我慢できない",
+        "pinyin": "gaman dekinai",
+        "meaning": "não aguento mais, não consigo suportar"
+      }
+    ],
+    "id": "local-1772301572626-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: この家では一体誰が決定権を持っているんだ？！",
+    "pinyin": null,
+    "translation": "A: Afinal, quem tem o poder de decisão nesta casa?!",
+    "tokens": [
+      "この",
+      "家",
+      "で",
+      "は",
+      "一体",
+      "誰",
+      "が",
+      "決定権",
+      "を",
+      "持って",
+      "いる",
+      "んだ",
+      "？！"
+    ],
+    "keywords": [
+      {
+        "id": 46,
+        "word": "この家",
+        "pinyin": "kono ie",
+        "meaning": "esta casa"
+      },
+      {
+        "id": 47,
+        "word": "一体",
+        "pinyin": "ittai",
+        "meaning": "afinal, em nome de"
+      },
+      {
+        "id": 48,
+        "word": "誰",
+        "pinyin": "dare",
+        "meaning": "quem"
+      },
+      {
+        "id": 49,
+        "word": "決定権",
+        "pinyin": "ketteiken",
+        "meaning": "poder de decisão"
+      },
+      {
+        "id": 50,
+        "word": "持っている",
+        "pinyin": "motte iru",
+        "meaning": "possui, tem"
+      }
+    ],
+    "id": "local-1772301572626-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 何をしているの？鏡に向かって独り言を言っている。まだ食器を洗ってないじゃない！",
+    "pinyin": null,
+    "translation": "B: O que você está fazendo? Está falando sozinho para o espelho. Você ainda não lavou a louça!",
+    "tokens": [
+      "何",
+      "を",
+      "して",
+      "いる",
+      "の",
+      "？",
+      "鏡",
+      "に",
+      "向かって",
+      "独り言",
+      "を",
+      "言って",
+      "いる",
+      "。",
+      "まだ",
+      "食器",
+      "を",
+      "洗って",
+      "ない",
+      "じゃない",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 51,
+        "word": "何をしているの？",
+        "pinyin": "nani o shite iru no?",
+        "meaning": "O que você está fazendo?"
+      },
+      {
+        "id": 52,
+        "word": "鏡",
+        "pinyin": "kagami",
+        "meaning": "espelho"
+      },
+      {
+        "id": 53,
+        "word": "向かって",
+        "pinyin": "mukatte",
+        "meaning": "em direção a"
+      },
+      {
+        "id": 54,
+        "word": "独り言",
+        "pinyin": "hitorigoto",
+        "meaning": "monólogo, falar sozinho"
+      },
+      {
+        "id": 55,
+        "word": "言っている",
+        "pinyin": "itte iru",
+        "meaning": "está dizendo"
+      },
+      {
+        "id": 56,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 57,
+        "word": "食器",
+        "pinyin": "shokki",
+        "meaning": "louça"
+      },
+      {
+        "id": 58,
+        "word": "洗ってない",
+        "pinyin": "arattenai",
+        "meaning": "não lavou (forma abreviada)"
+      },
+      {
+        "id": 59,
+        "word": "じゃない",
+        "pinyin": "janai",
+        "meaning": "não é mesmo? (expressa surpresa/afirmação)"
+      }
+    ],
+    "id": "local-1772301572626-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: おっと、おっと。はい。今すぐ行きます！",
+    "pinyin": null,
+    "translation": "A: Ops, ops. Sim. Vou agora mesmo!",
+    "tokens": [
+      "おっと",
+      "、",
+      "おっと",
+      "。",
+      "はい",
+      "。",
+      "今すぐ",
+      "行きます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 60,
+        "word": "おっと",
+        "pinyin": "otto",
+        "meaning": "ops, oh"
+      },
+      {
+        "id": 61,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "sim"
+      },
+      {
+        "id": 62,
+        "word": "今すぐ",
+        "pinyin": "imasugu",
+        "meaning": "agora mesmo, imediatamente"
+      },
+      {
+        "id": 63,
+        "word": "行きます",
+        "pinyin": "ikimasu",
+        "meaning": "vou (forma polida)"
+      }
+    ],
+    "id": "local-1772301572626-7",
+    "language": "Japonês"
+  }
+]

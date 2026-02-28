@@ -1,0 +1,749 @@
+[
+  {
+    "chinese": "嘿，兄弟。你这个周末有空吗？要不要出来聚聚？",
+    "pinyin": "Hēi, xiōngdì. Nǐ zhège zhōumò yǒu kòng ma? Yào bùyào chūlái jùjù?",
+    "translation": "Ei, irmão. Você está livre neste fim de semana? Quer sair para nos encontrarmos?",
+    "tokens": [
+      "嘿",
+      "，",
+      "兄弟",
+      "。",
+      "你",
+      "这个",
+      "周末",
+      "有空",
+      "吗",
+      "？",
+      "要不要",
+      "出来",
+      "聚聚",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "ei, olá (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "兄弟",
+        "pinyin": "xiōngdì",
+        "meaning": "irmão, meu caro"
+      },
+      {
+        "id": 3,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este, este aqui"
+      },
+      {
+        "id": 4,
+        "word": "周末",
+        "pinyin": "zhōumò",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 5,
+        "word": "有空",
+        "pinyin": "yǒukòng",
+        "meaning": "ter tempo livre, estar livre"
+      },
+      {
+        "id": 6,
+        "word": "要不要",
+        "pinyin": "yào bùyào",
+        "meaning": "quer ou não quer, que tal"
+      },
+      {
+        "id": 7,
+        "word": "出来",
+        "pinyin": "chūlái",
+        "meaning": "sair"
+      },
+      {
+        "id": 8,
+        "word": "聚聚",
+        "pinyin": "jùjù",
+        "meaning": "encontrar-se, reunir-se (reduplicado para indicar casualidade/curta duração)"
+      }
+    ],
+    "id": "local-1772298013637-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "为什么想聚聚？",
+    "pinyin": "Wèi shénme xiǎng jùjù?",
+    "translation": "Por que quer se encontrar?",
+    "tokens": [
+      "为什么",
+      "想",
+      "聚聚",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "为什么",
+        "pinyin": "wèi shénme",
+        "meaning": "por que"
+      },
+      {
+        "id": 2,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar"
+      },
+      {
+        "id": 3,
+        "word": "聚聚",
+        "pinyin": "jùjù",
+        "meaning": "encontrar-se, reunir-se"
+      }
+    ],
+    "id": "local-1772298013637-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "呵呵！兄弟，我要结婚了。来给你送请柬！",
+    "pinyin": "Hēhē! Xiōngdì, wǒ yào jiéhūn le. Lái gěi nǐ sòng qǐngjiǎn!",
+    "translation": "Haha! Irmão, vou me casar. Vim para te entregar o convite de casamento!",
+    "tokens": [
+      "呵呵",
+      "！",
+      "兄弟",
+      "，",
+      "我",
+      "要",
+      "结婚",
+      "了",
+      "。",
+      "来",
+      "给",
+      "你",
+      "送",
+      "请柬",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "呵呵",
+        "pinyin": "hēhē",
+        "meaning": "haha (risada)"
+      },
+      {
+        "id": 2,
+        "word": "兄弟",
+        "pinyin": "xiōngdì",
+        "meaning": "irmão, meu caro"
+      },
+      {
+        "id": 3,
+        "word": "要...了",
+        "pinyin": "yào...le",
+        "meaning": "vai... (indicando futuro próximo)"
+      },
+      {
+        "id": 4,
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 5,
+        "word": "来",
+        "pinyin": "lái",
+        "meaning": "vir"
+      },
+      {
+        "id": 6,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "dar, para, a (preposição)"
+      },
+      {
+        "id": 7,
+        "word": "送",
+        "pinyin": "sòng",
+        "meaning": "entregar, dar de presente"
+      },
+      {
+        "id": 8,
+        "word": "请柬",
+        "pinyin": "qǐngjiǎn",
+        "meaning": "convite (de casamento, etc.)"
+      }
+    ],
+    "id": "local-1772298013637-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "咦？！恭喜恭喜！你打算摆多少桌？",
+    "pinyin": "Yí?! Gōngxǐ gōngxǐ! Nǐ dǎsuàn bǎi duōshǎo zhuō?",
+    "translation": "Eh?! Parabéns, parabéns! Quantas mesas você planeja ter?",
+    "tokens": [
+      "咦",
+      "？！",
+      "恭喜",
+      "恭喜",
+      "！",
+      "你",
+      "打算",
+      "摆",
+      "多少",
+      "桌",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "咦",
+        "pinyin": "yí",
+        "meaning": "eh? (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "恭喜",
+        "pinyin": "gōngxǐ",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 3,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "planejar, pretender"
+      },
+      {
+        "id": 4,
+        "word": "摆",
+        "pinyin": "bǎi",
+        "meaning": "arrumar, colocar (mesas)"
+      },
+      {
+        "id": 5,
+        "word": "多少",
+        "pinyin": "duōshǎo",
+        "meaning": "quantos, quantas"
+      },
+      {
+        "id": 6,
+        "word": "桌",
+        "pinyin": "zhuō",
+        "meaning": "mesa (classificador para mesas de banquete)"
+      }
+    ],
+    "id": "local-1772298013637-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "12桌。现在酒店和婚庆都很难订，我们一年前就开始策划了。",
+    "pinyin": "Shí'èr zhuō. Xiànzài jiǔdiàn hé hūnqìng dōu hěn nán dìng, wǒmen yī nián qián jiù kāishǐ cèhuà le.",
+    "translation": "12 mesas. Agora hotéis e organizadores de casamento são muito difíceis de reservar, começamos a planejar há um ano.",
+    "tokens": [
+      "12",
+      "桌",
+      "。",
+      "现在",
+      "酒店",
+      "和",
+      "婚庆",
+      "都",
+      "很",
+      "难",
+      "订",
+      "，",
+      "我们",
+      "一年前",
+      "就",
+      "开始",
+      "策划",
+      "了",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "桌",
+        "pinyin": "zhuō",
+        "meaning": "mesa (classificador para mesas de banquete)"
+      },
+      {
+        "id": 2,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "酒店",
+        "pinyin": "jiǔdiàn",
+        "meaning": "hotel"
+      },
+      {
+        "id": 4,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e (conjunção)"
+      },
+      {
+        "id": 5,
+        "word": "婚庆",
+        "pinyin": "hūnqìng",
+        "meaning": "organizador de casamento, empresa de casamento"
+      },
+      {
+        "id": 6,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos, ambos"
+      },
+      {
+        "id": 7,
+        "word": "难",
+        "pinyin": "nán",
+        "meaning": "difícil"
+      },
+      {
+        "id": 8,
+        "word": "订",
+        "pinyin": "dìng",
+        "meaning": "reservar, encomendar"
+      },
+      {
+        "id": 9,
+        "word": "一年前",
+        "pinyin": "yī nián qián",
+        "meaning": "um ano atrás"
+      },
+      {
+        "id": 10,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "já, então (indicando antecipação ou conclusão)"
+      },
+      {
+        "id": 11,
+        "word": "开始",
+        "pinyin": "kāishǐ",
+        "meaning": "começar"
+      },
+      {
+        "id": 12,
+        "word": "策划",
+        "pinyin": "cèhuà",
+        "meaning": "planejar, elaborar um plano"
+      }
+    ],
+    "id": "local-1772298013637-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "没办法。你可以考虑目的地婚礼啊！",
+    "pinyin": "Méi bànfǎ. Nǐ kěyǐ kǎolǜ mùdìdì hūnlǐ a!",
+    "translation": "Não tem jeito. Você poderia considerar um casamento de destino!",
+    "tokens": [
+      "没",
+      "办法",
+      "。",
+      "你",
+      "可以",
+      "考虑",
+      "目的地",
+      "婚礼",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没办法",
+        "pinyin": "méi bànfǎ",
+        "meaning": "não tem jeito, não há nada a fazer"
+      },
+      {
+        "id": 2,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 3,
+        "word": "考虑",
+        "pinyin": "kǎolǜ",
+        "meaning": "considerar"
+      },
+      {
+        "id": 4,
+        "word": "目的地",
+        "pinyin": "mùdìdì",
+        "meaning": "destino"
+      },
+      {
+        "id": 5,
+        "word": "婚礼",
+        "pinyin": "hūnlǐ",
+        "meaning": "casamento (cerimônia)"
+      },
+      {
+        "id": 6,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa/de sugestão"
+      }
+    ],
+    "id": "local-1772298013637-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "爸妈不同意。他们思想太传统了。",
+    "pinyin": "Bàmā bù tóngyì. Tāmen sīxiǎng tài chuántǒng le.",
+    "translation": "Meus pais não concordam. Eles têm ideias muito tradicionais.",
+    "tokens": [
+      "爸妈",
+      "不",
+      "同意",
+      "。",
+      "他们",
+      "思想",
+      "太",
+      "传统",
+      "了",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "爸妈",
+        "pinyin": "bàmā",
+        "meaning": "pais (pai e mãe)"
+      },
+      {
+        "id": 2,
+        "word": "不同意",
+        "pinyin": "bù tóngyì",
+        "meaning": "não concordar"
+      },
+      {
+        "id": 3,
+        "word": "思想",
+        "pinyin": "sīxiǎng",
+        "meaning": "pensamento, ideia"
+      },
+      {
+        "id": 4,
+        "word": "太...了",
+        "pinyin": "tài...le",
+        "meaning": "muito, demais (para expressar intensidade)"
+      },
+      {
+        "id": 5,
+        "word": "传统",
+        "pinyin": "chuántǒng",
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772298013637-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那你结婚后打算去度蜜月吗？",
+    "pinyin": "Nà nǐ jiéhūn hòu dǎsuàn qù dù mìyuè ma?",
+    "translation": "Então, depois de se casar, você planeja ir para a lua de mel?",
+    "tokens": [
+      "那",
+      "你",
+      "结婚",
+      "后",
+      "打算",
+      "去",
+      "度",
+      "蜜月",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 3,
+        "word": "后",
+        "pinyin": "hòu",
+        "meaning": "depois, após"
+      },
+      {
+        "id": 4,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "planejar, pretender"
+      },
+      {
+        "id": 5,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 6,
+        "word": "度",
+        "pinyin": "dù",
+        "meaning": "passar (tempo, férias)"
+      },
+      {
+        "id": 7,
+        "word": "蜜月",
+        "pinyin": "mìyuè",
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 8,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772298013637-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "当然了，不然我老婆会不高兴的。",
+    "pinyin": "Dāngrán le, bùrán wǒ lǎopó huì bù gāoxìng de.",
+    "translation": "Claro, senão minha esposa ficará infeliz.",
+    "tokens": [
+      "当然",
+      "了",
+      "，",
+      "不然",
+      "我",
+      "老婆",
+      "会",
+      "不",
+      "高兴",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro, naturalmente"
+      },
+      {
+        "id": 2,
+        "word": "不然",
+        "pinyin": "bùrán",
+        "meaning": "senão, caso contrário"
+      },
+      {
+        "id": 3,
+        "word": "老婆",
+        "pinyin": "lǎopó",
+        "meaning": "esposa"
+      },
+      {
+        "id": 4,
+        "word": "会",
+        "pinyin": "huì",
+        "meaning": "irá (auxiliar para futuro), saber"
+      },
+      {
+        "id": 5,
+        "word": "不高兴",
+        "pinyin": "bù gāoxìng",
+        "meaning": "infeliz, descontente"
+      }
+    ],
+    "id": "local-1772298013637-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你老婆是你大学时期的那个女朋友吗？",
+    "pinyin": "Nǐ lǎopó shì nǐ dàxué shíqī de nàge nǚpéngyou ma?",
+    "translation": "Sua esposa é aquela namorada da sua época de faculdade?",
+    "tokens": [
+      "你",
+      "老婆",
+      "是",
+      "你",
+      "大学",
+      "时期",
+      "的",
+      "那个",
+      "女朋友",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "老婆",
+        "pinyin": "lǎopó",
+        "meaning": "esposa"
+      },
+      {
+        "id": 2,
+        "word": "大学",
+        "pinyin": "dàxué",
+        "meaning": "universidade, faculdade"
+      },
+      {
+        "id": 3,
+        "word": "时期",
+        "pinyin": "shíqī",
+        "meaning": "período, época"
+      },
+      {
+        "id": 4,
+        "word": "那个",
+        "pinyin": "nàge",
+        "meaning": "aquele, aquela"
+      },
+      {
+        "id": 5,
+        "word": "女朋友",
+        "pinyin": "nǚpéngyou",
+        "meaning": "namorada"
+      }
+    ],
+    "id": "local-1772298013637-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我们早就分手了。我老婆叫圆圆。别搞错了，叫错了就不好了！",
+    "pinyin": "Wǒmen zǎojiù fēnshǒu le. Wǒ lǎopó jiào Yuányuan. Bié gǎo cuò le, jiào cuò le jiù bù hǎo le!",
+    "translation": "Nós terminamos há muito tempo. Minha esposa se chama Yuanyuan. Não se confunda, se chamar errado não será bom!",
+    "tokens": [
+      "我们",
+      "早就",
+      "分手",
+      "了",
+      "。",
+      "我",
+      "老婆",
+      "叫",
+      "圆圆",
+      "。",
+      "别",
+      "搞错",
+      "了",
+      "，",
+      "叫错",
+      "了",
+      "就",
+      "不好",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "早就",
+        "pinyin": "zǎojiù",
+        "meaning": "já há muito tempo, muito antes"
+      },
+      {
+        "id": 2,
+        "word": "分手",
+        "pinyin": "fēnshǒu",
+        "meaning": "terminar (um relacionamento)"
+      },
+      {
+        "id": 3,
+        "word": "老婆",
+        "pinyin": "lǎopó",
+        "meaning": "esposa"
+      },
+      {
+        "id": 4,
+        "word": "叫",
+        "pinyin": "jiào",
+        "meaning": "chamar, ser chamado"
+      },
+      {
+        "id": 5,
+        "word": "圆圆",
+        "pinyin": "Yuányuan",
+        "meaning": "Yuanyuan (nome próprio)"
+      },
+      {
+        "id": 6,
+        "word": "别",
+        "pinyin": "bié",
+        "meaning": "não (para proibições), não faça"
+      },
+      {
+        "id": 7,
+        "word": "搞错",
+        "pinyin": "gǎo cuò",
+        "meaning": "cometer um erro, confundir"
+      },
+      {
+        "id": 8,
+        "word": "叫错",
+        "pinyin": "jiào cuò",
+        "meaning": "chamar pelo nome errado"
+      },
+      {
+        "id": 9,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 10,
+        "word": "不好",
+        "pinyin": "bù hǎo",
+        "meaning": "não é bom, ruim"
+      }
+    ],
+    "id": "local-1772298013637-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "知道了。周末见。",
+    "pinyin": "Zhīdào le. Zhōumò jiàn.",
+    "translation": "Entendi. Até o fim de semana.",
+    "tokens": [
+      "知道",
+      "了",
+      "。",
+      "周末",
+      "见",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "saber, entender"
+      },
+      {
+        "id": 2,
+        "word": "周末",
+        "pinyin": "zhōumò",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 3,
+        "word": "见",
+        "pinyin": "jiàn",
+        "meaning": "ver, encontrar-se (implica 'até logo')"
+      }
+    ],
+    "id": "local-1772298013637-11",
+    "language": "Chinês"
+  }
+]

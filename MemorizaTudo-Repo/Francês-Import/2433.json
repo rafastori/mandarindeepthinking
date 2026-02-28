@@ -1,0 +1,613 @@
+[
+  {
+    "chinese": "Directeur Chen, merci d'avoir pris le temps de votre emploi du temps chargé pour m'offrir le dîner.",
+    "pinyin": null,
+    "translation": "Diretor Chen, obrigado por ter tirado um tempo de sua agenda lotada para me oferecer o jantar.",
+    "tokens": [
+      "Directeur",
+      "Chen",
+      ",",
+      "merci",
+      "d'",
+      "avoir",
+      "pris",
+      "le",
+      "temps",
+      "de",
+      "votre",
+      "emploi",
+      "du",
+      "temps",
+      "chargé",
+      "pour",
+      "m'",
+      "offrir",
+      "le",
+      "dîner",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Directeur",
+        "pinyin": null,
+        "meaning": "Diretor"
+      },
+      {
+        "id": 2,
+        "word": "merci",
+        "pinyin": null,
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "avoir pris",
+        "pinyin": null,
+        "meaning": "ter tirado"
+      },
+      {
+        "id": 4,
+        "word": "emploi du temps",
+        "pinyin": null,
+        "meaning": "agenda, horário"
+      },
+      {
+        "id": 5,
+        "word": "chargé",
+        "pinyin": null,
+        "meaning": "lotado"
+      },
+      {
+        "id": 6,
+        "word": "offrir",
+        "pinyin": null,
+        "meaning": "oferecer"
+      },
+      {
+        "id": 7,
+        "word": "dîner",
+        "pinyin": null,
+        "meaning": "jantar"
+      }
+    ],
+    "id": "local-1772297310229-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Ne soyez pas si formel.",
+    "pinyin": null,
+    "translation": "Não seja tão formal.",
+    "tokens": [
+      "Ne",
+      "soyez",
+      "pas",
+      "si",
+      "formel",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "soyez",
+        "pinyin": null,
+        "meaning": "seja (imperativo de 'être')"
+      },
+      {
+        "id": 2,
+        "word": "formel",
+        "pinyin": null,
+        "meaning": "formal"
+      }
+    ],
+    "id": "local-1772297310229-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C'est quelque chose que je devrais faire.",
+    "pinyin": null,
+    "translation": "É algo que eu deveria fazer.",
+    "tokens": [
+      "C'est",
+      "quelque",
+      "chose",
+      "que",
+      "je",
+      "devrais",
+      "faire",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "quelque chose",
+        "pinyin": null,
+        "meaning": "algo, alguma coisa"
+      },
+      {
+        "id": 2,
+        "word": "devrais",
+        "pinyin": null,
+        "meaning": "deveria (condicional de 'devoir')"
+      },
+      {
+        "id": 3,
+        "word": "faire",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772297310229-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Jetez un coup d'œil au menu.",
+    "pinyin": null,
+    "translation": "Dê uma olhada no cardápio.",
+    "tokens": [
+      "Jetez",
+      "un",
+      "coup",
+      "d'",
+      "œil",
+      "au",
+      "menu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jetez",
+        "pinyin": null,
+        "meaning": "dêem, jogue (imperativo de 'jeter')"
+      },
+      {
+        "id": 2,
+        "word": "un coup d'œil",
+        "pinyin": null,
+        "meaning": "uma olhada"
+      },
+      {
+        "id": 3,
+        "word": "menu",
+        "pinyin": null,
+        "meaning": "cardápio"
+      }
+    ],
+    "id": "local-1772297310229-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Que voudriez-vous manger ?",
+    "pinyin": null,
+    "translation": "O que você gostaria de comer?",
+    "tokens": [
+      "Que",
+      "voudriez",
+      "-",
+      "vous",
+      "manger",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "voudriez",
+        "pinyin": null,
+        "meaning": "gostaria (condicional de 'vouloir')"
+      },
+      {
+        "id": 2,
+        "word": "manger",
+        "pinyin": null,
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772297310229-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "N'importe quoi.",
+    "pinyin": null,
+    "translation": "Qualquer coisa.",
+    "tokens": [
+      "N'",
+      "importe",
+      "quoi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "n'importe quoi",
+        "pinyin": null,
+        "meaning": "qualquer coisa"
+      }
+    ],
+    "id": "local-1772297310229-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Commandez-vous.",
+    "pinyin": null,
+    "translation": "Peça você.",
+    "tokens": [
+      "Commandez",
+      "-",
+      "vous",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "commandez",
+        "pinyin": null,
+        "meaning": "peça (imperativo de 'commander')"
+      }
+    ],
+    "id": "local-1772297310229-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D'accord.",
+    "pinyin": null,
+    "translation": "De acordo.",
+    "tokens": [
+      "D'",
+      "accord",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "d'accord",
+        "pinyin": null,
+        "meaning": "de acordo, ok"
+      }
+    ],
+    "id": "local-1772297310229-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Quand êtes-vous arrivé à Shanghai ?",
+    "pinyin": null,
+    "translation": "Quando você chegou em Xangai?",
+    "tokens": [
+      "Quand",
+      "êtes",
+      "-",
+      "vous",
+      "arrivé",
+      "à",
+      "Shanghai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "quand",
+        "pinyin": null,
+        "meaning": "quando"
+      },
+      {
+        "id": 2,
+        "word": "êtes arrivé",
+        "pinyin": null,
+        "meaning": "chegou (passé composé de 'arriver')"
+      },
+      {
+        "id": 3,
+        "word": "Shanghai",
+        "pinyin": null,
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1772297310229-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Hier soir.",
+    "pinyin": null,
+    "translation": "Ontem à noite.",
+    "tokens": [
+      "Hier",
+      "soir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hier soir",
+        "pinyin": null,
+        "meaning": "ontem à noite"
+      }
+    ],
+    "id": "local-1772297310229-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Oh, alors vous devez être fatigué maintenant.",
+    "pinyin": null,
+    "translation": "Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "Oh",
+      ",",
+      "alors",
+      "vous",
+      "devez",
+      "être",
+      "fatigué",
+      "maintenant",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "alors",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "devez être",
+        "pinyin": null,
+        "meaning": "deve estar"
+      },
+      {
+        "id": 3,
+        "word": "fatigué",
+        "pinyin": null,
+        "meaning": "cansado"
+      },
+      {
+        "id": 4,
+        "word": "maintenant",
+        "pinyin": null,
+        "meaning": "agora"
+      }
+    ],
+    "id": "local-1772297310229-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je pars souvent en voyage d'affaires, donc j'y suis habitué.",
+    "pinyin": null,
+    "translation": "Eu viajo frequentemente a negócios, então estou acostumado a isso.",
+    "tokens": [
+      "Je",
+      "pars",
+      "souvent",
+      "en",
+      "voyage",
+      "d'",
+      "affaires",
+      ",",
+      "donc",
+      "j'",
+      "y",
+      "suis",
+      "habitué",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pars",
+        "pinyin": null,
+        "meaning": "viajo, saio (de 'partir')"
+      },
+      {
+        "id": 2,
+        "word": "souvent",
+        "pinyin": null,
+        "meaning": "frequentemente"
+      },
+      {
+        "id": 3,
+        "word": "voyage d'affaires",
+        "pinyin": null,
+        "meaning": "viagem de negócios"
+      },
+      {
+        "id": 4,
+        "word": "donc",
+        "pinyin": null,
+        "meaning": "então, por isso"
+      },
+      {
+        "id": 5,
+        "word": "habitué",
+        "pinyin": null,
+        "meaning": "acostumado"
+      }
+    ],
+    "id": "local-1772297310229-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je vais vous donner la proposition à examiner.",
+    "pinyin": null,
+    "translation": "Vou lhe dar a proposta para examinar.",
+    "tokens": [
+      "Je",
+      "vais",
+      "vous",
+      "donner",
+      "la",
+      "proposition",
+      "à",
+      "examiner",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vais donner",
+        "pinyin": null,
+        "meaning": "vou dar (futuro próximo)"
+      },
+      {
+        "id": 2,
+        "word": "proposition",
+        "pinyin": null,
+        "meaning": "proposta"
+      },
+      {
+        "id": 3,
+        "word": "examiner",
+        "pinyin": null,
+        "meaning": "examinar"
+      }
+    ],
+    "id": "local-1772297310229-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Il n'y a pas d'urgence.",
+    "pinyin": null,
+    "translation": "Não há pressa.",
+    "tokens": [
+      "Il",
+      "n'",
+      "y",
+      "a",
+      "pas",
+      "d'",
+      "urgence",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "il n'y a pas",
+        "pinyin": null,
+        "meaning": "não há"
+      },
+      {
+        "id": 2,
+        "word": "urgence",
+        "pinyin": null,
+        "meaning": "pressa, urgência"
+      }
+    ],
+    "id": "local-1772297310229-13",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Nous pouvons manger d'abord et parler quand nous aurons terminé.",
+    "pinyin": null,
+    "translation": "Podemos comer primeiro e conversar quando terminarmos.",
+    "tokens": [
+      "Nous",
+      "pouvons",
+      "manger",
+      "d'abord",
+      "et",
+      "parler",
+      "quand",
+      "nous",
+      "aurons",
+      "terminé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pouvons",
+        "pinyin": null,
+        "meaning": "podemos (de 'pouvoir')"
+      },
+      {
+        "id": 2,
+        "word": "manger",
+        "pinyin": null,
+        "meaning": "comer"
+      },
+      {
+        "id": 3,
+        "word": "d'abord",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "parler",
+        "pinyin": null,
+        "meaning": "conversar"
+      },
+      {
+        "id": 5,
+        "word": "aurons terminé",
+        "pinyin": null,
+        "meaning": "terminarmos (futuro anterior)"
+      }
+    ],
+    "id": "local-1772297310229-14",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D'accord.",
+    "pinyin": null,
+    "translation": "De acordo.",
+    "tokens": [
+      "D'",
+      "accord",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "d'accord",
+        "pinyin": null,
+        "meaning": "de acordo, ok"
+      }
+    ],
+    "id": "local-1772297310229-15",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Serveur.",
+    "pinyin": null,
+    "translation": "Garçom.",
+    "tokens": [
+      "Serveur",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "serveur",
+        "pinyin": null,
+        "meaning": "garçom"
+      }
+    ],
+    "id": "local-1772297310229-16",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Nous aimerions commander.",
+    "pinyin": null,
+    "translation": "Nós gostaríamos de pedir.",
+    "tokens": [
+      "Nous",
+      "aimerions",
+      "commander",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aimerions",
+        "pinyin": null,
+        "meaning": "gostaríamos (condicional de 'aimer')"
+      },
+      {
+        "id": 2,
+        "word": "commander",
+        "pinyin": null,
+        "meaning": "pedir, encomendar"
+      }
+    ],
+    "id": "local-1772297310229-17",
+    "language": "Francês"
+  }
+]

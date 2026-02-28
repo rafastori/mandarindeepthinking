@@ -1,0 +1,580 @@
+[
+  {
+    "chinese": "A: Hola. ¿Puedo preguntar, este es el Departamento de Exámenes Físicos del Hospital Huamei?",
+    "pinyin": "",
+    "translation": "A: Olá. Posso perguntar, este é o Departamento de Exames Físicos do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "Hola",
+      ".",
+      "¿Puedo",
+      "preguntar",
+      ",",
+      "este",
+      "es",
+      "el",
+      "Departamento",
+      "de",
+      "Exámenes",
+      "Físicos",
+      "del",
+      "Hospital",
+      "Huamei",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hola",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Departamento de Exámenes Físicos",
+        "pinyin": "",
+        "meaning": "Departamento de Exames Físicos"
+      },
+      {
+        "id": 3,
+        "word": "Hospital",
+        "pinyin": "",
+        "meaning": "Hospital"
+      }
+    ],
+    "id": "local-1772300229136-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. ¿Puedo preguntar, hay algo en lo que pueda ayudarle?",
+    "pinyin": "",
+    "translation": "B: Sim. Posso perguntar, há algo em que possa ajudá-lo?",
+    "tokens": [
+      "B:",
+      "Sí",
+      ".",
+      "¿Puedo",
+      "preguntar",
+      ",",
+      "hay",
+      "algo",
+      "en",
+      "lo",
+      "que",
+      "pueda",
+      "ayudarle",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "¿Puedo preguntar",
+        "pinyin": "",
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "ayudarle",
+        "pinyin": "",
+        "meaning": "ajudá-lo/a"
+      }
+    ],
+    "id": "local-1772300229136-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Aquí hacen exámenes físicos de ingreso al trabajo?",
+    "pinyin": "",
+    "translation": "A: Aqui fazem exames físicos de admissão ao trabalho?",
+    "tokens": [
+      "A:",
+      "¿Aquí",
+      "hacen",
+      "exámenes",
+      "físicos",
+      "de",
+      "ingreso",
+      "al",
+      "trabajo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aquí",
+        "pinyin": "",
+        "meaning": "Aqui"
+      },
+      {
+        "id": 2,
+        "word": "exámenes físicos",
+        "pinyin": "",
+        "meaning": "exames físicos"
+      },
+      {
+        "id": 3,
+        "word": "ingreso al trabajo",
+        "pinyin": "",
+        "meaning": "admissão ao trabalho"
+      }
+    ],
+    "id": "local-1772300229136-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí, los hacemos. Tenemos un paquete que cuesta 260 yuanes.",
+    "pinyin": "",
+    "translation": "B: Sim, fazemos. Temos um pacote que custa 260 yuans.",
+    "tokens": [
+      "B:",
+      "Sí",
+      ",",
+      "los",
+      "hacemos",
+      ".",
+      "Tenemos",
+      "un",
+      "paquete",
+      "que",
+      "cuesta",
+      "260",
+      "yuanes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hacemos",
+        "pinyin": "",
+        "meaning": "fazemos"
+      },
+      {
+        "id": 2,
+        "word": "paquete",
+        "pinyin": "",
+        "meaning": "pacote"
+      },
+      {
+        "id": 3,
+        "word": "cuesta",
+        "pinyin": "",
+        "meaning": "custa"
+      },
+      {
+        "id": 4,
+        "word": "yuanes",
+        "pinyin": "",
+        "meaning": "yuanes"
+      }
+    ],
+    "id": "local-1772300229136-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué aspectos examinará?",
+    "pinyin": "",
+    "translation": "A: Que aspectos examinará?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "aspectos",
+      "examinará",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aspectos",
+        "pinyin": "",
+        "meaning": "aspectos"
+      },
+      {
+        "id": 2,
+        "word": "examinará",
+        "pinyin": "",
+        "meaning": "examinará"
+      }
+    ],
+    "id": "local-1772300229136-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: La altura, peso y presión arterial básicos. Análisis de sangre, análisis de orina, ecografía en modo B y electrocardiograma.",
+    "pinyin": "",
+    "translation": "B: Altura, peso e pressão arterial básicos. Análise de sangue, análise de urina, ultrassonografia em modo B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "La",
+      "altura",
+      ",",
+      "peso",
+      "y",
+      "presión",
+      "arterial",
+      "básicos",
+      ".",
+      "Análisis",
+      "de",
+      "sangre",
+      ",",
+      "análisis",
+      "de",
+      "orina",
+      ",",
+      "ecografía",
+      "en",
+      "modo",
+      "B",
+      "y",
+      "electrocardiograma",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "altura",
+        "pinyin": "",
+        "meaning": "altura"
+      },
+      {
+        "id": 2,
+        "word": "peso",
+        "pinyin": "",
+        "meaning": "peso"
+      },
+      {
+        "id": 3,
+        "word": "presión arterial",
+        "pinyin": "",
+        "meaning": "pressão arterial"
+      },
+      {
+        "id": 4,
+        "word": "Análisis de sangre",
+        "pinyin": "",
+        "meaning": "Análise de sangue"
+      },
+      {
+        "id": 5,
+        "word": "Análisis de orina",
+        "pinyin": "",
+        "meaning": "Análise de urina"
+      },
+      {
+        "id": 6,
+        "word": "ecografía en modo B",
+        "pinyin": "",
+        "meaning": "ultrassonografia em modo B"
+      },
+      {
+        "id": 7,
+        "word": "electrocardiograma",
+        "pinyin": "",
+        "meaning": "eletrocardiograma"
+      }
+    ],
+    "id": "local-1772300229136-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Si también quiero que se revisen otros aspectos, ¿puedo hacerlo?",
+    "pinyin": "",
+    "translation": "A: Se também quiser que outros aspectos sejam verificados, posso fazê-lo?",
+    "tokens": [
+      "A:",
+      "Si",
+      "también",
+      "quiero",
+      "que",
+      "se",
+      "revisen",
+      "otros",
+      "aspectos",
+      ",",
+      "¿puedo",
+      "hacerlo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "quiero",
+        "pinyin": "",
+        "meaning": "quero"
+      },
+      {
+        "id": 3,
+        "word": "revisen",
+        "pinyin": "",
+        "meaning": "sejam verificados/revisados"
+      },
+      {
+        "id": 4,
+        "word": "otros aspectos",
+        "pinyin": "",
+        "meaning": "outros aspectos"
+      }
+    ],
+    "id": "local-1772300229136-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí, puede. Puede añadir elementos individuales y compensar el coste, y está bien.",
+    "pinyin": "",
+    "translation": "B: Sim, pode. Pode adicionar itens individuais e compensar o custo, e está tudo bem.",
+    "tokens": [
+      "B:",
+      "Sí",
+      ",",
+      "puede",
+      ".",
+      "Puede",
+      "añadir",
+      "elementos",
+      "individuales",
+      "y",
+      "compensar",
+      "el",
+      "coste",
+      ",",
+      "y",
+      "está",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "añadir",
+        "pinyin": "",
+        "meaning": "adicionar"
+      },
+      {
+        "id": 2,
+        "word": "elementos individuales",
+        "pinyin": "",
+        "meaning": "itens individuais"
+      },
+      {
+        "id": 3,
+        "word": "compensar el coste",
+        "pinyin": "",
+        "meaning": "compensar o custo"
+      },
+      {
+        "id": 4,
+        "word": "está bien",
+        "pinyin": "",
+        "meaning": "está tudo bem / não tem problema"
+      }
+    ],
+    "id": "local-1772300229136-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿El informe se enviará directamente por correo al trabajo?",
+    "pinyin": "",
+    "translation": "A: O relatório será enviado diretamente por correio para o trabalho?",
+    "tokens": [
+      "A:",
+      "¿El",
+      "informe",
+      "se",
+      "enviará",
+      "directamente",
+      "por",
+      "correo",
+      "al",
+      "trabajo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "informe",
+        "pinyin": "",
+        "meaning": "relatório"
+      },
+      {
+        "id": 2,
+        "word": "se enviará",
+        "pinyin": "",
+        "meaning": "será enviado"
+      },
+      {
+        "id": 3,
+        "word": "directamente",
+        "pinyin": "",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 4,
+        "word": "por correo",
+        "pinyin": "",
+        "meaning": "por correio"
+      }
+    ],
+    "id": "local-1772300229136-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No, depende de la persona ir a buscarlo o de que se lo envíen por mensajería. ¿Necesita que le ayude a concertar una cita ahora mismo?",
+    "pinyin": "",
+    "translation": "B: Não, depende da pessoa ir buscá-lo ou de que o enviem por mensageiro. Precisa que eu o ajude a marcar uma consulta agora mesmo?",
+    "tokens": [
+      "B:",
+      "No",
+      ",",
+      "depende",
+      "de",
+      "la",
+      "persona",
+      "ir",
+      "a",
+      "buscarlo",
+      "o",
+      "de",
+      "que",
+      "se",
+      "lo",
+      "envíen",
+      "por",
+      "mensajería",
+      ".",
+      "¿Necesita",
+      "que",
+      "le",
+      "ayude",
+      "a",
+      "concertar",
+      "una",
+      "cita",
+      "ahora",
+      "mismo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "depende de",
+        "pinyin": "",
+        "meaning": "depende de"
+      },
+      {
+        "id": 2,
+        "word": "ir a buscarlo",
+        "pinyin": "",
+        "meaning": "ir buscá-lo"
+      },
+      {
+        "id": 3,
+        "word": "por mensajería",
+        "pinyin": "",
+        "meaning": "por mensageiro / por entrega"
+      },
+      {
+        "id": 4,
+        "word": "concertar una cita",
+        "pinyin": "",
+        "meaning": "marcar uma consulta"
+      },
+      {
+        "id": 5,
+        "word": "ahora mismo",
+        "pinyin": "",
+        "meaning": "agora mesmo"
+      }
+    ],
+    "id": "local-1772300229136-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Hágalo para el próximo lunes.",
+    "pinyin": "",
+    "translation": "A: Faça-o para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "Hágalo",
+      "para",
+      "el",
+      "próximo",
+      "lunes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hágalo",
+        "pinyin": "",
+        "meaning": "Faça-o"
+      },
+      {
+        "id": 2,
+        "word": "próximo lunes",
+        "pinyin": "",
+        "meaning": "próxima segunda-feira"
+      }
+    ],
+    "id": "local-1772300229136-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. Por favor, deje su información básica.",
+    "pinyin": "",
+    "translation": "B: De acordo. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "B:",
+      "De",
+      "acuerdo",
+      ".",
+      "Por",
+      "favor",
+      ",",
+      "deje",
+      "su",
+      "información",
+      "básica",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": "",
+        "meaning": "De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Por favor",
+        "pinyin": "",
+        "meaning": "Por favor"
+      },
+      {
+        "id": 3,
+        "word": "deje",
+        "pinyin": "",
+        "meaning": "deixe"
+      },
+      {
+        "id": 4,
+        "word": "información básica",
+        "pinyin": "",
+        "meaning": "informações básicas"
+      }
+    ],
+    "id": "local-1772300229136-11",
+    "language": "Espanhol"
+  }
+]

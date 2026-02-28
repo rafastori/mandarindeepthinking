@@ -1,0 +1,918 @@
+[
+  {
+    "chinese": "A: Guten Tag, Sie suchen Wein?",
+    "pinyin": "",
+    "translation": "A: Bom dia, você está procurando vinho?",
+    "tokens": [
+      "Guten",
+      "Tag",
+      "Sie",
+      "suchen",
+      "Wein"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guten Tag",
+        "pinyin": "",
+        "meaning": "Bom dia"
+      },
+      {
+        "id": 2,
+        "word": "suchen",
+        "pinyin": "",
+        "meaning": "procurar"
+      },
+      {
+        "id": 3,
+        "word": "Wein",
+        "pinyin": "",
+        "meaning": "vinho"
+      }
+    ],
+    "id": "local-1772294015484-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Ein ausländischer Freund feiert Geburtstag.",
+    "pinyin": "",
+    "translation": "B: Sim. Um amigo estrangeiro está comemorando aniversário.",
+    "tokens": [
+      "Ja",
+      "Ein",
+      "ausländischer",
+      "Freund",
+      "feiert",
+      "Geburtstag"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 5,
+        "word": "ausländischer",
+        "pinyin": "",
+        "meaning": "estrangeiro (adjetivo)"
+      },
+      {
+        "id": 6,
+        "word": "Freund",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 7,
+        "word": "feiern",
+        "pinyin": "",
+        "meaning": "celebrar, festejar (conjugado: feiert)"
+      },
+      {
+        "id": 8,
+        "word": "Geburtstag",
+        "pinyin": "",
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772294015484-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Mag sie lieber Rotwein oder Weißwein?",
+    "pinyin": "",
+    "translation": "A: Ela prefere vinho tinto ou vinho branco?",
+    "tokens": [
+      "Mag",
+      "sie",
+      "lieber",
+      "Rotwein",
+      "oder",
+      "Weißwein"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "mögen",
+        "pinyin": "",
+        "meaning": "gostar (conjugado: Mag)"
+      },
+      {
+        "id": 10,
+        "word": "sie",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 11,
+        "word": "lieber",
+        "pinyin": "",
+        "meaning": "preferencialmente, mais"
+      },
+      {
+        "id": 12,
+        "word": "Rotwein",
+        "pinyin": "",
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 13,
+        "word": "oder",
+        "pinyin": "",
+        "meaning": "ou"
+      },
+      {
+        "id": 14,
+        "word": "Weißwein",
+        "pinyin": "",
+        "meaning": "vinho branco"
+      }
+    ],
+    "id": "local-1772294015484-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Rotwein.",
+    "pinyin": "",
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "Rotwein"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "Rotwein",
+        "pinyin": "",
+        "meaning": "vinho tinto"
+      }
+    ],
+    "id": "local-1772294015484-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Okay. Bei uns gibt es Weine aus der Neuen Welt und aus der Alten Welt.",
+    "pinyin": "",
+    "translation": "A: Ok. Conosco temos vinhos do Novo Mundo e do Velho Mundo.",
+    "tokens": [
+      "Okay",
+      "Bei",
+      "uns",
+      "gibt",
+      "es",
+      "Weine",
+      "aus",
+      "der",
+      "Neuen",
+      "Welt",
+      "und",
+      "aus",
+      "der",
+      "Alten",
+      "Welt"
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 16,
+        "word": "Bei uns gibt es",
+        "pinyin": "",
+        "meaning": "Conosco há / Temos"
+      },
+      {
+        "id": 17,
+        "word": "Weine",
+        "pinyin": "",
+        "meaning": "vinhos (plural de Wein)"
+      },
+      {
+        "id": 18,
+        "word": "aus",
+        "pinyin": "",
+        "meaning": "de, do"
+      },
+      {
+        "id": 19,
+        "word": "Neue Welt",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 20,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 21,
+        "word": "Alte Welt",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      }
+    ],
+    "id": "local-1772294015484-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Normalerweise trinke ich keinen Wein, ich kenne mich nicht so gut aus.",
+    "pinyin": "",
+    "translation": "B: Normalmente eu não bebo vinho, não entendo muito bem disso.",
+    "tokens": [
+      "Normalerweise",
+      "trinke",
+      "ich",
+      "keinen",
+      "Wein",
+      "ich",
+      "kenne",
+      "mich",
+      "nicht",
+      "so",
+      "gut",
+      "aus"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "Normalerweise",
+        "pinyin": "",
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 23,
+        "word": "trinken",
+        "pinyin": "",
+        "meaning": "beber (conjugado: trinke)"
+      },
+      {
+        "id": 24,
+        "word": "keinen Wein",
+        "pinyin": "",
+        "meaning": "nenhum vinho"
+      },
+      {
+        "id": 25,
+        "word": "sich auskennen",
+        "pinyin": "",
+        "meaning": "entender, conhecer bem (idiom: ich kenne mich nicht so gut aus)"
+      }
+    ],
+    "id": "local-1772294015484-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Kein Problem. Mit \"Alter Welt\" meinen wir vor allem Länder wie Frankreich, Italien und Spanien, die eine jahrhundertealte Tradition in der Weinherstellung haben.",
+    "pinyin": "",
+    "translation": "A: Sem problema. Com \"Velho Mundo\" queremos dizer principalmente países como França, Itália e Espanha, que têm uma tradição secular na produção de vinho.",
+    "tokens": [
+      "Kein",
+      "Problem",
+      "Mit",
+      "Alter",
+      "Welt",
+      "meinen",
+      "wir",
+      "vor",
+      "allem",
+      "Länder",
+      "wie",
+      "Frankreich",
+      "Italien",
+      "und",
+      "Spanien",
+      "die",
+      "eine",
+      "jahrhundertealte",
+      "Tradition",
+      "in",
+      "der",
+      "Weinherstellung",
+      "haben"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "Kein Problem",
+        "pinyin": "",
+        "meaning": "Sem problema"
+      },
+      {
+        "id": 27,
+        "word": "meinen",
+        "pinyin": "",
+        "meaning": "querer dizer"
+      },
+      {
+        "id": 28,
+        "word": "vor allem",
+        "pinyin": "",
+        "meaning": "principalmente, sobretudo"
+      },
+      {
+        "id": 29,
+        "word": "Länder",
+        "pinyin": "",
+        "meaning": "países (plural de Land)"
+      },
+      {
+        "id": 30,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 31,
+        "word": "Frankreich",
+        "pinyin": "",
+        "meaning": "França"
+      },
+      {
+        "id": 32,
+        "word": "Italien",
+        "pinyin": "",
+        "meaning": "Itália"
+      },
+      {
+        "id": 33,
+        "word": "Spanien",
+        "pinyin": "",
+        "meaning": "Espanha"
+      },
+      {
+        "id": 34,
+        "word": "jahrhundertealte",
+        "pinyin": "",
+        "meaning": "secular, centenária"
+      },
+      {
+        "id": 35,
+        "word": "Tradition",
+        "pinyin": "",
+        "meaning": "tradição"
+      },
+      {
+        "id": 36,
+        "word": "Weinherstellung",
+        "pinyin": "",
+        "meaning": "produção de vinho"
+      },
+      {
+        "id": 37,
+        "word": "haben",
+        "pinyin": "",
+        "meaning": "ter"
+      }
+    ],
+    "id": "local-1772294015484-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Die \"Neue Welt\" hingegen bezieht sich auf Länder wie die USA, Kanada, Argentinien, Australien, die neuere Weinbaunationen sind.",
+    "pinyin": "",
+    "translation": "O \"Novo Mundo\", por outro lado, refere-se a países como EUA, Canadá, Argentina, Austrália, que são nações vinícolas mais recentes.",
+    "tokens": [
+      "Die",
+      "Neue",
+      "Welt",
+      "hingegen",
+      "bezieht",
+      "sich",
+      "auf",
+      "Länder",
+      "wie",
+      "die",
+      "USA",
+      "Kanada",
+      "Argentinien",
+      "Australien",
+      "die",
+      "neuere",
+      "Weinbaunationen",
+      "sind"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Neue Welt",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 38,
+        "word": "hingegen",
+        "pinyin": "",
+        "meaning": "por outro lado, em contrapartida"
+      },
+      {
+        "id": 39,
+        "word": "sich beziehen auf",
+        "pinyin": "",
+        "meaning": "referir-se a (conjugado: bezieht sich auf)"
+      },
+      {
+        "id": 29,
+        "word": "Länder",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 30,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 40,
+        "word": "USA",
+        "pinyin": "",
+        "meaning": "EUA"
+      },
+      {
+        "id": 41,
+        "word": "Kanada",
+        "pinyin": "",
+        "meaning": "Canadá"
+      },
+      {
+        "id": 42,
+        "word": "Argentinien",
+        "pinyin": "",
+        "meaning": "Argentina"
+      },
+      {
+        "id": 43,
+        "word": "Australien",
+        "pinyin": "",
+        "meaning": "Austrália"
+      },
+      {
+        "id": 44,
+        "word": "neuere",
+        "pinyin": "",
+        "meaning": "mais novas, mais recentes (comparativo de neu)"
+      },
+      {
+        "id": 45,
+        "word": "Weinbaunationen",
+        "pinyin": "",
+        "meaning": "nações vinícolas"
+      },
+      {
+        "id": 46,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar (conjugado: sind)"
+      }
+    ],
+    "id": "local-1772294015484-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gibt es dann einen Geschmacksunterschied?",
+    "pinyin": "",
+    "translation": "B: Existe então uma diferença de sabor?",
+    "tokens": [
+      "Gibt",
+      "es",
+      "dann",
+      "einen",
+      "Geschmacksunterschied"
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "Gibt es",
+        "pinyin": "",
+        "meaning": "Existe/Há"
+      },
+      {
+        "id": 48,
+        "word": "dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 49,
+        "word": "Geschmacksunterschied",
+        "pinyin": "",
+        "meaning": "diferença de sabor"
+      }
+    ],
+    "id": "local-1772294015484-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja. Die Weine der Alten Welt sind oft säurebetonter, weil der Tanningehalt höher ist.",
+    "pinyin": "",
+    "translation": "A: Sim. Os vinhos do Velho Mundo são frequentemente mais ácidos, porque o teor de tanino é maior.",
+    "tokens": [
+      "Ja",
+      "Die",
+      "Weine",
+      "der",
+      "Alten",
+      "Welt",
+      "sind",
+      "oft",
+      "säurebetonter",
+      "weil",
+      "der",
+      "Tanningehalt",
+      "höher",
+      "ist"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 17,
+        "word": "Weine",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 21,
+        "word": "Alte Welt",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 46,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar (conjugado: sind, ist)"
+      },
+      {
+        "id": 50,
+        "word": "oft",
+        "pinyin": "",
+        "meaning": "frequentemente"
+      },
+      {
+        "id": 51,
+        "word": "säurebetonter",
+        "pinyin": "",
+        "meaning": "mais ácidos (comparativo de säurebetont)"
+      },
+      {
+        "id": 52,
+        "word": "weil",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 53,
+        "word": "Tanningehalt",
+        "pinyin": "",
+        "meaning": "teor de tanino"
+      },
+      {
+        "id": 54,
+        "word": "höher",
+        "pinyin": "",
+        "meaning": "mais alto (comparativo de hoch)"
+      }
+    ],
+    "id": "local-1772294015484-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Weine der Neuen Welt sind im Vergleich fruchtiger und weicher, da sie weniger Tannine enthalten.",
+    "pinyin": "",
+    "translation": "Vinhos do Novo Mundo são, em comparação, mais frutados e macios, pois contêm menos taninos.",
+    "tokens": [
+      "Weine",
+      "der",
+      "Neuen",
+      "Welt",
+      "sind",
+      "im",
+      "Vergleich",
+      "fruchtiger",
+      "und",
+      "weicher",
+      "da",
+      "sie",
+      "weniger",
+      "Tannine",
+      "enthalten"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "Weine",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 19,
+        "word": "Neue Welt",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 46,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar (conjugado: sind)"
+      },
+      {
+        "id": 55,
+        "word": "im Vergleich",
+        "pinyin": "",
+        "meaning": "em comparação"
+      },
+      {
+        "id": 56,
+        "word": "fruchtiger",
+        "pinyin": "",
+        "meaning": "mais frutados (comparativo de fruchtig)"
+      },
+      {
+        "id": 20,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 57,
+        "word": "weicher",
+        "pinyin": "",
+        "meaning": "mais macios (comparativo de weich)"
+      },
+      {
+        "id": 58,
+        "word": "da",
+        "pinyin": "",
+        "meaning": "pois, já que"
+      },
+      {
+        "id": 10,
+        "word": "sie",
+        "pinyin": "",
+        "meaning": "elas (os vinhos)"
+      },
+      {
+        "id": 59,
+        "word": "weniger",
+        "pinyin": "",
+        "meaning": "menos"
+      },
+      {
+        "id": 60,
+        "word": "Tannine",
+        "pinyin": "",
+        "meaning": "taninos"
+      },
+      {
+        "id": 61,
+        "word": "enthalten",
+        "pinyin": "",
+        "meaning": "conter"
+      }
+    ],
+    "id": "local-1772294015484-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ach so. Ich habe gehört, dass Mädchen fruchtigere Weine mögen.",
+    "pinyin": "",
+    "translation": "B: Ah, entendi. Ouvi dizer que garotas gostam de vinhos mais frutados.",
+    "tokens": [
+      "Ach",
+      "so",
+      "Ich",
+      "habe",
+      "gehört",
+      "dass",
+      "Mädchen",
+      "fruchtigere",
+      "Weine",
+      "mögen"
+    ],
+    "keywords": [
+      {
+        "id": 62,
+        "word": "Ach so",
+        "pinyin": "",
+        "meaning": "Ah, entendi / Ah, sim"
+      },
+      {
+        "id": 63,
+        "word": "hören",
+        "pinyin": "",
+        "meaning": "ouvir (conjugado no pretérito perfeito: habe gehört)"
+      },
+      {
+        "id": 64,
+        "word": "dass",
+        "pinyin": "",
+        "meaning": "que (conjunção)"
+      },
+      {
+        "id": 65,
+        "word": "Mädchen",
+        "pinyin": "",
+        "meaning": "garotas, meninas"
+      },
+      {
+        "id": 56,
+        "word": "fruchtigere",
+        "pinyin": "",
+        "meaning": "mais frutados (comparativo de fruchtig)"
+      },
+      {
+        "id": 17,
+        "word": "Weine",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 9,
+        "word": "mögen",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772294015484-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja. Dieser Wein hier ist besonders gut für Frauen geeignet.",
+    "pinyin": "",
+    "translation": "A: Sim. Este vinho aqui é especialmente adequado para mulheres.",
+    "tokens": [
+      "Ja",
+      "Dieser",
+      "Wein",
+      "hier",
+      "ist",
+      "besonders",
+      "gut",
+      "für",
+      "Frauen",
+      "geeignet"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 66,
+        "word": "Dieser",
+        "pinyin": "",
+        "meaning": "este"
+      },
+      {
+        "id": 3,
+        "word": "Wein",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 67,
+        "word": "hier",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 46,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar (conjugado: ist)"
+      },
+      {
+        "id": 68,
+        "word": "besonders",
+        "pinyin": "",
+        "meaning": "especialmente"
+      },
+      {
+        "id": 69,
+        "word": "gut geeignet",
+        "pinyin": "",
+        "meaning": "bem adequado"
+      },
+      {
+        "id": 70,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 71,
+        "word": "Frauen",
+        "pinyin": "",
+        "meaning": "mulheres (plural de Frau)"
+      }
+    ],
+    "id": "local-1772294015484-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Der verkauft sich sehr gut.",
+    "pinyin": "",
+    "translation": "Ele vende muito bem.",
+    "tokens": [
+      "Der",
+      "verkauft",
+      "sich",
+      "sehr",
+      "gut"
+    ],
+    "keywords": [
+      {
+        "id": 72,
+        "word": "sich verkaufen",
+        "pinyin": "",
+        "meaning": "vender-se (conjugado: verkauft sich)"
+      },
+      {
+        "id": 73,
+        "word": "sehr gut",
+        "pinyin": "",
+        "meaning": "muito bem"
+      }
+    ],
+    "id": "local-1772294015484-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ok, dann nehme ich diese Flasche.",
+    "pinyin": "",
+    "translation": "B: Ok, então levo esta garrafa.",
+    "tokens": [
+      "Ok",
+      "dann",
+      "nehme",
+      "ich",
+      "diese",
+      "Flasche"
+    ],
+    "keywords": [
+      {
+        "id": 74,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 48,
+        "word": "dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 75,
+        "word": "nehmen",
+        "pinyin": "",
+        "meaning": "levar, pegar (conjugado: nehme)"
+      },
+      {
+        "id": 76,
+        "word": "diese",
+        "pinyin": "",
+        "meaning": "esta"
+      },
+      {
+        "id": 77,
+        "word": "Flasche",
+        "pinyin": "",
+        "meaning": "garrafa"
+      }
+    ],
+    "id": "local-1772294015484-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Danke!",
+    "pinyin": "",
+    "translation": "Obrigado!",
+    "tokens": [
+      "Danke"
+    ],
+    "keywords": [
+      {
+        "id": 78,
+        "word": "Danke",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772294015484-15",
+    "language": "Alemão"
+  }
+]

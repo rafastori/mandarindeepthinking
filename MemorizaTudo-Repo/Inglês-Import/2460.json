@@ -1,0 +1,596 @@
+[
+  {
+    "chinese": "A: Lisa, I want to ask you about something.",
+    "pinyin": "",
+    "translation": "A: Lisa, eu quero te perguntar sobre algo.",
+    "tokens": [
+      "A",
+      ":",
+      "Lisa",
+      ",",
+      "I",
+      "want",
+      "to",
+      "ask",
+      "you",
+      "about",
+      "something",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ask",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 2,
+        "word": "something",
+        "pinyin": "",
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772293534670-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What's that?",
+    "pinyin": "",
+    "translation": "B: O que é isso?",
+    "tokens": [
+      "B",
+      ":",
+      "What's",
+      "that",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What's",
+        "pinyin": "",
+        "meaning": "O que é"
+      },
+      {
+        "id": 2,
+        "word": "that",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772293534670-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Are we recruiting interns this summer?",
+    "pinyin": "",
+    "translation": "A: Estamos recrutando estagiários neste verão?",
+    "tokens": [
+      "A",
+      ":",
+      "Are",
+      "we",
+      "recruiting",
+      "interns",
+      "this",
+      "summer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "recruiting",
+        "pinyin": "",
+        "meaning": "recrutando"
+      },
+      {
+        "id": 2,
+        "word": "interns",
+        "pinyin": "",
+        "meaning": "estagiários"
+      },
+      {
+        "id": 3,
+        "word": "summer",
+        "pinyin": "",
+        "meaning": "verão"
+      }
+    ],
+    "id": "local-1772293534670-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: We are.",
+    "pinyin": "",
+    "translation": "B: Sim, estamos.",
+    "tokens": [
+      "B",
+      ":",
+      "We",
+      "are",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772293534670-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Do you have a suitable candidate that you'd like to recommend?",
+    "pinyin": "",
+    "translation": "Você tem um candidato adequado que gostaria de recomendar?",
+    "tokens": [
+      "Do",
+      "you",
+      "have",
+      "a",
+      "suitable",
+      "candidate",
+      "that",
+      "you'd",
+      "like",
+      "to",
+      "recommend",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "suitable",
+        "pinyin": "",
+        "meaning": "adequado"
+      },
+      {
+        "id": 2,
+        "word": "candidate",
+        "pinyin": "",
+        "meaning": "candidato"
+      },
+      {
+        "id": 3,
+        "word": "recommend",
+        "pinyin": "",
+        "meaning": "recomendar"
+      }
+    ],
+    "id": "local-1772293534670-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I have a foreign friend who's studying in China.",
+    "pinyin": "",
+    "translation": "A: Eu tenho um amigo estrangeiro que está estudando na China.",
+    "tokens": [
+      "A",
+      ":",
+      "I",
+      "have",
+      "a",
+      "foreign",
+      "friend",
+      "who's",
+      "studying",
+      "in",
+      "China",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "foreign",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 2,
+        "word": "studying",
+        "pinyin": "",
+        "meaning": "estudando"
+      },
+      {
+        "id": 3,
+        "word": "China",
+        "pinyin": "",
+        "meaning": "China"
+      }
+    ],
+    "id": "local-1772293534670-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Over summer break he's looking for an internship.",
+    "pinyin": "",
+    "translation": "Durante as férias de verão ele está procurando um estágio.",
+    "tokens": [
+      "Over",
+      "summer",
+      "break",
+      "he's",
+      "looking",
+      "for",
+      "an",
+      "internship",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "summer break",
+        "pinyin": "",
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 2,
+        "word": "looking for",
+        "pinyin": "",
+        "meaning": "procurando por"
+      },
+      {
+        "id": 3,
+        "word": "internship",
+        "pinyin": "",
+        "meaning": "estágio"
+      }
+    ],
+    "id": "local-1772293534670-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: If he's a foreign student, it might not work.",
+    "pinyin": "",
+    "translation": "B: Se ele é um estudante estrangeiro, pode não funcionar.",
+    "tokens": [
+      "B",
+      ":",
+      "If",
+      "he's",
+      "a",
+      "foreign",
+      "student",
+      ",",
+      "it",
+      "might",
+      "not",
+      "work",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "foreign student",
+        "pinyin": "",
+        "meaning": "estudante estrangeiro"
+      },
+      {
+        "id": 2,
+        "word": "might not work",
+        "pinyin": "",
+        "meaning": "pode não funcionar"
+      }
+    ],
+    "id": "local-1772293534670-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: His Chinese is good.",
+    "pinyin": "",
+    "translation": "A: O chinês dele é bom.",
+    "tokens": [
+      "A",
+      ":",
+      "His",
+      "Chinese",
+      "is",
+      "good",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chinese",
+        "pinyin": "",
+        "meaning": "chinês (idioma)"
+      },
+      {
+        "id": 2,
+        "word": "good",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772293534670-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That isn't the issue.",
+    "pinyin": "",
+    "translation": "B: Essa não é a questão.",
+    "tokens": [
+      "B",
+      ":",
+      "That",
+      "isn't",
+      "the",
+      "issue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "issue",
+        "pinyin": "",
+        "meaning": "questão, problema"
+      }
+    ],
+    "id": "local-1772293534670-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's a visa issue.",
+    "pinyin": "",
+    "translation": "É uma questão de visto.",
+    "tokens": [
+      "It's",
+      "a",
+      "visa",
+      "issue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 2,
+        "word": "issue",
+        "pinyin": "",
+        "meaning": "questão, problema"
+      }
+    ],
+    "id": "local-1772293534670-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Foreigners possessing student visas can't do internships in China.",
+    "pinyin": "",
+    "translation": "Estrangeiros possuindo vistos de estudante não podem fazer estágios na China.",
+    "tokens": [
+      "Foreigners",
+      "possessing",
+      "student",
+      "visas",
+      "can't",
+      "do",
+      "internships",
+      "in",
+      "China",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Foreigners",
+        "pinyin": "",
+        "meaning": "estrangeiros"
+      },
+      {
+        "id": 2,
+        "word": "possessing",
+        "pinyin": "",
+        "meaning": "possuindo"
+      },
+      {
+        "id": 3,
+        "word": "student visas",
+        "pinyin": "",
+        "meaning": "vistos de estudante"
+      },
+      {
+        "id": 4,
+        "word": "internships",
+        "pinyin": "",
+        "meaning": "estágios"
+      }
+    ],
+    "id": "local-1772293534670-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh.",
+    "pinyin": "",
+    "translation": "A: Oh.",
+    "tokens": [
+      "A",
+      ":",
+      "Oh",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772293534670-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's that strict?",
+    "pinyin": "",
+    "translation": "É tão rigoroso assim?",
+    "tokens": [
+      "It's",
+      "that",
+      "strict",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "strict",
+        "pinyin": "",
+        "meaning": "rigoroso, estrito"
+      }
+    ],
+    "id": "local-1772293534670-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes.",
+    "pinyin": "",
+    "translation": "B: Sim.",
+    "tokens": [
+      "B",
+      ":",
+      "Yes",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772293534670-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "For foreigners in China, even if they only want to be an intern, they still need to obtain a work visa.",
+    "pinyin": "",
+    "translation": "Para estrangeiros na China, mesmo que eles queiram apenas ser um estagiário, eles ainda precisam obter um visto de trabalho.",
+    "tokens": [
+      "For",
+      "foreigners",
+      "in",
+      "China",
+      ",",
+      "even",
+      "if",
+      "they",
+      "only",
+      "want",
+      "to",
+      "be",
+      "an",
+      "intern",
+      ",",
+      "they",
+      "still",
+      "need",
+      "to",
+      "obtain",
+      "a",
+      "work",
+      "visa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "foreigners",
+        "pinyin": "",
+        "meaning": "estrangeiros"
+      },
+      {
+        "id": 2,
+        "word": "intern",
+        "pinyin": "",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 3,
+        "word": "obtain",
+        "pinyin": "",
+        "meaning": "obter"
+      },
+      {
+        "id": 4,
+        "word": "work visa",
+        "pinyin": "",
+        "meaning": "visto de trabalho"
+      }
+    ],
+    "id": "local-1772293534670-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Really?",
+    "pinyin": "",
+    "translation": "A: Sério?",
+    "tokens": [
+      "A",
+      ":",
+      "Really",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Really",
+        "pinyin": "",
+        "meaning": "Sério?"
+      }
+    ],
+    "id": "local-1772293534670-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Then I need to tell him.",
+    "pinyin": "",
+    "translation": "Então eu preciso avisá-lo.",
+    "tokens": [
+      "Then",
+      "I",
+      "need",
+      "to",
+      "tell",
+      "him",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "need to tell",
+        "pinyin": "",
+        "meaning": "precisar avisar/contar"
+      }
+    ],
+    "id": "local-1772293534670-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Thank you!",
+    "pinyin": "",
+    "translation": "Obrigado!",
+    "tokens": [
+      "Thank",
+      "you",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772293534670-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: No problem.",
+    "pinyin": "",
+    "translation": "B: De nada.",
+    "tokens": [
+      "B",
+      ":",
+      "No",
+      "problem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No problem",
+        "pinyin": "",
+        "meaning": "De nada, sem problema"
+      }
+    ],
+    "id": "local-1772293534670-19",
+    "language": "Inglês"
+  }
+]

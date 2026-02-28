@@ -1,0 +1,561 @@
+[
+  {
+    "chinese": "A: Zoey, ich habe gehört, dass eure Familie einen großen Fernseher gekauft hat. Ich würde ihn mir wirklich gerne mal ansehen.",
+    "pinyin": "",
+    "translation": "A: Zoey, ouvi dizer que sua família comprou uma televisão grande. Eu gostaria muito de vê-la.",
+    "tokens": [
+      "A:",
+      "Zoey,",
+      "ich",
+      "habe",
+      "gehört,",
+      "dass",
+      "eure",
+      "Familie",
+      "einen",
+      "großen",
+      "Fernseher",
+      "gekauft",
+      "hat.",
+      "Ich",
+      "würde",
+      "ihn",
+      "mir",
+      "wirklich",
+      "gerne",
+      "mal",
+      "ansehen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gehört",
+        "pinyin": "",
+        "meaning": "ouvi (particípio passado de 'hören' - ouvir)"
+      },
+      {
+        "id": 2,
+        "word": "eure",
+        "pinyin": "",
+        "meaning": "sua/de vocês (plural informal)"
+      },
+      {
+        "id": 3,
+        "word": "Familie",
+        "pinyin": "",
+        "meaning": "família"
+      },
+      {
+        "id": 4,
+        "word": "großen",
+        "pinyin": "",
+        "meaning": "grande (adjetivo declinado)"
+      },
+      {
+        "id": 5,
+        "word": "Fernseher",
+        "pinyin": "",
+        "meaning": "televisão"
+      },
+      {
+        "id": 6,
+        "word": "gekauft",
+        "pinyin": "",
+        "meaning": "comprado (particípio passado de 'kaufen' - comprar)"
+      },
+      {
+        "id": 7,
+        "word": "würde",
+        "pinyin": "",
+        "meaning": "gostaria (verbo auxiliar para o Konjunktiv II)"
+      },
+      {
+        "id": 8,
+        "word": "gerne",
+        "pinyin": "",
+        "meaning": "com prazer, de bom grado"
+      },
+      {
+        "id": 9,
+        "word": "ansehen",
+        "pinyin": "",
+        "meaning": "olhar, ver, assistir"
+      }
+    ],
+    "id": "local-1772292926489-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gern geschehen. Komm rein!",
+    "pinyin": "",
+    "translation": "B: Com prazer. Entre!",
+    "tokens": [
+      "B:",
+      "Gern",
+      "geschehen.",
+      "Komm",
+      "rein!"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "Gern geschehen",
+        "pinyin": "",
+        "meaning": "De nada / Com prazer"
+      },
+      {
+        "id": 11,
+        "word": "Komm rein",
+        "pinyin": "",
+        "meaning": "Entre! (imperativo informal)"
+      }
+    ],
+    "id": "local-1772292926489-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: He, der Fernseher ist ja wirklich beeindruckend! Hey, was ist das für ein kleiner schwarzer Würfel?",
+    "pinyin": "",
+    "translation": "A: Ei, a televisão é realmente impressionante! Ei, o que é aquele pequeno cubo preto?",
+    "tokens": [
+      "A:",
+      "He,",
+      "der",
+      "Fernseher",
+      "ist",
+      "ja",
+      "wirklich",
+      "beeindruckend!",
+      "Hey,",
+      "was",
+      "ist",
+      "das",
+      "für",
+      "ein",
+      "kleiner",
+      "schwarzer",
+      "Würfel?"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "Fernseher",
+        "pinyin": "",
+        "meaning": "televisão"
+      },
+      {
+        "id": 12,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 13,
+        "word": "beeindruckend",
+        "pinyin": "",
+        "meaning": "impressionante"
+      },
+      {
+        "id": 14,
+        "word": "kleiner",
+        "pinyin": "",
+        "meaning": "pequeno (adjetivo declinado)"
+      },
+      {
+        "id": 15,
+        "word": "schwarzer",
+        "pinyin": "",
+        "meaning": "preto (adjetivo declinado)"
+      },
+      {
+        "id": 16,
+        "word": "Würfel",
+        "pinyin": "",
+        "meaning": "cubo"
+      }
+    ],
+    "id": "local-1772292926489-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ach, das ist ein MiBox, eine Art Internet-TV-Box.",
+    "pinyin": "",
+    "translation": "B: Ah, é uma MiBox, um tipo de caixa de TV pela internet.",
+    "tokens": [
+      "B:",
+      "Ach,",
+      "das",
+      "ist",
+      "ein",
+      "MiBox,",
+      "eine",
+      "Art",
+      "Internet-TV-Box."
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "MiBox",
+        "pinyin": "",
+        "meaning": "MiBox (nome do produto)"
+      },
+      {
+        "id": 18,
+        "word": "Art",
+        "pinyin": "",
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 19,
+        "word": "Internet-TV-Box",
+        "pinyin": "",
+        "meaning": "caixa de TV pela internet"
+      }
+    ],
+    "id": "local-1772292926489-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was macht die?",
+    "pinyin": "",
+    "translation": "A: O que ela faz?",
+    "tokens": [
+      "A:",
+      "Was",
+      "macht",
+      "die?"
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "macht",
+        "pinyin": "",
+        "meaning": "faz (verbo 'machen' - fazer)"
+      }
+    ],
+    "id": "local-1772292926489-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Schau mal. Diese MiBox ist mit dem Internet verbunden. Damit kann man Online-TV schauen und Spiele spielen. Man kann auch lokale Videos abspielen und bereits ausgestrahlte Sendungen erneut ansehen.",
+    "pinyin": "",
+    "translation": "B: Veja bem. Esta MiBox está conectada à internet. Com ela, pode-se assistir TV online e jogar. Pode-se também reproduzir vídeos locais e assistir novamente a programas já transmitidos.",
+    "tokens": [
+      "B:",
+      "Schau",
+      "mal.",
+      "Diese",
+      "MiBox",
+      "ist",
+      "mit",
+      "dem",
+      "Internet",
+      "verbunden.",
+      "Damit",
+      "kann",
+      "man",
+      "Online-TV",
+      "schauen",
+      "und",
+      "Spiele",
+      "spielen.",
+      "Man",
+      "kann",
+      "auch",
+      "lokale",
+      "Videos",
+      "abspielen",
+      "und",
+      "bereits",
+      "ausgestrahlte",
+      "Sendungen",
+      "erneut",
+      "ansehen."
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "Schau mal",
+        "pinyin": "",
+        "meaning": "Veja bem, Dê uma olhada (imperativo informal)"
+      },
+      {
+        "id": 22,
+        "word": "verbunden",
+        "pinyin": "",
+        "meaning": "conectado"
+      },
+      {
+        "id": 23,
+        "word": "Online-TV",
+        "pinyin": "",
+        "meaning": "TV online"
+      },
+      {
+        "id": 24,
+        "word": "schauen",
+        "pinyin": "",
+        "meaning": "assistir, ver"
+      },
+      {
+        "id": 25,
+        "word": "Spiele",
+        "pinyin": "",
+        "meaning": "jogos"
+      },
+      {
+        "id": 26,
+        "word": "spielen",
+        "pinyin": "",
+        "meaning": "jogar"
+      },
+      {
+        "id": 27,
+        "word": "lokale",
+        "pinyin": "",
+        "meaning": "locais (adjetivo declinado)"
+      },
+      {
+        "id": 28,
+        "word": "Videos",
+        "pinyin": "",
+        "meaning": "vídeos"
+      },
+      {
+        "id": 29,
+        "word": "abspielen",
+        "pinyin": "",
+        "meaning": "reproduzir"
+      },
+      {
+        "id": 30,
+        "word": "bereits",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 31,
+        "word": "ausgestrahlte",
+        "pinyin": "",
+        "meaning": "transmitidos (particípio passado de 'ausstrahlen' - transmitir)"
+      },
+      {
+        "id": 32,
+        "word": "Sendungen",
+        "pinyin": "",
+        "meaning": "programas, transmissões"
+      },
+      {
+        "id": 33,
+        "word": "erneut",
+        "pinyin": "",
+        "meaning": "novamente"
+      },
+      {
+        "id": 9,
+        "word": "ansehen",
+        "pinyin": "",
+        "meaning": "olhar, ver, assistir"
+      }
+    ],
+    "id": "local-1772292926489-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wow, die ist ja ziemlich leistungsfähig!",
+    "pinyin": "",
+    "translation": "A: Uau, ela é bem poderosa!",
+    "tokens": [
+      "A:",
+      "Wow,",
+      "die",
+      "ist",
+      "ja",
+      "ziemlich",
+      "leistungsfähig!"
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "ziemlich",
+        "pinyin": "",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 35,
+        "word": "leistungsfähig",
+        "pinyin": "",
+        "meaning": "poderosa, eficiente"
+      }
+    ],
+    "id": "local-1772292926489-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Außer der MiBox gibt es auch Apple TV, ComoTV und andere. Als wir eine TV-Box ausgesucht haben, konnten wir uns kaum entscheiden.",
+    "pinyin": "",
+    "translation": "B: Sim. Além da MiBox, existem também Apple TV, ComoTV e outras. Quando escolhemos uma TV-Box, mal conseguíamos nos decidir.",
+    "tokens": [
+      "B:",
+      "Ja.",
+      "Außer",
+      "der",
+      "MiBox",
+      "gibt",
+      "es",
+      "auch",
+      "Apple",
+      "TV,",
+      "ComoTV",
+      "und",
+      "andere.",
+      "Als",
+      "wir",
+      "eine",
+      "TV-Box",
+      "ausgesucht",
+      "haben,",
+      "konnten",
+      "wir",
+      "uns",
+      "kaum",
+      "entscheiden."
+    ],
+    "keywords": [
+      {
+        "id": 36,
+        "word": "Außer",
+        "pinyin": "",
+        "meaning": "Além de, exceto"
+      },
+      {
+        "id": 37,
+        "word": "gibt es",
+        "pinyin": "",
+        "meaning": "existe, há"
+      },
+      {
+        "id": 38,
+        "word": "andere",
+        "pinyin": "",
+        "meaning": "outras (adjetivo declinado)"
+      },
+      {
+        "id": 39,
+        "word": "ausgesucht",
+        "pinyin": "",
+        "meaning": "escolhido (particípio passado de 'aussuchen' - escolher)"
+      },
+      {
+        "id": 40,
+        "word": "konnten",
+        "pinyin": "",
+        "meaning": "conseguíamos (passado de 'können' - poder)"
+      },
+      {
+        "id": 41,
+        "word": "kaum",
+        "pinyin": "",
+        "meaning": "mal, quase não"
+      },
+      {
+        "id": 42,
+        "word": "entscheiden",
+        "pinyin": "",
+        "meaning": "decidir"
+      }
+    ],
+    "id": "local-1772292926489-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich bin wohl wirklich nicht auf dem Laufenden. Bei mir zuhause gibt's immer noch Kabelfernsehen. Ich werde mir später auch so eine Box zulegen.",
+    "pinyin": "",
+    "translation": "A: Eu realmente não estou por dentro, parece. Na minha casa ainda tem TV a cabo. Eu também vou comprar uma caixa dessas mais tarde.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "bin",
+      "wohl",
+      "wirklich",
+      "nicht",
+      "auf",
+      "dem",
+      "Laufenden.",
+      "Bei",
+      "mir",
+      "zuhause",
+      "gibt's",
+      "immer",
+      "noch",
+      "Kabelfernsehen.",
+      "Ich",
+      "werde",
+      "mir",
+      "später",
+      "auch",
+      "so",
+      "eine",
+      "Box",
+      "zulegen."
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "wohl",
+        "pinyin": "",
+        "meaning": "provavelmente, parece (partícula modal)"
+      },
+      {
+        "id": 12,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 44,
+        "word": "auf dem Laufenden",
+        "pinyin": "",
+        "meaning": "por dentro, atualizado"
+      },
+      {
+        "id": 45,
+        "word": "zuhause",
+        "pinyin": "",
+        "meaning": "em casa"
+      },
+      {
+        "id": 46,
+        "word": "gibt's",
+        "pinyin": "",
+        "meaning": "há, existe (contração de 'gibt es')"
+      },
+      {
+        "id": 47,
+        "word": "immer noch",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 48,
+        "word": "Kabelfernsehen",
+        "pinyin": "",
+        "meaning": "TV a cabo"
+      },
+      {
+        "id": 49,
+        "word": "später",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 50,
+        "word": "zulegen",
+        "pinyin": "",
+        "meaning": "adquirir, comprar"
+      }
+    ],
+    "id": "local-1772292926489-8",
+    "language": "Alemão"
+  }
+]

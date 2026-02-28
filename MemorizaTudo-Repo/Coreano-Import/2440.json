@@ -1,0 +1,561 @@
+[
+  {
+    "chinese": "A: 다음으로, 왕웨이 씨를 모셔서 여러분께 몇 말씀 해주시도록 하겠습니다. 뜨거운 박수 부탁드립니다!",
+    "pinyin": "",
+    "translation": "A: Em seguida, convidamos a Sra. Wang Wei para nos dizer algumas palavras. Por favor, uma salva de palmas calorosa!",
+    "tokens": [
+      "다음으로",
+      ",",
+      "왕웨이",
+      "씨를",
+      "모셔서",
+      "여러분께",
+      "몇",
+      "말씀",
+      "해주시도록",
+      "하겠습니다",
+      ".",
+      "뜨거운",
+      "박수",
+      "부탁드립니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음으로",
+        "pinyin": "",
+        "meaning": "Em seguida, a seguir"
+      },
+      {
+        "id": 2,
+        "word": "왕웨이 씨",
+        "pinyin": "",
+        "meaning": "Senhor(a) Wang Wei"
+      },
+      {
+        "id": 3,
+        "word": "모시다",
+        "pinyin": "",
+        "meaning": "Convidar, atender (honorífico)"
+      },
+      {
+        "id": 4,
+        "word": "여러분",
+        "pinyin": "",
+        "meaning": "Todos vocês"
+      },
+      {
+        "id": 5,
+        "word": "몇 말씀",
+        "pinyin": "",
+        "meaning": "Algumas palavras"
+      },
+      {
+        "id": 6,
+        "word": "해주시다",
+        "pinyin": "",
+        "meaning": "Fazer por alguém (honorífico)"
+      },
+      {
+        "id": 7,
+        "word": "뜨거운",
+        "pinyin": "",
+        "meaning": "Quente, caloroso (aqui: entusiástico)"
+      },
+      {
+        "id": 8,
+        "word": "박수",
+        "pinyin": "",
+        "meaning": "Aplauso"
+      },
+      {
+        "id": 9,
+        "word": "부탁드리다",
+        "pinyin": "",
+        "meaning": "Pedir, solicitar (honorífico)"
+      }
+    ],
+    "id": "local-1772297889803-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 감사합니다! 먼저, 저를 위해 이렇게 파티를 열어주신 모든 분들께 진심으로 감사드립니다.",
+    "pinyin": "",
+    "translation": "B: Muito obrigado! Primeiro, agradeço sinceramente a todos que organizaram esta festa para mim.",
+    "tokens": [
+      "감사합니다",
+      "!",
+      "먼저",
+      ",",
+      "저를",
+      "위해",
+      "이렇게",
+      "파티를",
+      "열어주신",
+      "모든",
+      "분들께",
+      "진심으로",
+      "감사드립니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "감사합니다",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "먼저",
+        "pinyin": "",
+        "meaning": "Primeiro, antes de tudo"
+      },
+      {
+        "id": 3,
+        "word": "저를 위해",
+        "pinyin": "",
+        "meaning": "Para mim"
+      },
+      {
+        "id": 4,
+        "word": "이렇게",
+        "pinyin": "",
+        "meaning": "Assim, desta forma"
+      },
+      {
+        "id": 5,
+        "word": "파티",
+        "pinyin": "",
+        "meaning": "Festa"
+      },
+      {
+        "id": 6,
+        "word": "열어주시다",
+        "pinyin": "",
+        "meaning": "Abrir, realizar (uma festa) para alguém (honorífico)"
+      },
+      {
+        "id": 7,
+        "word": "모든",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 8,
+        "word": "분들께",
+        "pinyin": "",
+        "meaning": "Às pessoas (honorífico plural)"
+      },
+      {
+        "id": 9,
+        "word": "진심으로",
+        "pinyin": "",
+        "meaning": "Sinceramente, de coração"
+      }
+    ],
+    "id": "local-1772297889803-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 저는 이 회사에서 10년 동안 일했습니다. 이 10년 동안 정말 많은 것을 배웠습니다. 배우고 성장할 수 있는 발판을 마련해주신 회사에 정말 감사드립니다!",
+    "pinyin": "",
+    "translation": "B: Trabalhei nesta empresa por 10 anos. Durante estes 10 anos, aprendi muitas coisas. Sou muito grato à empresa por ter me fornecido uma plataforma para aprender e crescer!",
+    "tokens": [
+      "저는",
+      "이",
+      "회사에서",
+      "10년",
+      "동안",
+      "일했습니다",
+      ".",
+      "이",
+      "10년",
+      "동안",
+      "정말",
+      "많은",
+      "것을",
+      "배웠습니다",
+      ".",
+      "배우고",
+      "성장할",
+      "수",
+      "있는",
+      "발판을",
+      "마련해주신",
+      "회사에",
+      "정말",
+      "감사드립니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "Empresa"
+      },
+      {
+        "id": 2,
+        "word": "10년",
+        "pinyin": "",
+        "meaning": "10 anos"
+      },
+      {
+        "id": 3,
+        "word": "동안",
+        "pinyin": "",
+        "meaning": "Durante, por (período de tempo)"
+      },
+      {
+        "id": 4,
+        "word": "일하다",
+        "pinyin": "",
+        "meaning": "Trabalhar"
+      },
+      {
+        "id": 5,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "Realmente, verdadeiramente"
+      },
+      {
+        "id": 6,
+        "word": "배우다",
+        "pinyin": "",
+        "meaning": "Aprender"
+      },
+      {
+        "id": 7,
+        "word": "성장하다",
+        "pinyin": "",
+        "meaning": "Crescer, desenvolver-se"
+      },
+      {
+        "id": 8,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "Ser capaz de, poder"
+      },
+      {
+        "id": 9,
+        "word": "발판",
+        "pinyin": "",
+        "meaning": "Plataforma, ponto de apoio, degrau"
+      },
+      {
+        "id": 10,
+        "word": "마련해주시다",
+        "pinyin": "",
+        "meaning": "Providenciar, preparar para alguém (honorífico)"
+      }
+    ],
+    "id": "local-1772297889803-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 저를 가르쳐주신 임원분들께 감사드립니다!",
+    "pinyin": "",
+    "translation": "B: Agradeço aos executivos que me ensinaram!",
+    "tokens": [
+      "저를",
+      "가르쳐주신",
+      "임원분들께",
+      "감사드립니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저를",
+        "pinyin": "",
+        "meaning": "A mim (objeto)"
+      },
+      {
+        "id": 2,
+        "word": "가르쳐주시다",
+        "pinyin": "",
+        "meaning": "Ensinar a alguém (honorífico)"
+      },
+      {
+        "id": 3,
+        "word": "임원",
+        "pinyin": "",
+        "meaning": "Executivo, diretor"
+      },
+      {
+        "id": 4,
+        "word": "분들께",
+        "pinyin": "",
+        "meaning": "Às pessoas (honorífico plural)"
+      },
+      {
+        "id": 5,
+        "word": "감사드립니다",
+        "pinyin": "",
+        "meaning": "Agradeço (honorífico)"
+      }
+    ],
+    "id": "local-1772297889803-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 저에게 지지와 격려를 아끼지 않은 동료 여러분께 감사드립니다!",
+    "pinyin": "",
+    "translation": "B: Agradeço a todos os colegas que não pouparam apoio e encorajamento!",
+    "tokens": [
+      "저에게",
+      "지지와",
+      "격려를",
+      "아끼지",
+      "않은",
+      "동료",
+      "여러분께",
+      "감사드립니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저에게",
+        "pinyin": "",
+        "meaning": "Para mim, a mim (dativo)"
+      },
+      {
+        "id": 2,
+        "word": "지지",
+        "pinyin": "",
+        "meaning": "Apoio"
+      },
+      {
+        "id": 3,
+        "word": "격려",
+        "pinyin": "",
+        "meaning": "Encorajamento"
+      },
+      {
+        "id": 4,
+        "word": "아끼다",
+        "pinyin": "",
+        "meaning": "Poupar, economizar, valorizar"
+      },
+      {
+        "id": 5,
+        "word": "않다",
+        "pinyin": "",
+        "meaning": "Não (negar)"
+      },
+      {
+        "id": 6,
+        "word": "동료",
+        "pinyin": "",
+        "meaning": "Colega"
+      },
+      {
+        "id": 7,
+        "word": "여러분께",
+        "pinyin": "",
+        "meaning": "A todos vocês (honorífico plural)"
+      }
+    ],
+    "id": "local-1772297889803-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 여러분과 함께 일할 수 있었던 것은 정말 영광이었습니다. 여러분과 함께한 시간을 매일 기억할 것입니다!",
+    "pinyin": "",
+    "translation": "B: Foi realmente uma honra poder trabalhar com todos vocês. Vou lembrar todos os dias do tempo que passei com vocês!",
+    "tokens": [
+      "여러분과",
+      "함께",
+      "일할",
+      "수",
+      "있었던",
+      "것은",
+      "정말",
+      "영광이었습니다",
+      ".",
+      "여러분과",
+      "함께한",
+      "시간을",
+      "매일",
+      "기억할",
+      "것입니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여러분과",
+        "pinyin": "",
+        "meaning": "Com todos vocês"
+      },
+      {
+        "id": 2,
+        "word": "함께",
+        "pinyin": "",
+        "meaning": "Junto, com"
+      },
+      {
+        "id": 3,
+        "word": "일하다",
+        "pinyin": "",
+        "meaning": "Trabalhar"
+      },
+      {
+        "id": 4,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "Ser capaz de, poder"
+      },
+      {
+        "id": 5,
+        "word": "영광",
+        "pinyin": "",
+        "meaning": "Honra, glória"
+      },
+      {
+        "id": 6,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "Tempo"
+      },
+      {
+        "id": 7,
+        "word": "매일",
+        "pinyin": "",
+        "meaning": "Todos os dias"
+      },
+      {
+        "id": 8,
+        "word": "기억하다",
+        "pinyin": "",
+        "meaning": "Lembrar, recordar"
+      }
+    ],
+    "id": "local-1772297889803-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 마지막으로, 여러분 모두 건강하시고, 하시는 일마다 순조로우며, 가정에 행복이 가득하시기를 진심으로 바랍니다.",
+    "pinyin": "",
+    "translation": "B: Por fim, desejo sinceramente que todos vocês tenham boa saúde, que tudo o que façam corra bem e que seus lares sejam cheios de felicidade.",
+    "tokens": [
+      "마지막으로",
+      ",",
+      "여러분",
+      "모두",
+      "건강하시고",
+      ",",
+      "하시는",
+      "일마다",
+      "순조로우며",
+      ",",
+      "가정에",
+      "행복이",
+      "가득하시기를",
+      "진심으로",
+      "바랍니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "마지막으로",
+        "pinyin": "",
+        "meaning": "Finalmente, por último"
+      },
+      {
+        "id": 2,
+        "word": "모두",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 3,
+        "word": "건강하시다",
+        "pinyin": "",
+        "meaning": "Ser saudável (honorífico)"
+      },
+      {
+        "id": 4,
+        "word": "일마다",
+        "pinyin": "",
+        "meaning": "Em cada trabalho/tarefa"
+      },
+      {
+        "id": 5,
+        "word": "순조롭다",
+        "pinyin": "",
+        "meaning": "Ser suave, ir bem"
+      },
+      {
+        "id": 6,
+        "word": "가정",
+        "pinyin": "",
+        "meaning": "Lar, família"
+      },
+      {
+        "id": 7,
+        "word": "행복",
+        "pinyin": "",
+        "meaning": "Felicidade"
+      },
+      {
+        "id": 8,
+        "word": "가득하다",
+        "pinyin": "",
+        "meaning": "Estar cheio de"
+      },
+      {
+        "id": 9,
+        "word": "진심으로",
+        "pinyin": "",
+        "meaning": "Sinceramente, de coração"
+      },
+      {
+        "id": 10,
+        "word": "바라다",
+        "pinyin": "",
+        "meaning": "Desejar, esperar"
+      }
+    ],
+    "id": "local-1772297889803-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 자! 모두 건배!",
+    "pinyin": "",
+    "translation": "B: Certo! Um brinde a todos!",
+    "tokens": [
+      "자",
+      "!",
+      "모두",
+      "건배",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "자",
+        "pinyin": "",
+        "meaning": "Bem! Então! (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "모두",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 3,
+        "word": "건배",
+        "pinyin": "",
+        "meaning": "Saúde! (brinde)"
+      }
+    ],
+    "id": "local-1772297889803-7",
+    "language": "Coreano"
+  }
+]

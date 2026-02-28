@@ -1,0 +1,667 @@
+[
+  {
+    "chinese": "A: Ciao, stai comprando del vino?",
+    "pinyin": null,
+    "translation": "A: Olá, você está comprando vinho?",
+    "tokens": [
+      "Ciao",
+      ",",
+      "stai",
+      "comprando",
+      "del",
+      "vino",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ciao",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "stai comprando",
+        "pinyin": null,
+        "meaning": "você está comprando"
+      },
+      {
+        "id": 3,
+        "word": "vino",
+        "pinyin": null,
+        "meaning": "vinho"
+      }
+    ],
+    "id": "local-1772300492280-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Un amico straniero festeggia il suo compleanno.",
+    "pinyin": null,
+    "translation": "B: Sim. Um amigo estrangeiro está festejando seu aniversário.",
+    "tokens": [
+      "Sì",
+      ".",
+      "Un",
+      "amico",
+      "straniero",
+      "festeggia",
+      "il",
+      "suo",
+      "compleanno",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "amico straniero",
+        "pinyin": null,
+        "meaning": "amigo estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "festeggia",
+        "pinyin": null,
+        "meaning": "comemora"
+      },
+      {
+        "id": 4,
+        "word": "compleanno",
+        "pinyin": null,
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772300492280-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: A lei piace il vino rosso o il vino bianco?",
+    "pinyin": null,
+    "translation": "A: Ela gosta de vinho tinto ou vinho branco?",
+    "tokens": [
+      "A",
+      "lei",
+      "piace",
+      "il",
+      "vino",
+      "rosso",
+      "o",
+      "il",
+      "vino",
+      "bianco",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "A lei piace",
+        "pinyin": null,
+        "meaning": "Ela gosta"
+      },
+      {
+        "id": 2,
+        "word": "vino rosso",
+        "pinyin": null,
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 3,
+        "word": "vino bianco",
+        "pinyin": null,
+        "meaning": "vinho branco"
+      }
+    ],
+    "id": "local-1772300492280-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Vino rosso.",
+    "pinyin": null,
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "Vino",
+      "rosso",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vino rosso",
+        "pinyin": null,
+        "meaning": "Vinho tinto"
+      }
+    ],
+    "id": "local-1772300492280-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ok. Qui abbiamo vini sia del Nuovo Mondo che del Vecchio Mondo.",
+    "pinyin": null,
+    "translation": "A: Ok. Aqui temos vinhos tanto do Novo Mundo quanto do Velho Mundo.",
+    "tokens": [
+      "Ok",
+      ".",
+      "Qui",
+      "abbiamo",
+      "vini",
+      "sia",
+      "del",
+      "Nuovo",
+      "Mondo",
+      "che",
+      "del",
+      "Vecchio",
+      "Mondo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qui",
+        "pinyin": null,
+        "meaning": "Aqui"
+      },
+      {
+        "id": 2,
+        "word": "abbiamo",
+        "pinyin": null,
+        "meaning": "temos"
+      },
+      {
+        "id": 3,
+        "word": "vini",
+        "pinyin": null,
+        "meaning": "vinhos"
+      },
+      {
+        "id": 4,
+        "word": "Nuovo Mondo",
+        "pinyin": null,
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 5,
+        "word": "Vecchio Mondo",
+        "pinyin": null,
+        "meaning": "Velho Mundo"
+      }
+    ],
+    "id": "local-1772300492280-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Normalmente non bevo vino, quindi non sono molto esperto.",
+    "pinyin": null,
+    "translation": "B: Normalmente eu não bebo vinho, então não sou muito experiente.",
+    "tokens": [
+      "Normalmente",
+      "non",
+      "bevo",
+      "vino",
+      ",",
+      "quindi",
+      "non",
+      "sono",
+      "molto",
+      "esperto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Normalmente",
+        "pinyin": null,
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 2,
+        "word": "non bevo",
+        "pinyin": null,
+        "meaning": "não bebo"
+      },
+      {
+        "id": 3,
+        "word": "vino",
+        "pinyin": null,
+        "meaning": "vinho"
+      },
+      {
+        "id": 4,
+        "word": "quindi",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 5,
+        "word": "esperto",
+        "pinyin": null,
+        "meaning": "experiente"
+      }
+    ],
+    "id": "local-1772300492280-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Nessun problema. \"Vecchio Mondo\" si riferisce principalmente a paesi come Francia, Italia e Spagna, che hanno centinaia di anni di storia nella vinificazione tradizionale. Invece, \"Nuovo Mondo\" si riferisce a paesi come Stati Uniti, Canada, Argentina, Australia, che sono nuovi alla vinificazione.",
+    "pinyin": null,
+    "translation": "A: Sem problemas. \"Velho Mundo\" refere-se principalmente a países como França, Itália e Espanha, que têm centenas de anos de história na vinificação tradicional. Em vez disso, \"Novo Mundo\" refere-se a países como Estados Unidos, Canadá, Argentina, Austrália, que são novos na vinificação.",
+    "tokens": [
+      "Nessun",
+      "problema",
+      ".",
+      "\"",
+      "Vecchio",
+      "Mondo",
+      "\"",
+      "si",
+      "riferisce",
+      "principalmente",
+      "a",
+      "paesi",
+      "come",
+      "Francia",
+      ",",
+      "Italia",
+      "e",
+      "Spagna",
+      ",",
+      "che",
+      "hanno",
+      "centinaia",
+      "di",
+      "anni",
+      "di",
+      "storia",
+      "nella",
+      "vinificazione",
+      "tradizionale",
+      ".",
+      "Invece",
+      ",",
+      "\"",
+      "Nuovo",
+      "Mondo",
+      "\"",
+      "si",
+      "riferisce",
+      "a",
+      "paesi",
+      "come",
+      "Stati",
+      "Uniti",
+      ",",
+      "Canada",
+      ",",
+      "Argentina",
+      ",",
+      "Australia",
+      ",",
+      "che",
+      "sono",
+      "nuovi",
+      "alla",
+      "vinificazione",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nessun problema",
+        "pinyin": null,
+        "meaning": "Sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "Vecchio Mondo",
+        "pinyin": null,
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "si riferisce",
+        "pinyin": null,
+        "meaning": "refere-se"
+      },
+      {
+        "id": 4,
+        "word": "paesi",
+        "pinyin": null,
+        "meaning": "países"
+      },
+      {
+        "id": 5,
+        "word": "centinaia di anni",
+        "pinyin": null,
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 6,
+        "word": "storia",
+        "pinyin": null,
+        "meaning": "história"
+      },
+      {
+        "id": 7,
+        "word": "vinificazione tradizionale",
+        "pinyin": null,
+        "meaning": "vinificação tradicional"
+      },
+      {
+        "id": 8,
+        "word": "Invece",
+        "pinyin": null,
+        "meaning": "Em vez disso"
+      },
+      {
+        "id": 9,
+        "word": "Nuovo Mondo",
+        "pinyin": null,
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 10,
+        "word": "nuovi alla vinificazione",
+        "pinyin": null,
+        "meaning": "novos na vinificação"
+      }
+    ],
+    "id": "local-1772300492280-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora c'è qualche differenza nel sapore?",
+    "pinyin": null,
+    "translation": "B: Então, há alguma diferença no sabor?",
+    "tokens": [
+      "Allora",
+      "c'è",
+      "qualche",
+      "differenza",
+      "nel",
+      "sapore",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "c'è",
+        "pinyin": null,
+        "meaning": "há"
+      },
+      {
+        "id": 3,
+        "word": "differenza",
+        "pinyin": null,
+        "meaning": "diferença"
+      },
+      {
+        "id": 4,
+        "word": "sapore",
+        "pinyin": null,
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772300492280-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì. Il vino del Vecchio Mondo è piuttosto acido, perché il contenuto di tannini è più alto. Il vino del Nuovo Mondo è relativamente dolce, poiché il tannino è minore.",
+    "pinyin": null,
+    "translation": "A: Sim. O vinho do Velho Mundo é bastante ácido, porque o teor de taninos é mais alto. O vinho do Novo Mundo é relativamente doce, já que o tanino é menor.",
+    "tokens": [
+      "Sì",
+      ".",
+      "Il",
+      "vino",
+      "del",
+      "Vecchio",
+      "Mondo",
+      "è",
+      "piuttosto",
+      "acido",
+      ",",
+      "perché",
+      "il",
+      "contenuto",
+      "di",
+      "tannini",
+      "è",
+      "più",
+      "alto",
+      ".",
+      "Il",
+      "vino",
+      "del",
+      "Nuovo",
+      "Mondo",
+      "è",
+      "relativamente",
+      "dolce",
+      ",",
+      "poiché",
+      "il",
+      "tannino",
+      "è",
+      "minore",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "vino del Vecchio Mondo",
+        "pinyin": null,
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "piuttosto acido",
+        "pinyin": null,
+        "meaning": "bastante ácido"
+      },
+      {
+        "id": 4,
+        "word": "contenuto di tannini",
+        "pinyin": null,
+        "meaning": "teor de taninos"
+      },
+      {
+        "id": 5,
+        "word": "più alto",
+        "pinyin": null,
+        "meaning": "mais alto"
+      },
+      {
+        "id": 6,
+        "word": "vino del Nuovo Mondo",
+        "pinyin": null,
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 7,
+        "word": "relativamente dolce",
+        "pinyin": null,
+        "meaning": "relativamente doce"
+      },
+      {
+        "id": 8,
+        "word": "minore",
+        "pinyin": null,
+        "meaning": "menor"
+      }
+    ],
+    "id": "local-1772300492280-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oh, ho sentito dire che alle ragazze piacciono di più i vini fruttati.",
+    "pinyin": null,
+    "translation": "B: Oh, ouvi dizer que as garotas gostam mais de vinhos frutados.",
+    "tokens": [
+      "Oh",
+      ",",
+      "ho",
+      "sentito",
+      "dire",
+      "che",
+      "alle",
+      "ragazze",
+      "piacciono",
+      "di",
+      "più",
+      "i",
+      "vini",
+      "fruttati",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ho sentito dire",
+        "pinyin": null,
+        "meaning": "ouvi dizer"
+      },
+      {
+        "id": 2,
+        "word": "ragazze",
+        "pinyin": null,
+        "meaning": "garotas"
+      },
+      {
+        "id": 3,
+        "word": "piacciono di più",
+        "pinyin": null,
+        "meaning": "gostam mais"
+      },
+      {
+        "id": 4,
+        "word": "vini fruttati",
+        "pinyin": null,
+        "meaning": "vinhos frutados"
+      }
+    ],
+    "id": "local-1772300492280-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Esatto. Questo tipo di vino che abbiamo è particolarmente buono per le ragazze. Vende molto bene.",
+    "pinyin": null,
+    "translation": "A: Exato. Este tipo de vinho que temos é particularmente bom para as garotas. Vende muito bem.",
+    "tokens": [
+      "Esatto",
+      ".",
+      "Questo",
+      "tipo",
+      "di",
+      "vino",
+      "che",
+      "abbiamo",
+      "è",
+      "particolarmente",
+      "buono",
+      "per",
+      "le",
+      "ragazze",
+      ".",
+      "Vende",
+      "molto",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esatto",
+        "pinyin": null,
+        "meaning": "Exato"
+      },
+      {
+        "id": 2,
+        "word": "Questo tipo di vino",
+        "pinyin": null,
+        "meaning": "Este tipo de vinho"
+      },
+      {
+        "id": 3,
+        "word": "particolarmente buono",
+        "pinyin": null,
+        "meaning": "particularmente bom"
+      },
+      {
+        "id": 4,
+        "word": "ragazze",
+        "pinyin": null,
+        "meaning": "garotas"
+      },
+      {
+        "id": 5,
+        "word": "Vende molto bene",
+        "pinyin": null,
+        "meaning": "Vende muito bem"
+      }
+    ],
+    "id": "local-1772300492280-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ok, allora è questa bottiglia. Grazie!",
+    "pinyin": null,
+    "translation": "B: Ok, então é esta garrafa. Obrigado!",
+    "tokens": [
+      "Ok",
+      ",",
+      "allora",
+      "è",
+      "questa",
+      "bottiglia",
+      ".",
+      "Grazie",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "allora",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "questa bottiglia",
+        "pinyin": null,
+        "meaning": "esta garrafa"
+      },
+      {
+        "id": 4,
+        "word": "Grazie",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772300492280-11",
+    "language": "Italiano"
+  }
+]

@@ -1,0 +1,640 @@
+[
+  {
+    "chinese": "내일 아기를 동네 병원에 데려가서 예방접종을 해야 해. 휴가 신청했어?",
+    "pinyin": null,
+    "translation": "A: Tenho que levar o bebê ao hospital do bairro amanhã para tomar as vacinas. Você pediu folga?",
+    "tokens": [
+      "내일",
+      "아기를",
+      "동네",
+      "병원에",
+      "데려가서",
+      "예방접종을",
+      "해야",
+      "해",
+      ".",
+      "휴가",
+      "신청했어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "내일",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "아기",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 3,
+        "word": "동네",
+        "pinyin": null,
+        "meaning": "bairro"
+      },
+      {
+        "id": 4,
+        "word": "병원",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 5,
+        "word": "데려가다",
+        "pinyin": null,
+        "meaning": "levar (alguém)"
+      },
+      {
+        "id": 6,
+        "word": "예방접종",
+        "pinyin": null,
+        "meaning": "vacinação, imunização"
+      },
+      {
+        "id": 7,
+        "word": "해야 하다",
+        "pinyin": null,
+        "meaning": "ter que fazer, precisar fazer"
+      },
+      {
+        "id": 8,
+        "word": "휴가",
+        "pinyin": null,
+        "meaning": "folga, férias"
+      },
+      {
+        "id": 9,
+        "word": "신청하다",
+        "pinyin": null,
+        "meaning": "pedir, solicitar"
+      }
+    ],
+    "id": "local-1772301402543-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "응, 하루 쉬기로 했어. 여보, 내일 아기가 어떤 주사를 맞아?",
+    "pinyin": null,
+    "translation": "B: Sim, decidimos tirar um dia de folga. Querido(a), que injeção o bebê vai tomar amanhã?",
+    "tokens": [
+      "응",
+      ",",
+      "하루",
+      "쉬기로",
+      "했어",
+      ".",
+      "여보",
+      ",",
+      "내일",
+      "아기가",
+      "어떤",
+      "주사를",
+      "맞아",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": null,
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "하루",
+        "pinyin": null,
+        "meaning": "um dia"
+      },
+      {
+        "id": 3,
+        "word": "쉬다",
+        "pinyin": null,
+        "meaning": "descansar, tirar folga"
+      },
+      {
+        "id": 4,
+        "word": "여보",
+        "pinyin": null,
+        "meaning": "querido(a), meu bem (entre cônjuges)"
+      },
+      {
+        "id": 5,
+        "word": "어떤",
+        "pinyin": null,
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 6,
+        "word": "주사",
+        "pinyin": null,
+        "meaning": "injeção"
+      },
+      {
+        "id": 7,
+        "word": "맞다",
+        "pinyin": null,
+        "meaning": "tomar (injeção/vacina)"
+      }
+    ],
+    "id": "local-1772301402543-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "내가 한번 볼게. B형 간염 백신이야.",
+    "pinyin": null,
+    "translation": "A: Deixa eu dar uma olhada. É a vacina da hepatite B.",
+    "tokens": [
+      "내가",
+      "한번",
+      "볼게",
+      ".",
+      "B형",
+      "간염",
+      "백신이야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "한번",
+        "pinyin": null,
+        "meaning": "uma vez, dar uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 3,
+        "word": "B형 간염",
+        "pinyin": null,
+        "meaning": "hepatite B"
+      },
+      {
+        "id": 4,
+        "word": "백신",
+        "pinyin": null,
+        "meaning": "vacina"
+      }
+    ],
+    "id": "local-1772301402543-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "아. 무료지, 그렇지?",
+    "pinyin": null,
+    "translation": "B: Ah. É de graça, certo?",
+    "tokens": [
+      "아",
+      ".",
+      "무료지",
+      ",",
+      "그렇지",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": null,
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "무료",
+        "pinyin": null,
+        "meaning": "grátis, gratuito"
+      },
+      {
+        "id": 3,
+        "word": "그렇지",
+        "pinyin": null,
+        "meaning": "certo? não é?"
+      }
+    ],
+    "id": "local-1772301402543-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "중국산이랑 수입산 백신이 있어. 중국산은 무료고, 수입산은 유료야.",
+    "pinyin": null,
+    "translation": "A: Tem vacina chinesa e importada. A chinesa é gratuita, e a importada é paga.",
+    "tokens": [
+      "중국산이랑",
+      "수입산",
+      "백신이",
+      "있어",
+      ".",
+      "중국산은",
+      "무료고",
+      ",",
+      "수입산은",
+      "유료야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국산",
+        "pinyin": null,
+        "meaning": "produzido na China, chinês (produto)"
+      },
+      {
+        "id": 2,
+        "word": "수입산",
+        "pinyin": null,
+        "meaning": "produzido importado, importado (produto)"
+      },
+      {
+        "id": 3,
+        "word": "백신",
+        "pinyin": null,
+        "meaning": "vacina"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "ter, existir"
+      },
+      {
+        "id": 5,
+        "word": "무료",
+        "pinyin": null,
+        "meaning": "grátis, gratuito"
+      },
+      {
+        "id": 6,
+        "word": "유료",
+        "pinyin": null,
+        "meaning": "pago, tarifado"
+      }
+    ],
+    "id": "local-1772301402543-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "그럼 우리 중국산을 맞을 거야 아니면 수입산을 맞을 거야?",
+    "pinyin": null,
+    "translation": "B: Então, vamos tomar a chinesa ou a importada?",
+    "tokens": [
+      "그럼",
+      "우리",
+      "중국산을",
+      "맞을",
+      "거야",
+      "아니면",
+      "수입산을",
+      "맞을",
+      "거야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "우리",
+        "pinyin": null,
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "중국산",
+        "pinyin": null,
+        "meaning": "produzido na China, chinês (produto)"
+      },
+      {
+        "id": 4,
+        "word": "맞다",
+        "pinyin": null,
+        "meaning": "tomar (injeção/vacina)"
+      },
+      {
+        "id": 5,
+        "word": "아니면",
+        "pinyin": null,
+        "meaning": "ou (em perguntas)"
+      },
+      {
+        "id": 6,
+        "word": "수입산",
+        "pinyin": null,
+        "meaning": "produzido importado, importado (produto)"
+      }
+    ],
+    "id": "local-1772301402543-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "수입산.",
+    "pinyin": null,
+    "translation": "A: A importada.",
+    "tokens": [
+      "수입산",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "수입산",
+        "pinyin": null,
+        "meaning": "produzido importado, importado (produto)"
+      }
+    ],
+    "id": "local-1772301402543-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "하지만 우리 아기 저항력이 아주 좋아서 잘 안 아프잖아. 꼭 수입산을 맞을 필요는 없는데.",
+    "pinyin": null,
+    "translation": "B: Mas a resistência do nosso bebê é muito boa, então ele não fica doente com frequência, certo? Não há necessidade de tomar a importada.",
+    "tokens": [
+      "하지만",
+      "우리",
+      "아기",
+      "저항력이",
+      "아주",
+      "좋아서",
+      "잘",
+      "안",
+      "아프잖아",
+      ".",
+      "꼭",
+      "수입산을",
+      "맞을",
+      "필요는",
+      "없는데",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "하지만",
+        "pinyin": null,
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 2,
+        "word": "아기",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 3,
+        "word": "저항력",
+        "pinyin": null,
+        "meaning": "resistência, imunidade"
+      },
+      {
+        "id": 4,
+        "word": "아주",
+        "pinyin": null,
+        "meaning": "muito, bastante"
+      },
+      {
+        "id": 5,
+        "word": "좋다",
+        "pinyin": null,
+        "meaning": "bom"
+      },
+      {
+        "id": 6,
+        "word": "잘",
+        "pinyin": null,
+        "meaning": "bem, frequentemente"
+      },
+      {
+        "id": 7,
+        "word": "아프다",
+        "pinyin": null,
+        "meaning": "ficar doente, sentir dor"
+      },
+      {
+        "id": 8,
+        "word": "-잖아",
+        "pinyin": null,
+        "meaning": "sufixo que indica algo óbvio, 'você sabe', 'certo?'"
+      },
+      {
+        "id": 9,
+        "word": "꼭",
+        "pinyin": null,
+        "meaning": "necessariamente, com certeza"
+      },
+      {
+        "id": 10,
+        "word": "수입산",
+        "pinyin": null,
+        "meaning": "produzido importado, importado (produto)"
+      },
+      {
+        "id": 11,
+        "word": "맞다",
+        "pinyin": null,
+        "meaning": "tomar (injeção/vacina)"
+      },
+      {
+        "id": 12,
+        "word": "필요 없다",
+        "pinyin": null,
+        "meaning": "não ser necessário"
+      }
+    ],
+    "id": "local-1772301402543-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "우리 애한테 쓰는 돈은 아낄 수 없어. 수입 백신은 비싸지만, 더 좋고 안전할 거야. 비싼 만큼 값어치를 하는 거지.",
+    "pinyin": null,
+    "translation": "A: Não podemos economizar dinheiro quando se trata do nosso filho. A vacina importada é cara, mas será melhor e mais segura. Vale o preço.",
+    "tokens": [
+      "우리",
+      "애한테",
+      "쓰는",
+      "돈은",
+      "아낄",
+      "수",
+      "없어",
+      ".",
+      "수입",
+      "백신은",
+      "비싸지만",
+      ",",
+      "더",
+      "좋고",
+      "안전할",
+      "거야",
+      ".",
+      "비싼",
+      "만큼",
+      "값어치를",
+      "하는",
+      "거지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "애",
+        "pinyin": null,
+        "meaning": "criança, filho(a)"
+      },
+      {
+        "id": 2,
+        "word": "쓰다",
+        "pinyin": null,
+        "meaning": "usar, gastar (dinheiro)"
+      },
+      {
+        "id": 3,
+        "word": "돈",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "아끼다",
+        "pinyin": null,
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "-ㄹ 수 없다",
+        "pinyin": null,
+        "meaning": "não poder (fazer)"
+      },
+      {
+        "id": 6,
+        "word": "수입",
+        "pinyin": null,
+        "meaning": "importação, importado"
+      },
+      {
+        "id": 7,
+        "word": "백신",
+        "pinyin": null,
+        "meaning": "vacina"
+      },
+      {
+        "id": 8,
+        "word": "비싸다",
+        "pinyin": null,
+        "meaning": "ser caro"
+      },
+      {
+        "id": 9,
+        "word": "더",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 10,
+        "word": "좋다",
+        "pinyin": null,
+        "meaning": "bom"
+      },
+      {
+        "id": 11,
+        "word": "안전하다",
+        "pinyin": null,
+        "meaning": "ser seguro"
+      },
+      {
+        "id": 12,
+        "word": "-만큼",
+        "pinyin": null,
+        "meaning": "tanto quanto, à altura de"
+      },
+      {
+        "id": 13,
+        "word": "값어치",
+        "pinyin": null,
+        "meaning": "valor"
+      },
+      {
+        "id": 14,
+        "word": "값어치를 하다",
+        "pinyin": null,
+        "meaning": "valer a pena, valer o preço"
+      }
+    ],
+    "id": "local-1772301402543-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "알았어, 대장. 당신 말대로 할게. 당신 말을 들을게.",
+    "pinyin": null,
+    "translation": "B: Ok, chefe. Farei como você diz. Vou ouvir você.",
+    "tokens": [
+      "알았어",
+      ",",
+      "대장",
+      ".",
+      "당신",
+      "말대로",
+      "할게",
+      ".",
+      "당신",
+      "말을",
+      "들을게",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알다",
+        "pinyin": null,
+        "meaning": "saber, entender, ok"
+      },
+      {
+        "id": 2,
+        "word": "대장",
+        "pinyin": null,
+        "meaning": "chefe, líder (aqui usado de forma carinhosa/brincalhona)"
+      },
+      {
+        "id": 3,
+        "word": "당신",
+        "pinyin": null,
+        "meaning": "você (usado entre cônjuges, ou mais formal/distante)"
+      },
+      {
+        "id": 4,
+        "word": "말",
+        "pinyin": null,
+        "meaning": "palavra, fala"
+      },
+      {
+        "id": 5,
+        "word": "-대로",
+        "pinyin": null,
+        "meaning": "como, de acordo com"
+      },
+      {
+        "id": 6,
+        "word": "하다",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 7,
+        "word": "듣다",
+        "pinyin": null,
+        "meaning": "ouvir"
+      }
+    ],
+    "id": "local-1772301402543-9",
+    "language": "Coreano"
+  }
+]

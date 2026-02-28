@@ -1,0 +1,520 @@
+[
+  {
+    "chinese": "A: 여보, 나 너무 살쪘어! 살 빼는 기계 사고 싶어!",
+    "pinyin": "",
+    "translation": "A: Querido(a), engordei demais! Quero comprar uma máquina de emagrecer!",
+    "tokens": [
+      "여보",
+      ",",
+      "나",
+      "너무",
+      "살쪘어",
+      "!",
+      "살",
+      "빼는",
+      "기계",
+      "사고",
+      "싶어",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여보",
+        "pinyin": "yeobo",
+        "meaning": "querido(a), meu bem (termo carinhoso para cônjuge)"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 3,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 4,
+        "word": "살쪘어",
+        "pinyin": "saljjeosseo",
+        "meaning": "engordei (de 살찌다 - ganhar peso)"
+      },
+      {
+        "id": 5,
+        "word": "살 빼는",
+        "pinyin": "sal ppaeneun",
+        "meaning": "que tira peso, que emagrece (de 살을 빼다 - perder peso)"
+      },
+      {
+        "id": 6,
+        "word": "기계",
+        "pinyin": "gigye",
+        "meaning": "máquina"
+      },
+      {
+        "id": 7,
+        "word": "사고 싶어",
+        "pinyin": "sago sipeo",
+        "meaning": "quero comprar (de 사다 - comprar + ~고 싶다 - querer)"
+      }
+    ],
+    "id": "local-1772298219680-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어떤 종류를 사고 싶은데?",
+    "pinyin": "",
+    "translation": "B: Que tipo [de máquina] você quer comprar?",
+    "tokens": [
+      "어떤",
+      "종류를",
+      "사고",
+      "싶은데",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 2,
+        "word": "종류",
+        "pinyin": "jongnyu",
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 3,
+        "word": "사고 싶은데",
+        "pinyin": "sago sipeunde",
+        "meaning": "quer comprar (com nuance de pergunta ou contexto)"
+      }
+    ],
+    "id": "local-1772298219680-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 봐봐! 이 런닝머신 어때?",
+    "pinyin": "",
+    "translation": "A: Olha só! O que você acha desta esteira?",
+    "tokens": [
+      "봐봐",
+      "!",
+      "이",
+      "런닝머신",
+      "어때",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "봐봐",
+        "pinyin": "bwabwa",
+        "meaning": "olha só, veja (informal)"
+      },
+      {
+        "id": 2,
+        "word": "이",
+        "pinyin": "i",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 3,
+        "word": "런닝머신",
+        "pinyin": "reonneongmeosin",
+        "meaning": "esteira (running machine)"
+      },
+      {
+        "id": 4,
+        "word": "어때",
+        "pinyin": "eottae",
+        "meaning": "como é? o que você acha?"
+      }
+    ],
+    "id": "local-1772298219680-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응, 그거 꽤 괜찮네!",
+    "pinyin": "",
+    "translation": "B: Sim, essa é bem boa!",
+    "tokens": [
+      "응",
+      ",",
+      "그거",
+      "꽤",
+      "괜찮네",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "eung",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "그거",
+        "pinyin": "geugeo",
+        "meaning": "isso, essa (informal)"
+      },
+      {
+        "id": 3,
+        "word": "꽤",
+        "pinyin": "kkwae",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 4,
+        "word": "괜찮네",
+        "pinyin": "gwaenchanne",
+        "meaning": "é bom/razoável (com nuance de descoberta/admiração)"
+      }
+    ],
+    "id": "local-1772298219680-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이 일립티컬 머신은 다리랑 허리를 날씬하게 해줄 수 있어!",
+    "pinyin": "",
+    "translation": "A: Este elíptico pode deixar minhas pernas e cintura finas!",
+    "tokens": [
+      "이",
+      "일립티컬",
+      "머신은",
+      "다리랑",
+      "허리를",
+      "날씬하게",
+      "해줄",
+      "수",
+      "있어",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이",
+        "pinyin": "i",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 2,
+        "word": "일립티컬 머신",
+        "pinyin": "illipiteokeol meosin",
+        "meaning": "máquina elíptica, elíptico"
+      },
+      {
+        "id": 3,
+        "word": "다리",
+        "pinyin": "dari",
+        "meaning": "perna"
+      },
+      {
+        "id": 4,
+        "word": "랑",
+        "pinyin": "rang",
+        "meaning": "e, com (informal)"
+      },
+      {
+        "id": 5,
+        "word": "허리",
+        "pinyin": "heori",
+        "meaning": "cintura, costas"
+      },
+      {
+        "id": 6,
+        "word": "날씬하게",
+        "pinyin": "nalssinhage",
+        "meaning": "de forma esbelta/fina"
+      },
+      {
+        "id": 7,
+        "word": "해줄 수 있어",
+        "pinyin": "haejul su isseo",
+        "meaning": "pode fazer por você/mim"
+      }
+    ],
+    "id": "local-1772298219680-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 너한테 좋을 것 같아.",
+    "pinyin": "",
+    "translation": "B: Parece que será bom para você.",
+    "tokens": [
+      "너한테",
+      "좋을",
+      "것",
+      "같아",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "너한테",
+        "pinyin": "neohante",
+        "meaning": "para você (informal)"
+      },
+      {
+        "id": 2,
+        "word": "좋을 것 같아",
+        "pinyin": "joeul geot gata",
+        "meaning": "parece que será bom"
+      }
+    ],
+    "id": "local-1772298219680-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 여기 살 빼는 로봇도 있는데, 아쉽게도 너무 비싸!",
+    "pinyin": "",
+    "translation": "A: Ah, aqui também tem um robô de emagrecimento, mas infelizmente é muito caro!",
+    "tokens": [
+      "아",
+      ",",
+      "여기",
+      "살",
+      "빼는",
+      "로봇도",
+      "있는데",
+      ",",
+      "아쉽게도",
+      "너무",
+      "비싸",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": "a",
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "여기",
+        "pinyin": "yeogi",
+        "meaning": "aqui"
+      },
+      {
+        "id": 3,
+        "word": "살 빼는",
+        "pinyin": "sal ppaeneun",
+        "meaning": "que tira peso, que emagrece"
+      },
+      {
+        "id": 4,
+        "word": "로봇",
+        "pinyin": "robot",
+        "meaning": "robô"
+      },
+      {
+        "id": 5,
+        "word": "도",
+        "pinyin": "do",
+        "meaning": "também"
+      },
+      {
+        "id": 6,
+        "word": "있는데",
+        "pinyin": "inneunde",
+        "meaning": "existe (mas/e)"
+      },
+      {
+        "id": 7,
+        "word": "아쉽게도",
+        "pinyin": "aswipgedo",
+        "meaning": "infelizmente"
+      },
+      {
+        "id": 8,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 9,
+        "word": "비싸",
+        "pinyin": "bissa",
+        "meaning": "é caro (de 비싸다 - ser caro)"
+      }
+    ],
+    "id": "local-1772298219680-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 돈은 문제가 안 돼. 나는 네가 이틀 쓰고 다시는 안 쓸까 봐 걱정이야.",
+    "pinyin": "",
+    "translation": "B: Dinheiro não é o problema. Eu me preocupo que você use por dois dias e nunca mais use.",
+    "tokens": [
+      "돈은",
+      "문제가",
+      "안",
+      "돼",
+      ".",
+      "나는",
+      "네가",
+      "이틀",
+      "쓰고",
+      "다시는",
+      "안",
+      "쓸까",
+      "봐",
+      "걱정이야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "돈",
+        "pinyin": "don",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "문제",
+        "pinyin": "munje",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "안 돼",
+        "pinyin": "an dwae",
+        "meaning": "não é, não pode (de 되다 - se tornar, ser)"
+      },
+      {
+        "id": 4,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 5,
+        "word": "네가",
+        "pinyin": "nega",
+        "meaning": "você (sujeito, informal)"
+      },
+      {
+        "id": 6,
+        "word": "이틀",
+        "pinyin": "iteul",
+        "meaning": "dois dias"
+      },
+      {
+        "id": 7,
+        "word": "쓰고",
+        "pinyin": "sseugo",
+        "meaning": "e usar (de 쓰다 - usar, escrever)"
+      },
+      {
+        "id": 8,
+        "word": "다시는",
+        "pinyin": "dasineun",
+        "meaning": "nunca mais"
+      },
+      {
+        "id": 9,
+        "word": "안 쓸까 봐",
+        "pinyin": "an sseulkka bwa",
+        "meaning": "preocupado que não use"
+      },
+      {
+        "id": 10,
+        "word": "걱정이야",
+        "pinyin": "geokjeongiya",
+        "meaning": "é uma preocupação"
+      }
+    ],
+    "id": "local-1772298219680-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이번엔 절대 안 그럴게!",
+    "pinyin": "",
+    "translation": "A: Desta vez, eu nunca farei isso!",
+    "tokens": [
+      "이번엔",
+      "절대",
+      "안",
+      "그럴게",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이번엔",
+        "pinyin": "ibeonen",
+        "meaning": "desta vez (abreviação de 이번에는)"
+      },
+      {
+        "id": 2,
+        "word": "절대",
+        "pinyin": "jeoldae",
+        "meaning": "absolutamente, nunca (usado com negação)"
+      },
+      {
+        "id": 3,
+        "word": "안 그럴게",
+        "pinyin": "an geureolge",
+        "meaning": "não farei isso, não será assim (promessa/intenção)"
+      }
+    ],
+    "id": "local-1772298219680-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알았어. 그럼 사! 내가 응원할게!",
+    "pinyin": "",
+    "translation": "B: Entendi. Então compre! Eu vou te apoiar!",
+    "tokens": [
+      "알았어",
+      ".",
+      "그럼",
+      "사",
+      "!",
+      "내가",
+      "응원할게",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알았어",
+        "pinyin": "arasseo",
+        "meaning": "entendi, ok (informal)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "사",
+        "pinyin": "sa",
+        "meaning": "compre! (imperativo informal de 사다 - comprar)"
+      },
+      {
+        "id": 4,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 5,
+        "word": "응원할게",
+        "pinyin": "eungwonhalge",
+        "meaning": "vou te apoiar (promessa/intenção)"
+      }
+    ],
+    "id": "local-1772298219680-9",
+    "language": "Coreano"
+  }
+]

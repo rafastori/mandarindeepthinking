@@ -1,0 +1,534 @@
+[
+  {
+    "chinese": "A: Tesoro, il tuo telefono sta squillando. È un messaggio di testo.",
+    "pinyin": "",
+    "translation": "A: Amor, seu telefone está tocando. É uma mensagem de texto.",
+    "tokens": [
+      "A:",
+      "Tesoro",
+      ",",
+      "il",
+      "tuo",
+      "telefono",
+      "sta",
+      "squillando",
+      ".",
+      "È",
+      "un",
+      "messaggio",
+      "di",
+      "testo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tesoro",
+        "pinyin": "",
+        "meaning": "Amor, querida(o)"
+      },
+      {
+        "id": 2,
+        "word": "telefono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 3,
+        "word": "sta squillando",
+        "pinyin": "",
+        "meaning": "está tocando (o telefone)"
+      },
+      {
+        "id": 4,
+        "word": "messaggio di testo",
+        "pinyin": "",
+        "meaning": "mensagem de texto"
+      }
+    ],
+    "id": "local-1772296123663-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sono in bagno. Leggimelo!",
+    "pinyin": "",
+    "translation": "B: Estou no banheiro. Leia para mim!",
+    "tokens": [
+      "B:",
+      "Sono",
+      "in",
+      "bagno",
+      ".",
+      "Leggimelo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sono in bagno",
+        "pinyin": "",
+        "meaning": "Estou no banheiro"
+      },
+      {
+        "id": 2,
+        "word": "Leggimelo",
+        "pinyin": "",
+        "meaning": "Leia para mim"
+      }
+    ],
+    "id": "local-1772296123663-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il 15 alle 11:08, la tua carta bancaria con le ultime quattro cifre 8899 è stata addebitata di 35.000 yuan renminbi.",
+    "pinyin": "",
+    "translation": "A: No dia 15 às 11:08, seu cartão bancário com os últimos quatro dígitos 8899 foi debitado em 35.000 yuan renminbi.",
+    "tokens": [
+      "A:",
+      "Il",
+      "15",
+      "alle",
+      "11:08",
+      ",",
+      "la",
+      "tua",
+      "carta",
+      "bancaria",
+      "con",
+      "le",
+      "ultime",
+      "quattro",
+      "cifre",
+      "8899",
+      "è",
+      "stata",
+      "addebitata",
+      "di",
+      "35.000",
+      "yuan",
+      "renminbi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "carta bancaria",
+        "pinyin": "",
+        "meaning": "cartão bancário"
+      },
+      {
+        "id": 2,
+        "word": "ultime quattro cifre",
+        "pinyin": "",
+        "meaning": "últimos quatro dígitos"
+      },
+      {
+        "id": 3,
+        "word": "è stata addebitata",
+        "pinyin": "",
+        "meaning": "foi debitada"
+      },
+      {
+        "id": 4,
+        "word": "yuan renminbi",
+        "pinyin": "",
+        "meaning": "yuan renminbi (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772296123663-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Eh? Cosa facciamo?",
+    "pinyin": "",
+    "translation": "Hã? O que fazemos?",
+    "tokens": [
+      "Eh",
+      "?",
+      "Cosa",
+      "facciamo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa facciamo",
+        "pinyin": "",
+        "meaning": "O que fazemos?"
+      }
+    ],
+    "id": "local-1772296123663-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Sei a casa. Come puoi ricevere una notifica che la tua carta di credito è stata addebitata?",
+    "pinyin": "",
+    "translation": "Você está em casa. Como você pode receber uma notificação de que seu cartão de crédito foi debitado?",
+    "tokens": [
+      "Sei",
+      "a",
+      "casa",
+      ".",
+      "Come",
+      "puoi",
+      "ricevere",
+      "una",
+      "notifica",
+      "che",
+      "la",
+      "tua",
+      "carta",
+      "di",
+      "credito",
+      "è",
+      "stata",
+      "addebitata",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sei a casa",
+        "pinyin": "",
+        "meaning": "Você está em casa"
+      },
+      {
+        "id": 2,
+        "word": "ricevere una notifica",
+        "pinyin": "",
+        "meaning": "receber uma notificação"
+      },
+      {
+        "id": 3,
+        "word": "carta di credito",
+        "pinyin": "",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 4,
+        "word": "è stata addebitata",
+        "pinyin": "",
+        "meaning": "foi debitada"
+      }
+    ],
+    "id": "local-1772296123663-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Cosa?!",
+    "pinyin": "",
+    "translation": "B: O quê?!",
+    "tokens": [
+      "B:",
+      "Cosa",
+      "?",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa",
+        "pinyin": "",
+        "meaning": "O quê?"
+      }
+    ],
+    "id": "local-1772296123663-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Presto, fammelo vedere!",
+    "pinyin": "",
+    "translation": "Rápido, me mostre!",
+    "tokens": [
+      "Presto",
+      ",",
+      "fammelo",
+      "vedere",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Presto",
+        "pinyin": "",
+        "meaning": "Rápido"
+      },
+      {
+        "id": 2,
+        "word": "fammelo vedere",
+        "pinyin": "",
+        "meaning": "mostre-me"
+      }
+    ],
+    "id": "local-1772296123663-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Mio dio!",
+    "pinyin": "",
+    "translation": "Meu Deus!",
+    "tokens": [
+      "Mio",
+      "dio",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mio dio",
+        "pinyin": "",
+        "meaning": "Meu Deus"
+      }
+    ],
+    "id": "local-1772296123663-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Quando ho speso così tanti soldi?",
+    "pinyin": "",
+    "translation": "Quando gastei tanto dinheiro?",
+    "tokens": [
+      "Quando",
+      "ho",
+      "speso",
+      "così",
+      "tanti",
+      "soldi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quando",
+        "pinyin": "",
+        "meaning": "Quando"
+      },
+      {
+        "id": 2,
+        "word": "ho speso",
+        "pinyin": "",
+        "meaning": "eu gastei"
+      },
+      {
+        "id": 3,
+        "word": "così tanti soldi",
+        "pinyin": "",
+        "meaning": "tanto dinheiro"
+      }
+    ],
+    "id": "local-1772296123663-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Potrebbe essere che qualcuno l'ha rubata e usata?",
+    "pinyin": "",
+    "translation": "A: Será que alguém a roubou e usou?",
+    "tokens": [
+      "A:",
+      "Potrebbe",
+      "essere",
+      "che",
+      "qualcuno",
+      "l'ha",
+      "rubata",
+      "e",
+      "usata",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Potrebbe essere",
+        "pinyin": "",
+        "meaning": "Poderia ser, será que"
+      },
+      {
+        "id": 2,
+        "word": "qualcuno",
+        "pinyin": "",
+        "meaning": "alguém"
+      },
+      {
+        "id": 3,
+        "word": "l'ha rubata",
+        "pinyin": "",
+        "meaning": "a roubou"
+      },
+      {
+        "id": 4,
+        "word": "usata",
+        "pinyin": "",
+        "meaning": "usada"
+      }
+    ],
+    "id": "local-1772296123663-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Eh? Allora cosa faccio adesso, tesoro?",
+    "pinyin": "",
+    "translation": "B: Hã? Então o que faço agora, amor?",
+    "tokens": [
+      "B:",
+      "Eh",
+      "?",
+      "Allora",
+      "cosa",
+      "faccio",
+      "adesso",
+      ",",
+      "tesoro",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cosa faccio adesso",
+        "pinyin": "",
+        "meaning": "o que faço agora"
+      },
+      {
+        "id": 3,
+        "word": "tesoro",
+        "pinyin": "",
+        "meaning": "amor, querida(o)"
+      }
+    ],
+    "id": "local-1772296123663-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Tesoro, non preoccuparti.",
+    "pinyin": "",
+    "translation": "A: Amor, não se preocupe.",
+    "tokens": [
+      "A:",
+      "Tesoro",
+      ",",
+      "non",
+      "preoccuparti",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tesoro",
+        "pinyin": "",
+        "meaning": "Amor, querida(o)"
+      },
+      {
+        "id": 2,
+        "word": "non preoccuparti",
+        "pinyin": "",
+        "meaning": "não se preocupe"
+      }
+    ],
+    "id": "local-1772296123663-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Chiamiamo la banca e blocchiamo il conto, poi facciamo una denuncia alla polizia.",
+    "pinyin": "",
+    "translation": "Ligamos para o banco e bloqueamos a conta, depois fazemos uma denúncia à polícia.",
+    "tokens": [
+      "Chiamiamo",
+      "la",
+      "banca",
+      "e",
+      "blocchiamo",
+      "il",
+      "conto",
+      ",",
+      "poi",
+      "facciamo",
+      "una",
+      "denuncia",
+      "alla",
+      "polizia",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chiamiamo la banca",
+        "pinyin": "",
+        "meaning": "Ligamos para o banco"
+      },
+      {
+        "id": 2,
+        "word": "blocchiamo il conto",
+        "pinyin": "",
+        "meaning": "bloqueamos a conta"
+      },
+      {
+        "id": 3,
+        "word": "facciamo una denuncia",
+        "pinyin": "",
+        "meaning": "fazemos uma denúncia"
+      },
+      {
+        "id": 4,
+        "word": "alla polizia",
+        "pinyin": "",
+        "meaning": "à polícia"
+      }
+    ],
+    "id": "local-1772296123663-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non c'è da meravigliarsi se il mio occhio ha un tic oggi!",
+    "pinyin": "",
+    "translation": "B: Não é de admirar que meu olho esteja com um tique hoje!",
+    "tokens": [
+      "B:",
+      "Non",
+      "c'è",
+      "da",
+      "meravigliarsi",
+      "se",
+      "il",
+      "mio",
+      "occhio",
+      "ha",
+      "un",
+      "tic",
+      "oggi",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non c'è da meravigliarsi",
+        "pinyin": "",
+        "meaning": "Não é de admirar"
+      },
+      {
+        "id": 2,
+        "word": "mio occhio",
+        "pinyin": "",
+        "meaning": "meu olho"
+      },
+      {
+        "id": 3,
+        "word": "ha un tic",
+        "pinyin": "",
+        "meaning": "tem um tique"
+      },
+      {
+        "id": 4,
+        "word": "oggi",
+        "pinyin": "",
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772296123663-13",
+    "language": "Italiano"
+  }
+]

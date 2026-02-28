@@ -1,0 +1,570 @@
+[
+  {
+    "chinese": "A: Zoey, he oído que tu familia compró una televisión grande. Realmente quiero venir a echarle un vistazo.",
+    "pinyin": null,
+    "translation": "A: Zoey, ouvi dizer que sua família comprou uma televisão grande. Eu realmente quero vir dar uma olhada.",
+    "tokens": [
+      "A:",
+      "Zoey,",
+      "he",
+      "oído",
+      "que",
+      "tu",
+      "familia",
+      "compró",
+      "una",
+      "televisión",
+      "grande.",
+      "Realmente",
+      "quiero",
+      "venir",
+      "a",
+      "echarle",
+      "un",
+      "vistazo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "he oído",
+        "pinyin": null,
+        "meaning": "ouvi dizer"
+      },
+      {
+        "id": 2,
+        "word": "familia",
+        "pinyin": null,
+        "meaning": "família"
+      },
+      {
+        "id": 3,
+        "word": "compró",
+        "pinyin": null,
+        "meaning": "comprou"
+      },
+      {
+        "id": 4,
+        "word": "televisión",
+        "pinyin": null,
+        "meaning": "televisão"
+      },
+      {
+        "id": 5,
+        "word": "grande",
+        "pinyin": null,
+        "meaning": "grande"
+      },
+      {
+        "id": 6,
+        "word": "Realmente",
+        "pinyin": null,
+        "meaning": "Realmente"
+      },
+      {
+        "id": 7,
+        "word": "quiero",
+        "pinyin": null,
+        "meaning": "quero"
+      },
+      {
+        "id": 8,
+        "word": "echarle un vistazo",
+        "pinyin": null,
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772296952325-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Bienvenido. Adelante!",
+    "pinyin": null,
+    "translation": "B: Bem-vindo. Entre!",
+    "tokens": [
+      "B:",
+      "¡Bienvenido.",
+      "Adelante!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bienvenido",
+        "pinyin": null,
+        "meaning": "Bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "Adelante",
+        "pinyin": null,
+        "meaning": "Entre"
+      }
+    ],
+    "id": "local-1772296952325-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Je, esta televisión es realmente impresionante! Oye, ¿qué es este pequeño cubo negro?",
+    "pinyin": null,
+    "translation": "A: Hehe, esta televisão é realmente impressionante! Ei, o que é este pequeno cubo preto?",
+    "tokens": [
+      "A:",
+      "¡Je,",
+      "esta",
+      "televisión",
+      "es",
+      "realmente",
+      "impresionante!",
+      "Oye,",
+      "¿qué",
+      "es",
+      "este",
+      "pequeño",
+      "cubo",
+      "negro?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "televisión",
+        "pinyin": null,
+        "meaning": "televisão"
+      },
+      {
+        "id": 2,
+        "word": "realmente",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "impresionante",
+        "pinyin": null,
+        "meaning": "impressionante"
+      },
+      {
+        "id": 4,
+        "word": "Oye",
+        "pinyin": null,
+        "meaning": "Ei"
+      },
+      {
+        "id": 5,
+        "word": "pequeño",
+        "pinyin": null,
+        "meaning": "pequeno"
+      },
+      {
+        "id": 6,
+        "word": "cubo",
+        "pinyin": null,
+        "meaning": "cubo"
+      },
+      {
+        "id": 7,
+        "word": "negro",
+        "pinyin": null,
+        "meaning": "preto"
+      }
+    ],
+    "id": "local-1772296952325-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh, esto es un MiBox, una especie de decodificador de TV por internet.",
+    "pinyin": null,
+    "translation": "B: Ah, isso é um MiBox, uma espécie de decodificador de TV pela internet.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "esto",
+      "es",
+      "un",
+      "MiBox,",
+      "una",
+      "especie",
+      "de",
+      "decodificador",
+      "de",
+      "TV",
+      "por",
+      "internet."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "MiBox",
+        "pinyin": null,
+        "meaning": "MiBox"
+      },
+      {
+        "id": 2,
+        "word": "especie",
+        "pinyin": null,
+        "meaning": "espécie, tipo"
+      },
+      {
+        "id": 3,
+        "word": "decodificador",
+        "pinyin": null,
+        "meaning": "decodificador"
+      },
+      {
+        "id": 4,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      }
+    ],
+    "id": "local-1772296952325-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué hace?",
+    "pinyin": null,
+    "translation": "A: O que ele faz?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "hace?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hace",
+        "pinyin": null,
+        "meaning": "faz"
+      }
+    ],
+    "id": "local-1772296952325-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Mira. Este MiBox está conectado a internet. Con él, puedes ver televisión en línea y jugar. También puedes reproducir videos locales y volver a ver programas emitidos previamente.",
+    "pinyin": null,
+    "translation": "B: Veja. Este MiBox está conectado à internet. Com ele, você pode assistir televisão online e jogar. Você também pode reproduzir vídeos locais e rever programas transmitidos anteriormente.",
+    "tokens": [
+      "B:",
+      "Mira.",
+      "Este",
+      "MiBox",
+      "está",
+      "conectado",
+      "a",
+      "internet.",
+      "Con",
+      "él,",
+      "puedes",
+      "ver",
+      "televisión",
+      "en",
+      "línea",
+      "y",
+      "jugar.",
+      "También",
+      "puedes",
+      "reproducir",
+      "videos",
+      "locales",
+      "y",
+      "volver",
+      "a",
+      "ver",
+      "programas",
+      "emitidos",
+      "previamente."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mira",
+        "pinyin": null,
+        "meaning": "Olha, veja"
+      },
+      {
+        "id": 2,
+        "word": "conectado",
+        "pinyin": null,
+        "meaning": "conectado"
+      },
+      {
+        "id": 3,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      },
+      {
+        "id": 4,
+        "word": "puedes",
+        "pinyin": null,
+        "meaning": "você pode"
+      },
+      {
+        "id": 5,
+        "word": "televisión en línea",
+        "pinyin": null,
+        "meaning": "televisão online"
+      },
+      {
+        "id": 6,
+        "word": "jugar",
+        "pinyin": null,
+        "meaning": "jogar"
+      },
+      {
+        "id": 7,
+        "word": "También",
+        "pinyin": null,
+        "meaning": "Também"
+      },
+      {
+        "id": 8,
+        "word": "reproducir",
+        "pinyin": null,
+        "meaning": "reproduzir"
+      },
+      {
+        "id": 9,
+        "word": "videos locales",
+        "pinyin": null,
+        "meaning": "vídeos locais"
+      },
+      {
+        "id": 10,
+        "word": "volver a ver",
+        "pinyin": null,
+        "meaning": "rever, assistir novamente"
+      },
+      {
+        "id": 11,
+        "word": "programas",
+        "pinyin": null,
+        "meaning": "programas"
+      },
+      {
+        "id": 12,
+        "word": "emitidos previamente",
+        "pinyin": null,
+        "meaning": "transmitidos anteriormente"
+      }
+    ],
+    "id": "local-1772296952325-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Vaya, es bastante potente!",
+    "pinyin": null,
+    "translation": "A: Nossa, é bastante potente!",
+    "tokens": [
+      "A:",
+      "¡Vaya,",
+      "es",
+      "bastante",
+      "potente!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vaya",
+        "pinyin": null,
+        "meaning": "Nossa, uau"
+      },
+      {
+        "id": 2,
+        "word": "bastante",
+        "pinyin": null,
+        "meaning": "bastante"
+      },
+      {
+        "id": 3,
+        "word": "potente",
+        "pinyin": null,
+        "meaning": "potente"
+      }
+    ],
+    "id": "local-1772296952325-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. Además de MiBox, también hay Apple TV, ComoTV y más. Cuando estábamos eligiendo un decodificador de TV, fue muy difícil decidir.",
+    "pinyin": null,
+    "translation": "B: Sim. Além do MiBox, também há Apple TV, ComoTV e mais. Quando estávamos escolhendo um decodificador de TV, foi muito difícil decidir.",
+    "tokens": [
+      "B:",
+      "Sí.",
+      "Además",
+      "de",
+      "MiBox,",
+      "también",
+      "hay",
+      "Apple",
+      "TV,",
+      "ComoTV",
+      "y",
+      "más.",
+      "Cuando",
+      "estábamos",
+      "eligiendo",
+      "un",
+      "decodificador",
+      "de",
+      "TV,",
+      "fue",
+      "muy",
+      "difícil",
+      "decidir."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Además de",
+        "pinyin": null,
+        "meaning": "Além de"
+      },
+      {
+        "id": 3,
+        "word": "también",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 4,
+        "word": "hay",
+        "pinyin": null,
+        "meaning": "há, existe"
+      },
+      {
+        "id": 5,
+        "word": "más",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 6,
+        "word": "estábamos eligiendo",
+        "pinyin": null,
+        "meaning": "estávamos escolhendo"
+      },
+      {
+        "id": 7,
+        "word": "decodificador de TV",
+        "pinyin": null,
+        "meaning": "decodificador de TV"
+      },
+      {
+        "id": 8,
+        "word": "muy difícil",
+        "pinyin": null,
+        "meaning": "muito difícil"
+      },
+      {
+        "id": 9,
+        "word": "decidir",
+        "pinyin": null,
+        "meaning": "decidir"
+      }
+    ],
+    "id": "local-1772296952325-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Parece que estoy bastante desactualizado. Mi casa todavía usa cable. Más tarde, yo también compraré un decodificador.",
+    "pinyin": null,
+    "translation": "A: Parece que estou bastante desatualizado. Minha casa ainda usa cabo. Mais tarde, eu também comprarei um decodificador.",
+    "tokens": [
+      "A:",
+      "Parece",
+      "que",
+      "estoy",
+      "bastante",
+      "desactualizado.",
+      "Mi",
+      "casa",
+      "todavía",
+      "usa",
+      "cable.",
+      "Más",
+      "tarde,",
+      "yo",
+      "también",
+      "compraré",
+      "un",
+      "decodificador."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Parece",
+        "pinyin": null,
+        "meaning": "Parece"
+      },
+      {
+        "id": 2,
+        "word": "estoy",
+        "pinyin": null,
+        "meaning": "estou"
+      },
+      {
+        "id": 3,
+        "word": "bastante",
+        "pinyin": null,
+        "meaning": "bastante"
+      },
+      {
+        "id": 4,
+        "word": "desactualizado",
+        "pinyin": null,
+        "meaning": "desatualizado"
+      },
+      {
+        "id": 5,
+        "word": "casa",
+        "pinyin": null,
+        "meaning": "casa"
+      },
+      {
+        "id": 6,
+        "word": "todavía",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 7,
+        "word": "usa",
+        "pinyin": null,
+        "meaning": "usa"
+      },
+      {
+        "id": 8,
+        "word": "cable",
+        "pinyin": null,
+        "meaning": "cabo"
+      },
+      {
+        "id": 9,
+        "word": "Más tarde",
+        "pinyin": null,
+        "meaning": "Mais tarde"
+      },
+      {
+        "id": 10,
+        "word": "compraré",
+        "pinyin": null,
+        "meaning": "comprarei"
+      },
+      {
+        "id": 11,
+        "word": "decodificador",
+        "pinyin": null,
+        "meaning": "decodificador"
+      }
+    ],
+    "id": "local-1772296952325-8",
+    "language": "Espanhol"
+  }
+]

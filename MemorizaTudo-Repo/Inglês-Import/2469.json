@@ -1,0 +1,912 @@
+[
+  {
+    "chinese": "A: Hello, Manager Wang. What do you think of this design draft?",
+    "pinyin": "",
+    "translation": "A: Olá, Gerente Wang. O que você acha deste rascunho de design?",
+    "tokens": [
+      "A:",
+      "Hello",
+      ",",
+      "Manager",
+      "Wang",
+      ".",
+      "What",
+      "do",
+      "you",
+      "think",
+      "of",
+      "this",
+      "design",
+      "draft",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hello",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Manager",
+        "pinyin": "",
+        "meaning": "Gerente"
+      },
+      {
+        "id": 3,
+        "word": "think of",
+        "pinyin": "",
+        "meaning": "achar, pensar sobre"
+      },
+      {
+        "id": 4,
+        "word": "design draft",
+        "pinyin": "",
+        "meaning": "rascunho de design"
+      }
+    ],
+    "id": "local-1772293699602-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It looks not too bad, but always different than what I imagined.",
+    "pinyin": "",
+    "translation": "B: Não parece muito ruim, mas sempre diferente do que eu imaginei.",
+    "tokens": [
+      "B:",
+      "It",
+      "looks",
+      "not",
+      "too",
+      "bad",
+      ",",
+      "but",
+      "always",
+      "different",
+      "than",
+      "what",
+      "I",
+      "imagined",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "looks",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 2,
+        "word": "not too bad",
+        "pinyin": "",
+        "meaning": "não muito ruim"
+      },
+      {
+        "id": 3,
+        "word": "different than",
+        "pinyin": "",
+        "meaning": "diferente de"
+      },
+      {
+        "id": 4,
+        "word": "imagined",
+        "pinyin": "",
+        "meaning": "imaginei"
+      }
+    ],
+    "id": "local-1772293699602-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You can tell me whatever ideas you have.",
+    "pinyin": "",
+    "translation": "A: Você pode me dizer quaisquer ideias que tiver.",
+    "tokens": [
+      "A:",
+      "You",
+      "can",
+      "tell",
+      "me",
+      "whatever",
+      "ideas",
+      "you",
+      "have",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tell",
+        "pinyin": "",
+        "meaning": "dizer, contar"
+      },
+      {
+        "id": 2,
+        "word": "whatever",
+        "pinyin": "",
+        "meaning": "quaisquer, o que quer que seja"
+      },
+      {
+        "id": 3,
+        "word": "ideas",
+        "pinyin": "",
+        "meaning": "ideias"
+      }
+    ],
+    "id": "local-1772293699602-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I can't say exactly what it is.",
+    "pinyin": "",
+    "translation": "B: Não consigo dizer exatamente o que é.",
+    "tokens": [
+      "B:",
+      "I",
+      "can't",
+      "say",
+      "exactly",
+      "what",
+      "it",
+      "is",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "can't say",
+        "pinyin": "",
+        "meaning": "não consigo dizer"
+      },
+      {
+        "id": 2,
+        "word": "exactly",
+        "pinyin": "",
+        "meaning": "exatamente"
+      }
+    ],
+    "id": "local-1772293699602-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I feel it is missing something.",
+    "pinyin": "",
+    "translation": "Sinto que está faltando algo.",
+    "tokens": [
+      "I",
+      "feel",
+      "it",
+      "is",
+      "missing",
+      "something",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "feel",
+        "pinyin": "",
+        "meaning": "sentir"
+      },
+      {
+        "id": 2,
+        "word": "missing something",
+        "pinyin": "",
+        "meaning": "faltando algo"
+      }
+    ],
+    "id": "local-1772293699602-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Last time you said that you felt the style was too simple, so I added more visual elements this time.",
+    "pinyin": "",
+    "translation": "A: Da última vez você disse que achou o estilo muito simples, então adicionei mais elementos visuais desta vez.",
+    "tokens": [
+      "A:",
+      "Last",
+      "time",
+      "you",
+      "said",
+      "that",
+      "you",
+      "felt",
+      "the",
+      "style",
+      "was",
+      "too",
+      "simple",
+      ",",
+      "so",
+      "I",
+      "added",
+      "more",
+      "visual",
+      "elements",
+      "this",
+      "time",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Last time",
+        "pinyin": "",
+        "meaning": "Da última vez"
+      },
+      {
+        "id": 2,
+        "word": "said",
+        "pinyin": "",
+        "meaning": "disse (passado de 'say')"
+      },
+      {
+        "id": 3,
+        "word": "felt",
+        "pinyin": "",
+        "meaning": "sentiu, achou (passado de 'feel')"
+      },
+      {
+        "id": 4,
+        "word": "style",
+        "pinyin": "",
+        "meaning": "estilo"
+      },
+      {
+        "id": 5,
+        "word": "simple",
+        "pinyin": "",
+        "meaning": "simples"
+      },
+      {
+        "id": 6,
+        "word": "added",
+        "pinyin": "",
+        "meaning": "adicionei (passado de 'add')"
+      },
+      {
+        "id": 7,
+        "word": "visual elements",
+        "pinyin": "",
+        "meaning": "elementos visuais"
+      }
+    ],
+    "id": "local-1772293699602-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "The user interaction is also more complex.",
+    "pinyin": "",
+    "translation": "A interação do usuário também está mais complexa.",
+    "tokens": [
+      "The",
+      "user",
+      "interaction",
+      "is",
+      "also",
+      "more",
+      "complex",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "user interaction",
+        "pinyin": "",
+        "meaning": "interação do usuário"
+      },
+      {
+        "id": 2,
+        "word": "complex",
+        "pinyin": "",
+        "meaning": "complexa"
+      }
+    ],
+    "id": "local-1772293699602-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'll let you take a look.",
+    "pinyin": "",
+    "translation": "Vou deixar você dar uma olhada.",
+    "tokens": [
+      "I'll",
+      "let",
+      "you",
+      "take",
+      "a",
+      "look",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "I'll",
+        "pinyin": "",
+        "meaning": "Eu vou (contração de 'I will')"
+      },
+      {
+        "id": 2,
+        "word": "let",
+        "pinyin": "",
+        "meaning": "deixar, permitir"
+      },
+      {
+        "id": 3,
+        "word": "take a look",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772293699602-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's too complicated.",
+    "pinyin": "",
+    "translation": "B: Está muito complicado.",
+    "tokens": [
+      "B:",
+      "It's",
+      "too",
+      "complicated",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "It's",
+        "pinyin": "",
+        "meaning": "Está, É (contração de 'It is')"
+      },
+      {
+        "id": 2,
+        "word": "complicated",
+        "pinyin": "",
+        "meaning": "complicado"
+      }
+    ],
+    "id": "local-1772293699602-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Won't the users not like it?",
+    "pinyin": "",
+    "translation": "Os usuários não vão gostar?",
+    "tokens": [
+      "Won't",
+      "the",
+      "users",
+      "not",
+      "like",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Won't",
+        "pinyin": "",
+        "meaning": "Não vão (contração de 'will not')"
+      },
+      {
+        "id": 2,
+        "word": "users",
+        "pinyin": "",
+        "meaning": "usuários"
+      },
+      {
+        "id": 3,
+        "word": "like",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772293699602-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then I'll change this part, and that'll take out a bit of the complexity.",
+    "pinyin": "",
+    "translation": "A: Então vou mudar esta parte, e isso vai tirar um pouco da complexidade.",
+    "tokens": [
+      "A:",
+      "Then",
+      "I'll",
+      "change",
+      "this",
+      "part",
+      ",",
+      "and",
+      "that'll",
+      "take",
+      "out",
+      "a",
+      "bit",
+      "of",
+      "the",
+      "complexity",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "I'll",
+        "pinyin": "",
+        "meaning": "Eu vou (contração de 'I will')"
+      },
+      {
+        "id": 3,
+        "word": "change",
+        "pinyin": "",
+        "meaning": "mudar"
+      },
+      {
+        "id": 4,
+        "word": "part",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": 5,
+        "word": "that'll",
+        "pinyin": "",
+        "meaning": "Isso vai (contração de 'that will')"
+      },
+      {
+        "id": 6,
+        "word": "take out",
+        "pinyin": "",
+        "meaning": "remover, tirar"
+      },
+      {
+        "id": 7,
+        "word": "a bit of",
+        "pinyin": "",
+        "meaning": "um pouco de"
+      },
+      {
+        "id": 8,
+        "word": "complexity",
+        "pinyin": "",
+        "meaning": "complexidade"
+      }
+    ],
+    "id": "local-1772293699602-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: This color...",
+    "pinyin": "",
+    "translation": "B: Esta cor...",
+    "tokens": [
+      "B:",
+      "This",
+      "color",
+      "..."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "color",
+        "pinyin": "",
+        "meaning": "cor"
+      }
+    ],
+    "id": "local-1772293699602-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: This is orange.",
+    "pinyin": "",
+    "translation": "A: Isto é laranja.",
+    "tokens": [
+      "A:",
+      "This",
+      "is",
+      "orange",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "orange",
+        "pinyin": "",
+        "meaning": "laranja"
+      }
+    ],
+    "id": "local-1772293699602-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's the warm tones that you like.",
+    "pinyin": "",
+    "translation": "São os tons quentes que você gosta.",
+    "tokens": [
+      "It's",
+      "the",
+      "warm",
+      "tones",
+      "that",
+      "you",
+      "like",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "It's",
+        "pinyin": "",
+        "meaning": "São (contração de 'It is')"
+      },
+      {
+        "id": 2,
+        "word": "warm tones",
+        "pinyin": "",
+        "meaning": "tons quentes"
+      },
+      {
+        "id": 3,
+        "word": "like",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772293699602-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Although I like warm colors, this seems too bright.",
+    "pinyin": "",
+    "translation": "B: Embora eu goste de cores quentes, esta parece muito brilhante.",
+    "tokens": [
+      "B:",
+      "Although",
+      "I",
+      "like",
+      "warm",
+      "colors",
+      ",",
+      "this",
+      "seems",
+      "too",
+      "bright",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Although",
+        "pinyin": "",
+        "meaning": "Embora"
+      },
+      {
+        "id": 2,
+        "word": "warm colors",
+        "pinyin": "",
+        "meaning": "cores quentes"
+      },
+      {
+        "id": 3,
+        "word": "seems",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 4,
+        "word": "bright",
+        "pinyin": "",
+        "meaning": "brilhante"
+      }
+    ],
+    "id": "local-1772293699602-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh, ok.",
+    "pinyin": "",
+    "translation": "A: Ah, ok.",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "ok",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "ok",
+        "pinyin": "",
+        "meaning": "ok, certo"
+      }
+    ],
+    "id": "local-1772293699602-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Then I'll change it to something more cream-colored.",
+    "pinyin": "",
+    "translation": "Então vou mudar para algo mais na cor creme.",
+    "tokens": [
+      "Then",
+      "I'll",
+      "change",
+      "it",
+      "to",
+      "something",
+      "more",
+      "cream-colored",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "I'll",
+        "pinyin": "",
+        "meaning": "Eu vou (contração de 'I will')"
+      },
+      {
+        "id": 3,
+        "word": "change",
+        "pinyin": "",
+        "meaning": "mudar"
+      },
+      {
+        "id": 4,
+        "word": "cream-colored",
+        "pinyin": "",
+        "meaning": "na cor creme"
+      }
+    ],
+    "id": "local-1772293699602-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What do you think of that?",
+    "pinyin": "",
+    "translation": "O que você acha disso?",
+    "tokens": [
+      "What",
+      "do",
+      "you",
+      "think",
+      "of",
+      "that",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "think of",
+        "pinyin": "",
+        "meaning": "achar, pensar sobre"
+      }
+    ],
+    "id": "local-1772293699602-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That's alright.",
+    "pinyin": "",
+    "translation": "B: Tudo bem.",
+    "tokens": [
+      "B:",
+      "That's",
+      "alright",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "That's",
+        "pinyin": "",
+        "meaning": "Isso está (contração de 'That is')"
+      },
+      {
+        "id": 2,
+        "word": "alright",
+        "pinyin": "",
+        "meaning": "tudo bem"
+      }
+    ],
+    "id": "local-1772293699602-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "But this is already the fifth version.",
+    "pinyin": "",
+    "translation": "Mas esta já é a quinta versão.",
+    "tokens": [
+      "But",
+      "this",
+      "is",
+      "already",
+      "the",
+      "fifth",
+      "version",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "already",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 2,
+        "word": "fifth",
+        "pinyin": "",
+        "meaning": "quinta"
+      },
+      {
+        "id": 3,
+        "word": "version",
+        "pinyin": "",
+        "meaning": "versão"
+      }
+    ],
+    "id": "local-1772293699602-19",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I am afraid there's not enough time.",
+    "pinyin": "",
+    "translation": "Tenho medo de que não haja tempo suficiente.",
+    "tokens": [
+      "I",
+      "am",
+      "afraid",
+      "there's",
+      "not",
+      "enough",
+      "time",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "afraid",
+        "pinyin": "",
+        "meaning": "com medo, receoso"
+      },
+      {
+        "id": 2,
+        "word": "there's",
+        "pinyin": "",
+        "meaning": "há, existe (contração de 'there is')"
+      },
+      {
+        "id": 3,
+        "word": "not enough",
+        "pinyin": "",
+        "meaning": "não suficiente"
+      },
+      {
+        "id": 4,
+        "word": "time",
+        "pinyin": "",
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1772293699602-20",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "How about we just forget it and use the first version after all?",
+    "pinyin": "",
+    "translation": "Que tal apenas esquecermos e usarmos a primeira versão afinal?",
+    "tokens": [
+      "How",
+      "about",
+      "we",
+      "just",
+      "forget",
+      "it",
+      "and",
+      "use",
+      "the",
+      "first",
+      "version",
+      "after",
+      "all",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "How about",
+        "pinyin": "",
+        "meaning": "Que tal"
+      },
+      {
+        "id": 2,
+        "word": "forget",
+        "pinyin": "",
+        "meaning": "esquecer"
+      },
+      {
+        "id": 3,
+        "word": "use",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "first version",
+        "pinyin": "",
+        "meaning": "primeira versão"
+      },
+      {
+        "id": 5,
+        "word": "after all",
+        "pinyin": "",
+        "meaning": "afinal"
+      }
+    ],
+    "id": "local-1772293699602-21",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Huh?",
+    "pinyin": "",
+    "translation": "A: Hã?",
+    "tokens": [
+      "A:",
+      "Huh",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Huh",
+        "pinyin": "",
+        "meaning": "Hã? (interjeição de surpresa/confusão)"
+      }
+    ],
+    "id": "local-1772293699602-22",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Ok, ok.",
+    "pinyin": "",
+    "translation": "Ok, ok.",
+    "tokens": [
+      "Ok",
+      ",",
+      "ok",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok, tudo bem"
+      }
+    ],
+    "id": "local-1772293699602-23",
+    "language": "Inglês"
+  }
+]

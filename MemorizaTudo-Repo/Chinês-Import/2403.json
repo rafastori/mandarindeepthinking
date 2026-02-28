@@ -1,0 +1,1970 @@
+[
+  {
+    "chinese": "A: 嘿，叫出租车的电话是多少？",
+    "pinyin": "Hēi, jiào chūzūchē de diànhuà shì duōshǎo?",
+    "translation": "A: Ei, qual é o número de telefone para chamar um táxi?",
+    "tokens": [
+      "嘿",
+      "，",
+      "叫",
+      "出租车",
+      "的",
+      "电话",
+      "是",
+      "多少",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "ei; olá"
+      },
+      {
+        "id": 2,
+        "word": "叫",
+        "pinyin": "jiào",
+        "meaning": "chamar; gritar"
+      },
+      {
+        "id": 3,
+        "word": "出租车",
+        "pinyin": "chūzūchē",
+        "meaning": "táxi"
+      },
+      {
+        "id": 4,
+        "word": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "多少",
+        "pinyin": "duōshǎo",
+        "meaning": "quanto; qual (número)"
+      }
+    ],
+    "id": "local-1772294347373-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 什么？",
+    "pinyin": "Shénme?",
+    "translation": "B: O quê?",
+    "tokens": [
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê; qual"
+      }
+    ],
+    "id": "local-1772294347373-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "现在谁还打电话叫出租车啊？",
+    "pinyin": "Xiànzài shuí hái dǎ diànhuà jiào chūzūchē a?",
+    "translation": "Hoje em dia quem ainda liga para chamar táxi?",
+    "tokens": [
+      "现在",
+      "谁",
+      "还",
+      "打电话",
+      "叫",
+      "出租车",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora; hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "谁",
+        "pinyin": "shuí",
+        "meaning": "quem"
+      },
+      {
+        "id": 3,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda; também"
+      },
+      {
+        "id": 4,
+        "word": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "meaning": "telefonar; ligar"
+      },
+      {
+        "id": 5,
+        "word": "叫",
+        "pinyin": "jiào",
+        "meaning": "chamar"
+      },
+      {
+        "id": 6,
+        "word": "出租车",
+        "pinyin": "chūzūchē",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa/interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那你都是怎么叫车的？",
+    "pinyin": "Nà nǐ dōu shì zěnme jiào chē de?",
+    "translation": "A: Então, como você chama um carro?",
+    "tokens": [
+      "那",
+      "你",
+      "都",
+      "是",
+      "怎么",
+      "叫车",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então; aquele"
+      },
+      {
+        "id": 2,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "叫车",
+        "pinyin": "jiào chē",
+        "meaning": "chamar carro/táxi"
+      }
+    ],
+    "id": "local-1772294347373-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 用叫车软件啊。",
+    "pinyin": "Yòng jiào chē ruǎnjiàn a.",
+    "translation": "B: Uso aplicativos de transporte!",
+    "tokens": [
+      "用",
+      "叫车",
+      "软件",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar; com"
+      },
+      {
+        "id": 2,
+        "word": "叫车软件",
+        "pinyin": "jiào chē ruǎnjiàn",
+        "meaning": "aplicativo de transporte"
+      },
+      {
+        "id": 3,
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software; aplicativo"
+      },
+      {
+        "id": 4,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa"
+      }
+    ],
+    "id": "local-1772294347373-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "下载一个在手机上就行了。",
+    "pinyin": "Xiàzài yīgè zài shǒujī shàng jiù xíng le.",
+    "translation": "É só baixar um no celular.",
+    "tokens": [
+      "下载",
+      "一个",
+      "在",
+      "手机",
+      "上",
+      "就",
+      "行",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "下载",
+        "pinyin": "xiàzài",
+        "meaning": "baixar; fazer download"
+      },
+      {
+        "id": 2,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um (classificador)"
+      },
+      {
+        "id": 3,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 4,
+        "word": "就...行了",
+        "pinyin": "jiù...xíng le",
+        "meaning": "já pode; é só"
+      }
+    ],
+    "id": "local-1772294347373-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦。",
+    "pinyin": "Ò.",
+    "translation": "A: Ah, entendi.",
+    "tokens": [
+      "哦",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ò",
+        "meaning": "oh; ah (entendi)"
+      }
+    ],
+    "id": "local-1772294347373-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "然后呢？",
+    "pinyin": "Ránhòu ne?",
+    "translation": "E depois?",
+    "tokens": [
+      "然后",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "depois; em seguida"
+      },
+      {
+        "id": 2,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa (e quanto a?)"
+      }
+    ],
+    "id": "local-1772294347373-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 输入手机号直接注册就可以了。",
+    "pinyin": "Shūrù shǒujīhào zhíjiē zhùcè jiù kěyǐ le.",
+    "translation": "B: É só inserir o número de celular e registrar diretamente.",
+    "tokens": [
+      "输入",
+      "手机号",
+      "直接",
+      "注册",
+      "就",
+      "可以",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "输入",
+        "pinyin": "shūrù",
+        "meaning": "inserir; digitar"
+      },
+      {
+        "id": 2,
+        "word": "手机号",
+        "pinyin": "shǒujīhào",
+        "meaning": "número de celular"
+      },
+      {
+        "id": 3,
+        "word": "直接",
+        "pinyin": "zhíjiē",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 4,
+        "word": "注册",
+        "pinyin": "zhùcè",
+        "meaning": "registrar; cadastrar"
+      },
+      {
+        "id": 5,
+        "word": "就可以",
+        "pinyin": "jiù kěyǐ",
+        "meaning": "já pode; então pode"
+      }
+    ],
+    "id": "local-1772294347373-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那他们怎么知道我在哪里啊？",
+    "pinyin": "Nà tāmen zěnme zhīdào wǒ zài nǎlǐ a?",
+    "translation": "A: Então, como eles sabem onde eu estou?",
+    "tokens": [
+      "那",
+      "他们",
+      "怎么",
+      "知道",
+      "我",
+      "在",
+      "哪里",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "saber"
+      },
+      {
+        "id": 3,
+        "word": "哪里",
+        "pinyin": "nǎlǐ",
+        "meaning": "onde"
+      },
+      {
+        "id": 4,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 通过GPS他们很快就能找到你的位置，附近的空车很快就过来。",
+    "pinyin": "Tōngguò GPS tāmen hěn kuài jiù néng zhǎodào nǐ de wèizhì, fùjìn de kōngchē hěn kuài jiù guòlái.",
+    "translation": "B: Através do GPS eles podem encontrar sua localização muito rapidamente, e os carros disponíveis próximos logo chegarão.",
+    "tokens": [
+      "通过",
+      "GPS",
+      "他们",
+      "很",
+      "快",
+      "就",
+      "能",
+      "找到",
+      "你",
+      "的",
+      "位置",
+      "，",
+      "附近",
+      "的",
+      "空车",
+      "很",
+      "快",
+      "就",
+      "过来",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "通过",
+        "pinyin": "tōngguò",
+        "meaning": "através de; por meio de"
+      },
+      {
+        "id": 2,
+        "word": "很快",
+        "pinyin": "hěn kuài",
+        "meaning": "muito rápido; em breve"
+      },
+      {
+        "id": 3,
+        "word": "找到",
+        "pinyin": "zhǎodào",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 4,
+        "word": "位置",
+        "pinyin": "wèizhì",
+        "meaning": "localização; posição"
+      },
+      {
+        "id": 5,
+        "word": "附近",
+        "pinyin": "fùjìn",
+        "meaning": "perto; nas proximidades"
+      },
+      {
+        "id": 6,
+        "word": "空车",
+        "pinyin": "kōngchē",
+        "meaning": "carro vazio (disponível)"
+      },
+      {
+        "id": 7,
+        "word": "过来",
+        "pinyin": "guòlái",
+        "meaning": "vir aqui; chegar"
+      }
+    ],
+    "id": "local-1772294347373-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "当然你也可以给他们留言。",
+    "pinyin": "Dāngrán nǐ yě kěyǐ gěi tāmen liúyán.",
+    "translation": "Claro, você também pode deixar uma mensagem para eles.",
+    "tokens": [
+      "当然",
+      "你",
+      "也",
+      "可以",
+      "给",
+      "他们",
+      "留言",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro; certamente"
+      },
+      {
+        "id": 2,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder; ser possível"
+      },
+      {
+        "id": 3,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "dar; para (preposição)"
+      },
+      {
+        "id": 4,
+        "word": "留言",
+        "pinyin": "liúyán",
+        "meaning": "deixar mensagem"
+      }
+    ],
+    "id": "local-1772294347373-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 听起来还不错嘛。",
+    "pinyin": "Tīng qǐlái hái bùcuò ma.",
+    "translation": "A: Parece bem bom, hein.",
+    "tokens": [
+      "听起来",
+      "还",
+      "不",
+      "错",
+      "嘛",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "听起来",
+        "pinyin": "tīng qǐlái",
+        "meaning": "parecer (ao ouvir); soar"
+      },
+      {
+        "id": 2,
+        "word": "还不错",
+        "pinyin": "hái bùcuò",
+        "meaning": "nada mal; bastante bom"
+      },
+      {
+        "id": 3,
+        "word": "嘛",
+        "pinyin": "ma",
+        "meaning": "partícula que indica obviedade/concordância"
+      }
+    ],
+    "id": "local-1772294347373-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你用过吗？",
+    "pinyin": "Nǐ yòng guò ma?",
+    "translation": "Você já usou?",
+    "tokens": [
+      "你",
+      "用",
+      "过",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      },
+      {
+        "id": 2,
+        "word": "过",
+        "pinyin": "guo",
+        "meaning": "partícula que indica experiência passada"
+      },
+      {
+        "id": 3,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-13",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 当然了。",
+    "pinyin": "Dāngrán le.",
+    "translation": "B: Claro que sim.",
+    "tokens": [
+      "当然",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro; certamente"
+      }
+    ],
+    "id": "local-1772294347373-14",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "最近老下雨，根本就打不到车。",
+    "pinyin": "Zuìjìn lǎo xiàyǔ, gēnběn jiù dǎ bú dào chē.",
+    "translation": "Ultimamente tem chovido muito, e é impossível conseguir um carro.",
+    "tokens": [
+      "最近",
+      "老",
+      "下雨",
+      "，",
+      "根本",
+      "就",
+      "打",
+      "不",
+      "到",
+      "车",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "meaning": "recentemente; ultimamente"
+      },
+      {
+        "id": 2,
+        "word": "老",
+        "pinyin": "lǎo",
+        "meaning": "sempre; frequentemente (neste contexto)"
+      },
+      {
+        "id": 3,
+        "word": "下雨",
+        "pinyin": "xiàyǔ",
+        "meaning": "chover"
+      },
+      {
+        "id": 4,
+        "word": "根本",
+        "pinyin": "gēnběn",
+        "meaning": "simplesmente; de modo algum (negativo)"
+      },
+      {
+        "id": 5,
+        "word": "打不到车",
+        "pinyin": "dǎ bú dào chē",
+        "meaning": "não conseguir pegar um carro/táxi"
+      },
+      {
+        "id": 6,
+        "word": "打到",
+        "pinyin": "dǎ dào",
+        "meaning": "conseguir (algo por meio de ação, ex. pegar táxi)"
+      }
+    ],
+    "id": "local-1772294347373-15",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这个软件又方便又快。",
+    "pinyin": "Zhège ruǎnjiàn yòu fāngbiàn yòu kuài.",
+    "translation": "Este aplicativo é conveniente e rápido.",
+    "tokens": [
+      "这个",
+      "软件",
+      "又",
+      "方便",
+      "又",
+      "快",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este; esta"
+      },
+      {
+        "id": 2,
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software; aplicativo"
+      },
+      {
+        "id": 3,
+        "word": "又...又...",
+        "pinyin": "yòu...yòu...",
+        "meaning": "tanto...quanto...; e...e..."
+      },
+      {
+        "id": 4,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente"
+      },
+      {
+        "id": 5,
+        "word": "快",
+        "pinyin": "kuài",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772294347373-16",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我下次也试试。",
+    "pinyin": "Wǒ xià cì yě shìshi.",
+    "translation": "A: Vou experimentar da próxima vez também.",
+    "tokens": [
+      "我",
+      "下次",
+      "也",
+      "试试",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "下次",
+        "pinyin": "xià cì",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 2,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "试试",
+        "pinyin": "shìshi",
+        "meaning": "tentar; experimentar (reduplicação do verbo)"
+      }
+    ],
+    "id": "local-1772294347373-17",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "怎么付钱啊？",
+    "pinyin": "Zěnme fù qián a?",
+    "translation": "Como se paga?",
+    "tokens": [
+      "怎么",
+      "付钱",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 2,
+        "word": "付钱",
+        "pinyin": "fù qián",
+        "meaning": "pagar"
+      },
+      {
+        "id": 3,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-18",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 可以用现金也可以用手机支付宝付钱。",
+    "pinyin": "Kěyǐ yòng xiànjīn yě kěyǐ yòng shǒujī zhīfùbǎo fù qián.",
+    "translation": "B: Pode-se usar dinheiro em espécie ou pagar com Alipay no celular.",
+    "tokens": [
+      "可以",
+      "用",
+      "现金",
+      "也",
+      "可以",
+      "用",
+      "手机",
+      "支付宝",
+      "付钱",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder; ser possível"
+      },
+      {
+        "id": 2,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      },
+      {
+        "id": 3,
+        "word": "现金",
+        "pinyin": "xiànjīn",
+        "meaning": "dinheiro em espécie"
+      },
+      {
+        "id": 4,
+        "word": "支付宝",
+        "pinyin": "Zhīfùbǎo",
+        "meaning": "Alipay (plataforma de pagamento)"
+      },
+      {
+        "id": 5,
+        "word": "手机支付宝",
+        "pinyin": "shǒujī zhīfùbǎo",
+        "meaning": "Alipay no celular"
+      },
+      {
+        "id": 6,
+        "word": "付钱",
+        "pinyin": "fù qián",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772294347373-19",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有时候还能便宜五块钱呢。",
+    "pinyin": "Yǒu shíhou hái néng piányi wǔ kuài qián ne.",
+    "translation": "Às vezes ainda pode ser cinco yuans mais barato.",
+    "tokens": [
+      "有",
+      "时候",
+      "还",
+      "能",
+      "便宜",
+      "五",
+      "块钱",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有时候",
+        "pinyin": "yǒu shíhou",
+        "meaning": "às vezes"
+      },
+      {
+        "id": 2,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda; também"
+      },
+      {
+        "id": 3,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder; ser capaz de"
+      },
+      {
+        "id": 4,
+        "word": "便宜",
+        "pinyin": "piányi",
+        "meaning": "barato; mais barato"
+      },
+      {
+        "id": 5,
+        "word": "五块钱",
+        "pinyin": "wǔ kuài qián",
+        "meaning": "cinco yuans (moeda chinesa)"
+      },
+      {
+        "id": 6,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula exclamativa (surpresa, ênfase)"
+      }
+    ],
+    "id": "local-1772294347373-20",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 真的啊？",
+    "pinyin": "Zhēnde a?",
+    "translation": "A: Sério?",
+    "tokens": [
+      "真的",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "de verdade; sério"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula interrogativa/exclamativa"
+      }
+    ],
+    "id": "local-1772294347373-21",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那我马上就用！",
+    "pinyin": "Nà wǒ mǎshàng jiù yòng!",
+    "translation": "Então vou usar agora mesmo!",
+    "tokens": [
+      "那",
+      "我",
+      "马上",
+      "就",
+      "用",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "马上",
+        "pinyin": "mǎshàng",
+        "meaning": "imediatamente; agora mesmo"
+      },
+      {
+        "id": 3,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772294347373-22",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 旋转、跳跃、滑行。",
+    "pinyin": "Xuánzhuǎn, tiàoyuè, huáxíng.",
+    "translation": "A: Girar, saltar, deslizar.",
+    "tokens": [
+      "旋转",
+      "、",
+      "跳跃",
+      "、",
+      "滑行",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "旋转",
+        "pinyin": "xuánzhuǎn",
+        "meaning": "girar; rotacionar"
+      },
+      {
+        "id": 2,
+        "word": "跳跃",
+        "pinyin": "tiàoyuè",
+        "meaning": "saltar; pular"
+      },
+      {
+        "id": 3,
+        "word": "滑行",
+        "pinyin": "huáxíng",
+        "meaning": "deslizar; patinar"
+      }
+    ],
+    "id": "local-1772294347373-23",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哇，金妍儿的动作真是太漂亮了。",
+    "pinyin": "Wa, Jīn Yán'ér de dòngzuò zhēnshi tài piàoliang le.",
+    "translation": "Uau, os movimentos da Kim Yuna são realmente lindos demais.",
+    "tokens": [
+      "哇",
+      "，",
+      "金妍儿",
+      "的",
+      "动作",
+      "真是",
+      "太",
+      "漂亮",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哇",
+        "pinyin": "wa",
+        "meaning": "uau; oh"
+      },
+      {
+        "id": 2,
+        "word": "金妍儿",
+        "pinyin": "Jīn Yán'ér",
+        "meaning": "Kim Yuna (nome da atleta)"
+      },
+      {
+        "id": 3,
+        "word": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "movimento; ação"
+      },
+      {
+        "id": 4,
+        "word": "真是",
+        "pinyin": "zhēnshi",
+        "meaning": "realmente; de verdade"
+      },
+      {
+        "id": 5,
+        "word": "太...了",
+        "pinyin": "tài...le",
+        "meaning": "demais; muito"
+      },
+      {
+        "id": 6,
+        "word": "漂亮",
+        "pinyin": "piàoliang",
+        "meaning": "bonito; lindo"
+      }
+    ],
+    "id": "local-1772294347373-24",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你在看冬奥会的花样滑冰比赛啊？",
+    "pinyin": "Nǐ zài kàn dōng'àohuì de huāyàng huábīng bǐsài a?",
+    "translation": "B: Você está assistindo à competição de patinação artística dos Jogos Olímpicos de Inverno?",
+    "tokens": [
+      "你",
+      "在",
+      "看",
+      "冬奥会",
+      "的",
+      "花样滑冰",
+      "比赛",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "estar (fazendo algo); em"
+      },
+      {
+        "id": 2,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver; assistir"
+      },
+      {
+        "id": 3,
+        "word": "冬奥会",
+        "pinyin": "dōng'àohuì",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 4,
+        "word": "花样滑冰",
+        "pinyin": "huāyàng huábīng",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 5,
+        "word": "比赛",
+        "pinyin": "bǐsài",
+        "meaning": "competição; jogo"
+      },
+      {
+        "id": 6,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-25",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦，这不是那个韩国的花滑小神童吗？",
+    "pinyin": "Ò, zhè bú shì nàgè Hánguó de huāhuá xiǎo shéntóng ma?",
+    "translation": "Ah, não é aquela prodígio coreana da patinação artística?",
+    "tokens": [
+      "哦",
+      "，",
+      "这",
+      "不",
+      "是",
+      "那个",
+      "韩国",
+      "的",
+      "花滑",
+      "小神童",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ò",
+        "meaning": "oh; ah"
+      },
+      {
+        "id": 2,
+        "word": "不是",
+        "pinyin": "bú shì",
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "那个",
+        "pinyin": "nàgè",
+        "meaning": "aquele; aquela"
+      },
+      {
+        "id": 4,
+        "word": "韩国",
+        "pinyin": "Hánguó",
+        "meaning": "Coreia do Sul"
+      },
+      {
+        "id": 5,
+        "word": "花滑",
+        "pinyin": "huāhuá",
+        "meaning": "patinação artística (abreviação)"
+      },
+      {
+        "id": 6,
+        "word": "小神童",
+        "pinyin": "xiǎo shéntóng",
+        "meaning": "prodígio jovem; criança gênio"
+      },
+      {
+        "id": 7,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-26",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是啊。",
+    "pinyin": "Shì a.",
+    "translation": "A: É sim.",
+    "tokens": [
+      "是",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser; sim"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula de afirmação"
+      }
+    ],
+    "id": "local-1772294347373-27",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你看她的动作多优美！",
+    "pinyin": "Nǐ kàn tā de dòngzuò duō yōuměi!",
+    "translation": "Olha só como os movimentos dela são graciosos!",
+    "tokens": [
+      "你",
+      "看",
+      "她",
+      "的",
+      "动作",
+      "多",
+      "优美",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver; olhar"
+      },
+      {
+        "id": 2,
+        "word": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "movimento"
+      },
+      {
+        "id": 3,
+        "word": "多",
+        "pinyin": "duō",
+        "meaning": "como (em exclamações, \"tão\")"
+      },
+      {
+        "id": 4,
+        "word": "优美",
+        "pinyin": "yōuměi",
+        "meaning": "gracioso; elegante"
+      }
+    ],
+    "id": "local-1772294347373-28",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不过这届冬奥会她没拿到金牌啊。",
+    "pinyin": "Búguò zhè jiè dōng'àohuì tā méi nádào jīnpái a.",
+    "translation": "B: Mas nesta edição dos Jogos de Inverno ela não ganhou a medalha de ouro.",
+    "tokens": [
+      "不过",
+      "这",
+      "届",
+      "冬奥会",
+      "她",
+      "没",
+      "拿到",
+      "金牌",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不过",
+        "pinyin": "búguò",
+        "meaning": "mas; no entanto"
+      },
+      {
+        "id": 2,
+        "word": "届",
+        "pinyin": "jiè",
+        "meaning": "classificador para sessões, edições de eventos"
+      },
+      {
+        "id": 3,
+        "word": "冬奥会",
+        "pinyin": "dōng'àohuì",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 4,
+        "word": "没",
+        "pinyin": "méi",
+        "meaning": "não (para ações passadas ou existência)"
+      },
+      {
+        "id": 5,
+        "word": "拿到",
+        "pinyin": "nádào",
+        "meaning": "conseguir; ganhar (algo que se pega)"
+      },
+      {
+        "id": 6,
+        "word": "金牌",
+        "pinyin": "jīnpái",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 7,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa"
+      }
+    ],
+    "id": "local-1772294347373-29",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我觉得四年前温哥华冬奥会那会儿她才是巅峰期。",
+    "pinyin": "Wǒ juéde sì nián qián Wēngēhuá dōng'àohuì nàhuìr tā cái shì diānfēngqī.",
+    "translation": "Eu acho que quatro anos atrás, nos Jogos Olímpicos de Inverno de Vancouver, era o auge dela.",
+    "tokens": [
+      "我",
+      "觉得",
+      "四年",
+      "前",
+      "温哥华",
+      "冬奥会",
+      "那会儿",
+      "她",
+      "才",
+      "是",
+      "巅峰期",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar; sentir"
+      },
+      {
+        "id": 2,
+        "word": "四年前",
+        "pinyin": "sì nián qián",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 3,
+        "word": "温哥华",
+        "pinyin": "Wēngēhuá",
+        "meaning": "Vancouver"
+      },
+      {
+        "id": 4,
+        "word": "冬奥会",
+        "pinyin": "dōng'àohuì",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 5,
+        "word": "那会儿",
+        "pinyin": "nàhuìr",
+        "meaning": "naquela época; naquele momento"
+      },
+      {
+        "id": 6,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só então; só (indica algo tardio ou com condição)"
+      },
+      {
+        "id": 7,
+        "word": "巅峰期",
+        "pinyin": "diānfēngqī",
+        "meaning": "período de pico; auge"
+      }
+    ],
+    "id": "local-1772294347373-30",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我心里，她永远都是冰上女王！",
+    "pinyin": "Wǒ xīnlǐ, tā yǒngyuǎn dōu shì bīng shàng nǚwáng!",
+    "translation": "A: No meu coração, ela sempre será a rainha do gelo!",
+    "tokens": [
+      "我",
+      "心里",
+      "，",
+      "她",
+      "永远",
+      "都",
+      "是",
+      "冰上",
+      "女王",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "心里",
+        "pinyin": "xīnlǐ",
+        "meaning": "no coração; na mente"
+      },
+      {
+        "id": 2,
+        "word": "永远",
+        "pinyin": "yǒngyuǎn",
+        "meaning": "para sempre; eternamente"
+      },
+      {
+        "id": 3,
+        "word": "冰上",
+        "pinyin": "bīng shàng",
+        "meaning": "no gelo; sobre o gelo"
+      },
+      {
+        "id": 4,
+        "word": "女王",
+        "pinyin": "nǚwáng",
+        "meaning": "rainha"
+      }
+    ],
+    "id": "local-1772294347373-31",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "虽然这次没拿到金牌，但她的表现依然很出色。",
+    "pinyin": "Suīrán zhè cì méi nádào jīnpái, dàn tā de biǎoxiàn yīrán hěn chūsè.",
+    "translation": "Embora desta vez ela não tenha ganhado a medalha de ouro, seu desempenho ainda foi muito notável.",
+    "tokens": [
+      "虽然",
+      "这",
+      "次",
+      "没",
+      "拿到",
+      "金牌",
+      "，",
+      "但",
+      "她",
+      "的",
+      "表现",
+      "依然",
+      "很",
+      "出色",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "虽然",
+        "pinyin": "suīrán",
+        "meaning": "embora; apesar de"
+      },
+      {
+        "id": 2,
+        "word": "这次",
+        "pinyin": "zhè cì",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 3,
+        "word": "没拿到",
+        "pinyin": "méi nádào",
+        "meaning": "não ter ganhado/conseguido"
+      },
+      {
+        "id": 4,
+        "word": "金牌",
+        "pinyin": "jīnpái",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 5,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "mas; porém"
+      },
+      {
+        "id": 6,
+        "word": "表现",
+        "pinyin": "biǎoxiàn",
+        "meaning": "desempenho; performance"
+      },
+      {
+        "id": 7,
+        "word": "依然",
+        "pinyin": "yīrán",
+        "meaning": "ainda; apesar de tudo"
+      },
+      {
+        "id": 8,
+        "word": "出色",
+        "pinyin": "chūsè",
+        "meaning": "excelente; notável"
+      }
+    ],
+    "id": "local-1772294347373-32",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "可惜这次冬奥会之后她就要退役了。",
+    "pinyin": "Kěxī zhè cì dōng'àohuì zhīhòu tā jiù yào tuìyì le.",
+    "translation": "Que pena que depois desta Olimpíada de Inverno ela vai se aposentar.",
+    "tokens": [
+      "可惜",
+      "这",
+      "次",
+      "冬奥会",
+      "之后",
+      "她",
+      "就",
+      "要",
+      "退役",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可惜",
+        "pinyin": "kěxī",
+        "meaning": "que pena; lamentável"
+      },
+      {
+        "id": 2,
+        "word": "冬奥会",
+        "pinyin": "dōng'àohuì",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "之后",
+        "pinyin": "zhīhòu",
+        "meaning": "depois de"
+      },
+      {
+        "id": 4,
+        "word": "就要...了",
+        "pinyin": "jiù yào...le",
+        "meaning": "estar prestes a (acontecer)"
+      },
+      {
+        "id": 5,
+        "word": "退役",
+        "pinyin": "tuìyì",
+        "meaning": "se aposentar (de uma carreira, ex. militar, esportiva)"
+      }
+    ],
+    "id": "local-1772294347373-33",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这次的女单冠军索特尼科娃也很不错啊。",
+    "pinyin": "Zhè cì de nǚ dān guànjūn Suǒtèníkēwá yě hěn bùcuò a.",
+    "translation": "B: A campeã individual feminina desta vez, Sotnikova, também é muito boa.",
+    "tokens": [
+      "这",
+      "次",
+      "的",
+      "女单",
+      "冠军",
+      "索特尼科娃",
+      "也",
+      "很",
+      "不",
+      "错",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这次",
+        "pinyin": "zhè cì",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 2,
+        "word": "女单",
+        "pinyin": "nǚ dān",
+        "meaning": "individual feminino (abreviação de 女子单人)"
+      },
+      {
+        "id": 3,
+        "word": "冠军",
+        "pinyin": "guànjūn",
+        "meaning": "campeão; campeã"
+      },
+      {
+        "id": 4,
+        "word": "索特尼科娃",
+        "pinyin": "Suǒtèníkēwá",
+        "meaning": "Sotnikova (nome da atleta)"
+      },
+      {
+        "id": 5,
+        "word": "很不错",
+        "pinyin": "hěn bùcuò",
+        "meaning": "muito bom"
+      }
+    ],
+    "id": "local-1772294347373-34",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "而且她才17岁呢。",
+    "pinyin": "Érqiě tā cái shíqī suì ne.",
+    "translation": "Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "而且",
+      "她",
+      "才",
+      "17",
+      "岁",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "而且",
+        "pinyin": "érqiě",
+        "meaning": "além disso; e também"
+      },
+      {
+        "id": 2,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "apenas; somente (indica quantidade pequena ou idade jovem)"
+      },
+      {
+        "id": 3,
+        "word": "岁",
+        "pinyin": "suì",
+        "meaning": "ano de idade"
+      },
+      {
+        "id": 4,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula exclamativa (ênfase, surpresa)"
+      }
+    ],
+    "id": "local-1772294347373-35",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是啊。",
+    "pinyin": "Shì a.",
+    "translation": "A: É verdade.",
+    "tokens": [
+      "是",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser; sim"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula de afirmação"
+      }
+    ],
+    "id": "local-1772294347373-36",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哎，花样滑冰这项运动真是优雅。",
+    "pinyin": "Āi, huāyàng huábīng zhè xiàng yùndòng zhēnshi yōuyǎ.",
+    "translation": "Ai, a patinação artística é um esporte tão elegante.",
+    "tokens": [
+      "哎",
+      "，",
+      "花样滑冰",
+      "这",
+      "项",
+      "运动",
+      "真是",
+      "优雅",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哎",
+        "pinyin": "āi",
+        "meaning": "ai; ah (interjeição de surpresa/suspiro)"
+      },
+      {
+        "id": 2,
+        "word": "花样滑冰",
+        "pinyin": "huāyàng huábīng",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "项",
+        "pinyin": "xiàng",
+        "meaning": "classificador para itens, projetos, esportes"
+      },
+      {
+        "id": 4,
+        "word": "运动",
+        "pinyin": "yùndòng",
+        "meaning": "esporte; movimento"
+      },
+      {
+        "id": 5,
+        "word": "真是",
+        "pinyin": "zhēnshi",
+        "meaning": "realmente; de verdade"
+      },
+      {
+        "id": 6,
+        "word": "优雅",
+        "pinyin": "yōuyǎ",
+        "meaning": "elegante; gracioso"
+      }
+    ],
+    "id": "local-1772294347373-37",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你说我还能学吗？",
+    "pinyin": "Nǐ shuō wǒ hái néng xué ma?",
+    "translation": "Você acha que eu ainda consigo aprender?",
+    "tokens": [
+      "你",
+      "说",
+      "我",
+      "还",
+      "能",
+      "学",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "dizer; falar"
+      },
+      {
+        "id": 2,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder; ser capaz de"
+      },
+      {
+        "id": 4,
+        "word": "学",
+        "pinyin": "xué",
+        "meaning": "aprender; estudar"
+      },
+      {
+        "id": 5,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772294347373-38",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你？",
+    "pinyin": "Nǐ?",
+    "translation": "B: Você?",
+    "tokens": [
+      "你",
+      "？"
+    ],
+    "keywords": [],
+    "id": "local-1772294347373-39",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "算了吧。",
+    "pinyin": "Suàn le ba.",
+    "translation": "Deixa pra lá. / Esqueça.",
+    "tokens": [
+      "算",
+      "了",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "算了吧",
+        "pinyin": "suàn le ba",
+        "meaning": "deixa pra lá; esqueça; desista"
+      }
+    ],
+    "id": "local-1772294347373-40",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你看电视上这些运动员，都是从小开始学的。",
+    "pinyin": "Nǐ kàn diànshì shàng zhèxiē yùndòngyuán, dōu shì cóng xiǎo kāishǐ xué de.",
+    "translation": "Olha só esses atletas na televisão, todos começaram a aprender desde pequenos.",
+    "tokens": [
+      "你",
+      "看",
+      "电视",
+      "上",
+      "这些",
+      "运动员",
+      "，",
+      "都",
+      "是",
+      "从小",
+      "开始",
+      "学",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver; assistir"
+      },
+      {
+        "id": 2,
+        "word": "电视",
+        "pinyin": "diànshì",
+        "meaning": "televisão"
+      },
+      {
+        "id": 3,
+        "word": "运动员",
+        "pinyin": "yùndòngyuán",
+        "meaning": "atleta"
+      },
+      {
+        "id": 4,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos; ambos"
+      },
+      {
+        "id": 5,
+        "word": "从小",
+        "pinyin": "cóng xiǎo",
+        "meaning": "desde pequeno; desde a infância"
+      },
+      {
+        "id": 6,
+        "word": "开始",
+        "pinyin": "kāishǐ",
+        "meaning": "começar"
+      },
+      {
+        "id": 7,
+        "word": "学",
+        "pinyin": "xué",
+        "meaning": "aprender"
+      }
+    ],
+    "id": "local-1772294347373-41",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你现在才学，晚啦。",
+    "pinyin": "Nǐ xiànzài cái xué, wǎn la.",
+    "translation": "Você só vai aprender agora, é tarde demais.",
+    "tokens": [
+      "你",
+      "现在",
+      "才",
+      "学",
+      "，",
+      "晚",
+      "啦",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só; apenas (indica algo tardio)"
+      },
+      {
+        "id": 3,
+        "word": "学",
+        "pinyin": "xué",
+        "meaning": "aprender"
+      },
+      {
+        "id": 4,
+        "word": "晚",
+        "pinyin": "wǎn",
+        "meaning": "tarde"
+      },
+      {
+        "id": 5,
+        "word": "啦",
+        "pinyin": "la",
+        "meaning": "partícula exclamativa (combinação de 了 + 啊)"
+      }
+    ],
+    "id": "local-1772294347373-42",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我又不是要比赛。",
+    "pinyin": "Wǒ yòu bú shì yào bǐsài.",
+    "translation": "A: Eu não quero competir, afinal.",
+    "tokens": [
+      "我",
+      "又",
+      "不",
+      "是",
+      "要",
+      "比赛",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "又不是",
+        "pinyin": "yòu bú shì",
+        "meaning": "não é como se (para refutar algo, implicando 'afinal')"
+      },
+      {
+        "id": 2,
+        "word": "比赛",
+        "pinyin": "bǐsài",
+        "meaning": "competir; competição"
+      }
+    ],
+    "id": "local-1772294347373-43",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我就是想玩玩而已。",
+    "pinyin": "Wǒ jiù shì xiǎng wánwan éryǐ.",
+    "translation": "Eu só quero me divertir um pouco.",
+    "tokens": [
+      "我",
+      "就是",
+      "想",
+      "玩玩",
+      "而已",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就是",
+        "pinyin": "jiù shì",
+        "meaning": "é que; exatamente (para enfatizar)"
+      },
+      {
+        "id": 2,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer; pensar"
+      },
+      {
+        "id": 3,
+        "word": "玩玩",
+        "pinyin": "wánwan",
+        "meaning": "brincar um pouco; se divertir um pouco (reduplicação)"
+      },
+      {
+        "id": 4,
+        "word": "而已",
+        "pinyin": "éryǐ",
+        "meaning": "apenas; só isso"
+      }
+    ],
+    "id": "local-1772294347373-44",
+    "language": "Chinês"
+  }
+]

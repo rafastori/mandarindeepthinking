@@ -1,0 +1,954 @@
+[
+  {
+    "chinese": "A: お嬢さん、何名様ですか？",
+    "pinyin": "",
+    "translation": "A: Moça, quantas pessoas são?",
+    "tokens": [
+      "お嬢さん",
+      "、",
+      "何名様",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お嬢さん",
+        "pinyin": "",
+        "meaning": "moça; senhorita (formal)"
+      },
+      {
+        "id": 2,
+        "word": "何名様",
+        "pinyin": "",
+        "meaning": "quantas pessoas (formal)"
+      },
+      {
+        "id": 3,
+        "word": "ですか",
+        "pinyin": "",
+        "meaning": "é?"
+      }
+    ],
+    "id": "local-1772295737555-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 二人です。",
+    "pinyin": "",
+    "translation": "B: Duas pessoas.",
+    "tokens": [
+      "二人",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "二人",
+        "pinyin": "",
+        "meaning": "duas pessoas"
+      },
+      {
+        "id": 2,
+        "word": "です",
+        "pinyin": "",
+        "meaning": "é/são"
+      }
+    ],
+    "id": "local-1772295737555-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: はい、これが整理番号です。少々お待ちください。",
+    "pinyin": "",
+    "translation": "A: Sim, este é o seu número de fila. Por favor, aguarde um momento.",
+    "tokens": [
+      "はい",
+      "、",
+      "これ",
+      "が",
+      "整理番号",
+      "です",
+      "。",
+      "少々",
+      "お待ち",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 3,
+        "word": "整理番号",
+        "pinyin": "",
+        "meaning": "número de fila; ticket de organização"
+      },
+      {
+        "id": 4,
+        "word": "少々",
+        "pinyin": "",
+        "meaning": "um pouco; um momento"
+      },
+      {
+        "id": 5,
+        "word": "お待ちください",
+        "pinyin": "",
+        "meaning": "por favor, aguarde"
+      }
+    ],
+    "id": "local-1772295737555-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: どのくらい待てばいいですか？",
+    "pinyin": "",
+    "translation": "B: Quanto tempo devo esperar?",
+    "tokens": [
+      "どのくらい",
+      "待て",
+      "ば",
+      "いい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どのくらい",
+        "pinyin": "",
+        "meaning": "quanto tempo; quão longo"
+      },
+      {
+        "id": 2,
+        "word": "待つ",
+        "pinyin": "",
+        "meaning": "esperar"
+      },
+      {
+        "id": 3,
+        "word": "いい",
+        "pinyin": "",
+        "meaning": "bom; ok"
+      }
+    ],
+    "id": "local-1772295737555-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 確実ではありません。このソフトウェアをダウンロードして、散歩に行ってください。列の状況を教えてくれます。",
+    "pinyin": "",
+    "translation": "A: Não é certo. Por favor, baixe este software e vá dar uma volta. Ele irá informá-lo sobre a situação da fila.",
+    "tokens": [
+      "確実",
+      "で",
+      "は",
+      "ありません",
+      "。",
+      "この",
+      "ソフトウェア",
+      "を",
+      "ダウンロード",
+      "し",
+      "て",
+      "、",
+      "散歩",
+      "に",
+      "行っ",
+      "て",
+      "ください",
+      "。",
+      "列",
+      "の",
+      "状況",
+      "を",
+      "教え",
+      "て",
+      "くれ",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "確実",
+        "pinyin": "",
+        "meaning": "certo; seguro"
+      },
+      {
+        "id": 2,
+        "word": "ではない",
+        "pinyin": "",
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "ソフトウェア",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 4,
+        "word": "ダウンロードする",
+        "pinyin": "",
+        "meaning": "fazer o download"
+      },
+      {
+        "id": 5,
+        "word": "散歩",
+        "pinyin": "",
+        "meaning": "passeio; caminhada"
+      },
+      {
+        "id": 6,
+        "word": "行く",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 7,
+        "word": "ください",
+        "pinyin": "",
+        "meaning": "por favor (pedido)"
+      },
+      {
+        "id": 8,
+        "word": "列",
+        "pinyin": "",
+        "meaning": "fila"
+      },
+      {
+        "id": 9,
+        "word": "状況",
+        "pinyin": "",
+        "meaning": "situação"
+      },
+      {
+        "id": 10,
+        "word": "教える",
+        "pinyin": "",
+        "meaning": "ensinar; informar"
+      },
+      {
+        "id": 11,
+        "word": "くれる",
+        "pinyin": "",
+        "meaning": "dar (para o falante); fazer um favor"
+      }
+    ],
+    "id": "local-1772295737555-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: おや！ねえ、これは何ですか？あの黒いもの。",
+    "pinyin": "",
+    "translation": "B: Oh! Ei, o que é isso? Aquela coisa preta.",
+    "tokens": [
+      "おや",
+      "！",
+      "ねえ",
+      "、",
+      "これ",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？",
+      "あの",
+      "黒い",
+      "もの",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "おや",
+        "pinyin": "",
+        "meaning": "oh; caramba"
+      },
+      {
+        "id": 2,
+        "word": "ねえ",
+        "pinyin": "",
+        "meaning": "ei; escute"
+      },
+      {
+        "id": 3,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 4,
+        "word": "何",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 5,
+        "word": "あの",
+        "pinyin": "",
+        "meaning": "aquele"
+      },
+      {
+        "id": 6,
+        "word": "黒い",
+        "pinyin": "",
+        "meaning": "preto"
+      },
+      {
+        "id": 7,
+        "word": "もの",
+        "pinyin": "",
+        "meaning": "coisa"
+      }
+    ],
+    "id": "local-1772295737555-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それはQRコードです。あなたは本当に時代遅れですね。携帯電話でスキャンすれば、自動的にダウンロードページにリダイレクトされます。",
+    "pinyin": "",
+    "translation": "A: Isso é um código QR. Você está realmente desatualizado, não é? Se você escanear com seu celular, será automaticamente redirecionado para a página de download.",
+    "tokens": [
+      "それ",
+      "は",
+      "QRコード",
+      "です",
+      "。",
+      "あなた",
+      "は",
+      "本当に",
+      "時代遅れ",
+      "です",
+      "ね",
+      "。",
+      "携帯電話",
+      "で",
+      "スキャン",
+      "すれ",
+      "ば",
+      "、",
+      "自動的",
+      "に",
+      "ダウンロードページ",
+      "に",
+      "リダイレクト",
+      "され",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "QRコード",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 3,
+        "word": "あなた",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 4,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente; de verdade"
+      },
+      {
+        "id": 5,
+        "word": "時代遅れ",
+        "pinyin": "",
+        "meaning": "antiquado; desatualizado"
+      },
+      {
+        "id": 6,
+        "word": "ですね",
+        "pinyin": "",
+        "meaning": "não é mesmo? (partícula de confirmação)"
+      },
+      {
+        "id": 7,
+        "word": "携帯電話",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 8,
+        "word": "スキャンする",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 9,
+        "word": "自動的に",
+        "pinyin": "",
+        "meaning": "automaticamente"
+      },
+      {
+        "id": 10,
+        "word": "ダウンロードページ",
+        "pinyin": "",
+        "meaning": "página de download"
+      },
+      {
+        "id": 11,
+        "word": "リダイレクトされる",
+        "pinyin": "",
+        "meaning": "ser redirecionado"
+      }
+    ],
+    "id": "local-1772295737555-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わあ、なんて進んでるの！",
+    "pinyin": "",
+    "translation": "B: Uau, que avançado!",
+    "tokens": [
+      "わあ",
+      "、",
+      "なんて",
+      "進ん",
+      "でる",
+      "の",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わあ",
+        "pinyin": "",
+        "meaning": "uau"
+      },
+      {
+        "id": 2,
+        "word": "なんて",
+        "pinyin": "",
+        "meaning": "quão; que (exclamação)"
+      },
+      {
+        "id": 3,
+        "word": "進む",
+        "pinyin": "",
+        "meaning": "avançar; progredir"
+      },
+      {
+        "id": 4,
+        "word": "〜ている",
+        "pinyin": "",
+        "meaning": "estar ~ndo"
+      }
+    ],
+    "id": "local-1772295737555-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: QRコードはよく使われますよ！先週コンサートに行った時、チケットは使いませんでした。QRコードだけで済みました。",
+    "pinyin": "",
+    "translation": "C: Códigos QR são muito usados! Na semana passada, quando fui a um concerto, não usei ingresso. Apenas o código QR foi suficiente.",
+    "tokens": [
+      "QRコード",
+      "は",
+      "よく",
+      "使われ",
+      "ます",
+      "よ",
+      "！",
+      "先週",
+      "コンサート",
+      "に",
+      "行っ",
+      "た",
+      "時",
+      "、",
+      "チケット",
+      "は",
+      "使い",
+      "ません",
+      "でした",
+      "。",
+      "QRコード",
+      "だけ",
+      "で",
+      "済み",
+      "まし",
+      "た",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "QRコード",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 2,
+        "word": "よく",
+        "pinyin": "",
+        "meaning": "frequentemente; bem"
+      },
+      {
+        "id": 3,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "〜れる",
+        "pinyin": "",
+        "meaning": "forma passiva (ser ~do)"
+      },
+      {
+        "id": 5,
+        "word": "よ",
+        "pinyin": "",
+        "meaning": "(partícula de ênfase/informação)"
+      },
+      {
+        "id": 6,
+        "word": "先週",
+        "pinyin": "",
+        "meaning": "semana passada"
+      },
+      {
+        "id": 7,
+        "word": "コンサート",
+        "pinyin": "",
+        "meaning": "concerto"
+      },
+      {
+        "id": 8,
+        "word": "行く",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 9,
+        "word": "時",
+        "pinyin": "",
+        "meaning": "quando; tempo"
+      },
+      {
+        "id": 10,
+        "word": "チケット",
+        "pinyin": "",
+        "meaning": "ingresso; bilhete"
+      },
+      {
+        "id": 11,
+        "word": "〜ません",
+        "pinyin": "",
+        "meaning": "negativo formal"
+      },
+      {
+        "id": 12,
+        "word": "だけ",
+        "pinyin": "",
+        "meaning": "apenas; somente"
+      },
+      {
+        "id": 13,
+        "word": "済む",
+        "pinyin": "",
+        "meaning": "terminar; resolver; ser suficiente"
+      }
+    ],
+    "id": "local-1772295737555-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: たくさんの店がこれらを持っているのを見ました。スキャンすれば、製品の情報が得られるのですか？",
+    "pinyin": "",
+    "translation": "B: Vi muitas lojas que têm isso. Se escanear, consigo informações do produto?",
+    "tokens": [
+      "たくさん",
+      "の",
+      "店",
+      "が",
+      "これら",
+      "を",
+      "持っ",
+      "て",
+      "いる",
+      "の",
+      "を",
+      "見",
+      "まし",
+      "た",
+      "。",
+      "スキャン",
+      "すれ",
+      "ば",
+      "、",
+      "製品",
+      "の",
+      "情報",
+      "が",
+      "得",
+      "られ",
+      "る",
+      "の",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "たくさん",
+        "pinyin": "",
+        "meaning": "muito; muitos"
+      },
+      {
+        "id": 2,
+        "word": "店",
+        "pinyin": "",
+        "meaning": "loja"
+      },
+      {
+        "id": 3,
+        "word": "これら",
+        "pinyin": "",
+        "meaning": "estes (plural)"
+      },
+      {
+        "id": 4,
+        "word": "持つ",
+        "pinyin": "",
+        "meaning": "ter; segurar"
+      },
+      {
+        "id": 5,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver"
+      },
+      {
+        "id": 6,
+        "word": "スキャンする",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 7,
+        "word": "製品",
+        "pinyin": "",
+        "meaning": "produto"
+      },
+      {
+        "id": 8,
+        "word": "情報",
+        "pinyin": "",
+        "meaning": "informação"
+      },
+      {
+        "id": 9,
+        "word": "得る",
+        "pinyin": "",
+        "meaning": "obter; conseguir"
+      },
+      {
+        "id": 10,
+        "word": "〜られる",
+        "pinyin": "",
+        "meaning": "ser capaz de (potencial); ser ~do (passiva)"
+      },
+      {
+        "id": 11,
+        "word": "〜のですか",
+        "pinyin": "",
+        "meaning": "é que ~? (pergunta explicativa)"
+      }
+    ],
+    "id": "local-1772295737555-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: はい。多くの企業が広告にQRコードを使っています。",
+    "pinyin": "",
+    "translation": "C: Sim. Muitas empresas usam códigos QR em seus anúncios.",
+    "tokens": [
+      "はい",
+      "。",
+      "多く",
+      "の",
+      "企業",
+      "が",
+      "広告",
+      "に",
+      "QRコード",
+      "を",
+      "使っ",
+      "て",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "多く",
+        "pinyin": "",
+        "meaning": "muitos"
+      },
+      {
+        "id": 3,
+        "word": "企業",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "広告",
+        "pinyin": "",
+        "meaning": "anúncio; propaganda"
+      },
+      {
+        "id": 5,
+        "word": "QRコード",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772295737555-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは本当に便利ですね。ねえ、あそこにQRコードがあります。スキャンして何であるか見てきます。",
+    "pinyin": "",
+    "translation": "B: Isso é realmente conveniente, não é? Ei, há um código QR ali. Vou escanear para ver o que é.",
+    "tokens": [
+      "それ",
+      "は",
+      "本当に",
+      "便利",
+      "です",
+      "ね",
+      "。",
+      "ねえ",
+      "、",
+      "あの",
+      "そこ",
+      "に",
+      "QRコード",
+      "が",
+      "あり",
+      "ます",
+      "。",
+      "スキャン",
+      "し",
+      "て",
+      "何",
+      "で",
+      "ある",
+      "か",
+      "見",
+      "て",
+      "来",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente; de verdade"
+      },
+      {
+        "id": 3,
+        "word": "便利",
+        "pinyin": "",
+        "meaning": "conveniente; útil"
+      },
+      {
+        "id": 4,
+        "word": "ですね",
+        "pinyin": "",
+        "meaning": "não é mesmo? (partícula de confirmação)"
+      },
+      {
+        "id": 5,
+        "word": "ねえ",
+        "pinyin": "",
+        "meaning": "ei; escute"
+      },
+      {
+        "id": 6,
+        "word": "あそこ",
+        "pinyin": "",
+        "meaning": "lá; ali"
+      },
+      {
+        "id": 7,
+        "word": "QRコード",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 8,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "haver; existir (para objetos inanimados)"
+      },
+      {
+        "id": 9,
+        "word": "スキャンする",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 10,
+        "word": "何であるか",
+        "pinyin": "",
+        "meaning": "o que é"
+      },
+      {
+        "id": 11,
+        "word": "見てくる",
+        "pinyin": "",
+        "meaning": "ir ver e voltar"
+      }
+    ],
+    "id": "local-1772295737555-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: やみくもにスキャンしないでください。一部のQRコードにはウイルスが含まれている可能性があります。",
+    "pinyin": "",
+    "translation": "C: Não escaneie cegamente. Alguns códigos QR podem conter vírus.",
+    "tokens": [
+      "やみくも",
+      "に",
+      "スキャン",
+      "し",
+      "ない",
+      "で",
+      "ください",
+      "。",
+      "一部",
+      "の",
+      "QRコード",
+      "に",
+      "は",
+      "ウイルス",
+      "が",
+      "含ま",
+      "れ",
+      "て",
+      "いる",
+      "可能",
+      "性",
+      "が",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "やみくもに",
+        "pinyin": "",
+        "meaning": "cegamente; indiscriminadamente"
+      },
+      {
+        "id": 2,
+        "word": "スキャンする",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 3,
+        "word": "〜ないでください",
+        "pinyin": "",
+        "meaning": "por favor, não ~"
+      },
+      {
+        "id": 4,
+        "word": "一部",
+        "pinyin": "",
+        "meaning": "parte; alguns"
+      },
+      {
+        "id": 5,
+        "word": "QRコード",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "ウイルス",
+        "pinyin": "",
+        "meaning": "vírus"
+      },
+      {
+        "id": 7,
+        "word": "含む",
+        "pinyin": "",
+        "meaning": "incluir; conter"
+      },
+      {
+        "id": 8,
+        "word": "〜ている",
+        "pinyin": "",
+        "meaning": "estar ~ndo"
+      },
+      {
+        "id": 9,
+        "word": "可能性",
+        "pinyin": "",
+        "meaning": "possibilidade"
+      },
+      {
+        "id": 10,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "haver; existir"
+      }
+    ],
+    "id": "local-1772295737555-12",
+    "language": "Japonês"
+  }
+]

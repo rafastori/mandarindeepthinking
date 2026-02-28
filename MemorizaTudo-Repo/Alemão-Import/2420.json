@@ -1,0 +1,429 @@
+[
+  {
+    "chinese": "A: Tongtong, rate mal, wen ich neulich getroffen habe?",
+    "pinyin": null,
+    "translation": "A: Tongtong, adivinha quem eu encontrei outro dia?",
+    "tokens": [
+      "Tongtong",
+      ",",
+      "rate",
+      "mal",
+      ",",
+      "wen",
+      "ich",
+      "neulich",
+      "getroffen",
+      "habe",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "rate mal",
+        "pinyin": null,
+        "meaning": "adivinha"
+      },
+      {
+        "id": 2,
+        "word": "wen",
+        "pinyin": null,
+        "meaning": "quem (acusativo)"
+      },
+      {
+        "id": 3,
+        "word": "neulich",
+        "pinyin": null,
+        "meaning": "outro dia, recentemente"
+      },
+      {
+        "id": 4,
+        "word": "treffen",
+        "pinyin": null,
+        "meaning": "encontrar"
+      }
+    ],
+    "id": "local-1772292781349-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wen?",
+    "pinyin": null,
+    "translation": "B: Quem?",
+    "tokens": [
+      "Wen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wen",
+        "pinyin": null,
+        "meaning": "Quem (acusativo)"
+      }
+    ],
+    "id": "local-1772292781349-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Meinen Ex-Freund.",
+    "pinyin": null,
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "Meinen",
+      "Ex-Freund",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ex-Freund",
+        "pinyin": null,
+        "meaning": "ex-namorado"
+      }
+    ],
+    "id": "local-1772292781349-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Echt? Hast du mit ihm geredet?",
+    "pinyin": null,
+    "translation": "B: Sério? Você conversou com ele?",
+    "tokens": [
+      "Echt",
+      "?",
+      "Hast",
+      "du",
+      "mit",
+      "ihm",
+      "geredet",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Echt",
+        "pinyin": null,
+        "meaning": "Sério?, De verdade?"
+      },
+      {
+        "id": 2,
+        "word": "reden",
+        "pinyin": null,
+        "meaning": "conversar, falar"
+      },
+      {
+        "id": 3,
+        "word": "mit ihm",
+        "pinyin": null,
+        "meaning": "com ele"
+      }
+    ],
+    "id": "local-1772292781349-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein. Er war mit einer Frau zusammen.",
+    "pinyin": null,
+    "translation": "A: Não. Ele estava com uma mulher.",
+    "tokens": [
+      "Nein",
+      ".",
+      "Er",
+      "war",
+      "mit",
+      "einer",
+      "Frau",
+      "zusammen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zusammen sein",
+        "pinyin": null,
+        "meaning": "estar junto, estar em um relacionamento"
+      },
+      {
+        "id": 2,
+        "word": "Frau",
+        "pinyin": null,
+        "meaning": "mulher"
+      }
+    ],
+    "id": "local-1772292781349-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: War das diese Geliebte von ihm, wegen der ihr euch getrennt habt?",
+    "pinyin": null,
+    "translation": "B: Aquela era a amante dele, por causa de quem vocês terminaram?",
+    "tokens": [
+      "War",
+      "das",
+      "diese",
+      "Geliebte",
+      "von",
+      "ihm",
+      ",",
+      "wegen",
+      "der",
+      "ihr",
+      "euch",
+      "getrennt",
+      "habt",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Geliebte",
+        "pinyin": null,
+        "meaning": "amante (feminino)"
+      },
+      {
+        "id": 2,
+        "word": "wegen",
+        "pinyin": null,
+        "meaning": "por causa de"
+      },
+      {
+        "id": 3,
+        "word": "sich trennen",
+        "pinyin": null,
+        "meaning": "separar-se, terminar"
+      }
+    ],
+    "id": "local-1772292781349-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein. Er hat eine Neue.",
+    "pinyin": null,
+    "translation": "A: Não. Ele tem uma nova.",
+    "tokens": [
+      "Nein",
+      ".",
+      "Er",
+      "hat",
+      "eine",
+      "Neue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "eine Neue haben",
+        "pinyin": null,
+        "meaning": "ter uma namorada nova (informal)"
+      }
+    ],
+    "id": "local-1772292781349-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hä? Betrügt er schon wieder? Wie ist denn die?",
+    "pinyin": null,
+    "translation": "B: Hã? Ele está traindo de novo? Como ela é?",
+    "tokens": [
+      "Hä",
+      "?",
+      "Betrügt",
+      "er",
+      "schon",
+      "wieder",
+      "?",
+      "Wie",
+      "ist",
+      "denn",
+      "die",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hä",
+        "pinyin": null,
+        "meaning": "Hã?, Quê?"
+      },
+      {
+        "id": 2,
+        "word": "betrügen",
+        "pinyin": null,
+        "meaning": "trair, enganar"
+      },
+      {
+        "id": 3,
+        "word": "schon wieder",
+        "pinyin": null,
+        "meaning": "de novo, outra vez"
+      },
+      {
+        "id": 4,
+        "word": "Wie ist denn die?",
+        "pinyin": null,
+        "meaning": "Como ela é? (informal, querendo saber sobre a aparência/personalidade)"
+      }
+    ],
+    "id": "local-1772292781349-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie sieht ganz hübsch aus, aber es wirkt, als hätte sie sich unters Messer gelegt.",
+    "pinyin": null,
+    "translation": "A: Ela é bem bonita, mas parece que ela fez cirurgia plástica.",
+    "tokens": [
+      "Sie",
+      "sieht",
+      "ganz",
+      "hübsch",
+      "aus",
+      ",",
+      "aber",
+      "es",
+      "wirkt",
+      ",",
+      "als",
+      "hätte",
+      "sie",
+      "sich",
+      "unters",
+      "Messer",
+      "gelegt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aussehen",
+        "pinyin": null,
+        "meaning": "parecer, ter aparência"
+      },
+      {
+        "id": 2,
+        "word": "ganz hübsch",
+        "pinyin": null,
+        "meaning": "bem bonita"
+      },
+      {
+        "id": 3,
+        "word": "wirken",
+        "pinyin": null,
+        "meaning": "parecer, causar impressão"
+      },
+      {
+        "id": 4,
+        "word": "sich unters Messer legen",
+        "pinyin": null,
+        "meaning": "fazer cirurgia plástica (idiomático)"
+      }
+    ],
+    "id": "local-1772292781349-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Er ist wirklich kein guter Typ. Zum Glück hast du mit ihm Schluss gemacht.",
+    "pinyin": null,
+    "translation": "B: Ele realmente não é um bom sujeito. Felizmente você terminou com ele.",
+    "tokens": [
+      "Er",
+      "ist",
+      "wirklich",
+      "kein",
+      "guter",
+      "Typ",
+      ".",
+      "Zum",
+      "Glück",
+      "hast",
+      "du",
+      "mit",
+      "ihm",
+      "Schluss",
+      "gemacht",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wirklich",
+        "pinyin": null,
+        "meaning": "realmente, verdadeiramente"
+      },
+      {
+        "id": 2,
+        "word": "Typ",
+        "pinyin": null,
+        "meaning": "tipo, sujeito"
+      },
+      {
+        "id": 3,
+        "word": "Zum Glück",
+        "pinyin": null,
+        "meaning": "Felizmente, Por sorte"
+      },
+      {
+        "id": 4,
+        "word": "Schluss machen",
+        "pinyin": null,
+        "meaning": "terminar (um relacionamento)"
+      }
+    ],
+    "id": "local-1772292781349-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Allerdings. Damals muss ich wohl blind gewesen sein, mit ihm zusammenzukommen.",
+    "pinyin": null,
+    "translation": "A: De fato. Naquela época eu devia estar cega, por ter ficado com ele.",
+    "tokens": [
+      "Allerdings",
+      ".",
+      "Damals",
+      "muss",
+      "ich",
+      "wohl",
+      "blind",
+      "gewesen",
+      "sein",
+      ",",
+      "mit",
+      "ihm",
+      "zusammenzukommen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allerdings",
+        "pinyin": null,
+        "meaning": "De fato, Com certeza"
+      },
+      {
+        "id": 2,
+        "word": "Damals",
+        "pinyin": null,
+        "meaning": "Naquela época"
+      },
+      {
+        "id": 3,
+        "word": "wohl",
+        "pinyin": null,
+        "meaning": "provavelmente, certamente (adiciona nuance de presunção)"
+      },
+      {
+        "id": 4,
+        "word": "blind sein",
+        "pinyin": null,
+        "meaning": "ser cego"
+      },
+      {
+        "id": 5,
+        "word": "zusammenkommen",
+        "pinyin": null,
+        "meaning": "ficar junto, iniciar um relacionamento"
+      }
+    ],
+    "id": "local-1772292781349-10",
+    "language": "Alemão"
+  }
+]

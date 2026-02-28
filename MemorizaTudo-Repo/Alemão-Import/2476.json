@@ -1,0 +1,807 @@
+[
+  {
+    "chinese": "A: Guten Tag. Ist dort die Abteilung für Vorsorgeuntersuchungen des Huamei-Krankenhauses?",
+    "pinyin": "",
+    "translation": "A: Bom dia. É o departamento de exames preventivos do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "Guten",
+      "Tag",
+      ".",
+      "Ist",
+      "dort",
+      "die",
+      "Abteilung",
+      "für",
+      "Vorsorgeuntersuchungen",
+      "des",
+      "Huamei-Krankenhauses",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guten Tag",
+        "pinyin": "",
+        "meaning": "Bom dia"
+      },
+      {
+        "id": 2,
+        "word": "Ist",
+        "pinyin": "",
+        "meaning": "É/Está (verbo sein)"
+      },
+      {
+        "id": 3,
+        "word": "dort",
+        "pinyin": "",
+        "meaning": "Lá"
+      },
+      {
+        "id": 4,
+        "word": "Abteilung",
+        "pinyin": "",
+        "meaning": "Departamento"
+      },
+      {
+        "id": 5,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "Para"
+      },
+      {
+        "id": 6,
+        "word": "Vorsorgeuntersuchungen",
+        "pinyin": "",
+        "meaning": "Exames preventivos"
+      },
+      {
+        "id": 7,
+        "word": "Krankenhaus",
+        "pinyin": "",
+        "meaning": "Hospital"
+      }
+    ],
+    "id": "local-1772293922939-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Kann ich Ihnen helfen?",
+    "pinyin": "",
+    "translation": "B: Sim. Posso ajudá-lo?",
+    "tokens": [
+      "B:",
+      "Ja",
+      ".",
+      "Kann",
+      "ich",
+      "Ihnen",
+      "helfen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Kann",
+        "pinyin": "",
+        "meaning": "Posso (verbo können)"
+      },
+      {
+        "id": 3,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 4,
+        "word": "Ihnen",
+        "pinyin": "",
+        "meaning": "A você (formal, dativo)"
+      },
+      {
+        "id": 5,
+        "word": "helfen",
+        "pinyin": "",
+        "meaning": "Ajudar"
+      }
+    ],
+    "id": "local-1772293922939-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Bieten Sie hier Untersuchungen für den Arbeitseintritt an?",
+    "pinyin": "",
+    "translation": "A: Vocês oferecem exames para entrada no trabalho aqui?",
+    "tokens": [
+      "A:",
+      "Bieten",
+      "Sie",
+      "hier",
+      "Untersuchungen",
+      "für",
+      "den",
+      "Arbeitseintritt",
+      "an",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bieten...an",
+        "pinyin": "",
+        "meaning": "Oferecer (verbo separável anbieten)"
+      },
+      {
+        "id": 2,
+        "word": "Sie",
+        "pinyin": "",
+        "meaning": "Você/Vocês (formal)"
+      },
+      {
+        "id": 3,
+        "word": "hier",
+        "pinyin": "",
+        "meaning": "Aqui"
+      },
+      {
+        "id": 4,
+        "word": "Untersuchungen",
+        "pinyin": "",
+        "meaning": "Exames/Investigações"
+      },
+      {
+        "id": 5,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "Para"
+      },
+      {
+        "id": 6,
+        "word": "Arbeitseintritt",
+        "pinyin": "",
+        "meaning": "Entrada no trabalho"
+      }
+    ],
+    "id": "local-1772293922939-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, die bieten wir an. Wir haben ein Paket für 260 Yuan.",
+    "pinyin": "",
+    "translation": "B: Sim, nós oferecemos. Temos um pacote por 260 Yuan.",
+    "tokens": [
+      "B:",
+      "Ja",
+      ",",
+      "die",
+      "bieten",
+      "wir",
+      "an",
+      ".",
+      "Wir",
+      "haben",
+      "ein",
+      "Paket",
+      "für",
+      "260",
+      "Yuan",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "bieten...an",
+        "pinyin": "",
+        "meaning": "Oferecer (verbo separável anbieten)"
+      },
+      {
+        "id": 3,
+        "word": "wir",
+        "pinyin": "",
+        "meaning": "Nós"
+      },
+      {
+        "id": 4,
+        "word": "haben",
+        "pinyin": "",
+        "meaning": "Temos (verbo haben)"
+      },
+      {
+        "id": 5,
+        "word": "Paket",
+        "pinyin": "",
+        "meaning": "Pacote"
+      },
+      {
+        "id": 6,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "Para/Por"
+      },
+      {
+        "id": 7,
+        "word": "Yuan",
+        "pinyin": "",
+        "meaning": "Yuan (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772293922939-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Welche Untersuchungen sind darin enthalten?",
+    "pinyin": "",
+    "translation": "A: Quais exames estão incluídos nisso?",
+    "tokens": [
+      "A:",
+      "Welche",
+      "Untersuchungen",
+      "sind",
+      "darin",
+      "enthalten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Welche",
+        "pinyin": "",
+        "meaning": "Quais"
+      },
+      {
+        "id": 2,
+        "word": "Untersuchungen",
+        "pinyin": "",
+        "meaning": "Exames"
+      },
+      {
+        "id": 3,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "Estão (verbo sein)"
+      },
+      {
+        "id": 4,
+        "word": "darin",
+        "pinyin": "",
+        "meaning": "Nisso/Contido nele"
+      },
+      {
+        "id": 5,
+        "word": "enthalten",
+        "pinyin": "",
+        "meaning": "Incluídos/Contidos"
+      }
+    ],
+    "id": "local-1772293922939-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Die Basisdaten wie Größe, Gewicht und Blutdruck. Bluttests, Urintests, B-Bild-Sonographie und Elektrokardiogramm.",
+    "pinyin": "",
+    "translation": "B: Os dados básicos como altura, peso e pressão arterial. Exames de sangue, exames de urina, ultrassonografia B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "Die",
+      "Basisdaten",
+      "wie",
+      "Größe",
+      ",",
+      "Gewicht",
+      "und",
+      "Blutdruck",
+      ".",
+      "Bluttests",
+      ",",
+      "Urintests",
+      ",",
+      "B-Bild-Sonographie",
+      "und",
+      "Elektrokardiogramm",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Basisdaten",
+        "pinyin": "",
+        "meaning": "Dados básicos"
+      },
+      {
+        "id": 2,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 3,
+        "word": "Größe",
+        "pinyin": "",
+        "meaning": "Altura"
+      },
+      {
+        "id": 4,
+        "word": "Gewicht",
+        "pinyin": "",
+        "meaning": "Peso"
+      },
+      {
+        "id": 5,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "E"
+      },
+      {
+        "id": 6,
+        "word": "Blutdruck",
+        "pinyin": "",
+        "meaning": "Pressão arterial"
+      },
+      {
+        "id": 7,
+        "word": "Bluttests",
+        "pinyin": "",
+        "meaning": "Exames de sangue"
+      },
+      {
+        "id": 8,
+        "word": "Urintests",
+        "pinyin": "",
+        "meaning": "Exames de urina"
+      },
+      {
+        "id": 9,
+        "word": "B-Bild-Sonographie",
+        "pinyin": "",
+        "meaning": "Ultrassonografia B"
+      },
+      {
+        "id": 10,
+        "word": "Elektrokardiogramm",
+        "pinyin": "",
+        "meaning": "Eletrocardiograma"
+      }
+    ],
+    "id": "local-1772293922939-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wenn ich auch noch andere Untersuchungen möchte, geht das?",
+    "pinyin": "",
+    "translation": "A: Se eu também quiser outros exames, é possível?",
+    "tokens": [
+      "A:",
+      "Wenn",
+      "ich",
+      "auch",
+      "noch",
+      "andere",
+      "Untersuchungen",
+      "möchte",
+      ",",
+      "geht",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wenn",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 3,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 4,
+        "word": "noch",
+        "pinyin": "",
+        "meaning": "Ainda/Mais"
+      },
+      {
+        "id": 5,
+        "word": "andere",
+        "pinyin": "",
+        "meaning": "Outros/As"
+      },
+      {
+        "id": 6,
+        "word": "Untersuchungen",
+        "pinyin": "",
+        "meaning": "Exames"
+      },
+      {
+        "id": 7,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "Gostaria/Quiser (verbo mögen no conjuntivo II)"
+      },
+      {
+        "id": 8,
+        "word": "geht das",
+        "pinyin": "",
+        "meaning": "É possível?/Isso funciona?"
+      }
+    ],
+    "id": "local-1772293922939-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, das geht. Sie können einzelne Punkte hinzufügen und die Kosten entsprechend aufstocken.",
+    "pinyin": "",
+    "translation": "B: Sim, é possível. Você pode adicionar itens individuais e aumentar os custos de acordo.",
+    "tokens": [
+      "B:",
+      "Ja",
+      ",",
+      "das",
+      "geht",
+      ".",
+      "Sie",
+      "können",
+      "einzelne",
+      "Punkte",
+      "hinzufügen",
+      "und",
+      "die",
+      "Kosten",
+      "entsprechend",
+      "aufstocken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "das geht",
+        "pinyin": "",
+        "meaning": "É possível/Isso funciona"
+      },
+      {
+        "id": 3,
+        "word": "Sie",
+        "pinyin": "",
+        "meaning": "Você/Vocês (formal)"
+      },
+      {
+        "id": 4,
+        "word": "können",
+        "pinyin": "",
+        "meaning": "Podem (verbo können)"
+      },
+      {
+        "id": 5,
+        "word": "einzelne",
+        "pinyin": "",
+        "meaning": "Individuais"
+      },
+      {
+        "id": 6,
+        "word": "Punkte",
+        "pinyin": "",
+        "meaning": "Pontos/Itens"
+      },
+      {
+        "id": 7,
+        "word": "hinzufügen",
+        "pinyin": "",
+        "meaning": "Adicionar"
+      },
+      {
+        "id": 8,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "E"
+      },
+      {
+        "id": 9,
+        "word": "Kosten",
+        "pinyin": "",
+        "meaning": "Custos"
+      },
+      {
+        "id": 10,
+        "word": "entsprechend",
+        "pinyin": "",
+        "meaning": "De acordo/Correspondentemente"
+      },
+      {
+        "id": 11,
+        "word": "aufstocken",
+        "pinyin": "",
+        "meaning": "Aumentar/Complementar"
+      }
+    ],
+    "id": "local-1772293922939-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wird der Bericht direkt an die Arbeit geschickt?",
+    "pinyin": "",
+    "translation": "A: O relatório será enviado diretamente para o trabalho?",
+    "tokens": [
+      "A:",
+      "Wird",
+      "der",
+      "Bericht",
+      "direkt",
+      "an",
+      "die",
+      "Arbeit",
+      "geschickt",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wird...geschickt",
+        "pinyin": "",
+        "meaning": "Será enviado (voz passiva do verbo schicken)"
+      },
+      {
+        "id": 2,
+        "word": "Bericht",
+        "pinyin": "",
+        "meaning": "Relatório"
+      },
+      {
+        "id": 3,
+        "word": "direkt",
+        "pinyin": "",
+        "meaning": "Diretamente"
+      },
+      {
+        "id": 4,
+        "word": "an",
+        "pinyin": "",
+        "meaning": "Para"
+      },
+      {
+        "id": 5,
+        "word": "Arbeit",
+        "pinyin": "",
+        "meaning": "Trabalho"
+      }
+    ],
+    "id": "local-1772293922939-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Nein, den müssen Sie entweder selbst abholen oder per Express schicken lassen. Soll ich gleich einen Termin für Sie vereinbaren?",
+    "pinyin": "",
+    "translation": "B: Não, você deve retirá-lo pessoalmente ou enviá-lo por expresso. Devo marcar um horário para você agora?",
+    "tokens": [
+      "B:",
+      "Nein",
+      ",",
+      "den",
+      "müssen",
+      "Sie",
+      "entweder",
+      "selbst",
+      "abholen",
+      "oder",
+      "per",
+      "Express",
+      "schicken",
+      "lassen",
+      ".",
+      "Soll",
+      "ich",
+      "gleich",
+      "einen",
+      "Termin",
+      "für",
+      "Sie",
+      "vereinbaren",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "Devem/Precisam (verbo müssen)"
+      },
+      {
+        "id": 3,
+        "word": "Sie",
+        "pinyin": "",
+        "meaning": "Você/Vocês (formal)"
+      },
+      {
+        "id": 4,
+        "word": "entweder...oder",
+        "pinyin": "",
+        "meaning": "Ou...ou"
+      },
+      {
+        "id": 5,
+        "word": "selbst",
+        "pinyin": "",
+        "meaning": "Pessoalmente/Você mesmo"
+      },
+      {
+        "id": 6,
+        "word": "abholen",
+        "pinyin": "",
+        "meaning": "Retirar/Buscar"
+      },
+      {
+        "id": 7,
+        "word": "per Express",
+        "pinyin": "",
+        "meaning": "Por expresso"
+      },
+      {
+        "id": 8,
+        "word": "schicken lassen",
+        "pinyin": "",
+        "meaning": "Mandar enviar"
+      },
+      {
+        "id": 9,
+        "word": "Soll",
+        "pinyin": "",
+        "meaning": "Devo (verbo sollen)"
+      },
+      {
+        "id": 10,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 11,
+        "word": "gleich",
+        "pinyin": "",
+        "meaning": "Agora/Imediatamente"
+      },
+      {
+        "id": 12,
+        "word": "Termin",
+        "pinyin": "",
+        "meaning": "Compromisso/Horário"
+      },
+      {
+        "id": 13,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "Para"
+      },
+      {
+        "id": 14,
+        "word": "vereinbaren",
+        "pinyin": "",
+        "meaning": "Marcar/Combinar"
+      }
+    ],
+    "id": "local-1772293922939-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Für nächsten Montag.",
+    "pinyin": "",
+    "translation": "A: Para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "Für",
+      "nächsten",
+      "Montag",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Für",
+        "pinyin": "",
+        "meaning": "Para"
+      },
+      {
+        "id": 2,
+        "word": "nächsten",
+        "pinyin": "",
+        "meaning": "Próximo(a) (acusativo)"
+      },
+      {
+        "id": 3,
+        "word": "Montag",
+        "pinyin": "",
+        "meaning": "Segunda-feira"
+      }
+    ],
+    "id": "local-1772293922939-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In Ordnung. Bitte hinterlassen Sie Ihre persönlichen Daten.",
+    "pinyin": "",
+    "translation": "B: Certo. Por favor, deixe seus dados pessoais.",
+    "tokens": [
+      "B:",
+      "In",
+      "Ordnung",
+      ".",
+      "Bitte",
+      "hinterlassen",
+      "Sie",
+      "Ihre",
+      "persönlichen",
+      "Daten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In Ordnung",
+        "pinyin": "",
+        "meaning": "Certo/De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Bitte",
+        "pinyin": "",
+        "meaning": "Por favor"
+      },
+      {
+        "id": 3,
+        "word": "hinterlassen",
+        "pinyin": "",
+        "meaning": "Deixar/Registrar"
+      },
+      {
+        "id": 4,
+        "word": "Sie",
+        "pinyin": "",
+        "meaning": "Você/Vocês (formal)"
+      },
+      {
+        "id": 5,
+        "word": "Ihre",
+        "pinyin": "",
+        "meaning": "Seus/Suas (formal)"
+      },
+      {
+        "id": 6,
+        "word": "persönlichen Daten",
+        "pinyin": "",
+        "meaning": "Dados pessoais"
+      }
+    ],
+    "id": "local-1772293922939-11",
+    "language": "Alemão"
+  }
+]

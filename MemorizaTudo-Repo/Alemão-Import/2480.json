@@ -1,0 +1,1022 @@
+[
+  {
+    "chinese": "A: Wo spüren Sie den Schmerz?",
+    "pinyin": null,
+    "translation": "A: Onde você sente a dor?",
+    "tokens": [
+      "A",
+      ":",
+      "Wo",
+      "spüren",
+      "Sie",
+      "den",
+      "Schmerz",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wo",
+        "pinyin": null,
+        "meaning": "onde"
+      },
+      {
+        "id": 2,
+        "word": "spüren",
+        "pinyin": null,
+        "meaning": "sentir"
+      },
+      {
+        "id": 3,
+        "word": "Schmerz",
+        "pinyin": null,
+        "meaning": "dor"
+      }
+    ],
+    "id": "local-1772300658558-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In letzter Zeit habe ich nicht geschlafen und werde leicht müde.",
+    "pinyin": null,
+    "translation": "B: Ultimamente não tenho dormido e fico facilmente cansado.",
+    "tokens": [
+      "B",
+      ":",
+      "In",
+      "letzter",
+      "Zeit",
+      "habe",
+      "ich",
+      "nicht",
+      "geschlafen",
+      "und",
+      "werde",
+      "leicht",
+      "müde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In letzter Zeit",
+        "pinyin": null,
+        "meaning": "ultimamente, recentemente"
+      },
+      {
+        "id": 2,
+        "word": "geschlafen",
+        "pinyin": null,
+        "meaning": "dormido (particípio passado de 'schlafen')"
+      },
+      {
+        "id": 3,
+        "word": "werde müde",
+        "pinyin": null,
+        "meaning": "fico cansado"
+      },
+      {
+        "id": 4,
+        "word": "leicht",
+        "pinyin": null,
+        "meaning": "facilmente"
+      }
+    ],
+    "id": "local-1772300658558-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich möchte mich also darum kümmern.",
+    "pinyin": null,
+    "translation": "Então, eu gostaria de cuidar disso.",
+    "tokens": [
+      "Ich",
+      "möchte",
+      "mich",
+      "also",
+      "darum",
+      "kümmern",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "gostaria (de 'mögen')"
+      },
+      {
+        "id": 2,
+        "word": "also",
+        "pinyin": null,
+        "meaning": "então, portanto"
+      },
+      {
+        "id": 3,
+        "word": "sich kümmern um",
+        "pinyin": null,
+        "meaning": "cuidar de"
+      }
+    ],
+    "id": "local-1772300658558-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Halten Sie Ihre Hand hin.",
+    "pinyin": null,
+    "translation": "A: Estenda sua mão.",
+    "tokens": [
+      "A",
+      ":",
+      "Halten",
+      "Sie",
+      "Ihre",
+      "Hand",
+      "hin",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hand",
+        "pinyin": null,
+        "meaning": "mão"
+      },
+      {
+        "id": 2,
+        "word": "hinhalten",
+        "pinyin": null,
+        "meaning": "estender, segurar para fora"
+      }
+    ],
+    "id": "local-1772300658558-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Lassen Sie mich Ihren Puls fühlen.",
+    "pinyin": null,
+    "translation": "Deixe-me sentir seu pulso.",
+    "tokens": [
+      "Lassen",
+      "Sie",
+      "mich",
+      "Ihren",
+      "Puls",
+      "fühlen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lassen",
+        "pinyin": null,
+        "meaning": "deixar, permitir"
+      },
+      {
+        "id": 2,
+        "word": "Puls",
+        "pinyin": null,
+        "meaning": "pulso"
+      },
+      {
+        "id": 3,
+        "word": "fühlen",
+        "pinyin": null,
+        "meaning": "sentir"
+      }
+    ],
+    "id": "local-1772300658558-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Strecken Sie die Zunge heraus.",
+    "pinyin": null,
+    "translation": "Ponha a língua para fora.",
+    "tokens": [
+      "Strecken",
+      "Sie",
+      "die",
+      "Zunge",
+      "heraus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "herausstrecken",
+        "pinyin": null,
+        "meaning": "pôr para fora, estender (como a língua)"
+      },
+      {
+        "id": 2,
+        "word": "Zunge",
+        "pinyin": null,
+        "meaning": "língua"
+      }
+    ],
+    "id": "local-1772300658558-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Doktor, es ist nichts, oder?",
+    "pinyin": null,
+    "translation": "B: Doutor, não é nada, certo?",
+    "tokens": [
+      "B",
+      ":",
+      "Doktor",
+      ",",
+      "es",
+      "ist",
+      "nichts",
+      ",",
+      "oder",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Doktor",
+        "pinyin": null,
+        "meaning": "doutor"
+      },
+      {
+        "id": 2,
+        "word": "nichts",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 3,
+        "word": "oder",
+        "pinyin": null,
+        "meaning": "ou, certo?"
+      }
+    ],
+    "id": "local-1772300658558-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Es gibt kein großes Problem.",
+    "pinyin": null,
+    "translation": "A: Não há nenhum grande problema.",
+    "tokens": [
+      "A",
+      ":",
+      "Es",
+      "gibt",
+      "kein",
+      "großes",
+      "Problem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es gibt",
+        "pinyin": null,
+        "meaning": "há, existe"
+      },
+      {
+        "id": 2,
+        "word": "Problem",
+        "pinyin": null,
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772300658558-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ein bisschen Mangel an Lebensenergie.",
+    "pinyin": null,
+    "translation": "Um pouco de falta de energia vital.",
+    "tokens": [
+      "Ein",
+      "bisschen",
+      "Mangel",
+      "an",
+      "Lebensenergie",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ein bisschen",
+        "pinyin": null,
+        "meaning": "um pouco"
+      },
+      {
+        "id": 2,
+        "word": "Mangel",
+        "pinyin": null,
+        "meaning": "falta, deficiência"
+      },
+      {
+        "id": 3,
+        "word": "Lebensenergie",
+        "pinyin": null,
+        "meaning": "energia vital"
+      }
+    ],
+    "id": "local-1772300658558-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich werde Ihnen etwas Medizin verschreiben.",
+    "pinyin": null,
+    "translation": "Vou lhe receitar alguns medicamentos.",
+    "tokens": [
+      "Ich",
+      "werde",
+      "Ihnen",
+      "etwas",
+      "Medizin",
+      "verschreiben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Medizin",
+        "pinyin": null,
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 2,
+        "word": "verschreiben",
+        "pinyin": null,
+        "meaning": "receitar"
+      }
+    ],
+    "id": "local-1772300658558-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wie koche ich die Medizin ab?",
+    "pinyin": null,
+    "translation": "B: Como eu preparo/cozinho o remédio?",
+    "tokens": [
+      "B",
+      ":",
+      "Wie",
+      "koche",
+      "ich",
+      "die",
+      "Medizin",
+      "ab",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, cozinhar (medicamento)"
+      },
+      {
+        "id": 2,
+        "word": "Medizin",
+        "pinyin": null,
+        "meaning": "remédio, medicamento"
+      }
+    ],
+    "id": "local-1772300658558-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Zweimal abkochen, den Sud mischen und in zwei Portionen trinken.",
+    "pinyin": null,
+    "translation": "A: Ferver duas vezes, misturar o caldo e beber em duas porções.",
+    "tokens": [
+      "A",
+      ":",
+      "Zweimal",
+      "abkochen",
+      ",",
+      "den",
+      "Sud",
+      "mischen",
+      "und",
+      "in",
+      "zwei",
+      "Portionen",
+      "trinken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Zweimal",
+        "pinyin": null,
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 2,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      },
+      {
+        "id": 3,
+        "word": "Sud",
+        "pinyin": null,
+        "meaning": "caldo, decocção"
+      },
+      {
+        "id": 4,
+        "word": "mischen",
+        "pinyin": null,
+        "meaning": "misturar"
+      },
+      {
+        "id": 5,
+        "word": "Portionen",
+        "pinyin": null,
+        "meaning": "porções"
+      }
+    ],
+    "id": "local-1772300658558-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Einmal morgens und einmal abends.",
+    "pinyin": null,
+    "translation": "Uma vez de manhã e uma vez à noite.",
+    "tokens": [
+      "Einmal",
+      "morgens",
+      "und",
+      "einmal",
+      "abends",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Einmal",
+        "pinyin": null,
+        "meaning": "uma vez"
+      },
+      {
+        "id": 2,
+        "word": "morgens",
+        "pinyin": null,
+        "meaning": "de manhã"
+      },
+      {
+        "id": 3,
+        "word": "abends",
+        "pinyin": null,
+        "meaning": "à noite"
+      }
+    ],
+    "id": "local-1772300658558-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das bedeutet, ich muss die Medizin jeden Morgen abkochen, wenn ich aufstehe.",
+    "pinyin": null,
+    "translation": "B: Isso significa que tenho que ferver o remédio toda manhã, quando eu me levanto.",
+    "tokens": [
+      "B",
+      ":",
+      "Das",
+      "bedeutet",
+      ",",
+      "ich",
+      "muss",
+      "die",
+      "Medizin",
+      "jeden",
+      "Morgen",
+      "abkochen",
+      ",",
+      "wenn",
+      "ich",
+      "aufstehe",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bedeutet",
+        "pinyin": null,
+        "meaning": "significa (de 'bedeuten')"
+      },
+      {
+        "id": 2,
+        "word": "Medizin",
+        "pinyin": null,
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 3,
+        "word": "jeden Morgen",
+        "pinyin": null,
+        "meaning": "toda manhã"
+      },
+      {
+        "id": 4,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      },
+      {
+        "id": 5,
+        "word": "aufstehe",
+        "pinyin": null,
+        "meaning": "me levanto (de 'aufstehen')"
+      }
+    ],
+    "id": "local-1772300658558-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wenn Sie es als lästig empfinden, können wir es für Sie abkochen.",
+    "pinyin": null,
+    "translation": "A: Se você achar isso incômodo, podemos fervê-lo para você.",
+    "tokens": [
+      "A",
+      ":",
+      "Wenn",
+      "Sie",
+      "es",
+      "als",
+      "lästig",
+      "empfinden",
+      ",",
+      "können",
+      "wir",
+      "es",
+      "für",
+      "Sie",
+      "abkochen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lästig",
+        "pinyin": null,
+        "meaning": "incômodo, chato"
+      },
+      {
+        "id": 2,
+        "word": "empfinden",
+        "pinyin": null,
+        "meaning": "achar, sentir, perceber"
+      },
+      {
+        "id": 3,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      }
+    ],
+    "id": "local-1772300658558-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das Krankenhaus würde es für mich abkochen?",
+    "pinyin": null,
+    "translation": "B: O hospital o prepararia para mim?",
+    "tokens": [
+      "B",
+      ":",
+      "Das",
+      "Krankenhaus",
+      "würde",
+      "es",
+      "für",
+      "mich",
+      "abkochen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Krankenhaus",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 2,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      }
+    ],
+    "id": "local-1772300658558-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja.",
+    "pinyin": null,
+    "translation": "A: Sim.",
+    "tokens": [
+      "A",
+      ":",
+      "Ja",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": null,
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1772300658558-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Sie zahlen eine kleine Gebühr für das Abkochen.",
+    "pinyin": null,
+    "translation": "Você paga uma pequena taxa para a decocção.",
+    "tokens": [
+      "Sie",
+      "zahlen",
+      "eine",
+      "kleine",
+      "Gebühr",
+      "für",
+      "das",
+      "Abkochen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zahlen",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 2,
+        "word": "Gebühr",
+        "pinyin": null,
+        "meaning": "taxa, tarifa"
+      },
+      {
+        "id": 3,
+        "word": "Abkochen",
+        "pinyin": null,
+        "meaning": "decocção (substantivo)"
+      }
+    ],
+    "id": "local-1772300658558-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Dann kann das Krankenhaus es für Sie abkochen und vakuumverpacken.",
+    "pinyin": null,
+    "translation": "Então o hospital pode fervê-lo para você e embalá-lo a vácuo.",
+    "tokens": [
+      "Dann",
+      "kann",
+      "das",
+      "Krankenhaus",
+      "es",
+      "für",
+      "Sie",
+      "abkochen",
+      "und",
+      "vakuumverpacken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Krankenhaus",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 2,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      },
+      {
+        "id": 3,
+        "word": "vakuumverpacken",
+        "pinyin": null,
+        "meaning": "embalar a vácuo"
+      }
+    ],
+    "id": "local-1772300658558-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wenn Sie es beim Trinken erwärmen, ist es leichter zu trinken.",
+    "pinyin": null,
+    "translation": "Se você aquecer ao beber, é mais fácil de beber.",
+    "tokens": [
+      "Wenn",
+      "Sie",
+      "es",
+      "beim",
+      "Trinken",
+      "erwärmen",
+      ",",
+      "ist",
+      "es",
+      "leichter",
+      "zu",
+      "trinken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "erwärmen",
+        "pinyin": null,
+        "meaning": "aquecer"
+      },
+      {
+        "id": 2,
+        "word": "leichter",
+        "pinyin": null,
+        "meaning": "mais fácil (comparativo de 'leicht')"
+      },
+      {
+        "id": 3,
+        "word": "trinken",
+        "pinyin": null,
+        "meaning": "beber"
+      }
+    ],
+    "id": "local-1772300658558-19",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Dann lasse ich es für mich abkochen.",
+    "pinyin": null,
+    "translation": "B: Então eu deixarei que o preparem para mim.",
+    "tokens": [
+      "B",
+      ":",
+      "Dann",
+      "lasse",
+      "ich",
+      "es",
+      "für",
+      "mich",
+      "abkochen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lassen",
+        "pinyin": null,
+        "meaning": "deixar, mandar fazer"
+      },
+      {
+        "id": 2,
+        "word": "abkochen",
+        "pinyin": null,
+        "meaning": "ferver, decoctar"
+      }
+    ],
+    "id": "local-1772300658558-20",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Kann ich es heute bekommen?",
+    "pinyin": null,
+    "translation": "Posso pegá-lo hoje?",
+    "tokens": [
+      "Kann",
+      "ich",
+      "es",
+      "heute",
+      "bekommen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "heute",
+        "pinyin": null,
+        "meaning": "hoje"
+      },
+      {
+        "id": 2,
+        "word": "bekommen",
+        "pinyin": null,
+        "meaning": "receber, pegar"
+      }
+    ],
+    "id": "local-1772300658558-21",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein, das geht nicht.",
+    "pinyin": null,
+    "translation": "A: Não, isso não é possível.",
+    "tokens": [
+      "A",
+      ":",
+      "Nein",
+      ",",
+      "das",
+      "geht",
+      "nicht",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "das geht nicht",
+        "pinyin": null,
+        "meaning": "isso não é possível, não funciona"
+      }
+    ],
+    "id": "local-1772300658558-22",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das Abkochen braucht Zeit.",
+    "pinyin": null,
+    "translation": "A decocção leva tempo.",
+    "tokens": [
+      "Das",
+      "Abkochen",
+      "braucht",
+      "Zeit",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Abkochen",
+        "pinyin": null,
+        "meaning": "decocção (substantivo)"
+      },
+      {
+        "id": 2,
+        "word": "brauchen",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "Zeit",
+        "pinyin": null,
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1772300658558-23",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das früheste wäre morgen, dass Sie es bekommen könnten.",
+    "pinyin": null,
+    "translation": "O mais cedo seria amanhã para você poder pegá-lo.",
+    "tokens": [
+      "Das",
+      "früheste",
+      "wäre",
+      "morgen",
+      ",",
+      "dass",
+      "Sie",
+      "es",
+      "bekommen",
+      "könnten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "früheste",
+        "pinyin": null,
+        "meaning": "o mais cedo (superlativo de 'früh')"
+      },
+      {
+        "id": 2,
+        "word": "morgen",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 3,
+        "word": "bekommen",
+        "pinyin": null,
+        "meaning": "receber, pegar"
+      },
+      {
+        "id": 4,
+        "word": "könnten",
+        "pinyin": null,
+        "meaning": "poderiam (subjuntivo II de 'können')"
+      }
+    ],
+    "id": "local-1772300658558-24",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Gehen Sie zuerst bezahlen und dann zum Fenster für die Medizinabkochung und melden Sie sich an.",
+    "pinyin": null,
+    "translation": "Vá primeiro pagar e depois para o balcão da decocção de medicamentos e registre-se.",
+    "tokens": [
+      "Gehen",
+      "Sie",
+      "zuerst",
+      "bezahlen",
+      "und",
+      "dann",
+      "zum",
+      "Fenster",
+      "für",
+      "die",
+      "Medizinabkochung",
+      "und",
+      "melden",
+      "Sie",
+      "sich",
+      "an",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zuerst",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 2,
+        "word": "bezahlen",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 3,
+        "word": "Fenster",
+        "pinyin": null,
+        "meaning": "balcão, janela"
+      },
+      {
+        "id": 4,
+        "word": "Medizinabkochung",
+        "pinyin": null,
+        "meaning": "decocção de medicamentos"
+      },
+      {
+        "id": 5,
+        "word": "sich anmelden",
+        "pinyin": null,
+        "meaning": "registrar-se, inscrever-se"
+      }
+    ],
+    "id": "local-1772300658558-25",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay, danke, Doktor.",
+    "pinyin": null,
+    "translation": "B: Ok, obrigado, Doutor.",
+    "tokens": [
+      "B",
+      ":",
+      "Okay",
+      ",",
+      "danke",
+      ",",
+      "Doktor",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "ok"
+      },
+      {
+        "id": 2,
+        "word": "danke",
+        "pinyin": null,
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "Doktor",
+        "pinyin": null,
+        "meaning": "doutor"
+      }
+    ],
+    "id": "local-1772300658558-26",
+    "language": "Alemão"
+  }
+]

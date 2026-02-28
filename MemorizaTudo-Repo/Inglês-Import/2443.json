@@ -1,0 +1,571 @@
+[
+  {
+    "chinese": "A: Hey, bro. Are you free this weekend? Do you want to get together?",
+    "pinyin": null,
+    "translation": "A: Ei, irmão. Você está livre este fim de semana? Quer nos encontrar?",
+    "tokens": [
+      "Hey",
+      ",",
+      "bro",
+      ".",
+      "Are",
+      "you",
+      "free",
+      "this",
+      "weekend",
+      "?",
+      "Do",
+      "you",
+      "want",
+      "to",
+      "get",
+      "together",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bro",
+        "pinyin": null,
+        "meaning": "irmão (forma informal de brother)"
+      },
+      {
+        "id": 2,
+        "word": "free",
+        "pinyin": null,
+        "meaning": "livre"
+      },
+      {
+        "id": 3,
+        "word": "weekend",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "get together",
+        "pinyin": null,
+        "meaning": "se encontrar, se reunir"
+      }
+    ],
+    "id": "local-1772293218779-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Why do you want to get together?",
+    "pinyin": null,
+    "translation": "B: Por que você quer nos encontrar?",
+    "tokens": [
+      "Why",
+      "do",
+      "you",
+      "want",
+      "to",
+      "get",
+      "together",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "get together",
+        "pinyin": null,
+        "meaning": "se encontrar, se reunir"
+      }
+    ],
+    "id": "local-1772293218779-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Hehe! I'm getting married, bro. I am giving you an invitation!",
+    "pinyin": null,
+    "translation": "A: Hehe! Eu vou me casar, irmão. Estou te dando um convite!",
+    "tokens": [
+      "Hehe",
+      "!",
+      "I'm",
+      "getting",
+      "married",
+      ",",
+      "bro",
+      ".",
+      "I",
+      "am",
+      "giving",
+      "you",
+      "an",
+      "invitation",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "getting married",
+        "pinyin": null,
+        "meaning": "se casando"
+      },
+      {
+        "id": 2,
+        "word": "bro",
+        "pinyin": null,
+        "meaning": "irmão (forma informal de brother)"
+      },
+      {
+        "id": 3,
+        "word": "invitation",
+        "pinyin": null,
+        "meaning": "convite"
+      }
+    ],
+    "id": "local-1772293218779-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Huh?! Congratulations! How many tables are you arranging to have?",
+    "pinyin": null,
+    "translation": "B: Hã?! Parabéns! Quantas mesas você está organizando para ter?",
+    "tokens": [
+      "Huh",
+      "?!",
+      "Congratulations",
+      "!",
+      "How",
+      "many",
+      "tables",
+      "are",
+      "you",
+      "arranging",
+      "to",
+      "have",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Congratulations",
+        "pinyin": null,
+        "meaning": "Parabéns"
+      },
+      {
+        "id": 2,
+        "word": "tables",
+        "pinyin": null,
+        "meaning": "mesas"
+      },
+      {
+        "id": 3,
+        "word": "arranging",
+        "pinyin": null,
+        "meaning": "organizando, arrumando"
+      }
+    ],
+    "id": "local-1772293218779-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: 12 tables. Nowadays it's hard to book a hotel and it's also hard to get a wedding planner. We planned it a year ago.",
+    "pinyin": null,
+    "translation": "A: 12 mesas. Hoje em dia é difícil reservar um hotel e também é difícil conseguir um organizador de casamentos. Nós planejamos isso há um ano.",
+    "tokens": [
+      "12",
+      "tables",
+      ".",
+      "Nowadays",
+      "it's",
+      "hard",
+      "to",
+      "book",
+      "a",
+      "hotel",
+      "and",
+      "it's",
+      "also",
+      "hard",
+      "to",
+      "get",
+      "a",
+      "wedding",
+      "planner",
+      ".",
+      "We",
+      "planned",
+      "it",
+      "a",
+      "year",
+      "ago",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tables",
+        "pinyin": null,
+        "meaning": "mesas"
+      },
+      {
+        "id": 2,
+        "word": "Nowadays",
+        "pinyin": null,
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 3,
+        "word": "hard",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 4,
+        "word": "book",
+        "pinyin": null,
+        "meaning": "reservar"
+      },
+      {
+        "id": 5,
+        "word": "hotel",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 6,
+        "word": "wedding planner",
+        "pinyin": null,
+        "meaning": "organizador de casamentos"
+      },
+      {
+        "id": 7,
+        "word": "planned",
+        "pinyin": null,
+        "meaning": "planejamos"
+      },
+      {
+        "id": 8,
+        "word": "a year ago",
+        "pinyin": null,
+        "meaning": "há um ano"
+      }
+    ],
+    "id": "local-1772293218779-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: There's nothing you can do. You could have a destination wedding!",
+    "pinyin": null,
+    "translation": "B: Não há nada que você possa fazer. Você poderia ter um casamento de destino!",
+    "tokens": [
+      "There's",
+      "nothing",
+      "you",
+      "can",
+      "do",
+      ".",
+      "You",
+      "could",
+      "have",
+      "a",
+      "destination",
+      "wedding",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nothing",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 2,
+        "word": "destination wedding",
+        "pinyin": null,
+        "meaning": "casamento de destino (casamento realizado em um local diferente da cidade natal dos noivos)"
+      }
+    ],
+    "id": "local-1772293218779-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: The parents won't allow it. Their thinking is so traditional.",
+    "pinyin": null,
+    "translation": "A: Os pais não vão permitir. O pensamento deles é tão tradicional.",
+    "tokens": [
+      "The",
+      "parents",
+      "won't",
+      "allow",
+      "it",
+      ".",
+      "Their",
+      "thinking",
+      "is",
+      "so",
+      "traditional",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "parents",
+        "pinyin": null,
+        "meaning": "pais"
+      },
+      {
+        "id": 2,
+        "word": "allow",
+        "pinyin": null,
+        "meaning": "permitir"
+      },
+      {
+        "id": 3,
+        "word": "thinking",
+        "pinyin": null,
+        "meaning": "pensamento"
+      },
+      {
+        "id": 4,
+        "word": "traditional",
+        "pinyin": null,
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772293218779-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: So are you planning to go on a honeymoon after you get married?",
+    "pinyin": null,
+    "translation": "B: Então você está planejando ir em lua de mel depois que se casar?",
+    "tokens": [
+      "So",
+      "are",
+      "you",
+      "planning",
+      "to",
+      "go",
+      "on",
+      "a",
+      "honeymoon",
+      "after",
+      "you",
+      "get",
+      "married",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planning",
+        "pinyin": null,
+        "meaning": "planejando"
+      },
+      {
+        "id": 2,
+        "word": "honeymoon",
+        "pinyin": null,
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 3,
+        "word": "get married",
+        "pinyin": null,
+        "meaning": "se casar"
+      }
+    ],
+    "id": "local-1772293218779-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Of course, otherwise my wife won't be happy.",
+    "pinyin": null,
+    "translation": "A: Claro, caso contrário minha esposa não ficará feliz.",
+    "tokens": [
+      "Of",
+      "course",
+      ",",
+      "otherwise",
+      "my",
+      "wife",
+      "won't",
+      "be",
+      "happy",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Of course",
+        "pinyin": null,
+        "meaning": "Claro"
+      },
+      {
+        "id": 2,
+        "word": "otherwise",
+        "pinyin": null,
+        "meaning": "caso contrário"
+      },
+      {
+        "id": 3,
+        "word": "wife",
+        "pinyin": null,
+        "meaning": "esposa"
+      },
+      {
+        "id": 4,
+        "word": "happy",
+        "pinyin": null,
+        "meaning": "feliz"
+      }
+    ],
+    "id": "local-1772293218779-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Is your wife the girlfriend you used to have in university?",
+    "pinyin": null,
+    "translation": "B: Sua esposa é a namorada que você tinha na universidade?",
+    "tokens": [
+      "Is",
+      "your",
+      "wife",
+      "the",
+      "girlfriend",
+      "you",
+      "used",
+      "to",
+      "have",
+      "in",
+      "university",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wife",
+        "pinyin": null,
+        "meaning": "esposa"
+      },
+      {
+        "id": 2,
+        "word": "girlfriend",
+        "pinyin": null,
+        "meaning": "namorada"
+      },
+      {
+        "id": 3,
+        "word": "used to have",
+        "pinyin": null,
+        "meaning": "costumava ter (tinha)"
+      },
+      {
+        "id": 4,
+        "word": "university",
+        "pinyin": null,
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772293218779-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We broke up long ago. My wife's name is Yuanyuan. Don't make a mistake and call her something else!",
+    "pinyin": null,
+    "translation": "A: Nós terminamos há muito tempo. O nome da minha esposa é Yuanyuan. Não cometa um erro e a chame de outra coisa!",
+    "tokens": [
+      "We",
+      "broke",
+      "up",
+      "long",
+      "ago",
+      ".",
+      "My",
+      "wife's",
+      "name",
+      "is",
+      "Yuanyuan",
+      ".",
+      "Don't",
+      "make",
+      "a",
+      "mistake",
+      "and",
+      "call",
+      "her",
+      "something",
+      "else",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "broke up",
+        "pinyin": null,
+        "meaning": "terminamos (um relacionamento)"
+      },
+      {
+        "id": 2,
+        "word": "long ago",
+        "pinyin": null,
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 3,
+        "word": "wife",
+        "pinyin": null,
+        "meaning": "esposa"
+      },
+      {
+        "id": 4,
+        "word": "make a mistake",
+        "pinyin": null,
+        "meaning": "cometer um erro"
+      },
+      {
+        "id": 5,
+        "word": "something else",
+        "pinyin": null,
+        "meaning": "outra coisa"
+      }
+    ],
+    "id": "local-1772293218779-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I got it. See you on the weekend.",
+    "pinyin": null,
+    "translation": "B: Entendi. Te vejo no fim de semana.",
+    "tokens": [
+      "I",
+      "got",
+      "it",
+      ".",
+      "See",
+      "you",
+      "on",
+      "the",
+      "weekend",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "got it",
+        "pinyin": null,
+        "meaning": "entendi"
+      },
+      {
+        "id": 2,
+        "word": "See you",
+        "pinyin": null,
+        "meaning": "Te vejo"
+      },
+      {
+        "id": 3,
+        "word": "weekend",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772293218779-11",
+    "language": "Inglês"
+  }
+]

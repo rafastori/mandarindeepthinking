@@ -1,0 +1,640 @@
+[
+  {
+    "chinese": "A: Mañana necesitas llevar al bebé al Hospital del Barrio para que lo vacunen. ¿Pediste tiempo libre?",
+    "pinyin": "",
+    "translation": "A: Amanhã você precisa levar o bebê ao Hospital do Bairro para que o vacinem. Você pediu folga?",
+    "tokens": [
+      "Mañana",
+      "necesitas",
+      "llevar",
+      "al",
+      "bebé",
+      "al",
+      "Hospital",
+      "del",
+      "Barrio",
+      "para",
+      "que",
+      "lo",
+      "vacunen",
+      ".",
+      "¿",
+      "Pediste",
+      "tiempo",
+      "libre",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mañana",
+        "pinyin": "",
+        "meaning": "Amanhã"
+      },
+      {
+        "id": 2,
+        "word": "necesitas",
+        "pinyin": "",
+        "meaning": "você precisa"
+      },
+      {
+        "id": 3,
+        "word": "llevar",
+        "pinyin": "",
+        "meaning": "levar"
+      },
+      {
+        "id": 4,
+        "word": "bebé",
+        "pinyin": "",
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
+        "word": "Hospital",
+        "pinyin": "",
+        "meaning": "Hospital"
+      },
+      {
+        "id": 6,
+        "word": "Barrio",
+        "pinyin": "",
+        "meaning": "Bairro"
+      },
+      {
+        "id": 7,
+        "word": "vacunen",
+        "pinyin": "",
+        "meaning": "vacinem"
+      },
+      {
+        "id": 8,
+        "word": "Pediste",
+        "pinyin": "",
+        "meaning": "Você pediu"
+      },
+      {
+        "id": 9,
+        "word": "tiempo libre",
+        "pinyin": "",
+        "meaning": "folga, tempo livre"
+      }
+    ],
+    "id": "local-1772301273383-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí, pedí un día libre. Cariño, ¿qué inyecciones le van a poner al bebé mañana?",
+    "pinyin": "",
+    "translation": "B: Sim, pedi um dia de folga. Carinho, que injeções vão dar ao bebê amanhã?",
+    "tokens": [
+      "Sí",
+      ",",
+      "pedí",
+      "un",
+      "día",
+      "libre",
+      ".",
+      "Cariño",
+      ",",
+      "¿",
+      "qué",
+      "inyecciones",
+      "le",
+      "van",
+      "a",
+      "poner",
+      "al",
+      "bebé",
+      "mañana",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "pedí",
+        "pinyin": "",
+        "meaning": "pedi"
+      },
+      {
+        "id": 3,
+        "word": "día libre",
+        "pinyin": "",
+        "meaning": "dia de folga"
+      },
+      {
+        "id": 4,
+        "word": "Cariño",
+        "pinyin": "",
+        "meaning": "Amor, Carinho"
+      },
+      {
+        "id": 5,
+        "word": "inyecciones",
+        "pinyin": "",
+        "meaning": "injeções"
+      },
+      {
+        "id": 6,
+        "word": "poner",
+        "pinyin": "",
+        "meaning": "aplicar, colocar"
+      }
+    ],
+    "id": "local-1772301273383-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Voy a echar un vistazo. Es la vacuna contra la hepatitis B.",
+    "pinyin": "",
+    "translation": "A: Vou dar uma olhada. É a vacina contra a hepatite B.",
+    "tokens": [
+      "Voy",
+      "a",
+      "echar",
+      "un",
+      "vistazo",
+      ".",
+      "Es",
+      "la",
+      "vacuna",
+      "contra",
+      "la",
+      "hepatitis",
+      "B",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Voy a echar un vistazo",
+        "pinyin": "",
+        "meaning": "Vou dar uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "vacuna",
+        "pinyin": "",
+        "meaning": "vacina"
+      },
+      {
+        "id": 3,
+        "word": "contra",
+        "pinyin": "",
+        "meaning": "contra"
+      },
+      {
+        "id": 4,
+        "word": "hepatitis",
+        "pinyin": "",
+        "meaning": "hepatite"
+      }
+    ],
+    "id": "local-1772301273383-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh. Es gratis, ¿verdad?",
+    "pinyin": "",
+    "translation": "B: Ah. É grátis, não é?",
+    "tokens": [
+      "Oh",
+      ".",
+      "Es",
+      "gratis",
+      ",",
+      "¿",
+      "verdad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gratis",
+        "pinyin": "",
+        "meaning": "grátis, de graça"
+      },
+      {
+        "id": 2,
+        "word": "¿verdad?",
+        "pinyin": "",
+        "meaning": "não é?, certo?"
+      }
+    ],
+    "id": "local-1772301273383-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Hay vacunas de fabricación china e importadas. Las de fabricación china son gratuitas. Las importadas tienen un costo.",
+    "pinyin": "",
+    "translation": "A: Há vacinas de fabricação chinesa e importadas. As de fabricação chinesa são gratuitas. As importadas têm um custo.",
+    "tokens": [
+      "Hay",
+      "vacunas",
+      "de",
+      "fabricación",
+      "china",
+      "e",
+      "importadas",
+      ".",
+      "Las",
+      "de",
+      "fabricación",
+      "china",
+      "son",
+      "gratuitas",
+      ".",
+      "Las",
+      "importadas",
+      "tienen",
+      "un",
+      "costo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hay",
+        "pinyin": "",
+        "meaning": "Há, Existem"
+      },
+      {
+        "id": 2,
+        "word": "vacunas",
+        "pinyin": "",
+        "meaning": "vacinas"
+      },
+      {
+        "id": 3,
+        "word": "fabricación",
+        "pinyin": "",
+        "meaning": "fabricação"
+      },
+      {
+        "id": 4,
+        "word": "china",
+        "pinyin": "",
+        "meaning": "chinesa"
+      },
+      {
+        "id": 5,
+        "word": "importadas",
+        "pinyin": "",
+        "meaning": "importadas"
+      },
+      {
+        "id": 6,
+        "word": "gratuitas",
+        "pinyin": "",
+        "meaning": "gratuitas"
+      },
+      {
+        "id": 7,
+        "word": "tienen",
+        "pinyin": "",
+        "meaning": "têm"
+      },
+      {
+        "id": 8,
+        "word": "costo",
+        "pinyin": "",
+        "meaning": "custo"
+      }
+    ],
+    "id": "local-1772301273383-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces, ¿recibiremos la de fabricación china o la importada?",
+    "pinyin": "",
+    "translation": "B: Então, receberemos a de fabricação chinesa ou a importada?",
+    "tokens": [
+      "Entonces",
+      ",",
+      "¿",
+      "recibiremos",
+      "la",
+      "de",
+      "fabricación",
+      "china",
+      "o",
+      "la",
+      "importada",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "recibiremos",
+        "pinyin": "",
+        "meaning": "receberemos"
+      },
+      {
+        "id": 3,
+        "word": "fabricación china",
+        "pinyin": "",
+        "meaning": "fabricação chinesa"
+      },
+      {
+        "id": 4,
+        "word": "importada",
+        "pinyin": "",
+        "meaning": "importada"
+      }
+    ],
+    "id": "local-1772301273383-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La importada.",
+    "pinyin": "",
+    "translation": "A: A importada.",
+    "tokens": [
+      "La",
+      "importada",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "importada",
+        "pinyin": "",
+        "meaning": "importada"
+      }
+    ],
+    "id": "local-1772301273383-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pero la resistencia de nuestro pequeño es muy buena y no se enferma. No es realmente necesario obtener la importada.",
+    "pinyin": "",
+    "translation": "B: Mas a resistência do nosso pequeno é muito boa e ele não fica doente. Não é realmente necessário obter a importada.",
+    "tokens": [
+      "Pero",
+      "la",
+      "resistencia",
+      "de",
+      "nuestro",
+      "pequeño",
+      "es",
+      "muy",
+      "buena",
+      "y",
+      "no",
+      "se",
+      "enferma",
+      ".",
+      "No",
+      "es",
+      "realmente",
+      "necesario",
+      "obtener",
+      "la",
+      "importada",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "resistencia",
+        "pinyin": "",
+        "meaning": "resistência"
+      },
+      {
+        "id": 3,
+        "word": "nuestro",
+        "pinyin": "",
+        "meaning": "nosso"
+      },
+      {
+        "id": 4,
+        "word": "pequeño",
+        "pinyin": "",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 5,
+        "word": "buena",
+        "pinyin": "",
+        "meaning": "boa"
+      },
+      {
+        "id": 6,
+        "word": "se enferma",
+        "pinyin": "",
+        "meaning": "fica doente"
+      },
+      {
+        "id": 7,
+        "word": "realmente",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 8,
+        "word": "necesario",
+        "pinyin": "",
+        "meaning": "necessário"
+      },
+      {
+        "id": 9,
+        "word": "obtener",
+        "pinyin": "",
+        "meaning": "obter, conseguir"
+      },
+      {
+        "id": 10,
+        "word": "importada",
+        "pinyin": "",
+        "meaning": "importada"
+      }
+    ],
+    "id": "local-1772301273383-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No podemos escatimar en el dinero que gastamos en nuestro hijo. La vacuna importada es cara, pero debería ser mejor y más segura. Obtienes lo que pagas.",
+    "pinyin": "",
+    "translation": "A: Não podemos economizar no dinheiro que gastamos com nosso filho. A vacina importada é cara, mas deveria ser melhor e mais segura. Você recebe o que paga.",
+    "tokens": [
+      "No",
+      "podemos",
+      "escatimar",
+      "en",
+      "el",
+      "dinero",
+      "que",
+      "gastamos",
+      "en",
+      "nuestro",
+      "hijo",
+      ".",
+      "La",
+      "vacuna",
+      "importada",
+      "es",
+      "cara",
+      ",",
+      "pero",
+      "debería",
+      "ser",
+      "mejor",
+      "y",
+      "más",
+      "segura",
+      ".",
+      "Obtienes",
+      "lo",
+      "que",
+      "pagas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "podemos",
+        "pinyin": "",
+        "meaning": "podemos"
+      },
+      {
+        "id": 2,
+        "word": "escatimar",
+        "pinyin": "",
+        "meaning": "economizar, poupar"
+      },
+      {
+        "id": 3,
+        "word": "dinero",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "gastamos",
+        "pinyin": "",
+        "meaning": "gastamos"
+      },
+      {
+        "id": 5,
+        "word": "hijo",
+        "pinyin": "",
+        "meaning": "filho"
+      },
+      {
+        "id": 6,
+        "word": "vacuna",
+        "pinyin": "",
+        "meaning": "vacina"
+      },
+      {
+        "id": 7,
+        "word": "importada",
+        "pinyin": "",
+        "meaning": "importada"
+      },
+      {
+        "id": 8,
+        "word": "cara",
+        "pinyin": "",
+        "meaning": "cara (no sentido de preço)"
+      },
+      {
+        "id": 9,
+        "word": "debería",
+        "pinyin": "",
+        "meaning": "deveria"
+      },
+      {
+        "id": 10,
+        "word": "mejor",
+        "pinyin": "",
+        "meaning": "melhor"
+      },
+      {
+        "id": 11,
+        "word": "segura",
+        "pinyin": "",
+        "meaning": "segura"
+      },
+      {
+        "id": 12,
+        "word": "Obtienes lo que pagas",
+        "pinyin": "",
+        "meaning": "Você recebe o que paga, Você tem o que paga"
+      }
+    ],
+    "id": "local-1772301273383-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: OK, jefa. Lo que digas va. Te escucharé.",
+    "pinyin": "",
+    "translation": "B: OK, chefe. O que você disser vale. Vou te escutar.",
+    "tokens": [
+      "OK",
+      ",",
+      "jefa",
+      ".",
+      "Lo",
+      "que",
+      "digas",
+      "va",
+      ".",
+      "Te",
+      "escucharé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "OK",
+        "pinyin": "",
+        "meaning": "OK, Certo"
+      },
+      {
+        "id": 2,
+        "word": "jefa",
+        "pinyin": "",
+        "meaning": "chefe (feminino)"
+      },
+      {
+        "id": 3,
+        "word": "Lo que digas va",
+        "pinyin": "",
+        "meaning": "O que você disser vale, O que você disser, está feito"
+      },
+      {
+        "id": 4,
+        "word": "digas",
+        "pinyin": "",
+        "meaning": "você diga"
+      },
+      {
+        "id": 5,
+        "word": "escucharé",
+        "pinyin": "",
+        "meaning": "escutarei, ouvirei"
+      }
+    ],
+    "id": "local-1772301273383-9",
+    "language": "Espanhol"
+  }
+]

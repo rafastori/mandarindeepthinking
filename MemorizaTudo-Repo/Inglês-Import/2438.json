@@ -1,0 +1,499 @@
+[
+  {
+    "chinese": "A: Xiao Chen, you're planning to buy a car?",
+    "pinyin": "",
+    "translation": "A: Xiao Chen, você está planejando comprar um carro?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Chen,",
+      "you're",
+      "planning",
+      "to",
+      "buy",
+      "a",
+      "car?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planning",
+        "pinyin": "",
+        "meaning": "planejando"
+      },
+      {
+        "id": 2,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "car",
+        "pinyin": "",
+        "meaning": "carro"
+      }
+    ],
+    "id": "local-1772293131332-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yeah! Xiao Sun, I was planning to ask you for your opinion.",
+    "pinyin": "",
+    "translation": "B: Sim! Xiao Sun, eu estava planejando pedir sua opinião.",
+    "tokens": [
+      "B:",
+      "Yeah!",
+      "Xiao",
+      "Sun,",
+      "I",
+      "was",
+      "planning",
+      "to",
+      "ask",
+      "you",
+      "for",
+      "your",
+      "opinion."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yeah",
+        "pinyin": "",
+        "meaning": "Sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "planning",
+        "pinyin": "",
+        "meaning": "planejando"
+      },
+      {
+        "id": 3,
+        "word": "ask",
+        "pinyin": "",
+        "meaning": "pedir, perguntar"
+      },
+      {
+        "id": 4,
+        "word": "opinion",
+        "pinyin": "",
+        "meaning": "opinião"
+      }
+    ],
+    "id": "local-1772293131332-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What's your budget approximately?",
+    "pinyin": "",
+    "translation": "A: Qual é o seu orçamento aproximadamente?",
+    "tokens": [
+      "A:",
+      "What's",
+      "your",
+      "budget",
+      "approximately?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "approximately",
+        "pinyin": "",
+        "meaning": "aproximadamente"
+      }
+    ],
+    "id": "local-1772293131332-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Including registration and taxes, a bit more than 200,000.",
+    "pinyin": "",
+    "translation": "B: Incluindo registro e impostos, um pouco mais de 200.000.",
+    "tokens": [
+      "B:",
+      "Including",
+      "registration",
+      "and",
+      "taxes,",
+      "a",
+      "bit",
+      "more",
+      "than",
+      "200,000."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Including",
+        "pinyin": "",
+        "meaning": "Incluindo"
+      },
+      {
+        "id": 2,
+        "word": "registration",
+        "pinyin": "",
+        "meaning": "registro, emplacamento"
+      },
+      {
+        "id": 3,
+        "word": "taxes",
+        "pinyin": "",
+        "meaning": "impostos"
+      }
+    ],
+    "id": "local-1772293131332-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Are you planning on getting a Shanghai plate or an outside plate?",
+    "pinyin": "",
+    "translation": "A: Você está planejando pegar uma placa de Xangai ou uma placa de fora?",
+    "tokens": [
+      "A:",
+      "Are",
+      "you",
+      "planning",
+      "on",
+      "getting",
+      "a",
+      "Shanghai",
+      "plate",
+      "or",
+      "an",
+      "outside",
+      "plate?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planning",
+        "pinyin": "",
+        "meaning": "planejando"
+      },
+      {
+        "id": 2,
+        "word": "getting",
+        "pinyin": "",
+        "meaning": "conseguindo, pegando"
+      },
+      {
+        "id": 3,
+        "word": "plate",
+        "pinyin": "",
+        "meaning": "placa (de carro)"
+      },
+      {
+        "id": 4,
+        "word": "outside",
+        "pinyin": "",
+        "meaning": "de fora, externo"
+      }
+    ],
+    "id": "local-1772293131332-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: An outside plate.",
+    "pinyin": "",
+    "translation": "B: Uma placa de fora.",
+    "tokens": [
+      "B:",
+      "An",
+      "outside",
+      "plate."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "outside",
+        "pinyin": "",
+        "meaning": "de fora"
+      },
+      {
+        "id": 2,
+        "word": "plate",
+        "pinyin": "",
+        "meaning": "placa (de carro)"
+      }
+    ],
+    "id": "local-1772293131332-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'm planning to use it on the weekend.",
+    "pinyin": "",
+    "translation": "Estou planejando usá-lo no fim de semana.",
+    "tokens": [
+      "I'm",
+      "planning",
+      "to",
+      "use",
+      "it",
+      "on",
+      "the",
+      "weekend."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planning",
+        "pinyin": "",
+        "meaning": "planejando"
+      },
+      {
+        "id": 2,
+        "word": "use",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 3,
+        "word": "weekend",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772293131332-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I usually ride the company bus to and from work.",
+    "pinyin": "",
+    "translation": "Eu geralmente pego o ônibus da empresa para ir e voltar do trabalho.",
+    "tokens": [
+      "I",
+      "usually",
+      "ride",
+      "the",
+      "company",
+      "bus",
+      "to",
+      "and",
+      "from",
+      "work."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "usually",
+        "pinyin": "",
+        "meaning": "geralmente"
+      },
+      {
+        "id": 2,
+        "word": "ride",
+        "pinyin": "",
+        "meaning": "pegar (transporte), andar"
+      },
+      {
+        "id": 3,
+        "word": "company",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "bus",
+        "pinyin": "",
+        "meaning": "ônibus"
+      },
+      {
+        "id": 5,
+        "word": "work",
+        "pinyin": "",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772293131332-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's very convenient.",
+    "pinyin": "",
+    "translation": "É muito conveniente.",
+    "tokens": [
+      "It's",
+      "very",
+      "convenient."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "convenient",
+        "pinyin": "",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772293131332-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What kind of cars do you like?",
+    "pinyin": "",
+    "translation": "A: Que tipo de carros você gosta?",
+    "tokens": [
+      "A:",
+      "What",
+      "kind",
+      "of",
+      "cars",
+      "do",
+      "you",
+      "like?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kind",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 2,
+        "word": "cars",
+        "pinyin": "",
+        "meaning": "carros"
+      },
+      {
+        "id": 3,
+        "word": "like",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772293131332-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Sedans.",
+    "pinyin": "",
+    "translation": "B: Sedans.",
+    "tokens": [
+      "B:",
+      "Sedans."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sedans",
+        "pinyin": "",
+        "meaning": "Sedans"
+      }
+    ],
+    "id": "local-1772293131332-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "They have the most space.",
+    "pinyin": "",
+    "translation": "Eles têm o maior espaço.",
+    "tokens": [
+      "They",
+      "have",
+      "the",
+      "most",
+      "space."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "most",
+        "pinyin": "",
+        "meaning": "o maior, a maioria"
+      },
+      {
+        "id": 2,
+        "word": "space",
+        "pinyin": "",
+        "meaning": "espaço"
+      }
+    ],
+    "id": "local-1772293131332-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Take a look at the Buick Regal, Toyota Camry and the Volkswagen Magotan.",
+    "pinyin": "",
+    "translation": "A: Dê uma olhada no Buick Regal, Toyota Camry e no Volkswagen Magotan.",
+    "tokens": [
+      "A:",
+      "Take",
+      "a",
+      "look",
+      "at",
+      "the",
+      "Buick",
+      "Regal,",
+      "Toyota",
+      "Camry",
+      "and",
+      "the",
+      "Volkswagen",
+      "Magotan."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Take a look",
+        "pinyin": "",
+        "meaning": "Dê uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "Buick Regal",
+        "pinyin": "",
+        "meaning": "Buick Regal (marca e modelo de carro)"
+      },
+      {
+        "id": 3,
+        "word": "Toyota Camry",
+        "pinyin": "",
+        "meaning": "Toyota Camry (marca e modelo de carro)"
+      },
+      {
+        "id": 4,
+        "word": "Volkswagen Magotan",
+        "pinyin": "",
+        "meaning": "Volkswagen Magotan (marca e modelo de carro)"
+      }
+    ],
+    "id": "local-1772293131332-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "These cars are pretty good.",
+    "pinyin": "",
+    "translation": "Esses carros são muito bons.",
+    "tokens": [
+      "These",
+      "cars",
+      "are",
+      "pretty",
+      "good."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pretty",
+        "pinyin": "",
+        "meaning": "muito, bastante"
+      },
+      {
+        "id": 2,
+        "word": "good",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772293131332-13",
+    "language": "Inglês"
+  }
+]

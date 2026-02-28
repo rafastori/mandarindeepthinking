@@ -1,0 +1,591 @@
+[
+  {
+    "chinese": "A: Salve. Posso chiedere, è questo il Dipartimento di Esami Medici dell'Ospedale Huamei?",
+    "pinyin": null,
+    "translation": "A: Olá. Posso perguntar, este é o Departamento de Exames Médicos do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "Salve.",
+      "Posso",
+      "chiedere,",
+      "è",
+      "questo",
+      "il",
+      "Dipartimento",
+      "di",
+      "Esami",
+      "Medici",
+      "dell'Ospedale",
+      "Huamei?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Salve",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "Posso chiedere",
+        "pinyin": null,
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "Dipartimento",
+        "pinyin": null,
+        "meaning": "Departamento"
+      },
+      {
+        "id": 4,
+        "word": "Esami Medici",
+        "pinyin": null,
+        "meaning": "Exames Médicos"
+      },
+      {
+        "id": 5,
+        "word": "Ospedale",
+        "pinyin": null,
+        "meaning": "Hospital"
+      }
+    ],
+    "id": "local-1772300255180-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Posso chiedere, c'è qualcosa in cui posso aiutarla?",
+    "pinyin": null,
+    "translation": "B: Sim. Posso perguntar, há algo em que posso ajudá-la?",
+    "tokens": [
+      "B:",
+      "Sì.",
+      "Posso",
+      "chiedere,",
+      "c'è",
+      "qualcosa",
+      "in",
+      "cui",
+      "posso",
+      "aiutarla?"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Posso chiedere",
+        "pinyin": null,
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 7,
+        "word": "c'è qualcosa",
+        "pinyin": null,
+        "meaning": "há algo"
+      },
+      {
+        "id": 8,
+        "word": "aiutarla",
+        "pinyin": null,
+        "meaning": "ajudá-la (formal)"
+      }
+    ],
+    "id": "local-1772300255180-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Avete esami medici per l'ingresso al lavoro qui?",
+    "pinyin": null,
+    "translation": "A: Vocês têm exames médicos para admissão de trabalho aqui?",
+    "tokens": [
+      "A:",
+      "Avete",
+      "esami",
+      "medici",
+      "per",
+      "l'ingresso",
+      "al",
+      "lavoro",
+      "qui?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "Avete",
+        "pinyin": null,
+        "meaning": "Vocês têm"
+      },
+      {
+        "id": 4,
+        "word": "esami medici",
+        "pinyin": null,
+        "meaning": "exames médicos"
+      },
+      {
+        "id": 10,
+        "word": "ingresso al lavoro",
+        "pinyin": null,
+        "meaning": "entrada/admissão no trabalho"
+      }
+    ],
+    "id": "local-1772300255180-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Abbiamo un pacchetto che costa 260 yuan.",
+    "pinyin": null,
+    "translation": "B: Sim. Temos um pacote que custa 260 yuan.",
+    "tokens": [
+      "B:",
+      "Sì.",
+      "Abbiamo",
+      "un",
+      "pacchetto",
+      "che",
+      "costa",
+      "260",
+      "yuan."
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 11,
+        "word": "Abbiamo",
+        "pinyin": null,
+        "meaning": "Nós temos"
+      },
+      {
+        "id": 12,
+        "word": "pacchetto",
+        "pinyin": null,
+        "meaning": "pacote"
+      },
+      {
+        "id": 13,
+        "word": "costa",
+        "pinyin": null,
+        "meaning": "custa"
+      }
+    ],
+    "id": "local-1772300255180-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Quali particolari esaminerà?",
+    "pinyin": null,
+    "translation": "A: Quais itens/particulares irá examinar?",
+    "tokens": [
+      "A:",
+      "Quali",
+      "particolari",
+      "esaminerà?"
+    ],
+    "keywords": [
+      {
+        "id": 14,
+        "word": "Quali",
+        "pinyin": null,
+        "meaning": "Quais"
+      },
+      {
+        "id": 15,
+        "word": "particolari",
+        "pinyin": null,
+        "meaning": "itens/particulares"
+      },
+      {
+        "id": 16,
+        "word": "esaminerà",
+        "pinyin": null,
+        "meaning": "examinará"
+      }
+    ],
+    "id": "local-1772300255180-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: L'altezza, il peso e la pressione sanguigna di base. Analisi del sangue, analisi delle urine, ecografia in modalità B ed elettrocardiogramma.",
+    "pinyin": null,
+    "translation": "B: A altura, o peso e a pressão sanguínea básica. Análise de sangue, análise de urina, ultrassonografia em modo B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "L'altezza,",
+      "il",
+      "peso",
+      "e",
+      "la",
+      "pressione",
+      "sanguigna",
+      "di",
+      "base.",
+      "Analisi",
+      "del",
+      "sangue,",
+      "analisi",
+      "delle",
+      "urine,",
+      "ecografia",
+      "in",
+      "modalità",
+      "B",
+      "ed",
+      "elettrocardiogramma."
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "L'altezza",
+        "pinyin": null,
+        "meaning": "A altura"
+      },
+      {
+        "id": 18,
+        "word": "il peso",
+        "pinyin": null,
+        "meaning": "o peso"
+      },
+      {
+        "id": 19,
+        "word": "pressione sanguigna",
+        "pinyin": null,
+        "meaning": "pressão sanguínea"
+      },
+      {
+        "id": 20,
+        "word": "di base",
+        "pinyin": null,
+        "meaning": "básico"
+      },
+      {
+        "id": 21,
+        "word": "Analisi del sangue",
+        "pinyin": null,
+        "meaning": "Análise de sangue"
+      },
+      {
+        "id": 22,
+        "word": "analisi delle urine",
+        "pinyin": null,
+        "meaning": "análise de urina"
+      },
+      {
+        "id": 23,
+        "word": "ecografia in modalità B",
+        "pinyin": null,
+        "meaning": "ultrassonografia em modo B"
+      },
+      {
+        "id": 24,
+        "word": "elettrocardiogramma",
+        "pinyin": null,
+        "meaning": "eletrocardiograma"
+      }
+    ],
+    "id": "local-1772300255180-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Se volessi anche far controllare altri particolari, posso farlo?",
+    "pinyin": null,
+    "translation": "A: Se eu quisesse também mandar verificar outros itens, posso fazê-lo?",
+    "tokens": [
+      "A:",
+      "Se",
+      "volessi",
+      "anche",
+      "far",
+      "controllare",
+      "altri",
+      "particolari,",
+      "posso",
+      "farlo?"
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "Se volessi",
+        "pinyin": null,
+        "meaning": "Se eu quisesse"
+      },
+      {
+        "id": 26,
+        "word": "far controllare",
+        "pinyin": null,
+        "meaning": "mandar verificar"
+      },
+      {
+        "id": 27,
+        "word": "altri particolari",
+        "pinyin": null,
+        "meaning": "outros itens/detalhes"
+      },
+      {
+        "id": 28,
+        "word": "posso farlo",
+        "pinyin": null,
+        "meaning": "posso fazê-lo"
+      }
+    ],
+    "id": "local-1772300255180-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì, può. Può aggiungere singoli elementi e compensare il costo e va bene così.",
+    "pinyin": null,
+    "translation": "B: Sim, pode. Você pode adicionar elementos individuais e compensar o custo e está tudo bem assim.",
+    "tokens": [
+      "B:",
+      "Sì,",
+      "può.",
+      "Può",
+      "aggiungere",
+      "singoli",
+      "elementi",
+      "e",
+      "compensare",
+      "il",
+      "costo",
+      "e",
+      "va",
+      "bene",
+      "così."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "Sì, può",
+        "pinyin": null,
+        "meaning": "Sim, pode (formal)"
+      },
+      {
+        "id": 30,
+        "word": "aggiungere",
+        "pinyin": null,
+        "meaning": "adicionar"
+      },
+      {
+        "id": 31,
+        "word": "singoli elementi",
+        "pinyin": null,
+        "meaning": "elementos individuais"
+      },
+      {
+        "id": 32,
+        "word": "compensare il costo",
+        "pinyin": null,
+        "meaning": "compensar o custo"
+      },
+      {
+        "id": 33,
+        "word": "va bene così",
+        "pinyin": null,
+        "meaning": "está tudo bem assim"
+      }
+    ],
+    "id": "local-1772300255180-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il referto verrà spedito direttamente al lavoro?",
+    "pinyin": null,
+    "translation": "A: O relatório será enviado diretamente para o trabalho?",
+    "tokens": [
+      "A:",
+      "Il",
+      "referto",
+      "verrà",
+      "spedito",
+      "direttamente",
+      "al",
+      "lavoro?"
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Il referto",
+        "pinyin": null,
+        "meaning": "O relatório/laudo"
+      },
+      {
+        "id": 35,
+        "word": "verrà spedito",
+        "pinyin": null,
+        "meaning": "será enviado"
+      },
+      {
+        "id": 36,
+        "word": "direttamente",
+        "pinyin": null,
+        "meaning": "diretamente"
+      },
+      {
+        "id": 37,
+        "word": "al lavoro",
+        "pinyin": null,
+        "meaning": "para o trabalho"
+      }
+    ],
+    "id": "local-1772300255180-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: No, spetta alla persona andarlo a ritirare o farlo spedire con corriere espresso. Ha bisogno che l'aiuti a fissare un appuntamento adesso?",
+    "pinyin": null,
+    "translation": "B: Não, cabe à pessoa ir retirá-lo ou mandá-lo enviar por correio expresso. Precisa que eu a ajude a marcar um compromisso agora?",
+    "tokens": [
+      "B:",
+      "No,",
+      "spetta",
+      "alla",
+      "persona",
+      "andarlo",
+      "a",
+      "ritirare",
+      "o",
+      "farlo",
+      "spedire",
+      "con",
+      "corriere",
+      "espresso.",
+      "Ha",
+      "bisogno",
+      "che",
+      "l'aiuti",
+      "a",
+      "fissare",
+      "un",
+      "appuntamento",
+      "adesso?"
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "No",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 39,
+        "word": "spetta alla persona",
+        "pinyin": null,
+        "meaning": "cabe à pessoa / é responsabilidade da pessoa"
+      },
+      {
+        "id": 40,
+        "word": "andarlo a ritirare",
+        "pinyin": null,
+        "meaning": "ir retirá-lo"
+      },
+      {
+        "id": 41,
+        "word": "farlo spedire",
+        "pinyin": null,
+        "meaning": "mandá-lo enviar"
+      },
+      {
+        "id": 42,
+        "word": "corriere espresso",
+        "pinyin": null,
+        "meaning": "correio expresso"
+      },
+      {
+        "id": 43,
+        "word": "Ha bisogno che l'aiuti",
+        "pinyin": null,
+        "meaning": "Precisa que eu a ajude (formal)"
+      },
+      {
+        "id": 44,
+        "word": "fissare un appuntamento",
+        "pinyin": null,
+        "meaning": "marcar um compromisso/agendar"
+      }
+    ],
+    "id": "local-1772300255180-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Lo fissi per lunedì prossimo.",
+    "pinyin": null,
+    "translation": "A: Marque-o para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "Lo",
+      "fissi",
+      "per",
+      "lunedì",
+      "prossimo."
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "Lo fissi",
+        "pinyin": null,
+        "meaning": "Marque-o (imperativo formal)"
+      },
+      {
+        "id": 46,
+        "word": "lunedì prossimo",
+        "pinyin": null,
+        "meaning": "próxima segunda-feira"
+      }
+    ],
+    "id": "local-1772300255180-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ok. Per favore, lasci le sue informazioni di base.",
+    "pinyin": null,
+    "translation": "B: Ok. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "B:",
+      "Ok.",
+      "Per",
+      "favore,",
+      "lasci",
+      "le",
+      "sue",
+      "informazioni",
+      "di",
+      "base."
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "Ok",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 48,
+        "word": "Per favore",
+        "pinyin": null,
+        "meaning": "Por favor"
+      },
+      {
+        "id": 49,
+        "word": "lasci",
+        "pinyin": null,
+        "meaning": "deixe (imperativo formal)"
+      },
+      {
+        "id": 50,
+        "word": "informazioni di base",
+        "pinyin": null,
+        "meaning": "informações básicas"
+      }
+    ],
+    "id": "local-1772300255180-11",
+    "language": "Italiano"
+  }
+]

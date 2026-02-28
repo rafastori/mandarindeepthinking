@@ -1,0 +1,1475 @@
+[
+  {
+    "chinese": "A: Salut, quel est le numéro de téléphone pour réserver un taxi ?",
+    "pinyin": "",
+    "translation": "A: Olá, qual é o número de telefone para reservar um táxi?",
+    "tokens": [
+      "A:",
+      "Salut,",
+      "quel",
+      "est",
+      "le",
+      "numéro",
+      "de",
+      "téléphone",
+      "pour",
+      "réserver",
+      "un",
+      "taxi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Salut",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "numéro",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 3,
+        "word": "téléphone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 4,
+        "word": "réserver",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 5,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      }
+    ],
+    "id": "local-1772294138407-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Quoi ? Qui utilise encore le téléphone pour réserver un taxi de nos jours ?",
+    "pinyin": "",
+    "translation": "B: O quê? Quem ainda usa o telefone para reservar um táxi hoje em dia?",
+    "tokens": [
+      "B:",
+      "Quoi",
+      "?",
+      "Qui",
+      "utilise",
+      "encore",
+      "le",
+      "téléphone",
+      "pour",
+      "réserver",
+      "un",
+      "taxi",
+      "de",
+      "nos",
+      "jours",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quoi",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "utilise",
+        "pinyin": "",
+        "meaning": "usa"
+      },
+      {
+        "id": 3,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 4,
+        "word": "téléphone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "réserver",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "de nos jours",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      }
+    ],
+    "id": "local-1772294138407-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors, comment en réserves-tu un ?",
+    "pinyin": "",
+    "translation": "A: Então, como você reserva um?",
+    "tokens": [
+      "A:",
+      "Alors,",
+      "comment",
+      "en",
+      "réserves-tu",
+      "un",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "comment",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "réserves-tu",
+        "pinyin": "",
+        "meaning": "reservas tu"
+      }
+    ],
+    "id": "local-1772294138407-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Utilise un logiciel de réservation de taxi. Télécharge-en un sur ton téléphone et le tour est joué.",
+    "pinyin": "",
+    "translation": "B: Use um software de reserva de táxi. Baixe um no seu telefone e pronto.",
+    "tokens": [
+      "B:",
+      "Utilise",
+      "un",
+      "logiciel",
+      "de",
+      "réservation",
+      "de",
+      "taxi",
+      ".",
+      "Télécharge-en",
+      "un",
+      "sur",
+      "ton",
+      "téléphone",
+      "et",
+      "le",
+      "tour",
+      "est",
+      "joué",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Utilise",
+        "pinyin": "",
+        "meaning": "Use"
+      },
+      {
+        "id": 2,
+        "word": "logiciel",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "réservation",
+        "pinyin": "",
+        "meaning": "reserva"
+      },
+      {
+        "id": 4,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 5,
+        "word": "Télécharge-en",
+        "pinyin": "",
+        "meaning": "Baixe um"
+      },
+      {
+        "id": 6,
+        "word": "téléphone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 7,
+        "word": "le tour est joué",
+        "pinyin": "",
+        "meaning": "pronto"
+      }
+    ],
+    "id": "local-1772294138407-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oh. Et après, qu'est-ce que tu fais ?",
+    "pinyin": "",
+    "translation": "A: Ah. E depois, o que você faz?",
+    "tokens": [
+      "A:",
+      "Oh",
+      ".",
+      "Et",
+      "après,",
+      "qu'est-ce",
+      "que",
+      "tu",
+      "fais",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 2,
+        "word": "qu'est-ce que",
+        "pinyin": "",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772294138407-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu entres ton numéro de téléphone et tu peux t'inscrire directement.",
+    "pinyin": "",
+    "translation": "B: Você insere seu número de telefone e pode se registrar diretamente.",
+    "tokens": [
+      "B:",
+      "Tu",
+      "entres",
+      "ton",
+      "numéro",
+      "de",
+      "téléphone",
+      "et",
+      "tu",
+      "peux",
+      "t'inscrire",
+      "directement",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entres",
+        "pinyin": "",
+        "meaning": "insere"
+      },
+      {
+        "id": 2,
+        "word": "numéro",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 3,
+        "word": "téléphone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 4,
+        "word": "t'inscrire",
+        "pinyin": "",
+        "meaning": "se registrar"
+      },
+      {
+        "id": 5,
+        "word": "directement",
+        "pinyin": "",
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772294138407-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors, comment savent-ils où je suis ?",
+    "pinyin": "",
+    "translation": "A: Então, como eles sabem onde eu estou?",
+    "tokens": [
+      "A:",
+      "Alors,",
+      "comment",
+      "savent-ils",
+      "où",
+      "je",
+      "suis",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "comment",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "savent-ils",
+        "pinyin": "",
+        "meaning": "sabem eles"
+      },
+      {
+        "id": 4,
+        "word": "où",
+        "pinyin": "",
+        "meaning": "onde"
+      }
+    ],
+    "id": "local-1772294138407-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Grâce au GPS, ils peuvent trouver ta position très rapidement et un taxi proche arrivera bientôt. Bien sûr, tu peux aussi leur laisser un message vocal.",
+    "pinyin": "",
+    "translation": "B: Graças ao GPS, eles podem encontrar sua posição muito rapidamente e um táxi próximo chegará em breve. Claro, você também pode deixar uma mensagem de voz para eles.",
+    "tokens": [
+      "B:",
+      "Grâce",
+      "au",
+      "GPS,",
+      "ils",
+      "peuvent",
+      "trouver",
+      "ta",
+      "position",
+      "très",
+      "rapidement",
+      "et",
+      "un",
+      "taxi",
+      "proche",
+      "arrivera",
+      "bientôt",
+      ".",
+      "Bien",
+      "sûr,",
+      "tu",
+      "peux",
+      "aussi",
+      "leur",
+      "laisser",
+      "un",
+      "message",
+      "vocal",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Grâce à",
+        "pinyin": "",
+        "meaning": "Graças a"
+      },
+      {
+        "id": 2,
+        "word": "GPS",
+        "pinyin": "",
+        "meaning": "GPS"
+      },
+      {
+        "id": 3,
+        "word": "trouver",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 4,
+        "word": "position",
+        "pinyin": "",
+        "meaning": "posição"
+      },
+      {
+        "id": 5,
+        "word": "rapidement",
+        "pinyin": "",
+        "meaning": "rapidamente"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "proche",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 8,
+        "word": "bientôt",
+        "pinyin": "",
+        "meaning": "em breve"
+      },
+      {
+        "id": 9,
+        "word": "Bien sûr",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 10,
+        "word": "laisser",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 11,
+        "word": "message vocal",
+        "pinyin": "",
+        "meaning": "mensagem de voz"
+      }
+    ],
+    "id": "local-1772294138407-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Ça a l'air pas mal. Tu l'as utilisé ?",
+    "pinyin": "",
+    "translation": "A: Parece bom. Você o usou?",
+    "tokens": [
+      "A:",
+      "Ça",
+      "a",
+      "l'air",
+      "pas",
+      "mal",
+      ".",
+      "Tu",
+      "l'as",
+      "utilisé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ça a l'air pas mal",
+        "pinyin": "",
+        "meaning": "Parece bom"
+      },
+      {
+        "id": 2,
+        "word": "utilisé",
+        "pinyin": "",
+        "meaning": "usado"
+      }
+    ],
+    "id": "local-1772294138407-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bien sûr. Il a beaucoup plu récemment et c'était difficile de trouver un taxi. Ce logiciel est à la fois pratique et rapide.",
+    "pinyin": "",
+    "translation": "B: Claro. Choveu muito recentemente e era difícil encontrar um táxi. Este software é prático e rápido ao mesmo tempo.",
+    "tokens": [
+      "B:",
+      "Bien",
+      "sûr",
+      ".",
+      "Il",
+      "a",
+      "beaucoup",
+      "plu",
+      "récemment",
+      "et",
+      "c'était",
+      "difficile",
+      "de",
+      "trouver",
+      "un",
+      "taxi",
+      ".",
+      "Ce",
+      "logiciel",
+      "est",
+      "à",
+      "la",
+      "fois",
+      "pratique",
+      "et",
+      "rapide",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien sûr",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 2,
+        "word": "beaucoup plu",
+        "pinyin": "",
+        "meaning": "choveu muito"
+      },
+      {
+        "id": 3,
+        "word": "récemment",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 4,
+        "word": "difficile",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 5,
+        "word": "trouver",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "logiciel",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 8,
+        "word": "à la fois",
+        "pinyin": "",
+        "meaning": "ao mesmo tempo"
+      },
+      {
+        "id": 9,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático"
+      },
+      {
+        "id": 10,
+        "word": "rapide",
+        "pinyin": "",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772294138407-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je l'essaierai la prochaine fois. Comment paies-tu ?",
+    "pinyin": "",
+    "translation": "A: Eu o experimentarei da próxima vez. Como você paga?",
+    "tokens": [
+      "A:",
+      "Je",
+      "l'essaierai",
+      "la",
+      "prochaine",
+      "fois",
+      ".",
+      "Comment",
+      "paies-tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "essaierai",
+        "pinyin": "",
+        "meaning": "experimentarei"
+      },
+      {
+        "id": 2,
+        "word": "la prochaine fois",
+        "pinyin": "",
+        "meaning": "da próxima vez"
+      },
+      {
+        "id": 3,
+        "word": "Comment",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 4,
+        "word": "paies-tu",
+        "pinyin": "",
+        "meaning": "pagas tu"
+      }
+    ],
+    "id": "local-1772294138407-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu peux payer en espèces ou avec ton compte Alipay sur ton téléphone. Parfois, tu peux aussi économiser cinq kuai si tu le fais.",
+    "pinyin": "",
+    "translation": "B: Você pode pagar em dinheiro ou com sua conta Alipay no seu telefone. Às vezes, você também pode economizar cinco kuai se fizer isso.",
+    "tokens": [
+      "B:",
+      "Tu",
+      "peux",
+      "payer",
+      "en",
+      "espèces",
+      "ou",
+      "avec",
+      "ton",
+      "compte",
+      "Alipay",
+      "sur",
+      "ton",
+      "téléphone",
+      ".",
+      "Parfois,",
+      "tu",
+      "peux",
+      "aussi",
+      "économiser",
+      "cinq",
+      "kuai",
+      "si",
+      "tu",
+      "le",
+      "fais",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 2,
+        "word": "en espèces",
+        "pinyin": "",
+        "meaning": "em dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "compte Alipay",
+        "pinyin": "",
+        "meaning": "conta Alipay"
+      },
+      {
+        "id": 4,
+        "word": "téléphone",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "Parfois",
+        "pinyin": "",
+        "meaning": "Às vezes"
+      },
+      {
+        "id": 6,
+        "word": "économiser",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 7,
+        "word": "cinq kuai",
+        "pinyin": "",
+        "meaning": "cinco kuai"
+      }
+    ],
+    "id": "local-1772294138407-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vraiment ? Alors je vais l'utiliser tout de suite !",
+    "pinyin": "",
+    "translation": "A: Mesmo? Então vou usá-lo imediatamente!",
+    "tokens": [
+      "A:",
+      "Vraiment",
+      "?",
+      "Alors",
+      "je",
+      "vais",
+      "l'utiliser",
+      "tout",
+      "de",
+      "suite",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment",
+        "pinyin": "",
+        "meaning": "Mesmo"
+      },
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "tout de suite",
+        "pinyin": "",
+        "meaning": "imediatamente"
+      }
+    ],
+    "id": "local-1772294138407-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Pivoter, sauter, glisser. Wow, les mouvements de Kim Yuna sont vraiment magnifiques.",
+    "pinyin": "",
+    "translation": "A: Girar, saltar, deslizar. Uau, os movimentos de Kim Yuna são realmente magníficos.",
+    "tokens": [
+      "A:",
+      "Pivoter,",
+      "sauter,",
+      "glisser",
+      ".",
+      "Wow,",
+      "les",
+      "mouvements",
+      "de",
+      "Kim",
+      "Yuna",
+      "sont",
+      "vraiment",
+      "magnifiques",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pivoter",
+        "pinyin": "",
+        "meaning": "Girar"
+      },
+      {
+        "id": 2,
+        "word": "sauter",
+        "pinyin": "",
+        "meaning": "saltar"
+      },
+      {
+        "id": 3,
+        "word": "glisser",
+        "pinyin": "",
+        "meaning": "deslizar"
+      },
+      {
+        "id": 4,
+        "word": "mouvements",
+        "pinyin": "",
+        "meaning": "movimentos"
+      },
+      {
+        "id": 5,
+        "word": "magnifiques",
+        "pinyin": "",
+        "meaning": "magníficos"
+      }
+    ],
+    "id": "local-1772294138407-13",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu regardes la compétition de patinage artistique des Jeux olympiques d'hiver ? Oh, c'est cette jeune prodige coréenne.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística dos Jogos Olímpicos de Inverno? Ah, é essa jovem prodígio coreana.",
+    "tokens": [
+      "B:",
+      "Tu",
+      "regardes",
+      "la",
+      "compétition",
+      "de",
+      "patinage",
+      "artistique",
+      "des",
+      "Jeux",
+      "olympiques",
+      "d'hiver",
+      "?",
+      "Oh,",
+      "c'est",
+      "cette",
+      "jeune",
+      "prodige",
+      "coréenne",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "regardes",
+        "pinyin": "",
+        "meaning": "assistindo"
+      },
+      {
+        "id": 2,
+        "word": "compétition",
+        "pinyin": "",
+        "meaning": "competição"
+      },
+      {
+        "id": 3,
+        "word": "patinage artistique",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "Jeux olympiques d'hiver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 5,
+        "word": "jeune",
+        "pinyin": "",
+        "meaning": "jovem"
+      },
+      {
+        "id": 6,
+        "word": "prodige",
+        "pinyin": "",
+        "meaning": "prodígio"
+      },
+      {
+        "id": 7,
+        "word": "coréenne",
+        "pinyin": "",
+        "meaning": "coreana"
+      }
+    ],
+    "id": "local-1772294138407-14",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Regarde comme ses mouvements sont beaux !",
+    "pinyin": "",
+    "translation": "A: Sim. Olhe como seus movimentos são bonitos!",
+    "tokens": [
+      "A:",
+      "Oui",
+      ".",
+      "Regarde",
+      "comme",
+      "ses",
+      "mouvements",
+      "sont",
+      "beaux",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Regarde",
+        "pinyin": "",
+        "meaning": "Olhe"
+      },
+      {
+        "id": 3,
+        "word": "mouvements",
+        "pinyin": "",
+        "meaning": "movimentos"
+      },
+      {
+        "id": 4,
+        "word": "beaux",
+        "pinyin": "",
+        "meaning": "bonitos"
+      }
+    ],
+    "id": "local-1772294138407-15",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais à ces Jeux olympiques d'hiver, elle n'a pas eu la médaille d'or. Je pense qu'il y a quatre ans, aux Jeux olympiques de Vancouver, elle était à son apogée.",
+    "pinyin": "",
+    "translation": "B: Mas nesses Jogos Olímpicos de Inverno, ela não ganhou a medalha de ouro. Eu acho que há quatro anos, nos Jogos Olímpicos de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "B:",
+      "Mais",
+      "à",
+      "ces",
+      "Jeux",
+      "olympiques",
+      "d'hiver,",
+      "elle",
+      "n'a",
+      "pas",
+      "eu",
+      "la",
+      "médaille",
+      "d'or",
+      ".",
+      "Je",
+      "pense",
+      "qu'il",
+      "y",
+      "a",
+      "quatre",
+      "ans,",
+      "aux",
+      "Jeux",
+      "olympiques",
+      "de",
+      "Vancouver,",
+      "elle",
+      "était",
+      "à",
+      "son",
+      "apogée",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mais",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "Jeux olympiques d'hiver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "médaille d'or",
+        "pinyin": "",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 4,
+        "word": "pense",
+        "pinyin": "",
+        "meaning": "acho"
+      },
+      {
+        "id": 5,
+        "word": "il y a",
+        "pinyin": "",
+        "meaning": "há"
+      },
+      {
+        "id": 6,
+        "word": "quatre ans",
+        "pinyin": "",
+        "meaning": "quatro anos"
+      },
+      {
+        "id": 7,
+        "word": "Jeux olympiques de Vancouver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Vancouver"
+      },
+      {
+        "id": 8,
+        "word": "à son apogée",
+        "pinyin": "",
+        "meaning": "no seu auge"
+      }
+    ],
+    "id": "local-1772294138407-16",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Dans mon esprit, elle sera toujours la Reine de la Glace ! Même si elle n'a pas eu l'or cette fois-ci, sa performance était tout de même remarquable. C'est dommage qu'elle prenne sa retraite après ces Jeux olympiques d'hiver.",
+    "pinyin": "",
+    "translation": "A: Na minha mente, ela sempre será a Rainha do Gelo! Mesmo que ela não tenha ganhado o ouro desta vez, sua performance foi notável. É uma pena que ela se aposente após estes Jogos Olímpicos de Inverno.",
+    "tokens": [
+      "A:",
+      "Dans",
+      "mon",
+      "esprit,",
+      "elle",
+      "sera",
+      "toujours",
+      "la",
+      "Reine",
+      "de",
+      "la",
+      "Glace",
+      "!",
+      "Même",
+      "si",
+      "elle",
+      "n'a",
+      "pas",
+      "eu",
+      "l'or",
+      "cette",
+      "fois-ci,",
+      "sa",
+      "performance",
+      "était",
+      "tout",
+      "de",
+      "même",
+      "remarquable",
+      ".",
+      "C'est",
+      "dommage",
+      "qu'elle",
+      "prenne",
+      "sa",
+      "retraite",
+      "après",
+      "ces",
+      "Jeux",
+      "olympiques",
+      "d'hiver",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dans mon esprit",
+        "pinyin": "",
+        "meaning": "Na minha mente"
+      },
+      {
+        "id": 2,
+        "word": "toujours",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 3,
+        "word": "Reine de la Glace",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 4,
+        "word": "Même si",
+        "pinyin": "",
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 5,
+        "word": "l'or",
+        "pinyin": "",
+        "meaning": "o ouro"
+      },
+      {
+        "id": 6,
+        "word": "cette fois-ci",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 7,
+        "word": "performance",
+        "pinyin": "",
+        "meaning": "performance"
+      },
+      {
+        "id": 8,
+        "word": "tout de même",
+        "pinyin": "",
+        "meaning": "mesmo assim"
+      },
+      {
+        "id": 9,
+        "word": "remarquable",
+        "pinyin": "",
+        "meaning": "notável"
+      },
+      {
+        "id": 10,
+        "word": "C'est dommage",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 11,
+        "word": "prenne sa retraite",
+        "pinyin": "",
+        "meaning": "se aposente"
+      },
+      {
+        "id": 12,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 13,
+        "word": "Jeux olympiques d'hiver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      }
+    ],
+    "id": "local-1772294138407-17",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cette fois, la championne du simple dames, Sotnikova, est aussi vraiment bonne. En plus, elle n'a que 17 ans.",
+    "pinyin": "",
+    "translation": "B: Desta vez, a campeã do simples feminino, Sotnikova, também é muito boa. Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "B:",
+      "Cette",
+      "fois,",
+      "la",
+      "championne",
+      "du",
+      "simple",
+      "dames,",
+      "Sotnikova,",
+      "est",
+      "aussi",
+      "vraiment",
+      "bonne",
+      ".",
+      "En",
+      "plus,",
+      "elle",
+      "n'a",
+      "que",
+      "17",
+      "ans",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cette fois",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "championne",
+        "pinyin": "",
+        "meaning": "campeã"
+      },
+      {
+        "id": 3,
+        "word": "simple dames",
+        "pinyin": "",
+        "meaning": "simples feminino"
+      },
+      {
+        "id": 4,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "bonne",
+        "pinyin": "",
+        "meaning": "boa"
+      },
+      {
+        "id": 6,
+        "word": "En plus",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 7,
+        "word": "n'a que",
+        "pinyin": "",
+        "meaning": "só tem"
+      }
+    ],
+    "id": "local-1772294138407-18",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Hé, le patinage artistique est vraiment un sport élégant. Tu penses que je pourrais encore apprendre à le faire ?",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, a patinação artística é realmente um esporte elegante. Você acha que eu ainda poderia aprender a fazê-lo?",
+    "tokens": [
+      "A:",
+      "Oui",
+      ".",
+      "Hé,",
+      "le",
+      "patinage",
+      "artistique",
+      "est",
+      "vraiment",
+      "un",
+      "sport",
+      "élégant",
+      ".",
+      "Tu",
+      "penses",
+      "que",
+      "je",
+      "pourrais",
+      "encore",
+      "apprendre",
+      "à",
+      "le",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "patinage artistique",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 4,
+        "word": "sport",
+        "pinyin": "",
+        "meaning": "esporte"
+      },
+      {
+        "id": 5,
+        "word": "élégant",
+        "pinyin": "",
+        "meaning": "elegante"
+      },
+      {
+        "id": 6,
+        "word": "penses",
+        "pinyin": "",
+        "meaning": "achas"
+      },
+      {
+        "id": 7,
+        "word": "pourrais",
+        "pinyin": "",
+        "meaning": "poderia"
+      },
+      {
+        "id": 8,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 9,
+        "word": "apprendre",
+        "pinyin": "",
+        "meaning": "aprender"
+      }
+    ],
+    "id": "local-1772294138407-19",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Toi ? Oublie ça. Tu vois ces athlètes à la télé ? Ils ont tous commencé jeunes. Si tu commençais maintenant, ce serait trop tard.",
+    "pinyin": "",
+    "translation": "B: Você? Esqueça isso. Você vê esses atletas na TV? Todos eles começaram jovens. Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "B:",
+      "Toi",
+      "?",
+      "Oublie",
+      "ça",
+      ".",
+      "Tu",
+      "vois",
+      "ces",
+      "athlètes",
+      "à",
+      "la",
+      "télé",
+      "?",
+      "Ils",
+      "ont",
+      "tous",
+      "commencé",
+      "jeunes",
+      ".",
+      "Si",
+      "tu",
+      "commençais",
+      "maintenant,",
+      "ce",
+      "serait",
+      "trop",
+      "tard",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Toi",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 2,
+        "word": "Oublie ça",
+        "pinyin": "",
+        "meaning": "Esqueça isso"
+      },
+      {
+        "id": 3,
+        "word": "athlètes",
+        "pinyin": "",
+        "meaning": "atletas"
+      },
+      {
+        "id": 4,
+        "word": "télé",
+        "pinyin": "",
+        "meaning": "TV"
+      },
+      {
+        "id": 5,
+        "word": "commencé",
+        "pinyin": "",
+        "meaning": "começaram"
+      },
+      {
+        "id": 6,
+        "word": "jeunes",
+        "pinyin": "",
+        "meaning": "jovens"
+      },
+      {
+        "id": 7,
+        "word": "maintenant",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 8,
+        "word": "trop tard",
+        "pinyin": "",
+        "meaning": "tarde demais"
+      }
+    ],
+    "id": "local-1772294138407-20",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je ne veux pas faire de compétition. Je veux juste le faire pour le plaisir.",
+    "pinyin": "",
+    "translation": "A: Eu não quero competir. Eu só quero fazer isso por prazer.",
+    "tokens": [
+      "A:",
+      "Je",
+      "ne",
+      "veux",
+      "pas",
+      "faire",
+      "de",
+      "compétition",
+      ".",
+      "Je",
+      "veux",
+      "juste",
+      "le",
+      "faire",
+      "pour",
+      "le",
+      "plaisir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quero"
+      },
+      {
+        "id": 2,
+        "word": "faire de compétition",
+        "pinyin": "",
+        "meaning": "competir"
+      },
+      {
+        "id": 3,
+        "word": "juste",
+        "pinyin": "",
+        "meaning": "só"
+      },
+      {
+        "id": 4,
+        "word": "pour le plaisir",
+        "pinyin": "",
+        "meaning": "por prazer"
+      }
+    ],
+    "id": "local-1772294138407-21",
+    "language": "Francês"
+  }
+]

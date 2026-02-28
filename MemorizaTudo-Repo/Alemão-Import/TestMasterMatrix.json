@@ -1,0 +1,180 @@
+[
+  {
+    "chinese": "Dies ist ein Master-Testtext.",
+    "pinyin": null,
+    "translation": "Este é um texto de teste mestre.",
+    "tokens": [
+      "Dies",
+      "ist",
+      "ein",
+      "Master-Testtext",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dies",
+        "pinyin": null,
+        "meaning": "Este/Isto"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é (verbo 'sein', 3ª pessoa do singular)"
+      },
+      {
+        "id": 3,
+        "word": "ein",
+        "pinyin": null,
+        "meaning": "um/uma (artigo indefinido)"
+      },
+      {
+        "id": 4,
+        "word": "Master-Testtext",
+        "pinyin": null,
+        "meaning": "texto de teste mestre"
+      }
+    ],
+    "id": "local-1772301617348-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Es ist ein sehr einfacher Text zum Testen der intelligenten kaskadierenden Synchronisationspipeline vom Englischen in alle anderen Sprachen.",
+    "pinyin": null,
+    "translation": "É um texto muito simples para testar o pipeline de sincronização inteligente em cascata do inglês para todos os outros idiomas.",
+    "tokens": [
+      "Es",
+      "ist",
+      "ein",
+      "sehr",
+      "einfacher",
+      "Text",
+      "zum",
+      "Testen",
+      "der",
+      "intelligenten",
+      "kaskadierenden",
+      "Synchronisationspipeline",
+      "vom",
+      "Englischen",
+      "in",
+      "alle",
+      "anderen",
+      "Sprachen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es",
+        "pinyin": null,
+        "meaning": "Isto/Ele/Ela (pronome neutro)"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é (verbo 'sein', 3ª pessoa do singular)"
+      },
+      {
+        "id": 3,
+        "word": "ein",
+        "pinyin": null,
+        "meaning": "um/uma (artigo indefinido)"
+      },
+      {
+        "id": 4,
+        "word": "sehr",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "einfacher",
+        "pinyin": null,
+        "meaning": "mais simples/fácil (adjetivo 'einfach' flexionado)"
+      },
+      {
+        "id": 6,
+        "word": "Text",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 7,
+        "word": "zum",
+        "pinyin": null,
+        "meaning": "para o (contração de 'zu dem')"
+      },
+      {
+        "id": 8,
+        "word": "Testen",
+        "pinyin": null,
+        "meaning": "testar/teste (substantivo verbal)"
+      },
+      {
+        "id": 9,
+        "word": "der",
+        "pinyin": null,
+        "meaning": "da/do (artigo definido, aqui genitivo feminino ou plural)"
+      },
+      {
+        "id": 10,
+        "word": "intelligenten",
+        "pinyin": null,
+        "meaning": "inteligente (adjetivo 'intelligent' flexionado)"
+      },
+      {
+        "id": 11,
+        "word": "kaskadierenden",
+        "pinyin": null,
+        "meaning": "em cascata (adjetivo 'kaskadierend' flexionado)"
+      },
+      {
+        "id": 12,
+        "word": "Synchronisationspipeline",
+        "pinyin": null,
+        "meaning": "pipeline de sincronização"
+      },
+      {
+        "id": 13,
+        "word": "vom",
+        "pinyin": null,
+        "meaning": "do (contração de 'von dem')"
+      },
+      {
+        "id": 14,
+        "word": "Englischen",
+        "pinyin": null,
+        "meaning": "Inglês (substantivo, aqui na forma dativa)"
+      },
+      {
+        "id": 15,
+        "word": "in",
+        "pinyin": null,
+        "meaning": "em/para"
+      },
+      {
+        "id": 16,
+        "word": "alle",
+        "pinyin": null,
+        "meaning": "todos/todas"
+      },
+      {
+        "id": 17,
+        "word": "anderen",
+        "pinyin": null,
+        "meaning": "outros/outras (adjetivo 'ander' flexionado)"
+      },
+      {
+        "id": 18,
+        "word": "Sprachen",
+        "pinyin": null,
+        "meaning": "idiomas/línguas (plural de 'Sprache')"
+      }
+    ],
+    "id": "local-1772301617348-1",
+    "language": "Alemão"
+  }
+]

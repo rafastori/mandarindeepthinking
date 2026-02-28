@@ -1,0 +1,805 @@
+[
+  {
+    "chinese": "A: 호텔이 너무 비싸요!",
+    "pinyin": null,
+    "translation": "A: O hotel é muito caro!",
+    "tokens": [
+      "호텔이",
+      "너무",
+      "비싸요!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "호텔",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 2,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito (demasiado)"
+      },
+      {
+        "id": 3,
+        "word": "비싸다",
+        "pinyin": null,
+        "meaning": "ser caro"
+      }
+    ],
+    "id": "local-1772298641325-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 여행 가고 싶어요?",
+    "pinyin": null,
+    "translation": "B: Quer viajar?",
+    "tokens": [
+      "여행",
+      "가고",
+      "싶어요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여행",
+        "pinyin": null,
+        "meaning": "viagem"
+      },
+      {
+        "id": 2,
+        "word": "가다",
+        "pinyin": null,
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "~고 싶다",
+        "pinyin": null,
+        "meaning": "querer fazer algo"
+      }
+    ],
+    "id": "local-1772298641325-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네. 여름에 뉴욕으로 여행 가려고 계획 중이에요. 그런데 호텔이 어떻게 이렇게 비쌀 수 있죠?",
+    "pinyin": null,
+    "translation": "A: Sim. Estou planejando viajar para Nova York no verão. Mas como os hotéis podem ser tão caros assim?",
+    "tokens": [
+      "네.",
+      "여름에",
+      "뉴욕으로",
+      "여행",
+      "가려고",
+      "계획",
+      "중이에요.",
+      "그런데",
+      "호텔이",
+      "어떻게",
+      "이렇게",
+      "비쌀",
+      "수",
+      "있죠?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "여름",
+        "pinyin": null,
+        "meaning": "verão"
+      },
+      {
+        "id": 3,
+        "word": "뉴욕",
+        "pinyin": null,
+        "meaning": "Nova York"
+      },
+      {
+        "id": 4,
+        "word": "여행",
+        "pinyin": null,
+        "meaning": "viagem"
+      },
+      {
+        "id": 5,
+        "word": "~려고 하다",
+        "pinyin": null,
+        "meaning": "pretender fazer algo"
+      },
+      {
+        "id": 6,
+        "word": "계획",
+        "pinyin": null,
+        "meaning": "plano, planejamento"
+      },
+      {
+        "id": 7,
+        "word": "~중이다",
+        "pinyin": null,
+        "meaning": "estar em meio a (fazendo algo)"
+      },
+      {
+        "id": 8,
+        "word": "그런데",
+        "pinyin": null,
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 9,
+        "word": "호텔",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 10,
+        "word": "어떻게",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 11,
+        "word": "이렇게",
+        "pinyin": null,
+        "meaning": "assim, dessa forma"
+      },
+      {
+        "id": 12,
+        "word": "비싸다",
+        "pinyin": null,
+        "meaning": "ser caro"
+      },
+      {
+        "id": 13,
+        "word": "~ㄹ 수 있다",
+        "pinyin": null,
+        "meaning": "poder fazer algo"
+      }
+    ],
+    "id": "local-1772298641325-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 에어비앤비에서 찾아보는 건 어때요?",
+    "pinyin": null,
+    "translation": "B: Que tal procurar no Airbnb?",
+    "tokens": [
+      "에어비앤비에서",
+      "찾아보는",
+      "건",
+      "어때요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "에어비앤비",
+        "pinyin": null,
+        "meaning": "Airbnb"
+      },
+      {
+        "id": 2,
+        "word": "찾다",
+        "pinyin": null,
+        "meaning": "procurar, encontrar"
+      },
+      {
+        "id": 3,
+        "word": "~아/어 보다",
+        "pinyin": null,
+        "meaning": "tentar fazer algo"
+      },
+      {
+        "id": 4,
+        "word": "~는 건 어때요?",
+        "pinyin": null,
+        "meaning": "que tal fazer algo?"
+      }
+    ],
+    "id": "local-1772298641325-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그게 뭔데요?",
+    "pinyin": null,
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "그게",
+      "뭔데요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그거",
+        "pinyin": null,
+        "meaning": "aquilo (próximo ao ouvinte)"
+      },
+      {
+        "id": 2,
+        "word": "뭐",
+        "pinyin": null,
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772298641325-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 방을 예약할 수 있는 인터넷 사이트예요. 하지만 호텔이 아니라 사람들의 집에 있는 방이죠. 집주인이 남는 방을 빌려주고 돈을 조금 버는 거예요.",
+    "pinyin": null,
+    "translation": "B: É um site de internet onde você pode reservar quartos. Mas não é um hotel, são quartos nas casas das pessoas. O proprietário aluga um quarto vago e ganha um pouco de dinheiro.",
+    "tokens": [
+      "방을",
+      "예약할",
+      "수",
+      "있는",
+      "인터넷",
+      "사이트예요.",
+      "하지만",
+      "호텔이",
+      "아니라",
+      "사람들의",
+      "집에",
+      "있는",
+      "방이죠.",
+      "집주인이",
+      "남는",
+      "방을",
+      "빌려주고",
+      "돈을",
+      "조금",
+      "버는",
+      "거예요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "방",
+        "pinyin": null,
+        "meaning": "quarto"
+      },
+      {
+        "id": 2,
+        "word": "예약하다",
+        "pinyin": null,
+        "meaning": "reservar"
+      },
+      {
+        "id": 3,
+        "word": "~ㄹ 수 있다",
+        "pinyin": null,
+        "meaning": "poder fazer algo"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "ter, haver, existir"
+      },
+      {
+        "id": 5,
+        "word": "인터넷",
+        "pinyin": null,
+        "meaning": "internet"
+      },
+      {
+        "id": 6,
+        "word": "사이트",
+        "pinyin": null,
+        "meaning": "site"
+      },
+      {
+        "id": 7,
+        "word": "하지만",
+        "pinyin": null,
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 8,
+        "word": "호텔",
+        "pinyin": null,
+        "meaning": "hotel"
+      },
+      {
+        "id": 9,
+        "word": "~이/가 아니다",
+        "pinyin": null,
+        "meaning": "não ser (substantivo)"
+      },
+      {
+        "id": 10,
+        "word": "사람",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 11,
+        "word": "집",
+        "pinyin": null,
+        "meaning": "casa"
+      },
+      {
+        "id": 12,
+        "word": "집주인",
+        "pinyin": null,
+        "meaning": "proprietário (da casa)"
+      },
+      {
+        "id": 13,
+        "word": "남다",
+        "pinyin": null,
+        "meaning": "sobrar, restar"
+      },
+      {
+        "id": 14,
+        "word": "빌려주다",
+        "pinyin": null,
+        "meaning": "emprestar (dar emprestado), alugar (para alguém)"
+      },
+      {
+        "id": 15,
+        "word": "돈",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 16,
+        "word": "조금",
+        "pinyin": null,
+        "meaning": "um pouco"
+      },
+      {
+        "id": 17,
+        "word": "벌다",
+        "pinyin": null,
+        "meaning": "ganhar (dinheiro)"
+      }
+    ],
+    "id": "local-1772298641325-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 알겠어요. 와, 많네요! 이거 꽤 괜찮아 보여요. 하룻밤에 600위안 조금 넘네요. 부엌도 있어서 직접 요리할 수도 있구요.",
+    "pinyin": null,
+    "translation": "A: Entendi. Uau, tem muitos! Este parece bem bom. Fica um pouco mais de 600 yuan por noite. E tem cozinha, então posso cozinhar eu mesmo.",
+    "tokens": [
+      "알겠어요.",
+      "와,",
+      "많네요!",
+      "이거",
+      "꽤",
+      "괜찮아",
+      "보여요.",
+      "하룻밤에",
+      "600위안",
+      "조금",
+      "넘네요.",
+      "부엌도",
+      "있어서",
+      "직접",
+      "요리할",
+      "수도",
+      "있구요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알다",
+        "pinyin": null,
+        "meaning": "saber, entender"
+      },
+      {
+        "id": 2,
+        "word": "많다",
+        "pinyin": null,
+        "meaning": "ser muito, haver muitos"
+      },
+      {
+        "id": 3,
+        "word": "이거",
+        "pinyin": null,
+        "meaning": "isto"
+      },
+      {
+        "id": 4,
+        "word": "꽤",
+        "pinyin": null,
+        "meaning": "bastante, razoavelmente"
+      },
+      {
+        "id": 5,
+        "word": "괜찮다",
+        "pinyin": null,
+        "meaning": "ser bom, estar tudo bem"
+      },
+      {
+        "id": 6,
+        "word": "~아/어 보이다",
+        "pinyin": null,
+        "meaning": "parecer ~"
+      },
+      {
+        "id": 7,
+        "word": "하룻밤",
+        "pinyin": null,
+        "meaning": "uma noite"
+      },
+      {
+        "id": 8,
+        "word": "600위안",
+        "pinyin": null,
+        "meaning": "600 yuan (moeda chinesa)"
+      },
+      {
+        "id": 9,
+        "word": "조금",
+        "pinyin": null,
+        "meaning": "um pouco"
+      },
+      {
+        "id": 10,
+        "word": "넘다",
+        "pinyin": null,
+        "meaning": "exceder, passar de"
+      },
+      {
+        "id": 11,
+        "word": "부엌",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 12,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "ter, haver, existir"
+      },
+      {
+        "id": 13,
+        "word": "직접",
+        "pinyin": null,
+        "meaning": "diretamente, pessoalmente"
+      },
+      {
+        "id": 14,
+        "word": "요리하다",
+        "pinyin": null,
+        "meaning": "cozinhar"
+      },
+      {
+        "id": 15,
+        "word": "~ㄹ 수 있다",
+        "pinyin": null,
+        "meaning": "poder fazer algo"
+      }
+    ],
+    "id": "local-1772298641325-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그런데 이건 아파트가 아니라 그냥 방이에요. 부엌과 화장실을 다른 사람들과 공유해야 해요.",
+    "pinyin": null,
+    "translation": "B: Mas isto não é um apartamento, é apenas um quarto. Você tem que compartilhar a cozinha e o banheiro com outras pessoas.",
+    "tokens": [
+      "그런데",
+      "이건",
+      "아파트가",
+      "아니라",
+      "그냥",
+      "방이에요.",
+      "부엌과",
+      "화장실을",
+      "다른",
+      "사람들과",
+      "공유해야",
+      "해요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그런데",
+        "pinyin": null,
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 2,
+        "word": "이거",
+        "pinyin": null,
+        "meaning": "isto"
+      },
+      {
+        "id": 3,
+        "word": "아파트",
+        "pinyin": null,
+        "meaning": "apartamento"
+      },
+      {
+        "id": 4,
+        "word": "~이/가 아니라",
+        "pinyin": null,
+        "meaning": "não ser (substantivo), mas sim"
+      },
+      {
+        "id": 5,
+        "word": "그냥",
+        "pinyin": null,
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 6,
+        "word": "방",
+        "pinyin": null,
+        "meaning": "quarto"
+      },
+      {
+        "id": 7,
+        "word": "부엌",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 8,
+        "word": "화장실",
+        "pinyin": null,
+        "meaning": "banheiro"
+      },
+      {
+        "id": 9,
+        "word": "다른",
+        "pinyin": null,
+        "meaning": "outro, diferente"
+      },
+      {
+        "id": 10,
+        "word": "사람",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 11,
+        "word": "공유하다",
+        "pinyin": null,
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 12,
+        "word": "~아/어야 하다",
+        "pinyin": null,
+        "meaning": "ter que fazer algo, dever fazer algo"
+      }
+    ],
+    "id": "local-1772298641325-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 상관없어요. 그런데 다른 사람들과 함께 지내는 게 안전한가요?",
+    "pinyin": null,
+    "translation": "A: Ah, não importa. Mas é seguro ficar com outras pessoas?",
+    "tokens": [
+      "아,",
+      "상관없어요.",
+      "그런데",
+      "다른",
+      "사람들과",
+      "함께",
+      "지내는",
+      "게",
+      "안전한가요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상관없다",
+        "pinyin": null,
+        "meaning": "não importar, não ter relação"
+      },
+      {
+        "id": 2,
+        "word": "그런데",
+        "pinyin": null,
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 3,
+        "word": "다른",
+        "pinyin": null,
+        "meaning": "outro, diferente"
+      },
+      {
+        "id": 4,
+        "word": "사람",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 5,
+        "word": "함께",
+        "pinyin": null,
+        "meaning": "junto, com"
+      },
+      {
+        "id": 6,
+        "word": "지내다",
+        "pinyin": null,
+        "meaning": "passar (o tempo), ficar (em um lugar)"
+      },
+      {
+        "id": 7,
+        "word": "안전하다",
+        "pinyin": null,
+        "meaning": "ser seguro"
+      }
+    ],
+    "id": "local-1772298641325-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 후기를 볼 수 있어요. 전에 머물렀던 사람들이 쓴 거예요. 많은 사람들이 댓글을 달고 평점이 높으면 문제없을 거예요.",
+    "pinyin": null,
+    "translation": "B: Você pode ver as avaliações. Foram escritas por pessoas que ficaram lá antes. Se muitas pessoas deixarem comentários e a classificação for alta, não haverá problema.",
+    "tokens": [
+      "후기를",
+      "볼",
+      "수",
+      "있어요.",
+      "전에",
+      "머물렀던",
+      "사람들이",
+      "쓴",
+      "거예요.",
+      "많은",
+      "사람들이",
+      "댓글을",
+      "달고",
+      "평점이",
+      "높으면",
+      "문제없을",
+      "거예요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "후기",
+        "pinyin": null,
+        "meaning": "avaliação, resenha"
+      },
+      {
+        "id": 2,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver"
+      },
+      {
+        "id": 3,
+        "word": "~ㄹ 수 있다",
+        "pinyin": null,
+        "meaning": "poder fazer algo"
+      },
+      {
+        "id": 4,
+        "word": "전",
+        "pinyin": null,
+        "meaning": "antes"
+      },
+      {
+        "id": 5,
+        "word": "머무르다",
+        "pinyin": null,
+        "meaning": "ficar, permanecer"
+      },
+      {
+        "id": 6,
+        "word": "사람",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 7,
+        "word": "쓰다",
+        "pinyin": null,
+        "meaning": "escrever"
+      },
+      {
+        "id": 8,
+        "word": "많다",
+        "pinyin": null,
+        "meaning": "ser muito, haver muitos"
+      },
+      {
+        "id": 9,
+        "word": "댓글",
+        "pinyin": null,
+        "meaning": "comentário"
+      },
+      {
+        "id": 10,
+        "word": "달다",
+        "pinyin": null,
+        "meaning": "postar, anexar (um comentário)"
+      },
+      {
+        "id": 11,
+        "word": "평점",
+        "pinyin": null,
+        "meaning": "classificação, pontuação média"
+      },
+      {
+        "id": 12,
+        "word": "높다",
+        "pinyin": null,
+        "meaning": "ser alto"
+      },
+      {
+        "id": 13,
+        "word": "~으면",
+        "pinyin": null,
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 14,
+        "word": "문제없다",
+        "pinyin": null,
+        "meaning": "não ter problema"
+      }
+    ],
+    "id": "local-1772298641325-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그거 좋네요. 계속 찾아볼게요!",
+    "pinyin": null,
+    "translation": "A: Isso é bom. Vou continuar procurando!",
+    "tokens": [
+      "그거",
+      "좋네요.",
+      "계속",
+      "찾아볼게요!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그거",
+        "pinyin": null,
+        "meaning": "aquilo (próximo ao ouvinte)"
+      },
+      {
+        "id": 2,
+        "word": "좋다",
+        "pinyin": null,
+        "meaning": "ser bom"
+      },
+      {
+        "id": 3,
+        "word": "계속",
+        "pinyin": null,
+        "meaning": "continuamente, continuar"
+      },
+      {
+        "id": 4,
+        "word": "찾다",
+        "pinyin": null,
+        "meaning": "procurar, encontrar"
+      },
+      {
+        "id": 5,
+        "word": "~아/어 보다",
+        "pinyin": null,
+        "meaning": "tentar fazer algo"
+      },
+      {
+        "id": 6,
+        "word": "~ㄹ게요",
+        "pinyin": null,
+        "meaning": "farei (expressa intenção ou promessa)"
+      }
+    ],
+    "id": "local-1772298641325-10",
+    "language": "Coreano"
+  }
+]

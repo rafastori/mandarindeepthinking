@@ -1,0 +1,651 @@
+[
+  {
+    "chinese": "A: Hello. May I ask if there's something I can help you with?",
+    "pinyin": "",
+    "translation": "A: Olá. Posso perguntar se há algo em que posso ajudar?",
+    "tokens": [
+      "Hello",
+      "May",
+      "I",
+      "ask",
+      "if",
+      "there's",
+      "something",
+      "I",
+      "can",
+      "help",
+      "you",
+      "with"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hello",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "May I ask",
+        "pinyin": "",
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "help you with",
+        "pinyin": "",
+        "meaning": "ajudar você com"
+      }
+    ],
+    "id": "local-1772292716078-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Hello. I want to trim my card. I bought a new cell phone and I can't use my original SIM card.",
+    "pinyin": "",
+    "translation": "B: Olá. Quero cortar meu cartão. Comprei um celular novo e não consigo usar meu cartão SIM original.",
+    "tokens": [
+      "Hello",
+      "I",
+      "want",
+      "to",
+      "trim",
+      "my",
+      "card",
+      "I",
+      "bought",
+      "a",
+      "new",
+      "cell",
+      "phone",
+      "and",
+      "I",
+      "can't",
+      "use",
+      "my",
+      "original",
+      "SIM",
+      "card"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hello",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "trim",
+        "pinyin": "",
+        "meaning": "cortar"
+      },
+      {
+        "id": 3,
+        "word": "card",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 4,
+        "word": "bought",
+        "pinyin": "",
+        "meaning": "comprou (passado de 'buy')"
+      },
+      {
+        "id": 5,
+        "word": "cell phone",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 6,
+        "word": "can't use",
+        "pinyin": "",
+        "meaning": "não consigo usar"
+      },
+      {
+        "id": 7,
+        "word": "original",
+        "pinyin": "",
+        "meaning": "original"
+      },
+      {
+        "id": 8,
+        "word": "SIM card",
+        "pinyin": "",
+        "meaning": "cartão SIM"
+      }
+    ],
+    "id": "local-1772292716078-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You want a mini card, right? Okay.",
+    "pinyin": "",
+    "translation": "A: Você quer um mini cartão, certo? Ok.",
+    "tokens": [
+      "You",
+      "want",
+      "a",
+      "mini",
+      "card",
+      "right",
+      "Okay"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "want",
+        "pinyin": "",
+        "meaning": "querer"
+      },
+      {
+        "id": 2,
+        "word": "mini card",
+        "pinyin": "",
+        "meaning": "mini cartão"
+      },
+      {
+        "id": 3,
+        "word": "right",
+        "pinyin": "",
+        "meaning": "certo"
+      }
+    ],
+    "id": "local-1772292716078-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Do I need to pay?",
+    "pinyin": "",
+    "translation": "B: Preciso pagar?",
+    "tokens": [
+      "Do",
+      "I",
+      "need",
+      "to",
+      "pay"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "need to",
+        "pinyin": "",
+        "meaning": "precisar de"
+      },
+      {
+        "id": 2,
+        "word": "pay",
+        "pinyin": "",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772292716078-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No. Trimming a card is free. It's done.",
+    "pinyin": "",
+    "translation": "A: Não. Cortar um cartão é grátis. Está feito.",
+    "tokens": [
+      "No",
+      "Trimming",
+      "a",
+      "card",
+      "is",
+      "free",
+      "It's",
+      "done"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Trimming",
+        "pinyin": "",
+        "meaning": "Corte (substantivo gerúndio de 'trim')"
+      },
+      {
+        "id": 2,
+        "word": "card",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 3,
+        "word": "free",
+        "pinyin": "",
+        "meaning": "grátis"
+      },
+      {
+        "id": 4,
+        "word": "It's done",
+        "pinyin": "",
+        "meaning": "Está feito"
+      }
+    ],
+    "id": "local-1772292716078-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thanks. Huh? Why won't the card fit in? Can you help me take a look?",
+    "pinyin": "",
+    "translation": "B: Obrigado. Hã? Por que o cartão não cabe? Você pode me ajudar a dar uma olhada?",
+    "tokens": [
+      "Thanks",
+      "Huh",
+      "Why",
+      "won't",
+      "the",
+      "card",
+      "fit",
+      "in",
+      "Can",
+      "you",
+      "help",
+      "me",
+      "take",
+      "a",
+      "look"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thanks",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "Huh",
+        "pinyin": "",
+        "meaning": "Hã?"
+      },
+      {
+        "id": 3,
+        "word": "won't",
+        "pinyin": "",
+        "meaning": "não vai (contração de 'will not')"
+      },
+      {
+        "id": 4,
+        "word": "card",
+        "pinyin": "",
+        "meaning": "cartão"
+      },
+      {
+        "id": 5,
+        "word": "fit in",
+        "pinyin": "",
+        "meaning": "caber"
+      },
+      {
+        "id": 6,
+        "word": "take a look",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772292716078-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Your cell is an iPhone 5, right?",
+    "pinyin": "",
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "Your",
+      "cell",
+      "is",
+      "an",
+      "iPhone",
+      "5",
+      "right"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cell",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 2,
+        "word": "iPhone 5",
+        "pinyin": "",
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 3,
+        "word": "right",
+        "pinyin": "",
+        "meaning": "certo"
+      }
+    ],
+    "id": "local-1772292716078-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes.",
+    "pinyin": "",
+    "translation": "B: Sim.",
+    "tokens": [
+      "Yes"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yes",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772292716078-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: iPhone 5's can't use mini cards. Only the iPhone 4 can use a mini card.",
+    "pinyin": "",
+    "translation": "A: iPhones 5 não podem usar mini cartões. Apenas o iPhone 4 pode usar um mini cartão.",
+    "tokens": [
+      "iPhone",
+      "5's",
+      "can't",
+      "use",
+      "mini",
+      "cards",
+      "Only",
+      "the",
+      "iPhone",
+      "4",
+      "can",
+      "use",
+      "a",
+      "mini",
+      "card"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iPhone 5's",
+        "pinyin": "",
+        "meaning": "iPhones 5 (referindo-se ao modelo iPhone 5)"
+      },
+      {
+        "id": 2,
+        "word": "can't use",
+        "pinyin": "",
+        "meaning": "não podem usar"
+      },
+      {
+        "id": 3,
+        "word": "mini cards",
+        "pinyin": "",
+        "meaning": "mini cartões"
+      },
+      {
+        "id": 4,
+        "word": "Only",
+        "pinyin": "",
+        "meaning": "Apenas"
+      },
+      {
+        "id": 5,
+        "word": "iPhone 4",
+        "pinyin": "",
+        "meaning": "iPhone 4"
+      },
+      {
+        "id": 6,
+        "word": "can use",
+        "pinyin": "",
+        "meaning": "pode usar"
+      }
+    ],
+    "id": "local-1772292716078-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then what do I do?",
+    "pinyin": "",
+    "translation": "B: Então o que eu faço?",
+    "tokens": [
+      "Then",
+      "what",
+      "do",
+      "I",
+      "do"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "what do I do",
+        "pinyin": "",
+        "meaning": "o que eu faço"
+      }
+    ],
+    "id": "local-1772292716078-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No problem. You can change it to a nano SIM card. This is smaller than a mini and it's specifically used in the iPhone 5.",
+    "pinyin": "",
+    "translation": "A: Sem problema. Você pode trocá-lo por um cartão nano SIM. Este é menor que um mini e é especificamente usado no iPhone 5.",
+    "tokens": [
+      "No",
+      "problem",
+      "You",
+      "can",
+      "change",
+      "it",
+      "to",
+      "a",
+      "nano",
+      "SIM",
+      "card",
+      "This",
+      "is",
+      "smaller",
+      "than",
+      "a",
+      "mini",
+      "and",
+      "it's",
+      "specifically",
+      "used",
+      "in",
+      "the",
+      "iPhone",
+      "5"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No problem",
+        "pinyin": "",
+        "meaning": "Sem problema"
+      },
+      {
+        "id": 2,
+        "word": "change",
+        "pinyin": "",
+        "meaning": "trocar"
+      },
+      {
+        "id": 3,
+        "word": "nano SIM card",
+        "pinyin": "",
+        "meaning": "cartão nano SIM"
+      },
+      {
+        "id": 4,
+        "word": "smaller than",
+        "pinyin": "",
+        "meaning": "menor que"
+      },
+      {
+        "id": 5,
+        "word": "specifically",
+        "pinyin": "",
+        "meaning": "especificamente"
+      },
+      {
+        "id": 6,
+        "word": "used in",
+        "pinyin": "",
+        "meaning": "usado em"
+      },
+      {
+        "id": 7,
+        "word": "iPhone 5",
+        "pinyin": "",
+        "meaning": "iPhone 5"
+      }
+    ],
+    "id": "local-1772292716078-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Do I have to pay for this?",
+    "pinyin": "",
+    "translation": "B: Tenho que pagar por isso?",
+    "tokens": [
+      "Do",
+      "I",
+      "have",
+      "to",
+      "pay",
+      "for",
+      "this"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "have to",
+        "pinyin": "",
+        "meaning": "ter que"
+      },
+      {
+        "id": 2,
+        "word": "pay for",
+        "pinyin": "",
+        "meaning": "pagar por"
+      }
+    ],
+    "id": "local-1772292716078-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: It's free the first time. If you need to replace a card later, you need to pay 20 kuai for the processing fee.",
+    "pinyin": "",
+    "translation": "A: É grátis na primeira vez. Se precisar substituir um cartão mais tarde, você precisará pagar 20 kuai pela taxa de processamento.",
+    "tokens": [
+      "It's",
+      "free",
+      "the",
+      "first",
+      "time",
+      "If",
+      "you",
+      "need",
+      "to",
+      "replace",
+      "a",
+      "card",
+      "later",
+      "you",
+      "need",
+      "to",
+      "pay",
+      "20",
+      "kuai",
+      "for",
+      "the",
+      "processing",
+      "fee"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "free",
+        "pinyin": "",
+        "meaning": "grátis"
+      },
+      {
+        "id": 2,
+        "word": "the first time",
+        "pinyin": "",
+        "meaning": "a primeira vez"
+      },
+      {
+        "id": 3,
+        "word": "need to",
+        "pinyin": "",
+        "meaning": "precisar de"
+      },
+      {
+        "id": 4,
+        "word": "replace",
+        "pinyin": "",
+        "meaning": "substituir"
+      },
+      {
+        "id": 5,
+        "word": "later",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 6,
+        "word": "pay",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 7,
+        "word": "kuai",
+        "pinyin": "",
+        "meaning": "unidade monetária chinesa"
+      },
+      {
+        "id": 8,
+        "word": "processing fee",
+        "pinyin": "",
+        "meaning": "taxa de processamento"
+      }
+    ],
+    "id": "local-1772292716078-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Ok. Thanks.",
+    "pinyin": "",
+    "translation": "B: Ok. Obrigado.",
+    "tokens": [
+      "Ok",
+      "Thanks"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "Thanks",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772292716078-13",
+    "language": "Inglês"
+  }
+]

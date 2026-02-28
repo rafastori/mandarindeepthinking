@@ -1,0 +1,437 @@
+[
+  {
+    "chinese": "A: Xiao Chen, hai intenzione di comprare un'auto?",
+    "pinyin": null,
+    "translation": "A: Xiao Chen, você pretende comprar um carro?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Chen,",
+      "hai",
+      "intenzione",
+      "di",
+      "comprare",
+      "un'auto?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "hai intenzione di",
+        "pinyin": null,
+        "meaning": "você tem a intenção de / você pretende"
+      },
+      {
+        "id": 1,
+        "word": "comprare",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "un'auto",
+        "pinyin": null,
+        "meaning": "um carro"
+      }
+    ],
+    "id": "local-1772297635840-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì! Xiao Sun, stavo pensando di chiederti la tua opinione.",
+    "pinyin": null,
+    "translation": "B: Sim! Xiao Sun, eu estava pensando em te pedir a sua opinião.",
+    "tokens": [
+      "B:",
+      "Sì!",
+      "Xiao",
+      "Sun,",
+      "stavo",
+      "pensando",
+      "di",
+      "chiederti",
+      "la",
+      "tua",
+      "opinione."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Sì",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "stavo pensando di",
+        "pinyin": null,
+        "meaning": "eu estava pensando em"
+      },
+      {
+        "id": 2,
+        "word": "chiederti",
+        "pinyin": null,
+        "meaning": "te pedir"
+      },
+      {
+        "id": 3,
+        "word": "opinione",
+        "pinyin": null,
+        "meaning": "opinião"
+      }
+    ],
+    "id": "local-1772297635840-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual è il tuo budget approssimativamente?",
+    "pinyin": null,
+    "translation": "A: Qual é o seu orçamento aproximadamente?",
+    "tokens": [
+      "A:",
+      "Qual",
+      "è",
+      "il",
+      "tuo",
+      "budget",
+      "approssimativamente?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Qual è",
+        "pinyin": null,
+        "meaning": "Qual é"
+      },
+      {
+        "id": 1,
+        "word": "budget",
+        "pinyin": null,
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "approssimativamente",
+        "pinyin": null,
+        "meaning": "aproximadamente"
+      }
+    ],
+    "id": "local-1772297635840-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Inclusi immatricolazione e tasse, un po' più di 200.000.",
+    "pinyin": null,
+    "translation": "B: Incluindo matrícula e taxas, um pouco mais de 200.000.",
+    "tokens": [
+      "B:",
+      "Inclusi",
+      "immatricolazione",
+      "e",
+      "tasse,",
+      "un",
+      "po'",
+      "più",
+      "di",
+      "200.000."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Inclusi",
+        "pinyin": null,
+        "meaning": "Incluindo / Incluídos"
+      },
+      {
+        "id": 1,
+        "word": "immatricolazione",
+        "pinyin": null,
+        "meaning": "matrícula / emplacamento"
+      },
+      {
+        "id": 2,
+        "word": "tasse",
+        "pinyin": null,
+        "meaning": "taxas"
+      },
+      {
+        "id": 3,
+        "word": "un po' più di",
+        "pinyin": null,
+        "meaning": "um pouco mais de"
+      }
+    ],
+    "id": "local-1772297635840-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Stai pensando a una targa di Shanghai o a una targa esterna?",
+    "pinyin": null,
+    "translation": "A: Você está pensando em uma placa de Xangai ou em uma placa externa?",
+    "tokens": [
+      "A:",
+      "Stai",
+      "pensando",
+      "a",
+      "una",
+      "targa",
+      "di",
+      "Shanghai",
+      "o",
+      "a",
+      "una",
+      "targa",
+      "esterna?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Stai pensando a",
+        "pinyin": null,
+        "meaning": "Você está pensando em"
+      },
+      {
+        "id": 1,
+        "word": "targa",
+        "pinyin": null,
+        "meaning": "placa (de carro)"
+      },
+      {
+        "id": 2,
+        "word": "esterna",
+        "pinyin": null,
+        "meaning": "externa"
+      }
+    ],
+    "id": "local-1772297635840-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Una targa esterna. Ho intenzione di usarla nel fine settimana. Di solito prendo l'autobus aziendale per andare e tornare dal lavoro. È molto comodo.",
+    "pinyin": null,
+    "translation": "B: Uma placa externa. Eu pretendo usá-la no fim de semana. Geralmente pego o ônibus da empresa para ir e voltar do trabalho. É muito cômodo.",
+    "tokens": [
+      "B:",
+      "Una",
+      "targa",
+      "esterna.",
+      "Ho",
+      "intenzione",
+      "di",
+      "usarla",
+      "nel",
+      "fine",
+      "settimana.",
+      "Di",
+      "solito",
+      "prendo",
+      "l'autobus",
+      "aziendale",
+      "per",
+      "andare",
+      "e",
+      "tornare",
+      "dal",
+      "lavoro.",
+      "È",
+      "molto",
+      "comodo."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "targa esterna",
+        "pinyin": null,
+        "meaning": "placa externa"
+      },
+      {
+        "id": 1,
+        "word": "Ho intenzione di",
+        "pinyin": null,
+        "meaning": "Eu pretendo / Eu tenho a intenção de"
+      },
+      {
+        "id": 2,
+        "word": "usarla",
+        "pinyin": null,
+        "meaning": "usá-la"
+      },
+      {
+        "id": 3,
+        "word": "nel fine settimana",
+        "pinyin": null,
+        "meaning": "no fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "Di solito",
+        "pinyin": null,
+        "meaning": "Geralmente"
+      },
+      {
+        "id": 5,
+        "word": "prendo",
+        "pinyin": null,
+        "meaning": "eu pego"
+      },
+      {
+        "id": 6,
+        "word": "l'autobus aziendale",
+        "pinyin": null,
+        "meaning": "o ônibus da empresa"
+      },
+      {
+        "id": 7,
+        "word": "per andare e tornare",
+        "pinyin": null,
+        "meaning": "para ir e voltar"
+      },
+      {
+        "id": 8,
+        "word": "dal lavoro",
+        "pinyin": null,
+        "meaning": "do trabalho"
+      },
+      {
+        "id": 9,
+        "word": "molto",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 10,
+        "word": "comodo",
+        "pinyin": null,
+        "meaning": "cômodo"
+      }
+    ],
+    "id": "local-1772297635840-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Che tipo di auto ti piacciono?",
+    "pinyin": null,
+    "translation": "A: Que tipo de carro você gosta?",
+    "tokens": [
+      "A:",
+      "Che",
+      "tipo",
+      "di",
+      "auto",
+      "ti",
+      "piacciono?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Che tipo di",
+        "pinyin": null,
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 1,
+        "word": "auto",
+        "pinyin": null,
+        "meaning": "carro"
+      },
+      {
+        "id": 2,
+        "word": "ti piacciono",
+        "pinyin": null,
+        "meaning": "você gosta (lit. te agradam)"
+      }
+    ],
+    "id": "local-1772297635840-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Berline. Hanno più spazio.",
+    "pinyin": null,
+    "translation": "B: Sedans. Eles têm mais espaço.",
+    "tokens": [
+      "B:",
+      "Berline.",
+      "Hanno",
+      "più",
+      "spazio."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Berline",
+        "pinyin": null,
+        "meaning": "Sedans"
+      },
+      {
+        "id": 1,
+        "word": "Hanno",
+        "pinyin": null,
+        "meaning": "Eles têm"
+      },
+      {
+        "id": 2,
+        "word": "più spazio",
+        "pinyin": null,
+        "meaning": "mais espaço"
+      }
+    ],
+    "id": "local-1772297635840-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Dai un'occhiata alla Buick Regal, Toyota Camry e Volkswagen Magotan. Queste auto sono abbastanza buone.",
+    "pinyin": null,
+    "translation": "A: Dê uma olhada no Buick Regal, Toyota Camry e Volkswagen Magotan. Esses carros são muito bons.",
+    "tokens": [
+      "A:",
+      "Dai",
+      "un'occhiata",
+      "alla",
+      "Buick",
+      "Regal,",
+      "Toyota",
+      "Camry",
+      "e",
+      "Volkswagen",
+      "Magotan.",
+      "Queste",
+      "auto",
+      "sono",
+      "abbastanza",
+      "buone."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Dai un'occhiata",
+        "pinyin": null,
+        "meaning": "Dê uma olhada"
+      },
+      {
+        "id": 1,
+        "word": "alla",
+        "pinyin": null,
+        "meaning": "à / na"
+      },
+      {
+        "id": 2,
+        "word": "Queste auto",
+        "pinyin": null,
+        "meaning": "Esses carros"
+      },
+      {
+        "id": 3,
+        "word": "sono",
+        "pinyin": null,
+        "meaning": "são"
+      },
+      {
+        "id": 4,
+        "word": "abbastanza buone",
+        "pinyin": null,
+        "meaning": "bastante boas / muito boas"
+      }
+    ],
+    "id": "local-1772297635840-8",
+    "language": "Italiano"
+  }
+]

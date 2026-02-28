@@ -1,0 +1,477 @@
+[
+  {
+    "chinese": "陈经理，谢谢您百忙之中请我吃饭。",
+    "pinyin": "Chén jīnglǐ, xièxie nín bǎi máng zhī zhōng qǐng wǒ chīfàn.",
+    "translation": "Gerente Chen, obrigado por me convidar para comer apesar da sua agenda lotada.",
+    "tokens": [
+      "陈",
+      "经理",
+      "，",
+      "谢谢",
+      "您",
+      "百忙之中",
+      "请",
+      "我",
+      "吃饭",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陈经理",
+        "pinyin": "Chén jīnglǐ",
+        "meaning": "Gerente Chen"
+      },
+      {
+        "id": 2,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 4,
+        "word": "百忙之中",
+        "pinyin": "bǎi máng zhī zhōng",
+        "meaning": "no meio de seus muitos afazeres; apesar de estar muito ocupado"
+      },
+      {
+        "id": 5,
+        "word": "请",
+        "pinyin": "qǐng",
+        "meaning": "convidar"
+      },
+      {
+        "id": 6,
+        "word": "吃饭",
+        "pinyin": "chīfàn",
+        "meaning": "comer (uma refeição)"
+      }
+    ],
+    "id": "local-1772297371949-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "别客气，这是我应该做的。看看菜单，想吃什么？",
+    "pinyin": "Bié kèqi, zhè shì wǒ yīnggāi zuò de. Kànkan càidān, xiǎng chī shénme?",
+    "translation": "De nada, é o que devo fazer. Dê uma olhada no menu, o que gostaria de comer?",
+    "tokens": [
+      "别",
+      "客气",
+      "，",
+      "这",
+      "是",
+      "我",
+      "应该",
+      "做",
+      "的",
+      "。",
+      "看看",
+      "菜单",
+      "，",
+      "想",
+      "吃",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "别客气",
+        "pinyin": "bié kèqi",
+        "meaning": "de nada; não seja formal"
+      },
+      {
+        "id": 2,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "deveria; é para"
+      },
+      {
+        "id": 3,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 4,
+        "word": "菜单",
+        "pinyin": "càidān",
+        "meaning": "cardápio; menu"
+      },
+      {
+        "id": 5,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer; pensar"
+      },
+      {
+        "id": 6,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772297371949-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "随便，您点。",
+    "pinyin": "Suíbiàn, nín diǎn.",
+    "translation": "Tanto faz, você pede.",
+    "tokens": [
+      "随便",
+      "，",
+      "您",
+      "点",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "随便",
+        "pinyin": "suíbiàn",
+        "meaning": "tanto faz; qualquer coisa"
+      },
+      {
+        "id": 2,
+        "word": "点",
+        "pinyin": "diǎn",
+        "meaning": "pedir (comida)"
+      }
+    ],
+    "id": "local-1772297371949-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的。你什么时候到的上海？",
+    "pinyin": "Hǎo de. Nǐ shénme shíhou dào de Shànghǎi?",
+    "translation": "Ok. Quando você chegou em Xangai?",
+    "tokens": [
+      "好的",
+      "。",
+      "你",
+      "什么",
+      "时候",
+      "到",
+      "的",
+      "上海",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok; certo"
+      },
+      {
+        "id": 2,
+        "word": "什么时候",
+        "pinyin": "shénme shíhou",
+        "meaning": "quando"
+      },
+      {
+        "id": 3,
+        "word": "到",
+        "pinyin": "dào",
+        "meaning": "chegar"
+      },
+      {
+        "id": 4,
+        "word": "上海",
+        "pinyin": "Shànghǎi",
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1772297371949-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "昨天晚上。",
+    "pinyin": "Zuótiān wǎnshang.",
+    "translation": "Ontem à noite.",
+    "tokens": [
+      "昨天",
+      "晚上",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "昨天",
+        "pinyin": "zuótiān",
+        "meaning": "ontem"
+      },
+      {
+        "id": 2,
+        "word": "晚上",
+        "pinyin": "wǎnshang",
+        "meaning": "noite"
+      }
+    ],
+    "id": "local-1772297371949-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦，那你现在一定很累吧。",
+    "pinyin": "Ó, nà nǐ xiànzài yīdìng hěn lèi ba.",
+    "translation": "Oh, então você deve estar muito cansado agora.",
+    "tokens": [
+      "哦",
+      "，",
+      "那",
+      "你",
+      "现在",
+      "一定",
+      "很",
+      "累",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh (interjeição de surpresa ou compreensão)"
+      },
+      {
+        "id": 2,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então; aquele"
+      },
+      {
+        "id": 3,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 4,
+        "word": "一定",
+        "pinyin": "yīdìng",
+        "meaning": "certamente; deve"
+      },
+      {
+        "id": 5,
+        "word": "累",
+        "pinyin": "lèi",
+        "meaning": "cansado"
+      },
+      {
+        "id": 6,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de suposição ou sugestão"
+      }
+    ],
+    "id": "local-1772297371949-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我经常出差，已经习惯了。我把方案给您看一下。",
+    "pinyin": "Wǒ jīngcháng chūchāi, yǐjīng xíguàn le. Wǒ bǎ fāng'àn gěi nín kànyīxià.",
+    "translation": "Eu viajo a negócios com frequência, já me acostumei. Vou mostrar a você a proposta.",
+    "tokens": [
+      "我",
+      "经常",
+      "出差",
+      "，",
+      "已经",
+      "习惯",
+      "了",
+      "。",
+      "我",
+      "把",
+      "方案",
+      "给",
+      "您",
+      "看",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "经常",
+        "pinyin": "jīngcháng",
+        "meaning": "frequentemente"
+      },
+      {
+        "id": 2,
+        "word": "出差",
+        "pinyin": "chūchāi",
+        "meaning": "viajar a negócios"
+      },
+      {
+        "id": 3,
+        "word": "已经",
+        "pinyin": "yǐjīng",
+        "meaning": "já"
+      },
+      {
+        "id": 4,
+        "word": "习惯",
+        "pinyin": "xíguàn",
+        "meaning": "acostumar; hábito"
+      },
+      {
+        "id": 5,
+        "word": "把",
+        "pinyin": "bǎ",
+        "meaning": "partícula que indica objeto direto anteposto ao verbo"
+      },
+      {
+        "id": 6,
+        "word": "方案",
+        "pinyin": "fāng'àn",
+        "meaning": "proposta; plano"
+      },
+      {
+        "id": 7,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "dar; para"
+      },
+      {
+        "id": 8,
+        "word": "看一下",
+        "pinyin": "kànyīxià",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772297371949-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "不急，咱们先吃饭，吃完再聊。",
+    "pinyin": "Bù jí, zánmen xiān chīfàn, chī wán zài liáo.",
+    "translation": "Sem pressa, vamos comer primeiro, conversamos depois que terminarmos de comer.",
+    "tokens": [
+      "不",
+      "急",
+      "，",
+      "咱们",
+      "先",
+      "吃饭",
+      "，",
+      "吃完",
+      "再",
+      "聊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不急",
+        "pinyin": "bù jí",
+        "meaning": "sem pressa"
+      },
+      {
+        "id": 2,
+        "word": "咱们",
+        "pinyin": "zánmen",
+        "meaning": "nós (incluindo o ouvinte)"
+      },
+      {
+        "id": 3,
+        "word": "先",
+        "pinyin": "xiān",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "吃饭",
+        "pinyin": "chīfàn",
+        "meaning": "comer (uma refeição)"
+      },
+      {
+        "id": 5,
+        "word": "吃完",
+        "pinyin": "chī wán",
+        "meaning": "terminar de comer"
+      },
+      {
+        "id": 6,
+        "word": "再",
+        "pinyin": "zài",
+        "meaning": "depois; novamente"
+      },
+      {
+        "id": 7,
+        "word": "聊",
+        "pinyin": "liáo",
+        "meaning": "conversar"
+      }
+    ],
+    "id": "local-1772297371949-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的。",
+    "pinyin": "Hǎo de.",
+    "translation": "Ok.",
+    "tokens": [
+      "好的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok; certo"
+      }
+    ],
+    "id": "local-1772297371949-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "服务员，我们要点餐。",
+    "pinyin": "Fúwùyuán, wǒmen yào diǎncān.",
+    "translation": "Garçom, vamos pedir.",
+    "tokens": [
+      "服务员",
+      "，",
+      "我们",
+      "要",
+      "点餐",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "服务员",
+        "pinyin": "fúwùyuán",
+        "meaning": "garçom; atendente"
+      },
+      {
+        "id": 2,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer; vai; dever"
+      },
+      {
+        "id": 4,
+        "word": "点餐",
+        "pinyin": "diǎncān",
+        "meaning": "pedir comida; fazer o pedido"
+      }
+    ],
+    "id": "local-1772297371949-9",
+    "language": "Chinês"
+  }
+]

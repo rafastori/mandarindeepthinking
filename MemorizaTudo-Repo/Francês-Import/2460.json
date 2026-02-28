@@ -1,0 +1,706 @@
+[
+  {
+    "chinese": "A : Lisa, je voulais te demander quelque chose.",
+    "pinyin": null,
+    "translation": "A: Lisa, eu queria te perguntar algo.",
+    "tokens": [
+      "A",
+      ":",
+      "Lisa",
+      ",",
+      "je",
+      "voulais",
+      "te",
+      "demander",
+      "quelque",
+      "chose",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "je",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "voulais",
+        "pinyin": null,
+        "meaning": "queria (do verbo 'querer' no imperfeito)"
+      },
+      {
+        "id": 3,
+        "word": "demander",
+        "pinyin": null,
+        "meaning": "perguntar, pedir"
+      },
+      {
+        "id": 4,
+        "word": "quelque chose",
+        "pinyin": null,
+        "meaning": "algo, alguma coisa"
+      }
+    ],
+    "id": "local-1772299059989-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Qu'est-ce que c'est ?",
+    "pinyin": null,
+    "translation": "B: O que é?",
+    "tokens": [
+      "B",
+      ":",
+      "Qu'est-ce",
+      "que",
+      "c'est",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qu'est-ce que c'est ?",
+        "pinyin": null,
+        "meaning": "O que é isso?"
+      }
+    ],
+    "id": "local-1772299059989-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Est-ce que nous recrutons des stagiaires cet été ?",
+    "pinyin": null,
+    "translation": "A: Estamos recrutando estagiários neste verão?",
+    "tokens": [
+      "A",
+      ":",
+      "Est-ce",
+      "que",
+      "nous",
+      "recrutons",
+      "des",
+      "stagiaires",
+      "cet",
+      "été",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Est-ce que",
+        "pinyin": null,
+        "meaning": "Estrutura de pergunta (equivalente a 'Será que...')"
+      },
+      {
+        "id": 2,
+        "word": "nous",
+        "pinyin": null,
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "recrutons",
+        "pinyin": null,
+        "meaning": "recrutamos (do verbo 'recrutar')"
+      },
+      {
+        "id": 4,
+        "word": "stagiaires",
+        "pinyin": null,
+        "meaning": "estagiários"
+      },
+      {
+        "id": 5,
+        "word": "cet été",
+        "pinyin": null,
+        "meaning": "neste verão"
+      }
+    ],
+    "id": "local-1772299059989-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Oui. As-tu un candidat approprié que tu aimerais recommander ?",
+    "pinyin": null,
+    "translation": "B: Sim. Você tem um candidato apropriado que gostaria de recomendar?",
+    "tokens": [
+      "B",
+      ":",
+      "Oui",
+      ".",
+      "As-tu",
+      "un",
+      "candidat",
+      "approprié",
+      "que",
+      "tu",
+      "aimerais",
+      "recommander",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "As-tu",
+        "pinyin": null,
+        "meaning": "Você tem? (forma invertida de 'Tu as')"
+      },
+      {
+        "id": 3,
+        "word": "candidat",
+        "pinyin": null,
+        "meaning": "candidato"
+      },
+      {
+        "id": 4,
+        "word": "approprié",
+        "pinyin": null,
+        "meaning": "apropriado, adequado"
+      },
+      {
+        "id": 5,
+        "word": "aimerais",
+        "pinyin": null,
+        "meaning": "gostaria (do verbo 'amar/gostar' no condicional)"
+      },
+      {
+        "id": 6,
+        "word": "recommander",
+        "pinyin": null,
+        "meaning": "recomendar"
+      }
+    ],
+    "id": "local-1772299059989-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : J'ai un ami étranger qui étudie en Chine. Pendant les vacances d'été, il cherche un stage.",
+    "pinyin": null,
+    "translation": "A: Tenho um amigo estrangeiro que estuda na China. Durante as férias de verão, ele procura um estágio.",
+    "tokens": [
+      "A",
+      ":",
+      "J'ai",
+      "un",
+      "ami",
+      "étranger",
+      "qui",
+      "étudie",
+      "en",
+      "Chine",
+      ".",
+      "Pendant",
+      "les",
+      "vacances",
+      "d'été",
+      ",",
+      "il",
+      "cherche",
+      "un",
+      "stage",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'ai",
+        "pinyin": null,
+        "meaning": "Eu tenho"
+      },
+      {
+        "id": 2,
+        "word": "ami",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "étranger",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "qui",
+        "pinyin": null,
+        "meaning": "que, quem"
+      },
+      {
+        "id": 5,
+        "word": "étudie",
+        "pinyin": null,
+        "meaning": "estuda (do verbo 'estudar')"
+      },
+      {
+        "id": 6,
+        "word": "en Chine",
+        "pinyin": null,
+        "meaning": "na China"
+      },
+      {
+        "id": 7,
+        "word": "Pendant",
+        "pinyin": null,
+        "meaning": "Durante"
+      },
+      {
+        "id": 8,
+        "word": "les vacances d'été",
+        "pinyin": null,
+        "meaning": "as férias de verão"
+      },
+      {
+        "id": 9,
+        "word": "il",
+        "pinyin": null,
+        "meaning": "ele"
+      },
+      {
+        "id": 10,
+        "word": "cherche",
+        "pinyin": null,
+        "meaning": "procura (do verbo 'procurar')"
+      },
+      {
+        "id": 11,
+        "word": "un stage",
+        "pinyin": null,
+        "meaning": "um estágio"
+      }
+    ],
+    "id": "local-1772299059989-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : S'il est étudiant étranger, ça pourrait ne pas marcher.",
+    "pinyin": null,
+    "translation": "B: Se ele for estudante estrangeiro, talvez não funcione.",
+    "tokens": [
+      "B",
+      ":",
+      "S'il",
+      "est",
+      "étudiant",
+      "étranger",
+      ",",
+      "ça",
+      "pourrait",
+      "ne",
+      "pas",
+      "marcher",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "S'il",
+        "pinyin": null,
+        "meaning": "Se ele"
+      },
+      {
+        "id": 2,
+        "word": "étudiant étranger",
+        "pinyin": null,
+        "meaning": "estudante estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "ça",
+        "pinyin": null,
+        "meaning": "isso"
+      },
+      {
+        "id": 4,
+        "word": "pourrait",
+        "pinyin": null,
+        "meaning": "poderia (do verbo 'poder' no condicional)"
+      },
+      {
+        "id": 5,
+        "word": "ne pas marcher",
+        "pinyin": null,
+        "meaning": "não funcionar, não dar certo"
+      }
+    ],
+    "id": "local-1772299059989-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Son chinois est bon.",
+    "pinyin": null,
+    "translation": "A: O chinês dele é bom.",
+    "tokens": [
+      "A",
+      ":",
+      "Son",
+      "chinois",
+      "est",
+      "bon",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Son",
+        "pinyin": null,
+        "meaning": "Seu, dele (adjetivo possessivo)"
+      },
+      {
+        "id": 2,
+        "word": "chinois",
+        "pinyin": null,
+        "meaning": "chinês"
+      },
+      {
+        "id": 3,
+        "word": "bon",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772299059989-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Ce n'est pas la question. C'est un problème de visa. Les étrangers possédant des visas étudiants ne peuvent pas faire de stages en Chine.",
+    "pinyin": null,
+    "translation": "B: Essa não é a questão. É um problema de visto. Estrangeiros com vistos de estudante não podem fazer estágios na China.",
+    "tokens": [
+      "B",
+      ":",
+      "Ce",
+      "n'est",
+      "pas",
+      "la",
+      "question",
+      ".",
+      "C'est",
+      "un",
+      "problème",
+      "de",
+      "visa",
+      ".",
+      "Les",
+      "étrangers",
+      "possédant",
+      "des",
+      "visas",
+      "étudiants",
+      "ne",
+      "peuvent",
+      "pas",
+      "faire",
+      "de",
+      "stages",
+      "en",
+      "Chine",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ce n'est pas la question",
+        "pinyin": null,
+        "meaning": "Essa não é a questão"
+      },
+      {
+        "id": 2,
+        "word": "C'est",
+        "pinyin": null,
+        "meaning": "É, Isso é"
+      },
+      {
+        "id": 3,
+        "word": "un problème de visa",
+        "pinyin": null,
+        "meaning": "um problema de visto"
+      },
+      {
+        "id": 4,
+        "word": "Les étrangers",
+        "pinyin": null,
+        "meaning": "Os estrangeiros"
+      },
+      {
+        "id": 5,
+        "word": "possédant",
+        "pinyin": null,
+        "meaning": "possuindo (particípio presente de 'possuir')"
+      },
+      {
+        "id": 6,
+        "word": "visas étudiants",
+        "pinyin": null,
+        "meaning": "vistos de estudante"
+      },
+      {
+        "id": 7,
+        "word": "ne peuvent pas",
+        "pinyin": null,
+        "meaning": "não podem"
+      },
+      {
+        "id": 8,
+        "word": "faire de stages",
+        "pinyin": null,
+        "meaning": "fazer estágios"
+      },
+      {
+        "id": 9,
+        "word": "en Chine",
+        "pinyin": null,
+        "meaning": "na China"
+      }
+    ],
+    "id": "local-1772299059989-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Oh. C'est si strict ?",
+    "pinyin": null,
+    "translation": "A: Oh. É tão rigoroso?",
+    "tokens": [
+      "A",
+      ":",
+      "Oh",
+      ".",
+      "C'est",
+      "si",
+      "strict",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": null,
+        "meaning": "É, Isso é"
+      },
+      {
+        "id": 2,
+        "word": "si",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 3,
+        "word": "strict",
+        "pinyin": null,
+        "meaning": "rigoroso, estrito"
+      }
+    ],
+    "id": "local-1772299059989-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Oui. Pour les étrangers en Chine, même s'ils veulent seulement être stagiaires, ils doivent quand même obtenir un visa de travail.",
+    "pinyin": null,
+    "translation": "B: Sim. Para estrangeiros na China, mesmo que queiram apenas ser estagiários, eles ainda devem obter um visto de trabalho.",
+    "tokens": [
+      "B",
+      ":",
+      "Oui",
+      ".",
+      "Pour",
+      "les",
+      "étrangers",
+      "en",
+      "Chine",
+      ",",
+      "même",
+      "s'ils",
+      "veulent",
+      "seulement",
+      "être",
+      "stagiaires",
+      ",",
+      "ils",
+      "doivent",
+      "quand",
+      "même",
+      "obtenir",
+      "un",
+      "visa",
+      "de",
+      "travail",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Pour",
+        "pinyin": null,
+        "meaning": "Para"
+      },
+      {
+        "id": 3,
+        "word": "les étrangers",
+        "pinyin": null,
+        "meaning": "os estrangeiros"
+      },
+      {
+        "id": 4,
+        "word": "en Chine",
+        "pinyin": null,
+        "meaning": "na China"
+      },
+      {
+        "id": 5,
+        "word": "même si",
+        "pinyin": null,
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 6,
+        "word": "veulent",
+        "pinyin": null,
+        "meaning": "querem (do verbo 'querer')"
+      },
+      {
+        "id": 7,
+        "word": "seulement",
+        "pinyin": null,
+        "meaning": "somente, apenas"
+      },
+      {
+        "id": 8,
+        "word": "être stagiaires",
+        "pinyin": null,
+        "meaning": "ser estagiários"
+      },
+      {
+        "id": 9,
+        "word": "ils",
+        "pinyin": null,
+        "meaning": "eles"
+      },
+      {
+        "id": 10,
+        "word": "doivent",
+        "pinyin": null,
+        "meaning": "devem (do verbo 'dever')"
+      },
+      {
+        "id": 11,
+        "word": "quand même",
+        "pinyin": null,
+        "meaning": "mesmo assim, ainda assim"
+      },
+      {
+        "id": 12,
+        "word": "obtenir",
+        "pinyin": null,
+        "meaning": "obter"
+      },
+      {
+        "id": 13,
+        "word": "un visa de travail",
+        "pinyin": null,
+        "meaning": "um visto de trabalho"
+      }
+    ],
+    "id": "local-1772299059989-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Vraiment ? Alors je dois lui dire. Merci !",
+    "pinyin": null,
+    "translation": "A: Sério? Então eu devo dizer a ele. Obrigado!",
+    "tokens": [
+      "A",
+      ":",
+      "Vraiment",
+      "?",
+      "Alors",
+      "je",
+      "dois",
+      "lui",
+      "dire",
+      ".",
+      "Merci",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment ?",
+        "pinyin": null,
+        "meaning": "Sério?, De verdade?"
+      },
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "je",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "dois",
+        "pinyin": null,
+        "meaning": "devo (do verbo 'dever')"
+      },
+      {
+        "id": 5,
+        "word": "lui",
+        "pinyin": null,
+        "meaning": "a ele/ela (pronome objeto indireto)"
+      },
+      {
+        "id": 6,
+        "word": "dire",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 7,
+        "word": "Merci !",
+        "pinyin": null,
+        "meaning": "Obrigado!"
+      }
+    ],
+    "id": "local-1772299059989-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Pas de problème.",
+    "pinyin": null,
+    "translation": "B: Sem problemas.",
+    "tokens": [
+      "B",
+      ":",
+      "Pas",
+      "de",
+      "problème",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas de problème",
+        "pinyin": null,
+        "meaning": "Sem problemas, De nada"
+      }
+    ],
+    "id": "local-1772299059989-11",
+    "language": "Francês"
+  }
+]

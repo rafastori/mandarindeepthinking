@@ -1,0 +1,766 @@
+[
+  {
+    "chinese": "A: こんにちは、何かお手伝いできることはありますか？",
+    "pinyin": null,
+    "translation": "A: Olá, posso ajudar em alguma coisa?",
+    "tokens": [
+      "こんにちは",
+      "、",
+      "何か",
+      "お手伝い",
+      "できる",
+      "こと",
+      "は",
+      "あります",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんにちは",
+        "pinyin": "konnichiwa",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 3,
+        "word": "お手伝い",
+        "pinyin": "otetsudai",
+        "meaning": "Ajuda (substantivo)"
+      },
+      {
+        "id": 4,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "Poder, ser capaz de"
+      },
+      {
+        "id": 5,
+        "word": "ありますか",
+        "pinyin": "arimasuka",
+        "meaning": "Existe? Há?"
+      }
+    ],
+    "id": "local-1772299362732-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: メガネを作っていただきたいのですが。",
+    "pinyin": null,
+    "translation": "B: Gostaria de fazer óculos.",
+    "tokens": [
+      "メガネ",
+      "を",
+      "作って",
+      "いただき",
+      "たい",
+      "の",
+      "です",
+      "が",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "メガネ",
+        "pinyin": "megane",
+        "meaning": "Óculos"
+      },
+      {
+        "id": 2,
+        "word": "作る",
+        "pinyin": "tsukuru",
+        "meaning": "Fazer, fabricar"
+      },
+      {
+        "id": 3,
+        "word": "〜ていただく",
+        "pinyin": "te itadaku",
+        "meaning": "Pedir que alguém faça algo para você (educado)"
+      },
+      {
+        "id": 4,
+        "word": "〜たい",
+        "pinyin": "tai",
+        "meaning": "Querer fazer"
+      }
+    ],
+    "id": "local-1772299362732-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 近視用のメガネですか、それとも伊達メガネですか、それとも老眼鏡ですか？",
+    "pinyin": null,
+    "translation": "A: São óculos para miopia, ou óculos sem grau, ou óculos de leitura (para presbiopia)?",
+    "tokens": [
+      "近視用",
+      "の",
+      "メガネ",
+      "です",
+      "か",
+      "、",
+      "それとも",
+      "伊達メガネ",
+      "です",
+      "か",
+      "、",
+      "それとも",
+      "老眼鏡",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "近視用",
+        "pinyin": "kinshiyō",
+        "meaning": "Para miopia"
+      },
+      {
+        "id": 2,
+        "word": "メガネ",
+        "pinyin": "megane",
+        "meaning": "Óculos"
+      },
+      {
+        "id": 3,
+        "word": "それとも",
+        "pinyin": "soretomo",
+        "meaning": "Ou, ou então"
+      },
+      {
+        "id": 4,
+        "word": "伊達メガネ",
+        "pinyin": "datemegane",
+        "meaning": "Óculos sem grau (apenas por estilo)"
+      },
+      {
+        "id": 5,
+        "word": "老眼鏡",
+        "pinyin": "rōgankyō",
+        "meaning": "Óculos de leitura, para presbiopia"
+      }
+    ],
+    "id": "local-1772299362732-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 乱視入りの近視用メガネです。",
+    "pinyin": null,
+    "translation": "B: São óculos para miopia com astigmatismo.",
+    "tokens": [
+      "乱視",
+      "入り",
+      "の",
+      "近視用",
+      "メガネ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "乱視",
+        "pinyin": "ranshi",
+        "meaning": "Astigmatismo"
+      },
+      {
+        "id": 2,
+        "word": "〜入り",
+        "pinyin": "iri",
+        "meaning": "Com, contendo"
+      },
+      {
+        "id": 3,
+        "word": "近視用",
+        "pinyin": "kinshiyō",
+        "meaning": "Para miopia"
+      },
+      {
+        "id": 4,
+        "word": "メガネ",
+        "pinyin": "megane",
+        "meaning": "Óculos"
+      }
+    ],
+    "id": "local-1772299362732-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: こちらのフレームの中からお好きなものをお選びいただけます。お選びになったら、あちらでお支払いと視力検査ができます。",
+    "pinyin": null,
+    "translation": "A: Pode escolher o que quiser entre estas armações. Depois de escolher, poderá fazer o pagamento e o exame de vista lá.",
+    "tokens": [
+      "こちら",
+      "の",
+      "フレーム",
+      "の",
+      "中",
+      "から",
+      "お好きな",
+      "もの",
+      "を",
+      "お選び",
+      "いただけ",
+      "ます",
+      "。",
+      "お選び",
+      "に",
+      "なったら",
+      "、",
+      "あちら",
+      "で",
+      "お支払い",
+      "と",
+      "視力検査",
+      "が",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "Este (aqui), por aqui"
+      },
+      {
+        "id": 2,
+        "word": "フレーム",
+        "pinyin": "furēmu",
+        "meaning": "Armação (de óculos)"
+      },
+      {
+        "id": 3,
+        "word": "中から",
+        "pinyin": "nakakara",
+        "meaning": "De dentro, entre"
+      },
+      {
+        "id": 4,
+        "word": "お好きな",
+        "pinyin": "osukina",
+        "meaning": "Seu preferido, o que gosta (forma honorífica)"
+      },
+      {
+        "id": 5,
+        "word": "選ぶ",
+        "pinyin": "erabu",
+        "meaning": "Escolher"
+      },
+      {
+        "id": 6,
+        "word": "〜ていただけます",
+        "pinyin": "te itadakemasu",
+        "meaning": "Pode (fazer algo), ter permissão para fazer (forma educada)"
+      },
+      {
+        "id": 7,
+        "word": "〜たら",
+        "pinyin": "tara",
+        "meaning": "Se, quando (depois que)"
+      },
+      {
+        "id": 8,
+        "word": "あちら",
+        "pinyin": "achira",
+        "meaning": "Aquele (lá), por lá"
+      },
+      {
+        "id": 9,
+        "word": "支払い",
+        "pinyin": "shiharai",
+        "meaning": "Pagamento"
+      },
+      {
+        "id": 10,
+        "word": "視力検査",
+        "pinyin": "shiryokukensa",
+        "meaning": "Exame de vista, teste de acuidade visual"
+      },
+      {
+        "id": 11,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "Poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772299362732-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました。一つおいくらですか？",
+    "pinyin": null,
+    "translation": "B: Entendi. Quanto custa um?",
+    "tokens": [
+      "わかり",
+      "ました",
+      "。",
+      "一つ",
+      "おいくら",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": "wakaru",
+        "meaning": "Entender"
+      },
+      {
+        "id": 2,
+        "word": "一つ",
+        "pinyin": "hitotsu",
+        "meaning": "Um (item)"
+      },
+      {
+        "id": 3,
+        "word": "おいくら",
+        "pinyin": "oikura",
+        "meaning": "Quanto (dinheiro) (forma educada)"
+      }
+    ],
+    "id": "local-1772299362732-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 399、599、799の3つのパック料金がございます。レンズ、フレーム、メガネケース、メガネ拭きが含まれています。",
+    "pinyin": null,
+    "translation": "A: Temos três pacotes de preços: 399, 599 e 799. Inclui lentes, armação, estojo de óculos e pano para óculos.",
+    "tokens": [
+      "399",
+      "、",
+      "599",
+      "、",
+      "799",
+      "の",
+      "3つ",
+      "の",
+      "パック料金",
+      "が",
+      "ござい",
+      "ます",
+      "。",
+      "レンズ",
+      "、",
+      "フレーム",
+      "、",
+      "メガネケース",
+      "、",
+      "メガネ拭き",
+      "が",
+      "含ま",
+      "れて",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "3つ",
+        "pinyin": "mittsu",
+        "meaning": "Três (itens)"
+      },
+      {
+        "id": 2,
+        "word": "パック料金",
+        "pinyin": "pakku ryōkin",
+        "meaning": "Preço do pacote"
+      },
+      {
+        "id": 3,
+        "word": "ございます",
+        "pinyin": "gozaimasu",
+        "meaning": "Existe, há (forma educada de arimasu)"
+      },
+      {
+        "id": 4,
+        "word": "レンズ",
+        "pinyin": "renzu",
+        "meaning": "Lente"
+      },
+      {
+        "id": 5,
+        "word": "フレーム",
+        "pinyin": "furēmu",
+        "meaning": "Armação (de óculos)"
+      },
+      {
+        "id": 6,
+        "word": "メガネケース",
+        "pinyin": "megane kēsu",
+        "meaning": "Estojo de óculos"
+      },
+      {
+        "id": 7,
+        "word": "メガネ拭き",
+        "pinyin": "megane fuki",
+        "meaning": "Pano para óculos"
+      },
+      {
+        "id": 8,
+        "word": "含まれる",
+        "pinyin": "fukumareru",
+        "meaning": "Estar incluído"
+      }
+    ],
+    "id": "local-1772299362732-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 受け取りまでどれくらい待つ必要がありますか？",
+    "pinyin": null,
+    "translation": "B: Quanto tempo preciso esperar para retirar?",
+    "tokens": [
+      "受け取り",
+      "まで",
+      "どれくらい",
+      "待つ",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "受け取り",
+        "pinyin": "uketori",
+        "meaning": "Retirada, recebimento"
+      },
+      {
+        "id": 2,
+        "word": "まで",
+        "pinyin": "made",
+        "meaning": "Até"
+      },
+      {
+        "id": 3,
+        "word": "どれくらい",
+        "pinyin": "dore kurai",
+        "meaning": "Quanto tempo, aproximadamente quanto"
+      },
+      {
+        "id": 4,
+        "word": "待つ",
+        "pinyin": "matsu",
+        "meaning": "Esperar"
+      },
+      {
+        "id": 5,
+        "word": "〜必要があります",
+        "pinyin": "hitsuyō ga arimasu",
+        "meaning": "É necessário fazer, precisar fazer"
+      }
+    ],
+    "id": "local-1772299362732-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 視力検査後、1時間です。",
+    "pinyin": null,
+    "translation": "A: Após o exame de vista, é uma hora.",
+    "tokens": [
+      "視力検査",
+      "後",
+      "、",
+      "1時間",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "視力検査",
+        "pinyin": "shiryokukensa",
+        "meaning": "Exame de vista, teste de acuidade visual"
+      },
+      {
+        "id": 2,
+        "word": "後",
+        "pinyin": "go",
+        "meaning": "Depois, após"
+      },
+      {
+        "id": 3,
+        "word": "1時間",
+        "pinyin": "ichijikan",
+        "meaning": "Uma hora"
+      }
+    ],
+    "id": "local-1772299362732-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 近視と乱視用で、さらにサングラスになるレンズはありますか？",
+    "pinyin": null,
+    "translation": "B: Existem lentes para miopia e astigmatismo que também viram óculos de sol?",
+    "tokens": [
+      "近視",
+      "と",
+      "乱視",
+      "用",
+      "で",
+      "、",
+      "さらに",
+      "サングラス",
+      "に",
+      "なる",
+      "レンズ",
+      "は",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "近視",
+        "pinyin": "kinshi",
+        "meaning": "Miopia"
+      },
+      {
+        "id": 2,
+        "word": "乱視",
+        "pinyin": "ranshi",
+        "meaning": "Astigmatismo"
+      },
+      {
+        "id": 3,
+        "word": "〜用",
+        "pinyin": "yō",
+        "meaning": "Para uso de, para"
+      },
+      {
+        "id": 4,
+        "word": "さらに",
+        "pinyin": "sarani",
+        "meaning": "Além disso, ainda mais"
+      },
+      {
+        "id": 5,
+        "word": "サングラス",
+        "pinyin": "sangurasu",
+        "meaning": "Óculos de sol"
+      },
+      {
+        "id": 6,
+        "word": "〜になる",
+        "pinyin": "ni naru",
+        "meaning": "Tornar-se, virar"
+      },
+      {
+        "id": 7,
+        "word": "レンズ",
+        "pinyin": "renzu",
+        "meaning": "Lente"
+      },
+      {
+        "id": 8,
+        "word": "ありますか",
+        "pinyin": "arimasuka",
+        "meaning": "Existe? Há?"
+      }
+    ],
+    "id": "local-1772299362732-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ございますが、それは特殊なレンズです。パック料金はなく、レンズとフレームを別々に購入していただくことになります。一つ千以上はします。",
+    "pinyin": null,
+    "translation": "A: Sim, temos, mas são lentes especiais. Não há preço de pacote, e as lentes e a armação terão que ser compradas separadamente. Um custará mais de mil.",
+    "tokens": [
+      "ござい",
+      "ます",
+      "が",
+      "、",
+      "それ",
+      "は",
+      "特殊な",
+      "レンズ",
+      "です",
+      "。",
+      "パック料金",
+      "は",
+      "なく",
+      "、",
+      "レンズ",
+      "と",
+      "フレーム",
+      "を",
+      "別々",
+      "に",
+      "購入",
+      "して",
+      "いただく",
+      "こと",
+      "に",
+      "なり",
+      "ます",
+      "。",
+      "一つ",
+      "千",
+      "以上",
+      "は",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ございますが",
+        "pinyin": "gozaimasuga",
+        "meaning": "Sim, temos, mas..."
+      },
+      {
+        "id": 2,
+        "word": "特殊な",
+        "pinyin": "tokushuna",
+        "meaning": "Especial, particular"
+      },
+      {
+        "id": 3,
+        "word": "レンズ",
+        "pinyin": "renzu",
+        "meaning": "Lente"
+      },
+      {
+        "id": 4,
+        "word": "パック料金",
+        "pinyin": "pakku ryōkin",
+        "meaning": "Preço do pacote"
+      },
+      {
+        "id": 5,
+        "word": "なく",
+        "pinyin": "naku",
+        "meaning": "Não ter (forma -ku de nai)"
+      },
+      {
+        "id": 6,
+        "word": "フレーム",
+        "pinyin": "furēmu",
+        "meaning": "Armação (de óculos)"
+      },
+      {
+        "id": 7,
+        "word": "別々",
+        "pinyin": "betsubetsu",
+        "meaning": "Separadamente"
+      },
+      {
+        "id": 8,
+        "word": "購入する",
+        "pinyin": "kōnyū suru",
+        "meaning": "Comprar"
+      },
+      {
+        "id": 9,
+        "word": "〜ていただく",
+        "pinyin": "te itadaku",
+        "meaning": "Pedir que alguém faça algo para você (educado)"
+      },
+      {
+        "id": 10,
+        "word": "〜ことになる",
+        "pinyin": "koto ni naru",
+        "meaning": "Ser decidido que, acabar por"
+      },
+      {
+        "id": 11,
+        "word": "一つ",
+        "pinyin": "hitotsu",
+        "meaning": "Um (item)"
+      },
+      {
+        "id": 12,
+        "word": "千",
+        "pinyin": "sen",
+        "meaning": "Mil"
+      },
+      {
+        "id": 13,
+        "word": "以上",
+        "pinyin": "ijō",
+        "meaning": "Mais de, acima de"
+      },
+      {
+        "id": 14,
+        "word": "する",
+        "pinyin": "suru",
+        "meaning": "Custar (dinheiro)"
+      }
+    ],
+    "id": "local-1772299362732-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは高いですね！399の方を見てみます。",
+    "pinyin": null,
+    "translation": "B: Isso é caro! Vou ver o de 399.",
+    "tokens": [
+      "それ",
+      "は",
+      "高い",
+      "です",
+      "ね",
+      "！",
+      "399",
+      "の",
+      "方",
+      "を",
+      "見て",
+      "みます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "Caro, alto"
+      },
+      {
+        "id": 3,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "Partícula de confirmação/ênfase"
+      },
+      {
+        "id": 4,
+        "word": "〜の方",
+        "pinyin": "no hō",
+        "meaning": "O lado de, a opção de"
+      },
+      {
+        "id": 5,
+        "word": "〜てみる",
+        "pinyin": "temiru",
+        "meaning": "Tentar fazer, fazer e ver o resultado"
+      }
+    ],
+    "id": "local-1772299362732-11",
+    "language": "Japonês"
+  }
+]

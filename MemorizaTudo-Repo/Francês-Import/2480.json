@@ -1,0 +1,871 @@
+[
+  {
+    "chinese": "A: Où ressentez-vous la douleur ?",
+    "pinyin": null,
+    "translation": "A: Onde você sente a dor?",
+    "tokens": [
+      "A",
+      ":",
+      "Où",
+      "ressentez-vous",
+      "la",
+      "douleur",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Où",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 3,
+        "word": "ressentez-vous",
+        "pinyin": null,
+        "meaning": "você sente"
+      },
+      {
+        "id": 5,
+        "word": "douleur",
+        "pinyin": null,
+        "meaning": "dor"
+      }
+    ],
+    "id": "local-1772300715016-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Récemment, je n'ai pas dormi et je me fatigue facilement. Alors je veux m'en occuper.",
+    "pinyin": null,
+    "translation": "B: Recentemente, não dormi e me canso facilmente. Então eu quero cuidar disso.",
+    "tokens": [
+      "B",
+      ":",
+      "Récemment",
+      ",",
+      "je",
+      "n'ai",
+      "pas",
+      "dormi",
+      "et",
+      "je",
+      "me",
+      "fatigue",
+      "facilement",
+      ".",
+      "Alors",
+      "je",
+      "veux",
+      "m'en",
+      "occuper",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Récemment",
+        "pinyin": null,
+        "meaning": "Recentemente"
+      },
+      {
+        "id": 7,
+        "word": "dormi",
+        "pinyin": null,
+        "meaning": "dormi"
+      },
+      {
+        "id": 11,
+        "word": "fatigue",
+        "pinyin": null,
+        "meaning": "canso"
+      },
+      {
+        "id": 12,
+        "word": "facilement",
+        "pinyin": null,
+        "meaning": "facilmente"
+      },
+      {
+        "id": 17,
+        "word": "m'en occuper",
+        "pinyin": null,
+        "meaning": "cuidar disso"
+      }
+    ],
+    "id": "local-1772300715016-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Tendez votre main. Laissez-moi prendre votre pouls. Tirez la langue.",
+    "pinyin": null,
+    "translation": "A: Estenda a sua mão. Deixe-me sentir o seu pulso. Ponha a língua para fora.",
+    "tokens": [
+      "A",
+      ":",
+      "Tendez",
+      "votre",
+      "main",
+      ".",
+      "Laissez-moi",
+      "prendre",
+      "votre",
+      "pouls",
+      ".",
+      "Tirez",
+      "la",
+      "langue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Tendez",
+        "pinyin": null,
+        "meaning": "Estenda"
+      },
+      {
+        "id": 4,
+        "word": "main",
+        "pinyin": null,
+        "meaning": "mão"
+      },
+      {
+        "id": 6,
+        "word": "Laissez-moi",
+        "pinyin": null,
+        "meaning": "Deixe-me"
+      },
+      {
+        "id": 9,
+        "word": "pouls",
+        "pinyin": null,
+        "meaning": "pulso"
+      },
+      {
+        "id": 11,
+        "word": "Tirez la langue",
+        "pinyin": null,
+        "meaning": "Ponha a língua para fora"
+      }
+    ],
+    "id": "local-1772300715016-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Docteur, ce n'est rien, n'est-ce pas ?",
+    "pinyin": null,
+    "translation": "B: Doutor, não é nada, é?",
+    "tokens": [
+      "B",
+      ":",
+      "Docteur",
+      ",",
+      "ce",
+      "n'est",
+      "rien",
+      ",",
+      "n'est-ce",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Docteur",
+        "pinyin": null,
+        "meaning": "Doutor"
+      },
+      {
+        "id": 6,
+        "word": "rien",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 8,
+        "word": "n'est-ce pas",
+        "pinyin": null,
+        "meaning": "não é?"
+      }
+    ],
+    "id": "local-1772300715016-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Il n'y a pas de gros problème. Un peu déficient en énergie vitale. Je vais vous prescrire des médicaments.",
+    "pinyin": null,
+    "translation": "A: Não há nenhum problema grande. Um pouco deficiente em energia vital. Vou prescrever-lhe medicamentos.",
+    "tokens": [
+      "A",
+      ":",
+      "Il",
+      "n'y",
+      "a",
+      "pas",
+      "de",
+      "gros",
+      "problème",
+      ".",
+      "Un",
+      "peu",
+      "déficient",
+      "en",
+      "énergie",
+      "vitale",
+      ".",
+      "Je",
+      "vais",
+      "vous",
+      "prescrire",
+      "des",
+      "médicaments",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "gros problème",
+        "pinyin": null,
+        "meaning": "problema grande"
+      },
+      {
+        "id": 12,
+        "word": "déficient",
+        "pinyin": null,
+        "meaning": "deficiente"
+      },
+      {
+        "id": 14,
+        "word": "énergie vitale",
+        "pinyin": null,
+        "meaning": "energia vital"
+      },
+      {
+        "id": 20,
+        "word": "prescrire",
+        "pinyin": null,
+        "meaning": "prescrever"
+      },
+      {
+        "id": 22,
+        "word": "médicaments",
+        "pinyin": null,
+        "meaning": "medicamentos"
+      }
+    ],
+    "id": "local-1772300715016-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Comment dois-je décocter le médicament ?",
+    "pinyin": null,
+    "translation": "B: Como devo preparar (decoccionar) o medicamento?",
+    "tokens": [
+      "B",
+      ":",
+      "Comment",
+      "dois-je",
+      "décocter",
+      "le",
+      "médicament",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Comment",
+        "pinyin": null,
+        "meaning": "Como"
+      },
+      {
+        "id": 3,
+        "word": "dois-je",
+        "pinyin": null,
+        "meaning": "devo"
+      },
+      {
+        "id": 4,
+        "word": "décocter",
+        "pinyin": null,
+        "meaning": "preparar (decoccionar)"
+      },
+      {
+        "id": 6,
+        "word": "médicament",
+        "pinyin": null,
+        "meaning": "medicamento"
+      }
+    ],
+    "id": "local-1772300715016-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Décoctez deux fois, mélangez la décoction et buvez-la en deux prises. Une fois le matin et une fois le soir.",
+    "pinyin": null,
+    "translation": "A: Prepare (Decoccionar) duas vezes, misture a decocção e beba-a em duas doses. Uma vez de manhã e uma vez à noite.",
+    "tokens": [
+      "A",
+      ":",
+      "Décoctez",
+      "deux",
+      "fois",
+      ",",
+      "mélangez",
+      "la",
+      "décoction",
+      "et",
+      "buvez-la",
+      "en",
+      "deux",
+      "prises",
+      ".",
+      "Une",
+      "fois",
+      "le",
+      "matin",
+      "et",
+      "une",
+      "fois",
+      "le",
+      "soir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Décoctez",
+        "pinyin": null,
+        "meaning": "Prepare (Decoccionar)"
+      },
+      {
+        "id": 3,
+        "word": "deux fois",
+        "pinyin": null,
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 6,
+        "word": "mélangez",
+        "pinyin": null,
+        "meaning": "misture"
+      },
+      {
+        "id": 8,
+        "word": "décoction",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 10,
+        "word": "buvez-la",
+        "pinyin": null,
+        "meaning": "beba-a"
+      },
+      {
+        "id": 13,
+        "word": "prises",
+        "pinyin": null,
+        "meaning": "doses"
+      },
+      {
+        "id": 18,
+        "word": "matin",
+        "pinyin": null,
+        "meaning": "manhã"
+      },
+      {
+        "id": 23,
+        "word": "soir",
+        "pinyin": null,
+        "meaning": "noite"
+      }
+    ],
+    "id": "local-1772300715016-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cela signifie que je dois décocter le médicament tous les matins quand je me lève.",
+    "pinyin": null,
+    "translation": "B: Isso significa que eu devo preparar (decoccionar) o medicamento todas as manhãs quando me levanto.",
+    "tokens": [
+      "B",
+      ":",
+      "Cela",
+      "signifie",
+      "que",
+      "je",
+      "dois",
+      "décocter",
+      "le",
+      "médicament",
+      "tous",
+      "les",
+      "matins",
+      "quand",
+      "je",
+      "me",
+      "lève",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Cela signifie",
+        "pinyin": null,
+        "meaning": "Isso significa"
+      },
+      {
+        "id": 6,
+        "word": "dois",
+        "pinyin": null,
+        "meaning": "devo"
+      },
+      {
+        "id": 7,
+        "word": "décocter",
+        "pinyin": null,
+        "meaning": "preparar (decoccionar)"
+      },
+      {
+        "id": 10,
+        "word": "tous les matins",
+        "pinyin": null,
+        "meaning": "todas as manhãs"
+      },
+      {
+        "id": 15,
+        "word": "me lève",
+        "pinyin": null,
+        "meaning": "me levanto"
+      }
+    ],
+    "id": "local-1772300715016-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Si vous trouvez que c'est une nuisance, nous pouvons le décocter pour vous.",
+    "pinyin": null,
+    "translation": "A: Se você achar que é um incômodo, nós podemos prepará-lo (decoccionar) para você.",
+    "tokens": [
+      "A",
+      ":",
+      "Si",
+      "vous",
+      "trouvez",
+      "que",
+      "c'est",
+      "une",
+      "nuisance",
+      ",",
+      "nous",
+      "pouvons",
+      "le",
+      "décocter",
+      "pour",
+      "vous",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Si",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 4,
+        "word": "trouvez",
+        "pinyin": null,
+        "meaning": "achar"
+      },
+      {
+        "id": 8,
+        "word": "nuisance",
+        "pinyin": null,
+        "meaning": "incômodo"
+      },
+      {
+        "id": 11,
+        "word": "pouvons",
+        "pinyin": null,
+        "meaning": "podemos"
+      },
+      {
+        "id": 13,
+        "word": "décocter",
+        "pinyin": null,
+        "meaning": "preparar (decoccionar)"
+      }
+    ],
+    "id": "local-1772300715016-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est l'hôpital qui le décocterait pour moi ?",
+    "pinyin": null,
+    "translation": "B: É o hospital que o prepararia (decoccionaria) para mim?",
+    "tokens": [
+      "B",
+      ":",
+      "C'est",
+      "l'hôpital",
+      "qui",
+      "le",
+      "décocterait",
+      "pour",
+      "moi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "l'hôpital",
+        "pinyin": null,
+        "meaning": "o hospital"
+      },
+      {
+        "id": 6,
+        "word": "décocterait",
+        "pinyin": null,
+        "meaning": "prepararia (decoccionaria)"
+      }
+    ],
+    "id": "local-1772300715016-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Vous payez des frais minimes pour la décoction. Ensuite, l'hôpital peut le décocter pour vous et le mettre sous vide. Si vous le réchauffez quand vous le buvez, c'est plus facile à boire.",
+    "pinyin": null,
+    "translation": "A: Sim. Você paga uma taxa mínima pela decocção. Em seguida, o hospital pode prepará-lo para você e colocá-lo a vácuo. Se você o aquecer quando for beber, é mais fácil de beber.",
+    "tokens": [
+      "A",
+      ":",
+      "Oui",
+      ".",
+      "Vous",
+      "payez",
+      "des",
+      "frais",
+      "minimes",
+      "pour",
+      "la",
+      "décoction",
+      ".",
+      "Ensuite",
+      ",",
+      "l'hôpital",
+      "peut",
+      "le",
+      "décocter",
+      "for",
+      "vous",
+      "et",
+      "le",
+      "mettre",
+      "sous",
+      "vide",
+      ".",
+      "Si",
+      "vous",
+      "le",
+      "réchauffez",
+      "quand",
+      "vous",
+      "le",
+      "buvez",
+      ",",
+      "c'est",
+      "plus",
+      "facile",
+      "à",
+      "boire",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 5,
+        "word": "payez",
+        "pinyin": null,
+        "meaning": "paga"
+      },
+      {
+        "id": 7,
+        "word": "frais minimes",
+        "pinyin": null,
+        "meaning": "taxa mínima"
+      },
+      {
+        "id": 11,
+        "word": "décoction",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 13,
+        "word": "Ensuite",
+        "pinyin": null,
+        "meaning": "Em seguida"
+      },
+      {
+        "id": 15,
+        "word": "l'hôpital",
+        "pinyin": null,
+        "meaning": "o hospital"
+      },
+      {
+        "id": 23,
+        "word": "mettre sous vide",
+        "pinyin": null,
+        "meaning": "colocá-lo a vácuo"
+      },
+      {
+        "id": 30,
+        "word": "réchauffez",
+        "pinyin": null,
+        "meaning": "aquecer"
+      },
+      {
+        "id": 34,
+        "word": "buvez",
+        "pinyin": null,
+        "meaning": "beber"
+      },
+      {
+        "id": 37,
+        "word": "plus facile",
+        "pinyin": null,
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 40,
+        "word": "boire",
+        "pinyin": null,
+        "meaning": "beber"
+      }
+    ],
+    "id": "local-1772300715016-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors je vais le faire décocter pour moi. Puis-je l'obtenir aujourd'hui ?",
+    "pinyin": null,
+    "translation": "B: Então eu vou mandar preparar (decoccionar) para mim. Posso pegá-lo hoje?",
+    "tokens": [
+      "B",
+      ":",
+      "Alors",
+      "je",
+      "vais",
+      "le",
+      "faire",
+      "décocter",
+      "pour",
+      "moi",
+      ".",
+      "Puis-je",
+      "l'obtenir",
+      "aujourd'hui",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 4,
+        "word": "vais le faire décocter",
+        "pinyin": null,
+        "meaning": "vou mandar preparar (decoccionar)"
+      },
+      {
+        "id": 11,
+        "word": "Puis-je",
+        "pinyin": null,
+        "meaning": "Posso"
+      },
+      {
+        "id": 12,
+        "word": "l'obtenir",
+        "pinyin": null,
+        "meaning": "pegá-lo"
+      },
+      {
+        "id": 13,
+        "word": "aujourd'hui",
+        "pinyin": null,
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772300715016-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non, ça ne marchera pas. La décoction prend du temps. Au plus tôt, vous pourrez l'obtenir demain. D'abord, allez payer, puis allez au guichet de décoction des médicaments et inscrivez-vous.",
+    "pinyin": null,
+    "translation": "A: Não, isso não funcionará. A decocção leva tempo. O mais cedo, você poderá pegá-lo amanhã. Primeiro, vá pagar, depois vá ao balcão de preparação de medicamentos e se inscreva.",
+    "tokens": [
+      "A",
+      ":",
+      "Non",
+      ",",
+      "ça",
+      "ne",
+      "marchera",
+      "pas",
+      ".",
+      "La",
+      "décoction",
+      "prend",
+      "du",
+      "temps",
+      ".",
+      "Au",
+      "plus",
+      "tôt",
+      ",",
+      "vous",
+      "pourrez",
+      "l'obtenir",
+      "demain",
+      ".",
+      "D'abord",
+      ",",
+      "allez",
+      "payer",
+      ",",
+      "puis",
+      "allez",
+      "au",
+      "guichet",
+      "de",
+      "décoction",
+      "des",
+      "médicaments",
+      "et",
+      "inscrivez-vous",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Non",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 4,
+        "word": "ça ne marchera pas",
+        "pinyin": null,
+        "meaning": "isso não funcionará"
+      },
+      {
+        "id": 10,
+        "word": "décoction",
+        "pinyin": null,
+        "meaning": "decocção"
+      },
+      {
+        "id": 11,
+        "word": "prend du temps",
+        "pinyin": null,
+        "meaning": "leva tempo"
+      },
+      {
+        "id": 15,
+        "word": "Au plus tôt",
+        "pinyin": null,
+        "meaning": "O mais cedo"
+      },
+      {
+        "id": 20,
+        "word": "pourrez",
+        "pinyin": null,
+        "meaning": "poderá"
+      },
+      {
+        "id": 21,
+        "word": "l'obtenir",
+        "pinyin": null,
+        "meaning": "pegá-lo"
+      },
+      {
+        "id": 22,
+        "word": "demain",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 24,
+        "word": "D'abord",
+        "pinyin": null,
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 27,
+        "word": "payer",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 32,
+        "word": "guichet",
+        "pinyin": null,
+        "meaning": "balcão"
+      },
+      {
+        "id": 38,
+        "word": "inscrivez-vous",
+        "pinyin": null,
+        "meaning": "se inscreva"
+      }
+    ],
+    "id": "local-1772300715016-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord, merci Docteur.",
+    "pinyin": null,
+    "translation": "B: De acordo, obrigado Doutor.",
+    "tokens": [
+      "B",
+      ":",
+      "D'accord",
+      ",",
+      "merci",
+      "Docteur",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "De acordo"
+      },
+      {
+        "id": 4,
+        "word": "merci",
+        "pinyin": null,
+        "meaning": "obrigado"
+      },
+      {
+        "id": 5,
+        "word": "Docteur",
+        "pinyin": null,
+        "meaning": "Doutor"
+      }
+    ],
+    "id": "local-1772300715016-13",
+    "language": "Francês"
+  }
+]

@@ -1,0 +1,544 @@
+[
+  {
+    "chinese": "A: 小陳、車を買う予定なの？",
+    "pinyin": "",
+    "translation": "A: Xiao Chen, você planeja comprar um carro?",
+    "tokens": [
+      "小陳",
+      "、",
+      "車",
+      "を",
+      "買う",
+      "予定",
+      "なの",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小陳",
+        "pinyin": "",
+        "meaning": "Xiao Chen (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "車",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 3,
+        "word": "買う",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "予定",
+        "pinyin": "",
+        "meaning": "plano, intenção"
+      },
+      {
+        "id": 5,
+        "word": "～なの？",
+        "pinyin": "",
+        "meaning": "partícula interrogativa (informal)"
+      }
+    ],
+    "id": "local-1772297684717-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: うん！小孫、意見を聞こうと思ってたんだ。",
+    "pinyin": "",
+    "translation": "B: Sim! Xiao Sun, eu estava pensando em perguntar sua opinião.",
+    "tokens": [
+      "うん",
+      "！",
+      "小孫",
+      "、",
+      "意見",
+      "を",
+      "聞こう",
+      "と",
+      "思ってた",
+      "んだ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "小孫",
+        "pinyin": "",
+        "meaning": "Xiao Sun (nome próprio)"
+      },
+      {
+        "id": 3,
+        "word": "意見",
+        "pinyin": "",
+        "meaning": "opinião"
+      },
+      {
+        "id": 4,
+        "word": "聞こう",
+        "pinyin": "",
+        "meaning": "pedir, ouvir (forma volitiva de 聞く)"
+      },
+      {
+        "id": 5,
+        "word": "～と思ってた",
+        "pinyin": "",
+        "meaning": "estava pensando em..."
+      },
+      {
+        "id": 6,
+        "word": "～んだ",
+        "pinyin": "",
+        "meaning": "partícula explicativa"
+      }
+    ],
+    "id": "local-1772297684717-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 予算はだいたいどれくらい？",
+    "pinyin": "",
+    "translation": "A: Qual é o seu orçamento, mais ou menos?",
+    "tokens": [
+      "予算",
+      "は",
+      "だいたい",
+      "どれくらい",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "予算",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "だいたい",
+        "pinyin": "",
+        "meaning": "mais ou menos, aproximadamente"
+      },
+      {
+        "id": 3,
+        "word": "どれくらい",
+        "pinyin": "",
+        "meaning": "quanto, que quantidade"
+      }
+    ],
+    "id": "local-1772297684717-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 登録料と税金込みで20万ちょっと。",
+    "pinyin": "",
+    "translation": "B: Incluindo a taxa de registro e impostos, um pouco mais de 200.000 (yuan/unidade monetária).",
+    "tokens": [
+      "登録料",
+      "と",
+      "税金",
+      "込み",
+      "で",
+      "20万",
+      "ちょっと",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "登録料",
+        "pinyin": "",
+        "meaning": "taxa de registro"
+      },
+      {
+        "id": 2,
+        "word": "税金",
+        "pinyin": "",
+        "meaning": "imposto"
+      },
+      {
+        "id": 3,
+        "word": "込みで",
+        "pinyin": "",
+        "meaning": "incluindo, com"
+      },
+      {
+        "id": 4,
+        "word": "20万",
+        "pinyin": "",
+        "meaning": "200.000 (cem mil, no contexto japonês chinês)"
+      },
+      {
+        "id": 5,
+        "word": "ちょっと",
+        "pinyin": "",
+        "meaning": "um pouco (mais que)"
+      }
+    ],
+    "id": "local-1772297684717-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 上海ナンバーにする予定？それとも他省ナンバー？",
+    "pinyin": "",
+    "translation": "A: Você planeja ter uma placa de Shanghai? Ou uma placa de outra província?",
+    "tokens": [
+      "上海",
+      "ナンバー",
+      "に",
+      "する",
+      "予定",
+      "？",
+      "それとも",
+      "他省",
+      "ナンバー",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上海",
+        "pinyin": "",
+        "meaning": "Shanghai"
+      },
+      {
+        "id": 2,
+        "word": "ナンバー",
+        "pinyin": "",
+        "meaning": "placa (de carro)"
+      },
+      {
+        "id": 3,
+        "word": "する",
+        "pinyin": "",
+        "meaning": "fazer, tornar"
+      },
+      {
+        "id": 4,
+        "word": "予定",
+        "pinyin": "",
+        "meaning": "plano, intenção"
+      },
+      {
+        "id": 5,
+        "word": "それとも",
+        "pinyin": "",
+        "meaning": "ou, ou então"
+      },
+      {
+        "id": 6,
+        "word": "他省",
+        "pinyin": "",
+        "meaning": "outra província"
+      }
+    ],
+    "id": "local-1772297684717-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 他省ナンバーだよ。週末に使う予定なんだ。普段は会社のバスで通勤してるから、すごく便利なんだ。",
+    "pinyin": "",
+    "translation": "B: É uma placa de outra província. Eu planejo usá-lo nos fins de semana. Nos dias de semana, eu viajo para o trabalho de ônibus da empresa, então é muito conveniente.",
+    "tokens": [
+      "他省",
+      "ナンバー",
+      "だよ",
+      "。",
+      "週末",
+      "に",
+      "使う",
+      "予定",
+      "なんだ",
+      "。",
+      "普段",
+      "は",
+      "会社",
+      "の",
+      "バス",
+      "で",
+      "通勤",
+      "してる",
+      "から",
+      "、",
+      "すごく",
+      "便利",
+      "なんだ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "他省",
+        "pinyin": "",
+        "meaning": "outra província"
+      },
+      {
+        "id": 2,
+        "word": "ナンバー",
+        "pinyin": "",
+        "meaning": "placa (de carro)"
+      },
+      {
+        "id": 3,
+        "word": "～だよ",
+        "pinyin": "",
+        "meaning": "partícula de afirmação (informal)"
+      },
+      {
+        "id": 4,
+        "word": "週末",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 5,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 6,
+        "word": "予定",
+        "pinyin": "",
+        "meaning": "plano, intenção"
+      },
+      {
+        "id": 7,
+        "word": "～なんだ",
+        "pinyin": "",
+        "meaning": "partícula explicativa"
+      },
+      {
+        "id": 8,
+        "word": "普段",
+        "pinyin": "",
+        "meaning": "normalmente, geralmente"
+      },
+      {
+        "id": 9,
+        "word": "会社",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 10,
+        "word": "バス",
+        "pinyin": "",
+        "meaning": "ônibus"
+      },
+      {
+        "id": 11,
+        "word": "通勤する",
+        "pinyin": "",
+        "meaning": "ir para o trabalho"
+      },
+      {
+        "id": 12,
+        "word": "～してる",
+        "pinyin": "",
+        "meaning": "forma contínua de fazer"
+      },
+      {
+        "id": 13,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "porque, já que"
+      },
+      {
+        "id": 14,
+        "word": "すごく",
+        "pinyin": "",
+        "meaning": "muito (advérbio)"
+      },
+      {
+        "id": 15,
+        "word": "便利",
+        "pinyin": "",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772297684717-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: どんな車が好き？",
+    "pinyin": "",
+    "translation": "A: Que tipo de carro você gosta?",
+    "tokens": [
+      "どんな",
+      "車",
+      "が",
+      "好き",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どんな",
+        "pinyin": "",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "車",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 3,
+        "word": "好き",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772297684717-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: セダンだよ。一番広いからね。",
+    "pinyin": "",
+    "translation": "B: É um sedã. Porque é o mais espaçoso.",
+    "tokens": [
+      "セダン",
+      "だよ",
+      "。",
+      "一番",
+      "広い",
+      "から",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "セダン",
+        "pinyin": "",
+        "meaning": "sedã"
+      },
+      {
+        "id": 2,
+        "word": "～だよ",
+        "pinyin": "",
+        "meaning": "partícula de afirmação (informal)"
+      },
+      {
+        "id": 3,
+        "word": "一番",
+        "pinyin": "",
+        "meaning": "o mais, número um"
+      },
+      {
+        "id": 4,
+        "word": "広い",
+        "pinyin": "",
+        "meaning": "espaçoso, largo"
+      },
+      {
+        "id": 5,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "porque, já que"
+      },
+      {
+        "id": 6,
+        "word": "ね",
+        "pinyin": "",
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772297684717-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ビュイックリーガル、トヨタカムリ、フォルクスワーゲンマゴタンを見てみて。これらの車はかなり良いよ。",
+    "pinyin": "",
+    "translation": "A: Dê uma olhada no Buick Regal, Toyota Camry, Volkswagen Magotan. Esses carros são muito bons.",
+    "tokens": [
+      "ビュイックリーガル",
+      "、",
+      "トヨタカムリ",
+      "、",
+      "フォルクスワーゲンマゴタン",
+      "を",
+      "見てみて",
+      "。",
+      "これら",
+      "の",
+      "車",
+      "は",
+      "かなり",
+      "良い",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ビュイックリーガル",
+        "pinyin": "",
+        "meaning": "Buick Regal"
+      },
+      {
+        "id": 2,
+        "word": "トヨタカムリ",
+        "pinyin": "",
+        "meaning": "Toyota Camry"
+      },
+      {
+        "id": 3,
+        "word": "フォルクスワーゲンマゴタン",
+        "pinyin": "",
+        "meaning": "Volkswagen Magotan"
+      },
+      {
+        "id": 4,
+        "word": "見てみて",
+        "pinyin": "",
+        "meaning": "tente ver, dê uma olhada (forma てみる)"
+      },
+      {
+        "id": 5,
+        "word": "これら",
+        "pinyin": "",
+        "meaning": "esses (plural de これ)"
+      },
+      {
+        "id": 6,
+        "word": "車",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 7,
+        "word": "かなり",
+        "pinyin": "",
+        "meaning": "bastante, muito"
+      },
+      {
+        "id": 8,
+        "word": "良い",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 9,
+        "word": "よ",
+        "pinyin": "",
+        "meaning": "partícula de ênfase/informação nova"
+      }
+    ],
+    "id": "local-1772297684717-8",
+    "language": "Japonês"
+  }
+]

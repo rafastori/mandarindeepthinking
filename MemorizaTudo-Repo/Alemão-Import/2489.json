@@ -1,0 +1,568 @@
+[
+  {
+    "chinese": "A: Ich bin so wütend. Den ganzen Tag sagst du, dies oder das an mir sei nicht gut.",
+    "pinyin": null,
+    "translation": "A: Estou tão zangado(a). O dia inteiro você diz que isso ou aquilo em mim não é bom.",
+    "tokens": [
+      "Ich",
+      "bin",
+      "so",
+      "wütend",
+      ".",
+      "Den",
+      "ganzen",
+      "Tag",
+      "sagst",
+      "du",
+      ",",
+      "dies",
+      "oder",
+      "das",
+      "an",
+      "mir",
+      "sei",
+      "nicht",
+      "gut",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wütend",
+        "pinyin": "",
+        "meaning": "zangado(a), furioso(a)"
+      },
+      {
+        "id": 2,
+        "word": "der ganze Tag",
+        "pinyin": "",
+        "meaning": "o dia inteiro"
+      },
+      {
+        "id": 3,
+        "word": "sagen",
+        "pinyin": "",
+        "meaning": "dizer, falar"
+      },
+      {
+        "id": 4,
+        "word": "dies",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 5,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "aquilo"
+      },
+      {
+        "id": 6,
+        "word": "an mir",
+        "pinyin": "",
+        "meaning": "em mim, sobre mim"
+      },
+      {
+        "id": 7,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772301428409-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Gibt es wirklich Frauen wie dich? Wenn ich mit Freunden essen gehe, musst du sogar detaillierte Nachfragen stellen.",
+    "pinyin": null,
+    "translation": "A: Existem realmente mulheres como você? Quando eu saio para comer com amigos, você precisa até fazer perguntas detalhadas.",
+    "tokens": [
+      "Gibt",
+      "es",
+      "wirklich",
+      "Frauen",
+      "wie",
+      "dich",
+      "?",
+      "Wenn",
+      "ich",
+      "mit",
+      "Freunden",
+      "essen",
+      "gehe",
+      ",",
+      "musst",
+      "du",
+      "sogar",
+      "detaillierte",
+      "Nachfragen",
+      "stellen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "es gibt",
+        "pinyin": "",
+        "meaning": "há, existem"
+      },
+      {
+        "id": 2,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "Frauen",
+        "pinyin": "",
+        "meaning": "mulheres"
+      },
+      {
+        "id": 4,
+        "word": "wie",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 5,
+        "word": "Freunden",
+        "pinyin": "",
+        "meaning": "amigos (dative)"
+      },
+      {
+        "id": 6,
+        "word": "essen gehen",
+        "pinyin": "",
+        "meaning": "sair para comer"
+      },
+      {
+        "id": 7,
+        "word": "sogar",
+        "pinyin": "",
+        "meaning": "até, inclusive"
+      },
+      {
+        "id": 8,
+        "word": "detaillierte",
+        "pinyin": "",
+        "meaning": "detalhado(a)"
+      },
+      {
+        "id": 9,
+        "word": "Nachfragen stellen",
+        "pinyin": "",
+        "meaning": "fazer perguntas adicionais/detalhadas"
+      }
+    ],
+    "id": "local-1772301428409-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Jede Nachricht, die die Sekretärin mir schickt, musst du prüfen. Bist du vernünftig?!",
+    "pinyin": null,
+    "translation": "A: Toda mensagem que a secretária me manda, você tem que verificar. Você é sensato(a)?!",
+    "tokens": [
+      "Jede",
+      "Nachricht",
+      ",",
+      "die",
+      "die",
+      "Sekretärin",
+      "mir",
+      "schickt",
+      ",",
+      "musst",
+      "du",
+      "prüfen",
+      ".",
+      "Bist",
+      "du",
+      "vernünftig",
+      "?!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jede",
+        "pinyin": "",
+        "meaning": "cada, toda"
+      },
+      {
+        "id": 2,
+        "word": "Nachricht",
+        "pinyin": "",
+        "meaning": "mensagem"
+      },
+      {
+        "id": 3,
+        "word": "Sekretärin",
+        "pinyin": "",
+        "meaning": "secretária"
+      },
+      {
+        "id": 4,
+        "word": "schicken",
+        "pinyin": "",
+        "meaning": "enviar, mandar"
+      },
+      {
+        "id": 5,
+        "word": "prüfen",
+        "pinyin": "",
+        "meaning": "verificar, examinar"
+      },
+      {
+        "id": 6,
+        "word": "vernünftig",
+        "pinyin": "",
+        "meaning": "sensato(a), razoável"
+      }
+    ],
+    "id": "local-1772301428409-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Letztes Mal, als ich meinen Geburtstag gefeiert habe, hast du ohne mich zu fragen so einen teuren Kuchen gekauft. Das geht wirklich zu weit!",
+    "pinyin": null,
+    "translation": "A: Da última vez, quando eu comemorei meu aniversário, você comprou um bolo tão caro sem me perguntar. Isso realmente vai longe demais!",
+    "tokens": [
+      "Letztes",
+      "Mal",
+      ",",
+      "als",
+      "ich",
+      "meinen",
+      "Geburtstag",
+      "gefeiert",
+      "habe",
+      ",",
+      "hast",
+      "du",
+      "ohne",
+      "mich",
+      "zu",
+      "fragen",
+      "so",
+      "einen",
+      "teuren",
+      "Kuchen",
+      "gekauft",
+      ".",
+      "Das",
+      "geht",
+      "wirklich",
+      "zu",
+      "weit",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "letztes Mal",
+        "pinyin": "",
+        "meaning": "da última vez"
+      },
+      {
+        "id": 2,
+        "word": "als",
+        "pinyin": "",
+        "meaning": "quando (para eventos passados)"
+      },
+      {
+        "id": 3,
+        "word": "Geburtstag",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "feiern",
+        "pinyin": "",
+        "meaning": "celebrar, comemorar"
+      },
+      {
+        "id": 5,
+        "word": "ohne...zu fragen",
+        "pinyin": "",
+        "meaning": "sem perguntar"
+      },
+      {
+        "id": 6,
+        "word": "teuer",
+        "pinyin": "",
+        "meaning": "caro"
+      },
+      {
+        "id": 7,
+        "word": "Kuchen",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 8,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 9,
+        "word": "zu weit gehen",
+        "pinyin": "",
+        "meaning": "ir longe demais"
+      }
+    ],
+    "id": "local-1772301428409-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sogar wenn ich ein Fußballspiel schaue, musst du um die Fernbedienung kämpfen. Ich halte es nicht mehr aus!",
+    "pinyin": null,
+    "translation": "A: Mesmo quando eu assisto a um jogo de futebol, você tem que brigar pelo controle remoto. Eu não aguento mais!",
+    "tokens": [
+      "Sogar",
+      "wenn",
+      "ich",
+      "ein",
+      "Fußballspiel",
+      "schaue",
+      ",",
+      "musst",
+      "du",
+      "um",
+      "die",
+      "Fernbedienung",
+      "kämpfen",
+      ".",
+      "Ich",
+      "halte",
+      "es",
+      "nicht",
+      "mehr",
+      "aus",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sogar",
+        "pinyin": "",
+        "meaning": "até, inclusive"
+      },
+      {
+        "id": 2,
+        "word": "Fußballspiel",
+        "pinyin": "",
+        "meaning": "jogo de futebol"
+      },
+      {
+        "id": 3,
+        "word": "schauen",
+        "pinyin": "",
+        "meaning": "assistir, ver"
+      },
+      {
+        "id": 4,
+        "word": "um etwas kämpfen",
+        "pinyin": "",
+        "meaning": "lutar por algo, brigar por algo"
+      },
+      {
+        "id": 5,
+        "word": "Fernbedienung",
+        "pinyin": "",
+        "meaning": "controle remoto"
+      },
+      {
+        "id": 6,
+        "word": "aushalten",
+        "pinyin": "",
+        "meaning": "aguentar, suportar"
+      },
+      {
+        "id": 7,
+        "word": "nicht mehr",
+        "pinyin": "",
+        "meaning": "não mais"
+      }
+    ],
+    "id": "local-1772301428409-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wer hat überhaupt das Sagen in diesem Haus?!",
+    "pinyin": null,
+    "translation": "A: Quem, afinal, manda nesta casa?!",
+    "tokens": [
+      "Wer",
+      "hat",
+      "überhaupt",
+      "das",
+      "Sagen",
+      "in",
+      "diesem",
+      "Haus",
+      "?!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wer",
+        "pinyin": "",
+        "meaning": "quem"
+      },
+      {
+        "id": 2,
+        "word": "überhaupt",
+        "pinyin": "",
+        "meaning": "afinal, de qualquer forma"
+      },
+      {
+        "id": 3,
+        "word": "das Sagen haben",
+        "pinyin": "",
+        "meaning": "ter a palavra final, mandar"
+      },
+      {
+        "id": 4,
+        "word": "Haus",
+        "pinyin": "",
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772301428409-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was machst du da? Sprichst du mit dir selbst im Spiegel? Du hast das Geschirr immer noch nicht gespült!",
+    "pinyin": null,
+    "translation": "B: O que você está fazendo aí? Você está falando sozinho(a) no espelho? Você ainda não lavou a louça!",
+    "tokens": [
+      "Was",
+      "machst",
+      "du",
+      "da",
+      "?",
+      "Sprichst",
+      "du",
+      "mit",
+      "dir",
+      "selbst",
+      "im",
+      "Spiegel",
+      "?",
+      "Du",
+      "hast",
+      "das",
+      "Geschirr",
+      "immer",
+      "noch",
+      "nicht",
+      "gespült",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "machen",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "da",
+        "pinyin": "",
+        "meaning": "aí, lá"
+      },
+      {
+        "id": 4,
+        "word": "sprechen",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 5,
+        "word": "mit sich selbst sprechen",
+        "pinyin": "",
+        "meaning": "falar consigo mesmo(a)"
+      },
+      {
+        "id": 6,
+        "word": "Spiegel",
+        "pinyin": "",
+        "meaning": "espelho"
+      },
+      {
+        "id": 7,
+        "word": "Geschirr",
+        "pinyin": "",
+        "meaning": "louça"
+      },
+      {
+        "id": 8,
+        "word": "immer noch nicht",
+        "pinyin": "",
+        "meaning": "ainda não"
+      },
+      {
+        "id": 9,
+        "word": "spülen",
+        "pinyin": "",
+        "meaning": "lavar (louça)"
+      }
+    ],
+    "id": "local-1772301428409-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Oh, oh. Ok. Ich gehe sofort!",
+    "pinyin": null,
+    "translation": "A: Ah, ah. Ok. Eu vou imediatamente!",
+    "tokens": [
+      "Oh",
+      ",",
+      "oh",
+      ".",
+      "Ok",
+      ".",
+      "Ich",
+      "gehe",
+      "sofort",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "oh",
+        "pinyin": "",
+        "meaning": "oh"
+      },
+      {
+        "id": 2,
+        "word": "ok",
+        "pinyin": "",
+        "meaning": "ok"
+      },
+      {
+        "id": 3,
+        "word": "gehen",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 4,
+        "word": "sofort",
+        "pinyin": "",
+        "meaning": "imediatamente, já"
+      }
+    ],
+    "id": "local-1772301428409-7",
+    "language": "Alemão"
+  }
+]

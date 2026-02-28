@@ -1,0 +1,516 @@
+[
+  {
+    "chinese": "A: 我们这周末去商店给宝宝买一个汽车安全座椅吧。",
+    "pinyin": "A: Wǒmen zhè zhōumò qù shāngdiàn gěi bǎobǎo mǎi yīgè qìchē ānquán zuòyǐ ba.",
+    "translation": "A: Nós vamos à loja neste fim de semana para comprar uma cadeirinha de segurança para o bebê, certo?",
+    "tokens": [
+      "我们",
+      "这",
+      "周末",
+      "去",
+      "商店",
+      "给",
+      "宝宝",
+      "买",
+      "一个",
+      "汽车",
+      "安全",
+      "座椅",
+      "吧"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "这周末",
+        "pinyin": "zhè zhōumò",
+        "meaning": "este fim de semana"
+      },
+      {
+        "id": 3,
+        "word": "商店",
+        "pinyin": "shāngdiàn",
+        "meaning": "loja"
+      },
+      {
+        "id": 4,
+        "word": "宝宝",
+        "pinyin": "bǎobǎo",
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "汽车安全座椅",
+        "pinyin": "qìchē ānquán zuòyǐ",
+        "meaning": "cadeirinha de segurança para carro"
+      }
+    ],
+    "id": "local-1772295087993-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的。但是我看到很多人都不买。让孩子坐在后座，大人抱着就好。",
+    "pinyin": "B: Hǎo de. Dànshì wǒ kàndào hěnduō rén dōu bù mǎi. Ràng háizi zuò zài hòuzuò, dàrén bào zhe jiù hǎo.",
+    "translation": "B: Ok. Mas eu vejo que muitas pessoas não compram. Deixam a criança sentar no banco de trás, e o adulto a segura no colo, está bom.",
+    "tokens": [
+      "好的",
+      "但是",
+      "我",
+      "看到",
+      "很多",
+      "人",
+      "都",
+      "不",
+      "买",
+      "让",
+      "孩子",
+      "坐",
+      "在",
+      "后座",
+      "大人",
+      "抱",
+      "着",
+      "就",
+      "好"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "但是",
+        "pinyin": "dànshì",
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "很多人",
+        "pinyin": "hěnduō rén",
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 4,
+        "word": "不买",
+        "pinyin": "bù mǎi",
+        "meaning": "não comprar"
+      },
+      {
+        "id": 5,
+        "word": "孩子",
+        "pinyin": "háizi",
+        "meaning": "criança"
+      },
+      {
+        "id": 6,
+        "word": "后座",
+        "pinyin": "hòuzuò",
+        "meaning": "banco de trás"
+      },
+      {
+        "id": 7,
+        "word": "抱着",
+        "pinyin": "bàozhe",
+        "meaning": "segurando no colo, abraçando"
+      }
+    ],
+    "id": "local-1772295087993-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我们必须买一个！在很多国家，孩子不坐汽车安全座椅是违法的。",
+    "pinyin": "A: Wǒmen bìxū mǎi yīgè! Zài hěnduō guójiā, háizi bù zuò qìchē ānquán zuòyǐ shì wéifǎ de.",
+    "translation": "A: Nós devemos comprar um! Em muitos países, é ilegal para crianças não usarem cadeirinha de segurança.",
+    "tokens": [
+      "我们",
+      "必须",
+      "买",
+      "一个",
+      "在",
+      "很多",
+      "国家",
+      "孩子",
+      "不",
+      "坐",
+      "汽车",
+      "安全",
+      "座椅",
+      "是",
+      "违法",
+      "的"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "必须",
+        "pinyin": "bìxū",
+        "meaning": "deve, é preciso"
+      },
+      {
+        "id": 2,
+        "word": "国家",
+        "pinyin": "guójiā",
+        "meaning": "país"
+      },
+      {
+        "id": 3,
+        "word": "违法",
+        "pinyin": "wéifǎ",
+        "meaning": "ilegal, contra a lei"
+      },
+      {
+        "id": 4,
+        "word": "汽车安全座椅",
+        "pinyin": "qìchē ānquán zuòyǐ",
+        "meaning": "cadeirinha de segurança para carro"
+      }
+    ],
+    "id": "local-1772295087993-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的，好的。如果你想买，那我们就买。你决定好要买什么牌子了吗？",
+    "pinyin": "B: Hǎo de, hǎo de. Rúguǒ nǐ xiǎng mǎi, nà wǒmen jiù mǎi. Nǐ juédìng hǎo yào mǎi shénme páizi le ma?",
+    "translation": "B: Ok, ok. Se você quer comprar, então nós compraremos. Você já decidiu qual marca comprar?",
+    "tokens": [
+      "好的",
+      "好的",
+      "如果",
+      "你",
+      "想",
+      "买",
+      "那",
+      "我们",
+      "就",
+      "买",
+      "你",
+      "决定",
+      "好",
+      "要",
+      "买",
+      "什么",
+      "牌子",
+      "了",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se, caso"
+      },
+      {
+        "id": 2,
+        "word": "决定",
+        "pinyin": "juédìng",
+        "meaning": "decidir"
+      },
+      {
+        "id": 3,
+        "word": "牌子",
+        "pinyin": "páizi",
+        "meaning": "marca"
+      }
+    ],
+    "id": "local-1772295087993-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 当然是进口的啦！要符合欧洲标准的。",
+    "pinyin": "A: Dāngrán shì jìnkǒu de la! Yào fúhé Ōuzhōu biāozhǔn de.",
+    "translation": "A: Claro que importado! Tem que estar de acordo com os padrões europeus.",
+    "tokens": [
+      "当然",
+      "是",
+      "进口",
+      "的",
+      "啦",
+      "要",
+      "符合",
+      "欧洲",
+      "标准",
+      "的"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro, certamente"
+      },
+      {
+        "id": 2,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      },
+      {
+        "id": 3,
+        "word": "符合",
+        "pinyin": "fúhé",
+        "meaning": "estar de acordo, satisfazer"
+      },
+      {
+        "id": 4,
+        "word": "欧洲标准",
+        "pinyin": "Ōuzhōu biāozhǔn",
+        "meaning": "padrão europeu"
+      }
+    ],
+    "id": "local-1772295087993-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那肯定不便宜。",
+    "pinyin": "B: Nà kěndìng bù piányi.",
+    "translation": "B: Então com certeza não é barato.",
+    "tokens": [
+      "那",
+      "肯定",
+      "不",
+      "便宜"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "肯定",
+        "pinyin": "kěndìng",
+        "meaning": "com certeza, certamente"
+      },
+      {
+        "id": 2,
+        "word": "不便宜",
+        "pinyin": "bù piányi",
+        "meaning": "não é barato, é caro"
+      }
+    ],
+    "id": "local-1772295087993-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 即使不便宜，为了孩子的安全我们也应该买。",
+    "pinyin": "A: Jíshǐ bù piányi, wèile háizi de ānquán wǒmen yě yīnggāi mǎi.",
+    "translation": "A: Mesmo que não seja barato, pela segurança da criança, nós ainda devemos comprar.",
+    "tokens": [
+      "即使",
+      "不",
+      "便宜",
+      "为了",
+      "孩子",
+      "的",
+      "安全",
+      "我们",
+      "也",
+      "应该",
+      "买"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "即使",
+        "pinyin": "jíshǐ",
+        "meaning": "mesmo que, ainda que"
+      },
+      {
+        "id": 2,
+        "word": "为了",
+        "pinyin": "wèile",
+        "meaning": "para, por causa de"
+      },
+      {
+        "id": 3,
+        "word": "安全",
+        "pinyin": "ānquán",
+        "meaning": "segurança"
+      },
+      {
+        "id": 4,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "dever, deveria"
+      }
+    ],
+    "id": "local-1772295087993-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 万一我们买回来，她不肯坐怎么办？我同事说他孩子一坐进去就哭。",
+    "pinyin": "B: Wànyī wǒmen mǎi huílái, tā bù kěn zuò zěnme bàn? Wǒ tóngshì shuō tā háizi yī zuò jìnqù jiù kū.",
+    "translation": "B: E se comprarmos e ela não quiser sentar, o que fazemos? Meu colega disse que o filho dele chora assim que senta.",
+    "tokens": [
+      "万一",
+      "我们",
+      "买",
+      "回来",
+      "她",
+      "不",
+      "肯",
+      "坐",
+      "怎么",
+      "办",
+      "我",
+      "同事",
+      "说",
+      "他",
+      "孩子",
+      "一",
+      "坐",
+      "进去",
+      "就",
+      "哭"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "万一",
+        "pinyin": "wànyī",
+        "meaning": "e se, caso aconteça, por acaso"
+      },
+      {
+        "id": 2,
+        "word": "不肯",
+        "pinyin": "bù kěn",
+        "meaning": "não querer, não estar disposto a"
+      },
+      {
+        "id": 3,
+        "word": "怎么办",
+        "pinyin": "zěnme bàn",
+        "meaning": "o que fazer"
+      },
+      {
+        "id": 4,
+        "word": "同事",
+        "pinyin": "tóngshì",
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 5,
+        "word": "一...就...",
+        "pinyin": "yī... jiù...",
+        "meaning": "assim que... então..."
+      },
+      {
+        "id": 6,
+        "word": "哭",
+        "pinyin": "kū",
+        "meaning": "chorar"
+      }
+    ],
+    "id": "local-1772295087993-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 所以我们要早点买。如果她从小就坐，就更容易习惯了。",
+    "pinyin": "A: Suǒyǐ wǒmen yào zǎodiǎn mǎi. Rúguǒ tā cóngxiǎo jiù zuò, jiù gèng róngyì xíguàn le.",
+    "translation": "A: Então nós devemos comprar mais cedo. Se ela sentar desde pequena, será mais fácil se acostumar.",
+    "tokens": [
+      "所以",
+      "我们",
+      "要",
+      "早点",
+      "买",
+      "如果",
+      "她",
+      "从小",
+      "就",
+      "坐",
+      "就",
+      "更",
+      "容易",
+      "习惯",
+      "了"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "então, portanto"
+      },
+      {
+        "id": 2,
+        "word": "早点",
+        "pinyin": "zǎodiǎn",
+        "meaning": "mais cedo"
+      },
+      {
+        "id": 3,
+        "word": "从小",
+        "pinyin": "cóngxiǎo",
+        "meaning": "desde pequeno(a)"
+      },
+      {
+        "id": 4,
+        "word": "更容易",
+        "pinyin": "gèng róngyì",
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 5,
+        "word": "习惯",
+        "pinyin": "xíguàn",
+        "meaning": "acostumar, hábito"
+      }
+    ],
+    "id": "local-1772295087993-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的。你说什么都行，亲爱的。都是为了我们的孩子！",
+    "pinyin": "B: Hǎo de. Nǐ shuō shénme dōu xíng, qīn'ài de. Dōu shì wèile wǒmen de háizi!",
+    "translation": "B: Ok. O que você disser está bom, querida. É tudo pelos nossos filhos!",
+    "tokens": [
+      "好的",
+      "你",
+      "说",
+      "什么",
+      "都",
+      "行",
+      "亲爱的",
+      "都",
+      "是",
+      "为了",
+      "我们",
+      "的",
+      "孩子"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你说什么都行",
+        "pinyin": "nǐ shuō shénme dōu xíng",
+        "meaning": "o que você disser está bom/certo"
+      },
+      {
+        "id": 2,
+        "word": "亲爱的",
+        "pinyin": "qīn'ài de",
+        "meaning": "querida, caro(a)"
+      },
+      {
+        "id": 3,
+        "word": "为了",
+        "pinyin": "wèile",
+        "meaning": "para, por causa de"
+      }
+    ],
+    "id": "local-1772295087993-9",
+    "language": "Chinês"
+  }
+]

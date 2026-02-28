@@ -1,0 +1,734 @@
+[
+  {
+    "chinese": "A: 릴리, 퇴근하고 같이 쇼핑몰에 가서 구경할래?",
+    "pinyin": "",
+    "translation": "A: Lily, quer ir ver o shopping depois do trabalho?",
+    "tokens": [
+      "릴리",
+      "퇴근하고",
+      "같이",
+      "쇼핑몰에",
+      "가서",
+      "구경할래?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "릴리",
+        "pinyin": "rilli",
+        "meaning": "Lily (nome)"
+      },
+      {
+        "id": 2,
+        "word": "퇴근하다",
+        "pinyin": "toegeunhada",
+        "meaning": "sair do trabalho"
+      },
+      {
+        "id": 3,
+        "word": "같이",
+        "pinyin": "gachi",
+        "meaning": "junto, com"
+      },
+      {
+        "id": 4,
+        "word": "쇼핑몰",
+        "pinyin": "syopingmol",
+        "meaning": "shopping center"
+      },
+      {
+        "id": 5,
+        "word": "가다",
+        "pinyin": "gada",
+        "meaning": "ir"
+      },
+      {
+        "id": 6,
+        "word": "구경하다",
+        "pinyin": "gugyeonghada",
+        "meaning": "ver, passear, observar"
+      }
+    ],
+    "id": "local-1772299559189-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 물론이지. 뭐 사고 싶은데?",
+    "pinyin": "",
+    "translation": "B: Claro. O que você quer comprar?",
+    "tokens": [
+      "물론이지.",
+      "뭐",
+      "사고",
+      "싶은데?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "물론이다",
+        "pinyin": "mullonida",
+        "meaning": "ser claro, é claro"
+      },
+      {
+        "id": 2,
+        "word": "뭐",
+        "pinyin": "mwo",
+        "meaning": "o que (forma abreviada de 무엇)"
+      },
+      {
+        "id": 3,
+        "word": "사다",
+        "pinyin": "sada",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "~고 싶다",
+        "pinyin": "~go sipda",
+        "meaning": "querer (fazer algo)"
+      }
+    ],
+    "id": "local-1772299559189-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 내 절친이 결혼해. 결혼 선물 좀 고르고 싶어.",
+    "pinyin": "",
+    "translation": "A: Minha melhor amiga vai casar. Quero escolher um presente de casamento.",
+    "tokens": [
+      "내",
+      "절친이",
+      "결혼해.",
+      "결혼",
+      "선물",
+      "좀",
+      "고르고",
+      "싶어."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "내",
+        "pinyin": "nae",
+        "meaning": "meu/minha (informal de 나의)"
+      },
+      {
+        "id": 2,
+        "word": "절친",
+        "pinyin": "jeolchin",
+        "meaning": "melhor amigo/amiga (abreviação de 절친한 친구)"
+      },
+      {
+        "id": 3,
+        "word": "결혼하다",
+        "pinyin": "gyeoreonhada",
+        "meaning": "casar"
+      },
+      {
+        "id": 4,
+        "word": "결혼",
+        "pinyin": "gyeoreon",
+        "meaning": "casamento"
+      },
+      {
+        "id": 5,
+        "word": "선물",
+        "pinyin": "seonmul",
+        "meaning": "presente"
+      },
+      {
+        "id": 6,
+        "word": "좀",
+        "pinyin": "jom",
+        "meaning": "um pouco, por favor"
+      },
+      {
+        "id": 7,
+        "word": "고르다",
+        "pinyin": "goreuda",
+        "meaning": "escolher"
+      }
+    ],
+    "id": "local-1772299559189-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그냥 돈을 넣은 빨간 봉투를 주는 건 어때?",
+    "pinyin": "",
+    "translation": "B: Que tal dar apenas um envelope vermelho com dinheiro dentro?",
+    "tokens": [
+      "그냥",
+      "돈을",
+      "넣은",
+      "빨간",
+      "봉투를",
+      "주는",
+      "건",
+      "어때?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그냥",
+        "pinyin": "geunyang",
+        "meaning": "apenas, só, sem motivo"
+      },
+      {
+        "id": 2,
+        "word": "돈",
+        "pinyin": "don",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "넣다",
+        "pinyin": "neota",
+        "meaning": "colocar, inserir"
+      },
+      {
+        "id": 4,
+        "word": "빨갛다",
+        "pinyin": "ppalgahta",
+        "meaning": "ser vermelho"
+      },
+      {
+        "id": 5,
+        "word": "봉투",
+        "pinyin": "bongtu",
+        "meaning": "envelope"
+      },
+      {
+        "id": 6,
+        "word": "주다",
+        "pinyin": "juda",
+        "meaning": "dar"
+      },
+      {
+        "id": 7,
+        "word": "~는 것",
+        "pinyin": "~neun geot",
+        "meaning": "o ato de fazer algo"
+      },
+      {
+        "id": 8,
+        "word": "어떻다",
+        "pinyin": "eotteota",
+        "meaning": "como é, que tal"
+      }
+    ],
+    "id": "local-1772299559189-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 걘 내 가장 친한 친구야. 특별한 선물을 주고 싶어.",
+    "pinyin": "",
+    "translation": "A: Ela é minha melhor amiga. Quero dar um presente especial.",
+    "tokens": [
+      "걘",
+      "내",
+      "가장",
+      "친한",
+      "친구야.",
+      "특별한",
+      "선물을",
+      "주고",
+      "싶어."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "걘",
+        "pinyin": "gyaen",
+        "meaning": "ela é (contração de 쟤는)"
+      },
+      {
+        "id": 2,
+        "word": "내",
+        "pinyin": "nae",
+        "meaning": "meu/minha"
+      },
+      {
+        "id": 3,
+        "word": "가장",
+        "pinyin": "gajang",
+        "meaning": "o mais, o maior"
+      },
+      {
+        "id": 4,
+        "word": "친하다",
+        "pinyin": "chinada",
+        "meaning": "ser próximo, íntimo"
+      },
+      {
+        "id": 5,
+        "word": "친구",
+        "pinyin": "chingu",
+        "meaning": "amigo/amiga"
+      },
+      {
+        "id": 6,
+        "word": "특별하다",
+        "pinyin": "teukbyeolhada",
+        "meaning": "ser especial"
+      },
+      {
+        "id": 7,
+        "word": "선물",
+        "pinyin": "seonmul",
+        "meaning": "presente"
+      },
+      {
+        "id": 8,
+        "word": "주다",
+        "pinyin": "juda",
+        "meaning": "dar"
+      }
+    ],
+    "id": "local-1772299559189-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭘 살지 생각해 둔 거 있어?",
+    "pinyin": "",
+    "translation": "B: Já pensou no que vai comprar?",
+    "tokens": [
+      "뭘",
+      "살지",
+      "생각해",
+      "둔",
+      "거",
+      "있어?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뭘",
+        "pinyin": "mwol",
+        "meaning": "o que (contração de 무엇을)"
+      },
+      {
+        "id": 2,
+        "word": "사다",
+        "pinyin": "sada",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "생각하다",
+        "pinyin": "saenggakhada",
+        "meaning": "pensar"
+      },
+      {
+        "id": 4,
+        "word": "~아/어 두다",
+        "pinyin": "~a/eo duda",
+        "meaning": "fazer algo e manter o estado/resultado"
+      },
+      {
+        "id": 5,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa (contração: 거)"
+      },
+      {
+        "id": 6,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772299559189-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아직. 좋은 아이디어 있어?",
+    "pinyin": "",
+    "translation": "A: Ainda não. Tem alguma boa ideia?",
+    "tokens": [
+      "아직.",
+      "좋은",
+      "아이디어",
+      "있어?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아직",
+        "pinyin": "ajik",
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "좋다",
+        "pinyin": "jota",
+        "meaning": "ser bom"
+      },
+      {
+        "id": 3,
+        "word": "아이디어",
+        "pinyin": "aidieo",
+        "meaning": "ideia"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772299559189-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 결혼 선물로 식기류 같은 걸 주는 게 꽤 흔해.",
+    "pinyin": "",
+    "translation": "B: Dar algo como utensílios de mesa como presente de casamento é bem comum.",
+    "tokens": [
+      "결혼",
+      "선물로",
+      "식기류",
+      "같은",
+      "걸",
+      "주는",
+      "게",
+      "꽤",
+      "흔해."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "결혼",
+        "pinyin": "gyeoreon",
+        "meaning": "casamento"
+      },
+      {
+        "id": 2,
+        "word": "선물",
+        "pinyin": "seonmul",
+        "meaning": "presente"
+      },
+      {
+        "id": 3,
+        "word": "식기류",
+        "pinyin": "sikgiryu",
+        "meaning": "utensílios de mesa, louça"
+      },
+      {
+        "id": 4,
+        "word": "같다",
+        "pinyin": "gatda",
+        "meaning": "ser igual, como"
+      },
+      {
+        "id": 5,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa (contração: 걸 para 것을)"
+      },
+      {
+        "id": 6,
+        "word": "주다",
+        "pinyin": "juda",
+        "meaning": "dar"
+      },
+      {
+        "id": 7,
+        "word": "꽤",
+        "pinyin": "kkwae",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 8,
+        "word": "흔하다",
+        "pinyin": "heunhada",
+        "meaning": "ser comum"
+      }
+    ],
+    "id": "local-1772299559189-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그건 너무 평범해. 좀 더 특별한 걸 원해.",
+    "pinyin": "",
+    "translation": "A: Isso é muito comum. Quero algo mais especial.",
+    "tokens": [
+      "그건",
+      "너무",
+      "평범해.",
+      "좀",
+      "더",
+      "특별한",
+      "걸",
+      "원해."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo, isso (contração: 그건 para 그것은)"
+      },
+      {
+        "id": 2,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 3,
+        "word": "평범하다",
+        "pinyin": "pyeongbeomhada",
+        "meaning": "ser comum, ordinário"
+      },
+      {
+        "id": 4,
+        "word": "좀",
+        "pinyin": "jom",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 5,
+        "word": "더",
+        "pinyin": "deo",
+        "meaning": "mais"
+      },
+      {
+        "id": 6,
+        "word": "특별하다",
+        "pinyin": "teukbyeolhada",
+        "meaning": "ser especial"
+      },
+      {
+        "id": 7,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa (contração: 걸 para 것을)"
+      },
+      {
+        "id": 8,
+        "word": "원하다",
+        "pinyin": "wonhada",
+        "meaning": "desejar, querer"
+      }
+    ],
+    "id": "local-1772299559189-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 전통적인 걸 사. 옻칠 빗은 어때?",
+    "pinyin": "",
+    "translation": "B: Então compre algo tradicional. Que tal um pente de laca?",
+    "tokens": [
+      "그럼",
+      "전통적인",
+      "걸",
+      "사.",
+      "옻칠",
+      "빗은",
+      "어때?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então (contração de 그러면)"
+      },
+      {
+        "id": 2,
+        "word": "전통적이다",
+        "pinyin": "jeontongjeogida",
+        "meaning": "ser tradicional"
+      },
+      {
+        "id": 3,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa (contração: 걸 para 것을)"
+      },
+      {
+        "id": 4,
+        "word": "사다",
+        "pinyin": "sada",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "옻칠",
+        "pinyin": "otchil",
+        "meaning": "laca, verniz de laca"
+      },
+      {
+        "id": 6,
+        "word": "빗",
+        "pinyin": "bit",
+        "meaning": "pente"
+      },
+      {
+        "id": 7,
+        "word": "어떻다",
+        "pinyin": "eotteota",
+        "meaning": "como é, que tal"
+      }
+    ],
+    "id": "local-1772299559189-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 오? 그게 무슨 의미가 있어?",
+    "pinyin": "",
+    "translation": "A: Oh? Que significado isso tem?",
+    "tokens": [
+      "오?",
+      "그게",
+      "무슨",
+      "의미가",
+      "있어?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오",
+        "pinyin": "o",
+        "meaning": "Oh! (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo, isso (contração: 그게 para 그것이)"
+      },
+      {
+        "id": 3,
+        "word": "무슨",
+        "pinyin": "museun",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 4,
+        "word": "의미",
+        "pinyin": "uimi",
+        "meaning": "significado"
+      },
+      {
+        "id": 5,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772299559189-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 중국에서는 두 사람이 항상 함께할 거라는 의미야.",
+    "pinyin": "",
+    "translation": "B: Na China, significa que as duas pessoas estarão sempre juntas.",
+    "tokens": [
+      "중국에서는",
+      "두",
+      "사람이",
+      "항상",
+      "함께할",
+      "거라는",
+      "의미야."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국",
+        "pinyin": "jungguk",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "두",
+        "pinyin": "du",
+        "meaning": "dois (contador)"
+      },
+      {
+        "id": 3,
+        "word": "사람",
+        "pinyin": "saram",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 4,
+        "word": "항상",
+        "pinyin": "hangsang",
+        "meaning": "sempre"
+      },
+      {
+        "id": 5,
+        "word": "함께하다",
+        "pinyin": "hamkkehada",
+        "meaning": "estar junto"
+      },
+      {
+        "id": 6,
+        "word": "~ㄹ/을 것이라고 하다",
+        "pinyin": "~l/eul geosirago hada",
+        "meaning": "dizer que irá/fará (forma indireta de citação)"
+      },
+      {
+        "id": 7,
+        "word": "의미",
+        "pinyin": "uimi",
+        "meaning": "significado"
+      }
+    ],
+    "id": "local-1772299559189-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그거 좋네. 보러 가자!",
+    "pinyin": "",
+    "translation": "A: Isso é bom. Vamos ver!",
+    "tokens": [
+      "그거",
+      "좋네.",
+      "보러",
+      "가자!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo, isso (contração: 그거)"
+      },
+      {
+        "id": 2,
+        "word": "좋다",
+        "pinyin": "jota",
+        "meaning": "ser bom"
+      },
+      {
+        "id": 3,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver"
+      },
+      {
+        "id": 4,
+        "word": "가다",
+        "pinyin": "gada",
+        "meaning": "ir"
+      },
+      {
+        "id": 5,
+        "word": "~러 가다",
+        "pinyin": "~reo gada",
+        "meaning": "ir para (fazer algo)"
+      },
+      {
+        "id": 6,
+        "word": "~자",
+        "pinyin": "~ja",
+        "meaning": "vamos (sufixo de proposta)"
+      }
+    ],
+    "id": "local-1772299559189-12",
+    "language": "Coreano"
+  }
+]

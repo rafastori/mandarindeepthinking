@@ -1,0 +1,640 @@
+[
+  {
+    "chinese": "A: Xiao Wang, avez-vous regardé mon e-mail ? Y a-t-il des questions ?",
+    "pinyin": null,
+    "translation": "A: Xiao Wang, você viu meu e-mail? Há alguma pergunta?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang,",
+      "avez-vous",
+      "regardé",
+      "mon",
+      "e-mail",
+      "?",
+      "Y",
+      "a-t-il",
+      "des",
+      "questions",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "avez-vous regardé",
+        "pinyin": null,
+        "meaning": "você viu / você olhou"
+      },
+      {
+        "id": 2,
+        "word": "e-mail",
+        "pinyin": null,
+        "meaning": "e-mail"
+      },
+      {
+        "id": 3,
+        "word": "Y a-t-il",
+        "pinyin": null,
+        "meaning": "há / existem"
+      },
+      {
+        "id": 4,
+        "word": "questions",
+        "pinyin": null,
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772300976120-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'ai regardé cet e-mail. C'était très détaillé. En gros, je comprends de quoi il s'agit.",
+    "pinyin": null,
+    "translation": "B: Eu vi este e-mail. Estava muito detalhado. Basicamente, eu entendo do que se trata.",
+    "tokens": [
+      "B:",
+      "J'ai",
+      "regardé",
+      "cet",
+      "e-mail",
+      ".",
+      "C'était",
+      "très",
+      "détaillé",
+      ".",
+      "En",
+      "gros,",
+      "je",
+      "comprends",
+      "de",
+      "quoi",
+      "il",
+      "s'agit",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'ai regardé",
+        "pinyin": null,
+        "meaning": "eu vi / eu olhei"
+      },
+      {
+        "id": 2,
+        "word": "cet e-mail",
+        "pinyin": null,
+        "meaning": "este e-mail"
+      },
+      {
+        "id": 3,
+        "word": "très détaillé",
+        "pinyin": null,
+        "meaning": "muito detalhado"
+      },
+      {
+        "id": 4,
+        "word": "En gros",
+        "pinyin": null,
+        "meaning": "basicamente / em geral"
+      },
+      {
+        "id": 5,
+        "word": "je comprends",
+        "pinyin": null,
+        "meaning": "eu entendo"
+      },
+      {
+        "id": 6,
+        "word": "de quoi il s'agit",
+        "pinyin": null,
+        "meaning": "do que se trata"
+      }
+    ],
+    "id": "local-1772300976120-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'ai ici une liste des tâches de routine. Elle indique mon horaire de travail du lundi au vendredi. Vous pouvez vous y référer pour organiser votre futur travail.",
+    "pinyin": null,
+    "translation": "A: Tenho aqui uma lista de tarefas de rotina. Ela indica meu horário de trabalho de segunda a sexta-feira. Você pode se referir a ela para organizar seu futuro trabalho.",
+    "tokens": [
+      "A:",
+      "J'ai",
+      "ici",
+      "une",
+      "liste",
+      "des",
+      "tâches",
+      "de",
+      "routine",
+      ".",
+      "Elle",
+      "indique",
+      "mon",
+      "horaire",
+      "de",
+      "travail",
+      "du",
+      "lundi",
+      "au",
+      "vendredi",
+      ".",
+      "Vous",
+      "pouvez",
+      "vous",
+      "y",
+      "référer",
+      "pour",
+      "organiser",
+      "votre",
+      "futur",
+      "travail",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "une liste des tâches de routine",
+        "pinyin": null,
+        "meaning": "uma lista de tarefas de rotina"
+      },
+      {
+        "id": 2,
+        "word": "Elle indique",
+        "pinyin": null,
+        "meaning": "ela indica"
+      },
+      {
+        "id": 3,
+        "word": "mon horaire de travail",
+        "pinyin": null,
+        "meaning": "meu horário de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "du lundi au vendredi",
+        "pinyin": null,
+        "meaning": "de segunda a sexta-feira"
+      },
+      {
+        "id": 5,
+        "word": "Vous pouvez vous y référer",
+        "pinyin": null,
+        "meaning": "você pode se referir a ela"
+      },
+      {
+        "id": 6,
+        "word": "organiser",
+        "pinyin": null,
+        "meaning": "organizar"
+      },
+      {
+        "id": 7,
+        "word": "futur travail",
+        "pinyin": null,
+        "meaning": "futuro trabalho"
+      }
+    ],
+    "id": "local-1772300976120-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci. Ah oui, hier j'ai reçu un e-mail d'un client qui concerne les ventes. Comment dois-je gérer ça ?",
+    "pinyin": null,
+    "translation": "B: Obrigado. Ah sim, ontem recebi um e-mail de um cliente que diz respeito às vendas. Como devo lidar com isso?",
+    "tokens": [
+      "B:",
+      "Merci",
+      ".",
+      "Ah",
+      "oui,",
+      "hier",
+      "j'ai",
+      "reçu",
+      "un",
+      "e-mail",
+      "d'un",
+      "client",
+      "qui",
+      "concerne",
+      "les",
+      "ventes",
+      ".",
+      "Comment",
+      "dois-je",
+      "gérer",
+      "ça",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci",
+        "pinyin": null,
+        "meaning": "Obrigado(a)"
+      },
+      {
+        "id": 2,
+        "word": "hier",
+        "pinyin": null,
+        "meaning": "ontem"
+      },
+      {
+        "id": 3,
+        "word": "j'ai reçu",
+        "pinyin": null,
+        "meaning": "eu recebi"
+      },
+      {
+        "id": 4,
+        "word": "un e-mail d'un client",
+        "pinyin": null,
+        "meaning": "um e-mail de um cliente"
+      },
+      {
+        "id": 5,
+        "word": "qui concerne les ventes",
+        "pinyin": null,
+        "meaning": "que diz respeito às vendas"
+      },
+      {
+        "id": 6,
+        "word": "Comment dois-je gérer ça",
+        "pinyin": null,
+        "meaning": "Como devo lidar com isso?"
+      }
+    ],
+    "id": "local-1772300976120-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Nous ne sommes pas en charge des ventes, donc cela peut être transmis directement à Li Ming. Son adresse e-mail figure sur la liste des coordonnées des employés.",
+    "pinyin": null,
+    "translation": "A: Não somos responsáveis pelas vendas, então isso pode ser transmitido diretamente a Li Ming. O endereço de e-mail dela/dele está na lista de contatos dos funcionários.",
+    "tokens": [
+      "A:",
+      "Nous",
+      "ne",
+      "sommes",
+      "pas",
+      "en",
+      "charge",
+      "des",
+      "ventes,",
+      "donc",
+      "cela",
+      "peut",
+      "être",
+      "transmis",
+      "directement",
+      "à",
+      "Li",
+      "Ming",
+      ".",
+      "Son",
+      "adresse",
+      "e-mail",
+      "figure",
+      "sur",
+      "la",
+      "liste",
+      "des",
+      "coordonnées",
+      "des",
+      "employés",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ne sommes pas en charge des ventes",
+        "pinyin": null,
+        "meaning": "não somos responsáveis pelas vendas"
+      },
+      {
+        "id": 2,
+        "word": "cela peut être transmis",
+        "pinyin": null,
+        "meaning": "isso pode ser transmitido / encaminhado"
+      },
+      {
+        "id": 3,
+        "word": "directement à",
+        "pinyin": null,
+        "meaning": "diretamente para"
+      },
+      {
+        "id": 4,
+        "word": "adresse e-mail",
+        "pinyin": null,
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 5,
+        "word": "figure sur",
+        "pinyin": null,
+        "meaning": "consta em / está na"
+      },
+      {
+        "id": 6,
+        "word": "la liste des coordonnées des employés",
+        "pinyin": null,
+        "meaning": "a lista de contatos dos funcionários"
+      }
+    ],
+    "id": "local-1772300976120-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Et les questions techniques ?",
+    "pinyin": null,
+    "translation": "B: E as questões técnicas?",
+    "tokens": [
+      "B:",
+      "Et",
+      "les",
+      "questions",
+      "techniques",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "questions techniques",
+        "pinyin": null,
+        "meaning": "questões técnicas"
+      }
+    ],
+    "id": "local-1772300976120-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Huang Jia est en charge du service technique. C'est bon de lui transmettre.",
+    "pinyin": null,
+    "translation": "A: Huang Jia é responsável pelo departamento técnico. É bom encaminhar para ele/ela.",
+    "tokens": [
+      "A:",
+      "Huang",
+      "Jia",
+      "est",
+      "en",
+      "charge",
+      "du",
+      "service",
+      "technique",
+      ".",
+      "C'est",
+      "bon",
+      "de",
+      "lui",
+      "transmettre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "est en charge du service technique",
+        "pinyin": null,
+        "meaning": "é responsável pelo serviço técnico"
+      },
+      {
+        "id": 2,
+        "word": "C'est bon de lui transmettre",
+        "pinyin": null,
+        "meaning": "É bom encaminhar para ele/ela"
+      }
+    ],
+    "id": "local-1772300976120-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais je ne les connais pas.",
+    "pinyin": null,
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "B:",
+      "Mais",
+      "je",
+      "ne",
+      "les",
+      "connais",
+      "pas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "je ne les connais pas",
+        "pinyin": null,
+        "meaning": "eu não os/as conheço"
+      }
+    ],
+    "id": "local-1772300976120-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Ne vous inquiétez pas, j'ai déjà envoyé un e-mail aux collègues ce matin. Cet après-midi, j'organiserai une autre réunion de passation, pour vous présenter face à face à tout le monde.",
+    "pinyin": null,
+    "translation": "A: Não se preocupe, já enviei um e-mail aos colegas esta manhã. Esta tarde, organizarei outra reunião de transição, para apresentá-lo(a) pessoalmente a todos.",
+    "tokens": [
+      "A:",
+      "Ne",
+      "vous",
+      "inquiétez",
+      "pas,",
+      "j'ai",
+      "déjà",
+      "envoyé",
+      "un",
+      "e-mail",
+      "aux",
+      "collègues",
+      "ce",
+      "matin",
+      ".",
+      "Cet",
+      "après-midi,",
+      "j'organiserai",
+      "une",
+      "autre",
+      "réunion",
+      "de",
+      "passation,",
+      "pour",
+      "vous",
+      "présenter",
+      "face",
+      "à",
+      "face",
+      "à",
+      "tout",
+      "le",
+      "monde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ne vous inquiétez pas",
+        "pinyin": null,
+        "meaning": "Não se preocupe"
+      },
+      {
+        "id": 2,
+        "word": "j'ai déjà envoyé",
+        "pinyin": null,
+        "meaning": "já enviei"
+      },
+      {
+        "id": 3,
+        "word": "aux collègues",
+        "pinyin": null,
+        "meaning": "aos colegas"
+      },
+      {
+        "id": 4,
+        "word": "ce matin",
+        "pinyin": null,
+        "meaning": "esta manhã"
+      },
+      {
+        "id": 5,
+        "word": "Cet après-midi",
+        "pinyin": null,
+        "meaning": "Esta tarde"
+      },
+      {
+        "id": 6,
+        "word": "j'organiserai",
+        "pinyin": null,
+        "meaning": "eu organizarei"
+      },
+      {
+        "id": 7,
+        "word": "une réunion de passation",
+        "pinyin": null,
+        "meaning": "uma reunião de transição"
+      },
+      {
+        "id": 8,
+        "word": "vous présenter face à face",
+        "pinyin": null,
+        "meaning": "apresentá-lo(a) pessoalmente"
+      },
+      {
+        "id": 9,
+        "word": "à tout le monde",
+        "pinyin": null,
+        "meaning": "a todos"
+      }
+    ],
+    "id": "local-1772300976120-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci beaucoup.",
+    "pinyin": null,
+    "translation": "B: Muito obrigado(a).",
+    "tokens": [
+      "B:",
+      "Merci",
+      "beaucoup",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci beaucoup",
+        "pinyin": null,
+        "meaning": "Muito obrigado(a)"
+      }
+    ],
+    "id": "local-1772300976120-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est ma responsabilité. J'ai déjà mis tous les documents de passation dans le fichier \"Partagé\". Si vous avez encore des questions, vous pouvez aussi me contacter par téléphone.",
+    "pinyin": null,
+    "translation": "A: É minha responsabilidade. Já coloquei todos os documentos de transição na pasta \"Compartilhada\". Se você ainda tiver dúvidas, também pode me contatar por telefone.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "ma",
+      "responsabilité",
+      ".",
+      "J'ai",
+      "déjà",
+      "mis",
+      "tous",
+      "les",
+      "documents",
+      "de",
+      "passation",
+      "dans",
+      "le",
+      "fichier",
+      "\"Partagé\"",
+      ".",
+      "Si",
+      "vous",
+      "avez",
+      "encore",
+      "des",
+      "questions,",
+      "vous",
+      "pouvez",
+      "aussi",
+      "me",
+      "contacter",
+      "par",
+      "téléphone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est ma responsabilité",
+        "pinyin": null,
+        "meaning": "É minha responsabilidade"
+      },
+      {
+        "id": 2,
+        "word": "J'ai déjà mis",
+        "pinyin": null,
+        "meaning": "eu já coloquei"
+      },
+      {
+        "id": 3,
+        "word": "documents de passation",
+        "pinyin": null,
+        "meaning": "documentos de transição"
+      },
+      {
+        "id": 4,
+        "word": "le fichier \"Partagé\"",
+        "pinyin": null,
+        "meaning": "o arquivo \"Compartilhado\""
+      },
+      {
+        "id": 5,
+        "word": "Si vous avez encore des questions",
+        "pinyin": null,
+        "meaning": "Se você ainda tiver perguntas"
+      },
+      {
+        "id": 6,
+        "word": "vous pouvez aussi me contacter",
+        "pinyin": null,
+        "meaning": "você também pode me contatar"
+      },
+      {
+        "id": 7,
+        "word": "par téléphone",
+        "pinyin": null,
+        "meaning": "por telefone"
+      }
+    ],
+    "id": "local-1772300976120-10",
+    "language": "Francês"
+  }
+]

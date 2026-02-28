@@ -1,0 +1,210 @@
+[
+  {
+    "chinese": "Ceci est un texte de test maître.",
+    "pinyin": null,
+    "translation": "Este é um texto de teste mestre.",
+    "tokens": [
+      "Ceci",
+      "est",
+      "un",
+      "texte",
+      "de",
+      "test",
+      "maître",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ceci",
+        "pinyin": null,
+        "meaning": "Isto, Este"
+      },
+      {
+        "id": 2,
+        "word": "est",
+        "pinyin": null,
+        "meaning": "é (verbo 'ser' / 'estar')"
+      },
+      {
+        "id": 3,
+        "word": "un",
+        "pinyin": null,
+        "meaning": "um (artigo indefinido)"
+      },
+      {
+        "id": 4,
+        "word": "texte",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 5,
+        "word": "de",
+        "pinyin": null,
+        "meaning": "de"
+      },
+      {
+        "id": 6,
+        "word": "test",
+        "pinyin": null,
+        "meaning": "teste"
+      },
+      {
+        "id": 7,
+        "word": "maître",
+        "pinyin": null,
+        "meaning": "mestre"
+      }
+    ],
+    "id": "local-1772301630039-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C'est un texte très simple pour tester le pipeline de synchronisation en cascade intelligent de l'anglais vers toutes les autres langues.",
+    "pinyin": null,
+    "translation": "É um texto muito simples para testar o pipeline de sincronização em cascata inteligente do inglês para todos os outros idiomas.",
+    "tokens": [
+      "C'est",
+      "un",
+      "texte",
+      "très",
+      "simple",
+      "pour",
+      "tester",
+      "le",
+      "pipeline",
+      "de",
+      "synchronisation",
+      "en",
+      "cascade",
+      "intelligent",
+      "de",
+      "l'anglais",
+      "vers",
+      "toutes",
+      "les",
+      "autres",
+      "langues",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": null,
+        "meaning": "É (Contração de 'Ce est')"
+      },
+      {
+        "id": 2,
+        "word": "un",
+        "pinyin": null,
+        "meaning": "um (artigo indefinido)"
+      },
+      {
+        "id": 3,
+        "word": "texte",
+        "pinyin": null,
+        "meaning": "texto"
+      },
+      {
+        "id": 4,
+        "word": "très",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "simple",
+        "pinyin": null,
+        "meaning": "simples"
+      },
+      {
+        "id": 6,
+        "word": "pour",
+        "pinyin": null,
+        "meaning": "para"
+      },
+      {
+        "id": 7,
+        "word": "tester",
+        "pinyin": null,
+        "meaning": "testar"
+      },
+      {
+        "id": 8,
+        "word": "le",
+        "pinyin": null,
+        "meaning": "o (artigo definido)"
+      },
+      {
+        "id": 9,
+        "word": "pipeline",
+        "pinyin": null,
+        "meaning": "pipeline, canalização"
+      },
+      {
+        "id": 10,
+        "word": "de",
+        "pinyin": null,
+        "meaning": "de"
+      },
+      {
+        "id": 11,
+        "word": "synchronisation",
+        "pinyin": null,
+        "meaning": "sincronização"
+      },
+      {
+        "id": 12,
+        "word": "en cascade",
+        "pinyin": null,
+        "meaning": "em cascata"
+      },
+      {
+        "id": 13,
+        "word": "intelligent",
+        "pinyin": null,
+        "meaning": "inteligente"
+      },
+      {
+        "id": 14,
+        "word": "l'anglais",
+        "pinyin": null,
+        "meaning": "o inglês"
+      },
+      {
+        "id": 15,
+        "word": "vers",
+        "pinyin": null,
+        "meaning": "para, em direção a"
+      },
+      {
+        "id": 16,
+        "word": "toutes",
+        "pinyin": null,
+        "meaning": "todas"
+      },
+      {
+        "id": 17,
+        "word": "les",
+        "pinyin": null,
+        "meaning": "as (artigo definido)"
+      },
+      {
+        "id": 18,
+        "word": "autres",
+        "pinyin": null,
+        "meaning": "outras"
+      },
+      {
+        "id": 19,
+        "word": "langues",
+        "pinyin": null,
+        "meaning": "línguas, idiomas"
+      }
+    ],
+    "id": "local-1772301630039-1",
+    "language": "Francês"
+  }
+]

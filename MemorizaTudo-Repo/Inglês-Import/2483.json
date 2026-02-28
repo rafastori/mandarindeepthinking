@@ -1,0 +1,840 @@
+[
+  {
+    "chinese": "A: Xiao Wang, did you look at my email? Is there any questions?",
+    "pinyin": null,
+    "translation": "A: Xiao Wang, você viu meu e-mail? Há alguma pergunta?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang,",
+      "did",
+      "you",
+      "look",
+      "at",
+      "my",
+      "email?",
+      "Is",
+      "there",
+      "any",
+      "questions?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "look at",
+        "pinyin": null,
+        "meaning": "olhar para, ver"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": null,
+        "meaning": "e-mail"
+      },
+      {
+        "id": 3,
+        "word": "questions",
+        "pinyin": null,
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772294084864-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I looked at that email.",
+    "pinyin": null,
+    "translation": "B: Eu vi aquele e-mail.",
+    "tokens": [
+      "B:",
+      "I",
+      "looked",
+      "at",
+      "that",
+      "email."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "looked at",
+        "pinyin": null,
+        "meaning": "olhei para, vi"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": null,
+        "meaning": "e-mail"
+      }
+    ],
+    "id": "local-1772294084864-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It was very detailed.",
+    "pinyin": null,
+    "translation": "Ele era muito detalhado.",
+    "tokens": [
+      "It",
+      "was",
+      "very",
+      "detailed."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "detailed",
+        "pinyin": null,
+        "meaning": "detalhado"
+      }
+    ],
+    "id": "local-1772294084864-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Basically I understand what the work is about.",
+    "pinyin": null,
+    "translation": "Basicamente eu entendo sobre o que é o trabalho.",
+    "tokens": [
+      "Basically",
+      "I",
+      "understand",
+      "what",
+      "the",
+      "work",
+      "is",
+      "about."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "basically",
+        "pinyin": null,
+        "meaning": "basicamente"
+      },
+      {
+        "id": 2,
+        "word": "understand",
+        "pinyin": null,
+        "meaning": "entender"
+      },
+      {
+        "id": 3,
+        "word": "work",
+        "pinyin": null,
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772294084864-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I have a list of the routine duties here.",
+    "pinyin": null,
+    "translation": "A: Eu tenho uma lista das tarefas rotineiras aqui.",
+    "tokens": [
+      "A:",
+      "I",
+      "have",
+      "a",
+      "list",
+      "of",
+      "the",
+      "routine",
+      "duties",
+      "here."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "list",
+        "pinyin": null,
+        "meaning": "lista"
+      },
+      {
+        "id": 2,
+        "word": "routine",
+        "pinyin": null,
+        "meaning": "rotineiro, rotina"
+      },
+      {
+        "id": 3,
+        "word": "duties",
+        "pinyin": null,
+        "meaning": "tarefas, deveres"
+      }
+    ],
+    "id": "local-1772294084864-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It lists my work schedule for Monday to Friday.",
+    "pinyin": null,
+    "translation": "Ele lista meu horário de trabalho de segunda a sexta-feira.",
+    "tokens": [
+      "It",
+      "lists",
+      "my",
+      "work",
+      "schedule",
+      "for",
+      "Monday",
+      "to",
+      "Friday."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lists",
+        "pinyin": null,
+        "meaning": "lista (verbo)"
+      },
+      {
+        "id": 2,
+        "word": "work schedule",
+        "pinyin": null,
+        "meaning": "horário de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "Monday",
+        "pinyin": null,
+        "meaning": "segunda-feira"
+      },
+      {
+        "id": 4,
+        "word": "Friday",
+        "pinyin": null,
+        "meaning": "sexta-feira"
+      }
+    ],
+    "id": "local-1772294084864-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You can refer to this to arrange your future work.",
+    "pinyin": null,
+    "translation": "Você pode consultar isso para organizar seu trabalho futuro.",
+    "tokens": [
+      "You",
+      "can",
+      "refer",
+      "to",
+      "this",
+      "to",
+      "arrange",
+      "your",
+      "future",
+      "work."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "refer to",
+        "pinyin": null,
+        "meaning": "consultar, referir-se a"
+      },
+      {
+        "id": 2,
+        "word": "arrange",
+        "pinyin": null,
+        "meaning": "organizar, arranjar"
+      },
+      {
+        "id": 3,
+        "word": "future",
+        "pinyin": null,
+        "meaning": "futuro"
+      },
+      {
+        "id": 4,
+        "word": "work",
+        "pinyin": null,
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772294084864-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you.",
+    "pinyin": null,
+    "translation": "B: Obrigado.",
+    "tokens": [
+      "B:",
+      "Thank",
+      "you."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772294084864-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Oh yeah, yesterday I received an email from a client that has to do with sales.",
+    "pinyin": null,
+    "translation": "Ah sim, ontem recebi um e-mail de um cliente que tem a ver com vendas.",
+    "tokens": [
+      "Oh",
+      "yeah,",
+      "yesterday",
+      "I",
+      "received",
+      "an",
+      "email",
+      "from",
+      "a",
+      "client",
+      "that",
+      "has",
+      "to",
+      "do",
+      "with",
+      "sales."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "yesterday",
+        "pinyin": null,
+        "meaning": "ontem"
+      },
+      {
+        "id": 2,
+        "word": "received",
+        "pinyin": null,
+        "meaning": "recebi"
+      },
+      {
+        "id": 3,
+        "word": "email",
+        "pinyin": null,
+        "meaning": "e-mail"
+      },
+      {
+        "id": 4,
+        "word": "client",
+        "pinyin": null,
+        "meaning": "cliente"
+      },
+      {
+        "id": 5,
+        "word": "has to do with",
+        "pinyin": null,
+        "meaning": "tem a ver com"
+      },
+      {
+        "id": 6,
+        "word": "sales",
+        "pinyin": null,
+        "meaning": "vendas"
+      }
+    ],
+    "id": "local-1772294084864-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "How do I handle that?",
+    "pinyin": null,
+    "translation": "Como eu lido com isso?",
+    "tokens": [
+      "How",
+      "do",
+      "I",
+      "handle",
+      "that?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "handle",
+        "pinyin": null,
+        "meaning": "lidar, manusear"
+      }
+    ],
+    "id": "local-1772294084864-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We are not in charge of sales, so it can be passed on directly to Li Ming.",
+    "pinyin": null,
+    "translation": "A: Nós não somos responsáveis por vendas, então pode ser passado diretamente para Li Ming.",
+    "tokens": [
+      "A:",
+      "We",
+      "are",
+      "not",
+      "in",
+      "charge",
+      "of",
+      "sales,",
+      "so",
+      "it",
+      "can",
+      "be",
+      "passed",
+      "on",
+      "directly",
+      "to",
+      "Li",
+      "Ming."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in charge of",
+        "pinyin": null,
+        "meaning": "responsável por, encarregado de"
+      },
+      {
+        "id": 2,
+        "word": "sales",
+        "pinyin": null,
+        "meaning": "vendas"
+      },
+      {
+        "id": 3,
+        "word": "passed on",
+        "pinyin": null,
+        "meaning": "passado adiante"
+      },
+      {
+        "id": 4,
+        "word": "directly",
+        "pinyin": null,
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772294084864-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "His email address is on the employee contact information list.",
+    "pinyin": null,
+    "translation": "O endereço de e-mail dele está na lista de informações de contato dos funcionários.",
+    "tokens": [
+      "His",
+      "email",
+      "address",
+      "is",
+      "on",
+      "the",
+      "employee",
+      "contact",
+      "information",
+      "list."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "email address",
+        "pinyin": null,
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 2,
+        "word": "employee",
+        "pinyin": null,
+        "meaning": "funcionário"
+      },
+      {
+        "id": 3,
+        "word": "contact information",
+        "pinyin": null,
+        "meaning": "informações de contato"
+      },
+      {
+        "id": 4,
+        "word": "list",
+        "pinyin": null,
+        "meaning": "lista"
+      }
+    ],
+    "id": "local-1772294084864-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: How about technical questions?",
+    "pinyin": null,
+    "translation": "B: E sobre perguntas técnicas?",
+    "tokens": [
+      "B:",
+      "How",
+      "about",
+      "technical",
+      "questions?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "technical",
+        "pinyin": null,
+        "meaning": "técnico"
+      },
+      {
+        "id": 2,
+        "word": "questions",
+        "pinyin": null,
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772294084864-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Huang Jia is in charge of the technical department.",
+    "pinyin": null,
+    "translation": "A: Huang Jia é responsável pelo departamento técnico.",
+    "tokens": [
+      "A:",
+      "Huang",
+      "Jia",
+      "is",
+      "in",
+      "charge",
+      "of",
+      "the",
+      "technical",
+      "department."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in charge of",
+        "pinyin": null,
+        "meaning": "responsável por, encarregado de"
+      },
+      {
+        "id": 2,
+        "word": "technical",
+        "pinyin": null,
+        "meaning": "técnico"
+      },
+      {
+        "id": 3,
+        "word": "department",
+        "pinyin": null,
+        "meaning": "departamento"
+      }
+    ],
+    "id": "local-1772294084864-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's ok to pass it on to him.",
+    "pinyin": null,
+    "translation": "Está tudo bem em passar para ele.",
+    "tokens": [
+      "It's",
+      "ok",
+      "to",
+      "pass",
+      "it",
+      "on",
+      "to",
+      "him."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pass on",
+        "pinyin": null,
+        "meaning": "passar adiante"
+      }
+    ],
+    "id": "local-1772294084864-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But I don't know them.",
+    "pinyin": null,
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "B:",
+      "But",
+      "I",
+      "don't",
+      "know",
+      "them."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "know",
+        "pinyin": null,
+        "meaning": "conhecer, saber"
+      }
+    ],
+    "id": "local-1772294084864-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Don't worry, I already sent an email to the workmates this morning.",
+    "pinyin": null,
+    "translation": "A: Não se preocupe, eu já enviei um e-mail aos colegas de trabalho esta manhã.",
+    "tokens": [
+      "A:",
+      "Don't",
+      "worry,",
+      "I",
+      "already",
+      "sent",
+      "an",
+      "email",
+      "to",
+      "the",
+      "workmates",
+      "this",
+      "morning."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Don't worry",
+        "pinyin": null,
+        "meaning": "Não se preocupe"
+      },
+      {
+        "id": 2,
+        "word": "already",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "sent",
+        "pinyin": null,
+        "meaning": "enviei"
+      },
+      {
+        "id": 4,
+        "word": "email",
+        "pinyin": null,
+        "meaning": "e-mail"
+      },
+      {
+        "id": 5,
+        "word": "workmates",
+        "pinyin": null,
+        "meaning": "colegas de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "this morning",
+        "pinyin": null,
+        "meaning": "esta manhã"
+      }
+    ],
+    "id": "local-1772294084864-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "This afternoon I will arrange another handover meeting, to introduce you face-to-face to everyone.",
+    "pinyin": null,
+    "translation": "Esta tarde vou organizar outra reunião de entrega de trabalho, para apresentá-lo pessoalmente a todos.",
+    "tokens": [
+      "This",
+      "afternoon",
+      "I",
+      "will",
+      "arrange",
+      "another",
+      "handover",
+      "meeting,",
+      "to",
+      "introduce",
+      "you",
+      "face-to-face",
+      "to",
+      "everyone."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "this afternoon",
+        "pinyin": null,
+        "meaning": "esta tarde"
+      },
+      {
+        "id": 2,
+        "word": "arrange",
+        "pinyin": null,
+        "meaning": "organizar, arranjar"
+      },
+      {
+        "id": 3,
+        "word": "handover meeting",
+        "pinyin": null,
+        "meaning": "reunião de entrega (de trabalho)"
+      },
+      {
+        "id": 4,
+        "word": "introduce",
+        "pinyin": null,
+        "meaning": "apresentar"
+      },
+      {
+        "id": 5,
+        "word": "face-to-face",
+        "pinyin": null,
+        "meaning": "pessoalmente, cara a cara"
+      },
+      {
+        "id": 6,
+        "word": "everyone",
+        "pinyin": null,
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1772294084864-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you so much.",
+    "pinyin": null,
+    "translation": "B: Muito obrigado.",
+    "tokens": [
+      "B:",
+      "Thank",
+      "you",
+      "so",
+      "much."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Thank you so much",
+        "pinyin": null,
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772294084864-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: It's my responsibility.",
+    "pinyin": null,
+    "translation": "A: É minha responsabilidade.",
+    "tokens": [
+      "A:",
+      "It's",
+      "my",
+      "responsibility."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "responsibility",
+        "pinyin": null,
+        "meaning": "responsabilidade"
+      }
+    ],
+    "id": "local-1772294084864-19",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I already put all the handover documents in the \"Shared\" file.",
+    "pinyin": null,
+    "translation": "Eu já coloquei todos os documentos de entrega no arquivo \"Compartilhado\".",
+    "tokens": [
+      "I",
+      "already",
+      "put",
+      "all",
+      "the",
+      "handover",
+      "documents",
+      "in",
+      "the",
+      "\"Shared\"",
+      "file."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "already",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 2,
+        "word": "put",
+        "pinyin": null,
+        "meaning": "coloquei"
+      },
+      {
+        "id": 3,
+        "word": "handover documents",
+        "pinyin": null,
+        "meaning": "documentos de entrega"
+      },
+      {
+        "id": 4,
+        "word": "Shared",
+        "pinyin": null,
+        "meaning": "Compartilhado"
+      },
+      {
+        "id": 5,
+        "word": "file",
+        "pinyin": null,
+        "meaning": "arquivo"
+      }
+    ],
+    "id": "local-1772294084864-20",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "If you still have questions, you can also contact me by phone.",
+    "pinyin": null,
+    "translation": "Se você ainda tiver perguntas, pode também me contatar por telefone.",
+    "tokens": [
+      "If",
+      "you",
+      "still",
+      "have",
+      "questions,",
+      "you",
+      "can",
+      "also",
+      "contact",
+      "me",
+      "by",
+      "phone."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "still",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "questions",
+        "pinyin": null,
+        "meaning": "perguntas"
+      },
+      {
+        "id": 3,
+        "word": "contact",
+        "pinyin": null,
+        "meaning": "contatar"
+      },
+      {
+        "id": 4,
+        "word": "by phone",
+        "pinyin": null,
+        "meaning": "por telefone"
+      }
+    ],
+    "id": "local-1772294084864-21",
+    "language": "Inglês"
+  }
+]

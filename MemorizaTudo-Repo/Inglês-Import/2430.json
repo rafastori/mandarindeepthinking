@@ -1,0 +1,663 @@
+[
+  {
+    "chinese": "A: What are you watching?",
+    "pinyin": "",
+    "translation": "A: O que você está assistindo?",
+    "tokens": [
+      "A:",
+      "What",
+      "are",
+      "you",
+      "watching",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "are watching",
+        "pinyin": "",
+        "meaning": "está assistindo"
+      }
+    ],
+    "id": "local-1772292953281-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: A shadow play.",
+    "pinyin": "",
+    "translation": "B: Um teatro de sombras.",
+    "tokens": [
+      "B:",
+      "A",
+      "shadow",
+      "play",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "shadow play",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      }
+    ],
+    "id": "local-1772292953281-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: How have I not seen this?",
+    "pinyin": "",
+    "translation": "A: Como eu não vi isso?",
+    "tokens": [
+      "A:",
+      "How",
+      "have",
+      "I",
+      "not",
+      "seen",
+      "this",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "How",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 2,
+        "word": "have seen",
+        "pinyin": "",
+        "meaning": "ter visto"
+      },
+      {
+        "id": 3,
+        "word": "this",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772292953281-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's a traditional Chinese folk art. Nowadays not many people watch it.",
+    "pinyin": "",
+    "translation": "B: É uma arte folclórica chinesa tradicional. Hoje em dia, não muitas pessoas a assistem.",
+    "tokens": [
+      "B:",
+      "It's",
+      "a",
+      "traditional",
+      "Chinese",
+      "folk",
+      "art",
+      ".",
+      "Nowadays",
+      "not",
+      "many",
+      "people",
+      "watch",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "traditional",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 2,
+        "word": "Chinese",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 3,
+        "word": "folk art",
+        "pinyin": "",
+        "meaning": "arte folclórica"
+      },
+      {
+        "id": 4,
+        "word": "Nowadays",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 5,
+        "word": "many people",
+        "pinyin": "",
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 6,
+        "word": "watch",
+        "pinyin": "",
+        "meaning": "assistir"
+      }
+    ],
+    "id": "local-1772292953281-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: This is a story from \"Journey to the West\", right?",
+    "pinyin": "",
+    "translation": "A: Esta é uma história de \"Jornada ao Oeste\", certo?",
+    "tokens": [
+      "A:",
+      "This",
+      "is",
+      "a",
+      "story",
+      "from",
+      "\"",
+      "Journey",
+      "to",
+      "the",
+      "West",
+      "\"",
+      ",",
+      "right",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "story",
+        "pinyin": "",
+        "meaning": "história"
+      },
+      {
+        "id": 2,
+        "word": "from",
+        "pinyin": "",
+        "meaning": "de"
+      },
+      {
+        "id": 3,
+        "word": "Journey to the West",
+        "pinyin": "",
+        "meaning": "Jornada ao Oeste"
+      },
+      {
+        "id": 4,
+        "word": "right",
+        "pinyin": "",
+        "meaning": "certo"
+      }
+    ],
+    "id": "local-1772292953281-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yeah. These characters are all made using animal skins or cardboard.",
+    "pinyin": "",
+    "translation": "B: Sim. Estes personagens são todos feitos usando peles de animais ou papelão.",
+    "tokens": [
+      "B:",
+      "Yeah",
+      ".",
+      "These",
+      "characters",
+      "are",
+      "all",
+      "made",
+      "using",
+      "animal",
+      "skins",
+      "or",
+      "cardboard",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yeah",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "characters",
+        "pinyin": "",
+        "meaning": "personagens"
+      },
+      {
+        "id": 3,
+        "word": "made using",
+        "pinyin": "",
+        "meaning": "feitos usando"
+      },
+      {
+        "id": 4,
+        "word": "animal skins",
+        "pinyin": "",
+        "meaning": "peles de animais"
+      },
+      {
+        "id": 5,
+        "word": "cardboard",
+        "pinyin": "",
+        "meaning": "papelão"
+      }
+    ],
+    "id": "local-1772292953281-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then how do they move?",
+    "pinyin": "",
+    "translation": "A: Então, como eles se movem?",
+    "tokens": [
+      "A:",
+      "Then",
+      "how",
+      "do",
+      "they",
+      "move",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "how",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "move",
+        "pinyin": "",
+        "meaning": "mover"
+      }
+    ],
+    "id": "local-1772292953281-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: There are people who control them.",
+    "pinyin": "",
+    "translation": "B: Há pessoas que os controlam.",
+    "tokens": [
+      "B:",
+      "There",
+      "are",
+      "people",
+      "who",
+      "control",
+      "them",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "There are",
+        "pinyin": "",
+        "meaning": "Há"
+      },
+      {
+        "id": 2,
+        "word": "people",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "control",
+        "pinyin": "",
+        "meaning": "controlam"
+      }
+    ],
+    "id": "local-1772292953281-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That's really interesting. Is there a place I can watch a performance?",
+    "pinyin": "",
+    "translation": "A: Isso é muito interessante. Há um lugar onde eu possa assistir a uma apresentação?",
+    "tokens": [
+      "A:",
+      "That's",
+      "really",
+      "interesting",
+      ".",
+      "Is",
+      "there",
+      "a",
+      "place",
+      "I",
+      "can",
+      "watch",
+      "a",
+      "performance",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "really",
+        "pinyin": "",
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 2,
+        "word": "interesting",
+        "pinyin": "",
+        "meaning": "interessante"
+      },
+      {
+        "id": 3,
+        "word": "Is there",
+        "pinyin": "",
+        "meaning": "Existe, Há"
+      },
+      {
+        "id": 4,
+        "word": "place",
+        "pinyin": "",
+        "meaning": "lugar"
+      },
+      {
+        "id": 5,
+        "word": "can watch",
+        "pinyin": "",
+        "meaning": "posso assistir"
+      },
+      {
+        "id": 6,
+        "word": "performance",
+        "pinyin": "",
+        "meaning": "apresentação"
+      }
+    ],
+    "id": "local-1772292953281-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Aren't you going to Beijing next week? Beijing has a place called the \"Shichahai Shadow Art Performance Hotel\". You can go there to experience it.",
+    "pinyin": "",
+    "translation": "B: Você não vai para Pequim na próxima semana? Pequim tem um lugar chamado \"Shichahai Shadow Art Performance Hotel\". Você pode ir lá para experimentar.",
+    "tokens": [
+      "B:",
+      "Aren't",
+      "you",
+      "going",
+      "to",
+      "Beijing",
+      "next",
+      "week",
+      "?",
+      "Beijing",
+      "has",
+      "a",
+      "place",
+      "called",
+      "the",
+      "\"",
+      "Shichahai",
+      "Shadow",
+      "Art",
+      "Performance",
+      "Hotel",
+      "\"",
+      ".",
+      "You",
+      "can",
+      "go",
+      "there",
+      "to",
+      "experience",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aren't you going",
+        "pinyin": "",
+        "meaning": "Você não vai"
+      },
+      {
+        "id": 2,
+        "word": "Beijing",
+        "pinyin": "",
+        "meaning": "Pequim"
+      },
+      {
+        "id": 3,
+        "word": "next week",
+        "pinyin": "",
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 4,
+        "word": "has",
+        "pinyin": "",
+        "meaning": "tem"
+      },
+      {
+        "id": 5,
+        "word": "called",
+        "pinyin": "",
+        "meaning": "chamado"
+      },
+      {
+        "id": 6,
+        "word": "Shichahai Shadow Art Performance Hotel",
+        "pinyin": "",
+        "meaning": "Hotel de Performance de Arte de Sombras Shichahai"
+      },
+      {
+        "id": 7,
+        "word": "can go",
+        "pinyin": "",
+        "meaning": "pode ir"
+      },
+      {
+        "id": 8,
+        "word": "experience",
+        "pinyin": "",
+        "meaning": "experimentar"
+      }
+    ],
+    "id": "local-1772292953281-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I'll definitely go. I wonder if I can learn to put on a shadow play.",
+    "pinyin": "",
+    "translation": "A: Eu com certeza irei. Eu me pergunto se consigo aprender a montar um teatro de sombras.",
+    "tokens": [
+      "A:",
+      "I'll",
+      "definitely",
+      "go",
+      ".",
+      "I",
+      "wonder",
+      "if",
+      "I",
+      "can",
+      "learn",
+      "to",
+      "put",
+      "on",
+      "a",
+      "shadow",
+      "play",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "I'll",
+        "pinyin": "",
+        "meaning": "Eu irei"
+      },
+      {
+        "id": 2,
+        "word": "definitely",
+        "pinyin": "",
+        "meaning": "com certeza"
+      },
+      {
+        "id": 3,
+        "word": "wonder",
+        "pinyin": "",
+        "meaning": "me pergunto"
+      },
+      {
+        "id": 4,
+        "word": "if",
+        "pinyin": "",
+        "meaning": "se"
+      },
+      {
+        "id": 5,
+        "word": "can learn",
+        "pinyin": "",
+        "meaning": "posso aprender"
+      },
+      {
+        "id": 6,
+        "word": "put on",
+        "pinyin": "",
+        "meaning": "montar, apresentar"
+      },
+      {
+        "id": 7,
+        "word": "shadow play",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      }
+    ],
+    "id": "local-1772292953281-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: No problem. My American friend produced his own shadow play. Next time I'll introduce you to him.",
+    "pinyin": "",
+    "translation": "B: Sem problemas. Meu amigo americano produziu seu próprio teatro de sombras. Da próxima vez, vou te apresentar a ele.",
+    "tokens": [
+      "B:",
+      "No",
+      "problem",
+      ".",
+      "My",
+      "American",
+      "friend",
+      "produced",
+      "his",
+      "own",
+      "shadow",
+      "play",
+      ".",
+      "Next",
+      "time",
+      "I'll",
+      "introduce",
+      "you",
+      "to",
+      "him",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No problem",
+        "pinyin": "",
+        "meaning": "Sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "American",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 3,
+        "word": "produced",
+        "pinyin": "",
+        "meaning": "produziu"
+      },
+      {
+        "id": 4,
+        "word": "own",
+        "pinyin": "",
+        "meaning": "próprio"
+      },
+      {
+        "id": 5,
+        "word": "shadow play",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 6,
+        "word": "Next time",
+        "pinyin": "",
+        "meaning": "Da próxima vez"
+      },
+      {
+        "id": 7,
+        "word": "introduce",
+        "pinyin": "",
+        "meaning": "apresentar"
+      }
+    ],
+    "id": "local-1772292953281-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Okay, then it's settled.",
+    "pinyin": "",
+    "translation": "A: Ok, então está combinado.",
+    "tokens": [
+      "A:",
+      "Okay",
+      ",",
+      "then",
+      "it's",
+      "settled",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "then",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "it's settled",
+        "pinyin": "",
+        "meaning": "está combinado/resolvido"
+      }
+    ],
+    "id": "local-1772292953281-12",
+    "language": "Inglês"
+  }
+]

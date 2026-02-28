@@ -1,0 +1,412 @@
+[
+  {
+    "chinese": "A: Oye, ¿qué software es este tuyo?",
+    "pinyin": "",
+    "translation": "A: Ei, que software é este seu?",
+    "tokens": [
+      "A:",
+      "Oye",
+      ",",
+      "¿qué",
+      "software",
+      "es",
+      "este",
+      "tuyo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, Escute"
+      },
+      {
+        "id": 2,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "tuyo",
+        "pinyin": "",
+        "meaning": "seu"
+      }
+    ],
+    "id": "local-1772298257468-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Google Drive.",
+    "pinyin": "",
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "B:",
+      "Google",
+      "Drive",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Google Drive",
+        "pinyin": "",
+        "meaning": "Google Drive"
+      }
+    ],
+    "id": "local-1772298257468-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Nunca he oído hablar de él. ¿Para qué lo usas?",
+    "pinyin": "",
+    "translation": "A: Nunca ouvi falar dele. Para que você o usa?",
+    "tokens": [
+      "A:",
+      "Nunca",
+      "he",
+      "oído",
+      "hablar",
+      "de",
+      "él",
+      ".",
+      "¿Para",
+      "qué",
+      "lo",
+      "usas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nunca",
+        "pinyin": "",
+        "meaning": "Nunca"
+      },
+      {
+        "id": 2,
+        "word": "oído hablar",
+        "pinyin": "",
+        "meaning": "ouvi falar"
+      },
+      {
+        "id": 3,
+        "word": "usas",
+        "pinyin": "",
+        "meaning": "usa"
+      }
+    ],
+    "id": "local-1772298257468-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es una herramienta online de documentos muy práctica y gratuita. Puedes almacenar y compartir archivos.",
+    "pinyin": "",
+    "translation": "B: É uma ferramenta online de documentos muito prática e gratuita. Você pode armazenar e compartilhar arquivos.",
+    "tokens": [
+      "B:",
+      "Es",
+      "una",
+      "herramienta",
+      "online",
+      "de",
+      "documentos",
+      "muy",
+      "práctica",
+      "y",
+      "gratuita",
+      ".",
+      "Puedes",
+      "almacenar",
+      "y",
+      "compartir",
+      "archivos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "herramienta",
+        "pinyin": "",
+        "meaning": "ferramenta"
+      },
+      {
+        "id": 2,
+        "word": "online",
+        "pinyin": "",
+        "meaning": "online"
+      },
+      {
+        "id": 3,
+        "word": "práctica",
+        "pinyin": "",
+        "meaning": "prática"
+      },
+      {
+        "id": 4,
+        "word": "gratuita",
+        "pinyin": "",
+        "meaning": "gratuita"
+      },
+      {
+        "id": 5,
+        "word": "almacenar",
+        "pinyin": "",
+        "meaning": "armazenar"
+      },
+      {
+        "id": 6,
+        "word": "compartir",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 7,
+        "word": "archivos",
+        "pinyin": "",
+        "meaning": "arquivos"
+      }
+    ],
+    "id": "local-1772298257468-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Es conveniente?",
+    "pinyin": "",
+    "translation": "A: É conveniente?",
+    "tokens": [
+      "A:",
+      "¿Es",
+      "conveniente",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772298257468-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es muy conveniente. Hoy en día hay muchos softwares de almacenamiento en la nube como este. Por ejemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "pinyin": "",
+    "translation": "B: É muito conveniente. Hoje em dia existem muitos softwares de armazenamento em nuvem como este. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "B:",
+      "Es",
+      "muy",
+      "conveniente",
+      ".",
+      "Hoy",
+      "en",
+      "día",
+      "hay",
+      "muchos",
+      "softwares",
+      "de",
+      "almacenamiento",
+      "en",
+      "la",
+      "nube",
+      "como",
+      "este",
+      ".",
+      "Por",
+      "ejemplo",
+      ",",
+      "Baidu",
+      "Cloud",
+      ",",
+      "SkyDrive",
+      ",",
+      "Dropbox",
+      ",",
+      "etc",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      },
+      {
+        "id": 2,
+        "word": "Hoy en día",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 3,
+        "word": "almacenamiento en la nube",
+        "pinyin": "",
+        "meaning": "armazenamento em nuvem"
+      },
+      {
+        "id": 4,
+        "word": "Por ejemplo",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      }
+    ],
+    "id": "local-1772298257468-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué es el almacenamiento en la nube?",
+    "pinyin": "",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "es",
+      "el",
+      "almacenamiento",
+      "en",
+      "la",
+      "nube",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "almacenamiento en la nube",
+        "pinyin": "",
+        "meaning": "armazenamento em nuvem"
+      }
+    ],
+    "id": "local-1772298257468-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: En pocas palabras, es subir tus archivos al disco en la nube de Google. Luego, mientras estés conectado, puedes usar estos documentos en diferentes dispositivos.",
+    "pinyin": "",
+    "translation": "B: Em poucas palavras, é enviar seus arquivos para o disco na nuvem do Google. Depois, enquanto estiver conectado, você pode usar estes documentos em diferentes dispositivos.",
+    "tokens": [
+      "B:",
+      "En",
+      "pocas",
+      "palabras",
+      ",",
+      "es",
+      "subir",
+      "tus",
+      "archivos",
+      "al",
+      "disco",
+      "en",
+      "la",
+      "nube",
+      "de",
+      "Google",
+      ".",
+      "Luego",
+      ",",
+      "mientras",
+      "estés",
+      "conectado",
+      ",",
+      "puedes",
+      "usar",
+      "estos",
+      "documentos",
+      "en",
+      "diferentes",
+      "dispositivos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En pocas palabras",
+        "pinyin": "",
+        "meaning": "Em poucas palavras"
+      },
+      {
+        "id": 2,
+        "word": "subir",
+        "pinyin": "",
+        "meaning": "enviar, fazer upload"
+      },
+      {
+        "id": 3,
+        "word": "disco en la nube",
+        "pinyin": "",
+        "meaning": "disco na nuvem"
+      },
+      {
+        "id": 4,
+        "word": "conectado",
+        "pinyin": "",
+        "meaning": "conectado"
+      },
+      {
+        "id": 5,
+        "word": "documentos",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 6,
+        "word": "dispositivos",
+        "pinyin": "",
+        "meaning": "dispositivos"
+      }
+    ],
+    "id": "local-1772298257468-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces no necesito usar memoria. Eso es muy conveniente.",
+    "pinyin": "",
+    "translation": "A: Então não preciso usar memória. Isso é muito conveniente.",
+    "tokens": [
+      "A:",
+      "Entonces",
+      "no",
+      "necesito",
+      "usar",
+      "memoria",
+      ".",
+      "Eso",
+      "es",
+      "muy",
+      "conveniente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "necesito",
+        "pinyin": "",
+        "meaning": "preciso"
+      },
+      {
+        "id": 3,
+        "word": "memoria",
+        "pinyin": "",
+        "meaning": "memória"
+      },
+      {
+        "id": 4,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772298257468-8",
+    "language": "Espanhol"
+  }
+]

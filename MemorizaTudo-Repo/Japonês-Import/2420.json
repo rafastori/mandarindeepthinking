@@ -1,0 +1,550 @@
+[
+  {
+    "chinese": "A: トントン、あの日に誰にばったり会ったと思う？",
+    "pinyin": null,
+    "translation": "A: Tonton, quem você acha que encontrou por acaso naquele dia?",
+    "tokens": [
+      "トントン",
+      "、",
+      "あの",
+      "日",
+      "に",
+      "誰",
+      "に",
+      "ばったり",
+      "会った",
+      "と",
+      "思う",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "トントン",
+        "pinyin": "Tonton",
+        "meaning": "Nome próprio"
+      },
+      {
+        "id": 2,
+        "word": "あの日",
+        "pinyin": "ano hi",
+        "meaning": "aquele dia"
+      },
+      {
+        "id": 3,
+        "word": "誰",
+        "pinyin": "dare",
+        "meaning": "quem"
+      },
+      {
+        "id": 4,
+        "word": "ばったり",
+        "pinyin": "battari",
+        "meaning": "de repente, por acaso, inesperadamente"
+      },
+      {
+        "id": 5,
+        "word": "会う",
+        "pinyin": "au",
+        "meaning": "encontrar, ver"
+      },
+      {
+        "id": 6,
+        "word": "思う",
+        "pinyin": "omou",
+        "meaning": "pensar, achar"
+      }
+    ],
+    "id": "local-1772296503018-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 誰？",
+    "pinyin": null,
+    "translation": "B: Quem?",
+    "tokens": [
+      "誰",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "誰",
+        "pinyin": "dare",
+        "meaning": "quem"
+      }
+    ],
+    "id": "local-1772296503018-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 元カレよ。",
+    "pinyin": null,
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "元カレ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "元カレ",
+        "pinyin": "motokare",
+        "meaning": "ex-namorado"
+      },
+      {
+        "id": 2,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula enfática (expressa certeza ou convence o ouvinte)"
+      }
+    ],
+    "id": "local-1772296503018-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当？話したの？",
+    "pinyin": null,
+    "translation": "B: Sério? Conversou com ele?",
+    "tokens": [
+      "本当",
+      "？",
+      "話した",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "hontō",
+        "meaning": "verdade, de verdade?, sério?"
+      },
+      {
+        "id": 2,
+        "word": "話す",
+        "pinyin": "hanasu",
+        "meaning": "falar, conversar"
+      },
+      {
+        "id": 3,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula de pergunta informal"
+      }
+    ],
+    "id": "local-1772296503018-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 話してないわ。女の子と一緒だったの。",
+    "pinyin": null,
+    "translation": "A: Não conversamos. Ele estava com uma garota.",
+    "tokens": [
+      "話してない",
+      "わ",
+      "。",
+      "女の子",
+      "と",
+      "一緒",
+      "だった",
+      "の",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "話す",
+        "pinyin": "hanasu",
+        "meaning": "falar, conversar (話してない: não conversei)"
+      },
+      {
+        "id": 2,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula enfática (feminina)"
+      },
+      {
+        "id": 3,
+        "word": "女の子",
+        "pinyin": "onnanoko",
+        "meaning": "garota, menina"
+      },
+      {
+        "id": 4,
+        "word": "一緒",
+        "pinyin": "issho",
+        "meaning": "junto, com"
+      },
+      {
+        "id": 5,
+        "word": "だった",
+        "pinyin": "datta",
+        "meaning": "era, estava (forma passada de です/だ)"
+      },
+      {
+        "id": 6,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula explicativa/sentimento"
+      }
+    ],
+    "id": "local-1772296503018-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 別れるきっかけになった浮気相手？",
+    "pinyin": null,
+    "translation": "B: A amante que foi a causa da separação?",
+    "tokens": [
+      "別れる",
+      "きっかけ",
+      "に",
+      "なった",
+      "浮気相手",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "別れる",
+        "pinyin": "wakareru",
+        "meaning": "separar-se, terminar um relacionamento"
+      },
+      {
+        "id": 2,
+        "word": "きっかけ",
+        "pinyin": "kikkake",
+        "meaning": "motivo, gatilho, ocasião"
+      },
+      {
+        "id": 3,
+        "word": "なる",
+        "pinyin": "naru",
+        "meaning": "tornar-se, virar"
+      },
+      {
+        "id": 4,
+        "word": "浮気相手",
+        "pinyin": "uwaki aite",
+        "meaning": "amante (pessoa com quem se tem um caso)"
+      }
+    ],
+    "id": "local-1772296503018-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 違うわ。新しい子に変わってた。",
+    "pinyin": null,
+    "translation": "A: Não, não. Tinha mudado para uma garota nova.",
+    "tokens": [
+      "違う",
+      "わ",
+      "。",
+      "新しい",
+      "子",
+      "に",
+      "変わってた",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "違う",
+        "pinyin": "chigau",
+        "meaning": "estar errado, ser diferente, não (como resposta)"
+      },
+      {
+        "id": 2,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula enfática (feminina)"
+      },
+      {
+        "id": 3,
+        "word": "新しい",
+        "pinyin": "atarashii",
+        "meaning": "novo(a)"
+      },
+      {
+        "id": 4,
+        "word": "子",
+        "pinyin": "ko",
+        "meaning": "criança, pessoa (informalmente para garota/menina)"
+      },
+      {
+        "id": 5,
+        "word": "変わる",
+        "pinyin": "kawaru",
+        "meaning": "mudar, ser alterado (変わってた: tinha mudado)"
+      }
+    ],
+    "id": "local-1772296503018-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: え？また浮気してるの？どんな子だった？",
+    "pinyin": null,
+    "translation": "B: Hã? Ele está traindo de novo? Como era a garota?",
+    "tokens": [
+      "え",
+      "？",
+      "また",
+      "浮気してる",
+      "の",
+      "？",
+      "どんな",
+      "子",
+      "だった",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "え",
+        "pinyin": "e",
+        "meaning": "hã?, o quê? (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "また",
+        "pinyin": "mata",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 3,
+        "word": "浮気する",
+        "pinyin": "uwaki suru",
+        "meaning": "trair, ter um caso (浮気してる: está traindo)"
+      },
+      {
+        "id": 4,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula de pergunta informal"
+      },
+      {
+        "id": 5,
+        "word": "どんな",
+        "pinyin": "donna",
+        "meaning": "que tipo de, como"
+      },
+      {
+        "id": 6,
+        "word": "子",
+        "pinyin": "ko",
+        "meaning": "criança, pessoa (informalmente para garota/menina)"
+      },
+      {
+        "id": 7,
+        "word": "だった",
+        "pinyin": "datta",
+        "meaning": "era, estava (forma passada de です/だ)"
+      }
+    ],
+    "id": "local-1772296503018-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: すごく可愛い子だったけど、整形してるみたいだった。",
+    "pinyin": null,
+    "translation": "A: Ela era muito fofa, mas parecia ter feito cirurgia plástica.",
+    "tokens": [
+      "すごく",
+      "可愛い",
+      "子",
+      "だった",
+      "けど",
+      "、",
+      "整形してる",
+      "みたいだった",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 2,
+        "word": "可愛い",
+        "pinyin": "kawaii",
+        "meaning": "fofo(a), bonitinho(a)"
+      },
+      {
+        "id": 3,
+        "word": "子",
+        "pinyin": "ko",
+        "meaning": "criança, pessoa (informalmente para garota/menina)"
+      },
+      {
+        "id": 4,
+        "word": "だった",
+        "pinyin": "datta",
+        "meaning": "era, estava (forma passada de です/だ)"
+      },
+      {
+        "id": 5,
+        "word": "けど",
+        "pinyin": "kedo",
+        "meaning": "mas, embora"
+      },
+      {
+        "id": 6,
+        "word": "整形する",
+        "pinyin": "seikei suru",
+        "meaning": "fazer cirurgia plástica (整形してる: fez cirurgia plástica/está fazendo)"
+      },
+      {
+        "id": 7,
+        "word": "みたい",
+        "pinyin": "mitai",
+        "meaning": "parecer, como se (みたいだった: parecia)"
+      }
+    ],
+    "id": "local-1772296503018-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当にロクな男じゃないわね。別れて正解だったわ。",
+    "pinyin": null,
+    "translation": "B: Ele realmente não é um homem decente. Foi a decisão certa terminar.",
+    "tokens": [
+      "本当に",
+      "ロクな",
+      "男",
+      "じゃない",
+      "わ",
+      "ね",
+      "。",
+      "別れて",
+      "正解",
+      "だった",
+      "わ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当に",
+        "pinyin": "hontō ni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "ロクな男じゃない",
+        "pinyin": "roku na otoko janai",
+        "meaning": "não é um homem decente/que preste"
+      },
+      {
+        "id": 3,
+        "word": "男",
+        "pinyin": "otoko",
+        "meaning": "homem"
+      },
+      {
+        "id": 4,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula enfática (feminina)"
+      },
+      {
+        "id": 5,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de concordância/confirmação"
+      },
+      {
+        "id": 6,
+        "word": "別れる",
+        "pinyin": "wakareru",
+        "meaning": "separar-se, terminar um relacionamento"
+      },
+      {
+        "id": 7,
+        "word": "正解",
+        "pinyin": "seikai",
+        "meaning": "resposta correta, a coisa certa"
+      },
+      {
+        "id": 8,
+        "word": "だった",
+        "pinyin": "datta",
+        "meaning": "era, estava (forma passada de です/だ)"
+      }
+    ],
+    "id": "local-1772296503018-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: まったくよ。あの頃の私は目が曇ってたに違いないわ。",
+    "pinyin": null,
+    "translation": "A: Com certeza. Naquela época, eu devia estar cega.",
+    "tokens": [
+      "まったく",
+      "よ",
+      "。",
+      "あの",
+      "頃",
+      "の",
+      "私",
+      "は",
+      "目",
+      "が",
+      "曇ってた",
+      "に",
+      "違いない",
+      "わ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "まったく",
+        "pinyin": "mattaku",
+        "meaning": "completamente, de fato, exatamente (usado para concordar)"
+      },
+      {
+        "id": 2,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula enfática (expressa certeza ou convence o ouvinte)"
+      },
+      {
+        "id": 3,
+        "word": "あの頃",
+        "pinyin": "ano koro",
+        "meaning": "naquela época, aqueles dias"
+      },
+      {
+        "id": 4,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "eu"
+      },
+      {
+        "id": 5,
+        "word": "目が曇る",
+        "pinyin": "me ga kumoru",
+        "meaning": "os olhos ficam turvos, perder a percepção, estar iludido (目が曇ってた: estava iludida/cega)"
+      },
+      {
+        "id": 6,
+        "word": "に違いない",
+        "pinyin": "ni chigainai",
+        "meaning": "com certeza, sem dúvida, deve ser"
+      },
+      {
+        "id": 7,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula enfática (feminina)"
+      }
+    ],
+    "id": "local-1772296503018-10",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,951 @@
+[
+  {
+    "chinese": "A: Señorita, ¿cuántos son ustedes?",
+    "pinyin": null,
+    "translation": "A: Senhorita, quantos vocês são?",
+    "tokens": [
+      "Señorita",
+      ",",
+      "¿",
+      "cuántos",
+      "son",
+      "ustedes",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Señorita",
+        "pinyin": "",
+        "meaning": "Senhorita"
+      },
+      {
+        "id": 3,
+        "word": "cuántos",
+        "pinyin": "",
+        "meaning": "quantos"
+      },
+      {
+        "id": 5,
+        "word": "ustedes",
+        "pinyin": "",
+        "meaning": "vocês"
+      }
+    ],
+    "id": "local-1772295606000-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Dos.",
+    "pinyin": null,
+    "translation": "B: Dois.",
+    "tokens": [
+      "Dos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Dos",
+        "pinyin": "",
+        "meaning": "Dois"
+      }
+    ],
+    "id": "local-1772295606000-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Bien, este es su número.",
+    "pinyin": null,
+    "translation": "A: Bem, este é o número de vocês.",
+    "tokens": [
+      "Bien",
+      ",",
+      "este",
+      "es",
+      "su",
+      "número",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Bien",
+        "pinyin": "",
+        "meaning": "Bem"
+      },
+      {
+        "id": 5,
+        "word": "número",
+        "pinyin": "",
+        "meaning": "número"
+      }
+    ],
+    "id": "local-1772295606000-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Por favor, esperen un momento.",
+    "pinyin": null,
+    "translation": "Por favor, esperem um momento.",
+    "tokens": [
+      "Por",
+      "favor",
+      ",",
+      "esperen",
+      "un",
+      "momento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Por favor",
+        "pinyin": "",
+        "meaning": "Por favor"
+      },
+      {
+        "id": 3,
+        "word": "esperen",
+        "pinyin": "",
+        "meaning": "esperem"
+      },
+      {
+        "id": 5,
+        "word": "momento",
+        "pinyin": "",
+        "meaning": "momento"
+      }
+    ],
+    "id": "local-1772295606000-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Cuánto tiempo tenemos que esperar?",
+    "pinyin": null,
+    "translation": "B: Quanto tempo temos que esperar?",
+    "tokens": [
+      "¿",
+      "Cuánto",
+      "tiempo",
+      "tenemos",
+      "que",
+      "esperar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cuánto tiempo",
+        "pinyin": "",
+        "meaning": "Quanto tempo"
+      },
+      {
+        "id": 3,
+        "word": "tenemos que",
+        "pinyin": "",
+        "meaning": "temos que"
+      },
+      {
+        "id": 5,
+        "word": "esperar",
+        "pinyin": "",
+        "meaning": "esperar"
+      }
+    ],
+    "id": "local-1772295606000-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No es seguro.",
+    "pinyin": null,
+    "translation": "A: Não é certo/seguro.",
+    "tokens": [
+      "No",
+      "es",
+      "seguro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "seguro",
+        "pinyin": "",
+        "meaning": "certo / seguro"
+      }
+    ],
+    "id": "local-1772295606000-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Pueden descargar este software, y luego ir a dar una vuelta.",
+    "pinyin": null,
+    "translation": "Podem baixar este software, e depois ir dar uma volta.",
+    "tokens": [
+      "Pueden",
+      "descargar",
+      "este",
+      "software",
+      ",",
+      "y",
+      "luego",
+      "ir",
+      "a",
+      "dar",
+      "una",
+      "vuelta",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Pueden",
+        "pinyin": "",
+        "meaning": "Podem"
+      },
+      {
+        "id": 1,
+        "word": "descargar",
+        "pinyin": "",
+        "meaning": "baixar"
+      },
+      {
+        "id": 3,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 6,
+        "word": "luego",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 9,
+        "word": "dar una vuelta",
+        "pinyin": "",
+        "meaning": "dar uma volta"
+      }
+    ],
+    "id": "local-1772295606000-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Les dirá el estado de la fila.",
+    "pinyin": null,
+    "translation": "Lhes dirá o estado da fila.",
+    "tokens": [
+      "Les",
+      "dirá",
+      "el",
+      "estado",
+      "de",
+      "la",
+      "fila",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dirá",
+        "pinyin": "",
+        "meaning": "dirá"
+      },
+      {
+        "id": 3,
+        "word": "estado",
+        "pinyin": "",
+        "meaning": "estado"
+      },
+      {
+        "id": 6,
+        "word": "fila",
+        "pinyin": "",
+        "meaning": "fila"
+      }
+    ],
+    "id": "local-1772295606000-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Oh! Oye, ¿qué es esto?",
+    "pinyin": null,
+    "translation": "B: Oh! Ei, o que é isso?",
+    "tokens": [
+      "¡",
+      "Oh",
+      "!",
+      "Oye",
+      ",",
+      "¿",
+      "qué",
+      "es",
+      "esto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei / Ouça"
+      },
+      {
+        "id": 6,
+        "word": "qué es esto",
+        "pinyin": "",
+        "meaning": "o que é isso"
+      }
+    ],
+    "id": "local-1772295606000-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "La cosa negra.",
+    "pinyin": null,
+    "translation": "A coisa preta.",
+    "tokens": [
+      "La",
+      "cosa",
+      "negra",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cosa",
+        "pinyin": "",
+        "meaning": "coisa"
+      },
+      {
+        "id": 2,
+        "word": "negra",
+        "pinyin": "",
+        "meaning": "preta"
+      }
+    ],
+    "id": "local-1772295606000-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Eso es un código QR.",
+    "pinyin": null,
+    "translation": "A: Isso é um código QR.",
+    "tokens": [
+      "Eso",
+      "es",
+      "un",
+      "código",
+      "QR",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "código QR",
+        "pinyin": "",
+        "meaning": "código QR"
+      }
+    ],
+    "id": "local-1772295606000-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Estás muy desactualizada.",
+    "pinyin": null,
+    "translation": "Você está muito desatualizada.",
+    "tokens": [
+      "Estás",
+      "muy",
+      "desactualizada",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Estás",
+        "pinyin": "",
+        "meaning": "Você está"
+      },
+      {
+        "id": 1,
+        "word": "muy",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "desactualizada",
+        "pinyin": "",
+        "meaning": "desatualizada"
+      }
+    ],
+    "id": "local-1772295606000-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Usa tu teléfono celular para escanearlo, y luego te redirigirá automáticamente a la página de descarga.",
+    "pinyin": null,
+    "translation": "Use seu telefone celular para escaneá-lo, e depois te redirecionará automaticamente para a página de download.",
+    "tokens": [
+      "Usa",
+      "tu",
+      "teléfono",
+      "celular",
+      "para",
+      "escanearlo",
+      ",",
+      "y",
+      "luego",
+      "te",
+      "redirigirá",
+      "automáticamente",
+      "a",
+      "la",
+      "página",
+      "de",
+      "descarga",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Usa",
+        "pinyin": "",
+        "meaning": "Use"
+      },
+      {
+        "id": 2,
+        "word": "teléfono celular",
+        "pinyin": "",
+        "meaning": "telefone celular"
+      },
+      {
+        "id": 5,
+        "word": "escanearlo",
+        "pinyin": "",
+        "meaning": "escaneá-lo"
+      },
+      {
+        "id": 8,
+        "word": "luego",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 10,
+        "word": "redirigirá",
+        "pinyin": "",
+        "meaning": "redirecionará"
+      },
+      {
+        "id": 11,
+        "word": "automáticamente",
+        "pinyin": "",
+        "meaning": "automaticamente"
+      },
+      {
+        "id": 14,
+        "word": "página de descarga",
+        "pinyin": "",
+        "meaning": "página de download"
+      }
+    ],
+    "id": "local-1772295606000-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Oh, qué avanzado!",
+    "pinyin": null,
+    "translation": "B: Oh, que avançado!",
+    "tokens": [
+      "¡",
+      "Oh",
+      ",",
+      "qué",
+      "avanzado",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "avanzado",
+        "pinyin": "",
+        "meaning": "avançado"
+      }
+    ],
+    "id": "local-1772295606000-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: ¡Los códigos QR se usan mucho!",
+    "pinyin": null,
+    "translation": "C: Os códigos QR são muito usados!",
+    "tokens": [
+      "¡",
+      "Los",
+      "códigos",
+      "QR",
+      "se",
+      "usan",
+      "mucho",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "códigos QR",
+        "pinyin": "",
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 5,
+        "word": "usan",
+        "pinyin": "",
+        "meaning": "usam / são usados"
+      },
+      {
+        "id": 6,
+        "word": "mucho",
+        "pinyin": "",
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1772295606000-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "La semana pasada fui a un concierto y no usé boleto.",
+    "pinyin": null,
+    "translation": "Na semana passada fui a um concerto e não usei ingresso.",
+    "tokens": [
+      "La",
+      "semana",
+      "pasada",
+      "fui",
+      "a",
+      "un",
+      "concierto",
+      "y",
+      "no",
+      "usé",
+      "boleto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "semana pasada",
+        "pinyin": "",
+        "meaning": "semana passada"
+      },
+      {
+        "id": 3,
+        "word": "fui",
+        "pinyin": "",
+        "meaning": "fui"
+      },
+      {
+        "id": 6,
+        "word": "concierto",
+        "pinyin": "",
+        "meaning": "concerto"
+      },
+      {
+        "id": 9,
+        "word": "usé",
+        "pinyin": "",
+        "meaning": "usei"
+      },
+      {
+        "id": 10,
+        "word": "boleto",
+        "pinyin": "",
+        "meaning": "ingresso / bilhete"
+      }
+    ],
+    "id": "local-1772295606000-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Todo lo que necesitaba era un código QR.",
+    "pinyin": null,
+    "translation": "Tudo o que eu precisava era um código QR.",
+    "tokens": [
+      "Todo",
+      "lo",
+      "que",
+      "necesitaba",
+      "era",
+      "un",
+      "código",
+      "QR",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "necesitaba",
+        "pinyin": "",
+        "meaning": "precisava"
+      },
+      {
+        "id": 6,
+        "word": "código QR",
+        "pinyin": "",
+        "meaning": "código QR"
+      }
+    ],
+    "id": "local-1772295606000-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: He visto que muchas tiendas tienen estos.",
+    "pinyin": null,
+    "translation": "B: Tenho visto que muitas lojas têm estes.",
+    "tokens": [
+      "He",
+      "visto",
+      "que",
+      "muchas",
+      "tiendas",
+      "tienen",
+      "estos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "He visto",
+        "pinyin": "",
+        "meaning": "Tenho visto"
+      },
+      {
+        "id": 3,
+        "word": "muchas",
+        "pinyin": "",
+        "meaning": "muitas"
+      },
+      {
+        "id": 4,
+        "word": "tiendas",
+        "pinyin": "",
+        "meaning": "lojas"
+      },
+      {
+        "id": 5,
+        "word": "tienen",
+        "pinyin": "",
+        "meaning": "têm"
+      }
+    ],
+    "id": "local-1772295606000-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Entonces, si los escaneas, ¿obtendrás información sobre sus productos?",
+    "pinyin": null,
+    "translation": "Então, se você os escanear, obterá informações sobre seus produtos?",
+    "tokens": [
+      "Entonces",
+      ",",
+      "si",
+      "los",
+      "escaneas",
+      ",",
+      "¿",
+      "obtendrás",
+      "información",
+      "sobre",
+      "sus",
+      "productos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 4,
+        "word": "escaneas",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 7,
+        "word": "obtendrás",
+        "pinyin": "",
+        "meaning": "obterá"
+      },
+      {
+        "id": 8,
+        "word": "información",
+        "pinyin": "",
+        "meaning": "informação"
+      },
+      {
+        "id": 11,
+        "word": "productos",
+        "pinyin": "",
+        "meaning": "produtos"
+      }
+    ],
+    "id": "local-1772295606000-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: Sí. Muchos negocios usan códigos QR para publicidad.",
+    "pinyin": null,
+    "translation": "C: Sim. Muitos negócios usam códigos QR para publicidade.",
+    "tokens": [
+      "Sí",
+      ".",
+      "Muchos",
+      "negocios",
+      "usan",
+      "códigos",
+      "QR",
+      "para",
+      "publicidad",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Muchos",
+        "pinyin": "",
+        "meaning": "Muitos"
+      },
+      {
+        "id": 3,
+        "word": "negocios",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 4,
+        "word": "usan",
+        "pinyin": "",
+        "meaning": "usam"
+      },
+      {
+        "id": 5,
+        "word": "códigos QR",
+        "pinyin": "",
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 8,
+        "word": "publicidad",
+        "pinyin": "",
+        "meaning": "publicidade"
+      }
+    ],
+    "id": "local-1772295606000-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Eso es realmente conveniente.",
+    "pinyin": null,
+    "translation": "B: Isso é realmente conveniente.",
+    "tokens": [
+      "Eso",
+      "es",
+      "realmente",
+      "conveniente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "realmente",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772295606000-20",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Oye, hay un código QR por allá.",
+    "pinyin": null,
+    "translation": "Ei, há um código QR por ali.",
+    "tokens": [
+      "Oye",
+      ",",
+      "hay",
+      "un",
+      "código",
+      "QR",
+      "por",
+      "allá",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei / Ouça"
+      },
+      {
+        "id": 2,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há / tem"
+      },
+      {
+        "id": 4,
+        "word": "código QR",
+        "pinyin": "",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "por allá",
+        "pinyin": "",
+        "meaning": "por ali / por lá"
+      }
+    ],
+    "id": "local-1772295606000-21",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Iré a escanearlo y veré qué es.",
+    "pinyin": null,
+    "translation": "Vou escaneá-lo e ver o que é.",
+    "tokens": [
+      "Iré",
+      "a",
+      "escanearlo",
+      "y",
+      "veré",
+      "qué",
+      "es",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Iré",
+        "pinyin": "",
+        "meaning": "Vou"
+      },
+      {
+        "id": 2,
+        "word": "escanearlo",
+        "pinyin": "",
+        "meaning": "escaneá-lo"
+      },
+      {
+        "id": 4,
+        "word": "veré",
+        "pinyin": "",
+        "meaning": "verei"
+      },
+      {
+        "id": 5,
+        "word": "qué es",
+        "pinyin": "",
+        "meaning": "o que é"
+      }
+    ],
+    "id": "local-1772295606000-22",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: No escanees a tontas y a locas.",
+    "pinyin": null,
+    "translation": "C: Não escaneie a torto e a direito / de forma imprudente.",
+    "tokens": [
+      "No",
+      "escanees",
+      "a",
+      "tontas",
+      "y",
+      "a",
+      "locas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "escanees",
+        "pinyin": "",
+        "meaning": "escaneie"
+      },
+      {
+        "id": 2,
+        "word": "a tontas y a locas",
+        "pinyin": "",
+        "meaning": "a torto e a direito / de forma imprudente"
+      }
+    ],
+    "id": "local-1772295606000-23",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Algunos códigos QR podrían tener virus.",
+    "pinyin": null,
+    "translation": "Alguns códigos QR poderiam ter vírus.",
+    "tokens": [
+      "Algunos",
+      "códigos",
+      "QR",
+      "podrían",
+      "tener",
+      "virus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Algunos",
+        "pinyin": "",
+        "meaning": "Alguns"
+      },
+      {
+        "id": 1,
+        "word": "códigos QR",
+        "pinyin": "",
+        "meaning": "códigos QR"
+      },
+      {
+        "id": 3,
+        "word": "podrían",
+        "pinyin": "",
+        "meaning": "poderiam"
+      },
+      {
+        "id": 4,
+        "word": "tener",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 5,
+        "word": "virus",
+        "pinyin": "",
+        "meaning": "vírus"
+      }
+    ],
+    "id": "local-1772295606000-24",
+    "language": "Espanhol"
+  }
+]

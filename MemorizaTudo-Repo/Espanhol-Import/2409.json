@@ -1,0 +1,706 @@
+[
+  {
+    "chinese": "A: Camarero, quiero comprar un pastel de cumpleaños para mi hijo.",
+    "pinyin": null,
+    "translation": "A: Garçom, quero comprar um bolo de aniversário para o meu filho.",
+    "tokens": [
+      "A:",
+      "Camarero,",
+      "quiero",
+      "comprar",
+      "un",
+      "pastel",
+      "de",
+      "cumpleaños",
+      "para",
+      "mi",
+      "hijo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Camarero",
+        "pinyin": null,
+        "meaning": "Garçom"
+      },
+      {
+        "id": 2,
+        "word": "quiero",
+        "pinyin": null,
+        "meaning": "quero (do verbo querer)"
+      },
+      {
+        "id": 3,
+        "word": "comprar",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "cumpleaños",
+        "pinyin": null,
+        "meaning": "aniversário"
+      },
+      {
+        "id": 6,
+        "word": "hijo",
+        "pinyin": null,
+        "meaning": "filho"
+      }
+    ],
+    "id": "local-1772295385896-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es para unas 10 personas.",
+    "pinyin": null,
+    "translation": "É para umas 10 pessoas.",
+    "tokens": [
+      "Es",
+      "para",
+      "unas",
+      "10",
+      "personas."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "unas",
+        "pinyin": null,
+        "meaning": "umas, aproximadamente"
+      },
+      {
+        "id": 2,
+        "word": "personas",
+        "pinyin": null,
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772295385896-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Si son 10 personas, un pastel de 12 pulgadas debería ser suficiente.",
+    "pinyin": null,
+    "translation": "B: Se forem 10 pessoas, um bolo de 12 polegadas deveria ser suficiente.",
+    "tokens": [
+      "B:",
+      "Si",
+      "son",
+      "10",
+      "personas,",
+      "un",
+      "pastel",
+      "de",
+      "12",
+      "pulgadas",
+      "debería",
+      "ser",
+      "suficiente."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Si",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "pulgadas",
+        "pinyin": null,
+        "meaning": "polegadas"
+      },
+      {
+        "id": 3,
+        "word": "debería",
+        "pinyin": null,
+        "meaning": "deveria (do verbo deber)"
+      },
+      {
+        "id": 4,
+        "word": "suficiente",
+        "pinyin": null,
+        "meaning": "suficiente"
+      }
+    ],
+    "id": "local-1772295385896-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, ¿qué tipos de pastel tienen?",
+    "pinyin": null,
+    "translation": "A: Então, que tipos de bolo vocês têm?",
+    "tokens": [
+      "A:",
+      "Entonces,",
+      "¿qué",
+      "tipos",
+      "de",
+      "pastel",
+      "tienen?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "tipos",
+        "pinyin": null,
+        "meaning": "tipos"
+      },
+      {
+        "id": 3,
+        "word": "tienen",
+        "pinyin": null,
+        "meaning": "têm (do verbo tener)"
+      }
+    ],
+    "id": "local-1772295385896-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Tenemos pastel de frutas y crema, pastel de chocolate, pastel de mousse y tarta de queso.",
+    "pinyin": null,
+    "translation": "B: Temos bolo de frutas e creme, bolo de chocolate, bolo de mousse e torta de queijo.",
+    "tokens": [
+      "B:",
+      "Tenemos",
+      "pastel",
+      "de",
+      "frutas",
+      "y",
+      "crema,",
+      "pastel",
+      "de",
+      "chocolate,",
+      "pastel",
+      "de",
+      "mousse",
+      "y",
+      "tarta",
+      "de",
+      "queso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tenemos",
+        "pinyin": null,
+        "meaning": "Temos (do verbo tener)"
+      },
+      {
+        "id": 2,
+        "word": "pastel de frutas y crema",
+        "pinyin": null,
+        "meaning": "bolo de frutas e creme"
+      },
+      {
+        "id": 3,
+        "word": "pastel de chocolate",
+        "pinyin": null,
+        "meaning": "bolo de chocolate"
+      },
+      {
+        "id": 4,
+        "word": "pastel de mousse",
+        "pinyin": null,
+        "meaning": "bolo de mousse"
+      },
+      {
+        "id": 5,
+        "word": "tarta de queso",
+        "pinyin": null,
+        "meaning": "torta de queijo (cheesecake)"
+      }
+    ],
+    "id": "local-1772295385896-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Cuál es el sabor del pastel de mousse?",
+    "pinyin": null,
+    "translation": "A: Qual é o sabor do bolo de mousse?",
+    "tokens": [
+      "A:",
+      "¿Cuál",
+      "es",
+      "el",
+      "sabor",
+      "del",
+      "pastel",
+      "de",
+      "mousse?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cuál",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 2,
+        "word": "sabor",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 3,
+        "word": "pastel de mousse",
+        "pinyin": null,
+        "meaning": "bolo de mousse"
+      }
+    ],
+    "id": "local-1772295385896-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: El sabor del pastel de mousse es más fino y suave, y ligero y refrescante.",
+    "pinyin": null,
+    "translation": "B: O sabor do bolo de mousse é mais fino e suave, e leve e refrescante.",
+    "tokens": [
+      "B:",
+      "El",
+      "sabor",
+      "del",
+      "pastel",
+      "de",
+      "mousse",
+      "es",
+      "más",
+      "fino",
+      "y",
+      "suave,",
+      "y",
+      "ligero",
+      "y",
+      "refrescante."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sabor",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 2,
+        "word": "pastel de mousse",
+        "pinyin": null,
+        "meaning": "bolo de mousse"
+      },
+      {
+        "id": 3,
+        "word": "fino",
+        "pinyin": null,
+        "meaning": "fino"
+      },
+      {
+        "id": 4,
+        "word": "suave",
+        "pinyin": null,
+        "meaning": "suave"
+      },
+      {
+        "id": 5,
+        "word": "ligero",
+        "pinyin": null,
+        "meaning": "leve"
+      },
+      {
+        "id": 6,
+        "word": "refrescante",
+        "pinyin": null,
+        "meaning": "refrescante"
+      }
+    ],
+    "id": "local-1772295385896-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces queremos comprar un pastel de mousse de 12 pulgadas.",
+    "pinyin": null,
+    "translation": "A: Então queremos comprar um bolo de mousse de 12 polegadas.",
+    "tokens": [
+      "A:",
+      "Entonces",
+      "queremos",
+      "comprar",
+      "un",
+      "pastel",
+      "de",
+      "mousse",
+      "de",
+      "12",
+      "pulgadas."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "queremos",
+        "pinyin": null,
+        "meaning": "queremos (do verbo querer)"
+      },
+      {
+        "id": 3,
+        "word": "comprar",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "pastel de mousse",
+        "pinyin": null,
+        "meaning": "bolo de mousse"
+      },
+      {
+        "id": 5,
+        "word": "pulgadas",
+        "pinyin": null,
+        "meaning": "polegadas"
+      }
+    ],
+    "id": "local-1772295385896-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. Sin embargo, necesita pedir este pastel con antelación.",
+    "pinyin": null,
+    "translation": "B: De acordo. No entanto, precisa pedir este bolo com antecedência.",
+    "tokens": [
+      "B:",
+      "De",
+      "acuerdo.",
+      "Sin",
+      "embargo,",
+      "necesita",
+      "pedir",
+      "este",
+      "pastel",
+      "con",
+      "antelación."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": null,
+        "meaning": "De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Sin embargo",
+        "pinyin": null,
+        "meaning": "No entanto"
+      },
+      {
+        "id": 3,
+        "word": "necesita",
+        "pinyin": null,
+        "meaning": "precisa (do verbo necesitar)"
+      },
+      {
+        "id": 4,
+        "word": "pedir",
+        "pinyin": null,
+        "meaning": "pedir"
+      },
+      {
+        "id": 5,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "con antelación",
+        "pinyin": null,
+        "meaning": "com antecedência"
+      }
+    ],
+    "id": "local-1772295385896-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Puede recogerlo mañana después de las 10 en punto.",
+    "pinyin": null,
+    "translation": "Pode pegá-lo amanhã depois das 10 horas.",
+    "tokens": [
+      "Puede",
+      "recogerlo",
+      "mañana",
+      "después",
+      "de",
+      "las",
+      "10",
+      "en",
+      "punto."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puede",
+        "pinyin": null,
+        "meaning": "Pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "recogerlo",
+        "pinyin": null,
+        "meaning": "pegá-lo (do verbo recoger)"
+      },
+      {
+        "id": 3,
+        "word": "mañana",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 4,
+        "word": "después de",
+        "pinyin": null,
+        "meaning": "depois de"
+      },
+      {
+        "id": 5,
+        "word": "10 en punto",
+        "pinyin": null,
+        "meaning": "10 em ponto"
+      }
+    ],
+    "id": "local-1772295385896-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Sus pasteles son recién hechos?",
+    "pinyin": null,
+    "translation": "A: Os seus bolos são feitos na hora?",
+    "tokens": [
+      "A:",
+      "¿Sus",
+      "pasteles",
+      "son",
+      "recién",
+      "hechos?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sus",
+        "pinyin": null,
+        "meaning": "Seus/Suas"
+      },
+      {
+        "id": 2,
+        "word": "pasteles",
+        "pinyin": null,
+        "meaning": "bolos"
+      },
+      {
+        "id": 3,
+        "word": "recién hechos",
+        "pinyin": null,
+        "meaning": "feitos na hora"
+      }
+    ],
+    "id": "local-1772295385896-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Nuestros chefs los hacen frescos cada mañana.",
+    "pinyin": null,
+    "translation": "B: Nossos chefs os fazem frescos toda manhã.",
+    "tokens": [
+      "B:",
+      "Nuestros",
+      "chefs",
+      "los",
+      "hacen",
+      "frescos",
+      "cada",
+      "mañana."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nuestros",
+        "pinyin": null,
+        "meaning": "Nossos/Nossas"
+      },
+      {
+        "id": 2,
+        "word": "chefs",
+        "pinyin": null,
+        "meaning": "chefs"
+      },
+      {
+        "id": 3,
+        "word": "hacen",
+        "pinyin": null,
+        "meaning": "fazem (do verbo hacer)"
+      },
+      {
+        "id": 4,
+        "word": "frescos",
+        "pinyin": null,
+        "meaning": "frescos"
+      },
+      {
+        "id": 5,
+        "word": "cada mañana",
+        "pinyin": null,
+        "meaning": "toda manhã"
+      }
+    ],
+    "id": "local-1772295385896-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Relájese.",
+    "pinyin": null,
+    "translation": "Relaxe.",
+    "tokens": [
+      "Relájese."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Relájese",
+        "pinyin": null,
+        "meaning": "Relaxe (do verbo reflexivo relajarse)"
+      }
+    ],
+    "id": "local-1772295385896-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Puedo preguntar qué edad tiene su hijo?",
+    "pinyin": null,
+    "translation": "B: Posso perguntar que idade tem o seu filho?",
+    "tokens": [
+      "B:",
+      "¿Puedo",
+      "preguntar",
+      "qué",
+      "edad",
+      "tiene",
+      "su",
+      "hijo?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puedo",
+        "pinyin": null,
+        "meaning": "Posso (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "preguntar",
+        "pinyin": null,
+        "meaning": "perguntar"
+      },
+      {
+        "id": 3,
+        "word": "edad",
+        "pinyin": null,
+        "meaning": "idade"
+      },
+      {
+        "id": 4,
+        "word": "hijo",
+        "pinyin": null,
+        "meaning": "filho"
+      }
+    ],
+    "id": "local-1772295385896-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Tres años.",
+    "pinyin": null,
+    "translation": "A: Três anos.",
+    "tokens": [
+      "A:",
+      "Tres",
+      "años."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tres",
+        "pinyin": null,
+        "meaning": "Três"
+      },
+      {
+        "id": 2,
+        "word": "años",
+        "pinyin": null,
+        "meaning": "anos"
+      }
+    ],
+    "id": "local-1772295385896-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De acuerdo. Le ayudaré a conseguir tres velas.",
+    "pinyin": null,
+    "translation": "B: De acordo. Eu o ajudarei a conseguir três velas.",
+    "tokens": [
+      "B:",
+      "De",
+      "acuerdo.",
+      "Le",
+      "ayudaré",
+      "a",
+      "conseguir",
+      "tres",
+      "velas."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De acuerdo",
+        "pinyin": null,
+        "meaning": "De acordo"
+      },
+      {
+        "id": 2,
+        "word": "ayudaré",
+        "pinyin": null,
+        "meaning": "ajudarei (do verbo ayudar)"
+      },
+      {
+        "id": 3,
+        "word": "conseguir",
+        "pinyin": null,
+        "meaning": "conseguir, obter"
+      },
+      {
+        "id": 4,
+        "word": "velas",
+        "pinyin": null,
+        "meaning": "velas"
+      }
+    ],
+    "id": "local-1772295385896-15",
+    "language": "Espanhol"
+  }
+]

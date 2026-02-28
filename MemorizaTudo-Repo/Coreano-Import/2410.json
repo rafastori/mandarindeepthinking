@@ -1,0 +1,808 @@
+[
+  {
+    "chinese": "A: 아가씨, 몇 분이세요?",
+    "pinyin": "",
+    "translation": "A: Moça, quantas pessoas?",
+    "tokens": [
+      "아가씨",
+      ",",
+      "몇",
+      "분이세요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아가씨",
+        "pinyin": "agassi",
+        "meaning": "moça, senhorita"
+      },
+      {
+        "id": 2,
+        "word": "몇",
+        "pinyin": "myeot",
+        "meaning": "quantos, algumas"
+      },
+      {
+        "id": 3,
+        "word": "분",
+        "pinyin": "bun",
+        "meaning": "pessoa (honorífico)"
+      },
+      {
+        "id": 4,
+        "word": "이세요",
+        "pinyin": "iseyo",
+        "meaning": "é (honorífico, pergunta)"
+      }
+    ],
+    "id": "local-1772295771272-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 두 명이에요.",
+    "pinyin": "",
+    "translation": "B: Duas pessoas.",
+    "tokens": [
+      "두",
+      "명이에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "두",
+        "pinyin": "du",
+        "meaning": "dois (forma contraída de 둘)"
+      },
+      {
+        "id": 2,
+        "word": "명",
+        "pinyin": "myeong",
+        "meaning": "contador para pessoas"
+      },
+      {
+        "id": 3,
+        "word": "이에요",
+        "pinyin": "ieyo",
+        "meaning": "é, são"
+      }
+    ],
+    "id": "local-1772295771272-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네, 여기 번호표 받으시고 잠시 기다려 주세요.",
+    "pinyin": "",
+    "translation": "A: Sim, por favor, pegue este bilhete e espere um pouco.",
+    "tokens": [
+      "네",
+      ",",
+      "여기",
+      "번호표",
+      "받으시고",
+      "잠시",
+      "기다려",
+      "주세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "여기",
+        "pinyin": "yeogi",
+        "meaning": "aqui"
+      },
+      {
+        "id": 3,
+        "word": "번호표",
+        "pinyin": "beonhopyo",
+        "meaning": "bilhete de número, ficha"
+      },
+      {
+        "id": 4,
+        "word": "받으시고",
+        "pinyin": "badeusigo",
+        "meaning": "pegar, receber (formal, e)"
+      },
+      {
+        "id": 5,
+        "word": "잠시",
+        "pinyin": "jamsi",
+        "meaning": "um momento, um pouco"
+      },
+      {
+        "id": 6,
+        "word": "기다려 주세요",
+        "pinyin": "gidaryeo juseyo",
+        "meaning": "por favor, espere"
+      }
+    ],
+    "id": "local-1772295771272-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 얼마나 기다려야 해요?",
+    "pinyin": "",
+    "translation": "B: Quanto tempo eu preciso esperar?",
+    "tokens": [
+      "얼마나",
+      "기다려야",
+      "해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "얼마나",
+        "pinyin": "eolmana",
+        "meaning": "quanto, quão"
+      },
+      {
+        "id": 2,
+        "word": "기다려야 해요",
+        "pinyin": "gidaryeoya haeyo",
+        "meaning": "ter que esperar"
+      }
+    ],
+    "id": "local-1772295771272-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 확실하진 않아요. 이 소프트웨어를 다운로드하시고 돌아다니시면 줄 상태를 알려드릴 거예요.",
+    "pinyin": "",
+    "translation": "A: Não tenho certeza. Se você baixar este software e andar por aí, ele informará o status da fila.",
+    "tokens": [
+      "확실하진",
+      "않아요",
+      ".",
+      "이",
+      "소프트웨어를",
+      "다운로드하시고",
+      "돌아다니시면",
+      "줄",
+      "상태를",
+      "알려드릴",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "확실하다",
+        "pinyin": "hwaksilhada",
+        "meaning": "ser certo, ser seguro"
+      },
+      {
+        "id": 2,
+        "word": "않아요",
+        "pinyin": "anayo",
+        "meaning": "não (formal)"
+      },
+      {
+        "id": 3,
+        "word": "이",
+        "pinyin": "i",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 4,
+        "word": "소프트웨어",
+        "pinyin": "seopteuweeo",
+        "meaning": "software"
+      },
+      {
+        "id": 5,
+        "word": "다운로드하다",
+        "pinyin": "daunrodeuhada",
+        "meaning": "baixar, fazer download"
+      },
+      {
+        "id": 6,
+        "word": "돌아다니다",
+        "pinyin": "doradanida",
+        "meaning": "andar por aí, passear"
+      },
+      {
+        "id": 7,
+        "word": "줄",
+        "pinyin": "jul",
+        "meaning": "fila"
+      },
+      {
+        "id": 8,
+        "word": "상태",
+        "pinyin": "sangtae",
+        "meaning": "estado, condição, status"
+      },
+      {
+        "id": 9,
+        "word": "알려드리다",
+        "pinyin": "allyeodeurida",
+        "meaning": "informar (honorífico)"
+      },
+      {
+        "id": 10,
+        "word": "거예요",
+        "pinyin": "geoyeyo",
+        "meaning": "será (futuro ou suposição)"
+      }
+    ],
+    "id": "local-1772295771272-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 오! 저기요, 이게 뭐예요? 이 검은색이요.",
+    "pinyin": "",
+    "translation": "B: Oh! Com licença, o que é isso? Esta cor preta.",
+    "tokens": [
+      "오",
+      "!",
+      "저기요",
+      ",",
+      "이게",
+      "뭐예요",
+      "?",
+      "이",
+      "검은색이요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오",
+        "pinyin": "o",
+        "meaning": "oh!"
+      },
+      {
+        "id": 2,
+        "word": "저기요",
+        "pinyin": "jeogiyo",
+        "meaning": "com licença, ei"
+      },
+      {
+        "id": 3,
+        "word": "이게",
+        "pinyin": "ige",
+        "meaning": "isto é (contraído de 이것이)"
+      },
+      {
+        "id": 4,
+        "word": "뭐예요",
+        "pinyin": "mwoyeyo",
+        "meaning": "o que é?"
+      },
+      {
+        "id": 5,
+        "word": "검은색",
+        "pinyin": "geomeunsaek",
+        "meaning": "cor preta"
+      }
+    ],
+    "id": "local-1772295771272-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그건 QR 코드예요. 정말 세상 물정 모르시네요. 휴대폰으로 스캔하면 다운로드 페이지로 자동으로 연결될 거예요.",
+    "pinyin": "",
+    "translation": "A: Isso é um código QR. Você realmente não sabe como o mundo funciona. Se você escanear com seu celular, será automaticamente conectado à página de download.",
+    "tokens": [
+      "그건",
+      "QR",
+      "코드예요",
+      ".",
+      "정말",
+      "세상",
+      "물정",
+      "모르시네요",
+      ".",
+      "휴대폰으로",
+      "스캔하면",
+      "다운로드",
+      "페이지로",
+      "자동으로",
+      "연결될",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그건",
+        "pinyin": "geugeon",
+        "meaning": "isso é (contraído de 그것은)"
+      },
+      {
+        "id": 2,
+        "word": "QR 코드",
+        "pinyin": "kyu-areu kodeu",
+        "meaning": "código QR"
+      },
+      {
+        "id": 3,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 4,
+        "word": "세상 물정 모르다",
+        "pinyin": "sesang muljeong moreuda",
+        "meaning": "não saber como o mundo funciona, ser ingênuo"
+      },
+      {
+        "id": 5,
+        "word": "휴대폰",
+        "pinyin": "hyudaepon",
+        "meaning": "telefone celular"
+      },
+      {
+        "id": 6,
+        "word": "스캔하다",
+        "pinyin": "seukaenhada",
+        "meaning": "escanear"
+      },
+      {
+        "id": 7,
+        "word": "다운로드 페이지",
+        "pinyin": "daunrodeu peiji",
+        "meaning": "página de download"
+      },
+      {
+        "id": 8,
+        "word": "자동으로",
+        "pinyin": "jadong-euro",
+        "meaning": "automaticamente"
+      },
+      {
+        "id": 9,
+        "word": "연결되다",
+        "pinyin": "yeongyeoldoida",
+        "meaning": "ser conectado"
+      },
+      {
+        "id": 10,
+        "word": "거예요",
+        "pinyin": "geoyeyo",
+        "meaning": "será (futuro ou suposição)"
+      }
+    ],
+    "id": "local-1772295771272-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 와, 정말 발전했네요!",
+    "pinyin": "",
+    "translation": "B: Uau, realmente evoluiu!",
+    "tokens": [
+      "와",
+      ",",
+      "정말",
+      "발전했네요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "wa",
+        "meaning": "uau!"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "발전하다",
+        "pinyin": "baljeonhada",
+        "meaning": "desenvolver, evoluir, progredir"
+      }
+    ],
+    "id": "local-1772295771272-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: QR 코드는 많이 사용돼요! 지난주에 콘서트에 갔는데 표를 사용 안 했어요. QR 코드만 있으면 됐어요.",
+    "pinyin": "",
+    "translation": "C: Códigos QR são muito usados! Fui a um show na semana passada e não usei ingresso. Apenas o código QR foi suficiente.",
+    "tokens": [
+      "QR",
+      "코드는",
+      "많이",
+      "사용돼요",
+      "!",
+      "지난주에",
+      "콘서트에",
+      "갔는데",
+      "표를",
+      "사용",
+      "안",
+      "했어요",
+      ".",
+      "QR",
+      "코드만",
+      "있으면",
+      "됐어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "QR 코드",
+        "pinyin": "kyu-areu kodeu",
+        "meaning": "código QR"
+      },
+      {
+        "id": 2,
+        "word": "많이",
+        "pinyin": "mani",
+        "meaning": "muito, bastante"
+      },
+      {
+        "id": 3,
+        "word": "사용되다",
+        "pinyin": "sayongdoeda",
+        "meaning": "ser usado"
+      },
+      {
+        "id": 4,
+        "word": "지난주",
+        "pinyin": "jinanju",
+        "meaning": "semana passada"
+      },
+      {
+        "id": 5,
+        "word": "콘서트",
+        "pinyin": "konseoteu",
+        "meaning": "show, concerto"
+      },
+      {
+        "id": 6,
+        "word": "가다",
+        "pinyin": "gada",
+        "meaning": "ir"
+      },
+      {
+        "id": 7,
+        "word": "표",
+        "pinyin": "pyo",
+        "meaning": "ingresso, bilhete"
+      },
+      {
+        "id": 8,
+        "word": "사용하다",
+        "pinyin": "sayonghada",
+        "meaning": "usar"
+      },
+      {
+        "id": 9,
+        "word": "안 하다",
+        "pinyin": "an hada",
+        "meaning": "não fazer"
+      },
+      {
+        "id": 10,
+        "word": "있으면 되다",
+        "pinyin": "isseumyeon doeda",
+        "meaning": "ser suficiente com, basta ter"
+      }
+    ],
+    "id": "local-1772295771272-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 많은 가게에 이게 있는 걸 봤어요. 그럼 스캔하면 제품 정보를 얻을 수 있나요?",
+    "pinyin": "",
+    "translation": "B: Eu vi isso em muitas lojas. Então, se eu escanear, consigo obter informações do produto?",
+    "tokens": [
+      "많은",
+      "가게에",
+      "이게",
+      "있는",
+      "걸",
+      "봤어요",
+      ".",
+      "그럼",
+      "스캔하면",
+      "제품",
+      "정보를",
+      "얻을",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "많다",
+        "pinyin": "manta",
+        "meaning": "ser muito, haver muitos"
+      },
+      {
+        "id": 2,
+        "word": "가게",
+        "pinyin": "gage",
+        "meaning": "loja"
+      },
+      {
+        "id": 3,
+        "word": "이게",
+        "pinyin": "ige",
+        "meaning": "isto é (contraído de 이것이)"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": "itta",
+        "meaning": "ter, haver, estar"
+      },
+      {
+        "id": 5,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver"
+      },
+      {
+        "id": 6,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 7,
+        "word": "스캔하다",
+        "pinyin": "seukaenhada",
+        "meaning": "escanear"
+      },
+      {
+        "id": 8,
+        "word": "제품",
+        "pinyin": "jepum",
+        "meaning": "produto"
+      },
+      {
+        "id": 9,
+        "word": "정보",
+        "pinyin": "jeongbo",
+        "meaning": "informação"
+      },
+      {
+        "id": 10,
+        "word": "얻다",
+        "pinyin": "eotta",
+        "meaning": "obter, conseguir"
+      },
+      {
+        "id": 11,
+        "word": "수 있다",
+        "pinyin": "su itta",
+        "meaning": "poder, conseguir"
+      }
+    ],
+    "id": "local-1772295771272-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 네. 많은 기업들이 광고를 위해 QR 코드를 사용해요.",
+    "pinyin": "",
+    "translation": "C: Sim. Muitas empresas usam códigos QR para publicidade.",
+    "tokens": [
+      "네",
+      ".",
+      "많은",
+      "기업들이",
+      "광고를",
+      "위해",
+      "QR",
+      "코드를",
+      "사용해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "많다",
+        "pinyin": "manta",
+        "meaning": "ser muito, haver muitos"
+      },
+      {
+        "id": 3,
+        "word": "기업",
+        "pinyin": "gieop",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "광고",
+        "pinyin": "gwanggo",
+        "meaning": "publicidade, anúncio"
+      },
+      {
+        "id": 5,
+        "word": "위해",
+        "pinyin": "wihae",
+        "meaning": "para, para o propósito de"
+      },
+      {
+        "id": 6,
+        "word": "QR 코드",
+        "pinyin": "kyu-areu kodeu",
+        "meaning": "código QR"
+      },
+      {
+        "id": 7,
+        "word": "사용하다",
+        "pinyin": "sayonghada",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772295771272-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 편리하네요. 저기, 저쪽에 QR 코드가 있어요. 가서 스캔해보고 뭔지 볼게요.",
+    "pinyin": "",
+    "translation": "B: É muito conveniente. Ei, há um código QR ali. Vou lá escanear e ver o que é.",
+    "tokens": [
+      "정말",
+      "편리하네요",
+      ".",
+      "저기",
+      ",",
+      "저쪽에",
+      "QR",
+      "코드가",
+      "있어요",
+      ".",
+      "가서",
+      "스캔해보고",
+      "뭔지",
+      "볼게요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "편리하다",
+        "pinyin": "pyeonlihada",
+        "meaning": "ser conveniente, ser prático"
+      },
+      {
+        "id": 3,
+        "word": "저기",
+        "pinyin": "jeogi",
+        "meaning": "ali, aquele lugar, com licença"
+      },
+      {
+        "id": 4,
+        "word": "저쪽",
+        "pinyin": "jeojjok",
+        "meaning": "aquele lado, aquela direção"
+      },
+      {
+        "id": 5,
+        "word": "QR 코드",
+        "pinyin": "kyu-areu kodeu",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "있다",
+        "pinyin": "itta",
+        "meaning": "ter, haver, estar"
+      },
+      {
+        "id": 7,
+        "word": "가서",
+        "pinyin": "gaseo",
+        "meaning": "ir e (conecta ações sucessivas)"
+      },
+      {
+        "id": 8,
+        "word": "스캔해보다",
+        "pinyin": "seukaenhaeboda",
+        "meaning": "tentar escanear, escanear e ver"
+      },
+      {
+        "id": 9,
+        "word": "뭔지",
+        "pinyin": "mwonji",
+        "meaning": "o que é (forma contraída de 무엇인지)"
+      },
+      {
+        "id": 10,
+        "word": "볼게요",
+        "pinyin": "bolgeyo",
+        "meaning": "vou ver (expressa intenção do falante)"
+      }
+    ],
+    "id": "local-1772295771272-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 아무거나 스캔하지 마세요. 어떤 QR 코드는 바이러스가 있을 수도 있어요.",
+    "pinyin": "",
+    "translation": "C: Não escaneie qualquer coisa. Alguns códigos QR podem ter vírus.",
+    "tokens": [
+      "아무거나",
+      "스캔하지",
+      "마세요",
+      ".",
+      "어떤",
+      "QR",
+      "코드는",
+      "바이러스가",
+      "있을",
+      "수도",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아무거나",
+        "pinyin": "amugeona",
+        "meaning": "qualquer coisa"
+      },
+      {
+        "id": 2,
+        "word": "스캔하다",
+        "pinyin": "seukaenhada",
+        "meaning": "escanear"
+      },
+      {
+        "id": 3,
+        "word": "마세요",
+        "pinyin": "maseyo",
+        "meaning": "por favor, não faça (forma de negação imperativa)"
+      },
+      {
+        "id": 4,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "algum, qual, certo"
+      },
+      {
+        "id": 5,
+        "word": "QR 코드",
+        "pinyin": "kyu-areu kodeu",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "바이러스",
+        "pinyin": "baireoseu",
+        "meaning": "vírus"
+      },
+      {
+        "id": 7,
+        "word": "있을 수도 있다",
+        "pinyin": "isseul sudo itta",
+        "meaning": "poder (possibilidade de ter/haver)"
+      }
+    ],
+    "id": "local-1772295771272-12",
+    "language": "Coreano"
+  }
+]

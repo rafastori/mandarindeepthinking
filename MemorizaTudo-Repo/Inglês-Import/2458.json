@@ -1,0 +1,668 @@
+[
+  {
+    "chinese": "A: The World Cup is here!",
+    "pinyin": null,
+    "translation": "A: A Copa do Mundo está aqui!",
+    "tokens": [
+      "A:",
+      "The",
+      "World",
+      "Cup",
+      "is",
+      "here!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "World Cup",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 2,
+        "word": "here",
+        "pinyin": null,
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772293476210-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Where is the World Cup being held this year?",
+    "pinyin": null,
+    "translation": "B: Onde a Copa do Mundo está sendo realizada este ano?",
+    "tokens": [
+      "B:",
+      "Where",
+      "is",
+      "the",
+      "World",
+      "Cup",
+      "being",
+      "held",
+      "this",
+      "year?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Where",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "World Cup",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 3,
+        "word": "held",
+        "pinyin": null,
+        "meaning": "realizada"
+      },
+      {
+        "id": 4,
+        "word": "this year",
+        "pinyin": null,
+        "meaning": "este ano"
+      }
+    ],
+    "id": "local-1772293476210-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Brazil! The soccer kingdom! The World Cup is definitely going to be great to watch this year!",
+    "pinyin": null,
+    "translation": "A: Brasil! O reino do futebol! A Copa do Mundo com certeza será ótima de assistir este ano!",
+    "tokens": [
+      "A:",
+      "Brazil!",
+      "The",
+      "soccer",
+      "kingdom!",
+      "The",
+      "World",
+      "Cup",
+      "is",
+      "definitely",
+      "going",
+      "to",
+      "be",
+      "great",
+      "to",
+      "watch",
+      "this",
+      "year!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brazil",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "soccer kingdom",
+        "pinyin": null,
+        "meaning": "reino do futebol"
+      },
+      {
+        "id": 3,
+        "word": "World Cup",
+        "pinyin": null,
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 4,
+        "word": "definitely",
+        "pinyin": null,
+        "meaning": "definitivamente, com certeza"
+      },
+      {
+        "id": 5,
+        "word": "great",
+        "pinyin": null,
+        "meaning": "ótimo(a)"
+      },
+      {
+        "id": 6,
+        "word": "watch",
+        "pinyin": null,
+        "meaning": "assistir"
+      }
+    ],
+    "id": "local-1772293476210-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Brazil? Then I want to watch it.",
+    "pinyin": null,
+    "translation": "B: Brasil? Então eu quero assistir.",
+    "tokens": [
+      "B:",
+      "Brazil?",
+      "Then",
+      "I",
+      "want",
+      "to",
+      "watch",
+      "it."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brazil",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "Then",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "want",
+        "pinyin": null,
+        "meaning": "querer"
+      },
+      {
+        "id": 4,
+        "word": "watch",
+        "pinyin": null,
+        "meaning": "assistir"
+      }
+    ],
+    "id": "local-1772293476210-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Brazil has a lot of beautiful women.",
+    "pinyin": null,
+    "translation": "O Brasil tem muitas mulheres bonitas.",
+    "tokens": [
+      "Brazil",
+      "has",
+      "a",
+      "lot",
+      "of",
+      "beautiful",
+      "women."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brazil",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "a lot of",
+        "pinyin": null,
+        "meaning": "muito(s)/muita(s)"
+      },
+      {
+        "id": 3,
+        "word": "beautiful",
+        "pinyin": null,
+        "meaning": "bonita(s)"
+      },
+      {
+        "id": 4,
+        "word": "women",
+        "pinyin": null,
+        "meaning": "mulheres"
+      }
+    ],
+    "id": "local-1772293476210-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "The opening ceremony will definitely have lively samba dancing.",
+    "pinyin": null,
+    "translation": "A cerimônia de abertura com certeza terá uma animada dança de samba.",
+    "tokens": [
+      "The",
+      "opening",
+      "ceremony",
+      "will",
+      "definitely",
+      "have",
+      "lively",
+      "samba",
+      "dancing."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "opening ceremony",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 2,
+        "word": "definitely",
+        "pinyin": null,
+        "meaning": "com certeza"
+      },
+      {
+        "id": 3,
+        "word": "lively",
+        "pinyin": null,
+        "meaning": "animado(a)"
+      },
+      {
+        "id": 4,
+        "word": "samba dancing",
+        "pinyin": null,
+        "meaning": "dança de samba"
+      }
+    ],
+    "id": "local-1772293476210-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What date is the opening ceremony?",
+    "pinyin": null,
+    "translation": "Que data é a cerimônia de abertura?",
+    "tokens": [
+      "What",
+      "date",
+      "is",
+      "the",
+      "opening",
+      "ceremony?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What date",
+        "pinyin": null,
+        "meaning": "Que data"
+      },
+      {
+        "id": 2,
+        "word": "opening ceremony",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      }
+    ],
+    "id": "local-1772293476210-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: June 14 in Sao Paulo.",
+    "pinyin": null,
+    "translation": "A: 14 de junho em São Paulo.",
+    "tokens": [
+      "A:",
+      "June",
+      "14",
+      "in",
+      "Sao",
+      "Paulo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "June 14",
+        "pinyin": null,
+        "meaning": "14 de junho"
+      },
+      {
+        "id": 2,
+        "word": "Sao Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      }
+    ],
+    "id": "local-1772293476210-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Sao Paulo? Why isn't it in Rio?",
+    "pinyin": null,
+    "translation": "B: São Paulo? Por que não é no Rio?",
+    "tokens": [
+      "B:",
+      "Sao",
+      "Paulo?",
+      "Why",
+      "isn't",
+      "it",
+      "in",
+      "Rio?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sao Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "Why",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      }
+    ],
+    "id": "local-1772293476210-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Rio's the most famous.",
+    "pinyin": null,
+    "translation": "O Rio é o mais famoso.",
+    "tokens": [
+      "Rio's",
+      "the",
+      "most",
+      "famous."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      },
+      {
+        "id": 2,
+        "word": "most famous",
+        "pinyin": null,
+        "meaning": "mais famoso"
+      }
+    ],
+    "id": "local-1772293476210-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Sao Paulo is one of Brazil's major cities.",
+    "pinyin": null,
+    "translation": "A: São Paulo é uma das principais cidades do Brasil.",
+    "tokens": [
+      "A:",
+      "Sao",
+      "Paulo",
+      "is",
+      "one",
+      "of",
+      "Brazil's",
+      "major",
+      "cities."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sao Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "Brazil's",
+        "pinyin": null,
+        "meaning": "do Brasil"
+      },
+      {
+        "id": 3,
+        "word": "major cities",
+        "pinyin": null,
+        "meaning": "grandes cidades, principais cidades"
+      }
+    ],
+    "id": "local-1772293476210-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "The finals will be held in Rio.",
+    "pinyin": null,
+    "translation": "As finais serão realizadas no Rio.",
+    "tokens": [
+      "The",
+      "finals",
+      "will",
+      "be",
+      "held",
+      "in",
+      "Rio."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "finals",
+        "pinyin": null,
+        "meaning": "finais"
+      },
+      {
+        "id": 2,
+        "word": "held",
+        "pinyin": null,
+        "meaning": "realizadas"
+      },
+      {
+        "id": 3,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      }
+    ],
+    "id": "local-1772293476210-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's too bad the time difference between us and Brazil is 11 hours.",
+    "pinyin": null,
+    "translation": "B: É uma pena que a diferença de fuso horário entre nós e o Brasil seja de 11 horas.",
+    "tokens": [
+      "B:",
+      "It's",
+      "too",
+      "bad",
+      "the",
+      "time",
+      "difference",
+      "between",
+      "us",
+      "and",
+      "Brazil",
+      "is",
+      "11",
+      "hours."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "It's too bad",
+        "pinyin": null,
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 2,
+        "word": "time difference",
+        "pinyin": null,
+        "meaning": "diferença de fuso horário"
+      },
+      {
+        "id": 3,
+        "word": "between",
+        "pinyin": null,
+        "meaning": "entre"
+      },
+      {
+        "id": 4,
+        "word": "Brazil",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 5,
+        "word": "hours",
+        "pinyin": null,
+        "meaning": "horas"
+      }
+    ],
+    "id": "local-1772293476210-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'm afraid that this time we'll have to stay up all night.",
+    "pinyin": null,
+    "translation": "Receio que desta vez teremos que ficar acordados a noite toda.",
+    "tokens": [
+      "I'm",
+      "afraid",
+      "that",
+      "this",
+      "time",
+      "we'll",
+      "have",
+      "to",
+      "stay",
+      "up",
+      "all",
+      "night."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "afraid",
+        "pinyin": null,
+        "meaning": "receoso(a), com medo"
+      },
+      {
+        "id": 2,
+        "word": "this time",
+        "pinyin": null,
+        "meaning": "desta vez"
+      },
+      {
+        "id": 3,
+        "word": "stay up all night",
+        "pinyin": null,
+        "meaning": "ficar acordado(a) a noite toda"
+      }
+    ],
+    "id": "local-1772293476210-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then I need to go to the supermarket and stock up on Red Bull first.",
+    "pinyin": null,
+    "translation": "A: Então preciso ir ao supermercado e estocar Red Bull primeiro.",
+    "tokens": [
+      "A:",
+      "Then",
+      "I",
+      "need",
+      "to",
+      "go",
+      "to",
+      "the",
+      "supermarket",
+      "and",
+      "stock",
+      "up",
+      "on",
+      "Red",
+      "Bull",
+      "first."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "need",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "supermarket",
+        "pinyin": null,
+        "meaning": "supermercado"
+      },
+      {
+        "id": 4,
+        "word": "stock up on",
+        "pinyin": null,
+        "meaning": "estocar, abastecer-se de"
+      },
+      {
+        "id": 5,
+        "word": "Red Bull",
+        "pinyin": null,
+        "meaning": "Red Bull"
+      },
+      {
+        "id": 6,
+        "word": "first",
+        "pinyin": null,
+        "meaning": "primeiro"
+      }
+    ],
+    "id": "local-1772293476210-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'll do anything to watch those pretty girls!",
+    "pinyin": null,
+    "translation": "Farei qualquer coisa para assistir aquelas garotas bonitas!",
+    "tokens": [
+      "I'll",
+      "do",
+      "anything",
+      "to",
+      "watch",
+      "those",
+      "pretty",
+      "girls!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "do anything",
+        "pinyin": null,
+        "meaning": "fazer qualquer coisa"
+      },
+      {
+        "id": 2,
+        "word": "watch",
+        "pinyin": null,
+        "meaning": "assistir"
+      },
+      {
+        "id": 3,
+        "word": "pretty",
+        "pinyin": null,
+        "meaning": "bonitas"
+      },
+      {
+        "id": 4,
+        "word": "girls",
+        "pinyin": null,
+        "meaning": "garotas"
+      }
+    ],
+    "id": "local-1772293476210-15",
+    "language": "Inglês"
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "chinese": "이것은 마스터 테스트 텍스트입니다.",
+    "pinyin": null,
+    "translation": "Este é um texto de teste mestre.",
+    "tokens": [
+      "이것은",
+      "마스터",
+      "테스트",
+      "텍스트입니다"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이것은",
+        "pinyin": "igeoseun",
+        "meaning": "Este é"
+      },
+      {
+        "id": 2,
+        "word": "마스터",
+        "pinyin": "maseuteo",
+        "meaning": "Mestre"
+      },
+      {
+        "id": 3,
+        "word": "테스트",
+        "pinyin": "teseuteu",
+        "meaning": "Teste"
+      },
+      {
+        "id": 4,
+        "word": "텍스트입니다",
+        "pinyin": "tekseuteuimnida",
+        "meaning": "É um texto"
+      }
+    ],
+    "id": "local-1772301710649-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "영어에서 다른 모든 언어로 지능형 계단식 동기화 파이프라인을 테스트하기 위한 매우 간단한 텍스트입니다.",
+    "pinyin": null,
+    "translation": "É um texto muito simples para testar o pipeline de sincronização em cascata inteligente do inglês para todos os outros idiomas.",
+    "tokens": [
+      "영어에서",
+      "다른",
+      "모든",
+      "언어로",
+      "지능형",
+      "계단식",
+      "동기화",
+      "파이프라인을",
+      "테스트하기",
+      "위한",
+      "매우",
+      "간단한",
+      "텍스트입니다"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "영어에서",
+        "pinyin": "yeong-eoeseo",
+        "meaning": "Do inglês"
+      },
+      {
+        "id": 2,
+        "word": "다른",
+        "pinyin": "dareun",
+        "meaning": "Outro(s)"
+      },
+      {
+        "id": 3,
+        "word": "모든",
+        "pinyin": "modeun",
+        "meaning": "Todos"
+      },
+      {
+        "id": 4,
+        "word": "언어로",
+        "pinyin": "eoneoro",
+        "meaning": "Para os idiomas"
+      },
+      {
+        "id": 5,
+        "word": "지능형",
+        "pinyin": "jineunghyeong",
+        "meaning": "Inteligente"
+      },
+      {
+        "id": 6,
+        "word": "계단식",
+        "pinyin": "gyedansik",
+        "meaning": "Em cascata"
+      },
+      {
+        "id": 7,
+        "word": "동기화",
+        "pinyin": "donggihwa",
+        "meaning": "Sincronização"
+      },
+      {
+        "id": 8,
+        "word": "파이프라인을",
+        "pinyin": "paipeulain-eul",
+        "meaning": "Pipeline (objeto)"
+      },
+      {
+        "id": 9,
+        "word": "테스트하기",
+        "pinyin": "teseuteuhagi",
+        "meaning": "Testar"
+      },
+      {
+        "id": 10,
+        "word": "위한",
+        "pinyin": "wihan",
+        "meaning": "Para (o propósito de)"
+      },
+      {
+        "id": 11,
+        "word": "매우",
+        "pinyin": "maeu",
+        "meaning": "Muito"
+      },
+      {
+        "id": 12,
+        "word": "간단한",
+        "pinyin": "gandanhan",
+        "meaning": "Simples"
+      },
+      {
+        "id": 13,
+        "word": "텍스트입니다",
+        "pinyin": "tekseuteuimnida",
+        "meaning": "É um texto"
+      }
+    ],
+    "id": "local-1772301710649-1",
+    "language": "Coreano"
+  }
+]

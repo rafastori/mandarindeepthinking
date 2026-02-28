@@ -1,0 +1,637 @@
+[
+  {
+    "chinese": "A: Hey, Bruder. Hast du am Wochenende Zeit? Lust, dich zu treffen?",
+    "pinyin": "",
+    "translation": "A: Ei, irmão. Você tem tempo no fim de semana? Vontade de se encontrar?",
+    "tokens": [
+      "A:",
+      "Hey",
+      ",",
+      "Bruder",
+      ".",
+      "Hast",
+      "du",
+      "am",
+      "Wochenende",
+      "Zeit",
+      "?",
+      "Lust",
+      ",",
+      "dich",
+      "zu",
+      "treffen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Bruder",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 1,
+        "word": "Wochenende",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 2,
+        "word": "Zeit",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 3,
+        "word": "Lust",
+        "pinyin": "",
+        "meaning": "vontade, desejo"
+      },
+      {
+        "id": 4,
+        "word": "treffen",
+        "pinyin": "",
+        "meaning": "encontrar-se"
+      }
+    ],
+    "id": "local-1772293242428-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Warum willst du dich treffen?",
+    "pinyin": "",
+    "translation": "B: Por que você quer se encontrar?",
+    "tokens": [
+      "B:",
+      "Warum",
+      "willst",
+      "du",
+      "dich",
+      "treffen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Warum",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 1,
+        "word": "treffen",
+        "pinyin": "",
+        "meaning": "encontrar-se"
+      }
+    ],
+    "id": "local-1772293242428-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Hehe! Ich heirate, Bruder. Ich überreiche dir hiermit die Einladung!",
+    "pinyin": "",
+    "translation": "A: Hehe! Eu vou casar, irmão. Eu te entrego o convite com isto!",
+    "tokens": [
+      "A:",
+      "Hehe",
+      "!",
+      "Ich",
+      "heirate",
+      ",",
+      "Bruder",
+      ".",
+      "Ich",
+      "überreiche",
+      "dir",
+      "hiermit",
+      "die",
+      "Einladung",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "heirate (heiraten)",
+        "pinyin": "",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 1,
+        "word": "Bruder",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "überreiche (überreichen)",
+        "pinyin": "",
+        "meaning": "entregar"
+      },
+      {
+        "id": 3,
+        "word": "hiermit",
+        "pinyin": "",
+        "meaning": "com isto, aqui"
+      },
+      {
+        "id": 4,
+        "word": "Einladung",
+        "pinyin": "",
+        "meaning": "convite"
+      }
+    ],
+    "id": "local-1772293242428-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hä?! Herzlichen Glückwunsch! Wie viele Tische hast du?",
+    "pinyin": "",
+    "translation": "B: Hã?! Parabéns! Quantas mesas você tem?",
+    "tokens": [
+      "B:",
+      "Hä",
+      "?!",
+      "Herzlichen",
+      "Glückwunsch",
+      "!",
+      "Wie",
+      "viele",
+      "Tische",
+      "hast",
+      "du",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Herzlichen Glückwunsch",
+        "pinyin": "",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 1,
+        "word": "Tische (Tisch)",
+        "pinyin": "",
+        "meaning": "mesas"
+      }
+    ],
+    "id": "local-1772293242428-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: 12 Tische. Es ist heutzutage schwierig, ein Hotel zu buchen, und auch einen Hochzeitsplaner zu finden. Wir haben es vor einem Jahr geplant.",
+    "pinyin": "",
+    "translation": "A: 12 mesas. Hoje em dia é difícil reservar um hotel e também encontrar um planejador de casamentos. Nós planejamos isso há um ano.",
+    "tokens": [
+      "A:",
+      "12",
+      "Tische",
+      ".",
+      "Es",
+      "ist",
+      "heutzutage",
+      "schwierig",
+      ",",
+      "ein",
+      "Hotel",
+      "zu",
+      "buchen",
+      ",",
+      "und",
+      "auch",
+      "einen",
+      "Hochzeitsplaner",
+      "zu",
+      "finden",
+      ".",
+      "Wir",
+      "haben",
+      "es",
+      "vor",
+      "einem",
+      "Jahr",
+      "geplant",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Tische (Tisch)",
+        "pinyin": "",
+        "meaning": "mesas"
+      },
+      {
+        "id": 1,
+        "word": "heutzutage",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "schwierig",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 3,
+        "word": "Hotel",
+        "pinyin": "",
+        "meaning": "hotel"
+      },
+      {
+        "id": 4,
+        "word": "buchen",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 5,
+        "word": "Hochzeitsplaner",
+        "pinyin": "",
+        "meaning": "planejador de casamentos"
+      },
+      {
+        "id": 6,
+        "word": "finden",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 7,
+        "word": "Jahr",
+        "pinyin": "",
+        "meaning": "ano"
+      },
+      {
+        "id": 8,
+        "word": "geplant (planen)",
+        "pinyin": "",
+        "meaning": "planejado"
+      }
+    ],
+    "id": "local-1772293242428-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Da kann man nichts machen. Ihr könntet doch eine Hochzeit im Ausland machen!",
+    "pinyin": "",
+    "translation": "B: Não há nada a fazer. Vocês poderiam fazer um casamento no exterior!",
+    "tokens": [
+      "B:",
+      "Da",
+      "kann",
+      "man",
+      "nichts",
+      "machen",
+      ".",
+      "Ihr",
+      "könntet",
+      "doch",
+      "eine",
+      "Hochzeit",
+      "im",
+      "Ausland",
+      "machen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "nichts machen",
+        "pinyin": "",
+        "meaning": "não fazer nada, não há o que fazer"
+      },
+      {
+        "id": 1,
+        "word": "könntet (können)",
+        "pinyin": "",
+        "meaning": "poderiam (subjuntivo II)"
+      },
+      {
+        "id": 2,
+        "word": "Hochzeit",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 3,
+        "word": "Ausland",
+        "pinyin": "",
+        "meaning": "exterior, estrangeiro"
+      }
+    ],
+    "id": "local-1772293242428-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Die Eltern erlauben das nicht. Die sind so traditionell denkend.",
+    "pinyin": "",
+    "translation": "A: Os pais não permitem isso. Eles são tão tradicionalmente pensantes.",
+    "tokens": [
+      "A:",
+      "Die",
+      "Eltern",
+      "erlauben",
+      "das",
+      "nicht",
+      ".",
+      "Die",
+      "sind",
+      "so",
+      "traditionell",
+      "denkend",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Eltern",
+        "pinyin": "",
+        "meaning": "pais"
+      },
+      {
+        "id": 1,
+        "word": "erlauben",
+        "pinyin": "",
+        "meaning": "permitir"
+      },
+      {
+        "id": 2,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 3,
+        "word": "traditionell",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "denkend (denken)",
+        "pinyin": "",
+        "meaning": "pensante, pensando"
+      }
+    ],
+    "id": "local-1772293242428-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Und plant ihr nach der Hochzeit in die Flitterwochen zu fahren?",
+    "pinyin": "",
+    "translation": "B: E vocês planejam ir em lua de mel depois do casamento?",
+    "tokens": [
+      "B:",
+      "Und",
+      "plant",
+      "ihr",
+      "nach",
+      "der",
+      "Hochzeit",
+      "in",
+      "die",
+      "Flitterwochen",
+      "zu",
+      "fahren",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "plant (planen)",
+        "pinyin": "",
+        "meaning": "planejam"
+      },
+      {
+        "id": 1,
+        "word": "Hochzeit",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 2,
+        "word": "Flitterwochen",
+        "pinyin": "",
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 3,
+        "word": "fahren",
+        "pinyin": "",
+        "meaning": "ir, viajar"
+      }
+    ],
+    "id": "local-1772293242428-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Natürlich, sonst ist meine Frau nicht glücklich.",
+    "pinyin": "",
+    "translation": "A: Claro, senão minha esposa não fica feliz.",
+    "tokens": [
+      "A:",
+      "Natürlich",
+      ",",
+      "sonst",
+      "ist",
+      "meine",
+      "Frau",
+      "nicht",
+      "glücklich",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Natürlich",
+        "pinyin": "",
+        "meaning": "claro, naturalmente"
+      },
+      {
+        "id": 1,
+        "word": "sonst",
+        "pinyin": "",
+        "meaning": "senão"
+      },
+      {
+        "id": 2,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "esposa, mulher"
+      },
+      {
+        "id": 3,
+        "word": "glücklich",
+        "pinyin": "",
+        "meaning": "feliz"
+      }
+    ],
+    "id": "local-1772293242428-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ist deine Frau die Freundin, die du damals in der Uni hattest?",
+    "pinyin": "",
+    "translation": "B: Sua esposa é a namorada que você tinha na universidade naquela época?",
+    "tokens": [
+      "B:",
+      "Ist",
+      "deine",
+      "Frau",
+      "die",
+      "Freundin",
+      ",",
+      "die",
+      "du",
+      "damals",
+      "in",
+      "der",
+      "Uni",
+      "hattest",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 1,
+        "word": "Freundin",
+        "pinyin": "",
+        "meaning": "namorada, amiga"
+      },
+      {
+        "id": 2,
+        "word": "damals",
+        "pinyin": "",
+        "meaning": "naquela época"
+      },
+      {
+        "id": 3,
+        "word": "Uni (Universität)",
+        "pinyin": "",
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772293242428-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Mit der habe ich schon lange Schluss gemacht. Meine Frau heißt Yuanyuan. Pass auf, dass du sie nicht falsch nennst!",
+    "pinyin": "",
+    "translation": "A: Com ela eu já terminei há muito tempo. Minha esposa se chama Yuanyuan. Cuidado para não chamá-la errado!",
+    "tokens": [
+      "A:",
+      "Mit",
+      "der",
+      "habe",
+      "ich",
+      "schon",
+      "lange",
+      "Schluss",
+      "gemacht",
+      ".",
+      "Meine",
+      "Frau",
+      "heißt",
+      "Yuanyuan",
+      ".",
+      "Pass",
+      "auf",
+      ",",
+      "dass",
+      "du",
+      "sie",
+      "nicht",
+      "falsch",
+      "nennst",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Schluss gemacht (Schluss machen)",
+        "pinyin": "",
+        "meaning": "terminar (um relacionamento)"
+      },
+      {
+        "id": 1,
+        "word": "lange",
+        "pinyin": "",
+        "meaning": "muito tempo"
+      },
+      {
+        "id": 2,
+        "word": "Frau",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 3,
+        "word": "heißt (heißen)",
+        "pinyin": "",
+        "meaning": "chamar-se"
+      },
+      {
+        "id": 4,
+        "word": "Pass auf (aufpassen)",
+        "pinyin": "",
+        "meaning": "cuidado!"
+      },
+      {
+        "id": 5,
+        "word": "falsch",
+        "pinyin": "",
+        "meaning": "errado"
+      },
+      {
+        "id": 6,
+        "word": "nennst (nennen)",
+        "pinyin": "",
+        "meaning": "chamar, nomear"
+      }
+    ],
+    "id": "local-1772293242428-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Verstanden. Bis am Wochenende.",
+    "pinyin": "",
+    "translation": "B: Entendido. Até o fim de semana.",
+    "tokens": [
+      "B:",
+      "Verstanden",
+      ".",
+      "Bis",
+      "am",
+      "Wochenende",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Verstanden (verstehen)",
+        "pinyin": "",
+        "meaning": "entendido"
+      },
+      {
+        "id": 1,
+        "word": "Bis",
+        "pinyin": "",
+        "meaning": "até"
+      },
+      {
+        "id": 2,
+        "word": "Wochenende",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772293242428-11",
+    "language": "Alemão"
+  }
+]

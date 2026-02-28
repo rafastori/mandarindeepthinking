@@ -1,0 +1,779 @@
+[
+  {
+    "chinese": "A: 또 지긋지긋한 수학 시간이네. 아, 왕샤오밍, 수업 끝나고 우리 축구하러 가자.",
+    "pinyin": "",
+    "translation": "A: De novo essa aula chata de matemática. Ah, Wang Xiaoming, vamos jogar futebol depois da aula.",
+    "tokens": [
+      "또",
+      "지긋지긋한",
+      "수학",
+      "시간이네",
+      ".",
+      "아",
+      ",",
+      "왕샤오밍",
+      ",",
+      "수업",
+      "끝나고",
+      "우리",
+      "축구하러",
+      "가자",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "또",
+        "pinyin": "",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 2,
+        "word": "지긋지긋하다",
+        "pinyin": "",
+        "meaning": "estar farto de, cansado de, enfadonho"
+      },
+      {
+        "id": 3,
+        "word": "수학",
+        "pinyin": "",
+        "meaning": "matemática"
+      },
+      {
+        "id": 4,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "tempo, hora, aula"
+      },
+      {
+        "id": 5,
+        "word": "왕샤오밍",
+        "pinyin": "",
+        "meaning": "Wang Xiaoming (nome)"
+      },
+      {
+        "id": 6,
+        "word": "수업",
+        "pinyin": "",
+        "meaning": "aula, lição"
+      },
+      {
+        "id": 7,
+        "word": "끝나다",
+        "pinyin": "",
+        "meaning": "terminar, acabar"
+      },
+      {
+        "id": 8,
+        "word": "우리",
+        "pinyin": "",
+        "meaning": "nós"
+      },
+      {
+        "id": 9,
+        "word": "축구하다",
+        "pinyin": "",
+        "meaning": "jogar futebol"
+      },
+      {
+        "id": 10,
+        "word": "가다",
+        "pinyin": "",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772300148509-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 리자, 무슨 소리 하는 거야? 일어나서 우리에게 분수가 뭔지 설명해 줘.",
+    "pinyin": "",
+    "translation": "B: Li Jia, o que você está dizendo? Levante-se e explique-nos o que é uma fração.",
+    "tokens": [
+      "리자",
+      ",",
+      "무슨",
+      "소리",
+      "하는",
+      "거야",
+      "?",
+      "일어나서",
+      "우리에게",
+      "분수가",
+      "뭔지",
+      "설명해",
+      "줘",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리자",
+        "pinyin": "",
+        "meaning": "Li Jia (nome)"
+      },
+      {
+        "id": 2,
+        "word": "무슨",
+        "pinyin": "",
+        "meaning": "que tipo de, o que"
+      },
+      {
+        "id": 3,
+        "word": "소리",
+        "pinyin": "",
+        "meaning": "som, (neste contexto) fala, comentário"
+      },
+      {
+        "id": 4,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer, dizer"
+      },
+      {
+        "id": 5,
+        "word": "일어나다",
+        "pinyin": "",
+        "meaning": "levantar-se"
+      },
+      {
+        "id": 6,
+        "word": "우리에게",
+        "pinyin": "",
+        "meaning": "para nós"
+      },
+      {
+        "id": 7,
+        "word": "분수",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 8,
+        "word": "뭔지",
+        "pinyin": "",
+        "meaning": "o que é (forma contraída de 무엇인지)"
+      },
+      {
+        "id": 9,
+        "word": "설명하다",
+        "pinyin": "",
+        "meaning": "explicar"
+      }
+    ],
+    "id": "local-1772300148509-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 분수는 한 수가 다른 수의 몇 부분인지를 보여줍니다.",
+    "pinyin": "",
+    "translation": "A: Uma fração mostra quantas partes de um número um outro número é.",
+    "tokens": [
+      "분수는",
+      "한",
+      "수가",
+      "다른",
+      "수의",
+      "몇",
+      "부분인지를",
+      "보여줍니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "분수",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 2,
+        "word": "한",
+        "pinyin": "",
+        "meaning": "um, uma"
+      },
+      {
+        "id": 3,
+        "word": "수",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 4,
+        "word": "다르다",
+        "pinyin": "",
+        "meaning": "ser diferente"
+      },
+      {
+        "id": 5,
+        "word": "몇",
+        "pinyin": "",
+        "meaning": "quantos, alguns"
+      },
+      {
+        "id": 6,
+        "word": "부분",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": 7,
+        "word": "보여주다",
+        "pinyin": "",
+        "meaning": "mostrar"
+      }
+    ],
+    "id": "local-1772300148509-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 예를 들어 줄 수 있니?",
+    "pinyin": "",
+    "translation": "B: Você pode me dar um exemplo?",
+    "tokens": [
+      "예를",
+      "들어",
+      "줄",
+      "수",
+      "있니",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "예를 들다",
+        "pinyin": "",
+        "meaning": "dar um exemplo"
+      },
+      {
+        "id": 2,
+        "word": "주다",
+        "pinyin": "",
+        "meaning": "dar"
+      },
+      {
+        "id": 3,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772300148509-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 예를 들어, 사과 세 개에서 사과 한 개를 가져가면 그게 3분의 1입니다.",
+    "pinyin": "",
+    "translation": "A: Por exemplo, se você pegar uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "예를",
+      "들어",
+      ",",
+      "사과",
+      "세",
+      "개에서",
+      "사과",
+      "한",
+      "개를",
+      "가져가면",
+      "그게",
+      "3분의",
+      "1입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "예를 들다",
+        "pinyin": "",
+        "meaning": "dar um exemplo"
+      },
+      {
+        "id": 2,
+        "word": "사과",
+        "pinyin": "",
+        "meaning": "maçã"
+      },
+      {
+        "id": 3,
+        "word": "세",
+        "pinyin": "",
+        "meaning": "três (usado com contadores)"
+      },
+      {
+        "id": 4,
+        "word": "개",
+        "pinyin": "",
+        "meaning": "unidade, item (contador)"
+      },
+      {
+        "id": 5,
+        "word": "한",
+        "pinyin": "",
+        "meaning": "um (usado com contadores)"
+      },
+      {
+        "id": 6,
+        "word": "가져가다",
+        "pinyin": "",
+        "meaning": "levar, pegar"
+      },
+      {
+        "id": 7,
+        "word": "그게",
+        "pinyin": "",
+        "meaning": "isso é (forma contraída de 그것이)"
+      },
+      {
+        "id": 8,
+        "word": "3분의 1",
+        "pinyin": "",
+        "meaning": "um terço"
+      }
+    ],
+    "id": "local-1772300148509-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋아, 그럼 어떻게 쓰니?",
+    "pinyin": "",
+    "translation": "B: Certo, então como se escreve?",
+    "tokens": [
+      "좋아",
+      ",",
+      "그럼",
+      "어떻게",
+      "쓰니",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋다",
+        "pinyin": "",
+        "meaning": "ser bom, certo, ok"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "escrever"
+      }
+    ],
+    "id": "local-1772300148509-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 먼저 분수선을 그립니다. '위쪽'은 분자이고 분수선 위에 씁니다. '아래쪽'은 분모이고 아래에 씁니다.",
+    "pinyin": "",
+    "translation": "A: Primeiro, desenhe a linha da fração. O 'lado de cima' é o numerador e é escrito acima da linha da fração. O 'lado de baixo' é o denominador e é escrito abaixo.",
+    "tokens": [
+      "먼저",
+      "분수선을",
+      "그립니다",
+      ".",
+      "'위쪽'은",
+      "분자이고",
+      "분수선",
+      "위에",
+      "씁니다",
+      ".",
+      "'아래쪽'은",
+      "분모이고",
+      "아래에",
+      "씁니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "먼저",
+        "pinyin": "",
+        "meaning": "primeiro, antes"
+      },
+      {
+        "id": 2,
+        "word": "분수선",
+        "pinyin": "",
+        "meaning": "linha da fração"
+      },
+      {
+        "id": 3,
+        "word": "그리다",
+        "pinyin": "",
+        "meaning": "desenhar"
+      },
+      {
+        "id": 4,
+        "word": "위쪽",
+        "pinyin": "",
+        "meaning": "lado de cima, parte superior"
+      },
+      {
+        "id": 5,
+        "word": "분자",
+        "pinyin": "",
+        "meaning": "numerador"
+      },
+      {
+        "id": 6,
+        "word": "위",
+        "pinyin": "",
+        "meaning": "acima, em cima"
+      },
+      {
+        "id": 7,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "escrever"
+      },
+      {
+        "id": 8,
+        "word": "아래쪽",
+        "pinyin": "",
+        "meaning": "lado de baixo, parte inferior"
+      },
+      {
+        "id": 9,
+        "word": "분모",
+        "pinyin": "",
+        "meaning": "denominador"
+      },
+      {
+        "id": 10,
+        "word": "아래",
+        "pinyin": "",
+        "meaning": "abaixo, embaixo"
+      }
+    ],
+    "id": "local-1772300148509-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋아. 그럼 백분율은 뭐니?",
+    "pinyin": "",
+    "translation": "B: Certo. Então o que é uma porcentagem?",
+    "tokens": [
+      "좋아",
+      ".",
+      "그럼",
+      "백분율은",
+      "뭐니",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋다",
+        "pinyin": "",
+        "meaning": "ser bom, certo, ok"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "백분율",
+        "pinyin": "",
+        "meaning": "porcentagem"
+      },
+      {
+        "id": 4,
+        "word": "뭐니",
+        "pinyin": "",
+        "meaning": "o que é (forma contraída de 무엇이니)"
+      }
+    ],
+    "id": "local-1772300148509-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그건 100의 분수입니다. 예를 들어, 4분의 1은 25퍼센트이고, 2분의 1은 50퍼센트입니다.",
+    "pinyin": "",
+    "translation": "A: É uma fração de 100. Por exemplo, um quarto é 25 por cento, e um meio é 50 por cento.",
+    "tokens": [
+      "그건",
+      "100의",
+      "분수입니다",
+      ".",
+      "예를",
+      "들어",
+      ",",
+      "4분의",
+      "1은",
+      "25퍼센트이고",
+      ",",
+      "2분의",
+      "1은",
+      "50퍼센트입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그건",
+        "pinyin": "",
+        "meaning": "isso é (forma contraída de 그것은)"
+      },
+      {
+        "id": 2,
+        "word": "100",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 3,
+        "word": "분수",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 4,
+        "word": "예를 들다",
+        "pinyin": "",
+        "meaning": "dar um exemplo"
+      },
+      {
+        "id": 5,
+        "word": "4분의 1",
+        "pinyin": "",
+        "meaning": "um quarto"
+      },
+      {
+        "id": 6,
+        "word": "퍼센트",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 7,
+        "word": "2분의 1",
+        "pinyin": "",
+        "meaning": "um meio"
+      }
+    ],
+    "id": "local-1772300148509-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 '몇 할'은 뭐니?",
+    "pinyin": "",
+    "translation": "B: Então o que é '몇 할' (décimos)?",
+    "tokens": [
+      "그럼",
+      "'몇",
+      "할'은",
+      "뭐니",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "몇",
+        "pinyin": "",
+        "meaning": "quantos, alguns"
+      },
+      {
+        "id": 3,
+        "word": "할",
+        "pinyin": "",
+        "meaning": "décimo (unidade de fração decimal, ex: 1할 = 0.1)"
+      },
+      {
+        "id": 4,
+        "word": "뭐니",
+        "pinyin": "",
+        "meaning": "o que é (forma contraída de 무엇이니)"
+      }
+    ],
+    "id": "local-1772300148509-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: '1할'은 10의 분수입니다. 예를 들어, '9할'은 10분의 9이고, 90퍼센트입니다.",
+    "pinyin": "",
+    "translation": "A: '1 hal' é uma fração de 10. Por exemplo, '9 hal' é nove décimos, e 90 por cento.",
+    "tokens": [
+      "'1할'은",
+      "10의",
+      "분수입니다",
+      ".",
+      "예를",
+      "들어",
+      ",",
+      "'9할'은",
+      "10분의",
+      "9이고",
+      ",",
+      "90퍼센트입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "1할",
+        "pinyin": "",
+        "meaning": "um décimo (0.1)"
+      },
+      {
+        "id": 2,
+        "word": "10",
+        "pinyin": "",
+        "meaning": "dez"
+      },
+      {
+        "id": 3,
+        "word": "분수",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 4,
+        "word": "예를 들다",
+        "pinyin": "",
+        "meaning": "dar um exemplo"
+      },
+      {
+        "id": 5,
+        "word": "9할",
+        "pinyin": "",
+        "meaning": "nove décimos (0.9)"
+      },
+      {
+        "id": 6,
+        "word": "10분의 9",
+        "pinyin": "",
+        "meaning": "nove décimos (como fração)"
+      },
+      {
+        "id": 7,
+        "word": "90",
+        "pinyin": "",
+        "meaning": "noventa"
+      },
+      {
+        "id": 8,
+        "word": "퍼센트",
+        "pinyin": "",
+        "meaning": "por cento"
+      }
+    ],
+    "id": "local-1772300148509-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 앞으로 수업 시간에 졸지 마! 그리고 말하지 마! 다시 말하면 벌로 가만히 서 있어!",
+    "pinyin": "",
+    "translation": "B: No futuro, não durma na aula! E não fale! Se você falar de novo, ficará parado como punição!",
+    "tokens": [
+      "앞으로",
+      "수업",
+      "시간에",
+      "졸지",
+      "마",
+      "!",
+      "그리고",
+      "말하지",
+      "마",
+      "!",
+      "다시",
+      "말하면",
+      "벌로",
+      "가만히",
+      "서",
+      "있어",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "앞으로",
+        "pinyin": "",
+        "meaning": "no futuro, de agora em diante"
+      },
+      {
+        "id": 2,
+        "word": "수업 시간",
+        "pinyin": "",
+        "meaning": "horário de aula"
+      },
+      {
+        "id": 3,
+        "word": "졸다",
+        "pinyin": "",
+        "meaning": "cabecear de sono, cochilar"
+      },
+      {
+        "id": 4,
+        "word": "말다",
+        "pinyin": "",
+        "meaning": "parar de, não fazer (usado com -지 마)"
+      },
+      {
+        "id": 5,
+        "word": "그리고",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 6,
+        "word": "말하다",
+        "pinyin": "",
+        "meaning": "falar, dizer"
+      },
+      {
+        "id": 7,
+        "word": "다시",
+        "pinyin": "",
+        "meaning": "novamente"
+      },
+      {
+        "id": 8,
+        "word": "벌",
+        "pinyin": "",
+        "meaning": "punição"
+      },
+      {
+        "id": 9,
+        "word": "가만히",
+        "pinyin": "",
+        "meaning": "parado, imóvel"
+      },
+      {
+        "id": 10,
+        "word": "서다",
+        "pinyin": "",
+        "meaning": "ficar em pé, parar"
+      },
+      {
+        "id": 11,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "estar (서 있다 = estar em pé)"
+      }
+    ],
+    "id": "local-1772300148509-11",
+    "language": "Coreano"
+  }
+]

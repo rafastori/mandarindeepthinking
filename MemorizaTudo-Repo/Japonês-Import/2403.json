@@ -1,0 +1,1673 @@
+[
+  {
+    "chinese": "A: ねえ、タクシーを予約する電話番号は何ですか？",
+    "pinyin": "",
+    "translation": "A: Ei, qual é o número de telefone para reservar um táxi?",
+    "tokens": [
+      "A:",
+      "ねえ",
+      "、",
+      "タクシー",
+      "を",
+      "予約する",
+      "電話番号",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ねえ",
+        "pinyin": "",
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "タクシー",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 3,
+        "word": "予約する",
+        "pinyin": "",
+        "meaning": "reservar, marcar"
+      },
+      {
+        "id": 4,
+        "word": "電話番号",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 5,
+        "word": "何",
+        "pinyin": "",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772294431132-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えっ？今時、誰がタクシーを予約するのに電話を使うんですか？",
+    "pinyin": "",
+    "translation": "B: Hã? Hoje em dia, quem usa o telefone para reservar um táxi?",
+    "tokens": [
+      "B:",
+      "えっ",
+      "？",
+      "今時",
+      "、",
+      "誰",
+      "が",
+      "タクシー",
+      "を",
+      "予約する",
+      "の",
+      "に",
+      "電話",
+      "を",
+      "使う",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "えっ",
+        "pinyin": "",
+        "meaning": "Hã?, O quê?"
+      },
+      {
+        "id": 2,
+        "word": "今時",
+        "pinyin": "",
+        "meaning": "hoje em dia, atualmente"
+      },
+      {
+        "id": 3,
+        "word": "誰",
+        "pinyin": "",
+        "meaning": "quem"
+      },
+      {
+        "id": 4,
+        "word": "電話",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772294431132-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、どうやって予約するんですか？",
+    "pinyin": "",
+    "translation": "A: Então, como se reserva?",
+    "tokens": [
+      "A:",
+      "じゃあ",
+      "、",
+      "どうやって",
+      "予約する",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "どうやって",
+        "pinyin": "",
+        "meaning": "como fazer"
+      },
+      {
+        "id": 3,
+        "word": "予約する",
+        "pinyin": "",
+        "meaning": "reservar, marcar"
+      }
+    ],
+    "id": "local-1772294431132-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: タクシー配車アプリを使います。携帯電話にダウンロードすればいいですよ。",
+    "pinyin": "",
+    "translation": "B: Eu uso um aplicativo de táxi. É só baixar no seu celular.",
+    "tokens": [
+      "B:",
+      "タクシー",
+      "配車",
+      "アプリ",
+      "を",
+      "使い",
+      "ます",
+      "。",
+      "携帯電話",
+      "に",
+      "ダウンロード",
+      "すれば",
+      "いい",
+      "です",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "配車",
+        "pinyin": "",
+        "meaning": "chamar um veículo, despacho de táxi"
+      },
+      {
+        "id": 2,
+        "word": "アプリ",
+        "pinyin": "",
+        "meaning": "aplicativo"
+      },
+      {
+        "id": 3,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "携帯電話",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 5,
+        "word": "ダウンロードする",
+        "pinyin": "",
+        "meaning": "baixar, fazer download"
+      },
+      {
+        "id": 6,
+        "word": "すればいい",
+        "pinyin": "",
+        "meaning": "é só fazer, seria bom fazer"
+      }
+    ],
+    "id": "local-1772294431132-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ああ。それからどうするんですか？",
+    "pinyin": "",
+    "translation": "A: Ah. E depois?",
+    "tokens": [
+      "A:",
+      "ああ",
+      "。",
+      "それから",
+      "どうする",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "それから",
+        "pinyin": "",
+        "meaning": "depois disso, em seguida"
+      },
+      {
+        "id": 3,
+        "word": "どうする",
+        "pinyin": "",
+        "meaning": "o que fazer"
+      }
+    ],
+    "id": "local-1772294431132-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 電話番号を入力すれば、直接登録できます。",
+    "pinyin": "",
+    "translation": "B: Se você inserir seu número de telefone, poderá se registrar diretamente.",
+    "tokens": [
+      "B:",
+      "電話番号",
+      "を",
+      "入力する",
+      "すれば",
+      "、",
+      "直接",
+      "登録",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "電話番号",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 2,
+        "word": "入力する",
+        "pinyin": "",
+        "meaning": "inserir, digitar"
+      },
+      {
+        "id": 3,
+        "word": "直接",
+        "pinyin": "",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 4,
+        "word": "登録する",
+        "pinyin": "",
+        "meaning": "registrar, cadastrar"
+      },
+      {
+        "id": 5,
+        "word": "できる",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772294431132-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、どうやって私の居場所がわかるんですか？",
+    "pinyin": "",
+    "translation": "A: Então, como eles saberão minha localização?",
+    "tokens": [
+      "A:",
+      "じゃあ",
+      "、",
+      "どうやって",
+      "私",
+      "の",
+      "居場所",
+      "が",
+      "わかる",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "どうやって",
+        "pinyin": "",
+        "meaning": "como fazer"
+      },
+      {
+        "id": 3,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "居場所",
+        "pinyin": "",
+        "meaning": "localização, paradeiro"
+      },
+      {
+        "id": 5,
+        "word": "わかる",
+        "pinyin": "",
+        "meaning": "saber, entender"
+      }
+    ],
+    "id": "local-1772294431132-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: GPSであなたの位置をすぐに特定できますし、近くのタクシーがすぐに来ますよ。もちろん、音声メッセージを残すこともできます。",
+    "pinyin": "",
+    "translation": "B: O GPS pode identificar sua posição rapidamente, e um táxi próximo virá imediatamente. Claro, você também pode deixar uma mensagem de voz.",
+    "tokens": [
+      "B:",
+      "GPS",
+      "で",
+      "あなた",
+      "の",
+      "位置",
+      "を",
+      "すぐに",
+      "特定",
+      "でき",
+      "ます",
+      "し",
+      "、",
+      "近く",
+      "の",
+      "タクシー",
+      "が",
+      "すぐに",
+      "来",
+      "ます",
+      "よ",
+      "。",
+      "もちろん",
+      "、",
+      "音声",
+      "メッセージ",
+      "を",
+      "残す",
+      "こと",
+      "も",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "GPS",
+        "pinyin": "",
+        "meaning": "GPS"
+      },
+      {
+        "id": 2,
+        "word": "あなた",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "位置",
+        "pinyin": "",
+        "meaning": "posição, localização"
+      },
+      {
+        "id": 4,
+        "word": "すぐに",
+        "pinyin": "",
+        "meaning": "imediatamente, logo"
+      },
+      {
+        "id": 5,
+        "word": "特定する",
+        "pinyin": "",
+        "meaning": "identificar, localizar"
+      },
+      {
+        "id": 6,
+        "word": "近く",
+        "pinyin": "",
+        "meaning": "próximo, por perto"
+      },
+      {
+        "id": 7,
+        "word": "来る",
+        "pinyin": "",
+        "meaning": "vir"
+      },
+      {
+        "id": 8,
+        "word": "もちろん",
+        "pinyin": "",
+        "meaning": "claro, certamente"
+      },
+      {
+        "id": 9,
+        "word": "音声メッセージ",
+        "pinyin": "",
+        "meaning": "mensagem de voz"
+      },
+      {
+        "id": 10,
+        "word": "残す",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 11,
+        "word": "できる",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772294431132-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: なかなか良さそうですね。使ったことがありますか？",
+    "pinyin": "",
+    "translation": "A: Parece muito bom. Você já usou?",
+    "tokens": [
+      "A:",
+      "なかなか",
+      "良さそう",
+      "です",
+      "ね",
+      "。",
+      "使っ",
+      "た",
+      "こと",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "なかなか",
+        "pinyin": "",
+        "meaning": "muito, bastante, consideravelmente"
+      },
+      {
+        "id": 2,
+        "word": "良さそう",
+        "pinyin": "",
+        "meaning": "parece bom"
+      },
+      {
+        "id": 3,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "～たことがある",
+        "pinyin": "",
+        "meaning": "já fez (ter a experiência de)"
+      }
+    ],
+    "id": "local-1772294431132-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: もちろんです。最近雨が多くてタクシーが捕まえにくかったんです。このアプリは便利だし、速いですよ。",
+    "pinyin": "",
+    "translation": "B: Claro. Recentemente, choveu muito e foi difícil pegar um táxi. Este aplicativo é conveniente e rápido.",
+    "tokens": [
+      "B:",
+      "もちろん",
+      "です",
+      "。",
+      "最近",
+      "雨",
+      "が",
+      "多く",
+      "て",
+      "タクシー",
+      "が",
+      "捕まえにくい",
+      "かっ",
+      "た",
+      "ん",
+      "です",
+      "。",
+      "この",
+      "アプリ",
+      "は",
+      "便利",
+      "だし",
+      "、",
+      "速い",
+      "です",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "もちろん",
+        "pinyin": "",
+        "meaning": "claro, certamente"
+      },
+      {
+        "id": 2,
+        "word": "最近",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 3,
+        "word": "雨が多い",
+        "pinyin": "",
+        "meaning": "chover muito"
+      },
+      {
+        "id": 4,
+        "word": "捕まえる",
+        "pinyin": "",
+        "meaning": "pegar, capturar"
+      },
+      {
+        "id": 5,
+        "word": "～にくい",
+        "pinyin": "",
+        "meaning": "difícil de fazer"
+      },
+      {
+        "id": 6,
+        "word": "アプリ",
+        "pinyin": "",
+        "meaning": "aplicativo"
+      },
+      {
+        "id": 7,
+        "word": "便利",
+        "pinyin": "",
+        "meaning": "conveniente, útil"
+      },
+      {
+        "id": 8,
+        "word": "速い",
+        "pinyin": "",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772294431132-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 今度試してみます。どうやって支払うんですか？",
+    "pinyin": "",
+    "translation": "A: Vou experimentar da próxima vez. Como se paga?",
+    "tokens": [
+      "A:",
+      "今度",
+      "試し",
+      "て",
+      "み",
+      "ます",
+      "。",
+      "どうやって",
+      "支払う",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今度",
+        "pinyin": "",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 2,
+        "word": "試す",
+        "pinyin": "",
+        "meaning": "tentar, experimentar"
+      },
+      {
+        "id": 3,
+        "word": "どうやって",
+        "pinyin": "",
+        "meaning": "como fazer"
+      },
+      {
+        "id": 4,
+        "word": "支払う",
+        "pinyin": "",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772294431132-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 現金か、携帯のAlipayアカウントで支払えます。時々、そうすると5元安くなることもありますよ。",
+    "pinyin": "",
+    "translation": "B: Você pode pagar em dinheiro ou com sua conta Alipay no celular. Às vezes, se você fizer isso, pode ficar 5 yuans mais barato.",
+    "tokens": [
+      "B:",
+      "現金",
+      "か",
+      "、",
+      "携帯",
+      "の",
+      "Alipay",
+      "アカウント",
+      "で",
+      "支払え",
+      "ます",
+      "。",
+      "時々",
+      "、",
+      "そうすると",
+      "5",
+      "元",
+      "安く",
+      "なる",
+      "こと",
+      "も",
+      "あり",
+      "ます",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "現金",
+        "pinyin": "",
+        "meaning": "dinheiro em espécie"
+      },
+      {
+        "id": 2,
+        "word": "携帯",
+        "pinyin": "",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "Alipay",
+        "pinyin": "",
+        "meaning": "Alipay"
+      },
+      {
+        "id": 4,
+        "word": "アカウント",
+        "pinyin": "",
+        "meaning": "conta"
+      },
+      {
+        "id": 5,
+        "word": "支払える",
+        "pinyin": "",
+        "meaning": "poder pagar"
+      },
+      {
+        "id": 6,
+        "word": "時々",
+        "pinyin": "",
+        "meaning": "às vezes"
+      },
+      {
+        "id": 7,
+        "word": "そうすると",
+        "pinyin": "",
+        "meaning": "se fizer isso, nesse caso"
+      },
+      {
+        "id": 8,
+        "word": "元",
+        "pinyin": "",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 9,
+        "word": "安くなる",
+        "pinyin": "",
+        "meaning": "ficar mais barato"
+      }
+    ],
+    "id": "local-1772294431132-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 本当ですか？じゃあ、今すぐ使ってみます！",
+    "pinyin": "",
+    "translation": "A: É verdade? Então, vou usar agora mesmo!",
+    "tokens": [
+      "A:",
+      "本当",
+      "です",
+      "か",
+      "？",
+      "じゃあ",
+      "、",
+      "今すぐ",
+      "使っ",
+      "て",
+      "み",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "",
+        "meaning": "verdade"
+      },
+      {
+        "id": 2,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "今すぐ",
+        "pinyin": "",
+        "meaning": "agora mesmo, imediatamente"
+      },
+      {
+        "id": 4,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772294431132-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: スピン、ジャンプ、スライド。わあ、キム・ヨナの動きは本当に美しいですね。",
+    "pinyin": "",
+    "translation": "A: Spins, saltos, deslizes. Uau, os movimentos de Yuna Kim são realmente lindos.",
+    "tokens": [
+      "A:",
+      "スピン",
+      "、",
+      "ジャンプ",
+      "、",
+      "スライド",
+      "。",
+      "わあ",
+      "、",
+      "キム・ヨナ",
+      "の",
+      "動き",
+      "は",
+      "本当に",
+      "美しい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "スピン",
+        "pinyin": "",
+        "meaning": "spin"
+      },
+      {
+        "id": 2,
+        "word": "ジャンプ",
+        "pinyin": "",
+        "meaning": "jump"
+      },
+      {
+        "id": 3,
+        "word": "スライド",
+        "pinyin": "",
+        "meaning": "slide"
+      },
+      {
+        "id": 4,
+        "word": "わあ",
+        "pinyin": "",
+        "meaning": "uau"
+      },
+      {
+        "id": 5,
+        "word": "キム・ヨナ",
+        "pinyin": "",
+        "meaning": "Kim Yuna"
+      },
+      {
+        "id": 6,
+        "word": "動き",
+        "pinyin": "",
+        "meaning": "movimento"
+      },
+      {
+        "id": 7,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 8,
+        "word": "美しい",
+        "pinyin": "",
+        "meaning": "bonito, belo"
+      }
+    ],
+    "id": "local-1772294431132-13",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 冬季オリンピックのフィギュアスケートを見ていますか？ああ、この人はあの韓国の若い天才ですね。",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à patinação artística das Olimpíadas de Inverno? Ah, essa pessoa é aquela jovem gênia coreana, não é?",
+    "tokens": [
+      "B:",
+      "冬季",
+      "オリンピック",
+      "の",
+      "フィギュアスケート",
+      "を",
+      "見",
+      "て",
+      "い",
+      "ます",
+      "か",
+      "？",
+      "ああ",
+      "、",
+      "この",
+      "人",
+      "は",
+      "あの",
+      "韓国",
+      "の",
+      "若い",
+      "天才",
+      "です",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "冬季オリンピック",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 2,
+        "word": "フィギュアスケート",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 4,
+        "word": "人",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 5,
+        "word": "韓国",
+        "pinyin": "",
+        "meaning": "Coreia do Sul"
+      },
+      {
+        "id": 6,
+        "word": "若い",
+        "pinyin": "",
+        "meaning": "jovem"
+      },
+      {
+        "id": 7,
+        "word": "天才",
+        "pinyin": "",
+        "meaning": "gênio"
+      }
+    ],
+    "id": "local-1772294431132-14",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ええ。彼女の動きがどれほど美しいか見てください！",
+    "pinyin": "",
+    "translation": "A: Sim. Veja como os movimentos dela são bonitos!",
+    "tokens": [
+      "A:",
+      "ええ",
+      "。",
+      "彼女",
+      "の",
+      "動き",
+      "が",
+      "どれほど",
+      "美しい",
+      "か",
+      "見",
+      "て",
+      "ください",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええ",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "彼女",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 3,
+        "word": "動き",
+        "pinyin": "",
+        "meaning": "movimento"
+      },
+      {
+        "id": 4,
+        "word": "どれほど",
+        "pinyin": "",
+        "meaning": "quão, o quanto"
+      },
+      {
+        "id": 5,
+        "word": "美しい",
+        "pinyin": "",
+        "meaning": "bonito, belo"
+      },
+      {
+        "id": 6,
+        "word": "見てください",
+        "pinyin": "",
+        "meaning": "por favor, veja"
+      }
+    ],
+    "id": "local-1772294431132-15",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: でも、今回の冬季オリンピックでは金メダルを取れませんでしたね。4年前のバンクーバーオリンピックの時が彼女の絶頂期だったと思います。",
+    "pinyin": "",
+    "translation": "B: Mas ela não conseguiu a medalha de ouro nestas Olimpíadas de Inverno, não é? Acho que as Olimpíadas de Vancouver, há 4 anos, foram o auge dela.",
+    "tokens": [
+      "B:",
+      "でも",
+      "、",
+      "今回",
+      "の",
+      "冬季",
+      "オリンピック",
+      "で",
+      "は",
+      "金メダル",
+      "を",
+      "取れ",
+      "ませ",
+      "ん",
+      "でし",
+      "た",
+      "ね",
+      "。",
+      "4",
+      "年",
+      "前",
+      "の",
+      "バンクーバー",
+      "オリンピック",
+      "の",
+      "時",
+      "が",
+      "彼女",
+      "の",
+      "絶頂期",
+      "だっ",
+      "た",
+      "と",
+      "思い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "今回",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 3,
+        "word": "冬季オリンピック",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 4,
+        "word": "金メダル",
+        "pinyin": "",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 5,
+        "word": "取れない",
+        "pinyin": "",
+        "meaning": "não conseguir, não pegar"
+      },
+      {
+        "id": 6,
+        "word": "4年前",
+        "pinyin": "",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 7,
+        "word": "バンクーバーオリンピック",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Vancouver"
+      },
+      {
+        "id": 8,
+        "word": "時",
+        "pinyin": "",
+        "meaning": "época, tempo"
+      },
+      {
+        "id": 9,
+        "word": "彼女",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 10,
+        "word": "絶頂期",
+        "pinyin": "",
+        "meaning": "auge, ápice"
+      },
+      {
+        "id": 11,
+        "word": "思う",
+        "pinyin": "",
+        "meaning": "achar, pensar"
+      }
+    ],
+    "id": "local-1772294431132-16",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私の心の中では、彼女は永遠に氷上の女王です！今回金メダルは取れませんでしたが、彼女の演技はやはり素晴らしかったです。今回の冬季オリンピックで引退してしまうのは残念ですね。",
+    "pinyin": "",
+    "translation": "A: No meu coração, ela é eternamente a Rainha do Gelo! Embora não tenha ganhado a medalha de ouro desta vez, sua performance foi, de fato, maravilhosa. É uma pena que ela vá se aposentar nestas Olimpíadas de Inverno.",
+    "tokens": [
+      "A:",
+      "私",
+      "の",
+      "心",
+      "の",
+      "中",
+      "で",
+      "は",
+      "、",
+      "彼女",
+      "は",
+      "永遠に",
+      "氷上",
+      "の",
+      "女王",
+      "です",
+      "！",
+      "今回",
+      "金メダル",
+      "は",
+      "取れ",
+      "ませ",
+      "ん",
+      "でし",
+      "た",
+      "が",
+      "、",
+      "彼女",
+      "の",
+      "演技",
+      "は",
+      "やはり",
+      "素晴らしかっ",
+      "た",
+      "です",
+      "。",
+      "今回",
+      "の",
+      "冬季",
+      "オリンピック",
+      "で",
+      "引退",
+      "し",
+      "て",
+      "しまう",
+      "の",
+      "は",
+      "残念",
+      "です",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "心",
+        "pinyin": "",
+        "meaning": "coração, mente"
+      },
+      {
+        "id": 3,
+        "word": "中",
+        "pinyin": "",
+        "meaning": "dentro"
+      },
+      {
+        "id": 4,
+        "word": "彼女",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 5,
+        "word": "永遠に",
+        "pinyin": "",
+        "meaning": "eternamente, para sempre"
+      },
+      {
+        "id": 6,
+        "word": "氷上",
+        "pinyin": "",
+        "meaning": "no gelo"
+      },
+      {
+        "id": 7,
+        "word": "女王",
+        "pinyin": "",
+        "meaning": "rainha"
+      },
+      {
+        "id": 8,
+        "word": "今回",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 9,
+        "word": "金メダル",
+        "pinyin": "",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 10,
+        "word": "取れない",
+        "pinyin": "",
+        "meaning": "não conseguir, não pegar"
+      },
+      {
+        "id": 11,
+        "word": "演技",
+        "pinyin": "",
+        "meaning": "performance, atuação"
+      },
+      {
+        "id": 12,
+        "word": "やはり",
+        "pinyin": "",
+        "meaning": "como esperado, de fato"
+      },
+      {
+        "id": 13,
+        "word": "素晴らしい",
+        "pinyin": "",
+        "meaning": "maravilhoso, excelente"
+      },
+      {
+        "id": 14,
+        "word": "冬季オリンピック",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 15,
+        "word": "引退する",
+        "pinyin": "",
+        "meaning": "aposentar-se"
+      },
+      {
+        "id": 16,
+        "word": "残念",
+        "pinyin": "",
+        "meaning": "pena, lamentável"
+      }
+    ],
+    "id": "local-1772294431132-17",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 今回の女子シングルス優勝者ソトニコワも本当に素晴らしいですね。しかも、彼女はまだ17歳です。",
+    "pinyin": "",
+    "translation": "B: A vencedora do single feminino desta vez, Sotnikova, também é realmente maravilhosa. Além disso, ela ainda tem 17 anos.",
+    "tokens": [
+      "B:",
+      "今回",
+      "の",
+      "女子",
+      "シングルス",
+      "優勝者",
+      "ソトニコワ",
+      "も",
+      "本当に",
+      "素晴らしい",
+      "です",
+      "ね",
+      "。",
+      "しかも",
+      "、",
+      "彼女",
+      "は",
+      "まだ",
+      "17",
+      "歳",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今回",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 2,
+        "word": "女子シングルス",
+        "pinyin": "",
+        "meaning": "single feminino"
+      },
+      {
+        "id": 3,
+        "word": "優勝者",
+        "pinyin": "",
+        "meaning": "vencedor, campeão"
+      },
+      {
+        "id": 4,
+        "word": "ソトニコワ",
+        "pinyin": "",
+        "meaning": "Sotnikova"
+      },
+      {
+        "id": 5,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "素晴らしい",
+        "pinyin": "",
+        "meaning": "maravilhoso, excelente"
+      },
+      {
+        "id": 7,
+        "word": "しかも",
+        "pinyin": "",
+        "meaning": "além disso, e ainda por cima"
+      },
+      {
+        "id": 8,
+        "word": "彼女",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 9,
+        "word": "まだ",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 10,
+        "word": "歳",
+        "pinyin": "",
+        "meaning": "idade, anos de idade"
+      }
+    ],
+    "id": "local-1772294431132-18",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ええ。ねえ、フィギュアスケートは本当に優雅なスポーツですね。私でもまだ習えると思いますか？",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, patinação artística é um esporte realmente elegante, não é? Você acha que eu ainda consigo aprender?",
+    "tokens": [
+      "A:",
+      "ええ",
+      "。",
+      "ねえ",
+      "、",
+      "フィギュアスケート",
+      "は",
+      "本当に",
+      "優雅",
+      "な",
+      "スポーツ",
+      "です",
+      "ね",
+      "。",
+      "私",
+      "で",
+      "も",
+      "まだ",
+      "習える",
+      "と",
+      "思い",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええ",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "ねえ",
+        "pinyin": "",
+        "meaning": "Ei"
+      },
+      {
+        "id": 3,
+        "word": "フィギュアスケート",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "優雅",
+        "pinyin": "",
+        "meaning": "elegante, gracioso"
+      },
+      {
+        "id": 6,
+        "word": "スポーツ",
+        "pinyin": "",
+        "meaning": "esporte"
+      },
+      {
+        "id": 7,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 8,
+        "word": "～でも",
+        "pinyin": "",
+        "meaning": "mesmo (eu), até (eu)"
+      },
+      {
+        "id": 9,
+        "word": "まだ",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 10,
+        "word": "習える",
+        "pinyin": "",
+        "meaning": "poder aprender"
+      },
+      {
+        "id": 11,
+        "word": "思う",
+        "pinyin": "",
+        "meaning": "achar, pensar"
+      }
+    ],
+    "id": "local-1772294431132-19",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: あなたですか？やめておきなさい。テレビのこれらの選手を見てください。彼らは皆、幼い頃から始めました。今から始めたら、手遅れですよ。",
+    "pinyin": "",
+    "translation": "B: Você? Esquece isso. Olhe para esses atletas na televisão. Todos eles começaram desde pequenos. Se começar agora, será tarde demais.",
+    "tokens": [
+      "B:",
+      "あなた",
+      "です",
+      "か",
+      "？",
+      "やめておきなさい",
+      "。",
+      "テレビ",
+      "の",
+      "これら",
+      "の",
+      "選手",
+      "を",
+      "見",
+      "て",
+      "ください",
+      "。",
+      "彼ら",
+      "は",
+      "皆",
+      "、",
+      "幼い頃",
+      "から",
+      "始め",
+      "まし",
+      "た",
+      "。",
+      "今",
+      "から",
+      "始め",
+      "たら",
+      "、",
+      "手遅れ",
+      "です",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "やめておきなさい",
+        "pinyin": "",
+        "meaning": "desista, deixe pra lá, esquece"
+      },
+      {
+        "id": 3,
+        "word": "テレビ",
+        "pinyin": "",
+        "meaning": "televisão"
+      },
+      {
+        "id": 4,
+        "word": "選手",
+        "pinyin": "",
+        "meaning": "atleta, jogador"
+      },
+      {
+        "id": 5,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 6,
+        "word": "彼ら",
+        "pinyin": "",
+        "meaning": "eles"
+      },
+      {
+        "id": 7,
+        "word": "皆",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 8,
+        "word": "幼い頃",
+        "pinyin": "",
+        "meaning": "infância, quando criança"
+      },
+      {
+        "id": 9,
+        "word": "始める",
+        "pinyin": "",
+        "meaning": "começar"
+      },
+      {
+        "id": 10,
+        "word": "今から",
+        "pinyin": "",
+        "meaning": "a partir de agora"
+      },
+      {
+        "id": 11,
+        "word": "手遅れ",
+        "pinyin": "",
+        "meaning": "tarde demais"
+      }
+    ],
+    "id": "local-1772294431132-20",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私は競争したいわけではありません。ただ楽しみのためにやりたいだけです。",
+    "pinyin": "",
+    "translation": "A: Eu não quero competir. Só quero fazer por diversão.",
+    "tokens": [
+      "A:",
+      "私",
+      "は",
+      "競争",
+      "し",
+      "たい",
+      "わけ",
+      "で",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "ただ",
+      "楽しみ",
+      "の",
+      "ため",
+      "に",
+      "やり",
+      "たい",
+      "だけ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "競争する",
+        "pinyin": "",
+        "meaning": "competir"
+      },
+      {
+        "id": 3,
+        "word": "～たい",
+        "pinyin": "",
+        "meaning": "querer fazer"
+      },
+      {
+        "id": 4,
+        "word": "～わけではない",
+        "pinyin": "",
+        "meaning": "não é o caso que, não é que"
+      },
+      {
+        "id": 5,
+        "word": "ただ",
+        "pinyin": "",
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 6,
+        "word": "楽しみ",
+        "pinyin": "",
+        "meaning": "diversão, prazer"
+      },
+      {
+        "id": 7,
+        "word": "～のために",
+        "pinyin": "",
+        "meaning": "para, a fim de"
+      },
+      {
+        "id": 8,
+        "word": "やる",
+        "pinyin": "",
+        "meaning": "fazer, realizar"
+      },
+      {
+        "id": 9,
+        "word": "～だけ",
+        "pinyin": "",
+        "meaning": "apenas, somente"
+      }
+    ],
+    "id": "local-1772294431132-21",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,1053 @@
+[
+  {
+    "chinese": "小王さん、私のメールを見ましたか？何か質問はありますか？",
+    "pinyin": "",
+    "translation": "A: Sr. Wang, você viu meu e-mail? Há alguma pergunta?",
+    "tokens": [
+      "小王",
+      "さん",
+      "、",
+      "私",
+      "の",
+      "メール",
+      "を",
+      "見ました",
+      "か",
+      "？",
+      "何か",
+      "質問",
+      "は",
+      "あります",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小王",
+        "pinyin": "",
+        "meaning": "Pequeno Wang (um nome comum, aqui usado como 'Sr. Wang')"
+      },
+      {
+        "id": 2,
+        "word": "さん",
+        "pinyin": "",
+        "meaning": "Sufixo honorífico (Sr./Sra./Srta.)"
+      },
+      {
+        "id": 3,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu, meu"
+      },
+      {
+        "id": 4,
+        "word": "メール",
+        "pinyin": "",
+        "meaning": "E-mail"
+      },
+      {
+        "id": 5,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "Ver, olhar"
+      },
+      {
+        "id": 6,
+        "word": "何か",
+        "pinyin": "",
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 7,
+        "word": "質問",
+        "pinyin": "",
+        "meaning": "Pergunta"
+      },
+      {
+        "id": 8,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "Existir, ter"
+      }
+    ],
+    "id": "local-1772301144797-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "そのメールを見ました。非常に詳細でしたね。基本的に、仕事内容については理解できました。",
+    "pinyin": "",
+    "translation": "B: Eu vi o e-mail. Estava muito detalhado, não é? Basicamente, consegui entender o conteúdo do trabalho.",
+    "tokens": [
+      "その",
+      "メール",
+      "を",
+      "見ました",
+      "。",
+      "非常に",
+      "詳細",
+      "でした",
+      "ね",
+      "。",
+      "基本的に",
+      "、",
+      "仕事",
+      "内容",
+      "について",
+      "は",
+      "理解",
+      "でき",
+      "ました",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "その",
+        "pinyin": "",
+        "meaning": "Esse, essa (próximo do ouvinte)"
+      },
+      {
+        "id": 2,
+        "word": "メール",
+        "pinyin": "",
+        "meaning": "E-mail"
+      },
+      {
+        "id": 3,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "Ver, olhar"
+      },
+      {
+        "id": 4,
+        "word": "非常に",
+        "pinyin": "",
+        "meaning": "Muito, extremamente"
+      },
+      {
+        "id": 5,
+        "word": "詳細",
+        "pinyin": "",
+        "meaning": "Detalhes, detalhado"
+      },
+      {
+        "id": 6,
+        "word": "ね",
+        "pinyin": "",
+        "meaning": "Partícula de confirmação"
+      },
+      {
+        "id": 7,
+        "word": "基本的に",
+        "pinyin": "",
+        "meaning": "Basicamente"
+      },
+      {
+        "id": 8,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "Trabalho"
+      },
+      {
+        "id": 9,
+        "word": "内容",
+        "pinyin": "",
+        "meaning": "Conteúdo"
+      },
+      {
+        "id": 10,
+        "word": "について",
+        "pinyin": "",
+        "meaning": "Sobre, a respeito de"
+      },
+      {
+        "id": 11,
+        "word": "理解",
+        "pinyin": "",
+        "meaning": "Compreensão, entendimento"
+      },
+      {
+        "id": 12,
+        "word": "できる",
+        "pinyin": "",
+        "meaning": "Ser capaz de, poder"
+      }
+    ],
+    "id": "local-1772301144797-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ここに定型業務のリストがあります。月曜日から金曜日までの私の勤務スケジュールが記載されています。これを参考に、今後の仕事の段取りを組んでください。",
+    "pinyin": "",
+    "translation": "A: Aqui está uma lista de tarefas rotineiras. Nela está o meu horário de trabalho de segunda a sexta-feira. Por favor, use isso como referência para organizar as próximas tarefas.",
+    "tokens": [
+      "ここ",
+      "に",
+      "定型",
+      "業務",
+      "の",
+      "リスト",
+      "が",
+      "あります",
+      "。",
+      "月曜日",
+      "から",
+      "金曜日",
+      "まで",
+      "の",
+      "私",
+      "の",
+      "勤務",
+      "スケジュール",
+      "が",
+      "記載",
+      "され",
+      "て",
+      "います",
+      "。",
+      "これ",
+      "を",
+      "参考",
+      "に",
+      "、",
+      "今後",
+      "の",
+      "仕事",
+      "の",
+      "段取り",
+      "を",
+      "組ん",
+      "で",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ここ",
+        "pinyin": "",
+        "meaning": "Aqui"
+      },
+      {
+        "id": 2,
+        "word": "定型",
+        "pinyin": "",
+        "meaning": "Tipo fixo, padrão, rotina"
+      },
+      {
+        "id": 3,
+        "word": "業務",
+        "pinyin": "",
+        "meaning": "Tarefas, trabalho"
+      },
+      {
+        "id": 4,
+        "word": "リスト",
+        "pinyin": "",
+        "meaning": "Lista"
+      },
+      {
+        "id": 5,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "Existir, ter"
+      },
+      {
+        "id": 6,
+        "word": "月曜日",
+        "pinyin": "",
+        "meaning": "Segunda-feira"
+      },
+      {
+        "id": 7,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "De (origem, ponto de partida)"
+      },
+      {
+        "id": 8,
+        "word": "金曜日",
+        "pinyin": "",
+        "meaning": "Sexta-feira"
+      },
+      {
+        "id": 9,
+        "word": "まで",
+        "pinyin": "",
+        "meaning": "Até (limite)"
+      },
+      {
+        "id": 10,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu, meu"
+      },
+      {
+        "id": 11,
+        "word": "勤務",
+        "pinyin": "",
+        "meaning": "Serviço, trabalho"
+      },
+      {
+        "id": 12,
+        "word": "スケジュール",
+        "pinyin": "",
+        "meaning": "Cronograma, horário"
+      },
+      {
+        "id": 13,
+        "word": "記載",
+        "pinyin": "",
+        "meaning": "Descrição, registro"
+      },
+      {
+        "id": 14,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "Isso"
+      },
+      {
+        "id": 15,
+        "word": "参考",
+        "pinyin": "",
+        "meaning": "Referência"
+      },
+      {
+        "id": 16,
+        "word": "今後",
+        "pinyin": "",
+        "meaning": "De agora em diante, futuro próximo"
+      },
+      {
+        "id": 17,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "Trabalho"
+      },
+      {
+        "id": 18,
+        "word": "段取り",
+        "pinyin": "",
+        "meaning": "Organização, arranjo, planejamento"
+      },
+      {
+        "id": 19,
+        "word": "組む",
+        "pinyin": "",
+        "meaning": "Montar, organizar, formar"
+      }
+    ],
+    "id": "local-1772301144797-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ありがとうございます。そういえば、昨日、営業に関する顧客からのメールを受け取りました。どう対応すればよいですか？",
+    "pinyin": "",
+    "translation": "B: Muito obrigado. Por falar nisso, ontem recebi um e-mail de um cliente sobre vendas. Como devo lidar com isso?",
+    "tokens": [
+      "ありがとう",
+      "ございます",
+      "。",
+      "そう",
+      "いえば",
+      "、",
+      "昨日",
+      "、",
+      "営業",
+      "に関する",
+      "顧客",
+      "から",
+      "の",
+      "メール",
+      "を",
+      "受け取り",
+      "ました",
+      "。",
+      "どう",
+      "対応",
+      "すれ",
+      "ば",
+      "よい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ありがとう",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "ございます",
+        "pinyin": "",
+        "meaning": "Forma polida de 'ser/estar' ou 'ter'"
+      },
+      {
+        "id": 3,
+        "word": "そういえば",
+        "pinyin": "",
+        "meaning": "Por falar nisso, a propósito"
+      },
+      {
+        "id": 4,
+        "word": "昨日",
+        "pinyin": "",
+        "meaning": "Ontem"
+      },
+      {
+        "id": 5,
+        "word": "営業",
+        "pinyin": "",
+        "meaning": "Vendas, negócios"
+      },
+      {
+        "id": 6,
+        "word": "に関する",
+        "pinyin": "",
+        "meaning": "Relacionado a, sobre"
+      },
+      {
+        "id": 7,
+        "word": "顧客",
+        "pinyin": "",
+        "meaning": "Cliente"
+      },
+      {
+        "id": 8,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "De (origem)"
+      },
+      {
+        "id": 9,
+        "word": "メール",
+        "pinyin": "",
+        "meaning": "E-mail"
+      },
+      {
+        "id": 10,
+        "word": "受け取る",
+        "pinyin": "",
+        "meaning": "Receber"
+      },
+      {
+        "id": 11,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 12,
+        "word": "対応",
+        "pinyin": "",
+        "meaning": "Lidar com, responder"
+      },
+      {
+        "id": 13,
+        "word": "よい",
+        "pinyin": "",
+        "meaning": "Bom, está bem"
+      }
+    ],
+    "id": "local-1772301144797-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "私たちは営業担当ではないので、李明さんに直接回してもらって構いません。彼のメールアドレスは社員連絡先リストに載っています。",
+    "pinyin": "",
+    "translation": "A: Como não somos responsáveis por vendas, você pode simplesmente encaminhá-lo diretamente para Li Ming. O endereço de e-mail dele está na lista de contatos dos funcionários.",
+    "tokens": [
+      "私たち",
+      "は",
+      "営業",
+      "担当",
+      "で",
+      "は",
+      "ない",
+      "ので",
+      "、",
+      "李明",
+      "さん",
+      "に",
+      "直接",
+      "回し",
+      "て",
+      "もらって",
+      "構い",
+      "ません",
+      "。",
+      "彼",
+      "の",
+      "メールアドレス",
+      "は",
+      "社員",
+      "連絡先",
+      "リスト",
+      "に",
+      "載って",
+      "います",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私たち",
+        "pinyin": "",
+        "meaning": "Nós"
+      },
+      {
+        "id": 2,
+        "word": "営業",
+        "pinyin": "",
+        "meaning": "Vendas, negócios"
+      },
+      {
+        "id": 3,
+        "word": "担当",
+        "pinyin": "",
+        "meaning": "Encarregado, responsável"
+      },
+      {
+        "id": 4,
+        "word": "ではない",
+        "pinyin": "",
+        "meaning": "Não é"
+      },
+      {
+        "id": 5,
+        "word": "ので",
+        "pinyin": "",
+        "meaning": "Porque, já que"
+      },
+      {
+        "id": 6,
+        "word": "李明",
+        "pinyin": "",
+        "meaning": "Li Ming (nome próprio)"
+      },
+      {
+        "id": 7,
+        "word": "さん",
+        "pinyin": "",
+        "meaning": "Sufixo honorífico"
+      },
+      {
+        "id": 8,
+        "word": "直接",
+        "pinyin": "",
+        "meaning": "Direto, diretamente"
+      },
+      {
+        "id": 9,
+        "word": "回す",
+        "pinyin": "",
+        "meaning": "Passar, encaminhar"
+      },
+      {
+        "id": 10,
+        "word": "構いません",
+        "pinyin": "",
+        "meaning": "Não importa, está tudo bem"
+      },
+      {
+        "id": 11,
+        "word": "彼",
+        "pinyin": "",
+        "meaning": "Ele"
+      },
+      {
+        "id": 12,
+        "word": "メールアドレス",
+        "pinyin": "",
+        "meaning": "Endereço de e-mail"
+      },
+      {
+        "id": 13,
+        "word": "社員",
+        "pinyin": "",
+        "meaning": "Funcionário"
+      },
+      {
+        "id": 14,
+        "word": "連絡先",
+        "pinyin": "",
+        "meaning": "Contato"
+      },
+      {
+        "id": 15,
+        "word": "リスト",
+        "pinyin": "",
+        "meaning": "Lista"
+      },
+      {
+        "id": 16,
+        "word": "載る",
+        "pinyin": "",
+        "meaning": "Estar listado, ser publicado"
+      }
+    ],
+    "id": "local-1772301144797-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "技術的な質問はどうですか？",
+    "pinyin": "",
+    "translation": "B: E quanto às perguntas técnicas?",
+    "tokens": [
+      "技術的",
+      "な",
+      "質問",
+      "は",
+      "どう",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "技術的",
+        "pinyin": "",
+        "meaning": "Técnico"
+      },
+      {
+        "id": 2,
+        "word": "質問",
+        "pinyin": "",
+        "meaning": "Pergunta"
+      },
+      {
+        "id": 3,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "Como, e quanto a"
+      }
+    ],
+    "id": "local-1772301144797-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "黄家さんが技術部を担当しています。彼に回してもらって大丈夫です。",
+    "pinyin": "",
+    "translation": "A: Huang Jia é o responsável pelo departamento técnico. Você pode encaminhar para ele, está tudo bem.",
+    "tokens": [
+      "黄家",
+      "さん",
+      "が",
+      "技術",
+      "部",
+      "を",
+      "担当",
+      "し",
+      "て",
+      "います",
+      "。",
+      "彼",
+      "に",
+      "回し",
+      "て",
+      "もらって",
+      "大丈夫",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "黄家",
+        "pinyin": "",
+        "meaning": "Huang Jia (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "さん",
+        "pinyin": "",
+        "meaning": "Sufixo honorífico"
+      },
+      {
+        "id": 3,
+        "word": "技術部",
+        "pinyin": "",
+        "meaning": "Departamento técnico"
+      },
+      {
+        "id": 4,
+        "word": "担当",
+        "pinyin": "",
+        "meaning": "Encarregado, responsável"
+      },
+      {
+        "id": 5,
+        "word": "彼",
+        "pinyin": "",
+        "meaning": "Ele"
+      },
+      {
+        "id": 6,
+        "word": "回す",
+        "pinyin": "",
+        "meaning": "Passar, encaminhar"
+      },
+      {
+        "id": 7,
+        "word": "大丈夫",
+        "pinyin": "",
+        "meaning": "Tudo bem, sem problemas"
+      }
+    ],
+    "id": "local-1772301144797-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "でも、彼らのことを知りません。",
+    "pinyin": "",
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "でも",
+      "、",
+      "彼ら",
+      "の",
+      "こと",
+      "を",
+      "知り",
+      "ません",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": "",
+        "meaning": "Mas, porém"
+      },
+      {
+        "id": 2,
+        "word": "彼ら",
+        "pinyin": "",
+        "meaning": "Eles"
+      },
+      {
+        "id": 3,
+        "word": "こと",
+        "pinyin": "",
+        "meaning": "Coisa (referindo-se a assuntos ou pessoas)"
+      },
+      {
+        "id": 4,
+        "word": "知る",
+        "pinyin": "",
+        "meaning": "Conhecer, saber"
+      }
+    ],
+    "id": "local-1772301144797-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "心配しないでください。今朝、同僚たちにメールを送っておきました。今日の午後、もう一度引き継ぎ会議を設定し、皆さんに顔を合わせて紹介します。",
+    "pinyin": "",
+    "translation": "A: Não se preocupe. Esta manhã, enviei um e-mail aos colegas. Esta tarde, marcarei outra reunião de transição e apresentarei vocês pessoalmente a todos.",
+    "tokens": [
+      "心配",
+      "し",
+      "ない",
+      "で",
+      "ください",
+      "。",
+      "今朝",
+      "、",
+      "同僚",
+      "たち",
+      "に",
+      "メール",
+      "を",
+      "送って",
+      "おき",
+      "ました",
+      "。",
+      "今日",
+      "の",
+      "午後",
+      "、",
+      "もう",
+      "一度",
+      "引き継ぎ",
+      "会議",
+      "を",
+      "設定",
+      "し",
+      "、",
+      "皆さん",
+      "に",
+      "顔",
+      "を",
+      "合わせ",
+      "て",
+      "紹介",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "心配",
+        "pinyin": "",
+        "meaning": "Preocupação"
+      },
+      {
+        "id": 2,
+        "word": "今朝",
+        "pinyin": "",
+        "meaning": "Esta manhã"
+      },
+      {
+        "id": 3,
+        "word": "同僚",
+        "pinyin": "",
+        "meaning": "Colega de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "メール",
+        "pinyin": "",
+        "meaning": "E-mail"
+      },
+      {
+        "id": 5,
+        "word": "送る",
+        "pinyin": "",
+        "meaning": "Enviar"
+      },
+      {
+        "id": 6,
+        "word": "今日",
+        "pinyin": "",
+        "meaning": "Hoje"
+      },
+      {
+        "id": 7,
+        "word": "午後",
+        "pinyin": "",
+        "meaning": "Tarde (pós-meio-dia)"
+      },
+      {
+        "id": 8,
+        "word": "もう一度",
+        "pinyin": "",
+        "meaning": "Mais uma vez, novamente"
+      },
+      {
+        "id": 9,
+        "word": "引き継ぎ",
+        "pinyin": "",
+        "meaning": "Transição, passar a tarefa"
+      },
+      {
+        "id": 10,
+        "word": "会議",
+        "pinyin": "",
+        "meaning": "Reunião"
+      },
+      {
+        "id": 11,
+        "word": "設定",
+        "pinyin": "",
+        "meaning": "Configuração, agendamento"
+      },
+      {
+        "id": 12,
+        "word": "皆さん",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 13,
+        "word": "顔を合わせる",
+        "pinyin": "",
+        "meaning": "Encontrar-se pessoalmente"
+      },
+      {
+        "id": 14,
+        "word": "紹介",
+        "pinyin": "",
+        "meaning": "Apresentação, introdução"
+      }
+    ],
+    "id": "local-1772301144797-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "本当にありがとうございます。",
+    "pinyin": "",
+    "translation": "B: Muito obrigado mesmo.",
+    "tokens": [
+      "本当に",
+      "ありがとう",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "Realmente, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "ありがとう",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 3,
+        "word": "ございます",
+        "pinyin": "",
+        "meaning": "Forma polida de 'ser/estar' ou 'ter'"
+      }
+    ],
+    "id": "local-1772301144797-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "私の責任ですから。引き継ぎ書類はすべて「共有」ファイルに入れておきました。まだ質問があれば、電話で私に連絡しても構いません。",
+    "pinyin": "",
+    "translation": "A: É minha responsabilidade. Todos os documentos de transição foram colocados na pasta 'Compartilhado'. Se ainda tiver perguntas, pode me ligar.",
+    "tokens": [
+      "私",
+      "の",
+      "責任",
+      "です",
+      "から",
+      "。",
+      "引き継ぎ",
+      "書類",
+      "は",
+      "すべて",
+      "「",
+      "共有",
+      "」",
+      "ファイル",
+      "に",
+      "入れて",
+      "おき",
+      "ました",
+      "。",
+      "まだ",
+      "質問",
+      "が",
+      "あれ",
+      "ば",
+      "、",
+      "電話",
+      "で",
+      "私",
+      "に",
+      "連絡",
+      "し",
+      "て",
+      "も",
+      "構い",
+      "ません",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu, meu"
+      },
+      {
+        "id": 2,
+        "word": "責任",
+        "pinyin": "",
+        "meaning": "Responsabilidade"
+      },
+      {
+        "id": 3,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "Porque (motivo/razão)"
+      },
+      {
+        "id": 4,
+        "word": "引き継ぎ",
+        "pinyin": "",
+        "meaning": "Transição"
+      },
+      {
+        "id": 5,
+        "word": "書類",
+        "pinyin": "",
+        "meaning": "Documentos"
+      },
+      {
+        "id": 6,
+        "word": "すべて",
+        "pinyin": "",
+        "meaning": "Tudo, todos"
+      },
+      {
+        "id": 7,
+        "word": "共有",
+        "pinyin": "",
+        "meaning": "Compartilhado"
+      },
+      {
+        "id": 8,
+        "word": "ファイル",
+        "pinyin": "",
+        "meaning": "Arquivo, pasta"
+      },
+      {
+        "id": 9,
+        "word": "入れる",
+        "pinyin": "",
+        "meaning": "Colocar dentro"
+      },
+      {
+        "id": 10,
+        "word": "まだ",
+        "pinyin": "",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 11,
+        "word": "質問",
+        "pinyin": "",
+        "meaning": "Pergunta"
+      },
+      {
+        "id": 12,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "Existir, ter"
+      },
+      {
+        "id": 13,
+        "word": "電話",
+        "pinyin": "",
+        "meaning": "Telefone"
+      },
+      {
+        "id": 14,
+        "word": "連絡",
+        "pinyin": "",
+        "meaning": "Contato"
+      },
+      {
+        "id": 15,
+        "word": "構いません",
+        "pinyin": "",
+        "meaning": "Não importa, está tudo bem"
+      }
+    ],
+    "id": "local-1772301144797-10",
+    "language": "Japonês"
+  }
+]

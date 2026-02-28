@@ -1,0 +1,690 @@
+[
+  {
+    "chinese": "A: Cameriere, voglio comprare una torta di compleanno per il mio bambino. È per circa 10 persone.",
+    "pinyin": "",
+    "translation": "A: Garçom, quero comprar um bolo de aniversário para o meu filho. É para cerca de 10 pessoas.",
+    "tokens": [
+      "A",
+      ":",
+      "Cameriere",
+      ",",
+      "voglio",
+      "comprare",
+      "una",
+      "torta",
+      "di",
+      "compleanno",
+      "per",
+      "il",
+      "mio",
+      "bambino",
+      ".",
+      "È",
+      "per",
+      "circa",
+      "10",
+      "persone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cameriere",
+        "pinyin": "",
+        "meaning": "Garçom"
+      },
+      {
+        "id": 2,
+        "word": "voglio",
+        "pinyin": "",
+        "meaning": "eu quero"
+      },
+      {
+        "id": 3,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "torta",
+        "pinyin": "",
+        "meaning": "bolo, torta"
+      },
+      {
+        "id": 5,
+        "word": "compleanno",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 6,
+        "word": "bambino",
+        "pinyin": "",
+        "meaning": "criança, filho"
+      },
+      {
+        "id": 7,
+        "word": "circa",
+        "pinyin": "",
+        "meaning": "cerca de"
+      },
+      {
+        "id": 8,
+        "word": "persone",
+        "pinyin": "",
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772295417232-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Se ci sono 10 persone, una torta da 30 centimetri dovrebbe andare bene.",
+    "pinyin": "",
+    "translation": "B: Se são 10 pessoas, um bolo de 30 centímetros deve ser suficiente.",
+    "tokens": [
+      "B",
+      ":",
+      "Se",
+      "ci",
+      "sono",
+      "10",
+      "persone",
+      ",",
+      "una",
+      "torta",
+      "da",
+      "30",
+      "centimetri",
+      "dovrebbe",
+      "andare",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Se",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "ci sono",
+        "pinyin": "",
+        "meaning": "há, existem"
+      },
+      {
+        "id": 3,
+        "word": "centimetri",
+        "pinyin": "",
+        "meaning": "centímetros"
+      },
+      {
+        "id": 4,
+        "word": "dovrebbe",
+        "pinyin": "",
+        "meaning": "deveria"
+      },
+      {
+        "id": 5,
+        "word": "andare bene",
+        "pinyin": "",
+        "meaning": "ir bem, ser suficiente"
+      }
+    ],
+    "id": "local-1772295417232-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora, che tipi di torta avete?",
+    "pinyin": "",
+    "translation": "A: Então, que tipos de bolo vocês têm?",
+    "tokens": [
+      "A",
+      ":",
+      "Allora",
+      ",",
+      "che",
+      "tipi",
+      "di",
+      "torta",
+      "avete",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "tipi",
+        "pinyin": "",
+        "meaning": "tipos"
+      },
+      {
+        "id": 3,
+        "word": "avete",
+        "pinyin": "",
+        "meaning": "vocês têm"
+      }
+    ],
+    "id": "local-1772295417232-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Abbiamo torta alla frutta e crema, torta al cioccolato, torta mousse e cheesecake.",
+    "pinyin": "",
+    "translation": "B: Temos bolo de frutas e creme, bolo de chocolate, torta mousse e cheesecake.",
+    "tokens": [
+      "B",
+      ":",
+      "Abbiamo",
+      "torta",
+      "alla",
+      "frutta",
+      "e",
+      "crema",
+      ",",
+      "torta",
+      "al",
+      "cioccolato",
+      ",",
+      "torta",
+      "mousse",
+      "e",
+      "cheesecake",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Abbiamo",
+        "pinyin": "",
+        "meaning": "Nós temos"
+      },
+      {
+        "id": 2,
+        "word": "frutta",
+        "pinyin": "",
+        "meaning": "fruta"
+      },
+      {
+        "id": 3,
+        "word": "crema",
+        "pinyin": "",
+        "meaning": "creme"
+      },
+      {
+        "id": 4,
+        "word": "cioccolato",
+        "pinyin": "",
+        "meaning": "chocolate"
+      },
+      {
+        "id": 5,
+        "word": "mousse",
+        "pinyin": "",
+        "meaning": "mousse"
+      },
+      {
+        "id": 6,
+        "word": "cheesecake",
+        "pinyin": "",
+        "meaning": "cheesecake"
+      }
+    ],
+    "id": "local-1772295417232-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual è il sapore della torta mousse?",
+    "pinyin": "",
+    "translation": "A: Qual é o sabor da torta mousse?",
+    "tokens": [
+      "A",
+      ":",
+      "Qual",
+      "è",
+      "il",
+      "sapore",
+      "della",
+      "torta",
+      "mousse",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qual",
+        "pinyin": "",
+        "meaning": "Qual"
+      },
+      {
+        "id": 2,
+        "word": "sapore",
+        "pinyin": "",
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772295417232-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Il sapore della torta mousse è più delicato e liscio, leggero e rinfrescante.",
+    "pinyin": "",
+    "translation": "B: O sabor da torta mousse é mais delicado e suave, leve e refrescante.",
+    "tokens": [
+      "B",
+      ":",
+      "Il",
+      "sapore",
+      "della",
+      "torta",
+      "mousse",
+      "è",
+      "più",
+      "delicato",
+      "e",
+      "liscio",
+      ",",
+      "leggero",
+      "e",
+      "rinfrescante",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "più",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 2,
+        "word": "delicato",
+        "pinyin": "",
+        "meaning": "delicado"
+      },
+      {
+        "id": 3,
+        "word": "liscio",
+        "pinyin": "",
+        "meaning": "suave, liso"
+      },
+      {
+        "id": 4,
+        "word": "leggero",
+        "pinyin": "",
+        "meaning": "leve"
+      },
+      {
+        "id": 5,
+        "word": "rinfrescante",
+        "pinyin": "",
+        "meaning": "refrescante"
+      }
+    ],
+    "id": "local-1772295417232-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora vogliamo comprare una torta mousse da 30 centimetri.",
+    "pinyin": "",
+    "translation": "A: Então, queremos comprar uma torta mousse de 30 centímetros.",
+    "tokens": [
+      "A",
+      ":",
+      "Allora",
+      "vogliamo",
+      "comprare",
+      "una",
+      "torta",
+      "mousse",
+      "da",
+      "30",
+      "centimetri",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vogliamo",
+        "pinyin": "",
+        "meaning": "nós queremos"
+      }
+    ],
+    "id": "local-1772295417232-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Tuttavia, è necessario ordinare questa torta in anticipo. Potete ritirarla dopo le 10 di domani.",
+    "pinyin": "",
+    "translation": "B: Está bem. No entanto, é necessário encomendar este bolo com antecedência. Vocês podem retirá-lo depois das 10h de amanhã.",
+    "tokens": [
+      "B",
+      ":",
+      "Va",
+      "bene",
+      ".",
+      "Tuttavia",
+      ",",
+      "è",
+      "necessario",
+      "ordinare",
+      "questa",
+      "torta",
+      "in",
+      "anticipo",
+      ".",
+      "Potete",
+      "ritirarla",
+      "dopo",
+      "le",
+      "10",
+      "di",
+      "domani",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Está bem"
+      },
+      {
+        "id": 2,
+        "word": "Tuttavia",
+        "pinyin": "",
+        "meaning": "No entanto"
+      },
+      {
+        "id": 3,
+        "word": "necessario",
+        "pinyin": "",
+        "meaning": "necessário"
+      },
+      {
+        "id": 4,
+        "word": "ordinare",
+        "pinyin": "",
+        "meaning": "encomendar, pedir"
+      },
+      {
+        "id": 5,
+        "word": "in anticipo",
+        "pinyin": "",
+        "meaning": "com antecedência"
+      },
+      {
+        "id": 6,
+        "word": "Potete",
+        "pinyin": "",
+        "meaning": "Vocês podem"
+      },
+      {
+        "id": 7,
+        "word": "ritirarla",
+        "pinyin": "",
+        "meaning": "retirá-la"
+      },
+      {
+        "id": 8,
+        "word": "dopo",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 9,
+        "word": "domani",
+        "pinyin": "",
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772295417232-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Le vostre torte sono fatte al momento?",
+    "pinyin": "",
+    "translation": "A: Os bolos de vocês são feitos na hora?",
+    "tokens": [
+      "A",
+      ":",
+      "Le",
+      "vostre",
+      "torte",
+      "sono",
+      "fatte",
+      "al",
+      "momento",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vostre",
+        "pinyin": "",
+        "meaning": "de vocês"
+      },
+      {
+        "id": 2,
+        "word": "fatte",
+        "pinyin": "",
+        "meaning": "feitas"
+      },
+      {
+        "id": 3,
+        "word": "al momento",
+        "pinyin": "",
+        "meaning": "na hora"
+      }
+    ],
+    "id": "local-1772295417232-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: I nostri chef le preparano fresche ogni mattina. Stia tranquillo/a.",
+    "pinyin": "",
+    "translation": "B: Nossos chefs as preparam frescas todas as manhãs. Fique tranquilo/a.",
+    "tokens": [
+      "B",
+      ":",
+      "I",
+      "nostri",
+      "chef",
+      "le",
+      "preparano",
+      "fresche",
+      "ogni",
+      "mattina",
+      ".",
+      "Stia",
+      "tranquillo/a",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nostri",
+        "pinyin": "",
+        "meaning": "nossos"
+      },
+      {
+        "id": 2,
+        "word": "chef",
+        "pinyin": "",
+        "meaning": "chef"
+      },
+      {
+        "id": 3,
+        "word": "preparano",
+        "pinyin": "",
+        "meaning": "eles preparam"
+      },
+      {
+        "id": 4,
+        "word": "fresche",
+        "pinyin": "",
+        "meaning": "frescas"
+      },
+      {
+        "id": 5,
+        "word": "ogni",
+        "pinyin": "",
+        "meaning": "cada, toda"
+      },
+      {
+        "id": 6,
+        "word": "mattina",
+        "pinyin": "",
+        "meaning": "manhã"
+      },
+      {
+        "id": 7,
+        "word": "Stia tranquillo/a",
+        "pinyin": "",
+        "meaning": "Fique tranquilo/a"
+      }
+    ],
+    "id": "local-1772295417232-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Posso chiedere quanti anni ha suo figlio?",
+    "pinyin": "",
+    "translation": "B: Posso perguntar quantos anos tem seu filho?",
+    "tokens": [
+      "B",
+      ":",
+      "Posso",
+      "chiedere",
+      "quanti",
+      "anni",
+      "ha",
+      "suo",
+      "figlio",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Posso",
+        "pinyin": "",
+        "meaning": "Eu posso"
+      },
+      {
+        "id": 2,
+        "word": "chiedere",
+        "pinyin": "",
+        "meaning": "perguntar, pedir"
+      },
+      {
+        "id": 3,
+        "word": "quanti",
+        "pinyin": "",
+        "meaning": "quantos"
+      },
+      {
+        "id": 4,
+        "word": "anni",
+        "pinyin": "",
+        "meaning": "anos"
+      },
+      {
+        "id": 5,
+        "word": "suo",
+        "pinyin": "",
+        "meaning": "seu (formal)"
+      },
+      {
+        "id": 6,
+        "word": "figlio",
+        "pinyin": "",
+        "meaning": "filho"
+      }
+    ],
+    "id": "local-1772295417232-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Tre anni.",
+    "pinyin": "",
+    "translation": "A: Três anos.",
+    "tokens": [
+      "A",
+      ":",
+      "Tre",
+      "anni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tre",
+        "pinyin": "",
+        "meaning": "Três"
+      },
+      {
+        "id": 2,
+        "word": "anni",
+        "pinyin": "",
+        "meaning": "anos"
+      }
+    ],
+    "id": "local-1772295417232-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. La aiuterò a prendere tre candeline.",
+    "pinyin": "",
+    "translation": "B: Está bem. Eu a ajudarei a pegar três velas.",
+    "tokens": [
+      "B",
+      ":",
+      "Va",
+      "bene",
+      ".",
+      "La",
+      "aiuterò",
+      "a",
+      "prendere",
+      "tre",
+      "candeline",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La",
+        "pinyin": "",
+        "meaning": "A, você (pronome objeto direto formal feminino)"
+      },
+      {
+        "id": 2,
+        "word": "aiuterò",
+        "pinyin": "",
+        "meaning": "eu ajudarei"
+      },
+      {
+        "id": 3,
+        "word": "prendere",
+        "pinyin": "",
+        "meaning": "pegar, levar"
+      },
+      {
+        "id": 4,
+        "word": "candeline",
+        "pinyin": "",
+        "meaning": "velinhas"
+      }
+    ],
+    "id": "local-1772295417232-12",
+    "language": "Italiano"
+  }
+]

@@ -1,0 +1,507 @@
+[
+  {
+    "chinese": "A: 旦那さん、私すごく太っちゃった！痩せる機械を買いたいわ！",
+    "pinyin": "",
+    "translation": "A: Marido, eu engordei muito! Quero comprar uma máquina para emagrecer!",
+    "tokens": [
+      "旦那さん",
+      "、",
+      "私",
+      "すごく",
+      "太っちゃった",
+      "！",
+      "痩せる",
+      "機械",
+      "を",
+      "買いたい",
+      "わ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "旦那さん",
+        "pinyin": "",
+        "meaning": "marido"
+      },
+      {
+        "id": 2,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "すごく",
+        "pinyin": "",
+        "meaning": "muito (intensificador)"
+      },
+      {
+        "id": 4,
+        "word": "太る",
+        "pinyin": "",
+        "meaning": "engordar (太っちゃった é a forma casual passada)"
+      },
+      {
+        "id": 5,
+        "word": "痩せる",
+        "pinyin": "",
+        "meaning": "emagrecer"
+      },
+      {
+        "id": 6,
+        "word": "機械",
+        "pinyin": "",
+        "meaning": "máquina"
+      },
+      {
+        "id": 7,
+        "word": "買う",
+        "pinyin": "",
+        "meaning": "comprar (買いたい significa 'querer comprar')"
+      }
+    ],
+    "id": "local-1772298195674-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: どんなのを買いたいの？",
+    "pinyin": "",
+    "translation": "B: Que tipo você quer comprar?",
+    "tokens": [
+      "どんな",
+      "の",
+      "を",
+      "買い",
+      "たい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どんな",
+        "pinyin": "",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "買う",
+        "pinyin": "",
+        "meaning": "comprar (買いたい significa 'querer comprar')"
+      }
+    ],
+    "id": "local-1772298195674-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 見て！このトレッドミルはどう？",
+    "pinyin": "",
+    "translation": "A: Veja! Que tal esta esteira?",
+    "tokens": [
+      "見",
+      "て",
+      "！",
+      "この",
+      "トレッドミル",
+      "は",
+      "どう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "見る",
+        "pinyin": "",
+        "meaning": "ver, olhar (見て é 'olhe!')"
+      },
+      {
+        "id": 2,
+        "word": "この",
+        "pinyin": "",
+        "meaning": "este/esta"
+      },
+      {
+        "id": 3,
+        "word": "トレッドミル",
+        "pinyin": "",
+        "meaning": "esteira (treadmill)"
+      },
+      {
+        "id": 4,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "como, que tal"
+      }
+    ],
+    "id": "local-1772298195674-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: うん、いいね！",
+    "pinyin": "",
+    "translation": "B: Hum, parece bom!",
+    "tokens": [
+      "うん",
+      "、",
+      "いい",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772298195674-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: このエリプティカルマシンは足とウエストを細くするのに役立つよ！",
+    "pinyin": "",
+    "translation": "A: Esta máquina elíptica ajuda a afinar as pernas e a cintura!",
+    "tokens": [
+      "この",
+      "エリプティカルマシン",
+      "は",
+      "足",
+      "と",
+      "ウエスト",
+      "を",
+      "細く",
+      "する",
+      "の",
+      "に",
+      "役立つ",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "この",
+        "pinyin": "",
+        "meaning": "este/esta"
+      },
+      {
+        "id": 2,
+        "word": "エリプティカルマシン",
+        "pinyin": "",
+        "meaning": "máquina elíptica"
+      },
+      {
+        "id": 3,
+        "word": "足",
+        "pinyin": "",
+        "meaning": "perna, pé"
+      },
+      {
+        "id": 4,
+        "word": "と",
+        "pinyin": "",
+        "meaning": "e (conjunção)"
+      },
+      {
+        "id": 5,
+        "word": "ウエスト",
+        "pinyin": "",
+        "meaning": "cintura (waist)"
+      },
+      {
+        "id": 6,
+        "word": "細い",
+        "pinyin": "",
+        "meaning": "fino, magro (細くする significa 'tornar fino/magro', 'afinar')"
+      },
+      {
+        "id": 7,
+        "word": "役立つ",
+        "pinyin": "",
+        "meaning": "ser útil, ajudar"
+      }
+    ],
+    "id": "local-1772298195674-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: あなたに良さそうだね。",
+    "pinyin": "",
+    "translation": "B: Parece bom para você.",
+    "tokens": [
+      "あなた",
+      "に",
+      "良さ",
+      "そう",
+      "だ",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "良い",
+        "pinyin": "",
+        "meaning": "bom (良さそう significa 'parece bom')"
+      }
+    ],
+    "id": "local-1772298195674-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: あ、ここには痩身ロボットもあるけど、残念ながら高すぎるわ！",
+    "pinyin": "",
+    "translation": "A: Ah, também tem um robô emagrecedor aqui, mas infelizmente é muito caro!",
+    "tokens": [
+      "あ",
+      "、",
+      "ここ",
+      "に",
+      "は",
+      "痩身",
+      "ロボット",
+      "も",
+      "ある",
+      "けど",
+      "、",
+      "残念ながら",
+      "高すぎる",
+      "わ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あ",
+        "pinyin": "",
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "ここ",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 3,
+        "word": "痩身",
+        "pinyin": "",
+        "meaning": "emagrecimento, corpo magro (痩身ロボット: robô emagrecedor)"
+      },
+      {
+        "id": 4,
+        "word": "ロボット",
+        "pinyin": "",
+        "meaning": "robô"
+      },
+      {
+        "id": 5,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "existir, ter"
+      },
+      {
+        "id": 6,
+        "word": "けど",
+        "pinyin": "",
+        "meaning": "mas"
+      },
+      {
+        "id": 7,
+        "word": "残念ながら",
+        "pinyin": "",
+        "meaning": "infelizmente"
+      },
+      {
+        "id": 8,
+        "word": "高い",
+        "pinyin": "",
+        "meaning": "caro, alto (高すぎる significa 'muito caro')"
+      }
+    ],
+    "id": "local-1772298195674-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: お金は問題じゃないよ。たった二日使って、二度と使わなくなるのが心配なんだ。",
+    "pinyin": "",
+    "translation": "B: Dinheiro não é o problema. O que me preocupa é que você use por apenas dois dias e nunca mais use.",
+    "tokens": [
+      "お金",
+      "は",
+      "問題",
+      "じゃ",
+      "ない",
+      "よ",
+      "。",
+      "たった",
+      "二日",
+      "使っ",
+      "て",
+      "、",
+      "二度",
+      "と",
+      "使わ",
+      "なく",
+      "なる",
+      "の",
+      "が",
+      "心配",
+      "なん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お金",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "たった",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 4,
+        "word": "二日",
+        "pinyin": "",
+        "meaning": "dois dias"
+      },
+      {
+        "id": 5,
+        "word": "使う",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 6,
+        "word": "二度と",
+        "pinyin": "",
+        "meaning": "nunca mais"
+      },
+      {
+        "id": 7,
+        "word": "心配",
+        "pinyin": "",
+        "meaning": "preocupação, preocupar-se"
+      }
+    ],
+    "id": "local-1772298195674-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 今回は絶対しないって保証する！",
+    "pinyin": "",
+    "translation": "A: Desta vez eu garanto que não vou fazer isso!",
+    "tokens": [
+      "今回",
+      "は",
+      "絶対",
+      "し",
+      "ない",
+      "って",
+      "保証",
+      "する",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今回",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 2,
+        "word": "絶対",
+        "pinyin": "",
+        "meaning": "absolutamente, definitivamente"
+      },
+      {
+        "id": 3,
+        "word": "する",
+        "pinyin": "",
+        "meaning": "fazer (しない significa 'não fazer')"
+      },
+      {
+        "id": 4,
+        "word": "保証する",
+        "pinyin": "",
+        "meaning": "garantir, assegurar"
+      }
+    ],
+    "id": "local-1772298195674-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 分かった。じゃあ、買っていいよ！応援する！",
+    "pinyin": "",
+    "translation": "B: Entendi. Então, pode comprar! Eu te apoio!",
+    "tokens": [
+      "分かっ",
+      "た",
+      "。",
+      "じゃあ",
+      "、",
+      "買っ",
+      "て",
+      "いい",
+      "よ",
+      "！",
+      "応援",
+      "する",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "分かる",
+        "pinyin": "",
+        "meaning": "entender (分かった significa 'entendi')"
+      },
+      {
+        "id": 2,
+        "word": "じゃあ",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "買う",
+        "pinyin": "",
+        "meaning": "comprar (買っていい significa 'pode comprar')"
+      },
+      {
+        "id": 4,
+        "word": "応援する",
+        "pinyin": "",
+        "meaning": "apoiar, torcer"
+      }
+    ],
+    "id": "local-1772298195674-9",
+    "language": "Japonês"
+  }
+]

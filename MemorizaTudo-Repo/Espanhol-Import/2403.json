@@ -1,0 +1,1624 @@
+[
+  {
+    "chinese": "A: Oye, ¿cuál es el número de teléfono para reservar un taxi?",
+    "pinyin": "",
+    "translation": "A: Ei, qual é o número de telefone para reservar um táxi?",
+    "tokens": [
+      "A:",
+      "Oye",
+      ",",
+      "¿cuál",
+      "es",
+      "el",
+      "número",
+      "de",
+      "teléfono",
+      "para",
+      "reservar",
+      "un",
+      "taxi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, Ouça"
+      },
+      {
+        "id": 2,
+        "word": "número de teléfono",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 3,
+        "word": "reservar",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 4,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      }
+    ],
+    "id": "local-1772294197539-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué? ¿Quién usa el teléfono para reservar un taxi hoy en día?",
+    "pinyin": "",
+    "translation": "B: O quê? Quem usa o telefone para reservar um táxi hoje em dia?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "?",
+      "¿Quién",
+      "usa",
+      "el",
+      "teléfono",
+      "para",
+      "reservar",
+      "un",
+      "taxi",
+      "hoy",
+      "en",
+      "día",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "Quién",
+        "pinyin": "",
+        "meaning": "Quem"
+      },
+      {
+        "id": 3,
+        "word": "usa",
+        "pinyin": "",
+        "meaning": "usa (do verbo usar)"
+      },
+      {
+        "id": 4,
+        "word": "teléfono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "reservar",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "hoy en día",
+        "pinyin": "",
+        "meaning": "hoje em dia, atualmente"
+      }
+    ],
+    "id": "local-1772294197539-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, ¿cómo reservas uno?",
+    "pinyin": "",
+    "translation": "A: Então, como você reserva um?",
+    "tokens": [
+      "A:",
+      "Entonces",
+      ",",
+      "¿cómo",
+      "reservas",
+      "uno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cómo",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "reservas",
+        "pinyin": "",
+        "meaning": "você reserva (do verbo reservar)"
+      },
+      {
+        "id": 4,
+        "word": "uno",
+        "pinyin": "",
+        "meaning": "um"
+      }
+    ],
+    "id": "local-1772294197539-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Usa el software de reserva de taxis. Descarga uno en tu teléfono y listo.",
+    "pinyin": "",
+    "translation": "B: Use o software de reserva de táxis. Baixe um no seu telefone e pronto.",
+    "tokens": [
+      "B:",
+      "Usa",
+      "el",
+      "software",
+      "de",
+      "reserva",
+      "de",
+      "taxis",
+      ".",
+      "Descarga",
+      "uno",
+      "en",
+      "tu",
+      "teléfono",
+      "y",
+      "listo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Usa",
+        "pinyin": "",
+        "meaning": "Use (do verbo usar)"
+      },
+      {
+        "id": 2,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "reserva de taxis",
+        "pinyin": "",
+        "meaning": "reserva de táxis"
+      },
+      {
+        "id": 4,
+        "word": "Descarga",
+        "pinyin": "",
+        "meaning": "Baixe (do verbo descargar)"
+      },
+      {
+        "id": 5,
+        "word": "teléfono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 6,
+        "word": "listo",
+        "pinyin": "",
+        "meaning": "pronto"
+      }
+    ],
+    "id": "local-1772294197539-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh. ¿Entonces qué haces?",
+    "pinyin": "",
+    "translation": "A: Ah. Então o que você faz?",
+    "tokens": [
+      "A:",
+      "Oh",
+      ".",
+      "¿Entonces",
+      "qué",
+      "haces",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "qué",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "haces",
+        "pinyin": "",
+        "meaning": "você faz (do verbo hacer)"
+      }
+    ],
+    "id": "local-1772294197539-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Ingresa tu número de teléfono y puedes registrarte directamente.",
+    "pinyin": "",
+    "translation": "B: Insira seu número de telefone e você pode se registrar diretamente.",
+    "tokens": [
+      "B:",
+      "Ingresa",
+      "tu",
+      "número",
+      "de",
+      "teléfono",
+      "y",
+      "puedes",
+      "registrarte",
+      "directamente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ingresa",
+        "pinyin": "",
+        "meaning": "Insira (do verbo ingresar)"
+      },
+      {
+        "id": 2,
+        "word": "número de teléfono",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 3,
+        "word": "puedes",
+        "pinyin": "",
+        "meaning": "você pode (do verbo poder)"
+      },
+      {
+        "id": 4,
+        "word": "registrarte",
+        "pinyin": "",
+        "meaning": "se registrar (do verbo registrar)"
+      },
+      {
+        "id": 5,
+        "word": "directamente",
+        "pinyin": "",
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772294197539-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, ¿cómo saben dónde estoy?",
+    "pinyin": "",
+    "translation": "A: Então, como eles sabem onde estou?",
+    "tokens": [
+      "A:",
+      "Entonces",
+      ",",
+      "¿cómo",
+      "saben",
+      "dónde",
+      "estoy",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "cómo",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "saben",
+        "pinyin": "",
+        "meaning": "eles sabem (do verbo saber)"
+      },
+      {
+        "id": 4,
+        "word": "dónde",
+        "pinyin": "",
+        "meaning": "onde"
+      },
+      {
+        "id": 5,
+        "word": "estoy",
+        "pinyin": "",
+        "meaning": "eu estou (do verbo estar)"
+      }
+    ],
+    "id": "local-1772294197539-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: A través del GPS pueden encontrar tu ubicación muy rápidamente y un taxi cercano llegará pronto. Por supuesto, también puedes dejarles un mensaje de voz.",
+    "pinyin": "",
+    "translation": "B: Através do GPS eles podem encontrar sua localização muito rapidamente e um táxi próximo chegará em breve. É claro, você também pode deixar uma mensagem de voz para eles.",
+    "tokens": [
+      "B:",
+      "A",
+      "través",
+      "del",
+      "GPS",
+      "pueden",
+      "encontrar",
+      "tu",
+      "ubicación",
+      "muy",
+      "rápidamente",
+      "y",
+      "un",
+      "taxi",
+      "cercano",
+      "llegará",
+      "pronto",
+      ".",
+      "Por",
+      "supuesto",
+      ",",
+      "también",
+      "puedes",
+      "dejarles",
+      "un",
+      "mensaje",
+      "de",
+      "voz",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "A través de",
+        "pinyin": "",
+        "meaning": "Através de"
+      },
+      {
+        "id": 2,
+        "word": "GPS",
+        "pinyin": "",
+        "meaning": "GPS"
+      },
+      {
+        "id": 3,
+        "word": "pueden",
+        "pinyin": "",
+        "meaning": "eles podem (do verbo poder)"
+      },
+      {
+        "id": 4,
+        "word": "encontrar",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 5,
+        "word": "ubicación",
+        "pinyin": "",
+        "meaning": "localização"
+      },
+      {
+        "id": 6,
+        "word": "rápidamente",
+        "pinyin": "",
+        "meaning": "rapidamente"
+      },
+      {
+        "id": 7,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 8,
+        "word": "cercano",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 9,
+        "word": "llegará",
+        "pinyin": "",
+        "meaning": "chegará (do verbo llegar)"
+      },
+      {
+        "id": 10,
+        "word": "pronto",
+        "pinyin": "",
+        "meaning": "em breve"
+      },
+      {
+        "id": 11,
+        "word": "Por supuesto",
+        "pinyin": "",
+        "meaning": "É claro"
+      },
+      {
+        "id": 12,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 13,
+        "word": "dejarles",
+        "pinyin": "",
+        "meaning": "deixar-lhes (do verbo dejar)"
+      },
+      {
+        "id": 14,
+        "word": "mensaje de voz",
+        "pinyin": "",
+        "meaning": "mensagem de voz"
+      }
+    ],
+    "id": "local-1772294197539-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Suena bastante bien. ¿Lo has usado?",
+    "pinyin": "",
+    "translation": "A: Parece muito bom. Você já usou?",
+    "tokens": [
+      "A:",
+      "Suena",
+      "bastante",
+      "bien",
+      ".",
+      "¿Lo",
+      "has",
+      "usado",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Suena",
+        "pinyin": "",
+        "meaning": "Parece, Soa (do verbo sonar)"
+      },
+      {
+        "id": 2,
+        "word": "bastante",
+        "pinyin": "",
+        "meaning": "bastante, muito"
+      },
+      {
+        "id": 3,
+        "word": "bien",
+        "pinyin": "",
+        "meaning": "bem"
+      },
+      {
+        "id": 4,
+        "word": "has usado",
+        "pinyin": "",
+        "meaning": "você usou (do verbo usar)"
+      }
+    ],
+    "id": "local-1772294197539-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Claro. Ha estado lloviendo mucho últimamente y ha sido difícil conseguir un taxi. Este software es conveniente y rápido.",
+    "pinyin": "",
+    "translation": "B: Claro. Tem chovido muito ultimamente e tem sido difícil conseguir um táxi. Este software é conveniente e rápido.",
+    "tokens": [
+      "B:",
+      "Claro",
+      ".",
+      "Ha",
+      "estado",
+      "lloviendo",
+      "mucho",
+      "últimamente",
+      "y",
+      "ha",
+      "sido",
+      "difícil",
+      "conseguir",
+      "un",
+      "taxi",
+      ".",
+      "Este",
+      "software",
+      "es",
+      "conveniente",
+      "y",
+      "rápido",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Claro",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 2,
+        "word": "Ha estado lloviendo",
+        "pinyin": "",
+        "meaning": "Tem chovido (do verbo llover)"
+      },
+      {
+        "id": 3,
+        "word": "mucho",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "últimamente",
+        "pinyin": "",
+        "meaning": "ultimamente"
+      },
+      {
+        "id": 5,
+        "word": "ha sido difícil",
+        "pinyin": "",
+        "meaning": "tem sido difícil"
+      },
+      {
+        "id": 6,
+        "word": "conseguir",
+        "pinyin": "",
+        "meaning": "conseguir"
+      },
+      {
+        "id": 7,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 8,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 9,
+        "word": "conveniente",
+        "pinyin": "",
+        "meaning": "conveniente"
+      },
+      {
+        "id": 10,
+        "word": "rápido",
+        "pinyin": "",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772294197539-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Lo probaré la próxima vez. ¿Cómo pagas?",
+    "pinyin": "",
+    "translation": "A: Vou experimentar da próxima vez. Como você paga?",
+    "tokens": [
+      "A:",
+      "Lo",
+      "probaré",
+      "la",
+      "próxima",
+      "vez",
+      ".",
+      "¿Cómo",
+      "pagas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "probaré",
+        "pinyin": "",
+        "meaning": "eu provarei, eu experimentarei (do verbo probar)"
+      },
+      {
+        "id": 2,
+        "word": "la próxima vez",
+        "pinyin": "",
+        "meaning": "da próxima vez"
+      },
+      {
+        "id": 3,
+        "word": "Cómo",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 4,
+        "word": "pagas",
+        "pinyin": "",
+        "meaning": "você paga (do verbo pagar)"
+      }
+    ],
+    "id": "local-1772294197539-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Puedes usar efectivo o tu cuenta de Alipay en tu teléfono. A veces también puedes ahorrar cinco kuai si lo haces.",
+    "pinyin": "",
+    "translation": "B: Você pode usar dinheiro ou sua conta do Alipay no seu telefone. Às vezes, você também pode economizar cinco kuai se fizer isso.",
+    "tokens": [
+      "B:",
+      "Puedes",
+      "usar",
+      "efectivo",
+      "o",
+      "tu",
+      "cuenta",
+      "de",
+      "Alipay",
+      "en",
+      "tu",
+      "teléfono",
+      ".",
+      "A",
+      "veces",
+      "también",
+      "puedes",
+      "ahorrar",
+      "cinco",
+      "kuai",
+      "si",
+      "lo",
+      "haces",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puedes",
+        "pinyin": "",
+        "meaning": "Você pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "usar",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 3,
+        "word": "efectivo",
+        "pinyin": "",
+        "meaning": "dinheiro, em espécie"
+      },
+      {
+        "id": 4,
+        "word": "cuenta",
+        "pinyin": "",
+        "meaning": "conta"
+      },
+      {
+        "id": 5,
+        "word": "Alipay",
+        "pinyin": "",
+        "meaning": "Alipay"
+      },
+      {
+        "id": 6,
+        "word": "teléfono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 7,
+        "word": "A veces",
+        "pinyin": "",
+        "meaning": "Às vezes"
+      },
+      {
+        "id": 8,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 9,
+        "word": "ahorrar",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 10,
+        "word": "cinco",
+        "pinyin": "",
+        "meaning": "cinco"
+      },
+      {
+        "id": 11,
+        "word": "kuai",
+        "pinyin": "",
+        "meaning": "kuai (unidade monetária chinesa)"
+      },
+      {
+        "id": 12,
+        "word": "haces",
+        "pinyin": "",
+        "meaning": "você faz (do verbo hacer)"
+      }
+    ],
+    "id": "local-1772294197539-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿En serio? ¡Entonces lo voy a usar ahora!",
+    "pinyin": "",
+    "translation": "A: Sério? Então vou usar agora!",
+    "tokens": [
+      "A:",
+      "¿En",
+      "serio",
+      "?",
+      "¡Entonces",
+      "lo",
+      "voy",
+      "a",
+      "usar",
+      "ahora",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En serio",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "voy a usar",
+        "pinyin": "",
+        "meaning": "vou usar (expressão de futuro)"
+      },
+      {
+        "id": 4,
+        "word": "ahora",
+        "pinyin": "",
+        "meaning": "agora"
+      }
+    ],
+    "id": "local-1772294197539-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Gira, salta, deslízate. Vaya, los movimientos de Kim Yuna son realmente hermosos.",
+    "pinyin": "",
+    "translation": "A: Gira, salta, desliza. Uau, os movimentos de Kim Yuna são realmente bonitos.",
+    "tokens": [
+      "A:",
+      "Gira",
+      ",",
+      "salta",
+      ",",
+      "deslízate",
+      ".",
+      "Vaya",
+      ",",
+      "los",
+      "movimientos",
+      "de",
+      "Kim",
+      "Yuna",
+      "son",
+      "realmente",
+      "hermosos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gira",
+        "pinyin": "",
+        "meaning": "Gira (do verbo girar)"
+      },
+      {
+        "id": 2,
+        "word": "salta",
+        "pinyin": "",
+        "meaning": "salta (do verbo saltar)"
+      },
+      {
+        "id": 3,
+        "word": "deslízate",
+        "pinyin": "",
+        "meaning": "desliza (do verbo deslizarse)"
+      },
+      {
+        "id": 4,
+        "word": "Vaya",
+        "pinyin": "",
+        "meaning": "Uau, Caramba"
+      },
+      {
+        "id": 5,
+        "word": "movimientos",
+        "pinyin": "",
+        "meaning": "movimentos"
+      },
+      {
+        "id": 6,
+        "word": "realmente",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 7,
+        "word": "hermosos",
+        "pinyin": "",
+        "meaning": "bonitos, belos"
+      }
+    ],
+    "id": "local-1772294197539-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Estás viendo la competición de patinaje artístico de los Juegos Olímpicos de Invierno? Oh, esta es esa joven prodigio coreana.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística dos Jogos Olímpicos de Inverno? Ah, esta é aquela jovem prodígio coreana.",
+    "tokens": [
+      "B:",
+      "¿Estás",
+      "viendo",
+      "la",
+      "competición",
+      "de",
+      "patinaje",
+      "artístico",
+      "de",
+      "los",
+      "Juegos",
+      "Olímpicos",
+      "de",
+      "Invierno",
+      "?",
+      "Oh",
+      ",",
+      "esta",
+      "es",
+      "esa",
+      "joven",
+      "prodigio",
+      "coreana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Estás viendo",
+        "pinyin": "",
+        "meaning": "você está vendo/assistindo (do verbo ver)"
+      },
+      {
+        "id": 2,
+        "word": "competición",
+        "pinyin": "",
+        "meaning": "competição"
+      },
+      {
+        "id": 3,
+        "word": "patinaje artístico",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "Juegos Olímpicos de Invierno",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 5,
+        "word": "joven",
+        "pinyin": "",
+        "meaning": "jovem"
+      },
+      {
+        "id": 6,
+        "word": "prodigio",
+        "pinyin": "",
+        "meaning": "prodígio"
+      },
+      {
+        "id": 7,
+        "word": "coreana",
+        "pinyin": "",
+        "meaning": "coreana"
+      }
+    ],
+    "id": "local-1772294197539-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. ¡Mira qué hermosos son sus movimientos!",
+    "pinyin": "",
+    "translation": "A: Sim. Veja como os movimentos dela são bonitos!",
+    "tokens": [
+      "A:",
+      "Sí",
+      ".",
+      "¡Mira",
+      "qué",
+      "hermosos",
+      "son",
+      "sus",
+      "movimientos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Mira",
+        "pinyin": "",
+        "meaning": "Olha (do verbo mirar)"
+      },
+      {
+        "id": 3,
+        "word": "qué hermosos",
+        "pinyin": "",
+        "meaning": "que bonitos"
+      },
+      {
+        "id": 4,
+        "word": "movimientos",
+        "pinyin": "",
+        "meaning": "movimentos"
+      }
+    ],
+    "id": "local-1772294197539-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pero en estos Juegos Olímpicos de Invierno, no consiguió la medalla de oro. Creo que hace cuatro años en los Juegos Olímpicos de Vancouver estaba en su mejor momento.",
+    "pinyin": "",
+    "translation": "B: Mas nestes Jogos Olímpicos de Inverno, ela não conseguiu a medalha de ouro. Acho que quatro anos atrás, nos Jogos Olímpicos de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "B:",
+      "Pero",
+      "en",
+      "estos",
+      "Juegos",
+      "Olímpicos",
+      "de",
+      "Invierno",
+      ",",
+      "no",
+      "consiguió",
+      "la",
+      "medalla",
+      "de",
+      "oro",
+      ".",
+      "Creo",
+      "que",
+      "hace",
+      "cuatro",
+      "años",
+      "en",
+      "los",
+      "Juegos",
+      "Olímpicos",
+      "de",
+      "Vancouver",
+      "estaba",
+      "en",
+      "su",
+      "mejor",
+      "momento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "Juegos Olímpicos de Invierno",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "consiguió",
+        "pinyin": "",
+        "meaning": "ela conseguiu (do verbo conseguir)"
+      },
+      {
+        "id": 4,
+        "word": "medalla de oro",
+        "pinyin": "",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 5,
+        "word": "Creo",
+        "pinyin": "",
+        "meaning": "Eu acho (do verbo creer)"
+      },
+      {
+        "id": 6,
+        "word": "hace cuatro años",
+        "pinyin": "",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 7,
+        "word": "mejor momento",
+        "pinyin": "",
+        "meaning": "melhor momento, auge"
+      }
+    ],
+    "id": "local-1772294197539-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: En mi mente, ¡ella siempre será la Reina del Hielo! Aunque no consiguió el oro esta vez, su actuación fue igualmente notable. Es una pena que se vaya a retirar después de estos Juegos Olímpicos de Invierno.",
+    "pinyin": "",
+    "translation": "A: Na minha mente, ela sempre será a Rainha do Gelo! Embora não tenha conseguido o ouro desta vez, sua atuação foi igualmente notável. É uma pena que ela vá se aposentar depois destes Jogos Olímpicos de Inverno.",
+    "tokens": [
+      "A:",
+      "En",
+      "mi",
+      "mente",
+      ",",
+      "¡ella",
+      "siempre",
+      "será",
+      "la",
+      "Reina",
+      "del",
+      "Hielo",
+      "!",
+      "Aunque",
+      "no",
+      "consiguió",
+      "el",
+      "oro",
+      "esta",
+      "vez",
+      ",",
+      "su",
+      "actuación",
+      "fue",
+      "igualmente",
+      "notable",
+      ".",
+      "Es",
+      "una",
+      "pena",
+      "que",
+      "se",
+      "vaya",
+      "a",
+      "retirar",
+      "después",
+      "de",
+      "estos",
+      "Juegos",
+      "Olímpicos",
+      "de",
+      "Invierno",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En mi mente",
+        "pinyin": "",
+        "meaning": "Na minha mente"
+      },
+      {
+        "id": 2,
+        "word": "siempre",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 3,
+        "word": "será",
+        "pinyin": "",
+        "meaning": "será (do verbo ser)"
+      },
+      {
+        "id": 4,
+        "word": "Reina del Hielo",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 5,
+        "word": "Aunque",
+        "pinyin": "",
+        "meaning": "Embora"
+      },
+      {
+        "id": 6,
+        "word": "consiguió",
+        "pinyin": "",
+        "meaning": "ela conseguiu (do verbo conseguir)"
+      },
+      {
+        "id": 7,
+        "word": "oro",
+        "pinyin": "",
+        "meaning": "ouro"
+      },
+      {
+        "id": 8,
+        "word": "esta vez",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 9,
+        "word": "actuación",
+        "pinyin": "",
+        "meaning": "atuação, performance"
+      },
+      {
+        "id": 10,
+        "word": "igualmente",
+        "pinyin": "",
+        "meaning": "igualmente"
+      },
+      {
+        "id": 11,
+        "word": "notable",
+        "pinyin": "",
+        "meaning": "notável"
+      },
+      {
+        "id": 12,
+        "word": "Es una pena",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 13,
+        "word": "se vaya a retirar",
+        "pinyin": "",
+        "meaning": "ela vai se aposentar (do verbo retirarse)"
+      },
+      {
+        "id": 14,
+        "word": "después de",
+        "pinyin": "",
+        "meaning": "depois de"
+      },
+      {
+        "id": 15,
+        "word": "Juegos Olímpicos de Invierno",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      }
+    ],
+    "id": "local-1772294197539-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Esta vez, la campeona individual femenina, Sotnikova, también es muy buena. Además, solo tiene 17 años.",
+    "pinyin": "",
+    "translation": "B: Desta vez, a campeã individual feminina, Sotnikova, também é muito boa. Além disso, ela só tem 17 anos.",
+    "tokens": [
+      "B:",
+      "Esta",
+      "vez",
+      ",",
+      "la",
+      "campeona",
+      "individual",
+      "femenina",
+      ",",
+      "Sotnikova",
+      ",",
+      "también",
+      "es",
+      "muy",
+      "buena",
+      ".",
+      "Además",
+      ",",
+      "solo",
+      "tiene",
+      "17",
+      "años",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esta vez",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "campeona",
+        "pinyin": "",
+        "meaning": "campeã"
+      },
+      {
+        "id": 3,
+        "word": "individual",
+        "pinyin": "",
+        "meaning": "individual"
+      },
+      {
+        "id": 4,
+        "word": "femenina",
+        "pinyin": "",
+        "meaning": "feminina"
+      },
+      {
+        "id": 5,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 6,
+        "word": "muy buena",
+        "pinyin": "",
+        "meaning": "muito boa"
+      },
+      {
+        "id": 7,
+        "word": "Además",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 8,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 9,
+        "word": "tiene",
+        "pinyin": "",
+        "meaning": "tem (do verbo tener)"
+      },
+      {
+        "id": 10,
+        "word": "años",
+        "pinyin": "",
+        "meaning": "anos"
+      }
+    ],
+    "id": "local-1772294197539-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. Oye, el patinaje artístico es un deporte realmente elegante. ¿Crees que todavía podría aprender a hacerlo?",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, a patinação artística é um esporte realmente elegante. Você acha que eu ainda poderia aprender a fazer isso?",
+    "tokens": [
+      "A:",
+      "Sí",
+      ".",
+      "Oye",
+      ",",
+      "el",
+      "patinaje",
+      "artístico",
+      "es",
+      "un",
+      "deporte",
+      "realmente",
+      "elegante",
+      ".",
+      "¿Crees",
+      "que",
+      "todavía",
+      "podría",
+      "aprender",
+      "a",
+      "hacerlo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, Ouça"
+      },
+      {
+        "id": 3,
+        "word": "patinaje artístico",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "deporte",
+        "pinyin": "",
+        "meaning": "esporte"
+      },
+      {
+        "id": 5,
+        "word": "realmente",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "elegante",
+        "pinyin": "",
+        "meaning": "elegante"
+      },
+      {
+        "id": 7,
+        "word": "Crees",
+        "pinyin": "",
+        "meaning": "Você pensa, Acha (do verbo creer)"
+      },
+      {
+        "id": 8,
+        "word": "todavía",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 9,
+        "word": "podría",
+        "pinyin": "",
+        "meaning": "eu poderia (do verbo poder)"
+      },
+      {
+        "id": 10,
+        "word": "aprender",
+        "pinyin": "",
+        "meaning": "aprender"
+      },
+      {
+        "id": 11,
+        "word": "hacerlo",
+        "pinyin": "",
+        "meaning": "fazê-lo"
+      }
+    ],
+    "id": "local-1772294197539-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Tú? Olvídalo. ¿Ves a estos atletas en la televisión? Todos empezaron cuando eran jóvenes. Si empezaras ahora, sería demasiado tarde.",
+    "pinyin": "",
+    "translation": "B: Você? Esqueça. Você vê esses atletas na televisão? Todos começaram quando eram jovens. Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "B:",
+      "¿Tú",
+      "?",
+      "Olvídalo",
+      ".",
+      "¿Ves",
+      "a",
+      "estos",
+      "atletas",
+      "en",
+      "la",
+      "televisión",
+      "?",
+      "Todos",
+      "empezaron",
+      "cuando",
+      "eran",
+      "jóvenes",
+      ".",
+      "Si",
+      "empezaras",
+      "ahora",
+      ",",
+      "sería",
+      "demasiado",
+      "tarde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tú",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 2,
+        "word": "Olvídalo",
+        "pinyin": "",
+        "meaning": "Esqueça (do verbo olvidar)"
+      },
+      {
+        "id": 3,
+        "word": "Ves",
+        "pinyin": "",
+        "meaning": "Você vê (do verbo ver)"
+      },
+      {
+        "id": 4,
+        "word": "atletas",
+        "pinyin": "",
+        "meaning": "atletas"
+      },
+      {
+        "id": 5,
+        "word": "televisión",
+        "pinyin": "",
+        "meaning": "televisão"
+      },
+      {
+        "id": 6,
+        "word": "Todos",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 7,
+        "word": "empezaron",
+        "pinyin": "",
+        "meaning": "eles começaram (do verbo empezar)"
+      },
+      {
+        "id": 8,
+        "word": "cuando",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 9,
+        "word": "eran",
+        "pinyin": "",
+        "meaning": "eles eram (do verbo ser)"
+      },
+      {
+        "id": 10,
+        "word": "jóvenes",
+        "pinyin": "",
+        "meaning": "jovens"
+      },
+      {
+        "id": 11,
+        "word": "Si",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 12,
+        "word": "empezaras",
+        "pinyin": "",
+        "meaning": "você começasse (do verbo empezar)"
+      },
+      {
+        "id": 13,
+        "word": "ahora",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 14,
+        "word": "sería",
+        "pinyin": "",
+        "meaning": "seria (do verbo ser)"
+      },
+      {
+        "id": 15,
+        "word": "demasiado tarde",
+        "pinyin": "",
+        "meaning": "tarde demais"
+      }
+    ],
+    "id": "local-1772294197539-20",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No quiero competir. Solo quiero hacerlo por diversión.",
+    "pinyin": "",
+    "translation": "A: Não quero competir. Só quero fazer por diversão.",
+    "tokens": [
+      "A:",
+      "No",
+      "quiero",
+      "competir",
+      ".",
+      "Solo",
+      "quiero",
+      "hacerlo",
+      "por",
+      "diversión",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No quiero",
+        "pinyin": "",
+        "meaning": "Eu não quero (do verbo querer)"
+      },
+      {
+        "id": 2,
+        "word": "competir",
+        "pinyin": "",
+        "meaning": "competir"
+      },
+      {
+        "id": 3,
+        "word": "Solo",
+        "pinyin": "",
+        "meaning": "Só, Apenas"
+      },
+      {
+        "id": 4,
+        "word": "quiero",
+        "pinyin": "",
+        "meaning": "Eu quero (do verbo querer)"
+      },
+      {
+        "id": 5,
+        "word": "hacerlo",
+        "pinyin": "",
+        "meaning": "fazê-lo"
+      },
+      {
+        "id": 6,
+        "word": "por diversión",
+        "pinyin": "",
+        "meaning": "por diversão"
+      }
+    ],
+    "id": "local-1772294197539-21",
+    "language": "Espanhol"
+  }
+]

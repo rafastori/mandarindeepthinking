@@ -1,0 +1,672 @@
+[
+  {
+    "chinese": "A: Xiao Wang, hast du meine E-Mail angesehen? Gibt es irgendwelche Fragen?",
+    "pinyin": null,
+    "translation": "A: Xiao Wang, você viu meu e-mail? Há alguma pergunta?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang,",
+      "hast",
+      "du",
+      "meine",
+      "E-Mail",
+      "angesehen?",
+      "Gibt",
+      "es",
+      "irgendwelche",
+      "Fragen?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hast du angesehen",
+        "pinyin": null,
+        "meaning": "você viu/olhou"
+      },
+      {
+        "id": 2,
+        "word": "E-Mail",
+        "pinyin": null,
+        "meaning": "e-mail"
+      },
+      {
+        "id": 3,
+        "word": "Gibt es",
+        "pinyin": null,
+        "meaning": "Há/Existe"
+      },
+      {
+        "id": 4,
+        "word": "irgendwelche",
+        "pinyin": null,
+        "meaning": "quaisquer/algumas"
+      },
+      {
+        "id": 5,
+        "word": "Fragen",
+        "pinyin": null,
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772300938203-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich habe diese E-Mail angesehen. Sie war sehr detailliert. Im Grunde verstehe ich, worum es bei der Arbeit geht.",
+    "pinyin": null,
+    "translation": "B: Eu vi este e-mail. Ele era muito detalhado. Basicamente, entendi sobre o que é o trabalho.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "habe",
+      "diese",
+      "E-Mail",
+      "angesehen.",
+      "Sie",
+      "war",
+      "sehr",
+      "detailliert.",
+      "Im",
+      "Grunde",
+      "verstehe",
+      "ich,",
+      "worum",
+      "es",
+      "bei",
+      "der",
+      "Arbeit",
+      "geht."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "angesehen",
+        "pinyin": null,
+        "meaning": "visto/olhado"
+      },
+      {
+        "id": 2,
+        "word": "detailliert",
+        "pinyin": null,
+        "meaning": "detalhado"
+      },
+      {
+        "id": 3,
+        "word": "Im Grunde",
+        "pinyin": null,
+        "meaning": "Basicamente/No fundo"
+      },
+      {
+        "id": 4,
+        "word": "verstehe",
+        "pinyin": null,
+        "meaning": "entendo"
+      },
+      {
+        "id": 5,
+        "word": "worum es geht",
+        "pinyin": null,
+        "meaning": "do que se trata"
+      },
+      {
+        "id": 6,
+        "word": "Arbeit",
+        "pinyin": null,
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772300938203-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich habe hier eine Liste der Routineaufgaben. Sie enthält meinen Arbeitsplan von Montag bis Freitag. Du kannst dich daran orientieren, um deine zukünftige Arbeit zu planen.",
+    "pinyin": null,
+    "translation": "A: Eu tenho aqui uma lista de tarefas rotineiras. Ela contém meu plano de trabalho de segunda a sexta-feira. Você pode se basear nisso para planejar seu futuro trabalho.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "habe",
+      "hier",
+      "eine",
+      "Liste",
+      "der",
+      "Routineaufgaben.",
+      "Sie",
+      "enthält",
+      "meinen",
+      "Arbeitsplan",
+      "von",
+      "Montag",
+      "bis",
+      "Freitag.",
+      "Du",
+      "kannst",
+      "dich",
+      "daran",
+      "orientieren,",
+      "um",
+      "deine",
+      "zukünftige",
+      "Arbeit",
+      "zu",
+      "planen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Liste",
+        "pinyin": null,
+        "meaning": "lista"
+      },
+      {
+        "id": 2,
+        "word": "Routineaufgaben",
+        "pinyin": null,
+        "meaning": "tarefas rotineiras"
+      },
+      {
+        "id": 3,
+        "word": "enthält",
+        "pinyin": null,
+        "meaning": "contém"
+      },
+      {
+        "id": 4,
+        "word": "Arbeitsplan",
+        "pinyin": null,
+        "meaning": "plano de trabalho"
+      },
+      {
+        "id": 5,
+        "word": "Montag bis Freitag",
+        "pinyin": null,
+        "meaning": "de segunda a sexta-feira"
+      },
+      {
+        "id": 6,
+        "word": "orientieren",
+        "pinyin": null,
+        "meaning": "orientar-se/basear-se"
+      },
+      {
+        "id": 7,
+        "word": "zukünftige",
+        "pinyin": null,
+        "meaning": "futura"
+      },
+      {
+        "id": 8,
+        "word": "planen",
+        "pinyin": null,
+        "meaning": "planejar"
+      }
+    ],
+    "id": "local-1772300938203-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Danke schön. Ach ja, gestern habe ich eine E-Mail von einem Kunden bezüglich Verkaufsfragen erhalten. Wie gehe ich damit um?",
+    "pinyin": null,
+    "translation": "B: Muito obrigado. Ah sim, ontem recebi um e-mail de um cliente sobre questões de vendas. Como devo lidar com isso?",
+    "tokens": [
+      "B:",
+      "Danke",
+      "schön.",
+      "Ach",
+      "ja,",
+      "gestern",
+      "habe",
+      "ich",
+      "eine",
+      "E-Mail",
+      "von",
+      "einem",
+      "Kunden",
+      "bezüglich",
+      "Verkaufsfragen",
+      "erhalten.",
+      "Wie",
+      "gehe",
+      "ich",
+      "damit",
+      "um?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Danke schön",
+        "pinyin": null,
+        "meaning": "Muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "Ach ja",
+        "pinyin": null,
+        "meaning": "Ah sim/A propósito"
+      },
+      {
+        "id": 3,
+        "word": "gestern",
+        "pinyin": null,
+        "meaning": "ontem"
+      },
+      {
+        "id": 4,
+        "word": "Kunden",
+        "pinyin": null,
+        "meaning": "cliente"
+      },
+      {
+        "id": 5,
+        "word": "bezüglich",
+        "pinyin": null,
+        "meaning": "referente a/sobre"
+      },
+      {
+        "id": 6,
+        "word": "Verkaufsfragen",
+        "pinyin": null,
+        "meaning": "perguntas de vendas"
+      },
+      {
+        "id": 7,
+        "word": "erhalten",
+        "pinyin": null,
+        "meaning": "recebido"
+      },
+      {
+        "id": 8,
+        "word": "Wie gehe ich damit um?",
+        "pinyin": null,
+        "meaning": "Como lido com isso?"
+      }
+    ],
+    "id": "local-1772300938203-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wir sind nicht für den Verkauf zuständig, daher kann es direkt an Li Ming weitergeleitet werden. Seine E-Mail-Adresse findest du in der Liste der Mitarbeiterkontakte.",
+    "pinyin": null,
+    "translation": "A: Não somos responsáveis pelas vendas, portanto, pode ser encaminhado diretamente para Li Ming. O endereço de e-mail dele você encontra na lista de contatos dos funcionários.",
+    "tokens": [
+      "A:",
+      "Wir",
+      "sind",
+      "nicht",
+      "für",
+      "den",
+      "Verkauf",
+      "zuständig,",
+      "daher",
+      "kann",
+      "es",
+      "direkt",
+      "an",
+      "Li",
+      "Ming",
+      "weitergeleitet",
+      "werden.",
+      "Seine",
+      "E-Mail-Adresse",
+      "findest",
+      "du",
+      "in",
+      "der",
+      "Liste",
+      "der",
+      "Mitarbeiterkontakte."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nicht zuständig",
+        "pinyin": null,
+        "meaning": "não responsável/não encarregado"
+      },
+      {
+        "id": 2,
+        "word": "Verkauf",
+        "pinyin": null,
+        "meaning": "venda"
+      },
+      {
+        "id": 3,
+        "word": "daher",
+        "pinyin": null,
+        "meaning": "portanto"
+      },
+      {
+        "id": 4,
+        "word": "direkt",
+        "pinyin": null,
+        "meaning": "diretamente"
+      },
+      {
+        "id": 5,
+        "word": "weitergeleitet werden",
+        "pinyin": null,
+        "meaning": "ser encaminhado/repassado"
+      },
+      {
+        "id": 6,
+        "word": "E-Mail-Adresse",
+        "pinyin": null,
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 7,
+        "word": "findest du",
+        "pinyin": null,
+        "meaning": "você encontra"
+      },
+      {
+        "id": 8,
+        "word": "Mitarbeiterkontakte",
+        "pinyin": null,
+        "meaning": "contatos dos funcionários"
+      }
+    ],
+    "id": "local-1772300938203-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Und technische Fragen?",
+    "pinyin": null,
+    "translation": "B: E questões técnicas?",
+    "tokens": [
+      "B:",
+      "Und",
+      "technische",
+      "Fragen?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "technische",
+        "pinyin": null,
+        "meaning": "técnicas"
+      },
+      {
+        "id": 2,
+        "word": "Fragen",
+        "pinyin": null,
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772300938203-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Huang Jia ist für die technische Abteilung zuständig. Es ist in Ordnung, es an ihn weiterzuleiten.",
+    "pinyin": null,
+    "translation": "A: Huang Jia é responsável pelo departamento técnico. Está tudo bem encaminhá-lo para ele.",
+    "tokens": [
+      "A:",
+      "Huang",
+      "Jia",
+      "ist",
+      "für",
+      "die",
+      "technische",
+      "Abteilung",
+      "zuständig.",
+      "Es",
+      "ist",
+      "in",
+      "Ordnung,",
+      "es",
+      "an",
+      "ihn",
+      "weiterzuleiten."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zuständig",
+        "pinyin": null,
+        "meaning": "responsável"
+      },
+      {
+        "id": 2,
+        "word": "technische Abteilung",
+        "pinyin": null,
+        "meaning": "departamento técnico"
+      },
+      {
+        "id": 3,
+        "word": "in Ordnung",
+        "pinyin": null,
+        "meaning": "em ordem/tudo bem"
+      },
+      {
+        "id": 4,
+        "word": "weiterzuleiten",
+        "pinyin": null,
+        "meaning": "encaminhar"
+      }
+    ],
+    "id": "local-1772300938203-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber ich kenne sie nicht.",
+    "pinyin": null,
+    "translation": "B: Mas eu não a conheço.",
+    "tokens": [
+      "B:",
+      "Aber",
+      "ich",
+      "kenne",
+      "sie",
+      "nicht."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kenne nicht",
+        "pinyin": null,
+        "meaning": "não conheço"
+      }
+    ],
+    "id": "local-1772300938203-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Keine Sorge, ich habe den Kollegen heute Morgen bereits eine E-Mail geschickt. Heute Nachmittag werde ich ein weiteres Übergabetreffen arrangieren, um dich jedem persönlich vorzustellen.",
+    "pinyin": null,
+    "translation": "A: Não se preocupe, já enviei um e-mail aos colegas hoje de manhã. Hoje à tarde, vou organizar outra reunião de transição para apresentá-lo pessoalmente a todos.",
+    "tokens": [
+      "A:",
+      "Keine",
+      "Sorge,",
+      "ich",
+      "habe",
+      "den",
+      "Kollegen",
+      "heute",
+      "Morgen",
+      "bereits",
+      "eine",
+      "E-Mail",
+      "geschickt.",
+      "Heute",
+      "Nachmittag",
+      "werde",
+      "ich",
+      "ein",
+      "weiteres",
+      "Übergabetreffen",
+      "arrangieren,",
+      "um",
+      "dich",
+      "jedem",
+      "persönlich",
+      "vorzustellen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Keine Sorge",
+        "pinyin": null,
+        "meaning": "Não se preocupe"
+      },
+      {
+        "id": 2,
+        "word": "Kollegen",
+        "pinyin": null,
+        "meaning": "colegas"
+      },
+      {
+        "id": 3,
+        "word": "heute Morgen",
+        "pinyin": null,
+        "meaning": "hoje de manhã"
+      },
+      {
+        "id": 4,
+        "word": "geschickt",
+        "pinyin": null,
+        "meaning": "enviado"
+      },
+      {
+        "id": 5,
+        "word": "Heute Nachmittag",
+        "pinyin": null,
+        "meaning": "Hoje à tarde"
+      },
+      {
+        "id": 6,
+        "word": "Übergabetreffen",
+        "pinyin": null,
+        "meaning": "reunião de transição/entrega"
+      },
+      {
+        "id": 7,
+        "word": "arrangieren",
+        "pinyin": null,
+        "meaning": "organizar/arranjar"
+      },
+      {
+        "id": 8,
+        "word": "persönlich",
+        "pinyin": null,
+        "meaning": "pessoalmente"
+      },
+      {
+        "id": 9,
+        "word": "vorzustellen",
+        "pinyin": null,
+        "meaning": "apresentar"
+      }
+    ],
+    "id": "local-1772300938203-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Vielen herzlichen Dank.",
+    "pinyin": null,
+    "translation": "B: Muito obrigado/a.",
+    "tokens": [
+      "B:",
+      "Vielen",
+      "herzlichen",
+      "Dank."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vielen herzlichen Dank",
+        "pinyin": null,
+        "meaning": "Muito obrigado/a"
+      }
+    ],
+    "id": "local-1772300938203-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist meine Verantwortung. Ich habe bereits alle Übergabedokumente in die Datei \"Shared\" gelegt. Falls du noch Fragen hast, kannst du mich auch telefonisch kontaktieren.",
+    "pinyin": null,
+    "translation": "A: Essa é minha responsabilidade. Já coloquei todos os documentos de transição na pasta \"Shared\". Se você tiver mais alguma pergunta, pode me contatar também por telefone.",
+    "tokens": [
+      "A:",
+      "Das",
+      "ist",
+      "meine",
+      "Verantwortung.",
+      "Ich",
+      "habe",
+      "bereits",
+      "alle",
+      "Übergabedokumente",
+      "in",
+      "die",
+      "Datei",
+      "\"Shared\"",
+      "gelegt.",
+      "Falls",
+      "du",
+      "noch",
+      "Fragen",
+      "hast,",
+      "kannst",
+      "du",
+      "mich",
+      "auch",
+      "telefonisch",
+      "kontaktieren."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Verantwortung",
+        "pinyin": null,
+        "meaning": "responsabilidade"
+      },
+      {
+        "id": 2,
+        "word": "bereits",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "Übergabedokumente",
+        "pinyin": null,
+        "meaning": "documentos de transição/entrega"
+      },
+      {
+        "id": 4,
+        "word": "Datei",
+        "pinyin": null,
+        "meaning": "arquivo/pasta"
+      },
+      {
+        "id": 5,
+        "word": "gelegt",
+        "pinyin": null,
+        "meaning": "colocado"
+      },
+      {
+        "id": 6,
+        "word": "Falls",
+        "pinyin": null,
+        "meaning": "Caso/Se"
+      },
+      {
+        "id": 7,
+        "word": "noch Fragen",
+        "pinyin": null,
+        "meaning": "ainda perguntas/mais perguntas"
+      },
+      {
+        "id": 8,
+        "word": "telefonisch kontaktieren",
+        "pinyin": null,
+        "meaning": "contatar por telefone"
+      }
+    ],
+    "id": "local-1772300938203-10",
+    "language": "Alemão"
+  }
+]

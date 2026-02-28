@@ -1,0 +1,843 @@
+[
+  {
+    "chinese": "A: どこが痛いですか？",
+    "pinyin": null,
+    "translation": "A: Onde dói?",
+    "tokens": [
+      "どこ",
+      "が",
+      "痛い",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どこ",
+        "pinyin": "doko",
+        "meaning": "onde"
+      },
+      {
+        "id": 2,
+        "word": "痛い",
+        "pinyin": "itai",
+        "meaning": "doloroso, doer"
+      }
+    ],
+    "id": "local-1772300872625-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 最近、眠れなくて、疲れやすいんです。なので、どうにかしたいです。",
+    "pinyin": null,
+    "translation": "B: Ultimamente, não consigo dormir e fico cansado facilmente. Por isso, quero dar um jeito.",
+    "tokens": [
+      "最近",
+      "、",
+      "眠れなく",
+      "て",
+      "、",
+      "疲れやすい",
+      "んです",
+      "。",
+      "なので",
+      "、",
+      "どうにかしたい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最近",
+        "pinyin": "saikin",
+        "meaning": "recentemente, ultimamente"
+      },
+      {
+        "id": 2,
+        "word": "眠る",
+        "pinyin": "nemuru",
+        "meaning": "dormir (眠れない: não conseguir dormir)"
+      },
+      {
+        "id": 3,
+        "word": "疲れる",
+        "pinyin": "tsukareru",
+        "meaning": "cansar-se (疲れやすい: cansar-se facilmente)"
+      },
+      {
+        "id": 4,
+        "word": "どうにかする",
+        "pinyin": "dounika suru",
+        "meaning": "dar um jeito, resolver (どうにかしたい: quero dar um jeito)"
+      }
+    ],
+    "id": "local-1772300872625-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 手を出してください。脈を診ます。舌を出してください。",
+    "pinyin": null,
+    "translation": "A: Por favor, estenda a mão. Vou verificar seu pulso. Por favor, mostre a língua.",
+    "tokens": [
+      "手",
+      "を",
+      "出し",
+      "て",
+      "ください",
+      "。",
+      "脈",
+      "を",
+      "診ます",
+      "。",
+      "舌",
+      "を",
+      "出し",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "手",
+        "pinyin": "te",
+        "meaning": "mão"
+      },
+      {
+        "id": 2,
+        "word": "出す",
+        "pinyin": "dasu",
+        "meaning": "tirar, colocar para fora, estender"
+      },
+      {
+        "id": 3,
+        "word": "脈",
+        "pinyin": "myaku",
+        "meaning": "pulso"
+      },
+      {
+        "id": 4,
+        "word": "診る",
+        "pinyin": "miru",
+        "meaning": "examinar (médico)"
+      },
+      {
+        "id": 5,
+        "word": "舌",
+        "pinyin": "shita",
+        "meaning": "língua"
+      }
+    ],
+    "id": "local-1772300872625-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 先生、大したことないですよね？",
+    "pinyin": null,
+    "translation": "B: Doutor, não é nada grave, certo?",
+    "tokens": [
+      "先生",
+      "、",
+      "大した",
+      "こと",
+      "ない",
+      "です",
+      "よね",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "先生",
+        "pinyin": "sensei",
+        "meaning": "professor, doutor"
+      },
+      {
+        "id": 2,
+        "word": "大したことない",
+        "pinyin": "taishita koto nai",
+        "meaning": "não é nada demais, não é grave"
+      }
+    ],
+    "id": "local-1772300872625-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 大した問題はありません。少し気力が不足しています。薬を処方しますね。",
+    "pinyin": null,
+    "translation": "A: Não há nenhum problema sério. Sua energia vital está um pouco baixa. Vou prescrever um remédio.",
+    "tokens": [
+      "大した",
+      "問題",
+      "は",
+      "ありません",
+      "。",
+      "少し",
+      "気力",
+      "が",
+      "不足し",
+      "て",
+      "います",
+      "。",
+      "薬",
+      "を",
+      "処方します",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大した",
+        "pinyin": "taishita",
+        "meaning": "importante, grave (geralmente usado com negativo: não é grave)"
+      },
+      {
+        "id": 2,
+        "word": "問題",
+        "pinyin": "mondai",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "少し",
+        "pinyin": "sukoshi",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 4,
+        "word": "気力",
+        "pinyin": "kiryoku",
+        "meaning": "energia vital, força de vontade"
+      },
+      {
+        "id": 5,
+        "word": "不足する",
+        "pinyin": "fusoku suru",
+        "meaning": "faltar, ser insuficiente"
+      },
+      {
+        "id": 6,
+        "word": "薬",
+        "pinyin": "kusuri",
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 7,
+        "word": "処方する",
+        "pinyin": "shohō suru",
+        "meaning": "prescrever (remédio)"
+      }
+    ],
+    "id": "local-1772300872625-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 薬はどうやって煎じますか？",
+    "pinyin": null,
+    "translation": "B: Como eu faço o chá do remédio?",
+    "tokens": [
+      "薬",
+      "は",
+      "どうやって",
+      "煎じます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "薬",
+        "pinyin": "kusuri",
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 2,
+        "word": "どうやって",
+        "pinyin": "dō yatte",
+        "meaning": "como (fazer algo)"
+      },
+      {
+        "id": 3,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      }
+    ],
+    "id": "local-1772300872625-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 二回煎じて、煎じたものを混ぜて、二回に分けて飲んでください。朝一回、晩一回です。",
+    "pinyin": null,
+    "translation": "A: Decocta duas vezes, misture o que foi decoctado e beba dividido em duas vezes. Uma vez pela manhã, uma vez à noite.",
+    "tokens": [
+      "二回",
+      "煎じ",
+      "て",
+      "、",
+      "煎じた",
+      "もの",
+      "を",
+      "混ぜ",
+      "て",
+      "、",
+      "二回",
+      "に",
+      "分け",
+      "て",
+      "飲ん",
+      "で",
+      "ください",
+      "。",
+      "朝",
+      "一回",
+      "、",
+      "晩",
+      "一回",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "二回",
+        "pinyin": "nikai",
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 2,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 3,
+        "word": "混ぜる",
+        "pinyin": "mazeru",
+        "meaning": "misturar"
+      },
+      {
+        "id": 4,
+        "word": "分ける",
+        "pinyin": "wakeru",
+        "meaning": "dividir"
+      },
+      {
+        "id": 5,
+        "word": "飲む",
+        "pinyin": "nomu",
+        "meaning": "beber"
+      },
+      {
+        "id": 6,
+        "word": "朝",
+        "pinyin": "asa",
+        "meaning": "manhã"
+      },
+      {
+        "id": 7,
+        "word": "晩",
+        "pinyin": "ban",
+        "meaning": "noite"
+      },
+      {
+        "id": 8,
+        "word": "一回",
+        "pinyin": "ikkai",
+        "meaning": "uma vez"
+      }
+    ],
+    "id": "local-1772300872625-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ということは、毎朝起きて薬を煎じないといけないということですね。",
+    "pinyin": null,
+    "translation": "B: Então, isso significa que tenho que acordar toda manhã e preparar o remédio, certo?",
+    "tokens": [
+      "という",
+      "こと",
+      "は",
+      "、",
+      "毎朝",
+      "起き",
+      "て",
+      "薬",
+      "を",
+      "煎じ",
+      "ない",
+      "と",
+      "いけない",
+      "という",
+      "こと",
+      "です",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ということは",
+        "pinyin": "to iu koto wa",
+        "meaning": "isso significa que, em outras palavras"
+      },
+      {
+        "id": 2,
+        "word": "毎朝",
+        "pinyin": "maiasa",
+        "meaning": "toda manhã"
+      },
+      {
+        "id": 3,
+        "word": "起きる",
+        "pinyin": "okiru",
+        "meaning": "acordar, levantar-se"
+      },
+      {
+        "id": 4,
+        "word": "薬",
+        "pinyin": "kusuri",
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 5,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 6,
+        "word": "～ないといけない",
+        "pinyin": "nai to ikenai",
+        "meaning": "ter que fazer, precisar fazer"
+      }
+    ],
+    "id": "local-1772300872625-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 面倒でしたら、こちらで煎じることもできますよ。",
+    "pinyin": null,
+    "translation": "A: Se for incômodo, podemos prepará-lo aqui também.",
+    "tokens": [
+      "面倒",
+      "でしたら",
+      "、",
+      "こちら",
+      "で",
+      "煎じる",
+      "こと",
+      "も",
+      "でき",
+      "ます",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "面倒",
+        "pinyin": "mendō",
+        "meaning": "problemático, incômodo"
+      },
+      {
+        "id": 2,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "aqui (forma polida)"
+      },
+      {
+        "id": 3,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 4,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772300872625-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 病院で煎じてくれるんですか？",
+    "pinyin": null,
+    "translation": "B: O hospital prepara o remédio para mim?",
+    "tokens": [
+      "病院",
+      "で",
+      "煎じ",
+      "て",
+      "くれる",
+      "んです",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "病院",
+        "pinyin": "byōin",
+        "meaning": "hospital"
+      },
+      {
+        "id": 2,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 3,
+        "word": "くれる",
+        "pinyin": "kureru",
+        "meaning": "dar (ação feita em benefício do falante)"
+      }
+    ],
+    "id": "local-1772300872625-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: はい。煎じる手数料を少しお支払いいただければ、病院で煎じて真空パックにできます。飲むときに温めると、もっと飲みやすくなりますよ。",
+    "pinyin": null,
+    "translation": "A: Sim. Se puder pagar uma pequena taxa pelo preparo, podemos prepará-lo no hospital e colocá-lo em embalagem a vácuo. Ao aquecê-lo na hora de beber, ficará ainda mais fácil de beber.",
+    "tokens": [
+      "はい",
+      "。",
+      "煎じる",
+      "手数料",
+      "を",
+      "少し",
+      "お支払い",
+      "いただければ",
+      "、",
+      "病院",
+      "で",
+      "煎じ",
+      "て",
+      "真空パック",
+      "に",
+      "でき",
+      "ます",
+      "。",
+      "飲む",
+      "とき",
+      "に",
+      "温める",
+      "と",
+      "、",
+      "もっと",
+      "飲みやすく",
+      "なり",
+      "ます",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 3,
+        "word": "手数料",
+        "pinyin": "tesūryō",
+        "meaning": "taxa de serviço, comissão"
+      },
+      {
+        "id": 4,
+        "word": "支払う",
+        "pinyin": "shiharau",
+        "meaning": "pagar (お支払いいただく: por favor, pague)"
+      },
+      {
+        "id": 5,
+        "word": "病院",
+        "pinyin": "byōin",
+        "meaning": "hospital"
+      },
+      {
+        "id": 6,
+        "word": "真空パック",
+        "pinyin": "shinkū pakku",
+        "meaning": "embalagem a vácuo"
+      },
+      {
+        "id": 7,
+        "word": "飲む",
+        "pinyin": "nomu",
+        "meaning": "beber"
+      },
+      {
+        "id": 8,
+        "word": "温める",
+        "pinyin": "atatameru",
+        "meaning": "aquecer"
+      },
+      {
+        "id": 9,
+        "word": "もっと",
+        "pinyin": "motto",
+        "meaning": "mais"
+      },
+      {
+        "id": 10,
+        "word": "飲みやすい",
+        "pinyin": "nomiyasui",
+        "meaning": "fácil de beber"
+      }
+    ],
+    "id": "local-1772300872625-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、煎じてもらうことにします。今日中に受け取れますか？",
+    "pinyin": null,
+    "translation": "B: Então, vou pedir para prepararem. Posso pegá-lo hoje?",
+    "tokens": [
+      "では",
+      "、",
+      "煎じ",
+      "て",
+      "もらう",
+      "こと",
+      "に",
+      "します",
+      "。",
+      "今日中",
+      "に",
+      "受け取れ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 3,
+        "word": "～てもらう",
+        "pinyin": "te morau",
+        "meaning": "ter alguém fazendo algo para si (receber um favor)"
+      },
+      {
+        "id": 4,
+        "word": "～ことにする",
+        "pinyin": "koto ni suru",
+        "meaning": "decidir fazer algo"
+      },
+      {
+        "id": 5,
+        "word": "今日中",
+        "pinyin": "kyōjū",
+        "meaning": "dentro de hoje, até o final do dia"
+      },
+      {
+        "id": 6,
+        "word": "受け取る",
+        "pinyin": "uketoru",
+        "meaning": "receber, pegar"
+      }
+    ],
+    "id": "local-1772300872625-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: いいえ、それはできません。煎じるには時間がかかりますから。一番早くて明日のお渡しになります。まず、お支払いに行ってから、薬の煎じ窓口に行って登録してください。",
+    "pinyin": null,
+    "translation": "A: Não, isso não é possível. Leva tempo para preparar. O mais cedo que poderá pegá-lo será amanhã. Primeiro, vá fazer o pagamento, e depois vá ao balcão de preparo de remédios para se registrar.",
+    "tokens": [
+      "いいえ",
+      "、",
+      "それ",
+      "は",
+      "でき",
+      "ません",
+      "。",
+      "煎じる",
+      "に",
+      "は",
+      "時間",
+      "が",
+      "かかり",
+      "ます",
+      "から",
+      "。",
+      "一番早く",
+      "て",
+      "明日",
+      "の",
+      "お渡し",
+      "に",
+      "なり",
+      "ます",
+      "。",
+      "まず",
+      "、",
+      "お支払い",
+      "に",
+      "行っ",
+      "て",
+      "から",
+      "、",
+      "薬",
+      "の",
+      "煎じ",
+      "窓口",
+      "に",
+      "行っ",
+      "て",
+      "登録し",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "いいえ",
+        "pinyin": "iie",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 3,
+        "word": "煎じる",
+        "pinyin": "senjiru",
+        "meaning": "decoctar, preparar (chá medicinal)"
+      },
+      {
+        "id": 4,
+        "word": "時間",
+        "pinyin": "jikan",
+        "meaning": "tempo"
+      },
+      {
+        "id": 5,
+        "word": "かかる",
+        "pinyin": "kakaru",
+        "meaning": "levar (tempo, dinheiro)"
+      },
+      {
+        "id": 6,
+        "word": "一番早く",
+        "pinyin": "ichiban hayaku",
+        "meaning": "o mais cedo possível"
+      },
+      {
+        "id": 7,
+        "word": "明日",
+        "pinyin": "ashita",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 8,
+        "word": "お渡し",
+        "pinyin": "owatashi",
+        "meaning": "entrega (forma polida)"
+      },
+      {
+        "id": 9,
+        "word": "まず",
+        "pinyin": "mazu",
+        "meaning": "primeiramente"
+      },
+      {
+        "id": 10,
+        "word": "支払い",
+        "pinyin": "shiharai",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 11,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      },
+      {
+        "id": 12,
+        "word": "薬",
+        "pinyin": "kusuri",
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 13,
+        "word": "窓口",
+        "pinyin": "madoguchi",
+        "meaning": "balcão, guichê"
+      },
+      {
+        "id": 14,
+        "word": "登録する",
+        "pinyin": "tōroku suru",
+        "meaning": "registrar-se"
+      }
+    ],
+    "id": "local-1772300872625-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました、先生ありがとうございます。",
+    "pinyin": null,
+    "translation": "B: Entendi, obrigado, Doutor.",
+    "tokens": [
+      "わかり",
+      "ました",
+      "、",
+      "先生",
+      "ありがとう",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": "wakaru",
+        "meaning": "entender"
+      },
+      {
+        "id": 2,
+        "word": "先生",
+        "pinyin": "sensei",
+        "meaning": "professor, doutor"
+      },
+      {
+        "id": 3,
+        "word": "ありがとう",
+        "pinyin": "arigatō",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772300872625-13",
+    "language": "Japonês"
+  }
+]

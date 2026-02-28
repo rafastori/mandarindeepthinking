@@ -1,0 +1,561 @@
+[
+  {
+    "chinese": "嘿，你的电脑屏幕好亮啊。你不觉得看着很吃力吗？",
+    "pinyin": "Hēi, nǐ de diànnǎo píngmù hǎo liàng a. Nǐ bù juéde kànzhe hěn chīlì ma?",
+    "translation": "A: Ei, a tela do seu computador está tão brilhante. Você não acha que é cansativo de olhar?",
+    "tokens": [
+      "嘿",
+      "，",
+      "你",
+      "的",
+      "电脑",
+      "屏幕",
+      "好",
+      "亮",
+      "啊",
+      "。",
+      "你",
+      "不",
+      "觉得",
+      "看",
+      "着",
+      "很",
+      "吃力",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "ei, olá"
+      },
+      {
+        "id": 2,
+        "word": "电脑",
+        "pinyin": "diànnǎo",
+        "meaning": "computador"
+      },
+      {
+        "id": 3,
+        "word": "屏幕",
+        "pinyin": "píngmù",
+        "meaning": "tela, ecrã"
+      },
+      {
+        "id": 4,
+        "word": "亮",
+        "pinyin": "liàng",
+        "meaning": "brilhante"
+      },
+      {
+        "id": 5,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "sentir, achar"
+      },
+      {
+        "id": 6,
+        "word": "吃力",
+        "pinyin": "chīlì",
+        "meaning": "cansativo, exaustivo"
+      }
+    ],
+    "id": "local-1772296822763-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "嘿，我不在乎。我得赶紧弄完。",
+    "pinyin": "Hēi, wǒ bù zàihū. Wǒ děi gǎnjǐn nòngwán.",
+    "translation": "B: Ei, eu não me importo. Eu preciso terminar rápido.",
+    "tokens": [
+      "嘿",
+      "，",
+      "我",
+      "不",
+      "在乎",
+      "。",
+      "我",
+      "得",
+      "赶紧",
+      "弄完",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "ei, olá"
+      },
+      {
+        "id": 2,
+        "word": "在乎",
+        "pinyin": "zàihū",
+        "meaning": "se importar"
+      },
+      {
+        "id": 3,
+        "word": "得",
+        "pinyin": "děi",
+        "meaning": "ter que, precisar"
+      },
+      {
+        "id": 4,
+        "word": "赶紧",
+        "pinyin": "gǎnjǐn",
+        "meaning": "rapidamente, com pressa"
+      },
+      {
+        "id": 5,
+        "word": "弄完",
+        "pinyin": "nòngwán",
+        "meaning": "terminar de fazer"
+      }
+    ],
+    "id": "local-1772296822763-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你不在乎，可是我在乎啊。如果太亮了，我就睡不着觉了。",
+    "pinyin": "Nǐ bù zàihū, kěshì wǒ zàihū a. Rúguǒ tài liàng le, wǒ jiù shuìbuzháo jiào le.",
+    "translation": "A: Você não se importa, mas eu me importo. Se estiver muito brilhante, não conseguirei dormir.",
+    "tokens": [
+      "你",
+      "不",
+      "在乎",
+      "，",
+      "可是",
+      "我",
+      "在乎",
+      "啊",
+      "。",
+      "如果",
+      "太",
+      "亮",
+      "了",
+      "，",
+      "我",
+      "就",
+      "睡不着觉",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "在乎",
+        "pinyin": "zàihū",
+        "meaning": "se importar"
+      },
+      {
+        "id": 2,
+        "word": "可是",
+        "pinyin": "kěshì",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 3,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 4,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "亮",
+        "pinyin": "liàng",
+        "meaning": "brilhante"
+      },
+      {
+        "id": 6,
+        "word": "睡不着觉",
+        "pinyin": "shuìbuzháo jiào",
+        "meaning": "não conseguir dormir"
+      }
+    ],
+    "id": "local-1772296822763-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "真的吗？那我抱歉。我会改的。怎么调屏幕亮度啊？珍珍，你知道吗？",
+    "pinyin": "Zhēnde ma? Nà wǒ bàoqiàn. Wǒ huì gǎi de. Zěnme tiáo píngmù liàngdù a? Zhēnzhēn, nǐ zhīdào ma?",
+    "translation": "B: Sério? Então me desculpe. Eu vou mudar. Como ajusto o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "真的",
+      "吗",
+      "？",
+      "那",
+      "我",
+      "抱歉",
+      "。",
+      "我",
+      "会",
+      "改",
+      "的",
+      "。",
+      "怎么",
+      "调",
+      "屏幕",
+      "亮度",
+      "啊",
+      "？",
+      "珍珍",
+      "，",
+      "你",
+      "知道",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "sério, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "抱歉",
+        "pinyin": "bàoqiàn",
+        "meaning": "desculpe, sinto muito"
+      },
+      {
+        "id": 3,
+        "word": "会",
+        "pinyin": "huì",
+        "meaning": "irá (indica futuro)"
+      },
+      {
+        "id": 4,
+        "word": "改",
+        "pinyin": "gǎi",
+        "meaning": "mudar, alterar"
+      },
+      {
+        "id": 5,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 6,
+        "word": "调",
+        "pinyin": "tiáo",
+        "meaning": "ajustar, regular"
+      },
+      {
+        "id": 7,
+        "word": "屏幕",
+        "pinyin": "píngmù",
+        "meaning": "tela, ecrã"
+      },
+      {
+        "id": 8,
+        "word": "亮度",
+        "pinyin": "liàngdù",
+        "meaning": "brilho"
+      },
+      {
+        "id": 9,
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "saber, conhecer"
+      }
+    ],
+    "id": "local-1772296822763-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我的是台式机。屏幕下面有个按钮可以按。如果是笔记本电脑，看看键盘上有没有带功能符号的按键。",
+    "pinyin": "Wǒ de shì táishìjī. Píngmù xiàmiàn yǒu ge ànniǔ kěyǐ àn. Rúguǒ shì bǐjìběn diànnǎo, kànkan jiànpán shàng yǒu méiyǒu dài gōngnéng fúhào de ànjiàn.",
+    "translation": "A: O meu é um desktop. Tem um botão embaixo da tela que você pode apertar. Se for um laptop, veja se tem teclas com símbolos de função no teclado.",
+    "tokens": [
+      "我",
+      "的",
+      "是",
+      "台式机",
+      "。",
+      "屏幕",
+      "下面",
+      "有",
+      "个",
+      "按钮",
+      "可以",
+      "按",
+      "。",
+      "如果",
+      "是",
+      "笔记本电脑",
+      "，",
+      "看看",
+      "键盘",
+      "上",
+      "有",
+      "没有",
+      "带",
+      "功能",
+      "符号",
+      "的",
+      "按键",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "台式机",
+        "pinyin": "táishìjī",
+        "meaning": "computador de mesa, desktop"
+      },
+      {
+        "id": 2,
+        "word": "屏幕",
+        "pinyin": "píngmù",
+        "meaning": "tela, ecrã"
+      },
+      {
+        "id": 3,
+        "word": "下面",
+        "pinyin": "xiàmiàn",
+        "meaning": "embaixo, abaixo"
+      },
+      {
+        "id": 4,
+        "word": "按钮",
+        "pinyin": "ànniǔ",
+        "meaning": "botão"
+      },
+      {
+        "id": 5,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 6,
+        "word": "按",
+        "pinyin": "àn",
+        "meaning": "apertar, pressionar"
+      },
+      {
+        "id": 7,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 8,
+        "word": "笔记本电脑",
+        "pinyin": "bǐjìběn diànnǎo",
+        "meaning": "laptop, notebook"
+      },
+      {
+        "id": 9,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 10,
+        "word": "键盘",
+        "pinyin": "jiànpán",
+        "meaning": "teclado"
+      },
+      {
+        "id": 11,
+        "word": "功能",
+        "pinyin": "gōngnéng",
+        "meaning": "função"
+      },
+      {
+        "id": 12,
+        "word": "符号",
+        "pinyin": "fúhào",
+        "meaning": "símbolo"
+      },
+      {
+        "id": 13,
+        "word": "按键",
+        "pinyin": "ànjiàn",
+        "meaning": "tecla"
+      }
+    ],
+    "id": "local-1772296822763-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我看看。这个是调对比度的，这个是颜色的。哦，这个是亮度。好了，我已经调到最暗了。这样好一点了吗？",
+    "pinyin": "Wǒ kànkan. Zhège shì tiáo duìbǐdù de, zhège shì yánsè de. Ó, zhège shì liàngdù. Hǎo le, wǒ yǐjīng tiáo dào zuì àn le. Zhèyàng hǎo yìdiǎn le ma?",
+    "translation": "B: Deixe-me ver. Este é para ajustar o contraste, este é para as cores. Ah, este é o brilho. Pronto, já ajustei para o mais escuro. Está melhor assim?",
+    "tokens": [
+      "我",
+      "看看",
+      "。",
+      "这个",
+      "是",
+      "调",
+      "对比度",
+      "的",
+      "，",
+      "这个",
+      "是",
+      "颜色",
+      "的",
+      "。",
+      "哦",
+      "，",
+      "这个",
+      "是",
+      "亮度",
+      "。",
+      "好",
+      "了",
+      "，",
+      "我",
+      "已经",
+      "调",
+      "到",
+      "最",
+      "暗",
+      "了",
+      "。",
+      "这样",
+      "好",
+      "一点",
+      "了",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "调",
+        "pinyin": "tiáo",
+        "meaning": "ajustar, regular"
+      },
+      {
+        "id": 3,
+        "word": "对比度",
+        "pinyin": "duìbǐdù",
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "颜色",
+        "pinyin": "yánsè",
+        "meaning": "cor"
+      },
+      {
+        "id": 5,
+        "word": "亮度",
+        "pinyin": "liàngdù",
+        "meaning": "brilho"
+      },
+      {
+        "id": 6,
+        "word": "已经",
+        "pinyin": "yǐjīng",
+        "meaning": "já"
+      },
+      {
+        "id": 7,
+        "word": "最",
+        "pinyin": "zuì",
+        "meaning": "o mais, o máximo"
+      },
+      {
+        "id": 8,
+        "word": "暗",
+        "pinyin": "àn",
+        "meaning": "escuro"
+      },
+      {
+        "id": 9,
+        "word": "这样",
+        "pinyin": "zhèyàng",
+        "meaning": "assim, desta forma"
+      },
+      {
+        "id": 10,
+        "word": "一点",
+        "pinyin": "yìdiǎn",
+        "meaning": "um pouco"
+      }
+    ],
+    "id": "local-1772296822763-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好多了。我要去睡觉了。祝你好运！",
+    "pinyin": "Hǎo duō le. Wǒ yào qù shuìjiào le. Zhù nǐ hǎo yùn!",
+    "translation": "A: Muito melhor. Eu vou dormir. Boa sorte!",
+    "tokens": [
+      "好",
+      "多",
+      "了",
+      "。",
+      "我",
+      "要",
+      "去",
+      "睡觉",
+      "了",
+      "。",
+      "祝",
+      "你",
+      "好运",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bom, bem (aqui, em 好多了, 'muito melhor')"
+      },
+      {
+        "id": 2,
+        "word": "多",
+        "pinyin": "duō",
+        "meaning": "muito"
+      },
+      {
+        "id": 3,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer, ir (indica intenção ou futuro próximo)"
+      },
+      {
+        "id": 4,
+        "word": "睡觉",
+        "pinyin": "shuìjiào",
+        "meaning": "dormir"
+      },
+      {
+        "id": 5,
+        "word": "祝",
+        "pinyin": "zhù",
+        "meaning": "desejar"
+      },
+      {
+        "id": 6,
+        "word": "好运",
+        "pinyin": "hǎoyùn",
+        "meaning": "boa sorte"
+      }
+    ],
+    "id": "local-1772296822763-6",
+    "language": "Chinês"
+  }
+]

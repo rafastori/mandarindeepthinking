@@ -1,0 +1,692 @@
+[
+  {
+    "chinese": "A: リリー、仕事の後、一緒にショッピングモールを散歩しに行かない？",
+    "pinyin": null,
+    "translation": "A: Lily, depois do trabalho, não quer ir passear no shopping center comigo?",
+    "tokens": [
+      "リリー",
+      "、",
+      "仕事",
+      "の",
+      "後",
+      "、",
+      "一緒",
+      "に",
+      "ショッピングモール",
+      "を",
+      "散歩",
+      "し",
+      "に",
+      "行か",
+      "ない",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "リリー",
+        "pinyin": "ririi",
+        "meaning": "Lily (nome)"
+      },
+      {
+        "id": 2,
+        "word": "仕事",
+        "pinyin": "shigoto",
+        "meaning": "Trabalho"
+      },
+      {
+        "id": 3,
+        "word": "後",
+        "pinyin": "ato",
+        "meaning": "Depois, atrás"
+      },
+      {
+        "id": 4,
+        "word": "一緒",
+        "pinyin": "issho",
+        "meaning": "Junto"
+      },
+      {
+        "id": 5,
+        "word": "ショッピングモール",
+        "pinyin": "shoppingumooru",
+        "meaning": "Shopping center"
+      },
+      {
+        "id": 6,
+        "word": "散歩",
+        "pinyin": "sanpo",
+        "meaning": "Passeio, caminhada"
+      },
+      {
+        "id": 7,
+        "word": "行かない",
+        "pinyin": "ikanai",
+        "meaning": "Não vai? (forma convidativa)"
+      }
+    ],
+    "id": "local-1772299528545-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: いいよ。何を買いたいの？",
+    "pinyin": null,
+    "translation": "B: Tudo bem. O que você quer comprar?",
+    "tokens": [
+      "いい",
+      "よ",
+      "。",
+      "何",
+      "を",
+      "買い",
+      "たい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "いい",
+        "pinyin": "ii",
+        "meaning": "Bom, ok"
+      },
+      {
+        "id": 2,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "O quê"
+      },
+      {
+        "id": 3,
+        "word": "買いたい",
+        "pinyin": "kaitai",
+        "meaning": "Quer comprar"
+      }
+    ],
+    "id": "local-1772299528545-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 親友が結婚するの。結婚祝いを選びたいんだ。",
+    "pinyin": null,
+    "translation": "A: Minha melhor amiga vai casar. Quero escolher um presente de casamento.",
+    "tokens": [
+      "親友",
+      "が",
+      "結婚",
+      "する",
+      "の",
+      "。",
+      "結婚祝い",
+      "を",
+      "選び",
+      "たい",
+      "んだ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "親友",
+        "pinyin": "shinyuu",
+        "meaning": "Melhor amigo(a)"
+      },
+      {
+        "id": 2,
+        "word": "結婚する",
+        "pinyin": "kekkon suru",
+        "meaning": "Casar"
+      },
+      {
+        "id": 3,
+        "word": "結婚祝い",
+        "pinyin": "kekkon-iwai",
+        "meaning": "Presente de casamento"
+      },
+      {
+        "id": 4,
+        "word": "選びたい",
+        "pinyin": "erabitai",
+        "meaning": "Quer escolher"
+      }
+    ],
+    "id": "local-1772299528545-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ご祝儀袋にお金を入れるだけで良くない？",
+    "pinyin": null,
+    "translation": "B: Não é o suficiente apenas colocar dinheiro no envelope de felicitações?",
+    "tokens": [
+      "ご祝儀袋",
+      "に",
+      "お金",
+      "を",
+      "入れる",
+      "だけ",
+      "で",
+      "良く",
+      "ない",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ご祝儀袋",
+        "pinyin": "goshuugibukuro",
+        "meaning": "Envelope para dinheiro de felicitação"
+      },
+      {
+        "id": 2,
+        "word": "お金",
+        "pinyin": "okane",
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "入れる",
+        "pinyin": "ireru",
+        "meaning": "Colocar, inserir"
+      },
+      {
+        "id": 4,
+        "word": "だけ",
+        "pinyin": "dake",
+        "meaning": "Apenas, somente"
+      },
+      {
+        "id": 5,
+        "word": "良くない",
+        "pinyin": "yokunai",
+        "meaning": "Não é bom/suficiente?"
+      }
+    ],
+    "id": "local-1772299528545-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 彼女は親友だから、特別なプレゼントを贈りたいの。",
+    "pinyin": null,
+    "translation": "A: Ela é minha melhor amiga, então quero dar um presente especial.",
+    "tokens": [
+      "彼女",
+      "は",
+      "親友",
+      "だから",
+      "、",
+      "特別",
+      "な",
+      "プレゼント",
+      "を",
+      "贈り",
+      "たい",
+      "の",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "彼女",
+        "pinyin": "kanojo",
+        "meaning": "Ela"
+      },
+      {
+        "id": 2,
+        "word": "親友",
+        "pinyin": "shinyuu",
+        "meaning": "Melhor amigo(a)"
+      },
+      {
+        "id": 3,
+        "word": "だから",
+        "pinyin": "dakara",
+        "meaning": "Porque, por isso"
+      },
+      {
+        "id": 4,
+        "word": "特別",
+        "pinyin": "tokubetsu",
+        "meaning": "Especial"
+      },
+      {
+        "id": 5,
+        "word": "プレゼント",
+        "pinyin": "purezento",
+        "meaning": "Presente"
+      },
+      {
+        "id": 6,
+        "word": "贈りたい",
+        "pinyin": "okuritai",
+        "meaning": "Quer dar (um presente)"
+      }
+    ],
+    "id": "local-1772299528545-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 何を買うか考えた？",
+    "pinyin": null,
+    "translation": "B: Pensou no que comprar?",
+    "tokens": [
+      "何",
+      "を",
+      "買う",
+      "か",
+      "考え",
+      "た",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "Comprar"
+      },
+      {
+        "id": 3,
+        "word": "考えた",
+        "pinyin": "kangaeta",
+        "meaning": "Pensou (passado de pensar)"
+      }
+    ],
+    "id": "local-1772299528545-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: まだ。何か良いアイデアある？",
+    "pinyin": null,
+    "translation": "A: Ainda não. Você tem alguma boa ideia?",
+    "tokens": [
+      "まだ",
+      "。",
+      "何か",
+      "良い",
+      "アイデア",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "Ainda não"
+      },
+      {
+        "id": 2,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 3,
+        "word": "良い",
+        "pinyin": "yoi",
+        "meaning": "Bom, boa"
+      },
+      {
+        "id": 4,
+        "word": "アイデア",
+        "pinyin": "aidea",
+        "meaning": "Ideia"
+      },
+      {
+        "id": 5,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "Ter, existir"
+      }
+    ],
+    "id": "local-1772299528545-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 結婚祝いとして食器のようなものを贈るのはよくあることだよ。",
+    "pinyin": null,
+    "translation": "B: É algo comum dar coisas como louças de presente de casamento.",
+    "tokens": [
+      "結婚祝い",
+      "として",
+      "食器",
+      "の",
+      "よう",
+      "な",
+      "もの",
+      "を",
+      "贈る",
+      "の",
+      "は",
+      "よく",
+      "ある",
+      "こと",
+      "だよ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "結婚祝い",
+        "pinyin": "kekkon-iwai",
+        "meaning": "Presente de casamento"
+      },
+      {
+        "id": 2,
+        "word": "として",
+        "pinyin": "toshite",
+        "meaning": "Como (na função de)"
+      },
+      {
+        "id": 3,
+        "word": "食器",
+        "pinyin": "shokki",
+        "meaning": "Louça, utensílios de mesa"
+      },
+      {
+        "id": 4,
+        "word": "ような",
+        "pinyin": "youna",
+        "meaning": "Como, tipo"
+      },
+      {
+        "id": 5,
+        "word": "もの",
+        "pinyin": "mono",
+        "meaning": "Coisa"
+      },
+      {
+        "id": 6,
+        "word": "贈る",
+        "pinyin": "okuru",
+        "meaning": "Dar (um presente)"
+      },
+      {
+        "id": 7,
+        "word": "よくある",
+        "pinyin": "yoku aru",
+        "meaning": "Comum, que acontece frequentemente"
+      }
+    ],
+    "id": "local-1772299528545-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それは普通すぎる。もう少し特別なものが欲しいな。",
+    "pinyin": null,
+    "translation": "A: Isso é muito comum. Eu queria algo um pouco mais especial.",
+    "tokens": [
+      "それ",
+      "は",
+      "普通",
+      "すぎる",
+      "。",
+      "もう",
+      "少し",
+      "特別",
+      "な",
+      "もの",
+      "が",
+      "欲しい",
+      "な",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "普通",
+        "pinyin": "futsuu",
+        "meaning": "Comum, normal"
+      },
+      {
+        "id": 3,
+        "word": "すぎる",
+        "pinyin": "sugiru",
+        "meaning": "Demais, excessivo"
+      },
+      {
+        "id": 4,
+        "word": "もう少し",
+        "pinyin": "mou sukoshi",
+        "meaning": "Mais um pouco"
+      },
+      {
+        "id": 5,
+        "word": "特別",
+        "pinyin": "tokubetsu",
+        "meaning": "Especial"
+      },
+      {
+        "id": 6,
+        "word": "欲しい",
+        "pinyin": "hoshii",
+        "meaning": "Querer (para objetos)"
+      }
+    ],
+    "id": "local-1772299528545-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: じゃあ、伝統的なものはどう？漆の櫛とか。",
+    "pinyin": null,
+    "translation": "B: Então, que tal algo tradicional? Tipo um pente de laca.",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "伝統",
+      "的",
+      "な",
+      "もの",
+      "は",
+      "どう",
+      "？",
+      "漆",
+      "の",
+      "櫛",
+      "とか",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "Então, bem"
+      },
+      {
+        "id": 2,
+        "word": "伝統的",
+        "pinyin": "dentouteki",
+        "meaning": "Tradicional"
+      },
+      {
+        "id": 3,
+        "word": "どう",
+        "pinyin": "dou",
+        "meaning": "Como? Que tal?"
+      },
+      {
+        "id": 4,
+        "word": "漆",
+        "pinyin": "urushi",
+        "meaning": "Laca"
+      },
+      {
+        "id": 5,
+        "word": "櫛",
+        "pinyin": "kushi",
+        "meaning": "Pente"
+      },
+      {
+        "id": 6,
+        "word": "とか",
+        "pinyin": "toka",
+        "meaning": "E coisas do tipo, ou algo assim"
+      }
+    ],
+    "id": "local-1772299528545-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: へえ？どんな意味があるの？",
+    "pinyin": null,
+    "translation": "A: Ah? Que tipo de significado tem?",
+    "tokens": [
+      "へえ",
+      "？",
+      "どんな",
+      "意味",
+      "が",
+      "ある",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "へえ",
+        "pinyin": "hee",
+        "meaning": "Ah? (expressão de surpresa/interesse)"
+      },
+      {
+        "id": 2,
+        "word": "どんな",
+        "pinyin": "donna",
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 3,
+        "word": "意味",
+        "pinyin": "imi",
+        "meaning": "Significado"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "Ter, existir"
+      }
+    ],
+    "id": "local-1772299528545-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 中国では、二人がずっと一緒にいることを意味するんだよ。",
+    "pinyin": null,
+    "translation": "B: Na China, significa que as duas pessoas estarão juntas para sempre.",
+    "tokens": [
+      "中国",
+      "で",
+      "は",
+      "、",
+      "二人",
+      "が",
+      "ずっと",
+      "一緒",
+      "に",
+      "いる",
+      "こと",
+      "を",
+      "意味",
+      "する",
+      "んだ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "中国",
+        "pinyin": "chuugoku",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "二人",
+        "pinyin": "futari",
+        "meaning": "Duas pessoas"
+      },
+      {
+        "id": 3,
+        "word": "ずっと",
+        "pinyin": "zutto",
+        "meaning": "Sempre, continuamente"
+      },
+      {
+        "id": 4,
+        "word": "一緒",
+        "pinyin": "issho",
+        "meaning": "Junto"
+      },
+      {
+        "id": 5,
+        "word": "いる",
+        "pinyin": "iru",
+        "meaning": "Estar (para seres vivos)"
+      },
+      {
+        "id": 6,
+        "word": "意味する",
+        "pinyin": "imi suru",
+        "meaning": "Significar"
+      }
+    ],
+    "id": "local-1772299528545-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: それいいね！見に行こう！",
+    "pinyin": null,
+    "translation": "A: Isso é ótimo! Vamos lá ver!",
+    "tokens": [
+      "それ",
+      "いい",
+      "ね",
+      "！",
+      "見",
+      "に",
+      "行こう",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "ii",
+        "meaning": "Bom, ótimo"
+      },
+      {
+        "id": 3,
+        "word": "見に行く",
+        "pinyin": "mi ni iku",
+        "meaning": "Ir ver"
+      },
+      {
+        "id": 4,
+        "word": "行こう",
+        "pinyin": "ikou",
+        "meaning": "Vamos! (forma volitiva de ir)"
+      }
+    ],
+    "id": "local-1772299528545-12",
+    "language": "Japonês"
+  }
+]

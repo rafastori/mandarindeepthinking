@@ -1,0 +1,740 @@
+[
+  {
+    "chinese": "A: 안녕하세요. 무엇을 도와드릴까요?",
+    "pinyin": "",
+    "translation": "A: Olá. Em que posso ajudar?",
+    "tokens": [
+      "안녕하세요",
+      ".",
+      "무엇을",
+      "도와드릴까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": "",
+        "meaning": "Olá/Bom dia/Boa tarde/Boa noite"
+      },
+      {
+        "id": 2,
+        "word": "무엇",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 3,
+        "word": "도와드리다",
+        "pinyin": "",
+        "meaning": "Ajudar (forma honorífica)"
+      }
+    ],
+    "id": "local-1772296387403-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 안녕하세요. 카드 자르고 싶어요. 새 휴대폰을 샀는데 원래 SIM 카드를 사용할 수 없어요.",
+    "pinyin": "",
+    "translation": "B: Olá. Gostaria de cortar o cartão. Comprei um celular novo, mas não consigo usar o cartão SIM original.",
+    "tokens": [
+      "안녕하세요",
+      ".",
+      "카드",
+      "자르고",
+      "싶어요",
+      ".",
+      "새",
+      "휴대폰을",
+      "샀는데",
+      "원래",
+      "SIM",
+      "카드를",
+      "사용할",
+      "수",
+      "없어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 3,
+        "word": "자르다",
+        "pinyin": "",
+        "meaning": "Cortar"
+      },
+      {
+        "id": 4,
+        "word": "~고 싶다",
+        "pinyin": "",
+        "meaning": "Querer fazer algo"
+      },
+      {
+        "id": 5,
+        "word": "새",
+        "pinyin": "",
+        "meaning": "Novo"
+      },
+      {
+        "id": 6,
+        "word": "휴대폰",
+        "pinyin": "",
+        "meaning": "Celular, telefone móvel"
+      },
+      {
+        "id": 7,
+        "word": "사다",
+        "pinyin": "",
+        "meaning": "Comprar"
+      },
+      {
+        "id": 8,
+        "word": "원래",
+        "pinyin": "",
+        "meaning": "Originalmente, o original"
+      },
+      {
+        "id": 9,
+        "word": "사용하다",
+        "pinyin": "",
+        "meaning": "Usar"
+      },
+      {
+        "id": 10,
+        "word": "수 없다",
+        "pinyin": "",
+        "meaning": "Não poder"
+      }
+    ],
+    "id": "local-1772296387403-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 미니 카드 원하시죠? 알겠습니다.",
+    "pinyin": "",
+    "translation": "A: Você quer um mini cartão, certo? Entendi.",
+    "tokens": [
+      "미니",
+      "카드",
+      "원하시죠",
+      "?",
+      "알겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "미니",
+        "pinyin": "",
+        "meaning": "Mini"
+      },
+      {
+        "id": 2,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 3,
+        "word": "원하다",
+        "pinyin": "",
+        "meaning": "Querer, desejar"
+      },
+      {
+        "id": 4,
+        "word": "알겠습니다",
+        "pinyin": "",
+        "meaning": "Entendi, Certo, Okay"
+      }
+    ],
+    "id": "local-1772296387403-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 돈 내야 하나요?",
+    "pinyin": "",
+    "translation": "B: Tenho que pagar?",
+    "tokens": [
+      "돈",
+      "내야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "돈",
+        "pinyin": "",
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "내다",
+        "pinyin": "",
+        "meaning": "Pagar"
+      },
+      {
+        "id": 3,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "Ter que fazer algo"
+      }
+    ],
+    "id": "local-1772296387403-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니요. 카드 자르는 것은 무료입니다. 다 됐습니다.",
+    "pinyin": "",
+    "translation": "A: Não. Cortar o cartão é gratuito. Está pronto.",
+    "tokens": [
+      "아니요",
+      ".",
+      "카드",
+      "자르는",
+      "것은",
+      "무료입니다",
+      ".",
+      "다",
+      "됐습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니요",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 3,
+        "word": "자르다",
+        "pinyin": "",
+        "meaning": "Cortar"
+      },
+      {
+        "id": 4,
+        "word": "무료",
+        "pinyin": "",
+        "meaning": "Grátis, gratuito"
+      },
+      {
+        "id": 5,
+        "word": "다 되다",
+        "pinyin": "",
+        "meaning": "Estar tudo pronto/feito"
+      }
+    ],
+    "id": "local-1772296387403-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 감사합니다. 엥? 왜 카드가 안 들어가죠? 한번 봐주실 수 있나요?",
+    "pinyin": "",
+    "translation": "B: Obrigado. Hã? Por que o cartão não entra? Você pode dar uma olhada?",
+    "tokens": [
+      "감사합니다",
+      ".",
+      "엥",
+      "?",
+      "왜",
+      "카드가",
+      "안",
+      "들어가죠",
+      "?",
+      "한번",
+      "봐주실",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "감사합니다",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "왜",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 4,
+        "word": "안 들어가다",
+        "pinyin": "",
+        "meaning": "Não entrar"
+      },
+      {
+        "id": 5,
+        "word": "한번",
+        "pinyin": "",
+        "meaning": "Uma vez, dar uma olhada"
+      },
+      {
+        "id": 6,
+        "word": "봐주다",
+        "pinyin": "",
+        "meaning": "Dar uma olhada, observar"
+      },
+      {
+        "id": 7,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "Poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772296387403-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 휴대폰이 아이폰 5 맞죠?",
+    "pinyin": "",
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "휴대폰이",
+      "아이폰",
+      "5",
+      "맞죠",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "휴대폰",
+        "pinyin": "",
+        "meaning": "Celular"
+      },
+      {
+        "id": 2,
+        "word": "아이폰",
+        "pinyin": "",
+        "meaning": "iPhone"
+      },
+      {
+        "id": 3,
+        "word": "맞다",
+        "pinyin": "",
+        "meaning": "Estar certo/correto"
+      }
+    ],
+    "id": "local-1772296387403-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네.",
+    "pinyin": "",
+    "translation": "B: Sim.",
+    "tokens": [
+      "네",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772296387403-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아이폰 5는 미니 카드를 사용할 수 없습니다. 아이폰 4만 미니 카드를 사용할 수 있어요.",
+    "pinyin": "",
+    "translation": "A: O iPhone 5 não pode usar um mini cartão. Apenas o iPhone 4 pode usar um mini cartão.",
+    "tokens": [
+      "아이폰",
+      "5는",
+      "미니",
+      "카드를",
+      "사용할",
+      "수",
+      "없습니다",
+      ".",
+      "아이폰",
+      "4만",
+      "미니",
+      "카드를",
+      "사용할",
+      "수",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아이폰",
+        "pinyin": "",
+        "meaning": "iPhone"
+      },
+      {
+        "id": 2,
+        "word": "미니",
+        "pinyin": "",
+        "meaning": "Mini"
+      },
+      {
+        "id": 3,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 4,
+        "word": "사용하다",
+        "pinyin": "",
+        "meaning": "Usar"
+      },
+      {
+        "id": 5,
+        "word": "수 없다",
+        "pinyin": "",
+        "meaning": "Não poder"
+      },
+      {
+        "id": 6,
+        "word": "~만",
+        "pinyin": "",
+        "meaning": "Apenas, somente"
+      },
+      {
+        "id": 7,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "Poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772296387403-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 어떻게 해야 하나요?",
+    "pinyin": "",
+    "translation": "B: Então o que devo fazer?",
+    "tokens": [
+      "그럼",
+      "어떻게",
+      "해야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "Então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 3,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "Fazer"
+      },
+      {
+        "id": 4,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "Ter que fazer algo"
+      }
+    ],
+    "id": "local-1772296387403-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 문제없습니다. 나노 SIM 카드로 바꾸실 수 있어요. 이것은 미니보다 작고 아이폰 5에서만 특별히 사용됩니다.",
+    "pinyin": "",
+    "translation": "A: Não há problema. Você pode trocar para um cartão SIM nano. Este é menor que o mini e é usado especificamente apenas no iPhone 5.",
+    "tokens": [
+      "문제없습니다",
+      ".",
+      "나노",
+      "SIM",
+      "카드로",
+      "바꾸실",
+      "수",
+      "있어요",
+      ".",
+      "이것은",
+      "미니보다",
+      "작고",
+      "아이폰",
+      "5에서만",
+      "특별히",
+      "사용됩니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "문제없다",
+        "pinyin": "",
+        "meaning": "Não ter problema"
+      },
+      {
+        "id": 2,
+        "word": "나노",
+        "pinyin": "",
+        "meaning": "Nano"
+      },
+      {
+        "id": 3,
+        "word": "SIM 카드",
+        "pinyin": "",
+        "meaning": "Cartão SIM"
+      },
+      {
+        "id": 4,
+        "word": "바꾸다",
+        "pinyin": "",
+        "meaning": "Trocar, mudar"
+      },
+      {
+        "id": 5,
+        "word": "수 있다",
+        "pinyin": "",
+        "meaning": "Poder, ser capaz de"
+      },
+      {
+        "id": 6,
+        "word": "이것",
+        "pinyin": "",
+        "meaning": "Isto"
+      },
+      {
+        "id": 7,
+        "word": "미니",
+        "pinyin": "",
+        "meaning": "Mini"
+      },
+      {
+        "id": 8,
+        "word": "~보다",
+        "pinyin": "",
+        "meaning": "Mais do que (usado para comparação)"
+      },
+      {
+        "id": 9,
+        "word": "작다",
+        "pinyin": "",
+        "meaning": "Ser pequeno"
+      },
+      {
+        "id": 10,
+        "word": "아이폰",
+        "pinyin": "",
+        "meaning": "iPhone"
+      },
+      {
+        "id": 11,
+        "word": "~에서만",
+        "pinyin": "",
+        "meaning": "Somente em"
+      },
+      {
+        "id": 12,
+        "word": "특별히",
+        "pinyin": "",
+        "meaning": "Especialmente"
+      },
+      {
+        "id": 13,
+        "word": "사용되다",
+        "pinyin": "",
+        "meaning": "Ser usado"
+      }
+    ],
+    "id": "local-1772296387403-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이것도 돈 내야 하나요?",
+    "pinyin": "",
+    "translation": "B: Tenho que pagar por isso também?",
+    "tokens": [
+      "이것도",
+      "돈",
+      "내야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이것",
+        "pinyin": "",
+        "meaning": "Isto"
+      },
+      {
+        "id": 2,
+        "word": "~도",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 3,
+        "word": "돈",
+        "pinyin": "",
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "내다",
+        "pinyin": "",
+        "meaning": "Pagar"
+      },
+      {
+        "id": 5,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "Ter que fazer algo"
+      }
+    ],
+    "id": "local-1772296387403-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 처음에는 무료입니다. 나중에 카드를 교체해야 한다면, 수수료로 20위안을 지불해야 합니다.",
+    "pinyin": "",
+    "translation": "A: Na primeira vez é gratuito. Se precisar trocar o cartão mais tarde, terá que pagar 20 yuans de taxa.",
+    "tokens": [
+      "처음에는",
+      "무료입니다",
+      ".",
+      "나중에",
+      "카드를",
+      "교체해야",
+      "한다면",
+      ",",
+      "수수료로",
+      "20위안을",
+      "지불해야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "처음",
+        "pinyin": "",
+        "meaning": "Primeira vez, início"
+      },
+      {
+        "id": 2,
+        "word": "무료",
+        "pinyin": "",
+        "meaning": "Grátis, gratuito"
+      },
+      {
+        "id": 3,
+        "word": "나중에",
+        "pinyin": "",
+        "meaning": "Mais tarde, depois"
+      },
+      {
+        "id": 4,
+        "word": "카드",
+        "pinyin": "",
+        "meaning": "Cartão"
+      },
+      {
+        "id": 5,
+        "word": "교체하다",
+        "pinyin": "",
+        "meaning": "Trocar, substituir"
+      },
+      {
+        "id": 6,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "Ter que fazer algo"
+      },
+      {
+        "id": 7,
+        "word": "~다면",
+        "pinyin": "",
+        "meaning": "Se, caso"
+      },
+      {
+        "id": 8,
+        "word": "수수료",
+        "pinyin": "",
+        "meaning": "Taxa, comissão"
+      },
+      {
+        "id": 9,
+        "word": "위안",
+        "pinyin": "",
+        "meaning": "Yuan (moeda chinesa)"
+      },
+      {
+        "id": 10,
+        "word": "지불하다",
+        "pinyin": "",
+        "meaning": "Pagar"
+      }
+    ],
+    "id": "local-1772296387403-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 감사합니다.",
+    "pinyin": "",
+    "translation": "B: Entendi. Obrigado.",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "감사합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": "",
+        "meaning": "Entendi, Okay"
+      },
+      {
+        "id": 2,
+        "word": "감사합니다",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772296387403-13",
+    "language": "Coreano"
+  }
+]

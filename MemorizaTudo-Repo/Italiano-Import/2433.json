@@ -1,0 +1,616 @@
+[
+  {
+    "chinese": "Direttore Chen, grazie per aver trovato il tempo nel suo fitto programma per offrirmi la cena.",
+    "pinyin": null,
+    "translation": "Diretor Chen, obrigado por ter encontrado tempo em sua agenda lotada para me oferecer o jantar.",
+    "tokens": [
+      "Direttore",
+      "Chen",
+      ",",
+      "grazie",
+      "per",
+      "aver",
+      "trovato",
+      "il",
+      "tempo",
+      "nel",
+      "suo",
+      "fitto",
+      "programma",
+      "per",
+      "offrirmi",
+      "la",
+      "cena",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Direttore",
+        "pinyin": null,
+        "meaning": "Diretor"
+      },
+      {
+        "id": 2,
+        "word": "grazie",
+        "pinyin": null,
+        "meaning": "obrigado/a"
+      },
+      {
+        "id": 3,
+        "word": "aver trovato",
+        "pinyin": null,
+        "meaning": "ter encontrado"
+      },
+      {
+        "id": 4,
+        "word": "tempo",
+        "pinyin": null,
+        "meaning": "tempo"
+      },
+      {
+        "id": 5,
+        "word": "nel suo fitto programma",
+        "pinyin": null,
+        "meaning": "em sua agenda lotada"
+      },
+      {
+        "id": 6,
+        "word": "offrirmi",
+        "pinyin": null,
+        "meaning": "me oferecer"
+      },
+      {
+        "id": 7,
+        "word": "cena",
+        "pinyin": null,
+        "meaning": "jantar"
+      }
+    ],
+    "id": "local-1772297352016-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Non sia formale.",
+    "pinyin": null,
+    "translation": "Não seja formal.",
+    "tokens": [
+      "Non",
+      "sia",
+      "formale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non sia",
+        "pinyin": null,
+        "meaning": "Não seja (imperativo formal)"
+      },
+      {
+        "id": 2,
+        "word": "formale",
+        "pinyin": null,
+        "meaning": "formal"
+      }
+    ],
+    "id": "local-1772297352016-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "È una cosa che dovrei fare.",
+    "pinyin": null,
+    "translation": "É algo que eu deveria fazer.",
+    "tokens": [
+      "È",
+      "una",
+      "cosa",
+      "che",
+      "dovrei",
+      "fare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È",
+        "pinyin": null,
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "una cosa",
+        "pinyin": null,
+        "meaning": "uma coisa/algo"
+      },
+      {
+        "id": 3,
+        "word": "dovrei fare",
+        "pinyin": null,
+        "meaning": "deveria fazer"
+      }
+    ],
+    "id": "local-1772297352016-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Dia un'occhiata al menu.",
+    "pinyin": null,
+    "translation": "Dê uma olhada no menu.",
+    "tokens": [
+      "Dia",
+      "un'occhiata",
+      "al",
+      "menu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dia",
+        "pinyin": null,
+        "meaning": "Dê (imperativo formal)"
+      },
+      {
+        "id": 2,
+        "word": "un'occhiata",
+        "pinyin": null,
+        "meaning": "uma olhada"
+      },
+      {
+        "id": 3,
+        "word": "menu",
+        "pinyin": null,
+        "meaning": "cardápio/menu"
+      }
+    ],
+    "id": "local-1772297352016-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Cosa desidera mangiare?",
+    "pinyin": null,
+    "translation": "O que deseja comer?",
+    "tokens": [
+      "Cosa",
+      "desidera",
+      "mangiare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa",
+        "pinyin": null,
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "desidera",
+        "pinyin": null,
+        "meaning": "deseja (formal)"
+      },
+      {
+        "id": 3,
+        "word": "mangiare",
+        "pinyin": null,
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772297352016-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Qualsiasi cosa.",
+    "pinyin": null,
+    "translation": "Qualquer coisa.",
+    "tokens": [
+      "Qualsiasi",
+      "cosa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qualsiasi cosa",
+        "pinyin": null,
+        "meaning": "Qualquer coisa"
+      }
+    ],
+    "id": "local-1772297352016-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ordini Lei.",
+    "pinyin": null,
+    "translation": "Peça você. / O senhor peça.",
+    "tokens": [
+      "Ordini",
+      "Lei",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ordini",
+        "pinyin": null,
+        "meaning": "Peça (imperativo formal)"
+      },
+      {
+        "id": 2,
+        "word": "Lei",
+        "pinyin": null,
+        "meaning": "Você/O senhor/A senhora (pronome de tratamento formal)"
+      }
+    ],
+    "id": "local-1772297352016-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Va bene.",
+    "pinyin": null,
+    "translation": "Está bem. / Tudo bem.",
+    "tokens": [
+      "Va",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": null,
+        "meaning": "Está bem/Tudo bem"
+      }
+    ],
+    "id": "local-1772297352016-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Quando è arrivato a Shanghai?",
+    "pinyin": null,
+    "translation": "Quando você chegou a Xangai?",
+    "tokens": [
+      "Quando",
+      "è",
+      "arrivato",
+      "a",
+      "Shanghai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quando",
+        "pinyin": null,
+        "meaning": "Quando"
+      },
+      {
+        "id": 2,
+        "word": "è arrivato",
+        "pinyin": null,
+        "meaning": "chegou (passato prossimo)"
+      },
+      {
+        "id": 3,
+        "word": "a Shanghai",
+        "pinyin": null,
+        "meaning": "a Xangai"
+      }
+    ],
+    "id": "local-1772297352016-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ieri sera.",
+    "pinyin": null,
+    "translation": "Ontem à noite.",
+    "tokens": [
+      "Ieri",
+      "sera",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ieri sera",
+        "pinyin": null,
+        "meaning": "Ontem à noite"
+      }
+    ],
+    "id": "local-1772297352016-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Oh, allora deve essere stanco ora.",
+    "pinyin": null,
+    "translation": "Oh, então deve estar cansado agora.",
+    "tokens": [
+      "Oh",
+      ",",
+      "allora",
+      "deve",
+      "essere",
+      "stanco",
+      "ora",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": null,
+        "meaning": "Oh"
+      },
+      {
+        "id": 2,
+        "word": "allora",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "deve essere",
+        "pinyin": null,
+        "meaning": "deve estar"
+      },
+      {
+        "id": 4,
+        "word": "stanco",
+        "pinyin": null,
+        "meaning": "cansado"
+      },
+      {
+        "id": 5,
+        "word": "ora",
+        "pinyin": null,
+        "meaning": "agora"
+      }
+    ],
+    "id": "local-1772297352016-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Vado spesso in viaggio di lavoro, quindi ci sono abituato.",
+    "pinyin": null,
+    "translation": "Viajo frequentemente a trabalho, então estou acostumado.",
+    "tokens": [
+      "Vado",
+      "spesso",
+      "in",
+      "viaggio",
+      "di",
+      "lavoro",
+      ",",
+      "quindi",
+      "ci",
+      "sono",
+      "abituato",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vado",
+        "pinyin": null,
+        "meaning": "Eu vou/Eu viajo"
+      },
+      {
+        "id": 2,
+        "word": "spesso",
+        "pinyin": null,
+        "meaning": "frequentemente/muitas vezes"
+      },
+      {
+        "id": 3,
+        "word": "in viaggio di lavoro",
+        "pinyin": null,
+        "meaning": "em viagem de trabalho/a trabalho"
+      },
+      {
+        "id": 4,
+        "word": "quindi",
+        "pinyin": null,
+        "meaning": "então/portanto"
+      },
+      {
+        "id": 5,
+        "word": "ci sono abituato",
+        "pinyin": null,
+        "meaning": "estou acostumado a isso"
+      }
+    ],
+    "id": "local-1772297352016-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Le darò la proposta da esaminare.",
+    "pinyin": null,
+    "translation": "Eu lhe darei a proposta para examinar.",
+    "tokens": [
+      "Le",
+      "darò",
+      "la",
+      "proposta",
+      "da",
+      "esaminare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Le",
+        "pinyin": null,
+        "meaning": "A você/Lhe (pronome de objeto indireto formal)"
+      },
+      {
+        "id": 2,
+        "word": "darò",
+        "pinyin": null,
+        "meaning": "darei (futuro simples)"
+      },
+      {
+        "id": 3,
+        "word": "la proposta",
+        "pinyin": null,
+        "meaning": "a proposta"
+      },
+      {
+        "id": 4,
+        "word": "da esaminare",
+        "pinyin": null,
+        "meaning": "para examinar/a ser examinada"
+      }
+    ],
+    "id": "local-1772297352016-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Non c'è fretta.",
+    "pinyin": null,
+    "translation": "Não há pressa.",
+    "tokens": [
+      "Non",
+      "c'è",
+      "fretta",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non c'è",
+        "pinyin": null,
+        "meaning": "Não há"
+      },
+      {
+        "id": 2,
+        "word": "fretta",
+        "pinyin": null,
+        "meaning": "pressa"
+      }
+    ],
+    "id": "local-1772297352016-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Possiamo mangiare prima e parlare quando abbiamo finito.",
+    "pinyin": null,
+    "translation": "Podemos comer primeiro e conversar quando terminarmos.",
+    "tokens": [
+      "Possiamo",
+      "mangiare",
+      "prima",
+      "e",
+      "parlare",
+      "quando",
+      "abbiamo",
+      "finito",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Possiamo",
+        "pinyin": null,
+        "meaning": "Podemos"
+      },
+      {
+        "id": 2,
+        "word": "mangiare",
+        "pinyin": null,
+        "meaning": "comer"
+      },
+      {
+        "id": 3,
+        "word": "prima",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "parlare",
+        "pinyin": null,
+        "meaning": "conversar/falar"
+      },
+      {
+        "id": 5,
+        "word": "quando",
+        "pinyin": null,
+        "meaning": "quando"
+      },
+      {
+        "id": 6,
+        "word": "abbiamo finito",
+        "pinyin": null,
+        "meaning": "terminamos/acabamos"
+      }
+    ],
+    "id": "local-1772297352016-14",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Va bene.",
+    "pinyin": null,
+    "translation": "Está bem. / Tudo bem.",
+    "tokens": [
+      "Va",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": null,
+        "meaning": "Está bem/Tudo bem"
+      }
+    ],
+    "id": "local-1772297352016-15",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Cameriere.",
+    "pinyin": null,
+    "translation": "Garçom.",
+    "tokens": [
+      "Cameriere",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cameriere",
+        "pinyin": null,
+        "meaning": "Garçom"
+      }
+    ],
+    "id": "local-1772297352016-16",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Vorremmo ordinare.",
+    "pinyin": null,
+    "translation": "Gostaríamos de pedir.",
+    "tokens": [
+      "Vorremmo",
+      "ordinare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vorremmo",
+        "pinyin": null,
+        "meaning": "Gostaríamos (condicional)"
+      },
+      {
+        "id": 2,
+        "word": "ordinare",
+        "pinyin": null,
+        "meaning": "pedir/encomendar"
+      }
+    ],
+    "id": "local-1772297352016-17",
+    "language": "Italiano"
+  }
+]

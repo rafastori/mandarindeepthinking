@@ -1,0 +1,688 @@
+[
+  {
+    "chinese": "A : Lili, après le travail, peux-tu venir avec moi au centre commercial pour nous promener ?",
+    "pinyin": null,
+    "translation": "A: Lili, depois do trabalho, você pode vir comigo ao shopping para darmos uma volta?",
+    "tokens": [
+      "A",
+      ":",
+      "Lili",
+      ",",
+      "après",
+      "le",
+      "travail",
+      ",",
+      "peux-tu",
+      "venir",
+      "avec",
+      "moi",
+      "au",
+      "centre",
+      "commercial",
+      "pour",
+      "nous",
+      "promener",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "depois de"
+      },
+      {
+        "id": 2,
+        "word": "travail",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "peux-tu",
+        "pinyin": "",
+        "meaning": "você pode (informal)"
+      },
+      {
+        "id": 4,
+        "word": "venir",
+        "pinyin": "",
+        "meaning": "vir"
+      },
+      {
+        "id": 5,
+        "word": "avec moi",
+        "pinyin": "",
+        "meaning": "comigo"
+      },
+      {
+        "id": 6,
+        "word": "centre commercial",
+        "pinyin": "",
+        "meaning": "shopping center, centro comercial"
+      },
+      {
+        "id": 7,
+        "word": "promener",
+        "pinyin": "",
+        "meaning": "passear, dar uma volta"
+      }
+    ],
+    "id": "local-1772299428509-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Bien sûr. Qu'est-ce que tu veux acheter ?",
+    "pinyin": null,
+    "translation": "B: Claro. O que você quer comprar?",
+    "tokens": [
+      "B",
+      ":",
+      "Bien",
+      "sûr",
+      ".",
+      "Qu'est-ce",
+      "que",
+      "tu",
+      "veux",
+      "acheter",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien sûr",
+        "pinyin": "",
+        "meaning": "Claro, com certeza"
+      },
+      {
+        "id": 2,
+        "word": "Qu'est-ce que",
+        "pinyin": "",
+        "meaning": "O que (pergunta)"
+      },
+      {
+        "id": 3,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quer (do verbo vouloir)"
+      },
+      {
+        "id": 4,
+        "word": "acheter",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772299428509-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Ma meilleure amie va se marier. J'aimerais choisir un cadeau de mariage.",
+    "pinyin": null,
+    "translation": "A: Minha melhor amiga vai se casar. Eu gostaria de escolher um presente de casamento.",
+    "tokens": [
+      "A",
+      ":",
+      "Ma",
+      "meilleure",
+      "amie",
+      "va",
+      "se",
+      "marier",
+      ".",
+      "J'aimerais",
+      "choisir",
+      "un",
+      "cadeau",
+      "de",
+      "mariage",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "meilleure amie",
+        "pinyin": "",
+        "meaning": "melhor amiga"
+      },
+      {
+        "id": 2,
+        "word": "va se marier",
+        "pinyin": "",
+        "meaning": "vai se casar"
+      },
+      {
+        "id": 3,
+        "word": "J'aimerais",
+        "pinyin": "",
+        "meaning": "Eu gostaria (condicional de aimer)"
+      },
+      {
+        "id": 4,
+        "word": "choisir",
+        "pinyin": "",
+        "meaning": "escolher"
+      },
+      {
+        "id": 5,
+        "word": "cadeau de mariage",
+        "pinyin": "",
+        "meaning": "presente de casamento"
+      }
+    ],
+    "id": "local-1772299428509-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Ne serait-il pas bien de lui donner simplement une enveloppe rouge avec de l'argent ?",
+    "pinyin": null,
+    "translation": "B: Não seria bom dar a ela simplesmente um envelope vermelho com dinheiro?",
+    "tokens": [
+      "B",
+      ":",
+      "Ne",
+      "serait-il",
+      "pas",
+      "bien",
+      "de",
+      "lui",
+      "donner",
+      "simplement",
+      "une",
+      "enveloppe",
+      "rouge",
+      "avec",
+      "de",
+      "l'argent",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ne serait-il pas bien",
+        "pinyin": "",
+        "meaning": "Não seria bom?"
+      },
+      {
+        "id": 2,
+        "word": "lui donner",
+        "pinyin": "",
+        "meaning": "dar a ela/ele"
+      },
+      {
+        "id": 3,
+        "word": "simplement",
+        "pinyin": "",
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 4,
+        "word": "enveloppe rouge",
+        "pinyin": "",
+        "meaning": "envelope vermelho"
+      },
+      {
+        "id": 5,
+        "word": "argent",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772299428509-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : C'est ma meilleure amie. Je veux lui offrir un cadeau différent.",
+    "pinyin": null,
+    "translation": "A: É minha melhor amiga. Eu quero dar a ela um presente diferente.",
+    "tokens": [
+      "A",
+      ":",
+      "C'est",
+      "ma",
+      "meilleure",
+      "amie",
+      ".",
+      "Je",
+      "veux",
+      "lui",
+      "offrir",
+      "un",
+      "cadeau",
+      "différent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "meilleure amie",
+        "pinyin": "",
+        "meaning": "melhor amiga"
+      },
+      {
+        "id": 2,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quero (do verbo vouloir)"
+      },
+      {
+        "id": 3,
+        "word": "lui offrir",
+        "pinyin": "",
+        "meaning": "oferecer a ela/ele"
+      },
+      {
+        "id": 4,
+        "word": "cadeau",
+        "pinyin": "",
+        "meaning": "presente"
+      },
+      {
+        "id": 5,
+        "word": "différent",
+        "pinyin": "",
+        "meaning": "diferente"
+      }
+    ],
+    "id": "local-1772299428509-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : As-tu déjà pensé à ce que tu aimerais acheter ?",
+    "pinyin": null,
+    "translation": "B: Você já pensou no que gostaria de comprar?",
+    "tokens": [
+      "B",
+      ":",
+      "As-tu",
+      "déjà",
+      "pensé",
+      "à",
+      "ce",
+      "que",
+      "tu",
+      "aimerais",
+      "acheter",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "As-tu déjà pensé",
+        "pinyin": "",
+        "meaning": "Você já pensou (passé composé, inversão)"
+      },
+      {
+        "id": 2,
+        "word": "aimerais",
+        "pinyin": "",
+        "meaning": "gostaria (condicional de aimer)"
+      },
+      {
+        "id": 3,
+        "word": "acheter",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772299428509-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Pas encore. As-tu de bonnes idées ?",
+    "pinyin": null,
+    "translation": "A: Ainda não. Você tem boas ideias?",
+    "tokens": [
+      "A",
+      ":",
+      "Pas",
+      "encore",
+      ".",
+      "As-tu",
+      "de",
+      "bonnes",
+      "idées",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas encore",
+        "pinyin": "",
+        "meaning": "Ainda não"
+      },
+      {
+        "id": 2,
+        "word": "As-tu",
+        "pinyin": "",
+        "meaning": "Você tem (inversão de 'tu as')"
+      },
+      {
+        "id": 3,
+        "word": "bonnes idées",
+        "pinyin": "",
+        "meaning": "boas ideias"
+      }
+    ],
+    "id": "local-1772299428509-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Il est assez courant d'offrir des choses comme de la vaisselle comme cadeau de mariage.",
+    "pinyin": null,
+    "translation": "B: É bastante comum oferecer coisas como louça como presente de casamento.",
+    "tokens": [
+      "B",
+      ":",
+      "Il",
+      "est",
+      "assez",
+      "courant",
+      "d'offrir",
+      "des",
+      "choses",
+      "comme",
+      "de",
+      "la",
+      "vaisselle",
+      "comme",
+      "cadeau",
+      "de",
+      "mariage",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assez courant",
+        "pinyin": "",
+        "meaning": "bastante comum"
+      },
+      {
+        "id": 2,
+        "word": "offrir",
+        "pinyin": "",
+        "meaning": "oferecer"
+      },
+      {
+        "id": 3,
+        "word": "choses",
+        "pinyin": "",
+        "meaning": "coisas"
+      },
+      {
+        "id": 4,
+        "word": "vaisselle",
+        "pinyin": "",
+        "meaning": "louça, utensílios de mesa"
+      },
+      {
+        "id": 5,
+        "word": "cadeau de mariage",
+        "pinyin": "",
+        "meaning": "presente de casamento"
+      }
+    ],
+    "id": "local-1772299428509-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : C'est trop ordinaire. Je veux quelque chose d'un peu plus spécial.",
+    "pinyin": null,
+    "translation": "A: É muito comum. Eu quero algo um pouco mais especial.",
+    "tokens": [
+      "A",
+      ":",
+      "C'est",
+      "trop",
+      "ordinaire",
+      ".",
+      "Je",
+      "veux",
+      "quelque",
+      "chose",
+      "d'un",
+      "peu",
+      "plus",
+      "spécial",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "trop",
+        "pinyin": "",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 2,
+        "word": "ordinaire",
+        "pinyin": "",
+        "meaning": "comum, ordinário"
+      },
+      {
+        "id": 3,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quero (do verbo vouloir)"
+      },
+      {
+        "id": 4,
+        "word": "quelque chose",
+        "pinyin": "",
+        "meaning": "algo"
+      },
+      {
+        "id": 5,
+        "word": "un peu plus",
+        "pinyin": "",
+        "meaning": "um pouco mais"
+      },
+      {
+        "id": 6,
+        "word": "spécial",
+        "pinyin": "",
+        "meaning": "especial"
+      }
+    ],
+    "id": "local-1772299428509-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Alors prends quelque chose de traditionnel. Que dirais-tu d'un peigne en laque ?",
+    "pinyin": null,
+    "translation": "B: Então pegue algo tradicional. O que você diria de um pente de laca?",
+    "tokens": [
+      "B",
+      ":",
+      "Alors",
+      "prends",
+      "quelque",
+      "chose",
+      "de",
+      "traditionnel",
+      ".",
+      "Que",
+      "dirais-tu",
+      "d'un",
+      "peigne",
+      "en",
+      "laque",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "prends",
+        "pinyin": "",
+        "meaning": "pegue (imperativo de prendre)"
+      },
+      {
+        "id": 3,
+        "word": "traditionnel",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "Que dirais-tu de",
+        "pinyin": "",
+        "meaning": "O que você diria de...?"
+      },
+      {
+        "id": 5,
+        "word": "peigne",
+        "pinyin": "",
+        "meaning": "pente"
+      },
+      {
+        "id": 6,
+        "word": "laque",
+        "pinyin": "",
+        "meaning": "laca"
+      }
+    ],
+    "id": "local-1772299428509-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Oh ? Quelle signification y est attachée ?",
+    "pinyin": null,
+    "translation": "A: Oh? Que significado está ligado a isso?",
+    "tokens": [
+      "A",
+      ":",
+      "Oh",
+      "?",
+      "Quelle",
+      "signification",
+      "y",
+      "est",
+      "attachée",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quelle signification",
+        "pinyin": "",
+        "meaning": "Que significado"
+      },
+      {
+        "id": 2,
+        "word": "y est attachée",
+        "pinyin": "",
+        "meaning": "está ligado a isso (onde 'y' substitui 'à cela')"
+      }
+    ],
+    "id": "local-1772299428509-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : En Chine, cela signifie que deux personnes seront toujours ensemble.",
+    "pinyin": null,
+    "translation": "B: Na China, isso significa que duas pessoas estarão sempre juntas.",
+    "tokens": [
+      "B",
+      ":",
+      "En",
+      "Chine",
+      ",",
+      "cela",
+      "signifie",
+      "que",
+      "deux",
+      "personnes",
+      "seront",
+      "toujours",
+      "ensemble",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En Chine",
+        "pinyin": "",
+        "meaning": "Na China"
+      },
+      {
+        "id": 2,
+        "word": "cela signifie",
+        "pinyin": "",
+        "meaning": "isso significa"
+      },
+      {
+        "id": 3,
+        "word": "deux personnes",
+        "pinyin": "",
+        "meaning": "duas pessoas"
+      },
+      {
+        "id": 4,
+        "word": "seront",
+        "pinyin": "",
+        "meaning": "estarão (futuro do verbo être)"
+      },
+      {
+        "id": 5,
+        "word": "toujours",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 6,
+        "word": "ensemble",
+        "pinyin": "",
+        "meaning": "juntas"
+      }
+    ],
+    "id": "local-1772299428509-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : C'est super. Allons jeter un œil.",
+    "pinyin": null,
+    "translation": "A: Isso é ótimo. Vamos dar uma olhada.",
+    "tokens": [
+      "A",
+      ":",
+      "C'est",
+      "super",
+      ".",
+      "Allons",
+      "jeter",
+      "un",
+      "œil",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "super",
+        "pinyin": "",
+        "meaning": "ótimo, super"
+      },
+      {
+        "id": 2,
+        "word": "Allons",
+        "pinyin": "",
+        "meaning": "Vamos (imperativo de 'aller')"
+      },
+      {
+        "id": 3,
+        "word": "jeter un œil",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772299428509-12",
+    "language": "Francês"
+  }
+]

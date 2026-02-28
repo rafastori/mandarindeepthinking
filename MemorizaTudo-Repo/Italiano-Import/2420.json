@@ -1,0 +1,403 @@
+[
+  {
+    "chinese": "A: Tongtong, indovina chi ho incontrato quel giorno?",
+    "pinyin": "",
+    "translation": "A: Tongtong, adivinha quem eu encontrei naquele dia?",
+    "tokens": [
+      "A:",
+      "Tongtong",
+      ",",
+      "indovina",
+      "chi",
+      "ho",
+      "incontrato",
+      "quel",
+      "giorno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "indovina",
+        "pinyin": null,
+        "meaning": "adivinha (do verbo 'indovinare' - adivinhar)"
+      },
+      {
+        "id": 2,
+        "word": "incontrato",
+        "pinyin": null,
+        "meaning": "encontrado (particípio passado de 'incontrare' - encontrar)"
+      },
+      {
+        "id": 3,
+        "word": "quel giorno",
+        "pinyin": null,
+        "meaning": "naquele dia"
+      }
+    ],
+    "id": "local-1772296441442-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Chi?",
+    "pinyin": "",
+    "translation": "B: Quem?",
+    "tokens": [
+      "B:",
+      "Chi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Chi",
+        "pinyin": null,
+        "meaning": "Quem"
+      }
+    ],
+    "id": "local-1772296441442-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il mio ex-ragazzo.",
+    "pinyin": "",
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "A:",
+      "Il",
+      "mio",
+      "ex-ragazzo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "ex-ragazzo",
+        "pinyin": null,
+        "meaning": "ex-namorado"
+      }
+    ],
+    "id": "local-1772296441442-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Davvero? Hai parlato con lui?",
+    "pinyin": "",
+    "translation": "B: Sério? Você falou com ele?",
+    "tokens": [
+      "B:",
+      "Davvero",
+      "?",
+      "Hai",
+      "parlato",
+      "con",
+      "lui",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "Davvero",
+        "pinyin": null,
+        "meaning": "Sério/Verdade"
+      },
+      {
+        "id": 7,
+        "word": "parlato",
+        "pinyin": null,
+        "meaning": "falou/conversou (particípio passado de 'parlare' - falar)"
+      }
+    ],
+    "id": "local-1772296441442-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: No. Era con una ragazza.",
+    "pinyin": "",
+    "translation": "A: Não. Ele estava com uma garota.",
+    "tokens": [
+      "A:",
+      "No",
+      ".",
+      "Era",
+      "con",
+      "una",
+      "ragazza",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "ragazza",
+        "pinyin": null,
+        "meaning": "garota/moça"
+      }
+    ],
+    "id": "local-1772296441442-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Era quella sua amante che vi ha fatti lasciare?",
+    "pinyin": "",
+    "translation": "B: Era aquela amante dele que fez vocês terminarem?",
+    "tokens": [
+      "B:",
+      "Era",
+      "quella",
+      "sua",
+      "amante",
+      "che",
+      "vi",
+      "ha",
+      "fatti",
+      "lasciare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "amante",
+        "pinyin": null,
+        "meaning": "amante"
+      },
+      {
+        "id": 10,
+        "word": "vi ha fatti lasciare",
+        "pinyin": null,
+        "meaning": "fez vocês terminarem (literalmente: 'fez a vocês deixar')"
+      }
+    ],
+    "id": "local-1772296441442-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: No. Ha cambiato con una nuova.",
+    "pinyin": "",
+    "translation": "A: Não. Ele trocou por uma nova.",
+    "tokens": [
+      "A:",
+      "No",
+      ".",
+      "Ha",
+      "cambiato",
+      "con",
+      "una",
+      "nuova",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "cambiato",
+        "pinyin": null,
+        "meaning": "mudou/trocou (particípio passado de 'cambiare' - mudar/trocar)"
+      },
+      {
+        "id": 12,
+        "word": "nuova",
+        "pinyin": null,
+        "meaning": "nova (feminino, referindo-se implicitamente a 'ragazza')"
+      }
+    ],
+    "id": "local-1772296441442-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Eh? Sta di nuovo tradendo? Com'è quella ragazza?",
+    "pinyin": "",
+    "translation": "B: Eh? Ele está traindo de novo? Como é aquela garota?",
+    "tokens": [
+      "B:",
+      "Eh",
+      "?",
+      "Sta",
+      "di",
+      "nuovo",
+      "tradendo",
+      "?",
+      "Com'è",
+      "quella",
+      "ragazza",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 13,
+        "word": "di nuovo",
+        "pinyin": null,
+        "meaning": "de novo/novamente"
+      },
+      {
+        "id": 14,
+        "word": "tradendo",
+        "pinyin": null,
+        "meaning": "traindo (gerúndio de 'tradire' - trair)"
+      },
+      {
+        "id": 15,
+        "word": "Com'è",
+        "pinyin": null,
+        "meaning": "Como é (Contração de 'Come è')"
+      }
+    ],
+    "id": "local-1772296441442-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sembra molto carina, ma pare abbia fatto un intervento di chirurgia estetica.",
+    "pinyin": "",
+    "translation": "A: Parece muito bonita, mas parece que ela fez uma cirurgia plástica.",
+    "tokens": [
+      "A:",
+      "Sembra",
+      "molto",
+      "carina",
+      ",",
+      "ma",
+      "pare",
+      "abbia",
+      "fatto",
+      "un",
+      "intervento",
+      "di",
+      "chirurgia",
+      "estetica",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "Sembra",
+        "pinyin": null,
+        "meaning": "Parece (do verbo 'sembrare' - parecer)"
+      },
+      {
+        "id": 17,
+        "word": "carina",
+        "pinyin": null,
+        "meaning": "bonita/fofa"
+      },
+      {
+        "id": 18,
+        "word": "pare",
+        "pinyin": null,
+        "meaning": "parece (do verbo 'parere' - parecer)"
+      },
+      {
+        "id": 19,
+        "word": "abbia fatto",
+        "pinyin": null,
+        "meaning": "tenha feito (subjuntivo de 'fare' - fazer)"
+      },
+      {
+        "id": 20,
+        "word": "intervento di chirurgia estetica",
+        "pinyin": null,
+        "meaning": "cirurgia plástica (literalmente: 'intervenção de cirurgia estética')"
+      }
+    ],
+    "id": "local-1772296441442-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non è un bravo ragazzo. Fortunatamente, ti sei lasciata con lui.",
+    "pinyin": "",
+    "translation": "B: Ele não é um bom rapaz. Felizmente, você terminou com ele.",
+    "tokens": [
+      "B:",
+      "Non",
+      "è",
+      "un",
+      "bravo",
+      "ragazzo",
+      ".",
+      "Fortunatamente",
+      ",",
+      "ti",
+      "sei",
+      "lasciata",
+      "con",
+      "lui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "bravo ragazzo",
+        "pinyin": null,
+        "meaning": "bom rapaz"
+      },
+      {
+        "id": 22,
+        "word": "Fortunatamente",
+        "pinyin": null,
+        "meaning": "Felizmente"
+      },
+      {
+        "id": 23,
+        "word": "ti sei lasciata",
+        "pinyin": null,
+        "meaning": "você terminou/você se separou (do verbo 'lasciarsi' - separar-se, terminar um relacionamento)"
+      }
+    ],
+    "id": "local-1772296441442-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sicuramente. A quel tempo, devo essere stata cieca per stare con lui.",
+    "pinyin": "",
+    "translation": "A: Com certeza. Naquela época, eu devo ter sido cega para estar com ele.",
+    "tokens": [
+      "A:",
+      "Sicuramente",
+      ".",
+      "A",
+      "quel",
+      "tempo",
+      ",",
+      "devo",
+      "essere",
+      "stata",
+      "cieca",
+      "per",
+      "stare",
+      "con",
+      "lui",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "Sicuramente",
+        "pinyin": null,
+        "meaning": "Certamente/Com certeza"
+      },
+      {
+        "id": 25,
+        "word": "A quel tempo",
+        "pinyin": null,
+        "meaning": "Naquela época"
+      },
+      {
+        "id": 26,
+        "word": "devo essere stata",
+        "pinyin": null,
+        "meaning": "devo ter sido (construção com 'dovere' + infinitivo + particípio passado)"
+      },
+      {
+        "id": 27,
+        "word": "cieca",
+        "pinyin": null,
+        "meaning": "cega (feminino)"
+      },
+      {
+        "id": 28,
+        "word": "stare con",
+        "pinyin": null,
+        "meaning": "estar com"
+      }
+    ],
+    "id": "local-1772296441442-10",
+    "language": "Italiano"
+  }
+]

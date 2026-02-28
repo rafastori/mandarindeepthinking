@@ -1,0 +1,636 @@
+[
+  {
+    "chinese": "A: 又是令人恐惧的数学课。哎呀，王小明，放学后我们去踢足球吧。",
+    "pinyin": "A: Yòu shì lìng rén kǒngjù de shùxué kè. Āiyā, Wáng Xiǎomíng, fàngxué hòu wǒmen qù tī zúqiú ba.",
+    "translation": "A: Outra aula de matemática assustadora. Ai, Wang Xiaoming, depois da escola vamos jogar futebol.",
+    "tokens": [
+      "又",
+      "是",
+      "令人恐惧",
+      "的",
+      "数学课",
+      "。",
+      "哎呀",
+      "，",
+      "王小明",
+      "，",
+      "放学后",
+      "我们",
+      "去",
+      "踢足球",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "令人恐惧",
+        "pinyin": "lìng rén kǒngjù",
+        "meaning": "assustador, aterrorizante"
+      },
+      {
+        "id": 2,
+        "word": "数学课",
+        "pinyin": "shùxué kè",
+        "meaning": "aula de matemática"
+      },
+      {
+        "id": 3,
+        "word": "哎呀",
+        "pinyin": "āiyā",
+        "meaning": "ai, nossa (interjeição de surpresa ou irritação)"
+      },
+      {
+        "id": 4,
+        "word": "王小明",
+        "pinyin": "Wáng Xiǎomíng",
+        "meaning": "Wang Xiaoming (nome próprio)"
+      },
+      {
+        "id": 5,
+        "word": "放学后",
+        "pinyin": "fàngxué hòu",
+        "meaning": "depois da escola"
+      },
+      {
+        "id": 6,
+        "word": "踢足球",
+        "pinyin": "tī zúqiú",
+        "meaning": "jogar futebol"
+      }
+    ],
+    "id": "local-1772300085549-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 李佳，你在说什么？站起来给我们解释一下什么是分数。",
+    "pinyin": "B: Lǐ Jiā, nǐ zài shuō shénme? Zhàn qǐlái gěi wǒmen jiěshì yīxià shénme shì fēnshù.",
+    "translation": "B: Li Jia, o que você está dizendo? Levante-se e explique para nós o que é uma fração.",
+    "tokens": [
+      "李佳",
+      "，",
+      "你",
+      "在",
+      "说",
+      "什么",
+      "？",
+      "站起来",
+      "给",
+      "我们",
+      "解释",
+      "一下",
+      "什么",
+      "是",
+      "分数",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "李佳",
+        "pinyin": "Lǐ Jiā",
+        "meaning": "Li Jia (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "在说什么",
+        "pinyin": "zài shuō shénme",
+        "meaning": "o que está dizendo"
+      },
+      {
+        "id": 3,
+        "word": "站起来",
+        "pinyin": "zhàn qǐlái",
+        "meaning": "levantar-se"
+      },
+      {
+        "id": 4,
+        "word": "解释",
+        "pinyin": "jiěshì",
+        "meaning": "explicar"
+      },
+      {
+        "id": 5,
+        "word": "分数",
+        "pinyin": "fēnshù",
+        "meaning": "fração"
+      }
+    ],
+    "id": "local-1772300085549-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 分数表示一个数是另一个数的多少部分。",
+    "pinyin": "A: Fēnshù biǎoshì yīgè shù shì lìng yīgè shù de duōshǎo bùfèn.",
+    "translation": "A: Uma fração indica quantas partes um número é de outro número.",
+    "tokens": [
+      "分数",
+      "表示",
+      "一个",
+      "数",
+      "是",
+      "另",
+      "一个",
+      "数",
+      "的",
+      "多少",
+      "部分",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "分数",
+        "pinyin": "fēnshù",
+        "meaning": "fração"
+      },
+      {
+        "id": 2,
+        "word": "表示",
+        "pinyin": "biǎoshì",
+        "meaning": "indicar, representar"
+      },
+      {
+        "id": 3,
+        "word": "一个数",
+        "pinyin": "yīgè shù",
+        "meaning": "um número"
+      },
+      {
+        "id": 4,
+        "word": "另一个数",
+        "pinyin": "lìng yīgè shù",
+        "meaning": "outro número"
+      },
+      {
+        "id": 5,
+        "word": "多少",
+        "pinyin": "duōshǎo",
+        "meaning": "quantos/quantas"
+      },
+      {
+        "id": 6,
+        "word": "部分",
+        "pinyin": "bùfèn",
+        "meaning": "parte"
+      }
+    ],
+    "id": "local-1772300085549-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你能举个例子吗？",
+    "pinyin": "B: Nǐ néng jǔ gè lìzi ma?",
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "你",
+      "能",
+      "举",
+      "个",
+      "例子",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "举例子",
+        "pinyin": "jǔ lìzi",
+        "meaning": "dar um exemplo"
+      }
+    ],
+    "id": "local-1772300085549-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 例如，如果我从三个苹果中拿走一个苹果，那就是三分之一。",
+    "pinyin": "A: Lìrú, rúguǒ wǒ cóng sān gè píngguǒ zhōng názǒu yīgè píngguǒ, nà jiù shì sān fēn zhī yī.",
+    "translation": "A: Por exemplo, se eu tirar uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "例如",
+      "，",
+      "如果",
+      "我",
+      "从",
+      "三个",
+      "苹果",
+      "中",
+      "拿走",
+      "一个",
+      "苹果",
+      "，",
+      "那",
+      "就",
+      "是",
+      "三分之一",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "例如",
+        "pinyin": "lìrú",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 2,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 3,
+        "word": "苹果",
+        "pinyin": "píngguǒ",
+        "meaning": "maçã"
+      },
+      {
+        "id": 4,
+        "word": "拿走",
+        "pinyin": "názǒu",
+        "meaning": "tirar, pegar"
+      },
+      {
+        "id": 5,
+        "word": "三分之一",
+        "pinyin": "sān fēn zhī yī",
+        "meaning": "um terço"
+      }
+    ],
+    "id": "local-1772300085549-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 很好，那我们怎么写呢？",
+    "pinyin": "B: Hěn hǎo, nà wǒmen zěnme xiě ne?",
+    "translation": "B: Muito bem, como escrevemos isso?",
+    "tokens": [
+      "很",
+      "好",
+      "，",
+      "那",
+      "我们",
+      "怎么",
+      "写",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1772300085549-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 首先写分数线。“上面”是分子，写在分数线上面。“下面”是分母，写在分数线下面。",
+    "pinyin": "A: Shǒuxiān xiě fēnshù xiàn. “Shàngmiàn” shì fēnzǐ, xiě zài fēnshù xiàn shàngmiàn. “Xiàmiàn” shì fēnmǔ, xiě zài fēnshù xiàn xiàmiàn.",
+    "translation": "A: Primeiro, escreva a linha de fração. 'Em cima' é o numerador, escrito acima da linha de fração. 'Em baixo' é o denominador, escrito abaixo da linha de fração.",
+    "tokens": [
+      "首先",
+      "写",
+      "分数线",
+      "。",
+      "“",
+      "上面",
+      "”",
+      "是",
+      "分子",
+      "，",
+      "写",
+      "在",
+      "分数线",
+      "上面",
+      "。",
+      "“",
+      "下面",
+      "”",
+      "是",
+      "分母",
+      "，",
+      "写",
+      "在",
+      "分数线",
+      "下面",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "首先",
+        "pinyin": "shǒuxiān",
+        "meaning": "primeiro, em primeiro lugar"
+      },
+      {
+        "id": 2,
+        "word": "分数线",
+        "pinyin": "fēnshù xiàn",
+        "meaning": "linha de fração"
+      },
+      {
+        "id": 3,
+        "word": "上面",
+        "pinyin": "shàngmiàn",
+        "meaning": "em cima, acima"
+      },
+      {
+        "id": 4,
+        "word": "分子",
+        "pinyin": "fēnzǐ",
+        "meaning": "numerador"
+      },
+      {
+        "id": 5,
+        "word": "下面",
+        "pinyin": "xiàmiàn",
+        "meaning": "em baixo, abaixo"
+      },
+      {
+        "id": 6,
+        "word": "分母",
+        "pinyin": "fēnmǔ",
+        "meaning": "denominador"
+      }
+    ],
+    "id": "local-1772300085549-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 很好。那么什么是百分比？",
+    "pinyin": "B: Hěn hǎo. Nàme shénme shì bǎifēnbǐ?",
+    "translation": "B: Muito bem. Então, o que é porcentagem?",
+    "tokens": [
+      "很",
+      "好",
+      "。",
+      "那么",
+      "什么",
+      "是",
+      "百分比",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那么",
+        "pinyin": "nàme",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "百分比",
+        "pinyin": "bǎifēnbǐ",
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772300085549-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那是百分之一的分数，例如：四分之一是百分之二十五；二分之一是百分之五十。",
+    "pinyin": "A: Nà shì bǎifēn zhī yī de fēnshù, lìrú: Sì fēn zhī yī shì bǎifēn zhī èr shí wǔ; èr fēn zhī yī shì bǎifēn zhī wǔ shí.",
+    "translation": "A: É uma fração de um centésimo, por exemplo: um quarto é vinte e cinco por cento; um meio é cinquenta por cento.",
+    "tokens": [
+      "那",
+      "是",
+      "百分之一",
+      "的",
+      "分数",
+      "，",
+      "例如",
+      "：",
+      "四分之一",
+      "是",
+      "百分之二十五",
+      "；",
+      "二分之一",
+      "是",
+      "百分之五十",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "百分之一",
+        "pinyin": "bǎifēn zhī yī",
+        "meaning": "um por cento, um centésimo"
+      },
+      {
+        "id": 2,
+        "word": "分数",
+        "pinyin": "fēnshù",
+        "meaning": "fração"
+      },
+      {
+        "id": 3,
+        "word": "例如",
+        "pinyin": "lìrú",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 4,
+        "word": "四分之一",
+        "pinyin": "sì fēn zhī yī",
+        "meaning": "um quarto"
+      },
+      {
+        "id": 5,
+        "word": "百分之二十五",
+        "pinyin": "bǎifēn zhī èr shí wǔ",
+        "meaning": "vinte e cinco por cento"
+      },
+      {
+        "id": 6,
+        "word": "二分之一",
+        "pinyin": "èr fēn zhī yī",
+        "meaning": "um meio, metade"
+      },
+      {
+        "id": 7,
+        "word": "百分之五十",
+        "pinyin": "bǎifēn zhī wǔ shí",
+        "meaning": "cinquenta por cento"
+      }
+    ],
+    "id": "local-1772300085549-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那么“几十分之几”是什么？",
+    "pinyin": "B: Nàme “jǐ shí fēn zhī jǐ” shì shénme?",
+    "translation": "B: Então, o que é 'tantos décimos'?",
+    "tokens": [
+      "那么",
+      "“",
+      "几十分之几",
+      "”",
+      "是",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那么",
+        "pinyin": "nàme",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "几十分之几",
+        "pinyin": "jǐ shí fēn zhī jǐ",
+        "meaning": "quantos décimos (refere-se a uma fração com denominador 10)"
+      }
+    ],
+    "id": "local-1772300085549-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: “十分之一”是十分之一的分数。例如，“十分之九”是九除以十，也是百分之九十。",
+    "pinyin": "A: “Shífēn zhī yī” shì shífēn zhī yī de fēnshù. Lìrú, “shífēn zhī jiǔ” shì jiǔ chúyǐ shí, yě shì bǎifēn zhī jiǔ shí.",
+    "translation": "A: 'Um décimo' é uma fração de um décimo. Por exemplo, 'nove décimos' é nove dividido por dez, e também é noventa por cento.",
+    "tokens": [
+      "“",
+      "十分之一",
+      "”",
+      "是",
+      "十分之一",
+      "的",
+      "分数",
+      "。",
+      "例如",
+      "，",
+      "“",
+      "十分之九",
+      "”",
+      "是",
+      "九",
+      "除以",
+      "十",
+      "，",
+      "也",
+      "是",
+      "百分之九十",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "十分之一",
+        "pinyin": "shífēn zhī yī",
+        "meaning": "um décimo"
+      },
+      {
+        "id": 2,
+        "word": "分数",
+        "pinyin": "fēnshù",
+        "meaning": "fração"
+      },
+      {
+        "id": 3,
+        "word": "例如",
+        "pinyin": "lìrú",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 4,
+        "word": "十分之九",
+        "pinyin": "shífēn zhī jiǔ",
+        "meaning": "nove décimos"
+      },
+      {
+        "id": 5,
+        "word": "除以",
+        "pinyin": "chúyǐ",
+        "meaning": "dividido por"
+      },
+      {
+        "id": 6,
+        "word": "百分之九十",
+        "pinyin": "bǎifēn zhī jiǔ shí",
+        "meaning": "noventa por cento"
+      }
+    ],
+    "id": "local-1772300085549-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 以后上课不许睡觉！也不许说话！如果再说话，就罚站！",
+    "pinyin": "B: Yǐhòu shàngkè bù xǔ shuìjiào! Yě bù xǔ shuōhuà! Rúguǒ zài shuōhuà, jiù fá zhàn!",
+    "translation": "B: De agora em diante, não é permitido dormir na aula! Nem falar! Se falar de novo, será castigado a ficar de pé!",
+    "tokens": [
+      "以后",
+      "上课",
+      "不许",
+      "睡觉",
+      "！",
+      "也",
+      "不许",
+      "说话",
+      "！",
+      "如果",
+      "再",
+      "说话",
+      "，",
+      "就",
+      "罚站",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "以后",
+        "pinyin": "yǐhòu",
+        "meaning": "de agora em diante, no futuro"
+      },
+      {
+        "id": 2,
+        "word": "上课",
+        "pinyin": "shàngkè",
+        "meaning": "ter aula, estar em aula"
+      },
+      {
+        "id": 3,
+        "word": "不许",
+        "pinyin": "bù xǔ",
+        "meaning": "não permitir, proibir"
+      },
+      {
+        "id": 4,
+        "word": "睡觉",
+        "pinyin": "shuìjiào",
+        "meaning": "dormir"
+      },
+      {
+        "id": 5,
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "falar"
+      },
+      {
+        "id": 6,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 7,
+        "word": "再",
+        "pinyin": "zài",
+        "meaning": "novamente, de novo"
+      },
+      {
+        "id": 8,
+        "word": "罚站",
+        "pinyin": "fá zhàn",
+        "meaning": "ser castigado a ficar de pé (como punição)"
+      }
+    ],
+    "id": "local-1772300085549-11",
+    "language": "Chinês"
+  }
+]

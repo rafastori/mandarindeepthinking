@@ -1,0 +1,823 @@
+[
+  {
+    "chinese": "A: Bonjour, puis-je vous aider avec quelque chose ?",
+    "pinyin": "",
+    "translation": "A: Bom dia, posso ajudar em algo?",
+    "tokens": [
+      "Bonjour",
+      ",",
+      "puis-je",
+      "vous",
+      "aider",
+      "avec",
+      "quelque",
+      "chose",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Bom dia / Olá"
+      },
+      {
+        "id": 2,
+        "word": "puis-je",
+        "pinyin": "",
+        "meaning": "posso eu"
+      },
+      {
+        "id": 3,
+        "word": "vous",
+        "pinyin": "",
+        "meaning": "você / o(a) senhor(a)"
+      },
+      {
+        "id": 4,
+        "word": "aider",
+        "pinyin": "",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 5,
+        "word": "avec",
+        "pinyin": "",
+        "meaning": "com"
+      },
+      {
+        "id": 6,
+        "word": "quelque chose",
+        "pinyin": "",
+        "meaning": "algo / alguma coisa"
+      }
+    ],
+    "id": "local-1772299217218-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'aimerais me faire faire une paire de lunettes.",
+    "pinyin": "",
+    "translation": "B: Gostaria de fazer um par de óculos.",
+    "tokens": [
+      "J'aimerais",
+      "me",
+      "faire",
+      "faire",
+      "une",
+      "paire",
+      "de",
+      "lunettes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'aimerais",
+        "pinyin": "",
+        "meaning": "Eu gostaria"
+      },
+      {
+        "id": 2,
+        "word": "faire faire",
+        "pinyin": "",
+        "meaning": "mandar fazer / fazer"
+      },
+      {
+        "id": 3,
+        "word": "une paire de",
+        "pinyin": "",
+        "meaning": "um par de"
+      },
+      {
+        "id": 4,
+        "word": "lunettes",
+        "pinyin": "",
+        "meaning": "óculos"
+      }
+    ],
+    "id": "local-1772299217218-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Des lunettes pour la myopie, des lunettes à verres simples ou des lunettes de lecture ?",
+    "pinyin": "",
+    "translation": "A: Óculos para miopia, óculos de lentes simples ou óculos de leitura?",
+    "tokens": [
+      "Des",
+      "lunettes",
+      "pour",
+      "la",
+      "myopie",
+      ",",
+      "des",
+      "lunettes",
+      "à",
+      "verres",
+      "simples",
+      "ou",
+      "des",
+      "lunettes",
+      "de",
+      "lecture",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lunettes",
+        "pinyin": "",
+        "meaning": "óculos"
+      },
+      {
+        "id": 2,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 3,
+        "word": "la myopie",
+        "pinyin": "",
+        "meaning": "a miopia"
+      },
+      {
+        "id": 4,
+        "word": "verres",
+        "pinyin": "",
+        "meaning": "lentes"
+      },
+      {
+        "id": 5,
+        "word": "simples",
+        "pinyin": "",
+        "meaning": "simples"
+      },
+      {
+        "id": 6,
+        "word": "ou",
+        "pinyin": "",
+        "meaning": "ou"
+      },
+      {
+        "id": 7,
+        "word": "de lecture",
+        "pinyin": "",
+        "meaning": "de leitura"
+      }
+    ],
+    "id": "local-1772299217218-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Des lunettes pour la myopie avec astigmatisme.",
+    "pinyin": "",
+    "translation": "B: Óculos para miopia com astigmatismo.",
+    "tokens": [
+      "Des",
+      "lunettes",
+      "pour",
+      "la",
+      "myopie",
+      "avec",
+      "astigmatisme",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lunettes",
+        "pinyin": "",
+        "meaning": "óculos"
+      },
+      {
+        "id": 2,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 3,
+        "word": "la myopie",
+        "pinyin": "",
+        "meaning": "a miopia"
+      },
+      {
+        "id": 4,
+        "word": "avec",
+        "pinyin": "",
+        "meaning": "com"
+      },
+      {
+        "id": 5,
+        "word": "astigmatisme",
+        "pinyin": "",
+        "meaning": "astigmatismo"
+      }
+    ],
+    "id": "local-1772299217218-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vous pouvez choisir n'importe quelle monture de ce côté. Après avoir choisi une paire, vous pouvez payer et passer un examen de la vue là-bas.",
+    "pinyin": "",
+    "translation": "A: Você pode escolher qualquer armação deste lado. Depois de escolher um par, você pode pagar e fazer um exame de vista lá.",
+    "tokens": [
+      "Vous",
+      "pouvez",
+      "choisir",
+      "n'importe",
+      "quelle",
+      "monture",
+      "de",
+      "ce",
+      "côté",
+      ".",
+      "Après",
+      "avoir",
+      "choisi",
+      "une",
+      "paire",
+      ",",
+      "vous",
+      "pouvez",
+      "payer",
+      "et",
+      "passer",
+      "un",
+      "examen",
+      "de",
+      "la",
+      "vue",
+      "là-bas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vous",
+        "pinyin": "",
+        "meaning": "Você / O(a) senhor(a)"
+      },
+      {
+        "id": 2,
+        "word": "pouvez",
+        "pinyin": "",
+        "meaning": "pode"
+      },
+      {
+        "id": 3,
+        "word": "choisir",
+        "pinyin": "",
+        "meaning": "escolher"
+      },
+      {
+        "id": 4,
+        "word": "n'importe quelle",
+        "pinyin": "",
+        "meaning": "qualquer"
+      },
+      {
+        "id": 5,
+        "word": "monture",
+        "pinyin": "",
+        "meaning": "armação"
+      },
+      {
+        "id": 6,
+        "word": "de ce côté",
+        "pinyin": "",
+        "meaning": "deste lado"
+      },
+      {
+        "id": 7,
+        "word": "Après avoir choisi",
+        "pinyin": "",
+        "meaning": "Depois de ter escolhido"
+      },
+      {
+        "id": 8,
+        "word": "une paire",
+        "pinyin": "",
+        "meaning": "um par"
+      },
+      {
+        "id": 9,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 10,
+        "word": "passer un examen de la vue",
+        "pinyin": "",
+        "meaning": "fazer um exame de vista"
+      },
+      {
+        "id": 11,
+        "word": "là-bas",
+        "pinyin": "",
+        "meaning": "lá"
+      }
+    ],
+    "id": "local-1772299217218-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord. Combien pour une paire ?",
+    "pinyin": "",
+    "translation": "B: De acordo. Quanto custa um par?",
+    "tokens": [
+      "D'accord",
+      ".",
+      "Combien",
+      "pour",
+      "une",
+      "paire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo / Ok"
+      },
+      {
+        "id": 2,
+        "word": "Combien",
+        "pinyin": "",
+        "meaning": "Quanto"
+      },
+      {
+        "id": 3,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "para / por"
+      },
+      {
+        "id": 4,
+        "word": "une paire",
+        "pinyin": "",
+        "meaning": "um par"
+      }
+    ],
+    "id": "local-1772299217218-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Il y a trois forfaits : 399, 599, 799. Ils incluent les verres, les montures, un étui à lunettes et un chiffon de nettoyage.",
+    "pinyin": "",
+    "translation": "A: Há três pacotes: 399, 599, 799. Eles incluem as lentes, as armações, um estojo de óculos e um pano de limpeza.",
+    "tokens": [
+      "Il",
+      "y",
+      "a",
+      "trois",
+      "forfaits",
+      ":",
+      "399",
+      ",",
+      "599",
+      ",",
+      "799",
+      ".",
+      "Ils",
+      "incluent",
+      "les",
+      "verres",
+      ",",
+      "les",
+      "montures",
+      ",",
+      "un",
+      "étui",
+      "à",
+      "lunettes",
+      "et",
+      "un",
+      "chiffon",
+      "de",
+      "nettoyage",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il y a",
+        "pinyin": "",
+        "meaning": "Há / Tem"
+      },
+      {
+        "id": 2,
+        "word": "trois",
+        "pinyin": "",
+        "meaning": "três"
+      },
+      {
+        "id": 3,
+        "word": "forfaits",
+        "pinyin": "",
+        "meaning": "pacotes / planos"
+      },
+      {
+        "id": 4,
+        "word": "incluent",
+        "pinyin": "",
+        "meaning": "incluem"
+      },
+      {
+        "id": 5,
+        "word": "les verres",
+        "pinyin": "",
+        "meaning": "as lentes"
+      },
+      {
+        "id": 6,
+        "word": "les montures",
+        "pinyin": "",
+        "meaning": "as armações"
+      },
+      {
+        "id": 7,
+        "word": "un étui à lunettes",
+        "pinyin": "",
+        "meaning": "um estojo de óculos"
+      },
+      {
+        "id": 8,
+        "word": "un chiffon de nettoyage",
+        "pinyin": "",
+        "meaning": "um pano de limpeza"
+      }
+    ],
+    "id": "local-1772299217218-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Combien de temps dois-je attendre avant de pouvoir les récupérer ?",
+    "pinyin": "",
+    "translation": "B: Quanto tempo devo esperar antes de poder pegá-los?",
+    "tokens": [
+      "Combien",
+      "de",
+      "temps",
+      "dois-je",
+      "attendre",
+      "avant",
+      "de",
+      "pouvoir",
+      "les",
+      "récupérer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Combien de temps",
+        "pinyin": "",
+        "meaning": "Quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "dois-je",
+        "pinyin": "",
+        "meaning": "devo eu"
+      },
+      {
+        "id": 3,
+        "word": "attendre",
+        "pinyin": "",
+        "meaning": "esperar"
+      },
+      {
+        "id": 4,
+        "word": "avant de pouvoir",
+        "pinyin": "",
+        "meaning": "antes de poder"
+      },
+      {
+        "id": 5,
+        "word": "récupérer",
+        "pinyin": "",
+        "meaning": "pegar / retirar"
+      }
+    ],
+    "id": "local-1772299217218-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Une heure après l'examen de la vue.",
+    "pinyin": "",
+    "translation": "A: Uma hora após o exame de vista.",
+    "tokens": [
+      "Une",
+      "heure",
+      "après",
+      "l'examen",
+      "de",
+      "la",
+      "vue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Une heure",
+        "pinyin": "",
+        "meaning": "Uma hora"
+      },
+      {
+        "id": 2,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 3,
+        "word": "l'examen de la vue",
+        "pinyin": "",
+        "meaning": "o exame de vista"
+      }
+    ],
+    "id": "local-1772299217218-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Existe-t-il un type de verre qui soit pour la myopie et l'astigmatisme et qui soit aussi des lunettes de soleil ?",
+    "pinyin": "",
+    "translation": "B: Existe algum tipo de lente que sirva para miopia e astigmatismo e que também seja óculos de sol?",
+    "tokens": [
+      "Existe-t-il",
+      "un",
+      "type",
+      "de",
+      "verre",
+      "qui",
+      "soit",
+      "pour",
+      "la",
+      "myopie",
+      "et",
+      "l'astigmatisme",
+      "et",
+      "qui",
+      "soit",
+      "aussi",
+      "des",
+      "lunettes",
+      "de",
+      "soleil",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Existe-t-il",
+        "pinyin": "",
+        "meaning": "Existe?"
+      },
+      {
+        "id": 2,
+        "word": "un type de verre",
+        "pinyin": "",
+        "meaning": "um tipo de lente"
+      },
+      {
+        "id": 3,
+        "word": "qui soit",
+        "pinyin": "",
+        "meaning": "que seja"
+      },
+      {
+        "id": 4,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 5,
+        "word": "la myopie",
+        "pinyin": "",
+        "meaning": "a miopia"
+      },
+      {
+        "id": 6,
+        "word": "et",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 7,
+        "word": "l'astigmatisme",
+        "pinyin": "",
+        "meaning": "o astigmatismo"
+      },
+      {
+        "id": 8,
+        "word": "aussi",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 9,
+        "word": "lunettes de soleil",
+        "pinyin": "",
+        "meaning": "óculos de sol"
+      }
+    ],
+    "id": "local-1772299217218-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui, mais c'est un type de verre spécial. Il n'y a pas de prix forfaitaire et vous devez acheter les verres et les montures séparément. Une paire coûte au moins plus de mille.",
+    "pinyin": "",
+    "translation": "A: Sim, mas é um tipo de lente especial. Não há preço de pacote e você deve comprar as lentes e as armações separadamente. Um par custa pelo menos mais de mil.",
+    "tokens": [
+      "Oui",
+      ",",
+      "mais",
+      "c'est",
+      "un",
+      "type",
+      "de",
+      "verre",
+      "spécial",
+      ".",
+      "Il",
+      "n'y",
+      "a",
+      "pas",
+      "de",
+      "prix",
+      "forfaitaire",
+      "et",
+      "vous",
+      "devez",
+      "acheter",
+      "les",
+      "verres",
+      "et",
+      "les",
+      "montures",
+      "séparément",
+      ".",
+      "Une",
+      "paire",
+      "coûte",
+      "au",
+      "moins",
+      "plus",
+      "de",
+      "mille",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "mais",
+        "pinyin": "",
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "c'est",
+        "pinyin": "",
+        "meaning": "é"
+      },
+      {
+        "id": 4,
+        "word": "un type de verre",
+        "pinyin": "",
+        "meaning": "um tipo de lente"
+      },
+      {
+        "id": 5,
+        "word": "spécial",
+        "pinyin": "",
+        "meaning": "especial"
+      },
+      {
+        "id": 6,
+        "word": "Il n'y a pas de",
+        "pinyin": "",
+        "meaning": "Não há"
+      },
+      {
+        "id": 7,
+        "word": "prix forfaitaire",
+        "pinyin": "",
+        "meaning": "preço de pacote / preço fixo"
+      },
+      {
+        "id": 8,
+        "word": "vous devez",
+        "pinyin": "",
+        "meaning": "você deve"
+      },
+      {
+        "id": 9,
+        "word": "acheter",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 10,
+        "word": "les verres",
+        "pinyin": "",
+        "meaning": "as lentes"
+      },
+      {
+        "id": 11,
+        "word": "les montures",
+        "pinyin": "",
+        "meaning": "as armações"
+      },
+      {
+        "id": 12,
+        "word": "séparément",
+        "pinyin": "",
+        "meaning": "separadamente"
+      },
+      {
+        "id": 13,
+        "word": "Une paire",
+        "pinyin": "",
+        "meaning": "Um par"
+      },
+      {
+        "id": 14,
+        "word": "coûte",
+        "pinyin": "",
+        "meaning": "custa"
+      },
+      {
+        "id": 15,
+        "word": "au moins",
+        "pinyin": "",
+        "meaning": "pelo menos"
+      },
+      {
+        "id": 16,
+        "word": "plus de mille",
+        "pinyin": "",
+        "meaning": "mais de mil"
+      }
+    ],
+    "id": "local-1772299217218-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est cher ! Je ferais mieux de regarder celles à 399.",
+    "pinyin": "",
+    "translation": "B: É caro! É melhor eu ver as de 399.",
+    "tokens": [
+      "C'est",
+      "cher",
+      "!",
+      "Je",
+      "ferais",
+      "mieux",
+      "de",
+      "regarder",
+      "celles",
+      "à",
+      "399",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est cher",
+        "pinyin": "",
+        "meaning": "É caro"
+      },
+      {
+        "id": 2,
+        "word": "Je ferais mieux de",
+        "pinyin": "",
+        "meaning": "Eu faria melhor em / É melhor eu"
+      },
+      {
+        "id": 3,
+        "word": "regarder",
+        "pinyin": "",
+        "meaning": "olhar / ver"
+      },
+      {
+        "id": 4,
+        "word": "celles",
+        "pinyin": "",
+        "meaning": "aquelas"
+      }
+    ],
+    "id": "local-1772299217218-11",
+    "language": "Francês"
+  }
+]

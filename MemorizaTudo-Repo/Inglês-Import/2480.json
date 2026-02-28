@@ -1,0 +1,757 @@
+[
+  {
+    "chinese": "A: Where do you feel the pain?",
+    "pinyin": "",
+    "translation": "A: Onde você sente a dor?",
+    "tokens": [
+      "A:",
+      "Where",
+      "do",
+      "you",
+      "feel",
+      "the",
+      "pain",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "where",
+        "pinyin": "",
+        "meaning": "onde"
+      },
+      {
+        "id": 2,
+        "word": "feel",
+        "pinyin": "",
+        "meaning": "sentir"
+      },
+      {
+        "id": 3,
+        "word": "pain",
+        "pinyin": "",
+        "meaning": "dor"
+      }
+    ],
+    "id": "local-1772294050956-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Recently, I haven't been sleeping, and get tired easily. So I want to take care of it.",
+    "pinyin": "",
+    "translation": "B: Recentemente, não tenho dormido e fico cansado facilmente. Então quero cuidar disso.",
+    "tokens": [
+      "B:",
+      "Recently",
+      ",",
+      "I",
+      "haven't",
+      "been",
+      "sleeping",
+      ",",
+      "and",
+      "get",
+      "tired",
+      "easily",
+      ".",
+      "So",
+      "I",
+      "want",
+      "to",
+      "take",
+      "care",
+      "of",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "recently",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 2,
+        "word": "sleeping",
+        "pinyin": "",
+        "meaning": "dormindo"
+      },
+      {
+        "id": 3,
+        "word": "tired",
+        "pinyin": "",
+        "meaning": "cansado"
+      },
+      {
+        "id": 4,
+        "word": "easily",
+        "pinyin": "",
+        "meaning": "facilmente"
+      },
+      {
+        "id": 5,
+        "word": "take care of",
+        "pinyin": "",
+        "meaning": "cuidar de"
+      }
+    ],
+    "id": "local-1772294050956-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Hold out your hand. Let me take your pulse. Stick out your tongue.",
+    "pinyin": "",
+    "translation": "A: Estenda a mão. Deixe-me verificar seu pulso. Ponha a língua para fora.",
+    "tokens": [
+      "A:",
+      "Hold",
+      "out",
+      "your",
+      "hand",
+      ".",
+      "Let",
+      "me",
+      "take",
+      "your",
+      "pulse",
+      ".",
+      "Stick",
+      "out",
+      "your",
+      "tongue",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hold out",
+        "pinyin": "",
+        "meaning": "estender"
+      },
+      {
+        "id": 2,
+        "word": "hand",
+        "pinyin": "",
+        "meaning": "mão"
+      },
+      {
+        "id": 3,
+        "word": "take pulse",
+        "pinyin": "",
+        "meaning": "verificar o pulso"
+      },
+      {
+        "id": 4,
+        "word": "tongue",
+        "pinyin": "",
+        "meaning": "língua"
+      }
+    ],
+    "id": "local-1772294050956-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Doctor, it's nothing, right?",
+    "pinyin": "",
+    "translation": "B: Doutor, não é nada, certo?",
+    "tokens": [
+      "B:",
+      "Doctor",
+      ",",
+      "it's",
+      "nothing",
+      ",",
+      "right",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "doctor",
+        "pinyin": "",
+        "meaning": "doutor"
+      },
+      {
+        "id": 2,
+        "word": "nothing",
+        "pinyin": "",
+        "meaning": "nada"
+      }
+    ],
+    "id": "local-1772294050956-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: There is no big problem. A bit deficient in vital energy. I will prescribe some medicine for you.",
+    "pinyin": "",
+    "translation": "A: Não há nenhum grande problema. Um pouco deficiente em energia vital. Vou prescrever alguns remédios para você.",
+    "tokens": [
+      "A:",
+      "There",
+      "is",
+      "no",
+      "big",
+      "problem",
+      ".",
+      "A",
+      "bit",
+      "deficient",
+      "in",
+      "vital",
+      "energy",
+      ".",
+      "I",
+      "will",
+      "prescribe",
+      "some",
+      "medicine",
+      "for",
+      "you",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "problem",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 2,
+        "word": "deficient",
+        "pinyin": "",
+        "meaning": "deficiente"
+      },
+      {
+        "id": 3,
+        "word": "vital energy",
+        "pinyin": "",
+        "meaning": "energia vital"
+      },
+      {
+        "id": 4,
+        "word": "prescribe",
+        "pinyin": "",
+        "meaning": "prescrever"
+      },
+      {
+        "id": 5,
+        "word": "medicine",
+        "pinyin": "",
+        "meaning": "remédio"
+      }
+    ],
+    "id": "local-1772294050956-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: How do I decoct the medicine?",
+    "pinyin": "",
+    "translation": "B: Como eu decoto o remédio?",
+    "tokens": [
+      "B:",
+      "How",
+      "do",
+      "I",
+      "decoct",
+      "the",
+      "medicine",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "decoct",
+        "pinyin": "",
+        "meaning": "deçotar, ferver (ervas)"
+      },
+      {
+        "id": 2,
+        "word": "medicine",
+        "pinyin": "",
+        "meaning": "remédio"
+      }
+    ],
+    "id": "local-1772294050956-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Decoct twice, mix up the decoction, and drink it in two batches. Once in the morning and once in the evening.",
+    "pinyin": "",
+    "translation": "A: Decoja duas vezes, misture o decocto e beba em duas doses. Uma vez de manhã e uma vez à noite.",
+    "tokens": [
+      "A:",
+      "Decoct",
+      "twice",
+      ",",
+      "mix",
+      "up",
+      "the",
+      "decoction",
+      ",",
+      "and",
+      "drink",
+      "it",
+      "in",
+      "two",
+      "batches",
+      ".",
+      "Once",
+      "in",
+      "the",
+      "morning",
+      "and",
+      "once",
+      "in",
+      "the",
+      "evening",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "decoct",
+        "pinyin": "",
+        "meaning": "deçotar"
+      },
+      {
+        "id": 2,
+        "word": "twice",
+        "pinyin": "",
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 3,
+        "word": "mix up",
+        "pinyin": "",
+        "meaning": "misturar"
+      },
+      {
+        "id": 4,
+        "word": "decoction",
+        "pinyin": "",
+        "meaning": "deçocção, decocto"
+      },
+      {
+        "id": 5,
+        "word": "batches",
+        "pinyin": "",
+        "meaning": "doses, levas"
+      },
+      {
+        "id": 6,
+        "word": "morning",
+        "pinyin": "",
+        "meaning": "manhã"
+      },
+      {
+        "id": 7,
+        "word": "evening",
+        "pinyin": "",
+        "meaning": "noite"
+      }
+    ],
+    "id": "local-1772294050956-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That means I have to decoct the medicine every morning when I get up.",
+    "pinyin": "",
+    "translation": "B: Isso significa que tenho que decotar o remédio todas as manhãs quando me levanto.",
+    "tokens": [
+      "B:",
+      "That",
+      "means",
+      "I",
+      "have",
+      "to",
+      "decoct",
+      "the",
+      "medicine",
+      "every",
+      "morning",
+      "when",
+      "I",
+      "get",
+      "up",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "means",
+        "pinyin": "",
+        "meaning": "significa"
+      },
+      {
+        "id": 2,
+        "word": "decoct",
+        "pinyin": "",
+        "meaning": "deçotar"
+      },
+      {
+        "id": 3,
+        "word": "medicine",
+        "pinyin": "",
+        "meaning": "remédio"
+      },
+      {
+        "id": 4,
+        "word": "get up",
+        "pinyin": "",
+        "meaning": "levantar-se"
+      }
+    ],
+    "id": "local-1772294050956-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: If you feel it's a nuisance, we can decoct it for you.",
+    "pinyin": "",
+    "translation": "A: Se você achar que é um incômodo, podemos decotar para você.",
+    "tokens": [
+      "A:",
+      "If",
+      "you",
+      "feel",
+      "it's",
+      "a",
+      "nuisance",
+      ",",
+      "we",
+      "can",
+      "decoct",
+      "it",
+      "for",
+      "you",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "feel",
+        "pinyin": "",
+        "meaning": "achar, sentir"
+      },
+      {
+        "id": 2,
+        "word": "nuisance",
+        "pinyin": "",
+        "meaning": "incômodo, chateação"
+      },
+      {
+        "id": 3,
+        "word": "decoct",
+        "pinyin": "",
+        "meaning": "deçotar"
+      }
+    ],
+    "id": "local-1772294050956-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's the hospital that would decoct it for me?",
+    "pinyin": "",
+    "translation": "B: É o hospital que deçotaria para mim?",
+    "tokens": [
+      "B:",
+      "It's",
+      "the",
+      "hospital",
+      "that",
+      "would",
+      "decoct",
+      "it",
+      "for",
+      "me",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hospital",
+        "pinyin": "",
+        "meaning": "hospital"
+      },
+      {
+        "id": 2,
+        "word": "decoct",
+        "pinyin": "",
+        "meaning": "deçotar"
+      }
+    ],
+    "id": "local-1772294050956-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yes. You pay a small fee for decocting. Then the hospital can decoct it for you and vacuum pack it. If you heat it up when you drink it, it's easier to drink.",
+    "pinyin": "",
+    "translation": "A: Sim. Você paga uma pequena taxa para a deçocção. Então o hospital pode deçotá-lo para você e embalá-lo a vácuo. Se você aquecer quando for beber, é mais fácil de beber.",
+    "tokens": [
+      "A:",
+      "Yes",
+      ".",
+      "You",
+      "pay",
+      "a",
+      "small",
+      "fee",
+      "for",
+      "decocting",
+      ".",
+      "Then",
+      "the",
+      "hospital",
+      "can",
+      "decoct",
+      "it",
+      "for",
+      "you",
+      "and",
+      "vacuum",
+      "pack",
+      "it",
+      ".",
+      "If",
+      "you",
+      "heat",
+      "it",
+      "up",
+      "when",
+      "you",
+      "drink",
+      "it",
+      ",",
+      "it's",
+      "easier",
+      "to",
+      "drink",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pay",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 2,
+        "word": "fee",
+        "pinyin": "",
+        "meaning": "taxa"
+      },
+      {
+        "id": 3,
+        "word": "decocting",
+        "pinyin": "",
+        "meaning": "deçocção (ato de deçotar)"
+      },
+      {
+        "id": 4,
+        "word": "hospital",
+        "pinyin": "",
+        "meaning": "hospital"
+      },
+      {
+        "id": 5,
+        "word": "vacuum pack",
+        "pinyin": "",
+        "meaning": "embalar a vácuo"
+      },
+      {
+        "id": 6,
+        "word": "heat up",
+        "pinyin": "",
+        "meaning": "aquecer"
+      },
+      {
+        "id": 7,
+        "word": "easier",
+        "pinyin": "",
+        "meaning": "mais fácil"
+      }
+    ],
+    "id": "local-1772294050956-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then I will get it decocted for me. Can I get it today?",
+    "pinyin": "",
+    "translation": "B: Então eu vou mandar deçotar para mim. Posso pegar hoje?",
+    "tokens": [
+      "B:",
+      "Then",
+      "I",
+      "will",
+      "get",
+      "it",
+      "decocted",
+      "for",
+      "me",
+      ".",
+      "Can",
+      "I",
+      "get",
+      "it",
+      "today",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "get it decocted",
+        "pinyin": "",
+        "meaning": "mandar deçotar (construção causativa)"
+      },
+      {
+        "id": 2,
+        "word": "today",
+        "pinyin": "",
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772294050956-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No, that won't work. Decocting takes time. The soonest would be tomorrow that you could get it. First, go and pay and then go to the window for medicine decoction and register.",
+    "pinyin": "",
+    "translation": "A: Não, isso não vai funcionar. A deçocção leva tempo. O mais cedo seria amanhã que você poderia pegar. Primeiro, vá e pague e depois vá ao guichê para deçocção de remédios e registre-se.",
+    "tokens": [
+      "A:",
+      "No",
+      ",",
+      "that",
+      "won't",
+      "work",
+      ".",
+      "Decocting",
+      "takes",
+      "time",
+      ".",
+      "The",
+      "soonest",
+      "would",
+      "be",
+      "tomorrow",
+      "that",
+      "you",
+      "could",
+      "get",
+      "it",
+      ".",
+      "First",
+      ",",
+      "go",
+      "and",
+      "pay",
+      "and",
+      "then",
+      "go",
+      "to",
+      "the",
+      "window",
+      "for",
+      "medicine",
+      "decoction",
+      "and",
+      "register",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "won't work",
+        "pinyin": "",
+        "meaning": "não vai funcionar"
+      },
+      {
+        "id": 2,
+        "word": "decocting",
+        "pinyin": "",
+        "meaning": "deçocção (ato de deçotar)"
+      },
+      {
+        "id": 3,
+        "word": "takes time",
+        "pinyin": "",
+        "meaning": "leva tempo"
+      },
+      {
+        "id": 4,
+        "word": "soonest",
+        "pinyin": "",
+        "meaning": "o mais cedo"
+      },
+      {
+        "id": 5,
+        "word": "tomorrow",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 6,
+        "word": "pay",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 7,
+        "word": "window",
+        "pinyin": "",
+        "meaning": "guichê"
+      },
+      {
+        "id": 8,
+        "word": "medicine decoction",
+        "pinyin": "",
+        "meaning": "deçocção de remédios"
+      },
+      {
+        "id": 9,
+        "word": "register",
+        "pinyin": "",
+        "meaning": "registrar-se"
+      }
+    ],
+    "id": "local-1772294050956-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Ok, thanks Doctor.",
+    "pinyin": "",
+    "translation": "B: Ok, obrigado Doutor.",
+    "tokens": [
+      "B:",
+      "Ok",
+      ",",
+      "thanks",
+      "Doctor",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ok",
+        "pinyin": "",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "thanks",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "doctor",
+        "pinyin": "",
+        "meaning": "doutor"
+      }
+    ],
+    "id": "local-1772294050956-13",
+    "language": "Inglês"
+  }
+]

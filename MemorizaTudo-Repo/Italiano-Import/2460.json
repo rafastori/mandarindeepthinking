@@ -1,0 +1,585 @@
+[
+  {
+    "chinese": "A: Lisa, vorrei chiederti una cosa.",
+    "pinyin": null,
+    "translation": "A: Lisa, gostaria de te perguntar uma coisa.",
+    "tokens": [
+      "Lisa",
+      "vorrei",
+      "chiederti",
+      "una",
+      "cosa"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vorrei",
+        "pinyin": null,
+        "meaning": "gostaria (de)"
+      },
+      {
+        "id": 2,
+        "word": "chiederti",
+        "pinyin": null,
+        "meaning": "te perguntar"
+      },
+      {
+        "id": 3,
+        "word": "cosa",
+        "pinyin": null,
+        "meaning": "coisa"
+      }
+    ],
+    "id": "local-1772299109340-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Di cosa si tratta?",
+    "pinyin": null,
+    "translation": "B: Do que se trata?",
+    "tokens": [
+      "Di",
+      "cosa",
+      "si",
+      "tratta"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cosa",
+        "pinyin": null,
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "si tratta",
+        "pinyin": null,
+        "meaning": "trata-se"
+      }
+    ],
+    "id": "local-1772299109340-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Stiamo assumendo stagisti quest'estate?",
+    "pinyin": null,
+    "translation": "A: Estamos contratando estagiários neste verão?",
+    "tokens": [
+      "Stiamo",
+      "assumendo",
+      "stagisti",
+      "quest'estate"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stiamo assumendo",
+        "pinyin": null,
+        "meaning": "estamos contratando"
+      },
+      {
+        "id": 2,
+        "word": "stagisti",
+        "pinyin": null,
+        "meaning": "estagiários"
+      },
+      {
+        "id": 3,
+        "word": "quest'estate",
+        "pinyin": null,
+        "meaning": "neste verão"
+      }
+    ],
+    "id": "local-1772299109340-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Hai un candidato idoneo che vorresti raccomandare?",
+    "pinyin": null,
+    "translation": "B: Sim. Você tem um candidato adequado que gostaria de recomendar?",
+    "tokens": [
+      "Sì",
+      "Hai",
+      "un",
+      "candidato",
+      "idoneo",
+      "che",
+      "vorresti",
+      "raccomandare"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sì",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "hai",
+        "pinyin": null,
+        "meaning": "você tem"
+      },
+      {
+        "id": 3,
+        "word": "candidato",
+        "pinyin": null,
+        "meaning": "candidato"
+      },
+      {
+        "id": 4,
+        "word": "idoneo",
+        "pinyin": null,
+        "meaning": "adequado"
+      },
+      {
+        "id": 5,
+        "word": "vorresti",
+        "pinyin": null,
+        "meaning": "você gostaria"
+      },
+      {
+        "id": 6,
+        "word": "raccomandare",
+        "pinyin": null,
+        "meaning": "recomendar"
+      }
+    ],
+    "id": "local-1772299109340-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho un amico straniero che sta studiando in Cina. Durante le vacanze estive sta cercando uno stage.",
+    "pinyin": null,
+    "translation": "A: Tenho um amigo estrangeiro que está estudando na China. Durante as férias de verão ele está procurando um estágio.",
+    "tokens": [
+      "Ho",
+      "un",
+      "amico",
+      "straniero",
+      "che",
+      "sta",
+      "studiando",
+      "in",
+      "Cina",
+      "Durante",
+      "le",
+      "vacanze",
+      "estive",
+      "sta",
+      "cercando",
+      "uno",
+      "stage"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ho",
+        "pinyin": null,
+        "meaning": "eu tenho"
+      },
+      {
+        "id": 2,
+        "word": "amico",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "straniero",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "sta studiando",
+        "pinyin": null,
+        "meaning": "está estudando"
+      },
+      {
+        "id": 5,
+        "word": "Cina",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 6,
+        "word": "Durante",
+        "pinyin": null,
+        "meaning": "durante"
+      },
+      {
+        "id": 7,
+        "word": "vacanze estive",
+        "pinyin": null,
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 8,
+        "word": "sta cercando",
+        "pinyin": null,
+        "meaning": "está procurando"
+      },
+      {
+        "id": 9,
+        "word": "stage",
+        "pinyin": null,
+        "meaning": "estágio"
+      }
+    ],
+    "id": "local-1772299109340-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Se è uno studente straniero, potrebbe non funzionare.",
+    "pinyin": null,
+    "translation": "B: Se ele é um estudante estrangeiro, pode não funcionar.",
+    "tokens": [
+      "Se",
+      "è",
+      "uno",
+      "studente",
+      "straniero",
+      "potrebbe",
+      "non",
+      "funzionare"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "se",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 2,
+        "word": "studente",
+        "pinyin": null,
+        "meaning": "estudante"
+      },
+      {
+        "id": 3,
+        "word": "straniero",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "potrebbe",
+        "pinyin": null,
+        "meaning": "poderia"
+      },
+      {
+        "id": 5,
+        "word": "non funzionare",
+        "pinyin": null,
+        "meaning": "não funcionar"
+      }
+    ],
+    "id": "local-1772299109340-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il suo cinese è buono.",
+    "pinyin": null,
+    "translation": "A: O chinês dele é bom.",
+    "tokens": [
+      "Il",
+      "suo",
+      "cinese",
+      "è",
+      "buono"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "suo",
+        "pinyin": null,
+        "meaning": "dele/dela"
+      },
+      {
+        "id": 2,
+        "word": "cinese",
+        "pinyin": null,
+        "meaning": "chinês"
+      },
+      {
+        "id": 3,
+        "word": "buono",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772299109340-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non è questo il problema. È una questione di visto. Gli stranieri in possesso di visti studenteschi non possono fare stage in Cina.",
+    "pinyin": null,
+    "translation": "B: Não é esse o problema. É uma questão de visto. Estrangeiros com vistos de estudante não podem fazer estágio na China.",
+    "tokens": [
+      "Non",
+      "è",
+      "questo",
+      "il",
+      "problema",
+      "È",
+      "una",
+      "questione",
+      "di",
+      "visto",
+      "Gli",
+      "stranieri",
+      "in",
+      "possesso",
+      "di",
+      "visti",
+      "studenteschi",
+      "non",
+      "possono",
+      "fare",
+      "stage",
+      "in",
+      "Cina"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "problema",
+        "pinyin": null,
+        "meaning": "problema"
+      },
+      {
+        "id": 2,
+        "word": "questione di visto",
+        "pinyin": null,
+        "meaning": "questão de visto"
+      },
+      {
+        "id": 3,
+        "word": "stranieri",
+        "pinyin": null,
+        "meaning": "estrangeiros"
+      },
+      {
+        "id": 4,
+        "word": "in possesso di",
+        "pinyin": null,
+        "meaning": "em posse de"
+      },
+      {
+        "id": 5,
+        "word": "visti studenteschi",
+        "pinyin": null,
+        "meaning": "vistos estudantis"
+      },
+      {
+        "id": 6,
+        "word": "non possono",
+        "pinyin": null,
+        "meaning": "não podem"
+      },
+      {
+        "id": 7,
+        "word": "fare stage",
+        "pinyin": null,
+        "meaning": "fazer estágio"
+      },
+      {
+        "id": 8,
+        "word": "Cina",
+        "pinyin": null,
+        "meaning": "China"
+      }
+    ],
+    "id": "local-1772299109340-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh. È così severo?",
+    "pinyin": null,
+    "translation": "A: Oh. É tão rigoroso?",
+    "tokens": [
+      "Oh",
+      "È",
+      "così",
+      "severo"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "così",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 2,
+        "word": "severo",
+        "pinyin": null,
+        "meaning": "rigoroso"
+      }
+    ],
+    "id": "local-1772299109340-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Per gli stranieri in Cina, anche se vogliono solo essere stagisti, devono comunque ottenere un visto di lavoro.",
+    "pinyin": null,
+    "translation": "B: Sim. Para estrangeiros na China, mesmo que queiram apenas ser estagiários, eles ainda precisam obter um visto de trabalho.",
+    "tokens": [
+      "Sì",
+      "Per",
+      "gli",
+      "stranieri",
+      "in",
+      "Cina",
+      "anche",
+      "se",
+      "vogliono",
+      "solo",
+      "essere",
+      "stagisti",
+      "devono",
+      "comunque",
+      "ottenere",
+      "un",
+      "visto",
+      "di",
+      "lavoro"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sì",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "stranieri",
+        "pinyin": null,
+        "meaning": "estrangeiros"
+      },
+      {
+        "id": 3,
+        "word": "Cina",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "anche se",
+        "pinyin": null,
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 5,
+        "word": "vogliono",
+        "pinyin": null,
+        "meaning": "eles querem"
+      },
+      {
+        "id": 6,
+        "word": "solo",
+        "pinyin": null,
+        "meaning": "apenas"
+      },
+      {
+        "id": 7,
+        "word": "essere stagisti",
+        "pinyin": null,
+        "meaning": "ser estagiários"
+      },
+      {
+        "id": 8,
+        "word": "devono",
+        "pinyin": null,
+        "meaning": "eles devem"
+      },
+      {
+        "id": 9,
+        "word": "comunque",
+        "pinyin": null,
+        "meaning": "ainda assim/de qualquer forma"
+      },
+      {
+        "id": 10,
+        "word": "ottenere",
+        "pinyin": null,
+        "meaning": "obter"
+      },
+      {
+        "id": 11,
+        "word": "visto di lavoro",
+        "pinyin": null,
+        "meaning": "visto de trabalho"
+      }
+    ],
+    "id": "local-1772299109340-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Davvero? Allora devo dirglielo. Grazie!",
+    "pinyin": null,
+    "translation": "A: Sério? Então preciso avisá-lo. Obrigado!",
+    "tokens": [
+      "Davvero",
+      "Allora",
+      "devo",
+      "dirglielo",
+      "Grazie"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "davvero",
+        "pinyin": null,
+        "meaning": "sério?"
+      },
+      {
+        "id": 2,
+        "word": "allora",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "devo",
+        "pinyin": null,
+        "meaning": "eu devo"
+      },
+      {
+        "id": 4,
+        "word": "dirglielo",
+        "pinyin": null,
+        "meaning": "dizer a ele"
+      },
+      {
+        "id": 5,
+        "word": "grazie",
+        "pinyin": null,
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772299109340-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Prego.",
+    "pinyin": null,
+    "translation": "B: De nada.",
+    "tokens": [
+      "Prego"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "prego",
+        "pinyin": null,
+        "meaning": "de nada"
+      }
+    ],
+    "id": "local-1772299109340-11",
+    "language": "Italiano"
+  }
+]

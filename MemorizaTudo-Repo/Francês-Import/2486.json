@@ -1,0 +1,653 @@
+[
+  {
+    "chinese": "A: Demain, tu dois emmener le bébé à l'Hôpital du Quartier pour le faire vacciner. As-tu demandé un congé ?",
+    "pinyin": "",
+    "translation": "A: Amanhã, você precisa levar o bebê ao Hospital do Bairro para vaciná-lo. Você pediu uma licença?",
+    "tokens": [
+      "A:",
+      "Demain",
+      ",",
+      "tu",
+      "dois",
+      "emmener",
+      "le",
+      "bébé",
+      "à",
+      "l'",
+      "Hôpital",
+      "du",
+      "Quartier",
+      "pour",
+      "le",
+      "faire",
+      "vacciner",
+      ".",
+      "As-tu",
+      "demandé",
+      "un",
+      "congé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Demain",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "dois",
+        "pinyin": null,
+        "meaning": "deve, precisa (do verbo devoir)"
+      },
+      {
+        "id": 3,
+        "word": "emmener",
+        "pinyin": null,
+        "meaning": "levar (alguém)"
+      },
+      {
+        "id": 4,
+        "word": "bébé",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
+        "word": "Hôpital",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 6,
+        "word": "Quartier",
+        "pinyin": null,
+        "meaning": "bairro"
+      },
+      {
+        "id": 7,
+        "word": "faire vacciner",
+        "pinyin": null,
+        "meaning": "mandar vacinar, vaciná-lo"
+      },
+      {
+        "id": 8,
+        "word": "demandé",
+        "pinyin": null,
+        "meaning": "pediu (do verbo demander)"
+      },
+      {
+        "id": 9,
+        "word": "congé",
+        "pinyin": null,
+        "meaning": "licença, folga"
+      }
+    ],
+    "id": "local-1772301249444-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui, j'ai demandé un jour de congé. Chérie, quelles injections le bébé reçoit-il demain ?",
+    "pinyin": "",
+    "translation": "B: Sim, eu pedi um dia de licença. Querida, quais injeções o bebê vai receber amanhã?",
+    "tokens": [
+      "B:",
+      "Oui",
+      ",",
+      "j'",
+      "ai",
+      "demandé",
+      "un",
+      "jour",
+      "de",
+      "congé",
+      ".",
+      "Chérie",
+      ",",
+      "quelles",
+      "injections",
+      "le",
+      "bébé",
+      "reçoit-il",
+      "demain",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 11,
+        "word": "demandé",
+        "pinyin": null,
+        "meaning": "pedi (do verbo demander)"
+      },
+      {
+        "id": 12,
+        "word": "jour de congé",
+        "pinyin": null,
+        "meaning": "dia de folga"
+      },
+      {
+        "id": 13,
+        "word": "Chérie",
+        "pinyin": null,
+        "meaning": "Querida (forma carinhosa)"
+      },
+      {
+        "id": 14,
+        "word": "injections",
+        "pinyin": null,
+        "meaning": "injeções"
+      },
+      {
+        "id": 15,
+        "word": "reçoit-il",
+        "pinyin": null,
+        "meaning": "ele recebe (do verbo recevoir)"
+      }
+    ],
+    "id": "local-1772301249444-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je vais regarder. C'est le vaccin contre l'hépatite B.",
+    "pinyin": "",
+    "translation": "A: Vou olhar. É a vacina contra a hepatite B.",
+    "tokens": [
+      "A:",
+      "Je",
+      "vais",
+      "regarder",
+      ".",
+      "C'",
+      "est",
+      "le",
+      "vaccin",
+      "contre",
+      "l'",
+      "hépatite",
+      "B",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "vais regarder",
+        "pinyin": null,
+        "meaning": "vou olhar"
+      },
+      {
+        "id": 17,
+        "word": "vaccin",
+        "pinyin": null,
+        "meaning": "vacina"
+      },
+      {
+        "id": 18,
+        "word": "contre",
+        "pinyin": null,
+        "meaning": "contra"
+      },
+      {
+        "id": 19,
+        "word": "hépatite B",
+        "pinyin": null,
+        "meaning": "hepatite B"
+      }
+    ],
+    "id": "local-1772301249444-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oh. C'est gratuit, n'est-ce pas ?",
+    "pinyin": "",
+    "translation": "B: Oh. É de graça, não é?",
+    "tokens": [
+      "B:",
+      "Oh",
+      ".",
+      "C'",
+      "est",
+      "gratuit",
+      ",",
+      "n'",
+      "est-ce",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "gratuit",
+        "pinyin": null,
+        "meaning": "gratuito, de graça"
+      },
+      {
+        "id": 21,
+        "word": "n'est-ce pas",
+        "pinyin": null,
+        "meaning": "não é?, certo?"
+      }
+    ],
+    "id": "local-1772301249444-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Il y a des vaccins fabriqués en Chine et des vaccins importés. Ceux fabriqués en Chine sont gratuits. Les importés sont payants.",
+    "pinyin": "",
+    "translation": "A: Existem vacinas fabricadas na China e vacinas importadas. As fabricadas na China são gratuitas. As importadas são pagas.",
+    "tokens": [
+      "A:",
+      "Il",
+      "y",
+      "a",
+      "des",
+      "vaccins",
+      "fabriqués",
+      "en",
+      "Chine",
+      "et",
+      "des",
+      "vaccins",
+      "importés",
+      ".",
+      "Ceux",
+      "fabriqués",
+      "en",
+      "Chine",
+      "sont",
+      "gratuits",
+      ".",
+      "Les",
+      "importés",
+      "sont",
+      "payants",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "Il y a",
+        "pinyin": null,
+        "meaning": "Há, existem"
+      },
+      {
+        "id": 23,
+        "word": "vaccins",
+        "pinyin": null,
+        "meaning": "vacinas"
+      },
+      {
+        "id": 24,
+        "word": "fabriqués",
+        "pinyin": null,
+        "meaning": "fabricados"
+      },
+      {
+        "id": 25,
+        "word": "Chine",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 26,
+        "word": "importés",
+        "pinyin": null,
+        "meaning": "importados"
+      },
+      {
+        "id": 27,
+        "word": "gratuits",
+        "pinyin": null,
+        "meaning": "gratuitos"
+      },
+      {
+        "id": 28,
+        "word": "payants",
+        "pinyin": null,
+        "meaning": "pagos"
+      }
+    ],
+    "id": "local-1772301249444-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, nous prenons celui fabriqué en Chine ou l'importé ?",
+    "pinyin": "",
+    "translation": "B: Então, pegamos o fabricado na China ou o importado?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "nous",
+      "prenons",
+      "celui",
+      "fabriqué",
+      "en",
+      "Chine",
+      "ou",
+      "l'",
+      "importé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 30,
+        "word": "prenons",
+        "pinyin": null,
+        "meaning": "pegamos, escolhemos (do verbo prendre)"
+      },
+      {
+        "id": 31,
+        "word": "celui",
+        "pinyin": null,
+        "meaning": "aquele, o"
+      },
+      {
+        "id": 32,
+        "word": "fabriqué",
+        "pinyin": null,
+        "meaning": "fabricado"
+      },
+      {
+        "id": 33,
+        "word": "importé",
+        "pinyin": null,
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301249444-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: L'importé.",
+    "pinyin": "",
+    "translation": "A: O importado.",
+    "tokens": [
+      "A:",
+      "L'",
+      "importé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "L'importé",
+        "pinyin": null,
+        "meaning": "O importado"
+      }
+    ],
+    "id": "local-1772301249444-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais la résistance de notre petit est très bonne et il ne tombe pas malade. Il n'est pas vraiment nécessaire de prendre l'importé.",
+    "pinyin": "",
+    "translation": "B: Mas a resistência do nosso pequeno é muito boa e ele não fica doente. Não é realmente necessário pegar o importado.",
+    "tokens": [
+      "B:",
+      "Mais",
+      "la",
+      "résistance",
+      "de",
+      "notre",
+      "petit",
+      "est",
+      "très",
+      "bonne",
+      "et",
+      "il",
+      "ne",
+      "tombe",
+      "pas",
+      "malade",
+      ".",
+      "Il",
+      "n'",
+      "est",
+      "pas",
+      "vraiment",
+      "nécessaire",
+      "de",
+      "prendre",
+      "l'",
+      "importé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 35,
+        "word": "Mais",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 36,
+        "word": "résistance",
+        "pinyin": null,
+        "meaning": "resistência"
+      },
+      {
+        "id": 37,
+        "word": "petit",
+        "pinyin": null,
+        "meaning": "pequeno (aqui, referindo-se ao bebê)"
+      },
+      {
+        "id": 38,
+        "word": "très bonne",
+        "pinyin": null,
+        "meaning": "muito boa"
+      },
+      {
+        "id": 39,
+        "word": "tombe pas malade",
+        "pinyin": null,
+        "meaning": "não fica doente (do verbo tomber malade)"
+      },
+      {
+        "id": 40,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 41,
+        "word": "nécessaire",
+        "pinyin": null,
+        "meaning": "necessário"
+      },
+      {
+        "id": 42,
+        "word": "prendre",
+        "pinyin": null,
+        "meaning": "pegar, escolher"
+      }
+    ],
+    "id": "local-1772301249444-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Nous ne pouvons pas lésiner sur l'argent que nous dépensons pour notre enfant. Le vaccin importé est cher, mais il devrait être meilleur et plus sûr. On en a pour son argent.",
+    "pinyin": "",
+    "translation": "A: Não podemos economizar no dinheiro que gastamos com nosso filho. A vacina importada é cara, mas deveria ser melhor e mais segura. Recebemos o que pagamos.",
+    "tokens": [
+      "A:",
+      "Nous",
+      "ne",
+      "pouvons",
+      "pas",
+      "lésiner",
+      "sur",
+      "l'",
+      "argent",
+      "que",
+      "nous",
+      "dépensons",
+      "pour",
+      "notre",
+      "enfant",
+      ".",
+      "Le",
+      "vaccin",
+      "importé",
+      "est",
+      "cher",
+      ",",
+      "mais",
+      "il",
+      "devrait",
+      "être",
+      "meilleur",
+      "et",
+      "plus",
+      "sûr",
+      ".",
+      "On",
+      "en",
+      "a",
+      "pour",
+      "son",
+      "argent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "pouvons pas",
+        "pinyin": null,
+        "meaning": "não podemos (do verbo pouvoir)"
+      },
+      {
+        "id": 44,
+        "word": "lésiner",
+        "pinyin": null,
+        "meaning": "economizar, ser mesquinho"
+      },
+      {
+        "id": 45,
+        "word": "argent",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 46,
+        "word": "dépensons",
+        "pinyin": null,
+        "meaning": "gastamos (do verbo dépenser)"
+      },
+      {
+        "id": 47,
+        "word": "enfant",
+        "pinyin": null,
+        "meaning": "criança, filho"
+      },
+      {
+        "id": 48,
+        "word": "vaccin importé",
+        "pinyin": null,
+        "meaning": "vacina importada"
+      },
+      {
+        "id": 49,
+        "word": "cher",
+        "pinyin": null,
+        "meaning": "caro"
+      },
+      {
+        "id": 50,
+        "word": "devrait être",
+        "pinyin": null,
+        "meaning": "deveria ser (do verbo devoir)"
+      },
+      {
+        "id": 51,
+        "word": "meilleur",
+        "pinyin": null,
+        "meaning": "melhor"
+      },
+      {
+        "id": 52,
+        "word": "plus sûr",
+        "pinyin": null,
+        "meaning": "mais seguro"
+      },
+      {
+        "id": 53,
+        "word": "On en a pour son argent",
+        "pinyin": null,
+        "meaning": "Você tem o que paga (expressão idiomática)"
+      }
+    ],
+    "id": "local-1772301249444-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: OK, chef. Ce que tu dis est loi. Je t'écouterai.",
+    "pinyin": "",
+    "translation": "B: OK, chefe. O que você diz é lei. Eu te ouvirei.",
+    "tokens": [
+      "B:",
+      "OK",
+      ",",
+      "chef",
+      ".",
+      "Ce",
+      "que",
+      "tu",
+      "dis",
+      "est",
+      "loi",
+      ".",
+      "Je",
+      "t'",
+      "écouterai",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 54,
+        "word": "chef",
+        "pinyin": null,
+        "meaning": "chefe (usado informalmente para parceiro/a)"
+      },
+      {
+        "id": 55,
+        "word": "Ce que tu dis est loi",
+        "pinyin": null,
+        "meaning": "O que você diz é lei (expressão idiomática)"
+      },
+      {
+        "id": 56,
+        "word": "dis",
+        "pinyin": null,
+        "meaning": "diz (do verbo dire)"
+      },
+      {
+        "id": 57,
+        "word": "loi",
+        "pinyin": null,
+        "meaning": "lei"
+      },
+      {
+        "id": 58,
+        "word": "écouterai",
+        "pinyin": null,
+        "meaning": "ouvirei (do verbo écouter)"
+      }
+    ],
+    "id": "local-1772301249444-9",
+    "language": "Francês"
+  }
+]

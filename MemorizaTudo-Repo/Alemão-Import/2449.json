@@ -1,0 +1,485 @@
+[
+  {
+    "chinese": "A: Hey, was ist das für eine Software bei dir?",
+    "pinyin": "",
+    "translation": "A: Ei, que software é esse que você tem?",
+    "tokens": [
+      "Hey",
+      ",",
+      "was",
+      "ist",
+      "das",
+      "für",
+      "eine",
+      "Software",
+      "bei",
+      "dir",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "Software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "bei dir",
+        "pinyin": "",
+        "meaning": "com você / no seu aparelho"
+      }
+    ],
+    "id": "local-1772293322408-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Google Drive.",
+    "pinyin": "",
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "Google",
+      "Drive",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Google Drive",
+        "pinyin": "",
+        "meaning": "Google Drive"
+      }
+    ],
+    "id": "local-1772293322408-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Hab ich noch nie gehört. Wofür benutzt du das?",
+    "pinyin": "",
+    "translation": "A: Nunca ouvi falar. Para que você usa isso?",
+    "tokens": [
+      "Hab",
+      "ich",
+      "noch",
+      "nie",
+      "gehört",
+      ".",
+      "Wofür",
+      "benutzt",
+      "du",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "noch nie",
+        "pinyin": "",
+        "meaning": "nunca antes"
+      },
+      {
+        "id": 2,
+        "word": "gehört",
+        "pinyin": "",
+        "meaning": "ouvido (de hören - ouvir)"
+      },
+      {
+        "id": 3,
+        "word": "Wofür",
+        "pinyin": "",
+        "meaning": "Para que?"
+      },
+      {
+        "id": 4,
+        "word": "benutzt",
+        "pinyin": "",
+        "meaning": "usa (de benutzen - usar)"
+      }
+    ],
+    "id": "local-1772293322408-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist ein praktisches, kostenloses Online-Dokumententool. Damit kann man Dateien speichern und teilen.",
+    "pinyin": "",
+    "translation": "B: Essa é uma ferramenta online gratuita e prática para documentos. Com ela, pode-se salvar e compartilhar arquivos.",
+    "tokens": [
+      "Das",
+      "ist",
+      "ein",
+      "praktisches",
+      ",",
+      "kostenloses",
+      "Online-Dokumententool",
+      ".",
+      "Damit",
+      "kann",
+      "man",
+      "Dateien",
+      "speichern",
+      "und",
+      "teilen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "praktisches",
+        "pinyin": "",
+        "meaning": "prático (adj. neutro)"
+      },
+      {
+        "id": 2,
+        "word": "kostenloses",
+        "pinyin": "",
+        "meaning": "gratuito (adj. neutro)"
+      },
+      {
+        "id": 3,
+        "word": "Online-Dokumententool",
+        "pinyin": "",
+        "meaning": "ferramenta online de documentos"
+      },
+      {
+        "id": 4,
+        "word": "Damit",
+        "pinyin": "",
+        "meaning": "Com isso / Dessa forma"
+      },
+      {
+        "id": 5,
+        "word": "Dateien",
+        "pinyin": "",
+        "meaning": "arquivos"
+      },
+      {
+        "id": 6,
+        "word": "speichern",
+        "pinyin": "",
+        "meaning": "salvar / armazenar"
+      },
+      {
+        "id": 7,
+        "word": "teilen",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      }
+    ],
+    "id": "local-1772293322408-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ist das praktisch?",
+    "pinyin": "",
+    "translation": "A: Isso é prático?",
+    "tokens": [
+      "Ist",
+      "das",
+      "praktisch",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "praktisch",
+        "pinyin": "",
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1772293322408-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Sehr praktisch. Heutzutage gibt es viele solcher Cloud-Speicher-Software. Zum Beispiel Baidu Cloud, SkyDrive, Dropbox, usw.",
+    "pinyin": "",
+    "translation": "B: Muito prático. Hoje em dia existem muitos softwares de armazenamento em nuvem desse tipo. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "Sehr",
+      "praktisch",
+      ".",
+      "Heutzutage",
+      "gibt",
+      "es",
+      "viele",
+      "solcher",
+      "Cloud-Speicher-Software",
+      ".",
+      "Zum",
+      "Beispiel",
+      "Baidu",
+      "Cloud",
+      ",",
+      "SkyDrive",
+      ",",
+      "Dropbox",
+      ",",
+      "usw",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sehr",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "Heutzutage",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 3,
+        "word": "gibt es",
+        "pinyin": "",
+        "meaning": "há / existem"
+      },
+      {
+        "id": 4,
+        "word": "viele",
+        "pinyin": "",
+        "meaning": "muitos"
+      },
+      {
+        "id": 5,
+        "word": "solcher",
+        "pinyin": "",
+        "meaning": "desse tipo / de tal"
+      },
+      {
+        "id": 6,
+        "word": "Cloud-Speicher-Software",
+        "pinyin": "",
+        "meaning": "software de armazenamento em nuvem"
+      },
+      {
+        "id": 7,
+        "word": "Zum Beispiel",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      },
+      {
+        "id": 8,
+        "word": "usw.",
+        "pinyin": "",
+        "meaning": "etc. (e assim por diante)"
+      }
+    ],
+    "id": "local-1772293322408-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was ist Cloud-Speicher?",
+    "pinyin": "",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "Was",
+      "ist",
+      "Cloud-Speicher",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "Cloud-Speicher",
+        "pinyin": "",
+        "meaning": "armazenamento em nuvem"
+      }
+    ],
+    "id": "local-1772293322408-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Einfach gesagt, legst du deine Dateien auf Googles Cloud-Laufwerk ab. Dann kannst du, solange du eingeloggt bist, auf verschiedenen Geräten auf diese Dokumente zugreifen.",
+    "pinyin": "",
+    "translation": "B: Simplificando, você armazena seus arquivos na unidade de nuvem do Google. Então, enquanto você estiver logado, você pode acessar esses documentos em diferentes dispositivos.",
+    "tokens": [
+      "Einfach",
+      "gesagt",
+      ",",
+      "legst",
+      "du",
+      "deine",
+      "Dateien",
+      "auf",
+      "Googles",
+      "Cloud-Laufwerk",
+      "ab",
+      ".",
+      "Dann",
+      "kannst",
+      "du",
+      ",",
+      "solange",
+      "du",
+      "eingeloggt",
+      "bist",
+      ",",
+      "auf",
+      "verschiedenen",
+      "Geräten",
+      "auf",
+      "diese",
+      "Dokumente",
+      "zugreifen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Einfach gesagt",
+        "pinyin": "",
+        "meaning": "Simplificando / Dito de forma simples"
+      },
+      {
+        "id": 2,
+        "word": "ablegen",
+        "pinyin": "",
+        "meaning": "armazenar / arquivar (verbo separável, aqui conjugado como 'legst ... ab')"
+      },
+      {
+        "id": 3,
+        "word": "Dateien",
+        "pinyin": "",
+        "meaning": "arquivos"
+      },
+      {
+        "id": 4,
+        "word": "Googles",
+        "pinyin": "",
+        "meaning": "do Google (genitivo)"
+      },
+      {
+        "id": 5,
+        "word": "Cloud-Laufwerk",
+        "pinyin": "",
+        "meaning": "unidade de nuvem"
+      },
+      {
+        "id": 6,
+        "word": "Dann",
+        "pinyin": "",
+        "meaning": "Então / Depois"
+      },
+      {
+        "id": 7,
+        "word": "solange",
+        "pinyin": "",
+        "meaning": "enquanto"
+      },
+      {
+        "id": 8,
+        "word": "eingeloggt bist",
+        "pinyin": "",
+        "meaning": "estiver logado (verbo 'einloggen' - fazer login)"
+      },
+      {
+        "id": 9,
+        "word": "verschiedenen",
+        "pinyin": "",
+        "meaning": "diferentes (adj.)"
+      },
+      {
+        "id": 10,
+        "word": "Geräten",
+        "pinyin": "",
+        "meaning": "dispositivos / aparelhos"
+      },
+      {
+        "id": 11,
+        "word": "Dokumente",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 12,
+        "word": "zugreifen",
+        "pinyin": "",
+        "meaning": "acessar"
+      }
+    ],
+    "id": "local-1772293322408-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann brauche ich nicht so viel Speicherplatz zu verbrauchen. Das ist ja praktisch.",
+    "pinyin": "",
+    "translation": "A: Então não preciso gastar tanto espaço de armazenamento. Isso é realmente prático.",
+    "tokens": [
+      "Dann",
+      "brauche",
+      "ich",
+      "nicht",
+      "so",
+      "viel",
+      "Speicherplatz",
+      "zu",
+      "verbrauchen",
+      ".",
+      "Das",
+      "ist",
+      "ja",
+      "praktisch",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dann",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "brauche",
+        "pinyin": "",
+        "meaning": "preciso (de brauchen - precisar)"
+      },
+      {
+        "id": 3,
+        "word": "nicht so viel",
+        "pinyin": "",
+        "meaning": "não tanto"
+      },
+      {
+        "id": 4,
+        "word": "Speicherplatz",
+        "pinyin": "",
+        "meaning": "espaço de armazenamento"
+      },
+      {
+        "id": 5,
+        "word": "verbrauchen",
+        "pinyin": "",
+        "meaning": "gastar / consumir"
+      },
+      {
+        "id": 6,
+        "word": "ja",
+        "pinyin": "",
+        "meaning": "realmente / de fato (partícula de ênfase)"
+      },
+      {
+        "id": 7,
+        "word": "praktisch",
+        "pinyin": "",
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1772293322408-8",
+    "language": "Alemão"
+  }
+]

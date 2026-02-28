@@ -1,0 +1,553 @@
+[
+  {
+    "chinese": "A : Hé, l'écran de ton ordinateur est si lumineux. Ne trouves-tu pas que c'est difficile à regarder ?",
+    "pinyin": null,
+    "translation": "A: Ei, a tela do seu computador é tão brilhante. Você não acha que é difícil de olhar?",
+    "tokens": [
+      "A",
+      ":",
+      "Hé",
+      ",",
+      "l'",
+      "écran",
+      "de",
+      "ton",
+      "ordinateur",
+      "est",
+      "si",
+      "lumineux",
+      ".",
+      "Ne",
+      "trouves",
+      "-tu",
+      "pas",
+      "que",
+      "c'",
+      "est",
+      "difficile",
+      "à",
+      "regarder",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hé",
+        "pinyin": null,
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "écran",
+        "pinyin": null,
+        "meaning": "tela"
+      },
+      {
+        "id": 3,
+        "word": "ordinateur",
+        "pinyin": null,
+        "meaning": "computador"
+      },
+      {
+        "id": 4,
+        "word": "lumineux",
+        "pinyin": null,
+        "meaning": "luminoso, brilhante"
+      },
+      {
+        "id": 5,
+        "word": "trouves-tu",
+        "pinyin": null,
+        "meaning": "você acha"
+      },
+      {
+        "id": 6,
+        "word": "difficile",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 7,
+        "word": "regarder",
+        "pinyin": null,
+        "meaning": "olhar, ver"
+      }
+    ],
+    "id": "local-1772296755918-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Hé, ça m'est égal. Je dois me dépêcher.",
+    "pinyin": null,
+    "translation": "B: Ei, não me importo. Tenho que me apressar.",
+    "tokens": [
+      "B",
+      ":",
+      "Hé",
+      ",",
+      "ça",
+      "m'",
+      "est",
+      "égal",
+      ".",
+      "Je",
+      "dois",
+      "me",
+      "dépêcher",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hé",
+        "pinyin": null,
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "ça m'est égal",
+        "pinyin": null,
+        "meaning": "não me importa, tanto faz"
+      },
+      {
+        "id": 3,
+        "word": "devoir",
+        "pinyin": null,
+        "meaning": "ter que, dever"
+      },
+      {
+        "id": 4,
+        "word": "dépêcher",
+        "pinyin": null,
+        "meaning": "apressar-se"
+      }
+    ],
+    "id": "local-1772296755918-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Ça t'est égal, mais pas à moi. Si c'est trop lumineux, je ne pourrai pas dormir.",
+    "pinyin": null,
+    "translation": "A: Para você tanto faz, mas para mim não. Se estiver muito claro, não conseguirei dormir.",
+    "tokens": [
+      "A",
+      ":",
+      "Ça",
+      "t'",
+      "est",
+      "égal",
+      ",",
+      "mais",
+      "pas",
+      "à",
+      "moi",
+      ".",
+      "Si",
+      "c'",
+      "est",
+      "trop",
+      "lumineux",
+      ",",
+      "je",
+      "ne",
+      "pourrai",
+      "pas",
+      "dormir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ça t'est égal",
+        "pinyin": null,
+        "meaning": "para você tanto faz"
+      },
+      {
+        "id": 2,
+        "word": "trop",
+        "pinyin": null,
+        "meaning": "muito, demasiado"
+      },
+      {
+        "id": 3,
+        "word": "lumineux",
+        "pinyin": null,
+        "meaning": "luminoso, brilhante"
+      },
+      {
+        "id": 4,
+        "word": "pouvoir",
+        "pinyin": null,
+        "meaning": "poder"
+      },
+      {
+        "id": 5,
+        "word": "dormir",
+        "pinyin": null,
+        "meaning": "dormir"
+      }
+    ],
+    "id": "local-1772296755918-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Vraiment ? Alors je suis désolé. Je vais le changer. Comment on change la luminosité de l'écran ? Zhenzhen, tu sais ?",
+    "pinyin": null,
+    "translation": "B: Verdade? Então me desculpe. Vou mudar. Como se muda o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "B",
+      ":",
+      "Vraiment",
+      "?",
+      "Alors",
+      "je",
+      "suis",
+      "désolé",
+      ".",
+      "Je",
+      "vais",
+      "le",
+      "changer",
+      ".",
+      "Comment",
+      "on",
+      "change",
+      "la",
+      "luminosité",
+      "de",
+      "l'",
+      "écran",
+      "?",
+      "Zhenzhen",
+      ",",
+      "tu",
+      "sais",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment",
+        "pinyin": null,
+        "meaning": "verdadeiramente, realmente"
+      },
+      {
+        "id": 2,
+        "word": "désolé",
+        "pinyin": null,
+        "meaning": "desculpe, lamentável"
+      },
+      {
+        "id": 3,
+        "word": "changer",
+        "pinyin": null,
+        "meaning": "mudar, trocar"
+      },
+      {
+        "id": 4,
+        "word": "luminosité",
+        "pinyin": null,
+        "meaning": "luminosidade, brilho"
+      },
+      {
+        "id": 5,
+        "word": "écran",
+        "pinyin": null,
+        "meaning": "tela"
+      },
+      {
+        "id": 6,
+        "word": "sais",
+        "pinyin": null,
+        "meaning": "sabe (savoir)"
+      }
+    ],
+    "id": "local-1772296755918-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : Le mien est un ordinateur de bureau. En bas de l'écran, il y a un bouton que tu peux appuyer. Si c'est un ordinateur portable, regarde sur le clavier pour voir s'il y a une touche avec un symbole de fonction.",
+    "pinyin": null,
+    "translation": "A: O meu é um computador de mesa. Na parte de baixo da tela, há um botão que você pode apertar. Se for um notebook, procure no teclado para ver se há uma tecla com um símbolo de função.",
+    "tokens": [
+      "A",
+      ":",
+      "Le",
+      "mien",
+      "est",
+      "un",
+      "ordinateur",
+      "de",
+      "bureau",
+      ".",
+      "En",
+      "bas",
+      "de",
+      "l'",
+      "écran",
+      ",",
+      "il",
+      "y",
+      "a",
+      "un",
+      "bouton",
+      "que",
+      "tu",
+      "peux",
+      "appuyer",
+      ".",
+      "Si",
+      "c'",
+      "est",
+      "un",
+      "ordinateur",
+      "portable",
+      ",",
+      "regarde",
+      "sur",
+      "le",
+      "clavier",
+      "pour",
+      "voir",
+      "s'",
+      "il",
+      "y",
+      "a",
+      "une",
+      "touche",
+      "avec",
+      "un",
+      "symbole",
+      "de",
+      "fonction",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mien",
+        "pinyin": null,
+        "meaning": "o meu"
+      },
+      {
+        "id": 2,
+        "word": "ordinateur de bureau",
+        "pinyin": null,
+        "meaning": "computador de mesa"
+      },
+      {
+        "id": 3,
+        "word": "en bas de",
+        "pinyin": null,
+        "meaning": "na parte de baixo de"
+      },
+      {
+        "id": 4,
+        "word": "bouton",
+        "pinyin": null,
+        "meaning": "botão"
+      },
+      {
+        "id": 5,
+        "word": "appuyer",
+        "pinyin": null,
+        "meaning": "apertar, pressionar"
+      },
+      {
+        "id": 6,
+        "word": "ordinateur portable",
+        "pinyin": null,
+        "meaning": "computador portátil, notebook"
+      },
+      {
+        "id": 7,
+        "word": "clavier",
+        "pinyin": null,
+        "meaning": "teclado"
+      },
+      {
+        "id": 8,
+        "word": "touche",
+        "pinyin": null,
+        "meaning": "tecla"
+      },
+      {
+        "id": 9,
+        "word": "symbole de fonction",
+        "pinyin": null,
+        "meaning": "símbolo de função"
+      }
+    ],
+    "id": "local-1772296755918-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B : Laisse-moi voir. Celui-ci ajuste le contraste, celui-ci est la couleur. Oh, c'est la luminosité. D'accord, je l'ai rendu aussi sombre que possible. C'est un peu mieux ?",
+    "pinyin": null,
+    "translation": "B: Deixa eu ver. Este ajusta o contraste, este é a cor. Oh, é a luminosidade. Certo, eu o deixei o mais escuro possível. Está um pouco melhor?",
+    "tokens": [
+      "B",
+      ":",
+      "Laisse",
+      "-moi",
+      "voir",
+      ".",
+      "Celui",
+      "-ci",
+      "ajuste",
+      "le",
+      "contraste",
+      ",",
+      "celui",
+      "-ci",
+      "est",
+      "la",
+      "couleur",
+      ".",
+      "Oh",
+      ",",
+      "c'",
+      "est",
+      "la",
+      "luminosité",
+      ".",
+      "D'",
+      "accord",
+      ",",
+      "je",
+      "l'",
+      "ai",
+      "rendu",
+      "aussi",
+      "sombre",
+      "que",
+      "possible",
+      ".",
+      "C'",
+      "est",
+      "un",
+      "peu",
+      "mieux",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Laisse-moi voir",
+        "pinyin": null,
+        "meaning": "deixa-me ver"
+      },
+      {
+        "id": 2,
+        "word": "celui-ci",
+        "pinyin": null,
+        "meaning": "este"
+      },
+      {
+        "id": 3,
+        "word": "ajuster",
+        "pinyin": null,
+        "meaning": "ajustar"
+      },
+      {
+        "id": 4,
+        "word": "contraste",
+        "pinyin": null,
+        "meaning": "contraste"
+      },
+      {
+        "id": 5,
+        "word": "couleur",
+        "pinyin": null,
+        "meaning": "cor"
+      },
+      {
+        "id": 6,
+        "word": "luminosité",
+        "pinyin": null,
+        "meaning": "luminosidade, brilho"
+      },
+      {
+        "id": 7,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "de acordo, certo"
+      },
+      {
+        "id": 8,
+        "word": "rendre",
+        "pinyin": null,
+        "meaning": "tornar, deixar"
+      },
+      {
+        "id": 9,
+        "word": "sombre",
+        "pinyin": null,
+        "meaning": "escuro"
+      },
+      {
+        "id": 10,
+        "word": "possible",
+        "pinyin": null,
+        "meaning": "possível"
+      },
+      {
+        "id": 11,
+        "word": "un peu mieux",
+        "pinyin": null,
+        "meaning": "um pouco melhor"
+      }
+    ],
+    "id": "local-1772296755918-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A : C'est beaucoup mieux. Je vais dormir. Bonne chance !",
+    "pinyin": null,
+    "translation": "A: Está muito melhor. Vou dormir. Boa sorte!",
+    "tokens": [
+      "A",
+      ":",
+      "C'",
+      "est",
+      "beaucoup",
+      "mieux",
+      ".",
+      "Je",
+      "vais",
+      "dormir",
+      ".",
+      "Bonne",
+      "chance",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "beaucoup mieux",
+        "pinyin": null,
+        "meaning": "muito melhor"
+      },
+      {
+        "id": 2,
+        "word": "aller",
+        "pinyin": null,
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "dormir",
+        "pinyin": null,
+        "meaning": "dormir"
+      },
+      {
+        "id": 4,
+        "word": "Bonne chance",
+        "pinyin": null,
+        "meaning": "boa sorte"
+      }
+    ],
+    "id": "local-1772296755918-6",
+    "language": "Francês"
+  }
+]

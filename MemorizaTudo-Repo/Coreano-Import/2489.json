@@ -1,0 +1,676 @@
+[
+  {
+    "chinese": "A: 나 정말 화났어. 하루 종일 나한테 이렇다저렇다 안 좋다고만 하잖아.",
+    "pinyin": "",
+    "translation": "A: Eu estou realmente bravo(a). Você fica o dia inteiro me dizendo isso e aquilo, só coisas ruins, né?",
+    "tokens": [
+      "나",
+      "정말",
+      "화났어",
+      ".",
+      "하루",
+      "종일",
+      "나한테",
+      "이렇다저렇다",
+      "안",
+      "좋다고만",
+      "하잖아",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "화나다",
+        "pinyin": "",
+        "meaning": "ficar bravo/irritado"
+      },
+      {
+        "id": 4,
+        "word": "하루 종일",
+        "pinyin": "",
+        "meaning": "o dia inteiro"
+      },
+      {
+        "id": 5,
+        "word": "나한테",
+        "pinyin": "",
+        "meaning": "para mim (나 + 한테)"
+      },
+      {
+        "id": 6,
+        "word": "이렇다저렇다",
+        "pinyin": "",
+        "meaning": "isso e aquilo, assim e assado"
+      },
+      {
+        "id": 7,
+        "word": "안 좋다",
+        "pinyin": "",
+        "meaning": "não ser bom, ser ruim"
+      },
+      {
+        "id": 8,
+        "word": "~고만 하다",
+        "pinyin": "",
+        "meaning": "só fazer ~, apenas dizer ~"
+      }
+    ],
+    "id": "local-1772301606190-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말 너 같은 아내가 있을까? 친구들이랑 밥 먹으러 가면 일일이 다 캐물어야 하고.",
+    "pinyin": "",
+    "translation": "A: Será que existe uma esposa como você? Se eu for comer com meus amigos, você tem que perguntar tudo detalhadamente.",
+    "tokens": [
+      "정말",
+      "너",
+      "같은",
+      "아내가",
+      "있을까",
+      "?",
+      "친구들이랑",
+      "밥",
+      "먹으러",
+      "가면",
+      "일일이",
+      "다",
+      "캐물어야",
+      "하고",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 3,
+        "word": "~같은",
+        "pinyin": "",
+        "meaning": "como, parecido com"
+      },
+      {
+        "id": 4,
+        "word": "아내",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 5,
+        "word": "있을까",
+        "pinyin": "",
+        "meaning": "será que existe? (있다 + 을까?)"
+      },
+      {
+        "id": 6,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 7,
+        "word": "~들이랑",
+        "pinyin": "",
+        "meaning": "com os (plural + com)"
+      },
+      {
+        "id": 8,
+        "word": "밥",
+        "pinyin": "",
+        "meaning": "arroz, refeição"
+      },
+      {
+        "id": 9,
+        "word": "먹으러 가다",
+        "pinyin": "",
+        "meaning": "ir para comer"
+      },
+      {
+        "id": 10,
+        "word": "~면",
+        "pinyin": "",
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 11,
+        "word": "일일이",
+        "pinyin": "",
+        "meaning": "um por um, detalhadamente"
+      },
+      {
+        "id": 12,
+        "word": "다",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 13,
+        "word": "캐묻다",
+        "pinyin": "",
+        "meaning": "perguntar detalhadamente, investigar"
+      },
+      {
+        "id": 14,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "ter que fazer"
+      }
+    ],
+    "id": "local-1772301606190-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 비서가 보내는 문자 하나하나 다 검사해야 하고. 이게 말이 돼?!",
+    "pinyin": "",
+    "translation": "A: E você tem que verificar cada mensagem que a secretária envia. Isso faz sentido?!",
+    "tokens": [
+      "비서가",
+      "보내는",
+      "문자",
+      "하나하나",
+      "다",
+      "검사해야",
+      "하고",
+      ".",
+      "이게",
+      "말이",
+      "돼",
+      "?",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "비서",
+        "pinyin": "",
+        "meaning": "secretária/secretário"
+      },
+      {
+        "id": 2,
+        "word": "보내다",
+        "pinyin": "",
+        "meaning": "enviar"
+      },
+      {
+        "id": 3,
+        "word": "문자",
+        "pinyin": "",
+        "meaning": "mensagem de texto"
+      },
+      {
+        "id": 4,
+        "word": "하나하나",
+        "pinyin": "",
+        "meaning": "um por um, cada um"
+      },
+      {
+        "id": 5,
+        "word": "다",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 6,
+        "word": "검사하다",
+        "pinyin": "",
+        "meaning": "inspecionar, verificar"
+      },
+      {
+        "id": 7,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "ter que fazer"
+      },
+      {
+        "id": 8,
+        "word": "이게",
+        "pinyin": "",
+        "meaning": "isto (이것이 contraído)"
+      },
+      {
+        "id": 9,
+        "word": "말이 되다",
+        "pinyin": "",
+        "meaning": "fazer sentido"
+      }
+    ],
+    "id": "local-1772301606190-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 지난번 내 생일 때도 나랑 상의도 없이 그렇게 비싼 케이크를 사 오고. 정말 너무하잖아!",
+    "pinyin": "",
+    "translation": "A: Na última vez, no meu aniversário, você comprou um bolo tão caro sem nem mesmo discutir comigo. Isso é realmente demais!",
+    "tokens": [
+      "지난번",
+      "내",
+      "생일",
+      "때도",
+      "나랑",
+      "상의도",
+      "없이",
+      "그렇게",
+      "비싼",
+      "케이크를",
+      "사",
+      "오고",
+      ".",
+      "정말",
+      "너무하잖아",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "지난번",
+        "pinyin": "",
+        "meaning": "da última vez"
+      },
+      {
+        "id": 2,
+        "word": "내",
+        "pinyin": "",
+        "meaning": "meu/minha (나의 contraído)"
+      },
+      {
+        "id": 3,
+        "word": "생일",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "~때도",
+        "pinyin": "",
+        "meaning": "mesmo na ocasião de (때 + 도)"
+      },
+      {
+        "id": 5,
+        "word": "나랑",
+        "pinyin": "",
+        "meaning": "comigo (나 + 랑)"
+      },
+      {
+        "id": 6,
+        "word": "상의하다",
+        "pinyin": "",
+        "meaning": "discutir, consultar"
+      },
+      {
+        "id": 7,
+        "word": "~도 없이",
+        "pinyin": "",
+        "meaning": "sem mesmo, sem"
+      },
+      {
+        "id": 8,
+        "word": "그렇게",
+        "pinyin": "",
+        "meaning": "assim, tão"
+      },
+      {
+        "id": 9,
+        "word": "비싸다",
+        "pinyin": "",
+        "meaning": "ser caro"
+      },
+      {
+        "id": 10,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo (do inglês 'cake')"
+      },
+      {
+        "id": 11,
+        "word": "사 오다",
+        "pinyin": "",
+        "meaning": "comprar e trazer"
+      },
+      {
+        "id": 12,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 13,
+        "word": "너무하다",
+        "pinyin": "",
+        "meaning": "ser demais, exagerar"
+      }
+    ],
+    "id": "local-1772301606190-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 심지어 내가 축구 경기 볼 때도 TV 리모컨으로 싸워야 하고. 정말 못 참겠어!",
+    "pinyin": "",
+    "translation": "A: Até mesmo quando eu assisto a um jogo de futebol, temos que brigar pelo controle remoto da TV. Eu realmente não aguento mais!",
+    "tokens": [
+      "심지어",
+      "내가",
+      "축구",
+      "경기",
+      "볼",
+      "때도",
+      "TV",
+      "리모컨으로",
+      "싸워야",
+      "하고",
+      ".",
+      "정말",
+      "못",
+      "참겠어",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "심지어",
+        "pinyin": "",
+        "meaning": "inclusive, até mesmo"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (내가 - com partícula de sujeito)"
+      },
+      {
+        "id": 3,
+        "word": "축구",
+        "pinyin": "",
+        "meaning": "futebol"
+      },
+      {
+        "id": 4,
+        "word": "경기",
+        "pinyin": "",
+        "meaning": "jogo, partida"
+      },
+      {
+        "id": 5,
+        "word": "보다",
+        "pinyin": "",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 6,
+        "word": "~때도",
+        "pinyin": "",
+        "meaning": "mesmo na ocasião de"
+      },
+      {
+        "id": 7,
+        "word": "TV",
+        "pinyin": "",
+        "meaning": "TV (do inglês 'television')"
+      },
+      {
+        "id": 8,
+        "word": "리모컨",
+        "pinyin": "",
+        "meaning": "controle remoto (do inglês 'remote control')"
+      },
+      {
+        "id": 9,
+        "word": "~으로",
+        "pinyin": "",
+        "meaning": "com, por (instrumento)"
+      },
+      {
+        "id": 10,
+        "word": "싸우다",
+        "pinyin": "",
+        "meaning": "brigar, lutar"
+      },
+      {
+        "id": 11,
+        "word": "~야 하다",
+        "pinyin": "",
+        "meaning": "ter que fazer"
+      },
+      {
+        "id": 12,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 13,
+        "word": "못 참다",
+        "pinyin": "",
+        "meaning": "não aguentar, não suportar"
+      }
+    ],
+    "id": "local-1772301606190-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 대체 이 집에서 누가 주인이야?!",
+    "pinyin": "",
+    "translation": "A: Afinal, quem é o(a) dono(a) nesta casa?!",
+    "tokens": [
+      "대체",
+      "이",
+      "집에서",
+      "누가",
+      "주인이야",
+      "?",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "대체",
+        "pinyin": "",
+        "meaning": "afinal, por que diabos"
+      },
+      {
+        "id": 2,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "este/esta"
+      },
+      {
+        "id": 3,
+        "word": "집",
+        "pinyin": "",
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "~에서",
+        "pinyin": "",
+        "meaning": "em, na (local)"
+      },
+      {
+        "id": 5,
+        "word": "누가",
+        "pinyin": "",
+        "meaning": "quem (누구 + 가)"
+      },
+      {
+        "id": 6,
+        "word": "주인",
+        "pinyin": "",
+        "meaning": "dono(a), proprietário(a)"
+      },
+      {
+        "id": 7,
+        "word": "~이야",
+        "pinyin": "",
+        "meaning": "é (informal, para substantivo)"
+      }
+    ],
+    "id": "local-1772301606190-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭐 해? 거울 보면서 혼잣말하고 있어? 아직 설거지도 안 했잖아!",
+    "pinyin": "",
+    "translation": "B: O que você está fazendo? Está falando sozinho(a) enquanto se olha no espelho? Você nem lavou a louça ainda!",
+    "tokens": [
+      "뭐",
+      "해",
+      "?",
+      "거울",
+      "보면서",
+      "혼잣말하고",
+      "있어",
+      "?",
+      "아직",
+      "설거지도",
+      "안",
+      "했잖아",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뭐",
+        "pinyin": "",
+        "meaning": "o que (무엇 contraído)"
+      },
+      {
+        "id": 2,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "거울",
+        "pinyin": "",
+        "meaning": "espelho"
+      },
+      {
+        "id": 4,
+        "word": "보다",
+        "pinyin": "",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 5,
+        "word": "~면서",
+        "pinyin": "",
+        "meaning": "enquanto, ao mesmo tempo que"
+      },
+      {
+        "id": 6,
+        "word": "혼잣말하다",
+        "pinyin": "",
+        "meaning": "falar sozinho(a)"
+      },
+      {
+        "id": 7,
+        "word": "~고 있다",
+        "pinyin": "",
+        "meaning": "estar fazendo (presente contínuo)"
+      },
+      {
+        "id": 8,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 9,
+        "word": "설거지",
+        "pinyin": "",
+        "meaning": "lavagem de louça (설거지하다 - lavar a louça)"
+      },
+      {
+        "id": 10,
+        "word": "~도",
+        "pinyin": "",
+        "meaning": "também, nem mesmo"
+      },
+      {
+        "id": 11,
+        "word": "안 하다",
+        "pinyin": "",
+        "meaning": "não fazer"
+      },
+      {
+        "id": 12,
+        "word": "~잖아",
+        "pinyin": "",
+        "meaning": "partícula para confirmar algo que o ouvinte já sabe ou deveria saber"
+      }
+    ],
+    "id": "local-1772301606190-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 아. 알았어. 지금 갈게!",
+    "pinyin": "",
+    "translation": "A: Ah, ah. Entendi. Vou agora!",
+    "tokens": [
+      "아",
+      ",",
+      "아",
+      ".",
+      "알았어",
+      ".",
+      "지금",
+      "갈게",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": "",
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "알다",
+        "pinyin": "",
+        "meaning": "saber, entender"
+      },
+      {
+        "id": 3,
+        "word": "지금",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 4,
+        "word": "가다",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 5,
+        "word": "~ㄹ/을게",
+        "pinyin": "",
+        "meaning": "farei, vou (expressa intenção do falante)"
+      }
+    ],
+    "id": "local-1772301606190-7",
+    "language": "Coreano"
+  }
+]

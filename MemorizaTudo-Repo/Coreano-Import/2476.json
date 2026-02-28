@@ -1,0 +1,594 @@
+[
+  {
+    "chinese": "A: 안녕하세요. 화메이 병원 건강검진과 맞습니까?",
+    "pinyin": "",
+    "translation": "A: Olá. Este é o departamento de exames de saúde do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "안녕하세요.",
+      "화메이",
+      "병원",
+      "건강검진과",
+      "맞습니까?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": "annyeonghaseyo",
+        "meaning": "olá"
+      },
+      {
+        "id": 2,
+        "word": "화메이 병원",
+        "pinyin": "hwamei byeongwon",
+        "meaning": "Hospital Huamei (nome próprio)"
+      },
+      {
+        "id": 3,
+        "word": "건강검진과",
+        "pinyin": "geonganggeomjingwa",
+        "meaning": "departamento de exames de saúde"
+      },
+      {
+        "id": 4,
+        "word": "맞습니까?",
+        "pinyin": "matseumnikka?",
+        "meaning": "está correto? é isso?"
+      }
+    ],
+    "id": "local-1772300368290-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 무엇을 도와드릴까요?",
+    "pinyin": "",
+    "translation": "B: Sim, como posso ajudar?",
+    "tokens": [
+      "B:",
+      "네,",
+      "무엇을",
+      "도와드릴까요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "무엇을",
+        "pinyin": "mueoseul",
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "도와드릴까요?",
+        "pinyin": "dowadeurilkkayo?",
+        "meaning": "posso ajudar?"
+      }
+    ],
+    "id": "local-1772300368290-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 여기에서 채용 건강검진을 하나요?",
+    "pinyin": "",
+    "translation": "A: Vocês fazem exames de saúde para contratação aqui?",
+    "tokens": [
+      "A:",
+      "여기에서",
+      "채용",
+      "건강검진을",
+      "하나요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여기에서",
+        "pinyin": "yeogieoseo",
+        "meaning": "aqui (neste lugar)"
+      },
+      {
+        "id": 2,
+        "word": "채용",
+        "pinyin": "chaeyong",
+        "meaning": "contratação, emprego"
+      },
+      {
+        "id": 3,
+        "word": "건강검진",
+        "pinyin": "geonganggeomjin",
+        "meaning": "exame de saúde"
+      },
+      {
+        "id": 4,
+        "word": "하나요?",
+        "pinyin": "hanayo?",
+        "meaning": "fazer? (pergunta formal)"
+      }
+    ],
+    "id": "local-1772300368290-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 합니다. 260위안짜리 패키지가 있습니다.",
+    "pinyin": "",
+    "translation": "B: Sim, fazemos. Temos um pacote de 260 yuans.",
+    "tokens": [
+      "B:",
+      "네,",
+      "합니다.",
+      "260위안짜리",
+      "패키지가",
+      "있습니다."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "합니다",
+        "pinyin": "hamnida",
+        "meaning": "fazemos"
+      },
+      {
+        "id": 3,
+        "word": "260위안짜리",
+        "pinyin": "ibaekyukshipwianjjari",
+        "meaning": "de 260 yuans"
+      },
+      {
+        "id": 4,
+        "word": "패키지",
+        "pinyin": "paekiji",
+        "meaning": "pacote"
+      },
+      {
+        "id": 5,
+        "word": "있습니다",
+        "pinyin": "itseumnida",
+        "meaning": "há, existe"
+      }
+    ],
+    "id": "local-1772300368290-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 어떤 항목들을 검사하나요?",
+    "pinyin": "",
+    "translation": "A: Que itens são examinados?",
+    "tokens": [
+      "A:",
+      "어떤",
+      "항목들을",
+      "검사하나요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 2,
+        "word": "항목",
+        "pinyin": "hangmok",
+        "meaning": "item"
+      },
+      {
+        "id": 3,
+        "word": "검사하나요?",
+        "pinyin": "geomsahanayo?",
+        "meaning": "examinar? (pergunta formal)"
+      }
+    ],
+    "id": "local-1772300368290-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 기본적인 키, 몸무게, 혈압입니다. 혈액 검사, 소변 검사, B 모드 초음파, 그리고 심전도 검사요.",
+    "pinyin": "",
+    "translation": "B: São altura, peso e pressão arterial básicos. Exame de sangue, exame de urina, ultrassom modo B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "기본적인",
+      "키,",
+      "몸무게,",
+      "혈압입니다.",
+      "혈액",
+      "검사,",
+      "소변",
+      "검사,",
+      "B",
+      "모드",
+      "초음파,",
+      "그리고",
+      "심전도",
+      "검사요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기본적인",
+        "pinyin": "gibonjeogin",
+        "meaning": "básico"
+      },
+      {
+        "id": 2,
+        "word": "키",
+        "pinyin": "ki",
+        "meaning": "altura"
+      },
+      {
+        "id": 3,
+        "word": "몸무게",
+        "pinyin": "mommuge",
+        "meaning": "peso"
+      },
+      {
+        "id": 4,
+        "word": "혈압",
+        "pinyin": "hyeorap",
+        "meaning": "pressão arterial"
+      },
+      {
+        "id": 5,
+        "word": "혈액 검사",
+        "pinyin": "hyeoraek geomsa",
+        "meaning": "exame de sangue"
+      },
+      {
+        "id": 6,
+        "word": "소변 검사",
+        "pinyin": "sobyeon geomsa",
+        "meaning": "exame de urina"
+      },
+      {
+        "id": 7,
+        "word": "B 모드 초음파",
+        "pinyin": "bi modeu choumpa",
+        "meaning": "ultrassom modo B"
+      },
+      {
+        "id": 8,
+        "word": "그리고",
+        "pinyin": "geurigo",
+        "meaning": "e"
+      },
+      {
+        "id": 9,
+        "word": "심전도 검사",
+        "pinyin": "shimjeondo geomsa",
+        "meaning": "eletrocardiograma"
+      }
+    ],
+    "id": "local-1772300368290-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 다른 항목들도 검사받고 싶으면 가능한가요?",
+    "pinyin": "",
+    "translation": "A: Se eu quiser examinar outros itens, é possível?",
+    "tokens": [
+      "A:",
+      "다른",
+      "항목들도",
+      "검사받고",
+      "싶으면",
+      "가능한가요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다른",
+        "pinyin": "dareun",
+        "meaning": "outros, diferentes"
+      },
+      {
+        "id": 2,
+        "word": "항목",
+        "pinyin": "hangmok",
+        "meaning": "item"
+      },
+      {
+        "id": 3,
+        "word": "검사받고 싶으면",
+        "pinyin": "geomsabatgo shipeumyeon",
+        "meaning": "se quiser ser examinado"
+      },
+      {
+        "id": 4,
+        "word": "가능한가요?",
+        "pinyin": "ganeunghangayo?",
+        "meaning": "é possível? (pergunta formal)"
+      }
+    ],
+    "id": "local-1772300368290-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 가능합니다. 개별 항목을 추가하고 비용을 내시면 됩니다.",
+    "pinyin": "",
+    "translation": "B: Sim, é possível. Você pode adicionar itens individuais e pagar a taxa.",
+    "tokens": [
+      "B:",
+      "네,",
+      "가능합니다.",
+      "개별",
+      "항목을",
+      "추가하고",
+      "비용을",
+      "내시면",
+      "됩니다."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "가능합니다",
+        "pinyin": "ganeunghamnida",
+        "meaning": "é possível"
+      },
+      {
+        "id": 3,
+        "word": "개별",
+        "pinyin": "gaebyeol",
+        "meaning": "individual"
+      },
+      {
+        "id": 4,
+        "word": "항목",
+        "pinyin": "hangmok",
+        "meaning": "item"
+      },
+      {
+        "id": 5,
+        "word": "추가하고",
+        "pinyin": "chugahago",
+        "meaning": "adicionar e"
+      },
+      {
+        "id": 6,
+        "word": "비용",
+        "pinyin": "biyong",
+        "meaning": "custo, taxa"
+      },
+      {
+        "id": 7,
+        "word": "내시면",
+        "pinyin": "naesimyeon",
+        "meaning": "se pagar (formal)"
+      },
+      {
+        "id": 8,
+        "word": "됩니다",
+        "pinyin": "doemnida",
+        "meaning": "está tudo bem, pode"
+      }
+    ],
+    "id": "local-1772300368290-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 보고서가 직장으로 바로 우편 발송되나요?",
+    "pinyin": "",
+    "translation": "A: O relatório é enviado diretamente para o local de trabalho por correio?",
+    "tokens": [
+      "A:",
+      "보고서가",
+      "직장으로",
+      "바로",
+      "우편",
+      "발송되나요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "보고서",
+        "pinyin": "bogoseo",
+        "meaning": "relatório"
+      },
+      {
+        "id": 2,
+        "word": "직장",
+        "pinyin": "jikjang",
+        "meaning": "local de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "으로",
+        "pinyin": "eureo",
+        "meaning": "para (direção/destino)"
+      },
+      {
+        "id": 4,
+        "word": "바로",
+        "pinyin": "baro",
+        "meaning": "imediatamente, diretamente"
+      },
+      {
+        "id": 5,
+        "word": "우편 발송되나요?",
+        "pinyin": "upyeon balsongdoenayo?",
+        "meaning": "é enviado por correio?"
+      }
+    ],
+    "id": "local-1772300368290-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아니요, 직접 오셔서 받으시거나 택배로 보내드립니다. 지금 바로 예약을 도와드릴까요?",
+    "pinyin": "",
+    "translation": "B: Não, você pode vir pessoalmente para pegá-lo ou nós o enviaremos por entrega expressa. Posso ajudar com a reserva agora?",
+    "tokens": [
+      "B:",
+      "아니요,",
+      "직접",
+      "오셔서",
+      "받으시거나",
+      "택배로",
+      "보내드립니다.",
+      "지금",
+      "바로",
+      "예약을",
+      "도와드릴까요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니요",
+        "pinyin": "aniyo",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "직접",
+        "pinyin": "jikjeop",
+        "meaning": "pessoalmente, diretamente"
+      },
+      {
+        "id": 3,
+        "word": "오셔서",
+        "pinyin": "osyeoseo",
+        "meaning": "vindo (formal e então/porque)"
+      },
+      {
+        "id": 4,
+        "word": "받으시거나",
+        "pinyin": "badeusigeona",
+        "meaning": "receber ou (formal)"
+      },
+      {
+        "id": 5,
+        "word": "택배",
+        "pinyin": "taekbae",
+        "meaning": "entrega expressa, correio"
+      },
+      {
+        "id": 6,
+        "word": "보내드립니다",
+        "pinyin": "bonaedeurimnida",
+        "meaning": "nós enviaremos (formal)"
+      },
+      {
+        "id": 7,
+        "word": "지금",
+        "pinyin": "jigeum",
+        "meaning": "agora"
+      },
+      {
+        "id": 8,
+        "word": "예약",
+        "pinyin": "yeyak",
+        "meaning": "reserva, agendamento"
+      },
+      {
+        "id": 9,
+        "word": "도와드릴까요?",
+        "pinyin": "dowadeurilkkayo?",
+        "meaning": "posso ajudar? (formal)"
+      }
+    ],
+    "id": "local-1772300368290-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 다음 주 월요일로 해주세요.",
+    "pinyin": "",
+    "translation": "A: Por favor, para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "다음",
+      "주",
+      "월요일로",
+      "해주세요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음",
+        "pinyin": "daeum",
+        "meaning": "próximo"
+      },
+      {
+        "id": 2,
+        "word": "주",
+        "pinyin": "ju",
+        "meaning": "semana"
+      },
+      {
+        "id": 3,
+        "word": "월요일",
+        "pinyin": "wolyoil",
+        "meaning": "segunda-feira"
+      },
+      {
+        "id": 4,
+        "word": "로",
+        "pinyin": "ro",
+        "meaning": "para (destino)"
+      },
+      {
+        "id": 5,
+        "word": "해주세요",
+        "pinyin": "haejuseyo",
+        "meaning": "por favor, faça"
+      }
+    ],
+    "id": "local-1772300368290-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 기본적인 정보를 남겨주세요.",
+    "pinyin": "",
+    "translation": "B: Entendido. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "B:",
+      "알겠습니다.",
+      "기본적인",
+      "정보를",
+      "남겨주세요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": "algetseumnida",
+        "meaning": "entendido, eu entendo (formal)"
+      },
+      {
+        "id": 2,
+        "word": "기본적인",
+        "pinyin": "gibonjeogin",
+        "meaning": "básico"
+      },
+      {
+        "id": 3,
+        "word": "정보",
+        "pinyin": "jeongbo",
+        "meaning": "informação"
+      },
+      {
+        "id": 4,
+        "word": "남겨주세요",
+        "pinyin": "namgyeojuseyo",
+        "meaning": "por favor, deixe"
+      }
+    ],
+    "id": "local-1772300368290-11",
+    "language": "Coreano"
+  }
+]

@@ -1,0 +1,535 @@
+[
+  {
+    "chinese": "Garçon, je veux acheter un gâteau d'anniversaire pour mon enfant. C'est pour environ 10 personnes.",
+    "pinyin": null,
+    "translation": "Garçom, quero comprar um bolo de aniversário para o meu filho. É para cerca de 10 pessoas.",
+    "tokens": [
+      "Garçon",
+      "je",
+      "veux",
+      "acheter",
+      "un",
+      "gâteau",
+      "d'anniversaire",
+      "pour",
+      "mon",
+      "enfant",
+      "C'est",
+      "pour",
+      "environ",
+      "10",
+      "personnes"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Garçon",
+        "pinyin": null,
+        "meaning": "Garçom"
+      },
+      {
+        "id": 2,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "gâteau d'anniversaire",
+        "pinyin": null,
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 4,
+        "word": "enfant",
+        "pinyin": null,
+        "meaning": "criança, filho(a)"
+      },
+      {
+        "id": 5,
+        "word": "environ",
+        "pinyin": null,
+        "meaning": "cerca de, aproximadamente"
+      },
+      {
+        "id": 6,
+        "word": "personnes",
+        "pinyin": null,
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772295200136-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "S'il y a 10 personnes, un gâteau de 30 centimètres devrait suffire.",
+    "pinyin": null,
+    "translation": "Se houver 10 pessoas, um bolo de 30 centímetros deve ser suficiente.",
+    "tokens": [
+      "S'il",
+      "y",
+      "a",
+      "10",
+      "personnes",
+      "un",
+      "gâteau",
+      "de",
+      "30",
+      "centimètres",
+      "devrait",
+      "suffire"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "S'il y a",
+        "pinyin": null,
+        "meaning": "Se houver"
+      },
+      {
+        "id": 2,
+        "word": "centimètres",
+        "pinyin": null,
+        "meaning": "centímetros"
+      },
+      {
+        "id": 3,
+        "word": "suffire",
+        "pinyin": null,
+        "meaning": "ser suficiente, bastar"
+      }
+    ],
+    "id": "local-1772295200136-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Alors, quels types de gâteaux avez-vous ?",
+    "pinyin": null,
+    "translation": "Então, que tipos de bolos vocês têm?",
+    "tokens": [
+      "Alors",
+      "quels",
+      "types",
+      "de",
+      "gâteaux",
+      "avez-vous"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "types",
+        "pinyin": null,
+        "meaning": "tipos"
+      },
+      {
+        "id": 3,
+        "word": "avez-vous",
+        "pinyin": null,
+        "meaning": "vocês têm (verbo 'avoir')"
+      }
+    ],
+    "id": "local-1772295200136-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Nous avons des gâteaux aux fruits et à la crème, des gâteaux au chocolat, des gâteaux à la mousse et des cheesecakes.",
+    "pinyin": null,
+    "translation": "Nós temos bolos de frutas e creme, bolos de chocolate, bolos de mousse e cheesecakes.",
+    "tokens": [
+      "Nous",
+      "avons",
+      "des",
+      "gâteaux",
+      "aux",
+      "fruits",
+      "et",
+      "à",
+      "la",
+      "crème",
+      "des",
+      "gâteaux",
+      "au",
+      "chocolat",
+      "des",
+      "gâteaux",
+      "à",
+      "la",
+      "mousse",
+      "et",
+      "des",
+      "cheesecakes"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gâteaux aux fruits",
+        "pinyin": null,
+        "meaning": "bolos de frutas"
+      },
+      {
+        "id": 2,
+        "word": "crème",
+        "pinyin": null,
+        "meaning": "creme"
+      },
+      {
+        "id": 3,
+        "word": "chocolat",
+        "pinyin": null,
+        "meaning": "chocolate"
+      },
+      {
+        "id": 4,
+        "word": "mousse",
+        "pinyin": null,
+        "meaning": "mousse"
+      },
+      {
+        "id": 5,
+        "word": "cheesecakes",
+        "pinyin": null,
+        "meaning": "cheesecakes"
+      }
+    ],
+    "id": "local-1772295200136-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Quel est le goût du gâteau à la mousse ?",
+    "pinyin": null,
+    "translation": "Qual é o sabor do bolo de mousse?",
+    "tokens": [
+      "Quel",
+      "est",
+      "le",
+      "goût",
+      "du",
+      "gâteau",
+      "à",
+      "la",
+      "mousse"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "goût",
+        "pinyin": null,
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772295200136-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Le goût du gâteau à la mousse est plus fin et lisse, léger et rafraîchissant.",
+    "pinyin": null,
+    "translation": "O sabor do bolo de mousse é mais fino e suave, leve e refrescante.",
+    "tokens": [
+      "Le",
+      "goût",
+      "du",
+      "gâteau",
+      "à",
+      "la",
+      "mousse",
+      "est",
+      "plus",
+      "fin",
+      "et",
+      "lisse",
+      "léger",
+      "et",
+      "rafraîchissant"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fin",
+        "pinyin": null,
+        "meaning": "fino"
+      },
+      {
+        "id": 2,
+        "word": "lisse",
+        "pinyin": null,
+        "meaning": "liso, suave"
+      },
+      {
+        "id": 3,
+        "word": "léger",
+        "pinyin": null,
+        "meaning": "leve"
+      },
+      {
+        "id": 4,
+        "word": "rafraîchissant",
+        "pinyin": null,
+        "meaning": "refrescante"
+      }
+    ],
+    "id": "local-1772295200136-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Alors nous voulons acheter un gâteau à la mousse de 30 centimètres.",
+    "pinyin": null,
+    "translation": "Então nós queremos comprar um bolo de mousse de 30 centímetros.",
+    "tokens": [
+      "Alors",
+      "nous",
+      "voulons",
+      "acheter",
+      "un",
+      "gâteau",
+      "à",
+      "la",
+      "mousse",
+      "de",
+      "30",
+      "centimètres"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "voulons",
+        "pinyin": null,
+        "meaning": "queremos (verbo 'vouloir')"
+      }
+    ],
+    "id": "local-1772295200136-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D'accord. Cependant, vous devez commander ce gâteau à l'avance. Vous pourrez le récupérer après 10 heures demain.",
+    "pinyin": null,
+    "translation": "De acordo. No entanto, vocês devem encomendar este bolo com antecedência. Poderão retirá-lo depois das 10 horas amanhã.",
+    "tokens": [
+      "D'accord",
+      "Cependant",
+      "vous",
+      "devez",
+      "commander",
+      "ce",
+      "gâteau",
+      "à",
+      "l'avance",
+      "Vous",
+      "pourrez",
+      "le",
+      "récupérer",
+      "après",
+      "10",
+      "heures",
+      "demain"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "De acordo, Ok"
+      },
+      {
+        "id": 2,
+        "word": "Cependant",
+        "pinyin": null,
+        "meaning": "No entanto, Contudo"
+      },
+      {
+        "id": 3,
+        "word": "commander",
+        "pinyin": null,
+        "meaning": "encomendar"
+      },
+      {
+        "id": 4,
+        "word": "à l'avance",
+        "pinyin": null,
+        "meaning": "com antecedência"
+      },
+      {
+        "id": 5,
+        "word": "récupérer",
+        "pinyin": null,
+        "meaning": "pegar, retirar"
+      },
+      {
+        "id": 6,
+        "word": "après",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 7,
+        "word": "demain",
+        "pinyin": null,
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772295200136-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Vos gâteaux sont-ils fraîchement préparés ?",
+    "pinyin": null,
+    "translation": "Seus bolos são preparados na hora?",
+    "tokens": [
+      "Vos",
+      "gâteaux",
+      "sont-ils",
+      "fraîchement",
+      "préparés"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fraîchement",
+        "pinyin": null,
+        "meaning": "frescas, na hora"
+      },
+      {
+        "id": 2,
+        "word": "préparés",
+        "pinyin": null,
+        "meaning": "preparados"
+      }
+    ],
+    "id": "local-1772295200136-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Nos chefs les préparent fraîchement chaque matin. Soyez tranquille.",
+    "pinyin": null,
+    "translation": "Nossos chefs os preparam na hora todas as manhãs. Fique tranquilo.",
+    "tokens": [
+      "Nos",
+      "chefs",
+      "les",
+      "préparent",
+      "fraîchement",
+      "chaque",
+      "matin",
+      "Soyez",
+      "tranquille"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chefs",
+        "pinyin": null,
+        "meaning": "chefs, cozinheiros"
+      },
+      {
+        "id": 2,
+        "word": "chaque",
+        "pinyin": null,
+        "meaning": "cada"
+      },
+      {
+        "id": 3,
+        "word": "matin",
+        "pinyin": null,
+        "meaning": "manhã"
+      },
+      {
+        "id": 4,
+        "word": "Soyez tranquille",
+        "pinyin": null,
+        "meaning": "Fique tranquilo"
+      }
+    ],
+    "id": "local-1772295200136-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Puis-je demander quel âge a votre enfant ?",
+    "pinyin": null,
+    "translation": "Posso perguntar qual a idade do seu filho?",
+    "tokens": [
+      "Puis-je",
+      "demander",
+      "quel",
+      "âge",
+      "a",
+      "votre",
+      "enfant"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puis-je demander",
+        "pinyin": null,
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 2,
+        "word": "âge",
+        "pinyin": null,
+        "meaning": "idade"
+      }
+    ],
+    "id": "local-1772295200136-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Trois ans.",
+    "pinyin": null,
+    "translation": "Três anos.",
+    "tokens": [
+      "Trois",
+      "ans"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Trois",
+        "pinyin": null,
+        "meaning": "Três"
+      },
+      {
+        "id": 2,
+        "word": "ans",
+        "pinyin": null,
+        "meaning": "anos"
+      }
+    ],
+    "id": "local-1772295200136-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D'accord. Je vais vous chercher trois bougies.",
+    "pinyin": null,
+    "translation": "De acordo. Vou procurar por três velas para você.",
+    "tokens": [
+      "D'accord",
+      "Je",
+      "vais",
+      "vous",
+      "chercher",
+      "trois",
+      "bougies"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chercher",
+        "pinyin": null,
+        "meaning": "procurar, buscar"
+      },
+      {
+        "id": 2,
+        "word": "bougies",
+        "pinyin": null,
+        "meaning": "velas"
+      }
+    ],
+    "id": "local-1772295200136-12",
+    "language": "Francês"
+  }
+]

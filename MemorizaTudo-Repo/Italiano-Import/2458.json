@@ -1,0 +1,596 @@
+[
+  {
+    "chinese": "A: I Mondiali sono arrivati!",
+    "pinyin": null,
+    "translation": "A: A Copa do Mundo chegou!",
+    "tokens": [
+      "I",
+      "Mondiali",
+      "sono",
+      "arrivati",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mondiali",
+        "pinyin": null,
+        "meaning": "Copa do Mundo / Mundiais"
+      },
+      {
+        "id": 2,
+        "word": "sono arrivati",
+        "pinyin": null,
+        "meaning": "chegaram"
+      }
+    ],
+    "id": "local-1772298917250-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Dove si tengono i Mondiali quest'anno?",
+    "pinyin": null,
+    "translation": "B: Onde se realizam os Mundiais este ano?",
+    "tokens": [
+      "Dove",
+      "si",
+      "tengono",
+      "i",
+      "Mondiali",
+      "quest'anno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dove",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "si tengono",
+        "pinyin": null,
+        "meaning": "se realizam / acontecem"
+      },
+      {
+        "id": 3,
+        "word": "Mondiali",
+        "pinyin": null,
+        "meaning": "Copa do Mundo / Mundiais"
+      },
+      {
+        "id": 4,
+        "word": "quest'anno",
+        "pinyin": null,
+        "meaning": "este ano"
+      }
+    ],
+    "id": "local-1772298917250-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Brasile! Il regno del calcio! Quest'anno i Mondiali saranno sicuramente fantastici da guardare!",
+    "pinyin": null,
+    "translation": "A: Brasil! O reino do futebol! Este ano a Copa do Mundo será certamente fantástica de assistir!",
+    "tokens": [
+      "Brasile",
+      "!",
+      "Il",
+      "regno",
+      "del",
+      "calcio",
+      "!",
+      "Quest'anno",
+      "i",
+      "Mondiali",
+      "saranno",
+      "sicuramente",
+      "fantastici",
+      "da",
+      "guardare",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brasile",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "regno",
+        "pinyin": null,
+        "meaning": "reino"
+      },
+      {
+        "id": 3,
+        "word": "calcio",
+        "pinyin": null,
+        "meaning": "futebol"
+      },
+      {
+        "id": 4,
+        "word": "Quest'anno",
+        "pinyin": null,
+        "meaning": "Este ano"
+      },
+      {
+        "id": 5,
+        "word": "Mondiali",
+        "pinyin": null,
+        "meaning": "Copa do Mundo / Mundiais"
+      },
+      {
+        "id": 6,
+        "word": "saranno",
+        "pinyin": null,
+        "meaning": "serão"
+      },
+      {
+        "id": 7,
+        "word": "sicuramente",
+        "pinyin": null,
+        "meaning": "certamente / com certeza"
+      },
+      {
+        "id": 8,
+        "word": "fantastici",
+        "pinyin": null,
+        "meaning": "fantásticos"
+      },
+      {
+        "id": 9,
+        "word": "da guardare",
+        "pinyin": null,
+        "meaning": "de assistir / para assistir"
+      }
+    ],
+    "id": "local-1772298917250-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Brasile? Allora voglio vederli. Il Brasile ha molte belle donne. La cerimonia di apertura avrà sicuramente un vivace ballo di samba. Che data è la cerimonia di apertura?",
+    "pinyin": null,
+    "translation": "B: Brasil? Então quero vê-los. O Brasil tem muitas mulheres bonitas. A cerimônia de abertura terá certamente uma animada dança de samba. Que dia é a cerimônia de abertura?",
+    "tokens": [
+      "Brasile",
+      "?",
+      "Allora",
+      "voglio",
+      "vederli",
+      ".",
+      "Il",
+      "Brasile",
+      "ha",
+      "molte",
+      "belle",
+      "donne",
+      ".",
+      "La",
+      "cerimonia",
+      "di",
+      "apertura",
+      "avrà",
+      "sicuramente",
+      "un",
+      "vivace",
+      "ballo",
+      "di",
+      "samba",
+      ".",
+      "Che",
+      "data",
+      "è",
+      "la",
+      "cerimonia",
+      "di",
+      "apertura",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brasile",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "voglio vederli",
+        "pinyin": null,
+        "meaning": "quero vê-los"
+      },
+      {
+        "id": 4,
+        "word": "molte",
+        "pinyin": null,
+        "meaning": "muitas"
+      },
+      {
+        "id": 5,
+        "word": "belle donne",
+        "pinyin": null,
+        "meaning": "mulheres bonitas"
+      },
+      {
+        "id": 6,
+        "word": "cerimonia di apertura",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 7,
+        "word": "avrà",
+        "pinyin": null,
+        "meaning": "terá"
+      },
+      {
+        "id": 8,
+        "word": "sicuramente",
+        "pinyin": null,
+        "meaning": "certamente / com certeza"
+      },
+      {
+        "id": 9,
+        "word": "vivace",
+        "pinyin": null,
+        "meaning": "animado / vivaz"
+      },
+      {
+        "id": 10,
+        "word": "ballo di samba",
+        "pinyin": null,
+        "meaning": "dança de samba"
+      },
+      {
+        "id": 11,
+        "word": "Che data",
+        "pinyin": null,
+        "meaning": "Que dia / Que data"
+      }
+    ],
+    "id": "local-1772298917250-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il 14 giugno a San Paolo.",
+    "pinyin": null,
+    "translation": "A: Em 14 de junho em São Paulo.",
+    "tokens": [
+      "Il",
+      "14",
+      "giugno",
+      "a",
+      "San",
+      "Paolo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "giugno",
+        "pinyin": null,
+        "meaning": "junho"
+      },
+      {
+        "id": 2,
+        "word": "San Paolo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      }
+    ],
+    "id": "local-1772298917250-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: San Paolo? Perché non a Rio? Rio è la più famosa.",
+    "pinyin": null,
+    "translation": "B: São Paulo? Por que não no Rio? O Rio é a mais famosa.",
+    "tokens": [
+      "San",
+      "Paolo",
+      "?",
+      "Perché",
+      "non",
+      "a",
+      "Rio",
+      "?",
+      "Rio",
+      "è",
+      "la",
+      "più",
+      "famosa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "San Paolo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "Perché",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      },
+      {
+        "id": 4,
+        "word": "più famosa",
+        "pinyin": null,
+        "meaning": "mais famosa"
+      }
+    ],
+    "id": "local-1772298917250-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: San Paolo è una delle principali città del Brasile. Le finali si terranno a Rio.",
+    "pinyin": null,
+    "translation": "A: São Paulo é uma das principais cidades do Brasil. As finais acontecerão no Rio.",
+    "tokens": [
+      "San",
+      "Paolo",
+      "è",
+      "una",
+      "delle",
+      "principali",
+      "città",
+      "del",
+      "Brasile",
+      ".",
+      "Le",
+      "finali",
+      "si",
+      "terranno",
+      "a",
+      "Rio",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "San Paolo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "principali",
+        "pinyin": null,
+        "meaning": "principais"
+      },
+      {
+        "id": 3,
+        "word": "città",
+        "pinyin": null,
+        "meaning": "cidade"
+      },
+      {
+        "id": 4,
+        "word": "Brasile",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 5,
+        "word": "finali",
+        "pinyin": null,
+        "meaning": "finais"
+      },
+      {
+        "id": 6,
+        "word": "si terranno",
+        "pinyin": null,
+        "meaning": "serão realizadas / acontecerão"
+      },
+      {
+        "id": 7,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      }
+    ],
+    "id": "local-1772298917250-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Peccato che il fuso orario tra noi e il Brasile sia di 11 ore. Temo che questa volta dovremo rimanere svegli tutta la notte.",
+    "pinyin": null,
+    "translation": "B: Que pena que o fuso horário entre nós e o Brasil seja de 11 horas. Temo que desta vez teremos que ficar acordados a noite toda.",
+    "tokens": [
+      "Peccato",
+      "che",
+      "il",
+      "fuso",
+      "orario",
+      "tra",
+      "noi",
+      "e",
+      "il",
+      "Brasile",
+      "sia",
+      "di",
+      "11",
+      "ore",
+      ".",
+      "Temo",
+      "che",
+      "questa",
+      "volta",
+      "dovremo",
+      "rimanere",
+      "svegli",
+      "tutta",
+      "la",
+      "notte",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Peccato",
+        "pinyin": null,
+        "meaning": "Que pena / É uma pena"
+      },
+      {
+        "id": 2,
+        "word": "fuso orario",
+        "pinyin": null,
+        "meaning": "fuso horário"
+      },
+      {
+        "id": 3,
+        "word": "tra",
+        "pinyin": null,
+        "meaning": "entre"
+      },
+      {
+        "id": 4,
+        "word": "Brasile",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 5,
+        "word": "sia",
+        "pinyin": null,
+        "meaning": "seja"
+      },
+      {
+        "id": 6,
+        "word": "ore",
+        "pinyin": null,
+        "meaning": "horas"
+      },
+      {
+        "id": 7,
+        "word": "Temo",
+        "pinyin": null,
+        "meaning": "Temo / receio"
+      },
+      {
+        "id": 8,
+        "word": "questa volta",
+        "pinyin": null,
+        "meaning": "desta vez"
+      },
+      {
+        "id": 9,
+        "word": "dovremo",
+        "pinyin": null,
+        "meaning": "teremos que"
+      },
+      {
+        "id": 10,
+        "word": "rimanere svegli",
+        "pinyin": null,
+        "meaning": "ficar acordados"
+      },
+      {
+        "id": 11,
+        "word": "tutta la notte",
+        "pinyin": null,
+        "meaning": "a noite toda"
+      }
+    ],
+    "id": "local-1772298917250-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora devo andare prima al supermercato a fare scorta di Red Bull. Farò di tutto per guardare quelle belle ragazze!",
+    "pinyin": null,
+    "translation": "A: Então preciso ir primeiro ao supermercado fazer estoque de Red Bull. Farei de tudo para assistir àquelas garotas bonitas!",
+    "tokens": [
+      "Allora",
+      "devo",
+      "andare",
+      "prima",
+      "al",
+      "supermercato",
+      "a",
+      "fare",
+      "scorta",
+      "di",
+      "Red",
+      "Bull",
+      ".",
+      "Farò",
+      "di",
+      "tutto",
+      "per",
+      "guardare",
+      "quelle",
+      "belle",
+      "ragazze",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "devo andare",
+        "pinyin": null,
+        "meaning": "preciso ir / devo ir"
+      },
+      {
+        "id": 3,
+        "word": "prima",
+        "pinyin": null,
+        "meaning": "primeiro / antes"
+      },
+      {
+        "id": 4,
+        "word": "supermercato",
+        "pinyin": null,
+        "meaning": "supermercado"
+      },
+      {
+        "id": 5,
+        "word": "fare scorta",
+        "pinyin": null,
+        "meaning": "fazer estoque / estocar"
+      },
+      {
+        "id": 6,
+        "word": "Farò di tutto",
+        "pinyin": null,
+        "meaning": "Farei de tudo"
+      },
+      {
+        "id": 7,
+        "word": "per guardare",
+        "pinyin": null,
+        "meaning": "para assistir / para olhar"
+      },
+      {
+        "id": 8,
+        "word": "belle ragazze",
+        "pinyin": null,
+        "meaning": "garotas bonitas / moças bonitas"
+      }
+    ],
+    "id": "local-1772298917250-8",
+    "language": "Italiano"
+  }
+]

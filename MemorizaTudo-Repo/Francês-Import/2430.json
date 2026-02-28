@@ -1,0 +1,855 @@
+[
+  {
+    "chinese": "A: Qu'est-ce que tu regardes ?",
+    "pinyin": "",
+    "translation": "A: O que você está olhando?",
+    "tokens": [
+      "A:",
+      "Qu'est-ce",
+      "que",
+      "tu",
+      "regardes",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qu'est-ce que",
+        "pinyin": "",
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "tu",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "regardes",
+        "pinyin": "",
+        "meaning": "olha (verbo regarder)"
+      }
+    ],
+    "id": "local-1772297123305-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Un théâtre d'ombres.",
+    "pinyin": "",
+    "translation": "B: Um teatro de sombras.",
+    "tokens": [
+      "B:",
+      "Un",
+      "théâtre",
+      "d'ombres",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Un",
+        "pinyin": "",
+        "meaning": "Um"
+      },
+      {
+        "id": 2,
+        "word": "théâtre",
+        "pinyin": "",
+        "meaning": "teatro"
+      },
+      {
+        "id": 3,
+        "word": "ombres",
+        "pinyin": "",
+        "meaning": "sombras"
+      }
+    ],
+    "id": "local-1772297123305-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Comment se fait-il que je n'aie pas vu ça ?",
+    "pinyin": "",
+    "translation": "A: Como é que eu não vi isso?",
+    "tokens": [
+      "A:",
+      "Comment",
+      "se",
+      "fait-il",
+      "que",
+      "je",
+      "n'aie",
+      "pas",
+      "vu",
+      "ça",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Comment",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 2,
+        "word": "se fait-il que",
+        "pinyin": "",
+        "meaning": "como é que (expressão idiomática)"
+      },
+      {
+        "id": 3,
+        "word": "je",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "n'aie pas vu",
+        "pinyin": "",
+        "meaning": "não tenha visto (verbo voir no subjonctif passé)"
+      },
+      {
+        "id": 5,
+        "word": "ça",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772297123305-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est un art populaire traditionnel chinois. De nos jours, peu de gens le regardent.",
+    "pinyin": "",
+    "translation": "B: É uma arte popular tradicional chinesa. Hoje em dia, poucas pessoas a assistem.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "un",
+      "art",
+      "populaire",
+      "traditionnel",
+      "chinois",
+      ".",
+      "De",
+      "nos",
+      "jours",
+      ",",
+      "peu",
+      "de",
+      "gens",
+      "le",
+      "regardent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É (ce est)"
+      },
+      {
+        "id": 2,
+        "word": "un art",
+        "pinyin": "",
+        "meaning": "uma arte"
+      },
+      {
+        "id": 3,
+        "word": "populaire",
+        "pinyin": "",
+        "meaning": "popular"
+      },
+      {
+        "id": 4,
+        "word": "traditionnel",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 5,
+        "word": "chinois",
+        "pinyin": "",
+        "meaning": "chinês/chinesa"
+      },
+      {
+        "id": 6,
+        "word": "De nos jours",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 7,
+        "word": "peu de gens",
+        "pinyin": "",
+        "meaning": "poucas pessoas"
+      },
+      {
+        "id": 8,
+        "word": "le",
+        "pinyin": "",
+        "meaning": "o/a (pronome objeto direto)"
+      },
+      {
+        "id": 9,
+        "word": "regardent",
+        "pinyin": "",
+        "meaning": "assistem (verbo regarder)"
+      }
+    ],
+    "id": "local-1772297123305-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est une histoire de \"La Pérégrination vers l'Ouest\", n'est-ce pas ?",
+    "pinyin": "",
+    "translation": "A: É uma história de \"A Peregrinação para o Oeste\", não é?",
+    "tokens": [
+      "A:",
+      "C'est",
+      "une",
+      "histoire",
+      "de",
+      "\"",
+      "La",
+      "Pérégrination",
+      "vers",
+      "l'Ouest",
+      "\"",
+      ",",
+      "n'est-ce",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É (ce est)"
+      },
+      {
+        "id": 2,
+        "word": "une histoire",
+        "pinyin": "",
+        "meaning": "uma história"
+      },
+      {
+        "id": 3,
+        "word": "La Pérégrination vers l'Ouest",
+        "pinyin": "",
+        "meaning": "A Peregrinação para o Oeste (título)"
+      },
+      {
+        "id": 4,
+        "word": "n'est-ce pas",
+        "pinyin": "",
+        "meaning": "não é?, não é mesmo?"
+      }
+    ],
+    "id": "local-1772297123305-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. Ces personnages sont tous fabriqués à partir de peaux d'animaux ou de carton.",
+    "pinyin": "",
+    "translation": "B: Sim. Esses personagens são todos feitos de peles de animais ou de papelão.",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "Ces",
+      "personnages",
+      "sont",
+      "tous",
+      "fabriqués",
+      "à",
+      "partir",
+      "de",
+      "peaux",
+      "d'animaux",
+      "ou",
+      "de",
+      "carton",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Ces",
+        "pinyin": "",
+        "meaning": "Esses/Essas"
+      },
+      {
+        "id": 3,
+        "word": "personnages",
+        "pinyin": "",
+        "meaning": "personagens"
+      },
+      {
+        "id": 4,
+        "word": "sont",
+        "pinyin": "",
+        "meaning": "são (verbo être)"
+      },
+      {
+        "id": 5,
+        "word": "tous",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 6,
+        "word": "fabriqués à partir de",
+        "pinyin": "",
+        "meaning": "fabricados a partir de, feitos de"
+      },
+      {
+        "id": 7,
+        "word": "peaux",
+        "pinyin": "",
+        "meaning": "peles"
+      },
+      {
+        "id": 8,
+        "word": "animaux",
+        "pinyin": "",
+        "meaning": "animais"
+      },
+      {
+        "id": 9,
+        "word": "ou",
+        "pinyin": "",
+        "meaning": "ou"
+      },
+      {
+        "id": 10,
+        "word": "carton",
+        "pinyin": "",
+        "meaning": "papelão"
+      }
+    ],
+    "id": "local-1772297123305-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors comment bougent-ils ?",
+    "pinyin": "",
+    "translation": "A: Então como eles se movem?",
+    "tokens": [
+      "A:",
+      "Alors",
+      "comment",
+      "bougent-ils",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "comment",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "bougent-ils",
+        "pinyin": "",
+        "meaning": "eles se movem? (verbo bouger)"
+      }
+    ],
+    "id": "local-1772297123305-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il y a des gens qui les manipulent.",
+    "pinyin": "",
+    "translation": "B: Há pessoas que os manipulam.",
+    "tokens": [
+      "B:",
+      "Il",
+      "y",
+      "a",
+      "des",
+      "gens",
+      "qui",
+      "les",
+      "manipulent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il y a",
+        "pinyin": "",
+        "meaning": "Há, Existem"
+      },
+      {
+        "id": 2,
+        "word": "des gens",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "qui",
+        "pinyin": "",
+        "meaning": "que (pronome relativo)"
+      },
+      {
+        "id": 4,
+        "word": "les",
+        "pinyin": "",
+        "meaning": "os/as (pronome objeto direto)"
+      },
+      {
+        "id": 5,
+        "word": "manipulent",
+        "pinyin": "",
+        "meaning": "manipulam (verbo manipuler)"
+      }
+    ],
+    "id": "local-1772297123305-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est vraiment intéressant. Y a-t-il un endroit où je peux voir une représentation ?",
+    "pinyin": "",
+    "translation": "A: Isso é realmente interessante. Há um lugar onde eu possa ver uma apresentação?",
+    "tokens": [
+      "A:",
+      "C'est",
+      "vraiment",
+      "intéressant",
+      ".",
+      "Y",
+      "a-t-il",
+      "un",
+      "endroit",
+      "où",
+      "je",
+      "peux",
+      "voir",
+      "une",
+      "représentation",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "Isso é (ce est)"
+      },
+      {
+        "id": 2,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "intéressant",
+        "pinyin": "",
+        "meaning": "interessante"
+      },
+      {
+        "id": 4,
+        "word": "Y a-t-il",
+        "pinyin": "",
+        "meaning": "Há? (il y a na forma interrogativa)"
+      },
+      {
+        "id": 5,
+        "word": "un endroit",
+        "pinyin": "",
+        "meaning": "um lugar"
+      },
+      {
+        "id": 6,
+        "word": "où",
+        "pinyin": "",
+        "meaning": "onde"
+      },
+      {
+        "id": 7,
+        "word": "je",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 8,
+        "word": "peux",
+        "pinyin": "",
+        "meaning": "posso (verbo pouvoir)"
+      },
+      {
+        "id": 9,
+        "word": "voir",
+        "pinyin": "",
+        "meaning": "ver"
+      },
+      {
+        "id": 10,
+        "word": "une représentation",
+        "pinyin": "",
+        "meaning": "uma apresentação"
+      }
+    ],
+    "id": "local-1772297123305-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ne vas-tu pas à Pékin la semaine prochaine ? Pékin a un endroit appelé le \"Shichahai Shadow Art Performance Hotel\". Tu peux y aller pour l'expérimenter.",
+    "pinyin": "",
+    "translation": "B: Você não vai a Pequim na próxima semana? Pequim tem um lugar chamado \"Shichahai Shadow Art Performance Hotel\". Você pode ir lá para experimentá-lo.",
+    "tokens": [
+      "B:",
+      "Ne",
+      "vas-tu",
+      "pas",
+      "à",
+      "Pékin",
+      "la",
+      "semaine",
+      "prochaine",
+      "?",
+      "Pékin",
+      "a",
+      "un",
+      "endroit",
+      "appelé",
+      "le",
+      "\"",
+      "Shichahai",
+      "Shadow",
+      "Art",
+      "Performance",
+      "Hotel",
+      "\"",
+      ".",
+      "Tu",
+      "peux",
+      "y",
+      "aller",
+      "pour",
+      "l'expérimenter",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ne... pas",
+        "pinyin": "",
+        "meaning": "não (negation)"
+      },
+      {
+        "id": 2,
+        "word": "vas-tu",
+        "pinyin": "",
+        "meaning": "você vai? (verbo aller)"
+      },
+      {
+        "id": 3,
+        "word": "Pékin",
+        "pinyin": "",
+        "meaning": "Pequim"
+      },
+      {
+        "id": 4,
+        "word": "la semaine prochaine",
+        "pinyin": "",
+        "meaning": "na próxima semana"
+      },
+      {
+        "id": 5,
+        "word": "a",
+        "pinyin": "",
+        "meaning": "tem (verbo avoir)"
+      },
+      {
+        "id": 6,
+        "word": "un endroit",
+        "pinyin": "",
+        "meaning": "um lugar"
+      },
+      {
+        "id": 7,
+        "word": "appelé",
+        "pinyin": "",
+        "meaning": "chamado"
+      },
+      {
+        "id": 8,
+        "word": "Shichahai Shadow Art Performance Hotel",
+        "pinyin": "",
+        "meaning": "Shichahai Shadow Art Performance Hotel (nome próprio)"
+      },
+      {
+        "id": 9,
+        "word": "Tu",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 10,
+        "word": "peux",
+        "pinyin": "",
+        "meaning": "pode (verbo pouvoir)"
+      },
+      {
+        "id": 11,
+        "word": "y aller",
+        "pinyin": "",
+        "meaning": "ir lá"
+      },
+      {
+        "id": 12,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 13,
+        "word": "l'expérimenter",
+        "pinyin": "",
+        "meaning": "experimentá-lo (verbo expérimenter)"
+      }
+    ],
+    "id": "local-1772297123305-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'irai certainement. Je me demande si je peux apprendre à monter un théâtre d'ombres.",
+    "pinyin": "",
+    "translation": "A: Eu irei, com certeza. Eu me pergunto se consigo aprender a montar um teatro de sombras.",
+    "tokens": [
+      "A:",
+      "J'irai",
+      "certainement",
+      ".",
+      "Je",
+      "me",
+      "demande",
+      "si",
+      "je",
+      "peux",
+      "apprendre",
+      "à",
+      "monter",
+      "un",
+      "théâtre",
+      "d'ombres",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'irai",
+        "pinyin": "",
+        "meaning": "Eu irei (verbo aller no futuro simples)"
+      },
+      {
+        "id": 2,
+        "word": "certainement",
+        "pinyin": "",
+        "meaning": "certamente, com certeza"
+      },
+      {
+        "id": 3,
+        "word": "Je me demande",
+        "pinyin": "",
+        "meaning": "Eu me pergunto (verbo se demander)"
+      },
+      {
+        "id": 4,
+        "word": "si",
+        "pinyin": "",
+        "meaning": "se"
+      },
+      {
+        "id": 5,
+        "word": "je peux",
+        "pinyin": "",
+        "meaning": "eu posso, eu consigo"
+      },
+      {
+        "id": 6,
+        "word": "apprendre à",
+        "pinyin": "",
+        "meaning": "aprender a"
+      },
+      {
+        "id": 7,
+        "word": "monter",
+        "pinyin": "",
+        "meaning": "montar, organizar"
+      },
+      {
+        "id": 8,
+        "word": "un théâtre d'ombres",
+        "pinyin": "",
+        "meaning": "um teatro de sombras"
+      }
+    ],
+    "id": "local-1772297123305-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Pas de problème. Mon ami américain a produit son propre théâtre d'ombres. La prochaine fois, je te le présenterai.",
+    "pinyin": "",
+    "translation": "B: Sem problemas. Meu amigo americano produziu seu próprio teatro de sombras. Da próxima vez, eu o apresentarei a você.",
+    "tokens": [
+      "B:",
+      "Pas",
+      "de",
+      "problème",
+      ".",
+      "Mon",
+      "ami",
+      "américain",
+      "a",
+      "produit",
+      "son",
+      "propre",
+      "théâtre",
+      "d'ombres",
+      ".",
+      "La",
+      "prochaine",
+      "fois",
+      ",",
+      "je",
+      "te",
+      "le",
+      "présenterai",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas de problème",
+        "pinyin": "",
+        "meaning": "Sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "Mon",
+        "pinyin": "",
+        "meaning": "Meu"
+      },
+      {
+        "id": 3,
+        "word": "ami",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "américain",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 5,
+        "word": "a produit",
+        "pinyin": "",
+        "meaning": "produziu (verbo produire)"
+      },
+      {
+        "id": 6,
+        "word": "son propre",
+        "pinyin": "",
+        "meaning": "seu próprio"
+      },
+      {
+        "id": 7,
+        "word": "théâtre d'ombres",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 8,
+        "word": "La prochaine fois",
+        "pinyin": "",
+        "meaning": "Da próxima vez"
+      },
+      {
+        "id": 9,
+        "word": "je",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 10,
+        "word": "te",
+        "pinyin": "",
+        "meaning": "a você, te"
+      },
+      {
+        "id": 11,
+        "word": "le",
+        "pinyin": "",
+        "meaning": "o (pronome objeto direto)"
+      },
+      {
+        "id": 12,
+        "word": "présenterai",
+        "pinyin": "",
+        "meaning": "apresentarei (verbo présenter no futuro simples)"
+      }
+    ],
+    "id": "local-1772297123305-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: D'accord, alors c'est réglé.",
+    "pinyin": "",
+    "translation": "A: De acordo, então está resolvido.",
+    "tokens": [
+      "A:",
+      "D'accord",
+      ",",
+      "alors",
+      "c'est",
+      "réglé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo, Ok"
+      },
+      {
+        "id": 2,
+        "word": "alors",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "c'est réglé",
+        "pinyin": "",
+        "meaning": "está resolvido, está combinado"
+      }
+    ],
+    "id": "local-1772297123305-12",
+    "language": "Francês"
+  }
+]

@@ -1,0 +1,628 @@
+[
+  {
+    "chinese": "A: Hello, are you buying wine?",
+    "pinyin": null,
+    "translation": "A: Olá, você está comprando vinho?",
+    "tokens": [
+      "Hello",
+      "are",
+      "you",
+      "buying",
+      "wine"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hello",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "buying",
+        "pinyin": null,
+        "meaning": "comprando"
+      },
+      {
+        "id": 3,
+        "word": "wine",
+        "pinyin": null,
+        "meaning": "vinho"
+      }
+    ],
+    "id": "local-1772293963614-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yeah. A foreign friend is celebrating his birthday.",
+    "pinyin": null,
+    "translation": "B: Sim. Um amigo estrangeiro está celebrando o aniversário dele.",
+    "tokens": [
+      "Yeah",
+      "A",
+      "foreign",
+      "friend",
+      "is",
+      "celebrating",
+      "his",
+      "birthday"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yeah",
+        "pinyin": null,
+        "meaning": "Sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "foreign",
+        "pinyin": null,
+        "meaning": "estrangeiro(a)"
+      },
+      {
+        "id": 3,
+        "word": "celebrating",
+        "pinyin": null,
+        "meaning": "celebrando"
+      },
+      {
+        "id": 4,
+        "word": "birthday",
+        "pinyin": null,
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772293963614-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Does she like red wine or white wine?",
+    "pinyin": null,
+    "translation": "A: Ela gosta de vinho tinto ou vinho branco?",
+    "tokens": [
+      "Does",
+      "she",
+      "like",
+      "red",
+      "wine",
+      "or",
+      "white",
+      "wine"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "like",
+        "pinyin": null,
+        "meaning": "gostar"
+      },
+      {
+        "id": 2,
+        "word": "red wine",
+        "pinyin": null,
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 3,
+        "word": "white wine",
+        "pinyin": null,
+        "meaning": "vinho branco"
+      }
+    ],
+    "id": "local-1772293963614-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Red wine.",
+    "pinyin": null,
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "Red",
+      "wine"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Red wine",
+        "pinyin": null,
+        "meaning": "Vinho tinto"
+      }
+    ],
+    "id": "local-1772293963614-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Ok. Here we have both New World wines and Old World wines.",
+    "pinyin": null,
+    "translation": "A: Ok. Aqui temos vinhos do Novo Mundo e vinhos do Velho Mundo.",
+    "tokens": [
+      "Ok",
+      "Here",
+      "we",
+      "have",
+      "both",
+      "New",
+      "World",
+      "wines",
+      "and",
+      "Old",
+      "World",
+      "wines"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "New World wines",
+        "pinyin": null,
+        "meaning": "Vinhos do Novo Mundo"
+      },
+      {
+        "id": 2,
+        "word": "Old World wines",
+        "pinyin": null,
+        "meaning": "Vinhos do Velho Mundo"
+      }
+    ],
+    "id": "local-1772293963614-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Normally I don't drink wine, so I am not too savvy.",
+    "pinyin": null,
+    "translation": "B: Normalmente não bebo vinho, então não sou muito entendido/experiente.",
+    "tokens": [
+      "Normally",
+      "I",
+      "don't",
+      "drink",
+      "wine",
+      "so",
+      "I",
+      "am",
+      "not",
+      "too",
+      "savvy"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Normally",
+        "pinyin": null,
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 2,
+        "word": "drink",
+        "pinyin": null,
+        "meaning": "beber"
+      },
+      {
+        "id": 3,
+        "word": "savvy",
+        "pinyin": null,
+        "meaning": "entendido(a), experiente"
+      }
+    ],
+    "id": "local-1772293963614-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No problem.",
+    "pinyin": null,
+    "translation": "A: Sem problemas.",
+    "tokens": [
+      "No",
+      "problem"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No problem",
+        "pinyin": null,
+        "meaning": "Sem problemas"
+      }
+    ],
+    "id": "local-1772293963614-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: \"Old World\" mainly refers to countries such as France, Italy, and Spain that have hundreds of years of history in traditional wine making.",
+    "pinyin": null,
+    "translation": "A: \"Velho Mundo\" refere-se principalmente a países como França, Itália e Espanha que têm centenas de anos de história na produção tradicional de vinho.",
+    "tokens": [
+      "Old",
+      "World",
+      "mainly",
+      "refers",
+      "to",
+      "countries",
+      "such",
+      "as",
+      "France",
+      "Italy",
+      "and",
+      "Spain",
+      "that",
+      "have",
+      "hundreds",
+      "of",
+      "years",
+      "of",
+      "history",
+      "in",
+      "traditional",
+      "wine",
+      "making"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Old World",
+        "pinyin": null,
+        "meaning": "Velho Mundo (em viticultura)"
+      },
+      {
+        "id": 2,
+        "word": "mainly",
+        "pinyin": null,
+        "meaning": "principalmente"
+      },
+      {
+        "id": 3,
+        "word": "refers to",
+        "pinyin": null,
+        "meaning": "refere-se a"
+      },
+      {
+        "id": 4,
+        "word": "hundreds of years",
+        "pinyin": null,
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 5,
+        "word": "traditional",
+        "pinyin": null,
+        "meaning": "tradicional"
+      },
+      {
+        "id": 6,
+        "word": "wine making",
+        "pinyin": null,
+        "meaning": "produção de vinho"
+      }
+    ],
+    "id": "local-1772293963614-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "But \"New World\" refers to countries like the United States, Canada, Argentina, Australia that are new to wine making.",
+    "pinyin": null,
+    "translation": "Mas \"Novo Mundo\" refere-se a países como Estados Unidos, Canadá, Argentina, Austrália que são novos na produção de vinho.",
+    "tokens": [
+      "But",
+      "New",
+      "World",
+      "refers",
+      "to",
+      "countries",
+      "like",
+      "the",
+      "United",
+      "States",
+      "Canada",
+      "Argentina",
+      "Australia",
+      "that",
+      "are",
+      "new",
+      "to",
+      "wine",
+      "making"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "New World",
+        "pinyin": null,
+        "meaning": "Novo Mundo (em viticultura)"
+      },
+      {
+        "id": 2,
+        "word": "refers to",
+        "pinyin": null,
+        "meaning": "refere-se a"
+      },
+      {
+        "id": 3,
+        "word": "new to",
+        "pinyin": null,
+        "meaning": "novo(a) em, iniciante em"
+      },
+      {
+        "id": 4,
+        "word": "wine making",
+        "pinyin": null,
+        "meaning": "produção de vinho"
+      }
+    ],
+    "id": "local-1772293963614-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then is there any difference in the taste?",
+    "pinyin": null,
+    "translation": "B: Então, há alguma diferença no sabor?",
+    "tokens": [
+      "Then",
+      "is",
+      "there",
+      "any",
+      "difference",
+      "in",
+      "the",
+      "taste"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "difference",
+        "pinyin": null,
+        "meaning": "diferença"
+      },
+      {
+        "id": 2,
+        "word": "taste",
+        "pinyin": null,
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772293963614-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yes. The Old World wine is quite acidic, because the tannin content is higher.",
+    "pinyin": null,
+    "translation": "A: Sim. O vinho do Velho Mundo é bastante ácido, porque o teor de tanino é maior.",
+    "tokens": [
+      "Yes",
+      "The",
+      "Old",
+      "World",
+      "wine",
+      "is",
+      "quite",
+      "acidic",
+      "because",
+      "the",
+      "tannin",
+      "content",
+      "is",
+      "higher"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Old World wine",
+        "pinyin": null,
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 2,
+        "word": "quite",
+        "pinyin": null,
+        "meaning": "bastante, muito"
+      },
+      {
+        "id": 3,
+        "word": "acidic",
+        "pinyin": null,
+        "meaning": "ácido"
+      },
+      {
+        "id": 4,
+        "word": "tannin",
+        "pinyin": null,
+        "meaning": "tanino"
+      },
+      {
+        "id": 5,
+        "word": "content",
+        "pinyin": null,
+        "meaning": "teor, conteúdo"
+      },
+      {
+        "id": 6,
+        "word": "higher",
+        "pinyin": null,
+        "meaning": "maior"
+      }
+    ],
+    "id": "local-1772293963614-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "New World wine is relatively sweet as the tannin is less.",
+    "pinyin": null,
+    "translation": "O vinho do Novo Mundo é relativamente doce, pois o tanino é menor.",
+    "tokens": [
+      "New",
+      "World",
+      "wine",
+      "is",
+      "relatively",
+      "sweet",
+      "as",
+      "the",
+      "tannin",
+      "is",
+      "less"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "New World wine",
+        "pinyin": null,
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 2,
+        "word": "relatively",
+        "pinyin": null,
+        "meaning": "relativamente"
+      },
+      {
+        "id": 3,
+        "word": "sweet",
+        "pinyin": null,
+        "meaning": "doce"
+      },
+      {
+        "id": 4,
+        "word": "tannin",
+        "pinyin": null,
+        "meaning": "tanino"
+      },
+      {
+        "id": 5,
+        "word": "less",
+        "pinyin": null,
+        "meaning": "menor"
+      }
+    ],
+    "id": "local-1772293963614-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh, I've heard that girls like fruity-tasting wines more.",
+    "pinyin": null,
+    "translation": "B: Ah, ouvi dizer que as garotas gostam mais de vinhos com sabor frutado.",
+    "tokens": [
+      "Oh",
+      "I've",
+      "heard",
+      "that",
+      "girls",
+      "like",
+      "fruity-tasting",
+      "wines",
+      "more"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "heard",
+        "pinyin": null,
+        "meaning": "ouvi (passado de 'hear')"
+      },
+      {
+        "id": 2,
+        "word": "girls",
+        "pinyin": null,
+        "meaning": "garotas"
+      },
+      {
+        "id": 3,
+        "word": "fruity-tasting",
+        "pinyin": null,
+        "meaning": "com sabor frutado"
+      },
+      {
+        "id": 4,
+        "word": "more",
+        "pinyin": null,
+        "meaning": "mais"
+      }
+    ],
+    "id": "local-1772293963614-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Uh-huh. This kind of wine that we have is especially good for girls. It sells really well.",
+    "pinyin": null,
+    "translation": "A: Uh-huh (Sim). Este tipo de vinho que temos é especialmente bom para garotas. Ele vende muito bem.",
+    "tokens": [
+      "Uh-huh",
+      "This",
+      "kind",
+      "of",
+      "wine",
+      "that",
+      "we",
+      "have",
+      "is",
+      "especially",
+      "good",
+      "for",
+      "girls",
+      "It",
+      "sells",
+      "really",
+      "well"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Uh-huh",
+        "pinyin": null,
+        "meaning": "Sim (interjeição de concordância)"
+      },
+      {
+        "id": 2,
+        "word": "kind of",
+        "pinyin": null,
+        "meaning": "tipo de"
+      },
+      {
+        "id": 3,
+        "word": "especially",
+        "pinyin": null,
+        "meaning": "especialmente"
+      },
+      {
+        "id": 4,
+        "word": "sells",
+        "pinyin": null,
+        "meaning": "vende"
+      },
+      {
+        "id": 5,
+        "word": "really well",
+        "pinyin": null,
+        "meaning": "muito bem"
+      }
+    ],
+    "id": "local-1772293963614-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Ok, then it's this bottle. Thanks!",
+    "pinyin": null,
+    "translation": "B: Ok, então é esta garrafa. Obrigado!",
+    "tokens": [
+      "Ok",
+      "then",
+      "it's",
+      "this",
+      "bottle",
+      "Thanks"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bottle",
+        "pinyin": null,
+        "meaning": "garrafa"
+      },
+      {
+        "id": 2,
+        "word": "Thanks",
+        "pinyin": null,
+        "meaning": "Obrigado(a)"
+      }
+    ],
+    "id": "local-1772293963614-14",
+    "language": "Inglês"
+  }
+]

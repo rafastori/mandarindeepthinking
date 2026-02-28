@@ -1,0 +1,518 @@
+[
+  {
+    "chinese": "A: Hey, c'est quoi ce logiciel que tu utilises ?",
+    "pinyin": "",
+    "translation": "A: Ei, o que é esse software que você usa?",
+    "tokens": [
+      "A",
+      ":",
+      "Hey",
+      ",",
+      "c'est",
+      "quoi",
+      "ce",
+      "logiciel",
+      "que",
+      "tu",
+      "utilises",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "logiciel",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 2,
+        "word": "utilises",
+        "pinyin": "",
+        "meaning": "usa, utiliza (verbo 'utiliser')"
+      }
+    ],
+    "id": "local-1772298240393-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Google Drive.",
+    "pinyin": "",
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "B",
+      ":",
+      "Google",
+      "Drive",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772298240393-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je n'en ai jamais entendu parler. À quoi ça te sert ?",
+    "pinyin": "",
+    "translation": "A: Eu nunca ouvi falar disso. Para que isso serve para você?",
+    "tokens": [
+      "A",
+      ":",
+      "Je",
+      "n'en",
+      "ai",
+      "jamais",
+      "entendu",
+      "parler",
+      ".",
+      "À",
+      "quoi",
+      "ça",
+      "te",
+      "sert",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jamais",
+        "pinyin": "",
+        "meaning": "nunca"
+      },
+      {
+        "id": 2,
+        "word": "entendu parler",
+        "pinyin": "",
+        "meaning": "ouvir falar"
+      },
+      {
+        "id": 3,
+        "word": "sert",
+        "pinyin": "",
+        "meaning": "serve (verbo 'servir')"
+      }
+    ],
+    "id": "local-1772298240393-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est un outil en ligne très pratique et gratuit pour les documents. Tu peux y stocker et partager des fichiers.",
+    "pinyin": "",
+    "translation": "B: É uma ferramenta online muito prática e gratuita para documentos. Você pode armazenar e compartilhar arquivos nela.",
+    "tokens": [
+      "B",
+      ":",
+      "C'est",
+      "un",
+      "outil",
+      "en",
+      "ligne",
+      "très",
+      "pratique",
+      "et",
+      "gratuit",
+      "pour",
+      "les",
+      "documents",
+      ".",
+      "Tu",
+      "peux",
+      "y",
+      "stocker",
+      "et",
+      "partager",
+      "des",
+      "fichiers",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "outil",
+        "pinyin": "",
+        "meaning": "ferramenta"
+      },
+      {
+        "id": 2,
+        "word": "en ligne",
+        "pinyin": "",
+        "meaning": "online"
+      },
+      {
+        "id": 3,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático/a"
+      },
+      {
+        "id": 4,
+        "word": "gratuit",
+        "pinyin": "",
+        "meaning": "gratuito/a"
+      },
+      {
+        "id": 5,
+        "word": "documents",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 6,
+        "word": "stocker",
+        "pinyin": "",
+        "meaning": "armazenar"
+      },
+      {
+        "id": 7,
+        "word": "partager",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 8,
+        "word": "fichiers",
+        "pinyin": "",
+        "meaning": "arquivos"
+      }
+    ],
+    "id": "local-1772298240393-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est pratique ?",
+    "pinyin": "",
+    "translation": "A: É prático?",
+    "tokens": [
+      "A",
+      ":",
+      "C'est",
+      "pratique",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático/a"
+      }
+    ],
+    "id": "local-1772298240393-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est très pratique. De nos jours, il existe de nombreux logiciels de stockage en nuage de ce type. Par exemple, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "pinyin": "",
+    "translation": "B: É muito prático. Hoje em dia, existem muitos softwares de armazenamento em nuvem desse tipo. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "B",
+      ":",
+      "C'est",
+      "très",
+      "pratique",
+      ".",
+      "De",
+      "nos",
+      "jours",
+      ",",
+      "il",
+      "existe",
+      "de",
+      "nombreux",
+      "logiciels",
+      "de",
+      "stockage",
+      "en",
+      "nuage",
+      "de",
+      "ce",
+      "type",
+      ".",
+      "Par",
+      "exemple",
+      ",",
+      "Baidu",
+      "Cloud",
+      ",",
+      "SkyDrive",
+      ",",
+      "Dropbox",
+      ",",
+      "etc",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "très",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático/a"
+      },
+      {
+        "id": 3,
+        "word": "De nos jours",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 4,
+        "word": "existe",
+        "pinyin": "",
+        "meaning": "existe (verbo 'exister')"
+      },
+      {
+        "id": 5,
+        "word": "nombreux",
+        "pinyin": "",
+        "meaning": "numerosos/as, muitos/as"
+      },
+      {
+        "id": 6,
+        "word": "logiciels",
+        "pinyin": "",
+        "meaning": "softwares"
+      },
+      {
+        "id": 7,
+        "word": "stockage",
+        "pinyin": "",
+        "meaning": "armazenamento"
+      },
+      {
+        "id": 8,
+        "word": "en nuage",
+        "pinyin": "",
+        "meaning": "em nuvem"
+      },
+      {
+        "id": 9,
+        "word": "type",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 10,
+        "word": "Par exemple",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      }
+    ],
+    "id": "local-1772298240393-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Qu'est-ce que le stockage en nuage ?",
+    "pinyin": "",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "A",
+      ":",
+      "Qu'est-ce",
+      "que",
+      "le",
+      "stockage",
+      "en",
+      "nuage",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stockage",
+        "pinyin": "",
+        "meaning": "armazenamento"
+      },
+      {
+        "id": 2,
+        "word": "en nuage",
+        "pinyin": "",
+        "meaning": "em nuvem"
+      }
+    ],
+    "id": "local-1772298240393-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: En bref, c'est mettre tes fichiers sur le lecteur en nuage de Google. Ensuite, tant que tu es connecté, tu peux utiliser ces documents sur différents appareils.",
+    "pinyin": "",
+    "translation": "B: Em resumo, é colocar seus arquivos no drive em nuvem do Google. Em seguida, contanto que você esteja conectado, você pode usar esses documentos em diferentes dispositivos.",
+    "tokens": [
+      "B",
+      ":",
+      "En",
+      "bref",
+      ",",
+      "c'est",
+      "mettre",
+      "tes",
+      "fichiers",
+      "sur",
+      "le",
+      "lecteur",
+      "en",
+      "nuage",
+      "de",
+      "Google",
+      ".",
+      "Ensuite",
+      ",",
+      "tant",
+      "que",
+      "tu",
+      "es",
+      "connecté",
+      ",",
+      "tu",
+      "peux",
+      "utiliser",
+      "ces",
+      "documents",
+      "sur",
+      "différents",
+      "appareils",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En bref",
+        "pinyin": "",
+        "meaning": "Em resumo"
+      },
+      {
+        "id": 2,
+        "word": "mettre",
+        "pinyin": "",
+        "meaning": "colocar"
+      },
+      {
+        "id": 3,
+        "word": "fichiers",
+        "pinyin": "",
+        "meaning": "arquivos"
+      },
+      {
+        "id": 4,
+        "word": "lecteur",
+        "pinyin": "",
+        "meaning": "leitor, drive"
+      },
+      {
+        "id": 5,
+        "word": "en nuage",
+        "pinyin": "",
+        "meaning": "em nuvem"
+      },
+      {
+        "id": 6,
+        "word": "Ensuite",
+        "pinyin": "",
+        "meaning": "Em seguida"
+      },
+      {
+        "id": 7,
+        "word": "tant que",
+        "pinyin": "",
+        "meaning": "contanto que"
+      },
+      {
+        "id": 8,
+        "word": "connecté",
+        "pinyin": "",
+        "meaning": "conectado/a"
+      },
+      {
+        "id": 9,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 10,
+        "word": "documents",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 11,
+        "word": "différents",
+        "pinyin": "",
+        "meaning": "diferentes"
+      },
+      {
+        "id": 12,
+        "word": "appareils",
+        "pinyin": "",
+        "meaning": "dispositivos"
+      }
+    ],
+    "id": "local-1772298240393-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors je n'ai pas besoin d'utiliser de mémoire. C'est tellement pratique.",
+    "pinyin": "",
+    "translation": "A: Então não preciso usar memória. É tão prático.",
+    "tokens": [
+      "A",
+      ":",
+      "Alors",
+      "je",
+      "n'ai",
+      "pas",
+      "besoin",
+      "d'utiliser",
+      "de",
+      "mémoire",
+      ".",
+      "C'est",
+      "tellement",
+      "pratique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "besoin",
+        "pinyin": "",
+        "meaning": "necessidade (na expressão 'avoir besoin de', precisar de)"
+      },
+      {
+        "id": 3,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "mémoire",
+        "pinyin": "",
+        "meaning": "memória"
+      },
+      {
+        "id": 5,
+        "word": "tellement",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 6,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático/a"
+      }
+    ],
+    "id": "local-1772298240393-8",
+    "language": "Francês"
+  }
+]

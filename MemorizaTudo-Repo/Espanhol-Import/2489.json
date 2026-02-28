@@ -1,0 +1,583 @@
+[
+  {
+    "chinese": "Estoy tan enojado. Todo el día dices que esto o aquello sobre mí no está bien.",
+    "pinyin": null,
+    "translation": "Estou tão bravo. O dia todo você diz que isso ou aquilo sobre mim não está certo.",
+    "tokens": [
+      "Estoy",
+      "tan",
+      "enojado",
+      ".",
+      "Todo",
+      "el",
+      "día",
+      "dices",
+      "que",
+      "esto",
+      "o",
+      "aquello",
+      "sobre",
+      "mí",
+      "no",
+      "está",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Estoy",
+        "pinyin": null,
+        "meaning": "Eu estou"
+      },
+      {
+        "id": 2,
+        "word": "enojado",
+        "pinyin": null,
+        "meaning": "bravo, zangado"
+      },
+      {
+        "id": 3,
+        "word": "Todo el día",
+        "pinyin": null,
+        "meaning": "O dia todo"
+      },
+      {
+        "id": 4,
+        "word": "dices",
+        "pinyin": null,
+        "meaning": "você diz (do verbo 'decir')"
+      },
+      {
+        "id": 5,
+        "word": "esto",
+        "pinyin": null,
+        "meaning": "isso"
+      },
+      {
+        "id": 6,
+        "word": "aquello",
+        "pinyin": null,
+        "meaning": "aquilo"
+      },
+      {
+        "id": 7,
+        "word": "sobre",
+        "pinyin": null,
+        "meaning": "sobre"
+      },
+      {
+        "id": 8,
+        "word": "no está bien",
+        "pinyin": null,
+        "meaning": "não está certo, não está bom"
+      }
+    ],
+    "id": "local-1772301484871-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿De verdad hay esposas como tú? Si salgo con amigos a comer, hasta tienes que hacer preguntas detalladas.",
+    "pinyin": null,
+    "translation": "É verdade que existem esposas como você? Se eu saio para comer com amigos, você até tem que fazer perguntas detalhadas.",
+    "tokens": [
+      "¿",
+      "De",
+      "verdad",
+      "hay",
+      "esposas",
+      "como",
+      "tú",
+      "?",
+      "Si",
+      "salgo",
+      "con",
+      "amigos",
+      "a",
+      "comer",
+      ",",
+      "hasta",
+      "tienes",
+      "que",
+      "hacer",
+      "preguntas",
+      "detalladas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De verdad",
+        "pinyin": null,
+        "meaning": "De verdade, É sério"
+      },
+      {
+        "id": 2,
+        "word": "hay",
+        "pinyin": null,
+        "meaning": "há, existem (do verbo 'haber')"
+      },
+      {
+        "id": 3,
+        "word": "esposas",
+        "pinyin": null,
+        "meaning": "esposas"
+      },
+      {
+        "id": 4,
+        "word": "salgo",
+        "pinyin": null,
+        "meaning": "eu saio (do verbo 'salir')"
+      },
+      {
+        "id": 5,
+        "word": "a comer",
+        "pinyin": null,
+        "meaning": "para comer"
+      },
+      {
+        "id": 6,
+        "word": "hasta",
+        "pinyin": null,
+        "meaning": "até"
+      },
+      {
+        "id": 7,
+        "word": "tienes que",
+        "pinyin": null,
+        "meaning": "você tem que"
+      },
+      {
+        "id": 8,
+        "word": "hacer preguntas",
+        "pinyin": null,
+        "meaning": "fazer perguntas"
+      },
+      {
+        "id": 9,
+        "word": "detalladas",
+        "pinyin": null,
+        "meaning": "detalhadas"
+      }
+    ],
+    "id": "local-1772301484871-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Cada mensaje que la secretaria me envía tienes que examinar. ¿Estás siendo razonable?!",
+    "pinyin": null,
+    "translation": "Cada mensagem que a secretária me envia você tem que examinar. Você está sendo razoável?!",
+    "tokens": [
+      "Cada",
+      "mensaje",
+      "que",
+      "la",
+      "secretaria",
+      "me",
+      "envía",
+      "tienes",
+      "que",
+      "examinar",
+      ".",
+      "¿",
+      "Estás",
+      "siendo",
+      "razonable",
+      "?",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cada",
+        "pinyin": null,
+        "meaning": "Cada"
+      },
+      {
+        "id": 2,
+        "word": "mensaje",
+        "pinyin": null,
+        "meaning": "mensagem"
+      },
+      {
+        "id": 3,
+        "word": "secretaria",
+        "pinyin": null,
+        "meaning": "secretária"
+      },
+      {
+        "id": 4,
+        "word": "envía",
+        "pinyin": null,
+        "meaning": "envia (do verbo 'enviar')"
+      },
+      {
+        "id": 5,
+        "word": "tienes que",
+        "pinyin": null,
+        "meaning": "você tem que"
+      },
+      {
+        "id": 6,
+        "word": "examinar",
+        "pinyin": null,
+        "meaning": "examinar"
+      },
+      {
+        "id": 7,
+        "word": "Estás siendo",
+        "pinyin": null,
+        "meaning": "Você está sendo"
+      },
+      {
+        "id": 8,
+        "word": "razonable",
+        "pinyin": null,
+        "meaning": "razoável"
+      }
+    ],
+    "id": "local-1772301484871-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "La última vez que celebré mi cumpleaños, compraste un pastel tan caro sin consultarme. ¡Realmente está yendo demasiado lejos!",
+    "pinyin": null,
+    "translation": "A última vez que celebrei meu aniversário, você comprou um bolo tão caro sem me consultar. Realmente está indo longe demais!",
+    "tokens": [
+      "La",
+      "última",
+      "vez",
+      "que",
+      "celebré",
+      "mi",
+      "cumpleaños",
+      ",",
+      "compraste",
+      "un",
+      "pastel",
+      "tan",
+      "caro",
+      "sin",
+      "consultarme",
+      ".",
+      "¡",
+      "Realmente",
+      "está",
+      "yendo",
+      "demasiado",
+      "lejos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La última vez",
+        "pinyin": null,
+        "meaning": "A última vez"
+      },
+      {
+        "id": 2,
+        "word": "celebré",
+        "pinyin": null,
+        "meaning": "eu celebrei (do verbo 'celebrar')"
+      },
+      {
+        "id": 3,
+        "word": "cumpleaños",
+        "pinyin": null,
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "compraste",
+        "pinyin": null,
+        "meaning": "você comprou (do verbo 'comprar')"
+      },
+      {
+        "id": 5,
+        "word": "pastel",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "caro",
+        "pinyin": null,
+        "meaning": "caro"
+      },
+      {
+        "id": 7,
+        "word": "sin consultarme",
+        "pinyin": null,
+        "meaning": "sem me consultar"
+      },
+      {
+        "id": 8,
+        "word": "Realmente",
+        "pinyin": null,
+        "meaning": "Realmente"
+      },
+      {
+        "id": 9,
+        "word": "yendo",
+        "pinyin": null,
+        "meaning": "indo (do verbo 'ir')"
+      },
+      {
+        "id": 10,
+        "word": "demasiado lejos",
+        "pinyin": null,
+        "meaning": "longe demais"
+      }
+    ],
+    "id": "local-1772301484871-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Incluso cuando estoy viendo un partido de fútbol, tienes que pelear por el control remoto de la televisión. ¡No lo soporto!",
+    "pinyin": null,
+    "translation": "Mesmo quando estou assistindo a um jogo de futebol, você tem que brigar pelo controle remoto da televisão. Não aguento!",
+    "tokens": [
+      "Incluso",
+      "cuando",
+      "estoy",
+      "viendo",
+      "un",
+      "partido",
+      "de",
+      "fútbol",
+      ",",
+      "tienes",
+      "que",
+      "pelear",
+      "por",
+      "el",
+      "control",
+      "remoto",
+      "de",
+      "la",
+      "televisión",
+      ".",
+      "¡",
+      "No",
+      "lo",
+      "soporto",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Incluso",
+        "pinyin": null,
+        "meaning": "Inclusive, Mesmo"
+      },
+      {
+        "id": 2,
+        "word": "estoy viendo",
+        "pinyin": null,
+        "meaning": "estou assistindo"
+      },
+      {
+        "id": 3,
+        "word": "partido de fútbol",
+        "pinyin": null,
+        "meaning": "jogo de futebol"
+      },
+      {
+        "id": 4,
+        "word": "tienes que",
+        "pinyin": null,
+        "meaning": "você tem que"
+      },
+      {
+        "id": 5,
+        "word": "pelear",
+        "pinyin": null,
+        "meaning": "brigar, lutar"
+      },
+      {
+        "id": 6,
+        "word": "control remoto",
+        "pinyin": null,
+        "meaning": "controle remoto"
+      },
+      {
+        "id": 7,
+        "word": "televisión",
+        "pinyin": null,
+        "meaning": "televisão"
+      },
+      {
+        "id": 8,
+        "word": "No lo soporto",
+        "pinyin": null,
+        "meaning": "Não aguento isso, Não suporto isso"
+      }
+    ],
+    "id": "local-1772301484871-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Quién manda en esta casa de todos modos?!",
+    "pinyin": null,
+    "translation": "Quem manda nesta casa, afinal?!",
+    "tokens": [
+      "¿",
+      "Quién",
+      "manda",
+      "en",
+      "esta",
+      "casa",
+      "de",
+      "todos",
+      "modos",
+      "?",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quién",
+        "pinyin": null,
+        "meaning": "Quem"
+      },
+      {
+        "id": 2,
+        "word": "manda",
+        "pinyin": null,
+        "meaning": "manda (do verbo 'mandar')"
+      },
+      {
+        "id": 3,
+        "word": "casa",
+        "pinyin": null,
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "de todos modos",
+        "pinyin": null,
+        "meaning": "de qualquer forma, afinal"
+      }
+    ],
+    "id": "local-1772301484871-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Qué haces? Hablando solo frente al espejo. ¡Todavía no has lavado los platos!",
+    "pinyin": null,
+    "translation": "O que você está fazendo? Falando sozinho em frente ao espelho. Você ainda não lavou os pratos!",
+    "tokens": [
+      "¿",
+      "Qué",
+      "haces",
+      "?",
+      "Hablando",
+      "solo",
+      "frente",
+      "al",
+      "espejo",
+      ".",
+      "¡",
+      "Todavía",
+      "no",
+      "has",
+      "lavado",
+      "los",
+      "platos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué haces",
+        "pinyin": null,
+        "meaning": "O que você faz/está fazendo"
+      },
+      {
+        "id": 2,
+        "word": "Hablando",
+        "pinyin": null,
+        "meaning": "Falando (do verbo 'hablar')"
+      },
+      {
+        "id": 3,
+        "word": "solo",
+        "pinyin": null,
+        "meaning": "sozinho"
+      },
+      {
+        "id": 4,
+        "word": "frente al espejo",
+        "pinyin": null,
+        "meaning": "em frente ao espelho"
+      },
+      {
+        "id": 5,
+        "word": "Todavía no",
+        "pinyin": null,
+        "meaning": "Ainda não"
+      },
+      {
+        "id": 6,
+        "word": "has lavado",
+        "pinyin": null,
+        "meaning": "você lavou (do verbo 'lavar')"
+      },
+      {
+        "id": 7,
+        "word": "platos",
+        "pinyin": null,
+        "meaning": "pratos"
+      }
+    ],
+    "id": "local-1772301484871-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Oh, oh. Ok. ¡Voy ahora mismo!",
+    "pinyin": null,
+    "translation": "Ah, ah. Ok. Vou agora mesmo!",
+    "tokens": [
+      "Oh",
+      ",",
+      "oh",
+      ".",
+      "Ok",
+      ".",
+      "¡",
+      "Voy",
+      "ahora",
+      "mismo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh, oh",
+        "pinyin": null,
+        "meaning": "Ah, ah (expressão de surpresa/percebimento)"
+      },
+      {
+        "id": 2,
+        "word": "Ok",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 3,
+        "word": "Voy",
+        "pinyin": null,
+        "meaning": "Eu vou (do verbo 'ir')"
+      },
+      {
+        "id": 4,
+        "word": "ahora mismo",
+        "pinyin": null,
+        "meaning": "agora mesmo"
+      }
+    ],
+    "id": "local-1772301484871-7",
+    "language": "Espanhol"
+  }
+]

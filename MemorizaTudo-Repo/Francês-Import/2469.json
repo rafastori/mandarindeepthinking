@@ -1,0 +1,727 @@
+[
+  {
+    "chinese": "A: Bonjour, Manager Wang. Que pensez-vous de cette ébauche de design ?",
+    "pinyin": "",
+    "translation": "A: Olá, Gerente Wang. O que você acha deste rascunho de design?",
+    "tokens": [
+      "A:",
+      "Bonjour",
+      ",",
+      "Manager",
+      "Wang",
+      ".",
+      "Que",
+      "pensez-vous",
+      "de",
+      "cette",
+      "ébauche",
+      "de",
+      "design",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": "2",
+        "word": "Manager",
+        "pinyin": "",
+        "meaning": "Gerente"
+      },
+      {
+        "id": "3",
+        "word": "pensez-vous",
+        "pinyin": "",
+        "meaning": "você acha (de 'penser')"
+      },
+      {
+        "id": "4",
+        "word": "ébauche",
+        "pinyin": "",
+        "meaning": "rascunho, esboço"
+      },
+      {
+        "id": "5",
+        "word": "design",
+        "pinyin": "",
+        "meaning": "design, projeto"
+      }
+    ],
+    "id": "local-1772299586587-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ça n'a pas l'air trop mal, mais c'est toujours différent de ce que j'ai imaginé.",
+    "pinyin": "",
+    "translation": "B: Não parece tão ruim, mas ainda é diferente do que eu imaginei.",
+    "tokens": [
+      "B:",
+      "Ça",
+      "n'a",
+      "pas",
+      "l'air",
+      "trop",
+      "mal",
+      ",",
+      "mais",
+      "c'est",
+      "toujours",
+      "différent",
+      "de",
+      "ce",
+      "que",
+      "j'ai",
+      "imaginé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "Ça n'a pas l'air",
+        "pinyin": "",
+        "meaning": "Não parece"
+      },
+      {
+        "id": "2",
+        "word": "trop mal",
+        "pinyin": "",
+        "meaning": "muito ruim"
+      },
+      {
+        "id": "3",
+        "word": "toujours",
+        "pinyin": "",
+        "meaning": "sempre, ainda"
+      },
+      {
+        "id": "4",
+        "word": "différent",
+        "pinyin": "",
+        "meaning": "diferente"
+      },
+      {
+        "id": "5",
+        "word": "imaginé",
+        "pinyin": "",
+        "meaning": "imaginei (de 'imaginer')"
+      }
+    ],
+    "id": "local-1772299586587-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vous pouvez me dire toutes vos idées.",
+    "pinyin": "",
+    "translation": "A: Você pode me dizer todas as suas ideias.",
+    "tokens": [
+      "A:",
+      "Vous",
+      "pouvez",
+      "me",
+      "dire",
+      "toutes",
+      "vos",
+      "idées",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "pouvez",
+        "pinyin": "",
+        "meaning": "pode (de 'pouvoir')"
+      },
+      {
+        "id": "2",
+        "word": "dire",
+        "pinyin": "",
+        "meaning": "dizer"
+      },
+      {
+        "id": "3",
+        "word": "idées",
+        "pinyin": "",
+        "meaning": "ideias"
+      }
+    ],
+    "id": "local-1772299586587-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je ne peux pas dire exactement ce que c'est. J'ai l'impression qu'il manque quelque chose.",
+    "pinyin": "",
+    "translation": "B: Não consigo dizer exatamente o que é. Tenho a impressão de que falta algo.",
+    "tokens": [
+      "B:",
+      "Je",
+      "ne",
+      "peux",
+      "pas",
+      "dire",
+      "exactement",
+      "ce",
+      "que",
+      "c'est",
+      ".",
+      "J'ai",
+      "l'impression",
+      "qu'il",
+      "manque",
+      "quelque",
+      "chose",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "ne peux pas",
+        "pinyin": "",
+        "meaning": "não consigo (de 'pouvoir')"
+      },
+      {
+        "id": "2",
+        "word": "exactement",
+        "pinyin": "",
+        "meaning": "exatamente"
+      },
+      {
+        "id": "3",
+        "word": "J'ai l'impression",
+        "pinyin": "",
+        "meaning": "Tenho a impressão"
+      },
+      {
+        "id": "4",
+        "word": "manque",
+        "pinyin": "",
+        "meaning": "falta (de 'manquer')"
+      },
+      {
+        "id": "5",
+        "word": "quelque chose",
+        "pinyin": "",
+        "meaning": "algo, alguma coisa"
+      }
+    ],
+    "id": "local-1772299586587-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: La dernière fois, vous avez dit que le style était trop simple, alors j'ai ajouté plus d'éléments visuels cette fois-ci. L'interaction utilisateur est également plus complexe. Je vous laisse y jeter un œil.",
+    "pinyin": "",
+    "translation": "A: Da última vez, você disse que o estilo era muito simples, então adicionei mais elementos visuais desta vez. A interação do usuário também está mais complexa. Deixo você dar uma olhada.",
+    "tokens": [
+      "A:",
+      "La",
+      "dernière",
+      "fois",
+      ",",
+      "vous",
+      "avez",
+      "dit",
+      "que",
+      "le",
+      "style",
+      "était",
+      "trop",
+      "simple",
+      ",",
+      "alors",
+      "j'ai",
+      "ajouté",
+      "plus",
+      "d'éléments",
+      "visuels",
+      "cette",
+      "fois-ci",
+      ".",
+      "L'interaction",
+      "utilisateur",
+      "est",
+      "également",
+      "plus",
+      "complexe",
+      ".",
+      "Je",
+      "vous",
+      "laisse",
+      "y",
+      "jeter",
+      "un",
+      "œil",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "dernière fois",
+        "pinyin": "",
+        "meaning": "última vez"
+      },
+      {
+        "id": "2",
+        "word": "style",
+        "pinyin": "",
+        "meaning": "estilo"
+      },
+      {
+        "id": "3",
+        "word": "simple",
+        "pinyin": "",
+        "meaning": "simples"
+      },
+      {
+        "id": "4",
+        "word": "ajouté",
+        "pinyin": "",
+        "meaning": "adicionei (de 'ajouter')"
+      },
+      {
+        "id": "5",
+        "word": "éléments visuels",
+        "pinyin": "",
+        "meaning": "elementos visuais"
+      },
+      {
+        "id": "6",
+        "word": "cette fois-ci",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": "7",
+        "word": "interaction utilisateur",
+        "pinyin": "",
+        "meaning": "interação do usuário"
+      },
+      {
+        "id": "8",
+        "word": "également",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": "9",
+        "word": "complexe",
+        "pinyin": "",
+        "meaning": "complexo(a)"
+      },
+      {
+        "id": "10",
+        "word": "jeter un œil",
+        "pinyin": "",
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772299586587-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est trop compliqué. Les utilisateurs n'aimeront-ils pas ?",
+    "pinyin": "",
+    "translation": "B: Está muito complicado. Os usuários não vão gostar?",
+    "tokens": [
+      "B:",
+      "C'est",
+      "trop",
+      "compliqué",
+      ".",
+      "Les",
+      "utilisateurs",
+      "n'aimeront-ils",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "trop compliqué",
+        "pinyin": "",
+        "meaning": "muito complicado"
+      },
+      {
+        "id": "2",
+        "word": "utilisateurs",
+        "pinyin": "",
+        "meaning": "usuários"
+      },
+      {
+        "id": "3",
+        "word": "n'aimeront-ils pas",
+        "pinyin": "",
+        "meaning": "não vão gostar? (de 'aimer')"
+      }
+    ],
+    "id": "local-1772299586587-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors je vais changer cette partie, et cela réduira un peu la complexité.",
+    "pinyin": "",
+    "translation": "A: Então vou mudar esta parte, e isso reduzirá um pouco a complexidade.",
+    "tokens": [
+      "A:",
+      "Alors",
+      "je",
+      "vais",
+      "changer",
+      "cette",
+      "partie",
+      ",",
+      "et",
+      "cela",
+      "réduira",
+      "un",
+      "peu",
+      "la",
+      "complexité",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "changer",
+        "pinyin": "",
+        "meaning": "mudar, trocar"
+      },
+      {
+        "id": "2",
+        "word": "partie",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": "3",
+        "word": "réduira",
+        "pinyin": "",
+        "meaning": "reduzirá (de 'réduire')"
+      },
+      {
+        "id": "4",
+        "word": "complexité",
+        "pinyin": "",
+        "meaning": "complexidade"
+      }
+    ],
+    "id": "local-1772299586587-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cette couleur...",
+    "pinyin": "",
+    "translation": "B: Esta cor...",
+    "tokens": [
+      "B:",
+      "Cette",
+      "couleur",
+      "..."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "couleur",
+        "pinyin": "",
+        "meaning": "cor"
+      }
+    ],
+    "id": "local-1772299586587-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est de l'orange. Ce sont les tons chauds que vous aimez.",
+    "pinyin": "",
+    "translation": "A: É laranja. São os tons quentes que você gosta.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "de",
+      "l'orange",
+      ".",
+      "Ce",
+      "sont",
+      "les",
+      "tons",
+      "chauds",
+      "que",
+      "vous",
+      "aimez",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "orange",
+        "pinyin": "",
+        "meaning": "laranja"
+      },
+      {
+        "id": "2",
+        "word": "tons chauds",
+        "pinyin": "",
+        "meaning": "tons quentes"
+      },
+      {
+        "id": "3",
+        "word": "aimez",
+        "pinyin": "",
+        "meaning": "gosta (de 'aimer')"
+      }
+    ],
+    "id": "local-1772299586587-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bien que j'aime les couleurs chaudes, celle-ci semble trop vive.",
+    "pinyin": "",
+    "translation": "B: Embora eu goste de cores quentes, esta parece muito vibrante.",
+    "tokens": [
+      "B:",
+      "Bien",
+      "que",
+      "j'aime",
+      "les",
+      "couleurs",
+      "chaudes",
+      ",",
+      "celle-ci",
+      "semble",
+      "trop",
+      "vive",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "Bien que",
+        "pinyin": "",
+        "meaning": "Embora"
+      },
+      {
+        "id": "2",
+        "word": "couleurs chaudes",
+        "pinyin": "",
+        "meaning": "cores quentes"
+      },
+      {
+        "id": "3",
+        "word": "celle-ci",
+        "pinyin": "",
+        "meaning": "esta"
+      },
+      {
+        "id": "4",
+        "word": "semble",
+        "pinyin": "",
+        "meaning": "parece (de 'sembler')"
+      },
+      {
+        "id": "5",
+        "word": "trop vive",
+        "pinyin": "",
+        "meaning": "muito vibrante, muito viva"
+      }
+    ],
+    "id": "local-1772299586587-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oh, d'accord. Alors je vais la changer pour quelque chose de plus crème. Qu'en pensez-vous ?",
+    "pinyin": "",
+    "translation": "A: Ah, de acordo. Então vou mudá-la para algo mais creme. O que você acha?",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "d'accord",
+      ".",
+      "Alors",
+      "je",
+      "vais",
+      "la",
+      "changer",
+      "pour",
+      "quelque",
+      "chose",
+      "de",
+      "plus",
+      "crème",
+      ".",
+      "Qu'en",
+      "pensez-vous",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "d'accord",
+        "pinyin": "",
+        "meaning": "de acordo, ok"
+      },
+      {
+        "id": "2",
+        "word": "changer",
+        "pinyin": "",
+        "meaning": "mudar"
+      },
+      {
+        "id": "3",
+        "word": "quelque chose",
+        "pinyin": "",
+        "meaning": "algo, alguma coisa"
+      },
+      {
+        "id": "4",
+        "word": "crème",
+        "pinyin": "",
+        "meaning": "creme"
+      },
+      {
+        "id": "5",
+        "word": "Qu'en pensez-vous",
+        "pinyin": "",
+        "meaning": "O que você acha disso?"
+      }
+    ],
+    "id": "local-1772299586587-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est bon. Mais c'est déjà la cinquième version. J'ai peur qu'il n'y ait pas assez de temps. Et si on laissait tomber et utilisait la première version après tout ?",
+    "pinyin": "",
+    "translation": "B: Está bom. Mas já é a quinta versão. Tenho medo que não haja tempo suficiente. E se desistíssemos e usássemos a primeira versão, afinal?",
+    "tokens": [
+      "B:",
+      "C'est",
+      "bon",
+      ".",
+      "Mais",
+      "c'est",
+      "déjà",
+      "la",
+      "cinquième",
+      "version",
+      ".",
+      "J'ai",
+      "peur",
+      "qu'il",
+      "n'y",
+      "ait",
+      "pas",
+      "assez",
+      "de",
+      "temps",
+      ".",
+      "Et",
+      "si",
+      "on",
+      "laissait",
+      "tomber",
+      "et",
+      "utilisait",
+      "la",
+      "première",
+      "version",
+      "après",
+      "tout",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "C'est bon",
+        "pinyin": "",
+        "meaning": "Está bom"
+      },
+      {
+        "id": "2",
+        "word": "déjà",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": "3",
+        "word": "cinquième",
+        "pinyin": "",
+        "meaning": "quinta"
+      },
+      {
+        "id": "4",
+        "word": "version",
+        "pinyin": "",
+        "meaning": "versão"
+      },
+      {
+        "id": "5",
+        "word": "J'ai peur",
+        "pinyin": "",
+        "meaning": "Tenho medo"
+      },
+      {
+        "id": "6",
+        "word": "pas assez de temps",
+        "pinyin": "",
+        "meaning": "não tempo suficiente"
+      },
+      {
+        "id": "7",
+        "word": "laissait tomber",
+        "pinyin": "",
+        "meaning": "desistíssemos (de 'laisser tomber')"
+      },
+      {
+        "id": "8",
+        "word": "utilisait",
+        "pinyin": "",
+        "meaning": "usasse (de 'utiliser')"
+      },
+      {
+        "id": "9",
+        "word": "première",
+        "pinyin": "",
+        "meaning": "primeira"
+      },
+      {
+        "id": "10",
+        "word": "après tout",
+        "pinyin": "",
+        "meaning": "afinal de contas"
+      }
+    ],
+    "id": "local-1772299586587-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Hein ? D'accord, d'accord.",
+    "pinyin": "",
+    "translation": "A: Hã? De acordo, de acordo.",
+    "tokens": [
+      "A:",
+      "Hein",
+      "?",
+      "D'accord",
+      ",",
+      "d'accord",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": "1",
+        "word": "Hein",
+        "pinyin": "",
+        "meaning": "Hã?"
+      },
+      {
+        "id": "2",
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo, ok"
+      }
+    ],
+    "id": "local-1772299586587-12",
+    "language": "Francês"
+  }
+]

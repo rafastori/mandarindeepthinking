@@ -1,0 +1,511 @@
+[
+  {
+    "chinese": "A: Tomorrow you need to take the baby to the Neighbourhood Hospital to get vaccinated. Did you ask for time off?",
+    "pinyin": null,
+    "translation": "A: Amanhã você precisa levar o bebê ao Hospital do Bairro para ser vacinado. Você pediu folga?",
+    "tokens": [
+      "Tomorrow",
+      "you",
+      "need",
+      "to",
+      "take",
+      "the",
+      "baby",
+      "to",
+      "the",
+      "Neighbourhood",
+      "Hospital",
+      "to",
+      "get",
+      "vaccinated",
+      ".",
+      "Did",
+      "you",
+      "ask",
+      "for",
+      "time",
+      "off",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tomorrow",
+        "pinyin": null,
+        "meaning": "Amanhã"
+      },
+      {
+        "id": 2,
+        "word": "take",
+        "pinyin": null,
+        "meaning": "levar"
+      },
+      {
+        "id": 3,
+        "word": "baby",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 4,
+        "word": "Neighbourhood Hospital",
+        "pinyin": null,
+        "meaning": "Hospital do Bairro"
+      },
+      {
+        "id": 5,
+        "word": "get vaccinated",
+        "pinyin": null,
+        "meaning": "ser vacinado"
+      },
+      {
+        "id": 6,
+        "word": "ask for time off",
+        "pinyin": null,
+        "meaning": "pedir folga"
+      }
+    ],
+    "id": "local-1772294111877-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes, I asked for one day off. Honey, what injections is the baby getting tomorrow?",
+    "pinyin": null,
+    "translation": "B: Sim, pedi um dia de folga. Querida, quais injeções o bebê vai tomar amanhã?",
+    "tokens": [
+      "Yes",
+      ",",
+      "I",
+      "asked",
+      "for",
+      "one",
+      "day",
+      "off",
+      ".",
+      "Honey",
+      ",",
+      "what",
+      "injections",
+      "is",
+      "the",
+      "baby",
+      "getting",
+      "tomorrow",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "asked for one day off",
+        "pinyin": null,
+        "meaning": "pedi um dia de folga"
+      },
+      {
+        "id": 2,
+        "word": "Honey",
+        "pinyin": null,
+        "meaning": "Querida (termo carinhoso)"
+      },
+      {
+        "id": 3,
+        "word": "injections",
+        "pinyin": null,
+        "meaning": "injeções"
+      },
+      {
+        "id": 4,
+        "word": "getting",
+        "pinyin": null,
+        "meaning": "tomar (vacina, injeção)"
+      }
+    ],
+    "id": "local-1772294111877-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I'll take a look. It's the hepatitis B vaccine.",
+    "pinyin": null,
+    "translation": "A: Vou dar uma olhada. É a vacina contra hepatite B.",
+    "tokens": [
+      "I'll",
+      "take",
+      "a",
+      "look",
+      ".",
+      "It's",
+      "the",
+      "hepatitis",
+      "B",
+      "vaccine",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "take a look",
+        "pinyin": null,
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "hepatitis B vaccine",
+        "pinyin": null,
+        "meaning": "vacina contra hepatite B"
+      }
+    ],
+    "id": "local-1772294111877-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh. It's free, right?",
+    "pinyin": null,
+    "translation": "B: Ah. É de graça, certo?",
+    "tokens": [
+      "Oh",
+      ".",
+      "It's",
+      "free",
+      ",",
+      "right",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "free",
+        "pinyin": null,
+        "meaning": "grátis, gratuito"
+      },
+      {
+        "id": 2,
+        "word": "right?",
+        "pinyin": null,
+        "meaning": "certo?, não é?"
+      }
+    ],
+    "id": "local-1772294111877-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: There are Chinese-made and imported vaccines. The Chinese-made are free. There is a charge for the imported.",
+    "pinyin": null,
+    "translation": "A: Existem vacinas de fabricação chinesa e importadas. As de fabricação chinesa são gratuitas. Há uma taxa para as importadas.",
+    "tokens": [
+      "There",
+      "are",
+      "Chinese-made",
+      "and",
+      "imported",
+      "vaccines",
+      ".",
+      "The",
+      "Chinese-made",
+      "are",
+      "free",
+      ".",
+      "There",
+      "is",
+      "a",
+      "charge",
+      "for",
+      "the",
+      "imported",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chinese-made",
+        "pinyin": null,
+        "meaning": "de fabricação chinesa"
+      },
+      {
+        "id": 2,
+        "word": "imported",
+        "pinyin": null,
+        "meaning": "importadas"
+      },
+      {
+        "id": 3,
+        "word": "vaccines",
+        "pinyin": null,
+        "meaning": "vacinas"
+      },
+      {
+        "id": 4,
+        "word": "free",
+        "pinyin": null,
+        "meaning": "gratuitas"
+      },
+      {
+        "id": 5,
+        "word": "charge",
+        "pinyin": null,
+        "meaning": "custo, taxa"
+      }
+    ],
+    "id": "local-1772294111877-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: So are we getting the Chinese-made or the imported?",
+    "pinyin": null,
+    "translation": "B: Então, vamos pegar a de fabricação chinesa ou a importada?",
+    "tokens": [
+      "So",
+      "are",
+      "we",
+      "getting",
+      "the",
+      "Chinese-made",
+      "or",
+      "the",
+      "imported",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "getting",
+        "pinyin": null,
+        "meaning": "pegando, recebendo (neste contexto: tomando a vacina)"
+      },
+      {
+        "id": 2,
+        "word": "Chinese-made",
+        "pinyin": null,
+        "meaning": "de fabricação chinesa"
+      },
+      {
+        "id": 3,
+        "word": "imported",
+        "pinyin": null,
+        "meaning": "importada"
+      }
+    ],
+    "id": "local-1772294111877-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: The imported.",
+    "pinyin": null,
+    "translation": "A: A importada.",
+    "tokens": [
+      "The",
+      "imported",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "imported",
+        "pinyin": null,
+        "meaning": "a importada"
+      }
+    ],
+    "id": "local-1772294111877-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But our little guy's resistance is very good and he doesn't get sick. It's not really necessary to get the imported one.",
+    "pinyin": null,
+    "translation": "B: Mas a resistência do nosso pequeno é muito boa e ele não fica doente. Não é realmente necessário pegar a importada.",
+    "tokens": [
+      "But",
+      "our",
+      "little",
+      "guy's",
+      "resistance",
+      "is",
+      "very",
+      "good",
+      "and",
+      "he",
+      "doesn't",
+      "get",
+      "sick",
+      ".",
+      "It's",
+      "not",
+      "really",
+      "necessary",
+      "to",
+      "get",
+      "the",
+      "imported",
+      "one",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "little guy",
+        "pinyin": null,
+        "meaning": "pequeno (termo carinhoso para o bebê)"
+      },
+      {
+        "id": 2,
+        "word": "resistance",
+        "pinyin": null,
+        "meaning": "resistência"
+      },
+      {
+        "id": 3,
+        "word": "get sick",
+        "pinyin": null,
+        "meaning": "ficar doente"
+      },
+      {
+        "id": 4,
+        "word": "necessary",
+        "pinyin": null,
+        "meaning": "necessário"
+      },
+      {
+        "id": 5,
+        "word": "imported one",
+        "pinyin": null,
+        "meaning": "a importada (vacina)"
+      }
+    ],
+    "id": "local-1772294111877-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We can't scrimp on the money we spend on our child. The imported vaccine is expensive, but it should be better and more safe. You get what you pay for.",
+    "pinyin": null,
+    "translation": "A: Não podemos economizar no dinheiro que gastamos com nosso filho. A vacina importada é cara, mas deve ser melhor e mais segura. Você recebe o que paga.",
+    "tokens": [
+      "We",
+      "can't",
+      "scrimp",
+      "on",
+      "the",
+      "money",
+      "we",
+      "spend",
+      "on",
+      "our",
+      "child",
+      ".",
+      "The",
+      "imported",
+      "vaccine",
+      "is",
+      "expensive",
+      ",",
+      "but",
+      "it",
+      "should",
+      "be",
+      "better",
+      "and",
+      "more",
+      "safe",
+      ".",
+      "You",
+      "get",
+      "what",
+      "you",
+      "pay",
+      "for",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "scrimp on",
+        "pinyin": null,
+        "meaning": "economizar, ser mesquinho com"
+      },
+      {
+        "id": 2,
+        "word": "spend on",
+        "pinyin": null,
+        "meaning": "gastar com"
+      },
+      {
+        "id": 3,
+        "word": "child",
+        "pinyin": null,
+        "meaning": "filho(a)"
+      },
+      {
+        "id": 4,
+        "word": "imported vaccine",
+        "pinyin": null,
+        "meaning": "vacina importada"
+      },
+      {
+        "id": 5,
+        "word": "expensive",
+        "pinyin": null,
+        "meaning": "cara, dispendiosa"
+      },
+      {
+        "id": 6,
+        "word": "better",
+        "pinyin": null,
+        "meaning": "melhor"
+      },
+      {
+        "id": 7,
+        "word": "safe",
+        "pinyin": null,
+        "meaning": "segura"
+      },
+      {
+        "id": 8,
+        "word": "You get what you pay for",
+        "pinyin": null,
+        "meaning": "Você recebe o que paga (a qualidade é proporcional ao preço)"
+      }
+    ],
+    "id": "local-1772294111877-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: OK, boss. What you say goes. I will listen to you.",
+    "pinyin": null,
+    "translation": "B: OK, chefe. O que você diz é lei. Eu vou te ouvir.",
+    "tokens": [
+      "OK",
+      ",",
+      "boss",
+      ".",
+      "What",
+      "you",
+      "say",
+      "goes",
+      ".",
+      "I",
+      "will",
+      "listen",
+      "to",
+      "you",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "boss",
+        "pinyin": null,
+        "meaning": "chefe (pode ser usado carinhosamente)"
+      },
+      {
+        "id": 2,
+        "word": "What you say goes",
+        "pinyin": null,
+        "meaning": "O que você diz é lei / Sua palavra é a lei"
+      },
+      {
+        "id": 3,
+        "word": "listen to",
+        "pinyin": null,
+        "meaning": "ouvir"
+      }
+    ],
+    "id": "local-1772294111877-9",
+    "language": "Inglês"
+  }
+]

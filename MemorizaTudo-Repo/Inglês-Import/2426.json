@@ -1,0 +1,432 @@
+[
+  {
+    "chinese": "A: Hey, your computer screen is so bright. Don't you find it hard to look at?",
+    "pinyin": null,
+    "translation": "A: Ei, a tela do seu computador está tão clara. Você não acha difícil de olhar?",
+    "tokens": [
+      "A:",
+      "Hey,",
+      "your",
+      "computer",
+      "screen",
+      "is",
+      "so",
+      "bright.",
+      "Don't",
+      "you",
+      "find",
+      "it",
+      "hard",
+      "to",
+      "look",
+      "at?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "computer screen",
+        "pinyin": null,
+        "meaning": "tela do computador"
+      },
+      {
+        "id": 2,
+        "word": "bright",
+        "pinyin": null,
+        "meaning": "claro, brilhante"
+      },
+      {
+        "id": 3,
+        "word": "hard",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 4,
+        "word": "look at",
+        "pinyin": null,
+        "meaning": "olhar para"
+      }
+    ],
+    "id": "local-1772292863403-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Hey, I don't care. I need to hurry up.",
+    "pinyin": null,
+    "translation": "B: Ei, eu não me importo. Preciso me apressar.",
+    "tokens": [
+      "B:",
+      "Hey,",
+      "I",
+      "don't",
+      "care.",
+      "I",
+      "need",
+      "to",
+      "hurry",
+      "up."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "don't care",
+        "pinyin": null,
+        "meaning": "não se importar"
+      },
+      {
+        "id": 2,
+        "word": "hurry up",
+        "pinyin": null,
+        "meaning": "se apressar"
+      }
+    ],
+    "id": "local-1772292863403-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You don't care, but I care. If it's too bright I won't be able to sleep.",
+    "pinyin": null,
+    "translation": "A: Você não se importa, mas eu me importo. Se estiver muito claro, não conseguirei dormir.",
+    "tokens": [
+      "A:",
+      "You",
+      "don't",
+      "care,",
+      "but",
+      "I",
+      "care.",
+      "If",
+      "it's",
+      "too",
+      "bright",
+      "I",
+      "won't",
+      "be",
+      "able",
+      "to",
+      "sleep."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "don't care",
+        "pinyin": null,
+        "meaning": "não se importar"
+      },
+      {
+        "id": 2,
+        "word": "care",
+        "pinyin": null,
+        "meaning": "se importar"
+      },
+      {
+        "id": 3,
+        "word": "too bright",
+        "pinyin": null,
+        "meaning": "muito claro/brilhante"
+      },
+      {
+        "id": 4,
+        "word": "won't be able to",
+        "pinyin": null,
+        "meaning": "não conseguirá"
+      },
+      {
+        "id": 5,
+        "word": "sleep",
+        "pinyin": null,
+        "meaning": "dormir"
+      }
+    ],
+    "id": "local-1772292863403-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Really? Then I'm sorry. I'll change it. How do you change the screen's brightness? Zhenzhen, do you know?",
+    "pinyin": null,
+    "translation": "B: Sério? Então me desculpe. Eu vou mudar. Como você muda o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "B:",
+      "Really?",
+      "Then",
+      "I'm",
+      "sorry.",
+      "I'll",
+      "change",
+      "it.",
+      "How",
+      "do",
+      "you",
+      "change",
+      "the",
+      "screen's",
+      "brightness?",
+      "Zhenzhen,",
+      "do",
+      "you",
+      "know?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "really",
+        "pinyin": null,
+        "meaning": "sério?"
+      },
+      {
+        "id": 2,
+        "word": "I'm sorry",
+        "pinyin": null,
+        "meaning": "me desculpe"
+      },
+      {
+        "id": 3,
+        "word": "change",
+        "pinyin": null,
+        "meaning": "mudar"
+      },
+      {
+        "id": 4,
+        "word": "screen's brightness",
+        "pinyin": null,
+        "meaning": "brilho da tela"
+      },
+      {
+        "id": 5,
+        "word": "know",
+        "pinyin": null,
+        "meaning": "saber"
+      }
+    ],
+    "id": "local-1772292863403-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Mine is a desktop. At the bottom of the screen there's a button you can push. If it's a laptop, look on the keyboard to see whether or not there's a key with a function symbol.",
+    "pinyin": null,
+    "translation": "A: O meu é um desktop. Na parte de baixo da tela tem um botão que você pode apertar. Se for um laptop, procure no teclado para ver se há ou não uma tecla com um símbolo de função.",
+    "tokens": [
+      "A:",
+      "Mine",
+      "is",
+      "a",
+      "desktop.",
+      "At",
+      "the",
+      "bottom",
+      "of",
+      "the",
+      "screen",
+      "there's",
+      "a",
+      "button",
+      "you",
+      "can",
+      "push.",
+      "If",
+      "it's",
+      "a",
+      "laptop,",
+      "look",
+      "on",
+      "the",
+      "keyboard",
+      "to",
+      "see",
+      "whether",
+      "or",
+      "not",
+      "there's",
+      "a",
+      "key",
+      "with",
+      "a",
+      "function",
+      "symbol."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "desktop",
+        "pinyin": null,
+        "meaning": "computador de mesa"
+      },
+      {
+        "id": 2,
+        "word": "bottom of the screen",
+        "pinyin": null,
+        "meaning": "parte inferior da tela"
+      },
+      {
+        "id": 3,
+        "word": "button",
+        "pinyin": null,
+        "meaning": "botão"
+      },
+      {
+        "id": 4,
+        "word": "push",
+        "pinyin": null,
+        "meaning": "apertar"
+      },
+      {
+        "id": 5,
+        "word": "laptop",
+        "pinyin": null,
+        "meaning": "notebook, laptop"
+      },
+      {
+        "id": 6,
+        "word": "keyboard",
+        "pinyin": null,
+        "meaning": "teclado"
+      },
+      {
+        "id": 7,
+        "word": "key",
+        "pinyin": null,
+        "meaning": "tecla"
+      },
+      {
+        "id": 8,
+        "word": "function symbol",
+        "pinyin": null,
+        "meaning": "símbolo de função"
+      },
+      {
+        "id": 9,
+        "word": "whether or not",
+        "pinyin": null,
+        "meaning": "se ou não"
+      }
+    ],
+    "id": "local-1772292863403-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Let me see. This one adjusts the contrast, this one is the color. Oh, this is the brightness. Okay, I've made it as dark as I can. Is that a bit better?",
+    "pinyin": null,
+    "translation": "B: Deixe-me ver. Este ajusta o contraste, este é a cor. Oh, este é o brilho. Ok, eu o deixei o mais escuro que pude. Está um pouco melhor?",
+    "tokens": [
+      "B:",
+      "Let",
+      "me",
+      "see.",
+      "This",
+      "one",
+      "adjusts",
+      "the",
+      "contrast,",
+      "this",
+      "one",
+      "is",
+      "the",
+      "color.",
+      "Oh,",
+      "this",
+      "is",
+      "the",
+      "brightness.",
+      "Okay,",
+      "I've",
+      "made",
+      "it",
+      "as",
+      "dark",
+      "as",
+      "I",
+      "can.",
+      "Is",
+      "that",
+      "a",
+      "bit",
+      "better?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "let me see",
+        "pinyin": null,
+        "meaning": "deixe-me ver"
+      },
+      {
+        "id": 2,
+        "word": "adjusts",
+        "pinyin": null,
+        "meaning": "ajusta"
+      },
+      {
+        "id": 3,
+        "word": "contrast",
+        "pinyin": null,
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "color",
+        "pinyin": null,
+        "meaning": "cor"
+      },
+      {
+        "id": 5,
+        "word": "brightness",
+        "pinyin": null,
+        "meaning": "brilho"
+      },
+      {
+        "id": 6,
+        "word": "as dark as I can",
+        "pinyin": null,
+        "meaning": "o mais escuro que eu puder"
+      },
+      {
+        "id": 7,
+        "word": "a bit better",
+        "pinyin": null,
+        "meaning": "um pouco melhor"
+      }
+    ],
+    "id": "local-1772292863403-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: It's a lot better. I'm going to sleep. Good luck!",
+    "pinyin": null,
+    "translation": "A: Está muito melhor. Eu vou dormir. Boa sorte!",
+    "tokens": [
+      "A:",
+      "It's",
+      "a",
+      "lot",
+      "better.",
+      "I'm",
+      "going",
+      "to",
+      "sleep.",
+      "Good",
+      "luck!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "a lot better",
+        "pinyin": null,
+        "meaning": "muito melhor"
+      },
+      {
+        "id": 2,
+        "word": "going to sleep",
+        "pinyin": null,
+        "meaning": "vou dormir"
+      },
+      {
+        "id": 3,
+        "word": "Good luck",
+        "pinyin": null,
+        "meaning": "Boa sorte"
+      }
+    ],
+    "id": "local-1772292863403-6",
+    "language": "Inglês"
+  }
+]

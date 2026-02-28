@@ -1,0 +1,222 @@
+[
+  {
+    "chinese": "Este es un texto de prueba maestro.",
+    "pinyin": "",
+    "translation": "Este é um texto de teste mestre.",
+    "tokens": [
+      "Este",
+      "es",
+      "un",
+      "texto",
+      "de",
+      "prueba",
+      "maestro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Este",
+        "pinyin": "",
+        "meaning": "Este (pronome demonstrativo)"
+      },
+      {
+        "id": 2,
+        "word": "es",
+        "pinyin": "",
+        "meaning": "é (verbo ser, 3ª pessoa singular)"
+      },
+      {
+        "id": 3,
+        "word": "un",
+        "pinyin": "",
+        "meaning": "um (artigo indefinido masculino singular)"
+      },
+      {
+        "id": 4,
+        "word": "texto",
+        "pinyin": "",
+        "meaning": "texto (substantivo masculino)"
+      },
+      {
+        "id": 5,
+        "word": "de",
+        "pinyin": "",
+        "meaning": "de (preposição)"
+      },
+      {
+        "id": 6,
+        "word": "prueba",
+        "pinyin": "",
+        "meaning": "teste, prova (substantivo feminino)"
+      },
+      {
+        "id": 7,
+        "word": "maestro",
+        "pinyin": "",
+        "meaning": "mestre, principal (adjetivo/substantivo masculino)"
+      }
+    ],
+    "id": "local-1772301640732-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es un texto muy simple para probar la pipeline de sincronización inteligente en cascada del inglés a todos los demás idiomas.",
+    "pinyin": "",
+    "translation": "É um texto muito simples para testar o pipeline de sincronização inteligente em cascata do inglês para todos os outros idiomas.",
+    "tokens": [
+      "Es",
+      "un",
+      "texto",
+      "muy",
+      "simple",
+      "para",
+      "probar",
+      "la",
+      "pipeline",
+      "de",
+      "sincronización",
+      "inteligente",
+      "en",
+      "cascada",
+      "del",
+      "inglés",
+      "a",
+      "todos",
+      "los",
+      "demás",
+      "idiomas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "Es",
+        "pinyin": "",
+        "meaning": "é (verbo ser, 3ª pessoa singular)"
+      },
+      {
+        "id": 9,
+        "word": "un",
+        "pinyin": "",
+        "meaning": "um (artigo indefinido masculino singular)"
+      },
+      {
+        "id": 10,
+        "word": "texto",
+        "pinyin": "",
+        "meaning": "texto (substantivo masculino)"
+      },
+      {
+        "id": 11,
+        "word": "muy",
+        "pinyin": "",
+        "meaning": "muito (advérbio de intensidade)"
+      },
+      {
+        "id": 12,
+        "word": "simple",
+        "pinyin": "",
+        "meaning": "simples (adjetivo)"
+      },
+      {
+        "id": 13,
+        "word": "para",
+        "pinyin": "",
+        "meaning": "para (preposição)"
+      },
+      {
+        "id": 14,
+        "word": "probar",
+        "pinyin": "",
+        "meaning": "testar, provar (verbo infinitivo)"
+      },
+      {
+        "id": 15,
+        "word": "la",
+        "pinyin": "",
+        "meaning": "a (artigo definido feminino singular)"
+      },
+      {
+        "id": 16,
+        "word": "pipeline",
+        "pinyin": "",
+        "meaning": "pipeline (termo em inglês, linha de produção)"
+      },
+      {
+        "id": 17,
+        "word": "de",
+        "pinyin": "",
+        "meaning": "de (preposição)"
+      },
+      {
+        "id": 18,
+        "word": "sincronización",
+        "pinyin": "",
+        "meaning": "sincronização (substantivo feminino)"
+      },
+      {
+        "id": 19,
+        "word": "inteligente",
+        "pinyin": "",
+        "meaning": "inteligente (adjetivo)"
+      },
+      {
+        "id": 20,
+        "word": "en",
+        "pinyin": "",
+        "meaning": "em (preposição)"
+      },
+      {
+        "id": 21,
+        "word": "cascada",
+        "pinyin": "",
+        "meaning": "cascata (substantivo feminino)"
+      },
+      {
+        "id": 22,
+        "word": "del",
+        "pinyin": "",
+        "meaning": "do (contração de 'de' + 'el')"
+      },
+      {
+        "id": 23,
+        "word": "inglés",
+        "pinyin": "",
+        "meaning": "inglês (idioma, substantivo masculino)"
+      },
+      {
+        "id": 24,
+        "word": "a",
+        "pinyin": "",
+        "meaning": "a (preposição)"
+      },
+      {
+        "id": 25,
+        "word": "todos",
+        "pinyin": "",
+        "meaning": "todos (pronome/adjetivo indefinido, masculino plural)"
+      },
+      {
+        "id": 26,
+        "word": "los",
+        "pinyin": "",
+        "meaning": "os (artigo definido masculino plural)"
+      },
+      {
+        "id": 27,
+        "word": "demás",
+        "pinyin": "",
+        "meaning": "demais, outros (adjetivo/pronome indefinido)"
+      },
+      {
+        "id": 28,
+        "word": "idiomas",
+        "pinyin": "",
+        "meaning": "idiomas, línguas (substantivo masculino plural)"
+      }
+    ],
+    "id": "local-1772301640732-1",
+    "language": "Espanhol"
+  }
+]

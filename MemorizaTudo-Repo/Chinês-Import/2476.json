@@ -1,0 +1,779 @@
+[
+  {
+    "chinese": "A: 您好。请问，这里是华美医院体检科吗？",
+    "pinyin": "A: Nín hǎo. Qǐngwèn, zhèlǐ shì Huáměi Yīyuàn Tǐjiànkē ma?",
+    "translation": "A: Olá. Com licença, este é o departamento de exames médicos do Hospital Huamei?",
+    "tokens": [
+      "您",
+      "好",
+      "请",
+      "问",
+      "这",
+      "里",
+      "是",
+      "华美",
+      "医院",
+      "体检",
+      "科",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您好",
+        "pinyin": "nín hǎo",
+        "meaning": "Olá (formal)"
+      },
+      {
+        "id": 2,
+        "word": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "Com licença, posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "这里",
+        "pinyin": "zhèlǐ",
+        "meaning": "aqui"
+      },
+      {
+        "id": 4,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 5,
+        "word": "华美医院",
+        "pinyin": "Huáměi Yīyuàn",
+        "meaning": "Hospital Huamei (nome próprio)"
+      },
+      {
+        "id": 6,
+        "word": "体检科",
+        "pinyin": "tǐjiànkē",
+        "meaning": "departamento de exames médicos"
+      },
+      {
+        "id": 7,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是的。请问有什么可以帮您的吗？",
+    "pinyin": "B: Shì de. Qǐngwèn yǒu shénme kěyǐ bāng nín de ma?",
+    "translation": "B: Sim, é. Com licença, há algo em que posso ajudar?",
+    "tokens": [
+      "是",
+      "的",
+      "请",
+      "问",
+      "有",
+      "什么",
+      "可以",
+      "帮",
+      "您",
+      "的",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是的",
+        "pinyin": "shì de",
+        "meaning": "sim, é"
+      },
+      {
+        "id": 2,
+        "word": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "com licença, posso perguntar"
+      },
+      {
+        "id": 3,
+        "word": "有什么",
+        "pinyin": "yǒu shénme",
+        "meaning": "o que há"
+      },
+      {
+        "id": 4,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 5,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 6,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 7,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你们这里有入职体检吗？",
+    "pinyin": "A: Nǐmen zhèlǐ yǒu rùzhí tǐjiàn ma?",
+    "translation": "A: Vocês têm exames médicos para admissão de funcionários aqui?",
+    "tokens": [
+      "你",
+      "们",
+      "这",
+      "里",
+      "有",
+      "入职",
+      "体检",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你们",
+        "pinyin": "nǐmen",
+        "meaning": "vocês"
+      },
+      {
+        "id": 2,
+        "word": "这里",
+        "pinyin": "zhèlǐ",
+        "meaning": "aqui"
+      },
+      {
+        "id": 3,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter"
+      },
+      {
+        "id": 4,
+        "word": "入职体检",
+        "pinyin": "rùzhí tǐjiàn",
+        "meaning": "exame médico para admissão de funcionários"
+      },
+      {
+        "id": 5,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 有的。我们有一个套餐是260元。",
+    "pinyin": "B: Yǒu de. Wǒmen yǒu yīgè tàocān shì èrbǎi liùshí yuán.",
+    "translation": "B: Sim, temos. Temos um pacote que custa 260 yuans.",
+    "tokens": [
+      "有",
+      "的",
+      "我",
+      "们",
+      "有",
+      "一",
+      "个",
+      "套餐",
+      "是",
+      "260",
+      "元"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有的",
+        "pinyin": "yǒu de",
+        "meaning": "sim, temos"
+      },
+      {
+        "id": 2,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter"
+      },
+      {
+        "id": 4,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um (classificador)"
+      },
+      {
+        "id": 5,
+        "word": "套餐",
+        "pinyin": "tàocān",
+        "meaning": "pacote (menu, serviço combinado)"
+      },
+      {
+        "id": 6,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, custar"
+      },
+      {
+        "id": 7,
+        "word": "元",
+        "pinyin": "yuán",
+        "meaning": "yuan (unidade monetária chinesa)"
+      }
+    ],
+    "id": "local-1772300284210-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 会检查哪些项目呢？",
+    "pinyin": "A: Huì jiǎnchá nǎxiē xiàngmù ne?",
+    "translation": "A: Quais itens serão verificados?",
+    "tokens": [
+      "会",
+      "检查",
+      "哪些",
+      "项目",
+      "呢"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "会",
+        "pinyin": "huì",
+        "meaning": "irá, vai (futuro, possibilidade)"
+      },
+      {
+        "id": 2,
+        "word": "检查",
+        "pinyin": "jiǎnchá",
+        "meaning": "verificar, examinar"
+      },
+      {
+        "id": 3,
+        "word": "哪些",
+        "pinyin": "nǎxiē",
+        "meaning": "quais"
+      },
+      {
+        "id": 4,
+        "word": "项目",
+        "pinyin": "xiàngmù",
+        "meaning": "item, projeto"
+      },
+      {
+        "id": 5,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa (pergunta suave)"
+      }
+    ],
+    "id": "local-1772300284210-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 基础的身高、体重和血压。验血、验尿、B超和心电图。",
+    "pinyin": "B: Jīchǔ de shēnggāo, tǐzhòng hé xuèyā. Yànxiě, yànniào, Bchāo hé xīndiàntú.",
+    "translation": "B: O básico: altura, peso e pressão arterial. Exames de sangue, urina, ultrassom e eletrocardiograma.",
+    "tokens": [
+      "基础",
+      "的",
+      "身高",
+      "、",
+      "体重",
+      "和",
+      "血压",
+      "验血",
+      "、",
+      "验尿",
+      "、",
+      "B超",
+      "和",
+      "心电图"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "基础",
+        "pinyin": "jīchǔ",
+        "meaning": "básico, fundamental"
+      },
+      {
+        "id": 2,
+        "word": "身高",
+        "pinyin": "shēnggāo",
+        "meaning": "altura"
+      },
+      {
+        "id": 3,
+        "word": "体重",
+        "pinyin": "tǐzhòng",
+        "meaning": "peso (corporal)"
+      },
+      {
+        "id": 4,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 5,
+        "word": "血压",
+        "pinyin": "xuèyā",
+        "meaning": "pressão arterial"
+      },
+      {
+        "id": 6,
+        "word": "验血",
+        "pinyin": "yànxiě",
+        "meaning": "exame de sangue"
+      },
+      {
+        "id": 7,
+        "word": "验尿",
+        "pinyin": "yànniào",
+        "meaning": "exame de urina"
+      },
+      {
+        "id": 8,
+        "word": "B超",
+        "pinyin": "Bchāo",
+        "meaning": "ultrassom (ecografia)"
+      },
+      {
+        "id": 9,
+        "word": "心电图",
+        "pinyin": "xīndiàntú",
+        "meaning": "eletrocardiograma (ECG)"
+      }
+    ],
+    "id": "local-1772300284210-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 如果我还想检查其他项目，可以吗？",
+    "pinyin": "A: Rúguǒ wǒ hái xiǎng jiǎnchá qítā xiàngmù, kěyǐ ma?",
+    "translation": "A: Se eu ainda quiser verificar outros itens, é possível?",
+    "tokens": [
+      "如果",
+      "我",
+      "还",
+      "想",
+      "检查",
+      "其他",
+      "项目",
+      "可以",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se, caso"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 4,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, desejar"
+      },
+      {
+        "id": 5,
+        "word": "检查",
+        "pinyin": "jiǎnchá",
+        "meaning": "verificar, examinar"
+      },
+      {
+        "id": 6,
+        "word": "其他",
+        "pinyin": "qítā",
+        "meaning": "outros"
+      },
+      {
+        "id": 7,
+        "word": "项目",
+        "pinyin": "xiàngmù",
+        "meaning": "item, projeto"
+      },
+      {
+        "id": 8,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir, ser possível"
+      },
+      {
+        "id": 9,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 可以的。您可以另外加查单项，补上差价就可以了。",
+    "pinyin": "B: Kěyǐ de. Nín kěyǐ lìngwài jiāchá dānxiàng, bǔ shàng chājià jiù kěyǐ le.",
+    "translation": "B: Sim, é possível. Você pode adicionar outros itens individualmente e apenas pagar a diferença de preço.",
+    "tokens": [
+      "可以",
+      "的",
+      "您",
+      "可以",
+      "另外",
+      "加查",
+      "单项",
+      "补",
+      "上",
+      "差价",
+      "就",
+      "可以",
+      "了"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可以的",
+        "pinyin": "kěyǐ de",
+        "meaning": "sim, é possível"
+      },
+      {
+        "id": 2,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 3,
+        "word": "另外",
+        "pinyin": "lìngwài",
+        "meaning": "adicionalmente, além disso"
+      },
+      {
+        "id": 4,
+        "word": "加查",
+        "pinyin": "jiāchá",
+        "meaning": "adicionar exame/verificação"
+      },
+      {
+        "id": 5,
+        "word": "单项",
+        "pinyin": "dānxiàng",
+        "meaning": "item individual"
+      },
+      {
+        "id": 6,
+        "word": "补上",
+        "pinyin": "bǔ shàng",
+        "meaning": "compensar, completar"
+      },
+      {
+        "id": 7,
+        "word": "差价",
+        "pinyin": "chājià",
+        "meaning": "diferença de preço"
+      },
+      {
+        "id": 8,
+        "word": "就可以了",
+        "pinyin": "jiù kěyǐ le",
+        "meaning": "já está bom, só isso"
+      }
+    ],
+    "id": "local-1772300284210-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 报告会直接寄到工作单位吗？",
+    "pinyin": "A: Bàogào huì zhíjiē jì dào gōngzuò dānwèi ma?",
+    "translation": "A: O relatório será enviado diretamente para a unidade de trabalho?",
+    "tokens": [
+      "报告",
+      "会",
+      "直接",
+      "寄",
+      "到",
+      "工作",
+      "单位",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "报告",
+        "pinyin": "bàogào",
+        "meaning": "relatório"
+      },
+      {
+        "id": 2,
+        "word": "会",
+        "pinyin": "huì",
+        "meaning": "irá, vai (futuro)"
+      },
+      {
+        "id": 3,
+        "word": "直接",
+        "pinyin": "zhíjiē",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 4,
+        "word": "寄到",
+        "pinyin": "jì dào",
+        "meaning": "enviar para"
+      },
+      {
+        "id": 5,
+        "word": "工作单位",
+        "pinyin": "gōngzuò dānwèi",
+        "meaning": "local de trabalho, unidade de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不会，都是由本人去取，或者选择快递寄送。您现在需要我帮您预约吗？",
+    "pinyin": "B: Bú huì, dōu shì yóu běnrén qù qǔ, huòzhě xuǎnzé kuàidì jìsòng. Nín xiànzài xūyào wǒ bāng nín yùyuē ma?",
+    "translation": "B: Não, não será. Todos devem ser retirados pessoalmente, ou você pode optar pelo envio por correio expresso. Você precisa que eu agende para você agora?",
+    "tokens": [
+      "不",
+      "会",
+      "都",
+      "是",
+      "由",
+      "本人",
+      "去",
+      "取",
+      "或者",
+      "选择",
+      "快递",
+      "寄送",
+      "您",
+      "现在",
+      "需要",
+      "我",
+      "帮",
+      "您",
+      "预约",
+      "吗"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不会",
+        "pinyin": "bú huì",
+        "meaning": "não, não irá"
+      },
+      {
+        "id": 2,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos"
+      },
+      {
+        "id": 3,
+        "word": "是由",
+        "pinyin": "shì yóu",
+        "meaning": "é por (passiva)"
+      },
+      {
+        "id": 4,
+        "word": "本人",
+        "pinyin": "běnrén",
+        "meaning": "a própria pessoa, pessoalmente"
+      },
+      {
+        "id": 5,
+        "word": "去取",
+        "pinyin": "qù qǔ",
+        "meaning": "ir buscar/retirar"
+      },
+      {
+        "id": 6,
+        "word": "或者",
+        "pinyin": "huòzhě",
+        "meaning": "ou"
+      },
+      {
+        "id": 7,
+        "word": "选择",
+        "pinyin": "xuǎnzé",
+        "meaning": "escolher"
+      },
+      {
+        "id": 8,
+        "word": "快递",
+        "pinyin": "kuàidì",
+        "meaning": "correio expresso"
+      },
+      {
+        "id": 9,
+        "word": "寄送",
+        "pinyin": "jìsòng",
+        "meaning": "enviar, entregar"
+      },
+      {
+        "id": 10,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 11,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 12,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 13,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 14,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 15,
+        "word": "预约",
+        "pinyin": "yùyuē",
+        "meaning": "agendar, marcar"
+      },
+      {
+        "id": 16,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300284210-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 约下周一吧。",
+    "pinyin": "A: Yuē xiàzhōuyī ba.",
+    "translation": "A: Agende para a próxima segunda-feira.",
+    "tokens": [
+      "约",
+      "下周一",
+      "吧"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "约",
+        "pinyin": "yuē",
+        "meaning": "agendar, marcar"
+      },
+      {
+        "id": 2,
+        "word": "下周一",
+        "pinyin": "xiàzhōuyī",
+        "meaning": "próxima segunda-feira"
+      },
+      {
+        "id": 3,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula (sugestão, proposta)"
+      }
+    ],
+    "id": "local-1772300284210-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的。请留下您的基本信息。",
+    "pinyin": "B: Hǎo de. Qǐng liú xià nín de jīběn xìnxī.",
+    "translation": "B: Ok. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "好",
+      "的",
+      "请",
+      "留",
+      "下",
+      "您",
+      "的",
+      "基本",
+      "信息"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "请",
+        "pinyin": "qǐng",
+        "meaning": "por favor"
+      },
+      {
+        "id": 3,
+        "word": "留下",
+        "pinyin": "liú xià",
+        "meaning": "deixar (para trás, registar)"
+      },
+      {
+        "id": 4,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 5,
+        "word": "基本信息",
+        "pinyin": "jīběn xìnxī",
+        "meaning": "informações básicas"
+      }
+    ],
+    "id": "local-1772300284210-11",
+    "language": "Chinês"
+  }
+]

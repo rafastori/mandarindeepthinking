@@ -1,0 +1,806 @@
+[
+  {
+    "chinese": "A: Xiao Wang, hai guardato la mia email?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, você olhou meu e-mail?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "hai",
+      "guardato",
+      "la",
+      "mia",
+      "email",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "guardato",
+        "pinyin": "",
+        "meaning": "olhou"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": "",
+        "meaning": "e-mail"
+      }
+    ],
+    "id": "local-1772301068133-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ci sono domande?",
+    "pinyin": "",
+    "translation": "Há alguma pergunta?",
+    "tokens": [
+      "Ci",
+      "sono",
+      "domande",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "domande",
+        "pinyin": "",
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1772301068133-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ho guardato quella email.",
+    "pinyin": "",
+    "translation": "B: Eu olhei aquele e-mail.",
+    "tokens": [
+      "B:",
+      "Ho",
+      "guardato",
+      "quella",
+      "email",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "guardato",
+        "pinyin": "",
+        "meaning": "olhou"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": "",
+        "meaning": "e-mail"
+      }
+    ],
+    "id": "local-1772301068133-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Era molto dettagliata.",
+    "pinyin": "",
+    "translation": "Era muito detalhada.",
+    "tokens": [
+      "Era",
+      "molto",
+      "dettagliata",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "dettagliata",
+        "pinyin": "",
+        "meaning": "detalhada"
+      }
+    ],
+    "id": "local-1772301068133-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "In pratica capisco di cosa si tratta il lavoro.",
+    "pinyin": "",
+    "translation": "Na prática, entendo do que se trata o trabalho.",
+    "tokens": [
+      "In",
+      "pratica",
+      "capisco",
+      "di",
+      "cosa",
+      "si",
+      "tratta",
+      "il",
+      "lavoro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "capisco",
+        "pinyin": "",
+        "meaning": "entendo"
+      },
+      {
+        "id": 6,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772301068133-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho qui un elenco delle mansioni di routine.",
+    "pinyin": "",
+    "translation": "A: Tenho aqui uma lista das tarefas de rotina.",
+    "tokens": [
+      "A:",
+      "Ho",
+      "qui",
+      "un",
+      "elenco",
+      "delle",
+      "mansioni",
+      "di",
+      "routine",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "elenco",
+        "pinyin": "",
+        "meaning": "lista"
+      },
+      {
+        "id": 8,
+        "word": "mansioni di routine",
+        "pinyin": "",
+        "meaning": "tarefas de rotina"
+      }
+    ],
+    "id": "local-1772301068133-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Elenca il mio programma di lavoro da lunedì a venerdì.",
+    "pinyin": "",
+    "translation": "Lista meu programa de trabalho de segunda a sexta-feira.",
+    "tokens": [
+      "Elenca",
+      "il",
+      "mio",
+      "programma",
+      "di",
+      "lavoro",
+      "da",
+      "lunedì",
+      "a",
+      "venerdì",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "programma di lavoro",
+        "pinyin": "",
+        "meaning": "agenda de trabalho"
+      },
+      {
+        "id": 10,
+        "word": "lunedì",
+        "pinyin": "",
+        "meaning": "segunda-feira"
+      },
+      {
+        "id": 11,
+        "word": "venerdì",
+        "pinyin": "",
+        "meaning": "sexta-feira"
+      }
+    ],
+    "id": "local-1772301068133-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Puoi farci riferimento per organizzare il tuo lavoro futuro.",
+    "pinyin": "",
+    "translation": "Você pode usá-lo como referência para organizar seu trabalho futuro.",
+    "tokens": [
+      "Puoi",
+      "farci",
+      "riferimento",
+      "per",
+      "organizzare",
+      "il",
+      "tuo",
+      "lavoro",
+      "futuro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "farci riferimento",
+        "pinyin": "",
+        "meaning": "usá-lo como referência"
+      },
+      {
+        "id": 13,
+        "word": "organizzare",
+        "pinyin": "",
+        "meaning": "organizar"
+      },
+      {
+        "id": 6,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 14,
+        "word": "futuro",
+        "pinyin": "",
+        "meaning": "futuro"
+      }
+    ],
+    "id": "local-1772301068133-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie.",
+    "pinyin": "",
+    "translation": "B: Obrigado.",
+    "tokens": [
+      "B:",
+      "Grazie",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "Grazie",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772301068133-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ah sì, ieri ho ricevuto un'email da un cliente che ha a che fare con le vendite.",
+    "pinyin": "",
+    "translation": "Ah sim, ontem recebi um e-mail de um cliente que tem a ver com vendas.",
+    "tokens": [
+      "Ah",
+      "sì",
+      ",",
+      "ieri",
+      "ho",
+      "ricevuto",
+      "un'email",
+      "da",
+      "un",
+      "cliente",
+      "che",
+      "ha",
+      "a",
+      "che",
+      "fare",
+      "con",
+      "le",
+      "vendite",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "ricevuto",
+        "pinyin": "",
+        "meaning": "recebido"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": "",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 17,
+        "word": "cliente",
+        "pinyin": "",
+        "meaning": "cliente"
+      },
+      {
+        "id": 18,
+        "word": "vendite",
+        "pinyin": "",
+        "meaning": "vendas"
+      }
+    ],
+    "id": "local-1772301068133-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Come la gestisco?",
+    "pinyin": "",
+    "translation": "Como eu lido com isso?",
+    "tokens": [
+      "Come",
+      "la",
+      "gestisco",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "gestisco",
+        "pinyin": "",
+        "meaning": "gerencio/lido"
+      }
+    ],
+    "id": "local-1772301068133-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non siamo responsabili delle vendite, quindi può essere passata direttamente a Li Ming.",
+    "pinyin": "",
+    "translation": "A: Não somos responsáveis pelas vendas, então pode ser repassado diretamente para Li Ming.",
+    "tokens": [
+      "A:",
+      "Non",
+      "siamo",
+      "responsabili",
+      "delle",
+      "vendite",
+      ",",
+      "quindi",
+      "può",
+      "essere",
+      "passata",
+      "direttamente",
+      "a",
+      "Li",
+      "Ming",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "responsabili",
+        "pinyin": "",
+        "meaning": "responsáveis"
+      },
+      {
+        "id": 18,
+        "word": "vendite",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 21,
+        "word": "passata",
+        "pinyin": "",
+        "meaning": "repassada"
+      },
+      {
+        "id": 22,
+        "word": "direttamente",
+        "pinyin": "",
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772301068133-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Il suo indirizzo email è nell'elenco delle informazioni di contatto dei dipendenti.",
+    "pinyin": "",
+    "translation": "O endereço de e-mail dele está na lista de informações de contato dos funcionários.",
+    "tokens": [
+      "Il",
+      "suo",
+      "indirizzo",
+      "email",
+      "è",
+      "nell'elenco",
+      "delle",
+      "informazioni",
+      "di",
+      "contatto",
+      "dei",
+      "dipendenti",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 23,
+        "word": "indirizzo email",
+        "pinyin": "",
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 7,
+        "word": "elenco",
+        "pinyin": "",
+        "meaning": "lista"
+      },
+      {
+        "id": 24,
+        "word": "informazioni di contatto",
+        "pinyin": "",
+        "meaning": "informações de contato"
+      },
+      {
+        "id": 25,
+        "word": "dipendenti",
+        "pinyin": "",
+        "meaning": "funcionários"
+      }
+    ],
+    "id": "local-1772301068133-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: E per le domande tecniche?",
+    "pinyin": "",
+    "translation": "B: E para as perguntas técnicas?",
+    "tokens": [
+      "B:",
+      "E",
+      "per",
+      "le",
+      "domande",
+      "tecniche",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "domande",
+        "pinyin": "",
+        "meaning": "perguntas"
+      },
+      {
+        "id": 26,
+        "word": "tecniche",
+        "pinyin": "",
+        "meaning": "técnicas"
+      }
+    ],
+    "id": "local-1772301068133-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Huang Jia è responsabile del dipartimento tecnico.",
+    "pinyin": "",
+    "translation": "A: Huang Jia é responsável pelo departamento técnico.",
+    "tokens": [
+      "A:",
+      "Huang",
+      "Jia",
+      "è",
+      "responsabile",
+      "del",
+      "dipartimento",
+      "tecnico",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "responsabile",
+        "pinyin": "",
+        "meaning": "responsável"
+      },
+      {
+        "id": 28,
+        "word": "dipartimento tecnico",
+        "pinyin": "",
+        "meaning": "departamento técnico"
+      }
+    ],
+    "id": "local-1772301068133-14",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Va bene passargliela.",
+    "pinyin": "",
+    "translation": "Tudo bem repassá-la para ele.",
+    "tokens": [
+      "Va",
+      "bene",
+      "passargliela",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "passargliela",
+        "pinyin": "",
+        "meaning": "repassá-la para ele/ela"
+      }
+    ],
+    "id": "local-1772301068133-15",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ma non li conosco.",
+    "pinyin": "",
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "B:",
+      "Ma",
+      "non",
+      "li",
+      "conosco",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "conosco",
+        "pinyin": "",
+        "meaning": "conheço"
+      }
+    ],
+    "id": "local-1772301068133-16",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non preoccuparti, ho già inviato un'email ai colleghi stamattina.",
+    "pinyin": "",
+    "translation": "A: Não se preocupe, eu já enviei um e-mail aos colegas esta manhã.",
+    "tokens": [
+      "A:",
+      "Non",
+      "preoccuparti",
+      ",",
+      "ho",
+      "già",
+      "inviato",
+      "un'email",
+      "ai",
+      "colleghi",
+      "stamattina",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "preoccuparti",
+        "pinyin": "",
+        "meaning": "preocupar-se"
+      },
+      {
+        "id": 32,
+        "word": "inviato",
+        "pinyin": "",
+        "meaning": "enviado"
+      },
+      {
+        "id": 2,
+        "word": "email",
+        "pinyin": "",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 33,
+        "word": "colleghi",
+        "pinyin": "",
+        "meaning": "colegas"
+      },
+      {
+        "id": 34,
+        "word": "stamattina",
+        "pinyin": "",
+        "meaning": "esta manhã"
+      }
+    ],
+    "id": "local-1772301068133-17",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Questo pomeriggio organizzerò un'altra riunione di passaggio di consegne, per presentarti di persona a tutti.",
+    "pinyin": "",
+    "translation": "Esta tarde organizarei outra reunião de transição, para apresentá-lo pessoalmente a todos.",
+    "tokens": [
+      "Questo",
+      "pomeriggio",
+      "organizzerò",
+      "un'altra",
+      "riunione",
+      "di",
+      "passaggio",
+      "di",
+      "consegne",
+      ",",
+      "per",
+      "presentarti",
+      "di",
+      "persona",
+      "a",
+      "tutti",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 35,
+        "word": "pomeriggio",
+        "pinyin": "",
+        "meaning": "tarde"
+      },
+      {
+        "id": 36,
+        "word": "organizzerò",
+        "pinyin": "",
+        "meaning": "organizarei"
+      },
+      {
+        "id": 37,
+        "word": "riunione di passaggio di consegne",
+        "pinyin": "",
+        "meaning": "reunião de transição/passagem de bastão"
+      },
+      {
+        "id": 38,
+        "word": "presentarti",
+        "pinyin": "",
+        "meaning": "apresentar-lhe"
+      },
+      {
+        "id": 39,
+        "word": "di persona",
+        "pinyin": "",
+        "meaning": "pessoalmente"
+      }
+    ],
+    "id": "local-1772301068133-18",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie mille.",
+    "pinyin": "",
+    "translation": "B: Muito obrigado.",
+    "tokens": [
+      "B:",
+      "Grazie",
+      "mille",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "Grazie",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 40,
+        "word": "mille",
+        "pinyin": "",
+        "meaning": "mil/muito"
+      }
+    ],
+    "id": "local-1772301068133-19",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È una mia responsabilità.",
+    "pinyin": "",
+    "translation": "A: É minha responsabilidade.",
+    "tokens": [
+      "A:",
+      "È",
+      "una",
+      "mia",
+      "responsabilità",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 41,
+        "word": "responsabilità",
+        "pinyin": "",
+        "meaning": "responsabilidade"
+      }
+    ],
+    "id": "local-1772301068133-20",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Ho già messo tutti i documenti di passaggio di consegne nel file \"Condiviso\".",
+    "pinyin": "",
+    "translation": "Já coloquei todos os documentos de transição no arquivo \"Compartilhado\".",
+    "tokens": [
+      "Ho",
+      "già",
+      "messo",
+      "tutti",
+      "i",
+      "documenti",
+      "di",
+      "passaggio",
+      "di",
+      "consegne",
+      "nel",
+      "file",
+      "\"Condiviso\"",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "messo",
+        "pinyin": "",
+        "meaning": "coloquei"
+      },
+      {
+        "id": 43,
+        "word": "documenti di passaggio di consegne",
+        "pinyin": "",
+        "meaning": "documentos de transição"
+      },
+      {
+        "id": 44,
+        "word": "file",
+        "pinyin": "",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 45,
+        "word": "Condiviso",
+        "pinyin": "",
+        "meaning": "Compartilhado"
+      }
+    ],
+    "id": "local-1772301068133-21",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Se hai ancora domande, puoi anche contattarmi telefonicamente.",
+    "pinyin": "",
+    "translation": "Se você ainda tiver perguntas, pode me contatar por telefone.",
+    "tokens": [
+      "Se",
+      "hai",
+      "ancora",
+      "domande",
+      ",",
+      "puoi",
+      "anche",
+      "contattarmi",
+      "telefonicamente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "domande",
+        "pinyin": "",
+        "meaning": "perguntas"
+      },
+      {
+        "id": 46,
+        "word": "contattarmi",
+        "pinyin": "",
+        "meaning": "me contatar"
+      },
+      {
+        "id": 47,
+        "word": "telefonicamente",
+        "pinyin": "",
+        "meaning": "por telefone"
+      }
+    ],
+    "id": "local-1772301068133-22",
+    "language": "Italiano"
+  }
+]

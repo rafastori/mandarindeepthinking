@@ -1,0 +1,638 @@
+[
+  {
+    "chinese": "A: Ehi, fratello. Sei libero questo fine settimana? Vuoi vederci?",
+    "pinyin": "",
+    "translation": "A: E aí, irmão. Você está livre neste fim de semana? Quer nos ver?",
+    "tokens": [
+      "A:",
+      "Ehi,",
+      "fratello.",
+      "Sei",
+      "libero",
+      "questo",
+      "fine",
+      "settimana?",
+      "Vuoi",
+      "vederci?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ehi",
+        "pinyin": "",
+        "meaning": "Oi, E aí"
+      },
+      {
+        "id": 1,
+        "word": "fratello",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "libero",
+        "pinyin": "",
+        "meaning": "livre"
+      },
+      {
+        "id": 3,
+        "word": "questo fine settimana",
+        "pinyin": "",
+        "meaning": "neste fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "Vuoi",
+        "pinyin": "",
+        "meaning": "Você quer (do verbo volere)"
+      },
+      {
+        "id": 5,
+        "word": "vederci",
+        "pinyin": "",
+        "meaning": "nos ver (vedere + ci)"
+      }
+    ],
+    "id": "local-1772297981134-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Perché vuoi vederci?",
+    "pinyin": "",
+    "translation": "B: Por que você quer nos ver?",
+    "tokens": [
+      "B:",
+      "Perché",
+      "vuoi",
+      "vederci?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Perché",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 1,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "Você quer"
+      },
+      {
+        "id": 2,
+        "word": "vederci",
+        "pinyin": "",
+        "meaning": "nos ver"
+      }
+    ],
+    "id": "local-1772297981134-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Hehe! Mi sposo, fratello. Ti sto dando un invito!",
+    "pinyin": "",
+    "translation": "A: Hehe! Vou me casar, irmão. Estou te dando um convite!",
+    "tokens": [
+      "A:",
+      "Hehe!",
+      "Mi",
+      "sposo,",
+      "fratello.",
+      "Ti",
+      "sto",
+      "dando",
+      "un",
+      "invito!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Mi sposo",
+        "pinyin": "",
+        "meaning": "Eu me caso / Vou me casar"
+      },
+      {
+        "id": 1,
+        "word": "fratello",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "Ti sto dando",
+        "pinyin": "",
+        "meaning": "Estou te dando"
+      },
+      {
+        "id": 3,
+        "word": "invito",
+        "pinyin": "",
+        "meaning": "convite"
+      }
+    ],
+    "id": "local-1772297981134-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Eh?! Congratulazioni! Quanti tavoli stai organizzando?",
+    "pinyin": "",
+    "translation": "B: Hã?! Parabéns! Quantas mesas você está organizando?",
+    "tokens": [
+      "B:",
+      "Eh?!",
+      "Congratulazioni!",
+      "Quanti",
+      "tavoli",
+      "stai",
+      "organizzando?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Congratulazioni",
+        "pinyin": "",
+        "meaning": "Parabéns"
+      },
+      {
+        "id": 1,
+        "word": "Quanti",
+        "pinyin": "",
+        "meaning": "Quantos"
+      },
+      {
+        "id": 2,
+        "word": "tavoli",
+        "pinyin": "",
+        "meaning": "mesas"
+      },
+      {
+        "id": 3,
+        "word": "stai organizzando",
+        "pinyin": "",
+        "meaning": "está organizando"
+      }
+    ],
+    "id": "local-1772297981134-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: 12 tavoli. Oggigiorno è difficile prenotare un hotel ed è anche difficile trovare un wedding planner. L'abbiamo pianificato un anno fa.",
+    "pinyin": "",
+    "translation": "A: 12 mesas. Hoje em dia é difícil reservar um hotel e é também difícil encontrar um wedding planner. Planejamos isso há um ano.",
+    "tokens": [
+      "A:",
+      "12",
+      "tavoli.",
+      "Oggigiorno",
+      "è",
+      "difficile",
+      "prenotare",
+      "un",
+      "hotel",
+      "ed",
+      "è",
+      "anche",
+      "difficile",
+      "trovare",
+      "un",
+      "wedding",
+      "planner.",
+      "L'abbiamo",
+      "pianificato",
+      "un",
+      "anno",
+      "fa."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "tavoli",
+        "pinyin": "",
+        "meaning": "mesas"
+      },
+      {
+        "id": 1,
+        "word": "Oggigiorno",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "difficile",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 3,
+        "word": "prenotare",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 4,
+        "word": "hotel",
+        "pinyin": "",
+        "meaning": "hotel"
+      },
+      {
+        "id": 5,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 6,
+        "word": "trovare",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 7,
+        "word": "wedding planner",
+        "pinyin": "",
+        "meaning": "planejador de casamento / cerimonialista"
+      },
+      {
+        "id": 8,
+        "word": "L'abbiamo pianificato",
+        "pinyin": "",
+        "meaning": "Nós o planejamos"
+      },
+      {
+        "id": 9,
+        "word": "un anno fa",
+        "pinyin": "",
+        "meaning": "há um ano"
+      }
+    ],
+    "id": "local-1772297981134-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non c'è niente da fare. Potreste fare un \"destination wedding\"!",
+    "pinyin": "",
+    "translation": "B: Não há nada a fazer. Vocês poderiam fazer um \"destination wedding\"!",
+    "tokens": [
+      "B:",
+      "Non",
+      "c'è",
+      "niente",
+      "da",
+      "fare.",
+      "Potreste",
+      "fare",
+      "un",
+      "\"destination",
+      "wedding\"!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Non c'è niente da fare",
+        "pinyin": "",
+        "meaning": "Não há nada a fazer"
+      },
+      {
+        "id": 1,
+        "word": "Potreste",
+        "pinyin": "",
+        "meaning": "Vocês poderiam (do verbo potere)"
+      },
+      {
+        "id": 2,
+        "word": "fare",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "destination wedding",
+        "pinyin": "",
+        "meaning": "casamento de destino"
+      }
+    ],
+    "id": "local-1772297981134-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: I genitori non lo permetteranno. Il loro modo di pensare è così tradizionale.",
+    "pinyin": "",
+    "translation": "A: Os pais não permitirão. O modo de pensar deles é tão tradicional.",
+    "tokens": [
+      "A:",
+      "I",
+      "genitori",
+      "non",
+      "lo",
+      "permetteranno.",
+      "Il",
+      "loro",
+      "modo",
+      "di",
+      "pensare",
+      "è",
+      "così",
+      "tradizionale."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "genitori",
+        "pinyin": "",
+        "meaning": "pais"
+      },
+      {
+        "id": 1,
+        "word": "non permetteranno",
+        "pinyin": "",
+        "meaning": "não permitirão"
+      },
+      {
+        "id": 2,
+        "word": "loro",
+        "pinyin": "",
+        "meaning": "deles"
+      },
+      {
+        "id": 3,
+        "word": "modo di pensare",
+        "pinyin": "",
+        "meaning": "modo de pensar"
+      },
+      {
+        "id": 4,
+        "word": "così",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 5,
+        "word": "tradizionale",
+        "pinyin": "",
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772297981134-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quindi, hai intenzione di andare in luna di miele dopo il matrimonio?",
+    "pinyin": "",
+    "translation": "B: Então, você pretende ir em lua de mel depois do casamento?",
+    "tokens": [
+      "B:",
+      "Quindi,",
+      "hai",
+      "intenzione",
+      "di",
+      "andare",
+      "in",
+      "luna",
+      "di",
+      "miele",
+      "dopo",
+      "il",
+      "matrimonio?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Quindi",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 1,
+        "word": "hai intenzione di",
+        "pinyin": "",
+        "meaning": "você pretende / tens intenção de"
+      },
+      {
+        "id": 2,
+        "word": "andare",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "luna di miele",
+        "pinyin": "",
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 4,
+        "word": "dopo",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 5,
+        "word": "matrimonio",
+        "pinyin": "",
+        "meaning": "casamento"
+      }
+    ],
+    "id": "local-1772297981134-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Certo, altrimenti mia moglie non sarà contenta.",
+    "pinyin": "",
+    "translation": "A: Claro, senão minha esposa não ficará feliz.",
+    "tokens": [
+      "A:",
+      "Certo,",
+      "altrimenti",
+      "mia",
+      "moglie",
+      "non",
+      "sarà",
+      "contenta."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Certo",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 1,
+        "word": "altrimenti",
+        "pinyin": "",
+        "meaning": "senão, caso contrário"
+      },
+      {
+        "id": 2,
+        "word": "mia moglie",
+        "pinyin": "",
+        "meaning": "minha esposa"
+      },
+      {
+        "id": 3,
+        "word": "non sarà contenta",
+        "pinyin": "",
+        "meaning": "não ficará feliz"
+      }
+    ],
+    "id": "local-1772297981134-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tua moglie è la ragazza che avevi all'università?",
+    "pinyin": "",
+    "translation": "B: Sua esposa é a garota que você tinha na universidade?",
+    "tokens": [
+      "B:",
+      "Tua",
+      "moglie",
+      "è",
+      "la",
+      "ragazza",
+      "che",
+      "avevi",
+      "all'università?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Tua moglie",
+        "pinyin": "",
+        "meaning": "Sua esposa"
+      },
+      {
+        "id": 1,
+        "word": "ragazza",
+        "pinyin": "",
+        "meaning": "garota, namorada"
+      },
+      {
+        "id": 2,
+        "word": "avevi",
+        "pinyin": "",
+        "meaning": "você tinha (do verbo avere)"
+      },
+      {
+        "id": 3,
+        "word": "università",
+        "pinyin": "",
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772297981134-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ci siamo lasciati molto tempo fa. Mia moglie si chiama Yuanyuan. Non fare un errore e chiamala in un altro modo!",
+    "pinyin": "",
+    "translation": "A: Nós terminamos há muito tempo. Minha esposa se chama Yuanyuan. Não cometa um erro e a chame de outra forma!",
+    "tokens": [
+      "A:",
+      "Ci",
+      "siamo",
+      "lasciati",
+      "molto",
+      "tempo",
+      "fa.",
+      "Mia",
+      "moglie",
+      "si",
+      "chiama",
+      "Yuanyuan.",
+      "Non",
+      "fare",
+      "un",
+      "errore",
+      "e",
+      "chiamala",
+      "in",
+      "un",
+      "altro",
+      "modo!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ci siamo lasciati",
+        "pinyin": "",
+        "meaning": "Nós nos separamos / terminamos"
+      },
+      {
+        "id": 1,
+        "word": "molto tempo fa",
+        "pinyin": "",
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 2,
+        "word": "Mia moglie",
+        "pinyin": "",
+        "meaning": "Minha esposa"
+      },
+      {
+        "id": 3,
+        "word": "si chiama",
+        "pinyin": "",
+        "meaning": "se chama"
+      },
+      {
+        "id": 4,
+        "word": "Non fare un errore",
+        "pinyin": "",
+        "meaning": "Não cometa um erro"
+      },
+      {
+        "id": 5,
+        "word": "chiamala",
+        "pinyin": "",
+        "meaning": "chame-a"
+      },
+      {
+        "id": 6,
+        "word": "in un altro modo",
+        "pinyin": "",
+        "meaning": "de outra forma"
+      }
+    ],
+    "id": "local-1772297981134-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ho capito. Ci vediamo questo fine settimana.",
+    "pinyin": "",
+    "translation": "B: Entendi. Nos vemos neste fim de semana.",
+    "tokens": [
+      "B:",
+      "Ho",
+      "capito.",
+      "Ci",
+      "vediamo",
+      "questo",
+      "fine",
+      "settimana."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ho capito",
+        "pinyin": "",
+        "meaning": "Entendi"
+      },
+      {
+        "id": 1,
+        "word": "Ci vediamo",
+        "pinyin": "",
+        "meaning": "Nos vemos"
+      },
+      {
+        "id": 2,
+        "word": "questo fine settimana",
+        "pinyin": "",
+        "meaning": "neste fim de semana"
+      }
+    ],
+    "id": "local-1772297981134-11",
+    "language": "Italiano"
+  }
+]

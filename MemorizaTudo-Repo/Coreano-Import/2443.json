@@ -1,0 +1,755 @@
+[
+  {
+    "chinese": "A: 야, 친구. 이번 주말에 시간 있어? 같이 만날래?",
+    "pinyin": "",
+    "translation": "A: Ei, amigo. Você tem tempo neste fim de semana? Queremos nos encontrar?",
+    "tokens": [
+      "야",
+      ",",
+      "친구",
+      ".",
+      "이번",
+      "주말",
+      "에",
+      "시간",
+      "있어",
+      "?",
+      "같이",
+      "만날래",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "야",
+        "pinyin": "",
+        "meaning": "Ei, olá (informal)"
+      },
+      {
+        "id": 2,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "이번",
+        "pinyin": "",
+        "meaning": "esta, esta vez"
+      },
+      {
+        "id": 4,
+        "word": "주말",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 5,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "tempo, hora"
+      },
+      {
+        "id": 6,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "ter, existir"
+      },
+      {
+        "id": 7,
+        "word": "같이",
+        "pinyin": "",
+        "meaning": "junto"
+      },
+      {
+        "id": 8,
+        "word": "만나다",
+        "pinyin": "",
+        "meaning": "encontrar"
+      }
+    ],
+    "id": "local-1772298079162-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 왜 만나고 싶은데?",
+    "pinyin": "",
+    "translation": "B: Por que você quer se encontrar?",
+    "tokens": [
+      "왜",
+      "만나고",
+      "싶은데",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "왜",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 10,
+        "word": "만나다",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 11,
+        "word": "싶다",
+        "pinyin": "",
+        "meaning": "querer"
+      }
+    ],
+    "id": "local-1772298079162-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 헤헤! 나 결혼해, 친구. 너한테 청첩장 주려고!",
+    "pinyin": "",
+    "translation": "A: Hehe! Eu vou me casar, amigo. Quero te dar o convite de casamento!",
+    "tokens": [
+      "헤헤",
+      "!",
+      "나",
+      "결혼해",
+      ",",
+      "친구",
+      ".",
+      "너한테",
+      "청첩장",
+      "주려고",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "헤헤",
+        "pinyin": "",
+        "meaning": "hehe (som de risada)"
+      },
+      {
+        "id": 13,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 14,
+        "word": "결혼하다",
+        "pinyin": "",
+        "meaning": "casar"
+      },
+      {
+        "id": 15,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 16,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 17,
+        "word": "청첩장",
+        "pinyin": "",
+        "meaning": "convite de casamento"
+      },
+      {
+        "id": 18,
+        "word": "주다",
+        "pinyin": "",
+        "meaning": "dar"
+      },
+      {
+        "id": 19,
+        "word": "~려고",
+        "pinyin": "",
+        "meaning": "para, a fim de"
+      }
+    ],
+    "id": "local-1772298079162-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 헉?! 축하해! 테이블 몇 개 준비했어?",
+    "pinyin": "",
+    "translation": "B: Hã?! Parabéns! Quantas mesas você preparou?",
+    "tokens": [
+      "헉",
+      "?!",
+      "축하해",
+      "!",
+      "테이블",
+      "몇",
+      "개",
+      "준비했어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 20,
+        "word": "헉",
+        "pinyin": "",
+        "meaning": "(som de surpresa, choque)"
+      },
+      {
+        "id": 21,
+        "word": "축하하다",
+        "pinyin": "",
+        "meaning": "parabenizar"
+      },
+      {
+        "id": 22,
+        "word": "테이블",
+        "pinyin": "",
+        "meaning": "mesa (do inglês 'table')"
+      },
+      {
+        "id": 23,
+        "word": "몇",
+        "pinyin": "",
+        "meaning": "quantos"
+      },
+      {
+        "id": 24,
+        "word": "개",
+        "pinyin": "",
+        "meaning": "contador de itens"
+      },
+      {
+        "id": 25,
+        "word": "준비하다",
+        "pinyin": "",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772298079162-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 12개 테이블. 요즘은 호텔 예약하기도 힘들고 웨딩 플래너 구하기도 힘들어. 1년 전에 계획했어.",
+    "pinyin": "",
+    "translation": "A: 12 mesas. Hoje em dia é difícil reservar um hotel e também é difícil encontrar um planejador de casamentos. Eu planejei há 1 ano.",
+    "tokens": [
+      "12개",
+      "테이블",
+      ".",
+      "요즘은",
+      "호텔",
+      "예약하기도",
+      "힘들고",
+      "웨딩",
+      "플래너",
+      "구하기도",
+      "힘들어",
+      ".",
+      "1년",
+      "전",
+      "에",
+      "계획했어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "12개",
+        "pinyin": "",
+        "meaning": "12 unidades"
+      },
+      {
+        "id": 27,
+        "word": "테이블",
+        "pinyin": "",
+        "meaning": "mesa"
+      },
+      {
+        "id": 28,
+        "word": "요즘",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 29,
+        "word": "호텔",
+        "pinyin": "",
+        "meaning": "hotel (do inglês 'hotel')"
+      },
+      {
+        "id": 30,
+        "word": "예약하다",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 31,
+        "word": "힘들다",
+        "pinyin": "",
+        "meaning": "ser difícil"
+      },
+      {
+        "id": 32,
+        "word": "웨딩",
+        "pinyin": "",
+        "meaning": "casamento (do inglês 'wedding')"
+      },
+      {
+        "id": 33,
+        "word": "플래너",
+        "pinyin": "",
+        "meaning": "planejador (do inglês 'planner')"
+      },
+      {
+        "id": 34,
+        "word": "구하다",
+        "pinyin": "",
+        "meaning": "encontrar, obter"
+      },
+      {
+        "id": 35,
+        "word": "1년",
+        "pinyin": "",
+        "meaning": "um ano"
+      },
+      {
+        "id": 36,
+        "word": "전",
+        "pinyin": "",
+        "meaning": "antes"
+      },
+      {
+        "id": 37,
+        "word": "계획하다",
+        "pinyin": "",
+        "meaning": "planejar"
+      }
+    ],
+    "id": "local-1772298079162-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어쩔 수 없지. 데스티네이션 웨딩이라도 할 수 있었잖아!",
+    "pinyin": "",
+    "translation": "B: Não tem jeito. Você poderia ter feito um casamento de destino, afinal!",
+    "tokens": [
+      "어쩔",
+      "수",
+      "없지",
+      ".",
+      "데스티네이션",
+      "웨딩이라도",
+      "할",
+      "수",
+      "있었잖아",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "어쩔 수 없다",
+        "pinyin": "",
+        "meaning": "não tem jeito, não há o que fazer"
+      },
+      {
+        "id": 39,
+        "word": "데스티네이션",
+        "pinyin": "",
+        "meaning": "destino (do inglês 'destination')"
+      },
+      {
+        "id": 40,
+        "word": "웨딩",
+        "pinyin": "",
+        "meaning": "casamento (do inglês 'wedding')"
+      },
+      {
+        "id": 41,
+        "word": "~라도",
+        "pinyin": "",
+        "meaning": "mesmo que, ao menos"
+      },
+      {
+        "id": 42,
+        "word": "~ㄹ 수 있다",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 43,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772298079162-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 부모님이 허락 안 하실 거야. 생각이 너무 전통적이셔.",
+    "pinyin": "",
+    "translation": "A: Meus pais não vão permitir. Eles têm pensamentos muito tradicionais.",
+    "tokens": [
+      "부모님",
+      "이",
+      "허락",
+      "안",
+      "하실",
+      "거야",
+      ".",
+      "생각",
+      "이",
+      "너무",
+      "전통적",
+      "이셔",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "부모님",
+        "pinyin": "",
+        "meaning": "pais (honorífico)"
+      },
+      {
+        "id": 45,
+        "word": "허락하다",
+        "pinyin": "",
+        "meaning": "permitir"
+      },
+      {
+        "id": 46,
+        "word": "안",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 47,
+        "word": "~ㄹ 거야",
+        "pinyin": "",
+        "meaning": "irá (fazer)"
+      },
+      {
+        "id": 48,
+        "word": "생각",
+        "pinyin": "",
+        "meaning": "pensamento, ideia"
+      },
+      {
+        "id": 49,
+        "word": "너무",
+        "pinyin": "",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 50,
+        "word": "전통적이다",
+        "pinyin": "",
+        "meaning": "ser tradicional"
+      }
+    ],
+    "id": "local-1772298079162-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 결혼 후에 신혼여행 갈 계획이야?",
+    "pinyin": "",
+    "translation": "B: Então, você planeja ir para uma lua de mel depois do casamento?",
+    "tokens": [
+      "그럼",
+      "결혼",
+      "후",
+      "에",
+      "신혼여행",
+      "갈",
+      "계획이야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 51,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 52,
+        "word": "결혼",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 53,
+        "word": "후",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 54,
+        "word": "신혼여행",
+        "pinyin": "",
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 55,
+        "word": "가다",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 56,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      }
+    ],
+    "id": "local-1772298079162-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 당연하지, 안 그러면 아내가 행복하지 않을 거야.",
+    "pinyin": "",
+    "translation": "A: Claro, senão minha esposa não será feliz.",
+    "tokens": [
+      "당연하지",
+      ",",
+      "안",
+      "그러면",
+      "아내",
+      "가",
+      "행복하지",
+      "않을",
+      "거야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 57,
+        "word": "당연하다",
+        "pinyin": "",
+        "meaning": "ser óbvio, claro"
+      },
+      {
+        "id": 58,
+        "word": "안 그러면",
+        "pinyin": "",
+        "meaning": "senão, caso contrário"
+      },
+      {
+        "id": 59,
+        "word": "아내",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 60,
+        "word": "행복하다",
+        "pinyin": "",
+        "meaning": "ser feliz"
+      },
+      {
+        "id": 61,
+        "word": "않다",
+        "pinyin": "",
+        "meaning": "não (fazer/ser)"
+      }
+    ],
+    "id": "local-1772298079162-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네 아내, 대학교 때 사귀던 여자친구야?",
+    "pinyin": "",
+    "translation": "B: Sua esposa, é a namorada que você namorava na faculdade?",
+    "tokens": [
+      "네",
+      "아내",
+      ",",
+      "대학교",
+      "때",
+      "사귀던",
+      "여자친구야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 62,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "seu, sua"
+      },
+      {
+        "id": 63,
+        "word": "아내",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 64,
+        "word": "대학교",
+        "pinyin": "",
+        "meaning": "universidade"
+      },
+      {
+        "id": 65,
+        "word": "때",
+        "pinyin": "",
+        "meaning": "tempo, quando"
+      },
+      {
+        "id": 66,
+        "word": "사귀다",
+        "pinyin": "",
+        "meaning": "namorar, sair com"
+      },
+      {
+        "id": 67,
+        "word": "여자친구",
+        "pinyin": "",
+        "meaning": "namorada"
+      }
+    ],
+    "id": "local-1772298079162-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 우리는 오래전에 헤어졌어. 내 아내 이름은 위안위안이야. 실수해서 딴 이름으로 부르지 마!",
+    "pinyin": "",
+    "translation": "A: Nós terminamos há muito tempo. O nome da minha esposa é Yuanyuan. Não cometa o erro de chamá-la por outro nome!",
+    "tokens": [
+      "우리",
+      "는",
+      "오래전",
+      "에",
+      "헤어졌어",
+      ".",
+      "내",
+      "아내",
+      "이름",
+      "은",
+      "위안위안",
+      "이야",
+      ".",
+      "실수해서",
+      "딴",
+      "이름",
+      "으로",
+      "부르지",
+      "마",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 68,
+        "word": "우리",
+        "pinyin": "",
+        "meaning": "nós"
+      },
+      {
+        "id": 69,
+        "word": "오래전",
+        "pinyin": "",
+        "meaning": "muito tempo atrás"
+      },
+      {
+        "id": 70,
+        "word": "헤어지다",
+        "pinyin": "",
+        "meaning": "terminar (relacionamento), separar"
+      },
+      {
+        "id": 71,
+        "word": "내",
+        "pinyin": "",
+        "meaning": "meu, minha"
+      },
+      {
+        "id": 72,
+        "word": "아내",
+        "pinyin": "",
+        "meaning": "esposa"
+      },
+      {
+        "id": 73,
+        "word": "이름",
+        "pinyin": "",
+        "meaning": "nome"
+      },
+      {
+        "id": 74,
+        "word": "위안위안",
+        "pinyin": "",
+        "meaning": "Yuanyuan (nome próprio)"
+      },
+      {
+        "id": 75,
+        "word": "실수하다",
+        "pinyin": "",
+        "meaning": "cometer um erro"
+      },
+      {
+        "id": 76,
+        "word": "딴",
+        "pinyin": "",
+        "meaning": "outro, diferente"
+      },
+      {
+        "id": 77,
+        "word": "부르다",
+        "pinyin": "",
+        "meaning": "chamar"
+      },
+      {
+        "id": 78,
+        "word": "~지 마",
+        "pinyin": "",
+        "meaning": "não faça ~"
+      }
+    ],
+    "id": "local-1772298079162-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알았어. 주말에 보자.",
+    "pinyin": "",
+    "translation": "B: Entendi. Nos vemos no fim de semana.",
+    "tokens": [
+      "알았어",
+      ".",
+      "주말",
+      "에",
+      "보자",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 79,
+        "word": "알다",
+        "pinyin": "",
+        "meaning": "saber, entender"
+      },
+      {
+        "id": 80,
+        "word": "주말",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 81,
+        "word": "보다",
+        "pinyin": "",
+        "meaning": "ver"
+      },
+      {
+        "id": 82,
+        "word": "~자",
+        "pinyin": "",
+        "meaning": "vamos (fazer ~)"
+      }
+    ],
+    "id": "local-1772298079162-11",
+    "language": "Coreano"
+  }
+]

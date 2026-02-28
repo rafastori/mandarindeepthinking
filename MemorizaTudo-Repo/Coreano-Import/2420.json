@@ -1,0 +1,479 @@
+[
+  {
+    "chinese": "A: 통통아, 나 그날 누구 만났게?",
+    "pinyin": null,
+    "translation": "A: Tongtong, quem você acha que eu encontrei aquele dia?",
+    "tokens": [
+      "통통아",
+      "나",
+      "그날",
+      "누구",
+      "만났게?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "통통아",
+        "pinyin": "tongtong-a",
+        "meaning": "Tongtong (apelido, com partícula vocativa)"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 3,
+        "word": "그날",
+        "pinyin": "geu-nal",
+        "meaning": "aquele dia"
+      },
+      {
+        "id": 4,
+        "word": "누구",
+        "pinyin": "nu-gu",
+        "meaning": "quem"
+      },
+      {
+        "id": 5,
+        "word": "만나다",
+        "pinyin": "man-na-da",
+        "meaning": "encontrar, conhecer"
+      }
+    ],
+    "id": "local-1772296538994-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 누구?",
+    "pinyin": null,
+    "translation": "B: Quem?",
+    "tokens": [
+      "누구?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "누구",
+        "pinyin": "nu-gu",
+        "meaning": "quem"
+      }
+    ],
+    "id": "local-1772296538994-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 내 전 남자친구.",
+    "pinyin": null,
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "내",
+      "전",
+      "남자친구."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "내",
+        "pinyin": "nae",
+        "meaning": "meu/minha (informal)"
+      },
+      {
+        "id": 2,
+        "word": "전",
+        "pinyin": "jeon",
+        "meaning": "ex-, antigo"
+      },
+      {
+        "id": 3,
+        "word": "남자친구",
+        "pinyin": "nam-ja-chin-gu",
+        "meaning": "namorado"
+      }
+    ],
+    "id": "local-1772296538994-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 진짜? 말 걸어봤어?",
+    "pinyin": null,
+    "translation": "B: Sério? Você falou com ele?",
+    "tokens": [
+      "진짜?",
+      "말",
+      "걸어봤어?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "진짜",
+        "pinyin": "jin-jja",
+        "meaning": "sério, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "말 걸다",
+        "pinyin": "mal geol-da",
+        "meaning": "falar com, abordar"
+      }
+    ],
+    "id": "local-1772296538994-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니. 걔 여자랑 같이 있더라.",
+    "pinyin": null,
+    "translation": "A: Não. Ele estava com uma mulher.",
+    "tokens": [
+      "아니.",
+      "걔",
+      "여자랑",
+      "같이",
+      "있더라."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니",
+        "pinyin": "a-ni",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "걔",
+        "pinyin": "gyae",
+        "meaning": "ele/ela (informal)"
+      },
+      {
+        "id": 3,
+        "word": "여자",
+        "pinyin": "yeo-ja",
+        "meaning": "mulher"
+      },
+      {
+        "id": 4,
+        "word": "-랑",
+        "pinyin": "-rang",
+        "meaning": "com (partícula)"
+      },
+      {
+        "id": 5,
+        "word": "같이",
+        "pinyin": "ga-chi",
+        "meaning": "junto, com"
+      },
+      {
+        "id": 6,
+        "word": "있다",
+        "pinyin": "it-da",
+        "meaning": "estar, haver"
+      }
+    ],
+    "id": "local-1772296538994-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 너희 헤어지게 만든 그 내연녀?",
+    "pinyin": null,
+    "translation": "B: Aquela amante que fez vocês terminarem?",
+    "tokens": [
+      "너희",
+      "헤어지게",
+      "만든",
+      "그",
+      "내연녀?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "너희",
+        "pinyin": "neo-hui",
+        "meaning": "vocês (informal)"
+      },
+      {
+        "id": 2,
+        "word": "헤어지다",
+        "pinyin": "he-eo-ji-da",
+        "meaning": "terminar (um relacionamento), separar-se"
+      },
+      {
+        "id": 3,
+        "word": "만들다",
+        "pinyin": "man-deul-da",
+        "meaning": "fazer, criar"
+      },
+      {
+        "id": 4,
+        "word": "그",
+        "pinyin": "geu",
+        "meaning": "aquele(a)"
+      },
+      {
+        "id": 5,
+        "word": "내연녀",
+        "pinyin": "nae-yeon-nyeo",
+        "meaning": "amante, concubina"
+      }
+    ],
+    "id": "local-1772296538994-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니. 새로운 애로 바뀌었어.",
+    "pinyin": null,
+    "translation": "A: Não. Ele trocou por uma nova.",
+    "tokens": [
+      "아니.",
+      "새로운",
+      "애로",
+      "바뀌었어."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니",
+        "pinyin": "a-ni",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "새롭다",
+        "pinyin": "sae-rop-da",
+        "meaning": "ser novo (새로운: novo)"
+      },
+      {
+        "id": 3,
+        "word": "애",
+        "pinyin": "ae",
+        "meaning": "pessoa, criança (informal)"
+      },
+      {
+        "id": 4,
+        "word": "-로",
+        "pinyin": "-ro",
+        "meaning": "para, por, como (partícula)"
+      },
+      {
+        "id": 5,
+        "word": "바뀌다",
+        "pinyin": "bak-kwi-da",
+        "meaning": "mudar, ser trocado"
+      }
+    ],
+    "id": "local-1772296538994-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 엥? 또 양다리야? 그 여자 어때?",
+    "pinyin": null,
+    "translation": "B: O quê? De novo traindo? Como é aquela mulher?",
+    "tokens": [
+      "엥?",
+      "또",
+      "양다리야?",
+      "그",
+      "여자",
+      "어때?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "엥",
+        "pinyin": "eng",
+        "meaning": "O quê?, Hein? (som de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "또",
+        "pinyin": "tto",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 3,
+        "word": "양다리",
+        "pinyin": "yang-da-ri",
+        "meaning": "ter dois relacionamentos, trair"
+      },
+      {
+        "id": 4,
+        "word": "그",
+        "pinyin": "geu",
+        "meaning": "aquele(a)"
+      },
+      {
+        "id": 5,
+        "word": "여자",
+        "pinyin": "yeo-ja",
+        "meaning": "mulher"
+      },
+      {
+        "id": 6,
+        "word": "어떻다",
+        "pinyin": "eo-tteot-da",
+        "meaning": "como é (어때?: como é?)"
+      }
+    ],
+    "id": "local-1772296538994-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 되게 예쁘게 생겼는데, 성형한 티가 나더라.",
+    "pinyin": null,
+    "translation": "A: Ela era muito bonita, mas dava pra notar que ela fez cirurgia plástica.",
+    "tokens": [
+      "되게",
+      "예쁘게",
+      "생겼는데,",
+      "성형한",
+      "티가",
+      "나더라."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "되게",
+        "pinyin": "doe-ge",
+        "meaning": "muito, bastante (coloquial)"
+      },
+      {
+        "id": 2,
+        "word": "예쁘다",
+        "pinyin": "ye-ppeu-da",
+        "meaning": "ser bonito/a"
+      },
+      {
+        "id": 3,
+        "word": "생기다",
+        "pinyin": "saeng-gi-da",
+        "meaning": "nascer, ter aparência (예쁘게 생기다: ter aparência bonita)"
+      },
+      {
+        "id": 4,
+        "word": "성형",
+        "pinyin": "seong-hyeong",
+        "meaning": "cirurgia plástica"
+      },
+      {
+        "id": 5,
+        "word": "티",
+        "pinyin": "ti",
+        "meaning": "sinal, indício"
+      },
+      {
+        "id": 6,
+        "word": "나다",
+        "pinyin": "na-da",
+        "meaning": "aparecer, surgir (티가 나다: dar sinais de)"
+      }
+    ],
+    "id": "local-1772296538994-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 걔 진짜 별로다. 헤어지길 잘했네.",
+    "pinyin": null,
+    "translation": "B: Ele é realmente um lixo. Foi bom que você terminou.",
+    "tokens": [
+      "걔",
+      "진짜",
+      "별로다.",
+      "헤어지길",
+      "잘했네."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "걔",
+        "pinyin": "gyae",
+        "meaning": "ele/ela (informal)"
+      },
+      {
+        "id": 2,
+        "word": "진짜",
+        "pinyin": "jin-jja",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "별로다",
+        "pinyin": "byeol-lo-da",
+        "meaning": "não ser bom, ser ruim, ser 'meh'"
+      },
+      {
+        "id": 4,
+        "word": "헤어지다",
+        "pinyin": "he-eo-ji-da",
+        "meaning": "terminar (um relacionamento)"
+      },
+      {
+        "id": 5,
+        "word": "-길 잘하다",
+        "pinyin": "-gil jal-ha-da",
+        "meaning": "ter feito bem em"
+      }
+    ],
+    "id": "local-1772296538994-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그러게. 그때는 내가 눈이 멀었지 걔랑 사귀다니.",
+    "pinyin": null,
+    "translation": "A: Pois é. Naquela época eu estava cega por ter namorado com ele.",
+    "tokens": [
+      "그러게.",
+      "그때는",
+      "내가",
+      "눈이",
+      "멀었지",
+      "걔랑",
+      "사귀다니."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그러게",
+        "pinyin": "geu-reo-ge",
+        "meaning": "Pois é, eu concordo"
+      },
+      {
+        "id": 2,
+        "word": "그때",
+        "pinyin": "geu-ttae",
+        "meaning": "aquela época, então"
+      },
+      {
+        "id": 3,
+        "word": "나",
+        "pinyin": "na",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 4,
+        "word": "눈이 멀다",
+        "pinyin": "nu-ni meol-da",
+        "meaning": "ficar cego (literal/figurativo)"
+      },
+      {
+        "id": 5,
+        "word": "걔",
+        "pinyin": "gyae",
+        "meaning": "ele/ela (informal)"
+      },
+      {
+        "id": 6,
+        "word": "-랑",
+        "pinyin": "-rang",
+        "meaning": "com (partícula)"
+      },
+      {
+        "id": 7,
+        "word": "사귀다",
+        "pinyin": "sa-gwi-da",
+        "meaning": "namorar, sair com"
+      }
+    ],
+    "id": "local-1772296538994-10",
+    "language": "Coreano"
+  }
+]

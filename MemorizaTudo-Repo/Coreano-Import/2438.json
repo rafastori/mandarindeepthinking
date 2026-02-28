@@ -1,0 +1,516 @@
+[
+  {
+    "chinese": "A: 샤오천, 차 살 계획이야?",
+    "pinyin": "",
+    "translation": "A: Xiao Chen, você planeja comprar um carro?",
+    "tokens": [
+      "A:",
+      "샤오천",
+      ",",
+      "차",
+      "살",
+      "계획이야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오천",
+        "pinyin": "",
+        "meaning": "Xiao Chen (nome)"
+      },
+      {
+        "id": 2,
+        "word": "차",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 3,
+        "word": "사다",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      }
+    ],
+    "id": "local-1772297709952-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응! 샤오쑨, 너한테 의견을 물어볼 생각이었어.",
+    "pinyin": "",
+    "translation": "B: Sim! Xiao Sun, eu estava pensando em te perguntar sua opinião.",
+    "tokens": [
+      "B:",
+      "응",
+      "!",
+      "샤오쑨",
+      ",",
+      "너한테",
+      "의견을",
+      "물어볼",
+      "생각이었어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "샤오쑨",
+        "pinyin": "",
+        "meaning": "Xiao Sun (nome)"
+      },
+      {
+        "id": 3,
+        "word": "너한테",
+        "pinyin": "",
+        "meaning": "para você"
+      },
+      {
+        "id": 4,
+        "word": "의견",
+        "pinyin": "",
+        "meaning": "opinião"
+      },
+      {
+        "id": 5,
+        "word": "묻다",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 6,
+        "word": "생각",
+        "pinyin": "",
+        "meaning": "pensamento, ideia"
+      }
+    ],
+    "id": "local-1772297709952-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 예산은 대략 얼마 정도야?",
+    "pinyin": "",
+    "translation": "A: Qual é o seu orçamento, aproximadamente?",
+    "tokens": [
+      "A:",
+      "예산은",
+      "대략",
+      "얼마",
+      "정도야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "예산",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "대략",
+        "pinyin": "",
+        "meaning": "aproximadamente"
+      },
+      {
+        "id": 3,
+        "word": "얼마",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 4,
+        "word": "정도",
+        "pinyin": "",
+        "meaning": "grau, cerca de"
+      }
+    ],
+    "id": "local-1772297709952-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 등록비와 세금 포함해서 20만 위안 조금 넘어.",
+    "pinyin": "",
+    "translation": "B: Incluindo taxas de registro e impostos, um pouco mais de 200.000 yuans.",
+    "tokens": [
+      "B:",
+      "등록비와",
+      "세금",
+      "포함해서",
+      "20만",
+      "위안",
+      "조금",
+      "넘어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "등록비",
+        "pinyin": "",
+        "meaning": "taxa de registro"
+      },
+      {
+        "id": 2,
+        "word": "세금",
+        "pinyin": "",
+        "meaning": "imposto"
+      },
+      {
+        "id": 3,
+        "word": "포함하다",
+        "pinyin": "",
+        "meaning": "incluir"
+      },
+      {
+        "id": 4,
+        "word": "20만",
+        "pinyin": "",
+        "meaning": "200.000"
+      },
+      {
+        "id": 5,
+        "word": "위안",
+        "pinyin": "",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 6,
+        "word": "조금",
+        "pinyin": "",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 7,
+        "word": "넘다",
+        "pinyin": "",
+        "meaning": "exceder, passar"
+      }
+    ],
+    "id": "local-1772297709952-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 상하이 번호판을 달 거야, 아니면 외부 번호판을 달 거야?",
+    "pinyin": "",
+    "translation": "A: Você vai usar uma placa de Xangai ou uma placa de fora?",
+    "tokens": [
+      "A:",
+      "상하이",
+      "번호판을",
+      "달",
+      "거야",
+      ",",
+      "아니면",
+      "외부",
+      "번호판을",
+      "달",
+      "거야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai (cidade)"
+      },
+      {
+        "id": 2,
+        "word": "번호판",
+        "pinyin": "",
+        "meaning": "placa de carro"
+      },
+      {
+        "id": 3,
+        "word": "달다",
+        "pinyin": "",
+        "meaning": "anexar, colocar"
+      },
+      {
+        "id": 4,
+        "word": "아니면",
+        "pinyin": "",
+        "meaning": "ou (alternativa)"
+      },
+      {
+        "id": 5,
+        "word": "외부",
+        "pinyin": "",
+        "meaning": "externo, de fora"
+      }
+    ],
+    "id": "local-1772297709952-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 외부 번호판. 주말에만 쓸 생각이야. 평소에는 회사 버스를 타고 출퇴근해. 아주 편리해.",
+    "pinyin": "",
+    "translation": "B: Placa de fora. Pretendo usá-lo apenas nos fins de semana. Normalmente, vou para o trabalho de ônibus da empresa. É muito conveniente.",
+    "tokens": [
+      "B:",
+      "외부",
+      "번호판",
+      ".",
+      "주말에만",
+      "쓸",
+      "생각이야",
+      ".",
+      "평소에는",
+      "회사",
+      "버스를",
+      "타고",
+      "출퇴근해",
+      ".",
+      "아주",
+      "편리해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "외부",
+        "pinyin": "",
+        "meaning": "externo, de fora"
+      },
+      {
+        "id": 2,
+        "word": "번호판",
+        "pinyin": "",
+        "meaning": "placa de carro"
+      },
+      {
+        "id": 3,
+        "word": "주말",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 5,
+        "word": "생각",
+        "pinyin": "",
+        "meaning": "pensamento, ideia"
+      },
+      {
+        "id": 6,
+        "word": "평소",
+        "pinyin": "",
+        "meaning": "normalmente, habitualmente"
+      },
+      {
+        "id": 7,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 8,
+        "word": "버스",
+        "pinyin": "",
+        "meaning": "ônibus"
+      },
+      {
+        "id": 9,
+        "word": "타다",
+        "pinyin": "",
+        "meaning": "pegar (transporte), andar de"
+      },
+      {
+        "id": 10,
+        "word": "출퇴근하다",
+        "pinyin": "",
+        "meaning": "ir e vir do trabalho, fazer o trajeto casa-trabalho"
+      },
+      {
+        "id": 11,
+        "word": "아주",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 12,
+        "word": "편리하다",
+        "pinyin": "",
+        "meaning": "ser conveniente"
+      }
+    ],
+    "id": "local-1772297709952-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 어떤 종류의 차를 좋아해?",
+    "pinyin": "",
+    "translation": "A: Que tipo de carro você gosta?",
+    "tokens": [
+      "A:",
+      "어떤",
+      "종류의",
+      "차를",
+      "좋아해",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 2,
+        "word": "종류",
+        "pinyin": "",
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 3,
+        "word": "차",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 4,
+        "word": "좋아하다",
+        "pinyin": "",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772297709952-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 세단. 공간이 제일 넓어.",
+    "pinyin": "",
+    "translation": "B: Sedã. O espaço é o mais amplo.",
+    "tokens": [
+      "B:",
+      "세단",
+      ".",
+      "공간이",
+      "제일",
+      "넓어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "세단",
+        "pinyin": "",
+        "meaning": "sedã"
+      },
+      {
+        "id": 2,
+        "word": "공간",
+        "pinyin": "",
+        "meaning": "espaço"
+      },
+      {
+        "id": 3,
+        "word": "제일",
+        "pinyin": "",
+        "meaning": "o mais, o número um"
+      },
+      {
+        "id": 4,
+        "word": "넓다",
+        "pinyin": "",
+        "meaning": "ser amplo, ser largo"
+      }
+    ],
+    "id": "local-1772297709952-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 뷰익 리갈, 토요타 캠리, 폭스바겐 마고탄을 한번 봐봐. 이 차들 꽤 괜찮아.",
+    "pinyin": "",
+    "translation": "A: Dê uma olhada no Buick Regal, Toyota Camry e Volkswagen Magotan. Esses carros são bem bons.",
+    "tokens": [
+      "A:",
+      "뷰익",
+      "리갈",
+      ",",
+      "토요타",
+      "캠리",
+      ",",
+      "폭스바겐",
+      "마고탄을",
+      "한번",
+      "봐봐",
+      ".",
+      "이",
+      "차들",
+      "꽤",
+      "괜찮아",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뷰익 리갈",
+        "pinyin": "",
+        "meaning": "Buick Regal (marca e modelo de carro)"
+      },
+      {
+        "id": 2,
+        "word": "토요타 캠리",
+        "pinyin": "",
+        "meaning": "Toyota Camry (marca e modelo de carro)"
+      },
+      {
+        "id": 3,
+        "word": "폭스바겐 마고탄",
+        "pinyin": "",
+        "meaning": "Volkswagen Magotan (marca e modelo de carro)"
+      },
+      {
+        "id": 4,
+        "word": "한번",
+        "pinyin": "",
+        "meaning": "uma vez, dar uma olhada"
+      },
+      {
+        "id": 5,
+        "word": "보다",
+        "pinyin": "",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 6,
+        "word": "차",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 7,
+        "word": "꽤",
+        "pinyin": "",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 8,
+        "word": "괜찮다",
+        "pinyin": "",
+        "meaning": "ser bom, ser decente, estar bem"
+      }
+    ],
+    "id": "local-1772297709952-8",
+    "language": "Coreano"
+  }
+]

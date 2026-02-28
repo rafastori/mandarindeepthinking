@@ -1,0 +1,637 @@
+[
+  {
+    "chinese": "A: 이번 주말에 아기 카시트 사러 가게에 가자.",
+    "pinyin": null,
+    "translation": "A: Vamos à loja para comprar uma cadeirinha de bebê neste fim de semana.",
+    "tokens": [
+      "이번",
+      "주말에",
+      "아기",
+      "카시트",
+      "사러",
+      "가게에",
+      "가자"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이번",
+        "pinyin": "ibwon",
+        "meaning": "esta, esta vez"
+      },
+      {
+        "id": 2,
+        "word": "주말",
+        "pinyin": "jumal",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 3,
+        "word": "아기",
+        "pinyin": "agi",
+        "meaning": "bebê"
+      },
+      {
+        "id": 4,
+        "word": "카시트",
+        "pinyin": "kasiteu",
+        "meaning": "cadeirinha de carro (car seat)"
+      },
+      {
+        "id": 5,
+        "word": "사러",
+        "pinyin": "sareo",
+        "meaning": "para comprar (verbo 사다 + -(으)러)"
+      },
+      {
+        "id": 6,
+        "word": "가게",
+        "pinyin": "gage",
+        "meaning": "loja"
+      },
+      {
+        "id": 7,
+        "word": "가자",
+        "pinyin": "gaja",
+        "meaning": "vamos (verbo 가다 + -자)"
+      }
+    ],
+    "id": "local-1772295166513-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알았어. 그런데 많은 사람들이 카시트를 안 사는 것 같더라. 아이들을 뒷좌석에 앉히고 어른이 안고 있는 것도 괜찮잖아.",
+    "pinyin": null,
+    "translation": "B: Entendi. Mas parece que muitas pessoas não compram cadeirinhas. Não é aceitável que as crianças se sentem no banco de trás e um adulto as segure?",
+    "tokens": [
+      "알았어",
+      "그런데",
+      "많은",
+      "사람들이",
+      "카시트를",
+      "안",
+      "사는",
+      "것",
+      "같더라",
+      "아이들을",
+      "뒷좌석에",
+      "앉히고",
+      "어른이",
+      "안고",
+      "있는",
+      "것도",
+      "괜찮잖아"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알았어",
+        "pinyin": "arasseo",
+        "meaning": "entendi, ok"
+      },
+      {
+        "id": 2,
+        "word": "그런데",
+        "pinyin": "geureonde",
+        "meaning": "mas, a propósito"
+      },
+      {
+        "id": 3,
+        "word": "많은",
+        "pinyin": "manheun",
+        "meaning": "muitos (do adjetivo 많다)"
+      },
+      {
+        "id": 4,
+        "word": "사람들",
+        "pinyin": "saramdeul",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 5,
+        "word": "안",
+        "pinyin": "an",
+        "meaning": "não (negação)"
+      },
+      {
+        "id": 6,
+        "word": "사다",
+        "pinyin": "sada",
+        "meaning": "comprar"
+      },
+      {
+        "id": 7,
+        "word": "같더라",
+        "pinyin": "gatdeora",
+        "meaning": "parece que (observação passada)"
+      },
+      {
+        "id": 8,
+        "word": "아이들",
+        "pinyin": "aideul",
+        "meaning": "crianças"
+      },
+      {
+        "id": 9,
+        "word": "뒷좌석",
+        "pinyin": "dwitjwaseok",
+        "meaning": "banco de trás"
+      },
+      {
+        "id": 10,
+        "word": "앉히고",
+        "pinyin": "anchigo",
+        "meaning": "fazendo sentar, sentando (verbo 앉히다 + -고)"
+      },
+      {
+        "id": 11,
+        "word": "어른",
+        "pinyin": "eoreun",
+        "meaning": "adulto"
+      },
+      {
+        "id": 12,
+        "word": "안고",
+        "pinyin": "ango",
+        "meaning": "segurando, abraçando (verbo 안다 + -고)"
+      },
+      {
+        "id": 13,
+        "word": "괜찮잖아",
+        "pinyin": "gwaenchanhjana",
+        "meaning": "não está bem?, não é aceitável? (do adjetivo 괜찮다 + -잖아)"
+      }
+    ],
+    "id": "local-1772295166513-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 우리는 꼭 사야 해! 많은 나라에서 아이들이 카시트에 안 타는 건 불법이야.",
+    "pinyin": null,
+    "translation": "A: Nós temos que comprar! Em muitos países, é ilegal que as crianças não andem na cadeirinha.",
+    "tokens": [
+      "우리는",
+      "꼭",
+      "사야",
+      "해",
+      "많은",
+      "나라에서",
+      "아이들이",
+      "카시트에",
+      "안",
+      "타는",
+      "건",
+      "불법이야"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "우리",
+        "pinyin": "uri",
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "꼭",
+        "pinyin": "kkok",
+        "meaning": "certamente, obrigatoriamente"
+      },
+      {
+        "id": 3,
+        "word": "사야 해",
+        "pinyin": "saya hae",
+        "meaning": "tem que comprar (verbo 사다 + -아야 하다)"
+      },
+      {
+        "id": 4,
+        "word": "나라",
+        "pinyin": "nara",
+        "meaning": "país"
+      },
+      {
+        "id": 5,
+        "word": "타는",
+        "pinyin": "taneun",
+        "meaning": "que anda, que monta (verbo 타다 + -는)"
+      },
+      {
+        "id": 6,
+        "word": "불법",
+        "pinyin": "bulbeop",
+        "meaning": "ilegalidade, ilegal"
+      }
+    ],
+    "id": "local-1772295166513-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알았어, 알았어. 네가 사고 싶다면 사야지. 어떤 브랜드로 살지 결정했어?",
+    "pinyin": null,
+    "translation": "B: Ok, ok. Se você quer comprar, então compramos. Você decidiu qual marca comprar?",
+    "tokens": [
+      "알았어",
+      "알았어",
+      "네가",
+      "사고",
+      "싶다면",
+      "사야지",
+      "어떤",
+      "브랜드로",
+      "살지",
+      "결정했어"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네가",
+        "pinyin": "nega",
+        "meaning": "você (sujeito)"
+      },
+      {
+        "id": 2,
+        "word": "사고",
+        "pinyin": "sago",
+        "meaning": "comprar (verbo 사다 + -고)"
+      },
+      {
+        "id": 3,
+        "word": "싶다면",
+        "pinyin": "siptamyeon",
+        "meaning": "se quiser (verbo 싶다 + -다면)"
+      },
+      {
+        "id": 4,
+        "word": "사야지",
+        "pinyin": "sayaji",
+        "meaning": "claro que tem que comprar, deve comprar (verbo 사다 + -아야지)"
+      },
+      {
+        "id": 5,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 6,
+        "word": "브랜드",
+        "pinyin": "beuraendeu",
+        "meaning": "marca (brand)"
+      },
+      {
+        "id": 7,
+        "word": "살지",
+        "pinyin": "salji",
+        "meaning": "se vai comprar (verbo 사다 + -(으)ㄹ지)"
+      },
+      {
+        "id": 8,
+        "word": "결정했어",
+        "pinyin": "gyeongjeonghaesseo",
+        "meaning": "decidiu (verbo 결정하다)"
+      }
+    ],
+    "id": "local-1772295166513-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 당연히 수입품이지! 유럽 표준에 맞춰야 해.",
+    "pinyin": null,
+    "translation": "A: Obviamente, um produto importado! Tem que atender aos padrões europeus.",
+    "tokens": [
+      "당연히",
+      "수입품이지",
+      "유럽",
+      "표준에",
+      "맞춰야",
+      "해"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "당연히",
+        "pinyin": "dangyeonhi",
+        "meaning": "naturalmente, obviamente"
+      },
+      {
+        "id": 2,
+        "word": "수입품",
+        "pinyin": "suipum",
+        "meaning": "produto importado"
+      },
+      {
+        "id": 3,
+        "word": "유럽",
+        "pinyin": "yureop",
+        "meaning": "Europa"
+      },
+      {
+        "id": 4,
+        "word": "표준",
+        "pinyin": "pyojun",
+        "meaning": "padrão"
+      },
+      {
+        "id": 5,
+        "word": "맞춰야 해",
+        "pinyin": "matchueoya hae",
+        "meaning": "tem que ajustar, atender (verbo 맞추다 + -아야 하다)"
+      }
+    ],
+    "id": "local-1772295166513-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그거 싸지 않을 텐데.",
+    "pinyin": null,
+    "translation": "B: Isso não deve ser barato.",
+    "tokens": [
+      "그거",
+      "싸지",
+      "않을",
+      "텐데"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그거",
+        "pinyin": "geugeo",
+        "meaning": "aquilo, isso"
+      },
+      {
+        "id": 2,
+        "word": "싸지 않을",
+        "pinyin": "ssaji anheul",
+        "meaning": "não ser barato (adjetivo 싸다 + -지 않다)"
+      },
+      {
+        "id": 3,
+        "word": "텐데",
+        "pinyin": "tende",
+        "meaning": "eu suponho, provavelmente será (expressa expectativa ou suposição)"
+      }
+    ],
+    "id": "local-1772295166513-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 비싸더라도 우리 아이의 안전을 위해서라면 사야 해.",
+    "pinyin": null,
+    "translation": "A: Mesmo que seja caro, pela segurança do nosso filho, temos que comprar.",
+    "tokens": [
+      "비싸더라도",
+      "우리",
+      "아이의",
+      "안전을",
+      "위해서라면",
+      "사야",
+      "해"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "비싸더라도",
+        "pinyin": "bissadeorado",
+        "meaning": "mesmo que seja caro (adjetivo 비싸다 + -더라도)"
+      },
+      {
+        "id": 2,
+        "word": "안전",
+        "pinyin": "anjeon",
+        "meaning": "segurança"
+      },
+      {
+        "id": 3,
+        "word": "위해서라면",
+        "pinyin": "wihaeseoramyeon",
+        "meaning": "se for para, em prol de (verbo 위하다 + -서라면)"
+      }
+    ],
+    "id": "local-1772295166513-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 만약 우리가 그걸 사서 가져왔는데 애가 타려고 하지 않으면 어떡해? 내 직장 동료는 애가 카시트에 앉기만 하면 울기 시작한다고 하던데.",
+    "pinyin": null,
+    "translation": "B: E se comprarmos e trouxermos, mas a criança não quiser andar nele? Meu colega de trabalho disse que o filho dele começa a chorar assim que senta na cadeirinha.",
+    "tokens": [
+      "만약",
+      "우리가",
+      "그걸",
+      "사서",
+      "가져왔는데",
+      "애가",
+      "타려고",
+      "하지",
+      "않으면",
+      "어떡해",
+      "내",
+      "직장",
+      "동료는",
+      "애가",
+      "카시트에",
+      "앉기만",
+      "하면",
+      "울기",
+      "시작한다고",
+      "하던데"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "만약",
+        "pinyin": "manyak",
+        "meaning": "se, caso"
+      },
+      {
+        "id": 2,
+        "word": "그걸",
+        "pinyin": "geugeol",
+        "meaning": "aquilo (objeto)"
+      },
+      {
+        "id": 3,
+        "word": "사서",
+        "pinyin": "saseo",
+        "meaning": "comprando (verbo 사다 + -아서)"
+      },
+      {
+        "id": 4,
+        "word": "가져왔는데",
+        "pinyin": "gajeowanneunde",
+        "meaning": "trouxemos, mas (verbo 가져오다 + -았는데)"
+      },
+      {
+        "id": 5,
+        "word": "애가",
+        "pinyin": "aega",
+        "meaning": "criança (informal de 아이)"
+      },
+      {
+        "id": 6,
+        "word": "타려고 하지 않으면",
+        "pinyin": "taryeogo haji anheumyeon",
+        "meaning": "se não quiser andar (verbo 타다 + -려고 하다 + 않다 + -(으)면)"
+      },
+      {
+        "id": 7,
+        "word": "어떡해",
+        "pinyin": "eotteokhae",
+        "meaning": "o que fazer?"
+      },
+      {
+        "id": 8,
+        "word": "직장",
+        "pinyin": "jikjang",
+        "meaning": "local de trabalho"
+      },
+      {
+        "id": 9,
+        "word": "동료",
+        "pinyin": "dongnyo",
+        "meaning": "colega"
+      },
+      {
+        "id": 10,
+        "word": "앉기만 하면",
+        "pinyin": "antgiman hamyeon",
+        "meaning": "assim que senta (verbo 앉다 + -기만 하다 + -(으)면)"
+      },
+      {
+        "id": 11,
+        "word": "울기 시작한다고 하던데",
+        "pinyin": "ulgi sijakhandago hadeonde",
+        "meaning": "disse que começa a chorar (verbo 울다 + -기 시작하다 + -다고 하다 + -던데)"
+      }
+    ],
+    "id": "local-1772295166513-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그래서 일찍 사야 해. 어릴 때부터 타기 시작하면 익숙해지기 더 쉬울 거야.",
+    "pinyin": null,
+    "translation": "A: Por isso, temos que comprar cedo. Se ele começar a usar desde pequeno, será mais fácil se acostumar.",
+    "tokens": [
+      "그래서",
+      "일찍",
+      "사야",
+      "해",
+      "어릴",
+      "때부터",
+      "타기",
+      "시작하면",
+      "익숙해지기",
+      "더",
+      "쉬울",
+      "거야"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그래서",
+        "pinyin": "geuraeseo",
+        "meaning": "por isso, então"
+      },
+      {
+        "id": 2,
+        "word": "일찍",
+        "pinyin": "iltteuk",
+        "meaning": "cedo"
+      },
+      {
+        "id": 3,
+        "word": "어릴 때부터",
+        "pinyin": "eoril ttaebuteo",
+        "meaning": "desde pequeno (adjetivo 어리다 + -ㄹ 때부터)"
+      },
+      {
+        "id": 4,
+        "word": "타기 시작하면",
+        "pinyin": "tagi sijakhamyeon",
+        "meaning": "se começar a usar/andar (verbo 타다 + -기 시작하다 + -(으)면)"
+      },
+      {
+        "id": 5,
+        "word": "익숙해지기",
+        "pinyin": "iksukhaejigi",
+        "meaning": "se acostumar (verbo 익숙해지다)"
+      },
+      {
+        "id": 6,
+        "word": "더",
+        "pinyin": "deo",
+        "meaning": "mais"
+      },
+      {
+        "id": 7,
+        "word": "쉬울 거야",
+        "pinyin": "swiul geoya",
+        "meaning": "será fácil (adjetivo 쉽다 + -(으)ㄹ 것이다)"
+      }
+    ],
+    "id": "local-1772295166513-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알았어. 당신이 원하는 대로 해. 다 우리 아이를 위한 거니까!",
+    "pinyin": null,
+    "translation": "B: Entendi. Faça como você quiser. Afinal, é tudo para o nosso filho!",
+    "tokens": [
+      "알았어",
+      "당신이",
+      "원하는",
+      "대로",
+      "해",
+      "다",
+      "우리",
+      "아이를",
+      "위한",
+      "거니까"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "당신",
+        "pinyin": "dangsin",
+        "meaning": "você (formal, às vezes usado entre casais)"
+      },
+      {
+        "id": 2,
+        "word": "원하는",
+        "pinyin": "wonhaneun",
+        "meaning": "que quer, que deseja (verbo 원하다 + -는)"
+      },
+      {
+        "id": 3,
+        "word": "대로",
+        "pinyin": "daero",
+        "meaning": "como, de acordo com"
+      },
+      {
+        "id": 4,
+        "word": "해",
+        "pinyin": "hae",
+        "meaning": "faça (verbo 하다)"
+      },
+      {
+        "id": 5,
+        "word": "다",
+        "pinyin": "da",
+        "meaning": "tudo"
+      },
+      {
+        "id": 6,
+        "word": "위한",
+        "pinyin": "wihan",
+        "meaning": "para, em prol de (verbo 위하다)"
+      },
+      {
+        "id": 7,
+        "word": "거니까",
+        "pinyin": "geonikka",
+        "meaning": "porque é, já que é (것 + -이니까)"
+      }
+    ],
+    "id": "local-1772295166513-9",
+    "language": "Coreano"
+  }
+]

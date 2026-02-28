@@ -1,0 +1,802 @@
+[
+  {
+    "chinese": "A: 안녕하세요, 와인 사러 오셨어요?",
+    "pinyin": null,
+    "translation": "A: Olá, veio comprar vinho?",
+    "tokens": [
+      "안녕하세요",
+      ",",
+      "와인",
+      "사러",
+      "오셨어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "와인",
+        "pinyin": null,
+        "meaning": "vinho"
+      },
+      {
+        "id": 3,
+        "word": "사러 오다",
+        "pinyin": null,
+        "meaning": "vir para comprar"
+      }
+    ],
+    "id": "local-1772300603260-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네. 외국인 친구 생일 파티가 있어서요.",
+    "pinyin": null,
+    "translation": "B: Sim. É que tenho uma festa de aniversário de um amigo estrangeiro.",
+    "tokens": [
+      "네",
+      ".",
+      "외국인",
+      "친구",
+      "생일",
+      "파티가",
+      "있어서요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "외국인",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "친구",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "생일",
+        "pinyin": null,
+        "meaning": "aniversário"
+      },
+      {
+        "id": 5,
+        "word": "파티",
+        "pinyin": null,
+        "meaning": "festa"
+      },
+      {
+        "id": 6,
+        "word": "있어서요",
+        "pinyin": null,
+        "meaning": "porque há/tenho"
+      }
+    ],
+    "id": "local-1772300603260-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그 친구는 레드 와인을 좋아해요, 아니면 화이트 와인을 좋아해요?",
+    "pinyin": null,
+    "translation": "A: Esse amigo gosta de vinho tinto, ou de vinho branco?",
+    "tokens": [
+      "그",
+      "친구는",
+      "레드",
+      "와인을",
+      "좋아해요",
+      ",",
+      "아니면",
+      "화이트",
+      "와인을",
+      "좋아해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그",
+        "pinyin": null,
+        "meaning": "esse/aquele"
+      },
+      {
+        "id": 2,
+        "word": "친구",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "레드 와인",
+        "pinyin": null,
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 4,
+        "word": "좋아하다",
+        "pinyin": null,
+        "meaning": "gostar"
+      },
+      {
+        "id": 5,
+        "word": "아니면",
+        "pinyin": null,
+        "meaning": "ou (para perguntas alternativas)"
+      },
+      {
+        "id": 6,
+        "word": "화이트 와인",
+        "pinyin": null,
+        "meaning": "vinho branco"
+      }
+    ],
+    "id": "local-1772300603260-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 레드 와인이요.",
+    "pinyin": null,
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "레드",
+      "와인이요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "레드 와인",
+        "pinyin": null,
+        "meaning": "vinho tinto"
+      }
+    ],
+    "id": "local-1772300603260-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 알겠습니다. 여기는 신세계 와인과 구세계 와인이 모두 있어요.",
+    "pinyin": null,
+    "translation": "A: Entendi. Aqui tem tanto vinhos do Novo Mundo quanto vinhos do Velho Mundo.",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "여기는",
+      "신세계",
+      "와인과",
+      "구세계",
+      "와인이",
+      "모두",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": null,
+        "meaning": "Entendi / Certo"
+      },
+      {
+        "id": 2,
+        "word": "여기",
+        "pinyin": null,
+        "meaning": "aqui"
+      },
+      {
+        "id": 3,
+        "word": "신세계 와인",
+        "pinyin": null,
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 4,
+        "word": "구세계 와인",
+        "pinyin": null,
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 5,
+        "word": "모두",
+        "pinyin": null,
+        "meaning": "todos / ambos"
+      },
+      {
+        "id": 6,
+        "word": "있어요",
+        "pinyin": null,
+        "meaning": "tem / há"
+      }
+    ],
+    "id": "local-1772300603260-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 평소에 와인을 잘 안 마셔서 잘 몰라요.",
+    "pinyin": null,
+    "translation": "B: Como normalmente não bebo muito vinho, não sei bem.",
+    "tokens": [
+      "평소에",
+      "와인을",
+      "잘",
+      "안",
+      "마셔서",
+      "잘",
+      "몰라요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "평소에",
+        "pinyin": null,
+        "meaning": "normalmente / geralmente"
+      },
+      {
+        "id": 2,
+        "word": "와인",
+        "pinyin": null,
+        "meaning": "vinho"
+      },
+      {
+        "id": 3,
+        "word": "잘 안 마시다",
+        "pinyin": null,
+        "meaning": "não beber muito"
+      },
+      {
+        "id": 4,
+        "word": "모르다",
+        "pinyin": null,
+        "meaning": "não saber"
+      }
+    ],
+    "id": "local-1772300603260-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 문제없어요. '구세계'는 주로 프랑스, 이탈리아, 스페인처럼 수백 년의 전통적인 와인 제조 역사를 가진 나라들을 말해요. 하지만 '신세계'는 미국, 캐나다, 아르헨티나, 호주처럼 와인 제조가 비교적 새로운 나라들을 말하고요.",
+    "pinyin": null,
+    "translation": "A: Não há problema. 'Velho Mundo' refere-se principalmente a países como França, Itália e Espanha, que possuem uma história centenária e tradicional de fabricação de vinho. Mas 'Novo Mundo' refere-se a países como EUA, Canadá, Argentina e Austrália, onde a fabricação de vinho é relativamente nova.",
+    "tokens": [
+      "문제없어요",
+      ".",
+      "'구세계'는",
+      "주로",
+      "프랑스",
+      ",",
+      "이탈리아",
+      ",",
+      "스페인처럼",
+      "수백",
+      "년의",
+      "전통적인",
+      "와인",
+      "제조",
+      "역사를",
+      "가진",
+      "나라들을",
+      "말해요",
+      ".",
+      "하지만",
+      "'신세계'는",
+      "미국",
+      ",",
+      "캐나다",
+      ",",
+      "아르헨티나",
+      ",",
+      "호주처럼",
+      "와인",
+      "제조가",
+      "비교적",
+      "새로운",
+      "나라들을",
+      "말하고요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "문제없어요",
+        "pinyin": null,
+        "meaning": "não há problema"
+      },
+      {
+        "id": 2,
+        "word": "구세계",
+        "pinyin": null,
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "주로",
+        "pinyin": null,
+        "meaning": "principalmente"
+      },
+      {
+        "id": 4,
+        "word": "프랑스",
+        "pinyin": null,
+        "meaning": "França"
+      },
+      {
+        "id": 5,
+        "word": "이탈리아",
+        "pinyin": null,
+        "meaning": "Itália"
+      },
+      {
+        "id": 6,
+        "word": "스페인",
+        "pinyin": null,
+        "meaning": "Espanha"
+      },
+      {
+        "id": 7,
+        "word": "수백 년",
+        "pinyin": null,
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 8,
+        "word": "전통적인",
+        "pinyin": null,
+        "meaning": "tradicional"
+      },
+      {
+        "id": 9,
+        "word": "와인 제조",
+        "pinyin": null,
+        "meaning": "fabricação de vinho"
+      },
+      {
+        "id": 10,
+        "word": "역사",
+        "pinyin": null,
+        "meaning": "história"
+      },
+      {
+        "id": 11,
+        "word": "나라",
+        "pinyin": null,
+        "meaning": "país"
+      },
+      {
+        "id": 12,
+        "word": "말하다",
+        "pinyin": null,
+        "meaning": "dizer / referir-se a"
+      },
+      {
+        "id": 13,
+        "word": "하지만",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 14,
+        "word": "신세계",
+        "pinyin": null,
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 15,
+        "word": "미국",
+        "pinyin": null,
+        "meaning": "EUA"
+      },
+      {
+        "id": 16,
+        "word": "캐나다",
+        "pinyin": null,
+        "meaning": "Canadá"
+      },
+      {
+        "id": 17,
+        "word": "아르헨티나",
+        "pinyin": null,
+        "meaning": "Argentina"
+      },
+      {
+        "id": 18,
+        "word": "호주",
+        "pinyin": null,
+        "meaning": "Austrália"
+      },
+      {
+        "id": 19,
+        "word": "비교적",
+        "pinyin": null,
+        "meaning": "relativamente"
+      },
+      {
+        "id": 20,
+        "word": "새로운",
+        "pinyin": null,
+        "meaning": "novo"
+      }
+    ],
+    "id": "local-1772300603260-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 맛에 차이가 있나요?",
+    "pinyin": null,
+    "translation": "B: Então há diferença no sabor?",
+    "tokens": [
+      "그럼",
+      "맛에",
+      "차이가",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "맛",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 3,
+        "word": "차이",
+        "pinyin": null,
+        "meaning": "diferença"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "haver / existir"
+      }
+    ],
+    "id": "local-1772300603260-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네. 구세계 와인은 타닌 함량이 높아서 산미가 강한 편이고요. 신세계 와인은 타닌이 적어서 비교적 달콤한 편이에요.",
+    "pinyin": null,
+    "translation": "A: Sim. Os vinhos do Velho Mundo têm alto teor de tanino, então tendem a ter uma acidez forte. Os vinhos do Novo Mundo têm menos tanino, então são relativamente mais doces.",
+    "tokens": [
+      "네",
+      ".",
+      "구세계",
+      "와인은",
+      "타닌",
+      "함량이",
+      "높아서",
+      "산미가",
+      "강한",
+      "편이고요",
+      ".",
+      "신세계",
+      "와인은",
+      "타닌이",
+      "적어서",
+      "비교적",
+      "달콤한",
+      "편이에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "구세계 와인",
+        "pinyin": null,
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "타닌",
+        "pinyin": null,
+        "meaning": "tanino"
+      },
+      {
+        "id": 4,
+        "word": "함량",
+        "pinyin": null,
+        "meaning": "teor / quantidade"
+      },
+      {
+        "id": 5,
+        "word": "높다",
+        "pinyin": null,
+        "meaning": "ser alto"
+      },
+      {
+        "id": 6,
+        "word": "산미",
+        "pinyin": null,
+        "meaning": "acidez"
+      },
+      {
+        "id": 7,
+        "word": "강하다",
+        "pinyin": null,
+        "meaning": "ser forte"
+      },
+      {
+        "id": 8,
+        "word": "~편이다",
+        "pinyin": null,
+        "meaning": "tender a ser / ser do lado de"
+      },
+      {
+        "id": 9,
+        "word": "신세계 와인",
+        "pinyin": null,
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 10,
+        "word": "적다",
+        "pinyin": null,
+        "meaning": "ser pouco"
+      },
+      {
+        "id": 11,
+        "word": "비교적",
+        "pinyin": null,
+        "meaning": "relativamente"
+      },
+      {
+        "id": 12,
+        "word": "달콤하다",
+        "pinyin": null,
+        "meaning": "ser doce"
+      }
+    ],
+    "id": "local-1772300603260-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 여자들은 과일 맛 나는 와인을 더 좋아한다고 들었어요.",
+    "pinyin": null,
+    "translation": "B: Ah, ouvi dizer que as mulheres gostam mais de vinhos com sabor de fruta.",
+    "tokens": [
+      "아",
+      ",",
+      "여자들은",
+      "과일",
+      "맛",
+      "나는",
+      "와인을",
+      "더",
+      "좋아한다고",
+      "들었어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": null,
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "여자",
+        "pinyin": null,
+        "meaning": "mulher"
+      },
+      {
+        "id": 3,
+        "word": "과일",
+        "pinyin": null,
+        "meaning": "fruta"
+      },
+      {
+        "id": 4,
+        "word": "맛",
+        "pinyin": null,
+        "meaning": "sabor"
+      },
+      {
+        "id": 5,
+        "word": "나다",
+        "pinyin": null,
+        "meaning": "ter / exalar (sabor)"
+      },
+      {
+        "id": 6,
+        "word": "와인",
+        "pinyin": null,
+        "meaning": "vinho"
+      },
+      {
+        "id": 7,
+        "word": "더",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 8,
+        "word": "좋아하다",
+        "pinyin": null,
+        "meaning": "gostar"
+      },
+      {
+        "id": 9,
+        "word": "듣다",
+        "pinyin": null,
+        "meaning": "ouvir / ouvir dizer"
+      }
+    ],
+    "id": "local-1772300603260-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네. 저희가 가진 이 와인 종류는 특히 여자분들에게 좋아요. 정말 잘 팔려요.",
+    "pinyin": null,
+    "translation": "A: Sim. Este tipo de vinho que temos é especialmente bom para as mulheres. Vende muito bem.",
+    "tokens": [
+      "네",
+      ".",
+      "저희가",
+      "가진",
+      "이",
+      "와인",
+      "종류는",
+      "특히",
+      "여자분들에게",
+      "좋아요",
+      ".",
+      "정말",
+      "잘",
+      "팔려요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "저희",
+        "pinyin": null,
+        "meaning": "nós (humilde)"
+      },
+      {
+        "id": 3,
+        "word": "가지다",
+        "pinyin": null,
+        "meaning": "ter / possuir"
+      },
+      {
+        "id": 4,
+        "word": "이",
+        "pinyin": null,
+        "meaning": "este"
+      },
+      {
+        "id": 5,
+        "word": "와인",
+        "pinyin": null,
+        "meaning": "vinho"
+      },
+      {
+        "id": 6,
+        "word": "종류",
+        "pinyin": null,
+        "meaning": "tipo / variedade"
+      },
+      {
+        "id": 7,
+        "word": "특히",
+        "pinyin": null,
+        "meaning": "especialmente"
+      },
+      {
+        "id": 8,
+        "word": "여자분",
+        "pinyin": null,
+        "meaning": "senhora / mulher (formal)"
+      },
+      {
+        "id": 9,
+        "word": "좋다",
+        "pinyin": null,
+        "meaning": "ser bom"
+      },
+      {
+        "id": 10,
+        "word": "정말",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 11,
+        "word": "잘 팔리다",
+        "pinyin": null,
+        "meaning": "vender bem"
+      }
+    ],
+    "id": "local-1772300603260-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다, 그럼 이 병으로 할게요. 감사합니다!",
+    "pinyin": null,
+    "translation": "B: Entendi, então vou levar esta garrafa. Obrigado!",
+    "tokens": [
+      "알겠습니다",
+      ",",
+      "그럼",
+      "이",
+      "병으로",
+      "할게요",
+      ".",
+      "감사합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": null,
+        "meaning": "Entendi / Certo"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "이",
+        "pinyin": null,
+        "meaning": "esta"
+      },
+      {
+        "id": 4,
+        "word": "병",
+        "pinyin": null,
+        "meaning": "garrafa"
+      },
+      {
+        "id": 5,
+        "word": "하다",
+        "pinyin": null,
+        "meaning": "fazer / levar (neste contexto)"
+      },
+      {
+        "id": 6,
+        "word": "감사합니다",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772300603260-11",
+    "language": "Coreano"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "chinese": "A: Direktor Chen, vielen Dank, dass Sie sich in Ihrem vollen Terminkalender Zeit genommen haben, um mich zum Essen einzuladen.",
+    "pinyin": null,
+    "translation": "A: Diretor Chen, muito obrigado por ter tirado um tempo em sua agenda lotada para me convidar para comer.",
+    "tokens": [
+      "Direktor",
+      "Chen",
+      ",",
+      "vielen",
+      "Dank",
+      ",",
+      "dass",
+      "Sie",
+      "sich",
+      "in",
+      "Ihrem",
+      "vollen",
+      "Terminkalender",
+      "Zeit",
+      "genommen",
+      "haben",
+      ",",
+      "um",
+      "mich",
+      "zum",
+      "Essen",
+      "einzuladen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Direktor",
+        "pinyin": null,
+        "meaning": "Diretor"
+      },
+      {
+        "id": 2,
+        "word": "vielen Dank",
+        "pinyin": null,
+        "meaning": "muito obrigado"
+      },
+      {
+        "id": 3,
+        "word": "voller Terminkalender",
+        "pinyin": null,
+        "meaning": "agenda lotada/cheia"
+      },
+      {
+        "id": 4,
+        "word": "Zeit nehmen",
+        "pinyin": null,
+        "meaning": "tirar um tempo"
+      },
+      {
+        "id": 5,
+        "word": "einladen",
+        "pinyin": null,
+        "meaning": "convidar"
+      },
+      {
+        "id": 6,
+        "word": "zum Essen",
+        "pinyin": null,
+        "meaning": "para comer/para a refeição"
+      }
+    ],
+    "id": "local-1772293064203-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gern geschehen, das ist doch selbstverständlich. Sehen Sie sich mal die Speisekarte an. Was hätten Sie gern?",
+    "pinyin": null,
+    "translation": "B: De nada, isso é óbvio/evidente. Dê uma olhada no cardápio. O que você gostaria?",
+    "tokens": [
+      "Gern",
+      "geschehen",
+      ",",
+      "das",
+      "ist",
+      "doch",
+      "selbstverständlich",
+      ".",
+      "Sehen",
+      "Sie",
+      "sich",
+      "mal",
+      "die",
+      "Speisekarte",
+      "an",
+      ".",
+      "Was",
+      "hätten",
+      "Sie",
+      "gern",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gern geschehen",
+        "pinyin": null,
+        "meaning": "De nada"
+      },
+      {
+        "id": 2,
+        "word": "selbstverständlich",
+        "pinyin": null,
+        "meaning": "óbvio, evidente, natural"
+      },
+      {
+        "id": 3,
+        "word": "Speisekarte",
+        "pinyin": null,
+        "meaning": "cardápio, menu"
+      },
+      {
+        "id": 4,
+        "word": "ansehen",
+        "pinyin": null,
+        "meaning": "olhar, ver, dar uma olhada"
+      },
+      {
+        "id": 5,
+        "word": "Was hätten Sie gern?",
+        "pinyin": null,
+        "meaning": "O que você gostaria?"
+      }
+    ],
+    "id": "local-1772293064203-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ganz wie Sie mögen. Bestellen Sie ruhig.",
+    "pinyin": null,
+    "translation": "A: Como você preferir. Peça à vontade.",
+    "tokens": [
+      "Ganz",
+      "wie",
+      "Sie",
+      "mögen",
+      ".",
+      "Bestellen",
+      "Sie",
+      "ruhig",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ganz wie Sie mögen",
+        "pinyin": null,
+        "meaning": "Como você preferir/quiser"
+      },
+      {
+        "id": 2,
+        "word": "bestellen",
+        "pinyin": null,
+        "meaning": "pedir, encomendar"
+      },
+      {
+        "id": 3,
+        "word": "ruhig",
+        "pinyin": null,
+        "meaning": "à vontade, tranquilo, calmo"
+      }
+    ],
+    "id": "local-1772293064203-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In Ordnung. Wann sind Sie in Shanghai angekommen?",
+    "pinyin": null,
+    "translation": "B: Ok. Quando você chegou em Xangai?",
+    "tokens": [
+      "In",
+      "Ordnung",
+      ".",
+      "Wann",
+      "sind",
+      "Sie",
+      "in",
+      "Shanghai",
+      "angekommen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In Ordnung",
+        "pinyin": null,
+        "meaning": "Ok, Tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "ankommen",
+        "pinyin": null,
+        "meaning": "chegar"
+      }
+    ],
+    "id": "local-1772293064203-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Gestern Abend.",
+    "pinyin": null,
+    "translation": "A: Ontem à noite.",
+    "tokens": [
+      "Gestern",
+      "Abend",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gestern Abend",
+        "pinyin": null,
+        "meaning": "ontem à noite"
+      }
+    ],
+    "id": "local-1772293064203-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ach, dann sind Sie jetzt sicher müde.",
+    "pinyin": null,
+    "translation": "B: Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "Ach",
+      ",",
+      "dann",
+      "sind",
+      "Sie",
+      "jetzt",
+      "sicher",
+      "müde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sicher",
+        "pinyin": null,
+        "meaning": "certamente, com certeza"
+      },
+      {
+        "id": 2,
+        "word": "müde",
+        "pinyin": null,
+        "meaning": "cansado"
+      }
+    ],
+    "id": "local-1772293064203-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich bin oft geschäftlich unterwegs, das bin ich gewohnt. Hier, ich gebe Ihnen den Entwurf zum Durchsehen.",
+    "pinyin": null,
+    "translation": "A: Eu viajo frequentemente a trabalho, estou acostumado a isso. Aqui, eu lhe entrego o rascunho para revisar.",
+    "tokens": [
+      "Ich",
+      "bin",
+      "oft",
+      "geschäftlich",
+      "unterwegs",
+      ",",
+      "das",
+      "bin",
+      "ich",
+      "gewohnt",
+      ".",
+      "Hier",
+      ",",
+      "ich",
+      "gebe",
+      "Ihnen",
+      "den",
+      "Entwurf",
+      "zum",
+      "Durchsehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "geschäftlich unterwegs",
+        "pinyin": null,
+        "meaning": "viajando a negócios/a trabalho"
+      },
+      {
+        "id": 2,
+        "word": "gewohnt",
+        "pinyin": null,
+        "meaning": "acostumado"
+      },
+      {
+        "id": 3,
+        "word": "Entwurf",
+        "pinyin": null,
+        "meaning": "rascunho, projeto, esboço"
+      },
+      {
+        "id": 4,
+        "word": "durchsehen",
+        "pinyin": null,
+        "meaning": "revisar, folhear, dar uma olhada"
+      }
+    ],
+    "id": "local-1772293064203-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Damit haben wir Zeit. Wir können erst einmal in Ruhe essen und danach reden.",
+    "pinyin": null,
+    "translation": "B: Com isso, temos tempo. Podemos primeiro comer com calma e depois conversar.",
+    "tokens": [
+      "Damit",
+      "haben",
+      "wir",
+      "Zeit",
+      ".",
+      "Wir",
+      "können",
+      "erst",
+      "einmal",
+      "in",
+      "Ruhe",
+      "essen",
+      "und",
+      "danach",
+      "reden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Damit",
+        "pinyin": null,
+        "meaning": "Com isso, para isso"
+      },
+      {
+        "id": 2,
+        "word": "erst einmal",
+        "pinyin": null,
+        "meaning": "primeiro, antes de tudo"
+      },
+      {
+        "id": 3,
+        "word": "in Ruhe",
+        "pinyin": null,
+        "meaning": "com calma, em paz"
+      },
+      {
+        "id": 4,
+        "word": "danach",
+        "pinyin": null,
+        "meaning": "depois disso"
+      },
+      {
+        "id": 5,
+        "word": "reden",
+        "pinyin": null,
+        "meaning": "conversar, falar"
+      }
+    ],
+    "id": "local-1772293064203-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Einverstanden.",
+    "pinyin": null,
+    "translation": "A: Concordo.",
+    "tokens": [
+      "Einverstanden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "einverstanden",
+        "pinyin": null,
+        "meaning": "concordo, de acordo"
+      }
+    ],
+    "id": "local-1772293064203-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Bedienung! Wir möchten bestellen.",
+    "pinyin": null,
+    "translation": "B: Garçom! Nós gostaríamos de pedir.",
+    "tokens": [
+      "Bedienung",
+      "!",
+      "Wir",
+      "möchten",
+      "bestellen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bedienung",
+        "pinyin": null,
+        "meaning": "garçom/garçonete, serviço"
+      },
+      {
+        "id": 2,
+        "word": "möchten",
+        "pinyin": null,
+        "meaning": "gostaríamos (forma de 'mögen')"
+      },
+      {
+        "id": 3,
+        "word": "bestellen",
+        "pinyin": null,
+        "meaning": "pedir, encomendar"
+      }
+    ],
+    "id": "local-1772293064203-9",
+    "language": "Alemão"
+  }
+]

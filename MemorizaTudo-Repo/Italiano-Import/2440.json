@@ -1,0 +1,596 @@
+[
+  {
+    "chinese": "A: Successivamente, vorremmo invitare Wang Wei a dire alcune parole a tutti. Facciamo un applauso!",
+    "pinyin": "",
+    "translation": "A: Em seguida, gostaríamos de convidar Wang Wei para dizer algumas palavras a todos. Vamos dar uma salva de palmas!",
+    "tokens": [
+      "Successivamente",
+      ",",
+      "vorremmo",
+      "invitare",
+      "Wang",
+      "Wei",
+      "a",
+      "dire",
+      "alcune",
+      "parole",
+      "a",
+      "tutti",
+      ".",
+      "Facciamo",
+      "un",
+      "applauso",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Successivamente",
+        "pinyin": null,
+        "meaning": "Em seguida, Posteriormente"
+      },
+      {
+        "id": 2,
+        "word": "vorremmo",
+        "pinyin": null,
+        "meaning": "gostaríamos"
+      },
+      {
+        "id": 3,
+        "word": "invitare",
+        "pinyin": null,
+        "meaning": "convidar"
+      },
+      {
+        "id": 4,
+        "word": "dire",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 5,
+        "word": "alcune",
+        "pinyin": null,
+        "meaning": "algumas"
+      },
+      {
+        "id": 6,
+        "word": "parole",
+        "pinyin": null,
+        "meaning": "palavras"
+      },
+      {
+        "id": 7,
+        "word": "tutti",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 8,
+        "word": "Facciamo",
+        "pinyin": null,
+        "meaning": "Façamos, Vamos fazer"
+      },
+      {
+        "id": 9,
+        "word": "applauso",
+        "pinyin": null,
+        "meaning": "aplauso, salva de palmas"
+      }
+    ],
+    "id": "local-1772297796456-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie! Prima di tutto, grazie mille a tutti per aver organizzato questa festa per me.",
+    "pinyin": "",
+    "translation": "B: Obrigado! Em primeiro lugar, muito obrigado a todos por terem organizado esta festa para mim.",
+    "tokens": [
+      "Grazie",
+      "!",
+      "Prima",
+      "di",
+      "tutto",
+      ",",
+      "grazie",
+      "mille",
+      "a",
+      "tutti",
+      "per",
+      "aver",
+      "organizzato",
+      "questa",
+      "festa",
+      "per",
+      "me",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Grazie",
+        "pinyin": null,
+        "meaning": "Obrigado/a"
+      },
+      {
+        "id": 2,
+        "word": "Prima di tutto",
+        "pinyin": null,
+        "meaning": "Em primeiro lugar"
+      },
+      {
+        "id": 3,
+        "word": "grazie mille",
+        "pinyin": null,
+        "meaning": "muito obrigado/a"
+      },
+      {
+        "id": 4,
+        "word": "tutti",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "aver organizzato",
+        "pinyin": null,
+        "meaning": "ter organizado"
+      },
+      {
+        "id": 6,
+        "word": "festa",
+        "pinyin": null,
+        "meaning": "festa"
+      },
+      {
+        "id": 7,
+        "word": "me",
+        "pinyin": null,
+        "meaning": "mim"
+      }
+    ],
+    "id": "local-1772297796456-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ho lavorato in questa azienda per 10 anni. In questi 10 anni, ho imparato molto. Sono molto grato all'azienda per avermi dato una piattaforma per imparare e crescere!",
+    "pinyin": "",
+    "translation": "B: Trabalhei nesta empresa por 10 anos. Nestes 10 anos, aprendi muito. Sou muito grato à empresa por ter me dado uma plataforma para aprender e crescer!",
+    "tokens": [
+      "Ho",
+      "lavorato",
+      "in",
+      "questa",
+      "azienda",
+      "per",
+      "10",
+      "anni",
+      ".",
+      "In",
+      "questi",
+      "10",
+      "anni",
+      ",",
+      "ho",
+      "imparato",
+      "molto",
+      ".",
+      "Sono",
+      "molto",
+      "grato",
+      "all'",
+      "azienda",
+      "per",
+      "avermi",
+      "dato",
+      "una",
+      "piattaforma",
+      "per",
+      "imparare",
+      "e",
+      "crescere",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ho lavorato",
+        "pinyin": null,
+        "meaning": "Eu trabalhei"
+      },
+      {
+        "id": 2,
+        "word": "azienda",
+        "pinyin": null,
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "anni",
+        "pinyin": null,
+        "meaning": "anos"
+      },
+      {
+        "id": 4,
+        "word": "ho imparato",
+        "pinyin": null,
+        "meaning": "eu aprendi"
+      },
+      {
+        "id": 5,
+        "word": "molto",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 6,
+        "word": "Sono grato",
+        "pinyin": null,
+        "meaning": "Sou grato/a"
+      },
+      {
+        "id": 7,
+        "word": "avermi dato",
+        "pinyin": null,
+        "meaning": "ter me dado"
+      },
+      {
+        "id": 8,
+        "word": "piattaforma",
+        "pinyin": null,
+        "meaning": "plataforma"
+      },
+      {
+        "id": 9,
+        "word": "imparare",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 10,
+        "word": "crescere",
+        "pinyin": null,
+        "meaning": "crescer"
+      }
+    ],
+    "id": "local-1772297796456-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie a ciascuno dei dirigenti per avermi fatto da mentore!",
+    "pinyin": "",
+    "translation": "B: Obrigado a cada um dos diretores por terem sido meus mentores!",
+    "tokens": [
+      "Grazie",
+      "a",
+      "ciascuno",
+      "dei",
+      "dirigenti",
+      "per",
+      "avermi",
+      "fatto",
+      "da",
+      "mentore",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Grazie",
+        "pinyin": null,
+        "meaning": "Obrigado/a"
+      },
+      {
+        "id": 2,
+        "word": "ciascuno",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 3,
+        "word": "dirigenti",
+        "pinyin": null,
+        "meaning": "diretores, executivos, gerentes"
+      },
+      {
+        "id": 4,
+        "word": "avermi fatto da mentore",
+        "pinyin": null,
+        "meaning": "terem sido meus mentores, terem me servido de mentor"
+      }
+    ],
+    "id": "local-1772297796456-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Grazie a ciascuno dei miei colleghi per il supporto e l'attenzione che mi avete dato!",
+    "pinyin": "",
+    "translation": "B: Obrigado a cada um dos meus colegas pelo apoio e pela atenção que me deram!",
+    "tokens": [
+      "Grazie",
+      "a",
+      "ciascuno",
+      "dei",
+      "miei",
+      "colleghi",
+      "per",
+      "il",
+      "supporto",
+      "e",
+      "l'",
+      "attenzione",
+      "che",
+      "mi",
+      "avete",
+      "dato",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Grazie",
+        "pinyin": null,
+        "meaning": "Obrigado/a"
+      },
+      {
+        "id": 2,
+        "word": "ciascuno",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 3,
+        "word": "colleghi",
+        "pinyin": null,
+        "meaning": "colegas"
+      },
+      {
+        "id": 4,
+        "word": "supporto",
+        "pinyin": null,
+        "meaning": "apoio, suporte"
+      },
+      {
+        "id": 5,
+        "word": "attenzione",
+        "pinyin": null,
+        "meaning": "atenção"
+      },
+      {
+        "id": 6,
+        "word": "avete dato",
+        "pinyin": null,
+        "meaning": "vocês deram"
+      }
+    ],
+    "id": "local-1772297796456-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sono estremamente onorato di aver avuto la possibilità di lavorare con tutti voi. Ricorderò ogni giorno il tempo che ho trascorso con tutti!",
+    "pinyin": "",
+    "translation": "B: Sinto-me extremamente honrado por ter tido a oportunidade de trabalhar com todos vocês. Recordarei todos os dias o tempo que passei com todos!",
+    "tokens": [
+      "Sono",
+      "estremamente",
+      "onorato",
+      "di",
+      "aver",
+      "avuto",
+      "la",
+      "possibilità",
+      "di",
+      "lavorare",
+      "con",
+      "tutti",
+      "voi",
+      ".",
+      "Ricorderò",
+      "ogni",
+      "giorno",
+      "il",
+      "tempo",
+      "che",
+      "ho",
+      "trascorso",
+      "con",
+      "tutti",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sono onorato",
+        "pinyin": null,
+        "meaning": "Sou honrado/a"
+      },
+      {
+        "id": 2,
+        "word": "estremamente",
+        "pinyin": null,
+        "meaning": "extremamente"
+      },
+      {
+        "id": 3,
+        "word": "aver avuto",
+        "pinyin": null,
+        "meaning": "ter tido"
+      },
+      {
+        "id": 4,
+        "word": "possibilità",
+        "pinyin": null,
+        "meaning": "possibilidade, oportunidade"
+      },
+      {
+        "id": 5,
+        "word": "lavorare",
+        "pinyin": null,
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 6,
+        "word": "tutti voi",
+        "pinyin": null,
+        "meaning": "todos vocês"
+      },
+      {
+        "id": 7,
+        "word": "Ricorderò",
+        "pinyin": null,
+        "meaning": "Recordarei, Lembrarei"
+      },
+      {
+        "id": 8,
+        "word": "ogni giorno",
+        "pinyin": null,
+        "meaning": "todos os dias, cada dia"
+      },
+      {
+        "id": 9,
+        "word": "tempo",
+        "pinyin": null,
+        "meaning": "tempo"
+      },
+      {
+        "id": 10,
+        "word": "ho trascorso",
+        "pinyin": null,
+        "meaning": "eu passei"
+      }
+    ],
+    "id": "local-1772297796456-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Infine, il mio più sentito augurio per tutti è che siate in salute, che il vostro lavoro proceda senza intoppi e che le vostre famiglie siano felici.",
+    "pinyin": "",
+    "translation": "B: Por fim, o meu mais sincero desejo para todos é que tenham saúde, que o vosso trabalho prossiga sem problemas e que as vossas famílias sejam felizes.",
+    "tokens": [
+      "Infine",
+      ",",
+      "il",
+      "mio",
+      "più",
+      "sentito",
+      "augurio",
+      "per",
+      "tutti",
+      "è",
+      "che",
+      "siate",
+      "in",
+      "salute",
+      ",",
+      "che",
+      "il",
+      "vostro",
+      "lavoro",
+      "proceda",
+      "senza",
+      "intoppi",
+      "e",
+      "che",
+      "le",
+      "vostre",
+      "famiglie",
+      "siano",
+      "felici",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Infine",
+        "pinyin": null,
+        "meaning": "Por fim, Finalmente"
+      },
+      {
+        "id": 2,
+        "word": "più sentito augurio",
+        "pinyin": null,
+        "meaning": "mais sincero desejo, mais sentido desejo"
+      },
+      {
+        "id": 3,
+        "word": "tutti",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 4,
+        "word": "siate in salute",
+        "pinyin": null,
+        "meaning": "estejam com saúde, tenham saúde"
+      },
+      {
+        "id": 5,
+        "word": "vostro lavoro",
+        "pinyin": null,
+        "meaning": "o vosso trabalho, o trabalho de vocês"
+      },
+      {
+        "id": 6,
+        "word": "proceda",
+        "pinyin": null,
+        "meaning": "prossiga, proceda"
+      },
+      {
+        "id": 7,
+        "word": "senza intoppi",
+        "pinyin": null,
+        "meaning": "sem problemas, sem obstáculos, sem contratempos"
+      },
+      {
+        "id": 8,
+        "word": "famiglie",
+        "pinyin": null,
+        "meaning": "famílias"
+      },
+      {
+        "id": 9,
+        "word": "siano felici",
+        "pinyin": null,
+        "meaning": "sejam felizes"
+      }
+    ],
+    "id": "local-1772297796456-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Forza! Cin cin a tutti!",
+    "pinyin": "",
+    "translation": "B: Força! Saúde a todos! (Cheers!)",
+    "tokens": [
+      "Forza",
+      "!",
+      "Cin",
+      "cin",
+      "a",
+      "tutti",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Forza",
+        "pinyin": null,
+        "meaning": "Força!, Vamos lá!"
+      },
+      {
+        "id": 2,
+        "word": "Cin cin",
+        "pinyin": null,
+        "meaning": "Saúde! (brinde), Cheers!"
+      },
+      {
+        "id": 3,
+        "word": "a tutti",
+        "pinyin": null,
+        "meaning": "a todos"
+      }
+    ],
+    "id": "local-1772297796456-7",
+    "language": "Italiano"
+  }
+]

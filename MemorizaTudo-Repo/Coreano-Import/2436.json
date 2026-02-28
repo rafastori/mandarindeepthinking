@@ -1,0 +1,450 @@
+[
+  {
+    "chinese": "A: 여보, 쌀하고 기름이 곧 다 떨어질 것 같아요.",
+    "pinyin": "",
+    "translation": "A: Querido(a), parece que o arroz e o óleo estão prestes a acabar.",
+    "tokens": [
+      "여보",
+      ",",
+      "쌀",
+      "하고",
+      "기름",
+      "이",
+      "곧",
+      "다",
+      "떨어질",
+      "것",
+      "같아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "여보",
+        "pinyin": "yeobo",
+        "meaning": "querido(a) (chamada para o cônjuge)"
+      },
+      {
+        "id": 2,
+        "word": "쌀",
+        "pinyin": "ssal",
+        "meaning": "arroz (cru)"
+      },
+      {
+        "id": 4,
+        "word": "기름",
+        "pinyin": "gireum",
+        "meaning": "óleo"
+      },
+      {
+        "id": 6,
+        "word": "곧",
+        "pinyin": "got",
+        "meaning": "logo, em breve"
+      },
+      {
+        "id": 8,
+        "word": "떨어지다",
+        "pinyin": "tteoreojida",
+        "meaning": "acabar, esgotar (verbo base)"
+      },
+      {
+        "id": 10,
+        "word": "같아요",
+        "pinyin": "gatayo",
+        "meaning": "parece que (conjugação de 같다)"
+      }
+    ],
+    "id": "local-1772297572016-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 오? 그럼 이하오디안에서 살게요. 또 뭘 사야 해요?",
+    "pinyin": "",
+    "translation": "B: Ah? Então vou comprar no Yihaodian. O que mais preciso comprar?",
+    "tokens": [
+      "오",
+      "?",
+      "그럼",
+      "이하오디안",
+      "에서",
+      "살게요",
+      ".",
+      "또",
+      "뭘",
+      "사야",
+      "해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "오",
+        "pinyin": "o",
+        "meaning": "oh, ah (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "이하오디안",
+        "pinyin": "yihaodian",
+        "meaning": "Yihaodian (nome de loja)"
+      },
+      {
+        "id": 5,
+        "word": "살게요",
+        "pinyin": "salgeyo",
+        "meaning": "vou comprar (conjugação de 사다 + ~ㄹ게요)"
+      },
+      {
+        "id": 7,
+        "word": "또",
+        "pinyin": "tto",
+        "meaning": "mais, novamente"
+      },
+      {
+        "id": 8,
+        "word": "뭘",
+        "pinyin": "mweol",
+        "meaning": "o quê (contração de 무엇을)"
+      },
+      {
+        "id": 9,
+        "word": "사야 해요",
+        "pinyin": "saya haeyo",
+        "meaning": "precisa comprar (padrão 사다 + ~야 하다)"
+      }
+    ],
+    "id": "local-1772297572016-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 화장지도 사야 해요.",
+    "pinyin": "",
+    "translation": "A: Preciso comprar papel higiênico também.",
+    "tokens": [
+      "화장지",
+      "도",
+      "사야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "화장지",
+        "pinyin": "hwajangji",
+        "meaning": "papel higiênico"
+      },
+      {
+        "id": 2,
+        "word": "사야 해요",
+        "pinyin": "saya haeyo",
+        "meaning": "precisa comprar (padrão 사다 + ~야 하다)"
+      }
+    ],
+    "id": "local-1772297572016-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 주방 세제하고 세탁 세제는 있어요?",
+    "pinyin": "",
+    "translation": "B: Tem detergente de cozinha e sabão em pó?",
+    "tokens": [
+      "주방",
+      "세제",
+      "하고",
+      "세탁",
+      "세제",
+      "는",
+      "있어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "주방",
+        "pinyin": "jubang",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 1,
+        "word": "세제",
+        "pinyin": "seje",
+        "meaning": "detergente, sabão"
+      },
+      {
+        "id": 3,
+        "word": "세탁",
+        "pinyin": "setak",
+        "meaning": "lavagem (de roupa)"
+      },
+      {
+        "id": 6,
+        "word": "있어요",
+        "pinyin": "isseoyo",
+        "meaning": "tem, existe (conjugação de 있다)"
+      }
+    ],
+    "id": "local-1772297572016-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네. 아, 아기 분유하고 기저귀도 사야 해요.",
+    "pinyin": "",
+    "translation": "A: Sim. Ah, preciso comprar fórmula de bebê e fraldas também.",
+    "tokens": [
+      "네",
+      ".",
+      "아",
+      ",",
+      "아기",
+      "분유",
+      "하고",
+      "기저귀",
+      "도",
+      "사야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "아",
+        "pinyin": "a",
+        "meaning": "ah (interjeição)"
+      },
+      {
+        "id": 4,
+        "word": "아기",
+        "pinyin": "agi",
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
+        "word": "분유",
+        "pinyin": "bunyu",
+        "meaning": "fórmula para bebê"
+      },
+      {
+        "id": 7,
+        "word": "기저귀",
+        "pinyin": "gijeogwi",
+        "meaning": "fralda"
+      },
+      {
+        "id": 9,
+        "word": "사야 해요",
+        "pinyin": "saya haeyo",
+        "meaning": "precisa comprar (padrão 사다 + ~야 하다)"
+      }
+    ],
+    "id": "local-1772297572016-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠어요. 집에 간식은 있어요?",
+    "pinyin": "",
+    "translation": "B: Entendi. Tem lanche em casa?",
+    "tokens": [
+      "알겠어요",
+      ".",
+      "집",
+      "에",
+      "간식",
+      "은",
+      "있어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "알겠어요",
+        "pinyin": "algesseoyo",
+        "meaning": "entendi (conjugação de 알다)"
+      },
+      {
+        "id": 2,
+        "word": "집",
+        "pinyin": "jip",
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "간식",
+        "pinyin": "gansik",
+        "meaning": "lanche"
+      },
+      {
+        "id": 6,
+        "word": "있어요",
+        "pinyin": "isseoyo",
+        "meaning": "tem, existe (conjugação de 있다)"
+      }
+    ],
+    "id": "local-1772297572016-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네.",
+    "pinyin": "",
+    "translation": "A: Sim.",
+    "tokens": [
+      "네",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1772297572016-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 라면은 있어요?",
+    "pinyin": "",
+    "translation": "B: Tem ramen?",
+    "tokens": [
+      "라면",
+      "은",
+      "있어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "라면",
+        "pinyin": "ramyeon",
+        "meaning": "ramen, macarrão instantâneo"
+      },
+      {
+        "id": 2,
+        "word": "있어요",
+        "pinyin": "isseoyo",
+        "meaning": "tem, existe (conjugação de 있다)"
+      }
+    ],
+    "id": "local-1772297572016-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 라면은 사지 마세요. 건강에 좋지 않아요.",
+    "pinyin": "",
+    "translation": "A: Não compre ramen. Não é bom para a saúde.",
+    "tokens": [
+      "라면",
+      "은",
+      "사지",
+      "마세요",
+      ".",
+      "건강",
+      "에",
+      "좋지",
+      "않아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "라면",
+        "pinyin": "ramyeon",
+        "meaning": "ramen, macarrão instantâneo"
+      },
+      {
+        "id": 2,
+        "word": "사지 마세요",
+        "pinyin": "saji maseyo",
+        "meaning": "por favor, não compre (padrão 사다 + ~지 마세요)"
+      },
+      {
+        "id": 5,
+        "word": "건강",
+        "pinyin": "geongang",
+        "meaning": "saúde"
+      },
+      {
+        "id": 7,
+        "word": "좋지 않아요",
+        "pinyin": "joji anayo",
+        "meaning": "não é bom (padrão 좋다 + ~지 않다)"
+      }
+    ],
+    "id": "local-1772297572016-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠어요, 알겠어요. 어, 다 샀어요. 내일 배송될 거예요.",
+    "pinyin": "",
+    "translation": "B: Entendi, entendi. Ah, comprei tudo. Será entregue amanhã.",
+    "tokens": [
+      "알겠어요",
+      ",",
+      "알겠어요",
+      ".",
+      "어",
+      ",",
+      "다",
+      "샀어요",
+      ".",
+      "내일",
+      "배송될",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "알겠어요",
+        "pinyin": "algesseoyo",
+        "meaning": "entendi (conjugação de 알다)"
+      },
+      {
+        "id": 4,
+        "word": "어",
+        "pinyin": "eo",
+        "meaning": "uh, ah (interjeição)"
+      },
+      {
+        "id": 6,
+        "word": "다",
+        "pinyin": "da",
+        "meaning": "tudo"
+      },
+      {
+        "id": 7,
+        "word": "샀어요",
+        "pinyin": "sasseoyo",
+        "meaning": "comprei (passado de 사다)"
+      },
+      {
+        "id": 9,
+        "word": "내일",
+        "pinyin": "naeil",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 10,
+        "word": "배송될 거예요",
+        "pinyin": "baesongdoel geoyeyo",
+        "meaning": "será entregue (padrão 배송되다 + ~ㄹ 것이다)"
+      }
+    ],
+    "id": "local-1772297572016-9",
+    "language": "Coreano"
+  }
+]

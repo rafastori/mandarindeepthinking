@@ -1,0 +1,509 @@
+[
+  {
+    "chinese": "A: Lili, after work can you go with me to the shopping mall to walk around?",
+    "pinyin": "",
+    "translation": "A: Lili, depois do trabalho você pode ir comigo ao shopping para passear?",
+    "tokens": [
+      "A:",
+      "Lili,",
+      "after",
+      "work",
+      "can",
+      "you",
+      "go",
+      "with",
+      "me",
+      "to",
+      "the",
+      "shopping",
+      "mall",
+      "to",
+      "walk",
+      "around?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lili",
+        "pinyin": "",
+        "meaning": "Nome próprio."
+      },
+      {
+        "id": 2,
+        "word": "after work",
+        "pinyin": "",
+        "meaning": "Após o trabalho."
+      },
+      {
+        "id": 11,
+        "word": "shopping mall",
+        "pinyin": "",
+        "meaning": "Centro comercial, shopping."
+      },
+      {
+        "id": 14,
+        "word": "walk around",
+        "pinyin": "",
+        "meaning": "Passear, dar uma volta."
+      }
+    ],
+    "id": "local-1772293639296-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Sure. What do you want to buy?",
+    "pinyin": "",
+    "translation": "B: Claro. O que você quer comprar?",
+    "tokens": [
+      "B:",
+      "Sure.",
+      "What",
+      "do",
+      "you",
+      "want",
+      "to",
+      "buy?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sure",
+        "pinyin": "",
+        "meaning": "Claro, com certeza."
+      },
+      {
+        "id": 7,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "Comprar."
+      }
+    ],
+    "id": "local-1772293639296-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: My close friend is getting married. I would like to pick out a wedding gift.",
+    "pinyin": "",
+    "translation": "A: Minha amiga íntima vai se casar. Eu gostaria de escolher um presente de casamento.",
+    "tokens": [
+      "A:",
+      "My",
+      "close",
+      "friend",
+      "is",
+      "getting",
+      "married.",
+      "I",
+      "would",
+      "like",
+      "to",
+      "pick",
+      "out",
+      "a",
+      "wedding",
+      "gift."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "close friend",
+        "pinyin": "",
+        "meaning": "Amigo íntimo."
+      },
+      {
+        "id": 5,
+        "word": "getting married",
+        "pinyin": "",
+        "meaning": "Casando-se."
+      },
+      {
+        "id": 11,
+        "word": "pick out",
+        "pinyin": "",
+        "meaning": "Escolher, selecionar."
+      },
+      {
+        "id": 14,
+        "word": "wedding gift",
+        "pinyin": "",
+        "meaning": "Presente de casamento."
+      }
+    ],
+    "id": "local-1772293639296-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Wouldn't it be fine to just give her a red envelope with money in it?",
+    "pinyin": "",
+    "translation": "B: Não seria bom apenas dar a ela um envelope vermelho com dinheiro dentro?",
+    "tokens": [
+      "B:",
+      "Wouldn't",
+      "it",
+      "be",
+      "fine",
+      "to",
+      "just",
+      "give",
+      "her",
+      "a",
+      "red",
+      "envelope",
+      "with",
+      "money",
+      "in",
+      "it?"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "fine",
+        "pinyin": "",
+        "meaning": "Bom, aceitável."
+      },
+      {
+        "id": 10,
+        "word": "red envelope",
+        "pinyin": "",
+        "meaning": "Envelope vermelho (tradição chinesa para dar dinheiro)."
+      },
+      {
+        "id": 13,
+        "word": "money",
+        "pinyin": "",
+        "meaning": "Dinheiro."
+      }
+    ],
+    "id": "local-1772293639296-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: She is my best friend. I want to give her a gift that is different.",
+    "pinyin": "",
+    "translation": "A: Ela é minha melhor amiga. Eu quero dar a ela um presente que seja diferente.",
+    "tokens": [
+      "A:",
+      "She",
+      "is",
+      "my",
+      "best",
+      "friend.",
+      "I",
+      "want",
+      "to",
+      "give",
+      "her",
+      "a",
+      "gift",
+      "that",
+      "is",
+      "different."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "best friend",
+        "pinyin": "",
+        "meaning": "Melhor amiga."
+      },
+      {
+        "id": 12,
+        "word": "gift",
+        "pinyin": "",
+        "meaning": "Presente."
+      },
+      {
+        "id": 15,
+        "word": "different",
+        "pinyin": "",
+        "meaning": "Diferente."
+      }
+    ],
+    "id": "local-1772293639296-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Have you thought of what you would like to buy?",
+    "pinyin": "",
+    "translation": "B: Você pensou no que gostaria de comprar?",
+    "tokens": [
+      "B:",
+      "Have",
+      "you",
+      "thought",
+      "of",
+      "what",
+      "you",
+      "would",
+      "like",
+      "to",
+      "buy?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "thought of",
+        "pinyin": "",
+        "meaning": "Pensou em, considerou."
+      },
+      {
+        "id": 10,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "Comprar."
+      }
+    ],
+    "id": "local-1772293639296-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Not yet. Do you have any good ideas?",
+    "pinyin": "",
+    "translation": "A: Ainda não. Você tem alguma boa ideia?",
+    "tokens": [
+      "A:",
+      "Not",
+      "yet.",
+      "Do",
+      "you",
+      "have",
+      "any",
+      "good",
+      "ideas?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Not yet",
+        "pinyin": "",
+        "meaning": "Ainda não."
+      },
+      {
+        "id": 8,
+        "word": "ideas",
+        "pinyin": "",
+        "meaning": "Ideias."
+      }
+    ],
+    "id": "local-1772293639296-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's quite common to give things like tableware as a wedding gift.",
+    "pinyin": "",
+    "translation": "B: É bastante comum dar coisas como talheres de mesa como presente de casamento.",
+    "tokens": [
+      "B:",
+      "It's",
+      "quite",
+      "common",
+      "to",
+      "give",
+      "things",
+      "like",
+      "tableware",
+      "as",
+      "a",
+      "wedding",
+      "gift."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "common",
+        "pinyin": "",
+        "meaning": "Comum, frequente."
+      },
+      {
+        "id": 8,
+        "word": "tableware",
+        "pinyin": "",
+        "meaning": "Utensílios de mesa, louça."
+      },
+      {
+        "id": 11,
+        "word": "wedding gift",
+        "pinyin": "",
+        "meaning": "Presente de casamento."
+      }
+    ],
+    "id": "local-1772293639296-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That's too ordinary. I want something a bit more special.",
+    "pinyin": "",
+    "translation": "A: Isso é muito comum. Eu quero algo um pouco mais especial.",
+    "tokens": [
+      "A:",
+      "That's",
+      "too",
+      "ordinary.",
+      "I",
+      "want",
+      "something",
+      "a",
+      "bit",
+      "more",
+      "special."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "ordinary",
+        "pinyin": "",
+        "meaning": "Comum, ordinário."
+      },
+      {
+        "id": 10,
+        "word": "special",
+        "pinyin": "",
+        "meaning": "Especial."
+      }
+    ],
+    "id": "local-1772293639296-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then get something traditional. How about a lacquer comb?",
+    "pinyin": "",
+    "translation": "B: Então pegue algo tradicional. Que tal um pente de laca?",
+    "tokens": [
+      "B:",
+      "Then",
+      "get",
+      "something",
+      "traditional.",
+      "How",
+      "about",
+      "a",
+      "lacquer",
+      "comb?"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "traditional",
+        "pinyin": "",
+        "meaning": "Tradicional."
+      },
+      {
+        "id": 8,
+        "word": "lacquer comb",
+        "pinyin": "",
+        "meaning": "Pente de laca (material)."
+      }
+    ],
+    "id": "local-1772293639296-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh? What meaning is attached to it?",
+    "pinyin": "",
+    "translation": "A: Ah? Que significado está ligado a isso?",
+    "tokens": [
+      "A:",
+      "Oh?",
+      "What",
+      "meaning",
+      "is",
+      "attached",
+      "to",
+      "it?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "meaning",
+        "pinyin": "",
+        "meaning": "Significado."
+      },
+      {
+        "id": 5,
+        "word": "attached to",
+        "pinyin": "",
+        "meaning": "Ligado a, associado a."
+      }
+    ],
+    "id": "local-1772293639296-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: In China, this signifies that two people will always be together.",
+    "pinyin": "",
+    "translation": "B: Na China, isso significa que duas pessoas estarão sempre juntas.",
+    "tokens": [
+      "B:",
+      "In",
+      "China,",
+      "this",
+      "signifies",
+      "that",
+      "two",
+      "people",
+      "will",
+      "always",
+      "be",
+      "together."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "China",
+        "pinyin": "",
+        "meaning": "China (país)."
+      },
+      {
+        "id": 4,
+        "word": "signifies",
+        "pinyin": "",
+        "meaning": "Significa."
+      },
+      {
+        "id": 9,
+        "word": "always",
+        "pinyin": "",
+        "meaning": "Sempre."
+      },
+      {
+        "id": 11,
+        "word": "together",
+        "pinyin": "",
+        "meaning": "Juntos."
+      }
+    ],
+    "id": "local-1772293639296-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That's great. Let's go take a look.",
+    "pinyin": "",
+    "translation": "A: Que ótimo. Vamos dar uma olhada.",
+    "tokens": [
+      "A:",
+      "That's",
+      "great.",
+      "Let's",
+      "go",
+      "take",
+      "a",
+      "look."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "great",
+        "pinyin": "",
+        "meaning": "Ótimo, excelente."
+      },
+      {
+        "id": 5,
+        "word": "take a look",
+        "pinyin": "",
+        "meaning": "Dar uma olhada."
+      }
+    ],
+    "id": "local-1772293639296-12",
+    "language": "Inglês"
+  }
+]

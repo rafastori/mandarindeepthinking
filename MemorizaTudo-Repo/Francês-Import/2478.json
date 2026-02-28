@@ -1,0 +1,818 @@
+[
+  {
+    "chinese": "A: Bonjour, achetez-vous du vin ?",
+    "pinyin": "",
+    "translation": "A: Olá, você compra vinho?",
+    "tokens": [
+      "A:",
+      "Bonjour",
+      ",",
+      "achetez-vous",
+      "du",
+      "vin",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "achetez-vous",
+        "pinyin": "",
+        "meaning": "você compra"
+      },
+      {
+        "id": 3,
+        "word": "vin",
+        "pinyin": "",
+        "meaning": "vinho"
+      }
+    ],
+    "id": "local-1772300412611-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. Un ami étranger fête son anniversaire.",
+    "pinyin": "",
+    "translation": "B: Sim. Um amigo estrangeiro comemora seu aniversário.",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "Un",
+      "ami",
+      "étranger",
+      "fête",
+      "son",
+      "anniversaire",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "ami",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "étranger",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "fête",
+        "pinyin": "",
+        "meaning": "comemora (do verbo fêter)"
+      },
+      {
+        "id": 5,
+        "word": "anniversaire",
+        "pinyin": "",
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772300412611-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Aime-t-elle le vin rouge ou le vin blanc ?",
+    "pinyin": "",
+    "translation": "A: Ela gosta de vinho tinto ou vinho branco?",
+    "tokens": [
+      "A:",
+      "Aime-t-elle",
+      "le",
+      "vin",
+      "rouge",
+      "ou",
+      "le",
+      "vin",
+      "blanc",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aime-t-elle",
+        "pinyin": "",
+        "meaning": "Ela gosta (do verbo aimer)"
+      },
+      {
+        "id": 2,
+        "word": "vin",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 3,
+        "word": "rouge",
+        "pinyin": "",
+        "meaning": "vermelho, tinto"
+      },
+      {
+        "id": 4,
+        "word": "blanc",
+        "pinyin": "",
+        "meaning": "branco"
+      }
+    ],
+    "id": "local-1772300412611-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Le vin rouge.",
+    "pinyin": "",
+    "translation": "B: O vinho tinto.",
+    "tokens": [
+      "B:",
+      "Le",
+      "vin",
+      "rouge",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vin",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 2,
+        "word": "rouge",
+        "pinyin": "",
+        "meaning": "tinto"
+      }
+    ],
+    "id": "local-1772300412611-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: D'accord. Ici, nous avons des vins du Nouveau Monde et des vins de l'Ancien Monde.",
+    "pinyin": "",
+    "translation": "A: Certo. Aqui, temos vinhos do Novo Mundo e vinhos do Velho Mundo.",
+    "tokens": [
+      "A:",
+      "D'accord",
+      ".",
+      "Ici",
+      ",",
+      "nous",
+      "avons",
+      "des",
+      "vins",
+      "du",
+      "Nouveau",
+      "Monde",
+      "et",
+      "des",
+      "vins",
+      "de",
+      "l'",
+      "Ancien",
+      "Monde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "Certo, De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Ici",
+        "pinyin": "",
+        "meaning": "Aqui"
+      },
+      {
+        "id": 3,
+        "word": "avons",
+        "pinyin": "",
+        "meaning": "temos (do verbo avoir)"
+      },
+      {
+        "id": 4,
+        "word": "vins",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 5,
+        "word": "Nouveau Monde",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 6,
+        "word": "Ancien Monde",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      }
+    ],
+    "id": "local-1772300412611-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Normalement, je ne bois pas de vin, donc je ne suis pas très connaisseur.",
+    "pinyin": "",
+    "translation": "B: Normalmente, eu não bebo vinho, então não sou muito conhecedor.",
+    "tokens": [
+      "B:",
+      "Normalement",
+      ",",
+      "je",
+      "ne",
+      "bois",
+      "pas",
+      "de",
+      "vin",
+      ",",
+      "donc",
+      "je",
+      "ne",
+      "suis",
+      "pas",
+      "très",
+      "connaisseur",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Normalement",
+        "pinyin": "",
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 2,
+        "word": "bois",
+        "pinyin": "",
+        "meaning": "bebo (do verbo boire)"
+      },
+      {
+        "id": 3,
+        "word": "vin",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 4,
+        "word": "donc",
+        "pinyin": "",
+        "meaning": "então, portanto"
+      },
+      {
+        "id": 5,
+        "word": "suis",
+        "pinyin": "",
+        "meaning": "sou (do verbo être)"
+      },
+      {
+        "id": 6,
+        "word": "connaisseur",
+        "pinyin": "",
+        "meaning": "conhecedor"
+      }
+    ],
+    "id": "local-1772300412611-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Pas de problème. Le « Vieux Monde » fait principalement référence à des pays comme la France, l'Italie et l'Espagne qui ont des centaines d'années d'histoire dans la vinification traditionnelle. Mais le « Nouveau Monde » fait référence à des pays comme les États-Unis, le Canada, l'Argentine, l'Australie qui sont nouveaux dans la vinification.",
+    "pinyin": "",
+    "translation": "A: Sem problema. O «Velho Mundo» refere-se principalmente a países como a França, a Itália e a Espanha que têm centenas de anos de história na vinificação tradicional. Mas o «Novo Mundo» refere-se a países como os Estados Unidos, o Canadá, a Argentina, a Austrália que são novos na vinificação.",
+    "tokens": [
+      "A:",
+      "Pas",
+      "de",
+      "problème",
+      ".",
+      "Le",
+      "«",
+      "Vieux",
+      "Monde",
+      "»",
+      "fait",
+      "principalement",
+      "référence",
+      "à",
+      "des",
+      "pays",
+      "comme",
+      "la",
+      "France",
+      ",",
+      "l'",
+      "Italie",
+      "et",
+      "l'",
+      "Espagne",
+      "qui",
+      "ont",
+      "des",
+      "centaines",
+      "d'",
+      "années",
+      "d'",
+      "histoire",
+      "dans",
+      "la",
+      "vinification",
+      "traditionnelle",
+      ".",
+      "Mais",
+      "le",
+      "«",
+      "Nouveau",
+      "Monde",
+      "»",
+      "fait",
+      "référence",
+      "à",
+      "des",
+      "pays",
+      "comme",
+      "les",
+      "États-Unis",
+      ",",
+      "le",
+      "Canada",
+      ",",
+      "l'",
+      "Argentine",
+      ",",
+      "l'",
+      "Australie",
+      "qui",
+      "sont",
+      "nouveaux",
+      "dans",
+      "la",
+      "vinification",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pas de problème",
+        "pinyin": "",
+        "meaning": "Sem problema"
+      },
+      {
+        "id": 2,
+        "word": "Vieux Monde",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "fait référence à",
+        "pinyin": "",
+        "meaning": "refere-se a"
+      },
+      {
+        "id": 4,
+        "word": "principalement",
+        "pinyin": "",
+        "meaning": "principalmente"
+      },
+      {
+        "id": 5,
+        "word": "pays",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 6,
+        "word": "centaines d'années",
+        "pinyin": "",
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 7,
+        "word": "histoire",
+        "pinyin": "",
+        "meaning": "história"
+      },
+      {
+        "id": 8,
+        "word": "vinification",
+        "pinyin": "",
+        "meaning": "vinificação"
+      },
+      {
+        "id": 9,
+        "word": "traditionnelle",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 10,
+        "word": "Mais",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 11,
+        "word": "Nouveau Monde",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 12,
+        "word": "nouveaux",
+        "pinyin": "",
+        "meaning": "novos"
+      }
+    ],
+    "id": "local-1772300412611-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, y a-t-il une différence de goût ?",
+    "pinyin": "",
+    "translation": "B: Então, há uma diferença de sabor?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "y",
+      "a-t-il",
+      "une",
+      "différence",
+      "de",
+      "goût",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "y a-t-il",
+        "pinyin": "",
+        "meaning": "há (forma interrogativa de il y a)"
+      },
+      {
+        "id": 3,
+        "word": "différence",
+        "pinyin": "",
+        "meaning": "diferença"
+      },
+      {
+        "id": 4,
+        "word": "goût",
+        "pinyin": "",
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772300412611-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Le vin du Vieux Monde est assez acide, car la teneur en tanins est plus élevée. Le vin du Nouveau Monde est relativement doux car les tanins sont moins élevés.",
+    "pinyin": "",
+    "translation": "A: Sim. O vinho do Velho Mundo é bastante ácido, pois o teor de taninos é mais elevado. O vinho do Novo Mundo é relativamente suave porque os taninos são menos elevados.",
+    "tokens": [
+      "A:",
+      "Oui",
+      ".",
+      "Le",
+      "vin",
+      "du",
+      "Vieux",
+      "Monde",
+      "est",
+      "assez",
+      "acide",
+      ",",
+      "car",
+      "la",
+      "teneur",
+      "en",
+      "tanins",
+      "est",
+      "plus",
+      "élevée",
+      ".",
+      "Le",
+      "vin",
+      "du",
+      "Nouveau",
+      "Monde",
+      "est",
+      "relativement",
+      "doux",
+      "car",
+      "les",
+      "tanins",
+      "sont",
+      "moins",
+      "élevés",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "vin",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 3,
+        "word": "Vieux Monde",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 4,
+        "word": "assez",
+        "pinyin": "",
+        "meaning": "bastante"
+      },
+      {
+        "id": 5,
+        "word": "acide",
+        "pinyin": "",
+        "meaning": "ácido"
+      },
+      {
+        "id": 6,
+        "word": "car",
+        "pinyin": "",
+        "meaning": "pois, porque"
+      },
+      {
+        "id": 7,
+        "word": "teneur",
+        "pinyin": "",
+        "meaning": "teor"
+      },
+      {
+        "id": 8,
+        "word": "tanins",
+        "pinyin": "",
+        "meaning": "taninos"
+      },
+      {
+        "id": 9,
+        "word": "plus élevée",
+        "pinyin": "",
+        "meaning": "mais elevado(a)"
+      },
+      {
+        "id": 10,
+        "word": "Nouveau Monde",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 11,
+        "word": "relativement",
+        "pinyin": "",
+        "meaning": "relativamente"
+      },
+      {
+        "id": 12,
+        "word": "doux",
+        "pinyin": "",
+        "meaning": "suave, doce"
+      },
+      {
+        "id": 13,
+        "word": "moins élevés",
+        "pinyin": "",
+        "meaning": "menos elevados"
+      }
+    ],
+    "id": "local-1772300412611-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oh, j'ai entendu dire que les filles aiment davantage les vins fruités.",
+    "pinyin": "",
+    "translation": "B: Ah, ouvi dizer que as garotas gostam mais de vinhos frutados.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "j'",
+      "ai",
+      "entendu",
+      "dire",
+      "que",
+      "les",
+      "filles",
+      "aiment",
+      "davantage",
+      "les",
+      "vins",
+      "fruités",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "j'ai entendu dire que",
+        "pinyin": "",
+        "meaning": "ouvi dizer que"
+      },
+      {
+        "id": 3,
+        "word": "filles",
+        "pinyin": "",
+        "meaning": "garotas, moças"
+      },
+      {
+        "id": 4,
+        "word": "aiment",
+        "pinyin": "",
+        "meaning": "gostam (do verbo aimer)"
+      },
+      {
+        "id": 5,
+        "word": "davantage",
+        "pinyin": "",
+        "meaning": "mais, em maior quantidade"
+      },
+      {
+        "id": 6,
+        "word": "vins",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 7,
+        "word": "fruités",
+        "pinyin": "",
+        "meaning": "frutados"
+      }
+    ],
+    "id": "local-1772300412611-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Hmm-hmm. Ce genre de vin que nous avons est particulièrement bon pour les filles. Il se vend très bien.",
+    "pinyin": "",
+    "translation": "A: Hmm-hmm. Esse tipo de vinho que temos é particularmente bom para as garotas. Ele vende muito bem.",
+    "tokens": [
+      "A:",
+      "Hmm-hmm",
+      ".",
+      "Ce",
+      "genre",
+      "de",
+      "vin",
+      "que",
+      "nous",
+      "avons",
+      "est",
+      "particulièrement",
+      "bon",
+      "pour",
+      "les",
+      "filles",
+      ".",
+      "Il",
+      "se",
+      "vend",
+      "très",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hmm-hmm",
+        "pinyin": "",
+        "meaning": "Hum-hum (afirmação)"
+      },
+      {
+        "id": 2,
+        "word": "genre de vin",
+        "pinyin": "",
+        "meaning": "tipo de vinho"
+      },
+      {
+        "id": 3,
+        "word": "avons",
+        "pinyin": "",
+        "meaning": "temos (do verbo avoir)"
+      },
+      {
+        "id": 4,
+        "word": "particulièrement",
+        "pinyin": "",
+        "meaning": "particularmente"
+      },
+      {
+        "id": 5,
+        "word": "bon",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 6,
+        "word": "filles",
+        "pinyin": "",
+        "meaning": "garotas"
+      },
+      {
+        "id": 7,
+        "word": "se vend",
+        "pinyin": "",
+        "meaning": "vende (do verbo se vendre - vender-se)"
+      },
+      {
+        "id": 8,
+        "word": "très bien",
+        "pinyin": "",
+        "meaning": "muito bem"
+      }
+    ],
+    "id": "local-1772300412611-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord, alors c'est cette bouteille. Merci !",
+    "pinyin": "",
+    "translation": "B: Certo, então é esta garrafa. Obrigado!",
+    "tokens": [
+      "B:",
+      "D'accord",
+      ",",
+      "alors",
+      "c'",
+      "est",
+      "cette",
+      "bouteille",
+      ".",
+      "Merci",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "Certo"
+      },
+      {
+        "id": 2,
+        "word": "alors",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "c'est",
+        "pinyin": "",
+        "meaning": "é (isso é)"
+      },
+      {
+        "id": 4,
+        "word": "bouteille",
+        "pinyin": "",
+        "meaning": "garrafa"
+      },
+      {
+        "id": 5,
+        "word": "Merci",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772300412611-11",
+    "language": "Francês"
+  }
+]

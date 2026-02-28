@@ -1,0 +1,617 @@
+[
+  {
+    "chinese": "小劉さん、今日からインターンですね。分からないことがあれば、何でも聞いてください。",
+    "pinyin": "",
+    "translation": "A: Senhora Liu, você é estagiária a partir de hoje, certo? Se houver algo que não entenda, por favor, pergunte o que quiser.",
+    "tokens": [
+      "小劉",
+      "さん",
+      "、",
+      "今日",
+      "から",
+      "インターン",
+      "です",
+      "ね",
+      "。",
+      "分から",
+      "ない",
+      "こと",
+      "が",
+      "あれ",
+      "ば",
+      "、",
+      "何",
+      "でも",
+      "聞い",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小劉さん",
+        "pinyin": "Shōryū-san",
+        "meaning": "Sra. Liu (nome)"
+      },
+      {
+        "id": 2,
+        "word": "今日",
+        "pinyin": "kyō",
+        "meaning": "hoje"
+      },
+      {
+        "id": 3,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "a partir de"
+      },
+      {
+        "id": 4,
+        "word": "インターン",
+        "pinyin": "intān",
+        "meaning": "estagiário(a)"
+      },
+      {
+        "id": 5,
+        "word": "分からない",
+        "pinyin": "wakaranai",
+        "meaning": "não entender"
+      },
+      {
+        "id": 6,
+        "word": "こと",
+        "pinyin": "koto",
+        "meaning": "coisa, assunto"
+      },
+      {
+        "id": 7,
+        "word": "あれば",
+        "pinyin": "areba",
+        "meaning": "se houver"
+      },
+      {
+        "id": 8,
+        "word": "何でも",
+        "pinyin": "nandemo",
+        "meaning": "qualquer coisa"
+      },
+      {
+        "id": 9,
+        "word": "聞いてください",
+        "pinyin": "kiite kudasai",
+        "meaning": "por favor, pergunte"
+      }
+    ],
+    "id": "local-1772298781478-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "はい、李さん。何をすればいいですか？",
+    "pinyin": "",
+    "translation": "B: Sim, Sr. Lee. O que devo fazer?",
+    "tokens": [
+      "はい",
+      "、",
+      "李",
+      "さん",
+      "。",
+      "何",
+      "を",
+      "すれ",
+      "ば",
+      "いい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "sim"
+      },
+      {
+        "id": 11,
+        "word": "李さん",
+        "pinyin": "Ri-san",
+        "meaning": "Sr. Lee (nome)"
+      },
+      {
+        "id": 12,
+        "word": "何をすればいいですか",
+        "pinyin": "nani o sureba ii desu ka",
+        "meaning": "o que devo fazer?"
+      }
+    ],
+    "id": "local-1772298781478-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "こちらが書類です。整理してください。使えるものと「無効」と書かれているものを確認してください。",
+    "pinyin": "",
+    "translation": "A: Estes são os documentos. Por favor, organize-os. Confirme quais são utilizáveis e quais estão marcados como 'inválidos'.",
+    "tokens": [
+      "こちら",
+      "が",
+      "書類",
+      "です",
+      "。",
+      "整理",
+      "し",
+      "て",
+      "ください",
+      "。",
+      "使える",
+      "もの",
+      "と",
+      "「",
+      "無効",
+      "」",
+      "と",
+      "書かれて",
+      "いる",
+      "もの",
+      "を",
+      "確認",
+      "し",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 13,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "estes, aqui (educado)"
+      },
+      {
+        "id": 14,
+        "word": "書類",
+        "pinyin": "shorui",
+        "meaning": "documentos"
+      },
+      {
+        "id": 15,
+        "word": "整理してください",
+        "pinyin": "seiri shite kudasai",
+        "meaning": "por favor, organize"
+      },
+      {
+        "id": 16,
+        "word": "使える",
+        "pinyin": "tsukaeru",
+        "meaning": "utilizável, que pode ser usado"
+      },
+      {
+        "id": 17,
+        "word": "もの",
+        "pinyin": "mono",
+        "meaning": "coisa"
+      },
+      {
+        "id": 18,
+        "word": "無効",
+        "pinyin": "mukō",
+        "meaning": "inválido"
+      },
+      {
+        "id": 19,
+        "word": "書かれている",
+        "pinyin": "kakarete iru",
+        "meaning": "escrito, está escrito"
+      },
+      {
+        "id": 20,
+        "word": "確認してください",
+        "pinyin": "kakunin shite kudasai",
+        "meaning": "por favor, confirme"
+      }
+    ],
+    "id": "local-1772298781478-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "はい、李さん。これらはすべて無効な書類です。",
+    "pinyin": "",
+    "translation": "B: Sim, Sr. Lee. Estes são todos documentos inválidos.",
+    "tokens": [
+      "はい",
+      "、",
+      "李",
+      "さん",
+      "。",
+      "これら",
+      "は",
+      "すべて",
+      "無効",
+      "な",
+      "書類",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "sim"
+      },
+      {
+        "id": 22,
+        "word": "李さん",
+        "pinyin": "Ri-san",
+        "meaning": "Sr. Lee (nome)"
+      },
+      {
+        "id": 23,
+        "word": "これら",
+        "pinyin": "korera",
+        "meaning": "estes"
+      },
+      {
+        "id": 24,
+        "word": "すべて",
+        "pinyin": "subete",
+        "meaning": "todos"
+      },
+      {
+        "id": 25,
+        "word": "無効な",
+        "pinyin": "mukō na",
+        "meaning": "inválido"
+      },
+      {
+        "id": 26,
+        "word": "書類",
+        "pinyin": "shorui",
+        "meaning": "documentos"
+      }
+    ],
+    "id": "local-1772298781478-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "では、処分してください。",
+    "pinyin": "",
+    "translation": "A: Então, por favor, descarte-os.",
+    "tokens": [
+      "では",
+      "、",
+      "処分",
+      "し",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então"
+      },
+      {
+        "id": 28,
+        "word": "処分してください",
+        "pinyin": "shobun shite kudasai",
+        "meaning": "por favor, descarte"
+      }
+    ],
+    "id": "local-1772298781478-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ゴミ箱に捨ててもいいですか？",
+    "pinyin": "",
+    "translation": "B: Posso jogar no lixo?",
+    "tokens": [
+      "ゴミ箱",
+      "に",
+      "捨て",
+      "て",
+      "も",
+      "いい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "ゴミ箱",
+        "pinyin": "gomibako",
+        "meaning": "lixeira, cesto de lixo"
+      },
+      {
+        "id": 30,
+        "word": "捨ててもいいですか",
+        "pinyin": "sutete mo ii desu ka",
+        "meaning": "posso jogar fora?"
+      }
+    ],
+    "id": "local-1772298781478-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "いいえ。会社の書類は捨ててはいけません。重要な情報が含まれているかもしれませんから。",
+    "pinyin": "",
+    "translation": "A: Não. Você não deve jogar fora os documentos da empresa. Eles podem conter informações importantes.",
+    "tokens": [
+      "いいえ",
+      "。",
+      "会社",
+      "の",
+      "書類",
+      "は",
+      "捨て",
+      "て",
+      "は",
+      "いけ",
+      "ません",
+      "。",
+      "重要",
+      "な",
+      "情報",
+      "が",
+      "含ま",
+      "れ",
+      "て",
+      "いる",
+      "かも",
+      "しれ",
+      "ません",
+      "から",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "いいえ",
+        "pinyin": "īe",
+        "meaning": "não"
+      },
+      {
+        "id": 32,
+        "word": "会社",
+        "pinyin": "kaisha",
+        "meaning": "empresa"
+      },
+      {
+        "id": 33,
+        "word": "書類",
+        "pinyin": "shorui",
+        "meaning": "documentos"
+      },
+      {
+        "id": 34,
+        "word": "捨ててはいけません",
+        "pinyin": "sutete wa ikemasen",
+        "meaning": "não se deve jogar fora"
+      },
+      {
+        "id": 35,
+        "word": "重要な",
+        "pinyin": "jūyō na",
+        "meaning": "importante"
+      },
+      {
+        "id": 36,
+        "word": "情報",
+        "pinyin": "jōhō",
+        "meaning": "informação"
+      },
+      {
+        "id": 37,
+        "word": "含まれている",
+        "pinyin": "fukumarete iru",
+        "meaning": "está incluído, contido"
+      },
+      {
+        "id": 38,
+        "word": "かもしれません",
+        "pinyin": "kamoshiremasen",
+        "meaning": "talvez, pode ser que"
+      },
+      {
+        "id": 39,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque, já que"
+      }
+    ],
+    "id": "local-1772298781478-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "では、手で破るのですか？",
+    "pinyin": "",
+    "translation": "B: Então, eu os rasgo à mão?",
+    "tokens": [
+      "では",
+      "、",
+      "手",
+      "で",
+      "破る",
+      "の",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 40,
+        "word": "では",
+        "pinyin": "dewa",
+        "meaning": "então"
+      },
+      {
+        "id": 41,
+        "word": "手で",
+        "pinyin": "te de",
+        "meaning": "à mão"
+      },
+      {
+        "id": 42,
+        "word": "破る",
+        "pinyin": "yaburu",
+        "meaning": "rasgar"
+      },
+      {
+        "id": 43,
+        "word": "のですか",
+        "pinyin": "no desu ka",
+        "meaning": "é que...?, por acaso...?"
+      }
+    ],
+    "id": "local-1772298781478-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ハハ、もちろん違います。シュレッダーを使ってください。さあ、教えます。シュレッダーの電源を入れて、書類をゆっくりと入れてください。",
+    "pinyin": "",
+    "translation": "A: Haha, claro que não. Por favor, use o triturador de papel. Vamos, eu vou te ensinar. Ligue o triturador de papel e insira os documentos lentamente.",
+    "tokens": [
+      "ハハ",
+      "、",
+      "もちろん",
+      "違い",
+      "ます",
+      "。",
+      "シュレッダー",
+      "を",
+      "使っ",
+      "て",
+      "ください",
+      "。",
+      "さあ",
+      "、",
+      "教え",
+      "ます",
+      "。",
+      "シュレッダー",
+      "の",
+      "電源",
+      "を",
+      "入れ",
+      "て",
+      "、",
+      "書類",
+      "を",
+      "ゆっくり",
+      "と",
+      "入れ",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "ハハ",
+        "pinyin": "haha",
+        "meaning": "hahaha (risada)"
+      },
+      {
+        "id": 45,
+        "word": "もちろん",
+        "pinyin": "mochiron",
+        "meaning": "claro, com certeza"
+      },
+      {
+        "id": 46,
+        "word": "違います",
+        "pinyin": "chigaimasu",
+        "meaning": "está errado, é diferente"
+      },
+      {
+        "id": 47,
+        "word": "シュレッダー",
+        "pinyin": "shureddā",
+        "meaning": "triturador de papel, fragmentadora"
+      },
+      {
+        "id": 48,
+        "word": "使ってください",
+        "pinyin": "tsukatte kudasai",
+        "meaning": "por favor, use"
+      },
+      {
+        "id": 49,
+        "word": "さあ",
+        "pinyin": "sā",
+        "meaning": "vamos, então"
+      },
+      {
+        "id": 50,
+        "word": "教えます",
+        "pinyin": "oshiemasu",
+        "meaning": "eu vou ensinar/mostrar"
+      },
+      {
+        "id": 51,
+        "word": "電源",
+        "pinyin": "dengen",
+        "meaning": "fonte de energia, botão de ligar/desligar"
+      },
+      {
+        "id": 52,
+        "word": "入れて",
+        "pinyin": "irete",
+        "meaning": "ligar (máquina), colocar (documentos)"
+      },
+      {
+        "id": 53,
+        "word": "書類",
+        "pinyin": "shorui",
+        "meaning": "documentos"
+      },
+      {
+        "id": 54,
+        "word": "ゆっくりと",
+        "pinyin": "yukkuri to",
+        "meaning": "lentamente"
+      },
+      {
+        "id": 55,
+        "word": "入れてください",
+        "pinyin": "irete kudasai",
+        "meaning": "por favor, insira"
+      }
+    ],
+    "id": "local-1772298781478-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ありがとうございます、李さん。",
+    "pinyin": "",
+    "translation": "B: Muito obrigado, Sr. Lee.",
+    "tokens": [
+      "ありがとう",
+      "ござい",
+      "ます",
+      "、",
+      "李",
+      "さん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 56,
+        "word": "ありがとうございます",
+        "pinyin": "arigatō gozaimasu",
+        "meaning": "muito obrigado(a)"
+      },
+      {
+        "id": 57,
+        "word": "李さん",
+        "pinyin": "Ri-san",
+        "meaning": "Sr. Lee (nome)"
+      }
+    ],
+    "id": "local-1772298781478-9",
+    "language": "Japonês"
+  }
+]

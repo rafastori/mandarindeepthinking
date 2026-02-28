@@ -1,0 +1,626 @@
+[
+  {
+    "chinese": "A: Zoey, j'ai entendu dire que ta famille a acheté une grande télévision. J'ai vraiment envie de passer la voir.",
+    "pinyin": null,
+    "translation": "A: Zoey, ouvi dizer que sua família comprou uma televisão grande. Eu realmente quero ir vê-la.",
+    "tokens": [
+      "A:",
+      "Zoey",
+      ",",
+      "j'ai",
+      "entendu",
+      "dire",
+      "que",
+      "ta",
+      "famille",
+      "a",
+      "acheté",
+      "une",
+      "grande",
+      "télévision",
+      ".",
+      "J'ai",
+      "vraiment",
+      "envie",
+      "de",
+      "passer",
+      "la",
+      "voir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entendu dire",
+        "pinyin": null,
+        "meaning": "ouvir dizer"
+      },
+      {
+        "id": 2,
+        "word": "famille",
+        "pinyin": null,
+        "meaning": "família"
+      },
+      {
+        "id": 3,
+        "word": "acheté",
+        "pinyin": null,
+        "meaning": "comprado"
+      },
+      {
+        "id": 4,
+        "word": "télévision",
+        "pinyin": null,
+        "meaning": "televisão"
+      },
+      {
+        "id": 5,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "envie de",
+        "pinyin": null,
+        "meaning": "vontade de"
+      },
+      {
+        "id": 7,
+        "word": "passer voir",
+        "pinyin": null,
+        "meaning": "passar para ver"
+      }
+    ],
+    "id": "local-1772296929349-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bienvenue. Entre !",
+    "pinyin": null,
+    "translation": "B: Bem-vindo(a). Entre!",
+    "tokens": [
+      "B:",
+      "Bienvenue",
+      ".",
+      "Entre",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bienvenue",
+        "pinyin": null,
+        "meaning": "Bem-vindo(a)"
+      },
+      {
+        "id": 2,
+        "word": "Entre",
+        "pinyin": null,
+        "meaning": "Entre"
+      }
+    ],
+    "id": "local-1772296929349-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Heh, cette télé est vraiment impressionnante ! Dis, qu'est-ce que c'est ce petit cube noir ?",
+    "pinyin": null,
+    "translation": "A: Heh, esta TV é realmente impressionante! Diga, o que é esse pequeno cubo preto?",
+    "tokens": [
+      "A:",
+      "Heh",
+      ",",
+      "cette",
+      "télé",
+      "est",
+      "vraiment",
+      "impressionnante",
+      "!",
+      "Dis",
+      ",",
+      "qu'est-ce",
+      "que",
+      "c'est",
+      "ce",
+      "petit",
+      "cube",
+      "noir",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "télé",
+        "pinyin": null,
+        "meaning": "TV"
+      },
+      {
+        "id": 2,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "impressionnante",
+        "pinyin": null,
+        "meaning": "impressionante"
+      },
+      {
+        "id": 4,
+        "word": "Dis",
+        "pinyin": null,
+        "meaning": "Diga"
+      },
+      {
+        "id": 5,
+        "word": "qu'est-ce que c'est",
+        "pinyin": null,
+        "meaning": "o que é"
+      },
+      {
+        "id": 6,
+        "word": "petit",
+        "pinyin": null,
+        "meaning": "pequeno"
+      },
+      {
+        "id": 7,
+        "word": "cube",
+        "pinyin": null,
+        "meaning": "cubo"
+      },
+      {
+        "id": 8,
+        "word": "noir",
+        "pinyin": null,
+        "meaning": "preto"
+      }
+    ],
+    "id": "local-1772296929349-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oh, c'est une MiBox, une sorte de boîtier TV internet.",
+    "pinyin": null,
+    "translation": "B: Ah, é uma MiBox, uma espécie de aparelho de TV por internet.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "c'est",
+      "une",
+      "MiBox",
+      ",",
+      "une",
+      "sorte",
+      "de",
+      "boîtier",
+      "TV",
+      "internet",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "MiBox",
+        "pinyin": null,
+        "meaning": "MiBox"
+      },
+      {
+        "id": 2,
+        "word": "une sorte de",
+        "pinyin": null,
+        "meaning": "uma espécie de"
+      },
+      {
+        "id": 3,
+        "word": "boîtier",
+        "pinyin": null,
+        "meaning": "aparelho"
+      },
+      {
+        "id": 4,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      }
+    ],
+    "id": "local-1772296929349-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Qu'est-ce que ça fait ?",
+    "pinyin": null,
+    "translation": "A: O que isso faz?",
+    "tokens": [
+      "A:",
+      "Qu'est-ce",
+      "que",
+      "ça",
+      "fait",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qu'est-ce que ça fait",
+        "pinyin": null,
+        "meaning": "O que isso faz?"
+      }
+    ],
+    "id": "local-1772296929349-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tiens, regarde. Cette MiBox est connectée à internet. Avec elle, tu peux regarder la télé en ligne et jouer à des jeux. Tu peux aussi lire des vidéos locales et revoir des émissions précédemment diffusées.",
+    "pinyin": null,
+    "translation": "B: Pega/Olha, veja. Esta MiBox está conectada à internet. Com ela, você pode assistir TV online e jogar. Você também pode reproduzir vídeos locais e rever programas que foram transmitidos anteriormente.",
+    "tokens": [
+      "B:",
+      "Tiens",
+      ",",
+      "regarde",
+      ".",
+      "Cette",
+      "MiBox",
+      "est",
+      "connectée",
+      "à",
+      "internet",
+      ".",
+      "Avec",
+      "elle",
+      ",",
+      "tu",
+      "peux",
+      "regarder",
+      "la",
+      "télé",
+      "en",
+      "ligne",
+      "et",
+      "jouer",
+      "à",
+      "des",
+      "jeux",
+      ".",
+      "Tu",
+      "peux",
+      "aussi",
+      "lire",
+      "des",
+      "vidéos",
+      "locales",
+      "et",
+      "revoir",
+      "des",
+      "émissions",
+      "précédemment",
+      "diffusées",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tiens",
+        "pinyin": null,
+        "meaning": "Pega/Olha (expressão de atenção)"
+      },
+      {
+        "id": 2,
+        "word": "regarde",
+        "pinyin": null,
+        "meaning": "olha, veja"
+      },
+      {
+        "id": 3,
+        "word": "connectée",
+        "pinyin": null,
+        "meaning": "conectada"
+      },
+      {
+        "id": 4,
+        "word": "regarder",
+        "pinyin": null,
+        "meaning": "assistir, ver"
+      },
+      {
+        "id": 5,
+        "word": "en ligne",
+        "pinyin": null,
+        "meaning": "online, em linha"
+      },
+      {
+        "id": 6,
+        "word": "jouer",
+        "pinyin": null,
+        "meaning": "jogar"
+      },
+      {
+        "id": 7,
+        "word": "jeux",
+        "pinyin": null,
+        "meaning": "jogos"
+      },
+      {
+        "id": 8,
+        "word": "lire",
+        "pinyin": null,
+        "meaning": "reproduzir"
+      },
+      {
+        "id": 9,
+        "word": "vidéos locales",
+        "pinyin": null,
+        "meaning": "vídeos locais"
+      },
+      {
+        "id": 10,
+        "word": "revoir",
+        "pinyin": null,
+        "meaning": "rever"
+      },
+      {
+        "id": 11,
+        "word": "émissions",
+        "pinyin": null,
+        "meaning": "programas (de TV)"
+      },
+      {
+        "id": 12,
+        "word": "précédemment",
+        "pinyin": null,
+        "meaning": "anteriormente"
+      },
+      {
+        "id": 13,
+        "word": "diffusées",
+        "pinyin": null,
+        "meaning": "transmitidas, exibidas"
+      }
+    ],
+    "id": "local-1772296929349-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Waouh, c'est vraiment très puissant !",
+    "pinyin": null,
+    "translation": "A: Uau, é realmente muito potente!",
+    "tokens": [
+      "A:",
+      "Waouh",
+      ",",
+      "c'est",
+      "vraiment",
+      "très",
+      "puissant",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Waouh",
+        "pinyin": null,
+        "meaning": "Uau"
+      },
+      {
+        "id": 2,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "très",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "puissant",
+        "pinyin": null,
+        "meaning": "potente, poderoso"
+      }
+    ],
+    "id": "local-1772296929349-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. À part la MiBox, il y a aussi l'Apple TV, la ComoTV et d'autres encore. Quand nous choisissions un boîtier TV, c'était vraiment difficile de décider.",
+    "pinyin": null,
+    "translation": "B: Sim. Além da MiBox, há também a Apple TV, a ComoTV e outras ainda. Quando escolhemos um aparelho de TV, foi realmente difícil decidir.",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "À",
+      "part",
+      "la",
+      "MiBox",
+      ",",
+      "il",
+      "y",
+      "a",
+      "aussi",
+      "l'Apple",
+      "TV",
+      ",",
+      "la",
+      "ComoTV",
+      "et",
+      "d'autres",
+      "encore",
+      ".",
+      "Quand",
+      "nous",
+      "choisissions",
+      "un",
+      "boîtier",
+      "TV",
+      ",",
+      "c'était",
+      "vraiment",
+      "difficile",
+      "de",
+      "décider",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "À part",
+        "pinyin": null,
+        "meaning": "Além de"
+      },
+      {
+        "id": 3,
+        "word": "il y a",
+        "pinyin": null,
+        "meaning": "há, existe"
+      },
+      {
+        "id": 4,
+        "word": "aussi",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 5,
+        "word": "d'autres encore",
+        "pinyin": null,
+        "meaning": "outras ainda"
+      },
+      {
+        "id": 6,
+        "word": "choisissions",
+        "pinyin": null,
+        "meaning": "escolhíamos"
+      },
+      {
+        "id": 7,
+        "word": "boîtier",
+        "pinyin": null,
+        "meaning": "aparelho"
+      },
+      {
+        "id": 8,
+        "word": "difficile",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 9,
+        "word": "décider",
+        "pinyin": null,
+        "meaning": "decidir"
+      }
+    ],
+    "id": "local-1772296929349-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: On dirait que je suis vraiment déconnecté. Ma maison utilise encore le câble. Plus tard, je vais aussi acheter un boîtier.",
+    "pinyin": null,
+    "translation": "A: Parece que estou realmente desconectado. Minha casa ainda usa cabo. Mais tarde, também vou comprar um aparelho.",
+    "tokens": [
+      "A:",
+      "On",
+      "dirait",
+      "que",
+      "je",
+      "suis",
+      "vraiment",
+      "déconnecté",
+      ".",
+      "Ma",
+      "maison",
+      "utilise",
+      "encore",
+      "le",
+      "câble",
+      ".",
+      "Plus",
+      "tard",
+      ",",
+      "je",
+      "vais",
+      "aussi",
+      "acheter",
+      "un",
+      "boîtier",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "On dirait que",
+        "pinyin": null,
+        "meaning": "Parece que"
+      },
+      {
+        "id": 2,
+        "word": "vraiment",
+        "pinyin": null,
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "déconnecté",
+        "pinyin": null,
+        "meaning": "desconectado"
+      },
+      {
+        "id": 4,
+        "word": "maison",
+        "pinyin": null,
+        "meaning": "casa"
+      },
+      {
+        "id": 5,
+        "word": "utilise",
+        "pinyin": null,
+        "meaning": "usa"
+      },
+      {
+        "id": 6,
+        "word": "encore",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 7,
+        "word": "câble",
+        "pinyin": null,
+        "meaning": "cabo"
+      },
+      {
+        "id": 8,
+        "word": "Plus tard",
+        "pinyin": null,
+        "meaning": "Mais tarde"
+      },
+      {
+        "id": 9,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 10,
+        "word": "boîtier",
+        "pinyin": null,
+        "meaning": "aparelho"
+      }
+    ],
+    "id": "local-1772296929349-8",
+    "language": "Francês"
+  }
+]

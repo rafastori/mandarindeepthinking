@@ -1,0 +1,543 @@
+[
+  {
+    "chinese": "A: Xiao Chen, du planst, ein Auto zu kaufen?",
+    "pinyin": "",
+    "translation": "A: Xiao Chen, você está planejando comprar um carro?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Chen,",
+      "du",
+      "planst,",
+      "ein",
+      "Auto",
+      "zu",
+      "kaufen?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planst",
+        "pinyin": "",
+        "meaning": "(du planst) você planeja"
+      },
+      {
+        "id": 2,
+        "word": "Auto",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 3,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772293150139-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja! Xiao Sun, ich wollte dich gerade nach deiner Meinung fragen.",
+    "pinyin": "",
+    "translation": "B: Sim! Xiao Sun, eu queria mesmo te perguntar sua opinião.",
+    "tokens": [
+      "B:",
+      "Ja!",
+      "Xiao",
+      "Sun,",
+      "ich",
+      "wollte",
+      "dich",
+      "gerade",
+      "nach",
+      "deiner",
+      "Meinung",
+      "fragen."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 5,
+        "word": "wollte",
+        "pinyin": "",
+        "meaning": "(ich wollte) eu queria"
+      },
+      {
+        "id": 6,
+        "word": "gerade",
+        "pinyin": "",
+        "meaning": "justamente, agora mesmo"
+      },
+      {
+        "id": 7,
+        "word": "Meinung",
+        "pinyin": "",
+        "meaning": "opinião"
+      },
+      {
+        "id": 8,
+        "word": "fragen",
+        "pinyin": "",
+        "meaning": "perguntar"
+      }
+    ],
+    "id": "local-1772293150139-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wie hoch ist denn ungefähr dein Budget?",
+    "pinyin": "",
+    "translation": "A: Qual é o seu orçamento, aproximadamente?",
+    "tokens": [
+      "A:",
+      "Wie",
+      "hoch",
+      "ist",
+      "denn",
+      "ungefähr",
+      "dein",
+      "Budget?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "Wie hoch",
+        "pinyin": "",
+        "meaning": "qual (para valores, custos)"
+      },
+      {
+        "id": 10,
+        "word": "ungefähr",
+        "pinyin": "",
+        "meaning": "aproximadamente"
+      },
+      {
+        "id": 11,
+        "word": "Budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      }
+    ],
+    "id": "local-1772293150139-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Inklusive Zulassung und Steuern etwas mehr als 200.000.",
+    "pinyin": "",
+    "translation": "B: Incluindo licenciamento e impostos, um pouco mais de 200.000.",
+    "tokens": [
+      "B:",
+      "Inklusive",
+      "Zulassung",
+      "und",
+      "Steuern",
+      "etwas",
+      "mehr",
+      "als",
+      "200.000."
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "Inklusive",
+        "pinyin": "",
+        "meaning": "incluindo"
+      },
+      {
+        "id": 13,
+        "word": "Zulassung",
+        "pinyin": "",
+        "meaning": "licenciamento, registro"
+      },
+      {
+        "id": 14,
+        "word": "Steuern",
+        "pinyin": "",
+        "meaning": "impostos"
+      },
+      {
+        "id": 15,
+        "word": "etwas mehr als",
+        "pinyin": "",
+        "meaning": "um pouco mais de"
+      }
+    ],
+    "id": "local-1772293150139-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Planst du, ein Shanghai-Kennzeichen oder ein auswärtiges Kennzeichen zu bekommen?",
+    "pinyin": "",
+    "translation": "A: Você planeja obter uma placa de Xangai ou uma placa de fora (de outra cidade)?",
+    "tokens": [
+      "A:",
+      "Planst",
+      "du,",
+      "ein",
+      "Shanghai-Kennzeichen",
+      "oder",
+      "ein",
+      "auswärtiges",
+      "Kennzeichen",
+      "zu",
+      "bekommen?"
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "Planst",
+        "pinyin": "",
+        "meaning": "(du planst) você planeja"
+      },
+      {
+        "id": 17,
+        "word": "Shanghai-Kennzeichen",
+        "pinyin": "",
+        "meaning": "placa de Xangai"
+      },
+      {
+        "id": 18,
+        "word": "auswärtiges",
+        "pinyin": "",
+        "meaning": "de fora, de outra cidade/região"
+      },
+      {
+        "id": 19,
+        "word": "Kennzeichen",
+        "pinyin": "",
+        "meaning": "placa (de carro)"
+      },
+      {
+        "id": 20,
+        "word": "bekommen",
+        "pinyin": "",
+        "meaning": "obter, conseguir"
+      }
+    ],
+    "id": "local-1772293150139-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ein auswärtiges Kennzeichen.",
+    "pinyin": "",
+    "translation": "B: Uma placa de fora (de outra cidade).",
+    "tokens": [
+      "B:",
+      "Ein",
+      "auswärtiges",
+      "Kennzeichen."
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "auswärtiges Kennzeichen",
+        "pinyin": "",
+        "meaning": "placa de fora (de outra cidade)"
+      }
+    ],
+    "id": "local-1772293150139-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich will das Auto nur am Wochenende nutzen.",
+    "pinyin": "",
+    "translation": "Eu quero usar o carro apenas no fim de semana.",
+    "tokens": [
+      "Ich",
+      "will",
+      "das",
+      "Auto",
+      "nur",
+      "am",
+      "Wochenende",
+      "nutzen."
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "will",
+        "pinyin": "",
+        "meaning": "(ich will) eu quero"
+      },
+      {
+        "id": 23,
+        "word": "Auto",
+        "pinyin": "",
+        "meaning": "carro"
+      },
+      {
+        "id": 24,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 25,
+        "word": "Wochenende",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 26,
+        "word": "nutzen",
+        "pinyin": "",
+        "meaning": "usar, utilizar"
+      }
+    ],
+    "id": "local-1772293150139-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Normalerweise fahre ich mit dem Firmenbus zur Arbeit und zurück.",
+    "pinyin": "",
+    "translation": "Normalmente eu vou de ônibus da empresa para o trabalho e volto.",
+    "tokens": [
+      "Normalerweise",
+      "fahre",
+      "ich",
+      "mit",
+      "dem",
+      "Firmenbus",
+      "zur",
+      "Arbeit",
+      "und",
+      "zurück."
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "Normalerweise",
+        "pinyin": "",
+        "meaning": "normalmente"
+      },
+      {
+        "id": 28,
+        "word": "fahre",
+        "pinyin": "",
+        "meaning": "(ich fahre) eu vou (de veículo), eu dirijo"
+      },
+      {
+        "id": 29,
+        "word": "Firmenbus",
+        "pinyin": "",
+        "meaning": "ônibus da empresa"
+      },
+      {
+        "id": 30,
+        "word": "Arbeit",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 31,
+        "word": "zurück",
+        "pinyin": "",
+        "meaning": "de volta"
+      }
+    ],
+    "id": "local-1772293150139-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das ist sehr praktisch.",
+    "pinyin": "",
+    "translation": "Isso é muito prático.",
+    "tokens": [
+      "Das",
+      "ist",
+      "sehr",
+      "praktisch."
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "sehr",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 33,
+        "word": "praktisch",
+        "pinyin": "",
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1772293150139-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Welche Art von Autos magst du denn?",
+    "pinyin": "",
+    "translation": "A: Que tipo de carros você gosta?",
+    "tokens": [
+      "A:",
+      "Welche",
+      "Art",
+      "von",
+      "Autos",
+      "magst",
+      "du",
+      "denn?"
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Welche Art von",
+        "pinyin": "",
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 35,
+        "word": "Autos",
+        "pinyin": "",
+        "meaning": "carros"
+      },
+      {
+        "id": 36,
+        "word": "magst",
+        "pinyin": "",
+        "meaning": "(du magst) você gosta"
+      }
+    ],
+    "id": "local-1772293150139-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Limousinen.",
+    "pinyin": "",
+    "translation": "B: Sedans.",
+    "tokens": [
+      "B:",
+      "Limousinen."
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "Limousinen",
+        "pinyin": "",
+        "meaning": "sedans"
+      }
+    ],
+    "id": "local-1772293150139-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Die haben am meisten Platz.",
+    "pinyin": "",
+    "translation": "Eles têm mais espaço.",
+    "tokens": [
+      "Die",
+      "haben",
+      "am",
+      "meisten",
+      "Platz."
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "haben",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 39,
+        "word": "am meisten",
+        "pinyin": "",
+        "meaning": "o máximo, mais"
+      },
+      {
+        "id": 40,
+        "word": "Platz",
+        "pinyin": "",
+        "meaning": "espaço"
+      }
+    ],
+    "id": "local-1772293150139-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann schau dir mal den Buick Regal, den Toyota Camry und den Volkswagen Magotan an.",
+    "pinyin": "",
+    "translation": "A: Então dê uma olhada no Buick Regal, no Toyota Camry e no Volkswagen Magotan.",
+    "tokens": [
+      "A:",
+      "Dann",
+      "schau",
+      "dir",
+      "mal",
+      "den",
+      "Buick",
+      "Regal,",
+      "den",
+      "Toyota",
+      "Camry",
+      "und",
+      "den",
+      "Volkswagen",
+      "Magotan",
+      "an."
+    ],
+    "keywords": [
+      {
+        "id": 41,
+        "word": "Dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 42,
+        "word": "schau dir an",
+        "pinyin": "",
+        "meaning": "dê uma olhada (em)"
+      },
+      {
+        "id": 43,
+        "word": "mal",
+        "pinyin": "",
+        "meaning": "uma vez (usado para suavizar o imperativo)"
+      }
+    ],
+    "id": "local-1772293150139-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Diese Autos sind ziemlich gut.",
+    "pinyin": "",
+    "translation": "Esses carros são muito bons.",
+    "tokens": [
+      "Diese",
+      "Autos",
+      "sind",
+      "ziemlich",
+      "gut."
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "Autos",
+        "pinyin": "",
+        "meaning": "carros"
+      },
+      {
+        "id": 45,
+        "word": "ziemlich",
+        "pinyin": "",
+        "meaning": "bastante, muito"
+      },
+      {
+        "id": 46,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772293150139-13",
+    "language": "Alemão"
+  }
+]

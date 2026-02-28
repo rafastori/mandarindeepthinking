@@ -1,0 +1,764 @@
+[
+  {
+    "chinese": "A: Guten Tag, Herr Manager Wang. Was halten Sie von diesem Designentwurf?",
+    "pinyin": null,
+    "translation": "A: Bom dia, Senhor Gerente Wang. O que você acha deste projeto de design?",
+    "tokens": [
+      "A:",
+      "Guten",
+      "Tag",
+      ",",
+      "Herr",
+      "Manager",
+      "Wang",
+      ".",
+      "Was",
+      "halten",
+      "Sie",
+      "von",
+      "diesem",
+      "Designentwurf",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guten Tag",
+        "pinyin": null,
+        "meaning": "Bom dia"
+      },
+      {
+        "id": 2,
+        "word": "Herr",
+        "pinyin": null,
+        "meaning": "Senhor"
+      },
+      {
+        "id": 3,
+        "word": "Manager",
+        "pinyin": null,
+        "meaning": "Gerente"
+      },
+      {
+        "id": 4,
+        "word": "halten von",
+        "pinyin": null,
+        "meaning": "achar de (expressão 'Was halten Sie von...?')"
+      },
+      {
+        "id": 5,
+        "word": "Designentwurf",
+        "pinyin": null,
+        "meaning": "Projeto de design"
+      }
+    ],
+    "id": "local-1772293744178-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Sieht nicht schlecht aus, aber irgendwie ist er anders, als ich mir das vorgestellt habe.",
+    "pinyin": null,
+    "translation": "B: Não parece ruim, mas de alguma forma é diferente do que eu imaginei.",
+    "tokens": [
+      "B:",
+      "Sieht",
+      "nicht",
+      "schlecht",
+      "aus",
+      ",",
+      "aber",
+      "irgendwie",
+      "ist",
+      "er",
+      "anders",
+      ",",
+      "als",
+      "ich",
+      "mir",
+      "das",
+      "vorgestellt",
+      "habe",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nicht schlecht aussehen",
+        "pinyin": null,
+        "meaning": "não parecer ruim (lit. não parecer mau)"
+      },
+      {
+        "id": 2,
+        "word": "aber",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "irgendwie",
+        "pinyin": null,
+        "meaning": "de alguma forma"
+      },
+      {
+        "id": 4,
+        "word": "anders",
+        "pinyin": null,
+        "meaning": "diferente"
+      },
+      {
+        "id": 5,
+        "word": "vorstellen",
+        "pinyin": null,
+        "meaning": "imaginar, apresentar"
+      }
+    ],
+    "id": "local-1772293744178-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie können mir gerne Ihre Ideen mitteilen.",
+    "pinyin": null,
+    "translation": "A: Você pode me dizer suas ideias.",
+    "tokens": [
+      "A:",
+      "Sie",
+      "können",
+      "mir",
+      "gerne",
+      "Ihre",
+      "Ideen",
+      "mitteilen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "können",
+        "pinyin": null,
+        "meaning": "poder"
+      },
+      {
+        "id": 2,
+        "word": "gerne",
+        "pinyin": null,
+        "meaning": "com prazer, de bom grado (suaviza o pedido)"
+      },
+      {
+        "id": 3,
+        "word": "Ideen",
+        "pinyin": null,
+        "meaning": "ideias"
+      },
+      {
+        "id": 4,
+        "word": "mitteilen",
+        "pinyin": null,
+        "meaning": "comunicar, informar"
+      }
+    ],
+    "id": "local-1772293744178-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich kann nicht genau sagen, was es ist. Mir fehlt einfach etwas.",
+    "pinyin": null,
+    "translation": "B: Não consigo dizer exatamente o que é. Simplesmente me falta algo.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "kann",
+      "nicht",
+      "genau",
+      "sagen",
+      ",",
+      "was",
+      "es",
+      "ist",
+      ".",
+      "Mir",
+      "fehlt",
+      "einfach",
+      "etwas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nicht sagen",
+        "pinyin": null,
+        "meaning": "não dizer, não conseguir dizer"
+      },
+      {
+        "id": 2,
+        "word": "genau",
+        "pinyin": null,
+        "meaning": "exatamente"
+      },
+      {
+        "id": 3,
+        "word": "fehlen",
+        "pinyin": null,
+        "meaning": "faltar"
+      },
+      {
+        "id": 4,
+        "word": "einfach",
+        "pinyin": null,
+        "meaning": "simplesmente, apenas"
+      },
+      {
+        "id": 5,
+        "word": "etwas",
+        "pinyin": null,
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772293744178-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Letztes Mal sagten Sie, der Stil sei zu schlicht, deshalb habe ich diesmal mehr visuelle Elemente hinzugefügt. Die Benutzerinteraktion ist auch komplexer. Ich lasse es Sie mal ansehen.",
+    "pinyin": null,
+    "translation": "A: Da última vez, você disse que o estilo era muito simples, por isso desta vez adicionei mais elementos visuais. A interação do usuário também é mais complexa. Vou deixar você dar uma olhada.",
+    "tokens": [
+      "A:",
+      "Letztes",
+      "Mal",
+      "sagten",
+      "Sie",
+      ",",
+      "der",
+      "Stil",
+      "sei",
+      "zu",
+      "schlicht",
+      ",",
+      "deshalb",
+      "habe",
+      "ich",
+      "diesmal",
+      "mehr",
+      "visuelle",
+      "Elemente",
+      "hinzugefügt",
+      ".",
+      "Die",
+      "Benutzerinteraktion",
+      "ist",
+      "auch",
+      "komplexer",
+      ".",
+      "Ich",
+      "lasse",
+      "es",
+      "Sie",
+      "mal",
+      "ansehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "letztes Mal",
+        "pinyin": null,
+        "meaning": "da última vez"
+      },
+      {
+        "id": 2,
+        "word": "Stil",
+        "pinyin": null,
+        "meaning": "estilo"
+      },
+      {
+        "id": 3,
+        "word": "zu schlicht",
+        "pinyin": null,
+        "meaning": "muito simples"
+      },
+      {
+        "id": 4,
+        "word": "deshalb",
+        "pinyin": null,
+        "meaning": "por isso, portanto"
+      },
+      {
+        "id": 5,
+        "word": "diesmal",
+        "pinyin": null,
+        "meaning": "desta vez"
+      },
+      {
+        "id": 6,
+        "word": "visuelle Elemente",
+        "pinyin": null,
+        "meaning": "elementos visuais"
+      },
+      {
+        "id": 7,
+        "word": "hinzufügen",
+        "pinyin": null,
+        "meaning": "adicionar"
+      },
+      {
+        "id": 8,
+        "word": "Benutzerinteraktion",
+        "pinyin": null,
+        "meaning": "interação do usuário"
+      },
+      {
+        "id": 9,
+        "word": "komplexer",
+        "pinyin": null,
+        "meaning": "mais complexo"
+      },
+      {
+        "id": 10,
+        "word": "ansehen",
+        "pinyin": null,
+        "meaning": "olhar, ver, dar uma olhada"
+      }
+    ],
+    "id": "local-1772293744178-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist zu kompliziert. Werden den Nutzern das gefallen?",
+    "pinyin": null,
+    "translation": "B: Isso é muito complicado. Os usuários vão gostar disso?",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "zu",
+      "kompliziert",
+      ".",
+      "Werden",
+      "den",
+      "Nutzern",
+      "das",
+      "gefallen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zu kompliziert",
+        "pinyin": null,
+        "meaning": "muito complicado"
+      },
+      {
+        "id": 2,
+        "word": "Nutzer",
+        "pinyin": null,
+        "meaning": "usuário"
+      },
+      {
+        "id": 3,
+        "word": "gefallen",
+        "pinyin": null,
+        "meaning": "agradar, gostar"
+      }
+    ],
+    "id": "local-1772293744178-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann ändere ich diesen Teil, das nimmt etwas von der Komplexität.",
+    "pinyin": null,
+    "translation": "A: Então eu mudo esta parte, isso tira um pouco da complexidade.",
+    "tokens": [
+      "A:",
+      "Dann",
+      "ändere",
+      "ich",
+      "diesen",
+      "Teil",
+      ",",
+      "das",
+      "nimmt",
+      "etwas",
+      "von",
+      "der",
+      "Komplexität",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "ändern",
+        "pinyin": null,
+        "meaning": "mudar, alterar"
+      },
+      {
+        "id": 3,
+        "word": "Teil",
+        "pinyin": null,
+        "meaning": "parte"
+      },
+      {
+        "id": 4,
+        "word": "nehmen von",
+        "pinyin": null,
+        "meaning": "tirar de"
+      },
+      {
+        "id": 5,
+        "word": "Komplexität",
+        "pinyin": null,
+        "meaning": "complexidade"
+      }
+    ],
+    "id": "local-1772293744178-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Diese Farbe...",
+    "pinyin": null,
+    "translation": "B: Essa cor...",
+    "tokens": [
+      "B:",
+      "Diese",
+      "Farbe",
+      "..."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Farbe",
+        "pinyin": null,
+        "meaning": "cor"
+      }
+    ],
+    "id": "local-1772293744178-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist Orange. Das sind die warmen Töne, die Sie mögen.",
+    "pinyin": null,
+    "translation": "A: Isso é laranja. São os tons quentes que você gosta.",
+    "tokens": [
+      "A:",
+      "Das",
+      "ist",
+      "Orange",
+      ".",
+      "Das",
+      "sind",
+      "die",
+      "warmen",
+      "Töne",
+      ",",
+      "die",
+      "Sie",
+      "mögen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Orange",
+        "pinyin": null,
+        "meaning": "laranja"
+      },
+      {
+        "id": 2,
+        "word": "warme Töne",
+        "pinyin": null,
+        "meaning": "tons quentes"
+      },
+      {
+        "id": 3,
+        "word": "mögen",
+        "pinyin": null,
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772293744178-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Obwohl ich warme Farben mag, wirkt das hier zu grell.",
+    "pinyin": null,
+    "translation": "B: Embora eu goste de cores quentes, isso aqui parece muito berrante.",
+    "tokens": [
+      "B:",
+      "Obwohl",
+      "ich",
+      "warme",
+      "Farben",
+      "mag",
+      ",",
+      "wirkt",
+      "das",
+      "hier",
+      "zu",
+      "grell",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Obwohl",
+        "pinyin": null,
+        "meaning": "embora"
+      },
+      {
+        "id": 2,
+        "word": "warme Farben",
+        "pinyin": null,
+        "meaning": "cores quentes"
+      },
+      {
+        "id": 3,
+        "word": "wirken",
+        "pinyin": null,
+        "meaning": "parecer, agir"
+      },
+      {
+        "id": 4,
+        "word": "zu grell",
+        "pinyin": null,
+        "meaning": "muito berrante, muito forte/vibrante"
+      }
+    ],
+    "id": "local-1772293744178-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ach so, okay. Dann ändere ich es in etwas Cremefarbenes. Was halten Sie davon?",
+    "pinyin": null,
+    "translation": "A: Ah, entendi, ok. Então mudo para algo creme. O que você acha disso?",
+    "tokens": [
+      "A:",
+      "Ach",
+      "so",
+      ",",
+      "okay",
+      ".",
+      "Dann",
+      "ändere",
+      "ich",
+      "es",
+      "in",
+      "etwas",
+      "Cremefarbenes",
+      ".",
+      "Was",
+      "halten",
+      "Sie",
+      "davon",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ach so",
+        "pinyin": null,
+        "meaning": "Ah, entendi"
+      },
+      {
+        "id": 2,
+        "word": "okay",
+        "pinyin": null,
+        "meaning": "ok"
+      },
+      {
+        "id": 3,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 4,
+        "word": "ändern",
+        "pinyin": null,
+        "meaning": "mudar, alterar"
+      },
+      {
+        "id": 5,
+        "word": "Cremefarbenes",
+        "pinyin": null,
+        "meaning": "algo creme (cor)"
+      },
+      {
+        "id": 6,
+        "word": "halten von",
+        "pinyin": null,
+        "meaning": "achar de (expressão 'Was halten Sie davon?')"
+      },
+      {
+        "id": 7,
+        "word": "davon",
+        "pinyin": null,
+        "meaning": "disso"
+      }
+    ],
+    "id": "local-1772293744178-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist in Ordnung. Aber das ist bereits die fünfte Version. Ich fürchte, die Zeit reicht nicht mehr. Wie wäre es, wenn wir es einfach vergessen und doch die erste Version nehmen?",
+    "pinyin": null,
+    "translation": "B: Está tudo bem. Mas esta já é a quinta versão. Temo que o tempo não seja mais suficiente. Que tal se simplesmente esquecermos e pegarmos a primeira versão?",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "in",
+      "Ordnung",
+      ".",
+      "Aber",
+      "das",
+      "ist",
+      "bereits",
+      "die",
+      "fünfte",
+      "Version",
+      ".",
+      "Ich",
+      "fürchte",
+      ",",
+      "die",
+      "Zeit",
+      "reicht",
+      "nicht",
+      "mehr",
+      ".",
+      "Wie",
+      "wäre",
+      "es",
+      ",",
+      "wenn",
+      "wir",
+      "es",
+      "einfach",
+      "vergessen",
+      "und",
+      "doch",
+      "die",
+      "erste",
+      "Version",
+      "nehmen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in Ordnung",
+        "pinyin": null,
+        "meaning": "em ordem, tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "aber",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 3,
+        "word": "bereits",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 4,
+        "word": "fünfte Version",
+        "pinyin": null,
+        "meaning": "quinta versão"
+      },
+      {
+        "id": 5,
+        "word": "fürchten",
+        "pinyin": null,
+        "meaning": "temer"
+      },
+      {
+        "id": 6,
+        "word": "Zeit reicht nicht mehr",
+        "pinyin": null,
+        "meaning": "o tempo não é mais suficiente"
+      },
+      {
+        "id": 7,
+        "word": "Wie wäre es, wenn",
+        "pinyin": null,
+        "meaning": "Que tal se"
+      },
+      {
+        "id": 8,
+        "word": "einfach",
+        "pinyin": null,
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 9,
+        "word": "vergessen",
+        "pinyin": null,
+        "meaning": "esquecer"
+      },
+      {
+        "id": 10,
+        "word": "doch",
+        "pinyin": null,
+        "meaning": "ainda assim, afinal"
+      },
+      {
+        "id": 11,
+        "word": "erste Version",
+        "pinyin": null,
+        "meaning": "primeira versão"
+      },
+      {
+        "id": 12,
+        "word": "nehmen",
+        "pinyin": null,
+        "meaning": "pegar, tomar"
+      }
+    ],
+    "id": "local-1772293744178-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Hä? Na gut, okay.",
+    "pinyin": null,
+    "translation": "A: Hã? Bem, ok.",
+    "tokens": [
+      "A:",
+      "Hä",
+      "?",
+      "Na",
+      "gut",
+      ",",
+      "okay",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hä",
+        "pinyin": null,
+        "meaning": "Hã? (interjeição de surpresa/confusão)"
+      },
+      {
+        "id": 2,
+        "word": "Na gut",
+        "pinyin": null,
+        "meaning": "Bem, ok"
+      },
+      {
+        "id": 3,
+        "word": "okay",
+        "pinyin": null,
+        "meaning": "ok"
+      }
+    ],
+    "id": "local-1772293744178-12",
+    "language": "Alemão"
+  }
+]

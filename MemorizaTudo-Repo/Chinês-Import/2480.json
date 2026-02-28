@@ -1,0 +1,839 @@
+[
+  {
+    "chinese": "A: 您哪里不舒服？",
+    "pinyin": "A: Nín nǎlǐ bù shūfu?",
+    "translation": "A: Onde você não está se sentindo bem?",
+    "tokens": [
+      "您",
+      "哪里",
+      "不",
+      "舒服",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (formal)"
+      },
+      {
+        "id": 2,
+        "word": "哪里",
+        "pinyin": "nǎlǐ",
+        "meaning": "onde"
+      },
+      {
+        "id": 3,
+        "word": "不舒服",
+        "pinyin": "bù shūfu",
+        "meaning": "desconfortável, mal"
+      }
+    ],
+    "id": "local-1772300836888-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我最近睡不好，容易累。所以想调理一下。",
+    "pinyin": "B: Wǒ zuìjìn shuì bù hǎo, róngyì lèi. Suǒyǐ xiǎng tiáolǐ yīxià.",
+    "translation": "B: Ultimamente não tenho dormido bem e me canso facilmente. Por isso, quero fazer um tratamento/ajuste.",
+    "tokens": [
+      "我",
+      "最近",
+      "睡",
+      "不",
+      "好",
+      "，",
+      "容易",
+      "累",
+      "。",
+      "所以",
+      "想",
+      "调理",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 5,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "meaning": "ultimamente, recentemente"
+      },
+      {
+        "id": 6,
+        "word": "睡不好",
+        "pinyin": "shuì bù hǎo",
+        "meaning": "não dormir bem"
+      },
+      {
+        "id": 7,
+        "word": "容易",
+        "pinyin": "róngyì",
+        "meaning": "fácil, facilmente"
+      },
+      {
+        "id": 8,
+        "word": "累",
+        "pinyin": "lèi",
+        "meaning": "cansado"
+      },
+      {
+        "id": 9,
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "por isso, então"
+      },
+      {
+        "id": 10,
+        "word": "调理",
+        "pinyin": "tiáolǐ",
+        "meaning": "ajustar, regular, tratar (medicina chinesa)"
+      },
+      {
+        "id": 11,
+        "word": "一下",
+        "pinyin": "yīxià",
+        "meaning": "um pouco, brevemente (indicador de duração ou tentativa)"
+      }
+    ],
+    "id": "local-1772300836888-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 伸出手，我给您把把脉。再把舌头伸出来。",
+    "pinyin": "A: Shēn chū shǒu, wǒ gěi nín bǎ bǎ mài. Zài bǎ shétou shēn chūlái.",
+    "translation": "A: Estenda a mão, vou tirar seu pulso. E estenda a língua.",
+    "tokens": [
+      "伸出",
+      "手",
+      "，",
+      "我",
+      "给",
+      "您",
+      "把",
+      "把脉",
+      "。",
+      "再",
+      "把",
+      "舌头",
+      "伸出来",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "伸出",
+        "pinyin": "shēn chū",
+        "meaning": "estender, tirar para fora"
+      },
+      {
+        "id": 13,
+        "word": "手",
+        "pinyin": "shǒu",
+        "meaning": "mão"
+      },
+      {
+        "id": 14,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "dar, para (a quem)"
+      },
+      {
+        "id": 15,
+        "word": "把脉",
+        "pinyin": "bǎ mài",
+        "meaning": "tirar o pulso (diagnóstico da MTC)"
+      },
+      {
+        "id": 16,
+        "word": "再",
+        "pinyin": "zài",
+        "meaning": "novamente, de novo"
+      },
+      {
+        "id": 17,
+        "word": "舌头",
+        "pinyin": "shétou",
+        "meaning": "língua"
+      },
+      {
+        "id": 18,
+        "word": "伸出来",
+        "pinyin": "shēn chūlái",
+        "meaning": "estender, colocar para fora"
+      }
+    ],
+    "id": "local-1772300836888-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 医生，没什么事吧？",
+    "pinyin": "B: Yīshēng, méi shénme shì ba?",
+    "translation": "B: Doutor, não é nada sério, certo?",
+    "tokens": [
+      "医生",
+      "，",
+      "没",
+      "什么",
+      "事",
+      "吧",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "医生",
+        "pinyin": "yīshēng",
+        "meaning": "médico"
+      },
+      {
+        "id": 20,
+        "word": "没什么事",
+        "pinyin": "méi shénme shì",
+        "meaning": "não é problema, não é nada de mais"
+      },
+      {
+        "id": 21,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de pergunta, confirmação ou sugestão"
+      }
+    ],
+    "id": "local-1772300836888-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 没什么大问题。有点儿气虚。我给您开点儿药。",
+    "pinyin": "A: Méi shénme dà wèntí. Yǒudiǎnr qìxū. Wǒ gěi nín kāi diǎnr yào.",
+    "translation": "A: Não é nenhum grande problema. Há um pouco de deficiência de qi. Vou te receitar um remédio.",
+    "tokens": [
+      "没",
+      "什么",
+      "大",
+      "问题",
+      "。",
+      "有点儿",
+      "气虚",
+      "。",
+      "我",
+      "给",
+      "您",
+      "开",
+      "点儿",
+      "药",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "没什么大问题",
+        "pinyin": "méi shénme dà wèntí",
+        "meaning": "não é nenhum grande problema"
+      },
+      {
+        "id": 23,
+        "word": "有点儿",
+        "pinyin": "yǒudiǎnr",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 24,
+        "word": "气虚",
+        "pinyin": "qìxū",
+        "meaning": "deficiência de Qi (na MTC)"
+      },
+      {
+        "id": 25,
+        "word": "开药",
+        "pinyin": "kāi yào",
+        "meaning": "receitar remédio"
+      }
+    ],
+    "id": "local-1772300836888-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 药怎么熬啊？",
+    "pinyin": "B: Yào zěnme áo a?",
+    "translation": "B: Como se cozinha/prepara o remédio?",
+    "tokens": [
+      "药",
+      "怎么",
+      "熬",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "药",
+        "pinyin": "yào",
+        "meaning": "remédio, medicamento"
+      },
+      {
+        "id": 27,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 28,
+        "word": "熬",
+        "pinyin": "áo",
+        "meaning": "ferver, cozinhar lentamente (para extrair ervas)"
+      },
+      {
+        "id": 29,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa/interrogativa"
+      }
+    ],
+    "id": "local-1772300836888-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 熬两次，把两次的药汁混起来，分两次喝。早上喝一次，晚上喝一次。",
+    "pinyin": "A: Áo liǎng cì, bǎ liǎng cì de yàozhī hùn qǐlái, fēn liǎng cì hē. Zǎoshang hē yī cì, wǎnshang hē yī cì.",
+    "translation": "A: Ferva duas vezes, misture o líquido das duas vezes, e divida para beber duas vezes. Beba uma vez de manhã e uma vez à noite.",
+    "tokens": [
+      "熬",
+      "两次",
+      "，",
+      "把",
+      "两次",
+      "的",
+      "药汁",
+      "混起来",
+      "，",
+      "分",
+      "两次",
+      "喝",
+      "。",
+      "早上",
+      "喝",
+      "一次",
+      "，",
+      "晚上",
+      "喝",
+      "一次",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "两次",
+        "pinyin": "liǎng cì",
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 31,
+        "word": "药汁",
+        "pinyin": "yàozhī",
+        "meaning": "líquido do remédio, extrato herbal"
+      },
+      {
+        "id": 32,
+        "word": "混起来",
+        "pinyin": "hùn qǐlái",
+        "meaning": "misturar"
+      },
+      {
+        "id": 33,
+        "word": "分",
+        "pinyin": "fēn",
+        "meaning": "dividir"
+      },
+      {
+        "id": 34,
+        "word": "喝",
+        "pinyin": "hē",
+        "meaning": "beber"
+      },
+      {
+        "id": 35,
+        "word": "早上",
+        "pinyin": "zǎoshang",
+        "meaning": "manhã"
+      },
+      {
+        "id": 36,
+        "word": "一次",
+        "pinyin": "yī cì",
+        "meaning": "uma vez"
+      },
+      {
+        "id": 37,
+        "word": "晚上",
+        "pinyin": "wǎnshang",
+        "meaning": "noite"
+      }
+    ],
+    "id": "local-1772300836888-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那就是我每天早上起床都要自己熬药吗？",
+    "pinyin": "B: Nà jiùshì wǒ měitiān zǎoshang qǐchuáng dōu yào zìjǐ áo yào ma?",
+    "translation": "B: Então eu tenho que cozinhar meu próprio remédio todas as manhãs depois de acordar?",
+    "tokens": [
+      "那",
+      "就是",
+      "我",
+      "每天",
+      "早上",
+      "起床",
+      "都",
+      "要",
+      "自己",
+      "熬药",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 38,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, isso"
+      },
+      {
+        "id": 39,
+        "word": "就是",
+        "pinyin": "jiùshì",
+        "meaning": "é, exatamente"
+      },
+      {
+        "id": 40,
+        "word": "每天",
+        "pinyin": "měitiān",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 41,
+        "word": "起床",
+        "pinyin": "qǐchuáng",
+        "meaning": "levantar da cama, acordar"
+      },
+      {
+        "id": 42,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos, tudo (indicando inclusão)"
+      },
+      {
+        "id": 43,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer, precisar, ter que"
+      },
+      {
+        "id": 44,
+        "word": "自己",
+        "pinyin": "zìjǐ",
+        "meaning": "próprio, a si mesmo"
+      },
+      {
+        "id": 45,
+        "word": "熬药",
+        "pinyin": "áo yào",
+        "meaning": "cozinhar/preparar o remédio (ervas)"
+      },
+      {
+        "id": 46,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772300836888-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 如果您觉得麻烦，我们可以帮您代煎。",
+    "pinyin": "A: Rúguǒ nín juéde máfan, wǒmen kěyǐ bāng nín dàijiān.",
+    "translation": "A: Se você achar que é problemático, nós podemos te ajudar a preparar [o remédio por você].",
+    "tokens": [
+      "如果",
+      "您",
+      "觉得",
+      "麻烦",
+      "，",
+      "我们",
+      "可以",
+      "帮",
+      "您",
+      "代煎",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se, caso"
+      },
+      {
+        "id": 48,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "sentir, achar"
+      },
+      {
+        "id": 49,
+        "word": "麻烦",
+        "pinyin": "máfan",
+        "meaning": "problemático, inconveniente, chato"
+      },
+      {
+        "id": 50,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 51,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder"
+      },
+      {
+        "id": 52,
+        "word": "帮",
+        "pinyin": "bāng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 53,
+        "word": "代煎",
+        "pinyin": "dàijiān",
+        "meaning": "cozinhar/preparar o remédio para outra pessoa (serviço)"
+      }
+    ],
+    "id": "local-1772300836888-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是医院帮我代煎吗？",
+    "pinyin": "B: Shì yīyuàn bāng wǒ dàijiān ma?",
+    "translation": "B: É o hospital que prepara o remédio para mim?",
+    "tokens": [
+      "是",
+      "医院",
+      "帮",
+      "我",
+      "代煎",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 54,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser"
+      },
+      {
+        "id": 55,
+        "word": "医院",
+        "pinyin": "yīyuàn",
+        "meaning": "hospital"
+      }
+    ],
+    "id": "local-1772300836888-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 对。您付一点儿代煎费，医院就可以帮您代煎好，然后真空包装。喝的时候加热一下，比较方便。",
+    "pinyin": "A: Duì. Nín fù yīdiǎnr dàijiān fèi, yīyuàn jiù kěyǐ bāng nín dàijiān hǎo, ránhòu zhēnkōng bāozhuāng. Hē de shíhou jiārè yīxià, bǐjiào fāngbiàn.",
+    "translation": "A: Isso mesmo. Você paga uma pequena taxa de preparo, e o hospital pode preparar para você, e depois embalar a vácuo. Ao beber, é só aquecer um pouco, é mais conveniente.",
+    "tokens": [
+      "对",
+      "。",
+      "您",
+      "付",
+      "一点儿",
+      "代煎费",
+      "，",
+      "医院",
+      "就",
+      "可以",
+      "帮",
+      "您",
+      "代煎",
+      "好",
+      "，",
+      "然后",
+      "真空包装",
+      "。",
+      "喝",
+      "的",
+      "时候",
+      "加热",
+      "一下",
+      "，",
+      "比较",
+      "方便",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 56,
+        "word": "对",
+        "pinyin": "duì",
+        "meaning": "certo, correto, isso mesmo"
+      },
+      {
+        "id": 57,
+        "word": "付",
+        "pinyin": "fù",
+        "meaning": "pagar"
+      },
+      {
+        "id": 58,
+        "word": "代煎费",
+        "pinyin": "dàijiān fèi",
+        "meaning": "taxa pelo serviço de preparo de remédio"
+      },
+      {
+        "id": 59,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então, logo"
+      },
+      {
+        "id": 60,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bem, pronto (indicando conclusão)"
+      },
+      {
+        "id": 61,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "depois, em seguida"
+      },
+      {
+        "id": 62,
+        "word": "真空包装",
+        "pinyin": "zhēnkōng bāozhuāng",
+        "meaning": "embalagem a vácuo"
+      },
+      {
+        "id": 63,
+        "word": "时候",
+        "pinyin": "shíhou",
+        "meaning": "tempo, momento"
+      },
+      {
+        "id": 64,
+        "word": "加热",
+        "pinyin": "jiārè",
+        "meaning": "aquecer"
+      },
+      {
+        "id": 65,
+        "word": "比较",
+        "pinyin": "bǐjiào",
+        "meaning": "relativamente, comparar"
+      },
+      {
+        "id": 66,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente, prático"
+      }
+    ],
+    "id": "local-1772300836888-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那我代煎吧。今天可以取吗？",
+    "pinyin": "B: Nà wǒ dàijiān ba. Jīntiān kěyǐ qǔ ma?",
+    "translation": "B: Então eu vou querer o serviço de preparo. Posso pegar hoje?",
+    "tokens": [
+      "那",
+      "我",
+      "代煎",
+      "吧",
+      "。",
+      "今天",
+      "可以",
+      "取",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 67,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de sugestão/decisão"
+      },
+      {
+        "id": 68,
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hoje"
+      },
+      {
+        "id": 69,
+        "word": "取",
+        "pinyin": "qǔ",
+        "meaning": "pegar, retirar"
+      }
+    ],
+    "id": "local-1772300836888-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不行。代煎需要时间。最快也要明天才能取。您先去交费，然后到代煎窗口登记一下。",
+    "pinyin": "A: Bùxíng. Dàijiān xūyào shíjiān. Zuì kuài yě yào míngtiān cáinéng qǔ. Nín xiān qù jiāofèi, ránhòu dào dàijiān chuāngkǒu dēngjì yīxià.",
+    "translation": "A: Não. O preparo leva tempo. No mínimo, só poderá pegar amanhã. Primeiro, vá pagar a taxa, e depois se registre no balcão de preparo.",
+    "tokens": [
+      "不行",
+      "。",
+      "代煎",
+      "需要",
+      "时间",
+      "。",
+      "最快",
+      "也",
+      "要",
+      "明天",
+      "才",
+      "能",
+      "取",
+      "。",
+      "您",
+      "先",
+      "去",
+      "交费",
+      "，",
+      "然后",
+      "到",
+      "代煎",
+      "窗口",
+      "登记",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 70,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não pode, não dá"
+      },
+      {
+        "id": 71,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 72,
+        "word": "时间",
+        "pinyin": "shíjiān",
+        "meaning": "tempo"
+      },
+      {
+        "id": 73,
+        "word": "最快",
+        "pinyin": "zuì kuài",
+        "meaning": "o mais rápido"
+      },
+      {
+        "id": 74,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também, mesmo"
+      },
+      {
+        "id": 75,
+        "word": "明天",
+        "pinyin": "míngtiān",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 76,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só então (indica condição/tardia)"
+      },
+      {
+        "id": 77,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 78,
+        "word": "先",
+        "pinyin": "xiān",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 79,
+        "word": "交费",
+        "pinyin": "jiāofèi",
+        "meaning": "pagar a taxa"
+      },
+      {
+        "id": 80,
+        "word": "到",
+        "pinyin": "dào",
+        "meaning": "chegar a, ir a"
+      },
+      {
+        "id": 81,
+        "word": "窗口",
+        "pinyin": "chuāngkǒu",
+        "meaning": "balcão, guichê"
+      },
+      {
+        "id": 82,
+        "word": "登记",
+        "pinyin": "dēngjì",
+        "meaning": "registrar, fazer o registro"
+      }
+    ],
+    "id": "local-1772300836888-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的，谢谢医生。",
+    "pinyin": "B: Hǎo de, xièxie yīshēng.",
+    "translation": "B: Certo, obrigado doutor.",
+    "tokens": [
+      "好的",
+      "，",
+      "谢谢",
+      "医生",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 83,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 84,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772300836888-13",
+    "language": "Chinês"
+  }
+]

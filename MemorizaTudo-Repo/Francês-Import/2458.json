@@ -1,0 +1,798 @@
+[
+  {
+    "chinese": "A: La Coupe du Monde est là !",
+    "pinyin": null,
+    "translation": "A: A Copa do Mundo está aqui!",
+    "tokens": [
+      "La",
+      "Coupe",
+      "du",
+      "Monde",
+      "est",
+      "là",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La Coupe du Monde",
+        "pinyin": null,
+        "meaning": "A Copa do Mundo"
+      },
+      {
+        "id": 2,
+        "word": "est",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 3,
+        "word": "là",
+        "pinyin": null,
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772298861474-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Où se déroule la Coupe du Monde cette année ?",
+    "pinyin": null,
+    "translation": "B: Onde acontece a Copa do Mundo este ano?",
+    "tokens": [
+      "Où",
+      "se",
+      "déroule",
+      "la",
+      "Coupe",
+      "du",
+      "Monde",
+      "cette",
+      "année",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Où",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "se déroule",
+        "pinyin": null,
+        "meaning": "acontece/se realiza"
+      },
+      {
+        "id": 3,
+        "word": "la Coupe du Monde",
+        "pinyin": null,
+        "meaning": "a Copa do Mundo"
+      },
+      {
+        "id": 4,
+        "word": "cette année",
+        "pinyin": null,
+        "meaning": "este ano"
+      }
+    ],
+    "id": "local-1772298861474-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Au Brésil !",
+    "pinyin": null,
+    "translation": "A: No Brasil!",
+    "tokens": [
+      "Au",
+      "Brésil",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Au Brésil",
+        "pinyin": null,
+        "meaning": "No Brasil"
+      }
+    ],
+    "id": "local-1772298861474-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Le royaume du football !",
+    "pinyin": null,
+    "translation": "O reino do futebol!",
+    "tokens": [
+      "Le",
+      "royaume",
+      "du",
+      "football",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Le royaume",
+        "pinyin": null,
+        "meaning": "O reino"
+      },
+      {
+        "id": 2,
+        "word": "du football",
+        "pinyin": null,
+        "meaning": "do futebol"
+      }
+    ],
+    "id": "local-1772298861474-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "La Coupe du Monde sera assurément magnifique à regarder cette année !",
+    "pinyin": null,
+    "translation": "A Copa do Mundo será certamente magnífica de assistir este ano!",
+    "tokens": [
+      "La",
+      "Coupe",
+      "du",
+      "Monde",
+      "sera",
+      "assurément",
+      "magnifique",
+      "à",
+      "regarder",
+      "cette",
+      "année",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La Coupe du Monde",
+        "pinyin": null,
+        "meaning": "A Copa do Mundo"
+      },
+      {
+        "id": 2,
+        "word": "sera",
+        "pinyin": null,
+        "meaning": "será"
+      },
+      {
+        "id": 3,
+        "word": "assurément",
+        "pinyin": null,
+        "meaning": "certamente"
+      },
+      {
+        "id": 4,
+        "word": "magnifique",
+        "pinyin": null,
+        "meaning": "magnífico(a)"
+      },
+      {
+        "id": 5,
+        "word": "à regarder",
+        "pinyin": null,
+        "meaning": "de assistir"
+      },
+      {
+        "id": 6,
+        "word": "cette année",
+        "pinyin": null,
+        "meaning": "este ano"
+      }
+    ],
+    "id": "local-1772298861474-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Le Brésil ?",
+    "pinyin": null,
+    "translation": "B: O Brasil?",
+    "tokens": [
+      "Le",
+      "Brésil",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Le Brésil",
+        "pinyin": null,
+        "meaning": "O Brasil"
+      }
+    ],
+    "id": "local-1772298861474-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Alors je veux la regarder.",
+    "pinyin": null,
+    "translation": "Então eu quero assisti-la.",
+    "tokens": [
+      "Alors",
+      "je",
+      "veux",
+      "la",
+      "regarder",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "je veux",
+        "pinyin": null,
+        "meaning": "eu quero"
+      },
+      {
+        "id": 3,
+        "word": "la regarder",
+        "pinyin": null,
+        "meaning": "assistir ela/vê-la"
+      }
+    ],
+    "id": "local-1772298861474-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Le Brésil a beaucoup de belles femmes.",
+    "pinyin": null,
+    "translation": "O Brasil tem muitas mulheres bonitas.",
+    "tokens": [
+      "Le",
+      "Brésil",
+      "a",
+      "beaucoup",
+      "de",
+      "belles",
+      "femmes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Le Brésil",
+        "pinyin": null,
+        "meaning": "O Brasil"
+      },
+      {
+        "id": 2,
+        "word": "a",
+        "pinyin": null,
+        "meaning": "tem"
+      },
+      {
+        "id": 3,
+        "word": "beaucoup de",
+        "pinyin": null,
+        "meaning": "muito(a)/muitos(as)"
+      },
+      {
+        "id": 4,
+        "word": "belles femmes",
+        "pinyin": null,
+        "meaning": "mulheres bonitas"
+      }
+    ],
+    "id": "local-1772298861474-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "La cérémonie d'ouverture aura certainement de la samba animée.",
+    "pinyin": null,
+    "translation": "A cerimônia de abertura terá certamente samba animado.",
+    "tokens": [
+      "La",
+      "cérémonie",
+      "d'",
+      "ouverture",
+      "aura",
+      "certainement",
+      "de",
+      "la",
+      "samba",
+      "animée",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La cérémonie d'ouverture",
+        "pinyin": null,
+        "meaning": "A cerimônia de abertura"
+      },
+      {
+        "id": 2,
+        "word": "aura",
+        "pinyin": null,
+        "meaning": "terá"
+      },
+      {
+        "id": 3,
+        "word": "certainement",
+        "pinyin": null,
+        "meaning": "certamente"
+      },
+      {
+        "id": 4,
+        "word": "de la samba animée",
+        "pinyin": null,
+        "meaning": "samba animado"
+      }
+    ],
+    "id": "local-1772298861474-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Quelle est la date de la cérémonie d'ouverture ?",
+    "pinyin": null,
+    "translation": "Qual é a data da cerimônia de abertura?",
+    "tokens": [
+      "Quelle",
+      "est",
+      "la",
+      "date",
+      "de",
+      "la",
+      "cérémonie",
+      "d'",
+      "ouverture",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quelle est la date",
+        "pinyin": null,
+        "meaning": "Qual é a data"
+      },
+      {
+        "id": 2,
+        "word": "la cérémonie d'ouverture",
+        "pinyin": null,
+        "meaning": "a cerimônia de abertura"
+      }
+    ],
+    "id": "local-1772298861474-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Le 14 juin à Sao Paulo.",
+    "pinyin": null,
+    "translation": "A: 14 de junho em São Paulo.",
+    "tokens": [
+      "Le",
+      "14",
+      "juin",
+      "à",
+      "Sao",
+      "Paulo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Le 14 juin",
+        "pinyin": null,
+        "meaning": "14 de junho"
+      },
+      {
+        "id": 2,
+        "word": "à Sao Paulo",
+        "pinyin": null,
+        "meaning": "em São Paulo"
+      }
+    ],
+    "id": "local-1772298861474-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Sao Paulo ?",
+    "pinyin": null,
+    "translation": "B: São Paulo?",
+    "tokens": [
+      "Sao",
+      "Paulo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sao Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      }
+    ],
+    "id": "local-1772298861474-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Pourquoi pas à Rio ?",
+    "pinyin": null,
+    "translation": "Por que não no Rio?",
+    "tokens": [
+      "Pourquoi",
+      "pas",
+      "à",
+      "Rio",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pourquoi pas",
+        "pinyin": null,
+        "meaning": "Por que não"
+      },
+      {
+        "id": 2,
+        "word": "à Rio",
+        "pinyin": null,
+        "meaning": "no Rio"
+      }
+    ],
+    "id": "local-1772298861474-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Rio est la plus célèbre.",
+    "pinyin": null,
+    "translation": "O Rio é a mais famosa.",
+    "tokens": [
+      "Rio",
+      "est",
+      "la",
+      "plus",
+      "célèbre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio"
+      },
+      {
+        "id": 2,
+        "word": "est",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 3,
+        "word": "la plus célèbre",
+        "pinyin": null,
+        "meaning": "a mais famosa"
+      }
+    ],
+    "id": "local-1772298861474-13",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Sao Paulo est l'une des principales villes du Brésil.",
+    "pinyin": null,
+    "translation": "A: São Paulo é uma das principais cidades do Brasil.",
+    "tokens": [
+      "Sao",
+      "Paulo",
+      "est",
+      "l'",
+      "une",
+      "des",
+      "principales",
+      "villes",
+      "du",
+      "Brésil",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sao Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "est",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 3,
+        "word": "l'une des",
+        "pinyin": null,
+        "meaning": "uma das"
+      },
+      {
+        "id": 4,
+        "word": "principales",
+        "pinyin": null,
+        "meaning": "principais"
+      },
+      {
+        "id": 5,
+        "word": "villes",
+        "pinyin": null,
+        "meaning": "cidades"
+      },
+      {
+        "id": 6,
+        "word": "du Brésil",
+        "pinyin": null,
+        "meaning": "do Brasil"
+      }
+    ],
+    "id": "local-1772298861474-14",
+    "language": "Francês"
+  },
+  {
+    "chinese": "La finale aura lieu à Rio.",
+    "pinyin": null,
+    "translation": "A final acontecerá no Rio.",
+    "tokens": [
+      "La",
+      "finale",
+      "aura",
+      "lieu",
+      "à",
+      "Rio",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La finale",
+        "pinyin": null,
+        "meaning": "A final"
+      },
+      {
+        "id": 2,
+        "word": "aura lieu",
+        "pinyin": null,
+        "meaning": "acontecerá/terá lugar"
+      },
+      {
+        "id": 3,
+        "word": "à Rio",
+        "pinyin": null,
+        "meaning": "no Rio"
+      }
+    ],
+    "id": "local-1772298861474-15",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est dommage que le décalage horaire entre nous et le Brésil soit de 11 heures.",
+    "pinyin": null,
+    "translation": "B: É uma pena que o fuso horário entre nós e o Brasil seja de 11 horas.",
+    "tokens": [
+      "C'",
+      "est",
+      "dommage",
+      "que",
+      "le",
+      "décalage",
+      "horaire",
+      "entre",
+      "nous",
+      "et",
+      "le",
+      "Brésil",
+      "soit",
+      "de",
+      "11",
+      "heures",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est dommage que",
+        "pinyin": null,
+        "meaning": "É uma pena que"
+      },
+      {
+        "id": 2,
+        "word": "le décalage horaire",
+        "pinyin": null,
+        "meaning": "o fuso horário"
+      },
+      {
+        "id": 3,
+        "word": "entre nous",
+        "pinyin": null,
+        "meaning": "entre nós"
+      },
+      {
+        "id": 4,
+        "word": "le Brésil",
+        "pinyin": null,
+        "meaning": "o Brasil"
+      },
+      {
+        "id": 5,
+        "word": "soit",
+        "pinyin": null,
+        "meaning": "seja"
+      },
+      {
+        "id": 6,
+        "word": "11 heures",
+        "pinyin": null,
+        "meaning": "11 horas"
+      }
+    ],
+    "id": "local-1772298861474-16",
+    "language": "Francês"
+  },
+  {
+    "chinese": "J'ai peur que cette fois nous devions veiller toute la nuit.",
+    "pinyin": null,
+    "translation": "Tenho medo que desta vez tenhamos que ficar acordados a noite toda.",
+    "tokens": [
+      "J'",
+      "ai",
+      "peur",
+      "que",
+      "cette",
+      "fois",
+      "nous",
+      "devions",
+      "veiller",
+      "toute",
+      "la",
+      "nuit",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'ai peur que",
+        "pinyin": null,
+        "meaning": "Tenho medo que"
+      },
+      {
+        "id": 2,
+        "word": "cette fois",
+        "pinyin": null,
+        "meaning": "desta vez"
+      },
+      {
+        "id": 3,
+        "word": "nous devions",
+        "pinyin": null,
+        "meaning": "nós devamos/tenhamos que"
+      },
+      {
+        "id": 4,
+        "word": "veiller",
+        "pinyin": null,
+        "meaning": "ficar acordado/vigiar"
+      },
+      {
+        "id": 5,
+        "word": "toute la nuit",
+        "pinyin": null,
+        "meaning": "a noite toda"
+      }
+    ],
+    "id": "local-1772298861474-17",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors je dois d'abord aller au supermarché faire le plein de Red Bull.",
+    "pinyin": null,
+    "translation": "A: Então, primeiro preciso ir ao supermercado para estocar Red Bull.",
+    "tokens": [
+      "Alors",
+      "je",
+      "dois",
+      "d'",
+      "abord",
+      "aller",
+      "au",
+      "supermarché",
+      "faire",
+      "le",
+      "plein",
+      "de",
+      "Red",
+      "Bull",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "je dois",
+        "pinyin": null,
+        "meaning": "eu devo/preciso"
+      },
+      {
+        "id": 3,
+        "word": "d'abord",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "aller au supermarché",
+        "pinyin": null,
+        "meaning": "ir ao supermercado"
+      },
+      {
+        "id": 5,
+        "word": "faire le plein de",
+        "pinyin": null,
+        "meaning": "estocar/encher de"
+      },
+      {
+        "id": 6,
+        "word": "Red Bull",
+        "pinyin": null,
+        "meaning": "Red Bull"
+      }
+    ],
+    "id": "local-1772298861474-18",
+    "language": "Francês"
+  },
+  {
+    "chinese": "Je ferai tout pour regarder ces jolies filles !",
+    "pinyin": null,
+    "translation": "Farei tudo para assistir a essas garotas bonitas!",
+    "tokens": [
+      "Je",
+      "ferai",
+      "tout",
+      "pour",
+      "regarder",
+      "ces",
+      "jolies",
+      "filles",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Je ferai",
+        "pinyin": null,
+        "meaning": "Eu farei"
+      },
+      {
+        "id": 2,
+        "word": "tout",
+        "pinyin": null,
+        "meaning": "tudo"
+      },
+      {
+        "id": 3,
+        "word": "pour regarder",
+        "pinyin": null,
+        "meaning": "para assistir"
+      },
+      {
+        "id": 4,
+        "word": "ces jolies filles",
+        "pinyin": null,
+        "meaning": "essas garotas bonitas"
+      }
+    ],
+    "id": "local-1772298861474-19",
+    "language": "Francês"
+  }
+]

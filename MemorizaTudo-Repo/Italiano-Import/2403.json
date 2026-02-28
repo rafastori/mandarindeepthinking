@@ -1,0 +1,1748 @@
+[
+  {
+    "chinese": "A: Ciao, qual è il numero di telefono per prenotare un taxi?",
+    "pinyin": "",
+    "translation": "A: Olá, qual é o número de telefone para reservar um táxi?",
+    "tokens": [
+      "Ciao",
+      ",",
+      "qual",
+      "è",
+      "il",
+      "numero",
+      "di",
+      "telefono",
+      "per",
+      "prenotare",
+      "un",
+      "taxi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ciao",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 1,
+        "word": "qual è",
+        "pinyin": "",
+        "meaning": "qual é"
+      },
+      {
+        "id": 2,
+        "word": "numero di telefono",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 3,
+        "word": "prenotare",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 4,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      }
+    ],
+    "id": "local-1772294246860-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Cosa? Chi usa ancora il telefono per prenotare un taxi al giorno d'oggi?",
+    "pinyin": "",
+    "translation": "B: O quê? Quem ainda usa o telefone para reservar um táxi hoje em dia?",
+    "tokens": [
+      "Cosa",
+      "?",
+      "Chi",
+      "usa",
+      "ancora",
+      "il",
+      "telefono",
+      "per",
+      "prenotare",
+      "un",
+      "taxi",
+      "al",
+      "giorno",
+      "d'oggi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Cosa",
+        "pinyin": "",
+        "meaning": "O quê / Que"
+      },
+      {
+        "id": 1,
+        "word": "Chi",
+        "pinyin": "",
+        "meaning": "Quem"
+      },
+      {
+        "id": 2,
+        "word": "usa",
+        "pinyin": "",
+        "meaning": "usa (verbo usare)"
+      },
+      {
+        "id": 3,
+        "word": "ancora",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 4,
+        "word": "telefono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "prenotare",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "al giorno d'oggi",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      }
+    ],
+    "id": "local-1772294246860-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora come si fa a prenotarne uno?",
+    "pinyin": "",
+    "translation": "A: Então, como se faz para reservar um?",
+    "tokens": [
+      "Allora",
+      "come",
+      "si",
+      "fa",
+      "a",
+      "prenotarne",
+      "uno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 1,
+        "word": "come si fa",
+        "pinyin": "",
+        "meaning": "como se faz"
+      },
+      {
+        "id": 2,
+        "word": "prenotarne",
+        "pinyin": "",
+        "meaning": "reservar um (prenotare + ne)"
+      },
+      {
+        "id": 3,
+        "word": "uno",
+        "pinyin": "",
+        "meaning": "um"
+      }
+    ],
+    "id": "local-1772294246860-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Usa un software per la prenotazione di taxi.",
+    "pinyin": "",
+    "translation": "B: Use um software para a reserva de táxi.",
+    "tokens": [
+      "Usa",
+      "un",
+      "software",
+      "per",
+      "la",
+      "prenotazione",
+      "di",
+      "taxi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Usa",
+        "pinyin": "",
+        "meaning": "Use (verbo usare)"
+      },
+      {
+        "id": 1,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 2,
+        "word": "prenotazione",
+        "pinyin": "",
+        "meaning": "reserva"
+      },
+      {
+        "id": 3,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      }
+    ],
+    "id": "local-1772294246860-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "Scaricane uno sul tuo telefono e il gioco è fatto.",
+    "pinyin": "",
+    "translation": "Baixe um no seu telefone e pronto (o jogo está feito).",
+    "tokens": [
+      "Scaricane",
+      "uno",
+      "sul",
+      "tuo",
+      "telefono",
+      "e",
+      "il",
+      "gioco",
+      "è",
+      "fatto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Scaricane",
+        "pinyin": "",
+        "meaning": "Baixe um (scaricare + ne)"
+      },
+      {
+        "id": 1,
+        "word": "sul",
+        "pinyin": "",
+        "meaning": "no (su + il)"
+      },
+      {
+        "id": 2,
+        "word": "tuo",
+        "pinyin": "",
+        "meaning": "seu"
+      },
+      {
+        "id": 3,
+        "word": "telefono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 4,
+        "word": "il gioco è fatto",
+        "pinyin": "",
+        "meaning": "o jogo está feito / pronto"
+      }
+    ],
+    "id": "local-1772294246860-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh. E poi cosa fai?",
+    "pinyin": "",
+    "translation": "A: Ah. E depois o que você faz?",
+    "tokens": [
+      "Oh",
+      ".",
+      "E",
+      "poi",
+      "cosa",
+      "fai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "poi",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 1,
+        "word": "cosa",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "fai",
+        "pinyin": "",
+        "meaning": "faz (verbo fare)"
+      }
+    ],
+    "id": "local-1772294246860-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Inserisci il tuo numero di telefono e puoi registrarti direttamente.",
+    "pinyin": "",
+    "translation": "B: Insira seu número de telefone e você pode se registrar diretamente.",
+    "tokens": [
+      "Inserisci",
+      "il",
+      "tuo",
+      "numero",
+      "di",
+      "telefono",
+      "e",
+      "puoi",
+      "registrarti",
+      "direttamente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Inserisci",
+        "pinyin": "",
+        "meaning": "Insira (verbo inserire)"
+      },
+      {
+        "id": 1,
+        "word": "tuo",
+        "pinyin": "",
+        "meaning": "seu"
+      },
+      {
+        "id": 2,
+        "word": "numero di telefono",
+        "pinyin": "",
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 3,
+        "word": "puoi",
+        "pinyin": "",
+        "meaning": "você pode (verbo potere)"
+      },
+      {
+        "id": 4,
+        "word": "registrarti",
+        "pinyin": "",
+        "meaning": "registrar-se"
+      },
+      {
+        "id": 5,
+        "word": "direttamente",
+        "pinyin": "",
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772294246860-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: E come fanno a sapere dove sono?",
+    "pinyin": "",
+    "translation": "A: E como eles fazem para saber onde estou?",
+    "tokens": [
+      "E",
+      "come",
+      "fanno",
+      "a",
+      "sapere",
+      "dove",
+      "sono",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "come fanno",
+        "pinyin": "",
+        "meaning": "como fazem"
+      },
+      {
+        "id": 1,
+        "word": "sapere",
+        "pinyin": "",
+        "meaning": "saber"
+      },
+      {
+        "id": 2,
+        "word": "dove",
+        "pinyin": "",
+        "meaning": "onde"
+      },
+      {
+        "id": 3,
+        "word": "sono",
+        "pinyin": "",
+        "meaning": "estou (verbo essere)"
+      }
+    ],
+    "id": "local-1772294246860-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tramite GPS possono trovare la tua posizione molto rapidamente e un taxi nelle vicinanze arriverà presto. Certo, puoi anche lasciare un messaggio vocale.",
+    "pinyin": "",
+    "translation": "B: Através do GPS eles podem encontrar sua localização muito rapidamente e um táxi nas proximidades chegará em breve. Claro, você também pode deixar uma mensagem de voz.",
+    "tokens": [
+      "Tramite",
+      "GPS",
+      "possono",
+      "trovare",
+      "la",
+      "tua",
+      "posizione",
+      "molto",
+      "rapidamente",
+      "e",
+      "un",
+      "taxi",
+      "nelle",
+      "vicinanze",
+      "arriverà",
+      "presto",
+      ".",
+      "Certo",
+      ",",
+      "puoi",
+      "anche",
+      "lasciare",
+      "un",
+      "messaggio",
+      "vocale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Tramite",
+        "pinyin": "",
+        "meaning": "Através de"
+      },
+      {
+        "id": 1,
+        "word": "GPS",
+        "pinyin": "",
+        "meaning": "GPS"
+      },
+      {
+        "id": 2,
+        "word": "possono",
+        "pinyin": "",
+        "meaning": "eles podem (verbo potere)"
+      },
+      {
+        "id": 3,
+        "word": "trovare",
+        "pinyin": "",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 4,
+        "word": "tua",
+        "pinyin": "",
+        "meaning": "sua"
+      },
+      {
+        "id": 5,
+        "word": "posizione",
+        "pinyin": "",
+        "meaning": "localização"
+      },
+      {
+        "id": 6,
+        "word": "molto rapidamente",
+        "pinyin": "",
+        "meaning": "muito rapidamente"
+      },
+      {
+        "id": 7,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 8,
+        "word": "nelle vicinanze",
+        "pinyin": "",
+        "meaning": "nas proximidades"
+      },
+      {
+        "id": 9,
+        "word": "arriverà",
+        "pinyin": "",
+        "meaning": "chegará (verbo arrivare)"
+      },
+      {
+        "id": 10,
+        "word": "presto",
+        "pinyin": "",
+        "meaning": "cedo / em breve"
+      },
+      {
+        "id": 11,
+        "word": "Certo",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 12,
+        "word": "puoi",
+        "pinyin": "",
+        "meaning": "você pode (verbo potere)"
+      },
+      {
+        "id": 13,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 14,
+        "word": "lasciare",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 15,
+        "word": "messaggio vocale",
+        "pinyin": "",
+        "meaning": "mensagem de voz"
+      }
+    ],
+    "id": "local-1772294246860-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sembra piuttosto buono. L'hai usato?",
+    "pinyin": "",
+    "translation": "A: Parece bastante bom. Você o usou?",
+    "tokens": [
+      "Sembra",
+      "piuttosto",
+      "buono",
+      ".",
+      "L'hai",
+      "usato",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Sembra",
+        "pinyin": "",
+        "meaning": "Parece (verbo sembrare)"
+      },
+      {
+        "id": 1,
+        "word": "piuttosto",
+        "pinyin": "",
+        "meaning": "bastante / bem"
+      },
+      {
+        "id": 2,
+        "word": "buono",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 3,
+        "word": "L'hai usato",
+        "pinyin": "",
+        "meaning": "Você o usou (lo + hai + usato)"
+      }
+    ],
+    "id": "local-1772294246860-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Certo. Ha piovuto molto di recente ed è stato difficile prendere un taxi. Questo software è sia comodo che veloce.",
+    "pinyin": "",
+    "translation": "B: Claro. Choveu muito recentemente e foi difícil pegar um táxi. Este software é tanto cômodo quanto rápido.",
+    "tokens": [
+      "Certo",
+      ".",
+      "Ha",
+      "piovuto",
+      "molto",
+      "di",
+      "recente",
+      "ed",
+      "è",
+      "stato",
+      "difficile",
+      "prendere",
+      "un",
+      "taxi",
+      ".",
+      "Questo",
+      "software",
+      "è",
+      "sia",
+      "comodo",
+      "che",
+      "veloce",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Certo",
+        "pinyin": "",
+        "meaning": "Claro"
+      },
+      {
+        "id": 1,
+        "word": "Ha piovuto",
+        "pinyin": "",
+        "meaning": "Choveu (verbo piovere)"
+      },
+      {
+        "id": 2,
+        "word": "molto",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 3,
+        "word": "di recente",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 4,
+        "word": "difficile",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 5,
+        "word": "prendere",
+        "pinyin": "",
+        "meaning": "pegar"
+      },
+      {
+        "id": 6,
+        "word": "taxi",
+        "pinyin": "",
+        "meaning": "táxi"
+      },
+      {
+        "id": 7,
+        "word": "Questo",
+        "pinyin": "",
+        "meaning": "Este"
+      },
+      {
+        "id": 8,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 9,
+        "word": "sia...che",
+        "pinyin": "",
+        "meaning": "tanto...quanto"
+      },
+      {
+        "id": 10,
+        "word": "comodo",
+        "pinyin": "",
+        "meaning": "cômodo"
+      },
+      {
+        "id": 11,
+        "word": "veloce",
+        "pinyin": "",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772294246860-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Lo proverò la prossima volta. Come si paga?",
+    "pinyin": "",
+    "translation": "A: Vou experimentá-lo da próxima vez. Como se paga?",
+    "tokens": [
+      "Lo",
+      "proverò",
+      "la",
+      "prossima",
+      "volta",
+      ".",
+      "Come",
+      "si",
+      "paga",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Lo",
+        "pinyin": "",
+        "meaning": "o (pronome objeto)"
+      },
+      {
+        "id": 1,
+        "word": "proverò",
+        "pinyin": "",
+        "meaning": "experimentarei (verbo provare)"
+      },
+      {
+        "id": 2,
+        "word": "la prossima volta",
+        "pinyin": "",
+        "meaning": "da próxima vez"
+      },
+      {
+        "id": 3,
+        "word": "Come",
+        "pinyin": "",
+        "meaning": "Como"
+      },
+      {
+        "id": 4,
+        "word": "si paga",
+        "pinyin": "",
+        "meaning": "se paga (verbo pagare)"
+      }
+    ],
+    "id": "local-1772294246860-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Puoi usare contanti o il tuo account Alipay sul telefono. A volte puoi anche risparmiare cinque kuai se lo fai.",
+    "pinyin": "",
+    "translation": "B: Você pode usar dinheiro em espécie ou sua conta Alipay no telefone. Às vezes você pode até economizar cinco kuai se fizer isso.",
+    "tokens": [
+      "Puoi",
+      "usare",
+      "contanti",
+      "o",
+      "il",
+      "tuo",
+      "account",
+      "Alipay",
+      "sul",
+      "telefono",
+      ".",
+      "A",
+      "volte",
+      "puoi",
+      "anche",
+      "risparmiare",
+      "cinque",
+      "kuai",
+      "se",
+      "lo",
+      "fai",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Puoi",
+        "pinyin": "",
+        "meaning": "Você pode (verbo potere)"
+      },
+      {
+        "id": 1,
+        "word": "usare",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 2,
+        "word": "contanti",
+        "pinyin": "",
+        "meaning": "dinheiro em espécie"
+      },
+      {
+        "id": 3,
+        "word": "tuo",
+        "pinyin": "",
+        "meaning": "seu"
+      },
+      {
+        "id": 4,
+        "word": "account",
+        "pinyin": "",
+        "meaning": "conta (inglês)"
+      },
+      {
+        "id": 5,
+        "word": "Alipay",
+        "pinyin": "",
+        "meaning": "Alipay"
+      },
+      {
+        "id": 6,
+        "word": "sul",
+        "pinyin": "",
+        "meaning": "no (su + il)"
+      },
+      {
+        "id": 7,
+        "word": "telefono",
+        "pinyin": "",
+        "meaning": "telefone"
+      },
+      {
+        "id": 8,
+        "word": "A volte",
+        "pinyin": "",
+        "meaning": "Às vezes"
+      },
+      {
+        "id": 9,
+        "word": "puoi",
+        "pinyin": "",
+        "meaning": "você pode (verbo potere)"
+      },
+      {
+        "id": 10,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 11,
+        "word": "risparmiare",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 12,
+        "word": "cinque",
+        "pinyin": "",
+        "meaning": "cinco"
+      },
+      {
+        "id": 13,
+        "word": "kuai",
+        "pinyin": "",
+        "meaning": "kuai (moeda chinesa)"
+      },
+      {
+        "id": 14,
+        "word": "se",
+        "pinyin": "",
+        "meaning": "se"
+      },
+      {
+        "id": 15,
+        "word": "lo fai",
+        "pinyin": "",
+        "meaning": "o faz / fizer isso"
+      }
+    ],
+    "id": "local-1772294246860-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Davvero? Allora lo userò subito!",
+    "pinyin": "",
+    "translation": "A: Sério? Então vou usá-lo imediatamente!",
+    "tokens": [
+      "Davvero",
+      "?",
+      "Allora",
+      "lo",
+      "userò",
+      "subito",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Davvero",
+        "pinyin": "",
+        "meaning": "Sério / Verdade"
+      },
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "lo",
+        "pinyin": "",
+        "meaning": "o (pronome objeto)"
+      },
+      {
+        "id": 3,
+        "word": "userò",
+        "pinyin": "",
+        "meaning": "usarei (verbo usare)"
+      },
+      {
+        "id": 4,
+        "word": "subito",
+        "pinyin": "",
+        "meaning": "imediatamente"
+      }
+    ],
+    "id": "local-1772294246860-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Gira, salta, scivola. Wow, i movimenti di Kim Yuna sono davvero bellissimi.",
+    "pinyin": "",
+    "translation": "A: Gira, salta, desliza. Uau, os movimentos de Kim Yuna são realmente belíssimos.",
+    "tokens": [
+      "Gira",
+      ",",
+      "salta",
+      ",",
+      "scivola",
+      ".",
+      "Wow",
+      ",",
+      "i",
+      "movimenti",
+      "di",
+      "Kim",
+      "Yuna",
+      "sono",
+      "davvero",
+      "bellissimi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Gira",
+        "pinyin": "",
+        "meaning": "Gira (verbo girare)"
+      },
+      {
+        "id": 1,
+        "word": "salta",
+        "pinyin": "",
+        "meaning": "salta (verbo saltare)"
+      },
+      {
+        "id": 2,
+        "word": "scivola",
+        "pinyin": "",
+        "meaning": "desliza (verbo scivolare)"
+      },
+      {
+        "id": 3,
+        "word": "Wow",
+        "pinyin": "",
+        "meaning": "Uau"
+      },
+      {
+        "id": 4,
+        "word": "movimenti",
+        "pinyin": "",
+        "meaning": "movimentos"
+      },
+      {
+        "id": 5,
+        "word": "davvero",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "bellissimi",
+        "pinyin": "",
+        "meaning": "belíssimos (superlativo de bello)"
+      }
+    ],
+    "id": "local-1772294246860-14",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Stai guardando la competizione di pattinaggio di figura delle Olimpiadi invernali? Oh, questa è quella giovane prodigio coreana.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística das Olimpíadas de Inverno? Ah, esta é aquela jovem prodígio coreana.",
+    "tokens": [
+      "Stai",
+      "guardando",
+      "la",
+      "competizione",
+      "di",
+      "pattinaggio",
+      "di",
+      "figura",
+      "delle",
+      "Olimpiadi",
+      "invernali",
+      "?",
+      "Oh",
+      ",",
+      "questa",
+      "è",
+      "quella",
+      "giovane",
+      "prodigio",
+      "coreana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Stai guardando",
+        "pinyin": "",
+        "meaning": "Você está assistindo (stare + gerúndio)"
+      },
+      {
+        "id": 1,
+        "word": "competizione",
+        "pinyin": "",
+        "meaning": "competição"
+      },
+      {
+        "id": 2,
+        "word": "pattinaggio di figura",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "Olimpiadi invernali",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 4,
+        "word": "questa",
+        "pinyin": "",
+        "meaning": "esta"
+      },
+      {
+        "id": 5,
+        "word": "giovane",
+        "pinyin": "",
+        "meaning": "jovem"
+      },
+      {
+        "id": 6,
+        "word": "prodigio",
+        "pinyin": "",
+        "meaning": "prodígio"
+      },
+      {
+        "id": 7,
+        "word": "coreana",
+        "pinyin": "",
+        "meaning": "coreana"
+      }
+    ],
+    "id": "local-1772294246860-15",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì. Guarda quanto sono belli i suoi movimenti!",
+    "pinyin": "",
+    "translation": "A: Sim. Olha como são bonitos os movimentos dela!",
+    "tokens": [
+      "Sì",
+      ".",
+      "Guarda",
+      "quanto",
+      "sono",
+      "belli",
+      "i",
+      "suoi",
+      "movimenti",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Sì",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "Guarda",
+        "pinyin": "",
+        "meaning": "Olha (verbo guardare)"
+      },
+      {
+        "id": 2,
+        "word": "quanto",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 3,
+        "word": "belli",
+        "pinyin": "",
+        "meaning": "bonitos"
+      },
+      {
+        "id": 4,
+        "word": "suoi",
+        "pinyin": "",
+        "meaning": "dela (possesivo)"
+      },
+      {
+        "id": 5,
+        "word": "movimenti",
+        "pinyin": "",
+        "meaning": "movimentos"
+      }
+    ],
+    "id": "local-1772294246860-16",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ma a queste Olimpiadi invernali non ha vinto la medaglia d'oro. Penso che quattro anni fa, alle Olimpiadi di Vancouver, fosse al suo apice.",
+    "pinyin": "",
+    "translation": "B: Mas nestas Olimpíadas de Inverno ela não ganhou a medalha de ouro. Acho que quatro anos atrás, nas Olimpíadas de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "Ma",
+      "a",
+      "queste",
+      "Olimpiadi",
+      "invernali",
+      "non",
+      "ha",
+      "vinto",
+      "la",
+      "medaglia",
+      "d'oro",
+      ".",
+      "Penso",
+      "che",
+      "quattro",
+      "anni",
+      "fa",
+      ",",
+      "alle",
+      "Olimpiadi",
+      "di",
+      "Vancouver",
+      ",",
+      "fosse",
+      "al",
+      "suo",
+      "apice",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ma",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 1,
+        "word": "queste",
+        "pinyin": "",
+        "meaning": "estas"
+      },
+      {
+        "id": 2,
+        "word": "Olimpiadi invernali",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "non ha vinto",
+        "pinyin": "",
+        "meaning": "não ganhou (verbo vincere)"
+      },
+      {
+        "id": 4,
+        "word": "medaglia d'oro",
+        "pinyin": "",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 5,
+        "word": "Penso",
+        "pinyin": "",
+        "meaning": "Penso (verbo pensare)"
+      },
+      {
+        "id": 6,
+        "word": "quattro anni fa",
+        "pinyin": "",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 7,
+        "word": "Olimpiadi di Vancouver",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Vancouver"
+      },
+      {
+        "id": 8,
+        "word": "fosse",
+        "pinyin": "",
+        "meaning": "estava (verbo essere, imperfetto do subjuntivo)"
+      },
+      {
+        "id": 9,
+        "word": "suo",
+        "pinyin": "",
+        "meaning": "seu/dela"
+      },
+      {
+        "id": 10,
+        "word": "apice",
+        "pinyin": "",
+        "meaning": "auge"
+      }
+    ],
+    "id": "local-1772294246860-17",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Nella mia mente, sarà sempre la Regina del Ghiaccio! Anche se questa volta non ha vinto l'oro, la sua performance è stata comunque notevole. È un peccato che si ritirerà dopo queste Olimpiadi invernali.",
+    "pinyin": "",
+    "translation": "A: Na minha mente, ela sempre será a Rainha do Gelo! Mesmo que desta vez ela não tenha ganhado o ouro, sua performance foi notável de qualquer forma. É uma pena que ela se aposentará após estas Olimpíadas de Inverno.",
+    "tokens": [
+      "Nella",
+      "mia",
+      "mente",
+      ",",
+      "sarà",
+      "sempre",
+      "la",
+      "Regina",
+      "del",
+      "Ghiaccio",
+      "!",
+      "Anche",
+      "se",
+      "questa",
+      "volta",
+      "non",
+      "ha",
+      "vinto",
+      "l'oro",
+      ",",
+      "la",
+      "sua",
+      "performance",
+      "è",
+      "stata",
+      "comunque",
+      "notevole",
+      ".",
+      "È",
+      "un",
+      "peccato",
+      "che",
+      "si",
+      "ritirerà",
+      "dopo",
+      "queste",
+      "Olimpiadi",
+      "invernali",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Nella mia mente",
+        "pinyin": "",
+        "meaning": "Na minha mente"
+      },
+      {
+        "id": 1,
+        "word": "sarà",
+        "pinyin": "",
+        "meaning": "será (verbo essere)"
+      },
+      {
+        "id": 2,
+        "word": "sempre",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 3,
+        "word": "Regina del Ghiaccio",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 4,
+        "word": "Anche se",
+        "pinyin": "",
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 5,
+        "word": "questa volta",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 6,
+        "word": "non ha vinto",
+        "pinyin": "",
+        "meaning": "não ganhou (verbo vincere)"
+      },
+      {
+        "id": 7,
+        "word": "l'oro",
+        "pinyin": "",
+        "meaning": "o ouro"
+      },
+      {
+        "id": 8,
+        "word": "sua",
+        "pinyin": "",
+        "meaning": "dela"
+      },
+      {
+        "id": 9,
+        "word": "performance",
+        "pinyin": "",
+        "meaning": "performance (inglês)"
+      },
+      {
+        "id": 10,
+        "word": "comunque",
+        "pinyin": "",
+        "meaning": "de qualquer forma / no entanto"
+      },
+      {
+        "id": 11,
+        "word": "notevole",
+        "pinyin": "",
+        "meaning": "notável"
+      },
+      {
+        "id": 12,
+        "word": "È un peccato",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 13,
+        "word": "si ritirerà",
+        "pinyin": "",
+        "meaning": "se aposentará (verbo ritirarsi)"
+      },
+      {
+        "id": 14,
+        "word": "dopo",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 15,
+        "word": "queste",
+        "pinyin": "",
+        "meaning": "estas"
+      },
+      {
+        "id": 16,
+        "word": "Olimpiadi invernali",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      }
+    ],
+    "id": "local-1772294246860-18",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questa volta anche la campionessa del singolo femminile, Sotnikova, è davvero brava. Inoltre, ha solo 17 anni.",
+    "pinyin": "",
+    "translation": "B: Desta vez, a campeã do individual feminino, Sotnikova, também é realmente boa. Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "Questa",
+      "volta",
+      "anche",
+      "la",
+      "campionessa",
+      "del",
+      "singolo",
+      "femminile",
+      ",",
+      "Sotnikova",
+      ",",
+      "è",
+      "davvero",
+      "brava",
+      ".",
+      "Inoltre",
+      ",",
+      "ha",
+      "solo",
+      "17",
+      "anni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Questa volta",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 1,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "campionessa",
+        "pinyin": "",
+        "meaning": "campeã"
+      },
+      {
+        "id": 3,
+        "word": "singolo femminile",
+        "pinyin": "",
+        "meaning": "individual feminino"
+      },
+      {
+        "id": 4,
+        "word": "davvero",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "brava",
+        "pinyin": "",
+        "meaning": "boa / habilidosa"
+      },
+      {
+        "id": 6,
+        "word": "Inoltre",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 7,
+        "word": "ha",
+        "pinyin": "",
+        "meaning": "tem (verbo avere)"
+      },
+      {
+        "id": 8,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 9,
+        "word": "anni",
+        "pinyin": "",
+        "meaning": "anos"
+      }
+    ],
+    "id": "local-1772294246860-19",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì. Ehi, il pattinaggio di figura è davvero uno sport elegante. Pensi che potrei ancora imparare a farlo?",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, a patinação artística é realmente um esporte elegante. Você acha que eu ainda poderia aprender a fazê-lo?",
+    "tokens": [
+      "Sì",
+      ".",
+      "Ehi",
+      ",",
+      "il",
+      "pattinaggio",
+      "di",
+      "figura",
+      "è",
+      "davvero",
+      "uno",
+      "sport",
+      "elegante",
+      ".",
+      "Pensi",
+      "che",
+      "potrei",
+      "ancora",
+      "imparare",
+      "a",
+      "farlo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Sì",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "Ehi",
+        "pinyin": "",
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "pattinaggio di figura",
+        "pinyin": "",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "davvero",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 4,
+        "word": "sport",
+        "pinyin": "",
+        "meaning": "esporte"
+      },
+      {
+        "id": 5,
+        "word": "elegante",
+        "pinyin": "",
+        "meaning": "elegante"
+      },
+      {
+        "id": 6,
+        "word": "Pensi",
+        "pinyin": "",
+        "meaning": "Você pensa (verbo pensare)"
+      },
+      {
+        "id": 7,
+        "word": "potrei",
+        "pinyin": "",
+        "meaning": "eu poderia (verbo potere)"
+      },
+      {
+        "id": 8,
+        "word": "ancora",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 9,
+        "word": "imparare",
+        "pinyin": "",
+        "meaning": "aprender"
+      },
+      {
+        "id": 10,
+        "word": "farlo",
+        "pinyin": "",
+        "meaning": "fazê-lo (fare + lo)"
+      }
+    ],
+    "id": "local-1772294246860-20",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tu? Lascia perdere. Vedi questi atleti in TV? Hanno tutti iniziato da giovani. Se iniziassi ora, sarebbe troppo tardi.",
+    "pinyin": "",
+    "translation": "B: Você? Deixa pra lá. Você vê esses atletas na TV? Todos eles começaram jovens. Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "Tu",
+      "?",
+      "Lascia",
+      "perdere",
+      ".",
+      "Vedi",
+      "questi",
+      "atleti",
+      "in",
+      "TV",
+      "?",
+      "Hanno",
+      "tutti",
+      "iniziato",
+      "da",
+      "giovani",
+      ".",
+      "Se",
+      "iniziassi",
+      "ora",
+      ",",
+      "sarebbe",
+      "troppo",
+      "tardi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Tu",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 1,
+        "word": "Lascia perdere",
+        "pinyin": "",
+        "meaning": "Deixa pra lá / Esqueça"
+      },
+      {
+        "id": 2,
+        "word": "Vedi",
+        "pinyin": "",
+        "meaning": "Você vê (verbo vedere)"
+      },
+      {
+        "id": 3,
+        "word": "questi",
+        "pinyin": "",
+        "meaning": "estes"
+      },
+      {
+        "id": 4,
+        "word": "atleti",
+        "pinyin": "",
+        "meaning": "atletas"
+      },
+      {
+        "id": 5,
+        "word": "in TV",
+        "pinyin": "",
+        "meaning": "na TV"
+      },
+      {
+        "id": 6,
+        "word": "Hanno iniziato",
+        "pinyin": "",
+        "meaning": "Começaram (verbo iniziare)"
+      },
+      {
+        "id": 7,
+        "word": "tutti",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 8,
+        "word": "da giovani",
+        "pinyin": "",
+        "meaning": "jovens (desde jovens)"
+      },
+      {
+        "id": 9,
+        "word": "Se",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 10,
+        "word": "iniziassi",
+        "pinyin": "",
+        "meaning": "você começasse (verbo iniziare, imperfetto do subjuntivo)"
+      },
+      {
+        "id": 11,
+        "word": "ora",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 12,
+        "word": "sarebbe",
+        "pinyin": "",
+        "meaning": "seria (verbo essere)"
+      },
+      {
+        "id": 13,
+        "word": "troppo tardi",
+        "pinyin": "",
+        "meaning": "tarde demais"
+      }
+    ],
+    "id": "local-1772294246860-21",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non voglio competere. Voglio solo farlo per divertimento.",
+    "pinyin": "",
+    "translation": "A: Não quero competir. Só quero fazê-lo por diversão.",
+    "tokens": [
+      "Non",
+      "voglio",
+      "competere",
+      ".",
+      "Voglio",
+      "solo",
+      "farlo",
+      "per",
+      "divertimento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Non voglio",
+        "pinyin": "",
+        "meaning": "Não quero (verbo volere)"
+      },
+      {
+        "id": 1,
+        "word": "competere",
+        "pinyin": "",
+        "meaning": "competir"
+      },
+      {
+        "id": 2,
+        "word": "Voglio",
+        "pinyin": "",
+        "meaning": "Quero (verbo volere)"
+      },
+      {
+        "id": 3,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "só / apenas"
+      },
+      {
+        "id": 4,
+        "word": "farlo",
+        "pinyin": "",
+        "meaning": "fazê-lo (fare + lo)"
+      },
+      {
+        "id": 5,
+        "word": "per divertimento",
+        "pinyin": "",
+        "meaning": "por diversão"
+      }
+    ],
+    "id": "local-1772294246860-22",
+    "language": "Italiano"
+  }
+]

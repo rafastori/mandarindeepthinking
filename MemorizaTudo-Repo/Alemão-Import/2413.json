@@ -1,0 +1,596 @@
+[
+  {
+    "chinese": "A: Pirouetten, Sprünge, Gleiten. Wow, die Bewegungen von Kim Yuna sind wirklich wunderschön.",
+    "pinyin": "",
+    "translation": "A: Piruetas, saltos, deslizes. Uau, os movimentos de Kim Yuna são realmente lindos.",
+    "tokens": [
+      "A:",
+      "Pirouetten,",
+      "Sprünge,",
+      "Gleiten.",
+      "Wow,",
+      "die",
+      "Bewegungen",
+      "von",
+      "Kim",
+      "Yuna",
+      "sind",
+      "wirklich",
+      "wunderschön."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pirouetten",
+        "pinyin": "",
+        "meaning": "Piruetas"
+      },
+      {
+        "id": 2,
+        "word": "Sprünge",
+        "pinyin": "",
+        "meaning": "Saltos"
+      },
+      {
+        "id": 3,
+        "word": "Gleiten",
+        "pinyin": "",
+        "meaning": "Deslizar"
+      },
+      {
+        "id": 4,
+        "word": "Bewegungen",
+        "pinyin": "",
+        "meaning": "Movimentos"
+      },
+      {
+        "id": 5,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 6,
+        "word": "wunderschön",
+        "pinyin": "",
+        "meaning": "maravilhoso, lindo"
+      }
+    ],
+    "id": "local-1772292648870-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Schaust du den Eiskunstlauf-Wettbewerb bei den Olympischen Winterspielen? Oh, das ist dieses junge koreanische Wunderkind.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística nos Jogos Olímpicos de Inverno? Oh, essa é aquela jovem prodígio coreana.",
+    "tokens": [
+      "B:",
+      "Schaust",
+      "du",
+      "den",
+      "Eiskunstlauf-Wettbewerb",
+      "bei",
+      "den",
+      "Olympischen",
+      "Winterspielen?",
+      "Oh,",
+      "das",
+      "ist",
+      "dieses",
+      "junge",
+      "koreanische",
+      "Wunderkind."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schaust",
+        "pinyin": "",
+        "meaning": "Você assiste (forma informal do verbo 'schauen')"
+      },
+      {
+        "id": 2,
+        "word": "Eiskunstlauf-Wettbewerb",
+        "pinyin": "",
+        "meaning": "Competição de patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "Olympischen Winterspielen",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 4,
+        "word": "junge",
+        "pinyin": "",
+        "meaning": "jovem"
+      },
+      {
+        "id": 5,
+        "word": "koreanische",
+        "pinyin": "",
+        "meaning": "coreana"
+      },
+      {
+        "id": 6,
+        "word": "Wunderkind",
+        "pinyin": "",
+        "meaning": "criança prodígio, prodígio"
+      }
+    ],
+    "id": "local-1772292648870-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja. Schau nur, wie schön ihre Bewegungen sind!",
+    "pinyin": "",
+    "translation": "A: Sim. Veja só, como os movimentos dela são bonitos!",
+    "tokens": [
+      "A:",
+      "Ja.",
+      "Schau",
+      "nur,",
+      "wie",
+      "schön",
+      "ihre",
+      "Bewegungen",
+      "sind!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schau",
+        "pinyin": "",
+        "meaning": "Veja (forma informal do verbo 'schauen')"
+      },
+      {
+        "id": 2,
+        "word": "schön",
+        "pinyin": "",
+        "meaning": "bonito"
+      },
+      {
+        "id": 3,
+        "word": "Bewegungen",
+        "pinyin": "",
+        "meaning": "movimentos"
+      }
+    ],
+    "id": "local-1772292648870-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber bei diesen Winterspielen hat sie nicht die Goldmedaille gewonnen. Ich finde, vor vier Jahren bei den Spielen in Vancouver war sie auf ihrem Höhepunkt.",
+    "pinyin": "",
+    "translation": "B: Mas nestes Jogos de Inverno ela não ganhou a medalha de ouro. Eu acho que, quatro anos atrás, nos Jogos em Vancouver, ela estava no auge.",
+    "tokens": [
+      "B:",
+      "Aber",
+      "bei",
+      "diesen",
+      "Winterspielen",
+      "hat",
+      "sie",
+      "nicht",
+      "die",
+      "Goldmedaille",
+      "gewonnen.",
+      "Ich",
+      "finde,",
+      "vor",
+      "vier",
+      "Jahren",
+      "bei",
+      "den",
+      "Spielen",
+      "in",
+      "Vancouver",
+      "war",
+      "sie",
+      "auf",
+      "ihrem",
+      "Höhepunkt."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Goldmedaille",
+        "pinyin": "",
+        "meaning": "Medalha de ouro"
+      },
+      {
+        "id": 2,
+        "word": "gewonnen",
+        "pinyin": "",
+        "meaning": "ganho (particípio passado de 'gewinnen')"
+      },
+      {
+        "id": 3,
+        "word": "vor vier Jahren",
+        "pinyin": "",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 4,
+        "word": "Spielen",
+        "pinyin": "",
+        "meaning": "Jogos"
+      },
+      {
+        "id": 5,
+        "word": "Höhepunkt",
+        "pinyin": "",
+        "meaning": "auge, ponto culminante"
+      }
+    ],
+    "id": "local-1772292648870-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: In meinen Augen wird sie immer die Königin des Eises sein! Auch wenn sie diesmal kein Gold geholt hat, war ihre Leistung immer noch bemerkenswert. Schade, dass sie nach diesen Winterspielen zurücktreten wird.",
+    "pinyin": "",
+    "translation": "A: Na minha opinião, ela sempre será a Rainha do Gelo! Mesmo que ela não tenha ganhado ouro desta vez, sua performance ainda foi notável. É uma pena que ela vá se aposentar depois destes Jogos de Inverno.",
+    "tokens": [
+      "A:",
+      "In",
+      "meinen",
+      "Augen",
+      "wird",
+      "sie",
+      "immer",
+      "die",
+      "Königin",
+      "des",
+      "Eises",
+      "sein!",
+      "Auch",
+      "wenn",
+      "sie",
+      "diesmal",
+      "kein",
+      "Gold",
+      "geholt",
+      "hat,",
+      "war",
+      "ihre",
+      "Leistung",
+      "immer",
+      "noch",
+      "bemerkenswert.",
+      "Schade,",
+      "dass",
+      "sie",
+      "nach",
+      "diesen",
+      "Winterspielen",
+      "zurücktreten",
+      "wird."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In meinen Augen",
+        "pinyin": "",
+        "meaning": "Na minha opinião (literalmente: 'nos meus olhos')"
+      },
+      {
+        "id": 2,
+        "word": "Königin des Eises",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 3,
+        "word": "diesmal",
+        "pinyin": "",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 4,
+        "word": "geholt",
+        "pinyin": "",
+        "meaning": "pago/trazido (aqui: 'ganho')"
+      },
+      {
+        "id": 5,
+        "word": "Leistung",
+        "pinyin": "",
+        "meaning": "desempenho, performance"
+      },
+      {
+        "id": 6,
+        "word": "bemerkenswert",
+        "pinyin": "",
+        "meaning": "notável"
+      },
+      {
+        "id": 7,
+        "word": "Schade",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 8,
+        "word": "zurücktreten",
+        "pinyin": "",
+        "meaning": "se aposentar, renunciar"
+      }
+    ],
+    "id": "local-1772292648870-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Die diesjährige Siegerin im Einzellauf der Frauen, Sotnikova, ist auch sehr gut. Außerdem ist sie erst 17 Jahre alt.",
+    "pinyin": "",
+    "translation": "B: A vencedora deste ano na patinação individual feminina, Sotnikova, também é muito boa. Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "B:",
+      "Die",
+      "diesjährige",
+      "Siegerin",
+      "im",
+      "Einzellauf",
+      "der",
+      "Frauen,",
+      "Sotnikova,",
+      "ist",
+      "auch",
+      "sehr",
+      "gut.",
+      "Außerdem",
+      "ist",
+      "sie",
+      "erst",
+      "17",
+      "Jahre",
+      "alt."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "diesjährige",
+        "pinyin": "",
+        "meaning": "deste ano"
+      },
+      {
+        "id": 2,
+        "word": "Siegerin",
+        "pinyin": "",
+        "meaning": "vencedora"
+      },
+      {
+        "id": 3,
+        "word": "Einzellauf der Frauen",
+        "pinyin": "",
+        "meaning": "patinação individual feminina"
+      },
+      {
+        "id": 4,
+        "word": "Außerdem",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 5,
+        "word": "erst",
+        "pinyin": "",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 6,
+        "word": "Jahre alt",
+        "pinyin": "",
+        "meaning": "anos de idade"
+      }
+    ],
+    "id": "local-1772292648870-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja. Eiskunstlauf ist wirklich eine elegante Sportart. Glaubst du, ich könnte das auch noch lernen?",
+    "pinyin": "",
+    "translation": "A: Sim. Patinação artística é realmente um esporte elegante. Você acha que eu ainda poderia aprender isso?",
+    "tokens": [
+      "A:",
+      "Ja.",
+      "Eiskunstlauf",
+      "ist",
+      "wirklich",
+      "eine",
+      "elegante",
+      "Sportart.",
+      "Glaubst",
+      "du,",
+      "ich",
+      "könnte",
+      "das",
+      "auch",
+      "noch",
+      "lernen?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eiskunstlauf",
+        "pinyin": "",
+        "meaning": "Patinação artística"
+      },
+      {
+        "id": 2,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "elegante",
+        "pinyin": "",
+        "meaning": "elegante"
+      },
+      {
+        "id": 4,
+        "word": "Sportart",
+        "pinyin": "",
+        "meaning": "modalidade esportiva"
+      },
+      {
+        "id": 5,
+        "word": "Glaubst du",
+        "pinyin": "",
+        "meaning": "Você acredita/acha (informal)"
+      },
+      {
+        "id": 6,
+        "word": "lernen",
+        "pinyin": "",
+        "meaning": "aprender"
+      }
+    ],
+    "id": "local-1772292648870-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Du? Vergiss es. Siehst du diese Sportlerinnen im Fernsehen? Die haben alle schon als Kinder angefangen. Wenn du jetzt beginnen würdest, wäre das viel zu spät.",
+    "pinyin": "",
+    "translation": "B: Você? Esqueça. Você vê essas atletas na televisão? Elas todas já começaram quando crianças. Se você começasse agora, seria muito tarde.",
+    "tokens": [
+      "B:",
+      "Du?",
+      "Vergiss",
+      "es.",
+      "Siehst",
+      "du",
+      "diese",
+      "Sportlerinnen",
+      "im",
+      "Fernsehen?",
+      "Die",
+      "haben",
+      "alle",
+      "schon",
+      "als",
+      "Kinder",
+      "angefangen.",
+      "Wenn",
+      "du",
+      "jetzt",
+      "beginnen",
+      "würdest,",
+      "wäre",
+      "das",
+      "viel",
+      "zu",
+      "spät."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vergiss es",
+        "pinyin": "",
+        "meaning": "Esqueça"
+      },
+      {
+        "id": 2,
+        "word": "Siehst du",
+        "pinyin": "",
+        "meaning": "Você vê (informal do verbo 'sehen')"
+      },
+      {
+        "id": 3,
+        "word": "Sportlerinnen",
+        "pinyin": "",
+        "meaning": "atletas (feminino)"
+      },
+      {
+        "id": 4,
+        "word": "Fernsehen",
+        "pinyin": "",
+        "meaning": "televisão"
+      },
+      {
+        "id": 5,
+        "word": "angefangen",
+        "pinyin": "",
+        "meaning": "começado (particípio passado de 'anfangen')"
+      },
+      {
+        "id": 6,
+        "word": "als Kinder",
+        "pinyin": "",
+        "meaning": "quando crianças"
+      },
+      {
+        "id": 7,
+        "word": "beginnen",
+        "pinyin": "",
+        "meaning": "começar"
+      },
+      {
+        "id": 8,
+        "word": "viel zu spät",
+        "pinyin": "",
+        "meaning": "muito tarde"
+      }
+    ],
+    "id": "local-1772292648870-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich will ja nicht an Wettkämpfen teilnehmen. Ich möchte es nur so zum Spaß machen.",
+    "pinyin": "",
+    "translation": "A: Eu não quero participar de competições. Eu só quero fazer isso por diversão.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "will",
+      "ja",
+      "nicht",
+      "an",
+      "Wettkämpfen",
+      "teilnehmen.",
+      "Ich",
+      "möchte",
+      "es",
+      "nur",
+      "so",
+      "zum",
+      "Spaß",
+      "machen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wettkämpfen",
+        "pinyin": "",
+        "meaning": "competições"
+      },
+      {
+        "id": 2,
+        "word": "teilnehmen",
+        "pinyin": "",
+        "meaning": "participar"
+      },
+      {
+        "id": 3,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria"
+      },
+      {
+        "id": 4,
+        "word": "zum Spaß",
+        "pinyin": "",
+        "meaning": "por diversão"
+      },
+      {
+        "id": 5,
+        "word": "machen",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292648870-8",
+    "language": "Alemão"
+  }
+]

@@ -1,0 +1,640 @@
+[
+  {
+    "chinese": "A: Xiao Wang, ¿revisaste mi correo electrónico? ¿Hay alguna pregunta?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, você verificou meu e-mail? Há alguma pergunta?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang,",
+      "¿revisaste",
+      "mi",
+      "correo",
+      "electrónico?",
+      "¿Hay",
+      "alguna",
+      "pregunta?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "revisaste",
+        "pinyin": "",
+        "meaning": "você revisou/verificou"
+      },
+      {
+        "id": 2,
+        "word": "correo electrónico",
+        "pinyin": "",
+        "meaning": "e-mail"
+      },
+      {
+        "id": 3,
+        "word": "Hay",
+        "pinyin": "",
+        "meaning": "Há"
+      },
+      {
+        "id": 4,
+        "word": "pregunta",
+        "pinyin": "",
+        "meaning": "pergunta"
+      }
+    ],
+    "id": "local-1772301011125-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Revisé ese correo electrónico. Fue muy detallado. Básicamente entiendo de qué se trata el trabajo.",
+    "pinyin": "",
+    "translation": "B: Verifiquei esse e-mail. Foi muito detalhado. Basicamente entendo do que se trata o trabalho.",
+    "tokens": [
+      "B:",
+      "Revisé",
+      "ese",
+      "correo",
+      "electrónico.",
+      "Fue",
+      "muy",
+      "detallado.",
+      "Básicamente",
+      "entiendo",
+      "de",
+      "qué",
+      "se",
+      "trata",
+      "el",
+      "trabajo."
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "Revisé",
+        "pinyin": "",
+        "meaning": "eu verifiquei/revisei"
+      },
+      {
+        "id": 6,
+        "word": "detallado",
+        "pinyin": "",
+        "meaning": "detalhado"
+      },
+      {
+        "id": 7,
+        "word": "Básicamente",
+        "pinyin": "",
+        "meaning": "Basicamente"
+      },
+      {
+        "id": 8,
+        "word": "entiendo",
+        "pinyin": "",
+        "meaning": "eu entendo"
+      },
+      {
+        "id": 9,
+        "word": "se trata de",
+        "pinyin": "",
+        "meaning": "se trata de"
+      },
+      {
+        "id": 10,
+        "word": "trabajo",
+        "pinyin": "",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772301011125-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Aquí tengo una lista de las tareas rutinarias. Enumera mi horario de trabajo de lunes a viernes. Puedes consultarla para organizar tu futuro trabajo.",
+    "pinyin": "",
+    "translation": "A: Aqui tenho uma lista das tarefas rotineiras. Ela lista meu horário de trabalho de segunda a sexta-feira. Você pode consultá-la para organizar seu futuro trabalho.",
+    "tokens": [
+      "A:",
+      "Aquí",
+      "tengo",
+      "una",
+      "lista",
+      "de",
+      "las",
+      "tareas",
+      "rutinarias.",
+      "Enumera",
+      "mi",
+      "horario",
+      "de",
+      "trabajo",
+      "de",
+      "lunes",
+      "a",
+      "viernes.",
+      "Puedes",
+      "consultarla",
+      "para",
+      "organizar",
+      "tu",
+      "futuro",
+      "trabajo."
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "lista",
+        "pinyin": "",
+        "meaning": "lista"
+      },
+      {
+        "id": 12,
+        "word": "tareas rutinarias",
+        "pinyin": "",
+        "meaning": "tarefas rotineiras"
+      },
+      {
+        "id": 13,
+        "word": "Enumera",
+        "pinyin": "",
+        "meaning": "Enumera/Lista"
+      },
+      {
+        "id": 14,
+        "word": "horario de trabajo",
+        "pinyin": "",
+        "meaning": "horário de trabalho"
+      },
+      {
+        "id": 15,
+        "word": "lunes a viernes",
+        "pinyin": "",
+        "meaning": "segunda a sexta-feira"
+      },
+      {
+        "id": 16,
+        "word": "consultarla",
+        "pinyin": "",
+        "meaning": "consultá-la"
+      },
+      {
+        "id": 17,
+        "word": "organizar",
+        "pinyin": "",
+        "meaning": "organizar"
+      },
+      {
+        "id": 18,
+        "word": "futuro",
+        "pinyin": "",
+        "meaning": "futuro"
+      }
+    ],
+    "id": "local-1772301011125-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Gracias. Ah sí, ayer recibí un correo electrónico de un cliente que tiene que ver con ventas. ¿Cómo lo manejo?",
+    "pinyin": "",
+    "translation": "B: Obrigado. Ah sim, ontem recebi um e-mail de um cliente que tem a ver com vendas. Como eu lido com isso?",
+    "tokens": [
+      "B:",
+      "Gracias.",
+      "Ah",
+      "sí,",
+      "ayer",
+      "recibí",
+      "un",
+      "correo",
+      "electrónico",
+      "de",
+      "un",
+      "cliente",
+      "que",
+      "tiene",
+      "que",
+      "ver",
+      "con",
+      "ventas.",
+      "¿Cómo",
+      "lo",
+      "manejo?"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Gracias",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 20,
+        "word": "ayer",
+        "pinyin": "",
+        "meaning": "ontem"
+      },
+      {
+        "id": 21,
+        "word": "recibí",
+        "pinyin": "",
+        "meaning": "eu recebi"
+      },
+      {
+        "id": 22,
+        "word": "cliente",
+        "pinyin": "",
+        "meaning": "cliente"
+      },
+      {
+        "id": 23,
+        "word": "tiene que ver con",
+        "pinyin": "",
+        "meaning": "tem a ver com"
+      },
+      {
+        "id": 24,
+        "word": "ventas",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 25,
+        "word": "manejo",
+        "pinyin": "",
+        "meaning": "eu lido/gerencio"
+      }
+    ],
+    "id": "local-1772301011125-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Nosotros no estamos a cargo de ventas, así que puedes pasárselo directamente a Li Ming. Su dirección de correo electrónico está en la lista de información de contacto de los empleados.",
+    "pinyin": "",
+    "translation": "A: Nós não somos responsáveis por vendas, então você pode passá-lo diretamente para Li Ming. O endereço de e-mail dele está na lista de informações de contato dos funcionários.",
+    "tokens": [
+      "A:",
+      "Nosotros",
+      "no",
+      "estamos",
+      "a",
+      "cargo",
+      "de",
+      "ventas,",
+      "así",
+      "que",
+      "puedes",
+      "pasárselo",
+      "directamente",
+      "a",
+      "Li",
+      "Ming.",
+      "Su",
+      "dirección",
+      "de",
+      "correo",
+      "electrónico",
+      "está",
+      "en",
+      "la",
+      "lista",
+      "de",
+      "información",
+      "de",
+      "contacto",
+      "de",
+      "los",
+      "empleados."
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "a cargo de",
+        "pinyin": "",
+        "meaning": "responsável por"
+      },
+      {
+        "id": 27,
+        "word": "pasárselo",
+        "pinyin": "",
+        "meaning": "passá-lo para ele/ela"
+      },
+      {
+        "id": 28,
+        "word": "directamente",
+        "pinyin": "",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 29,
+        "word": "dirección de correo electrónico",
+        "pinyin": "",
+        "meaning": "endereço de e-mail"
+      },
+      {
+        "id": 30,
+        "word": "información de contacto",
+        "pinyin": "",
+        "meaning": "informações de contato"
+      },
+      {
+        "id": 31,
+        "word": "empleados",
+        "pinyin": "",
+        "meaning": "funcionários"
+      }
+    ],
+    "id": "local-1772301011125-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué hay de las preguntas técnicas?",
+    "pinyin": "",
+    "translation": "B: E quanto às perguntas técnicas?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "hay",
+      "de",
+      "las",
+      "preguntas",
+      "técnicas?"
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "Qué hay de",
+        "pinyin": "",
+        "meaning": "E quanto a"
+      },
+      {
+        "id": 33,
+        "word": "técnicas",
+        "pinyin": "",
+        "meaning": "técnicas"
+      }
+    ],
+    "id": "local-1772301011125-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Huang Jia está a cargo del departamento técnico. Está bien pasárselo a él.",
+    "pinyin": "",
+    "translation": "A: Huang Jia é responsável pelo departamento técnico. Está tudo bem passá-lo para ele.",
+    "tokens": [
+      "A:",
+      "Huang",
+      "Jia",
+      "está",
+      "a",
+      "cargo",
+      "del",
+      "departamento",
+      "técnico.",
+      "Está",
+      "bien",
+      "pasárselo",
+      "a",
+      "él."
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "departamento técnico",
+        "pinyin": "",
+        "meaning": "departamento técnico"
+      },
+      {
+        "id": 35,
+        "word": "Está bien",
+        "pinyin": "",
+        "meaning": "Está tudo bem"
+      }
+    ],
+    "id": "local-1772301011125-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pero no los conozco.",
+    "pinyin": "",
+    "translation": "B: Mas eu não os conheço.",
+    "tokens": [
+      "B:",
+      "Pero",
+      "no",
+      "los",
+      "conozco."
+    ],
+    "keywords": [
+      {
+        "id": 36,
+        "word": "conozco",
+        "pinyin": "",
+        "meaning": "eu conheço"
+      }
+    ],
+    "id": "local-1772301011125-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No te preocupes, ya envié un correo electrónico a los compañeros de trabajo esta mañana. Esta tarde organizaré otra reunión de traspaso para presentarte cara a cara a todos.",
+    "pinyin": "",
+    "translation": "A: Não se preocupe, já enviei um e-mail aos colegas de trabalho esta manhã. Esta tarde organizarei outra reunião de transição para apresentá-lo pessoalmente a todos.",
+    "tokens": [
+      "A:",
+      "No",
+      "te",
+      "preocupes,",
+      "ya",
+      "envié",
+      "un",
+      "correo",
+      "electrónico",
+      "a",
+      "los",
+      "compañeros",
+      "de",
+      "trabajo",
+      "esta",
+      "mañana.",
+      "Esta",
+      "tarde",
+      "organizaré",
+      "otra",
+      "reunión",
+      "de",
+      "traspaso",
+      "para",
+      "presentarte",
+      "cara",
+      "a",
+      "cara",
+      "a",
+      "todos."
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "No te preocupes",
+        "pinyin": "",
+        "meaning": "Não se preocupe"
+      },
+      {
+        "id": 38,
+        "word": "envié",
+        "pinyin": "",
+        "meaning": "eu enviei"
+      },
+      {
+        "id": 39,
+        "word": "compañeros de trabajo",
+        "pinyin": "",
+        "meaning": "colegas de trabalho"
+      },
+      {
+        "id": 40,
+        "word": "esta mañana",
+        "pinyin": "",
+        "meaning": "esta manhã"
+      },
+      {
+        "id": 41,
+        "word": "esta tarde",
+        "pinyin": "",
+        "meaning": "esta tarde"
+      },
+      {
+        "id": 42,
+        "word": "organizaré",
+        "pinyin": "",
+        "meaning": "eu organizarei"
+      },
+      {
+        "id": 43,
+        "word": "reunión de traspaso",
+        "pinyin": "",
+        "meaning": "reunião de transição/passagem de bastão"
+      },
+      {
+        "id": 44,
+        "word": "presentarte",
+        "pinyin": "",
+        "meaning": "apresentar você"
+      },
+      {
+        "id": 45,
+        "word": "cara a cara",
+        "pinyin": "",
+        "meaning": "pessoalmente/cara a cara"
+      }
+    ],
+    "id": "local-1772301011125-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Muchas gracias.",
+    "pinyin": "",
+    "translation": "B: Muito obrigado.",
+    "tokens": [
+      "B:",
+      "Muchas",
+      "gracias."
+    ],
+    "keywords": [
+      {
+        "id": 46,
+        "word": "Muchas gracias",
+        "pinyin": "",
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772301011125-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Es mi responsabilidad. Ya puse todos los documentos de traspaso en el archivo \"Compartido\". Si aún tienes preguntas, también puedes contactarme por teléfono.",
+    "pinyin": "",
+    "translation": "A: É minha responsabilidade. Já coloquei todos os documentos de transição na pasta \"Compartilhada\". Se ainda tiver perguntas, você também pode me contatar por telefone.",
+    "tokens": [
+      "A:",
+      "Es",
+      "mi",
+      "responsabilidad.",
+      "Ya",
+      "puse",
+      "todos",
+      "los",
+      "documentos",
+      "de",
+      "traspaso",
+      "en",
+      "el",
+      "archivo",
+      "\"Compartido\".",
+      "Si",
+      "aún",
+      "tienes",
+      "preguntas,",
+      "también",
+      "puedes",
+      "contactarme",
+      "por",
+      "teléfono."
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "responsabilidad",
+        "pinyin": "",
+        "meaning": "responsabilidade"
+      },
+      {
+        "id": 48,
+        "word": "puse",
+        "pinyin": "",
+        "meaning": "eu coloquei"
+      },
+      {
+        "id": 49,
+        "word": "documentos de traspaso",
+        "pinyin": "",
+        "meaning": "documentos de transição"
+      },
+      {
+        "id": 50,
+        "word": "archivo",
+        "pinyin": "",
+        "meaning": "arquivo/pasta"
+      },
+      {
+        "id": 51,
+        "word": "Compartido",
+        "pinyin": "",
+        "meaning": "Compartilhado"
+      },
+      {
+        "id": 52,
+        "word": "aún",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 53,
+        "word": "tienes",
+        "pinyin": "",
+        "meaning": "você tem"
+      },
+      {
+        "id": 54,
+        "word": "contactarme",
+        "pinyin": "",
+        "meaning": "me contatar"
+      },
+      {
+        "id": 55,
+        "word": "por teléfono",
+        "pinyin": "",
+        "meaning": "por telefone"
+      }
+    ],
+    "id": "local-1772301011125-10",
+    "language": "Espanhol"
+  }
+]

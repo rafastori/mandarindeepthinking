@@ -1,0 +1,684 @@
+[
+  {
+    "chinese": "丽丽，你下个星期天有空吗？能来我家教我做蛋糕吗？",
+    "pinyin": "Lìlì, nǐ xiàgè xīngqītiān yǒu kòng ma? Néng lái wǒ jiā jiāo wǒ zuò dàngāo ma?",
+    "translation": "Lili, você está livre no próximo domingo? Pode vir à minha casa me ensinar a fazer bolo?",
+    "tokens": [
+      "丽丽",
+      "，",
+      "你",
+      "下个",
+      "星期天",
+      "有空",
+      "吗",
+      "？",
+      "能",
+      "来",
+      "我",
+      "家",
+      "教",
+      "我",
+      "做",
+      "蛋糕",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "丽丽",
+        "pinyin": "Lìlì",
+        "meaning": "Lili (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "下个",
+        "pinyin": "xiàgè",
+        "meaning": "próximo"
+      },
+      {
+        "id": 3,
+        "word": "星期天",
+        "pinyin": "xīngqītiān",
+        "meaning": "domingo"
+      },
+      {
+        "id": 4,
+        "word": "有空",
+        "pinyin": "yǒukòng",
+        "meaning": "ter tempo livre, estar livre"
+      },
+      {
+        "id": 5,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 6,
+        "word": "我家",
+        "pinyin": "wǒjiā",
+        "meaning": "minha casa"
+      },
+      {
+        "id": 7,
+        "word": "教",
+        "pinyin": "jiāo",
+        "meaning": "ensinar"
+      },
+      {
+        "id": 8,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer"
+      },
+      {
+        "id": 9,
+        "word": "蛋糕",
+        "pinyin": "dàngāo",
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296661906-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有空。你突然想做蛋糕了？",
+    "pinyin": "Yǒu kòng. Nǐ túrán xiǎng zuò dàngāo le?",
+    "translation": "Estou livre. Você de repente quis fazer bolo?",
+    "tokens": [
+      "有空",
+      "。",
+      "你",
+      "突然",
+      "想",
+      "做",
+      "蛋糕",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有空",
+        "pinyin": "yǒukòng",
+        "meaning": "ter tempo livre, estar livre"
+      },
+      {
+        "id": 2,
+        "word": "突然",
+        "pinyin": "túrán",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar em"
+      },
+      {
+        "id": 4,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "蛋糕",
+        "pinyin": "dàngāo",
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296661906-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "下个月是我男朋友生日，我想给他一个惊喜。",
+    "pinyin": "Xiàgè yuè shì wǒ nán péngyǒu shēngrì, wǒ xiǎng gěi tā yīgè jīngxǐ.",
+    "translation": "Mês que vem é o aniversário do meu namorado, eu quero dar a ele uma surpresa.",
+    "tokens": [
+      "下个月",
+      "是",
+      "我",
+      "男朋友",
+      "生日",
+      "，",
+      "我",
+      "想",
+      "给",
+      "他",
+      "一个",
+      "惊喜",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "下个月",
+        "pinyin": "xiàgè yuè",
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "男朋友",
+        "pinyin": "nán péngyǒu",
+        "meaning": "namorado"
+      },
+      {
+        "id": 3,
+        "word": "生日",
+        "pinyin": "shēngrì",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar em"
+      },
+      {
+        "id": 5,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "dar"
+      },
+      {
+        "id": 6,
+        "word": "惊喜",
+        "pinyin": "jīngxǐ",
+        "meaning": "surpresa"
+      }
+    ],
+    "id": "local-1772296661906-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你想做什么样的蛋糕？",
+    "pinyin": "Nǐ xiǎng zuò shénmeyàng de dàngāo?",
+    "translation": "Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "你",
+      "想",
+      "做",
+      "什么样",
+      "的",
+      "蛋糕",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar em"
+      },
+      {
+        "id": 2,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "什么样",
+        "pinyin": "shénmeyàng",
+        "meaning": "que tipo, que espécie"
+      },
+      {
+        "id": 4,
+        "word": "蛋糕",
+        "pinyin": "dàngāo",
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296661906-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我想做一个简单的。",
+    "pinyin": "Wǒ xiǎng zuò yīgè jiǎndān de.",
+    "translation": "Eu quero fazer um simples.",
+    "tokens": [
+      "我",
+      "想",
+      "做",
+      "一个",
+      "简单",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar em"
+      },
+      {
+        "id": 2,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "简单",
+        "pinyin": "jiǎndān",
+        "meaning": "simples"
+      }
+    ],
+    "id": "local-1772296661906-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那我们做戚风蛋糕吧。这种蛋糕很松软。你可以抹上果酱吃。它也可以当生日蛋糕，是很基础的一种蛋糕。",
+    "pinyin": "Nà wǒmen zuò qīfēng dàngāo ba. Zhè zhǒng dàngāo hěn sōngruǎn. Nǐ kěyǐ mǒ shàng guǒjiàng chī. Tā yě kěyǐ dāng shēngrì dàngāo, shì hěn jīchǔ de yī zhǒng dàngāo.",
+    "translation": "Então vamos fazer bolo chiffon. Este tipo de bolo é muito fofo/macio. Você pode passar geleia para comer. Ele também pode ser um bolo de aniversário, é um tipo de bolo bem básico.",
+    "tokens": [
+      "那",
+      "我们",
+      "做",
+      "戚风",
+      "蛋糕",
+      "吧",
+      "。",
+      "这种",
+      "蛋糕",
+      "很",
+      "松软",
+      "。",
+      "你",
+      "可以",
+      "抹",
+      "上",
+      "果酱",
+      "吃",
+      "。",
+      "它",
+      "也",
+      "可以",
+      "当",
+      "生日",
+      "蛋糕",
+      "，",
+      "是",
+      "很",
+      "基础",
+      "的",
+      "一种",
+      "蛋糕",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "戚风蛋糕",
+        "pinyin": "qīfēng dàngāo",
+        "meaning": "bolo chiffon"
+      },
+      {
+        "id": 2,
+        "word": "这种",
+        "pinyin": "zhè zhǒng",
+        "meaning": "este tipo"
+      },
+      {
+        "id": 3,
+        "word": "蛋糕",
+        "pinyin": "dàngāo",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "松软",
+        "pinyin": "sōngruǎn",
+        "meaning": "fofo, macio"
+      },
+      {
+        "id": 5,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 6,
+        "word": "抹上",
+        "pinyin": "mǒ shàng",
+        "meaning": "passar, espalhar"
+      },
+      {
+        "id": 7,
+        "word": "果酱",
+        "pinyin": "guǒjiàng",
+        "meaning": "geleia"
+      },
+      {
+        "id": 8,
+        "word": "吃",
+        "pinyin": "chī",
+        "meaning": "comer"
+      },
+      {
+        "id": 9,
+        "word": "当",
+        "pinyin": "dāng",
+        "meaning": "servir como, ser"
+      },
+      {
+        "id": 10,
+        "word": "生日蛋糕",
+        "pinyin": "shēngrì dàngāo",
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 11,
+        "word": "基础",
+        "pinyin": "jīchǔ",
+        "meaning": "básico, fundamental"
+      },
+      {
+        "id": 12,
+        "word": "一种",
+        "pinyin": "yī zhǒng",
+        "meaning": "um tipo de"
+      }
+    ],
+    "id": "local-1772296661906-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的好的。我需要准备什么？",
+    "pinyin": "Hǎo de hǎo de. Wǒ xūyào zhǔnbèi shénme?",
+    "translation": "Ok, ok. O que eu preciso preparar?",
+    "tokens": [
+      "好",
+      "的",
+      "好",
+      "的",
+      "。",
+      "我",
+      "需要",
+      "准备",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "准备",
+        "pinyin": "zhǔnbèi",
+        "meaning": "preparar"
+      },
+      {
+        "id": 4,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772296661906-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你需要买食材：低筋面粉100克，鸡蛋5个，油40克，细砂糖70克和牛奶40克。",
+    "pinyin": "Nǐ xūyào mǎi shícái: Dījīn miànfěn yī bǎi kè, jīdàn wǔ gè, yóu sìshí kè, xì shātáng qīshí kè hé niúnǎi sìshí kè.",
+    "translation": "Você precisa comprar ingredientes: 100 gramas de farinha de trigo com baixo teor de glúten, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar refinado e 40 gramas de leite.",
+    "tokens": [
+      "你",
+      "需要",
+      "买",
+      "食材",
+      "：",
+      "低筋面粉",
+      "100",
+      "克",
+      "，",
+      "鸡蛋",
+      "5",
+      "个",
+      "，",
+      "油",
+      "40",
+      "克",
+      "，",
+      "细砂糖",
+      "70",
+      "克",
+      "和",
+      "牛奶",
+      "40",
+      "克",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "食材",
+        "pinyin": "shícái",
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 4,
+        "word": "低筋面粉",
+        "pinyin": "dījīn miànfěn",
+        "meaning": "farinha de trigo com baixo teor de glúten"
+      },
+      {
+        "id": 5,
+        "word": "克",
+        "pinyin": "kè",
+        "meaning": "grama"
+      },
+      {
+        "id": 6,
+        "word": "鸡蛋",
+        "pinyin": "jīdàn",
+        "meaning": "ovo"
+      },
+      {
+        "id": 7,
+        "word": "个",
+        "pinyin": "gè",
+        "meaning": "unidade (classificador)"
+      },
+      {
+        "id": 8,
+        "word": "油",
+        "pinyin": "yóu",
+        "meaning": "óleo"
+      },
+      {
+        "id": 9,
+        "word": "细砂糖",
+        "pinyin": "xì shātáng",
+        "meaning": "açúcar refinado"
+      },
+      {
+        "id": 10,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 11,
+        "word": "牛奶",
+        "pinyin": "niúnǎi",
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296661906-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "需要什么工具？",
+    "pinyin": "Xūyào shénme gōngjù?",
+    "translation": "Quais ferramentas são necessárias?",
+    "tokens": [
+      "需要",
+      "什么",
+      "工具",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "工具",
+        "pinyin": "gōngjù",
+        "meaning": "ferramenta"
+      }
+    ],
+    "id": "local-1772296661906-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "打蛋器，烤箱和一个8寸的蛋糕模具。",
+    "pinyin": "Dǎdànqì, kǎoxiāng hé yīgè bā cùn de dàngāo mújù.",
+    "translation": "Batedor de ovos, forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "打蛋器",
+      "，",
+      "烤箱",
+      "和",
+      "一个",
+      "8寸",
+      "的",
+      "蛋糕",
+      "模具",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打蛋器",
+        "pinyin": "dǎdànqì",
+        "meaning": "batedor de ovos"
+      },
+      {
+        "id": 2,
+        "word": "烤箱",
+        "pinyin": "kǎoxiāng",
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 4,
+        "word": "8寸",
+        "pinyin": "bā cùn",
+        "meaning": "8 polegadas"
+      },
+      {
+        "id": 5,
+        "word": "蛋糕模具",
+        "pinyin": "dàngāo mújù",
+        "meaning": "forma de bolo"
+      }
+    ],
+    "id": "local-1772296661906-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的。我下班后去买这些东西。",
+    "pinyin": "Hǎo de. Wǒ xiàbān hòu qù mǎi zhèxiē dōngxi.",
+    "translation": "Ok. Eu irei comprar essas coisas depois do trabalho.",
+    "tokens": [
+      "好",
+      "的",
+      "。",
+      "我",
+      "下班",
+      "后",
+      "去",
+      "买",
+      "这些",
+      "东西",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "sair do trabalho, terminar o expediente"
+      },
+      {
+        "id": 3,
+        "word": "后",
+        "pinyin": "hòu",
+        "meaning": "depois, após"
+      },
+      {
+        "id": 4,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 5,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "estas/estes"
+      },
+      {
+        "id": 7,
+        "word": "东西",
+        "pinyin": "dōngxi",
+        "meaning": "coisa(s)"
+      }
+    ],
+    "id": "local-1772296661906-10",
+    "language": "Chinês"
+  }
+]

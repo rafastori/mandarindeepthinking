@@ -1,0 +1,838 @@
+[
+  {
+    "chinese": "A: Es la temida clase de matemáticas otra vez.",
+    "pinyin": null,
+    "translation": "A: É a temida aula de matemática de novo.",
+    "tokens": [
+      "Es",
+      "la",
+      "temida",
+      "clase",
+      "de",
+      "matemáticas",
+      "otra",
+      "vez",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "es",
+        "pinyin": "",
+        "meaning": "é (do verbo ser)"
+      },
+      {
+        "id": 2,
+        "word": "temida",
+        "pinyin": "",
+        "meaning": "temida"
+      },
+      {
+        "id": 3,
+        "word": "clase",
+        "pinyin": "",
+        "meaning": "aula"
+      },
+      {
+        "id": 4,
+        "word": "matemáticas",
+        "pinyin": "",
+        "meaning": "matemática"
+      },
+      {
+        "id": 5,
+        "word": "otra vez",
+        "pinyin": "",
+        "meaning": "de novo, novamente"
+      }
+    ],
+    "id": "local-1772300013611-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Agh, Wang Xiaoming, después de salir de la escuela vamos a jugar fútbol.",
+    "pinyin": null,
+    "translation": "Ah, Wang Xiaoming, depois de sair da escola vamos jogar futebol.",
+    "tokens": [
+      "Agh",
+      ",",
+      "Wang",
+      "Xiaoming",
+      ",",
+      "después",
+      "de",
+      "salir",
+      "de",
+      "la",
+      "escuela",
+      "vamos",
+      "a",
+      "jugar",
+      "fútbol",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "después de",
+        "pinyin": "",
+        "meaning": "depois de"
+      },
+      {
+        "id": 2,
+        "word": "salir",
+        "pinyin": "",
+        "meaning": "sair"
+      },
+      {
+        "id": 3,
+        "word": "escuela",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 4,
+        "word": "vamos a jugar",
+        "pinyin": "",
+        "meaning": "vamos jogar"
+      },
+      {
+        "id": 5,
+        "word": "fútbol",
+        "pinyin": "",
+        "meaning": "futebol"
+      }
+    ],
+    "id": "local-1772300013611-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Li Jia, ¿qué dices?",
+    "pinyin": null,
+    "translation": "B: Li Jia, o que você está dizendo?",
+    "tokens": [
+      "Li",
+      "Jia",
+      ",",
+      "¿qué",
+      "dices",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qué dices",
+        "pinyin": "",
+        "meaning": "o que você diz/está dizendo?"
+      }
+    ],
+    "id": "local-1772300013611-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Ponte de pie y explícanos qué son las fracciones.",
+    "pinyin": null,
+    "translation": "Levante-se e nos explique o que são frações.",
+    "tokens": [
+      "Ponte",
+      "de",
+      "pie",
+      "y",
+      "explícanos",
+      "qué",
+      "son",
+      "las",
+      "fracciones",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ponte de pie",
+        "pinyin": "",
+        "meaning": "levante-se (imperativo de poner + te)"
+      },
+      {
+        "id": 2,
+        "word": "explícanos",
+        "pinyin": "",
+        "meaning": "explique-nos (imperativo de explicar + nos)"
+      },
+      {
+        "id": 3,
+        "word": "fracciones",
+        "pinyin": "",
+        "meaning": "frações"
+      }
+    ],
+    "id": "local-1772300013611-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Las fracciones muestran cuántas partes es un número de otro.",
+    "pinyin": null,
+    "translation": "A: As frações mostram quantas partes um número é de outro.",
+    "tokens": [
+      "Las",
+      "fracciones",
+      "muestran",
+      "cuántas",
+      "partes",
+      "es",
+      "un",
+      "número",
+      "de",
+      "otro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fracciones",
+        "pinyin": "",
+        "meaning": "frações"
+      },
+      {
+        "id": 2,
+        "word": "muestran",
+        "pinyin": "",
+        "meaning": "mostram (do verbo mostrar)"
+      },
+      {
+        "id": 3,
+        "word": "cuántas",
+        "pinyin": "",
+        "meaning": "quantas"
+      },
+      {
+        "id": 4,
+        "word": "partes",
+        "pinyin": "",
+        "meaning": "partes"
+      },
+      {
+        "id": 5,
+        "word": "número",
+        "pinyin": "",
+        "meaning": "número"
+      }
+    ],
+    "id": "local-1772300013611-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Puedes dar un ejemplo?",
+    "pinyin": null,
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "¿Puedes",
+      "dar",
+      "un",
+      "ejemplo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "puedes",
+        "pinyin": "",
+        "meaning": "você pode (do verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "dar",
+        "pinyin": "",
+        "meaning": "dar"
+      },
+      {
+        "id": 3,
+        "word": "ejemplo",
+        "pinyin": "",
+        "meaning": "exemplo"
+      }
+    ],
+    "id": "local-1772300013611-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Por ejemplo, si tomo una manzana de tres manzanas, eso es un tercio.",
+    "pinyin": null,
+    "translation": "A: Por exemplo, se eu pegar uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "Por",
+      "ejemplo",
+      ",",
+      "si",
+      "tomo",
+      "una",
+      "manzana",
+      "de",
+      "tres",
+      "manzanas",
+      ",",
+      "eso",
+      "es",
+      "un",
+      "tercio",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "por ejemplo",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 2,
+        "word": "tomo",
+        "pinyin": "",
+        "meaning": "eu pego/tomo (do verbo tomar)"
+      },
+      {
+        "id": 3,
+        "word": "manzana",
+        "pinyin": "",
+        "meaning": "maçã"
+      },
+      {
+        "id": 4,
+        "word": "tres",
+        "pinyin": "",
+        "meaning": "três"
+      },
+      {
+        "id": 5,
+        "word": "tercio",
+        "pinyin": "",
+        "meaning": "terço"
+      }
+    ],
+    "id": "local-1772300013611-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Bien, ¿entonces cómo lo escribimos?",
+    "pinyin": null,
+    "translation": "B: Certo, então como escrevemos isso?",
+    "tokens": [
+      "Bien",
+      ",",
+      "¿entonces",
+      "cómo",
+      "lo",
+      "escribimos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bien",
+        "pinyin": "",
+        "meaning": "bem, certo"
+      },
+      {
+        "id": 2,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "cómo",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "escribimos",
+        "pinyin": "",
+        "meaning": "escrevemos (do verbo escribir)"
+      }
+    ],
+    "id": "local-1772300013611-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Primero escribe la línea de fracción.",
+    "pinyin": null,
+    "translation": "A: Primeiro escreva a linha da fração.",
+    "tokens": [
+      "Primero",
+      "escribe",
+      "la",
+      "línea",
+      "de",
+      "fracción",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "primero",
+        "pinyin": "",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 2,
+        "word": "escribe",
+        "pinyin": "",
+        "meaning": "escreva (imperativo de escribir)"
+      },
+      {
+        "id": 3,
+        "word": "línea",
+        "pinyin": "",
+        "meaning": "linha"
+      },
+      {
+        "id": 4,
+        "word": "fracción",
+        "pinyin": "",
+        "meaning": "fração"
+      }
+    ],
+    "id": "local-1772300013611-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "\"El de arriba\" es el numerador, y se escribe encima de la línea de fracción.",
+    "pinyin": null,
+    "translation": "\"O de cima\" é o numerador, e se escreve em cima da linha da fração.",
+    "tokens": [
+      "\"El",
+      "de",
+      "arriba\"",
+      "es",
+      "el",
+      "numerador",
+      ",",
+      "y",
+      "se",
+      "escribe",
+      "encima",
+      "de",
+      "la",
+      "línea",
+      "de",
+      "fracción",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arriba",
+        "pinyin": "",
+        "meaning": "em cima, acima"
+      },
+      {
+        "id": 2,
+        "word": "numerador",
+        "pinyin": "",
+        "meaning": "numerador"
+      },
+      {
+        "id": 3,
+        "word": "se escribe",
+        "pinyin": "",
+        "meaning": "se escreve (passiva reflexa)"
+      },
+      {
+        "id": 4,
+        "word": "encima de",
+        "pinyin": "",
+        "meaning": "em cima de"
+      },
+      {
+        "id": 5,
+        "word": "línea de fracción",
+        "pinyin": "",
+        "meaning": "linha de fração"
+      }
+    ],
+    "id": "local-1772300013611-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "\"El de abajo\" es el denominador, y se escribe debajo.",
+    "pinyin": null,
+    "translation": "\"O de baixo\" é o denominador, e se escreve embaixo.",
+    "tokens": [
+      "\"El",
+      "de",
+      "abajo\"",
+      "es",
+      "el",
+      "denominador",
+      ",",
+      "y",
+      "se",
+      "escribe",
+      "debajo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "abajo",
+        "pinyin": "",
+        "meaning": "em baixo, abaixo"
+      },
+      {
+        "id": 2,
+        "word": "denominador",
+        "pinyin": "",
+        "meaning": "denominador"
+      },
+      {
+        "id": 3,
+        "word": "debajo",
+        "pinyin": "",
+        "meaning": "embaixo, debaixo"
+      }
+    ],
+    "id": "local-1772300013611-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Bien. ¿Entonces qué es el porcentaje?",
+    "pinyin": null,
+    "translation": "B: Certo. Então o que é a porcentagem?",
+    "tokens": [
+      "Bien",
+      ".",
+      "¿Entonces",
+      "qué",
+      "es",
+      "el",
+      "porcentaje",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bien",
+        "pinyin": "",
+        "meaning": "bem, certo"
+      },
+      {
+        "id": 2,
+        "word": "porcentaje",
+        "pinyin": "",
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772300013611-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Eso es una fracción de cien, por ejemplo: un cuarto es veinticinco por ciento; un medio es cincuenta por ciento.",
+    "pinyin": null,
+    "translation": "A: Isso é uma fração de cem, por exemplo: um quarto é vinte e cinco por cento; um meio é cinquenta por cento.",
+    "tokens": [
+      "Eso",
+      "es",
+      "una",
+      "fracción",
+      "de",
+      "cien",
+      ",",
+      "por",
+      "ejemplo",
+      ":",
+      "un",
+      "cuarto",
+      "es",
+      "veinticinco",
+      "por",
+      "ciento",
+      ";",
+      "un",
+      "medio",
+      "es",
+      "cincuenta",
+      "por",
+      "ciento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fracción",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 2,
+        "word": "cien",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 3,
+        "word": "cuarto",
+        "pinyin": "",
+        "meaning": "quarto (de 1/4)"
+      },
+      {
+        "id": 4,
+        "word": "veinticinco",
+        "pinyin": "",
+        "meaning": "vinte e cinco"
+      },
+      {
+        "id": 5,
+        "word": "por ciento",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 6,
+        "word": "medio",
+        "pinyin": "",
+        "meaning": "meio (de 1/2)"
+      },
+      {
+        "id": 7,
+        "word": "cincuenta",
+        "pinyin": "",
+        "meaning": "cinquenta"
+      }
+    ],
+    "id": "local-1772300013611-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Entonces qué son \"varias décimas\"?",
+    "pinyin": null,
+    "translation": "B: Então o que são \"várias décimas\"?",
+    "tokens": [
+      "¿Entonces",
+      "qué",
+      "son",
+      "\"varias",
+      "décimas\"",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "varias",
+        "pinyin": "",
+        "meaning": "várias"
+      },
+      {
+        "id": 2,
+        "word": "décimas",
+        "pinyin": "",
+        "meaning": "décimos (pl. de décima)"
+      }
+    ],
+    "id": "local-1772300013611-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: \"Una décima\" es una fracción de diez.",
+    "pinyin": null,
+    "translation": "A: \"Uma décima\" é uma fração de dez.",
+    "tokens": [
+      "\"Una",
+      "décima\"",
+      "es",
+      "una",
+      "fracción",
+      "de",
+      "diez",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "décima",
+        "pinyin": "",
+        "meaning": "décimo (1/10)"
+      },
+      {
+        "id": 2,
+        "word": "diez",
+        "pinyin": "",
+        "meaning": "dez"
+      }
+    ],
+    "id": "local-1772300013611-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Por ejemplo, \"nueve décimas\" es nueve sobre diez, y también es noventa por ciento.",
+    "pinyin": null,
+    "translation": "Por exemplo, \"nove décimas\" é nove sobre dez, e também é noventa por cento.",
+    "tokens": [
+      "Por",
+      "ejemplo",
+      ",",
+      "\"nueve",
+      "décimas\"",
+      "es",
+      "nueve",
+      "sobre",
+      "diez",
+      ",",
+      "y",
+      "también",
+      "es",
+      "noventa",
+      "por",
+      "ciento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nueve",
+        "pinyin": "",
+        "meaning": "nove"
+      },
+      {
+        "id": 2,
+        "word": "sobre",
+        "pinyin": "",
+        "meaning": "sobre"
+      },
+      {
+        "id": 3,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 4,
+        "word": "noventa",
+        "pinyin": "",
+        "meaning": "noventa"
+      }
+    ],
+    "id": "local-1772300013611-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡En el futuro, no duermas en clase!",
+    "pinyin": null,
+    "translation": "B: No futuro, não durma na aula!",
+    "tokens": [
+      "¡En",
+      "el",
+      "futuro",
+      ",",
+      "no",
+      "duermas",
+      "en",
+      "clase",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "futuro",
+        "pinyin": "",
+        "meaning": "futuro"
+      },
+      {
+        "id": 2,
+        "word": "duermas",
+        "pinyin": "",
+        "meaning": "durma (imperativo negativo do verbo dormir)"
+      },
+      {
+        "id": 3,
+        "word": "clase",
+        "pinyin": "",
+        "meaning": "aula"
+      }
+    ],
+    "id": "local-1772300013611-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Y no te está permitido hablar!",
+    "pinyin": null,
+    "translation": "E não está permitido que você fale!",
+    "tokens": [
+      "¡Y",
+      "no",
+      "te",
+      "está",
+      "permitido",
+      "hablar",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "está permitido",
+        "pinyin": "",
+        "meaning": "está permitido"
+      },
+      {
+        "id": 2,
+        "word": "hablar",
+        "pinyin": "",
+        "meaning": "falar"
+      }
+    ],
+    "id": "local-1772300013611-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Si hablas de nuevo, te quedarás de pie como castigo!",
+    "pinyin": null,
+    "translation": "Se você falar de novo, ficará de pé como castigo!",
+    "tokens": [
+      "¡Si",
+      "hablas",
+      "de",
+      "nuevo",
+      ",",
+      "te",
+      "quedarás",
+      "de",
+      "pie",
+      "como",
+      "castigo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "si",
+        "pinyin": "",
+        "meaning": "se"
+      },
+      {
+        "id": 2,
+        "word": "hablas",
+        "pinyin": "",
+        "meaning": "você fala (do verbo hablar)"
+      },
+      {
+        "id": 3,
+        "word": "de nuevo",
+        "pinyin": "",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 4,
+        "word": "te quedarás de pie",
+        "pinyin": "",
+        "meaning": "você ficará de pé"
+      },
+      {
+        "id": 5,
+        "word": "castigo",
+        "pinyin": "",
+        "meaning": "castigo"
+      }
+    ],
+    "id": "local-1772300013611-18",
+    "language": "Espanhol"
+  }
+]

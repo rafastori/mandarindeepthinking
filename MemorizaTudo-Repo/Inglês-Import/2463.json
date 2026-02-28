@@ -1,0 +1,701 @@
+[
+  {
+    "chinese": "A: Hello, may I help you with something?",
+    "pinyin": "",
+    "translation": "A: Olá, posso te ajudar em algo?",
+    "tokens": [
+      "A",
+      ":",
+      "Hello",
+      ",",
+      "may",
+      "I",
+      "help",
+      "you",
+      "with",
+      "something",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hello",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "may I help",
+        "pinyin": "",
+        "meaning": "posso ajudar"
+      },
+      {
+        "id": 3,
+        "word": "something",
+        "pinyin": "",
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772293585149-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I would like to have a pair of glasses made for me.",
+    "pinyin": "",
+    "translation": "B: Eu gostaria de mandar fazer um par de óculos para mim.",
+    "tokens": [
+      "B",
+      ":",
+      "I",
+      "would",
+      "like",
+      "to",
+      "have",
+      "a",
+      "pair",
+      "of",
+      "glasses",
+      "made",
+      "for",
+      "me",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "would like to",
+        "pinyin": "",
+        "meaning": "gostaria de"
+      },
+      {
+        "id": 2,
+        "word": "pair of glasses",
+        "pinyin": "",
+        "meaning": "um par de óculos"
+      },
+      {
+        "id": 3,
+        "word": "made for me",
+        "pinyin": "",
+        "meaning": "feito para mim"
+      }
+    ],
+    "id": "local-1772293585149-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Glasses for nearsightedness, plain lens glasses or reading glasses?",
+    "pinyin": "",
+    "translation": "A: Óculos para miopia, óculos de lente comum ou óculos de leitura?",
+    "tokens": [
+      "A",
+      ":",
+      "Glasses",
+      "for",
+      "nearsightedness",
+      ",",
+      "plain",
+      "lens",
+      "glasses",
+      "or",
+      "reading",
+      "glasses",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Glasses",
+        "pinyin": "",
+        "meaning": "Óculos"
+      },
+      {
+        "id": 2,
+        "word": "nearsightedness",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 3,
+        "word": "plain lens glasses",
+        "pinyin": "",
+        "meaning": "óculos de lente comum"
+      },
+      {
+        "id": 4,
+        "word": "reading glasses",
+        "pinyin": "",
+        "meaning": "óculos de leitura"
+      }
+    ],
+    "id": "local-1772293585149-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Glasses for nearsightedness with astigmatism.",
+    "pinyin": "",
+    "translation": "B: Óculos para miopia com astigmatismo.",
+    "tokens": [
+      "B",
+      ":",
+      "Glasses",
+      "for",
+      "nearsightedness",
+      "with",
+      "astigmatism",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nearsightedness",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 2,
+        "word": "astigmatism",
+        "pinyin": "",
+        "meaning": "astigmatismo"
+      }
+    ],
+    "id": "local-1772293585149-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You can choose any of the frames on this side.",
+    "pinyin": "",
+    "translation": "A: Você pode escolher qualquer uma das armações deste lado.",
+    "tokens": [
+      "A",
+      ":",
+      "You",
+      "can",
+      "choose",
+      "any",
+      "of",
+      "the",
+      "frames",
+      "on",
+      "this",
+      "side",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "choose",
+        "pinyin": "",
+        "meaning": "escolher"
+      },
+      {
+        "id": 2,
+        "word": "frames",
+        "pinyin": "",
+        "meaning": "armações"
+      },
+      {
+        "id": 3,
+        "word": "on this side",
+        "pinyin": "",
+        "meaning": "deste lado"
+      }
+    ],
+    "id": "local-1772293585149-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "After you have chosen a pair you can pay and get an eye examination over there.",
+    "pinyin": "",
+    "translation": "Depois de ter escolhido um par, você pode pagar e fazer um exame de vista ali.",
+    "tokens": [
+      "After",
+      "you",
+      "have",
+      "chosen",
+      "a",
+      "pair",
+      "you",
+      "can",
+      "pay",
+      "and",
+      "get",
+      "an",
+      "eye",
+      "examination",
+      "over",
+      "there",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chosen",
+        "pinyin": "",
+        "meaning": "escolhido"
+      },
+      {
+        "id": 2,
+        "word": "pair",
+        "pinyin": "",
+        "meaning": "par"
+      },
+      {
+        "id": 3,
+        "word": "pay",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 4,
+        "word": "eye examination",
+        "pinyin": "",
+        "meaning": "exame de vista"
+      },
+      {
+        "id": 5,
+        "word": "over there",
+        "pinyin": "",
+        "meaning": "ali / lá"
+      }
+    ],
+    "id": "local-1772293585149-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. How much for one pair?",
+    "pinyin": "",
+    "translation": "B: Ok. Quanto custa um par?",
+    "tokens": [
+      "B",
+      ":",
+      "Okay",
+      ".",
+      "How",
+      "much",
+      "for",
+      "one",
+      "pair",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "How much",
+        "pinyin": "",
+        "meaning": "Quanto"
+      },
+      {
+        "id": 3,
+        "word": "one pair",
+        "pinyin": "",
+        "meaning": "um par"
+      }
+    ],
+    "id": "local-1772293585149-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: There are three package prices: 399, 599, 799.",
+    "pinyin": "",
+    "translation": "A: Existem três preços de pacote: 399, 599, 799.",
+    "tokens": [
+      "A",
+      ":",
+      "There",
+      "are",
+      "three",
+      "package",
+      "prices",
+      ":",
+      "399",
+      ",",
+      "599",
+      ",",
+      "799",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "package prices",
+        "pinyin": "",
+        "meaning": "preços de pacote"
+      }
+    ],
+    "id": "local-1772293585149-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "They include the lens, the frames, a glasses case, and a cleaning cloth.",
+    "pinyin": "",
+    "translation": "Eles incluem a lente, as armações, um estojo de óculos e um pano de limpeza.",
+    "tokens": [
+      "They",
+      "include",
+      "the",
+      "lens",
+      ",",
+      "the",
+      "frames",
+      ",",
+      "a",
+      "glasses",
+      "case",
+      ",",
+      "and",
+      "a",
+      "cleaning",
+      "cloth",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "include",
+        "pinyin": "",
+        "meaning": "incluem"
+      },
+      {
+        "id": 2,
+        "word": "lens",
+        "pinyin": "",
+        "meaning": "lente"
+      },
+      {
+        "id": 3,
+        "word": "frames",
+        "pinyin": "",
+        "meaning": "armações"
+      },
+      {
+        "id": 4,
+        "word": "glasses case",
+        "pinyin": "",
+        "meaning": "estojo de óculos"
+      },
+      {
+        "id": 5,
+        "word": "cleaning cloth",
+        "pinyin": "",
+        "meaning": "pano de limpeza"
+      }
+    ],
+    "id": "local-1772293585149-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: How long do I need to wait until they can be picked up?",
+    "pinyin": "",
+    "translation": "B: Quanto tempo preciso esperar até que possam ser retirados?",
+    "tokens": [
+      "B",
+      ":",
+      "How",
+      "long",
+      "do",
+      "I",
+      "need",
+      "to",
+      "wait",
+      "until",
+      "they",
+      "can",
+      "be",
+      "picked",
+      "up",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "How long",
+        "pinyin": "",
+        "meaning": "Quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "need to wait",
+        "pinyin": "",
+        "meaning": "preciso esperar"
+      },
+      {
+        "id": 3,
+        "word": "picked up",
+        "pinyin": "",
+        "meaning": "retirados"
+      }
+    ],
+    "id": "local-1772293585149-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: An hour after the eye examination.",
+    "pinyin": "",
+    "translation": "A: Uma hora após o exame de vista.",
+    "tokens": [
+      "A",
+      ":",
+      "An",
+      "hour",
+      "after",
+      "the",
+      "eye",
+      "examination",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "An hour",
+        "pinyin": "",
+        "meaning": "Uma hora"
+      },
+      {
+        "id": 2,
+        "word": "after",
+        "pinyin": "",
+        "meaning": "após"
+      },
+      {
+        "id": 3,
+        "word": "eye examination",
+        "pinyin": "",
+        "meaning": "exame de vista"
+      }
+    ],
+    "id": "local-1772293585149-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Is there a type of lens that is for nearsightedness and astigmatism and also are sunglasses?",
+    "pinyin": "",
+    "translation": "B: Existe um tipo de lente que seja para miopia e astigmatismo e que também seja óculos de sol?",
+    "tokens": [
+      "B",
+      ":",
+      "Is",
+      "there",
+      "a",
+      "type",
+      "of",
+      "lens",
+      "that",
+      "is",
+      "for",
+      "nearsightedness",
+      "and",
+      "astigmatism",
+      "and",
+      "also",
+      "are",
+      "sunglasses",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "type of lens",
+        "pinyin": "",
+        "meaning": "tipo de lente"
+      },
+      {
+        "id": 2,
+        "word": "nearsightedness",
+        "pinyin": "",
+        "meaning": "miopia"
+      },
+      {
+        "id": 3,
+        "word": "astigmatism",
+        "pinyin": "",
+        "meaning": "astigmatismo"
+      },
+      {
+        "id": 4,
+        "word": "sunglasses",
+        "pinyin": "",
+        "meaning": "óculos de sol"
+      }
+    ],
+    "id": "local-1772293585149-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: There is, but that is a special kind of lens.",
+    "pinyin": "",
+    "translation": "A: Sim, existe, mas é um tipo especial de lente.",
+    "tokens": [
+      "A",
+      ":",
+      "There",
+      "is",
+      ",",
+      "but",
+      "that",
+      "is",
+      "a",
+      "special",
+      "kind",
+      "of",
+      "lens",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "special kind of lens",
+        "pinyin": "",
+        "meaning": "tipo especial de lente"
+      }
+    ],
+    "id": "local-1772293585149-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "There is no package price and you have to buy the lens and frames separately.",
+    "pinyin": "",
+    "translation": "Não há preço de pacote e você tem que comprar a lente e as armações separadamente.",
+    "tokens": [
+      "There",
+      "is",
+      "no",
+      "package",
+      "price",
+      "and",
+      "you",
+      "have",
+      "to",
+      "buy",
+      "the",
+      "lens",
+      "and",
+      "frames",
+      "separately",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "no package price",
+        "pinyin": "",
+        "meaning": "não há preço de pacote"
+      },
+      {
+        "id": 2,
+        "word": "have to buy",
+        "pinyin": "",
+        "meaning": "tem que comprar"
+      },
+      {
+        "id": 3,
+        "word": "lens",
+        "pinyin": "",
+        "meaning": "lente"
+      },
+      {
+        "id": 4,
+        "word": "frames",
+        "pinyin": "",
+        "meaning": "armações"
+      },
+      {
+        "id": 5,
+        "word": "separately",
+        "pinyin": "",
+        "meaning": "separadamente"
+      }
+    ],
+    "id": "local-1772293585149-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "One pair is at least over a thousand.",
+    "pinyin": "",
+    "translation": "Um par custa pelo menos mais de mil.",
+    "tokens": [
+      "One",
+      "pair",
+      "is",
+      "at",
+      "least",
+      "over",
+      "a",
+      "thousand",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "at least",
+        "pinyin": "",
+        "meaning": "pelo menos"
+      },
+      {
+        "id": 2,
+        "word": "over a thousand",
+        "pinyin": "",
+        "meaning": "mais de mil"
+      }
+    ],
+    "id": "local-1772293585149-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That's expensive! I better look at the ones that are 399.",
+    "pinyin": "",
+    "translation": "B: Isso é caro! É melhor eu olhar os de 399.",
+    "tokens": [
+      "B",
+      ":",
+      "That",
+      "'s",
+      "expensive",
+      "!",
+      "I",
+      "better",
+      "look",
+      "at",
+      "the",
+      "ones",
+      "that",
+      "are",
+      "399",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "expensive",
+        "pinyin": "",
+        "meaning": "caro"
+      },
+      {
+        "id": 2,
+        "word": "I better",
+        "pinyin": "",
+        "meaning": "É melhor eu"
+      },
+      {
+        "id": 3,
+        "word": "look at",
+        "pinyin": "",
+        "meaning": "olhar para"
+      },
+      {
+        "id": 4,
+        "word": "the ones",
+        "pinyin": "",
+        "meaning": "os"
+      }
+    ],
+    "id": "local-1772293585149-15",
+    "language": "Inglês"
+  }
+]

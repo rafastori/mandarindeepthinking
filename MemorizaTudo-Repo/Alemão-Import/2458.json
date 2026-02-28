@@ -1,0 +1,648 @@
+[
+  {
+    "chinese": "A: Die Weltmeisterschaft steht vor der Tür!",
+    "pinyin": null,
+    "translation": "A: A Copa do Mundo está à porta!",
+    "tokens": [
+      "Die",
+      "Weltmeisterschaft",
+      "steht",
+      "vor",
+      "der",
+      "Tür",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Weltmeisterschaft",
+        "pinyin": null,
+        "meaning": "Copa do Mundo / Campeonato Mundial"
+      },
+      {
+        "id": 2,
+        "word": "vor der Tür stehen",
+        "pinyin": null,
+        "meaning": "estar à porta / ser iminente"
+      }
+    ],
+    "id": "local-1772293506699-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wo findet die Weltmeisterschaft dieses Jahr statt?",
+    "pinyin": null,
+    "translation": "B: Onde acontece a Copa do Mundo este ano?",
+    "tokens": [
+      "Wo",
+      "findet",
+      "die",
+      "Weltmeisterschaft",
+      "dieses",
+      "Jahr",
+      "statt",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wo",
+        "pinyin": null,
+        "meaning": "Onde"
+      },
+      {
+        "id": 2,
+        "word": "stattfinden",
+        "pinyin": null,
+        "meaning": "acontecer / ocorrer"
+      },
+      {
+        "id": 3,
+        "word": "Weltmeisterschaft",
+        "pinyin": null,
+        "meaning": "Copa do Mundo / Campeonato Mundial"
+      },
+      {
+        "id": 4,
+        "word": "dieses Jahr",
+        "pinyin": null,
+        "meaning": "este ano"
+      }
+    ],
+    "id": "local-1772293506699-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: In Brasilien! Dem Königreich des Fußballs! Die WM wird dieses Jahr mit Sicherheit großartig anzusehen!",
+    "pinyin": null,
+    "translation": "A: No Brasil! O reino do futebol! A Copa será, com certeza, ótima de se ver este ano!",
+    "tokens": [
+      "In",
+      "Brasilien",
+      "!",
+      "Dem",
+      "Königreich",
+      "des",
+      "Fußballs",
+      "!",
+      "Die",
+      "WM",
+      "wird",
+      "dieses",
+      "Jahr",
+      "mit",
+      "Sicherheit",
+      "großartig",
+      "anzusehen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brasilien",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "Königreich",
+        "pinyin": null,
+        "meaning": "reino"
+      },
+      {
+        "id": 3,
+        "word": "Fußball",
+        "pinyin": null,
+        "meaning": "futebol"
+      },
+      {
+        "id": 4,
+        "word": "WM",
+        "pinyin": null,
+        "meaning": "Copa do Mundo (abreviação de Weltmeisterschaft)"
+      },
+      {
+        "id": 5,
+        "word": "dieses Jahr",
+        "pinyin": null,
+        "meaning": "este ano"
+      },
+      {
+        "id": 6,
+        "word": "mit Sicherheit",
+        "pinyin": null,
+        "meaning": "com certeza / certamente"
+      },
+      {
+        "id": 7,
+        "word": "großartig",
+        "pinyin": null,
+        "meaning": "excelente / ótimo / magnífico"
+      },
+      {
+        "id": 8,
+        "word": "anzusehen",
+        "pinyin": null,
+        "meaning": "de se ver / para ver"
+      }
+    ],
+    "id": "local-1772293506699-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Brasilien? Dann will ich sie sehen.",
+    "pinyin": null,
+    "translation": "B: Brasil? Então eu quero vê-la.",
+    "tokens": [
+      "Brasilien",
+      "?",
+      "Dann",
+      "will",
+      "ich",
+      "sie",
+      "sehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brasilien",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "sehen",
+        "pinyin": null,
+        "meaning": "ver"
+      }
+    ],
+    "id": "local-1772293506699-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Brasilien hat viele schöne Frauen.",
+    "pinyin": null,
+    "translation": "O Brasil tem muitas mulheres bonitas.",
+    "tokens": [
+      "Brasilien",
+      "hat",
+      "viele",
+      "schöne",
+      "Frauen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Brasilien",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "viele",
+        "pinyin": null,
+        "meaning": "muitos / muitas"
+      },
+      {
+        "id": 3,
+        "word": "schön",
+        "pinyin": null,
+        "meaning": "bonito / bonita"
+      },
+      {
+        "id": 4,
+        "word": "Frauen",
+        "pinyin": null,
+        "meaning": "mulheres"
+      }
+    ],
+    "id": "local-1772293506699-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Die Eröffnungsfeier wird bestimmt ausgelassenen Samba-Tanz bieten.",
+    "pinyin": null,
+    "translation": "A cerimônia de abertura certamente oferecerá muita dança de samba animada.",
+    "tokens": [
+      "Die",
+      "Eröffnungsfeier",
+      "wird",
+      "bestimmt",
+      "ausgelassenen",
+      "Samba-Tanz",
+      "bieten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eröffnungsfeier",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 2,
+        "word": "bestimmt",
+        "pinyin": null,
+        "meaning": "certamente / com certeza"
+      },
+      {
+        "id": 3,
+        "word": "ausgelassen",
+        "pinyin": null,
+        "meaning": "animado / exuberante / desenfreado"
+      },
+      {
+        "id": 4,
+        "word": "Samba-Tanz",
+        "pinyin": null,
+        "meaning": "dança de samba"
+      },
+      {
+        "id": 5,
+        "word": "bieten",
+        "pinyin": null,
+        "meaning": "oferecer / proporcionar"
+      }
+    ],
+    "id": "local-1772293506699-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wann ist die Eröffnungsfeier?",
+    "pinyin": null,
+    "translation": "Quando é a cerimônia de abertura?",
+    "tokens": [
+      "Wann",
+      "ist",
+      "die",
+      "Eröffnungsfeier",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wann",
+        "pinyin": null,
+        "meaning": "Quando"
+      },
+      {
+        "id": 2,
+        "word": "Eröffnungsfeier",
+        "pinyin": null,
+        "meaning": "cerimônia de abertura"
+      }
+    ],
+    "id": "local-1772293506699-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Am 14. Juni in São Paulo.",
+    "pinyin": null,
+    "translation": "A: Em 14 de junho em São Paulo.",
+    "tokens": [
+      "Am",
+      "14.",
+      "Juni",
+      "in",
+      "São",
+      "Paulo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Juni",
+        "pinyin": null,
+        "meaning": "junho"
+      },
+      {
+        "id": 2,
+        "word": "São Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      }
+    ],
+    "id": "local-1772293506699-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: São Paulo? Warum nicht in Rio? Rio ist doch das berühmteste.",
+    "pinyin": null,
+    "translation": "B: São Paulo? Por que não no Rio? Rio é o mais famoso, não é?",
+    "tokens": [
+      "São",
+      "Paulo",
+      "?",
+      "Warum",
+      "nicht",
+      "in",
+      "Rio",
+      "?",
+      "Rio",
+      "ist",
+      "doch",
+      "das",
+      "berühmteste",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "São Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "Warum",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio (de Janeiro)"
+      },
+      {
+        "id": 4,
+        "word": "doch",
+        "pinyin": null,
+        "meaning": "afinal / no entanto / (partícula modal para enfatizar ou contradizer)"
+      },
+      {
+        "id": 5,
+        "word": "berühmt",
+        "pinyin": null,
+        "meaning": "famoso"
+      }
+    ],
+    "id": "local-1772293506699-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: São Paulo ist eine der wichtigsten Städte Brasiliens. Das Endspiel findet in Rio statt.",
+    "pinyin": null,
+    "translation": "A: São Paulo é uma das cidades mais importantes do Brasil. A final acontece no Rio.",
+    "tokens": [
+      "São",
+      "Paulo",
+      "ist",
+      "eine",
+      "der",
+      "wichtigsten",
+      "Städte",
+      "Brasiliens",
+      ".",
+      "Das",
+      "Endspiel",
+      "findet",
+      "in",
+      "Rio",
+      "statt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "São Paulo",
+        "pinyin": null,
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "wichtig",
+        "pinyin": null,
+        "meaning": "importante"
+      },
+      {
+        "id": 3,
+        "word": "Stadt",
+        "pinyin": null,
+        "meaning": "cidade"
+      },
+      {
+        "id": 4,
+        "word": "Brasilien",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 5,
+        "word": "Endspiel",
+        "pinyin": null,
+        "meaning": "final (de um jogo/competição)"
+      },
+      {
+        "id": 6,
+        "word": "stattfinden",
+        "pinyin": null,
+        "meaning": "acontecer / ocorrer"
+      },
+      {
+        "id": 7,
+        "word": "Rio",
+        "pinyin": null,
+        "meaning": "Rio (de Janeiro)"
+      }
+    ],
+    "id": "local-1772293506699-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Schade, dass der Zeitunterschied zwischen uns und Brasilien 11 Stunden beträgt. Ich fürchte, wir werden diesmal ganze Nächte durchmachen müssen.",
+    "pinyin": null,
+    "translation": "B: Que pena que a diferença de fuso horário entre nós e o Brasil é de 11 horas. Temo que desta vez teremos que passar noites inteiras em claro.",
+    "tokens": [
+      "Schade",
+      ",",
+      "dass",
+      "der",
+      "Zeitunterschied",
+      "zwischen",
+      "uns",
+      "und",
+      "Brasilien",
+      "11",
+      "Stunden",
+      "beträgt",
+      ".",
+      "Ich",
+      "fürchte",
+      ",",
+      "wir",
+      "werden",
+      "diesmal",
+      "ganze",
+      "Nächte",
+      "durchmachen",
+      "müssen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schade",
+        "pinyin": null,
+        "meaning": "Que pena / É uma pena"
+      },
+      {
+        "id": 2,
+        "word": "Zeitunterschied",
+        "pinyin": null,
+        "meaning": "diferença de fuso horário / diferença de tempo"
+      },
+      {
+        "id": 3,
+        "word": "zwischen",
+        "pinyin": null,
+        "meaning": "entre"
+      },
+      {
+        "id": 4,
+        "word": "Brasilien",
+        "pinyin": null,
+        "meaning": "Brasil"
+      },
+      {
+        "id": 5,
+        "word": "Stunden",
+        "pinyin": null,
+        "meaning": "horas"
+      },
+      {
+        "id": 6,
+        "word": "betragen",
+        "pinyin": null,
+        "meaning": "totalizar / importar em / ser de (valor)"
+      },
+      {
+        "id": 7,
+        "word": "fürchten",
+        "pinyin": null,
+        "meaning": "temer / recear"
+      },
+      {
+        "id": 8,
+        "word": "diesmal",
+        "pinyin": null,
+        "meaning": "desta vez"
+      },
+      {
+        "id": 9,
+        "word": "ganze Nächte",
+        "pinyin": null,
+        "meaning": "noites inteiras"
+      },
+      {
+        "id": 10,
+        "word": "durchmachen",
+        "pinyin": null,
+        "meaning": "passar por / suportar / ficar acordado"
+      },
+      {
+        "id": 11,
+        "word": "müssen",
+        "pinyin": null,
+        "meaning": "ter que / precisar"
+      }
+    ],
+    "id": "local-1772293506699-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann muss ich erstmal los in den Supermarkt und Red Bull eindecken. Ich tu alles für die hübschen Mädels!",
+    "pinyin": null,
+    "translation": "A: Então, primeiro preciso ir ao supermercado e estocar Red Bull. Eu faço tudo pelas garotas bonitas!",
+    "tokens": [
+      "Dann",
+      "muss",
+      "ich",
+      "erstmal",
+      "los",
+      "in",
+      "den",
+      "Supermarkt",
+      "und",
+      "Red",
+      "Bull",
+      "eindecken",
+      ".",
+      "Ich",
+      "tu",
+      "alles",
+      "für",
+      "die",
+      "hübschen",
+      "Mädels",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "erstmal",
+        "pinyin": null,
+        "meaning": "primeiro / por enquanto"
+      },
+      {
+        "id": 3,
+        "word": "los",
+        "pinyin": null,
+        "meaning": "partir / ir (expressão 'losgehen')"
+      },
+      {
+        "id": 4,
+        "word": "Supermarkt",
+        "pinyin": null,
+        "meaning": "supermercado"
+      },
+      {
+        "id": 5,
+        "word": "eindecken",
+        "pinyin": null,
+        "meaning": "estocar / abastecer-se"
+      },
+      {
+        "id": 6,
+        "word": "tun",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 7,
+        "word": "alles",
+        "pinyin": null,
+        "meaning": "tudo"
+      },
+      {
+        "id": 8,
+        "word": "hübsch",
+        "pinyin": null,
+        "meaning": "bonito / atraente"
+      },
+      {
+        "id": 9,
+        "word": "Mädels",
+        "pinyin": null,
+        "meaning": "meninas / garotas (diminutivo coloquial de Mädchen)"
+      }
+    ],
+    "id": "local-1772293506699-11",
+    "language": "Alemão"
+  }
+]

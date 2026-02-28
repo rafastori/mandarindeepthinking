@@ -1,0 +1,616 @@
+[
+  {
+    "chinese": "A: Lili, sei libera domenica prossima? Puoi venire a casa mia per insegnarmi a fare una torta?",
+    "pinyin": "",
+    "translation": "A: Lili, você está livre no próximo domingo? Você pode vir à minha casa para me ensinar a fazer um bolo?",
+    "tokens": [
+      "A:",
+      "Lili,",
+      "sei",
+      "libera",
+      "domenica",
+      "prossima?",
+      "Puoi",
+      "venire",
+      "a",
+      "casa",
+      "mia",
+      "per",
+      "insegnarmi",
+      "a",
+      "fare",
+      "una",
+      "torta?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "libera",
+        "pinyin": "",
+        "meaning": "livre"
+      },
+      {
+        "id": 2,
+        "word": "domenica",
+        "pinyin": "",
+        "meaning": "domingo"
+      },
+      {
+        "id": 3,
+        "word": "prossima",
+        "pinyin": "",
+        "meaning": "próxima"
+      },
+      {
+        "id": 4,
+        "word": "venire",
+        "pinyin": "",
+        "meaning": "vir"
+      },
+      {
+        "id": 5,
+        "word": "casa mia",
+        "pinyin": "",
+        "meaning": "minha casa"
+      },
+      {
+        "id": 6,
+        "word": "insegnarmi",
+        "pinyin": "",
+        "meaning": "me ensinar"
+      },
+      {
+        "id": 7,
+        "word": "fare",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 8,
+        "word": "torta",
+        "pinyin": "",
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296629126-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. Perché vuoi fare una torta all'improvviso?",
+    "pinyin": "",
+    "translation": "B: Sim. Por que você quer fazer um bolo de repente?",
+    "tokens": [
+      "B:",
+      "Sì.",
+      "Perché",
+      "vuoi",
+      "fare",
+      "una",
+      "torta",
+      "all'improvviso?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sì",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "Perché",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "você quer"
+      },
+      {
+        "id": 4,
+        "word": "fare",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "torta",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "all'improvviso",
+        "pinyin": "",
+        "meaning": "de repente"
+      }
+    ],
+    "id": "local-1772296629126-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il mese prossimo è il compleanno del mio ragazzo. Voglio fargli una sorpresa.",
+    "pinyin": "",
+    "translation": "A: O próximo mês é o aniversário do meu namorado. Quero fazer uma surpresa para ele.",
+    "tokens": [
+      "A:",
+      "Il",
+      "mese",
+      "prossimo",
+      "è",
+      "il",
+      "compleanno",
+      "del",
+      "mio",
+      "ragazzo.",
+      "Voglio",
+      "fargli",
+      "una",
+      "sorpresa."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mese prossimo",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "compleanno",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 3,
+        "word": "mio ragazzo",
+        "pinyin": "",
+        "meaning": "meu namorado"
+      },
+      {
+        "id": 4,
+        "word": "Voglio",
+        "pinyin": "",
+        "meaning": "eu quero"
+      },
+      {
+        "id": 5,
+        "word": "fargli",
+        "pinyin": "",
+        "meaning": "fazer para ele"
+      },
+      {
+        "id": 6,
+        "word": "sorpresa",
+        "pinyin": "",
+        "meaning": "surpresa"
+      }
+    ],
+    "id": "local-1772296629126-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Che tipo di torta vuoi fare?",
+    "pinyin": "",
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "B:",
+      "Che",
+      "tipo",
+      "di",
+      "torta",
+      "vuoi",
+      "fare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Che tipo di",
+        "pinyin": "",
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "torta",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "você quer"
+      },
+      {
+        "id": 4,
+        "word": "fare",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772296629126-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Vorrei farne una semplice.",
+    "pinyin": "",
+    "translation": "A: Eu gostaria de fazer uma simples.",
+    "tokens": [
+      "A:",
+      "Vorrei",
+      "farne",
+      "una",
+      "semplice."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vorrei",
+        "pinyin": "",
+        "meaning": "eu gostaria"
+      },
+      {
+        "id": 2,
+        "word": "farne",
+        "pinyin": "",
+        "meaning": "fazer uma (disso)"
+      },
+      {
+        "id": 3,
+        "word": "semplice",
+        "pinyin": "",
+        "meaning": "simples"
+      }
+    ],
+    "id": "local-1772296629126-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora facciamo una torta chiffon. Questo tipo di torta è molto leggero. Puoi spalmarci sopra della marmellata e mangiarla. Può anche essere una torta di compleanno. È un tipo di torta di base.",
+    "pinyin": "",
+    "translation": "B: Então, vamos fazer um bolo chiffon. Este tipo de bolo é muito leve. Você pode espalhar geleia em cima e comê-lo. Também pode ser um bolo de aniversário. É um tipo de bolo básico.",
+    "tokens": [
+      "B:",
+      "Allora",
+      "facciamo",
+      "una",
+      "torta",
+      "chiffon.",
+      "Questo",
+      "tipo",
+      "di",
+      "torta",
+      "è",
+      "molto",
+      "leggero.",
+      "Puoi",
+      "spalmarci",
+      "sopra",
+      "della",
+      "marmellata",
+      "e",
+      "mangiarla.",
+      "Può",
+      "anche",
+      "essere",
+      "una",
+      "torta",
+      "di",
+      "compleanno.",
+      "È",
+      "un",
+      "tipo",
+      "di",
+      "torta",
+      "di",
+      "base."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "facciamo",
+        "pinyin": "",
+        "meaning": "vamos fazer"
+      },
+      {
+        "id": 3,
+        "word": "torta chiffon",
+        "pinyin": "",
+        "meaning": "bolo chiffon"
+      },
+      {
+        "id": 4,
+        "word": "molto leggero",
+        "pinyin": "",
+        "meaning": "muito leve"
+      },
+      {
+        "id": 5,
+        "word": "spalmarci sopra",
+        "pinyin": "",
+        "meaning": "espalhar em cima"
+      },
+      {
+        "id": 6,
+        "word": "marmellata",
+        "pinyin": "",
+        "meaning": "geleia"
+      },
+      {
+        "id": 7,
+        "word": "mangiarla",
+        "pinyin": "",
+        "meaning": "comê-la"
+      },
+      {
+        "id": 8,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 9,
+        "word": "torta di compleanno",
+        "pinyin": "",
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 10,
+        "word": "torta di base",
+        "pinyin": "",
+        "meaning": "bolo básico"
+      }
+    ],
+    "id": "local-1772296629126-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ok. Ok. Cosa devo preparare?",
+    "pinyin": "",
+    "translation": "A: Ok. Ok. O que devo preparar?",
+    "tokens": [
+      "A:",
+      "Ok.",
+      "Ok.",
+      "Cosa",
+      "devo",
+      "preparare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "devo",
+        "pinyin": "",
+        "meaning": "eu devo"
+      },
+      {
+        "id": 3,
+        "word": "preparare",
+        "pinyin": "",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772296629126-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Devi comprare gli ingredienti: 100 grammi di farina per dolci, 5 uova, 40 grammi di olio, 70 grammi di zucchero semolato e 40 grammi di latte.",
+    "pinyin": "",
+    "translation": "B: Você deve comprar os ingredientes: 100 gramas de farinha para bolos, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar refinado e 40 gramas de leite.",
+    "tokens": [
+      "B:",
+      "Devi",
+      "comprare",
+      "gli",
+      "ingredienti:",
+      "100",
+      "grammi",
+      "di",
+      "farina",
+      "per",
+      "dolci,",
+      "5",
+      "uova,",
+      "40",
+      "grammi",
+      "di",
+      "olio,",
+      "70",
+      "grammi",
+      "di",
+      "zucchero",
+      "semolato",
+      "e",
+      "40",
+      "grammi",
+      "di",
+      "latte."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Devi",
+        "pinyin": "",
+        "meaning": "você deve"
+      },
+      {
+        "id": 2,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "ingredienti",
+        "pinyin": "",
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 4,
+        "word": "farina per dolci",
+        "pinyin": "",
+        "meaning": "farinha para bolos"
+      },
+      {
+        "id": 5,
+        "word": "uova",
+        "pinyin": "",
+        "meaning": "ovos"
+      },
+      {
+        "id": 6,
+        "word": "olio",
+        "pinyin": "",
+        "meaning": "óleo"
+      },
+      {
+        "id": 7,
+        "word": "zucchero semolato",
+        "pinyin": "",
+        "meaning": "açúcar refinado"
+      },
+      {
+        "id": 8,
+        "word": "latte",
+        "pinyin": "",
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296629126-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Quali strumenti?",
+    "pinyin": "",
+    "translation": "A: Quais ferramentas?",
+    "tokens": [
+      "A:",
+      "Quali",
+      "strumenti?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quali",
+        "pinyin": "",
+        "meaning": "quais"
+      },
+      {
+        "id": 2,
+        "word": "strumenti",
+        "pinyin": "",
+        "meaning": "ferramentas"
+      }
+    ],
+    "id": "local-1772296629126-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Una frusta elettrica, un forno e uno stampo per torte da 8 pollici.",
+    "pinyin": "",
+    "translation": "B: Uma batedeira elétrica, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "B:",
+      "Una",
+      "frusta",
+      "elettrica,",
+      "un",
+      "forno",
+      "e",
+      "uno",
+      "stampo",
+      "per",
+      "torte",
+      "da",
+      "8",
+      "pollici."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "frusta elettrica",
+        "pinyin": "",
+        "meaning": "batedeira elétrica"
+      },
+      {
+        "id": 2,
+        "word": "forno",
+        "pinyin": "",
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "stampo per torte",
+        "pinyin": "",
+        "meaning": "forma para bolos"
+      },
+      {
+        "id": 4,
+        "word": "pollici",
+        "pinyin": "",
+        "meaning": "polegadas"
+      }
+    ],
+    "id": "local-1772296629126-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ok. Andrò a comprare le cose dopo il lavoro.",
+    "pinyin": "",
+    "translation": "A: Ok. Vou comprar as coisas depois do trabalho.",
+    "tokens": [
+      "A:",
+      "Ok.",
+      "Andrò",
+      "a",
+      "comprare",
+      "le",
+      "cose",
+      "dopo",
+      "il",
+      "lavoro."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Andrò",
+        "pinyin": "",
+        "meaning": "eu irei"
+      },
+      {
+        "id": 2,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "le cose",
+        "pinyin": "",
+        "meaning": "as coisas"
+      },
+      {
+        "id": 4,
+        "word": "dopo il lavoro",
+        "pinyin": "",
+        "meaning": "depois do trabalho"
+      }
+    ],
+    "id": "local-1772296629126-10",
+    "language": "Italiano"
+  }
+]

@@ -1,0 +1,521 @@
+[
+  {
+    "chinese": "A: Oye, la pantalla de tu computadora está muy brillante. ¿No te resulta difícil mirarla?",
+    "pinyin": "",
+    "translation": "A: Ei, a tela do seu computador está muito brilhante. Não te é difícil olhar para ela?",
+    "tokens": [
+      "A:",
+      "Oye",
+      ",",
+      "la",
+      "pantalla",
+      "de",
+      "tu",
+      "computadora",
+      "está",
+      "muy",
+      "brillante",
+      ".",
+      "¿No",
+      "te",
+      "resulta",
+      "difícil",
+      "mirarla",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, Ouve"
+      },
+      {
+        "id": 2,
+        "word": "pantalla",
+        "pinyin": "",
+        "meaning": "tela"
+      },
+      {
+        "id": 3,
+        "word": "computadora",
+        "pinyin": "",
+        "meaning": "computador"
+      },
+      {
+        "id": 4,
+        "word": "brillante",
+        "pinyin": "",
+        "meaning": "brilhante"
+      },
+      {
+        "id": 5,
+        "word": "resulta difícil",
+        "pinyin": "",
+        "meaning": "é difícil / você acha difícil"
+      },
+      {
+        "id": 6,
+        "word": "mirarla",
+        "pinyin": "",
+        "meaning": "olhá-la / olhar para ela"
+      }
+    ],
+    "id": "local-1772296776319-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oye, no me importa. Necesito apurarme.",
+    "pinyin": "",
+    "translation": "B: Ei, não me importo. Preciso me apressar.",
+    "tokens": [
+      "B:",
+      "Oye",
+      ",",
+      "no",
+      "me",
+      "importa",
+      ".",
+      "Necesito",
+      "apurarme",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei, Ouve"
+      },
+      {
+        "id": 2,
+        "word": "no me importa",
+        "pinyin": "",
+        "meaning": "não me importo / não me importa"
+      },
+      {
+        "id": 3,
+        "word": "Necesito",
+        "pinyin": "",
+        "meaning": "preciso"
+      },
+      {
+        "id": 4,
+        "word": "apurarme",
+        "pinyin": "",
+        "meaning": "me apressar"
+      }
+    ],
+    "id": "local-1772296776319-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: A ti no te importa, pero a mí sí. Si está muy brillante no podré dormir.",
+    "pinyin": "",
+    "translation": "A: Para você não importa, mas para mim sim. Se estiver muito brilhante, não conseguirei dormir.",
+    "tokens": [
+      "A:",
+      "A",
+      "ti",
+      "no",
+      "te",
+      "importa",
+      ",",
+      "pero",
+      "a",
+      "mí",
+      "sí",
+      ".",
+      "Si",
+      "está",
+      "muy",
+      "brillante",
+      "no",
+      "podré",
+      "dormir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "A ti no te importa",
+        "pinyin": "",
+        "meaning": "para você não importa"
+      },
+      {
+        "id": 2,
+        "word": "a mí sí",
+        "pinyin": "",
+        "meaning": "para mim sim"
+      },
+      {
+        "id": 3,
+        "word": "brillante",
+        "pinyin": "",
+        "meaning": "brilhante"
+      },
+      {
+        "id": 4,
+        "word": "podré",
+        "pinyin": "",
+        "meaning": "poderei / conseguirei (futuro de poder)"
+      },
+      {
+        "id": 5,
+        "word": "dormir",
+        "pinyin": "",
+        "meaning": "dormir"
+      }
+    ],
+    "id": "local-1772296776319-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿En serio? Entonces lo siento. La cambiaré. ¿Cómo se cambia el brillo de la pantalla? Zhenzhen, ¿sabes?",
+    "pinyin": "",
+    "translation": "B: É sério? Então, sinto muito. Eu vou mudar. Como se muda o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "B:",
+      "¿En",
+      "serio",
+      "?",
+      "Entonces",
+      "lo",
+      "siento",
+      ".",
+      "La",
+      "cambiaré",
+      ".",
+      "¿Cómo",
+      "se",
+      "cambia",
+      "el",
+      "brillo",
+      "de",
+      "la",
+      "pantalla",
+      "?",
+      "Zhenzhen",
+      ",",
+      "¿sabes",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "¿En serio?",
+        "pinyin": "",
+        "meaning": "É sério?"
+      },
+      {
+        "id": 2,
+        "word": "lo siento",
+        "pinyin": "",
+        "meaning": "sinto muito"
+      },
+      {
+        "id": 3,
+        "word": "cambiaré",
+        "pinyin": "",
+        "meaning": "mudarei (futuro de cambiar)"
+      },
+      {
+        "id": 4,
+        "word": "se cambia",
+        "pinyin": "",
+        "meaning": "se muda / é mudado"
+      },
+      {
+        "id": 5,
+        "word": "brillo",
+        "pinyin": "",
+        "meaning": "brilho"
+      },
+      {
+        "id": 6,
+        "word": "pantalla",
+        "pinyin": "",
+        "meaning": "tela"
+      },
+      {
+        "id": 7,
+        "word": "¿sabes?",
+        "pinyin": "",
+        "meaning": "você sabe?"
+      }
+    ],
+    "id": "local-1772296776319-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La mía es una de escritorio. En la parte inferior de la pantalla hay un botón que puedes presionar. Si es una laptop, busca en el teclado para ver si hay una tecla con un símbolo de función.",
+    "pinyin": "",
+    "translation": "A: A minha é de mesa. Na parte inferior da tela há um botão que você pode pressionar. Se for um laptop, procure no teclado para ver se há uma tecla com um símbolo de função.",
+    "tokens": [
+      "A:",
+      "La",
+      "mía",
+      "es",
+      "una",
+      "de",
+      "escritorio",
+      ".",
+      "En",
+      "la",
+      "parte",
+      "inferior",
+      "de",
+      "la",
+      "pantalla",
+      "hay",
+      "un",
+      "botón",
+      "que",
+      "puedes",
+      "presionar",
+      ".",
+      "Si",
+      "es",
+      "una",
+      "laptop",
+      ",",
+      "busca",
+      "en",
+      "el",
+      "teclado",
+      "para",
+      "ver",
+      "si",
+      "hay",
+      "una",
+      "tecla",
+      "con",
+      "un",
+      "símbolo",
+      "de",
+      "función",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "La mía",
+        "pinyin": "",
+        "meaning": "A minha"
+      },
+      {
+        "id": 2,
+        "word": "de escritorio",
+        "pinyin": "",
+        "meaning": "de mesa (referindo-se a computador)"
+      },
+      {
+        "id": 3,
+        "word": "parte inferior",
+        "pinyin": "",
+        "meaning": "parte inferior"
+      },
+      {
+        "id": 4,
+        "word": "pantalla",
+        "pinyin": "",
+        "meaning": "tela"
+      },
+      {
+        "id": 5,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há / existe"
+      },
+      {
+        "id": 6,
+        "word": "botón",
+        "pinyin": "",
+        "meaning": "botão"
+      },
+      {
+        "id": 7,
+        "word": "puedes presionar",
+        "pinyin": "",
+        "meaning": "você pode pressionar"
+      },
+      {
+        "id": 8,
+        "word": "laptop",
+        "pinyin": "",
+        "meaning": "laptop"
+      },
+      {
+        "id": 9,
+        "word": "busca",
+        "pinyin": "",
+        "meaning": "procure (imperativo de buscar)"
+      },
+      {
+        "id": 10,
+        "word": "teclado",
+        "pinyin": "",
+        "meaning": "teclado"
+      },
+      {
+        "id": 11,
+        "word": "tecla",
+        "pinyin": "",
+        "meaning": "tecla"
+      },
+      {
+        "id": 12,
+        "word": "símbolo de función",
+        "pinyin": "",
+        "meaning": "símbolo de função"
+      }
+    ],
+    "id": "local-1772296776319-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Déjame ver. Esta ajusta el contraste, esta es el color. Oh, esta es el brillo. Bien, la he puesto lo más oscura que he podido. ¿Está un poco mejor?",
+    "pinyin": "",
+    "translation": "B: Deixa-me ver. Esta ajusta o contraste, esta é a cor. Oh, esta é o brilho. Bem, eu a coloquei o mais escura que pude. Está um pouco melhor?",
+    "tokens": [
+      "B:",
+      "Déjame",
+      "ver",
+      ".",
+      "Esta",
+      "ajusta",
+      "el",
+      "contraste",
+      ",",
+      "esta",
+      "es",
+      "el",
+      "color",
+      ".",
+      "Oh",
+      ",",
+      "esta",
+      "es",
+      "el",
+      "brillo",
+      ".",
+      "Bien",
+      ",",
+      "la",
+      "he",
+      "puesto",
+      "lo",
+      "más",
+      "oscura",
+      "que",
+      "he",
+      "podido",
+      ".",
+      "¿Está",
+      "un",
+      "poco",
+      "mejor",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Déjame ver",
+        "pinyin": "",
+        "meaning": "Deixa-me ver"
+      },
+      {
+        "id": 2,
+        "word": "ajusta",
+        "pinyin": "",
+        "meaning": "ajusta (de ajustar)"
+      },
+      {
+        "id": 3,
+        "word": "contraste",
+        "pinyin": "",
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "color",
+        "pinyin": "",
+        "meaning": "cor"
+      },
+      {
+        "id": 5,
+        "word": "brillo",
+        "pinyin": "",
+        "meaning": "brilho"
+      },
+      {
+        "id": 6,
+        "word": "he puesto",
+        "pinyin": "",
+        "meaning": "coloquei / tenho posto (pretérito perfeito de poner)"
+      },
+      {
+        "id": 7,
+        "word": "lo más... que he podido",
+        "pinyin": "",
+        "meaning": "o mais... que pude"
+      },
+      {
+        "id": 8,
+        "word": "oscura",
+        "pinyin": "",
+        "meaning": "escura (feminino de 'oscuro', referindo-se à tela)"
+      },
+      {
+        "id": 9,
+        "word": "un poco mejor",
+        "pinyin": "",
+        "meaning": "um pouco melhor"
+      }
+    ],
+    "id": "local-1772296776319-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Está mucho mejor. Me voy a dormir. ¡Buena suerte!",
+    "pinyin": "",
+    "translation": "A: Está muito melhor. Vou dormir. Boa sorte!",
+    "tokens": [
+      "A:",
+      "Está",
+      "mucho",
+      "mejor",
+      ".",
+      "Me",
+      "voy",
+      "a",
+      "dormir",
+      ".",
+      "¡Buena",
+      "suerte",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mucho mejor",
+        "pinyin": "",
+        "meaning": "muito melhor"
+      },
+      {
+        "id": 2,
+        "word": "Me voy a dormir",
+        "pinyin": "",
+        "meaning": "Vou dormir"
+      },
+      {
+        "id": 3,
+        "word": "Buena suerte",
+        "pinyin": "",
+        "meaning": "Boa sorte"
+      }
+    ],
+    "id": "local-1772296776319-6",
+    "language": "Espanhol"
+  }
+]

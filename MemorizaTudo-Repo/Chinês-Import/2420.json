@@ -1,0 +1,538 @@
+[
+  {
+    "chinese": "彤彤，你猜那天我碰到谁了？",
+    "pinyin": "Tóngtóng, nǐ cāi nàtiān wǒ pèngdào shuí le?",
+    "translation": "Tongtong, adivinha quem eu encontrei aquele dia?",
+    "tokens": [
+      "彤彤",
+      "，",
+      "你",
+      "猜",
+      "那天",
+      "我",
+      "碰到",
+      "谁",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "彤彤",
+        "pinyin": "Tóngtóng",
+        "meaning": "(nome próprio, diminutivo comum para meninas)"
+      },
+      {
+        "id": 2,
+        "word": "猜",
+        "pinyin": "cāi",
+        "meaning": "adivinhar, supor"
+      },
+      {
+        "id": 3,
+        "word": "那天",
+        "pinyin": "nàtiān",
+        "meaning": "aquele dia"
+      },
+      {
+        "id": 4,
+        "word": "碰到",
+        "pinyin": "pèngdào",
+        "meaning": "encontrar, topar com"
+      },
+      {
+        "id": 5,
+        "word": "谁",
+        "pinyin": "shuí",
+        "meaning": "quem"
+      }
+    ],
+    "id": "local-1772296477478-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "谁啊？",
+    "pinyin": "Shuí a?",
+    "translation": "Quem?",
+    "tokens": [
+      "谁",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "谁",
+        "pinyin": "shuí",
+        "meaning": "quem"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "(partícula interrogativa/exclamativa)"
+      }
+    ],
+    "id": "local-1772296477478-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我前男友。",
+    "pinyin": "Wǒ qiánnányǒu.",
+    "translation": "Meu ex-namorado.",
+    "tokens": [
+      "我",
+      "前男友",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu, meu"
+      },
+      {
+        "id": 2,
+        "word": "前男友",
+        "pinyin": "qiánnányǒu",
+        "meaning": "ex-namorado"
+      }
+    ],
+    "id": "local-1772296477478-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "真的假的？你有没有跟他说话？",
+    "pinyin": "Zhēn de jiǎ de? Nǐ yǒu méiyǒu gēn tā shuōhuà?",
+    "translation": "É sério? Você falou com ele?",
+    "tokens": [
+      "真",
+      "的",
+      "假",
+      "的",
+      "？",
+      "你",
+      "有",
+      "没有",
+      "跟",
+      "他",
+      "说话",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真的假的",
+        "pinyin": "zhēn de jiǎ de",
+        "meaning": "é sério? (literalmente: verdadeiro ou falso?)"
+      },
+      {
+        "id": 2,
+        "word": "有没有",
+        "pinyin": "yǒu méiyǒu",
+        "meaning": "tem ou não tem? (usado para formar perguntas sim/não)"
+      },
+      {
+        "id": 3,
+        "word": "跟",
+        "pinyin": "gēn",
+        "meaning": "com"
+      },
+      {
+        "id": 4,
+        "word": "他",
+        "pinyin": "tā",
+        "meaning": "ele"
+      },
+      {
+        "id": 5,
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "falar"
+      }
+    ],
+    "id": "local-1772296477478-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "没有。他跟一个女生在一起。",
+    "pinyin": "Méiyǒu. Tā gēn yīgè nǚshēng zài yīqǐ.",
+    "translation": "Não. Ele estava com uma garota.",
+    "tokens": [
+      "没有",
+      "。",
+      "他",
+      "跟",
+      "一个",
+      "女生",
+      "在",
+      "一起",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "não (ter/fazer), não há"
+      },
+      {
+        "id": 2,
+        "word": "跟",
+        "pinyin": "gēn",
+        "meaning": "com"
+      },
+      {
+        "id": 3,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um/uma"
+      },
+      {
+        "id": 4,
+        "word": "女生",
+        "pinyin": "nǚshēng",
+        "meaning": "garota, moça"
+      },
+      {
+        "id": 5,
+        "word": "在一起",
+        "pinyin": "zài yīqǐ",
+        "meaning": "juntos, estar com"
+      }
+    ],
+    "id": "local-1772296477478-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是不是那个让他跟你分手的狐狸精？",
+    "pinyin": "Shì búshì nàgè ràng tā gēn nǐ fēnshǒu de húlíjīng?",
+    "translation": "É aquela raposa que o fez terminar com você?",
+    "tokens": [
+      "是",
+      "不是",
+      "那个",
+      "让",
+      "他",
+      "跟",
+      "你",
+      "分手",
+      "的",
+      "狐狸精",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是不是",
+        "pinyin": "shì búshì",
+        "meaning": "é ou não é? (usado para formar perguntas sim/não)"
+      },
+      {
+        "id": 2,
+        "word": "那个",
+        "pinyin": "nàgè",
+        "meaning": "aquele/aquela"
+      },
+      {
+        "id": 3,
+        "word": "让",
+        "pinyin": "ràng",
+        "meaning": "deixar, fazer com que"
+      },
+      {
+        "id": 4,
+        "word": "分手",
+        "pinyin": "fēnshǒu",
+        "meaning": "terminar (relacionamento)"
+      },
+      {
+        "id": 5,
+        "word": "狐狸精",
+        "pinyin": "húlíjīng",
+        "meaning": "literalmente 'espírito de raposa'; mulher sedutora e traiçoeira, 'a outra'"
+      }
+    ],
+    "id": "local-1772296477478-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "不是。他又换了一个新的。",
+    "pinyin": "Búshì. Tā yòu huànle yīgè xīn de.",
+    "translation": "Não. Ele trocou por uma nova de novo.",
+    "tokens": [
+      "不是",
+      "。",
+      "他",
+      "又",
+      "换",
+      "了",
+      "一个",
+      "新",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
+      },
+      {
+        "id": 2,
+        "word": "又",
+        "pinyin": "yòu",
+        "meaning": "de novo, novamente (para ações repetidas ou que já aconteceram)"
+      },
+      {
+        "id": 3,
+        "word": "换",
+        "pinyin": "huàn",
+        "meaning": "trocar, mudar"
+      },
+      {
+        "id": 4,
+        "word": "新的",
+        "pinyin": "xīn de",
+        "meaning": "um novo/uma nova"
+      }
+    ],
+    "id": "local-1772296477478-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "咦？他又劈腿了？那个女生长什么样？",
+    "pinyin": "Yí? Tā yòu pītuǐ le? Nàgè nǚshēng zhǎng shénmeyàng?",
+    "translation": "Ah? Ele traiu de novo? Como era aquela garota?",
+    "tokens": [
+      "咦",
+      "？",
+      "他",
+      "又",
+      "劈腿",
+      "了",
+      "？",
+      "那个",
+      "女生",
+      "长",
+      "什么",
+      "样",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "咦",
+        "pinyin": "yí",
+        "meaning": "(interjeição de surpresa, 'ah?')"
+      },
+      {
+        "id": 2,
+        "word": "又",
+        "pinyin": "yòu",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 3,
+        "word": "劈腿",
+        "pinyin": "pītuǐ",
+        "meaning": "trair (em um relacionamento amoroso), ter um caso"
+      },
+      {
+        "id": 4,
+        "word": "那个",
+        "pinyin": "nàgè",
+        "meaning": "aquele/aquela"
+      },
+      {
+        "id": 5,
+        "word": "女生",
+        "pinyin": "nǚshēng",
+        "meaning": "garota, moça"
+      },
+      {
+        "id": 6,
+        "word": "长什么样",
+        "pinyin": "zhǎng shénmeyàng",
+        "meaning": "como se parece? (aparência)"
+      }
+    ],
+    "id": "local-1772296477478-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "她看起来很漂亮，但是好像整过容。",
+    "pinyin": "Tā kàn qǐlái hěn piàoliang, dànshì hǎoxiàng zhěng guò róng.",
+    "translation": "Ela parecia muito bonita, mas acho que fez cirurgia plástica.",
+    "tokens": [
+      "她",
+      "看",
+      "起来",
+      "很",
+      "漂亮",
+      "，",
+      "但是",
+      "好像",
+      "整",
+      "过",
+      "容",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "她",
+        "pinyin": "tā",
+        "meaning": "ela"
+      },
+      {
+        "id": 2,
+        "word": "看起来",
+        "pinyin": "kàn qǐlái",
+        "meaning": "parecer, aparentemente"
+      },
+      {
+        "id": 3,
+        "word": "漂亮",
+        "pinyin": "piàoliang",
+        "meaning": "bonita"
+      },
+      {
+        "id": 4,
+        "word": "但是",
+        "pinyin": "dànshì",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 5,
+        "word": "好像",
+        "pinyin": "hǎoxiàng",
+        "meaning": "parecer, como se, talvez"
+      },
+      {
+        "id": 6,
+        "word": "整过容",
+        "pinyin": "zhěng guò róng",
+        "meaning": "ter feito cirurgia plástica"
+      }
+    ],
+    "id": "local-1772296477478-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "他真不是什么好东西。还好你跟他分手了。",
+    "pinyin": "Tā zhēn búshì shénme hǎodōngxi. Hái hǎo nǐ gēn tā fēnshǒu le.",
+    "translation": "Ele realmente não é uma boa pessoa. Ainda bem que você terminou com ele.",
+    "tokens": [
+      "他",
+      "真",
+      "不是",
+      "什么",
+      "好",
+      "东西",
+      "。",
+      "还好",
+      "你",
+      "跟",
+      "他",
+      "分手",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 2,
+        "word": "不是什么好东西",
+        "pinyin": "búshì shénme hǎodōngxi",
+        "meaning": "não é uma boa pessoa/coisa (sentido pejorativo)"
+      },
+      {
+        "id": 3,
+        "word": "还好",
+        "pinyin": "hái hǎo",
+        "meaning": "ainda bem, por sorte"
+      },
+      {
+        "id": 4,
+        "word": "分手",
+        "pinyin": "fēnshǒu",
+        "meaning": "terminar (um relacionamento)"
+      }
+    ],
+    "id": "local-1772296477478-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "可不是嘛。那时候我真是瞎了眼才会跟他在一起。",
+    "pinyin": "Kě búshì ma. Nà shíhou wǒ zhēnshi xiāle yǎn cái huì gēn tā zài yīqǐ.",
+    "translation": "Pois é, né? Naquela época, eu realmente devo ter ficado cega para estar com ele.",
+    "tokens": [
+      "可不是",
+      "嘛",
+      "。",
+      "那时",
+      "候",
+      "我",
+      "真",
+      "是",
+      "瞎",
+      "了",
+      "眼",
+      "才",
+      "会",
+      "跟",
+      "他",
+      "在",
+      "一起",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可不是嘛",
+        "pinyin": "kě búshì ma",
+        "meaning": "exatamente! Você não poderia estar mais certo."
+      },
+      {
+        "id": 2,
+        "word": "那时候",
+        "pinyin": "nà shíhou",
+        "meaning": "naquela época, naquele tempo"
+      },
+      {
+        "id": 3,
+        "word": "真是",
+        "pinyin": "zhēnshi",
+        "meaning": "realmente (com ênfase)"
+      },
+      {
+        "id": 4,
+        "word": "瞎了眼",
+        "pinyin": "xiāle yǎn",
+        "meaning": "ficar cego (figurativo, de não ver a verdade)"
+      },
+      {
+        "id": 5,
+        "word": "才会",
+        "pinyin": "cái huì",
+        "meaning": "só então, somente (para indicar uma condição ou resultado)"
+      },
+      {
+        "id": 6,
+        "word": "在一起",
+        "pinyin": "zài yīqǐ",
+        "meaning": "juntos, estar com (alguém)"
+      }
+    ],
+    "id": "local-1772296477478-10",
+    "language": "Chinês"
+  }
+]

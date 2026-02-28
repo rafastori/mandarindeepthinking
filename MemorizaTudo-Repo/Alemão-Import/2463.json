@@ -1,0 +1,941 @@
+[
+  {
+    "chinese": "A: Guten Tag, kann ich Ihnen helfen?",
+    "pinyin": "",
+    "translation": "A: Bom dia/Boa tarde, posso ajudá-lo?",
+    "tokens": [
+      "A:",
+      "Guten",
+      "Tag",
+      ",",
+      "kann",
+      "ich",
+      "Ihnen",
+      "helfen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guten Tag",
+        "pinyin": null,
+        "meaning": "Bom dia/Boa tarde"
+      },
+      {
+        "id": 2,
+        "word": "kann",
+        "pinyin": null,
+        "meaning": "posso (verbo 'können' - poder)"
+      },
+      {
+        "id": 3,
+        "word": "ich",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "Ihnen",
+        "pinyin": null,
+        "meaning": "a você/ao senhor/à senhora (dativo formal)"
+      },
+      {
+        "id": 5,
+        "word": "helfen",
+        "pinyin": null,
+        "meaning": "ajudar"
+      }
+    ],
+    "id": "local-1772293619744-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich möchte mir gerne eine Brille anfertigen lassen.",
+    "pinyin": "",
+    "translation": "B: Eu gostaria de mandar fazer um óculos.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "möchte",
+      "mir",
+      "gerne",
+      "eine",
+      "Brille",
+      "anfertigen",
+      "lassen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ich",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "gostaria (de)"
+      },
+      {
+        "id": 3,
+        "word": "mir",
+        "pinyin": null,
+        "meaning": "a mim (dativo)"
+      },
+      {
+        "id": 4,
+        "word": "gerne",
+        "pinyin": null,
+        "meaning": "com prazer/de bom grado"
+      },
+      {
+        "id": 5,
+        "word": "eine Brille",
+        "pinyin": null,
+        "meaning": "um óculos"
+      },
+      {
+        "id": 6,
+        "word": "anfertigen lassen",
+        "pinyin": null,
+        "meaning": "mandar fazer"
+      }
+    ],
+    "id": "local-1772293619744-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Eine Brille gegen Kurzsichtigkeit, eine Brille ohne Sehstärke oder eine Lesebrille?",
+    "pinyin": "",
+    "translation": "A: Um óculos para miopia, um óculos sem grau ou um óculos de leitura?",
+    "tokens": [
+      "A:",
+      "Eine",
+      "Brille",
+      "gegen",
+      "Kurzsichtigkeit",
+      ",",
+      "eine",
+      "Brille",
+      "ohne",
+      "Sehstärke",
+      "oder",
+      "eine",
+      "Lesebrille",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eine Brille",
+        "pinyin": null,
+        "meaning": "um óculos"
+      },
+      {
+        "id": 2,
+        "word": "gegen",
+        "pinyin": null,
+        "meaning": "para/contra"
+      },
+      {
+        "id": 3,
+        "word": "Kurzsichtigkeit",
+        "pinyin": null,
+        "meaning": "miopia"
+      },
+      {
+        "id": 4,
+        "word": "ohne",
+        "pinyin": null,
+        "meaning": "sem"
+      },
+      {
+        "id": 5,
+        "word": "Sehstärke",
+        "pinyin": null,
+        "meaning": "grau de visão/dioptria"
+      },
+      {
+        "id": 6,
+        "word": "oder",
+        "pinyin": null,
+        "meaning": "ou"
+      },
+      {
+        "id": 7,
+        "word": "Lesebrille",
+        "pinyin": null,
+        "meaning": "óculos de leitura"
+      }
+    ],
+    "id": "local-1772293619744-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Eine Brille gegen Kurzsichtigkeit mit Astigmatismus.",
+    "pinyin": "",
+    "translation": "B: Um óculos para miopia com astigmatismo.",
+    "tokens": [
+      "B:",
+      "Eine",
+      "Brille",
+      "gegen",
+      "Kurzsichtigkeit",
+      "mit",
+      "Astigmatismus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eine Brille",
+        "pinyin": null,
+        "meaning": "um óculos"
+      },
+      {
+        "id": 2,
+        "word": "gegen",
+        "pinyin": null,
+        "meaning": "para/contra"
+      },
+      {
+        "id": 3,
+        "word": "Kurzsichtigkeit",
+        "pinyin": null,
+        "meaning": "miopia"
+      },
+      {
+        "id": 4,
+        "word": "mit",
+        "pinyin": null,
+        "meaning": "com"
+      },
+      {
+        "id": 5,
+        "word": "Astigmatismus",
+        "pinyin": null,
+        "meaning": "astigmatismo"
+      }
+    ],
+    "id": "local-1772293619744-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie können sich hier an dieser Seite ein Gestell aussuchen. Wenn Sie eins gewählt haben, können Sie bezahlen und dann drüben Ihren Sehtest machen lassen.",
+    "pinyin": "",
+    "translation": "A: O senhor pode escolher uma armação aqui deste lado. Quando tiver escolhido uma, pode pagar e depois fazer seu exame de vista ali do outro lado.",
+    "tokens": [
+      "A:",
+      "Sie",
+      "können",
+      "sich",
+      "hier",
+      "an",
+      "dieser",
+      "Seite",
+      "ein",
+      "Gestell",
+      "aussuchen",
+      ".",
+      "Wenn",
+      "Sie",
+      "eins",
+      "gewählt",
+      "haben",
+      ",",
+      "können",
+      "Sie",
+      "bezahlen",
+      "und",
+      "dann",
+      "drüben",
+      "Ihren",
+      "Sehtest",
+      "machen",
+      "lassen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sie",
+        "pinyin": null,
+        "meaning": "o senhor/a senhora (formal)"
+      },
+      {
+        "id": 2,
+        "word": "können",
+        "pinyin": null,
+        "meaning": "podem/pode"
+      },
+      {
+        "id": 3,
+        "word": "sich aussuchen",
+        "pinyin": null,
+        "meaning": "escolher (para si)"
+      },
+      {
+        "id": 4,
+        "word": "hier",
+        "pinyin": null,
+        "meaning": "aqui"
+      },
+      {
+        "id": 5,
+        "word": "Seite",
+        "pinyin": null,
+        "meaning": "lado"
+      },
+      {
+        "id": 6,
+        "word": "ein Gestell",
+        "pinyin": null,
+        "meaning": "uma armação"
+      },
+      {
+        "id": 7,
+        "word": "Wenn",
+        "pinyin": null,
+        "meaning": "quando/se"
+      },
+      {
+        "id": 8,
+        "word": "gewählt haben",
+        "pinyin": null,
+        "meaning": "ter escolhido"
+      },
+      {
+        "id": 9,
+        "word": "bezahlen",
+        "pinyin": null,
+        "meaning": "pagar"
+      },
+      {
+        "id": 10,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 11,
+        "word": "drüben",
+        "pinyin": null,
+        "meaning": "ali do outro lado"
+      },
+      {
+        "id": 12,
+        "word": "Ihren",
+        "pinyin": null,
+        "meaning": "seu/sua (formal)"
+      },
+      {
+        "id": 13,
+        "word": "Sehtest",
+        "pinyin": null,
+        "meaning": "exame de vista"
+      },
+      {
+        "id": 14,
+        "word": "machen lassen",
+        "pinyin": null,
+        "meaning": "mandar fazer"
+      }
+    ],
+    "id": "local-1772293619744-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay. Wie viel kostet eine Brille?",
+    "pinyin": "",
+    "translation": "B: Ok. Quanto custa um óculos?",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Wie",
+      "viel",
+      "kostet",
+      "eine",
+      "Brille",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wie viel",
+        "pinyin": null,
+        "meaning": "quanto"
+      },
+      {
+        "id": 2,
+        "word": "kostet",
+        "pinyin": null,
+        "meaning": "custa"
+      },
+      {
+        "id": 3,
+        "word": "eine Brille",
+        "pinyin": null,
+        "meaning": "um óculos"
+      }
+    ],
+    "id": "local-1772293619744-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wir haben drei Paketpreise: 399, 599, 799. Darin enthalten sind die Gläser, das Gestell, ein Brillenetui und ein Reinigungstuch.",
+    "pinyin": "",
+    "translation": "A: Temos três preços de pacotes: 399, 599, 799. Neles estão incluídos as lentes, a armação, um estojo de óculos e um pano de limpeza.",
+    "tokens": [
+      "A:",
+      "Wir",
+      "haben",
+      "drei",
+      "Paketpreise",
+      ":",
+      "399",
+      ",",
+      "599",
+      ",",
+      "799",
+      ".",
+      "Darin",
+      "enthalten",
+      "sind",
+      "die",
+      "Gläser",
+      ",",
+      "das",
+      "Gestell",
+      ",",
+      "ein",
+      "Brillenetui",
+      "und",
+      "ein",
+      "Reinigungstuch",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wir",
+        "pinyin": null,
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "haben",
+        "pinyin": null,
+        "meaning": "temos"
+      },
+      {
+        "id": 3,
+        "word": "drei",
+        "pinyin": null,
+        "meaning": "três"
+      },
+      {
+        "id": 4,
+        "word": "Paketpreise",
+        "pinyin": null,
+        "meaning": "preços de pacote"
+      },
+      {
+        "id": 5,
+        "word": "Darin enthalten sind",
+        "pinyin": null,
+        "meaning": "neles estão incluídos"
+      },
+      {
+        "id": 6,
+        "word": "die Gläser",
+        "pinyin": null,
+        "meaning": "as lentes"
+      },
+      {
+        "id": 7,
+        "word": "das Gestell",
+        "pinyin": null,
+        "meaning": "a armação"
+      },
+      {
+        "id": 8,
+        "word": "ein Brillenetui",
+        "pinyin": null,
+        "meaning": "um estojo de óculos"
+      },
+      {
+        "id": 9,
+        "word": "und",
+        "pinyin": null,
+        "meaning": "e"
+      },
+      {
+        "id": 10,
+        "word": "ein Reinigungstuch",
+        "pinyin": null,
+        "meaning": "um pano de limpeza"
+      }
+    ],
+    "id": "local-1772293619744-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wie lange muss ich warten, bis ich sie abholen kann?",
+    "pinyin": "",
+    "translation": "B: Quanto tempo preciso esperar até que eu possa retirá-los?",
+    "tokens": [
+      "B:",
+      "Wie",
+      "lange",
+      "muss",
+      "ich",
+      "warten",
+      ",",
+      "bis",
+      "ich",
+      "sie",
+      "abholen",
+      "kann",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wie lange",
+        "pinyin": null,
+        "meaning": "quanto tempo"
+      },
+      {
+        "id": 2,
+        "word": "muss",
+        "pinyin": null,
+        "meaning": "preciso/devo"
+      },
+      {
+        "id": 3,
+        "word": "ich",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "warten",
+        "pinyin": null,
+        "meaning": "esperar"
+      },
+      {
+        "id": 5,
+        "word": "bis",
+        "pinyin": null,
+        "meaning": "até que"
+      },
+      {
+        "id": 6,
+        "word": "sie",
+        "pinyin": null,
+        "meaning": "eles/elas"
+      },
+      {
+        "id": 7,
+        "word": "abholen",
+        "pinyin": null,
+        "meaning": "retirar/buscar"
+      },
+      {
+        "id": 8,
+        "word": "kann",
+        "pinyin": null,
+        "meaning": "posso"
+      }
+    ],
+    "id": "local-1772293619744-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Eine Stunde nach dem Sehtest.",
+    "pinyin": "",
+    "translation": "A: Uma hora após o exame de vista.",
+    "tokens": [
+      "A:",
+      "Eine",
+      "Stunde",
+      "nach",
+      "dem",
+      "Sehtest",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eine Stunde",
+        "pinyin": null,
+        "meaning": "uma hora"
+      },
+      {
+        "id": 2,
+        "word": "nach",
+        "pinyin": null,
+        "meaning": "depois/após"
+      },
+      {
+        "id": 3,
+        "word": "Sehtest",
+        "pinyin": null,
+        "meaning": "exame de vista"
+      }
+    ],
+    "id": "local-1772293619744-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gibt es auch Gläser, die gegen Kurzsichtigkeit und Astigmatismus helfen und gleichzeitig eine Sonnenbrille sind?",
+    "pinyin": "",
+    "translation": "B: Também existem lentes que ajudam contra miopia e astigmatismo e são ao mesmo tempo óculos de sol?",
+    "tokens": [
+      "B:",
+      "Gibt",
+      "es",
+      "auch",
+      "Gläser",
+      ",",
+      "die",
+      "gegen",
+      "Kurzsichtigkeit",
+      "und",
+      "Astigmatismus",
+      "helfen",
+      "und",
+      "gleichzeitig",
+      "eine",
+      "Sonnenbrille",
+      "sind",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gibt es",
+        "pinyin": null,
+        "meaning": "existe/há"
+      },
+      {
+        "id": 2,
+        "word": "auch",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "Gläser",
+        "pinyin": null,
+        "meaning": "lentes"
+      },
+      {
+        "id": 4,
+        "word": "die",
+        "pinyin": null,
+        "meaning": "que (pronome relativo)"
+      },
+      {
+        "id": 5,
+        "word": "gegen",
+        "pinyin": null,
+        "meaning": "contra"
+      },
+      {
+        "id": 6,
+        "word": "Kurzsichtigkeit",
+        "pinyin": null,
+        "meaning": "miopia"
+      },
+      {
+        "id": 7,
+        "word": "und",
+        "pinyin": null,
+        "meaning": "e"
+      },
+      {
+        "id": 8,
+        "word": "Astigmatismus",
+        "pinyin": null,
+        "meaning": "astigmatismo"
+      },
+      {
+        "id": 9,
+        "word": "helfen",
+        "pinyin": null,
+        "meaning": "ajudar"
+      },
+      {
+        "id": 10,
+        "word": "gleichzeitig",
+        "pinyin": null,
+        "meaning": "ao mesmo tempo"
+      },
+      {
+        "id": 11,
+        "word": "eine Sonnenbrille",
+        "pinyin": null,
+        "meaning": "um óculos de sol"
+      },
+      {
+        "id": 12,
+        "word": "sind",
+        "pinyin": null,
+        "meaning": "são"
+      }
+    ],
+    "id": "local-1772293619744-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja, die gibt es. Das sind aber spezielle Gläser. Die gibt es nicht zum Paketpreis, da müssen Sie Glas und Gestell einzeln kaufen. Ein Paar kostet mindestens über tausend.",
+    "pinyin": "",
+    "translation": "A: Sim, essas existem. Mas são lentes especiais. Elas não estão disponíveis no preço de pacote, pois o senhor precisa comprar a lente e a armação separadamente. Um par custa no mínimo mais de mil.",
+    "tokens": [
+      "A:",
+      "Ja",
+      ",",
+      "die",
+      "gibt",
+      "es",
+      ".",
+      "Das",
+      "sind",
+      "aber",
+      "spezielle",
+      "Gläser",
+      ".",
+      "Die",
+      "gibt",
+      "es",
+      "nicht",
+      "zum",
+      "Paketpreis",
+      ",",
+      "da",
+      "müssen",
+      "Sie",
+      "Glas",
+      "und",
+      "Gestell",
+      "einzeln",
+      "kaufen",
+      ".",
+      "Ein",
+      "Paar",
+      "kostet",
+      "mindestens",
+      "über",
+      "tausend",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "die gibt es",
+        "pinyin": null,
+        "meaning": "elas existem"
+      },
+      {
+        "id": 3,
+        "word": "Das sind",
+        "pinyin": null,
+        "meaning": "estas são"
+      },
+      {
+        "id": 4,
+        "word": "aber",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 5,
+        "word": "spezielle",
+        "pinyin": null,
+        "meaning": "especiais"
+      },
+      {
+        "id": 6,
+        "word": "Gläser",
+        "pinyin": null,
+        "meaning": "lentes"
+      },
+      {
+        "id": 7,
+        "word": "nicht",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 8,
+        "word": "zum Paketpreis",
+        "pinyin": null,
+        "meaning": "no preço de pacote"
+      },
+      {
+        "id": 9,
+        "word": "da",
+        "pinyin": null,
+        "meaning": "porque/já que"
+      },
+      {
+        "id": 10,
+        "word": "müssen",
+        "pinyin": null,
+        "meaning": "precisam"
+      },
+      {
+        "id": 11,
+        "word": "Sie",
+        "pinyin": null,
+        "meaning": "o senhor/a senhora"
+      },
+      {
+        "id": 12,
+        "word": "Glas",
+        "pinyin": null,
+        "meaning": "lente (singular)"
+      },
+      {
+        "id": 13,
+        "word": "Gestell",
+        "pinyin": null,
+        "meaning": "armação"
+      },
+      {
+        "id": 14,
+        "word": "einzeln",
+        "pinyin": null,
+        "meaning": "separadamente/individualmente"
+      },
+      {
+        "id": 15,
+        "word": "kaufen",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 16,
+        "word": "Ein Paar",
+        "pinyin": null,
+        "meaning": "um par"
+      },
+      {
+        "id": 17,
+        "word": "kostet",
+        "pinyin": null,
+        "meaning": "custa"
+      },
+      {
+        "id": 18,
+        "word": "mindestens",
+        "pinyin": null,
+        "meaning": "no mínimo"
+      },
+      {
+        "id": 19,
+        "word": "über tausend",
+        "pinyin": null,
+        "meaning": "mais de mil"
+      }
+    ],
+    "id": "local-1772293619744-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist teuer! Dann schaue ich mir lieber die für 399 an.",
+    "pinyin": "",
+    "translation": "B: Isso é caro! Então prefiro olhar os de 399.",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "teuer",
+      "!",
+      "Dann",
+      "schaue",
+      "ich",
+      "mir",
+      "lieber",
+      "die",
+      "für",
+      "399",
+      "an",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das",
+        "pinyin": null,
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é"
+      },
+      {
+        "id": 3,
+        "word": "teuer",
+        "pinyin": null,
+        "meaning": "caro"
+      },
+      {
+        "id": 4,
+        "word": "Dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 5,
+        "word": "schaue an",
+        "pinyin": null,
+        "meaning": "olhar para (verbo 'anschauen')"
+      },
+      {
+        "id": 6,
+        "word": "ich",
+        "pinyin": null,
+        "meaning": "eu"
+      },
+      {
+        "id": 7,
+        "word": "mir",
+        "pinyin": null,
+        "meaning": "a mim (dativo)"
+      },
+      {
+        "id": 8,
+        "word": "lieber",
+        "pinyin": null,
+        "meaning": "preferencialmente/melhor"
+      },
+      {
+        "id": 9,
+        "word": "die",
+        "pinyin": null,
+        "meaning": "os/as (pronome demonstrativo)"
+      },
+      {
+        "id": 10,
+        "word": "für",
+        "pinyin": null,
+        "meaning": "para/por"
+      }
+    ],
+    "id": "local-1772293619744-11",
+    "language": "Alemão"
+  }
+]

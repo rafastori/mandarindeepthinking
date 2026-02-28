@@ -1,0 +1,729 @@
+[
+  {
+    "chinese": "A: 웨이터, 제 아이 생일 케이크를 사고 싶어요. 대략 10명 정도입니다.",
+    "pinyin": "",
+    "translation": "A: Garçom, quero comprar um bolo de aniversário para meu filho. É para cerca de 10 pessoas.",
+    "tokens": [
+      "웨이터",
+      ",",
+      "제",
+      "아이",
+      "생일",
+      "케이크를",
+      "사고",
+      "싶어요",
+      ".",
+      "대략",
+      "10명",
+      "정도입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "웨이터",
+        "pinyin": "",
+        "meaning": "garçom"
+      },
+      {
+        "id": 1,
+        "word": "제",
+        "pinyin": "",
+        "meaning": "meu/minha (formal)"
+      },
+      {
+        "id": 2,
+        "word": "아이",
+        "pinyin": "",
+        "meaning": "criança, filho(a)"
+      },
+      {
+        "id": 3,
+        "word": "생일",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "사고 싶어요",
+        "pinyin": "",
+        "meaning": "quero comprar"
+      },
+      {
+        "id": 6,
+        "word": "대략",
+        "pinyin": "",
+        "meaning": "aproximadamente"
+      },
+      {
+        "id": 7,
+        "word": "10명",
+        "pinyin": "",
+        "meaning": "10 pessoas"
+      },
+      {
+        "id": 8,
+        "word": "정도",
+        "pinyin": "",
+        "meaning": "cerca de, por volta de"
+      }
+    ],
+    "id": "local-1772295513158-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 10명이면 12인치 케이크가 적당할 거예요.",
+    "pinyin": "",
+    "translation": "B: Para 10 pessoas, um bolo de 12 polegadas será adequado.",
+    "tokens": [
+      "10명이면",
+      "12인치",
+      "케이크가",
+      "적당할",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "10명",
+        "pinyin": "",
+        "meaning": "10 pessoas"
+      },
+      {
+        "id": 1,
+        "word": "-이면",
+        "pinyin": "",
+        "meaning": "se for"
+      },
+      {
+        "id": 2,
+        "word": "12인치",
+        "pinyin": "",
+        "meaning": "12 polegadas"
+      },
+      {
+        "id": 3,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "적당하다",
+        "pinyin": "",
+        "meaning": "ser adequado, apropriado"
+      },
+      {
+        "id": 5,
+        "word": "-을 거예요",
+        "pinyin": "",
+        "meaning": "irá (futuro, suposição)"
+      }
+    ],
+    "id": "local-1772295513158-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 어떤 종류의 케이크가 있나요?",
+    "pinyin": "",
+    "translation": "A: Então, que tipos de bolo vocês têm?",
+    "tokens": [
+      "그럼",
+      "어떤",
+      "종류의",
+      "케이크가",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 2,
+        "word": "종류",
+        "pinyin": "",
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 3,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "ter, haver, existir"
+      }
+    ],
+    "id": "local-1772295513158-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 과일 생크림 케이크, 초콜릿 케이크, 무스 케이크, 치즈 케이크가 있습니다.",
+    "pinyin": "",
+    "translation": "B: Temos bolo de creme fresco de frutas, bolo de chocolate, bolo de mousse e bolo de queijo.",
+    "tokens": [
+      "과일",
+      "생크림",
+      "케이크",
+      ",",
+      "초콜릿",
+      "케이크",
+      ",",
+      "무스",
+      "케이크",
+      ",",
+      "치즈",
+      "케이크가",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "과일",
+        "pinyin": "",
+        "meaning": "fruta"
+      },
+      {
+        "id": 1,
+        "word": "생크림",
+        "pinyin": "",
+        "meaning": "creme fresco, chantilly"
+      },
+      {
+        "id": 2,
+        "word": "초콜릿",
+        "pinyin": "",
+        "meaning": "chocolate"
+      },
+      {
+        "id": 3,
+        "word": "무스",
+        "pinyin": "",
+        "meaning": "mousse"
+      },
+      {
+        "id": 4,
+        "word": "치즈",
+        "pinyin": "",
+        "meaning": "queijo"
+      },
+      {
+        "id": 5,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "ter, haver, existir"
+      }
+    ],
+    "id": "local-1772295513158-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 무스 케이크 맛은 어떤가요?",
+    "pinyin": "",
+    "translation": "A: Qual é o sabor do bolo de mousse?",
+    "tokens": [
+      "무스",
+      "케이크",
+      "맛은",
+      "어떤가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "무스",
+        "pinyin": "",
+        "meaning": "mousse"
+      },
+      {
+        "id": 1,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 2,
+        "word": "맛",
+        "pinyin": "",
+        "meaning": "sabor"
+      },
+      {
+        "id": 3,
+        "word": "어떻다",
+        "pinyin": "",
+        "meaning": "como é? (qual é a qualidade?)"
+      }
+    ],
+    "id": "local-1772295513158-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 무스 케이크는 맛이 더 섬세하고 부드러우며, 가볍고 상쾌합니다.",
+    "pinyin": "",
+    "translation": "B: O bolo de mousse tem um sabor mais delicado e suave, é leve e refrescante.",
+    "tokens": [
+      "무스",
+      "케이크는",
+      "맛이",
+      "더",
+      "섬세하고",
+      "부드러우며",
+      ",",
+      "가볍고",
+      "상쾌합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "무스",
+        "pinyin": "",
+        "meaning": "mousse"
+      },
+      {
+        "id": 1,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 2,
+        "word": "맛",
+        "pinyin": "",
+        "meaning": "sabor"
+      },
+      {
+        "id": 3,
+        "word": "더",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 4,
+        "word": "섬세하다",
+        "pinyin": "",
+        "meaning": "ser delicado, sutil"
+      },
+      {
+        "id": 5,
+        "word": "부드럽다",
+        "pinyin": "",
+        "meaning": "ser suave, macio"
+      },
+      {
+        "id": 6,
+        "word": "가볍다",
+        "pinyin": "",
+        "meaning": "ser leve"
+      },
+      {
+        "id": 7,
+        "word": "상쾌하다",
+        "pinyin": "",
+        "meaning": "ser refrescante"
+      }
+    ],
+    "id": "local-1772295513158-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 12인치 무스 케이크를 살게요.",
+    "pinyin": "",
+    "translation": "A: Então, vou comprar um bolo de mousse de 12 polegadas.",
+    "tokens": [
+      "그럼",
+      "12인치",
+      "무스",
+      "케이크를",
+      "살게요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 1,
+        "word": "12인치",
+        "pinyin": "",
+        "meaning": "12 polegadas"
+      },
+      {
+        "id": 2,
+        "word": "무스",
+        "pinyin": "",
+        "meaning": "mousse"
+      },
+      {
+        "id": 3,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "사다",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "-을게요",
+        "pinyin": "",
+        "meaning": "farei (ação do falante com intenção ou promessa)"
+      }
+    ],
+    "id": "local-1772295513158-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 그런데 이 케이크는 미리 주문하셔야 합니다. 내일 10시 이후에 찾아가실 수 있습니다.",
+    "pinyin": "",
+    "translation": "B: Entendido. No entanto, este bolo precisa ser encomendado com antecedência. Você pode retirá-lo amanhã depois das 10h.",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "그런데",
+      "이",
+      "케이크는",
+      "미리",
+      "주문하셔야",
+      "합니다",
+      ".",
+      "내일",
+      "10시",
+      "이후에",
+      "찾아가실",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "알겠습니다",
+        "pinyin": "",
+        "meaning": "entendido, compreendido"
+      },
+      {
+        "id": 1,
+        "word": "그런데",
+        "pinyin": "",
+        "meaning": "mas, no entanto"
+      },
+      {
+        "id": 2,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "este(a)"
+      },
+      {
+        "id": 3,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 4,
+        "word": "미리",
+        "pinyin": "",
+        "meaning": "antecipadamente, com antecedência"
+      },
+      {
+        "id": 5,
+        "word": "주문하다",
+        "pinyin": "",
+        "meaning": "encomendar, pedir"
+      },
+      {
+        "id": 6,
+        "word": "-아야/어야 하다",
+        "pinyin": "",
+        "meaning": "ter que, precisar"
+      },
+      {
+        "id": 7,
+        "word": "내일",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 8,
+        "word": "10시",
+        "pinyin": "",
+        "meaning": "10 horas"
+      },
+      {
+        "id": 9,
+        "word": "이후",
+        "pinyin": "",
+        "meaning": "depois, após"
+      },
+      {
+        "id": 10,
+        "word": "찾아가다",
+        "pinyin": "",
+        "meaning": "ir buscar, ir pegar, ir retirar"
+      },
+      {
+        "id": 11,
+        "word": "-을 수 있다",
+        "pinyin": "",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772295513158-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 케이크는 갓 만드나요?",
+    "pinyin": "",
+    "translation": "A: O bolo é feito na hora?",
+    "tokens": [
+      "케이크는",
+      "갓",
+      "만드나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "케이크",
+        "pinyin": "",
+        "meaning": "bolo"
+      },
+      {
+        "id": 1,
+        "word": "갓",
+        "pinyin": "",
+        "meaning": "recém-, na hora"
+      },
+      {
+        "id": 2,
+        "word": "만들다",
+        "pinyin": "",
+        "meaning": "fazer, preparar"
+      }
+    ],
+    "id": "local-1772295513158-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 저희 셰프들이 매일 아침 신선하게 만듭니다. 안심하세요.",
+    "pinyin": "",
+    "translation": "B: Nossos chefs fazem (o bolo) fresco todas as manhãs. Fique tranquilo.",
+    "tokens": [
+      "저희",
+      "셰프들이",
+      "매일",
+      "아침",
+      "신선하게",
+      "만듭니다",
+      ".",
+      "안심하세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "저희",
+        "pinyin": "",
+        "meaning": "nosso(a) (formal)"
+      },
+      {
+        "id": 1,
+        "word": "셰프",
+        "pinyin": "",
+        "meaning": "chef"
+      },
+      {
+        "id": 2,
+        "word": "매일",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 3,
+        "word": "아침",
+        "pinyin": "",
+        "meaning": "manhã"
+      },
+      {
+        "id": 4,
+        "word": "신선하다",
+        "pinyin": "",
+        "meaning": "ser fresco"
+      },
+      {
+        "id": 5,
+        "word": "만들다",
+        "pinyin": "",
+        "meaning": "fazer, preparar"
+      },
+      {
+        "id": 6,
+        "word": "안심하다",
+        "pinyin": "",
+        "meaning": "ficar tranquilo, não se preocupar"
+      }
+    ],
+    "id": "local-1772295513158-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아이가 몇 살인지 여쭤봐도 될까요?",
+    "pinyin": "",
+    "translation": "B: Posso perguntar quantos anos a criança tem?",
+    "tokens": [
+      "아이가",
+      "몇",
+      "살인지",
+      "여쭤봐도",
+      "될까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "아이",
+        "pinyin": "",
+        "meaning": "criança"
+      },
+      {
+        "id": 1,
+        "word": "몇",
+        "pinyin": "",
+        "meaning": "quantos"
+      },
+      {
+        "id": 2,
+        "word": "살",
+        "pinyin": "",
+        "meaning": "ano de idade"
+      },
+      {
+        "id": 3,
+        "word": "-인지",
+        "pinyin": "",
+        "meaning": "se é (indicando dúvida ou pergunta indireta)"
+      },
+      {
+        "id": 4,
+        "word": "여쭤보다",
+        "pinyin": "",
+        "meaning": "perguntar (honorífico)"
+      },
+      {
+        "id": 5,
+        "word": "-아도/어도 되다",
+        "pinyin": "",
+        "meaning": "poder (ter permissão)"
+      }
+    ],
+    "id": "local-1772295513158-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 세 살입니다.",
+    "pinyin": "",
+    "translation": "A: Tem três anos.",
+    "tokens": [
+      "세",
+      "살입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "세",
+        "pinyin": "",
+        "meaning": "três (para contagem de idade ou objetos)"
+      },
+      {
+        "id": 1,
+        "word": "살",
+        "pinyin": "",
+        "meaning": "ano de idade"
+      }
+    ],
+    "id": "local-1772295513158-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 초 3개를 챙겨드리겠습니다.",
+    "pinyin": "",
+    "translation": "B: Entendido. Vou providenciar 3 velas para você.",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "초",
+      "3개를",
+      "챙겨드리겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "알겠습니다",
+        "pinyin": "",
+        "meaning": "entendido, compreendido"
+      },
+      {
+        "id": 1,
+        "word": "초",
+        "pinyin": "",
+        "meaning": "vela"
+      },
+      {
+        "id": 2,
+        "word": "3개",
+        "pinyin": "",
+        "meaning": "3 unidades"
+      },
+      {
+        "id": 3,
+        "word": "챙겨드리다",
+        "pinyin": "",
+        "meaning": "providenciar, cuidar de (para alguém)"
+      },
+      {
+        "id": 4,
+        "word": "-드리다",
+        "pinyin": "",
+        "meaning": "dar, oferecer (honorífico para o receptor)"
+      }
+    ],
+    "id": "local-1772295513158-12",
+    "language": "Coreano"
+  }
+]

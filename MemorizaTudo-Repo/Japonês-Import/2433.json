@@ -1,0 +1,541 @@
+[
+  {
+    "chinese": "A: 陳部長、お忙しい中、夕食をご馳走していただきありがとうございます。",
+    "pinyin": "",
+    "translation": "A: Chefe Chen, muito obrigado por me convidar para o jantar no meio de sua agenda lotada.",
+    "tokens": [
+      "陳部長",
+      "、",
+      "お忙しい",
+      "中",
+      "、",
+      "夕食",
+      "を",
+      "ご馳走していただき",
+      "ありがとう",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陳部長",
+        "pinyin": "",
+        "meaning": "Chefe Chen"
+      },
+      {
+        "id": 2,
+        "word": "忙しい",
+        "pinyin": "",
+        "meaning": "ocupado(a)"
+      },
+      {
+        "id": 3,
+        "word": "中",
+        "pinyin": "",
+        "meaning": "meio, durante (neste contexto: no meio de)"
+      },
+      {
+        "id": 4,
+        "word": "夕食",
+        "pinyin": "",
+        "meaning": "jantar"
+      },
+      {
+        "id": 5,
+        "word": "ご馳走する",
+        "pinyin": "",
+        "meaning": "oferecer uma refeição, convidar (honorífico)"
+      },
+      {
+        "id": 6,
+        "word": "ありがとうございます",
+        "pinyin": "",
+        "meaning": "muito obrigado(a)"
+      }
+    ],
+    "id": "local-1772297410517-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ご遠慮なく。",
+    "pinyin": "",
+    "translation": "B: Sinta-se à vontade. / Não hesite.",
+    "tokens": [
+      "ご遠慮なく",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "ご遠慮なく",
+        "pinyin": "",
+        "meaning": "por favor, não hesite / sinta-se à vontade"
+      }
+    ],
+    "id": "local-1772297410517-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "当然のことです。",
+    "pinyin": "",
+    "translation": "É natural. / É a coisa certa a fazer.",
+    "tokens": [
+      "当然",
+      "の",
+      "こと",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "当然",
+        "pinyin": "",
+        "meaning": "natural, óbvio"
+      },
+      {
+        "id": 9,
+        "word": "こと",
+        "pinyin": "",
+        "meaning": "coisa, fato"
+      }
+    ],
+    "id": "local-1772297410517-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "メニューをご覧ください。",
+    "pinyin": "",
+    "translation": "Por favor, veja o menu.",
+    "tokens": [
+      "メニュー",
+      "を",
+      "ご覧ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "メニュー",
+        "pinyin": "",
+        "meaning": "menu"
+      },
+      {
+        "id": 11,
+        "word": "ご覧になる",
+        "pinyin": "",
+        "meaning": "ver (honorífico)"
+      }
+    ],
+    "id": "local-1772297410517-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "何を食べたいですか？",
+    "pinyin": "",
+    "translation": "O que você gostaria de comer?",
+    "tokens": [
+      "何",
+      "を",
+      "食べたい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "何",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 13,
+        "word": "食べたい",
+        "pinyin": "",
+        "meaning": "querer comer"
+      }
+    ],
+    "id": "local-1772297410517-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 何でもいいです。",
+    "pinyin": "",
+    "translation": "A: Qualquer coisa está bem.",
+    "tokens": [
+      "何でも",
+      "いい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 14,
+        "word": "何でも",
+        "pinyin": "",
+        "meaning": "qualquer coisa"
+      },
+      {
+        "id": 15,
+        "word": "いい",
+        "pinyin": "",
+        "meaning": "bom, está bem"
+      }
+    ],
+    "id": "local-1772297410517-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "お任せします。",
+    "pinyin": "",
+    "translation": "Deixo isso com você. / Você decide.",
+    "tokens": [
+      "お任せします",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "お任せする",
+        "pinyin": "",
+        "meaning": "deixar a cargo de alguém, confiar (honorífico)"
+      }
+    ],
+    "id": "local-1772297410517-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 分かりました。",
+    "pinyin": "",
+    "translation": "B: Entendi.",
+    "tokens": [
+      "分かりました",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "分かる",
+        "pinyin": "",
+        "meaning": "entender"
+      }
+    ],
+    "id": "local-1772297410517-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "いつ上海に着きましたか？",
+    "pinyin": "",
+    "translation": "Quando você chegou em Xangai?",
+    "tokens": [
+      "いつ",
+      "上海",
+      "に",
+      "着きました",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "いつ",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 19,
+        "word": "上海",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 20,
+        "word": "着く",
+        "pinyin": "",
+        "meaning": "chegar"
+      }
+    ],
+    "id": "local-1772297410517-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 昨夜です。",
+    "pinyin": "",
+    "translation": "A: Ontem à noite.",
+    "tokens": [
+      "昨夜",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "昨夜",
+        "pinyin": "",
+        "meaning": "ontem à noite"
+      }
+    ],
+    "id": "local-1772297410517-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ、では今お疲れでしょう。",
+    "pinyin": "",
+    "translation": "B: Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "ああ",
+      "、",
+      "では",
+      "今",
+      "お疲れ",
+      "でしょう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "ああ",
+        "pinyin": "",
+        "meaning": "Ah (interjeição)"
+      },
+      {
+        "id": 23,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 24,
+        "word": "今",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 25,
+        "word": "お疲れ",
+        "pinyin": "",
+        "meaning": "cansaço (forma honorífica de 疲れ tsukare)"
+      },
+      {
+        "id": 26,
+        "word": "でしょう",
+        "pinyin": "",
+        "meaning": "provavelmente, deve ser"
+      }
+    ],
+    "id": "local-1772297410517-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私はよく出張に行くので、慣れています。",
+    "pinyin": "",
+    "translation": "A: Eu viajo muito a negócios, então estou acostumado.",
+    "tokens": [
+      "私",
+      "は",
+      "よく",
+      "出張",
+      "に",
+      "行く",
+      "ので",
+      "、",
+      "慣れています",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 28,
+        "word": "よく",
+        "pinyin": "",
+        "meaning": "frequentemente, bem"
+      },
+      {
+        "id": 29,
+        "word": "出張",
+        "pinyin": "",
+        "meaning": "viagem de negócios"
+      },
+      {
+        "id": 30,
+        "word": "行く",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 31,
+        "word": "慣れる",
+        "pinyin": "",
+        "meaning": "acostumar-se"
+      }
+    ],
+    "id": "local-1772297410517-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "提案書をご覧になりますか？",
+    "pinyin": "",
+    "translation": "Gostaria de ver a proposta?",
+    "tokens": [
+      "提案書",
+      "を",
+      "ご覧に",
+      "なります",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "提案書",
+        "pinyin": "",
+        "meaning": "proposta (documento)"
+      },
+      {
+        "id": 33,
+        "word": "ご覧になる",
+        "pinyin": "",
+        "meaning": "ver (honorífico)"
+      }
+    ],
+    "id": "local-1772297410517-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 急がなくても大丈夫です。",
+    "pinyin": "",
+    "translation": "B: Não há necessidade de pressa.",
+    "tokens": [
+      "急がなくても",
+      "大丈夫",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "急がなくても大丈夫です",
+        "pinyin": "",
+        "meaning": "não há problema em não ter pressa / não precisa se apressar"
+      }
+    ],
+    "id": "local-1772297410517-13",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "まず食事をして、終わってから話しましょう。",
+    "pinyin": "",
+    "translation": "Primeiro, vamos comer, e depois de terminarmos, conversaremos.",
+    "tokens": [
+      "まず",
+      "食事",
+      "を",
+      "して",
+      "、",
+      "終わって",
+      "から",
+      "話しましょう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 35,
+        "word": "まず",
+        "pinyin": "",
+        "meaning": "primeiro, antes de tudo"
+      },
+      {
+        "id": 36,
+        "word": "食事",
+        "pinyin": "",
+        "meaning": "refeição"
+      },
+      {
+        "id": 37,
+        "word": "する",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 38,
+        "word": "終わる",
+        "pinyin": "",
+        "meaning": "terminar"
+      },
+      {
+        "id": 39,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "depois de, a partir de"
+      },
+      {
+        "id": 40,
+        "word": "話す",
+        "pinyin": "",
+        "meaning": "falar, conversar"
+      }
+    ],
+    "id": "local-1772297410517-14",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 分かりました。",
+    "pinyin": "",
+    "translation": "A: Entendi.",
+    "tokens": [
+      "分かりました",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 41,
+        "word": "分かる",
+        "pinyin": "",
+        "meaning": "entender"
+      }
+    ],
+    "id": "local-1772297410517-15",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: すみません、注文お願いします。",
+    "pinyin": "",
+    "translation": "B: Com licença, por favor, posso pedir.",
+    "tokens": [
+      "すみません",
+      "、",
+      "注文",
+      "お願いします",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "すみません",
+        "pinyin": "",
+        "meaning": "com licença, desculpe"
+      },
+      {
+        "id": 43,
+        "word": "注文",
+        "pinyin": "",
+        "meaning": "pedido (de comida, etc.)"
+      },
+      {
+        "id": 44,
+        "word": "お願いします",
+        "pinyin": "",
+        "meaning": "por favor"
+      }
+    ],
+    "id": "local-1772297410517-16",
+    "language": "Japonês"
+  }
+]

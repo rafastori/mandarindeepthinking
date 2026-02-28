@@ -1,0 +1,612 @@
+[
+  {
+    "chinese": "A: Lisa, ich wollte dich mal was fragen.",
+    "pinyin": null,
+    "translation": "A: Lisa, eu queria te perguntar algo.",
+    "tokens": [
+      "Lisa",
+      ",",
+      "ich",
+      "wollte",
+      "dich",
+      "mal",
+      "was",
+      "fragen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wollte",
+        "pinyin": null,
+        "meaning": "queria (passado de 'querer')"
+      },
+      {
+        "id": 2,
+        "word": "dich",
+        "pinyin": null,
+        "meaning": "te, a você (caso acusativo de 'du')"
+      },
+      {
+        "id": 3,
+        "word": "mal",
+        "pinyin": null,
+        "meaning": "uma vez, só (partícula para suavizar, 'só pra', 'apenas')"
+      },
+      {
+        "id": 4,
+        "word": "was",
+        "pinyin": null,
+        "meaning": "algo (forma abreviada de 'etwas')"
+      },
+      {
+        "id": 5,
+        "word": "fragen",
+        "pinyin": null,
+        "meaning": "perguntar"
+      }
+    ],
+    "id": "local-1772293559655-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, was denn?",
+    "pinyin": null,
+    "translation": "B: Sim, o que é?",
+    "tokens": [
+      "Ja",
+      ",",
+      "was",
+      "denn",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "Ja",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 7,
+        "word": "was",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 8,
+        "word": "denn",
+        "pinyin": null,
+        "meaning": "então (partícula de ênfase ou curiosidade em perguntas)"
+      }
+    ],
+    "id": "local-1772293559655-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Stellen wir diesen Sommer Praktikanten ein?",
+    "pinyin": null,
+    "translation": "A: Contrataremos estagiários neste verão?",
+    "tokens": [
+      "Stellen",
+      "wir",
+      "diesen",
+      "Sommer",
+      "Praktikanten",
+      "ein",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "ein·stellen",
+        "pinyin": null,
+        "meaning": "contratar, empregar"
+      },
+      {
+        "id": 10,
+        "word": "diesen",
+        "pinyin": null,
+        "meaning": "este (acusativo masculino)"
+      },
+      {
+        "id": 11,
+        "word": "Sommer",
+        "pinyin": null,
+        "meaning": "verão"
+      },
+      {
+        "id": 12,
+        "word": "Praktikanten",
+        "pinyin": null,
+        "meaning": "estagiários (plural)"
+      }
+    ],
+    "id": "local-1772293559655-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Hast du einen passenden Kandidaten, den du empfehlen möchtest?",
+    "pinyin": null,
+    "translation": "B: Sim. Você tem um candidato adequado que você gostaria de recomendar?",
+    "tokens": [
+      "Ja",
+      ".",
+      "Hast",
+      "du",
+      "einen",
+      "passenden",
+      "Kandidaten",
+      ",",
+      "den",
+      "du",
+      "empfehlen",
+      "möchtest",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 13,
+        "word": "Hast du",
+        "pinyin": null,
+        "meaning": "Você tem"
+      },
+      {
+        "id": 14,
+        "word": "passenden",
+        "pinyin": null,
+        "meaning": "adequado, apropriado"
+      },
+      {
+        "id": 15,
+        "word": "Kandidaten",
+        "pinyin": null,
+        "meaning": "candidato (acusativo)"
+      },
+      {
+        "id": 16,
+        "word": "den",
+        "pinyin": null,
+        "meaning": "que (pronome relativo, acusativo masculino)"
+      },
+      {
+        "id": 17,
+        "word": "empfehlen",
+        "pinyin": null,
+        "meaning": "recomendar"
+      },
+      {
+        "id": 18,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "gostaria de (forma conjugada de 'möchten')"
+      }
+    ],
+    "id": "local-1772293559655-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich habe einen ausländischen Freund, der in China studiert. Er sucht ein Praktikum für die Sommerferien.",
+    "pinyin": null,
+    "translation": "A: Eu tenho um amigo estrangeiro que estuda na China. Ele procura um estágio para as férias de verão.",
+    "tokens": [
+      "Ich",
+      "habe",
+      "einen",
+      "ausländischen",
+      "Freund",
+      ",",
+      "der",
+      "in",
+      "China",
+      "studiert",
+      ".",
+      "Er",
+      "sucht",
+      "ein",
+      "Praktikum",
+      "für",
+      "die",
+      "Sommerferien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "ausländischen",
+        "pinyin": null,
+        "meaning": "estrangeiro (acusativo)"
+      },
+      {
+        "id": 20,
+        "word": "Freund",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 21,
+        "word": "studiert",
+        "pinyin": null,
+        "meaning": "estuda (forma conjugada de 'studieren')"
+      },
+      {
+        "id": 22,
+        "word": "sucht",
+        "pinyin": null,
+        "meaning": "procura (forma conjugada de 'suchen')"
+      },
+      {
+        "id": 23,
+        "word": "Praktikum",
+        "pinyin": null,
+        "meaning": "estágio"
+      },
+      {
+        "id": 24,
+        "word": "Sommerferien",
+        "pinyin": null,
+        "meaning": "férias de verão"
+      }
+    ],
+    "id": "local-1772293559655-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wenn er ausländischer Student ist, könnte das schwierig werden.",
+    "pinyin": null,
+    "translation": "B: Se ele for um estudante estrangeiro, isso pode ser difícil.",
+    "tokens": [
+      "Wenn",
+      "er",
+      "ausländischer",
+      "Student",
+      "ist",
+      ",",
+      "könnte",
+      "das",
+      "schwierig",
+      "werden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "Wenn",
+        "pinyin": null,
+        "meaning": "Se, quando"
+      },
+      {
+        "id": 26,
+        "word": "ausländischer",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 27,
+        "word": "Student",
+        "pinyin": null,
+        "meaning": "estudante"
+      },
+      {
+        "id": 28,
+        "word": "könnte",
+        "pinyin": null,
+        "meaning": "poderia (condicional de 'können')"
+      },
+      {
+        "id": 29,
+        "word": "schwierig",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 30,
+        "word": "werden",
+        "pinyin": null,
+        "meaning": "tornar-se, ser"
+      }
+    ],
+    "id": "local-1772293559655-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sein Chinesisch ist gut.",
+    "pinyin": null,
+    "translation": "A: O chinês dele é bom.",
+    "tokens": [
+      "Sein",
+      "Chinesisch",
+      "ist",
+      "gut",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "Sein",
+        "pinyin": null,
+        "meaning": "dele (pronome possessivo)"
+      },
+      {
+        "id": 32,
+        "word": "Chinesisch",
+        "pinyin": null,
+        "meaning": "Chinês (o idioma)"
+      },
+      {
+        "id": 33,
+        "word": "gut",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772293559655-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist nicht das Problem. Es liegt am Visum. Ausländer mit einem Studentenvisum dürfen in China kein Praktikum machen.",
+    "pinyin": null,
+    "translation": "B: Esse não é o problema. É por causa do visto. Estrangeiros com visto de estudante não podem fazer estágio na China.",
+    "tokens": [
+      "Das",
+      "ist",
+      "nicht",
+      "das",
+      "Problem",
+      ".",
+      "Es",
+      "liegt",
+      "am",
+      "Visum",
+      ".",
+      "Ausländer",
+      "mit",
+      "einem",
+      "Studentenvisum",
+      "dürfen",
+      "in",
+      "China",
+      "kein",
+      "Praktikum",
+      "machen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 34,
+        "word": "Problem",
+        "pinyin": null,
+        "meaning": "problema"
+      },
+      {
+        "id": 35,
+        "word": "liegt am",
+        "pinyin": null,
+        "meaning": "é por causa de, a razão é (de 'liegen an')"
+      },
+      {
+        "id": 36,
+        "word": "Visum",
+        "pinyin": null,
+        "meaning": "visto"
+      },
+      {
+        "id": 37,
+        "word": "Ausländer",
+        "pinyin": null,
+        "meaning": "estrangeiros (plural)"
+      },
+      {
+        "id": 38,
+        "word": "Studentenvisum",
+        "pinyin": null,
+        "meaning": "visto de estudante"
+      },
+      {
+        "id": 39,
+        "word": "dürfen",
+        "pinyin": null,
+        "meaning": "têm permissão para, podem"
+      },
+      {
+        "id": 40,
+        "word": "kein",
+        "pinyin": null,
+        "meaning": "nenhum, não um/uma"
+      },
+      {
+        "id": 41,
+        "word": "Praktikum machen",
+        "pinyin": null,
+        "meaning": "fazer um estágio"
+      }
+    ],
+    "id": "local-1772293559655-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Oh. Ist das so streng?",
+    "pinyin": null,
+    "translation": "A: Ah. É tão rigoroso assim?",
+    "tokens": [
+      "Oh",
+      ".",
+      "Ist",
+      "das",
+      "so",
+      "streng",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "so",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 43,
+        "word": "streng",
+        "pinyin": null,
+        "meaning": "rigoroso, estrito"
+      }
+    ],
+    "id": "local-1772293559655-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Für Ausländer in China gilt: Selbst wenn sie nur ein Praktikum machen wollen, brauchen sie dafür ein Arbeitsvisum.",
+    "pinyin": null,
+    "translation": "B: Sim. Para estrangeiros na China, vale a regra: mesmo que eles queiram apenas fazer um estágio, eles precisam de um visto de trabalho para isso.",
+    "tokens": [
+      "Ja",
+      ".",
+      "Für",
+      "Ausländer",
+      "in",
+      "China",
+      "gilt",
+      ":",
+      "Selbst",
+      "wenn",
+      "sie",
+      "nur",
+      "ein",
+      "Praktikum",
+      "machen",
+      "wollen",
+      ",",
+      "brauchen",
+      "sie",
+      "dafür",
+      "ein",
+      "Arbeitsvisum",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "gilt",
+        "pinyin": null,
+        "meaning": "vale, aplica-se (forma conjugada de 'gelten')"
+      },
+      {
+        "id": 45,
+        "word": "Selbst wenn",
+        "pinyin": null,
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 46,
+        "word": "nur",
+        "pinyin": null,
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 47,
+        "word": "wollen",
+        "pinyin": null,
+        "meaning": "querer (infinitivo)"
+      },
+      {
+        "id": 48,
+        "word": "brauchen",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 49,
+        "word": "dafür",
+        "pinyin": null,
+        "meaning": "para isso"
+      },
+      {
+        "id": 50,
+        "word": "Arbeitsvisum",
+        "pinyin": null,
+        "meaning": "visto de trabalho"
+      }
+    ],
+    "id": "local-1772293559655-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Echt? Das muss ich ihm dann sagen. Danke dir!",
+    "pinyin": null,
+    "translation": "A: Sério? Eu tenho que dizer isso a ele então. Obrigado!",
+    "tokens": [
+      "Echt",
+      "?",
+      "Das",
+      "muss",
+      "ich",
+      "ihm",
+      "dann",
+      "sagen",
+      ".",
+      "Danke",
+      "dir",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 51,
+        "word": "Echt",
+        "pinyin": null,
+        "meaning": "Sério?, Verdade? (informal)"
+      },
+      {
+        "id": 52,
+        "word": "muss",
+        "pinyin": null,
+        "meaning": "tenho que (forma conjugada de 'müssen')"
+      },
+      {
+        "id": 53,
+        "word": "ihm",
+        "pinyin": null,
+        "meaning": "a ele (caso dativo de 'er')"
+      },
+      {
+        "id": 54,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 55,
+        "word": "sagen",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 56,
+        "word": "Danke dir",
+        "pinyin": null,
+        "meaning": "Obrigado a você (informal)"
+      }
+    ],
+    "id": "local-1772293559655-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kein Problem.",
+    "pinyin": null,
+    "translation": "B: Sem problemas.",
+    "tokens": [
+      "Kein",
+      "Problem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 57,
+        "word": "Kein Problem",
+        "pinyin": null,
+        "meaning": "Sem problemas"
+      }
+    ],
+    "id": "local-1772293559655-11",
+    "language": "Alemão"
+  }
+]

@@ -23,6 +23,7 @@ import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
 import TutorialMascot from './components/Gamification/TutorialMascot';
+import RepositoryModal from './components/TextLibrary/RepositoryModal';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
@@ -43,6 +44,7 @@ const App: React.FC = () => {
     const [tab, setTab] = useState<string>('leitura');
     const [showStats, setShowStats] = useState(false);
     const [showImport, setShowImport] = useState(false);
+    const [showRepository, setShowRepository] = useState(false);
     const [initialImportFolder, setInitialImportFolder] = useState('');
     const [showPuterSuggestion, setShowPuterSuggestion] = useState(false);
     const [selectedGame, setSelectedGame] = useState<'selector' | 'lingoarena' | 'polyquest' | 'domino'>('selector');
@@ -494,6 +496,7 @@ const App: React.FC = () => {
                         savedIds={activeSavedIds}
                         onToggleSave={toggleSave}
                         onOpenImport={() => setShowImport(true)}
+                        onOpenRepository={() => setShowRepository(true)}
                         onOpenImportInFolder={handleOpenImportInFolder}
                         onDeleteText={handleDelete}
                         onSaveGeneratedCard={handleSaveGeneratedCard}
@@ -638,6 +641,15 @@ const App: React.FC = () => {
                     onImport={handleImportBatch}
                     existingItems={libraryData}
                     initialFolder={initialImportFolder}
+                />
+            )}
+            {showRepository && (
+                <RepositoryModal
+                    onClose={() => setShowRepository(false)}
+                    onImportSuccess={(items, folder) => {
+                        handleImportBatch(items, folder);
+                        setTab('leitura'); // Reset tab to see the imported item
+                    }}
                 />
             )}
             <FolderTree

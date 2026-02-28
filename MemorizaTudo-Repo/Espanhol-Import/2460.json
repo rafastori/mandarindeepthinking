@@ -1,0 +1,604 @@
+[
+  {
+    "chinese": "A: Lisa, quiero preguntarte algo.",
+    "pinyin": null,
+    "translation": "A: Lisa, quero te perguntar algo.",
+    "tokens": [
+      "A:",
+      "Lisa,",
+      "quiero",
+      "preguntarte",
+      "algo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "quiero",
+        "pinyin": null,
+        "meaning": "quero"
+      },
+      {
+        "id": 2,
+        "word": "preguntarte",
+        "pinyin": null,
+        "meaning": "te perguntar"
+      },
+      {
+        "id": 3,
+        "word": "algo",
+        "pinyin": null,
+        "meaning": "algo"
+      }
+    ],
+    "id": "local-1772299085550-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué es?",
+    "pinyin": null,
+    "translation": "B: O que é?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "es?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué",
+        "pinyin": null,
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "es",
+        "pinyin": null,
+        "meaning": "é"
+      }
+    ],
+    "id": "local-1772299085550-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Estamos reclutando pasantes este verano?",
+    "pinyin": null,
+    "translation": "A: Estamos recrutando estagiários neste verão?",
+    "tokens": [
+      "A:",
+      "¿Estamos",
+      "reclutando",
+      "pasantes",
+      "este",
+      "verano?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "reclutando",
+        "pinyin": null,
+        "meaning": "recrutando"
+      },
+      {
+        "id": 2,
+        "word": "pasantes",
+        "pinyin": null,
+        "meaning": "estagiários"
+      },
+      {
+        "id": 3,
+        "word": "este verano",
+        "pinyin": null,
+        "meaning": "neste verão"
+      }
+    ],
+    "id": "local-1772299085550-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí, lo estamos.",
+    "pinyin": null,
+    "translation": "B: Sim, estamos.",
+    "tokens": [
+      "B:",
+      "Sí,",
+      "lo",
+      "estamos."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "estamos",
+        "pinyin": null,
+        "meaning": "estamos"
+      }
+    ],
+    "id": "local-1772299085550-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Tienes un candidato adecuado que te gustaría recomendar?",
+    "pinyin": null,
+    "translation": "Você tem um candidato adequado que gostaria de recomendar?",
+    "tokens": [
+      "¿Tienes",
+      "un",
+      "candidato",
+      "adecuado",
+      "que",
+      "te",
+      "gustaría",
+      "recomendar?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tienes",
+        "pinyin": null,
+        "meaning": "Você tem"
+      },
+      {
+        "id": 2,
+        "word": "candidato adecuado",
+        "pinyin": null,
+        "meaning": "candidato adequado"
+      },
+      {
+        "id": 3,
+        "word": "gustaría recomendar",
+        "pinyin": null,
+        "meaning": "gostaria de recomendar"
+      }
+    ],
+    "id": "local-1772299085550-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Tengo un amigo extranjero que está estudiando en China.",
+    "pinyin": null,
+    "translation": "A: Tenho um amigo estrangeiro que está estudando na China.",
+    "tokens": [
+      "A:",
+      "Tengo",
+      "un",
+      "amigo",
+      "extranjero",
+      "que",
+      "está",
+      "estudiando",
+      "en",
+      "China."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tengo",
+        "pinyin": null,
+        "meaning": "Tenho"
+      },
+      {
+        "id": 2,
+        "word": "amigo extranjero",
+        "pinyin": null,
+        "meaning": "amigo estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "está estudiando",
+        "pinyin": null,
+        "meaning": "está estudando"
+      },
+      {
+        "id": 4,
+        "word": "en China",
+        "pinyin": null,
+        "meaning": "na China"
+      }
+    ],
+    "id": "local-1772299085550-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Durante las vacaciones de verano busca una pasantía.",
+    "pinyin": null,
+    "translation": "Durante as férias de verão ele procura um estágio.",
+    "tokens": [
+      "Durante",
+      "las",
+      "vacaciones",
+      "de",
+      "verano",
+      "busca",
+      "una",
+      "pasantía."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Durante",
+        "pinyin": null,
+        "meaning": "Durante"
+      },
+      {
+        "id": 2,
+        "word": "vacaciones de verano",
+        "pinyin": null,
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 3,
+        "word": "busca",
+        "pinyin": null,
+        "meaning": "procura"
+      },
+      {
+        "id": 4,
+        "word": "pasantía",
+        "pinyin": null,
+        "meaning": "estágio"
+      }
+    ],
+    "id": "local-1772299085550-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Si es un estudiante extranjero, podría no funcionar.",
+    "pinyin": null,
+    "translation": "B: Se ele é um estudante estrangeiro, pode não funcionar.",
+    "tokens": [
+      "B:",
+      "Si",
+      "es",
+      "un",
+      "estudiante",
+      "extranjero,",
+      "podría",
+      "no",
+      "funcionar."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Si es",
+        "pinyin": null,
+        "meaning": "Se é"
+      },
+      {
+        "id": 2,
+        "word": "estudiante extranjero",
+        "pinyin": null,
+        "meaning": "estudante estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "podría no funcionar",
+        "pinyin": null,
+        "meaning": "pode não funcionar"
+      }
+    ],
+    "id": "local-1772299085550-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Su chino es bueno.",
+    "pinyin": null,
+    "translation": "A: O chinês dele é bom.",
+    "tokens": [
+      "A:",
+      "Su",
+      "chino",
+      "es",
+      "bueno."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Su chino",
+        "pinyin": null,
+        "meaning": "O chinês dele/dela"
+      },
+      {
+        "id": 2,
+        "word": "es bueno",
+        "pinyin": null,
+        "meaning": "é bom"
+      }
+    ],
+    "id": "local-1772299085550-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Ese no es el problema.",
+    "pinyin": null,
+    "translation": "B: Esse não é o problema.",
+    "tokens": [
+      "B:",
+      "Ese",
+      "no",
+      "es",
+      "el",
+      "problema."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ese",
+        "pinyin": null,
+        "meaning": "Esse"
+      },
+      {
+        "id": 2,
+        "word": "no es el problema",
+        "pinyin": null,
+        "meaning": "não é o problema"
+      }
+    ],
+    "id": "local-1772299085550-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es un problema de visado.",
+    "pinyin": null,
+    "translation": "É um problema de visto.",
+    "tokens": [
+      "Es",
+      "un",
+      "problema",
+      "de",
+      "visado."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es",
+        "pinyin": null,
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "problema de visado",
+        "pinyin": null,
+        "meaning": "problema de visto"
+      }
+    ],
+    "id": "local-1772299085550-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Los extranjeros con visado de estudiante no pueden hacer pasantías en China.",
+    "pinyin": null,
+    "translation": "Estrangeiros com visto de estudante não podem fazer estágios na China.",
+    "tokens": [
+      "Los",
+      "extranjeros",
+      "con",
+      "visado",
+      "de",
+      "estudiante",
+      "no",
+      "pueden",
+      "hacer",
+      "pasantías",
+      "en",
+      "China."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "extranjeros",
+        "pinyin": null,
+        "meaning": "estrangeiros"
+      },
+      {
+        "id": 2,
+        "word": "visado de estudiante",
+        "pinyin": null,
+        "meaning": "visto de estudante"
+      },
+      {
+        "id": 3,
+        "word": "no pueden hacer",
+        "pinyin": null,
+        "meaning": "não podem fazer"
+      },
+      {
+        "id": 4,
+        "word": "pasantías",
+        "pinyin": null,
+        "meaning": "estágios"
+      },
+      {
+        "id": 5,
+        "word": "en China",
+        "pinyin": null,
+        "meaning": "na China"
+      }
+    ],
+    "id": "local-1772299085550-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh. ¿Es tan estricto?",
+    "pinyin": null,
+    "translation": "A: Oh. É tão rigoroso?",
+    "tokens": [
+      "A:",
+      "Oh.",
+      "¿Es",
+      "tan",
+      "estricto?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es",
+        "pinyin": null,
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "tan estricto",
+        "pinyin": null,
+        "meaning": "tão rigoroso"
+      }
+    ],
+    "id": "local-1772299085550-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí.",
+    "pinyin": null,
+    "translation": "B: Sim.",
+    "tokens": [
+      "B:",
+      "Sí."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772299085550-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Para los extranjeros en China, incluso si solo quieren ser pasantes, aún necesitan obtener un visado de trabajo.",
+    "pinyin": null,
+    "translation": "Para estrangeiros na China, mesmo que apenas queiram ser estagiários, ainda precisam obter um visto de trabalho.",
+    "tokens": [
+      "Para",
+      "los",
+      "extranjeros",
+      "en",
+      "China,",
+      "incluso",
+      "si",
+      "solo",
+      "quieren",
+      "ser",
+      "pasantes,",
+      "aún",
+      "necesitan",
+      "obtener",
+      "un",
+      "visado",
+      "de",
+      "trabajo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "extranjeros en China",
+        "pinyin": null,
+        "meaning": "estrangeiros na China"
+      },
+      {
+        "id": 2,
+        "word": "incluso si",
+        "pinyin": null,
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 3,
+        "word": "quieren ser pasantes",
+        "pinyin": null,
+        "meaning": "queiram ser estagiários"
+      },
+      {
+        "id": 4,
+        "word": "aún necesitan obtener",
+        "pinyin": null,
+        "meaning": "ainda precisam obter"
+      },
+      {
+        "id": 5,
+        "word": "visado de trabajo",
+        "pinyin": null,
+        "meaning": "visto de trabalho"
+      }
+    ],
+    "id": "local-1772299085550-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿De verdad? Entonces necesito decírselo.",
+    "pinyin": null,
+    "translation": "A: É sério? Então preciso dizer a ele.",
+    "tokens": [
+      "A:",
+      "¿De",
+      "verdad?",
+      "Entonces",
+      "necesito",
+      "decírselo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De verdad",
+        "pinyin": null,
+        "meaning": "É sério / De verdade"
+      },
+      {
+        "id": 2,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "necesito decírselo",
+        "pinyin": null,
+        "meaning": "preciso dizer a ele/ela"
+      }
+    ],
+    "id": "local-1772299085550-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Gracias!",
+    "pinyin": null,
+    "translation": "Obrigado!",
+    "tokens": [
+      "¡Gracias!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gracias",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772299085550-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: De nada.",
+    "pinyin": null,
+    "translation": "B: De nada.",
+    "tokens": [
+      "B:",
+      "De",
+      "nada."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De nada",
+        "pinyin": null,
+        "meaning": "De nada"
+      }
+    ],
+    "id": "local-1772299085550-17",
+    "language": "Espanhol"
+  }
+]

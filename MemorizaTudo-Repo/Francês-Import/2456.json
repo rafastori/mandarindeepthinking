@@ -1,0 +1,482 @@
+[
+  {
+    "chinese": "A: Xiao Liu, c'est votre premier jour en tant que stagiaire. Si vous ne comprenez rien, n'hésitez pas à demander.",
+    "pinyin": null,
+    "translation": "A: Xiao Liu, é o seu primeiro dia como estagiário. Se você não entender nada, não hesite em perguntar.",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Liu,",
+      "c'est",
+      "votre",
+      "premier",
+      "jour",
+      "en",
+      "tant",
+      "que",
+      "stagiaire.",
+      "Si",
+      "vous",
+      "ne",
+      "comprenez",
+      "rien,",
+      "n'hésitez",
+      "pas",
+      "à",
+      "demander."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "premier jour",
+        "pinyin": null,
+        "meaning": "primeiro dia"
+      },
+      {
+        "id": 2,
+        "word": "en tant que",
+        "pinyin": null,
+        "meaning": "como, na qualidade de"
+      },
+      {
+        "id": 3,
+        "word": "stagiaire",
+        "pinyin": null,
+        "meaning": "estagiário"
+      },
+      {
+        "id": 4,
+        "word": "comprenez",
+        "pinyin": null,
+        "meaning": "compreende (do verbo comprendre)"
+      },
+      {
+        "id": 5,
+        "word": "rien",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 6,
+        "word": "n'hésitez pas à demander",
+        "pinyin": null,
+        "meaning": "não hesite em perguntar"
+      }
+    ],
+    "id": "local-1772298671787-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord, Madame Li. Que dois-je faire ?",
+    "pinyin": null,
+    "translation": "B: De acordo, Senhora Li. O que devo fazer?",
+    "tokens": [
+      "B:",
+      "D'accord,",
+      "Madame",
+      "Li.",
+      "Que",
+      "dois-je",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "De acordo, Ok"
+      },
+      {
+        "id": 2,
+        "word": "Madame",
+        "pinyin": null,
+        "meaning": "Senhora"
+      },
+      {
+        "id": 3,
+        "word": "Que dois-je faire",
+        "pinyin": null,
+        "meaning": "O que devo fazer"
+      }
+    ],
+    "id": "local-1772298671787-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Voici des documents. Veuillez les classer. Regardez lesquels sont utiles et lesquels portent la mention \"nul et non avenu\".",
+    "pinyin": null,
+    "translation": "A: Aqui estão alguns documentos. Por favor, classifique-os. Veja quais são úteis e quais trazem a menção \"nulo e sem efeito\".",
+    "tokens": [
+      "A:",
+      "Voici",
+      "des",
+      "documents.",
+      "Veuillez",
+      "les",
+      "classer.",
+      "Regardez",
+      "lesquels",
+      "sont",
+      "utiles",
+      "et",
+      "lesquels",
+      "portent",
+      "la",
+      "mention",
+      "\"nul",
+      "et",
+      "non",
+      "avenu\"."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Voici",
+        "pinyin": null,
+        "meaning": "Aqui está/estão"
+      },
+      {
+        "id": 2,
+        "word": "documents",
+        "pinyin": null,
+        "meaning": "documentos"
+      },
+      {
+        "id": 3,
+        "word": "Veuillez",
+        "pinyin": null,
+        "meaning": "Por favor (formal)"
+      },
+      {
+        "id": 4,
+        "word": "classer",
+        "pinyin": null,
+        "meaning": "classificar"
+      },
+      {
+        "id": 5,
+        "word": "utiles",
+        "pinyin": null,
+        "meaning": "úteis"
+      },
+      {
+        "id": 6,
+        "word": "portent",
+        "pinyin": null,
+        "meaning": "trazem (do verbo porter)"
+      },
+      {
+        "id": 7,
+        "word": "mention",
+        "pinyin": null,
+        "meaning": "menção"
+      },
+      {
+        "id": 8,
+        "word": "nul et non avenu",
+        "pinyin": null,
+        "meaning": "nulo e sem efeito, inválido"
+      }
+    ],
+    "id": "local-1772298671787-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord, Madame Li. Ce sont tous des documents nuls et non avenus.",
+    "pinyin": null,
+    "translation": "B: De acordo, Senhora Li. Todos são documentos nulos e sem efeito.",
+    "tokens": [
+      "B:",
+      "D'accord,",
+      "Madame",
+      "Li.",
+      "Ce",
+      "sont",
+      "tous",
+      "des",
+      "documents",
+      "nuls",
+      "et",
+      "non",
+      "avenus."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tous",
+        "pinyin": null,
+        "meaning": "todos"
+      },
+      {
+        "id": 2,
+        "word": "nuls et non avenus",
+        "pinyin": null,
+        "meaning": "nulos e sem efeito (plural)"
+      }
+    ],
+    "id": "local-1772298671787-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: D'accord, alors débarrassez-vous-en.",
+    "pinyin": null,
+    "translation": "A: De acordo, então livre-se deles.",
+    "tokens": [
+      "A:",
+      "D'accord,",
+      "alors",
+      "débarrassez-vous-en."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "alors",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "débarrassez-vous-en",
+        "pinyin": null,
+        "meaning": "livre-se deles/disso"
+      }
+    ],
+    "id": "local-1772298671787-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Est-ce que les jeter à la poubelle, c'est bon ?",
+    "pinyin": null,
+    "translation": "B: Jogá-los no lixo, está bom?",
+    "tokens": [
+      "B:",
+      "Est-ce",
+      "que",
+      "les",
+      "jeter",
+      "à",
+      "la",
+      "poubelle,",
+      "c'est",
+      "bon",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jeter",
+        "pinyin": null,
+        "meaning": "jogar, atirar"
+      },
+      {
+        "id": 2,
+        "word": "la poubelle",
+        "pinyin": null,
+        "meaning": "a lixeira, o lixo"
+      },
+      {
+        "id": 3,
+        "word": "c'est bon",
+        "pinyin": null,
+        "meaning": "está bom, é bom"
+      }
+    ],
+    "id": "local-1772298671787-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non. Les documents d'entreprise ne peuvent pas être jetés. Et s'ils contiennent des informations importantes ?",
+    "pinyin": null,
+    "translation": "A: Não. Os documentos da empresa não podem ser jogados fora. E se eles contiverem informações importantes?",
+    "tokens": [
+      "A:",
+      "Non.",
+      "Les",
+      "documents",
+      "d'entreprise",
+      "ne",
+      "peuvent",
+      "pas",
+      "être",
+      "jetés.",
+      "Et",
+      "s'ils",
+      "contiennent",
+      "des",
+      "informations",
+      "importantes",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "documents d'entreprise",
+        "pinyin": null,
+        "meaning": "documentos da empresa"
+      },
+      {
+        "id": 2,
+        "word": "ne peuvent pas être jetés",
+        "pinyin": null,
+        "meaning": "não podem ser jogados fora"
+      },
+      {
+        "id": 3,
+        "word": "contiennent",
+        "pinyin": null,
+        "meaning": "contêm (do verbo contenir)"
+      },
+      {
+        "id": 4,
+        "word": "informations importantes",
+        "pinyin": null,
+        "meaning": "informações importantes"
+      }
+    ],
+    "id": "local-1772298671787-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, je les déchire à la main ?",
+    "pinyin": null,
+    "translation": "B: Então, eu os rasgo à mão?",
+    "tokens": [
+      "B:",
+      "Alors,",
+      "je",
+      "les",
+      "déchire",
+      "à",
+      "la",
+      "main",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "déchire",
+        "pinyin": null,
+        "meaning": "rasgo (do verbo déchirer)"
+      },
+      {
+        "id": 3,
+        "word": "à la main",
+        "pinyin": null,
+        "meaning": "à mão, manualmente"
+      }
+    ],
+    "id": "local-1772298671787-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Haha, bien sûr que non. Utilisez la déchiqueteuse à papier. Venez, je vais vous montrer. Allumez la déchiqueteuse et insérez-y les documents lentement.",
+    "pinyin": null,
+    "translation": "A: Haha, claro que não. Use a trituradora de papel. Venha, eu vou te mostrar. Ligue a trituradora e insira os documentos lentamente.",
+    "tokens": [
+      "A:",
+      "Haha,",
+      "bien",
+      "sûr",
+      "que",
+      "non.",
+      "Utilisez",
+      "la",
+      "déchiqueteuse",
+      "à",
+      "papier.",
+      "Venez,",
+      "je",
+      "vais",
+      "vous",
+      "montrer.",
+      "Allumez",
+      "la",
+      "déchiqueteuse",
+      "et",
+      "insérez-y",
+      "les",
+      "documents",
+      "lentement."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bien sûr que non",
+        "pinyin": null,
+        "meaning": "claro que não"
+      },
+      {
+        "id": 2,
+        "word": "Utilisez",
+        "pinyin": null,
+        "meaning": "Use (imperativo de utiliser)"
+      },
+      {
+        "id": 3,
+        "word": "la déchiqueteuse à papier",
+        "pinyin": null,
+        "meaning": "a trituradora de papel"
+      },
+      {
+        "id": 4,
+        "word": "Venez",
+        "pinyin": null,
+        "meaning": "Venha (imperativo de venir)"
+      },
+      {
+        "id": 5,
+        "word": "je vais vous montrer",
+        "pinyin": null,
+        "meaning": "eu vou te mostrar"
+      },
+      {
+        "id": 6,
+        "word": "Allumez",
+        "pinyin": null,
+        "meaning": "Ligue (imperativo de allumer)"
+      },
+      {
+        "id": 7,
+        "word": "insérez-y",
+        "pinyin": null,
+        "meaning": "insira neles/nisso (imperativo de insérer)"
+      },
+      {
+        "id": 8,
+        "word": "lentement",
+        "pinyin": null,
+        "meaning": "lentamente"
+      }
+    ],
+    "id": "local-1772298671787-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci, Madame Li.",
+    "pinyin": null,
+    "translation": "B: Obrigado, Senhora Li.",
+    "tokens": [
+      "B:",
+      "Merci,",
+      "Madame",
+      "Li."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1772298671787-9",
+    "language": "Francês"
+  }
+]

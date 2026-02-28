@@ -1,0 +1,463 @@
+[
+  {
+    "chinese": "A: Xiao Qin, che post stai guardando? Sei così immerso!",
+    "pinyin": null,
+    "translation": "A: Xiao Qin, que post você está vendo? Você está tão absorto!",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Qin,",
+      "che",
+      "post",
+      "stai",
+      "guardando?",
+      "Sei",
+      "così",
+      "immerso!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "post",
+        "pinyin": null,
+        "meaning": "postagem"
+      },
+      {
+        "id": 2,
+        "word": "stai guardando",
+        "pinyin": null,
+        "meaning": "você está olhando/vendo"
+      },
+      {
+        "id": 3,
+        "word": "immerso",
+        "pinyin": null,
+        "meaning": "absorto, imerso"
+      }
+    ],
+    "id": "local-1772299856206-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oh, sto guardando un sondaggio su internet se i cani guida dovrebbero entrare nella metropolitana.",
+    "pinyin": null,
+    "translation": "B: Oh, estou vendo uma enquete na internet se cães-guia deveriam entrar no metrô.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "sto",
+      "guardando",
+      "un",
+      "sondaggio",
+      "su",
+      "internet",
+      "se",
+      "i",
+      "cani",
+      "guida",
+      "dovrebbero",
+      "entrare",
+      "nella",
+      "metropolitana."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sondaggio",
+        "pinyin": null,
+        "meaning": "enquete, pesquisa de opinião"
+      },
+      {
+        "id": 2,
+        "word": "cani guida",
+        "pinyin": null,
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 3,
+        "word": "dovrebbero",
+        "pinyin": null,
+        "meaning": "deveriam (verbo dovere no condicional)"
+      },
+      {
+        "id": 4,
+        "word": "entrare",
+        "pinyin": null,
+        "meaning": "entrar"
+      },
+      {
+        "id": 5,
+        "word": "metropolitana",
+        "pinyin": null,
+        "meaning": "metrô"
+      }
+    ],
+    "id": "local-1772299856206-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual è il risultato del sondaggio?",
+    "pinyin": null,
+    "translation": "A: Qual é o resultado da enquete?",
+    "tokens": [
+      "A:",
+      "Qual",
+      "è",
+      "il",
+      "risultato",
+      "del",
+      "sondaggio?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "risultato",
+        "pinyin": null,
+        "meaning": "resultado"
+      },
+      {
+        "id": 2,
+        "word": "sondaggio",
+        "pinyin": null,
+        "meaning": "enquete, pesquisa de opinião"
+      }
+    ],
+    "id": "local-1772299856206-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Le opinioni di tutti differiscono; alcune persone sono d'accordo, altre si oppongono.",
+    "pinyin": null,
+    "translation": "B: As opiniões de todos divergem; algumas pessoas concordam, outras se opõem.",
+    "tokens": [
+      "B:",
+      "Le",
+      "opinioni",
+      "di",
+      "tutti",
+      "differiscono;",
+      "alcune",
+      "persone",
+      "sono",
+      "d'accordo,",
+      "altre",
+      "si",
+      "oppongono."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "opinioni",
+        "pinyin": null,
+        "meaning": "opiniões"
+      },
+      {
+        "id": 2,
+        "word": "differiscono",
+        "pinyin": null,
+        "meaning": "divergem, diferem"
+      },
+      {
+        "id": 3,
+        "word": "sono d'accordo",
+        "pinyin": null,
+        "meaning": "concordam"
+      },
+      {
+        "id": 4,
+        "word": "si oppongono",
+        "pinyin": null,
+        "meaning": "se opõem"
+      }
+    ],
+    "id": "local-1772299856206-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: I cani guida ricevono tutti un addestramento. Non attaccheranno altri passeggeri. Perché si oppongono all'idea?",
+    "pinyin": null,
+    "translation": "A: Os cães-guia recebem todo um treinamento. Não atacarão outros passageiros. Por que se opõem à ideia?",
+    "tokens": [
+      "A:",
+      "I",
+      "cani",
+      "guida",
+      "ricevono",
+      "tutti",
+      "un",
+      "addestramento.",
+      "Non",
+      "attaccheranno",
+      "altri",
+      "passeggeri.",
+      "Perché",
+      "si",
+      "oppongono",
+      "all'idea?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cani guida",
+        "pinyin": null,
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 2,
+        "word": "ricevono",
+        "pinyin": null,
+        "meaning": "recebem"
+      },
+      {
+        "id": 3,
+        "word": "addestramento",
+        "pinyin": null,
+        "meaning": "treinamento"
+      },
+      {
+        "id": 4,
+        "word": "attaccheranno",
+        "pinyin": null,
+        "meaning": "atacarão"
+      },
+      {
+        "id": 5,
+        "word": "passeggeri",
+        "pinyin": null,
+        "meaning": "passageiros"
+      },
+      {
+        "id": 6,
+        "word": "si oppongono",
+        "pinyin": null,
+        "meaning": "se opõem"
+      }
+    ],
+    "id": "local-1772299856206-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Esatto. I cani guida sono gli occhi della persona non vedente. Lasciare che il cane guida entri nella metropolitana non è solo conveniente per il non vedente, è anche rispettoso.",
+    "pinyin": null,
+    "translation": "B: Exato. Os cães-guia são os olhos da pessoa não vidente. Deixar que o cão-guia entre no metrô não é só conveniente para o não vidente, é também respeitoso.",
+    "tokens": [
+      "B:",
+      "Esatto.",
+      "I",
+      "cani",
+      "guida",
+      "sono",
+      "gli",
+      "occhi",
+      "della",
+      "persona",
+      "non",
+      "vedente.",
+      "Lasciare",
+      "che",
+      "il",
+      "cane",
+      "guida",
+      "entri",
+      "nella",
+      "metropolitana",
+      "non",
+      "è",
+      "solo",
+      "conveniente",
+      "per",
+      "il",
+      "non",
+      "vedente,",
+      "è",
+      "anche",
+      "rispettoso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esatto",
+        "pinyin": null,
+        "meaning": "Exato"
+      },
+      {
+        "id": 2,
+        "word": "cani guida",
+        "pinyin": null,
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 3,
+        "word": "occhi",
+        "pinyin": null,
+        "meaning": "olhos"
+      },
+      {
+        "id": 4,
+        "word": "non vedente",
+        "pinyin": null,
+        "meaning": "não vidente, cego"
+      },
+      {
+        "id": 5,
+        "word": "conveniente",
+        "pinyin": null,
+        "meaning": "conveniente, cômodo"
+      },
+      {
+        "id": 6,
+        "word": "rispettoso",
+        "pinyin": null,
+        "meaning": "respeitoso"
+      }
+    ],
+    "id": "local-1772299856206-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Shanghai permette già ai cani guida di andare in metropolitana, ma in alcune città non è ancora permesso.",
+    "pinyin": null,
+    "translation": "A: Xangai já permite que cães-guia vão de metrô, mas em algumas cidades ainda não é permitido.",
+    "tokens": [
+      "A:",
+      "Shanghai",
+      "permette",
+      "già",
+      "ai",
+      "cani",
+      "guida",
+      "di",
+      "andare",
+      "in",
+      "metropolitana,",
+      "ma",
+      "in",
+      "alcune",
+      "città",
+      "non",
+      "è",
+      "ancora",
+      "permesso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "permette",
+        "pinyin": null,
+        "meaning": "permite"
+      },
+      {
+        "id": 2,
+        "word": "già",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "cani guida",
+        "pinyin": null,
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 4,
+        "word": "metropolitana",
+        "pinyin": null,
+        "meaning": "metrô"
+      },
+      {
+        "id": 5,
+        "word": "ancora",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 6,
+        "word": "permesso",
+        "pinyin": null,
+        "meaning": "permitido"
+      }
+    ],
+    "id": "local-1772299856206-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questo sondaggio non è ancora terminato. Votiamo subito e diamo il nostro sostegno.",
+    "pinyin": null,
+    "translation": "B: Esta enquete ainda não terminou. Vamos votar agora e dar nosso apoio.",
+    "tokens": [
+      "B:",
+      "Questo",
+      "sondaggio",
+      "non",
+      "è",
+      "ancora",
+      "terminato.",
+      "Votiamo",
+      "subito",
+      "e",
+      "diamo",
+      "il",
+      "nostro",
+      "sostegno."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sondaggio",
+        "pinyin": null,
+        "meaning": "enquete, pesquisa de opinião"
+      },
+      {
+        "id": 2,
+        "word": "ancora",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "terminato",
+        "pinyin": null,
+        "meaning": "terminado"
+      },
+      {
+        "id": 4,
+        "word": "Votiamo",
+        "pinyin": null,
+        "meaning": "Votemos, Vamos votar"
+      },
+      {
+        "id": 5,
+        "word": "subito",
+        "pinyin": null,
+        "meaning": "agora, imediatamente"
+      },
+      {
+        "id": 6,
+        "word": "sostegno",
+        "pinyin": null,
+        "meaning": "apoio"
+      }
+    ],
+    "id": "local-1772299856206-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Dobbiamo.",
+    "pinyin": null,
+    "translation": "A: Devemos.",
+    "tokens": [
+      "A:",
+      "Dobbiamo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dobbiamo",
+        "pinyin": null,
+        "meaning": "Devemos (verbo dovere)"
+      }
+    ],
+    "id": "local-1772299856206-8",
+    "language": "Italiano"
+  }
+]

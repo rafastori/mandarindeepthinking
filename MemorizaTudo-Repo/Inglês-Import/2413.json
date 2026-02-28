@@ -1,0 +1,553 @@
+[
+  {
+    "chinese": "A: Spin, jump, slide. Wow, Kim Yuna's movements are really beautiful.",
+    "pinyin": "",
+    "translation": "A: Gira, pula, desliza. Uau, os movimentos da Kim Yuna são realmente lindos.",
+    "tokens": [
+      "Spin",
+      ",",
+      "jump",
+      ",",
+      "slide",
+      ".",
+      "Wow",
+      ",",
+      "Kim",
+      "Yuna's",
+      "movements",
+      "are",
+      "really",
+      "beautiful",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Spin",
+        "pinyin": "",
+        "meaning": "Girar"
+      },
+      {
+        "id": 2,
+        "word": "jump",
+        "pinyin": "",
+        "meaning": "Pular"
+      },
+      {
+        "id": 3,
+        "word": "slide",
+        "pinyin": "",
+        "meaning": "Deslizar"
+      },
+      {
+        "id": 4,
+        "word": "movements",
+        "pinyin": "",
+        "meaning": "Movimentos"
+      },
+      {
+        "id": 5,
+        "word": "beautiful",
+        "pinyin": "",
+        "meaning": "Bonito/a"
+      },
+      {
+        "id": 6,
+        "word": "really",
+        "pinyin": "",
+        "meaning": "Realmente"
+      }
+    ],
+    "id": "local-1772292620300-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Are you watching the Winter Olympic figure skating competition? Oh, this is that young Korean prodigy.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística das Olimpíadas de Inverno? Oh, esta é aquela jovem prodígio coreana.",
+    "tokens": [
+      "Are",
+      "you",
+      "watching",
+      "the",
+      "Winter",
+      "Olympic",
+      "figure",
+      "skating",
+      "competition",
+      "?",
+      "Oh",
+      ",",
+      "this",
+      "is",
+      "that",
+      "young",
+      "Korean",
+      "prodigy",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "watching",
+        "pinyin": "",
+        "meaning": "Assistindo"
+      },
+      {
+        "id": 2,
+        "word": "Winter Olympic",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "figure skating",
+        "pinyin": "",
+        "meaning": "Patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "competition",
+        "pinyin": "",
+        "meaning": "Competição"
+      },
+      {
+        "id": 5,
+        "word": "young",
+        "pinyin": "",
+        "meaning": "Jovem"
+      },
+      {
+        "id": 6,
+        "word": "Korean",
+        "pinyin": "",
+        "meaning": "Coreana"
+      },
+      {
+        "id": 7,
+        "word": "prodigy",
+        "pinyin": "",
+        "meaning": "Prodígio"
+      }
+    ],
+    "id": "local-1772292620300-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yeah. Look how beautiful her movements are!",
+    "pinyin": "",
+    "translation": "A: Sim. Veja como os movimentos dela são lindos!",
+    "tokens": [
+      "Yeah",
+      ".",
+      "Look",
+      "how",
+      "beautiful",
+      "her",
+      "movements",
+      "are",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "beautiful",
+        "pinyin": "",
+        "meaning": "Lindo/a"
+      },
+      {
+        "id": 2,
+        "word": "movements",
+        "pinyin": "",
+        "meaning": "Movimentos"
+      }
+    ],
+    "id": "local-1772292620300-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But this Winter Olympics, she didn't get the gold medal. I think four years ago at the Vancouver Olympics she was at her peak.",
+    "pinyin": "",
+    "translation": "B: Mas nestas Olimpíadas de Inverno, ela não ganhou a medalha de ouro. Acho que quatro anos atrás, nas Olimpíadas de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "But",
+      "this",
+      "Winter",
+      "Olympics",
+      ",",
+      "she",
+      "didn't",
+      "get",
+      "the",
+      "gold",
+      "medal",
+      ".",
+      "I",
+      "think",
+      "four",
+      "years",
+      "ago",
+      "at",
+      "the",
+      "Vancouver",
+      "Olympics",
+      "she",
+      "was",
+      "at",
+      "her",
+      "peak",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Winter Olympics",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 2,
+        "word": "gold medal",
+        "pinyin": "",
+        "meaning": "Medalha de ouro"
+      },
+      {
+        "id": 3,
+        "word": "Vancouver Olympics",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Vancouver"
+      },
+      {
+        "id": 4,
+        "word": "at her peak",
+        "pinyin": "",
+        "meaning": "No auge dela"
+      }
+    ],
+    "id": "local-1772292620300-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: In my mind, she will always be the Queen of the Ice! Although she didn't get gold this time, her performance was still remarkable. It's a shame that she's going to retire after this Winter Olympics.",
+    "pinyin": "",
+    "translation": "A: Na minha opinião, ela sempre será a Rainha do Gelo! Embora não tenha ganhado ouro desta vez, sua performance ainda foi notável. É uma pena que ela vá se aposentar depois destas Olimpíadas de Inverno.",
+    "tokens": [
+      "In",
+      "my",
+      "mind",
+      ",",
+      "she",
+      "will",
+      "always",
+      "be",
+      "the",
+      "Queen",
+      "of",
+      "the",
+      "Ice",
+      "!",
+      "Although",
+      "she",
+      "didn't",
+      "get",
+      "gold",
+      "this",
+      "time",
+      ",",
+      "her",
+      "performance",
+      "was",
+      "still",
+      "remarkable",
+      ".",
+      "It's",
+      "a",
+      "shame",
+      "that",
+      "she's",
+      "going",
+      "to",
+      "retire",
+      "after",
+      "this",
+      "Winter",
+      "Olympics",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In my mind",
+        "pinyin": "",
+        "meaning": "Na minha opinião (literalmente, na minha mente)"
+      },
+      {
+        "id": 2,
+        "word": "Queen of the Ice",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 3,
+        "word": "performance",
+        "pinyin": "",
+        "meaning": "Performance, apresentação"
+      },
+      {
+        "id": 4,
+        "word": "remarkable",
+        "pinyin": "",
+        "meaning": "Notável, extraordinário"
+      },
+      {
+        "id": 5,
+        "word": "It's a shame",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 6,
+        "word": "retire",
+        "pinyin": "",
+        "meaning": "Aposentar-se"
+      },
+      {
+        "id": 7,
+        "word": "Winter Olympics",
+        "pinyin": "",
+        "meaning": "Olimpíadas de Inverno"
+      }
+    ],
+    "id": "local-1772292620300-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: This time the women's singles champion Sotnikova is also really good. Plus, she's only 17 years old.",
+    "pinyin": "",
+    "translation": "B: Desta vez, a campeã individual feminina Sotnikova também é muito boa. Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "This",
+      "time",
+      "the",
+      "women's",
+      "singles",
+      "champion",
+      "Sotnikova",
+      "is",
+      "also",
+      "really",
+      "good",
+      ".",
+      "Plus",
+      ",",
+      "she's",
+      "only",
+      "17",
+      "years",
+      "old",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "women's singles",
+        "pinyin": "",
+        "meaning": "Individual feminino"
+      },
+      {
+        "id": 2,
+        "word": "champion",
+        "pinyin": "",
+        "meaning": "Campeã"
+      },
+      {
+        "id": 3,
+        "word": "really good",
+        "pinyin": "",
+        "meaning": "Muito bom/boa"
+      },
+      {
+        "id": 4,
+        "word": "Plus",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 5,
+        "word": "years old",
+        "pinyin": "",
+        "meaning": "Anos de idade"
+      }
+    ],
+    "id": "local-1772292620300-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yeah. Hey, figure skating really is an elegant sport. Do you think I could still learn to do it?",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, patinação artística realmente é um esporte elegante. Você acha que eu ainda conseguiria aprender a fazer isso?",
+    "tokens": [
+      "Yeah",
+      ".",
+      "Hey",
+      ",",
+      "figure",
+      "skating",
+      "really",
+      "is",
+      "an",
+      "elegant",
+      "sport",
+      ".",
+      "Do",
+      "you",
+      "think",
+      "I",
+      "could",
+      "still",
+      "learn",
+      "to",
+      "do",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "figure skating",
+        "pinyin": "",
+        "meaning": "Patinação artística"
+      },
+      {
+        "id": 2,
+        "word": "elegant",
+        "pinyin": "",
+        "meaning": "Elegante"
+      },
+      {
+        "id": 3,
+        "word": "sport",
+        "pinyin": "",
+        "meaning": "Esporte"
+      },
+      {
+        "id": 4,
+        "word": "learn",
+        "pinyin": "",
+        "meaning": "Aprender"
+      }
+    ],
+    "id": "local-1772292620300-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: You? Forget it. Do you see these athletes on TV? They all started when they were young. If you started now, it'd be too late.",
+    "pinyin": "",
+    "translation": "B: Você? Esquece. Você vê esses atletas na TV? Todos eles começaram quando eram jovens. Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "You",
+      "?",
+      "Forget",
+      "it",
+      ".",
+      "Do",
+      "you",
+      "see",
+      "these",
+      "athletes",
+      "on",
+      "TV",
+      "?",
+      "They",
+      "all",
+      "started",
+      "when",
+      "they",
+      "were",
+      "young",
+      ".",
+      "If",
+      "you",
+      "started",
+      "now",
+      ",",
+      "it'd",
+      "be",
+      "too",
+      "late",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Forget it",
+        "pinyin": "",
+        "meaning": "Esquece (isso)"
+      },
+      {
+        "id": 2,
+        "word": "athletes",
+        "pinyin": "",
+        "meaning": "Atletas"
+      },
+      {
+        "id": 3,
+        "word": "started",
+        "pinyin": "",
+        "meaning": "Começaram"
+      },
+      {
+        "id": 4,
+        "word": "young",
+        "pinyin": "",
+        "meaning": "Jovens"
+      },
+      {
+        "id": 5,
+        "word": "too late",
+        "pinyin": "",
+        "meaning": "Tarde demais"
+      }
+    ],
+    "id": "local-1772292620300-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I don't want to compete. I just want to do it for fun.",
+    "pinyin": "",
+    "translation": "A: Eu não quero competir. Eu só quero fazer isso por diversão.",
+    "tokens": [
+      "I",
+      "don't",
+      "want",
+      "to",
+      "compete",
+      ".",
+      "I",
+      "just",
+      "want",
+      "to",
+      "do",
+      "it",
+      "for",
+      "fun",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "compete",
+        "pinyin": "",
+        "meaning": "Competir"
+      },
+      {
+        "id": 2,
+        "word": "for fun",
+        "pinyin": "",
+        "meaning": "Por diversão"
+      }
+    ],
+    "id": "local-1772292620300-8",
+    "language": "Inglês"
+  }
+]

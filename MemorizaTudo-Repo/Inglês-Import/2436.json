@@ -1,0 +1,526 @@
+[
+  {
+    "chinese": "A: Honey, we're going to be out of rice and oil soon.",
+    "pinyin": "",
+    "translation": "A: Querida, vamos ficar sem arroz e óleo em breve.",
+    "tokens": [
+      "A:",
+      "Honey",
+      ",",
+      "we're",
+      "going",
+      "to",
+      "be",
+      "out",
+      "of",
+      "rice",
+      "and",
+      "oil",
+      "soon",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Honey",
+        "pinyin": "",
+        "meaning": "Querida/Amor (termo carinhoso)"
+      },
+      {
+        "id": 2,
+        "word": "out of",
+        "pinyin": "",
+        "meaning": "sem, esgotado, acabado"
+      },
+      {
+        "id": 3,
+        "word": "rice",
+        "pinyin": "",
+        "meaning": "arroz"
+      },
+      {
+        "id": 4,
+        "word": "oil",
+        "pinyin": "",
+        "meaning": "óleo"
+      },
+      {
+        "id": 5,
+        "word": "soon",
+        "pinyin": "",
+        "meaning": "em breve"
+      }
+    ],
+    "id": "local-1772293087038-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh? Then I'll buy some on Yihaodian.",
+    "pinyin": "",
+    "translation": "B: Ah é? Então vou comprar um pouco no Yihaodian.",
+    "tokens": [
+      "B:",
+      "Oh",
+      "?",
+      "Then",
+      "I'll",
+      "buy",
+      "some",
+      "on",
+      "Yihaodian",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah (interjeição de surpresa/compreensão)"
+      },
+      {
+        "id": 2,
+        "word": "Then",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "some",
+        "pinyin": "",
+        "meaning": "um pouco, alguns"
+      },
+      {
+        "id": 5,
+        "word": "Yihaodian",
+        "pinyin": "",
+        "meaning": "Yihaodian (nome de um e-commerce)"
+      }
+    ],
+    "id": "local-1772293087038-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What else do we need to buy?",
+    "pinyin": "",
+    "translation": "O que mais precisamos comprar?",
+    "tokens": [
+      "What",
+      "else",
+      "do",
+      "we",
+      "need",
+      "to",
+      "buy",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "else",
+        "pinyin": "",
+        "meaning": "mais (adicional)"
+      },
+      {
+        "id": 2,
+        "word": "need",
+        "pinyin": "",
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772293087038-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We also need to buy some toilet paper.",
+    "pinyin": "",
+    "translation": "A: Também precisamos comprar papel higiênico.",
+    "tokens": [
+      "A:",
+      "We",
+      "also",
+      "need",
+      "to",
+      "buy",
+      "some",
+      "toilet",
+      "paper",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "need",
+        "pinyin": "",
+        "meaning": "precisar"
+      },
+      {
+        "id": 3,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "toilet paper",
+        "pinyin": "",
+        "meaning": "papel higiênico"
+      }
+    ],
+    "id": "local-1772293087038-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Do we have dish soap and detergent?",
+    "pinyin": "",
+    "translation": "B: Temos detergente de louça e sabão em pó?",
+    "tokens": [
+      "B:",
+      "Do",
+      "we",
+      "have",
+      "dish",
+      "soap",
+      "and",
+      "detergent",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "have",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 2,
+        "word": "dish soap",
+        "pinyin": "",
+        "meaning": "detergente de louça"
+      },
+      {
+        "id": 3,
+        "word": "detergent",
+        "pinyin": "",
+        "meaning": "detergente (geralmente para roupa, sabão em pó)"
+      }
+    ],
+    "id": "local-1772293087038-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yes. Oh, we also need to buy milk powder and diapers for the baby.",
+    "pinyin": "",
+    "translation": "A: Sim. Ah, também precisamos comprar leite em pó e fraldas para o bebê.",
+    "tokens": [
+      "A:",
+      "Yes",
+      ".",
+      "Oh",
+      ",",
+      "we",
+      "also",
+      "need",
+      "to",
+      "buy",
+      "milk",
+      "powder",
+      "and",
+      "diapers",
+      "for",
+      "the",
+      "baby",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yes",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah (interjeição)"
+      },
+      {
+        "id": 3,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 4,
+        "word": "need",
+        "pinyin": "",
+        "meaning": "precisar"
+      },
+      {
+        "id": 5,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "milk powder",
+        "pinyin": "",
+        "meaning": "leite em pó"
+      },
+      {
+        "id": 7,
+        "word": "diapers",
+        "pinyin": "",
+        "meaning": "fraldas"
+      },
+      {
+        "id": 8,
+        "word": "baby",
+        "pinyin": "",
+        "meaning": "bebê"
+      }
+    ],
+    "id": "local-1772293087038-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay. Do we have snacks at home?",
+    "pinyin": "",
+    "translation": "B: Ok. Temos lanches em casa?",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Do",
+      "we",
+      "have",
+      "snacks",
+      "at",
+      "home",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok, Certo"
+      },
+      {
+        "id": 2,
+        "word": "have",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 3,
+        "word": "snacks",
+        "pinyin": "",
+        "meaning": "lanches, petiscos"
+      },
+      {
+        "id": 4,
+        "word": "at home",
+        "pinyin": "",
+        "meaning": "em casa"
+      }
+    ],
+    "id": "local-1772293087038-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yes.",
+    "pinyin": "",
+    "translation": "A: Sim.",
+    "tokens": [
+      "A:",
+      "Yes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yes",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772293087038-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Do we have instant noodles?",
+    "pinyin": "",
+    "translation": "B: Temos macarrão instantâneo?",
+    "tokens": [
+      "B:",
+      "Do",
+      "we",
+      "have",
+      "instant",
+      "noodles",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "have",
+        "pinyin": "",
+        "meaning": "ter"
+      },
+      {
+        "id": 2,
+        "word": "instant noodles",
+        "pinyin": "",
+        "meaning": "macarrão instantâneo"
+      }
+    ],
+    "id": "local-1772293087038-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Don't buy instant noodles. They aren't healthy.",
+    "pinyin": "",
+    "translation": "A: Não compre macarrão instantâneo. Não são saudáveis.",
+    "tokens": [
+      "A:",
+      "Don't",
+      "buy",
+      "instant",
+      "noodles",
+      ".",
+      "They",
+      "aren't",
+      "healthy",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Don't buy",
+        "pinyin": "",
+        "meaning": "Não compre"
+      },
+      {
+        "id": 2,
+        "word": "instant noodles",
+        "pinyin": "",
+        "meaning": "macarrão instantâneo"
+      },
+      {
+        "id": 3,
+        "word": "healthy",
+        "pinyin": "",
+        "meaning": "saudável"
+      }
+    ],
+    "id": "local-1772293087038-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay, okay.",
+    "pinyin": "",
+    "translation": "B: Ok, ok.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ",",
+      "okay",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok, Certo"
+      }
+    ],
+    "id": "local-1772293087038-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Hey, it's all been bought.",
+    "pinyin": "",
+    "translation": "Ei, já está tudo comprado.",
+    "tokens": [
+      "Hey",
+      ",",
+      "it's",
+      "all",
+      "been",
+      "bought",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hey",
+        "pinyin": "",
+        "meaning": "Ei, Olá"
+      },
+      {
+        "id": 2,
+        "word": "bought",
+        "pinyin": "",
+        "meaning": "comprado (passado de 'buy')"
+      },
+      {
+        "id": 3,
+        "word": "all been bought",
+        "pinyin": "",
+        "meaning": "tudo foi comprado"
+      }
+    ],
+    "id": "local-1772293087038-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It will be delivered tomorrow.",
+    "pinyin": "",
+    "translation": "Será entregue amanhã.",
+    "tokens": [
+      "It",
+      "will",
+      "be",
+      "delivered",
+      "tomorrow",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "delivered",
+        "pinyin": "",
+        "meaning": "entregue"
+      },
+      {
+        "id": 2,
+        "word": "tomorrow",
+        "pinyin": "",
+        "meaning": "amanhã"
+      }
+    ],
+    "id": "local-1772293087038-12",
+    "language": "Inglês"
+  }
+]

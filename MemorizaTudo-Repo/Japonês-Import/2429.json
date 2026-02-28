@@ -1,0 +1,657 @@
+[
+  {
+    "chinese": "ゾーイ、ご家族が大きなテレビを買ったと聞きました。ぜひ見に行きたいです。",
+    "pinyin": "",
+    "translation": "A: Zoe, ouvi dizer que sua família comprou uma TV grande. Eu adoraria ir vê-la.",
+    "tokens": [
+      "ゾーイ",
+      "、",
+      "ご家族",
+      "が",
+      "大きな",
+      "テレビ",
+      "を",
+      "買っ",
+      "た",
+      "と",
+      "聞き",
+      "まし",
+      "た",
+      "。",
+      "ぜひ",
+      "見",
+      "に",
+      "行き",
+      "たい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ご家族",
+        "pinyin": "gokazoku",
+        "meaning": "sua família (respeitoso)"
+      },
+      {
+        "id": 2,
+        "word": "大きな",
+        "pinyin": "ookina",
+        "meaning": "grande"
+      },
+      {
+        "id": 3,
+        "word": "テレビ",
+        "pinyin": "terebi",
+        "meaning": "televisão"
+      },
+      {
+        "id": 4,
+        "word": "買った",
+        "pinyin": "katta",
+        "meaning": "comprou (forma 'ta' do verbo 買う)"
+      },
+      {
+        "id": 5,
+        "word": "聞きました",
+        "pinyin": "kikimashita",
+        "meaning": "ouvi (passado formal do verbo 聞く)"
+      },
+      {
+        "id": 6,
+        "word": "ぜひ",
+        "pinyin": "zehi",
+        "meaning": "definitivamente, com certeza"
+      },
+      {
+        "id": 7,
+        "word": "見に行きたいです",
+        "pinyin": "miniikitai desu",
+        "meaning": "quero ir ver"
+      }
+    ],
+    "id": "local-1772297068538-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ようこそ。どうぞお入りください！",
+    "pinyin": "",
+    "translation": "B: Bem-vindo. Por favor, entre!",
+    "tokens": [
+      "ようこそ",
+      "。",
+      "どうぞ",
+      "お入り",
+      "ください",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ようこそ",
+        "pinyin": "yookoso",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "どうぞ",
+        "pinyin": "doozo",
+        "meaning": "por favor, à vontade"
+      },
+      {
+        "id": 3,
+        "word": "お入りください",
+        "pinyin": "ohairi kudasai",
+        "meaning": "por favor, entre (forma respeitosa)"
+      }
+    ],
+    "id": "local-1772297068538-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "へえ、このテレビは本当にすごいですね！ねえ、この小さな黒い立方体は何ですか？",
+    "pinyin": "",
+    "translation": "A: Uau, esta TV é realmente incrível! Ei, o que é este pequeno cubo preto?",
+    "tokens": [
+      "へえ",
+      "、",
+      "この",
+      "テレビ",
+      "は",
+      "本当に",
+      "すごい",
+      "です",
+      "ね",
+      "！",
+      "ねえ",
+      "、",
+      "この",
+      "小さな",
+      "黒い",
+      "立方体",
+      "は",
+      "何",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "へえ",
+        "pinyin": "hee",
+        "meaning": "uau, ah (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "本当に",
+        "pinyin": "hontoo ni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "すごい",
+        "pinyin": "sugoi",
+        "meaning": "incrível, impressionante"
+      },
+      {
+        "id": 4,
+        "word": "ねえ",
+        "pinyin": "nee",
+        "meaning": "ei, olha (para chamar atenção)"
+      },
+      {
+        "id": 5,
+        "word": "小さな",
+        "pinyin": "chiisana",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 6,
+        "word": "黒い",
+        "pinyin": "kuroi",
+        "meaning": "preto"
+      },
+      {
+        "id": 7,
+        "word": "立方体",
+        "pinyin": "rippootai",
+        "meaning": "cubo"
+      },
+      {
+        "id": 8,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772297068538-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ああ、これはMiBoxです。インターネットTVボックスの一種です。",
+    "pinyin": "",
+    "translation": "B: Ah, isto é uma MiBox. É um tipo de caixa de TV pela internet.",
+    "tokens": [
+      "ああ",
+      "、",
+      "これ",
+      "は",
+      "MiBox",
+      "です",
+      "。",
+      "インターネット",
+      "TVボックス",
+      "の",
+      "一種",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": "aa",
+        "meaning": "ah, oh (expressão de entendimento)"
+      },
+      {
+        "id": 2,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "isto"
+      },
+      {
+        "id": 3,
+        "word": "MiBox",
+        "pinyin": "MiBox",
+        "meaning": "MiBox (nome do produto)"
+      },
+      {
+        "id": 4,
+        "word": "インターネット",
+        "pinyin": "intaanetto",
+        "meaning": "internet"
+      },
+      {
+        "id": 5,
+        "word": "TVボックス",
+        "pinyin": "terebi bokkusu",
+        "meaning": "caixa de TV"
+      },
+      {
+        "id": 6,
+        "word": "一種",
+        "pinyin": "isshu",
+        "meaning": "um tipo"
+      }
+    ],
+    "id": "local-1772297068538-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "何ができるんですか？",
+    "pinyin": "",
+    "translation": "A: O que ela pode fazer?",
+    "tokens": [
+      "何",
+      "が",
+      "できる",
+      "んです",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "pode fazer, ser capaz de"
+      },
+      {
+        "id": 3,
+        "word": "んですか",
+        "pinyin": "n desu ka",
+        "meaning": "estrutura para perguntar a razão ou pedir uma explicação"
+      }
+    ],
+    "id": "local-1772297068538-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ほら、見てください。このMiBoxはインターネットに接続されています。これがあれば、オンラインテレビを見たり、ゲームをしたりできます。ローカルビデオを再生したり、以前放送された番組を再生することもできます。",
+    "pinyin": "",
+    "translation": "B: Olha, veja. Esta MiBox está conectada à internet. Com ela, você pode assistir TV online e jogar. Você também pode reproduzir vídeos locais e programas que foram transmitidos anteriormente.",
+    "tokens": [
+      "ほら",
+      "、",
+      "見て",
+      "ください",
+      "。",
+      "この",
+      "MiBox",
+      "は",
+      "インターネット",
+      "に",
+      "接続",
+      "され",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "これ",
+      "が",
+      "あれ",
+      "ば",
+      "、",
+      "オンラインテレビ",
+      "を",
+      "見たり",
+      "、",
+      "ゲームを",
+      "したり",
+      "でき",
+      "ます",
+      "。",
+      "ローカルビデオ",
+      "を",
+      "再生",
+      "し",
+      "たり",
+      "、",
+      "以前",
+      "放送",
+      "され",
+      "た",
+      "番組",
+      "を",
+      "再生",
+      "する",
+      "こと",
+      "も",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ほら",
+        "pinyin": "hora",
+        "meaning": "olha, veja (chamar atenção)"
+      },
+      {
+        "id": 2,
+        "word": "見てください",
+        "pinyin": "mite kudasai",
+        "meaning": "por favor, veja"
+      },
+      {
+        "id": 3,
+        "word": "接続されています",
+        "pinyin": "setsuzoku sarete imasu",
+        "meaning": "está conectada (forma passiva de 接続する)"
+      },
+      {
+        "id": 4,
+        "word": "これがあれば",
+        "pinyin": "kore ga areba",
+        "meaning": "se tiver isso, com isso"
+      },
+      {
+        "id": 5,
+        "word": "オンラインテレビ",
+        "pinyin": "onrain terebi",
+        "meaning": "TV online"
+      },
+      {
+        "id": 6,
+        "word": "見たり",
+        "pinyin": "mitari",
+        "meaning": "assistir (e outras ações, parte da estrutura たり...たり)"
+      },
+      {
+        "id": 7,
+        "word": "ゲームをしたり",
+        "pinyin": "geemu o shitari",
+        "meaning": "jogar (e outras ações, parte da estrutura たり...たり)"
+      },
+      {
+        "id": 8,
+        "word": "できます",
+        "pinyin": "dekimasu",
+        "meaning": "pode, é possível"
+      },
+      {
+        "id": 9,
+        "word": "ローカルビデオ",
+        "pinyin": "rookaru bideo",
+        "meaning": "vídeos locais"
+      },
+      {
+        "id": 10,
+        "word": "再生する",
+        "pinyin": "saisei suru",
+        "meaning": "reproduzir"
+      },
+      {
+        "id": 11,
+        "word": "以前",
+        "pinyin": "izen",
+        "meaning": "anteriormente"
+      },
+      {
+        "id": 12,
+        "word": "放送された",
+        "pinyin": "hoosoo sareta",
+        "meaning": "que foi transmitido"
+      },
+      {
+        "id": 13,
+        "word": "番組",
+        "pinyin": "bangumi",
+        "meaning": "programa (de TV/rádio)"
+      }
+    ],
+    "id": "local-1772297068538-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "うわあ、本当に強力ですね！",
+    "pinyin": "",
+    "translation": "A: Uau, é realmente poderosa!",
+    "tokens": [
+      "うわあ",
+      "、",
+      "本当に",
+      "強力",
+      "です",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うわあ",
+        "pinyin": "uwaa",
+        "meaning": "uau (interjeição de admiração)"
+      },
+      {
+        "id": 2,
+        "word": "本当に",
+        "pinyin": "hontoo ni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "強力",
+        "pinyin": "kyouryoku",
+        "meaning": "poderosa, forte"
+      }
+    ],
+    "id": "local-1772297068538-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "ええ。MiBoxの他にも、Apple TVやComoTVなどがあります。テレビボックスを選ぶときは、本当に迷いました。",
+    "pinyin": "",
+    "translation": "B: Sim. Além da MiBox, há também Apple TV, ComoTV, entre outros. Fiquei realmente indeciso na hora de escolher um TV box.",
+    "tokens": [
+      "ええ",
+      "。",
+      "MiBox",
+      "の",
+      "他にも",
+      "、",
+      "Apple TV",
+      "や",
+      "ComoTV",
+      "など",
+      "が",
+      "あり",
+      "ます",
+      "。",
+      "テレビボックス",
+      "を",
+      "選ぶ",
+      "とき",
+      "は",
+      "、",
+      "本当に",
+      "迷い",
+      "まし",
+      "た",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええ",
+        "pinyin": "ee",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "他にも",
+        "pinyin": "hoka ni mo",
+        "meaning": "além disso, além de"
+      },
+      {
+        "id": 3,
+        "word": "Apple TV",
+        "pinyin": "Apple TV",
+        "meaning": "Apple TV (nome do produto)"
+      },
+      {
+        "id": 4,
+        "word": "ComoTV",
+        "pinyin": "ComoTV",
+        "meaning": "ComoTV (nome do produto)"
+      },
+      {
+        "id": 5,
+        "word": "など",
+        "pinyin": "nado",
+        "meaning": "etc., e coisas do tipo"
+      },
+      {
+        "id": 6,
+        "word": "選ぶ",
+        "pinyin": "erabu",
+        "meaning": "escolher"
+      },
+      {
+        "id": 7,
+        "word": "とき",
+        "pinyin": "toki",
+        "meaning": "quando"
+      },
+      {
+        "id": 8,
+        "word": "本当に",
+        "pinyin": "hontoo ni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 9,
+        "word": "迷いました",
+        "pinyin": "mayoimashita",
+        "meaning": "fiquei indeciso, hesitei (passado formal de 迷う)"
+      }
+    ],
+    "id": "local-1772297068538-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "私は本当に時代遅れのようですね。私の家はまだケーブルテレビを使っています。後で私もボックスを買おうと思います。",
+    "pinyin": "",
+    "translation": "A: Parece que estou realmente atrasado. Minha casa ainda usa TV a cabo. Acho que vou comprar uma caixa também mais tarde.",
+    "tokens": [
+      "私",
+      "は",
+      "本当に",
+      "時代遅れ",
+      "の",
+      "よう",
+      "です",
+      "ね",
+      "。",
+      "私",
+      "の",
+      "家",
+      "は",
+      "まだ",
+      "ケーブルテレビ",
+      "を",
+      "使って",
+      "い",
+      "ます",
+      "。",
+      "後で",
+      "私",
+      "も",
+      "ボックス",
+      "を",
+      "買おう",
+      "と",
+      "思い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "本当に",
+        "pinyin": "hontoo ni",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "時代遅れ",
+        "pinyin": "jidaiokure",
+        "meaning": "fora de moda, obsoleto"
+      },
+      {
+        "id": 4,
+        "word": "のようです",
+        "pinyin": "no yoo desu",
+        "meaning": "parece que"
+      },
+      {
+        "id": 5,
+        "word": "家",
+        "pinyin": "ie",
+        "meaning": "casa"
+      },
+      {
+        "id": 6,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 7,
+        "word": "ケーブルテレビ",
+        "pinyin": "keeburu terebi",
+        "meaning": "TV a cabo"
+      },
+      {
+        "id": 8,
+        "word": "使っています",
+        "pinyin": "tsukatte imasu",
+        "meaning": "está usando (forma te-iru de 使う)"
+      },
+      {
+        "id": 9,
+        "word": "後で",
+        "pinyin": "ato de",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 10,
+        "word": "ボックス",
+        "pinyin": "bokkusu",
+        "meaning": "caixa"
+      },
+      {
+        "id": 11,
+        "word": "買おうと思います",
+        "pinyin": "kaoo to omoimasu",
+        "meaning": "acho que vou comprar (forma volitiva + と思います)"
+      }
+    ],
+    "id": "local-1772297068538-8",
+    "language": "Japonês"
+  }
+]

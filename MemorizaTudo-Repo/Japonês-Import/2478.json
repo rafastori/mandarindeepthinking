@@ -1,0 +1,738 @@
+[
+  {
+    "chinese": "A: こんにちは、ワインをお買い求めですか？",
+    "pinyin": null,
+    "translation": "A: Olá, você está procurando por vinho?",
+    "tokens": [
+      "こんにちは",
+      "、",
+      "ワイン",
+      "を",
+      "お買い求め",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんにちは",
+        "pinyin": "konnichiwa",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "ワイン",
+        "pinyin": "wain",
+        "meaning": "vinho"
+      },
+      {
+        "id": 3,
+        "word": "お買い求め",
+        "pinyin": "okaimotome",
+        "meaning": "procurar, comprar (honorífico)"
+      }
+    ],
+    "id": "local-1772300567856-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい。外国の友人の誕生日のお祝いなんです。",
+    "pinyin": null,
+    "translation": "B: Sim. É para celebrar o aniversário de um amigo estrangeiro.",
+    "tokens": [
+      "はい",
+      "。",
+      "外国",
+      "の",
+      "友人",
+      "の",
+      "誕生日",
+      "の",
+      "お祝い",
+      "なん",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": "hai",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "外国",
+        "pinyin": "gaikoku",
+        "meaning": "país estrangeiro"
+      },
+      {
+        "id": 3,
+        "word": "友人",
+        "pinyin": "yūjin",
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "誕生日",
+        "pinyin": "tanjōbi",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 5,
+        "word": "お祝い",
+        "pinyin": "oiwai",
+        "meaning": "celebração, comemoração"
+      }
+    ],
+    "id": "local-1772300567856-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 彼女は赤ワインと白ワインのどちらがお好みですか？",
+    "pinyin": null,
+    "translation": "A: Ela prefere vinho tinto ou vinho branco?",
+    "tokens": [
+      "彼女",
+      "は",
+      "赤ワイン",
+      "と",
+      "白ワイン",
+      "の",
+      "どちら",
+      "が",
+      "お好み",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "彼女",
+        "pinyin": "kanojo",
+        "meaning": "ela"
+      },
+      {
+        "id": 2,
+        "word": "赤ワイン",
+        "pinyin": "akawain",
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 3,
+        "word": "白ワイン",
+        "pinyin": "shirowain",
+        "meaning": "vinho branco"
+      },
+      {
+        "id": 4,
+        "word": "どちら",
+        "pinyin": "dochira",
+        "meaning": "qual (entre dois)"
+      },
+      {
+        "id": 5,
+        "word": "お好み",
+        "pinyin": "okonomi",
+        "meaning": "preferência (honorífico)"
+      }
+    ],
+    "id": "local-1772300567856-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 赤ワインです。",
+    "pinyin": null,
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "赤ワイン",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "赤ワイン",
+        "pinyin": "akawain",
+        "meaning": "vinho tinto"
+      }
+    ],
+    "id": "local-1772300567856-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 承知いたしました。こちらにはニューワールドワインとオールドワールドワインの両方がございます。",
+    "pinyin": null,
+    "translation": "A: Entendido. Temos tanto vinhos do Novo Mundo quanto vinhos do Velho Mundo aqui.",
+    "tokens": [
+      "承知",
+      "いたしました",
+      "。",
+      "こちら",
+      "に",
+      "は",
+      "ニューワールドワイン",
+      "と",
+      "オールドワールドワイン",
+      "の",
+      "両方",
+      "が",
+      "ございます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "承知いたしました",
+        "pinyin": "shōchiitashimashita",
+        "meaning": "Entendido (formal/humilde)"
+      },
+      {
+        "id": 2,
+        "word": "こちら",
+        "pinyin": "kochira",
+        "meaning": "aqui (formal)"
+      },
+      {
+        "id": 3,
+        "word": "ニューワールドワイン",
+        "pinyin": "nyūwārudowain",
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 4,
+        "word": "オールドワールドワイン",
+        "pinyin": "ōrudowārudowain",
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 5,
+        "word": "両方",
+        "pinyin": "ryōhō",
+        "meaning": "ambos"
+      },
+      {
+        "id": 6,
+        "word": "ございます",
+        "pinyin": "gozaimasu",
+        "meaning": "tem (formal/humilde)"
+      }
+    ],
+    "id": "local-1772300567856-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 普段ワインはあまり飲まないので、詳しくないんです。",
+    "pinyin": null,
+    "translation": "B: Como normalmente não bebo muito vinho, não sou muito familiarizado.",
+    "tokens": [
+      "普段",
+      "ワイン",
+      "は",
+      "あまり",
+      "飲ま",
+      "ない",
+      "ので",
+      "、",
+      "詳しく",
+      "ない",
+      "んです",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "普段",
+        "pinyin": "fudan",
+        "meaning": "normalmente, geralmente"
+      },
+      {
+        "id": 2,
+        "word": "あまり",
+        "pinyin": "amari",
+        "meaning": "não muito (usado com negativo)"
+      },
+      {
+        "id": 3,
+        "word": "飲まない",
+        "pinyin": "nomanai",
+        "meaning": "não beber"
+      },
+      {
+        "id": 4,
+        "word": "詳しい",
+        "pinyin": "kuwashii",
+        "meaning": "detalhado, familiarizado"
+      }
+    ],
+    "id": "local-1772300567856-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 問題ありません。「オールドワールド」は主にフランス、イタリア、スペインなど、伝統的なワイン造りの数百年の歴史を持つ国々を指します。一方、「ニューワールド」はアメリカ、カナダ、アルゼンチン、オーストラリアなど、ワイン造りの歴史が新しい国々を指します。",
+    "pinyin": null,
+    "translation": "A: Sem problemas. 'Velho Mundo' refere-se principalmente a países com centenas de anos de história na produção tradicional de vinho, como França, Itália, Espanha, etc. Por outro lado, 'Novo Mundo' refere-se a países com uma história mais recente na produção de vinho, como América, Canadá, Argentina, Austrália, etc.",
+    "tokens": [
+      "問題",
+      "ありません",
+      "。",
+      "「",
+      "オールドワールド",
+      "」",
+      "は",
+      "主に",
+      "フランス",
+      "、",
+      "イタリア",
+      "、",
+      "スペイン",
+      "など",
+      "、",
+      "伝統的",
+      "な",
+      "ワイン造り",
+      "の",
+      "数百年",
+      "の",
+      "歴史",
+      "を",
+      "持つ",
+      "国々",
+      "を",
+      "指し",
+      "ます",
+      "。",
+      "一方",
+      "、",
+      "「",
+      "ニューワールド",
+      "」",
+      "は",
+      "アメリカ",
+      "、",
+      "カナダ",
+      "、",
+      "アルゼンチン",
+      "、",
+      "オーストラリア",
+      "など",
+      "、",
+      "ワイン造り",
+      "の",
+      "歴史",
+      "が",
+      "新しい",
+      "国々",
+      "を",
+      "指し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "問題ありません",
+        "pinyin": "mondaiarimasen",
+        "meaning": "Sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "主に",
+        "pinyin": "omoni",
+        "meaning": "principalmente"
+      },
+      {
+        "id": 3,
+        "word": "伝統的",
+        "pinyin": "dentōteki",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "ワイン造り",
+        "pinyin": "wainzukuri",
+        "meaning": "produção de vinho"
+      },
+      {
+        "id": 5,
+        "word": "数百年",
+        "pinyin": "sūhyakunen",
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 6,
+        "word": "歴史",
+        "pinyin": "rekishi",
+        "meaning": "história"
+      },
+      {
+        "id": 7,
+        "word": "持つ",
+        "pinyin": "motsu",
+        "meaning": "possuir, ter"
+      },
+      {
+        "id": 8,
+        "word": "国々",
+        "pinyin": "kuniguni",
+        "meaning": "países (plural)"
+      },
+      {
+        "id": 9,
+        "word": "指す",
+        "pinyin": "sasu",
+        "meaning": "apontar, referir-se a"
+      },
+      {
+        "id": 10,
+        "word": "一方",
+        "pinyin": "ippō",
+        "meaning": "por outro lado"
+      },
+      {
+        "id": 11,
+        "word": "新しい",
+        "pinyin": "atarashii",
+        "meaning": "novo"
+      }
+    ],
+    "id": "local-1772300567856-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それでは、味に何か違いはありますか？",
+    "pinyin": null,
+    "translation": "B: Então, há alguma diferença no sabor?",
+    "tokens": [
+      "それ",
+      "では",
+      "、",
+      "味",
+      "に",
+      "何か",
+      "違い",
+      "は",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それでは",
+        "pinyin": "soredeha",
+        "meaning": "Então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "味",
+        "pinyin": "aji",
+        "meaning": "sabor"
+      },
+      {
+        "id": 3,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "algo"
+      },
+      {
+        "id": 4,
+        "word": "違い",
+        "pinyin": "chigai",
+        "meaning": "diferença"
+      }
+    ],
+    "id": "local-1772300567856-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: はい。オールドワールドワインはタンニン含有量が高いため、かなり酸味が強いです。ニューワールドワインはタンニンが少ないため、比較的甘口です。",
+    "pinyin": null,
+    "translation": "A: Sim. Os vinhos do Velho Mundo têm um alto teor de tanino, então são bastante ácidos. Os vinhos do Novo Mundo têm menos tanino, então são relativamente doces.",
+    "tokens": [
+      "はい",
+      "。",
+      "オールドワールドワイン",
+      "は",
+      "タンニン",
+      "含有量",
+      "が",
+      "高い",
+      "ため",
+      "、",
+      "かなり",
+      "酸味",
+      "が",
+      "強い",
+      "です",
+      "。",
+      "ニューワールドワイン",
+      "は",
+      "タンニン",
+      "が",
+      "少ない",
+      "ため",
+      "、",
+      "比較的",
+      "甘口",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "タンニン",
+        "pinyin": "tannin",
+        "meaning": "tanino"
+      },
+      {
+        "id": 2,
+        "word": "含有量",
+        "pinyin": "gan'yūryō",
+        "meaning": "teor, quantidade de conteúdo"
+      },
+      {
+        "id": 3,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "alto"
+      },
+      {
+        "id": 4,
+        "word": "ため",
+        "pinyin": "tame",
+        "meaning": "por causa de, devido a"
+      },
+      {
+        "id": 5,
+        "word": "かなり",
+        "pinyin": "kanari",
+        "meaning": "bastante, consideravelmente"
+      },
+      {
+        "id": 6,
+        "word": "酸味",
+        "pinyin": "sanmi",
+        "meaning": "acidez, sabor azedo"
+      },
+      {
+        "id": 7,
+        "word": "強い",
+        "pinyin": "tsuyoi",
+        "meaning": "forte"
+      },
+      {
+        "id": 8,
+        "word": "少ない",
+        "pinyin": "sukunai",
+        "meaning": "pouco, escasso"
+      },
+      {
+        "id": 9,
+        "word": "比較的",
+        "pinyin": "hikakuteki",
+        "meaning": "relativamente"
+      },
+      {
+        "id": 10,
+        "word": "甘口",
+        "pinyin": "amakuchi",
+        "meaning": "doce (sabor), suave"
+      }
+    ],
+    "id": "local-1772300567856-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ、女の子はフルーティーな味のワインの方が好きだと聞いたことがあります。",
+    "pinyin": null,
+    "translation": "B: Ah, eu ouvi dizer que as meninas preferem vinhos com sabor frutado.",
+    "tokens": [
+      "ああ",
+      "、",
+      "女の子",
+      "は",
+      "フルーティー",
+      "な",
+      "味",
+      "の",
+      "ワイン",
+      "の",
+      "方",
+      "が",
+      "好き",
+      "だ",
+      "と",
+      "聞い",
+      "た",
+      "こと",
+      "が",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "女の子",
+        "pinyin": "onnanoko",
+        "meaning": "menina"
+      },
+      {
+        "id": 2,
+        "word": "フルーティー",
+        "pinyin": "furūtī",
+        "meaning": "frutado"
+      },
+      {
+        "id": 3,
+        "word": "味",
+        "pinyin": "aji",
+        "meaning": "sabor"
+      },
+      {
+        "id": 4,
+        "word": "方が好き",
+        "pinyin": "hōgasuki",
+        "meaning": "preferir (aquela opção)"
+      },
+      {
+        "id": 5,
+        "word": "聞いたことがあります",
+        "pinyin": "kītakotogaarimasu",
+        "meaning": "já ouvi falar, já ouvi"
+      }
+    ],
+    "id": "local-1772300567856-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ええ。こちらのようなワインは、特に女性に人気があり、とてもよく売れていますよ。",
+    "pinyin": null,
+    "translation": "A: Sim. Vinhos como este são especialmente populares entre as mulheres e vendem muito bem.",
+    "tokens": [
+      "ええ",
+      "。",
+      "こちら",
+      "の",
+      "よう",
+      "な",
+      "ワイン",
+      "は",
+      "、",
+      "特に",
+      "女性",
+      "に",
+      "人気",
+      "が",
+      "あり",
+      "、",
+      "とても",
+      "よく",
+      "売れ",
+      "て",
+      "い",
+      "ます",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええ",
+        "pinyin": "ēē",
+        "meaning": "Sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "こちらのような",
+        "pinyin": "kochirano yōna",
+        "meaning": "como este"
+      },
+      {
+        "id": 3,
+        "word": "特に",
+        "pinyin": "tokuni",
+        "meaning": "especialmente"
+      },
+      {
+        "id": 4,
+        "word": "女性",
+        "pinyin": "josei",
+        "meaning": "mulher"
+      },
+      {
+        "id": 5,
+        "word": "人気",
+        "pinyin": "ninki",
+        "meaning": "popularidade"
+      },
+      {
+        "id": 6,
+        "word": "売れています",
+        "pinyin": "ureteimasu",
+        "meaning": "está vendendo, é vendido"
+      }
+    ],
+    "id": "local-1772300567856-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました、ではこの一本にします。ありがとうございます！",
+    "pinyin": null,
+    "translation": "B: Entendido, então vou levar esta garrafa. Muito obrigado!",
+    "tokens": [
+      "わかり",
+      "ました",
+      "、",
+      "では",
+      "この",
+      "一本",
+      "に",
+      "し",
+      "ます",
+      "。",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかりました",
+        "pinyin": "wakarimashita",
+        "meaning": "Entendido"
+      },
+      {
+        "id": 2,
+        "word": "では",
+        "pinyin": "deha",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "一本",
+        "pinyin": "ippon",
+        "meaning": "uma garrafa (contador)"
+      },
+      {
+        "id": 4,
+        "word": "にします",
+        "pinyin": "nishimasu",
+        "meaning": "decidir por, escolher"
+      },
+      {
+        "id": 5,
+        "word": "ありがとうございます",
+        "pinyin": "arigatōgozaimasu",
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772300567856-11",
+    "language": "Japonês"
+  }
+]

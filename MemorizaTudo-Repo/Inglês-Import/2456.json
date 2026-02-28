@@ -1,0 +1,405 @@
+[
+  {
+    "chinese": "A: Xiao Liu, this is your first day as an intern. If there's anything you don't understand, please ask.",
+    "pinyin": null,
+    "translation": "A: Xiao Liu, este é o seu primeiro dia como estagiário. Se houver algo que você não entenda, por favor, pergunte.",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Liu,",
+      "this",
+      "is",
+      "your",
+      "first",
+      "day",
+      "as",
+      "an",
+      "intern.",
+      "If",
+      "there's",
+      "anything",
+      "you",
+      "don't",
+      "understand,",
+      "please",
+      "ask."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "intern",
+        "pinyin": null,
+        "meaning": "estagiário(a)"
+      },
+      {
+        "id": 2,
+        "word": "understand",
+        "pinyin": null,
+        "meaning": "entender"
+      },
+      {
+        "id": 3,
+        "word": "ask",
+        "pinyin": null,
+        "meaning": "perguntar"
+      }
+    ],
+    "id": "local-1772293424698-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay, Ms. Li. What am I to do?",
+    "pinyin": null,
+    "translation": "B: Ok, Sra. Li. O que devo fazer?",
+    "tokens": [
+      "B:",
+      "Okay,",
+      "Ms.",
+      "Li.",
+      "What",
+      "am",
+      "I",
+      "to",
+      "do?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "do",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772293424698-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Here are some documents. Please put them in order. Look to see which of them are useful and which ones have \"null and void\" written on them.",
+    "pinyin": null,
+    "translation": "A: Aqui estão alguns documentos. Por favor, coloque-os em ordem. Veja quais deles são úteis e quais têm \"nulo e sem efeito\" escrito neles.",
+    "tokens": [
+      "A:",
+      "Here",
+      "are",
+      "some",
+      "documents.",
+      "Please",
+      "put",
+      "them",
+      "in",
+      "order.",
+      "Look",
+      "to",
+      "see",
+      "which",
+      "of",
+      "them",
+      "are",
+      "useful",
+      "and",
+      "which",
+      "ones",
+      "have",
+      "\"null",
+      "and",
+      "void\"",
+      "written",
+      "on",
+      "them."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "documents",
+        "pinyin": null,
+        "meaning": "documentos"
+      },
+      {
+        "id": 2,
+        "word": "in order",
+        "pinyin": null,
+        "meaning": "em ordem"
+      },
+      {
+        "id": 3,
+        "word": "useful",
+        "pinyin": null,
+        "meaning": "útil"
+      },
+      {
+        "id": 4,
+        "word": "null and void",
+        "pinyin": null,
+        "meaning": "nulo e sem efeito"
+      }
+    ],
+    "id": "local-1772293424698-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay, Ms. Li. These are all null and void documents.",
+    "pinyin": null,
+    "translation": "B: Ok, Sra. Li. Todos estes são documentos nulos e sem efeito.",
+    "tokens": [
+      "B:",
+      "Okay,",
+      "Ms.",
+      "Li.",
+      "These",
+      "are",
+      "all",
+      "null",
+      "and",
+      "void",
+      "documents."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "null and void",
+        "pinyin": null,
+        "meaning": "nulo e sem efeito"
+      },
+      {
+        "id": 2,
+        "word": "documents",
+        "pinyin": null,
+        "meaning": "documentos"
+      }
+    ],
+    "id": "local-1772293424698-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Okay, then dispose of them.",
+    "pinyin": null,
+    "translation": "A: Ok, então descarte-os.",
+    "tokens": [
+      "A:",
+      "Okay,",
+      "then",
+      "dispose",
+      "of",
+      "them."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dispose of",
+        "pinyin": null,
+        "meaning": "descartar"
+      }
+    ],
+    "id": "local-1772293424698-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Is throwing them in the trashcan okay?",
+    "pinyin": null,
+    "translation": "B: Está tudo bem jogá-los na lata de lixo?",
+    "tokens": [
+      "B:",
+      "Is",
+      "throwing",
+      "them",
+      "in",
+      "the",
+      "trashcan",
+      "okay?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "throwing",
+        "pinyin": null,
+        "meaning": "jogando"
+      },
+      {
+        "id": 2,
+        "word": "trashcan",
+        "pinyin": null,
+        "meaning": "lata de lixo"
+      }
+    ],
+    "id": "local-1772293424698-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No. Company documents can't be thrown away. What if they contain some important information?",
+    "pinyin": null,
+    "translation": "A: Não. Documentos da empresa não podem ser jogados fora. E se eles contiverem alguma informação importante?",
+    "tokens": [
+      "A:",
+      "No.",
+      "Company",
+      "documents",
+      "can't",
+      "be",
+      "thrown",
+      "away.",
+      "What",
+      "if",
+      "they",
+      "contain",
+      "some",
+      "important",
+      "information?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "company documents",
+        "pinyin": null,
+        "meaning": "documentos da empresa"
+      },
+      {
+        "id": 2,
+        "word": "thrown away",
+        "pinyin": null,
+        "meaning": "jogados fora"
+      },
+      {
+        "id": 3,
+        "word": "contain",
+        "pinyin": null,
+        "meaning": "conter"
+      },
+      {
+        "id": 4,
+        "word": "important",
+        "pinyin": null,
+        "meaning": "importante"
+      },
+      {
+        "id": 5,
+        "word": "information",
+        "pinyin": null,
+        "meaning": "informação"
+      }
+    ],
+    "id": "local-1772293424698-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then do I tear them up by hand?",
+    "pinyin": null,
+    "translation": "B: Então eu os rasgo à mão?",
+    "tokens": [
+      "B:",
+      "Then",
+      "do",
+      "I",
+      "tear",
+      "them",
+      "up",
+      "by",
+      "hand?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tear up",
+        "pinyin": null,
+        "meaning": "rasgar"
+      },
+      {
+        "id": 2,
+        "word": "by hand",
+        "pinyin": null,
+        "meaning": "à mão"
+      }
+    ],
+    "id": "local-1772293424698-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Haha, of course not. Use the paper shredder. Come on, I'll teach you. Turn on the paper shredder and then put the documents into it slowly.",
+    "pinyin": null,
+    "translation": "A: Haha, claro que não. Use o triturador de papel. Venha, eu vou te ensinar. Ligue o triturador de papel e depois coloque os documentos nele lentamente.",
+    "tokens": [
+      "A:",
+      "Haha,",
+      "of",
+      "course",
+      "not.",
+      "Use",
+      "the",
+      "paper",
+      "shredder.",
+      "Come",
+      "on,",
+      "I'll",
+      "teach",
+      "you.",
+      "Turn",
+      "on",
+      "the",
+      "paper",
+      "shredder",
+      "and",
+      "then",
+      "put",
+      "the",
+      "documents",
+      "into",
+      "it",
+      "slowly."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "of course not",
+        "pinyin": null,
+        "meaning": "claro que não"
+      },
+      {
+        "id": 2,
+        "word": "paper shredder",
+        "pinyin": null,
+        "meaning": "triturador de papel"
+      },
+      {
+        "id": 3,
+        "word": "teach",
+        "pinyin": null,
+        "meaning": "ensinar"
+      },
+      {
+        "id": 4,
+        "word": "turn on",
+        "pinyin": null,
+        "meaning": "ligar"
+      },
+      {
+        "id": 5,
+        "word": "slowly",
+        "pinyin": null,
+        "meaning": "lentamente"
+      }
+    ],
+    "id": "local-1772293424698-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Thank you, Ms. Li.",
+    "pinyin": null,
+    "translation": "B: Obrigado, Sra. Li.",
+    "tokens": [
+      "B:",
+      "Thank",
+      "you,",
+      "Ms.",
+      "Li."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "thank you",
+        "pinyin": null,
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772293424698-9",
+    "language": "Inglês"
+  }
+]

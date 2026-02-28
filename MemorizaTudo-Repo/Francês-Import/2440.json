@@ -1,0 +1,564 @@
+[
+  {
+    "chinese": "A: Ensuite, nous aimerions inviter Wang Wei à dire quelques mots à tout le monde. Applaudissons-le !",
+    "pinyin": null,
+    "translation": "A: Em seguida, gostaríamos de convidar Wang Wei para dizer algumas palavras a todos. Vamos aplaudi-lo!",
+    "tokens": [
+      "A:",
+      "Ensuite",
+      ",",
+      "nous",
+      "aimerions",
+      "inviter",
+      "Wang",
+      "Wei",
+      "à",
+      "dire",
+      "quelques",
+      "mots",
+      "à",
+      "tout",
+      "le",
+      "monde",
+      ".",
+      "Applaudissons-le",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ensuite",
+        "pinyin": null,
+        "meaning": "Em seguida, Depois"
+      },
+      {
+        "id": 2,
+        "word": "aimerions",
+        "pinyin": null,
+        "meaning": "gostaríamos (do verbo aimer - gostar, amar)"
+      },
+      {
+        "id": 3,
+        "word": "inviter",
+        "pinyin": null,
+        "meaning": "convidar"
+      },
+      {
+        "id": 4,
+        "word": "dire",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 5,
+        "word": "quelques mots",
+        "pinyin": null,
+        "meaning": "algumas palavras"
+      },
+      {
+        "id": 6,
+        "word": "tout le monde",
+        "pinyin": null,
+        "meaning": "todo mundo, todos"
+      },
+      {
+        "id": 7,
+        "word": "Applaudissons-le",
+        "pinyin": null,
+        "meaning": "Vamos aplaudi-lo (do verbo applaudir - aplaudir)"
+      }
+    ],
+    "id": "local-1772297743898-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci ! Tout d'abord, un grand merci à tous d'avoir organisé cette fête pour moi.",
+    "pinyin": null,
+    "translation": "B: Obrigado! Primeiramente, um grande obrigado a todos por terem organizado esta festa para mim.",
+    "tokens": [
+      "B:",
+      "Merci",
+      "!",
+      "Tout",
+      "d'abord",
+      ",",
+      "un",
+      "grand",
+      "merci",
+      "à",
+      "tous",
+      "d'avoir",
+      "organisé",
+      "cette",
+      "fête",
+      "pour",
+      "moi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci",
+        "pinyin": null,
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "Tout d'abord",
+        "pinyin": null,
+        "meaning": "Primeiramente, Antes de tudo"
+      },
+      {
+        "id": 3,
+        "word": "grand merci",
+        "pinyin": null,
+        "meaning": "grande obrigado"
+      },
+      {
+        "id": 4,
+        "word": "à tous",
+        "pinyin": null,
+        "meaning": "a todos"
+      },
+      {
+        "id": 5,
+        "word": "d'avoir organisé",
+        "pinyin": null,
+        "meaning": "por ter organizado (do verbo organiser - organizar)"
+      },
+      {
+        "id": 6,
+        "word": "fête",
+        "pinyin": null,
+        "meaning": "festa"
+      }
+    ],
+    "id": "local-1772297743898-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'ai travaillé dans cette entreprise pendant 10 ans. Au cours de ces 10 ans, j'ai beaucoup appris. Je suis très reconnaissant à l'entreprise de m'avoir offert une plateforme pour apprendre et grandir !",
+    "pinyin": null,
+    "translation": "B: Trabalhei nesta empresa por 10 anos. Ao longo desses 10 anos, aprendi muito. Sou muito grato à empresa por ter me oferecido uma plataforma para aprender e crescer!",
+    "tokens": [
+      "B:",
+      "J'ai",
+      "travaillé",
+      "dans",
+      "cette",
+      "entreprise",
+      "pendant",
+      "10",
+      "ans",
+      ".",
+      "Au",
+      "cours",
+      "de",
+      "ces",
+      "10",
+      "ans",
+      ",",
+      "j'ai",
+      "beaucoup",
+      "appris",
+      ".",
+      "Je",
+      "suis",
+      "très",
+      "reconnaissant",
+      "à",
+      "l'entreprise",
+      "de",
+      "m'avoir",
+      "offert",
+      "une",
+      "plateforme",
+      "pour",
+      "apprendre",
+      "et",
+      "grandir",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "travaillé",
+        "pinyin": null,
+        "meaning": "trabalhei (do verbo travailler - trabalhar)"
+      },
+      {
+        "id": 2,
+        "word": "entreprise",
+        "pinyin": null,
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "pendant",
+        "pinyin": null,
+        "meaning": "durante, por (duração)"
+      },
+      {
+        "id": 4,
+        "word": "Au cours de",
+        "pinyin": null,
+        "meaning": "Ao longo de, Durante"
+      },
+      {
+        "id": 5,
+        "word": "beaucoup appris",
+        "pinyin": null,
+        "meaning": "aprendi muito (do verbo apprendre - aprender)"
+      },
+      {
+        "id": 6,
+        "word": "reconnaissant",
+        "pinyin": null,
+        "meaning": "grato, agradecido"
+      },
+      {
+        "id": 7,
+        "word": "offert",
+        "pinyin": null,
+        "meaning": "oferecido (do verbo offrir - oferecer)"
+      },
+      {
+        "id": 8,
+        "word": "plateforme",
+        "pinyin": null,
+        "meaning": "plataforma"
+      },
+      {
+        "id": 9,
+        "word": "apprendre",
+        "pinyin": null,
+        "meaning": "aprender"
+      },
+      {
+        "id": 10,
+        "word": "grandir",
+        "pinyin": null,
+        "meaning": "crescer"
+      }
+    ],
+    "id": "local-1772297743898-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci à chacun des dirigeants de m'avoir encadré !",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos diretores por me terem orientado!",
+    "tokens": [
+      "B:",
+      "Merci",
+      "à",
+      "chacun",
+      "des",
+      "dirigeants",
+      "de",
+      "m'avoir",
+      "encadré",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chacun",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 2,
+        "word": "dirigeants",
+        "pinyin": null,
+        "meaning": "diretores, líderes, gerentes"
+      },
+      {
+        "id": 3,
+        "word": "m'avoir encadré",
+        "pinyin": null,
+        "meaning": "por ter me orientado/supervisionado (do verbo encadrer - enquadrar, supervisionar, orientar)"
+      }
+    ],
+    "id": "local-1772297743898-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci à chacun de mes collègues pour le soutien et l'attention que vous m'avez accordés !",
+    "pinyin": null,
+    "translation": "B: Obrigado a cada um dos meus colegas pelo apoio e pela atenção que me deram!",
+    "tokens": [
+      "B:",
+      "Merci",
+      "à",
+      "chacun",
+      "de",
+      "mes",
+      "collègues",
+      "pour",
+      "le",
+      "soutien",
+      "et",
+      "l'attention",
+      "que",
+      "vous",
+      "m'avez",
+      "accordés",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chacun",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 2,
+        "word": "collègues",
+        "pinyin": null,
+        "meaning": "colegas"
+      },
+      {
+        "id": 3,
+        "word": "soutien",
+        "pinyin": null,
+        "meaning": "apoio"
+      },
+      {
+        "id": 4,
+        "word": "attention",
+        "pinyin": null,
+        "meaning": "atenção, cuidado"
+      },
+      {
+        "id": 5,
+        "word": "m'avez accordés",
+        "pinyin": null,
+        "meaning": "me deram/concederam (do verbo accorder - conceder, dar)"
+      }
+    ],
+    "id": "local-1772297743898-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je suis extrêmement honoré d'avoir eu la chance de travailler avec vous tous. Je me souviendrai chaque jour du temps que j'ai passé avec chacun de vous !",
+    "pinyin": null,
+    "translation": "B: Sinto-me extremamente honrado por ter tido a chance de trabalhar com todos vocês. Eu me lembrarei todos os dias do tempo que passei com cada um de vocês!",
+    "tokens": [
+      "B:",
+      "Je",
+      "suis",
+      "extrêmement",
+      "honoré",
+      "d'avoir",
+      "eu",
+      "la",
+      "chance",
+      "de",
+      "travailler",
+      "avec",
+      "vous",
+      "tous",
+      ".",
+      "Je",
+      "me",
+      "souviendrai",
+      "chaque",
+      "jour",
+      "du",
+      "temps",
+      "que",
+      "j'ai",
+      "passé",
+      "avec",
+      "chacun",
+      "de",
+      "vous",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "extrêmement",
+        "pinyin": null,
+        "meaning": "extremamente"
+      },
+      {
+        "id": 2,
+        "word": "honoré",
+        "pinyin": null,
+        "meaning": "honrado (do verbo honorer - honrar)"
+      },
+      {
+        "id": 3,
+        "word": "chance",
+        "pinyin": null,
+        "meaning": "chance, oportunidade"
+      },
+      {
+        "id": 4,
+        "word": "travailler",
+        "pinyin": null,
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 5,
+        "word": "vous tous",
+        "pinyin": null,
+        "meaning": "todos vocês"
+      },
+      {
+        "id": 6,
+        "word": "me souviendrai",
+        "pinyin": null,
+        "meaning": "me lembrarei (do verbo se souvenir - lembrar-se)"
+      },
+      {
+        "id": 7,
+        "word": "chaque jour",
+        "pinyin": null,
+        "meaning": "todos os dias, cada dia"
+      },
+      {
+        "id": 8,
+        "word": "passé",
+        "pinyin": null,
+        "meaning": "passei (do verbo passer - passar, gastar tempo)"
+      }
+    ],
+    "id": "local-1772297743898-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Enfin, c'est mon souhait sincère pour chacun que vous soyez en bonne santé, que votre travail se déroule sans accroc et que vos familles soient heureuses.",
+    "pinyin": null,
+    "translation": "B: Finalmente, é o meu desejo sincero para cada um de vocês que estejam com boa saúde, que o vosso trabalho corra sem problemas e que as vossas famílias sejam felizes.",
+    "tokens": [
+      "B:",
+      "Enfin",
+      ",",
+      "c'est",
+      "mon",
+      "souhait",
+      "sincère",
+      "pour",
+      "chacun",
+      "que",
+      "vous",
+      "soyez",
+      "en",
+      "bonne",
+      "santé",
+      ",",
+      "que",
+      "votre",
+      "travail",
+      "se",
+      "déroule",
+      "sans",
+      "accroc",
+      "et",
+      "que",
+      "vos",
+      "familles",
+      "soient",
+      "heureuses",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Enfin",
+        "pinyin": null,
+        "meaning": "Finalmente, Enfim"
+      },
+      {
+        "id": 2,
+        "word": "souhait",
+        "pinyin": null,
+        "meaning": "desejo, voto"
+      },
+      {
+        "id": 3,
+        "word": "sincère",
+        "pinyin": null,
+        "meaning": "sincero"
+      },
+      {
+        "id": 4,
+        "word": "chacun",
+        "pinyin": null,
+        "meaning": "cada um"
+      },
+      {
+        "id": 5,
+        "word": "en bonne santé",
+        "pinyin": null,
+        "meaning": "com boa saúde, saudáveis"
+      },
+      {
+        "id": 6,
+        "word": "se déroule",
+        "pinyin": null,
+        "meaning": "se desenrole, transcorra (do verbo se dérouler - desenrolar-se, decorrer)"
+      },
+      {
+        "id": 7,
+        "word": "sans accroc",
+        "pinyin": null,
+        "meaning": "sem problemas, sem percalços"
+      },
+      {
+        "id": 8,
+        "word": "familles",
+        "pinyin": null,
+        "meaning": "famílias"
+      },
+      {
+        "id": 9,
+        "word": "heureuses",
+        "pinyin": null,
+        "meaning": "felizes (feminino plural de heureux - feliz)"
+      }
+    ],
+    "id": "local-1772297743898-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Allez ! Santé à tous !",
+    "pinyin": null,
+    "translation": "B: Vamos! Um brinde a todos!",
+    "tokens": [
+      "B:",
+      "Allez",
+      "!",
+      "Santé",
+      "à",
+      "tous",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allez",
+        "pinyin": null,
+        "meaning": "Vamos!, Força! (usado também para encorajar ou brindar)"
+      },
+      {
+        "id": 2,
+        "word": "Santé",
+        "pinyin": null,
+        "meaning": "Saúde! (usado como brinde: Saúde!, Um brinde!)"
+      },
+      {
+        "id": 3,
+        "word": "à tous",
+        "pinyin": null,
+        "meaning": "a todos"
+      }
+    ],
+    "id": "local-1772297743898-7",
+    "language": "Francês"
+  }
+]

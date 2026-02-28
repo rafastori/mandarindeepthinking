@@ -1,0 +1,818 @@
+[
+  {
+    "chinese": "A: Lili, hast du nächsten Sonntag Zeit?",
+    "pinyin": null,
+    "translation": "A: Lili, você tem tempo no próximo domingo?",
+    "tokens": [
+      "A",
+      ":",
+      "Lili",
+      ",",
+      "hast",
+      "du",
+      "nächsten",
+      "Sonntag",
+      "Zeit",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hast",
+        "pinyin": null,
+        "meaning": "você tem (do verbo haben)"
+      },
+      {
+        "id": 2,
+        "word": "nächsten",
+        "pinyin": null,
+        "meaning": "próximo"
+      },
+      {
+        "id": 3,
+        "word": "Sonntag",
+        "pinyin": null,
+        "meaning": "domingo"
+      },
+      {
+        "id": 4,
+        "word": "Zeit",
+        "pinyin": null,
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1772292843999-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Kannst du zu mir kommen und mir beibringen, wie man einen Kuchen backt?",
+    "pinyin": null,
+    "translation": "Você pode vir à minha casa e me ensinar como se assa um bolo?",
+    "tokens": [
+      "Kannst",
+      "du",
+      "zu",
+      "mir",
+      "kommen",
+      "und",
+      "mir",
+      "beibringen",
+      ",",
+      "wie",
+      "man",
+      "einen",
+      "Kuchen",
+      "backt",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kannst",
+        "pinyin": null,
+        "meaning": "você pode (do verbo können)"
+      },
+      {
+        "id": 2,
+        "word": "kommen",
+        "pinyin": null,
+        "meaning": "vir"
+      },
+      {
+        "id": 3,
+        "word": "beibringen",
+        "pinyin": null,
+        "meaning": "ensinar"
+      },
+      {
+        "id": 4,
+        "word": "Kuchen",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "backt",
+        "pinyin": null,
+        "meaning": "assar (do verbo backen)"
+      }
+    ],
+    "id": "local-1772292843999-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Klar.",
+    "pinyin": null,
+    "translation": "B: Claro.",
+    "tokens": [
+      "B",
+      ":",
+      "Klar",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Klar",
+        "pinyin": null,
+        "meaning": "claro, certo"
+      }
+    ],
+    "id": "local-1772292843999-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Warum möchtest du plötzlich einen Kuchen backen?",
+    "pinyin": null,
+    "translation": "Por que você quer assar um bolo de repente?",
+    "tokens": [
+      "Warum",
+      "möchtest",
+      "du",
+      "plötzlich",
+      "einen",
+      "Kuchen",
+      "backen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Warum",
+        "pinyin": null,
+        "meaning": "por que"
+      },
+      {
+        "id": 2,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "você gostaria (do verbo möchten)"
+      },
+      {
+        "id": 3,
+        "word": "plötzlich",
+        "pinyin": null,
+        "meaning": "de repente"
+      },
+      {
+        "id": 4,
+        "word": "Kuchen",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 5,
+        "word": "backen",
+        "pinyin": null,
+        "meaning": "assar"
+      }
+    ],
+    "id": "local-1772292843999-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nächsten Monat hat mein Freund Geburtstag.",
+    "pinyin": null,
+    "translation": "A: Mês que vem meu amigo faz aniversário.",
+    "tokens": [
+      "A",
+      ":",
+      "Nächsten",
+      "Monat",
+      "hat",
+      "mein",
+      "Freund",
+      "Geburtstag",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nächsten",
+        "pinyin": null,
+        "meaning": "próximo"
+      },
+      {
+        "id": 2,
+        "word": "Monat",
+        "pinyin": null,
+        "meaning": "mês"
+      },
+      {
+        "id": 3,
+        "word": "Freund",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "Geburtstag",
+        "pinyin": null,
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772292843999-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich möchte ihm eine Überraschung bereiten.",
+    "pinyin": null,
+    "translation": "Eu quero preparar uma surpresa para ele.",
+    "tokens": [
+      "Ich",
+      "möchte",
+      "ihm",
+      "eine",
+      "Überraschung",
+      "bereiten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "eu gostaria (do verbo möchten)"
+      },
+      {
+        "id": 2,
+        "word": "Überraschung",
+        "pinyin": null,
+        "meaning": "surpresa"
+      },
+      {
+        "id": 3,
+        "word": "bereiten",
+        "pinyin": null,
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772292843999-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was für einen Kuchen möchtest du denn machen?",
+    "pinyin": null,
+    "translation": "B: Que tipo de bolo você gostaria de fazer?",
+    "tokens": [
+      "B",
+      ":",
+      "Was",
+      "für",
+      "einen",
+      "Kuchen",
+      "möchtest",
+      "du",
+      "denn",
+      "machen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was für",
+        "pinyin": null,
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "Kuchen",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "você gostaria (do verbo möchten)"
+      },
+      {
+        "id": 4,
+        "word": "machen",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292843999-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich möchte gerne einen einfachen machen.",
+    "pinyin": null,
+    "translation": "A: Eu gostaria de fazer um simples.",
+    "tokens": [
+      "A",
+      ":",
+      "Ich",
+      "möchte",
+      "gerne",
+      "einen",
+      "einfachen",
+      "machen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "eu gostaria (do verbo möchten)"
+      },
+      {
+        "id": 2,
+        "word": "gerne",
+        "pinyin": null,
+        "meaning": "com prazer, de bom grado"
+      },
+      {
+        "id": 3,
+        "word": "einfachen",
+        "pinyin": null,
+        "meaning": "simples"
+      },
+      {
+        "id": 4,
+        "word": "machen",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292843999-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Dann backen wir einen Biskuitkuchen.",
+    "pinyin": null,
+    "translation": "B: Então vamos assar um bolo de forma (bolo pão-de-ló).",
+    "tokens": [
+      "B",
+      ":",
+      "Dann",
+      "backen",
+      "wir",
+      "einen",
+      "Biskuitkuchen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "backen",
+        "pinyin": null,
+        "meaning": "assar"
+      },
+      {
+        "id": 3,
+        "word": "Biskuitkuchen",
+        "pinyin": null,
+        "meaning": "bolo de forma, bolo pão-de-ló"
+      }
+    ],
+    "id": "local-1772292843999-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Diese Art Kuchen ist sehr luftig.",
+    "pinyin": null,
+    "translation": "Este tipo de bolo é muito aerado.",
+    "tokens": [
+      "Diese",
+      "Art",
+      "Kuchen",
+      "ist",
+      "sehr",
+      "luftig",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Art",
+        "pinyin": null,
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 2,
+        "word": "Kuchen",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "sehr",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "luftig",
+        "pinyin": null,
+        "meaning": "aerado, leve"
+      }
+    ],
+    "id": "local-1772292843999-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Du kannst Marmelade darauf streichen und ihn so essen.",
+    "pinyin": null,
+    "translation": "Você pode passar geleia nele e comê-lo assim.",
+    "tokens": [
+      "Du",
+      "kannst",
+      "Marmelade",
+      "darauf",
+      "streichen",
+      "und",
+      "ihn",
+      "so",
+      "essen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kannst",
+        "pinyin": null,
+        "meaning": "você pode (do verbo können)"
+      },
+      {
+        "id": 2,
+        "word": "Marmelade",
+        "pinyin": null,
+        "meaning": "geleia, marmelada"
+      },
+      {
+        "id": 3,
+        "word": "darauf",
+        "pinyin": null,
+        "meaning": "em cima disso, sobre ele"
+      },
+      {
+        "id": 4,
+        "word": "streichen",
+        "pinyin": null,
+        "meaning": "espalhar, passar"
+      },
+      {
+        "id": 5,
+        "word": "essen",
+        "pinyin": null,
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772292843999-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Er kann auch als Geburtstagstorte dienen.",
+    "pinyin": null,
+    "translation": "Ele também pode servir como bolo de aniversário.",
+    "tokens": [
+      "Er",
+      "kann",
+      "auch",
+      "als",
+      "Geburtstagstorte",
+      "dienen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kann",
+        "pinyin": null,
+        "meaning": "ele pode (do verbo können)"
+      },
+      {
+        "id": 2,
+        "word": "auch",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "als",
+        "pinyin": null,
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "Geburtstagstorte",
+        "pinyin": null,
+        "meaning": "bolo de aniversário (torta de aniversário)"
+      },
+      {
+        "id": 5,
+        "word": "dienen",
+        "pinyin": null,
+        "meaning": "servir"
+      }
+    ],
+    "id": "local-1772292843999-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Es ist eine Grundform.",
+    "pinyin": null,
+    "translation": "É uma forma básica.",
+    "tokens": [
+      "Es",
+      "ist",
+      "eine",
+      "Grundform",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Grundform",
+        "pinyin": null,
+        "meaning": "forma básica"
+      }
+    ],
+    "id": "local-1772292843999-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Okay, gut.",
+    "pinyin": null,
+    "translation": "A: Ok, bom.",
+    "tokens": [
+      "A",
+      ":",
+      "Okay",
+      ",",
+      "gut",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "ok"
+      },
+      {
+        "id": 2,
+        "word": "gut",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772292843999-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Was muss ich vorbereiten?",
+    "pinyin": null,
+    "translation": "O que preciso preparar?",
+    "tokens": [
+      "Was",
+      "muss",
+      "ich",
+      "vorbereiten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "muss",
+        "pinyin": null,
+        "meaning": "eu preciso (do verbo müssen)"
+      },
+      {
+        "id": 3,
+        "word": "vorbereiten",
+        "pinyin": null,
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772292843999-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Du musst Zutaten kaufen: 100 Gramm Kuchenmehl, 5 Eier, 40 Gramm Öl, 70 Gramm Kristallzucker und 40 Gramm Milch.",
+    "pinyin": null,
+    "translation": "B: Você precisa comprar ingredientes: 100 gramas de farinha para bolo, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar cristal e 40 gramas de leite.",
+    "tokens": [
+      "B",
+      ":",
+      "Du",
+      "musst",
+      "Zutaten",
+      "kaufen",
+      ":",
+      "100",
+      "Gramm",
+      "Kuchenmehl",
+      ",",
+      "5",
+      "Eier",
+      ",",
+      "40",
+      "Gramm",
+      "Öl",
+      ",",
+      "70",
+      "Gramm",
+      "Kristallzucker",
+      "und",
+      "40",
+      "Gramm",
+      "Milch",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "musst",
+        "pinyin": null,
+        "meaning": "você precisa (do verbo müssen)"
+      },
+      {
+        "id": 2,
+        "word": "Zutaten",
+        "pinyin": null,
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 3,
+        "word": "kaufen",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "Kuchenmehl",
+        "pinyin": null,
+        "meaning": "farinha para bolo"
+      },
+      {
+        "id": 5,
+        "word": "Eier",
+        "pinyin": null,
+        "meaning": "ovos"
+      },
+      {
+        "id": 6,
+        "word": "Öl",
+        "pinyin": null,
+        "meaning": "óleo"
+      },
+      {
+        "id": 7,
+        "word": "Kristallzucker",
+        "pinyin": null,
+        "meaning": "açúcar cristal"
+      },
+      {
+        "id": 8,
+        "word": "Milch",
+        "pinyin": null,
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772292843999-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Welche Utensilien?",
+    "pinyin": null,
+    "translation": "A: Quais utensílios?",
+    "tokens": [
+      "A",
+      ":",
+      "Welche",
+      "Utensilien",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Welche",
+        "pinyin": null,
+        "meaning": "quais"
+      },
+      {
+        "id": 2,
+        "word": "Utensilien",
+        "pinyin": null,
+        "meaning": "utensílios"
+      }
+    ],
+    "id": "local-1772292843999-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ein Handrührgerät, einen Backofen und eine 8-Zoll-Kuchenform.",
+    "pinyin": null,
+    "translation": "B: Uma batedeira manual, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "B",
+      ":",
+      "Ein",
+      "Handrührgerät",
+      ",",
+      "einen",
+      "Backofen",
+      "und",
+      "eine",
+      "8-Zoll-Kuchenform",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Handrührgerät",
+        "pinyin": null,
+        "meaning": "batedeira manual"
+      },
+      {
+        "id": 2,
+        "word": "Backofen",
+        "pinyin": null,
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "Kuchenform",
+        "pinyin": null,
+        "meaning": "forma de bolo"
+      }
+    ],
+    "id": "local-1772292843999-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Alles klar.",
+    "pinyin": null,
+    "translation": "A: Tudo certo.",
+    "tokens": [
+      "A",
+      ":",
+      "Alles",
+      "klar",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alles klar",
+        "pinyin": null,
+        "meaning": "tudo certo, ok"
+      }
+    ],
+    "id": "local-1772292843999-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich kaufe die Sachen nach der Arbeit.",
+    "pinyin": null,
+    "translation": "Eu compro as coisas depois do trabalho.",
+    "tokens": [
+      "Ich",
+      "kaufe",
+      "die",
+      "Sachen",
+      "nach",
+      "der",
+      "Arbeit",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kaufe",
+        "pinyin": null,
+        "meaning": "eu compro (do verbo kaufen)"
+      },
+      {
+        "id": 2,
+        "word": "Sachen",
+        "pinyin": null,
+        "meaning": "coisas"
+      },
+      {
+        "id": 3,
+        "word": "nach der Arbeit",
+        "pinyin": null,
+        "meaning": "depois do trabalho"
+      }
+    ],
+    "id": "local-1772292843999-19",
+    "language": "Alemão"
+  }
+]

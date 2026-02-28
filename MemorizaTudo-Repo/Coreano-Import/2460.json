@@ -1,0 +1,626 @@
+[
+  {
+    "chinese": "A: 리사, 물어볼 게 있어요.",
+    "pinyin": "",
+    "translation": "A: Lisa, tenho uma coisa para perguntar.",
+    "tokens": [
+      "리사",
+      ",",
+      "물어볼",
+      "게",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리사",
+        "pinyin": "Lisa",
+        "meaning": "Lisa"
+      },
+      {
+        "id": 2,
+        "word": "물어보다",
+        "pinyin": "mureoboda",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772299185369-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭔데요?",
+    "pinyin": "",
+    "translation": "B: O que é?",
+    "tokens": [
+      "뭔데요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "뭐",
+        "pinyin": "mwo",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772299185369-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이번 여름에 인턴을 모집하나요?",
+    "pinyin": "",
+    "translation": "A: Vocês estão recrutando estagiários neste verão?",
+    "tokens": [
+      "이번",
+      "여름에",
+      "인턴을",
+      "모집하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "이번",
+        "pinyin": "ibeon",
+        "meaning": "este(a), atual"
+      },
+      {
+        "id": 6,
+        "word": "여름",
+        "pinyin": "yeoreum",
+        "meaning": "verão"
+      },
+      {
+        "id": 7,
+        "word": "인턴",
+        "pinyin": "inteon",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 8,
+        "word": "모집하다",
+        "pinyin": "mojiphada",
+        "meaning": "recrutar"
+      }
+    ],
+    "id": "local-1772299185369-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 모집해요. 혹시 추천하고 싶은 적합한 후보자가 있나요?",
+    "pinyin": "",
+    "translation": "B: Sim, estamos recrutando. Por acaso você tem um candidato adequado para recomendar?",
+    "tokens": [
+      "네",
+      ",",
+      "모집해요",
+      ".",
+      "혹시",
+      "추천하고",
+      "싶은",
+      "적합한",
+      "후보자가",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 8,
+        "word": "모집하다",
+        "pinyin": "mojiphada",
+        "meaning": "recrutar"
+      },
+      {
+        "id": 10,
+        "word": "혹시",
+        "pinyin": "hoksi",
+        "meaning": "por acaso"
+      },
+      {
+        "id": 11,
+        "word": "추천하다",
+        "pinyin": "chuchyeonhada",
+        "meaning": "recomendar"
+      },
+      {
+        "id": 12,
+        "word": "싶다",
+        "pinyin": "sipda",
+        "meaning": "querer"
+      },
+      {
+        "id": 13,
+        "word": "적합하다",
+        "pinyin": "jeokhapada",
+        "meaning": "ser adequado, apropriado"
+      },
+      {
+        "id": 14,
+        "word": "후보자",
+        "pinyin": "huboja",
+        "meaning": "candidato"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772299185369-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 중국에서 유학 중인 외국인 친구가 한 명 있어요. 여름방학 동안 인턴십을 찾고 있거든요.",
+    "pinyin": "",
+    "translation": "A: Tenho um amigo estrangeiro que está estudando na China. Ele está procurando um estágio durante as férias de verão.",
+    "tokens": [
+      "중국에서",
+      "유학",
+      "중인",
+      "외국인",
+      "친구가",
+      "한",
+      "명",
+      "있어요",
+      ".",
+      "여름방학",
+      "동안",
+      "인턴십을",
+      "찾고",
+      "있거든요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "중국",
+        "pinyin": "Jungguk",
+        "meaning": "China"
+      },
+      {
+        "id": 16,
+        "word": "유학",
+        "pinyin": "yuhak",
+        "meaning": "estudar no exterior"
+      },
+      {
+        "id": 17,
+        "word": "중",
+        "pinyin": "jung",
+        "meaning": "no meio de, durante"
+      },
+      {
+        "id": 18,
+        "word": "외국인",
+        "pinyin": "oegugin",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 19,
+        "word": "친구",
+        "pinyin": "chingu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 20,
+        "word": "한 명",
+        "pinyin": "han myeong",
+        "meaning": "uma pessoa"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "ter, existir"
+      },
+      {
+        "id": 21,
+        "word": "여름방학",
+        "pinyin": "yeoreumbanghak",
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 22,
+        "word": "동안",
+        "pinyin": "dong-an",
+        "meaning": "durante"
+      },
+      {
+        "id": 23,
+        "word": "인턴십",
+        "pinyin": "inteonsip",
+        "meaning": "estágio"
+      },
+      {
+        "id": 24,
+        "word": "찾다",
+        "pinyin": "chatda",
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772299185369-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 외국인 유학생이라면 어려울 수도 있어요.",
+    "pinyin": "",
+    "translation": "B: Se for um estudante estrangeiro, pode ser difícil.",
+    "tokens": [
+      "외국인",
+      "유학생이라면",
+      "어려울",
+      "수도",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "외국인",
+        "pinyin": "oegugin",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 25,
+        "word": "유학생",
+        "pinyin": "yuhaksaeng",
+        "meaning": "estudante internacional"
+      },
+      {
+        "id": 26,
+        "word": "어렵다",
+        "pinyin": "eoryeopda",
+        "meaning": "ser difícil"
+      },
+      {
+        "id": 27,
+        "word": "수 있다",
+        "pinyin": "su itda",
+        "meaning": "poder (capacidade, possibilidade)"
+      }
+    ],
+    "id": "local-1772299185369-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 중국어를 잘해요.",
+    "pinyin": "",
+    "translation": "A: Ele(a) fala chinês bem.",
+    "tokens": [
+      "중국어를",
+      "잘해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 28,
+        "word": "중국어",
+        "pinyin": "Junggugeo",
+        "meaning": "idioma chinês"
+      },
+      {
+        "id": 29,
+        "word": "잘하다",
+        "pinyin": "jalhada",
+        "meaning": "fazer bem, ser bom em"
+      }
+    ],
+    "id": "local-1772299185369-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그게 문제가 아니에요. 비자 문제예요. 학생 비자를 소지한 외국인은 중국에서 인턴십을 할 수 없어요.",
+    "pinyin": "",
+    "translation": "B: Esse não é o problema. É um problema de visto. Estrangeiros com visto de estudante não podem fazer estágio na China.",
+    "tokens": [
+      "그게",
+      "문제가",
+      "아니에요",
+      ".",
+      "비자",
+      "문제예요",
+      ".",
+      "학생",
+      "비자를",
+      "소지한",
+      "외국인은",
+      "중국에서",
+      "인턴십을",
+      "할",
+      "수",
+      "없어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 30,
+        "word": "그게",
+        "pinyin": "geuge",
+        "meaning": "isso, essa coisa"
+      },
+      {
+        "id": 31,
+        "word": "문제",
+        "pinyin": "munje",
+        "meaning": "problema"
+      },
+      {
+        "id": 32,
+        "word": "아니다",
+        "pinyin": "anida",
+        "meaning": "não ser"
+      },
+      {
+        "id": 33,
+        "word": "비자",
+        "pinyin": "bija",
+        "meaning": "visto"
+      },
+      {
+        "id": 34,
+        "word": "학생",
+        "pinyin": "haksaeng",
+        "meaning": "estudante"
+      },
+      {
+        "id": 35,
+        "word": "소지하다",
+        "pinyin": "sojihada",
+        "meaning": "possuir, portar"
+      },
+      {
+        "id": 18,
+        "word": "외국인",
+        "pinyin": "oegugin",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 15,
+        "word": "중국",
+        "pinyin": "Jungguk",
+        "meaning": "China"
+      },
+      {
+        "id": 23,
+        "word": "인턴십",
+        "pinyin": "inteonsip",
+        "meaning": "estágio"
+      },
+      {
+        "id": 36,
+        "word": "할 수 없다",
+        "pinyin": "hal su eopda",
+        "meaning": "não poder fazer"
+      }
+    ],
+    "id": "local-1772299185369-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아. 그렇게 엄격해요?",
+    "pinyin": "",
+    "translation": "A: Ah. É tão rigoroso assim?",
+    "tokens": [
+      "아",
+      ".",
+      "그렇게",
+      "엄격해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "아",
+        "pinyin": "a",
+        "meaning": "ah (interjeição de surpresa)"
+      },
+      {
+        "id": 38,
+        "word": "그렇게",
+        "pinyin": "geureoke",
+        "meaning": "assim, daquele jeito"
+      },
+      {
+        "id": 39,
+        "word": "엄격하다",
+        "pinyin": "eomgyeokhada",
+        "meaning": "ser rigoroso, estrito"
+      }
+    ],
+    "id": "local-1772299185369-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네. 중국에 있는 외국인의 경우, 인턴으로 일하고 싶어도 취업 비자를 받아야 해요.",
+    "pinyin": "",
+    "translation": "B: Sim. No caso de estrangeiros na China, mesmo que queiram trabalhar como estagiários, precisam obter um visto de trabalho.",
+    "tokens": [
+      "네",
+      ".",
+      "중국에",
+      "있는",
+      "외국인의",
+      "경우",
+      ",",
+      "인턴으로",
+      "일하고",
+      "싶어도",
+      "취업",
+      "비자를",
+      "받아야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "sim"
+      },
+      {
+        "id": 15,
+        "word": "중국",
+        "pinyin": "Jungguk",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": "itda",
+        "meaning": "estar, existir"
+      },
+      {
+        "id": 18,
+        "word": "외국인",
+        "pinyin": "oegugin",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 40,
+        "word": "경우",
+        "pinyin": "gyeongu",
+        "meaning": "caso"
+      },
+      {
+        "id": 7,
+        "word": "인턴",
+        "pinyin": "inteon",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 41,
+        "word": "일하다",
+        "pinyin": "ilhada",
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 12,
+        "word": "싶다",
+        "pinyin": "sipda",
+        "meaning": "querer"
+      },
+      {
+        "id": 42,
+        "word": "취업",
+        "pinyin": "chwieop",
+        "meaning": "emprego"
+      },
+      {
+        "id": 33,
+        "word": "비자",
+        "pinyin": "bija",
+        "meaning": "visto"
+      },
+      {
+        "id": 43,
+        "word": "받다",
+        "pinyin": "batda",
+        "meaning": "receber"
+      },
+      {
+        "id": 44,
+        "word": "-어야 하다",
+        "pinyin": "-eoya hada",
+        "meaning": "ter que, dever"
+      }
+    ],
+    "id": "local-1772299185369-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말요? 그럼 그 친구에게 알려줘야겠네요. 고마워요!",
+    "pinyin": "",
+    "translation": "A: Sério? Então terei que avisar a ele. Obrigado!",
+    "tokens": [
+      "정말요",
+      "?",
+      "그럼",
+      "그",
+      "친구에게",
+      "알려줘야겠네요",
+      ".",
+      "고마워요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, sério"
+      },
+      {
+        "id": 46,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 47,
+        "word": "그",
+        "pinyin": "geu",
+        "meaning": "aquele(a), esse(a)"
+      },
+      {
+        "id": 19,
+        "word": "친구",
+        "pinyin": "chingu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 48,
+        "word": "알리다",
+        "pinyin": "allida",
+        "meaning": "informar, avisar"
+      },
+      {
+        "id": 44,
+        "word": "-어야 하다",
+        "pinyin": "-eoya hada",
+        "meaning": "ter que, dever"
+      },
+      {
+        "id": 49,
+        "word": "고맙다",
+        "pinyin": "gomapda",
+        "meaning": "ser grato"
+      }
+    ],
+    "id": "local-1772299185369-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 천만에요.",
+    "pinyin": "",
+    "translation": "B: De nada.",
+    "tokens": [
+      "천만에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 50,
+        "word": "천만에요",
+        "pinyin": "cheonmaneyo",
+        "meaning": "de nada"
+      }
+    ],
+    "id": "local-1772299185369-11",
+    "language": "Coreano"
+  }
+]

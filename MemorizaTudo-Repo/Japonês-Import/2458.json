@@ -1,0 +1,718 @@
+[
+  {
+    "chinese": "A: ワールドカップが来たぞ！",
+    "pinyin": "",
+    "translation": "A: A Copa do Mundo chegou!",
+    "tokens": [
+      "A:",
+      "ワールドカップ",
+      "が",
+      "来た",
+      "ぞ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ワールドカップ",
+        "pinyin": "wārudo kappu",
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 2,
+        "word": "来る",
+        "pinyin": "kuru",
+        "meaning": "vir (forma do dicionário para '来た')"
+      },
+      {
+        "id": 3,
+        "word": "ぞ",
+        "pinyin": "zo",
+        "meaning": "partícula de ênfase (masculino)"
+      }
+    ],
+    "id": "local-1772299006127-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 今年のワールドカップはどこで開催されるの？",
+    "pinyin": "",
+    "translation": "B: Onde a Copa do Mundo deste ano será realizada?",
+    "tokens": [
+      "B:",
+      "今年",
+      "の",
+      "ワールドカップ",
+      "は",
+      "どこ",
+      "で",
+      "開催される",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今年",
+        "pinyin": "kotoshi",
+        "meaning": "este ano"
+      },
+      {
+        "id": 2,
+        "word": "ワールドカップ",
+        "pinyin": "wārudo kappu",
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 3,
+        "word": "どこ",
+        "pinyin": "doko",
+        "meaning": "onde"
+      },
+      {
+        "id": 4,
+        "word": "開催される",
+        "pinyin": "kaisai sareru",
+        "meaning": "ser realizado (passiva de 開催する)"
+      },
+      {
+        "id": 5,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula interrogativa (informal)"
+      }
+    ],
+    "id": "local-1772299006127-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ブラジルだ！サッカー王国だよ！今年のワールドカップは絶対に見応えがあるぞ！",
+    "pinyin": "",
+    "translation": "A: É no Brasil! É o reino do futebol! A Copa do Mundo deste ano com certeza terá muito a se ver!",
+    "tokens": [
+      "A:",
+      "ブラジル",
+      "だ",
+      "！",
+      "サッカー",
+      "王国",
+      "だ",
+      "よ",
+      "！",
+      "今年",
+      "の",
+      "ワールドカップ",
+      "は",
+      "絶対",
+      "に",
+      "見応え",
+      "が",
+      "ある",
+      "ぞ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ブラジル",
+        "pinyin": "burajiru",
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "サッカー",
+        "pinyin": "sakkā",
+        "meaning": "futebol"
+      },
+      {
+        "id": 3,
+        "word": "王国",
+        "pinyin": "ōkoku",
+        "meaning": "reino"
+      },
+      {
+        "id": 4,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      },
+      {
+        "id": 5,
+        "word": "今年",
+        "pinyin": "kotoshi",
+        "meaning": "este ano"
+      },
+      {
+        "id": 6,
+        "word": "ワールドカップ",
+        "pinyin": "wārudo kappu",
+        "meaning": "Copa do Mundo"
+      },
+      {
+        "id": 7,
+        "word": "絶対",
+        "pinyin": "zettai",
+        "meaning": "absolutamente, com certeza"
+      },
+      {
+        "id": 8,
+        "word": "見応えがある",
+        "pinyin": "mi kotae ga aru",
+        "meaning": "valer a pena ver, ser espetacular"
+      },
+      {
+        "id": 9,
+        "word": "ぞ",
+        "pinyin": "zo",
+        "meaning": "partícula de ênfase (masculino)"
+      }
+    ],
+    "id": "local-1772299006127-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ブラジル？じゃあ、見たいな。ブラジルは美女が多いからね。開会式では、きっと賑やかなサンバが踊られるだろうね。開会式は何月何日？",
+    "pinyin": "",
+    "translation": "B: Brasil? Ah, então quero ver. O Brasil tem muitas mulheres bonitas, sabe. Na cerimônia de abertura, com certeza se dançará um samba animado, né. Que dia e mês é a cerimônia de abertura?",
+    "tokens": [
+      "B:",
+      "ブラジル",
+      "？",
+      "じゃあ",
+      "、",
+      "見たい",
+      "な",
+      "。",
+      "ブラジル",
+      "は",
+      "美女",
+      "が",
+      "多い",
+      "から",
+      "ね",
+      "。",
+      "開会式",
+      "で",
+      "は",
+      "、",
+      "きっと",
+      "賑やか",
+      "な",
+      "サンバ",
+      "が",
+      "踊られる",
+      "だろう",
+      "ね",
+      "。",
+      "開会式",
+      "は",
+      "何月何日",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ブラジル",
+        "pinyin": "burajiru",
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então, bem"
+      },
+      {
+        "id": 3,
+        "word": "見たい",
+        "pinyin": "mitai",
+        "meaning": "quero ver (forma 'tai' de 見る)"
+      },
+      {
+        "id": 4,
+        "word": "な",
+        "pinyin": "na",
+        "meaning": "partícula que expressa desejo, emoção"
+      },
+      {
+        "id": 5,
+        "word": "美女",
+        "pinyin": "bijo",
+        "meaning": "mulher bonita"
+      },
+      {
+        "id": 6,
+        "word": "多い",
+        "pinyin": "ooi",
+        "meaning": "muito(s)"
+      },
+      {
+        "id": 7,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque, desde"
+      },
+      {
+        "id": 8,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação/ênfase"
+      },
+      {
+        "id": 9,
+        "word": "開会式",
+        "pinyin": "kaikai shiki",
+        "meaning": "cerimônia de abertura"
+      },
+      {
+        "id": 10,
+        "word": "きっと",
+        "pinyin": "kitto",
+        "meaning": "com certeza, certamente"
+      },
+      {
+        "id": 11,
+        "word": "賑やか",
+        "pinyin": "nigiyaka",
+        "meaning": "animado, movimentado (adj. na)"
+      },
+      {
+        "id": 12,
+        "word": "サンバ",
+        "pinyin": "sanba",
+        "meaning": "samba"
+      },
+      {
+        "id": 13,
+        "word": "踊られる",
+        "pinyin": "odorareru",
+        "meaning": "ser dançado (passiva de 踊る)"
+      },
+      {
+        "id": 14,
+        "word": "だろう",
+        "pinyin": "darō",
+        "meaning": "provavelmente"
+      },
+      {
+        "id": 15,
+        "word": "何月何日",
+        "pinyin": "nangatsu nannichi",
+        "meaning": "que mês e que dia"
+      }
+    ],
+    "id": "local-1772299006127-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 6月14日、サンパウロだよ。",
+    "pinyin": "",
+    "translation": "A: 14 de junho, em São Paulo.",
+    "tokens": [
+      "A:",
+      "6月14日",
+      "、",
+      "サンパウロ",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "6月14日",
+        "pinyin": "rokugatsu jūyokka",
+        "meaning": "14 de junho"
+      },
+      {
+        "id": 2,
+        "word": "サンパウロ",
+        "pinyin": "sanpauro",
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 3,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772299006127-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: サンパウロ？どうしてリオじゃないの？リオが一番有名なのに。",
+    "pinyin": "",
+    "translation": "B: São Paulo? Por que não o Rio? O Rio é o mais famoso!",
+    "tokens": [
+      "B:",
+      "サンパウロ",
+      "？",
+      "どうして",
+      "リオ",
+      "じゃ",
+      "ない",
+      "の",
+      "？",
+      "リオ",
+      "が",
+      "一番",
+      "有名",
+      "な",
+      "のに",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "サンパウロ",
+        "pinyin": "sanpauro",
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "どうして",
+        "pinyin": "dōshite",
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "リオ",
+        "pinyin": "rio",
+        "meaning": "Rio"
+      },
+      {
+        "id": 4,
+        "word": "じゃない",
+        "pinyin": "janai",
+        "meaning": "não é"
+      },
+      {
+        "id": 5,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "partícula interrogativa (informal)"
+      },
+      {
+        "id": 6,
+        "word": "一番",
+        "pinyin": "ichiban",
+        "meaning": "o mais, o número um"
+      },
+      {
+        "id": 7,
+        "word": "有名",
+        "pinyin": "yūmei",
+        "meaning": "famoso (adj. na)"
+      },
+      {
+        "id": 8,
+        "word": "のに",
+        "pinyin": "nanoni",
+        "meaning": "apesar de, embora (partícula conjuntiva)"
+      }
+    ],
+    "id": "local-1772299006127-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: サンパウロもブラジルの主要都市の一つだよ。決勝戦はリオで開催されるよ。",
+    "pinyin": "",
+    "translation": "A: São Paulo também é uma das principais cidades do Brasil. A final será realizada no Rio.",
+    "tokens": [
+      "A:",
+      "サンパウロ",
+      "も",
+      "ブラジル",
+      "の",
+      "主要都市",
+      "の",
+      "一つ",
+      "だ",
+      "よ",
+      "。",
+      "決勝戦",
+      "は",
+      "リオ",
+      "で",
+      "開催される",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "サンパウロ",
+        "pinyin": "sanpauro",
+        "meaning": "São Paulo"
+      },
+      {
+        "id": 2,
+        "word": "も",
+        "pinyin": "mo",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "ブラジル",
+        "pinyin": "burajiru",
+        "meaning": "Brasil"
+      },
+      {
+        "id": 4,
+        "word": "主要都市",
+        "pinyin": "shuyō toshi",
+        "meaning": "principal cidade"
+      },
+      {
+        "id": 5,
+        "word": "一つ",
+        "pinyin": "hitotsu",
+        "meaning": "um (de vários), uma unidade"
+      },
+      {
+        "id": 6,
+        "word": "よ",
+        "pinyin": "yo",
+        "meaning": "partícula de ênfase/informação"
+      },
+      {
+        "id": 7,
+        "word": "決勝戦",
+        "pinyin": "kesshō sen",
+        "meaning": "partida final"
+      },
+      {
+        "id": 8,
+        "word": "リオ",
+        "pinyin": "rio",
+        "meaning": "Rio"
+      },
+      {
+        "id": 9,
+        "word": "開催される",
+        "pinyin": "kaisai sareru",
+        "meaning": "ser realizado (passiva de 開催する)"
+      }
+    ],
+    "id": "local-1772299006127-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ブラジルとの時差が11時間もあるのは残念だな。今回は徹夜になりそうだね。",
+    "pinyin": "",
+    "translation": "B: É uma pena que a diferença de fuso horário com o Brasil seja de 11 horas. Parece que desta vez vou ter que virar a noite.",
+    "tokens": [
+      "B:",
+      "ブラジル",
+      "と",
+      "の",
+      "時差",
+      "が",
+      "11時間",
+      "も",
+      "ある",
+      "の",
+      "は",
+      "残念",
+      "だ",
+      "な",
+      "。",
+      "今回",
+      "は",
+      "徹夜",
+      "に",
+      "なりそうだ",
+      "ね",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ブラジル",
+        "pinyin": "burajiru",
+        "meaning": "Brasil"
+      },
+      {
+        "id": 2,
+        "word": "時差",
+        "pinyin": "jisa",
+        "meaning": "diferença de fuso horário"
+      },
+      {
+        "id": 3,
+        "word": "11時間",
+        "pinyin": "jūichijikan",
+        "meaning": "11 horas"
+      },
+      {
+        "id": 4,
+        "word": "も",
+        "pinyin": "mo",
+        "meaning": "partícula de ênfase (indicando quantidade grande ou inesperada)"
+      },
+      {
+        "id": 5,
+        "word": "残念",
+        "pinyin": "zannen",
+        "meaning": "pena, lamentável (adj. na)"
+      },
+      {
+        "id": 6,
+        "word": "な",
+        "pinyin": "na",
+        "meaning": "partícula que expressa sentimento"
+      },
+      {
+        "id": 7,
+        "word": "今回",
+        "pinyin": "konkai",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 8,
+        "word": "徹夜",
+        "pinyin": "tetsuya",
+        "meaning": "virar a noite, ficar acordado a noite toda"
+      },
+      {
+        "id": 9,
+        "word": "なりそうだ",
+        "pinyin": "narisōda",
+        "meaning": "parece que vai se tornar (forma 'sōda' de なる)"
+      },
+      {
+        "id": 10,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação"
+      }
+    ],
+    "id": "local-1772299006127-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、先にスーパーに行ってレッドブルを買いだめしておかないと。可愛い子を見るためなら何でもするぞ！",
+    "pinyin": "",
+    "translation": "A: Ah, então, primeiro tenho que ir ao supermercado e estocar Red Bull. Se for para ver garotas bonitas, eu faço qualquer coisa!",
+    "tokens": [
+      "A:",
+      "じゃあ",
+      "、",
+      "先",
+      "に",
+      "スーパー",
+      "に",
+      "行って",
+      "レッドブル",
+      "を",
+      "買いだめして",
+      "おかないと",
+      "。",
+      "可愛い",
+      "子",
+      "を",
+      "見る",
+      "ため",
+      "なら",
+      "何でも",
+      "する",
+      "ぞ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então, bem"
+      },
+      {
+        "id": 2,
+        "word": "先",
+        "pinyin": "saki",
+        "meaning": "primeiro, antes"
+      },
+      {
+        "id": 3,
+        "word": "スーパー",
+        "pinyin": "sūpā",
+        "meaning": "supermercado"
+      },
+      {
+        "id": 4,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir (forma do dicionário para '行って')"
+      },
+      {
+        "id": 5,
+        "word": "レッドブル",
+        "pinyin": "reddo buru",
+        "meaning": "Red Bull"
+      },
+      {
+        "id": 6,
+        "word": "買いだめする",
+        "pinyin": "kaidame suru",
+        "meaning": "estocar, comprar em grande quantidade"
+      },
+      {
+        "id": 7,
+        "word": "おかないと",
+        "pinyin": "okanaito",
+        "meaning": "tenho que (forma abreviada de '置かなければならない' ou 'しないといけない')"
+      },
+      {
+        "id": 8,
+        "word": "可愛い",
+        "pinyin": "kawaii",
+        "meaning": "bonito, fofo (adj. i)"
+      },
+      {
+        "id": 9,
+        "word": "子",
+        "pinyin": "ko",
+        "meaning": "criança, jovem; neste contexto, 'garotas'"
+      },
+      {
+        "id": 10,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 11,
+        "word": "ため",
+        "pinyin": "tame",
+        "meaning": "para, a fim de"
+      },
+      {
+        "id": 12,
+        "word": "なら",
+        "pinyin": "nara",
+        "meaning": "se, no caso de (condicional)"
+      },
+      {
+        "id": 13,
+        "word": "何でも",
+        "pinyin": "nandemo",
+        "meaning": "qualquer coisa"
+      },
+      {
+        "id": 14,
+        "word": "する",
+        "pinyin": "suru",
+        "meaning": "fazer"
+      },
+      {
+        "id": 15,
+        "word": "ぞ",
+        "pinyin": "zo",
+        "meaning": "partícula de ênfase (masculino)"
+      }
+    ],
+    "id": "local-1772299006127-8",
+    "language": "Japonês"
+  }
+]

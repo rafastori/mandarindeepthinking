@@ -1,0 +1,489 @@
+[
+  {
+    "chinese": "A: Ehi, che software è questo tuo?",
+    "pinyin": null,
+    "translation": "A: Ei, que software é este seu?",
+    "tokens": [
+      "Ehi",
+      ",",
+      "che",
+      "software",
+      "è",
+      "questo",
+      "tuo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ehi",
+        "pinyin": "",
+        "meaning": "Ei, Olá"
+      },
+      {
+        "id": 2,
+        "word": "software",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 3,
+        "word": "questo",
+        "pinyin": "",
+        "meaning": "este, isso"
+      },
+      {
+        "id": 4,
+        "word": "tuo",
+        "pinyin": "",
+        "meaning": "seu, tua"
+      }
+    ],
+    "id": "local-1772298278118-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Google Drive.",
+    "pinyin": null,
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "Google",
+      "Drive",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Google Drive",
+        "pinyin": "",
+        "meaning": "Google Drive (nome próprio)"
+      }
+    ],
+    "id": "local-1772298278118-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non ne ho mai sentito parlare. A cosa lo usi?",
+    "pinyin": null,
+    "translation": "A: Nunca ouvi falar dele. Para que você o usa?",
+    "tokens": [
+      "Non",
+      "ne",
+      "ho",
+      "mai",
+      "sentito",
+      "parlare",
+      ".",
+      "A",
+      "cosa",
+      "lo",
+      "usi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "ne",
+        "pinyin": "",
+        "meaning": "disso, dele/dela (partícula pronominal)"
+      },
+      {
+        "id": 3,
+        "word": "ho sentito parlare",
+        "pinyin": "",
+        "meaning": "ouvi falar"
+      },
+      {
+        "id": 4,
+        "word": "mai",
+        "pinyin": "",
+        "meaning": "nunca"
+      },
+      {
+        "id": 5,
+        "word": "A cosa",
+        "pinyin": "",
+        "meaning": "Para que"
+      },
+      {
+        "id": 6,
+        "word": "usi",
+        "pinyin": "",
+        "meaning": "você usa (verbo usare)"
+      }
+    ],
+    "id": "local-1772298278118-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È uno strumento per documenti online molto pratico e gratuito. Puoi archiviare e condividere file.",
+    "pinyin": null,
+    "translation": "B: É uma ferramenta para documentos online muito prática e gratuita. Você pode arquivar e compartilhar arquivos.",
+    "tokens": [
+      "È",
+      "uno",
+      "strumento",
+      "per",
+      "documenti",
+      "online",
+      "molto",
+      "pratico",
+      "e",
+      "gratuito",
+      ".",
+      "Puoi",
+      "archiviare",
+      "e",
+      "condividere",
+      "file",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "strumento",
+        "pinyin": "",
+        "meaning": "ferramenta, instrumento"
+      },
+      {
+        "id": 2,
+        "word": "documenti online",
+        "pinyin": "",
+        "meaning": "documentos online"
+      },
+      {
+        "id": 3,
+        "word": "molto",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "pratico",
+        "pinyin": "",
+        "meaning": "prático"
+      },
+      {
+        "id": 5,
+        "word": "gratuito",
+        "pinyin": "",
+        "meaning": "gratuito"
+      },
+      {
+        "id": 6,
+        "word": "Puoi",
+        "pinyin": "",
+        "meaning": "Você pode (verbo potere)"
+      },
+      {
+        "id": 7,
+        "word": "archiviare",
+        "pinyin": "",
+        "meaning": "arquivar"
+      },
+      {
+        "id": 8,
+        "word": "condividere",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 9,
+        "word": "file",
+        "pinyin": "",
+        "meaning": "arquivos"
+      }
+    ],
+    "id": "local-1772298278118-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È comodo?",
+    "pinyin": null,
+    "translation": "A: É cômodo?",
+    "tokens": [
+      "È",
+      "comodo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "comodo",
+        "pinyin": "",
+        "meaning": "cômodo, conveniente"
+      }
+    ],
+    "id": "local-1772298278118-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È molto comodo. Oggigiorno ci sono molti software di archiviazione cloud di questo tipo. Per esempio, Baidu Cloud, SkyDrive, Dropbox, ecc.",
+    "pinyin": null,
+    "translation": "B: É muito cômodo. Hoje em dia, existem muitos softwares de armazenamento em nuvem desse tipo. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "È",
+      "molto",
+      "comodo",
+      ".",
+      "Oggigiorno",
+      "ci",
+      "sono",
+      "molti",
+      "software",
+      "di",
+      "archiviazione",
+      "cloud",
+      "di",
+      "questo",
+      "tipo",
+      ".",
+      "Per",
+      "esempio",
+      ",",
+      "Baidu",
+      "Cloud",
+      ",",
+      "SkyDrive",
+      ",",
+      "Dropbox",
+      ",",
+      "ecc",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "molto comodo",
+        "pinyin": "",
+        "meaning": "muito cômodo"
+      },
+      {
+        "id": 2,
+        "word": "Oggigiorno",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 3,
+        "word": "ci sono",
+        "pinyin": "",
+        "meaning": "existem, há"
+      },
+      {
+        "id": 4,
+        "word": "software di archiviazione cloud",
+        "pinyin": "",
+        "meaning": "software de armazenamento em nuvem"
+      },
+      {
+        "id": 5,
+        "word": "di questo tipo",
+        "pinyin": "",
+        "meaning": "desse tipo"
+      },
+      {
+        "id": 6,
+        "word": "Per esempio",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      },
+      {
+        "id": 7,
+        "word": "ecc.",
+        "pinyin": "",
+        "meaning": "etc."
+      }
+    ],
+    "id": "local-1772298278118-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Cos'è l'archiviazione cloud?",
+    "pinyin": null,
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "Cos'",
+      "è",
+      "l'",
+      "archiviazione",
+      "cloud",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cos'è",
+        "pinyin": "",
+        "meaning": "O que é"
+      },
+      {
+        "id": 2,
+        "word": "l'archiviazione cloud",
+        "pinyin": "",
+        "meaning": "o armazenamento em nuvem"
+      }
+    ],
+    "id": "local-1772298278118-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: In parole semplici, significa mettere i tuoi file sul drive cloud di Google. Poi, finché sei loggato, puoi usare questi documenti su diversi dispositivi.",
+    "pinyin": null,
+    "translation": "B: Em palavras simples, significa colocar seus arquivos no drive cloud do Google. Depois, enquanto você estiver logado, pode usar esses documentos em diferentes dispositivos.",
+    "tokens": [
+      "In",
+      "parole",
+      "semplici",
+      ",",
+      "significa",
+      "mettere",
+      "i",
+      "tuoi",
+      "file",
+      "sul",
+      "drive",
+      "cloud",
+      "di",
+      "Google",
+      ".",
+      "Poi",
+      ",",
+      "finché",
+      "sei",
+      "loggato",
+      ",",
+      "puoi",
+      "usare",
+      "questi",
+      "documenti",
+      "su",
+      "diversi",
+      "dispositivi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In parole semplici",
+        "pinyin": "",
+        "meaning": "Em palavras simples"
+      },
+      {
+        "id": 2,
+        "word": "significa",
+        "pinyin": "",
+        "meaning": "significa (verbo significare)"
+      },
+      {
+        "id": 3,
+        "word": "mettere",
+        "pinyin": "",
+        "meaning": "colocar"
+      },
+      {
+        "id": 4,
+        "word": "i tuoi file",
+        "pinyin": "",
+        "meaning": "seus arquivos"
+      },
+      {
+        "id": 5,
+        "word": "sul drive cloud di Google",
+        "pinyin": "",
+        "meaning": "no drive em nuvem do Google"
+      },
+      {
+        "id": 6,
+        "word": "Poi",
+        "pinyin": "",
+        "meaning": "Depois"
+      },
+      {
+        "id": 7,
+        "word": "finché",
+        "pinyin": "",
+        "meaning": "enquanto"
+      },
+      {
+        "id": 8,
+        "word": "sei loggato",
+        "pinyin": "",
+        "meaning": "você está logado"
+      },
+      {
+        "id": 9,
+        "word": "puoi usare",
+        "pinyin": "",
+        "meaning": "você pode usar"
+      },
+      {
+        "id": 10,
+        "word": "diversi dispositivi",
+        "pinyin": "",
+        "meaning": "diferentes dispositivos"
+      }
+    ],
+    "id": "local-1772298278118-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Allora non ho bisogno di usare memoria. È così comodo.",
+    "pinyin": null,
+    "translation": "A: Então não preciso usar memória. É tão cômodo.",
+    "tokens": [
+      "Allora",
+      "non",
+      "ho",
+      "bisogno",
+      "di",
+      "usare",
+      "memoria",
+      ".",
+      "È",
+      "così",
+      "comodo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então, portanto"
+      },
+      {
+        "id": 2,
+        "word": "non ho bisogno di",
+        "pinyin": "",
+        "meaning": "não preciso de"
+      },
+      {
+        "id": 3,
+        "word": "usare",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "memoria",
+        "pinyin": "",
+        "meaning": "memória"
+      },
+      {
+        "id": 5,
+        "word": "così comodo",
+        "pinyin": "",
+        "meaning": "tão cômodo"
+      }
+    ],
+    "id": "local-1772298278118-8",
+    "language": "Italiano"
+  }
+]

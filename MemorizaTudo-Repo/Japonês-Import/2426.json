@@ -1,0 +1,541 @@
+[
+  {
+    "chinese": "A: ねえ、あなたのパソコンの画面、すごく明るいね。見づらくない？",
+    "pinyin": "",
+    "translation": "A: Ei, a tela do seu computador está muito clara, né? Não é difícil de ver?",
+    "tokens": [
+      "ねえ",
+      "、",
+      "あなた",
+      "の",
+      "パソコン",
+      "の",
+      "画面",
+      "、",
+      "すごく",
+      "明るい",
+      "ね",
+      "。",
+      "見づらく",
+      "ない",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ねえ",
+        "pinyin": "nee",
+        "meaning": "Ei, Olhe"
+      },
+      {
+        "id": 2,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "パソコン",
+        "pinyin": "pasokon",
+        "meaning": "computador pessoal (PC)"
+      },
+      {
+        "id": 4,
+        "word": "画面",
+        "pinyin": "gamen",
+        "meaning": "tela, monitor"
+      },
+      {
+        "id": 5,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 6,
+        "word": "明るい",
+        "pinyin": "akarui",
+        "meaning": "claro, brilhante"
+      },
+      {
+        "id": 7,
+        "word": "見づらい",
+        "pinyin": "mizurai",
+        "meaning": "difícil de ver"
+      }
+    ],
+    "id": "local-1772296856438-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ねえ、気にしないよ。急がなきゃいけないんだ。",
+    "pinyin": "",
+    "translation": "B: Ah, não me importo. Tenho que me apressar.",
+    "tokens": [
+      "ねえ",
+      "、",
+      "気にしない",
+      "よ",
+      "。",
+      "急がなきゃ",
+      "いけない",
+      "ん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ねえ",
+        "pinyin": "nee",
+        "meaning": "Ah, Bem (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "気にする",
+        "pinyin": "kinisuru",
+        "meaning": "se importar, se preocupar"
+      },
+      {
+        "id": 3,
+        "word": "急ぐ",
+        "pinyin": "isogu",
+        "meaning": "se apressar"
+      }
+    ],
+    "id": "local-1772296856438-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: あなたは気にしないけど、私は気にするよ。明るすぎると眠れなくなっちゃうから。",
+    "pinyin": "",
+    "translation": "A: Você não se importa, mas eu me importo. Se estiver muito claro, eu não consigo dormir.",
+    "tokens": [
+      "あなた",
+      "は",
+      "気にしない",
+      "けど",
+      "、",
+      "私",
+      "は",
+      "気にする",
+      "よ",
+      "。",
+      "明るすぎる",
+      "と",
+      "眠れなく",
+      "なっちゃう",
+      "から",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "気にする",
+        "pinyin": "kinisuru",
+        "meaning": "se importar, se preocupar"
+      },
+      {
+        "id": 3,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "eu"
+      },
+      {
+        "id": 4,
+        "word": "けど",
+        "pinyin": "kedo",
+        "meaning": "mas, embora"
+      },
+      {
+        "id": 5,
+        "word": "明るすぎる",
+        "pinyin": "akarusugiru",
+        "meaning": "muito claro (exagerado)"
+      },
+      {
+        "id": 6,
+        "word": "眠れる",
+        "pinyin": "nemureru",
+        "meaning": "conseguir dormir"
+      },
+      {
+        "id": 7,
+        "word": "~ちゃう",
+        "pinyin": "~chau",
+        "meaning": "expressa algo feito completamente, por engano ou resultado indesejado/inevitável"
+      },
+      {
+        "id": 8,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque"
+      }
+    ],
+    "id": "local-1772296856438-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当？それはごめんね。変えるよ。画面の明るさってどうやって変えるの？Zhenzhen、知ってる？",
+    "pinyin": "",
+    "translation": "B: Sério? Desculpe por isso. Vou mudar. Como se muda o brilho da tela? Zhenzhen, você sabe?",
+    "tokens": [
+      "本当",
+      "？",
+      "それ",
+      "は",
+      "ごめんね",
+      "。",
+      "変える",
+      "よ",
+      "。",
+      "画面",
+      "の",
+      "明るさ",
+      "って",
+      "どうやって",
+      "変える",
+      "の",
+      "？",
+      "Zhenzhen",
+      "、",
+      "知ってる",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "hontō",
+        "meaning": "verdade, realmente"
+      },
+      {
+        "id": 2,
+        "word": "ごめんね",
+        "pinyin": "gomen ne",
+        "meaning": "desculpe"
+      },
+      {
+        "id": 3,
+        "word": "変える",
+        "pinyin": "kaeru",
+        "meaning": "mudar, alterar"
+      },
+      {
+        "id": 4,
+        "word": "画面",
+        "pinyin": "gamen",
+        "meaning": "tela, monitor"
+      },
+      {
+        "id": 5,
+        "word": "明るさ",
+        "pinyin": "akarusa",
+        "meaning": "brilho"
+      },
+      {
+        "id": 6,
+        "word": "どうやって",
+        "pinyin": "dō yatte",
+        "meaning": "como (se faz)"
+      },
+      {
+        "id": 7,
+        "word": "知ってる",
+        "pinyin": "shitteru",
+        "meaning": "saber, conhecer"
+      }
+    ],
+    "id": "local-1772296856438-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私のはデスクトップだよ。画面の下に押せるボタンがあるの。ノートパソコンなら、キーボードに関数記号のキーがあるか見てみて。",
+    "pinyin": "",
+    "translation": "A: O meu é um desktop. Tem um botão que você pode apertar na parte de baixo da tela. Se for um notebook, veja se há teclas de função no teclado.",
+    "tokens": [
+      "私",
+      "の",
+      "は",
+      "デスクトップ",
+      "だよ",
+      "。",
+      "画面",
+      "の",
+      "下",
+      "に",
+      "押せる",
+      "ボタン",
+      "が",
+      "ある",
+      "の",
+      "。",
+      "ノートパソコン",
+      "なら",
+      "、",
+      "キーボード",
+      "に",
+      "関数記号",
+      "の",
+      "キー",
+      "が",
+      "ある",
+      "か",
+      "見てみて",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "watashi",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "デスクトップ",
+        "pinyin": "desukutoppu",
+        "meaning": "desktop"
+      },
+      {
+        "id": 3,
+        "word": "画面",
+        "pinyin": "gamen",
+        "meaning": "tela, monitor"
+      },
+      {
+        "id": 4,
+        "word": "下",
+        "pinyin": "shita",
+        "meaning": "embaixo, parte de baixo"
+      },
+      {
+        "id": 5,
+        "word": "押せる",
+        "pinyin": "oseru",
+        "meaning": "pode apertar, é apertável"
+      },
+      {
+        "id": 6,
+        "word": "ボタン",
+        "pinyin": "botan",
+        "meaning": "botão"
+      },
+      {
+        "id": 7,
+        "word": "ノートパソコン",
+        "pinyin": "nōtopasokon",
+        "meaning": "notebook, laptop"
+      },
+      {
+        "id": 8,
+        "word": "なら",
+        "pinyin": "nara",
+        "meaning": "se (for o caso de)"
+      },
+      {
+        "id": 9,
+        "word": "キーボード",
+        "pinyin": "kībōdo",
+        "meaning": "teclado"
+      },
+      {
+        "id": 10,
+        "word": "関数記号",
+        "pinyin": "kansū kigō",
+        "meaning": "símbolo de função"
+      },
+      {
+        "id": 11,
+        "word": "キー",
+        "pinyin": "kī",
+        "meaning": "tecla, chave"
+      },
+      {
+        "id": 12,
+        "word": "見てみる",
+        "pinyin": "mite miru",
+        "meaning": "tentar ver, dar uma olhada"
+      }
+    ],
+    "id": "local-1772296856438-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えーと、これはコントラストを調整するやつで、これは色ね。ああ、これが明るさだ。よし、一番暗くしたよ。これで少しはマシになった？",
+    "pinyin": "",
+    "translation": "B: Hum, este é para ajustar o contraste, e este é para a cor, né? Ah, este é o brilho. Certo, deixei no mais escuro. Melhorou um pouco com isso?",
+    "tokens": [
+      "えーと",
+      "、",
+      "これ",
+      "は",
+      "コントラスト",
+      "を",
+      "調整する",
+      "やつ",
+      "で",
+      "、",
+      "これ",
+      "は",
+      "色",
+      "ね",
+      "。",
+      "ああ",
+      "、",
+      "これ",
+      "が",
+      "明るさ",
+      "だ",
+      "。",
+      "よし",
+      "、",
+      "一番",
+      "暗くした",
+      "よ",
+      "。",
+      "これ",
+      "で",
+      "少し",
+      "は",
+      "マシに",
+      "なった",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "えーと",
+        "pinyin": "ēto",
+        "meaning": "hum, bem (som de hesitação)"
+      },
+      {
+        "id": 2,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "este, isso"
+      },
+      {
+        "id": 3,
+        "word": "コントラスト",
+        "pinyin": "kontorasuto",
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "調整する",
+        "pinyin": "chōseisuru",
+        "meaning": "ajustar"
+      },
+      {
+        "id": 5,
+        "word": "やつ",
+        "pinyin": "yatsu",
+        "meaning": "coisa, um para (informal)"
+      },
+      {
+        "id": 6,
+        "word": "色",
+        "pinyin": "iro",
+        "meaning": "cor"
+      },
+      {
+        "id": 7,
+        "word": "明るさ",
+        "pinyin": "akarusa",
+        "meaning": "brilho"
+      },
+      {
+        "id": 8,
+        "word": "よし",
+        "pinyin": "yoshi",
+        "meaning": "certo, ok, pronto"
+      },
+      {
+        "id": 9,
+        "word": "一番",
+        "pinyin": "ichiban",
+        "meaning": "o mais, o melhor"
+      },
+      {
+        "id": 10,
+        "word": "暗くする",
+        "pinyin": "kurakusuru",
+        "meaning": "escurecer"
+      },
+      {
+        "id": 11,
+        "word": "少し",
+        "pinyin": "sukoshi",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 12,
+        "word": "マシになる",
+        "pinyin": "mashi ni naru",
+        "meaning": "melhorar, ficar melhor"
+      }
+    ],
+    "id": "local-1772296856438-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: うん、ずっと良くなった。寝るね。頑張ってね！",
+    "pinyin": "",
+    "translation": "A: Sim, melhorou muito. Vou dormir. Boa sorte (ou continue se esforçando)!",
+    "tokens": [
+      "うん",
+      "、",
+      "ずっと",
+      "良く",
+      "なった",
+      "。",
+      "寝る",
+      "ね",
+      "。",
+      "頑張って",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "un",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "ずっと",
+        "pinyin": "zutto",
+        "meaning": "muito mais, continuamente"
+      },
+      {
+        "id": 3,
+        "word": "良くなる",
+        "pinyin": "yoku naru",
+        "meaning": "melhorar"
+      },
+      {
+        "id": 4,
+        "word": "寝る",
+        "pinyin": "neru",
+        "meaning": "dormir"
+      },
+      {
+        "id": 5,
+        "word": "頑張って",
+        "pinyin": "ganbatte",
+        "meaning": "boa sorte, se esforce, faça o seu melhor"
+      }
+    ],
+    "id": "local-1772296856438-6",
+    "language": "Japonês"
+  }
+]

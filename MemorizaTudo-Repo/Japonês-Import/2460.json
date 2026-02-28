@@ -1,0 +1,653 @@
+[
+  {
+    "chinese": "A: リサさん、ちょっとお伺いしたいことがあります。",
+    "pinyin": null,
+    "translation": "A: Lisa, eu tenho uma coisa que gostaria de perguntar.",
+    "tokens": [
+      "A:",
+      "リサ",
+      "さん",
+      "、",
+      "ちょっと",
+      "お伺いしたい",
+      "こと",
+      "が",
+      "あります",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "リサさん",
+        "pinyin": null,
+        "meaning": "Sra. Lisa (Lisa com honorífico)"
+      },
+      {
+        "id": 2,
+        "word": "ちょっと",
+        "pinyin": null,
+        "meaning": "um pouco, um instante"
+      },
+      {
+        "id": 3,
+        "word": "お伺いしたい",
+        "pinyin": null,
+        "meaning": "gostaria de perguntar (forma humilde)"
+      },
+      {
+        "id": 4,
+        "word": "こと",
+        "pinyin": null,
+        "meaning": "coisa, assunto"
+      },
+      {
+        "id": 5,
+        "word": "あります",
+        "pinyin": null,
+        "meaning": "ter, haver (para inanimados)"
+      }
+    ],
+    "id": "local-1772299159476-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 何でしょうか？",
+    "pinyin": null,
+    "translation": "B: O que seria?",
+    "tokens": [
+      "B:",
+      "何",
+      "でしょう",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "でしょうか",
+        "pinyin": null,
+        "meaning": "seria?"
+      }
+    ],
+    "id": "local-1772299159476-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: この夏、インターン生を募集していますか？",
+    "pinyin": null,
+    "translation": "A: Neste verão, vocês estão recrutando estagiários?",
+    "tokens": [
+      "A:",
+      "この",
+      "夏",
+      "、",
+      "インターン生",
+      "を",
+      "募集",
+      "して",
+      "います",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "この",
+        "pinyin": null,
+        "meaning": "este(a)"
+      },
+      {
+        "id": 2,
+        "word": "夏",
+        "pinyin": null,
+        "meaning": "verão"
+      },
+      {
+        "id": 3,
+        "word": "インターン生",
+        "pinyin": null,
+        "meaning": "estagiário"
+      },
+      {
+        "id": 4,
+        "word": "募集しています",
+        "pinyin": null,
+        "meaning": "está recrutando, está procurando"
+      }
+    ],
+    "id": "local-1772299159476-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい、募集しています。推薦したい適任者がいますか？",
+    "pinyin": null,
+    "translation": "B: Sim, estamos recrutando. Você tem alguém adequado para recomendar?",
+    "tokens": [
+      "B:",
+      "はい",
+      "、",
+      "募集",
+      "して",
+      "います",
+      "。",
+      "推薦",
+      "したい",
+      "適任者",
+      "が",
+      "います",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "募集しています",
+        "pinyin": null,
+        "meaning": "está recrutando"
+      },
+      {
+        "id": 3,
+        "word": "推薦したい",
+        "pinyin": null,
+        "meaning": "gostaria de recomendar"
+      },
+      {
+        "id": 4,
+        "word": "適任者",
+        "pinyin": null,
+        "meaning": "pessoa adequada, candidato ideal"
+      },
+      {
+        "id": 5,
+        "word": "います",
+        "pinyin": null,
+        "meaning": "ter, haver (para seres vivos)"
+      }
+    ],
+    "id": "local-1772299159476-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 中国に留学している外国人の友人がいるのですが、夏休み中にインターンシップを探しています。",
+    "pinyin": null,
+    "translation": "A: Tenho um amigo estrangeiro que está estudando na China e está procurando um estágio durante as férias de verão.",
+    "tokens": [
+      "A:",
+      "中国",
+      "に",
+      "留学",
+      "して",
+      "いる",
+      "外国人",
+      "の",
+      "友人",
+      "が",
+      "いる",
+      "の",
+      "ですが",
+      "、",
+      "夏休み中",
+      "に",
+      "インターンシップ",
+      "を",
+      "探して",
+      "います",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "中国",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "留学している",
+        "pinyin": null,
+        "meaning": "está estudando no exterior"
+      },
+      {
+        "id": 3,
+        "word": "外国人",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "友人",
+        "pinyin": null,
+        "meaning": "amigo"
+      },
+      {
+        "id": 5,
+        "word": "夏休み中",
+        "pinyin": null,
+        "meaning": "durante as férias de verão"
+      },
+      {
+        "id": 6,
+        "word": "インターンシップ",
+        "pinyin": null,
+        "meaning": "estágio"
+      },
+      {
+        "id": 7,
+        "word": "探しています",
+        "pinyin": null,
+        "meaning": "está procurando"
+      }
+    ],
+    "id": "local-1772299159476-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 留学生なら、難しいかもしれませんね。",
+    "pinyin": null,
+    "translation": "B: Se for um estudante estrangeiro, pode ser difícil, não é?",
+    "tokens": [
+      "B:",
+      "留学生",
+      "なら",
+      "、",
+      "難しい",
+      "かも",
+      "しれません",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "留学生",
+        "pinyin": null,
+        "meaning": "estudante estrangeiro"
+      },
+      {
+        "id": 2,
+        "word": "なら",
+        "pinyin": null,
+        "meaning": "se for o caso de"
+      },
+      {
+        "id": 3,
+        "word": "難しい",
+        "pinyin": null,
+        "meaning": "difícil"
+      },
+      {
+        "id": 4,
+        "word": "かもしれません",
+        "pinyin": null,
+        "meaning": "talvez seja, pode ser"
+      },
+      {
+        "id": 5,
+        "word": "ね",
+        "pinyin": null,
+        "meaning": "partícula de confirmação/ênfase"
+      }
+    ],
+    "id": "local-1772299159476-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 彼の中国語は上手ですよ。",
+    "pinyin": null,
+    "translation": "A: O chinês dele é muito bom.",
+    "tokens": [
+      "A:",
+      "彼",
+      "の",
+      "中国語",
+      "は",
+      "上手",
+      "です",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "彼",
+        "pinyin": null,
+        "meaning": "ele"
+      },
+      {
+        "id": 2,
+        "word": "中国語",
+        "pinyin": null,
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 3,
+        "word": "上手",
+        "pinyin": null,
+        "meaning": "bom em, hábil"
+      },
+      {
+        "id": 4,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "partícula de ênfase"
+      }
+    ],
+    "id": "local-1772299159476-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それが問題ではありません。ビザの問題です。学生ビザを持っている外国人は中国でインターンシップができません。",
+    "pinyin": null,
+    "translation": "B: Esse não é o problema. É um problema de visto. Estrangeiros com visto de estudante não podem fazer estágio na China.",
+    "tokens": [
+      "B:",
+      "それ",
+      "が",
+      "問題",
+      "では",
+      "ありません",
+      "。",
+      "ビザ",
+      "の",
+      "問題",
+      "です",
+      "。",
+      "学生ビザ",
+      "を",
+      "持って",
+      "いる",
+      "外国人",
+      "は",
+      "中国",
+      "で",
+      "インターンシップ",
+      "が",
+      "でき",
+      "ません",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": null,
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "問題",
+        "pinyin": null,
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "ではありません",
+        "pinyin": null,
+        "meaning": "não é"
+      },
+      {
+        "id": 4,
+        "word": "ビザ",
+        "pinyin": null,
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "学生ビザ",
+        "pinyin": null,
+        "meaning": "visto de estudante"
+      },
+      {
+        "id": 6,
+        "word": "持っている",
+        "pinyin": null,
+        "meaning": "ter, possuir"
+      },
+      {
+        "id": 7,
+        "word": "外国人",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 8,
+        "word": "中国",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 9,
+        "word": "インターンシップ",
+        "pinyin": null,
+        "meaning": "estágio"
+      },
+      {
+        "id": 10,
+        "word": "できません",
+        "pinyin": null,
+        "meaning": "não pode"
+      }
+    ],
+    "id": "local-1772299159476-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ああ、そんなに厳しいんですか？",
+    "pinyin": null,
+    "translation": "A: Ah, é tão rigoroso assim?",
+    "tokens": [
+      "A:",
+      "ああ",
+      "、",
+      "そんなに",
+      "厳しい",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": null,
+        "meaning": "ah, oh"
+      },
+      {
+        "id": 2,
+        "word": "そんなに",
+        "pinyin": null,
+        "meaning": "tanto assim, tão"
+      },
+      {
+        "id": 3,
+        "word": "厳しい",
+        "pinyin": null,
+        "meaning": "rigoroso, severo"
+      },
+      {
+        "id": 4,
+        "word": "んですか",
+        "pinyin": null,
+        "meaning": "é que é?, usado para pedir explicação"
+      }
+    ],
+    "id": "local-1772299159476-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい。中国にいる外国人がインターンとして働きたいだけでも、就労ビザを取得する必要があります。",
+    "pinyin": null,
+    "translation": "B: Sim. Mesmo que um estrangeiro na China queira apenas trabalhar como estagiário, ele precisa obter um visto de trabalho.",
+    "tokens": [
+      "B:",
+      "はい",
+      "。",
+      "中国",
+      "に",
+      "いる",
+      "外国人",
+      "が",
+      "インターン",
+      "として",
+      "働き",
+      "たい",
+      "だけ",
+      "でも",
+      "、",
+      "就労ビザ",
+      "を",
+      "取得",
+      "する",
+      "必要",
+      "が",
+      "あります",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "外国人",
+        "pinyin": null,
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "インターン",
+        "pinyin": null,
+        "meaning": "estagiário (abreviação de インターンシップ)"
+      },
+      {
+        "id": 5,
+        "word": "として",
+        "pinyin": null,
+        "meaning": "como (na função de)"
+      },
+      {
+        "id": 6,
+        "word": "働きたい",
+        "pinyin": null,
+        "meaning": "quer trabalhar"
+      },
+      {
+        "id": 7,
+        "word": "だけでも",
+        "pinyin": null,
+        "meaning": "mesmo que apenas"
+      },
+      {
+        "id": 8,
+        "word": "就労ビザ",
+        "pinyin": null,
+        "meaning": "visto de trabalho"
+      },
+      {
+        "id": 9,
+        "word": "取得する",
+        "pinyin": null,
+        "meaning": "obter, adquirir"
+      },
+      {
+        "id": 10,
+        "word": "必要があります",
+        "pinyin": null,
+        "meaning": "é necessário, precisa"
+      }
+    ],
+    "id": "local-1772299159476-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 本当ですか？彼に伝えないと。ありがとうございます！",
+    "pinyin": null,
+    "translation": "A: É verdade? Preciso contar a ele. Muito obrigado!",
+    "tokens": [
+      "A:",
+      "本当",
+      "です",
+      "か",
+      "？",
+      "彼",
+      "に",
+      "伝え",
+      "ない",
+      "と",
+      "。",
+      "ありがとう",
+      "ございます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当ですか",
+        "pinyin": null,
+        "meaning": "É verdade?"
+      },
+      {
+        "id": 2,
+        "word": "彼に",
+        "pinyin": null,
+        "meaning": "a ele"
+      },
+      {
+        "id": 3,
+        "word": "伝えないと",
+        "pinyin": null,
+        "meaning": "preciso contar (abreviação de 伝えないといけません)"
+      },
+      {
+        "id": 4,
+        "word": "ありがとうございます",
+        "pinyin": null,
+        "meaning": "muito obrigado"
+      }
+    ],
+    "id": "local-1772299159476-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: どういたしまして。",
+    "pinyin": null,
+    "translation": "B: De nada.",
+    "tokens": [
+      "B:",
+      "どういたしまして",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どういたしまして",
+        "pinyin": null,
+        "meaning": "de nada"
+      }
+    ],
+    "id": "local-1772299159476-11",
+    "language": "Japonês"
+  }
+]

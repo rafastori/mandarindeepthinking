@@ -1,0 +1,734 @@
+[
+  {
+    "chinese": "A: Les hôtels sont si chers !",
+    "pinyin": "",
+    "translation": "A: Os hotéis são tão caros!",
+    "tokens": [
+      "Les",
+      "hôtels",
+      "sont",
+      "si",
+      "chers",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "hôtels",
+        "pinyin": "",
+        "meaning": "hotéis"
+      },
+      {
+        "id": 1,
+        "word": "chers",
+        "pinyin": "",
+        "meaning": "caros"
+      },
+      {
+        "id": 2,
+        "word": "si",
+        "pinyin": "",
+        "meaning": "tão (intensificador)"
+      }
+    ],
+    "id": "local-1772298404903-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu veux voyager ?",
+    "pinyin": "",
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "Tu",
+      "veux",
+      "voyager",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "(de vouloir) quer"
+      },
+      {
+        "id": 1,
+        "word": "voyager",
+        "pinyin": "",
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772298404903-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Je prévois de voyager à New York pour le plaisir cet été. Mais comment les hôtels peuvent-ils être si chers ?",
+    "pinyin": "",
+    "translation": "A: Sim. Eu planejo viajar para Nova York a lazer neste verão. Mas como os hotéis podem ser tão caros?",
+    "tokens": [
+      "Oui",
+      ".",
+      "Je",
+      "prévois",
+      "de",
+      "voyager",
+      "à",
+      "New",
+      "York",
+      "pour",
+      "le",
+      "plaisir",
+      "cet",
+      "été",
+      ".",
+      "Mais",
+      "comment",
+      "les",
+      "hôtels",
+      "peuvent",
+      "-",
+      "ils",
+      "être",
+      "si",
+      "chers",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "prévois",
+        "pinyin": "",
+        "meaning": "(de prévoir) planejo, prevejo"
+      },
+      {
+        "id": 1,
+        "word": "plaisir",
+        "pinyin": "",
+        "meaning": "prazer, lazer"
+      },
+      {
+        "id": 2,
+        "word": "cet été",
+        "pinyin": "",
+        "meaning": "neste verão"
+      },
+      {
+        "id": 3,
+        "word": "peuvent",
+        "pinyin": "",
+        "meaning": "(de pouvoir) podem"
+      }
+    ],
+    "id": "local-1772298404903-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Peut-être devrais-tu chercher sur Airbnb ?",
+    "pinyin": "",
+    "translation": "B: Talvez você devesse procurar no Airbnb?",
+    "tokens": [
+      "Peut-être",
+      "devrais",
+      "-",
+      "tu",
+      "chercher",
+      "sur",
+      "Airbnb",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "peut-être",
+        "pinyin": "",
+        "meaning": "talvez"
+      },
+      {
+        "id": 1,
+        "word": "devrais",
+        "pinyin": "",
+        "meaning": "(de devoir) deverias, devesses"
+      },
+      {
+        "id": 2,
+        "word": "chercher",
+        "pinyin": "",
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772298404903-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Qu'est-ce que c'est ?",
+    "pinyin": "",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "Qu'",
+      "est",
+      "-",
+      "ce",
+      "que",
+      "c'",
+      "est",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Qu'est-ce que c'est",
+        "pinyin": "",
+        "meaning": "O que é isso?"
+      }
+    ],
+    "id": "local-1772298404903-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est un site internet qui te permet de réserver des chambres. Cependant, ce ne sont pas des hôtels, ce sont juste des chambres chez des particuliers. Le propriétaire loue ses propres chambres libres et gagne un peu d'argent.",
+    "pinyin": "",
+    "translation": "B: É um site de internet que te permite reservar quartos. No entanto, não são hotéis, são apenas quartos em casas de particulares. O proprietário aluga seus próprios quartos livres e ganha um pouco de dinheiro.",
+    "tokens": [
+      "C'",
+      "est",
+      "un",
+      "site",
+      "internet",
+      "qui",
+      "te",
+      "permet",
+      "de",
+      "réserver",
+      "des",
+      "chambres",
+      ".",
+      "Cependant",
+      ",",
+      "ce",
+      "ne",
+      "sont",
+      "pas",
+      "des",
+      "hôtels",
+      ",",
+      "ce",
+      "sont",
+      "juste",
+      "des",
+      "chambres",
+      "chez",
+      "des",
+      "particuliers",
+      ".",
+      "Le",
+      "propriétaire",
+      "loue",
+      "ses",
+      "propres",
+      "chambres",
+      "libres",
+      "et",
+      "gagne",
+      "un",
+      "peu",
+      "d'",
+      "argent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "site internet",
+        "pinyin": "",
+        "meaning": "site de internet"
+      },
+      {
+        "id": 1,
+        "word": "permet",
+        "pinyin": "",
+        "meaning": "(de permettre) permite"
+      },
+      {
+        "id": 2,
+        "word": "réserver",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 3,
+        "word": "chambres",
+        "pinyin": "",
+        "meaning": "quartos"
+      },
+      {
+        "id": 4,
+        "word": "Cependant",
+        "pinyin": "",
+        "meaning": "No entanto"
+      },
+      {
+        "id": 5,
+        "word": "particuliers",
+        "pinyin": "",
+        "meaning": "particulares (pessoas físicas)"
+      },
+      {
+        "id": 6,
+        "word": "propriétaire",
+        "pinyin": "",
+        "meaning": "proprietário"
+      },
+      {
+        "id": 7,
+        "word": "loue",
+        "pinyin": "",
+        "meaning": "(de louer) aluga"
+      },
+      {
+        "id": 8,
+        "word": "propres",
+        "pinyin": "",
+        "meaning": "próprios"
+      },
+      {
+        "id": 9,
+        "word": "gagne",
+        "pinyin": "",
+        "meaning": "(de gagner) ganha"
+      },
+      {
+        "id": 10,
+        "word": "argent",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772298404903-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je vois. Hey, il y en a beaucoup ! Ça a l'air plutôt bien. Un peu plus de 600 RMB par nuit. Il y a aussi une cuisine, donc je peux cuisiner moi-même.",
+    "pinyin": "",
+    "translation": "A: Entendi. Ei, tem muitos! Parece muito bom. Um pouco mais de 600 RMB por noite. Tem também uma cozinha, então posso cozinhar eu mesmo.",
+    "tokens": [
+      "Je",
+      "vois",
+      ".",
+      "Hey",
+      ",",
+      "il",
+      "y",
+      "en",
+      "a",
+      "beaucoup",
+      "!",
+      "Ça",
+      "a",
+      "l'",
+      "air",
+      "plutôt",
+      "bien",
+      ".",
+      "Un",
+      "peu",
+      "plus",
+      "de",
+      "600",
+      "RMB",
+      "par",
+      "nuit",
+      ".",
+      "Il",
+      "y",
+      "a",
+      "aussi",
+      "une",
+      "cuisine",
+      ",",
+      "donc",
+      "je",
+      "peux",
+      "cuisiner",
+      "moi",
+      "-",
+      "même",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "vois",
+        "pinyin": "",
+        "meaning": "(de voir) vejo, entendi"
+      },
+      {
+        "id": 1,
+        "word": "il y en a beaucoup",
+        "pinyin": "",
+        "meaning": "há muitos, tem muitos"
+      },
+      {
+        "id": 2,
+        "word": "Ça a l'air",
+        "pinyin": "",
+        "meaning": "Parece"
+      },
+      {
+        "id": 3,
+        "word": "plutôt bien",
+        "pinyin": "",
+        "meaning": "muito bom, bastante bom"
+      },
+      {
+        "id": 4,
+        "word": "par nuit",
+        "pinyin": "",
+        "meaning": "por noite"
+      },
+      {
+        "id": 5,
+        "word": "cuisine",
+        "pinyin": "",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 6,
+        "word": "donc",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 7,
+        "word": "peux",
+        "pinyin": "",
+        "meaning": "(de pouvoir) posso"
+      },
+      {
+        "id": 8,
+        "word": "cuisiner",
+        "pinyin": "",
+        "meaning": "cozinhar"
+      },
+      {
+        "id": 9,
+        "word": "moi-même",
+        "pinyin": "",
+        "meaning": "eu mesmo(a)"
+      }
+    ],
+    "id": "local-1772298404903-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cependant, ce n'est pas un appartement, c'est juste une chambre. Tu dois partager la cuisine et la salle de bain avec d'autres.",
+    "pinyin": "",
+    "translation": "B: No entanto, não é um apartamento, é apenas um quarto. Você deve compartilhar a cozinha e o banheiro com outros.",
+    "tokens": [
+      "Cependant",
+      ",",
+      "ce",
+      "n'",
+      "est",
+      "pas",
+      "un",
+      "appartement",
+      ",",
+      "c'",
+      "est",
+      "juste",
+      "une",
+      "chambre",
+      ".",
+      "Tu",
+      "dois",
+      "partager",
+      "la",
+      "cuisine",
+      "et",
+      "la",
+      "salle",
+      "de",
+      "bain",
+      "avec",
+      "d'",
+      "autres",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Cependant",
+        "pinyin": "",
+        "meaning": "No entanto"
+      },
+      {
+        "id": 1,
+        "word": "appartement",
+        "pinyin": "",
+        "meaning": "apartamento"
+      },
+      {
+        "id": 2,
+        "word": "juste",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 3,
+        "word": "dois",
+        "pinyin": "",
+        "meaning": "(de devoir) deves, tem que"
+      },
+      {
+        "id": 4,
+        "word": "partager",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 5,
+        "word": "salle de bain",
+        "pinyin": "",
+        "meaning": "banheiro"
+      },
+      {
+        "id": 6,
+        "word": "avec d'autres",
+        "pinyin": "",
+        "meaning": "com outros"
+      }
+    ],
+    "id": "local-1772298404903-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oh, ça n'a pas d'importance. Mais, est-ce sûr de rester avec d'autres personnes ?",
+    "pinyin": "",
+    "translation": "A: Oh, isso não tem importância. Mas, é seguro ficar com outras pessoas?",
+    "tokens": [
+      "Oh",
+      ",",
+      "ça",
+      "n'",
+      "a",
+      "pas",
+      "d'",
+      "importance",
+      ".",
+      "Mais",
+      ",",
+      "est",
+      "-",
+      "ce",
+      "sûr",
+      "de",
+      "rester",
+      "avec",
+      "d'",
+      "autres",
+      "personnes",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ça n'a pas d'importance",
+        "pinyin": "",
+        "meaning": "isso não tem importância, não importa"
+      },
+      {
+        "id": 1,
+        "word": "sûr",
+        "pinyin": "",
+        "meaning": "seguro"
+      },
+      {
+        "id": 2,
+        "word": "rester",
+        "pinyin": "",
+        "meaning": "ficar"
+      },
+      {
+        "id": 3,
+        "word": "personnes",
+        "pinyin": "",
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772298404903-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu peux regarder les avis. Ils sont écrits par des gens qui y ont séjourné avant. Si beaucoup de personnes ont commenté et que les notes sont élevées, ça ne devrait pas être un problème.",
+    "pinyin": "",
+    "translation": "B: Você pode ver os comentários. Eles são escritos por pessoas que ficaram lá antes. Se muitas pessoas comentaram e as avaliações são altas, isso não deveria ser um problema.",
+    "tokens": [
+      "Tu",
+      "peux",
+      "regarder",
+      "les",
+      "avis",
+      ".",
+      "Ils",
+      "sont",
+      "écrits",
+      "par",
+      "des",
+      "gens",
+      "qui",
+      "y",
+      "ont",
+      "séjourné",
+      "avant",
+      ".",
+      "Si",
+      "beaucoup",
+      "de",
+      "personnes",
+      "ont",
+      "commenté",
+      "et",
+      "que",
+      "les",
+      "notes",
+      "sont",
+      "élevées",
+      ",",
+      "ça",
+      "ne",
+      "devrait",
+      "pas",
+      "être",
+      "un",
+      "problème",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "peux",
+        "pinyin": "",
+        "meaning": "(de pouvoir) pode"
+      },
+      {
+        "id": 1,
+        "word": "regarder",
+        "pinyin": "",
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 2,
+        "word": "avis",
+        "pinyin": "",
+        "meaning": "opiniões, comentários, avaliações"
+      },
+      {
+        "id": 3,
+        "word": "écrits",
+        "pinyin": "",
+        "meaning": "(de écrire) escritos"
+      },
+      {
+        "id": 4,
+        "word": "gens",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 5,
+        "word": "ont séjourné",
+        "pinyin": "",
+        "meaning": "(de séjourner) ficaram, hospedaram-se"
+      },
+      {
+        "id": 6,
+        "word": "avant",
+        "pinyin": "",
+        "meaning": "antes"
+      },
+      {
+        "id": 7,
+        "word": "beaucoup de",
+        "pinyin": "",
+        "meaning": "muitos(as)"
+      },
+      {
+        "id": 8,
+        "word": "commenté",
+        "pinyin": "",
+        "meaning": "(de commenter) comentaram"
+      },
+      {
+        "id": 9,
+        "word": "notes",
+        "pinyin": "",
+        "meaning": "notas, avaliações"
+      },
+      {
+        "id": 10,
+        "word": "élevées",
+        "pinyin": "",
+        "meaning": "altas"
+      },
+      {
+        "id": 11,
+        "word": "devrait",
+        "pinyin": "",
+        "meaning": "(de devoir) deveria"
+      },
+      {
+        "id": 12,
+        "word": "problème",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772298404903-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est super. Je vais continuer à chercher !",
+    "pinyin": "",
+    "translation": "A: É ótimo. Vou continuar a procurar!",
+    "tokens": [
+      "C'",
+      "est",
+      "super",
+      ".",
+      "Je",
+      "vais",
+      "continuer",
+      "à",
+      "chercher",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "super",
+        "pinyin": "",
+        "meaning": "ótimo, super"
+      },
+      {
+        "id": 1,
+        "word": "vais",
+        "pinyin": "",
+        "meaning": "(de aller) vou (futuro próximo)"
+      },
+      {
+        "id": 2,
+        "word": "continuer",
+        "pinyin": "",
+        "meaning": "continuar"
+      },
+      {
+        "id": 3,
+        "word": "chercher",
+        "pinyin": "",
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772298404903-10",
+    "language": "Francês"
+  }
+]

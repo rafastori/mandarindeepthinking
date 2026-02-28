@@ -1,0 +1,729 @@
+[
+  {
+    "chinese": "A: It's the dreaded math class again.",
+    "pinyin": null,
+    "translation": "A: É a temida aula de matemática de novo.",
+    "tokens": [
+      "A",
+      ":",
+      "It's",
+      "the",
+      "dreaded",
+      "math",
+      "class",
+      "again",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dreaded",
+        "pinyin": null,
+        "meaning": "temida, assustadora"
+      },
+      {
+        "id": 2,
+        "word": "math class",
+        "pinyin": null,
+        "meaning": "aula de matemática"
+      },
+      {
+        "id": 3,
+        "word": "again",
+        "pinyin": null,
+        "meaning": "novamente, de novo"
+      }
+    ],
+    "id": "local-1772293813876-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Agh, Wang Xiaoming, after we get out of school let's go play soccer.",
+    "pinyin": null,
+    "translation": "Agh, Wang Xiaoming, depois que sairmos da escola vamos jogar futebol.",
+    "tokens": [
+      "Agh",
+      ",",
+      "Wang",
+      "Xiaoming",
+      ",",
+      "after",
+      "we",
+      "get",
+      "out",
+      "of",
+      "school",
+      "let's",
+      "go",
+      "play",
+      "soccer",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "get out of school",
+        "pinyin": null,
+        "meaning": "sair da escola"
+      },
+      {
+        "id": 2,
+        "word": "play soccer",
+        "pinyin": null,
+        "meaning": "jogar futebol"
+      }
+    ],
+    "id": "local-1772293813876-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Li Jia, what are you saying?",
+    "pinyin": null,
+    "translation": "B: Li Jia, o que você está dizendo?",
+    "tokens": [
+      "B",
+      ":",
+      "Li",
+      "Jia",
+      ",",
+      "what",
+      "are",
+      "you",
+      "saying",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "saying",
+        "pinyin": null,
+        "meaning": "dizendo (do verbo 'to say')"
+      }
+    ],
+    "id": "local-1772293813876-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Stand up and explain to us what fractions are.",
+    "pinyin": null,
+    "translation": "Levante-se e explique para nós o que são frações.",
+    "tokens": [
+      "Stand",
+      "up",
+      "and",
+      "explain",
+      "to",
+      "us",
+      "what",
+      "fractions",
+      "are",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stand up",
+        "pinyin": null,
+        "meaning": "levantar-se"
+      },
+      {
+        "id": 2,
+        "word": "explain",
+        "pinyin": null,
+        "meaning": "explicar"
+      },
+      {
+        "id": 3,
+        "word": "fractions",
+        "pinyin": null,
+        "meaning": "frações"
+      }
+    ],
+    "id": "local-1772293813876-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Fractions show how many parts one number is of another.",
+    "pinyin": null,
+    "translation": "A: Frações mostram quantas partes um número é de outro.",
+    "tokens": [
+      "A",
+      ":",
+      "Fractions",
+      "show",
+      "how",
+      "many",
+      "parts",
+      "one",
+      "number",
+      "is",
+      "of",
+      "another",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "show",
+        "pinyin": null,
+        "meaning": "mostrar"
+      },
+      {
+        "id": 2,
+        "word": "parts",
+        "pinyin": null,
+        "meaning": "partes"
+      },
+      {
+        "id": 3,
+        "word": "another",
+        "pinyin": null,
+        "meaning": "outro(a)"
+      }
+    ],
+    "id": "local-1772293813876-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Can you give an example?",
+    "pinyin": null,
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "B",
+      ":",
+      "Can",
+      "you",
+      "give",
+      "an",
+      "example",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "give an example",
+        "pinyin": null,
+        "meaning": "dar um exemplo"
+      }
+    ],
+    "id": "local-1772293813876-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: For example, if I take one apple from three apples, that is one third.",
+    "pinyin": null,
+    "translation": "A: Por exemplo, se eu pego uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "A",
+      ":",
+      "For",
+      "example",
+      ",",
+      "if",
+      "I",
+      "take",
+      "one",
+      "apple",
+      "from",
+      "three",
+      "apples",
+      ",",
+      "that",
+      "is",
+      "one",
+      "third",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "take",
+        "pinyin": null,
+        "meaning": "pegar, tirar"
+      },
+      {
+        "id": 2,
+        "word": "one third",
+        "pinyin": null,
+        "meaning": "um terço"
+      }
+    ],
+    "id": "local-1772293813876-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Good, then how do we write it?",
+    "pinyin": null,
+    "translation": "B: Bom, então como escrevemos isso?",
+    "tokens": [
+      "B",
+      ":",
+      "Good",
+      ",",
+      "then",
+      "how",
+      "do",
+      "we",
+      "write",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "write",
+        "pinyin": null,
+        "meaning": "escrever"
+      }
+    ],
+    "id": "local-1772293813876-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: First write the fraction line.",
+    "pinyin": null,
+    "translation": "A: Primeiro escreva a linha de fração.",
+    "tokens": [
+      "A",
+      ":",
+      "First",
+      "write",
+      "the",
+      "fraction",
+      "line",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "first",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 2,
+        "word": "fraction line",
+        "pinyin": null,
+        "meaning": "linha de fração"
+      }
+    ],
+    "id": "local-1772293813876-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "\"The top\" is the numerator, and is written on top of the fraction line.",
+    "pinyin": null,
+    "translation": "\"O de cima\" é o numerador, e é escrito em cima da linha de fração.",
+    "tokens": [
+      "\"",
+      "The",
+      "top",
+      "\"",
+      "is",
+      "the",
+      "numerator",
+      ",",
+      "and",
+      "is",
+      "written",
+      "on",
+      "top",
+      "of",
+      "the",
+      "fraction",
+      "line",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "top",
+        "pinyin": null,
+        "meaning": "parte de cima"
+      },
+      {
+        "id": 2,
+        "word": "numerator",
+        "pinyin": null,
+        "meaning": "numerador"
+      },
+      {
+        "id": 3,
+        "word": "written",
+        "pinyin": null,
+        "meaning": "escrito (particípio passado de 'to write')"
+      },
+      {
+        "id": 4,
+        "word": "on top of",
+        "pinyin": null,
+        "meaning": "em cima de"
+      }
+    ],
+    "id": "local-1772293813876-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "\"The bottom\" is the denominator, and is written underneath.",
+    "pinyin": null,
+    "translation": "\"O de baixo\" é o denominador, e é escrito embaixo.",
+    "tokens": [
+      "\"",
+      "The",
+      "bottom",
+      "\"",
+      "is",
+      "the",
+      "denominator",
+      ",",
+      "and",
+      "is",
+      "written",
+      "underneath",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bottom",
+        "pinyin": null,
+        "meaning": "parte de baixo"
+      },
+      {
+        "id": 2,
+        "word": "denominator",
+        "pinyin": null,
+        "meaning": "denominador"
+      },
+      {
+        "id": 3,
+        "word": "underneath",
+        "pinyin": null,
+        "meaning": "embaixo, debaixo"
+      }
+    ],
+    "id": "local-1772293813876-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Good. Then what is percentage?",
+    "pinyin": null,
+    "translation": "B: Bom. Então o que é porcentagem?",
+    "tokens": [
+      "B",
+      ":",
+      "Good",
+      ".",
+      "Then",
+      "what",
+      "is",
+      "percentage",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "percentage",
+        "pinyin": null,
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772293813876-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That is a fraction of a hundred, for example: one fourth is twenty-five percent; one half is fifty percent.",
+    "pinyin": null,
+    "translation": "A: Isso é uma fração de cem, por exemplo: um quarto é vinte e cinco por cento; um meio é cinquenta por cento.",
+    "tokens": [
+      "A",
+      ":",
+      "That",
+      "is",
+      "a",
+      "fraction",
+      "of",
+      "a",
+      "hundred",
+      ",",
+      "for",
+      "example",
+      ":",
+      "one",
+      "fourth",
+      "is",
+      "twenty-five",
+      "percent",
+      ";",
+      "one",
+      "half",
+      "is",
+      "fifty",
+      "percent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fraction",
+        "pinyin": null,
+        "meaning": "fração"
+      },
+      {
+        "id": 2,
+        "word": "hundred",
+        "pinyin": null,
+        "meaning": "cem"
+      },
+      {
+        "id": 3,
+        "word": "one fourth",
+        "pinyin": null,
+        "meaning": "um quarto"
+      },
+      {
+        "id": 4,
+        "word": "twenty-five percent",
+        "pinyin": null,
+        "meaning": "vinte e cinco por cento"
+      },
+      {
+        "id": 5,
+        "word": "one half",
+        "pinyin": null,
+        "meaning": "um meio, metade"
+      },
+      {
+        "id": 6,
+        "word": "fifty percent",
+        "pinyin": null,
+        "meaning": "cinquenta por cento"
+      }
+    ],
+    "id": "local-1772293813876-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then what is \"several tenths\"?",
+    "pinyin": null,
+    "translation": "B: Então o que são \"vários décimos\"?",
+    "tokens": [
+      "B",
+      ":",
+      "Then",
+      "what",
+      "is",
+      "\"",
+      "several",
+      "tenths",
+      "\"",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "several",
+        "pinyin": null,
+        "meaning": "vários, alguns"
+      },
+      {
+        "id": 2,
+        "word": "tenths",
+        "pinyin": null,
+        "meaning": "décimos"
+      }
+    ],
+    "id": "local-1772293813876-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: \"A tenth\" is a fraction of ten.",
+    "pinyin": null,
+    "translation": "A: \"Um décimo\" é uma fração de dez.",
+    "tokens": [
+      "A",
+      ":",
+      "\"",
+      "A",
+      "tenth",
+      "\"",
+      "is",
+      "a",
+      "fraction",
+      "of",
+      "ten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tenth",
+        "pinyin": null,
+        "meaning": "décimo"
+      },
+      {
+        "id": 2,
+        "word": "ten",
+        "pinyin": null,
+        "meaning": "dez"
+      }
+    ],
+    "id": "local-1772293813876-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "For example, \"nine tenths\" is nine over ten, and also is ninety percent.",
+    "pinyin": null,
+    "translation": "Por exemplo, \"nove décimos\" é nove sobre dez, e também é noventa por cento.",
+    "tokens": [
+      "For",
+      "example",
+      ",",
+      "\"",
+      "nine",
+      "tenths",
+      "\"",
+      "is",
+      "nine",
+      "over",
+      "ten",
+      ",",
+      "and",
+      "also",
+      "is",
+      "ninety",
+      "percent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nine tenths",
+        "pinyin": null,
+        "meaning": "nove décimos"
+      },
+      {
+        "id": 2,
+        "word": "nine over ten",
+        "pinyin": null,
+        "meaning": "nove sobre dez"
+      },
+      {
+        "id": 3,
+        "word": "ninety percent",
+        "pinyin": null,
+        "meaning": "noventa por cento"
+      }
+    ],
+    "id": "local-1772293813876-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: In the future, do not sleep in class!",
+    "pinyin": null,
+    "translation": "B: No futuro, não durma na aula!",
+    "tokens": [
+      "B",
+      ":",
+      "In",
+      "the",
+      "future",
+      ",",
+      "do",
+      "not",
+      "sleep",
+      "in",
+      "class",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in the future",
+        "pinyin": null,
+        "meaning": "no futuro"
+      },
+      {
+        "id": 2,
+        "word": "sleep in class",
+        "pinyin": null,
+        "meaning": "dormir na aula"
+      }
+    ],
+    "id": "local-1772293813876-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "And you are not allowed to talk!",
+    "pinyin": null,
+    "translation": "E você não tem permissão para conversar!",
+    "tokens": [
+      "And",
+      "you",
+      "are",
+      "not",
+      "allowed",
+      "to",
+      "talk",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "allowed",
+        "pinyin": null,
+        "meaning": "permitido"
+      },
+      {
+        "id": 2,
+        "word": "not allowed to talk",
+        "pinyin": null,
+        "meaning": "não tem permissão para falar"
+      }
+    ],
+    "id": "local-1772293813876-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "If you talk again, you will stand still as a punishment!",
+    "pinyin": null,
+    "translation": "Se você falar de novo, ficará parado como castigo!",
+    "tokens": [
+      "If",
+      "you",
+      "talk",
+      "again",
+      ",",
+      "you",
+      "will",
+      "stand",
+      "still",
+      "as",
+      "a",
+      "punishment",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "talk again",
+        "pinyin": null,
+        "meaning": "falar de novo"
+      },
+      {
+        "id": 2,
+        "word": "stand still",
+        "pinyin": null,
+        "meaning": "ficar parado"
+      },
+      {
+        "id": 3,
+        "word": "punishment",
+        "pinyin": null,
+        "meaning": "castigo, punição"
+      }
+    ],
+    "id": "local-1772293813876-18",
+    "language": "Inglês"
+  }
+]

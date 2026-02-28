@@ -1,0 +1,497 @@
+[
+  {
+    "chinese": "あなた、携帯が鳴っているわ。メッセージよ。",
+    "pinyin": "",
+    "translation": "A: Seu celular está tocando. É uma mensagem.",
+    "tokens": [
+      "あなた",
+      "、",
+      "携帯",
+      "が",
+      "鳴っている",
+      "わ",
+      "。",
+      "メッセージ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "携帯",
+        "pinyin": "keitai",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "鳴る",
+        "pinyin": "naru",
+        "meaning": "tocar, soar"
+      },
+      {
+        "id": 4,
+        "word": "メッセージ",
+        "pinyin": "messeeji",
+        "meaning": "mensagem"
+      }
+    ],
+    "id": "local-1772296171030-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "今、お風呂だから読んでくれる？",
+    "pinyin": "",
+    "translation": "B: Estou no banho agora, pode ler para mim?",
+    "tokens": [
+      "今",
+      "、",
+      "お風呂",
+      "だから",
+      "読んで",
+      "くれる",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今",
+        "pinyin": "ima",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "お風呂",
+        "pinyin": "ofuro",
+        "meaning": "banho"
+      },
+      {
+        "id": 3,
+        "word": "読む",
+        "pinyin": "yomu",
+        "meaning": "ler"
+      },
+      {
+        "id": 4,
+        "word": "くれる",
+        "pinyin": "kureru",
+        "meaning": "fazer algo por mim/nós"
+      }
+    ],
+    "id": "local-1772296171030-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "「15日の11時8分、末尾8899のあなたの銀行カードから35,000元が請求されました。」って。え？どうするの？あなた家にいるのに、どうしてクレジットカードの請求が来るの？",
+    "pinyin": "",
+    "translation": "A: Diz: 'Às 11h08 do dia 15, 35.000 yuan foram cobrados do seu cartão bancário final 8899.' O quê? O que vamos fazer? Você está em casa, por que está vindo uma cobrança no cartão de crédito?",
+    "tokens": [
+      "15日",
+      "の",
+      "11時8分",
+      "、",
+      "末尾",
+      "8899",
+      "の",
+      "あなた",
+      "の",
+      "銀行カード",
+      "から",
+      "35,000元",
+      "が",
+      "請求されました",
+      "。」って",
+      "。",
+      "え",
+      "？",
+      "どうする",
+      "の",
+      "？",
+      "あなた",
+      "家",
+      "に",
+      "いる",
+      "のに",
+      "、",
+      "どうして",
+      "クレジットカード",
+      "の",
+      "請求",
+      "が",
+      "来る",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "15日",
+        "pinyin": "jūgonichi",
+        "meaning": "dia 15"
+      },
+      {
+        "id": 2,
+        "word": "11時8分",
+        "pinyin": "jūichiji happun",
+        "meaning": "11h08"
+      },
+      {
+        "id": 3,
+        "word": "末尾",
+        "pinyin": "matsubi",
+        "meaning": "final (de número)"
+      },
+      {
+        "id": 4,
+        "word": "銀行カード",
+        "pinyin": "ginkō kādo",
+        "meaning": "cartão bancário"
+      },
+      {
+        "id": 5,
+        "word": "元",
+        "pinyin": "gen",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 6,
+        "word": "請求する",
+        "pinyin": "seikyū suru",
+        "meaning": "cobrar, faturar"
+      },
+      {
+        "id": 7,
+        "word": "どうする",
+        "pinyin": "dō suru",
+        "meaning": "o que fazer"
+      },
+      {
+        "id": 8,
+        "word": "家",
+        "pinyin": "ie",
+        "meaning": "casa"
+      },
+      {
+        "id": 9,
+        "word": "いる",
+        "pinyin": "iru",
+        "meaning": "estar (para seres vivos)"
+      },
+      {
+        "id": 10,
+        "word": "どうして",
+        "pinyin": "dōshite",
+        "meaning": "por que"
+      },
+      {
+        "id": 11,
+        "word": "クレジットカード",
+        "pinyin": "kurejitto kādo",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 12,
+        "word": "請求",
+        "pinyin": "seikyū",
+        "meaning": "cobrança, fatura"
+      }
+    ],
+    "id": "local-1772296171030-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "えっ？！早く見せて！まさか！いつそんな大金使ったの？",
+    "pinyin": "",
+    "translation": "B: O quê?! Rápido, me mostra! Não pode ser! Quando eu gastei tanto dinheiro assim?",
+    "tokens": [
+      "えっ",
+      "？！",
+      "早く",
+      "見せて",
+      "！",
+      "まさか",
+      "！",
+      "いつ",
+      "そんな",
+      "大金",
+      "使った",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "早く",
+        "pinyin": "hayaku",
+        "meaning": "rapidamente, logo"
+      },
+      {
+        "id": 2,
+        "word": "見せる",
+        "pinyin": "miseru",
+        "meaning": "mostrar"
+      },
+      {
+        "id": 3,
+        "word": "まさか",
+        "pinyin": "masaka",
+        "meaning": "não pode ser, de jeito nenhum"
+      },
+      {
+        "id": 4,
+        "word": "いつ",
+        "pinyin": "itsu",
+        "meaning": "quando"
+      },
+      {
+        "id": 5,
+        "word": "大金",
+        "pinyin": "taikin",
+        "meaning": "grande soma de dinheiro"
+      },
+      {
+        "id": 6,
+        "word": "使う",
+        "pinyin": "tsukau",
+        "meaning": "usar, gastar"
+      }
+    ],
+    "id": "local-1772296171030-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "誰かに盗まれて使われたとか？",
+    "pinyin": "",
+    "translation": "A: Será que foi roubado e usado por alguém?",
+    "tokens": [
+      "誰か",
+      "に",
+      "盗まれて",
+      "使われた",
+      "とか",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "誰か",
+        "pinyin": "dareka",
+        "meaning": "alguém"
+      },
+      {
+        "id": 2,
+        "word": "盗む",
+        "pinyin": "nusumu",
+        "meaning": "roubar"
+      },
+      {
+        "id": 3,
+        "word": "使う",
+        "pinyin": "tsukau",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "とか",
+        "pinyin": "toka",
+        "meaning": "ou algo assim, tipo"
+      }
+    ],
+    "id": "local-1772296171030-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "え？じゃあ、今どうすればいいの、あなた？",
+    "pinyin": "",
+    "translation": "B: Hã? Então, o que devo fazer agora, meu bem?",
+    "tokens": [
+      "え",
+      "？",
+      "じゃあ",
+      "、",
+      "今",
+      "どうすればいい",
+      "の",
+      "、",
+      "あなた",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "今",
+        "pinyin": "ima",
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "どうすればいい",
+        "pinyin": "dō sureba ii",
+        "meaning": "o que devo fazer"
+      },
+      {
+        "id": 4,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      }
+    ],
+    "id": "local-1772296171030-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "あなた、心配しないで。銀行に電話して口座を凍結して、それから警察に届け出るだけよ。",
+    "pinyin": "",
+    "translation": "A: Não se preocupe. É só ligar para o banco para congelar a conta e depois fazer uma denúncia à polícia.",
+    "tokens": [
+      "あなた",
+      "、",
+      "心配しないで",
+      "。",
+      "銀行",
+      "に",
+      "電話して",
+      "口座",
+      "を",
+      "凍結して",
+      "、",
+      "それから",
+      "警察",
+      "に",
+      "届け出る",
+      "だけ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "心配する",
+        "pinyin": "shinpai suru",
+        "meaning": "preocupar-se"
+      },
+      {
+        "id": 3,
+        "word": "銀行",
+        "pinyin": "ginkō",
+        "meaning": "banco"
+      },
+      {
+        "id": 4,
+        "word": "電話する",
+        "pinyin": "denwa suru",
+        "meaning": "ligar (para o telefone)"
+      },
+      {
+        "id": 5,
+        "word": "口座",
+        "pinyin": "kōza",
+        "meaning": "conta (bancária)"
+      },
+      {
+        "id": 6,
+        "word": "凍結する",
+        "pinyin": "tōketsu suru",
+        "meaning": "congelar"
+      },
+      {
+        "id": 7,
+        "word": "それから",
+        "pinyin": "sorekara",
+        "meaning": "depois disso, em seguida"
+      },
+      {
+        "id": 8,
+        "word": "警察",
+        "pinyin": "keisatsu",
+        "meaning": "polícia"
+      },
+      {
+        "id": 9,
+        "word": "届け出る",
+        "pinyin": "todokederu",
+        "meaning": "reportar, registrar uma queixa"
+      }
+    ],
+    "id": "local-1772296171030-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "今日、目がぴくぴくしてたのは、やっぱりこれのせいか！",
+    "pinyin": "",
+    "translation": "B: Ah, então foi por isso que meu olho estava tremendo hoje!",
+    "tokens": [
+      "今日",
+      "、",
+      "目",
+      "が",
+      "ぴくぴくしてた",
+      "の",
+      "は",
+      "、",
+      "やっぱり",
+      "これ",
+      "の",
+      "せい",
+      "か",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今日",
+        "pinyin": "kyō",
+        "meaning": "hoje"
+      },
+      {
+        "id": 2,
+        "word": "目",
+        "pinyin": "me",
+        "meaning": "olho"
+      },
+      {
+        "id": 3,
+        "word": "ぴくぴくする",
+        "pinyin": "piku piku suru",
+        "meaning": "tremer (involuntariamente), piscar (espasmo)"
+      },
+      {
+        "id": 4,
+        "word": "やっぱり",
+        "pinyin": "yappari",
+        "meaning": "afinal, como eu esperava"
+      },
+      {
+        "id": 5,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "isso"
+      },
+      {
+        "id": 6,
+        "word": "せい",
+        "pinyin": "sei",
+        "meaning": "culpa, razão (negativa)"
+      }
+    ],
+    "id": "local-1772296171030-7",
+    "language": "Japonês"
+  }
+]

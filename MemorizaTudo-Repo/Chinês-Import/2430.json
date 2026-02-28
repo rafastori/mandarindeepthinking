@@ -1,0 +1,771 @@
+[
+  {
+    "chinese": "你在看什么？",
+    "pinyin": "nǐ zài kàn shénme?",
+    "translation": "O que você está assistindo/vendo?",
+    "tokens": [
+      "你",
+      "在",
+      "看",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "estar em processo de (partícula de aspecto)"
+      },
+      {
+        "id": 3,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver, assistir, ler"
+      },
+      {
+        "id": 4,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772297205137-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "皮影戏。",
+    "pinyin": "píyǐngxì.",
+    "translation": "Teatro de sombras.",
+    "tokens": [
+      "皮影戏",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "皮影戏",
+        "pinyin": "píyǐngxì",
+        "meaning": "teatro de sombras chinês"
+      }
+    ],
+    "id": "local-1772297205137-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我怎么没见过这个？",
+    "pinyin": "wǒ zěnme méi jiànguo zhège?",
+    "translation": "Como é que eu nunca vi isso?",
+    "tokens": [
+      "我",
+      "怎么",
+      "没",
+      "见",
+      "过",
+      "这个",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 7,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como, por quê"
+      },
+      {
+        "id": 8,
+        "word": "没",
+        "pinyin": "méi",
+        "meaning": "não (ter), não (existir), não (realizado)"
+      },
+      {
+        "id": 9,
+        "word": "见过",
+        "pinyin": "jiànguo",
+        "meaning": "já ter visto (见 + 过)"
+      },
+      {
+        "id": 10,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "isto, este"
+      }
+    ],
+    "id": "local-1772297205137-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这是一种中国传统民间艺术。现在很少有人看了。",
+    "pinyin": "zhè shì yī zhǒng Zhōngguó chuántǒng mínjiān yìshù. xiànzài hěn shǎo yǒu rén kàn le.",
+    "translation": "Esta é uma forma de arte folclórica tradicional chinesa. Hoje em dia, poucas pessoas assistem.",
+    "tokens": [
+      "这",
+      "是",
+      "一",
+      "种",
+      "中国",
+      "传统",
+      "民间",
+      "艺术",
+      "。",
+      "现在",
+      "很",
+      "少",
+      "有",
+      "人",
+      "看",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "isto, este"
+      },
+      {
+        "id": 12,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, sim"
+      },
+      {
+        "id": 13,
+        "word": "一种",
+        "pinyin": "yī zhǒng",
+        "meaning": "um tipo/uma espécie de"
+      },
+      {
+        "id": 14,
+        "word": "中国",
+        "pinyin": "Zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 15,
+        "word": "传统",
+        "pinyin": "chuántǒng",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 16,
+        "word": "民间艺术",
+        "pinyin": "mínjiān yìshù",
+        "meaning": "arte folclórica"
+      },
+      {
+        "id": 17,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora, atualmente"
+      },
+      {
+        "id": 18,
+        "word": "很少",
+        "pinyin": "hěn shǎo",
+        "meaning": "muito pouco, raramente"
+      },
+      {
+        "id": 19,
+        "word": "有人",
+        "pinyin": "yǒu rén",
+        "meaning": "algumas pessoas, ter pessoas"
+      },
+      {
+        "id": 20,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de aspecto (mudança de estado, conclusão)"
+      }
+    ],
+    "id": "local-1772297205137-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这是《西游记》里的故事，对吗？",
+    "pinyin": "zhè shì 《Xīyóujì》 lǐ de gùshi, duì ma?",
+    "translation": "Esta é uma história de 'Jornada ao Oeste', certo?",
+    "tokens": [
+      "这",
+      "是",
+      "《",
+      "西游记",
+      "》",
+      "里",
+      "的",
+      "故事",
+      "，",
+      "对",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "西游记",
+        "pinyin": "Xīyóujì",
+        "meaning": "Jornada ao Oeste (Um dos Quatro Grandes Romances Clássicos da Literatura Chinesa)"
+      },
+      {
+        "id": 22,
+        "word": "里",
+        "pinyin": "lǐ",
+        "meaning": "dentro, em"
+      },
+      {
+        "id": 23,
+        "word": "故事",
+        "pinyin": "gùshi",
+        "meaning": "história"
+      },
+      {
+        "id": 24,
+        "word": "对",
+        "pinyin": "duì",
+        "meaning": "certo, correto"
+      },
+      {
+        "id": 25,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772297205137-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "对。这些角色都是用动物皮或硬纸板做的。",
+    "pinyin": "duì. zhèxiē juésè dōu shì yòng dòngwù pí huò yìng zhǐbǎn zuò de.",
+    "translation": "Certo. Estes personagens são todos feitos de pele de animal ou papelão duro.",
+    "tokens": [
+      "对",
+      "。",
+      "这些",
+      "角色",
+      "都",
+      "是",
+      "用",
+      "动物",
+      "皮",
+      "或",
+      "硬",
+      "纸板",
+      "做",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "estes, estas"
+      },
+      {
+        "id": 27,
+        "word": "角色",
+        "pinyin": "juésè",
+        "meaning": "personagem, papel"
+      },
+      {
+        "id": 28,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos, ambos"
+      },
+      {
+        "id": 29,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar, utilizar"
+      },
+      {
+        "id": 30,
+        "word": "动物皮",
+        "pinyin": "dòngwù pí",
+        "meaning": "pele de animal"
+      },
+      {
+        "id": 31,
+        "word": "或",
+        "pinyin": "huò",
+        "meaning": "ou"
+      },
+      {
+        "id": 32,
+        "word": "硬纸板",
+        "pinyin": "yìng zhǐbǎn",
+        "meaning": "papelão duro"
+      },
+      {
+        "id": 33,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer, produzir"
+      },
+      {
+        "id": 34,
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "partícula que indica posse, atributo ou estrutura nominal; usada após verbos para descrever como algo é feito ou o material usado"
+      }
+    ],
+    "id": "local-1772297205137-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那它们怎么动呢？",
+    "pinyin": "nà tāmen zěnme dòng ne?",
+    "translation": "Então, como eles se movem?",
+    "tokens": [
+      "那",
+      "它们",
+      "怎么",
+      "动",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 35,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, aquele(a)"
+      },
+      {
+        "id": 36,
+        "word": "它们",
+        "pinyin": "tāmen",
+        "meaning": "eles, elas (para coisas/animais)"
+      },
+      {
+        "id": 37,
+        "word": "动",
+        "pinyin": "dòng",
+        "meaning": "mover, mexer"
+      },
+      {
+        "id": 38,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa (perguntar onde, o que, ou sobre a situação)"
+      }
+    ],
+    "id": "local-1772297205137-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有人操控它们。",
+    "pinyin": "yǒu rén cāokòng tāmen.",
+    "translation": "Alguém os manipula.",
+    "tokens": [
+      "有",
+      "人",
+      "操控",
+      "它们",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 39,
+        "word": "操控",
+        "pinyin": "cāokòng",
+        "meaning": "manipular, controlar"
+      }
+    ],
+    "id": "local-1772297205137-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那太有意思了。有没有什么地方能看到演出？",
+    "pinyin": "nà tài yǒu yìsi le. yǒu méiyǒu shénme dìfāng néng kàndào yǎnchū?",
+    "translation": "Isso é muito interessante. Existe algum lugar onde se possa assistir a uma performance?",
+    "tokens": [
+      "那",
+      "太",
+      "有意思",
+      "了",
+      "。",
+      "有",
+      "没",
+      "有",
+      "什么",
+      "地方",
+      "能",
+      "看",
+      "到",
+      "演出",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 40,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 41,
+        "word": "有意思",
+        "pinyin": "yǒu yìsi",
+        "meaning": "interessante"
+      },
+      {
+        "id": 42,
+        "word": "有没有",
+        "pinyin": "yǒu méiyǒu",
+        "meaning": "tem ou não tem? / existe ou não existe?"
+      },
+      {
+        "id": 43,
+        "word": "地方",
+        "pinyin": "dìfāng",
+        "meaning": "lugar"
+      },
+      {
+        "id": 44,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 45,
+        "word": "看到",
+        "pinyin": "kàndào",
+        "meaning": "ver (chegar a ver, conseguir ver)"
+      },
+      {
+        "id": 46,
+        "word": "演出",
+        "pinyin": "yǎnchū",
+        "meaning": "apresentação, espetáculo, performance"
+      }
+    ],
+    "id": "local-1772297205137-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你下周不是要去北京吗？北京有个地方叫“什刹海皮影主题酒店”。你可以去那里体验一下。",
+    "pinyin": "nǐ xià zhōu búshì yào qù Běijīng ma? Běijīng yǒu ge dìfāng jiào “Shíchàhǎi Píyǐng Zhǔtí Jiǔdiàn”. nǐ kěyǐ qù nàlǐ tǐyàn yīxià.",
+    "translation": "Você não vai a Pequim na próxima semana? Há um lugar em Pequim chamado 'Shichahai Shadow Play Theme Hotel'. Você pode ir lá para ter uma experiência.",
+    "tokens": [
+      "你",
+      "下周",
+      "不",
+      "是",
+      "要",
+      "去",
+      "北京",
+      "吗",
+      "？",
+      "北京",
+      "有",
+      "个",
+      "地方",
+      "叫",
+      "“",
+      "什刹海",
+      "皮影",
+      "主题",
+      "酒店",
+      "”",
+      "。",
+      "你",
+      "可以",
+      "去",
+      "那里",
+      "体验",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "下周",
+        "pinyin": "xià zhōu",
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 48,
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é / não é verdade que... (em pergunta retórica)"
+      },
+      {
+        "id": 49,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer, ir (fazer algo), precisar"
+      },
+      {
+        "id": 50,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 51,
+        "word": "北京",
+        "pinyin": "Běijīng",
+        "meaning": "Pequim"
+      },
+      {
+        "id": 52,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, existir"
+      },
+      {
+        "id": 53,
+        "word": "叫",
+        "pinyin": "jiào",
+        "meaning": "chamar, ser chamado"
+      },
+      {
+        "id": 54,
+        "word": "什刹海",
+        "pinyin": "Shíchàhǎi",
+        "meaning": "Shichahai (região histórica em Pequim)"
+      },
+      {
+        "id": 55,
+        "word": "主题酒店",
+        "pinyin": "zhǔtí jiǔdiàn",
+        "meaning": "hotel temático"
+      },
+      {
+        "id": 56,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, estar autorizado"
+      },
+      {
+        "id": 57,
+        "word": "那里",
+        "pinyin": "nàlǐ",
+        "meaning": "lá"
+      },
+      {
+        "id": 58,
+        "word": "体验",
+        "pinyin": "tǐyàn",
+        "meaning": "experimentar, vivenciar"
+      },
+      {
+        "id": 59,
+        "word": "一下",
+        "pinyin": "yīxià",
+        "meaning": "um pouco, um momento (usado após verbo para indicar brevemente)"
+      }
+    ],
+    "id": "local-1772297205137-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我一定要去。不知道我能不能学着表演皮影戏。",
+    "pinyin": "wǒ yīdìng yào qù. bù zhīdào wǒ néng bùnéng xuézhe biǎoyǎn píyǐngxì.",
+    "translation": "Eu definitivamente tenho que ir. Não sei se consigo aprender a fazer teatro de sombras.",
+    "tokens": [
+      "我",
+      "一定",
+      "要",
+      "去",
+      "。",
+      "不",
+      "知道",
+      "我",
+      "能",
+      "不",
+      "能",
+      "学",
+      "着",
+      "表演",
+      "皮影戏",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 60,
+        "word": "一定",
+        "pinyin": "yīdìng",
+        "meaning": "definitivamente, com certeza"
+      },
+      {
+        "id": 61,
+        "word": "不知道",
+        "pinyin": "bù zhīdào",
+        "meaning": "não saber"
+      },
+      {
+        "id": 62,
+        "word": "能不能",
+        "pinyin": "néng bùnéng",
+        "meaning": "pode ou não pode? / consegue ou não consegue?"
+      },
+      {
+        "id": 63,
+        "word": "学着",
+        "pinyin": "xuézhe",
+        "meaning": "aprender a fazer, imitar para aprender"
+      },
+      {
+        "id": 64,
+        "word": "表演",
+        "pinyin": "biǎoyǎn",
+        "meaning": "apresentar, atuar, performar"
+      }
+    ],
+    "id": "local-1772297205137-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "没问题。我的美国朋友就制作过他自己的皮影戏。下次我介绍你认识他。",
+    "pinyin": "méi wèntí. wǒ de Měiguó péngyǒu jiù zhìzuòguo tā zìjǐ de píyǐngxì. xià cì wǒ jièshào nǐ rènshi tā.",
+    "translation": "Sem problema. Meu amigo americano já fez seu próprio teatro de sombras. Da próxima vez, eu te apresento a ele.",
+    "tokens": [
+      "没",
+      "问题",
+      "。",
+      "我",
+      "的",
+      "美国",
+      "朋友",
+      "就",
+      "制作",
+      "过",
+      "他",
+      "自己",
+      "的",
+      "皮影戏",
+      "。",
+      "下次",
+      "我",
+      "介绍",
+      "你",
+      "认识",
+      "他",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 65,
+        "word": "没问题",
+        "pinyin": "méi wèntí",
+        "meaning": "sem problema, está bem"
+      },
+      {
+        "id": 66,
+        "word": "美国",
+        "pinyin": "Měiguó",
+        "meaning": "Estados Unidos da América"
+      },
+      {
+        "id": 67,
+        "word": "朋友",
+        "pinyin": "péngyǒu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 68,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então, justamente, precisamente"
+      },
+      {
+        "id": 69,
+        "word": "制作",
+        "pinyin": "zhìzuò",
+        "meaning": "produzir, fabricar"
+      },
+      {
+        "id": 70,
+        "word": "自己",
+        "pinyin": "zìjǐ",
+        "meaning": "próprio, a si mesmo"
+      },
+      {
+        "id": 71,
+        "word": "下次",
+        "pinyin": "xià cì",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 72,
+        "word": "介绍",
+        "pinyin": "jièshào",
+        "meaning": "apresentar"
+      },
+      {
+        "id": 73,
+        "word": "认识",
+        "pinyin": "rènshi",
+        "meaning": "conhecer (pessoas)"
+      },
+      {
+        "id": 74,
+        "word": "他",
+        "pinyin": "tā",
+        "meaning": "ele"
+      }
+    ],
+    "id": "local-1772297205137-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好，那就这么定了。",
+    "pinyin": "hǎo, nà jiù zhème dìng le.",
+    "translation": "Ótimo, então está combinado.",
+    "tokens": [
+      "好",
+      "，",
+      "那",
+      "就",
+      "这么",
+      "定",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 75,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bom, bem, ok"
+      },
+      {
+        "id": 76,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 77,
+        "word": "这么",
+        "pinyin": "zhème",
+        "meaning": "assim, desta forma"
+      },
+      {
+        "id": 78,
+        "word": "定了",
+        "pinyin": "dìng le",
+        "meaning": "decidido, combinado, fixado"
+      }
+    ],
+    "id": "local-1772297205137-12",
+    "language": "Chinês"
+  }
+]

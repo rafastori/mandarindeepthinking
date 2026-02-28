@@ -1,0 +1,680 @@
+[
+  {
+    "chinese": "A: Lili, es-tu libre dimanche prochain ? Peux-tu venir chez moi pour m'apprendre à faire un gâteau ?",
+    "pinyin": null,
+    "translation": "A: Lili, você está livre no próximo domingo? Você pode vir na minha casa para me ensinar a fazer um bolo?",
+    "tokens": [
+      "A:",
+      "Lili",
+      ",",
+      "es-tu",
+      "libre",
+      "dimanche",
+      "prochain",
+      "?",
+      "Peux-tu",
+      "venir",
+      "chez",
+      "moi",
+      "pour",
+      "m'apprendre",
+      "à",
+      "faire",
+      "un",
+      "gâteau",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lili",
+        "pinyin": null,
+        "meaning": "Lili"
+      },
+      {
+        "id": 2,
+        "word": "es-tu",
+        "pinyin": null,
+        "meaning": "você está"
+      },
+      {
+        "id": 3,
+        "word": "libre",
+        "pinyin": null,
+        "meaning": "livre"
+      },
+      {
+        "id": 4,
+        "word": "dimanche prochain",
+        "pinyin": null,
+        "meaning": "próximo domingo"
+      },
+      {
+        "id": 5,
+        "word": "Peux-tu",
+        "pinyin": null,
+        "meaning": "Você pode"
+      },
+      {
+        "id": 6,
+        "word": "venir",
+        "pinyin": null,
+        "meaning": "vir"
+      },
+      {
+        "id": 7,
+        "word": "chez moi",
+        "pinyin": null,
+        "meaning": "na minha casa"
+      },
+      {
+        "id": 8,
+        "word": "m'apprendre",
+        "pinyin": null,
+        "meaning": "me ensinar"
+      },
+      {
+        "id": 9,
+        "word": "faire un gâteau",
+        "pinyin": null,
+        "meaning": "fazer um bolo"
+      }
+    ],
+    "id": "local-1772296578100-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. Pourquoi veux-tu faire un gâteau tout d'un coup ?",
+    "pinyin": null,
+    "translation": "B: Sim. Por que você quer fazer um bolo de repente?",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "Pourquoi",
+      "veux-tu",
+      "faire",
+      "un",
+      "gâteau",
+      "tout",
+      "d'un",
+      "coup",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Pourquoi",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "veux-tu",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 4,
+        "word": "faire un gâteau",
+        "pinyin": null,
+        "meaning": "fazer um bolo"
+      },
+      {
+        "id": 5,
+        "word": "tout d'un coup",
+        "pinyin": null,
+        "meaning": "de repente"
+      }
+    ],
+    "id": "local-1772296578100-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Le mois prochain, c'est l'anniversaire de mon petit ami. Je veux lui faire une surprise.",
+    "pinyin": null,
+    "translation": "A: No próximo mês, é o aniversário do meu namorado. Eu quero fazer uma surpresa para ele.",
+    "tokens": [
+      "A:",
+      "Le",
+      "mois",
+      "prochain",
+      ",",
+      "c'est",
+      "l'anniversaire",
+      "de",
+      "mon",
+      "petit",
+      "ami",
+      ".",
+      "Je",
+      "veux",
+      "lui",
+      "faire",
+      "une",
+      "surprise",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mois prochain",
+        "pinyin": null,
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "l'anniversaire",
+        "pinyin": null,
+        "meaning": "o aniversário"
+      },
+      {
+        "id": 3,
+        "word": "petit ami",
+        "pinyin": null,
+        "meaning": "namorado"
+      },
+      {
+        "id": 4,
+        "word": "veux",
+        "pinyin": null,
+        "meaning": "quero"
+      },
+      {
+        "id": 5,
+        "word": "faire une surprise",
+        "pinyin": null,
+        "meaning": "fazer uma surpresa"
+      }
+    ],
+    "id": "local-1772296578100-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Quel genre de gâteau veux-tu faire ?",
+    "pinyin": null,
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "B:",
+      "Quel",
+      "genre",
+      "de",
+      "gâteau",
+      "veux-tu",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quel genre de",
+        "pinyin": null,
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "gâteau",
+        "pinyin": null,
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "veux-tu",
+        "pinyin": null,
+        "meaning": "você quer"
+      },
+      {
+        "id": 4,
+        "word": "faire",
+        "pinyin": null,
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772296578100-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'aimerais en faire un simple.",
+    "pinyin": null,
+    "translation": "A: Eu gostaria de fazer um simples.",
+    "tokens": [
+      "A:",
+      "J'aimerais",
+      "en",
+      "faire",
+      "un",
+      "simple",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'aimerais",
+        "pinyin": null,
+        "meaning": "Eu gostaria"
+      },
+      {
+        "id": 2,
+        "word": "en",
+        "pinyin": null,
+        "meaning": "dele/disso (referindo-se ao bolo)"
+      },
+      {
+        "id": 3,
+        "word": "faire",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 4,
+        "word": "simple",
+        "pinyin": null,
+        "meaning": "simples"
+      }
+    ],
+    "id": "local-1772296578100-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, faisons un gâteau chiffon. Ce genre de gâteau est très léger. Tu peux y étaler de la confiture et le manger. Ça peut aussi être un gâteau d'anniversaire. C'est un gâteau de base.",
+    "pinyin": null,
+    "translation": "B: Então, vamos fazer um bolo chiffon. Esse tipo de bolo é muito leve. Você pode espalhar geleia nele e comê-lo. Também pode ser um bolo de aniversário. É um bolo de base.",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "faisons",
+      "un",
+      "gâteau",
+      "chiffon",
+      ".",
+      "Ce",
+      "genre",
+      "de",
+      "gâteau",
+      "est",
+      "très",
+      "léger",
+      ".",
+      "Tu",
+      "peux",
+      "y",
+      "étaler",
+      "de",
+      "la",
+      "confiture",
+      "et",
+      "le",
+      "manger",
+      ".",
+      "Ça",
+      "peut",
+      "aussi",
+      "être",
+      "un",
+      "gâteau",
+      "d'anniversaire",
+      ".",
+      "C'est",
+      "un",
+      "gâteau",
+      "de",
+      "base",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "faisons",
+        "pinyin": null,
+        "meaning": "façamos/vamos fazer"
+      },
+      {
+        "id": 3,
+        "word": "un gâteau chiffon",
+        "pinyin": null,
+        "meaning": "um bolo chiffon"
+      },
+      {
+        "id": 4,
+        "word": "genre de gâteau",
+        "pinyin": null,
+        "meaning": "tipo de bolo"
+      },
+      {
+        "id": 5,
+        "word": "très léger",
+        "pinyin": null,
+        "meaning": "muito leve"
+      },
+      {
+        "id": 6,
+        "word": "Tu peux",
+        "pinyin": null,
+        "meaning": "Você pode"
+      },
+      {
+        "id": 7,
+        "word": "étaler",
+        "pinyin": null,
+        "meaning": "espalhar"
+      },
+      {
+        "id": 8,
+        "word": "confiture",
+        "pinyin": null,
+        "meaning": "geleia"
+      },
+      {
+        "id": 9,
+        "word": "manger",
+        "pinyin": null,
+        "meaning": "comer"
+      },
+      {
+        "id": 10,
+        "word": "Ça peut",
+        "pinyin": null,
+        "meaning": "Isso pode"
+      },
+      {
+        "id": 11,
+        "word": "aussi",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 12,
+        "word": "gâteau d'anniversaire",
+        "pinyin": null,
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 13,
+        "word": "gâteau de base",
+        "pinyin": null,
+        "meaning": "bolo de base"
+      }
+    ],
+    "id": "local-1772296578100-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: D'accord. D'accord. Que dois-je préparer ?",
+    "pinyin": null,
+    "translation": "A: Certo. Certo. O que devo preparar?",
+    "tokens": [
+      "A:",
+      "D'accord",
+      ".",
+      "D'accord",
+      ".",
+      "Que",
+      "dois-je",
+      "préparer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "Certo/De acordo"
+      },
+      {
+        "id": 2,
+        "word": "Que dois-je",
+        "pinyin": null,
+        "meaning": "O que devo"
+      },
+      {
+        "id": 3,
+        "word": "préparer",
+        "pinyin": null,
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772296578100-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu dois acheter les ingrédients : 100 grammes de farine à gâteau, 5 œufs, 40 grammes d'huile, 70 grammes de sucre cristallisé et 40 grammes de lait.",
+    "pinyin": null,
+    "translation": "B: Você deve comprar os ingredientes: 100 gramas de farinha para bolo, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar cristal e 40 gramas de leite.",
+    "tokens": [
+      "B:",
+      "Tu",
+      "dois",
+      "acheter",
+      "les",
+      "ingrédients",
+      ":",
+      "100",
+      "grammes",
+      "de",
+      "farine",
+      "à",
+      "gâteau",
+      ",",
+      "5",
+      "œufs",
+      ",",
+      "40",
+      "grammes",
+      "d'huile",
+      ",",
+      "70",
+      "grammes",
+      "de",
+      "sucre",
+      "cristallisé",
+      "et",
+      "40",
+      "grammes",
+      "de",
+      "lait",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tu dois",
+        "pinyin": null,
+        "meaning": "Você deve"
+      },
+      {
+        "id": 2,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "ingrédients",
+        "pinyin": null,
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 4,
+        "word": "grammes",
+        "pinyin": null,
+        "meaning": "gramas"
+      },
+      {
+        "id": 5,
+        "word": "farine à gâteau",
+        "pinyin": null,
+        "meaning": "farinha para bolo"
+      },
+      {
+        "id": 6,
+        "word": "œufs",
+        "pinyin": null,
+        "meaning": "ovos"
+      },
+      {
+        "id": 7,
+        "word": "huile",
+        "pinyin": null,
+        "meaning": "óleo"
+      },
+      {
+        "id": 8,
+        "word": "sucre cristallisé",
+        "pinyin": null,
+        "meaning": "açúcar cristal"
+      },
+      {
+        "id": 9,
+        "word": "lait",
+        "pinyin": null,
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296578100-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Quels outils ?",
+    "pinyin": null,
+    "translation": "A: Quais ferramentas?",
+    "tokens": [
+      "A:",
+      "Quels",
+      "outils",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quels",
+        "pinyin": null,
+        "meaning": "Quais"
+      },
+      {
+        "id": 2,
+        "word": "outils",
+        "pinyin": null,
+        "meaning": "ferramentas"
+      }
+    ],
+    "id": "local-1772296578100-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Un batteur à œufs, un four et un moule à gâteau de 8 pouces.",
+    "pinyin": null,
+    "translation": "B: Uma batedeira de ovos, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "B:",
+      "Un",
+      "batteur",
+      "à",
+      "œufs",
+      ",",
+      "un",
+      "four",
+      "et",
+      "un",
+      "moule",
+      "à",
+      "gâteau",
+      "de",
+      "8",
+      "pouces",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "un batteur à œufs",
+        "pinyin": null,
+        "meaning": "uma batedeira de ovos"
+      },
+      {
+        "id": 2,
+        "word": "un four",
+        "pinyin": null,
+        "meaning": "um forno"
+      },
+      {
+        "id": 3,
+        "word": "un moule à gâteau",
+        "pinyin": null,
+        "meaning": "uma forma de bolo"
+      },
+      {
+        "id": 4,
+        "word": "pouces",
+        "pinyin": null,
+        "meaning": "polegadas"
+      }
+    ],
+    "id": "local-1772296578100-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: D'accord. J'irai acheter les affaires après le travail.",
+    "pinyin": null,
+    "translation": "A: Certo. Eu irei comprar as coisas depois do trabalho.",
+    "tokens": [
+      "A:",
+      "D'accord",
+      ".",
+      "J'irai",
+      "acheter",
+      "les",
+      "affaires",
+      "après",
+      "le",
+      "travail",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "Certo/De acordo"
+      },
+      {
+        "id": 2,
+        "word": "J'irai",
+        "pinyin": null,
+        "meaning": "Eu irei"
+      },
+      {
+        "id": 3,
+        "word": "acheter",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "les affaires",
+        "pinyin": null,
+        "meaning": "as coisas/os itens"
+      },
+      {
+        "id": 5,
+        "word": "après le travail",
+        "pinyin": null,
+        "meaning": "depois do trabalho"
+      }
+    ],
+    "id": "local-1772296578100-10",
+    "language": "Francês"
+  }
+]

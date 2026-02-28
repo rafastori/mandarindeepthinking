@@ -1,0 +1,587 @@
+[
+  {
+    "chinese": "A: 야, 이거 무슨 소프트웨어인데?",
+    "pinyin": "",
+    "translation": "A: Ei, que software é este?",
+    "tokens": [
+      "야",
+      ",",
+      "이거",
+      "무슨",
+      "소프트웨어",
+      "인데",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "야",
+        "pinyin": "",
+        "meaning": "Ei, (interjeição informal)"
+      },
+      {
+        "id": 2,
+        "word": "이거",
+        "pinyin": "",
+        "meaning": "isto, esta coisa"
+      },
+      {
+        "id": 3,
+        "word": "무슨",
+        "pinyin": "",
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 4,
+        "word": "소프트웨어",
+        "pinyin": "",
+        "meaning": "software"
+      }
+    ],
+    "id": "local-1772298373033-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 구글 드라이브.",
+    "pinyin": "",
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "구글",
+      "드라이브",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "구글",
+        "pinyin": "",
+        "meaning": "Google"
+      },
+      {
+        "id": 2,
+        "word": "드라이브",
+        "pinyin": "",
+        "meaning": "drive"
+      }
+    ],
+    "id": "local-1772298373033-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 처음 듣는데. 이건 뭐에 쓰는 거야?",
+    "pinyin": "",
+    "translation": "A: É a primeira vez que ouço. Para que serve isso?",
+    "tokens": [
+      "처음",
+      "듣는데",
+      ".",
+      "이건",
+      "뭐에",
+      "쓰는",
+      "거야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "처음",
+        "pinyin": "",
+        "meaning": "primeira vez, início"
+      },
+      {
+        "id": 2,
+        "word": "듣다",
+        "pinyin": "",
+        "meaning": "ouvir"
+      },
+      {
+        "id": 3,
+        "word": "이건",
+        "pinyin": "",
+        "meaning": "isto é"
+      },
+      {
+        "id": 4,
+        "word": "뭐",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 5,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "usar, escrever"
+      }
+    ],
+    "id": "local-1772298373033-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 유용하고 무료 온라인 문서 도구야. 파일을 저장하고 공유할 수 있어.",
+    "pinyin": "",
+    "translation": "B: É uma ferramenta de documento online muito útil e gratuita. Você pode armazenar e compartilhar arquivos.",
+    "tokens": [
+      "정말",
+      "유용하고",
+      "무료",
+      "온라인",
+      "문서",
+      "도구야",
+      ".",
+      "파일을",
+      "저장하고",
+      "공유할",
+      "수",
+      "있어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 2,
+        "word": "유용하다",
+        "pinyin": "",
+        "meaning": "ser útil"
+      },
+      {
+        "id": 3,
+        "word": "무료",
+        "pinyin": "",
+        "meaning": "gratuito"
+      },
+      {
+        "id": 4,
+        "word": "온라인",
+        "pinyin": "",
+        "meaning": "online"
+      },
+      {
+        "id": 5,
+        "word": "문서",
+        "pinyin": "",
+        "meaning": "documento"
+      },
+      {
+        "id": 6,
+        "word": "도구",
+        "pinyin": "",
+        "meaning": "ferramenta"
+      },
+      {
+        "id": 7,
+        "word": "파일",
+        "pinyin": "",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 8,
+        "word": "저장하다",
+        "pinyin": "",
+        "meaning": "salvar, armazenar"
+      },
+      {
+        "id": 9,
+        "word": "공유하다",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 10,
+        "word": "-고",
+        "pinyin": "",
+        "meaning": "(conjunção 'e')"
+      },
+      {
+        "id": 11,
+        "word": "-할 수 있다",
+        "pinyin": "",
+        "meaning": "poder fazer, ser capaz de fazer"
+      }
+    ],
+    "id": "local-1772298373033-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 편리해?",
+    "pinyin": "",
+    "translation": "A: É conveniente?",
+    "tokens": [
+      "편리해",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "편리하다",
+        "pinyin": "",
+        "meaning": "ser conveniente"
+      }
+    ],
+    "id": "local-1772298373033-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아주 편리해. 요즘 이런 종류의 클라우드 저장 소프트웨어가 많아. 예를 들어 바이두 클라우드, 스카이드라이브, 드롭박스 등이 있지.",
+    "pinyin": "",
+    "translation": "B: É muito conveniente. Hoje em dia, há muitos softwares de armazenamento em nuvem desse tipo. Por exemplo, Baidu Cloud, SkyDrive, Dropbox, etc.",
+    "tokens": [
+      "아주",
+      "편리해",
+      ".",
+      "요즘",
+      "이런",
+      "종류의",
+      "클라우드",
+      "저장",
+      "소프트웨어가",
+      "많아",
+      ".",
+      "예를",
+      "들어",
+      "바이두",
+      "클라우드",
+      ",",
+      "스카이드라이브",
+      ",",
+      "드롭박스",
+      "등이",
+      "있지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아주",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "편리하다",
+        "pinyin": "",
+        "meaning": "ser conveniente"
+      },
+      {
+        "id": 3,
+        "word": "요즘",
+        "pinyin": "",
+        "meaning": "hoje em dia, ultimamente"
+      },
+      {
+        "id": 4,
+        "word": "이런",
+        "pinyin": "",
+        "meaning": "desse tipo de, tal"
+      },
+      {
+        "id": 5,
+        "word": "종류",
+        "pinyin": "",
+        "meaning": "tipo, espécie"
+      },
+      {
+        "id": 6,
+        "word": "클라우드",
+        "pinyin": "",
+        "meaning": "nuvem (cloud)"
+      },
+      {
+        "id": 7,
+        "word": "저장",
+        "pinyin": "",
+        "meaning": "armazenamento"
+      },
+      {
+        "id": 8,
+        "word": "소프트웨어",
+        "pinyin": "",
+        "meaning": "software"
+      },
+      {
+        "id": 9,
+        "word": "많다",
+        "pinyin": "",
+        "meaning": "ter muito, ser numeroso"
+      },
+      {
+        "id": 10,
+        "word": "예를 들다",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 11,
+        "word": "바이두 클라우드",
+        "pinyin": "",
+        "meaning": "Baidu Cloud"
+      },
+      {
+        "id": 12,
+        "word": "스카이드라이브",
+        "pinyin": "",
+        "meaning": "SkyDrive"
+      },
+      {
+        "id": 13,
+        "word": "드롭박스",
+        "pinyin": "",
+        "meaning": "Dropbox"
+      },
+      {
+        "id": 14,
+        "word": "등",
+        "pinyin": "",
+        "meaning": "e outros, etc."
+      },
+      {
+        "id": 15,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "haver, existir"
+      }
+    ],
+    "id": "local-1772298373033-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 클라우드 저장소가 뭐야?",
+    "pinyin": "",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "클라우드",
+      "저장소가",
+      "뭐야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "클라우드",
+        "pinyin": "",
+        "meaning": "nuvem (cloud)"
+      },
+      {
+        "id": 2,
+        "word": "저장소",
+        "pinyin": "",
+        "meaning": "local de armazenamento"
+      },
+      {
+        "id": 3,
+        "word": "뭐",
+        "pinyin": "",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772298373033-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 간단히 말하면, 네 파일을 구글 클라우드 드라이브에 올리는 거야. 그럼 로그인만 하면 다른 기기에서 이 문서들을 사용할 수 있어.",
+    "pinyin": "",
+    "translation": "B: Simplificando, você faz o upload dos seus arquivos para o Google Cloud Drive. Então, basta fazer login e você pode usar esses documentos em outros dispositivos.",
+    "tokens": [
+      "간단히",
+      "말하면",
+      ",",
+      "네",
+      "파일을",
+      "구글",
+      "클라우드",
+      "드라이브에",
+      "올리는",
+      "거야",
+      ".",
+      "그럼",
+      "로그인만",
+      "하면",
+      "다른",
+      "기기에서",
+      "이",
+      "문서들을",
+      "사용할",
+      "수",
+      "있어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "간단히",
+        "pinyin": "",
+        "meaning": "simplesmente, de forma simples"
+      },
+      {
+        "id": 2,
+        "word": "말하다",
+        "pinyin": "",
+        "meaning": "falar, dizer"
+      },
+      {
+        "id": 3,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "seu (informal)"
+      },
+      {
+        "id": 4,
+        "word": "파일",
+        "pinyin": "",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 5,
+        "word": "구글",
+        "pinyin": "",
+        "meaning": "Google"
+      },
+      {
+        "id": 6,
+        "word": "클라우드",
+        "pinyin": "",
+        "meaning": "nuvem (cloud)"
+      },
+      {
+        "id": 7,
+        "word": "드라이브",
+        "pinyin": "",
+        "meaning": "drive"
+      },
+      {
+        "id": 8,
+        "word": "올리다",
+        "pinyin": "",
+        "meaning": "fazer upload, subir"
+      },
+      {
+        "id": 9,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 10,
+        "word": "로그인",
+        "pinyin": "",
+        "meaning": "login"
+      },
+      {
+        "id": 11,
+        "word": "-만 하다",
+        "pinyin": "",
+        "meaning": "apenas fazer"
+      },
+      {
+        "id": 12,
+        "word": "다른",
+        "pinyin": "",
+        "meaning": "outro, diferente"
+      },
+      {
+        "id": 13,
+        "word": "기기",
+        "pinyin": "",
+        "meaning": "dispositivo, aparelho"
+      },
+      {
+        "id": 14,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "este, estes"
+      },
+      {
+        "id": 15,
+        "word": "문서",
+        "pinyin": "",
+        "meaning": "documento"
+      },
+      {
+        "id": 16,
+        "word": "사용하다",
+        "pinyin": "",
+        "meaning": "usar"
+      }
+    ],
+    "id": "local-1772298373033-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 메모리를 쓸 필요가 없겠네. 정말 편리하다.",
+    "pinyin": "",
+    "translation": "A: Então, não haverá necessidade de usar a memória. É realmente conveniente.",
+    "tokens": [
+      "그럼",
+      "메모리를",
+      "쓸",
+      "필요가",
+      "없겠네",
+      ".",
+      "정말",
+      "편리하다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "메모리",
+        "pinyin": "",
+        "meaning": "memória"
+      },
+      {
+        "id": 3,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "필요",
+        "pinyin": "",
+        "meaning": "necessidade"
+      },
+      {
+        "id": 5,
+        "word": "없다",
+        "pinyin": "",
+        "meaning": "não ter, não haver"
+      },
+      {
+        "id": 6,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 7,
+        "word": "편리하다",
+        "pinyin": "",
+        "meaning": "ser conveniente"
+      },
+      {
+        "id": 8,
+        "word": "-ㄹ 필요가 없다",
+        "pinyin": "",
+        "meaning": "não precisar fazer"
+      },
+      {
+        "id": 9,
+        "word": "-겠네",
+        "pinyin": "",
+        "meaning": "(sufixo para 'acho que', 'parece que')"
+      }
+    ],
+    "id": "local-1772298373033-8",
+    "language": "Coreano"
+  }
+]

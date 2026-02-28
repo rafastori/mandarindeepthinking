@@ -1,0 +1,759 @@
+[
+  {
+    "chinese": "A: 안녕하세요, 왕 부장님. 이 디자인 시안 어떻게 생각하세요?",
+    "pinyin": "",
+    "translation": "A: Olá, Chefe Wang. O que você acha desta proposta de design?",
+    "tokens": [
+      "안녕하세요",
+      ",",
+      "왕",
+      "부장님",
+      ".",
+      "이",
+      "디자인",
+      "시안",
+      "어떻게",
+      "생각하세요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": "annyeonghaseyo",
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "왕",
+        "pinyin": "wang",
+        "meaning": "Wang (sobrenome)"
+      },
+      {
+        "id": 3,
+        "word": "부장님",
+        "pinyin": "bujangnim",
+        "meaning": "Chefe de departamento"
+      },
+      {
+        "id": 4,
+        "word": "디자인",
+        "pinyin": "dijain",
+        "meaning": "Design"
+      },
+      {
+        "id": 5,
+        "word": "시안",
+        "pinyin": "sian",
+        "meaning": "Proposta, rascunho"
+      },
+      {
+        "id": 6,
+        "word": "어떻게",
+        "pinyin": "eotteoke",
+        "meaning": "Como"
+      },
+      {
+        "id": 7,
+        "word": "생각하세요",
+        "pinyin": "saenggakhaseyo",
+        "meaning": "Você pensa? / O que você acha? (formal)"
+      }
+    ],
+    "id": "local-1772299785296-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 나쁘지 않아 보이는데, 항상 제가 상상했던 것과는 다르네요.",
+    "pinyin": "",
+    "translation": "B: Não parece ruim, mas é sempre diferente do que eu imaginei.",
+    "tokens": [
+      "나쁘지",
+      "않아",
+      "보이는데",
+      ",",
+      "항상",
+      "제가",
+      "상상했던",
+      "것과는",
+      "다르네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나쁘지 않아 보이다",
+        "pinyin": "nappeuji ana boida",
+        "meaning": "Não parecer ruim"
+      },
+      {
+        "id": 2,
+        "word": "항상",
+        "pinyin": "hangsang",
+        "meaning": "Sempre"
+      },
+      {
+        "id": 3,
+        "word": "상상했던 것",
+        "pinyin": "sangsanghaetdeon geot",
+        "meaning": "O que eu imaginei"
+      },
+      {
+        "id": 4,
+        "word": "다르네요",
+        "pinyin": "dareneyo",
+        "meaning": "É diferente (observação/surpresa)"
+      }
+    ],
+    "id": "local-1772299785296-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 어떤 의견이든 말씀해주세요.",
+    "pinyin": "",
+    "translation": "A: Por favor, diga qualquer opinião.",
+    "tokens": [
+      "어떤",
+      "의견이든",
+      "말씀해주세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "Qual, que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "의견",
+        "pinyin": "uigyeon",
+        "meaning": "Opinião"
+      },
+      {
+        "id": 3,
+        "word": "말씀해주세요",
+        "pinyin": "malsseumhaejuseyo",
+        "meaning": "Por favor, diga (formal)"
+      }
+    ],
+    "id": "local-1772299785296-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정확히 뭔지는 모르겠어요. 뭔가 빠진 느낌이에요.",
+    "pinyin": "",
+    "translation": "B: Não sei exatamente o que é. Parece que algo está faltando.",
+    "tokens": [
+      "정확히",
+      "뭔지는",
+      "모르겠어요",
+      ".",
+      "뭔가",
+      "빠진",
+      "느낌이에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정확히",
+        "pinyin": "jeonghwakhi",
+        "meaning": "Exatamente"
+      },
+      {
+        "id": 2,
+        "word": "뭔지",
+        "pinyin": "mwonji",
+        "meaning": "O que é"
+      },
+      {
+        "id": 3,
+        "word": "모르겠어요",
+        "pinyin": "moreugesseoyo",
+        "meaning": "Não sei"
+      },
+      {
+        "id": 4,
+        "word": "뭔가",
+        "pinyin": "mwonga",
+        "meaning": "Algo"
+      },
+      {
+        "id": 5,
+        "word": "빠지다",
+        "pinyin": "ppajida",
+        "meaning": "Faltar, cair"
+      },
+      {
+        "id": 6,
+        "word": "느낌",
+        "pinyin": "neukkim",
+        "meaning": "Sensação, sentimento"
+      }
+    ],
+    "id": "local-1772299785296-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 지난번에 스타일이 너무 단순하다고 말씀하셔서, 이번에는 시각적 요소를 더 추가했어요. 사용자 인터랙션도 더 복잡해졌고요. 한번 보세요.",
+    "pinyin": "",
+    "translation": "A: Da última vez você disse que o estilo era muito simples, então desta vez adicionei mais elementos visuais. A interação do usuário também ficou mais complexa. Dê uma olhada.",
+    "tokens": [
+      "지난번에",
+      "스타일이",
+      "너무",
+      "단순하다고",
+      "말씀하셔서",
+      ",",
+      "이번에는",
+      "시각적",
+      "요소를",
+      "더",
+      "추가했어요",
+      ".",
+      "사용자",
+      "인터랙션도",
+      "더",
+      "복잡해졌고요",
+      ".",
+      "한번",
+      "보세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "지난번",
+        "pinyin": "jinanbeon",
+        "meaning": "Última vez"
+      },
+      {
+        "id": 2,
+        "word": "스타일",
+        "pinyin": "seutail",
+        "meaning": "Estilo"
+      },
+      {
+        "id": 3,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "Muito, demais"
+      },
+      {
+        "id": 4,
+        "word": "단순하다",
+        "pinyin": "dansunhada",
+        "meaning": "Ser simples"
+      },
+      {
+        "id": 5,
+        "word": "말씀하시다",
+        "pinyin": "malsseumhasida",
+        "meaning": "Dizer (honorífico)"
+      },
+      {
+        "id": 6,
+        "word": "이번",
+        "pinyin": "ibeon",
+        "meaning": "Esta vez"
+      },
+      {
+        "id": 7,
+        "word": "시각적",
+        "pinyin": "sigakjeok",
+        "meaning": "Visual"
+      },
+      {
+        "id": 8,
+        "word": "요소",
+        "pinyin": "yoso",
+        "meaning": "Elemento"
+      },
+      {
+        "id": 9,
+        "word": "추가하다",
+        "pinyin": "chugahada",
+        "meaning": "Adicionar"
+      },
+      {
+        "id": 10,
+        "word": "사용자",
+        "pinyin": "sayongja",
+        "meaning": "Usuário"
+      },
+      {
+        "id": 11,
+        "word": "인터랙션",
+        "pinyin": "inteoraeksyeon",
+        "meaning": "Interação"
+      },
+      {
+        "id": 12,
+        "word": "복잡하다",
+        "pinyin": "bokjapada",
+        "meaning": "Ser complexo"
+      },
+      {
+        "id": 13,
+        "word": "한번",
+        "pinyin": "hanbeon",
+        "meaning": "Uma vez (aqui: 'dê uma olhada')"
+      },
+      {
+        "id": 14,
+        "word": "보세요",
+        "pinyin": "boseyo",
+        "meaning": "Olhe (formal)"
+      }
+    ],
+    "id": "local-1772299785296-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 너무 복잡해요. 사용자들이 싫어하지 않을까요?",
+    "pinyin": "",
+    "translation": "B: Está muito complexo. Os usuários não vão gostar?",
+    "tokens": [
+      "너무",
+      "복잡해요",
+      ".",
+      "사용자들이",
+      "싫어하지",
+      "않을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "Muito, demais"
+      },
+      {
+        "id": 2,
+        "word": "복잡하다",
+        "pinyin": "bokjapada",
+        "meaning": "Ser complexo"
+      },
+      {
+        "id": 3,
+        "word": "사용자",
+        "pinyin": "sayongja",
+        "meaning": "Usuário"
+      },
+      {
+        "id": 4,
+        "word": "싫어하다",
+        "pinyin": "shireohada",
+        "meaning": "Desgostar, odiar"
+      },
+      {
+        "id": 5,
+        "word": "~지 않을까요?",
+        "pinyin": "~ji aneulkkayo?",
+        "meaning": "Não será...? (pergunta retórica)"
+      }
+    ],
+    "id": "local-1772299785296-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 이 부분을 수정해서 복잡함을 좀 덜어낼게요.",
+    "pinyin": "",
+    "translation": "A: Então, vou revisar esta parte para reduzir a complexidade.",
+    "tokens": [
+      "그럼",
+      "이",
+      "부분을",
+      "수정해서",
+      "복잡함을",
+      "좀",
+      "덜어낼게요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "부분",
+        "pinyin": "bubun",
+        "meaning": "Parte"
+      },
+      {
+        "id": 3,
+        "word": "수정하다",
+        "pinyin": "sujeonghada",
+        "meaning": "Corrigir, revisar"
+      },
+      {
+        "id": 4,
+        "word": "복잡함",
+        "pinyin": "bokjapham",
+        "meaning": "Complexidade (substantivo)"
+      },
+      {
+        "id": 5,
+        "word": "좀",
+        "pinyin": "jom",
+        "meaning": "Um pouco"
+      },
+      {
+        "id": 6,
+        "word": "덜어내다",
+        "pinyin": "deoreonaeda",
+        "meaning": "Remover, tirar, reduzir"
+      }
+    ],
+    "id": "local-1772299785296-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이 색깔은...",
+    "pinyin": "",
+    "translation": "B: Esta cor...",
+    "tokens": [
+      "이",
+      "색깔은",
+      "..."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "색깔",
+        "pinyin": "saekkkal",
+        "meaning": "Cor"
+      }
+    ],
+    "id": "local-1772299785296-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이건 주황색이에요. 부장님이 좋아하시는 따뜻한 톤이요.",
+    "pinyin": "",
+    "translation": "A: Esta é a cor laranja. É um tom quente que o chefe gosta.",
+    "tokens": [
+      "이건",
+      "주황색이에요",
+      ".",
+      "부장님이",
+      "좋아하시는",
+      "따뜻한",
+      "톤이요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이건",
+        "pinyin": "igeon",
+        "meaning": "Isto é"
+      },
+      {
+        "id": 2,
+        "word": "주황색",
+        "pinyin": "juhwangsaek",
+        "meaning": "Cor laranja"
+      },
+      {
+        "id": 3,
+        "word": "부장님",
+        "pinyin": "bujangnim",
+        "meaning": "Chefe de departamento"
+      },
+      {
+        "id": 4,
+        "word": "좋아하시다",
+        "pinyin": "joahashida",
+        "meaning": "Gostar (honorífico)"
+      },
+      {
+        "id": 5,
+        "word": "따뜻하다",
+        "pinyin": "ttatteuthada",
+        "meaning": "Ser quente"
+      },
+      {
+        "id": 6,
+        "word": "톤",
+        "pinyin": "ton",
+        "meaning": "Tom"
+      }
+    ],
+    "id": "local-1772299785296-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 따뜻한 색은 좋아하지만, 이건 너무 밝은 것 같아요.",
+    "pinyin": "",
+    "translation": "B: Gosto de cores quentes, mas esta parece muito clara.",
+    "tokens": [
+      "따뜻한",
+      "색은",
+      "좋아하지만",
+      ",",
+      "이건",
+      "너무",
+      "밝은",
+      "것",
+      "같아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "따뜻하다",
+        "pinyin": "ttatteuthada",
+        "meaning": "Ser quente"
+      },
+      {
+        "id": 2,
+        "word": "색",
+        "pinyin": "saek",
+        "meaning": "Cor"
+      },
+      {
+        "id": 3,
+        "word": "좋아하다",
+        "pinyin": "joahada",
+        "meaning": "Gostar"
+      },
+      {
+        "id": 4,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "Muito, demais"
+      },
+      {
+        "id": 5,
+        "word": "밝다",
+        "pinyin": "bakda",
+        "meaning": "Ser claro, brilhante"
+      },
+      {
+        "id": 6,
+        "word": "~것 같아요",
+        "pinyin": "~geot gatayo",
+        "meaning": "Parece que, acho que"
+      }
+    ],
+    "id": "local-1772299785296-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 알겠습니다. 그럼 좀 더 크림색으로 바꿔볼까요? 어떠세요?",
+    "pinyin": "",
+    "translation": "A: Ah, entendi. Então, que tal mudarmos para um tom mais creme? O que você acha?",
+    "tokens": [
+      "아",
+      ",",
+      "알겠습니다",
+      ".",
+      "그럼",
+      "좀",
+      "더",
+      "크림색으로",
+      "바꿔볼까요",
+      "?",
+      "어떠세요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": "algesseumnida",
+        "meaning": "Entendi, compreendo"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "좀",
+        "pinyin": "jom",
+        "meaning": "Um pouco"
+      },
+      {
+        "id": 4,
+        "word": "더",
+        "pinyin": "deo",
+        "meaning": "Mais"
+      },
+      {
+        "id": 5,
+        "word": "크림색",
+        "pinyin": "keurimsaek",
+        "meaning": "Cor creme"
+      },
+      {
+        "id": 6,
+        "word": "바꾸다",
+        "pinyin": "bakkuda",
+        "meaning": "Mudar"
+      },
+      {
+        "id": 7,
+        "word": "~볼까요",
+        "pinyin": "~bolkkayo?",
+        "meaning": "Devemos tentar...? (sugestão)"
+      },
+      {
+        "id": 8,
+        "word": "어떠세요",
+        "pinyin": "eotteoseyo",
+        "meaning": "O que você acha? (formal)"
+      }
+    ],
+    "id": "local-1772299785296-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 괜찮네요. 그런데 벌써 5번째 버전이에요. 시간이 부족할 것 같아요. 그냥 잊고 첫 번째 버전을 사용하는 게 어때요?",
+    "pinyin": "",
+    "translation": "B: Está bom. Mas já é a 5ª versão. Acho que não teremos tempo suficiente. Que tal simplesmente esquecermos e usarmos a primeira versão?",
+    "tokens": [
+      "괜찮네요",
+      ".",
+      "그런데",
+      "벌써",
+      "5번째",
+      "버전이에요",
+      ".",
+      "시간이",
+      "부족할",
+      "것",
+      "같아요",
+      ".",
+      "그냥",
+      "잊고",
+      "첫",
+      "번째",
+      "버전을",
+      "사용하는",
+      "게",
+      "어때요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "괜찮다",
+        "pinyin": "gwaenchanhda",
+        "meaning": "Estar bom, ok"
+      },
+      {
+        "id": 2,
+        "word": "그런데",
+        "pinyin": "geureonde",
+        "meaning": "Mas, a propósito"
+      },
+      {
+        "id": 3,
+        "word": "벌써",
+        "pinyin": "beolsseo",
+        "meaning": "Já"
+      },
+      {
+        "id": 4,
+        "word": "번째",
+        "pinyin": "beonjjae",
+        "meaning": "Sufixo para ordinal (ex: 5ª)"
+      },
+      {
+        "id": 5,
+        "word": "버전",
+        "pinyin": "beojeon",
+        "meaning": "Versão"
+      },
+      {
+        "id": 6,
+        "word": "시간",
+        "pinyin": "sigan",
+        "meaning": "Tempo"
+      },
+      {
+        "id": 7,
+        "word": "부족하다",
+        "pinyin": "bujokhada",
+        "meaning": "Ser insuficiente, faltar"
+      },
+      {
+        "id": 8,
+        "word": "~것 같아요",
+        "pinyin": "~geot gatayo",
+        "meaning": "Parece que, acho que"
+      },
+      {
+        "id": 9,
+        "word": "그냥",
+        "pinyin": "geunyang",
+        "meaning": "Simplesmente, apenas"
+      },
+      {
+        "id": 10,
+        "word": "잊다",
+        "pinyin": "itta",
+        "meaning": "Esquecer"
+      },
+      {
+        "id": 11,
+        "word": "첫",
+        "pinyin": "cheot",
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 12,
+        "word": "사용하다",
+        "pinyin": "sayonghada",
+        "meaning": "Usar"
+      },
+      {
+        "id": 13,
+        "word": "~는 게 어때요?",
+        "pinyin": "~neun ge eottaeyo?",
+        "meaning": "Que tal fazer...?"
+      }
+    ],
+    "id": "local-1772299785296-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네? 네, 알겠습니다.",
+    "pinyin": "",
+    "translation": "A: O quê? Sim, entendi.",
+    "tokens": [
+      "네",
+      "?",
+      "네",
+      ",",
+      "알겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "ne",
+        "meaning": "Sim, o quê?"
+      },
+      {
+        "id": 2,
+        "word": "알겠습니다",
+        "pinyin": "algesseumnida",
+        "meaning": "Entendi, compreendo"
+      }
+    ],
+    "id": "local-1772299785296-12",
+    "language": "Coreano"
+  }
+]

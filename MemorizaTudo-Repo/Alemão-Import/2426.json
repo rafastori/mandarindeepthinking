@@ -1,0 +1,466 @@
+[
+  {
+    "chinese": "A: Hey, dein Computerbildschirm ist ja so hell. Findest du das nicht anstrengend für die Augen?",
+    "pinyin": "",
+    "translation": "A: Ei, sua tela de computador é tão brilhante. Você não acha isso cansativo para os olhos?",
+    "tokens": [
+      "Hey",
+      ",",
+      "dein",
+      "Computerbildschirm",
+      "ist",
+      "ja",
+      "so",
+      "hell",
+      ".",
+      "Findest",
+      "du",
+      "das",
+      "nicht",
+      "anstrengend",
+      "für",
+      "die",
+      "Augen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Computerbildschirm",
+        "pinyin": "",
+        "meaning": "tela de computador"
+      },
+      {
+        "id": 2,
+        "word": "hell",
+        "pinyin": "",
+        "meaning": "claro, brilhante"
+      },
+      {
+        "id": 3,
+        "word": "anstrengend",
+        "pinyin": "",
+        "meaning": "cansativo"
+      },
+      {
+        "id": 4,
+        "word": "Augen",
+        "pinyin": "",
+        "meaning": "olhos"
+      }
+    ],
+    "id": "local-1772292881765-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hm, das ist mir jetzt egal. Ich muss mich beeilen.",
+    "pinyin": "",
+    "translation": "B: Hm, isso me é indiferente agora. Eu preciso me apressar.",
+    "tokens": [
+      "Hm",
+      ",",
+      "das",
+      "ist",
+      "mir",
+      "jetzt",
+      "egal",
+      ".",
+      "Ich",
+      "muss",
+      "mich",
+      "beeilen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "egal sein",
+        "pinyin": "",
+        "meaning": "ser indiferente, não importar"
+      },
+      {
+        "id": 2,
+        "word": "beeilen",
+        "pinyin": "",
+        "meaning": "apressar-se"
+      }
+    ],
+    "id": "local-1772292881765-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dir ist es egal, aber mir nicht. Wenn es zu hell ist, kann ich nicht schlafen.",
+    "pinyin": "",
+    "translation": "A: Para você é indiferente, mas para mim não. Se está muito claro, não consigo dormir.",
+    "tokens": [
+      "Dir",
+      "ist",
+      "es",
+      "egal",
+      ",",
+      "aber",
+      "mir",
+      "nicht",
+      ".",
+      "Wenn",
+      "es",
+      "zu",
+      "hell",
+      "ist",
+      ",",
+      "kann",
+      "ich",
+      "nicht",
+      "schlafen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "egal sein",
+        "pinyin": "",
+        "meaning": "ser indiferente, não importar"
+      },
+      {
+        "id": 2,
+        "word": "zu hell",
+        "pinyin": "",
+        "meaning": "muito claro"
+      },
+      {
+        "id": 3,
+        "word": "schlafen",
+        "pinyin": "",
+        "meaning": "dormir"
+      }
+    ],
+    "id": "local-1772292881765-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Echt? Tut mir leid. Ich änder das. Wie stellt man eigentlich die Bildschirmhelligkeit ein? Zhenzhen, weißt du das?",
+    "pinyin": "",
+    "translation": "B: Sério? Sinto muito. Eu mudo isso. Como se ajusta a luminosidade da tela, afinal? Zhenzhen, você sabe?",
+    "tokens": [
+      "Echt",
+      "?",
+      "Tut",
+      "mir",
+      "leid",
+      ".",
+      "Ich",
+      "änder",
+      "das",
+      ".",
+      "Wie",
+      "stellt",
+      "man",
+      "eigentlich",
+      "die",
+      "Bildschirmhelligkeit",
+      "ein",
+      "?",
+      "Zhenzhen",
+      ",",
+      "weißt",
+      "du",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Echt?",
+        "pinyin": "",
+        "meaning": "Sério?"
+      },
+      {
+        "id": 2,
+        "word": "Tut mir leid",
+        "pinyin": "",
+        "meaning": "Sinto muito"
+      },
+      {
+        "id": 3,
+        "word": "ändern",
+        "pinyin": "",
+        "meaning": "mudar, alterar"
+      },
+      {
+        "id": 4,
+        "word": "einstellen",
+        "pinyin": "",
+        "meaning": "ajustar, configurar"
+      },
+      {
+        "id": 5,
+        "word": "eigentlich",
+        "pinyin": "",
+        "meaning": "afinal, na verdade"
+      },
+      {
+        "id": 6,
+        "word": "Bildschirmhelligkeit",
+        "pinyin": "",
+        "meaning": "luminosidade da tela"
+      }
+    ],
+    "id": "local-1772292881765-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich hab einen Desktop. Unten am Bildschirm ist ein Knopf, den man drücken kann. Wenn es ein Laptop ist, schau auf der Tastatur, ob es eine Taste mit einem Funktionssymbol gibt.",
+    "pinyin": "",
+    "translation": "A: Eu tenho um desktop. Na parte de baixo da tela tem um botão que se pode apertar. Se for um laptop, veja no teclado se há uma tecla com um símbolo de função.",
+    "tokens": [
+      "Ich",
+      "hab",
+      "einen",
+      "Desktop",
+      ".",
+      "Unten",
+      "am",
+      "Bildschirm",
+      "ist",
+      "ein",
+      "Knopf",
+      ",",
+      "den",
+      "man",
+      "drücken",
+      "kann",
+      ".",
+      "Wenn",
+      "es",
+      "ein",
+      "Laptop",
+      "ist",
+      ",",
+      "schau",
+      "auf",
+      "der",
+      "Tastatur",
+      ",",
+      "ob",
+      "es",
+      "eine",
+      "Taste",
+      "mit",
+      "einem",
+      "Funktionssymbol",
+      "gibt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Desktop",
+        "pinyin": "",
+        "meaning": "desktop (computador de mesa)"
+      },
+      {
+        "id": 2,
+        "word": "unten",
+        "pinyin": "",
+        "meaning": "embaixo, na parte inferior"
+      },
+      {
+        "id": 3,
+        "word": "Bildschirm",
+        "pinyin": "",
+        "meaning": "tela"
+      },
+      {
+        "id": 4,
+        "word": "Knopf",
+        "pinyin": "",
+        "meaning": "botão"
+      },
+      {
+        "id": 5,
+        "word": "drücken",
+        "pinyin": "",
+        "meaning": "apertar, pressionar"
+      },
+      {
+        "id": 6,
+        "word": "Laptop",
+        "pinyin": "",
+        "meaning": "laptop, notebook"
+      },
+      {
+        "id": 7,
+        "word": "schauen",
+        "pinyin": "",
+        "meaning": "olhar, ver"
+      },
+      {
+        "id": 8,
+        "word": "Tastatur",
+        "pinyin": "",
+        "meaning": "teclado"
+      },
+      {
+        "id": 9,
+        "word": "Taste",
+        "pinyin": "",
+        "meaning": "tecla"
+      },
+      {
+        "id": 10,
+        "word": "Funktionssymbol",
+        "pinyin": "",
+        "meaning": "símbolo de função"
+      }
+    ],
+    "id": "local-1772292881765-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Lass mich mal sehen. Der hier stellt den Kontrast ein, das hier ist die Farbe. Ach, das ist die Helligkeit. Okay, ich hab's so dunkel wie möglich gestellt. Ist es jetzt etwas besser?",
+    "pinyin": "",
+    "translation": "B: Deixe-me ver. Este aqui ajusta o contraste, este aqui é a cor. Ah, essa é a luminosidade. Ok, eu o deixei o mais escuro possível. Está um pouco melhor agora?",
+    "tokens": [
+      "Lass",
+      "mich",
+      "mal",
+      "sehen",
+      ".",
+      "Der",
+      "hier",
+      "stellt",
+      "den",
+      "Kontrast",
+      "ein",
+      ",",
+      "das",
+      "hier",
+      "ist",
+      "die",
+      "Farbe",
+      ".",
+      "Ach",
+      ",",
+      "das",
+      "ist",
+      "die",
+      "Helligkeit",
+      ".",
+      "Okay",
+      ",",
+      "ich",
+      "hab",
+      "'s",
+      "so",
+      "dunkel",
+      "wie",
+      "möglich",
+      "gestellt",
+      ".",
+      "Ist",
+      "es",
+      "jetzt",
+      "etwas",
+      "besser",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lass mich mal sehen",
+        "pinyin": "",
+        "meaning": "Deixe-me ver"
+      },
+      {
+        "id": 2,
+        "word": "einstellen",
+        "pinyin": "",
+        "meaning": "ajustar, configurar"
+      },
+      {
+        "id": 3,
+        "word": "Kontrast",
+        "pinyin": "",
+        "meaning": "contraste"
+      },
+      {
+        "id": 4,
+        "word": "Farbe",
+        "pinyin": "",
+        "meaning": "cor"
+      },
+      {
+        "id": 5,
+        "word": "Ach",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 6,
+        "word": "Helligkeit",
+        "pinyin": "",
+        "meaning": "luminosidade"
+      },
+      {
+        "id": 7,
+        "word": "dunkel",
+        "pinyin": "",
+        "meaning": "escuro"
+      },
+      {
+        "id": 8,
+        "word": "wie möglich",
+        "pinyin": "",
+        "meaning": "o mais possível"
+      },
+      {
+        "id": 9,
+        "word": "etwas besser",
+        "pinyin": "",
+        "meaning": "um pouco melhor"
+      }
+    ],
+    "id": "local-1772292881765-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Viel besser. Ich geh dann schlafen. Viel Erfolg!",
+    "pinyin": "",
+    "translation": "A: Muito melhor. Então vou dormir. Boa sorte!",
+    "tokens": [
+      "Viel",
+      "besser",
+      ".",
+      "Ich",
+      "geh",
+      "dann",
+      "schlafen",
+      ".",
+      "Viel",
+      "Erfolg",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Viel besser",
+        "pinyin": "",
+        "meaning": "Muito melhor"
+      },
+      {
+        "id": 2,
+        "word": "schlafen gehen",
+        "pinyin": "",
+        "meaning": "ir dormir"
+      },
+      {
+        "id": 3,
+        "word": "Viel Erfolg",
+        "pinyin": "",
+        "meaning": "Boa sorte! (literalmente: Muito sucesso!)"
+      }
+    ],
+    "id": "local-1772292881765-6",
+    "language": "Alemão"
+  }
+]

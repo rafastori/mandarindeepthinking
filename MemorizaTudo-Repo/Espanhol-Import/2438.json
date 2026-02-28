@@ -1,0 +1,509 @@
+[
+  {
+    "chinese": "A: Xiao Chen, ¿estás pensando en comprar un coche?",
+    "pinyin": "",
+    "translation": "A: Xiao Chen, você está pensando em comprar um carro?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Chen,",
+      "¿estás",
+      "pensando",
+      "en",
+      "comprar",
+      "un",
+      "coche?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pensando",
+        "pinyin": null,
+        "meaning": "pensando"
+      },
+      {
+        "id": 2,
+        "word": "comprar",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "coche",
+        "pinyin": null,
+        "meaning": "carro"
+      }
+    ],
+    "id": "local-1772297617450-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Sí! Xiao Sun, pensaba pedirte tu opinión.",
+    "pinyin": "",
+    "translation": "B: Sim! Xiao Sun, eu pensava em te pedir sua opinião.",
+    "tokens": [
+      "B:",
+      "¡Sí!",
+      "Xiao",
+      "Sun,",
+      "pensaba",
+      "pedirte",
+      "tu",
+      "opinión."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "pensaba",
+        "pinyin": null,
+        "meaning": "pensava"
+      },
+      {
+        "id": 3,
+        "word": "pedirte",
+        "pinyin": null,
+        "meaning": "te pedir"
+      },
+      {
+        "id": 4,
+        "word": "opinión",
+        "pinyin": null,
+        "meaning": "opinião"
+      }
+    ],
+    "id": "local-1772297617450-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Cuál es tu presupuesto aproximadamente?",
+    "pinyin": "",
+    "translation": "A: Qual é o seu orçamento aproximadamente?",
+    "tokens": [
+      "A:",
+      "¿Cuál",
+      "es",
+      "tu",
+      "presupuesto",
+      "aproximadamente?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cuál",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 2,
+        "word": "presupuesto",
+        "pinyin": null,
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "aproximadamente",
+        "pinyin": null,
+        "meaning": "aproximadamente"
+      }
+    ],
+    "id": "local-1772297617450-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Incluyendo registro e impuestos, un poco más de 200,000.",
+    "pinyin": "",
+    "translation": "B: Incluindo registro e impostos, um pouco mais de 200.000.",
+    "tokens": [
+      "B:",
+      "Incluyendo",
+      "registro",
+      "e",
+      "impuestos,",
+      "un",
+      "poco",
+      "más",
+      "de",
+      "200,000."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Incluyendo",
+        "pinyin": null,
+        "meaning": "Incluindo"
+      },
+      {
+        "id": 2,
+        "word": "registro",
+        "pinyin": null,
+        "meaning": "registro"
+      },
+      {
+        "id": 3,
+        "word": "impuestos",
+        "pinyin": null,
+        "meaning": "impostos"
+      },
+      {
+        "id": 4,
+        "word": "más de",
+        "pinyin": null,
+        "meaning": "mais de"
+      }
+    ],
+    "id": "local-1772297617450-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Estás pensando en obtener una matrícula de Shanghái o una de fuera?",
+    "pinyin": "",
+    "translation": "A: Você está pensando em obter uma matrícula de Xangai ou uma de fora?",
+    "tokens": [
+      "A:",
+      "¿Estás",
+      "pensando",
+      "en",
+      "obtener",
+      "una",
+      "matrícula",
+      "de",
+      "Shanghái",
+      "o",
+      "una",
+      "de",
+      "fuera?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pensando",
+        "pinyin": null,
+        "meaning": "pensando"
+      },
+      {
+        "id": 2,
+        "word": "obtener",
+        "pinyin": null,
+        "meaning": "obter"
+      },
+      {
+        "id": 3,
+        "word": "matrícula",
+        "pinyin": null,
+        "meaning": "matrícula"
+      },
+      {
+        "id": 4,
+        "word": "Shanghái",
+        "pinyin": null,
+        "meaning": "Xangai"
+      },
+      {
+        "id": 5,
+        "word": "fuera",
+        "pinyin": null,
+        "meaning": "fora"
+      }
+    ],
+    "id": "local-1772297617450-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Una matrícula de fuera.",
+    "pinyin": "",
+    "translation": "B: Uma matrícula de fora.",
+    "tokens": [
+      "B:",
+      "Una",
+      "matrícula",
+      "de",
+      "fuera."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "matrícula",
+        "pinyin": null,
+        "meaning": "matrícula"
+      },
+      {
+        "id": 2,
+        "word": "fuera",
+        "pinyin": null,
+        "meaning": "fora"
+      }
+    ],
+    "id": "local-1772297617450-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Pienso usarlo el fin de semana.",
+    "pinyin": "",
+    "translation": "Penso em usá-lo no fim de semana.",
+    "tokens": [
+      "Pienso",
+      "usarlo",
+      "el",
+      "fin",
+      "de",
+      "semana."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pienso",
+        "pinyin": null,
+        "meaning": "Penso"
+      },
+      {
+        "id": 2,
+        "word": "usarlo",
+        "pinyin": null,
+        "meaning": "usá-lo"
+      },
+      {
+        "id": 3,
+        "word": "fin de semana",
+        "pinyin": null,
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772297617450-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Normalmente viajo en el autobús de la empresa para ir y volver del trabajo.",
+    "pinyin": "",
+    "translation": "Normalmente viajo no ônibus da empresa para ir e voltar do trabalho.",
+    "tokens": [
+      "Normalmente",
+      "viajo",
+      "en",
+      "el",
+      "autobús",
+      "de",
+      "la",
+      "empresa",
+      "para",
+      "ir",
+      "y",
+      "volver",
+      "del",
+      "trabajo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Normalmente",
+        "pinyin": null,
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 2,
+        "word": "viajo",
+        "pinyin": null,
+        "meaning": "viajo"
+      },
+      {
+        "id": 3,
+        "word": "autobús",
+        "pinyin": null,
+        "meaning": "ônibus"
+      },
+      {
+        "id": 4,
+        "word": "empresa",
+        "pinyin": null,
+        "meaning": "empresa"
+      },
+      {
+        "id": 5,
+        "word": "ir y volver",
+        "pinyin": null,
+        "meaning": "ir e voltar"
+      },
+      {
+        "id": 6,
+        "word": "trabajo",
+        "pinyin": null,
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772297617450-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es muy conveniente.",
+    "pinyin": "",
+    "translation": "É muito conveniente.",
+    "tokens": [
+      "Es",
+      "muy",
+      "conveniente."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "conveniente",
+        "pinyin": null,
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1772297617450-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué tipo de coches te gustan?",
+    "pinyin": "",
+    "translation": "A: Que tipo de carros você gosta?",
+    "tokens": [
+      "A:",
+      "¿Qué",
+      "tipo",
+      "de",
+      "coches",
+      "te",
+      "gustan?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tipo",
+        "pinyin": null,
+        "meaning": "tipo"
+      },
+      {
+        "id": 2,
+        "word": "coches",
+        "pinyin": null,
+        "meaning": "carros"
+      },
+      {
+        "id": 3,
+        "word": "gustan",
+        "pinyin": null,
+        "meaning": "gostam"
+      }
+    ],
+    "id": "local-1772297617450-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sedanes.",
+    "pinyin": "",
+    "translation": "B: Sedans.",
+    "tokens": [
+      "B:",
+      "Sedanes."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sedanes",
+        "pinyin": null,
+        "meaning": "Sedans"
+      }
+    ],
+    "id": "local-1772297617450-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Son los que tienen más espacio.",
+    "pinyin": "",
+    "translation": "São os que têm mais espaço.",
+    "tokens": [
+      "Son",
+      "los",
+      "que",
+      "tienen",
+      "más",
+      "espacio."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tienen",
+        "pinyin": null,
+        "meaning": "têm"
+      },
+      {
+        "id": 2,
+        "word": "espacio",
+        "pinyin": null,
+        "meaning": "espaço"
+      }
+    ],
+    "id": "local-1772297617450-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Echa un vistazo al Buick Regal, Toyota Camry y el Volkswagen Magotan.",
+    "pinyin": "",
+    "translation": "A: Dê uma olhada no Buick Regal, Toyota Camry e no Volkswagen Magotan.",
+    "tokens": [
+      "A:",
+      "Echa",
+      "un",
+      "vistazo",
+      "al",
+      "Buick",
+      "Regal,",
+      "Toyota",
+      "Camry",
+      "y",
+      "el",
+      "Volkswagen",
+      "Magotan."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Echa un vistazo",
+        "pinyin": null,
+        "meaning": "Dê uma olhada"
+      }
+    ],
+    "id": "local-1772297617450-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Estos coches son bastante buenos.",
+    "pinyin": "",
+    "translation": "Estes carros são bastante bons.",
+    "tokens": [
+      "Estos",
+      "coches",
+      "son",
+      "bastante",
+      "buenos."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "coches",
+        "pinyin": null,
+        "meaning": "carros"
+      },
+      {
+        "id": 2,
+        "word": "bastante",
+        "pinyin": null,
+        "meaning": "bastante"
+      },
+      {
+        "id": 3,
+        "word": "buenos",
+        "pinyin": null,
+        "meaning": "bons"
+      }
+    ],
+    "id": "local-1772297617450-13",
+    "language": "Espanhol"
+  }
+]

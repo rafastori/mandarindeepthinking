@@ -1,0 +1,649 @@
+[
+  {
+    "chinese": "A: 続きまして、王偉さんに皆様へ一言お願いします。盛大な拍手をお願いします！",
+    "pinyin": "",
+    "translation": "A: A seguir, o Sr. Wang Wei, por favor, nos diga algumas palavras. Uma salva de palmas, por favor!",
+    "tokens": [
+      "続きまして",
+      "、",
+      "王偉",
+      "さん",
+      "に",
+      "皆様",
+      "へ",
+      "一言",
+      "お願い",
+      "します",
+      "。",
+      "盛大",
+      "な",
+      "拍手",
+      "を",
+      "お願い",
+      "します",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "続きまして",
+        "pinyin": "",
+        "meaning": "A seguir, Em seguida"
+      },
+      {
+        "id": 2,
+        "word": "王偉",
+        "pinyin": "",
+        "meaning": "Wang Wei (nome)"
+      },
+      {
+        "id": 3,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 4,
+        "word": "一言",
+        "pinyin": "",
+        "meaning": "Algumas palavras, Brevemente"
+      },
+      {
+        "id": 5,
+        "word": "お願いします",
+        "pinyin": "",
+        "meaning": "Por favor"
+      },
+      {
+        "id": 6,
+        "word": "盛大",
+        "pinyin": "",
+        "meaning": "Grandioso, Magnífico, Esplêndido"
+      },
+      {
+        "id": 7,
+        "word": "拍手",
+        "pinyin": "",
+        "meaning": "Aplauso, Salva de palmas"
+      }
+    ],
+    "id": "local-1772297867154-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ありがとうございます！まず、私のためにこのパーティーを企画してくださった皆様、本当にありがとうございます。",
+    "pinyin": "",
+    "translation": "B: Muito obrigado! Primeiramente, muito obrigado a todos que planejaram esta festa para mim.",
+    "tokens": [
+      "ありがとう",
+      "ござい",
+      "ます",
+      "！",
+      "まず",
+      "、",
+      "私",
+      "の",
+      "ため",
+      "に",
+      "この",
+      "パーティー",
+      "を",
+      "企画",
+      "し",
+      "て",
+      "くださっ",
+      "た",
+      "皆様",
+      "、",
+      "本当に",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ありがとうございます",
+        "pinyin": "",
+        "meaning": "Muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "まず",
+        "pinyin": "",
+        "meaning": "Primeiramente, Primeiro"
+      },
+      {
+        "id": 3,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 4,
+        "word": "ために",
+        "pinyin": "",
+        "meaning": "Por, Para (o bem de)"
+      },
+      {
+        "id": 5,
+        "word": "パーティー",
+        "pinyin": "",
+        "meaning": "Festa (party)"
+      },
+      {
+        "id": 6,
+        "word": "企画する",
+        "pinyin": "",
+        "meaning": "Planejar, Organizar"
+      },
+      {
+        "id": 7,
+        "word": "くださる",
+        "pinyin": "",
+        "meaning": "Dar (um favor a quem fala, honorífico)"
+      },
+      {
+        "id": 8,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 9,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "Realmente, De verdade"
+      }
+    ],
+    "id": "local-1772297867154-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: この会社で10年間働きました。この10年間で、多くのことを学びました。学び、成長する機会を与えてくださった会社に心から感謝しています！",
+    "pinyin": "",
+    "translation": "B: Trabalhei nesta empresa por 10 anos. Nestes 10 anos, aprendi muitas coisas. Agradeço de coração à empresa que me deu a oportunidade de aprender e crescer!",
+    "tokens": [
+      "この",
+      "会社",
+      "で",
+      "10",
+      "年間",
+      "働き",
+      "まし",
+      "た",
+      "。",
+      "この",
+      "10",
+      "年間",
+      "で",
+      "、",
+      "多く",
+      "の",
+      "こと",
+      "を",
+      "学び",
+      "まし",
+      "た",
+      "。",
+      "学び",
+      "、",
+      "成長",
+      "する",
+      "機会",
+      "を",
+      "与え",
+      "て",
+      "くださっ",
+      "た",
+      "会社",
+      "に",
+      "心",
+      "から",
+      "感謝",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "会社",
+        "pinyin": "",
+        "meaning": "Empresa"
+      },
+      {
+        "id": 2,
+        "word": "10年間",
+        "pinyin": "",
+        "meaning": "10 anos (duração)"
+      },
+      {
+        "id": 3,
+        "word": "働く",
+        "pinyin": "",
+        "meaning": "Trabalhar"
+      },
+      {
+        "id": 4,
+        "word": "多く",
+        "pinyin": "",
+        "meaning": "Muitos, Muitas coisas"
+      },
+      {
+        "id": 5,
+        "word": "学ぶ",
+        "pinyin": "",
+        "meaning": "Aprender"
+      },
+      {
+        "id": 6,
+        "word": "成長する",
+        "pinyin": "",
+        "meaning": "Crescer, Desenvolver-se"
+      },
+      {
+        "id": 7,
+        "word": "機会",
+        "pinyin": "",
+        "meaning": "Oportunidade"
+      },
+      {
+        "id": 8,
+        "word": "与える",
+        "pinyin": "",
+        "meaning": "Dar, Conceder"
+      },
+      {
+        "id": 9,
+        "word": "くださる",
+        "pinyin": "",
+        "meaning": "Dar (um favor a quem fala, honorífico)"
+      },
+      {
+        "id": 10,
+        "word": "心から",
+        "pinyin": "",
+        "meaning": "Do fundo do coração, Sinceramente"
+      },
+      {
+        "id": 11,
+        "word": "感謝する",
+        "pinyin": "",
+        "meaning": "Agradecer, Ser grato"
+      }
+    ],
+    "id": "local-1772297867154-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 私を指導してくださった役員の皆様、ありがとうございます！",
+    "pinyin": "",
+    "translation": "B: Aos diretores que me orientaram, muito obrigado!",
+    "tokens": [
+      "私",
+      "を",
+      "指導",
+      "し",
+      "て",
+      "くださっ",
+      "た",
+      "役員",
+      "の",
+      "皆様",
+      "、",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 2,
+        "word": "指導する",
+        "pinyin": "",
+        "meaning": "Orientar, Guiar, Instruir"
+      },
+      {
+        "id": 3,
+        "word": "くださる",
+        "pinyin": "",
+        "meaning": "Dar (um favor a quem fala, honorífico)"
+      },
+      {
+        "id": 4,
+        "word": "役員",
+        "pinyin": "",
+        "meaning": "Diretor, Membro do conselho"
+      },
+      {
+        "id": 5,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 6,
+        "word": "ありがとうございます",
+        "pinyin": "",
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772297867154-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 私を支え、気遣ってくださった同僚の皆様、ありがとうございます！",
+    "pinyin": "",
+    "translation": "B: Aos meus colegas que me apoiaram e se importaram, muito obrigado!",
+    "tokens": [
+      "私",
+      "を",
+      "支え",
+      "、",
+      "気遣っ",
+      "て",
+      "くださっ",
+      "た",
+      "同僚",
+      "の",
+      "皆様",
+      "、",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "私",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 2,
+        "word": "支える",
+        "pinyin": "",
+        "meaning": "Apoiar, Suportar"
+      },
+      {
+        "id": 3,
+        "word": "気遣う",
+        "pinyin": "",
+        "meaning": "Preocupar-se com, Cuidar de, Ser atencioso"
+      },
+      {
+        "id": 4,
+        "word": "くださる",
+        "pinyin": "",
+        "meaning": "Dar (um favor a quem fala, honorífico)"
+      },
+      {
+        "id": 5,
+        "word": "同僚",
+        "pinyin": "",
+        "meaning": "Colega de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 7,
+        "word": "ありがとうございます",
+        "pinyin": "",
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772297867154-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 皆様と一緒に働く機会を持てたことを大変光栄に思います。皆様と過ごした時間を毎日心に刻みます！",
+    "pinyin": "",
+    "translation": "B: Sinto-me muito honrado por ter tido a oportunidade de trabalhar com todos vocês. Guardarei no coração cada dia que passei com vocês!",
+    "tokens": [
+      "皆様",
+      "と",
+      "一緒",
+      "に",
+      "働く",
+      "機会",
+      "を",
+      "持て",
+      "た",
+      "こと",
+      "を",
+      "大変",
+      "光栄",
+      "に",
+      "思い",
+      "ます",
+      "。",
+      "皆様",
+      "と",
+      "過ごし",
+      "た",
+      "時間",
+      "を",
+      "毎日",
+      "心",
+      "に",
+      "刻み",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 2,
+        "word": "一緒に",
+        "pinyin": "",
+        "meaning": "Juntos, Com"
+      },
+      {
+        "id": 3,
+        "word": "働く",
+        "pinyin": "",
+        "meaning": "Trabalhar"
+      },
+      {
+        "id": 4,
+        "word": "機会",
+        "pinyin": "",
+        "meaning": "Oportunidade"
+      },
+      {
+        "id": 5,
+        "word": "持つ",
+        "pinyin": "",
+        "meaning": "Ter, Possuir"
+      },
+      {
+        "id": 6,
+        "word": "大変",
+        "pinyin": "",
+        "meaning": "Muito, Extremamente"
+      },
+      {
+        "id": 7,
+        "word": "光栄",
+        "pinyin": "",
+        "meaning": "Honra, Honrado"
+      },
+      {
+        "id": 8,
+        "word": "思う",
+        "pinyin": "",
+        "meaning": "Pensar, Achar, Sentir"
+      },
+      {
+        "id": 9,
+        "word": "過ごす",
+        "pinyin": "",
+        "meaning": "Passar (tempo)"
+      },
+      {
+        "id": 10,
+        "word": "時間",
+        "pinyin": "",
+        "meaning": "Tempo"
+      },
+      {
+        "id": 11,
+        "word": "毎日",
+        "pinyin": "",
+        "meaning": "Todos os dias"
+      },
+      {
+        "id": 12,
+        "word": "心に刻む",
+        "pinyin": "",
+        "meaning": "Gravar no coração, Lembrar-se profundamente"
+      }
+    ],
+    "id": "local-1772297867154-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 最後に、皆様の健康と仕事の順調さ、そしてご家族のご多幸を心から願っています。",
+    "pinyin": "",
+    "translation": "B: Por fim, desejo de coração a saúde e o sucesso no trabalho de todos, e a felicidade de suas famílias.",
+    "tokens": [
+      "最後",
+      "に",
+      "、",
+      "皆様",
+      "の",
+      "健康",
+      "と",
+      "仕事",
+      "の",
+      "順調",
+      "さ",
+      "、",
+      "そして",
+      "ご家族",
+      "の",
+      "ご多幸",
+      "を",
+      "心",
+      "から",
+      "願っ",
+      "て",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最後に",
+        "pinyin": "",
+        "meaning": "Por fim, Finalmente"
+      },
+      {
+        "id": 2,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 3,
+        "word": "健康",
+        "pinyin": "",
+        "meaning": "Saúde"
+      },
+      {
+        "id": 4,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "Trabalho"
+      },
+      {
+        "id": 5,
+        "word": "順調",
+        "pinyin": "",
+        "meaning": "Suave, Sem problemas, Bem-sucedido"
+      },
+      {
+        "id": 6,
+        "word": "ご家族",
+        "pinyin": "",
+        "meaning": "Sua família (honorífico)"
+      },
+      {
+        "id": 7,
+        "word": "ご多幸",
+        "pinyin": "",
+        "meaning": "Grande felicidade, Muita sorte (honorífico)"
+      },
+      {
+        "id": 8,
+        "word": "心から",
+        "pinyin": "",
+        "meaning": "Do fundo do coração, Sinceramente"
+      },
+      {
+        "id": 9,
+        "word": "願う",
+        "pinyin": "",
+        "meaning": "Desejar, Esperar"
+      }
+    ],
+    "id": "local-1772297867154-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: さあ！皆様、乾杯！",
+    "pinyin": "",
+    "translation": "B: Então! A todos, um brinde!",
+    "tokens": [
+      "さあ",
+      "！",
+      "皆様",
+      "、",
+      "乾杯",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "さあ",
+        "pinyin": "",
+        "meaning": "Então, Bem! (interjeição para encorajar ou iniciar algo)"
+      },
+      {
+        "id": 2,
+        "word": "皆様",
+        "pinyin": "",
+        "meaning": "Todos, Senhores (forma honorífica)"
+      },
+      {
+        "id": 3,
+        "word": "乾杯",
+        "pinyin": "",
+        "meaning": "Brinde! (Cheers!)"
+      }
+    ],
+    "id": "local-1772297867154-7",
+    "language": "Japonês"
+  }
+]

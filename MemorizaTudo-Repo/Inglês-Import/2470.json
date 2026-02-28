@@ -1,0 +1,452 @@
+[
+  {
+    "chinese": "A: Xiao Qin, what post are you looking at? You are so into it!",
+    "pinyin": "",
+    "translation": "A: Xiao Qin, que post você está olhando? Você está tão compenetrado!",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Qin,",
+      "what",
+      "post",
+      "are",
+      "you",
+      "looking",
+      "at?",
+      "You",
+      "are",
+      "so",
+      "into",
+      "it!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "post",
+        "pinyin": "",
+        "meaning": "publicação, postagem"
+      },
+      {
+        "id": 1,
+        "word": "looking at",
+        "pinyin": "",
+        "meaning": "olhando para, examinando"
+      },
+      {
+        "id": 2,
+        "word": "into it",
+        "pinyin": "",
+        "meaning": "interessado, compenetrado"
+      }
+    ],
+    "id": "local-1772293764322-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh, I am looking at an internet survey about whether guide dogs should enter the subway.",
+    "pinyin": "",
+    "translation": "B: Ah, estou vendo uma pesquisa de internet sobre se cães-guia devem entrar no metrô.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "I",
+      "am",
+      "looking",
+      "at",
+      "an",
+      "internet",
+      "survey",
+      "about",
+      "whether",
+      "guide",
+      "dogs",
+      "should",
+      "enter",
+      "the",
+      "subway."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "internet survey",
+        "pinyin": "",
+        "meaning": "pesquisa de internet"
+      },
+      {
+        "id": 1,
+        "word": "whether",
+        "pinyin": "",
+        "meaning": "se (indicando alternativa)"
+      },
+      {
+        "id": 2,
+        "word": "guide dogs",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 3,
+        "word": "subway",
+        "pinyin": "",
+        "meaning": "metrô"
+      }
+    ],
+    "id": "local-1772293764322-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What is the result of the survey?",
+    "pinyin": "",
+    "translation": "A: Qual é o resultado da pesquisa?",
+    "tokens": [
+      "A:",
+      "What",
+      "is",
+      "the",
+      "result",
+      "of",
+      "the",
+      "survey?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "result",
+        "pinyin": "",
+        "meaning": "resultado"
+      },
+      {
+        "id": 1,
+        "word": "survey",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      }
+    ],
+    "id": "local-1772293764322-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Everyone's opinions differ; some people agree, some people are opposed.",
+    "pinyin": "",
+    "translation": "B: As opiniões de todos diferem; algumas pessoas concordam, algumas pessoas são contra.",
+    "tokens": [
+      "B:",
+      "Everyone's",
+      "opinions",
+      "differ;",
+      "some",
+      "people",
+      "agree,",
+      "some",
+      "people",
+      "are",
+      "opposed."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "opinions",
+        "pinyin": "",
+        "meaning": "opiniões"
+      },
+      {
+        "id": 1,
+        "word": "differ",
+        "pinyin": "",
+        "meaning": "diferem, divergem"
+      },
+      {
+        "id": 2,
+        "word": "agree",
+        "pinyin": "",
+        "meaning": "concordam"
+      },
+      {
+        "id": 3,
+        "word": "opposed",
+        "pinyin": "",
+        "meaning": "opostos, contra"
+      }
+    ],
+    "id": "local-1772293764322-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Guide dogs all receive training. They won't attack other passengers. Why do they oppose the idea?",
+    "pinyin": "",
+    "translation": "A: Cães-guia recebem treinamento. Eles não atacarão outros passageiros. Por que eles se opõem à ideia?",
+    "tokens": [
+      "A:",
+      "Guide",
+      "dogs",
+      "all",
+      "receive",
+      "training.",
+      "They",
+      "won't",
+      "attack",
+      "other",
+      "passengers.",
+      "Why",
+      "do",
+      "they",
+      "oppose",
+      "the",
+      "idea?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "guide dogs",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 1,
+        "word": "receive",
+        "pinyin": "",
+        "meaning": "recebem"
+      },
+      {
+        "id": 2,
+        "word": "training",
+        "pinyin": "",
+        "meaning": "treinamento"
+      },
+      {
+        "id": 3,
+        "word": "attack",
+        "pinyin": "",
+        "meaning": "atacar"
+      },
+      {
+        "id": 4,
+        "word": "passengers",
+        "pinyin": "",
+        "meaning": "passageiros"
+      },
+      {
+        "id": 5,
+        "word": "oppose",
+        "pinyin": "",
+        "meaning": "se opõem"
+      }
+    ],
+    "id": "local-1772293764322-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Exactly. Guide dogs are the eyes of the blind person. Letting the guide dog enter the subway is not only convenient for the blind person, it's also respectful.",
+    "pinyin": "",
+    "translation": "B: Exatamente. Cães-guia são os olhos da pessoa cega. Deixar o cão-guia entrar no metrô não é apenas conveniente para a pessoa cega, é também respeitoso.",
+    "tokens": [
+      "B:",
+      "Exactly.",
+      "Guide",
+      "dogs",
+      "are",
+      "the",
+      "eyes",
+      "of",
+      "the",
+      "blind",
+      "person.",
+      "Letting",
+      "the",
+      "guide",
+      "dog",
+      "enter",
+      "the",
+      "subway",
+      "is",
+      "not",
+      "only",
+      "convenient",
+      "for",
+      "the",
+      "blind",
+      "person,",
+      "it's",
+      "also",
+      "respectful."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Exactly",
+        "pinyin": "",
+        "meaning": "Exatamente"
+      },
+      {
+        "id": 1,
+        "word": "guide dogs",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 2,
+        "word": "eyes",
+        "pinyin": "",
+        "meaning": "olhos"
+      },
+      {
+        "id": 3,
+        "word": "blind person",
+        "pinyin": "",
+        "meaning": "pessoa cega"
+      },
+      {
+        "id": 4,
+        "word": "convenient",
+        "pinyin": "",
+        "meaning": "conveniente"
+      },
+      {
+        "id": 5,
+        "word": "respectful",
+        "pinyin": "",
+        "meaning": "respeitoso"
+      }
+    ],
+    "id": "local-1772293764322-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Shanghai already allows guide dogs to go on the subway, but in some cities it's still not ok.",
+    "pinyin": "",
+    "translation": "A: Xangai já permite que cães-guia entrem no metrô, mas em algumas cidades ainda não está ok.",
+    "tokens": [
+      "A:",
+      "Shanghai",
+      "already",
+      "allows",
+      "guide",
+      "dogs",
+      "to",
+      "go",
+      "on",
+      "the",
+      "subway,",
+      "but",
+      "in",
+      "some",
+      "cities",
+      "it's",
+      "still",
+      "not",
+      "ok."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai (cidade na China)"
+      },
+      {
+        "id": 1,
+        "word": "allows",
+        "pinyin": "",
+        "meaning": "permite"
+      },
+      {
+        "id": 2,
+        "word": "guide dogs",
+        "pinyin": "",
+        "meaning": "cães-guia"
+      },
+      {
+        "id": 3,
+        "word": "subway",
+        "pinyin": "",
+        "meaning": "metrô"
+      },
+      {
+        "id": 4,
+        "word": "not ok",
+        "pinyin": "",
+        "meaning": "não permitido, não está bem"
+      }
+    ],
+    "id": "local-1772293764322-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: This survey has not ended yet. Let's take a vote right away and give our support.",
+    "pinyin": "",
+    "translation": "B: Esta pesquisa ainda não terminou. Vamos votar imediatamente e dar nosso apoio.",
+    "tokens": [
+      "B:",
+      "This",
+      "survey",
+      "has",
+      "not",
+      "ended",
+      "yet.",
+      "Let's",
+      "take",
+      "a",
+      "vote",
+      "right",
+      "away",
+      "and",
+      "give",
+      "our",
+      "support."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "survey",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      },
+      {
+        "id": 1,
+        "word": "ended yet",
+        "pinyin": "",
+        "meaning": "ainda terminou"
+      },
+      {
+        "id": 2,
+        "word": "take a vote",
+        "pinyin": "",
+        "meaning": "votar"
+      },
+      {
+        "id": 3,
+        "word": "right away",
+        "pinyin": "",
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 4,
+        "word": "support",
+        "pinyin": "",
+        "meaning": "apoio"
+      }
+    ],
+    "id": "local-1772293764322-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We must.",
+    "pinyin": "",
+    "translation": "A: Nós devemos.",
+    "tokens": [
+      "A:",
+      "We",
+      "must."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "must",
+        "pinyin": "",
+        "meaning": "devemos"
+      }
+    ],
+    "id": "local-1772293764322-8",
+    "language": "Inglês"
+  }
+]

@@ -1,0 +1,721 @@
+[
+  {
+    "chinese": "A: Pirouette, saut, glissade. Wow, les mouvements de Kim Yuna sont vraiment magnifiques.",
+    "pinyin": "",
+    "translation": "A: Pirueta, salto, deslize. Uau, os movimentos de Kim Yuna são realmente magníficos.",
+    "tokens": [
+      "Pirouette",
+      ",",
+      "saut",
+      ",",
+      "glissade",
+      ".",
+      "Wow",
+      ",",
+      "les",
+      "mouvements",
+      "de",
+      "Kim",
+      "Yuna",
+      "sont",
+      "vraiment",
+      "magnifiques",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pirouette",
+        "pinyin": "",
+        "meaning": "Pirueta"
+      },
+      {
+        "id": 2,
+        "word": "saut",
+        "pinyin": "",
+        "meaning": "Salto"
+      },
+      {
+        "id": 3,
+        "word": "glissade",
+        "pinyin": "",
+        "meaning": "Deslize"
+      },
+      {
+        "id": 4,
+        "word": "mouvements",
+        "pinyin": "",
+        "meaning": "Movimentos"
+      },
+      {
+        "id": 5,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "Realmente"
+      },
+      {
+        "id": 6,
+        "word": "magnifiques",
+        "pinyin": "",
+        "meaning": "Magníficos"
+      }
+    ],
+    "id": "local-1772295802049-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Tu regardes la compétition de patinage artistique des Jeux olympiques d'hiver ? Oh, c'est cette jeune prodige coréenne.",
+    "pinyin": "",
+    "translation": "B: Você está assistindo à competição de patinação artística dos Jogos Olímpicos de Inverno? Ah, é aquela jovem prodígio coreana.",
+    "tokens": [
+      "Tu",
+      "regardes",
+      "la",
+      "compétition",
+      "de",
+      "patinage",
+      "artistique",
+      "des",
+      "Jeux",
+      "olympiques",
+      "d'hiver",
+      "?",
+      "Oh",
+      ",",
+      "c'est",
+      "cette",
+      "jeune",
+      "prodige",
+      "coréenne",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "regardes",
+        "pinyin": "",
+        "meaning": "Você assiste/está assistindo"
+      },
+      {
+        "id": 2,
+        "word": "compétition",
+        "pinyin": "",
+        "meaning": "Competição"
+      },
+      {
+        "id": 3,
+        "word": "patinage artistique",
+        "pinyin": "",
+        "meaning": "Patinação artística"
+      },
+      {
+        "id": 4,
+        "word": "Jeux olympiques d'hiver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 5,
+        "word": "jeune",
+        "pinyin": "",
+        "meaning": "Jovem"
+      },
+      {
+        "id": 6,
+        "word": "prodige",
+        "pinyin": "",
+        "meaning": "Prodígio"
+      },
+      {
+        "id": 7,
+        "word": "coréenne",
+        "pinyin": "",
+        "meaning": "Coreana"
+      }
+    ],
+    "id": "local-1772295802049-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Regarde comme ses mouvements sont beaux !",
+    "pinyin": "",
+    "translation": "A: Sim. Olha como os movimentos dela são bonitos!",
+    "tokens": [
+      "Oui",
+      ".",
+      "Regarde",
+      "comme",
+      "ses",
+      "mouvements",
+      "sont",
+      "beaux",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Regarde",
+        "pinyin": "",
+        "meaning": "Olha / Veja"
+      },
+      {
+        "id": 3,
+        "word": "mouvements",
+        "pinyin": "",
+        "meaning": "Movimentos"
+      },
+      {
+        "id": 4,
+        "word": "beaux",
+        "pinyin": "",
+        "meaning": "Bonitos"
+      }
+    ],
+    "id": "local-1772295802049-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais à ces Jeux olympiques d'hiver, elle n'a pas eu la médaille d'or. Je pense qu'il y a quatre ans, aux Jeux olympiques de Vancouver, elle était à son apogée.",
+    "pinyin": "",
+    "translation": "B: Mas nestes Jogos Olímpicos de Inverno, ela não ganhou a medalha de ouro. Eu acho que há quatro anos, nos Jogos Olímpicos de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "Mais",
+      "à",
+      "ces",
+      "Jeux",
+      "olympiques",
+      "d'hiver",
+      ",",
+      "elle",
+      "n'a",
+      "pas",
+      "eu",
+      "la",
+      "médaille",
+      "d'or",
+      ".",
+      "Je",
+      "pense",
+      "qu'il",
+      "y",
+      "a",
+      "quatre",
+      "ans",
+      ",",
+      "aux",
+      "Jeux",
+      "olympiques",
+      "de",
+      "Vancouver",
+      ",",
+      "elle",
+      "était",
+      "à",
+      "son",
+      "apogée",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mais",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "Jeux olympiques d'hiver",
+        "pinyin": "",
+        "meaning": "Jogos Olímpicos de Inverno"
+      },
+      {
+        "id": 3,
+        "word": "médaille d'or",
+        "pinyin": "",
+        "meaning": "Medalha de ouro"
+      },
+      {
+        "id": 4,
+        "word": "pense",
+        "pinyin": "",
+        "meaning": "Eu acho / Eu penso"
+      },
+      {
+        "id": 5,
+        "word": "il y a quatre ans",
+        "pinyin": "",
+        "meaning": "Há quatro anos"
+      },
+      {
+        "id": 6,
+        "word": "apogée",
+        "pinyin": "",
+        "meaning": "Apogeu / Auge"
+      }
+    ],
+    "id": "local-1772295802049-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Dans mon esprit, elle sera toujours la Reine de la Glace ! Bien qu'elle n'ait pas eu l'or cette fois-ci, sa performance était tout de même remarquable. C'est dommage qu'elle prenne sa retraite après ces Jeux olympiques d'hiver.",
+    "pinyin": "",
+    "translation": "A: Na minha mente, ela sempre será a Rainha do Gelo! Embora ela não tenha tido o ouro desta vez, sua performance foi notável. É uma pena que ela vá se aposentar depois destes Jogos Olímpicos de Inverno.",
+    "tokens": [
+      "Dans",
+      "mon",
+      "esprit",
+      ",",
+      "elle",
+      "sera",
+      "toujours",
+      "la",
+      "Reine",
+      "de",
+      "la",
+      "Glace",
+      "!",
+      "Bien",
+      "qu'elle",
+      "n'ait",
+      "pas",
+      "eu",
+      "l'or",
+      "cette",
+      "fois-ci",
+      ",",
+      "sa",
+      "performance",
+      "était",
+      "tout",
+      "de",
+      "même",
+      "remarquable",
+      ".",
+      "C'est",
+      "dommage",
+      "qu'elle",
+      "prenne",
+      "sa",
+      "retraite",
+      "après",
+      "ces",
+      "Jeux",
+      "olympiques",
+      "d'hiver",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "esprit",
+        "pinyin": "",
+        "meaning": "Mente / Espírito"
+      },
+      {
+        "id": 2,
+        "word": "sera",
+        "pinyin": "",
+        "meaning": "Será"
+      },
+      {
+        "id": 3,
+        "word": "toujours",
+        "pinyin": "",
+        "meaning": "Sempre"
+      },
+      {
+        "id": 4,
+        "word": "Reine de la Glace",
+        "pinyin": "",
+        "meaning": "Rainha do Gelo"
+      },
+      {
+        "id": 5,
+        "word": "Bien qu'elle",
+        "pinyin": "",
+        "meaning": "Embora ela"
+      },
+      {
+        "id": 6,
+        "word": "l'or",
+        "pinyin": "",
+        "meaning": "O ouro"
+      },
+      {
+        "id": 7,
+        "word": "cette fois-ci",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 8,
+        "word": "performance",
+        "pinyin": "",
+        "meaning": "Performance / Desempenho"
+      },
+      {
+        "id": 9,
+        "word": "remarquable",
+        "pinyin": "",
+        "meaning": "Notável"
+      },
+      {
+        "id": 10,
+        "word": "C'est dommage",
+        "pinyin": "",
+        "meaning": "É uma pena"
+      },
+      {
+        "id": 11,
+        "word": "prenne sa retraite",
+        "pinyin": "",
+        "meaning": "Se aposente"
+      },
+      {
+        "id": 12,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "Depois"
+      }
+    ],
+    "id": "local-1772295802049-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cette fois-ci, la championne du simple dames, Sotnikova, est aussi très bonne. En plus, elle n'a que 17 ans.",
+    "pinyin": "",
+    "translation": "B: Desta vez, a campeã individual feminina, Sotnikova, também é muito boa. Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "Cette",
+      "fois-ci",
+      ",",
+      "la",
+      "championne",
+      "du",
+      "simple",
+      "dames",
+      ",",
+      "Sotnikova",
+      ",",
+      "est",
+      "aussi",
+      "très",
+      "bonne",
+      ".",
+      "En",
+      "plus",
+      ",",
+      "elle",
+      "n'a",
+      "que",
+      "17",
+      "ans",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cette fois-ci",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "championne",
+        "pinyin": "",
+        "meaning": "Campeã"
+      },
+      {
+        "id": 3,
+        "word": "simple dames",
+        "pinyin": "",
+        "meaning": "Individual feminino"
+      },
+      {
+        "id": 4,
+        "word": "aussi",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 5,
+        "word": "très bonne",
+        "pinyin": "",
+        "meaning": "Muito boa"
+      },
+      {
+        "id": 6,
+        "word": "En plus",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 7,
+        "word": "n'a que",
+        "pinyin": "",
+        "meaning": "Tem apenas"
+      },
+      {
+        "id": 8,
+        "word": "17 ans",
+        "pinyin": "",
+        "meaning": "17 anos"
+      }
+    ],
+    "id": "local-1772295802049-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Hé, le patinage artistique est vraiment un sport élégant. Tu penses que je pourrais encore apprendre à en faire ?",
+    "pinyin": "",
+    "translation": "A: Sim. Ei, a patinação artística é realmente um esporte elegante. Você acha que eu ainda poderia aprender a fazê-lo?",
+    "tokens": [
+      "Oui",
+      ".",
+      "Hé",
+      ",",
+      "le",
+      "patinage",
+      "artistique",
+      "est",
+      "vraiment",
+      "un",
+      "sport",
+      "élégant",
+      ".",
+      "Tu",
+      "penses",
+      "que",
+      "je",
+      "pourrais",
+      "encore",
+      "apprendre",
+      "à",
+      "en",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hé",
+        "pinyin": "",
+        "meaning": "Ei"
+      },
+      {
+        "id": 2,
+        "word": "patinage artistique",
+        "pinyin": "",
+        "meaning": "Patinação artística"
+      },
+      {
+        "id": 3,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "Realmente"
+      },
+      {
+        "id": 4,
+        "word": "sport élégant",
+        "pinyin": "",
+        "meaning": "Esporte elegante"
+      },
+      {
+        "id": 5,
+        "word": "penses",
+        "pinyin": "",
+        "meaning": "Você acha / pensa"
+      },
+      {
+        "id": 6,
+        "word": "pourrais",
+        "pinyin": "",
+        "meaning": "Poderia"
+      },
+      {
+        "id": 7,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 8,
+        "word": "apprendre",
+        "pinyin": "",
+        "meaning": "Aprender"
+      },
+      {
+        "id": 9,
+        "word": "en faire",
+        "pinyin": "",
+        "meaning": "A fazê-lo"
+      }
+    ],
+    "id": "local-1772295802049-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Toi ? Laisse tomber. Tu vois ces athlètes à la télé ? Elles ont toutes commencé jeunes. Si tu commençais maintenant, ce serait trop tard.",
+    "pinyin": "",
+    "translation": "B: Você? Deixa pra lá. Você vê essas atletas na TV? Todas elas começaram jovens. Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "Toi",
+      "?",
+      "Laisse",
+      "tomber",
+      ".",
+      "Tu",
+      "vois",
+      "ces",
+      "athlètes",
+      "à",
+      "la",
+      "télé",
+      "?",
+      "Elles",
+      "ont",
+      "toutes",
+      "commencé",
+      "jeunes",
+      ".",
+      "Si",
+      "tu",
+      "commençais",
+      "maintenant",
+      ",",
+      "ce",
+      "serait",
+      "trop",
+      "tard",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Toi",
+        "pinyin": "",
+        "meaning": "Você"
+      },
+      {
+        "id": 2,
+        "word": "Laisse tomber",
+        "pinyin": "",
+        "meaning": "Deixa pra lá / Esquece"
+      },
+      {
+        "id": 3,
+        "word": "vois",
+        "pinyin": "",
+        "meaning": "Você vê"
+      },
+      {
+        "id": 4,
+        "word": "athlètes",
+        "pinyin": "",
+        "meaning": "Atletas"
+      },
+      {
+        "id": 5,
+        "word": "à la télé",
+        "pinyin": "",
+        "meaning": "Na TV"
+      },
+      {
+        "id": 6,
+        "word": "commencé",
+        "pinyin": "",
+        "meaning": "Começaram"
+      },
+      {
+        "id": 7,
+        "word": "jeunes",
+        "pinyin": "",
+        "meaning": "Jovens"
+      },
+      {
+        "id": 8,
+        "word": "commençais",
+        "pinyin": "",
+        "meaning": "Começasse (imperfeito do subjuntivo)"
+      },
+      {
+        "id": 9,
+        "word": "maintenant",
+        "pinyin": "",
+        "meaning": "Agora"
+      },
+      {
+        "id": 10,
+        "word": "trop tard",
+        "pinyin": "",
+        "meaning": "Tarde demais"
+      }
+    ],
+    "id": "local-1772295802049-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je ne veux pas faire de compétition. Je veux juste le faire pour le plaisir.",
+    "pinyin": "",
+    "translation": "A: Eu não quero competir. Eu quero apenas fazer isso por prazer.",
+    "tokens": [
+      "Je",
+      "ne",
+      "veux",
+      "pas",
+      "faire",
+      "de",
+      "compétition",
+      ".",
+      "Je",
+      "veux",
+      "juste",
+      "le",
+      "faire",
+      "pour",
+      "le",
+      "plaisir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "Eu quero"
+      },
+      {
+        "id": 2,
+        "word": "ne...pas",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 3,
+        "word": "faire de compétition",
+        "pinyin": "",
+        "meaning": "Competir / Fazer competição"
+      },
+      {
+        "id": 4,
+        "word": "juste",
+        "pinyin": "",
+        "meaning": "Apenas / Somente"
+      },
+      {
+        "id": 5,
+        "word": "pour le plaisir",
+        "pinyin": "",
+        "meaning": "Por prazer"
+      }
+    ],
+    "id": "local-1772295802049-8",
+    "language": "Francês"
+  }
+]

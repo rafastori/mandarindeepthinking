@@ -1,0 +1,923 @@
+[
+  {
+    "chinese": "A: Lass uns dieses Wochenende in den Laden gehen, um einen Kindersitz für das Baby zu kaufen.",
+    "pinyin": null,
+    "translation": "A: Vamos neste fim de semana à loja para comprar uma cadeirinha de bebê.",
+    "tokens": [
+      "A:",
+      "Lass",
+      "uns",
+      "dieses",
+      "Wochenende",
+      "in",
+      "den",
+      "Laden",
+      "gehen",
+      ",",
+      "um",
+      "einen",
+      "Kindersitz",
+      "für",
+      "das",
+      "Baby",
+      "zu",
+      "kaufen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lass uns",
+        "pinyin": null,
+        "meaning": "Vamos"
+      },
+      {
+        "id": 2,
+        "word": "dieses Wochenende",
+        "pinyin": null,
+        "meaning": "neste fim de semana"
+      },
+      {
+        "id": 3,
+        "word": "in den Laden gehen",
+        "pinyin": null,
+        "meaning": "ir à loja"
+      },
+      {
+        "id": 4,
+        "word": "um ... zu kaufen",
+        "pinyin": null,
+        "meaning": "para comprar"
+      },
+      {
+        "id": 5,
+        "word": "Kindersitz",
+        "pinyin": null,
+        "meaning": "cadeirinha de bebê"
+      },
+      {
+        "id": 6,
+        "word": "für das Baby",
+        "pinyin": null,
+        "meaning": "para o bebê"
+      }
+    ],
+    "id": "local-1772295332326-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay. Aber ich habe gesehen, dass viele Leute sie nicht kaufen.",
+    "pinyin": null,
+    "translation": "B: Ok. Mas eu vi que muitas pessoas não compram.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Aber",
+      "ich",
+      "habe",
+      "gesehen",
+      ",",
+      "dass",
+      "viele",
+      "Leute",
+      "sie",
+      "nicht",
+      "kaufen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aber",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "ich habe gesehen",
+        "pinyin": null,
+        "meaning": "eu vi"
+      },
+      {
+        "id": 3,
+        "word": "dass",
+        "pinyin": null,
+        "meaning": "que"
+      },
+      {
+        "id": 4,
+        "word": "viele Leute",
+        "pinyin": null,
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 5,
+        "word": "nicht kaufen",
+        "pinyin": null,
+        "meaning": "não compram"
+      }
+    ],
+    "id": "local-1772295332326-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Es ist in Ordnung, wenn ihre Kinder auf dem Rücksitz sitzen und ein Erwachsener sie festhält.",
+    "pinyin": null,
+    "translation": "Não tem problema se os filhos deles sentarem no banco de trás e um adulto os segurar.",
+    "tokens": [
+      "Es",
+      "ist",
+      "in",
+      "Ordnung",
+      ",",
+      "wenn",
+      "ihre",
+      "Kinder",
+      "auf",
+      "dem",
+      "Rücksitz",
+      "sitzen",
+      "und",
+      "ein",
+      "Erwachsener",
+      "sie",
+      "festhält",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es ist in Ordnung",
+        "pinyin": null,
+        "meaning": "Está tudo bem, Não tem problema"
+      },
+      {
+        "id": 2,
+        "word": "wenn",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 3,
+        "word": "ihre Kinder",
+        "pinyin": null,
+        "meaning": "os filhos deles"
+      },
+      {
+        "id": 4,
+        "word": "auf dem Rücksitz",
+        "pinyin": null,
+        "meaning": "no banco de trás"
+      },
+      {
+        "id": 5,
+        "word": "sitzen",
+        "pinyin": null,
+        "meaning": "sentar"
+      },
+      {
+        "id": 6,
+        "word": "Erwachsener",
+        "pinyin": null,
+        "meaning": "adulto"
+      },
+      {
+        "id": 7,
+        "word": "festhält",
+        "pinyin": null,
+        "meaning": "segura (de segurar firme)"
+      }
+    ],
+    "id": "local-1772295332326-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wir müssen einen haben!",
+    "pinyin": null,
+    "translation": "A: Nós temos que ter um!",
+    "tokens": [
+      "A:",
+      "Wir",
+      "müssen",
+      "einen",
+      "haben",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wir müssen",
+        "pinyin": null,
+        "meaning": "Nós devemos/temos que"
+      },
+      {
+        "id": 2,
+        "word": "einen haben",
+        "pinyin": null,
+        "meaning": "ter um"
+      }
+    ],
+    "id": "local-1772295332326-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "In vielen Ländern ist es illegal, wenn Kinder nicht in einem Kindersitz mitfahren.",
+    "pinyin": null,
+    "translation": "Em muitos países é ilegal se as crianças não viajarem em uma cadeirinha de bebê.",
+    "tokens": [
+      "In",
+      "vielen",
+      "Ländern",
+      "ist",
+      "es",
+      "illegal",
+      ",",
+      "wenn",
+      "Kinder",
+      "nicht",
+      "in",
+      "einem",
+      "Kindersitz",
+      "mitfahren",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In vielen Ländern",
+        "pinyin": null,
+        "meaning": "Em muitos países"
+      },
+      {
+        "id": 2,
+        "word": "ist es illegal",
+        "pinyin": null,
+        "meaning": "é ilegal"
+      },
+      {
+        "id": 3,
+        "word": "wenn",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 4,
+        "word": "Kinder",
+        "pinyin": null,
+        "meaning": "crianças"
+      },
+      {
+        "id": 5,
+        "word": "nicht",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 6,
+        "word": "Kindersitz",
+        "pinyin": null,
+        "meaning": "cadeirinha de bebê"
+      },
+      {
+        "id": 7,
+        "word": "mitfahren",
+        "pinyin": null,
+        "meaning": "viajar junto, ir junto"
+      }
+    ],
+    "id": "local-1772295332326-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay, okay.",
+    "pinyin": null,
+    "translation": "B: Ok, ok.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ",",
+      "okay",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772295332326-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wenn du einen kaufen möchtest, dann kaufen wir einen.",
+    "pinyin": null,
+    "translation": "Se você quiser comprar um, então compraremos um.",
+    "tokens": [
+      "Wenn",
+      "du",
+      "einen",
+      "kaufen",
+      "möchtest",
+      ",",
+      "dann",
+      "kaufen",
+      "wir",
+      "einen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wenn",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "kaufen möchtest",
+        "pinyin": null,
+        "meaning": "quiser comprar"
+      },
+      {
+        "id": 3,
+        "word": "dann",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 4,
+        "word": "kaufen wir",
+        "pinyin": null,
+        "meaning": "nós compraremos"
+      }
+    ],
+    "id": "local-1772295332326-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Hast du dich entschieden, welche Marke du kaufen möchtest?",
+    "pinyin": null,
+    "translation": "Você já decidiu qual marca quer comprar?",
+    "tokens": [
+      "Hast",
+      "du",
+      "dich",
+      "entschieden",
+      ",",
+      "welche",
+      "Marke",
+      "du",
+      "kaufen",
+      "möchtest",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hast du dich entschieden",
+        "pinyin": null,
+        "meaning": "Você decidiu (de decidir-se)"
+      },
+      {
+        "id": 2,
+        "word": "welche Marke",
+        "pinyin": null,
+        "meaning": "qual marca"
+      },
+      {
+        "id": 3,
+        "word": "kaufen möchtest",
+        "pinyin": null,
+        "meaning": "quer comprar"
+      }
+    ],
+    "id": "local-1772295332326-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Einen importierten natürlich!",
+    "pinyin": null,
+    "translation": "A: Um importado, claro!",
+    "tokens": [
+      "A:",
+      "Einen",
+      "importierten",
+      "natürlich",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "importierten",
+        "pinyin": null,
+        "meaning": "importado"
+      },
+      {
+        "id": 2,
+        "word": "natürlich",
+        "pinyin": null,
+        "meaning": "claro, naturalmente"
+      }
+    ],
+    "id": "local-1772295332326-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Er muss den europäischen Standards entsprechen.",
+    "pinyin": null,
+    "translation": "Ele tem que atender aos padrões europeus.",
+    "tokens": [
+      "Er",
+      "muss",
+      "den",
+      "europäischen",
+      "Standards",
+      "entsprechen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Er muss",
+        "pinyin": null,
+        "meaning": "Ele deve/tem que"
+      },
+      {
+        "id": 2,
+        "word": "europäischen Standards",
+        "pinyin": null,
+        "meaning": "padrões europeus"
+      },
+      {
+        "id": 3,
+        "word": "entsprechen",
+        "pinyin": null,
+        "meaning": "corresponder, atender (a)"
+      }
+    ],
+    "id": "local-1772295332326-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das kann nicht billig sein.",
+    "pinyin": null,
+    "translation": "B: Isso não pode ser barato.",
+    "tokens": [
+      "B:",
+      "Das",
+      "kann",
+      "nicht",
+      "billig",
+      "sein",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das kann nicht",
+        "pinyin": null,
+        "meaning": "Isso não pode"
+      },
+      {
+        "id": 2,
+        "word": "billig sein",
+        "pinyin": null,
+        "meaning": "ser barato"
+      }
+    ],
+    "id": "local-1772295332326-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Auch wenn es nicht billig ist, sollten wir ihn trotzdem für die Sicherheit unseres Kindes kaufen.",
+    "pinyin": null,
+    "translation": "A: Mesmo que não seja barato, ainda assim devemos comprá-lo pela segurança do nosso filho.",
+    "tokens": [
+      "A:",
+      "Auch",
+      "wenn",
+      "es",
+      "nicht",
+      "billig",
+      "ist",
+      ",",
+      "sollten",
+      "wir",
+      "ihn",
+      "trotzdem",
+      "für",
+      "die",
+      "Sicherheit",
+      "unseres",
+      "Kindes",
+      "kaufen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Auch wenn",
+        "pinyin": null,
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 2,
+        "word": "nicht billig ist",
+        "pinyin": null,
+        "meaning": "não seja barato"
+      },
+      {
+        "id": 3,
+        "word": "sollten wir",
+        "pinyin": null,
+        "meaning": "nós deveríamos"
+      },
+      {
+        "id": 4,
+        "word": "trotzdem",
+        "pinyin": null,
+        "meaning": "mesmo assim, ainda assim"
+      },
+      {
+        "id": 5,
+        "word": "für die Sicherheit",
+        "pinyin": null,
+        "meaning": "pela segurança"
+      },
+      {
+        "id": 6,
+        "word": "unseres Kindes",
+        "pinyin": null,
+        "meaning": "do nosso filho"
+      },
+      {
+        "id": 7,
+        "word": "kaufen",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772295332326-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was ist, wenn wir ihn kaufen, mit nach Hause nehmen und feststellen, dass sie nicht darin fahren möchte?",
+    "pinyin": null,
+    "translation": "B: E se nós comprarmos, levarmos para casa e descobrirmos que ela não quer viajar nele?",
+    "tokens": [
+      "B:",
+      "Was",
+      "ist",
+      ",",
+      "wenn",
+      "wir",
+      "ihn",
+      "kaufen",
+      ",",
+      "mit",
+      "nach",
+      "Hause",
+      "nehmen",
+      "und",
+      "feststellen",
+      ",",
+      "dass",
+      "sie",
+      "nicht",
+      "darin",
+      "fahren",
+      "möchte",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was ist, wenn",
+        "pinyin": null,
+        "meaning": "E se"
+      },
+      {
+        "id": 2,
+        "word": "kaufen",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "mit nach Hause nehmen",
+        "pinyin": null,
+        "meaning": "levar para casa"
+      },
+      {
+        "id": 4,
+        "word": "feststellen",
+        "pinyin": null,
+        "meaning": "constatar, perceber"
+      },
+      {
+        "id": 5,
+        "word": "dass",
+        "pinyin": null,
+        "meaning": "que"
+      },
+      {
+        "id": 6,
+        "word": "nicht darin fahren möchte",
+        "pinyin": null,
+        "meaning": "não quer viajar nele"
+      }
+    ],
+    "id": "local-1772295332326-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Was dann?",
+    "pinyin": null,
+    "translation": "O que então? / E aí?",
+    "tokens": [
+      "Was",
+      "dann",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was dann",
+        "pinyin": null,
+        "meaning": "O que então?, E aí?"
+      }
+    ],
+    "id": "local-1772295332326-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Mein Kollege sagt, dass sein Kind sofort weint, sobald es darin sitzt.",
+    "pinyin": null,
+    "translation": "Meu colega diz que o filho dele chora imediatamente, assim que senta nele.",
+    "tokens": [
+      "Mein",
+      "Kollege",
+      "sagt",
+      ",",
+      "dass",
+      "sein",
+      "Kind",
+      "sofort",
+      "weint",
+      ",",
+      "sobald",
+      "es",
+      "darin",
+      "sitzt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mein Kollege",
+        "pinyin": null,
+        "meaning": "Meu colega"
+      },
+      {
+        "id": 2,
+        "word": "sagt",
+        "pinyin": null,
+        "meaning": "diz"
+      },
+      {
+        "id": 3,
+        "word": "dass",
+        "pinyin": null,
+        "meaning": "que"
+      },
+      {
+        "id": 4,
+        "word": "sein Kind",
+        "pinyin": null,
+        "meaning": "o filho dele"
+      },
+      {
+        "id": 5,
+        "word": "sofort",
+        "pinyin": null,
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 6,
+        "word": "weint",
+        "pinyin": null,
+        "meaning": "chora"
+      },
+      {
+        "id": 7,
+        "word": "sobald",
+        "pinyin": null,
+        "meaning": "assim que"
+      },
+      {
+        "id": 8,
+        "word": "darin",
+        "pinyin": null,
+        "meaning": "nele"
+      },
+      {
+        "id": 9,
+        "word": "sitzt",
+        "pinyin": null,
+        "meaning": "senta"
+      }
+    ],
+    "id": "local-1772295332326-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Also müssen wir früh einen kaufen.",
+    "pinyin": null,
+    "translation": "A: Então, precisamos comprar um cedo.",
+    "tokens": [
+      "A:",
+      "Also",
+      "müssen",
+      "wir",
+      "früh",
+      "einen",
+      "kaufen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Also",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "müssen wir",
+        "pinyin": null,
+        "meaning": "nós precisamos"
+      },
+      {
+        "id": 3,
+        "word": "früh",
+        "pinyin": null,
+        "meaning": "cedo"
+      },
+      {
+        "id": 4,
+        "word": "einen kaufen",
+        "pinyin": null,
+        "meaning": "comprar um"
+      }
+    ],
+    "id": "local-1772295332326-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wenn sie schon als Kleinkind darin mitfährt, wird es für sie einfacher, sich daran zu gewöhnen.",
+    "pinyin": null,
+    "translation": "Se ela já viajar nele como bebê, será mais fácil para ela se acostumar.",
+    "tokens": [
+      "Wenn",
+      "sie",
+      "schon",
+      "als",
+      "Kleinkind",
+      "darin",
+      "mitfährt",
+      ",",
+      "wird",
+      "es",
+      "für",
+      "sie",
+      "einfacher",
+      ",",
+      "sich",
+      "daran",
+      "zu",
+      "gewöhnen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wenn",
+        "pinyin": null,
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "schon",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "als Kleinkind",
+        "pinyin": null,
+        "meaning": "como um bebê/criança pequena"
+      },
+      {
+        "id": 4,
+        "word": "darin mitfährt",
+        "pinyin": null,
+        "meaning": "viajar nele"
+      },
+      {
+        "id": 5,
+        "word": "wird es einfacher",
+        "pinyin": null,
+        "meaning": "será mais fácil"
+      },
+      {
+        "id": 6,
+        "word": "für sie",
+        "pinyin": null,
+        "meaning": "para ela"
+      },
+      {
+        "id": 7,
+        "word": "sich daran zu gewöhnen",
+        "pinyin": null,
+        "meaning": "se acostumar com isso"
+      }
+    ],
+    "id": "local-1772295332326-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay.",
+    "pinyin": null,
+    "translation": "B: Ok.",
+    "tokens": [
+      "B:",
+      "Okay",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772295332326-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Was immer du sagst, Liebling.",
+    "pinyin": null,
+    "translation": "O que quer que você diga, querida.",
+    "tokens": [
+      "Was",
+      "immer",
+      "du",
+      "sagst",
+      ",",
+      "Liebling",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was immer",
+        "pinyin": null,
+        "meaning": "O que quer que"
+      },
+      {
+        "id": 2,
+        "word": "du sagst",
+        "pinyin": null,
+        "meaning": "você diga"
+      },
+      {
+        "id": 3,
+        "word": "Liebling",
+        "pinyin": null,
+        "meaning": "Querida, Amor"
+      }
+    ],
+    "id": "local-1772295332326-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Es ist alles für unser Kind!",
+    "pinyin": null,
+    "translation": "É tudo pelo nosso filho!",
+    "tokens": [
+      "Es",
+      "ist",
+      "alles",
+      "für",
+      "unser",
+      "Kind",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es ist alles",
+        "pinyin": null,
+        "meaning": "É tudo"
+      },
+      {
+        "id": 2,
+        "word": "für unser Kind",
+        "pinyin": null,
+        "meaning": "pelo nosso filho"
+      }
+    ],
+    "id": "local-1772295332326-19",
+    "language": "Alemão"
+  }
+]

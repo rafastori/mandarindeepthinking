@@ -1,0 +1,618 @@
+[
+  {
+    "chinese": "A: Lili, dopo il lavoro puoi venire con me al centro commerciale a fare un giro?",
+    "pinyin": null,
+    "translation": "A: Lili, depois do trabalho você pode vir comigo ao shopping para dar uma volta?",
+    "tokens": [
+      "A:",
+      "Lili,",
+      "dopo",
+      "il",
+      "lavoro",
+      "puoi",
+      "venire",
+      "con",
+      "me",
+      "al",
+      "centro",
+      "commerciale",
+      "a",
+      "fare",
+      "un",
+      "giro?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dopo",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 2,
+        "word": "lavoro",
+        "pinyin": null,
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "venire",
+        "pinyin": null,
+        "meaning": "vir"
+      },
+      {
+        "id": 4,
+        "word": "centro commerciale",
+        "pinyin": null,
+        "meaning": "shopping center"
+      },
+      {
+        "id": 5,
+        "word": "fare un giro",
+        "pinyin": null,
+        "meaning": "dar uma volta"
+      }
+    ],
+    "id": "local-1772299471050-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Certo. Cosa vuoi comprare?",
+    "pinyin": null,
+    "translation": "B: Claro. O que você quer comprar?",
+    "tokens": [
+      "B:",
+      "Certo.",
+      "Cosa",
+      "vuoi",
+      "comprare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Certo",
+        "pinyin": null,
+        "meaning": "Claro"
+      },
+      {
+        "id": 2,
+        "word": "Cosa",
+        "pinyin": null,
+        "meaning": "O que"
+      },
+      {
+        "id": 3,
+        "word": "comprare",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772299471050-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: La mia cara amica si sposa. Vorrei scegliere un regalo di nozze.",
+    "pinyin": null,
+    "translation": "A: Minha querida amiga vai se casar. Eu gostaria de escolher um presente de casamento.",
+    "tokens": [
+      "A:",
+      "La",
+      "mia",
+      "cara",
+      "amica",
+      "si",
+      "sposa.",
+      "Vorrei",
+      "scegliere",
+      "un",
+      "regalo",
+      "di",
+      "nozze."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cara",
+        "pinyin": null,
+        "meaning": "querida"
+      },
+      {
+        "id": 2,
+        "word": "amica",
+        "pinyin": null,
+        "meaning": "amiga"
+      },
+      {
+        "id": 3,
+        "word": "sposa",
+        "pinyin": null,
+        "meaning": "casa (verbo sposare)"
+      },
+      {
+        "id": 4,
+        "word": "Vorrei",
+        "pinyin": null,
+        "meaning": "Eu gostaria"
+      },
+      {
+        "id": 5,
+        "word": "scegliere",
+        "pinyin": null,
+        "meaning": "escolher"
+      },
+      {
+        "id": 6,
+        "word": "regalo di nozze",
+        "pinyin": null,
+        "meaning": "presente de casamento"
+      }
+    ],
+    "id": "local-1772299471050-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non andrebbe bene darle semplicemente una busta rossa con dei soldi dentro?",
+    "pinyin": null,
+    "translation": "B: Não seria bom simplesmente dar a ela um envelope vermelho com dinheiro dentro?",
+    "tokens": [
+      "B:",
+      "Non",
+      "andrebbe",
+      "bene",
+      "darle",
+      "semplicemente",
+      "una",
+      "busta",
+      "rossa",
+      "con",
+      "dei",
+      "soldi",
+      "dentro?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "andrebbe bene",
+        "pinyin": null,
+        "meaning": "seria bom"
+      },
+      {
+        "id": 2,
+        "word": "darle",
+        "pinyin": null,
+        "meaning": "dar a ela"
+      },
+      {
+        "id": 3,
+        "word": "semplicemente",
+        "pinyin": null,
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 4,
+        "word": "busta rossa",
+        "pinyin": null,
+        "meaning": "envelope vermelho"
+      },
+      {
+        "id": 5,
+        "word": "soldi",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 6,
+        "word": "dentro",
+        "pinyin": null,
+        "meaning": "dentro"
+      }
+    ],
+    "id": "local-1772299471050-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Lei è la mia migliore amica. Voglio farle un regalo diverso.",
+    "pinyin": null,
+    "translation": "A: Ela é minha melhor amiga. Quero dar a ela um presente diferente.",
+    "tokens": [
+      "A:",
+      "Lei",
+      "è",
+      "la",
+      "mia",
+      "migliore",
+      "amica.",
+      "Voglio",
+      "farle",
+      "un",
+      "regalo",
+      "diverso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "migliore",
+        "pinyin": null,
+        "meaning": "melhor"
+      },
+      {
+        "id": 2,
+        "word": "farle",
+        "pinyin": null,
+        "meaning": "fazer a ela / dar a ela"
+      },
+      {
+        "id": 3,
+        "word": "regalo",
+        "pinyin": null,
+        "meaning": "presente"
+      },
+      {
+        "id": 4,
+        "word": "diverso",
+        "pinyin": null,
+        "meaning": "diferente"
+      }
+    ],
+    "id": "local-1772299471050-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Hai pensato a cosa vorresti comprare?",
+    "pinyin": null,
+    "translation": "B: Você pensou no que gostaria de comprar?",
+    "tokens": [
+      "B:",
+      "Hai",
+      "pensato",
+      "a",
+      "cosa",
+      "vorresti",
+      "comprare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pensato",
+        "pinyin": null,
+        "meaning": "pensado"
+      },
+      {
+        "id": 2,
+        "word": "cosa",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "vorresti",
+        "pinyin": null,
+        "meaning": "você gostaria"
+      },
+      {
+        "id": 4,
+        "word": "comprare",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772299471050-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non ancora. Hai qualche buona idea?",
+    "pinyin": null,
+    "translation": "A: Ainda não. Você tem alguma boa ideia?",
+    "tokens": [
+      "A:",
+      "Non",
+      "ancora.",
+      "Hai",
+      "qualche",
+      "buona",
+      "idea?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ancora",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "qualche",
+        "pinyin": null,
+        "meaning": "alguma"
+      },
+      {
+        "id": 3,
+        "word": "buona",
+        "pinyin": null,
+        "meaning": "boa"
+      },
+      {
+        "id": 4,
+        "word": "idea",
+        "pinyin": null,
+        "meaning": "ideia"
+      }
+    ],
+    "id": "local-1772299471050-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È abbastanza comune regalare cose come stoviglie come regalo di nozze.",
+    "pinyin": null,
+    "translation": "B: É bastante comum presentear coisas como louças/talheres como presente de casamento.",
+    "tokens": [
+      "B:",
+      "È",
+      "abbastanza",
+      "comune",
+      "regalare",
+      "cose",
+      "come",
+      "stoviglie",
+      "come",
+      "regalo",
+      "di",
+      "nozze."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "abbastanza",
+        "pinyin": null,
+        "meaning": "bastante"
+      },
+      {
+        "id": 2,
+        "word": "comune",
+        "pinyin": null,
+        "meaning": "comum"
+      },
+      {
+        "id": 3,
+        "word": "regalare",
+        "pinyin": null,
+        "meaning": "presentear"
+      },
+      {
+        "id": 4,
+        "word": "stoviglie",
+        "pinyin": null,
+        "meaning": "louças/talheres"
+      },
+      {
+        "id": 5,
+        "word": "regalo di nozze",
+        "pinyin": null,
+        "meaning": "presente de casamento"
+      }
+    ],
+    "id": "local-1772299471050-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È troppo ordinario. Voglio qualcosa di un po' più speciale.",
+    "pinyin": null,
+    "translation": "A: É muito comum/ordinário. Quero algo um pouco mais especial.",
+    "tokens": [
+      "A:",
+      "È",
+      "troppo",
+      "ordinario.",
+      "Voglio",
+      "qualcosa",
+      "di",
+      "un",
+      "po'",
+      "più",
+      "speciale."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "troppo",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "ordinario",
+        "pinyin": null,
+        "meaning": "comum/ordinário"
+      },
+      {
+        "id": 3,
+        "word": "Voglio",
+        "pinyin": null,
+        "meaning": "Eu quero"
+      },
+      {
+        "id": 4,
+        "word": "qualcosa",
+        "pinyin": null,
+        "meaning": "algo"
+      },
+      {
+        "id": 5,
+        "word": "speciale",
+        "pinyin": null,
+        "meaning": "especial"
+      }
+    ],
+    "id": "local-1772299471050-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora prendi qualcosa di tradizionale. Che ne dici di un pettine laccato?",
+    "pinyin": null,
+    "translation": "B: Então pegue algo tradicional. Que tal um pente laqueado?",
+    "tokens": [
+      "B:",
+      "Allora",
+      "prendi",
+      "qualcosa",
+      "di",
+      "tradizionale.",
+      "Che",
+      "ne",
+      "dici",
+      "di",
+      "un",
+      "pettine",
+      "laccato?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Allora",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "prendi",
+        "pinyin": null,
+        "meaning": "pegue"
+      },
+      {
+        "id": 3,
+        "word": "tradizionale",
+        "pinyin": null,
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "Che ne dici di",
+        "pinyin": null,
+        "meaning": "Que tal"
+      },
+      {
+        "id": 5,
+        "word": "pettine",
+        "pinyin": null,
+        "meaning": "pente"
+      },
+      {
+        "id": 6,
+        "word": "laccato",
+        "pinyin": null,
+        "meaning": "laqueado"
+      }
+    ],
+    "id": "local-1772299471050-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Oh? Che significato ha?",
+    "pinyin": null,
+    "translation": "A: Oh? Que significado tem?",
+    "tokens": [
+      "A:",
+      "Oh?",
+      "Che",
+      "significato",
+      "ha?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "significato",
+        "pinyin": null,
+        "meaning": "significado"
+      }
+    ],
+    "id": "local-1772299471050-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: In Cina, questo significa che due persone saranno sempre insieme.",
+    "pinyin": null,
+    "translation": "B: Na China, isso significa que duas pessoas estarão sempre juntas.",
+    "tokens": [
+      "B:",
+      "In",
+      "Cina,",
+      "questo",
+      "significa",
+      "che",
+      "due",
+      "persone",
+      "saranno",
+      "sempre",
+      "insieme."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cina",
+        "pinyin": null,
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "significa",
+        "pinyin": null,
+        "meaning": "significa"
+      },
+      {
+        "id": 3,
+        "word": "persone",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 4,
+        "word": "sempre",
+        "pinyin": null,
+        "meaning": "sempre"
+      },
+      {
+        "id": 5,
+        "word": "insieme",
+        "pinyin": null,
+        "meaning": "juntas"
+      }
+    ],
+    "id": "local-1772299471050-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ottimo. Andiamo a dare un'occhiata.",
+    "pinyin": null,
+    "translation": "A: Ótimo. Vamos dar uma olhada.",
+    "tokens": [
+      "A:",
+      "Ottimo.",
+      "Andiamo",
+      "a",
+      "dare",
+      "un'occhiata."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ottimo",
+        "pinyin": null,
+        "meaning": "Ótimo"
+      },
+      {
+        "id": 2,
+        "word": "Andiamo",
+        "pinyin": null,
+        "meaning": "Vamos"
+      },
+      {
+        "id": 3,
+        "word": "dare un'occhiata",
+        "pinyin": null,
+        "meaning": "dar uma olhada"
+      }
+    ],
+    "id": "local-1772299471050-12",
+    "language": "Italiano"
+  }
+]

@@ -1,0 +1,666 @@
+[
+  {
+    "chinese": "A: 무엇을 보고 있어요?",
+    "pinyin": "",
+    "translation": "A: O que você está vendo?",
+    "tokens": [
+      "무엇을",
+      "보고",
+      "있어요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "무엇을",
+        "pinyin": "",
+        "meaning": "o quê (objeto)"
+      },
+      {
+        "id": 2,
+        "word": "보고",
+        "pinyin": "",
+        "meaning": "vendo (forma contínua de 'ver')"
+      },
+      {
+        "id": 3,
+        "word": "있어요?",
+        "pinyin": "",
+        "meaning": "está?"
+      }
+    ],
+    "id": "local-1772297278272-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그림자극이요.",
+    "pinyin": "",
+    "translation": "B: Teatro de sombras.",
+    "tokens": [
+      "그림자극이요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그림자극",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 2,
+        "word": "이요",
+        "pinyin": "",
+        "meaning": "é (forma formal e enfática)"
+      }
+    ],
+    "id": "local-1772297278272-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이걸 어떻게 못 봤죠?",
+    "pinyin": "",
+    "translation": "A: Como eu não vi isso?",
+    "tokens": [
+      "이걸",
+      "어떻게",
+      "못",
+      "봤죠?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이걸",
+        "pinyin": "",
+        "meaning": "isto (forma contraída de 이것을)"
+      },
+      {
+        "id": 2,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "못",
+        "pinyin": "",
+        "meaning": "não conseguir/não poder"
+      },
+      {
+        "id": 4,
+        "word": "봤죠?",
+        "pinyin": "",
+        "meaning": "vi? (expressa surpresa ou confirmação)"
+      }
+    ],
+    "id": "local-1772297278272-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 중국의 전통 민속 예술이에요. 요즘은 많이 안 봐요.",
+    "pinyin": "",
+    "translation": "B: É uma arte folclórica tradicional da China. Hoje em dia, não é muito vista.",
+    "tokens": [
+      "중국의",
+      "전통",
+      "민속",
+      "예술이에요",
+      ".",
+      "요즘은",
+      "많이",
+      "안",
+      "봐요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국의",
+        "pinyin": "",
+        "meaning": "da China"
+      },
+      {
+        "id": 2,
+        "word": "전통",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 3,
+        "word": "민속",
+        "pinyin": "",
+        "meaning": "folclórica"
+      },
+      {
+        "id": 4,
+        "word": "예술이에요",
+        "pinyin": "",
+        "meaning": "é uma arte"
+      },
+      {
+        "id": 5,
+        "word": "요즘은",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 6,
+        "word": "많이",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 7,
+        "word": "안",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 8,
+        "word": "봐요",
+        "pinyin": "",
+        "meaning": "vêem/assistem"
+      }
+    ],
+    "id": "local-1772297278272-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이거 '서유기' 이야기 맞죠?",
+    "pinyin": "",
+    "translation": "A: Essa é a história de 'Jornada ao Oeste', certo?",
+    "tokens": [
+      "이거",
+      "'서유기'",
+      "이야기",
+      "맞죠?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이거",
+        "pinyin": "",
+        "meaning": "isto/essa (informal)"
+      },
+      {
+        "id": 2,
+        "word": "서유기",
+        "pinyin": "",
+        "meaning": "Jornada ao Oeste"
+      },
+      {
+        "id": 3,
+        "word": "이야기",
+        "pinyin": "",
+        "meaning": "história"
+      },
+      {
+        "id": 4,
+        "word": "맞죠?",
+        "pinyin": "",
+        "meaning": "está certo? (com confirmação)"
+      }
+    ],
+    "id": "local-1772297278272-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네. 이 인물들은 다 동물 가죽이나 판지로 만들어져요.",
+    "pinyin": "",
+    "translation": "B: Sim. Esses personagens são todos feitos de pele de animal ou papelão.",
+    "tokens": [
+      "네",
+      ".",
+      "이",
+      "인물들은",
+      "다",
+      "동물",
+      "가죽이나",
+      "판지로",
+      "만들어져요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "estes/esse"
+      },
+      {
+        "id": 3,
+        "word": "인물들은",
+        "pinyin": "",
+        "meaning": "personagens"
+      },
+      {
+        "id": 4,
+        "word": "다",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "동물",
+        "pinyin": "",
+        "meaning": "animal"
+      },
+      {
+        "id": 6,
+        "word": "가죽이나",
+        "pinyin": "",
+        "meaning": "pele ou"
+      },
+      {
+        "id": 7,
+        "word": "판지로",
+        "pinyin": "",
+        "meaning": "de papelão (com papelão)"
+      },
+      {
+        "id": 8,
+        "word": "만들어져요",
+        "pinyin": "",
+        "meaning": "são feitos"
+      }
+    ],
+    "id": "local-1772297278272-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 어떻게 움직여요?",
+    "pinyin": "",
+    "translation": "A: Então, como eles se movem?",
+    "tokens": [
+      "그럼",
+      "어떻게",
+      "움직여요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "움직여요?",
+        "pinyin": "",
+        "meaning": "se movem?"
+      }
+    ],
+    "id": "local-1772297278272-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 조종하는 사람들이 있어요.",
+    "pinyin": "",
+    "translation": "B: Há pessoas que os controlam.",
+    "tokens": [
+      "조종하는",
+      "사람들이",
+      "있어요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "조종하는",
+        "pinyin": "",
+        "meaning": "que controlam"
+      },
+      {
+        "id": 2,
+        "word": "사람들이",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "있어요.",
+        "pinyin": "",
+        "meaning": "há/existem"
+      }
+    ],
+    "id": "local-1772297278272-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말 흥미롭네요. 공연을 볼 수 있는 곳이 있어요?",
+    "pinyin": "",
+    "translation": "A: É realmente interessante. Há algum lugar onde eu possa ver uma apresentação?",
+    "tokens": [
+      "정말",
+      "흥미롭네요",
+      ".",
+      "공연을",
+      "볼",
+      "수",
+      "있는",
+      "곳이",
+      "있어요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "흥미롭네요",
+        "pinyin": "",
+        "meaning": "é interessante (expressão de emoção)"
+      },
+      {
+        "id": 3,
+        "word": "공연을",
+        "pinyin": "",
+        "meaning": "uma apresentação (objeto)"
+      },
+      {
+        "id": 4,
+        "word": "볼 수 있는",
+        "pinyin": "",
+        "meaning": "que pode ver"
+      },
+      {
+        "id": 5,
+        "word": "곳이",
+        "pinyin": "",
+        "meaning": "lugar"
+      },
+      {
+        "id": 6,
+        "word": "있어요?",
+        "pinyin": "",
+        "meaning": "há?/existe?"
+      }
+    ],
+    "id": "local-1772297278272-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 다음 주에 베이징 가잖아요? 베이징에 \"스차하이 그림자 예술 공연 호텔\"이라는 곳이 있어요. 거기 가서 경험해 볼 수 있어요.",
+    "pinyin": "",
+    "translation": "B: Você não vai para Pequim na próxima semana? Em Pequim, há um lugar chamado \"Shichahai Shadow Art Performance Hotel\". Você pode ir lá e experimentar.",
+    "tokens": [
+      "다음",
+      "주에",
+      "베이징",
+      "가잖아요?",
+      "베이징에",
+      "\"",
+      "스차하이",
+      "그림자",
+      "예술",
+      "공연",
+      "호텔",
+      "\"",
+      "이라는",
+      "곳이",
+      "있어요",
+      ".",
+      "거기",
+      "가서",
+      "경험해",
+      "볼",
+      "수",
+      "있어요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음 주에",
+        "pinyin": "",
+        "meaning": "na próxima semana"
+      },
+      {
+        "id": 2,
+        "word": "베이징",
+        "pinyin": "",
+        "meaning": "Pequim"
+      },
+      {
+        "id": 3,
+        "word": "가잖아요?",
+        "pinyin": "",
+        "meaning": "vai, não vai? (com confirmação)"
+      },
+      {
+        "id": 4,
+        "word": "스차하이 그림자 예술 공연 호텔",
+        "pinyin": "",
+        "meaning": "Shichahai Shadow Art Performance Hotel"
+      },
+      {
+        "id": 5,
+        "word": "이라는",
+        "pinyin": "",
+        "meaning": "que é chamado de"
+      },
+      {
+        "id": 6,
+        "word": "곳이",
+        "pinyin": "",
+        "meaning": "lugar"
+      },
+      {
+        "id": 7,
+        "word": "있어요",
+        "pinyin": "",
+        "meaning": "há/existe"
+      },
+      {
+        "id": 8,
+        "word": "거기",
+        "pinyin": "",
+        "meaning": "lá"
+      },
+      {
+        "id": 9,
+        "word": "가서",
+        "pinyin": "",
+        "meaning": "indo (e)"
+      },
+      {
+        "id": 10,
+        "word": "경험해 볼 수 있어요",
+        "pinyin": "",
+        "meaning": "pode experimentar"
+      }
+    ],
+    "id": "local-1772297278272-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 꼭 가볼게요. 그림자극 공연하는 법을 배울 수 있을까요?",
+    "pinyin": "",
+    "translation": "A: Com certeza irei. Será que consigo aprender a fazer uma apresentação de teatro de sombras?",
+    "tokens": [
+      "꼭",
+      "가볼게요",
+      ".",
+      "그림자극",
+      "공연하는",
+      "법을",
+      "배울",
+      "수",
+      "있을까요?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "꼭",
+        "pinyin": "",
+        "meaning": "com certeza/definitivamente"
+      },
+      {
+        "id": 2,
+        "word": "가볼게요",
+        "pinyin": "",
+        "meaning": "irei (tentar ir)"
+      },
+      {
+        "id": 3,
+        "word": "그림자극",
+        "pinyin": "",
+        "meaning": "teatro de sombras"
+      },
+      {
+        "id": 4,
+        "word": "공연하는",
+        "pinyin": "",
+        "meaning": "apresentar/performar"
+      },
+      {
+        "id": 5,
+        "word": "법을",
+        "pinyin": "",
+        "meaning": "maneira/método (objeto)"
+      },
+      {
+        "id": 6,
+        "word": "배울 수 있을까요?",
+        "pinyin": "",
+        "meaning": "será que consigo aprender?"
+      }
+    ],
+    "id": "local-1772297278272-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 문제없어요. 제 미국인 친구도 자기 그림자극을 만들었어요. 다음에 그 친구를 소개해 줄게요.",
+    "pinyin": "",
+    "translation": "B: Sem problemas. Meu amigo americano também fez seu próprio teatro de sombras. Na próxima vez, vou apresentá-lo a você.",
+    "tokens": [
+      "문제없어요",
+      ".",
+      "제",
+      "미국인",
+      "친구도",
+      "자기",
+      "그림자극을",
+      "만들었어요",
+      ".",
+      "다음에",
+      "그",
+      "친구를",
+      "소개해",
+      "줄게요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "문제없어요",
+        "pinyin": "",
+        "meaning": "sem problemas"
+      },
+      {
+        "id": 2,
+        "word": "제",
+        "pinyin": "",
+        "meaning": "meu/minha (formal)"
+      },
+      {
+        "id": 3,
+        "word": "미국인",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 4,
+        "word": "친구도",
+        "pinyin": "",
+        "meaning": "amigo também"
+      },
+      {
+        "id": 5,
+        "word": "자기",
+        "pinyin": "",
+        "meaning": "seu próprio"
+      },
+      {
+        "id": 6,
+        "word": "그림자극을",
+        "pinyin": "",
+        "meaning": "teatro de sombras (objeto)"
+      },
+      {
+        "id": 7,
+        "word": "만들었어요",
+        "pinyin": "",
+        "meaning": "fez/criou"
+      },
+      {
+        "id": 8,
+        "word": "다음에",
+        "pinyin": "",
+        "meaning": "na próxima vez"
+      },
+      {
+        "id": 9,
+        "word": "그 친구를",
+        "pinyin": "",
+        "meaning": "esse amigo (objeto)"
+      },
+      {
+        "id": 10,
+        "word": "소개해 줄게요",
+        "pinyin": "",
+        "meaning": "vou apresentá-lo (a você)"
+      }
+    ],
+    "id": "local-1772297278272-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 좋아요, 그럼 그렇게 해요.",
+    "pinyin": "",
+    "translation": "A: Ótimo, então vamos fazer isso.",
+    "tokens": [
+      "좋아요",
+      ",",
+      "그럼",
+      "그렇게",
+      "해요."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋아요",
+        "pinyin": "",
+        "meaning": "ótimo/tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "그렇게",
+        "pinyin": "",
+        "meaning": "desse jeito/assim"
+      },
+      {
+        "id": 4,
+        "word": "해요.",
+        "pinyin": "",
+        "meaning": "façamos/vamos fazer isso"
+      }
+    ],
+    "id": "local-1772297278272-12",
+    "language": "Coreano"
+  }
+]

@@ -1,0 +1,614 @@
+[
+  {
+    "chinese": "A: Lili, kannst du nach der Arbeit mit mir ins Einkaufszentrum gehen?",
+    "pinyin": "",
+    "translation": "A: Lili, você pode ir ao shopping comigo depois do trabalho?",
+    "tokens": [
+      "Lili",
+      ",",
+      "kannst",
+      "du",
+      "nach",
+      "der",
+      "Arbeit",
+      "mit",
+      "mir",
+      "ins",
+      "Einkaufszentrum",
+      "gehen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kannst",
+        "pinyin": "",
+        "meaning": "podes (tu podes)"
+      },
+      {
+        "id": 2,
+        "word": "nach der Arbeit",
+        "pinyin": "",
+        "meaning": "depois do trabalho"
+      },
+      {
+        "id": 3,
+        "word": "mit mir",
+        "pinyin": "",
+        "meaning": "comigo"
+      },
+      {
+        "id": 4,
+        "word": "ins Einkaufszentrum",
+        "pinyin": "",
+        "meaning": "para o shopping (Einkaufszentrum: shopping)"
+      },
+      {
+        "id": 5,
+        "word": "gehen",
+        "pinyin": "",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772293664389-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Klar. Was willst du kaufen?",
+    "pinyin": "",
+    "translation": "B: Claro. O que você quer comprar?",
+    "tokens": [
+      "Klar",
+      ".",
+      "Was",
+      "willst",
+      "du",
+      "kaufen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Klar",
+        "pinyin": "",
+        "meaning": "Claro, Com certeza"
+      },
+      {
+        "id": 2,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "O que"
+      },
+      {
+        "id": 3,
+        "word": "willst du",
+        "pinyin": "",
+        "meaning": "tu queres"
+      },
+      {
+        "id": 4,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772293664389-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Meine beste Freundin heiratet. Ich möchte ein Hochzeitsgeschenk aussuchen.",
+    "pinyin": "",
+    "translation": "A: Minha melhor amiga vai casar. Eu gostaria de escolher um presente de casamento.",
+    "tokens": [
+      "Meine",
+      "beste",
+      "Freundin",
+      "heiratet",
+      ".",
+      "Ich",
+      "möchte",
+      "ein",
+      "Hochzeitsgeschenk",
+      "aussuchen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Meine beste Freundin",
+        "pinyin": "",
+        "meaning": "Minha melhor amiga"
+      },
+      {
+        "id": 2,
+        "word": "heiratet",
+        "pinyin": "",
+        "meaning": "casa (está casando)"
+      },
+      {
+        "id": 3,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria"
+      },
+      {
+        "id": 4,
+        "word": "ein Hochzeitsgeschenk",
+        "pinyin": "",
+        "meaning": "um presente de casamento (Hochzeitsgeschenk: presente de casamento)"
+      },
+      {
+        "id": 5,
+        "word": "aussuchen",
+        "pinyin": "",
+        "meaning": "escolher, selecionar"
+      }
+    ],
+    "id": "local-1772293664389-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Würde es nicht reichen, ihr einfach einen roten Umschlag mit Geld zu schenken?",
+    "pinyin": "",
+    "translation": "B: Não bastaria dar a ela simplesmente um envelope vermelho com dinheiro?",
+    "tokens": [
+      "Würde",
+      "es",
+      "nicht",
+      "reichen",
+      ",",
+      "ihr",
+      "einfach",
+      "einen",
+      "roten",
+      "Umschlag",
+      "mit",
+      "Geld",
+      "zu",
+      "schenken",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Würde es nicht reichen",
+        "pinyin": "",
+        "meaning": "Não seria suficiente / Não bastaria (reichen: bastar, ser suficiente)"
+      },
+      {
+        "id": 2,
+        "word": "ihr",
+        "pinyin": "",
+        "meaning": "a ela (dativo)"
+      },
+      {
+        "id": 3,
+        "word": "einfach",
+        "pinyin": "",
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 4,
+        "word": "einen roten Umschlag",
+        "pinyin": "",
+        "meaning": "um envelope vermelho (Umschlag: envelope, rot: vermelho)"
+      },
+      {
+        "id": 5,
+        "word": "mit Geld",
+        "pinyin": "",
+        "meaning": "com dinheiro"
+      },
+      {
+        "id": 6,
+        "word": "schenken",
+        "pinyin": "",
+        "meaning": "presentear, dar de presente"
+      }
+    ],
+    "id": "local-1772293664389-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie ist meine beste Freundin. Ich möchte ihr etwas Besonderes schenken.",
+    "pinyin": "",
+    "translation": "A: Ela é minha melhor amiga. Eu gostaria de dar a ela algo especial.",
+    "tokens": [
+      "Sie",
+      "ist",
+      "meine",
+      "beste",
+      "Freundin",
+      ".",
+      "Ich",
+      "möchte",
+      "ihr",
+      "etwas",
+      "Besonderes",
+      "schenken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sie ist meine beste Freundin",
+        "pinyin": "",
+        "meaning": "Ela é minha melhor amiga"
+      },
+      {
+        "id": 2,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria"
+      },
+      {
+        "id": 3,
+        "word": "ihr",
+        "pinyin": "",
+        "meaning": "a ela (dativo)"
+      },
+      {
+        "id": 4,
+        "word": "etwas Besonderes",
+        "pinyin": "",
+        "meaning": "algo especial (Besonderes: algo especial)"
+      },
+      {
+        "id": 5,
+        "word": "schenken",
+        "pinyin": "",
+        "meaning": "presentear, dar de presente"
+      }
+    ],
+    "id": "local-1772293664389-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hast du schon eine Idee, was du kaufen möchtest?",
+    "pinyin": "",
+    "translation": "B: Você já tem uma ideia do que gostaria de comprar?",
+    "tokens": [
+      "Hast",
+      "du",
+      "schon",
+      "eine",
+      "Idee",
+      ",",
+      "was",
+      "du",
+      "kaufen",
+      "möchtest",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hast du schon",
+        "pinyin": "",
+        "meaning": "Já tens (tu já tens)"
+      },
+      {
+        "id": 2,
+        "word": "eine Idee",
+        "pinyin": "",
+        "meaning": "uma ideia"
+      },
+      {
+        "id": 3,
+        "word": "was du kaufen möchtest",
+        "pinyin": "",
+        "meaning": "o que tu gostarias de comprar"
+      }
+    ],
+    "id": "local-1772293664389-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Noch nicht. Hast du einen guten Vorschlag?",
+    "pinyin": "",
+    "translation": "A: Ainda não. Você tem uma boa sugestão?",
+    "tokens": [
+      "Noch",
+      "nicht",
+      ".",
+      "Hast",
+      "du",
+      "einen",
+      "guten",
+      "Vorschlag",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Noch nicht",
+        "pinyin": "",
+        "meaning": "Ainda não"
+      },
+      {
+        "id": 2,
+        "word": "Hast du",
+        "pinyin": "",
+        "meaning": "Tens (tu tens)"
+      },
+      {
+        "id": 3,
+        "word": "einen guten Vorschlag",
+        "pinyin": "",
+        "meaning": "uma boa sugestão (Vorschlag: sugestão)"
+      }
+    ],
+    "id": "local-1772293664389-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es ist üblich, Dinge wie Geschirr zur Hochzeit zu schenken.",
+    "pinyin": "",
+    "translation": "B: É comum presentear coisas como louça para o casamento.",
+    "tokens": [
+      "Es",
+      "ist",
+      "üblich",
+      ",",
+      "Dinge",
+      "wie",
+      "Geschirr",
+      "zur",
+      "Hochzeit",
+      "zu",
+      "schenken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es ist üblich",
+        "pinyin": "",
+        "meaning": "É comum (üblich: comum, usual)"
+      },
+      {
+        "id": 2,
+        "word": "Dinge wie",
+        "pinyin": "",
+        "meaning": "coisas como"
+      },
+      {
+        "id": 3,
+        "word": "Geschirr",
+        "pinyin": "",
+        "meaning": "louça, talheres"
+      },
+      {
+        "id": 4,
+        "word": "zur Hochzeit",
+        "pinyin": "",
+        "meaning": "para o casamento (Hochzeit: casamento)"
+      },
+      {
+        "id": 5,
+        "word": "schenken",
+        "pinyin": "",
+        "meaning": "presentear, dar de presente"
+      }
+    ],
+    "id": "local-1772293664389-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist zu gewöhnlich. Ich möchte etwas Besonderes.",
+    "pinyin": "",
+    "translation": "A: Isso é muito comum. Eu gostaria de algo especial.",
+    "tokens": [
+      "Das",
+      "ist",
+      "zu",
+      "gewöhnlich",
+      ".",
+      "Ich",
+      "möchte",
+      "etwas",
+      "Besonderes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das ist zu gewöhnlich",
+        "pinyin": "",
+        "meaning": "Isso é muito comum (gewöhnlich: comum, ordinário)"
+      },
+      {
+        "id": 2,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria"
+      },
+      {
+        "id": 3,
+        "word": "etwas Besonderes",
+        "pinyin": "",
+        "meaning": "algo especial"
+      }
+    ],
+    "id": "local-1772293664389-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Dann schenk ihr doch etwas Traditionelles. Wie wäre es mit einem Lackkamm?",
+    "pinyin": "",
+    "translation": "B: Então, dê a ela algo tradicional. Que tal um pente de laca?",
+    "tokens": [
+      "Dann",
+      "schenk",
+      "ihr",
+      "doch",
+      "etwas",
+      "Traditionelles",
+      ".",
+      "Wie",
+      "wäre",
+      "es",
+      "mit",
+      "einem",
+      "Lackkamm",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dann schenk ihr doch",
+        "pinyin": "",
+        "meaning": "Então, dê a ela (doch: partícula que suaviza ou enfatiza)"
+      },
+      {
+        "id": 2,
+        "word": "etwas Traditionelles",
+        "pinyin": "",
+        "meaning": "algo tradicional (Traditionelles: algo tradicional)"
+      },
+      {
+        "id": 3,
+        "word": "Wie wäre es mit",
+        "pinyin": "",
+        "meaning": "Que tal, Como seria com"
+      },
+      {
+        "id": 4,
+        "word": "einem Lackkamm",
+        "pinyin": "",
+        "meaning": "um pente de laca (Lackkamm: pente de laca)"
+      }
+    ],
+    "id": "local-1772293664389-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Oh? Welche Bedeutung hat das?",
+    "pinyin": "",
+    "translation": "A: Oh? Qual o significado disso?",
+    "tokens": [
+      "Oh",
+      "?",
+      "Welche",
+      "Bedeutung",
+      "hat",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Welche Bedeutung",
+        "pinyin": "",
+        "meaning": "Qual significado (Bedeutung: significado)"
+      },
+      {
+        "id": 2,
+        "word": "hat das",
+        "pinyin": "",
+        "meaning": "isso tem"
+      }
+    ],
+    "id": "local-1772293664389-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In China steht das dafür, dass zwei Menschen für immer zusammenbleiben.",
+    "pinyin": "",
+    "translation": "B: Na China, isso significa que duas pessoas ficam juntas para sempre.",
+    "tokens": [
+      "In",
+      "China",
+      "steht",
+      "das",
+      "dafür",
+      ",",
+      "dass",
+      "zwei",
+      "Menschen",
+      "für",
+      "immer",
+      "zusammenbleiben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "In China",
+        "pinyin": "",
+        "meaning": "Na China"
+      },
+      {
+        "id": 2,
+        "word": "steht das dafür",
+        "pinyin": "",
+        "meaning": "isso significa, isso representa (dafür stehen: significar, representar)"
+      },
+      {
+        "id": 3,
+        "word": "dass",
+        "pinyin": "",
+        "meaning": "que (conjunção)"
+      },
+      {
+        "id": 4,
+        "word": "zwei Menschen",
+        "pinyin": "",
+        "meaning": "duas pessoas"
+      },
+      {
+        "id": 5,
+        "word": "für immer",
+        "pinyin": "",
+        "meaning": "para sempre"
+      },
+      {
+        "id": 6,
+        "word": "zusammenbleiben",
+        "pinyin": "",
+        "meaning": "permanecerem juntos"
+      }
+    ],
+    "id": "local-1772293664389-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist toll. Lass uns mal schauen gehen.",
+    "pinyin": "",
+    "translation": "A: Isso é ótimo. Vamos dar uma olhada.",
+    "tokens": [
+      "Das",
+      "ist",
+      "toll",
+      ".",
+      "Lass",
+      "uns",
+      "mal",
+      "schauen",
+      "gehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das ist toll",
+        "pinyin": "",
+        "meaning": "Isso é ótimo/maravilhoso (toll: ótimo, fantástico)"
+      },
+      {
+        "id": 2,
+        "word": "Lass uns",
+        "pinyin": "",
+        "meaning": "Vamos (deixar-nos)"
+      },
+      {
+        "id": 3,
+        "word": "mal schauen gehen",
+        "pinyin": "",
+        "meaning": "ir dar uma olhada (mal: partícula enfática, schauen: olhar, gehen: ir)"
+      }
+    ],
+    "id": "local-1772293664389-12",
+    "language": "Alemão"
+  }
+]

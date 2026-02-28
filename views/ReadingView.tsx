@@ -62,6 +62,7 @@ interface ReadingViewProps {
     savedIds: string[];
     onToggleSave: (id: string) => void;
     onOpenImport: () => void;
+    onOpenRepository: () => void;
     onOpenImportInFolder?: (folderPath: string) => void;
     onDeleteText?: (id: string | number) => void;
     onSaveGeneratedCard: (card: Keyword, context: string) => void;
@@ -77,6 +78,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     savedIds,
     onToggleSave,
     onOpenImport,
+    onOpenRepository,
     onOpenImportInFolder,
     onDeleteText,
     onSaveGeneratedCard,
@@ -673,8 +675,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 </>
             )}
 
-            <div className="fixed bottom-24 right-6 z-40">
-                <button onClick={onOpenImport} className="bg-brand-600 text-white p-4 rounded-full shadow-lg hover:bg-brand-700 active:scale-95 transition-all">
+            <div className="fixed bottom-24 right-6 z-40 flex flex-col gap-3">
+                <button
+                    onClick={onOpenRepository}
+                    className="bg-white text-brand-600 p-4 rounded-full shadow-lg border border-brand-100 hover:bg-brand-50 active:scale-95 transition-all text-sm font-bold flex items-center justify-center transform hover:-translate-y-1"
+                    title="Explorar Biblioteca App"
+                >
+                    <Icon name="library" size={24} />
+                </button>
+                <button
+                    onClick={onOpenImport}
+                    className="bg-brand-600 text-white p-4 rounded-full shadow-lg hover:bg-brand-700 active:scale-95 transition-all transform hover:-translate-y-1"
+                    title="Importar Texto Personalizado"
+                >
                     <Icon name="plus" size={24} />
                 </button>
             </div>

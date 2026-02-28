@@ -1,0 +1,696 @@
+[
+  {
+    "chinese": "A: 嘿，你这是什么软件？",
+    "pinyin": "A: Hēi, nǐ zhè shì shénme ruǎnjiàn?",
+    "translation": "A: Ei, que software é esse?",
+    "tokens": [
+      "嘿",
+      "，",
+      "你",
+      "这",
+      "是",
+      "什么",
+      "软件",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "Ei, Olá"
+      },
+      {
+        "id": 2,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este, isso"
+      },
+      {
+        "id": 4,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, é"
+      },
+      {
+        "id": 5,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê, qual"
+      },
+      {
+        "id": 6,
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software"
+      }
+    ],
+    "id": "local-1772298306621-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 谷歌云端硬盘。",
+    "pinyin": "B: Gǔgē Yúnduān Yìngpán.",
+    "translation": "B: Google Drive.",
+    "tokens": [
+      "谷歌",
+      "云端",
+      "硬盘",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "谷歌",
+        "pinyin": "Gǔgē",
+        "meaning": "Google"
+      },
+      {
+        "id": 2,
+        "word": "云端硬盘",
+        "pinyin": "yúnduān yìngpán",
+        "meaning": "Drive, disco na nuvem"
+      }
+    ],
+    "id": "local-1772298306621-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我没听过。你用它来做什么？",
+    "pinyin": "A: Wǒ méi tīng guò. Nǐ yòng tā lái zuò shénme?",
+    "translation": "A: Nunca ouvi falar. Você usa para quê?",
+    "tokens": [
+      "我",
+      "没",
+      "听",
+      "过",
+      "。",
+      "你",
+      "用",
+      "它",
+      "来",
+      "做",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "没听过",
+        "pinyin": "méi tīng guò",
+        "meaning": "nunca ouvi falar, não ouvi"
+      },
+      {
+        "id": 3,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 4,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      },
+      {
+        "id": 5,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para objetos)"
+      },
+      {
+        "id": 6,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer"
+      },
+      {
+        "id": 7,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê"
+      }
+    ],
+    "id": "local-1772298306621-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这是一个非常方便的免费在线文档工具。你可以存储和共享文件。",
+    "pinyin": "B: Zhè shì yīgè fēicháng fāngbiàn de miǎnfèi zàixiàn wéndàng gōngjù. Nǐ kěyǐ cúnchú hé gòngxiǎng wénjiàn.",
+    "translation": "B: É uma ferramenta de documentos online gratuita muito conveniente. Você pode armazenar e compartilhar arquivos.",
+    "tokens": [
+      "这",
+      "是",
+      "一个",
+      "非常",
+      "方便",
+      "的",
+      "免费",
+      "在线",
+      "文档",
+      "工具",
+      "。",
+      "你",
+      "可以",
+      "存储",
+      "和",
+      "共享",
+      "文件",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este, isso"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, é"
+      },
+      {
+        "id": 3,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um, uma"
+      },
+      {
+        "id": 4,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente, prático"
+      },
+      {
+        "id": 6,
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "(partícula possessiva/conectora)"
+      },
+      {
+        "id": 7,
+        "word": "免费",
+        "pinyin": "miǎnfèi",
+        "meaning": "gratuito"
+      },
+      {
+        "id": 8,
+        "word": "在线",
+        "pinyin": "zàixiàn",
+        "meaning": "online"
+      },
+      {
+        "id": 9,
+        "word": "文档",
+        "pinyin": "wéndàng",
+        "meaning": "documento"
+      },
+      {
+        "id": 10,
+        "word": "工具",
+        "pinyin": "gōngjù",
+        "meaning": "ferramenta"
+      },
+      {
+        "id": 11,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 12,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 13,
+        "word": "存储",
+        "pinyin": "cúnchú",
+        "meaning": "armazenar, guardar"
+      },
+      {
+        "id": 14,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 15,
+        "word": "共享",
+        "pinyin": "gòngxiǎng",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 16,
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "arquivo"
+      }
+    ],
+    "id": "local-1772298306621-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 它方便吗？",
+    "pinyin": "A: Tā fāngbiàn ma?",
+    "translation": "A: É conveniente?",
+    "tokens": [
+      "它",
+      "方便",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para objetos)"
+      },
+      {
+        "id": 2,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente, prático"
+      },
+      {
+        "id": 3,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772298306621-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 非常方便。现在有很多这种云存储软件。例如，百度云、SkyDrive、Dropbox等等。",
+    "pinyin": "B: Fēicháng fāngbiàn. Xiànzài yǒu hěnduō zhè zhǒng yúncúnchú ruǎnjiàn. Lìrú, Bǎidù Yún, SkyDrive, Dropbox děngděng.",
+    "translation": "B: Muito conveniente. Atualmente existem muitos softwares de armazenamento em nuvem desse tipo. Por exemplo, Baidu Cloud, SkyDrive, Dropbox e assim por diante.",
+    "tokens": [
+      "非常",
+      "方便",
+      "。",
+      "现在",
+      "有",
+      "很多",
+      "这种",
+      "云",
+      "存储",
+      "软件",
+      "。",
+      "例如",
+      "，",
+      "百度",
+      "云",
+      "、",
+      "SkyDrive",
+      "、",
+      "Dropbox",
+      "等等",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente, prático"
+      },
+      {
+        "id": 3,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora, atualmente"
+      },
+      {
+        "id": 4,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter, haver"
+      },
+      {
+        "id": 5,
+        "word": "很多",
+        "pinyin": "hěnduō",
+        "meaning": "muitos"
+      },
+      {
+        "id": 6,
+        "word": "这种",
+        "pinyin": "zhè zhǒng",
+        "meaning": "este tipo, desse tipo"
+      },
+      {
+        "id": 7,
+        "word": "云存储",
+        "pinyin": "yúncúnchú",
+        "meaning": "armazenamento em nuvem"
+      },
+      {
+        "id": 8,
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software"
+      },
+      {
+        "id": 9,
+        "word": "例如",
+        "pinyin": "lìrú",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 10,
+        "word": "百度云",
+        "pinyin": "Bǎidù Yún",
+        "meaning": "Baidu Cloud"
+      },
+      {
+        "id": 11,
+        "word": "等等",
+        "pinyin": "děngděng",
+        "meaning": "e assim por diante, etc."
+      }
+    ],
+    "id": "local-1772298306621-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 什么是云存储？",
+    "pinyin": "A: Shénme shì yúncúnchú?",
+    "translation": "A: O que é armazenamento em nuvem?",
+    "tokens": [
+      "什么",
+      "是",
+      "云",
+      "存储",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser, é"
+      },
+      {
+        "id": 3,
+        "word": "云存储",
+        "pinyin": "yúncúnchú",
+        "meaning": "armazenamento em nuvem"
+      }
+    ],
+    "id": "local-1772298306621-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 简单来说，就是把你的文件放到谷歌的云端硬盘上。然后只要你登录了，你就可以在不同的设备上使用这些文档。",
+    "pinyin": "B: Jiǎndān lái shuō, jiù shì bǎ nǐ de wénjiàn fàng dào Gǔgē de yúnduān yìngpán shàng. Ránhòu zhǐyào nǐ dēnglù le, nǐ jiù kěyǐ zài bùtóng de shèbèi shàng shǐyòng zhèxiē wéndàng.",
+    "translation": "B: Simplificando, é colocar seus arquivos no Google Drive. Então, contanto que você esteja logado, você pode usar esses documentos em diferentes dispositivos.",
+    "tokens": [
+      "简单",
+      "来说",
+      "，",
+      "就",
+      "是",
+      "把",
+      "你",
+      "的",
+      "文件",
+      "放",
+      "到",
+      "谷歌",
+      "的",
+      "云端",
+      "硬盘",
+      "上",
+      "。",
+      "然后",
+      "只要",
+      "你",
+      "登录",
+      "了",
+      "，",
+      "你",
+      "就",
+      "可以",
+      "在",
+      "不同",
+      "的",
+      "设备",
+      "上",
+      "使用",
+      "这些",
+      "文档",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "简单来说",
+        "pinyin": "jiǎndān lái shuō",
+        "meaning": "simplificando, em termos simples"
+      },
+      {
+        "id": 2,
+        "word": "就是",
+        "pinyin": "jiù shì",
+        "meaning": "é, precisamente"
+      },
+      {
+        "id": 3,
+        "word": "把",
+        "pinyin": "bǎ",
+        "meaning": "(partícula que move o objeto para antes do verbo)"
+      },
+      {
+        "id": 4,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 5,
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "arquivo"
+      },
+      {
+        "id": 6,
+        "word": "放",
+        "pinyin": "fàng",
+        "meaning": "colocar, pôr"
+      },
+      {
+        "id": 7,
+        "word": "到",
+        "pinyin": "dào",
+        "meaning": "para, até (indica chegada ou resultado)"
+      },
+      {
+        "id": 8,
+        "word": "谷歌",
+        "pinyin": "Gǔgē",
+        "meaning": "Google"
+      },
+      {
+        "id": 9,
+        "word": "云端硬盘",
+        "pinyin": "yúnduān yìngpán",
+        "meaning": "Drive, disco na nuvem"
+      },
+      {
+        "id": 10,
+        "word": "上",
+        "pinyin": "shàng",
+        "meaning": "em cima, em"
+      },
+      {
+        "id": 11,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "então, depois"
+      },
+      {
+        "id": 12,
+        "word": "只要",
+        "pinyin": "zhǐyào",
+        "meaning": "contanto que, desde que"
+      },
+      {
+        "id": 13,
+        "word": "登录",
+        "pinyin": "dēnglù",
+        "meaning": "fazer login, logar"
+      },
+      {
+        "id": 14,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 15,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "em, estar em"
+      },
+      {
+        "id": 16,
+        "word": "不同",
+        "pinyin": "bùtóng",
+        "meaning": "diferente"
+      },
+      {
+        "id": 17,
+        "word": "设备",
+        "pinyin": "shèbèi",
+        "meaning": "dispositivo, equipamento"
+      },
+      {
+        "id": 18,
+        "word": "使用",
+        "pinyin": "shǐyòng",
+        "meaning": "usar, utilizar"
+      },
+      {
+        "id": 19,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "estes, estas"
+      },
+      {
+        "id": 20,
+        "word": "文档",
+        "pinyin": "wéndàng",
+        "meaning": "documento"
+      }
+    ],
+    "id": "local-1772298306621-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那我就不需要占用内存了。这太方便了。",
+    "pinyin": "A: Nà wǒ jiù bù xūyào zànyòng nèicún le. Zhè tài fāngbiàn le.",
+    "translation": "A: Então não preciso ocupar memória. Isso é muito conveniente.",
+    "tokens": [
+      "那",
+      "我",
+      "就",
+      "不",
+      "需要",
+      "占用",
+      "内存",
+      "了",
+      "。",
+      "这",
+      "太",
+      "方便",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, aquilo"
+      },
+      {
+        "id": 2,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 3,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então, precisamente"
+      },
+      {
+        "id": 4,
+        "word": "不",
+        "pinyin": "bù",
+        "meaning": "não"
+      },
+      {
+        "id": 5,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar, necessitar"
+      },
+      {
+        "id": 6,
+        "word": "占用",
+        "pinyin": "zànyòng",
+        "meaning": "ocupar"
+      },
+      {
+        "id": 7,
+        "word": "内存",
+        "pinyin": "nèicún",
+        "meaning": "memória (RAM)"
+      },
+      {
+        "id": 8,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "(partícula de mudança de estado/aspecto completado)"
+      },
+      {
+        "id": 9,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este, isso"
+      },
+      {
+        "id": 10,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 11,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente, prático"
+      }
+    ],
+    "id": "local-1772298306621-8",
+    "language": "Chinês"
+  }
+]

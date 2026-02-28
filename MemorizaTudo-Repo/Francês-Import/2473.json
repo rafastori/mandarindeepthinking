@@ -1,0 +1,825 @@
+[
+  {
+    "chinese": "A: C'est encore le cours de maths redouté. Agh, Wang Xiaoming, après l'école, allons jouer au foot.",
+    "pinyin": "",
+    "translation": "A: É novamente a temida aula de matemática. Agh, Wang Xiaoming, depois da escola, vamos jogar futebol.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "encore",
+      "le",
+      "cours",
+      "de",
+      "maths",
+      "redouté",
+      ".",
+      "Agh",
+      ",",
+      "Wang",
+      "Xiaoming",
+      ",",
+      "après",
+      "l'école",
+      ",",
+      "allons",
+      "jouer",
+      "au",
+      "foot",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "novamente, ainda"
+      },
+      {
+        "id": 3,
+        "word": "cours",
+        "pinyin": "",
+        "meaning": "aula, curso"
+      },
+      {
+        "id": 4,
+        "word": "maths",
+        "pinyin": "",
+        "meaning": "matemática"
+      },
+      {
+        "id": 5,
+        "word": "redouté",
+        "pinyin": "",
+        "meaning": "temido"
+      },
+      {
+        "id": 6,
+        "word": "après",
+        "pinyin": "",
+        "meaning": "depois de"
+      },
+      {
+        "id": 7,
+        "word": "école",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 8,
+        "word": "allons",
+        "pinyin": "",
+        "meaning": "vamos"
+      },
+      {
+        "id": 9,
+        "word": "jouer",
+        "pinyin": "",
+        "meaning": "jogar"
+      },
+      {
+        "id": 10,
+        "word": "foot",
+        "pinyin": "",
+        "meaning": "futebol"
+      }
+    ],
+    "id": "local-1772299969627-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Li Jia, que dis-tu ? Lève-toi et explique-nous ce que sont les fractions.",
+    "pinyin": "",
+    "translation": "B: Li Jia, o que você diz? Levante-se e explique-nos o que são frações.",
+    "tokens": [
+      "B:",
+      "Li",
+      "Jia",
+      ",",
+      "que",
+      "dis-tu",
+      "?",
+      "Lève-toi",
+      "et",
+      "explique-nous",
+      "ce",
+      "que",
+      "sont",
+      "les",
+      "fractions",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "que dis-tu",
+        "pinyin": "",
+        "meaning": "o que você diz"
+      },
+      {
+        "id": 2,
+        "word": "Lève-toi",
+        "pinyin": "",
+        "meaning": "Levante-se"
+      },
+      {
+        "id": 3,
+        "word": "explique-nous",
+        "pinyin": "",
+        "meaning": "explique-nos"
+      },
+      {
+        "id": 4,
+        "word": "fractions",
+        "pinyin": "",
+        "meaning": "frações"
+      }
+    ],
+    "id": "local-1772299969627-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les fractions montrent combien de parties un nombre est d'un autre.",
+    "pinyin": "",
+    "translation": "A: As frações mostram quantas partes um número é de outro.",
+    "tokens": [
+      "A:",
+      "Les",
+      "fractions",
+      "montrent",
+      "combien",
+      "de",
+      "parties",
+      "un",
+      "nombre",
+      "est",
+      "d'un",
+      "autre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fractions",
+        "pinyin": "",
+        "meaning": "frações"
+      },
+      {
+        "id": 2,
+        "word": "montrent",
+        "pinyin": "",
+        "meaning": "mostram"
+      },
+      {
+        "id": 3,
+        "word": "combien de",
+        "pinyin": "",
+        "meaning": "quantas de"
+      },
+      {
+        "id": 4,
+        "word": "parties",
+        "pinyin": "",
+        "meaning": "partes"
+      },
+      {
+        "id": 5,
+        "word": "nombre",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 6,
+        "word": "autre",
+        "pinyin": "",
+        "meaning": "outro"
+      }
+    ],
+    "id": "local-1772299969627-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Peux-tu donner un exemple ?",
+    "pinyin": "",
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "B:",
+      "Peux-tu",
+      "donner",
+      "un",
+      "exemple",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Peux-tu",
+        "pinyin": "",
+        "meaning": "Você pode"
+      },
+      {
+        "id": 2,
+        "word": "donner",
+        "pinyin": "",
+        "meaning": "dar"
+      },
+      {
+        "id": 3,
+        "word": "exemple",
+        "pinyin": "",
+        "meaning": "exemplo"
+      }
+    ],
+    "id": "local-1772299969627-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Par exemple, si je prends une pomme sur trois pommes, c'est un tiers.",
+    "pinyin": "",
+    "translation": "A: Por exemplo, se eu pego uma maçã de três maçãs, isso é um terço.",
+    "tokens": [
+      "A:",
+      "Par",
+      "exemple",
+      ",",
+      "si",
+      "je",
+      "prends",
+      "une",
+      "pomme",
+      "sur",
+      "trois",
+      "pommes",
+      ",",
+      "c'est",
+      "un",
+      "tiers",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Par exemple",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      },
+      {
+        "id": 2,
+        "word": "prends",
+        "pinyin": "",
+        "meaning": "pego, tomo"
+      },
+      {
+        "id": 3,
+        "word": "pomme",
+        "pinyin": "",
+        "meaning": "maçã"
+      },
+      {
+        "id": 4,
+        "word": "sur",
+        "pinyin": "",
+        "meaning": "de, sobre"
+      },
+      {
+        "id": 5,
+        "word": "tiers",
+        "pinyin": "",
+        "meaning": "terço"
+      }
+    ],
+    "id": "local-1772299969627-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bien, alors comment l'écrit-on ?",
+    "pinyin": "",
+    "translation": "B: Bem, então como se escreve?",
+    "tokens": [
+      "B:",
+      "Bien",
+      ",",
+      "alors",
+      "comment",
+      "l'écrit-on",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien",
+        "pinyin": "",
+        "meaning": "Bem"
+      },
+      {
+        "id": 2,
+        "word": "alors",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "comment",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "l'écrit-on",
+        "pinyin": "",
+        "meaning": "se escreve"
+      }
+    ],
+    "id": "local-1772299969627-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Écris d'abord la barre de fraction. \"Le haut\" est le numérateur, et s'écrit au-dessus de la barre de fraction. \"Le bas\" est le dénominateur, et s'écrit en dessous.",
+    "pinyin": "",
+    "translation": "A: Escreva primeiro a barra de fração. \"O topo\" é o numerador, e se escreve acima da barra de fração. \"A parte de baixo\" é o denominador, e se escreve abaixo.",
+    "tokens": [
+      "A:",
+      "Écris",
+      "d'abord",
+      "la",
+      "barre",
+      "de",
+      "fraction",
+      ".",
+      "\"",
+      "Le",
+      "haut",
+      "\"",
+      "est",
+      "le",
+      "numérateur",
+      ",",
+      "et",
+      "s'écrit",
+      "au-dessus",
+      "de",
+      "la",
+      "barre",
+      "de",
+      "fraction",
+      ".",
+      "\"",
+      "Le",
+      "bas",
+      "\"",
+      "est",
+      "le",
+      "dénominateur",
+      ",",
+      "et",
+      "s'écrit",
+      "en",
+      "dessous",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Écris",
+        "pinyin": "",
+        "meaning": "Escreva"
+      },
+      {
+        "id": 2,
+        "word": "d'abord",
+        "pinyin": "",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 3,
+        "word": "barre de fraction",
+        "pinyin": "",
+        "meaning": "barra de fração"
+      },
+      {
+        "id": 4,
+        "word": "haut",
+        "pinyin": "",
+        "meaning": "topo"
+      },
+      {
+        "id": 5,
+        "word": "numérateur",
+        "pinyin": "",
+        "meaning": "numerador"
+      },
+      {
+        "id": 6,
+        "word": "s'écrit",
+        "pinyin": "",
+        "meaning": "se escreve"
+      },
+      {
+        "id": 7,
+        "word": "au-dessus de",
+        "pinyin": "",
+        "meaning": "acima de"
+      },
+      {
+        "id": 8,
+        "word": "bas",
+        "pinyin": "",
+        "meaning": "parte de baixo"
+      },
+      {
+        "id": 9,
+        "word": "dénominateur",
+        "pinyin": "",
+        "meaning": "denominador"
+      },
+      {
+        "id": 10,
+        "word": "en dessous",
+        "pinyin": "",
+        "meaning": "abaixo"
+      }
+    ],
+    "id": "local-1772299969627-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Bien. Alors, qu'est-ce qu'un pourcentage ?",
+    "pinyin": "",
+    "translation": "B: Bem. Então, o que é uma porcentagem?",
+    "tokens": [
+      "B:",
+      "Bien",
+      ".",
+      "Alors",
+      ",",
+      "qu'est-ce",
+      "qu'un",
+      "pourcentage",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien",
+        "pinyin": "",
+        "meaning": "Bem"
+      },
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "qu'est-ce que",
+        "pinyin": "",
+        "meaning": "o que é"
+      },
+      {
+        "id": 4,
+        "word": "pourcentage",
+        "pinyin": "",
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772299969627-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est une fraction de cent, par exemple : un quart est vingt-cinq pour cent ; une moitié est cinquante pour cent.",
+    "pinyin": "",
+    "translation": "A: É uma fração de cem, por exemplo: um quarto é vinte e cinco por cento; uma metade é cinquenta por cento.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "une",
+      "fraction",
+      "de",
+      "cent",
+      ",",
+      "par",
+      "exemple",
+      ":",
+      "un",
+      "quart",
+      "est",
+      "vingt-cinq",
+      "pour",
+      "cent",
+      ";",
+      "une",
+      "moitié",
+      "est",
+      "cinquante",
+      "pour",
+      "cent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "fraction",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 3,
+        "word": "cent",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 4,
+        "word": "par exemple",
+        "pinyin": "",
+        "meaning": "por exemplo"
+      },
+      {
+        "id": 5,
+        "word": "quart",
+        "pinyin": "",
+        "meaning": "quarto"
+      },
+      {
+        "id": 6,
+        "word": "vingt-cinq",
+        "pinyin": "",
+        "meaning": "vinte e cinco"
+      },
+      {
+        "id": 7,
+        "word": "pour cent",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 8,
+        "word": "moitié",
+        "pinyin": "",
+        "meaning": "metade"
+      },
+      {
+        "id": 9,
+        "word": "cinquante",
+        "pinyin": "",
+        "meaning": "cinquenta"
+      }
+    ],
+    "id": "local-1772299969627-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, qu'est-ce que \"plusieurs dixièmes\" ?",
+    "pinyin": "",
+    "translation": "B: Então, o que são \"vários décimos\"?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "qu'est-ce",
+      "que",
+      "\"",
+      "plusieurs",
+      "dixièmes",
+      "\"",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "qu'est-ce que",
+        "pinyin": "",
+        "meaning": "o que são"
+      },
+      {
+        "id": 3,
+        "word": "plusieurs",
+        "pinyin": "",
+        "meaning": "vários(as)"
+      },
+      {
+        "id": 4,
+        "word": "dixièmes",
+        "pinyin": "",
+        "meaning": "décimos"
+      }
+    ],
+    "id": "local-1772299969627-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: \"Un dixième\" est une fraction de dix. Par exemple, \"neuf dixièmes\" est neuf sur dix, et aussi quatre-vingt-dix pour cent.",
+    "pinyin": "",
+    "translation": "A: \"Um décimo\" é uma fração de dez. Por exemplo, \"nove décimos\" é nove sobre dez, e também noventa por cento.",
+    "tokens": [
+      "A:",
+      "\"",
+      "Un",
+      "dixième",
+      "\"",
+      "est",
+      "une",
+      "fraction",
+      "de",
+      "dix",
+      ".",
+      "Par",
+      "exemple",
+      ",",
+      "\"",
+      "neuf",
+      "dixièmes",
+      "\"",
+      "est",
+      "neuf",
+      "sur",
+      "dix",
+      ",",
+      "et",
+      "aussi",
+      "quatre-vingt-dix",
+      "pour",
+      "cent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dixième",
+        "pinyin": "",
+        "meaning": "décimo"
+      },
+      {
+        "id": 2,
+        "word": "fraction",
+        "pinyin": "",
+        "meaning": "fração"
+      },
+      {
+        "id": 3,
+        "word": "dix",
+        "pinyin": "",
+        "meaning": "dez"
+      },
+      {
+        "id": 4,
+        "word": "Par exemple",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      },
+      {
+        "id": 5,
+        "word": "neuf",
+        "pinyin": "",
+        "meaning": "nove"
+      },
+      {
+        "id": 6,
+        "word": "sur",
+        "pinyin": "",
+        "meaning": "sobre"
+      },
+      {
+        "id": 7,
+        "word": "aussi",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 8,
+        "word": "quatre-vingt-dix",
+        "pinyin": "",
+        "meaning": "noventa"
+      },
+      {
+        "id": 9,
+        "word": "pour cent",
+        "pinyin": "",
+        "meaning": "por cento"
+      }
+    ],
+    "id": "local-1772299969627-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: À l'avenir, ne dors pas en classe ! Et tu n'as pas le droit de parler ! Si tu parles encore, tu resteras immobile en guise de punition !",
+    "pinyin": "",
+    "translation": "B: No futuro, não durma na aula! E você não tem o direito de falar! Se você falar de novo, você ficará imóvel como punição!",
+    "tokens": [
+      "B:",
+      "À",
+      "l'avenir",
+      ",",
+      "ne",
+      "dors",
+      "pas",
+      "en",
+      "classe",
+      "!",
+      "Et",
+      "tu",
+      "n'as",
+      "pas",
+      "le",
+      "droit",
+      "de",
+      "parler",
+      "!",
+      "Si",
+      "tu",
+      "parles",
+      "encore",
+      ",",
+      "tu",
+      "resteras",
+      "immobile",
+      "en",
+      "guise",
+      "de",
+      "punition",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "À l'avenir",
+        "pinyin": "",
+        "meaning": "No futuro"
+      },
+      {
+        "id": 2,
+        "word": "ne dors pas",
+        "pinyin": "",
+        "meaning": "não durma"
+      },
+      {
+        "id": 3,
+        "word": "en classe",
+        "pinyin": "",
+        "meaning": "na aula"
+      },
+      {
+        "id": 4,
+        "word": "n'as pas le droit",
+        "pinyin": "",
+        "meaning": "não tem o direito"
+      },
+      {
+        "id": 5,
+        "word": "parler",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 6,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "novamente"
+      },
+      {
+        "id": 7,
+        "word": "restera",
+        "pinyin": "",
+        "meaning": "ficará"
+      },
+      {
+        "id": 8,
+        "word": "immobile",
+        "pinyin": "",
+        "meaning": "imóvel"
+      },
+      {
+        "id": 9,
+        "word": "en guise de",
+        "pinyin": "",
+        "meaning": "como (em forma de)"
+      },
+      {
+        "id": 10,
+        "word": "punition",
+        "pinyin": "",
+        "meaning": "punição"
+      }
+    ],
+    "id": "local-1772299969627-11",
+    "language": "Francês"
+  }
+]

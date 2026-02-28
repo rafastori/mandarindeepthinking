@@ -1,0 +1,627 @@
+[
+  {
+    "chinese": "A: 小秦（シャオチン）、何の投稿を見ているの？ とても夢中になっているね！",
+    "pinyin": null,
+    "translation": "A: Xiao Qin, que tipo de postagem você está vendo? Você está tão absorto!",
+    "tokens": [
+      "A:",
+      "小秦",
+      "（",
+      "シャオチン",
+      "）",
+      "、",
+      "何",
+      "の",
+      "投稿",
+      "を",
+      "見て",
+      "いる",
+      "の",
+      "？",
+      "とても",
+      "夢中",
+      "に",
+      "なっ",
+      "て",
+      "いる",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小秦",
+        "pinyin": "Xiao Qin (シャオチン)",
+        "meaning": "Xiao Qin (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "何の",
+        "pinyin": "nan no",
+        "meaning": "Que tipo de"
+      },
+      {
+        "id": 3,
+        "word": "投稿",
+        "pinyin": "tōkō",
+        "meaning": "Postagem"
+      },
+      {
+        "id": 4,
+        "word": "見て",
+        "pinyin": "mite",
+        "meaning": "Vendo (forma te de 見る)"
+      },
+      {
+        "id": 5,
+        "word": "夢中",
+        "pinyin": "muchū",
+        "meaning": "Absorto, fascinado"
+      }
+    ],
+    "id": "local-1772299909309-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ、盲導犬が地下鉄に乗れるべきかについてのインターネット調査を見ているんだ。",
+    "pinyin": null,
+    "translation": "B: Ah, estou vendo uma pesquisa na internet sobre se cães-guia deveriam poder andar de metrô.",
+    "tokens": [
+      "B:",
+      "ああ",
+      "、",
+      "盲導犬",
+      "が",
+      "地下鉄",
+      "に",
+      "乗れる",
+      "べき",
+      "か",
+      "について",
+      "の",
+      "インターネット",
+      "調査",
+      "を",
+      "見",
+      "て",
+      "いる",
+      "ん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "盲導犬",
+        "pinyin": "mōdōken",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 2,
+        "word": "地下鉄",
+        "pinyin": "chikatetsu",
+        "meaning": "Metrô"
+      },
+      {
+        "id": 3,
+        "word": "乗れる",
+        "pinyin": "noreru",
+        "meaning": "Pode andar/montar (potencial de 乗る)"
+      },
+      {
+        "id": 4,
+        "word": "べき",
+        "pinyin": "beki",
+        "meaning": "Deveria, deve"
+      },
+      {
+        "id": 5,
+        "word": "について",
+        "pinyin": "ni tsuite",
+        "meaning": "Sobre"
+      },
+      {
+        "id": 6,
+        "word": "インターネット調査",
+        "pinyin": "intānetto chōsa",
+        "meaning": "Pesquisa na internet"
+      }
+    ],
+    "id": "local-1772299909309-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 調査の結果はどうなの？",
+    "pinyin": null,
+    "translation": "A: E qual o resultado da pesquisa?",
+    "tokens": [
+      "A:",
+      "調査",
+      "の",
+      "結果",
+      "は",
+      "どう",
+      "な",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "調査",
+        "pinyin": "chōsa",
+        "meaning": "Pesquisa"
+      },
+      {
+        "id": 2,
+        "word": "結果",
+        "pinyin": "kekka",
+        "meaning": "Resultado"
+      },
+      {
+        "id": 3,
+        "word": "どう",
+        "pinyin": "dō",
+        "meaning": "Como"
+      }
+    ],
+    "id": "local-1772299909309-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: みんなの意見は様々で、賛成の人もいれば、反対の人もいるよ。",
+    "pinyin": null,
+    "translation": "B: As opiniões de todos são diversas; algumas pessoas são a favor, e outras são contra.",
+    "tokens": [
+      "B:",
+      "みんな",
+      "の",
+      "意見",
+      "は",
+      "様々",
+      "で",
+      "、",
+      "賛成",
+      "の",
+      "人",
+      "も",
+      "いれ",
+      "ば",
+      "、",
+      "反対",
+      "の",
+      "人",
+      "も",
+      "いる",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "みんな",
+        "pinyin": "minna",
+        "meaning": "Todos"
+      },
+      {
+        "id": 2,
+        "word": "意見",
+        "pinyin": "iken",
+        "meaning": "Opinião"
+      },
+      {
+        "id": 3,
+        "word": "様々",
+        "pinyin": "samazama",
+        "meaning": "Diverso, variado"
+      },
+      {
+        "id": 4,
+        "word": "賛成",
+        "pinyin": "sansei",
+        "meaning": "Aprovação, ser a favor"
+      },
+      {
+        "id": 5,
+        "word": "反対",
+        "pinyin": "hantai",
+        "meaning": "Oposição, ser contra"
+      }
+    ],
+    "id": "local-1772299909309-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 盲導犬は皆訓練を受けているでしょ。他の乗客を襲うことはないのに、なぜ反対するの？",
+    "pinyin": null,
+    "translation": "A: Cães-guia são todos treinados, não são? Eles não atacarão outros passageiros, então por que ser contra?",
+    "tokens": [
+      "A:",
+      "盲導犬",
+      "は",
+      "皆",
+      "訓練",
+      "を",
+      "受け",
+      "て",
+      "いる",
+      "でしょ",
+      "。",
+      "他",
+      "の",
+      "乗客",
+      "を",
+      "襲う",
+      "こと",
+      "は",
+      "ない",
+      "の",
+      "に",
+      "、",
+      "なぜ",
+      "反対",
+      "する",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "盲導犬",
+        "pinyin": "mōdōken",
+        "meaning": "Cão-guia"
+      },
+      {
+        "id": 2,
+        "word": "皆",
+        "pinyin": "mina",
+        "meaning": "Todos"
+      },
+      {
+        "id": 3,
+        "word": "訓練",
+        "pinyin": "kunren",
+        "meaning": "Treinamento"
+      },
+      {
+        "id": 4,
+        "word": "受けている",
+        "pinyin": "ukete iru",
+        "meaning": "Estão recebendo"
+      },
+      {
+        "id": 5,
+        "word": "乗客",
+        "pinyin": "jōkyaku",
+        "meaning": "Passageiro"
+      },
+      {
+        "id": 6,
+        "word": "襲う",
+        "pinyin": "osou",
+        "meaning": "Atacar"
+      },
+      {
+        "id": 7,
+        "word": "なぜ",
+        "pinyin": "naze",
+        "meaning": "Por que"
+      },
+      {
+        "id": 8,
+        "word": "反対する",
+        "pinyin": "hantai suru",
+        "meaning": "Ser contra, opor-se"
+      }
+    ],
+    "id": "local-1772299909309-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: まったくその通りだよ。盲導犬は盲人の目だもの。盲導犬を地下鉄に乗せることは、盲人にとって便利なだけでなく、尊敬の表れでもあるんだ。",
+    "pinyin": null,
+    "translation": "B: Exatamente! Cães-guia são os olhos dos cegos. Permitir que cães-guia andem de metrô não é apenas conveniente para os cegos, mas também uma demonstração de respeito.",
+    "tokens": [
+      "B:",
+      "まったく",
+      "その",
+      "通り",
+      "だ",
+      "よ",
+      "。",
+      "盲導犬",
+      "は",
+      "盲人",
+      "の",
+      "目",
+      "だ",
+      "もの",
+      "。",
+      "盲導犬",
+      "を",
+      "地下鉄",
+      "に",
+      "乗せる",
+      "こと",
+      "は",
+      "、",
+      "盲人",
+      "に",
+      "とっ",
+      "て",
+      "便利",
+      "な",
+      "だけ",
+      "で",
+      "なく",
+      "、",
+      "尊敬",
+      "の",
+      "表れ",
+      "で",
+      "も",
+      "ある",
+      "ん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "まったく",
+        "pinyin": "mattaku",
+        "meaning": "Exatamente, completamente"
+      },
+      {
+        "id": 2,
+        "word": "その通り",
+        "pinyin": "sono tōri",
+        "meaning": "Isso mesmo, exatamente"
+      },
+      {
+        "id": 3,
+        "word": "盲人",
+        "pinyin": "mōjin",
+        "meaning": "Pessoa cega"
+      },
+      {
+        "id": 4,
+        "word": "目",
+        "pinyin": "me",
+        "meaning": "Olho"
+      },
+      {
+        "id": 5,
+        "word": "乗せる",
+        "pinyin": "noseru",
+        "meaning": "Fazer subir, permitir andar"
+      },
+      {
+        "id": 6,
+        "word": "にとって",
+        "pinyin": "ni totte",
+        "meaning": "Para (alguém), em relação a (alguém)"
+      },
+      {
+        "id": 7,
+        "word": "便利",
+        "pinyin": "benri",
+        "meaning": "Conveniente"
+      },
+      {
+        "id": 8,
+        "word": "だけでなく",
+        "pinyin": "dake de naku",
+        "meaning": "Não apenas... mas também"
+      },
+      {
+        "id": 9,
+        "word": "尊敬",
+        "pinyin": "sonkei",
+        "meaning": "Respeito"
+      },
+      {
+        "id": 10,
+        "word": "表れ",
+        "pinyin": "araware",
+        "meaning": "Manifestação, demonstração"
+      }
+    ],
+    "id": "local-1772299909309-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 上海ではすでに盲導犬が地下鉄に乗ることが許されているけど、一部の都市ではまだダメなんだね。",
+    "pinyin": null,
+    "translation": "A: Em Xangai, cães-guia já são permitidos no metrô, mas em algumas cidades ainda não é permitido, não é?",
+    "tokens": [
+      "A:",
+      "上海",
+      "で",
+      "は",
+      "すでに",
+      "盲導犬",
+      "が",
+      "地下鉄",
+      "に",
+      "乗る",
+      "こと",
+      "が",
+      "許さ",
+      "れ",
+      "て",
+      "いる",
+      "けど",
+      "、",
+      "一部",
+      "の",
+      "都市",
+      "で",
+      "は",
+      "まだ",
+      "ダメ",
+      "な",
+      "ん",
+      "だ",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上海",
+        "pinyin": "Shanhai",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 2,
+        "word": "すでに",
+        "pinyin": "sudeni",
+        "meaning": "Já"
+      },
+      {
+        "id": 3,
+        "word": "許されている",
+        "pinyin": "yurusarete iru",
+        "meaning": "É permitido (passivo de 許す)"
+      },
+      {
+        "id": 4,
+        "word": "一部",
+        "pinyin": "ichibu",
+        "meaning": "Parte, alguns"
+      },
+      {
+        "id": 5,
+        "word": "都市",
+        "pinyin": "toshi",
+        "meaning": "Cidade"
+      },
+      {
+        "id": 6,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 7,
+        "word": "ダメ",
+        "pinyin": "dame",
+        "meaning": "Não permitido, ruim"
+      }
+    ],
+    "id": "local-1772299909309-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: この調査はまだ終わってないんだ。早速投票して、僕たちの支持を示そうよ。",
+    "pinyin": null,
+    "translation": "B: Esta pesquisa ainda não terminou. Vamos votar rapidamente e mostrar nosso apoio!",
+    "tokens": [
+      "B:",
+      "この",
+      "調査",
+      "は",
+      "まだ",
+      "終わっ",
+      "て",
+      "ない",
+      "ん",
+      "だ",
+      "。",
+      "早速",
+      "投票",
+      "し",
+      "て",
+      "、",
+      "僕たち",
+      "の",
+      "支持",
+      "を",
+      "示そ",
+      "う",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "調査",
+        "pinyin": "chōsa",
+        "meaning": "Pesquisa"
+      },
+      {
+        "id": 2,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "Ainda"
+      },
+      {
+        "id": 3,
+        "word": "終わってない",
+        "pinyin": "owattenai",
+        "meaning": "Não terminou"
+      },
+      {
+        "id": 4,
+        "word": "早速",
+        "pinyin": "sassoku",
+        "meaning": "Imediatamente, rapidamente"
+      },
+      {
+        "id": 5,
+        "word": "投票",
+        "pinyin": "tōhyō",
+        "meaning": "Votar, voto"
+      },
+      {
+        "id": 6,
+        "word": "僕たち",
+        "pinyin": "bokutachi",
+        "meaning": "Nós (masculino/informal)"
+      },
+      {
+        "id": 7,
+        "word": "支持",
+        "pinyin": "shiji",
+        "meaning": "Apoio"
+      },
+      {
+        "id": 8,
+        "word": "示そう",
+        "pinyin": "shimesō",
+        "meaning": "Vamos mostrar (volitivo de 示す)"
+      }
+    ],
+    "id": "local-1772299909309-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: そうだね。",
+    "pinyin": null,
+    "translation": "A: Verdade./Certo.",
+    "tokens": [
+      "A:",
+      "そう",
+      "だ",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "そう",
+        "pinyin": "sō",
+        "meaning": "Assim, é isso"
+      },
+      {
+        "id": 2,
+        "word": "そうだね",
+        "pinyin": "sō da ne",
+        "meaning": "É isso mesmo, concordo, certo"
+      }
+    ],
+    "id": "local-1772299909309-8",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,551 @@
+[
+  {
+    "chinese": "A: Hello. May I ask, is this Huamei Hospital Physical Examination Department?",
+    "pinyin": "",
+    "translation": "A: Olá. Posso perguntar, este é o Departamento de Exames Médicos do Hospital Huamei?",
+    "tokens": [
+      "A:",
+      "Hello",
+      ".",
+      "May",
+      "I",
+      "ask",
+      ",",
+      "is",
+      "this",
+      "Huamei",
+      "Hospital",
+      "Physical",
+      "Examination",
+      "Department",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "May I ask",
+        "pinyin": "",
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 2,
+        "word": "Huamei Hospital",
+        "pinyin": "",
+        "meaning": "Hospital Huamei"
+      },
+      {
+        "id": 3,
+        "word": "Physical Examination Department",
+        "pinyin": "",
+        "meaning": "Departamento de Exames Médicos"
+      },
+      {
+        "id": 4,
+        "word": "Department",
+        "pinyin": "",
+        "meaning": "Departamento"
+      }
+    ],
+    "id": "local-1772293894122-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes. May I ask, is there something I can help you with?",
+    "pinyin": "",
+    "translation": "B: Sim. Posso perguntar, há algo em que posso ajudar?",
+    "tokens": [
+      "B:",
+      "Yes",
+      ".",
+      "May",
+      "I",
+      "ask",
+      ",",
+      "is",
+      "there",
+      "something",
+      "I",
+      "can",
+      "help",
+      "you",
+      "with",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "May I ask",
+        "pinyin": "",
+        "meaning": "Posso perguntar"
+      },
+      {
+        "id": 2,
+        "word": "help you with",
+        "pinyin": "",
+        "meaning": "ajudar você com"
+      }
+    ],
+    "id": "local-1772293894122-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Do you have work entry physical examinations here?",
+    "pinyin": "",
+    "translation": "A: Vocês fazem exames médicos para admissão de trabalho aqui?",
+    "tokens": [
+      "A:",
+      "Do",
+      "you",
+      "have",
+      "work",
+      "entry",
+      "physical",
+      "examinations",
+      "here",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "work entry physical examinations",
+        "pinyin": "",
+        "meaning": "exames médicos para admissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "physical examinations",
+        "pinyin": "",
+        "meaning": "exames médicos"
+      },
+      {
+        "id": 3,
+        "word": "here",
+        "pinyin": "",
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772293894122-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: We do. We have a package that is 260 yuan.",
+    "pinyin": "",
+    "translation": "B: Sim, fazemos. Temos um pacote que custa 260 yuans.",
+    "tokens": [
+      "B:",
+      "We",
+      "do",
+      ".",
+      "We",
+      "have",
+      "a",
+      "package",
+      "that",
+      "is",
+      "260",
+      "yuan",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "package",
+        "pinyin": "",
+        "meaning": "pacote"
+      },
+      {
+        "id": 2,
+        "word": "260 yuan",
+        "pinyin": "",
+        "meaning": "260 yuans"
+      }
+    ],
+    "id": "local-1772293894122-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Which particulars will it examine?",
+    "pinyin": "",
+    "translation": "A: Quais itens ele vai examinar?",
+    "tokens": [
+      "A:",
+      "Which",
+      "particulars",
+      "will",
+      "it",
+      "examine",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "particulars",
+        "pinyin": "",
+        "meaning": "itens/detalhes específicos"
+      },
+      {
+        "id": 2,
+        "word": "examine",
+        "pinyin": "",
+        "meaning": "examinar"
+      }
+    ],
+    "id": "local-1772293894122-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: The basic height, weight and blood pressure. Blood testing, urine testing, B mode ultrasonography, and electrocardiogram.",
+    "pinyin": "",
+    "translation": "B: A altura, peso e pressão arterial básicas. Exame de sangue, exame de urina, ultrassonografia em modo B e eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "The",
+      "basic",
+      "height",
+      ",",
+      "weight",
+      "and",
+      "blood",
+      "pressure",
+      ".",
+      "Blood",
+      "testing",
+      ",",
+      "urine",
+      "testing",
+      ",",
+      "B",
+      "mode",
+      "ultrasonography",
+      ",",
+      "and",
+      "electrocardiogram",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "height",
+        "pinyin": "",
+        "meaning": "altura"
+      },
+      {
+        "id": 2,
+        "word": "weight",
+        "pinyin": "",
+        "meaning": "peso"
+      },
+      {
+        "id": 3,
+        "word": "blood pressure",
+        "pinyin": "",
+        "meaning": "pressão arterial"
+      },
+      {
+        "id": 4,
+        "word": "Blood testing",
+        "pinyin": "",
+        "meaning": "exame de sangue"
+      },
+      {
+        "id": 5,
+        "word": "urine testing",
+        "pinyin": "",
+        "meaning": "exame de urina"
+      },
+      {
+        "id": 6,
+        "word": "B mode ultrasonography",
+        "pinyin": "",
+        "meaning": "ultrassonografia em modo B"
+      },
+      {
+        "id": 7,
+        "word": "electrocardiogram",
+        "pinyin": "",
+        "meaning": "eletrocardiograma"
+      }
+    ],
+    "id": "local-1772293894122-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: If I also want to have other particulars checked, can I have that done?",
+    "pinyin": "",
+    "translation": "A: Se eu também quiser que outros itens sejam verificados, posso fazer isso?",
+    "tokens": [
+      "A:",
+      "If",
+      "I",
+      "also",
+      "want",
+      "to",
+      "have",
+      "other",
+      "particulars",
+      "checked",
+      ",",
+      "can",
+      "I",
+      "have",
+      "that",
+      "done",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "particulars",
+        "pinyin": "",
+        "meaning": "itens/detalhes específicos"
+      },
+      {
+        "id": 2,
+        "word": "checked",
+        "pinyin": "",
+        "meaning": "verificados/examinados"
+      },
+      {
+        "id": 3,
+        "word": "have that done",
+        "pinyin": "",
+        "meaning": "fazer isso/mandar fazer"
+      }
+    ],
+    "id": "local-1772293894122-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes, you can. You can add individual items and make up the cost and that's fine.",
+    "pinyin": "",
+    "translation": "B: Sim, você pode. Você pode adicionar itens individuais e completar o custo e está tudo bem.",
+    "tokens": [
+      "B:",
+      "Yes",
+      ",",
+      "you",
+      "can",
+      ".",
+      "You",
+      "can",
+      "add",
+      "individual",
+      "items",
+      "and",
+      "make",
+      "up",
+      "the",
+      "cost",
+      "and",
+      "that's",
+      "fine",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "add individual items",
+        "pinyin": "",
+        "meaning": "adicionar itens individuais"
+      },
+      {
+        "id": 2,
+        "word": "make up the cost",
+        "pinyin": "",
+        "meaning": "completar/pagar o custo"
+      },
+      {
+        "id": 3,
+        "word": "fine",
+        "pinyin": "",
+        "meaning": "bem/tudo certo"
+      }
+    ],
+    "id": "local-1772293894122-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Will the report be directly mailed to work?",
+    "pinyin": "",
+    "translation": "A: O relatório será enviado diretamente para o trabalho?",
+    "tokens": [
+      "A:",
+      "Will",
+      "the",
+      "report",
+      "be",
+      "directly",
+      "mailed",
+      "to",
+      "work",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "report",
+        "pinyin": "",
+        "meaning": "relatório"
+      },
+      {
+        "id": 2,
+        "word": "directly mailed",
+        "pinyin": "",
+        "meaning": "enviado diretamente por correio"
+      },
+      {
+        "id": 3,
+        "word": "to work",
+        "pinyin": "",
+        "meaning": "para o trabalho"
+      }
+    ],
+    "id": "local-1772293894122-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: No, it is all up to the person to go and get it or to have it sent express. Do you need me to help you to make an appointment right now?",
+    "pinyin": "",
+    "translation": "B: Não, cabe à pessoa ir buscar ou mandar enviar por entrega expressa. Você precisa que eu ajude a marcar um horário agora?",
+    "tokens": [
+      "B:",
+      "No",
+      ",",
+      "it",
+      "is",
+      "all",
+      "up",
+      "to",
+      "the",
+      "person",
+      "to",
+      "go",
+      "and",
+      "get",
+      "it",
+      "or",
+      "to",
+      "have",
+      "it",
+      "sent",
+      "express",
+      ".",
+      "Do",
+      "you",
+      "need",
+      "me",
+      "to",
+      "help",
+      "you",
+      "to",
+      "make",
+      "an",
+      "appointment",
+      "right",
+      "now",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "all up to",
+        "pinyin": "",
+        "meaning": "cabe a/é responsabilidade de"
+      },
+      {
+        "id": 2,
+        "word": "go and get it",
+        "pinyin": "",
+        "meaning": "ir buscar"
+      },
+      {
+        "id": 3,
+        "word": "sent express",
+        "pinyin": "",
+        "meaning": "enviado por entrega expressa"
+      },
+      {
+        "id": 4,
+        "word": "make an appointment",
+        "pinyin": "",
+        "meaning": "marcar um horário/consulta"
+      },
+      {
+        "id": 5,
+        "word": "right now",
+        "pinyin": "",
+        "meaning": "agora mesmo"
+      }
+    ],
+    "id": "local-1772293894122-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Make it for next Monday.",
+    "pinyin": "",
+    "translation": "A: Marque para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "Make",
+      "it",
+      "for",
+      "next",
+      "Monday",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Make it for",
+        "pinyin": "",
+        "meaning": "Marque para"
+      },
+      {
+        "id": 2,
+        "word": "next Monday",
+        "pinyin": "",
+        "meaning": "próxima segunda-feira"
+      }
+    ],
+    "id": "local-1772293894122-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Ok. Please leave your basic information.",
+    "pinyin": "",
+    "translation": "B: Ok. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "B:",
+      "Ok",
+      ".",
+      "Please",
+      "leave",
+      "your",
+      "basic",
+      "information",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok/Certo"
+      },
+      {
+        "id": 2,
+        "word": "leave your basic information",
+        "pinyin": "",
+        "meaning": "deixe suas informações básicas"
+      },
+      {
+        "id": 3,
+        "word": "basic information",
+        "pinyin": "",
+        "meaning": "informações básicas"
+      }
+    ],
+    "id": "local-1772293894122-11",
+    "language": "Inglês"
+  }
+]

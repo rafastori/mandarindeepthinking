@@ -1,0 +1,774 @@
+[
+  {
+    "chinese": "A: È di nuovo la temuta lezione di matematica. Agh, Wang Xiaoming, dopo la scuola andiamo a giocare a calcio.",
+    "pinyin": "",
+    "translation": "A: É de novo a temida aula de matemática. Agh, Wang Xiaoming, depois da escola vamos jogar futebol.",
+    "tokens": [
+      "A:",
+      "È",
+      "di",
+      "nuovo",
+      "la",
+      "temuta",
+      "lezione",
+      "di",
+      "matematica",
+      ".",
+      "Agh",
+      ",",
+      "Wang",
+      "Xiaoming",
+      ",",
+      "dopo",
+      "la",
+      "scuola",
+      "andiamo",
+      "a",
+      "giocare",
+      "a",
+      "calcio",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È",
+        "pinyin": "",
+        "meaning": "É"
+      },
+      {
+        "id": 2,
+        "word": "di nuovo",
+        "pinyin": "",
+        "meaning": "de novo, novamente"
+      },
+      {
+        "id": 3,
+        "word": "temuta",
+        "pinyin": "",
+        "meaning": "temida"
+      },
+      {
+        "id": 4,
+        "word": "lezione",
+        "pinyin": "",
+        "meaning": "aula, lição"
+      },
+      {
+        "id": 5,
+        "word": "matematica",
+        "pinyin": "",
+        "meaning": "matemática"
+      },
+      {
+        "id": 6,
+        "word": "dopo",
+        "pinyin": "",
+        "meaning": "depois"
+      },
+      {
+        "id": 7,
+        "word": "scuola",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 8,
+        "word": "andiamo",
+        "pinyin": "",
+        "meaning": "vamos (verbo andare)"
+      },
+      {
+        "id": 9,
+        "word": "giocare",
+        "pinyin": "",
+        "meaning": "jogar, brincar"
+      },
+      {
+        "id": 10,
+        "word": "calcio",
+        "pinyin": "",
+        "meaning": "futebol"
+      }
+    ],
+    "id": "local-1772300048471-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Li Jia, cosa stai dicendo? Alzati e spiegaci cosa sono le frazioni.",
+    "pinyin": "",
+    "translation": "B: Li Jia, o que você está dizendo? Levante-se e explique-nos o que são as frações.",
+    "tokens": [
+      "B:",
+      "Li",
+      "Jia",
+      ",",
+      "cosa",
+      "stai",
+      "dicendo",
+      "?",
+      "Alzati",
+      "e",
+      "spiegaci",
+      "cosa",
+      "sono",
+      "le",
+      "frazioni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 11,
+        "word": "cosa",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 12,
+        "word": "stai dicendo",
+        "pinyin": "",
+        "meaning": "você está dizendo"
+      },
+      {
+        "id": 13,
+        "word": "Alzati",
+        "pinyin": "",
+        "meaning": "Levante-se (imperativo)"
+      },
+      {
+        "id": 14,
+        "word": "spiegaci",
+        "pinyin": "",
+        "meaning": "explique-nos (imperativo)"
+      },
+      {
+        "id": 15,
+        "word": "frazioni",
+        "pinyin": "",
+        "meaning": "frações"
+      }
+    ],
+    "id": "local-1772300048471-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Le frazioni mostrano quante parti un numero è di un altro.",
+    "pinyin": "",
+    "translation": "A: As frações mostram quantas partes um número é de outro.",
+    "tokens": [
+      "A:",
+      "Le",
+      "frazioni",
+      "mostrano",
+      "quante",
+      "parti",
+      "un",
+      "numero",
+      "è",
+      "di",
+      "un",
+      "altro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 16,
+        "word": "mostrano",
+        "pinyin": "",
+        "meaning": "mostram (verbo mostrare)"
+      },
+      {
+        "id": 17,
+        "word": "quante",
+        "pinyin": "",
+        "meaning": "quantas"
+      },
+      {
+        "id": 18,
+        "word": "parti",
+        "pinyin": "",
+        "meaning": "partes"
+      },
+      {
+        "id": 19,
+        "word": "numero",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 20,
+        "word": "altro",
+        "pinyin": "",
+        "meaning": "outro"
+      }
+    ],
+    "id": "local-1772300048471-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Puoi fare un esempio?",
+    "pinyin": "",
+    "translation": "B: Você pode dar um exemplo?",
+    "tokens": [
+      "B:",
+      "Puoi",
+      "fare",
+      "un",
+      "esempio",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 21,
+        "word": "Puoi",
+        "pinyin": "",
+        "meaning": "Você pode (verbo potere)"
+      },
+      {
+        "id": 22,
+        "word": "fare",
+        "pinyin": "",
+        "meaning": "fazer, dar"
+      },
+      {
+        "id": 23,
+        "word": "esempio",
+        "pinyin": "",
+        "meaning": "exemplo"
+      }
+    ],
+    "id": "local-1772300048471-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Per esempio, se prendo una mela da tre mele, quella è un terzo.",
+    "pinyin": "",
+    "translation": "A: Por exemplo, se pego uma maçã de três maçãs, aquilo é um terço.",
+    "tokens": [
+      "A:",
+      "Per",
+      "esempio",
+      ",",
+      "se",
+      "prendo",
+      "una",
+      "mela",
+      "da",
+      "tre",
+      "mele",
+      ",",
+      "quella",
+      "è",
+      "un",
+      "terzo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "Per esempio",
+        "pinyin": "",
+        "meaning": "Por exemplo"
+      },
+      {
+        "id": 25,
+        "word": "prendo",
+        "pinyin": "",
+        "meaning": "pego (verbo prendere)"
+      },
+      {
+        "id": 26,
+        "word": "mela",
+        "pinyin": "",
+        "meaning": "maçã"
+      },
+      {
+        "id": 27,
+        "word": "tre",
+        "pinyin": "",
+        "meaning": "três"
+      },
+      {
+        "id": 28,
+        "word": "terzo",
+        "pinyin": "",
+        "meaning": "terço"
+      }
+    ],
+    "id": "local-1772300048471-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Bene, allora come lo scriviamo?",
+    "pinyin": "",
+    "translation": "B: Bem, então como o escrevemos?",
+    "tokens": [
+      "B:",
+      "Bene",
+      ",",
+      "allora",
+      "come",
+      "lo",
+      "scriviamo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "Bene",
+        "pinyin": "",
+        "meaning": "Bem"
+      },
+      {
+        "id": 30,
+        "word": "allora",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 31,
+        "word": "come",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 32,
+        "word": "scriviamo",
+        "pinyin": "",
+        "meaning": "escrevemos (verbo scrivere)"
+      }
+    ],
+    "id": "local-1772300048471-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Per prima cosa scrivi la linea di frazione. \"La parte superiore\" è il numeratore, e si scrive sopra la linea di frazione. \"La parte inferiore\" è il denominatore, e si scrive sotto.",
+    "pinyin": "",
+    "translation": "A: Primeiro escreva a linha de fração. \"A parte superior\" é o numerador, e se escreve acima da linha de fração. \"A parte inferior\" é o denominador, e se escreve abaixo.",
+    "tokens": [
+      "A:",
+      "Per",
+      "prima",
+      "cosa",
+      "scrivi",
+      "la",
+      "linea",
+      "di",
+      "frazione",
+      ".",
+      "\"",
+      "La",
+      "parte",
+      "superiore",
+      "\"",
+      "è",
+      "il",
+      "numeratore",
+      ",",
+      "e",
+      "si",
+      "scrive",
+      "sopra",
+      "la",
+      "linea",
+      "di",
+      "frazione",
+      ".",
+      "\"",
+      "La",
+      "parte",
+      "inferiore",
+      "\"",
+      "è",
+      "il",
+      "denominatore",
+      ",",
+      "e",
+      "si",
+      "scrive",
+      "sotto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 33,
+        "word": "Per prima cosa",
+        "pinyin": "",
+        "meaning": "Primeiro, antes de tudo"
+      },
+      {
+        "id": 34,
+        "word": "scrivi",
+        "pinyin": "",
+        "meaning": "escreva (imperativo, verbo scrivere)"
+      },
+      {
+        "id": 35,
+        "word": "linea",
+        "pinyin": "",
+        "meaning": "linha"
+      },
+      {
+        "id": 36,
+        "word": "parte",
+        "pinyin": "",
+        "meaning": "parte"
+      },
+      {
+        "id": 37,
+        "word": "superiore",
+        "pinyin": "",
+        "meaning": "superior"
+      },
+      {
+        "id": 38,
+        "word": "numeratore",
+        "pinyin": "",
+        "meaning": "numerador"
+      },
+      {
+        "id": 39,
+        "word": "sopra",
+        "pinyin": "",
+        "meaning": "acima, sobre"
+      },
+      {
+        "id": 40,
+        "word": "inferiore",
+        "pinyin": "",
+        "meaning": "inferior"
+      },
+      {
+        "id": 41,
+        "word": "denominatore",
+        "pinyin": "",
+        "meaning": "denominador"
+      },
+      {
+        "id": 42,
+        "word": "sotto",
+        "pinyin": "",
+        "meaning": "abaixo, sob"
+      },
+      {
+        "id": 43,
+        "word": "si scrive",
+        "pinyin": "",
+        "meaning": "se escreve"
+      }
+    ],
+    "id": "local-1772300048471-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Bene. Allora cos'è la percentuale?",
+    "pinyin": "",
+    "translation": "B: Bem. Então o que é a porcentagem?",
+    "tokens": [
+      "B:",
+      "Bene",
+      ".",
+      "Allora",
+      "cos'è",
+      "la",
+      "percentuale",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "cos'è",
+        "pinyin": "",
+        "meaning": "o que é (cosa è)"
+      },
+      {
+        "id": 45,
+        "word": "percentuale",
+        "pinyin": "",
+        "meaning": "porcentagem"
+      }
+    ],
+    "id": "local-1772300048471-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Quella è una frazione di cento, per esempio: un quarto è venticinque percento; un mezzo è cinquanta percento.",
+    "pinyin": "",
+    "translation": "A: Aquilo é uma fração de cem, por exemplo: um quarto é vinte e cinco por cento; um meio é cinquenta por cento.",
+    "tokens": [
+      "A:",
+      "Quella",
+      "è",
+      "una",
+      "frazione",
+      "di",
+      "cento",
+      ",",
+      "per",
+      "esempio",
+      ":",
+      "un",
+      "quarto",
+      "è",
+      "venticinque",
+      "percento",
+      ";",
+      "un",
+      "mezzo",
+      "è",
+      "cinquanta",
+      "percento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 46,
+        "word": "Quella",
+        "pinyin": "",
+        "meaning": "Aquela"
+      },
+      {
+        "id": 47,
+        "word": "cento",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 48,
+        "word": "quarto",
+        "pinyin": "",
+        "meaning": "quarto"
+      },
+      {
+        "id": 49,
+        "word": "venticinque",
+        "pinyin": "",
+        "meaning": "vinte e cinco"
+      },
+      {
+        "id": 50,
+        "word": "percento",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 51,
+        "word": "mezzo",
+        "pinyin": "",
+        "meaning": "meio"
+      },
+      {
+        "id": 52,
+        "word": "cinquanta",
+        "pinyin": "",
+        "meaning": "cinquenta"
+      }
+    ],
+    "id": "local-1772300048471-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora cos'è \"parecchi decimi\"?",
+    "pinyin": "",
+    "translation": "B: Então o que são \"vários décimos\"?",
+    "tokens": [
+      "B:",
+      "Allora",
+      "cos'è",
+      "\"",
+      "parecchi",
+      "decimi",
+      "\"",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 53,
+        "word": "parecchi",
+        "pinyin": "",
+        "meaning": "vários, muitos"
+      },
+      {
+        "id": 54,
+        "word": "decimi",
+        "pinyin": "",
+        "meaning": "décimos"
+      }
+    ],
+    "id": "local-1772300048471-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: \"Un decimo\" è una frazione di dieci. Per esempio, \"nove decimi\" è nove su dieci, ed è anche novanta percento.",
+    "pinyin": "",
+    "translation": "A: \"Um décimo\" é uma fração de dez. Por exemplo, \"nove décimos\" é nove sobre dez, e é também noventa por cento.",
+    "tokens": [
+      "A:",
+      "\"",
+      "Un",
+      "decimo",
+      "\"",
+      "è",
+      "una",
+      "frazione",
+      "di",
+      "dieci",
+      ".",
+      "Per",
+      "esempio",
+      ",",
+      "\"",
+      "nove",
+      "decimi",
+      "\"",
+      "è",
+      "nove",
+      "su",
+      "dieci",
+      ",",
+      "ed",
+      "è",
+      "anche",
+      "novanta",
+      "percento",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 55,
+        "word": "decimo",
+        "pinyin": "",
+        "meaning": "décimo"
+      },
+      {
+        "id": 56,
+        "word": "dieci",
+        "pinyin": "",
+        "meaning": "dez"
+      },
+      {
+        "id": 57,
+        "word": "nove",
+        "pinyin": "",
+        "meaning": "nove"
+      },
+      {
+        "id": 58,
+        "word": "su",
+        "pinyin": "",
+        "meaning": "sobre, em cima"
+      },
+      {
+        "id": 59,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 60,
+        "word": "novanta",
+        "pinyin": "",
+        "meaning": "noventa"
+      }
+    ],
+    "id": "local-1772300048471-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: In futuro, non dormire in classe! E non ti è permesso parlare! Se parli di nuovo, starai fermo come punizione!",
+    "pinyin": "",
+    "translation": "B: No futuro, não durma na aula! E não é permitido falar! Se você falar de novo, ficará parado como punição!",
+    "tokens": [
+      "B:",
+      "In",
+      "futuro",
+      ",",
+      "non",
+      "dormire",
+      "in",
+      "classe",
+      "!",
+      "E",
+      "non",
+      "ti",
+      "è",
+      "permesso",
+      "parlare",
+      "!",
+      "Se",
+      "parli",
+      "di",
+      "nuovo",
+      ",",
+      "starai",
+      "fermo",
+      "come",
+      "punizione",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 61,
+        "word": "In futuro",
+        "pinyin": "",
+        "meaning": "No futuro"
+      },
+      {
+        "id": 62,
+        "word": "dormire",
+        "pinyin": "",
+        "meaning": "dormir"
+      },
+      {
+        "id": 63,
+        "word": "classe",
+        "pinyin": "",
+        "meaning": "sala de aula"
+      },
+      {
+        "id": 64,
+        "word": "non ti è permesso",
+        "pinyin": "",
+        "meaning": "não te é permitido"
+      },
+      {
+        "id": 65,
+        "word": "parlare",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 66,
+        "word": "Se",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 67,
+        "word": "parli",
+        "pinyin": "",
+        "meaning": "você fala (verbo parlare)"
+      },
+      {
+        "id": 68,
+        "word": "starai",
+        "pinyin": "",
+        "meaning": "você ficará (verbo stare)"
+      },
+      {
+        "id": 69,
+        "word": "fermo",
+        "pinyin": "",
+        "meaning": "parado"
+      },
+      {
+        "id": 70,
+        "word": "punizione",
+        "pinyin": "",
+        "meaning": "punição"
+      }
+    ],
+    "id": "local-1772300048471-11",
+    "language": "Italiano"
+  }
+]

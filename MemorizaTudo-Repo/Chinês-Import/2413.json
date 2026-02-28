@@ -1,0 +1,799 @@
+[
+  {
+    "chinese": "旋转，跳跃，滑行。哇，金妍儿的动作真是太美了。",
+    "pinyin": "Xuánzhuǎn, tiàoyuè, huáxíng. Wa, Jīn Yán'ér de dòngzuò zhēnshi tài měile.",
+    "translation": "A: Girar, pular, deslizar. Uau, os movimentos da Kim Yuna são realmente lindos demais.",
+    "tokens": [
+      "旋转",
+      "，",
+      "跳跃",
+      "，",
+      "滑行",
+      "。",
+      "哇",
+      "，",
+      "金妍儿",
+      "的",
+      "动作",
+      "真",
+      "是",
+      "太",
+      "美",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "旋转",
+        "pinyin": "xuánzhuǎn",
+        "meaning": "girar, rodar"
+      },
+      {
+        "id": 2,
+        "word": "跳跃",
+        "pinyin": "tiàoyuè",
+        "meaning": "pular, saltar"
+      },
+      {
+        "id": 3,
+        "word": "滑行",
+        "pinyin": "huáxíng",
+        "meaning": "deslizar, patinar"
+      },
+      {
+        "id": 4,
+        "word": "哇",
+        "pinyin": "wa",
+        "meaning": "uau (interjeição)"
+      },
+      {
+        "id": 5,
+        "word": "金妍儿",
+        "pinyin": "Jīn Yán'ér",
+        "meaning": "Kim Yuna (nome próprio)"
+      },
+      {
+        "id": 6,
+        "word": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "movimento, ação"
+      },
+      {
+        "id": 7,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito, demais (para intensificar)"
+      },
+      {
+        "id": 8,
+        "word": "美",
+        "pinyin": "měi",
+        "meaning": "bonito, lindo"
+      }
+    ],
+    "id": "local-1772295916517-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你在看冬奥会花样滑冰比赛吗？哦，这就是那个韩国滑冰神童。",
+    "pinyin": "Nǐ zài kàn dōng'àohuì huāyàng huábīng bǐsài ma? Ó, zhè jiùshì nàgè Hánguó huábīng shéntóng.",
+    "translation": "B: Você está assistindo à competição de patinação artística das Olimpíadas de Inverno? Oh, esta é aquela prodígio da patinação coreana.",
+    "tokens": [
+      "你",
+      "在",
+      "看",
+      "冬奥会",
+      "花样滑冰",
+      "比赛",
+      "吗",
+      "？",
+      "哦",
+      "，",
+      "这",
+      "就",
+      "是",
+      "那",
+      "个",
+      "韩国",
+      "滑冰",
+      "神童",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "estar (indica ação em andamento)"
+      },
+      {
+        "id": 10,
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 11,
+        "word": "冬奥会",
+        "pinyin": "dōng'àohuì",
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 12,
+        "word": "花样滑冰",
+        "pinyin": "huāyàng huábīng",
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 13,
+        "word": "比赛",
+        "pinyin": "bǐsài",
+        "meaning": "competição, jogo"
+      },
+      {
+        "id": 14,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      },
+      {
+        "id": 15,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh (interjeição)"
+      },
+      {
+        "id": 16,
+        "word": "韩国",
+        "pinyin": "Hánguó",
+        "meaning": "Coreia do Sul"
+      },
+      {
+        "id": 17,
+        "word": "滑冰",
+        "pinyin": "huábīng",
+        "meaning": "patinar no gelo"
+      },
+      {
+        "id": 18,
+        "word": "神童",
+        "pinyin": "shéntóng",
+        "meaning": "prodígio, criança gênio"
+      }
+    ],
+    "id": "local-1772295916517-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是啊。你看她的动作多优美啊！",
+    "pinyin": "Shì a. Nǐ kàn tā de dòngzuò duō yōuměi a!",
+    "translation": "A: É sim. Olha como os movimentos dela são graciosos!",
+    "tokens": [
+      "是",
+      "啊",
+      "。",
+      "你",
+      "看",
+      "她",
+      "的",
+      "动作",
+      "多",
+      "优美",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "是啊",
+        "pinyin": "shì a",
+        "meaning": "sim, é verdade (concordância)"
+      },
+      {
+        "id": 20,
+        "word": "她",
+        "pinyin": "tā",
+        "meaning": "ela"
+      },
+      {
+        "id": 21,
+        "word": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "movimento, ação"
+      },
+      {
+        "id": 22,
+        "word": "多",
+        "pinyin": "duō",
+        "meaning": "quão (usado para exclamar o grau)"
+      },
+      {
+        "id": 23,
+        "word": "优美",
+        "pinyin": "yōuměi",
+        "meaning": "gracioso, elegante"
+      }
+    ],
+    "id": "local-1772295916517-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "不过这届冬奥会她没有拿到金牌。我觉得四年前温哥华冬奥会才是她的巅峰时期。",
+    "pinyin": "Búguò zhè jiè dōng'àohuì tā méiyǒu nádào jīnpái. Wǒ juéde sì nián qián Wēngēhuá dōng'àohuì cái shì tā de diānfēng shíqī.",
+    "translation": "B: Mas ela não ganhou a medalha de ouro nestas Olimpíadas de Inverno. Eu acho que as Olimpíadas de Inverno de Vancouver, quatro anos atrás, foram o auge dela.",
+    "tokens": [
+      "不过",
+      "这",
+      "届",
+      "冬奥会",
+      "她",
+      "没有",
+      "拿",
+      "到",
+      "金牌",
+      "。",
+      "我",
+      "觉得",
+      "四",
+      "年",
+      "前",
+      "温哥华",
+      "冬奥会",
+      "才",
+      "是",
+      "她",
+      "的",
+      "巅峰",
+      "时期",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "不过",
+        "pinyin": "búguò",
+        "meaning": "mas, entretanto"
+      },
+      {
+        "id": 25,
+        "word": "届",
+        "pinyin": "jiè",
+        "meaning": "classificador para sessões, congressos, edições"
+      },
+      {
+        "id": 26,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "não ter, não haver, não (para ações passadas ou concluídas)"
+      },
+      {
+        "id": 27,
+        "word": "拿到",
+        "pinyin": "nádào",
+        "meaning": "conseguir, obter (ao pegar algo)"
+      },
+      {
+        "id": 28,
+        "word": "金牌",
+        "pinyin": "jīnpái",
+        "meaning": "medalha de ouro"
+      },
+      {
+        "id": 29,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar, sentir, pensar"
+      },
+      {
+        "id": 30,
+        "word": "四年前",
+        "pinyin": "sì nián qián",
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 31,
+        "word": "温哥华",
+        "pinyin": "Wēngēhuá",
+        "meaning": "Vancouver"
+      },
+      {
+        "id": 32,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só então, somente"
+      },
+      {
+        "id": 33,
+        "word": "巅峰",
+        "pinyin": "diānfēng",
+        "meaning": "pico, auge"
+      },
+      {
+        "id": 34,
+        "word": "时期",
+        "pinyin": "shíqī",
+        "meaning": "período, fase"
+      }
+    ],
+    "id": "local-1772295916517-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "在我心里，她永远是冰上女王！虽然这次没拿到金牌，但她的表现依然非常出色。可惜的是，她将在本届冬奥会后退役。",
+    "pinyin": "Zài wǒ xīnli, tā yǒngyuǎn shì bīng shàng nǚwáng! Suīrán zhè cì méi nádào jīnpái, dàn tā de biǎoxiàn yīrán fēicháng chūsè. Kěxī de shì, tā jiāng zài běn jiè dōng'àohuì hòu tuìyì.",
+    "translation": "A: No meu coração, ela é para sempre a Rainha do Gelo! Embora desta vez não tenha ganhado a medalha de ouro, o desempenho dela ainda foi excelente. O que é uma pena é que ela vai se aposentar após estas Olimpíadas de Inverno.",
+    "tokens": [
+      "在",
+      "我",
+      "心里",
+      "，",
+      "她",
+      "永远",
+      "是",
+      "冰上",
+      "女王",
+      "！",
+      "虽然",
+      "这",
+      "次",
+      "没",
+      "拿",
+      "到",
+      "金牌",
+      "，",
+      "但",
+      "她",
+      "的",
+      "表现",
+      "依然",
+      "非常",
+      "出色",
+      "。",
+      "可惜",
+      "的",
+      "是",
+      "，",
+      "她",
+      "将",
+      "在",
+      "本",
+      "届",
+      "冬奥会",
+      "后",
+      "退役",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 35,
+        "word": "心里",
+        "pinyin": "xīnli",
+        "meaning": "no coração, na mente"
+      },
+      {
+        "id": 36,
+        "word": "永远",
+        "pinyin": "yǒngyuǎn",
+        "meaning": "para sempre, eternamente"
+      },
+      {
+        "id": 37,
+        "word": "冰上",
+        "pinyin": "bīng shàng",
+        "meaning": "no gelo"
+      },
+      {
+        "id": 38,
+        "word": "女王",
+        "pinyin": "nǚwáng",
+        "meaning": "rainha"
+      },
+      {
+        "id": 39,
+        "word": "虽然",
+        "pinyin": "suīrán",
+        "meaning": "embora, ainda que"
+      },
+      {
+        "id": 40,
+        "word": "次",
+        "pinyin": "cì",
+        "meaning": "vez (classificador)"
+      },
+      {
+        "id": 41,
+        "word": "没",
+        "pinyin": "méi",
+        "meaning": "não (forma abreviada de 没有)"
+      },
+      {
+        "id": 42,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 43,
+        "word": "表现",
+        "pinyin": "biǎoxiàn",
+        "meaning": "desempenho, performance"
+      },
+      {
+        "id": 44,
+        "word": "依然",
+        "pinyin": "yīrán",
+        "meaning": "ainda, mesmo assim"
+      },
+      {
+        "id": 45,
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 46,
+        "word": "出色",
+        "pinyin": "chūsè",
+        "meaning": "excelente, notável"
+      },
+      {
+        "id": 47,
+        "word": "可惜",
+        "pinyin": "kěxī",
+        "meaning": "que pena, lamentável"
+      },
+      {
+        "id": 48,
+        "word": "将",
+        "pinyin": "jiāng",
+        "meaning": "vai, irá (indica futuro)"
+      },
+      {
+        "id": 49,
+        "word": "本",
+        "pinyin": "běn",
+        "meaning": "este, atual (classificador)"
+      },
+      {
+        "id": 50,
+        "word": "后",
+        "pinyin": "hòu",
+        "meaning": "depois, após"
+      },
+      {
+        "id": 51,
+        "word": "退役",
+        "pinyin": "tuìyì",
+        "meaning": "aposentar-se (de uma carreira, especialmente esportiva)"
+      }
+    ],
+    "id": "local-1772295916517-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这次的女单冠军索特尼科娃也真是很厉害，而且她才17岁。",
+    "pinyin": "Zhè cì de nǚ dān guànjūn Suǒtèníkēwá yě zhēnshi hěn lìhài, érqiě tā cái shíqī suì.",
+    "translation": "B: A campeã individual feminina desta vez, Sotnikova, também é realmente muito impressionante, e ela tem apenas 17 anos.",
+    "tokens": [
+      "这",
+      "次",
+      "的",
+      "女",
+      "单",
+      "冠军",
+      "索特尼科娃",
+      "也",
+      "真",
+      "是",
+      "很",
+      "厉害",
+      "，",
+      "而且",
+      "她",
+      "才",
+      "17",
+      "岁",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 52,
+        "word": "女单",
+        "pinyin": "nǚ dān",
+        "meaning": "individual feminino"
+      },
+      {
+        "id": 53,
+        "word": "冠军",
+        "pinyin": "guànjūn",
+        "meaning": "campeão, campeã"
+      },
+      {
+        "id": 54,
+        "word": "索特尼科娃",
+        "pinyin": "Suǒtèníkēwá",
+        "meaning": "Sotnikova (nome próprio)"
+      },
+      {
+        "id": 55,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 56,
+        "word": "厉害",
+        "pinyin": "lìhài",
+        "meaning": "impressionante, incrível, formidável"
+      },
+      {
+        "id": 57,
+        "word": "而且",
+        "pinyin": "érqiě",
+        "meaning": "e além disso, e mais"
+      },
+      {
+        "id": 58,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só, apenas (indica que o número é pequeno ou tardio)"
+      },
+      {
+        "id": 59,
+        "word": "岁",
+        "pinyin": "suì",
+        "meaning": "ano de idade"
+      }
+    ],
+    "id": "local-1772295916517-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是啊。哎，花样滑冰真是一项优雅的运动。你说我现在还能学吗？",
+    "pinyin": "Shì a. Āi, huāyàng huábīng zhēnshi yī xiàng yōuyǎ de yùndòng. Nǐ shuō wǒ xiànzài hái néng xué ma?",
+    "translation": "A: É sim. Ai, patinação artística é realmente um esporte elegante. Você acha que eu ainda consigo aprender agora?",
+    "tokens": [
+      "是",
+      "啊",
+      "。",
+      "哎",
+      "，",
+      "花样滑冰",
+      "真",
+      "是",
+      "一",
+      "项",
+      "优雅",
+      "的",
+      "运动",
+      "。",
+      "你",
+      "说",
+      "我",
+      "现在",
+      "还",
+      "能",
+      "学",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 60,
+        "word": "哎",
+        "pinyin": "āi",
+        "meaning": "ai, ah (interjeição de surpresa ou suspiro)"
+      },
+      {
+        "id": 61,
+        "word": "项",
+        "pinyin": "xiàng",
+        "meaning": "classificador para itens, projetos, esportes"
+      },
+      {
+        "id": 62,
+        "word": "优雅",
+        "pinyin": "yōuyǎ",
+        "meaning": "elegante, gracioso"
+      },
+      {
+        "id": 63,
+        "word": "运动",
+        "pinyin": "yùndòng",
+        "meaning": "esporte, exercício"
+      },
+      {
+        "id": 64,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 65,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 66,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 67,
+        "word": "学",
+        "pinyin": "xué",
+        "meaning": "aprender, estudar"
+      }
+    ],
+    "id": "local-1772295916517-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你？算了吧。你看电视上这些运动员，都是从小开始学的。你现在才开始学，太晚了。",
+    "pinyin": "Nǐ? Suàn le ba. Nǐ kàn diànshì shàng zhèxiē yùndòngyuán, dōushì cóng xiǎo kāishǐ xué de. Nǐ xiànzài cái kāishǐ xué, tài wǎn le.",
+    "translation": "B: Você? Desista. Olhe para esses atletas na TV, todos começaram a aprender desde pequenos. Se você for começar a aprender agora, é tarde demais.",
+    "tokens": [
+      "你",
+      "？",
+      "算",
+      "了",
+      "吧",
+      "。",
+      "你",
+      "看",
+      "电视",
+      "上",
+      "这些",
+      "运动员",
+      "，",
+      "都",
+      "是",
+      "从",
+      "小",
+      "开始",
+      "学",
+      "的",
+      "。",
+      "你",
+      "现在",
+      "才",
+      "开始",
+      "学",
+      "，",
+      "太",
+      "晚",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 68,
+        "word": "算了吧",
+        "pinyin": "suàn le ba",
+        "meaning": "esquece, desiste, deixa pra lá"
+      },
+      {
+        "id": 69,
+        "word": "电视",
+        "pinyin": "diànshì",
+        "meaning": "televisão"
+      },
+      {
+        "id": 70,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "estes, essas"
+      },
+      {
+        "id": 71,
+        "word": "运动员",
+        "pinyin": "yùndòngyuán",
+        "meaning": "atleta"
+      },
+      {
+        "id": 72,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos, ambos"
+      },
+      {
+        "id": 73,
+        "word": "从",
+        "pinyin": "cóng",
+        "meaning": "de, desde"
+      },
+      {
+        "id": 74,
+        "word": "小",
+        "pinyin": "xiǎo",
+        "meaning": "pequeno (aqui, \"desde pequeno/a\")"
+      },
+      {
+        "id": 75,
+        "word": "开始",
+        "pinyin": "kāishǐ",
+        "meaning": "começar"
+      },
+      {
+        "id": 76,
+        "word": "晚",
+        "pinyin": "wǎn",
+        "meaning": "tarde"
+      }
+    ],
+    "id": "local-1772295916517-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我又不是要比赛。我只是想学着玩玩而已。",
+    "pinyin": "Wǒ yòu bú shì yào bǐsài. Wǒ zhǐshì xiǎng xuézhe wánwán éryǐ.",
+    "translation": "A: Eu não é que queira competir. Eu só quero aprender para me divertir.",
+    "tokens": [
+      "我",
+      "又",
+      "不",
+      "是",
+      "要",
+      "比赛",
+      "。",
+      "我",
+      "只是",
+      "想",
+      "学",
+      "着",
+      "玩",
+      "玩",
+      "而已",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 77,
+        "word": "又不是",
+        "pinyin": "yòu bú shì",
+        "meaning": "não é que... (expressão para negar algo, com tom de refutação)"
+      },
+      {
+        "id": 78,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer, precisar (aqui, querer fazer)"
+      },
+      {
+        "id": 79,
+        "word": "比赛",
+        "pinyin": "bǐsài",
+        "meaning": "competição, competir"
+      },
+      {
+        "id": 80,
+        "word": "只是",
+        "pinyin": "zhǐshì",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 81,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, desejar, pensar"
+      },
+      {
+        "id": 82,
+        "word": "玩玩",
+        "pinyin": "wánwán",
+        "meaning": "brincar um pouco, se divertir"
+      },
+      {
+        "id": 83,
+        "word": "而已",
+        "pinyin": "éryǐ",
+        "meaning": "só isso, e nada mais (para enfatizar que é apenas uma coisa pequena/simples)"
+      }
+    ],
+    "id": "local-1772295916517-8",
+    "language": "Chinês"
+  }
+]

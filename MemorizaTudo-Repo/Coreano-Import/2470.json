@@ -1,0 +1,629 @@
+[
+  {
+    "chinese": "A: 샤오친, 무슨 글을 그렇게 열심히 보고 있어? 푹 빠져 있네!",
+    "pinyin": "",
+    "translation": "A: Xiaoqin, que artigo você está lendo com tanta atenção? Você está tão absorta!",
+    "tokens": [
+      "A:",
+      "샤오친",
+      ",",
+      "무슨",
+      "글을",
+      "그렇게",
+      "열심히",
+      "보고",
+      "있어",
+      "?",
+      "푹",
+      "빠져",
+      "있네",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오친",
+        "pinyin": "",
+        "meaning": "Xiaoqin (nome)"
+      },
+      {
+        "id": 2,
+        "word": "무슨",
+        "pinyin": "",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 3,
+        "word": "글",
+        "pinyin": "",
+        "meaning": "artigo, texto"
+      },
+      {
+        "id": 4,
+        "word": "열심히",
+        "pinyin": "",
+        "meaning": "com esforço, diligentemente"
+      },
+      {
+        "id": 5,
+        "word": "보고 있어",
+        "pinyin": "",
+        "meaning": "está vendo/lendo"
+      },
+      {
+        "id": 6,
+        "word": "푹",
+        "pinyin": "",
+        "meaning": "profundamente, completamente"
+      },
+      {
+        "id": 7,
+        "word": "빠져 있네",
+        "pinyin": "",
+        "meaning": "está absorto, imerso"
+      }
+    ],
+    "id": "local-1772299939194-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 맹인 안내견의 지하철 탑승 허용 여부에 대한 온라인 설문조사를 보고 있어.",
+    "pinyin": "",
+    "translation": "B: Ah, estou vendo uma pesquisa online sobre a permissão de cães-guia para cegos no metrô.",
+    "tokens": [
+      "B:",
+      "아",
+      ",",
+      "맹인",
+      "안내견의",
+      "지하철",
+      "탑승",
+      "허용",
+      "여부에",
+      "대한",
+      "온라인",
+      "설문조사를",
+      "보고",
+      "있어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "맹인",
+        "pinyin": "",
+        "meaning": "cego"
+      },
+      {
+        "id": 2,
+        "word": "안내견",
+        "pinyin": "",
+        "meaning": "cão-guia"
+      },
+      {
+        "id": 3,
+        "word": "지하철",
+        "pinyin": "",
+        "meaning": "metrô"
+      },
+      {
+        "id": 4,
+        "word": "탑승",
+        "pinyin": "",
+        "meaning": "embarque, ato de subir"
+      },
+      {
+        "id": 5,
+        "word": "허용",
+        "pinyin": "",
+        "meaning": "permissão, aprovação"
+      },
+      {
+        "id": 6,
+        "word": "여부",
+        "pinyin": "",
+        "meaning": "se ou não, questão de"
+      },
+      {
+        "id": 7,
+        "word": "대한",
+        "pinyin": "",
+        "meaning": "sobre, a respeito de"
+      },
+      {
+        "id": 8,
+        "word": "온라인",
+        "pinyin": "",
+        "meaning": "online"
+      },
+      {
+        "id": 9,
+        "word": "설문조사",
+        "pinyin": "",
+        "meaning": "pesquisa, enquete"
+      },
+      {
+        "id": 10,
+        "word": "보고 있어",
+        "pinyin": "",
+        "meaning": "está vendo/lendo"
+      }
+    ],
+    "id": "local-1772299939194-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 설문 결과는 어때?",
+    "pinyin": "",
+    "translation": "A: Como está o resultado da pesquisa?",
+    "tokens": [
+      "A:",
+      "설문",
+      "결과는",
+      "어때",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "설문",
+        "pinyin": "",
+        "meaning": "pesquisa (abreviação de 설문조사)"
+      },
+      {
+        "id": 2,
+        "word": "결과",
+        "pinyin": "",
+        "meaning": "resultado"
+      },
+      {
+        "id": 3,
+        "word": "어때",
+        "pinyin": "",
+        "meaning": "como está?"
+      }
+    ],
+    "id": "local-1772299939194-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 사람들의 의견이 분분해. 찬성하는 사람들도 있고, 반대하는 사람들도 있어.",
+    "pinyin": "",
+    "translation": "B: As opiniões das pessoas estão divididas. Há pessoas que são a favor e pessoas que são contra.",
+    "tokens": [
+      "B:",
+      "사람들의",
+      "의견이",
+      "분분해",
+      ".",
+      "찬성하는",
+      "사람들도",
+      "있고",
+      ",",
+      "반대하는",
+      "사람들도",
+      "있어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사람들",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 2,
+        "word": "의견",
+        "pinyin": "",
+        "meaning": "opinião"
+      },
+      {
+        "id": 3,
+        "word": "분분하다",
+        "pinyin": "",
+        "meaning": "estar divido, divergente (de opiniões)"
+      },
+      {
+        "id": 4,
+        "word": "찬성하다",
+        "pinyin": "",
+        "meaning": "ser a favor, aprovar"
+      },
+      {
+        "id": 5,
+        "word": "반대하다",
+        "pinyin": "",
+        "meaning": "ser contra, opor-se"
+      }
+    ],
+    "id": "local-1772299939194-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 안내견은 모두 훈련을 받잖아. 다른 승객을 공격하지도 않을 텐데, 왜 반대하는 걸까?",
+    "pinyin": "",
+    "translation": "A: Cães-guia são todos treinados, certo? Eles não atacariam outros passageiros, então por que seriam contra?",
+    "tokens": [
+      "A:",
+      "안내견은",
+      "모두",
+      "훈련을",
+      "받잖아",
+      ".",
+      "다른",
+      "승객을",
+      "공격하지도",
+      "않을",
+      "텐데",
+      ",",
+      "왜",
+      "반대하는",
+      "걸까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안내견",
+        "pinyin": "",
+        "meaning": "cão-guia"
+      },
+      {
+        "id": 2,
+        "word": "모두",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 3,
+        "word": "훈련을 받다",
+        "pinyin": "",
+        "meaning": "receber treinamento, ser treinado"
+      },
+      {
+        "id": 4,
+        "word": "승객",
+        "pinyin": "",
+        "meaning": "passageiro"
+      },
+      {
+        "id": 5,
+        "word": "공격하다",
+        "pinyin": "",
+        "meaning": "atacar"
+      },
+      {
+        "id": 6,
+        "word": "텐데",
+        "pinyin": "",
+        "meaning": "sufixo expressando expectativa ou suposição"
+      },
+      {
+        "id": 7,
+        "word": "왜",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 8,
+        "word": "반대하다",
+        "pinyin": "",
+        "meaning": "ser contra, opor-se"
+      },
+      {
+        "id": 9,
+        "word": "걸까",
+        "pinyin": "",
+        "meaning": "sufixo que expressa curiosidade ou questionamento"
+      }
+    ],
+    "id": "local-1772299939194-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 맞아. 안내견은 시각장애인에게 눈과 같은 존재잖아. 안내견이 지하철에 탑승하게 하는 것은 시각장애인에게 편의를 제공할 뿐만 아니라, 그들에 대한 존중이기도 해.",
+    "pinyin": "",
+    "translation": "B: Exato. Cães-guia são como os olhos para pessoas com deficiência visual. Permitir que cães-guia embarquem no metrô não é apenas fornecer conveniência aos deficientes visuais, mas também um respeito a eles.",
+    "tokens": [
+      "B:",
+      "맞아",
+      ".",
+      "안내견은",
+      "시각장애인에게",
+      "눈과",
+      "같은",
+      "존재잖아",
+      ".",
+      "안내견이",
+      "지하철에",
+      "탑승하게",
+      "하는",
+      "것은",
+      "시각장애인에게",
+      "편의를",
+      "제공할",
+      "뿐만",
+      "아니라",
+      ",",
+      "그들에",
+      "대한",
+      "존중이기도",
+      "해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "맞아",
+        "pinyin": "",
+        "meaning": "exato, está certo"
+      },
+      {
+        "id": 2,
+        "word": "안내견",
+        "pinyin": "",
+        "meaning": "cão-guia"
+      },
+      {
+        "id": 3,
+        "word": "시각장애인",
+        "pinyin": "",
+        "meaning": "pessoa com deficiência visual"
+      },
+      {
+        "id": 4,
+        "word": "눈",
+        "pinyin": "",
+        "meaning": "olho"
+      },
+      {
+        "id": 5,
+        "word": "같은",
+        "pinyin": "",
+        "meaning": "semelhante a, como"
+      },
+      {
+        "id": 6,
+        "word": "존재",
+        "pinyin": "",
+        "meaning": "existência, ser"
+      },
+      {
+        "id": 7,
+        "word": "지하철",
+        "pinyin": "",
+        "meaning": "metrô"
+      },
+      {
+        "id": 8,
+        "word": "탑승하다",
+        "pinyin": "",
+        "meaning": "embarcar, subir (em veículo)"
+      },
+      {
+        "id": 9,
+        "word": "편의",
+        "pinyin": "",
+        "meaning": "conveniência, comodidade"
+      },
+      {
+        "id": 10,
+        "word": "제공하다",
+        "pinyin": "",
+        "meaning": "fornecer, oferecer"
+      },
+      {
+        "id": 11,
+        "word": "뿐만 아니라",
+        "pinyin": "",
+        "meaning": "não só... mas também"
+      },
+      {
+        "id": 12,
+        "word": "대한",
+        "pinyin": "",
+        "meaning": "sobre, a respeito de"
+      },
+      {
+        "id": 13,
+        "word": "존중",
+        "pinyin": "",
+        "meaning": "respeito"
+      }
+    ],
+    "id": "local-1772299939194-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 상하이는 이미 안내견의 지하철 탑승을 허용하고 있는데, 일부 도시에서는 아직 안 된대.",
+    "pinyin": "",
+    "translation": "A: Xangai já permite o embarque de cães-guia no metrô, mas dizem que algumas cidades ainda não o fazem.",
+    "tokens": [
+      "A:",
+      "상하이는",
+      "이미",
+      "안내견의",
+      "지하철",
+      "탑승을",
+      "허용하고",
+      "있는데",
+      ",",
+      "일부",
+      "도시에서는",
+      "아직",
+      "안",
+      "된대",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 2,
+        "word": "이미",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "안내견",
+        "pinyin": "",
+        "meaning": "cão-guia"
+      },
+      {
+        "id": 4,
+        "word": "지하철",
+        "pinyin": "",
+        "meaning": "metrô"
+      },
+      {
+        "id": 5,
+        "word": "탑승",
+        "pinyin": "",
+        "meaning": "embarque"
+      },
+      {
+        "id": 6,
+        "word": "허용하다",
+        "pinyin": "",
+        "meaning": "permitir, autorizar"
+      },
+      {
+        "id": 7,
+        "word": "일부",
+        "pinyin": "",
+        "meaning": "alguns, parte"
+      },
+      {
+        "id": 8,
+        "word": "도시",
+        "pinyin": "",
+        "meaning": "cidade"
+      },
+      {
+        "id": 9,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda não"
+      },
+      {
+        "id": 10,
+        "word": "된대",
+        "pinyin": "",
+        "meaning": "diz-se que é/foi"
+      }
+    ],
+    "id": "local-1772299939194-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이 설문조사가 아직 끝나지 않았어. 우리도 빨리 투표해서 지지 의견을 내자.",
+    "pinyin": "",
+    "translation": "B: Esta pesquisa ainda não terminou. Vamos nós também votar rapidamente para expressar nossa opinião de apoio.",
+    "tokens": [
+      "B:",
+      "이",
+      "설문조사가",
+      "아직",
+      "끝나지",
+      "않았어",
+      ".",
+      "우리도",
+      "빨리",
+      "투표해서",
+      "지지",
+      "의견을",
+      "내자",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "설문조사",
+        "pinyin": "",
+        "meaning": "pesquisa, enquete"
+      },
+      {
+        "id": 2,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda não"
+      },
+      {
+        "id": 3,
+        "word": "끝나다",
+        "pinyin": "",
+        "meaning": "terminar, acabar"
+      },
+      {
+        "id": 4,
+        "word": "우리",
+        "pinyin": "",
+        "meaning": "nós"
+      },
+      {
+        "id": 5,
+        "word": "빨리",
+        "pinyin": "",
+        "meaning": "rapidamente, depressa"
+      },
+      {
+        "id": 6,
+        "word": "투표하다",
+        "pinyin": "",
+        "meaning": "votar"
+      },
+      {
+        "id": 7,
+        "word": "지지",
+        "pinyin": "",
+        "meaning": "apoio"
+      },
+      {
+        "id": 8,
+        "word": "의견",
+        "pinyin": "",
+        "meaning": "opinião"
+      },
+      {
+        "id": 9,
+        "word": "내다",
+        "pinyin": "",
+        "meaning": "expressar, apresentar (uma opinião)"
+      },
+      {
+        "id": 10,
+        "word": "-자",
+        "pinyin": "",
+        "meaning": "sufixo que indica uma proposta ou sugestão (vamos...)"
+      }
+    ],
+    "id": "local-1772299939194-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그래야지.",
+    "pinyin": "",
+    "translation": "A: Certo, devemos fazer isso.",
+    "tokens": [
+      "A:",
+      "그래야지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그래야지",
+        "pinyin": "",
+        "meaning": "é assim que deve ser, certo, claro"
+      }
+    ],
+    "id": "local-1772299939194-8",
+    "language": "Coreano"
+  }
+]

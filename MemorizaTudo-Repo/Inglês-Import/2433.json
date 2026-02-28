@@ -1,0 +1,482 @@
+[
+  {
+    "chinese": "A: Director Chen, thank you for making time in your busy schedule to treat me to dinner.",
+    "pinyin": "",
+    "translation": "A: Diretor Chen, obrigado por arranjar tempo em sua agenda lotada para me convidar para jantar.",
+    "tokens": [
+      "A:",
+      "Director",
+      "Chen,",
+      "thank",
+      "you",
+      "for",
+      "making",
+      "time",
+      "in",
+      "your",
+      "busy",
+      "schedule",
+      "to",
+      "treat",
+      "me",
+      "to",
+      "dinner."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Director Chen",
+        "pinyin": "",
+        "meaning": "Diretor Chen"
+      },
+      {
+        "id": 3,
+        "word": "thank you",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 6,
+        "word": "making time",
+        "pinyin": "",
+        "meaning": "arranjar tempo"
+      },
+      {
+        "id": 10,
+        "word": "busy schedule",
+        "pinyin": "",
+        "meaning": "agenda lotada"
+      },
+      {
+        "id": 13,
+        "word": "treat me to dinner",
+        "pinyin": "",
+        "meaning": "me convidar para jantar"
+      }
+    ],
+    "id": "local-1772293041544-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Don't be polite.",
+    "pinyin": "",
+    "translation": "B: Não seja formal.",
+    "tokens": [
+      "B:",
+      "Don't",
+      "be",
+      "polite."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Don't be polite",
+        "pinyin": "",
+        "meaning": "Não seja formal/polido"
+      }
+    ],
+    "id": "local-1772293041544-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's something I should do.",
+    "pinyin": "",
+    "translation": "É algo que eu deveria fazer.",
+    "tokens": [
+      "It's",
+      "something",
+      "I",
+      "should",
+      "do."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "should do",
+        "pinyin": "",
+        "meaning": "deveria fazer"
+      }
+    ],
+    "id": "local-1772293041544-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Have a look at the menu.",
+    "pinyin": "",
+    "translation": "Dê uma olhada no cardápio.",
+    "tokens": [
+      "Have",
+      "a",
+      "look",
+      "at",
+      "the",
+      "menu."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Have a look",
+        "pinyin": "",
+        "meaning": "Dar uma olhada"
+      },
+      {
+        "id": 5,
+        "word": "menu",
+        "pinyin": "",
+        "meaning": "cardápio"
+      }
+    ],
+    "id": "local-1772293041544-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "What would you like to eat?",
+    "pinyin": "",
+    "translation": "O que você gostaria de comer?",
+    "tokens": [
+      "What",
+      "would",
+      "you",
+      "like",
+      "to",
+      "eat?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "would like to eat",
+        "pinyin": "",
+        "meaning": "gostaria de comer"
+      }
+    ],
+    "id": "local-1772293041544-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Anything.",
+    "pinyin": "",
+    "translation": "A: Qualquer coisa.",
+    "tokens": [
+      "A:",
+      "Anything."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Anything",
+        "pinyin": "",
+        "meaning": "Qualquer coisa"
+      }
+    ],
+    "id": "local-1772293041544-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You order.",
+    "pinyin": "",
+    "translation": "Você pede.",
+    "tokens": [
+      "You",
+      "order."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "order",
+        "pinyin": "",
+        "meaning": "pedir"
+      }
+    ],
+    "id": "local-1772293041544-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Okay.",
+    "pinyin": "",
+    "translation": "B: Ok.",
+    "tokens": [
+      "B:",
+      "Okay."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok"
+      }
+    ],
+    "id": "local-1772293041544-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "When did you arrive in Shanghai?",
+    "pinyin": "",
+    "translation": "Quando você chegou em Xangai?",
+    "tokens": [
+      "When",
+      "did",
+      "you",
+      "arrive",
+      "in",
+      "Shanghai?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "arrive",
+        "pinyin": "",
+        "meaning": "chegar"
+      },
+      {
+        "id": 5,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1772293041544-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Last night.",
+    "pinyin": "",
+    "translation": "A: Ontem à noite.",
+    "tokens": [
+      "A:",
+      "Last",
+      "night."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Last night",
+        "pinyin": "",
+        "meaning": "Ontem à noite"
+      }
+    ],
+    "id": "local-1772293041544-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh, then you must be tired now.",
+    "pinyin": "",
+    "translation": "B: Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "then",
+      "you",
+      "must",
+      "be",
+      "tired",
+      "now."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "must be",
+        "pinyin": "",
+        "meaning": "deve estar"
+      },
+      {
+        "id": 6,
+        "word": "tired",
+        "pinyin": "",
+        "meaning": "cansado"
+      }
+    ],
+    "id": "local-1772293041544-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I often go on business trips, so I'm used to it.",
+    "pinyin": "",
+    "translation": "A: Eu frequentemente viajo a negócios, então estou acostumado.",
+    "tokens": [
+      "A:",
+      "I",
+      "often",
+      "go",
+      "on",
+      "business",
+      "trips,",
+      "so",
+      "I'm",
+      "used",
+      "to",
+      "it."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "often",
+        "pinyin": "",
+        "meaning": "frequentemente"
+      },
+      {
+        "id": 3,
+        "word": "go on business trips",
+        "pinyin": "",
+        "meaning": "viajar a negócios / fazer viagens de negócios"
+      },
+      {
+        "id": 9,
+        "word": "used to it",
+        "pinyin": "",
+        "meaning": "acostumado a isso"
+      }
+    ],
+    "id": "local-1772293041544-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'll give you the proposal to look at.",
+    "pinyin": "",
+    "translation": "Eu vou te dar a proposta para você dar uma olhada.",
+    "tokens": [
+      "I'll",
+      "give",
+      "you",
+      "the",
+      "proposal",
+      "to",
+      "look",
+      "at."
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "proposal",
+        "pinyin": "",
+        "meaning": "proposta"
+      },
+      {
+        "id": 6,
+        "word": "look at",
+        "pinyin": "",
+        "meaning": "dar uma olhada / examinar"
+      }
+    ],
+    "id": "local-1772293041544-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: There's no rush.",
+    "pinyin": "",
+    "translation": "B: Não há pressa.",
+    "tokens": [
+      "B:",
+      "There's",
+      "no",
+      "rush."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "no rush",
+        "pinyin": "",
+        "meaning": "sem pressa / não há pressa"
+      }
+    ],
+    "id": "local-1772293041544-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "We can eat first and talk when we're finished.",
+    "pinyin": "",
+    "translation": "Podemos comer primeiro e conversar quando terminarmos.",
+    "tokens": [
+      "We",
+      "can",
+      "eat",
+      "first",
+      "and",
+      "talk",
+      "when",
+      "we're",
+      "finished."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "eat first",
+        "pinyin": "",
+        "meaning": "comer primeiro"
+      },
+      {
+        "id": 5,
+        "word": "talk",
+        "pinyin": "",
+        "meaning": "conversar"
+      },
+      {
+        "id": 7,
+        "word": "we're finished",
+        "pinyin": "",
+        "meaning": "terminarmos"
+      }
+    ],
+    "id": "local-1772293041544-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Okay.",
+    "pinyin": "",
+    "translation": "A: Ok.",
+    "tokens": [
+      "A:",
+      "Okay."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Ok"
+      }
+    ],
+    "id": "local-1772293041544-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Waiter.",
+    "pinyin": "",
+    "translation": "B: Garçom.",
+    "tokens": [
+      "B:",
+      "Waiter."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Waiter",
+        "pinyin": "",
+        "meaning": "Garçom"
+      }
+    ],
+    "id": "local-1772293041544-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "We'd like to order.",
+    "pinyin": "",
+    "translation": "Gostaríamos de pedir.",
+    "tokens": [
+      "We'd",
+      "like",
+      "to",
+      "order."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "We'd like to order",
+        "pinyin": "",
+        "meaning": "Gostaríamos de pedir"
+      }
+    ],
+    "id": "local-1772293041544-17",
+    "language": "Inglês"
+  }
+]

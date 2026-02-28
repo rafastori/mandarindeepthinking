@@ -1,0 +1,461 @@
+[
+  {
+    "chinese": "A: 첸 부장님, 바쁘신 와중에 저녁 식사를 대접해 주셔서 감사합니다.",
+    "pinyin": null,
+    "translation": "A: Gerente Chen, muito obrigado por me convidar para o jantar, mesmo estando ocupado.",
+    "tokens": [
+      "첸",
+      "부장님",
+      ",",
+      "바쁘신",
+      "와중에",
+      "저녁",
+      "식사를",
+      "대접해",
+      "주셔서",
+      "감사합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "첸 부장님",
+        "pinyin": null,
+        "meaning": "Gerente Chen"
+      },
+      {
+        "id": 2,
+        "word": "바쁘신 와중에",
+        "pinyin": null,
+        "meaning": "mesmo estando ocupado, no meio de estar ocupado"
+      },
+      {
+        "id": 3,
+        "word": "저녁 식사",
+        "pinyin": null,
+        "meaning": "jantar"
+      },
+      {
+        "id": 4,
+        "word": "대접하다",
+        "pinyin": null,
+        "meaning": "oferecer, convidar (para uma refeição)"
+      },
+      {
+        "id": 5,
+        "word": "주셔서",
+        "pinyin": null,
+        "meaning": "por me dar/fazer (forma honorífica de '주다' + ~서, indicando razão)"
+      },
+      {
+        "id": 6,
+        "word": "감사합니다",
+        "pinyin": null,
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772297435941-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 너무 격식 차리지 마세요. 제가 당연히 해야 할 일입니다. 메뉴를 보세요. 무엇을 드시겠어요?",
+    "pinyin": null,
+    "translation": "B: Não seja tão formal. É o que eu deveria fazer. Veja o menu. O que você gostaria de comer?",
+    "tokens": [
+      "너무",
+      "격식",
+      "차리지",
+      "마세요",
+      ".",
+      "제가",
+      "당연히",
+      "해야",
+      "할",
+      "일입니다",
+      ".",
+      "메뉴를",
+      "보세요",
+      ".",
+      "무엇을",
+      "드시겠어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 2,
+        "word": "격식 차리다",
+        "pinyin": null,
+        "meaning": "ser formal, manter formalidade"
+      },
+      {
+        "id": 3,
+        "word": "~지 마세요",
+        "pinyin": null,
+        "meaning": "por favor, não faça ~"
+      },
+      {
+        "id": 4,
+        "word": "당연히",
+        "pinyin": null,
+        "meaning": "naturalmente, obviamente"
+      },
+      {
+        "id": 5,
+        "word": "해야 할 일",
+        "pinyin": null,
+        "meaning": "coisa a ser feita, dever"
+      },
+      {
+        "id": 6,
+        "word": "메뉴",
+        "pinyin": null,
+        "meaning": "menu"
+      },
+      {
+        "id": 7,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver, olhar"
+      },
+      {
+        "id": 8,
+        "word": "무엇",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 9,
+        "word": "드시겠어요?",
+        "pinyin": null,
+        "meaning": "o que gostaria de comer/beber? (forma honorífica de '먹다/마시다' + ~겠어요)"
+      }
+    ],
+    "id": "local-1772297435941-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아무거나 괜찮습니다. 부장님께서 주문해주세요.",
+    "pinyin": null,
+    "translation": "A: Qualquer coisa está bem. Por favor, Gerente, peça para mim.",
+    "tokens": [
+      "아무거나",
+      "괜찮습니다",
+      ".",
+      "부장님께서",
+      "주문해주세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아무거나",
+        "pinyin": null,
+        "meaning": "qualquer coisa"
+      },
+      {
+        "id": 2,
+        "word": "괜찮습니다",
+        "pinyin": null,
+        "meaning": "estar bem, estar tudo certo"
+      },
+      {
+        "id": 3,
+        "word": "부장님께서",
+        "pinyin": null,
+        "meaning": "Gerente (com partícula honorífica)"
+      },
+      {
+        "id": 4,
+        "word": "주문해주세요",
+        "pinyin": null,
+        "meaning": "por favor, peça/encomende (주문하다 + ~주세요)"
+      }
+    ],
+    "id": "local-1772297435941-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 상하이에는 언제 도착하셨어요?",
+    "pinyin": null,
+    "translation": "B: Entendido. Quando você chegou em Xangai?",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "상하이에는",
+      "언제",
+      "도착하셨어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": null,
+        "meaning": "Entendido, Certo"
+      },
+      {
+        "id": 2,
+        "word": "상하이",
+        "pinyin": null,
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "언제",
+        "pinyin": null,
+        "meaning": "quando"
+      },
+      {
+        "id": 4,
+        "word": "도착하셨어요?",
+        "pinyin": null,
+        "meaning": "você chegou? (forma honorífica de '도착하다' + ~셨어요)"
+      }
+    ],
+    "id": "local-1772297435941-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 어젯밤에요.",
+    "pinyin": null,
+    "translation": "A: Ontem à noite.",
+    "tokens": [
+      "어젯밤에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어젯밤",
+        "pinyin": null,
+        "meaning": "ontem à noite"
+      }
+    ],
+    "id": "local-1772297435941-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 그럼 지금 피곤하시겠네요.",
+    "pinyin": null,
+    "translation": "B: Ah, então você deve estar cansado agora.",
+    "tokens": [
+      "아",
+      ",",
+      "그럼",
+      "지금",
+      "피곤하시겠네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": null,
+        "meaning": "Ah (expressão de surpresa/compreensão)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "지금",
+        "pinyin": null,
+        "meaning": "agora"
+      },
+      {
+        "id": 4,
+        "word": "피곤하시겠네요",
+        "pinyin": null,
+        "meaning": "deve estar cansado (forma honorífica de '피곤하다' + ~겠네요)"
+      }
+    ],
+    "id": "local-1772297435941-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 출장을 자주 다녀서 익숙합니다. 제안서를 보여드릴게요.",
+    "pinyin": null,
+    "translation": "A: Estou acostumado, pois viajo frequentemente a negócios. Vou mostrar-lhe a proposta.",
+    "tokens": [
+      "출장을",
+      "자주",
+      "다녀서",
+      "익숙합니다",
+      ".",
+      "제안서를",
+      "보여드릴게요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "출장",
+        "pinyin": null,
+        "meaning": "viagem de negócios"
+      },
+      {
+        "id": 2,
+        "word": "자주",
+        "pinyin": null,
+        "meaning": "frequentemente"
+      },
+      {
+        "id": 3,
+        "word": "다니다",
+        "pinyin": null,
+        "meaning": "ir e vir, frequentar"
+      },
+      {
+        "id": 4,
+        "word": "~서",
+        "pinyin": null,
+        "meaning": "porque (conector de causa/razão)"
+      },
+      {
+        "id": 5,
+        "word": "익숙하다",
+        "pinyin": null,
+        "meaning": "estar acostumado"
+      },
+      {
+        "id": 6,
+        "word": "제안서",
+        "pinyin": null,
+        "meaning": "proposta (documento)"
+      },
+      {
+        "id": 7,
+        "word": "보여드릴게요",
+        "pinyin": null,
+        "meaning": "eu vou mostrar (forma honorífica de '보여주다' + ~ㄹ게요)"
+      }
+    ],
+    "id": "local-1772297435941-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 서두를 것 없습니다. 먼저 식사하고 다 먹은 후에 이야기합시다.",
+    "pinyin": null,
+    "translation": "B: Não há pressa. Primeiro, vamos comer e conversar depois que terminarmos.",
+    "tokens": [
+      "서두를",
+      "것",
+      "없습니다",
+      ".",
+      "먼저",
+      "식사하고",
+      "다",
+      "먹은",
+      "후에",
+      "이야기합시다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "서두르다",
+        "pinyin": null,
+        "meaning": "apressar-se, ter pressa"
+      },
+      {
+        "id": 2,
+        "word": "~ㄹ 것 없다",
+        "pinyin": null,
+        "meaning": "não há necessidade de ~, não há que ~"
+      },
+      {
+        "id": 3,
+        "word": "먼저",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "식사하다",
+        "pinyin": null,
+        "meaning": "fazer uma refeição, comer"
+      },
+      {
+        "id": 5,
+        "word": "다",
+        "pinyin": null,
+        "meaning": "tudo, completamente"
+      },
+      {
+        "id": 6,
+        "word": "먹다",
+        "pinyin": null,
+        "meaning": "comer"
+      },
+      {
+        "id": 7,
+        "word": "~ㄴ 후에",
+        "pinyin": null,
+        "meaning": "depois de ~"
+      },
+      {
+        "id": 8,
+        "word": "이야기합시다",
+        "pinyin": null,
+        "meaning": "vamos conversar (이야기하다 + ~ㅂ시다)"
+      }
+    ],
+    "id": "local-1772297435941-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 알겠습니다.",
+    "pinyin": null,
+    "translation": "A: Entendido.",
+    "tokens": [
+      "알겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": null,
+        "meaning": "Entendido, Certo"
+      }
+    ],
+    "id": "local-1772297435941-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 여기요. 주문하겠습니다.",
+    "pinyin": null,
+    "translation": "B: Com licença. Vou pedir.",
+    "tokens": [
+      "여기요",
+      ".",
+      "주문하겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여기요",
+        "pinyin": null,
+        "meaning": "Com licença! (para chamar alguém), Por aqui!"
+      },
+      {
+        "id": 2,
+        "word": "주문하겠습니다",
+        "pinyin": null,
+        "meaning": "eu vou pedir/encomendar (주문하다 + ~겠습니다)"
+      }
+    ],
+    "id": "local-1772297435941-9",
+    "language": "Coreano"
+  }
+]

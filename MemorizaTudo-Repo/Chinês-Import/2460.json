@@ -1,0 +1,600 @@
+[
+  {
+    "chinese": "丽莎，我想问你个事。",
+    "pinyin": "Lìshā, wǒ xiǎng wèn nǐ gè shì.",
+    "translation": "Lisa, eu gostaria de te perguntar uma coisa.",
+    "tokens": [
+      "丽莎",
+      "，",
+      "我",
+      "想",
+      "问",
+      "你",
+      "个",
+      "事",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "丽莎",
+        "pinyin": "Lìshā",
+        "meaning": "Lisa (nome)"
+      },
+      {
+        "id": 2,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, pensar, desejar"
+      },
+      {
+        "id": 3,
+        "word": "问",
+        "pinyin": "wèn",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 4,
+        "word": "事",
+        "pinyin": "shì",
+        "meaning": "assunto, coisa"
+      }
+    ],
+    "id": "local-1772299134093-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "什么事？",
+    "pinyin": "Shénme shì?",
+    "translation": "Que coisa/assunto?",
+    "tokens": [
+      "什么",
+      "事",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que, qual"
+      },
+      {
+        "id": 6,
+        "word": "事",
+        "pinyin": "shì",
+        "meaning": "assunto, coisa"
+      }
+    ],
+    "id": "local-1772299134093-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我们这个夏天招实习生吗？",
+    "pinyin": "Wǒmen zhège xiàtiān zhāo shíxíshēng ma?",
+    "translation": "Nós estamos contratando estagiários neste verão?",
+    "tokens": [
+      "我们",
+      "这个",
+      "夏天",
+      "招",
+      "实习生",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 8,
+        "word": "夏天",
+        "pinyin": "xiàtiān",
+        "meaning": "verão"
+      },
+      {
+        "id": 9,
+        "word": "招",
+        "pinyin": "zhāo",
+        "meaning": "recrutar, contratar"
+      },
+      {
+        "id": 10,
+        "word": "实习生",
+        "pinyin": "shíxíshēng",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 11,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772299134093-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "招。你有什么合适的推荐人选吗？",
+    "pinyin": "Zhāo. Nǐ yǒu shénme héshì de tuījiàn rénxuǎn ma?",
+    "translation": "Sim, estamos. Você tem alguma pessoa adequada para recomendar?",
+    "tokens": [
+      "招",
+      "。",
+      "你",
+      "有",
+      "什么",
+      "合适",
+      "的",
+      "推荐",
+      "人选",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 12,
+        "word": "招",
+        "pinyin": "zhāo",
+        "meaning": "recrutar, contratar"
+      },
+      {
+        "id": 13,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter"
+      },
+      {
+        "id": 14,
+        "word": "合适",
+        "pinyin": "héshì",
+        "meaning": "adequado, apropriado"
+      },
+      {
+        "id": 15,
+        "word": "推荐",
+        "pinyin": "tuījiàn",
+        "meaning": "recomendar"
+      },
+      {
+        "id": 16,
+        "word": "人选",
+        "pinyin": "rénxuǎn",
+        "meaning": "candidato, pessoa selecionada"
+      }
+    ],
+    "id": "local-1772299134093-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我有个外国朋友在中国留学。暑假他想找个实习。",
+    "pinyin": "Wǒ yǒu gè wàiguó péngyǒu zài Zhōngguó liúxué. Shǔjià tā xiǎng zhǎo gè shíxí.",
+    "translation": "Eu tenho um amigo estrangeiro que estuda na China. Ele quer encontrar um estágio nas férias de verão.",
+    "tokens": [
+      "我",
+      "有",
+      "个",
+      "外国",
+      "朋友",
+      "在",
+      "中国",
+      "留学",
+      "。",
+      "暑假",
+      "他",
+      "想",
+      "找",
+      "个",
+      "实习",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "外国",
+        "pinyin": "wàiguó",
+        "meaning": "estrangeiro, país estrangeiro"
+      },
+      {
+        "id": 18,
+        "word": "朋友",
+        "pinyin": "péngyǒu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 19,
+        "word": "中国",
+        "pinyin": "Zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 20,
+        "word": "留学",
+        "pinyin": "liúxué",
+        "meaning": "estudar no exterior"
+      },
+      {
+        "id": 21,
+        "word": "暑假",
+        "pinyin": "shǔjià",
+        "meaning": "férias de verão"
+      },
+      {
+        "id": 22,
+        "word": "找",
+        "pinyin": "zhǎo",
+        "meaning": "procurar, encontrar"
+      },
+      {
+        "id": 23,
+        "word": "实习",
+        "pinyin": "shíxí",
+        "meaning": "estágio"
+      }
+    ],
+    "id": "local-1772299134093-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "如果他是外国学生，可能不行。",
+    "pinyin": "Rúguǒ tā shì wàiguó xuéshēng, kěnéng bùxíng.",
+    "translation": "Se ele é um estudante estrangeiro, talvez não seja possível.",
+    "tokens": [
+      "如果",
+      "他",
+      "是",
+      "外国",
+      "学生",
+      "，",
+      "可能",
+      "不行",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se"
+      },
+      {
+        "id": 25,
+        "word": "外国",
+        "pinyin": "wàiguó",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 26,
+        "word": "学生",
+        "pinyin": "xuéshēng",
+        "meaning": "estudante"
+      },
+      {
+        "id": 27,
+        "word": "可能",
+        "pinyin": "kěnéng",
+        "meaning": "talvez, possível"
+      },
+      {
+        "id": 28,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não pode, não funciona"
+      }
+    ],
+    "id": "local-1772299134093-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "他中文很好。",
+    "pinyin": "Tā Zhōngwén hěn hǎo.",
+    "translation": "O chinês dele é muito bom.",
+    "tokens": [
+      "他",
+      "中文",
+      "很",
+      "好",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "中文",
+        "pinyin": "Zhōngwén",
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 30,
+        "word": "很",
+        "pinyin": "hěn",
+        "meaning": "muito"
+      },
+      {
+        "id": 31,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772299134093-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那不是问题。是签证问题。持学生签证的外国人不能在中国实习。",
+    "pinyin": "Nà bù shì wèntí. Shì qiānzhèng wèntí. Chí xuéshēng qiānzhèng de wàiguó rén bù néng zài Zhōngguó shíxí.",
+    "translation": "Isso não é um problema. É um problema de visto. Estrangeiros com visto de estudante não podem fazer estágio na China.",
+    "tokens": [
+      "那",
+      "不",
+      "是",
+      "问题",
+      "。",
+      "是",
+      "签证",
+      "问题",
+      "。",
+      "持",
+      "学生",
+      "签证",
+      "的",
+      "外国",
+      "人",
+      "不",
+      "能",
+      "在",
+      "中国",
+      "实习",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 32,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      },
+      {
+        "id": 33,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      },
+      {
+        "id": 34,
+        "word": "学生",
+        "pinyin": "xuéshēng",
+        "meaning": "estudante"
+      },
+      {
+        "id": 35,
+        "word": "外国",
+        "pinyin": "wàiguó",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 36,
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 37,
+        "word": "不能",
+        "pinyin": "bù néng",
+        "meaning": "não pode"
+      },
+      {
+        "id": 38,
+        "word": "中国",
+        "pinyin": "Zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 39,
+        "word": "实习",
+        "pinyin": "shíxí",
+        "meaning": "estágio"
+      }
+    ],
+    "id": "local-1772299134093-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦。有那么严格吗？",
+    "pinyin": "Ó. Yǒu nàme yángé ma?",
+    "translation": "Oh. É tão rigoroso assim?",
+    "tokens": [
+      "哦",
+      "。",
+      "有",
+      "那么",
+      "严格",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 40,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh (interjeição)"
+      },
+      {
+        "id": 41,
+        "word": "那么",
+        "pinyin": "nàme",
+        "meaning": "tão, assim"
+      },
+      {
+        "id": 42,
+        "word": "严格",
+        "pinyin": "yángé",
+        "meaning": "rigoroso, estrito"
+      }
+    ],
+    "id": "local-1772299134093-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是的。在中国，外国人即使只是想做实习生，也需要获得工作签证。",
+    "pinyin": "Shì de. Zài Zhōngguó, wàiguó rén jíshǐ zhǐshì xiǎng zuò shíxíshēng, yě xūyào huòdé gōngzuò qiānzhèng.",
+    "translation": "Sim. Na China, mesmo que um estrangeiro queira apenas ser um estagiário, ele precisa obter um visto de trabalho.",
+    "tokens": [
+      "是",
+      "的",
+      "。",
+      "在",
+      "中国",
+      "，",
+      "外国",
+      "人",
+      "即使",
+      "只是",
+      "想",
+      "做",
+      "实习生",
+      "，",
+      "也",
+      "需要",
+      "获得",
+      "工作",
+      "签证",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "是的",
+        "pinyin": "shì de",
+        "meaning": "sim"
+      },
+      {
+        "id": 44,
+        "word": "中国",
+        "pinyin": "Zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 45,
+        "word": "外国人",
+        "pinyin": "wàiguórén",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 46,
+        "word": "即使",
+        "pinyin": "jíshǐ",
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 47,
+        "word": "只是",
+        "pinyin": "zhǐshì",
+        "meaning": "apenas"
+      },
+      {
+        "id": 48,
+        "word": "实习生",
+        "pinyin": "shíxíshēng",
+        "meaning": "estagiário"
+      },
+      {
+        "id": 49,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar, necessitar"
+      },
+      {
+        "id": 50,
+        "word": "获得",
+        "pinyin": "huòdé",
+        "meaning": "obter, conseguir"
+      },
+      {
+        "id": 51,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 52,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      }
+    ],
+    "id": "local-1772299134093-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "真的吗？那我要告诉他了。谢谢你！",
+    "pinyin": "Zhēnde ma? Nà wǒ yào gàosù tā le. Xièxie nǐ!",
+    "translation": "É sério? Então eu preciso avisá-lo. Obrigado!",
+    "tokens": [
+      "真的",
+      "吗",
+      "？",
+      "那",
+      "我",
+      "要",
+      "告诉",
+      "他",
+      "了",
+      "。",
+      "谢谢",
+      "你",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 53,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "de verdade, realmente"
+      },
+      {
+        "id": 54,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "ir (futuro), precisar"
+      },
+      {
+        "id": 55,
+        "word": "告诉",
+        "pinyin": "gàosù",
+        "meaning": "contar, dizer, informar"
+      },
+      {
+        "id": 56,
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1772299134093-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "不客气。",
+    "pinyin": "Bù kèqi.",
+    "translation": "De nada.",
+    "tokens": [
+      "不",
+      "客气",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 57,
+        "word": "不客气",
+        "pinyin": "bù kèqi",
+        "meaning": "de nada"
+      }
+    ],
+    "id": "local-1772299134093-11",
+    "language": "Chinês"
+  }
+]

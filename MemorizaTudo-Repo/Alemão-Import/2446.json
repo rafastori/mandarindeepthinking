@@ -1,0 +1,499 @@
+[
+  {
+    "chinese": "A: Schatz, ich bin so dick geworden! Ich will mir ein Gerät zum Abnehmen kaufen!",
+    "pinyin": "",
+    "translation": "A: Querido(a), eu engordei tanto! Eu quero comprar um aparelho para emagrecer!",
+    "tokens": [
+      "A:",
+      "Schatz",
+      ",",
+      "ich",
+      "bin",
+      "so",
+      "dick",
+      "geworden",
+      "!",
+      "Ich",
+      "will",
+      "mir",
+      "ein",
+      "Gerät",
+      "zum",
+      "Abnehmen",
+      "kaufen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "Querido(a), tesouro"
+      },
+      {
+        "id": 2,
+        "word": "dick",
+        "pinyin": "",
+        "meaning": "Gordo(a)"
+      },
+      {
+        "id": 3,
+        "word": "geworden",
+        "pinyin": "",
+        "meaning": "(do verbo werden) tornado(a), ficado(a)"
+      },
+      {
+        "id": 4,
+        "word": "will",
+        "pinyin": "",
+        "meaning": "(do verbo wollen) quero"
+      },
+      {
+        "id": 5,
+        "word": "Gerät",
+        "pinyin": "",
+        "meaning": "Aparelho, dispositivo"
+      },
+      {
+        "id": 6,
+        "word": "zum Abnehmen",
+        "pinyin": "",
+        "meaning": "Para emagrecer (Abnehmen: perder peso, emagrecimento)"
+      },
+      {
+        "id": 7,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "Comprar"
+      }
+    ],
+    "id": "local-1772293278362-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was für eins willst du dir denn kaufen?",
+    "pinyin": "",
+    "translation": "B: Que tipo você quer comprar então?",
+    "tokens": [
+      "B:",
+      "Was",
+      "für",
+      "eins",
+      "willst",
+      "du",
+      "dir",
+      "denn",
+      "kaufen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was für eins",
+        "pinyin": "",
+        "meaning": "Que tipo (de um)"
+      },
+      {
+        "id": 2,
+        "word": "willst",
+        "pinyin": "",
+        "meaning": "(do verbo wollen) quer"
+      },
+      {
+        "id": 3,
+        "word": "denn",
+        "pinyin": "",
+        "meaning": "(partícula modal para dar ênfase à pergunta)"
+      },
+      {
+        "id": 4,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "Comprar"
+      }
+    ],
+    "id": "local-1772293278362-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Schau mal! Wie findest du dieses Laufband?",
+    "pinyin": "",
+    "translation": "A: Olha só! O que você acha desta esteira?",
+    "tokens": [
+      "A:",
+      "Schau",
+      "mal",
+      "!",
+      "Wie",
+      "findest",
+      "du",
+      "dieses",
+      "Laufband",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schau mal",
+        "pinyin": "",
+        "meaning": "Olha só, Dê uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "findest",
+        "pinyin": "",
+        "meaning": "(do verbo finden) encontra, acha"
+      },
+      {
+        "id": 3,
+        "word": "Laufband",
+        "pinyin": "",
+        "meaning": "Esteira"
+      }
+    ],
+    "id": "local-1772293278362-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja, das ist gar nicht schlecht!",
+    "pinyin": "",
+    "translation": "B: Sim, isso não é nada mal!",
+    "tokens": [
+      "B:",
+      "Ja",
+      ",",
+      "das",
+      "ist",
+      "gar",
+      "nicht",
+      "schlecht",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gar nicht schlecht",
+        "pinyin": "",
+        "meaning": "Nada mal, muito bom"
+      }
+    ],
+    "id": "local-1772293278362-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Und dieses Ellipsentrainer-Trainingsgerät soll die Beine und die Taille schlanker machen!",
+    "pinyin": "",
+    "translation": "A: E este aparelho elíptico de treino deve deixar as pernas e a cintura mais finas!",
+    "tokens": [
+      "A:",
+      "Und",
+      "dieses",
+      "Ellipsentrainer",
+      "-",
+      "Trainingsgerät",
+      "soll",
+      "die",
+      "Beine",
+      "und",
+      "die",
+      "Taille",
+      "schlanker",
+      "machen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ellipsentrainer-Trainingsgerät",
+        "pinyin": "",
+        "meaning": "Aparelho elíptico de treino"
+      },
+      {
+        "id": 2,
+        "word": "soll",
+        "pinyin": "",
+        "meaning": "(do verbo sollen) deve, é suposto"
+      },
+      {
+        "id": 3,
+        "word": "Beine",
+        "pinyin": "",
+        "meaning": "Pernas"
+      },
+      {
+        "id": 4,
+        "word": "Taille",
+        "pinyin": "",
+        "meaning": "Cintura"
+      },
+      {
+        "id": 5,
+        "word": "schlanker",
+        "pinyin": "",
+        "meaning": "Mais fino(a) (comparativo de schlank)"
+      },
+      {
+        "id": 6,
+        "word": "machen",
+        "pinyin": "",
+        "meaning": "Fazer"
+      }
+    ],
+    "id": "local-1772293278362-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das scheint ja gut für dich zu sein.",
+    "pinyin": "",
+    "translation": "B: Isso parece bom para você.",
+    "tokens": [
+      "B:",
+      "Das",
+      "scheint",
+      "ja",
+      "gut",
+      "für",
+      "dich",
+      "zu",
+      "sein",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "scheint",
+        "pinyin": "",
+        "meaning": "(do verbo scheinen) parece"
+      },
+      {
+        "id": 2,
+        "word": "ja",
+        "pinyin": "",
+        "meaning": "(partícula modal que expressa surpresa leve ou confirmação)"
+      },
+      {
+        "id": 3,
+        "word": "gut",
+        "pinyin": "",
+        "meaning": "Bom"
+      }
+    ],
+    "id": "local-1772293278362-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Oh, und hier gibt es auch einen Abnehm-Roboter, aber leider ist der viel zu teuer!",
+    "pinyin": "",
+    "translation": "A: Ah, e aqui também tem um robô para emagrecer, mas infelizmente ele é caro demais!",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "und",
+      "hier",
+      "gibt",
+      "es",
+      "auch",
+      "einen",
+      "Abnehm",
+      "-",
+      "Roboter",
+      ",",
+      "aber",
+      "leider",
+      "ist",
+      "der",
+      "viel",
+      "zu",
+      "teuer",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gibt es",
+        "pinyin": "",
+        "meaning": "Há, existe(m)"
+      },
+      {
+        "id": 2,
+        "word": "Abnehm-Roboter",
+        "pinyin": "",
+        "meaning": "Robô para emagrecer"
+      },
+      {
+        "id": 3,
+        "word": "leider",
+        "pinyin": "",
+        "meaning": "Infelizmente"
+      },
+      {
+        "id": 4,
+        "word": "viel zu teuer",
+        "pinyin": "",
+        "meaning": "Caro demais, muito caro"
+      }
+    ],
+    "id": "local-1772293278362-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Geld spielt keine Rolle. Ich hab nur Sorge, dass du es zwei Tage benutzt und dann nie wieder anrührst.",
+    "pinyin": "",
+    "translation": "B: Dinheiro não é problema. Eu só me preocupo que você o use por dois dias e depois nunca mais toque nele.",
+    "tokens": [
+      "B:",
+      "Geld",
+      "spielt",
+      "keine",
+      "Rolle",
+      ".",
+      "Ich",
+      "hab",
+      "nur",
+      "Sorge",
+      ",",
+      "dass",
+      "du",
+      "es",
+      "zwei",
+      "Tage",
+      "benutzt",
+      "und",
+      "dann",
+      "nie",
+      "wieder",
+      "anrührst",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Geld spielt keine Rolle",
+        "pinyin": "",
+        "meaning": "Dinheiro não é problema, Dinheiro não importa"
+      },
+      {
+        "id": 2,
+        "word": "Sorge",
+        "pinyin": "",
+        "meaning": "Preocupação"
+      },
+      {
+        "id": 3,
+        "word": "dass",
+        "pinyin": "",
+        "meaning": "Que (conjunção)"
+      },
+      {
+        "id": 4,
+        "word": "zwei Tage",
+        "pinyin": "",
+        "meaning": "Dois dias"
+      },
+      {
+        "id": 5,
+        "word": "benutzt",
+        "pinyin": "",
+        "meaning": "(do verbo benutzen) usa"
+      },
+      {
+        "id": 6,
+        "word": "nie wieder",
+        "pinyin": "",
+        "meaning": "Nunca mais"
+      },
+      {
+        "id": 7,
+        "word": "anrührst",
+        "pinyin": "",
+        "meaning": "(do verbo anrühren) toca, usa"
+      }
+    ],
+    "id": "local-1772293278362-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dieses Mal verspreche ich, dass ich es nicht tue!",
+    "pinyin": "",
+    "translation": "A: Desta vez eu prometo que não farei isso!",
+    "tokens": [
+      "A:",
+      "Dieses",
+      "Mal",
+      "verspreche",
+      "ich",
+      ",",
+      "dass",
+      "ich",
+      "es",
+      "nicht",
+      "tue",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dieses Mal",
+        "pinyin": "",
+        "meaning": "Desta vez"
+      },
+      {
+        "id": 2,
+        "word": "verspreche",
+        "pinyin": "",
+        "meaning": "(do verbo versprechen) prometo"
+      },
+      {
+        "id": 3,
+        "word": "tue",
+        "pinyin": "",
+        "meaning": "(do verbo tun) faço"
+      }
+    ],
+    "id": "local-1772293278362-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Na gut. Dann kauf es dir! Ich unterstütze dich!",
+    "pinyin": "",
+    "translation": "B: Ah, bem. Então compre! Eu te apoio!",
+    "tokens": [
+      "B:",
+      "Na",
+      "gut",
+      ".",
+      "Dann",
+      "kauf",
+      "es",
+      "dir",
+      "!",
+      "Ich",
+      "unterstütze",
+      "dich",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Na gut",
+        "pinyin": "",
+        "meaning": "Ah, bem; Tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "kauf",
+        "pinyin": "",
+        "meaning": "(do verbo kaufen - imperativo) compre"
+      },
+      {
+        "id": 3,
+        "word": "unterstütze",
+        "pinyin": "",
+        "meaning": "(do verbo unterstützen) apoio"
+      }
+    ],
+    "id": "local-1772293278362-9",
+    "language": "Alemão"
+  }
+]

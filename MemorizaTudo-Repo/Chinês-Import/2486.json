@@ -1,0 +1,622 @@
+[
+  {
+    "chinese": "明天你需要带宝宝去社区医院打疫苗。你请假了吗？",
+    "pinyin": "Míngtiān nǐ xūyào dài bǎobǎo qù shèqū yīyuàn dǎ yìmiáo. Nǐ qǐngjià le ma?",
+    "translation": "Amanhã você precisa levar o bebê ao hospital comunitário para tomar vacina. Você pediu folga?",
+    "tokens": [
+      "明天",
+      "你",
+      "需要",
+      "带",
+      "宝宝",
+      "去",
+      "社区",
+      "医院",
+      "打",
+      "疫苗",
+      "。",
+      "你",
+      "请假",
+      "了",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "明天",
+        "pinyin": "míngtiān",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar, necessitar"
+      },
+      {
+        "id": 3,
+        "word": "带",
+        "pinyin": "dài",
+        "meaning": "levar, trazer"
+      },
+      {
+        "id": 4,
+        "word": "宝宝",
+        "pinyin": "bǎobǎo",
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
+        "word": "社区",
+        "pinyin": "shèqū",
+        "meaning": "comunidade"
+      },
+      {
+        "id": 6,
+        "word": "医院",
+        "pinyin": "yīyuàn",
+        "meaning": "hospital"
+      },
+      {
+        "id": 7,
+        "word": "打疫苗",
+        "pinyin": "dǎ yìmiáo",
+        "meaning": "tomar vacina"
+      },
+      {
+        "id": 8,
+        "word": "请假",
+        "pinyin": "qǐngjià",
+        "meaning": "pedir folga, tirar licença"
+      }
+    ],
+    "id": "local-1772301327413-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是的，我请了一天假。亲爱的，宝宝明天打什么针？",
+    "pinyin": "Shì de, wǒ qǐng le yī tiān jiǎ. Qīn'ài de, bǎobǎo míngtiān dǎ shénme zhēn?",
+    "translation": "Sim, eu pedi um dia de folga. Querido(a), que vacina o bebê vai tomar amanhã?",
+    "tokens": [
+      "是的",
+      "，",
+      "我",
+      "请",
+      "了",
+      "一天",
+      "假",
+      "。",
+      "亲爱",
+      "的",
+      "，",
+      "宝宝",
+      "明天",
+      "打",
+      "什么",
+      "针",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是的",
+        "pinyin": "shì de",
+        "meaning": "sim, está certo"
+      },
+      {
+        "id": 2,
+        "word": "请假",
+        "pinyin": "qǐngjià",
+        "meaning": "pedir folga, tirar licença (aqui: tirou folga)"
+      },
+      {
+        "id": 3,
+        "word": "一天",
+        "pinyin": "yī tiān",
+        "meaning": "um dia"
+      },
+      {
+        "id": 4,
+        "word": "亲爱的",
+        "pinyin": "qīn'ài de",
+        "meaning": "querido(a)"
+      },
+      {
+        "id": 5,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      },
+      {
+        "id": 6,
+        "word": "针",
+        "pinyin": "zhēn",
+        "meaning": "agulha, injeção (aqui: vacina)"
+      }
+    ],
+    "id": "local-1772301327413-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我看看。是乙肝疫苗。",
+    "pinyin": "Wǒ kànkan. Shì yǐgān yìmiáo.",
+    "translation": "A: Deixa eu ver. É a vacina da hepatite B.",
+    "tokens": [
+      "我",
+      "看看",
+      "。",
+      "是",
+      "乙肝",
+      "疫苗",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看看",
+        "pinyin": "kànkan",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 2,
+        "word": "乙肝",
+        "pinyin": "yǐgān",
+        "meaning": "hepatite B"
+      },
+      {
+        "id": 3,
+        "word": "疫苗",
+        "pinyin": "yìmiáo",
+        "meaning": "vacina"
+      }
+    ],
+    "id": "local-1772301327413-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦。是免费的吧？",
+    "pinyin": "Ó. Shì miǎnfèi de ba?",
+    "translation": "B: Ah. É de graça, certo?",
+    "tokens": [
+      "哦",
+      "。",
+      "是",
+      "免费",
+      "的",
+      "吧",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh (interjeição de surpresa ou compreensão)"
+      },
+      {
+        "id": 2,
+        "word": "免费",
+        "pinyin": "miǎnfèi",
+        "meaning": "gratuito, de graça"
+      }
+    ],
+    "id": "local-1772301327413-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "有国产疫苗和进口疫苗。国产的免费。进口的收费。",
+    "pinyin": "Yǒu guóchǎn yìmiáo hé jìnkǒu yìmiáo. Guóchǎn de miǎnfèi. Jìnkǒu de shōufèi.",
+    "translation": "A: Tem vacina nacional e vacina importada. A nacional é de graça. A importada é paga.",
+    "tokens": [
+      "有",
+      "国产",
+      "疫苗",
+      "和",
+      "进口",
+      "疫苗",
+      "。",
+      "国产",
+      "的",
+      "免费",
+      "。",
+      "进口",
+      "的",
+      "收费",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter"
+      },
+      {
+        "id": 2,
+        "word": "国产",
+        "pinyin": "guóchǎn",
+        "meaning": "produzido domesticamente, nacional"
+      },
+      {
+        "id": 3,
+        "word": "疫苗",
+        "pinyin": "yìmiáo",
+        "meaning": "vacina"
+      },
+      {
+        "id": 4,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "e"
+      },
+      {
+        "id": 5,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      },
+      {
+        "id": 6,
+        "word": "免费",
+        "pinyin": "miǎnfèi",
+        "meaning": "gratuito, de graça"
+      },
+      {
+        "id": 7,
+        "word": "收费",
+        "pinyin": "shōufèi",
+        "meaning": "cobrar uma taxa, ser pago"
+      }
+    ],
+    "id": "local-1772301327413-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那我们打国产的还是进口的？",
+    "pinyin": "Nà wǒmen dǎ guóchǎn de háishì jìnkǒu de?",
+    "translation": "B: Então nós tomamos a nacional ou a importada?",
+    "tokens": [
+      "那",
+      "我们",
+      "打",
+      "国产",
+      "的",
+      "还是",
+      "进口",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "打",
+        "pinyin": "dǎ",
+        "meaning": "tomar (injeção, vacina)"
+      },
+      {
+        "id": 4,
+        "word": "国产",
+        "pinyin": "guóchǎn",
+        "meaning": "produzido domesticamente, nacional"
+      },
+      {
+        "id": 5,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ou (em perguntas)"
+      },
+      {
+        "id": 6,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301327413-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "进口的。",
+    "pinyin": "Jìnkǒu de.",
+    "translation": "A: A importada.",
+    "tokens": [
+      "进口",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301327413-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "可是我们家小家伙抵抗力很好，不生病。没必要打进口的吧。",
+    "pinyin": "Kěshì wǒmen jiā xiǎo jiāhuo dǐkànglì hěn hǎo, bù shēngbìng. Méi bìyào dǎ jìnkǒu de ba.",
+    "translation": "B: Mas nosso pequeno tem boa imunidade, não fica doente. Não há necessidade de tomar a importada, certo?",
+    "tokens": [
+      "可是",
+      "我们",
+      "家",
+      "小家伙",
+      "抵抗力",
+      "很",
+      "好",
+      "，",
+      "不",
+      "生病",
+      "。",
+      "没",
+      "必要",
+      "打",
+      "进口",
+      "的",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可是",
+        "pinyin": "kěshì",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 2,
+        "word": "我们家",
+        "pinyin": "wǒmen jiā",
+        "meaning": "nossa família (aqui: nosso)"
+      },
+      {
+        "id": 3,
+        "word": "小家伙",
+        "pinyin": "xiǎo jiāhuo",
+        "meaning": "pequeno(a), filhote (termo carinhoso para criança)"
+      },
+      {
+        "id": 4,
+        "word": "抵抗力",
+        "pinyin": "dǐkànglì",
+        "meaning": "imunidade, resistência"
+      },
+      {
+        "id": 5,
+        "word": "很好",
+        "pinyin": "hěn hǎo",
+        "meaning": "muito bom"
+      },
+      {
+        "id": 6,
+        "word": "不",
+        "pinyin": "bù",
+        "meaning": "não"
+      },
+      {
+        "id": 7,
+        "word": "生病",
+        "pinyin": "shēngbìng",
+        "meaning": "ficar doente"
+      },
+      {
+        "id": 8,
+        "word": "没必要",
+        "pinyin": "méi bìyào",
+        "meaning": "não há necessidade, desnecessário"
+      },
+      {
+        "id": 9,
+        "word": "打",
+        "pinyin": "dǎ",
+        "meaning": "tomar (injeção, vacina)"
+      },
+      {
+        "id": 10,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301327413-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "给孩子花的钱不能省。进口疫苗虽然贵，但应该更好更安全。一分钱一分货嘛。",
+    "pinyin": "Gěi háizi huā de qián bù néng shěng. Jìnkǒu yìmiáo suīrán guì, dàn yīnggāi gèng hǎo gèng ānquán. Yī fēn qián yī fēn huò ma.",
+    "translation": "A: O dinheiro gasto com a criança não pode ser economizado. Embora a vacina importada seja cara, deve ser melhor e mais segura. Você recebe o que paga.",
+    "tokens": [
+      "给",
+      "孩子",
+      "花",
+      "的",
+      "钱",
+      "不能",
+      "省",
+      "。",
+      "进口",
+      "疫苗",
+      "虽然",
+      "贵",
+      "，",
+      "但",
+      "应该",
+      "更",
+      "好",
+      "更",
+      "安全",
+      "。",
+      "一分钱",
+      "一分",
+      "货",
+      "嘛",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "孩子",
+        "pinyin": "háizi",
+        "meaning": "criança"
+      },
+      {
+        "id": 2,
+        "word": "花钱",
+        "pinyin": "huā qián",
+        "meaning": "gastar dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "不能",
+        "pinyin": "bù néng",
+        "meaning": "não pode, não deve"
+      },
+      {
+        "id": 4,
+        "word": "省",
+        "pinyin": "shěng",
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "进口",
+        "pinyin": "jìnkǒu",
+        "meaning": "importado"
+      },
+      {
+        "id": 6,
+        "word": "疫苗",
+        "pinyin": "yìmiáo",
+        "meaning": "vacina"
+      },
+      {
+        "id": 7,
+        "word": "虽然",
+        "pinyin": "suīrán",
+        "meaning": "embora"
+      },
+      {
+        "id": 8,
+        "word": "贵",
+        "pinyin": "guì",
+        "meaning": "caro"
+      },
+      {
+        "id": 9,
+        "word": "但",
+        "pinyin": "dàn",
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 10,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "deveria"
+      },
+      {
+        "id": 11,
+        "word": "更",
+        "pinyin": "gèng",
+        "meaning": "mais, ainda mais"
+      },
+      {
+        "id": 12,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bom"
+      },
+      {
+        "id": 13,
+        "word": "安全",
+        "pinyin": "ānquán",
+        "meaning": "seguro"
+      },
+      {
+        "id": 14,
+        "word": "一分钱一分货",
+        "pinyin": "yī fēn qián yī fēn huò",
+        "meaning": "você recebe o que paga (lit. um centavo, um centavo de mercadoria)"
+      }
+    ],
+    "id": "local-1772301327413-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好的，领导。你说什么就是什么。我听你的。",
+    "pinyin": "Hǎo de, lǐngdǎo. Nǐ shuō shénme jiù shì shénme. Wǒ tīng nǐ de.",
+    "translation": "B: Ok, chefe. O que você diz, é o que é. Eu te escuto.",
+    "tokens": [
+      "好的",
+      "，",
+      "领导",
+      "。",
+      "你",
+      "说",
+      "什么",
+      "就是",
+      "什么",
+      "。",
+      "我",
+      "听",
+      "你",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎo de",
+        "meaning": "ok, certo"
+      },
+      {
+        "id": 2,
+        "word": "领导",
+        "pinyin": "lǐngdǎo",
+        "meaning": "líder, chefe (aqui, usado de forma carinhosa/bem-humorada)"
+      },
+      {
+        "id": 3,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "dizer, falar"
+      },
+      {
+        "id": 4,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      },
+      {
+        "id": 5,
+        "word": "就是",
+        "pinyin": "jiù shì",
+        "meaning": "exatamente isso (aqui: é o que é, o que você diz é a lei)"
+      },
+      {
+        "id": 6,
+        "word": "听",
+        "pinyin": "tīng",
+        "meaning": "ouvir, escutar, obedecer"
+      }
+    ],
+    "id": "local-1772301327413-9",
+    "language": "Chinês"
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "chinese": "A: Tongtong, ¿adivina con quién me topé ese día?",
+    "pinyin": null,
+    "translation": "A: Tongtong, adivinha com quem eu me deparei naquele dia?",
+    "tokens": [
+      "A:",
+      "Tongtong,",
+      "¿adivina",
+      "con",
+      "quién",
+      "me",
+      "topé",
+      "ese",
+      "día?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "adivina",
+        "pinyin": null,
+        "meaning": "adivinha"
+      },
+      {
+        "id": 2,
+        "word": "me topé",
+        "pinyin": null,
+        "meaning": "eu me deparei"
+      },
+      {
+        "id": 3,
+        "word": "ese día",
+        "pinyin": null,
+        "meaning": "naquele dia"
+      }
+    ],
+    "id": "local-1772296425420-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Quién?",
+    "pinyin": null,
+    "translation": "B: Quem?",
+    "tokens": [
+      "B:",
+      "¿Quién?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quién",
+        "pinyin": null,
+        "meaning": "Quem"
+      }
+    ],
+    "id": "local-1772296425420-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Mi exnovio.",
+    "pinyin": null,
+    "translation": "A: Meu ex-namorado.",
+    "tokens": [
+      "A:",
+      "Mi",
+      "exnovio."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "exnovio",
+        "pinyin": null,
+        "meaning": "ex-namorado"
+      }
+    ],
+    "id": "local-1772296425420-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿De verdad? ¿Hablaste con él?",
+    "pinyin": null,
+    "translation": "B: Sério? Você falou com ele?",
+    "tokens": [
+      "B:",
+      "¿De",
+      "verdad?",
+      "¿Hablaste",
+      "con",
+      "él?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De verdad",
+        "pinyin": null,
+        "meaning": "Sério?",
+        "meaning_alt": "De verdade?"
+      },
+      {
+        "id": 2,
+        "word": "Hablaste",
+        "pinyin": null,
+        "meaning": "Você falou"
+      }
+    ],
+    "id": "local-1772296425420-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No lo hice. Estaba con una chica.",
+    "pinyin": null,
+    "translation": "A: Não o fiz. Ele estava com uma garota.",
+    "tokens": [
+      "A:",
+      "No",
+      "lo",
+      "hice.",
+      "Estaba",
+      "con",
+      "una",
+      "chica."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No lo hice",
+        "pinyin": null,
+        "meaning": "Não o fiz"
+      },
+      {
+        "id": 2,
+        "word": "Estaba",
+        "pinyin": null,
+        "meaning": "Estava"
+      },
+      {
+        "id": 3,
+        "word": "chica",
+        "pinyin": null,
+        "meaning": "garota"
+      }
+    ],
+    "id": "local-1772296425420-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Era esa amante suya la que los separó?",
+    "pinyin": null,
+    "translation": "B: Era aquela amante dele que os separou?",
+    "tokens": [
+      "B:",
+      "¿Era",
+      "esa",
+      "amante",
+      "suya",
+      "la",
+      "que",
+      "los",
+      "separó?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Era",
+        "pinyin": null,
+        "meaning": "Era"
+      },
+      {
+        "id": 2,
+        "word": "amante",
+        "pinyin": null,
+        "meaning": "amante"
+      },
+      {
+        "id": 3,
+        "word": "suya",
+        "pinyin": null,
+        "meaning": "dele/dela"
+      },
+      {
+        "id": 4,
+        "word": "separó",
+        "pinyin": null,
+        "meaning": "separou"
+      }
+    ],
+    "id": "local-1772296425420-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No. Él ha cambiado a una nueva.",
+    "pinyin": null,
+    "translation": "A: Não. Ele mudou para uma nova.",
+    "tokens": [
+      "A:",
+      "No.",
+      "Él",
+      "ha",
+      "cambiado",
+      "a",
+      "una",
+      "nueva."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ha cambiado",
+        "pinyin": null,
+        "meaning": "mudou"
+      },
+      {
+        "id": 2,
+        "word": "nueva",
+        "pinyin": null,
+        "meaning": "nova"
+      }
+    ],
+    "id": "local-1772296425420-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Eh? ¿Está engañando de nuevo? ¿Cómo es esa chica?",
+    "pinyin": null,
+    "translation": "B: Eh? Ele está traindo de novo? Como é aquela garota?",
+    "tokens": [
+      "B:",
+      "¿Eh?",
+      "¿Está",
+      "engañando",
+      "de",
+      "nuevo?",
+      "¿Cómo",
+      "es",
+      "esa",
+      "chica?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh",
+        "pinyin": null,
+        "meaning": "Eh?"
+      },
+      {
+        "id": 2,
+        "word": "está engañando",
+        "pinyin": null,
+        "meaning": "está traindo"
+      },
+      {
+        "id": 3,
+        "word": "de nuevo",
+        "pinyin": null,
+        "meaning": "de novo"
+      },
+      {
+        "id": 4,
+        "word": "Cómo es",
+        "pinyin": null,
+        "meaning": "Como é"
+      }
+    ],
+    "id": "local-1772296425420-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Se ve muy bonita, pero parece que se ha hecho cirugía plástica.",
+    "pinyin": null,
+    "translation": "A: Ela parece muito bonita, mas parece que fez cirurgia plástica.",
+    "tokens": [
+      "A:",
+      "Se",
+      "ve",
+      "muy",
+      "bonita,",
+      "pero",
+      "parece",
+      "que",
+      "se",
+      "ha",
+      "hecho",
+      "cirugía",
+      "plástica."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Se ve",
+        "pinyin": null,
+        "meaning": "Ela parece"
+      },
+      {
+        "id": 2,
+        "word": "bonita",
+        "pinyin": null,
+        "meaning": "bonita"
+      },
+      {
+        "id": 3,
+        "word": "parece que",
+        "pinyin": null,
+        "meaning": "parece que"
+      },
+      {
+        "id": 4,
+        "word": "se ha hecho",
+        "pinyin": null,
+        "meaning": "fez/passou por"
+      },
+      {
+        "id": 5,
+        "word": "cirugía plástica",
+        "pinyin": null,
+        "meaning": "cirurgia plástica"
+      }
+    ],
+    "id": "local-1772296425420-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Él no es tan buen tipo. Afortunadamente, rompiste con él.",
+    "pinyin": null,
+    "translation": "B: Ele não é um cara tão bom. Felizmente, você terminou com ele.",
+    "tokens": [
+      "B:",
+      "Él",
+      "no",
+      "es",
+      "tan",
+      "buen",
+      "tipo.",
+      "Afortunadamente,",
+      "rompiste",
+      "con",
+      "él."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "buen tipo",
+        "pinyin": null,
+        "meaning": "bom tipo",
+        "meaning_alt": "bom sujeito"
+      },
+      {
+        "id": 2,
+        "word": "Afortunadamente",
+        "pinyin": null,
+        "meaning": "Felizmente"
+      },
+      {
+        "id": 3,
+        "word": "rompiste con",
+        "pinyin": null,
+        "meaning": "você terminou com"
+      }
+    ],
+    "id": "local-1772296425420-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sin duda. En ese momento, debí haber estado ciega para estar con él.",
+    "pinyin": null,
+    "translation": "A: Sem dúvida. Naquele momento, eu devia ter estado cega para estar com ele.",
+    "tokens": [
+      "A:",
+      "Sin",
+      "duda.",
+      "En",
+      "ese",
+      "momento,",
+      "debí",
+      "haber",
+      "estado",
+      "ciega",
+      "para",
+      "estar",
+      "con",
+      "él."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sin duda",
+        "pinyin": null,
+        "meaning": "Sem dúvida"
+      },
+      {
+        "id": 2,
+        "word": "En ese momento",
+        "pinyin": null,
+        "meaning": "Naquele momento"
+      },
+      {
+        "id": 3,
+        "word": "debí haber estado",
+        "pinyin": null,
+        "meaning": "eu devia ter estado"
+      },
+      {
+        "id": 4,
+        "word": "ciega",
+        "pinyin": null,
+        "meaning": "cega"
+      },
+      {
+        "id": 5,
+        "word": "para estar",
+        "pinyin": null,
+        "meaning": "para estar"
+      }
+    ],
+    "id": "local-1772296425420-10",
+    "language": "Espanhol"
+  }
+]

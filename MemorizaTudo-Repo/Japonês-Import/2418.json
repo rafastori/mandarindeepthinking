@@ -1,0 +1,683 @@
+[
+  {
+    "chinese": "A: こんにちは。何かお手伝いできることはありますか？",
+    "pinyin": null,
+    "translation": "A: Olá. Posso ajudar em algo?",
+    "tokens": [
+      "こんにちは",
+      "何か",
+      "お手伝い",
+      "できる",
+      "こと",
+      "は",
+      "あります",
+      "か"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんにちは",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "何か",
+        "pinyin": null,
+        "meaning": "Algo, alguma coisa"
+      },
+      {
+        "id": 3,
+        "word": "お手伝いできる",
+        "pinyin": null,
+        "meaning": "Posso ajudar, ser capaz de ajudar"
+      },
+      {
+        "id": 4,
+        "word": "ありますか",
+        "pinyin": null,
+        "meaning": "Há?, Existe?, Tem?"
+      }
+    ],
+    "id": "local-1772296361612-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: こんにちは。カードをカットしたいです。新しい携帯電話を買ったのですが、元のSIMカードが使えません。",
+    "pinyin": null,
+    "translation": "B: Olá. Gostaria de cortar o cartão. Comprei um celular novo, mas o cartão SIM original não funciona.",
+    "tokens": [
+      "こんにちは",
+      "カード",
+      "を",
+      "カット",
+      "したい",
+      "です",
+      "新しい",
+      "携帯電話",
+      "を",
+      "買っ",
+      "た",
+      "の",
+      "です",
+      "が",
+      "元",
+      "の",
+      "SIMカード",
+      "が",
+      "使えません"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんにちは",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "カード",
+        "pinyin": null,
+        "meaning": "Cartão"
+      },
+      {
+        "id": 3,
+        "word": "カットしたい",
+        "pinyin": null,
+        "meaning": "Quero cortar"
+      },
+      {
+        "id": 4,
+        "word": "新しい",
+        "pinyin": null,
+        "meaning": "Novo/a"
+      },
+      {
+        "id": 5,
+        "word": "携帯電話",
+        "pinyin": null,
+        "meaning": "Celular, telefone móvel"
+      },
+      {
+        "id": 6,
+        "word": "買った",
+        "pinyin": null,
+        "meaning": "Comprei (forma passada de 'comprar')"
+      },
+      {
+        "id": 7,
+        "word": "元",
+        "pinyin": null,
+        "meaning": "Original, antigo"
+      },
+      {
+        "id": 8,
+        "word": "SIMカード",
+        "pinyin": null,
+        "meaning": "Cartão SIM"
+      },
+      {
+        "id": 9,
+        "word": "使えません",
+        "pinyin": null,
+        "meaning": "Não funciona, não pode ser usado"
+      }
+    ],
+    "id": "local-1772296361612-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ミニカードにしたいんですね？承知しました。",
+    "pinyin": null,
+    "translation": "A: Quer transformá-lo em um mini-cartão, certo? Entendido.",
+    "tokens": [
+      "ミニカード",
+      "に",
+      "したい",
+      "ん",
+      "です",
+      "ね",
+      "承知しました"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ミニカード",
+        "pinyin": null,
+        "meaning": "Mini-cartão"
+      },
+      {
+        "id": 2,
+        "word": "したい",
+        "pinyin": null,
+        "meaning": "Querer fazer"
+      },
+      {
+        "id": 3,
+        "word": "承知しました",
+        "pinyin": null,
+        "meaning": "Entendido, compreendido"
+      }
+    ],
+    "id": "local-1772296361612-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 料金はかかりますか？",
+    "pinyin": null,
+    "translation": "B: Há alguma taxa?",
+    "tokens": [
+      "料金",
+      "は",
+      "かかります",
+      "か"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "料金",
+        "pinyin": null,
+        "meaning": "Taxa, custo, tarifa"
+      },
+      {
+        "id": 2,
+        "word": "かかりますか",
+        "pinyin": null,
+        "meaning": "Custa?, Há custo?"
+      }
+    ],
+    "id": "local-1772296361612-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: いいえ、カードのカットは無料です。終わりました。",
+    "pinyin": null,
+    "translation": "A: Não, o corte do cartão é gratuito. Terminei.",
+    "tokens": [
+      "いいえ",
+      "カード",
+      "の",
+      "カット",
+      "は",
+      "無料",
+      "です",
+      "終わりました"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "いいえ",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "カード",
+        "pinyin": null,
+        "meaning": "Cartão"
+      },
+      {
+        "id": 3,
+        "word": "カット",
+        "pinyin": null,
+        "meaning": "Corte"
+      },
+      {
+        "id": 4,
+        "word": "無料",
+        "pinyin": null,
+        "meaning": "Gratuito"
+      },
+      {
+        "id": 5,
+        "word": "終わりました",
+        "pinyin": null,
+        "meaning": "Terminei, finalizei"
+      }
+    ],
+    "id": "local-1772296361612-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ありがとうございます。あれ？カードが入りません。ちょっと見ていただけますか？",
+    "pinyin": null,
+    "translation": "B: Obrigado. Hum? O cartão não entra. Poderia dar uma olhada, por favor?",
+    "tokens": [
+      "ありがとうございます",
+      "あれ",
+      "カード",
+      "が",
+      "入りません",
+      "ちょっと",
+      "見ていただけますか"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ありがとうございます",
+        "pinyin": null,
+        "meaning": "Muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "あれ",
+        "pinyin": null,
+        "meaning": "Ah?, Hum? (interjeição de surpresa ou dúvida)"
+      },
+      {
+        "id": 3,
+        "word": "カード",
+        "pinyin": null,
+        "meaning": "Cartão"
+      },
+      {
+        "id": 4,
+        "word": "入りません",
+        "pinyin": null,
+        "meaning": "Não entra, não cabe"
+      },
+      {
+        "id": 5,
+        "word": "ちょっと",
+        "pinyin": null,
+        "meaning": "Um pouco, um momento"
+      },
+      {
+        "id": 6,
+        "word": "見ていただけますか",
+        "pinyin": null,
+        "meaning": "Poderia dar uma olhada?"
+      }
+    ],
+    "id": "local-1772296361612-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: お使いの携帯はiPhone 5ですよね？",
+    "pinyin": null,
+    "translation": "A: O celular que você está usando é um iPhone 5, certo?",
+    "tokens": [
+      "お使い",
+      "の",
+      "携帯",
+      "は",
+      "iPhone 5",
+      "です",
+      "よ",
+      "ね"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お使いの",
+        "pinyin": null,
+        "meaning": "O que você está usando, seu"
+      },
+      {
+        "id": 2,
+        "word": "携帯",
+        "pinyin": null,
+        "meaning": "Celular, telefone móvel"
+      },
+      {
+        "id": 3,
+        "word": "iPhone 5",
+        "pinyin": null,
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 4,
+        "word": "ですよね",
+        "pinyin": null,
+        "meaning": "Certo?, Não é?"
+      }
+    ],
+    "id": "local-1772296361612-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい。",
+    "pinyin": null,
+    "translation": "B: Sim.",
+    "tokens": [
+      "はい"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772296361612-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: iPhone 5はミニカードは使えません。iPhone 4のみミニカードが使えます。",
+    "pinyin": null,
+    "translation": "A: O iPhone 5 não pode usar mini-cartões. Apenas o iPhone 4 pode usar mini-cartões.",
+    "tokens": [
+      "iPhone 5",
+      "は",
+      "ミニカード",
+      "は",
+      "使えません",
+      "iPhone 4",
+      "のみ",
+      "ミニカード",
+      "が",
+      "使えます"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iPhone 5",
+        "pinyin": null,
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 2,
+        "word": "ミニカード",
+        "pinyin": null,
+        "meaning": "Mini-cartão"
+      },
+      {
+        "id": 3,
+        "word": "使えません",
+        "pinyin": null,
+        "meaning": "Não funciona, não pode ser usado"
+      },
+      {
+        "id": 4,
+        "word": "iPhone 4",
+        "pinyin": null,
+        "meaning": "iPhone 4"
+      },
+      {
+        "id": 5,
+        "word": "のみ",
+        "pinyin": null,
+        "meaning": "Apenas, somente"
+      },
+      {
+        "id": 6,
+        "word": "使えます",
+        "pinyin": null,
+        "meaning": "Funciona, pode ser usado"
+      }
+    ],
+    "id": "local-1772296361612-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、どうすればいいですか？",
+    "pinyin": null,
+    "translation": "B: Então, o que devo fazer?",
+    "tokens": [
+      "では",
+      "どうすればいいですか"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "どうすればいいですか",
+        "pinyin": null,
+        "meaning": "O que devo fazer?, Como devo proceder?"
+      }
+    ],
+    "id": "local-1772296361612-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 大丈夫です。ナノSIMカードに変更できます。これはミニよりも小さく、iPhone 5専用です。",
+    "pinyin": null,
+    "translation": "A: Tudo bem. Podemos mudar para um cartão nano-SIM. Este é menor que o mini e é exclusivo para o iPhone 5.",
+    "tokens": [
+      "大丈夫です",
+      "ナノSIMカード",
+      "に",
+      "変更できます",
+      "これ",
+      "は",
+      "ミニ",
+      "より",
+      "も",
+      "小さく",
+      "iPhone 5",
+      "専用",
+      "です"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大丈夫です",
+        "pinyin": null,
+        "meaning": "Tudo bem, não há problema"
+      },
+      {
+        "id": 2,
+        "word": "ナノSIMカード",
+        "pinyin": null,
+        "meaning": "Cartão nano-SIM"
+      },
+      {
+        "id": 3,
+        "word": "変更できます",
+        "pinyin": null,
+        "meaning": "Pode ser alterado, pode ser trocado"
+      },
+      {
+        "id": 4,
+        "word": "これ",
+        "pinyin": null,
+        "meaning": "Isto, este"
+      },
+      {
+        "id": 5,
+        "word": "ミニ",
+        "pinyin": null,
+        "meaning": "Mini"
+      },
+      {
+        "id": 6,
+        "word": "よりも",
+        "pinyin": null,
+        "meaning": "Mais do que"
+      },
+      {
+        "id": 7,
+        "word": "小さく",
+        "pinyin": null,
+        "meaning": "Pequeno, menor (forma adverbial de pequeno)"
+      },
+      {
+        "id": 8,
+        "word": "iPhone 5",
+        "pinyin": null,
+        "meaning": "iPhone 5"
+      },
+      {
+        "id": 9,
+        "word": "専用",
+        "pinyin": null,
+        "meaning": "Exclusivo para"
+      }
+    ],
+    "id": "local-1772296361612-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: これにもお金がかかりますか？",
+    "pinyin": null,
+    "translation": "B: Isso também custa dinheiro?",
+    "tokens": [
+      "これ",
+      "に",
+      "も",
+      "お金",
+      "が",
+      "かかります",
+      "か"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "これ",
+        "pinyin": null,
+        "meaning": "Isto, este"
+      },
+      {
+        "id": 2,
+        "word": "も",
+        "pinyin": null,
+        "meaning": "Também"
+      },
+      {
+        "id": 3,
+        "word": "お金",
+        "pinyin": null,
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "かかりますか",
+        "pinyin": null,
+        "meaning": "Custa?, Há custo?"
+      }
+    ],
+    "id": "local-1772296361612-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 初回は無料です。もし後でカードを交換する必要がある場合、手数料として20元かかります。",
+    "pinyin": null,
+    "translation": "A: A primeira vez é gratuita. Se precisar trocar o cartão depois, haverá uma taxa de 20 yuans.",
+    "tokens": [
+      "初回",
+      "は",
+      "無料",
+      "です",
+      "もし",
+      "後で",
+      "カード",
+      "を",
+      "交換する",
+      "必要",
+      "が",
+      "ある",
+      "場合",
+      "手数料",
+      "として",
+      "20元",
+      "かかります"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "初回",
+        "pinyin": null,
+        "meaning": "Primeira vez"
+      },
+      {
+        "id": 2,
+        "word": "無料",
+        "pinyin": null,
+        "meaning": "Gratuito"
+      },
+      {
+        "id": 3,
+        "word": "もし",
+        "pinyin": null,
+        "meaning": "Se, caso"
+      },
+      {
+        "id": 4,
+        "word": "後で",
+        "pinyin": null,
+        "meaning": "Depois"
+      },
+      {
+        "id": 5,
+        "word": "カード",
+        "pinyin": null,
+        "meaning": "Cartão"
+      },
+      {
+        "id": 6,
+        "word": "交換する",
+        "pinyin": null,
+        "meaning": "Trocar, substituir"
+      },
+      {
+        "id": 7,
+        "word": "必要",
+        "pinyin": null,
+        "meaning": "Necessidade"
+      },
+      {
+        "id": 8,
+        "word": "場合",
+        "pinyin": null,
+        "meaning": "Caso, situação"
+      },
+      {
+        "id": 9,
+        "word": "手数料",
+        "pinyin": null,
+        "meaning": "Taxa, tarifa"
+      },
+      {
+        "id": 10,
+        "word": "として",
+        "pinyin": null,
+        "meaning": "Como, na qualidade de"
+      },
+      {
+        "id": 11,
+        "word": "20元",
+        "pinyin": null,
+        "meaning": "20 Yuans"
+      },
+      {
+        "id": 12,
+        "word": "かかります",
+        "pinyin": null,
+        "meaning": "Custará, levará (tempo/custo)"
+      }
+    ],
+    "id": "local-1772296361612-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました。ありがとうございます。",
+    "pinyin": null,
+    "translation": "B: Entendido. Obrigado.",
+    "tokens": [
+      "わかりました",
+      "ありがとうございます"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかりました",
+        "pinyin": null,
+        "meaning": "Entendido, compreendido"
+      },
+      {
+        "id": 2,
+        "word": "ありがとうございます",
+        "pinyin": null,
+        "meaning": "Muito obrigado"
+      }
+    ],
+    "id": "local-1772296361612-13",
+    "language": "Japonês"
+  }
+]

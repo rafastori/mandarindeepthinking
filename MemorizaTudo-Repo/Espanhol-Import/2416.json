@@ -1,0 +1,736 @@
+[
+  {
+    "chinese": "A: Cariño, tu teléfono está sonando.",
+    "pinyin": null,
+    "translation": "A: Querido(a), seu telefone está tocando.",
+    "tokens": [
+      "Cariño",
+      ",",
+      "tu",
+      "teléfono",
+      "está",
+      "sonando",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Cariño",
+        "pinyin": null,
+        "meaning": "Querido(a) / Amor"
+      },
+      {
+        "id": 3,
+        "word": "teléfono",
+        "pinyin": null,
+        "meaning": "telefone"
+      },
+      {
+        "id": 5,
+        "word": "sonando",
+        "pinyin": null,
+        "meaning": "tocando"
+      }
+    ],
+    "id": "local-1772296102152-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es un mensaje de texto.",
+    "pinyin": null,
+    "translation": "É uma mensagem de texto.",
+    "tokens": [
+      "Es",
+      "un",
+      "mensaje",
+      "de",
+      "texto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "mensaje",
+        "pinyin": null,
+        "meaning": "mensagem"
+      },
+      {
+        "id": 4,
+        "word": "texto",
+        "pinyin": null,
+        "meaning": "texto"
+      }
+    ],
+    "id": "local-1772296102152-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Estoy en el baño.",
+    "pinyin": null,
+    "translation": "B: Estou no banheiro.",
+    "tokens": [
+      "Estoy",
+      "en",
+      "el",
+      "baño",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Estoy",
+        "pinyin": null,
+        "meaning": "Estou"
+      },
+      {
+        "id": 3,
+        "word": "baño",
+        "pinyin": null,
+        "meaning": "banheiro"
+      }
+    ],
+    "id": "local-1772296102152-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Léemelo!",
+    "pinyin": null,
+    "translation": "Leia para mim!",
+    "tokens": [
+      "¡",
+      "Léemelo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Léemelo",
+        "pinyin": null,
+        "meaning": "Leia-o para mim"
+      }
+    ],
+    "id": "local-1772296102152-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: El día 15 a las 11:08, tu tarjeta bancaria con los últimos cuatro dígitos 8899 fue cargada con 35,000 yuan renminbi.",
+    "pinyin": null,
+    "translation": "A: No dia 15 às 11:08, seu cartão bancário com os últimos quatro dígitos 8899 foi debitado em 35.000 yuan renminbi.",
+    "tokens": [
+      "El",
+      "día",
+      "15",
+      "a",
+      "las",
+      "11:08",
+      ",",
+      "tu",
+      "tarjeta",
+      "bancaria",
+      "con",
+      "los",
+      "últimos",
+      "cuatro",
+      "dígitos",
+      "8899",
+      "fue",
+      "cargada",
+      "con",
+      "35,000",
+      "yuan",
+      "renminbi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "día",
+        "pinyin": null,
+        "meaning": "dia"
+      },
+      {
+        "id": 8,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      },
+      {
+        "id": 9,
+        "word": "bancaria",
+        "pinyin": null,
+        "meaning": "bancária"
+      },
+      {
+        "id": 12,
+        "word": "últimos",
+        "pinyin": null,
+        "meaning": "últimos"
+      },
+      {
+        "id": 14,
+        "word": "dígitos",
+        "pinyin": null,
+        "meaning": "dígitos"
+      },
+      {
+        "id": 17,
+        "word": "cargada",
+        "pinyin": null,
+        "meaning": "debitada / cobrada"
+      },
+      {
+        "id": 20,
+        "word": "yuan",
+        "pinyin": null,
+        "meaning": "yuan"
+      },
+      {
+        "id": 21,
+        "word": "renminbi",
+        "pinyin": null,
+        "meaning": "renminbi"
+      }
+    ],
+    "id": "local-1772296102152-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Eh?",
+    "pinyin": null,
+    "translation": "Hã?",
+    "tokens": [
+      "¿",
+      "Eh",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh",
+        "pinyin": null,
+        "meaning": "Hã? / Ei?"
+      }
+    ],
+    "id": "local-1772296102152-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Qué hacemos?",
+    "pinyin": null,
+    "translation": "O que fazemos?",
+    "tokens": [
+      "¿",
+      "Qué",
+      "hacemos",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "hacemos",
+        "pinyin": null,
+        "meaning": "fazemos"
+      }
+    ],
+    "id": "local-1772296102152-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Estás en casa.",
+    "pinyin": null,
+    "translation": "Você está em casa.",
+    "tokens": [
+      "Estás",
+      "en",
+      "casa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Estás",
+        "pinyin": null,
+        "meaning": "Você está"
+      },
+      {
+        "id": 2,
+        "word": "casa",
+        "pinyin": null,
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772296102152-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Cómo puedes recibir un aviso de que tu tarjeta de crédito ha sido cargada?",
+    "pinyin": null,
+    "translation": "Como você pode receber um aviso de que seu cartão de crédito foi debitado?",
+    "tokens": [
+      "¿",
+      "Cómo",
+      "puedes",
+      "recibir",
+      "un",
+      "aviso",
+      "de",
+      "que",
+      "tu",
+      "tarjeta",
+      "de",
+      "crédito",
+      "ha",
+      "sido",
+      "cargada",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cómo",
+        "pinyin": null,
+        "meaning": "Como"
+      },
+      {
+        "id": 2,
+        "word": "puedes",
+        "pinyin": null,
+        "meaning": "você pode"
+      },
+      {
+        "id": 3,
+        "word": "recibir",
+        "pinyin": null,
+        "meaning": "receber"
+      },
+      {
+        "id": 5,
+        "word": "aviso",
+        "pinyin": null,
+        "meaning": "aviso"
+      },
+      {
+        "id": 9,
+        "word": "tarjeta",
+        "pinyin": null,
+        "meaning": "cartão"
+      },
+      {
+        "id": 11,
+        "word": "crédito",
+        "pinyin": null,
+        "meaning": "crédito"
+      },
+      {
+        "id": 14,
+        "word": "cargada",
+        "pinyin": null,
+        "meaning": "debitada / cobrada"
+      }
+    ],
+    "id": "local-1772296102152-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿¡Qué?!",
+    "pinyin": null,
+    "translation": "B: O quê?!",
+    "tokens": [
+      "¿",
+      "¡",
+      "Qué",
+      "!",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Qué",
+        "pinyin": null,
+        "meaning": "O quê"
+      }
+    ],
+    "id": "local-1772296102152-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Rápido, déjame ver eso!",
+    "pinyin": null,
+    "translation": "Rápido, deixa-me ver isso!",
+    "tokens": [
+      "¡",
+      "Rápido",
+      ",",
+      "déjame",
+      "ver",
+      "eso",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Rápido",
+        "pinyin": null,
+        "meaning": "Rápido"
+      },
+      {
+        "id": 3,
+        "word": "déjame",
+        "pinyin": null,
+        "meaning": "deixa-me"
+      },
+      {
+        "id": 4,
+        "word": "ver",
+        "pinyin": null,
+        "meaning": "ver"
+      },
+      {
+        "id": 5,
+        "word": "eso",
+        "pinyin": null,
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772296102152-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¡Dios mío!",
+    "pinyin": null,
+    "translation": "Meu Deus!",
+    "tokens": [
+      "¡",
+      "Dios",
+      "mío",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dios",
+        "pinyin": null,
+        "meaning": "Deus"
+      },
+      {
+        "id": 2,
+        "word": "mío",
+        "pinyin": null,
+        "meaning": "meu"
+      }
+    ],
+    "id": "local-1772296102152-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿Cuándo gasté tanto dinero?",
+    "pinyin": null,
+    "translation": "Quando gastei tanto dinheiro?",
+    "tokens": [
+      "¿",
+      "Cuándo",
+      "gasté",
+      "tanto",
+      "dinero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cuándo",
+        "pinyin": null,
+        "meaning": "Quando"
+      },
+      {
+        "id": 2,
+        "word": "gasté",
+        "pinyin": null,
+        "meaning": "gastei"
+      },
+      {
+        "id": 3,
+        "word": "tanto",
+        "pinyin": null,
+        "meaning": "tanto"
+      },
+      {
+        "id": 4,
+        "word": "dinero",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1772296102152-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Podría ser que alguien la robó y la usó?",
+    "pinyin": null,
+    "translation": "A: Será que alguém a roubou e usou?",
+    "tokens": [
+      "¿",
+      "Podría",
+      "ser",
+      "que",
+      "alguien",
+      "la",
+      "robó",
+      "y",
+      "la",
+      "usó",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Podría",
+        "pinyin": null,
+        "meaning": "Poderia"
+      },
+      {
+        "id": 2,
+        "word": "ser",
+        "pinyin": null,
+        "meaning": "ser"
+      },
+      {
+        "id": 4,
+        "word": "alguien",
+        "pinyin": null,
+        "meaning": "alguém"
+      },
+      {
+        "id": 6,
+        "word": "robó",
+        "pinyin": null,
+        "meaning": "roubou"
+      },
+      {
+        "id": 9,
+        "word": "usó",
+        "pinyin": null,
+        "meaning": "usou"
+      }
+    ],
+    "id": "local-1772296102152-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Eh?",
+    "pinyin": null,
+    "translation": "B: Hã?",
+    "tokens": [
+      "¿",
+      "Eh",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eh",
+        "pinyin": null,
+        "meaning": "Hã?"
+      }
+    ],
+    "id": "local-1772296102152-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Entonces, ¿qué hago ahora, cariño?",
+    "pinyin": null,
+    "translation": "Então, o que faço agora, querido(a)?",
+    "tokens": [
+      "Entonces",
+      ",",
+      "¿",
+      "qué",
+      "hago",
+      "ahora",
+      ",",
+      "cariño",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 4,
+        "word": "hago",
+        "pinyin": null,
+        "meaning": "faço"
+      },
+      {
+        "id": 5,
+        "word": "ahora",
+        "pinyin": null,
+        "meaning": "agora"
+      },
+      {
+        "id": 7,
+        "word": "cariño",
+        "pinyin": null,
+        "meaning": "querido(a) / amor"
+      }
+    ],
+    "id": "local-1772296102152-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Cariño, no te preocupes.",
+    "pinyin": null,
+    "translation": "A: Querido(a), não se preocupe.",
+    "tokens": [
+      "Cariño",
+      ",",
+      "no",
+      "te",
+      "preocupes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Cariño",
+        "pinyin": null,
+        "meaning": "Querido(a) / Amor"
+      },
+      {
+        "id": 4,
+        "word": "preocupes",
+        "pinyin": null,
+        "meaning": "preocupe"
+      }
+    ],
+    "id": "local-1772296102152-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Simplemente llamamos al banco y congelamos la cuenta, luego presentamos una denuncia policial.",
+    "pinyin": null,
+    "translation": "Simplesmente ligamos para o banco e congelamos a conta, depois apresentamos uma denúncia policial.",
+    "tokens": [
+      "Simplemente",
+      "llamamos",
+      "al",
+      "banco",
+      "y",
+      "congelamos",
+      "la",
+      "cuenta",
+      ",",
+      "luego",
+      "presentamos",
+      "una",
+      "denuncia",
+      "policial",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Simplemente",
+        "pinyin": null,
+        "meaning": "Simplesmente"
+      },
+      {
+        "id": 1,
+        "word": "llamamos",
+        "pinyin": null,
+        "meaning": "ligamos"
+      },
+      {
+        "id": 3,
+        "word": "banco",
+        "pinyin": null,
+        "meaning": "banco"
+      },
+      {
+        "id": 5,
+        "word": "congelamos",
+        "pinyin": null,
+        "meaning": "congelamos"
+      },
+      {
+        "id": 7,
+        "word": "cuenta",
+        "pinyin": null,
+        "meaning": "conta"
+      },
+      {
+        "id": 9,
+        "word": "luego",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 10,
+        "word": "presentamos",
+        "pinyin": null,
+        "meaning": "apresentamos"
+      },
+      {
+        "id": 12,
+        "word": "denuncia",
+        "pinyin": null,
+        "meaning": "denúncia"
+      },
+      {
+        "id": 13,
+        "word": "policial",
+        "pinyin": null,
+        "meaning": "policial"
+      }
+    ],
+    "id": "local-1772296102152-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Con razón me está temblando el ojo hoy!",
+    "pinyin": null,
+    "translation": "B: Com razão meu olho está tremendo hoje!",
+    "tokens": [
+      "¡",
+      "Con",
+      "razón",
+      "me",
+      "está",
+      "temblando",
+      "el",
+      "ojo",
+      "hoy",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "razón",
+        "pinyin": null,
+        "meaning": "razão"
+      },
+      {
+        "id": 5,
+        "word": "temblando",
+        "pinyin": null,
+        "meaning": "tremendo"
+      },
+      {
+        "id": 7,
+        "word": "ojo",
+        "pinyin": null,
+        "meaning": "olho"
+      },
+      {
+        "id": 8,
+        "word": "hoy",
+        "pinyin": null,
+        "meaning": "hoje"
+      }
+    ],
+    "id": "local-1772296102152-18",
+    "language": "Espanhol"
+  }
+]

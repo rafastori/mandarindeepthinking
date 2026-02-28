@@ -1,0 +1,624 @@
+[
+  {
+    "chinese": "A: 조이, 너희 가족이 큰 TV를 샀다고 들었어. 정말 한번 보러 가고 싶어.",
+    "pinyin": "",
+    "translation": "A: Joy, ouvi dizer que sua família comprou uma TV grande. Eu realmente quero ir vê-la.",
+    "tokens": [
+      "조이",
+      ",",
+      "너희",
+      "가족이",
+      "큰",
+      "TV를",
+      "샀다고",
+      "들었어",
+      ".",
+      "정말",
+      "한번",
+      "보러",
+      "가고",
+      "싶어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "조이",
+        "pinyin": "",
+        "meaning": "Joy (nome)"
+      },
+      {
+        "id": 2,
+        "word": "가족",
+        "pinyin": "",
+        "meaning": "família"
+      },
+      {
+        "id": 3,
+        "word": "큰",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 4,
+        "word": "TV",
+        "pinyin": "",
+        "meaning": "TV"
+      },
+      {
+        "id": 5,
+        "word": "샀다고 들었어",
+        "pinyin": "",
+        "meaning": "ouvi dizer que comprou"
+      },
+      {
+        "id": 6,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 7,
+        "word": "한번",
+        "pinyin": "",
+        "meaning": "uma vez"
+      },
+      {
+        "id": 8,
+        "word": "보러 가고 싶어",
+        "pinyin": "",
+        "meaning": "quero ir ver"
+      }
+    ],
+    "id": "local-1772297091185-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어서 와! 들어와!",
+    "pinyin": "",
+    "translation": "B: Venha! Entre!",
+    "tokens": [
+      "어서",
+      "와",
+      "!",
+      "들어와",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어서 와",
+        "pinyin": "",
+        "meaning": "bem-vindo, venha"
+      },
+      {
+        "id": 2,
+        "word": "들어와",
+        "pinyin": "",
+        "meaning": "entre"
+      }
+    ],
+    "id": "local-1772297091185-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 와, 이 TV 정말 멋지다! 저기, 이 작은 검은색 큐브는 뭐야?",
+    "pinyin": "",
+    "translation": "A: Uau, esta TV é realmente legal! Ei, o que é este pequeno cubo preto?",
+    "tokens": [
+      "와",
+      ",",
+      "이",
+      "TV",
+      "정말",
+      "멋지다",
+      "!",
+      "저기",
+      ",",
+      "이",
+      "작은",
+      "검은색",
+      "큐브는",
+      "뭐야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "uau"
+      },
+      {
+        "id": 2,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "este(a)"
+      },
+      {
+        "id": 3,
+        "word": "TV",
+        "pinyin": "",
+        "meaning": "TV"
+      },
+      {
+        "id": 4,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "멋지다",
+        "pinyin": "",
+        "meaning": "legal, excelente"
+      },
+      {
+        "id": 6,
+        "word": "저기",
+        "pinyin": "",
+        "meaning": "ei, lá"
+      },
+      {
+        "id": 7,
+        "word": "작은",
+        "pinyin": "",
+        "meaning": "pequeno(a)"
+      },
+      {
+        "id": 8,
+        "word": "검은색",
+        "pinyin": "",
+        "meaning": "cor preta"
+      },
+      {
+        "id": 9,
+        "word": "큐브",
+        "pinyin": "",
+        "meaning": "cubo"
+      },
+      {
+        "id": 10,
+        "word": "뭐야",
+        "pinyin": "",
+        "meaning": "o que é?"
+      }
+    ],
+    "id": "local-1772297091185-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 이건 미박스야, 인터넷 TV 박스의 일종이지.",
+    "pinyin": "",
+    "translation": "B: Ah, isso é uma Mi Box, é um tipo de caixa de TV pela internet.",
+    "tokens": [
+      "아",
+      ",",
+      "이건",
+      "미박스야",
+      ",",
+      "인터넷",
+      "TV",
+      "박스의",
+      "일종이지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": "",
+        "meaning": "ah"
+      },
+      {
+        "id": 2,
+        "word": "이건",
+        "pinyin": "",
+        "meaning": "isto é"
+      },
+      {
+        "id": 3,
+        "word": "미박스",
+        "pinyin": "",
+        "meaning": "Mi Box (marca de TV box)"
+      },
+      {
+        "id": 4,
+        "word": "인터넷",
+        "pinyin": "",
+        "meaning": "internet"
+      },
+      {
+        "id": 5,
+        "word": "TV 박스",
+        "pinyin": "",
+        "meaning": "caixa de TV"
+      },
+      {
+        "id": 6,
+        "word": "일종",
+        "pinyin": "",
+        "meaning": "tipo, espécie"
+      }
+    ],
+    "id": "local-1772297091185-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그게 뭔데?",
+    "pinyin": "",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "그게",
+      "뭔데",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그게",
+        "pinyin": "",
+        "meaning": "isso é"
+      },
+      {
+        "id": 2,
+        "word": "뭔데",
+        "pinyin": "",
+        "meaning": "o que é?"
+      }
+    ],
+    "id": "local-1772297091185-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 여기 봐. 이 미박스는 인터넷에 연결되어 있어. 이걸로 온라인 TV를 보고 게임도 할 수 있어. 로컬 비디오도 재생하고 지난 방송도 다시 볼 수 있지.",
+    "pinyin": "",
+    "translation": "B: Olhe aqui. Esta Mi Box está conectada à internet. Com isso, você pode assistir TV online e jogar. Você também pode reproduzir vídeos locais e rever programas anteriores.",
+    "tokens": [
+      "여기",
+      "봐",
+      ".",
+      "이",
+      "미박스는",
+      "인터넷에",
+      "연결되어",
+      "있어",
+      ".",
+      "이걸로",
+      "온라인",
+      "TV를",
+      "보고",
+      "게임도",
+      "할",
+      "수",
+      "있어",
+      ".",
+      "로컬",
+      "비디오도",
+      "재생하고",
+      "지난",
+      "방송도",
+      "다시",
+      "볼",
+      "수",
+      "있지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여기 봐",
+        "pinyin": "",
+        "meaning": "olhe aqui"
+      },
+      {
+        "id": 2,
+        "word": "미박스",
+        "pinyin": "",
+        "meaning": "Mi Box"
+      },
+      {
+        "id": 3,
+        "word": "인터넷",
+        "pinyin": "",
+        "meaning": "internet"
+      },
+      {
+        "id": 4,
+        "word": "연결되어 있어",
+        "pinyin": "",
+        "meaning": "está conectado"
+      },
+      {
+        "id": 5,
+        "word": "이걸로",
+        "pinyin": "",
+        "meaning": "com isso"
+      },
+      {
+        "id": 6,
+        "word": "온라인 TV",
+        "pinyin": "",
+        "meaning": "TV online"
+      },
+      {
+        "id": 7,
+        "word": "보고",
+        "pinyin": "",
+        "meaning": "assistir e"
+      },
+      {
+        "id": 8,
+        "word": "게임",
+        "pinyin": "",
+        "meaning": "jogo"
+      },
+      {
+        "id": 9,
+        "word": "할 수 있어",
+        "pinyin": "",
+        "meaning": "pode fazer"
+      },
+      {
+        "id": 10,
+        "word": "로컬 비디오",
+        "pinyin": "",
+        "meaning": "vídeo local"
+      },
+      {
+        "id": 11,
+        "word": "재생하다",
+        "pinyin": "",
+        "meaning": "reproduzir"
+      },
+      {
+        "id": 12,
+        "word": "지난 방송",
+        "pinyin": "",
+        "meaning": "programas anteriores"
+      },
+      {
+        "id": 13,
+        "word": "다시 볼 수 있지",
+        "pinyin": "",
+        "meaning": "pode rever"
+      }
+    ],
+    "id": "local-1772297091185-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 와, 정말 대단하네!",
+    "pinyin": "",
+    "translation": "A: Uau, isso é realmente incrível!",
+    "tokens": [
+      "와",
+      ",",
+      "정말",
+      "대단하네",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "uau"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "대단하다",
+        "pinyin": "",
+        "meaning": "incrível, excelente"
+      }
+    ],
+    "id": "local-1772297091185-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응. 미박스 외에도 애플 TV, 코모 TV 등등이 있어. TV 박스를 고를 때 정말 결정하기 어려웠어.",
+    "pinyin": "",
+    "translation": "B: Sim. Além da Mi Box, existem Apple TV, Como TV e assim por diante. Foi realmente difícil decidir ao escolher uma caixa de TV.",
+    "tokens": [
+      "응",
+      ".",
+      "미박스",
+      "외에도",
+      "애플",
+      "TV",
+      ",",
+      "코모",
+      "TV",
+      "등등이",
+      "있어",
+      ".",
+      "TV",
+      "박스를",
+      "고를",
+      "때",
+      "정말",
+      "결정하기",
+      "어려웠어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "",
+        "meaning": "sim (resposta informal)"
+      },
+      {
+        "id": 2,
+        "word": "미박스",
+        "pinyin": "",
+        "meaning": "Mi Box"
+      },
+      {
+        "id": 3,
+        "word": "외에도",
+        "pinyin": "",
+        "meaning": "além de"
+      },
+      {
+        "id": 4,
+        "word": "애플 TV",
+        "pinyin": "",
+        "meaning": "Apple TV"
+      },
+      {
+        "id": 5,
+        "word": "코모 TV",
+        "pinyin": "",
+        "meaning": "Como TV (presume-se ser uma marca)"
+      },
+      {
+        "id": 6,
+        "word": "등등",
+        "pinyin": "",
+        "meaning": "e assim por diante, etc."
+      },
+      {
+        "id": 7,
+        "word": "TV 박스",
+        "pinyin": "",
+        "meaning": "caixa de TV"
+      },
+      {
+        "id": 8,
+        "word": "고를 때",
+        "pinyin": "",
+        "meaning": "na hora de escolher"
+      },
+      {
+        "id": 9,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 10,
+        "word": "결정하기 어려웠어",
+        "pinyin": "",
+        "meaning": "foi difícil decidir"
+      }
+    ],
+    "id": "local-1772297091185-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 나는 정말 시대에 뒤떨어진 것 같네. 우리 집은 아직 케이블 방송을 써. 나중에 나도 박스 하나 사야겠어.",
+    "pinyin": "",
+    "translation": "A: Acho que estou realmente atrasado nos tempos. Minha casa ainda usa TV a cabo. Mais tarde, eu também terei que comprar uma caixa.",
+    "tokens": [
+      "나는",
+      "정말",
+      "시대에",
+      "뒤떨어진",
+      "것",
+      "같네",
+      ".",
+      "우리",
+      "집은",
+      "아직",
+      "케이블",
+      "방송을",
+      "써",
+      ".",
+      "나중에",
+      "나도",
+      "박스",
+      "하나",
+      "사야겠어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나는",
+        "pinyin": "",
+        "meaning": "eu (tópico)"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "시대에 뒤떨어지다",
+        "pinyin": "",
+        "meaning": "estar atrasado nos tempos"
+      },
+      {
+        "id": 4,
+        "word": "것 같네",
+        "pinyin": "",
+        "meaning": "parece que"
+      },
+      {
+        "id": 5,
+        "word": "우리 집",
+        "pinyin": "",
+        "meaning": "nossa casa, minha casa"
+      },
+      {
+        "id": 6,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 7,
+        "word": "케이블 방송",
+        "pinyin": "",
+        "meaning": "TV a cabo"
+      },
+      {
+        "id": 8,
+        "word": "쓰다",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 9,
+        "word": "나중에",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 10,
+        "word": "나도",
+        "pinyin": "",
+        "meaning": "eu também"
+      },
+      {
+        "id": 11,
+        "word": "박스",
+        "pinyin": "",
+        "meaning": "caixa (ref. à TV box)"
+      },
+      {
+        "id": 12,
+        "word": "하나",
+        "pinyin": "",
+        "meaning": "um(a)"
+      },
+      {
+        "id": 13,
+        "word": "사야겠어",
+        "pinyin": "",
+        "meaning": "terei que comprar"
+      }
+    ],
+    "id": "local-1772297091185-8",
+    "language": "Coreano"
+  }
+]

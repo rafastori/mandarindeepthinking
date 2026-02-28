@@ -1,0 +1,227 @@
+[
+  {
+    "chinese": "これはマスターテストテキストです。",
+    "pinyin": "",
+    "translation": "Este é um texto mestre de teste.",
+    "tokens": [
+      "これ",
+      "は",
+      "マスター",
+      "テスト",
+      "テキスト",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "これ",
+        "pinyin": "kore",
+        "meaning": "Este/Isto"
+      },
+      {
+        "id": 2,
+        "word": "は",
+        "pinyin": "wa",
+        "meaning": "Partícula de tópico"
+      },
+      {
+        "id": 3,
+        "word": "マスター",
+        "pinyin": "masutaa",
+        "meaning": "Mestre/Master"
+      },
+      {
+        "id": 4,
+        "word": "テスト",
+        "pinyin": "tesuto",
+        "meaning": "Teste"
+      },
+      {
+        "id": 5,
+        "word": "テキスト",
+        "pinyin": "tekisuto",
+        "meaning": "Texto"
+      },
+      {
+        "id": 6,
+        "word": "です",
+        "pinyin": "desu",
+        "meaning": "É/Ser (verbo copulativo)"
+      }
+    ],
+    "id": "local-1772301696645-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "それは、英語から他のすべての言語へのインテリジェントなカスケード同期パイプラインをテストするための非常にシンプルなテキストです。",
+    "pinyin": "",
+    "translation": "É um texto muito simples para testar um pipeline de sincronização em cascata inteligente do inglês para todos os outros idiomas.",
+    "tokens": [
+      "それ",
+      "は",
+      "、",
+      "英語",
+      "から",
+      "他",
+      "の",
+      "すべて",
+      "の",
+      "言語",
+      "へ",
+      "の",
+      "インテリジェント",
+      "な",
+      "カスケード",
+      "同期",
+      "パイプライン",
+      "を",
+      "テストする",
+      "ため",
+      "の",
+      "非常",
+      "に",
+      "シンプル",
+      "な",
+      "テキスト",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "Isso/Aquilo"
+      },
+      {
+        "id": 8,
+        "word": "は",
+        "pinyin": "wa",
+        "meaning": "Partícula de tópico"
+      },
+      {
+        "id": 9,
+        "word": "英語",
+        "pinyin": "eigo",
+        "meaning": "Inglês (idioma)"
+      },
+      {
+        "id": 10,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "De/Desde"
+      },
+      {
+        "id": 11,
+        "word": "他",
+        "pinyin": "hoka",
+        "meaning": "Outro/Outros"
+      },
+      {
+        "id": 12,
+        "word": "の",
+        "pinyin": "no",
+        "meaning": "Partícula possessiva/modificadora"
+      },
+      {
+        "id": 13,
+        "word": "すべて",
+        "pinyin": "subete",
+        "meaning": "Todos/Tudo"
+      },
+      {
+        "id": 14,
+        "word": "言語",
+        "pinyin": "gengo",
+        "meaning": "Idioma/Linguagem"
+      },
+      {
+        "id": 15,
+        "word": "へ",
+        "pinyin": "e",
+        "meaning": "Partícula de direção (para)"
+      },
+      {
+        "id": 16,
+        "word": "インテリジェント",
+        "pinyin": "interijento",
+        "meaning": "Inteligente"
+      },
+      {
+        "id": 17,
+        "word": "な",
+        "pinyin": "na",
+        "meaning": "Partícula adjetival (para adjetivos na)"
+      },
+      {
+        "id": 18,
+        "word": "カスケード",
+        "pinyin": "kasukeedo",
+        "meaning": "Cascata"
+      },
+      {
+        "id": 19,
+        "word": "同期",
+        "pinyin": "dōki",
+        "meaning": "Sincronização"
+      },
+      {
+        "id": 20,
+        "word": "パイプライン",
+        "pinyin": "paipurain",
+        "meaning": "Pipeline"
+      },
+      {
+        "id": 21,
+        "word": "を",
+        "pinyin": "o",
+        "meaning": "Partícula de objeto direto"
+      },
+      {
+        "id": 22,
+        "word": "テストする",
+        "pinyin": "tesuto suru",
+        "meaning": "Testar"
+      },
+      {
+        "id": 23,
+        "word": "ため",
+        "pinyin": "tame",
+        "meaning": "Para/A fim de"
+      },
+      {
+        "id": 24,
+        "word": "非常",
+        "pinyin": "hijō",
+        "meaning": "Extremamente/Muito"
+      },
+      {
+        "id": 25,
+        "word": "に",
+        "pinyin": "ni",
+        "meaning": "Partícula adverbial"
+      },
+      {
+        "id": 26,
+        "word": "シンプル",
+        "pinyin": "shinpuru",
+        "meaning": "Simples"
+      },
+      {
+        "id": 27,
+        "word": "テキスト",
+        "pinyin": "tekisuto",
+        "meaning": "Texto"
+      },
+      {
+        "id": 28,
+        "word": "です",
+        "pinyin": "desu",
+        "meaning": "É/Ser (verbo copulativo)"
+      }
+    ],
+    "id": "local-1772301696645-1",
+    "language": "Japonês"
+  }
+]

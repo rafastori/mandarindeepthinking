@@ -1,0 +1,525 @@
+[
+  {
+    "chinese": "A: あなた、もうすぐお米と油がなくなるわ。",
+    "pinyin": "",
+    "translation": "A: Você, o arroz e o óleo vão acabar logo.",
+    "tokens": [
+      "あなた",
+      "、",
+      "もうすぐ",
+      "お米",
+      "と",
+      "油",
+      "が",
+      "なくなる",
+      "わ"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あなた",
+        "pinyin": "anata",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "もうすぐ",
+        "pinyin": "mousugu",
+        "meaning": "em breve, logo"
+      },
+      {
+        "id": 3,
+        "word": "お米",
+        "pinyin": "okome",
+        "meaning": "arroz (cru)"
+      },
+      {
+        "id": 4,
+        "word": "油",
+        "pinyin": "abura",
+        "meaning": "óleo"
+      },
+      {
+        "id": 5,
+        "word": "なくなる",
+        "pinyin": "nakunaru",
+        "meaning": "acabar, esgotar"
+      },
+      {
+        "id": 6,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula de ênfase (usada por mulheres)"
+      }
+    ],
+    "id": "local-1772297535248-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: あら？じゃあ、イーハオディアンで買っておくわ。他に何か買うものある？",
+    "pinyin": "",
+    "translation": "B: Ah? Então, vou comprar no Yihaodian. Tem mais alguma coisa para comprar?",
+    "tokens": [
+      "あら",
+      "？",
+      "じゃあ",
+      "、",
+      "イーハオディアン",
+      "で",
+      "買っておく",
+      "わ",
+      "。他に",
+      "何か",
+      "買う",
+      "もの",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "あら",
+        "pinyin": "ara",
+        "meaning": "Ah!, Oh! (interjeição de surpresa, geralmente feminina)"
+      },
+      {
+        "id": 2,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "イーハオディアン",
+        "pinyin": "ihaodian",
+        "meaning": "Yihaodian (nome próprio, possivelmente de uma loja ou plataforma de compras)"
+      },
+      {
+        "id": 4,
+        "word": "買っておく",
+        "pinyin": "katteoku",
+        "meaning": "comprar e deixar pronto, comprar antecipadamente"
+      },
+      {
+        "id": 5,
+        "word": "他に",
+        "pinyin": "hoka ni",
+        "meaning": "além disso, outra coisa"
+      },
+      {
+        "id": 6,
+        "word": "何か",
+        "pinyin": "nanika",
+        "meaning": "algo, alguma coisa"
+      },
+      {
+        "id": 7,
+        "word": "買う",
+        "pinyin": "kau",
+        "meaning": "comprar"
+      },
+      {
+        "id": 8,
+        "word": "もの",
+        "pinyin": "mono",
+        "meaning": "coisa"
+      },
+      {
+        "id": 9,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      }
+    ],
+    "id": "local-1772297535248-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: トイレットペーパーも買わないとね。",
+    "pinyin": "",
+    "translation": "A: Também preciso comprar papel higiênico.",
+    "tokens": [
+      "トイレットペーパー",
+      "も",
+      "買わないと",
+      "ね"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "トイレットペーパー",
+        "pinyin": "toiretto peepa-",
+        "meaning": "papel higiênico"
+      },
+      {
+        "id": 2,
+        "word": "も",
+        "pinyin": "mo",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "買わないと",
+        "pinyin": "kawanai to",
+        "meaning": "preciso comprar (abreviação de 買わないといけない)"
+      },
+      {
+        "id": 4,
+        "word": "ね",
+        "pinyin": "ne",
+        "meaning": "partícula de confirmação"
+      }
+    ],
+    "id": "local-1772297535248-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 食器用洗剤と洗濯洗剤はある？",
+    "pinyin": "",
+    "translation": "B: Tem detergente de louça e sabão em pó?",
+    "tokens": [
+      "食器用洗剤",
+      "と",
+      "洗濯洗剤",
+      "は",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "食器用洗剤",
+        "pinyin": "shokkiyou senzai",
+        "meaning": "detergente de louça"
+      },
+      {
+        "id": 2,
+        "word": "と",
+        "pinyin": "to",
+        "meaning": "e (partícula de conexão)"
+      },
+      {
+        "id": 3,
+        "word": "洗濯洗剤",
+        "pinyin": "sentaku senzai",
+        "meaning": "sabão em pó, detergente para roupa"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      }
+    ],
+    "id": "local-1772297535248-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ええ、あるわ。あ、赤ちゃんの粉ミルクとおむつも買わないと。",
+    "pinyin": "",
+    "translation": "A: Sim, tem. Ah, também preciso comprar leite em pó para bebê e fraldas.",
+    "tokens": [
+      "ええ",
+      "、",
+      "ある",
+      "わ",
+      "。あ",
+      "、",
+      "赤ちゃん",
+      "の",
+      "粉ミルク",
+      "と",
+      "おむつ",
+      "も",
+      "買わないと"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええ",
+        "pinyin": "ee",
+        "meaning": "sim (formal/polido)"
+      },
+      {
+        "id": 2,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      },
+      {
+        "id": 3,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula de ênfase (usada por mulheres)"
+      },
+      {
+        "id": 4,
+        "word": "あ",
+        "pinyin": "a",
+        "meaning": "Ah! (interjeição de surpresa/realização)"
+      },
+      {
+        "id": 5,
+        "word": "赤ちゃん",
+        "pinyin": "akachan",
+        "meaning": "bebê"
+      },
+      {
+        "id": 6,
+        "word": "粉ミルク",
+        "pinyin": "konamilk",
+        "meaning": "leite em pó, fórmula infantil"
+      },
+      {
+        "id": 7,
+        "word": "おむつ",
+        "pinyin": "omutsu",
+        "meaning": "fralda"
+      },
+      {
+        "id": 8,
+        "word": "も",
+        "pinyin": "mo",
+        "meaning": "também"
+      },
+      {
+        "id": 9,
+        "word": "買わないと",
+        "pinyin": "kawanai to",
+        "meaning": "preciso comprar"
+      }
+    ],
+    "id": "local-1772297535248-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかった。家にお菓子はある？",
+    "pinyin": "",
+    "translation": "B: Entendi. Tem doces em casa?",
+    "tokens": [
+      "わかった",
+      "。家",
+      "に",
+      "お菓子",
+      "は",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかった",
+        "pinyin": "wakatta",
+        "meaning": "entendi (passado de wakaru)"
+      },
+      {
+        "id": 2,
+        "word": "家",
+        "pinyin": "ie",
+        "meaning": "casa"
+      },
+      {
+        "id": 3,
+        "word": "に",
+        "pinyin": "ni",
+        "meaning": "em (partícula de lugar)"
+      },
+      {
+        "id": 4,
+        "word": "お菓子",
+        "pinyin": "okashi",
+        "meaning": "doces, guloseimas"
+      },
+      {
+        "id": 5,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      }
+    ],
+    "id": "local-1772297535248-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: うん、あるわ。",
+    "pinyin": "",
+    "translation": "A: Sim, tem.",
+    "tokens": [
+      "うん",
+      "、",
+      "ある",
+      "わ"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "un",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      },
+      {
+        "id": 3,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula de ênfase (usada por mulheres)"
+      }
+    ],
+    "id": "local-1772297535248-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: インスタントラーメンはある？",
+    "pinyin": "",
+    "translation": "B: Tem miojo?",
+    "tokens": [
+      "インスタントラーメン",
+      "は",
+      "ある",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "インスタントラーメン",
+        "pinyin": "insutanto raamen",
+        "meaning": "miojo, macarrão instantâneo"
+      },
+      {
+        "id": 2,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "haver, existir, ter"
+      }
+    ],
+    "id": "local-1772297535248-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: インスタントラーメンは買わないで。体に良くないから。",
+    "pinyin": "",
+    "translation": "A: Não compre miojo. Porque não faz bem para a saúde.",
+    "tokens": [
+      "インスタントラーメン",
+      "は",
+      "買わないで",
+      "。体",
+      "に",
+      "良くない",
+      "から"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "インスタントラーメン",
+        "pinyin": "insutanto raamen",
+        "meaning": "miojo, macarrão instantâneo"
+      },
+      {
+        "id": 2,
+        "word": "買わないで",
+        "pinyin": "kawanaide",
+        "meaning": "não compre (forma negativa de comando suave)"
+      },
+      {
+        "id": 3,
+        "word": "体",
+        "pinyin": "karada",
+        "meaning": "corpo, saúde"
+      },
+      {
+        "id": 4,
+        "word": "に",
+        "pinyin": "ni",
+        "meaning": "para (indica direção, beneficiário, ou impacto)"
+      },
+      {
+        "id": 5,
+        "word": "良くない",
+        "pinyin": "yokunai",
+        "meaning": "não é bom (negativo de 良い/いい)"
+      },
+      {
+        "id": 6,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque, já que"
+      }
+    ],
+    "id": "local-1772297535248-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はいはい。あら、全部買ったわ。明日届くって。",
+    "pinyin": "",
+    "translation": "B: Certo, certo. Ah, comprei tudo. Disseram que chega amanhã.",
+    "tokens": [
+      "はいはい",
+      "。あら",
+      "、",
+      "全部",
+      "買った",
+      "わ",
+      "。明日",
+      "届く",
+      "って"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はいはい",
+        "pinyin": "haihai",
+        "meaning": "certo, certo; sim, sim (indica compreensão ou aceitação, às vezes com ligeira impaciência)"
+      },
+      {
+        "id": 2,
+        "word": "あら",
+        "pinyin": "ara",
+        "meaning": "Ah!, Oh! (interjeição de surpresa, geralmente feminina)"
+      },
+      {
+        "id": 3,
+        "word": "全部",
+        "pinyin": "zenbu",
+        "meaning": "tudo, todos"
+      },
+      {
+        "id": 4,
+        "word": "買った",
+        "pinyin": "katta",
+        "meaning": "comprei (passado de 買う)"
+      },
+      {
+        "id": 5,
+        "word": "わ",
+        "pinyin": "wa",
+        "meaning": "partícula de ênfase (usada por mulheres)"
+      },
+      {
+        "id": 6,
+        "word": "明日",
+        "pinyin": "ashita",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 7,
+        "word": "届く",
+        "pinyin": "todoku",
+        "meaning": "chegar, ser entregue"
+      },
+      {
+        "id": 8,
+        "word": "って",
+        "pinyin": "tte",
+        "meaning": "disse que, ouvi dizer que (forma informal de と言っていた/と言っている)"
+      }
+    ],
+    "id": "local-1772297535248-9",
+    "language": "Japonês"
+  }
+]

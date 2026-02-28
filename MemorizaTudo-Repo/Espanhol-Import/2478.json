@@ -1,0 +1,890 @@
+[
+  {
+    "chinese": "A: Hola, ¿estás comprando vino?",
+    "pinyin": "",
+    "translation": "A: Olá, você está comprando vinho?",
+    "tokens": [
+      "A:",
+      "Hola",
+      ",",
+      "¿estás",
+      "comprando",
+      "vino",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hola",
+        "pinyin": "",
+        "meaning": "Olá"
+      },
+      {
+        "id": 3,
+        "word": "estás comprando",
+        "pinyin": "",
+        "meaning": "você está comprando"
+      },
+      {
+        "id": 5,
+        "word": "vino",
+        "pinyin": "",
+        "meaning": "vinho"
+      }
+    ],
+    "id": "local-1772300458338-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. Un amigo extranjero está celebrando su cumpleaños.",
+    "pinyin": "",
+    "translation": "B: Sim. Um amigo estrangeiro está celebrando seu aniversário.",
+    "tokens": [
+      "B:",
+      "Sí",
+      ".",
+      "Un",
+      "amigo",
+      "extranjero",
+      "está",
+      "celebrando",
+      "su",
+      "cumpleaños",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 4,
+        "word": "amigo",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 5,
+        "word": "extranjero",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 6,
+        "word": "está celebrando",
+        "pinyin": "",
+        "meaning": "está celebrando"
+      },
+      {
+        "id": 9,
+        "word": "cumpleaños",
+        "pinyin": "",
+        "meaning": "aniversário"
+      }
+    ],
+    "id": "local-1772300458338-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿A ella le gusta el vino tinto o el vino blanco?",
+    "pinyin": "",
+    "translation": "A: Ela gosta de vinho tinto ou vinho branco?",
+    "tokens": [
+      "A:",
+      "¿A",
+      "ella",
+      "le",
+      "gusta",
+      "el",
+      "vino",
+      "tinto",
+      "o",
+      "el",
+      "vino",
+      "blanco",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "ella",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 3,
+        "word": "le gusta",
+        "pinyin": "",
+        "meaning": "gosta"
+      },
+      {
+        "id": 6,
+        "word": "vino tinto",
+        "pinyin": "",
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 10,
+        "word": "vino blanco",
+        "pinyin": "",
+        "meaning": "vinho branco"
+      }
+    ],
+    "id": "local-1772300458338-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Vino tinto.",
+    "pinyin": "",
+    "translation": "B: Vinho tinto.",
+    "tokens": [
+      "B:",
+      "Vino",
+      "tinto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vino tinto",
+        "pinyin": "",
+        "meaning": "Vinho tinto"
+      }
+    ],
+    "id": "local-1772300458338-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Ok. Aquí tenemos vinos tanto del Nuevo Mundo como del Viejo Mundo.",
+    "pinyin": "",
+    "translation": "A: Ok. Aqui temos vinhos tanto do Novo Mundo quanto do Velho Mundo.",
+    "tokens": [
+      "A:",
+      "Ok",
+      ".",
+      "Aquí",
+      "tenemos",
+      "vinos",
+      "tanto",
+      "del",
+      "Nuevo",
+      "Mundo",
+      "como",
+      "del",
+      "Viejo",
+      "Mundo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "Aquí",
+        "pinyin": "",
+        "meaning": "Aqui"
+      },
+      {
+        "id": 4,
+        "word": "tenemos",
+        "pinyin": "",
+        "meaning": "temos"
+      },
+      {
+        "id": 5,
+        "word": "vinos",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 6,
+        "word": "tanto... como",
+        "pinyin": "",
+        "meaning": "tanto... quanto"
+      },
+      {
+        "id": 8,
+        "word": "Nuevo Mundo",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 12,
+        "word": "Viejo Mundo",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      }
+    ],
+    "id": "local-1772300458338-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Normalmente no bebo vino, así que no entiendo mucho.",
+    "pinyin": "",
+    "translation": "B: Normalmente eu não bebo vinho, então não entendo muito.",
+    "tokens": [
+      "B:",
+      "Normalmente",
+      "no",
+      "bebo",
+      "vino",
+      ",",
+      "así",
+      "que",
+      "no",
+      "entiendo",
+      "mucho",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Normalmente",
+        "pinyin": "",
+        "meaning": "Normalmente"
+      },
+      {
+        "id": 3,
+        "word": "no bebo",
+        "pinyin": "",
+        "meaning": "não bebo"
+      },
+      {
+        "id": 4,
+        "word": "vino",
+        "pinyin": "",
+        "meaning": "vinho"
+      },
+      {
+        "id": 6,
+        "word": "así que",
+        "pinyin": "",
+        "meaning": "então/por isso"
+      },
+      {
+        "id": 8,
+        "word": "no entiendo",
+        "pinyin": "",
+        "meaning": "não entendo"
+      },
+      {
+        "id": 10,
+        "word": "mucho",
+        "pinyin": "",
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1772300458338-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No hay problema.",
+    "pinyin": "",
+    "translation": "A: Não há problema.",
+    "tokens": [
+      "A:",
+      "No",
+      "hay",
+      "problema",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No hay problema",
+        "pinyin": "",
+        "meaning": "Não há problema"
+      }
+    ],
+    "id": "local-1772300458338-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "\"Viejo Mundo\" se refiere principalmente a países como Francia, Italia y España que tienen cientos de años de historia en la elaboración tradicional del vino.",
+    "pinyin": "",
+    "translation": "\"Velho Mundo\" se refere principalmente a países como França, Itália e Espanha que têm centenas de anos de história na elaboração tradicional do vinho.",
+    "tokens": [
+      "\"Viejo",
+      "Mundo\"",
+      "se",
+      "refiere",
+      "principalmente",
+      "a",
+      "países",
+      "como",
+      "Francia",
+      ",",
+      "Italia",
+      "y",
+      "España",
+      "que",
+      "tienen",
+      "cientos",
+      "de",
+      "años",
+      "de",
+      "historia",
+      "en",
+      "la",
+      "elaboración",
+      "tradicional",
+      "del",
+      "vino",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Viejo Mundo",
+        "pinyin": "",
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 2,
+        "word": "se refiere",
+        "pinyin": "",
+        "meaning": "se refere"
+      },
+      {
+        "id": 4,
+        "word": "principalmente",
+        "pinyin": "",
+        "meaning": "principalmente"
+      },
+      {
+        "id": 6,
+        "word": "países",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 8,
+        "word": "Francia",
+        "pinyin": "",
+        "meaning": "França"
+      },
+      {
+        "id": 10,
+        "word": "Italia",
+        "pinyin": "",
+        "meaning": "Itália"
+      },
+      {
+        "id": 12,
+        "word": "España",
+        "pinyin": "",
+        "meaning": "Espanha"
+      },
+      {
+        "id": 14,
+        "word": "tienen",
+        "pinyin": "",
+        "meaning": "têm"
+      },
+      {
+        "id": 15,
+        "word": "cientos de años",
+        "pinyin": "",
+        "meaning": "centenas de anos"
+      },
+      {
+        "id": 19,
+        "word": "historia",
+        "pinyin": "",
+        "meaning": "história"
+      },
+      {
+        "id": 22,
+        "word": "elaboración tradicional del vino",
+        "pinyin": "",
+        "meaning": "elaboração tradicional do vinho"
+      }
+    ],
+    "id": "local-1772300458338-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Pero \"Nuevo Mundo\" se refiere a países como Estados Unidos, Canadá, Argentina, Australia que son nuevos en la elaboración del vino.",
+    "pinyin": "",
+    "translation": "Mas \"Novo Mundo\" se refere a países como Estados Unidos, Canadá, Argentina, Austrália que são novos na elaboração do vinho.",
+    "tokens": [
+      "Pero",
+      "\"Nuevo",
+      "Mundo\"",
+      "se",
+      "refiere",
+      "a",
+      "países",
+      "como",
+      "Estados",
+      "Unidos",
+      ",",
+      "Canadá",
+      ",",
+      "Argentina",
+      ",",
+      "Australia",
+      "que",
+      "son",
+      "nuevos",
+      "en",
+      "la",
+      "elaboración",
+      "del",
+      "vino",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 1,
+        "word": "Nuevo Mundo",
+        "pinyin": "",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 3,
+        "word": "se refiere",
+        "pinyin": "",
+        "meaning": "se refere"
+      },
+      {
+        "id": 6,
+        "word": "países",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 8,
+        "word": "Estados Unidos",
+        "pinyin": "",
+        "meaning": "Estados Unidos"
+      },
+      {
+        "id": 11,
+        "word": "Canadá",
+        "pinyin": "",
+        "meaning": "Canadá"
+      },
+      {
+        "id": 13,
+        "word": "Argentina",
+        "pinyin": "",
+        "meaning": "Argentina"
+      },
+      {
+        "id": 15,
+        "word": "Australia",
+        "pinyin": "",
+        "meaning": "Austrália"
+      },
+      {
+        "id": 18,
+        "word": "nuevos",
+        "pinyin": "",
+        "meaning": "novos"
+      },
+      {
+        "id": 21,
+        "word": "elaboración del vino",
+        "pinyin": "",
+        "meaning": "elaboração do vinho"
+      }
+    ],
+    "id": "local-1772300458338-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces, ¿hay alguna diferencia en el sabor?",
+    "pinyin": "",
+    "translation": "B: Então, há alguma diferença no sabor?",
+    "tokens": [
+      "B:",
+      "Entonces",
+      ",",
+      "¿hay",
+      "alguna",
+      "diferencia",
+      "en",
+      "el",
+      "sabor",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há/existe"
+      },
+      {
+        "id": 4,
+        "word": "alguna",
+        "pinyin": "",
+        "meaning": "alguma"
+      },
+      {
+        "id": 5,
+        "word": "diferencia",
+        "pinyin": "",
+        "meaning": "diferença"
+      },
+      {
+        "id": 8,
+        "word": "sabor",
+        "pinyin": "",
+        "meaning": "sabor"
+      }
+    ],
+    "id": "local-1772300458338-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. El vino del Viejo Mundo es bastante ácido, porque el contenido de taninos es más alto.",
+    "pinyin": "",
+    "translation": "A: Sim. O vinho do Velho Mundo é bastante ácido, porque o conteúdo de taninos é mais alto.",
+    "tokens": [
+      "A:",
+      "Sí",
+      ".",
+      "El",
+      "vino",
+      "del",
+      "Viejo",
+      "Mundo",
+      "es",
+      "bastante",
+      "ácido",
+      ",",
+      "porque",
+      "el",
+      "contenido",
+      "de",
+      "taninos",
+      "es",
+      "más",
+      "alto",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 4,
+        "word": "vino del Viejo Mundo",
+        "pinyin": "",
+        "meaning": "vinho do Velho Mundo"
+      },
+      {
+        "id": 9,
+        "word": "bastante",
+        "pinyin": "",
+        "meaning": "bastante"
+      },
+      {
+        "id": 10,
+        "word": "ácido",
+        "pinyin": "",
+        "meaning": "ácido"
+      },
+      {
+        "id": 12,
+        "word": "porque",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 14,
+        "word": "contenido",
+        "pinyin": "",
+        "meaning": "conteúdo"
+      },
+      {
+        "id": 16,
+        "word": "taninos",
+        "pinyin": "",
+        "meaning": "taninos"
+      },
+      {
+        "id": 18,
+        "word": "más alto",
+        "pinyin": "",
+        "meaning": "mais alto"
+      }
+    ],
+    "id": "local-1772300458338-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "El vino del Nuevo Mundo es relativamente dulce ya que el tanino es menor.",
+    "pinyin": "",
+    "translation": "O vinho do Novo Mundo é relativamente doce já que o tanino é menor.",
+    "tokens": [
+      "El",
+      "vino",
+      "del",
+      "Nuevo",
+      "Mundo",
+      "es",
+      "relativamente",
+      "dulce",
+      "ya",
+      "que",
+      "el",
+      "tanino",
+      "es",
+      "menor",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vino del Nuevo Mundo",
+        "pinyin": "",
+        "meaning": "vinho do Novo Mundo"
+      },
+      {
+        "id": 6,
+        "word": "relativamente",
+        "pinyin": "",
+        "meaning": "relativamente"
+      },
+      {
+        "id": 7,
+        "word": "dulce",
+        "pinyin": "",
+        "meaning": "doce"
+      },
+      {
+        "id": 8,
+        "word": "ya que",
+        "pinyin": "",
+        "meaning": "já que/uma vez que"
+      },
+      {
+        "id": 11,
+        "word": "tanino",
+        "pinyin": "",
+        "meaning": "tanino"
+      },
+      {
+        "id": 13,
+        "word": "menor",
+        "pinyin": "",
+        "meaning": "menor"
+      }
+    ],
+    "id": "local-1772300458338-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh, he oído que a las chicas les gustan más los vinos con sabor afrutado.",
+    "pinyin": "",
+    "translation": "B: Ah, ouvi dizer que as meninas gostam mais de vinhos com sabor frutado.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "he",
+      "oído",
+      "que",
+      "a",
+      "las",
+      "chicas",
+      "les",
+      "gustan",
+      "más",
+      "los",
+      "vinos",
+      "con",
+      "sabor",
+      "afrutado",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah"
+      },
+      {
+        "id": 3,
+        "word": "he oído",
+        "pinyin": "",
+        "meaning": "ouvi"
+      },
+      {
+        "id": 8,
+        "word": "chicas",
+        "pinyin": "",
+        "meaning": "meninas/garotas"
+      },
+      {
+        "id": 9,
+        "word": "les gustan",
+        "pinyin": "",
+        "meaning": "gostam"
+      },
+      {
+        "id": 11,
+        "word": "más",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 13,
+        "word": "vinos",
+        "pinyin": "",
+        "meaning": "vinhos"
+      },
+      {
+        "id": 15,
+        "word": "sabor afrutado",
+        "pinyin": "",
+        "meaning": "sabor frutado"
+      }
+    ],
+    "id": "local-1772300458338-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Ajá. Este tipo de vino que tenemos es especialmente bueno para chicas. Se vende muy bien.",
+    "pinyin": "",
+    "translation": "A: Ahã. Este tipo de vinho que temos é especialmente bom para meninas. Vende muito bem.",
+    "tokens": [
+      "A:",
+      "Ajá",
+      ".",
+      "Este",
+      "tipo",
+      "de",
+      "vino",
+      "que",
+      "tenemos",
+      "es",
+      "especialmente",
+      "bueno",
+      "para",
+      "chicas",
+      ".",
+      "Se",
+      "vende",
+      "muy",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ajá",
+        "pinyin": "",
+        "meaning": "Ahã"
+      },
+      {
+        "id": 3,
+        "word": "Este tipo de vino",
+        "pinyin": "",
+        "meaning": "Este tipo de vinho"
+      },
+      {
+        "id": 8,
+        "word": "tenemos",
+        "pinyin": "",
+        "meaning": "temos"
+      },
+      {
+        "id": 10,
+        "word": "especialmente",
+        "pinyin": "",
+        "meaning": "especialmente"
+      },
+      {
+        "id": 11,
+        "word": "bueno",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 13,
+        "word": "chicas",
+        "pinyin": "",
+        "meaning": "meninas/garotas"
+      },
+      {
+        "id": 15,
+        "word": "Se vende",
+        "pinyin": "",
+        "meaning": "Vende-se"
+      },
+      {
+        "id": 17,
+        "word": "muy bien",
+        "pinyin": "",
+        "meaning": "muito bem"
+      }
+    ],
+    "id": "local-1772300458338-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Ok, entonces es esta botella. ¡Gracias!",
+    "pinyin": "",
+    "translation": "B: Ok, então é esta garrafa. Obrigado!",
+    "tokens": [
+      "B:",
+      "Ok",
+      ",",
+      "entonces",
+      "es",
+      "esta",
+      "botella",
+      ".",
+      "¡Gracias",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok"
+      },
+      {
+        "id": 3,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 5,
+        "word": "esta botella",
+        "pinyin": "",
+        "meaning": "esta garrafa"
+      },
+      {
+        "id": 8,
+        "word": "Gracias",
+        "pinyin": "",
+        "meaning": "Obrigado/a"
+      }
+    ],
+    "id": "local-1772300458338-14",
+    "language": "Espanhol"
+  }
+]

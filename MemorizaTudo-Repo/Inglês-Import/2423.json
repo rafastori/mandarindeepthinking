@@ -1,0 +1,580 @@
+[
+  {
+    "chinese": "A: Lili, are you free next Sunday? Can you come to my house to teach me how to make a cake?",
+    "pinyin": "",
+    "translation": "A: Lili, você está livre no próximo domingo? Você pode vir à minha casa para me ensinar a fazer um bolo?",
+    "tokens": [
+      "A:",
+      "Lili,",
+      "are",
+      "you",
+      "free",
+      "next",
+      "Sunday?",
+      "Can",
+      "you",
+      "come",
+      "to",
+      "my",
+      "house",
+      "to",
+      "teach",
+      "me",
+      "how",
+      "to",
+      "make",
+      "a",
+      "cake?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "free",
+        "pinyin": "",
+        "meaning": "livre"
+      },
+      {
+        "id": 2,
+        "word": "next Sunday",
+        "pinyin": "",
+        "meaning": "próximo domingo"
+      },
+      {
+        "id": 3,
+        "word": "house",
+        "pinyin": "",
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "teach",
+        "pinyin": "",
+        "meaning": "ensinar"
+      },
+      {
+        "id": 5,
+        "word": "make a cake",
+        "pinyin": "",
+        "meaning": "fazer um bolo"
+      }
+    ],
+    "id": "local-1772292811142-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes. Why do you want to make a cake all of a sudden?",
+    "pinyin": "",
+    "translation": "B: Sim. Por que você quer fazer um bolo de repente?",
+    "tokens": [
+      "B:",
+      "Yes.",
+      "Why",
+      "do",
+      "you",
+      "want",
+      "to",
+      "make",
+      "a",
+      "cake",
+      "all",
+      "of",
+      "a",
+      "sudden?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "make a cake",
+        "pinyin": "",
+        "meaning": "fazer um bolo"
+      },
+      {
+        "id": 2,
+        "word": "all of a sudden",
+        "pinyin": "",
+        "meaning": "de repente"
+      }
+    ],
+    "id": "local-1772292811142-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Next month is my boyfriend's birthday. I want to give him a surprise.",
+    "pinyin": "",
+    "translation": "A: O próximo mês é o aniversário do meu namorado. Eu quero fazer uma surpresa para ele.",
+    "tokens": [
+      "A:",
+      "Next",
+      "month",
+      "is",
+      "my",
+      "boyfriend's",
+      "birthday.",
+      "I",
+      "want",
+      "to",
+      "give",
+      "him",
+      "a",
+      "surprise."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "next month",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "boyfriend's birthday",
+        "pinyin": "",
+        "meaning": "aniversário do namorado"
+      },
+      {
+        "id": 3,
+        "word": "surprise",
+        "pinyin": "",
+        "meaning": "surpresa"
+      }
+    ],
+    "id": "local-1772292811142-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What kind of cake do you want to make?",
+    "pinyin": "",
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "B:",
+      "What",
+      "kind",
+      "of",
+      "cake",
+      "do",
+      "you",
+      "want",
+      "to",
+      "make?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kind of cake",
+        "pinyin": "",
+        "meaning": "tipo de bolo"
+      },
+      {
+        "id": 2,
+        "word": "make",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1772292811142-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I'd like to make a simple one.",
+    "pinyin": "",
+    "translation": "A: Eu gostaria de fazer um simples.",
+    "tokens": [
+      "A:",
+      "I'd",
+      "like",
+      "to",
+      "make",
+      "a",
+      "simple",
+      "one."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "I'd like to",
+        "pinyin": "",
+        "meaning": "eu gostaria de"
+      },
+      {
+        "id": 2,
+        "word": "make",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "simple",
+        "pinyin": "",
+        "meaning": "simples"
+      }
+    ],
+    "id": "local-1772292811142-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then let's make a chiffon cake.",
+    "pinyin": "",
+    "translation": "B: Então vamos fazer um bolo chiffon.",
+    "tokens": [
+      "B:",
+      "Then",
+      "let's",
+      "make",
+      "a",
+      "chiffon",
+      "cake."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "let's make",
+        "pinyin": "",
+        "meaning": "vamos fazer"
+      },
+      {
+        "id": 2,
+        "word": "chiffon cake",
+        "pinyin": "",
+        "meaning": "bolo chiffon"
+      }
+    ],
+    "id": "local-1772292811142-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "This kind of cake is very light.",
+    "pinyin": "",
+    "translation": "Este tipo de bolo é muito leve.",
+    "tokens": [
+      "This",
+      "kind",
+      "of",
+      "cake",
+      "is",
+      "very",
+      "light."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kind of cake",
+        "pinyin": "",
+        "meaning": "tipo de bolo"
+      },
+      {
+        "id": 2,
+        "word": "light",
+        "pinyin": "",
+        "meaning": "leve"
+      }
+    ],
+    "id": "local-1772292811142-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You can spread jam on it and eat it.",
+    "pinyin": "",
+    "translation": "Você pode espalhar geleia nele e comer.",
+    "tokens": [
+      "You",
+      "can",
+      "spread",
+      "jam",
+      "on",
+      "it",
+      "and",
+      "eat",
+      "it."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "spread",
+        "pinyin": "",
+        "meaning": "espalhar"
+      },
+      {
+        "id": 2,
+        "word": "jam",
+        "pinyin": "",
+        "meaning": "geleia"
+      },
+      {
+        "id": 3,
+        "word": "eat",
+        "pinyin": "",
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772292811142-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It can also be a birthday cake.",
+    "pinyin": "",
+    "translation": "Também pode ser um bolo de aniversário.",
+    "tokens": [
+      "It",
+      "can",
+      "also",
+      "be",
+      "a",
+      "birthday",
+      "cake."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "birthday cake",
+        "pinyin": "",
+        "meaning": "bolo de aniversário"
+      }
+    ],
+    "id": "local-1772292811142-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's a basic kind of cake.",
+    "pinyin": "",
+    "translation": "É um tipo básico de bolo.",
+    "tokens": [
+      "It's",
+      "a",
+      "basic",
+      "kind",
+      "of",
+      "cake."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "basic",
+        "pinyin": "",
+        "meaning": "básico"
+      },
+      {
+        "id": 2,
+        "word": "kind of cake",
+        "pinyin": "",
+        "meaning": "tipo de bolo"
+      }
+    ],
+    "id": "local-1772292811142-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Okay. Okay. What do I need to prepare?",
+    "pinyin": "",
+    "translation": "A: Certo. Certo. O que eu preciso preparar?",
+    "tokens": [
+      "A:",
+      "Okay.",
+      "Okay.",
+      "What",
+      "do",
+      "I",
+      "need",
+      "to",
+      "prepare?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "need to prepare",
+        "pinyin": "",
+        "meaning": "precisar preparar"
+      }
+    ],
+    "id": "local-1772292811142-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: You need to buy ingredients: 100 grams cake flour, 5 eggs, 40 grams of oil, 70 grams of granulated sugar and 40 grams of milk.",
+    "pinyin": "",
+    "translation": "B: Você precisa comprar os ingredientes: 100 gramas de farinha de bolo, 5 ovos, 40 gramas de óleo, 70 gramas de açúcar granulado e 40 gramas de leite.",
+    "tokens": [
+      "B:",
+      "You",
+      "need",
+      "to",
+      "buy",
+      "ingredients:",
+      "100",
+      "grams",
+      "cake",
+      "flour,",
+      "5",
+      "eggs,",
+      "40",
+      "grams",
+      "of",
+      "oil,",
+      "70",
+      "grams",
+      "of",
+      "granulated",
+      "sugar",
+      "and",
+      "40",
+      "grams",
+      "of",
+      "milk."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "ingredients",
+        "pinyin": "",
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 3,
+        "word": "cake flour",
+        "pinyin": "",
+        "meaning": "farinha de bolo"
+      },
+      {
+        "id": 4,
+        "word": "eggs",
+        "pinyin": "",
+        "meaning": "ovos"
+      },
+      {
+        "id": 5,
+        "word": "oil",
+        "pinyin": "",
+        "meaning": "óleo"
+      },
+      {
+        "id": 6,
+        "word": "granulated sugar",
+        "pinyin": "",
+        "meaning": "açúcar granulado"
+      },
+      {
+        "id": 7,
+        "word": "milk",
+        "pinyin": "",
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772292811142-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What tools?",
+    "pinyin": "",
+    "translation": "A: Quais ferramentas?",
+    "tokens": [
+      "A:",
+      "What",
+      "tools?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tools",
+        "pinyin": "",
+        "meaning": "ferramentas"
+      }
+    ],
+    "id": "local-1772292811142-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: An egg beater, an oven and an 8-inch cake mold.",
+    "pinyin": "",
+    "translation": "B: Uma batedeira de ovos, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "B:",
+      "An",
+      "egg",
+      "beater,",
+      "an",
+      "oven",
+      "and",
+      "an",
+      "8-inch",
+      "cake",
+      "mold."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "egg beater",
+        "pinyin": "",
+        "meaning": "batedeira de ovos"
+      },
+      {
+        "id": 2,
+        "word": "oven",
+        "pinyin": "",
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "8-inch",
+        "pinyin": "",
+        "meaning": "de 8 polegadas"
+      },
+      {
+        "id": 4,
+        "word": "cake mold",
+        "pinyin": "",
+        "meaning": "forma de bolo"
+      }
+    ],
+    "id": "local-1772292811142-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Okay. I'll go buy the stuff after work.",
+    "pinyin": "",
+    "translation": "A: Certo. Eu vou comprar as coisas depois do trabalho.",
+    "tokens": [
+      "A:",
+      "Okay.",
+      "I'll",
+      "go",
+      "buy",
+      "the",
+      "stuff",
+      "after",
+      "work."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "stuff",
+        "pinyin": "",
+        "meaning": "coisas"
+      },
+      {
+        "id": 3,
+        "word": "after work",
+        "pinyin": "",
+        "meaning": "depois do trabalho"
+      }
+    ],
+    "id": "local-1772292811142-14",
+    "language": "Inglês"
+  }
+]

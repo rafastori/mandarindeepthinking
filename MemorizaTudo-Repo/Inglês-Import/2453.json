@@ -1,0 +1,784 @@
+[
+  {
+    "chinese": "A: Hotels are so expensive!",
+    "pinyin": null,
+    "translation": "A: Hotéis são tão caros!",
+    "tokens": [
+      "A:",
+      "Hotels",
+      "are",
+      "so",
+      "expensive",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hotels",
+        "pinyin": null,
+        "meaning": "Hotéis"
+      },
+      {
+        "id": 2,
+        "word": "expensive",
+        "pinyin": null,
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772293355226-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Do you want to go traveling?",
+    "pinyin": null,
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "B:",
+      "Do",
+      "you",
+      "want",
+      "to",
+      "go",
+      "traveling",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "want",
+        "pinyin": null,
+        "meaning": "querer"
+      },
+      {
+        "id": 2,
+        "word": "traveling",
+        "pinyin": null,
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772293355226-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yeah. I'm planning to travel to New York for fun over the summer.",
+    "pinyin": null,
+    "translation": "A: Sim. Estou planejando viajar para Nova York para me divertir durante o verão.",
+    "tokens": [
+      "A:",
+      "Yeah",
+      ".",
+      "I'm",
+      "planning",
+      "to",
+      "travel",
+      "to",
+      "New",
+      "York",
+      "for",
+      "fun",
+      "over",
+      "the",
+      "summer",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "planning",
+        "pinyin": null,
+        "meaning": "planejando"
+      },
+      {
+        "id": 2,
+        "word": "travel",
+        "pinyin": null,
+        "meaning": "viajar"
+      },
+      {
+        "id": 3,
+        "word": "fun",
+        "pinyin": null,
+        "meaning": "diversão"
+      },
+      {
+        "id": 4,
+        "word": "summer",
+        "pinyin": null,
+        "meaning": "verão"
+      }
+    ],
+    "id": "local-1772293355226-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "But how can the hotels be so expensive?",
+    "pinyin": null,
+    "translation": "Mas como os hotéis podem ser tão caros?",
+    "tokens": [
+      "But",
+      "how",
+      "can",
+      "the",
+      "hotels",
+      "be",
+      "so",
+      "expensive",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hotels",
+        "pinyin": null,
+        "meaning": "hotéis"
+      },
+      {
+        "id": 2,
+        "word": "expensive",
+        "pinyin": null,
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772293355226-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Maybe you should look on Airbnb?",
+    "pinyin": null,
+    "translation": "B: Talvez você devesse procurar no Airbnb?",
+    "tokens": [
+      "B:",
+      "Maybe",
+      "you",
+      "should",
+      "look",
+      "on",
+      "Airbnb",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Maybe",
+        "pinyin": null,
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "look on",
+        "pinyin": null,
+        "meaning": "procurar em"
+      },
+      {
+        "id": 3,
+        "word": "Airbnb",
+        "pinyin": null,
+        "meaning": "Airbnb"
+      }
+    ],
+    "id": "local-1772293355226-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: What's that?",
+    "pinyin": null,
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "A:",
+      "What's",
+      "that",
+      "?"
+    ],
+    "keywords": [],
+    "id": "local-1772293355226-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's an internet site that lets you book rooms.",
+    "pinyin": null,
+    "translation": "B: É um site de internet que te permite reservar quartos.",
+    "tokens": [
+      "B:",
+      "It's",
+      "an",
+      "internet",
+      "site",
+      "that",
+      "lets",
+      "you",
+      "book",
+      "rooms",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "internet site",
+        "pinyin": null,
+        "meaning": "site de internet"
+      },
+      {
+        "id": 2,
+        "word": "book",
+        "pinyin": null,
+        "meaning": "reservar"
+      },
+      {
+        "id": 3,
+        "word": "rooms",
+        "pinyin": null,
+        "meaning": "quartos"
+      }
+    ],
+    "id": "local-1772293355226-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "However, they aren't hotels, they're just rooms in people's homes.",
+    "pinyin": null,
+    "translation": "No entanto, não são hotéis, são apenas quartos nas casas das pessoas.",
+    "tokens": [
+      "However",
+      ",",
+      "they",
+      "aren't",
+      "hotels",
+      ",",
+      "they're",
+      "just",
+      "rooms",
+      "in",
+      "people's",
+      "homes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "However",
+        "pinyin": null,
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "hotels",
+        "pinyin": null,
+        "meaning": "hotéis"
+      },
+      {
+        "id": 3,
+        "word": "rooms",
+        "pinyin": null,
+        "meaning": "quartos"
+      },
+      {
+        "id": 4,
+        "word": "homes",
+        "pinyin": null,
+        "meaning": "casas"
+      }
+    ],
+    "id": "local-1772293355226-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "The landlord rents out his own spare rooms and makes a bit of money.",
+    "pinyin": null,
+    "translation": "O proprietário aluga seus próprios quartos extras e ganha um pouco de dinheiro.",
+    "tokens": [
+      "The",
+      "landlord",
+      "rents",
+      "out",
+      "his",
+      "own",
+      "spare",
+      "rooms",
+      "and",
+      "makes",
+      "a",
+      "bit",
+      "of",
+      "money",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "landlord",
+        "pinyin": null,
+        "meaning": "proprietário"
+      },
+      {
+        "id": 2,
+        "word": "rents out",
+        "pinyin": null,
+        "meaning": "aluga"
+      },
+      {
+        "id": 3,
+        "word": "spare rooms",
+        "pinyin": null,
+        "meaning": "quartos extras"
+      },
+      {
+        "id": 4,
+        "word": "makes money",
+        "pinyin": null,
+        "meaning": "ganha dinheiro"
+      }
+    ],
+    "id": "local-1772293355226-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I see.",
+    "pinyin": null,
+    "translation": "A: Entendi.",
+    "tokens": [
+      "A:",
+      "I",
+      "see",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772293355226-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Hey, there are a lot!",
+    "pinyin": null,
+    "translation": "Ei, tem muitos!",
+    "tokens": [
+      "Hey",
+      ",",
+      "there",
+      "are",
+      "a",
+      "lot",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "a lot",
+        "pinyin": null,
+        "meaning": "muitos"
+      }
+    ],
+    "id": "local-1772293355226-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "This looks pretty good.",
+    "pinyin": null,
+    "translation": "Isso parece muito bom.",
+    "tokens": [
+      "This",
+      "looks",
+      "pretty",
+      "good",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "looks good",
+        "pinyin": null,
+        "meaning": "parece bom"
+      },
+      {
+        "id": 2,
+        "word": "pretty",
+        "pinyin": null,
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1772293355226-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A bit more than 600 RMB per night.",
+    "pinyin": null,
+    "translation": "Um pouco mais de 600 RMB por noite.",
+    "tokens": [
+      "A",
+      "bit",
+      "more",
+      "than",
+      "600",
+      "RMB",
+      "per",
+      "night",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "per night",
+        "pinyin": null,
+        "meaning": "por noite"
+      }
+    ],
+    "id": "local-1772293355226-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It also has a kitchen, so I can cook for myself.",
+    "pinyin": null,
+    "translation": "Também tem uma cozinha, então posso cozinhar para mim mesmo.",
+    "tokens": [
+      "It",
+      "also",
+      "has",
+      "a",
+      "kitchen",
+      ",",
+      "so",
+      "I",
+      "can",
+      "cook",
+      "for",
+      "myself",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kitchen",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 2,
+        "word": "cook for myself",
+        "pinyin": null,
+        "meaning": "cozinhar para mim mesmo"
+      }
+    ],
+    "id": "local-1772293355226-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: However, this isn't an apartment, it's just a room.",
+    "pinyin": null,
+    "translation": "B: No entanto, isso não é um apartamento, é apenas um quarto.",
+    "tokens": [
+      "B:",
+      "However",
+      ",",
+      "this",
+      "isn't",
+      "an",
+      "apartment",
+      ",",
+      "it's",
+      "just",
+      "a",
+      "room",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "However",
+        "pinyin": null,
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "apartment",
+        "pinyin": null,
+        "meaning": "apartamento"
+      },
+      {
+        "id": 3,
+        "word": "room",
+        "pinyin": null,
+        "meaning": "quarto"
+      }
+    ],
+    "id": "local-1772293355226-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You have to share the kitchen and the bathroom with others.",
+    "pinyin": null,
+    "translation": "Você tem que compartilhar a cozinha e o banheiro com outras pessoas.",
+    "tokens": [
+      "You",
+      "have",
+      "to",
+      "share",
+      "the",
+      "kitchen",
+      "and",
+      "the",
+      "bathroom",
+      "with",
+      "others",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "share",
+        "pinyin": null,
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 2,
+        "word": "kitchen",
+        "pinyin": null,
+        "meaning": "cozinha"
+      },
+      {
+        "id": 3,
+        "word": "bathroom",
+        "pinyin": null,
+        "meaning": "banheiro"
+      },
+      {
+        "id": 4,
+        "word": "others",
+        "pinyin": null,
+        "meaning": "outras pessoas"
+      }
+    ],
+    "id": "local-1772293355226-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh, that doesn't matter.",
+    "pinyin": null,
+    "translation": "A: Ah, isso não importa.",
+    "tokens": [
+      "A:",
+      "Oh",
+      ",",
+      "that",
+      "doesn't",
+      "matter",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "matter",
+        "pinyin": null,
+        "meaning": "importar"
+      }
+    ],
+    "id": "local-1772293355226-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "But, is staying with other people safe?",
+    "pinyin": null,
+    "translation": "Mas, é seguro ficar com outras pessoas?",
+    "tokens": [
+      "But",
+      ",",
+      "is",
+      "staying",
+      "with",
+      "other",
+      "people",
+      "safe",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "staying",
+        "pinyin": null,
+        "meaning": "ficar/hospedar-se"
+      },
+      {
+        "id": 2,
+        "word": "other people",
+        "pinyin": null,
+        "meaning": "outras pessoas"
+      },
+      {
+        "id": 3,
+        "word": "safe",
+        "pinyin": null,
+        "meaning": "seguro"
+      }
+    ],
+    "id": "local-1772293355226-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: You can look at the reviews.",
+    "pinyin": null,
+    "translation": "B: Você pode olhar as avaliações.",
+    "tokens": [
+      "B:",
+      "You",
+      "can",
+      "look",
+      "at",
+      "the",
+      "reviews",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "look at",
+        "pinyin": null,
+        "meaning": "olhar para"
+      },
+      {
+        "id": 2,
+        "word": "reviews",
+        "pinyin": null,
+        "meaning": "avaliações"
+      }
+    ],
+    "id": "local-1772293355226-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "They're written by people who stayed there before.",
+    "pinyin": null,
+    "translation": "Elas são escritas por pessoas que se hospedaram lá antes.",
+    "tokens": [
+      "They're",
+      "written",
+      "by",
+      "people",
+      "who",
+      "stayed",
+      "there",
+      "before",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "written by",
+        "pinyin": null,
+        "meaning": "escritas por"
+      },
+      {
+        "id": 2,
+        "word": "stayed",
+        "pinyin": null,
+        "meaning": "hospedaram-se"
+      },
+      {
+        "id": 3,
+        "word": "before",
+        "pinyin": null,
+        "meaning": "antes"
+      }
+    ],
+    "id": "local-1772293355226-19",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "If a lot of people have commented, and the ratings are high it shouldn't be a problem.",
+    "pinyin": null,
+    "translation": "Se muitas pessoas comentaram e as avaliações são altas, não deve ser um problema.",
+    "tokens": [
+      "If",
+      "a",
+      "lot",
+      "of",
+      "people",
+      "have",
+      "commented",
+      ",",
+      "and",
+      "the",
+      "ratings",
+      "are",
+      "high",
+      "it",
+      "shouldn't",
+      "be",
+      "a",
+      "problem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "a lot of people",
+        "pinyin": null,
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 2,
+        "word": "commented",
+        "pinyin": null,
+        "meaning": "comentaram"
+      },
+      {
+        "id": 3,
+        "word": "ratings",
+        "pinyin": null,
+        "meaning": "avaliações/classificações"
+      },
+      {
+        "id": 4,
+        "word": "high",
+        "pinyin": null,
+        "meaning": "altas"
+      },
+      {
+        "id": 5,
+        "word": "problem",
+        "pinyin": null,
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772293355226-20",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That's great.",
+    "pinyin": null,
+    "translation": "A: Isso é ótimo.",
+    "tokens": [
+      "A:",
+      "That's",
+      "great",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "great",
+        "pinyin": null,
+        "meaning": "ótimo"
+      }
+    ],
+    "id": "local-1772293355226-21",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'll keep looking!",
+    "pinyin": null,
+    "translation": "Vou continuar procurando!",
+    "tokens": [
+      "I'll",
+      "keep",
+      "looking",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "keep looking",
+        "pinyin": null,
+        "meaning": "continuar procurando"
+      }
+    ],
+    "id": "local-1772293355226-22",
+    "language": "Inglês"
+  }
+]

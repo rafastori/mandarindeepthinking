@@ -1,0 +1,708 @@
+[
+  {
+    "chinese": "A: Bonjour. Puis-je demander, est-ce le service des examens physiques de l'hôpital Huamei ?",
+    "pinyin": "",
+    "translation": "A: Bom dia. Posso perguntar, este é o serviço de exames físicos do hospital Huamei?",
+    "tokens": [
+      "A:",
+      "Bonjour",
+      ".",
+      "Puis-je",
+      "demander",
+      ",",
+      "est-ce",
+      "le",
+      "service",
+      "des",
+      "examens",
+      "physiques",
+      "de",
+      "l'",
+      "hôpital",
+      "Huamei",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Bonjour",
+        "pinyin": "",
+        "meaning": "Bom dia / Olá"
+      },
+      {
+        "id": 1,
+        "word": "Puis-je",
+        "pinyin": "",
+        "meaning": "Posso eu"
+      },
+      {
+        "id": 2,
+        "word": "demander",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 3,
+        "word": "service",
+        "pinyin": "",
+        "meaning": "serviço"
+      },
+      {
+        "id": 4,
+        "word": "examens physiques",
+        "pinyin": "",
+        "meaning": "exames físicos"
+      },
+      {
+        "id": 5,
+        "word": "hôpital",
+        "pinyin": "",
+        "meaning": "hospital"
+      }
+    ],
+    "id": "local-1772300202845-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. Puis-je demander, y a-t-il quelque chose avec quoi je peux vous aider ?",
+    "pinyin": "",
+    "translation": "B: Sim. Posso perguntar, há algo em que eu possa ajudá-lo?",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "Puis-je",
+      "demander",
+      ",",
+      "y",
+      "a-t-il",
+      "quelque",
+      "chose",
+      "avec",
+      "quoi",
+      "je",
+      "peux",
+      "vous",
+      "aider",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "Puis-je",
+        "pinyin": "",
+        "meaning": "Posso eu"
+      },
+      {
+        "id": 2,
+        "word": "demander",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 3,
+        "word": "y a-t-il",
+        "pinyin": "",
+        "meaning": "há / existe"
+      },
+      {
+        "id": 4,
+        "word": "aider",
+        "pinyin": "",
+        "meaning": "ajudar"
+      }
+    ],
+    "id": "local-1772300202845-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Proposez-vous des examens médicaux d'embauche ici ?",
+    "pinyin": "",
+    "translation": "A: Vocês oferecem exames médicos de admissão aqui?",
+    "tokens": [
+      "A:",
+      "Proposez-vous",
+      "des",
+      "examens",
+      "médicaux",
+      "d'embauche",
+      "ici",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Proposez-vous",
+        "pinyin": "",
+        "meaning": "Vocês propõem / oferecem"
+      },
+      {
+        "id": 1,
+        "word": "examens médicaux",
+        "pinyin": "",
+        "meaning": "exames médicos"
+      },
+      {
+        "id": 2,
+        "word": "embauche",
+        "pinyin": "",
+        "meaning": "contratação / admissão"
+      },
+      {
+        "id": 3,
+        "word": "ici",
+        "pinyin": "",
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772300202845-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. Nous avons un forfait qui coûte 260 yuans.",
+    "pinyin": "",
+    "translation": "B: Sim. Nós temos um pacote que custa 260 yuans.",
+    "tokens": [
+      "B:",
+      "Oui",
+      ".",
+      "Nous",
+      "avons",
+      "un",
+      "forfait",
+      "qui",
+      "coûte",
+      "260",
+      "yuans",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "forfait",
+        "pinyin": "",
+        "meaning": "pacote / plano"
+      },
+      {
+        "id": 2,
+        "word": "coûte",
+        "pinyin": "",
+        "meaning": "custa"
+      },
+      {
+        "id": 3,
+        "word": "yuans",
+        "pinyin": "",
+        "meaning": "yuans (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772300202845-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Quels détails seront examinés ?",
+    "pinyin": "",
+    "translation": "A: Quais detalhes serão examinados?",
+    "tokens": [
+      "A:",
+      "Quels",
+      "détails",
+      "seront",
+      "examinés",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Quels",
+        "pinyin": "",
+        "meaning": "Quais"
+      },
+      {
+        "id": 1,
+        "word": "détails",
+        "pinyin": "",
+        "meaning": "detalhes"
+      },
+      {
+        "id": 2,
+        "word": "examinés",
+        "pinyin": "",
+        "meaning": "examinados"
+      }
+    ],
+    "id": "local-1772300202845-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: La taille, le poids et la tension artérielle de base. Des analyses de sang, des analyses d'urine, une échographie mode B et un électrocardiogramme.",
+    "pinyin": "",
+    "translation": "B: A altura, o peso e a pressão arterial básica. Análises de sangue, análises de urina, uma ultrassonografia modo B e um eletrocardiograma.",
+    "tokens": [
+      "B:",
+      "La",
+      "taille",
+      ",",
+      "le",
+      "poids",
+      "et",
+      "la",
+      "tension",
+      "artérielle",
+      "de",
+      "base",
+      ".",
+      "Des",
+      "analyses",
+      "de",
+      "sang",
+      ",",
+      "des",
+      "analyses",
+      "d'urine",
+      ",",
+      "une",
+      "échographie",
+      "mode",
+      "B",
+      "et",
+      "un",
+      "électrocardiogramme",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "taille",
+        "pinyin": "",
+        "meaning": "altura"
+      },
+      {
+        "id": 1,
+        "word": "poids",
+        "pinyin": "",
+        "meaning": "peso"
+      },
+      {
+        "id": 2,
+        "word": "tension artérielle",
+        "pinyin": "",
+        "meaning": "pressão arterial"
+      },
+      {
+        "id": 3,
+        "word": "base",
+        "pinyin": "",
+        "meaning": "básica"
+      },
+      {
+        "id": 4,
+        "word": "analyses de sang",
+        "pinyin": "",
+        "meaning": "exames de sangue"
+      },
+      {
+        "id": 5,
+        "word": "analyses d'urine",
+        "pinyin": "",
+        "meaning": "exames de urina"
+      },
+      {
+        "id": 6,
+        "word": "échographie mode B",
+        "pinyin": "",
+        "meaning": "ultrassonografia modo B"
+      },
+      {
+        "id": 7,
+        "word": "électrocardiogramme",
+        "pinyin": "",
+        "meaning": "eletrocardiograma"
+      }
+    ],
+    "id": "local-1772300202845-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Si je souhaite également faire vérifier d'autres éléments, est-ce possible ?",
+    "pinyin": "",
+    "translation": "A: Se eu também desejar verificar outros itens, é possível?",
+    "tokens": [
+      "A:",
+      "Si",
+      "je",
+      "souhaite",
+      "également",
+      "faire",
+      "vérifier",
+      "d'autres",
+      "éléments",
+      ",",
+      "est-ce",
+      "possible",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Si",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 1,
+        "word": "souhaite",
+        "pinyin": "",
+        "meaning": "desejo"
+      },
+      {
+        "id": 2,
+        "word": "également",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "faire vérifier",
+        "pinyin": "",
+        "meaning": "mandar verificar / fazer verificar"
+      },
+      {
+        "id": 4,
+        "word": "autres",
+        "pinyin": "",
+        "meaning": "outros"
+      },
+      {
+        "id": 5,
+        "word": "éléments",
+        "pinyin": "",
+        "meaning": "itens / elementos"
+      },
+      {
+        "id": 6,
+        "word": "possible",
+        "pinyin": "",
+        "meaning": "possível"
+      }
+    ],
+    "id": "local-1772300202845-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui, c'est possible. Vous pouvez ajouter des éléments individuels et compléter le coût, c'est tout à fait possible.",
+    "pinyin": "",
+    "translation": "B: Sim, é possível. Você pode adicionar itens individuais e complementar o custo, é totalmente possível.",
+    "tokens": [
+      "B:",
+      "Oui",
+      ",",
+      "c'est",
+      "possible",
+      ".",
+      "Vous",
+      "pouvez",
+      "ajouter",
+      "des",
+      "éléments",
+      "individuels",
+      "et",
+      "compléter",
+      "le",
+      "coût",
+      ",",
+      "c'est",
+      "tout",
+      "à",
+      "fait",
+      "possible",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "possible",
+        "pinyin": "",
+        "meaning": "possível"
+      },
+      {
+        "id": 2,
+        "word": "ajouter",
+        "pinyin": "",
+        "meaning": "adicionar"
+      },
+      {
+        "id": 3,
+        "word": "éléments individuels",
+        "pinyin": "",
+        "meaning": "itens individuais"
+      },
+      {
+        "id": 4,
+        "word": "compléter",
+        "pinyin": "",
+        "meaning": "complementar"
+      },
+      {
+        "id": 5,
+        "word": "coût",
+        "pinyin": "",
+        "meaning": "custo"
+      },
+      {
+        "id": 6,
+        "word": "tout à fait",
+        "pinyin": "",
+        "meaning": "totalmente / completamente"
+      }
+    ],
+    "id": "local-1772300202845-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Le rapport sera-t-il directement envoyé par courrier au travail ?",
+    "pinyin": "",
+    "translation": "A: O relatório será enviado diretamente por correio para o trabalho?",
+    "tokens": [
+      "A:",
+      "Le",
+      "rapport",
+      "sera-t-il",
+      "directement",
+      "envoyé",
+      "par",
+      "courrier",
+      "au",
+      "travail",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "rapport",
+        "pinyin": "",
+        "meaning": "relatório"
+      },
+      {
+        "id": 1,
+        "word": "sera-t-il",
+        "pinyin": "",
+        "meaning": "será ele"
+      },
+      {
+        "id": 2,
+        "word": "directement",
+        "pinyin": "",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 3,
+        "word": "envoyé",
+        "pinyin": "",
+        "meaning": "enviado"
+      },
+      {
+        "id": 4,
+        "word": "par courrier",
+        "pinyin": "",
+        "meaning": "por correio"
+      },
+      {
+        "id": 5,
+        "word": "travail",
+        "pinyin": "",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1772300202845-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Non, c'est à la personne de venir le chercher ou de le faire envoyer par express. Avez-vous besoin que je vous aide à prendre rendez-vous dès maintenant ?",
+    "pinyin": "",
+    "translation": "B: Não, é a pessoa que deve vir buscá-lo ou mandá-lo enviar por expresso. Você precisa que eu o ajude a marcar uma consulta agora?",
+    "tokens": [
+      "B:",
+      "Non",
+      ",",
+      "c'est",
+      "à",
+      "la",
+      "personne",
+      "de",
+      "venir",
+      "le",
+      "chercher",
+      "ou",
+      "de",
+      "le",
+      "faire",
+      "envoyer",
+      "par",
+      "express",
+      ".",
+      "Avez-vous",
+      "besoin",
+      "que",
+      "je",
+      "vous",
+      "aide",
+      "à",
+      "prendre",
+      "rendez-vous",
+      "dès",
+      "maintenant",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Non",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 1,
+        "word": "personne",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 2,
+        "word": "venir chercher",
+        "pinyin": "",
+        "meaning": "vir buscar"
+      },
+      {
+        "id": 3,
+        "word": "faire envoyer",
+        "pinyin": "",
+        "meaning": "mandar enviar"
+      },
+      {
+        "id": 4,
+        "word": "par express",
+        "pinyin": "",
+        "meaning": "por expresso"
+      },
+      {
+        "id": 5,
+        "word": "Avez-vous besoin",
+        "pinyin": "",
+        "meaning": "Você precisa"
+      },
+      {
+        "id": 6,
+        "word": "prendre rendez-vous",
+        "pinyin": "",
+        "meaning": "marcar um encontro / consulta"
+      },
+      {
+        "id": 7,
+        "word": "dès maintenant",
+        "pinyin": "",
+        "meaning": "agora mesmo / desde agora"
+      }
+    ],
+    "id": "local-1772300202845-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Prenez-le pour lundi prochain.",
+    "pinyin": "",
+    "translation": "A: Marque para a próxima segunda-feira.",
+    "tokens": [
+      "A:",
+      "Prenez-le",
+      "pour",
+      "lundi",
+      "prochain",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Prenez-le",
+        "pinyin": "",
+        "meaning": "Pegue-o / Marque-o (aqui no sentido de marcar compromisso)"
+      },
+      {
+        "id": 1,
+        "word": "lundi",
+        "pinyin": "",
+        "meaning": "segunda-feira"
+      },
+      {
+        "id": 2,
+        "word": "prochain",
+        "pinyin": "",
+        "meaning": "próximo"
+      }
+    ],
+    "id": "local-1772300202845-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord. Veuillez laisser vos informations de base.",
+    "pinyin": "",
+    "translation": "B: De acordo. Por favor, deixe suas informações básicas.",
+    "tokens": [
+      "B:",
+      "D'accord",
+      ".",
+      "Veuillez",
+      "laisser",
+      "vos",
+      "informations",
+      "de",
+      "base",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "De acordo / Certo"
+      },
+      {
+        "id": 1,
+        "word": "Veuillez",
+        "pinyin": "",
+        "meaning": "Por favor (formal, imperativo)"
+      },
+      {
+        "id": 2,
+        "word": "laisser",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 3,
+        "word": "informations de base",
+        "pinyin": "",
+        "meaning": "informações básicas"
+      }
+    ],
+    "id": "local-1772300202845-11",
+    "language": "Francês"
+  }
+]

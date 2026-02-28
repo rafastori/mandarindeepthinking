@@ -1,0 +1,679 @@
+[
+  {
+    "chinese": "A: 明日、赤ちゃんを近所の病院に連れて行って予防接種を受けさせる必要があります。休みを取りましたか？",
+    "pinyin": null,
+    "translation": "A: Amanhã, preciso levar o bebê ao hospital do bairro para tomar a vacina. Você tirou folga?",
+    "tokens": [
+      "明日",
+      "、",
+      "赤ちゃん",
+      "を",
+      "近所",
+      "の",
+      "病院",
+      "に",
+      "連れて行って",
+      "予防接種",
+      "を",
+      "受けさせる",
+      "必要",
+      "が",
+      "あります",
+      "。",
+      "休み",
+      "を",
+      "取りました",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "明日",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "赤ちゃん",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 3,
+        "word": "近所",
+        "pinyin": null,
+        "meaning": "vizinhança, bairro"
+      },
+      {
+        "id": 4,
+        "word": "病院",
+        "pinyin": null,
+        "meaning": "hospital"
+      },
+      {
+        "id": 5,
+        "word": "連れて行く",
+        "pinyin": null,
+        "meaning": "levar (pessoa/animal)"
+      },
+      {
+        "id": 6,
+        "word": "予防接種",
+        "pinyin": null,
+        "meaning": "vacinação, vacina"
+      },
+      {
+        "id": 7,
+        "word": "受けさせる",
+        "pinyin": null,
+        "meaning": "fazer com que receba/tome (forma causativa de 受ける)"
+      },
+      {
+        "id": 8,
+        "word": "必要",
+        "pinyin": null,
+        "meaning": "necessidade"
+      },
+      {
+        "id": 9,
+        "word": "休みを取る",
+        "pinyin": null,
+        "meaning": "tirar folga/dia de descanso"
+      }
+    ],
+    "id": "local-1772301358549-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: はい、一日休みを取りました。ハニー、明日赤ちゃんは何の注射を受けますか？",
+    "pinyin": null,
+    "translation": "B: Sim, tirei um dia de folga. Querido(a), que injeção o bebê vai tomar amanhã?",
+    "tokens": [
+      "はい",
+      "、",
+      "一日",
+      "休み",
+      "を",
+      "取りました",
+      "。",
+      "ハニー",
+      "、",
+      "明日",
+      "赤ちゃん",
+      "は",
+      "何の",
+      "注射",
+      "を",
+      "受けます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "はい",
+        "pinyin": null,
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "一日",
+        "pinyin": null,
+        "meaning": "um dia"
+      },
+      {
+        "id": 3,
+        "word": "休みを取る",
+        "pinyin": null,
+        "meaning": "tirar folga/dia de descanso"
+      },
+      {
+        "id": 4,
+        "word": "ハニー",
+        "pinyin": null,
+        "meaning": "honey (querido/a)"
+      },
+      {
+        "id": 5,
+        "word": "明日",
+        "pinyin": null,
+        "meaning": "amanhã"
+      },
+      {
+        "id": 6,
+        "word": "赤ちゃん",
+        "pinyin": null,
+        "meaning": "bebê"
+      },
+      {
+        "id": 7,
+        "word": "何の",
+        "pinyin": null,
+        "meaning": "que tipo de, qual"
+      },
+      {
+        "id": 8,
+        "word": "注射",
+        "pinyin": null,
+        "meaning": "injeção"
+      },
+      {
+        "id": 9,
+        "word": "受ける",
+        "pinyin": null,
+        "meaning": "receber, tomar (vacina, injeção)"
+      }
+    ],
+    "id": "local-1772301358549-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ちょっと見てみますね。B型肝炎のワクチンです。",
+    "pinyin": null,
+    "translation": "A: Deixa eu dar uma olhada. É a vacina da hepatite B.",
+    "tokens": [
+      "ちょっと",
+      "見てみます",
+      "ね",
+      "。",
+      "B型肝炎",
+      "の",
+      "ワクチン",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ちょっと",
+        "pinyin": null,
+        "meaning": "um pouco, só um momento"
+      },
+      {
+        "id": 2,
+        "word": "見てみる",
+        "pinyin": null,
+        "meaning": "dar uma olhada (ver e tentar)"
+      },
+      {
+        "id": 3,
+        "word": "ね",
+        "pinyin": null,
+        "meaning": "partícula de confirmação/ênfase"
+      },
+      {
+        "id": 4,
+        "word": "B型肝炎",
+        "pinyin": null,
+        "meaning": "hepatite B"
+      },
+      {
+        "id": 5,
+        "word": "ワクチン",
+        "pinyin": null,
+        "meaning": "vacina (do inglês 'vaccine')"
+      }
+    ],
+    "id": "local-1772301358549-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ。無料ですよね？",
+    "pinyin": null,
+    "translation": "B: Ah. É de graça, certo?",
+    "tokens": [
+      "ああ",
+      "。",
+      "無料",
+      "です",
+      "よね",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": null,
+        "meaning": "ah, oh (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "無料",
+        "pinyin": null,
+        "meaning": "gratuito, sem custo"
+      },
+      {
+        "id": 3,
+        "word": "よね",
+        "pinyin": null,
+        "meaning": "certo?, não é?"
+      }
+    ],
+    "id": "local-1772301358549-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 中国製と輸入製のワクチンがあります。中国製は無料です。輸入製は有料です。",
+    "pinyin": null,
+    "translation": "A: Há vacinas fabricadas na China e importadas. As fabricadas na China são gratuitas. As importadas são pagas.",
+    "tokens": [
+      "中国製",
+      "と",
+      "輸入製",
+      "の",
+      "ワクチン",
+      "が",
+      "あります",
+      "。",
+      "中国製",
+      "は",
+      "無料",
+      "です",
+      "。",
+      "輸入製",
+      "は",
+      "有料",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "中国製",
+        "pinyin": null,
+        "meaning": "feito na China, fabricado na China"
+      },
+      {
+        "id": 2,
+        "word": "輸入製",
+        "pinyin": null,
+        "meaning": "importado, fabricado no exterior"
+      },
+      {
+        "id": 3,
+        "word": "ワクチン",
+        "pinyin": null,
+        "meaning": "vacina"
+      },
+      {
+        "id": 4,
+        "word": "無料",
+        "pinyin": null,
+        "meaning": "gratuito, sem custo"
+      },
+      {
+        "id": 5,
+        "word": "有料",
+        "pinyin": null,
+        "meaning": "pago, com custo"
+      }
+    ],
+    "id": "local-1772301358549-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: じゃあ、中国製にしますか、それとも輸入製にしますか？",
+    "pinyin": null,
+    "translation": "B: Então, vamos de fabricada na China ou importada?",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "中国製",
+      "に",
+      "します",
+      "か",
+      "、",
+      "それとも",
+      "輸入製",
+      "に",
+      "します",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "中国製",
+        "pinyin": null,
+        "meaning": "feito na China"
+      },
+      {
+        "id": 3,
+        "word": "〜にする",
+        "pinyin": null,
+        "meaning": "escolher, decidir por"
+      },
+      {
+        "id": 4,
+        "word": "それとも",
+        "pinyin": null,
+        "meaning": "ou (usado para perguntar entre opções)"
+      },
+      {
+        "id": 5,
+        "word": "輸入製",
+        "pinyin": null,
+        "meaning": "importado"
+      }
+    ],
+    "id": "local-1772301358549-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 輸入製にしましょう。",
+    "pinyin": null,
+    "translation": "A: Vamos pegar a importada.",
+    "tokens": [
+      "輸入製",
+      "に",
+      "しましょう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "輸入製",
+        "pinyin": null,
+        "meaning": "importado"
+      },
+      {
+        "id": 2,
+        "word": "〜にしましょう",
+        "pinyin": null,
+        "meaning": "vamos escolher/decidir por (forma volitiva de 〜にする)"
+      }
+    ],
+    "id": "local-1772301358549-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: でも、うちの子は抵抗力がとても強くて病気にならないですよ。輸入製にする必要はないんじゃないですか？",
+    "pinyin": null,
+    "translation": "B: Mas nosso filho tem uma resistência muito forte e não fica doente. Não há necessidade de escolher a importada, certo?",
+    "tokens": [
+      "でも",
+      "、",
+      "うちの子",
+      "は",
+      "抵抗力",
+      "が",
+      "とても",
+      "強く",
+      "て",
+      "病気",
+      "に",
+      "ならない",
+      "です",
+      "よ",
+      "。",
+      "輸入製",
+      "に",
+      "する",
+      "必要",
+      "は",
+      "ない",
+      "んじゃ",
+      "ない",
+      "ですか",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "でも",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "うちの子",
+        "pinyin": null,
+        "meaning": "nosso filho/criança"
+      },
+      {
+        "id": 3,
+        "word": "抵抗力",
+        "pinyin": null,
+        "meaning": "resistência (do corpo)"
+      },
+      {
+        "id": 4,
+        "word": "とても",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "強い",
+        "pinyin": null,
+        "meaning": "forte"
+      },
+      {
+        "id": 6,
+        "word": "病気",
+        "pinyin": null,
+        "meaning": "doença"
+      },
+      {
+        "id": 7,
+        "word": "病気になる",
+        "pinyin": null,
+        "meaning": "ficar doente"
+      },
+      {
+        "id": 8,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "partícula de ênfase/informação"
+      },
+      {
+        "id": 9,
+        "word": "輸入製",
+        "pinyin": null,
+        "meaning": "importado"
+      },
+      {
+        "id": 10,
+        "word": "必要",
+        "pinyin": null,
+        "meaning": "necessidade"
+      },
+      {
+        "id": 11,
+        "word": "〜んじゃないですか",
+        "pinyin": null,
+        "meaning": "Não é que...?, Será que não...? (expressão para sugerir ou perguntar com leve ênfase)"
+      }
+    ],
+    "id": "local-1772301358549-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 子供にかけるお金をケチることはできません。輸入ワクチンは高いけど、もっと良くて安全なはずです。安物買いの銭失いですよ。",
+    "pinyin": null,
+    "translation": "A: Não podemos economizar dinheiro quando se trata dos filhos. A vacina importada é cara, mas deve ser melhor e mais segura. É o ditado 'o barato sai caro'.",
+    "tokens": [
+      "子供",
+      "に",
+      "かける",
+      "お金",
+      "を",
+      "ケチる",
+      "こと",
+      "は",
+      "できません",
+      "。",
+      "輸入",
+      "ワクチン",
+      "は",
+      "高い",
+      "けど",
+      "、",
+      "もっと",
+      "良く",
+      "て",
+      "安全",
+      "な",
+      "はず",
+      "です",
+      "。",
+      "安物買いの銭失い",
+      "です",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "子供",
+        "pinyin": null,
+        "meaning": "filho, criança"
+      },
+      {
+        "id": 2,
+        "word": "お金をかける",
+        "pinyin": null,
+        "meaning": "gastar dinheiro em"
+      },
+      {
+        "id": 3,
+        "word": "ケチる",
+        "pinyin": null,
+        "meaning": "economizar (de forma negativa), ser pão-duro"
+      },
+      {
+        "id": 4,
+        "word": "できない",
+        "pinyin": null,
+        "meaning": "não conseguir, não poder"
+      },
+      {
+        "id": 5,
+        "word": "輸入ワクチン",
+        "pinyin": null,
+        "meaning": "vacina importada"
+      },
+      {
+        "id": 6,
+        "word": "高い",
+        "pinyin": null,
+        "meaning": "caro, alto"
+      },
+      {
+        "id": 7,
+        "word": "けど",
+        "pinyin": null,
+        "meaning": "mas, embora"
+      },
+      {
+        "id": 8,
+        "word": "もっと",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 9,
+        "word": "良い",
+        "pinyin": null,
+        "meaning": "bom"
+      },
+      {
+        "id": 10,
+        "word": "安全",
+        "pinyin": null,
+        "meaning": "seguro, segurança"
+      },
+      {
+        "id": 11,
+        "word": "はず",
+        "pinyin": null,
+        "meaning": "deve ser, é suposto que"
+      },
+      {
+        "id": 12,
+        "word": "安物買いの銭失い",
+        "pinyin": null,
+        "meaning": "o barato sai caro (ditado, literalmente 'comprar barato e perder dinheiro')"
+      },
+      {
+        "id": 13,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "partícula de ênfase/informação"
+      }
+    ],
+    "id": "local-1772301358549-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました、ボス。あなたの言う通りにします。あなたの意見に従います。",
+    "pinyin": null,
+    "translation": "B: Entendi, chefe. Farei como você diz. Seguirei sua opinião.",
+    "tokens": [
+      "わかりました",
+      "、",
+      "ボス",
+      "。",
+      "あなた",
+      "の",
+      "言う",
+      "通り",
+      "に",
+      "します",
+      "。",
+      "あなた",
+      "の",
+      "意見",
+      "に",
+      "従います",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": null,
+        "meaning": "entender, compreender"
+      },
+      {
+        "id": 2,
+        "word": "ボス",
+        "pinyin": null,
+        "meaning": "chefe (do inglês 'boss')"
+      },
+      {
+        "id": 3,
+        "word": "言う",
+        "pinyin": null,
+        "meaning": "dizer"
+      },
+      {
+        "id": 4,
+        "word": "〜通りにする",
+        "pinyin": null,
+        "meaning": "fazer como (alguém) diz/segue"
+      },
+      {
+        "id": 5,
+        "word": "意見",
+        "pinyin": null,
+        "meaning": "opinião"
+      },
+      {
+        "id": 6,
+        "word": "従う",
+        "pinyin": null,
+        "meaning": "obedecer, seguir, conformar-se"
+      }
+    ],
+    "id": "local-1772301358549-9",
+    "language": "Japonês"
+  }
+]

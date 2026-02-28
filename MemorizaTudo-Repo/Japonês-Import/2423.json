@@ -1,0 +1,639 @@
+[
+  {
+    "chinese": "リリ、来週の日曜日、暇？私の家に来て、ケーキの作り方を教えてくれない？",
+    "pinyin": null,
+    "translation": "A: Lili, no próximo domingo, você está livre? Você pode vir na minha casa e me ensinar a fazer bolo?",
+    "tokens": [
+      "リリ",
+      "、",
+      "来週",
+      "の",
+      "日曜日",
+      "、",
+      "暇",
+      "？",
+      "私",
+      "の",
+      "家",
+      "に",
+      "来",
+      "て",
+      "、",
+      "ケーキ",
+      "の",
+      "作り方",
+      "を",
+      "教え",
+      "て",
+      "くれ",
+      "ない",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "来週",
+        "pinyin": "らいしゅう",
+        "meaning": "próxima semana"
+      },
+      {
+        "id": 2,
+        "word": "日曜日",
+        "pinyin": "にちようび",
+        "meaning": "domingo"
+      },
+      {
+        "id": 3,
+        "word": "暇",
+        "pinyin": "ひま",
+        "meaning": "tempo livre, desocupado"
+      },
+      {
+        "id": 4,
+        "word": "私",
+        "pinyin": "わたし",
+        "meaning": "eu"
+      },
+      {
+        "id": 5,
+        "word": "家",
+        "pinyin": "いえ",
+        "meaning": "casa, lar"
+      },
+      {
+        "id": 6,
+        "word": "来る",
+        "pinyin": "くる",
+        "meaning": "vir"
+      },
+      {
+        "id": 7,
+        "word": "ケーキ",
+        "pinyin": "けーき",
+        "meaning": "bolo"
+      },
+      {
+        "id": 8,
+        "word": "作り方",
+        "pinyin": "つくりかた",
+        "meaning": "modo de fazer, receita"
+      },
+      {
+        "id": 9,
+        "word": "教える",
+        "pinyin": "おしえる",
+        "meaning": "ensinar, contar"
+      },
+      {
+        "id": 10,
+        "word": "くれる",
+        "pinyin": "くれる",
+        "meaning": "dar (para mim ou para o meu grupo)"
+      }
+    ],
+    "id": "local-1772296683413-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "うん、いいよ。急にどうしてケーキを作りたいの？",
+    "pinyin": null,
+    "translation": "B: Sim, tudo bem. Por que de repente você quer fazer um bolo?",
+    "tokens": [
+      "うん",
+      "、",
+      "いい",
+      "よ",
+      "。",
+      "急に",
+      "どうして",
+      "ケーキ",
+      "を",
+      "作り",
+      "たい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うん",
+        "pinyin": "うん",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "いい",
+        "meaning": "bom, ok"
+      },
+      {
+        "id": 3,
+        "word": "急に",
+        "pinyin": "きゅうに",
+        "meaning": "de repente"
+      },
+      {
+        "id": 4,
+        "word": "どうして",
+        "pinyin": "どうして",
+        "meaning": "por que"
+      },
+      {
+        "id": 5,
+        "word": "ケーキ",
+        "pinyin": "けーき",
+        "meaning": "bolo"
+      },
+      {
+        "id": 6,
+        "word": "作る",
+        "pinyin": "つくる",
+        "meaning": "fazer, preparar"
+      }
+    ],
+    "id": "local-1772296683413-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "来月、彼氏の誕生日なの。サプライズをあげたいの。",
+    "pinyin": null,
+    "translation": "A: No próximo mês é o aniversário do meu namorado. Eu quero dar uma surpresa.",
+    "tokens": [
+      "来月",
+      "、",
+      "彼氏",
+      "の",
+      "誕生日",
+      "な",
+      "の",
+      "。",
+      "サプライズ",
+      "を",
+      "あげ",
+      "たい",
+      "の",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "来月",
+        "pinyin": "らいげつ",
+        "meaning": "próximo mês"
+      },
+      {
+        "id": 2,
+        "word": "彼氏",
+        "pinyin": "かれし",
+        "meaning": "namorado"
+      },
+      {
+        "id": 3,
+        "word": "誕生日",
+        "pinyin": "たんじょうび",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "サプライズ",
+        "pinyin": "さぷらいず",
+        "meaning": "surpresa"
+      },
+      {
+        "id": 5,
+        "word": "あげる",
+        "pinyin": "あげる",
+        "meaning": "dar"
+      }
+    ],
+    "id": "local-1772296683413-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "どんなケーキを作りたいの？",
+    "pinyin": null,
+    "translation": "B: Que tipo de bolo você quer fazer?",
+    "tokens": [
+      "どんな",
+      "ケーキ",
+      "を",
+      "作り",
+      "たい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "どんな",
+        "pinyin": "どんな",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 2,
+        "word": "ケーキ",
+        "pinyin": "けーき",
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "作る",
+        "pinyin": "つくる",
+        "meaning": "fazer, preparar"
+      }
+    ],
+    "id": "local-1772296683413-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "簡単なのがいいな。",
+    "pinyin": null,
+    "translation": "A: Eu gostaria de um fácil.",
+    "tokens": [
+      "簡単",
+      "な",
+      "の",
+      "が",
+      "いい",
+      "な",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "簡単",
+        "pinyin": "かんたん",
+        "meaning": "fácil, simples"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "いい",
+        "meaning": "bom, ok"
+      }
+    ],
+    "id": "local-1772296683413-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "じゃあ、シフォンケーキにしよう。シフォンケーキは軽くて、ジャムを塗って食べられるよ。誕生日ケーキにもなるし、基本的なケーキだよ。",
+    "pinyin": null,
+    "translation": "B: Então, vamos fazer um bolo chiffon. O bolo chiffon é leve e pode ser comido com geleia. Ele também pode ser um bolo de aniversário, e é um bolo básico.",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "シフォンケーキ",
+      "に",
+      "しよう",
+      "。",
+      "シフォンケーキ",
+      "は",
+      "軽く",
+      "て",
+      "、",
+      "ジャム",
+      "を",
+      "塗っ",
+      "て",
+      "食べ",
+      "られる",
+      "よ",
+      "。",
+      "誕生日",
+      "ケーキ",
+      "に",
+      "も",
+      "なる",
+      "し",
+      "、",
+      "基本",
+      "的",
+      "な",
+      "ケーキ",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "じゃあ",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "シフォンケーキ",
+        "pinyin": "しふぉんけーき",
+        "meaning": "bolo chiffon"
+      },
+      {
+        "id": 3,
+        "word": "する",
+        "pinyin": "する",
+        "meaning": "fazer (しよう - vamos fazer)"
+      },
+      {
+        "id": 4,
+        "word": "軽い",
+        "pinyin": "かるい",
+        "meaning": "leve"
+      },
+      {
+        "id": 5,
+        "word": "ジャム",
+        "pinyin": "じゃむ",
+        "meaning": "geleia"
+      },
+      {
+        "id": 6,
+        "word": "塗る",
+        "pinyin": "ぬる",
+        "meaning": "passar, espalhar"
+      },
+      {
+        "id": 7,
+        "word": "食べる",
+        "pinyin": "たべる",
+        "meaning": "comer"
+      },
+      {
+        "id": 8,
+        "word": "誕生日ケーキ",
+        "pinyin": "たんじょうびけーき",
+        "meaning": "bolo de aniversário"
+      },
+      {
+        "id": 9,
+        "word": "なる",
+        "pinyin": "なる",
+        "meaning": "tornar-se, virar"
+      },
+      {
+        "id": 10,
+        "word": "基本",
+        "pinyin": "きほん",
+        "meaning": "básico"
+      },
+      {
+        "id": 11,
+        "word": "ケーキ",
+        "pinyin": "けーき",
+        "meaning": "bolo"
+      }
+    ],
+    "id": "local-1772296683413-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "わかった、わかった。何を用意すればいい？",
+    "pinyin": null,
+    "translation": "A: Entendi, entendi. O que devo preparar?",
+    "tokens": [
+      "わかっ",
+      "た",
+      "、",
+      "わかっ",
+      "た",
+      "。",
+      "何",
+      "を",
+      "用意",
+      "すれ",
+      "ば",
+      "いい",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": "わかる",
+        "meaning": "entender"
+      },
+      {
+        "id": 2,
+        "word": "何",
+        "pinyin": "なに",
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "用意する",
+        "pinyin": "よういする",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772296683413-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "材料を買ってきてね。薄力粉100g、卵5個、油40g、グラニュー糖70g、牛乳40g。",
+    "pinyin": null,
+    "translation": "B: Por favor, compre os ingredientes. 100g de farinha de trigo, 5 ovos, 40g de óleo, 70g de açúcar granulado, 40g de leite.",
+    "tokens": [
+      "材料",
+      "を",
+      "買っ",
+      "て",
+      "き",
+      "て",
+      "ね",
+      "。",
+      "薄力粉",
+      "100g",
+      "、",
+      "卵",
+      "5",
+      "個",
+      "、",
+      "油",
+      "40g",
+      "、",
+      "グラニュー糖",
+      "70g",
+      "、",
+      "牛乳",
+      "40g",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "材料",
+        "pinyin": "ざいりょう",
+        "meaning": "ingredientes"
+      },
+      {
+        "id": 2,
+        "word": "買う",
+        "pinyin": "かう",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "薄力粉",
+        "pinyin": "はくりきこ",
+        "meaning": "farinha de trigo (com baixo teor de glúten)"
+      },
+      {
+        "id": 4,
+        "word": "卵",
+        "pinyin": "たまご",
+        "meaning": "ovo"
+      },
+      {
+        "id": 5,
+        "word": "個",
+        "pinyin": "こ",
+        "meaning": "contador para pequenos objetos"
+      },
+      {
+        "id": 6,
+        "word": "油",
+        "pinyin": "あぶら",
+        "meaning": "óleo"
+      },
+      {
+        "id": 7,
+        "word": "グラニュー糖",
+        "pinyin": "ぐらにゅーとう",
+        "meaning": "açúcar granulado"
+      },
+      {
+        "id": 8,
+        "word": "牛乳",
+        "pinyin": "ぎゅうにゅう",
+        "meaning": "leite"
+      }
+    ],
+    "id": "local-1772296683413-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "道具は何がいる？",
+    "pinyin": null,
+    "translation": "A: Quais ferramentas são necessárias?",
+    "tokens": [
+      "道具",
+      "は",
+      "何",
+      "が",
+      "いる",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "道具",
+        "pinyin": "どうぐ",
+        "meaning": "ferramentas, utensílios"
+      },
+      {
+        "id": 2,
+        "word": "何",
+        "pinyin": "なに",
+        "meaning": "o que"
+      },
+      {
+        "id": 3,
+        "word": "いる",
+        "pinyin": "いる",
+        "meaning": "ser necessário, precisar"
+      }
+    ],
+    "id": "local-1772296683413-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "泡立て器とオーブンと8インチのケーキ型。",
+    "pinyin": null,
+    "translation": "B: Um batedor, um forno e uma forma de bolo de 8 polegadas.",
+    "tokens": [
+      "泡立て器",
+      "と",
+      "オーブン",
+      "と",
+      "8",
+      "インチ",
+      "の",
+      "ケーキ型",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "泡立て器",
+        "pinyin": "あわだてき",
+        "meaning": "batedor de claras, fouet"
+      },
+      {
+        "id": 2,
+        "word": "オーブン",
+        "pinyin": "おーぶん",
+        "meaning": "forno"
+      },
+      {
+        "id": 3,
+        "word": "インチ",
+        "pinyin": "いんち",
+        "meaning": "polegada"
+      },
+      {
+        "id": 4,
+        "word": "ケーキ型",
+        "pinyin": "けーきがた",
+        "meaning": "forma de bolo"
+      }
+    ],
+    "id": "local-1772296683413-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "わかった。仕事の後、買いに行くね。",
+    "pinyin": null,
+    "translation": "A: Entendi. Depois do trabalho, irei comprar.",
+    "tokens": [
+      "わかっ",
+      "た",
+      "。",
+      "仕事",
+      "の",
+      "後",
+      "、",
+      "買い",
+      "に",
+      "行く",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": "わかる",
+        "meaning": "entender"
+      },
+      {
+        "id": 2,
+        "word": "仕事",
+        "pinyin": "しごと",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "後",
+        "pinyin": "あと",
+        "meaning": "depois"
+      },
+      {
+        "id": 4,
+        "word": "買いに行く",
+        "pinyin": "かいにいく",
+        "meaning": "ir comprar"
+      }
+    ],
+    "id": "local-1772296683413-10",
+    "language": "Japonês"
+  }
+]

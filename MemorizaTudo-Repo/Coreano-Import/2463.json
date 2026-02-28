@@ -1,0 +1,761 @@
+[
+  {
+    "chinese": "A: 안녕하세요, 무엇을 도와드릴까요?",
+    "pinyin": null,
+    "translation": "A: Olá, em que posso ajudar?",
+    "tokens": [
+      "안녕하세요",
+      ",",
+      "무엇을",
+      "도와드릴까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안녕하세요",
+        "pinyin": null,
+        "meaning": "Olá / Bom dia / Boa tarde / Boa noite"
+      },
+      {
+        "id": 2,
+        "word": "무엇",
+        "pinyin": null,
+        "meaning": "O que"
+      },
+      {
+        "id": 3,
+        "word": "도와드리다",
+        "pinyin": null,
+        "meaning": "Ajudar (forma honorífica)"
+      }
+    ],
+    "id": "local-1772299406733-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 안경을 맞추고 싶어요.",
+    "pinyin": null,
+    "translation": "B: Gostaria de fazer óculos.",
+    "tokens": [
+      "안경을",
+      "맞추고",
+      "싶어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안경",
+        "pinyin": null,
+        "meaning": "Óculos"
+      },
+      {
+        "id": 2,
+        "word": "맞추다",
+        "pinyin": null,
+        "meaning": "Ajustar, fazer sob medida"
+      },
+      {
+        "id": 3,
+        "word": "~고 싶다",
+        "pinyin": null,
+        "meaning": "Querer fazer algo"
+      }
+    ],
+    "id": "local-1772299406733-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 근시 안경, 일반 안경 또는 돋보기요?",
+    "pinyin": null,
+    "translation": "A: Óculos para miopia, óculos normais ou lupa?",
+    "tokens": [
+      "근시",
+      "안경",
+      ",",
+      "일반",
+      "안경",
+      "또는",
+      "돋보기요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "근시",
+        "pinyin": null,
+        "meaning": "Miopia"
+      },
+      {
+        "id": 2,
+        "word": "안경",
+        "pinyin": null,
+        "meaning": "Óculos"
+      },
+      {
+        "id": 3,
+        "word": "일반",
+        "pinyin": null,
+        "meaning": "Normal, geral"
+      },
+      {
+        "id": 4,
+        "word": "또는",
+        "pinyin": null,
+        "meaning": "Ou"
+      },
+      {
+        "id": 5,
+        "word": "돋보기",
+        "pinyin": null,
+        "meaning": "Lupa, óculos de leitura"
+      }
+    ],
+    "id": "local-1772299406733-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 난시 있는 근시 안경이요.",
+    "pinyin": null,
+    "translation": "B: Óculos para miopia com astigmatismo.",
+    "tokens": [
+      "난시",
+      "있는",
+      "근시",
+      "안경이요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "난시",
+        "pinyin": null,
+        "meaning": "Astigmatismo"
+      },
+      {
+        "id": 2,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "Ter, existir"
+      },
+      {
+        "id": 3,
+        "word": "근시",
+        "pinyin": null,
+        "meaning": "Miopia"
+      },
+      {
+        "id": 4,
+        "word": "안경",
+        "pinyin": null,
+        "meaning": "Óculos"
+      }
+    ],
+    "id": "local-1772299406733-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이쪽에 있는 테 중에서 자유롭게 고르시면 됩니다. 선택하신 후에 결제하시고 저쪽에서 시력 검사를 받으시면 됩니다.",
+    "pinyin": null,
+    "translation": "A: Pode escolher livremente entre as armações deste lado. Após escolher, faça o pagamento e faça o exame de vista daquele lado.",
+    "tokens": [
+      "이쪽에",
+      "있는",
+      "테",
+      "중에서",
+      "자유롭게",
+      "고르시면",
+      "됩니다",
+      ".",
+      "선택하신",
+      "후에",
+      "결제하시고",
+      "저쪽에서",
+      "시력",
+      "검사를",
+      "받으시면",
+      "됩니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이쪽",
+        "pinyin": null,
+        "meaning": "Este lado/direção"
+      },
+      {
+        "id": 2,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "Estar, existir, ter"
+      },
+      {
+        "id": 3,
+        "word": "테",
+        "pinyin": null,
+        "meaning": "Armação (de óculos)"
+      },
+      {
+        "id": 4,
+        "word": "중에서",
+        "pinyin": null,
+        "meaning": "Entre, dentre"
+      },
+      {
+        "id": 5,
+        "word": "자유롭게",
+        "pinyin": null,
+        "meaning": "Livremente"
+      },
+      {
+        "id": 6,
+        "word": "고르다",
+        "pinyin": null,
+        "meaning": "Escolher"
+      },
+      {
+        "id": 7,
+        "word": "~면 되다",
+        "pinyin": null,
+        "meaning": "Pode fazer, basta fazer"
+      },
+      {
+        "id": 8,
+        "word": "선택하다",
+        "pinyin": null,
+        "meaning": "Selecionar, escolher"
+      },
+      {
+        "id": 9,
+        "word": "~후에",
+        "pinyin": null,
+        "meaning": "Depois de"
+      },
+      {
+        "id": 10,
+        "word": "결제하다",
+        "pinyin": null,
+        "meaning": "Pagar"
+      },
+      {
+        "id": 11,
+        "word": "저쪽",
+        "pinyin": null,
+        "meaning": "Aquele lado/direção"
+      },
+      {
+        "id": 12,
+        "word": "시력",
+        "pinyin": null,
+        "meaning": "Visão, acuidade visual"
+      },
+      {
+        "id": 13,
+        "word": "검사",
+        "pinyin": null,
+        "meaning": "Exame, teste"
+      },
+      {
+        "id": 14,
+        "word": "받다",
+        "pinyin": null,
+        "meaning": "Receber"
+      }
+    ],
+    "id": "local-1772299406733-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 한 쌍에 얼마인가요?",
+    "pinyin": null,
+    "translation": "B: Entendido. Quanto custa um par?",
+    "tokens": [
+      "알겠습니다",
+      ".",
+      "한",
+      "쌍에",
+      "얼마인가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알겠습니다",
+        "pinyin": null,
+        "meaning": "Entendido, Certo"
+      },
+      {
+        "id": 2,
+        "word": "한",
+        "pinyin": null,
+        "meaning": "Um(a)"
+      },
+      {
+        "id": 3,
+        "word": "쌍",
+        "pinyin": null,
+        "meaning": "Par"
+      },
+      {
+        "id": 4,
+        "word": "얼마",
+        "pinyin": null,
+        "meaning": "Quanto (preço)"
+      }
+    ],
+    "id": "local-1772299406733-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 3가지 패키지 가격이 있습니다: 399, 599, 799. 렌즈, 테, 안경 케이스, 그리고 닦는 천이 포함되어 있습니다.",
+    "pinyin": null,
+    "translation": "A: Existem 3 tipos de pacotes: 399, 599, 799. Lentes, armação, estojo de óculos e pano de limpeza estão incluídos.",
+    "tokens": [
+      "3가지",
+      "패키지",
+      "가격이",
+      "있습니다",
+      ":",
+      "399",
+      ",",
+      "599",
+      ",",
+      "799",
+      ".",
+      "렌즈",
+      ",",
+      "테",
+      ",",
+      "안경",
+      "케이스",
+      ",",
+      "그리고",
+      "닦는",
+      "천이",
+      "포함되어",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "가지",
+        "pinyin": null,
+        "meaning": "Tipo, espécie (contador)"
+      },
+      {
+        "id": 2,
+        "word": "패키지",
+        "pinyin": null,
+        "meaning": "Pacote"
+      },
+      {
+        "id": 3,
+        "word": "가격",
+        "pinyin": null,
+        "meaning": "Preço"
+      },
+      {
+        "id": 4,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "Ter, existir"
+      },
+      {
+        "id": 5,
+        "word": "렌즈",
+        "pinyin": null,
+        "meaning": "Lente"
+      },
+      {
+        "id": 6,
+        "word": "테",
+        "pinyin": null,
+        "meaning": "Armação"
+      },
+      {
+        "id": 7,
+        "word": "안경 케이스",
+        "pinyin": null,
+        "meaning": "Estojo de óculos"
+      },
+      {
+        "id": 8,
+        "word": "그리고",
+        "pinyin": null,
+        "meaning": "E (conjunção)"
+      },
+      {
+        "id": 9,
+        "word": "닦다",
+        "pinyin": null,
+        "meaning": "Limpar, esfregar"
+      },
+      {
+        "id": 10,
+        "word": "천",
+        "pinyin": null,
+        "meaning": "Pano"
+      },
+      {
+        "id": 11,
+        "word": "포함되다",
+        "pinyin": null,
+        "meaning": "Estar incluído"
+      }
+    ],
+    "id": "local-1772299406733-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 찾으러 올 때까지 얼마나 기다려야 하나요?",
+    "pinyin": null,
+    "translation": "B: Quanto tempo preciso esperar até vir buscar?",
+    "tokens": [
+      "찾으러",
+      "올",
+      "때까지",
+      "얼마나",
+      "기다려야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "찾다",
+        "pinyin": null,
+        "meaning": "Buscar, encontrar, procurar"
+      },
+      {
+        "id": 2,
+        "word": "~러 오다",
+        "pinyin": null,
+        "meaning": "Vir para (fazer algo)"
+      },
+      {
+        "id": 3,
+        "word": "~때까지",
+        "pinyin": null,
+        "meaning": "Até (quando)"
+      },
+      {
+        "id": 4,
+        "word": "얼마나",
+        "pinyin": null,
+        "meaning": "Quanto (tempo, quantidade)"
+      },
+      {
+        "id": 5,
+        "word": "기다리다",
+        "pinyin": null,
+        "meaning": "Esperar"
+      },
+      {
+        "id": 6,
+        "word": "~야 하다",
+        "pinyin": null,
+        "meaning": "Ter que fazer, dever fazer"
+      }
+    ],
+    "id": "local-1772299406733-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 시력 검사 후 한 시간입니다.",
+    "pinyin": null,
+    "translation": "A: Uma hora após o exame de vista.",
+    "tokens": [
+      "시력",
+      "검사",
+      "후",
+      "한",
+      "시간입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "시력",
+        "pinyin": null,
+        "meaning": "Visão, acuidade visual"
+      },
+      {
+        "id": 2,
+        "word": "검사",
+        "pinyin": null,
+        "meaning": "Exame, teste"
+      },
+      {
+        "id": 3,
+        "word": "후",
+        "pinyin": null,
+        "meaning": "Depois, após"
+      },
+      {
+        "id": 4,
+        "word": "한",
+        "pinyin": null,
+        "meaning": "Uma"
+      },
+      {
+        "id": 5,
+        "word": "시간",
+        "pinyin": null,
+        "meaning": "Hora, tempo"
+      }
+    ],
+    "id": "local-1772299406733-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 근시와 난시용이면서 선글라스 기능도 있는 렌즈가 있나요?",
+    "pinyin": null,
+    "translation": "B: Existe alguma lente para miopia e astigmatismo que também tenha função de óculos de sol?",
+    "tokens": [
+      "근시와",
+      "난시용이면서",
+      "선글라스",
+      "기능도",
+      "있는",
+      "렌즈가",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "근시",
+        "pinyin": null,
+        "meaning": "Miopia"
+      },
+      {
+        "id": 2,
+        "word": "난시",
+        "pinyin": null,
+        "meaning": "Astigmatismo"
+      },
+      {
+        "id": 3,
+        "word": "~용",
+        "pinyin": null,
+        "meaning": "Para uso em"
+      },
+      {
+        "id": 4,
+        "word": "~이면서",
+        "pinyin": null,
+        "meaning": "Sendo (algo) e ao mesmo tempo"
+      },
+      {
+        "id": 5,
+        "word": "선글라스",
+        "pinyin": null,
+        "meaning": "Óculos de sol"
+      },
+      {
+        "id": 6,
+        "word": "기능",
+        "pinyin": null,
+        "meaning": "Função"
+      },
+      {
+        "id": 7,
+        "word": "~도",
+        "pinyin": null,
+        "meaning": "Também, inclusive"
+      },
+      {
+        "id": 8,
+        "word": "렌즈",
+        "pinyin": null,
+        "meaning": "Lente"
+      },
+      {
+        "id": 9,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "Ter, existir"
+      }
+    ],
+    "id": "local-1772299406733-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 있지만, 그것은 특수 렌즈입니다. 패키지 가격은 없고 렌즈와 테를 따로 구매하셔야 합니다. 한 쌍에 천 이상입니다.",
+    "pinyin": null,
+    "translation": "A: Sim, mas são lentes especiais. Não há preço de pacote e você precisa comprar as lentes e a armação separadamente. Custa mais de mil por par.",
+    "tokens": [
+      "있지만",
+      ",",
+      "그것은",
+      "특수",
+      "렌즈입니다",
+      ".",
+      "패키지",
+      "가격은",
+      "없고",
+      "렌즈와",
+      "테를",
+      "따로",
+      "구매하셔야",
+      "합니다",
+      ".",
+      "한",
+      "쌍에",
+      "천",
+      "이상입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "Ter, existir"
+      },
+      {
+        "id": 2,
+        "word": "~지만",
+        "pinyin": null,
+        "meaning": "Mas, embora"
+      },
+      {
+        "id": 3,
+        "word": "그것",
+        "pinyin": null,
+        "meaning": "Aquilo, isso"
+      },
+      {
+        "id": 4,
+        "word": "특수",
+        "pinyin": null,
+        "meaning": "Especial"
+      },
+      {
+        "id": 5,
+        "word": "렌즈",
+        "pinyin": null,
+        "meaning": "Lente"
+      },
+      {
+        "id": 6,
+        "word": "패키지",
+        "pinyin": null,
+        "meaning": "Pacote"
+      },
+      {
+        "id": 7,
+        "word": "가격",
+        "pinyin": null,
+        "meaning": "Preço"
+      },
+      {
+        "id": 8,
+        "word": "없다",
+        "pinyin": null,
+        "meaning": "Não ter, não existir"
+      },
+      {
+        "id": 9,
+        "word": "테",
+        "pinyin": null,
+        "meaning": "Armação"
+      },
+      {
+        "id": 10,
+        "word": "따로",
+        "pinyin": null,
+        "meaning": "Separadamente"
+      },
+      {
+        "id": 11,
+        "word": "구매하다",
+        "pinyin": null,
+        "meaning": "Comprar"
+      },
+      {
+        "id": 12,
+        "word": "~야 하다",
+        "pinyin": null,
+        "meaning": "Ter que fazer, dever fazer"
+      },
+      {
+        "id": 13,
+        "word": "한",
+        "pinyin": null,
+        "meaning": "Um(a)"
+      },
+      {
+        "id": 14,
+        "word": "쌍",
+        "pinyin": null,
+        "meaning": "Par"
+      },
+      {
+        "id": 15,
+        "word": "천",
+        "pinyin": null,
+        "meaning": "Mil"
+      },
+      {
+        "id": 16,
+        "word": "이상",
+        "pinyin": null,
+        "meaning": "Mais de, acima de"
+      }
+    ],
+    "id": "local-1772299406733-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 비싸네요! 399짜리 보는 게 좋겠어요.",
+    "pinyin": null,
+    "translation": "B: É caro! Acho que seria melhor ver o de 399.",
+    "tokens": [
+      "비싸네요",
+      "!",
+      "399짜리",
+      "보는",
+      "게",
+      "좋겠어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "비싸다",
+        "pinyin": null,
+        "meaning": "Ser caro"
+      },
+      {
+        "id": 2,
+        "word": "~네요",
+        "pinyin": null,
+        "meaning": "Partícula de surpresa/descoberta"
+      },
+      {
+        "id": 3,
+        "word": "~짜리",
+        "pinyin": null,
+        "meaning": "No valor de, de (preço)"
+      },
+      {
+        "id": 4,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "Ver, olhar"
+      },
+      {
+        "id": 5,
+        "word": "~는 게 좋다",
+        "pinyin": null,
+        "meaning": "Ser melhor fazer"
+      }
+    ],
+    "id": "local-1772299406733-11",
+    "language": "Coreano"
+  }
+]

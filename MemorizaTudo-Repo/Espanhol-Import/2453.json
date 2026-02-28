@@ -1,0 +1,948 @@
+[
+  {
+    "chinese": "A: ¡Los hoteles son tan caros!",
+    "pinyin": "",
+    "translation": "A: Os hotéis são tão caros!",
+    "tokens": [
+      "¡",
+      "Los",
+      "hoteles",
+      "son",
+      "tan",
+      "caros",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hoteles",
+        "pinyin": "",
+        "meaning": "hotéis"
+      },
+      {
+        "id": 2,
+        "word": "caros",
+        "pinyin": "",
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772298435069-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Quieres ir de viaje?",
+    "pinyin": "",
+    "translation": "B: Você quer viajar?",
+    "tokens": [
+      "¿",
+      "Quieres",
+      "ir",
+      "de",
+      "viaje",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quieres",
+        "pinyin": "",
+        "meaning": "Você quer"
+      },
+      {
+        "id": 2,
+        "word": "ir de viaje",
+        "pinyin": "",
+        "meaning": "viajar"
+      }
+    ],
+    "id": "local-1772298435069-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. Estoy planeando viajar a Nueva York por diversión durante el verano.",
+    "pinyin": "",
+    "translation": "A: Sim. Estou planejando viajar para Nova York por diversão durante o verão.",
+    "tokens": [
+      "Sí",
+      ".",
+      "Estoy",
+      "planeando",
+      "viajar",
+      "a",
+      "Nueva",
+      "York",
+      "por",
+      "diversión",
+      "durante",
+      "el",
+      "verano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Estoy planeando",
+        "pinyin": "",
+        "meaning": "Estou planejando"
+      },
+      {
+        "id": 3,
+        "word": "viajar",
+        "pinyin": "",
+        "meaning": "viajar"
+      },
+      {
+        "id": 4,
+        "word": "Nueva York",
+        "pinyin": "",
+        "meaning": "Nova York"
+      },
+      {
+        "id": 5,
+        "word": "por diversión",
+        "pinyin": "",
+        "meaning": "por diversão"
+      },
+      {
+        "id": 6,
+        "word": "durante",
+        "pinyin": "",
+        "meaning": "durante"
+      },
+      {
+        "id": 7,
+        "word": "verano",
+        "pinyin": "",
+        "meaning": "verão"
+      }
+    ],
+    "id": "local-1772298435069-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Pero, ¿cómo pueden ser los hoteles tan caros?",
+    "pinyin": "",
+    "translation": "Mas, como os hotéis podem ser tão caros?",
+    "tokens": [
+      "Pero",
+      ",",
+      "¿",
+      "cómo",
+      "pueden",
+      "ser",
+      "los",
+      "hoteles",
+      "tan",
+      "caros",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "cómo",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "pueden ser",
+        "pinyin": "",
+        "meaning": "podem ser"
+      },
+      {
+        "id": 4,
+        "word": "hoteles",
+        "pinyin": "",
+        "meaning": "hotéis"
+      },
+      {
+        "id": 5,
+        "word": "caros",
+        "pinyin": "",
+        "meaning": "caros"
+      }
+    ],
+    "id": "local-1772298435069-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Quizás deberías buscar en Airbnb?",
+    "pinyin": "",
+    "translation": "B: Talvez você devesse procurar no Airbnb?",
+    "tokens": [
+      "¿",
+      "Quizás",
+      "deberías",
+      "buscar",
+      "en",
+      "Airbnb",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quizás",
+        "pinyin": "",
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "deberías",
+        "pinyin": "",
+        "meaning": "você deveria"
+      },
+      {
+        "id": 3,
+        "word": "buscar",
+        "pinyin": "",
+        "meaning": "procurar"
+      }
+    ],
+    "id": "local-1772298435069-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Qué es eso?",
+    "pinyin": "",
+    "translation": "A: O que é isso?",
+    "tokens": [
+      "¿",
+      "Qué",
+      "es",
+      "eso",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué",
+        "pinyin": "",
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "eso",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1772298435069-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es un sitio de internet que te permite reservar habitaciones.",
+    "pinyin": "",
+    "translation": "B: É um site de internet que te permite reservar quartos.",
+    "tokens": [
+      "Es",
+      "un",
+      "sitio",
+      "de",
+      "internet",
+      "que",
+      "te",
+      "permite",
+      "reservar",
+      "habitaciones",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sitio de internet",
+        "pinyin": "",
+        "meaning": "site de internet"
+      },
+      {
+        "id": 2,
+        "word": "permite",
+        "pinyin": "",
+        "meaning": "permite"
+      },
+      {
+        "id": 3,
+        "word": "reservar",
+        "pinyin": "",
+        "meaning": "reservar"
+      },
+      {
+        "id": 4,
+        "word": "habitaciones",
+        "pinyin": "",
+        "meaning": "quartos"
+      }
+    ],
+    "id": "local-1772298435069-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Sin embargo, no son hoteles, son solo habitaciones en casas de personas.",
+    "pinyin": "",
+    "translation": "No entanto, não são hotéis, são apenas quartos em casas de pessoas.",
+    "tokens": [
+      "Sin",
+      "embargo",
+      ",",
+      "no",
+      "son",
+      "hoteles",
+      ",",
+      "son",
+      "solo",
+      "habitaciones",
+      "en",
+      "casas",
+      "de",
+      "personas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sin embargo",
+        "pinyin": "",
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "hoteles",
+        "pinyin": "",
+        "meaning": "hotéis"
+      },
+      {
+        "id": 3,
+        "word": "habitaciones",
+        "pinyin": "",
+        "meaning": "quartos"
+      },
+      {
+        "id": 4,
+        "word": "casas",
+        "pinyin": "",
+        "meaning": "casas"
+      },
+      {
+        "id": 5,
+        "word": "personas",
+        "pinyin": "",
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772298435069-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "El propietario alquila sus propias habitaciones libres y gana un poco de dinero.",
+    "pinyin": "",
+    "translation": "O proprietário aluga seus próprios quartos vagos e ganha um pouco de dinheiro.",
+    "tokens": [
+      "El",
+      "propietario",
+      "alquila",
+      "sus",
+      "propias",
+      "habitaciones",
+      "libres",
+      "y",
+      "gana",
+      "un",
+      "poco",
+      "de",
+      "dinero",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "propietario",
+        "pinyin": "",
+        "meaning": "proprietário"
+      },
+      {
+        "id": 2,
+        "word": "alquila",
+        "pinyin": "",
+        "meaning": "aluga"
+      },
+      {
+        "id": 3,
+        "word": "propias",
+        "pinyin": "",
+        "meaning": "próprias"
+      },
+      {
+        "id": 4,
+        "word": "habitaciones libres",
+        "pinyin": "",
+        "meaning": "quartos vagos"
+      },
+      {
+        "id": 5,
+        "word": "gana",
+        "pinyin": "",
+        "meaning": "ganha"
+      },
+      {
+        "id": 6,
+        "word": "un poco de dinero",
+        "pinyin": "",
+        "meaning": "um pouco de dinheiro"
+      }
+    ],
+    "id": "local-1772298435069-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Ya veo. ¡Oye, hay muchos!",
+    "pinyin": "",
+    "translation": "A: Já entendi. Ei, há muitos!",
+    "tokens": [
+      "Ya",
+      "veo",
+      ".",
+      "¡",
+      "Oye",
+      ",",
+      "hay",
+      "muchos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ya veo",
+        "pinyin": "",
+        "meaning": "Já entendi"
+      },
+      {
+        "id": 2,
+        "word": "Oye",
+        "pinyin": "",
+        "meaning": "Ei"
+      },
+      {
+        "id": 3,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há"
+      },
+      {
+        "id": 4,
+        "word": "muchos",
+        "pinyin": "",
+        "meaning": "muitos"
+      }
+    ],
+    "id": "local-1772298435069-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Esto se ve bastante bien.",
+    "pinyin": "",
+    "translation": "Isso parece muito bom.",
+    "tokens": [
+      "Esto",
+      "se",
+      "ve",
+      "bastante",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esto",
+        "pinyin": "",
+        "meaning": "Isto"
+      },
+      {
+        "id": 2,
+        "word": "se ve",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 3,
+        "word": "bastante bien",
+        "pinyin": "",
+        "meaning": "muito bom"
+      }
+    ],
+    "id": "local-1772298435069-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Un poco más de 600 RMB por noche.",
+    "pinyin": "",
+    "translation": "Um pouco mais de 600 RMB por noite.",
+    "tokens": [
+      "Un",
+      "poco",
+      "más",
+      "de",
+      "600",
+      "RMB",
+      "por",
+      "noche",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "un poco más",
+        "pinyin": "",
+        "meaning": "um pouco mais"
+      },
+      {
+        "id": 2,
+        "word": "por noche",
+        "pinyin": "",
+        "meaning": "por noite"
+      }
+    ],
+    "id": "local-1772298435069-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "También tiene cocina, así puedo cocinar para mí.",
+    "pinyin": "",
+    "translation": "Também tem cozinha, assim posso cozinhar para mim.",
+    "tokens": [
+      "También",
+      "tiene",
+      "cocina",
+      ",",
+      "así",
+      "puedo",
+      "cocinar",
+      "para",
+      "mí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "También",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 2,
+        "word": "tiene",
+        "pinyin": "",
+        "meaning": "tem"
+      },
+      {
+        "id": 3,
+        "word": "cocina",
+        "pinyin": "",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 4,
+        "word": "así",
+        "pinyin": "",
+        "meaning": "assim"
+      },
+      {
+        "id": 5,
+        "word": "puedo cocinar",
+        "pinyin": "",
+        "meaning": "posso cozinhar"
+      },
+      {
+        "id": 6,
+        "word": "para mí",
+        "pinyin": "",
+        "meaning": "para mim"
+      }
+    ],
+    "id": "local-1772298435069-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sin embargo, esto no es un apartamento, es solo una habitación.",
+    "pinyin": "",
+    "translation": "B: No entanto, isso não é um apartamento, é apenas um quarto.",
+    "tokens": [
+      "Sin",
+      "embargo",
+      ",",
+      "esto",
+      "no",
+      "es",
+      "un",
+      "apartamento",
+      ",",
+      "es",
+      "solo",
+      "una",
+      "habitación",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sin embargo",
+        "pinyin": "",
+        "meaning": "No entanto"
+      },
+      {
+        "id": 2,
+        "word": "esto",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 3,
+        "word": "apartamento",
+        "pinyin": "",
+        "meaning": "apartamento"
+      },
+      {
+        "id": 4,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 5,
+        "word": "habitación",
+        "pinyin": "",
+        "meaning": "quarto"
+      }
+    ],
+    "id": "local-1772298435069-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Tienes que compartir la cocina y el baño con otros.",
+    "pinyin": "",
+    "translation": "Você tem que compartilhar a cozinha e o banheiro com outras pessoas.",
+    "tokens": [
+      "Tienes",
+      "que",
+      "compartir",
+      "la",
+      "cocina",
+      "y",
+      "el",
+      "baño",
+      "con",
+      "otros",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tienes que",
+        "pinyin": "",
+        "meaning": "Você tem que"
+      },
+      {
+        "id": 2,
+        "word": "compartir",
+        "pinyin": "",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 3,
+        "word": "cocina",
+        "pinyin": "",
+        "meaning": "cozinha"
+      },
+      {
+        "id": 4,
+        "word": "baño",
+        "pinyin": "",
+        "meaning": "banheiro"
+      },
+      {
+        "id": 5,
+        "word": "con otros",
+        "pinyin": "",
+        "meaning": "com outros"
+      }
+    ],
+    "id": "local-1772298435069-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh, eso no importa.",
+    "pinyin": "",
+    "translation": "A: Oh, isso não importa.",
+    "tokens": [
+      "Oh",
+      ",",
+      "eso",
+      "no",
+      "importa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "eso",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "no importa",
+        "pinyin": "",
+        "meaning": "não importa"
+      }
+    ],
+    "id": "local-1772298435069-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Pero, ¿es seguro quedarse con otras personas?",
+    "pinyin": "",
+    "translation": "Mas, é seguro ficar com outras pessoas?",
+    "tokens": [
+      "Pero",
+      ",",
+      "¿",
+      "es",
+      "seguro",
+      "quedarse",
+      "con",
+      "otras",
+      "personas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "seguro",
+        "pinyin": "",
+        "meaning": "seguro"
+      },
+      {
+        "id": 3,
+        "word": "quedarse",
+        "pinyin": "",
+        "meaning": "ficar"
+      },
+      {
+        "id": 4,
+        "word": "otras personas",
+        "pinyin": "",
+        "meaning": "outras pessoas"
+      }
+    ],
+    "id": "local-1772298435069-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Puedes mirar las reseñas.",
+    "pinyin": "",
+    "translation": "B: Você pode olhar as avaliações.",
+    "tokens": [
+      "Puedes",
+      "mirar",
+      "las",
+      "reseñas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Puedes",
+        "pinyin": "",
+        "meaning": "Você pode"
+      },
+      {
+        "id": 2,
+        "word": "mirar",
+        "pinyin": "",
+        "meaning": "olhar"
+      },
+      {
+        "id": 3,
+        "word": "reseñas",
+        "pinyin": "",
+        "meaning": "avaliações"
+      }
+    ],
+    "id": "local-1772298435069-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Están escritas por personas que se quedaron allí antes.",
+    "pinyin": "",
+    "translation": "Elas são escritas por pessoas que ficaram lá antes.",
+    "tokens": [
+      "Están",
+      "escritas",
+      "por",
+      "personas",
+      "que",
+      "se",
+      "quedaron",
+      "allí",
+      "antes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Están escritas",
+        "pinyin": "",
+        "meaning": "Estão escritas"
+      },
+      {
+        "id": 2,
+        "word": "personas",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 3,
+        "word": "se quedaron",
+        "pinyin": "",
+        "meaning": "ficaram"
+      },
+      {
+        "id": 4,
+        "word": "allí",
+        "pinyin": "",
+        "meaning": "lá"
+      },
+      {
+        "id": 5,
+        "word": "antes",
+        "pinyin": "",
+        "meaning": "antes"
+      }
+    ],
+    "id": "local-1772298435069-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Si muchas personas han comentado y las calificaciones son altas, no debería ser un problema.",
+    "pinyin": "",
+    "translation": "Se muitas pessoas comentaram e as avaliações são altas, não deveria ser um problema.",
+    "tokens": [
+      "Si",
+      "muchas",
+      "personas",
+      "han",
+      "comentado",
+      "y",
+      "las",
+      "calificaciones",
+      "son",
+      "altas",
+      ",",
+      "no",
+      "debería",
+      "ser",
+      "un",
+      "problema",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Si",
+        "pinyin": "",
+        "meaning": "Se"
+      },
+      {
+        "id": 2,
+        "word": "muchas personas",
+        "pinyin": "",
+        "meaning": "muitas pessoas"
+      },
+      {
+        "id": 3,
+        "word": "han comentado",
+        "pinyin": "",
+        "meaning": "comentaram"
+      },
+      {
+        "id": 4,
+        "word": "calificaciones",
+        "pinyin": "",
+        "meaning": "avaliações"
+      },
+      {
+        "id": 5,
+        "word": "altas",
+        "pinyin": "",
+        "meaning": "altas"
+      },
+      {
+        "id": 6,
+        "word": "no debería ser",
+        "pinyin": "",
+        "meaning": "não deveria ser"
+      },
+      {
+        "id": 7,
+        "word": "problema",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1772298435069-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Eso es genial. Seguiré buscando!",
+    "pinyin": "",
+    "translation": "A: Isso é ótimo. Continuarei procurando!",
+    "tokens": [
+      "¡",
+      "Eso",
+      "es",
+      "genial",
+      ".",
+      "Seguiré",
+      "buscando",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eso",
+        "pinyin": "",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "genial",
+        "pinyin": "",
+        "meaning": "ótimo"
+      },
+      {
+        "id": 3,
+        "word": "Seguiré buscando",
+        "pinyin": "",
+        "meaning": "Continuarei procurando"
+      }
+    ],
+    "id": "local-1772298435069-20",
+    "language": "Espanhol"
+  }
+]

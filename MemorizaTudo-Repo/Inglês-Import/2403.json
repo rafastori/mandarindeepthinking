@@ -1,0 +1,1264 @@
+[
+  {
+    "chinese": "A: Hey, what's the phone number to book a cab?",
+    "pinyin": null,
+    "translation": "A: Ei, qual é o número de telefone para reservar um táxi?",
+    "tokens": [
+      "A:",
+      "Hey",
+      ",",
+      "what's",
+      "the",
+      "phone",
+      "number",
+      "to",
+      "book",
+      "a",
+      "cab",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "phone number",
+        "pinyin": null,
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 2,
+        "word": "book a cab",
+        "pinyin": null,
+        "meaning": "reservar um táxi"
+      }
+    ],
+    "id": "local-1772292521584-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What? Who still uses the phone to book a cab nowadays?",
+    "pinyin": null,
+    "translation": "B: O quê? Quem ainda usa o telefone para reservar um táxi hoje em dia?",
+    "tokens": [
+      "B:",
+      "What",
+      "?",
+      "Who",
+      "still",
+      "uses",
+      "the",
+      "phone",
+      "to",
+      "book",
+      "a",
+      "cab",
+      "nowadays",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "uses the phone",
+        "pinyin": null,
+        "meaning": "usa o telefone"
+      },
+      {
+        "id": 2,
+        "word": "book a cab",
+        "pinyin": null,
+        "meaning": "reservar um táxi"
+      },
+      {
+        "id": 3,
+        "word": "nowadays",
+        "pinyin": null,
+        "meaning": "hoje em dia"
+      }
+    ],
+    "id": "local-1772292521584-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then how do you book one?",
+    "pinyin": null,
+    "translation": "A: Então como você reserva um?",
+    "tokens": [
+      "A:",
+      "Then",
+      "how",
+      "do",
+      "you",
+      "book",
+      "one",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "book one",
+        "pinyin": null,
+        "meaning": "reservar um"
+      }
+    ],
+    "id": "local-1772292521584-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Use taxi cab booking software.",
+    "pinyin": null,
+    "translation": "B: Use software de reserva de táxis.",
+    "tokens": [
+      "B:",
+      "Use",
+      "taxi",
+      "cab",
+      "booking",
+      "software",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "taxi cab booking software",
+        "pinyin": null,
+        "meaning": "software de reserva de táxis"
+      }
+    ],
+    "id": "local-1772292521584-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Download one to your phone and that should do it.",
+    "pinyin": null,
+    "translation": "Baixe um para o seu telefone e isso deve resolver.",
+    "tokens": [
+      "Download",
+      "one",
+      "to",
+      "your",
+      "phone",
+      "and",
+      "that",
+      "should",
+      "do",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "download",
+        "pinyin": null,
+        "meaning": "baixar"
+      },
+      {
+        "id": 2,
+        "word": "should do it",
+        "pinyin": null,
+        "meaning": "deve resolver"
+      }
+    ],
+    "id": "local-1772292521584-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh. Then what do you do?",
+    "pinyin": null,
+    "translation": "A: Ah. Então o que você faz?",
+    "tokens": [
+      "A:",
+      "Oh",
+      ".",
+      "Then",
+      "what",
+      "do",
+      "you",
+      "do",
+      "?"
+    ],
+    "keywords": [],
+    "id": "local-1772292521584-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Enter your phone number and you can register directly.",
+    "pinyin": null,
+    "translation": "B: Digite seu número de telefone e você pode se registrar diretamente.",
+    "tokens": [
+      "B:",
+      "Enter",
+      "your",
+      "phone",
+      "number",
+      "and",
+      "you",
+      "can",
+      "register",
+      "directly",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "enter",
+        "pinyin": null,
+        "meaning": "digitar"
+      },
+      {
+        "id": 2,
+        "word": "phone number",
+        "pinyin": null,
+        "meaning": "número de telefone"
+      },
+      {
+        "id": 3,
+        "word": "register directly",
+        "pinyin": null,
+        "meaning": "registrar diretamente"
+      }
+    ],
+    "id": "local-1772292521584-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then how do they know where I am?",
+    "pinyin": null,
+    "translation": "A: Então como eles sabem onde eu estou?",
+    "tokens": [
+      "A:",
+      "Then",
+      "how",
+      "do",
+      "they",
+      "know",
+      "where",
+      "I",
+      "am",
+      "?"
+    ],
+    "keywords": [],
+    "id": "local-1772292521584-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Through GPS they can find your location very quickly and a nearby cab will come by soon.",
+    "pinyin": null,
+    "translation": "B: Através do GPS eles podem encontrar sua localização muito rapidamente e um táxi próximo virá em breve.",
+    "tokens": [
+      "B:",
+      "Through",
+      "GPS",
+      "they",
+      "can",
+      "find",
+      "your",
+      "location",
+      "very",
+      "quickly",
+      "and",
+      "a",
+      "nearby",
+      "cab",
+      "will",
+      "come",
+      "by",
+      "soon",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "GPS",
+        "pinyin": null,
+        "meaning": "GPS"
+      },
+      {
+        "id": 2,
+        "word": "find your location",
+        "pinyin": null,
+        "meaning": "encontrar sua localização"
+      },
+      {
+        "id": 3,
+        "word": "nearby cab",
+        "pinyin": null,
+        "meaning": "táxi próximo"
+      }
+    ],
+    "id": "local-1772292521584-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Of course, you can also leave them a voice message.",
+    "pinyin": null,
+    "translation": "Claro, você também pode deixar uma mensagem de voz para eles.",
+    "tokens": [
+      "Of",
+      "course",
+      ",",
+      "you",
+      "can",
+      "also",
+      "leave",
+      "them",
+      "a",
+      "voice",
+      "message",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "voice message",
+        "pinyin": null,
+        "meaning": "mensagem de voz"
+      }
+    ],
+    "id": "local-1772292521584-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: It sounds pretty good.",
+    "pinyin": null,
+    "translation": "A: Parece muito bom.",
+    "tokens": [
+      "A:",
+      "It",
+      "sounds",
+      "pretty",
+      "good",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sounds pretty good",
+        "pinyin": null,
+        "meaning": "parece muito bom"
+      }
+    ],
+    "id": "local-1772292521584-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Have you used it?",
+    "pinyin": null,
+    "translation": "Você já usou?",
+    "tokens": [
+      "Have",
+      "you",
+      "used",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "used it",
+        "pinyin": null,
+        "meaning": "usou"
+      }
+    ],
+    "id": "local-1772292521584-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Of course.",
+    "pinyin": null,
+    "translation": "B: Claro.",
+    "tokens": [
+      "B:",
+      "Of",
+      "course",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772292521584-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's been raining a lot recently and it's been hard to get a cab.",
+    "pinyin": null,
+    "translation": "Tem chovido muito recentemente e tem sido difícil conseguir um táxi.",
+    "tokens": [
+      "It's",
+      "been",
+      "raining",
+      "a",
+      "lot",
+      "recently",
+      "and",
+      "it's",
+      "been",
+      "hard",
+      "to",
+      "get",
+      "a",
+      "cab",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "raining a lot",
+        "pinyin": null,
+        "meaning": "chovendo muito"
+      },
+      {
+        "id": 2,
+        "word": "recently",
+        "pinyin": null,
+        "meaning": "recentemente"
+      },
+      {
+        "id": 3,
+        "word": "hard to get a cab",
+        "pinyin": null,
+        "meaning": "difícil conseguir um táxi"
+      }
+    ],
+    "id": "local-1772292521584-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "This software is both convenient and fast.",
+    "pinyin": null,
+    "translation": "Este software é tanto conveniente quanto rápido.",
+    "tokens": [
+      "This",
+      "software",
+      "is",
+      "both",
+      "convenient",
+      "and",
+      "fast",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "convenient",
+        "pinyin": null,
+        "meaning": "conveniente"
+      },
+      {
+        "id": 2,
+        "word": "fast",
+        "pinyin": null,
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1772292521584-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I'll try it next time.",
+    "pinyin": null,
+    "translation": "A: Vou tentar na próxima vez.",
+    "tokens": [
+      "A:",
+      "I'll",
+      "try",
+      "it",
+      "next",
+      "time",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "next time",
+        "pinyin": null,
+        "meaning": "próxima vez"
+      }
+    ],
+    "id": "local-1772292521584-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "How do you pay?",
+    "pinyin": null,
+    "translation": "Como você paga?",
+    "tokens": [
+      "How",
+      "do",
+      "you",
+      "pay",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pay",
+        "pinyin": null,
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772292521584-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: You can use cash or your Alipay account on your phone.",
+    "pinyin": null,
+    "translation": "B: Você pode usar dinheiro ou sua conta Alipay no seu telefone.",
+    "tokens": [
+      "B:",
+      "You",
+      "can",
+      "use",
+      "cash",
+      "or",
+      "your",
+      "Alipay",
+      "account",
+      "on",
+      "your",
+      "phone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cash",
+        "pinyin": null,
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "Alipay account",
+        "pinyin": null,
+        "meaning": "conta Alipay"
+      }
+    ],
+    "id": "local-1772292521584-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Sometimes you can also save five kuai if you do.",
+    "pinyin": null,
+    "translation": "Às vezes você também pode economizar cinco kuai se o fizer.",
+    "tokens": [
+      "Sometimes",
+      "you",
+      "can",
+      "also",
+      "save",
+      "five",
+      "kuai",
+      "if",
+      "you",
+      "do",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "save",
+        "pinyin": null,
+        "meaning": "economizar"
+      },
+      {
+        "id": 2,
+        "word": "five kuai",
+        "pinyin": null,
+        "meaning": "cinco kuai (unidade monetária chinesa)"
+      }
+    ],
+    "id": "local-1772292521584-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Really? Then I'm going to use it now!",
+    "pinyin": null,
+    "translation": "A: Sério? Então vou usar agora!",
+    "tokens": [
+      "A:",
+      "Really",
+      "?",
+      "Then",
+      "I'm",
+      "going",
+      "to",
+      "use",
+      "it",
+      "now",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "really",
+        "pinyin": null,
+        "meaning": "sério"
+      },
+      {
+        "id": 2,
+        "word": "use it now",
+        "pinyin": null,
+        "meaning": "usar agora"
+      }
+    ],
+    "id": "local-1772292521584-19",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Spin, jump, slide.",
+    "pinyin": null,
+    "translation": "A: Gira, salta, desliza.",
+    "tokens": [
+      "A:",
+      "Spin",
+      ",",
+      "jump",
+      ",",
+      "slide",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "spin",
+        "pinyin": null,
+        "meaning": "girar"
+      },
+      {
+        "id": 2,
+        "word": "jump",
+        "pinyin": null,
+        "meaning": "saltar"
+      },
+      {
+        "id": 3,
+        "word": "slide",
+        "pinyin": null,
+        "meaning": "deslizar"
+      }
+    ],
+    "id": "local-1772292521584-20",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Wow, Kim Yuna's movements are really beautiful.",
+    "pinyin": null,
+    "translation": "Uau, os movimentos de Kim Yuna são realmente lindos.",
+    "tokens": [
+      "Wow",
+      ",",
+      "Kim",
+      "Yuna's",
+      "movements",
+      "are",
+      "really",
+      "beautiful",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "movements",
+        "pinyin": null,
+        "meaning": "movimentos"
+      },
+      {
+        "id": 2,
+        "word": "beautiful",
+        "pinyin": null,
+        "meaning": "lindos"
+      }
+    ],
+    "id": "local-1772292521584-21",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Are you watching the Winter Olympic figure skating competition?",
+    "pinyin": null,
+    "translation": "B: Você está assistindo à competição de patinação artística dos Jogos Olímpicos de Inverno?",
+    "tokens": [
+      "B:",
+      "Are",
+      "you",
+      "watching",
+      "the",
+      "Winter",
+      "Olympic",
+      "figure",
+      "skating",
+      "competition",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Winter Olympic",
+        "pinyin": null,
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 2,
+        "word": "figure skating competition",
+        "pinyin": null,
+        "meaning": "competição de patinação artística"
+      }
+    ],
+    "id": "local-1772292521584-22",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Oh, this is that young Korean prodigy.",
+    "pinyin": null,
+    "translation": "Ah, esta é aquela jovem prodígio coreana.",
+    "tokens": [
+      "Oh",
+      ",",
+      "this",
+      "is",
+      "that",
+      "young",
+      "Korean",
+      "prodigy",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "young",
+        "pinyin": null,
+        "meaning": "jovem"
+      },
+      {
+        "id": 2,
+        "word": "Korean prodigy",
+        "pinyin": null,
+        "meaning": "prodígio coreana"
+      }
+    ],
+    "id": "local-1772292521584-23",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yeah. Look how beautiful her movements are!",
+    "pinyin": null,
+    "translation": "A: Sim. Olhe como os movimentos dela são lindos!",
+    "tokens": [
+      "A:",
+      "Yeah",
+      ".",
+      "Look",
+      "how",
+      "beautiful",
+      "her",
+      "movements",
+      "are",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "beautiful movements",
+        "pinyin": null,
+        "meaning": "movimentos lindos"
+      }
+    ],
+    "id": "local-1772292521584-24",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But this Winter Olympics, she didn't get the gold medal.",
+    "pinyin": null,
+    "translation": "B: Mas nestes Jogos Olímpicos de Inverno, ela não ganhou a medalha de ouro.",
+    "tokens": [
+      "B:",
+      "But",
+      "this",
+      "Winter",
+      "Olympics",
+      ",",
+      "she",
+      "didn't",
+      "get",
+      "the",
+      "gold",
+      "medal",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Winter Olympics",
+        "pinyin": null,
+        "meaning": "Olimpíadas de Inverno"
+      },
+      {
+        "id": 2,
+        "word": "gold medal",
+        "pinyin": null,
+        "meaning": "medalha de ouro"
+      }
+    ],
+    "id": "local-1772292521584-25",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I think four years ago at the Vancouver Olympics she was at her peak.",
+    "pinyin": null,
+    "translation": "Eu acho que quatro anos atrás, nas Olimpíadas de Vancouver, ela estava no seu auge.",
+    "tokens": [
+      "I",
+      "think",
+      "four",
+      "years",
+      "ago",
+      "at",
+      "the",
+      "Vancouver",
+      "Olympics",
+      "she",
+      "was",
+      "at",
+      "her",
+      "peak",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "four years ago",
+        "pinyin": null,
+        "meaning": "quatro anos atrás"
+      },
+      {
+        "id": 2,
+        "word": "Vancouver Olympics",
+        "pinyin": null,
+        "meaning": "Olimpíadas de Vancouver"
+      },
+      {
+        "id": 3,
+        "word": "at her peak",
+        "pinyin": null,
+        "meaning": "no auge"
+      }
+    ],
+    "id": "local-1772292521584-26",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: In my mind, she will always be the Queen of the Ice!",
+    "pinyin": null,
+    "translation": "A: Na minha opinião, ela sempre será a Rainha do Gelo!",
+    "tokens": [
+      "A:",
+      "In",
+      "my",
+      "mind",
+      ",",
+      "she",
+      "will",
+      "always",
+      "be",
+      "the",
+      "Queen",
+      "of",
+      "the",
+      "Ice",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "in my mind",
+        "pinyin": null,
+        "meaning": "na minha opinião"
+      },
+      {
+        "id": 2,
+        "word": "Queen of the Ice",
+        "pinyin": null,
+        "meaning": "Rainha do Gelo"
+      }
+    ],
+    "id": "local-1772292521584-27",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Although she didn't get gold this time, her performance was still remarkable.",
+    "pinyin": null,
+    "translation": "Embora ela não tenha ganhado ouro desta vez, sua performance ainda foi notável.",
+    "tokens": [
+      "Although",
+      "she",
+      "didn't",
+      "get",
+      "gold",
+      "this",
+      "time",
+      ",",
+      "her",
+      "performance",
+      "was",
+      "still",
+      "remarkable",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "get gold",
+        "pinyin": null,
+        "meaning": "ganhar ouro"
+      },
+      {
+        "id": 2,
+        "word": "performance",
+        "pinyin": null,
+        "meaning": "performance"
+      },
+      {
+        "id": 3,
+        "word": "remarkable",
+        "pinyin": null,
+        "meaning": "notável"
+      }
+    ],
+    "id": "local-1772292521584-28",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's a shame that she's going to retire after this Winter Olympics.",
+    "pinyin": null,
+    "translation": "É uma pena que ela vá se aposentar depois destas Olimpíadas de Inverno.",
+    "tokens": [
+      "It's",
+      "a",
+      "shame",
+      "that",
+      "she's",
+      "going",
+      "to",
+      "retire",
+      "after",
+      "this",
+      "Winter",
+      "Olympics",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "it's a shame",
+        "pinyin": null,
+        "meaning": "é uma pena"
+      },
+      {
+        "id": 2,
+        "word": "retire",
+        "pinyin": null,
+        "meaning": "aposentar-se"
+      },
+      {
+        "id": 3,
+        "word": "Winter Olympics",
+        "pinyin": null,
+        "meaning": "Olimpíadas de Inverno"
+      }
+    ],
+    "id": "local-1772292521584-29",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: This time the women's singles champion Sotnikova is also really good.",
+    "pinyin": null,
+    "translation": "B: Desta vez, a campeã de singles feminino Sotnikova também é muito boa.",
+    "tokens": [
+      "B:",
+      "This",
+      "time",
+      "the",
+      "women's",
+      "singles",
+      "champion",
+      "Sotnikova",
+      "is",
+      "also",
+      "really",
+      "good",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "women's singles champion",
+        "pinyin": null,
+        "meaning": "campeã de singles feminino"
+      },
+      {
+        "id": 2,
+        "word": "really good",
+        "pinyin": null,
+        "meaning": "muito boa"
+      }
+    ],
+    "id": "local-1772292521584-30",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Plus, she's only 17 years old.",
+    "pinyin": null,
+    "translation": "Além disso, ela tem apenas 17 anos.",
+    "tokens": [
+      "Plus",
+      ",",
+      "she's",
+      "only",
+      "17",
+      "years",
+      "old",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "plus",
+        "pinyin": null,
+        "meaning": "além disso"
+      },
+      {
+        "id": 2,
+        "word": "only 17 years old",
+        "pinyin": null,
+        "meaning": "apenas 17 anos de idade"
+      }
+    ],
+    "id": "local-1772292521584-31",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Yeah.",
+    "pinyin": null,
+    "translation": "A: Sim.",
+    "tokens": [
+      "A:",
+      "Yeah",
+      "."
+    ],
+    "keywords": [],
+    "id": "local-1772292521584-32",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Hey, figure skating really is an elegant sport.",
+    "pinyin": null,
+    "translation": "Ei, patinação artística realmente é um esporte elegante.",
+    "tokens": [
+      "Hey",
+      ",",
+      "figure",
+      "skating",
+      "really",
+      "is",
+      "an",
+      "elegant",
+      "sport",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "figure skating",
+        "pinyin": null,
+        "meaning": "patinação artística"
+      },
+      {
+        "id": 2,
+        "word": "elegant sport",
+        "pinyin": null,
+        "meaning": "esporte elegante"
+      }
+    ],
+    "id": "local-1772292521584-33",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Do you think I could still learn to do it?",
+    "pinyin": null,
+    "translation": "Você acha que eu ainda conseguiria aprender a fazer isso?",
+    "tokens": [
+      "Do",
+      "you",
+      "think",
+      "I",
+      "could",
+      "still",
+      "learn",
+      "to",
+      "do",
+      "it",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "learn to do it",
+        "pinyin": null,
+        "meaning": "aprender a fazer isso"
+      }
+    ],
+    "id": "local-1772292521584-34",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: You? Forget it.",
+    "pinyin": null,
+    "translation": "B: Você? Esqueça.",
+    "tokens": [
+      "B:",
+      "You",
+      "?",
+      "Forget",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "forget it",
+        "pinyin": null,
+        "meaning": "esqueça"
+      }
+    ],
+    "id": "local-1772292521584-35",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Do you see these athletes on TV?",
+    "pinyin": null,
+    "translation": "Você vê esses atletas na TV?",
+    "tokens": [
+      "Do",
+      "you",
+      "see",
+      "these",
+      "athletes",
+      "on",
+      "TV",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "athletes",
+        "pinyin": null,
+        "meaning": "atletas"
+      },
+      {
+        "id": 2,
+        "word": "on TV",
+        "pinyin": null,
+        "meaning": "na TV"
+      }
+    ],
+    "id": "local-1772292521584-36",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "They all started when they were young.",
+    "pinyin": null,
+    "translation": "Eles todos começaram quando eram jovens.",
+    "tokens": [
+      "They",
+      "all",
+      "started",
+      "when",
+      "they",
+      "were",
+      "young",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "started when young",
+        "pinyin": null,
+        "meaning": "começaram jovens"
+      }
+    ],
+    "id": "local-1772292521584-37",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "If you started now, it'd be too late.",
+    "pinyin": null,
+    "translation": "Se você começasse agora, seria tarde demais.",
+    "tokens": [
+      "If",
+      "you",
+      "started",
+      "now",
+      ",",
+      "it'd",
+      "be",
+      "too",
+      "late",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "too late",
+        "pinyin": null,
+        "meaning": "tarde demais"
+      }
+    ],
+    "id": "local-1772292521584-38",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I don't want to compete.",
+    "pinyin": null,
+    "translation": "A: Eu não quero competir.",
+    "tokens": [
+      "A:",
+      "I",
+      "don't",
+      "want",
+      "to",
+      "compete",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "compete",
+        "pinyin": null,
+        "meaning": "competir"
+      }
+    ],
+    "id": "local-1772292521584-39",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I just want to do it for fun.",
+    "pinyin": null,
+    "translation": "Eu só quero fazer por diversão.",
+    "tokens": [
+      "I",
+      "just",
+      "want",
+      "to",
+      "do",
+      "it",
+      "for",
+      "fun",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "for fun",
+        "pinyin": null,
+        "meaning": "por diversão"
+      }
+    ],
+    "id": "local-1772292521584-40",
+    "language": "Inglês"
+  }
+]

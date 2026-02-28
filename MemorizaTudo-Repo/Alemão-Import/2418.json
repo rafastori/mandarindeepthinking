@@ -1,0 +1,759 @@
+[
+  {
+    "chinese": "A: Guten Tag. Kann ich Ihnen helfen?",
+    "pinyin": null,
+    "translation": "A: Bom dia/Boa tarde. Posso ajudar o(a) senhor(a)?",
+    "tokens": [
+      "A:",
+      "Guten",
+      "Tag",
+      ".",
+      "Kann",
+      "ich",
+      "Ihnen",
+      "helfen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guten Tag",
+        "pinyin": null,
+        "meaning": "Bom dia/Boa tarde"
+      },
+      {
+        "id": 2,
+        "word": "helfen",
+        "pinyin": null,
+        "meaning": "ajudar"
+      },
+      {
+        "id": 3,
+        "word": "Ihnen",
+        "pinyin": null,
+        "meaning": "o(a) senhor(a) (pronome de tratamento formal)"
+      }
+    ],
+    "id": "local-1772292746345-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hallo. Ich möchte meine Karte zurechtschneiden lassen.",
+    "pinyin": null,
+    "translation": "B: Olá. Eu gostaria de mandar cortar meu cartão (para o tamanho certo).",
+    "tokens": [
+      "B:",
+      "Hallo",
+      ".",
+      "Ich",
+      "möchte",
+      "meine",
+      "Karte",
+      "zurechtschneiden",
+      "lassen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hallo",
+        "pinyin": null,
+        "meaning": "Olá"
+      },
+      {
+        "id": 2,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "gostaria (verbo modal 'mögen' no conjuntivo II)"
+      },
+      {
+        "id": 3,
+        "word": "Karte",
+        "pinyin": null,
+        "meaning": "cartão"
+      },
+      {
+        "id": 4,
+        "word": "zurechtschneiden lassen",
+        "pinyin": null,
+        "meaning": "mandar cortar/ajustar"
+      }
+    ],
+    "id": "local-1772292746345-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich habe ein neues Handy und meine alte SIM-Karte passt nicht mehr.",
+    "pinyin": null,
+    "translation": "Eu tenho um celular novo e meu chip antigo não serve mais.",
+    "tokens": [
+      "Ich",
+      "habe",
+      "ein",
+      "neues",
+      "Handy",
+      "und",
+      "meine",
+      "alte",
+      "SIM-Karte",
+      "passt",
+      "nicht",
+      "mehr",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "neues Handy",
+        "pinyin": null,
+        "meaning": "celular novo"
+      },
+      {
+        "id": 2,
+        "word": "alte",
+        "pinyin": null,
+        "meaning": "antiga"
+      },
+      {
+        "id": 3,
+        "word": "SIM-Karte",
+        "pinyin": null,
+        "meaning": "chip SIM, cartão SIM"
+      },
+      {
+        "id": 4,
+        "word": "passt nicht mehr",
+        "pinyin": null,
+        "meaning": "não serve mais / não cabe mais"
+      }
+    ],
+    "id": "local-1772292746345-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie brauchen eine Mini-SIM-Karte, richtig? In Ordnung.",
+    "pinyin": null,
+    "translation": "A: O(A) senhor(a) precisa de um chip Mini-SIM, certo? De acordo.",
+    "tokens": [
+      "A:",
+      "Sie",
+      "brauchen",
+      "eine",
+      "Mini-SIM-Karte",
+      ",",
+      "richtig",
+      "?",
+      "In",
+      "Ordnung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "brauchen",
+        "pinyin": null,
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "Mini-SIM-Karte",
+        "pinyin": null,
+        "meaning": "chip Mini-SIM"
+      },
+      {
+        "id": 3,
+        "word": "richtig?",
+        "pinyin": null,
+        "meaning": "certo?"
+      },
+      {
+        "id": 4,
+        "word": "In Ordnung",
+        "pinyin": null,
+        "meaning": "De acordo / Certo"
+      }
+    ],
+    "id": "local-1772292746345-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kostet das etwas?",
+    "pinyin": null,
+    "translation": "B: Isso custa algo?",
+    "tokens": [
+      "B:",
+      "Kostet",
+      "das",
+      "etwas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kosten",
+        "pinyin": null,
+        "meaning": "custar"
+      },
+      {
+        "id": 2,
+        "word": "etwas",
+        "pinyin": null,
+        "meaning": "algo, alguma coisa"
+      }
+    ],
+    "id": "local-1772292746345-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein, das Kartenzuschneiden ist kostenlos. Fertig.",
+    "pinyin": null,
+    "translation": "A: Não, o corte do cartão é gratuito. Pronto.",
+    "tokens": [
+      "A:",
+      "Nein",
+      ",",
+      "das",
+      "Kartenzuschneiden",
+      "ist",
+      "kostenlos",
+      ".",
+      "Fertig",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 2,
+        "word": "Kartenzuschneiden",
+        "pinyin": null,
+        "meaning": "o corte/ajuste do cartão"
+      },
+      {
+        "id": 3,
+        "word": "kostenlos",
+        "pinyin": null,
+        "meaning": "gratuito"
+      },
+      {
+        "id": 4,
+        "word": "Fertig",
+        "pinyin": null,
+        "meaning": "Pronto / Terminado"
+      }
+    ],
+    "id": "local-1772292746345-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Danke. Hm? Warum passt die Karte nicht?",
+    "pinyin": null,
+    "translation": "B: Obrigado(a). Hum? Por que o chip não serve?",
+    "tokens": [
+      "B:",
+      "Danke",
+      ".",
+      "Hm",
+      "?",
+      "Warum",
+      "passt",
+      "die",
+      "Karte",
+      "nicht",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Danke",
+        "pinyin": null,
+        "meaning": "Obrigado(a)"
+      },
+      {
+        "id": 2,
+        "word": "Warum",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "passt nicht",
+        "pinyin": null,
+        "meaning": "não serve / não cabe"
+      },
+      {
+        "id": 4,
+        "word": "Karte",
+        "pinyin": null,
+        "meaning": "chip, cartão"
+      }
+    ],
+    "id": "local-1772292746345-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Können Sie bitte mal schauen?",
+    "pinyin": null,
+    "translation": "O(a) senhor(a) pode, por favor, dar uma olhada?",
+    "tokens": [
+      "Können",
+      "Sie",
+      "bitte",
+      "mal",
+      "schauen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Können Sie bitte",
+        "pinyin": null,
+        "meaning": "O(a) senhor(a) pode, por favor"
+      },
+      {
+        "id": 2,
+        "word": "schauen",
+        "pinyin": null,
+        "meaning": "olhar"
+      },
+      {
+        "id": 3,
+        "word": "mal",
+        "pinyin": null,
+        "meaning": "uma vez / brevemente (partícula que suaviza o pedido)"
+      }
+    ],
+    "id": "local-1772292746345-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ihr Handy ist ein iPhone 5, oder?",
+    "pinyin": null,
+    "translation": "A: Seu celular é um iPhone 5, certo?",
+    "tokens": [
+      "A:",
+      "Ihr",
+      "Handy",
+      "ist",
+      "ein",
+      "iPhone",
+      "5",
+      ",",
+      "oder",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ihr Handy",
+        "pinyin": null,
+        "meaning": "Seu celular (formal)"
+      },
+      {
+        "id": 2,
+        "word": "oder?",
+        "pinyin": null,
+        "meaning": "certo? / ou não?"
+      }
+    ],
+    "id": "local-1772292746345-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja.",
+    "pinyin": null,
+    "translation": "B: Sim.",
+    "tokens": [
+      "B:",
+      "Ja",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ja",
+        "pinyin": null,
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1772292746345-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das iPhone 5 kann keine Mini-SIM-Karten verwenden.",
+    "pinyin": null,
+    "translation": "A: O iPhone 5 não pode usar chips Mini-SIM.",
+    "tokens": [
+      "A:",
+      "Das",
+      "iPhone",
+      "5",
+      "kann",
+      "keine",
+      "Mini-SIM-Karten",
+      "verwenden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kann keine ... verwenden",
+        "pinyin": null,
+        "meaning": "não pode usar nenhum(a) ..."
+      },
+      {
+        "id": 2,
+        "word": "Mini-SIM-Karten",
+        "pinyin": null,
+        "meaning": "chips Mini-SIM"
+      },
+      {
+        "id": 3,
+        "word": "verwenden",
+        "pinyin": null,
+        "meaning": "usar, utilizar"
+      }
+    ],
+    "id": "local-1772292746345-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Nur das iPhone 4 kann eine Mini-Karte nutzen.",
+    "pinyin": null,
+    "translation": "Apenas o iPhone 4 pode usar um chip Mini.",
+    "tokens": [
+      "Nur",
+      "das",
+      "iPhone",
+      "4",
+      "kann",
+      "eine",
+      "Mini-Karte",
+      "nutzen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nur",
+        "pinyin": null,
+        "meaning": "Apenas, somente"
+      },
+      {
+        "id": 2,
+        "word": "Mini-Karte",
+        "pinyin": null,
+        "meaning": "chip Mini"
+      },
+      {
+        "id": 3,
+        "word": "nutzen",
+        "pinyin": null,
+        "meaning": "usar, aproveitar"
+      }
+    ],
+    "id": "local-1772292746345-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was soll ich denn jetzt machen?",
+    "pinyin": null,
+    "translation": "B: O que devo fazer agora?",
+    "tokens": [
+      "B:",
+      "Was",
+      "soll",
+      "ich",
+      "denn",
+      "jetzt",
+      "machen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was soll ich machen?",
+        "pinyin": null,
+        "meaning": "O que devo fazer?"
+      },
+      {
+        "id": 2,
+        "word": "jetzt",
+        "pinyin": null,
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "denn",
+        "pinyin": null,
+        "meaning": "(partícula modal, sem tradução direta, enfatiza a pergunta)"
+      }
+    ],
+    "id": "local-1772292746345-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Kein Problem.",
+    "pinyin": null,
+    "translation": "A: Sem problemas.",
+    "tokens": [
+      "A:",
+      "Kein",
+      "Problem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kein Problem",
+        "pinyin": null,
+        "meaning": "Sem problemas"
+      }
+    ],
+    "id": "local-1772292746345-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Sie können auf eine Nano-SIM-Karte umstellen.",
+    "pinyin": null,
+    "translation": "O(a) senhor(a) pode trocar para um chip Nano-SIM.",
+    "tokens": [
+      "Sie",
+      "können",
+      "auf",
+      "eine",
+      "Nano-SIM-Karte",
+      "umstellen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "können",
+        "pinyin": null,
+        "meaning": "poder"
+      },
+      {
+        "id": 2,
+        "word": "auf ... umstellen",
+        "pinyin": null,
+        "meaning": "mudar para ..., trocar para ..."
+      },
+      {
+        "id": 3,
+        "word": "Nano-SIM-Karte",
+        "pinyin": null,
+        "meaning": "chip Nano-SIM"
+      }
+    ],
+    "id": "local-1772292746345-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Die ist noch kleiner als eine Mini-Karte und wird speziell für das iPhone 5 verwendet.",
+    "pinyin": null,
+    "translation": "Ela é ainda menor do que um chip Mini e é usada especificamente para o iPhone 5.",
+    "tokens": [
+      "Die",
+      "ist",
+      "noch",
+      "kleiner",
+      "als",
+      "eine",
+      "Mini-Karte",
+      "und",
+      "wird",
+      "speziell",
+      "für",
+      "das",
+      "iPhone",
+      "5",
+      "verwendet",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "noch kleiner als",
+        "pinyin": null,
+        "meaning": "ainda menor que"
+      },
+      {
+        "id": 2,
+        "word": "Mini-Karte",
+        "pinyin": null,
+        "meaning": "chip Mini"
+      },
+      {
+        "id": 3,
+        "word": "speziell für",
+        "pinyin": null,
+        "meaning": "especialmente para"
+      },
+      {
+        "id": 4,
+        "word": "wird ... verwendet",
+        "pinyin": null,
+        "meaning": "é usada (voz passiva)"
+      }
+    ],
+    "id": "local-1772292746345-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Muss ich dafür bezahlen?",
+    "pinyin": null,
+    "translation": "B: Tenho que pagar por isso?",
+    "tokens": [
+      "B:",
+      "Muss",
+      "ich",
+      "dafür",
+      "bezahlen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Muss ich...?",
+        "pinyin": null,
+        "meaning": "Eu preciso/tenho que...?"
+      },
+      {
+        "id": 2,
+        "word": "dafür",
+        "pinyin": null,
+        "meaning": "por isso"
+      },
+      {
+        "id": 3,
+        "word": "bezahlen",
+        "pinyin": null,
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1772292746345-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Der erste Wechsel ist kostenlos.",
+    "pinyin": null,
+    "translation": "A: A primeira troca é gratuita.",
+    "tokens": [
+      "A:",
+      "Der",
+      "erste",
+      "Wechsel",
+      "ist",
+      "kostenlos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "erste",
+        "pinyin": null,
+        "meaning": "primeira"
+      },
+      {
+        "id": 2,
+        "word": "Wechsel",
+        "pinyin": null,
+        "meaning": "troca, mudança"
+      },
+      {
+        "id": 3,
+        "word": "kostenlos",
+        "pinyin": null,
+        "meaning": "gratuito"
+      }
+    ],
+    "id": "local-1772292746345-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Bei späteren Kartenersetzungen fällt eine Bearbeitungsgebühr von 20 Yuan an.",
+    "pinyin": null,
+    "translation": "Em trocas de cartão posteriores, será cobrada uma taxa de processamento de 20 Yuan.",
+    "tokens": [
+      "Bei",
+      "späteren",
+      "Kartenersetzungen",
+      "fällt",
+      "eine",
+      "Bearbeitungsgebühr",
+      "von",
+      "20",
+      "Yuan",
+      "an",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "späteren",
+        "pinyin": null,
+        "meaning": "posteriores"
+      },
+      {
+        "id": 2,
+        "word": "Kartenersetzungen",
+        "pinyin": null,
+        "meaning": "substituições de cartão"
+      },
+      {
+        "id": 3,
+        "word": "anfallen",
+        "pinyin": null,
+        "meaning": "ocorrer, ser cobrado (verbo 'anfallen' separado)"
+      },
+      {
+        "id": 4,
+        "word": "Bearbeitungsgebühr",
+        "pinyin": null,
+        "meaning": "taxa de processamento"
+      },
+      {
+        "id": 5,
+        "word": "Yuan",
+        "pinyin": null,
+        "meaning": "Yuan (moeda chinesa)"
+      }
+    ],
+    "id": "local-1772292746345-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay. Vielen Dank.",
+    "pinyin": null,
+    "translation": "B: Ok. Muito obrigado(a).",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Vielen",
+      "Dank",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok"
+      },
+      {
+        "id": 2,
+        "word": "Vielen Dank",
+        "pinyin": null,
+        "meaning": "Muito obrigado(a)"
+      }
+    ],
+    "id": "local-1772292746345-19",
+    "language": "Alemão"
+  }
+]

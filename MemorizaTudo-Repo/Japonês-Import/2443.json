@@ -1,0 +1,626 @@
+[
+  {
+    "chinese": "A: やあ、兄弟。今週末空いてる？一緒にどう？",
+    "pinyin": "",
+    "translation": "A: Ei, irmão. Você está livre neste fim de semana? Que tal nos encontrarmos?",
+    "tokens": [
+      "A:",
+      "やあ",
+      "、",
+      "兄弟",
+      "。",
+      "今週末",
+      "空いてる",
+      "？",
+      "一緒に",
+      "どう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "やあ",
+        "pinyin": "yaa",
+        "meaning": "Ei, olá"
+      },
+      {
+        "id": 1,
+        "word": "兄弟",
+        "pinyin": "kyoudai",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "今週末",
+        "pinyin": "konshuumatsu",
+        "meaning": "este fim de semana"
+      },
+      {
+        "id": 3,
+        "word": "空いてる",
+        "pinyin": "aiteru",
+        "meaning": "estar livre/disponível"
+      },
+      {
+        "id": 4,
+        "word": "一緒に",
+        "pinyin": "issho ni",
+        "meaning": "junto, em conjunto"
+      },
+      {
+        "id": 5,
+        "word": "どう",
+        "pinyin": "dou",
+        "meaning": "como (pergunta/sugestão)"
+      }
+    ],
+    "id": "local-1772298037008-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: なんで集まりたいの？",
+    "pinyin": "",
+    "translation": "B: Por que você quer se reunir?",
+    "tokens": [
+      "B:",
+      "なんで",
+      "集まりたい",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "なんで",
+        "pinyin": "nande",
+        "meaning": "por que"
+      },
+      {
+        "id": 1,
+        "word": "集まりたい",
+        "pinyin": "atsumaritai",
+        "meaning": "querer se reunir"
+      }
+    ],
+    "id": "local-1772298037008-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: へへ！結婚するんだ、兄弟。招待状を渡したいんだよ！",
+    "pinyin": "",
+    "translation": "A: Hehe! Eu vou me casar, irmão. Quero te entregar o convite!",
+    "tokens": [
+      "A:",
+      "へへ",
+      "！",
+      "結婚するんだ",
+      "、",
+      "兄弟",
+      "。",
+      "招待状",
+      "を",
+      "渡したいんだよ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "へへ",
+        "pinyin": "hehe",
+        "meaning": "hehe (risada)"
+      },
+      {
+        "id": 1,
+        "word": "結婚する",
+        "pinyin": "kekkon suru",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 2,
+        "word": "兄弟",
+        "pinyin": "kyoudai",
+        "meaning": "irmão"
+      },
+      {
+        "id": 3,
+        "word": "招待状",
+        "pinyin": "shoutaijou",
+        "meaning": "convite"
+      },
+      {
+        "id": 4,
+        "word": "渡したい",
+        "pinyin": "watashitai",
+        "meaning": "querer entregar"
+      }
+    ],
+    "id": "local-1772298037008-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えっ？！おめでとう！何卓用意するの？",
+    "pinyin": "",
+    "translation": "B: O quê?! Parabéns! Quantas mesas você vai preparar?",
+    "tokens": [
+      "B:",
+      "えっ",
+      "？！",
+      "おめでとう",
+      "！",
+      "何卓",
+      "用意する",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "えっ",
+        "pinyin": "e~",
+        "meaning": "O quê? (expressão de surpresa)"
+      },
+      {
+        "id": 1,
+        "word": "おめでとう",
+        "pinyin": "omedetou",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 2,
+        "word": "何卓",
+        "pinyin": "nanjaku",
+        "meaning": "quantas mesas"
+      },
+      {
+        "id": 3,
+        "word": "用意する",
+        "pinyin": "youi suru",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1772298037008-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 12卓だよ。今はホテルを予約するのも、ウェディングプランナーを見つけるのも大変なんだ。一年前に計画したんだよ。",
+    "pinyin": "",
+    "translation": "A: 12 mesas. É difícil reservar hotéis e encontrar planejadores de casamento hoje em dia. Eu planejei isso um ano atrás.",
+    "tokens": [
+      "A:",
+      "12卓",
+      "だよ",
+      "。",
+      "今",
+      "は",
+      "ホテル",
+      "を",
+      "予約する",
+      "の",
+      "も",
+      "、",
+      "ウェディングプランナー",
+      "を",
+      "見つける",
+      "の",
+      "も",
+      "大変なんだ",
+      "。",
+      "一年前",
+      "に",
+      "計画したんだよ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "卓",
+        "pinyin": "taku",
+        "meaning": "contador para mesas"
+      },
+      {
+        "id": 1,
+        "word": "今",
+        "pinyin": "ima",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "ホテル",
+        "pinyin": "hoteru",
+        "meaning": "hotel"
+      },
+      {
+        "id": 3,
+        "word": "予約する",
+        "pinyin": "yoyaku suru",
+        "meaning": "reservar"
+      },
+      {
+        "id": 4,
+        "word": "ウェディングプランナー",
+        "pinyin": "wedingu purannaa",
+        "meaning": "planejador de casamento"
+      },
+      {
+        "id": 5,
+        "word": "見つける",
+        "pinyin": "mitsukeru",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 6,
+        "word": "大変",
+        "pinyin": "taihen",
+        "meaning": "difícil, complicado"
+      },
+      {
+        "id": 7,
+        "word": "一年前",
+        "pinyin": "ichinen mae",
+        "meaning": "um ano atrás"
+      },
+      {
+        "id": 8,
+        "word": "計画する",
+        "pinyin": "keikaku suru",
+        "meaning": "planejar"
+      }
+    ],
+    "id": "local-1772298037008-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは仕方ないね。海外ウェディングとかでもよかったのに！",
+    "pinyin": "",
+    "translation": "B: Isso não tem jeito, né? Um casamento no exterior teria sido bom também!",
+    "tokens": [
+      "B:",
+      "それ",
+      "は",
+      "仕方ない",
+      "ね",
+      "。",
+      "海外ウェディング",
+      "とか",
+      "でも",
+      "よかった",
+      "のに",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "仕方ない",
+        "pinyin": "shikatanai",
+        "meaning": "não tem jeito, não há o que fazer"
+      },
+      {
+        "id": 1,
+        "word": "海外ウェディング",
+        "pinyin": "kaigai wedingu",
+        "meaning": "casamento no exterior"
+      },
+      {
+        "id": 2,
+        "word": "とか",
+        "pinyin": "toka",
+        "meaning": "e coisas do tipo, ou algo assim"
+      },
+      {
+        "id": 3,
+        "word": "よかった",
+        "pinyin": "yokatta",
+        "meaning": "foi bom"
+      },
+      {
+        "id": 4,
+        "word": "のに",
+        "pinyin": "noni",
+        "meaning": "apesar de, mas (expressa surpresa ou frustração)"
+      }
+    ],
+    "id": "local-1772298037008-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 両親が許さないんだ。考え方がすごく伝統的だからね。",
+    "pinyin": "",
+    "translation": "A: Meus pais não permitiriam. A forma de pensar deles é muito tradicional.",
+    "tokens": [
+      "A:",
+      "両親",
+      "が",
+      "許さない",
+      "んだ",
+      "。",
+      "考え方",
+      "が",
+      "すごく",
+      "伝統的",
+      "だから",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "両親",
+        "pinyin": "ryoushin",
+        "meaning": "pais (pai e mãe)"
+      },
+      {
+        "id": 1,
+        "word": "許さない",
+        "pinyin": "yurusanai",
+        "meaning": "não permitir"
+      },
+      {
+        "id": 2,
+        "word": "考え方",
+        "pinyin": "kangaekata",
+        "meaning": "forma de pensar, mentalidade"
+      },
+      {
+        "id": 3,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 4,
+        "word": "伝統的",
+        "pinyin": "dentouteki",
+        "meaning": "tradicional"
+      }
+    ],
+    "id": "local-1772298037008-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: じゃあ、結婚したらハネムーンに行く予定？",
+    "pinyin": "",
+    "translation": "B: Então, depois de casar, você planeja ir para a lua de mel?",
+    "tokens": [
+      "B:",
+      "じゃあ",
+      "、",
+      "結婚したら",
+      "ハネムーン",
+      "に",
+      "行く",
+      "予定",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "então, bem"
+      },
+      {
+        "id": 1,
+        "word": "結婚したら",
+        "pinyin": "kekkon shitara",
+        "meaning": "se casar, depois de casar"
+      },
+      {
+        "id": 2,
+        "word": "ハネムーン",
+        "pinyin": "hanemuun",
+        "meaning": "lua de mel"
+      },
+      {
+        "id": 3,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      },
+      {
+        "id": 4,
+        "word": "予定",
+        "pinyin": "yotei",
+        "meaning": "plano, previsão"
+      }
+    ],
+    "id": "local-1772298037008-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: もちろん、そうしないと妻が不機嫌になるからね。",
+    "pinyin": "",
+    "translation": "A: Claro, se eu não fizer isso, minha esposa vai ficar de mau humor.",
+    "tokens": [
+      "A:",
+      "もちろん",
+      "、",
+      "そうしないと",
+      "妻",
+      "が",
+      "不機嫌になる",
+      "から",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "もちろん",
+        "pinyin": "mochiron",
+        "meaning": "claro, é claro"
+      },
+      {
+        "id": 1,
+        "word": "そうしないと",
+        "pinyin": "soushinai to",
+        "meaning": "se não fizer isso"
+      },
+      {
+        "id": 2,
+        "word": "妻",
+        "pinyin": "tsuma",
+        "meaning": "esposa"
+      },
+      {
+        "id": 3,
+        "word": "不機嫌になる",
+        "pinyin": "fukigen ni naru",
+        "meaning": "ficar de mau humor"
+      }
+    ],
+    "id": "local-1772298037008-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 奥さんって、大学時代の彼女？",
+    "pinyin": "",
+    "translation": "B: Sua esposa é aquela sua namorada da época da faculdade?",
+    "tokens": [
+      "B:",
+      "奥さん",
+      "って",
+      "、",
+      "大学時代",
+      "の",
+      "彼女",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "奥さん",
+        "pinyin": "okusan",
+        "meaning": "esposa (de outra pessoa)"
+      },
+      {
+        "id": 1,
+        "word": "って",
+        "pinyin": "tte",
+        "meaning": "partícula de citação/tópico"
+      },
+      {
+        "id": 2,
+        "word": "大学時代",
+        "pinyin": "daigaku jidai",
+        "meaning": "época da faculdade"
+      },
+      {
+        "id": 3,
+        "word": "彼女",
+        "pinyin": "kanojo",
+        "meaning": "namorada"
+      }
+    ],
+    "id": "local-1772298037008-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ずっと昔に別れたよ。妻の名前はユアンユアンだよ。間違えて他の名前で呼ばないでね！",
+    "pinyin": "",
+    "translation": "A: Nós nos separamos há muito tempo. O nome da minha esposa é Yuanyuan. Não a chame por outro nome por engano!",
+    "tokens": [
+      "A:",
+      "ずっと昔",
+      "に",
+      "別れた",
+      "よ",
+      "。",
+      "妻",
+      "の",
+      "名前",
+      "は",
+      "ユアンユアン",
+      "だよ",
+      "。",
+      "間違えて",
+      "他の",
+      "名前",
+      "で",
+      "呼ばないで",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ずっと昔",
+        "pinyin": "zutto mukashi",
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 1,
+        "word": "別れた",
+        "pinyin": "wakareta",
+        "meaning": "se separou"
+      },
+      {
+        "id": 2,
+        "word": "妻",
+        "pinyin": "tsuma",
+        "meaning": "esposa"
+      },
+      {
+        "id": 3,
+        "word": "名前",
+        "pinyin": "namae",
+        "meaning": "nome"
+      },
+      {
+        "id": 4,
+        "word": "ユアンユアン",
+        "pinyin": "Yuan'yuan",
+        "meaning": "Yuanyuan (nome próprio)"
+      },
+      {
+        "id": 5,
+        "word": "間違えて",
+        "pinyin": "machigaete",
+        "meaning": "por engano, erradamente"
+      },
+      {
+        "id": 6,
+        "word": "他の",
+        "pinyin": "hoka no",
+        "meaning": "outro"
+      },
+      {
+        "id": 7,
+        "word": "呼ばないで",
+        "pinyin": "yobanaide",
+        "meaning": "não chame"
+      }
+    ],
+    "id": "local-1772298037008-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかった。週末にね。",
+    "pinyin": "",
+    "translation": "B: Entendi. Nos vemos no fim de semana.",
+    "tokens": [
+      "B:",
+      "わかった",
+      "。",
+      "週末",
+      "に",
+      "ね",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "わかった",
+        "pinyin": "wakatta",
+        "meaning": "entendi"
+      },
+      {
+        "id": 1,
+        "word": "週末",
+        "pinyin": "shuumatsu",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1772298037008-11",
+    "language": "Japonês"
+  }
+]
