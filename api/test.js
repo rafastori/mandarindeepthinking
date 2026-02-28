@@ -49,12 +49,16 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
+        console.error("Erro no teste da API na Vercel:", {
+            name: error.name,
+            message: error.message,
+            stack: error.stack?.split('\n').slice(0, 5)
+        });
+
         return res.status(500).json({
             status: "error",
             step: "gemini_call",
-            errorName: error.name,
-            errorMessage: error.message,
-            errorStack: error.stack?.split('\n').slice(0, 5)
+            message: "Ocorreu um erro interno ao conectar com a API."
         });
     }
 }

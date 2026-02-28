@@ -3,7 +3,7 @@ import Icon from './Icon';
 import { UserMenuDropdown } from './UserMenuDropdown';
 import { User } from 'firebase/auth';
 import { RecognitionEngine } from '../hooks/useSpeechRecognition';
-import { Flame, Star, Trophy } from 'lucide-react';
+import { Star, Trophy } from 'lucide-react';
 
 interface HeaderProps {
     user: User | null;
@@ -27,7 +27,6 @@ interface HeaderProps {
     engine: RecognitionEngine;
     onEngineChange: (engine: RecognitionEngine) => void;
     // Gamification
-    streak?: number;
     points?: number;
     // Cloud Sync
     onBackupToCloud?: () => void;
@@ -53,7 +52,6 @@ const Header: React.FC<HeaderProps> = ({
     onImportTextFile,
     engine,
     onEngineChange,
-    streak = 0,
     points = 0,
     onBackupToCloud,
     onRestoreFromCloud,
@@ -68,12 +66,6 @@ const Header: React.FC<HeaderProps> = ({
 
             <div className="flex items-center gap-3">
                 {/* Gamification Stats */}
-                {streak > 0 && (
-                    <div className="flex items-center gap-1 bg-orange-500/20 px-2 py-1 rounded-full" title={`Ofensiva de ${streak} dias`}>
-                        <Flame className="w-4 h-4 text-orange-400" />
-                        <span className="text-sm font-bold text-orange-300">{streak}</span>
-                    </div>
-                )}
                 <div className="flex items-center gap-1 bg-amber-500/20 px-2 py-1 rounded-full" title={`${points} pontos`}>
                     <Star className="w-4 h-4 text-amber-400 fill-current" />
                     <span className="text-sm font-bold text-amber-300">{points.toLocaleString()}</span>

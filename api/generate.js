@@ -21,9 +21,19 @@ const callGemini = async (genAI, prompt, systemInstruction = "") => {
 };
 
 export default async function handler(req, res) {
-  // Headers CORS
+  // Headers CORS - Restrição de Origem
+  const origin = req.headers.origin || '';
+  const isVercel = origin.endsWith('.vercel.app');
+  const isLocalhost = origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:');
+
+  if (isVercel || isLocalhost) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  } else {
+    // Fallback seguro se origem não esperada (não quebra apps locais sem credenciais, mas restringe)
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  }
+
   res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
   res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
 
@@ -305,20 +315,18 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
     return res.status(200).json(result);
 
   } catch (error) {
-    // Melhoria para debug na Vercel: Logar o erro completo e a stack trace
+    // Log detalhado APENAS no servidor para debug
     console.error("ERRO API GEMINI NA VERCEL:", {
       message: error.message,
       name: error.name,
       status: error.status,
       stack: error.stack ? error.stack.split('\n').slice(0, 3) : undefined,
-      responseDetails: error.response || 'No response object',
-      // Caso seja um erro da Fetch API interna do node ou algo parecido
-      cause: error.cause
     });
 
+    // Retorna mensagem genérica para não expor stack trace e diretórios ao cliente
     res.status(500).json({
-      error: error.message || "Erro interno",
-      details: error.status ? `Status: ${error.status}` : undefined
+      error: "Ocorreu um erro interno na geração de conteúdo.",
+      details: error.status ? `Status de conexão: ${error.status}` : undefined
     });
   }
 }

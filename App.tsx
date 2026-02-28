@@ -607,7 +607,6 @@ const App: React.FC = () => {
                     onImportData={handleImportData}
                     engine={engine}
                     onEngineChange={setEngine}
-                    streak={gamification.streak}
                     points={gamification.points}
                     onExportTextApp={() => exportData()}
                     onImportTextFile={(file) => importData(file, 'merge')}
