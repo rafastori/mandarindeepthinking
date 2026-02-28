@@ -22,6 +22,7 @@ import FolderTree from './components/FolderTree';
 import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
+import TutorialMascot from './components/Gamification/TutorialMascot';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
@@ -50,6 +51,8 @@ const App: React.FC = () => {
     const [showSessionSummary, setShowSessionSummary] = useState(false);
     const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
+    const [showTutorial, setShowTutorial] = useState(false);
+
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
@@ -174,14 +177,19 @@ const App: React.FC = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, authLoading]);
 
-    // Reset game selection when changing tabs
+    // Auto-show tutorial for new users with empty library
     useEffect(() => {
-        if (tab !== 'jogo') {
-            setSelectedGame('selector');
+        if (!authLoading && !itemsLoading && profileLoaded && migrationDone) {
+            const tutorialSeen = localStorage.getItem('tutorial_seen');
+            if (!tutorialSeen && !user && localItems.length === 0) {
+                // Pequeno delay para não sobrepor a IntroScreen se houver
+                setTimeout(() => setShowTutorial(true), 2000);
+            }
         }
-    }, [tab]);
+    }, [authLoading, itemsLoading, profileLoaded, migrationDone, user, localItems.length]);
 
     const libraryData = useMemo(() => [...localItems, ...staticData], [localItems]);
+
 
     const handleLogin = async () => {
         try { await signInWithPopup(auth, googleProvider); } catch (e) { console.error(e); }
@@ -613,7 +621,9 @@ const App: React.FC = () => {
                     onBackupToCloud={handleBackupToCloud}
                     onRestoreFromCloud={handleRestoreFromCloud}
                     isSyncing={isSyncing}
+                    onOpenTutorial={() => setShowTutorial(true)}
                 />
+
             )}
             <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
@@ -665,7 +675,11 @@ const App: React.FC = () => {
                     onClose={gamification.clearPendingBonus}
                 />
             )}
+            {showTutorial && (
+                <TutorialMascot onClose={() => setShowTutorial(false)} />
+            )}
         </div>
+
     );
 };
 

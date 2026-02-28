@@ -21,6 +21,7 @@ interface UserMenuDropdownProps {
     onBackupToCloud?: () => void;
     onRestoreFromCloud?: () => void;
     isSyncing?: boolean;
+    onOpenTutorial?: () => void;
 }
 
 /**
@@ -43,7 +44,8 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     onEngineChange,
     onBackupToCloud,
     onRestoreFromCloud,
-    isSyncing
+    isSyncing,
+    onOpenTutorial
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [showImportModal, setShowImportModal] = useState(false);
@@ -167,6 +169,24 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
 
                         {/* Opções */}
                         <div className="p-2">
+                            {/* Tutorial / Dicas */}
+                            {onOpenTutorial && (
+                                <button
+                                    onClick={() => handleAction(onOpenTutorial)}
+                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-amber-50 text-slate-700 hover:text-amber-700 transition-colors"
+                                >
+                                    <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+                                        <Icon name="help-circle" size={16} className="text-amber-600" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-medium">Tutorial / Dicas</p>
+                                        <p className="text-xs text-slate-500">Aprenda a usar o app</p>
+                                    </div>
+                                </button>
+                            )}
+
+                            <div className="h-px bg-slate-100 my-2" />
+
                             {/* Conectar ao Puter */}
                             {!isPuterConnected && (
                                 <button

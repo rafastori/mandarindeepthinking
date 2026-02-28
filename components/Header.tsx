@@ -32,6 +32,7 @@ interface HeaderProps {
     onBackupToCloud?: () => void;
     onRestoreFromCloud?: () => void;
     isSyncing?: boolean;
+    onOpenTutorial?: () => void;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -55,7 +56,8 @@ const Header: React.FC<HeaderProps> = ({
     points = 0,
     onBackupToCloud,
     onRestoreFromCloud,
-    isSyncing
+    isSyncing,
+    onOpenTutorial
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -75,37 +77,41 @@ const Header: React.FC<HeaderProps> = ({
                     <Trophy className="w-[18px] h-[18px]" />
                 </button>
 
-                <button onClick={onOpenFolders} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Pastas">
+                <button onClick={onOpenFolders} id="header-folders" className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Pastas">
                     <Icon name="folder-tree" size={18} />
                 </button>
 
-                <button onClick={onOpenStats} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Estatísticas">
+                <button onClick={onOpenStats} id="header-stats" className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Estatísticas">
                     <Icon name="bar-chart-2" size={18} />
                 </button>
 
 
                 {/* Área de usuário */}
                 {user ? (
-                    <UserMenuDropdown
-                        user={user}
-                        isPuterConnected={isPuterConnected}
-                        puterUsername={puterUsername}
-                        onLogout={onLogout}
-                        onConnectPuter={onConnectPuter}
-                        onResetAccount={onResetAccount}
-                        onDisconnectPuter={onDisconnectPuter}
-                        onExportData={onExportData}
-                        onImportData={onImportData}
-                        onExportTextApp={onExportTextApp}
-                        onImportTextFile={onImportTextFile}
-                        engine={engine}
-                        onEngineChange={onEngineChange}
-                        onBackupToCloud={onBackupToCloud}
-                        onRestoreFromCloud={onRestoreFromCloud}
-                        isSyncing={isSyncing}
-                    />
+                    <div id="header-avatar">
+                        <UserMenuDropdown
+                            user={user}
+                            isPuterConnected={isPuterConnected}
+                            puterUsername={puterUsername}
+                            onLogout={onLogout}
+                            onConnectPuter={onConnectPuter}
+                            onResetAccount={onResetAccount}
+                            onDisconnectPuter={onDisconnectPuter}
+                            onExportData={onExportData}
+                            onImportData={onImportData}
+                            onExportTextApp={onExportTextApp}
+                            onImportTextFile={onImportTextFile}
+                            engine={engine}
+                            onEngineChange={onEngineChange}
+                            onBackupToCloud={onBackupToCloud}
+                            onRestoreFromCloud={onRestoreFromCloud}
+                            isSyncing={isSyncing}
+                            onOpenTutorial={onOpenTutorial}
+                        />
+                    </div>
                 ) : (
                     <button
+                        id="header-login"
                         onClick={onLogin}
                         className="flex items-center gap-2 bg-white text-slate-700 hover:bg-slate-50 font-medium shadow-sm transition-all rounded-full p-1.5 sm:px-4 sm:py-2 active:scale-95"
                         title="Entrar com Google"

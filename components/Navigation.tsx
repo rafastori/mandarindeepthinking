@@ -79,6 +79,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
                     {mainTabs.map((tab) => (
                         <button
                             key={tab.id}
+                            id={`nav-${tab.id}`}
                             onClick={() => handleMainClick(tab.id)}
                             className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${activeTab === tab.id
                                 ? 'text-brand-600 -translate-y-1'
@@ -97,6 +98,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
 
                     {/* Botão "Jogo" com DESTAQUE colorido */}
                     <button
+                        id="nav-jogo"
                         onClick={() => handleMainClick('jogo')}
                         className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${activeTab === 'jogo'
                             ? '-translate-y-1'
@@ -119,6 +121,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
 
                     {/* Botão "Treino" (Mais) */}
                     <button
+                        id="nav-treino"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${isMoreActive || isMenuOpen
                             ? 'text-brand-600'
