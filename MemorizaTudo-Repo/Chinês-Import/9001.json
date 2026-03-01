@@ -1,0 +1,986 @@
+[
+  {
+    "chinese": "A: 嘿，这家里灰尘怎么这么多啊？怎么打扫最省事？",
+    "pinyin": "A: Hēi, zhè jiālǐ huīchén zěnme zhème duō a? Zěnme dǎsǎo zuì shěngshì?",
+    "translation": "A: Ei, por que tem tanta poeira nesta casa? Qual é a maneira mais fácil de limpar?",
+    "tokens": [
+      "嘿",
+      "，",
+      "这",
+      "家里",
+      "灰尘",
+      "怎么",
+      "这么",
+      "多",
+      "啊",
+      "？",
+      "怎么",
+      "打扫",
+      "最",
+      "省事",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘿",
+        "pinyin": "hēi",
+        "meaning": "Ei!, Olá!"
+      },
+      {
+        "id": 2,
+        "word": "家里",
+        "pinyin": "jiālǐ",
+        "meaning": "em casa, na casa"
+      },
+      {
+        "id": 3,
+        "word": "灰尘",
+        "pinyin": "huīchén",
+        "meaning": "poeira"
+      },
+      {
+        "id": 4,
+        "word": "这么多",
+        "pinyin": "zhème duō",
+        "meaning": "tanto assim, tão muito"
+      },
+      {
+        "id": 5,
+        "word": "打扫",
+        "pinyin": "dǎsǎo",
+        "meaning": "varrer, limpar"
+      },
+      {
+        "id": 6,
+        "word": "最",
+        "pinyin": "zuì",
+        "meaning": "o mais, superlativo"
+      },
+      {
+        "id": 7,
+        "word": "省事",
+        "pinyin": "shěngshì",
+        "meaning": "economizar esforço, conveniente"
+      }
+    ],
+    "id": "local-1772396155856-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 什么？现在谁还自己动手扫地啊？",
+    "pinyin": "B: Shénme? Xiànzài shéi hái zìjǐ dòngshǒu sǎodì a?",
+    "translation": "B: O quê? Quem ainda varre o chão com as próprias mãos hoje em dia?",
+    "tokens": [
+      "什么",
+      "？",
+      "现在",
+      "谁",
+      "还",
+      "自己",
+      "动手",
+      "扫地",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê?"
+      },
+      {
+        "id": 9,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 10,
+        "word": "谁",
+        "pinyin": "shéi",
+        "meaning": "quem"
+      },
+      {
+        "id": 11,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 12,
+        "word": "自己",
+        "pinyin": "zìjǐ",
+        "meaning": "si mesmo, próprio"
+      },
+      {
+        "id": 13,
+        "word": "动手",
+        "pinyin": "dòngshǒu",
+        "meaning": "fazer com as próprias mãos, começar a trabalhar"
+      },
+      {
+        "id": 14,
+        "word": "扫地",
+        "pinyin": "sǎodì",
+        "meaning": "varrer o chão"
+      }
+    ],
+    "id": "local-1772396155856-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那你怎么打扫？",
+    "pinyin": "A: Nà nǐ zěnme dǎsǎo?",
+    "translation": "A: Então como você limpa?",
+    "tokens": [
+      "那",
+      "你",
+      "怎么",
+      "打扫",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então, aquilo"
+      },
+      {
+        "id": 16,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como?"
+      },
+      {
+        "id": 17,
+        "word": "打扫",
+        "pinyin": "dǎsǎo",
+        "meaning": "varrer, limpar"
+      }
+    ],
+    "id": "local-1772396155856-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 用扫地机器人呀，买一个小米X20 Pro放家里就行了。",
+    "pinyin": "B: Yòng sǎodì jīqìrén ya, mǎi yīgè Xiǎomǐ X20 Pro fàng jiālǐ jiù xíng le.",
+    "translation": "B: Use um robô aspirador, compre um Xiaomi X20 Pro e coloque em casa e pronto.",
+    "tokens": [
+      "用",
+      "扫地",
+      "机器人",
+      "呀",
+      "，",
+      "买",
+      "一个",
+      "小米",
+      "X20 Pro",
+      "放",
+      "家里",
+      "就",
+      "行",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 18,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      },
+      {
+        "id": 19,
+        "word": "扫地机器人",
+        "pinyin": "sǎodì jīqìrén",
+        "meaning": "robô aspirador"
+      },
+      {
+        "id": 20,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 21,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um (quantidade genérica)"
+      },
+      {
+        "id": 22,
+        "word": "小米",
+        "pinyin": "Xiǎomǐ",
+        "meaning": "Xiaomi (marca)"
+      },
+      {
+        "id": 23,
+        "word": "放",
+        "pinyin": "fàng",
+        "meaning": "colocar"
+      },
+      {
+        "id": 24,
+        "word": "家里",
+        "pinyin": "jiālǐ",
+        "meaning": "em casa"
+      },
+      {
+        "id": 25,
+        "word": "就行了",
+        "pinyin": "jiù xíng le",
+        "meaning": "já serve, já está bom"
+      }
+    ],
+    "id": "local-1772396155856-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦。然后呢？",
+    "pinyin": "A: Ó. Ránhòu ne?",
+    "translation": "A: Ah. E depois?",
+    "tokens": [
+      "哦",
+      "。",
+      "然后",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 26,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh, ah (interjeição)"
+      },
+      {
+        "id": 27,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "então, depois"
+      },
+      {
+        "id": 28,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772396155856-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 下载一个米家APP，连接上机器人，就可以直接控制了。",
+    "pinyin": "B: Xiàzài yīgè Mǐjiā APP, liánjiē shàng jīqìrén, jiù kěyǐ zhíjiē kòngzhì le.",
+    "translation": "B: Baixe o APP Mijia, conecte-o ao robô, e você pode controlá-lo diretamente.",
+    "tokens": [
+      "下载",
+      "一个",
+      "米家",
+      "APP",
+      "，",
+      "连接",
+      "上",
+      "机器人",
+      "，",
+      "就",
+      "可以",
+      "直接",
+      "控制",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 29,
+        "word": "下载",
+        "pinyin": "xiàzài",
+        "meaning": "baixar, download"
+      },
+      {
+        "id": 30,
+        "word": "一个",
+        "pinyin": "yīgè",
+        "meaning": "um (quantidade genérica)"
+      },
+      {
+        "id": 31,
+        "word": "米家",
+        "pinyin": "Mǐjiā",
+        "meaning": "Mijia (nome de APP da Xiaomi)"
+      },
+      {
+        "id": 32,
+        "word": "连接",
+        "pinyin": "liánjiē",
+        "meaning": "conectar"
+      },
+      {
+        "id": 33,
+        "word": "机器人",
+        "pinyin": "jīqìrén",
+        "meaning": "robô"
+      },
+      {
+        "id": 34,
+        "word": "就可以",
+        "pinyin": "jiù kěyǐ",
+        "meaning": "então já pode"
+      },
+      {
+        "id": 35,
+        "word": "直接",
+        "pinyin": "zhíjiē",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 36,
+        "word": "控制",
+        "pinyin": "kòngzhì",
+        "meaning": "controlar"
+      }
+    ],
+    "id": "local-1772396155856-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那它怎么知道哪里脏啊？",
+    "pinyin": "A: Nà tā zěnme zhīdào nǎlǐ zàng a?",
+    "translation": "A: Então como ele sabe onde está sujo?",
+    "tokens": [
+      "那",
+      "它",
+      "怎么",
+      "知道",
+      "哪里",
+      "脏",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então"
+      },
+      {
+        "id": 38,
+        "word": "它",
+        "pinyin": "tā",
+        "meaning": "ele/ela (para objetos/animais)"
+      },
+      {
+        "id": 39,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como?"
+      },
+      {
+        "id": 40,
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "saber"
+      },
+      {
+        "id": 41,
+        "word": "哪里",
+        "pinyin": "nǎlǐ",
+        "meaning": "onde?"
+      },
+      {
+        "id": 42,
+        "word": "脏",
+        "pinyin": "zàng",
+        "meaning": "sujo"
+      }
+    ],
+    "id": "local-1772396155856-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 通过激光导航，它能快速扫描全屋地图，自动规划路线，边边角角都能扫到。当然你也可以用APP手动控制它去指定区域。",
+    "pinyin": "B: Tōngguò jīguāng dǎoháng, tā néng kuàisù sāomiáo quánwū dìtú, zìdòng guīhuà lùxiàn, biānbiānjiǎojiǎo dōu néng sǎo dào. Dāngrán nǐ yě kěyǐ yòng APP shǒudòng kòngzhì tā qù zhǐdìng qūyù.",
+    "translation": "B: Através da navegação a laser, ele consegue escanear rapidamente o mapa de toda a casa, planejar automaticamente a rota, e varrer todos os cantinhos. Claro, você também pode usar o APP para controlá-lo manualmente para ir a áreas designadas.",
+    "tokens": [
+      "通过",
+      "激光",
+      "导航",
+      "，",
+      "它",
+      "能",
+      "快速",
+      "扫描",
+      "全屋",
+      "地图",
+      "，",
+      "自动",
+      "规划",
+      "路线",
+      "，",
+      "边边角角",
+      "都",
+      "能",
+      "扫到",
+      "。",
+      "当然",
+      "你",
+      "也",
+      "可以",
+      "用",
+      "APP",
+      "手动",
+      "控制",
+      "它",
+      "去",
+      "指定",
+      "区域",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 43,
+        "word": "通过",
+        "pinyin": "tōngguò",
+        "meaning": "através de, por meio de"
+      },
+      {
+        "id": 44,
+        "word": "激光",
+        "pinyin": "jīguāng",
+        "meaning": "laser"
+      },
+      {
+        "id": 45,
+        "word": "导航",
+        "pinyin": "dǎoháng",
+        "meaning": "navegação"
+      },
+      {
+        "id": 46,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 47,
+        "word": "快速",
+        "pinyin": "kuàisù",
+        "meaning": "rápido"
+      },
+      {
+        "id": 48,
+        "word": "扫描",
+        "pinyin": "sāomiáo",
+        "meaning": "escanear, digitalizar"
+      },
+      {
+        "id": 49,
+        "word": "全屋",
+        "pinyin": "quánwū",
+        "meaning": "toda a casa"
+      },
+      {
+        "id": 50,
+        "word": "地图",
+        "pinyin": "dìtú",
+        "meaning": "mapa"
+      },
+      {
+        "id": 51,
+        "word": "自动",
+        "pinyin": "zìdòng",
+        "meaning": "automático"
+      },
+      {
+        "id": 52,
+        "word": "规划",
+        "pinyin": "guīhuà",
+        "meaning": "planejar, plano"
+      },
+      {
+        "id": 53,
+        "word": "路线",
+        "pinyin": "lùxiàn",
+        "meaning": "rota, caminho"
+      },
+      {
+        "id": 54,
+        "word": "边边角角",
+        "pinyin": "biānbiānjiǎojiǎo",
+        "meaning": "cantos e recantos, cada cantinho"
+      },
+      {
+        "id": 55,
+        "word": "扫到",
+        "pinyin": "sǎo dào",
+        "meaning": "conseguir varrer/limpar"
+      },
+      {
+        "id": 56,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro, naturalmente"
+      },
+      {
+        "id": 57,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 58,
+        "word": "手动",
+        "pinyin": "shǒudòng",
+        "meaning": "manual"
+      },
+      {
+        "id": 59,
+        "word": "指定",
+        "pinyin": "zhǐdìng",
+        "meaning": "designar, especificar"
+      },
+      {
+        "id": 60,
+        "word": "区域",
+        "pinyin": "qūyù",
+        "meaning": "área, região"
+      }
+    ],
+    "id": "local-1772396155856-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 听起来挺智能的嘛。你用过吗？",
+    "pinyin": "A: Tīng qǐlái tǐng zhìnéng de ma. Nǐ yòngguò ma?",
+    "translation": "A: Parece bem inteligente. Você já usou?",
+    "tokens": [
+      "听",
+      "起来",
+      "挺",
+      "智能",
+      "的",
+      "嘛",
+      "。",
+      "你",
+      "用过",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 61,
+        "word": "听起来",
+        "pinyin": "tīng qǐlái",
+        "meaning": "parecer (ao ouvir), soar"
+      },
+      {
+        "id": 62,
+        "word": "挺",
+        "pinyin": "tǐng",
+        "meaning": "muito, bastante (coloquial)"
+      },
+      {
+        "id": 63,
+        "word": "智能",
+        "pinyin": "zhìnéng",
+        "meaning": "inteligente, smart"
+      },
+      {
+        "id": 64,
+        "word": "嘛",
+        "pinyin": "ma",
+        "meaning": "partícula modal que indica obviedade ou confirmação"
+      },
+      {
+        "id": 65,
+        "word": "用过",
+        "pinyin": "yòngguò",
+        "meaning": "já usou (verbo + 过 indica experiência)"
+      },
+      {
+        "id": 66,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772396155856-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 当然用了。最近家里养猫，到处都是毛，这款吸力强，又是扫又是拖的，又干净又省心。",
+    "pinyin": "B: Dāngrán yòng le. Zuìjìn jiālǐ yǎng māo, dàochù dōu shì máo, zhè kuǎn xīlì qiáng, yòu shì sǎo yòu shì tuō de, yòu gānjìng yòu shěngxīn.",
+    "translation": "B: Claro que usei. Recentemente, criei um gato em casa, tem pelo por todo lado, este modelo tem forte poder de sucção, varre e esfrega, é limpo e sem preocupações.",
+    "tokens": [
+      "当然",
+      "用",
+      "了",
+      "。",
+      "最近",
+      "家里",
+      "养",
+      "猫",
+      "，",
+      "到处",
+      "都",
+      "是",
+      "毛",
+      "，",
+      "这",
+      "款",
+      "吸力",
+      "强",
+      "，",
+      "又",
+      "是",
+      "扫",
+      "又",
+      "是",
+      "拖",
+      "的",
+      "，",
+      "又",
+      "干净",
+      "又",
+      "省心",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 67,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro, naturalmente"
+      },
+      {
+        "id": 68,
+        "word": "用了",
+        "pinyin": "yòng le",
+        "meaning": "usou (com 了 para indicar ação concluída)"
+      },
+      {
+        "id": 69,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 70,
+        "word": "家里",
+        "pinyin": "jiālǐ",
+        "meaning": "em casa"
+      },
+      {
+        "id": 71,
+        "word": "养猫",
+        "pinyin": "yǎng māo",
+        "meaning": "criar gato, ter gato de estimação"
+      },
+      {
+        "id": 72,
+        "word": "到处",
+        "pinyin": "dàochù",
+        "meaning": "por todo lado"
+      },
+      {
+        "id": 73,
+        "word": "毛",
+        "pinyin": "máo",
+        "meaning": "pelo"
+      },
+      {
+        "id": 74,
+        "word": "这款",
+        "pinyin": "zhè kuǎn",
+        "meaning": "este modelo/tipo"
+      },
+      {
+        "id": 75,
+        "word": "吸力",
+        "pinyin": "xīlì",
+        "meaning": "força de sucção"
+      },
+      {
+        "id": 76,
+        "word": "强",
+        "pinyin": "qiáng",
+        "meaning": "forte"
+      },
+      {
+        "id": 77,
+        "word": "又是...又是...",
+        "pinyin": "yòu shì... yòu shì...",
+        "meaning": "tanto... quanto... (expressão de simultaneidade)"
+      },
+      {
+        "id": 78,
+        "word": "扫",
+        "pinyin": "sǎo",
+        "meaning": "varrer"
+      },
+      {
+        "id": 79,
+        "word": "拖",
+        "pinyin": "tuō",
+        "meaning": "arrastar, esfregar (chão)"
+      },
+      {
+        "id": 80,
+        "word": "干净",
+        "pinyin": "gānjìng",
+        "meaning": "limpo"
+      },
+      {
+        "id": 81,
+        "word": "省心",
+        "pinyin": "shěngxīn",
+        "meaning": "economizar preocupação, sem preocupações"
+      }
+    ],
+    "id": "local-1772396155856-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我下次也试试。怎么买啊？",
+    "pinyin": "A: Wǒ xià cì yě shìshì. Zěnme mǎi a?",
+    "translation": "A: Da próxima vez eu também vou experimentar. Como eu compro?",
+    "tokens": [
+      "我",
+      "下次",
+      "也",
+      "试试",
+      "。",
+      "怎么",
+      "买",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 82,
+        "word": "下次",
+        "pinyin": "xià cì",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 83,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 84,
+        "word": "试试",
+        "pinyin": "shìshì",
+        "meaning": "experimentar, tentar"
+      },
+      {
+        "id": 85,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como?"
+      },
+      {
+        "id": 86,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772396155856-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 在小米商城或者电商平台上买就行，用手机支付，有时候搞活动还能便宜好几百呢。",
+    "pinyin": "B: Zài Xiǎomǐ shāngchéng huòzhě diànshāng píngtái shàng mǎi jiù xíng, yòng shǒujī zhīfù, yǒu shíhou gǎo huódòng hái néng piányi hǎo jǐ bǎi ne.",
+    "translation": "B: É só comprar na loja online da Xiaomi ou em plataformas de e-commerce, pague com o celular, às vezes em promoções pode ficar centenas de yuans mais barato.",
+    "tokens": [
+      "在",
+      "小米",
+      "商城",
+      "或者",
+      "电商",
+      "平台",
+      "上",
+      "买",
+      "就",
+      "行",
+      "，",
+      "用",
+      "手机",
+      "支付",
+      "，",
+      "有",
+      "时候",
+      "搞",
+      "活动",
+      "还",
+      "能",
+      "便宜",
+      "好",
+      "几百",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 87,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "em, estar em"
+      },
+      {
+        "id": 88,
+        "word": "小米商城",
+        "pinyin": "Xiǎomǐ shāngchéng",
+        "meaning": "Loja online da Xiaomi"
+      },
+      {
+        "id": 89,
+        "word": "或者",
+        "pinyin": "huòzhě",
+        "meaning": "ou"
+      },
+      {
+        "id": 90,
+        "word": "电商",
+        "pinyin": "diànshāng",
+        "meaning": "e-commerce"
+      },
+      {
+        "id": 91,
+        "word": "平台",
+        "pinyin": "píngtái",
+        "meaning": "plataforma"
+      },
+      {
+        "id": 92,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 93,
+        "word": "就行",
+        "pinyin": "jiù xíng",
+        "meaning": "já serve, está bom (só fazer isso e está resolvido)"
+      },
+      {
+        "id": 94,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 95,
+        "word": "支付",
+        "pinyin": "zhīfù",
+        "meaning": "pagar, pagamento"
+      },
+      {
+        "id": 96,
+        "word": "有时候",
+        "pinyin": "yǒu shíhou",
+        "meaning": "às vezes"
+      },
+      {
+        "id": 97,
+        "word": "搞活动",
+        "pinyin": "gǎo huódòng",
+        "meaning": "fazer uma promoção/evento"
+      },
+      {
+        "id": 98,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda, também"
+      },
+      {
+        "id": 99,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 100,
+        "word": "便宜",
+        "pinyin": "piányi",
+        "meaning": "barato"
+      },
+      {
+        "id": 101,
+        "word": "好几百",
+        "pinyin": "hǎo jǐ bǎi",
+        "meaning": "várias centenas (de yuans)"
+      },
+      {
+        "id": 102,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula modal que indica surpresa, ênfase"
+      }
+    ],
+    "id": "local-1772396155856-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 真的啊？那我马上就下单！",
+    "pinyin": "A: Zhēnde a? Nà wǒ mǎshàng jiù xiàdān!",
+    "translation": "A: Sério? Então vou fazer o pedido agora mesmo!",
+    "tokens": [
+      "真的",
+      "啊",
+      "？",
+      "那",
+      "我",
+      "马上",
+      "就",
+      "下单",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 103,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "de verdade, sério"
+      },
+      {
+        "id": 104,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula exclamativa"
+      },
+      {
+        "id": 105,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então"
+      },
+      {
+        "id": 106,
+        "word": "马上",
+        "pinyin": "mǎshàng",
+        "meaning": "imediatamente, agora mesmo"
+      },
+      {
+        "id": 107,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então (indicando consequência ou prontidão)"
+      },
+      {
+        "id": 108,
+        "word": "下单",
+        "pinyin": "xiàdān",
+        "meaning": "fazer um pedido, encomendar"
+      }
+    ],
+    "id": "local-1772396155856-12",
+    "language": "Chinês"
+  }
+]

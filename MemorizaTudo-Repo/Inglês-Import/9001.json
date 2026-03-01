@@ -1,0 +1,623 @@
+[
+  {
+    "chinese": "A: Hey, why is there so much dust in this house? What's the easiest way to clean it up?",
+    "pinyin": "",
+    "translation": "A: Ei, por que tem tanta poeira nesta casa? Qual é a maneira mais fácil de limpar?",
+    "tokens": [
+      "A:",
+      "Hey,",
+      "why",
+      "is",
+      "there",
+      "so",
+      "much",
+      "dust",
+      "in",
+      "this",
+      "house?",
+      "What's",
+      "the",
+      "easiest",
+      "way",
+      "to",
+      "clean",
+      "it",
+      "up?"
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "dust",
+        "pinyin": "",
+        "meaning": "poeira"
+      },
+      {
+        "id": 13,
+        "word": "easiest",
+        "pinyin": "",
+        "meaning": "mais fácil"
+      },
+      {
+        "id": 16,
+        "word": "clean",
+        "pinyin": "",
+        "meaning": "limpar"
+      }
+    ],
+    "id": "local-1772396131083-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What? Who still sweeps the floor by hand these days?",
+    "pinyin": "",
+    "translation": "B: O quê? Quem ainda varre o chão à mão hoje em dia?",
+    "tokens": [
+      "B:",
+      "What?",
+      "Who",
+      "still",
+      "sweeps",
+      "the",
+      "floor",
+      "by",
+      "hand",
+      "these",
+      "days?"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "sweeps",
+        "pinyin": "",
+        "meaning": "varre"
+      },
+      {
+        "id": 6,
+        "word": "floor",
+        "pinyin": "",
+        "meaning": "chão"
+      },
+      {
+        "id": 8,
+        "word": "hand",
+        "pinyin": "",
+        "meaning": "à mão"
+      }
+    ],
+    "id": "local-1772396131083-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Well, how do you clean, then?",
+    "pinyin": "",
+    "translation": "A: Bem, como você limpa, então?",
+    "tokens": [
+      "A:",
+      "Well,",
+      "how",
+      "do",
+      "you",
+      "clean,",
+      "then?"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "clean",
+        "pinyin": "",
+        "meaning": "limpa"
+      }
+    ],
+    "id": "local-1772396131083-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I use a robot vacuum. Just get a Xiaomi X20 Pro and set it up at home.",
+    "pinyin": "",
+    "translation": "B: Eu uso um aspirador robô. Basta comprar um Xiaomi X20 Pro e configurá-lo em casa.",
+    "tokens": [
+      "B:",
+      "I",
+      "use",
+      "a",
+      "robot",
+      "vacuum.",
+      "Just",
+      "get",
+      "a",
+      "Xiaomi",
+      "X20",
+      "Pro",
+      "and",
+      "set",
+      "it",
+      "up",
+      "at",
+      "home."
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "vacuum",
+        "pinyin": "",
+        "meaning": "aspirador robô"
+      },
+      {
+        "id": 13,
+        "word": "set",
+        "pinyin": "",
+        "meaning": "configurar"
+      }
+    ],
+    "id": "local-1772396131083-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh. And then?",
+    "pinyin": "",
+    "translation": "A: Ah. E depois?",
+    "tokens": [
+      "A:",
+      "Oh.",
+      "And",
+      "then?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "then?",
+        "pinyin": "",
+        "meaning": "depois"
+      }
+    ],
+    "id": "local-1772396131083-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Download the Mi Home app, connect it to the robot, and you can control it directly.",
+    "pinyin": "",
+    "translation": "B: Baixe o aplicativo Mi Home, conecte-o ao robô, e você pode controlá-lo diretamente.",
+    "tokens": [
+      "B:",
+      "Download",
+      "the",
+      "Mi",
+      "Home",
+      "app,",
+      "connect",
+      "it",
+      "to",
+      "the",
+      "robot,",
+      "and",
+      "you",
+      "can",
+      "control",
+      "it",
+      "directly."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Download",
+        "pinyin": "",
+        "meaning": "Baixe"
+      },
+      {
+        "id": 5,
+        "word": "app,",
+        "pinyin": "",
+        "meaning": "aplicativo"
+      },
+      {
+        "id": 6,
+        "word": "connect",
+        "pinyin": "",
+        "meaning": "conecte"
+      },
+      {
+        "id": 14,
+        "word": "control",
+        "pinyin": "",
+        "meaning": "controlar"
+      },
+      {
+        "id": 16,
+        "word": "directly.",
+        "pinyin": "",
+        "meaning": "diretamente"
+      }
+    ],
+    "id": "local-1772396131083-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: But how does it know where it's dirty?",
+    "pinyin": "",
+    "translation": "A: Mas como ele sabe onde está sujo?",
+    "tokens": [
+      "A:",
+      "But",
+      "how",
+      "does",
+      "it",
+      "know",
+      "where",
+      "it's",
+      "dirty?"
+    ],
+    "keywords": [
+      {
+        "id": 8,
+        "word": "dirty?",
+        "pinyin": "",
+        "meaning": "sujo"
+      }
+    ],
+    "id": "local-1772396131083-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: With laser navigation, it can quickly scan the whole house map and automatically plan its route, sweeping every corner. Of course, you can also manually control it to go to specific areas using the app.",
+    "pinyin": "",
+    "translation": "B: Com navegação a laser, ele pode escanear rapidamente o mapa de toda a casa e planejar automaticamente sua rota, varrendo cada canto. Claro, você também pode controlá-lo manualmente para ir a áreas específicas usando o aplicativo.",
+    "tokens": [
+      "B:",
+      "With",
+      "laser",
+      "navigation,",
+      "it",
+      "can",
+      "quickly",
+      "scan",
+      "the",
+      "whole",
+      "house",
+      "map",
+      "and",
+      "automatically",
+      "plan",
+      "its",
+      "route,",
+      "sweeping",
+      "every",
+      "corner.",
+      "Of",
+      "course,",
+      "you",
+      "can",
+      "also",
+      "manually",
+      "control",
+      "it",
+      "to",
+      "go",
+      "to",
+      "specific",
+      "areas",
+      "using",
+      "the",
+      "app."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "navigation,",
+        "pinyin": "",
+        "meaning": "navegação a laser"
+      },
+      {
+        "id": 7,
+        "word": "scan",
+        "pinyin": "",
+        "meaning": "escanear"
+      },
+      {
+        "id": 11,
+        "word": "map",
+        "pinyin": "",
+        "meaning": "mapa da casa"
+      },
+      {
+        "id": 13,
+        "word": "automatically",
+        "pinyin": "",
+        "meaning": "automaticamente"
+      },
+      {
+        "id": 14,
+        "word": "plan",
+        "pinyin": "",
+        "meaning": "planejar"
+      },
+      {
+        "id": 16,
+        "word": "route,",
+        "pinyin": "",
+        "meaning": "rota"
+      },
+      {
+        "id": 17,
+        "word": "sweeping",
+        "pinyin": "",
+        "meaning": "varrendo"
+      },
+      {
+        "id": 19,
+        "word": "corner.",
+        "pinyin": "",
+        "meaning": "canto"
+      },
+      {
+        "id": 25,
+        "word": "manually",
+        "pinyin": "",
+        "meaning": "manualmente"
+      },
+      {
+        "id": 32,
+        "word": "areas",
+        "pinyin": "",
+        "meaning": "áreas específicas"
+      },
+      {
+        "id": 35,
+        "word": "app.",
+        "pinyin": "",
+        "meaning": "aplicativo"
+      }
+    ],
+    "id": "local-1772396131083-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Sounds pretty smart. Have you used it?",
+    "pinyin": "",
+    "translation": "A: Parece bem inteligente. Você já usou?",
+    "tokens": [
+      "A:",
+      "Sounds",
+      "pretty",
+      "smart.",
+      "Have",
+      "you",
+      "used",
+      "it?"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "smart.",
+        "pinyin": "",
+        "meaning": "inteligente"
+      }
+    ],
+    "id": "local-1772396131083-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Of course, I have. We recently got a cat at home, and there's fur everywhere. This model has strong suction, and it both sweeps and mops—clean and hassle-free.",
+    "pinyin": "",
+    "translation": "B: Claro que sim. Nós recentemente pegamos um gato em casa, e tem pelo por toda parte. Este modelo tem forte sucção, e ele tanto varre quanto passa pano — limpo e sem complicações.",
+    "tokens": [
+      "B:",
+      "Of",
+      "course,",
+      "I",
+      "have.",
+      "We",
+      "recently",
+      "got",
+      "a",
+      "cat",
+      "at",
+      "home,",
+      "and",
+      "there's",
+      "fur",
+      "everywhere.",
+      "This",
+      "model",
+      "has",
+      "strong",
+      "suction,",
+      "and",
+      "it",
+      "both",
+      "sweeps",
+      "and",
+      "mops",
+      "—",
+      "clean",
+      "and",
+      "hassle-free."
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "recently",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 9,
+        "word": "cat",
+        "pinyin": "",
+        "meaning": "gato"
+      },
+      {
+        "id": 14,
+        "word": "fur",
+        "pinyin": "",
+        "meaning": "pelo"
+      },
+      {
+        "id": 20,
+        "word": "suction,",
+        "pinyin": "",
+        "meaning": "forte sucção"
+      },
+      {
+        "id": 24,
+        "word": "sweeps",
+        "pinyin": "",
+        "meaning": "varre"
+      },
+      {
+        "id": 26,
+        "word": "mops",
+        "pinyin": "",
+        "meaning": "passa pano"
+      },
+      {
+        "id": 30,
+        "word": "hassle-free.",
+        "pinyin": "",
+        "meaning": "sem complicações"
+      }
+    ],
+    "id": "local-1772396131083-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I might give it a try next time. How do I buy one?",
+    "pinyin": "",
+    "translation": "A: Talvez eu experimente da próxima vez. Como eu compro um?",
+    "tokens": [
+      "A:",
+      "I",
+      "might",
+      "give",
+      "it",
+      "a",
+      "try",
+      "next",
+      "time.",
+      "How",
+      "do",
+      "I",
+      "buy",
+      "one?"
+    ],
+    "keywords": [
+      {
+        "id": 6,
+        "word": "try",
+        "pinyin": "",
+        "meaning": "experimentar"
+      },
+      {
+        "id": 12,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772396131083-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Just get it on the Xiaomi Mall or e-commerce platforms. Pay with your phone, and sometimes during promotions, you can save a few hundred bucks.",
+    "pinyin": "",
+    "translation": "B: É só comprar no Xiaomi Mall ou em plataformas de e-commerce. Pague com seu celular, e às vezes, durante promoções, você pode economizar algumas centenas de dólares.",
+    "tokens": [
+      "B:",
+      "Just",
+      "get",
+      "it",
+      "on",
+      "the",
+      "Xiaomi",
+      "Mall",
+      "or",
+      "e-commerce",
+      "platforms.",
+      "Pay",
+      "with",
+      "your",
+      "phone,",
+      "and",
+      "sometimes",
+      "during",
+      "promotions,",
+      "you",
+      "can",
+      "save",
+      "a",
+      "few",
+      "hundred",
+      "bucks."
+    ],
+    "keywords": [
+      {
+        "id": 9,
+        "word": "e-commerce",
+        "pinyin": "",
+        "meaning": "comércio eletrônico"
+      },
+      {
+        "id": 10,
+        "word": "platforms.",
+        "pinyin": "",
+        "meaning": "plataformas"
+      },
+      {
+        "id": 11,
+        "word": "Pay",
+        "pinyin": "",
+        "meaning": "Pagar"
+      },
+      {
+        "id": 18,
+        "word": "promotions,",
+        "pinyin": "",
+        "meaning": "promoções"
+      },
+      {
+        "id": 21,
+        "word": "save",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 25,
+        "word": "bucks.",
+        "pinyin": "",
+        "meaning": "dólares"
+      }
+    ],
+    "id": "local-1772396131083-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Really? Then I’m ordering one right now!",
+    "pinyin": "",
+    "translation": "A: Sério? Então estou pedindo um agora mesmo!",
+    "tokens": [
+      "A:",
+      "Really?",
+      "Then",
+      "I’m",
+      "ordering",
+      "one",
+      "right",
+      "now!"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "ordering",
+        "pinyin": "",
+        "meaning": "pedindo"
+      },
+      {
+        "id": 7,
+        "word": "now!",
+        "pinyin": "",
+        "meaning": "agora mesmo"
+      }
+    ],
+    "id": "local-1772396131083-12",
+    "language": "Inglês"
+  }
+]
