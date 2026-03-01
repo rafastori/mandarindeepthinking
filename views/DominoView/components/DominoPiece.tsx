@@ -9,9 +9,10 @@ interface DominoPieceProps {
     disabled?: boolean;
     canPlay?: boolean;
     isUnplayableInHand?: boolean; // New prop for the "dim unplayable pieces" feature
+    highlightSide?: 'none' | 'left' | 'right'; // For the connected train visual
     onClick?: () => void;
     onDoubleClick?: () => void;
-    size?: 'sm' | 'md' | 'lg' | 'xl';
+    size?: 'sm' | 'md' | 'lg' | 'xl' | 'giant';
 }
 
 export const DominoPiece: React.FC<DominoPieceProps> = ({
@@ -22,6 +23,7 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
     disabled = false,
     canPlay = false,
     isUnplayableInHand = false,
+    highlightSide = 'none',
     onClick,
     onDoubleClick,
     size = 'md'
@@ -36,7 +38,8 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         sm: { container: 'min-w-[80px]', text: 'text-[10px]', badge: 'w-2.5 h-2.5 text-[6px]', padding: 'p-1', height: 'h-[60px]', badgePos: 'top-0.5 right-0.5' },
         md: { container: 'min-w-[100px]', text: 'text-sm', badge: 'w-3.5 h-3.5 text-[8px]', padding: 'p-1.5', height: 'h-[80px]', badgePos: 'top-1 right-1' },
         lg: { container: 'min-w-[130px]', text: 'text-base', badge: 'w-4 h-4 text-[9px]', padding: 'p-2', height: 'h-[110px]', badgePos: 'top-1 right-1' },
-        xl: { container: 'min-w-[180px]', text: 'text-lg', badge: 'w-5 h-5 text-[10px]', padding: 'p-3', height: 'h-[140px]', badgePos: 'top-1.5 right-1.5' } // For the single end view on trains
+        xl: { container: 'min-w-[180px] min-h-[100px]', text: 'text-lg', badge: 'w-5 h-5 text-[10px]', padding: 'p-3', height: 'h-[140px]', badgePos: 'top-1.5 right-1.5' }, // For the single end view on trains
+        giant: { container: 'w-[280px] sm:w-[320px] min-h-[140px] sm:min-h-[160px]', text: 'text-2xl sm:text-3xl', badge: 'w-8 h-8 text-sm', padding: 'p-6 sm:p-8', height: 'h-[400px] sm:h-[480px]', badgePos: 'top-3 right-3' }
     };
 
     const config = sizeConfig[size];
@@ -75,14 +78,22 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         return {
             bg: 'bg-slate-50', // Very clean whitish/gray
             text: 'text-slate-800',
-            border: isLeft ? 'border-r-2 border-slate-200' : 'border-t-2 border-slate-200',
-            badgeBg: 'bg-slate-800',
-            badgeText: 'text-slate-50'
         };
     };
 
-    const leftColors = getColors(true);
-    const rightColors = getColors(false);
+    const applyHighlight = (baseColors: any, isHighlighted: boolean) => {
+        if (!isHighlighted) return baseColors;
+        return {
+            ...baseColors,
+            bg: 'bg-yellow-200 shadow-inner',
+            text: 'text-yellow-950 font-black',
+            badgeBg: 'bg-yellow-500 animate-pulse',
+            badgeText: 'text-yellow-950'
+        };
+    };
+
+    const leftColors = applyHighlight(getColors(true), highlightSide === 'left');
+    const rightColors = applyHighlight(getColors(false), highlightSide === 'right');
 
     // Dynamic container classes
     const containerClasses = `

@@ -399,7 +399,9 @@ export const useDominoRoom = (userId?: string) => {
                 termPairs = summarizedPairs.map((t, idx) => ({
                     index: idx,
                     term: t.term,
-                    definition: t.definition
+                    definition: t.definition,
+                    originalRefId: selected13[idx]?.originalRefId,
+                    language: selected13[idx]?.language || finalConfig.sourceLang
                 }));
             } else {
                 // Modo IA Normal (Gemini)
@@ -416,7 +418,8 @@ export const useDominoRoom = (userId?: string) => {
                 termPairs = terms.map((t, idx) => ({
                     index: idx,
                     term: t.term,
-                    definition: t.definition
+                    definition: t.definition,
+                    language: finalConfig.sourceLang
                 }));
             }
 

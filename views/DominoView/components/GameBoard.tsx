@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Icon from '../../../components/Icon';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { DominoRoom, DominoPiece as DominoPieceType, Train, EmoteBroadcast } from '../types';
 import { DominoPiece } from './DominoPiece';
-import { PlayerHand } from './PlayerHand';
-import { HandViewModal } from './HandViewModal';
-import { TrainViewModal } from './TrainViewModal';
+import { PlayerHandCarousel } from './PlayerHandCarousel';
 import { DominoPieceModal } from './DominoPieceModal';
 import { EmotePanel, EmoteDisplay } from './EmotePanel';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
@@ -39,8 +38,9 @@ export const GameBoard: React.FC<GameBoardProps> = ({
     const [localHand, setLocalHand] = useState<DominoPieceType[] | null>(null);
 
     const [showHandModal, setShowHandModal] = useState(false);
-    const [viewingTrain, setViewingTrain] = useState<Train | null>(null);
+    const [isCarouselOpen, setIsCarouselOpen] = useState(false);
     const [viewingPiece, setViewingPiece] = useState<DominoPieceType | null>(null);
+    const [activeOpponentTrainId, setActiveOpponentTrainId] = useState<string | null>(null);
     const [autoPassPending, setAutoPassPending] = useState(false);
     const [turnTimer, setTurnTimer] = useState(60);
 
@@ -167,9 +167,10 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
     const { stats, updateStats } = useUserProfile(currentUserId);
 
-    const handlePlaceOnTrain = async (train: Train) => {
-        if (!selectedPiece || !isMyTurn) return;
-        const { canPlay, needsFlip } = canPlayOnTrain(selectedPiece, train);
+    const handlePlaceOnTrain = async (train: Train, overridePiece?: DominoPieceType) => {
+        const pieceToPlay = overridePiece || selectedPiece;
+        if (!pieceToPlay || !isMyTurn) return;
+        const { canPlay, needsFlip } = canPlayOnTrain(pieceToPlay, train);
         if (!canPlay) return;
 
         const connectedIndex = train.openEndIndex;
@@ -178,7 +179,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         const translation = termPair?.definition || '';
         const refId = termPair?.originalRefId;
 
-        const success = await onPlacePiece(selectedPiece.id, train.id, needsFlip);
+        const success = await onPlacePiece(pieceToPlay.id, train.id, needsFlip);
         if (success) {
             setSelectedPiece(null);
             setLocalHand(null);
@@ -217,6 +218,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 }, 500);
             } else {
                 setSelectedPiece(drawnPiece);
+                setIsCarouselOpen(true); // Open carousel to show the playable drawn piece
             }
         }
     };
@@ -288,174 +290,235 @@ export const GameBoard: React.FC<GameBoardProps> = ({
                 </div>
             </div>
 
-            {/* Board Area: Stacked Trains (Central 60%) */}
-            <div className="flex-1 overflow-y-auto overflow-x-hidden relative scrollbar-hide bg-[#1c2e26] p-4 flex flex-col gap-4">
+            {/* Infinite Canvas Area: Stacked Trains (Central 60%) */}
+            <div className="flex-1 overflow-hidden relative bg-[#1c2e26] cursor-grab active:cursor-grabbing">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
 
-                <EmoteDisplay emotes={room.emotes || []} currentUserId={currentUserId} />
+                <TransformWrapper
+                    initialScale={0.8}
+                    minScale={0.2}
+                    maxScale={2}
+                    centerOnInit={true}
+                    limitToBounds={false}
+                >
+                    {({ zoomIn, zoomOut, resetTransform }) => (
+                        <>
+                            {/* Canvas Controls */}
+                            <div className="absolute top-4 left-4 z-20 flex flex-col gap-2">
+                                <button onClick={() => zoomIn(0.2, 300)} className="w-10 h-10 flex items-center justify-center bg-slate-800/90 text-slate-300 rounded-full shadow-lg border border-slate-600 hover:bg-slate-700 hover:text-white transition-all backdrop-blur-sm"><Icon name="zoom-in" size={20} /></button>
+                                <button onClick={() => zoomOut(0.2, 300)} className="w-10 h-10 flex items-center justify-center bg-slate-800/90 text-slate-300 rounded-full shadow-lg border border-slate-600 hover:bg-slate-700 hover:text-white transition-all backdrop-blur-sm"><Icon name="zoom-out" size={20} /></button>
+                                <button onClick={() => resetTransform()} className="w-10 h-10 flex items-center justify-center bg-slate-800/90 text-slate-300 rounded-full shadow-lg border border-slate-600 hover:bg-slate-700 hover:text-white transition-all backdrop-blur-sm mt-2"><Icon name="maximize" size={18} /></button>
+                            </div>
 
-                {onSendEmote && (
-                    <div className="absolute top-4 right-4 z-20 opacity-50 hover:opacity-100 transition-opacity">
-                        <EmotePanel onSendEmote={onSendEmote} currentUserId={currentUserId} currentUserName={currentPlayer?.name || 'Jogador'} />
-                    </div>
-                )}
+                            <TransformComponent wrapperClass="w-full h-full" contentClass="w-full h-full flex flex-col items-center justify-center p-32">
+                                <EmoteDisplay emotes={room.emotes || []} currentUserId={currentUserId} />
 
-                {/* Hub Piece Marker */}
-                {room.hubPiece && (
-                    <div className="self-center flex flex-col items-center mb-2 z-10">
-                        <span className="text-[10px] font-bold text-emerald-300/60 uppercase tracking-widest mb-1">Início</span>
-                        <div className="scale-75 opacity-90">
-                            <DominoPiece piece={room.hubPiece} onClick={() => setViewingPiece(room.hubPiece!)} />
-                        </div>
-                    </div>
-                )}
-
-                {/* Vertical Train List. Ordered: Mexican -> My Train -> Others */}
-                <div className="flex flex-col gap-4 z-10 max-w-2xl mx-auto w-full">
-                    {[
-                        room.trains.find(t => t.ownerId === null),
-                        room.trains.find(t => t.ownerId === currentUserId),
-                        ...room.trains.filter(t => t.ownerId !== null && t.ownerId !== currentUserId)
-                    ].filter(Boolean).map(train => {
-                        if (!train) return null;
-
-                        const isMexican = train.ownerId === null;
-                        const isMine = train.ownerId === currentUserId;
-                        const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
-                        const canAccess = isMexican || isMine || train.isOpen;
-                        const isPlayable = playableTrains.some(t => t.id === train.id);
-
-                        // Calculate the single "End Piece" visualization natively using CSS
-                        const endText = train.openEndText;
-                        const endIdx = train.openEndIndex;
-
-                        return (
-                            <div key={train.id}
-                                onClick={() => isPlayable ? handlePlaceOnTrain(train) : setViewingTrain(train)}
-                                className={`
-                                flex items-center bg-slate-800 rounded-xl shadow-lg border-2 transition-all p-2 pl-3 relative overflow-hidden group h-[80px]
-                                ${isPlayable ? 'border-green-400 ring-2 ring-green-900/50 cursor-pointer shadow-green-900/40 hover:-translate-y-0.5 hover:shadow-xl' : 'border-slate-700 cursor-pointer hover:bg-slate-750'}
-                                ${!canAccess ? 'opacity-50 grayscale hover:grayscale-0 transition-all' : ''}
-                            `}>
-                                {/* Tiny Info Col */}
-                                <div className="flex flex-col items-center justify-center w-[50px] flex-shrink-0 relative z-10 select-none">
-                                    <div className="relative">
-                                        <span className="text-3xl filter drop-shadow-md">{isMexican ? '🚂' : isMine ? '🏠' : train.isOpen ? '🔓' : '🔒'}</span>
-                                        {train.isOpen && !isMexican && (
-                                            <div className="absolute -top-1 -right-2 bg-yellow-500 w-3 h-3 rounded-full border-2 border-slate-800 animate-pulse" title="Trem Aberto" />
-                                        )}
+                                {onSendEmote && (
+                                    <div className="absolute top-4 right-4 z-20 opacity-50 hover:opacity-100 transition-opacity">
+                                        <EmotePanel onSendEmote={onSendEmote} currentUserId={currentUserId} currentUserName={currentPlayer?.name || 'Jogador'} />
                                     </div>
-                                    <div className="bg-slate-900/80 text-slate-300 text-[10px] font-black px-1.5 py-0.5 mt-1 rounded ring-1 ring-slate-700 shadow-inner">
-                                        {train.pieces.length}
-                                    </div>
-                                </div>
+                                )}
 
-                                {/* The End Piece "Mouth" */}
-                                <div className="flex-1 relative z-10 h-[64px] ml-2 min-w-0">
-                                    {train.pieces.length === 0 ? (
-                                        <div className="w-full h-full bg-slate-700/50 rounded-lg border-2 border-dashed border-slate-600 flex items-center justify-between text-slate-400 px-3 overflow-hidden">
-                                            <span className="text-sm font-bold truncate flex-1 break-words leading-tight" title={endText}>{endText}</span>
-                                            <span className="text-xs font-black opacity-50 ml-2 flex-shrink-0">{endIdx}</span>
-                                        </div>
-                                    ) : (
-                                        <div className={`
-                                            flex items-center justify-between w-full h-full bg-slate-50 rounded-lg shadow-inner border-b-4 transition-all px-3 overflow-hidden
-                                            ${isPlayable ? 'bg-emerald-50 border-emerald-400 ring-2 ring-emerald-400' : 'border-slate-300'}
-                                        `}>
-                                            <span className={`text-base sm:text-lg font-black line-clamp-2 leading-tight flex-1 text-left mr-2 ${isPlayable ? 'text-emerald-950' : 'text-slate-800'}`}>
-                                                {endText}
-                                            </span>
-                                            <div className={`flex items-center justify-center rounded-md px-2 py-1 flex-shrink-0 ${isPlayable ? 'bg-emerald-200/50' : 'bg-slate-200/50'}`}>
-                                                <span className={`text-sm font-black ${isPlayable ? 'text-emerald-900' : 'text-slate-600'}`}>{endIdx}</span>
+                                <div className="flex flex-col gap-24 items-start pb-48 w-max">
+                                    {/* Hub Piece Marker */}
+                                    {room.hubPiece && (
+                                        <div className="self-center flex flex-col items-center z-10 sticky left-1/2 -translate-x-1/2">
+                                            <span className="text-sm font-black text-emerald-300/80 uppercase tracking-widest mb-4 bg-emerald-900/30 px-6 py-2 rounded-full border border-emerald-500/30 backdrop-blur-md shadow-2xl">Ponto de Início</span>
+                                            <div className="scale-110 drop-shadow-2xl">
+                                                <DominoPiece piece={room.hubPiece} onClick={() => setViewingPiece(room.hubPiece!)} size="giant" />
                                             </div>
                                         </div>
                                     )}
-                                </div>
 
-                                {/* Play Overlay */}
-                                {isPlayable && (
-                                    <div className="absolute inset-0 bg-green-500/10 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <div className="bg-green-500 text-white font-black text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-2">
-                                            <Icon name="check" size={14} /> JOGAR
-                                        </div>
-                                    </div>
-                                )}
-                                {/* Expand Overlay */}
-                                {!isPlayable && (
-                                    <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <div className="bg-slate-800 text-slate-300 font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full shadow-lg flex items-center gap-2 border border-slate-700 backdrop-blur-sm">
-                                            <Icon name="search" size={12} /> Ver Fila
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        )
-                    })}
-                </div>
+                                    {/* Render Selected Trains */}
+                                    {[
+                                        room.trains.find(t => t.ownerId === null),
+                                        room.trains.find(t => t.ownerId === currentUserId),
+                                        ...(activeOpponentTrainId ? [room.trains.find(t => t.id === activeOpponentTrainId)] : [])
+                                    ].filter(Boolean).map(train => {
+                                        if (!train) return null;
+
+                                        const isMexican = train.ownerId === null;
+                                        const isMine = train.ownerId === currentUserId;
+                                        const owner = train.ownerId ? room.players.find(p => p.id === train.ownerId) : null;
+                                        const canAccess = isMexican || isMine || train.isOpen;
+                                        const isPlayable = playableTrains.some(t => t.id === train.id);
+
+                                        return (
+                                            <div key={train.id} className={`flex flex-row items-center relative min-h-[160px] p-8 rounded-3xl transition-colors ${isPlayable ? 'bg-green-900/10 border-2 border-green-500/20 shadow-[inset_0_0_50px_rgba(34,197,94,0.05)]' : ''}`}>
+                                                {/* Connecting Electric Line */}
+                                                <div className={`absolute top-1/2 left-8 right-8 h-4 -translate-y-1/2 z-0 rounded-full shadow-inner ${isPlayable ? 'bg-green-500/30 animate-pulse' : 'bg-slate-700/60'}`}></div>
+
+                                                {/* Floating Owner Icon */}
+                                                <div className={`absolute left-4 -top-6 text-3xl shadow-xl bg-slate-800 rounded-full p-3 border-4 z-20 flex flex-col items-center
+                                                    ${isPlayable ? 'border-green-400 ring-4 ring-green-500/30' : 'border-slate-600'}
+                                                    ${!canAccess ? 'opacity-50 grayscale' : ''}
+                                                `}>
+                                                    <span>{isMexican ? '🚂' : isMine ? '🏠' : (train.isOpen ? '🔓' : '🤖')}</span>
+                                                    {!isMexican && !isMine && owner && (
+                                                        <span className="text-[10px] font-black text-slate-300 mt-1 tracking-widest uppercase">{owner.name.split(' ')[0]}</span>
+                                                    )}
+                                                    {isMexican && <span className="text-[10px] font-black text-amber-400 mt-1 tracking-widest uppercase">Mesa</span>}
+                                                    {isMine && <span className="text-[10px] font-black text-emerald-400 mt-1 tracking-widest uppercase">Meu</span>}
+                                                </div>
+
+                                                {/* Train Pieces Sequence */}
+                                                <div className="flex flex-row items-center z-10 pl-6 gap-2">
+                                                    {train.pieces.length === 0 ? (
+                                                        <div className="opacity-40 text-slate-400 font-bold bg-slate-800 px-8 py-4 rounded-xl border-4 border-dashed border-slate-600 italic">Vazio</div>
+                                                    ) : (
+                                                        train.pieces.map((placed, idx) => {
+                                                            const isLast = idx === train.pieces.length - 1;
+                                                            return (
+                                                                <div key={idx} className="z-10 hover:z-30 transition-all hover:scale-105 hover:-translate-y-2 drop-shadow-2xl">
+                                                                    <DominoPiece
+                                                                        piece={placed.piece}
+                                                                        flipped={placed.orientation === 'flipped'}
+                                                                        size="giant"
+                                                                        highlightSide={isLast ? 'right' : 'none'}
+                                                                        onClick={() => setViewingPiece(placed.piece)}
+                                                                    />
+                                                                </div>
+                                                            )
+                                                        })
+                                                    )}
+                                                </div>
+
+                                                {/* Dropzone for Playable */}
+                                                {isPlayable && (
+                                                    <div className="z-20 ml-8 animate-in zoom-in fade-in duration-300">
+                                                        <button onClick={() => handlePlaceOnTrain(train)} className="w-[240px] h-[160px] rounded-2xl border-4 border-dashed border-green-400 bg-green-500/20 flex flex-col items-center justify-center text-green-400 hover:bg-green-500 hover:text-white hover:scale-110 active:scale-95 transition-all cursor-pointer shadow-[0_0_40px_rgba(34,197,94,0.4)] backdrop-blur-sm group">
+                                                            <Icon name="check-circle" size={64} className="group-hover:scale-110 transition-transform" />
+                                                            <span className="font-black mt-4 tracking-widest text-base uppercase bg-green-900/50 px-4 py-2 rounded-full group-hover:bg-transparent">Jogar Aqui</span>
+                                                        </button>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            </TransformComponent>
+                        </>
+                    )}
+                </TransformWrapper>
             </div>
 
-            {/* Bridge: Action Bar (10%) */}
+            {/* Quick Actions (Floating Bottom Left) */}
             {isMyTurn && (
-                <div className="flex-shrink-0 bg-slate-900 px-4 py-3 flex items-center justify-between z-20 border-t border-slate-700 shadow-xl relative mt-[-1px]">
-                    <div className="flex-1 flex justify-start">
-                        {/* Status Message */}
-                        {hasPlayablePiece ? (
-                            <div className="flex items-center gap-2 text-green-400 text-sm font-bold bg-green-400/10 px-3 py-1.5 rounded-full border border-green-500/20">
-                                <span className="animate-pulse">●</span> Escolha o destino
-                            </div>
-                        ) : room.boneyard.length > 0 ? (
-                            <div className="flex items-center gap-2 text-amber-400 text-sm font-bold bg-amber-400/10 px-3 py-1.5 rounded-full border border-amber-500/20">
-                                <span>⚠️</span> Nenhuma jogada, compre pedra
-                            </div>
-                        ) : null}
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <button onClick={handleDraw} disabled={room.boneyard.length === 0}
-                            className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 disabled:bg-slate-800 disabled:opacity-50 text-white px-5 py-2.5 rounded-xl font-black transition-all active:scale-95 shadow-lg border-b-4 border-slate-900 hover:border-slate-800 disabled:border-slate-900"
-                        >
-                            <span className="text-xl leading-none">🧱</span>
-                            <div className="flex flex-col text-left">
-                                <span className="text-[10px] text-slate-300 uppercase leading-none">Comprar</span>
-                                <span className="text-sm leading-none mt-0.5">{room.boneyard.length} restam</span>
-                            </div>
-                        </button>
-
-                        <button onClick={handlePass}
-                            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-black transition-all active:scale-95 shadow-lg border-b-4 
-                                ${autoPassPending ? 'bg-red-500 hover:bg-red-400 text-white border-red-700 animate-pulse' : 'bg-slate-700 hover:bg-slate-600 text-slate-300 border-slate-900 hover:border-slate-800'}
-                            `}
-                        >
-                            <span className="text-xl leading-none">⏭️</span>
-                            <div className="flex flex-col text-left">
-                                <span className="text-[10px] opacity-70 uppercase leading-none">Ação</span>
-                                <span className="text-sm leading-none mt-0.5">{autoPassPending ? 'Passando' : 'Passar'}</span>
-                            </div>
-                        </button>
-                    </div>
+                <div className="absolute bottom-6 left-6 z-40 flex gap-3">
+                    <button onClick={handleDraw} disabled={room.boneyard.length === 0}
+                        className="flex items-center justify-center w-14 h-14 bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-white rounded-full shadow-xl border-2 border-slate-700 hover:border-slate-500 transition-all active:scale-95"
+                        title={`Comprar (${room.boneyard.length} restam)`}
+                    >
+                        <span className="text-2xl">🧱</span>
+                    </button>
+                    <button onClick={handlePass}
+                        className={`flex items-center justify-center w-14 h-14 text-white rounded-full shadow-xl border-2 transition-all active:scale-95
+                            ${autoPassPending ? 'bg-red-500 hover:bg-red-400 border-red-400 animate-pulse' : 'bg-slate-800 hover:bg-slate-700 border-slate-700 hover:border-slate-500'}
+                        `}
+                        title={autoPassPending ? 'Passando...' : 'Passar Vez'}
+                    >
+                        <Icon name="skip-forward" size={24} />
+                    </button>
                 </div>
             )}
 
-            {/* Bottom Dock: My Hand (20%) */}
-            <div className={`flex-shrink-0 bg-slate-800 border-t ${isMyTurn ? 'border-green-500 shadow-[0_-4px_20px_rgba(34,197,94,0.15)]' : 'border-slate-700'} relative z-30 transition-all`}>
-                <PlayerHand
-                    pieces={myHand}
-                    isMyTurn={isMyTurn}
-                    selectedPieceId={selectedPiece?.id || null}
-                    playablePieceIds={playablePieceIds}
-                    onSelectPiece={handleSelectPiece}
-                    onPieceDoubleClick={(piece) => setViewingPiece(piece)}
-                />
+            {/* Main FAB: Meu Trem (Floating Bottom Center) */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center">
+                <button
+                    onClick={() => setIsCarouselOpen(true)}
+                    className={`relative flex items-center justify-center w-20 h-20 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] border-4 transition-all transform hover:scale-105 active:scale-95 ${isMyTurn ? 'bg-gradient-to-tr from-green-500 to-emerald-400 border-green-200 cursor-pointer animate-pulse-slow' : 'bg-slate-700 border-slate-600'}`}
+                >
+                    <Icon name="grid" size={32} className="text-white drop-shadow-md" />
+                    <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-black w-8 h-8 rounded-full flex items-center justify-center border-2 border-slate-800 shadow-lg">
+                        {myHand.length}
+                    </div>
+                </button>
+                <span className={`text-white font-black uppercase text-[10px] tracking-widest mt-2 px-3 py-1 rounded-full backdrop-blur-sm shadow-sm ring-1 ring-slate-700 ${isMyTurn ? 'bg-green-900/80 shadow-green-500/50' : 'bg-slate-900/80'}`}>
+                    Meu Trem
+                </span>
             </div>
 
+            {/* Floating Opponent Avatars (Right Side) */}
+            <div className="absolute right-4 top-24 bottom-28 flex flex-col items-center justify-center gap-4 z-30 opacity-80 hover:opacity-100 transition-opacity pointer-events-none">
+                {room.trains.filter(t => t.ownerId !== null && t.ownerId !== currentUserId).map(train => {
+                    const owner = room.players.find(p => p.id === train.ownerId);
+                    if (!owner) return null;
+                    const isUno = owner.hand.length === 1;
+                    const isPlayable = playableTrains.some(t => t.id === train.id);
+
+                    return (
+                        <button
+                            key={train.id}
+                            onClick={() => {
+                                if (isPlayable && selectedPiece && activeOpponentTrainId === train.id) {
+                                    handlePlaceOnTrain(train);
+                                } else {
+                                    setActiveOpponentTrainId(activeOpponentTrainId === train.id ? null : train.id);
+                                }
+                            }}
+                            className={`
+                                relative w-14 h-14 rounded-full flex flex-col items-center justify-center bg-slate-800 shadow-xl border-2 transition-all group pointer-events-auto
+                                ${isPlayable ? 'border-green-400 ring-2 ring-green-500 scale-110' : 'border-slate-600 hover:border-slate-400 hover:scale-105 active:scale-95'}
+                                ${activeOpponentTrainId === train.id ? 'ring-4 ring-blue-500 bg-blue-900' : ''}
+                                ${!train.isOpen ? 'opacity-70 grayscale' : ''}
+                            `}
+                        >
+                            <span className="text-xl">{train.isOpen ? '🔓' : '🤖'}</span>
+                            <span className="text-[9px] font-bold text-slate-300 w-full truncate px-1 text-center leading-none mt-1">
+                                {owner.name.split(' ')[0]}
+                            </span>
+
+                            {/* Piece count badge */}
+                            <div className="absolute -top-2 -right-2 bg-slate-900 w-6 h-6 rounded-full flex items-center justify-center border-2 border-slate-700 text-white font-black text-[10px] shadow-lg">
+                                {owner.hand.length}
+                            </div>
+
+                            {/* UNO Indicator */}
+                            {isUno && (
+                                <div className="absolute -left-14 bg-red-600 text-white text-[9px] font-black px-2 py-1 rounded shadow-lg whitespace-nowrap uppercase tracking-wider animate-bounce flex items-center gap-1">
+                                    <Icon name="alert-circle" size={10} /> 1 Pedra
+                                    <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-red-600"></div>
+                                </div>
+                            )}
+
+                            {/* Play Overlay (if selected piece) */}
+                            {isPlayable && (
+                                <div className="absolute inset-0 bg-green-500 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <Icon name="check" size={24} className="text-white drop-shadow-md" />
+                                </div>
+                            )}
+                        </button>
+                    );
+                })}
+            </div>
+
+            {/* Selected Piece Floating Indicator (If they selected a piece to place) */}
+            {selectedPiece && !isCarouselOpen && (
+                <div className="absolute top-24 left-1/2 -translate-x-1/2 z-30 bg-green-500/90 backdrop-blur-md px-6 py-3 rounded-full shadow-2xl border border-green-400 flex items-center gap-4 animate-in slide-in-from-top-4">
+                    <span className="text-white font-bold text-sm tracking-wide">Selecione o trem para jogar:</span>
+                    <button onClick={() => setSelectedPiece(null)} className="p-1 bg-white/20 hover:bg-white/30 rounded-full text-white">
+                        <Icon name="x" size={16} />
+                    </button>
+                </div>
+            )}
+
             {/* Modals */}
-            {viewingTrain && (
-                <TrainViewModal
-                    train={viewingTrain}
-                    isMyTrain={viewingTrain?.ownerId === currentUserId}
-                    onClose={() => setViewingTrain(null)}
-                    onPieceClick={(piece) => setViewingPiece(piece)}
+            {isCarouselOpen && (
+                <PlayerHandCarousel
+                    pieces={myHand}
+                    playablePieceIds={playablePieceIds}
+                    isMyTurn={isMyTurn}
+                    onPlay={(piece) => {
+                        setSelectedPiece(piece);
+                        setIsCarouselOpen(false);
+                        const trains = getPlayableTrains(piece);
+                        if (trains.length === 1) {
+                            handlePlaceOnTrain(trains[0], piece);
+                        }
+                    }}
+                    onClose={() => setIsCarouselOpen(false)}
                 />
             )}
             {viewingPiece && (

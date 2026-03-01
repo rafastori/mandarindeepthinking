@@ -55,10 +55,14 @@ import {
     EyeOff,
     Activity,
     History,
-    XCircle,
-    ZoomIn,
-    ZoomOut,
-    Library
+    Library,
+    Maximize,
+    SkipForward,
+    Grid,
+    ChevronLeft,
+    Play,
+    Clock,
+    Ban
 } from 'lucide-react';
 
 export interface IconProps {
@@ -126,8 +130,14 @@ const icons: Record<string, React.ElementType> = {
     'history': History,
     'x-circle': XCircle,
     'zoom-in': ZoomIn,
-    'zoom-out': ZoomOut,
-    'library': Library
+    'library': Library,
+    'maximize': Maximize,
+    'skip-forward': SkipForward,
+    'grid': Grid,
+    'chevron-left': ChevronLeft,
+    'play': Play,
+    'clock': Clock,
+    'ban': Ban
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
