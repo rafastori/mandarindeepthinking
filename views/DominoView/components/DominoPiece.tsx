@@ -59,24 +59,24 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
     const getColors = (isLeft: boolean) => {
         if (piece.isHub) {
             return {
-                bg: 'bg-amber-100',
-                text: 'text-amber-900',
-                border: isLeft ? 'border-r-2 border-amber-300' : 'border-t-2 border-amber-300',
-                badgeBg: 'bg-amber-900',
+                bg: 'bg-gradient-to-br from-amber-100 to-amber-200 ring-1 ring-white/50',
+                text: 'text-amber-950 font-extrabold',
+                border: isLeft ? 'border-r border-amber-300 shadow-[-1px_0_0_rgba(255,255,255,0.4)_inset]' : 'border-t border-amber-300 shadow-[0_-1px_0_rgba(255,255,255,0.4)_inset]',
+                badgeBg: 'bg-gradient-to-br from-amber-700 to-amber-900 shadow-inner',
                 badgeText: 'text-amber-50'
             };
         }
         if (isDouble) {
             return {
-                bg: 'bg-orange-50',
-                text: 'text-orange-950',
-                border: isLeft ? 'border-r-2 border-orange-200' : 'border-t-2 border-orange-200',
-                badgeBg: 'bg-orange-900',
+                bg: 'bg-gradient-to-br from-orange-50 to-orange-100 ring-1 ring-white/60',
+                text: 'text-orange-950 font-extrabold',
+                border: isLeft ? 'border-r border-orange-200 shadow-[-1px_0_0_rgba(255,255,255,0.5)_inset]' : 'border-t border-orange-200 shadow-[0_-1px_0_rgba(255,255,255,0.5)_inset]',
+                badgeBg: 'bg-gradient-to-br from-orange-800 to-orange-950 shadow-inner',
                 badgeText: 'text-orange-50'
             };
         }
         return {
-            bg: 'bg-slate-50', // Very clean whitish/gray
+            bg: 'bg-gradient-to-br from-[rgb(250,250,250)] to-[rgb(230,230,230)] ring-1 ring-white', // Very clean whitish/gray with a bevel light effect
             text: 'text-slate-800',
         };
     };
@@ -85,9 +85,9 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         if (!isHighlighted) return baseColors;
         return {
             ...baseColors,
-            bg: 'bg-yellow-200 shadow-inner',
+            bg: 'bg-gradient-to-br from-yellow-200 to-yellow-300 shadow-[inset_0_2px_10px_rgba(202,138,4,0.2)] ring-1 ring-yellow-400',
             text: 'text-yellow-950 font-black',
-            badgeBg: 'bg-yellow-500 animate-pulse',
+            badgeBg: 'bg-yellow-500 animate-pulse shadow-inner',
             badgeText: 'text-yellow-950'
         };
     };
@@ -97,12 +97,13 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
 
     // Dynamic container classes
     const containerClasses = `
-        transition-all duration-300 rounded-xl overflow-hidden shadow-sm border-2
-        ${piece.isHub ? 'border-amber-300' : 'border-slate-300'}
+        transition-all duration-300 rounded-xl overflow-hidden border border-slate-300/40
+        shadow-[2px_4px_12px_rgba(0,0,0,0.15),_0_2px_4px_rgba(0,0,0,0.1)]
+        ${piece.isHub ? 'border-amber-400' : ''}
         ${isUnplayableInHand ? 'opacity-40 scale-95 grayscale-[0.5]' : 'opacity-100'}
-        ${selected ? 'ring-4 ring-green-500 border-green-500 scale-105 shadow-xl -translate-y-2' : ''}
-        ${canPlay && !selected ? 'ring-2 ring-emerald-400 border-emerald-400 shadow-lg shadow-emerald-100' : ''}
-        ${!disabled && !isUnplayableInHand ? 'hover:shadow-md cursor-pointer' : ''}
+        ${selected ? 'ring-4 ring-green-500 border-green-500 scale-[1.03] shadow-[0_12px_25px_rgba(34,197,94,0.35)] -translate-y-3' : ''}
+        ${canPlay && !selected ? 'ring-2 ring-emerald-400 border-emerald-400 shadow-[0_6px_15px_rgba(52,211,153,0.4)]' : ''}
+        ${!disabled && !isUnplayableInHand ? 'hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)] hover:-translate-y-1.5 cursor-pointer' : ''}
         ${config.container}
     `;
 
@@ -112,25 +113,25 @@ export const DominoPiece: React.FC<DominoPieceProps> = ({
         // We override the getter's border logic to match orientation.
         let borderClass = '';
         if (isVertical) {
-            borderClass = isLeft ? 'border-b-2 border-slate-200' : '';
+            borderClass = isLeft ? 'border-b border-slate-300 shadow-[0_-1px_0_rgba(255,255,255,0.6)_inset]' : '';
         } else {
-            borderClass = isLeft ? 'border-r-2 border-slate-200' : '';
+            borderClass = isLeft ? 'border-r border-slate-300 shadow-[-1px_0_0_rgba(255,255,255,0.6)_inset]' : '';
         }
 
         // Special override for hub/double
-        if (piece.isHub) borderClass = isVertical ? (isLeft ? 'border-b-2 border-amber-300' : '') : (isLeft ? 'border-r-2 border-amber-300' : '');
-        if (isDouble) borderClass = isVertical ? (isLeft ? 'border-b-2 border-orange-200' : '') : (isLeft ? 'border-r-2 border-orange-200' : '');
+        if (piece.isHub) borderClass = isVertical ? (isLeft ? 'border-b border-amber-300 shadow-[0_-1px_0_rgba(255,255,255,0.4)_inset]' : '') : (isLeft ? 'border-r border-amber-300 shadow-[-1px_0_0_rgba(255,255,255,0.4)_inset]' : '');
+        if (isDouble) borderClass = isVertical ? (isLeft ? 'border-b border-orange-200 shadow-[0_-1px_0_rgba(255,255,255,0.5)_inset]' : '') : (isLeft ? 'border-r border-orange-200 shadow-[-1px_0_0_rgba(255,255,255,0.5)_inset]' : '');
 
         return (
             <div className={`
                 flex-1 ${config.padding} text-center flex flex-col justify-center items-center relative
                 ${colors.bg} ${borderClass}
             `}>
-                <span className={`block w-full break-words leading-tight font-bold ${config.text} ${colors.text} ${text.length > 12 ? 'line-clamp-4' : 'line-clamp-3'}`}>
+                <span className={`block w-full break-words leading-tight font-bold ${config.text} ${colors.text} drop-shadow-sm ${text.length > 12 ? 'line-clamp-4' : 'line-clamp-3'}`}>
                     {text}
                 </span>
                 <div className={`
-                    absolute rounded-full flex items-center justify-center font-bold shadow-sm ${config.badgePos}
+                    absolute rounded-full flex items-center justify-center font-bold shadow-[inset_0_1px_3px_rgba(0,0,0,0.2)] ${config.badgePos}
                     ${config.badge} ${colors.badgeBg} ${colors.badgeText}
                 `}>
                     {index}

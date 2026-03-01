@@ -450,6 +450,16 @@ export const useDominoRoom = (userId?: string) => {
             // 6. Inicializar trens
             const trains: Train[] = [];
 
+            // Trem Mexicano
+            trains.push({
+                id: 'train-mexican',
+                ownerId: null,
+                pieces: [],
+                isOpen: true,
+                openEndIndex: 12,
+                openEndText: termPairs[12].definition
+            });
+
             updatedPlayers.forEach(p => {
                 trains.push({
                     id: `train-${p.id}`,
