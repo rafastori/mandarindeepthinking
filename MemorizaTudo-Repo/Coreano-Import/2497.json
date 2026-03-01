@@ -1,0 +1,629 @@
+[
+  {
+    "chinese": "A: 망했어! 8시까지 수업인데 늦잠을 잤어!",
+    "pinyin": "",
+    "translation": "A: Droga! A aula é até às 8h, mas eu dormi demais!",
+    "tokens": [
+      "망했어",
+      "!",
+      "8시까지",
+      "수업인데",
+      "늦잠을",
+      "잤어",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "망했어",
+        "pinyin": "",
+        "meaning": "Estraguei tudo / Deu ruim / Droga"
+      },
+      {
+        "id": 2,
+        "word": "8시까지",
+        "pinyin": "",
+        "meaning": "Até as 8 horas"
+      },
+      {
+        "id": 3,
+        "word": "수업",
+        "pinyin": "",
+        "meaning": "Aula"
+      },
+      {
+        "id": 4,
+        "word": "늦잠",
+        "pinyin": "",
+        "meaning": "Dormir demais / Dormir tarde"
+      },
+      {
+        "id": 5,
+        "word": "잤어",
+        "pinyin": "",
+        "meaning": "Dormi (passado de 자다)"
+      }
+    ],
+    "id": "local-1772394520140-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이제 겨우 7시 반이야. 뭘 그렇게 서둘러?",
+    "pinyin": "",
+    "translation": "B: Ainda são apenas 7 e meia. Por que tanta pressa?",
+    "tokens": [
+      "이제",
+      "겨우",
+      "7시",
+      "반이야",
+      ".",
+      "뭘",
+      "그렇게",
+      "서둘러",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이제",
+        "pinyin": "",
+        "meaning": "Agora"
+      },
+      {
+        "id": 2,
+        "word": "겨우",
+        "pinyin": "",
+        "meaning": "Apenas / Mal"
+      },
+      {
+        "id": 3,
+        "word": "7시 반",
+        "pinyin": "",
+        "meaning": "7:30 / Sete e meia"
+      },
+      {
+        "id": 4,
+        "word": "뭘",
+        "pinyin": "",
+        "meaning": "O que (contração de 무엇을)"
+      },
+      {
+        "id": 5,
+        "word": "서둘러",
+        "pinyin": "",
+        "meaning": "Apressar-se / Ter pressa (de 서두르다)"
+      }
+    ],
+    "id": "local-1772394520140-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 베이베이, 너도 수업 있지 않아?",
+    "pinyin": "",
+    "translation": "A: Beibei, você também não tem aula?",
+    "tokens": [
+      "베이베이",
+      ",",
+      "너도",
+      "수업",
+      "있지",
+      "않아",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "베이베이",
+        "pinyin": "",
+        "meaning": "Beibei (nome)"
+      },
+      {
+        "id": 2,
+        "word": "너도",
+        "pinyin": "",
+        "meaning": "Você também"
+      },
+      {
+        "id": 3,
+        "word": "수업",
+        "pinyin": "",
+        "meaning": "Aula"
+      },
+      {
+        "id": 4,
+        "word": "있지 않아?",
+        "pinyin": "",
+        "meaning": "Não tem? (pergunta para confirmação)"
+      }
+    ],
+    "id": "local-1772394520140-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 진정해. 어차피 다들 늦을 거야.",
+    "pinyin": "",
+    "translation": "B: Calma. De qualquer forma, todo mundo vai se atrasar.",
+    "tokens": [
+      "진정해",
+      ".",
+      "어차피",
+      "다들",
+      "늦을",
+      "거야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "진정해",
+        "pinyin": "",
+        "meaning": "Acalme-se / Calma"
+      },
+      {
+        "id": 2,
+        "word": "어차피",
+        "pinyin": "",
+        "meaning": "De qualquer forma / De todo modo"
+      },
+      {
+        "id": 3,
+        "word": "다들",
+        "pinyin": "",
+        "meaning": "Todos / Todo mundo"
+      },
+      {
+        "id": 4,
+        "word": "늦을 거야",
+        "pinyin": "",
+        "meaning": "Vai se atrasar / Estará atrasado"
+      }
+    ],
+    "id": "local-1772394520140-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 우리 반 다른 친구들은 다들 제시간에 와.",
+    "pinyin": "",
+    "translation": "A: Os outros amigos da nossa turma chegam todos na hora.",
+    "tokens": [
+      "우리",
+      "반",
+      "다른",
+      "친구들은",
+      "다들",
+      "제시간에",
+      "와",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "우리 반",
+        "pinyin": "",
+        "meaning": "Nossa turma / Nossa classe"
+      },
+      {
+        "id": 2,
+        "word": "다른",
+        "pinyin": "",
+        "meaning": "Outro / Diferente"
+      },
+      {
+        "id": 3,
+        "word": "친구들",
+        "pinyin": "",
+        "meaning": "Amigos (plural)"
+      },
+      {
+        "id": 4,
+        "word": "다들",
+        "pinyin": "",
+        "meaning": "Todos / Todo mundo"
+      },
+      {
+        "id": 5,
+        "word": "제시간에",
+        "pinyin": "",
+        "meaning": "Na hora / Pontualmente"
+      },
+      {
+        "id": 6,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "Vem (de 오다)"
+      }
+    ],
+    "id": "local-1772394520140-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 너희가 다 신입생이라 그래. 나도 1학년 때는 착했어. 못 믿겠으면 샤오위한테 물어봐.",
+    "pinyin": "",
+    "translation": "B: Isso é porque vocês são todos calouros. Eu também era boazinha no primeiro ano. Se não acredita, pergunta para a Xiaoyu.",
+    "tokens": [
+      "그건",
+      "너희가",
+      "다",
+      "신입생이라",
+      "그래",
+      ".",
+      "나도",
+      "1학년",
+      "때는",
+      "착했어",
+      ".",
+      "못",
+      "믿겠으면",
+      "샤오위한테",
+      "물어봐",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그건",
+        "pinyin": "",
+        "meaning": "Isso / Aquilo (contração de 그것은)"
+      },
+      {
+        "id": 2,
+        "word": "너희가",
+        "pinyin": "",
+        "meaning": "Vocês (sujeito)"
+      },
+      {
+        "id": 3,
+        "word": "신입생",
+        "pinyin": "",
+        "meaning": "Calouro / Aluno novo"
+      },
+      {
+        "id": 4,
+        "word": "1학년",
+        "pinyin": "",
+        "meaning": "Primeiro ano / Aluno do primeiro ano"
+      },
+      {
+        "id": 5,
+        "word": "착했어",
+        "pinyin": "",
+        "meaning": "Era bom / Era gentil (de 착하다)"
+      },
+      {
+        "id": 6,
+        "word": "못 믿겠으면",
+        "pinyin": "",
+        "meaning": "Se não puder acreditar / Se não acreditar"
+      },
+      {
+        "id": 7,
+        "word": "샤오위한테",
+        "pinyin": "",
+        "meaning": "Para a Xiaoyu"
+      },
+      {
+        "id": 8,
+        "word": "물어봐",
+        "pinyin": "",
+        "meaning": "Pergunte (de 물어보다)"
+      }
+    ],
+    "id": "local-1772394520140-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 맞다. 오늘 오후에 강연에 가야 해.",
+    "pinyin": "",
+    "translation": "A: Ah, é mesmo. Tenho que ir a uma palestra hoje à tarde.",
+    "tokens": [
+      "아",
+      ",",
+      "맞다",
+      ".",
+      "오늘",
+      "오후에",
+      "강연에",
+      "가야",
+      "해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아, 맞다",
+        "pinyin": "",
+        "meaning": "Ah, é mesmo / Ah, lembrei"
+      },
+      {
+        "id": 2,
+        "word": "오늘",
+        "pinyin": "",
+        "meaning": "Hoje"
+      },
+      {
+        "id": 3,
+        "word": "오후",
+        "pinyin": "",
+        "meaning": "Tarde (período)"
+      },
+      {
+        "id": 4,
+        "word": "강연",
+        "pinyin": "",
+        "meaning": "Palestra / Conferência"
+      },
+      {
+        "id": 5,
+        "word": "가야 해",
+        "pinyin": "",
+        "meaning": "Tenho que ir / Preciso ir"
+      }
+    ],
+    "id": "local-1772394520140-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 3호관 강연? 가지 마.",
+    "pinyin": "",
+    "translation": "C: A palestra do prédio 3? Não vá.",
+    "tokens": [
+      "3호관",
+      "강연",
+      "?",
+      "가지",
+      "마",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "3호관",
+        "pinyin": "",
+        "meaning": "Prédio 3"
+      },
+      {
+        "id": 2,
+        "word": "강연",
+        "pinyin": "",
+        "meaning": "Palestra / Conferência"
+      },
+      {
+        "id": 3,
+        "word": "가지 마",
+        "pinyin": "",
+        "meaning": "Não vá (imperativo negativo)"
+      }
+    ],
+    "id": "local-1772394520140-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 안 돼. 교수님이 출석 체크한다고 했어.",
+    "pinyin": "",
+    "translation": "A: Não posso. O professor disse que vai fazer chamada.",
+    "tokens": [
+      "안",
+      "돼",
+      ".",
+      "교수님이",
+      "출석",
+      "체크한다고",
+      "했어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안 돼",
+        "pinyin": "",
+        "meaning": "Não posso / Não é permitido"
+      },
+      {
+        "id": 2,
+        "word": "교수님",
+        "pinyin": "",
+        "meaning": "Professor (honorífico)"
+      },
+      {
+        "id": 3,
+        "word": "출석 체크",
+        "pinyin": "",
+        "meaning": "Chamada / Verificação de presença"
+      },
+      {
+        "id": 4,
+        "word": "했다고 했어",
+        "pinyin": "",
+        "meaning": "Disse que faria / Disse que fez"
+      }
+    ],
+    "id": "local-1772394520140-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이 출석 체크라는 건 그냥 신입생들 속이는 거야. 안 가도 아무 일 없어.",
+    "pinyin": "",
+    "translation": "B: Essa tal de chamada é só pra enganar os calouros. Mesmo que não vá, não acontece nada.",
+    "tokens": [
+      "이",
+      "출석",
+      "체크라는",
+      "건",
+      "그냥",
+      "신입생들",
+      "속이는",
+      "거야",
+      ".",
+      "안",
+      "가도",
+      "아무",
+      "일",
+      "없어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "출석 체크",
+        "pinyin": "",
+        "meaning": "Chamada / Verificação de presença"
+      },
+      {
+        "id": 2,
+        "word": "~라는 건",
+        "pinyin": "",
+        "meaning": "A coisa chamada ~ / O que se chama ~"
+      },
+      {
+        "id": 3,
+        "word": "그냥",
+        "pinyin": "",
+        "meaning": "Simplesmente / Apenas"
+      },
+      {
+        "id": 4,
+        "word": "신입생들",
+        "pinyin": "",
+        "meaning": "Calouros (plural)"
+      },
+      {
+        "id": 5,
+        "word": "속이는 거야",
+        "pinyin": "",
+        "meaning": "É para enganar / É enganar"
+      },
+      {
+        "id": 6,
+        "word": "안 가도",
+        "pinyin": "",
+        "meaning": "Mesmo que não vá"
+      },
+      {
+        "id": 7,
+        "word": "아무 일 없어",
+        "pinyin": "",
+        "meaning": "Nada acontece / Não tem problema"
+      }
+    ],
+    "id": "local-1772394520140-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 교수님들은 다들 이런 지루한 강연에 신입생들을 데려다 숫자 채우는 걸 좋아해.",
+    "pinyin": "",
+    "translation": "C: Os professores gostam de levar os calouros para encher número nessas palestras chatas.",
+    "tokens": [
+      "교수님들은",
+      "다들",
+      "이런",
+      "지루한",
+      "강연에",
+      "신입생들을",
+      "데려다",
+      "숫자",
+      "채우는",
+      "걸",
+      "좋아해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "교수님들",
+        "pinyin": "",
+        "meaning": "Professores (plural honorífico)"
+      },
+      {
+        "id": 2,
+        "word": "다들",
+        "pinyin": "",
+        "meaning": "Todos / Todo mundo"
+      },
+      {
+        "id": 3,
+        "word": "이런",
+        "pinyin": "",
+        "meaning": "Esse tipo de / Tais"
+      },
+      {
+        "id": 4,
+        "word": "지루한",
+        "pinyin": "",
+        "meaning": "Chateado / Entediante"
+      },
+      {
+        "id": 5,
+        "word": "강연",
+        "pinyin": "",
+        "meaning": "Palestra / Conferência"
+      },
+      {
+        "id": 6,
+        "word": "신입생들",
+        "pinyin": "",
+        "meaning": "Calouros (plural)"
+      },
+      {
+        "id": 7,
+        "word": "데려다",
+        "pinyin": "",
+        "meaning": "Levar (alguém)"
+      },
+      {
+        "id": 8,
+        "word": "숫자",
+        "pinyin": "",
+        "meaning": "Número"
+      },
+      {
+        "id": 9,
+        "word": "채우는 걸 좋아해",
+        "pinyin": "",
+        "meaning": "Gostam de preencher / Gostam de completar"
+      }
+    ],
+    "id": "local-1772394520140-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 나 지금 갈게. 안녕!",
+    "pinyin": "",
+    "translation": "A: Eu vou agora. Tchau!",
+    "tokens": [
+      "나",
+      "지금",
+      "갈게",
+      ".",
+      "안녕",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "Eu (informal)"
+      },
+      {
+        "id": 2,
+        "word": "지금",
+        "pinyin": "",
+        "meaning": "Agora"
+      },
+      {
+        "id": 3,
+        "word": "갈게",
+        "pinyin": "",
+        "meaning": "Eu vou (intenção futura informal)"
+      },
+      {
+        "id": 4,
+        "word": "안녕",
+        "pinyin": "",
+        "meaning": "Olá / Tchau (informal)"
+      }
+    ],
+    "id": "local-1772394520140-11",
+    "language": "Coreano"
+  }
+]

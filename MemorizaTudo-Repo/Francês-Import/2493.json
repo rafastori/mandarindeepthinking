@@ -1,0 +1,598 @@
+[
+  {
+    "chinese": "A: Papa, c'est l'heure de manger !",
+    "pinyin": null,
+    "translation": "A: Papai, é hora de comer!",
+    "tokens": [
+      "A:",
+      "Papa",
+      ",",
+      "c'est",
+      "l'heure",
+      "de",
+      "manger",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Papa",
+        "pinyin": null,
+        "meaning": "Papai"
+      },
+      {
+        "id": 2,
+        "word": "l'heure de",
+        "pinyin": null,
+        "meaning": "a hora de"
+      },
+      {
+        "id": 3,
+        "word": "manger",
+        "pinyin": null,
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772394123239-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'arrive !",
+    "pinyin": null,
+    "translation": "B: Estou chegando!",
+    "tokens": [
+      "B:",
+      "J'arrive",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'arrive",
+        "pinyin": null,
+        "meaning": "Estou chegando"
+      }
+    ],
+    "id": "local-1772394123239-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Tu joues à ce jeu tous les jours. Tu ne trouves pas ça ennuyeux ?",
+    "pinyin": null,
+    "translation": "A: Você joga esse jogo todos os dias. Você não acha isso entediante?",
+    "tokens": [
+      "A:",
+      "Tu",
+      "joues",
+      "à",
+      "ce",
+      "jeu",
+      "tous",
+      "les",
+      "jours",
+      ".",
+      "Tu",
+      "ne",
+      "trouves",
+      "pas",
+      "ça",
+      "ennuyeux",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "joues",
+        "pinyin": null,
+        "meaning": "joga (do verbo jogar)"
+      },
+      {
+        "id": 2,
+        "word": "tous les jours",
+        "pinyin": null,
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 3,
+        "word": "ennuyeux",
+        "pinyin": null,
+        "meaning": "entediante"
+      }
+    ],
+    "id": "local-1772394123239-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je n'y peux rien. Quand je regarde des vidéos, la vitesse d'internet est trop lente. Ça s'arrête toujours.",
+    "pinyin": null,
+    "translation": "B: Não posso fazer nada. Quando assisto a vídeos, a velocidade da internet é muito lenta. Isso sempre para.",
+    "tokens": [
+      "B:",
+      "Je",
+      "n'y",
+      "peux",
+      "rien",
+      ".",
+      "Quand",
+      "je",
+      "regarde",
+      "des",
+      "vidéos",
+      ",",
+      "la",
+      "vitesse",
+      "d'internet",
+      "est",
+      "trop",
+      "lente",
+      ".",
+      "Ça",
+      "s'arrête",
+      "toujours",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Je n'y peux rien",
+        "pinyin": null,
+        "meaning": "Não posso fazer nada a respeito"
+      },
+      {
+        "id": 2,
+        "word": "vitesse d'internet",
+        "pinyin": null,
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 3,
+        "word": "trop lente",
+        "pinyin": null,
+        "meaning": "muito lenta"
+      },
+      {
+        "id": 4,
+        "word": "s'arrête toujours",
+        "pinyin": null,
+        "meaning": "sempre para"
+      }
+    ],
+    "id": "local-1772394123239-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Pourquoi n'as-tu installé que 10 Mbps de haut débit ?",
+    "pinyin": null,
+    "translation": "A: Por que você só instalou 10 Mbps de banda larga?",
+    "tokens": [
+      "A:",
+      "Pourquoi",
+      "n'as-tu",
+      "installé",
+      "que",
+      "10",
+      "Mbps",
+      "de",
+      "haut",
+      "débit",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Pourquoi",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "installé",
+        "pinyin": null,
+        "meaning": "instalado"
+      },
+      {
+        "id": 3,
+        "word": "haut débit",
+        "pinyin": null,
+        "meaning": "banda larga"
+      }
+    ],
+    "id": "local-1772394123239-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je ne comprends pas. Quel type as-tu installé chez toi ?",
+    "pinyin": null,
+    "translation": "B: Não entendo. Que tipo você instalou na sua casa?",
+    "tokens": [
+      "B:",
+      "Je",
+      "ne",
+      "comprends",
+      "pas",
+      ".",
+      "Quel",
+      "type",
+      "as-tu",
+      "installé",
+      "chez",
+      "toi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "comprends pas",
+        "pinyin": null,
+        "meaning": "não entendo"
+      },
+      {
+        "id": 2,
+        "word": "chez toi",
+        "pinyin": null,
+        "meaning": "na sua casa"
+      }
+    ],
+    "id": "local-1772394123239-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Nous sommes passés à la fibre optique il y a longtemps ; le haut débit et tout ça, ça craint.",
+    "pinyin": null,
+    "translation": "A: Nós passamos para a fibra óptica há muito tempo; a banda larga e tudo isso, é horrível.",
+    "tokens": [
+      "A:",
+      "Nous",
+      "sommes",
+      "passés",
+      "à",
+      "la",
+      "fibre",
+      "optique",
+      "il",
+      "y",
+      "a",
+      "longtemps",
+      ";",
+      "le",
+      "haut",
+      "débit",
+      "et",
+      "tout",
+      "ça",
+      ",",
+      "ça",
+      "craint",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fibre optique",
+        "pinyin": null,
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 2,
+        "word": "il y a longtemps",
+        "pinyin": null,
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 3,
+        "word": "ça craint",
+        "pinyin": null,
+        "meaning": "é horrível/é uma droga"
+      }
+    ],
+    "id": "local-1772394123239-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, je peux installer ça chez nous ?",
+    "pinyin": null,
+    "translation": "B: Então, posso instalar isso na nossa casa?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "je",
+      "peux",
+      "installer",
+      "ça",
+      "chez",
+      "nous",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "installer",
+        "pinyin": null,
+        "meaning": "instalar"
+      },
+      {
+        "id": 3,
+        "word": "chez nous",
+        "pinyin": null,
+        "meaning": "na nossa casa"
+      }
+    ],
+    "id": "local-1772394123239-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Cela dépend si ton quartier a accès à la fibre optique.",
+    "pinyin": null,
+    "translation": "A: Isso depende se o seu bairro tem acesso à fibra óptica.",
+    "tokens": [
+      "A:",
+      "Cela",
+      "dépend",
+      "si",
+      "ton",
+      "quartier",
+      "a",
+      "accès",
+      "à",
+      "la",
+      "fibre",
+      "optique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dépend",
+        "pinyin": null,
+        "meaning": "depende"
+      },
+      {
+        "id": 2,
+        "word": "quartier",
+        "pinyin": null,
+        "meaning": "bairro"
+      },
+      {
+        "id": 3,
+        "word": "accès à",
+        "pinyin": null,
+        "meaning": "acesso a"
+      },
+      {
+        "id": 4,
+        "word": "fibre optique",
+        "pinyin": null,
+        "meaning": "fibra óptica"
+      }
+    ],
+    "id": "local-1772394123239-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Que dois-je faire si ce n'est pas le cas ?",
+    "pinyin": null,
+    "translation": "B: O que devo fazer se não for o caso?",
+    "tokens": [
+      "B:",
+      "Que",
+      "dois-je",
+      "faire",
+      "si",
+      "ce",
+      "n'est",
+      "pas",
+      "le",
+      "cas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Que dois-je faire",
+        "pinyin": null,
+        "meaning": "O que devo fazer"
+      },
+      {
+        "id": 2,
+        "word": "si ce n'est pas le cas",
+        "pinyin": null,
+        "meaning": "se não for o caso"
+      }
+    ],
+    "id": "local-1772394123239-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors tu pourrais seulement améliorer ta vitesse internet à 20 Mbps et essayer.",
+    "pinyin": null,
+    "translation": "A: Então você só poderia melhorar sua velocidade de internet para 20 Mbps e tentar.",
+    "tokens": [
+      "A:",
+      "Alors",
+      "tu",
+      "pourrais",
+      "seulement",
+      "améliorer",
+      "ta",
+      "vitesse",
+      "internet",
+      "à",
+      "20",
+      "Mbps",
+      "et",
+      "essayer",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "seulement",
+        "pinyin": null,
+        "meaning": "somente/apenas"
+      },
+      {
+        "id": 3,
+        "word": "améliorer",
+        "pinyin": null,
+        "meaning": "melhorar"
+      },
+      {
+        "id": 4,
+        "word": "vitesse internet",
+        "pinyin": null,
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 5,
+        "word": "essayer",
+        "pinyin": null,
+        "meaning": "tentar"
+      }
+    ],
+    "id": "local-1772394123239-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Dans le couloir, il me semble avoir vu une petite publicité qui disait internet fibre optique à 50 Mbps pour 1080 RMB par an.",
+    "pinyin": null,
+    "translation": "B: No corredor, parece que vi uma pequena publicidade que dizia internet fibra óptica a 50 Mbps por 1080 RMB por ano.",
+    "tokens": [
+      "B:",
+      "Dans",
+      "le",
+      "couloir",
+      ",",
+      "il",
+      "me",
+      "semble",
+      "avoir",
+      "vu",
+      "une",
+      "petite",
+      "publicité",
+      "qui",
+      "disait",
+      "internet",
+      "fibre",
+      "optique",
+      "à",
+      "50",
+      "Mbps",
+      "pour",
+      "1080",
+      "RMB",
+      "par",
+      "an",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dans le couloir",
+        "pinyin": null,
+        "meaning": "No corredor"
+      },
+      {
+        "id": 2,
+        "word": "il me semble",
+        "pinyin": null,
+        "meaning": "parece-me"
+      },
+      {
+        "id": 3,
+        "word": "publicité",
+        "pinyin": null,
+        "meaning": "publicidade/anúncio"
+      },
+      {
+        "id": 4,
+        "word": "internet fibre optique",
+        "pinyin": null,
+        "meaning": "internet fibra óptica"
+      },
+      {
+        "id": 5,
+        "word": "par an",
+        "pinyin": null,
+        "meaning": "por ano"
+      }
+    ],
+    "id": "local-1772394123239-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vraiment ? Alors, après l'expiration de ton contrat pour le haut débit, tu pourras passer à ça.",
+    "pinyin": null,
+    "translation": "A: Verdade? Então, após o vencimento do seu contrato de banda larga, você poderá mudar para isso.",
+    "tokens": [
+      "A:",
+      "Vraiment",
+      "?",
+      "Alors",
+      ",",
+      "après",
+      "l'expiration",
+      "de",
+      "ton",
+      "contrat",
+      "pour",
+      "le",
+      "haut",
+      "débit",
+      ",",
+      "tu",
+      "pourras",
+      "passer",
+      "à",
+      "ça",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment",
+        "pinyin": null,
+        "meaning": "Verdade?"
+      },
+      {
+        "id": 2,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "l'expiration",
+        "pinyin": null,
+        "meaning": "a expiração/o vencimento"
+      },
+      {
+        "id": 4,
+        "word": "contrat",
+        "pinyin": null,
+        "meaning": "contrato"
+      },
+      {
+        "id": 5,
+        "word": "haut débit",
+        "pinyin": null,
+        "meaning": "banda larga"
+      }
+    ],
+    "id": "local-1772394123239-12",
+    "language": "Francês"
+  }
+]

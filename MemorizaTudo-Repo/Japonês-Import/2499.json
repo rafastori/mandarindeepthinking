@@ -1,0 +1,775 @@
+[
+  {
+    "chinese": "A: ハッピーバレーに着いたよ！",
+    "pinyin": null,
+    "translation": "A: Chegamos ao Happy Valley!",
+    "tokens": [
+      "ハッピーバレー",
+      "に",
+      "着いた",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ハッピーバレー",
+        "pinyin": null,
+        "meaning": "Happy Valley (nome de parque de diversões)"
+      },
+      {
+        "id": 2,
+        "word": "着いた",
+        "pinyin": null,
+        "meaning": "chegou (forma passada de 着く)"
+      },
+      {
+        "id": 3,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa algo ao ouvinte)"
+      }
+    ],
+    "id": "local-1772394729409-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: やったー！なんでこんなに人が多いの？！何をするにも並ばなきゃいけないじゃない。",
+    "pinyin": null,
+    "translation": "B: Eba! Por que tem tanta gente assim?! Temos que fazer fila para tudo, não é?",
+    "tokens": [
+      "やったー",
+      "！",
+      "なんで",
+      "こんなに",
+      "人",
+      "が",
+      "多い",
+      "の",
+      "？！",
+      "何",
+      "を",
+      "する",
+      "にも",
+      "並ばなきゃいけない",
+      "じゃない",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "やったー",
+        "pinyin": null,
+        "meaning": "Eba! (expressão de alegria)"
+      },
+      {
+        "id": 2,
+        "word": "なんで",
+        "pinyin": null,
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "こんなに",
+        "pinyin": null,
+        "meaning": "tanto assim"
+      },
+      {
+        "id": 4,
+        "word": "人",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 6,
+        "word": "多い",
+        "pinyin": null,
+        "meaning": "muitos"
+      },
+      {
+        "id": 9,
+        "word": "何をするにも",
+        "pinyin": null,
+        "meaning": "para fazer qualquer coisa, não importa o que faça"
+      },
+      {
+        "id": 13,
+        "word": "並ばなきゃいけない",
+        "pinyin": null,
+        "meaning": "tem que fazer fila (forma contraída de 並ばなければいけない)"
+      },
+      {
+        "id": 14,
+        "word": "じゃない",
+        "pinyin": null,
+        "meaning": "(partícula de confirmação, 'não é?')"
+      }
+    ],
+    "id": "local-1772394729409-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、一日じゃ足りないね。年間パスポートを買った方がいいんじゃない？",
+    "pinyin": null,
+    "translation": "A: Então, um dia não é suficiente, né? Não seria melhor comprar um passe anual?",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "一日",
+      "じゃ",
+      "足りない",
+      "ね",
+      "。",
+      "年間",
+      "パスポート",
+      "を",
+      "買った",
+      "方",
+      "が",
+      "いい",
+      "んじゃない",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "じゃあ",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "一日",
+        "pinyin": null,
+        "meaning": "um dia"
+      },
+      {
+        "id": 4,
+        "word": "足りない",
+        "pinyin": null,
+        "meaning": "não é suficiente"
+      },
+      {
+        "id": 5,
+        "word": "ね",
+        "pinyin": null,
+        "meaning": "(partícula de concordância, 'né?')"
+      },
+      {
+        "id": 7,
+        "word": "年間パスポート",
+        "pinyin": null,
+        "meaning": "passe anual"
+      },
+      {
+        "id": 10,
+        "word": "買った方がいい",
+        "pinyin": null,
+        "meaning": "seria melhor comprar"
+      },
+      {
+        "id": 14,
+        "word": "んじゃない",
+        "pinyin": null,
+        "meaning": "(partícula que expressa sugestão ou confirmação suave)"
+      }
+    ],
+    "id": "local-1772394729409-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは後で考えよう。まずは、何が楽しいか見せてよ。",
+    "pinyin": null,
+    "translation": "B: Vamos pensar nisso depois. Primeiro, me mostre o que é divertido.",
+    "tokens": [
+      "それ",
+      "は",
+      "後で",
+      "考えよう",
+      "。",
+      "まずは",
+      "、",
+      "何",
+      "が",
+      "楽しい",
+      "か",
+      "見せて",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "後で",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 3,
+        "word": "考えよう",
+        "pinyin": null,
+        "meaning": "vamos pensar (forma volitiva de 考える)"
+      },
+      {
+        "id": 5,
+        "word": "まずは",
+        "pinyin": null,
+        "meaning": "primeiro de tudo"
+      },
+      {
+        "id": 7,
+        "word": "何が楽しいか",
+        "pinyin": null,
+        "meaning": "o que é divertido"
+      },
+      {
+        "id": 11,
+        "word": "見せて",
+        "pinyin": null,
+        "meaning": "mostre-me (forma 'te' de 見せる)"
+      },
+      {
+        "id": 12,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, pede algo)"
+      }
+    ],
+    "id": "local-1772394729409-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ほら、前の方にある二つの高い塔で、乗ってる人たちが叫んでるやつ。",
+    "pinyin": null,
+    "translation": "A: Olha, aqueles dois elevadores altos ali na frente, onde as pessoas que estão neles estão gritando.",
+    "tokens": [
+      "ほら",
+      "、",
+      "前",
+      "の",
+      "方",
+      "に",
+      "ある",
+      "二つ",
+      "の",
+      "高い",
+      "塔",
+      "で",
+      "、",
+      "乗ってる",
+      "人たち",
+      "が",
+      "叫んでる",
+      "やつ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ほら",
+        "pinyin": null,
+        "meaning": "Olha! Veja!"
+      },
+      {
+        "id": 2,
+        "word": "前の方",
+        "pinyin": null,
+        "meaning": "na frente, à frente"
+      },
+      {
+        "id": 7,
+        "word": "二つ",
+        "pinyin": null,
+        "meaning": "dois"
+      },
+      {
+        "id": 9,
+        "word": "高い",
+        "pinyin": null,
+        "meaning": "alto"
+      },
+      {
+        "id": 10,
+        "word": "塔",
+        "pinyin": null,
+        "meaning": "torre"
+      },
+      {
+        "id": 13,
+        "word": "乗ってる",
+        "pinyin": null,
+        "meaning": "estão andando/subindo (forma contraída de 乗っている)"
+      },
+      {
+        "id": 14,
+        "word": "人たち",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 16,
+        "word": "叫んでる",
+        "pinyin": null,
+        "meaning": "estão gritando (forma contraída de 叫んでいる)"
+      },
+      {
+        "id": 17,
+        "word": "やつ",
+        "pinyin": null,
+        "meaning": "aquele (coisa/pessoa) (informal)"
+      }
+    ],
+    "id": "local-1772394729409-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ、知ってる。ツインタワーヒーローズだ。あれは興奮しすぎだ。私、あれには乗る勇気ないよ。",
+    "pinyin": null,
+    "translation": "B: Ah, eu sei. É o Twin Tower Heroes. Aquilo é emocionante demais. Eu não tenho coragem de ir naquele.",
+    "tokens": [
+      "ああ",
+      "、",
+      "知ってる",
+      "。",
+      "ツインタワーヒーローズ",
+      "だ",
+      "。",
+      "あれ",
+      "は",
+      "興奮しすぎ",
+      "だ",
+      "。",
+      "私",
+      "、",
+      "あれ",
+      "に",
+      "は",
+      "乗る",
+      "勇気",
+      "ない",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ああ",
+        "pinyin": null,
+        "meaning": "Ah"
+      },
+      {
+        "id": 2,
+        "word": "知ってる",
+        "pinyin": null,
+        "meaning": "sei, conheço (forma contraída de 知っている)"
+      },
+      {
+        "id": 4,
+        "word": "ツインタワーヒーローズ",
+        "pinyin": null,
+        "meaning": "Twin Tower Heroes (nome de atração)"
+      },
+      {
+        "id": 9,
+        "word": "興奮しすぎ",
+        "pinyin": null,
+        "meaning": "muito emocionante, excitante demais"
+      },
+      {
+        "id": 17,
+        "word": "乗る",
+        "pinyin": null,
+        "meaning": "montar, ir em (um brinquedo)"
+      },
+      {
+        "id": 18,
+        "word": "勇気",
+        "pinyin": null,
+        "meaning": "coragem"
+      },
+      {
+        "id": 19,
+        "word": "ない",
+        "pinyin": null,
+        "meaning": "não tem"
+      },
+      {
+        "id": 20,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa ao ouvinte)"
+      }
+    ],
+    "id": "local-1772394729409-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: その隣で前後に揺れるやつは、海賊船のアップグレード版だよ。",
+    "pinyin": null,
+    "translation": "A: Aquele que balança para frente e para trás ao lado é a versão aprimorada do navio pirata.",
+    "tokens": [
+      "その",
+      "隣",
+      "で",
+      "前後",
+      "に",
+      "揺れる",
+      "やつ",
+      "は",
+      "、",
+      "海賊船",
+      "の",
+      "アップグレード版",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "隣",
+        "pinyin": null,
+        "meaning": "ao lado"
+      },
+      {
+        "id": 3,
+        "word": "前後",
+        "pinyin": null,
+        "meaning": "frente e trás"
+      },
+      {
+        "id": 5,
+        "word": "揺れる",
+        "pinyin": null,
+        "meaning": "balançar"
+      },
+      {
+        "id": 6,
+        "word": "やつ",
+        "pinyin": null,
+        "meaning": "aquele (coisa) (informal)"
+      },
+      {
+        "id": 9,
+        "word": "海賊船",
+        "pinyin": null,
+        "meaning": "navio pirata (atração de parque)"
+      },
+      {
+        "id": 11,
+        "word": "アップグレード版",
+        "pinyin": null,
+        "meaning": "versão aprimorada/atualizada"
+      },
+      {
+        "id": 13,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa ao ouvinte)"
+      }
+    ],
+    "id": "local-1772394729409-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: あれもすごく怖そう！",
+    "pinyin": null,
+    "translation": "B: Aquilo também parece muito assustador!",
+    "tokens": [
+      "あれ",
+      "も",
+      "すごく",
+      "怖そう",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "すごく",
+        "pinyin": null,
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 3,
+        "word": "怖そう",
+        "pinyin": null,
+        "meaning": "parece assustador (forma そう para 'parecer')"
+      }
+    ],
+    "id": "local-1772394729409-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 湖の隣にある大きな木製のジェットコースターだよ。",
+    "pinyin": null,
+    "translation": "A: É a montanha-russa de madeira grande que fica ao lado do lago.",
+    "tokens": [
+      "湖",
+      "の",
+      "隣",
+      "に",
+      "ある",
+      "大きな",
+      "木製",
+      "の",
+      "ジェットコースター",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "湖",
+        "pinyin": null,
+        "meaning": "lago"
+      },
+      {
+        "id": 2,
+        "word": "隣",
+        "pinyin": null,
+        "meaning": "ao lado"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": null,
+        "meaning": "está, existe (para objetos inanimados)"
+      },
+      {
+        "id": 5,
+        "word": "大きな",
+        "pinyin": null,
+        "meaning": "grande"
+      },
+      {
+        "id": 6,
+        "word": "木製",
+        "pinyin": null,
+        "meaning": "de madeira"
+      },
+      {
+        "id": 8,
+        "word": "ジェットコースター",
+        "pinyin": null,
+        "meaning": "montanha-russa"
+      },
+      {
+        "id": 10,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa ao ouvinte)"
+      }
+    ],
+    "id": "local-1772394729409-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: でも、行列に人が多すぎるよ。二時間は並びそう。",
+    "pinyin": null,
+    "translation": "B: Mas tem muita gente na fila. Parece que vamos ter que esperar duas horas.",
+    "tokens": [
+      "でも",
+      "、",
+      "行列",
+      "に",
+      "人",
+      "が",
+      "多すぎる",
+      "よ",
+      "。",
+      "二時間",
+      "は",
+      "並びそう",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "でも",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "行列",
+        "pinyin": null,
+        "meaning": "fila"
+      },
+      {
+        "id": 6,
+        "word": "多すぎる",
+        "pinyin": null,
+        "meaning": "muita gente, excessivamente muitos"
+      },
+      {
+        "id": 7,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa ao ouvinte)"
+      },
+      {
+        "id": 9,
+        "word": "二時間",
+        "pinyin": null,
+        "meaning": "duas horas"
+      },
+      {
+        "id": 11,
+        "word": "並びそう",
+        "pinyin": null,
+        "meaning": "parece que vamos fazer fila (forma そう para 'parecer')"
+      }
+    ],
+    "id": "local-1772394729409-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: シュート・ザ・シュートに乗る？定番の水上アトラクションだよ。",
+    "pinyin": null,
+    "translation": "A: Que tal ir no Shoot the Chute? É uma atração aquática clássica.",
+    "tokens": [
+      "シュート・ザ・シュート",
+      "に",
+      "乗る",
+      "？",
+      "定番",
+      "の",
+      "水上",
+      "アトラクション",
+      "だ",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "シュート・ザ・シュート",
+        "pinyin": null,
+        "meaning": "Shoot the Chute (nome de atração aquática)"
+      },
+      {
+        "id": 2,
+        "word": "乗る",
+        "pinyin": null,
+        "meaning": "montar, ir em (um brinquedo)"
+      },
+      {
+        "id": 4,
+        "word": "定番",
+        "pinyin": null,
+        "meaning": "clássico, padrão, popular"
+      },
+      {
+        "id": 6,
+        "word": "水上",
+        "pinyin": null,
+        "meaning": "aquático"
+      },
+      {
+        "id": 7,
+        "word": "アトラクション",
+        "pinyin": null,
+        "meaning": "atração"
+      },
+      {
+        "id": 9,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, informa ao ouvinte)"
+      }
+    ],
+    "id": "local-1772394729409-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: いいよ！",
+    "pinyin": null,
+    "translation": "B: Tudo bem! / Sim!",
+    "tokens": [
+      "いい",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "いい",
+        "pinyin": null,
+        "meaning": "bom, tudo bem"
+      },
+      {
+        "id": 1,
+        "word": "よ",
+        "pinyin": null,
+        "meaning": "(partícula de ênfase, expressa decisão/acordo)"
+      }
+    ],
+    "id": "local-1772394729409-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、先に並んでて。使い捨てのレインポンチョ買って来るから。",
+    "pinyin": null,
+    "translation": "A: Então, vá fazendo fila na frente. Vou comprar uma capa de chuva descartável.",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "先に",
+      "並んでて",
+      "。",
+      "使い捨て",
+      "の",
+      "レインポンチョ",
+      "買って来る",
+      "から",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "じゃあ",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "先に",
+        "pinyin": null,
+        "meaning": "na frente, primeiro"
+      },
+      {
+        "id": 3,
+        "word": "並んでて",
+        "pinyin": null,
+        "meaning": "fique fazendo fila (forma te+おく contraída para ておく)"
+      },
+      {
+        "id": 5,
+        "word": "使い捨て",
+        "pinyin": null,
+        "meaning": "descartável"
+      },
+      {
+        "id": 7,
+        "word": "レインポンチョ",
+        "pinyin": null,
+        "meaning": "capa de chuva (poncho)"
+      },
+      {
+        "id": 8,
+        "word": "買って来る",
+        "pinyin": null,
+        "meaning": "ir comprar e voltar"
+      },
+      {
+        "id": 9,
+        "word": "から",
+        "pinyin": null,
+        "meaning": "(partícula que indica razão, 'porque')"
+      }
+    ],
+    "id": "local-1772394729409-12",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,638 @@
+[
+  {
+    "chinese": "A: Zhen Zhen, hai controllato il tuo voto dell'esame di ammissione all'università?",
+    "pinyin": "",
+    "translation": "A: Zhen Zhen, você verificou sua nota no exame de admissão da universidade?",
+    "tokens": [
+      "A:",
+      "Zhen",
+      "Zhen",
+      ",",
+      "hai",
+      "controllato",
+      "il",
+      "tuo",
+      "voto",
+      "dell'esame",
+      "di",
+      "ammissione",
+      "all'università",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hai controllato",
+        "pinyin": "",
+        "meaning": "você verificou"
+      },
+      {
+        "id": 2,
+        "word": "voto",
+        "pinyin": "",
+        "meaning": "nota"
+      },
+      {
+        "id": 3,
+        "word": "esame di ammissione",
+        "pinyin": "",
+        "meaning": "exame de admissão"
+      },
+      {
+        "id": 4,
+        "word": "università",
+        "pinyin": "",
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772393941800-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì. È 452. E tu?",
+    "pinyin": "",
+    "translation": "B: Sim. É 452. E você?",
+    "tokens": [
+      "B:",
+      "Sì",
+      ".",
+      "È",
+      "452",
+      ".",
+      "E",
+      "tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "Sì",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 6,
+        "word": "E tu",
+        "pinyin": "",
+        "meaning": "E você"
+      }
+    ],
+    "id": "local-1772393941800-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Wow, è così alto. Io ho preso solo 417.",
+    "pinyin": "",
+    "translation": "A: Uau, é tão alto. Eu tirei apenas 417.",
+    "tokens": [
+      "A:",
+      "Wow",
+      ",",
+      "è",
+      "così",
+      "alto",
+      ".",
+      "Io",
+      "ho",
+      "preso",
+      "solo",
+      "417",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 7,
+        "word": "così alto",
+        "pinyin": "",
+        "meaning": "tão alto"
+      },
+      {
+        "id": 8,
+        "word": "ho preso",
+        "pinyin": "",
+        "meaning": "eu tirei"
+      },
+      {
+        "id": 9,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas"
+      }
+    ],
+    "id": "local-1772393941800-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Allora siamo più o meno uguali. Il punteggio minimo per le materie umanistiche è generalmente più alto che per quelle scientifiche.",
+    "pinyin": "",
+    "translation": "B: Então somos mais ou menos iguais. A pontuação mínima para as matérias de humanas é geralmente mais alta do que para as de exatas.",
+    "tokens": [
+      "B:",
+      "Allora",
+      "siamo",
+      "più",
+      "o",
+      "meno",
+      "uguali",
+      ".",
+      "Il",
+      "punteggio",
+      "minimo",
+      "per",
+      "le",
+      "materie",
+      "umanistiche",
+      "è",
+      "generalmente",
+      "più",
+      "alto",
+      "che",
+      "per",
+      "quelle",
+      "scientifiche",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 11,
+        "word": "più o meno",
+        "pinyin": "",
+        "meaning": "mais ou menos"
+      },
+      {
+        "id": 12,
+        "word": "uguali",
+        "pinyin": "",
+        "meaning": "iguais"
+      },
+      {
+        "id": 13,
+        "word": "punteggio minimo",
+        "pinyin": "",
+        "meaning": "pontuação mínima"
+      },
+      {
+        "id": 14,
+        "word": "materie umanistiche",
+        "pinyin": "",
+        "meaning": "matérias de humanas"
+      },
+      {
+        "id": 15,
+        "word": "generalmente",
+        "pinyin": "",
+        "meaning": "geralmente"
+      },
+      {
+        "id": 16,
+        "word": "materie scientifiche",
+        "pinyin": "",
+        "meaning": "matérias científicas"
+      }
+    ],
+    "id": "local-1772393941800-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Forse possiamo ancora andare alla stessa università. A quale scuola vuoi fare domanda?",
+    "pinyin": "",
+    "translation": "A: Talvez ainda possamos ir para a mesma universidade. Para qual escola você quer se candidatar?",
+    "tokens": [
+      "A:",
+      "Forse",
+      "possiamo",
+      "ancora",
+      "andare",
+      "alla",
+      "stessa",
+      "università",
+      ".",
+      "A",
+      "quale",
+      "scuola",
+      "vuoi",
+      "fare",
+      "domanda",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "Forse",
+        "pinyin": "",
+        "meaning": "Talvez"
+      },
+      {
+        "id": 18,
+        "word": "ancora",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 19,
+        "word": "stessa università",
+        "pinyin": "",
+        "meaning": "mesma universidade"
+      },
+      {
+        "id": 20,
+        "word": "fare domanda",
+        "pinyin": "",
+        "meaning": "candidatar-se"
+      },
+      {
+        "id": 21,
+        "word": "scuola",
+        "pinyin": "",
+        "meaning": "escola"
+      }
+    ],
+    "id": "local-1772393941800-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Non ho ancora deciso. Ci hai pensato tu?",
+    "pinyin": "",
+    "translation": "B: Ainda não decidi. Você pensou sobre isso?",
+    "tokens": [
+      "B:",
+      "Non",
+      "ho",
+      "ancora",
+      "deciso",
+      ".",
+      "Ci",
+      "hai",
+      "pensato",
+      "tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "non ho ancora deciso",
+        "pinyin": "",
+        "meaning": "ainda não decidi"
+      },
+      {
+        "id": 23,
+        "word": "ci hai pensato",
+        "pinyin": "",
+        "meaning": "você pensou sobre isso"
+      }
+    ],
+    "id": "local-1772393941800-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: No, neanche io. Che indirizzo di studi vuoi seguire?",
+    "pinyin": "",
+    "translation": "A: Não, nem eu. Que área de estudos você quer seguir?",
+    "tokens": [
+      "A:",
+      "No",
+      ",",
+      "neanche",
+      "io",
+      ".",
+      "Che",
+      "indirizzo",
+      "di",
+      "studi",
+      "vuoi",
+      "seguire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "neanche io",
+        "pinyin": "",
+        "meaning": "nem eu"
+      },
+      {
+        "id": 25,
+        "word": "indirizzo di studi",
+        "pinyin": "",
+        "meaning": "área de estudos"
+      },
+      {
+        "id": 26,
+        "word": "seguire",
+        "pinyin": "",
+        "meaning": "seguir"
+      }
+    ],
+    "id": "local-1772393941800-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Voglio fare domanda per il dipartimento di lingua cinese, ma mio papà e mia mamma vogliono che studi contabilità.",
+    "pinyin": "",
+    "translation": "B: Quero me candidatar ao departamento de língua chinesa, mas meu pai e minha mãe querem que eu estude contabilidade.",
+    "tokens": [
+      "B:",
+      "Voglio",
+      "fare",
+      "domanda",
+      "per",
+      "il",
+      "dipartimento",
+      "di",
+      "lingua",
+      "cinese",
+      ",",
+      "ma",
+      "mio",
+      "papà",
+      "e",
+      "mia",
+      "mamma",
+      "vogliono",
+      "che",
+      "studi",
+      "contabilità",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 27,
+        "word": "fare domanda per",
+        "pinyin": "",
+        "meaning": "candidatar-se a"
+      },
+      {
+        "id": 28,
+        "word": "dipartimento di lingua cinese",
+        "pinyin": "",
+        "meaning": "departamento de língua chinesa"
+      },
+      {
+        "id": 29,
+        "word": "papà",
+        "pinyin": "",
+        "meaning": "pai"
+      },
+      {
+        "id": 30,
+        "word": "mamma",
+        "pinyin": "",
+        "meaning": "mãe"
+      },
+      {
+        "id": 31,
+        "word": "vogliono che studi",
+        "pinyin": "",
+        "meaning": "querem que eu estude"
+      },
+      {
+        "id": 32,
+        "word": "contabilità",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      }
+    ],
+    "id": "local-1772393941800-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho sentito dire che lingua cinese è l'indirizzo peggiore per trovare lavoro.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que língua chinesa é a pior área para encontrar trabalho.",
+    "tokens": [
+      "A:",
+      "Ho",
+      "sentito",
+      "dire",
+      "che",
+      "lingua",
+      "cinese",
+      "è",
+      "l'indirizzo",
+      "peggiore",
+      "per",
+      "trovare",
+      "lavoro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 33,
+        "word": "Ho sentito dire",
+        "pinyin": "",
+        "meaning": "Ouvi dizer"
+      },
+      {
+        "id": 34,
+        "word": "lingua cinese",
+        "pinyin": "",
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 35,
+        "word": "indirizzo peggiore",
+        "pinyin": "",
+        "meaning": "pior área"
+      },
+      {
+        "id": 36,
+        "word": "trovare lavoro",
+        "pinyin": "",
+        "meaning": "encontrar trabalho"
+      }
+    ],
+    "id": "local-1772393941800-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ma mi piace la letteratura e contabilità suona così noioso. Che indirizzo di studi vuoi seguire tu?",
+    "pinyin": "",
+    "translation": "B: Mas eu gosto de literatura e contabilidade soa tão chato. Que área de estudos você quer seguir?",
+    "tokens": [
+      "B:",
+      "Ma",
+      "mi",
+      "piace",
+      "la",
+      "letteratura",
+      "e",
+      "contabilità",
+      "suona",
+      "così",
+      "noioso",
+      ".",
+      "Che",
+      "indirizzo",
+      "di",
+      "studi",
+      "vuoi",
+      "seguire",
+      "tu",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "mi piace",
+        "pinyin": "",
+        "meaning": "eu gosto"
+      },
+      {
+        "id": 38,
+        "word": "letteratura",
+        "pinyin": "",
+        "meaning": "literatura"
+      },
+      {
+        "id": 39,
+        "word": "contabilità",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 40,
+        "word": "suona così noioso",
+        "pinyin": "",
+        "meaning": "soa tão chato"
+      },
+      {
+        "id": 41,
+        "word": "indirizzo di studi",
+        "pinyin": "",
+        "meaning": "área de estudos"
+      }
+    ],
+    "id": "local-1772393941800-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Voglio studiare informatica. Le prospettive di impiego sono piuttosto buone.",
+    "pinyin": "",
+    "translation": "A: Quero estudar informática. As perspectivas de emprego são bastante boas.",
+    "tokens": [
+      "A:",
+      "Voglio",
+      "studiare",
+      "informatica",
+      ".",
+      "Le",
+      "prospettive",
+      "di",
+      "impiego",
+      "sono",
+      "piuttosto",
+      "buone",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 42,
+        "word": "Voglio studiare",
+        "pinyin": "",
+        "meaning": "Quero estudar"
+      },
+      {
+        "id": 43,
+        "word": "informatica",
+        "pinyin": "",
+        "meaning": "informática"
+      },
+      {
+        "id": 44,
+        "word": "prospettive di impiego",
+        "pinyin": "",
+        "meaning": "perspectivas de emprego"
+      },
+      {
+        "id": 45,
+        "word": "piuttosto buone",
+        "pinyin": "",
+        "meaning": "bastante boas"
+      }
+    ],
+    "id": "local-1772393941800-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Caspita. Allora, se più tardi non riesco a trovare lavoro, potrai invitarmi a mangiare fuori tutti i giorni.",
+    "pinyin": "",
+    "translation": "B: Caramba. Então, se mais tarde eu não conseguir encontrar trabalho, você poderá me convidar para comer fora todos os dias.",
+    "tokens": [
+      "B:",
+      "Caspita",
+      ".",
+      "Allora",
+      ",",
+      "se",
+      "più",
+      "tardi",
+      "non",
+      "riesco",
+      "a",
+      "trovare",
+      "lavoro",
+      ",",
+      "potrai",
+      "invitarmi",
+      "a",
+      "mangiare",
+      "fuori",
+      "tutti",
+      "i",
+      "giorni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 46,
+        "word": "Caspita",
+        "pinyin": "",
+        "meaning": "Caramba"
+      },
+      {
+        "id": 47,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 48,
+        "word": "più tardi",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 49,
+        "word": "non riesco a trovare lavoro",
+        "pinyin": "",
+        "meaning": "não consigo encontrar trabalho"
+      },
+      {
+        "id": 50,
+        "word": "potrai invitarmi",
+        "pinyin": "",
+        "meaning": "você poderá me convidar"
+      },
+      {
+        "id": 51,
+        "word": "mangiare fuori",
+        "pinyin": "",
+        "meaning": "comer fora"
+      },
+      {
+        "id": 52,
+        "word": "tutti i giorni",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      }
+    ],
+    "id": "local-1772393941800-11",
+    "language": "Italiano"
+  }
+]

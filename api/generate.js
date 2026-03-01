@@ -4,7 +4,7 @@ import { GoogleGenAI } from "@google/genai";
 // Helper para chamar o modelo Gemini
 const callGemini = async (genAI, prompt, systemInstruction = "") => {
   const response = await genAI.models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-2.0-flash-lite",
     contents: prompt,
     config: {
       systemInstruction: systemInstruction,

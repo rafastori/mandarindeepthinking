@@ -1,0 +1,660 @@
+[
+  {
+    "chinese": "爸爸，该吃饭了！",
+    "pinyin": "bàba, gāi chīfàn le!",
+    "translation": "Papai, está na hora de comer!",
+    "tokens": [
+      "爸爸",
+      "，",
+      "该",
+      "吃饭",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "爸爸",
+        "pinyin": "bàba",
+        "meaning": "pai"
+      },
+      {
+        "id": 2,
+        "word": "该",
+        "pinyin": "gāi",
+        "meaning": "deveria; estar na hora de"
+      },
+      {
+        "id": 3,
+        "word": "吃饭",
+        "pinyin": "chīfàn",
+        "meaning": "comer (refeição)"
+      }
+    ],
+    "id": "local-1772394234253-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "来了！",
+    "pinyin": "lái le!",
+    "translation": "Cheguei! / Estou indo!",
+    "tokens": [
+      "来",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 4,
+        "word": "来",
+        "pinyin": "lái",
+        "meaning": "vir; chegar"
+      }
+    ],
+    "id": "local-1772394234253-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你每天都玩这个游戏。你不觉得无聊吗？",
+    "pinyin": "nǐ měitiān dōu wán zhège yóuxì. nǐ bù juéde wúliáo ma?",
+    "translation": "Você joga este jogo todos os dias. Você não acha chato?",
+    "tokens": [
+      "你",
+      "每天",
+      "都",
+      "玩",
+      "这",
+      "个",
+      "游戏",
+      "。",
+      "你",
+      "不",
+      "觉得",
+      "无聊",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 5,
+        "word": "每天",
+        "pinyin": "měitiān",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 6,
+        "word": "玩",
+        "pinyin": "wán",
+        "meaning": "jogar; brincar"
+      },
+      {
+        "id": 7,
+        "word": "游戏",
+        "pinyin": "yóuxì",
+        "meaning": "jogo"
+      },
+      {
+        "id": 8,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar; sentir"
+      },
+      {
+        "id": 9,
+        "word": "无聊",
+        "pinyin": "wúliáo",
+        "meaning": "chato; entediante"
+      }
+    ],
+    "id": "local-1772394234253-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "没办法。我看视频网速太慢了。总是卡顿。",
+    "pinyin": "méi bànfǎ. wǒ kàn shìpín wǎngsù tài màn le. zǒngshì kǎdùn.",
+    "translation": "Não tem jeito. A velocidade da internet está muito lenta quando assisto a vídeos. Sempre trava.",
+    "tokens": [
+      "没",
+      "办法",
+      "。",
+      "我",
+      "看",
+      "视频",
+      "网速",
+      "太",
+      "慢",
+      "了",
+      "。",
+      "总是",
+      "卡顿",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "没办法",
+        "pinyin": "méi bànfǎ",
+        "meaning": "não tem jeito; não há o que fazer"
+      },
+      {
+        "id": 11,
+        "word": "视频",
+        "pinyin": "shìpín",
+        "meaning": "vídeo"
+      },
+      {
+        "id": 12,
+        "word": "网速",
+        "pinyin": "wǎngsù",
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 13,
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "muito (demais); excessivamente"
+      },
+      {
+        "id": 14,
+        "word": "慢",
+        "pinyin": "màn",
+        "meaning": "lento"
+      },
+      {
+        "id": 15,
+        "word": "总是",
+        "pinyin": "zǒngshì",
+        "meaning": "sempre"
+      },
+      {
+        "id": 16,
+        "word": "卡顿",
+        "pinyin": "kǎdùn",
+        "meaning": "travar; engasgar (computador, vídeo)"
+      }
+    ],
+    "id": "local-1772394234253-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "你为什么只装了10兆宽带？",
+    "pinyin": "nǐ wèishénme zhǐ zhuāng le shí zhào kuāndài?",
+    "translation": "Por que você instalou apenas 10 megabits de banda larga?",
+    "tokens": [
+      "你",
+      "为什么",
+      "只",
+      "装",
+      "了",
+      "10",
+      "兆",
+      "宽带",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 17,
+        "word": "为什么",
+        "pinyin": "wèishénme",
+        "meaning": "por que"
+      },
+      {
+        "id": 18,
+        "word": "只",
+        "pinyin": "zhǐ",
+        "meaning": "apenas; somente"
+      },
+      {
+        "id": 19,
+        "word": "装",
+        "pinyin": "zhuāng",
+        "meaning": "instalar"
+      },
+      {
+        "id": 20,
+        "word": "兆",
+        "pinyin": "zhào",
+        "meaning": "mega (unidade de medida)"
+      },
+      {
+        "id": 21,
+        "word": "宽带",
+        "pinyin": "kuāndài",
+        "meaning": "banda larga"
+      }
+    ],
+    "id": "local-1772394234253-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我不懂。你家装的是哪种？",
+    "pinyin": "wǒ bù dǒng. nǐ jiā zhuāng de shì nǎ zhǒng?",
+    "translation": "Não entendo. Qual tipo a sua casa instalou?",
+    "tokens": [
+      "我",
+      "不懂",
+      "。",
+      "你",
+      "家",
+      "装",
+      "的",
+      "是",
+      "哪",
+      "种",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 22,
+        "word": "不懂",
+        "pinyin": "bù dǒng",
+        "meaning": "não entender"
+      },
+      {
+        "id": 23,
+        "word": "家",
+        "pinyin": "jiā",
+        "meaning": "casa; família; lar"
+      },
+      {
+        "id": 24,
+        "word": "哪种",
+        "pinyin": "nǎ zhǒng",
+        "meaning": "que tipo"
+      }
+    ],
+    "id": "local-1772394234253-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我们家早就换光纤了；宽带什么的太差劲了。",
+    "pinyin": "wǒmen jiā zǎojiù huàn guāngxiān le; kuāndài shénme de tài chàjìn le.",
+    "translation": "Nossa casa já trocou para fibra óptica há muito tempo; banda larga e coisas do tipo são muito ruins.",
+    "tokens": [
+      "我们",
+      "家",
+      "早就",
+      "换",
+      "光纤",
+      "了",
+      "；",
+      "宽带",
+      "什么",
+      "的",
+      "太",
+      "差劲",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 25,
+        "word": "早就",
+        "pinyin": "zǎojiù",
+        "meaning": "há muito tempo; já faz tempo"
+      },
+      {
+        "id": 26,
+        "word": "换",
+        "pinyin": "huàn",
+        "meaning": "trocar; mudar"
+      },
+      {
+        "id": 27,
+        "word": "光纤",
+        "pinyin": "guāngxiān",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 28,
+        "word": "宽带",
+        "pinyin": "kuāndài",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 29,
+        "word": "什么的",
+        "pinyin": "shénme de",
+        "meaning": "e coisas do tipo; etc."
+      },
+      {
+        "id": 30,
+        "word": "差劲",
+        "pinyin": "chàjìn",
+        "meaning": "ruim; péssimo"
+      }
+    ],
+    "id": "local-1772394234253-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那我们家能装吗？",
+    "pinyin": "nà wǒmen jiā néng zhuāng ma?",
+    "translation": "Então nossa casa pode instalar?",
+    "tokens": [
+      "那",
+      "我们",
+      "家",
+      "能",
+      "装",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder; ser capaz de"
+      },
+      {
+        "id": 32,
+        "word": "装",
+        "pinyin": "zhuāng",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394234253-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那要看你小区有没有光纤接入。",
+    "pinyin": "nà yào kàn nǐ xiǎoqū yǒu méiyǒu guāngxiān jiērù.",
+    "translation": "Isso depende se o seu condomínio/complexo residencial tem acesso a fibra óptica.",
+    "tokens": [
+      "那",
+      "要",
+      "看",
+      "你",
+      "小区",
+      "有",
+      "没",
+      "有",
+      "光纤",
+      "接入",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 33,
+        "word": "要看",
+        "pinyin": "yào kàn",
+        "meaning": "depende de; tem que ver"
+      },
+      {
+        "id": 34,
+        "word": "小区",
+        "pinyin": "xiǎoqū",
+        "meaning": "condomínio; complexo residencial"
+      },
+      {
+        "id": 35,
+        "word": "光纤",
+        "pinyin": "guāngxiān",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 36,
+        "word": "接入",
+        "pinyin": "jiērù",
+        "meaning": "acesso; conectar"
+      }
+    ],
+    "id": "local-1772394234253-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "如果没有怎么办？",
+    "pinyin": "rúguǒ méiyǒu zěnme bàn?",
+    "translation": "E se não tiver, o que fazer?",
+    "tokens": [
+      "如果",
+      "没",
+      "有",
+      "怎么",
+      "办",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 37,
+        "word": "如果",
+        "pinyin": "rúguǒ",
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 38,
+        "word": "怎么办",
+        "pinyin": "zěnme bàn",
+        "meaning": "o que fazer"
+      }
+    ],
+    "id": "local-1772394234253-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那你就只能把网速升到20兆，试试看。",
+    "pinyin": "nà nǐ jiù zhǐ néng bǎ wǎngsù shēng dào èrshí zhào, shìshi kàn.",
+    "translation": "Então você só pode aumentar a velocidade da internet para 20 megabits, e ver como fica.",
+    "tokens": [
+      "那",
+      "你",
+      "就",
+      "只",
+      "能",
+      "把",
+      "网速",
+      "升",
+      "到",
+      "20",
+      "兆",
+      "，",
+      "试试看",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 39,
+        "word": "只能",
+        "pinyin": "zhǐ néng",
+        "meaning": "só pode; apenas pode"
+      },
+      {
+        "id": 40,
+        "word": "把",
+        "pinyin": "bǎ",
+        "meaning": "partícula que precede o objeto direto"
+      },
+      {
+        "id": 41,
+        "word": "网速",
+        "pinyin": "wǎngsù",
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 42,
+        "word": "升",
+        "pinyin": "shēng",
+        "meaning": "subir; aumentar"
+      },
+      {
+        "id": 43,
+        "word": "兆",
+        "pinyin": "zhào",
+        "meaning": "mega (unidade de medida)"
+      },
+      {
+        "id": 44,
+        "word": "试试看",
+        "pinyin": "shìshi kàn",
+        "meaning": "experimentar; tentar e ver"
+      }
+    ],
+    "id": "local-1772394234253-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "好像我在走廊里看到一个广告，说光纤上网，50兆，一年1080元。",
+    "pinyin": "hǎoxiàng wǒ zài zǒuláng lǐ kàndào yī gè guǎnggào, shuō guāngxiān shàngwǎng, wǔshí zhào, yī nián yīqiān líng bāshí yuán.",
+    "translation": "Parece que eu vi um anúncio no corredor, dizendo \"internet de fibra óptica, 50 megabits, 1080 yuans por ano\".",
+    "tokens": [
+      "好像",
+      "我",
+      "在",
+      "走廊",
+      "里",
+      "看到",
+      "一",
+      "个",
+      "广告",
+      "，",
+      "说",
+      "光纤",
+      "上网",
+      "，",
+      "50",
+      "兆",
+      "，",
+      "一",
+      "年",
+      "1080",
+      "元",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 45,
+        "word": "好像",
+        "pinyin": "hǎoxiàng",
+        "meaning": "parece que; como se"
+      },
+      {
+        "id": 46,
+        "word": "走廊",
+        "pinyin": "zǒuláng",
+        "meaning": "corredor"
+      },
+      {
+        "id": 47,
+        "word": "广告",
+        "pinyin": "guǎnggào",
+        "meaning": "anúncio"
+      },
+      {
+        "id": 48,
+        "word": "光纤",
+        "pinyin": "guāngxiān",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 49,
+        "word": "上网",
+        "pinyin": "shàngwǎng",
+        "meaning": "navegar na internet"
+      },
+      {
+        "id": 50,
+        "word": "兆",
+        "pinyin": "zhào",
+        "meaning": "mega (unidade de medida)"
+      },
+      {
+        "id": 51,
+        "word": "年",
+        "pinyin": "nián",
+        "meaning": "ano"
+      },
+      {
+        "id": 52,
+        "word": "元",
+        "pinyin": "yuán",
+        "meaning": "yuan (unidade monetária chinesa)"
+      }
+    ],
+    "id": "local-1772394234253-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "真的吗？那等你宽带合约到期后，就可以换那个了。",
+    "pinyin": "zhēn de ma? nà děng nǐ kuāndài héyuē dàoqī hòu, jiù kěyǐ huàn nàge le.",
+    "translation": "É mesmo? Então, depois que seu contrato de banda larga expirar, você poderá trocar por aquele.",
+    "tokens": [
+      "真",
+      "的",
+      "吗",
+      "？",
+      "那",
+      "等",
+      "你",
+      "宽带",
+      "合约",
+      "到期",
+      "后",
+      "，",
+      "就",
+      "可以",
+      "换",
+      "那个",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 53,
+        "word": "真的",
+        "pinyin": "zhēn de",
+        "meaning": "de verdade; realmente"
+      },
+      {
+        "id": 54,
+        "word": "等",
+        "pinyin": "děng",
+        "meaning": "esperar"
+      },
+      {
+        "id": 55,
+        "word": "宽带",
+        "pinyin": "kuāndài",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 56,
+        "word": "合约",
+        "pinyin": "héyuē",
+        "meaning": "contrato"
+      },
+      {
+        "id": 57,
+        "word": "到期",
+        "pinyin": "dàoqī",
+        "meaning": "expirar; vencer"
+      },
+      {
+        "id": 58,
+        "word": "后",
+        "pinyin": "hòu",
+        "meaning": "depois"
+      },
+      {
+        "id": 59,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder; conseguir"
+      },
+      {
+        "id": 60,
+        "word": "换",
+        "pinyin": "huàn",
+        "meaning": "trocar"
+      },
+      {
+        "id": 61,
+        "word": "那个",
+        "pinyin": "nàge",
+        "meaning": "aquele"
+      }
+    ],
+    "id": "local-1772394234253-12",
+    "language": "Chinês"
+  }
+]

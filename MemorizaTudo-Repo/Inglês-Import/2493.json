@@ -1,0 +1,852 @@
+[
+  {
+    "chinese": "A: Dad, it's time to eat!",
+    "pinyin": null,
+    "translation": "A: Pai, é hora de comer!",
+    "tokens": [
+      "A",
+      ":",
+      "Dad",
+      ",",
+      "it's",
+      "time",
+      "to",
+      "eat",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dad",
+        "pinyin": null,
+        "meaning": "Pai"
+      },
+      {
+        "id": 2,
+        "word": "time",
+        "pinyin": null,
+        "meaning": "hora"
+      },
+      {
+        "id": 3,
+        "word": "eat",
+        "pinyin": null,
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772393182552-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Coming!",
+    "pinyin": null,
+    "translation": "B: Estou indo!",
+    "tokens": [
+      "B",
+      ":",
+      "Coming",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Coming",
+        "pinyin": null,
+        "meaning": "Estou indo / Chegando"
+      }
+    ],
+    "id": "local-1772393182552-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You play this game every day.",
+    "pinyin": null,
+    "translation": "A: Você joga este jogo todos os dias.",
+    "tokens": [
+      "A",
+      ":",
+      "You",
+      "play",
+      "this",
+      "game",
+      "every",
+      "day",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "play",
+        "pinyin": null,
+        "meaning": "jogar"
+      },
+      {
+        "id": 2,
+        "word": "game",
+        "pinyin": null,
+        "meaning": "jogo"
+      },
+      {
+        "id": 3,
+        "word": "every",
+        "pinyin": null,
+        "meaning": "todo(s)"
+      },
+      {
+        "id": 4,
+        "word": "day",
+        "pinyin": null,
+        "meaning": "dia"
+      }
+    ],
+    "id": "local-1772393182552-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Don't you find it boring?",
+    "pinyin": null,
+    "translation": "Você não acha chato?",
+    "tokens": [
+      "Don't",
+      "you",
+      "find",
+      "it",
+      "boring",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "find",
+        "pinyin": null,
+        "meaning": "achar / encontrar"
+      },
+      {
+        "id": 2,
+        "word": "boring",
+        "pinyin": null,
+        "meaning": "chato / entediante"
+      }
+    ],
+    "id": "local-1772393182552-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I can't do anything about it.",
+    "pinyin": null,
+    "translation": "B: Eu não posso fazer nada a respeito.",
+    "tokens": [
+      "B",
+      ":",
+      "I",
+      "can't",
+      "do",
+      "anything",
+      "about",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "can't",
+        "pinyin": null,
+        "meaning": "não posso"
+      },
+      {
+        "id": 2,
+        "word": "anything",
+        "pinyin": null,
+        "meaning": "nada (em frases negativas)"
+      },
+      {
+        "id": 3,
+        "word": "about",
+        "pinyin": null,
+        "meaning": "sobre / a respeito"
+      }
+    ],
+    "id": "local-1772393182552-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "When I watch videos the internet speed is too slow.",
+    "pinyin": null,
+    "translation": "Quando assisto a vídeos, a velocidade da internet é muito lenta.",
+    "tokens": [
+      "When",
+      "I",
+      "watch",
+      "videos",
+      "the",
+      "internet",
+      "speed",
+      "is",
+      "too",
+      "slow",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "watch",
+        "pinyin": null,
+        "meaning": "assistir"
+      },
+      {
+        "id": 2,
+        "word": "videos",
+        "pinyin": null,
+        "meaning": "vídeos"
+      },
+      {
+        "id": 3,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      },
+      {
+        "id": 4,
+        "word": "speed",
+        "pinyin": null,
+        "meaning": "velocidade"
+      },
+      {
+        "id": 5,
+        "word": "slow",
+        "pinyin": null,
+        "meaning": "lento"
+      }
+    ],
+    "id": "local-1772393182552-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It always stops up.",
+    "pinyin": null,
+    "translation": "Sempre trava.",
+    "tokens": [
+      "It",
+      "always",
+      "stops",
+      "up",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "always",
+        "pinyin": null,
+        "meaning": "sempre"
+      },
+      {
+        "id": 2,
+        "word": "stops",
+        "pinyin": null,
+        "meaning": "para / trava"
+      }
+    ],
+    "id": "local-1772393182552-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Why did you only install 10 Mbps of broadband?",
+    "pinyin": null,
+    "translation": "A: Por que você instalou apenas 10 Mbps de banda larga?",
+    "tokens": [
+      "A",
+      ":",
+      "Why",
+      "did",
+      "you",
+      "only",
+      "install",
+      "10",
+      "Mbps",
+      "of",
+      "broadband",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Why",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "only",
+        "pinyin": null,
+        "meaning": "apenas"
+      },
+      {
+        "id": 3,
+        "word": "install",
+        "pinyin": null,
+        "meaning": "instalar"
+      },
+      {
+        "id": 4,
+        "word": "Mbps",
+        "pinyin": null,
+        "meaning": "Megabits por segundo"
+      },
+      {
+        "id": 5,
+        "word": "broadband",
+        "pinyin": null,
+        "meaning": "banda larga"
+      }
+    ],
+    "id": "local-1772393182552-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I don't understand.",
+    "pinyin": null,
+    "translation": "B: Não entendo.",
+    "tokens": [
+      "B",
+      ":",
+      "I",
+      "don't",
+      "understand",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "understand",
+        "pinyin": null,
+        "meaning": "entender"
+      }
+    ],
+    "id": "local-1772393182552-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Which kind did you install at your home?",
+    "pinyin": null,
+    "translation": "Que tipo você instalou na sua casa?",
+    "tokens": [
+      "Which",
+      "kind",
+      "did",
+      "you",
+      "install",
+      "at",
+      "your",
+      "home",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kind",
+        "pinyin": null,
+        "meaning": "tipo"
+      },
+      {
+        "id": 2,
+        "word": "install",
+        "pinyin": null,
+        "meaning": "instalar"
+      },
+      {
+        "id": 3,
+        "word": "home",
+        "pinyin": null,
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772393182552-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: We switched to fiber optics a long time ago; broadband and whatnot sucks.",
+    "pinyin": null,
+    "translation": "A: Mudamos para fibra óptica há muito tempo; banda larga e outras coisas são uma porcaria.",
+    "tokens": [
+      "A",
+      ":",
+      "We",
+      "switched",
+      "to",
+      "fiber",
+      "optics",
+      "a",
+      "long",
+      "time",
+      "ago",
+      ";",
+      "broadband",
+      "and",
+      "whatnot",
+      "sucks",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "switched",
+        "pinyin": null,
+        "meaning": "mudou / trocou"
+      },
+      {
+        "id": 2,
+        "word": "fiber",
+        "pinyin": null,
+        "meaning": "fibra"
+      },
+      {
+        "id": 3,
+        "word": "optics",
+        "pinyin": null,
+        "meaning": "óptica"
+      },
+      {
+        "id": 4,
+        "word": "long",
+        "pinyin": null,
+        "meaning": "longo / muito"
+      },
+      {
+        "id": 5,
+        "word": "time",
+        "pinyin": null,
+        "meaning": "tempo"
+      },
+      {
+        "id": 6,
+        "word": "ago",
+        "pinyin": null,
+        "meaning": "atrás"
+      },
+      {
+        "id": 7,
+        "word": "broadband",
+        "pinyin": null,
+        "meaning": "banda larga"
+      },
+      {
+        "id": 8,
+        "word": "whatnot",
+        "pinyin": null,
+        "meaning": "e coisas do tipo"
+      },
+      {
+        "id": 9,
+        "word": "sucks",
+        "pinyin": null,
+        "meaning": "é uma porcaria / é ruim"
+      }
+    ],
+    "id": "local-1772393182552-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: So can I install that at our home?",
+    "pinyin": null,
+    "translation": "B: Então posso instalar isso na nossa casa?",
+    "tokens": [
+      "B",
+      ":",
+      "So",
+      "can",
+      "I",
+      "install",
+      "that",
+      "at",
+      "our",
+      "home",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "can",
+        "pinyin": null,
+        "meaning": "posso / consigo"
+      },
+      {
+        "id": 2,
+        "word": "install",
+        "pinyin": null,
+        "meaning": "instalar"
+      },
+      {
+        "id": 3,
+        "word": "home",
+        "pinyin": null,
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772393182552-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: That depends on whether your neighborhood has access to fiber optics.",
+    "pinyin": null,
+    "translation": "A: Isso depende se o seu bairro tem acesso à fibra óptica.",
+    "tokens": [
+      "A",
+      ":",
+      "That",
+      "depends",
+      "on",
+      "whether",
+      "your",
+      "neighborhood",
+      "has",
+      "access",
+      "to",
+      "fiber",
+      "optics",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "depends",
+        "pinyin": null,
+        "meaning": "depende"
+      },
+      {
+        "id": 2,
+        "word": "whether",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 3,
+        "word": "neighborhood",
+        "pinyin": null,
+        "meaning": "bairro / vizinhança"
+      },
+      {
+        "id": 4,
+        "word": "access",
+        "pinyin": null,
+        "meaning": "acesso"
+      },
+      {
+        "id": 5,
+        "word": "fiber",
+        "pinyin": null,
+        "meaning": "fibra"
+      },
+      {
+        "id": 6,
+        "word": "optics",
+        "pinyin": null,
+        "meaning": "óptica"
+      }
+    ],
+    "id": "local-1772393182552-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: What should I do if it doesn't?",
+    "pinyin": null,
+    "translation": "B: O que devo fazer se não tiver?",
+    "tokens": [
+      "B",
+      ":",
+      "What",
+      "should",
+      "I",
+      "do",
+      "if",
+      "it",
+      "doesn't",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "What",
+        "pinyin": null,
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "should",
+        "pinyin": null,
+        "meaning": "deveria"
+      },
+      {
+        "id": 3,
+        "word": "do",
+        "pinyin": null,
+        "meaning": "fazer"
+      },
+      {
+        "id": 4,
+        "word": "if",
+        "pinyin": null,
+        "meaning": "se"
+      },
+      {
+        "id": 5,
+        "word": "doesn't",
+        "pinyin": null,
+        "meaning": "não (para ele/ela/isso)"
+      }
+    ],
+    "id": "local-1772393182552-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Then you could only upgrade your internet speed to 20 Mbps and try it.",
+    "pinyin": null,
+    "translation": "A: Então você só poderia atualizar sua velocidade de internet para 20 Mbps e tentar.",
+    "tokens": [
+      "A",
+      ":",
+      "Then",
+      "you",
+      "could",
+      "only",
+      "upgrade",
+      "your",
+      "internet",
+      "speed",
+      "to",
+      "20",
+      "Mbps",
+      "and",
+      "try",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Then",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "could",
+        "pinyin": null,
+        "meaning": "poderia"
+      },
+      {
+        "id": 3,
+        "word": "only",
+        "pinyin": null,
+        "meaning": "apenas"
+      },
+      {
+        "id": 4,
+        "word": "upgrade",
+        "pinyin": null,
+        "meaning": "atualizar / melhorar"
+      },
+      {
+        "id": 5,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      },
+      {
+        "id": 6,
+        "word": "speed",
+        "pinyin": null,
+        "meaning": "velocidade"
+      },
+      {
+        "id": 7,
+        "word": "try",
+        "pinyin": null,
+        "meaning": "tentar"
+      }
+    ],
+    "id": "local-1772393182552-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: In the hallway it seems like I saw a little advertisement that said fiber optic internet at 50 Mbps for 1080 RMB per year.",
+    "pinyin": null,
+    "translation": "B: No corredor, parece que vi um pequeno anúncio que dizia internet de fibra óptica a 50 Mbps por 1080 RMB por ano.",
+    "tokens": [
+      "B",
+      ":",
+      "In",
+      "the",
+      "hallway",
+      "it",
+      "seems",
+      "like",
+      "I",
+      "saw",
+      "a",
+      "little",
+      "advertisement",
+      "that",
+      "said",
+      "fiber",
+      "optic",
+      "internet",
+      "at",
+      "50",
+      "Mbps",
+      "for",
+      "1080",
+      "RMB",
+      "per",
+      "year",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hallway",
+        "pinyin": null,
+        "meaning": "corredor"
+      },
+      {
+        "id": 2,
+        "word": "seems",
+        "pinyin": null,
+        "meaning": "parece"
+      },
+      {
+        "id": 3,
+        "word": "saw",
+        "pinyin": null,
+        "meaning": "vi (ver no passado)"
+      },
+      {
+        "id": 4,
+        "word": "little",
+        "pinyin": null,
+        "meaning": "pequeno"
+      },
+      {
+        "id": 5,
+        "word": "advertisement",
+        "pinyin": null,
+        "meaning": "anúncio"
+      },
+      {
+        "id": 6,
+        "word": "fiber",
+        "pinyin": null,
+        "meaning": "fibra"
+      },
+      {
+        "id": 7,
+        "word": "optic",
+        "pinyin": null,
+        "meaning": "óptica"
+      },
+      {
+        "id": 8,
+        "word": "internet",
+        "pinyin": null,
+        "meaning": "internet"
+      },
+      {
+        "id": 9,
+        "word": "Mbps",
+        "pinyin": null,
+        "meaning": "Megabits por segundo"
+      },
+      {
+        "id": 10,
+        "word": "RMB",
+        "pinyin": null,
+        "meaning": "Yuan (moeda chinesa)"
+      },
+      {
+        "id": 11,
+        "word": "year",
+        "pinyin": null,
+        "meaning": "ano"
+      }
+    ],
+    "id": "local-1772393182552-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Really? Then after your contract for the broadband expires, you can switch to that.",
+    "pinyin": null,
+    "translation": "A: Sério? Então, depois que seu contrato de banda larga expirar, você pode mudar para isso.",
+    "tokens": [
+      "A",
+      ":",
+      "Really",
+      "?",
+      "Then",
+      "after",
+      "your",
+      "contract",
+      "for",
+      "the",
+      "broadband",
+      "expires",
+      ",",
+      "you",
+      "can",
+      "switch",
+      "to",
+      "that",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Really",
+        "pinyin": null,
+        "meaning": "Sério / Verdade"
+      },
+      {
+        "id": 2,
+        "word": "Then",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "after",
+        "pinyin": null,
+        "meaning": "depois"
+      },
+      {
+        "id": 4,
+        "word": "contract",
+        "pinyin": null,
+        "meaning": "contrato"
+      },
+      {
+        "id": 5,
+        "word": "broadband",
+        "pinyin": null,
+        "meaning": "banda larga"
+      },
+      {
+        "id": 6,
+        "word": "expires",
+        "pinyin": null,
+        "meaning": "expirar"
+      },
+      {
+        "id": 7,
+        "word": "can",
+        "pinyin": null,
+        "meaning": "pode"
+      },
+      {
+        "id": 8,
+        "word": "switch",
+        "pinyin": null,
+        "meaning": "mudar / trocar"
+      }
+    ],
+    "id": "local-1772393182552-16",
+    "language": "Inglês"
+  }
+]

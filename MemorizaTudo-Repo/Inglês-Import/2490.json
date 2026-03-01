@@ -1,0 +1,498 @@
+[
+  {
+    "chinese": "A: Zhen Zhen, did you look up your mark for the college entrance exam?",
+    "pinyin": "",
+    "translation": "A: Zhen Zhen, você viu sua nota do vestibular?",
+    "tokens": [
+      "A",
+      "Zhen",
+      "Zhen",
+      "did",
+      "you",
+      "look",
+      "up",
+      "your",
+      "mark",
+      "for",
+      "the",
+      "college",
+      "entrance",
+      "exam"
+    ],
+    "keywords": [
+      {
+        "id": "look up",
+        "word": "look up",
+        "pinyin": "",
+        "meaning": "consultar, pesquisar"
+      },
+      {
+        "id": "mark",
+        "word": "mark",
+        "pinyin": "",
+        "meaning": "nota, pontuação"
+      },
+      {
+        "id": "college entrance exam",
+        "word": "college entrance exam",
+        "pinyin": "",
+        "meaning": "vestibular, exame de admissão à universidade"
+      }
+    ],
+    "id": "local-1772393138301-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yes. It's 452. And you?",
+    "pinyin": "",
+    "translation": "B: Sim. É 452. E você?",
+    "tokens": [
+      "B",
+      "Yes",
+      "It's",
+      "452",
+      "And",
+      "you"
+    ],
+    "keywords": [],
+    "id": "local-1772393138301-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Wow, it's so high. I only got 417.",
+    "pinyin": "",
+    "translation": "A: Uau, é tão alta. Eu só tirei 417.",
+    "tokens": [
+      "A",
+      "Wow",
+      "it's",
+      "so",
+      "high",
+      "I",
+      "only",
+      "got",
+      "417"
+    ],
+    "keywords": [
+      {
+        "id": "high",
+        "word": "high",
+        "pinyin": "",
+        "meaning": "alta (nota)"
+      },
+      {
+        "id": "got",
+        "word": "got",
+        "pinyin": "",
+        "meaning": "obtive, tirei"
+      }
+    ],
+    "id": "local-1772393138301-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Then we are about the same. The minimum passing score for the arts is generally higher than for the sciences.",
+    "pinyin": "",
+    "translation": "B: Então estamos mais ou menos na mesma. A nota mínima de aprovação para as artes é geralmente mais alta do que para as ciências.",
+    "tokens": [
+      "B",
+      "Then",
+      "we",
+      "are",
+      "about",
+      "the",
+      "same",
+      "The",
+      "minimum",
+      "passing",
+      "score",
+      "for",
+      "the",
+      "arts",
+      "is",
+      "generally",
+      "higher",
+      "than",
+      "for",
+      "the",
+      "sciences"
+    ],
+    "keywords": [
+      {
+        "id": "about the same",
+        "word": "about the same",
+        "pinyin": "",
+        "meaning": "mais ou menos na mesma, praticamente igual"
+      },
+      {
+        "id": "minimum passing score",
+        "word": "minimum passing score",
+        "pinyin": "",
+        "meaning": "nota mínima de aprovação"
+      },
+      {
+        "id": "arts",
+        "word": "arts",
+        "pinyin": "",
+        "meaning": "humanas, artes (área acadêmica)"
+      },
+      {
+        "id": "sciences",
+        "word": "sciences",
+        "pinyin": "",
+        "meaning": "exatas, ciências (área acadêmica)"
+      }
+    ],
+    "id": "local-1772393138301-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Maybe we can still go to the same university. Which school do you want to apply to?",
+    "pinyin": "",
+    "translation": "A: Talvez ainda possamos ir para a mesma universidade. Em qual escola você quer se inscrever?",
+    "tokens": [
+      "A",
+      "Maybe",
+      "we",
+      "can",
+      "still",
+      "go",
+      "to",
+      "the",
+      "same",
+      "university",
+      "Which",
+      "school",
+      "do",
+      "you",
+      "want",
+      "to",
+      "apply",
+      "to"
+    ],
+    "keywords": [
+      {
+        "id": "university",
+        "word": "university",
+        "pinyin": "",
+        "meaning": "universidade"
+      },
+      {
+        "id": "apply to",
+        "word": "apply to",
+        "pinyin": "",
+        "meaning": "candidatar-se a, inscrever-se para"
+      }
+    ],
+    "id": "local-1772393138301-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I haven't decided yet. Have you thought of one?",
+    "pinyin": "",
+    "translation": "B: Eu ainda não decidi. Você já pensou em alguma?",
+    "tokens": [
+      "B",
+      "I",
+      "haven't",
+      "decided",
+      "yet",
+      "Have",
+      "you",
+      "thought",
+      "of",
+      "one"
+    ],
+    "keywords": [
+      {
+        "id": "decided yet",
+        "word": "decided yet",
+        "pinyin": "",
+        "meaning": "ainda não decidi"
+      },
+      {
+        "id": "thought of",
+        "word": "thought of",
+        "pinyin": "",
+        "meaning": "pensou em"
+      }
+    ],
+    "id": "local-1772393138301-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: No, I haven't either. What major do you want to study?",
+    "pinyin": "",
+    "translation": "A: Não, eu também não. Qual curso você quer fazer?",
+    "tokens": [
+      "A",
+      "No",
+      "I",
+      "haven't",
+      "either",
+      "What",
+      "major",
+      "do",
+      "you",
+      "want",
+      "to",
+      "study"
+    ],
+    "keywords": [
+      {
+        "id": "either",
+        "word": "either",
+        "pinyin": "",
+        "meaning": "também não"
+      },
+      {
+        "id": "major",
+        "word": "major",
+        "pinyin": "",
+        "meaning": "curso, área de estudo"
+      },
+      {
+        "id": "study",
+        "word": "study",
+        "pinyin": "",
+        "meaning": "estudar, cursar"
+      }
+    ],
+    "id": "local-1772393138301-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: I want to apply to the Chinese language department, but my dad and mom want me to study accounting.",
+    "pinyin": "",
+    "translation": "B: Eu quero me inscrever para o departamento de língua chinesa, mas meu pai e minha mãe querem que eu estude contabilidade.",
+    "tokens": [
+      "B",
+      "I",
+      "want",
+      "to",
+      "apply",
+      "to",
+      "the",
+      "Chinese",
+      "language",
+      "department",
+      "but",
+      "my",
+      "dad",
+      "and",
+      "mom",
+      "want",
+      "me",
+      "to",
+      "study",
+      "accounting"
+    ],
+    "keywords": [
+      {
+        "id": "apply to",
+        "word": "apply to",
+        "pinyin": "",
+        "meaning": "candidatar-se a, inscrever-se para"
+      },
+      {
+        "id": "Chinese language department",
+        "word": "Chinese language department",
+        "pinyin": "",
+        "meaning": "departamento de língua chinesa"
+      },
+      {
+        "id": "accounting",
+        "word": "accounting",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      }
+    ],
+    "id": "local-1772393138301-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I have heard that Chinese language is the worst major to find employment in.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que língua chinesa é o pior curso para encontrar emprego.",
+    "tokens": [
+      "A",
+      "I",
+      "have",
+      "heard",
+      "that",
+      "Chinese",
+      "language",
+      "is",
+      "the",
+      "worst",
+      "major",
+      "to",
+      "find",
+      "employment",
+      "in"
+    ],
+    "keywords": [
+      {
+        "id": "heard that",
+        "word": "heard that",
+        "pinyin": "",
+        "meaning": "ouvi dizer que"
+      },
+      {
+        "id": "major",
+        "word": "major",
+        "pinyin": "",
+        "meaning": "curso, área de estudo"
+      },
+      {
+        "id": "employment",
+        "word": "employment",
+        "pinyin": "",
+        "meaning": "emprego, empregabilidade"
+      }
+    ],
+    "id": "local-1772393138301-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But I like literature and accounting sounds so boring. Which major do you want to apply to?",
+    "pinyin": "",
+    "translation": "B: Mas eu gosto de literatura e contabilidade parece tão chato. Qual curso você quer fazer?",
+    "tokens": [
+      "B",
+      "But",
+      "I",
+      "like",
+      "literature",
+      "and",
+      "accounting",
+      "sounds",
+      "so",
+      "boring",
+      "Which",
+      "major",
+      "do",
+      "you",
+      "want",
+      "to",
+      "apply",
+      "to"
+    ],
+    "keywords": [
+      {
+        "id": "literature",
+        "word": "literature",
+        "pinyin": "",
+        "meaning": "literatura"
+      },
+      {
+        "id": "accounting",
+        "word": "accounting",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": "boring",
+        "word": "boring",
+        "pinyin": "",
+        "meaning": "chato, tedioso"
+      },
+      {
+        "id": "apply to",
+        "word": "apply to",
+        "pinyin": "",
+        "meaning": "candidatar-se a, inscrever-se para"
+      }
+    ],
+    "id": "local-1772393138301-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I want to study computers. The employment prospects are quite good.",
+    "pinyin": "",
+    "translation": "A: Eu quero estudar computação. As perspectivas de emprego são muito boas.",
+    "tokens": [
+      "A",
+      "I",
+      "want",
+      "to",
+      "study",
+      "computers",
+      "The",
+      "employment",
+      "prospects",
+      "are",
+      "quite",
+      "good"
+    ],
+    "keywords": [
+      {
+        "id": "study computers",
+        "word": "study computers",
+        "pinyin": "",
+        "meaning": "estudar computação"
+      },
+      {
+        "id": "employment prospects",
+        "word": "employment prospects",
+        "pinyin": "",
+        "meaning": "perspectivas de emprego"
+      },
+      {
+        "id": "quite good",
+        "word": "quite good",
+        "pinyin": "",
+        "meaning": "muito boas, bastante boas"
+      }
+    ],
+    "id": "local-1772393138301-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Whoa. Then if later I can't find work, you can invite me out to eat every day.",
+    "pinyin": "",
+    "translation": "B: Opa. Então, se mais tarde eu não conseguir trabalho, você pode me convidar para comer todos os dias.",
+    "tokens": [
+      "B",
+      "Whoa",
+      "Then",
+      "if",
+      "later",
+      "I",
+      "can't",
+      "find",
+      "work",
+      "you",
+      "can",
+      "invite",
+      "me",
+      "out",
+      "to",
+      "eat",
+      "every",
+      "day"
+    ],
+    "keywords": [
+      {
+        "id": "Whoa",
+        "word": "Whoa",
+        "pinyin": "",
+        "meaning": "Opa, Eita (interjeição de surpresa)"
+      },
+      {
+        "id": "find work",
+        "word": "find work",
+        "pinyin": "",
+        "meaning": "encontrar trabalho, conseguir emprego"
+      },
+      {
+        "id": "invite out to eat",
+        "word": "invite out to eat",
+        "pinyin": "",
+        "meaning": "convidar para sair para comer"
+      }
+    ],
+    "id": "local-1772393138301-11",
+    "language": "Inglês"
+  }
+]

@@ -1,0 +1,549 @@
+[
+  {
+    "chinese": "A: I'm done for! I have to be in class at eight o'clock and I actually overslept!",
+    "pinyin": null,
+    "translation": "A: Estou perdido! Tenho que estar na aula às oito horas e na verdade eu dormi demais!",
+    "tokens": [
+      "A:",
+      "I'm",
+      "done",
+      "for!",
+      "I",
+      "have",
+      "to",
+      "be",
+      "in",
+      "class",
+      "at",
+      "eight",
+      "o'clock",
+      "and",
+      "I",
+      "actually",
+      "overslept!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "done for",
+        "pinyin": null,
+        "meaning": "perdido, arruinado"
+      },
+      {
+        "id": 2,
+        "word": "overslept",
+        "pinyin": null,
+        "meaning": "dormiu demais"
+      },
+      {
+        "id": 3,
+        "word": "o'clock",
+        "pinyin": null,
+        "meaning": "em ponto (hora)"
+      }
+    ],
+    "id": "local-1772393207480-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It's only seven thirty. What are you in a hurry about?",
+    "pinyin": null,
+    "translation": "B: São apenas sete e meia. Por que você está com tanta pressa?",
+    "tokens": [
+      "B:",
+      "It's",
+      "only",
+      "seven",
+      "thirty.",
+      "What",
+      "are",
+      "you",
+      "in",
+      "a",
+      "hurry",
+      "about?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "only",
+        "pinyin": null,
+        "meaning": "apenas"
+      },
+      {
+        "id": 2,
+        "word": "in a hurry",
+        "pinyin": null,
+        "meaning": "com pressa"
+      }
+    ],
+    "id": "local-1772393207480-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Beibei, don't you have classes too?",
+    "pinyin": null,
+    "translation": "A: Beibei, você também não tem aulas?",
+    "tokens": [
+      "A:",
+      "Beibei,",
+      "don't",
+      "you",
+      "have",
+      "classes",
+      "too?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "classes",
+        "pinyin": null,
+        "meaning": "aulas"
+      },
+      {
+        "id": 2,
+        "word": "too",
+        "pinyin": null,
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1772393207480-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Take it easy. Anyway, everybody will be late.",
+    "pinyin": null,
+    "translation": "B: Calma. De qualquer forma, todo mundo vai se atrasar.",
+    "tokens": [
+      "B:",
+      "Take",
+      "it",
+      "easy.",
+      "Anyway,",
+      "everybody",
+      "will",
+      "be",
+      "late."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Take it easy",
+        "pinyin": null,
+        "meaning": "Calma, vá com calma"
+      },
+      {
+        "id": 2,
+        "word": "Anyway",
+        "pinyin": null,
+        "meaning": "De qualquer forma"
+      },
+      {
+        "id": 3,
+        "word": "late",
+        "pinyin": null,
+        "meaning": "atrasado"
+      }
+    ],
+    "id": "local-1772393207480-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: The others in our class are all very punctual.",
+    "pinyin": null,
+    "translation": "A: Os outros da nossa turma são todos muito pontuais.",
+    "tokens": [
+      "A:",
+      "The",
+      "others",
+      "in",
+      "our",
+      "class",
+      "are",
+      "all",
+      "very",
+      "punctual."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "others",
+        "pinyin": null,
+        "meaning": "os outros"
+      },
+      {
+        "id": 2,
+        "word": "punctual",
+        "pinyin": null,
+        "meaning": "pontual"
+      }
+    ],
+    "id": "local-1772393207480-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: That's because you are all new first-year students.",
+    "pinyin": null,
+    "translation": "B: Isso é porque vocês são todos calouros (alunos do primeiro ano) novos.",
+    "tokens": [
+      "B:",
+      "That's",
+      "because",
+      "you",
+      "are",
+      "all",
+      "new",
+      "first-year",
+      "students."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "because",
+        "pinyin": null,
+        "meaning": "porque"
+      },
+      {
+        "id": 2,
+        "word": "first-year students",
+        "pinyin": null,
+        "meaning": "calouros, alunos do primeiro ano"
+      }
+    ],
+    "id": "local-1772393207480-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "When I was a first-year, I was well-behaved too. If you don't believe me, ask Xiaoyu.",
+    "pinyin": null,
+    "translation": "Quando eu era calouro, eu também era bem-comportado. Se você não acredita em mim, pergunte a Xiaoyu.",
+    "tokens": [
+      "When",
+      "I",
+      "was",
+      "a",
+      "first-year,",
+      "I",
+      "was",
+      "well-behaved",
+      "too.",
+      "If",
+      "you",
+      "don't",
+      "believe",
+      "me,",
+      "ask",
+      "Xiaoyu."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "first-year",
+        "pinyin": null,
+        "meaning": "calouro, aluno do primeiro ano"
+      },
+      {
+        "id": 2,
+        "word": "well-behaved",
+        "pinyin": null,
+        "meaning": "bem-comportado"
+      },
+      {
+        "id": 3,
+        "word": "believe",
+        "pinyin": null,
+        "meaning": "acreditar"
+      },
+      {
+        "id": 4,
+        "word": "ask",
+        "pinyin": null,
+        "meaning": "perguntar"
+      }
+    ],
+    "id": "local-1772393207480-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Oh yeah, this afternoon I have to go attend a lecture.",
+    "pinyin": null,
+    "translation": "A: Ah sim, esta tarde eu tenho que ir assistir a uma palestra.",
+    "tokens": [
+      "A:",
+      "Oh",
+      "yeah,",
+      "this",
+      "afternoon",
+      "I",
+      "have",
+      "to",
+      "go",
+      "attend",
+      "a",
+      "lecture."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oh yeah",
+        "pinyin": null,
+        "meaning": "Ah sim"
+      },
+      {
+        "id": 2,
+        "word": "afternoon",
+        "pinyin": null,
+        "meaning": "tarde"
+      },
+      {
+        "id": 3,
+        "word": "attend",
+        "pinyin": null,
+        "meaning": "comparecer, assistir"
+      },
+      {
+        "id": 4,
+        "word": "lecture",
+        "pinyin": null,
+        "meaning": "palestra, aula magna"
+      }
+    ],
+    "id": "local-1772393207480-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "C: Is it the one in Building No. 3? Don't go.",
+    "pinyin": null,
+    "translation": "C: É aquela no Prédio nº 3? Não vá.",
+    "tokens": [
+      "C:",
+      "Is",
+      "it",
+      "the",
+      "one",
+      "in",
+      "Building",
+      "No.",
+      "3?",
+      "Don't",
+      "go."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Building",
+        "pinyin": null,
+        "meaning": "Prédio"
+      }
+    ],
+    "id": "local-1772393207480-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I can't. The teacher said there's roll call.",
+    "pinyin": null,
+    "translation": "A: Não posso. O professor disse que tem chamada.",
+    "tokens": [
+      "A:",
+      "I",
+      "can't.",
+      "The",
+      "teacher",
+      "said",
+      "there's",
+      "roll",
+      "call."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "can't",
+        "pinyin": null,
+        "meaning": "não posso"
+      },
+      {
+        "id": 2,
+        "word": "teacher",
+        "pinyin": null,
+        "meaning": "professor"
+      },
+      {
+        "id": 3,
+        "word": "roll call",
+        "pinyin": null,
+        "meaning": "chamada (de presença)"
+      }
+    ],
+    "id": "local-1772393207480-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: This roll call stuff is just to fool you new students. Even if you don't go, nothing will happen.",
+    "pinyin": null,
+    "translation": "B: Essa coisa de chamada é só para enganar vocês, alunos novos. Mesmo que você não vá, nada vai acontecer.",
+    "tokens": [
+      "B:",
+      "This",
+      "roll",
+      "call",
+      "stuff",
+      "is",
+      "just",
+      "to",
+      "fool",
+      "you",
+      "new",
+      "students.",
+      "Even",
+      "if",
+      "you",
+      "don't",
+      "go,",
+      "nothing",
+      "will",
+      "happen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "roll call",
+        "pinyin": null,
+        "meaning": "chamada (de presença)"
+      },
+      {
+        "id": 2,
+        "word": "stuff",
+        "pinyin": null,
+        "meaning": "coisa, negócio"
+      },
+      {
+        "id": 3,
+        "word": "just",
+        "pinyin": null,
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 4,
+        "word": "fool",
+        "pinyin": null,
+        "meaning": "enganar"
+      },
+      {
+        "id": 5,
+        "word": "Even if",
+        "pinyin": null,
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 6,
+        "word": "nothing",
+        "pinyin": null,
+        "meaning": "nada"
+      },
+      {
+        "id": 7,
+        "word": "happen",
+        "pinyin": null,
+        "meaning": "acontecer"
+      }
+    ],
+    "id": "local-1772393207480-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "C: All the teachers like to use the new students to fill in the numbers for these kind of boring lectures.",
+    "pinyin": null,
+    "translation": "C: Todos os professores gostam de usar os alunos novos para preencher os números para esse tipo de palestras chatas.",
+    "tokens": [
+      "C:",
+      "All",
+      "the",
+      "teachers",
+      "like",
+      "to",
+      "use",
+      "the",
+      "new",
+      "students",
+      "to",
+      "fill",
+      "in",
+      "the",
+      "numbers",
+      "for",
+      "these",
+      "kind",
+      "of",
+      "boring",
+      "lectures."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "teachers",
+        "pinyin": null,
+        "meaning": "professores"
+      },
+      {
+        "id": 2,
+        "word": "fill in the numbers",
+        "pinyin": null,
+        "meaning": "preencher os números, completar a presença"
+      },
+      {
+        "id": 3,
+        "word": "boring",
+        "pinyin": null,
+        "meaning": "chato, entediante"
+      },
+      {
+        "id": 4,
+        "word": "lectures",
+        "pinyin": null,
+        "meaning": "palestras"
+      },
+      {
+        "id": 5,
+        "word": "kind of",
+        "pinyin": null,
+        "meaning": "tipo de"
+      }
+    ],
+    "id": "local-1772393207480-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: I'm going now. Bye-bye!",
+    "pinyin": null,
+    "translation": "A: Estou indo agora. Tchau!",
+    "tokens": [
+      "A:",
+      "I'm",
+      "going",
+      "now.",
+      "Bye-bye!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "going",
+        "pinyin": null,
+        "meaning": "indo"
+      },
+      {
+        "id": 2,
+        "word": "now",
+        "pinyin": null,
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "Bye-bye",
+        "pinyin": null,
+        "meaning": "Tchau"
+      }
+    ],
+    "id": "local-1772393207480-12",
+    "language": "Inglês"
+  }
+]

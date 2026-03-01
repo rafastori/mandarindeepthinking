@@ -1,0 +1,677 @@
+[
+  {
+    "chinese": "A: Sono spacciato! Devo essere in classe alle otto e in realtà mi sono svegliato tardi!",
+    "pinyin": "",
+    "translation": "A: Estou ferrado! Tenho que estar na aula às oito e na verdade acordei tarde!",
+    "tokens": [
+      "Sono",
+      "spacciato",
+      "Devo",
+      "essere",
+      "in",
+      "classe",
+      "alle",
+      "otto",
+      "e",
+      "in",
+      "realtà",
+      "mi",
+      "sono",
+      "svegliato",
+      "tardi"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sono",
+        "pinyin": "",
+        "meaning": "estou (verbo 'essere', 1ª pessoa singular)"
+      },
+      {
+        "id": 2,
+        "word": "spacciato",
+        "pinyin": "",
+        "meaning": "ferrado, perdido (adjetivo)"
+      },
+      {
+        "id": 3,
+        "word": "Devo",
+        "pinyin": "",
+        "meaning": "tenho que (verbo 'dovere', 1ª pessoa singular)"
+      },
+      {
+        "id": 4,
+        "word": "essere",
+        "pinyin": "",
+        "meaning": "estar (infinitivo)"
+      },
+      {
+        "id": 5,
+        "word": "in classe",
+        "pinyin": "",
+        "meaning": "na aula, na classe"
+      },
+      {
+        "id": 6,
+        "word": "alle otto",
+        "pinyin": "",
+        "meaning": "às oito"
+      },
+      {
+        "id": 7,
+        "word": "in realtà",
+        "pinyin": "",
+        "meaning": "na verdade, na realidade"
+      },
+      {
+        "id": 8,
+        "word": "mi sono svegliato",
+        "pinyin": "",
+        "meaning": "acordei (verbo reflexivo 'svegliarsi', passado próximo)"
+      },
+      {
+        "id": 9,
+        "word": "tardi",
+        "pinyin": "",
+        "meaning": "tarde (advérbio)"
+      }
+    ],
+    "id": "local-1772394421629-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sono solo le sette e mezza. Di cosa hai fretta?",
+    "pinyin": "",
+    "translation": "B: São apenas sete e meia. De que você tem pressa?",
+    "tokens": [
+      "Sono",
+      "solo",
+      "le",
+      "sette",
+      "e",
+      "mezza",
+      "Di",
+      "cosa",
+      "hai",
+      "fretta"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sono",
+        "pinyin": "",
+        "meaning": "são (verbo 'essere')"
+      },
+      {
+        "id": 2,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas, somente (advérbio)"
+      },
+      {
+        "id": 3,
+        "word": "le sette e mezza",
+        "pinyin": "",
+        "meaning": "sete e meia"
+      },
+      {
+        "id": 4,
+        "word": "Di cosa",
+        "pinyin": "",
+        "meaning": "De que"
+      },
+      {
+        "id": 5,
+        "word": "hai fretta",
+        "pinyin": "",
+        "meaning": "você tem pressa (idioma 'avere fretta')"
+      }
+    ],
+    "id": "local-1772394421629-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Beibei, non hai anche tu lezioni?",
+    "pinyin": "",
+    "translation": "A: Beibei, você também não tem aulas?",
+    "tokens": [
+      "Beibei",
+      "non",
+      "hai",
+      "anche",
+      "tu",
+      "lezioni"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "non hai",
+        "pinyin": "",
+        "meaning": "não tem (verbo 'avere', negativo)"
+      },
+      {
+        "id": 2,
+        "word": "anche tu",
+        "pinyin": "",
+        "meaning": "você também"
+      },
+      {
+        "id": 3,
+        "word": "lezioni",
+        "pinyin": "",
+        "meaning": "aulas, lições (substantivo plural)"
+      }
+    ],
+    "id": "local-1772394421629-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Calmati. Comunque, tutti arriveranno in ritardo.",
+    "pinyin": "",
+    "translation": "B: Calma-te. De qualquer forma, todos chegarão atrasados.",
+    "tokens": [
+      "Calmati",
+      "Comunque",
+      "tutti",
+      "arriveranno",
+      "in",
+      "ritardo"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Calmati",
+        "pinyin": "",
+        "meaning": "calma-te (imperativo do verbo reflexivo 'calmarsi')"
+      },
+      {
+        "id": 2,
+        "word": "Comunque",
+        "pinyin": "",
+        "meaning": "de qualquer forma, enfim (advérbio)"
+      },
+      {
+        "id": 3,
+        "word": "tutti",
+        "pinyin": "",
+        "meaning": "todos (pronome)"
+      },
+      {
+        "id": 4,
+        "word": "arriveranno",
+        "pinyin": "",
+        "meaning": "chegarão (verbo 'arrivare', futuro)"
+      },
+      {
+        "id": 5,
+        "word": "in ritardo",
+        "pinyin": "",
+        "meaning": "atrasado"
+      }
+    ],
+    "id": "local-1772394421629-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Gli altri della nostra classe sono tutti molto puntuali.",
+    "pinyin": "",
+    "translation": "A: Os outros da nossa turma são todos muito pontuais.",
+    "tokens": [
+      "Gli",
+      "altri",
+      "della",
+      "nostra",
+      "classe",
+      "sono",
+      "tutti",
+      "molto",
+      "puntuali"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gli altri",
+        "pinyin": "",
+        "meaning": "os outros"
+      },
+      {
+        "id": 2,
+        "word": "della nostra classe",
+        "pinyin": "",
+        "meaning": "da nossa turma"
+      },
+      {
+        "id": 3,
+        "word": "sono",
+        "pinyin": "",
+        "meaning": "são (verbo 'essere')"
+      },
+      {
+        "id": 4,
+        "word": "molto",
+        "pinyin": "",
+        "meaning": "muito (advérbio)"
+      },
+      {
+        "id": 5,
+        "word": "puntuali",
+        "pinyin": "",
+        "meaning": "pontuais (adjetivo plural)"
+      }
+    ],
+    "id": "local-1772394421629-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questo perché siete tutti nuovi studenti del primo anno. Quando ero al primo anno, anch'io ero bravo. Se non mi credi, chiedi a Xiaoyu.",
+    "pinyin": "",
+    "translation": "B: Isso porque vocês são todos novos estudantes do primeiro ano. Quando eu estava no primeiro ano, eu também era bom. Se não acreditas em mim, pergunta ao Xiaoyu.",
+    "tokens": [
+      "Questo",
+      "perché",
+      "siete",
+      "tutti",
+      "nuovi",
+      "studenti",
+      "del",
+      "primo",
+      "anno",
+      "Quando",
+      "ero",
+      "al",
+      "primo",
+      "anno",
+      "anch'io",
+      "ero",
+      "bravo",
+      "Se",
+      "non",
+      "mi",
+      "credi",
+      "chiedi",
+      "a",
+      "Xiaoyu"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questo perché",
+        "pinyin": "",
+        "meaning": "Isso porque"
+      },
+      {
+        "id": 2,
+        "word": "siete",
+        "pinyin": "",
+        "meaning": "vocês são (verbo 'essere', 2ª pessoa plural)"
+      },
+      {
+        "id": 3,
+        "word": "nuovi studenti",
+        "pinyin": "",
+        "meaning": "novos estudantes"
+      },
+      {
+        "id": 4,
+        "word": "del primo anno",
+        "pinyin": "",
+        "meaning": "do primeiro ano"
+      },
+      {
+        "id": 5,
+        "word": "Quando",
+        "pinyin": "",
+        "meaning": "Quando (conjunção)"
+      },
+      {
+        "id": 6,
+        "word": "ero",
+        "pinyin": "",
+        "meaning": "eu estava (verbo 'essere', imperfeito)"
+      },
+      {
+        "id": 7,
+        "word": "al primo anno",
+        "pinyin": "",
+        "meaning": "no primeiro ano"
+      },
+      {
+        "id": 8,
+        "word": "anch'io",
+        "pinyin": "",
+        "meaning": "eu também"
+      },
+      {
+        "id": 9,
+        "word": "bravo",
+        "pinyin": "",
+        "meaning": "bom, aplicado (adjetivo)"
+      },
+      {
+        "id": 10,
+        "word": "Se non mi credi",
+        "pinyin": "",
+        "meaning": "Se não acreditas em mim"
+      },
+      {
+        "id": 11,
+        "word": "chiedi",
+        "pinyin": "",
+        "meaning": "pergunta (verbo 'chiedere', imperativo)"
+      }
+    ],
+    "id": "local-1772394421629-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ah sì, questo pomeriggio devo andare a seguire una lezione.",
+    "pinyin": "",
+    "translation": "A: Ah sim, esta tarde tenho que ir assistir a uma aula.",
+    "tokens": [
+      "Ah",
+      "sì",
+      "questo",
+      "pomeriggio",
+      "devo",
+      "andare",
+      "a",
+      "seguire",
+      "una",
+      "lezione"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ah sì",
+        "pinyin": "",
+        "meaning": "Ah sim"
+      },
+      {
+        "id": 2,
+        "word": "questo pomeriggio",
+        "pinyin": "",
+        "meaning": "esta tarde"
+      },
+      {
+        "id": 3,
+        "word": "devo",
+        "pinyin": "",
+        "meaning": "tenho que (verbo 'dovere')"
+      },
+      {
+        "id": 4,
+        "word": "andare a seguire",
+        "pinyin": "",
+        "meaning": "ir assistir, ir acompanhar (uma aula)"
+      },
+      {
+        "id": 5,
+        "word": "una lezione",
+        "pinyin": "",
+        "meaning": "uma aula"
+      }
+    ],
+    "id": "local-1772394421629-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: È quella nell'Edificio numero 3? Non andarci.",
+    "pinyin": "",
+    "translation": "C: É aquela no Edifício número 3? Não vá lá.",
+    "tokens": [
+      "È",
+      "quella",
+      "nell'Edificio",
+      "numero",
+      "3",
+      "Non",
+      "andarci"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È quella",
+        "pinyin": "",
+        "meaning": "É aquela"
+      },
+      {
+        "id": 2,
+        "word": "nell'Edificio numero 3",
+        "pinyin": "",
+        "meaning": "no Edifício número 3"
+      },
+      {
+        "id": 3,
+        "word": "Non andarci",
+        "pinyin": "",
+        "meaning": "Não vá lá (imperativo negativo do verbo 'andare' com partícula 'ci')"
+      }
+    ],
+    "id": "local-1772394421629-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non posso. Il professore ha detto che c'è l'appello.",
+    "pinyin": "",
+    "translation": "A: Não posso. O professor disse que tem chamada.",
+    "tokens": [
+      "Non",
+      "posso",
+      "Il",
+      "professore",
+      "ha",
+      "detto",
+      "che",
+      "c'è",
+      "l'appello"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non posso",
+        "pinyin": "",
+        "meaning": "Não posso (verbo 'potere', negativo)"
+      },
+      {
+        "id": 2,
+        "word": "Il professore",
+        "pinyin": "",
+        "meaning": "O professor"
+      },
+      {
+        "id": 3,
+        "word": "ha detto",
+        "pinyin": "",
+        "meaning": "disse (verbo 'dire', passado próximo)"
+      },
+      {
+        "id": 4,
+        "word": "c'è l'appello",
+        "pinyin": "",
+        "meaning": "tem chamada (appello = chamada, lista de presença)"
+      }
+    ],
+    "id": "local-1772394421629-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questa storia dell'appello è solo per ingannare voi nuovi studenti. Anche se non vai, non succederà niente.",
+    "pinyin": "",
+    "translation": "B: Essa história da chamada é só para enganar vocês, novos estudantes. Mesmo que não vás, não acontecerá nada.",
+    "tokens": [
+      "Questa",
+      "storia",
+      "dell'appello",
+      "è",
+      "solo",
+      "per",
+      "ingannare",
+      "voi",
+      "nuovi",
+      "studenti",
+      "Anche",
+      "se",
+      "non",
+      "vai",
+      "non",
+      "succederà",
+      "niente"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Questa storia",
+        "pinyin": "",
+        "meaning": "Essa história"
+      },
+      {
+        "id": 2,
+        "word": "dell'appello",
+        "pinyin": "",
+        "meaning": "da chamada"
+      },
+      {
+        "id": 3,
+        "word": "è solo per",
+        "pinyin": "",
+        "meaning": "é só para"
+      },
+      {
+        "id": 4,
+        "word": "ingannare",
+        "pinyin": "",
+        "meaning": "enganar (verbo)"
+      },
+      {
+        "id": 5,
+        "word": "voi nuovi studenti",
+        "pinyin": "",
+        "meaning": "vocês, novos estudantes"
+      },
+      {
+        "id": 6,
+        "word": "Anche se",
+        "pinyin": "",
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 7,
+        "word": "non vai",
+        "pinyin": "",
+        "meaning": "não vás (verbo 'andare', negativo)"
+      },
+      {
+        "id": 8,
+        "word": "non succederà niente",
+        "pinyin": "",
+        "meaning": "não acontecerá nada"
+      }
+    ],
+    "id": "local-1772394421629-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: A tutti i professori piace usare i nuovi studenti per fare numero a questo tipo di lezioni noiose.",
+    "pinyin": "",
+    "translation": "C: Todos os professores gostam de usar os novos estudantes para fazer número neste tipo de aulas chatas.",
+    "tokens": [
+      "A",
+      "tutti",
+      "i",
+      "professori",
+      "piace",
+      "usare",
+      "i",
+      "nuovi",
+      "studenti",
+      "per",
+      "fare",
+      "numero",
+      "a",
+      "questo",
+      "tipo",
+      "di",
+      "lezioni",
+      "noiose"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "A tutti i professori",
+        "pinyin": "",
+        "meaning": "Todos os professores (lit: 'a todos os professores')"
+      },
+      {
+        "id": 2,
+        "word": "piace",
+        "pinyin": "",
+        "meaning": "gostam (verbo 'piacere', concordando com o objeto da ação, 'usare')"
+      },
+      {
+        "id": 3,
+        "word": "usare",
+        "pinyin": "",
+        "meaning": "usar (verbo)"
+      },
+      {
+        "id": 4,
+        "word": "i nuovi studenti",
+        "pinyin": "",
+        "meaning": "os novos estudantes"
+      },
+      {
+        "id": 5,
+        "word": "per fare numero",
+        "pinyin": "",
+        "meaning": "para fazer número (idioma)"
+      },
+      {
+        "id": 6,
+        "word": "questo tipo di",
+        "pinyin": "",
+        "meaning": "este tipo de"
+      },
+      {
+        "id": 7,
+        "word": "lezioni noiose",
+        "pinyin": "",
+        "meaning": "aulas chatas"
+      }
+    ],
+    "id": "local-1772394421629-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Vado adesso. Ciao ciao!",
+    "pinyin": "",
+    "translation": "A: Vou agora. Tchau tchau!",
+    "tokens": [
+      "Vado",
+      "adesso",
+      "Ciao",
+      "ciao"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vado",
+        "pinyin": "",
+        "meaning": "Vou (verbo 'andare', 1ª pessoa singular)"
+      },
+      {
+        "id": 2,
+        "word": "adesso",
+        "pinyin": "",
+        "meaning": "agora (advérbio)"
+      },
+      {
+        "id": 3,
+        "word": "Ciao ciao",
+        "pinyin": "",
+        "meaning": "Tchau tchau"
+      }
+    ],
+    "id": "local-1772394421629-11",
+    "language": "Italiano"
+  }
+]

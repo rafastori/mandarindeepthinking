@@ -1,0 +1,605 @@
+[
+  {
+    "chinese": "A: ¡Estoy perdido! Tengo que estar en clase a las ocho y me quedé dormido.",
+    "pinyin": "",
+    "translation": "A: Estou perdido! Tenho que estar na aula às oito e acabei dormindo.",
+    "tokens": [
+      "¡",
+      "Estoy",
+      "perdido",
+      "!",
+      "Tengo",
+      "que",
+      "estar",
+      "en",
+      "clase",
+      "a",
+      "las",
+      "ocho",
+      "y",
+      "me",
+      "quedé",
+      "dormido",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Estoy perdido",
+        "pinyin": "",
+        "meaning": "Estou perdido"
+      },
+      {
+        "id": 2,
+        "word": "Tengo que",
+        "pinyin": "",
+        "meaning": "Eu tenho que"
+      },
+      {
+        "id": 3,
+        "word": "estar en clase",
+        "pinyin": "",
+        "meaning": "estar em aula"
+      },
+      {
+        "id": 4,
+        "word": "a las ocho",
+        "pinyin": "",
+        "meaning": "às oito"
+      },
+      {
+        "id": 5,
+        "word": "me quedé dormido",
+        "pinyin": "",
+        "meaning": "acabei dormindo / adormeci"
+      }
+    ],
+    "id": "local-1772394392661-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Son solo las siete y media. ¿Por qué tanta prisa?",
+    "pinyin": "",
+    "translation": "B: São apenas sete e meia. Por que tanta pressa?",
+    "tokens": [
+      "Son",
+      "solo",
+      "las",
+      "siete",
+      "y",
+      "media",
+      ".",
+      "¿",
+      "Por",
+      "qué",
+      "tanta",
+      "prisa",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Son solo",
+        "pinyin": "",
+        "meaning": "São apenas"
+      },
+      {
+        "id": 2,
+        "word": "siete y media",
+        "pinyin": "",
+        "meaning": "sete e meia"
+      },
+      {
+        "id": 3,
+        "word": "¿Por qué...?",
+        "pinyin": "",
+        "meaning": "Por que...?"
+      },
+      {
+        "id": 4,
+        "word": "tanta prisa",
+        "pinyin": "",
+        "meaning": "tanta pressa"
+      }
+    ],
+    "id": "local-1772394392661-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Beibei, ¿tú no tienes clases también?",
+    "pinyin": "",
+    "translation": "A: Beibei, você não tem aulas também?",
+    "tokens": [
+      "Beibei",
+      ",",
+      "¿",
+      "tú",
+      "no",
+      "tienes",
+      "clases",
+      "también",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tienes clases",
+        "pinyin": "",
+        "meaning": "você tem aulas"
+      },
+      {
+        "id": 2,
+        "word": "también",
+        "pinyin": "",
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1772394392661-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Tómalo con calma. De todas formas, todos llegarán tarde.",
+    "pinyin": "",
+    "translation": "B: Leve com calma. De qualquer forma, todos chegarão atrasados.",
+    "tokens": [
+      "Tómalo",
+      "con",
+      "calma",
+      ".",
+      "De",
+      "todas",
+      "formas",
+      ",",
+      "todos",
+      "llegarán",
+      "tarde",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tómalo con calma",
+        "pinyin": "",
+        "meaning": "Leve com calma"
+      },
+      {
+        "id": 2,
+        "word": "De todas formas",
+        "pinyin": "",
+        "meaning": "De qualquer forma"
+      },
+      {
+        "id": 3,
+        "word": "llegarán tarde",
+        "pinyin": "",
+        "meaning": "chegarão atrasados"
+      }
+    ],
+    "id": "local-1772394392661-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Los demás de nuestra clase son todos muy puntuales.",
+    "pinyin": "",
+    "translation": "A: Os demais da nossa turma são todos muito pontuais.",
+    "tokens": [
+      "Los",
+      "demás",
+      "de",
+      "nuestra",
+      "clase",
+      "son",
+      "todos",
+      "muy",
+      "puntuales",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Los demás",
+        "pinyin": "",
+        "meaning": "Os demais / Os outros"
+      },
+      {
+        "id": 2,
+        "word": "nuestra clase",
+        "pinyin": "",
+        "meaning": "nossa turma"
+      },
+      {
+        "id": 3,
+        "word": "muy puntuales",
+        "pinyin": "",
+        "meaning": "muito pontuais"
+      }
+    ],
+    "id": "local-1772394392661-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Eso es porque todos ustedes son estudiantes de primer año nuevos. Cuando yo era de primer año, también me portaba bien. Si no me crees, pregúntale a Xiaoyu.",
+    "pinyin": "",
+    "translation": "B: Isso é porque todos vocês são estudantes calouros novos. Quando eu era calouro, também me comportava bem. Se não me acredita, pergunte a Xiaoyu.",
+    "tokens": [
+      "Eso",
+      "es",
+      "porque",
+      "todos",
+      "ustedes",
+      "son",
+      "estudiantes",
+      "de",
+      "primer",
+      "año",
+      "nuevos",
+      ".",
+      "Cuando",
+      "yo",
+      "era",
+      "de",
+      "primer",
+      "año",
+      ",",
+      "también",
+      "me",
+      "portaba",
+      "bien",
+      ".",
+      "Si",
+      "no",
+      "me",
+      "crees",
+      ",",
+      "pregúntale",
+      "a",
+      "Xiaoyu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eso es porque",
+        "pinyin": "",
+        "meaning": "Isso é porque"
+      },
+      {
+        "id": 2,
+        "word": "estudiantes de primer año",
+        "pinyin": "",
+        "meaning": "estudantes de primeiro ano / calouros"
+      },
+      {
+        "id": 3,
+        "word": "nuevos",
+        "pinyin": "",
+        "meaning": "novos"
+      },
+      {
+        "id": 4,
+        "word": "Cuando yo era",
+        "pinyin": "",
+        "meaning": "Quando eu era"
+      },
+      {
+        "id": 5,
+        "word": "me portaba bien",
+        "pinyin": "",
+        "meaning": "me comportava bem"
+      },
+      {
+        "id": 6,
+        "word": "Si no me crees",
+        "pinyin": "",
+        "meaning": "Se não me acredita"
+      },
+      {
+        "id": 7,
+        "word": "pregúntale",
+        "pinyin": "",
+        "meaning": "pergunte a ele/ela"
+      }
+    ],
+    "id": "local-1772394392661-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Ah sí, esta tarde tengo que ir a una conferencia.",
+    "pinyin": "",
+    "translation": "A: Ah sim, esta tarde tenho que ir a uma palestra.",
+    "tokens": [
+      "Ah",
+      "sí",
+      ",",
+      "esta",
+      "tarde",
+      "tengo",
+      "que",
+      "ir",
+      "a",
+      "una",
+      "conferencia",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ah sí",
+        "pinyin": "",
+        "meaning": "Ah sim"
+      },
+      {
+        "id": 2,
+        "word": "esta tarde",
+        "pinyin": "",
+        "meaning": "esta tarde"
+      },
+      {
+        "id": 3,
+        "word": "tengo que ir",
+        "pinyin": "",
+        "meaning": "tenho que ir"
+      },
+      {
+        "id": 4,
+        "word": "una conferencia",
+        "pinyin": "",
+        "meaning": "uma palestra/conferência"
+      }
+    ],
+    "id": "local-1772394392661-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: ¿Es la del Edificio No. 3? No vayas.",
+    "pinyin": "",
+    "translation": "C: É a do Edifício Nº 3? Não vá.",
+    "tokens": [
+      "¿",
+      "Es",
+      "la",
+      "del",
+      "Edificio",
+      "No.",
+      "3",
+      "?",
+      "No",
+      "vayas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es la del",
+        "pinyin": "",
+        "meaning": "É a do/da"
+      },
+      {
+        "id": 2,
+        "word": "Edificio No. 3",
+        "pinyin": "",
+        "meaning": "Edifício Nº 3"
+      },
+      {
+        "id": 3,
+        "word": "No vayas",
+        "pinyin": "",
+        "meaning": "Não vá"
+      }
+    ],
+    "id": "local-1772394392661-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No puedo. El profesor dijo que hay lista.",
+    "pinyin": "",
+    "translation": "A: Não posso. O professor disse que tem lista de presença.",
+    "tokens": [
+      "No",
+      "puedo",
+      ".",
+      "El",
+      "profesor",
+      "dijo",
+      "que",
+      "hay",
+      "lista",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No puedo",
+        "pinyin": "",
+        "meaning": "Não posso"
+      },
+      {
+        "id": 2,
+        "word": "El profesor dijo",
+        "pinyin": "",
+        "meaning": "O professor disse"
+      },
+      {
+        "id": 3,
+        "word": "hay lista",
+        "pinyin": "",
+        "meaning": "tem lista de presença"
+      }
+    ],
+    "id": "local-1772394392661-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Esto de la lista es solo para engañar a los estudiantes nuevos. Aunque no vayas, no pasará nada.",
+    "pinyin": "",
+    "translation": "B: Essa história da lista é só para enganar os estudantes novos. Mesmo que você não vá, nada acontecerá.",
+    "tokens": [
+      "Esto",
+      "de",
+      "la",
+      "lista",
+      "es",
+      "solo",
+      "para",
+      "engañar",
+      "a",
+      "los",
+      "estudiantes",
+      "nuevos",
+      ".",
+      "Aunque",
+      "no",
+      "vayas",
+      ",",
+      "no",
+      "pasará",
+      "nada",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Esto de la lista",
+        "pinyin": "",
+        "meaning": "Essa história da lista"
+      },
+      {
+        "id": 2,
+        "word": "solo para",
+        "pinyin": "",
+        "meaning": "apenas para"
+      },
+      {
+        "id": 3,
+        "word": "engañar",
+        "pinyin": "",
+        "meaning": "enganar"
+      },
+      {
+        "id": 4,
+        "word": "estudiantes nuevos",
+        "pinyin": "",
+        "meaning": "estudantes novos / calouros"
+      },
+      {
+        "id": 5,
+        "word": "Aunque",
+        "pinyin": "",
+        "meaning": "Embora / Mesmo que"
+      },
+      {
+        "id": 6,
+        "word": "no pasará nada",
+        "pinyin": "",
+        "meaning": "nada acontecerá"
+      }
+    ],
+    "id": "local-1772394392661-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: A todos los profesores les gusta usar a los estudiantes nuevos para llenar los números en este tipo de conferencias aburridas.",
+    "pinyin": "",
+    "translation": "C: Todos os professores gostam de usar os estudantes novos para preencher os números neste tipo de palestras chatas.",
+    "tokens": [
+      "A",
+      "todos",
+      "los",
+      "profesores",
+      "les",
+      "gusta",
+      "usar",
+      "a",
+      "los",
+      "estudiantes",
+      "nuevos",
+      "para",
+      "llenar",
+      "los",
+      "números",
+      "en",
+      "este",
+      "tipo",
+      "de",
+      "conferencias",
+      "aburridas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "A todos los profesores",
+        "pinyin": "",
+        "meaning": "A todos os professores"
+      },
+      {
+        "id": 2,
+        "word": "les gusta",
+        "pinyin": "",
+        "meaning": "gostam (deles)"
+      },
+      {
+        "id": 3,
+        "word": "usar",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "llenar los números",
+        "pinyin": "",
+        "meaning": "preencher os números"
+      },
+      {
+        "id": 5,
+        "word": "este tipo de",
+        "pinyin": "",
+        "meaning": "este tipo de"
+      },
+      {
+        "id": 6,
+        "word": "conferencias aburridas",
+        "pinyin": "",
+        "meaning": "palestras chatas"
+      }
+    ],
+    "id": "local-1772394392661-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Me voy ahora. ¡Adiós!",
+    "pinyin": "",
+    "translation": "A: Estou indo agora. Tchau!",
+    "tokens": [
+      "Me",
+      "voy",
+      "ahora",
+      ".",
+      "¡",
+      "Adiós",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Me voy",
+        "pinyin": "",
+        "meaning": "Estou indo / Vou"
+      },
+      {
+        "id": 2,
+        "word": "ahora",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "Adiós",
+        "pinyin": "",
+        "meaning": "Tchau / Adeus"
+      }
+    ],
+    "id": "local-1772394392661-11",
+    "language": "Espanhol"
+  }
+]

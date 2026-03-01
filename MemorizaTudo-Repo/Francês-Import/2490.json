@@ -1,0 +1,623 @@
+[
+  {
+    "chinese": "A: Zhen Zhen, as-tu regardé ta note à l'examen d'entrée à l'université ?",
+    "pinyin": "",
+    "translation": "A: Zhen Zhen, você viu sua nota no exame de admissão à universidade?",
+    "tokens": [
+      "A:",
+      "Zhen",
+      "Zhen,",
+      "as-tu",
+      "regardé",
+      "ta",
+      "note",
+      "à",
+      "l'examen",
+      "d'entrée",
+      "à",
+      "l'université",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "as-tu regardé",
+        "pinyin": "",
+        "meaning": "você viu/olhou"
+      },
+      {
+        "id": 2,
+        "word": "note",
+        "pinyin": "",
+        "meaning": "nota"
+      },
+      {
+        "id": 3,
+        "word": "examen d'entrée",
+        "pinyin": "",
+        "meaning": "exame de admissão"
+      },
+      {
+        "id": 4,
+        "word": "université",
+        "pinyin": "",
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772393866477-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oui. C'est 452. Et toi ?",
+    "pinyin": "",
+    "translation": "B: Sim. É 452. E você?",
+    "tokens": [
+      "B:",
+      "Oui.",
+      "C'est",
+      "452.",
+      "Et",
+      "toi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É"
+      },
+      {
+        "id": 3,
+        "word": "Et toi",
+        "pinyin": "",
+        "meaning": "E você"
+      }
+    ],
+    "id": "local-1772393866477-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Wow, c'est tellement haut. J'ai seulement eu 417.",
+    "pinyin": "",
+    "translation": "A: Uau, é tão alto. Eu só tirei 417.",
+    "tokens": [
+      "A:",
+      "Wow,",
+      "c'est",
+      "tellement",
+      "haut.",
+      "J'ai",
+      "seulement",
+      "eu",
+      "417."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tellement haut",
+        "pinyin": "",
+        "meaning": "tão alto"
+      },
+      {
+        "id": 2,
+        "word": "seulement",
+        "pinyin": "",
+        "meaning": "apenas/somente"
+      },
+      {
+        "id": 3,
+        "word": "eu",
+        "pinyin": "",
+        "meaning": "tive/tirei"
+      }
+    ],
+    "id": "local-1772393866477-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors nous sommes à peu près pareils. Le score minimum de passage pour les arts est généralement plus élevé que pour les sciences.",
+    "pinyin": "",
+    "translation": "B: Então somos mais ou menos iguais. A pontuação mínima para passar em artes é geralmente mais alta do que para ciências.",
+    "tokens": [
+      "B:",
+      "Alors",
+      "nous",
+      "sommes",
+      "à",
+      "peu",
+      "près",
+      "pareils.",
+      "Le",
+      "score",
+      "minimum",
+      "de",
+      "passage",
+      "pour",
+      "les",
+      "arts",
+      "est",
+      "généralement",
+      "plus",
+      "élevé",
+      "que",
+      "pour",
+      "les",
+      "sciences."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "à peu près pareils",
+        "pinyin": "",
+        "meaning": "mais ou menos iguais"
+      },
+      {
+        "id": 3,
+        "word": "score minimum de passage",
+        "pinyin": "",
+        "meaning": "pontuação mínima de aprovação"
+      },
+      {
+        "id": 4,
+        "word": "arts",
+        "pinyin": "",
+        "meaning": "artes"
+      },
+      {
+        "id": 5,
+        "word": "généralement",
+        "pinyin": "",
+        "meaning": "geralmente"
+      },
+      {
+        "id": 6,
+        "word": "plus élevé que",
+        "pinyin": "",
+        "meaning": "mais alto que"
+      },
+      {
+        "id": 7,
+        "word": "sciences",
+        "pinyin": "",
+        "meaning": "ciências"
+      }
+    ],
+    "id": "local-1772393866477-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Peut-être que nous pouvons quand même aller à la même université. À quelle école veux-tu postuler ?",
+    "pinyin": "",
+    "translation": "A: Talvez possamos ir para a mesma universidade mesmo assim. Para qual escola você quer se candidatar?",
+    "tokens": [
+      "A:",
+      "Peut-être",
+      "que",
+      "nous",
+      "pouvons",
+      "quand",
+      "même",
+      "aller",
+      "à",
+      "la",
+      "même",
+      "université.",
+      "À",
+      "quelle",
+      "école",
+      "veux-tu",
+      "postuler",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Peut-être",
+        "pinyin": "",
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "quand même",
+        "pinyin": "",
+        "meaning": "mesmo assim/de qualquer forma"
+      },
+      {
+        "id": 3,
+        "word": "même université",
+        "pinyin": "",
+        "meaning": "mesma universidade"
+      },
+      {
+        "id": 4,
+        "word": "école",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 5,
+        "word": "postuler",
+        "pinyin": "",
+        "meaning": "se candidatar"
+      }
+    ],
+    "id": "local-1772393866477-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je n'ai pas encore décidé. As-tu pensé à une ?",
+    "pinyin": "",
+    "translation": "B: Ainda não decidi. Você pensou em alguma?",
+    "tokens": [
+      "B:",
+      "Je",
+      "n'ai",
+      "pas",
+      "encore",
+      "décidé.",
+      "As-tu",
+      "pensé",
+      "à",
+      "une",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pas encore",
+        "pinyin": "",
+        "meaning": "ainda não"
+      },
+      {
+        "id": 2,
+        "word": "décidé",
+        "pinyin": "",
+        "meaning": "decidido"
+      },
+      {
+        "id": 3,
+        "word": "pensé",
+        "pinyin": "",
+        "meaning": "pensou"
+      }
+    ],
+    "id": "local-1772393866477-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non, moi non plus. Quelle majeure veux-tu étudier ?",
+    "pinyin": "",
+    "translation": "A: Não, eu também não. Qual curso você quer estudar?",
+    "tokens": [
+      "A:",
+      "Non,",
+      "moi",
+      "non",
+      "plus.",
+      "Quelle",
+      "majeure",
+      "veux-tu",
+      "étudier",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non, moi non plus",
+        "pinyin": "",
+        "meaning": "Não, eu também não"
+      },
+      {
+        "id": 2,
+        "word": "majeure",
+        "pinyin": "",
+        "meaning": "curso/área principal"
+      },
+      {
+        "id": 3,
+        "word": "étudier",
+        "pinyin": "",
+        "meaning": "estudar"
+      }
+    ],
+    "id": "local-1772393866477-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je veux postuler au département de langue chinoise, mais mon père et ma mère veulent que j'étudie la comptabilité.",
+    "pinyin": "",
+    "translation": "B: Eu quero me candidatar ao departamento de língua chinesa, mas meu pai e minha mãe querem que eu estude contabilidade.",
+    "tokens": [
+      "B:",
+      "Je",
+      "veux",
+      "postuler",
+      "au",
+      "département",
+      "de",
+      "langue",
+      "chinoise,",
+      "mais",
+      "mon",
+      "père",
+      "et",
+      "ma",
+      "mère",
+      "veulent",
+      "que",
+      "j'étudie",
+      "la",
+      "comptabilité."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "postuler",
+        "pinyin": "",
+        "meaning": "se candidatar"
+      },
+      {
+        "id": 2,
+        "word": "département de langue chinoise",
+        "pinyin": "",
+        "meaning": "departamento de língua chinesa"
+      },
+      {
+        "id": 3,
+        "word": "père et ma mère",
+        "pinyin": "",
+        "meaning": "pai e mãe"
+      },
+      {
+        "id": 4,
+        "word": "veulent que j'étudie",
+        "pinyin": "",
+        "meaning": "querem que eu estude"
+      },
+      {
+        "id": 5,
+        "word": "comptabilité",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      }
+    ],
+    "id": "local-1772393866477-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'ai entendu dire que la langue chinoise est la pire majeure pour trouver un emploi.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que a língua chinesa é o pior curso para encontrar um emprego.",
+    "tokens": [
+      "A:",
+      "J'ai",
+      "entendu",
+      "dire",
+      "que",
+      "la",
+      "langue",
+      "chinoise",
+      "est",
+      "la",
+      "pire",
+      "majeure",
+      "pour",
+      "trouver",
+      "un",
+      "emploi."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entendu dire",
+        "pinyin": "",
+        "meaning": "ouvi dizer"
+      },
+      {
+        "id": 2,
+        "word": "pire majeure",
+        "pinyin": "",
+        "meaning": "pior curso/área principal"
+      },
+      {
+        "id": 3,
+        "word": "trouver un emploi",
+        "pinyin": "",
+        "meaning": "encontrar um emprego"
+      }
+    ],
+    "id": "local-1772393866477-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais j'aime la littérature et la comptabilité semble si ennuyeuse. À quelle majeure veux-tu postuler ?",
+    "pinyin": "",
+    "translation": "B: Mas eu gosto de literatura e contabilidade parece tão chato. Para qual curso você quer se candidatar?",
+    "tokens": [
+      "B:",
+      "Mais",
+      "j'aime",
+      "la",
+      "littérature",
+      "et",
+      "la",
+      "comptabilité",
+      "semble",
+      "si",
+      "ennuyeuse.",
+      "À",
+      "quelle",
+      "majeure",
+      "veux-tu",
+      "postuler",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "littérature",
+        "pinyin": "",
+        "meaning": "literatura"
+      },
+      {
+        "id": 2,
+        "word": "comptabilité",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 3,
+        "word": "semble",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 4,
+        "word": "ennuyeuse",
+        "pinyin": "",
+        "meaning": "chata/aborrecida"
+      },
+      {
+        "id": 5,
+        "word": "majeure",
+        "pinyin": "",
+        "meaning": "curso/área principal"
+      },
+      {
+        "id": 6,
+        "word": "postuler",
+        "pinyin": "",
+        "meaning": "se candidatar"
+      }
+    ],
+    "id": "local-1772393866477-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je veux étudier l'informatique. Les perspectives d'emploi sont plutôt bonnes.",
+    "pinyin": "",
+    "translation": "A: Eu quero estudar ciência da computação. As perspectivas de emprego são bastante boas.",
+    "tokens": [
+      "A:",
+      "Je",
+      "veux",
+      "étudier",
+      "l'informatique.",
+      "Les",
+      "perspectives",
+      "d'emploi",
+      "sont",
+      "plutôt",
+      "bonnes."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "étudier",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 2,
+        "word": "informatique",
+        "pinyin": "",
+        "meaning": "ciência da computação/informática"
+      },
+      {
+        "id": 3,
+        "word": "perspectives d'emploi",
+        "pinyin": "",
+        "meaning": "perspectivas de emprego"
+      },
+      {
+        "id": 4,
+        "word": "plutôt bonnes",
+        "pinyin": "",
+        "meaning": "bastante boas/muito boas"
+      }
+    ],
+    "id": "local-1772393866477-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Whoa. Alors si plus tard je ne peux pas trouver de travail, tu pourras m'inviter à manger tous les jours.",
+    "pinyin": "",
+    "translation": "B: Uau. Então, se mais tarde eu não conseguir encontrar trabalho, você poderá me convidar para comer todos os dias.",
+    "tokens": [
+      "B:",
+      "Whoa.",
+      "Alors",
+      "si",
+      "plus",
+      "tard",
+      "je",
+      "ne",
+      "peux",
+      "pas",
+      "trouver",
+      "de",
+      "travail,",
+      "tu",
+      "pourras",
+      "m'inviter",
+      "à",
+      "manger",
+      "tous",
+      "les",
+      "jours."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "plus tard",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 3,
+        "word": "ne peux pas trouver de travail",
+        "pinyin": "",
+        "meaning": "não consigo encontrar trabalho"
+      },
+      {
+        "id": 4,
+        "word": "pourras",
+        "pinyin": "",
+        "meaning": "poderá"
+      },
+      {
+        "id": 5,
+        "word": "m'inviter à manger",
+        "pinyin": "",
+        "meaning": "me convidar para comer"
+      },
+      {
+        "id": 6,
+        "word": "tous les jours",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      }
+    ],
+    "id": "local-1772393866477-11",
+    "language": "Francês"
+  }
+]

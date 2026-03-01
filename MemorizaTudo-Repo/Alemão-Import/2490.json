@@ -1,0 +1,854 @@
+[
+  {
+    "chinese": "A: Zhen Zhen, hast du deine Note für die Hochschulaufnahmeprüfung nachgeschlagen?",
+    "pinyin": null,
+    "translation": "A: Zhen Zhen, você verificou sua nota para o exame de admissão à universidade?",
+    "tokens": [
+      "A:",
+      "Zhen",
+      "Zhen",
+      ",",
+      "hast",
+      "du",
+      "deine",
+      "Note",
+      "für",
+      "die",
+      "Hochschulaufnahmeprüfung",
+      "nachgeschlagen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "hast",
+        "pinyin": null,
+        "meaning": "(ter, auxiliar no passado) você tem"
+      },
+      {
+        "id": 1,
+        "word": "Note",
+        "pinyin": null,
+        "meaning": "nota"
+      },
+      {
+        "id": 2,
+        "word": "Hochschulaufnahmeprüfung",
+        "pinyin": null,
+        "meaning": "exame de admissão à universidade"
+      },
+      {
+        "id": 3,
+        "word": "nachgeschlagen",
+        "pinyin": null,
+        "meaning": "(nachschlagen) consultado, verificado"
+      }
+    ],
+    "id": "local-1772393839743-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ja. Es ist 452. Und du?",
+    "pinyin": null,
+    "translation": "B: Sim. É 452. E você?",
+    "tokens": [
+      "B:",
+      "Ja",
+      ".",
+      "Es",
+      "ist",
+      "452",
+      ".",
+      "Und",
+      "du",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ja",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 1,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "(sein) é"
+      },
+      {
+        "id": 2,
+        "word": "Und",
+        "pinyin": null,
+        "meaning": "E"
+      },
+      {
+        "id": 3,
+        "word": "du",
+        "pinyin": null,
+        "meaning": "você"
+      }
+    ],
+    "id": "local-1772393839743-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wow, das ist so hoch. Ich habe nur 417 bekommen.",
+    "pinyin": null,
+    "translation": "A: Uau, isso é tão alto. Eu recebi apenas 417.",
+    "tokens": [
+      "A:",
+      "Wow",
+      ",",
+      "das",
+      "ist",
+      "so",
+      "hoch",
+      ".",
+      "Ich",
+      "habe",
+      "nur",
+      "417",
+      "bekommen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Wow",
+        "pinyin": null,
+        "meaning": "Uau"
+      },
+      {
+        "id": 1,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é"
+      },
+      {
+        "id": 2,
+        "word": "hoch",
+        "pinyin": null,
+        "meaning": "alto"
+      },
+      {
+        "id": 3,
+        "word": "habe",
+        "pinyin": null,
+        "meaning": "(haben) tenho (aqui como auxiliar para o pretérito perfeito)"
+      },
+      {
+        "id": 4,
+        "word": "nur",
+        "pinyin": null,
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 5,
+        "word": "bekommen",
+        "pinyin": null,
+        "meaning": "receber"
+      }
+    ],
+    "id": "local-1772393839743-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Dann sind wir ungefähr gleich. Die Mindestpunktzahl für Geisteswissenschaften ist im Allgemeinen höher als für Naturwissenschaften.",
+    "pinyin": null,
+    "translation": "B: Então estamos mais ou menos iguais. A pontuação mínima para Ciências Humanas é geralmente mais alta do que para Ciências Naturais.",
+    "tokens": [
+      "B:",
+      "Dann",
+      "sind",
+      "wir",
+      "ungefähr",
+      "gleich",
+      ".",
+      "Die",
+      "Mindestpunktzahl",
+      "für",
+      "Geisteswissenschaften",
+      "ist",
+      "im",
+      "Allgemeinen",
+      "höher",
+      "als",
+      "für",
+      "Naturwissenschaften",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Dann",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 1,
+        "word": "sind",
+        "pinyin": null,
+        "meaning": "(sein) somos, estamos"
+      },
+      {
+        "id": 2,
+        "word": "ungefähr",
+        "pinyin": null,
+        "meaning": "aproximadamente, mais ou menos"
+      },
+      {
+        "id": 3,
+        "word": "gleich",
+        "pinyin": null,
+        "meaning": "igual"
+      },
+      {
+        "id": 4,
+        "word": "Mindestpunktzahl",
+        "pinyin": null,
+        "meaning": "pontuação mínima"
+      },
+      {
+        "id": 5,
+        "word": "Geisteswissenschaften",
+        "pinyin": null,
+        "meaning": "Ciências Humanas"
+      },
+      {
+        "id": 6,
+        "word": "im Allgemeinen",
+        "pinyin": null,
+        "meaning": "em geral, geralmente"
+      },
+      {
+        "id": 7,
+        "word": "höher",
+        "pinyin": null,
+        "meaning": "mais alta (comparativo de hoch)"
+      },
+      {
+        "id": 8,
+        "word": "Naturwissenschaften",
+        "pinyin": null,
+        "meaning": "Ciências Naturais"
+      }
+    ],
+    "id": "local-1772393839743-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Vielleicht können wir trotzdem auf dieselbe Universität gehen. Welche Schule möchtest du dich bewerben?",
+    "pinyin": null,
+    "translation": "A: Talvez possamos ir para a mesma universidade mesmo assim. Para qual escola você gostaria de se candidatar?",
+    "tokens": [
+      "A:",
+      "Vielleicht",
+      "können",
+      "wir",
+      "trotzdem",
+      "auf",
+      "dieselbe",
+      "Universität",
+      "gehen",
+      ".",
+      "Welche",
+      "Schule",
+      "möchtest",
+      "du",
+      "dich",
+      "bewerben",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Vielleicht",
+        "pinyin": null,
+        "meaning": "Talvez"
+      },
+      {
+        "id": 1,
+        "word": "können",
+        "pinyin": null,
+        "meaning": "poder"
+      },
+      {
+        "id": 2,
+        "word": "trotzdem",
+        "pinyin": null,
+        "meaning": "mesmo assim, ainda assim"
+      },
+      {
+        "id": 3,
+        "word": "dieselbe",
+        "pinyin": null,
+        "meaning": "a mesma"
+      },
+      {
+        "id": 4,
+        "word": "Universität",
+        "pinyin": null,
+        "meaning": "universidade"
+      },
+      {
+        "id": 5,
+        "word": "gehen",
+        "pinyin": null,
+        "meaning": "ir"
+      },
+      {
+        "id": 6,
+        "word": "Welche",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 7,
+        "word": "Schule",
+        "pinyin": null,
+        "meaning": "escola (aqui, instituição de ensino superior)"
+      },
+      {
+        "id": 8,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "(möchten) você gostaria de"
+      },
+      {
+        "id": 9,
+        "word": "bewerben",
+        "pinyin": null,
+        "meaning": "candidatar-se, inscrever-se"
+      }
+    ],
+    "id": "local-1772393839743-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich habe mich noch nicht entschieden. Hast du dir eine überlegt?",
+    "pinyin": null,
+    "translation": "B: Ainda não decidi. Você pensou em alguma?",
+    "tokens": [
+      "B:",
+      "Ich",
+      "habe",
+      "mich",
+      "noch",
+      "nicht",
+      "entschieden",
+      ".",
+      "Hast",
+      "du",
+      "dir",
+      "eine",
+      "überlegt",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "habe",
+        "pinyin": null,
+        "meaning": "(haben) tenho (auxiliar)"
+      },
+      {
+        "id": 1,
+        "word": "noch nicht",
+        "pinyin": null,
+        "meaning": "ainda não"
+      },
+      {
+        "id": 2,
+        "word": "entschieden",
+        "pinyin": null,
+        "meaning": "(entscheiden) decidido"
+      },
+      {
+        "id": 3,
+        "word": "Hast",
+        "pinyin": null,
+        "meaning": "(haben) você tem (auxiliar)"
+      },
+      {
+        "id": 4,
+        "word": "überlegt",
+        "pinyin": null,
+        "meaning": "(überlegen) pensado, considerado"
+      }
+    ],
+    "id": "local-1772393839743-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein, ich auch nicht. Welches Hauptfach möchtest du studieren?",
+    "pinyin": null,
+    "translation": "A: Não, eu também não. Qual curso principal você gostaria de estudar?",
+    "tokens": [
+      "A:",
+      "Nein",
+      ",",
+      "ich",
+      "auch",
+      "nicht",
+      ".",
+      "Welches",
+      "Hauptfach",
+      "möchtest",
+      "du",
+      "studieren",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Nein",
+        "pinyin": null,
+        "meaning": "Não"
+      },
+      {
+        "id": 1,
+        "word": "auch nicht",
+        "pinyin": null,
+        "meaning": "também não"
+      },
+      {
+        "id": 2,
+        "word": "Welches",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 3,
+        "word": "Hauptfach",
+        "pinyin": null,
+        "meaning": "curso principal, especialização"
+      },
+      {
+        "id": 4,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "(möchten) você gostaria de"
+      },
+      {
+        "id": 5,
+        "word": "studieren",
+        "pinyin": null,
+        "meaning": "estudar"
+      }
+    ],
+    "id": "local-1772393839743-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich möchte mich für den Fachbereich Chinesische Sprache bewerben, aber mein Vater und meine Mutter wollen, dass ich Rechnungswesen studiere.",
+    "pinyin": null,
+    "translation": "B: Eu gostaria de me candidatar para o departamento de Língua Chinesa, mas meu pai e minha mãe querem que eu estude Contabilidade.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "möchte",
+      "mich",
+      "für",
+      "den",
+      "Fachbereich",
+      "Chinesische",
+      "Sprache",
+      "bewerben",
+      ",",
+      "aber",
+      "mein",
+      "Vater",
+      "und",
+      "meine",
+      "Mutter",
+      "wollen",
+      ",",
+      "dass",
+      "ich",
+      "Rechnungswesen",
+      "studiere",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "(möchten) gostaria de"
+      },
+      {
+        "id": 1,
+        "word": "Fachbereich",
+        "pinyin": null,
+        "meaning": "departamento, área"
+      },
+      {
+        "id": 2,
+        "word": "Chinesische Sprache",
+        "pinyin": null,
+        "meaning": "Língua Chinesa"
+      },
+      {
+        "id": 3,
+        "word": "bewerben",
+        "pinyin": null,
+        "meaning": "candidatar-se"
+      },
+      {
+        "id": 4,
+        "word": "aber",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 5,
+        "word": "Vater",
+        "pinyin": null,
+        "meaning": "pai"
+      },
+      {
+        "id": 6,
+        "word": "Mutter",
+        "pinyin": null,
+        "meaning": "mãe"
+      },
+      {
+        "id": 7,
+        "word": "wollen",
+        "pinyin": null,
+        "meaning": "querer"
+      },
+      {
+        "id": 8,
+        "word": "dass",
+        "pinyin": null,
+        "meaning": "que (conjunção)"
+      },
+      {
+        "id": 9,
+        "word": "Rechnungswesen",
+        "pinyin": null,
+        "meaning": "Contabilidade"
+      },
+      {
+        "id": 10,
+        "word": "studiere",
+        "pinyin": null,
+        "meaning": "(studieren) estude (subjuntivo)"
+      }
+    ],
+    "id": "local-1772393839743-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich habe gehört, dass Chinesische Sprache das schlechteste Hauptfach ist, um eine Anstellung zu finden.",
+    "pinyin": null,
+    "translation": "A: Eu ouvi dizer que Língua Chinesa é o pior curso principal para encontrar um emprego.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "habe",
+      "gehört",
+      ",",
+      "dass",
+      "Chinesische",
+      "Sprache",
+      "das",
+      "schlechteste",
+      "Hauptfach",
+      "ist",
+      ",",
+      "um",
+      "eine",
+      "Anstellung",
+      "zu",
+      "finden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "habe gehört",
+        "pinyin": null,
+        "meaning": "ouvi dizer, soube"
+      },
+      {
+        "id": 1,
+        "word": "Chinesische Sprache",
+        "pinyin": null,
+        "meaning": "Língua Chinesa"
+      },
+      {
+        "id": 2,
+        "word": "schlechteste",
+        "pinyin": null,
+        "meaning": "o pior (superlativo de schlecht)"
+      },
+      {
+        "id": 3,
+        "word": "Hauptfach",
+        "pinyin": null,
+        "meaning": "curso principal"
+      },
+      {
+        "id": 4,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é"
+      },
+      {
+        "id": 5,
+        "word": "Anstellung",
+        "pinyin": null,
+        "meaning": "emprego, colocação"
+      },
+      {
+        "id": 6,
+        "word": "finden",
+        "pinyin": null,
+        "meaning": "encontrar"
+      }
+    ],
+    "id": "local-1772393839743-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber ich mag Literatur und Rechnungswesen klingt so langweilig. Welches Hauptfach möchtest du dich bewerben?",
+    "pinyin": null,
+    "translation": "B: Mas eu gosto de literatura e Contabilidade parece tão chato. Para qual curso principal você gostaria de se candidatar?",
+    "tokens": [
+      "B:",
+      "Aber",
+      "ich",
+      "mag",
+      "Literatur",
+      "und",
+      "Rechnungswesen",
+      "klingt",
+      "so",
+      "langweilig",
+      ".",
+      "Welches",
+      "Hauptfach",
+      "möchtest",
+      "du",
+      "dich",
+      "bewerben",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Aber",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 1,
+        "word": "mag",
+        "pinyin": null,
+        "meaning": "(mögen) gosto"
+      },
+      {
+        "id": 2,
+        "word": "Literatur",
+        "pinyin": null,
+        "meaning": "literatura"
+      },
+      {
+        "id": 3,
+        "word": "Rechnungswesen",
+        "pinyin": null,
+        "meaning": "Contabilidade"
+      },
+      {
+        "id": 4,
+        "word": "klingt",
+        "pinyin": null,
+        "meaning": "(klingen) soa, parece"
+      },
+      {
+        "id": 5,
+        "word": "langweilig",
+        "pinyin": null,
+        "meaning": "chato, tedioso"
+      },
+      {
+        "id": 6,
+        "word": "Welches",
+        "pinyin": null,
+        "meaning": "Qual"
+      },
+      {
+        "id": 7,
+        "word": "Hauptfach",
+        "pinyin": null,
+        "meaning": "curso principal"
+      },
+      {
+        "id": 8,
+        "word": "möchtest",
+        "pinyin": null,
+        "meaning": "(möchten) você gostaria de"
+      },
+      {
+        "id": 9,
+        "word": "bewerben",
+        "pinyin": null,
+        "meaning": "candidatar-se"
+      }
+    ],
+    "id": "local-1772393839743-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich möchte Informatik studieren. Die Berufsaussichten sind ziemlich gut.",
+    "pinyin": null,
+    "translation": "A: Eu gostaria de estudar Ciência da Computação. As perspectivas de carreira são muito boas.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "möchte",
+      "Informatik",
+      "studieren",
+      ".",
+      "Die",
+      "Berufsaussichten",
+      "sind",
+      "ziemlich",
+      "gut",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "möchte",
+        "pinyin": null,
+        "meaning": "(möchten) gostaria de"
+      },
+      {
+        "id": 1,
+        "word": "Informatik",
+        "pinyin": null,
+        "meaning": "Ciência da Computação, Informática"
+      },
+      {
+        "id": 2,
+        "word": "studieren",
+        "pinyin": null,
+        "meaning": "estudar"
+      },
+      {
+        "id": 3,
+        "word": "Berufsaussichten",
+        "pinyin": null,
+        "meaning": "perspectivas de carreira/profissionais"
+      },
+      {
+        "id": 4,
+        "word": "sind",
+        "pinyin": null,
+        "meaning": "(sein) são"
+      },
+      {
+        "id": 5,
+        "word": "ziemlich",
+        "pinyin": null,
+        "meaning": "muito, bastante"
+      },
+      {
+        "id": 6,
+        "word": "gut",
+        "pinyin": null,
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772393839743-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hoppla. Wenn ich später keine Arbeit finde, kannst du mich jeden Tag zum Essen einladen.",
+    "pinyin": null,
+    "translation": "B: Opa. Se eu não encontrar trabalho mais tarde, você pode me convidar para comer todos os dias.",
+    "tokens": [
+      "B:",
+      "Hoppla",
+      ".",
+      "Wenn",
+      "ich",
+      "später",
+      "keine",
+      "Arbeit",
+      "finde",
+      ",",
+      "kannst",
+      "du",
+      "mich",
+      "jeden",
+      "Tag",
+      "zum",
+      "Essen",
+      "einladen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Hoppla",
+        "pinyin": null,
+        "meaning": "Opa, Eita (interjeição de surpresa)"
+      },
+      {
+        "id": 1,
+        "word": "Wenn",
+        "pinyin": null,
+        "meaning": "Se (condicional)"
+      },
+      {
+        "id": 2,
+        "word": "später",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 3,
+        "word": "keine",
+        "pinyin": null,
+        "meaning": "nenhuma, não ter"
+      },
+      {
+        "id": 4,
+        "word": "Arbeit",
+        "pinyin": null,
+        "meaning": "trabalho"
+      },
+      {
+        "id": 5,
+        "word": "finde",
+        "pinyin": null,
+        "meaning": "(finden) encontrar"
+      },
+      {
+        "id": 6,
+        "word": "kannst",
+        "pinyin": null,
+        "meaning": "(können) você pode"
+      },
+      {
+        "id": 7,
+        "word": "jeden Tag",
+        "pinyin": null,
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 8,
+        "word": "zum Essen einladen",
+        "pinyin": null,
+        "meaning": "convidar para comer"
+      }
+    ],
+    "id": "local-1772393839743-11",
+    "language": "Alemão"
+  }
+]

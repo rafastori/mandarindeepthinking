@@ -1,0 +1,789 @@
+[
+  {
+    "chinese": "A: ¡Happy Valley ya está aquí!",
+    "pinyin": "",
+    "translation": "A: Happy Valley já está aqui!",
+    "tokens": [
+      "¡Happy",
+      "Valley",
+      "ya",
+      "está",
+      "aquí!"
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "ya",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "está aquí",
+        "pinyin": "",
+        "meaning": "está aqui"
+      }
+    ],
+    "id": "local-1772394630321-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Hurra! ¿Por qué hay tanta gente?!",
+    "pinyin": "",
+    "translation": "B: Viva! Por que tem tanta gente?!",
+    "tokens": [
+      "¡Hurra!",
+      "¿Por",
+      "qué",
+      "hay",
+      "tanta",
+      "gente?!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Hurra",
+        "pinyin": "",
+        "meaning": "Viva!"
+      },
+      {
+        "id": 1,
+        "word": "Por qué",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "tem/há"
+      },
+      {
+        "id": 4,
+        "word": "tanta gente",
+        "pinyin": "",
+        "meaning": "tanta gente"
+      }
+    ],
+    "id": "local-1772394630321-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Hay que hacer fila para todo.",
+    "pinyin": "",
+    "translation": "É preciso fazer fila para tudo.",
+    "tokens": [
+      "Hay",
+      "que",
+      "hacer",
+      "fila",
+      "para",
+      "todo."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Hay que",
+        "pinyin": "",
+        "meaning": "É preciso/Tem que"
+      },
+      {
+        "id": 2,
+        "word": "hacer fila",
+        "pinyin": "",
+        "meaning": "fazer fila"
+      },
+      {
+        "id": 4,
+        "word": "para todo",
+        "pinyin": "",
+        "meaning": "para tudo"
+      }
+    ],
+    "id": "local-1772394630321-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, un día no es suficiente.",
+    "pinyin": "",
+    "translation": "A: Então, um dia não é suficiente.",
+    "tokens": [
+      "Entonces,",
+      "un",
+      "día",
+      "no",
+      "es",
+      "suficiente."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 5,
+        "word": "suficiente",
+        "pinyin": "",
+        "meaning": "suficiente"
+      }
+    ],
+    "id": "local-1772394630321-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "¿No sería mejor conseguir un pase anual?",
+    "pinyin": "",
+    "translation": "Não seria melhor conseguir um passe anual?",
+    "tokens": [
+      "¿No",
+      "sería",
+      "mejor",
+      "conseguir",
+      "un",
+      "pase",
+      "anual?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sería mejor",
+        "pinyin": "",
+        "meaning": "seria melhor"
+      },
+      {
+        "id": 3,
+        "word": "conseguir",
+        "pinyin": "",
+        "meaning": "conseguir"
+      },
+      {
+        "id": 5,
+        "word": "pase anual",
+        "pinyin": "",
+        "meaning": "passe anual"
+      }
+    ],
+    "id": "local-1772394630321-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pensemos en eso después.",
+    "pinyin": "",
+    "translation": "B: Pensemos nisso depois.",
+    "tokens": [
+      "Pensemos",
+      "en",
+      "eso",
+      "después."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Pensemos",
+        "pinyin": "",
+        "meaning": "Pensemos (subconjuntivo de pensar)"
+      },
+      {
+        "id": 1,
+        "word": "en eso",
+        "pinyin": "",
+        "meaning": "nisso"
+      },
+      {
+        "id": 3,
+        "word": "después",
+        "pinyin": "",
+        "meaning": "depois"
+      }
+    ],
+    "id": "local-1772394630321-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Primero, muéstrame qué es divertido.",
+    "pinyin": "",
+    "translation": "Primeiro, me mostre o que é divertido.",
+    "tokens": [
+      "Primero,",
+      "muéstrame",
+      "qué",
+      "es",
+      "divertido."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Primero",
+        "pinyin": "",
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 1,
+        "word": "muéstrame",
+        "pinyin": "",
+        "meaning": "mostre-me"
+      },
+      {
+        "id": 4,
+        "word": "divertido",
+        "pinyin": "",
+        "meaning": "divertido"
+      }
+    ],
+    "id": "local-1772394630321-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Mira, ese alto de adelante con dos torres y la gente que está en él está gritando.",
+    "pinyin": "",
+    "translation": "A: Olha, aquele brinquedo alto lá na frente com duas torres e as pessoas que estão nele estão gritando.",
+    "tokens": [
+      "Mira,",
+      "ese",
+      "alto",
+      "de",
+      "adelante",
+      "con",
+      "dos",
+      "torres",
+      "y",
+      "la",
+      "gente",
+      "que",
+      "está",
+      "en",
+      "él",
+      "está",
+      "gritando."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Mira",
+        "pinyin": "",
+        "meaning": "Olha"
+      },
+      {
+        "id": 2,
+        "word": "alto",
+        "pinyin": "",
+        "meaning": "alto"
+      },
+      {
+        "id": 3,
+        "word": "de adelante",
+        "pinyin": "",
+        "meaning": "lá na frente"
+      },
+      {
+        "id": 7,
+        "word": "torres",
+        "pinyin": "",
+        "meaning": "torres"
+      },
+      {
+        "id": 10,
+        "word": "gente",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 15,
+        "word": "está gritando",
+        "pinyin": "",
+        "meaning": "está gritando"
+      }
+    ],
+    "id": "local-1772394630321-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Oh, lo sé.",
+    "pinyin": "",
+    "translation": "B: Ah, eu sei.",
+    "tokens": [
+      "Oh,",
+      "lo",
+      "sé."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lo sé",
+        "pinyin": "",
+        "meaning": "eu sei disso"
+      }
+    ],
+    "id": "local-1772394630321-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Son los Héroes de la Torre Gemela.",
+    "pinyin": "",
+    "translation": "São os Heróis da Torre Gêmea.",
+    "tokens": [
+      "Son",
+      "los",
+      "Héroes",
+      "de",
+      "la",
+      "Torre",
+      "Gemela."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "Héroes",
+        "pinyin": "",
+        "meaning": "Heróis"
+      },
+      {
+        "id": 5,
+        "word": "Torre Gemela",
+        "pinyin": "",
+        "meaning": "Torre Gêmea"
+      }
+    ],
+    "id": "local-1772394630321-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es demasiado emocionante.",
+    "pinyin": "",
+    "translation": "É muito emocionante.",
+    "tokens": [
+      "Es",
+      "demasiado",
+      "emocionante."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "demasiado",
+        "pinyin": "",
+        "meaning": "demais/muito"
+      },
+      {
+        "id": 2,
+        "word": "emocionante",
+        "pinyin": "",
+        "meaning": "emocionante"
+      }
+    ],
+    "id": "local-1772394630321-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "No me atrevo a subirme.",
+    "pinyin": "",
+    "translation": "Não me atrevo a subir.",
+    "tokens": [
+      "No",
+      "me",
+      "atrevo",
+      "a",
+      "subirme."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "atrevo",
+        "pinyin": "",
+        "meaning": "atrever-se"
+      },
+      {
+        "id": 4,
+        "word": "subirme",
+        "pinyin": "",
+        "meaning": "subir (em mim/no brinquedo)"
+      }
+    ],
+    "id": "local-1772394630321-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: El que está al lado que se balancea de un lado a otro es una versión mejorada de un barco pirata.",
+    "pinyin": "",
+    "translation": "A: O que está ao lado, que balança de um lado para o outro, é uma versão melhorada de um barco pirata.",
+    "tokens": [
+      "El",
+      "que",
+      "está",
+      "al",
+      "lado",
+      "que",
+      "se",
+      "balancea",
+      "de",
+      "un",
+      "lado",
+      "a",
+      "otro",
+      "es",
+      "una",
+      "versión",
+      "mejorada",
+      "de",
+      "un",
+      "barco",
+      "pirata."
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "al lado",
+        "pinyin": "",
+        "meaning": "ao lado"
+      },
+      {
+        "id": 6,
+        "word": "se balancea",
+        "pinyin": "",
+        "meaning": "balança (a si mesmo)"
+      },
+      {
+        "id": 8,
+        "word": "de un lado a otro",
+        "pinyin": "",
+        "meaning": "de um lado para o outro"
+      },
+      {
+        "id": 15,
+        "word": "versión mejorada",
+        "pinyin": "",
+        "meaning": "versão melhorada"
+      },
+      {
+        "id": 19,
+        "word": "barco pirata",
+        "pinyin": "",
+        "meaning": "barco pirata"
+      }
+    ],
+    "id": "local-1772394630321-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡También se ve tan aterrador!",
+    "pinyin": "",
+    "translation": "B: Também parece tão assustador!",
+    "tokens": [
+      "¡También",
+      "se",
+      "ve",
+      "tan",
+      "aterrador!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "También",
+        "pinyin": "",
+        "meaning": "Também"
+      },
+      {
+        "id": 2,
+        "word": "se ve",
+        "pinyin": "",
+        "meaning": "parece/é visto"
+      },
+      {
+        "id": 4,
+        "word": "aterrador",
+        "pinyin": "",
+        "meaning": "assustador"
+      }
+    ],
+    "id": "local-1772394630321-13",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: El de gran escala junto al lago es una montaña rusa construida de madera.",
+    "pinyin": "",
+    "translation": "A: O de grande escala junto ao lago é uma montanha-russa construída de madeira.",
+    "tokens": [
+      "El",
+      "de",
+      "gran",
+      "escala",
+      "junto",
+      "al",
+      "lago",
+      "es",
+      "una",
+      "montaña",
+      "rusa",
+      "construida",
+      "de",
+      "madera."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "gran escala",
+        "pinyin": "",
+        "meaning": "grande escala"
+      },
+      {
+        "id": 4,
+        "word": "junto al lago",
+        "pinyin": "",
+        "meaning": "junto ao lago"
+      },
+      {
+        "id": 9,
+        "word": "montaña rusa",
+        "pinyin": "",
+        "meaning": "montanha-russa"
+      },
+      {
+        "id": 11,
+        "word": "construida de madera",
+        "pinyin": "",
+        "meaning": "construída de madeira"
+      }
+    ],
+    "id": "local-1772394630321-14",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pero hay demasiada gente en la fila.",
+    "pinyin": "",
+    "translation": "B: Mas há gente demais na fila.",
+    "tokens": [
+      "Pero",
+      "hay",
+      "demasiada",
+      "gente",
+      "en",
+      "la",
+      "fila."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Pero",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 1,
+        "word": "hay",
+        "pinyin": "",
+        "meaning": "há/tem"
+      },
+      {
+        "id": 2,
+        "word": "demasiada gente",
+        "pinyin": "",
+        "meaning": "gente demais"
+      },
+      {
+        "id": 4,
+        "word": "en la fila",
+        "pinyin": "",
+        "meaning": "na fila"
+      }
+    ],
+    "id": "local-1772394630321-15",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Estimo que serían dos horas en la fila.",
+    "pinyin": "",
+    "translation": "Estimo que seriam duas horas na fila.",
+    "tokens": [
+      "Estimo",
+      "que",
+      "serían",
+      "dos",
+      "horas",
+      "en",
+      "la",
+      "fila."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Estimo",
+        "pinyin": "",
+        "meaning": "Estimo/Acho"
+      },
+      {
+        "id": 2,
+        "word": "serían",
+        "pinyin": "",
+        "meaning": "seriam"
+      },
+      {
+        "id": 3,
+        "word": "dos horas",
+        "pinyin": "",
+        "meaning": "duas horas"
+      }
+    ],
+    "id": "local-1772394630321-16",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Quieres subirte a Shoot the Chute?",
+    "pinyin": "",
+    "translation": "A: Quer ir no Shoot the Chute?",
+    "tokens": [
+      "¿Quieres",
+      "subirte",
+      "a",
+      "Shoot",
+      "the",
+      "Chute?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Quieres",
+        "pinyin": "",
+        "meaning": "Quer (você)"
+      },
+      {
+        "id": 1,
+        "word": "subirte",
+        "pinyin": "",
+        "meaning": "subir (em você)"
+      },
+      {
+        "id": 3,
+        "word": "Shoot the Chute",
+        "pinyin": "",
+        "meaning": "Shoot the Chute (nome do brinquedo)"
+      }
+    ],
+    "id": "local-1772394630321-17",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Es un clásico paseo acuático.",
+    "pinyin": "",
+    "translation": "É um clássico passeio aquático.",
+    "tokens": [
+      "Es",
+      "un",
+      "clásico",
+      "paseo",
+      "acuático."
+    ],
+    "keywords": [
+      {
+        "id": 2,
+        "word": "clásico",
+        "pinyin": "",
+        "meaning": "clássico"
+      },
+      {
+        "id": 3,
+        "word": "paseo acuático",
+        "pinyin": "",
+        "meaning": "passeio aquático"
+      }
+    ],
+    "id": "local-1772394630321-18",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Ok!",
+    "pinyin": "",
+    "translation": "B: Ok!",
+    "tokens": [
+      "¡Ok!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok"
+      }
+    ],
+    "id": "local-1772394630321-19",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Ve y haz fila primero entonces.",
+    "pinyin": "",
+    "translation": "A: Vai e faz fila primeiro então.",
+    "tokens": [
+      "Ve",
+      "y",
+      "haz",
+      "fila",
+      "primero",
+      "entonces."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ve",
+        "pinyin": "",
+        "meaning": "Vá"
+      },
+      {
+        "id": 2,
+        "word": "haz fila",
+        "pinyin": "",
+        "meaning": "faça fila"
+      },
+      {
+        "id": 4,
+        "word": "primero",
+        "pinyin": "",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 5,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      }
+    ],
+    "id": "local-1772394630321-20",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "Yo iré a comprar ponchos de lluvia desechables.",
+    "pinyin": "",
+    "translation": "Eu vou comprar ponchos de chuva descartáveis.",
+    "tokens": [
+      "Yo",
+      "iré",
+      "a",
+      "comprar",
+      "ponchos",
+      "de",
+      "lluvia",
+      "desechables."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iré a comprar",
+        "pinyin": "",
+        "meaning": "irei comprar/vou comprar"
+      },
+      {
+        "id": 4,
+        "word": "ponchos de lluvia",
+        "pinyin": "",
+        "meaning": "capas de chuva"
+      },
+      {
+        "id": 7,
+        "word": "desechables",
+        "pinyin": "",
+        "meaning": "descartáveis"
+      }
+    ],
+    "id": "local-1772394630321-21",
+    "language": "Espanhol"
+  }
+]

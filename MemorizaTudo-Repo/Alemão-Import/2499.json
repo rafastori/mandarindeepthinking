@@ -1,0 +1,918 @@
+[
+  {
+    "chinese": "A: Happy Valley ist da!",
+    "pinyin": null,
+    "translation": "A: Happy Valley está aqui!",
+    "tokens": [
+      "A:",
+      "Happy",
+      "Valley",
+      "ist",
+      "da!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 2,
+        "word": "da",
+        "pinyin": null,
+        "meaning": "aqui/presente"
+      }
+    ],
+    "id": "local-1772394563861-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Juchhu! Warum sind hier so viele Leute?!",
+    "pinyin": null,
+    "translation": "B: Eba! Por que há tantas pessoas aqui?!",
+    "tokens": [
+      "B:",
+      "Juchhu!",
+      "Warum",
+      "sind",
+      "hier",
+      "so",
+      "viele",
+      "Leute?!"
+    ],
+    "keywords": [
+      {
+        "id": 3,
+        "word": "Juchhu",
+        "pinyin": null,
+        "meaning": "Eba!/Uhull!"
+      },
+      {
+        "id": 4,
+        "word": "Warum",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 5,
+        "word": "sind",
+        "pinyin": null,
+        "meaning": "são/estão (verbo 'sein')"
+      },
+      {
+        "id": 6,
+        "word": "hier",
+        "pinyin": null,
+        "meaning": "aqui"
+      },
+      {
+        "id": 7,
+        "word": "so",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 8,
+        "word": "viele",
+        "pinyin": null,
+        "meaning": "muitos/as"
+      },
+      {
+        "id": 9,
+        "word": "Leute",
+        "pinyin": null,
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772394563861-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Man muss sich für alles anstellen.",
+    "pinyin": null,
+    "translation": "É preciso se alinhar para tudo.",
+    "tokens": [
+      "Man",
+      "muss",
+      "sich",
+      "für",
+      "alles",
+      "anstellen."
+    ],
+    "keywords": [
+      {
+        "id": 10,
+        "word": "Man",
+        "pinyin": null,
+        "meaning": "A gente/Se (pronome impessoal)"
+      },
+      {
+        "id": 11,
+        "word": "muss",
+        "pinyin": null,
+        "meaning": "deve (verbo 'müssen')"
+      },
+      {
+        "id": 12,
+        "word": "sich anstellen",
+        "pinyin": null,
+        "meaning": "fazer fila/se alinhar"
+      },
+      {
+        "id": 13,
+        "word": "für",
+        "pinyin": null,
+        "meaning": "para"
+      },
+      {
+        "id": 14,
+        "word": "alles",
+        "pinyin": null,
+        "meaning": "tudo"
+      }
+    ],
+    "id": "local-1772394563861-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ein Tag reicht also nicht.",
+    "pinyin": null,
+    "translation": "A: Um dia não é suficiente, então.",
+    "tokens": [
+      "A:",
+      "Ein",
+      "Tag",
+      "reicht",
+      "also",
+      "nicht."
+    ],
+    "keywords": [
+      {
+        "id": 15,
+        "word": "Tag",
+        "pinyin": null,
+        "meaning": "dia"
+      },
+      {
+        "id": 16,
+        "word": "reicht",
+        "pinyin": null,
+        "meaning": "é suficiente (verbo 'reichen')"
+      },
+      {
+        "id": 17,
+        "word": "also",
+        "pinyin": null,
+        "meaning": "então/portanto"
+      },
+      {
+        "id": 18,
+        "word": "nicht",
+        "pinyin": null,
+        "meaning": "não"
+      }
+    ],
+    "id": "local-1772394563861-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Wäre es nicht besser, eine Jahreskarte zu holen?",
+    "pinyin": null,
+    "translation": "Não seria melhor pegar um passe anual?",
+    "tokens": [
+      "Wäre",
+      "es",
+      "nicht",
+      "besser,",
+      "eine",
+      "Jahreskarte",
+      "zu",
+      "holen?"
+    ],
+    "keywords": [
+      {
+        "id": 19,
+        "word": "Wäre",
+        "pinyin": null,
+        "meaning": "seria (verbo 'sein' no Konjunktiv II)"
+      },
+      {
+        "id": 20,
+        "word": "nicht",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 21,
+        "word": "besser",
+        "pinyin": null,
+        "meaning": "melhor"
+      },
+      {
+        "id": 22,
+        "word": "Jahreskarte",
+        "pinyin": null,
+        "meaning": "passe anual/cartão anual"
+      },
+      {
+        "id": 23,
+        "word": "holen",
+        "pinyin": null,
+        "meaning": "pegar/obter"
+      }
+    ],
+    "id": "local-1772394563861-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Lass uns später darüber nachdenken.",
+    "pinyin": null,
+    "translation": "B: Vamos pensar nisso mais tarde.",
+    "tokens": [
+      "B:",
+      "Lass",
+      "uns",
+      "später",
+      "darüber",
+      "nachdenken."
+    ],
+    "keywords": [
+      {
+        "id": 24,
+        "word": "Lass uns",
+        "pinyin": null,
+        "meaning": "vamos (imperativo de 'lassen')"
+      },
+      {
+        "id": 25,
+        "word": "später",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 26,
+        "word": "darüber",
+        "pinyin": null,
+        "meaning": "sobre isso"
+      },
+      {
+        "id": 27,
+        "word": "nachdenken",
+        "pinyin": null,
+        "meaning": "pensar sobre"
+      }
+    ],
+    "id": "local-1772394563861-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Zeig mir zuerst, was Spaß macht.",
+    "pinyin": null,
+    "translation": "Me mostre primeiro o que é divertido.",
+    "tokens": [
+      "Zeig",
+      "mir",
+      "zuerst,",
+      "was",
+      "Spaß",
+      "macht."
+    ],
+    "keywords": [
+      {
+        "id": 28,
+        "word": "Zeig mir",
+        "pinyin": null,
+        "meaning": "me mostre (imperativo de 'zeigen')"
+      },
+      {
+        "id": 29,
+        "word": "zuerst",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 30,
+        "word": "Spaß macht",
+        "pinyin": null,
+        "meaning": "diverte/faz divertido (verbo 'Spaß machen')"
+      }
+    ],
+    "id": "local-1772394563861-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Schau, das hohe Ding da vorne mit zwei Türmen, und die Leute darauf kreischen.",
+    "pinyin": null,
+    "translation": "A: Olha, aquela coisa alta ali na frente com duas torres, e as pessoas nela estão gritando.",
+    "tokens": [
+      "A:",
+      "Schau,",
+      "das",
+      "hohe",
+      "Ding",
+      "da",
+      "vorne",
+      "mit",
+      "zwei",
+      "Türmen,",
+      "und",
+      "die",
+      "Leute",
+      "darauf",
+      "kreischen."
+    ],
+    "keywords": [
+      {
+        "id": 31,
+        "word": "Schau",
+        "pinyin": null,
+        "meaning": "olhe (imperativo de 'schauen')"
+      },
+      {
+        "id": 32,
+        "word": "hohe",
+        "pinyin": null,
+        "meaning": "alto/a"
+      },
+      {
+        "id": 33,
+        "word": "Ding",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 34,
+        "word": "da vorne",
+        "pinyin": null,
+        "meaning": "ali na frente"
+      },
+      {
+        "id": 35,
+        "word": "Türmen",
+        "pinyin": null,
+        "meaning": "torres (plural de 'Turm')"
+      },
+      {
+        "id": 36,
+        "word": "Leute",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 37,
+        "word": "darauf",
+        "pinyin": null,
+        "meaning": "em cima disso/nelas"
+      },
+      {
+        "id": 38,
+        "word": "kreischen",
+        "pinyin": null,
+        "meaning": "gritar (em tom agudo/estridente)"
+      }
+    ],
+    "id": "local-1772394563861-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Oh, ich weiß.",
+    "pinyin": null,
+    "translation": "B: Oh, eu sei.",
+    "tokens": [
+      "B:",
+      "Oh,",
+      "ich",
+      "weiß."
+    ],
+    "keywords": [
+      {
+        "id": 39,
+        "word": "weiß",
+        "pinyin": null,
+        "meaning": "sei (verbo 'wissen')"
+      }
+    ],
+    "id": "local-1772394563861-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das sind die Twin Tower Heroes.",
+    "pinyin": null,
+    "translation": "Esses são os Twin Tower Heroes.",
+    "tokens": [
+      "Das",
+      "sind",
+      "die",
+      "Twin",
+      "Tower",
+      "Heroes."
+    ],
+    "keywords": [
+      {
+        "id": 40,
+        "word": "Twin Tower Heroes",
+        "pinyin": null,
+        "meaning": "Nome de uma atração"
+      }
+    ],
+    "id": "local-1772394563861-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Es ist zu aufregend.",
+    "pinyin": null,
+    "translation": "É muito emocionante.",
+    "tokens": [
+      "Es",
+      "ist",
+      "zu",
+      "aufregend."
+    ],
+    "keywords": [
+      {
+        "id": 41,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 42,
+        "word": "zu",
+        "pinyin": null,
+        "meaning": "muito (demais)"
+      },
+      {
+        "id": 43,
+        "word": "aufregend",
+        "pinyin": null,
+        "meaning": "emocionante/agitado"
+      }
+    ],
+    "id": "local-1772394563861-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich traue mich nicht darauf.",
+    "pinyin": null,
+    "translation": "Eu não me atrevo a ir nele.",
+    "tokens": [
+      "Ich",
+      "traue",
+      "mich",
+      "nicht",
+      "darauf."
+    ],
+    "keywords": [
+      {
+        "id": 44,
+        "word": "traue mich",
+        "pinyin": null,
+        "meaning": "me atrevo (verbo 'sich trauen')"
+      },
+      {
+        "id": 45,
+        "word": "nicht",
+        "pinyin": null,
+        "meaning": "não"
+      },
+      {
+        "id": 46,
+        "word": "darauf",
+        "pinyin": null,
+        "meaning": "nele/nisso"
+      }
+    ],
+    "id": "local-1772394563861-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das daneben, das hin und her schaukelt, ist eine verbesserte Version eines Piratenschiffs.",
+    "pinyin": null,
+    "translation": "A: Aquilo ao lado, que balança para lá e para cá, é uma versão melhorada de um navio pirata.",
+    "tokens": [
+      "A:",
+      "Das",
+      "daneben,",
+      "das",
+      "hin",
+      "und",
+      "her",
+      "schaukelt,",
+      "ist",
+      "eine",
+      "verbesserte",
+      "Version",
+      "eines",
+      "Piratenschiffs."
+    ],
+    "keywords": [
+      {
+        "id": 47,
+        "word": "daneben",
+        "pinyin": null,
+        "meaning": "ao lado"
+      },
+      {
+        "id": 48,
+        "word": "hin und her",
+        "pinyin": null,
+        "meaning": "para lá e para cá"
+      },
+      {
+        "id": 49,
+        "word": "schaukelt",
+        "pinyin": null,
+        "meaning": "balança (verbo 'schaukeln')"
+      },
+      {
+        "id": 50,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 51,
+        "word": "verbesserte",
+        "pinyin": null,
+        "meaning": "melhorada"
+      },
+      {
+        "id": 52,
+        "word": "Version",
+        "pinyin": null,
+        "meaning": "versão"
+      },
+      {
+        "id": 53,
+        "word": "Piratenschiffs",
+        "pinyin": null,
+        "meaning": "navio pirata (genitivo de 'Piratenschiff')"
+      }
+    ],
+    "id": "local-1772394563861-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das sieht auch so furchterregend aus!",
+    "pinyin": null,
+    "translation": "B: Aquilo também parece tão assustador!",
+    "tokens": [
+      "B:",
+      "Das",
+      "sieht",
+      "auch",
+      "so",
+      "furchterregend",
+      "aus!"
+    ],
+    "keywords": [
+      {
+        "id": 54,
+        "word": "sieht aus",
+        "pinyin": null,
+        "meaning": "parece (verbo 'aussehen')"
+      },
+      {
+        "id": 55,
+        "word": "auch",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 56,
+        "word": "so",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 57,
+        "word": "furchterregend",
+        "pinyin": null,
+        "meaning": "assustador/aterrorizante"
+      }
+    ],
+    "id": "local-1772394563861-13",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das große Ding neben dem See ist eine Holzachterbahn.",
+    "pinyin": null,
+    "translation": "A: Aquela coisa grande ao lado do lago é uma montanha-russa de madeira.",
+    "tokens": [
+      "A:",
+      "Das",
+      "große",
+      "Ding",
+      "neben",
+      "dem",
+      "See",
+      "ist",
+      "eine",
+      "Holzachterbahn."
+    ],
+    "keywords": [
+      {
+        "id": 58,
+        "word": "große",
+        "pinyin": null,
+        "meaning": "grande"
+      },
+      {
+        "id": 59,
+        "word": "Ding",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 60,
+        "word": "neben",
+        "pinyin": null,
+        "meaning": "ao lado de"
+      },
+      {
+        "id": 61,
+        "word": "See",
+        "pinyin": null,
+        "meaning": "lago"
+      },
+      {
+        "id": 62,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 63,
+        "word": "Holzachterbahn",
+        "pinyin": null,
+        "meaning": "montanha-russa de madeira"
+      }
+    ],
+    "id": "local-1772394563861-14",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Aber es sind zu viele Leute in der Schlange.",
+    "pinyin": null,
+    "translation": "B: Mas há muitas pessoas na fila.",
+    "tokens": [
+      "B:",
+      "Aber",
+      "es",
+      "sind",
+      "zu",
+      "viele",
+      "Leute",
+      "in",
+      "der",
+      "Schlange."
+    ],
+    "keywords": [
+      {
+        "id": 64,
+        "word": "Aber",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 65,
+        "word": "sind",
+        "pinyin": null,
+        "meaning": "são/estão"
+      },
+      {
+        "id": 66,
+        "word": "zu viele",
+        "pinyin": null,
+        "meaning": "muitos/as (demais)"
+      },
+      {
+        "id": 67,
+        "word": "Leute",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 68,
+        "word": "in der Schlange",
+        "pinyin": null,
+        "meaning": "na fila"
+      }
+    ],
+    "id": "local-1772394563861-15",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich schätze, es wären zwei Stunden Wartezeit.",
+    "pinyin": null,
+    "translation": "Eu estimo que seriam duas horas de espera.",
+    "tokens": [
+      "Ich",
+      "schätze,",
+      "es",
+      "wären",
+      "zwei",
+      "Stunden",
+      "Wartezeit."
+    ],
+    "keywords": [
+      {
+        "id": 69,
+        "word": "schätze",
+        "pinyin": null,
+        "meaning": "estimo/acho (verbo 'schätzen')"
+      },
+      {
+        "id": 70,
+        "word": "wären",
+        "pinyin": null,
+        "meaning": "seriam (verbo 'sein' no Konjunktiv II)"
+      },
+      {
+        "id": 71,
+        "word": "zwei",
+        "pinyin": null,
+        "meaning": "dois"
+      },
+      {
+        "id": 72,
+        "word": "Stunden",
+        "pinyin": null,
+        "meaning": "horas"
+      },
+      {
+        "id": 73,
+        "word": "Wartezeit",
+        "pinyin": null,
+        "meaning": "tempo de espera"
+      }
+    ],
+    "id": "local-1772394563861-16",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Möchtest du Shoot the Chute fahren?",
+    "pinyin": null,
+    "translation": "A: Você gostaria de ir no Shoot the Chute?",
+    "tokens": [
+      "A:",
+      "Möchtest",
+      "du",
+      "Shoot",
+      "the",
+      "Chute",
+      "fahren?"
+    ],
+    "keywords": [
+      {
+        "id": 74,
+        "word": "Möchtest du",
+        "pinyin": null,
+        "meaning": "você gostaria (verbo 'möchten')"
+      },
+      {
+        "id": 75,
+        "word": "Shoot the Chute",
+        "pinyin": null,
+        "meaning": "Nome da atração (mantido)"
+      },
+      {
+        "id": 76,
+        "word": "fahren",
+        "pinyin": null,
+        "meaning": "ir/andar (em veículo/atração)"
+      }
+    ],
+    "id": "local-1772394563861-17",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Das ist eine klassische Wasserbahn.",
+    "pinyin": null,
+    "translation": "Essa é uma clássica montanha-russa aquática.",
+    "tokens": [
+      "Das",
+      "ist",
+      "eine",
+      "klassische",
+      "Wasserbahn."
+    ],
+    "keywords": [
+      {
+        "id": 77,
+        "word": "ist",
+        "pinyin": null,
+        "meaning": "é/está"
+      },
+      {
+        "id": 78,
+        "word": "klassische",
+        "pinyin": null,
+        "meaning": "clássica"
+      },
+      {
+        "id": 79,
+        "word": "Wasserbahn",
+        "pinyin": null,
+        "meaning": "montanha-russa aquática/atração aquática"
+      }
+    ],
+    "id": "local-1772394563861-18",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay!",
+    "pinyin": null,
+    "translation": "B: Ok!",
+    "tokens": [
+      "B:",
+      "Okay!"
+    ],
+    "keywords": [
+      {
+        "id": 80,
+        "word": "Okay",
+        "pinyin": null,
+        "meaning": "Ok/Certo"
+      }
+    ],
+    "id": "local-1772394563861-19",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann stell du dich zuerst an.",
+    "pinyin": null,
+    "translation": "A: Então, você faça fila primeiro.",
+    "tokens": [
+      "A:",
+      "Dann",
+      "stell",
+      "du",
+      "dich",
+      "zuerst",
+      "an."
+    ],
+    "keywords": [
+      {
+        "id": 81,
+        "word": "Dann",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 82,
+        "word": "stell dich an",
+        "pinyin": null,
+        "meaning": "faça fila/se alinhe (imperativo de 'sich anstellen')"
+      },
+      {
+        "id": 83,
+        "word": "zuerst",
+        "pinyin": null,
+        "meaning": "primeiro"
+      }
+    ],
+    "id": "local-1772394563861-20",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "Ich gehe Einweg-Regenponchos kaufen.",
+    "pinyin": null,
+    "translation": "Eu vou comprar ponchos de chuva descartáveis.",
+    "tokens": [
+      "Ich",
+      "gehe",
+      "Einweg-Regenponchos",
+      "kaufen."
+    ],
+    "keywords": [
+      {
+        "id": 84,
+        "word": "Ich gehe...kaufen",
+        "pinyin": null,
+        "meaning": "Eu vou...comprar"
+      },
+      {
+        "id": 85,
+        "word": "Einweg",
+        "pinyin": null,
+        "meaning": "descartável"
+      },
+      {
+        "id": 86,
+        "word": "Regenponchos",
+        "pinyin": null,
+        "meaning": "ponchos de chuva"
+      },
+      {
+        "id": 87,
+        "word": "kaufen",
+        "pinyin": null,
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1772394563861-21",
+    "language": "Alemão"
+  }
+]

@@ -1,0 +1,806 @@
+[
+  {
+    "chinese": "A: 해피 밸리에 도착했어요!",
+    "pinyin": null,
+    "translation": "A: Chegamos ao Happy Valley!",
+    "tokens": [
+      "해피",
+      "밸리",
+      "에",
+      "도착했어요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "해피 밸리",
+        "pinyin": null,
+        "meaning": "Happy Valley (nome do parque)"
+      },
+      {
+        "id": 2,
+        "word": "도착하다",
+        "pinyin": null,
+        "meaning": "chegar"
+      }
+    ],
+    "id": "local-1772394762181-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 와아! 사람이 왜 이렇게 많아요?!",
+    "pinyin": null,
+    "translation": "B: Uau! Por que tem tanta gente?!",
+    "tokens": [
+      "와아",
+      "사람",
+      "이",
+      "왜",
+      "이렇게",
+      "많아요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사람",
+        "pinyin": null,
+        "meaning": "pessoa"
+      },
+      {
+        "id": 2,
+        "word": "왜",
+        "pinyin": null,
+        "meaning": "porquê"
+      },
+      {
+        "id": 3,
+        "word": "이렇게",
+        "pinyin": null,
+        "meaning": "assim, deste jeito"
+      },
+      {
+        "id": 4,
+        "word": "많다",
+        "pinyin": null,
+        "meaning": "ser muito"
+      }
+    ],
+    "id": "local-1772394762181-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "모든 걸 줄 서야 하잖아요.",
+    "pinyin": null,
+    "translation": "Temos que fazer fila para tudo, sabe.",
+    "tokens": [
+      "모든",
+      "걸",
+      "줄",
+      "서야",
+      "하잖아요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "모든",
+        "pinyin": null,
+        "meaning": "todo, cada"
+      },
+      {
+        "id": 2,
+        "word": "것",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 3,
+        "word": "줄 서다",
+        "pinyin": null,
+        "meaning": "fazer fila, enfileirar"
+      }
+    ],
+    "id": "local-1772394762181-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 하루로는 부족하겠네요.",
+    "pinyin": null,
+    "translation": "A: Então um dia não será suficiente.",
+    "tokens": [
+      "그럼",
+      "하루",
+      "로",
+      "는",
+      "부족하겠네요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "하루",
+        "pinyin": null,
+        "meaning": "um dia"
+      },
+      {
+        "id": 3,
+        "word": "부족하다",
+        "pinyin": null,
+        "meaning": "ser insuficiente, faltar"
+      }
+    ],
+    "id": "local-1772394762181-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "연간 이용권 사는 게 더 낫지 않을까요?",
+    "pinyin": null,
+    "translation": "Não seria melhor comprar um passe anual?",
+    "tokens": [
+      "연간",
+      "이용권",
+      "사는",
+      "게",
+      "더",
+      "낫지",
+      "않을까요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "연간",
+        "pinyin": null,
+        "meaning": "anual"
+      },
+      {
+        "id": 2,
+        "word": "이용권",
+        "pinyin": null,
+        "meaning": "passe, bilhete de uso"
+      },
+      {
+        "id": 3,
+        "word": "사다",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "더",
+        "pinyin": null,
+        "meaning": "mais"
+      },
+      {
+        "id": 5,
+        "word": "낫다",
+        "pinyin": null,
+        "meaning": "ser melhor"
+      }
+    ],
+    "id": "local-1772394762181-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 나중에 생각하고, 일단 뭐가 재밌는지 보여줘요.",
+    "pinyin": null,
+    "translation": "B: Pensemos nisso mais tarde, primeiro me mostre o que é divertido.",
+    "tokens": [
+      "그건",
+      "나중에",
+      "생각하고",
+      "일단",
+      "뭐가",
+      "재밌는지",
+      "보여줘요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그것",
+        "pinyin": null,
+        "meaning": "aquilo"
+      },
+      {
+        "id": 2,
+        "word": "나중에",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 3,
+        "word": "생각하다",
+        "pinyin": null,
+        "meaning": "pensar"
+      },
+      {
+        "id": 4,
+        "word": "일단",
+        "pinyin": null,
+        "meaning": "primeiro, por enquanto"
+      },
+      {
+        "id": 5,
+        "word": "뭐",
+        "pinyin": null,
+        "meaning": "o que"
+      },
+      {
+        "id": 6,
+        "word": "재밌다",
+        "pinyin": null,
+        "meaning": "ser divertido, interessante"
+      },
+      {
+        "id": 7,
+        "word": "보여주다",
+        "pinyin": null,
+        "meaning": "mostrar"
+      }
+    ],
+    "id": "local-1772394762181-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 저기 앞에 높은 거, 탑 두 개 있고 사람들이 비명 지르는 거 봐요.",
+    "pinyin": null,
+    "translation": "A: Olhe lá na frente, aquela coisa alta, com duas torres e as pessoas gritando.",
+    "tokens": [
+      "저기",
+      "앞에",
+      "높은",
+      "거",
+      "탑",
+      "두",
+      "개",
+      "있고",
+      "사람들",
+      "이",
+      "비명",
+      "지르는",
+      "거",
+      "봐요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저기",
+        "pinyin": null,
+        "meaning": "lá, ali"
+      },
+      {
+        "id": 2,
+        "word": "앞에",
+        "pinyin": null,
+        "meaning": "na frente"
+      },
+      {
+        "id": 3,
+        "word": "높다",
+        "pinyin": null,
+        "meaning": "ser alto"
+      },
+      {
+        "id": 4,
+        "word": "것",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 5,
+        "word": "탑",
+        "pinyin": null,
+        "meaning": "torre"
+      },
+      {
+        "id": 6,
+        "word": "두 개",
+        "pinyin": null,
+        "meaning": "duas unidades"
+      },
+      {
+        "id": 7,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "haver, existir"
+      },
+      {
+        "id": 8,
+        "word": "사람들",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 9,
+        "word": "비명 지르다",
+        "pinyin": null,
+        "meaning": "gritar, berrar"
+      },
+      {
+        "id": 10,
+        "word": "보다",
+        "pinyin": null,
+        "meaning": "ver, olhar"
+      }
+    ],
+    "id": "local-1772394762181-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 알아요.",
+    "pinyin": null,
+    "translation": "B: Ah, sei.",
+    "tokens": [
+      "아",
+      "알아요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "알다",
+        "pinyin": null,
+        "meaning": "saber, conhecer"
+      }
+    ],
+    "id": "local-1772394762181-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "트윈 타워 히어로즈! 너무 짜릿해서 감히 못 타겠어요.",
+    "pinyin": null,
+    "translation": "Twin Tower Heroes! É tão emocionante que não ouso ir.",
+    "tokens": [
+      "트윈",
+      "타워",
+      "히어로즈",
+      "너무",
+      "짜릿해서",
+      "감히",
+      "못",
+      "타겠어요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "트윈 타워 히어로즈",
+        "pinyin": null,
+        "meaning": "Twin Tower Heroes (nome de atração)"
+      },
+      {
+        "id": 2,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 3,
+        "word": "짜릿하다",
+        "pinyin": null,
+        "meaning": "ser emocionante, arrepiante"
+      },
+      {
+        "id": 4,
+        "word": "감히",
+        "pinyin": null,
+        "meaning": "ousadamente, ter a audácia de"
+      },
+      {
+        "id": 5,
+        "word": "타다",
+        "pinyin": null,
+        "meaning": "montar, pegar (um transporte/atração)"
+      }
+    ],
+    "id": "local-1772394762181-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그 옆에 왔다 갔다 흔들리는 건 업그레이드된 해적선이에요.",
+    "pinyin": null,
+    "translation": "A: Aquilo que balança para frente e para trás ao lado é o navio pirata atualizado.",
+    "tokens": [
+      "그",
+      "옆에",
+      "왔다",
+      "갔다",
+      "흔들리는",
+      "건",
+      "업그레이드된",
+      "해적선",
+      "이에요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그",
+        "pinyin": null,
+        "meaning": "aquele"
+      },
+      {
+        "id": 2,
+        "word": "옆에",
+        "pinyin": null,
+        "meaning": "ao lado"
+      },
+      {
+        "id": 3,
+        "word": "왔다 갔다 하다",
+        "pinyin": null,
+        "meaning": "ir e vir, balançar"
+      },
+      {
+        "id": 4,
+        "word": "흔들리다",
+        "pinyin": null,
+        "meaning": "balançar, tremer"
+      },
+      {
+        "id": 5,
+        "word": "것",
+        "pinyin": null,
+        "meaning": "coisa"
+      },
+      {
+        "id": 6,
+        "word": "업그레이드되다",
+        "pinyin": null,
+        "meaning": "ser atualizado, ter um upgrade"
+      },
+      {
+        "id": 7,
+        "word": "해적선",
+        "pinyin": null,
+        "meaning": "navio pirata"
+      }
+    ],
+    "id": "local-1772394762181-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그것도 너무 무서워 보여요!",
+    "pinyin": null,
+    "translation": "B: Aquilo também parece muito assustador!",
+    "tokens": [
+      "그것",
+      "도",
+      "너무",
+      "무서워",
+      "보여요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그것",
+        "pinyin": null,
+        "meaning": "aquilo"
+      },
+      {
+        "id": 2,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 3,
+        "word": "무섭다",
+        "pinyin": null,
+        "meaning": "ser assustador, ter medo"
+      },
+      {
+        "id": 4,
+        "word": "보이다",
+        "pinyin": null,
+        "meaning": "parecer, ser visto"
+      }
+    ],
+    "id": "local-1772394762181-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 호수 옆에 있는 대규모 목재 롤러코스터도 있어요.",
+    "pinyin": null,
+    "translation": "A: Também tem uma montanha-russa de madeira em grande escala ao lado do lago.",
+    "tokens": [
+      "호수",
+      "옆에",
+      "있는",
+      "대규모",
+      "목재",
+      "롤러코스터",
+      "도",
+      "있어요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "호수",
+        "pinyin": null,
+        "meaning": "lago"
+      },
+      {
+        "id": 2,
+        "word": "옆에",
+        "pinyin": null,
+        "meaning": "ao lado"
+      },
+      {
+        "id": 3,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "haver, existir"
+      },
+      {
+        "id": 4,
+        "word": "대규모",
+        "pinyin": null,
+        "meaning": "grande escala"
+      },
+      {
+        "id": 5,
+        "word": "목재",
+        "pinyin": null,
+        "meaning": "madeira, de madeira"
+      },
+      {
+        "id": 6,
+        "word": "롤러코스터",
+        "pinyin": null,
+        "meaning": "montanha-russa"
+      }
+    ],
+    "id": "local-1772394762181-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그런데 줄이 너무 길어요.",
+    "pinyin": null,
+    "translation": "B: Mas a fila é muito longa.",
+    "tokens": [
+      "그런데",
+      "줄",
+      "이",
+      "너무",
+      "길어요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그런데",
+        "pinyin": null,
+        "meaning": "mas, porém"
+      },
+      {
+        "id": 2,
+        "word": "줄",
+        "pinyin": null,
+        "meaning": "fila"
+      },
+      {
+        "id": 3,
+        "word": "너무",
+        "pinyin": null,
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 4,
+        "word": "길다",
+        "pinyin": null,
+        "meaning": "ser longo"
+      }
+    ],
+    "id": "local-1772394762181-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "한 두 시간은 줄 서야 할 것 같아요.",
+    "pinyin": null,
+    "translation": "Acho que teremos que esperar na fila por uma ou duas horas.",
+    "tokens": [
+      "한",
+      "두",
+      "시간",
+      "은",
+      "줄",
+      "서야",
+      "할",
+      "것",
+      "같아요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "한 두 시간",
+        "pinyin": null,
+        "meaning": "uma ou duas horas"
+      },
+      {
+        "id": 2,
+        "word": "줄 서다",
+        "pinyin": null,
+        "meaning": "fazer fila, enfileirar"
+      },
+      {
+        "id": 3,
+        "word": "같다",
+        "pinyin": null,
+        "meaning": "parecer, ser como"
+      }
+    ],
+    "id": "local-1772394762181-13",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 슈트 더 슛 타러 갈래요?",
+    "pinyin": null,
+    "translation": "A: Quer ir no Shoot the Chute?",
+    "tokens": [
+      "슈트",
+      "더",
+      "슛",
+      "타러",
+      "갈래요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "슈트 더 슛",
+        "pinyin": null,
+        "meaning": "Shoot the Chute (nome de atração)"
+      },
+      {
+        "id": 2,
+        "word": "타러 가다",
+        "pinyin": null,
+        "meaning": "ir para montar/pegar (um brinquedo)"
+      }
+    ],
+    "id": "local-1772394762181-14",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "고전적인 물놀이 기구예요.",
+    "pinyin": null,
+    "translation": "É um brinquedo aquático clássico.",
+    "tokens": [
+      "고전적인",
+      "물놀이",
+      "기구",
+      "예요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "고전적이다",
+        "pinyin": null,
+        "meaning": "ser clássico"
+      },
+      {
+        "id": 2,
+        "word": "물놀이",
+        "pinyin": null,
+        "meaning": "brincadeira na água, esporte aquático"
+      },
+      {
+        "id": 3,
+        "word": "기구",
+        "pinyin": null,
+        "meaning": "aparelho, equipamento, atração"
+      }
+    ],
+    "id": "local-1772394762181-15",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋아요!",
+    "pinyin": null,
+    "translation": "B: Ótimo!",
+    "tokens": [
+      "좋아요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋다",
+        "pinyin": null,
+        "meaning": "ser bom, gostar"
+      }
+    ],
+    "id": "local-1772394762181-16",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 먼저 가서 줄 서 있어요.",
+    "pinyin": null,
+    "translation": "A: Então vá na frente e espere na fila.",
+    "tokens": [
+      "그럼",
+      "먼저",
+      "가서",
+      "줄",
+      "서",
+      "있어요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": null,
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "먼저",
+        "pinyin": null,
+        "meaning": "primeiro, antes"
+      },
+      {
+        "id": 3,
+        "word": "가다",
+        "pinyin": null,
+        "meaning": "ir"
+      },
+      {
+        "id": 4,
+        "word": "줄 서다",
+        "pinyin": null,
+        "meaning": "fazer fila, enfileirar"
+      },
+      {
+        "id": 5,
+        "word": "있다",
+        "pinyin": null,
+        "meaning": "estar"
+      }
+    ],
+    "id": "local-1772394762181-17",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "저는 일회용 우비 사 올게요.",
+    "pinyin": null,
+    "translation": "Eu vou comprar capas de chuva descartáveis e voltar.",
+    "tokens": [
+      "저는",
+      "일회용",
+      "우비",
+      "사",
+      "올게요"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저",
+        "pinyin": null,
+        "meaning": "eu (formal)"
+      },
+      {
+        "id": 2,
+        "word": "일회용",
+        "pinyin": null,
+        "meaning": "descartável, de uso único"
+      },
+      {
+        "id": 3,
+        "word": "우비",
+        "pinyin": null,
+        "meaning": "capa de chuva"
+      },
+      {
+        "id": 4,
+        "word": "사다",
+        "pinyin": null,
+        "meaning": "comprar"
+      },
+      {
+        "id": 5,
+        "word": "오다",
+        "pinyin": null,
+        "meaning": "vir"
+      }
+    ],
+    "id": "local-1772394762181-18",
+    "language": "Coreano"
+  }
+]

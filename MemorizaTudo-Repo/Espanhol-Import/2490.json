@@ -1,0 +1,800 @@
+[
+  {
+    "chinese": "A: Zhen Zhen, ¿ya consultaste tu nota del examen de ingreso a la universidad?",
+    "pinyin": null,
+    "translation": "A: Zhen Zhen, você já consultou sua nota do exame de admissão à universidade?",
+    "tokens": [
+      "A",
+      ":",
+      "Zhen",
+      "Zhen",
+      ",",
+      "¿",
+      "ya",
+      "consultaste",
+      "tu",
+      "nota",
+      "del",
+      "examen",
+      "de",
+      "ingreso",
+      "a",
+      "la",
+      "universidad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ya",
+        "pinyin": null,
+        "meaning": "já"
+      },
+      {
+        "id": 2,
+        "word": "consultaste",
+        "pinyin": null,
+        "meaning": "você consultou"
+      },
+      {
+        "id": 3,
+        "word": "nota",
+        "pinyin": null,
+        "meaning": "nota"
+      },
+      {
+        "id": 4,
+        "word": "examen",
+        "pinyin": null,
+        "meaning": "exame"
+      },
+      {
+        "id": 5,
+        "word": "ingreso",
+        "pinyin": null,
+        "meaning": "ingresso, admissão"
+      },
+      {
+        "id": 6,
+        "word": "universidad",
+        "pinyin": null,
+        "meaning": "universidade"
+      }
+    ],
+    "id": "local-1772393905817-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Sí. Es 452. ¿Y tú?",
+    "pinyin": null,
+    "translation": "B: Sim. É 452. E você?",
+    "tokens": [
+      "B",
+      ":",
+      "Sí",
+      ".",
+      "Es",
+      "452",
+      ".",
+      "¿",
+      "Y",
+      "tú",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": null,
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "Es",
+        "pinyin": null,
+        "meaning": "É (do verbo ser)"
+      },
+      {
+        "id": 3,
+        "word": "Y",
+        "pinyin": null,
+        "meaning": "E"
+      },
+      {
+        "id": 4,
+        "word": "tú",
+        "pinyin": null,
+        "meaning": "você"
+      }
+    ],
+    "id": "local-1772393905817-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Vaya, es muy alta. Yo solo saqué 417.",
+    "pinyin": null,
+    "translation": "A: Uau, é muito alta. Eu só tirei 417.",
+    "tokens": [
+      "A",
+      ":",
+      "Vaya",
+      ",",
+      "es",
+      "muy",
+      "alta",
+      ".",
+      "Yo",
+      "solo",
+      "saqué",
+      "417",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vaya",
+        "pinyin": null,
+        "meaning": "Uau / Puxa"
+      },
+      {
+        "id": 2,
+        "word": "muy",
+        "pinyin": null,
+        "meaning": "muito"
+      },
+      {
+        "id": 3,
+        "word": "alta",
+        "pinyin": null,
+        "meaning": "alta"
+      },
+      {
+        "id": 4,
+        "word": "solo",
+        "pinyin": null,
+        "meaning": "só / apenas"
+      },
+      {
+        "id": 5,
+        "word": "saqué",
+        "pinyin": null,
+        "meaning": "eu tirei / obtive"
+      }
+    ],
+    "id": "local-1772393905817-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces estamos más o menos igual. La nota mínima de aprobación para artes es generalmente más alta que para ciencias.",
+    "pinyin": null,
+    "translation": "B: Então estamos mais ou menos iguais. A nota mínima de aprovação para artes é geralmente mais alta do que para ciências.",
+    "tokens": [
+      "B",
+      ":",
+      "Entonces",
+      "estamos",
+      "más",
+      "o",
+      "menos",
+      "igual",
+      ".",
+      "La",
+      "nota",
+      "mínima",
+      "de",
+      "aprobación",
+      "para",
+      "artes",
+      "es",
+      "generalmente",
+      "más",
+      "alta",
+      "que",
+      "para",
+      "ciencias",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "estamos",
+        "pinyin": null,
+        "meaning": "estamos (do verbo estar)"
+      },
+      {
+        "id": 3,
+        "word": "más o menos",
+        "pinyin": null,
+        "meaning": "mais ou menos"
+      },
+      {
+        "id": 4,
+        "word": "igual",
+        "pinyin": null,
+        "meaning": "igual"
+      },
+      {
+        "id": 5,
+        "word": "mínima",
+        "pinyin": null,
+        "meaning": "mínima"
+      },
+      {
+        "id": 6,
+        "word": "aprobación",
+        "pinyin": null,
+        "meaning": "aprovação"
+      },
+      {
+        "id": 7,
+        "word": "artes",
+        "pinyin": null,
+        "meaning": "artes"
+      },
+      {
+        "id": 8,
+        "word": "generalmente",
+        "pinyin": null,
+        "meaning": "geralmente"
+      },
+      {
+        "id": 9,
+        "word": "ciencias",
+        "pinyin": null,
+        "meaning": "ciências"
+      }
+    ],
+    "id": "local-1772393905817-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Quizás todavía podamos ir a la misma universidad. ¿A qué escuela quieres postularte?",
+    "pinyin": null,
+    "translation": "A: Talvez ainda possamos ir para a mesma universidade. Para qual escola você quer se candidatar?",
+    "tokens": [
+      "A",
+      ":",
+      "Quizás",
+      "todavía",
+      "podamos",
+      "ir",
+      "a",
+      "la",
+      "misma",
+      "universidad",
+      ".",
+      "¿",
+      "A",
+      "qué",
+      "escuela",
+      "quieres",
+      "postularte",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quizás",
+        "pinyin": null,
+        "meaning": "Talvez"
+      },
+      {
+        "id": 2,
+        "word": "todavía",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "podamos",
+        "pinyin": null,
+        "meaning": "possamos (subjuntivo de poder)"
+      },
+      {
+        "id": 4,
+        "word": "misma",
+        "pinyin": null,
+        "meaning": "mesma"
+      },
+      {
+        "id": 5,
+        "word": "escuela",
+        "pinyin": null,
+        "meaning": "escola"
+      },
+      {
+        "id": 6,
+        "word": "quieres",
+        "pinyin": null,
+        "meaning": "você quer (do verbo querer)"
+      },
+      {
+        "id": 7,
+        "word": "postularte",
+        "pinyin": null,
+        "meaning": "candidatar-se"
+      }
+    ],
+    "id": "local-1772393905817-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Aún no lo he decidido. ¿Has pensado en alguna?",
+    "pinyin": null,
+    "translation": "B: Ainda não decidi. Você pensou em alguma?",
+    "tokens": [
+      "B",
+      ":",
+      "Aún",
+      "no",
+      "lo",
+      "he",
+      "decidido",
+      ".",
+      "¿",
+      "Has",
+      "pensado",
+      "en",
+      "alguna",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aún",
+        "pinyin": null,
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "decidido",
+        "pinyin": null,
+        "meaning": "decidido"
+      },
+      {
+        "id": 3,
+        "word": "Has pensado",
+        "pinyin": null,
+        "meaning": "você pensou"
+      },
+      {
+        "id": 4,
+        "word": "alguna",
+        "pinyin": null,
+        "meaning": "alguma"
+      }
+    ],
+    "id": "local-1772393905817-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No, yo tampoco. ¿Qué carrera quieres estudiar?",
+    "pinyin": null,
+    "translation": "A: Não, eu também não. Que curso você quer estudar?",
+    "tokens": [
+      "A",
+      ":",
+      "No",
+      ",",
+      "yo",
+      "tampoco",
+      ".",
+      "¿",
+      "Qué",
+      "carrera",
+      "quieres",
+      "estudiar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tampoco",
+        "pinyin": null,
+        "meaning": "também não"
+      },
+      {
+        "id": 2,
+        "word": "carrera",
+        "pinyin": null,
+        "meaning": "curso / carreira"
+      },
+      {
+        "id": 3,
+        "word": "estudiar",
+        "pinyin": null,
+        "meaning": "estudar"
+      }
+    ],
+    "id": "local-1772393905817-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Quiero postularme al departamento de lengua china, pero mi papá y mi mamá quieren que estudie contabilidad.",
+    "pinyin": null,
+    "translation": "B: Quero me candidatar ao departamento de língua chinesa, mas meu pai e minha mãe querem que eu estude contabilidade.",
+    "tokens": [
+      "B",
+      ":",
+      "Quiero",
+      "postularme",
+      "al",
+      "departamento",
+      "de",
+      "lengua",
+      "china",
+      ",",
+      "pero",
+      "mi",
+      "papá",
+      "y",
+      "mi",
+      "mamá",
+      "quieren",
+      "que",
+      "estudie",
+      "contabilidad",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quiero",
+        "pinyin": null,
+        "meaning": "Eu quero (do verbo querer)"
+      },
+      {
+        "id": 2,
+        "word": "postularme",
+        "pinyin": null,
+        "meaning": "candidatar-me"
+      },
+      {
+        "id": 3,
+        "word": "departamento",
+        "pinyin": null,
+        "meaning": "departamento"
+      },
+      {
+        "id": 4,
+        "word": "lengua china",
+        "pinyin": null,
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 5,
+        "word": "pero",
+        "pinyin": null,
+        "meaning": "mas"
+      },
+      {
+        "id": 6,
+        "word": "papá",
+        "pinyin": null,
+        "meaning": "pai"
+      },
+      {
+        "id": 7,
+        "word": "mamá",
+        "pinyin": null,
+        "meaning": "mãe"
+      },
+      {
+        "id": 8,
+        "word": "quieren",
+        "pinyin": null,
+        "meaning": "eles querem (do verbo querer)"
+      },
+      {
+        "id": 9,
+        "word": "estudie",
+        "pinyin": null,
+        "meaning": "eu estude (subjuntivo de estudiar)"
+      },
+      {
+        "id": 10,
+        "word": "contabilidad",
+        "pinyin": null,
+        "meaning": "contabilidade"
+      }
+    ],
+    "id": "local-1772393905817-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: He oído que la lengua china es la peor carrera para encontrar empleo.",
+    "pinyin": null,
+    "translation": "A: Ouvi dizer que a língua chinesa é o pior curso para encontrar emprego.",
+    "tokens": [
+      "A",
+      ":",
+      "He",
+      "oído",
+      "que",
+      "la",
+      "lengua",
+      "china",
+      "es",
+      "la",
+      "peor",
+      "carrera",
+      "para",
+      "encontrar",
+      "empleo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "He oído",
+        "pinyin": null,
+        "meaning": "Eu ouvi"
+      },
+      {
+        "id": 2,
+        "word": "peor",
+        "pinyin": null,
+        "meaning": "pior"
+      },
+      {
+        "id": 3,
+        "word": "carrera",
+        "pinyin": null,
+        "meaning": "curso / carreira"
+      },
+      {
+        "id": 4,
+        "word": "encontrar",
+        "pinyin": null,
+        "meaning": "encontrar"
+      },
+      {
+        "id": 5,
+        "word": "empleo",
+        "pinyin": null,
+        "meaning": "emprego"
+      }
+    ],
+    "id": "local-1772393905817-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Pero me gusta la literatura y la contabilidad suena tan aburrida. ¿A qué carrera quieres postularte?",
+    "pinyin": null,
+    "translation": "B: Mas eu gosto de literatura e contabilidade soa tão chata. Para qual curso você quer se candidatar?",
+    "tokens": [
+      "B",
+      ":",
+      "Pero",
+      "me",
+      "gusta",
+      "la",
+      "literatura",
+      "y",
+      "la",
+      "contabilidad",
+      "suena",
+      "tan",
+      "aburrida",
+      ".",
+      "¿",
+      "A",
+      "qué",
+      "carrera",
+      "quieres",
+      "postularte",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gusta",
+        "pinyin": null,
+        "meaning": "gosta (do verbo gustar)"
+      },
+      {
+        "id": 2,
+        "word": "literatura",
+        "pinyin": null,
+        "meaning": "literatura"
+      },
+      {
+        "id": 3,
+        "word": "suena",
+        "pinyin": null,
+        "meaning": "soa (do verbo sonar)"
+      },
+      {
+        "id": 4,
+        "word": "tan",
+        "pinyin": null,
+        "meaning": "tão"
+      },
+      {
+        "id": 5,
+        "word": "aburrida",
+        "pinyin": null,
+        "meaning": "chata / entediante"
+      },
+      {
+        "id": 6,
+        "word": "carrera",
+        "pinyin": null,
+        "meaning": "curso / carreira"
+      },
+      {
+        "id": 7,
+        "word": "quieres",
+        "pinyin": null,
+        "meaning": "você quer (do verbo querer)"
+      },
+      {
+        "id": 8,
+        "word": "postularte",
+        "pinyin": null,
+        "meaning": "candidatar-se"
+      }
+    ],
+    "id": "local-1772393905817-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Quiero estudiar computadoras. Las perspectivas de empleo son bastante buenas.",
+    "pinyin": null,
+    "translation": "A: Quero estudar computação. As perspectivas de emprego são bastante boas.",
+    "tokens": [
+      "A",
+      ":",
+      "Quiero",
+      "estudiar",
+      "computadoras",
+      ".",
+      "Las",
+      "perspectivas",
+      "de",
+      "empleo",
+      "son",
+      "bastante",
+      "buenas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quiero",
+        "pinyin": null,
+        "meaning": "Eu quero (do verbo querer)"
+      },
+      {
+        "id": 2,
+        "word": "estudiar",
+        "pinyin": null,
+        "meaning": "estudar"
+      },
+      {
+        "id": 3,
+        "word": "computadoras",
+        "pinyin": null,
+        "meaning": "computação / computadores"
+      },
+      {
+        "id": 4,
+        "word": "perspectivas",
+        "pinyin": null,
+        "meaning": "perspectivas"
+      },
+      {
+        "id": 5,
+        "word": "empleo",
+        "pinyin": null,
+        "meaning": "emprego"
+      },
+      {
+        "id": 6,
+        "word": "bastante",
+        "pinyin": null,
+        "meaning": "bastante"
+      },
+      {
+        "id": 7,
+        "word": "buenas",
+        "pinyin": null,
+        "meaning": "boas"
+      }
+    ],
+    "id": "local-1772393905817-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Vaya. Entonces, si más tarde no encuentro trabajo, puedes invitarme a comer todos los días.",
+    "pinyin": null,
+    "translation": "B: Uau. Então, se mais tarde eu não encontrar trabalho, você pode me convidar para comer todos os dias.",
+    "tokens": [
+      "B",
+      ":",
+      "Vaya",
+      ".",
+      "Entonces",
+      ",",
+      "si",
+      "más",
+      "tarde",
+      "no",
+      "encuentro",
+      "trabajo",
+      ",",
+      "puedes",
+      "invitarme",
+      "a",
+      "comer",
+      "todos",
+      "los",
+      "días",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vaya",
+        "pinyin": null,
+        "meaning": "Uau / Puxa"
+      },
+      {
+        "id": 2,
+        "word": "Entonces",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "más tarde",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 4,
+        "word": "encuentro",
+        "pinyin": null,
+        "meaning": "eu encontro (do verbo encontrar)"
+      },
+      {
+        "id": 5,
+        "word": "trabajo",
+        "pinyin": null,
+        "meaning": "trabalho"
+      },
+      {
+        "id": 6,
+        "word": "puedes",
+        "pinyin": null,
+        "meaning": "você pode (do verbo poder)"
+      },
+      {
+        "id": 7,
+        "word": "invitarme",
+        "pinyin": null,
+        "meaning": "me convidar"
+      },
+      {
+        "id": 8,
+        "word": "comer",
+        "pinyin": null,
+        "meaning": "comer"
+      },
+      {
+        "id": 9,
+        "word": "todos los días",
+        "pinyin": null,
+        "meaning": "todos os dias"
+      }
+    ],
+    "id": "local-1772393905817-11",
+    "language": "Espanhol"
+  }
+]

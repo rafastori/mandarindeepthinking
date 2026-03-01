@@ -1,0 +1,1074 @@
+[
+  {
+    "chinese": "A: Ich bin erledigt! Ich muss um acht Uhr im Unterricht sein und ich habe tatsächlich verschlafen!",
+    "pinyin": "",
+    "translation": "A: Estou acabado! Eu tenho que estar na aula às oito horas e eu realmente dormi demais!",
+    "tokens": [
+      "Ich",
+      "bin",
+      "erledigt",
+      "!",
+      "Ich",
+      "muss",
+      "um",
+      "acht",
+      "Uhr",
+      "im",
+      "Unterricht",
+      "sein",
+      "und",
+      "ich",
+      "habe",
+      "tatsächlich",
+      "verschlafen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 2,
+        "word": "bin",
+        "pinyin": "",
+        "meaning": "sou, estou (de 'sein')"
+      },
+      {
+        "id": 3,
+        "word": "erledigt",
+        "pinyin": "",
+        "meaning": "acabado, esgotado, ferrado"
+      },
+      {
+        "id": 4,
+        "word": "muss",
+        "pinyin": "",
+        "meaning": "devo, tenho que (de 'müssen')"
+      },
+      {
+        "id": 5,
+        "word": "um",
+        "pinyin": "",
+        "meaning": "às (horas), por volta de"
+      },
+      {
+        "id": 6,
+        "word": "acht",
+        "pinyin": "",
+        "meaning": "oito"
+      },
+      {
+        "id": 7,
+        "word": "Uhr",
+        "pinyin": "",
+        "meaning": "hora"
+      },
+      {
+        "id": 8,
+        "word": "im",
+        "pinyin": "",
+        "meaning": "no, na (contração de 'in dem')"
+      },
+      {
+        "id": 9,
+        "word": "Unterricht",
+        "pinyin": "",
+        "meaning": "aula"
+      },
+      {
+        "id": 10,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "ser, estar"
+      },
+      {
+        "id": 11,
+        "word": "und",
+        "pinyin": "",
+        "meaning": "e"
+      },
+      {
+        "id": 12,
+        "word": "habe",
+        "pinyin": "",
+        "meaning": "tenho (de 'haben')"
+      },
+      {
+        "id": 13,
+        "word": "tatsächlich",
+        "pinyin": "",
+        "meaning": "realmente, de fato"
+      },
+      {
+        "id": 14,
+        "word": "verschlafen",
+        "pinyin": "",
+        "meaning": "dormir demais, perder a hora"
+      }
+    ],
+    "id": "local-1772394338651-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es ist erst halb acht. Wozu die Eile?",
+    "pinyin": "",
+    "translation": "B: É apenas sete e meia. Para que a pressa?",
+    "tokens": [
+      "Es",
+      "ist",
+      "erst",
+      "halb",
+      "acht",
+      ".",
+      "Wozu",
+      "die",
+      "Eile",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es",
+        "pinyin": "",
+        "meaning": "Isso (pronome neutro)"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é, está (de 'sein')"
+      },
+      {
+        "id": 3,
+        "word": "erst",
+        "pinyin": "",
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 4,
+        "word": "halb",
+        "pinyin": "",
+        "meaning": "meia (hora), metade"
+      },
+      {
+        "id": 5,
+        "word": "acht",
+        "pinyin": "",
+        "meaning": "oito"
+      },
+      {
+        "id": 6,
+        "word": "Wozu",
+        "pinyin": "",
+        "meaning": "Para que, com que propósito"
+      },
+      {
+        "id": 7,
+        "word": "die",
+        "pinyin": "",
+        "meaning": "a (artigo feminino)"
+      },
+      {
+        "id": 8,
+        "word": "Eile",
+        "pinyin": "",
+        "meaning": "pressa"
+      }
+    ],
+    "id": "local-1772394338651-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Beibei, hast du nicht auch Unterricht?",
+    "pinyin": "",
+    "translation": "A: Beibei, você não tem aula também?",
+    "tokens": [
+      "Beibei",
+      ",",
+      "hast",
+      "du",
+      "nicht",
+      "auch",
+      "Unterricht",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hast",
+        "pinyin": "",
+        "meaning": "tens, você tem (de 'haben')"
+      },
+      {
+        "id": 2,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "tu, você"
+      },
+      {
+        "id": 3,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 5,
+        "word": "Unterricht",
+        "pinyin": "",
+        "meaning": "aula"
+      }
+    ],
+    "id": "local-1772394338651-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Immer mit der Ruhe. Jedenfalls werden alle zu spät kommen.",
+    "pinyin": "",
+    "translation": "B: Calma. De qualquer forma, todos vão se atrasar.",
+    "tokens": [
+      "Immer",
+      "mit",
+      "der",
+      "Ruhe",
+      ".",
+      "Jedenfalls",
+      "werden",
+      "alle",
+      "zu",
+      "spät",
+      "kommen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Immer",
+        "pinyin": "",
+        "meaning": "Sempre"
+      },
+      {
+        "id": 2,
+        "word": "mit",
+        "pinyin": "",
+        "meaning": "com"
+      },
+      {
+        "id": 3,
+        "word": "der",
+        "pinyin": "",
+        "meaning": "da (preposição com artigo)"
+      },
+      {
+        "id": 4,
+        "word": "Ruhe",
+        "pinyin": "",
+        "meaning": "calma, tranquilidade"
+      },
+      {
+        "id": 5,
+        "word": "Jedenfalls",
+        "pinyin": "",
+        "meaning": "De qualquer forma, em todo caso"
+      },
+      {
+        "id": 6,
+        "word": "werden",
+        "pinyin": "",
+        "meaning": "vão (auxiliar de futuro para 'vir a ser')"
+      },
+      {
+        "id": 7,
+        "word": "alle",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 8,
+        "word": "zu",
+        "pinyin": "",
+        "meaning": "demasiado, muito"
+      },
+      {
+        "id": 9,
+        "word": "spät",
+        "pinyin": "",
+        "meaning": "tarde"
+      },
+      {
+        "id": 10,
+        "word": "kommen",
+        "pinyin": "",
+        "meaning": "vir, chegar"
+      }
+    ],
+    "id": "local-1772394338651-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Die anderen in unserer Klasse sind alle sehr pünktlich.",
+    "pinyin": "",
+    "translation": "A: Os outros na nossa turma são todos muito pontuais.",
+    "tokens": [
+      "Die",
+      "anderen",
+      "in",
+      "unserer",
+      "Klasse",
+      "sind",
+      "alle",
+      "sehr",
+      "pünktlich",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Die",
+        "pinyin": "",
+        "meaning": "Os (artigo plural)"
+      },
+      {
+        "id": 2,
+        "word": "anderen",
+        "pinyin": "",
+        "meaning": "os outros"
+      },
+      {
+        "id": 3,
+        "word": "in",
+        "pinyin": "",
+        "meaning": "em"
+      },
+      {
+        "id": 4,
+        "word": "unserer",
+        "pinyin": "",
+        "meaning": "nossa (genitivo/dativo feminino)"
+      },
+      {
+        "id": 5,
+        "word": "Klasse",
+        "pinyin": "",
+        "meaning": "turma, classe"
+      },
+      {
+        "id": 6,
+        "word": "sind",
+        "pinyin": "",
+        "meaning": "são, estão (de 'sein')"
+      },
+      {
+        "id": 7,
+        "word": "alle",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 8,
+        "word": "sehr",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 9,
+        "word": "pünktlich",
+        "pinyin": "",
+        "meaning": "pontual"
+      }
+    ],
+    "id": "local-1772394338651-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das liegt daran, dass ihr alle neue Erstsemester seid. Als ich ein Erstsemester war, war ich auch brav. Wenn du mir nicht glaubst, frag Xiaoyu.",
+    "pinyin": "",
+    "translation": "B: Isso é porque vocês são todos calouros novos. Quando eu era um calouro, eu também era comportado. Se você não acredita em mim, pergunte a Xiaoyu.",
+    "tokens": [
+      "Das",
+      "liegt",
+      "daran",
+      ",",
+      "dass",
+      "ihr",
+      "alle",
+      "neue",
+      "Erstsemester",
+      "seid",
+      ".",
+      "Als",
+      "ich",
+      "ein",
+      "Erstsemester",
+      "war",
+      ",",
+      "war",
+      "ich",
+      "auch",
+      "brav",
+      ".",
+      "Wenn",
+      "du",
+      "mir",
+      "nicht",
+      "glaubst",
+      ",",
+      "frag",
+      "Xiaoyu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das",
+        "pinyin": "",
+        "meaning": "Isso (artigo/pronome neutro)"
+      },
+      {
+        "id": 2,
+        "word": "liegt daran",
+        "pinyin": "",
+        "meaning": "isso se deve a, é por isso que"
+      },
+      {
+        "id": 3,
+        "word": "dass",
+        "pinyin": "",
+        "meaning": "que (conjunção)"
+      },
+      {
+        "id": 4,
+        "word": "ihr",
+        "pinyin": "",
+        "meaning": "vós, vocês"
+      },
+      {
+        "id": 5,
+        "word": "alle",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 6,
+        "word": "neue",
+        "pinyin": "",
+        "meaning": "novos"
+      },
+      {
+        "id": 7,
+        "word": "Erstsemester",
+        "pinyin": "",
+        "meaning": "calouro, primeiro semestre"
+      },
+      {
+        "id": 8,
+        "word": "seid",
+        "pinyin": "",
+        "meaning": "sois, estais (de 'sein')"
+      },
+      {
+        "id": 9,
+        "word": "Als",
+        "pinyin": "",
+        "meaning": "Quando (no passado), como"
+      },
+      {
+        "id": 10,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 11,
+        "word": "ein",
+        "pinyin": "",
+        "meaning": "um"
+      },
+      {
+        "id": 12,
+        "word": "war",
+        "pinyin": "",
+        "meaning": "era, estava (de 'sein')"
+      },
+      {
+        "id": 13,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 14,
+        "word": "brav",
+        "pinyin": "",
+        "meaning": "comportado, obediente"
+      },
+      {
+        "id": 15,
+        "word": "Wenn",
+        "pinyin": "",
+        "meaning": "Se (condicional), quando"
+      },
+      {
+        "id": 16,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "tu, você"
+      },
+      {
+        "id": 17,
+        "word": "mir",
+        "pinyin": "",
+        "meaning": "me (dativo)"
+      },
+      {
+        "id": 18,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 19,
+        "word": "glaubst",
+        "pinyin": "",
+        "meaning": "acreditas (de 'glauben')"
+      },
+      {
+        "id": 20,
+        "word": "frag",
+        "pinyin": "",
+        "meaning": "pergunta (imperativo de 'fragen')"
+      }
+    ],
+    "id": "local-1772394338651-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ach ja, heute Nachmittag muss ich eine Vorlesung besuchen.",
+    "pinyin": "",
+    "translation": "A: Ah sim, hoje à tarde tenho que assistir a uma palestra/aula.",
+    "tokens": [
+      "Ach",
+      "ja",
+      ",",
+      "heute",
+      "Nachmittag",
+      "muss",
+      "ich",
+      "eine",
+      "Vorlesung",
+      "besuchen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ach ja",
+        "pinyin": "",
+        "meaning": "Ah sim"
+      },
+      {
+        "id": 2,
+        "word": "heute",
+        "pinyin": "",
+        "meaning": "hoje"
+      },
+      {
+        "id": 3,
+        "word": "Nachmittag",
+        "pinyin": "",
+        "meaning": "tarde (parte do dia)"
+      },
+      {
+        "id": 4,
+        "word": "muss",
+        "pinyin": "",
+        "meaning": "devo, tenho que (de 'müssen')"
+      },
+      {
+        "id": 5,
+        "word": "ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 6,
+        "word": "eine",
+        "pinyin": "",
+        "meaning": "uma"
+      },
+      {
+        "id": 7,
+        "word": "Vorlesung",
+        "pinyin": "",
+        "meaning": "palestra, aula (universitária)"
+      },
+      {
+        "id": 8,
+        "word": "besuchen",
+        "pinyin": "",
+        "meaning": "visitar, frequentar, assistir"
+      }
+    ],
+    "id": "local-1772394338651-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Ist es die im Gebäude Nummer 3? Geh nicht hin.",
+    "pinyin": "",
+    "translation": "C: É a do prédio número 3? Não vá lá.",
+    "tokens": [
+      "Ist",
+      "es",
+      "die",
+      "im",
+      "Gebäude",
+      "Nummer",
+      "3",
+      "?",
+      "Geh",
+      "nicht",
+      "hin",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ist",
+        "pinyin": "",
+        "meaning": "é, está (de 'sein')"
+      },
+      {
+        "id": 2,
+        "word": "es",
+        "pinyin": "",
+        "meaning": "isso (pronome neutro)"
+      },
+      {
+        "id": 3,
+        "word": "die",
+        "pinyin": "",
+        "meaning": "a (artigo feminino)"
+      },
+      {
+        "id": 4,
+        "word": "im",
+        "pinyin": "",
+        "meaning": "no, na (contração de 'in dem')"
+      },
+      {
+        "id": 5,
+        "word": "Gebäude",
+        "pinyin": "",
+        "meaning": "edifício, prédio"
+      },
+      {
+        "id": 6,
+        "word": "Nummer",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 7,
+        "word": "Geh",
+        "pinyin": "",
+        "meaning": "Vá (imperativo de 'gehen')"
+      },
+      {
+        "id": 8,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 9,
+        "word": "hin",
+        "pinyin": "",
+        "meaning": "para lá"
+      }
+    ],
+    "id": "local-1772394338651-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich kann nicht. Der Lehrer sagte, es gibt eine Anwesenheitskontrolle.",
+    "pinyin": "",
+    "translation": "A: Eu não posso. O professor disse que há uma chamada/controle de presença.",
+    "tokens": [
+      "Ich",
+      "kann",
+      "nicht",
+      ".",
+      "Der",
+      "Lehrer",
+      "sagte",
+      ",",
+      "es",
+      "gibt",
+      "eine",
+      "Anwesenheitskontrolle",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 2,
+        "word": "kann",
+        "pinyin": "",
+        "meaning": "posso (de 'können')"
+      },
+      {
+        "id": 3,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "Der",
+        "pinyin": "",
+        "meaning": "O (artigo masculino)"
+      },
+      {
+        "id": 5,
+        "word": "Lehrer",
+        "pinyin": "",
+        "meaning": "professor"
+      },
+      {
+        "id": 6,
+        "word": "sagte",
+        "pinyin": "",
+        "meaning": "disse (de 'sagen')"
+      },
+      {
+        "id": 7,
+        "word": "es gibt",
+        "pinyin": "",
+        "meaning": "há, existe"
+      },
+      {
+        "id": 8,
+        "word": "eine",
+        "pinyin": "",
+        "meaning": "uma"
+      },
+      {
+        "id": 9,
+        "word": "Anwesenheitskontrolle",
+        "pinyin": "",
+        "meaning": "controle de presença, chamada"
+      }
+    ],
+    "id": "local-1772394338651-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Diese Anwesenheitskontrolle ist nur, um euch neue Studenten zu täuschen. Auch wenn du nicht hingehst, wird nichts passieren.",
+    "pinyin": "",
+    "translation": "B: Essa chamada é só para enganar vocês, novos estudantes. Mesmo que você não vá, nada vai acontecer.",
+    "tokens": [
+      "Diese",
+      "Anwesenheitskontrolle",
+      "ist",
+      "nur",
+      ",",
+      "um",
+      "euch",
+      "neue",
+      "Studenten",
+      "zu",
+      "täuschen",
+      ".",
+      "Auch",
+      "wenn",
+      "du",
+      "nicht",
+      "hingehst",
+      ",",
+      "wird",
+      "nichts",
+      "passieren",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Diese",
+        "pinyin": "",
+        "meaning": "Esta, essa (feminino/plural)"
+      },
+      {
+        "id": 2,
+        "word": "Anwesenheitskontrolle",
+        "pinyin": "",
+        "meaning": "controle de presença, chamada"
+      },
+      {
+        "id": 3,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é, está (de 'sein')"
+      },
+      {
+        "id": 4,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "só, somente"
+      },
+      {
+        "id": 5,
+        "word": "um ... zu",
+        "pinyin": "",
+        "meaning": "para (com a finalidade de)"
+      },
+      {
+        "id": 6,
+        "word": "euch",
+        "pinyin": "",
+        "meaning": "a vocês, vocês (dativo/acusativo)"
+      },
+      {
+        "id": 7,
+        "word": "neue",
+        "pinyin": "",
+        "meaning": "novos"
+      },
+      {
+        "id": 8,
+        "word": "Studenten",
+        "pinyin": "",
+        "meaning": "estudantes"
+      },
+      {
+        "id": 9,
+        "word": "täuschen",
+        "pinyin": "",
+        "meaning": "enganar"
+      },
+      {
+        "id": 10,
+        "word": "Auch wenn",
+        "pinyin": "",
+        "meaning": "Mesmo que"
+      },
+      {
+        "id": 11,
+        "word": "du",
+        "pinyin": "",
+        "meaning": "tu, você"
+      },
+      {
+        "id": 12,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 13,
+        "word": "hingehst",
+        "pinyin": "",
+        "meaning": "vais lá (de 'hingehen')"
+      },
+      {
+        "id": 14,
+        "word": "wird",
+        "pinyin": "",
+        "meaning": "será (auxiliar de futuro de 'werden')"
+      },
+      {
+        "id": 15,
+        "word": "nichts",
+        "pinyin": "",
+        "meaning": "nada"
+      },
+      {
+        "id": 16,
+        "word": "passieren",
+        "pinyin": "",
+        "meaning": "acontecer"
+      }
+    ],
+    "id": "local-1772394338651-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Alle Lehrer nutzen gerne die neuen Studenten, um die Zahlen für diese Art von langweiligen Vorlesungen aufzufüllen.",
+    "pinyin": "",
+    "translation": "C: Todos os professores gostam de usar os novos estudantes para preencher os números para esse tipo de palestras/aulas chatas.",
+    "tokens": [
+      "Alle",
+      "Lehrer",
+      "nutzen",
+      "gerne",
+      "die",
+      "neuen",
+      "Studenten",
+      ",",
+      "um",
+      "die",
+      "Zahlen",
+      "für",
+      "diese",
+      "Art",
+      "von",
+      "langweiligen",
+      "Vorlesungen",
+      "aufzufüllen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alle",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 2,
+        "word": "Lehrer",
+        "pinyin": "",
+        "meaning": "professores"
+      },
+      {
+        "id": 3,
+        "word": "nutzen",
+        "pinyin": "",
+        "meaning": "usar, utilizar"
+      },
+      {
+        "id": 4,
+        "word": "gerne",
+        "pinyin": "",
+        "meaning": "com prazer, gostar de"
+      },
+      {
+        "id": 5,
+        "word": "die",
+        "pinyin": "",
+        "meaning": "os (artigo plural)"
+      },
+      {
+        "id": 6,
+        "word": "neuen",
+        "pinyin": "",
+        "meaning": "novos"
+      },
+      {
+        "id": 7,
+        "word": "Studenten",
+        "pinyin": "",
+        "meaning": "estudantes"
+      },
+      {
+        "id": 8,
+        "word": "um ... zu",
+        "pinyin": "",
+        "meaning": "para (com a finalidade de)"
+      },
+      {
+        "id": 9,
+        "word": "Zahlen",
+        "pinyin": "",
+        "meaning": "números"
+      },
+      {
+        "id": 10,
+        "word": "für",
+        "pinyin": "",
+        "meaning": "para"
+      },
+      {
+        "id": 11,
+        "word": "diese",
+        "pinyin": "",
+        "meaning": "este, esta (demonstrativo)"
+      },
+      {
+        "id": 12,
+        "word": "Art",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 13,
+        "word": "von",
+        "pinyin": "",
+        "meaning": "de"
+      },
+      {
+        "id": 14,
+        "word": "langweiligen",
+        "pinyin": "",
+        "meaning": "chatas, entediantes"
+      },
+      {
+        "id": 15,
+        "word": "Vorlesungen",
+        "pinyin": "",
+        "meaning": "palestras, aulas (universitárias)"
+      },
+      {
+        "id": 16,
+        "word": "auffüllen",
+        "pinyin": "",
+        "meaning": "preencher, completar"
+      }
+    ],
+    "id": "local-1772394338651-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich gehe jetzt. Tschüss!",
+    "pinyin": "",
+    "translation": "A: Eu vou agora. Tchau!",
+    "tokens": [
+      "Ich",
+      "gehe",
+      "jetzt",
+      ".",
+      "Tschüss",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ich",
+        "pinyin": "",
+        "meaning": "Eu"
+      },
+      {
+        "id": 2,
+        "word": "gehe",
+        "pinyin": "",
+        "meaning": "vou (de 'gehen')"
+      },
+      {
+        "id": 3,
+        "word": "jetzt",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 4,
+        "word": "Tschüss",
+        "pinyin": "",
+        "meaning": "Tchau"
+      }
+    ],
+    "id": "local-1772394338651-11",
+    "language": "Alemão"
+  }
+]

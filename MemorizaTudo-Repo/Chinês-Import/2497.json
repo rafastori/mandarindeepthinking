@@ -1,0 +1,793 @@
+[
+  {
+    "chinese": "我完蛋了！我八点得上课，结果睡过头了！",
+    "pinyin": "Wǒ wándàn le! Wǒ bādiǎn děi shàngkè, jiéguǒ shuìguòtóu le!",
+    "translation": "Estou ferrado! Eu tinha aula às oito horas, mas acabei dormindo demais!",
+    "tokens": [
+      "我",
+      "完蛋",
+      "了",
+      "！",
+      "我",
+      "八点",
+      "得",
+      "上课",
+      "，",
+      "结果",
+      "睡过头",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "完蛋",
+        "pinyin": "wándàn",
+        "meaning": "estar ferrado, dar-se mal"
+      },
+      {
+        "id": 3,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado, conclusão"
+      },
+      {
+        "id": 4,
+        "word": "八点",
+        "pinyin": "bādiǎn",
+        "meaning": "oito horas"
+      },
+      {
+        "id": 5,
+        "word": "得",
+        "pinyin": "děi",
+        "meaning": "ter que, precisar"
+      },
+      {
+        "id": 6,
+        "word": "上课",
+        "pinyin": "shàngkè",
+        "meaning": "ter aula, ir para a aula"
+      },
+      {
+        "id": 7,
+        "word": "结果",
+        "pinyin": "jiéguǒ",
+        "meaning": "resultado, como resultado"
+      },
+      {
+        "id": 8,
+        "word": "睡过头",
+        "pinyin": "shuìguòtóu",
+        "meaning": "dormir demais"
+      }
+    ],
+    "id": "local-1772394453105-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "才七点半。你急什么？",
+    "pinyin": "Cái qī diǎnbàn. Nǐ jí shénme?",
+    "translation": "São apenas sete e meia. Por que está com tanta pressa?",
+    "tokens": [
+      "才",
+      "七点半",
+      "。",
+      "你",
+      "急",
+      "什么",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "só, apenas (para indicar que é tarde ou cedo)"
+      },
+      {
+        "id": 2,
+        "word": "七点半",
+        "pinyin": "qī diǎnbàn",
+        "meaning": "sete e meia"
+      },
+      {
+        "id": 3,
+        "word": "急",
+        "pinyin": "jí",
+        "meaning": "estar ansioso, com pressa"
+      },
+      {
+        "id": 4,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      }
+    ],
+    "id": "local-1772394453105-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "贝贝，你也没有课吗？",
+    "pinyin": "Bèibèi, nǐ yě méiyǒu kè ma?",
+    "translation": "Beibei, você também não tem aula?",
+    "tokens": [
+      "贝贝",
+      "，",
+      "你",
+      "也",
+      "没有",
+      "课",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "贝贝",
+        "pinyin": "Bèibèi",
+        "meaning": "nome próprio (Beibei)"
+      },
+      {
+        "id": 2,
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "não ter"
+      },
+      {
+        "id": 4,
+        "word": "课",
+        "pinyin": "kè",
+        "meaning": "aula"
+      },
+      {
+        "id": 5,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1772394453105-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "别担心。反正大家都会迟到。",
+    "pinyin": "Bié dānxīn. Fǎnzhèng dàjiā dōu huì chídào.",
+    "translation": "Não se preocupe. De qualquer forma, todo mundo vai se atrasar.",
+    "tokens": [
+      "别",
+      "担心",
+      "。",
+      "反正",
+      "大家",
+      "都",
+      "会",
+      "迟到",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "别",
+        "pinyin": "bié",
+        "meaning": "não (imperativo negativo)"
+      },
+      {
+        "id": 2,
+        "word": "担心",
+        "pinyin": "dānxīn",
+        "meaning": "preocupar-se"
+      },
+      {
+        "id": 3,
+        "word": "反正",
+        "pinyin": "fǎnzhèng",
+        "meaning": "de qualquer forma, em todo caso"
+      },
+      {
+        "id": 4,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todo mundo"
+      },
+      {
+        "id": 5,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos, tudo"
+      },
+      {
+        "id": 6,
+        "word": "会",
+        "pinyin": "huì",
+        "meaning": "irá (auxiliar para futuro), saber"
+      },
+      {
+        "id": 7,
+        "word": "迟到",
+        "pinyin": "chídào",
+        "meaning": "atrasar-se"
+      }
+    ],
+    "id": "local-1772394453105-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我们班其他人都很守时。",
+    "pinyin": "Wǒmen bān qítā rén dōu hěn shǒushí.",
+    "translation": "As outras pessoas da nossa turma são muito pontuais.",
+    "tokens": [
+      "我们",
+      "班",
+      "其他",
+      "人",
+      "都",
+      "很",
+      "守时",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "班",
+        "pinyin": "bān",
+        "meaning": "turma, classe"
+      },
+      {
+        "id": 3,
+        "word": "其他",
+        "pinyin": "qítā",
+        "meaning": "outro(s)"
+      },
+      {
+        "id": 4,
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 5,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos"
+      },
+      {
+        "id": 6,
+        "word": "很",
+        "pinyin": "hěn",
+        "meaning": "muito"
+      },
+      {
+        "id": 7,
+        "word": "守时",
+        "pinyin": "shǒushí",
+        "meaning": "pontual"
+      }
+    ],
+    "id": "local-1772394453105-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那是因为你们都是大一新生。我大一的时候也很乖。不信你问小雨。",
+    "pinyin": "Nà shì yīnwèi nǐmen dōu shì dàyī xīnshēng. Wǒ dàyī de shíhou yě hěn guāi. Bù xìn nǐ wèn Xiǎoyǔ.",
+    "translation": "Isso é porque vocês são todos calouros do primeiro ano. Eu também era muito comportado quando estava no primeiro ano. Se não acredita, pergunte à Xiaoyu.",
+    "tokens": [
+      "那",
+      "是",
+      "因为",
+      "你们",
+      "都",
+      "是",
+      "大一",
+      "新生",
+      "。",
+      "我",
+      "大一",
+      "的",
+      "时候",
+      "也",
+      "很",
+      "乖",
+      "。",
+      "不信",
+      "你",
+      "问",
+      "小雨",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "aquilo, isso"
+      },
+      {
+        "id": 2,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser"
+      },
+      {
+        "id": 3,
+        "word": "因为",
+        "pinyin": "yīnwèi",
+        "meaning": "porque"
+      },
+      {
+        "id": 4,
+        "word": "你们",
+        "pinyin": "nǐmen",
+        "meaning": "vocês"
+      },
+      {
+        "id": 5,
+        "word": "大一",
+        "pinyin": "dàyī",
+        "meaning": "primeiro ano (universidade)"
+      },
+      {
+        "id": 6,
+        "word": "新生",
+        "pinyin": "xīnshēng",
+        "meaning": "calouro, novo aluno"
+      },
+      {
+        "id": 7,
+        "word": "的时候",
+        "pinyin": "de shíhou",
+        "meaning": "quando, no tempo de"
+      },
+      {
+        "id": 8,
+        "word": "乖",
+        "pinyin": "guāi",
+        "meaning": "bem comportado, obediente"
+      },
+      {
+        "id": 9,
+        "word": "不信",
+        "pinyin": "bù xìn",
+        "meaning": "não acreditar"
+      },
+      {
+        "id": 10,
+        "word": "问",
+        "pinyin": "wèn",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 11,
+        "word": "小雨",
+        "pinyin": "Xiǎoyǔ",
+        "meaning": "nome próprio (Xiaoyu)"
+      }
+    ],
+    "id": "local-1772394453105-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "哦对了，今天下午我得去听一个讲座。",
+    "pinyin": "Ó duì le, jīntiān xiàwǔ wǒ děi qù tīng yī gè jiǎngzuò.",
+    "translation": "Ah, a propósito, hoje à tarde eu tenho que ir assistir a uma palestra.",
+    "tokens": [
+      "哦",
+      "对了",
+      "，",
+      "今天",
+      "下午",
+      "我",
+      "得",
+      "去",
+      "听",
+      "一个",
+      "讲座",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh (interjeição)"
+      },
+      {
+        "id": 2,
+        "word": "对了",
+        "pinyin": "duì le",
+        "meaning": "ah, a propósito"
+      },
+      {
+        "id": 3,
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "meaning": "hoje"
+      },
+      {
+        "id": 4,
+        "word": "下午",
+        "pinyin": "xiàwǔ",
+        "meaning": "tarde"
+      },
+      {
+        "id": 5,
+        "word": "得",
+        "pinyin": "děi",
+        "meaning": "ter que, precisar"
+      },
+      {
+        "id": 6,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 7,
+        "word": "听",
+        "pinyin": "tīng",
+        "meaning": "ouvir, escutar"
+      },
+      {
+        "id": 8,
+        "word": "一个",
+        "pinyin": "yī gè",
+        "meaning": "um (classificador)"
+      },
+      {
+        "id": 9,
+        "word": "讲座",
+        "pinyin": "jiǎngzuò",
+        "meaning": "palestra, seminário"
+      }
+    ],
+    "id": "local-1772394453105-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "是三号楼那个吗？别去了。",
+    "pinyin": "Shì sānhào lóu nà ge ma? Bié qù le.",
+    "translation": "É aquela do prédio número três? Não vá.",
+    "tokens": [
+      "是",
+      "三号楼",
+      "那个",
+      "吗",
+      "？",
+      "别",
+      "去",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser"
+      },
+      {
+        "id": 2,
+        "word": "三号楼",
+        "pinyin": "sānhào lóu",
+        "meaning": "prédio número três"
+      },
+      {
+        "id": 3,
+        "word": "那个",
+        "pinyin": "nà ge",
+        "meaning": "aquele, aquilo"
+      },
+      {
+        "id": 4,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula interrogativa"
+      },
+      {
+        "id": 5,
+        "word": "别",
+        "pinyin": "bié",
+        "meaning": "não (imperativo negativo)"
+      },
+      {
+        "id": 6,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772394453105-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "不行。老师说有签到。",
+    "pinyin": "Bùxíng. Lǎoshī shuō yǒu qiāndào.",
+    "translation": "Não posso. O professor disse que tem lista de presença.",
+    "tokens": [
+      "不行",
+      "。",
+      "老师",
+      "说",
+      "有",
+      "签到",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não pode, não funciona"
+      },
+      {
+        "id": 2,
+        "word": "老师",
+        "pinyin": "lǎoshī",
+        "meaning": "professor"
+      },
+      {
+        "id": 3,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "dizer"
+      },
+      {
+        "id": 4,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter"
+      },
+      {
+        "id": 5,
+        "word": "签到",
+        "pinyin": "qiāndào",
+        "meaning": "assinar lista de presença, fazer check-in"
+      }
+    ],
+    "id": "local-1772394453105-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "这签到就是骗你们新生的。就算你不去，也没事。",
+    "pinyin": "Zhè qiāndào jiù shì piàn nǐmen xīnshēng de. Jiùsuàn nǐ bù qù, yě méishì.",
+    "translation": "Essa lista de presença é só para enganar vocês calouros. Mesmo que você não vá, está tudo bem.",
+    "tokens": [
+      "这",
+      "签到",
+      "就是",
+      "骗",
+      "你们",
+      "新生",
+      "的",
+      "。",
+      "就算",
+      "你",
+      "不",
+      "去",
+      "，",
+      "也",
+      "没事",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "este, isto"
+      },
+      {
+        "id": 2,
+        "word": "签到",
+        "pinyin": "qiāndào",
+        "meaning": "lista de presença, check-in"
+      },
+      {
+        "id": 3,
+        "word": "就是",
+        "pinyin": "jiù shì",
+        "meaning": "é exatamente, apenas"
+      },
+      {
+        "id": 4,
+        "word": "骗",
+        "pinyin": "piàn",
+        "meaning": "enganar, trapacear"
+      },
+      {
+        "id": 5,
+        "word": "你们",
+        "pinyin": "nǐmen",
+        "meaning": "vocês"
+      },
+      {
+        "id": 6,
+        "word": "新生",
+        "pinyin": "xīnshēng",
+        "meaning": "calouro, novo aluno"
+      },
+      {
+        "id": 7,
+        "word": "就算",
+        "pinyin": "jiùsuàn",
+        "meaning": "mesmo que, ainda que"
+      },
+      {
+        "id": 8,
+        "word": "不",
+        "pinyin": "bù",
+        "meaning": "não"
+      },
+      {
+        "id": 9,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 10,
+        "word": "没事",
+        "pinyin": "méishì",
+        "meaning": "está tudo bem, não tem problema"
+      }
+    ],
+    "id": "local-1772394453105-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "那些老师都喜欢用新生来凑这种无聊讲座的人数。",
+    "pinyin": "Nàxiē lǎoshī dōu xǐhuān yòng xīnshēng lái còu zhè zhǒng wúliáo jiǎngzuò de rénshù.",
+    "translation": "Aqueles professores gostam de usar calouros para completar o número de participantes dessas palestras chatas.",
+    "tokens": [
+      "那些",
+      "老师",
+      "都",
+      "喜欢",
+      "用",
+      "新生",
+      "来",
+      "凑",
+      "这种",
+      "无聊",
+      "讲座",
+      "的",
+      "人数",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那些",
+        "pinyin": "nàxiē",
+        "meaning": "aqueles, essas"
+      },
+      {
+        "id": 2,
+        "word": "老师",
+        "pinyin": "lǎoshī",
+        "meaning": "professor"
+      },
+      {
+        "id": 3,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "todos"
+      },
+      {
+        "id": 4,
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar"
+      },
+      {
+        "id": 5,
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
+      },
+      {
+        "id": 6,
+        "word": "新生",
+        "pinyin": "xīnshēng",
+        "meaning": "calouro, novo aluno"
+      },
+      {
+        "id": 7,
+        "word": "来",
+        "pinyin": "lái",
+        "meaning": "vir, para (indicar propósito)"
+      },
+      {
+        "id": 8,
+        "word": "凑",
+        "pinyin": "còu",
+        "meaning": "juntar, completar (número)"
+      },
+      {
+        "id": 9,
+        "word": "这种",
+        "pinyin": "zhè zhǒng",
+        "meaning": "esse tipo de"
+      },
+      {
+        "id": 10,
+        "word": "无聊",
+        "pinyin": "wúliáo",
+        "meaning": "chato, entediante"
+      },
+      {
+        "id": 11,
+        "word": "讲座",
+        "pinyin": "jiǎngzuò",
+        "meaning": "palestra, seminário"
+      },
+      {
+        "id": 12,
+        "word": "人数",
+        "pinyin": "rénshù",
+        "meaning": "número de pessoas"
+      }
+    ],
+    "id": "local-1772394453105-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "我走了。再见！",
+    "pinyin": "Wǒ zǒu le. Zàijiàn!",
+    "translation": "Estou indo. Tchau!",
+    "tokens": [
+      "我",
+      "走",
+      "了",
+      "。",
+      "再见",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "走",
+        "pinyin": "zǒu",
+        "meaning": "ir embora, andar"
+      },
+      {
+        "id": 3,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado, conclusão"
+      },
+      {
+        "id": 4,
+        "word": "再见",
+        "pinyin": "zàijiàn",
+        "meaning": "tchau, até logo"
+      }
+    ],
+    "id": "local-1772394453105-11",
+    "language": "Chinês"
+  }
+]

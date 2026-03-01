@@ -1,0 +1,798 @@
+[
+  {
+    "chinese": "A: 아빠, 밥 먹을 시간이에요!",
+    "pinyin": null,
+    "translation": "A: Papai, é hora de comer!",
+    "tokens": [
+      "아빠",
+      ",",
+      "밥",
+      "먹을",
+      "시간이에요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아빠",
+        "pinyin": "appa",
+        "meaning": "pai, papai"
+      },
+      {
+        "id": 2,
+        "word": "밥",
+        "pinyin": "bap",
+        "meaning": "arroz, refeição"
+      },
+      {
+        "id": 3,
+        "word": "먹다",
+        "pinyin": "meokda",
+        "meaning": "comer"
+      },
+      {
+        "id": 4,
+        "word": "시간",
+        "pinyin": "sigan",
+        "meaning": "tempo, hora"
+      },
+      {
+        "id": 5,
+        "word": "이에요",
+        "pinyin": "ieyo",
+        "meaning": "é (cópula polida)"
+      }
+    ],
+    "id": "local-1772394301061-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 갈게!",
+    "pinyin": null,
+    "translation": "B: Estou indo!",
+    "tokens": [
+      "갈게",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "가다",
+        "pinyin": "gada",
+        "meaning": "ir (갈게 é 'eu vou', informal, futuro)"
+      }
+    ],
+    "id": "local-1772394301061-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아빠는 매일 이 게임을 하네요. 지겹지 않아요?",
+    "pinyin": null,
+    "translation": "A: Papai joga este jogo todos os dias. Você não está cansado disso?",
+    "tokens": [
+      "아빠는",
+      "매일",
+      "이",
+      "게임",
+      "을",
+      "하네요",
+      ".",
+      "지겹지",
+      "않아요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아빠",
+        "pinyin": "appa",
+        "meaning": "pai, papai"
+      },
+      {
+        "id": 2,
+        "word": "매일",
+        "pinyin": "maeil",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 3,
+        "word": "이",
+        "pinyin": "i",
+        "meaning": "este, esta"
+      },
+      {
+        "id": 4,
+        "word": "게임",
+        "pinyin": "geim",
+        "meaning": "jogo (do inglês 'game')"
+      },
+      {
+        "id": 5,
+        "word": "하다",
+        "pinyin": "hada",
+        "meaning": "fazer, jogar"
+      },
+      {
+        "id": 6,
+        "word": "지겹다",
+        "pinyin": "jigyeopda",
+        "meaning": "ser chato, entediante"
+      },
+      {
+        "id": 7,
+        "word": "않다",
+        "pinyin": "anta",
+        "meaning": "não (negação)"
+      }
+    ],
+    "id": "local-1772394301061-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어쩔 수 없어. 동영상 보면 인터넷 속도가 너무 느려서 맨날 끊겨.",
+    "pinyin": null,
+    "translation": "B: Não tem jeito. Se eu assistir vídeos, a velocidade da internet fica muito lenta e vive caindo.",
+    "tokens": [
+      "어쩔",
+      "수",
+      "없어",
+      ".",
+      "동영상",
+      "보면",
+      "인터넷",
+      "속도",
+      "가",
+      "너무",
+      "느려서",
+      "맨날",
+      "끊겨",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어쩔 수 없다",
+        "pinyin": "eojjeol su eopda",
+        "meaning": "não ter jeito, não ter o que fazer"
+      },
+      {
+        "id": 2,
+        "word": "동영상",
+        "pinyin": "dongyeongsang",
+        "meaning": "vídeo"
+      },
+      {
+        "id": 3,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver, assistir"
+      },
+      {
+        "id": 4,
+        "word": "인터넷",
+        "pinyin": "inteonet",
+        "meaning": "internet"
+      },
+      {
+        "id": 5,
+        "word": "속도",
+        "pinyin": "sokdo",
+        "meaning": "velocidade"
+      },
+      {
+        "id": 6,
+        "word": "너무",
+        "pinyin": "neomu",
+        "meaning": "muito, demais"
+      },
+      {
+        "id": 7,
+        "word": "느리다",
+        "pinyin": "neurida",
+        "meaning": "ser lento"
+      },
+      {
+        "id": 8,
+        "word": "맨날",
+        "pinyin": "maennal",
+        "meaning": "todos os dias, sempre (informal)"
+      },
+      {
+        "id": 9,
+        "word": "끊기다",
+        "pinyin": "kkeunkkida",
+        "meaning": "ser cortado, desconectar, cair"
+      }
+    ],
+    "id": "local-1772394301061-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 왜 10Mbps 광대역만 설치했어요?",
+    "pinyin": null,
+    "translation": "A: Por que você só instalou 10Mbps de banda larga?",
+    "tokens": [
+      "왜",
+      "10Mbps",
+      "광대역",
+      "만",
+      "설치했어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "왜",
+        "pinyin": "wae",
+        "meaning": "por quê"
+      },
+      {
+        "id": 2,
+        "word": "광대역",
+        "pinyin": "gwangdaeyeok",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 3,
+        "word": "-만",
+        "pinyin": "man",
+        "meaning": "só, apenas"
+      },
+      {
+        "id": 4,
+        "word": "설치하다",
+        "pinyin": "seolchihada",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394301061-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 잘 모르겠네. 너희 집은 어떤 걸 설치했는데?",
+    "pinyin": null,
+    "translation": "B: Não sei bem. O que vocês instalaram na sua casa?",
+    "tokens": [
+      "잘",
+      "모르겠네",
+      ".",
+      "너희",
+      "집은",
+      "어떤",
+      "걸",
+      "설치했는데",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "잘",
+        "pinyin": "jal",
+        "meaning": "bem"
+      },
+      {
+        "id": 2,
+        "word": "모르다",
+        "pinyin": "moreuda",
+        "meaning": "não saber"
+      },
+      {
+        "id": 3,
+        "word": "너희",
+        "pinyin": "neohui",
+        "meaning": "vocês (informal plural)"
+      },
+      {
+        "id": 4,
+        "word": "집",
+        "pinyin": "jip",
+        "meaning": "casa"
+      },
+      {
+        "id": 5,
+        "word": "어떤",
+        "pinyin": "eotteon",
+        "meaning": "qual, que tipo de"
+      },
+      {
+        "id": 6,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa"
+      },
+      {
+        "id": 7,
+        "word": "설치하다",
+        "pinyin": "seolchihada",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394301061-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 우리 집은 오래 전에 광섬유로 바꿨어요. 광대역 인터넷 같은 건 별로예요.",
+    "pinyin": null,
+    "translation": "A: Nossa casa mudou para fibra óptica há muito tempo. Internet de banda larga não é muito boa.",
+    "tokens": [
+      "우리",
+      "집은",
+      "오래",
+      "전에",
+      "광섬유",
+      "로",
+      "바꿨어요",
+      ".",
+      "광대역",
+      "인터넷",
+      "같은",
+      "건",
+      "별로예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "우리",
+        "pinyin": "uri",
+        "meaning": "nós, nosso"
+      },
+      {
+        "id": 2,
+        "word": "집",
+        "pinyin": "jip",
+        "meaning": "casa"
+      },
+      {
+        "id": 3,
+        "word": "오래",
+        "pinyin": "orae",
+        "meaning": "por muito tempo"
+      },
+      {
+        "id": 4,
+        "word": "전에",
+        "pinyin": "jeone",
+        "meaning": "antes, atrás (오래 전에 = muito tempo atrás)"
+      },
+      {
+        "id": 5,
+        "word": "광섬유",
+        "pinyin": "gwangseomyu",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 6,
+        "word": "바꾸다",
+        "pinyin": "bakkuda",
+        "meaning": "trocar, mudar"
+      },
+      {
+        "id": 7,
+        "word": "광대역",
+        "pinyin": "gwangdaeyeok",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 8,
+        "word": "인터넷",
+        "pinyin": "inteonet",
+        "meaning": "internet"
+      },
+      {
+        "id": 9,
+        "word": "같다",
+        "pinyin": "gatda",
+        "meaning": "ser como, semelhante"
+      },
+      {
+        "id": 10,
+        "word": "것",
+        "pinyin": "geot",
+        "meaning": "coisa"
+      },
+      {
+        "id": 11,
+        "word": "별로이다",
+        "pinyin": "byeolloida",
+        "meaning": "não ser muito bom, não gostar"
+      }
+    ],
+    "id": "local-1772394301061-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 우리 집도 그걸 설치할 수 있어요?",
+    "pinyin": null,
+    "translation": "B: Então, nossa casa também pode instalar isso?",
+    "tokens": [
+      "그럼",
+      "우리",
+      "집도",
+      "그걸",
+      "설치할",
+      "수",
+      "있어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "우리",
+        "pinyin": "uri",
+        "meaning": "nosso, nós"
+      },
+      {
+        "id": 3,
+        "word": "집",
+        "pinyin": "jip",
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo"
+      },
+      {
+        "id": 5,
+        "word": "설치하다",
+        "pinyin": "seolchihada",
+        "meaning": "instalar"
+      },
+      {
+        "id": 6,
+        "word": "-ㄹ 수 있다",
+        "pinyin": "-l su itda",
+        "meaning": "poder, ser capaz de"
+      }
+    ],
+    "id": "local-1772394301061-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그건 아빠 동네가 광섬유를 설치할 수 있는지에 따라 달라요.",
+    "pinyin": null,
+    "translation": "A: Isso depende se o bairro do papai pode instalar fibra óptica.",
+    "tokens": [
+      "그건",
+      "아빠",
+      "동네",
+      "가",
+      "광섬유",
+      "를",
+      "설치할",
+      "수",
+      "있는지",
+      "에",
+      "따라",
+      "달라요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo"
+      },
+      {
+        "id": 2,
+        "word": "아빠",
+        "pinyin": "appa",
+        "meaning": "papai"
+      },
+      {
+        "id": 3,
+        "word": "동네",
+        "pinyin": "dongne",
+        "meaning": "bairro, vizinhança"
+      },
+      {
+        "id": 4,
+        "word": "광섬유",
+        "pinyin": "gwangseomyu",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 5,
+        "word": "설치하다",
+        "pinyin": "seolchihada",
+        "meaning": "instalar"
+      },
+      {
+        "id": 6,
+        "word": "-ㄹ 수 있다",
+        "pinyin": "-l su itda",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 7,
+        "word": "-에 따라 다르다",
+        "pinyin": "-e ttara dareuda",
+        "meaning": "depender de"
+      },
+      {
+        "id": 8,
+        "word": "다르다",
+        "pinyin": "dareuda",
+        "meaning": "ser diferente"
+      }
+    ],
+    "id": "local-1772394301061-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 안 되면 어떻게 해야 해요?",
+    "pinyin": null,
+    "translation": "B: Se não der, o que devo fazer?",
+    "tokens": [
+      "안",
+      "되면",
+      "어떻게",
+      "해야",
+      "해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "안 되다",
+        "pinyin": "an doeda",
+        "meaning": "não funcionar, não dar certo"
+      },
+      {
+        "id": 2,
+        "word": "어떻게",
+        "pinyin": "eotteoke",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "하다",
+        "pinyin": "hada",
+        "meaning": "fazer (해야 해요 = preciso fazer / devo fazer)"
+      }
+    ],
+    "id": "local-1772394301061-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 인터넷 속도를 20Mbps로 업그레이드하고 시도해 볼 수밖에 없죠.",
+    "pinyin": null,
+    "translation": "A: Então, não há outra opção a não ser atualizar a velocidade da internet para 20Mbps e tentar.",
+    "tokens": [
+      "그럼",
+      "인터넷",
+      "속도",
+      "를",
+      "20Mbps",
+      "로",
+      "업그레이드하고",
+      "시도해",
+      "볼",
+      "수밖에",
+      "없죠",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "인터넷",
+        "pinyin": "inteonet",
+        "meaning": "internet"
+      },
+      {
+        "id": 3,
+        "word": "속도",
+        "pinyin": "sokdo",
+        "meaning": "velocidade"
+      },
+      {
+        "id": 4,
+        "word": "업그레이드하다",
+        "pinyin": "eopgeureideuhada",
+        "meaning": "atualizar, fazer upgrade"
+      },
+      {
+        "id": 5,
+        "word": "시도하다",
+        "pinyin": "sidohada",
+        "meaning": "tentar"
+      },
+      {
+        "id": 6,
+        "word": "-ㄹ 수밖에 없다",
+        "pinyin": "-l subakke eopda",
+        "meaning": "não ter outra opção a não ser..."
+      }
+    ],
+    "id": "local-1772394301061-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 복도에서 광섬유 인터넷 50Mbps를 연간 1080위안에 제공한다는 작은 광고를 본 것 같은데.",
+    "pinyin": null,
+    "translation": "B: Parece que vi um pequeno anúncio no corredor dizendo que oferecem internet de fibra óptica de 50Mbps por 1080 yuans anuais.",
+    "tokens": [
+      "복도",
+      "에서",
+      "광섬유",
+      "인터넷",
+      "50Mbps",
+      "를",
+      "연간",
+      "1080",
+      "위안",
+      "에",
+      "제공한다는",
+      "작은",
+      "광고",
+      "를",
+      "본",
+      "것",
+      "같은데",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "복도",
+        "pinyin": "bokdo",
+        "meaning": "corredor"
+      },
+      {
+        "id": 2,
+        "word": "광섬유",
+        "pinyin": "gwangseomyu",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 3,
+        "word": "인터넷",
+        "pinyin": "inteonet",
+        "meaning": "internet"
+      },
+      {
+        "id": 4,
+        "word": "연간",
+        "pinyin": "yeon-gan",
+        "meaning": "anualmente, por ano"
+      },
+      {
+        "id": 5,
+        "word": "위안",
+        "pinyin": "wian",
+        "meaning": "Yuan (moeda chinesa)"
+      },
+      {
+        "id": 6,
+        "word": "제공하다",
+        "pinyin": "jegonghada",
+        "meaning": "oferecer, fornecer"
+      },
+      {
+        "id": 7,
+        "word": "작다",
+        "pinyin": "jakda",
+        "meaning": "ser pequeno"
+      },
+      {
+        "id": 8,
+        "word": "광고",
+        "pinyin": "gwanggo",
+        "meaning": "anúncio"
+      },
+      {
+        "id": 9,
+        "word": "보다",
+        "pinyin": "boda",
+        "meaning": "ver"
+      },
+      {
+        "id": 10,
+        "word": "-ㄹ 것 같다",
+        "pinyin": "-l geot gatda",
+        "meaning": "parece que"
+      }
+    ],
+    "id": "local-1772394301061-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말? 그럼 광대역 인터넷 계약이 만료되면 그걸로 바꿀 수 있겠네요.",
+    "pinyin": null,
+    "translation": "A: Sério? Então, quando o contrato de internet banda larga expirar, você pode mudar para isso.",
+    "tokens": [
+      "정말",
+      "?",
+      "그럼",
+      "광대역",
+      "인터넷",
+      "계약",
+      "이",
+      "만료되면",
+      "그걸로",
+      "바꿀",
+      "수",
+      "있겠네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "jeongmal",
+        "meaning": "realmente, sério"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "geureom",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "광대역",
+        "pinyin": "gwangdaeyeok",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 4,
+        "word": "인터넷",
+        "pinyin": "inteonet",
+        "meaning": "internet"
+      },
+      {
+        "id": 5,
+        "word": "계약",
+        "pinyin": "gyeyak",
+        "meaning": "contrato"
+      },
+      {
+        "id": 6,
+        "word": "만료되다",
+        "pinyin": "manllyodoeda",
+        "meaning": "expirar, vencer"
+      },
+      {
+        "id": 7,
+        "word": "그것",
+        "pinyin": "geugeot",
+        "meaning": "aquilo"
+      },
+      {
+        "id": 8,
+        "word": "바꾸다",
+        "pinyin": "bakkuda",
+        "meaning": "trocar, mudar"
+      },
+      {
+        "id": 9,
+        "word": "-ㄹ 수 있다",
+        "pinyin": "-l su itda",
+        "meaning": "poder, ser capaz de"
+      },
+      {
+        "id": 10,
+        "word": "-겠네요",
+        "pinyin": "-genneyo",
+        "meaning": "expressa inferência/realização"
+      }
+    ],
+    "id": "local-1772394301061-12",
+    "language": "Coreano"
+  }
+]

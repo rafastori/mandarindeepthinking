@@ -1,0 +1,835 @@
+[
+  {
+    "chinese": "A: 젠젠, 수능 점수 확인했어?",
+    "pinyin": "",
+    "translation": "A: Zenzen, você verificou sua nota do Suneung?",
+    "tokens": [
+      "젠젠",
+      ",",
+      "수능",
+      "점수",
+      "확인했어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "젠젠",
+        "pinyin": "",
+        "meaning": "Zenzen (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "수능",
+        "pinyin": "",
+        "meaning": "Suneung (Exame de Habilidade Escolar Universitária da Coreia)"
+      },
+      {
+        "id": 3,
+        "word": "점수",
+        "pinyin": "",
+        "meaning": "nota, pontuação"
+      },
+      {
+        "id": 4,
+        "word": "확인하다",
+        "pinyin": "",
+        "meaning": "verificar, confirmar"
+      }
+    ],
+    "id": "local-1772394065448-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 응, 452점 나왔어. 너는?",
+    "pinyin": "",
+    "translation": "B: Sim, tirei 452 pontos. E você?",
+    "tokens": [
+      "응",
+      ",",
+      "452",
+      "점",
+      "나왔어",
+      ".",
+      "너는",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "응",
+        "pinyin": "",
+        "meaning": "Sim (informal)"
+      },
+      {
+        "id": 2,
+        "word": "점",
+        "pinyin": "",
+        "meaning": "ponto (unidade de medida de pontuação)"
+      },
+      {
+        "id": 3,
+        "word": "나오다",
+        "pinyin": "",
+        "meaning": "sair, aparecer, obter (nota)"
+      },
+      {
+        "id": 4,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você (informal)"
+      }
+    ],
+    "id": "local-1772394065448-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 와, 정말 높다. 나는 겨우 417점인데.",
+    "pinyin": "",
+    "translation": "A: Uau, realmente alta. Eu só tirei 417 pontos.",
+    "tokens": [
+      "와",
+      ",",
+      "정말",
+      "높다",
+      ".",
+      "나는",
+      "겨우",
+      "417",
+      "점인데",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "Uau! (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente, muito"
+      },
+      {
+        "id": 3,
+        "word": "높다",
+        "pinyin": "",
+        "meaning": "ser alto"
+      },
+      {
+        "id": 4,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 5,
+        "word": "겨우",
+        "pinyin": "",
+        "meaning": "apenas, mal, com dificuldade"
+      },
+      {
+        "id": 6,
+        "word": "-인데",
+        "pinyin": "",
+        "meaning": "sufixo que indica contraste ou informação de fundo"
+      }
+    ],
+    "id": "local-1772394065448-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 비슷하네. 문과 최저 합격선은 보통 이과보다 높아.",
+    "pinyin": "",
+    "translation": "B: Então é parecido. A nota de corte mínima para humanas é geralmente mais alta do que para exatas.",
+    "tokens": [
+      "그럼",
+      "비슷하네",
+      ".",
+      "문과",
+      "최저",
+      "합격선은",
+      "보통",
+      "이과보다",
+      "높아",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "비슷하다",
+        "pinyin": "",
+        "meaning": "ser parecido, similar"
+      },
+      {
+        "id": 3,
+        "word": "문과",
+        "pinyin": "",
+        "meaning": "área de humanas (no sistema educacional coreano)"
+      },
+      {
+        "id": 4,
+        "word": "최저",
+        "pinyin": "",
+        "meaning": "o mais baixo, mínimo"
+      },
+      {
+        "id": 5,
+        "word": "합격선",
+        "pinyin": "",
+        "meaning": "nota de corte para aprovação"
+      },
+      {
+        "id": 6,
+        "word": "보통",
+        "pinyin": "",
+        "meaning": "geralmente, normalmente"
+      },
+      {
+        "id": 7,
+        "word": "이과",
+        "pinyin": "",
+        "meaning": "área de exatas (no sistema educacional coreano)"
+      },
+      {
+        "id": 8,
+        "word": "-보다",
+        "pinyin": "",
+        "meaning": "do que (partícula comparativa)"
+      },
+      {
+        "id": 9,
+        "word": "높다",
+        "pinyin": "",
+        "meaning": "ser alto"
+      }
+    ],
+    "id": "local-1772394065448-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그래도 같은 대학교에 갈 수도 있겠다. 어느 학교에 지원하고 싶어?",
+    "pinyin": "",
+    "translation": "A: Mesmo assim, podemos ir para a mesma universidade. Para qual universidade você quer se candidatar?",
+    "tokens": [
+      "그래도",
+      "같은",
+      "대학교에",
+      "갈",
+      "수도",
+      "있겠다",
+      ".",
+      "어느",
+      "학교에",
+      "지원하고",
+      "싶어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그래도",
+        "pinyin": "",
+        "meaning": "mesmo assim, ainda assim"
+      },
+      {
+        "id": 2,
+        "word": "같다",
+        "pinyin": "",
+        "meaning": "ser o mesmo, igual"
+      },
+      {
+        "id": 3,
+        "word": "대학교",
+        "pinyin": "",
+        "meaning": "universidade"
+      },
+      {
+        "id": 4,
+        "word": "가다",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 5,
+        "word": "-을/ㄹ 수도 있다",
+        "pinyin": "",
+        "meaning": "poder, haver a possibilidade de"
+      },
+      {
+        "id": 6,
+        "word": "어느",
+        "pinyin": "",
+        "meaning": "qual"
+      },
+      {
+        "id": 7,
+        "word": "학교",
+        "pinyin": "",
+        "meaning": "escola, universidade"
+      },
+      {
+        "id": 8,
+        "word": "지원하다",
+        "pinyin": "",
+        "meaning": "se candidatar, aplicar"
+      },
+      {
+        "id": 9,
+        "word": "-고 싶다",
+        "pinyin": "",
+        "meaning": "querer (fazer algo)"
+      }
+    ],
+    "id": "local-1772394065448-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아직 정하지 못했어. 너는 생각해 둔 곳 있어?",
+    "pinyin": "",
+    "translation": "B: Ainda não decidi. Você tem algum lugar em mente?",
+    "tokens": [
+      "아직",
+      "정하지",
+      "못했어",
+      ".",
+      "너는",
+      "생각해",
+      "둔",
+      "곳",
+      "있어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda (não)"
+      },
+      {
+        "id": 2,
+        "word": "정하다",
+        "pinyin": "",
+        "meaning": "decidir, determinar"
+      },
+      {
+        "id": 3,
+        "word": "-지 못하다",
+        "pinyin": "",
+        "meaning": "não conseguir fazer algo"
+      },
+      {
+        "id": 4,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 5,
+        "word": "생각하다",
+        "pinyin": "",
+        "meaning": "pensar"
+      },
+      {
+        "id": 6,
+        "word": "-아/어 두다",
+        "pinyin": "",
+        "meaning": "fazer algo e manter o estado (preparar para o futuro)"
+      },
+      {
+        "id": 7,
+        "word": "곳",
+        "pinyin": "",
+        "meaning": "lugar"
+      },
+      {
+        "id": 8,
+        "word": "있다",
+        "pinyin": "",
+        "meaning": "ter, existir"
+      }
+    ],
+    "id": "local-1772394065448-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니, 나도 없어. 어떤 전공을 하고 싶어?",
+    "pinyin": "",
+    "translation": "A: Não, eu também não tenho. Que curso você quer fazer?",
+    "tokens": [
+      "아니",
+      ",",
+      "나도",
+      "없어",
+      ".",
+      "어떤",
+      "전공을",
+      "하고",
+      "싶어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 3,
+        "word": "-도",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 4,
+        "word": "없다",
+        "pinyin": "",
+        "meaning": "não ter, não existir"
+      },
+      {
+        "id": 5,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "que, qual (tipo de)"
+      },
+      {
+        "id": 6,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "curso, especialização"
+      },
+      {
+        "id": 7,
+        "word": "하다",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 8,
+        "word": "-고 싶다",
+        "pinyin": "",
+        "meaning": "querer (fazer algo)"
+      }
+    ],
+    "id": "local-1772394065448-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 중국어학과에 지원하고 싶은데, 아빠랑 엄마는 회계를 공부하라고 하셔.",
+    "pinyin": "",
+    "translation": "B: Eu gostaria de me candidatar ao departamento de Língua Chinesa, mas meu pai e minha mãe querem que eu estude contabilidade.",
+    "tokens": [
+      "중국어학과에",
+      "지원하고",
+      "싶은데",
+      ",",
+      "아빠랑",
+      "엄마는",
+      "회계를",
+      "공부하라고",
+      "하셔",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국어학과",
+        "pinyin": "",
+        "meaning": "departamento de Língua Chinesa"
+      },
+      {
+        "id": 2,
+        "word": "지원하다",
+        "pinyin": "",
+        "meaning": "se candidatar, aplicar"
+      },
+      {
+        "id": 3,
+        "word": "-고 싶은데",
+        "pinyin": "",
+        "meaning": "gostaria de (mas, com ressalva)"
+      },
+      {
+        "id": 4,
+        "word": "아빠",
+        "pinyin": "",
+        "meaning": "pai (informal)"
+      },
+      {
+        "id": 5,
+        "word": "-랑",
+        "pinyin": "",
+        "meaning": "e, com (informal)"
+      },
+      {
+        "id": 6,
+        "word": "엄마",
+        "pinyin": "",
+        "meaning": "mãe (informal)"
+      },
+      {
+        "id": 7,
+        "word": "회계",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 8,
+        "word": "공부하다",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 9,
+        "word": "-라고 하다",
+        "pinyin": "",
+        "meaning": "dizer para fazer (citação indireta de comando)"
+      }
+    ],
+    "id": "local-1772394065448-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 중국어학과는 취업하기 가장 힘든 전공이라고 들었어.",
+    "pinyin": "",
+    "translation": "A: Eu ouvi dizer que o departamento de Língua Chinesa é a especialização mais difícil para conseguir emprego.",
+    "tokens": [
+      "중국어학과는",
+      "취업하기",
+      "가장",
+      "힘든",
+      "전공이라고",
+      "들었어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국어학과",
+        "pinyin": "",
+        "meaning": "departamento de Língua Chinesa"
+      },
+      {
+        "id": 2,
+        "word": "취업하다",
+        "pinyin": "",
+        "meaning": "conseguir emprego"
+      },
+      {
+        "id": 3,
+        "word": "가장",
+        "pinyin": "",
+        "meaning": "o mais"
+      },
+      {
+        "id": 4,
+        "word": "힘들다",
+        "pinyin": "",
+        "meaning": "ser difícil, exaustivo"
+      },
+      {
+        "id": 5,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "curso, especialização"
+      },
+      {
+        "id": 6,
+        "word": "-라고 듣다",
+        "pinyin": "",
+        "meaning": "ouvir dizer que"
+      }
+    ],
+    "id": "local-1772394065448-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그런데 난 문학이 좋고, 회계는 너무 지루할 것 같아. 너는 어떤 전공을 지원하고 싶어?",
+    "pinyin": "",
+    "translation": "B: Mas eu gosto de literatura, e contabilidade parece ser muito chata. Que curso você quer fazer?",
+    "tokens": [
+      "그런데",
+      "난",
+      "문학이",
+      "좋고",
+      ",",
+      "회계는",
+      "너무",
+      "지루할",
+      "것",
+      "같아",
+      ".",
+      "너는",
+      "어떤",
+      "전공을",
+      "지원하고",
+      "싶어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그런데",
+        "pinyin": "",
+        "meaning": "mas, no entanto"
+      },
+      {
+        "id": 2,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 3,
+        "word": "문학",
+        "pinyin": "",
+        "meaning": "literatura"
+      },
+      {
+        "id": 4,
+        "word": "좋다",
+        "pinyin": "",
+        "meaning": "gostar, ser bom"
+      },
+      {
+        "id": 5,
+        "word": "회계",
+        "pinyin": "",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 6,
+        "word": "너무",
+        "pinyin": "",
+        "meaning": "demais, muito"
+      },
+      {
+        "id": 7,
+        "word": "지루하다",
+        "pinyin": "",
+        "meaning": "ser chato, entediante"
+      },
+      {
+        "id": 8,
+        "word": "-을/ㄹ 것 같다",
+        "pinyin": "",
+        "meaning": "parecer que, acho que"
+      },
+      {
+        "id": 9,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 10,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "que, qual (tipo de)"
+      },
+      {
+        "id": 11,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "curso, especialização"
+      },
+      {
+        "id": 12,
+        "word": "지원하다",
+        "pinyin": "",
+        "meaning": "se candidatar, aplicar"
+      },
+      {
+        "id": 13,
+        "word": "-고 싶다",
+        "pinyin": "",
+        "meaning": "querer (fazer algo)"
+      }
+    ],
+    "id": "local-1772394065448-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 나는 컴퓨터를 공부하고 싶어. 취업 전망이 꽤 좋잖아.",
+    "pinyin": "",
+    "translation": "A: Eu quero estudar computação. As perspectivas de emprego são bem boas, sabe?",
+    "tokens": [
+      "나는",
+      "컴퓨터를",
+      "공부하고",
+      "싶어",
+      ".",
+      "취업",
+      "전망이",
+      "꽤",
+      "좋잖아",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 2,
+        "word": "컴퓨터",
+        "pinyin": "",
+        "meaning": "computador, computação"
+      },
+      {
+        "id": 3,
+        "word": "공부하다",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 4,
+        "word": "-고 싶다",
+        "pinyin": "",
+        "meaning": "querer (fazer algo)"
+      },
+      {
+        "id": 5,
+        "word": "취업",
+        "pinyin": "",
+        "meaning": "conseguir emprego, emprego"
+      },
+      {
+        "id": 6,
+        "word": "전망",
+        "pinyin": "",
+        "meaning": "perspectiva, panorama"
+      },
+      {
+        "id": 7,
+        "word": "꽤",
+        "pinyin": "",
+        "meaning": "bastante, bem"
+      },
+      {
+        "id": 8,
+        "word": "좋다",
+        "pinyin": "",
+        "meaning": "ser bom"
+      }
+    ],
+    "id": "local-1772394065448-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 와. 그럼 나중에 내가 일자리를 못 찾으면, 네가 매일 밥 사줘야 해.",
+    "pinyin": "",
+    "translation": "B: Uau. Então, se eu não conseguir um emprego mais tarde, você terá que me pagar o jantar todos os dias.",
+    "tokens": [
+      "와",
+      ".",
+      "그럼",
+      "나중에",
+      "내가",
+      "일자리를",
+      "못",
+      "찾으면",
+      ",",
+      "네가",
+      "매일",
+      "밥",
+      "사줘야",
+      "해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "Uau! (interjeição de surpresa)"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "나중에",
+        "pinyin": "",
+        "meaning": "mais tarde, depois"
+      },
+      {
+        "id": 4,
+        "word": "나",
+        "pinyin": "",
+        "meaning": "eu (informal)"
+      },
+      {
+        "id": 5,
+        "word": "일자리",
+        "pinyin": "",
+        "meaning": "emprego, vaga de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "못 찾다",
+        "pinyin": "",
+        "meaning": "não conseguir encontrar"
+      },
+      {
+        "id": 7,
+        "word": "-면",
+        "pinyin": "",
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 8,
+        "word": "너",
+        "pinyin": "",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 9,
+        "word": "매일",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 10,
+        "word": "밥",
+        "pinyin": "",
+        "meaning": "arroz cozido, refeição"
+      },
+      {
+        "id": 11,
+        "word": "사주다",
+        "pinyin": "",
+        "meaning": "comprar (algo para alguém), pagar (uma refeição)"
+      },
+      {
+        "id": 12,
+        "word": "-아/어야 하다",
+        "pinyin": "",
+        "meaning": "ter que, dever"
+      }
+    ],
+    "id": "local-1772394065448-11",
+    "language": "Coreano"
+  }
+]

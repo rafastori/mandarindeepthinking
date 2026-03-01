@@ -1,0 +1,609 @@
+[
+  {
+    "chinese": "A: Papa, es ist Zeit zu essen!",
+    "pinyin": "",
+    "translation": "A: Papai, é hora de comer!",
+    "tokens": [
+      "A:",
+      "Papa,",
+      "es",
+      "ist",
+      "Zeit",
+      "zu",
+      "essen!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Papa",
+        "pinyin": "",
+        "meaning": "Papai"
+      },
+      {
+        "id": 2,
+        "word": "Zeit",
+        "pinyin": "",
+        "meaning": "Tempo, hora"
+      },
+      {
+        "id": 3,
+        "word": "essen",
+        "pinyin": "",
+        "meaning": "comer"
+      }
+    ],
+    "id": "local-1772394095325-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Komme!",
+    "pinyin": "",
+    "translation": "B: Estou indo! / Já vou!",
+    "tokens": [
+      "B:",
+      "Komme!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "kommen",
+        "pinyin": "",
+        "meaning": "vir, chegar"
+      }
+    ],
+    "id": "local-1772394095325-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Du spielst dieses Spiel jeden Tag. Findest du es nicht langweilig?",
+    "pinyin": "",
+    "translation": "A: Você joga este jogo todos os dias. Você não acha chato?",
+    "tokens": [
+      "A:",
+      "Du",
+      "spielst",
+      "dieses",
+      "Spiel",
+      "jeden",
+      "Tag.",
+      "Findest",
+      "du",
+      "es",
+      "nicht",
+      "langweilig?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "spielen",
+        "pinyin": "",
+        "meaning": "jogar, brincar"
+      },
+      {
+        "id": 2,
+        "word": "Spiel",
+        "pinyin": "",
+        "meaning": "jogo"
+      },
+      {
+        "id": 3,
+        "word": "jeden Tag",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 4,
+        "word": "langweilig",
+        "pinyin": "",
+        "meaning": "chato, entediante"
+      }
+    ],
+    "id": "local-1772394095325-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich kann nichts dagegen tun. Wenn ich Videos anschaue, ist die Internetgeschwindigkeit zu langsam. Es stoppt immer.",
+    "pinyin": "",
+    "translation": "B: Eu não posso fazer nada a respeito. Quando eu assisto vídeos, a velocidade da internet é muito lenta. Ela sempre para.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "kann",
+      "nichts",
+      "dagegen",
+      "tun.",
+      "Wenn",
+      "ich",
+      "Videos",
+      "anschaue,",
+      "ist",
+      "die",
+      "Internetgeschwindigkeit",
+      "zu",
+      "langsam.",
+      "Es",
+      "stoppt",
+      "immer."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nichts dagegen tun",
+        "pinyin": "",
+        "meaning": "não poder fazer nada a respeito"
+      },
+      {
+        "id": 2,
+        "word": "Videos anschauen",
+        "pinyin": "",
+        "meaning": "assistir vídeos"
+      },
+      {
+        "id": 3,
+        "word": "Internetgeschwindigkeit",
+        "pinyin": "",
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 4,
+        "word": "zu langsam",
+        "pinyin": "",
+        "meaning": "muito lento"
+      },
+      {
+        "id": 5,
+        "word": "stoppen",
+        "pinyin": "",
+        "meaning": "parar"
+      }
+    ],
+    "id": "local-1772394095325-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Warum hast du nur 10 Mbit/s Breitband installiert?",
+    "pinyin": "",
+    "translation": "A: Por que você instalou apenas 10 Mbit/s de banda larga?",
+    "tokens": [
+      "A:",
+      "Warum",
+      "hast",
+      "du",
+      "nur",
+      "10",
+      "Mbit/s",
+      "Breitband",
+      "installiert?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "warum",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 2,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "apenas, somente"
+      },
+      {
+        "id": 3,
+        "word": "Breitband",
+        "pinyin": "",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 4,
+        "word": "installieren",
+        "pinyin": "",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394095325-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich verstehe nicht. Welche Art hast du bei dir zu Hause installiert?",
+    "pinyin": "",
+    "translation": "B: Eu não entendo. Que tipo você instalou na sua casa?",
+    "tokens": [
+      "B:",
+      "Ich",
+      "verstehe",
+      "nicht.",
+      "Welche",
+      "Art",
+      "hast",
+      "du",
+      "bei",
+      "dir",
+      "zu",
+      "Hause",
+      "installiert?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "verstehen",
+        "pinyin": "",
+        "meaning": "entender"
+      },
+      {
+        "id": 2,
+        "word": "welche Art",
+        "pinyin": "",
+        "meaning": "que tipo"
+      },
+      {
+        "id": 3,
+        "word": "zu Hause",
+        "pinyin": "",
+        "meaning": "em casa"
+      },
+      {
+        "id": 4,
+        "word": "installieren",
+        "pinyin": "",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394095325-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wir sind schon lange auf Glasfaser umgestiegen; Breitband und dergleichen ist Mist.",
+    "pinyin": "",
+    "translation": "A: Nós já mudamos para fibra óptica há muito tempo; banda larga e coisas do gênero são lixo.",
+    "tokens": [
+      "A:",
+      "Wir",
+      "sind",
+      "schon",
+      "lange",
+      "auf",
+      "Glasfaser",
+      "umgestiegen;",
+      "Breitband",
+      "und",
+      "dergleichen",
+      "ist",
+      "Mist."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "schon lange",
+        "pinyin": "",
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 2,
+        "word": "Glasfaser",
+        "pinyin": "",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 3,
+        "word": "umsteigen",
+        "pinyin": "",
+        "meaning": "mudar, fazer a transição"
+      },
+      {
+        "id": 4,
+        "word": "Breitband",
+        "pinyin": "",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 5,
+        "word": "Mist",
+        "pinyin": "",
+        "meaning": "lixo, porcaria"
+      }
+    ],
+    "id": "local-1772394095325-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kann ich das also bei uns zu Hause installieren?",
+    "pinyin": "",
+    "translation": "B: Então eu posso instalar isso em nossa casa?",
+    "tokens": [
+      "B:",
+      "Kann",
+      "ich",
+      "das",
+      "also",
+      "bei",
+      "uns",
+      "zu",
+      "Hause",
+      "installieren?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "então, portanto"
+      },
+      {
+        "id": 2,
+        "word": "bei uns zu Hause",
+        "pinyin": "",
+        "meaning": "em nossa casa"
+      },
+      {
+        "id": 3,
+        "word": "installieren",
+        "pinyin": "",
+        "meaning": "instalar"
+      }
+    ],
+    "id": "local-1772394095325-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das hängt davon ab, ob deine Nachbarschaft Zugang zu Glasfaser hat.",
+    "pinyin": "",
+    "translation": "A: Isso depende se sua vizinhança tem acesso à fibra óptica.",
+    "tokens": [
+      "A:",
+      "Das",
+      "hängt",
+      "davon",
+      "ab,",
+      "ob",
+      "deine",
+      "Nachbarschaft",
+      "Zugang",
+      "zu",
+      "Glasfaser",
+      "hat."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "abhängen von",
+        "pinyin": "",
+        "meaning": "depender de"
+      },
+      {
+        "id": 2,
+        "word": "Nachbarschaft",
+        "pinyin": "",
+        "meaning": "vizinhança"
+      },
+      {
+        "id": 3,
+        "word": "Zugang",
+        "pinyin": "",
+        "meaning": "acesso"
+      },
+      {
+        "id": 4,
+        "word": "Glasfaser",
+        "pinyin": "",
+        "meaning": "fibra óptica"
+      }
+    ],
+    "id": "local-1772394095325-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was soll ich tun, wenn nicht?",
+    "pinyin": "",
+    "translation": "B: O que devo fazer, se não?",
+    "tokens": [
+      "B:",
+      "Was",
+      "soll",
+      "ich",
+      "tun,",
+      "wenn",
+      "nicht?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "was",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "tun",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 3,
+        "word": "wenn nicht",
+        "pinyin": "",
+        "meaning": "se não"
+      }
+    ],
+    "id": "local-1772394095325-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann könntest du nur deine Internetgeschwindigkeit auf 20 Mbit/s erhöhen und es versuchen.",
+    "pinyin": "",
+    "translation": "A: Então você só poderia aumentar sua velocidade da internet para 20 Mbit/s e tentar.",
+    "tokens": [
+      "A:",
+      "Dann",
+      "könntest",
+      "du",
+      "nur",
+      "deine",
+      "Internetgeschwindigkeit",
+      "auf",
+      "20",
+      "Mbit/s",
+      "erhöhen",
+      "und",
+      "es",
+      "versuchen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "Internetgeschwindigkeit",
+        "pinyin": "",
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 3,
+        "word": "erhöhen",
+        "pinyin": "",
+        "meaning": "aumentar"
+      },
+      {
+        "id": 4,
+        "word": "versuchen",
+        "pinyin": "",
+        "meaning": "tentar"
+      }
+    ],
+    "id": "local-1772394095325-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Im Flur habe ich anscheinend eine kleine Werbung gesehen, die Glasfaser-Internet mit 50 Mbit/s für 1080 RMB pro Jahr anbot.",
+    "pinyin": "",
+    "translation": "B: No corredor, parece que vi um pequeno anúncio que oferecia internet de fibra óptica com 50 Mbit/s por 1080 RMB por ano.",
+    "tokens": [
+      "B:",
+      "Im",
+      "Flur",
+      "habe",
+      "ich",
+      "anscheinend",
+      "eine",
+      "kleine",
+      "Werbung",
+      "gesehen,",
+      "die",
+      "Glasfaser-Internet",
+      "mit",
+      "50",
+      "Mbit/s",
+      "für",
+      "1080",
+      "RMB",
+      "pro",
+      "Jahr",
+      "anbot."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Flur",
+        "pinyin": "",
+        "meaning": "corredor"
+      },
+      {
+        "id": 2,
+        "word": "anscheinend",
+        "pinyin": "",
+        "meaning": "aparentemente, parece que"
+      },
+      {
+        "id": 3,
+        "word": "Werbung",
+        "pinyin": "",
+        "meaning": "anúncio, publicidade"
+      },
+      {
+        "id": 4,
+        "word": "Glasfaser-Internet",
+        "pinyin": "",
+        "meaning": "internet de fibra óptica"
+      },
+      {
+        "id": 5,
+        "word": "anbieten",
+        "pinyin": "",
+        "meaning": "oferecer"
+      },
+      {
+        "id": 6,
+        "word": "pro Jahr",
+        "pinyin": "",
+        "meaning": "por ano"
+      }
+    ],
+    "id": "local-1772394095325-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wirklich? Dann, nachdem dein Vertrag für das Breitband abläuft, kannst du darauf umsteigen.",
+    "pinyin": "",
+    "translation": "A: Sério? Então, depois que seu contrato de banda larga expirar, você pode mudar para isso.",
+    "tokens": [
+      "A:",
+      "Wirklich?",
+      "Dann,",
+      "nachdem",
+      "dein",
+      "Vertrag",
+      "für",
+      "das",
+      "Breitband",
+      "abläuft,",
+      "kannst",
+      "du",
+      "darauf",
+      "umsteigen."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente, sério"
+      },
+      {
+        "id": 2,
+        "word": "nachdem",
+        "pinyin": "",
+        "meaning": "depois que"
+      },
+      {
+        "id": 3,
+        "word": "Vertrag",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "Breitband",
+        "pinyin": "",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 5,
+        "word": "ablaufen",
+        "pinyin": "",
+        "meaning": "expirar, terminar (contrato)"
+      },
+      {
+        "id": 6,
+        "word": "umsteigen",
+        "pinyin": "",
+        "meaning": "mudar, fazer a transição"
+      }
+    ],
+    "id": "local-1772394095325-12",
+    "language": "Alemão"
+  }
+]

@@ -1,0 +1,717 @@
+[
+  {
+    "chinese": "A: Happy Valley est ici !",
+    "pinyin": null,
+    "translation": "A: Happy Valley está aqui!",
+    "tokens": [
+      "A:",
+      "Happy",
+      "Valley",
+      "est",
+      "ici",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Happy Valley",
+        "pinyin": null,
+        "meaning": "Parque temático 'Happy Valley'"
+      },
+      {
+        "id": 1,
+        "word": "est",
+        "pinyin": null,
+        "meaning": "é/está (verbo 'être')"
+      },
+      {
+        "id": 2,
+        "word": "ici",
+        "pinyin": null,
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772394598504-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Chouette ! Pourquoi y a-t-il tant de monde ?! Il faut faire la queue pour tout.",
+    "pinyin": null,
+    "translation": "B: Que legal! Por que tem tanta gente?! É preciso fazer fila para tudo.",
+    "tokens": [
+      "B:",
+      "Chouette",
+      "!",
+      "Pourquoi",
+      "y",
+      "a-t-il",
+      "tant",
+      "de",
+      "monde",
+      "?!",
+      "Il",
+      "faut",
+      "faire",
+      "la",
+      "queue",
+      "pour",
+      "tout",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Chouette",
+        "pinyin": null,
+        "meaning": "Legal, bacana (interjeição)"
+      },
+      {
+        "id": 1,
+        "word": "Pourquoi",
+        "pinyin": null,
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "y a-t-il",
+        "pinyin": null,
+        "meaning": "há, tem (forma interrogativa)"
+      },
+      {
+        "id": 3,
+        "word": "tant de monde",
+        "pinyin": null,
+        "meaning": "tanta gente"
+      },
+      {
+        "id": 4,
+        "word": "Il faut",
+        "pinyin": null,
+        "meaning": "É preciso, deve-se"
+      },
+      {
+        "id": 5,
+        "word": "faire la queue",
+        "pinyin": null,
+        "meaning": "fazer fila"
+      },
+      {
+        "id": 6,
+        "word": "pour tout",
+        "pinyin": null,
+        "meaning": "para tudo"
+      }
+    ],
+    "id": "local-1772394598504-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Alors, un jour ne suffit pas. Ne serait-il pas mieux de prendre un pass annuel ?",
+    "pinyin": null,
+    "translation": "A: Então, um dia não é suficiente. Não seria melhor pegar um passe anual?",
+    "tokens": [
+      "A:",
+      "Alors",
+      ",",
+      "un",
+      "jour",
+      "ne",
+      "suffit",
+      "pas",
+      ".",
+      "Ne",
+      "serait-il",
+      "pas",
+      "mieux",
+      "de",
+      "prendre",
+      "un",
+      "pass",
+      "annuel",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Alors",
+        "pinyin": null,
+        "meaning": "Então"
+      },
+      {
+        "id": 1,
+        "word": "un jour",
+        "pinyin": null,
+        "meaning": "um dia"
+      },
+      {
+        "id": 2,
+        "word": "ne suffit pas",
+        "pinyin": null,
+        "meaning": "não é suficiente"
+      },
+      {
+        "id": 3,
+        "word": "Ne serait-il pas mieux",
+        "pinyin": null,
+        "meaning": "Não seria melhor"
+      },
+      {
+        "id": 4,
+        "word": "prendre",
+        "pinyin": null,
+        "meaning": "pegar, tomar"
+      },
+      {
+        "id": 5,
+        "word": "un pass annuel",
+        "pinyin": null,
+        "meaning": "um passe anual"
+      }
+    ],
+    "id": "local-1772394598504-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Pensons-y plus tard. D'abord, montre-moi ce qui est amusant.",
+    "pinyin": null,
+    "translation": "B: Pensemos nisso mais tarde. Primeiro, me mostre o que é divertido.",
+    "tokens": [
+      "B:",
+      "Pensons-y",
+      "plus",
+      "tard",
+      ".",
+      "D'abord",
+      ",",
+      "montre-moi",
+      "ce",
+      "qui",
+      "est",
+      "amusant",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Pensons-y",
+        "pinyin": null,
+        "meaning": "Pensemos nisso (y se refere a 'pass annuel')"
+      },
+      {
+        "id": 1,
+        "word": "plus tard",
+        "pinyin": null,
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 2,
+        "word": "D'abord",
+        "pinyin": null,
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 3,
+        "word": "montre-moi",
+        "pinyin": null,
+        "meaning": "mostre-me"
+      },
+      {
+        "id": 4,
+        "word": "amusant",
+        "pinyin": null,
+        "meaning": "divertido"
+      }
+    ],
+    "id": "local-1772394598504-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Regarde, cette grande attraction là-bas avec deux tours et les gens dessus hurlent.",
+    "pinyin": null,
+    "translation": "A: Olhe, aquela grande atração lá com duas torres e as pessoas em cima gritam.",
+    "tokens": [
+      "A:",
+      "Regarde",
+      ",",
+      "cette",
+      "grande",
+      "attraction",
+      "là-bas",
+      "avec",
+      "deux",
+      "tours",
+      "et",
+      "les",
+      "gens",
+      "dessus",
+      "hurlent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Regarde",
+        "pinyin": null,
+        "meaning": "Olha, veja (imperativo de 'regarder')"
+      },
+      {
+        "id": 1,
+        "word": "attraction",
+        "pinyin": null,
+        "meaning": "atração"
+      },
+      {
+        "id": 2,
+        "word": "là-bas",
+        "pinyin": null,
+        "meaning": "lá, ali"
+      },
+      {
+        "id": 3,
+        "word": "tours",
+        "pinyin": null,
+        "meaning": "torres"
+      },
+      {
+        "id": 4,
+        "word": "gens",
+        "pinyin": null,
+        "meaning": "pessoas"
+      },
+      {
+        "id": 5,
+        "word": "dessus",
+        "pinyin": null,
+        "meaning": "em cima"
+      },
+      {
+        "id": 6,
+        "word": "hurlent",
+        "pinyin": null,
+        "meaning": "gritam, berram (verbo 'hurler')"
+      }
+    ],
+    "id": "local-1772394598504-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oh, je sais. C'est les Héros des Tours Jumelles. C'est trop excitant. Je n'ose pas y aller.",
+    "pinyin": null,
+    "translation": "B: Ah, eu sei. São os Heróis das Torres Gêmeas. É muito emocionante. Eu não ouso ir lá.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "je",
+      "sais",
+      ".",
+      "C'est",
+      "les",
+      "Héros",
+      "des",
+      "Tours",
+      "Jumelles",
+      ".",
+      "C'est",
+      "trop",
+      "excitant",
+      ".",
+      "Je",
+      "n'ose",
+      "pas",
+      "y",
+      "aller",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "je sais",
+        "pinyin": null,
+        "meaning": "eu sei"
+      },
+      {
+        "id": 1,
+        "word": "Héros des Tours Jumelles",
+        "pinyin": null,
+        "meaning": "Heróis das Torres Gêmeas (nome da atração)"
+      },
+      {
+        "id": 2,
+        "word": "trop",
+        "pinyin": null,
+        "meaning": "demais, muito"
+      },
+      {
+        "id": 3,
+        "word": "excitant",
+        "pinyin": null,
+        "meaning": "emocionante"
+      },
+      {
+        "id": 4,
+        "word": "Je n'ose pas",
+        "pinyin": null,
+        "meaning": "Eu não ouso"
+      },
+      {
+        "id": 5,
+        "word": "y aller",
+        "pinyin": null,
+        "meaning": "ir lá (y se refere ao lugar)"
+      }
+    ],
+    "id": "local-1772394598504-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Celui d'à côté qui se balance d'avant en arrière est une version améliorée d'un bateau pirate.",
+    "pinyin": null,
+    "translation": "A: Aquele do lado que balança para frente e para trás é uma versão melhorada de um barco pirata.",
+    "tokens": [
+      "A:",
+      "Celui",
+      "d'à",
+      "côté",
+      "qui",
+      "se",
+      "balance",
+      "d'avant",
+      "en",
+      "arrière",
+      "est",
+      "une",
+      "version",
+      "améliorée",
+      "d'un",
+      "bateau",
+      "pirate",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Celui d'à côté",
+        "pinyin": null,
+        "meaning": "Aquele do lado"
+      },
+      {
+        "id": 1,
+        "word": "se balance",
+        "pinyin": null,
+        "meaning": "balança, se balança (verbo 'se balancer')"
+      },
+      {
+        "id": 2,
+        "word": "d'avant en arrière",
+        "pinyin": null,
+        "meaning": "para frente e para trás"
+      },
+      {
+        "id": 3,
+        "word": "améliorée",
+        "pinyin": null,
+        "meaning": "melhorada"
+      },
+      {
+        "id": 4,
+        "word": "un bateau pirate",
+        "pinyin": null,
+        "meaning": "um barco pirata"
+      }
+    ],
+    "id": "local-1772394598504-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ça a l'air aussi effrayant !",
+    "pinyin": null,
+    "translation": "B: Isso parece assustador também!",
+    "tokens": [
+      "B:",
+      "Ça",
+      "a",
+      "l'air",
+      "aussi",
+      "effrayant",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Ça a l'air",
+        "pinyin": null,
+        "meaning": "Isso parece"
+      },
+      {
+        "id": 1,
+        "word": "aussi",
+        "pinyin": null,
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "effrayant",
+        "pinyin": null,
+        "meaning": "assustador"
+      }
+    ],
+    "id": "local-1772394598504-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Le grand à côté du lac est un grand huit en bois.",
+    "pinyin": null,
+    "translation": "A: A grande (atração) ao lado do lago é uma montanha-russa de madeira.",
+    "tokens": [
+      "A:",
+      "Le",
+      "grand",
+      "à",
+      "côté",
+      "du",
+      "lac",
+      "est",
+      "un",
+      "grand",
+      "huit",
+      "en",
+      "bois",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "à côté du",
+        "pinyin": null,
+        "meaning": "ao lado do"
+      },
+      {
+        "id": 1,
+        "word": "lac",
+        "pinyin": null,
+        "meaning": "lago"
+      },
+      {
+        "id": 2,
+        "word": "un grand huit",
+        "pinyin": null,
+        "meaning": "uma montanha-russa"
+      },
+      {
+        "id": 3,
+        "word": "en bois",
+        "pinyin": null,
+        "meaning": "de madeira"
+      }
+    ],
+    "id": "local-1772394598504-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mais il y a trop de monde dans la file. J'estime que ça ferait deux heures d'attente.",
+    "pinyin": null,
+    "translation": "B: Mas há muita gente na fila. Eu estimo que isso daria duas horas de espera.",
+    "tokens": [
+      "B:",
+      "Mais",
+      "il",
+      "y",
+      "a",
+      "trop",
+      "de",
+      "monde",
+      "dans",
+      "la",
+      "file",
+      ".",
+      "J'estime",
+      "que",
+      "ça",
+      "ferait",
+      "deux",
+      "heures",
+      "d'attente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Mais",
+        "pinyin": null,
+        "meaning": "Mas"
+      },
+      {
+        "id": 1,
+        "word": "il y a",
+        "pinyin": null,
+        "meaning": "há, tem"
+      },
+      {
+        "id": 2,
+        "word": "trop de monde",
+        "pinyin": null,
+        "meaning": "muita gente, gente demais"
+      },
+      {
+        "id": 3,
+        "word": "la file",
+        "pinyin": null,
+        "meaning": "a fila"
+      },
+      {
+        "id": 4,
+        "word": "J'estime que",
+        "pinyin": null,
+        "meaning": "Eu estimo que"
+      },
+      {
+        "id": 5,
+        "word": "ça ferait",
+        "pinyin": null,
+        "meaning": "isso daria, isso faria"
+      },
+      {
+        "id": 6,
+        "word": "deux heures d'attente",
+        "pinyin": null,
+        "meaning": "duas horas de espera"
+      }
+    ],
+    "id": "local-1772394598504-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Veux-tu faire Shoot the Chute ? C'est une attraction aquatique classique.",
+    "pinyin": null,
+    "translation": "A: Você quer ir na Shoot the Chute? É uma atração aquática clássica.",
+    "tokens": [
+      "A:",
+      "Veux-tu",
+      "faire",
+      "Shoot",
+      "the",
+      "Chute",
+      "?",
+      "C'est",
+      "une",
+      "attraction",
+      "aquatique",
+      "classique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Veux-tu faire",
+        "pinyin": null,
+        "meaning": "Você quer ir (fazer)"
+      },
+      {
+        "id": 1,
+        "word": "Shoot the Chute",
+        "pinyin": null,
+        "meaning": "Shoot the Chute (nome da atração)"
+      },
+      {
+        "id": 2,
+        "word": "une attraction aquatique",
+        "pinyin": null,
+        "meaning": "uma atração aquática"
+      },
+      {
+        "id": 3,
+        "word": "classique",
+        "pinyin": null,
+        "meaning": "clássica"
+      }
+    ],
+    "id": "local-1772394598504-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord !",
+    "pinyin": null,
+    "translation": "B: De acordo!",
+    "tokens": [
+      "B:",
+      "D'accord",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "D'accord",
+        "pinyin": null,
+        "meaning": "De acordo, ok"
+      }
+    ],
+    "id": "local-1772394598504-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Va faire la queue en premier alors. Je vais acheter des ponchos de pluie jetables.",
+    "pinyin": null,
+    "translation": "A: Vá fazer fila primeiro então. Eu vou comprar capas de chuva descartáveis.",
+    "tokens": [
+      "A:",
+      "Va",
+      "faire",
+      "la",
+      "queue",
+      "en",
+      "premier",
+      "alors",
+      ".",
+      "Je",
+      "vais",
+      "acheter",
+      "des",
+      "ponchos",
+      "de",
+      "pluie",
+      "jetables",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "Va faire la queue",
+        "pinyin": null,
+        "meaning": "Vá fazer fila"
+      },
+      {
+        "id": 1,
+        "word": "en premier",
+        "pinyin": null,
+        "meaning": "primeiro"
+      },
+      {
+        "id": 2,
+        "word": "alors",
+        "pinyin": null,
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "Je vais acheter",
+        "pinyin": null,
+        "meaning": "Eu vou comprar"
+      },
+      {
+        "id": 4,
+        "word": "des ponchos de pluie",
+        "pinyin": null,
+        "meaning": "capas de chuva"
+      },
+      {
+        "id": 5,
+        "word": "jetables",
+        "pinyin": null,
+        "meaning": "descartáveis"
+      }
+    ],
+    "id": "local-1772394598504-12",
+    "language": "Francês"
+  }
+]

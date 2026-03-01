@@ -1,0 +1,774 @@
+[
+  {
+    "chinese": "お父さん、ご飯の時間だよ！",
+    "pinyin": null,
+    "translation": "Pai, é hora de comer!",
+    "tokens": [
+      "お父さん",
+      "、",
+      "ご飯",
+      "の",
+      "時間",
+      "だ",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お父さん",
+        "pinyin": "otōsan",
+        "meaning": "pai"
+      },
+      {
+        "id": 2,
+        "word": "ご飯",
+        "pinyin": "gohan",
+        "meaning": "refeição; arroz cozido"
+      },
+      {
+        "id": 3,
+        "word": "時間",
+        "pinyin": "jikan",
+        "meaning": "tempo; hora"
+      }
+    ],
+    "id": "local-1772394268049-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "今行くよ！",
+    "pinyin": null,
+    "translation": "Já vou!",
+    "tokens": [
+      "今",
+      "行く",
+      "よ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今",
+        "pinyin": "ima",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1772394268049-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "毎日このゲームしてるね。飽きないの？",
+    "pinyin": null,
+    "translation": "Você joga esse jogo todos os dias, né? Não se cansa?",
+    "tokens": [
+      "毎日",
+      "この",
+      "ゲーム",
+      "し",
+      "てる",
+      "ね",
+      "。",
+      "飽きない",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "毎日",
+        "pinyin": "mainichi",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 2,
+        "word": "この",
+        "pinyin": "kono",
+        "meaning": "este; essa"
+      },
+      {
+        "id": 3,
+        "word": "ゲーム",
+        "pinyin": "gēmu",
+        "meaning": "jogo"
+      },
+      {
+        "id": 4,
+        "word": "する",
+        "pinyin": "suru",
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "飽きる",
+        "pinyin": "akiru",
+        "meaning": "cansar-se; entediar-se"
+      }
+    ],
+    "id": "local-1772394268049-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "仕方ないよ。動画を見ると、インターネットのスピードが遅くて、いつも止まっちゃうんだ。",
+    "pinyin": null,
+    "translation": "Não tem jeito. Quando assisto a vídeos, a velocidade da internet é lenta e sempre trava.",
+    "tokens": [
+      "仕方ない",
+      "よ",
+      "。",
+      "動画",
+      "を",
+      "見る",
+      "と",
+      "、",
+      "インターネット",
+      "の",
+      "スピード",
+      "が",
+      "遅く",
+      "て",
+      "、",
+      "いつも",
+      "止まっ",
+      "ちゃう",
+      "んだ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "仕方ない",
+        "pinyin": "shikatanai",
+        "meaning": "não tem jeito; inevitável"
+      },
+      {
+        "id": 2,
+        "word": "動画",
+        "pinyin": "dōga",
+        "meaning": "vídeo"
+      },
+      {
+        "id": 3,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver; assistir"
+      },
+      {
+        "id": 4,
+        "word": "インターネット",
+        "pinyin": "intānetto",
+        "meaning": "internet"
+      },
+      {
+        "id": 5,
+        "word": "スピード",
+        "pinyin": "supīdo",
+        "meaning": "velocidade"
+      },
+      {
+        "id": 6,
+        "word": "遅い",
+        "pinyin": "osoi",
+        "meaning": "lento"
+      },
+      {
+        "id": 7,
+        "word": "いつも",
+        "pinyin": "itsumo",
+        "meaning": "sempre"
+      },
+      {
+        "id": 8,
+        "word": "止まる",
+        "pinyin": "tomaru",
+        "meaning": "parar; travar"
+      }
+    ],
+    "id": "local-1772394268049-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "なんで10Mbpsのブロードバンドしか設置しなかったの？",
+    "pinyin": null,
+    "translation": "Por que você só instalou banda larga de 10Mbps?",
+    "tokens": [
+      "なんで",
+      "10Mbps",
+      "の",
+      "ブロードバンド",
+      "しか",
+      "設置",
+      "し",
+      "なかっ",
+      "た",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "なんで",
+        "pinyin": "nande",
+        "meaning": "por que"
+      },
+      {
+        "id": 2,
+        "word": "ブロードバンド",
+        "pinyin": "burōdobando",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 3,
+        "word": "しか...ない",
+        "pinyin": "shika...nai",
+        "meaning": "apenas; somente (com negação)"
+      },
+      {
+        "id": 4,
+        "word": "設置する",
+        "pinyin": "secchisuru",
+        "meaning": "instalar; configurar"
+      }
+    ],
+    "id": "local-1772394268049-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "わからないよ。君の家にはどんな種類を設置したの？",
+    "pinyin": null,
+    "translation": "Não sei. Que tipo você instalou na sua casa?",
+    "tokens": [
+      "わから",
+      "ない",
+      "よ",
+      "。",
+      "君",
+      "の",
+      "家",
+      "に",
+      "は",
+      "どんな",
+      "種類",
+      "を",
+      "設置",
+      "し",
+      "た",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかる",
+        "pinyin": "wakaru",
+        "meaning": "saber; entender"
+      },
+      {
+        "id": 2,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 3,
+        "word": "家",
+        "pinyin": "ie",
+        "meaning": "casa"
+      },
+      {
+        "id": 4,
+        "word": "どんな",
+        "pinyin": "donna",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 5,
+        "word": "種類",
+        "pinyin": "shurui",
+        "meaning": "tipo; variedade"
+      },
+      {
+        "id": 6,
+        "word": "設置する",
+        "pinyin": "secchisuru",
+        "meaning": "instalar; configurar"
+      }
+    ],
+    "id": "local-1772394268049-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "うち、ずっと前に光ファイバーに切り替えたよ。ブロードバンドなんてダメだよ。",
+    "pinyin": null,
+    "translation": "Nós, na nossa casa, mudamos para fibra óptica há muito tempo. Banda larga é ruim.",
+    "tokens": [
+      "うち",
+      "、",
+      "ずっと",
+      "前",
+      "に",
+      "光ファイバー",
+      "に",
+      "切り替え",
+      "た",
+      "よ",
+      "。",
+      "ブロードバンド",
+      "なんて",
+      "ダメ",
+      "だ",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "うち",
+        "pinyin": "uchi",
+        "meaning": "nossa casa; nós (informal)"
+      },
+      {
+        "id": 2,
+        "word": "ずっと前",
+        "pinyin": "zutto mae",
+        "meaning": "muito tempo atrás"
+      },
+      {
+        "id": 3,
+        "word": "光ファイバー",
+        "pinyin": "hikari faibā",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 4,
+        "word": "切り替える",
+        "pinyin": "kirikaeru",
+        "meaning": "mudar; trocar"
+      },
+      {
+        "id": 5,
+        "word": "ブロードバンド",
+        "pinyin": "burōdobando",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 6,
+        "word": "なんて",
+        "pinyin": "nante",
+        "meaning": "algo como; que coisa (desdém/surpresa)"
+      },
+      {
+        "id": 7,
+        "word": "ダメ",
+        "pinyin": "dame",
+        "meaning": "ruim; inútil; não bom"
+      }
+    ],
+    "id": "local-1772394268049-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "じゃあ、うちでもそれを設置できるの？",
+    "pinyin": null,
+    "translation": "Então, nós também podemos instalar isso?",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "うち",
+      "で",
+      "も",
+      "それ",
+      "を",
+      "設置",
+      "できる",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "うち",
+        "pinyin": "uchi",
+        "meaning": "nossa casa; nós"
+      },
+      {
+        "id": 3,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 4,
+        "word": "設置する",
+        "pinyin": "secchisuru",
+        "meaning": "instalar"
+      },
+      {
+        "id": 5,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder; conseguir"
+      }
+    ],
+    "id": "local-1772394268049-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "それは君の近所が光ファイバーにアクセスできるかどうかによるよ。",
+    "pinyin": null,
+    "translation": "Isso depende se sua vizinhança tem acesso à fibra óptica.",
+    "tokens": [
+      "それ",
+      "は",
+      "君",
+      "の",
+      "近所",
+      "が",
+      "光ファイバー",
+      "に",
+      "アクセス",
+      "できる",
+      "か",
+      "どうか",
+      "に",
+      "よる",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você"
+      },
+      {
+        "id": 3,
+        "word": "近所",
+        "pinyin": "kinjo",
+        "meaning": "vizinhança; bairro"
+      },
+      {
+        "id": 4,
+        "word": "光ファイバー",
+        "pinyin": "hikari faibā",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 5,
+        "word": "アクセス",
+        "pinyin": "akusesu",
+        "meaning": "acesso"
+      },
+      {
+        "id": 6,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder; conseguir"
+      },
+      {
+        "id": 7,
+        "word": "かどうか",
+        "pinyin": "ka dōka",
+        "meaning": "se ou não; se"
+      },
+      {
+        "id": 8,
+        "word": "による",
+        "pinyin": "ni yoru",
+        "meaning": "depender de"
+      }
+    ],
+    "id": "local-1772394268049-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "もしできなかったら、どうすればいい？",
+    "pinyin": null,
+    "translation": "E se não pudermos, o que devo fazer?",
+    "tokens": [
+      "もし",
+      "でき",
+      "なかっ",
+      "たら",
+      "、",
+      "どう",
+      "すれ",
+      "ば",
+      "いい",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "もし",
+        "pinyin": "moshi",
+        "meaning": "se"
+      },
+      {
+        "id": 2,
+        "word": "できる",
+        "pinyin": "dekiru",
+        "meaning": "poder; conseguir"
+      },
+      {
+        "id": 3,
+        "word": "どうすればいい",
+        "pinyin": "dō sureba ii",
+        "meaning": "o que devo fazer"
+      }
+    ],
+    "id": "local-1772394268049-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "そしたら、インターネットの速度を20Mbpsに上げて、試してみるしかないね。",
+    "pinyin": null,
+    "translation": "Nesse caso, você terá que aumentar a velocidade da internet para 20Mbps e tentar.",
+    "tokens": [
+      "そしたら",
+      "、",
+      "インターネット",
+      "の",
+      "速度",
+      "を",
+      "20Mbps",
+      "に",
+      "上げ",
+      "て",
+      "、",
+      "試し",
+      "て",
+      "みる",
+      "しか",
+      "ない",
+      "ね",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "そしたら",
+        "pinyin": "soshitara",
+        "meaning": "então; nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "インターネット",
+        "pinyin": "intānetto",
+        "meaning": "internet"
+      },
+      {
+        "id": 3,
+        "word": "速度",
+        "pinyin": "sokudo",
+        "meaning": "velocidade"
+      },
+      {
+        "id": 4,
+        "word": "上げる",
+        "pinyin": "ageru",
+        "meaning": "aumentar; subir"
+      },
+      {
+        "id": 5,
+        "word": "試す",
+        "pinyin": "tamesu",
+        "meaning": "tentar; experimentar"
+      },
+      {
+        "id": 6,
+        "word": "しか...ない",
+        "pinyin": "shika...nai",
+        "meaning": "não há nada a não ser; só resta"
+      }
+    ],
+    "id": "local-1772394268049-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "廊下に、50Mbpsの光ファイバーインターネットが年間1080人民元で利用できるっていう小さな広告を見た気がする。",
+    "pinyin": null,
+    "translation": "Tenho a impressão de ter visto um pequeno anúncio no corredor dizendo que internet de fibra óptica de 50Mbps está disponível por 1080 yuans por ano.",
+    "tokens": [
+      "廊下",
+      "に",
+      "、",
+      "50Mbps",
+      "の",
+      "光ファイバー",
+      "インターネット",
+      "が",
+      "年間",
+      "1080",
+      "人民元",
+      "で",
+      "利用",
+      "できる",
+      "って",
+      "いう",
+      "小さな",
+      "広告",
+      "を",
+      "見",
+      "た",
+      "気",
+      "が",
+      "する",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "廊下",
+        "pinyin": "rōka",
+        "meaning": "corredor"
+      },
+      {
+        "id": 2,
+        "word": "光ファイバーインターネット",
+        "pinyin": "hikari faibā intānetto",
+        "meaning": "internet de fibra óptica"
+      },
+      {
+        "id": 3,
+        "word": "年間",
+        "pinyin": "nenkan",
+        "meaning": "anualmente; por ano"
+      },
+      {
+        "id": 4,
+        "word": "人民元",
+        "pinyin": "jinmin'gen",
+        "meaning": "yuan (moeda chinesa)"
+      },
+      {
+        "id": 5,
+        "word": "利用する",
+        "pinyin": "riyōsuru",
+        "meaning": "usar; utilizar"
+      },
+      {
+        "id": 6,
+        "word": "っていう",
+        "pinyin": "tte iu",
+        "meaning": "que (partícula citativa informal)"
+      },
+      {
+        "id": 7,
+        "word": "小さい",
+        "pinyin": "chiisai",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 8,
+        "word": "広告",
+        "pinyin": "kōkoku",
+        "meaning": "anúncio"
+      },
+      {
+        "id": 9,
+        "word": "見る",
+        "pinyin": "miru",
+        "meaning": "ver"
+      },
+      {
+        "id": 10,
+        "word": "気がする",
+        "pinyin": "kigasuru",
+        "meaning": "ter a impressão de; sentir que"
+      }
+    ],
+    "id": "local-1772394268049-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "本当？じゃあ、ブロードバンドの契約が切れたら、それに切り替えればいいよ。",
+    "pinyin": null,
+    "translation": "Sério? Então, quando seu contrato de banda larga terminar, você deve mudar para isso.",
+    "tokens": [
+      "本当",
+      "？",
+      "じゃあ",
+      "、",
+      "ブロードバンド",
+      "の",
+      "契約",
+      "が",
+      "切れ",
+      "たら",
+      "、",
+      "それ",
+      "に",
+      "切り替えれ",
+      "ば",
+      "いい",
+      "よ",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "hontō",
+        "meaning": "verdade; sério"
+      },
+      {
+        "id": 2,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "ブロードバンド",
+        "pinyin": "burōdobando",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 4,
+        "word": "契約",
+        "pinyin": "keiyaku",
+        "meaning": "contrato"
+      },
+      {
+        "id": 5,
+        "word": "切れる",
+        "pinyin": "kireru",
+        "meaning": "terminar; expirar"
+      },
+      {
+        "id": 6,
+        "word": "それ",
+        "pinyin": "sore",
+        "meaning": "isso"
+      },
+      {
+        "id": 7,
+        "word": "切り替える",
+        "pinyin": "kirikaeru",
+        "meaning": "mudar; trocar"
+      }
+    ],
+    "id": "local-1772394268049-12",
+    "language": "Japonês"
+  }
+]

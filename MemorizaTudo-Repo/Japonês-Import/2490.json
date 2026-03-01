@@ -1,0 +1,842 @@
+[
+  {
+    "chinese": "A: 珍珍、大学入試の点数、調べた？",
+    "pinyin": "",
+    "translation": "A: Zhenzhen, você verificou sua nota do vestibular?",
+    "tokens": [
+      "珍珍",
+      "、",
+      "大学入試",
+      "の",
+      "点数",
+      "、",
+      "調べ",
+      "た",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "珍珍",
+        "pinyin": "zhenzhen",
+        "meaning": "Zhenzhen (nome)"
+      },
+      {
+        "id": 1,
+        "word": "大学入試",
+        "pinyin": "daigaku nyuushi",
+        "meaning": "vestibular, exame de admissão à universidade"
+      },
+      {
+        "id": 2,
+        "word": "点数",
+        "pinyin": "tensuu",
+        "meaning": "nota, pontuação"
+      },
+      {
+        "id": 3,
+        "word": "調べる",
+        "pinyin": "shiraberu",
+        "meaning": "verificar, pesquisar"
+      }
+    ],
+    "id": "local-1772394028741-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: うん、452点だったよ。君は？",
+    "pinyin": "",
+    "translation": "B: Sim, foi 452 pontos. E você?",
+    "tokens": [
+      "うん",
+      "、",
+      "452",
+      "点",
+      "だった",
+      "よ",
+      "。",
+      "君",
+      "は",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "うん",
+        "pinyin": "un",
+        "meaning": "sim (informal)"
+      },
+      {
+        "id": 1,
+        "word": "点",
+        "pinyin": "ten",
+        "meaning": "ponto, contador para notas"
+      },
+      {
+        "id": 2,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você (informal)"
+      }
+    ],
+    "id": "local-1772394028741-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: わあ、すごく高いね。私は417点しか取れなかったよ。",
+    "pinyin": "",
+    "translation": "A: Uau, é muito alto! Eu só consegui 417 pontos.",
+    "tokens": [
+      "わあ",
+      "、",
+      "すごく",
+      "高い",
+      "ね",
+      "。",
+      "私",
+      "は",
+      "417",
+      "点",
+      "しか",
+      "取れ",
+      "なかった",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "わあ",
+        "pinyin": "waa",
+        "meaning": "Uau! (interjeição de surpresa)"
+      },
+      {
+        "id": 1,
+        "word": "すごく",
+        "pinyin": "sugoku",
+        "meaning": "muito, extremamente"
+      },
+      {
+        "id": 2,
+        "word": "高い",
+        "pinyin": "takai",
+        "meaning": "alto (para notas, preços)"
+      },
+      {
+        "id": 3,
+        "word": "しか",
+        "pinyin": "shika",
+        "meaning": "só, apenas (usado com negativo)"
+      },
+      {
+        "id": 4,
+        "word": "取れる",
+        "pinyin": "toreru",
+        "meaning": "conseguir, obter"
+      }
+    ],
+    "id": "local-1772394028741-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: じゃあ、だいたい同じくらいだね。文系の最低合格点は一般的に理系より高いから。",
+    "pinyin": "",
+    "translation": "B: Bem, então é mais ou menos o mesmo. A nota mínima de aprovação para cursos de humanas geralmente é mais alta do que para cursos de exatas.",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "だいたい",
+      "同じくらい",
+      "だ",
+      "ね",
+      "。",
+      "文系",
+      "の",
+      "最低",
+      "合格点",
+      "は",
+      "一般的に",
+      "理系",
+      "より",
+      "高い",
+      "から",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "bem, então"
+      },
+      {
+        "id": 1,
+        "word": "だいたい",
+        "pinyin": "daitai",
+        "meaning": "aproximadamente, mais ou menos"
+      },
+      {
+        "id": 2,
+        "word": "同じくらい",
+        "pinyin": "onaji kurai",
+        "meaning": "mais ou menos o mesmo"
+      },
+      {
+        "id": 3,
+        "word": "文系",
+        "pinyin": "bunkei",
+        "meaning": "área de humanas"
+      },
+      {
+        "id": 4,
+        "word": "最低",
+        "pinyin": "saitei",
+        "meaning": "mínimo"
+      },
+      {
+        "id": 5,
+        "word": "合格点",
+        "pinyin": "goukakuten",
+        "meaning": "nota de aprovação"
+      },
+      {
+        "id": 6,
+        "word": "一般的に",
+        "pinyin": "ippanteki ni",
+        "meaning": "geralmente, em geral"
+      },
+      {
+        "id": 7,
+        "word": "理系",
+        "pinyin": "rikei",
+        "meaning": "área de exatas"
+      },
+      {
+        "id": 8,
+        "word": "より",
+        "pinyin": "yori",
+        "meaning": "do que (comparativo)"
+      },
+      {
+        "id": 9,
+        "word": "から",
+        "pinyin": "kara",
+        "meaning": "porque, então"
+      }
+    ],
+    "id": "local-1772394028741-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 多分、まだ同じ大学に行けるかもね。どこの大学に申し込むつもり？",
+    "pinyin": "",
+    "translation": "A: Talvez ainda possamos ir para a mesma universidade. Para qual universidade você pretende se inscrever?",
+    "tokens": [
+      "多分",
+      "、",
+      "まだ",
+      "同じ",
+      "大学",
+      "に",
+      "行ける",
+      "かも",
+      "ね",
+      "。",
+      "どこ",
+      "の",
+      "大学",
+      "に",
+      "申し込む",
+      "つもり",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "多分",
+        "pinyin": "tabun",
+        "meaning": "provavelmente, talvez"
+      },
+      {
+        "id": 1,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "同じ",
+        "pinyin": "onaji",
+        "meaning": "mesmo"
+      },
+      {
+        "id": 3,
+        "word": "大学",
+        "pinyin": "daigaku",
+        "meaning": "universidade"
+      },
+      {
+        "id": 4,
+        "word": "行ける",
+        "pinyin": "ikeru",
+        "meaning": "poder ir (forma potencial de 行く)"
+      },
+      {
+        "id": 5,
+        "word": "かも",
+        "pinyin": "kamo",
+        "meaning": "talvez, é possível que"
+      },
+      {
+        "id": 6,
+        "word": "どこ",
+        "pinyin": "doko",
+        "meaning": "onde"
+      },
+      {
+        "id": 7,
+        "word": "申し込む",
+        "pinyin": "moushikomu",
+        "meaning": "se inscrever, aplicar"
+      },
+      {
+        "id": 8,
+        "word": "つもり",
+        "pinyin": "tsumori",
+        "meaning": "intenção de"
+      }
+    ],
+    "id": "local-1772394028741-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: まだ決めてないんだ。君はもう考えた？",
+    "pinyin": "",
+    "translation": "B: Ainda não decidi. Você já pensou?",
+    "tokens": [
+      "まだ",
+      "決め",
+      "て",
+      "ない",
+      "ん",
+      "だ",
+      "。",
+      "君",
+      "は",
+      "もう",
+      "考えた",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 1,
+        "word": "決める",
+        "pinyin": "kimeru",
+        "meaning": "decidir"
+      },
+      {
+        "id": 2,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 3,
+        "word": "もう",
+        "pinyin": "mou",
+        "meaning": "já"
+      },
+      {
+        "id": 4,
+        "word": "考える",
+        "pinyin": "kangaeru",
+        "meaning": "pensar"
+      }
+    ],
+    "id": "local-1772394028741-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ううん、私もまだだよ。何の専攻を勉強したい？",
+    "pinyin": "",
+    "translation": "A: Não, eu também ainda não. Qual curso você quer estudar?",
+    "tokens": [
+      "ううん",
+      "、",
+      "私",
+      "も",
+      "まだ",
+      "だ",
+      "よ",
+      "。",
+      "何",
+      "の",
+      "専攻",
+      "を",
+      "勉強",
+      "したい",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "ううん",
+        "pinyin": "uun",
+        "meaning": "não (informal)"
+      },
+      {
+        "id": 1,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "何",
+        "pinyin": "nani",
+        "meaning": "o quê"
+      },
+      {
+        "id": 3,
+        "word": "専攻",
+        "pinyin": "senkou",
+        "meaning": "especialização, curso"
+      },
+      {
+        "id": 4,
+        "word": "勉強する",
+        "pinyin": "benkyou suru",
+        "meaning": "estudar"
+      },
+      {
+        "id": 5,
+        "word": "したい",
+        "pinyin": "shitai",
+        "meaning": "querer fazer (forma -tai de する)"
+      }
+    ],
+    "id": "local-1772394028741-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 中国語学科に応募したいんだけど、お父さんとお母さんは会計学を勉強してほしいみたい。",
+    "pinyin": "",
+    "translation": "B: Eu quero me candidatar para o departamento de Língua Chinesa, mas meus pais querem que eu estude contabilidade.",
+    "tokens": [
+      "中国語",
+      "学科",
+      "に",
+      "応募",
+      "したい",
+      "ん",
+      "だけど",
+      "、",
+      "お父さん",
+      "と",
+      "お母さん",
+      "は",
+      "会計学",
+      "を",
+      "勉強",
+      "して",
+      "ほしい",
+      "みたい",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "中国語",
+        "pinyin": "chuugokugo",
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 1,
+        "word": "学科",
+        "pinyin": "gakka",
+        "meaning": "departamento, curso"
+      },
+      {
+        "id": 2,
+        "word": "応募する",
+        "pinyin": "oubo suru",
+        "meaning": "se candidatar, aplicar"
+      },
+      {
+        "id": 3,
+        "word": "んだけど",
+        "pinyin": "n'dakedo",
+        "meaning": "mas, embora (conjunção informal)"
+      },
+      {
+        "id": 4,
+        "word": "お父さん",
+        "pinyin": "otousan",
+        "meaning": "pai"
+      },
+      {
+        "id": 5,
+        "word": "お母さん",
+        "pinyin": "okaasan",
+        "meaning": "mãe"
+      },
+      {
+        "id": 6,
+        "word": "会計学",
+        "pinyin": "kaikeigaku",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 7,
+        "word": "勉強する",
+        "pinyin": "benkyou suru",
+        "meaning": "estudar"
+      },
+      {
+        "id": 8,
+        "word": "ほしい",
+        "pinyin": "hoshii",
+        "meaning": "querer (que outra pessoa faça algo)"
+      },
+      {
+        "id": 9,
+        "word": "みたい",
+        "pinyin": "mitai",
+        "meaning": "parece que, é como se"
+      }
+    ],
+    "id": "local-1772394028741-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 中国語学科は一番就職が難しいって聞いたよ。",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que o departamento de Língua Chinesa é o mais difícil para conseguir emprego.",
+    "tokens": [
+      "中国語",
+      "学科",
+      "は",
+      "一番",
+      "就職",
+      "が",
+      "難しい",
+      "って",
+      "聞い",
+      "た",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "中国語",
+        "pinyin": "chuugokugo",
+        "meaning": "língua chinesa"
+      },
+      {
+        "id": 1,
+        "word": "学科",
+        "pinyin": "gakka",
+        "meaning": "departamento, curso"
+      },
+      {
+        "id": 2,
+        "word": "一番",
+        "pinyin": "ichiban",
+        "meaning": "o mais, número um"
+      },
+      {
+        "id": 3,
+        "word": "就職",
+        "pinyin": "shuushoku",
+        "meaning": "conseguir emprego"
+      },
+      {
+        "id": 4,
+        "word": "難しい",
+        "pinyin": "muzukashii",
+        "meaning": "difícil"
+      },
+      {
+        "id": 5,
+        "word": "って",
+        "pinyin": "tte",
+        "meaning": "que (forma informal de と言う)"
+      },
+      {
+        "id": 6,
+        "word": "聞く",
+        "pinyin": "kiku",
+        "meaning": "ouvir"
+      }
+    ],
+    "id": "local-1772394028741-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: でも、私は文学が好きだし、会計学はつまらなそう。君はどの専攻に応募したい？",
+    "pinyin": "",
+    "translation": "B: Mas eu gosto de literatura, e contabilidade parece chato. Em qual curso você quer se candidatar?",
+    "tokens": [
+      "でも",
+      "、",
+      "私",
+      "は",
+      "文学",
+      "が",
+      "好き",
+      "だし",
+      "、",
+      "会計学",
+      "は",
+      "つまらなそう",
+      "。",
+      "君",
+      "は",
+      "どの",
+      "専攻",
+      "に",
+      "応募",
+      "したい",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "でも",
+        "pinyin": "demo",
+        "meaning": "mas"
+      },
+      {
+        "id": 1,
+        "word": "文学",
+        "pinyin": "bungaku",
+        "meaning": "literatura"
+      },
+      {
+        "id": 2,
+        "word": "好き",
+        "pinyin": "suki",
+        "meaning": "gostar"
+      },
+      {
+        "id": 3,
+        "word": "だし",
+        "pinyin": "dashi",
+        "meaning": "e (além disso, listando razões)"
+      },
+      {
+        "id": 4,
+        "word": "会計学",
+        "pinyin": "kaikeigaku",
+        "meaning": "contabilidade"
+      },
+      {
+        "id": 5,
+        "word": "つまらない",
+        "pinyin": "tsumaranai",
+        "meaning": "chato, entediante"
+      },
+      {
+        "id": 6,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 7,
+        "word": "どの",
+        "pinyin": "dono",
+        "meaning": "qual (seguido por substantivo)"
+      },
+      {
+        "id": 8,
+        "word": "専攻",
+        "pinyin": "senkou",
+        "meaning": "especialização, curso"
+      },
+      {
+        "id": 9,
+        "word": "応募する",
+        "pinyin": "oubo suru",
+        "meaning": "se candidatar, aplicar"
+      },
+      {
+        "id": 10,
+        "word": "したい",
+        "pinyin": "shitai",
+        "meaning": "querer fazer"
+      }
+    ],
+    "id": "local-1772394028741-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私はコンピューターを勉強したいな。就職の見込みはかなり良いよ。",
+    "pinyin": "",
+    "translation": "A: Eu quero estudar computação. As perspectivas de emprego são bem boas.",
+    "tokens": [
+      "私",
+      "は",
+      "コンピューター",
+      "を",
+      "勉強",
+      "したい",
+      "な",
+      "。",
+      "就職",
+      "の",
+      "見込み",
+      "は",
+      "かなり",
+      "良い",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "コンピューター",
+        "pinyin": "konpyuutaa",
+        "meaning": "computador, computação"
+      },
+      {
+        "id": 1,
+        "word": "勉強する",
+        "pinyin": "benkyou suru",
+        "meaning": "estudar"
+      },
+      {
+        "id": 2,
+        "word": "したい",
+        "pinyin": "shitai",
+        "meaning": "querer fazer"
+      },
+      {
+        "id": 3,
+        "word": "就職",
+        "pinyin": "shuushoku",
+        "meaning": "conseguir emprego"
+      },
+      {
+        "id": 4,
+        "word": "見込み",
+        "pinyin": "mikomi",
+        "meaning": "perspectiva, expectativa"
+      },
+      {
+        "id": 5,
+        "word": "かなり",
+        "pinyin": "kanari",
+        "meaning": "bastante, muito"
+      },
+      {
+        "id": 6,
+        "word": "良い",
+        "pinyin": "ii",
+        "meaning": "bom"
+      }
+    ],
+    "id": "local-1772394028741-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: へえ。じゃあ、もし後で私が仕事を見つけられなかったら、毎日私を食事に誘ってくれるんだね。",
+    "pinyin": "",
+    "translation": "B: Ah. Então, se mais tarde eu não conseguir encontrar um emprego, você vai me convidar para jantar todos os dias, né?",
+    "tokens": [
+      "へえ",
+      "。",
+      "じゃあ",
+      "、",
+      "もし",
+      "後で",
+      "私",
+      "が",
+      "仕事",
+      "を",
+      "見つけられなかったら",
+      "、",
+      "毎日",
+      "私",
+      "を",
+      "食事",
+      "に",
+      "誘ってくれる",
+      "ん",
+      "だ",
+      "ね",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 0,
+        "word": "へえ",
+        "pinyin": "hee",
+        "meaning": "ah, entendi (interjeição de surpresa/compreensão)"
+      },
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jaa",
+        "meaning": "bem, então"
+      },
+      {
+        "id": 2,
+        "word": "もし",
+        "pinyin": "moshi",
+        "meaning": "se (condicional)"
+      },
+      {
+        "id": 3,
+        "word": "後で",
+        "pinyin": "atode",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 4,
+        "word": "仕事",
+        "pinyin": "shigoto",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 5,
+        "word": "見つける",
+        "pinyin": "mitsukeru",
+        "meaning": "encontrar"
+      },
+      {
+        "id": 6,
+        "word": "毎日",
+        "pinyin": "mainichi",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 7,
+        "word": "食事",
+        "pinyin": "shokuji",
+        "meaning": "refeição"
+      },
+      {
+        "id": 8,
+        "word": "誘う",
+        "pinyin": "sasou",
+        "meaning": "convidar"
+      },
+      {
+        "id": 9,
+        "word": "〜てくれる",
+        "pinyin": "~te kureru",
+        "meaning": "fazer um favor para mim"
+      }
+    ],
+    "id": "local-1772394028741-11",
+    "language": "Japonês"
+  }
+]

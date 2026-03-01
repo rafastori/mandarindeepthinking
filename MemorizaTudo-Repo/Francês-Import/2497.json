@@ -1,0 +1,623 @@
+[
+  {
+    "chinese": "A: Je suis fichu ! Je dois être en cours à huit heures et j'ai en fait fait la grasse matinée !",
+    "pinyin": "",
+    "translation": "A: Estou perdido! Eu deveria estar na aula às oito horas e na verdade dormi demais!",
+    "tokens": [
+      "A:",
+      "Je",
+      "suis",
+      "fichu",
+      "!",
+      "Je",
+      "dois",
+      "être",
+      "en",
+      "cours",
+      "à",
+      "huit",
+      "heures",
+      "et",
+      "j'ai",
+      "en",
+      "fait",
+      "fait",
+      "la",
+      "grasse",
+      "matinée",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fichu",
+        "pinyin": "",
+        "meaning": "perdido, arruinado"
+      },
+      {
+        "id": 2,
+        "word": "en cours",
+        "pinyin": "",
+        "meaning": "em aula"
+      },
+      {
+        "id": 3,
+        "word": "huit heures",
+        "pinyin": "",
+        "meaning": "oito horas"
+      },
+      {
+        "id": 4,
+        "word": "en fait",
+        "pinyin": "",
+        "meaning": "na verdade, de fato"
+      },
+      {
+        "id": 5,
+        "word": "faire la grasse matinée",
+        "pinyin": "",
+        "meaning": "dormir até tarde"
+      }
+    ],
+    "id": "local-1772394367532-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il n'est que sept heures trente. Pourquoi es-tu pressé ?",
+    "pinyin": "",
+    "translation": "B: São apenas sete e meia. Por que você está com pressa?",
+    "tokens": [
+      "B:",
+      "Il",
+      "n'est",
+      "que",
+      "sept",
+      "heures",
+      "trente",
+      ".",
+      "Pourquoi",
+      "es-tu",
+      "pressé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Il n'est que",
+        "pinyin": "",
+        "meaning": "são apenas"
+      },
+      {
+        "id": 2,
+        "word": "sept heures trente",
+        "pinyin": "",
+        "meaning": "sete e meia"
+      },
+      {
+        "id": 3,
+        "word": "pressé",
+        "pinyin": "",
+        "meaning": "com pressa, apressado"
+      }
+    ],
+    "id": "local-1772394367532-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Beibei, tu n'as pas de cours aussi ?",
+    "pinyin": "",
+    "translation": "A: Beibei, você não tem aula também?",
+    "tokens": [
+      "A:",
+      "Beibei",
+      ",",
+      "tu",
+      "n'as",
+      "pas",
+      "de",
+      "cours",
+      "aussi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cours",
+        "pinyin": "",
+        "meaning": "aula, curso"
+      },
+      {
+        "id": 2,
+        "word": "aussi",
+        "pinyin": "",
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1772394367532-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Vas-y doucement. De toute façon, tout le monde sera en retard.",
+    "pinyin": "",
+    "translation": "B: Vá com calma. De qualquer forma, todo mundo estará atrasado.",
+    "tokens": [
+      "B:",
+      "Vas-y",
+      "doucement",
+      ".",
+      "De",
+      "toute",
+      "façon",
+      ",",
+      "tout",
+      "le",
+      "monde",
+      "sera",
+      "en",
+      "retard",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vas-y doucement",
+        "pinyin": "",
+        "meaning": "vá com calma, devagar"
+      },
+      {
+        "id": 2,
+        "word": "De toute façon",
+        "pinyin": "",
+        "meaning": "de qualquer forma, de todo modo"
+      },
+      {
+        "id": 3,
+        "word": "tout le monde",
+        "pinyin": "",
+        "meaning": "todo mundo, todas as pessoas"
+      },
+      {
+        "id": 4,
+        "word": "en retard",
+        "pinyin": "",
+        "meaning": "atrasado"
+      }
+    ],
+    "id": "local-1772394367532-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les autres de notre classe sont tous très ponctuels.",
+    "pinyin": "",
+    "translation": "A: Os outros da nossa turma são todos muito pontuais.",
+    "tokens": [
+      "A:",
+      "Les",
+      "autres",
+      "de",
+      "notre",
+      "classe",
+      "sont",
+      "tous",
+      "très",
+      "ponctuels",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "les autres",
+        "pinyin": "",
+        "meaning": "os outros"
+      },
+      {
+        "id": 2,
+        "word": "classe",
+        "pinyin": "",
+        "meaning": "turma, classe"
+      },
+      {
+        "id": 3,
+        "word": "ponctuels",
+        "pinyin": "",
+        "meaning": "pontuais"
+      }
+    ],
+    "id": "local-1772394367532-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est parce que vous êtes tous de nouveaux étudiants de première année. Quand j'étais en première année, j'étais bien sage aussi. Si tu ne me crois pas, demande à Xiaoyu.",
+    "pinyin": "",
+    "translation": "B: É porque vocês são todos novos estudantes do primeiro ano. Quando eu estava no primeiro ano, eu era bem comportado também. Se você não acredita em mim, pergunte a Xiaoyu.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "parce",
+      "que",
+      "vous",
+      "êtes",
+      "tous",
+      "de",
+      "nouveaux",
+      "étudiants",
+      "de",
+      "première",
+      "année",
+      ".",
+      "Quand",
+      "j'étais",
+      "en",
+      "première",
+      "année",
+      ",",
+      "j'étais",
+      "bien",
+      "sage",
+      "aussi",
+      ".",
+      "Si",
+      "tu",
+      "ne",
+      "me",
+      "crois",
+      "pas",
+      ",",
+      "demande",
+      "à",
+      "Xiaoyu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "parce que",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 2,
+        "word": "nouveaux étudiants",
+        "pinyin": "",
+        "meaning": "novos estudantes"
+      },
+      {
+        "id": 3,
+        "word": "première année",
+        "pinyin": "",
+        "meaning": "primeiro ano"
+      },
+      {
+        "id": 4,
+        "word": "sage",
+        "pinyin": "",
+        "meaning": "comportado, obediente"
+      },
+      {
+        "id": 5,
+        "word": "croire",
+        "pinyin": "",
+        "meaning": "acreditar"
+      },
+      {
+        "id": 6,
+        "word": "demander",
+        "pinyin": "",
+        "meaning": "perguntar, pedir"
+      }
+    ],
+    "id": "local-1772394367532-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oh oui, cet après-midi je dois aller assister à une conférence.",
+    "pinyin": "",
+    "translation": "A: Ah sim, esta tarde eu preciso ir assistir a uma palestra.",
+    "tokens": [
+      "A:",
+      "Oh",
+      "oui",
+      ",",
+      "cet",
+      "après-midi",
+      "je",
+      "dois",
+      "aller",
+      "assister",
+      "à",
+      "une",
+      "conférence",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cet après-midi",
+        "pinyin": "",
+        "meaning": "esta tarde"
+      },
+      {
+        "id": 2,
+        "word": "assister à",
+        "pinyin": "",
+        "meaning": "assistir a, participar de"
+      },
+      {
+        "id": 3,
+        "word": "conférence",
+        "pinyin": "",
+        "meaning": "palestra, conferência"
+      }
+    ],
+    "id": "local-1772394367532-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: C'est celle du Bâtiment n° 3 ? N'y va pas.",
+    "pinyin": "",
+    "translation": "C: É aquela do Edifício n° 3? Não vá.",
+    "tokens": [
+      "C:",
+      "C'est",
+      "celle",
+      "du",
+      "Bâtiment",
+      "n°",
+      "3",
+      "?",
+      "N'y",
+      "va",
+      "pas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "celle",
+        "pinyin": "",
+        "meaning": "aquela"
+      },
+      {
+        "id": 2,
+        "word": "Bâtiment",
+        "pinyin": "",
+        "meaning": "Edifício, Prédio"
+      },
+      {
+        "id": 3,
+        "word": "n°",
+        "pinyin": "",
+        "meaning": "número"
+      },
+      {
+        "id": 4,
+        "word": "n'y va pas",
+        "pinyin": "",
+        "meaning": "não vá (para lá)"
+      }
+    ],
+    "id": "local-1772394367532-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je ne peux pas. Le professeur a dit qu'il y aura un appel.",
+    "pinyin": "",
+    "translation": "A: Eu não posso. O professor disse que haverá uma chamada.",
+    "tokens": [
+      "A:",
+      "Je",
+      "ne",
+      "peux",
+      "pas",
+      ".",
+      "Le",
+      "professeur",
+      "a",
+      "dit",
+      "qu'il",
+      "y",
+      "aura",
+      "un",
+      "appel",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pouvoir",
+        "pinyin": "",
+        "meaning": "poder (verbo)"
+      },
+      {
+        "id": 2,
+        "word": "professeur",
+        "pinyin": "",
+        "meaning": "professor"
+      },
+      {
+        "id": 3,
+        "word": "il y aura",
+        "pinyin": "",
+        "meaning": "haverá"
+      },
+      {
+        "id": 4,
+        "word": "un appel",
+        "pinyin": "",
+        "meaning": "uma chamada, uma lista de presença"
+      }
+    ],
+    "id": "local-1772394367532-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ce truc d'appel, c'est juste pour berner les nouveaux étudiants. Même si tu n'y vas pas, rien ne se passera.",
+    "pinyin": "",
+    "translation": "B: Essa história de chamada é só para enganar os novos estudantes. Mesmo que você não vá, nada vai acontecer.",
+    "tokens": [
+      "B:",
+      "Ce",
+      "truc",
+      "d'appel",
+      ",",
+      "c'est",
+      "juste",
+      "pour",
+      "berner",
+      "les",
+      "nouveaux",
+      "étudiants",
+      ".",
+      "Même",
+      "si",
+      "tu",
+      "n'y",
+      "vas",
+      "pas",
+      ",",
+      "rien",
+      "ne",
+      "se",
+      "passera",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "truc",
+        "pinyin": "",
+        "meaning": "coisa, truque"
+      },
+      {
+        "id": 2,
+        "word": "berner",
+        "pinyin": "",
+        "meaning": "enganar, ludibriar"
+      },
+      {
+        "id": 3,
+        "word": "nouveaux étudiants",
+        "pinyin": "",
+        "meaning": "novos estudantes"
+      },
+      {
+        "id": 4,
+        "word": "même si",
+        "pinyin": "",
+        "meaning": "mesmo que"
+      },
+      {
+        "id": 5,
+        "word": "rien ne se passera",
+        "pinyin": "",
+        "meaning": "nada acontecerá"
+      }
+    ],
+    "id": "local-1772394367532-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Tous les professeurs aiment utiliser les nouveaux étudiants pour remplir les rangs de ce genre de conférences ennuyeuses.",
+    "pinyin": "",
+    "translation": "C: Todos os professores gostam de usar os novos estudantes para preencher as fileiras desse tipo de palestras chatas.",
+    "tokens": [
+      "C:",
+      "Tous",
+      "les",
+      "professeurs",
+      "aiment",
+      "utiliser",
+      "les",
+      "nouveaux",
+      "étudiants",
+      "pour",
+      "remplir",
+      "les",
+      "rangs",
+      "de",
+      "ce",
+      "genre",
+      "de",
+      "conférences",
+      "ennuyeuses",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tous les",
+        "pinyin": "",
+        "meaning": "todos os"
+      },
+      {
+        "id": 2,
+        "word": "professeurs",
+        "pinyin": "",
+        "meaning": "professores"
+      },
+      {
+        "id": 3,
+        "word": "utiliser",
+        "pinyin": "",
+        "meaning": "usar"
+      },
+      {
+        "id": 4,
+        "word": "remplir les rangs",
+        "pinyin": "",
+        "meaning": "preencher as fileiras"
+      },
+      {
+        "id": 5,
+        "word": "ce genre de",
+        "pinyin": "",
+        "meaning": "esse tipo de"
+      },
+      {
+        "id": 6,
+        "word": "ennuyeuses",
+        "pinyin": "",
+        "meaning": "chatas, entediantes"
+      }
+    ],
+    "id": "local-1772394367532-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'y vais maintenant. Au revoir !",
+    "pinyin": "",
+    "translation": "A: Eu vou agora. Adeus!",
+    "tokens": [
+      "A:",
+      "J'y",
+      "vais",
+      "maintenant",
+      ".",
+      "Au",
+      "revoir",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "J'y vais",
+        "pinyin": "",
+        "meaning": "eu vou (para lá)"
+      },
+      {
+        "id": 2,
+        "word": "maintenant",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 3,
+        "word": "Au revoir",
+        "pinyin": "",
+        "meaning": "Adeus, Até logo"
+      }
+    ],
+    "id": "local-1772394367532-11",
+    "language": "Francês"
+  }
+]

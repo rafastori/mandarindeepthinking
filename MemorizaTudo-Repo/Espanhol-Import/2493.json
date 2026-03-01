@@ -1,0 +1,665 @@
+[
+  {
+    "chinese": "A: ¡Papá, es hora de comer!",
+    "pinyin": "",
+    "translation": "A: Papai, é hora de comer!",
+    "tokens": [
+      "A:",
+      "¡Papá,",
+      "es",
+      "hora",
+      "de",
+      "comer!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Papá",
+        "pinyin": "",
+        "meaning": "Papai"
+      },
+      {
+        "id": 2,
+        "word": "hora de comer",
+        "pinyin": "",
+        "meaning": "hora de comer"
+      }
+    ],
+    "id": "local-1772394148411-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Ya voy!",
+    "pinyin": "",
+    "translation": "B: Já vou!",
+    "tokens": [
+      "B:",
+      "¡Ya",
+      "voy!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ya",
+        "pinyin": "",
+        "meaning": "Já"
+      },
+      {
+        "id": 2,
+        "word": "voy",
+        "pinyin": "",
+        "meaning": "vou (verbo ir)"
+      }
+    ],
+    "id": "local-1772394148411-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Juegas a este juego todos los días. ¿No te parece aburrido?",
+    "pinyin": "",
+    "translation": "A: Você joga este jogo todos os dias. Não te parece chato?",
+    "tokens": [
+      "A:",
+      "Juegas",
+      "a",
+      "este",
+      "juego",
+      "todos",
+      "los",
+      "días.",
+      "¿No",
+      "te",
+      "parece",
+      "aburrido?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Juegas",
+        "pinyin": "",
+        "meaning": "Você joga (verbo jugar)"
+      },
+      {
+        "id": 2,
+        "word": "juego",
+        "pinyin": "",
+        "meaning": "jogo"
+      },
+      {
+        "id": 3,
+        "word": "todos los días",
+        "pinyin": "",
+        "meaning": "todos os dias"
+      },
+      {
+        "id": 4,
+        "word": "parece",
+        "pinyin": "",
+        "meaning": "parece (verbo parecer)"
+      },
+      {
+        "id": 5,
+        "word": "aburrido",
+        "pinyin": "",
+        "meaning": "chato, entediante"
+      }
+    ],
+    "id": "local-1772394148411-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No puedo hacer nada al respecto. Cuando veo videos, la velocidad de internet es demasiado lenta. Siempre se detiene.",
+    "pinyin": "",
+    "translation": "B: Não posso fazer nada a respeito. Quando vejo vídeos, a velocidade da internet é muito lenta. Sempre para.",
+    "tokens": [
+      "B:",
+      "No",
+      "puedo",
+      "hacer",
+      "nada",
+      "al",
+      "respecto.",
+      "Cuando",
+      "veo",
+      "videos,",
+      "la",
+      "velocidad",
+      "de",
+      "internet",
+      "es",
+      "demasiado",
+      "lenta.",
+      "Siempre",
+      "se",
+      "detiene."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "puedo",
+        "pinyin": "",
+        "meaning": "posso (verbo poder)"
+      },
+      {
+        "id": 2,
+        "word": "hacer nada al respecto",
+        "pinyin": "",
+        "meaning": "fazer nada a respeito"
+      },
+      {
+        "id": 3,
+        "word": "veo",
+        "pinyin": "",
+        "meaning": "vejo (verbo ver)"
+      },
+      {
+        "id": 4,
+        "word": "velocidad de internet",
+        "pinyin": "",
+        "meaning": "velocidade da internet"
+      },
+      {
+        "id": 5,
+        "word": "demasiado lenta",
+        "pinyin": "",
+        "meaning": "muito lenta"
+      },
+      {
+        "id": 6,
+        "word": "Siempre",
+        "pinyin": "",
+        "meaning": "Sempre"
+      },
+      {
+        "id": 7,
+        "word": "se detiene",
+        "pinyin": "",
+        "meaning": "para (verbo detenerse)"
+      }
+    ],
+    "id": "local-1772394148411-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿Por qué solo instalaste 10 Mbps de banda ancha?",
+    "pinyin": "",
+    "translation": "A: Por que você instalou apenas 10 Mbps de banda larga?",
+    "tokens": [
+      "A:",
+      "¿Por",
+      "qué",
+      "solo",
+      "instalaste",
+      "10",
+      "Mbps",
+      "de",
+      "banda",
+      "ancha?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Por qué",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 2,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 3,
+        "word": "instalaste",
+        "pinyin": "",
+        "meaning": "você instalou (verbo instalar)"
+      },
+      {
+        "id": 4,
+        "word": "banda ancha",
+        "pinyin": "",
+        "meaning": "banda larga"
+      }
+    ],
+    "id": "local-1772394148411-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: No entiendo. ¿Qué tipo instalaste en tu casa?",
+    "pinyin": "",
+    "translation": "B: Não entendo. Que tipo você instalou na sua casa?",
+    "tokens": [
+      "B:",
+      "No",
+      "entiendo.",
+      "¿Qué",
+      "tipo",
+      "instalaste",
+      "en",
+      "tu",
+      "casa?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entiendo",
+        "pinyin": "",
+        "meaning": "entendo (verbo entender)"
+      },
+      {
+        "id": 2,
+        "word": "Qué tipo",
+        "pinyin": "",
+        "meaning": "Que tipo"
+      },
+      {
+        "id": 3,
+        "word": "instalaste",
+        "pinyin": "",
+        "meaning": "você instalou (verbo instalar)"
+      },
+      {
+        "id": 4,
+        "word": "casa",
+        "pinyin": "",
+        "meaning": "casa"
+      }
+    ],
+    "id": "local-1772394148411-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Nos cambiamos a fibra óptica hace mucho tiempo; la banda ancha y todo eso apesta.",
+    "pinyin": "",
+    "translation": "A: Nós mudamos para fibra óptica há muito tempo; a banda larga e tudo isso é horrível.",
+    "tokens": [
+      "A:",
+      "Nos",
+      "cambiamos",
+      "a",
+      "fibra",
+      "óptica",
+      "hace",
+      "mucho",
+      "tiempo;",
+      "la",
+      "banda",
+      "ancha",
+      "y",
+      "todo",
+      "eso",
+      "apesta."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nos cambiamos",
+        "pinyin": "",
+        "meaning": "Nós mudamos (verbo cambiarse)"
+      },
+      {
+        "id": 2,
+        "word": "fibra óptica",
+        "pinyin": "",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 3,
+        "word": "hace mucho tiempo",
+        "pinyin": "",
+        "meaning": "há muito tempo"
+      },
+      {
+        "id": 4,
+        "word": "banda ancha",
+        "pinyin": "",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 5,
+        "word": "apesta",
+        "pinyin": "",
+        "meaning": "é horrível, fede (verbo apestar)"
+      }
+    ],
+    "id": "local-1772394148411-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces, ¿puedo instalar eso en nuestra casa?",
+    "pinyin": "",
+    "translation": "B: Então, posso instalar isso na nossa casa?",
+    "tokens": [
+      "B:",
+      "Entonces,",
+      "¿puedo",
+      "instalar",
+      "eso",
+      "en",
+      "nuestra",
+      "casa?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "puedo",
+        "pinyin": "",
+        "meaning": "posso (verbo poder)"
+      },
+      {
+        "id": 3,
+        "word": "instalar",
+        "pinyin": "",
+        "meaning": "instalar"
+      },
+      {
+        "id": 4,
+        "word": "nuestra casa",
+        "pinyin": "",
+        "meaning": "nossa casa"
+      }
+    ],
+    "id": "local-1772394148411-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Eso depende de si tu vecindario tiene acceso a fibra óptica.",
+    "pinyin": "",
+    "translation": "A: Isso depende se o seu bairro tem acesso a fibra óptica.",
+    "tokens": [
+      "A:",
+      "Eso",
+      "depende",
+      "de",
+      "si",
+      "tu",
+      "vecindario",
+      "tiene",
+      "acceso",
+      "a",
+      "fibra",
+      "óptica."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Eso depende",
+        "pinyin": "",
+        "meaning": "Isso depende"
+      },
+      {
+        "id": 2,
+        "word": "vecindario",
+        "pinyin": "",
+        "meaning": "bairro, vizinhança"
+      },
+      {
+        "id": 3,
+        "word": "tiene acceso",
+        "pinyin": "",
+        "meaning": "tem acesso (verbo tener acceso)"
+      },
+      {
+        "id": 4,
+        "word": "fibra óptica",
+        "pinyin": "",
+        "meaning": "fibra óptica"
+      }
+    ],
+    "id": "local-1772394148411-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué debo hacer si no lo tiene?",
+    "pinyin": "",
+    "translation": "B: O que devo fazer se não tiver?",
+    "tokens": [
+      "B:",
+      "¿Qué",
+      "debo",
+      "hacer",
+      "si",
+      "no",
+      "lo",
+      "tiene?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qué debo hacer",
+        "pinyin": "",
+        "meaning": "O que devo fazer (verbo deber hacer)"
+      },
+      {
+        "id": 2,
+        "word": "si no lo tiene",
+        "pinyin": "",
+        "meaning": "se não tiver"
+      }
+    ],
+    "id": "local-1772394148411-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces solo podrías actualizar tu velocidad de internet a 20 Mbps e intentarlo.",
+    "pinyin": "",
+    "translation": "A: Então você só poderia atualizar sua velocidade de internet para 20 Mbps e tentar.",
+    "tokens": [
+      "A:",
+      "Entonces",
+      "solo",
+      "podrías",
+      "actualizar",
+      "tu",
+      "velocidad",
+      "de",
+      "internet",
+      "a",
+      "20",
+      "Mbps",
+      "e",
+      "intentarlo."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 3,
+        "word": "podrías",
+        "pinyin": "",
+        "meaning": "você poderia (verbo poder)"
+      },
+      {
+        "id": 4,
+        "word": "actualizar",
+        "pinyin": "",
+        "meaning": "atualizar"
+      },
+      {
+        "id": 5,
+        "word": "velocidad de internet",
+        "pinyin": "",
+        "meaning": "velocidade de internet"
+      },
+      {
+        "id": 6,
+        "word": "intentarlo",
+        "pinyin": "",
+        "meaning": "tentar (verbo intentar)"
+      }
+    ],
+    "id": "local-1772394148411-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: En el pasillo, me parece que vi un pequeño anuncio que decía internet de fibra óptica a 50 Mbps por 1080 RMB al año.",
+    "pinyin": "",
+    "translation": "B: No corredor, parece-me que vi um pequeno anúncio que dizia internet de fibra óptica a 50 Mbps por 1080 RMB por ano.",
+    "tokens": [
+      "B:",
+      "En",
+      "el",
+      "pasillo,",
+      "me",
+      "parece",
+      "que",
+      "vi",
+      "un",
+      "pequeño",
+      "anuncio",
+      "que",
+      "decía",
+      "internet",
+      "de",
+      "fibra",
+      "óptica",
+      "a",
+      "50",
+      "Mbps",
+      "por",
+      "1080",
+      "RMB",
+      "al",
+      "año."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pasillo",
+        "pinyin": "",
+        "meaning": "corredor"
+      },
+      {
+        "id": 2,
+        "word": "me parece",
+        "pinyin": "",
+        "meaning": "parece-me"
+      },
+      {
+        "id": 3,
+        "word": "vi",
+        "pinyin": "",
+        "meaning": "eu vi (verbo ver)"
+      },
+      {
+        "id": 4,
+        "word": "pequeño",
+        "pinyin": "",
+        "meaning": "pequeno"
+      },
+      {
+        "id": 5,
+        "word": "anuncio",
+        "pinyin": "",
+        "meaning": "anúncio"
+      },
+      {
+        "id": 6,
+        "word": "decía",
+        "pinyin": "",
+        "meaning": "dizia (verbo decir)"
+      },
+      {
+        "id": 7,
+        "word": "fibra óptica",
+        "pinyin": "",
+        "meaning": "fibra óptica"
+      },
+      {
+        "id": 8,
+        "word": "al año",
+        "pinyin": "",
+        "meaning": "por ano"
+      }
+    ],
+    "id": "local-1772394148411-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿En serio? Entonces, después de que expire tu contrato de banda ancha, puedes cambiarte a eso.",
+    "pinyin": "",
+    "translation": "A: É sério? Então, depois que seu contrato de banda larga expirar, você pode mudar para isso.",
+    "tokens": [
+      "A:",
+      "¿En",
+      "serio?",
+      "Entonces,",
+      "después",
+      "de",
+      "que",
+      "expire",
+      "tu",
+      "contrato",
+      "de",
+      "banda",
+      "ancha,",
+      "puedes",
+      "cambiarte",
+      "a",
+      "eso."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En serio",
+        "pinyin": "",
+        "meaning": "É sério?"
+      },
+      {
+        "id": 2,
+        "word": "Entonces",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "después de que",
+        "pinyin": "",
+        "meaning": "depois que"
+      },
+      {
+        "id": 4,
+        "word": "expire",
+        "pinyin": "",
+        "meaning": "expirar (verbo expirar)"
+      },
+      {
+        "id": 5,
+        "word": "contrato",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 6,
+        "word": "banda ancha",
+        "pinyin": "",
+        "meaning": "banda larga"
+      },
+      {
+        "id": 7,
+        "word": "puedes cambiarte",
+        "pinyin": "",
+        "meaning": "você pode mudar (verbo cambiarse)"
+      }
+    ],
+    "id": "local-1772394148411-12",
+    "language": "Espanhol"
+  }
+]

@@ -1,0 +1,833 @@
+[
+  {
+    "chinese": "A: Happy Valley is here!",
+    "pinyin": "",
+    "translation": "A: Happy Valley é aqui!",
+    "tokens": [
+      "A:",
+      "Happy",
+      "Valley",
+      "is",
+      "here",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Happy Valley",
+        "pinyin": "",
+        "meaning": "Parque temático Happy Valley"
+      },
+      {
+        "id": 2,
+        "word": "is",
+        "pinyin": "",
+        "meaning": "é/está"
+      },
+      {
+        "id": 3,
+        "word": "here",
+        "pinyin": "",
+        "meaning": "aqui"
+      }
+    ],
+    "id": "local-1772393241506-0",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Yippee! Why are there so many people?!",
+    "pinyin": "",
+    "translation": "B: Eba! Por que tem tanta gente?!",
+    "tokens": [
+      "B:",
+      "Yippee",
+      "!",
+      "Why",
+      "are",
+      "there",
+      "so",
+      "many",
+      "people",
+      "?!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Yippee",
+        "pinyin": "",
+        "meaning": "Eba!/Oba!"
+      },
+      {
+        "id": 2,
+        "word": "Why",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "so many",
+        "pinyin": "",
+        "meaning": "muita/muitos"
+      },
+      {
+        "id": 4,
+        "word": "people",
+        "pinyin": "",
+        "meaning": "pessoas"
+      }
+    ],
+    "id": "local-1772393241506-1",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "You have to line up for everything.",
+    "pinyin": "",
+    "translation": "Você tem que fazer fila para tudo.",
+    "tokens": [
+      "You",
+      "have",
+      "to",
+      "line",
+      "up",
+      "for",
+      "everything",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "have to",
+        "pinyin": "",
+        "meaning": "ter que"
+      },
+      {
+        "id": 2,
+        "word": "line up",
+        "pinyin": "",
+        "meaning": "fazer fila"
+      },
+      {
+        "id": 3,
+        "word": "everything",
+        "pinyin": "",
+        "meaning": "tudo"
+      }
+    ],
+    "id": "local-1772393241506-2",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: So one day is not enough.",
+    "pinyin": "",
+    "translation": "A: Então, um dia não é o suficiente.",
+    "tokens": [
+      "A:",
+      "So",
+      "one",
+      "day",
+      "is",
+      "not",
+      "enough",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "So",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "one day",
+        "pinyin": "",
+        "meaning": "um dia"
+      },
+      {
+        "id": 3,
+        "word": "enough",
+        "pinyin": "",
+        "meaning": "suficiente"
+      }
+    ],
+    "id": "local-1772393241506-3",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "Wouldn't it be better to get an annual pass?",
+    "pinyin": "",
+    "translation": "Não seria melhor pegar um passe anual?",
+    "tokens": [
+      "Wouldn't",
+      "it",
+      "be",
+      "better",
+      "to",
+      "get",
+      "an",
+      "annual",
+      "pass",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wouldn't it be better",
+        "pinyin": "",
+        "meaning": "Não seria melhor"
+      },
+      {
+        "id": 2,
+        "word": "get",
+        "pinyin": "",
+        "meaning": "obter/pegar"
+      },
+      {
+        "id": 3,
+        "word": "annual pass",
+        "pinyin": "",
+        "meaning": "passe anual"
+      }
+    ],
+    "id": "local-1772393241506-4",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Let's think about that later.",
+    "pinyin": "",
+    "translation": "B: Vamos pensar nisso depois.",
+    "tokens": [
+      "B:",
+      "Let's",
+      "think",
+      "about",
+      "that",
+      "later",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Let's",
+        "pinyin": "",
+        "meaning": "Vamos"
+      },
+      {
+        "id": 2,
+        "word": "think about",
+        "pinyin": "",
+        "meaning": "pensar sobre"
+      },
+      {
+        "id": 3,
+        "word": "later",
+        "pinyin": "",
+        "meaning": "depois"
+      }
+    ],
+    "id": "local-1772393241506-5",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "First, show me what's fun.",
+    "pinyin": "",
+    "translation": "Primeiro, me mostre o que é divertido.",
+    "tokens": [
+      "First",
+      ",",
+      "show",
+      "me",
+      "what's",
+      "fun",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "First",
+        "pinyin": "",
+        "meaning": "Primeiro"
+      },
+      {
+        "id": 2,
+        "word": "show",
+        "pinyin": "",
+        "meaning": "mostrar"
+      },
+      {
+        "id": 3,
+        "word": "fun",
+        "pinyin": "",
+        "meaning": "divertido"
+      }
+    ],
+    "id": "local-1772393241506-6",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Look, that tall one up ahead with two towers and the people on it are screeching.",
+    "pinyin": "",
+    "translation": "A: Olha, aquele alto lá na frente com duas torres e as pessoas nele estão gritando.",
+    "tokens": [
+      "A:",
+      "Look",
+      ",",
+      "that",
+      "tall",
+      "one",
+      "up",
+      "ahead",
+      "with",
+      "two",
+      "towers",
+      "and",
+      "the",
+      "people",
+      "on",
+      "it",
+      "are",
+      "screeching",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Look",
+        "pinyin": "",
+        "meaning": "Olha"
+      },
+      {
+        "id": 2,
+        "word": "tall",
+        "pinyin": "",
+        "meaning": "alto"
+      },
+      {
+        "id": 3,
+        "word": "up ahead",
+        "pinyin": "",
+        "meaning": "lá na frente"
+      },
+      {
+        "id": 4,
+        "word": "towers",
+        "pinyin": "",
+        "meaning": "torres"
+      },
+      {
+        "id": 5,
+        "word": "screeching",
+        "pinyin": "",
+        "meaning": "gritando (som agudo)"
+      }
+    ],
+    "id": "local-1772393241506-7",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Oh, I know.",
+    "pinyin": "",
+    "translation": "B: Ah, eu sei.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "I",
+      "know",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "know",
+        "pinyin": "",
+        "meaning": "saber/conhecer"
+      }
+    ],
+    "id": "local-1772393241506-8",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's the Twin Tower Heroes.",
+    "pinyin": "",
+    "translation": "É o Twin Tower Heroes.",
+    "tokens": [
+      "It's",
+      "the",
+      "Twin",
+      "Tower",
+      "Heroes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Twin Tower Heroes",
+        "pinyin": "",
+        "meaning": "Heróis das Torres Gêmeas (nome de atração)"
+      }
+    ],
+    "id": "local-1772393241506-9",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's too exciting.",
+    "pinyin": "",
+    "translation": "É muito emocionante.",
+    "tokens": [
+      "It's",
+      "too",
+      "exciting",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "too",
+        "pinyin": "",
+        "meaning": "demais/muito"
+      },
+      {
+        "id": 2,
+        "word": "exciting",
+        "pinyin": "",
+        "meaning": "emocionante"
+      }
+    ],
+    "id": "local-1772393241506-10",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I don't dare go on it.",
+    "pinyin": "",
+    "translation": "Eu não me atrevo a ir nele.",
+    "tokens": [
+      "I",
+      "don't",
+      "dare",
+      "go",
+      "on",
+      "it",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "don't dare",
+        "pinyin": "",
+        "meaning": "não ousar/não se atrever"
+      },
+      {
+        "id": 2,
+        "word": "go on",
+        "pinyin": "",
+        "meaning": "ir em/participar de"
+      }
+    ],
+    "id": "local-1772393241506-11",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: The one next to it that sways back and forth is an upgraded version of a pirate ship.",
+    "pinyin": "",
+    "translation": "A: Aquele ao lado que balança para frente e para trás é uma versão aprimorada de um navio pirata.",
+    "tokens": [
+      "A:",
+      "The",
+      "one",
+      "next",
+      "to",
+      "it",
+      "that",
+      "sways",
+      "back",
+      "and",
+      "forth",
+      "is",
+      "an",
+      "upgraded",
+      "version",
+      "of",
+      "a",
+      "pirate",
+      "ship",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "next to",
+        "pinyin": "",
+        "meaning": "ao lado de"
+      },
+      {
+        "id": 2,
+        "word": "sways",
+        "pinyin": "",
+        "meaning": "balança"
+      },
+      {
+        "id": 3,
+        "word": "back and forth",
+        "pinyin": "",
+        "meaning": "para frente e para trás"
+      },
+      {
+        "id": 4,
+        "word": "upgraded version",
+        "pinyin": "",
+        "meaning": "versão aprimorada"
+      },
+      {
+        "id": 5,
+        "word": "pirate ship",
+        "pinyin": "",
+        "meaning": "navio pirata"
+      }
+    ],
+    "id": "local-1772393241506-12",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: It also looks so frightening!",
+    "pinyin": "",
+    "translation": "B: Também parece tão assustador!",
+    "tokens": [
+      "B:",
+      "It",
+      "also",
+      "looks",
+      "so",
+      "frightening",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 2,
+        "word": "looks",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 3,
+        "word": "frightening",
+        "pinyin": "",
+        "meaning": "assustador"
+      }
+    ],
+    "id": "local-1772393241506-13",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: The large scale one beside the lake is a roller coaster constructed of wood.",
+    "pinyin": "",
+    "translation": "A: Aquele em grande escala ao lado do lago é uma montanha-russa construída de madeira.",
+    "tokens": [
+      "A:",
+      "The",
+      "large",
+      "scale",
+      "one",
+      "beside",
+      "the",
+      "lake",
+      "is",
+      "a",
+      "roller",
+      "coaster",
+      "constructed",
+      "of",
+      "wood",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "large scale",
+        "pinyin": "",
+        "meaning": "grande escala"
+      },
+      {
+        "id": 2,
+        "word": "beside",
+        "pinyin": "",
+        "meaning": "ao lado de"
+      },
+      {
+        "id": 3,
+        "word": "lake",
+        "pinyin": "",
+        "meaning": "lago"
+      },
+      {
+        "id": 4,
+        "word": "roller coaster",
+        "pinyin": "",
+        "meaning": "montanha-russa"
+      },
+      {
+        "id": 5,
+        "word": "constructed of wood",
+        "pinyin": "",
+        "meaning": "construída de madeira"
+      }
+    ],
+    "id": "local-1772393241506-14",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: But there are too many people in the line-up.",
+    "pinyin": "",
+    "translation": "B: Mas tem muita gente na fila.",
+    "tokens": [
+      "B:",
+      "But",
+      "there",
+      "are",
+      "too",
+      "many",
+      "people",
+      "in",
+      "the",
+      "line-up",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "But",
+        "pinyin": "",
+        "meaning": "Mas"
+      },
+      {
+        "id": 2,
+        "word": "too many",
+        "pinyin": "",
+        "meaning": "gente demais/muita gente"
+      },
+      {
+        "id": 3,
+        "word": "line-up",
+        "pinyin": "",
+        "meaning": "fila"
+      }
+    ],
+    "id": "local-1772393241506-15",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I estimate it would be two hours in the line-up.",
+    "pinyin": "",
+    "translation": "Eu estimo que seriam duas horas na fila.",
+    "tokens": [
+      "I",
+      "estimate",
+      "it",
+      "would",
+      "be",
+      "two",
+      "hours",
+      "in",
+      "the",
+      "line-up",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "estimate",
+        "pinyin": "",
+        "meaning": "estimar"
+      },
+      {
+        "id": 2,
+        "word": "two hours",
+        "pinyin": "",
+        "meaning": "duas horas"
+      },
+      {
+        "id": 3,
+        "word": "in the line-up",
+        "pinyin": "",
+        "meaning": "na fila"
+      }
+    ],
+    "id": "local-1772393241506-16",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: Do you want to go on Shoot the Chute?",
+    "pinyin": "",
+    "translation": "A: Você quer ir no Shoot the Chute?",
+    "tokens": [
+      "A:",
+      "Do",
+      "you",
+      "want",
+      "to",
+      "go",
+      "on",
+      "Shoot",
+      "the",
+      "Chute",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "want to",
+        "pinyin": "",
+        "meaning": "querer"
+      },
+      {
+        "id": 2,
+        "word": "go on",
+        "pinyin": "",
+        "meaning": "ir em/participar de"
+      },
+      {
+        "id": 3,
+        "word": "Shoot the Chute",
+        "pinyin": "",
+        "meaning": "Shoot the Chute (nome de atração aquática)"
+      }
+    ],
+    "id": "local-1772393241506-17",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "It's a classic water ride.",
+    "pinyin": "",
+    "translation": "É um brinquedo aquático clássico.",
+    "tokens": [
+      "It's",
+      "a",
+      "classic",
+      "water",
+      "ride",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "classic",
+        "pinyin": "",
+        "meaning": "clássico"
+      },
+      {
+        "id": 2,
+        "word": "water ride",
+        "pinyin": "",
+        "meaning": "brinquedo aquático"
+      }
+    ],
+    "id": "local-1772393241506-18",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "B: Ok!",
+    "pinyin": "",
+    "translation": "B: Ok!",
+    "tokens": [
+      "B:",
+      "Ok",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ok",
+        "pinyin": "",
+        "meaning": "Ok/Certo"
+      }
+    ],
+    "id": "local-1772393241506-19",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "A: You go and line up first then.",
+    "pinyin": "",
+    "translation": "A: Você vai e faz fila primeiro então.",
+    "tokens": [
+      "A:",
+      "You",
+      "go",
+      "and",
+      "line",
+      "up",
+      "first",
+      "then",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "go",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 2,
+        "word": "line up",
+        "pinyin": "",
+        "meaning": "fazer fila"
+      },
+      {
+        "id": 3,
+        "word": "first",
+        "pinyin": "",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 4,
+        "word": "then",
+        "pinyin": "",
+        "meaning": "então"
+      }
+    ],
+    "id": "local-1772393241506-20",
+    "language": "Inglês"
+  },
+  {
+    "chinese": "I'll go buy disposable rain ponchos.",
+    "pinyin": "",
+    "translation": "Vou comprar ponchos de chuva descartáveis.",
+    "tokens": [
+      "I'll",
+      "go",
+      "buy",
+      "disposable",
+      "rain",
+      "ponchos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "buy",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 2,
+        "word": "disposable",
+        "pinyin": "",
+        "meaning": "descartável"
+      },
+      {
+        "id": 3,
+        "word": "rain ponchos",
+        "pinyin": "",
+        "meaning": "ponchos de chuva"
+      }
+    ],
+    "id": "local-1772393241506-21",
+    "language": "Inglês"
+  }
+]

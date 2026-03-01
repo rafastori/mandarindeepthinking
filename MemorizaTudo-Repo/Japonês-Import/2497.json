@@ -1,0 +1,700 @@
+[
+  {
+    "chinese": "A: もうだめだ！８時に授業があるのに、寝過ごしちゃった！",
+    "pinyin": null,
+    "translation": "A: Não aguento mais! Tenho aula às 8h, mas acabei dormindo demais!",
+    "tokens": [
+      "もう",
+      "だめだ",
+      "！",
+      "８時",
+      "に",
+      "授業",
+      "が",
+      "ある",
+      "のに",
+      "、",
+      "寝過ごしちゃった",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "もうだめだ",
+        "pinyin": "mou dame da",
+        "meaning": "Não aguento mais / Está tudo perdido"
+      },
+      {
+        "id": 2,
+        "word": "８時",
+        "pinyin": "hachi ji",
+        "meaning": "8 horas"
+      },
+      {
+        "id": 3,
+        "word": "授業",
+        "pinyin": "jugyō",
+        "meaning": "aula"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": "aru",
+        "meaning": "ter / existir"
+      },
+      {
+        "id": 5,
+        "word": "のに",
+        "pinyin": "noni",
+        "meaning": "apesar de / embora"
+      },
+      {
+        "id": 6,
+        "word": "寝過ごす",
+        "pinyin": "nesugosu",
+        "meaning": "dormir demais"
+      }
+    ],
+    "id": "local-1772394491636-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: まだ７時半だよ。何をそんなに急いでるの？",
+    "pinyin": null,
+    "translation": "B: Ainda são 7 e meia. Por que está com tanta pressa?",
+    "tokens": [
+      "まだ",
+      "７時半",
+      "だよ",
+      "。",
+      "何を",
+      "そんなに",
+      "急いでる",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "まだ",
+        "pinyin": "mada",
+        "meaning": "ainda"
+      },
+      {
+        "id": 2,
+        "word": "７時半",
+        "pinyin": "shichi ji han",
+        "meaning": "7 e meia"
+      },
+      {
+        "id": 3,
+        "word": "何を",
+        "pinyin": "nani o",
+        "meaning": "o que"
+      },
+      {
+        "id": 4,
+        "word": "そんなに",
+        "pinyin": "sonna ni",
+        "meaning": "tanto / dessa forma"
+      },
+      {
+        "id": 5,
+        "word": "急ぐ",
+        "pinyin": "isogu",
+        "meaning": "apressar-se / estar com pressa"
+      }
+    ],
+    "id": "local-1772394491636-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ベイベイ、君も授業ないの？",
+    "pinyin": null,
+    "translation": "A: Beibei, você também não tem aula?",
+    "tokens": [
+      "ベイベイ",
+      "、",
+      "君",
+      "も",
+      "授業",
+      "ない",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "君",
+        "pinyin": "kimi",
+        "meaning": "você (informal)"
+      },
+      {
+        "id": 2,
+        "word": "も",
+        "pinyin": "mo",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "授業",
+        "pinyin": "jugyō",
+        "meaning": "aula"
+      },
+      {
+        "id": 4,
+        "word": "ない",
+        "pinyin": "nai",
+        "meaning": "não ter / não existir"
+      }
+    ],
+    "id": "local-1772394491636-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 気楽に行こうよ。どうせみんな遅刻するから。",
+    "pinyin": null,
+    "translation": "B: Vamos com calma. De qualquer forma, todo mundo vai se atrasar.",
+    "tokens": [
+      "気楽に",
+      "行こう",
+      "よ",
+      "。",
+      "どうせ",
+      "みんな",
+      "遅刻する",
+      "から",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "気楽に",
+        "pinyin": "kiraku ni",
+        "meaning": "com calma / de forma descontraída"
+      },
+      {
+        "id": 2,
+        "word": "行こう",
+        "pinyin": "ikou",
+        "meaning": "vamos (forma volitiva de ir)"
+      },
+      {
+        "id": 3,
+        "word": "どうせ",
+        "pinyin": "dōse",
+        "meaning": "de qualquer forma / em todo caso"
+      },
+      {
+        "id": 4,
+        "word": "みんな",
+        "pinyin": "minna",
+        "meaning": "todo mundo / todos"
+      },
+      {
+        "id": 5,
+        "word": "遅刻する",
+        "pinyin": "chikoku suru",
+        "meaning": "atrasar-se"
+      }
+    ],
+    "id": "local-1772394491636-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: クラスの他の人はみんな時間厳守だよ。",
+    "pinyin": null,
+    "translation": "A: As outras pessoas da turma são todas pontuais.",
+    "tokens": [
+      "クラス",
+      "の",
+      "他の",
+      "人",
+      "は",
+      "みんな",
+      "時間厳守",
+      "だよ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "クラス",
+        "pinyin": "kurasu",
+        "meaning": "turma / classe"
+      },
+      {
+        "id": 2,
+        "word": "他の",
+        "pinyin": "hoka no",
+        "meaning": "outros"
+      },
+      {
+        "id": 3,
+        "word": "人",
+        "pinyin": "hito",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 4,
+        "word": "みんな",
+        "pinyin": "minna",
+        "meaning": "todos"
+      },
+      {
+        "id": 5,
+        "word": "時間厳守",
+        "pinyin": "jikan genshu",
+        "meaning": "pontualidade / ser pontual"
+      }
+    ],
+    "id": "local-1772394491636-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは君たちが新入生だからだよ。僕も１年生の時は真面目だったよ。信じないならシャオユーに聞いてごらん。",
+    "pinyin": null,
+    "translation": "B: Isso é porque vocês são calouros. Eu também era sério quando estava no primeiro ano. Se não acreditar, pergunte ao Xiaoyu.",
+    "tokens": [
+      "それは",
+      "君たち",
+      "が",
+      "新入生",
+      "だから",
+      "だよ",
+      "。",
+      "僕",
+      "も",
+      "１年生",
+      "の",
+      "時",
+      "は",
+      "真面目だった",
+      "よ",
+      "。",
+      "信じない",
+      "なら",
+      "シャオユー",
+      "に",
+      "聞いてごらん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "君たち",
+        "pinyin": "kimitachi",
+        "meaning": "vocês"
+      },
+      {
+        "id": 2,
+        "word": "新入生",
+        "pinyin": "shinnyūsei",
+        "meaning": "calouro / estudante do primeiro ano"
+      },
+      {
+        "id": 3,
+        "word": "だから",
+        "pinyin": "dakara",
+        "meaning": "por isso / porque"
+      },
+      {
+        "id": 4,
+        "word": "僕",
+        "pinyin": "boku",
+        "meaning": "eu (masculino, informal)"
+      },
+      {
+        "id": 5,
+        "word": "１年生",
+        "pinyin": "ichinen sei",
+        "meaning": "estudante do primeiro ano"
+      },
+      {
+        "id": 6,
+        "word": "時",
+        "pinyin": "toki",
+        "meaning": "tempo / quando"
+      },
+      {
+        "id": 7,
+        "word": "真面目",
+        "pinyin": "majime",
+        "meaning": "sério / diligente"
+      },
+      {
+        "id": 8,
+        "word": "信じる",
+        "pinyin": "shinjiru",
+        "meaning": "acreditar"
+      },
+      {
+        "id": 9,
+        "word": "なら",
+        "pinyin": "nara",
+        "meaning": "se"
+      },
+      {
+        "id": 10,
+        "word": "聞いてごらん",
+        "pinyin": "kiite goran",
+        "meaning": "por favor, pergunte (tente perguntar)"
+      }
+    ],
+    "id": "local-1772394491636-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ああ、そうだ、今日の午後、講演会に出なきゃ。",
+    "pinyin": null,
+    "translation": "A: Ah, é verdade, tenho que ir a uma palestra hoje à tarde.",
+    "tokens": [
+      "ああ",
+      "、",
+      "そうだ",
+      "、",
+      "今日",
+      "の",
+      "午後",
+      "、",
+      "講演会",
+      "に",
+      "出なきゃ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ああ",
+        "pinyin": "aa",
+        "meaning": "ah"
+      },
+      {
+        "id": 2,
+        "word": "そうだ",
+        "pinyin": "sō da",
+        "meaning": "é verdade / isso mesmo"
+      },
+      {
+        "id": 3,
+        "word": "今日",
+        "pinyin": "kyō",
+        "meaning": "hoje"
+      },
+      {
+        "id": 4,
+        "word": "午後",
+        "pinyin": "gogo",
+        "meaning": "tarde (período da tarde)"
+      },
+      {
+        "id": 5,
+        "word": "講演会",
+        "pinyin": "kōenkai",
+        "meaning": "palestra / conferência"
+      },
+      {
+        "id": 6,
+        "word": "出なきゃ",
+        "pinyin": "denakya",
+        "meaning": "tenho que ir/participar (forma contraída de 出なければならない)"
+      }
+    ],
+    "id": "local-1772394491636-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: ３号館のやつ？行くなよ。",
+    "pinyin": null,
+    "translation": "C: O da Sala 3? Não vá.",
+    "tokens": [
+      "３号館",
+      "の",
+      "やつ",
+      "？",
+      "行くな",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "３号館",
+        "pinyin": "san gōkan",
+        "meaning": "Edifício/Prédio nº 3"
+      },
+      {
+        "id": 2,
+        "word": "やつ",
+        "pinyin": "yatsu",
+        "meaning": "coisa / cara (informal, aqui se refere à palestra)"
+      },
+      {
+        "id": 3,
+        "word": "行くな",
+        "pinyin": "ikuna",
+        "meaning": "não vá (forma proibitiva)"
+      }
+    ],
+    "id": "local-1772394491636-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ダメだよ。先生が出席を取るって言ってた。",
+    "pinyin": null,
+    "translation": "A: Não posso. O professor disse que faria chamada.",
+    "tokens": [
+      "ダメだよ",
+      "。",
+      "先生",
+      "が",
+      "出席",
+      "を",
+      "取る",
+      "って",
+      "言ってた",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ダメ",
+        "pinyin": "dame",
+        "meaning": "não pode / ruim"
+      },
+      {
+        "id": 2,
+        "word": "先生",
+        "pinyin": "sensei",
+        "meaning": "professor"
+      },
+      {
+        "id": 3,
+        "word": "出席を取る",
+        "pinyin": "shusseki o toru",
+        "meaning": "fazer chamada / registrar presença"
+      },
+      {
+        "id": 4,
+        "word": "言ってた",
+        "pinyin": "itteta",
+        "meaning": "disse (forma informal de 言っていた)"
+      }
+    ],
+    "id": "local-1772394491636-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: こんな出席確認なんて、新入生を騙すだけだよ。行かなくても何も起こらないさ。",
+    "pinyin": null,
+    "translation": "B: Uma confirmação de presença assim é só para enganar os calouros. Mesmo que não vá, nada acontecerá.",
+    "tokens": [
+      "こんな",
+      "出席確認",
+      "なんて",
+      "、",
+      "新入生",
+      "を",
+      "騙す",
+      "だけ",
+      "だよ",
+      "。",
+      "行かなくても",
+      "何も",
+      "起こらない",
+      "さ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんな",
+        "pinyin": "konna",
+        "meaning": "assim / desse tipo"
+      },
+      {
+        "id": 2,
+        "word": "出席確認",
+        "pinyin": "shusseki kakunin",
+        "meaning": "confirmação de presença"
+      },
+      {
+        "id": 3,
+        "word": "なんて",
+        "pinyin": "nante",
+        "meaning": "algo como (desdém/surpresa)"
+      },
+      {
+        "id": 4,
+        "word": "新入生",
+        "pinyin": "shinnyūsei",
+        "meaning": "calouro"
+      },
+      {
+        "id": 5,
+        "word": "騙す",
+        "pinyin": "damasu",
+        "meaning": "enganar"
+      },
+      {
+        "id": 6,
+        "word": "だけ",
+        "pinyin": "dake",
+        "meaning": "apenas / só"
+      },
+      {
+        "id": 7,
+        "word": "行かなくても",
+        "pinyin": "ikanakutemo",
+        "meaning": "mesmo que não vá"
+      },
+      {
+        "id": 8,
+        "word": "何も",
+        "pinyin": "nani mo",
+        "meaning": "nada"
+      },
+      {
+        "id": 9,
+        "word": "起こる",
+        "pinyin": "okoru",
+        "meaning": "acontecer"
+      }
+    ],
+    "id": "local-1772394491636-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: 先生たちはみんな、こういうつまらない講演に新入生を使って人数を埋めるのが好きなんだよ。",
+    "pinyin": null,
+    "translation": "C: Todos os professores gostam de usar os calouros para preencher o número de pessoas nessas palestras chatas.",
+    "tokens": [
+      "先生たち",
+      "は",
+      "みんな",
+      "、",
+      "こういう",
+      "つまらない",
+      "講演",
+      "に",
+      "新入生",
+      "を",
+      "使って",
+      "人数",
+      "を",
+      "埋める",
+      "の",
+      "が",
+      "好き",
+      "なんだよ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "先生たち",
+        "pinyin": "sensei tachi",
+        "meaning": "os professores"
+      },
+      {
+        "id": 2,
+        "word": "みんな",
+        "pinyin": "minna",
+        "meaning": "todos"
+      },
+      {
+        "id": 3,
+        "word": "こういう",
+        "pinyin": "kō iu",
+        "meaning": "desse tipo / assim"
+      },
+      {
+        "id": 4,
+        "word": "つまらない",
+        "pinyin": "tsumaranai",
+        "meaning": "chato / entediante"
+      },
+      {
+        "id": 5,
+        "word": "講演",
+        "pinyin": "kōen",
+        "meaning": "palestra"
+      },
+      {
+        "id": 6,
+        "word": "新入生",
+        "pinyin": "shinnyūsei",
+        "meaning": "calouro"
+      },
+      {
+        "id": 7,
+        "word": "使う",
+        "pinyin": "tsukau",
+        "meaning": "usar"
+      },
+      {
+        "id": 8,
+        "word": "人数",
+        "pinyin": "ninzū",
+        "meaning": "número de pessoas"
+      },
+      {
+        "id": 9,
+        "word": "埋める",
+        "pinyin": "umeru",
+        "meaning": "preencher"
+      },
+      {
+        "id": 10,
+        "word": "好き",
+        "pinyin": "suki",
+        "meaning": "gostar"
+      }
+    ],
+    "id": "local-1772394491636-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: じゃあ、もう行くね。バイバイ！",
+    "pinyin": null,
+    "translation": "A: Certo, então já vou. Tchau!",
+    "tokens": [
+      "じゃあ",
+      "、",
+      "もう",
+      "行く",
+      "ね",
+      "。",
+      "バイバイ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "じゃあ",
+        "pinyin": "jā",
+        "meaning": "então / bem"
+      },
+      {
+        "id": 2,
+        "word": "もう",
+        "pinyin": "mō",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "行く",
+        "pinyin": "iku",
+        "meaning": "ir"
+      },
+      {
+        "id": 4,
+        "word": "バイバイ",
+        "pinyin": "baibai",
+        "meaning": "tchau"
+      }
+    ],
+    "id": "local-1772394491636-11",
+    "language": "Japonês"
+  }
+]
