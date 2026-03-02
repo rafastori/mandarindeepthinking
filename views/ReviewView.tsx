@@ -6,6 +6,7 @@ import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { Star } from 'lucide-react';
 import VoiceMicButton from '../components/VoiceMicButton';
 import type { useVoiceRecording } from '../hooks/useVoiceRecording';
+import FavoriteModal from '../components/FavoriteModal';
 
 const SUPPORTED_LANGUAGES: { code: SupportedLanguage; label: string }[] = [
     { code: 'zh', label: '中文 (Chinês)' },
@@ -29,13 +30,13 @@ interface ReviewViewProps {
     onRemove: (id: string) => void;
     onUpdateLanguage?: (id: string, data: Partial<StudyItem>) => void;
     activeFolderFilters?: string[];
-    studyMoreIds: string[];
-    onToggleStudyMore: (wordId: string) => void;
     wordCounts: Record<string, any>;
     ignoredReviewWords: string[];
     showOnlyErrors: boolean;
     setShowOnlyErrors: (v: boolean) => void;
     voiceRecording?: ReturnType<typeof useVoiceRecording>;
+    stats?: any;
+    updateFavoriteConfig?: (config: any) => void;
 }
 
 const ReviewView: React.FC<ReviewViewProps> = ({
@@ -44,13 +45,13 @@ const ReviewView: React.FC<ReviewViewProps> = ({
     onRemove,
     onUpdateLanguage,
     activeFolderFilters = [],
-    studyMoreIds,
-    onToggleStudyMore,
     wordCounts,
     ignoredReviewWords,
     showOnlyErrors,
     setShowOnlyErrors,
-    voiceRecording
+    voiceRecording,
+    stats,
+    updateFavoriteConfig
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -66,6 +67,10 @@ const ReviewView: React.FC<ReviewViewProps> = ({
     const [searchActive, setSearchActive] = useState(false);
     // Modal Controls
     const [selectedItem, setSelectedItem] = useState<any>(null);
+
+    // Favoritos
+    const [favoriteModalOpen, setFavoriteModalOpen] = useState(false);
+    const [activeFavoriteWord, setActiveFavoriteWord] = useState<{ id: string; term: string } | null>(null);
 
     // LÓGICA NOVA (Compatível com Firebase e HSK)
     const savedItems = useMemo(() => {
@@ -444,7 +449,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                             id={`review-item-${item.id}`}
                             className={`rounded-lg shadow-sm border-2 transition-all duration-300 ${isSelected ? 'border-red-400 bg-red-50'
                                 : highlightedId === item.id ? 'border-brand-500 bg-brand-50 ring-2 ring-brand-300'
-                                    : studyMoreIds.includes(item.sourceId) ? 'border-amber-400 bg-amber-50'
+                                    : stats.favoriteConfigs?.[item.sourceId] ? 'border-amber-400 bg-amber-50'
                                         : 'bg-white border-slate-100'
                                 }`}
                         >
@@ -550,21 +555,20 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                 {!selectionMode && (
                                     <div className="flex items-center gap-2 flex-shrink-0">
                                         {/* Study More toggle */}
-                                        {onToggleStudyMore && (
-                                            <button
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    onToggleStudyMore(item.sourceId);
-                                                }}
-                                                className={`p-1.5 rounded-full transition-colors ${studyMoreIds.includes(item.sourceId)
-                                                    ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-100'
-                                                    : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'
-                                                    }`}
-                                                title={studyMoreIds.includes(item.sourceId) ? 'Remover de Estudar Mais' : 'Estudar Mais (2x frequência)'}
-                                            >
-                                                <Star className={`w-[18px] h-[18px] ${studyMoreIds.includes(item.sourceId) ? 'fill-current' : ''}`} />
-                                            </button>
-                                        )}
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setActiveFavoriteWord({ id: item.sourceId, term: item.word });
+                                                setFavoriteModalOpen(true);
+                                            }}
+                                            className={`p-1.5 rounded-full transition-colors ${stats.favoriteConfigs?.[item.sourceId]
+                                                ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-100'
+                                                : 'text-slate-300 hover:text-amber-500 hover:bg-amber-50'
+                                                }`}
+                                            title="Favoritar / Frequência"
+                                        >
+                                            <Icon name="star" size={18} fill={stats.favoriteConfigs?.[item.sourceId] ? '#fbbf24' : 'none'} />
+                                        </button>
 
 
                                         <button
@@ -652,6 +656,21 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                         </div>
                     );
                 }))}
+
+            {/* Modal de Favoritos */}
+            {activeFavoriteWord && (
+                <FavoriteModal
+                    isOpen={favoriteModalOpen}
+                    onClose={() => {
+                        setFavoriteModalOpen(false);
+                        setActiveFavoriteWord(null);
+                    }}
+                    wordId={activeFavoriteWord.id}
+                    wordTerm={activeFavoriteWord.term}
+                    currentConfig={stats.favoriteConfigs?.[activeFavoriteWord.id]}
+                    onSave={(config) => updateFavoriteConfig(config || { id: activeFavoriteWord.id, remove: true } as any)}
+                />
+            )}
         </div>
     );
 };

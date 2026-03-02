@@ -4,19 +4,20 @@ import EmptyState from '../components/EmptyState';
 import { StudyItem, Keyword } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { Star } from 'lucide-react';
+import FavoriteModal from '../components/FavoriteModal';
 
 interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
     activeFolderFilters?: string[];
-    studyMoreIds?: string[];
-    onToggleStudyMore?: (wordId: string) => void;
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
+    stats?: any;
+    updateFavoriteConfig?: (config: any) => void;
 }
 
-const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {} }) => {
+const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], showOnlyErrors = false, wordCounts = {}, stats, updateFavoriteConfig }) => {
     const { speak, stop, playingId } = usePuterSpeech();
 
     // Estados do Jogo
@@ -26,6 +27,10 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
     const [isFinished, setIsFinished] = useState(false);
     const [sessionKey, setSessionKey] = useState(0); // Usado para forçar o re-embaralhamento
     const [invertPractice, setInvertPractice] = useState(false); // Estado para inverter (PT -> ZH)
+
+    // Favoritos
+    const [favoriteModalOpen, setFavoriteModalOpen] = useState(false);
+    const [activeFavoriteWord, setActiveFavoriteWord] = useState<{ id: string; term: string } | null>(null);
 
     // Ref para armazenar snapshot estável dos dados (evita re-render causar re-shuffle)
     const dataSnapshotRef = useRef<{ data: StudyItem[]; savedIds: string[] } | null>(null);
@@ -117,8 +122,33 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             }
         });
 
+        // 3. INJETAR CARTÕES DE FREQUÊNCIA ABSOLUTA (Fura Fila)
+        if (stats?.favoriteConfigs) {
+            const now = Date.now();
+            Object.values(stats.favoriteConfigs).forEach(config => {
+                if (config.mode === 'absolute' && config.absoluteIntervalDays) {
+                    const elapsedMs = now - (config.lastReviewedAt || 0);
+                    const isDue = elapsedMs >= (config.absoluteIntervalDays * 24 * 60 * 60 * 1000);
+
+                    if (isDue) {
+                        // Procurar o item original nos dados globais caso ele não esteja no map ainda
+                        const originalWord = currentData.find(d => d.id.toString() === config.id);
+                        if (originalWord && !map.has((originalWord.chinese || '').toLowerCase().trim())) {
+                            map.set((originalWord.chinese || '').toLowerCase().trim(), {
+                                id: originalWord.id.toString(),
+                                word: originalWord.chinese,
+                                pinyin: originalWord.pinyin,
+                                meaning: originalWord.translation,
+                                language: originalWord.language
+                            });
+                        }
+                    }
+                }
+            });
+        }
+
         return map;
-    }, [sessionKey, filtersKey, showOnlyErrors]); // Estável: só muda com sessão, filtros ou toggle de Erros
+    }, [sessionKey, filtersKey, showOnlyErrors, stats?.favoriteConfigs]); // Estável: só muda com sessão, filtros ou toggle de Erros
 
     // Gera questões baseadas nas frases da Leitura que contêm palavras salvas
     const questions = useMemo(() => {
@@ -155,14 +185,29 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             });
         });
 
-        // Boost: duplicate study-more questions for 2x frequency
-        const withBoost = list.flatMap(q =>
-            studyMoreIds.includes(q.id) ? [q, { ...q }] : [q]
-        );
+        // Boost: duplicate favorite definitions based on configs -> relative multiplier and basic absolute injection
+        const withBoost = list.flatMap(q => {
+            const config = stats?.favoriteConfigs?.[q.id];
+            if (!config) return [q];
 
-        // Embaralha sempre que o sessionKey mudar (Nova Sessão)
-        return withBoost.sort(() => 0.5 - Math.random());
-    }, [sessionKey, savedWordsMap, filtersKey]);
+            if (config.mode === 'relative' && config.relativeMultiplier) {
+                return Array(config.relativeMultiplier).fill(0).map((_, i) => i === 0 ? q : { ...q, id: q.id + '-boost-' + i });
+            } else if (config.mode === 'absolute') {
+                // The injection itself is done in savedWordsMap. Here we just ensure we have one copy
+                return [q];
+            }
+            return [q];
+        });
+
+        // Embaralha usando Fisher-Yates para garantir aleatoriedade consistente
+        const shuffledList = [...withBoost];
+        for (let i = shuffledList.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledList[i], shuffledList[j]] = [shuffledList[j], shuffledList[i]];
+        }
+
+        return shuffledList;
+    }, [sessionKey, savedWordsMap, filtersKey, stats?.favoriteConfigs]);
 
     // Recarrega sessão se os dados chegarem depois (evita tela branca inicial)
     useEffect(() => {
@@ -217,6 +262,22 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
         if (currentIndex < questions.length - 1) {
             setCurrentIndex(prev => prev + 1);
         } else {
+            // FINISH SESSION: Update Last Reviewed Timestamp for Absolute Favorites practiced
+            const now = Date.now();
+            const practicedIds = new Set(questions.map(q => q.id));
+            let didUpdate = false;
+
+            practicedIds.forEach(id => {
+                const config = stats?.favoriteConfigs?.[id];
+                if (config && config.mode === 'absolute') {
+                    didUpdate = true;
+                    updateFavoriteConfig({
+                        ...config,
+                        lastReviewedAt: now
+                    });
+                }
+            });
+
             setIsFinished(true);
         }
     };
@@ -376,18 +437,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                         <p className="text-center text-brand-600 text-xs font-medium mt-2">{currentQ.wordMeaning}</p>
                         <p className="text-center text-slate-400 text-xs mt-1 italic">{currentQ.translation}</p>
 
-                        {/* Study More toggle - visible after answering */}
-                        {showResult && onToggleStudyMore && (
+                        {/* Favoritar / Frequência toggle - visible after answering */}
+                        {showResult && (
                             <button
-                                onClick={() => onToggleStudyMore(currentQ.id)}
-                                className={`mt-2 mx-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(currentQ.id)
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setActiveFavoriteWord({ id: currentQ.id, term: currentQ.word });
+                                    setFavoriteModalOpen(true);
+                                }}
+                                className={`mt-2 mx-auto flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${stats.favoriteConfigs?.[currentQ.id]
                                     ? 'bg-amber-100 text-amber-700 border border-amber-300'
                                     : 'bg-slate-100 text-slate-500 hover:bg-slate-200 border border-slate-200'
                                     }`}
-                                title={studyMoreIds.includes(currentQ.id) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
+                                title={stats.favoriteConfigs?.[currentQ.id] ? 'Editar Frequência' : 'Configurar Frequência'}
                             >
-                                <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(currentQ.id) ? 'fill-current text-amber-500' : ''}`} />
-                                {studyMoreIds.includes(currentQ.id) ? 'Estudar Mais ✓' : 'Estudar Mais'}
+                                <Star className={`w-3.5 h-3.5 ${stats.favoriteConfigs?.[currentQ.id] ? 'fill-current text-amber-500' : ''}`} />
                             </button>
                         )}
                     </>
@@ -437,6 +501,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
                     <Icon name="arrow-right" size={14} />
                 </button>
             </div>
+
+            {/* Modal de Favoritos */}
+            {activeFavoriteWord && (
+                <FavoriteModal
+                    isOpen={favoriteModalOpen}
+                    onClose={() => {
+                        setFavoriteModalOpen(false);
+                        setActiveFavoriteWord(null);
+                    }}
+                    wordId={activeFavoriteWord.id}
+                    wordTerm={activeFavoriteWord.term}
+                    currentConfig={stats.favoriteConfigs?.[activeFavoriteWord.id]}
+                    onSave={(config) => updateFavoriteConfig(config || { id: activeFavoriteWord.id, remove: true } as any)}
+                />
+            )}
         </div>
     );
 };

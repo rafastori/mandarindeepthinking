@@ -36,7 +36,6 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
         pratica: '🎯 Prática',
         jogo: '🎮 Jogos',
         lab: '🧪 Laboratório',
-        criativo: '✨ Criativo',
         cards: '🃏 Cards',
         pronuncia: '🎤 Pronúncia',
     };

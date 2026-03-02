@@ -65,7 +65,9 @@ import {
     ChevronLeft,
     Play,
     Clock,
-    Ban
+    Ban,
+    Star,
+    Image
 } from 'lucide-react';
 
 export interface IconProps {
@@ -141,7 +143,9 @@ const icons: Record<string, React.ElementType> = {
     'chevron-left': ChevronLeft,
     'play': Play,
     'clock': Clock,
-    'ban': Ban
+    'ban': Ban,
+    'star': Star,
+    'image': Image
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

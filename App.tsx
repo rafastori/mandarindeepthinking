@@ -13,7 +13,6 @@ import LingoArenaView from './views/LingoArenaView';
 import PolyQuestView from './views/PolyQuestView';
 import DominoView from './views/DominoView';
 import GameSelector from './components/GameSelector';
-import CreativeView from './views/CreativeView';
 import LabView from './views/LabView';
 import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
@@ -57,7 +56,7 @@ const App: React.FC = () => {
 
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
@@ -313,17 +312,6 @@ const App: React.FC = () => {
         }
     };
 
-    const handleToggleStudyMore = (wordId: string) => {
-        const currentIds = activeStats.studyMoreIds || [];
-        const newIds = currentIds.includes(wordId)
-            ? currentIds.filter(id => id !== wordId)
-            : [...currentIds, wordId];
-
-        if (user) {
-            updateCloudStats({ ...activeStats, studyMoreIds: newIds });
-        }
-    };
-
     const handleImportBatch = async (newItems: StudyItem[], folderPath: string) => {
         if (!user) {
             alert("Você precisa estar logado para salvar textos.");
@@ -507,8 +495,8 @@ const App: React.FC = () => {
                         voiceRecording={voiceRecording}
                     />
                 );
-            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} />;
-            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} />;
+            case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;
+            case 'pratica': return <PracticeView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;
             case 'jogo':
                 if (selectedGame === 'selector') {
                     return (
@@ -542,16 +530,7 @@ const App: React.FC = () => {
                 }
                 return null;
             case 'lab': return <LabView data={libraryData} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
-            case 'laboratorio':
-                return (
-                    <CreativeView
-                        data={libraryData}
-                        savedIds={activeSavedIds}
-                        stats={activeStats}
-                        onSave={handleSaveLabItem}
-                    />
-                );
-            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} studyMoreIds={activeStats.studyMoreIds || []} onToggleStudyMore={handleToggleStudyMore} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} voiceRecording={voiceRecording} />;
+            case 'cards': return <CardsView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} showOnlyErrors={showOnlyErrors} wordCounts={activeStats.wordCounts || {}} voiceRecording={voiceRecording} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;
             case 'pronuncia': return <PronunciaView data={libraryData} savedIds={activeSavedIds} onResult={handleRecordResult} activeFolderFilters={activeFolderFilters} />;
             default: return null;
         }

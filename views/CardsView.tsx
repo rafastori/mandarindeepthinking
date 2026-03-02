@@ -7,21 +7,26 @@ import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import { Star } from 'lucide-react';
 import VoiceMicButton from '../components/VoiceMicButton';
 import type { useVoiceRecording } from '../hooks/useVoiceRecording';
+import FavoriteModal from '../components/FavoriteModal';
 
 interface CardsViewProps {
     data: StudyItem[];
     savedIds: string[];
     onResult: (correct: boolean, word: string) => void;
     activeFolderFilters?: string[];
-    studyMoreIds?: string[];
-    onToggleStudyMore?: (wordId: string) => void;
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
     voiceRecording?: ReturnType<typeof useVoiceRecording>;
+    stats?: any;
+    updateFavoriteConfig?: (config: any) => void;
 }
 
-const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], studyMoreIds = [], onToggleStudyMore, showOnlyErrors = false, wordCounts = {}, voiceRecording }) => {
+const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [], showOnlyErrors = false, wordCounts = {}, voiceRecording, stats, updateFavoriteConfig }) => {
     const { speak, stop, playingId } = usePuterSpeech();
+
+    // Favoritos
+    const [favoriteModalOpen, setFavoriteModalOpen] = useState(false);
+    const [activeFavoriteWord, setActiveFavoriteWord] = useState<{ id: string; term: string } | null>(null);
 
     // Estado para inverter lados (Definição <-> Palavra)
     const [invertSide, setInvertSide] = useState(false);
@@ -148,11 +153,21 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
 
         if (items.length > 0) {
             const shuffled = [...items].sort(() => 0.5 - Math.random());
-            // Boost: duplicate study-more items for 2x frequency
-            const withBoost = shuffled.flatMap(card =>
-                studyMoreIds.includes(card.sourceId) ? [card, { ...card, id: card.id + '-boost' }] : [card]
-            );
-            const reShuffle = withBoost.sort(() => 0.5 - Math.random());
+            // Boost: duplicate favorite definitions based on configs -> relative multiplier
+            const withBoost = shuffled.flatMap(card => {
+                const config = stats?.favoriteConfigs?.[card.sourceId];
+                if (config && config.mode === 'relative' && config.relativeMultiplier) {
+                    return Array(config.relativeMultiplier).fill(0).map((_, i) => i === 0 ? card : { ...card, id: card.id + '-boost-' + i });
+                }
+                return [card];
+            });
+            // Embaralha de verdade com Fisher-Yates
+            const reShuffle = [...withBoost];
+            for (let i = reShuffle.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [reShuffle[i], reShuffle[j]] = [reShuffle[j], reShuffle[i]];
+            }
+
             setDeck(reShuffle);
         } else {
             setDeck([]);
@@ -162,7 +177,7 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
         setFlipped(false);
         setIsFinished(false);
         setIsLoading(false);
-    }, [filtersKey]); // Depende APENAS da chave de filtros (estável)
+    }, [filtersKey, stats?.favoriteConfigs, data, savedIds, activeFolderFilters, showOnlyErrors, wordCounts]); // Fix dependencies
 
     // EFEITO DE INICIALIZAÇÃO COM TRAVA DE SEGURANÇA 🔒
     // EFEITO DE INICIALIZAÇÃO E REAÇÃO A FILTROS
@@ -173,10 +188,10 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
         }
     }, [data.length, showOnlyErrors]); // Inicializa quando dados chegam OU erro toggle muda
 
-    // Recria se FILTROS mudarem (usando a chave estável)
+    // Recria se FILTROS ou Configurações de Favorito mudarem
     useEffect(() => {
         createNewDeck();
-    }, [filtersKey]);
+    }, [filtersKey, stats?.favoriteConfigs]);
 
     const handleRestart = () => {
         createNewDeck(); // Força a recriação manual
@@ -416,23 +431,21 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                                 </div>
                             )}
 
-                            {/* Study More toggle */}
-                            {onToggleStudyMore && (
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        onToggleStudyMore(card.sourceId);
-                                    }}
-                                    className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${studyMoreIds.includes(card.sourceId)
-                                        ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
-                                        : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
-                                        }`}
-                                    title={studyMoreIds.includes(card.sourceId) ? 'Remover de Estudar Mais' : 'Marcar para Estudar Mais'}
-                                >
-                                    <Star className={`w-3.5 h-3.5 ${studyMoreIds.includes(card.sourceId) ? 'fill-current' : ''}`} />
-                                    {studyMoreIds.includes(card.sourceId) ? 'Estudar Mais ✓' : 'Estudar Mais'}
-                                </button>
-                            )}
+                            {/* Favoritar / Frequência toggle */}
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setActiveFavoriteWord({ id: card.sourceId, term: card.word });
+                                    setFavoriteModalOpen(true);
+                                }}
+                                className={`mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${stats.favoriteConfigs?.[card.sourceId]
+                                    ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
+                                    : 'bg-white/10 text-white/60 hover:bg-white/20 border border-white/20'
+                                    }`}
+                                title="Favoritar / Frequência"
+                            >
+                                <Star className={`w-3.5 h-3.5 ${stats.favoriteConfigs?.[card.sourceId] ? 'fill-current' : ''}`} />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -442,6 +455,21 @@ const CardsView: React.FC<CardsViewProps> = ({ data, savedIds, onResult, activeF
                 <button onClick={(e) => { e.stopPropagation(); next(false); }} className="flex-1 py-4 rounded-xl bg-red-100 text-red-600 font-bold shadow-sm active:scale-95 transition-transform text-lg border-2 border-red-200 hover:bg-red-200">Errei</button>
                 <button onClick={(e) => { e.stopPropagation(); next(true); }} className="flex-1 py-4 rounded-xl bg-brand-100 text-brand-700 font-bold shadow-sm active:scale-95 transition-transform text-lg border-2 border-brand-200 hover:bg-brand-200">Acertei</button>
             </div>
+
+            {/* Modal de Favoritos */}
+            {activeFavoriteWord && (
+                <FavoriteModal
+                    isOpen={favoriteModalOpen}
+                    onClose={() => {
+                        setFavoriteModalOpen(false);
+                        setActiveFavoriteWord(null);
+                    }}
+                    wordId={activeFavoriteWord.id}
+                    wordTerm={activeFavoriteWord.term}
+                    currentConfig={stats.favoriteConfigs?.[activeFavoriteWord.id]}
+                    onSave={(config) => updateFavoriteConfig(config || { id: activeFavoriteWord.id, remove: true } as any)}
+                />
+            )}
         </div>
     );
 };

@@ -42,6 +42,14 @@ export interface StatsHistory {
     type: 'general' | 'pronunciation';
 }
 
+export interface FavoriteConfig {
+    id: string; // ID da palavra original
+    mode: 'relative' | 'absolute';
+    relativeMultiplier?: number; // 2, 3, 4...
+    absoluteIntervalDays?: number; // 1 (diário), 2, etc.
+    lastReviewedAt?: number; // timestamp da última prática
+}
+
 export interface Stats {
     correct: number;
     wrong: number;
@@ -55,7 +63,8 @@ export interface Stats {
     points?: number; // Total XP/points
     inventory?: InventoryItem[];
     achievements?: Achievement[];
-    studyMoreIds?: string[]; // IDs de palavras marcadas para "estudar mais" (2x frequência)
+    favoriteConfigs?: Record<string, FavoriteConfig>;
+    studyMoreIds?: string[]; // (Deprecated) Migrated to favoriteConfigs
     ignoredReviewWords?: string[]; // Words ignored in the Review filter
 }
 

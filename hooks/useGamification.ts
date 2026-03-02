@@ -302,7 +302,7 @@ export function useGamification(
 
         // Build updated stats to persist using BASELINE + DELTA
         const updatedStats: Stats = {
-            ...persistedStats, // Keep other fields
+            ...persistedStats, // Keep other fields like favoriteConfigs and ignoredReviewWords
             correct: (baselineStatsRef.current.correct || 0) + sessionStats.correctAnswers,
             wrong: (baselineStatsRef.current.wrong || 0) + sessionStats.wrongAnswers,
             history: persistedStats.history || [],

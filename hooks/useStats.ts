@@ -23,11 +23,12 @@ export const useStats = () => {
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
 
             const newStats: Stats = {
-                correct: prev.correct + (isCorrect ? 1 : 0),
-                wrong: prev.wrong + (!isCorrect ? 1 : 0),
+                ...prev, // MANTÉM OS CAMPOS ANTIGOS, COMO favoriteConfigs
+                correct: (prev.correct || 0) + (isCorrect ? 1 : 0),
+                wrong: (prev.wrong || 0) + (!isCorrect ? 1 : 0),
                 history: !isCorrect
-                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
-                    : prev.history,
+                    ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...(prev.history || [])].slice(0, 50)
+                    : (prev.history || []),
                 wordCounts: { ...currentCounts, [word]: newCount }
             };
             localStorage.setItem('mandarin_hsk_stats', JSON.stringify(newStats));

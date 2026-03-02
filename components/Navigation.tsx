@@ -22,7 +22,6 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
         { id: 'pronuncia', icon: 'mic', label: 'Pronúncia' },
         { id: 'pratica', icon: 'edit-3', label: 'Prática' },
         { id: 'lab', icon: 'flask-conical', label: 'Lab' },
-        { id: 'criativo', icon: 'sparkles', label: 'Criativo' },
     ];
 
     // Verifica se alguma aba do menu está ativa para pintar o botão de "Mais"
