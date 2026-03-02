@@ -67,7 +67,8 @@ import {
     Clock,
     Ban,
     Star,
-    Image
+    Image,
+    Brain
 } from 'lucide-react';
 
 export interface IconProps {
@@ -145,7 +146,8 @@ const icons: Record<string, React.ElementType> = {
     'clock': Clock,
     'ban': Ban,
     'star': Star,
-    'image': Image
+    'image': Image,
+    'brain': Brain
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

@@ -23,6 +23,8 @@ import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
 import TutorialMascot from './components/Gamification/TutorialMascot';
 import RepositoryModal from './components/TextLibrary/RepositoryModal';
+import NeuralSelectOverlay from './components/NeuralSelectOverlay';
+import NeuralGraphModal from './components/NeuralGraphModal';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
@@ -53,6 +55,8 @@ const App: React.FC = () => {
     const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
     const [showTutorial, setShowTutorial] = useState(false);
+    const [showNeuralSelect, setShowNeuralSelect] = useState(false);
+    const [neuralWord, setNeuralWord] = useState<string | null>(null);
 
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
@@ -604,6 +608,8 @@ const App: React.FC = () => {
                     onRestoreFromCloud={handleRestoreFromCloud}
                     isSyncing={isSyncing}
                     onOpenTutorial={() => setShowTutorial(true)}
+                    onOpenNeuralMap={() => setShowNeuralSelect(true)}
+                    activeTab={tab}
                 />
 
             )}
@@ -668,6 +674,24 @@ const App: React.FC = () => {
             )}
             {showTutorial && (
                 <TutorialMascot onClose={() => setShowTutorial(false)} />
+            )}
+            {showNeuralSelect && (
+                <NeuralSelectOverlay
+                    data={libraryData}
+                    savedIds={activeSavedIds}
+                    activeFolderFilters={activeFolderFilters}
+                    onSelectWord={(w) => { setNeuralWord(w); setShowNeuralSelect(false); }}
+                    onClose={() => setShowNeuralSelect(false)}
+                />
+            )}
+            {neuralWord && (
+                <NeuralGraphModal
+                    word={neuralWord}
+                    data={libraryData}
+                    savedIds={activeSavedIds}
+                    onNavigate={(newWord) => setNeuralWord(newWord)}
+                    onClose={() => setNeuralWord(null)}
+                />
             )}
         </div>
 

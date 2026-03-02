@@ -33,6 +33,8 @@ interface HeaderProps {
     onRestoreFromCloud?: () => void;
     isSyncing?: boolean;
     onOpenTutorial?: () => void;
+    onOpenNeuralMap?: () => void;
+    activeTab?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -57,7 +59,9 @@ const Header: React.FC<HeaderProps> = ({
     onBackupToCloud,
     onRestoreFromCloud,
     isSyncing,
-    onOpenTutorial
+    onOpenTutorial,
+    onOpenNeuralMap,
+    activeTab
 }) => {
     return (
         <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
@@ -76,6 +80,19 @@ const Header: React.FC<HeaderProps> = ({
                 <button onClick={onOpenSessionSummary} className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Resumo da Sessão">
                     <Trophy className="w-[18px] h-[18px]" />
                 </button>
+
+                {/* Neural Map button - hidden during games */}
+                {activeTab !== 'jogo' && onOpenNeuralMap && (
+                    <button
+                        onClick={onOpenNeuralMap}
+                        id="header-neural"
+                        className="bg-purple-500/30 p-2 rounded-full hover:bg-purple-500/40 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400"
+                        title="Mapa Neural"
+                        aria-label="Abrir mapa neural de conexões"
+                    >
+                        <Icon name="brain" size={18} className="text-purple-200" />
+                    </button>
+                )}
 
                 <button onClick={onOpenFolders} id="header-folders" className="bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors" title="Pastas">
                     <Icon name="folder-tree" size={18} />
