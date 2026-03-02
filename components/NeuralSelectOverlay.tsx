@@ -19,6 +19,10 @@ import { getAllSavedWords, SavedWordInfo } from '../services/neuralGraphService'
  * - ui-ux-pro-max (keyboard-nav): ESC to close, Tab navigation
  */
 
+// Normalize text: remove diacritics/accents (e.g. "diàolï" -> "diaoli")
+const normalize = (text: string) =>
+    text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
 interface NeuralSelectOverlayProps {
     data: StudyItem[];
     savedIds: string[];
@@ -42,15 +46,15 @@ const NeuralSelectOverlay: React.FC<NeuralSelectOverlayProps> = ({
         [data, savedIds, activeFolderFilters]
     );
 
-    // Filter by search query
+    // Filter by search query (diacritic-insensitive)
     const filteredWords = useMemo(() => {
         if (!searchQuery.trim()) return savedWords;
-        const q = searchQuery.toLowerCase().trim();
+        const q = normalize(searchQuery.trim());
         return savedWords.filter(
             w =>
-                w.word.toLowerCase().includes(q) ||
-                w.pinyin.toLowerCase().includes(q) ||
-                w.meaning.toLowerCase().includes(q)
+                normalize(w.word).includes(q) ||
+                normalize(w.pinyin).includes(q) ||
+                normalize(w.meaning).includes(q)
         );
     }, [savedWords, searchQuery]);
 
