@@ -57,6 +57,7 @@ const App: React.FC = () => {
     const [showTutorial, setShowTutorial] = useState(false);
     const [showNeuralSelect, setShowNeuralSelect] = useState(false);
     const [neuralWord, setNeuralWord] = useState<string | null>(null);
+    const [isColorHighlightEnabled, setIsColorHighlightEnabled] = useState(true);
 
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
@@ -497,6 +498,8 @@ const App: React.FC = () => {
                         onUpdateFolderFilters={updateFolderFilters}
                         userId={user?.uid}
                         voiceRecording={voiceRecording}
+                        isColorHighlightEnabled={isColorHighlightEnabled}
+                        setIsColorHighlightEnabled={setIsColorHighlightEnabled}
                     />
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;

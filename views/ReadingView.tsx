@@ -71,6 +71,8 @@ interface ReadingViewProps {
     onUpdateFolderFilters: (filters: string[]) => void;
     userId?: string;
     voiceRecording?: ReturnType<typeof useVoiceRecording>;
+    isColorHighlightEnabled: boolean;
+    setIsColorHighlightEnabled: (enabled: boolean) => void;
 }
 
 const ReadingView: React.FC<ReadingViewProps> = ({
@@ -86,10 +88,57 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     activeFolderFilters,
     onUpdateFolderFilters,
     userId,
-    voiceRecording
+    voiceRecording,
+    isColorHighlightEnabled,
+    setIsColorHighlightEnabled
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
+
+    // Paleta de 15 cores vibrantes e bem distintas para destaque de palavras
+    const HIGHLIGHT_COLORS = [
+        { text: '#b91c1c', bg: '#fee2e2' },   // vermelho
+        { text: '#0369a1', bg: '#e0f2fe' },   // azul
+        { text: '#15803d', bg: '#dcfce7' },   // verde
+        { text: '#7e22ce', bg: '#f3e8ff' },   // roxo
+        { text: '#c2410c', bg: '#ffedd5' },   // laranja
+        { text: '#0e7490', bg: '#cffafe' },   // ciano
+        { text: '#a16207', bg: '#fef9c3' },   // amarelo escuro
+        { text: '#be185d', bg: '#fce7f3' },   // rosa
+        { text: '#4338ca', bg: '#e0e7ff' },   // indigo
+        { text: '#166534', bg: '#d1fae5' },   // verde escuro
+        { text: '#9333ea', bg: '#ede9fe' },   // violeta
+        { text: '#ea580c', bg: '#fff7ed' },   // laranja queimado
+        { text: '#0891b2', bg: '#ecfeff' },   // teal
+        { text: '#b45309', bg: '#fffbeb' },   // âmbar
+        { text: '#dc2626', bg: '#fef2f2' },   // vermelho vivo
+    ];
+
+    // Mapa estável: cada palavra salva recebe um índice de cor único
+    const wordColorMap = useMemo(() => {
+        const map = new Map<string, number>();
+        let colorIndex = 0;
+        data.forEach(item => {
+            item.keywords?.forEach(k => {
+                if (savedIds.includes(k.id)) {
+                    const key = k.word.toLowerCase().trim();
+                    if (!map.has(key)) {
+                        map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
+                        colorIndex++;
+                    }
+                }
+            });
+            const isWordCard = item.type === 'word' || (item.tokens.length === 1 && savedIds.includes(item.id.toString()));
+            if (isWordCard) {
+                const key = item.chinese.toLowerCase().trim();
+                if (!map.has(key)) {
+                    map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
+                    colorIndex++;
+                }
+            }
+        });
+        return map;
+    }, [data, savedIds]);
 
     // Estado do modal de edição
     const [editModal, setEditModal] = useState<{
@@ -423,6 +472,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             const cleanToken = cleanPunctuation(token);
             const isSaved = !!savedWordsMap.get(cleanToken.toLowerCase());
             const isLoading = loadingWord === cleanToken;
+            const colorIdx = wordColorMap.get(cleanToken.toLowerCase());
+            const color = colorIdx !== undefined ? HIGHLIGHT_COLORS[colorIdx] : null;
+
+            const useMultiColor = isSaved && isColorHighlightEnabled && color;
 
             return (
                 <span
@@ -430,12 +483,15 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     onClick={(e) => { e.stopPropagation(); handleTokenClick(token, sentence); }}
                     className={`
                         inline-block px-1 mx-0.5 rounded transition-all border-b-2 mb-1 relative cursor-pointer
-                        ${isSaved
+                        ${isSaved && !useMultiColor
                             ? 'bg-brand-100 text-brand-800 border-brand-500 font-bold'
-                            : 'hover:bg-brand-50 border-slate-300 border-dotted hover:border-brand-300 text-slate-700'
+                            : !isSaved
+                                ? 'hover:bg-brand-50 border-slate-300 border-dotted hover:border-brand-300 text-slate-700'
+                                : 'font-bold'
                         }
                         ${isLoading ? 'opacity-70 cursor-wait' : ''}
                     `}
+                    style={useMultiColor ? { color: color.text, backgroundColor: color.bg, borderBottomColor: color.text } : undefined}
                 >
                     {isLoading && (
                         <span className="absolute inset-0 flex items-center justify-center">
@@ -464,6 +520,13 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 <Icon name="book-open" size={20} className="text-brand-600" />
                                 Leitura ({filteredData.length})
                             </h2>
+                            <button
+                                onClick={() => setIsColorHighlightEnabled(!isColorHighlightEnabled)}
+                                className={`p-1.5 rounded-lg transition-colors ml-1 ${isColorHighlightEnabled ? 'text-amber-500 bg-amber-50 hover:bg-amber-100' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}`}
+                                title={isColorHighlightEnabled ? "Desativar destaque de palavras" : "Ativar destaque de palavras"}
+                            >
+                                <Icon name="palette" size={18} />
+                            </button>
                         </div>
 
                         {!selectionMode ? (
@@ -666,7 +729,44 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                         </div>
                                     </div>
                                     <div className="pt-2 border-t border-slate-50">
-                                        <p className="text-slate-500 text-sm italic text-left">{item.translation}</p>
+                                        <p className="text-slate-500 text-sm italic text-left">
+                                            {isColorHighlightEnabled ? (() => {
+                                                // Coleta apenas as palavras salvas que EXISTEM nesta frase específica
+                                                const sentenceSavedWords: { meaning: string; colorIdx: number }[] = [];
+                                                item.tokens.forEach(token => {
+                                                    const clean = cleanPunctuation(token).toLowerCase();
+                                                    const kw = savedWordsMap.get(clean);
+                                                    const colorIdx = wordColorMap.get(clean);
+                                                    if (kw && colorIdx !== undefined && kw.meaning) {
+                                                        sentenceSavedWords.push({ meaning: kw.meaning, colorIdx });
+                                                    }
+                                                });
+
+                                                if (sentenceSavedWords.length === 0) return item.translation;
+
+                                                return (item.translation || '').split(/\s+/).map((word, wi) => {
+                                                    let matchColor: { text: string; bg: string } | null = null;
+                                                    const cleanWord = word.replace(/[.,!?;:()\\[\\]{}"']/g, '').toLowerCase();
+                                                    if (cleanWord.length > 1) {
+                                                        for (const sw of sentenceSavedWords) {
+                                                            const meanings = sw.meaning.toLowerCase().split(/[,;/]/).map(m => m.trim());
+                                                            if (meanings.some(m => m.includes(cleanWord) || cleanWord.includes(m))) {
+                                                                matchColor = HIGHLIGHT_COLORS[sw.colorIdx];
+                                                                break;
+                                                            }
+                                                        }
+                                                    }
+                                                    return (
+                                                        <span key={wi}>
+                                                            {wi > 0 ? ' ' : ''}
+                                                            <span style={matchColor ? { color: matchColor.text, fontWeight: 600 } : undefined}>
+                                                                {word}
+                                                            </span>
+                                                        </span>
+                                                    );
+                                                });
+                                            })() : item.translation}
+                                        </p>
                                     </div>
                                 </div>
                             </div>

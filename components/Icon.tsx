@@ -68,7 +68,8 @@ import {
     Ban,
     Star,
     Image,
-    Brain
+    Brain,
+    Palette
 } from 'lucide-react';
 
 export interface IconProps {
@@ -147,7 +148,8 @@ const icons: Record<string, React.ElementType> = {
     'ban': Ban,
     'star': Star,
     'image': Image,
-    'brain': Brain
+    'brain': Brain,
+    'palette': Palette
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

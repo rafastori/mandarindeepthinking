@@ -5,6 +5,13 @@ description: Evaluate and apply relevant skills before executing tasks
 
 Sempre que iniciar uma nova tarefa complexa ou execução, você (a IA) DEVE seguir os passos abaixo para garantir as melhores práticas do repositório de skills:
 
+> ⚠️ **OBSERVAÇÃO PRIMÁRIA — ÍCONES:**
+> Sempre que um novo ícone for utilizado em qualquer componente (via `<Icon name="..." />`), é **OBRIGATÓRIO** verificar e registrar o ícone no arquivo `components/Icon.tsx`. Isso inclui:
+> 1. Importar o componente do `lucide-react` (ex: `import { Palette } from 'lucide-react';`)
+> 2. Adicionar a entrada no objeto `icons` (ex: `'palette': Palette`)
+>
+> **Não registrar o ícone fará com que ele não renderize na interface.** Este erro já ocorreu múltiplas vezes e deve ser evitado em todas as futuras implementações.
+
 1. **Identificar o Contexto:** Analise o código/tarefa atual e identifique quais tecnologias ou padrões estão envolvidos (Ex: Next.js, React, Tailwind, Firebase, UI/UX, Debugging).
 2. **Atalho de Skills Mais Usadas (Default):** Por padrão, para a maioria das tarefas no projeto, considere pré-ativadas e aplique as seguintes skills principais (mesmo que não explicitamente solicitadas), pois são a base do projeto:
    - **`@react-best-practices` / `@react-expert`**: Para criação e refatoração de componentes, hooks e gerenciamento de estado.
