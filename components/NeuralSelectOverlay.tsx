@@ -19,9 +19,9 @@ import { getAllSavedWords, SavedWordInfo } from '../services/neuralGraphService'
  * - ui-ux-pro-max (keyboard-nav): ESC to close, Tab navigation
  */
 
-// Normalize text: remove diacritics/accents (e.g. "diàolï" -> "diaoli")
-const normalize = (text: string) =>
-    text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+// Normalize text: remove diacritics/accents safely (e.g. "diàolï" -> "diaoli")
+const normalize = (text?: string) =>
+    (text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
 interface NeuralSelectOverlayProps {
     data: StudyItem[];
