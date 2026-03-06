@@ -737,3 +737,51 @@ export const summarizeDominoTranslations = async (
     }
 };
 
+// Analisa estatísticas de estudo usando IA (Gemini)
+export async function analyzeStudyStats(statsData: {
+    totalSessions: number;
+    totalDays: number;
+    avgTimePerDay: number;
+    avgAccuracy: number;
+    mostDifficultWords: { word: string; errorCount: number }[];
+    streakDays: number;
+    recentTrend: string;
+}): Promise<string> {
+    const prompt = `Analise os seguintes dados de estudo de idiomas do usuário e forneça insights, sugestões de melhoria e identifique pontos fortes.
+Dados:
+- Sessões totais: ${statsData.totalSessions}
+- Dias estudados: ${statsData.totalDays}
+- Tempo médio por dia: ${statsData.avgTimePerDay} minutos
+- Precisão global média: ${statsData.avgAccuracy}%
+- Sequência atual (streak): ${statsData.streakDays} dias
+- Tendência recente de acertos vs anterior: ${statsData.recentTrend}
+- Palavras mais erradas: ${statsData.mostDifficultWords.length > 0 ? statsData.mostDifficultWords.map(w => `${w.word} (${w.errorCount} erros)`).join(', ') : 'Nenhuma ainda'}
+
+Retorne a resposta em Markdown. Use emojis. Mantenha um tom de tutor, encorajador e direto. Máximo de 3 parágrafos curtos, finalizando com dicas práticas.`;
+
+    const systemInstruction = `Você é um tutor de idiomas experiente focado no app MemorizaTudo. Analise estatísticas de alunos e dê feedback com insights motivadores baseados em dados de performance.`;
+
+    try {
+        if (import.meta.env.DEV) {
+            console.log("Using Local Gemini SDK for Study Stats Analysis");
+            return await callLocalGemini(prompt, systemInstruction);
+        }
+
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                prompt,
+                systemInstruction,
+                mode: 'analyze'
+            })
+        });
+
+        if (!response.ok) throw new Error(`API error: ${response.status}`);
+        const data = await response.json();
+        return data.text;
+    } catch (error) {
+        console.error("Gemini Analyze Error:", error);
+        return "⚠️ Não foi possível gerar a análise no momento pela IA. Tente novamente mais tarde.";
+    }
+}

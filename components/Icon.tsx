@@ -69,7 +69,11 @@ import {
     Star,
     Image,
     Brain,
-    Palette
+    Palette,
+    CalendarDays,
+    BarChart3,
+    Target,
+    ArrowUpRight
 } from 'lucide-react';
 
 export interface IconProps {
@@ -149,7 +153,11 @@ const icons: Record<string, React.ElementType> = {
     'star': Star,
     'image': Image,
     'brain': Brain,
-    'palette': Palette
+    'palette': Palette,
+    'calendar-days': CalendarDays,
+    'bar-chart-3': BarChart3,
+    'target': Target,
+    'arrow-up-right': ArrowUpRight
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

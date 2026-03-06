@@ -25,12 +25,14 @@ import TutorialMascot from './components/Gamification/TutorialMascot';
 import RepositoryModal from './components/TextLibrary/RepositoryModal';
 import NeuralSelectOverlay from './components/NeuralSelectOverlay';
 import NeuralGraphModal from './components/NeuralGraphModal';
+import FullStatsView from './views/FullStatsView';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
 import { useUserProfile } from './hooks/useUserProfile';
 import { usePuterSpeech } from './hooks/usePuterSpeech';
 import { useSpeechRecognition } from './hooks/useSpeechRecognition';
 import { useGamification } from './hooks/useGamification';
+import { useDetailedStats } from './hooks/useDetailedStats';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import { useCloudSync } from './hooks/useCloudSync';
 import { useVoiceRecording } from './hooks/useVoiceRecording';
@@ -58,12 +60,13 @@ const App: React.FC = () => {
     const [showNeuralSelect, setShowNeuralSelect] = useState(false);
     const [neuralWord, setNeuralWord] = useState<string | null>(null);
     const [isColorHighlightEnabled, setIsColorHighlightEnabled] = useState(true);
-
+    const [showFullStats, setShowFullStats] = useState(false);
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
+    const detailedStats = useDetailedStats();
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
-    const { isPuterConnected, connectPuter, disconnectPuter, puterUsername } = usePuterSpeech();
+    const { isPuterConnected, connectPuter, disconnectPuter, puterUsername, speak } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
     const voiceRecording = useVoiceRecording();
 
@@ -469,6 +472,48 @@ const App: React.FC = () => {
         }
     };
 
+    // Handle ending session (shows summary)
+    const handleEndSession = useCallback(() => {
+        const stats = gamification.endSession();
+        setFinalSessionStats(stats);
+        setShowSessionSummary(true);
+
+        // Somente salva se houver dados reais de estudo (evita spans vazios poluindo o db e os gráficos)
+        if (stats.wordsReviewed > 0 || stats.tabTime['leitura'] > 0 || Object.values(stats.tabTime).some(t => t > 60)) {
+            const id = crypto.randomUUID ? crypto.randomUUID() : Date.now().toString();
+            const date = new Date(stats.startTime).toLocaleDateString('sv-SE');
+
+            const sessionErrors = (activeStats.history || []).slice(0, stats.wrongAnswers);
+
+            detailedStats.saveSession({
+                id,
+                date,
+                startTime: stats.startTime,
+                endTime: stats.endTime || Date.now(),
+                wordsReviewed: stats.wordsReviewed,
+                correctAnswers: stats.correctAnswers,
+                wrongAnswers: stats.wrongAnswers,
+                tabTime: stats.tabTime,
+                pointsEarned: stats.pointsEarned,
+                wordsStudied: [],
+                errorsLog: sessionErrors
+            });
+        }
+    }, [gamification, activeStats.history, detailedStats]);
+
+    // Safety net: Save session when the app is closed/reloaded
+    useEffect(() => {
+        const handleBeforeUnload = () => {
+            if (!showIntro && gamification.sessionStats.wordsReviewed > 0) {
+                // Síncrono para tentar salvar antes do unload
+                handleEndSession();
+            }
+        };
+
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    }, [showIntro, gamification.sessionStats.wordsReviewed, handleEndSession]);
+
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
 
     const renderView = () => {
@@ -545,13 +590,6 @@ const App: React.FC = () => {
 
     const isFullscreenGame = tab === 'jogo' && (selectedGame === 'lingoarena' || (selectedGame === 'domino' && isGameFullscreen));
 
-    // Handle ending session (shows summary)
-    const handleEndSession = () => {
-        const stats = gamification.endSession();
-        setFinalSessionStats(stats);
-        setShowSessionSummary(true);
-    };
-
     // Handle starting session (dismisses intro)
     const handleStartSession = () => {
         gamification.startSession();
@@ -622,7 +660,8 @@ const App: React.FC = () => {
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
-            {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {}, ignoredReviewWords: [] }) : clearLocalStats()} onToggleIgnoreWord={handleToggleIgnoreWord} />}
+            {showStats && <StatsModal stats={activeStats} onClose={() => setShowStats(false)} onClear={() => user ? updateCloudStats({ correct: 0, wrong: 0, history: [], wordCounts: {}, ignoredReviewWords: [] }) : clearLocalStats()} onToggleIgnoreWord={handleToggleIgnoreWord} onOpenDetailedStats={() => setShowFullStats(true)} />}
+            {showFullStats && <FullStatsView detailedStats={detailedStats} libraryData={libraryData} onPlayAudio={(t, l) => speak(t, (l as any) || 'zh')} onClose={() => setShowFullStats(false)} />}
             {showImport && (
                 <ImportModal
                     onClose={() => { setShowImport(false); setInitialImportFolder(''); }}
@@ -663,8 +702,10 @@ const App: React.FC = () => {
                     newAchievements={gamification.newAchievements}
                     newInventoryItem={gamification.newInventoryItem}
                     onClose={() => {
+                        handleEndSession(); // Salva a sessão no momento em que a fecha (para não perder os dados e contar no tempo de permanência final)
                         setShowSessionSummary(false);
                         setFinalSessionStats(null);
+                        handleStartSession(); // Reinicia uma nova
                     }}
                 />
             )}

@@ -120,6 +120,8 @@ export default defineConfig(({ mode }) => {
           navigateFallback: '/index.html',
           // MAS... se a url começar com /api, NÃO intercepta (deixa ir pro servidor)
           navigateFallbackDenylist: [/^\/api/],
+          // Aumentar o tamanho máximo cacheável para acomodar bibliotecas pesadas (ex: recharts)
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         },
         // ------------------------------------
         manifest: {

@@ -5,15 +5,16 @@
  * O Firebase é usado apenas para backup manual e features online (Leaderboard).
  */
 
-import { StudyItem, Stats } from '../types';
+import { StudyItem, Stats, SessionRecord } from '../types';
 
 const DB_NAME = 'MandarinDeepThinkingDB';
-const DB_VERSION = 2;
+const DB_VERSION = 3;
 
 // Store names
 const ITEMS_STORE = 'items';
 const PROFILE_STORE = 'profile';
 const VOICE_STORE = 'voiceRecordings';
+const SESSIONS_STORE = 'sessions';
 
 // Profile keys
 const PROFILE_KEY = 'userProfile';
@@ -70,6 +71,12 @@ function openDB(): Promise<IDBDatabase> {
             // Voice recordings store (v2)
             if (!db.objectStoreNames.contains(VOICE_STORE)) {
                 db.createObjectStore(VOICE_STORE, { keyPath: 'wordId' });
+            }
+
+            // Sessions store (v3)
+            if (!db.objectStoreNames.contains(SESSIONS_STORE)) {
+                const sessionsStore = db.createObjectStore(SESSIONS_STORE, { keyPath: 'id' });
+                sessionsStore.createIndex('date', 'date', { unique: false });
             }
         };
 
@@ -247,6 +254,37 @@ export const localDB = {
             request.onsuccess = () => resolve(request.result as string[]);
             request.onerror = () => reject(request.error);
         });
+    },
+
+    // --- Sessions (v3) ---
+
+    /** Salva uma sessão (cria ou atualiza) */
+    async saveSession(session: SessionRecord): Promise<void> {
+        await withStore(SESSIONS_STORE, 'readwrite', (store) => store.put(session));
+    },
+
+    /** Retorna as sessões de um dia específico (YYYY-MM-DD) */
+    async getSessionsByDate(date: string): Promise<SessionRecord[]> {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(SESSIONS_STORE, 'readonly');
+            const store = tx.objectStore(SESSIONS_STORE);
+            const index = store.index('date');
+            const request = index.getAll(date);
+
+            request.onsuccess = () => resolve(request.result);
+            request.onerror = () => reject(request.error);
+        });
+    },
+
+    /** Retorna todas as sessões armazenadas */
+    async getAllSessions(): Promise<SessionRecord[]> {
+        return withStore<SessionRecord[]>(SESSIONS_STORE, 'readonly', (store) => store.getAll());
+    },
+
+    /** Limpa todas as sessões (útil para reset) */
+    async clearSessions(): Promise<void> {
+        await withStore(SESSIONS_STORE, 'readwrite', (store) => store.clear());
     }
 };
 

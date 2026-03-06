@@ -7,9 +7,10 @@ interface StatsModalProps {
     onClose: () => void;
     onClear: () => void;
     onToggleIgnoreWord?: (word: string) => void;
+    onOpenDetailedStats?: () => void;
 }
 
-const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear, onToggleIgnoreWord }) => {
+const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear, onToggleIgnoreWord, onOpenDetailedStats }) => {
     if (!stats) return null;
     const total = stats.correct + stats.wrong;
     const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
@@ -67,8 +68,8 @@ const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear, onTogg
                                                 <button
                                                     onClick={() => onToggleIgnoreWord(entry.word)}
                                                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs font-semibold transition-all shadow-sm ml-2 ${isIgnored
-                                                            ? 'bg-emerald-50 text-emerald-600 border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300'
-                                                            : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50 hover:text-slate-600 hover:border-slate-300'
+                                                        ? 'bg-emerald-50 text-emerald-600 border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300'
+                                                        : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50 hover:text-slate-600 hover:border-slate-300'
                                                         }`}
                                                     title={isIgnored ? `Reativar erro de "${entry.word}" na revisão` : `Desativar erro de "${entry.word}" na revisão`}
                                                 >
@@ -83,9 +84,14 @@ const StatsModal: React.FC<StatsModalProps> = ({ stats, onClose, onClear, onTogg
                         </div>
                     }
                 </div>
-                <div className="p-4 border-t border-slate-100 bg-white">
-                    <button onClick={onClear} className="w-full py-3 text-sm text-slate-400 hover:text-red-500 font-medium transition-colors flex items-center justify-center gap-2">
-                        <Icon name="trash-2" size={16} /> Clear History
+                <div className="p-4 border-t border-slate-100 bg-white space-y-2">
+                    {onOpenDetailedStats && (
+                        <button onClick={() => { onClose(); onOpenDetailedStats(); }} className="w-full py-3 bg-brand-50 hover:bg-brand-100 text-brand-700 rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
+                            <Icon name="bar-chart-3" size={18} /> Ver Detalhes Completos
+                        </button>
+                    )}
+                    <button onClick={onClear} className="w-full py-2 text-sm text-slate-400 hover:text-red-500 font-medium transition-colors flex items-center justify-center gap-2">
+                        <Icon name="trash-2" size={16} /> Limpar Histórico Curto
                     </button>
                 </div>
             </div>

@@ -125,7 +125,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
         // 3. INJETAR CARTÕES DE FREQUÊNCIA ABSOLUTA (Fura Fila)
         if (stats?.favoriteConfigs) {
             const now = Date.now();
-            Object.values(stats.favoriteConfigs).forEach(config => {
+            Object.values(stats.favoriteConfigs).forEach((config: any) => {
                 if (config.mode === 'absolute' && config.absoluteIntervalDays) {
                     const elapsedMs = now - (config.lastReviewedAt || 0);
                     const isDue = elapsedMs >= (config.absoluteIntervalDays * 24 * 60 * 60 * 1000);
@@ -187,7 +187,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
 
         // Boost: duplicate favorite definitions based on configs -> relative multiplier and basic absolute injection
         const withBoost = list.flatMap(q => {
-            const config = stats?.favoriteConfigs?.[q.id];
+            const config = stats?.favoriteConfigs?.[q.id] as any;
             if (!config) return [q];
 
             if (config.mode === 'relative' && config.relativeMultiplier) {
@@ -268,7 +268,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({ data, savedIds, onResult, a
             let didUpdate = false;
 
             practicedIds.forEach(id => {
-                const config = stats?.favoriteConfigs?.[id];
+                const config = stats?.favoriteConfigs?.[id] as any;
                 if (config && config.mode === 'absolute') {
                     didUpdate = true;
                     updateFavoriteConfig({

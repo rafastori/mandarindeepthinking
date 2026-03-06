@@ -152,6 +152,34 @@ export interface GameRoom {
     roundsPlayed?: number;
 }
 
+// Registro completo de uma sessão individual
+export interface SessionRecord {
+    id: string;             // UUID ou timestamp-based
+    date: string;           // YYYY-MM-DD (dia da sessão)
+    startTime: number;      // timestamp de início
+    endTime: number;        // timestamp de fim
+    wordsReviewed: number;  // palavras estudadas
+    correctAnswers: number;
+    wrongAnswers: number;
+    tabTime: Record<string, number>;  // tempo por aba em segundos
+    pointsEarned: number;
+    wordsStudied: string[]; // lista de palavras estudadas na sessão
+    errorsLog: StatsHistory[]; // erros detalhados da sessão
+}
+
+// Agregação por dia
+export interface DayStats {
+    date: string;           // YYYY-MM-DD
+    sessions: SessionRecord[];
+    totalTime: number;      // soma de tempos de todas as sessões
+    totalCorrect: number;
+    totalWrong: number;
+    totalWordsReviewed: number;
+    totalPoints: number;
+    firstSessionStart: number; // horário da 1ª sessão
+    lastSessionEnd: number;    // horário da última sessão
+}
+
 declare global {
     interface Window {
         pinyinPro: {
