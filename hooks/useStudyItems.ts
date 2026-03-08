@@ -74,17 +74,80 @@ export const useStudyItems = (userId: string | null | undefined) => {
   }, [userId]);
 
   // Atualiza um item parcialmente
+  // CORREÇÃO CRÍTICA: Busca do IndexedDB (fonte de verdade) ANTES de atualizar
+  // Isso garante que atualizações sequenciais, como na reordenação, peguem dados sempre atualizados
   const updateItem = useCallback(async (id: string, data: Partial<StudyItem>) => {
     if (!userId) return;
 
-    // Encontra o item atual
-    const currentItem = items.find(item => item.id === id);
-    if (!currentItem) return;
+    // 1. Buscar item DIRETAMENTE do IndexedDB (fonte de verdade)
+    const allItemsFromDB = await localDB.getAllItems();
+    const currentItem = allItemsFromDB.find(item => item.id === id);
 
+    if (!currentItem) {
+      console.warn(`[updateItem] Item ${id} não encontrado no IndexedDB`);
+      return;
+    }
+
+    // 2. Construir item atualizado com os novos dados
     const updatedItem = { ...currentItem, ...data };
+
+    // 3. Persistir no IndexedDB PRIMEIRO (a fonte de verdade deve ser atualizada primeiro)
     await localDB.putItem(updatedItem);
-    setItems(prev => prev.map(item => item.id === id ? updatedItem : item));
-  }, [userId, items]);
+
+    // 4. Atualizar state React para refletir a mudança na UI
+    setItems(prev => {
+      const newItems = prev.map(item => item.id === id ? updatedItem : item);
+
+      // Reordenar se createdAt foi alterado (usado na reordenação manual)
+      if (data.createdAt !== undefined) {
+        newItems.sort((a, b) => {
+          const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+          const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+          return dateB - dateA;
+        });
+      }
+      return newItems;
+    });
+  }, [userId]);
+
+  // Reordena itens de forma atômica (batch write + reload)
+  const reorderItems = useCallback(async (updates: { id: string; createdAt: string }[]) => {
+    if (!userId || updates.length === 0) return;
+
+    try {
+      // 1. Ler todos os itens do IndexedDB (fonte de verdade)
+      const allItems = await localDB.getAllItems();
+
+      // 2. Criar mapa de atualizações por ID
+      const updateMap = new Map(updates.map(u => [u.id, u.createdAt]));
+
+      // 3. Aplicar as novas datas nos itens
+      const updatedItems = allItems.map(item => {
+        const newCreatedAt = updateMap.get(item.id as string);
+        if (newCreatedAt) {
+          return { ...item, createdAt: newCreatedAt };
+        }
+        return item;
+      });
+
+      // 4. Escrever TUDO de volta de uma vez (transação atômica)
+      await localDB.bulkPutItems(updatedItems);
+
+      // 5. Recarregar do IndexedDB e reordenar (como o importData faz)
+      const reloaded = await localDB.getAllItems();
+      reloaded.sort((a, b) => {
+        const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+        const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+        return dateB - dateA;
+      });
+      setItems(reloaded);
+
+      console.log(`[reorderItems] ${updates.length} itens reordenados com sucesso`);
+    } catch (error) {
+      console.error('[reorderItems] Erro:', error);
+      throw error;
+    }
+  }, [userId]);
 
   // Limpa toda a biblioteca local
   const clearLibrary = useCallback(async () => {
@@ -277,6 +340,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
     addItem,
     deleteItem,
     updateItem,
+    reorderItems,
     clearLibrary,
     exportData,
     importData,

@@ -225,11 +225,12 @@ def generate_stats_pdf(data: dict) -> bytes:
     font_dir = os.path.join(os.path.dirname(__file__), 'fonts')
     font_path = os.path.join(font_dir, 'NotoSansSC-Regular.ttf')
     
+    main_font = 'Helvetica'
     if os.path.exists(font_path):
         pdf.add_font('NotoSans', '', font_path)
-        font = 'NotoSans'
+        cjk_font = 'NotoSans'
     else:
-        font = 'Helvetica'
+        cjk_font = 'Helvetica'
         
     pdf.add_page()
     
@@ -240,15 +241,15 @@ def generate_stats_pdf(data: dict) -> bytes:
     pdf.rect(0, 45, 210, 2, 'F')
     
     pdf.set_y(10)
-    pdf.set_font(font, size=24)
+    pdf.set_font(main_font, size=24)
     pdf.set_text_color(255, 255, 255)
     pdf.cell(0, 12, txt="Relatório de Desempenho", ln=True, align='C')
-    pdf.set_font(font, size=11)
+    pdf.set_font(main_font, size=11)
     pdf.set_text_color(187, 247, 208)
     pdf.cell(0, 7, txt="MemorizaTudo", ln=True, align='C')
     
     date_str = datetime.now().strftime('%d/%m/%Y')
-    pdf.set_font(font, size=9)
+    pdf.set_font(main_font, size=9)
     pdf.set_text_color(209, 250, 229)
     pdf.cell(0, 5, txt=f"Exportado em {date_str}", ln=True, align='C')
     
@@ -257,42 +258,45 @@ def generate_stats_pdf(data: dict) -> bytes:
     overview = data.get('overview', {})
     
     # --- VISÃO GERAL ---
-    pdf.set_font(font, size=16)
+    pdf.set_font(main_font, size=16)
     pdf.set_text_color(17, 24, 39)
     pdf.cell(0, 10, txt="Visão Geral", ln=True)
     pdf.ln(2)
     
-    pdf.set_font(font, size=12)
+    pdf.set_font(main_font, size=12)
     pdf.set_text_color(55, 65, 81)
     
     total_mins = overview.get('totalTimeMinutes', 0)
     time_str = f"{total_mins//60}h {total_mins%60}m" if total_mins > 60 else f"{total_mins}m"
-    pdf.cell(0, 8, txt=f"• Tempo Total de Estudo: {time_str}", ln=True)
-    pdf.cell(0, 8, txt=f"• Precisão Média Global: {overview.get('globalAccuracy', 0)}%", ln=True)
-    pdf.cell(0, 8, txt=f"• Total de Sessões: {overview.get('totalSessions', 0)}", ln=True)
-    pdf.cell(0, 8, txt=f"• Meta Diária Atingida (média): {overview.get('dailyGoalPercent', 0)}%", ln=True)
+    pdf.cell(0, 8, txt=f"- Tempo Total de Estudo: {time_str}", ln=True)
+    pdf.cell(0, 8, txt=f"- Precisão Média Global: {overview.get('globalAccuracy', 0)}%", ln=True)
+    pdf.cell(0, 8, txt=f"- Total de Sessões: {overview.get('totalSessions', 0)}", ln=True)
+    pdf.cell(0, 8, txt=f"- Meta Diária Atingida (média): {overview.get('dailyGoalPercent', 0)}%", ln=True)
     
     pdf.ln(10)
     
     # --- PALAVRAS MAIS ERRADAS ---
     difficult_words = data.get('difficultWords', [])
     if difficult_words:
-        pdf.set_font(font, size=16)
+        pdf.set_font(main_font, size=16)
         pdf.set_text_color(17, 24, 39)
         pdf.cell(0, 10, txt="Top Palavras com Maior Taxa de Erro", ln=True)
         pdf.ln(2)
         
         # Table Header
         pdf.set_fill_color(243, 244, 246) # Gray-100
-        pdf.set_font(font, size=11)
+        pdf.set_font(main_font, size=11)
         pdf.set_text_color(31, 41, 55)
         pdf.cell(90, 8, txt="Palavra", border=1, fill=True)
         pdf.cell(40, 8, txt="Total de Erros", border=1, fill=True, align='C')
         pdf.ln(8)
         
-        pdf.set_font(font, size=12)
         for dw in difficult_words:
+            # Change font to NotoSans for Chinese word
+            pdf.set_font(cjk_font, size=12)
             pdf.cell(90, 8, txt=dw.get('word', ''), border=1)
+            # Revert to main string for number
+            pdf.set_font(main_font, size=12)
             pdf.cell(40, 8, txt=str(dw.get('errorCount', 0)), border=1, align='C')
             pdf.ln(8)
             
@@ -304,7 +308,7 @@ def generate_stats_pdf(data: dict) -> bytes:
         if pdf.get_y() > 220:
             pdf.add_page()
             
-        pdf.set_font(font, size=16)
+        pdf.set_font(main_font, size=16)
         pdf.set_text_color(17, 24, 39)
         pdf.cell(0, 10, txt="Histórico de Sessões Recentes", ln=True)
         pdf.set_draw_color(209, 213, 219)
@@ -315,7 +319,7 @@ def generate_stats_pdf(data: dict) -> bytes:
             if pdf.get_y() > 250:
                 pdf.add_page()
             
-            pdf.set_font(font, size=12)
+            pdf.set_font(main_font, size=12)
             pdf.set_text_color(31, 41, 55)
             
             # Formats: YYYY-MM-DD -> DD/MM/YYYY
@@ -339,7 +343,7 @@ def generate_stats_pdf(data: dict) -> bytes:
     pdf.set_line_width(0.5)
     pdf.line(LEFT_MARGIN, pdf.get_y(), PAGE_WIDTH - RIGHT_MARGIN, pdf.get_y())
     pdf.ln(5)
-    pdf.set_font(font, size=8)
+    pdf.set_font(main_font, size=8)
     pdf.set_text_color(156, 163, 175)
     pdf.cell(0, 4, txt="Documento Analítico Gerado por MemorizaTudo", ln=True, align='C')
 

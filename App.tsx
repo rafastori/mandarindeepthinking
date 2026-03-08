@@ -70,7 +70,7 @@ const App: React.FC = () => {
     }, [isColorHighlightEnabled]);
     const [showFullStats, setShowFullStats] = useState(false);
 
-    const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
+    const { items: localItems, addItem, deleteItem, updateItem, reorderItems, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
     const detailedStats = useDetailedStats();
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
@@ -547,6 +547,7 @@ const App: React.FC = () => {
                         onDeleteText={handleDelete}
                         onSaveGeneratedCard={handleSaveGeneratedCard}
                         onUpdateItem={updateItem}
+                        onReorderItems={reorderItems}
                         activeFolderFilters={activeFolderFilters}
                         onUpdateFolderFilters={updateFolderFilters}
                         userId={user?.uid}

@@ -78,7 +78,7 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                 }))
             };
 
-            const response = await fetch('/api/export-pdf.py', {
+            const response = await fetch('/api/export-pdf', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

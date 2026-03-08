@@ -67,6 +67,7 @@ interface ReadingViewProps {
     onDeleteText?: (id: string | number) => void;
     onSaveGeneratedCard: (card: Keyword, context: string) => void;
     onUpdateItem?: (id: string, data: Partial<StudyItem>) => void;
+    onReorderItems?: (updates: { id: string; createdAt: string }[]) => Promise<void>;
     activeFolderFilters: string[];
     onUpdateFolderFilters: (filters: string[]) => void;
     userId?: string;
@@ -85,6 +86,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onDeleteText,
     onSaveGeneratedCard,
     onUpdateItem,
+    onReorderItems,
     activeFolderFilters,
     onUpdateFolderFilters,
     userId,
@@ -191,8 +193,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         translation: string;
     } | null>(null);
 
-    // Estados para modo de seleção
+    // Estados para modo de seleção e reordenação
     const [selectionMode, setSelectionMode] = useState(false);
+    const [reorderMode, setReorderMode] = useState(false);
+    const [localReorderData, setLocalReorderData] = useState<StudyItem[]>([]);
     const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
 
     // Estado do ExportModal
@@ -425,6 +429,85 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         setEditModal(null);
         setSelectedIds(new Set());
         setSelectionMode(false);
+    };
+
+    // Reordenar itens (apenas na memória local)
+    const handleReorder = (currentIndex: number, direction: 'up' | 'down') => {
+        if (localReorderData.length < 2) return;
+
+        const targetIndex = direction === 'up' ? currentIndex - 1 : currentIndex + 1;
+        if (targetIndex < 0 || targetIndex >= localReorderData.length) return;
+
+        // Troca simples no array (React State)
+        setLocalReorderData(prev => {
+            const newArr = [...prev];
+            const temp = newArr[currentIndex];
+            newArr[currentIndex] = newArr[targetIndex];
+            newArr[targetIndex] = temp;
+            return newArr;
+        });
+    };
+
+    const saveReorder = async () => {
+        if (!onReorderItems || localReorderData.length === 0) {
+            console.warn('[saveReorder] onReorderItems ausente ou lista vazia');
+            setReorderMode(false);
+            setLocalReorderData([]);
+            return;
+        }
+
+        try {
+            const itemCount = localReorderData.length;
+
+            // Pegamos os tempos reais como números para gerar sequência estritamente descendente
+            const times = filteredData.slice(0, itemCount).map((i, idx) => {
+                let time = new Date(i.createdAt || new Date().toISOString()).getTime();
+                if (isNaN(time)) {
+                    time = Date.now() - (idx * 1000);
+                }
+                return time;
+            });
+
+            // Ordena do maior (mais recente) pro menor (mais antigo)
+            times.sort((a, b) => b - a);
+
+            // Força diferença de pelo menos 1ms entre cada posição para evitar empates
+            for (let i = 1; i < times.length; i++) {
+                if (times[i] >= times[i - 1]) {
+                    times[i] = times[i - 1] - 1;
+                }
+            }
+
+            // Construir array de updates {id, createdAt} para batch atômico
+            const updates: { id: string; createdAt: string }[] = [];
+            for (let i = 0; i < localReorderData.length; i++) {
+                const item = localReorderData[i];
+                const timeToUse = (i < times.length && !isNaN(times[i]))
+                    ? times[i]
+                    : Date.now() - (i * 1000);
+                const novaDataIso = new Date(timeToUse).toISOString();
+
+                if (item.createdAt !== novaDataIso) {
+                    updates.push({ id: item.id.toString(), createdAt: novaDataIso });
+                }
+            }
+
+            if (updates.length > 0) {
+                await onReorderItems(updates);
+                console.log(`[saveReorder] ${updates.length} itens reordenados`);
+            }
+        } catch (error) {
+            console.error('[saveReorder] Erro:', error);
+            alert('Erro ao salvar a sequência. Verifique o console.');
+        } finally {
+            setReorderMode(false);
+            setLocalReorderData([]);
+        }
+    };
+
+    const cancelReorder = () => {
+        setReorderMode(false);
+        setLocalReorderData([]);
     };
 
     // Mapa Global de Palavras
@@ -684,20 +767,54 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             </div>
                         </div>
 
-                        {!selectionMode ? (
-                            <button
-                                onClick={() => setSelectionMode(true)}
-                                className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
-                            >
-                                Selecionar
-                            </button>
+                        {!selectionMode && !reorderMode ? (
+                            <div className="flex gap-2">
+                                {/* Mostrar reordenar apenas se houver exatamente uma pasta selecionada (não "__uncategorized__") */}
+                                {activeFolderFilters.length === 1 && activeFolderFilters[0] !== '__uncategorized__' && filteredData.length > 1 && (
+                                    <button
+                                        onClick={() => {
+                                            setLocalReorderData([...filteredData]);
+                                            setReorderMode(true);
+                                        }}
+                                        className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+                                    >
+                                        <Icon name="arrow-up-right" size={16} /> Reordenar
+                                    </button>
+                                )}
+                                <button
+                                    onClick={() => setSelectionMode(true)}
+                                    className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                                >
+                                    Selecionar
+                                </button>
+                            </div>
                         ) : (
-                            <button
-                                onClick={cancelSelection}
-                                className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
-                            >
-                                Cancelar
-                            </button>
+                            <div className="flex gap-2">
+                                {selectionMode && (
+                                    <button
+                                        onClick={cancelSelection}
+                                        className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                                    >
+                                        Cancelar Seleção
+                                    </button>
+                                )}
+                                {reorderMode && (
+                                    <>
+                                        <button
+                                            onClick={cancelReorder}
+                                            className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors"
+                                        >
+                                            Cancelar
+                                        </button>
+                                        <button
+                                            onClick={saveReorder}
+                                            className="px-3 py-1.5 text-sm font-semibold text-brand-600 bg-brand-50 hover:bg-brand-100 rounded-lg transition-colors border border-brand-200"
+                                        >
+                                            Concluir Reordenação
+                                        </button>
+                                    </>
+                                )}
+                            </div>
                         )}
                     </div>
 
@@ -794,7 +911,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
-                    {filteredData.map((item) => {
+                    {(reorderMode ? localReorderData : filteredData).map((item, index) => {
                         const isImported = typeof item.id === 'string';
                         const isGerman = item.language === 'de';
                         const isSelected = selectedIds.has(item.id.toString());
@@ -802,7 +919,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         return (
                             <div
                                 key={item.id}
-                                className={`bg-white rounded-xl p-3 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : 'border-slate-100'
+                                className={`bg-white rounded-xl p-3 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : reorderMode ? 'border-brand-200 bg-slate-50/50' : 'border-slate-100'
                                     }`}
                                 onClick={() => {
                                     if (selectionMode) {
@@ -822,7 +939,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                             )}
                                         </div>
 
-                                        {!selectionMode && (
+                                        {!selectionMode && !reorderMode && (
                                             <div className="flex items-center gap-1 flex-shrink-0">
                                                 <span className="text-[10px] font-bold text-slate-400 uppercase">{item.language || 'zh'}</span>
                                                 <button
@@ -858,6 +975,28 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                         <Icon name="trash-2" size={16} />
                                                     </button>
                                                 )}
+                                            </div>
+                                        )}
+
+                                        {reorderMode && (
+                                            <div className="flex items-center gap-2 flex-shrink-0 bg-white rounded-lg border border-slate-200 p-1">
+                                                <button
+                                                    onClick={(e) => { e.stopPropagation(); handleReorder(index, 'up'); }}
+                                                    disabled={index === 0}
+                                                    className={`p-1.5 rounded-md transition-all ${index === 0 ? 'text-slate-300 cursor-not-allowed' : 'text-slate-500 hover:text-brand-600 hover:bg-brand-50'}`}
+                                                    title="Mover para Cima"
+                                                >
+                                                    <Icon name="arrow-up" size={18} />
+                                                </button>
+                                                <div className="w-px h-4 bg-slate-200"></div>
+                                                <button
+                                                    onClick={(e) => { e.stopPropagation(); handleReorder(index, 'down'); }}
+                                                    disabled={index === localReorderData.length - 1}
+                                                    className={`p-1.5 rounded-md transition-all ${index === localReorderData.length - 1 ? 'text-slate-300 cursor-not-allowed' : 'text-slate-500 hover:text-brand-600 hover:bg-brand-50'}`}
+                                                    title="Mover para Baixo"
+                                                >
+                                                    <Icon name="arrow-down" size={18} />
+                                                </button>
                                             </div>
                                         )}
                                     </div>

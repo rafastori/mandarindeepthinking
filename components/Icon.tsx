@@ -73,7 +73,9 @@ import {
     CalendarDays,
     BarChart3,
     Target,
-    ArrowUpRight
+    ArrowUpRight,
+    ArrowUp,
+    ArrowDown
 } from 'lucide-react';
 
 export interface IconProps {
@@ -157,7 +159,9 @@ const icons: Record<string, React.ElementType> = {
     'calendar-days': CalendarDays,
     'bar-chart-3': BarChart3,
     'target': Target,
-    'arrow-up-right': ArrowUpRight
+    'arrow-up-right': ArrowUpRight,
+    'arrow-up': ArrowUp,
+    'arrow-down': ArrowDown
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
