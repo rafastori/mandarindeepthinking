@@ -256,7 +256,45 @@ REGRAS RÍGIDAS:
       return res.status(200).json(result);
     }
 
-    // --- 7. POLYQUEST: TOKENIZAÇÃO ---
+    // --- 7. COLOR CORRECTION ---
+    if (type === 'color_correction') {
+      const { sentences, targetLanguage } = req.body;
+      const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
+      const langName = langNames[targetLanguage] || targetLanguage;
+
+      const systemPrompt = `Você é um linguista especialista em tradução e análise de correspondências entre idiomas.
+
+SUA TAREFA: Dado um conjunto de frases em ${langName} com suas respectivas traduções em Português, e uma lista de palavras-chave salvas com índices de cor, identifique EXATAMENTE quais palavras da TRADUÇÃO correspondem a cada palavra salva do texto original.
+
+REGRAS:
+1. Analise cada frase e sua tradução cuidadosamente.
+2. Para cada palavra salva, encontre a(s) palavra(s) na tradução que representam seu significado.
+3. Retorne a tradução tokenizada (palavra por palavra), indicando para cada token o colorIndex da palavra salva correspondente, ou null se não houver correspondência.
+4. Seja PRECISO: somente marque palavras que são traduções DIRETAS ou SINÔNIMOS PRÓXIMOS da palavra salva.
+5. Palavras funcionais (artigos, preposições) NÃO devem receber cor, a menos que sejam parte integral da tradução de uma palavra salva.
+
+FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
+[
+  {
+    "sentenceId": "id-da-frase",
+    "coloredTranslation": [
+      { "word": "palavra-da-tradução", "colorIndex": 0 },
+      { "word": "outra", "colorIndex": null },
+      ...
+    ]
+  }
+]`;
+
+      const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
+
+Dados:
+${JSON.stringify(sentences, null, 2)}`;
+
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
+    }
+
+    // --- 8. POLYQUEST: TOKENIZAÇÃO ---
     if (type === 'tokenize') {
       const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
       const langName = langNames[targetLang] || targetLang;
