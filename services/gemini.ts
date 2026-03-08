@@ -214,24 +214,53 @@ REGRAS RÍGIDAS:
 4. Retorne APENAS um array JSON: [{"term": "termo original", "definition": "resumo curto"}, ...]`;
     }
 
+    if (type === 'color_correction') {
+        return `Você é um linguista especialista em tradução e análise de correspondências entre idiomas.
+
+SUA TAREFA: Dado um conjunto de frases em ${langName} com suas respectivas traduções em Português, e uma lista de palavras-chave salvas com índices de cor, identifique EXATAMENTE quais palavras da TRADUÇÃO correspondem a cada palavra salva do texto original.
+
+REGRAS:
+1. Analise cada frase e sua tradução cuidadosamente.
+2. Para cada palavra salva, encontre a(s) palavra(s) na tradução que representam seu significado.
+3. Retorne a tradução tokenizada (palavra por palavra), indicando para cada token o colorIndex da palavra salva correspondente, ou null se não houver correspondência.
+4. Seja PRECISO: somente marque palavras que são traduções DIRETAS ou SINÔNIMOS PRÓXIMOS da palavra salva.
+5. Palavras funcionais (artigos, preposições) NÃO devem receber cor, a menos que sejam parte integral da tradução de uma palavra salva.
+
+FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
+[
+  {
+    "sentenceId": "id-da-frase",
+    "coloredTranslation": [
+      { "word": "palavra-da-tradução", "colorIndex": 0 },
+      { "word": "outra", "colorIndex": null },
+      ...
+    ]
+  }
+]`;
+    }
+
     return '';
 };
 
-const callLocalGemini = async (prompt: string, systemInstruction: string) => {
+const callLocalGemini = async (prompt: string, systemInstruction: string, expectJson: boolean = true) => {
     try {
         const response = await (genAI as any).models.generateContent({
             model: MODEL_NAME,
             contents: prompt,
             config: {
                 systemInstruction: systemInstruction,
-                responseMimeType: "application/json",
+                ...(expectJson ? { responseMimeType: "application/json" } : {})
             }
         });
 
         const text = response.text;
         if (!text) throw new Error("Sem resposta da IA");
 
-        // Clean JSON formatting if necessary (sometimes AI returns markdown)
+        if (!expectJson) {
+            return text;
+        }
+
+        // Clean JSON formatting se necessário (as vezes a IA retorna markdown de código msm forçando JSON)
         const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
 
         return JSON.parse(cleanText);
@@ -764,7 +793,7 @@ Retorne a resposta em Markdown. Use emojis. Mantenha um tom de tutor, encorajado
     try {
         if (import.meta.env.DEV) {
             console.log("Using Local Gemini SDK for Study Stats Analysis");
-            return await callLocalGemini(prompt, systemInstruction);
+            return await callLocalGemini(prompt, systemInstruction, false);
         }
 
         const response = await fetch(API_URL, {
@@ -785,3 +814,66 @@ Retorne a resposta em Markdown. Use emojis. Mantenha um tom de tutor, encorajado
         return "⚠️ Não foi possível gerar a análise no momento pela IA. Tente novamente mais tarde.";
     }
 }
+
+// Interface para entrada da correção de cores
+export interface ColorCorrectionInput {
+    sentenceId: string;
+    originalText: string;
+    translation: string;
+    savedWords: { word: string; meaning: string; colorIndex: number }[];
+}
+
+// Interface para saída da correção de cores
+export interface ColorCorrectionOutput {
+    sentenceId: string;
+    coloredTranslation: { word: string; colorIndex: number | null }[];
+}
+
+/**
+ * Usa Gemini para corrigir o mapeamento de cores nas traduções.
+ * Analisa cada frase e identifica exatamente quais palavras da tradução
+ * correspondem a cada palavra salva, atribuindo o colorIndex correto.
+ */
+export const correctColorHighlights = async (
+    sentences: ColorCorrectionInput[],
+    targetLanguage: SupportedLanguage = 'zh'
+): Promise<ColorCorrectionOutput[]> => {
+    if (sentences.length === 0) return [];
+
+    const systemPrompt = getSystemInstruction('color_correction', targetLanguage);
+    const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
+
+Dados:
+${JSON.stringify(sentences.map(s => ({
+        sentenceId: s.sentenceId,
+        originalText: s.originalText,
+        translation: s.translation,
+        savedWords: s.savedWords.map(w => ({ word: w.word, meaning: w.meaning, colorIndex: w.colorIndex }))
+    })), null, 2)}`;
+
+    if (import.meta.env.DEV) {
+        console.log("[ColorCorrection] Using Local Gemini SDK");
+        const result = await callLocalGemini(userPrompt, systemPrompt);
+        console.log("[ColorCorrection] Result:", result);
+        return result;
+    }
+
+    // PROD MODE
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'color_correction',
+                sentences,
+                targetLanguage
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao corrigir cores");
+        return await response.json();
+    } catch (error) {
+        console.error("Color Correction Error:", error);
+        throw error;
+    }
+};

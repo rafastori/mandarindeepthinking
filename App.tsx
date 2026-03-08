@@ -59,7 +59,15 @@ const App: React.FC = () => {
     const [showTutorial, setShowTutorial] = useState(false);
     const [showNeuralSelect, setShowNeuralSelect] = useState(false);
     const [neuralWord, setNeuralWord] = useState<string | null>(null);
-    const [isColorHighlightEnabled, setIsColorHighlightEnabled] = useState(true);
+    const [isColorHighlightEnabled, setIsColorHighlightEnabled] = useState(() => {
+        const saved = localStorage.getItem('colorHighlightEnabled');
+        return saved !== null ? saved === 'true' : true; // default: true
+    });
+
+    // Persistir preferência de cores no localStorage
+    useEffect(() => {
+        localStorage.setItem('colorHighlightEnabled', String(isColorHighlightEnabled));
+    }, [isColorHighlightEnabled]);
     const [showFullStats, setShowFullStats] = useState(false);
 
     const { items: localItems, addItem, deleteItem, updateItem, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);

@@ -3,8 +3,7 @@ import Icon from '../components/Icon';
 import { useDetailedStats } from '../hooks/useDetailedStats';
 import { analyzeStudyStats } from '../services/gemini';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+
 
 import { StudyItem } from '../types';
 
@@ -56,20 +55,59 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
     };
 
     const handleExportPDF = async () => {
-        const input = document.getElementById('pdf-content');
-        if (!input) return;
-
+        setIsAnalyzing(true);
         try {
-            const canvas = await html2canvas(input, { scale: 2 });
-            const imgData = canvas.toDataURL('image/png');
-            const pdf = new jsPDF('p', 'mm', 'a4');
-            const pdfWidth = pdf.internal.pageSize.getWidth();
-            const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+            // Prepara os dados brutos de estatísticas que a API Python precisará
+            const statsData = {
+                overview: {
+                    totalTimeMinutes,
+                    globalAccuracy,
+                    totalSessions: sessions.length,
+                    dailyGoalPercent: dailyGoalFormat.percent
+                },
+                difficultWords: difficultWords.map(dw => ({
+                    word: dw.word,
+                    errorCount: dw.errorCount
+                })),
+                sessions: dayStats.map(ds => ({
+                    date: ds.date,
+                    totalMinutes: Math.round(ds.totalTime / 60),
+                    correct: ds.totalCorrect,
+                    wrong: ds.totalWrong,
+                    sessionsCount: ds.sessions.length
+                }))
+            };
 
-            pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-            pdf.save(`Estatisticas_MemorizaTudo_${new Date().toLocaleDateString('pt-BR')}.pdf`);
+            const response = await fetch('/api/export-pdf.py', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'stats',
+                    filename: `Estatisticas_MemorizaTudo_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}`,
+                    data: statsData
+                })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Falha ao exportar PDF');
+            }
+
+            // O Python retorna o Blob (PDF gerado)
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Estatisticas_MemorizaTudo_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.pdf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         } catch (e) {
             console.error("PDF Export erro:", e);
+            alert("Erro ao exportar PDF. Tente novamente.");
+        } finally {
+            setIsAnalyzing(false);
         }
     };
 

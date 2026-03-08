@@ -65,6 +65,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
     const [matchedIds, setMatchedIds] = useState<string[]>([]);
     const [matchIndex, setMatchIndex] = useState(0);
     const [searchActive, setSearchActive] = useState(false);
+    const [showOnlyDue, setShowOnlyDue] = useState(false);
     // Modal Controls
     const [selectedItem, setSelectedItem] = useState<any>(null);
 
@@ -159,14 +160,34 @@ const ReviewView: React.FC<ReviewViewProps> = ({
         return items.filter((v, i, a) => a.findIndex(t => (t.id === v.id)) === i).reverse();
     }, [savedIds, data, activeFolderFilters]);
 
-    const displayedItems = useMemo(() => {
-        if (!showOnlyErrors) return savedItems;
+    // Computar itens com revisão programada pendente
+    const dueItems = useMemo(() => {
+        if (!stats?.favoriteConfigs) return [];
+        const now = Date.now();
+
         return savedItems.filter(item => {
-            const hasError = (wordCounts[item.word] || 0) > 0;
-            const isIgnored = ignoredReviewWords.includes(item.word);
-            return hasError && !isIgnored;
+            const config = stats.favoriteConfigs?.[item.sourceId];
+            if (!config || config.mode !== 'absolute' || !config.absoluteIntervalDays) return false;
+            const elapsedMs = now - (config.lastReviewedAt || 0);
+            return elapsedMs >= (config.absoluteIntervalDays * 24 * 60 * 60 * 1000);
         });
-    }, [savedItems, showOnlyErrors, wordCounts, ignoredReviewWords]);
+    }, [savedItems, stats?.favoriteConfigs]);
+
+    const displayedItems = useMemo(() => {
+        let items = savedItems;
+        if (showOnlyErrors) {
+            items = items.filter(item => {
+                const hasError = (wordCounts[item.word] || 0) > 0;
+                const isIgnored = ignoredReviewWords.includes(item.word);
+                return hasError && !isIgnored;
+            });
+        }
+        if (showOnlyDue) {
+            const dueIds = new Set(dueItems.map(d => d.id));
+            items = items.filter(item => dueIds.has(item.id));
+        }
+        return items;
+    }, [savedItems, showOnlyErrors, showOnlyDue, wordCounts, ignoredReviewWords, dueItems]);
 
     const toggleSelection = (id: string) => {
         const newSelected = new Set(selectedIds);
@@ -339,6 +360,21 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                     >
                         <Icon name="x-circle" size={16} />
                         <span className="hidden sm:inline">Erros</span>
+                    </button>
+
+                    {/* Toggle Pendentes */}
+                    <button
+                        onClick={() => setShowOnlyDue(!showOnlyDue)}
+                        className={`px-3 py-1.5 text-sm font-semibold rounded-lg flex items-center gap-1.5 transition-colors ${showOnlyDue ? 'bg-violet-100 text-violet-600 hover:bg-violet-200' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-100'}`}
+                        title={showOnlyDue ? "Mostrar todas" : "Filtrar pendentes de revisão"}
+                    >
+                        <Icon name="calendar-days" size={16} />
+                        <span className="hidden sm:inline">Pendentes</span>
+                        {dueItems.length > 0 && (
+                            <span className="bg-violet-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center leading-none">
+                                {dueItems.length}
+                            </span>
+                        )}
                     </button>
 
                     {/* Botão de pesquisa (quando não está pesquisando) */}
@@ -656,6 +692,106 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                         </div>
                     );
                 }))}
+
+            {/* Seção: Revisão Programada */}
+            {!showOnlyDue && dueItems.length > 0 && (
+                <>
+                    <div className="flex items-center gap-3 mt-6 mb-3">
+                        <div className="h-px flex-1 bg-violet-200" />
+                        <div className="flex items-center gap-2 text-violet-600">
+                            <Icon name="calendar-days" size={18} />
+                            <span className="text-sm font-bold">Revisão Programada</span>
+                            <span className="bg-violet-100 text-violet-700 text-xs font-bold px-2 py-0.5 rounded-full">
+                                {dueItems.length} pendente{dueItems.length !== 1 ? 's' : ''}
+                            </span>
+                        </div>
+                        <div className="h-px flex-1 bg-violet-200" />
+                    </div>
+
+                    {dueItems.map(item => {
+                        const isGerman = item.language === 'de' || item.sentence.language === 'de';
+                        const config = stats?.favoriteConfigs?.[item.sourceId];
+                        const intervalLabel = config?.absoluteIntervalDays === 1 ? 'Diário'
+                            : config?.absoluteIntervalDays === 7 ? 'Semanal'
+                                : `A cada ${config?.absoluteIntervalDays} dias`;
+                        const lastReviewed = config?.lastReviewedAt;
+                        const overdueDays = lastReviewed
+                            ? Math.floor((Date.now() - lastReviewed) / (24 * 60 * 60 * 1000))
+                            : null;
+
+                        return (
+                            <div
+                                key={`due-${item.id}`}
+                                className="rounded-lg shadow-sm border-2 border-violet-400 bg-violet-50 transition-all duration-300"
+                            >
+                                <div
+                                    className="flex items-center justify-between p-4 cursor-pointer hover:bg-violet-100/50 transition-colors"
+                                    onDoubleClick={() => setExpandedId(expandedId === item.id ? null : item.id)}
+                                >
+                                    <div className="flex items-center gap-3 flex-1 min-w-0">
+                                        <div className="flex items-center gap-2 flex-1 min-w-0">
+                                            <h3 className={`${isGerman ? 'font-sans' : 'font-chinese'} text-xl font-bold text-violet-700 truncate`}>
+                                                {item.word}
+                                            </h3>
+                                            <span className="text-[10px] font-bold text-violet-400 uppercase">{item.language || item.sentence.language || 'zh'}</span>
+                                            <button
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    const audioId = `review-due-${item.sourceId}`;
+                                                    if (playingId === audioId) { stop(); }
+                                                    else { speak(item.word, (item.language || item.sentence.language || 'zh') as SupportedLanguage, audioId); }
+                                                }}
+                                                className={`p-1.5 rounded-full transition-colors flex-shrink-0 ${playingId === `review-due-${item.sourceId}` ? 'text-white bg-violet-600 animate-pulse' : 'text-violet-400 hover:text-violet-600 hover:bg-violet-100'}`}
+                                                title="Ouvir pronúncia"
+                                            >
+                                                <Icon name={playingId === `review-due-${item.sourceId}` ? 'square' : 'volume-2'} size={18} />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 flex-shrink-0">
+                                        <div className="flex flex-col items-end">
+                                            <span className="text-[10px] font-bold text-violet-500 flex items-center gap-1">
+                                                <Icon name="clock" size={10} />
+                                                {intervalLabel}
+                                            </span>
+                                            {overdueDays !== null && overdueDays > 0 && (
+                                                <span className="text-[10px] text-red-500 font-medium">
+                                                    {overdueDays}d atrasado
+                                                </span>
+                                            )}
+                                        </div>
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setActiveFavoriteWord({ id: item.sourceId, term: item.word });
+                                                setFavoriteModalOpen(true);
+                                            }}
+                                            className="p-1.5 rounded-full text-violet-500 hover:text-violet-600 hover:bg-violet-100 transition-colors"
+                                            title="Editar Frequência"
+                                        >
+                                            <Icon name="star" size={18} fill="#8b5cf6" />
+                                        </button>
+                                    </div>
+                                </div>
+
+                                {/* Detalhes expandíveis */}
+                                {expandedId === item.id && (
+                                    <div className="bg-violet-100/50 p-4 border-t border-violet-200 rounded-b-lg animate-in fade-in slide-in-from-top-1">
+                                        <div className="mb-2">
+                                            <span className="text-[10px] text-violet-400 font-bold uppercase block mb-1">
+                                                {isGerman ? 'Pronúncia' : 'Pinyin'}
+                                            </span>
+                                            <p className="font-medium text-violet-600 text-lg">{item.pinyin}</p>
+                                            <p className="text-slate-700 mt-2 font-medium">{item.meaning}</p>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </>
+            )}
 
             {/* Modal de Favoritos */}
             {activeFavoriteWord && (

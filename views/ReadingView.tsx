@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useRef, useEffect } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, Keyword, SupportedLanguage } from '../types';
 import { usePuterSpeech } from '../hooks/usePuterSpeech';
-import { generateWordCard } from '../services/gemini';
+import { generateWordCard, correctColorHighlights, ColorCorrectionOutput } from '../services/gemini';
 import { moveItemsToFolder, extractFolderPaths } from '../services/folderService';
 import ExportModal, { ExportConfig } from '../components/ExportModal';
 import VoiceMicButton from '../components/VoiceMicButton';
@@ -94,6 +94,49 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
+
+    // Estados para popover de cores e correção via IA
+    const [showColorPopover, setShowColorPopover] = useState(false);
+    const [isCorrectingColors, setIsCorrectingColors] = useState(false);
+    const [colorCorrections, setColorCorrections] = useState<Map<string, { word: string; colorIndex: number | null }[]>>(() => {
+        try {
+            const saved = localStorage.getItem('colorCorrections');
+            if (saved) {
+                // Converte de volta de [chave, valor][] para Map
+                return new Map(JSON.parse(saved));
+            }
+        } catch (e) {
+            console.error('Erro ao ler colorCorrections do localStorage:', e);
+        }
+        return new Map();
+    });
+
+    // Persistir correções de cores
+    useEffect(() => {
+        try {
+            // Converte Map para array de pares para serialização JSON
+            const arrayFormat = Array.from(colorCorrections.entries());
+            localStorage.setItem('colorCorrections', JSON.stringify(arrayFormat));
+        } catch (e) {
+            console.error('Erro ao salvar colorCorrections no localStorage:', e);
+        }
+    }, [colorCorrections]);
+
+    const colorPopoverRef = useRef<HTMLDivElement>(null);
+    const colorBtnRef = useRef<HTMLButtonElement>(null);
+
+    // Fechar popover de cores ao clicar fora
+    useEffect(() => {
+        if (!showColorPopover) return;
+        const handler = (e: MouseEvent) => {
+            if (colorPopoverRef.current && !colorPopoverRef.current.contains(e.target as Node) &&
+                colorBtnRef.current && !colorBtnRef.current.contains(e.target as Node)) {
+                setShowColorPopover(false);
+            }
+        };
+        document.addEventListener('mousedown', handler);
+        return () => document.removeEventListener('mousedown', handler);
+    }, [showColorPopover]);
 
     // Paleta de 15 cores vibrantes e bem distintas para destaque de palavras
     const HIGHLIGHT_COLORS = [
@@ -467,6 +510,72 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         }
     };
 
+    // Função para solicitar correção de cores via IA
+    const handleCorrectColors = async () => {
+        setShowColorPopover(false);
+        setIsCorrectingColors(true);
+
+        try {
+            // Coletar segmentos filtrados com palavras salvas
+            const sentencesForAI = filteredData
+                .filter(item => item.translation) // Apenas itens com tradução
+                .map(item => {
+                    const savedWords: { word: string; meaning: string; colorIndex: number }[] = [];
+                    item.tokens.forEach(token => {
+                        const clean = cleanPunctuation(token).toLowerCase();
+                        const kw = savedWordsMap.get(clean);
+                        const colorIdx = wordColorMap.get(clean);
+                        if (kw && colorIdx !== undefined && kw.meaning) {
+                            // Evita duplicatas
+                            if (!savedWords.some(sw => sw.word === kw.word)) {
+                                savedWords.push({ word: kw.word, meaning: kw.meaning, colorIndex: colorIdx });
+                            }
+                        }
+                    });
+                    return {
+                        sentenceId: item.id.toString(),
+                        originalText: item.chinese,
+                        translation: item.translation || '',
+                        savedWords
+                    };
+                })
+                .filter(s => s.savedWords.length > 0); // Apenas frases com palavras salvas
+
+            if (sentencesForAI.length === 0) {
+                alert('Nenhuma palavra salva encontrada nos textos filtrados.');
+                setIsCorrectingColors(false);
+                return;
+            }
+
+            // Detectar idioma predominante
+            const langCounts: Record<string, number> = {};
+            filteredData.forEach(item => {
+                const lang = item.language || 'zh';
+                langCounts[lang] = (langCounts[lang] || 0) + 1;
+            });
+            const predominantLang = Object.entries(langCounts).sort((a, b) => b[1] - a[1])[0]?.[0] as SupportedLanguage || 'zh';
+
+            const results = await correctColorHighlights(sentencesForAI, predominantLang);
+
+            // Converter resultado em Map
+            const newCorrections = new Map<string, { word: string; colorIndex: number | null }[]>();
+            results.forEach((r: ColorCorrectionOutput) => {
+                newCorrections.set(r.sentenceId, r.coloredTranslation);
+            });
+            setColorCorrections(newCorrections);
+
+            // Ativar cores automaticamente se estiver desativado
+            if (!isColorHighlightEnabled) {
+                setIsColorHighlightEnabled(true);
+            }
+        } catch (error) {
+            console.error('[ColorCorrection] Erro:', error);
+            alert('Erro ao corrigir cores. Tente novamente.');
+        } finally {
+            setIsCorrectingColors(false);
+        }
+    };
+
     const renderSentence = (sentence: StudyItem) => {
         return sentence.tokens.map((token, i) => {
             const cleanToken = cleanPunctuation(token);
@@ -520,13 +629,59 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 <Icon name="book-open" size={20} className="text-brand-600" />
                                 Leitura ({filteredData.length})
                             </h2>
-                            <button
-                                onClick={() => setIsColorHighlightEnabled(!isColorHighlightEnabled)}
-                                className={`p-1.5 rounded-lg transition-colors ml-1 ${isColorHighlightEnabled ? 'text-amber-500 bg-amber-50 hover:bg-amber-100' : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'}`}
-                                title={isColorHighlightEnabled ? "Desativar destaque de palavras" : "Ativar destaque de palavras"}
-                            >
-                                <Icon name="palette" size={18} />
-                            </button>
+                            <div className="relative inline-flex">
+                                <button
+                                    ref={colorBtnRef}
+                                    onClick={(e) => { e.stopPropagation(); setShowColorPopover(!showColorPopover); }}
+                                    className={`p-1.5 rounded-lg transition-colors ml-1 ${isCorrectingColors
+                                        ? 'text-amber-500 bg-amber-50 animate-pulse'
+                                        : isColorHighlightEnabled
+                                            ? 'text-amber-500 bg-amber-50 hover:bg-amber-100'
+                                            : 'text-slate-400 hover:text-slate-600 hover:bg-slate-100'
+                                        }`}
+                                    title="Opções de cores"
+                                >
+                                    {isCorrectingColors
+                                        ? <div className="w-[18px] h-[18px] border-2 border-amber-500 border-t-transparent rounded-full animate-spin" />
+                                        : <Icon name="palette" size={18} />
+                                    }
+                                </button>
+
+                                {/* Popover de opções de cores */}
+                                {showColorPopover && !isCorrectingColors && (
+                                    <div
+                                        ref={colorPopoverRef}
+                                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 min-w-[200px] z-[100] animate-in fade-in slide-in-from-top-2"
+                                    >
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setShowColorPopover(false);
+                                                setIsColorHighlightEnabled(!isColorHighlightEnabled);
+                                            }}
+                                            className="w-full text-left px-3 py-2 text-sm hover:bg-slate-50 transition-colors flex items-center gap-2 text-slate-700"
+                                        >
+                                            <Icon name={isColorHighlightEnabled ? 'eye-off' : 'palette'} size={16} className={isColorHighlightEnabled ? 'text-slate-400' : 'text-amber-500'} />
+                                            {isColorHighlightEnabled ? 'Desativar cores' : 'Ativar cores'}
+                                        </button>
+                                        <button
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleCorrectColors();
+                                            }}
+                                            className="w-full text-left px-3 py-2 text-sm hover:bg-slate-50 transition-colors flex items-center gap-2 text-slate-700"
+                                        >
+                                            <Icon name="rotate-ccw" size={16} className="text-brand-500" />
+                                            Atualizar correção por cores
+                                        </button>
+
+                                        {/* Arrow pointing up */}
+                                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-[-1px]">
+                                            <div className="w-2.5 h-2.5 bg-white border-l border-t border-slate-200 transform rotate-45" />
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         {!selectionMode ? (
@@ -731,7 +886,25 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                     <div className="pt-2 border-t border-slate-50">
                                         <p className="text-slate-500 text-sm italic text-left">
                                             {isColorHighlightEnabled ? (() => {
-                                                // Coleta apenas as palavras salvas que EXISTEM nesta frase específica
+                                                // 1. Verificar se existe correção da IA para esta frase
+                                                const aiCorrection = colorCorrections.get(item.id.toString());
+                                                if (aiCorrection && aiCorrection.length > 0) {
+                                                    return aiCorrection.map((token, wi) => {
+                                                        const color = token.colorIndex !== null && token.colorIndex !== undefined
+                                                            ? HIGHLIGHT_COLORS[token.colorIndex % HIGHLIGHT_COLORS.length]
+                                                            : null;
+                                                        return (
+                                                            <span key={wi}>
+                                                                {wi > 0 ? ' ' : ''}
+                                                                <span style={color ? { color: color.text, fontWeight: 600 } : undefined}>
+                                                                    {token.word}
+                                                                </span>
+                                                            </span>
+                                                        );
+                                                    });
+                                                }
+
+                                                // 2. Fallback: matching heurístico original
                                                 const sentenceSavedWords: { meaning: string; colorIdx: number }[] = [];
                                                 item.tokens.forEach(token => {
                                                     const clean = cleanPunctuation(token).toLowerCase();
