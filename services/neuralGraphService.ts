@@ -55,7 +55,7 @@ export interface SavedWordInfo {
 // Helper: Clean punctuation from text for matching
 // ============================================================
 
-const cleanPunctuation = (text: string): string =>
+export const cleanPunctuation = (text: string): string =>
     text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, '').trim().toLowerCase();
 
 // ============================================================
@@ -327,8 +327,15 @@ export function buildGraphForWord(
     // --- Layer 5: Semantic Galaxy (Embeddings) ---
     // Fetch all saved words so we can search the entire vocabulary
     const allWordsInfo = getAllSavedWords(data, savedIds);
-    // Find galaxies - pass the clean central word, the entire dictionary, take 8, exclude current nodeIds
-    const galaxyNeighbors = findNearestGalaxiesByLabel(cleanWord, allWordsInfo, 8, nodeIds);
+    // Build label-based exclusion set so galaxies don't duplicate words already in layers 1-4
+    const excludeLabels = new Set<string>();
+    excludeLabels.add(cleanWord);
+    for (const node of nodes) {
+        if (node.type === 'related-word' || node.type === 'proximity') {
+            excludeLabels.add(cleanPunctuation(node.label));
+        }
+    }
+    const galaxyNeighbors = findNearestGalaxiesByLabel(cleanWord, allWordsInfo, 8, excludeLabels);
     
     for (const galaxy of galaxyNeighbors) {
         const galaxyNodeId = `galaxy:${galaxy.wordId}`;

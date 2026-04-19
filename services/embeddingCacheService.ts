@@ -13,17 +13,23 @@
  */
 
 import { generateWordEmbeddings } from './gemini';
-import { SavedWordInfo } from './neuralGraphService';
+import { SavedWordInfo, cleanPunctuation } from './neuralGraphService';
 
 // ============================================================
 // Types
 // ============================================================
+
+interface PrecomputedNeighbor {
+    wordId: string;
+    score: number;
+}
 
 export interface EmbeddingCache {
     version: string;          // Hash of word IDs for invalidation
     model: string;            // 'gemini-embedding-2-preview'
     dimensions: number;       // 768
     embeddings: Record<string, number[]>; // wordId → 768D vector
+    neighbors?: Record<string, PrecomputedNeighbor[]>; // wordId → top-N nearest (optional for back-compat)
     createdAt: number;        // timestamp
 }
 
@@ -43,6 +49,7 @@ export interface GalaxyNeighbor {
 const CACHE_KEY = 'neural_embeddings_v2';
 const MODEL_NAME = 'gemini-embedding-2-preview';
 const DIMENSIONS = 768;
+const PRECOMPUTED_TOP_N = 20; // headroom so excludeLabels can still yield 8 results after filtering
 
 // ============================================================
 // Helpers
@@ -81,6 +88,50 @@ function cosineSimilarity(a: number[], b: number[]): number {
     }
     const denominator = Math.sqrt(normA) * Math.sqrt(normB);
     return denominator === 0 ? 0 : dotProduct / denominator;
+}
+
+/**
+ * Pre-compute top-N nearest neighbors for every word in the vocabulary.
+ * Runs locally (no API) — O(n²) cosine ops with pre-computed norms.
+ * For n=1000 @ 768 dims ~1-2s on modern JS; negligible for typical vocabs.
+ */
+function precomputeNeighbors(
+    embeddings: Record<string, number[]>,
+    topN: number
+): Record<string, PrecomputedNeighbor[]> {
+    const ids = Object.keys(embeddings);
+    const result: Record<string, PrecomputedNeighbor[]> = {};
+    const norms: Record<string, number> = {};
+
+    for (const id of ids) {
+        const v = embeddings[id];
+        let sum = 0;
+        for (let i = 0; i < v.length; i++) sum += v[i] * v[i];
+        norms[id] = Math.sqrt(sum);
+    }
+
+    for (let i = 0; i < ids.length; i++) {
+        const idA = ids[i];
+        const a = embeddings[idA];
+        const normA = norms[idA];
+        if (normA === 0) { result[idA] = []; continue; }
+
+        const sims: PrecomputedNeighbor[] = [];
+        for (let j = 0; j < ids.length; j++) {
+            if (i === j) continue;
+            const idB = ids[j];
+            const normB = norms[idB];
+            if (normB === 0) continue;
+            const b = embeddings[idB];
+            let dot = 0;
+            for (let k = 0; k < a.length; k++) dot += a[k] * b[k];
+            sims.push({ wordId: idB, score: dot / (normA * normB) });
+        }
+        sims.sort((x, y) => y.score - x.score);
+        result[idA] = sims.slice(0, topN);
+    }
+
+    return result;
 }
 
 // ============================================================
@@ -124,14 +175,14 @@ export async function ensureEmbeddingsReady(
     const targetHash = hashWordIds(words);
     const cache = getCache();
 
-    // Cache hit — same vocabulary
-    if (cache && cache.version === targetHash) {
-        console.log(`[EmbeddingCache] Cache hit (${Object.keys(cache.embeddings).length} vectors)`);
+    // Cache hit — same vocabulary AND neighbors already pre-computed
+    if (cache && cache.version === targetHash && cache.neighbors) {
+        console.log(`[EmbeddingCache] Cache hit (${Object.keys(cache.embeddings).length} vectors, ${Object.keys(cache.neighbors).length} neighbor indexes)`);
         return true;
     }
 
-    // Cache miss or stale — need to generate
-    console.log(`[EmbeddingCache] Cache miss. Generating embeddings for ${words.length} words...`);
+    // Cache miss, stale, or missing neighbors — need to (re)generate
+    console.log(`[EmbeddingCache] Cache miss or incomplete. Generating embeddings for ${words.length} words...`);
 
     try {
         // Reuse existing embeddings for words that haven't changed
@@ -166,11 +217,17 @@ export async function ensureEmbeddingsReady(
 
         const mergedEmbeddings = { ...unchangedEmbeddings, ...newEmbeddings };
 
+        // Pre-compute pairwise neighbors once — local cosine, zero API cost
+        const t0 = performance.now();
+        const neighbors = precomputeNeighbors(mergedEmbeddings, PRECOMPUTED_TOP_N);
+        console.log(`[EmbeddingCache] Pre-computed top-${PRECOMPUTED_TOP_N} neighbors for ${Object.keys(neighbors).length} words in ${Math.round(performance.now() - t0)}ms`);
+
         const newCache: EmbeddingCache = {
             version: targetHash,
             model: MODEL_NAME,
             dimensions: DIMENSIONS,
             embeddings: mergedEmbeddings,
+            neighbors,
             createdAt: Date.now(),
         };
 
@@ -185,37 +242,52 @@ export async function ensureEmbeddingsReady(
 
 /**
  * Find the N nearest semantic neighbors for a given word.
- * Uses RETRIEVAL_QUERY task type for the query word.
- * Excludes IDs already in the graph (layers 1-4).
+ * Uses pre-computed neighbor table when available (fast path — O(topN)).
+ * Falls back to on-the-fly cosine computation for back-compat with older caches.
+ * Excludes words whose cleaned label is in `excludeLabels`.
  */
 export function findNearestGalaxies(
     targetWordId: string,
     words: SavedWordInfo[],
     topN: number = 8,
-    excludeIds: Set<string> = new Set()
+    excludeLabels: Set<string> = new Set()
 ): GalaxyNeighbor[] {
     const cache = getCache();
     if (!cache) return [];
 
-    // Find the target word's embedding
-    // Since we index with the word's SavedWordInfo.id, we need to find it
-    const targetVector = cache.embeddings[targetWordId];
-    if (!targetVector) {
-        // Try to find by matching the word label in the words array
-        // This handles the case where the centralNodeId format differs
-        return [];
+    const wordMap = new Map(words.map(w => [w.id, w]));
+
+    // Fast path: pre-computed neighbors
+    if (cache.neighbors && cache.neighbors[targetWordId]) {
+        const result: GalaxyNeighbor[] = [];
+        for (const { wordId, score } of cache.neighbors[targetWordId]) {
+            const w = wordMap.get(wordId);
+            if (!w) continue; // word was deleted from vocabulary
+            if (excludeLabels.has(cleanPunctuation(w.word))) continue;
+            result.push({
+                wordId: w.id,
+                word: w.word,
+                pinyin: w.pinyin,
+                meaning: w.meaning,
+                language: w.language,
+                score,
+            });
+            if (result.length >= topN) break;
+        }
+        return result;
     }
 
-    const similarities: GalaxyNeighbor[] = [];
+    // Fallback path: on-the-fly cosine (older cache without neighbors table)
+    const targetVector = cache.embeddings[targetWordId];
+    if (!targetVector) return [];
 
+    const similarities: GalaxyNeighbor[] = [];
     for (const word of words) {
         if (word.id === targetWordId) continue;
-        if (excludeIds.has(word.id)) continue;
+        if (excludeLabels.has(cleanPunctuation(word.word))) continue;
 
         const vector = cache.embeddings[word.id];
         if (!vector) continue;
-
-        const score = cosineSimilarity(targetVector, vector);
 
         similarities.push({
             wordId: word.id,
@@ -223,29 +295,32 @@ export function findNearestGalaxies(
             pinyin: word.pinyin,
             meaning: word.meaning,
             language: word.language,
-            score,
+            score: cosineSimilarity(targetVector, vector),
         });
     }
 
-    // Sort descending by similarity, take top N
     similarities.sort((a, b) => b.score - a.score);
     return similarities.slice(0, topN);
 }
 
 /**
  * Find galaxies by word label (used when we have the word text, not the ID).
- * Searches through words to find the matching ID first.
+ * Uses cleanPunctuation on both sides so matching survives ASCII punctuation
+ * and case differences across languages.
  */
 export function findNearestGalaxiesByLabel(
     wordLabel: string,
     words: SavedWordInfo[],
     topN: number = 8,
-    excludeIds: Set<string> = new Set()
+    excludeLabels: Set<string> = new Set()
 ): GalaxyNeighbor[] {
-    const cleanLabel = wordLabel.toLowerCase().trim();
-    const match = words.find(w => w.word.toLowerCase().trim() === cleanLabel);
-    if (!match) return [];
-    return findNearestGalaxies(match.id, words, topN, excludeIds);
+    const cleanQuery = cleanPunctuation(wordLabel);
+    const match = words.find(w => cleanPunctuation(w.word) === cleanQuery);
+    if (!match) {
+        console.warn(`[EmbeddingCache] No saved word matches "${wordLabel}" — galaxies unavailable (word not in saved vocabulary).`);
+        return [];
+    }
+    return findNearestGalaxies(match.id, words, topN, excludeLabels);
 }
 
 /**
