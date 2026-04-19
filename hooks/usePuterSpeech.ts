@@ -12,7 +12,10 @@ import { SupportedLanguage } from '../types';
  * - puterUsername: nome do usuário Puter (se logado)
  */
 export const usePuterSpeech = () => {
-    const [isPuterConnected, setIsPuterConnected] = useState(false);
+    const [isPuterConnected, setIsPuterConnected] = useState(() => {
+        try { return typeof puter !== 'undefined' && !!puter.auth?.isSignedIn(); }
+        catch { return false; }
+    });
     const [puterUsername, setPuterUsername] = useState<string | null>(null);
     const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
     const [playingId, setPlayingId] = useState<string | null>(null); // ID do item em reprodução

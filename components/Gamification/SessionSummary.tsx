@@ -17,6 +17,7 @@ interface SessionSummaryProps {
     newInventoryItem: InventoryItem | null;
     onClose: () => void;
     errors?: SessionErrorDetail[];
+    corrects?: SessionErrorDetail[];
     ignoredReviewWords?: string[];
     onToggleIgnore?: (word: string) => void;
 }
@@ -27,12 +28,14 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
     newInventoryItem,
     onClose,
     errors = [],
+    corrects = [],
     ignoredReviewWords = [],
     onToggleIgnore,
 }) => {
-    const [showErrorList, setShowErrorList] = useState(false);
+    const [showWordList, setShowWordList] = useState<'errors' | 'corrects' | null>(null);
     const { speak, stop, playingId } = usePuterSpeech();
     const canOpenErrors = errors.length > 0;
+    const canOpenCorrects = corrects.length > 0;
     const sessionDuration = sessionStats.endTime
         ? Math.floor((sessionStats.endTime - sessionStats.startTime) / 1000)
         : 0;
@@ -85,16 +88,25 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
                         <p className="text-2xl font-bold text-white">+{sessionStats.pointsEarned}</p>
                         <p className="text-xs text-slate-400">Pontos</p>
                     </div>
-                    <div className="bg-white/5 rounded-xl p-4 text-center">
-                        <CheckCircle className="w-6 h-6 mx-auto mb-2 text-green-400" />
-                        <p className="text-2xl font-bold text-white">{sessionStats.correctAnswers}</p>
-                        <p className="text-xs text-slate-400">Acertos</p>
-                    </div>
                     <button
                         type="button"
-                        onClick={() => canOpenErrors && setShowErrorList(true)}
+                        onClick={() => canOpenCorrects && setShowWordList('corrects')}
+                        disabled={!canOpenCorrects}
+                        className={`bg-white/5 rounded-xl p-4 text-center transition-all ${canOpenCorrects ? 'hover:bg-white/10 hover:ring-2 hover:ring-green-400/40 cursor-pointer' : 'cursor-default opacity-90'}`}
+                        title={canOpenCorrects ? 'Ver acertos desta sessão' : undefined}
+                    >
+                        <CheckCircle className="w-6 h-6 mx-auto mb-2 text-green-400" />
+                        <p className="text-2xl font-bold text-white">{sessionStats.correctAnswers}</p>
+                        <p className="text-xs text-slate-400 flex items-center justify-center gap-1">
+                            Acertos
+                            {canOpenCorrects && <ChevronRight className="w-3 h-3 text-green-400" />}
+                        </p>
+                    </button>
+                    <button
+                        type="button"
+                        onClick={() => canOpenErrors && setShowWordList('errors')}
                         disabled={!canOpenErrors}
-                        className={`bg-white/5 rounded-xl p-4 text-center transition-all relative ${canOpenErrors ? 'hover:bg-white/10 hover:ring-2 hover:ring-red-400/40 cursor-pointer' : 'cursor-default opacity-90'}`}
+                        className={`bg-white/5 rounded-xl p-4 text-center transition-all ${canOpenErrors ? 'hover:bg-white/10 hover:ring-2 hover:ring-red-400/40 cursor-pointer' : 'cursor-default opacity-90'}`}
                         title={canOpenErrors ? 'Ver erros desta sessão' : undefined}
                     >
                         <XCircle className="w-6 h-6 mx-auto mb-2 text-red-400" />
@@ -164,58 +176,70 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
                 </button>
             </div>
 
-            {showErrorList && (
+            {showWordList && (
                 <div
                     className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[60] flex items-center justify-center p-4"
-                    onClick={() => { stop(); setShowErrorList(false); }}
+                    onClick={() => { stop(); setShowWordList(null); }}
                 >
                     <div
                         className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 w-full max-w-md border border-slate-700 shadow-2xl max-h-[90vh] flex flex-col"
                         onClick={(e) => e.stopPropagation()}
                     >
+                        {/* Header */}
                         <div className="flex items-center justify-between mb-4">
                             <button
-                                onClick={() => { stop(); setShowErrorList(false); }}
-                                className="text-slate-400 hover:text-white p-2 -ml-2 flex items-center gap-1"
+                                onClick={() => { stop(); setShowWordList(null); }}
+                                className="text-slate-400 hover:text-white p-2 -ml-2"
                             >
                                 <ArrowLeft className="w-5 h-5" />
                             </button>
-                            <h2 className="text-white text-lg font-bold flex items-center gap-2">
-                                <XCircle className="w-5 h-5 text-red-400" />
-                                Erros da Sessão ({errors.length})
-                            </h2>
-                            <button
-                                onClick={() => { stop(); setShowErrorList(false); }}
-                                className="text-slate-400 hover:text-white p-2"
-                            >
+                            <h2 className="text-white text-lg font-bold">Palavras da Sessão</h2>
+                            <button onClick={() => { stop(); setShowWordList(null); }} className="text-slate-400 hover:text-white p-2">
                                 <X className="w-5 h-5" />
                             </button>
                         </div>
 
+                        {/* Tab toggle */}
+                        <div className="flex gap-2 mb-4">
+                            {canOpenCorrects && (
+                                <button
+                                    onClick={() => { stop(); setShowWordList('corrects'); }}
+                                    className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl text-sm font-semibold transition-all ${showWordList === 'corrects' ? 'bg-green-500/20 text-green-300 ring-1 ring-green-400/40' : 'bg-white/5 text-slate-400 hover:bg-white/10'}`}
+                                >
+                                    <CheckCircle className="w-4 h-4" />
+                                    Acertos ({corrects.length})
+                                </button>
+                            )}
+                            {canOpenErrors && (
+                                <button
+                                    onClick={() => { stop(); setShowWordList('errors'); }}
+                                    className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl text-sm font-semibold transition-all ${showWordList === 'errors' ? 'bg-red-500/20 text-red-300 ring-1 ring-red-400/40' : 'bg-white/5 text-slate-400 hover:bg-white/10'}`}
+                                >
+                                    <XCircle className="w-4 h-4" />
+                                    Erros ({errors.length})
+                                </button>
+                            )}
+                        </div>
+
+                        {/* Word list */}
                         <div className="overflow-y-auto space-y-2 flex-1 pr-1">
-                            {errors.map((err, idx) => {
-                                const audioId = `session-err-${idx}-${err.sourceId}`;
+                            {(showWordList === 'errors' ? errors : corrects).map((item, idx) => {
+                                const audioId = `session-${showWordList}-${idx}-${item.sourceId}`;
                                 const isPlaying = playingId === audioId;
-                                const isMarked = ignoredReviewWords.includes(err.word);
+                                const isMarked = ignoredReviewWords.includes(item.word);
+                                const accentColor = showWordList === 'errors' ? 'text-red-400' : 'text-green-400';
                                 return (
                                     <div
-                                        key={`${err.sourceId}-${idx}`}
+                                        key={`${item.sourceId}-${idx}`}
                                         className="bg-white/5 hover:bg-white/10 rounded-xl p-3 flex items-center gap-3 transition-colors"
                                     >
                                         <div className="flex-1 min-w-0">
-                                            <p className="text-white font-semibold text-lg truncate">{err.word}</p>
-                                            {err.pinyin && (
-                                                <p className="text-brand-300 text-sm truncate">{err.pinyin}</p>
-                                            )}
-                                            {err.meaning && (
-                                                <p className="text-slate-400 text-xs truncate">{err.meaning}</p>
-                                            )}
+                                            <p className="text-white font-semibold text-lg truncate">{item.word}</p>
+                                            {item.pinyin && <p className={`text-sm truncate ${accentColor}`}>{item.pinyin}</p>}
+                                            {item.meaning && <p className="text-slate-400 text-xs truncate">{item.meaning}</p>}
                                         </div>
                                         <button
-                                            onClick={() => {
-                                                if (isPlaying) stop();
-                                                else speak(err.word, err.language, audioId);
-                                            }}
+                                            onClick={() => isPlaying ? stop() : speak(item.word, item.language, audioId)}
                                             className={`p-2 rounded-full flex-shrink-0 transition-colors ${isPlaying ? 'bg-brand-600 text-white animate-pulse' : 'text-slate-300 hover:text-white hover:bg-white/10'}`}
                                             title="Ouvir pronúncia"
                                         >
@@ -223,7 +247,7 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
                                         </button>
                                         {onToggleIgnore && (
                                             <button
-                                                onClick={() => onToggleIgnore(err.word)}
+                                                onClick={() => onToggleIgnore(item.word)}
                                                 className={`p-2 rounded-full flex-shrink-0 transition-colors ${isMarked ? 'text-amber-400 bg-amber-500/10 hover:bg-amber-500/20' : 'text-slate-300 hover:text-amber-400 hover:bg-white/10'}`}
                                                 title={isMarked ? 'Remover da revisão' : 'Marcar para revisão'}
                                             >
@@ -236,7 +260,7 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
                         </div>
 
                         <button
-                            onClick={() => { stop(); setShowErrorList(false); }}
+                            onClick={() => { stop(); setShowWordList(null); }}
                             className="mt-4 w-full bg-white/10 hover:bg-white/20 text-white py-2.5 rounded-xl font-semibold transition-all"
                         >
                             Voltar

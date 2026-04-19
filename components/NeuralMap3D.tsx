@@ -9,10 +9,11 @@ import * as THREE from 'three';
 import * as d3 from 'd3-force-3d';
 import Icon from './Icon';
 import NeuralSidebar from './NeuralSidebar';
-import { StudyItem, Stats } from '../types';
+import { StudyItem, Stats, SupportedLanguage } from '../types';
 import { buildGraphForWord, GraphNode, NeuralGraphData, getAllSavedWords } from '../services/neuralGraphService';
 import { ensureEmbeddingsReady } from '../services/embeddingCacheService';
 import { getSavedItems } from '../utils/cardUtils';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
 
 /**
  * NeuralMap3D — v2 (R3F + Bloom + d3-force-3d)
@@ -694,6 +695,9 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
     const [history, setHistory] = useState<string[]>([word]);
     const containerRef = useRef<HTMLDivElement>(null);
 
+    // ---- Audio — single shared instance for the whole map (sidebar + quiz + dopamina) ----
+    const { speak, stop, playingId } = usePuterSpeech();
+
     // ---- Gamification state ----
     const [isGamified, setIsGamified] = useState(false);
     const [sessionXP, setSessionXP] = useState(0);
@@ -776,6 +780,8 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
         setQuiz(prev => prev ? { ...prev, picked: option } : null);
         onRecordResult?.(isCorrect, quiz.node.label);
         if (isCorrect) {
+            // Pronounce the word as positive feedback
+            speak(quiz.node.label, (quiz.node.language || 'zh') as SupportedLanguage, `quiz-correct-${quiz.node.label}`);
             setSessionXP(p => p + 10);
             setCorrectedWords(prev => {
                 const next = new Set(prev);
@@ -784,8 +790,9 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
             });
             correctCountRef.current += 1;
             if (correctCountRef.current % 5 === 0) {
-                // Spawn 6 dopamine sprites at random horizontal positions
+                // Spawn 6 dopamine sprites + say a motivational word
                 const combo = DOPAMINE_COMBOS[Math.floor(Math.random() * DOPAMINE_COMBOS.length)];
+                speak(combo.text, 'pt', `combo-${Date.now()}`);
                 const now = Date.now();
                 setComboSprites(prev => [
                     ...prev,
@@ -796,9 +803,12 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                     })),
                 ]);
             }
+        } else {
+            // Say the correct answer so user hears the right pronunciation
+            speak(quiz.node.label, (quiz.node.language || 'zh') as SupportedLanguage, `quiz-wrong-${quiz.node.label}`);
         }
         // No auto-dismiss — quiz stays showing feedback until the user clicks another node or toggles Quiz off.
-    }, [quiz, onRecordResult]);
+    }, [quiz, onRecordResult, speak]);
 
     // ---- Clear quiz when toggling gamification off ----
     useEffect(() => {
@@ -1135,6 +1145,9 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                 onClose={() => setSelectedNode(null)}
                 onExplore={handleExplore}
                 onNodeSelect={handleSidebarNodeSelect}
+                speak={speak}
+                stop={stop}
+                playingId={playingId}
             />
         </div>
     );

@@ -3,20 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, Square } from 'lucide-react';
 import Icon from './Icon';
 import { GraphNode, NeuralGraphData } from '../services/neuralGraphService';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
 import type { SupportedLanguage } from '../types';
-
-/**
- * NeuralSidebar
- *
- * Glassmorphism sidebar that slides in from the right when a node is selected
- * in the NeuralMap3D. Shows word details (pinyin, meaning) or sentence details
- * (text, translation) depending on node type.
- *
- * Now includes related-node navigation:
- * - Word view: lists connected sentences + nearby words as clickable chips
- * - Sentence view: lists words from the sentence as clickable chips
- */
 
 interface NeuralSidebarProps {
     selectedNode: GraphNode | null;
@@ -24,6 +11,9 @@ interface NeuralSidebarProps {
     onClose: () => void;
     onExplore: (word: string) => void;
     onNodeSelect: (nodeId: string) => void;
+    speak: (text: string, language: SupportedLanguage, id?: string) => void;
+    stop: () => void;
+    playingId: string | null;
 }
 
 const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
@@ -32,8 +22,10 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
     onClose,
     onExplore,
     onNodeSelect,
+    speak,
+    stop,
+    playingId,
 }) => {
-    const { speak, stop, playingId } = usePuterSpeech();
 
     const handleAudio = (text: string, lang: SupportedLanguage, id: string) => {
         if (playingId === id) stop();

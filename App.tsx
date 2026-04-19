@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { auth, googleProvider } from './services/firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import Header from './components/Header';
@@ -56,6 +56,7 @@ const App: React.FC = () => {
     const [showSessionSummary, setShowSessionSummary] = useState(false);
     const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
+    const sessionCorrectWordsRef = useRef<string[]>([]);
     const [showTutorial, setShowTutorial] = useState(false);
     const [showNeuralSelect, setShowNeuralSelect] = useState(false);
     const [neuralWord, setNeuralWord] = useState<string | null>(null);
@@ -208,6 +209,30 @@ const App: React.FC = () => {
 
     const libraryData = useMemo(() => [...localItems, ...staticData], [localItems]);
 
+    const sessionCorrectDetails = useMemo(() => {
+        if (!finalSessionStats) return [];
+        const words = sessionCorrectWordsRef.current.slice(0, finalSessionStats.correctAnswers);
+        return words.map(word => {
+            let pinyin = '', meaning = '';
+            let language: import('./types').SupportedLanguage = 'zh';
+            let sourceId = word;
+            for (const item of libraryData) {
+                if (item.chinese === word) {
+                    pinyin = item.pinyin; meaning = item.translation;
+                    language = (item.language || 'zh') as import('./types').SupportedLanguage;
+                    sourceId = item.id.toString(); break;
+                }
+                const kw = item.keywords?.find(k => k.word === word);
+                if (kw) {
+                    pinyin = kw.pinyin; meaning = kw.meaning;
+                    language = (kw.language || item.language || 'zh') as import('./types').SupportedLanguage;
+                    sourceId = kw.id; break;
+                }
+            }
+            return { word, pinyin, meaning, language, sourceId };
+        });
+    }, [finalSessionStats, libraryData]);
+
     const sessionErrorDetails = useMemo(() => {
         if (!finalSessionStats) return [];
         const errors = (activeStats.history || []).slice(0, finalSessionStats.wrongAnswers);
@@ -309,6 +334,9 @@ const App: React.FC = () => {
     };
 
     const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general') => {
+        if (isCorrect) {
+            sessionCorrectWordsRef.current = [word, ...sessionCorrectWordsRef.current].slice(0, 100);
+        }
         // Track in gamification
         if (isCorrect) {
             gamification.recordCorrect();
@@ -632,6 +660,7 @@ const App: React.FC = () => {
     // Handle starting session (dismisses intro)
     const handleStartSession = () => {
         gamification.startSession();
+        sessionCorrectWordsRef.current = [];
         setShowIntro(false);
     };
 
@@ -741,6 +770,7 @@ const App: React.FC = () => {
                     newAchievements={gamification.newAchievements}
                     newInventoryItem={gamification.newInventoryItem}
                     errors={sessionErrorDetails}
+                    corrects={sessionCorrectDetails}
                     ignoredReviewWords={activeStats.ignoredReviewWords || []}
                     onToggleIgnore={handleToggleIgnoreWord}
                     onClose={() => {

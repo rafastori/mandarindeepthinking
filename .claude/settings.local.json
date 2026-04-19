@@ -4,7 +4,16 @@
       "Bash(npx tsc *)",
       "Bash(echo \"EXIT=$?\")",
       "Bash(grep -E \"\\\\.\\(tsx|ts\\)$\")",
-      "Bash(grep -n \"sessionErrors\\\\|history\\\\|\\\\`endSession\\\\|StatsHistory\" \"C:\\\\Projetos\\\\mandarindeepthinking/App.tsx\")"
+      "Bash(grep -n \"sessionErrors\\\\|history\\\\|\\\\`endSession\\\\|StatsHistory\" \"C:\\\\Projetos\\\\mandarindeepthinking/App.tsx\")",
+      "Bash(where gh *)",
+      "Bash(winget list *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/rafael/AppData/Local/Programs/**)",
+      "Read(//c/Users/rafael/scoop/**)",
+      "Bash(powershell -Command \"Get-Command gh -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"Invoke-RestMethod -Uri 'https://api.github.com/repos/rafastori/mandarindeepthinking/pulls?state=open' -Headers @{Accept='application/vnd.github.v3+json'} | Select-Object -ExpandProperty html_url\")",
+      "Bash(powershell -Command 'git credential fill')",
+      "Bash(powershell -Command ' *)"
     ]
   }
 }
