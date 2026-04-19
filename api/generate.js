@@ -2,18 +2,24 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Helper para chamar o modelo Gemini
-const callGemini = async (genAI, prompt, systemInstruction = "") => {
+// expectJson=false: retorna { text } diretamente (para respostas Markdown/texto livre)
+// expectJson=true (default): força JSON e faz JSON.parse
+const callGemini = async (genAI, prompt, systemInstruction = "", expectJson = true) => {
   const response = await genAI.models.generateContent({
     model: "gemini-2.5-flash",
     contents: prompt,
     config: {
       systemInstruction: systemInstruction,
-      responseMimeType: "application/json",
+      ...(expectJson ? { responseMimeType: "application/json" } : {})
     }
   });
 
   const text = response.text;
   if (!text) throw new Error("Sem resposta da IA");
+
+  if (!expectJson) {
+    return { text };
+  }
 
   // Limpa formatação markdown se houver
   const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
@@ -338,6 +344,13 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
       }
       
       return res.status(200).json(embeddings);
+    }
+
+    // --- 9. ANÁLISE INTELIGENTE DE ESTATÍSTICAS ---
+    if (type === 'analyze_stats') {
+      const { prompt, systemInstruction } = req.body;
+      const result = await callGemini(genAI, prompt, systemInstruction || "", false);
+      return res.status(200).json(result);
     }
 
     // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---

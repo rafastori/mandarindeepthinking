@@ -19,6 +19,51 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
     const [activeTab, setActiveTab] = useState<'overview' | 'sessions' | 'charts' | 'ai'>('overview');
     const [aiAnalysis, setAiAnalysis] = useState<string | null>(null);
     const [isAnalyzing, setIsAnalyzing] = useState(false);
+    const [showTimeDetails, setShowTimeDetails] = useState(false);
+
+    const formatTime = (seconds: number) => {
+        const hours = Math.floor(seconds / 3600);
+        const mins = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        if (hours > 0) return `${hours}h ${mins}m ${secs}s`;
+        if (mins > 0) return `${mins}m ${secs}s`;
+        return `${secs}s`;
+    };
+
+    const tabNames: Record<string, string> = {
+        leitura: '📖 Leitura',
+        revisao: '📝 Revisão',
+        pratica: '🎯 Prática',
+        jogo: '🎮 Jogos',
+        lab: '🧪 Laboratório',
+        cards: '🃏 Cards',
+        pronuncia: '🎤 Pronúncia',
+        'mapa-neural': '🧠 Mapa Neural',
+    };
+
+    const aggregatedTabTime = useMemo(() => {
+        const result: Record<string, number> = {};
+        dayStats.forEach(d => {
+            d.sessions.forEach(s => {
+                if (s.tabTime) {
+                    Object.entries(s.tabTime).forEach(([tab, time]) => {
+                        result[tab] = (result[tab] || 0) + time;
+                    });
+                }
+            });
+        });
+        return result;
+    }, [dayStats]);
+
+    const tabTimeEntries = useMemo(
+        () => Object.entries(aggregatedTabTime).filter(([, t]) => t > 0).sort(([, a], [, b]) => b - a),
+        [aggregatedTabTime]
+    );
+
+    const totalTabSeconds = useMemo(
+        () => tabTimeEntries.reduce((acc, [, t]) => acc + t, 0),
+        [tabTimeEntries]
+    );
 
     // Derived metrics
     const totalTimeMinutes = Math.round(dayStats.reduce((acc, d) => acc + d.totalTime, 0) / 60);
@@ -223,13 +268,22 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                                 )}
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    <div className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center transform transition-transform hover:scale-105">
-                                        <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center mb-3">
+                                    <button
+                                        onClick={() => tabTimeEntries.length > 0 && setShowTimeDetails(true)}
+                                        className={`bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center transform transition-all hover:scale-105 w-full ${tabTimeEntries.length > 0 ? 'cursor-pointer hover:border-sky-200 hover:shadow-md group' : 'cursor-default'}`}
+                                        title={tabTimeEntries.length > 0 ? 'Ver detalhes de tempo por aba' : undefined}
+                                    >
+                                        <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center mb-3 group-hover:bg-sky-200 transition-colors">
                                             <Icon name="clock" size={20} className="text-sky-500" />
                                         </div>
                                         <p className="text-2xl font-black text-slate-800 tracking-tight">{totalTimeMinutes > 60 ? `${Math.floor(totalTimeMinutes / 60)}h ${totalTimeMinutes % 60}m` : `${totalTimeMinutes}m`}</p>
                                         <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mt-1">Tempo Total</p>
-                                    </div>
+                                        {tabTimeEntries.length > 0 && (
+                                            <span className="mt-2 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-sky-500 opacity-0 group-hover:opacity-100 transition-opacity">
+                                                <Icon name="trending-up" size={12} /> Ver por aba
+                                            </span>
+                                        )}
+                                    </button>
                                     <div className="bg-white p-5 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center justify-center text-center transform transition-transform hover:scale-105">
                                         <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mb-3">
                                             <Icon name="check-circle" size={20} className="text-emerald-500" />
@@ -473,6 +527,71 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                     </div>
                 </div>
             </div>
+
+            {/* Modal: Tempo por Aba */}
+            {showTimeDetails && (
+                <div
+                    className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[80] flex items-center justify-center p-4 animate-pop"
+                    onClick={() => setShowTimeDetails(false)}
+                >
+                    <div
+                        className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 w-full max-w-md border border-slate-700 shadow-2xl max-h-[85vh] flex flex-col"
+                        onClick={e => e.stopPropagation()}
+                    >
+                        {/* Header */}
+                        <div className="flex items-center justify-between mb-6 flex-shrink-0">
+                            <h2 className="text-white text-xl font-bold flex items-center gap-2">
+                                <Icon name="trending-up" size={22} className="text-purple-400" />
+                                Tempo por Aba
+                            </h2>
+                            <button
+                                onClick={() => setShowTimeDetails(false)}
+                                className="text-slate-400 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors"
+                            >
+                                <Icon name="x" size={20} />
+                            </button>
+                        </div>
+
+                        {/* Tab list */}
+                        <div className="overflow-y-auto flex-1 space-y-3 pr-1">
+                            {tabTimeEntries.map(([tab, time]) => {
+                                const label = tabNames[tab] || tab;
+                                const pct = totalTabSeconds > 0 ? Math.round((time / totalTabSeconds) * 100) : 0;
+                                return (
+                                    <div key={tab} className="bg-white/5 hover:bg-white/10 transition-colors rounded-2xl p-4">
+                                        <div className="flex items-center justify-between mb-2">
+                                            <span className="text-slate-200 font-semibold text-sm">{label}</span>
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-slate-400 text-xs font-medium">{pct}%</span>
+                                                <span className="text-white font-mono font-bold text-sm">{formatTime(time)}</span>
+                                            </div>
+                                        </div>
+                                        <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
+                                            <div
+                                                className="bg-gradient-to-r from-purple-500 to-indigo-400 h-2 rounded-full transition-all duration-500"
+                                                style={{ width: `${pct}%` }}
+                                            />
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Footer total */}
+                        <div className="mt-4 pt-4 border-t border-white/10 flex justify-between items-center flex-shrink-0">
+                            <span className="text-slate-400 text-sm font-semibold uppercase tracking-wider">Total</span>
+                            <span className="text-white font-black font-mono text-lg">{formatTime(totalTabSeconds)}</span>
+                        </div>
+
+                        <button
+                            onClick={() => setShowTimeDetails(false)}
+                            className="mt-4 w-full bg-white/10 hover:bg-white/20 text-white py-3 rounded-2xl font-bold transition-all flex-shrink-0"
+                        >
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

@@ -78,7 +78,8 @@ import {
     ArrowDown,
     Share2,
     Languages,
-    Orbit
+    Orbit,
+    TrendingUp
 } from 'lucide-react';
 
 export interface IconProps {
@@ -167,7 +168,8 @@ const icons: Record<string, React.ElementType<any>> = {
     'arrow-down': ArrowDown,
     'share-2': Share2,
     'languages': Languages,
-    'orbit': Orbit
+    'orbit': Orbit,
+    'trending-up': TrendingUp
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
