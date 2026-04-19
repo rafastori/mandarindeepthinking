@@ -133,10 +133,11 @@ const App: React.FC = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, authLoading, itemsLoading]);
 
-    // Track tab changes for time tracking
+    // Track tab changes for time tracking.
+    // When the Neural Map is open, count time under 'mapa-neural' instead of the underlying tab.
     useEffect(() => {
-        gamification.setActiveTab(tab);
-    }, [tab, gamification]);
+        gamification.setActiveTab(neuralWord ? 'mapa-neural' : tab);
+    }, [tab, neuralWord, gamification]);
 
     // Auth state listener
     useEffect(() => {
@@ -777,6 +778,7 @@ const App: React.FC = () => {
                     stats={activeStats}
                     onNavigate={(newWord) => setNeuralWord(newWord)}
                     onClose={() => setNeuralWord(null)}
+                    onRecordResult={handleRecordResult}
                 />
             )}
         </div>

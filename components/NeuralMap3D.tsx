@@ -12,6 +12,7 @@ import NeuralSidebar from './NeuralSidebar';
 import { StudyItem, Stats } from '../types';
 import { buildGraphForWord, GraphNode, NeuralGraphData, getAllSavedWords } from '../services/neuralGraphService';
 import { ensureEmbeddingsReady } from '../services/embeddingCacheService';
+import { getSavedItems } from '../utils/cardUtils';
 
 /**
  * NeuralMap3D — v2 (R3F + Bloom + d3-force-3d)
@@ -82,7 +83,80 @@ export interface NeuralMap3DProps {
     stats?: Stats;
     onNavigate: (newWord: string) => void;
     onClose: () => void;
+    onRecordResult?: (isCorrect: boolean, word: string) => void;
 }
+
+// ============================================================
+// Quiz builder — picks 3 random distractors from library
+// ============================================================
+interface QuizData {
+    correct: string;
+    options: string[];
+}
+
+const buildQuiz = (
+    targetNode: GraphNode,
+    data: StudyItem[],
+    savedIds: string[],
+): QuizData | null => {
+    if (!targetNode.meaning) return null;
+
+    // Distractors from the user's saved words (same source as PracticeView)
+    const savedCards = getSavedItems(data, savedIds);
+    const pool = new Set<string>();
+    for (const c of savedCards) {
+        if (c.meaning && c.word !== targetNode.label) pool.add(c.meaning);
+    }
+    pool.delete(targetNode.meaning);
+
+    // Fallback: if there aren't 3 saved distractors, fill from all library meanings
+    if (pool.size < 3) {
+        for (const item of data) {
+            if (item.type === 'word' && item.translation && item.chinese !== targetNode.label) {
+                pool.add(item.translation);
+            }
+            if (item.keywords) {
+                for (const kw of item.keywords) {
+                    if (kw.meaning && kw.word !== targetNode.label) pool.add(kw.meaning);
+                }
+            }
+        }
+        pool.delete(targetNode.meaning);
+    }
+
+    const distractors = Array.from(pool).sort(() => Math.random() - 0.5).slice(0, 3);
+    if (distractors.length < 3) return null;
+
+    const options = [...distractors, targetNode.meaning].sort(() => Math.random() - 0.5);
+    return { correct: targetNode.meaning, options };
+};
+
+// ============================================================
+// Error Halo — slow red pulse on words the user got wrong
+// ============================================================
+const ErrorHalo: React.FC<{ radius: number; seed: number }> = ({ radius, seed }) => {
+    const ref = useRef<THREE.Mesh>(null);
+    const period = 4 + (seed % 100) / 100; // 4..5s
+    const phase = ((seed * 13) % 100) / 100 * Math.PI * 2;
+    const freq = (Math.PI * 2) / period;
+
+    useFrame((state) => {
+        if (!ref.current) return;
+        const mat = ref.current.material as THREE.MeshBasicMaterial;
+        const t = state.clock.getElapsedTime() * freq + phase;
+        const wave = Math.pow(0.5 + 0.5 * Math.sin(t), 2);
+        mat.opacity = 0.1 + wave * 0.55;
+        const s = 1 + wave * 0.35;
+        ref.current.scale.set(s, s, s);
+    });
+
+    return (
+        <mesh ref={ref}>
+            <sphereGeometry args={[radius, 16, 16]} />
+            <meshBasicMaterial color="#ef4444" transparent opacity={0.1} />
+        </mesh>
+    );
+};
 
 const COLORS = {
     bg: '#030712',
@@ -176,10 +250,11 @@ const NodeMesh: React.FC<{
     node: D3Node3D;
     isSelected: boolean;
     isDimmed: boolean;
+    isErrored: boolean;
     color: string;
     onSelect: () => void;
     onDoubleClick: () => void;
-}> = ({ node, isSelected, isDimmed, color, onSelect, onDoubleClick }) => {
+}> = ({ node, isSelected, isDimmed, isErrored, color, onSelect, onDoubleClick }) => {
     const groupRef = useRef<THREE.Group>(null);
 
     useFrame((state) => {
@@ -236,6 +311,14 @@ const NodeMesh: React.FC<{
                     opacity={isSelected ? 0.25 : (isProximity ? 0.03 : 0.06)}
                 />
             </mesh>
+
+            {/* Error halo — slow red pulse on words the user got wrong */}
+            {isErrored && !isProximity && (
+                <ErrorHalo
+                    radius={atmosRadius * 1.15}
+                    seed={node.label.split('').reduce((a, c) => a + c.charCodeAt(0), 0)}
+                />
+            )}
 
             {/* Core neural kernel */}
             <mesh>
@@ -388,7 +471,8 @@ const NeuralScene: React.FC<{
     onNodeSelect: (node: GraphNode) => void;
     onNodeCenter: (node: GraphNode) => void;
     selectedNodeId: string | null;
-}> = ({ graphData, word, onNodeSelect, onNodeCenter, selectedNodeId }) => {
+    erroredWords: Set<string>;
+}> = ({ graphData, word, onNodeSelect, onNodeCenter, selectedNodeId, erroredWords }) => {
     const [d3Nodes, setD3Nodes] = useState<D3Node3D[]>([]);
     const [d3Links, setD3Links] = useState<any[]>([]);
     const controlsRef = useRef<any>(null);
@@ -470,6 +554,7 @@ const NeuralScene: React.FC<{
                         node={node}
                         isSelected={node.id === selectedNodeId}
                         isDimmed={selectedNodeId !== null && node.id !== selectedNodeId}
+                        isErrored={erroredWords.has(node.label)}
                         color={getNodeColor(node)}
                         onSelect={() => {
                             handleCenter(node);
@@ -507,12 +592,34 @@ const NeuralScene: React.FC<{
 // Main Component
 // ============================================================
 const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
-    word, data, savedIds, stats, onNavigate, onClose,
+    word, data, savedIds, stats, onNavigate, onClose, onRecordResult,
 }) => {
     const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
     const [centeredNodeId, setCenteredNodeId] = useState<string | null>(null);
     const [history, setHistory] = useState<string[]>([word]);
     const containerRef = useRef<HTMLDivElement>(null);
+
+    // ---- Gamification state ----
+    const [isGamified, setIsGamified] = useState(false);
+    const [sessionXP, setSessionXP] = useState(0);
+    const [quiz, setQuiz] = useState<{
+        node: GraphNode;
+        correct: string;
+        options: string[];
+        picked: string | null;
+    } | null>(null);
+    const [correctedWords, setCorrectedWords] = useState<Set<string>>(new Set());
+
+    // Words the user errored in the past — derived from stats.wordCounts
+    // Minus ones the user corrected during this neural-map session.
+    const erroredWords = useMemo(() => {
+        const set = new Set<string>();
+        const wc = stats?.wordCounts || {};
+        for (const [w, count] of Object.entries(wc)) {
+            if ((count as number) > 0 && !correctedWords.has(w)) set.add(w);
+        }
+        return set;
+    }, [stats, correctedWords]);
 
     // ---- Embeddings Cache State ----
     const [isAnalyzing, setIsAnalyzing] = useState(true);
@@ -551,10 +658,41 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
         };
     }, [onClose]);
 
-    // ---- Single click: center camera + highlight node ----
+    // ---- Single click: center camera + highlight node (+ trigger quiz in gamified mode) ----
     const handleNodeCenter = useCallback((node: GraphNode) => {
         setCenteredNodeId(node.id);
-    }, []);
+        if (!isGamified) return;
+        // Always try to replace with a new quiz for the clicked node
+        const isQuizzable = (node.type === 'word' || node.type === 'related-word' || node.type === 'proximity') && !!node.meaning;
+        if (isQuizzable) {
+            const q = buildQuiz(node, data, savedIds);
+            setQuiz(q ? { node, correct: q.correct, options: q.options, picked: null } : null);
+        } else {
+            setQuiz(null);
+        }
+    }, [isGamified, data, savedIds]);
+
+    // ---- Quiz answer handler ----
+    const handleQuizAnswer = useCallback((option: string) => {
+        if (!quiz || quiz.picked) return;
+        const isCorrect = option === quiz.correct;
+        setQuiz(prev => prev ? { ...prev, picked: option } : null);
+        onRecordResult?.(isCorrect, quiz.node.label);
+        if (isCorrect) {
+            setSessionXP(p => p + 10);
+            setCorrectedWords(prev => {
+                const next = new Set(prev);
+                next.add(quiz.node.label);
+                return next;
+            });
+        }
+        // No auto-dismiss — quiz stays showing feedback until the user clicks another node or toggles Quiz off.
+    }, [quiz, onRecordResult]);
+
+    // ---- Clear quiz when toggling gamification off ----
+    useEffect(() => {
+        if (!isGamified) setQuiz(null);
+    }, [isGamified]);
 
     // ---- Double click: open sidebar with full details ----
     const handleNodeSelect = useCallback((node: GraphNode) => {
@@ -646,7 +784,36 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                     </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
+                    {/* Quiz Mode toggle */}
+                    <button
+                        onClick={() => setIsGamified(v => !v)}
+                        className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400 ${isGamified
+                            ? 'bg-gradient-to-r from-amber-500 to-rose-500 text-white shadow-lg shadow-rose-500/30'
+                            : 'bg-white/5 text-purple-300 hover:bg-white/10 border border-purple-400/20'}`}
+                        aria-pressed={isGamified}
+                        aria-label="Alternar modo Quiz"
+                        title="Modo Quiz — ganhe XP ao clicar nos nós"
+                    >
+                        <Icon name="zap" size={14} className={isGamified ? '' : 'opacity-60'} />
+                        <span>{isGamified ? 'Quiz ON' : 'Quiz'}</span>
+                    </button>
+
+                    {/* XP counter — visible only in gamified mode */}
+                    {isGamified && (
+                        <div
+                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-amber-200"
+                            style={{
+                                background: 'rgba(245, 158, 11, 0.12)',
+                                border: '1px solid rgba(245, 158, 11, 0.35)',
+                            }}
+                            aria-label={`${sessionXP} pontos ganhos nesta sessão`}
+                        >
+                            <Icon name="star" size={14} className="text-amber-300" />
+                            <span>+{sessionXP} XP</span>
+                        </div>
+                    )}
+
                     <span className="text-[10px] font-mono text-indigo-400/50 hidden sm:inline-block uppercase tracking-[0.2em]">
                         Synapse 3D
                     </span>
@@ -709,6 +876,7 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                                 onNodeSelect={handleNodeSelect}
                                 onNodeCenter={handleNodeCenter}
                                 selectedNodeId={centeredNodeId}
+                                erroredWords={erroredWords}
                             />
                         </Canvas>
                     </Graph3DErrorBoundary>
@@ -738,20 +906,104 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                     </div>
                 )}
 
-                {/* Hint text */}
-                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 pointer-events-none">
-                    <p
-                        className="text-[10px] uppercase tracking-[0.3em] font-mono px-4 py-1.5 rounded-full"
+                {/* Hint text — hidden while quiz is active */}
+                {!quiz && (
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 pointer-events-none">
+                        <p
+                            className="text-[10px] uppercase tracking-[0.3em] font-mono px-4 py-1.5 rounded-full"
+                            style={{
+                                color: 'rgba(99, 102, 241, 0.5)',
+                                background: 'rgba(15, 23, 42, 0.5)',
+                                border: '1px solid rgba(99, 102, 241, 0.15)',
+                                backdropFilter: 'blur(4px)',
+                            }}
+                        >
+                            {isGamified
+                                ? 'Modo Quiz • Clique em uma palavra para responder'
+                                : 'Clique para Centralizar • Duplo Clique para Detalhes'}
+                        </p>
+                    </div>
+                )}
+
+                {/* Quiz panel — multiple choice at the bottom */}
+                {quiz && (
+                    <div
+                        className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[min(96%,640px)] rounded-2xl p-4 z-20"
                         style={{
-                            color: 'rgba(99, 102, 241, 0.5)',
-                            background: 'rgba(15, 23, 42, 0.5)',
-                            border: '1px solid rgba(99, 102, 241, 0.15)',
-                            backdropFilter: 'blur(4px)',
+                            background: 'rgba(15, 10, 30, 0.85)',
+                            backdropFilter: 'blur(16px) saturate(1.4)',
+                            border: '1px solid rgba(139, 92, 246, 0.25)',
+                            boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
                         }}
                     >
-                        Clique para Centralizar • Duplo Clique para Detalhes
-                    </p>
-                </div>
+                        <div className="flex items-center justify-between mb-3">
+                            <div className="flex items-center gap-2">
+                                <span className="text-[10px] uppercase tracking-[0.2em] font-mono text-purple-400">
+                                    Qual o significado de
+                                </span>
+                            </div>
+                            <button
+                                onClick={() => setQuiz(null)}
+                                className="text-purple-300/60 hover:text-white p-1 rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400"
+                                aria-label="Fechar quiz"
+                            >
+                                <Icon name="x" size={16} />
+                            </button>
+                        </div>
+
+                        <div className="mb-4 text-center">
+                            <span className="text-3xl font-black text-white tracking-tight">
+                                {quiz.node.label}
+                            </span>
+                            {quiz.node.pinyin && (
+                                <span className="block text-sm text-purple-300/80 mt-1 tracking-wide">
+                                    {quiz.node.pinyin}
+                                </span>
+                            )}
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            {quiz.options.map((opt, i) => {
+                                const isPicked = quiz.picked === opt;
+                                const isAnswered = quiz.picked !== null;
+                                const isRight = opt === quiz.correct;
+                                const showRight = isAnswered && isRight;
+                                const showWrong = isAnswered && isPicked && !isRight;
+
+                                return (
+                                    <button
+                                        key={`${opt}-${i}`}
+                                        disabled={isAnswered}
+                                        onClick={() => handleQuizAnswer(opt)}
+                                        className={`px-3 py-2.5 rounded-xl text-sm font-medium transition-all text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400 ${showRight
+                                            ? 'bg-green-500/25 border border-green-400/60 text-green-100'
+                                            : showWrong
+                                                ? 'bg-red-500/25 border border-red-400/60 text-red-100'
+                                                : isAnswered
+                                                    ? 'bg-white/5 border border-white/5 text-slate-400 opacity-50'
+                                                    : 'bg-white/8 hover:bg-white/15 border border-white/10 text-slate-100 hover:scale-[1.02] active:scale-[0.98]'}`}
+                                    >
+                                        {opt}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {quiz.picked && (
+                            <div className="mt-3 text-center">
+                                {quiz.picked === quiz.correct ? (
+                                    <span className="text-sm font-bold text-green-300">
+                                        ✓ Correto! +10 XP
+                                    </span>
+                                ) : (
+                                    <span className="text-sm font-bold text-red-300">
+                                        ✗ Resposta certa: <span className="text-white">{quiz.correct}</span>
+                                    </span>
+                                )}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
 
             {/* ── Sidebar (glassmorphism) ── */}

@@ -56,6 +56,7 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
         lab: '🧪 Laboratório',
         cards: '🃏 Cards',
         pronuncia: '🎤 Pronúncia',
+        'mapa-neural': '🧠 Mapa Neural',
     };
 
     return (
