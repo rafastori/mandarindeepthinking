@@ -1,0 +1,15 @@
+node_modules
+dist
+.git
+.vercel
+MemorizaTudo-Repo
+.env.local
+.DS_Store
+.agent
+test-*
+debug_*
+requirements.txt
+FIX/
+GEMINI_SETUP.md
+domino.md
+metadata.json

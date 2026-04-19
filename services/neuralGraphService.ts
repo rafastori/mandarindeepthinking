@@ -19,7 +19,7 @@ import { StudyItem, SupportedLanguage } from '../types';
 export interface GraphNode {
     id: string;
     label: string;
-    type: 'word' | 'sentence' | 'related-word';
+    type: 'word' | 'sentence' | 'related-word' | 'proximity';
     pinyin?: string;
     meaning?: string;
     language?: SupportedLanguage;
@@ -242,6 +242,75 @@ export function buildGraphForWord(
         }
     }
 
+    // --- Layer 4: Proximity nodes (2nd-degree co-occurrence) ---
+    const MAX_PROXIMITY = 25;
+    const proximityCandidates = new Map<string, { count: number; info: { pinyin: string; meaning: string; language?: SupportedLanguage } | null; closestConnectedId: string }>();
+
+    // For each related word (layer 3), find OTHER sentences it appears in
+    const relatedWordNodes = nodes.filter(n => n.type === 'related-word');
+    for (const relNode of relatedWordNodes) {
+        const relClean = cleanPunctuation(relNode.label);
+        for (const item of data) {
+            if (item.type === 'word') continue;
+            const sentenceNodeId = `sentence:${item.id}`;
+            if (nodeIds.has(sentenceNodeId)) continue; // Skip sentences already in graph
+
+            const tokenMatch = item.tokens?.some(t => cleanPunctuation(t) === relClean);
+            const keywordMatch = item.keywords?.some(k => cleanPunctuation(k.word) === relClean);
+            if (!tokenMatch && !keywordMatch) continue;
+
+            // This sentence contains the related word — extract its OTHER saved words
+            const allTokens = [
+                ...(item.tokens || []).map(t => ({ clean: cleanPunctuation(t), raw: t })),
+                ...(item.keywords || []).filter(k => savedIdsSet.has(k.id)).map(k => ({ clean: cleanPunctuation(k.word), raw: k.word })),
+            ];
+
+            for (const { clean: ct, raw: rt } of allTokens) {
+                if (!ct || ct === cleanWord || ct === relClean) continue;
+                const candidateNodeId = `word:${ct}`;
+                if (nodeIds.has(candidateNodeId)) continue; // Already in graph
+
+                // Must be a saved word
+                if (!checkIfSaved(ct, data, savedIdsSet)) continue;
+
+                const existing = proximityCandidates.get(ct);
+                if (existing) {
+                    existing.count++;
+                } else {
+                    proximityCandidates.set(ct, {
+                        count: 1,
+                        info: findWordInfo(ct, data),
+                        closestConnectedId: relNode.id,
+                    });
+                }
+            }
+        }
+    }
+
+    // Sort by co-occurrence frequency, take top N
+    const sortedProximity = [...proximityCandidates.entries()]
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, MAX_PROXIMITY);
+
+    for (const [ct, { info, closestConnectedId }] of sortedProximity) {
+        const proximityNodeId = `word:${ct}`;
+        if (nodeIds.has(proximityNodeId)) continue;
+
+        nodes.push({
+            id: proximityNodeId,
+            label: info?.pinyin ? ct : ct, // Use the clean token as label
+            type: 'proximity',
+            pinyin: info?.pinyin || '',
+            meaning: info?.meaning || '',
+            language: info?.language,
+            connectionCount: 0,
+        });
+        nodeIds.add(proximityNodeId);
+
+        // Ghost link to closest connected node
+        links.push({ source: closestConnectedId, target: proximityNodeId });
+    }
+
     // Update connection counts
     const connectionCounter = new Map<string, number>();
     for (const link of links) {
@@ -252,7 +321,8 @@ export function buildGraphForWord(
         node.connectionCount = connectionCounter.get(node.id) || 0;
     }
 
-    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes, ${links.length} links`);
+    const proxCount = sortedProximity.length;
+    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes (${proxCount} proximity), ${links.length} links`);
     return { nodes, links };
 }
 

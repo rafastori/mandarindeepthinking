@@ -24,7 +24,7 @@ import BonusCelebration from './components/Gamification/BonusCelebration';
 import TutorialMascot from './components/Gamification/TutorialMascot';
 import RepositoryModal from './components/TextLibrary/RepositoryModal';
 import NeuralSelectOverlay from './components/NeuralSelectOverlay';
-import NeuralGraphModal from './components/NeuralGraphModal';
+import NeuralMap3D from './components/NeuralMap3D';
 import FullStatsView from './views/FullStatsView';
 import { useStats } from './hooks/useStats';
 import { useStudyItems } from './hooks/useStudyItems';
@@ -738,10 +738,11 @@ const App: React.FC = () => {
                 />
             )}
             {neuralWord && (
-                <NeuralGraphModal
+                <NeuralMap3D
                     word={neuralWord}
                     data={libraryData}
                     savedIds={activeSavedIds}
+                    stats={activeStats}
                     onNavigate={(newWord) => setNeuralWord(newWord)}
                     onClose={() => setNeuralWord(null)}
                 />

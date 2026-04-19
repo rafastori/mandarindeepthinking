@@ -75,7 +75,9 @@ import {
     Target,
     ArrowUpRight,
     ArrowUp,
-    ArrowDown
+    ArrowDown,
+    Share2,
+    Languages
 } from 'lucide-react';
 
 export interface IconProps {
@@ -85,7 +87,7 @@ export interface IconProps {
     fill?: string; // Adicionado para suportar preenchimento
 }
 
-const icons: Record<string, React.ElementType> = {
+const icons: Record<string, React.ElementType<any>> = {
     'book-open': BookOpen,
     'list': List,
     'edit-3': Edit3,
@@ -161,11 +163,13 @@ const icons: Record<string, React.ElementType> = {
     'target': Target,
     'arrow-up-right': ArrowUpRight,
     'arrow-up': ArrowUp,
-    'arrow-down': ArrowDown
+    'arrow-down': ArrowDown,
+    'share-2': Share2,
+    'languages': Languages
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
-    const LucideIcon = icons[name];
+    const LucideIcon = icons[name] as any;
 
     if (!LucideIcon) {
         console.warn(`Icon "${name}" not found`);
