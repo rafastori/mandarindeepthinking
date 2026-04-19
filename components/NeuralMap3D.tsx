@@ -165,9 +165,76 @@ const COLORS = {
     relatedWord: '#a78bfa',
     proximity: '#7c6ba0',
     galaxy: '#06b6d4',
+    warp: '#f59e0b',
 };
 
 const GROUP_COLORS = ['#6366f1', '#f43f5e', '#10b981', '#f59e0b', '#8b5cf6'];
+
+// ============================================================
+// Dopamine Combos — 30 celebratory sprites for every 5 acertos
+// ============================================================
+const DOPAMINE_COMBOS = [
+    { emoji: '🔥', text: 'Em Chamas!',       color: '#f97316' },
+    { emoji: '⚡', text: 'Velocidade!',      color: '#eab308' },
+    { emoji: '🌟', text: 'Incrível!',        color: '#f59e0b' },
+    { emoji: '🎯', text: 'Preciso!',         color: '#10b981' },
+    { emoji: '💪', text: 'Imparável!',       color: '#8b5cf6' },
+    { emoji: '🚀', text: 'Decolando!',       color: '#6366f1' },
+    { emoji: '💥', text: 'Combo x5!',        color: '#ef4444' },
+    { emoji: '🏆', text: 'Campeão!',         color: '#f59e0b' },
+    { emoji: '✨', text: 'Brilhante!',       color: '#a78bfa' },
+    { emoji: '🎊', text: 'Parabéns!',        color: '#ec4899' },
+    { emoji: '🌈', text: 'Perfeito!',        color: '#06b6d4' },
+    { emoji: '🦁', text: 'Corajoso!',        color: '#fb923c' },
+    { emoji: '🧠', text: 'Gênio!',           color: '#8b5cf6' },
+    { emoji: '💎', text: 'Diamante!',        color: '#22d3ee' },
+    { emoji: '🎮', text: 'GG!',              color: '#4ade80' },
+    { emoji: '⭐', text: 'Sequência!',       color: '#facc15' },
+    { emoji: '🌊', text: 'Fluindo!',         color: '#38bdf8' },
+    { emoji: '🎆', text: 'Explosivo!',       color: '#f43f5e' },
+    { emoji: '🏅', text: 'Medalha!',         color: '#d97706' },
+    { emoji: '🔮', text: 'Místico!',         color: '#7c3aed' },
+    { emoji: '🌙', text: 'Lunar!',           color: '#818cf8' },
+    { emoji: '☄️', text: 'Meteoro!',         color: '#fb7185' },
+    { emoji: '🦅', text: 'Águia!',           color: '#84cc16' },
+    { emoji: '🎻', text: 'Maestro!',         color: '#f472b6' },
+    { emoji: '🍀', text: 'Com Sorte!',       color: '#34d399' },
+    { emoji: '🌺', text: 'Florescendo!',     color: '#f9a8d4' },
+    { emoji: '🐉', text: 'Dragão!',          color: '#a3e635' },
+    { emoji: '⚔️', text: 'Guerreiro!',       color: '#dc2626' },
+    { emoji: '🎯', text: 'Bullseye!',        color: '#0ea5e9' },
+    { emoji: '🦋', text: 'Transformação!',   color: '#c084fc' },
+] as const;
+
+type ComboEntry = typeof DOPAMINE_COMBOS[number];
+
+interface ComboSprite { id: number; combo: ComboEntry; x: number }
+
+const DopamineOverlay: React.FC<{ sprites: ComboSprite[]; onRemove: (id: number) => void }> = ({ sprites, onRemove }) => (
+    <>
+        <style>{`
+            @keyframes comboFloat {
+                0%   { opacity:0; transform:translateY(0) scale(.7); }
+                18%  { opacity:1; transform:translateY(-28px) scale(1.18); }
+                80%  { opacity:.95; }
+                100% { opacity:0; transform:translateY(-230px) scale(.85); }
+            }
+        `}</style>
+        {sprites.map(s => (
+            <div
+                key={s.id}
+                className="fixed pointer-events-none z-[350] text-center select-none"
+                style={{ left: `${s.x}%`, bottom: '22%', animation: 'comboFloat 2.6s ease-out forwards' }}
+                onAnimationEnd={() => onRemove(s.id)}
+            >
+                <div style={{ fontSize: 52, lineHeight: 1 }}>{s.combo.emoji}</div>
+                <div style={{ fontSize: 13, fontWeight: 800, color: s.combo.color, marginTop: 4, textShadow: '0 0 12px currentColor' }}>
+                    {s.combo.text}
+                </div>
+            </div>
+        ))}
+    </>
+);
 
 // ============================================================
 // D3Node3D: Extended GraphNode with 3D coords
@@ -254,7 +321,8 @@ const NodeMesh: React.FC<{
     color: string;
     onSelect: () => void;
     onDoubleClick: () => void;
-}> = ({ node, isSelected, isDimmed, isErrored, color, onSelect, onDoubleClick }) => {
+    onWarpNavigate?: (label: string) => void;
+}> = ({ node, isSelected, isDimmed, isErrored, color, onSelect, onDoubleClick, onWarpNavigate }) => {
     const groupRef = useRef<THREE.Group>(null);
 
     useFrame((state) => {
@@ -281,9 +349,10 @@ const NodeMesh: React.FC<{
     const isSentence = node.type === 'sentence';
     const isWord = node.type === 'word';
     const isGalaxy = node.type === 'galaxy';
+    const isWarp = node.type === 'warp';
 
-    const coreRadius = isWord ? 3.5 : isSentence ? 2.5 : isGalaxy ? 2.8 : isProximity ? 1.8 : 3;
-    const atmosRadius = isWord ? 6 : isSentence ? 4 : isGalaxy ? 5 : isProximity ? 3 : 5;
+    const coreRadius = isWord ? 3.5 : isSentence ? 2.5 : isGalaxy ? 2.8 : isWarp ? 2.4 : isProximity ? 1.8 : 3;
+    const atmosRadius = isWord ? 6 : isSentence ? 4 : isGalaxy ? 5 : isWarp ? 5.5 : isProximity ? 3 : 5;
 
     // Truncated label for sentences
     const displayLabel = isSentence
@@ -295,7 +364,10 @@ const NodeMesh: React.FC<{
             ref={groupRef}
             onClick={(e) => {
                 e.stopPropagation();
-                if (e.detail === 2) {
+                if (isWarp) {
+                    // Single click on warp = navigate immediately (portal behaviour)
+                    onWarpNavigate?.(node.label);
+                } else if (e.detail === 2) {
                     onDoubleClick();
                 } else {
                     onSelect();
@@ -348,6 +420,24 @@ const NodeMesh: React.FC<{
                 </group>
             )}
 
+            {/* Warp Portal — two intersecting rings like a wormhole */}
+            {isWarp && (
+                <>
+                    <group rotation={[Math.PI / 2, 0, 0]}>
+                        <mesh>
+                            <torusGeometry args={[coreRadius + 3.5, 0.35, 8, 32]} />
+                            <meshBasicMaterial color={COLORS.warp} transparent opacity={0.85} />
+                        </mesh>
+                    </group>
+                    <group rotation={[0, 0, Math.PI / 2]}>
+                        <mesh>
+                            <torusGeometry args={[coreRadius + 3.5, 0.18, 8, 32]} />
+                            <meshBasicMaterial color="#ffffff" transparent opacity={0.35} />
+                        </mesh>
+                    </group>
+                </>
+            )}
+
             {/* Billboard label — always faces user */}
             <Billboard
                 follow={true}
@@ -367,7 +457,9 @@ const NodeMesh: React.FC<{
                 >
                     {isGalaxy && (node as any).similarityScore
                         ? `${displayLabel.toUpperCase()} ✨ ${Math.round((node as any).similarityScore * 100)}%`
-                        : displayLabel.toUpperCase()}
+                        : isWarp
+                            ? `✦ ${displayLabel.toUpperCase()}`
+                            : displayLabel.toUpperCase()}
                 </Text>
             </Billboard>
 
@@ -472,7 +564,8 @@ const NeuralScene: React.FC<{
     onNodeCenter: (node: GraphNode) => void;
     selectedNodeId: string | null;
     erroredWords: Set<string>;
-}> = ({ graphData, word, onNodeSelect, onNodeCenter, selectedNodeId, erroredWords }) => {
+    onWarpNavigate: (label: string) => void;
+}> = ({ graphData, word, onNodeSelect, onNodeCenter, selectedNodeId, erroredWords, onWarpNavigate }) => {
     const [d3Nodes, setD3Nodes] = useState<D3Node3D[]>([]);
     const [d3Links, setD3Links] = useState<any[]>([]);
     const controlsRef = useRef<any>(null);
@@ -523,6 +616,7 @@ const NeuralScene: React.FC<{
         if (node.type === 'sentence') return COLORS.sentence;
         if (node.type === 'proximity') return COLORS.proximity;
         if (node.type === 'galaxy') return COLORS.galaxy;
+        if (node.type === 'warp') return COLORS.warp;
         // related-word: use group-based colors for variety
         const connections = node.connectionCount || 0;
         return GROUP_COLORS[connections % GROUP_COLORS.length];
@@ -556,6 +650,7 @@ const NeuralScene: React.FC<{
                         isDimmed={selectedNodeId !== null && node.id !== selectedNodeId}
                         isErrored={erroredWords.has(node.label)}
                         color={getNodeColor(node)}
+                        onWarpNavigate={onWarpNavigate}
                         onSelect={() => {
                             handleCenter(node);
                             onNodeCenter(node);
@@ -609,6 +704,8 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
         picked: string | null;
     } | null>(null);
     const [correctedWords, setCorrectedWords] = useState<Set<string>>(new Set());
+    const [comboSprites, setComboSprites] = useState<ComboSprite[]>([]);
+    const correctCountRef = useRef(0);
 
     // Words the user errored in the past — derived from stats.wordCounts
     // Minus ones the user corrected during this neural-map session.
@@ -685,6 +782,20 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                 next.add(quiz.node.label);
                 return next;
             });
+            correctCountRef.current += 1;
+            if (correctCountRef.current % 5 === 0) {
+                // Spawn 6 dopamine sprites at random horizontal positions
+                const combo = DOPAMINE_COMBOS[Math.floor(Math.random() * DOPAMINE_COMBOS.length)];
+                const now = Date.now();
+                setComboSprites(prev => [
+                    ...prev,
+                    ...Array.from({ length: 6 }, (_, i) => ({
+                        id: now + i,
+                        combo,
+                        x: 10 + Math.random() * 80,
+                    })),
+                ]);
+            }
         }
         // No auto-dismiss — quiz stays showing feedback until the user clicks another node or toggles Quiz off.
     }, [quiz, onRecordResult]);
@@ -877,6 +988,7 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                                 onNodeCenter={handleNodeCenter}
                                 selectedNodeId={centeredNodeId}
                                 erroredWords={erroredWords}
+                                onWarpNavigate={handleExplore}
                             />
                         </Canvas>
                     </Graph3DErrorBoundary>
@@ -902,6 +1014,10 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                         <div className="flex items-center gap-1.5">
                             <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: COLORS.relatedWord }} />
                             <span className="text-purple-200">Relacionada</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: COLORS.warp }} />
+                            <span className="text-amber-200">Portal ✦</span>
                         </div>
                     </div>
                 )}
@@ -1005,6 +1121,12 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                     </div>
                 )}
             </div>
+
+            {/* ── Dopamine Sprites overlay ── */}
+            <DopamineOverlay
+                sprites={comboSprites}
+                onRemove={(id) => setComboSprites(prev => prev.filter(s => s.id !== id))}
+            />
 
             {/* ── Sidebar (glassmorphism) ── */}
             <NeuralSidebar

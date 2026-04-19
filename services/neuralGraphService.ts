@@ -20,7 +20,7 @@ import { findNearestGalaxiesByLabel } from './embeddingCacheService';
 export interface GraphNode {
     id: string;
     label: string;
-    type: 'word' | 'sentence' | 'related-word' | 'proximity' | 'galaxy';
+    type: 'word' | 'sentence' | 'related-word' | 'proximity' | 'galaxy' | 'warp';
     pinyin?: string;
     meaning?: string;
     language?: SupportedLanguage;
@@ -358,8 +358,32 @@ export function buildGraphForWord(
         });
     }
 
+    // --- Layer 6: Warp nodes — discovery portals to unexplored vocabulary ---
+    // Pick 2-4 saved words completely absent from the current graph as "jump portals"
+    const graphLabels = new Set(nodes.map(n => cleanPunctuation(n.label)));
+    const warpCandidates = allWordsInfo
+        .filter(w => !graphLabels.has(cleanPunctuation(w.word)))
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3 + Math.floor(Math.random() * 2)); // 3 or 4 warp nodes
+
+    for (const w of warpCandidates) {
+        const warpId = `warp:${w.id}`;
+        if (nodeIds.has(warpId)) continue;
+        nodes.push({
+            id: warpId,
+            label: w.word,
+            type: 'warp',
+            pinyin: w.pinyin,
+            meaning: w.meaning,
+            language: w.language,
+            connectionCount: 0,
+        });
+        nodeIds.add(warpId);
+        links.push({ source: centralNodeId, target: warpId });
+    }
+
     const proxCount = sortedProximity.length;
-    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes (${proxCount} proximity, ${galaxyNeighbors.length} galaxies), ${links.length} links`);
+    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes (${proxCount} proximity, ${galaxyNeighbors.length} galaxies, ${warpCandidates.length} warps), ${links.length} links`);
     return { nodes, links };
 }
 
