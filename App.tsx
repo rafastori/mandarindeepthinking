@@ -207,6 +207,35 @@ const App: React.FC = () => {
 
     const libraryData = useMemo(() => [...localItems, ...staticData], [localItems]);
 
+    const sessionErrorDetails = useMemo(() => {
+        if (!finalSessionStats) return [];
+        const errors = (activeStats.history || []).slice(0, finalSessionStats.wrongAnswers);
+        return errors.map((err) => {
+            let pinyin = '';
+            let meaning = '';
+            let language: import('./types').SupportedLanguage = 'zh';
+            let sourceId = err.word;
+            for (const item of libraryData) {
+                if (item.chinese === err.word) {
+                    pinyin = item.pinyin;
+                    meaning = item.translation;
+                    language = (item.language || 'zh') as import('./types').SupportedLanguage;
+                    sourceId = item.id.toString();
+                    break;
+                }
+                const kw = item.keywords?.find(k => k.word === err.word);
+                if (kw) {
+                    pinyin = kw.pinyin;
+                    meaning = kw.meaning;
+                    language = (kw.language || item.language || 'zh') as import('./types').SupportedLanguage;
+                    sourceId = kw.id;
+                    break;
+                }
+            }
+            return { word: err.word, pinyin, meaning, language, sourceId };
+        });
+    }, [finalSessionStats, activeStats.history, libraryData]);
+
 
     const handleLogin = async () => {
         try { await signInWithPopup(auth, googleProvider); } catch (e) { console.error(e); }
@@ -710,6 +739,9 @@ const App: React.FC = () => {
                     sessionStats={finalSessionStats}
                     newAchievements={gamification.newAchievements}
                     newInventoryItem={gamification.newInventoryItem}
+                    errors={sessionErrorDetails}
+                    ignoredReviewWords={activeStats.ignoredReviewWords || []}
+                    onToggleIgnore={handleToggleIgnoreWord}
                     onClose={() => {
                         handleEndSession(); // Salva a sessão no momento em que a fecha (para não perder os dados e contar no tempo de permanência final)
                         setShowSessionSummary(false);

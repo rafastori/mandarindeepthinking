@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npx tsc *)",
-      "Bash(echo \"EXIT=$?\")"
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(grep -E \"\\\\.\\(tsx|ts\\)$\")",
+      "Bash(grep -n \"sessionErrors\\\\|history\\\\|\\\\`endSession\\\\|StatsHistory\" \"C:\\\\Projetos\\\\mandarindeepthinking/App.tsx\")"
     ]
   }
 }

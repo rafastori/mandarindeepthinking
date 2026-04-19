@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Volume2, Square } from 'lucide-react';
 import Icon from './Icon';
 import { GraphNode, NeuralGraphData } from '../services/neuralGraphService';
+import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import type { SupportedLanguage } from '../types';
 
 /**
  * NeuralSidebar
@@ -30,6 +33,13 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
     onExplore,
     onNodeSelect,
 }) => {
+    const { speak, stop, playingId } = usePuterSpeech();
+
+    const handleAudio = (text: string, lang: SupportedLanguage, id: string) => {
+        if (playingId === id) stop();
+        else speak(text, lang, id);
+    };
+
     // Compute related nodes for the selected node
     const { relatedSentences, relatedWords, relatedGalaxies } = useMemo(() => {
         if (!selectedNode || !graphData) return { relatedSentences: [], relatedWords: [], relatedGalaxies: [] };
@@ -135,16 +145,31 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
                                 /* ── Sentence view ── */
                                 <div className="flex flex-col gap-4">
                                     <div>
-                                        <h2
-                                            className="text-2xl font-black tracking-tight leading-snug mb-4"
-                                            style={{
-                                                background: 'linear-gradient(to bottom right, #fff, rgba(255,255,255,0.4))',
-                                                WebkitBackgroundClip: 'text',
-                                                WebkitTextFillColor: 'transparent',
-                                            }}
-                                        >
-                                            {selectedNode.sentenceText || selectedNode.label}
-                                        </h2>
+                                        <div className="flex items-start justify-between gap-3 mb-4">
+                                            <h2
+                                                className="text-2xl font-black tracking-tight leading-snug flex-1"
+                                                style={{
+                                                    background: 'linear-gradient(to bottom right, #fff, rgba(255,255,255,0.4))',
+                                                    WebkitBackgroundClip: 'text',
+                                                    WebkitTextFillColor: 'transparent',
+                                                }}
+                                            >
+                                                {selectedNode.sentenceText || selectedNode.label}
+                                            </h2>
+                                            <button
+                                                onClick={() => handleAudio(
+                                                    selectedNode.sentenceText || selectedNode.label,
+                                                    (selectedNode.language || 'zh') as SupportedLanguage,
+                                                    `neural-${selectedNode.id}`
+                                                )}
+                                                className={`flex-shrink-0 p-2.5 rounded-full transition-all mt-0.5 ${playingId === `neural-${selectedNode.id}` ? 'bg-blue-500/30 text-blue-300 animate-pulse' : 'bg-white/8 hover:bg-white/15 text-slate-300 hover:text-white'}`}
+                                                title="Ouvir pronúncia"
+                                            >
+                                                {playingId === `neural-${selectedNode.id}`
+                                                    ? <Square size={16} />
+                                                    : <Volume2 size={16} />}
+                                            </button>
+                                        </div>
                                         <div
                                             className="h-1 w-16 rounded-full"
                                             style={{ background: 'linear-gradient(to right, #3b82f6, #8b5cf6)' }}
@@ -192,16 +217,31 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
                                 /* ── Word view ── */
                                 <div className="flex flex-col gap-4">
                                     <div>
-                                        <h2
-                                            className="text-5xl font-black tracking-tight leading-[0.9] mb-4"
-                                            style={{
-                                                background: 'linear-gradient(to bottom right, #fff, rgba(255,255,255,0.4))',
-                                                WebkitBackgroundClip: 'text',
-                                                WebkitTextFillColor: 'transparent',
-                                            }}
-                                        >
-                                            {selectedNode.label}
-                                        </h2>
+                                        <div className="flex items-start justify-between gap-3 mb-4">
+                                            <h2
+                                                className="text-5xl font-black tracking-tight leading-[0.9] flex-1"
+                                                style={{
+                                                    background: 'linear-gradient(to bottom right, #fff, rgba(255,255,255,0.4))',
+                                                    WebkitBackgroundClip: 'text',
+                                                    WebkitTextFillColor: 'transparent',
+                                                }}
+                                            >
+                                                {selectedNode.label}
+                                            </h2>
+                                            <button
+                                                onClick={() => handleAudio(
+                                                    selectedNode.label,
+                                                    (selectedNode.language || 'zh') as SupportedLanguage,
+                                                    `neural-${selectedNode.id}`
+                                                )}
+                                                className={`flex-shrink-0 p-2.5 rounded-full transition-all mt-1 ${playingId === `neural-${selectedNode.id}` ? 'bg-purple-500/30 text-purple-300 animate-pulse' : 'bg-white/8 hover:bg-white/15 text-slate-300 hover:text-white'}`}
+                                                title="Ouvir pronúncia"
+                                            >
+                                                {playingId === `neural-${selectedNode.id}`
+                                                    ? <Square size={18} />
+                                                    : <Volume2 size={18} />}
+                                            </button>
+                                        </div>
                                         <div
                                             className="h-1 w-16 rounded-full"
                                             style={{ background: 'linear-gradient(to right, #8b5cf6, #f43f5e)' }}

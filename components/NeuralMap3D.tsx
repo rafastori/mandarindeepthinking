@@ -113,26 +113,59 @@ interface D3Node3D extends GraphNode {
 // ============================================================
 // Signal Pulse — a glowing dot that travels along a link
 // ============================================================
-const SignalPulse: React.FC<{
-    start: THREE.Vector3;
-    end: THREE.Vector3;
+const PulsingLink: React.FC<{
+    positions: Float32Array;
     color: string;
-    speed?: number;
-}> = ({ start, end, color, speed = 1 }) => {
-    const meshRef = useRef<THREE.Mesh>(null);
+    baseOpacity: number;
+    phase: number;
+    period: number;
+}> = ({ positions, color, baseOpacity, phase, period }) => {
+    const glowRef = useRef<THREE.Mesh>(null);
+    const freq = (Math.PI * 2) / period;
+
+    const { length, midpoint, quaternion } = useMemo(() => {
+        const s = new THREE.Vector3(positions[0], positions[1], positions[2]);
+        const e = new THREE.Vector3(positions[3], positions[4], positions[5]);
+        const dir = e.clone().sub(s);
+        const len = dir.length();
+        const mid = s.clone().lerp(e, 0.5);
+        const up = new THREE.Vector3(0, 1, 0);
+        const norm = dir.clone().normalize();
+        const quat = new THREE.Quaternion();
+        if (Math.abs(norm.dot(up)) > 0.99) {
+            quat.setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2);
+        } else {
+            quat.setFromUnitVectors(up, norm);
+        }
+        return { length: len, midpoint: mid, quaternion: quat };
+    }, [positions]);
 
     useFrame((state) => {
-        if (meshRef.current) {
-            const t = (state.clock.getElapsedTime() * speed) % 1;
-            meshRef.current.position.lerpVectors(start, end, t);
-        }
+        if (!glowRef.current) return;
+        const mat = glowRef.current.material as THREE.MeshBasicMaterial;
+        const t = state.clock.getElapsedTime() * freq + phase;
+        const wave = Math.pow(0.5 + 0.5 * Math.sin(t), 2);
+        // Scale XZ = radial thickness: 1 → 1,5x at peak
+        const scaleXZ = 1 + wave * 1.2;
+        glowRef.current.scale.set(scaleXZ, 1, scaleXZ);
+        mat.opacity = wave * 0.010;
+        // Color shifts from base hue to near-white at peak (blooms harder)
+        mat.color.set(color).lerp(new THREE.Color('#771959ff'), wave * 0.7);
     });
 
     return (
-        <mesh ref={meshRef}>
-            <sphereGeometry args={[0.6, 6, 6]} />
-            <meshBasicMaterial color={color} transparent opacity={0.8} />
-        </mesh>
+        <group position={midpoint} quaternion={quaternion}>
+            {/* Thin static core */}
+            <mesh>
+                <cylinderGeometry args={[0.12, 0.12, length, 4, 1]} />
+                <meshBasicMaterial color={color} transparent opacity={baseOpacity} />
+            </mesh>
+            {/* Wide animated glow halo */}
+            <mesh ref={glowRef}>
+                <cylinderGeometry args={[0.55, 0.55, length, 8, 10]} />
+                <meshBasicMaterial color={color} transparent opacity={0} side={THREE.DoubleSide} />
+            </mesh>
+        </group>
     );
 };
 
@@ -305,34 +338,41 @@ const Links: React.FC<{
                 const opacity = isGalaxyLink ? 0.08 : (isProximityLink ? 0.06 : (isRelevant ? 0.3 : 0.06));
                 const color = isGalaxyLink ? '#06b6d4' : (isProximityLink ? '#5a4d78' : (isRelevant ? '#818cf8' : '#4338ca'));
 
-                const start = new THREE.Vector3(sourceNode.x || 0, sourceNode.y || 0, sourceNode.z || 0);
-                const end = new THREE.Vector3(targetNode.x || 0, targetNode.y || 0, targetNode.z || 0);
+                const positions = new Float32Array([
+                    sourceNode.x || 0, sourceNode.y || 0, sourceNode.z || 0,
+                    targetNode.x || 0, targetNode.y || 0, targetNode.z || 0,
+                ]);
+
+                const shouldPulse = isRelevant && !isProximityLink;
+
+                if (shouldPulse) {
+                    // Stable per-link phase + period so pulses are desynced but deterministic
+                    const hash = (sourceId + targetId).split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+                    const phase = (hash % 100) / 100 * Math.PI * 2;
+                    const period = 6 + ((hash >> 6) % 100) / 100; // 6..6s
+
+                    return (
+                        <PulsingLink
+                            key={`link-${idx}`}
+                            positions={positions}
+                            color={color}
+                            baseOpacity={opacity}
+                            phase={phase}
+                            period={period}
+                        />
+                    );
+                }
 
                 return (
-                    <React.Fragment key={`link-${idx}`}>
-                        <line>
-                            <bufferGeometry attach="geometry">
-                                <float32BufferAttribute
-                                    attach="attributes-position"
-                                    args={[new Float32Array([
-                                        sourceNode.x || 0, sourceNode.y || 0, sourceNode.z || 0,
-                                        targetNode.x || 0, targetNode.y || 0, targetNode.z || 0,
-                                    ]), 3]}
-                                />
-                            </bufferGeometry>
-                            <lineBasicMaterial attach="material" color={color} transparent opacity={opacity} />
-                        </line>
-
-                        {/* Signal pulse along relevant links */}
-                        {isRelevant && !isProximityLink && (
-                            <SignalPulse
-                                start={start}
-                                end={end}
-                                color={color}
-                                speed={0.3 + Math.random() * 0.5}
+                    <line key={`link-${idx}`}>
+                        <bufferGeometry attach="geometry">
+                            <float32BufferAttribute
+                                attach="attributes-position"
+                                args={[positions, 3]}
                             />
-                        )}
-                    </React.Fragment>
+                        </bufferGeometry>
+                        <lineBasicMaterial attach="material" color={color} transparent opacity={opacity} />
+                    </line>
                 );
             })}
         </group>
@@ -596,9 +636,8 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
                                     <Icon name="chevron-right" size={14} className="text-purple-500/50 flex-shrink-0" />
                                 )}
                                 <span
-                                    className={`text-sm font-medium truncate ${
-                                        i === history.length - 1 ? 'text-white font-bold' : 'text-purple-400/70'
-                                    }`}
+                                    className={`text-sm font-medium truncate ${i === history.length - 1 ? 'text-white font-bold' : 'text-purple-400/70'
+                                        }`}
                                 >
                                     {w}
                                 </span>
