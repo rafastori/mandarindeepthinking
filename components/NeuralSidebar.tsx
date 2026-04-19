@@ -31,8 +31,8 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
     onNodeSelect,
 }) => {
     // Compute related nodes for the selected node
-    const { relatedSentences, relatedWords } = useMemo(() => {
-        if (!selectedNode || !graphData) return { relatedSentences: [], relatedWords: [] };
+    const { relatedSentences, relatedWords, relatedGalaxies } = useMemo(() => {
+        if (!selectedNode || !graphData) return { relatedSentences: [], relatedWords: [], relatedGalaxies: [] };
 
         const connectedIds = new Set<string>();
 
@@ -61,6 +61,7 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
 
         const sentences: GraphNode[] = [];
         const words: GraphNode[] = [];
+        const galaxies: GraphNode[] = [];
 
         for (const node of graphData.nodes) {
             if (node.id === selectedNode.id) continue;
@@ -68,12 +69,17 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
 
             if (node.type === 'sentence') {
                 sentences.push(node);
+            } else if (node.type === 'galaxy') {
+                galaxies.push(node);
             } else {
                 words.push(node);
             }
         }
 
-        return { relatedSentences: sentences, relatedWords: words };
+        // Sort galaxies by score descending
+        galaxies.sort((a, b) => (b.similarityScore || 0) - (a.similarityScore || 0));
+
+        return { relatedSentences: sentences, relatedWords: words, relatedGalaxies: galaxies };
     }, [selectedNode, graphData]);
 
     return (
@@ -278,13 +284,51 @@ const NeuralSidebar: React.FC<NeuralSidebarProps> = ({
                                             </div>
                                         </div>
                                     )}
+
+                                    {/* ── Semantic Galaxies ── */}
+                                    {relatedGalaxies && relatedGalaxies.length > 0 && (
+                                        <div className="mt-1">
+                                            <div className="flex items-center gap-2 mb-3">
+                                                <div className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
+                                                <span className="text-xs uppercase tracking-[0.15em] font-mono text-cyan-400">
+                                                    Galáxias Vizinhas ({relatedGalaxies.length})
+                                                </span>
+                                            </div>
+                                            <div className="flex flex-wrap gap-2">
+                                                {relatedGalaxies.map(g => (
+                                                    <button
+                                                        key={g.id}
+                                                        onClick={() => onNodeSelect(g.id)}
+                                                        className="px-3 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer hover:scale-[1.04] active:scale-[0.96] flex flex-col items-start gap-1"
+                                                        style={{
+                                                            background: 'rgba(6, 182, 212, 0.12)',
+                                                            border: '1px solid rgba(6, 182, 212, 0.25)',
+                                                            color: '#67e8f9',
+                                                        }}
+                                                    >
+                                                        <div className="flex items-center gap-2">
+                                                            <span>{g.label}</span>
+                                                            {g.similarityScore !== undefined && (
+                                                                <span className="text-[10px] bg-cyan-500/20 px-1.5 py-0.5 rounded text-cyan-300">
+                                                                    {Math.round(g.similarityScore * 100)}%
+                                                                </span>
+                                                            )}
+                                                        </div>
+                                                        {g.pinyin && (
+                                                            <span className="text-[10px] text-cyan-400/60">{g.pinyin}</span>
+                                                        )}
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             )}
                         </div>
 
                         {/* Bottom actions */}
                         <div className="px-6 pb-6 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-                            {(selectedNode.type === 'related-word' || selectedNode.type === 'proximity') && (
+                            {(selectedNode.type === 'related-word' || selectedNode.type === 'proximity' || selectedNode.type === 'galaxy') && (
                                 <button
                                     onClick={() => onExplore(selectedNode.label)}
                                     className="w-full py-3.5 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all cursor-pointer hover:brightness-110 active:scale-[0.98]"

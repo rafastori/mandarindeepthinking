@@ -317,6 +317,29 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
       return res.status(200).json(result);
     }
 
+    // --- EMBEDDINGS (Cosmos Semântico) ---
+    if (type === 'embeddings') {
+      const { texts, taskType } = req.body;
+      if (!texts || !Array.isArray(texts)) {
+        return res.status(400).json({ error: "O campo 'texts' é obrigatório e deve ser um array." });
+      }
+      
+      const result = await genAI.models.embedContent({
+        model: 'gemini-embedding-2-preview',
+        contents: texts,
+        config: { taskType: taskType || 'RETRIEVAL_DOCUMENT' }
+      });
+      
+      let embeddings = [];
+      if (result.embeddings) {
+        embeddings = result.embeddings.map(e => e.values || e);
+      } else if (result.embedding) {
+        embeddings = [result.embedding.values || result.embedding];
+      }
+      
+      return res.status(200).json(embeddings);
+    }
+
     // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---
     const langNames = {
       'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',

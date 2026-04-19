@@ -877,3 +877,74 @@ ${JSON.stringify(sentences.map(s => ({
         throw error;
     }
 };
+
+// ============================================================
+// Embeddings — Semantic vector generation for Neural Map
+// ============================================================
+
+const EMBEDDING_MODEL = 'gemini-embedding-2-preview';
+
+/**
+ * Generate vector embeddings for an array of texts using Gemini's embedding model.
+ * Used by the Neural Map "Cosmos Semântico" feature for semantic galaxy discovery.
+ *
+ * @param texts - Array of strings to embed (e.g., "结婚 (jiéhūn) - casar")
+ * @param taskType - RETRIEVAL_DOCUMENT for indexing, RETRIEVAL_QUERY for searching
+ * @returns Array of number arrays (768D vectors), one per input text
+ */
+export async function generateWordEmbeddings(
+    texts: string[],
+    taskType: 'RETRIEVAL_DOCUMENT' | 'RETRIEVAL_QUERY' = 'RETRIEVAL_DOCUMENT'
+): Promise<number[][]> {
+    if (texts.length === 0) return [];
+
+    // DEV MODE: Use local SDK
+    if (import.meta.env.DEV) {
+        console.log(`[Embeddings] Using Local SDK — ${texts.length} texts, taskType=${taskType}`);
+        try {
+            const result = await (genAI as any).models.embedContent({
+                model: EMBEDDING_MODEL,
+                contents: texts,
+                config: { taskType },
+            });
+
+            // The API returns embeddings as an array of objects with .values
+            if (result.embeddings) {
+                return result.embeddings.map((e: any) => e.values || e);
+            }
+            // Or it might be a single embedding if only one text
+            if (result.embedding) {
+                return [result.embedding.values || result.embedding];
+            }
+
+            console.error('[Embeddings] Unexpected response structure:', Object.keys(result));
+            return [];
+        } catch (error) {
+            console.error('[Embeddings] Local SDK Error:', error);
+            throw error;
+        }
+    }
+
+    // PROD MODE: Use Vercel Function
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'embeddings',
+                texts,
+                taskType,
+            }),
+        });
+
+        if (!response.ok) {
+            const err = await response.json().catch(() => ({}));
+            throw new Error(err.error || `Embedding API error: ${response.status}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('[Embeddings] PROD Error:', error);
+        throw error;
+    }
+}

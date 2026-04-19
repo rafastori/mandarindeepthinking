@@ -10,7 +10,8 @@ import * as d3 from 'd3-force-3d';
 import Icon from './Icon';
 import NeuralSidebar from './NeuralSidebar';
 import { StudyItem, Stats } from '../types';
-import { buildGraphForWord, GraphNode, NeuralGraphData } from '../services/neuralGraphService';
+import { buildGraphForWord, GraphNode, NeuralGraphData, getAllSavedWords } from '../services/neuralGraphService';
+import { ensureEmbeddingsReady } from '../services/embeddingCacheService';
 
 /**
  * NeuralMap3D — v2 (R3F + Bloom + d3-force-3d)
@@ -89,6 +90,7 @@ const COLORS = {
     sentence: '#3b82f6',
     relatedWord: '#a78bfa',
     proximity: '#7c6ba0',
+    galaxy: '#06b6d4',
 };
 
 const GROUP_COLORS = ['#6366f1', '#f43f5e', '#10b981', '#f59e0b', '#8b5cf6'];
@@ -170,9 +172,10 @@ const NodeMesh: React.FC<{
     const isProximity = node.type === 'proximity';
     const isSentence = node.type === 'sentence';
     const isWord = node.type === 'word';
+    const isGalaxy = node.type === 'galaxy';
 
-    const coreRadius = isWord ? 3.5 : isSentence ? 2.5 : isProximity ? 1.8 : 3;
-    const atmosRadius = isWord ? 6 : isSentence ? 4 : isProximity ? 3 : 5;
+    const coreRadius = isWord ? 3.5 : isSentence ? 2.5 : isGalaxy ? 2.8 : isProximity ? 1.8 : 3;
+    const atmosRadius = isWord ? 6 : isSentence ? 4 : isGalaxy ? 5 : isProximity ? 3 : 5;
 
     // Truncated label for sentences
     const displayLabel = isSentence
@@ -207,13 +210,27 @@ const NodeMesh: React.FC<{
                 <meshStandardMaterial
                     color={isSelected ? color : '#ffffff'}
                     emissive={color}
-                    emissiveIntensity={isSelected ? 8 : (isProximity ? 0.6 : 1.5)}
+                    emissiveIntensity={isSelected ? 8 : (isProximity || isGalaxy ? 0.6 : 1.5)}
                     roughness={0}
                     metalness={1}
-                    transparent={isProximity}
-                    opacity={isProximity ? 0.5 : 1}
+                    transparent={isProximity || isGalaxy}
+                    opacity={isProximity ? 0.5 : (isGalaxy ? 0.8 : 1)}
                 />
             </mesh>
+
+            {/* Galaxy Orbital Ring */}
+            {isGalaxy && (
+                <group rotation={[Math.PI / 2.5, 0, 0]}>
+                    <mesh>
+                        <torusGeometry args={[coreRadius + 3, 0.2, 8, 32]} />
+                        <meshBasicMaterial color={color} transparent opacity={0.6} />
+                    </mesh>
+                    <mesh>
+                        <torusGeometry args={[coreRadius + 4.5, 0.1, 8, 32]} />
+                        <meshBasicMaterial color={color} transparent opacity={0.3} />
+                    </mesh>
+                </group>
+            )}
 
             {/* Billboard label — always faces user */}
             <Billboard
@@ -232,7 +249,9 @@ const NodeMesh: React.FC<{
                     textAlign="center"
                     fillOpacity={isDimmed ? 0.15 : (isProximity ? 0.5 : 1)}
                 >
-                    {displayLabel.toUpperCase()}
+                    {isGalaxy && (node as any).similarityScore
+                        ? `${displayLabel.toUpperCase()} ✨ ${Math.round((node as any).similarityScore * 100)}%`
+                        : displayLabel.toUpperCase()}
                 </Text>
             </Billboard>
 
@@ -281,9 +300,10 @@ const Links: React.FC<{
 
                 const isRelevant = selectedId === null || sourceNode.id === selectedId || targetNode.id === selectedId;
                 const isProximityLink = sourceNode.type === 'proximity' || targetNode.type === 'proximity';
+                const isGalaxyLink = sourceNode.type === 'galaxy' || targetNode.type === 'galaxy';
 
-                const opacity = isProximityLink ? 0.06 : (isRelevant ? 0.3 : 0.06);
-                const color = isProximityLink ? '#5a4d78' : (isRelevant ? '#818cf8' : '#4338ca');
+                const opacity = isGalaxyLink ? 0.08 : (isProximityLink ? 0.06 : (isRelevant ? 0.3 : 0.06));
+                const color = isGalaxyLink ? '#06b6d4' : (isProximityLink ? '#5a4d78' : (isRelevant ? '#818cf8' : '#4338ca'));
 
                 const start = new THREE.Vector3(sourceNode.x || 0, sourceNode.y || 0, sourceNode.z || 0);
                 const end = new THREE.Vector3(targetNode.x || 0, targetNode.y || 0, targetNode.z || 0);
@@ -378,6 +398,7 @@ const NeuralScene: React.FC<{
         if (node.type === 'word') return COLORS.word;
         if (node.type === 'sentence') return COLORS.sentence;
         if (node.type === 'proximity') return COLORS.proximity;
+        if (node.type === 'galaxy') return COLORS.galaxy;
         // related-word: use group-based colors for variety
         const connections = node.connectionCount || 0;
         return GROUP_COLORS[connections % GROUP_COLORS.length];
@@ -453,11 +474,31 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
     const [history, setHistory] = useState<string[]>([word]);
     const containerRef = useRef<HTMLDivElement>(null);
 
+    // ---- Embeddings Cache State ----
+    const [isAnalyzing, setIsAnalyzing] = useState(true);
+    const [embeddingsReady, setEmbeddingsReady] = useState(false);
+
+    useEffect(() => {
+        let mounted = true;
+        const initEmbeddings = async () => {
+            const allWords = getAllSavedWords(data, savedIds);
+            const ready = await ensureEmbeddingsReady(allWords);
+            if (mounted) {
+                setEmbeddingsReady(ready);
+                setIsAnalyzing(false);
+            }
+        };
+        initEmbeddings();
+        return () => { mounted = false; };
+    }, [data, savedIds]);
+
     // ---- Graph data ----
-    const graphData: NeuralGraphData = useMemo(
-        () => buildGraphForWord(word, data, savedIds),
-        [word, data, savedIds]
-    );
+    const graphData: NeuralGraphData = useMemo(() => {
+        if (!embeddingsReady && isAnalyzing) {
+            return { nodes: [], links: [] }; // Return empty while analyzing
+        }
+        return buildGraphForWord(word, data, savedIds);
+    }, [word, data, savedIds, embeddingsReady, isAnalyzing]);
 
     // ---- ESC + scroll lock ----
     useEffect(() => {
@@ -582,7 +623,19 @@ const NeuralMap3D: React.FC<NeuralMap3DProps> = ({
 
             {/* ── 3D Viewport ── */}
             <div className="flex-1 relative">
-                {graphData.nodes.length === 0 ? (
+                {isAnalyzing ? (
+                    <div className="flex flex-col items-center justify-center h-full text-center px-6">
+                        <div className="bg-cyan-500/20 p-5 rounded-full mb-4 animate-pulse">
+                            <Icon name="orbit" size={40} className="text-cyan-400/80 animate-spin-slow" />
+                        </div>
+                        <p className="text-cyan-300 font-medium text-lg mb-2">
+                            Analisando relações semânticas...
+                        </p>
+                        <p className="text-cyan-400/50 text-sm max-w-[280px]">
+                            Construindo o Cosmos para "{word}".
+                        </p>
+                    </div>
+                ) : graphData.nodes.length === 0 ? (
                     /* Empty state */
                     <div className="flex flex-col items-center justify-center h-full text-center px-6">
                         <div className="bg-purple-500/20 p-5 rounded-full mb-4">

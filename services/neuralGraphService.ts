@@ -11,6 +11,7 @@
  */
 
 import { StudyItem, SupportedLanguage } from '../types';
+import { findNearestGalaxiesByLabel } from './embeddingCacheService';
 
 // ============================================================
 // Types
@@ -19,7 +20,7 @@ import { StudyItem, SupportedLanguage } from '../types';
 export interface GraphNode {
     id: string;
     label: string;
-    type: 'word' | 'sentence' | 'related-word' | 'proximity';
+    type: 'word' | 'sentence' | 'related-word' | 'proximity' | 'galaxy';
     pinyin?: string;
     meaning?: string;
     language?: SupportedLanguage;
@@ -28,6 +29,8 @@ export interface GraphNode {
     sourceItemId?: string;
     /** Number of connections this node has (for sizing) */
     connectionCount?: number;
+    /** Cosine similarity 0-1 (for galaxy nodes) */
+    similarityScore?: number;
 }
 
 export interface GraphLink {
@@ -311,7 +314,7 @@ export function buildGraphForWord(
         links.push({ source: closestConnectedId, target: proximityNodeId });
     }
 
-    // Update connection counts
+    // Update connection counts before adding galaxies (so galaxies don't accidentally bloat connection counts too much)
     const connectionCounter = new Map<string, number>();
     for (const link of links) {
         connectionCounter.set(link.source as string, (connectionCounter.get(link.source as string) || 0) + 1);
@@ -321,8 +324,35 @@ export function buildGraphForWord(
         node.connectionCount = connectionCounter.get(node.id) || 0;
     }
 
+    // --- Layer 5: Semantic Galaxy (Embeddings) ---
+    // Fetch all saved words so we can search the entire vocabulary
+    const allWordsInfo = getAllSavedWords(data, savedIds);
+    // Find galaxies - pass the clean central word, the entire dictionary, take 8, exclude current nodeIds
+    const galaxyNeighbors = findNearestGalaxiesByLabel(cleanWord, allWordsInfo, 8, nodeIds);
+    
+    for (const galaxy of galaxyNeighbors) {
+        const galaxyNodeId = `galaxy:${galaxy.wordId}`;
+        nodes.push({
+            id: galaxyNodeId,
+            label: galaxy.word,
+            type: 'galaxy',
+            pinyin: galaxy.pinyin,
+            meaning: galaxy.meaning,
+            language: galaxy.language as SupportedLanguage,
+            connectionCount: 0,
+            similarityScore: galaxy.score
+        });
+        nodeIds.add(galaxyNodeId);
+
+        // Add an invisible semantic gravity link
+        links.push({
+            source: centralNodeId,
+            target: galaxyNodeId
+        });
+    }
+
     const proxCount = sortedProximity.length;
-    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes (${proxCount} proximity), ${links.length} links`);
+    console.log(`[NeuralGraph] Built graph for "${word}": ${nodes.length} nodes (${proxCount} proximity, ${galaxyNeighbors.length} galaxies), ${links.length} links`);
     return { nodes, links };
 }
 

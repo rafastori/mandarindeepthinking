@@ -77,7 +77,8 @@ import {
     ArrowUp,
     ArrowDown,
     Share2,
-    Languages
+    Languages,
+    Orbit
 } from 'lucide-react';
 
 export interface IconProps {
@@ -165,7 +166,8 @@ const icons: Record<string, React.ElementType<any>> = {
     'arrow-up': ArrowUp,
     'arrow-down': ArrowDown,
     'share-2': Share2,
-    'languages': Languages
+    'languages': Languages,
+    'orbit': Orbit
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
