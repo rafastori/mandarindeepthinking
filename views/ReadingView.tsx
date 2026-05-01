@@ -8,6 +8,7 @@ import { moveItemsToFolder, extractFolderPaths } from '../services/folderService
 import ExportModal, { ExportConfig } from '../components/ExportModal';
 import VoiceMicButton from '../components/VoiceMicButton';
 import type { useVoiceRecording } from '../hooks/useVoiceRecording';
+import { localDB, ColorCorrectionToken } from '../services/localDB';
 
 // Estilos para PDF (invisível na tela)
 const PDF_STYLES = {
@@ -100,28 +101,53 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     // Estados para popover de cores e correção via IA
     const [showColorPopover, setShowColorPopover] = useState(false);
     const [isCorrectingColors, setIsCorrectingColors] = useState(false);
-    const [colorCorrections, setColorCorrections] = useState<Map<string, { word: string; colorIndex: number | null }[]>>(() => {
-        try {
-            const saved = localStorage.getItem('colorCorrections');
-            if (saved) {
-                // Converte de volta de [chave, valor][] para Map
-                return new Map(JSON.parse(saved));
-            }
-        } catch (e) {
-            console.error('Erro ao ler colorCorrections do localStorage:', e);
-        }
-        return new Map();
-    });
+    const [colorCorrections, setColorCorrections] = useState<Map<string, ColorCorrectionToken[]>>(new Map());
+    const colorCorrectionsHydrated = useRef(false);
 
-    // Persistir correções de cores
+    // Hidrata correções a partir do IndexedDB (entra no backup blob da nuvem)
     useEffect(() => {
-        try {
-            // Converte Map para array de pares para serialização JSON
-            const arrayFormat = Array.from(colorCorrections.entries());
-            localStorage.setItem('colorCorrections', JSON.stringify(arrayFormat));
-        } catch (e) {
-            console.error('Erro ao salvar colorCorrections no localStorage:', e);
-        }
+        let cancelled = false;
+        (async () => {
+            try {
+                const profile = await localDB.getProfile();
+                const stored = profile.colorCorrections;
+                if (!cancelled && stored && Object.keys(stored).length > 0) {
+                    setColorCorrections(new Map(Object.entries(stored)));
+                }
+
+                // Migração one-time do localStorage antigo para IndexedDB
+                const legacy = localStorage.getItem('colorCorrections');
+                if (legacy) {
+                    try {
+                        const parsed: [string, ColorCorrectionToken[]][] = JSON.parse(legacy);
+                        if (Array.isArray(parsed) && parsed.length > 0) {
+                            const merged: Record<string, ColorCorrectionToken[]> = { ...(stored || {}) };
+                            for (const [k, v] of parsed) merged[k] = v;
+                            await localDB.updateProfile({ colorCorrections: merged });
+                            if (!cancelled) setColorCorrections(new Map(Object.entries(merged)));
+                        }
+                    } catch (e) {
+                        console.warn('Falha ao migrar colorCorrections legados:', e);
+                    }
+                    localStorage.removeItem('colorCorrections');
+                }
+            } catch (e) {
+                console.error('Erro ao hidratar colorCorrections do localDB:', e);
+            } finally {
+                colorCorrectionsHydrated.current = true;
+            }
+        })();
+        return () => { cancelled = true; };
+    }, []);
+
+    // Persiste correções no IndexedDB (não escreve antes da hidratação para não zerar o disco)
+    useEffect(() => {
+        if (!colorCorrectionsHydrated.current) return;
+        const obj: Record<string, ColorCorrectionToken[]> = {};
+        colorCorrections.forEach((v, k) => { obj[k] = v; });
+        localDB.updateProfile({ colorCorrections: obj }).catch(e => {
+            console.error('Erro ao salvar colorCorrections no localDB:', e);
+        });
     }, [colorCorrections]);
 
     const colorPopoverRef = useRef<HTMLDivElement>(null);
@@ -640,12 +666,14 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
             const results = await correctColorHighlights(sentencesForAI, predominantLang);
 
-            // Converter resultado em Map
-            const newCorrections = new Map<string, { word: string; colorIndex: number | null }[]>();
-            results.forEach((r: ColorCorrectionOutput) => {
-                newCorrections.set(r.sentenceId, r.coloredTranslation);
+            // Faz merge com o Map existente para não perder correções de outras pastas/filtros
+            setColorCorrections(prev => {
+                const merged = new Map(prev);
+                results.forEach((r: ColorCorrectionOutput) => {
+                    merged.set(r.sentenceId, r.coloredTranslation);
+                });
+                return merged;
             });
-            setColorCorrections(newCorrections);
 
             // Ativar cores automaticamente se estiver desativado
             if (!isColorHighlightEnabled) {

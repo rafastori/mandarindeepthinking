@@ -19,6 +19,11 @@ const SESSIONS_STORE = 'sessions';
 // Profile keys
 const PROFILE_KEY = 'userProfile';
 
+export interface ColorCorrectionToken {
+    word: string;
+    colorIndex: number | null;
+}
+
 export interface LocalProfile {
     savedIds: string[];
     stats: Stats;
@@ -26,6 +31,7 @@ export interface LocalProfile {
     activeFolderFilters: string[];
     lastBackupAt?: string; // ISO date
     lastRestoreAt?: string; // ISO date
+    colorCorrections?: Record<string, ColorCorrectionToken[]>; // sentenceId -> tokens coloridos
 }
 
 export interface VoiceRecording {
@@ -41,6 +47,7 @@ const defaultProfile: LocalProfile = {
     stats: { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] },
     totalScore: 0,
     activeFolderFilters: [],
+    colorCorrections: {},
 };
 
 // ============================================================
