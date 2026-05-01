@@ -8,13 +8,14 @@
 import { StudyItem, Stats, SessionRecord } from '../types';
 
 const DB_NAME = 'MandarinDeepThinkingDB';
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 
 // Store names
 const ITEMS_STORE = 'items';
 const PROFILE_STORE = 'profile';
 const VOICE_STORE = 'voiceRecordings';
 const SESSIONS_STORE = 'sessions';
+const COMMENTS_STORE = 'comments';
 
 // Profile keys
 const PROFILE_KEY = 'userProfile';
@@ -22,6 +23,23 @@ const PROFILE_KEY = 'userProfile';
 export interface ColorCorrectionToken {
     word: string;
     colorIndex: number | null;
+}
+
+export type ReadingMode = 'study' | 'simple';
+export type ReadingFontSize = 'sm' | 'md' | 'lg' | 'xl';
+
+export interface ReadingPrefs {
+    showTranslation: boolean;
+    fontSize: ReadingFontSize;
+}
+
+export interface UserComment {
+    id: string;                              // uuid
+    targetType: 'word' | 'sentence';
+    targetKey: string;                       // word: lowercase clean; sentence: sentenceId
+    text: string;
+    createdAt: string;                       // ISO
+    updatedAt: string;                       // ISO
 }
 
 export interface LocalProfile {
@@ -32,6 +50,8 @@ export interface LocalProfile {
     lastBackupAt?: string; // ISO date
     lastRestoreAt?: string; // ISO date
     colorCorrections?: Record<string, ColorCorrectionToken[]>; // sentenceId -> tokens coloridos
+    readingMode?: ReadingMode;
+    readingPrefs?: ReadingPrefs;
 }
 
 export interface VoiceRecording {
@@ -48,6 +68,8 @@ const defaultProfile: LocalProfile = {
     totalScore: 0,
     activeFolderFilters: [],
     colorCorrections: {},
+    readingMode: 'study',
+    readingPrefs: { showTranslation: true, fontSize: 'md' },
 };
 
 // ============================================================
@@ -84,6 +106,13 @@ function openDB(): Promise<IDBDatabase> {
             if (!db.objectStoreNames.contains(SESSIONS_STORE)) {
                 const sessionsStore = db.createObjectStore(SESSIONS_STORE, { keyPath: 'id' });
                 sessionsStore.createIndex('date', 'date', { unique: false });
+            }
+
+            // Comments store (v4)
+            if (!db.objectStoreNames.contains(COMMENTS_STORE)) {
+                const commentsStore = db.createObjectStore(COMMENTS_STORE, { keyPath: 'id' });
+                commentsStore.createIndex('targetKey', 'targetKey', { unique: false });
+                commentsStore.createIndex('targetType', 'targetType', { unique: false });
             }
         };
 
@@ -207,21 +236,33 @@ export const localDB = {
     // --- Backup/Restore Helpers ---
 
     /** Exporta TUDO como um único objeto JSON (para backup na nuvem) */
-    async exportAll(): Promise<{ items: StudyItem[]; profile: LocalProfile }> {
-        const [items, profile] = await Promise.all([
+    async exportAll(): Promise<{ items: StudyItem[]; profile: LocalProfile; comments: UserComment[] }> {
+        const [items, profile, comments] = await Promise.all([
             this.getAllItems(),
-            this.getProfile()
+            this.getProfile(),
+            this.getAllComments()
         ]);
-        return { items, profile };
+        return { items, profile, comments };
     },
 
     /** Importa dados de um backup (substitui tudo localmente) */
-    async importAll(data: { items: StudyItem[]; profile: LocalProfile }): Promise<void> {
+    async importAll(data: { items: StudyItem[]; profile: LocalProfile; comments?: UserComment[] }): Promise<void> {
         await this.clearItems();
         if (data.items.length > 0) {
             await this.bulkPutItems(data.items);
         }
         await this.saveProfile(data.profile);
+        await this.clearComments();
+        if (data.comments && data.comments.length > 0) {
+            const db = await openDB();
+            await new Promise<void>((resolve, reject) => {
+                const tx = db.transaction(COMMENTS_STORE, 'readwrite');
+                const store = tx.objectStore(COMMENTS_STORE);
+                for (const c of data.comments!) store.put(c);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
     },
 
     /** Retorna o perfil padrão (útil para reset) */
@@ -292,6 +333,41 @@ export const localDB = {
     /** Limpa todas as sessões (útil para reset) */
     async clearSessions(): Promise<void> {
         await withStore(SESSIONS_STORE, 'readwrite', (store) => store.clear());
+    },
+
+    // --- Comments (v4) ---
+
+    /** Retorna todos os comentários */
+    async getAllComments(): Promise<UserComment[]> {
+        return withStore<UserComment[]>(COMMENTS_STORE, 'readonly', (store) => store.getAll());
+    },
+
+    /** Retorna comentários por targetKey (palavra ou sentenceId) */
+    async getCommentsByTarget(targetKey: string): Promise<UserComment[]> {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(COMMENTS_STORE, 'readonly');
+            const store = tx.objectStore(COMMENTS_STORE);
+            const index = store.index('targetKey');
+            const request = index.getAll(targetKey);
+            request.onsuccess = () => resolve(request.result);
+            request.onerror = () => reject(request.error);
+        });
+    },
+
+    /** Adiciona ou atualiza um comentário */
+    async putComment(comment: UserComment): Promise<void> {
+        await withStore(COMMENTS_STORE, 'readwrite', (store) => store.put(comment));
+    },
+
+    /** Remove um comentário */
+    async deleteComment(id: string): Promise<void> {
+        await withStore(COMMENTS_STORE, 'readwrite', (store) => store.delete(id));
+    },
+
+    /** Limpa todos os comentários */
+    async clearComments(): Promise<void> {
+        await withStore(COMMENTS_STORE, 'readwrite', (store) => store.clear());
     }
 };
 

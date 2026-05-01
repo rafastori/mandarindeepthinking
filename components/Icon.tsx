@@ -79,7 +79,11 @@ import {
     Share2,
     Languages,
     Orbit,
-    TrendingUp
+    TrendingUp,
+    Pause,
+    SkipBack,
+    Eye,
+    MessageCircle
 } from 'lucide-react';
 
 export interface IconProps {
@@ -169,7 +173,11 @@ const icons: Record<string, React.ElementType<any>> = {
     'share-2': Share2,
     'languages': Languages,
     'orbit': Orbit,
-    'trending-up': TrendingUp
+    'trending-up': TrendingUp,
+    'pause': Pause,
+    'skip-back': SkipBack,
+    'eye': Eye,
+    'message-circle': MessageCircle
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

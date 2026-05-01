@@ -1,14 +1,17 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
-import Icon from '../components/Icon';
-import EmptyState from '../components/EmptyState';
-import { StudyItem, Keyword, SupportedLanguage } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
-import { generateWordCard, correctColorHighlights, ColorCorrectionOutput } from '../services/gemini';
-import { moveItemsToFolder, extractFolderPaths } from '../services/folderService';
-import ExportModal, { ExportConfig } from '../components/ExportModal';
-import VoiceMicButton from '../components/VoiceMicButton';
-import type { useVoiceRecording } from '../hooks/useVoiceRecording';
-import { localDB, ColorCorrectionToken } from '../services/localDB';
+import Icon from '../../components/Icon';
+import EmptyState from '../../components/EmptyState';
+import { StudyItem, Keyword, SupportedLanguage } from '../../types';
+import { usePuterSpeech } from '../../hooks/usePuterSpeech';
+import { generateWordCard, correctColorHighlights, ColorCorrectionOutput } from '../../services/gemini';
+import { moveItemsToFolder, extractFolderPaths } from '../../services/folderService';
+import ExportModal, { ExportConfig } from '../../components/ExportModal';
+import VoiceMicButton from '../../components/VoiceMicButton';
+import type { useVoiceRecording } from '../../hooks/useVoiceRecording';
+import { localDB, ColorCorrectionToken } from '../../services/localDB';
+import SimpleReadingMode from './SimpleReadingMode';
+import { useReadingComments } from './useReadingComments';
+import CommentDialog from './CommentDialog';
 
 // Estilos para PDF (invisível na tela)
 const PDF_STYLES = {
@@ -149,6 +152,54 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             console.error('Erro ao salvar colorCorrections no localDB:', e);
         });
     }, [colorCorrections]);
+
+    // Modo de leitura (estudo/simples) + preferências do modo simples
+    const [readingMode, setReadingMode] = useState<'study' | 'simple'>('study');
+    const [readingPrefs, setReadingPrefs] = useState<{ showTranslation: boolean; fontSize: 'sm' | 'md' | 'lg' | 'xl' }>({
+        showTranslation: true,
+        fontSize: 'md',
+    });
+    const readingPrefsHydrated = useRef(false);
+
+    useEffect(() => {
+        let cancelled = false;
+        (async () => {
+            try {
+                const profile = await localDB.getProfile();
+                if (cancelled) return;
+                if (profile.readingMode) setReadingMode(profile.readingMode);
+                if (profile.readingPrefs) setReadingPrefs(profile.readingPrefs);
+            } catch (e) {
+                console.error('Erro ao hidratar prefs de leitura:', e);
+            } finally {
+                readingPrefsHydrated.current = true;
+            }
+        })();
+        return () => { cancelled = true; };
+    }, []);
+
+    useEffect(() => {
+        if (!readingPrefsHydrated.current) return;
+        localDB.updateProfile({ readingMode, readingPrefs }).catch(e => {
+            console.error('Erro ao salvar prefs de leitura:', e);
+        });
+    }, [readingMode, readingPrefs]);
+
+    // Hook de comentários (carrega do IndexedDB)
+    const commentsApi = useReadingComments();
+    const [commentTarget, setCommentTarget] = useState<{ type: 'word' | 'sentence'; key: string; preview: string } | null>(null);
+
+    // Set rápido de palavras com comentário (para marcação visual no modo Estudo)
+    const commentedWords = useMemo(() => {
+        const set = new Set<string>();
+        commentsApi.comments.forEach(c => { if (c.targetType === 'word') set.add(c.targetKey); });
+        return set;
+    }, [commentsApi.comments]);
+    const commentedSentences = useMemo(() => {
+        const set = new Set<string>();
+        commentsApi.comments.forEach(c => { if (c.targetType === 'sentence') set.add(c.targetKey); });
+        return set;
+    }, [commentsApi.comments]);
 
     const colorPopoverRef = useRef<HTMLDivElement>(null);
     const colorBtnRef = useRef<HTMLButtonElement>(null);
@@ -620,14 +671,17 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     };
 
     // Função para solicitar correção de cores via IA
-    const handleCorrectColors = async () => {
+    // sentenceIdsSubset: se passado, processa apenas essas frases. Senão, todas as filtradas.
+    const handleCorrectColors = async (sentenceIdsSubset?: string[]) => {
         setShowColorPopover(false);
         setIsCorrectingColors(true);
 
         try {
             // Coletar segmentos filtrados com palavras salvas
+            const subsetSet = sentenceIdsSubset ? new Set(sentenceIdsSubset) : null;
             const sentencesForAI = filteredData
                 .filter(item => item.translation) // Apenas itens com tradução
+                .filter(item => !subsetSet || subsetSet.has(item.id.toString()))
                 .map(item => {
                     const savedWords: { word: string; meaning: string; colorIndex: number }[] = [];
                     item.tokens.forEach(token => {
@@ -690,10 +744,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     const renderSentence = (sentence: StudyItem) => {
         return sentence.tokens.map((token, i) => {
             const cleanToken = cleanPunctuation(token);
-            const isSaved = !!savedWordsMap.get(cleanToken.toLowerCase());
+            const cleanLower = cleanToken.toLowerCase();
+            const isSaved = !!savedWordsMap.get(cleanLower);
             const isLoading = loadingWord === cleanToken;
-            const colorIdx = wordColorMap.get(cleanToken.toLowerCase());
+            const colorIdx = wordColorMap.get(cleanLower);
             const color = colorIdx !== undefined ? HIGHLIGHT_COLORS[colorIdx] : null;
+            const hasComment = cleanLower.length > 0 && commentedWords.has(cleanLower);
 
             const useMultiColor = isSaved && isColorHighlightEnabled && color;
 
@@ -701,6 +757,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 <span
                     key={i}
                     onClick={(e) => { e.stopPropagation(); handleTokenClick(token, sentence); }}
+                    onDoubleClick={(e) => {
+                        e.stopPropagation();
+                        if (cleanLower.length > 0) {
+                            setCommentTarget({ type: 'word', key: cleanLower, preview: cleanToken });
+                        }
+                    }}
                     className={`
                         inline-block px-1 mx-0.5 rounded transition-all border-b-2 mb-1 relative cursor-pointer
                         ${isSaved && !useMultiColor
@@ -719,6 +781,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </span>
                     )}
                     <span className={isLoading ? 'opacity-0' : ''}>{token}</span>
+                    {hasComment && <sup className="text-amber-500 text-[9px] ml-0.5">●</sup>}
                 </span>
             );
         });
@@ -796,7 +859,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
 
                         {!selectionMode && !reorderMode ? (
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 items-center">
+                                {/* Toggle Estudo / Leitura Simples */}
+                                <button
+                                    onClick={() => setReadingMode(readingMode === 'study' ? 'simple' : 'study')}
+                                    className={`px-2.5 py-1.5 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border ${readingMode === 'simple'
+                                        ? 'bg-amber-500 text-white border-amber-500'
+                                        : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'
+                                    }`}
+                                    title={readingMode === 'study' ? 'Modo leitura simples' : 'Modo estudo'}
+                                >
+                                    <Icon name="book-open" size={14} />
+                                    {readingMode === 'simple' ? 'Estudo' : 'Leitura'}
+                                </button>
                                 {/* Mostrar reordenar apenas se houver exatamente uma pasta selecionada (não "__uncategorized__") */}
                                 {activeFolderFilters.length === 1 && activeFolderFilters[0] !== '__uncategorized__' && filteredData.length > 1 && (
                                     <button
@@ -939,7 +1014,25 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
-                    {(reorderMode ? localReorderData : filteredData).map((item, index) => {
+                    {readingMode === 'simple' && !selectionMode && !reorderMode ? (
+                        <SimpleReadingMode
+                            items={filteredData}
+                            prefs={readingPrefs}
+                            onPrefsChange={setReadingPrefs}
+                            colorCorrections={colorCorrections}
+                            isCorrectingColors={isCorrectingColors}
+                            onRequestColorCorrection={(ids) => handleCorrectColors(ids)}
+                            speak={speak}
+                            stopSpeak={stop}
+                            playingId={playingId}
+                            comments={commentsApi.comments}
+                            onAddComment={commentsApi.addComment}
+                            onUpdateComment={commentsApi.updateComment}
+                            onDeleteComment={commentsApi.deleteComment}
+                        />
+                    ) : null}
+
+                    {readingMode === 'simple' && !selectionMode && !reorderMode ? null : (reorderMode ? localReorderData : filteredData).map((item, index) => {
                         const isImported = typeof item.id === 'string';
                         const isGerman = item.language === 'de';
                         const isSelected = selectedIds.has(item.id.toString());
@@ -982,6 +1075,20 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                     className={`p-1.5 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
                                                 >
                                                     <Icon name={playingId === `reading-${item.id}` ? 'square' : 'volume-2'} size={16} />
+                                                </button>
+                                                <button
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        setCommentTarget({
+                                                            type: 'sentence',
+                                                            key: item.id.toString(),
+                                                            preview: item.chinese.slice(0, 60),
+                                                        });
+                                                    }}
+                                                    className={`p-1.5 rounded-full transition-all ${commentedSentences.has(item.id.toString()) ? 'text-amber-600 bg-amber-50' : 'text-slate-400 hover:text-amber-600 hover:bg-amber-50'}`}
+                                                    title="Comentar esta frase"
+                                                >
+                                                    <Icon name="message-circle" size={16} />
                                                 </button>
                                                 {voiceRecording && (
                                                     <VoiceMicButton
@@ -1264,6 +1371,18 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     </div>
                 </div>
+            )}
+
+            {/* Modal de comentário (compartilhado entre modo Estudo e Simples) */}
+            {commentTarget && (
+                <CommentDialog
+                    target={commentTarget}
+                    existing={commentsApi.comments.filter(c => c.targetType === commentTarget.type && c.targetKey === commentTarget.key)}
+                    onClose={() => setCommentTarget(null)}
+                    onAdd={(text) => commentsApi.addComment(commentTarget.type, commentTarget.key, text)}
+                    onUpdate={commentsApi.updateComment}
+                    onDelete={commentsApi.deleteComment}
+                />
             )}
 
             {/* Container Invisível para PDF */}
