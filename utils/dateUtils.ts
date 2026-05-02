@@ -73,3 +73,69 @@ export const getDaysDifference = (date1: string, date2: string): number => {
     const diffTime = Math.abs(d2.getTime() - d1.getTime());
     return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 };
+
+/**
+ * Conversão segura de createdAt -> número (epoch ms).
+ *
+ * Lida com TODOS os formatos que aparecem na biblioteca:
+ *  - undefined / null              -> 0
+ *  - number (epoch ms ou s)        -> retorna em ms
+ *  - string ISO ('2024-01-...')    -> Date.parse (com fallback 0 se inválida)
+ *  - Date instance                 -> getTime()
+ *  - Firestore Timestamp { seconds, nanoseconds } ou { _seconds, _nanoseconds }
+ *
+ * **Por que isso importa:** Array.prototype.sort() no V8 (Chrome) tem
+ * comportamento indefinido se o comparator retorna NaN — frequentemente
+ * degenera para "ordem do storage" (no caso do IndexedDB, ordem do keyPath
+ * = `id`). Isso causou o bug do snap-back na reordenação de itens legados
+ * que tinham createdAt em formato Firestore Timestamp object.
+ */
+export function getTimestamp(val: any): number {
+    if (!val) return 0;
+    if (typeof val === 'number') {
+        // Heurística: timestamps em segundos costumam ser < 10 bilhões
+        return val < 1e10 ? val * 1000 : val;
+    }
+    if (typeof val === 'string') {
+        const t = Date.parse(val);
+        return isNaN(t) ? 0 : t;
+    }
+    if (val instanceof Date) {
+        const t = val.getTime();
+        return isNaN(t) ? 0 : t;
+    }
+    if (typeof val === 'object') {
+        // Firestore Timestamp (cliente)
+        if (typeof val.seconds === 'number') {
+            return val.seconds * 1000 + Math.floor((val.nanoseconds || 0) / 1e6);
+        }
+        // Firestore Timestamp serializado
+        if (typeof val._seconds === 'number') {
+            return val._seconds * 1000 + Math.floor((val._nanoseconds || 0) / 1e6);
+        }
+        // Tem método toDate()?
+        if (typeof val.toDate === 'function') {
+            try {
+                const t = val.toDate().getTime();
+                return isNaN(t) ? 0 : t;
+            } catch { /* segue */ }
+        }
+    }
+    const fallback = new Date(val).getTime();
+    return isNaN(fallback) ? 0 : fallback;
+}
+
+/**
+ * Normaliza qualquer formato de createdAt para uma ISO string.
+ * Usado para "limpar" itens legados na migração — corrige o bug na fonte.
+ */
+export function normalizeCreatedAt(val: any): string {
+    const ms = getTimestamp(val);
+    if (ms === 0) return new Date().toISOString();
+    return new Date(ms).toISOString();
+}
+
+/** Comparator descendente (mais novo primeiro) seguro contra NaN. */
+export function compareCreatedAtDesc<T extends { createdAt?: any }>(a: T, b: T): number {
+    return getTimestamp(b.createdAt) - getTimestamp(a.createdAt);
+}

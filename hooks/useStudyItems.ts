@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { localDB } from '../services/localDB';
 import { StudyItem } from '../types';
+import { compareCreatedAtDesc, normalizeCreatedAt, getTimestamp } from '../utils/dateUtils';
 
 /**
  * useStudyItems - Hook LOCAL-FIRST para gerenciar itens de estudo.
@@ -23,25 +24,45 @@ export const useStudyItems = (userId: string | null | undefined) => {
     try {
       const all = await localDB.getAllItems();
 
-      // Item é "legado" se id é number OU se é string puramente numérica
-      // (ex: "2469"). Isso captura também conversões antigas que viraram string.
-      const legacyItems = all.filter(it =>
-        typeof it.id === 'number' || (typeof it.id === 'string' && /^\d+$/.test(it.id))
-      );
+      // Detecta itens problemáticos:
+      //  - id é number ou string-numérica ("2469") -> precisa virar legacy_<id>
+      //  - createdAt está em formato Firestore Timestamp / Date / inválido
+      //    -> normalizar para ISO string (CRÍTICO: senão corrompe Array.sort com NaN)
+      const itemsToFix = all.filter(it => {
+        const idIsLegacy = typeof it.id === 'number' || (typeof it.id === 'string' && /^\d+$/.test(it.id));
+        const createdAtIsString = typeof it.createdAt === 'string';
+        const createdAtIsValid = createdAtIsString && !isNaN(Date.parse(it.createdAt));
+        return idIsLegacy || !createdAtIsValid;
+      });
 
-      if (legacyItems.length === 0) return;
+      if (itemsToFix.length === 0) return;
 
-      console.log(`[migration] convertendo ${legacyItems.length} IDs legados (number/string-numérico) para legacy_*…`);
+      const idChanges = itemsToFix.filter(it => typeof it.id === 'number' || /^\d+$/.test(String(it.id)));
+      const dateChanges = itemsToFix.filter(it => {
+        const ok = typeof it.createdAt === 'string' && !isNaN(Date.parse(it.createdAt));
+        return !ok;
+      });
+      console.log(`[migration] normalizando ${itemsToFix.length} itens (IDs: ${idChanges.length}, createdAt: ${dateChanges.length})`);
 
-      const oldKeys: (string | number)[] = legacyItems.map(it => it.id);
-      const remapped: StudyItem[] = legacyItems.map(it => ({ ...it, id: `legacy_${it.id}` }));
+      // Apaga as chaves antigas (apenas dos que vão mudar de id)
+      const idsToDelete: (string | number)[] = idChanges.map(it => it.id);
+      if (idsToDelete.length > 0) await localDB.bulkDeleteItems(idsToDelete);
 
-      await localDB.bulkDeleteItems(oldKeys);
+      // Reescreve TODOS os itens problemáticos com:
+      //  - id virando string (legacy_<antigo>) se era número/string-numérica
+      //  - createdAt virando ISO string sempre
+      const remapped: StudyItem[] = itemsToFix.map(it => {
+        const idIsLegacy = typeof it.id === 'number' || (typeof it.id === 'string' && /^\d+$/.test(it.id));
+        return {
+          ...it,
+          id: idIsLegacy ? `legacy_${it.id}` : it.id,
+          createdAt: normalizeCreatedAt(it.createdAt),
+        };
+      });
       await localDB.bulkPutItems(remapped);
 
-      // Marca como migrado (pra registro/debug)
       await localDB.updateProfile({ legacyIdsMigratedAt: new Date().toISOString() });
-      console.log('[migration] concluída — IDs convertidos:', legacyItems.length);
+      console.log('[migration] concluída');
     } catch (e) {
       console.error('[migration] falhou (não bloqueia carregamento):', e);
     }
@@ -62,12 +83,8 @@ export const useStudyItems = (userId: string | null | undefined) => {
         await runLegacyIdMigrationIfNeeded();
         const localItems = await localDB.getAllItems();
         if (!cancelled) {
-          // Ordena por createdAt descrescente (mais recentes primeiro)
-          localItems.sort((a, b) => {
-            const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
-            const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
-            return dateB - dateA;
-          });
+          // NaN-safe sort (V8 silenciosamente degrada sort se comparator retorna NaN)
+          localItems.sort(compareCreatedAtDesc);
           setItems(localItems);
           setLoading(false);
         }
@@ -142,14 +159,9 @@ export const useStudyItems = (userId: string | null | undefined) => {
     // 4. Atualizar state React para refletir a mudança na UI
     setItems(prev => {
       const newItems = prev.map(item => item.id === id ? updatedItem : item);
-
       // Reordenar se createdAt foi alterado (usado na reordenação manual)
       if (data.createdAt !== undefined) {
-        newItems.sort((a, b) => {
-          const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
-          const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
-          return dateB - dateA;
-        });
+        newItems.sort(compareCreatedAtDesc);
       }
       return newItems;
     });
@@ -195,13 +207,9 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
       await localDB.bulkPutItems(updatedItems);
 
-      // Recarrega + ordena (mesmo padrão do load inicial)
+      // Recarrega + ordena (NaN-safe — crítico para itens legados)
       const reloaded = await localDB.getAllItems();
-      reloaded.sort((a, b) => {
-        const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
-        const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
-        return dateB - dateA;
-      });
+      reloaded.sort(compareCreatedAtDesc);
       setItems(reloaded);
 
       console.log(`[reorderItems] ${touched}/${updates.length} itens reordenados`);
@@ -375,11 +383,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
       // Recarrega do banco para refletir tudo
       const allItems = await localDB.getAllItems();
-      allItems.sort((a, b) => {
-        const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
-        const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
-        return dateB - dateA;
-      });
+      allItems.sort(compareCreatedAtDesc);
       setItems(allItems);
 
       console.log(`Importação local concluída: ${itemsToInsert.length} itens`);
