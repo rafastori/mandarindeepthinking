@@ -1,316 +1,364 @@
-import React, { useState, useEffect } from 'react';
-import { PolyQuestRoom } from '../types';
-import { generateBossLevel, BossLevelData } from '../../../services/gemini';
+import React, { useEffect, useMemo, useState } from 'react';
 import Icon from '../../../components/Icon';
+import { PolyQuestRoom, PLAYER_CLASSES } from '../types';
+import { RULES, pickRandomBoss } from '../rules';
+import { generateBossLevel } from '../../../services/gemini';
 import { useStudyItems } from '../../../hooks/useStudyItems';
 import { useGameDataLoader } from '../../../hooks/useGameDataLoader';
+import { THEME, getPlayerColor } from '../theme';
+import HPBar from './HPBar';
+import BossSprite from './BossSprite';
+import PlayerHud from './PlayerHud';
+import AudioToggle from './AudioToggle';
+import { audio } from '../audio';
 
-interface BossPhaseProps {
+interface Props {
     room: PolyQuestRoom;
     currentUserId: string;
-    onStartBoss: (bossData: BossLevelData) => void;
-    onDamage: (damage: number, isFatal: boolean) => void;
+    onStartBoss: (target: string, blocks: string[]) => Promise<void>;
     onAddBlock: (text: string) => Promise<void>;
-    onRemoveBlock: (blockId: string) => Promise<void>;
+    onRemoveBlock: (id: string) => Promise<void>;
     onReorderBlocks: (newOrder: any[]) => Promise<void>;
+    onAttack: () => Promise<{ damage: number; killed: boolean } | null>;
+    onUsePerkWarrior: () => Promise<void>;
+    onBossAttacks: () => Promise<void>;
 }
 
-const USER_COLORS = [
-    'border-pink-500 bg-pink-100 text-pink-900',
-    'border-blue-500 bg-blue-100 text-blue-900',
-    'border-green-500 bg-green-100 text-green-900',
-    'border-yellow-500 bg-yellow-100 text-yellow-900',
-    'border-purple-500 bg-purple-100 text-purple-900',
-    'border-orange-500 bg-orange-100 text-orange-900',
-];
-
-const getUserColor = (userId: string) => {
-    // Simple hash to pick a color
-    let hash = 0;
-    for (let i = 0; i < userId.length; i++) {
-        hash = userId.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    const index = Math.abs(hash) % USER_COLORS.length;
-    return USER_COLORS[index];
-};
-
-export const BossPhase: React.FC<BossPhaseProps> = ({
-    room,
-    currentUserId,
-    onStartBoss,
-    onDamage,
-    onAddBlock,
-    onRemoveBlock,
-    onReorderBlocks
+export const BossPhase: React.FC<Props> = ({
+    room, currentUserId, onStartBoss, onAddBlock, onRemoveBlock,
+    onReorderBlocks, onAttack, onUsePerkWarrior, onBossAttacks,
 }) => {
-    const [loading, setLoading] = useState(false);
-    const [feedback, setFeedback] = useState<'success' | 'error' | null>(null);
-    const [draggedBlockIndex, setDraggedBlockIndex] = useState<number | null>(null);
+    const isHost = room.hostId === currentUserId;
+    const [generating, setGenerating] = useState(false);
+    const [feedback, setFeedback] = useState<'success' | 'fail' | null>(null);
+    const [attacking, setAttacking] = useState(false);
+    const [bossHit, setBossHit] = useState(false);
+    const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+    const [taunt, setTaunt] = useState<string | null>(null);
+    const [, force] = useState(0);
 
-    // Integrando biblioteca local
     const { items } = useStudyItems(currentUserId);
     const { gamePairs } = useGameDataLoader({
         items,
         activeFolderIds: room.config.context === 'library' ? room.config.selectedFolderIds || [] : [],
-        requireBothSides: true
+        requireBothSides: true,
     });
 
-    // DnD Handlers
-    const handleDragStart = (e: React.DragEvent, index: number) => {
-        setDraggedBlockIndex(index);
-        e.dataTransfer.effectAllowed = "move";
-        // Optional: Set ghost image
-    };
+    const me = room.players.find(p => p.id === currentUserId);
+    const myCls = me?.cls ? PLAYER_CLASSES.find(c => c.id === me.cls) : null;
+    const perkRemain = me?.perkUsedAt && myCls ? Math.max(0, myCls.perkCooldownMs - (Date.now() - me.perkUsedAt)) : 0;
 
-    const handleDragOver = (e: React.DragEvent, index: number) => {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = "move";
-    };
-
-    const handleDrop = async (e: React.DragEvent, targetIndex: number) => {
-        e.preventDefault();
-        if (draggedBlockIndex === null) return;
-        if (draggedBlockIndex === targetIndex) return;
-
-        const placedBlocks = room.bossState?.placedBlocks || [];
-        const newBlocks = [...placedBlocks];
-        const [movedBlock] = newBlocks.splice(draggedBlockIndex, 1);
-        newBlocks.splice(targetIndex, 0, movedBlock);
-
-        await onReorderBlocks(newBlocks);
-        setDraggedBlockIndex(null);
-    };
-
-    // Initial Boss Generation (Only Host)
+    // Re-render para cooldowns + boss timer + ataques
     useEffect(() => {
-        const initBoss = async () => {
-            if (room.bossLevel) return;
-            if (room.hostId !== currentUserId) return;
+        const id = setInterval(() => force(x => x + 1), 500);
+        return () => clearInterval(id);
+    }, []);
 
-            setLoading(true);
+    // Geração do desafio do boss (host only)
+    useEffect(() => {
+        if (room.boss) return;
+        if (!isHost) return;
+        if (room.config.context === 'library' && gamePairs.length === 0) return;
+        const generate = async () => {
+            setGenerating(true);
             try {
+                let target = '';
+                let blocks: string[] = [];
                 if (room.config.context === 'library') {
-                    // MODO BIBLIOTECA
-                    // Tenta achar itens com originalSentence para usar como boss level, se não houver, improvisa
                     const itemsWithSentences = items.filter(i => {
-                        const isSelected = (room.config.selectedFolderIds || []).some(filterPath => {
-                            if (filterPath === '__uncategorized__' && !i.folderPath) return true;
-                            return i.folderPath === filterPath || i.folderPath?.startsWith(filterPath + '/');
+                        const isSel = (room.config.selectedFolderIds || []).some(p => {
+                            if (p === '__uncategorized__' && !i.folderPath) return true;
+                            return i.folderPath === p || i.folderPath?.startsWith(p + '/');
                         });
-                        return isSelected && i.originalSentence && i.originalSentence.length > 5;
+                        return isSel && i.originalSentence && i.originalSentence.length > 5;
                     });
-
-                    let bossData: BossLevelData;
-
                     if (itemsWithSentences.length > 0) {
-                        const randomItem = itemsWithSentences[Math.floor(Math.random() * itemsWithSentences.length)];
-                        // Separa a frase original em blocos usando split por espaço ou CJK
+                        const random = itemsWithSentences[Math.floor(Math.random() * itemsWithSentences.length)];
+                        target = random.originalSentence!;
                         const isCJK = ['zh', 'ja', 'ko'].includes(room.config.sourceLang);
-                        const blocks = isCJK
-                            ? randomItem.originalSentence!.split(/(\s+|[.,!?;:()]|[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]+)/).filter(t => t.trim().length > 0)
-                            : randomItem.originalSentence!.split(/\s+/).filter(t => t.trim().length > 0);
-
-                        bossData = {
-                            originalSentence: randomItem.originalSentence!,
-                            blocks: blocks
-                        };
+                        blocks = isCJK
+                            ? target.split(/(\s+|[.,!?;:()]|[　-〿぀-ゟ゠-ヿ一-龯]+)/).filter(t => t.trim().length > 0)
+                            : target.split(/\s+/).filter(t => t.length > 0);
                     } else {
-                        // Improviso: pega 5 termos aleatórios das cartas para formarem um "mega combo" de tradução reversa.
-                        const shuffledPairs = [...gamePairs].sort(() => 0.5 - Math.random()).slice(0, 5);
-                        bossData = {
-                            originalSentence: shuffledPairs.map(p => p.term).join(' '),
-                            blocks: shuffledPairs.map(p => p.term)
-                        };
+                        const shuffled = [...gamePairs].sort(() => 0.5 - Math.random()).slice(0, 5);
+                        target = shuffled.map(p => p.term).join(' ');
+                        blocks = shuffled.map(p => p.term);
                     }
-                    onStartBoss(bossData);
                 } else {
-                    // MODO IA ORIGINAL
-                    const textContext = room.config.originalText || "PolyQuest Context";
-                    const bossData = await generateBossLevel(textContext, room.config.sourceLang, room.config.difficulty);
-                    console.log("Boss Generated:", bossData);
-                    onStartBoss(bossData);
+                    const data = await generateBossLevel(room.config.originalText, room.config.sourceLang, room.config.difficulty);
+                    target = data.originalSentence;
+                    blocks = data.blocks;
                 }
-            } catch (error) {
-                console.error("Failed to generate boss:", error);
-                onStartBoss({
-                    originalSentence: "Error generating boss level please try again",
-                    blocks: ["Error", "generating", "boss", "level"]
-                });
+                await onStartBoss(target, blocks);
+            } catch (e) {
+                console.error('[Boss gen] fail:', e);
+                await onStartBoss('Erro ao gerar desafio', ['Erro', 'ao', 'gerar']);
             } finally {
-                setLoading(false);
+                setGenerating(false);
             }
         };
+        generate();
+    }, [room.boss, isHost, gamePairs.length]);
 
-        if (room.config.context === 'library' && gamePairs.length === 0) return; // Wait for data loader
-        initBoss();
-    }, [room.phase, room.bossLevel, room.hostId, currentUserId, room.config.originalText, room.config.context, room.config.targetLang, onStartBoss, gamePairs, items]);
+    // Loop de ataque do boss (todos os clientes — race blindada por nextAttackAt no servidor)
+    useEffect(() => {
+        if (!room.boss || room.boss.hp <= 0) return;
+        const tick = () => {
+            if (room.boss && Date.now() >= room.boss.nextAttackAt) {
+                audio.bossAttack();
+                onBossAttacks();
+            }
+        };
+        const id = setInterval(tick, 1500);
+        return () => clearInterval(id);
+    }, [room.boss?.nextAttackAt, onBossAttacks]);
 
-    const placedBlocks = room.bossState?.placedBlocks || [];
+    // Taunt aleatório do boss
+    useEffect(() => {
+        if (!room.boss || room.boss.hp <= 0) return;
+        const id = setInterval(() => {
+            if (Math.random() < 0.4 && room.boss) {
+                const t = room.boss.def.taunts[Math.floor(Math.random() * room.boss.def.taunts.length)];
+                setTaunt(t);
+                setTimeout(() => setTaunt(null), 4500);
+            }
+        }, 12000);
+        return () => clearInterval(id);
+    }, [room.boss?.def?.id]);
 
-    const handleBlockClick = (blockText: string) => {
-        if (feedback) return;
-        onAddBlock(blockText);
-    };
+    // Animar dano no sprite
+    useEffect(() => {
+        if (!room.boss?.lastDamageAt) return;
+        if (Date.now() - room.boss.lastDamageAt < 1500) {
+            setBossHit(true);
+            const t = setTimeout(() => setBossHit(false), 600);
+            return () => clearTimeout(t);
+        }
+    }, [room.boss?.lastDamageAt]);
 
-    const handleRemoveBlock = (blockId: string) => {
-        if (feedback) return;
-        onRemoveBlock(blockId);
-    };
+    const placedBlocks = room.boss?.placedBlocks || [];
 
-    const handleAttack = () => {
-        if (!room.bossLevel) return;
+    const availableBlocks = useMemo(() => {
+        if (!room.boss) return [];
+        const result: { text: string; idx: number }[] = [];
+        room.boss.blocks.forEach((b, i) => {
+            const used = placedBlocks.filter(p => p.text === b).length;
+            const total = room.boss!.blocks.filter(ob => ob === b).length;
+            if (used < total) result.push({ text: b, idx: i });
+        });
+        return result;
+    }, [room.boss, placedBlocks]);
 
-        // Construct sentence from shared state
-        // FIX: Remove all whitespace, punctuation, and symbols to avoid issues with different language punctuations (e.g., Chinese commas)
-        const normalize = (str: string) => str.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
-
-        const constructedSentence = normalize(placedBlocks.map(b => b.text).join(''));
-        const targetSentence = normalize(room.bossLevel.originalSentence);
-
-        if (constructedSentence === targetSentence) {
+    const handleAttack = async () => {
+        if (!room.boss || attacking) return;
+        setAttacking(true);
+        const result = await onAttack();
+        setAttacking(false);
+        if (result?.killed) {
+            audio.bossDefeat();
             setFeedback('success');
-            setTimeout(() => {
-                onDamage(100, true); // Fatal damage
-            }, 1000);
+            setTimeout(() => setFeedback(null), 1500);
         } else {
-            setFeedback('error');
-            setTimeout(() => {
-                setFeedback(null);
-                // Maybe clear blocks on fail? Or keep them for correction? 
-                // Let's keep them (collaborative fixing).
-                // Just penalty.
-                onDamage(10, false);
-            }, 1000);
+            audio.bossHit();
+            setFeedback('fail');
+            setTimeout(() => setFeedback(null), 1500);
         }
     };
 
-    if (loading || !room.bossLevel) {
+    const handleDragStart = (e: React.DragEvent, idx: number) => {
+        setDraggedIdx(idx);
+        e.dataTransfer.effectAllowed = 'move';
+    };
+    const handleDragOver = (e: React.DragEvent) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+    };
+    const handleDrop = async (e: React.DragEvent, target: number) => {
+        e.preventDefault();
+        if (draggedIdx === null || draggedIdx === target) return;
+        const next = [...placedBlocks];
+        const [moved] = next.splice(draggedIdx, 1);
+        next.splice(target, 0, moved);
+        await onReorderBlocks(next);
+        setDraggedIdx(null);
+    };
+
+    const handlePerk = async () => {
+        if (perkRemain > 0 || !myCls) return;
+        if (myCls.id === 'warrior') {
+            audio.classPerk();
+            audio.bossHit();
+            await onUsePerkWarrior();
+        } else {
+            alert('Sua habilidade não funciona aqui no Boss.');
+        }
+    };
+
+    if (generating || !room.boss) {
         return (
-            <div className="flex flex-col items-center justify-center p-12 text-center h-full">
-                <Icon name="skull" size={64} className="text-purple-600 animate-pulse mb-4" />
-                <h2 className="text-2xl font-bold text-slate-800 mb-2">O Chefe Final Desperta...</h2>
-                <p className="text-slate-500 animate-bounce">Aguarde enquanto o desafio é gerado...</p>
+            <div className={`min-h-full ${THEME.bg} -m-6 p-6 flex flex-col items-center justify-center text-white`}>
+                <Icon name="skull" size={64} className="text-violet-400 animate-pulse mb-4" />
+                <h2 className="text-2xl font-black mb-2">O Chefe Final desperta…</h2>
+                <p className="text-white/60 text-sm animate-pulse">Aguarde a batalha começar.</p>
             </div>
         );
     }
 
-    // Available blocks: Initial blocks minus Used blocks (by count)
-    // To permit duplicates if the sentence has duplicates, we check counts.
-    const availableBlocks = room.bossLevel.blocks.filter(b =>
-        placedBlocks.filter(pb => pb.text === b).length < room.bossLevel!.blocks.filter(ob => ob === b).length
-    );
+    const boss = room.boss;
+    const nextAttackIn = Math.max(0, Math.ceil((boss.nextAttackAt - Date.now()) / 1000));
 
     return (
-        <div className="max-w-4xl mx-auto p-6">
-            {/* Header / Boss Status */}
-            <div className="bg-gradient-to-r from-purple-600 to-indigo-700 rounded-2xl p-6 text-white mb-8 shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-10">
-                    <Icon name="skull" size={120} />
+        <div className={`min-h-full ${THEME.bg} -m-6 p-4 md:p-6 text-white relative`}>
+            <div className="max-w-4xl mx-auto">
+                {/* Top HUD */}
+                <div className="flex items-center gap-2 mb-3">
+                    <div className="flex-1 flex gap-2 overflow-x-auto no-scrollbar">
+                        {room.players.map(p => (
+                            <PlayerHud key={p.id} player={p} isMe={p.id === currentUserId} isHost={p.id === room.hostId} />
+                        ))}
+                    </div>
+                    <AudioToggle />
                 </div>
 
-                <div className="flex justify-between items-start relative z-10">
-                    <div>
-                        <h2 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name="swords" />
-                            BOSS FINAL (Colaborativo)
-                        </h2>
-                        <p className="text-purple-100 text-lg mb-2 max-w-2xl">
-                            Reconstruam a frase JUNTOS!
-                        </p>
+                {/* Boss arena */}
+                <div className={`${THEME.bgPanel} rounded-3xl p-4 md:p-6 mb-3 ${THEME.borderGlow} border relative overflow-hidden`}>
+                    {/* Background atmosphere */}
+                    <div
+                        className="absolute inset-0 opacity-20 -z-10"
+                        style={{
+                            background: `radial-gradient(circle at 50% 30%, ${boss.def.color}88 0%, transparent 60%)`,
+                        }}
+                    />
+
+                    {/* Boss header info */}
+                    <div className="flex items-start justify-between mb-2">
+                        <div>
+                            <p className="text-xs uppercase tracking-widest text-amber-300 font-black">Boss Final</p>
+                            <h2 className="text-xl md:text-2xl font-black text-white">{boss.def.name}</h2>
+                        </div>
+                        <div className="text-right">
+                            <p className="text-[10px] uppercase tracking-widest text-rose-300 font-bold">Próximo ataque</p>
+                            <p className={`font-mono text-2xl font-black ${nextAttackIn <= 5 ? 'text-rose-400 animate-pulse' : 'text-white/80'}`}>
+                                {nextAttackIn}s
+                            </p>
+                        </div>
                     </div>
-                    {/* Players Legend */}
-                    <div className="bg-purple-800/50 p-2 rounded-lg text-xs">
-                        {room.players.map(p => (
-                            <div key={p.id} className="flex items-center gap-2 mb-1">
-                                <span className={`w-3 h-3 rounded-full border ${getUserColor(p.id).split(' ')[0].replace('border', 'bg')}`}></span>
-                                <div className="flex flex-col leading-tight">
-                                    <span className="font-bold">{p.name} ({p.score || 0} pts)</span>
-                                    <span className="text-[9px] opacity-75 uppercase font-bold text-white/80">LVL {p.totalScore || 0}</span>
-                                </div>
+
+                    {/* Sprite + HP */}
+                    <div className="flex flex-col items-center my-2">
+                        <BossSprite
+                            boss={boss.def}
+                            state={boss.state}
+                            isHit={bossHit}
+                            isAttacking={nextAttackIn === 0}
+                            size={180}
+                        />
+                        {taunt && (
+                            <div className="mt-1 px-3 py-1.5 bg-black/60 border border-white/20 rounded-xl text-sm italic text-white/90 max-w-md text-center animate-in fade-in zoom-in">
+                                "{taunt}"
                             </div>
+                        )}
+                    </div>
+
+                    <div className="space-y-2">
+                        <HPBar current={boss.hp} max={boss.maxHp} label="🐉 HP do Boss" color="boss" height="lg" />
+                        <HPBar current={room.partyHP} max={room.maxPartyHP} label="❤ HP da Party" />
+                    </div>
+                </div>
+
+                {/* Construção da frase */}
+                <div className={`bg-black/30 rounded-2xl p-4 mb-3 border-2 transition-colors ${
+                    feedback === 'success' ? 'border-emerald-400 bg-emerald-500/15' :
+                    feedback === 'fail' ? 'border-rose-500 bg-rose-500/15' :
+                    'border-white/15'
+                }`}>
+                    <p className="text-xs uppercase tracking-widest text-amber-300 font-black mb-2">Reconstruam a frase</p>
+                    <div className="min-h-[80px] flex flex-wrap items-center gap-2 p-2">
+                        {placedBlocks.length === 0 && (
+                            <p className="w-full text-center text-white/40 italic text-sm">
+                                Cliquem nos blocos abaixo para montar a frase…
+                            </p>
+                        )}
+                        {placedBlocks.map((b, i) => {
+                            const color = getPlayerColor(b.placedBy);
+                            return (
+                                <div
+                                    key={b.id}
+                                    draggable
+                                    onDragStart={(e) => handleDragStart(e, i)}
+                                    onDragOver={handleDragOver}
+                                    onDrop={(e) => handleDrop(e, i)}
+                                    className={`group relative px-3 py-1.5 rounded-lg font-bold text-sm shadow-md cursor-move animate-in zoom-in border-2 ${draggedIdx === i ? 'opacity-50' : ''}`}
+                                    style={{
+                                        backgroundColor: `${color.hex}33`,
+                                        borderColor: color.hex,
+                                        color: 'white',
+                                    }}
+                                >
+                                    {b.text}
+                                    <button
+                                        onClick={(ev) => { ev.stopPropagation(); onRemoveBlock(b.id); }}
+                                        className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-rose-500 text-white rounded-full text-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                                    >
+                                        ×
+                                    </button>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                {/* Controles */}
+                <div className="flex gap-2 items-center mb-3">
+                    {myCls?.id === 'warrior' && (
+                        <button
+                            onClick={handlePerk}
+                            disabled={perkRemain > 0}
+                            className={`px-3 py-2 rounded-xl font-bold text-xs flex items-center gap-2 ${perkRemain > 0
+                                ? 'bg-white/5 text-white/30 cursor-not-allowed'
+                                : 'bg-rose-600 hover:bg-rose-700 text-white shadow-lg shadow-rose-600/40 active:scale-95'
+                            }`}
+                            title={`Investida: -${RULES.WARRIOR_DIRECT_DAMAGE} HP do boss`}
+                        >
+                            <Icon name="sword" size={16} />
+                            {perkRemain > 0 ? `Investida (${Math.ceil(perkRemain / 1000)}s)` : `Investida -${RULES.WARRIOR_DIRECT_DAMAGE}`}
+                        </button>
+                    )}
+
+                    <button
+                        onClick={handleAttack}
+                        disabled={placedBlocks.length === 0 || attacking}
+                        className={`flex-1 px-5 py-3 rounded-xl font-black text-base shadow-lg flex items-center justify-center gap-2 transition-all ${placedBlocks.length === 0 || attacking
+                            ? 'bg-white/10 text-white/30 cursor-not-allowed'
+                            : 'bg-gradient-to-br from-amber-400 to-amber-600 text-slate-900 shadow-amber-500/30 hover:shadow-amber-500/60 active:scale-95'
+                        }`}
+                    >
+                        <Icon name="sword" size={20} />
+                        ATACAR
+                    </button>
+                </div>
+
+                {/* Blocos disponíveis */}
+                <div className={`${THEME.bgPanelSolid} rounded-2xl p-3 ${THEME.borderGlow} border`}>
+                    <p className="text-[10px] uppercase tracking-widest text-white/50 font-bold mb-2">Blocos disponíveis</p>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+                        {availableBlocks.length === 0 && (
+                            <p className="col-span-full text-center text-emerald-300 text-sm font-bold py-2">
+                                ✓ Todos os blocos foram usados
+                            </p>
+                        )}
+                        {availableBlocks.map(({ text, idx }) => (
+                            <button
+                                key={`${text}-${idx}`}
+                                onClick={() => { audio.pickUp(); onAddBlock(text); }}
+                                className="bg-white/10 hover:bg-amber-400/20 hover:border-amber-400 border-2 border-white/15 px-3 py-2 rounded-xl text-white font-bold text-sm transition-all active:scale-95"
+                            >
+                                {text}
+                            </button>
                         ))}
                     </div>
                 </div>
-
-                {/* Team Confidence Bar */}
-                <div className="flex items-center gap-4 mt-4">
-                    <Icon name="heart" className="text-red-400" />
-                    <div className="flex-1 h-4 bg-purple-900/50 rounded-full overflow-hidden">
-                        <div
-                            className="h-full bg-gradient-to-r from-red-500 to-pink-500 transition-all duration-500"
-                            style={{ width: `${room.confidence}%` }}
-                        />
-                    </div>
-                    <span className="font-mono">{Math.round(room.confidence || 0)}%</span>
-                </div>
             </div>
-
-            {/* Construction Area */}
-            <div className={`
-                bg-white rounded-xl p-6 shadow-sm border-2 min-h-[120px] flex flex-wrap items-center gap-2 mb-6 transition-colors
-                ${feedback === 'success' ? 'border-green-500 bg-green-50' : ''}
-                ${feedback === 'error' ? 'border-red-500 bg-red-50' : 'border-slate-200'}
-            `}>
-                {placedBlocks.length === 0 && (
-                    <span className="text-slate-400 italic w-full text-center">
-                        Clan, cliquem nos blocos abaixo para montar a frase...
-                    </span>
-                )}
-
-                {placedBlocks.map((block, idx) => (
-                    <div
-                        key={block.id}
-                        draggable
-                        onDragStart={(e) => handleDragStart(e, idx)}
-                        onDragOver={(e) => handleDragOver(e, idx)}
-                        onDrop={(e) => handleDrop(e, idx)}
-                        className={`
-                            group relative px-4 py-2 rounded-lg font-bold shadow-sm animate-in zoom-in duration-200 cursor-move
-                            ${getUserColor(block.placedBy)}
-                            ${draggedBlockIndex === idx ? 'opacity-50' : ''}
-                        `}
-                    >
-                        {block.text}
-                        <button
-                            onClick={(e) => { e.stopPropagation(); onRemoveBlock(block.id); }}
-                            className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600 shadow-md"
-                        >
-                            ×
-                        </button>
-                    </div>
-                ))}
-            </div>
-
-            {/* Controls */}
-            <div className="flex justify-end items-center mb-8">
-                <button
-                    onClick={handleAttack}
-                    disabled={placedBlocks.length === 0}
-                    className={`
-                        px-8 py-3 rounded-xl font-bold text-lg shadow-lg flex items-center gap-2 transition-all
-                        ${placedBlocks.length === 0
-                            ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                            : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:scale-105 active:scale-95 hover:shadow-purple-500/25'
-                        }
-                    `}
-                >
-                    <Icon name="zap" />
-                    ATACAR
-                </button>
-            </div>
-
-            {/* Available Blocks */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                {availableBlocks.map((block, idx) => (
-                    <button
-                        key={`${block}-${idx}`}
-                        onClick={() => handleBlockClick(block)}
-                        className="bg-white hover:bg-purple-50 border border-slate-200 hover:border-purple-300 px-4 py-3 rounded-xl text-slate-700 text-lg font-medium transition-all shadow-sm active:scale-95 text-center"
-                    >
-                        {block}
-                    </button>
-                ))}
-            </div>
-        </div >
+        </div>
     );
 };

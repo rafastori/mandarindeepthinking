@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { db } from '../../../services/firebase';
 import {
     collection,
@@ -9,757 +9,863 @@ import {
     deleteDoc,
     setDoc,
     getDoc,
-    arrayUnion,
-    arrayRemove,
+    query,
+    where,
+    getDocs,
     increment,
     serverTimestamp,
-    Timestamp
+    Timestamp,
+    runTransaction,
 } from 'firebase/firestore';
-import { PolyQuestRoom, PolyQuestPlayer, GameConfig, GAME_CONSTANTS } from '../types';
+import {
+    PolyQuestRoom,
+    PolyQuestPlayer,
+    GameConfig,
+    WordEnigma,
+    BossState,
+    BossDef,
+    PlayerClass,
+    GamePhase,
+} from '../types';
+import { RULES, calculateBossHP, comboMultiplierFor, pickRandomBoss } from '../rules';
 
 /**
- * Hook para gerenciar salas do PolyQuest
- * Similar ao sistema de salas do LingoArena
+ * usePolyQuestRoom — schema v2
+ *
+ * Reescrito do zero para corrigir:
+ *  - Race em submitAnswer (sobrescrita de player)
+ *  - Host transfer ao sair (líder some, sala morre)
+ *  - activeRoom race ao criar/entrar (closure stale)
+ *  - Cleanup setTimeout(unsub, 200) brittle
+ *  - Intruder split CJK quebrado
+ *  - Boss victory points nunca pagos
+ *  - requestHelp não cancelável
+ *
+ * Novas mecânicas:
+ *  - Combo da PARTY (acertos consecutivos com timeout)
+ *  - Boss com HP, ataques temporizados, 4 sprites
+ *  - Classes (mage/bard/warrior) com perks ativos
+ *  - Intruder integrado (não mais comentado)
  */
+
 export const usePolyQuestRoom = (userId?: string) => {
     const [rooms, setRooms] = useState<PolyQuestRoom[]>([]);
-    const [activeRoom, setActiveRoom] = useState<PolyQuestRoom | null>(null);
+    const [activeRoomId, setActiveRoomId] = useState<string | null>(null);
+    const [activeRoom, setActiveRoomState] = useState<PolyQuestRoom | null>(null);
     const [loading, setLoading] = useState(true);
+    const cleanupRanRef = useRef(false);
 
-    // Cleanup old rooms (>24h or finished >1h) - runs once on mount
+    // ─── Cleanup de salas antigas ────────────────────────────────
+    // Faz UMA query pontual em vez de listener com setTimeout. Sem leak.
     useEffect(() => {
-        const cleanupOldRooms = async () => {
+        if (cleanupRanRef.current) return;
+        cleanupRanRef.current = true;
+        (async () => {
             try {
-                const roomsRef = collection(db, 'polyquestRooms');
-                const unsubCleanup = onSnapshot(roomsRef, async (snap) => {
-                    const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-                    const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
-
-                    for (const roomDoc of snap.docs) {
-                        const data = roomDoc.data();
-                        const createdAt = data.createdAt?.toDate?.() || new Date(0);
-
-                        const isOld = createdAt < twentyFourHoursAgo;
-                        const isFinishedAndStale = data.phase === 'finished' && createdAt < oneHourAgo;
-
-                        if (isOld || isFinishedAndStale) {
-                            console.log(`🧹 Cleaning up old PolyQuest room: ${roomDoc.id}`);
-                            await deleteDoc(doc(db, 'polyquestRooms', roomDoc.id));
-                        }
-                    }
-                });
-
-                // Unsubscribe after one check
-                setTimeout(() => unsubCleanup(), 200);
+                const cutoff24h = Timestamp.fromMillis(Date.now() - 24 * 3600 * 1000);
+                const stale = await getDocs(query(
+                    collection(db, 'polyquestRooms'),
+                    where('createdAt', '<', cutoff24h)
+                ));
+                for (const d of stale.docs) {
+                    await deleteDoc(d.ref).catch(() => {});
+                }
             } catch (e) {
-                console.error('PolyQuest cleanup error:', e);
+                console.warn('[PolyQuest] cleanup error:', e);
             }
-        };
-
-        cleanupOldRooms();
+        })();
     }, []);
 
-    // Listener para todas as salas
+    // ─── Listener global de salas ────────────────────────────────
     useEffect(() => {
-        const unsubscribe = onSnapshot(
+        const unsub = onSnapshot(
             collection(db, 'polyquestRooms'),
             (snapshot) => {
-                const roomsData = snapshot.docs.map(doc => {
-                    const data = doc.data();
+                const data = snapshot.docs.map(d => {
+                    const raw = d.data();
                     return {
-                        id: doc.id,
-                        ...data,
-                        createdAt: data.createdAt?.toDate() || new Date(),
-                        startedAt: data.startedAt?.toDate(),
-                        finishedAt: data.finishedAt?.toDate(),
+                        id: d.id,
+                        ...raw,
+                        createdAt: raw.createdAt?.toDate?.() || new Date(),
+                        startedAt: raw.startedAt?.toDate?.(),
+                        finishedAt: raw.finishedAt?.toDate?.(),
+                        updatedAt: raw.updatedAt?.toDate?.(),
                     } as PolyQuestRoom;
                 });
-                setRooms(roomsData);
+                setRooms(data);
                 setLoading(false);
-
-                // Atualizar sala ativa se estiver nela
-                if (activeRoom) {
-                    const updated = roomsData.find(r => r.id === activeRoom.id);
-                    if (updated) {
-                        setActiveRoom(updated);
-                    } else {
-                        setActiveRoom(null); // Sala foi deletada
-                    }
-                }
             },
             (error) => {
-                console.error('Error listening to rooms:', error);
+                console.error('[PolyQuest] rooms listener error:', error);
                 setLoading(false);
-            }
+            },
         );
+        return () => unsub();
+    }, []);
 
-        return () => unsubscribe();
-    }, [activeRoom?.id]);
+    // ─── Listener focado na sala ativa (low-latency) ─────────────
+    useEffect(() => {
+        if (!activeRoomId) {
+            setActiveRoomState(null);
+            return;
+        }
+        const unsub = onSnapshot(
+            doc(db, 'polyquestRooms', activeRoomId),
+            (snap) => {
+                if (!snap.exists()) {
+                    setActiveRoomState(null);
+                    setActiveRoomId(null);
+                    return;
+                }
+                const raw = snap.data();
+                setActiveRoomState({
+                    id: snap.id,
+                    ...raw,
+                    createdAt: raw.createdAt?.toDate?.() || new Date(),
+                    startedAt: raw.startedAt?.toDate?.(),
+                    finishedAt: raw.finishedAt?.toDate?.(),
+                    updatedAt: raw.updatedAt?.toDate?.(),
+                } as PolyQuestRoom);
+            },
+        );
+        return () => unsub();
+    }, [activeRoomId]);
 
-    /**
-     * Criar nova sala
-     */
-    const createRoom = async (
+    /** Define a sala ativa por ID — sem race com closure stale */
+    const setActiveRoom = useCallback((roomOrId: PolyQuestRoom | string | null) => {
+        if (roomOrId === null) {
+            setActiveRoomId(null);
+            setActiveRoomState(null);
+        } else if (typeof roomOrId === 'string') {
+            setActiveRoomId(roomOrId);
+        } else {
+            setActiveRoomId(roomOrId.id);
+            setActiveRoomState(roomOrId);
+        }
+    }, []);
+
+    // ─── CRUD de sala ────────────────────────────────────────────
+
+    const createRoom = useCallback(async (
         roomName: string,
         config: GameConfig,
-        player: PolyQuestPlayer
+        player: PolyQuestPlayer,
     ): Promise<string | null> => {
         try {
-            const newRoom: Omit<PolyQuestRoom, 'id'> = {
+            const newRoom: Omit<PolyQuestRoom, 'id' | 'createdAt'> = {
                 name: roomName,
                 hostId: player.id,
                 players: [player],
                 phase: 'lobby',
                 config,
-                confidence: GAME_CONSTANTS.INITIAL_CONFIDENCE,
+                partyHP: RULES.PARTY_INITIAL_HP,
+                maxPartyHP: RULES.PARTY_MAX_HP,
                 selectedWords: [],
                 enigmas: [],
-                currentEnigmaIndex: 0,
-                comboMultiplier: 1.0,
-                createdAt: new Date(),
+                combo: { count: 0, multiplier: 1.0, lastCorrectAt: 0, lastCorrectBy: '' },
+                boss: null,
+                intruder: null,
+                intruderTriggered: false,
             };
-
             const docRef = await addDoc(collection(db, 'polyquestRooms'), {
                 ...newRoom,
                 createdAt: Timestamp.now(),
+                updatedAt: Timestamp.now(),
             });
-
+            setActiveRoomId(docRef.id);
             return docRef.id;
-        } catch (error) {
-            console.error('Error creating room:', error);
+        } catch (e) {
+            console.error('[PolyQuest] createRoom error:', e);
             return null;
         }
-    };
+    }, []);
 
-    /**
-     * Entrar em sala existente
-     */
-    const joinRoom = async (roomId: string, player: PolyQuestPlayer): Promise<boolean> => {
+    const joinRoom = useCallback(async (roomId: string, player: PolyQuestPlayer): Promise<boolean> => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) {
-                console.error('Room not found');
-                return false;
-            }
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-
-            // Verificar se já está na sala
-            if (roomData.players.some(p => p.id === player.id)) {
-                return true; // Já está na sala
-            }
-
-            // Adicionar jogador
-            await updateDoc(roomRef, {
-                players: arrayUnion(player)
+            const ok = await runTransaction(db, async (tx) => {
+                const ref = doc(db, 'polyquestRooms', roomId);
+                const snap = await tx.get(ref);
+                if (!snap.exists()) return false;
+                const data = snap.data() as PolyQuestRoom;
+                if (data.players.some(p => p.id === player.id)) return true;
+                tx.update(ref, {
+                    players: [...data.players, player],
+                    updatedAt: Timestamp.now(),
+                });
+                return true;
             });
-
-            return true;
-        } catch (error) {
-            console.error('Error joining room:', error);
+            if (ok) setActiveRoomId(roomId);
+            return ok;
+        } catch (e) {
+            console.error('[PolyQuest] joinRoom error:', e);
             return false;
         }
-    };
+    }, []);
 
-    /**
-     * Sair da sala
-     */
-    const leaveRoom = async (roomId: string, playerId: string): Promise<void> => {
+    const leaveRoom = useCallback(async (roomId: string, playerId: string): Promise<void> => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const updatedPlayers = roomData.players.filter(p => p.id !== playerId);
-
-            // AUTO-CLEANUP: Se última pessoa saiu, deleta a sala do Firestore
-            if (updatedPlayers.length === 0) {
-                console.log('[PolyQuest] Last player left, deleting room:', roomId);
-                await deleteDoc(roomRef);
-            } else {
-                // Ainda tem jogadores, apenas atualiza a lista
-                await updateDoc(roomRef, {
-                    players: updatedPlayers
+            await runTransaction(db, async (tx) => {
+                const ref = doc(db, 'polyquestRooms', roomId);
+                const snap = await tx.get(ref);
+                if (!snap.exists()) return;
+                const data = snap.data() as PolyQuestRoom;
+                const remaining = data.players.filter(p => p.id !== playerId);
+                if (remaining.length === 0) {
+                    tx.delete(ref);
+                    return;
+                }
+                // Host transfer: se quem saiu era o host, passa pra próxima pessoa
+                const newHostId = data.hostId === playerId ? remaining[0].id : data.hostId;
+                tx.update(ref, {
+                    players: remaining,
+                    hostId: newHostId,
+                    updatedAt: Timestamp.now(),
                 });
-            }
-
-            setActiveRoom(null);
-        } catch (error) {
-            console.error('Error leaving room:', error);
+            });
+            setActiveRoomId(null);
+        } catch (e) {
+            console.error('[PolyQuest] leaveRoom error:', e);
         }
-    };
+    }, []);
 
-    /**
-     * Deletar sala (apenas host)
-     */
-    const deleteRoom = async (roomId: string): Promise<void> => {
+    const deleteRoom = useCallback(async (roomId: string): Promise<void> => {
         try {
             await deleteDoc(doc(db, 'polyquestRooms', roomId));
-            setActiveRoom(null);
-        } catch (error) {
-            console.error('Error deleting room:', error);
+            setActiveRoomId(null);
+        } catch (e) {
+            console.error('[PolyQuest] deleteRoom error:', e);
         }
-    };
+    }, []);
 
-    /**
-     * Atualizar estado de "pronto" do jogador
-     */
-    const toggleReady = async (roomId: string, playerId: string, isReady: boolean): Promise<void> => {
+    // ─── Lobby ────────────────────────────────────────────────────
+
+    const toggleReady = useCallback(async (roomId: string, playerId: string, isReady: boolean) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const players = data.players.map(p => p.id === playerId ? { ...p, isReady } : p);
+            tx.update(ref, { players, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] toggleReady:', e));
+    }, []);
+
+    const setPlayerClass = useCallback(async (roomId: string, playerId: string, cls: PlayerClass) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const players = data.players.map(p => p.id === playerId ? { ...p, cls } : p);
+            tx.update(ref, { players, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] setPlayerClass:', e));
+    }, []);
+
+    const updateConfig = useCallback(async (roomId: string, config: Partial<GameConfig>) => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const updates: Record<string, any> = { updatedAt: Timestamp.now() };
+            for (const [k, v] of Object.entries(config)) {
+                updates[`config.${k}`] = v;
+            }
+            await updateDoc(ref, updates);
+        } catch (e) {
+            console.error('[PolyQuest] updateConfig:', e);
+        }
+    }, []);
 
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const updatedPlayers = roomData.players.map(p =>
-                p.id === playerId ? { ...p, isReady } : p
-            );
-
-            await updateDoc(roomRef, {
-                players: updatedPlayers
+    const startGame = useCallback(async (roomId: string) => {
+        try {
+            await updateDoc(doc(db, 'polyquestRooms', roomId), {
+                phase: 'exploration' as GamePhase,
+                startedAt: Timestamp.now(),
+                updatedAt: Timestamp.now(),
             });
-        } catch (error) {
-            console.error('Error toggling ready:', error);
+        } catch (e) {
+            console.error('[PolyQuest] startGame:', e);
         }
-    };
+    }, []);
 
-    /**
-     * Atualizar configuração da sala (apenas host)
-     * USA DOT NOTATION para fazer MERGE ao invés de sobrescrever todo o config!
-     */
-    const updateConfig = async (roomId: string, config: Partial<GameConfig>): Promise<void> => {
+    // ─── Exploration ──────────────────────────────────────────────
+
+    const toggleWordSelection = useCallback(async (roomId: string, word: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const sel = data.selectedWords || [];
+            const next = sel.includes(word) ? sel.filter(w => w !== word) : [...sel, word];
+            tx.update(ref, { selectedWords: next, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] toggleWord:', e));
+    }, []);
+
+    const finishExploration = useCallback(async (roomId: string) => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-
-            // Cria objeto com dot notation para cada campo de config
-            // Isso FAZ MERGE ao invés de sobrescrever todo o objeto config
-            const updates: Record<string, any> = {};
-            for (const [key, value] of Object.entries(config)) {
-                updates[`config.${key}`] = value;
-            }
-
-            await updateDoc(roomRef, updates);
-        } catch (error) {
-            console.error('Error updating config:', error);
-        }
-    };
-
-    /**
-     * Iniciar jogo (transição para fase de exploração)
-     */
-    const startGame = async (roomId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                phase: 'exploration',
-                startedAt: Timestamp.now()
+            await updateDoc(doc(db, 'polyquestRooms', roomId), {
+                phase: 'quest' as GamePhase,
+                updatedAt: Timestamp.now(),
             });
-        } catch (error) {
-            console.error('Error starting game:', error);
+        } catch (e) {
+            console.error('[PolyQuest] finishExploration:', e);
         }
-    };
+    }, []);
 
-    /**
-     * Atualizar fase do jogo
-     */
-    const updatePhase = async (roomId: string, phase: PolyQuestRoom['phase']): Promise<void> => {
+    // ─── Quest ────────────────────────────────────────────────────
+
+    const setEnigmas = useCallback(async (roomId: string, enigmas: WordEnigma[]) => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, { phase });
-        } catch (error) {
-            console.error('Error updating phase:', error);
-        }
-    };
-
-    /**
-     * Atualizar confiança (barra de vida)
-     */
-    const updateConfidence = async (roomId: string, delta: number): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const newConfidence = Math.max(0, Math.min(100, roomData.confidence + delta));
-
-            await updateDoc(roomRef, {
-                confidence: newConfidence
+            await updateDoc(doc(db, 'polyquestRooms', roomId), {
+                enigmas,
+                updatedAt: Timestamp.now(),
             });
-
-            // Se confiança chegou a 0, game over
-            if (newConfidence <= 0) {
-                await updateDoc(roomRef, {
-                    phase: 'finished',
-                    finishedAt: Timestamp.now()
-                });
-            }
-        } catch (error) {
-            console.error('Error updating confidence:', error);
+        } catch (e) {
+            console.error('[PolyQuest] setEnigmas:', e);
         }
-    };
+    }, []);
 
-    /**
-     * Alternar seleção de palavra na fase de exploração
-     */
-    const toggleWordSelection = async (roomId: string, word: string): Promise<void> => {
+    const lockEnigma = useCallback(async (roomId: string, enigmaIndex: number, playerId: string): Promise<boolean> => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const selectedWords = roomData.selectedWords || [];
-
-            let newSelectedWords;
-            if (selectedWords.includes(word)) {
-                newSelectedWords = selectedWords.filter(w => w !== word);
-            } else {
-                newSelectedWords = [...selectedWords, word];
-            }
-
-            await updateDoc(roomRef, {
-                selectedWords: newSelectedWords
+            return await runTransaction(db, async (tx) => {
+                const ref = doc(db, 'polyquestRooms', roomId);
+                const snap = await tx.get(ref);
+                if (!snap.exists()) return false;
+                const data = snap.data() as PolyQuestRoom;
+                const enigmas = [...data.enigmas];
+                const e = enigmas[enigmaIndex];
+                if (!e || e.isDiscovered) return false;
+                if (e.activeSolver && e.activeSolver !== playerId) return false;
+                enigmas[enigmaIndex] = { ...e, activeSolver: playerId };
+                tx.update(ref, { enigmas, updatedAt: Timestamp.now() });
+                return true;
             });
-        } catch (error) {
-            console.error('Error toggling word selection:', error);
-        }
-    };
-
-    const finishExploration = async (roomId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                phase: 'quest',
-                currentEnigmaIndex: 0
-            });
-        } catch (error) {
-            console.error('Error finishing exploration:', error);
-        }
-    };
-
-    /**
-     * Salvar enigmas gerados
-     */
-    const setEnigmas = async (roomId: string, enigmas: any[]): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, { enigmas });
-        } catch (error) {
-            console.error('Error setting enigmas:', error);
-        }
-    };
-
-    /**
-     * Submeter resposta para um enigma
-     */
-    const submitAnswer = async (roomId: string, playerId: string, enigmaIndex: number, answer: string, isCorrect: boolean): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const enigmas = [...roomData.enigmas];
-
-            if (!enigmas[enigmaIndex]) return;
-            const enigma = enigmas[enigmaIndex];
-
-            const players = [...roomData.players];
-            const playerIndex = players.findIndex(p => p.id === playerId);
-            if (playerIndex >= 0) {
-                const player = players[playerIndex];
-
-                if (isCorrect) {
-                    // Calculate points status
-                    const wasHelped = !!enigmas[enigmaIndex].helpedBy;
-                    const points = wasHelped ? GAME_CONSTANTS.HELP_RECEIVED_POINTS : GAME_CONSTANTS.CORRECT_POINTS;
-
-                    // Update player stats
-                    if (playerIndex !== -1) {
-                        players[playerIndex].score += points;
-                        players[playerIndex].consecutiveCorrect += 1;
-
-                        // Fatigue logic (simplified/removed for grid, but keeping stats)
-                        if (players[playerIndex].consecutiveCorrect >= GAME_CONSTANTS.FATIGUE_THRESHOLD) {
-                            players[playerIndex].isFatigued = true;
-                            players[playerIndex].fatigueEndsAt = Date.now() + GAME_CONSTANTS.FATIGUE_DURATION;
-                        }
-
-                        // Add game action
-                        // (Optional)
-                    }
-                    players[playerIndex] = player;
-                } else {
-                    player.consecutiveCorrect = 0;
-                }
-                players[playerIndex] = player;
-            }
-
-            enigma.attempts = (enigma.attempts || 0) + 1;
-
-            if (isCorrect) {
-                enigma.isDiscovered = true;
-                enigma.discoveredBy = playerId;
-
-                const discoveredCount = enigmas.filter(e => e.isDiscovered).length + 1; // +1 pois este acabou de ser descoberto
-                const totalEnigmas = enigmas.length;
-                const progressPercent = discoveredCount / totalEnigmas;
-
-                // TRIGGER INTRUDER: Se chegou em 50% E ainda não teve intruso
-                if (progressPercent >= GAME_CONSTANTS.INTRUDER_TRIGGER_PERCENT && !roomData.intruderFound && roomData.intruderWord) {
-                    // Nota: A palavra intrusa precisa ser gerada antes ou agora. 
-                    // Simplificação: Se já temos uma definida (ex: no setup), usamos. 
-                    // Se não, o componente QuestPhase deve chamar a geração e depois o trigger.
-                    // Vamos deixar o QuestPhase lidar com o trigger para poder chamar a AI.
-                }
-
-                await updateDoc(roomRef, {
-                    players,
-                    enigmas,
-                    currentEnigmaIndex: Math.min(roomData.currentEnigmaIndex + 1, enigmas.length),
-                    lastCorrectBy: playerId
-                });
-
-                // Check for Boss Phase (All enigmas found)
-                const allDiscovered = enigmas.every(e => e.isDiscovered);
-                if (allDiscovered) {
-                    await updateDoc(roomRef, {
-                        phase: 'boss',
-                        // Boss generation will happen in UI component, or we can trigger it here if we had the text.
-                        // Ideally, QuestPhase detects "All solved" and calls startBossPhase similar to Intruder.
-                    });
-                }
-            } else {
-                const newConfidence = Math.max(0, roomData.confidence - GAME_CONSTANTS.ERROR_PENALTY);
-                if (newConfidence <= 0) {
-                    await updateDoc(roomRef, {
-                        confidence: newConfidence,
-                        players,
-                        enigmas,
-                        phase: 'finished',
-                        finishedAt: Timestamp.now()
-                    });
-                } else {
-                    await updateDoc(roomRef, {
-                        confidence: newConfidence,
-                        players,
-                        enigmas
-                    });
-                }
-            }
-        } catch (error) {
-            console.error('Error submitting answer:', error);
-        }
-    };
-
-    const triggerIntruder = async (roomId: string, intruderWord: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                phase: 'intruder',
-                intruderWord,
-                intruderFound: false,
-                intruderFoundBy: null
-            });
-        } catch (error) {
-            console.error('Error triggering intruder:', error);
-        }
-    };
-
-    const resolveIntruder = async (roomId: string, playerId: string, selectedWord: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-            const roomData = roomSnap.data() as PolyQuestRoom;
-
-            if (selectedWord.toLowerCase() === roomData.intruderWord?.toLowerCase()) {
-                // Sucesso!
-                const players = [...roomData.players];
-                const playerIndex = players.findIndex(p => p.id === playerId);
-                if (playerIndex >= 0) {
-                    players[playerIndex].score += GAME_CONSTANTS.INTRUDER_POINTS;
-                }
-
-                await updateDoc(roomRef, {
-                    phase: 'quest', // Volta para a quest
-                    intruderFound: true,
-                    intruderFoundBy: playerId,
-                    confidence: Math.min(100, (roomData.confidence || 0) + 10), // Bônus de vida
-                    players
-                });
-            } else {
-                // Erro no Intruso: Penalidade?
-                const newConfidence = Math.max(0, (roomData.confidence || 0) - GAME_CONSTANTS.ERROR_PENALTY);
-                await updateDoc(roomRef, { confidence: newConfidence });
-            }
-        } catch (error) {
-            console.error('Error resolving intruder:', error);
-        }
-    };
-
-    const lockEnigma = async (roomId: string, enigmaIndex: number, playerId: string): Promise<boolean> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return false;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const enigmas = [...roomData.enigmas];
-
-            // Check if already locked by someone else
-            if (enigmas[enigmaIndex].activeSolver && enigmas[enigmaIndex].activeSolver !== playerId) {
-                return false;
-            }
-
-            enigmas[enigmaIndex].activeSolver = playerId;
-
-            await updateDoc(roomRef, { enigmas });
-            return true;
-        } catch (error) {
-            console.error("Lock error", error);
+        } catch (e) {
+            console.error('[PolyQuest] lockEnigma:', e);
             return false;
         }
-    };
+    }, []);
 
-    const unlockEnigma = async (roomId: string, enigmaIndex: number, playerId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const enigmas = [...roomData.enigmas];
-
-            // Only unlock if locked by this player
-            if (enigmas[enigmaIndex].activeSolver === playerId) {
-                delete enigmas[enigmaIndex].activeSolver;
-                await updateDoc(roomRef, { enigmas });
+    const unlockEnigma = useCallback(async (roomId: string, enigmaIndex: number, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const enigmas = [...data.enigmas];
+            const e = enigmas[enigmaIndex];
+            if (e && e.activeSolver === playerId) {
+                const { activeSolver, ...rest } = e;
+                enigmas[enigmaIndex] = rest;
+                tx.update(ref, { enigmas, updatedAt: Timestamp.now() });
             }
-        } catch (error) {
-            console.error("Unlock error", error);
-        }
-    };
+        }).catch(e => console.error('[PolyQuest] unlockEnigma:', e));
+    }, []);
 
-    const requestHelp = async (roomId: string, enigmaIndex: number, playerId: string): Promise<void> => {
+    /** Resposta do jogador. Atômica, sem race, com combo + classes. */
+    const submitAnswer = useCallback(async (
+        roomId: string,
+        playerId: string,
+        enigmaIndex: number,
+        _answer: string,
+        isCorrect: boolean,
+    ): Promise<{ awarded: number; comboCount: number; comboMult: number; allDone: boolean } | null> => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return;
+            return await runTransaction(db, async (tx) => {
+                const ref = doc(db, 'polyquestRooms', roomId);
+                const snap = await tx.get(ref);
+                if (!snap.exists()) return null;
+                const data = snap.data() as PolyQuestRoom;
+                const enigmas = [...data.enigmas];
+                const e = enigmas[enigmaIndex];
+                if (!e) return null;
 
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const enigmas = [...roomData.enigmas];
+                const players = data.players.map(p => ({ ...p }));
+                const playerIdx = players.findIndex(p => p.id === playerId);
+                const player = playerIdx >= 0 ? players[playerIdx] : null;
 
-            // Toggle help needed
-            if (!enigmas[enigmaIndex].needsHelp) {
-                enigmas[enigmaIndex].needsHelp = true;
-                enigmas[enigmaIndex].helpRequestedBy = playerId;
+                let awarded = 0;
+                let comboCount = data.combo?.count || 0;
+                let comboMult = data.combo?.multiplier || 1.0;
+                let partyHP = data.partyHP;
+                let phase: GamePhase = data.phase;
+                let allDone = false;
 
-                // UNLOCK for others to help
-                delete enigmas[enigmaIndex].activeSolver;
-            }
+                e.attempts = (e.attempts || 0) + 1;
 
-            await updateDoc(roomRef, { enigmas });
-        } catch (error) {
-            console.error("Request help error", error);
-        }
-    };
+                if (isCorrect) {
+                    // Atualiza o combo da PARTY
+                    const now = Date.now();
+                    const lastAt = data.combo?.lastCorrectAt || 0;
+                    const stillHot = lastAt > 0 && (now - lastAt) <= RULES.COMBO_TIMEOUT_MS;
+                    comboCount = stillHot ? comboCount + 1 : 1;
+                    comboMult = comboMultiplierFor(comboCount);
 
-    const provideHelp = async (roomId: string, enigmaIndex: number, helperId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return;
+                    // Bardo buff (2x na próxima resposta correta)
+                    let bardBonus = 1;
+                    if (player?.bardBuffActive) {
+                        bardBonus = RULES.BARD_BUFF_MULTIPLIER;
+                        player.bardBuffActive = false;
+                    }
 
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const enigmas = [...roomData.enigmas];
-            const players = [...roomData.players];
+                    const wasHelped = !!e.helpedBy;
+                    const base = wasHelped ? RULES.HELP_RECEIVED_POINTS : RULES.CORRECT_POINTS;
+                    awarded = Math.round(base * comboMult * bardBonus);
 
-            const enigma = enigmas[enigmaIndex];
-            if (!enigma.needsHelp) return;
+                    e.isDiscovered = true;
+                    e.discoveredBy = playerId;
+                    delete e.activeSolver;
+                    delete e.needsHelp;
 
-            // 1. Mark as helped
-            enigma.needsHelp = false;
-            enigma.helpedBy = helperId;
+                    if (player) {
+                        player.score += awarded;
+                        player.consecutiveCorrect = (player.consecutiveCorrect || 0) + 1;
+                        if (playerIdx >= 0) players[playerIdx] = player;
+                    }
 
-            // 2. Return lock to original requester
-            enigma.activeSolver = enigma.helpRequestedBy;
+                    allDone = enigmas.every(en => en.isDiscovered);
+                    if (allDone) phase = 'boss';
 
-            // 3. Reward Helper
-            const helperIndex = players.findIndex(p => p.id === helperId);
-            if (helperIndex !== -1) {
-                players[helperIndex].score += GAME_CONSTANTS.HELP_GIVEN_POINTS;
-                players[helperIndex].helpCount = (players[helperIndex].helpCount || 0) + 1;
-            }
+                    tx.update(ref, {
+                        enigmas,
+                        players,
+                        combo: { count: comboCount, multiplier: comboMult, lastCorrectAt: now, lastCorrectBy: playerId },
+                        ...(phase !== data.phase ? { phase } : {}),
+                        updatedAt: Timestamp.now(),
+                    });
+                } else {
+                    // Erro — reseta combo, bate na party
+                    partyHP = Math.max(0, partyHP - RULES.WRONG_DAMAGE);
+                    if (player) {
+                        player.consecutiveCorrect = 0;
+                        if (playerIdx >= 0) players[playerIdx] = player;
+                    }
+                    delete e.activeSolver;
 
-            await updateDoc(roomRef, { enigmas, players });
-        } catch (error) {
-            console.error("Provide help error", error);
-        }
-    };
+                    if (partyHP <= 0) {
+                        phase = 'defeat';
+                    }
 
-    const savePlayerHistory = async (roomId: string, userId: string, resultData: any) => {
-        try {
-            // 1. Save to History Collection
-            const historyRef = collection(db, 'users', userId, 'gameHistory');
-            await addDoc(historyRef, {
-                roomId,
-                ...resultData,
-                playedAt: serverTimestamp()
-            });
-
-            // 2. Update Global User Stats
-            const userRef = doc(db, 'users', userId);
-            // We use set with merge because user doc might not exist fully populated
-            await setDoc(userRef, {
-                totalScore: increment(resultData.score || 0),
-                gamesPlayed: increment(1),
-                lastPlayedAt: serverTimestamp()
-            }, { merge: true });
-
-        } catch (error) {
-            console.error("Error saving history:", error);
-        }
-    };
-
-    const startBossPhase = async (roomId: string, bossData: any): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                phase: 'boss',
-                bossLevel: bossData,
-                bossState: { placedBlocks: [] }
-            });
-        } catch (error) {
-            console.error('Error starting boss phase:', error);
-        }
-    };
-
-    const addBossBlock = async (roomId: string, text: string, userId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return;
-            const roomData = roomSnap.data() as PolyQuestRoom;
-
-            const newBlock = {
-                id: crypto.randomUUID(),
-                text,
-                placedBy: userId,
-                placedAt: Date.now()
-            };
-
-            const currentBlocks = roomData.bossState?.placedBlocks || [];
-
-            await updateDoc(roomRef, {
-                "bossState.placedBlocks": [...currentBlocks, newBlock]
-            });
-        } catch (error) {
-            console.error('Error adding boss block:', error);
-        }
-    };
-
-    const removeBossBlock = async (roomId: string, blockId: string): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-            if (!roomSnap.exists()) return;
-            const roomData = roomSnap.data() as PolyQuestRoom;
-
-            const currentBlocks = roomData.bossState?.placedBlocks || [];
-            const newBlocks = currentBlocks.filter((b: any) => b.id !== blockId);
-
-            await updateDoc(roomRef, {
-                "bossState.placedBlocks": newBlocks
-            });
-        } catch (error) {
-            console.error('Error removing boss block:', error);
-        }
-    };
-
-    const reorderBossBlocks = async (roomId: string, newOrder: any[]) => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            await updateDoc(roomRef, {
-                'bossState.placedBlocks': newOrder
-            });
-        } catch (error) {
-            console.error("Reorder error", error);
-        }
-    };
-
-    const submitBossDamage = async (roomId: string, damage: number, isFatal: boolean): Promise<void> => {
-        try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-            const roomData = roomSnap.data() as PolyQuestRoom;
-
-            if (isFatal) {
-                // Win!
-                await updateDoc(roomRef, {
-                    phase: 'finished',
-                    finishedAt: Timestamp.now(),
-                    // Bonus score can be calculated here
-                });
-            } else {
-                // Damage to Team Confidence
-                const newConfidence = Math.max(0, (roomData.confidence || 0) - damage);
-
-                await updateDoc(roomRef, {
-                    confidence: newConfidence
-                });
-
-                if (newConfidence <= 0) {
-                    await updateDoc(roomRef, {
-                        phase: 'finished',
-                        finishedAt: Timestamp.now()
+                    tx.update(ref, {
+                        enigmas,
+                        players,
+                        partyHP,
+                        combo: { count: 0, multiplier: 1.0, lastCorrectAt: 0, lastCorrectBy: '' },
+                        ...(phase !== data.phase ? { phase, finishedAt: Timestamp.now() } : {}),
+                        updatedAt: Timestamp.now(),
                     });
                 }
-            }
-        } catch (error) {
-            console.error('Error dealing boss damage:', error);
-        }
-    };
 
-    /**
-     * Limpar fadiga do jogador (chamado automaticamente ou manualmente)
-     */
-    const clearFatigue = async (roomId: string, playerId: string): Promise<void> => {
+                return { awarded, comboCount, comboMult, allDone };
+            });
+        } catch (e) {
+            console.error('[PolyQuest] submitAnswer:', e);
+            return null;
+        }
+    }, []);
+
+    // ─── Help / SOS ───────────────────────────────────────────────
+
+    const requestHelp = useCallback(async (roomId: string, enigmaIndex: number, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const enigmas = [...data.enigmas];
+            const e = enigmas[enigmaIndex];
+            if (!e) return;
+            // Toggle: se já é dele, cancela; senão, marca
+            if (e.needsHelp && e.helpRequestedBy === playerId) {
+                delete e.needsHelp;
+                delete e.helpRequestedBy;
+            } else {
+                e.needsHelp = true;
+                e.helpRequestedBy = playerId;
+                delete e.activeSolver;
+            }
+            tx.update(ref, { enigmas, updatedAt: Timestamp.now() });
+        }).catch(err => console.error('[PolyQuest] requestHelp:', err));
+    }, []);
+
+    const provideHelp = useCallback(async (roomId: string, enigmaIndex: number, helperId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const enigmas = [...data.enigmas];
+            const players = data.players.map(p => ({ ...p }));
+            const e = enigmas[enigmaIndex];
+            if (!e || !e.needsHelp) return;
+            e.needsHelp = false;
+            e.helpedBy = helperId;
+            e.activeSolver = e.helpRequestedBy;
+            const helperIdx = players.findIndex(p => p.id === helperId);
+            if (helperIdx >= 0) {
+                players[helperIdx].score += RULES.HELP_GIVEN_POINTS;
+                players[helperIdx].helpCount = (players[helperIdx].helpCount || 0) + 1;
+            }
+            tx.update(ref, { enigmas, players, updatedAt: Timestamp.now() });
+        }).catch(err => console.error('[PolyQuest] provideHelp:', err));
+    }, []);
+
+    // ─── Class Perks ──────────────────────────────────────────────
+
+    /** Mago: revela inicial da resposta correta */
+    const usePerkMage = useCallback(async (roomId: string, enigmaIndex: number, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const players = data.players.map(p => ({ ...p }));
+            const idx = players.findIndex(p => p.id === playerId);
+            const enigmas = [...data.enigmas];
+            const e = enigmas[enigmaIndex];
+            if (!e || idx < 0) return;
+            const now = Date.now();
+            const last = players[idx].perkUsedAt || 0;
+            const cd = 45_000;
+            if (now - last < cd) return;
+            players[idx].perkUsedAt = now;
+            e.revealedInitial = true;
+            tx.update(ref, { enigmas, players, updatedAt: Timestamp.now() });
+        }).catch(err => console.error('[PolyQuest] perkMage:', err));
+    }, []);
+
+    /** Bardo: próximo acerto da party vale 2x */
+    const usePerkBard = useCallback(async (roomId: string, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const players = data.players.map(p => ({ ...p }));
+            const idx = players.findIndex(p => p.id === playerId);
+            if (idx < 0) return;
+            const now = Date.now();
+            const last = players[idx].perkUsedAt || 0;
+            const cd = 60_000;
+            if (now - last < cd) return;
+            players[idx].perkUsedAt = now;
+            // Aplica buff em TODOS (qualquer um da party que acertar próximo ganha 2x)
+            players.forEach(p => { p.bardBuffActive = true; });
+            tx.update(ref, { players, updatedAt: Timestamp.now() });
+        }).catch(err => console.error('[PolyQuest] perkBard:', err));
+    }, []);
+
+    /** Guerreiro: causa 25 de dano direto ao boss */
+    const usePerkWarrior = useCallback(async (roomId: string, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.boss || data.phase !== 'boss') return;
+            const players = data.players.map(p => ({ ...p }));
+            const idx = players.findIndex(p => p.id === playerId);
+            if (idx < 0) return;
+            const now = Date.now();
+            const last = players[idx].perkUsedAt || 0;
+            const cd = 35_000;
+            if (now - last < cd) return;
+            players[idx].perkUsedAt = now;
+            const boss = { ...data.boss };
+            boss.hp = Math.max(0, boss.hp - RULES.WARRIOR_DIRECT_DAMAGE);
+            boss.lastDamageAt = now;
+            if (boss.hp <= 0) boss.state = 'dead';
+            else if (boss.hp < boss.maxHp * 0.4) boss.state = 'wounded';
+            const update: any = { players, boss, updatedAt: Timestamp.now() };
+            if (boss.hp <= 0) {
+                update.phase = 'victory';
+                update.finishedAt = Timestamp.now();
+                // Recompensa por matar o boss
+                players.forEach(p => { p.score += RULES.BOSS_VICTORY_POINTS; });
+                update.players = players;
+            }
+            tx.update(ref, update);
+        }).catch(err => console.error('[PolyQuest] perkWarrior:', err));
+    }, []);
+
+    // ─── Intruder ─────────────────────────────────────────────────
+
+    /** Inicia o desafio do intruso (chamado pelo QuestPhase quando bate 50% e ainda não disparou) */
+    const startIntruder = useCallback(async (
+        roomId: string,
+        fakeWord: string,
+        insertedAt: number,
+    ) => {
         try {
-            const roomRef = doc(db, 'polyquestRooms', roomId);
-            const roomSnap = await getDoc(roomRef);
-
-            if (!roomSnap.exists()) return;
-
-            const roomData = roomSnap.data() as PolyQuestRoom;
-            const players = [...roomData.players];
-            const playerIndex = players.findIndex(p => p.id === playerId);
-
-            if (playerIndex >= 0 && players[playerIndex].isFatigued) {
-                players[playerIndex].isFatigued = false;
-                players[playerIndex].fatigueEndsAt = undefined;
-                players[playerIndex].consecutiveCorrect = 0; // Resetar contador ao sair da fadiga? Regra diz "evitar domínio", então sim.
-
-                await updateDoc(roomRef, {
-                    players
-                });
-            }
-        } catch (error) {
-            console.error('Error clearing fatigue:', error);
+            await updateDoc(doc(db, 'polyquestRooms', roomId), {
+                phase: 'intruder' as GamePhase,
+                intruderTriggered: true,
+                intruder: {
+                    fakeWord,
+                    insertedAtIndex: insertedAt,
+                    startedAt: Date.now(),
+                    timeoutMs: RULES.INTRUDER_TIMEOUT_MS,
+                    resolved: false,
+                },
+                updatedAt: Timestamp.now(),
+            });
+        } catch (e) {
+            console.error('[PolyQuest] startIntruder:', e);
         }
-    };
+    }, []);
+
+    const resolveIntruder = useCallback(async (roomId: string, playerId: string, selectedWord: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.intruder || data.intruder.resolved) return;
+            const players = data.players.map(p => ({ ...p }));
+            const idx = players.findIndex(p => p.id === playerId);
+            const success = selectedWord.toLowerCase() === data.intruder.fakeWord.toLowerCase();
+            let partyHP = data.partyHP;
+            if (success && idx >= 0) {
+                players[idx].score += RULES.INTRUDER_POINTS;
+                partyHP = Math.min(data.maxPartyHP, partyHP + RULES.INTRUDER_HEAL);
+            } else if (!success) {
+                partyHP = Math.max(0, partyHP - RULES.INTRUDER_FAIL_DAMAGE);
+            }
+            const intruder = { ...data.intruder, resolved: true, resolvedBy: playerId, success };
+            const update: any = {
+                intruder,
+                players,
+                partyHP,
+                phase: 'quest' as GamePhase,
+                updatedAt: Timestamp.now(),
+            };
+            if (partyHP <= 0) {
+                update.phase = 'defeat';
+                update.finishedAt = Timestamp.now();
+            }
+            tx.update(ref, update);
+        }).catch(e => console.error('[PolyQuest] resolveIntruder:', e));
+    }, []);
+
+    /** Timeout do intruso (não respondido em N segundos) — penaliza levemente e volta */
+    const timeoutIntruder = useCallback(async (roomId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.intruder || data.intruder.resolved) return;
+            const partyHP = Math.max(0, data.partyHP - RULES.INTRUDER_FAIL_DAMAGE);
+            const intruder = { ...data.intruder, resolved: true, success: false };
+            const update: any = {
+                intruder,
+                partyHP,
+                phase: 'quest' as GamePhase,
+                updatedAt: Timestamp.now(),
+            };
+            if (partyHP <= 0) {
+                update.phase = 'defeat';
+                update.finishedAt = Timestamp.now();
+            }
+            tx.update(ref, update);
+        }).catch(e => console.error('[PolyQuest] timeoutIntruder:', e));
+    }, []);
+
+    // ─── Boss ─────────────────────────────────────────────────────
+
+    const startBoss = useCallback(async (
+        roomId: string,
+        targetSentence: string,
+        blocks: string[],
+        bossDef?: BossDef,
+    ) => {
+        try {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await getDoc(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (data.boss) return; // Já iniciado
+            const def = bossDef || pickRandomBoss();
+            const bossHP = calculateBossHP(data.players.length);
+            const boss: BossState = {
+                def,
+                hp: bossHP,
+                maxHp: bossHP,
+                targetSentence,
+                blocks,
+                placedBlocks: [],
+                nextAttackAt: Date.now() + RULES.BOSS_ATTACK_INTERVAL_MS,
+                attackPower: RULES.BOSS_ATTACK_DAMAGE,
+                attackIntervalMs: RULES.BOSS_ATTACK_INTERVAL_MS,
+                attemptCount: 0,
+                state: 'idle',
+            };
+            await updateDoc(ref, {
+                boss,
+                phase: 'boss' as GamePhase,
+                updatedAt: Timestamp.now(),
+            });
+        } catch (e) {
+            console.error('[PolyQuest] startBoss:', e);
+        }
+    }, []);
+
+    const addBossBlock = useCallback(async (roomId: string, text: string, placedBy: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.boss) return;
+            const placed = [...data.boss.placedBlocks, {
+                id: crypto.randomUUID(),
+                text,
+                placedBy,
+                placedAt: Date.now(),
+            }];
+            tx.update(ref, { 'boss.placedBlocks': placed, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] addBossBlock:', e));
+    }, []);
+
+    const removeBossBlock = useCallback(async (roomId: string, blockId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.boss) return;
+            const placed = data.boss.placedBlocks.filter(b => b.id !== blockId);
+            tx.update(ref, { 'boss.placedBlocks': placed, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] removeBossBlock:', e));
+    }, []);
+
+    const reorderBossBlocks = useCallback(async (roomId: string, newOrder: any[]) => {
+        try {
+            await updateDoc(doc(db, 'polyquestRooms', roomId), {
+                'boss.placedBlocks': newOrder,
+                updatedAt: Timestamp.now(),
+            });
+        } catch (e) {
+            console.error('[PolyQuest] reorderBossBlocks:', e);
+        }
+    }, []);
+
+    /** Tentativa de atacar o boss (verificar frase) */
+    const attackBoss = useCallback(async (roomId: string): Promise<{ damage: number; killed: boolean } | null> => {
+        try {
+            return await runTransaction(db, async (tx) => {
+                const ref = doc(db, 'polyquestRooms', roomId);
+                const snap = await tx.get(ref);
+                if (!snap.exists()) return null;
+                const data = snap.data() as PolyQuestRoom;
+                if (!data.boss) return null;
+                const boss = { ...data.boss };
+
+                // Normaliza pra comparar (strip pontuação + lowercase)
+                const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+                const constructed = norm(boss.placedBlocks.map(b => b.text).join(''));
+                const target = norm(boss.targetSentence);
+
+                boss.attemptCount += 1;
+                let damage = 0;
+                let killed = false;
+
+                if (constructed === target) {
+                    // Acerto perfeito = mata o boss
+                    damage = boss.hp;
+                    boss.hp = 0;
+                    boss.state = 'dead';
+                    boss.lastDamageAt = Date.now();
+                    killed = true;
+                } else {
+                    // Calcula similaridade simples por tokens corretos na ordem
+                    let correctTokens = 0;
+                    const targetTokens = target.split('');
+                    const builtTokens = constructed.split('');
+                    const len = Math.min(targetTokens.length, builtTokens.length);
+                    for (let i = 0; i < len; i++) {
+                        if (targetTokens[i] === builtTokens[i]) correctTokens++;
+                    }
+                    const similarity = targetTokens.length > 0 ? correctTokens / targetTokens.length : 0;
+                    // Erro: causa pequeno dano ao boss proporcional + pega dano de volta
+                    damage = Math.round(15 * similarity);
+                    boss.hp = Math.max(0, boss.hp - damage);
+                    boss.lastDamageAt = Date.now();
+                    if (boss.hp <= 0) { boss.state = 'dead'; killed = true; }
+                    else if (boss.hp < boss.maxHp * 0.4) boss.state = 'wounded';
+                }
+
+                const update: any = { boss, updatedAt: Timestamp.now() };
+                let players = data.players;
+                let partyHP = data.partyHP;
+                let phase: GamePhase = data.phase;
+
+                if (killed) {
+                    players = players.map(p => ({ ...p, score: p.score + RULES.BOSS_VICTORY_POINTS }));
+                    update.players = players;
+                    phase = 'victory';
+                    update.phase = phase;
+                    update.finishedAt = Timestamp.now();
+                } else {
+                    partyHP = Math.max(0, partyHP - RULES.BOSS_FAIL_DAMAGE);
+                    update.partyHP = partyHP;
+                    if (partyHP <= 0) {
+                        phase = 'defeat';
+                        update.phase = phase;
+                        update.finishedAt = Timestamp.now();
+                    }
+                }
+
+                tx.update(ref, update);
+                return { damage, killed };
+            });
+        } catch (e) {
+            console.error('[PolyQuest] attackBoss:', e);
+            return null;
+        }
+    }, []);
+
+    /** Boss ataca a party (chamado pelo cliente "host" via timer) */
+    const bossAttacks = useCallback(async (roomId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (!data.boss || data.boss.hp <= 0) return;
+            if (data.phase !== 'boss') return;
+            const now = Date.now();
+            if (now < data.boss.nextAttackAt) return;
+
+            const partyHP = Math.max(0, data.partyHP - data.boss.attackPower);
+            const boss = { ...data.boss, nextAttackAt: now + data.boss.attackIntervalMs };
+            const update: any = { boss, partyHP, updatedAt: Timestamp.now() };
+            if (partyHP <= 0) {
+                update.phase = 'defeat';
+                update.finishedAt = Timestamp.now();
+            }
+            tx.update(ref, update);
+        }).catch(e => console.error('[PolyQuest] bossAttacks:', e));
+    }, []);
+
+    // ─── Persistência de histórico ────────────────────────────────
+
+    const savePlayerHistory = useCallback(async (roomId: string, uid: string, result: any) => {
+        try {
+            const historyRef = collection(db, 'users', uid, 'gameHistory');
+            await addDoc(historyRef, {
+                roomId,
+                ...result,
+                playedAt: serverTimestamp(),
+            });
+            await setDoc(doc(db, 'users', uid), {
+                totalScore: increment(result.score || 0),
+                gamesPlayed: increment(1),
+                lastPlayedAt: serverTimestamp(),
+            }, { merge: true });
+        } catch (e) {
+            console.error('[PolyQuest] savePlayerHistory:', e);
+        }
+    }, []);
 
     return {
         rooms,
@@ -771,26 +877,29 @@ export const usePolyQuestRoom = (userId?: string) => {
         leaveRoom,
         deleteRoom,
         toggleReady,
+        setPlayerClass,
         updateConfig,
         startGame,
-        updatePhase,
-        updateConfidence,
         toggleWordSelection,
         finishExploration,
         setEnigmas,
-        submitAnswer,
-        clearFatigue,
-        triggerIntruder,
-        resolveIntruder,
-        startBossPhase,
-        submitBossDamage,
-        addBossBlock,
-        removeBossBlock,
         lockEnigma,
         unlockEnigma,
+        submitAnswer,
         requestHelp,
         provideHelp,
+        usePerkMage,
+        usePerkBard,
+        usePerkWarrior,
+        startIntruder,
+        resolveIntruder,
+        timeoutIntruder,
+        startBoss,
+        addBossBlock,
+        removeBossBlock,
+        reorderBossBlocks,
+        attackBoss,
+        bossAttacks,
         savePlayerHistory,
-        reorderBossBlocks
     };
 };

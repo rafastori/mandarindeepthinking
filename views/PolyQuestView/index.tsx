@@ -14,8 +14,12 @@ import { QuestPhase } from './components/QuestPhase';
 import { IntruderChallenge } from './components/IntruderChallenge';
 import { BossPhase } from './components/BossPhase';
 import { VictoryPhase } from './components/VictoryPhase';
+import { DefeatPhase } from './components/DefeatPhase';
+import TutorialOverlay from './components/TutorialOverlay';
+import { useTutorial } from './hooks/useTutorial';
 import { usePuterSpeech } from '../../hooks/usePuterSpeech';
 import { processTextWithGemini } from '../../services/gemini';
+import { THEME } from './theme';
 
 interface PolyQuestViewProps {
     onBack?: () => void;
@@ -29,422 +33,245 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
     const [savingToReading, setSavingToReading] = useState(false);
     const { speak } = usePuterSpeech();
 
-    const {
-        rooms,
-        activeRoom,
-        loading,
-        setActiveRoom,
-        createRoom,
-        joinRoom,
-        leaveRoom,
-        deleteRoom,
-        toggleReady,
-        updateConfig,
-        startGame,
-        updateConfidence,
-        toggleWordSelection,
-        finishExploration,
-        setEnigmas,
-        submitAnswer,
-        triggerIntruder,
-        resolveIntruder,
-        startBossPhase,
-        submitBossDamage,
-        addBossBlock,
-        removeBossBlock,
-        lockEnigma,
-        unlockEnigma,
-        requestHelp,
-        provideHelp,
-        reorderBossBlocks,
-        savePlayerHistory
-    } = usePolyQuestRoom(user?.uid);
-
+    const room = usePolyQuestRoom(user?.uid);
     const { addItem } = useStudyItems(user?.uid);
     const { savedIds, updateFavorites, totalScore } = useUserProfile(user?.uid);
+    const tutorial = useTutorial();
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
+        const unsubscribe = onAuthStateChanged(auth, setUser);
         return () => unsubscribe();
     }, []);
 
-    // Trava de Navegação (Back Button / Refresh)
+    // Auto-abre o tutorial na PRIMEIRA vez que o usuário logado entra na tela do PolyQuest
+    // (sem sala ativa ainda — para não interromper uma partida em andamento).
     useEffect(() => {
-        if (!activeRoom) return;
+        if (user && !room.activeRoom && !room.loading) {
+            tutorial.autoOpenIfFirstTime();
+        }
+    }, [user, room.activeRoom, room.loading]);
 
-        // 1. Bloqueia botão voltar do navegador/celular
+    // Bloqueia voltar/refresh durante partida
+    useEffect(() => {
+        if (!room.activeRoom) return;
         const blockBack = () => {
             history.pushState(null, '', location.href);
             setShowExitConfirm(true);
         };
-
-        // Adiciona estado inicial para podermos "voltar" para o mesmo lugar
         history.pushState(null, '', location.href);
         window.addEventListener('popstate', blockBack);
-
-        // 2. Bloqueia fechar aba/recarregar
-        const blockReload = (e: BeforeUnloadEvent) => {
-            e.preventDefault();
-            e.returnValue = '';
-        };
+        const blockReload = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ''; };
         window.addEventListener('beforeunload', blockReload);
-
         return () => {
             window.removeEventListener('popstate', blockBack);
             window.removeEventListener('beforeunload', blockReload);
         };
-    }, [activeRoom]);
+    }, [room.activeRoom]);
 
     if (!user) {
         return (
-            <div className="flex flex-col items-center justify-center h-full p-6 text-center">
-                <Icon name="lock" size={48} className="text-slate-300 mb-4" />
-                <h2 className="text-xl font-bold text-slate-700 mb-2">Login Necessário</h2>
-                <p className="text-slate-500">Faça login para jogar PolyQuest</p>
+            <div className={`flex flex-col items-center justify-center h-full p-6 text-center ${THEME.bg} text-white -m-6`}>
+                <Icon name="lock" size={48} className="text-white/30 mb-4" />
+                <h2 className="text-xl font-bold mb-2">Login Necessário</h2>
+                <p className="text-white/60">Faça login para entrar nas masmorras.</p>
             </div>
         );
     }
 
     const handleCreateRoom = async (
-        roomName: string,
-        sourceLang: string,
-        targetLang: string,
-        text: string,
-        tokens: string[],
-        difficulty: string,
-        context?: string,
-        selectedFolderIds?: string[]
+        roomName: string, sourceLang: string, targetLang: string, text: string,
+        tokens: string[], difficulty: string, context?: string, selectedFolderIds?: string[],
     ) => {
         const player = createPlayerFromUser(user, totalScore);
-        const roomId = await createRoom(
-            roomName,
-            {
-                sourceLang,
-                targetLang,
-                originalText: text,
-                tokens,
-                minWords: 40,
-                difficulty,
-                context,
-                selectedFolderIds,
-            },
-            player
-        );
-
-        if (roomId) {
-            // Buscar a sala criada e definir como ativa
-            const room = rooms.find(r => r.id === roomId);
-            if (room) {
-                setActiveRoom(room);
-            }
-        }
+        await room.createRoom(roomName, {
+            sourceLang, targetLang, originalText: text, tokens, minWords: 40, difficulty, context, selectedFolderIds,
+        }, player);
+        // setActiveRoomId já é setado dentro do createRoom — sem race
     };
 
     const handleJoinRoom = async (roomId: string) => {
         const player = createPlayerFromUser(user, totalScore);
-        const success = await joinRoom(roomId, player);
-
-        if (success) {
-            const room = rooms.find(r => r.id === roomId);
-            if (room) {
-                setActiveRoom(room);
-            }
-        }
+        await room.joinRoom(roomId, player);
+        // idem — sem race
     };
 
-    const handleLeaveRoom = async () => {
-        if (activeRoom) {
-            setShowExitConfirm(true);
-        }
-    };
-
+    const handleLeaveRoom = () => { setShowExitConfirm(true); };
     const confirmLeave = async () => {
-        if (activeRoom) {
-            await leaveRoom(activeRoom.id, user.uid);
-            setShowExitConfirm(false);
-        }
+        if (room.activeRoom) await room.leaveRoom(room.activeRoom.id, user.uid);
+        setShowExitConfirm(false);
     };
-
     const handleDeleteRoom = async () => {
-        if (activeRoom) {
-            await deleteRoom(activeRoom.id);
-            setShowExitConfirm(false); // Caso estivesse aberto
-        }
-    };
-
-    const handleToggleReady = async () => {
-        if (!activeRoom) return;
-        const currentPlayer = activeRoom.players.find(p => p.id === user.uid);
-        if (currentPlayer) {
-            await toggleReady(activeRoom.id, user.uid, !currentPlayer.isReady);
-        }
-    };
-
-    const handleUpdateConfig = async (sourceLang: string, targetLang: string, text: string, difficulty: string, context?: string, selectedFolderIds?: string[]) => {
-        if (!activeRoom) return;
-        await updateConfig(activeRoom.id, {
-            sourceLang,
-            targetLang,
-            originalText: text,
-            difficulty,
-            context,
-            selectedFolderIds
-        });
-    };
-
-    const handleTriggerIntruder = async (word: string) => {
-        if (!activeRoom) return;
-        await triggerIntruder(activeRoom.id, word);
+        if (room.activeRoom) await room.deleteRoom(room.activeRoom.id);
+        setShowExitConfirm(false);
     };
 
     const handleSaveItems = async (itemsToSave: { word: string; translation: string; context: string }[]) => {
-        if (!activeRoom || !user) return;
-
+        if (!room.activeRoom || !user) return;
         const newIds: string[] = [];
-
-        for (const item of itemsToSave) {
-            // FIX: Ensure tokens and keywords are populated so ReadingView/Cards don't crash or hide it
+        for (const it of itemsToSave) {
             const newId = await addItem({
-                chinese: item.word,
-                translation: item.translation,
-                pinyin: '', // Fallback empty
-                tokens: [item.word], // Must be an array with the word itself
+                chinese: it.word,
+                translation: it.translation,
+                pinyin: '',
+                tokens: [it.word],
                 keywords: [{
-                    id: Date.now().toString() + Math.random().toString().slice(2), // Temp ID
-                    word: item.word,
+                    id: Date.now().toString() + Math.random().toString().slice(2),
+                    word: it.word,
                     pinyin: '',
-                    meaning: item.translation,
-                    language: activeRoom.config.sourceLang as any // Idioma do texto original
+                    meaning: it.translation,
+                    language: room.activeRoom.config.sourceLang as any,
                 }],
-                language: activeRoom.config.sourceLang as any, // Idioma do texto original para TTS
+                language: room.activeRoom.config.sourceLang as any,
                 type: 'word',
-                originalSentence: item.context // Usa o contexto real do texto original
+                originalSentence: it.context,
             });
-
             if (newId) newIds.push(newId);
         }
-
         if (newIds.length > 0) {
             await updateFavorites([...savedIds, ...newIds]);
-            // alert(`Salvo ${newIds.length} palavras nos Favoritos!`); // Optional feedback
         }
     };
 
-
     const handleSaveHistory = async (result: any) => {
-        if (!activeRoom || !user) return;
-        await savePlayerHistory(activeRoom.id, user.uid, result);
+        if (!room.activeRoom || !user) return;
+        await room.savePlayerHistory(room.activeRoom.id, user.uid, result);
     };
 
-    const handleStartGame = async () => {
-        if (!activeRoom) return;
-        await startGame(activeRoom.id);
-    };
+    const a = room.activeRoom;
 
     return (
-        <div className="flex flex-col h-full bg-gradient-to-br from-emerald-50 to-slate-50">
-            {/* Header */}
-            <div className="bg-white p-4 shadow-sm border-b">
-                <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
-                        <Icon name="sparkles" size={24} className="text-white" />
+        <div className={`flex flex-col h-full ${THEME.bg}`}>
+            {/* Header global (compacto) */}
+            {a && (
+                <div className="bg-black/40 backdrop-blur p-3 border-b border-white/10 flex items-center gap-3 z-30">
+                    <div className="w-8 h-8 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center text-base">
+                        ⚔️
                     </div>
-                    <div className="flex-1">
-                        <h1 className="text-xl font-bold text-slate-800">PolyQuest</h1>
-                        <p className="text-xs text-slate-500">
-                            {activeRoom ? `Sala: ${activeRoom.name}` : 'Aventura de Aprendizado Multiplayer'}
-                        </p>
+                    <div className="flex-1 min-w-0">
+                        <h1 className="text-sm font-black text-amber-300 truncate">{a.name}</h1>
+                        <p className="text-[10px] text-white/50 uppercase tracking-wider font-bold">{phaseLabel(a.phase)}</p>
                     </div>
 
-                    {/* Botão Texto Original - visível durante quest/exploration */}
-                    {activeRoom && (activeRoom.phase === 'quest' || activeRoom.phase === 'exploration') && (
+                    {(a.phase === 'quest' || a.phase === 'exploration' || a.phase === 'boss') && (
                         <button
                             onClick={() => setShowOriginalText(true)}
-                            className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-bold shadow-md hover:shadow-lg transition-all active:scale-95"
-                            title="Ver texto original"
+                            className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg font-bold text-xs flex items-center gap-1.5"
                         >
-                            <Icon name="book-open" size={20} />
-                            <span className="hidden sm:inline text-sm">Texto</span>
+                            <Icon name="book-open" size={14} />
+                            <span className="hidden sm:inline">Texto</span>
                         </button>
                     )}
 
-                    {activeRoom && (
-                        <button
-                            onClick={handleLeaveRoom}
-                            className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg font-semibold transition-colors text-sm"
-                        >
-                            ← Voltar
-                        </button>
-                    )}
+                    <button
+                        onClick={tutorial.openTutorial}
+                        className="p-1.5 bg-white/10 hover:bg-amber-400/20 hover:text-amber-300 text-white rounded-lg"
+                        title="Ver tutorial"
+                    >
+                        <Icon name="help-circle" size={18} />
+                    </button>
+
+                    <button
+                        onClick={handleLeaveRoom}
+                        className="px-3 py-1.5 text-rose-300 hover:text-rose-200 hover:bg-rose-500/15 rounded-lg font-bold text-xs"
+                    >
+                        ← Sair
+                    </button>
                 </div>
-            </div>
+            )}
 
-            {/* Modal Texto Original */}
-            {showOriginalText && activeRoom && (
-                <div className="fixed inset-0 bg-black/70 z-50 flex flex-col animate-in fade-in duration-200">
-                    <div className="bg-white p-4 border-b shadow-sm flex items-center justify-center relative">
-                        <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-                            <Icon name="book-open" size={24} className="text-emerald-600" />
-                            Texto Original
+            {/* Modal texto original */}
+            {showOriginalText && a && (
+                <div className="fixed inset-0 bg-black/85 z-50 flex flex-col animate-in fade-in duration-200">
+                    <div className="bg-black/60 backdrop-blur p-4 border-b border-white/10 flex items-center justify-between">
+                        <h3 className="text-base font-bold text-amber-300 flex items-center gap-2">
+                            <Icon name="book-open" size={20} /> Texto Original
                         </h3>
-                        {/* TTS Button */}
-                        <button
-                            onClick={() => speak(activeRoom.config.originalText, (activeRoom.config.sourceLang || 'zh') as 'zh' | 'de' | 'pt' | 'en')}
-                            className="absolute left-4 flex items-center gap-2 px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 rounded-lg font-semibold transition-colors"
-                            title="Ouvir texto"
-                        >
-                            <Icon name="volume-2" size={20} />
-                            <span>Ouvir</span>
-                        </button>
-                        <button
-                            onClick={() => setShowOriginalText(false)}
-                            className="absolute right-4 flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-semibold transition-colors"
-                        >
-                            <Icon name="x" size={20} />
-                            <span>Fechar</span>
-                        </button>
-                    </div>
-                    <div className="flex-1 overflow-y-auto p-6 bg-slate-50">
-                        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
-                            <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-line">
-                                {activeRoom.config.originalText}
-                            </p>
+                        <div className="flex gap-2">
+                            <button
+                                onClick={() => speak(a.config.originalText, (a.config.sourceLang || 'zh') as any)}
+                                className="px-3 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg font-bold text-sm flex items-center gap-2"
+                            >
+                                <Icon name="volume-2" size={16} /> Ouvir
+                            </button>
+                            <button
+                                onClick={() => setShowOriginalText(false)}
+                                className="px-3 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg font-bold text-sm flex items-center gap-2"
+                            >
+                                <Icon name="x" size={16} /> Fechar
+                            </button>
                         </div>
-                        {/* Save to Reading Button */}
+                    </div>
+                    <div className={`flex-1 overflow-y-auto p-6 ${THEME.bg}`}>
+                        <div className="max-w-3xl mx-auto bg-black/30 rounded-2xl p-6 border border-white/10">
+                            <p className="text-base leading-relaxed text-white/85 whitespace-pre-line">{a.config.originalText}</p>
+                        </div>
                         <div className="max-w-3xl mx-auto mt-4">
                             <button
                                 onClick={async () => {
-                                    if (!activeRoom.config.originalText) return;
+                                    if (!a.config.originalText) return;
                                     setSavingToReading(true);
                                     try {
-                                        const studyItems = await processTextWithGemini(
-                                            activeRoom.config.originalText,
-                                            'direct',
-                                            activeRoom.config.sourceLang as any
-                                        );
-                                        for (const item of studyItems) {
-                                            await addItem(item);
-                                        }
-                                        alert(`✅ Texto salvo na aba de Leitura! (${studyItems.length} sentenças)`);
+                                        const studyItems = await processTextWithGemini(a.config.originalText, 'direct', a.config.sourceLang as any);
+                                        for (const it of studyItems) await addItem(it);
+                                        alert(`✅ Texto salvo na Leitura! (${studyItems.length} sentenças)`);
                                         setShowOriginalText(false);
-                                    } catch (error) {
-                                        console.error('Error saving to reading:', error);
-                                        alert('❌ Erro ao salvar. Tente novamente.');
+                                    } catch (e) {
+                                        alert('Erro ao salvar.');
                                     } finally {
                                         setSavingToReading(false);
                                     }
                                 }}
-                                disabled={savingToReading || !activeRoom.config.originalText}
-                                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 text-white rounded-xl font-bold transition-colors shadow-lg"
+                                disabled={savingToReading}
+                                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-amber-400 hover:bg-amber-500 disabled:opacity-50 text-slate-900 rounded-xl font-bold"
                             >
-                                {savingToReading ? (
-                                    <>
-                                        <Icon name="loader" size={20} className="animate-spin" />
-                                        <span>Processando com IA...</span>
-                                    </>
-                                ) : (
-                                    <>
-                                        <Icon name="download" size={20} />
-                                        <span>Salvar na Aba de Leitura</span>
-                                    </>
-                                )}
+                                {savingToReading ? <Icon name="loader" size={18} className="animate-spin" /> : <Icon name="download" size={18} />}
+                                {savingToReading ? 'Processando…' : 'Salvar na Leitura'}
                             </button>
                         </div>
                     </div>
                 </div>
             )}
 
-            {/* Main Content */}
+            {/* Conteúdo principal */}
             <div className="flex-1 overflow-y-auto p-6">
-                <div className="max-w-4xl mx-auto">
-                    {loading ? (
-                        <div className="flex items-center justify-center h-64">
-                            <div className="text-center">
-                                <Icon name="loader" size={48} className="text-emerald-600 animate-spin mx-auto mb-4" />
-                                <p className="text-slate-600">Carregando...</p>
-                            </div>
+                <div className="max-w-5xl mx-auto">
+                    {room.loading ? (
+                        <div className="flex items-center justify-center h-64 text-white">
+                            <Icon name="loader" size={48} className="text-amber-400 animate-spin mr-3" />
+                            Carregando…
                         </div>
-                    ) : activeRoom ? (
-                        activeRoom.phase === 'lobby' ? (
-                            <PolyQuestLobby
-                                room={activeRoom}
-                                isHost={activeRoom.hostId === user.uid}
-                                currentUserId={user.uid}
-                                onToggleReady={handleToggleReady}
-                                onUpdateConfig={handleUpdateConfig}
-                                onStartGame={handleStartGame}
-                                onLeaveRoom={handleLeaveRoom}
-                                onDeleteRoom={handleDeleteRoom}
-                            />
-                        ) : activeRoom.phase === 'exploration' ? (
-                            <ExplorationPhase
-                                room={activeRoom}
-                                currentUserId={user.uid}
-                                onToggleWord={(word) => toggleWordSelection(activeRoom.id, word)}
-                                onFinishExploration={() => finishExploration(activeRoom.id)}
-                                onUpdateConfig={(cfg) => updateConfig(activeRoom.id, cfg)}
-                            />
-                        ) : activeRoom.phase === 'quest' ? (
-                            <QuestPhase
-                                room={activeRoom}
-                                currentUserId={user.uid}
-                                onSetEnigmas={(enigmas) => setEnigmas(activeRoom.id, enigmas)}
-                                onAnswer={(idx, ans, correct) => submitAnswer(activeRoom.id, user.uid, idx, ans, correct)}
-                                onUpdateConfidence={(delta) => updateConfidence(activeRoom.id, delta)}
-                                onTriggerIntruder={(word) => triggerIntruder(activeRoom.id, word)}
-                                onLockEnigma={(idx) => lockEnigma(activeRoom.id, idx, user.uid)}
-                                onUnlockEnigma={(idx) => unlockEnigma(activeRoom.id, idx, user.uid)}
-                                onRequestHelp={(idx) => requestHelp(activeRoom.id, idx, user.uid)}
-                                onProvideHelp={(idx) => provideHelp(activeRoom.id, idx, user.uid)}
-                                onShowOriginalText={() => setShowOriginalText(true)}
-                            />
-                        ) : activeRoom.phase === 'intruder' ? (
-                            <IntruderChallenge
-                                room={activeRoom}
-                                currentUserId={user.uid}
-                                onResolveIntruder={(word) => resolveIntruder(activeRoom.id, user.uid, word)}
-                            />
-                        ) : activeRoom.phase === 'boss' ? (
-                            <BossPhase
-                                room={activeRoom}
-                                currentUserId={user.uid}
-                                onStartBoss={(bossData) => startBossPhase(activeRoom.id, bossData)}
-                                onDamage={(dmg, fatal) => submitBossDamage(activeRoom.id, dmg, fatal)}
-                                onAddBlock={(text) => addBossBlock(activeRoom.id, text, user.uid)}
-                                onRemoveBlock={(blockId) => removeBossBlock(activeRoom.id, blockId)}
-                                onReorderBlocks={(order) => reorderBossBlocks(activeRoom.id, order)}
-                            />
-                        ) : activeRoom.phase === 'finished' ? (
-                            <VictoryPhase
-                                room={activeRoom}
-                                currentUserId={user.uid}
-                                onResetGame={handleLeaveRoom}
-                                onSaveItems={handleSaveItems}
-                                onSaveHistory={handleSaveHistory}
-                            />
-                        ) : (
-                            <div className="text-center p-10">
-                                <h3 className="text-xl font-bold mb-2">Fase em desenvolvimento: {activeRoom.phase}</h3>
-                                <p>Em breve...</p>
-                            </div>
-                        )
+                    ) : a ? (
+                        <PhaseRouter
+                            room={a}
+                            user={user}
+                            api={room}
+                            onShowOriginalText={() => setShowOriginalText(true)}
+                            onSaveItems={handleSaveItems}
+                            onSaveHistory={handleSaveHistory}
+                            onResetGame={handleLeaveRoom}
+                        />
                     ) : (
-                        // Fora de sala - mostrar lista de salas
                         <>
-                            {/* Botão Voltar para página de jogos */}
-                            {onBack && (
-                                <div className="mb-4">
+                            <div className="mb-3 flex items-center justify-between gap-2">
+                                {onBack ? (
                                     <button
                                         onClick={onBack}
-                                        className="flex items-center gap-2 px-4 py-2 text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-xl transition-colors font-medium"
+                                        className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white hover:bg-white/10 rounded-xl text-sm font-bold"
                                     >
-                                        <Icon name="arrow-left" size={18} />
-                                        Voltar aos Jogos
+                                        <Icon name="arrow-left" size={16} /> Voltar aos Jogos
                                     </button>
-                                </div>
-                            )}
+                                ) : <div />}
+                                <button
+                                    onClick={tutorial.openTutorial}
+                                    className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-amber-400/20 hover:text-amber-300 text-white rounded-xl text-sm font-bold"
+                                    title="Como jogar"
+                                >
+                                    <Icon name="help-circle" size={16} />
+                                    Como jogar
+                                </button>
+                            </div>
                             <RoomList
-                                rooms={rooms}
+                                rooms={room.rooms}
                                 onJoinRoom={handleJoinRoom}
                                 onCreateRoom={() => setShowCreateModal(true)}
                             />
@@ -453,7 +280,6 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
                 </div>
             </div>
 
-            {/* Create Room Modal */}
             {showCreateModal && (
                 <CreateRoomModal
                     onClose={() => setShowCreateModal(false)}
@@ -462,30 +288,38 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
                 />
             )}
 
-            {/* EXIT CONFIRMATION MODAL */}
-            {showExitConfirm && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm animate-in fade-in duration-200">
-                    <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl animate-pop">
-                        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <Icon name="log-out" size={32} className="text-red-600" />
+            <TutorialOverlay open={tutorial.open} onClose={tutorial.closeTutorial} />
+
+            {showExitConfirm && a && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+                    <div className={`${THEME.bgPanelSolid} rounded-2xl p-6 w-full max-w-sm border border-white/15 shadow-2xl`}>
+                        <div className="w-16 h-16 bg-rose-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <Icon name="log-out" size={28} className="text-rose-300" />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-800 text-center mb-2">Deseja sair do jogo?</h3>
-                        <p className="text-slate-600 text-center mb-8">
-                            Se você sair agora, seu progresso nesta partida será perdido. Os outros jogadores continuarão jogando.
+                        <h3 className="text-xl font-bold text-white text-center mb-2">Sair da Quest?</h3>
+                        <p className="text-white/60 text-sm text-center mb-6">
+                            Seu progresso nesta partida será perdido. Os outros jogadores continuam.
                         </p>
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-2">
                             <button
                                 onClick={confirmLeave}
-                                className="w-full py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 shadow-md transition-all active:scale-95 flex items-center justify-center gap-2"
+                                className="w-full py-3 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl flex items-center justify-center gap-2"
                             >
-                                <Icon name="log-out" size={20} />
-                                Sim, desejo sair
+                                <Icon name="log-out" size={18} /> Sair
                             </button>
+                            {a.hostId === user.uid && (
+                                <button
+                                    onClick={handleDeleteRoom}
+                                    className="w-full py-3 bg-rose-700/40 hover:bg-rose-700/60 text-rose-200 font-bold rounded-xl"
+                                >
+                                    Deletar sala (host)
+                                </button>
+                            )}
                             <button
                                 onClick={() => setShowExitConfirm(false)}
-                                className="w-full py-4 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-all active:scale-95"
+                                className="w-full py-3 bg-white/5 text-white/80 font-bold rounded-xl"
                             >
-                                Continuar Jogando
+                                Continuar
                             </button>
                         </div>
                     </div>
@@ -493,6 +327,132 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
             )}
         </div>
     );
+};
+
+// ─── Phase router (separado pra clareza) ───────────
+
+interface PhaseRouterProps {
+    room: any;
+    user: User;
+    api: ReturnType<typeof usePolyQuestRoom>;
+    onShowOriginalText: () => void;
+    onSaveItems: (items: { word: string; translation: string; context: string }[]) => Promise<void>;
+    onSaveHistory: (result: any) => Promise<void>;
+    onResetGame: () => void;
+}
+
+const PhaseRouter: React.FC<PhaseRouterProps> = ({ room, user, api, onShowOriginalText, onSaveItems, onSaveHistory, onResetGame }) => {
+    const isHost = room.hostId === user.uid;
+
+    if (room.phase === 'lobby') {
+        return (
+            <PolyQuestLobby
+                room={room}
+                isHost={isHost}
+                currentUserId={user.uid}
+                onToggleReady={async () => {
+                    const cur = room.players.find((p: any) => p.id === user.uid);
+                    if (cur) await api.toggleReady(room.id, user.uid, !cur.isReady);
+                }}
+                onSelectClass={async (cls) => api.setPlayerClass(room.id, user.uid, cls)}
+                onUpdateConfig={(srcLang, tgtLang, text, diff, ctx, folderIds) =>
+                    api.updateConfig(room.id, { sourceLang: srcLang, targetLang: tgtLang, originalText: text, difficulty: diff, context: ctx, selectedFolderIds: folderIds })
+                }
+                onStartGame={() => api.startGame(room.id)}
+                onLeaveRoom={onResetGame}
+                onDeleteRoom={() => api.deleteRoom(room.id)}
+            />
+        );
+    }
+    if (room.phase === 'exploration') {
+        return (
+            <ExplorationPhase
+                room={room}
+                currentUserId={user.uid}
+                onToggleWord={(w) => api.toggleWordSelection(room.id, w)}
+                onFinishExploration={() => api.finishExploration(room.id)}
+                onUpdateConfig={(cfg) => api.updateConfig(room.id, cfg)}
+            />
+        );
+    }
+    if (room.phase === 'quest') {
+        return (
+            <QuestPhase
+                room={room}
+                currentUserId={user.uid}
+                onSetEnigmas={(eg) => api.setEnigmas(room.id, eg)}
+                onAnswer={(idx, ans, correct) => api.submitAnswer(room.id, user.uid, idx, ans, correct)}
+                onLockEnigma={(idx) => api.lockEnigma(room.id, idx, user.uid)}
+                onUnlockEnigma={(idx) => api.unlockEnigma(room.id, idx, user.uid)}
+                onRequestHelp={(idx) => api.requestHelp(room.id, idx, user.uid)}
+                onProvideHelp={(idx) => api.provideHelp(room.id, idx, user.uid)}
+                onUsePerkMage={(idx) => api.usePerkMage(room.id, idx, user.uid)}
+                onUsePerkBard={() => api.usePerkBard(room.id, user.uid)}
+                onTriggerIntruder={(w, idx) => api.startIntruder(room.id, w, idx)}
+                onShowOriginalText={onShowOriginalText}
+            />
+        );
+    }
+    if (room.phase === 'intruder') {
+        return (
+            <IntruderChallenge
+                room={room}
+                currentUserId={user.uid}
+                onResolveIntruder={(w) => api.resolveIntruder(room.id, user.uid, w)}
+                onTimeoutIntruder={() => api.timeoutIntruder(room.id)}
+            />
+        );
+    }
+    if (room.phase === 'boss') {
+        return (
+            <BossPhase
+                room={room}
+                currentUserId={user.uid}
+                onStartBoss={(target, blocks) => api.startBoss(room.id, target, blocks)}
+                onAddBlock={(text) => api.addBossBlock(room.id, text, user.uid)}
+                onRemoveBlock={(id) => api.removeBossBlock(room.id, id)}
+                onReorderBlocks={(order) => api.reorderBossBlocks(room.id, order)}
+                onAttack={() => api.attackBoss(room.id)}
+                onUsePerkWarrior={() => api.usePerkWarrior(room.id, user.uid)}
+                onBossAttacks={() => api.bossAttacks(room.id)}
+            />
+        );
+    }
+    if (room.phase === 'victory') {
+        return (
+            <VictoryPhase
+                room={room}
+                currentUserId={user.uid}
+                onResetGame={onResetGame}
+                onSaveItems={onSaveItems}
+                onSaveHistory={onSaveHistory}
+            />
+        );
+    }
+    if (room.phase === 'defeat') {
+        return (
+            <DefeatPhase
+                room={room}
+                currentUserId={user.uid}
+                onResetGame={onResetGame}
+                onSaveHistory={onSaveHistory}
+            />
+        );
+    }
+    return null;
+};
+
+const phaseLabel = (phase: string) => {
+    const map: Record<string, string> = {
+        lobby: 'Sala de Espera',
+        exploration: 'Exploração',
+        quest: 'Quest',
+        intruder: 'Intruso!',
+        boss: 'Batalha Final',
+        victory: 'Vitória',
+        defeat: 'Derrota',
+    };
+    return map[phase] || phase;
 };
 
 export default PolyQuestView;

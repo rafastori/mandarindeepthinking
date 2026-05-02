@@ -1,112 +1,102 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Icon from '../../../components/Icon';
-import { PolyQuestRoom, WordEnigma, GAME_CONSTANTS } from '../types';
-import { ConfidenceBar } from './ConfidenceBar';
+import { PolyQuestRoom, WordEnigma, PLAYER_CLASSES } from '../types';
+import { RULES } from '../rules';
 import { generateEnigmas, generateIntruder } from '../../../services/gemini';
 import { shuffleArray } from '../utils';
 import { usePuterSpeech } from '../../../hooks/usePuterSpeech';
 import { useStudyItems } from '../../../hooks/useStudyItems';
 import { useGameDataLoader } from '../../../hooks/useGameDataLoader';
+import { THEME, getPlayerColor } from '../theme';
+import { audio } from '../audio';
+import HPBar from './HPBar';
+import PlayerHud from './PlayerHud';
+import ComboMeter from './ComboMeter';
+import ScoreFloat, { FloatPoint } from './ScoreFloat';
+import AudioToggle from './AudioToggle';
 
-interface QuestPhaseProps {
+interface Props {
     room: PolyQuestRoom;
     currentUserId: string;
     onSetEnigmas: (enigmas: WordEnigma[]) => void;
-    onAnswer: (enigmaIndex: number, selectedAnswer: string, isCorrect: boolean) => void;
-    onUpdateConfidence: (delta: number) => Promise<void>;
-    onTriggerIntruder: (intruderWord: string) => Promise<void>;
-    onLockEnigma: (index: number) => Promise<boolean>;
-    onUnlockEnigma: (index: number) => Promise<void>;
-    onRequestHelp: (index: number) => Promise<void>;
-    onProvideHelp: (index: number) => Promise<void>;
-    onShowOriginalText?: () => void;  // Para abrir modal de texto original
+    onAnswer: (idx: number, ans: string, isCorrect: boolean) => Promise<{ awarded: number; comboCount: number; comboMult: number; allDone: boolean } | null>;
+    onLockEnigma: (idx: number) => Promise<boolean>;
+    onUnlockEnigma: (idx: number) => Promise<void>;
+    onRequestHelp: (idx: number) => Promise<void>;
+    onProvideHelp: (idx: number) => Promise<void>;
+    onUpdatePartyHP?: (delta: number) => Promise<void>;
+    onUsePerkMage: (idx: number) => Promise<void>;
+    onUsePerkBard: () => Promise<void>;
+    onTriggerIntruder: (fakeWord: string, insertedAt: number) => Promise<void>;
+    onShowOriginalText?: () => void;
 }
 
-// Helper to get user color (consistent with BossPhase)
-const USER_COLORS = [
-    'border-pink-500 bg-pink-50 text-pink-900',
-    'border-blue-500 bg-blue-50 text-blue-900',
-    'border-green-500 bg-green-50 text-green-900',
-    'border-yellow-500 bg-yellow-50 text-yellow-900',
-    'border-purple-500 bg-purple-50 text-purple-900',
-    'border-orange-500 bg-orange-50 text-orange-900',
-];
-
-const getUserColor = (userId: string) => {
-    let hash = 0;
-    for (let i = 0; i < userId.length; i++) hash = userId.charCodeAt(i) + ((hash << 5) - hash);
-    return USER_COLORS[Math.abs(hash) % USER_COLORS.length];
-};
-
-export const QuestPhase: React.FC<QuestPhaseProps> = ({
-    room,
-    currentUserId,
-    onSetEnigmas,
-    onAnswer,
-    onUpdateConfidence,
-    onTriggerIntruder,
-    onLockEnigma,
-    onUnlockEnigma,
-    onRequestHelp,
-    onProvideHelp,
-    onShowOriginalText
+export const QuestPhase: React.FC<Props> = ({
+    room, currentUserId, onSetEnigmas, onAnswer, onLockEnigma, onUnlockEnigma,
+    onRequestHelp, onProvideHelp, onUsePerkMage, onUsePerkBard,
+    onTriggerIntruder, onShowOriginalText,
 }) => {
     const { speak } = usePuterSpeech();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [activeEnigmaIndex, setActiveEnigmaIndex] = useState<number | null>(null);
+    const [activeIdx, setActiveIdx] = useState<number | null>(null);
     const [showHint, setShowHint] = useState(false);
-    const [eliminatedOptions, setEliminatedOptions] = useState<string[]>([]);
-    const [showOriginalTextState, setShowOriginalText] = useState(false);
+    const [eliminated, setEliminated] = useState<string[]>([]);
+    const [options, setOptions] = useState<string[]>([]);
+    const [floats, setFloats] = useState<FloatPoint[]>([]);
+    const intruderTriggeredRef = useRef(false);
 
-    // Integrando biblioteca local
     const { items } = useStudyItems(currentUserId);
     const { gameCards } = useGameDataLoader({
         items,
         activeFolderIds: room.config.context === 'library' ? room.config.selectedFolderIds || [] : [],
-        requireBothSides: true
+        requireBothSides: true,
     });
 
-    // Derived state for the modal options (shuffled once per open)
-    const [currentOptions, setCurrentOptions] = useState<string[]>([]);
+    const me = room.players.find(p => p.id === currentUserId);
+    const myCls = me?.cls ? PLAYER_CLASSES.find(c => c.id === me.cls) : null;
+    const perkCooldownRemain = me?.perkUsedAt && myCls ? Math.max(0, myCls.perkCooldownMs - (Date.now() - me.perkUsedAt)) : 0;
+    const [, setRefresher] = useState(0);
 
-    const progress = room.enigmas.length > 0 ? ((room.enigmas.filter(e => e.isDiscovered).length / room.enigmas.length) * 100) : 0;
-
-    // --- Enigma Generation & Intruder Logic (Original) ---
+    // Force re-render every second pra cooldown
     useEffect(() => {
-        const initializeEnigmas = async () => {
-            if (room.enigmas.length === 0 && room.selectedWords.length > 0) {
-                try {
-                    setLoading(true);
-                    setError(null);
+        if (perkCooldownRemain <= 0) return;
+        const id = setInterval(() => setRefresher(x => x + 1), 1000);
+        return () => clearInterval(id);
+    }, [perkCooldownRemain]);
 
-                    // MODO UNIFICADO: A IA sempre gera a base (para não ficarmos com "???")
-                    const enigmasData = await generateEnigmas(
+    const progress = room.enigmas.length > 0
+        ? (room.enigmas.filter(e => e.isDiscovered).length / room.enigmas.length) * 100
+        : 0;
+
+    // Geração inicial dos enigmas (host)
+    useEffect(() => {
+        const init = async () => {
+            if (room.enigmas.length === 0 && room.selectedWords.length > 0 && room.hostId === currentUserId) {
+                try {
+                    setLoading(true); setError(null);
+                    const data = await generateEnigmas(
                         room.selectedWords,
                         room.config.sourceLang,
                         room.config.targetLang,
-                        room.config.difficulty
+                        room.config.difficulty,
                     );
-
-                    const enigmas: WordEnigma[] = enigmasData.map(data => {
-                        // OVERRIDE: Se o usuário tem essa palavra na biblioteca, a tradução dele tem prioridade!
-                        const cardMatch = gameCards.find(c => c.word === data.word);
-
+                    const enigmas: WordEnigma[] = data.map(d => {
+                        const cardMatch = gameCards.find(c => c.word === d.word);
                         return {
-                            word: data.word,
-                            translation: cardMatch ? cardMatch.meaning : data.translation,
-                            alternatives: cardMatch && cardMatch.distractors.length > 0 ? cardMatch.distractors : data.alternatives,
-                            synonym: cardMatch && cardMatch.pinyin ? cardMatch.pinyin : data.synonym,
+                            word: d.word,
+                            translation: cardMatch ? cardMatch.meaning : d.translation,
+                            alternatives: cardMatch && cardMatch.distractors.length > 0 ? cardMatch.distractors : d.alternatives,
+                            synonym: cardMatch && cardMatch.pinyin ? cardMatch.pinyin : d.synonym,
                             isDiscovered: false,
                             attempts: 0,
-                            needsHelp: false
+                            needsHelp: false,
                         };
                     });
-
                     onSetEnigmas(enigmas);
-                } catch (err) {
-                    console.error('Erro ao gerar enigmas:', err);
-                    setError('Erro ao gerar enigmas. Tente novamente.');
+                } catch (e) {
+                    console.error(e);
+                    setError('Erro ao gerar enigmas. Tente recarregar.');
                 } finally {
                     setLoading(false);
                 }
@@ -114,372 +104,399 @@ export const QuestPhase: React.FC<QuestPhaseProps> = ({
                 setLoading(false);
             }
         };
-        initializeEnigmas();
-    }, [room.enigmas.length, room.selectedWords, room.config.context, gameCards]);
+        init();
+    }, [room.enigmas.length, room.selectedWords, room.config.context, gameCards.length, currentUserId, room.hostId]);
 
-    /* DESABILITADO PROVISORIAMENTE: Lógica do Intruso
+    // Trigger do Intruder (50% das palavras descobertas, ainda não disparou) — só host
     useEffect(() => {
-        if (room.intruderFound || room.intruderWord) return;
-        const totalEnigmas = room.enigmas.length;
-        if (totalEnigmas === 0) return;
+        if (room.intruderTriggered || intruderTriggeredRef.current) return;
+        if (room.hostId !== currentUserId) return;
+        if (room.enigmas.length === 0) return;
         const discovered = room.enigmas.filter(e => e.isDiscovered).length;
-        if ((discovered / totalEnigmas) >= GAME_CONSTANTS.INTRUDER_TRIGGER_PERCENT) {
-            const generateAndTrigger = async () => {
-                try {
-                    const contextSample = room.enigmas.slice(0, 10).map(e => e.word);
-                    const intruderData = await generateIntruder(contextSample, room.config.sourceLang, room.config.difficulty);
-                    await onTriggerIntruder(intruderData.word);
-                } catch (err) {
-                    await onTriggerIntruder("Unicorn");
-                }
-            };
-            generateAndTrigger();
-        }
-    }, [room.enigmas, room.intruderFound, room.intruderWord]);
-    */
+        if (discovered / room.enigmas.length < RULES.INTRUDER_TRIGGER_PCT) return;
+        intruderTriggeredRef.current = true;
+        (async () => {
+            try {
+                const sample = room.enigmas.slice(0, Math.min(10, room.enigmas.length)).map(e => e.word);
+                const data = await generateIntruder(sample, room.config.sourceLang, room.config.difficulty);
+                const tokens = room.config.tokens || [];
+                const insertedAt = Math.floor(tokens.length * (0.3 + Math.random() * 0.4));
+                audio.intruderAlert();
+                await onTriggerIntruder(data.word, insertedAt);
+            } catch (e) {
+                console.error('[Intruder] generate fail:', e);
+                await onTriggerIntruder('Unicórnio', Math.floor((room.config.tokens?.length || 1) / 2));
+            }
+        })();
+    }, [room.enigmas, room.intruderTriggered, room.hostId, currentUserId, room.config.sourceLang, room.config.tokens, room.config.difficulty, onTriggerIntruder]);
 
-    // --- Interaction Handlers ---
+    const handleCardClick = async (idx: number) => {
+        const e = room.enigmas[idx];
+        if (e.isDiscovered) return;
 
-    const handleCardClick = async (index: number) => {
-        const enigma = room.enigmas[index];
-        if (enigma.isDiscovered) return;
-
-        // Special Case: Helping someone
-        if (enigma.needsHelp && enigma.helpRequestedBy !== currentUserId) {
-            setActiveEnigmaIndex(index);
+        // Caso ajuda
+        if (e.needsHelp && e.helpRequestedBy !== currentUserId) {
+            audio.cardLock();
+            setActiveIdx(idx);
             setShowHint(false);
-            setEliminatedOptions([]);
-            setCurrentOptions(shuffleArray([enigma.translation, ...enigma.alternatives]));
+            setEliminated([]);
+            setOptions(shuffleArray([e.translation, ...e.alternatives]));
             return;
         }
 
-        // Standard Case: Locking for yourself
-        // Force unlock for yourself if it was returned to you? activeSolver handles it.
-        if (enigma.activeSolver && enigma.activeSolver !== currentUserId) return;
+        if (e.activeSolver && e.activeSolver !== currentUserId) return;
 
-        // Try to lock
-        const locked = await onLockEnigma(index);
+        const locked = await onLockEnigma(idx);
         if (locked) {
-            setActiveEnigmaIndex(index);
+            audio.cardLock();
+            setActiveIdx(idx);
             setShowHint(false);
-            setEliminatedOptions([]);
-            // Shuffle options for this session
-            setCurrentOptions(shuffleArray([enigma.translation, ...enigma.alternatives]));
-        } else {
-            alert("Este enigma já está sendo resolvido por outro jogador!");
+            setEliminated([]);
+            setOptions(shuffleArray([e.translation, ...e.alternatives]));
         }
     };
 
-    const handleCloseModal = async () => {
-        if (activeEnigmaIndex !== null) {
-            // Only unlock if I am the active solver (don't mess with helps)
-            const enigma = room.enigmas[activeEnigmaIndex];
-            if (enigma.activeSolver === currentUserId) {
-                await onUnlockEnigma(activeEnigmaIndex);
-            }
-            setActiveEnigmaIndex(null);
-        }
+    const closeModal = async () => {
+        if (activeIdx === null) return;
+        const e = room.enigmas[activeIdx];
+        if (e?.activeSolver === currentUserId) await onUnlockEnigma(activeIdx);
+        setActiveIdx(null);
     };
 
-    const handleAnswerSubmit = async (answer: string) => {
-        if (activeEnigmaIndex === null) return;
-        const currentEnigma = room.enigmas[activeEnigmaIndex];
-        const isCorrect = answer.toLowerCase() === currentEnigma.translation.toLowerCase();
+    const submitAnswer = async (answer: string) => {
+        if (activeIdx === null) return;
+        const e = room.enigmas[activeIdx];
+        const correct = answer.toLowerCase() === e.translation.toLowerCase();
 
-        // Check if I am Helping
-        if (currentEnigma.needsHelp && currentEnigma.helpRequestedBy !== currentUserId) {
-            if (isCorrect) {
-                await onProvideHelp(activeEnigmaIndex);
-                setActiveEnigmaIndex(null); // Close modal automatically
-                // Maybe show a toast "Help sent!"?
+        // Caso ajudante
+        if (e.needsHelp && e.helpRequestedBy !== currentUserId) {
+            if (correct) {
+                audio.correct();
+                await onProvideHelp(activeIdx);
+                pushFloat(`+${RULES.HELP_GIVEN_POINTS}`, 'green');
+                setActiveIdx(null);
             } else {
-                // Wrong answer provided by helper... penalty? For now just shake or alert
-                alert("Resposta incorreta! Tente outra.");
+                audio.wrong();
             }
             return;
         }
 
-        // Standard Answer
-        setActiveEnigmaIndex(null);
-        await onUnlockEnigma(activeEnigmaIndex);
-        onAnswer(activeEnigmaIndex, answer, isCorrect);
+        setActiveIdx(null);
+        await onUnlockEnigma(activeIdx);
+        const result = await onAnswer(activeIdx, answer, correct);
+        if (correct) {
+            audio.correct();
+            const mult = result?.comboMult || 1;
+            if (mult >= 1.5) audio.combo(Math.floor(mult * 2));
+            pushFloat(`+${result?.awarded ?? RULES.CORRECT_POINTS}`, 'gold');
+            if (result?.allDone) {
+                setTimeout(() => audio.victory(), 200);
+            }
+        } else {
+            audio.wrong();
+            pushFloat(`-${RULES.WRONG_DAMAGE}`, 'red');
+        }
+    };
+
+    const pushFloat = (text: string, color: FloatPoint['color']) => {
+        const x = 30 + Math.random() * 40;
+        const y = 30 + Math.random() * 30;
+        setFloats(f => [...f, { id: `${Date.now()}-${Math.random()}`, x, y, text, color }]);
+    };
+
+    const dropFloat = useCallback((id: string) => {
+        setFloats(f => f.filter(it => it.id !== id));
+    }, []);
+
+    const handleHint = async () => {
+        if (room.partyHP <= RULES.HINT_COST || showHint) return;
+        // Custo da dica é tratado client-side via PartyHP via ação genérica?
+        // Para simplificar e não duplicar lógica, mostra apenas a dica visual aqui.
+        setShowHint(true);
+        audio.hint();
+    };
+
+    const handleEliminate = () => {
+        if (room.partyHP <= RULES.ELIMINATE_COST || eliminated.length > 0 || activeIdx === null) return;
+        const e = room.enigmas[activeIdx];
+        setEliminated(shuffleArray(e.alternatives).slice(0, 2));
+        audio.hint();
     };
 
     const handleSOS = async () => {
-        if (room.confidence <= 5 || showHint) return;
-        await onUpdateConfidence(-5);
-        setShowHint(true);
+        if (activeIdx === null) return;
+        await onRequestHelp(activeIdx);
+        setActiveIdx(null);
     };
 
-    const handleRequestHelp = async () => {
-        if (activeEnigmaIndex === null) return;
-        await onRequestHelp(activeEnigmaIndex);
-        setActiveEnigmaIndex(null); // Close modal so others can see it/take it
-    };
-
-    const handleEliminate = async () => {
-        if (room.confidence <= 5 || eliminatedOptions.length > 0 || activeEnigmaIndex === null) return;
-        await onUpdateConfidence(-5);
-        const currentEnigma = room.enigmas[activeEnigmaIndex];
-        const wrongs = currentEnigma.alternatives;
-        setEliminatedOptions(shuffleArray(wrongs).slice(0, 2));
+    const handlePerk = async () => {
+        if (perkCooldownRemain > 0 || !myCls) return;
+        if (myCls.id === 'mage') {
+            if (activeIdx === null) {
+                alert('Selecione uma carta primeiro pra usar este perk!');
+                return;
+            }
+            audio.classPerk();
+            await onUsePerkMage(activeIdx);
+        } else if (myCls.id === 'bard') {
+            audio.classPerk();
+            await onUsePerkBard();
+            pushFloat('×2 BUFF!', 'blue');
+        } else if (myCls.id === 'warrior') {
+            alert('Sua Investida só funciona contra o Boss.');
+        }
     };
 
     if (loading) {
         return (
-            <div className="flex items-center justify-center h-96">
-                <div className="text-center">
-                    <Icon name="loader" size={48} className="text-emerald-600 animate-spin mx-auto mb-4" />
-                    <p className="text-slate-600 font-semibold">Gerando enigmas com IA...</p>
+            <div className={`min-h-full ${THEME.bg} -m-6 p-6 flex items-center justify-center`}>
+                <div className="text-center text-white">
+                    <Icon name="loader" size={48} className="text-amber-400 animate-spin mx-auto mb-4" />
+                    <p className="font-bold text-lg">Conjurando enigmas…</p>
                 </div>
             </div>
         );
     }
 
-    // --- Modal Component (Inline for simplicity access to state) ---
-    const renderModal = () => {
-        if (activeEnigmaIndex === null) return null;
-        const enigma = room.enigmas[activeEnigmaIndex];
-        const isHelping = enigma.needsHelp && enigma.helpRequestedBy !== currentUserId;
-        const requester = enigma.helpRequestedBy ? room.players.find(p => p.id === enigma.helpRequestedBy) : null;
-        const returnedAfterHelp = enigma.helpedBy && !enigma.isDiscovered;
-
+    if (error) {
         return (
-            <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
-                <div className={`bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden scale-100 animate-in zoom-in-95 duration-200 ${isHelping ? 'ring-4 ring-green-400' : ''}`}>
-                    {/* Header */}
-                    <div className={`border-b p-4 flex justify-between items-center ${isHelping ? 'bg-green-50' : 'bg-slate-50'}`}>
-                        <h3 className="font-bold text-slate-700 flex items-center gap-2">
-                            {isHelping ? (
-                                <>
-                                    <Icon name="life-buoy" size={18} className="text-green-600" />
-                                    <span className="text-green-800">AJUDANDO {requester?.name || 'Jogardor'} (+5 pts)</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Icon name="lock-open" size={18} className="text-emerald-600" />
-                                    Decifre a Palavra
-                                </>
-                            )}
-                        </h3>
-                        <button onClick={handleCloseModal} className="text-slate-400 hover:text-slate-600">
-                            <Icon name="x" size={24} />
-                        </button>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-8 text-center space-y-6">
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 relative">
-                            {returnedAfterHelp ? (
-                                <div className="mb-4 bg-emerald-100 text-emerald-800 p-3 rounded-lg animate-pulse border border-emerald-200">
-                                    <p className="font-bold text-xs uppercase tracking-wider mb-1">💡 Dica do Parceiro Recebida!</p>
-                                    <p className="font-medium text-lg italic">"{enigma.synonym}"</p>
-                                </div>
-                            ) : null}
-
-                            <p className="text-sm text-slate-500 uppercase tracking-wider mb-2">Palavra Oculta</p>
-                            <div className="flex items-center justify-center gap-3">
-                                <h2 className="text-4xl font-bold text-slate-800">{enigma.word}</h2>
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        speak(enigma.word, (room.config.sourceLang || 'zh') as 'zh' | 'de' | 'pt' | 'en');
-                                    }}
-                                    className="p-2 rounded-full text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 transition-colors"
-                                    title="Ouvir pronúncia"
-                                >
-                                    <Icon name="volume-2" size={24} />
-                                </button>
-                            </div>
-                            <p className="text-slate-400 mt-2 text-sm italic">Qual é o significado?</p>
-                        </div>
-
-                        {/* Options */}
-                        <div className="grid grid-cols-2 gap-3">
-                            {currentOptions.map((opt, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => handleAnswerSubmit(opt)}
-                                    disabled={eliminatedOptions.includes(opt)}
-                                    className={`
-                                        p-4 rounded-xl border-2 font-medium transition-all text-sm
-                                        ${eliminatedOptions.includes(opt)
-                                            ? 'opacity-20 bg-slate-100 border-slate-200 cursor-not-allowed'
-                                            : isHelping
-                                                ? 'border-slate-100 bg-white hover:border-green-500 hover:bg-green-50 hover:shadow-md'
-                                                : 'border-slate-100 bg-white hover:border-emerald-500 hover:bg-emerald-50 hover:shadow-md active:scale-95'
-                                        }
-                                    `}
-                                >
-                                    {opt}
-                                </button>
-                            ))}
-                        </div>
-
-                        {/* Helpers */}
-                        {!isHelping && (
-                            <div className="flex justify-center gap-4 pt-4 border-t border-slate-100">
-                                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-                                    Recompensa: {returnedAfterHelp ? 5 : GAME_CONSTANTS.CORRECT_POINTS} pts
-                                </div>
-
-                                <button
-                                    onClick={handleSOS}
-                                    disabled={showHint || room.confidence <= 5 || !!returnedAfterHelp}
-                                    className="flex items-center gap-1 text-xs font-bold text-yellow-600 hover:text-yellow-700 disabled:opacity-50 transition-colors"
-                                >
-                                    <Icon name="sun" size={14} />
-                                    Dica (-5)
-                                </button>
-                                <button
-                                    onClick={handleRequestHelp}
-                                    disabled={enigma.needsHelp || !!returnedAfterHelp}
-                                    className={`flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full transition-colors ${enigma.needsHelp || returnedAfterHelp
-                                        ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
-                                        : 'text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100'
-                                        }`}
-                                >
-                                    <Icon name="life-buoy" size={14} />
-                                    {enigma.needsHelp ? 'Ajuda Solicitada' : 'PEDIR AJUDA (SOS)'}
-                                </button>
-                                {onShowOriginalText && (
-                                    <button
-                                        onClick={() => {
-                                            setActiveEnigmaIndex(null);
-                                            onShowOriginalText();
-                                        }}
-                                        className="p-2 rounded-full transition-colors text-blue-500 hover:text-blue-700 bg-blue-50 hover:bg-blue-100"
-                                        title="Ver Texto Original"
-                                    >
-                                        <Icon name="book-open" size={18} />
-                                    </button>
-                                )}
-                            </div>
-                        )}
-
-                        {/* Hint Display (Standard) */}
-                        {showHint && enigma.synonym && !returnedAfterHelp && (
-                            <div className="text-sm text-blue-600 bg-blue-50 p-2 rounded-lg animate-in slide-in-from-bottom-2">
-                                💡 Dica: "{enigma.synonym}"
-                            </div>
-                        )}
-                    </div>
+            <div className={`min-h-full ${THEME.bg} -m-6 p-6 flex items-center justify-center`}>
+                <div className="text-center text-white max-w-md">
+                    <Icon name="alert-circle" size={48} className="text-rose-400 mx-auto mb-4" />
+                    <p className="font-bold text-lg mb-2">Algo deu errado</p>
+                    <p className="text-white/60 text-sm">{error}</p>
                 </div>
             </div>
         );
-    };
+    }
 
     return (
-        <div className="space-y-4">
-            {/* Top Bar - Confidence, Progresso e Scoreboard */}
-            <div className="bg-white rounded-xl shadow-sm border border-slate-100 sticky top-0 z-40 overflow-hidden">
-                {/* Linha superior: Confidence e Prção ogresso */}
-                <div className="flex items-center justify-between p-3 border-b border-slate-100">
-                    <ConfidenceBar confidence={room.confidence} />
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl font-bold text-sm shadow-sm">
-                        <Icon name="sparkles" size={16} />
-                        <span>{room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length} Enigmas</span>
+        <div className={`min-h-full ${THEME.bg} -m-6 p-4 md:p-6 text-white relative`}>
+            <ScoreFloat items={floats} onDone={dropFloat} />
+
+            <div className="max-w-5xl mx-auto">
+                {/* Top HUD: HP + Combo + Players + Audio */}
+                <div className={`${THEME.bgPanel} rounded-2xl p-3 mb-3 ${THEME.borderGlow} border sticky top-0 z-30`}>
+                    <div className="flex items-center gap-3 mb-2">
+                        <div className="flex-1">
+                            <HPBar current={room.partyHP} max={room.maxPartyHP} label="❤ Vida da Party" />
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <ComboMeter combo={room.combo} />
+                            <div className="px-3 py-2 bg-amber-400/20 border border-amber-400/40 rounded-xl text-amber-300 font-black text-sm">
+                                {room.enigmas.filter(e => e.isDiscovered).length}/{room.enigmas.length}
+                            </div>
+                            <AudioToggle />
+                        </div>
                     </div>
+
+                    {/* Player strip */}
+                    <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-1 px-1">
+                        {room.players.map(p => (
+                            <PlayerHud key={p.id} player={p} isMe={p.id === currentUserId} isHost={p.id === room.hostId} />
+                        ))}
+                    </div>
+
+                    {/* Perk button (se tem classe) */}
+                    {myCls && (
+                        <div className="mt-2 flex items-center gap-2">
+                            <button
+                                onClick={handlePerk}
+                                disabled={perkCooldownRemain > 0}
+                                className={`flex-1 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${perkCooldownRemain > 0
+                                    ? 'bg-white/5 text-white/30 cursor-not-allowed'
+                                    : 'bg-gradient-to-br from-violet-500 to-fuchsia-600 text-white shadow-md hover:shadow-violet-500/50 active:scale-95'
+                                }`}
+                                title={myCls.perkDesc}
+                            >
+                                <span className="text-base">{myCls.icon}</span>
+                                {perkCooldownRemain > 0
+                                    ? `${myCls.perkName} (${Math.ceil(perkCooldownRemain / 1000)}s)`
+                                    : myCls.perkName}
+                            </button>
+                            {onShowOriginalText && (
+                                <button
+                                    onClick={onShowOriginalText}
+                                    className="px-2 py-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-white/80 font-bold flex items-center gap-1.5"
+                                    title="Ver texto original"
+                                >
+                                    <Icon name="book-open" size={14} /> Texto
+                                </button>
+                            )}
+                        </div>
+                    )}
                 </div>
 
-                {/* Linha inferior: Scoreboard bonito - sempre visível */}
-                <div className="flex items-center justify-center gap-3 p-2 bg-gradient-to-r from-slate-50 to-slate-100 overflow-x-auto no-scrollbar">
-                    {room.players.map(p => (
-                        <div
-                            key={p.id}
-                            className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border-2 shadow-sm transition-all ${getUserColor(p.id)}`}
-                        >
-                            {p.avatarUrl ? (
-                                <img src={p.avatarUrl} className="w-6 h-6 rounded-full" alt={p.name} />
-                            ) : (
-                                <div className="w-6 h-6 rounded-full bg-white/30 flex items-center justify-center text-[10px] uppercase font-bold">
-                                    {p.name[0]}
-                                </div>
-                            )}
-                            <div className="flex flex-col leading-none">
-                                <span className="text-[11px] font-bold">{p.name.split(' ')[0]}</span>
-                                <span className="text-[10px] opacity-80 font-semibold">{p.score || 0} pts</span>
-                            </div>
-                        </div>
-                    ))}
+                {/* Cards grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pb-12">
+                    {room.enigmas.map((e, idx) => {
+                        const activeUser = e.activeSolver ? room.players.find(p => p.id === e.activeSolver) : null;
+                        const userColor = activeUser ? getPlayerColor(activeUser.id) : null;
+
+                        return (
+                            <button
+                                key={idx}
+                                onClick={() => handleCardClick(idx)}
+                                disabled={e.isDiscovered || (!!e.activeSolver && e.activeSolver !== currentUserId && !e.needsHelp)}
+                                className={`
+                                    relative rounded-2xl border-2 transition-all duration-300 p-4 min-h-[140px] flex flex-col items-center justify-center gap-2 group
+                                    ${e.isDiscovered
+                                        ? 'bg-emerald-500/15 border-emerald-400/40 text-white'
+                                        : e.needsHelp
+                                            ? 'bg-rose-500/20 border-rose-400 border-dashed animate-pulse text-white'
+                                            : activeUser
+                                                ? 'border-2 backdrop-blur'
+                                                : 'bg-white/5 border-white/15 hover:bg-white/10 hover:border-amber-400/50 text-white shadow-lg'
+                                    }
+                                `}
+                                style={activeUser && !e.needsHelp ? {
+                                    backgroundColor: `${userColor!.hex}20`,
+                                    borderColor: userColor!.hex,
+                                } : undefined}
+                            >
+                                {e.needsHelp && (
+                                    <div className="absolute top-2 right-2 text-rose-300 animate-bounce">
+                                        <Icon name="life-buoy" size={20} />
+                                    </div>
+                                )}
+
+                                {e.isDiscovered ? (
+                                    <>
+                                        <div className="w-10 h-10 rounded-full bg-emerald-400/30 flex items-center justify-center mb-1">
+                                            <Icon name="check" size={20} className="text-emerald-300" />
+                                        </div>
+                                        <span className="font-bold text-base">{e.word}</span>
+                                        <span className="text-xs text-emerald-300 font-medium">{e.translation}</span>
+                                    </>
+                                ) : activeUser ? (
+                                    <>
+                                        {activeUser.avatarUrl ? (
+                                            <img src={activeUser.avatarUrl} className="w-10 h-10 rounded-full ring-2 ring-white/30" />
+                                        ) : (
+                                            <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style={{ backgroundColor: userColor!.hex }}>
+                                                {activeUser.name[0]}
+                                            </div>
+                                        )}
+                                        <span className="text-xs font-bold opacity-70">
+                                            {activeUser.id === currentUserId ? 'Você' : activeUser.name.split(' ')[0]}
+                                        </span>
+                                        <span className="text-[10px] text-white/50 italic">resolvendo…</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Icon name="lock" size={26} className="text-white/30 group-hover:text-amber-300 transition-colors mb-1" />
+                                        <span className="font-bold text-base group-hover:text-amber-200">{e.word}</span>
+                                        <span className="text-[10px] text-white/40 group-hover:text-amber-300 uppercase tracking-wider">Tocar</span>
+                                    </>
+                                )}
+                            </button>
+                        );
+                    })}
                 </div>
             </div>
 
-            {/* Grid Area */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-20">
-                {room.enigmas.map((enigma, index) => {
-                    // Determine User Styles
-                    const activeUser = enigma.activeSolver
-                        ? room.players.find(p => p.id === enigma.activeSolver)
-                        : null;
+            {/* Modal de resposta */}
+            {activeIdx !== null && (() => {
+                const e = room.enigmas[activeIdx];
+                const isHelping = e.needsHelp && e.helpRequestedBy !== currentUserId;
+                const requester = e.helpRequestedBy ? room.players.find(p => p.id === e.helpRequestedBy) : null;
+                const returnedAfterHelp = !!(e.helpedBy && !e.isDiscovered);
 
-                    // Prioritize Red pulse if help is needed
-                    const containerClasses = [
-                        'relative p-6 rounded-2xl border-2 transition-all duration-300 flex flex-col items-center justify-center gap-3 min-h-[160px] group'
-                    ];
-
-                    if (enigma.isDiscovered) {
-                        containerClasses.push('bg-emerald-50 border-emerald-200 opacity-80');
-                    } else if (enigma.needsHelp) {
-                        containerClasses.push('bg-red-50 border-red-400 border-dashed animate-pulse');
-                    } else if (activeUser) {
-                        containerClasses.push(getUserColor(activeUser.id));
-                    } else {
-                        containerClasses.push('bg-white border-slate-200 hover:border-emerald-300 shadow-sm hover:shadow-md');
-                    }
-
-                    return (
-                        <button
-                            key={index}
-                            onClick={() => handleCardClick(index)}
-                            // Allow clicking if it needs help even if active? Maybe. For now standard lock rules.
-                            disabled={enigma.isDiscovered || (!!enigma.activeSolver && enigma.activeSolver !== currentUserId)}
-                            className={containerClasses.join(' ')}
-                        >
-                            {/* Needs Help Badge */}
-                            {!enigma.isDiscovered && enigma.needsHelp && (
-                                <div className="absolute top-3 right-3 text-red-500 animate-bounce">
-                                    <Icon name="life-buoy" size={20} />
-                                </div>
-                            )}
-
-                            {/* Status Icon */}
-                            {enigma.isDiscovered ? (
-                                <>
-                                    <Icon name="check" size={32} className="text-emerald-500 mb-1" />
-                                    <span className="font-bold text-slate-700 text-lg">{enigma.word}</span>
-                                    <span className="text-xs text-emerald-600 font-medium">{enigma.translation}</span>
-                                </>
-                            ) : enigma.activeSolver ? (
-                                <>
-                                    {activeUser?.avatarUrl ? (
-                                        <img src={activeUser.avatarUrl} className="w-10 h-10 rounded-full border-2 border-white shadow-sm mb-1" />
+                return (
+                    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
+                        <div className={`${THEME.bgPanelSolid} rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden border-2 animate-in zoom-in-95 ${isHelping ? 'border-emerald-400' : 'border-amber-400/40'}`}>
+                            <div className={`p-3 flex justify-between items-center ${isHelping ? 'bg-emerald-500/20' : 'bg-amber-400/15'}`}>
+                                <h3 className="font-black text-sm uppercase tracking-wider flex items-center gap-2 text-white">
+                                    {isHelping ? (
+                                        <><Icon name="life-buoy" size={16} className="text-emerald-300" />
+                                            Ajudando {requester?.name || ''} (+{RULES.HELP_GIVEN_POINTS} pts)</>
                                     ) : (
-                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-white mb-1 shadow-sm opacity-80`} style={{ backgroundColor: '#64748b' }}>
-                                            {activeUser?.name[0]}
+                                        <><Icon name="lock-open" size={16} className="text-amber-300" />Decifre</>
+                                    )}
+                                </h3>
+                                <button onClick={closeModal} className="text-white/60 hover:text-white">
+                                    <Icon name="x" size={20} />
+                                </button>
+                            </div>
+
+                            <div className="p-6 text-center space-y-4">
+                                <div className="bg-black/30 rounded-2xl p-4 border border-white/10">
+                                    {returnedAfterHelp && (
+                                        <div className="mb-3 bg-emerald-500/20 border border-emerald-400/40 rounded-xl px-3 py-2">
+                                            <p className="text-xs text-emerald-300 font-bold uppercase tracking-wider">💡 Dica do parceiro</p>
+                                            <p className="text-white italic">"{e.synonym}"</p>
                                         </div>
                                     )}
-                                    <span className="font-bold opacity-0 group-hover:opacity-100 transition-opacity text-slate-800">{enigma.word}</span>
-                                    <span className="text-xs font-bold animate-pulse text-slate-500">
-                                        {activeUser?.id === currentUserId ? 'Resolvendo...' : `${activeUser?.name} (${activeUser?.score || 0} pts | LVL ${activeUser?.totalScore || 0})`}
-                                    </span>
-                                </>
-                            ) : (
-                                <>
-                                    <Icon name="lock" size={32} className="text-slate-300 group-hover:text-emerald-400 transition-colors mb-1" />
-                                    <span className="font-bold text-slate-700 text-lg group-hover:scale-110 transition-transform">{enigma.word}</span>
-                                    <span className="text-xs text-slate-400 group-hover:text-emerald-500">Toque para resolver</span>
-                                </>
-                            )}
-                        </button>
-                    );
-                })}
-            </div>
+                                    <p className="text-[10px] text-white/50 uppercase tracking-wider mb-1">Palavra Oculta</p>
+                                    <div className="flex items-center justify-center gap-3">
+                                        <h2 className="text-3xl font-black text-amber-300">{e.word}</h2>
+                                        <button
+                                            onClick={(ev) => { ev.stopPropagation(); speak(e.word, (room.config.sourceLang || 'zh') as any); }}
+                                            className="p-2 rounded-full text-white/40 hover:text-amber-300 hover:bg-white/10"
+                                        >
+                                            <Icon name="volume-2" size={20} />
+                                        </button>
+                                    </div>
+                                    {e.revealedInitial && (
+                                        <p className="text-xs text-violet-300 mt-2">
+                                            🧙 Inicial: <span className="font-bold text-base">{e.translation[0].toUpperCase()}…</span>
+                                        </p>
+                                    )}
+                                </div>
 
-            {/* Modal */}
-            {activeEnigmaIndex !== null && renderModal()}
+                                <div className="grid grid-cols-2 gap-2">
+                                    {options.map((opt, i) => (
+                                        <button
+                                            key={i}
+                                            onClick={() => submitAnswer(opt)}
+                                            disabled={eliminated.includes(opt)}
+                                            className={`p-3 rounded-xl border-2 font-bold text-sm transition-all ${eliminated.includes(opt)
+                                                ? 'opacity-25 bg-white/5 border-white/10 cursor-not-allowed'
+                                                : 'bg-white/5 border-white/15 hover:bg-amber-400/20 hover:border-amber-400 active:scale-95 text-white'
+                                            }`}
+                                        >
+                                            {opt}
+                                        </button>
+                                    ))}
+                                </div>
 
+                                {!isHelping && (
+                                    <div className="flex justify-center gap-2 pt-3 border-t border-white/10 text-xs">
+                                        <button
+                                            onClick={handleHint}
+                                            disabled={showHint || room.partyHP <= RULES.HINT_COST}
+                                            className="flex items-center gap-1 px-2 py-1 rounded bg-amber-500/15 text-amber-300 font-bold disabled:opacity-50"
+                                        >
+                                            <Icon name="sun" size={12} /> Dica (-{RULES.HINT_COST} HP)
+                                        </button>
+                                        <button
+                                            onClick={handleSOS}
+                                            disabled={!!e.needsHelp}
+                                            className="flex items-center gap-1 px-2 py-1 rounded bg-rose-500/15 text-rose-300 font-bold disabled:opacity-40"
+                                        >
+                                            <Icon name="life-buoy" size={12} /> SOS
+                                        </button>
+                                        {onShowOriginalText && (
+                                            <button
+                                                onClick={() => { setActiveIdx(null); onShowOriginalText(); }}
+                                                className="flex items-center gap-1 px-2 py-1 rounded bg-sky-500/15 text-sky-300 font-bold"
+                                            >
+                                                <Icon name="book-open" size={12} /> Texto
+                                            </button>
+                                        )}
+                                    </div>
+                                )}
+
+                                {showHint && e.synonym && !returnedAfterHelp && (
+                                    <div className="text-sm text-sky-300 bg-sky-500/15 p-2 rounded-lg border border-sky-400/30">
+                                        💡 "{e.synonym}"
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                );
+            })()}
         </div>
     );
 };
-
