@@ -118,12 +118,12 @@ export const useStudyItems = (userId: string | null | undefined) => {
       // 1. Ler todos os itens do IndexedDB (fonte de verdade)
       const allItems = await localDB.getAllItems();
 
-      // 2. Criar mapa de atualizações por ID
-      const updateMap = new Map(updates.map(u => [u.id, u.createdAt]));
+      // 2. Criar mapa de atualizações por ID (sempre como string, pois IDs antigos podem ser number)
+      const updateMap = new Map(updates.map(u => [String(u.id), u.createdAt]));
 
       // 3. Aplicar as novas datas nos itens
       const updatedItems = allItems.map(item => {
-        const newCreatedAt = updateMap.get(item.id as string);
+        const newCreatedAt = updateMap.get(String(item.id));
         if (newCreatedAt) {
           return { ...item, createdAt: newCreatedAt };
         }
