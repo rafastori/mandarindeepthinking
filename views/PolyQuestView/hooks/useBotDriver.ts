@@ -14,43 +14,60 @@ interface BotDriverApi {
 
 /**
  * useBotDriver — roda APENAS no host. Faz os bots agirem em ciclos.
- * Cada bot pega no máximo uma carta por vez. Probabilidade de acerto e delay
- * dependem do BotLevel (easy/medium/hard).
+ *
+ * Versão robusta:
+ *  - Usa refs para `room` e `api` — sem closure stale entre re-renders
+ *  - Cleanup nunca aborta callbacks pendentes; eles sempre limpam o busyRef
+ *    e destravam a carta para evitar locks fantasmas
+ *  - Effect com deps mínimas (só `isHost`) — não re-monta a cada snapshot
  */
-export function useBotDriver(room: PolyQuestRoom | null, isHost: boolean, currentUserId: string, api: BotDriverApi) {
-    // Estado por bot pra evitar duplas-ações enquanto está pensando
+export function useBotDriver(
+    room: PolyQuestRoom | null,
+    isHost: boolean,
+    currentUserId: string,
+    api: BotDriverApi,
+) {
+    const roomRef = useRef(room);
+    const apiRef = useRef(api);
     const busyRef = useRef<Set<string>>(new Set());
-    const explorationDoneRef = useRef(false);
+    const pendingTimers = useRef<Set<ReturnType<typeof setTimeout>>>(new Set());
+
+    // Manter refs atualizados
+    useEffect(() => { roomRef.current = room; }, [room]);
+    useEffect(() => { apiRef.current = api; }, [api]);
 
     useEffect(() => {
-        if (!room || !isHost) return;
-        const bots = room.players.filter(p => p.isBot);
-        if (bots.length === 0) return;
-
-        let alive = true;
+        if (!isHost) return;
 
         const tick = async () => {
-            if (!alive || !room) return;
+            const r = roomRef.current;
+            const a = apiRef.current;
+            if (!r) return;
+            const bots = r.players.filter(p => p.isBot);
+            if (bots.length === 0) return;
 
-            // ─── EXPLORATION: bots selecionam algumas palavras de tempos em tempos ───
-            if (room.phase === 'exploration' && !explorationDoneRef.current) {
-                // Cada bot pega 1 palavra por tick, até a sala ter umas 6-12 selecionadas
-                const target = Math.min(12, Math.max(6, (room.config.tokens?.length || 0) / 6));
-                if (room.selectedWords.length < target) {
-                    const tokens = (room.config.tokens || []).filter(t => {
+            // ─── EXPLORATION ───
+            if (r.phase === 'exploration') {
+                const target = Math.min(12, Math.max(6, (r.config.tokens?.length || 0) / 6));
+                if (r.selectedWords.length < target) {
+                    const tokens = (r.config.tokens || []).filter(t => {
                         const trimmed = t.trim();
                         return trimmed.length > 1
                             && !/^[\s.,!?;:()。，！？；：、]+$/.test(trimmed)
                             && /[\p{L}\p{N}]/u.test(trimmed)
-                            && !room.selectedWords.includes(trimmed);
+                            && !r.selectedWords.includes(trimmed);
                     });
                     if (tokens.length > 0) {
                         const idle = bots.find(b => !busyRef.current.has(b.id));
                         if (idle) {
                             busyRef.current.add(idle.id);
                             const word = tokens[Math.floor(Math.random() * tokens.length)].trim();
-                            try { await api.toggleWordSelection(room.id, word); } catch {}
-                            setTimeout(() => busyRef.current.delete(idle.id), 1500);
+                            try { await a.toggleWordSelection(r.id, word); } catch {}
+                            const t = setTimeout(() => {
+                                busyRef.current.delete(idle.id);
+                                pendingTimers.current.delete(t);
+                            }, 1500);
+                            pendingTimers.current.add(t);
                         }
                     }
                 }
@@ -58,91 +75,137 @@ export function useBotDriver(room: PolyQuestRoom | null, isHost: boolean, curren
             }
 
             // ─── QUEST ───
-            if (room.phase === 'quest') {
+            if (r.phase === 'quest') {
                 for (const bot of bots) {
                     if (busyRef.current.has(bot.id)) continue;
-                    // Procura uma carta livre
-                    const idx = room.enigmas.findIndex(e =>
+                    const idx = r.enigmas.findIndex(e =>
                         !e.isDiscovered && !e.activeSolver && !e.needsHelp
                     );
                     if (idx === -1) continue;
 
                     busyRef.current.add(bot.id);
+                    const cfg = BOT_LEVEL_CONFIG[bot.botLevel || 'medium'];
+                    const delay = cfg.minDelayMs + Math.random() * (cfg.maxDelayMs - cfg.minDelayMs);
+
+                    let locked = false;
                     try {
-                        const locked = await api.lockEnigma(room.id, idx, bot.id);
-                        if (!locked) {
-                            busyRef.current.delete(bot.id);
-                            continue;
-                        }
-                        const cfg = BOT_LEVEL_CONFIG[bot.botLevel || 'medium'];
-                        const delay = cfg.minDelayMs + Math.random() * (cfg.maxDelayMs - cfg.minDelayMs);
-                        setTimeout(async () => {
-                            if (!alive) { busyRef.current.delete(bot.id); return; }
-                            const enigma = room.enigmas[idx];
-                            if (!enigma || enigma.isDiscovered) { busyRef.current.delete(bot.id); return; }
-                            const willGetRight = Math.random() < cfg.accuracy;
-                            const answer = willGetRight ? enigma.translation : (enigma.alternatives[0] || enigma.translation);
-                            try {
-                                await api.unlockEnigma(room.id, idx, bot.id);
-                                await api.submitAnswer(room.id, bot.id, idx, answer, willGetRight);
-                            } catch {}
-                            busyRef.current.delete(bot.id);
-                        }, delay);
+                        locked = await a.lockEnigma(r.id, idx, bot.id);
                     } catch {
                         busyRef.current.delete(bot.id);
+                        return;
                     }
-                    // Um bot por tick pra distribuir as ações
-                    return;
+                    if (!locked) {
+                        busyRef.current.delete(bot.id);
+                        return;
+                    }
+
+                    const t = setTimeout(async () => {
+                        pendingTimers.current.delete(t);
+                        // SEMPRE limpa busyRef no fim, sem early-return
+                        try {
+                            const cur = roomRef.current;
+                            const apiCur = apiRef.current;
+                            if (!cur || !apiCur) return;
+                            const enigma = cur.enigmas[idx];
+                            if (!enigma || enigma.isDiscovered) {
+                                // Já resolvido por outro — destrava se ainda for nosso
+                                if (enigma?.activeSolver === bot.id) {
+                                    try { await apiCur.unlockEnigma(cur.id, idx, bot.id); } catch {}
+                                }
+                                return;
+                            }
+                            const willGetRight = Math.random() < cfg.accuracy;
+                            const answer = willGetRight ? enigma.translation : (enigma.alternatives[0] || enigma.translation);
+                            try { await apiCur.unlockEnigma(cur.id, idx, bot.id); } catch {}
+                            try { await apiCur.submitAnswer(cur.id, bot.id, idx, answer, willGetRight); } catch {}
+                        } finally {
+                            busyRef.current.delete(bot.id);
+                        }
+                    }, delay);
+                    pendingTimers.current.add(t);
+                    return; // Um bot por tick
                 }
                 return;
             }
 
-            // ─── BOSS: bots ajudam montando blocos (na ordem correta) ───
-            if (room.phase === 'boss' && room.boss) {
-                const placed = room.boss.placedBlocks;
-                const expected = room.boss.blocks;
+            // ─── BOSS ───
+            if (r.phase === 'boss' && r.boss) {
+                const placed = r.boss.placedBlocks;
+                const expected = r.boss.blocks;
                 const placedCorrectSoFar = placed.length <= expected.length
                     && placed.every((b, i) => b.text === expected[i]);
-                // Bots adicionam o próximo bloco correto se a sequência atual está certa
                 if (placedCorrectSoFar && placed.length < expected.length) {
                     const nextWord = expected[placed.length];
                     const idle = bots.find(b => !busyRef.current.has(b.id));
                     if (idle) {
                         busyRef.current.add(idle.id);
                         const cfg = BOT_LEVEL_CONFIG[idle.botLevel || 'medium'];
-                        // Acurácia também afeta boss: às vezes coloca um bloco errado
                         const willGetRight = Math.random() < cfg.accuracy;
                         const blockToPlace = willGetRight
                             ? nextWord
                             : expected[Math.floor(Math.random() * expected.length)];
-                        setTimeout(async () => {
-                            if (!alive) { busyRef.current.delete(idle.id); return; }
-                            try { await api.addBossBlock(room.id, blockToPlace, idle.id); } catch {}
-                            busyRef.current.delete(idle.id);
+                        const t = setTimeout(async () => {
+                            pendingTimers.current.delete(t);
+                            try {
+                                const cur = roomRef.current;
+                                const apiCur = apiRef.current;
+                                if (!cur || !apiCur) return;
+                                try { await apiCur.addBossBlock(cur.id, blockToPlace, idle.id); } catch {}
+                            } finally {
+                                busyRef.current.delete(idle.id);
+                            }
                         }, 2000 + Math.random() * 3000);
+                        pendingTimers.current.add(t);
                     }
                 }
                 return;
             }
 
-            // ─── INTRUDER: bots têm chance de denunciar ───
-            if (room.phase === 'intruder' && room.intruder && !room.intruder.resolved) {
+            // ─── INTRUDER ───
+            if (r.phase === 'intruder' && r.intruder && !r.intruder.resolved) {
                 const cfg = BOT_LEVEL_CONFIG[bots[0].botLevel || 'medium'];
-                if (Math.random() < cfg.accuracy * 0.3) { // chance pequena por tick
+                if (Math.random() < cfg.accuracy * 0.3) {
                     const luckyBot = bots[Math.floor(Math.random() * bots.length)];
                     if (!busyRef.current.has(luckyBot.id)) {
                         busyRef.current.add(luckyBot.id);
-                        setTimeout(async () => {
-                            try { await api.resolveIntruder(room.id, luckyBot.id, room.intruder!.fakeWord); } catch {}
-                            busyRef.current.delete(luckyBot.id);
+                        const t = setTimeout(async () => {
+                            pendingTimers.current.delete(t);
+                            try {
+                                const cur = roomRef.current;
+                                const apiCur = apiRef.current;
+                                if (!cur || !apiCur || !cur.intruder) return;
+                                try { await apiCur.resolveIntruder(cur.id, luckyBot.id, cur.intruder.fakeWord); } catch {}
+                            } finally {
+                                busyRef.current.delete(luckyBot.id);
+                            }
                         }, 2000 + Math.random() * 4000);
+                        pendingTimers.current.add(t);
                     }
                 }
                 return;
             }
         };
 
-        const id = setInterval(tick, 1500);
-        return () => { alive = false; clearInterval(id); };
-    }, [room?.phase, room?.enigmas, room?.selectedWords, room?.boss?.placedBlocks?.length, room?.intruder?.resolved, isHost]);
+        const interval = setInterval(tick, 1500);
+
+        return () => {
+            clearInterval(interval);
+            // Cancela timers pendentes (e tenta destravar cartas dos bots)
+            for (const t of pendingTimers.current) clearTimeout(t);
+            pendingTimers.current.clear();
+
+            const r = roomRef.current;
+            const a = apiRef.current;
+            if (r && a) {
+                // Destrava cartas que ainda estejam com bots travando
+                for (const bot of r.players.filter(p => p.isBot)) {
+                    const heldIdx = r.enigmas.findIndex(e => e.activeSolver === bot.id && !e.isDiscovered);
+                    if (heldIdx >= 0) {
+                        a.unlockEnigma(r.id, heldIdx, bot.id).catch(() => {});
+                    }
+                }
+            }
+            busyRef.current.clear();
+        };
+    }, [isHost]);
 }

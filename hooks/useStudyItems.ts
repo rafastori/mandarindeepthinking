@@ -13,36 +13,35 @@ export const useStudyItems = (userId: string | null | undefined) => {
   const [loading, setLoading] = useState(true);
 
   /**
-   * Migração one-time: itens antigos têm `id: number` (vindo do tempo Firebase legacy).
-   * Isso quebra comparações strict (`item.id !== id`) e Map.get() em vários lugares.
-   * Aqui convertemos TODOS os IDs numéricos para `legacy_<n>` (string).
-   * Roda só uma vez por usuário (controlado por flag em LocalProfile).
+   * Migração de IDs legados:
+   *  - Itens antigos podem ter `id: number` OU `id: "2469"` (string que parece número).
+   *  - Ambos quebram comparações em vários lugares — convertemos para `legacy_<id>`.
+   *  - Sempre verificamos no startup (não é controlado por flag) — é idempotente
+   *    e barato; se nada bate o pattern, retorna em <5ms.
    */
   const runLegacyIdMigrationIfNeeded = async (): Promise<void> => {
     try {
-      const profile = await localDB.getProfile();
-      if (profile.legacyIdsMigratedAt) return; // já rodou
-
       const all = await localDB.getAllItems();
-      const numericItems = all.filter(it => typeof it.id === 'number');
 
-      if (numericItems.length === 0) {
-        // Marca como concluída pra não checar de novo
-        await localDB.updateProfile({ legacyIdsMigratedAt: new Date().toISOString() });
-        return;
-      }
+      // Item é "legado" se id é number OU se é string puramente numérica
+      // (ex: "2469"). Isso captura também conversões antigas que viraram string.
+      const legacyItems = all.filter(it =>
+        typeof it.id === 'number' || (typeof it.id === 'string' && /^\d+$/.test(it.id))
+      );
 
-      console.log(`[migration] convertendo ${numericItems.length} IDs numéricos para string…`);
+      if (legacyItems.length === 0) return;
 
-      // Apaga os antigos (chave numérica) e re-insere com nova chave string
-      const oldKeys: (string | number)[] = numericItems.map(it => it.id);
-      const remapped: StudyItem[] = numericItems.map(it => ({ ...it, id: `legacy_${it.id}` }));
+      console.log(`[migration] convertendo ${legacyItems.length} IDs legados (number/string-numérico) para legacy_*…`);
+
+      const oldKeys: (string | number)[] = legacyItems.map(it => it.id);
+      const remapped: StudyItem[] = legacyItems.map(it => ({ ...it, id: `legacy_${it.id}` }));
 
       await localDB.bulkDeleteItems(oldKeys);
       await localDB.bulkPutItems(remapped);
 
+      // Marca como migrado (pra registro/debug)
       await localDB.updateProfile({ legacyIdsMigratedAt: new Date().toISOString() });
-      console.log('[migration] concluída');
+      console.log('[migration] concluída — IDs convertidos:', legacyItems.length);
     } catch (e) {
       console.error('[migration] falhou (não bloqueia carregamento):', e);
     }

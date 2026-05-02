@@ -229,21 +229,32 @@ export const QuestPhase: React.FC<Props> = ({
         setActiveIdx(null);
     };
 
+    // Perk só disponível em condições específicas: mage precisa de carta aberta,
+    // warrior só funciona no Boss (botão fica desabilitado aqui)
+    const perkAvailable = (() => {
+        if (perkCooldownRemain > 0 || !myCls) return false;
+        if (myCls.id === 'mage') return activeIdx !== null;
+        if (myCls.id === 'warrior') return false; // só na BossPhase
+        return true; // bardo
+    })();
+
+    const perkButtonHint = (() => {
+        if (!myCls) return '';
+        if (perkCooldownRemain > 0) return `${myCls.perkName} (${Math.ceil(perkCooldownRemain / 1000)}s)`;
+        if (myCls.id === 'mage' && activeIdx === null) return `${myCls.perkName} — abra uma carta`;
+        if (myCls.id === 'warrior') return `${myCls.perkName} — só na fase do Boss`;
+        return myCls.perkName;
+    })();
+
     const handlePerk = async () => {
-        if (perkCooldownRemain > 0 || !myCls) return;
-        if (myCls.id === 'mage') {
-            if (activeIdx === null) {
-                alert('Selecione uma carta primeiro pra usar este perk!');
-                return;
-            }
+        if (!perkAvailable || !myCls) return;
+        if (myCls.id === 'mage' && activeIdx !== null) {
             audio.classPerk();
             await onUsePerkMage(activeIdx);
         } else if (myCls.id === 'bard') {
             audio.classPerk();
             await onUsePerkBard();
             pushFloat('×2 BUFF!', 'blue');
-        } else if (myCls.id === 'warrior') {
-            alert('Sua Investida só funciona contra o Boss.');
         }
     };
 
@@ -302,17 +313,15 @@ export const QuestPhase: React.FC<Props> = ({
                         <div className="mt-2 flex items-center gap-2">
                             <button
                                 onClick={handlePerk}
-                                disabled={perkCooldownRemain > 0}
-                                className={`flex-1 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${perkCooldownRemain > 0
-                                    ? 'bg-white/5 text-white/30 cursor-not-allowed'
-                                    : 'bg-gradient-to-br from-violet-500 to-fuchsia-600 text-white shadow-md hover:shadow-violet-500/50 active:scale-95'
+                                disabled={!perkAvailable}
+                                className={`flex-1 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${perkAvailable
+                                    ? 'bg-gradient-to-br from-violet-500 to-fuchsia-600 text-white shadow-md hover:shadow-violet-500/50 active:scale-95'
+                                    : 'bg-white/5 text-white/30 cursor-not-allowed'
                                 }`}
                                 title={myCls.perkDesc}
                             >
                                 <span className="text-base">{myCls.icon}</span>
-                                {perkCooldownRemain > 0
-                                    ? `${myCls.perkName} (${Math.ceil(perkCooldownRemain / 1000)}s)`
-                                    : myCls.perkName}
+                                {perkButtonHint}
                             </button>
                             {onShowOriginalText && (
                                 <button
