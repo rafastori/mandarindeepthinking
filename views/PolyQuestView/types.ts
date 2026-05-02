@@ -51,6 +51,8 @@ export const PLAYER_CLASSES: ClassDef[] = [
     },
 ];
 
+export type BotLevel = 'easy' | 'medium' | 'hard';
+
 export interface PolyQuestPlayer {
     id: string;
     name: string;
@@ -63,7 +65,25 @@ export interface PolyQuestPlayer {
     cls?: PlayerClass;
     perkUsedAt?: number;          // timestamp do último uso (cooldown)
     bardBuffActive?: boolean;     // se o próximo acerto vale 2x
+    isBot?: boolean;
+    botLevel?: BotLevel;
+    botEmoji?: string;            // emoji-avatar do bot
 }
+
+export const BOT_NAMES = [
+    'Aelin', 'Brynn', 'Cassia', 'Dorian', 'Elara', 'Faelan',
+    'Gareth', 'Halia', 'Ivor', 'Jora', 'Kael', 'Lyra',
+    'Magnus', 'Nyx', 'Oren', 'Pyra', 'Quinn', 'Rhea',
+    'Soren', 'Tessa', 'Ulric', 'Vyra', 'Wren', 'Xanthe',
+];
+
+export const BOT_EMOJIS = ['🦉', '🐺', '🦊', '🐉', '🦅', '🐲', '🦝', '🐯', '🦁', '🐱'];
+
+export const BOT_LEVEL_CONFIG: Record<BotLevel, { name: string; accuracy: number; minDelayMs: number; maxDelayMs: number }> = {
+    easy: { name: 'Aprendiz', accuracy: 0.55, minDelayMs: 6000, maxDelayMs: 11000 },
+    medium: { name: 'Veterano', accuracy: 0.78, minDelayMs: 4000, maxDelayMs: 8000 },
+    hard: { name: 'Mestre', accuracy: 0.92, minDelayMs: 2500, maxDelayMs: 5500 },
+};
 
 export interface WordEnigma {
     word: string;

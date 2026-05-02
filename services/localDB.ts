@@ -52,6 +52,7 @@ export interface LocalProfile {
     colorCorrections?: Record<string, ColorCorrectionToken[]>; // sentenceId -> tokens coloridos
     readingMode?: ReadingMode;
     readingPrefs?: ReadingPrefs;
+    legacyIdsMigratedAt?: string; // marca a migração one-time de IDs numéricos para string
 }
 
 export interface VoiceRecording {

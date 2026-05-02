@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Icon from '../../../components/Icon';
 import FlagSelect from '../../../components/FlagSelect';
-import { PolyQuestRoom, SUPPORTED_LANGUAGES, PlayerClass, PLAYER_CLASSES } from '../types';
+import { PolyQuestRoom, SUPPORTED_LANGUAGES, PlayerClass, PLAYER_CLASSES, BotLevel, BOT_LEVEL_CONFIG } from '../types';
 import { RULES } from '../rules';
 import { validateText } from '../utils';
 import { GameContentSelectorModal } from '../../DominoView/components/GameContentSelectorModal';
@@ -21,12 +21,17 @@ interface Props {
     onStartGame: () => void;
     onLeaveRoom: () => void;
     onDeleteRoom: () => void;
+    onAddBot: (level: BotLevel) => void;
+    onKickPlayer: (playerId: string) => void;
 }
 
 export const PolyQuestLobby: React.FC<Props> = ({
     room, isHost, currentUserId, onToggleReady, onSelectClass,
     onUpdateConfig, onStartGame, onLeaveRoom, onDeleteRoom,
+    onAddBot, onKickPlayer,
 }) => {
+    const [botLevel, setBotLevel] = useState<BotLevel>('medium');
+    const [showBotMenu, setShowBotMenu] = useState(false);
     const [sourceLang, setSourceLang] = useState(room.config.sourceLang);
     const [targetLang, setTargetLang] = useState(room.config.targetLang);
     const [text, setText] = useState(room.config.originalText);
@@ -120,23 +125,57 @@ export const PolyQuestLobby: React.FC<Props> = ({
 
                     {/* Lista de jogadores */}
                     <div>
-                        <h3 className="text-xs font-bold uppercase tracking-wider text-white/50 mb-2">
-                            Aventureiros ({room.players.length})
-                        </h3>
+                        <div className="flex items-center justify-between mb-2">
+                            <h3 className="text-xs font-bold uppercase tracking-wider text-white/50">
+                                Aventureiros ({room.players.length}/6)
+                            </h3>
+                            {isHost && room.players.length < 6 && (
+                                <div className="relative">
+                                    <button
+                                        onClick={() => setShowBotMenu(s => !s)}
+                                        className="px-2.5 py-1 bg-violet-500/20 hover:bg-violet-500/30 text-violet-200 border border-violet-400/40 rounded-lg text-xs font-bold flex items-center gap-1.5"
+                                    >
+                                        <Icon name="plus" size={12} /> Bot
+                                    </button>
+                                    {showBotMenu && (
+                                        <div className="absolute right-0 top-full mt-1 bg-[#1a0a3d] border border-violet-400/40 rounded-xl p-2 z-20 shadow-xl w-44">
+                                            <p className="text-[10px] uppercase tracking-wider text-violet-300 font-bold mb-1.5 px-1">Nível</p>
+                                            {(['easy', 'medium', 'hard'] as BotLevel[]).map(l => (
+                                                <button
+                                                    key={l}
+                                                    onClick={() => { setBotLevel(l); audio.classPerk(); onAddBot(l); setShowBotMenu(false); }}
+                                                    className={`w-full text-left px-2 py-1.5 rounded-lg text-xs font-bold mb-0.5 transition-colors ${botLevel === l ? 'bg-violet-500/30 text-white' : 'text-white/70 hover:bg-white/5'}`}
+                                                >
+                                                    {BOT_LEVEL_CONFIG[l].name}
+                                                    <span className="ml-1.5 text-white/40 text-[10px] font-normal">
+                                                        {Math.round(BOT_LEVEL_CONFIG[l].accuracy * 100)}% acerto
+                                                    </span>
+                                                </button>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {room.players.map(p => {
                                 const color = getPlayerColor(p.id);
                                 const cls = p.cls ? PLAYER_CLASSES.find(c => c.id === p.cls) : null;
+                                const isBot = p.isBot;
                                 return (
                                     <div
                                         key={p.id}
-                                        className="flex items-center gap-3 p-2.5 rounded-xl border-2 backdrop-blur"
+                                        className={`flex items-center gap-3 p-2.5 rounded-xl border-2 backdrop-blur group ${isBot ? 'border-dashed' : ''}`}
                                         style={{
                                             backgroundColor: `${color.hex}20`,
                                             borderColor: p.isReady ? '#10B981' : color.hex,
                                         }}
                                     >
-                                        {p.avatarUrl ? (
+                                        {isBot ? (
+                                            <div className="w-10 h-10 rounded-full flex items-center justify-center text-2xl bg-violet-500/30 border border-violet-400/40">
+                                                {p.botEmoji || '🤖'}
+                                            </div>
+                                        ) : p.avatarUrl ? (
                                             <img src={p.avatarUrl} alt={p.name} className="w-10 h-10 rounded-full ring-2 ring-white/30" />
                                         ) : (
                                             <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style={{ backgroundColor: color.hex }}>
@@ -146,16 +185,26 @@ export const PolyQuestLobby: React.FC<Props> = ({
                                         <div className="flex-1 min-w-0">
                                             <div className="flex items-center gap-1.5">
                                                 <span className="font-bold text-sm truncate">{p.name}</span>
+                                                {isBot && <span className="text-[9px] uppercase tracking-wider px-1 py-0.5 rounded bg-violet-500/30 text-violet-200 font-black">{BOT_LEVEL_CONFIG[p.botLevel || 'medium'].name}</span>}
                                                 {p.id === room.hostId && <span className="text-xs">👑</span>}
                                                 {cls && <span title={cls.name} className="text-base">{cls.icon}</span>}
                                             </div>
                                             <div className="flex items-center gap-2 mt-0.5">
                                                 <span className={`text-xs font-bold ${p.isReady ? 'text-emerald-300' : 'text-white/50'}`}>
-                                                    {p.isReady ? '✅ Pronto' : '⏳ Aguardando'}
+                                                    {p.isReady ? (isBot ? '🤖 Bot ativo' : '✅ Pronto') : '⏳ Aguardando'}
                                                 </span>
-                                                <span className="text-[10px] text-amber-300 font-semibold">LVL {p.totalScore || 0}</span>
+                                                {!isBot && <span className="text-[10px] text-amber-300 font-semibold">LVL {p.totalScore || 0}</span>}
                                             </div>
                                         </div>
+                                        {isHost && p.id !== currentUserId && (
+                                            <button
+                                                onClick={() => { if (confirm(`Remover ${p.name}?`)) onKickPlayer(p.id); }}
+                                                className="opacity-0 group-hover:opacity-100 transition-opacity p-1.5 text-white/40 hover:text-rose-400"
+                                                title="Remover"
+                                            >
+                                                <Icon name="x" size={14} />
+                                            </button>
+                                        )}
                                     </div>
                                 );
                             })}

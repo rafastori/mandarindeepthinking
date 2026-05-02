@@ -65,6 +65,7 @@ export const BossPhase: React.FC<Props> = ({
                 let target = '';
                 let blocks: string[] = [];
                 if (room.config.context === 'library') {
+                    // 1ª preferência: usar uma frase REAL da biblioteca (originalSentence salvo).
                     const itemsWithSentences = items.filter(i => {
                         const isSel = (room.config.selectedFolderIds || []).some(p => {
                             if (p === '__uncategorized__' && !i.folderPath) return true;
@@ -79,10 +80,22 @@ export const BossPhase: React.FC<Props> = ({
                         blocks = isCJK
                             ? target.split(/(\s+|[.,!?;:()]|[　-〿぀-ゟ゠-ヿ一-龯]+)/).filter(t => t.trim().length > 0)
                             : target.split(/\s+/).filter(t => t.length > 0);
+                    } else if (room.config.originalText && room.config.originalText.length > 10) {
+                        // 2ª preferência: pedir à IA pra escolher/montar uma frase a partir do
+                        // texto agregado da biblioteca. Evita o fallback ruim de 5 palavras soltas.
+                        const data = await generateBossLevel(room.config.originalText, room.config.sourceLang, room.config.difficulty);
+                        target = data.originalSentence;
+                        blocks = data.blocks;
                     } else {
-                        const shuffled = [...gamePairs].sort(() => 0.5 - Math.random()).slice(0, 5);
-                        target = shuffled.map(p => p.term).join(' ');
-                        blocks = shuffled.map(p => p.term);
+                        // Último recurso: pede à IA usando palavras da biblioteca como contexto.
+                        const wordsContext = gamePairs.slice(0, 20).map(p => p.term).join(', ');
+                        const data = await generateBossLevel(
+                            `Vocabulário disponível: ${wordsContext}. Crie uma frase natural usando algumas dessas palavras.`,
+                            room.config.sourceLang,
+                            room.config.difficulty,
+                        );
+                        target = data.originalSentence;
+                        blocks = data.blocks;
                     }
                 } else {
                     const data = await generateBossLevel(room.config.originalText, room.config.sourceLang, room.config.difficulty);

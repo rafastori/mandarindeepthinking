@@ -71,7 +71,7 @@ const App: React.FC = () => {
     }, [isColorHighlightEnabled]);
     const [showFullStats, setShowFullStats] = useState(false);
 
-    const { items: localItems, addItem, deleteItem, updateItem, reorderItems, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
+    const { items: localItems, addItem, deleteItem, deleteManyItems, updateItem, reorderItems, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
     const detailedStats = useDetailedStats();
     const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
@@ -476,14 +476,21 @@ const App: React.FC = () => {
     };
 
     const handleDelete = async (id: string | number) => {
-        if (typeof id === 'string') {
-            if (window.confirm("Tem certeza que deseja excluir permanentemente esta palavra/texto?")) {
-                toggleSave(id);
-                await deleteItem(id);
-            }
-        } else {
-            alert("Não é possível deletar itens padrão do sistema.");
+        if (window.confirm("Tem certeza que deseja excluir permanentemente esta palavra/texto?")) {
+            if (typeof id === 'string') toggleSave(id);
+            await deleteItem(id);
         }
+    };
+
+    /** Apaga vários itens de uma vez. NÃO pede confirmação aqui — caller já confirma. */
+    const handleDeleteMany = async (ids: (string | number)[]) => {
+        if (ids.length === 0) return;
+        // Remove dos savedIds qualquer um que estivesse marcado
+        const stringIds = ids.filter((id): id is string => typeof id === 'string');
+        for (const sid of stringIds) {
+            if (activeSavedIds.includes(sid)) toggleSave(sid);
+        }
+        await deleteManyItems(ids);
     };
 
     // Wrapper para exportar dados completos (inclui profile)
@@ -603,6 +610,7 @@ const App: React.FC = () => {
                         onOpenRepository={() => setShowRepository(true)}
                         onOpenImportInFolder={handleOpenImportInFolder}
                         onDeleteText={handleDelete}
+                        onDeleteMany={handleDeleteMany}
                         onSaveGeneratedCard={handleSaveGeneratedCard}
                         onUpdateItem={updateItem}
                         onReorderItems={reorderItems}

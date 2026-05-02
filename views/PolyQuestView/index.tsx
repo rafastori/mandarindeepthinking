@@ -3,6 +3,7 @@ import { auth } from '../../services/firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import Icon from '../../components/Icon';
 import { usePolyQuestRoom } from './hooks/usePolyQuestRoom';
+import { useBotDriver } from './hooks/useBotDriver';
 import { createPlayerFromUser } from './utils';
 import { useStudyItems } from '../../hooks/useStudyItems';
 import { useUserProfile } from '../../hooks/useUserProfile';
@@ -37,6 +38,19 @@ const PolyQuestView: React.FC<PolyQuestViewProps> = ({ onBack }) => {
     const { addItem } = useStudyItems(user?.uid);
     const { savedIds, updateFavorites, totalScore } = useUserProfile(user?.uid);
     const tutorial = useTutorial();
+
+    // Bot driver — só roda no host
+    const isHost = !!(room.activeRoom && user && room.activeRoom.hostId === user.uid);
+    useBotDriver(room.activeRoom, isHost, user?.uid || '', {
+        lockEnigma: room.lockEnigma,
+        unlockEnigma: room.unlockEnigma,
+        submitAnswer: room.submitAnswer,
+        addBossBlock: room.addBossBlock,
+        attackBoss: room.attackBoss,
+        resolveIntruder: room.resolveIntruder,
+        toggleWordSelection: room.toggleWordSelection,
+        finishExploration: room.finishExploration,
+    });
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, setUser);
@@ -361,6 +375,8 @@ const PhaseRouter: React.FC<PhaseRouterProps> = ({ room, user, api, onShowOrigin
                 onStartGame={() => api.startGame(room.id)}
                 onLeaveRoom={onResetGame}
                 onDeleteRoom={() => api.deleteRoom(room.id)}
+                onAddBot={(level) => api.addBot(room.id, level)}
+                onKickPlayer={(pid) => api.kickPlayer(room.id, pid)}
             />
         );
     }

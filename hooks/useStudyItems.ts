@@ -12,7 +12,43 @@ export const useStudyItems = (userId: string | null | undefined) => {
   const [items, setItems] = useState<StudyItem[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Carrega itens do IndexedDB na inicialização
+  /**
+   * Migração one-time: itens antigos têm `id: number` (vindo do tempo Firebase legacy).
+   * Isso quebra comparações strict (`item.id !== id`) e Map.get() em vários lugares.
+   * Aqui convertemos TODOS os IDs numéricos para `legacy_<n>` (string).
+   * Roda só uma vez por usuário (controlado por flag em LocalProfile).
+   */
+  const runLegacyIdMigrationIfNeeded = async (): Promise<void> => {
+    try {
+      const profile = await localDB.getProfile();
+      if (profile.legacyIdsMigratedAt) return; // já rodou
+
+      const all = await localDB.getAllItems();
+      const numericItems = all.filter(it => typeof it.id === 'number');
+
+      if (numericItems.length === 0) {
+        // Marca como concluída pra não checar de novo
+        await localDB.updateProfile({ legacyIdsMigratedAt: new Date().toISOString() });
+        return;
+      }
+
+      console.log(`[migration] convertendo ${numericItems.length} IDs numéricos para string…`);
+
+      // Apaga os antigos (chave numérica) e re-insere com nova chave string
+      const oldKeys: (string | number)[] = numericItems.map(it => it.id);
+      const remapped: StudyItem[] = numericItems.map(it => ({ ...it, id: `legacy_${it.id}` }));
+
+      await localDB.bulkDeleteItems(oldKeys);
+      await localDB.bulkPutItems(remapped);
+
+      await localDB.updateProfile({ legacyIdsMigratedAt: new Date().toISOString() });
+      console.log('[migration] concluída');
+    } catch (e) {
+      console.error('[migration] falhou (não bloqueia carregamento):', e);
+    }
+  };
+
+  // Carrega itens do IndexedDB na inicialização (com migração de IDs legados)
   useEffect(() => {
     if (!userId) {
       setItems([]);
@@ -24,6 +60,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
     const loadItems = async () => {
       try {
+        await runLegacyIdMigrationIfNeeded();
         const localItems = await localDB.getAllItems();
         if (!cancelled) {
           // Ordena por createdAt descrescente (mais recentes primeiro)
@@ -66,11 +103,20 @@ export const useStudyItems = (userId: string | null | undefined) => {
     return id;
   }, [userId]);
 
-  // Remove um item
-  const deleteItem = useCallback(async (id: string) => {
+  // Remove um item (aceita string OU number — IDs antigos são number)
+  const deleteItem = useCallback(async (id: string | number) => {
     if (!userId) return;
     await localDB.deleteItem(id);
-    setItems(prev => prev.filter(item => item.id !== id));
+    // Comparação por String() para suportar IDs numéricos legados
+    setItems(prev => prev.filter(item => String(item.id) !== String(id)));
+  }, [userId]);
+
+  // Apaga vários de uma vez (batch)
+  const deleteManyItems = useCallback(async (ids: (string | number)[]) => {
+    if (!userId || ids.length === 0) return;
+    await localDB.bulkDeleteItems(ids);
+    const idSet = new Set(ids.map(i => String(i)));
+    setItems(prev => prev.filter(item => !idSet.has(String(item.id))));
   }, [userId]);
 
   // Atualiza um item parcialmente
@@ -110,30 +156,47 @@ export const useStudyItems = (userId: string | null | undefined) => {
     });
   }, [userId]);
 
-  // Reordena itens de forma atômica (batch write + reload)
-  const reorderItems = useCallback(async (updates: { id: string; createdAt: string }[]) => {
+  /**
+   * Reordena itens de forma atômica.
+   *
+   * Estratégia: o caller manda a NOVA ORDEM completa de IDs.
+   * Reescrevemos os createdAt em sequência decrescente partindo de Date.now(),
+   * 1 segundo por posição. Isso garante que:
+   *  - IDs numéricos (legados) ou string funcionam igual (compara via String()).
+   *  - Não dependemos de timestamps antigos (que podem estar em formato Firestore,
+   *    null, idênticos entre si, ou ausentes).
+   *  - A ordenação resultante por createdAt DESC bate exatamente com a ordem pedida.
+   */
+  const reorderItems = useCallback(async (updates: { id: string | number; createdAt?: string }[]) => {
     if (!userId || updates.length === 0) return;
 
     try {
-      // 1. Ler todos os itens do IndexedDB (fonte de verdade)
+      const now = Date.now();
+      // Mapa: id -> nova data (1s entre posições, posição 0 = mais recente)
+      const updateMap = new Map<string, string>();
+      updates.forEach((u, i) => {
+        updateMap.set(String(u.id), new Date(now - i * 1000).toISOString());
+      });
+
+      // Lê tudo do IndexedDB e aplica novas datas
       const allItems = await localDB.getAllItems();
-
-      // 2. Criar mapa de atualizações por ID (sempre como string, pois IDs antigos podem ser number)
-      const updateMap = new Map(updates.map(u => [String(u.id), u.createdAt]));
-
-      // 3. Aplicar as novas datas nos itens
+      let touched = 0;
       const updatedItems = allItems.map(item => {
         const newCreatedAt = updateMap.get(String(item.id));
         if (newCreatedAt) {
+          touched++;
           return { ...item, createdAt: newCreatedAt };
         }
         return item;
       });
 
-      // 4. Escrever TUDO de volta de uma vez (transação atômica)
+      if (touched === 0) {
+        console.warn('[reorderItems] Nenhum item bateu com os IDs enviados:', updates.slice(0, 3));
+      }
+
       await localDB.bulkPutItems(updatedItems);
 
-      // 5. Recarregar do IndexedDB e reordenar (como o importData faz)
+      // Recarrega + ordena (mesmo padrão do load inicial)
       const reloaded = await localDB.getAllItems();
       reloaded.sort((a, b) => {
         const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
@@ -142,7 +205,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
       });
       setItems(reloaded);
 
-      console.log(`[reorderItems] ${updates.length} itens reordenados com sucesso`);
+      console.log(`[reorderItems] ${touched}/${updates.length} itens reordenados`);
     } catch (error) {
       console.error('[reorderItems] Erro:', error);
       throw error;
@@ -339,6 +402,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
     loading,
     addItem,
     deleteItem,
+    deleteManyItems,
     updateItem,
     reorderItems,
     clearLibrary,

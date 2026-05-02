@@ -69,9 +69,10 @@ interface ReadingViewProps {
     onOpenRepository: () => void;
     onOpenImportInFolder?: (folderPath: string) => void;
     onDeleteText?: (id: string | number) => void;
+    onDeleteMany?: (ids: (string | number)[]) => Promise<void>;
     onSaveGeneratedCard: (card: Keyword, context: string) => void;
     onUpdateItem?: (id: string, data: Partial<StudyItem>) => void;
-    onReorderItems?: (updates: { id: string; createdAt: string }[]) => Promise<void>;
+    onReorderItems?: (updates: { id: string | number; createdAt?: string }[]) => Promise<void>;
     activeFolderFilters: string[];
     onUpdateFolderFilters: (filters: string[]) => void;
     userId?: string;
@@ -88,6 +89,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onOpenRepository,
     onOpenImportInFolder,
     onDeleteText,
+    onDeleteMany,
     onSaveGeneratedCard,
     onUpdateItem,
     onReorderItems,
@@ -468,13 +470,20 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         setSelectedIds(new Set());
     };
 
-    // Excluir itens selecionados
-    const handleDeleteSelected = () => {
-        if (selectedIds.size === 0 || !onDeleteText) return;
+    // Excluir itens selecionados — usa onDeleteMany (batch) se disponível, senão cai
+    // num loop SEM confirmar por item (já confirmamos uma vez aqui).
+    const handleDeleteSelected = async () => {
+        if (selectedIds.size === 0) return;
         const count = selectedIds.size;
         if (!window.confirm(`Tem certeza que deseja excluir ${count} item(s)?`)) return;
 
-        selectedIds.forEach(id => onDeleteText(id));
+        const ids = Array.from(selectedIds);
+        if (onDeleteMany) {
+            await onDeleteMany(ids);
+        } else if (onDeleteText) {
+            // Fallback: chama uma vez por item, sem novo confirm
+            for (const id of ids) onDeleteText(id);
+        }
         setSelectedIds(new Set());
         setSelectionMode(false);
     };
@@ -534,45 +543,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         }
 
         try {
-            const itemCount = localReorderData.length;
-
-            // Pegamos os tempos reais como números para gerar sequência estritamente descendente
-            const times = filteredData.slice(0, itemCount).map((i, idx) => {
-                let time = new Date(i.createdAt || new Date().toISOString()).getTime();
-                if (isNaN(time)) {
-                    time = Date.now() - (idx * 1000);
-                }
-                return time;
-            });
-
-            // Ordena do maior (mais recente) pro menor (mais antigo)
-            times.sort((a, b) => b - a);
-
-            // Força diferença de pelo menos 1ms entre cada posição para evitar empates
-            for (let i = 1; i < times.length; i++) {
-                if (times[i] >= times[i - 1]) {
-                    times[i] = times[i - 1] - 1;
-                }
-            }
-
-            // Construir array de updates {id, createdAt} para batch atômico
-            const updates: { id: string; createdAt: string }[] = [];
-            for (let i = 0; i < localReorderData.length; i++) {
-                const item = localReorderData[i];
-                const timeToUse = (i < times.length && !isNaN(times[i]))
-                    ? times[i]
-                    : Date.now() - (i * 1000);
-                const novaDataIso = new Date(timeToUse).toISOString();
-
-                if (item.createdAt !== novaDataIso) {
-                    updates.push({ id: item.id.toString(), createdAt: novaDataIso });
-                }
-            }
-
-            if (updates.length > 0) {
-                await onReorderItems(updates);
-                console.log(`[saveReorder] ${updates.length} itens reordenados`);
-            }
+            // Apenas envia a NOVA ORDEM. O hook reescreve createdAt em sequência decrescente
+            // partindo de Date.now() — não dependemos dos timestamps antigos (que podem estar
+            // bagunçados em coleções legadas).
+            const updates = localReorderData.map(item => ({ id: item.id }));
+            await onReorderItems(updates);
+            console.log(`[saveReorder] ${updates.length} itens reordenados`);
         } catch (error) {
             console.error('[saveReorder] Erro:', error);
             alert('Erro ao salvar a sequência. Verifique o console.');
@@ -965,7 +941,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 </button>
                                 <button
                                     onClick={handleDeleteSelected}
-                                    disabled={selectedIds.size === 0 || !onDeleteText}
+                                    disabled={selectedIds.size === 0 || (!onDeleteMany && !onDeleteText)}
                                     className={`flex items-center gap-1.5 px-4 py-2 rounded-xl font-bold text-sm transition-all ${selectedIds.size > 0
                                         ? 'bg-red-500 text-white shadow-md hover:bg-red-600'
                                         : 'bg-slate-200 text-slate-400 cursor-not-allowed'

@@ -26,6 +26,10 @@ import {
     BossDef,
     PlayerClass,
     GamePhase,
+    BotLevel,
+    BOT_NAMES,
+    BOT_EMOJIS,
+    PLAYER_CLASSES,
 } from '../types';
 import { RULES, calculateBossHP, comboMultiplierFor, pickRandomBoss } from '../rules';
 
@@ -248,6 +252,55 @@ export const usePolyQuestRoom = (userId?: string) => {
             const players = data.players.map(p => p.id === playerId ? { ...p, isReady } : p);
             tx.update(ref, { players, updatedAt: Timestamp.now() });
         }).catch(e => console.error('[PolyQuest] toggleReady:', e));
+    }, []);
+
+    /** Adiciona um bot à sala (host only). Cores/classes round-robin. */
+    const addBot = useCallback(async (roomId: string, level: BotLevel = 'medium') => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            if (data.players.length >= 6) return; // Limite de 6
+            // Nome único
+            const usedNames = new Set(data.players.map(p => p.name));
+            const nameCandidate = BOT_NAMES.find(n => !usedNames.has(n)) || `Bot ${data.players.length + 1}`;
+            // Classe round-robin
+            const usedClasses = data.players.map(p => p.cls).filter(Boolean);
+            const cls = PLAYER_CLASSES.find(c => !usedClasses.includes(c.id))?.id || PLAYER_CLASSES[data.players.length % 3].id;
+            const emoji = BOT_EMOJIS[data.players.length % BOT_EMOJIS.length];
+            const bot: PolyQuestPlayer = {
+                id: `bot_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+                name: nameCandidate,
+                avatarUrl: '',
+                score: 0,
+                isReady: true,
+                consecutiveCorrect: 0,
+                helpCount: 0,
+                totalScore: 0,
+                cls,
+                isBot: true,
+                botLevel: level,
+                botEmoji: emoji,
+            };
+            tx.update(ref, {
+                players: [...data.players, bot],
+                updatedAt: Timestamp.now(),
+            });
+        }).catch(e => console.error('[PolyQuest] addBot:', e));
+    }, []);
+
+    /** Remove qualquer jogador (host only) — usado para "kick bot". */
+    const kickPlayer = useCallback(async (roomId: string, playerId: string) => {
+        await runTransaction(db, async (tx) => {
+            const ref = doc(db, 'polyquestRooms', roomId);
+            const snap = await tx.get(ref);
+            if (!snap.exists()) return;
+            const data = snap.data() as PolyQuestRoom;
+            const remaining = data.players.filter(p => p.id !== playerId);
+            if (remaining.length === 0) { tx.delete(ref); return; }
+            tx.update(ref, { players: remaining, updatedAt: Timestamp.now() });
+        }).catch(e => console.error('[PolyQuest] kickPlayer:', e));
     }, []);
 
     const setPlayerClass = useCallback(async (roomId: string, playerId: string, cls: PlayerClass) => {
@@ -877,6 +930,8 @@ export const usePolyQuestRoom = (userId?: string) => {
         leaveRoom,
         deleteRoom,
         toggleReady,
+        addBot,
+        kickPlayer,
         setPlayerClass,
         updateConfig,
         startGame,
