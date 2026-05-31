@@ -1,0 +1,875 @@
+[
+  {
+    "chinese": "A: 小王さん、当社へようこそ。契約書をお読みいただいたようですが、ご質問はありますか？",
+    "pinyin": "",
+    "translation": "A: Sr. Wang, bem-vindo à nossa empresa. Você leu o contrato, então tem alguma dúvida?",
+    "tokens": [
+      "A:",
+      "小",
+      "王",
+      "さん",
+      "、",
+      "当社",
+      "へ",
+      "ようこそ",
+      "。",
+      "契約",
+      "書",
+      "を",
+      "お",
+      "読み",
+      "いただい",
+      "た",
+      "よう",
+      "です",
+      "が",
+      "、",
+      "ご",
+      "質問",
+      "は",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当社",
+        "pinyin": "",
+        "meaning": "nossa empresa"
+      },
+      {
+        "id": 2,
+        "word": "ようこそ",
+        "pinyin": "",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 3,
+        "word": "契約書",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "ご質問",
+        "pinyin": "",
+        "meaning": "pergunta, dúvida"
+      },
+      {
+        "id": 5,
+        "word": "ありますか",
+        "pinyin": "",
+        "meaning": "existe, há"
+      }
+    ],
+    "id": "local-1780260093085-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 当社の保険料はどのように支払われているのでしょうか。",
+    "pinyin": "",
+    "translation": "B: Como os seguros da nossa empresa são pagos?",
+    "tokens": [
+      "B:",
+      "当社",
+      "の",
+      "保険",
+      "料",
+      "は",
+      "どの",
+      "よう",
+      "に",
+      "支払わ",
+      "れ",
+      "て",
+      "いる",
+      "の",
+      "でしょ",
+      "う",
+      "か",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当社",
+        "pinyin": "",
+        "meaning": "nossa empresa"
+      },
+      {
+        "id": 2,
+        "word": "保険料",
+        "pinyin": "",
+        "meaning": "prêmio de seguro"
+      },
+      {
+        "id": 3,
+        "word": "支払",
+        "pinyin": "",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 4,
+        "word": "どのように",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 5,
+        "word": "保険",
+        "pinyin": "",
+        "meaning": "seguro"
+      }
+    ],
+    "id": "local-1780260093085-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 「五险一金」の国家規制",
+    "pinyin": "",
+    "translation": "A: Regulamentação estatal do \"seguro social cinco e fundo de habitação um\"",
+    "tokens": [
+      "A:",
+      "「",
+      "五",
+      "险一金",
+      "」",
+      "の",
+      "国家",
+      "規制"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "五险一金",
+        "pinyin": "",
+        "meaning": "cinco seguros sociais e um fundo de habitação"
+      },
+      {
+        "id": 2,
+        "word": "国家",
+        "pinyin": "",
+        "meaning": "nacional"
+      },
+      {
+        "id": 3,
+        "word": "規制",
+        "pinyin": "",
+        "meaning": "regulamentação"
+      }
+    ],
+    "id": "local-1780260093085-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: すみません、中国から戻ったばかりです。よく分かりません。",
+    "pinyin": "",
+    "translation": "B: Desculpe, acabei de voltar para a China. Não entendo muito bem.",
+    "tokens": [
+      "B:",
+      "すみません",
+      "、",
+      "中国",
+      "から",
+      "戻っ",
+      "た",
+      "ばかり",
+      "です",
+      "。",
+      "よく",
+      "分かり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "すみません",
+        "pinyin": "",
+        "meaning": "desculpe / desculpe-me"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "戻った",
+        "pinyin": "",
+        "meaning": "retornado / voltado"
+      },
+      {
+        "id": 4,
+        "word": "ばかり",
+        "pinyin": "",
+        "meaning": "apenas / acabara de"
+      },
+      {
+        "id": 5,
+        "word": "分かりません",
+        "pinyin": "",
+        "meaning": "não entendo / não sei"
+      }
+    ],
+    "id": "local-1780260093085-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 「五險一金」とは、年金保険、医療保険、失業保険、労災保険、出産保険、および住宅積立金を指します。",
+    "pinyin": "",
+    "translation": "A: \"Cinco seguros sociais e um fundo habitacional\" refere-se ao seguro de aposentadoria, seguro de saúde, seguro-desemprego, seguro de acidente de trabalho, seguro de maternidade e fundo de poupança habitacional.",
+    "tokens": [
+      "A:",
+      "「",
+      "五",
+      "險一金",
+      "」",
+      "と",
+      "は",
+      "、",
+      "年金",
+      "保険",
+      "、",
+      "医療",
+      "保険",
+      "、",
+      "失業",
+      "保険",
+      "、",
+      "労災",
+      "保険",
+      "、",
+      "出産",
+      "保険",
+      "、",
+      "および",
+      "住宅",
+      "積立",
+      "金",
+      "を",
+      "指し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "五險一金",
+        "pinyin": "",
+        "meaning": "cinco seguros e um fundo"
+      },
+      {
+        "id": 2,
+        "word": "年金保険",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 3,
+        "word": "医療保険",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 4,
+        "word": "失業保険",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 5,
+        "word": "労災保険",
+        "pinyin": "",
+        "meaning": "seguro de acidente de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "出産保険",
+        "pinyin": "",
+        "meaning": "seguro de maternidade"
+      },
+      {
+        "id": 7,
+        "word": "住宅積立金",
+        "pinyin": "",
+        "meaning": "fundo de poupança habitacional"
+      }
+    ],
+    "id": "local-1780260093085-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 会社はこれらのすべてを支払いますか？",
+    "pinyin": "",
+    "translation": "B: A empresa paga por tudo isso?",
+    "tokens": [
+      "B:",
+      "会社",
+      "は",
+      "これら",
+      "の",
+      "すべて",
+      "を",
+      "支払い",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "会社",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "すべて",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 3,
+        "word": "支払います",
+        "pinyin": "",
+        "meaning": "paga"
+      },
+      {
+        "id": 4,
+        "word": "これら",
+        "pinyin": "",
+        "meaning": "esses"
+      }
+    ],
+    "id": "local-1780260093085-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 老齢保険、医療保険、失業保険および住宅積立金は、会社と個人で共同で負担します。",
+    "pinyin": "",
+    "translation": "A: A previdência para a velhice, o seguro saúde, o seguro desemprego e o fundo de acumulação habitacional são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "A:",
+      "老齢",
+      "保険",
+      "、",
+      "医療",
+      "保険",
+      "、",
+      "失業",
+      "保険",
+      "および",
+      "住宅",
+      "積立",
+      "金",
+      "は",
+      "、",
+      "会社",
+      "と",
+      "個人",
+      "で",
+      "共同",
+      "で",
+      "負担",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "老齢保険",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 2,
+        "word": "医療保険",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "失業保険",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "住宅積立金",
+        "pinyin": "",
+        "meaning": "fundo de acumulação habitacional"
+      },
+      {
+        "id": 5,
+        "word": "共同で負担",
+        "pinyin": "",
+        "meaning": "pagar conjuntamente"
+      }
+    ],
+    "id": "local-1780260093085-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、いくら支払う必要がありますか？",
+    "pinyin": "",
+    "translation": "B: Então, quanto precisa ser pago?",
+    "tokens": [
+      "B:",
+      "では",
+      "、",
+      "いくら",
+      "支払う",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então, nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "いくら",
+        "pinyin": "",
+        "meaning": "quanto, quão muito"
+      },
+      {
+        "id": 3,
+        "word": "支払う",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 4,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessidade, necessário"
+      },
+      {
+        "id": 5,
+        "word": "ありますか",
+        "pinyin": "",
+        "meaning": "existe, há"
+      }
+    ],
+    "id": "local-1780260093085-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 都市はそれぞれ異なります。上海では、老齢保険は個人が8%、企業が21%を負担します。医療保険は個人が2%、企業が11%です。失業保険は個人が0.5%、企業が1.5%です。積立金については、個人と企業がそれぞれ7%を負担します。",
+    "pinyin": "",
+    "translation": "A: Cada cidade é diferente. Em Xangai, para o seguro de velhice, o indivíduo paga 8% e a empresa paga 21%. Para o seguro de saúde, o indivíduo paga 2% e a empresa paga 11%. Para o seguro-desemprego, o indivíduo paga 0,5% e a empresa paga 1,5%. O indivíduo e a empresa pagam cada um 7% para o fundo de acumulação.",
+    "tokens": [
+      "A:",
+      "都市",
+      "は",
+      "それぞれ",
+      "異なり",
+      "ます",
+      "。",
+      "上海",
+      "で",
+      "は",
+      "、",
+      "老齢",
+      "保険",
+      "は",
+      "個人",
+      "が",
+      "8",
+      "%、",
+      "企業",
+      "が",
+      "21",
+      "%",
+      "を",
+      "負担",
+      "し",
+      "ます",
+      "。",
+      "医療",
+      "保険",
+      "は",
+      "個人",
+      "が",
+      "2",
+      "%、",
+      "企業",
+      "が",
+      "11",
+      "%",
+      "です",
+      "。",
+      "失業",
+      "保険",
+      "は",
+      "個人",
+      "が",
+      "0",
+      ".",
+      "5",
+      "%、",
+      "企業",
+      "が",
+      "1",
+      ".",
+      "5",
+      "%",
+      "です",
+      "。",
+      "積立",
+      "金",
+      "について",
+      "は",
+      "、",
+      "個人",
+      "と",
+      "企業",
+      "が",
+      "それぞれ",
+      "7",
+      "%",
+      "を",
+      "負担",
+      "し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "老齢保険",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 2,
+        "word": "医療保険",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 3,
+        "word": "失業保険",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 4,
+        "word": "積立金",
+        "pinyin": "",
+        "meaning": "fundo de acumulação"
+      },
+      {
+        "id": 5,
+        "word": "個人",
+        "pinyin": "",
+        "meaning": "indivíduo"
+      },
+      {
+        "id": 6,
+        "word": "企業",
+        "pinyin": "",
+        "meaning": "empresa"
+      }
+    ],
+    "id": "local-1780260093085-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、私の在留カードは上海にありませんが、上海の基準に従って支払う必要がありますか？",
+    "pinyin": "",
+    "translation": "B: Então, meu cartão de residência não está em Xangai, então tenho que pagar de acordo com o critério de Xangai?",
+    "tokens": [
+      "B:",
+      "では",
+      "、",
+      "私",
+      "の",
+      "在留",
+      "カード",
+      "は",
+      "上海",
+      "に",
+      "あり",
+      "ませ",
+      "ん",
+      "が",
+      "、",
+      "上海",
+      "の",
+      "基準",
+      "に従って",
+      "支払う",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "在留カード",
+        "pinyin": "",
+        "meaning": "cartão de residência"
+      },
+      {
+        "id": 2,
+        "word": "上海",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "基準",
+        "pinyin": "",
+        "meaning": "critério"
+      },
+      {
+        "id": 4,
+        "word": "支払う",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 5,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessário"
+      }
+    ],
+    "id": "local-1780260093085-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: はい、上海で働いているからです。",
+    "pinyin": "",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "A:",
+      "はい",
+      "、",
+      "上海",
+      "で",
+      "働い",
+      "て",
+      "いる",
+      "から",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上海",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 2,
+        "word": "働いている",
+        "pinyin": "",
+        "meaning": "trabalhando"
+      },
+      {
+        "id": 3,
+        "word": "から",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 4,
+        "word": "はい",
+        "pinyin": "",
+        "meaning": "sim"
+      }
+    ],
+    "id": "local-1780260093085-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 退職した場合、上海で老齢保険を受け取ることができますか。",
+    "pinyin": "",
+    "translation": "B: Se eu me aposentar, posso receber o seguro de velhice de Xangai?",
+    "tokens": [
+      "B:",
+      "退職",
+      "し",
+      "た",
+      "場合",
+      "、",
+      "上海",
+      "で",
+      "老齢",
+      "保険",
+      "を",
+      "受け取る",
+      "こと",
+      "が",
+      "でき",
+      "ます",
+      "か",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "退職",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "老齢保険",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 3,
+        "word": "上海",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "受け取る",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 5,
+        "word": "場合",
+        "pinyin": "",
+        "meaning": "caso"
+      }
+    ],
+    "id": "local-1780260093085-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: これはむしろ迷惑な話です。退職する場合でも、在留カードが上海にない場合、老齢年金の受給は本籍地でのみ行うことができます。",
+    "pinyin": "",
+    "translation": "A: Isso é mais uma inconveniência. Se você se aposentar, mas sua permissão de residência não estiver em Xangai, então você só poderá ir ao local do seu residência permanente para coletar o seguro de velhice.",
+    "tokens": [
+      "A:",
+      "これ",
+      "は",
+      "むしろ",
+      "迷惑",
+      "な",
+      "話",
+      "です",
+      "。",
+      "退職",
+      "する",
+      "場合",
+      "でも",
+      "、",
+      "在留",
+      "カード",
+      "が",
+      "上海",
+      "に",
+      "ない",
+      "場合",
+      "、",
+      "老齢",
+      "年金",
+      "の",
+      "受給",
+      "は",
+      "本籍",
+      "地",
+      "で",
+      "のみ",
+      "行う",
+      "こと",
+      "が",
+      "でき",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "在留カード",
+        "pinyin": "",
+        "meaning": "cartão de residência"
+      },
+      {
+        "id": 2,
+        "word": "老齢年金",
+        "pinyin": "",
+        "meaning": "pensão de velhice"
+      },
+      {
+        "id": 3,
+        "word": "本籍地",
+        "pinyin": "",
+        "meaning": "local de residência permanente"
+      },
+      {
+        "id": 4,
+        "word": "受給",
+        "pinyin": "",
+        "meaning": "recebimento"
+      },
+      {
+        "id": 5,
+        "word": "退職",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      }
+    ],
+    "id": "local-1780260093085-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: とても複雑です。",
+    "pinyin": "",
+    "translation": "B: É muito complicado.",
+    "tokens": [
+      "B:",
+      "とても",
+      "複雑",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "とても",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 2,
+        "word": "複雑",
+        "pinyin": "",
+        "meaning": "complicado"
+      },
+      {
+        "id": 3,
+        "word": "です",
+        "pinyin": "",
+        "meaning": "é (polido)"
+      }
+    ],
+    "id": "local-1780260093085-13",
+    "language": "Japonês"
+  }
+]

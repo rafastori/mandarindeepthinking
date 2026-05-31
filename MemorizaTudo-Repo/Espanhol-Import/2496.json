@@ -1,0 +1,816 @@
+[
+  {
+    "chinese": "A: ¡Todos están presentes! Permíteme presentar a mi colega Tom. Su chino es súper impresionante. ¡Ya ha aprobado el nivel 6 del HSK! Y ya tiene bastante experiencia traduciendo.",
+    "pinyin": "",
+    "translation": "A: Todos estão presentes! Deixem-me apresentar meu colega Tom. O chinês dele é super incrível. Ele já passou no nível 6 do HSK! E ele já tem bastante experiência traduzindo.",
+    "tokens": [
+      "A:",
+      "¡",
+      "Todos",
+      "están",
+      "presentes",
+      "!",
+      "Permíteme",
+      "presentar",
+      "a",
+      "mi",
+      "colega",
+      "Tom",
+      ".",
+      "Su",
+      "chino",
+      "es",
+      "súper",
+      "impresionante",
+      ".",
+      "¡",
+      "Ya",
+      "ha",
+      "aprobado",
+      "el",
+      "nivel",
+      "6",
+      "del",
+      "HSK",
+      "!",
+      "Y",
+      "ya",
+      "tiene",
+      "bastante",
+      "experiencia",
+      "traduciendo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "presentes",
+        "pinyin": "",
+        "meaning": "presentes"
+      },
+      {
+        "id": 2,
+        "word": "colega",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 3,
+        "word": "súper impresionante",
+        "pinyin": "",
+        "meaning": "super incrível"
+      },
+      {
+        "id": 4,
+        "word": "aprobado",
+        "pinyin": "",
+        "meaning": "aprovado"
+      },
+      {
+        "id": 5,
+        "word": "nivel 6",
+        "pinyin": "",
+        "meaning": "nível 6"
+      },
+      {
+        "id": 6,
+        "word": "experiencia",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 7,
+        "word": "traduciendo",
+        "pinyin": "",
+        "meaning": "traduzindo"
+      }
+    ],
+    "id": "local-1780236255846-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Qué genial! ¡Comparte con nosotros tus secretos de estudio! Nunca logro recordar palabras nuevas. En cuanto termino de estudiar una cosa, olvido la otra. Ya llevo estudiando tres o cuatro años y antes de decir algo todavía tengo que pensar bastante. Me da miedo cometer un error o que mis tonos no sean correctos, y que los demás se rían de mí.",
+    "pinyin": "",
+    "translation": "B: Que incrível! Compartilhe conosco seus segredos de estudo! Nunca consigo lembrar de palavras novas. Assim que termino de estudar uma coisa, esqueço a outra. Já estudo há três ou quatro anos e antes de dizer algo ainda tenho que pensar por um bom tempo. Tenho medo de cometer um erro ou de que meus tons não estejam corretos, e que os outros riam de mim.",
+    "tokens": [
+      "B:",
+      "¡",
+      "Qué",
+      "genial",
+      "!",
+      "¡",
+      "Comparte",
+      "con",
+      "nosotros",
+      "tus",
+      "secretos",
+      "de",
+      "estudio",
+      "!",
+      "Nunca",
+      "logro",
+      "recordar",
+      "palabras",
+      "nuevas",
+      ".",
+      "En",
+      "cuanto",
+      "termino",
+      "de",
+      "estudiar",
+      "una",
+      "cosa",
+      ",",
+      "olvido",
+      "la",
+      "otra",
+      ".",
+      "Ya",
+      "llevo",
+      "estudiando",
+      "tres",
+      "o",
+      "cuatro",
+      "años",
+      "y",
+      "antes",
+      "de",
+      "decir",
+      "algo",
+      "todavía",
+      "tengo",
+      "que",
+      "pensar",
+      "bastante",
+      ".",
+      "Me",
+      "da",
+      "miedo",
+      "cometer",
+      "un",
+      "error",
+      "o",
+      "que",
+      "mis",
+      "tonos",
+      "no",
+      "sean",
+      "correctos",
+      ",",
+      "y",
+      "que",
+      "los",
+      "demás",
+      "se",
+      "rían",
+      "de",
+      "mí",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "secretos de estudio",
+        "pinyin": "",
+        "meaning": "segredos de estudo"
+      },
+      {
+        "id": 2,
+        "word": "palabras nuevas",
+        "pinyin": "",
+        "meaning": "palavras novas"
+      },
+      {
+        "id": 3,
+        "word": "tonos",
+        "pinyin": "",
+        "meaning": "tons"
+      },
+      {
+        "id": 4,
+        "word": "cometer un error",
+        "pinyin": "",
+        "meaning": "cometer um erro"
+      },
+      {
+        "id": 5,
+        "word": "se rían",
+        "pinyin": "",
+        "meaning": "riam"
+      }
+    ],
+    "id": "local-1780236255846-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: Parece que ahora he alcanzado una meseta de aprendizaje. Últimamente siempre siento que mi nivel de chino se ha estancado y no sé cómo superar este bloqueo. ¡Es tan deprimente!",
+    "pinyin": "",
+    "translation": "C: Parece que agora alcancei um platô de aprendizado. Ultimamente sempre sinto que meu nível de chinês está estagnado e não sei como superar esse gargalo. É tão deprimente!",
+    "tokens": [
+      "C:",
+      "Parece",
+      "que",
+      "ahora",
+      "he",
+      "alcanzado",
+      "una",
+      "meseta",
+      "de",
+      "aprendizaje",
+      ".",
+      "Últimamente",
+      "siempre",
+      "siento",
+      "que",
+      "mi",
+      "nivel",
+      "de",
+      "chino",
+      "se",
+      "ha",
+      "estancado",
+      "y",
+      "no",
+      "sé",
+      "cómo",
+      "superar",
+      "este",
+      "bloqueo",
+      ".",
+      "¡",
+      "Es",
+      "tan",
+      "deprimente",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "meseta",
+        "pinyin": "",
+        "meaning": "platô"
+      },
+      {
+        "id": 2,
+        "word": "estancado",
+        "pinyin": "",
+        "meaning": "estagnado"
+      },
+      {
+        "id": 3,
+        "word": "superar",
+        "pinyin": "",
+        "meaning": "superar"
+      },
+      {
+        "id": 4,
+        "word": "bloqueo",
+        "pinyin": "",
+        "meaning": "gargalo"
+      },
+      {
+        "id": 5,
+        "word": "deprimente",
+        "pinyin": "",
+        "meaning": "deprimente"
+      }
+    ],
+    "id": "local-1780236255846-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Me gusta escribir caracteres chinos, pero siempre olvido el orden de los trazos y los escribo torcidos. ¡Me preocupa mucho!",
+    "pinyin": "",
+    "translation": "A: Eu gosto de escrever caracteres chineses, mas sempre esqueço a ordem dos traços e os escrevo tortos. Isso me preocupa muito!",
+    "tokens": [
+      "A:",
+      "Me",
+      "gusta",
+      "escribir",
+      "caracteres",
+      "chinos",
+      ",",
+      "pero",
+      "siempre",
+      "olvido",
+      "el",
+      "orden",
+      "de",
+      "los",
+      "trazos",
+      "y",
+      "los",
+      "escribo",
+      "torcidos",
+      ".",
+      "¡",
+      "Me",
+      "preocupa",
+      "mucho",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "caracteres chinos",
+        "pinyin": "",
+        "meaning": "caracteres chineses"
+      },
+      {
+        "id": 2,
+        "word": "orden de los trazos",
+        "pinyin": "",
+        "meaning": "ordem dos traços"
+      },
+      {
+        "id": 3,
+        "word": "torcidos",
+        "pinyin": "",
+        "meaning": "tortos"
+      },
+      {
+        "id": 4,
+        "word": "preocupa",
+        "pinyin": "",
+        "meaning": "preocupa"
+      }
+    ],
+    "id": "local-1780236255846-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "D: Personalmente, siento que no hay atajos para aprender un idioma. Depende principalmente de si estás dispuesto a dedicar más tiempo y esfuerzo al estudio. Algunas personas pueden decir que están realmente demasiado ocupadas con el trabajo y no pueden encontrar un bloque grande de tiempo para estudiar. Pero en realidad, puedo aprovechar los fragmentos de tiempo aquí y allá para recordar nuevas palabras y escribir caracteres.",
+    "pinyin": "",
+    "translation": "D: Pessoalmente, sinto que não há atalhos para aprender um idioma. Depende principalmente de você estar disposto a dedicar mais tempo e esforço aos estudos. Algumas pessoas podem dizer que estão realmente muito ocupadas com o trabalho e não conseguem encontrar um bloco grande de tempo para estudar. Mas, na verdade, posso aproveitar os fragmentos de tempo aqui e ali para lembrar novas palavras e escrever caracteres.",
+    "tokens": [
+      "D:",
+      "Personalmente",
+      ",",
+      "siento",
+      "que",
+      "no",
+      "hay",
+      "atajos",
+      "para",
+      "aprender",
+      "un",
+      "idioma",
+      ".",
+      "Depende",
+      "principalmente",
+      "de",
+      "si",
+      "estás",
+      "dispuesto",
+      "a",
+      "dedicar",
+      "más",
+      "tiempo",
+      "y",
+      "esfuerzo",
+      "al",
+      "estudio",
+      ".",
+      "Algunas",
+      "personas",
+      "pueden",
+      "decir",
+      "que",
+      "están",
+      "realmente",
+      "demasiado",
+      "ocupadas",
+      "con",
+      "el",
+      "trabajo",
+      "y",
+      "no",
+      "pueden",
+      "encontrar",
+      "un",
+      "bloque",
+      "grande",
+      "de",
+      "tiempo",
+      "para",
+      "estudiar",
+      ".",
+      "Pero",
+      "en",
+      "realidad",
+      ",",
+      "puedo",
+      "aprovechar",
+      "los",
+      "fragmentos",
+      "de",
+      "tiempo",
+      "aquí",
+      "y",
+      "allá",
+      "para",
+      "recordar",
+      "nuevas",
+      "palabras",
+      "y",
+      "escribir",
+      "caracteres",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "atajos",
+        "pinyin": "",
+        "meaning": "atalhos"
+      },
+      {
+        "id": 2,
+        "word": "dedicar",
+        "pinyin": "",
+        "meaning": "dedicar"
+      },
+      {
+        "id": 3,
+        "word": "esfuerzo",
+        "pinyin": "",
+        "meaning": "esforço"
+      },
+      {
+        "id": 4,
+        "word": "ocupadas",
+        "pinyin": "",
+        "meaning": "ocupadas"
+      },
+      {
+        "id": 5,
+        "word": "bloque",
+        "pinyin": "",
+        "meaning": "bloco"
+      },
+      {
+        "id": 6,
+        "word": "aprovechar",
+        "pinyin": "",
+        "meaning": "aproveitar"
+      },
+      {
+        "id": 7,
+        "word": "fragmentos",
+        "pinyin": "",
+        "meaning": "fragmentos"
+      }
+    ],
+    "id": "local-1780236255846-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Parece que en realidad no somos lo suficientemente persistentes. ¡Siempre usamos la excusa de que no tenemos tiempo!",
+    "pinyin": "",
+    "translation": "B: Parece que na verdade não somos persistentes o suficiente. Sempre usamos a desculpa de que não temos tempo!",
+    "tokens": [
+      "B:",
+      "Parece",
+      "que",
+      "en",
+      "realidad",
+      "no",
+      "somos",
+      "lo",
+      "suficientemente",
+      "persistentes",
+      ".",
+      "¡",
+      "Siempre",
+      "usamos",
+      "la",
+      "excusa",
+      "de",
+      "que",
+      "no",
+      "tenemos",
+      "tiempo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "persistentes",
+        "pinyin": "",
+        "meaning": "que persiste"
+      },
+      {
+        "id": 2,
+        "word": "excusa",
+        "pinyin": "",
+        "meaning": "justificativa"
+      },
+      {
+        "id": 3,
+        "word": "suficientemente",
+        "pinyin": "",
+        "meaning": "em grau adequado"
+      },
+      {
+        "id": 4,
+        "word": "tenemos",
+        "pinyin": "",
+        "meaning": "possuímos"
+      }
+    ],
+    "id": "local-1780236255846-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "D: En cuanto a \"hablar\", cuando no tenemos el entorno lingüístico, podemos hablar con nosotros mismos, y esto nos ayudará a desarrollar el hábito de pensar en chino. Estudiar un idioma tiene como propósito la interacción, por lo que debes hablar con valentía y no tener miedo a decir algo incorrectamente. Cuantos más errores cometamos, más rápido será nuestro progreso.",
+    "pinyin": "",
+    "translation": "D: Quanto a \"falar\", quando não temos o ambiente linguístico, podemos falar conosco mesmos, e isso nos ajudará a desenvolver o hábito de pensar em chinês. Estudar um idioma tem como propósito a interação, por isso você deve falar com coragem e não ter medo de dizer algo incorretamente. Quanto mais erros cometermos, mais rápido será o nosso progresso.",
+    "tokens": [
+      "D:",
+      "En",
+      "cuanto",
+      "a",
+      "\"",
+      "hablar",
+      "\"",
+      ",",
+      "cuando",
+      "no",
+      "tenemos",
+      "el",
+      "entorno",
+      "lingüístico",
+      ",",
+      "podemos",
+      "hablar",
+      "con",
+      "nosotros",
+      "mismos",
+      ",",
+      "y",
+      "esto",
+      "nos",
+      "ayudará",
+      "a",
+      "desarrollar",
+      "el",
+      "hábito",
+      "de",
+      "pensar",
+      "en",
+      "chino",
+      ".",
+      "Estudiar",
+      "un",
+      "idioma",
+      "tiene",
+      "como",
+      "propósito",
+      "la",
+      "interacción",
+      ",",
+      "por",
+      "lo",
+      "que",
+      "debes",
+      "hablar",
+      "con",
+      "valentía",
+      "y",
+      "no",
+      "tener",
+      "miedo",
+      "a",
+      "decir",
+      "algo",
+      "incorrectamente",
+      ".",
+      "Cuantos",
+      "más",
+      "errores",
+      "cometamos",
+      ",",
+      "más",
+      "rápido",
+      "será",
+      "nuestro",
+      "progreso",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entorno lingüístico",
+        "pinyin": "",
+        "meaning": "ambiente linguístico"
+      },
+      {
+        "id": 2,
+        "word": "pensar en chino",
+        "pinyin": "",
+        "meaning": "pensar em chinês"
+      },
+      {
+        "id": 3,
+        "word": "interacción",
+        "pinyin": "",
+        "meaning": "interação"
+      },
+      {
+        "id": 4,
+        "word": "hablar con valentía",
+        "pinyin": "",
+        "meaning": "falar com coragem"
+      },
+      {
+        "id": 5,
+        "word": "cometamos",
+        "pinyin": "",
+        "meaning": "cometermos"
+      },
+      {
+        "id": 6,
+        "word": "progreso",
+        "pinyin": "",
+        "meaning": "progresso"
+      }
+    ],
+    "id": "local-1780236255846-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "C: ¡M-hm! ¡Debemos hablar con valentía!",
+    "pinyin": "",
+    "translation": "C: M-hm! Temos que falar com coragem!",
+    "tokens": [
+      "C:",
+      "¡",
+      "M",
+      "-",
+      "hm",
+      "!",
+      "¡",
+      "Debemos",
+      "hablar",
+      "con",
+      "valentía",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "valentía",
+        "pinyin": "",
+        "meaning": "coragem"
+      },
+      {
+        "id": 2,
+        "word": "hablar",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 3,
+        "word": "¡M-hm!",
+        "pinyin": "",
+        "meaning": "expressão de concordância"
+      }
+    ],
+    "id": "local-1780236255846-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Entonces, establezcamos un plan de estudio y mantengámonos al tanto el uno del otro.",
+    "pinyin": "",
+    "translation": "A: Então, vamos elaborar um plano de estudos e ficar de olho um no outro!",
+    "tokens": [
+      "A:",
+      "Entonces",
+      ",",
+      "establezcamos",
+      "un",
+      "plan",
+      "de",
+      "estudio",
+      "y",
+      "mantengámonos",
+      "al",
+      "tanto",
+      "el",
+      "uno",
+      "del",
+      "otro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "establezcamos",
+        "pinyin": "",
+        "meaning": "estabeleçamos"
+      },
+      {
+        "id": 2,
+        "word": "plan de estudio",
+        "pinyin": "",
+        "meaning": "plano de estudos"
+      },
+      {
+        "id": 3,
+        "word": "mantengámonos",
+        "pinyin": "",
+        "meaning": "mantenhamo-nos"
+      },
+      {
+        "id": 4,
+        "word": "al tanto",
+        "pinyin": "",
+        "meaning": "informados"
+      },
+      {
+        "id": 5,
+        "word": "el uno del otro",
+        "pinyin": "",
+        "meaning": "um do outro"
+      }
+    ],
+    "id": "local-1780236255846-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "D: Tengo un amigo abogado que a menudo habla chino consigo mismo mientras se ducha. Hay una expresión que dice: 'La perseverancia conduce al éxito'. ¡Sigamos avanzando juntos!",
+    "pinyin": "",
+    "translation": "D: Tenho um amigo advogado que frequentemente fala chinês consigo mesmo enquanto toma banho! Há uma expressão: 'A perseverança leva ao sucesso'. Vamos todos continuar juntos!",
+    "tokens": [
+      "D:",
+      "Tengo",
+      "un",
+      "amigo",
+      "abogado",
+      "que",
+      "a",
+      "menudo",
+      "habla",
+      "chino",
+      "consigo",
+      "mismo",
+      "mientras",
+      "se",
+      "ducha",
+      ".",
+      "Hay",
+      "una",
+      "expresión",
+      "que",
+      "dice",
+      ":",
+      "'",
+      "La",
+      "perseverancia",
+      "conduce",
+      "al",
+      "éxito",
+      "'",
+      ".",
+      "¡",
+      "Sigamos",
+      "avanzando",
+      "juntos",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "abogado",
+        "pinyin": "",
+        "meaning": "advogado"
+      },
+      {
+        "id": 2,
+        "word": "ducha",
+        "pinyin": "",
+        "meaning": "banho"
+      },
+      {
+        "id": 3,
+        "word": "perseverancia",
+        "pinyin": "",
+        "meaning": "perseverança"
+      },
+      {
+        "id": 4,
+        "word": "éxito",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 5,
+        "word": "avanzando",
+        "pinyin": "",
+        "meaning": "avançando"
+      }
+    ],
+    "id": "local-1780236255846-9",
+    "language": "Espanhol"
+  }
+]

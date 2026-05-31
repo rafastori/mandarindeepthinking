@@ -1,0 +1,667 @@
+[
+  {
+    "chinese": "A: 안녕하세요, 마이크 님. 취업 허가증이 발급되었습니다. 이제 비자를 신청하러 가시면 됩니다.",
+    "pinyin": "",
+    "translation": "A: Olá, Mike. Sua permissão de trabalho está pronta. Agora você pode ir solicitar o visto.",
+    "tokens": [
+      "A:",
+      "안녕하세요",
+      ",",
+      "마이크",
+      "님",
+      ".",
+      "취업",
+      "허가증이",
+      "발급되었습니다",
+      ".",
+      "이제",
+      "비자를",
+      "신청하러",
+      "가시면",
+      "됩니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "취업 허가증",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "발급되었습니다",
+        "pinyin": "",
+        "meaning": "foi emitido/gerado"
+      },
+      {
+        "id": 3,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "solicitar/aplicar"
+      },
+      {
+        "id": 5,
+        "word": "마이크 님",
+        "pinyin": "",
+        "meaning": "Sr. Mike"
+      }
+    ],
+    "id": "local-1780231959992-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 감사합니다. 어떤 서류를 준비해야 하나요?",
+    "pinyin": "",
+    "translation": "B: Muito obrigado. Que documentos eu preciso preparar?",
+    "tokens": [
+      "B:",
+      "정말",
+      "감사합니다",
+      ".",
+      "어떤",
+      "서류를",
+      "준비해야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "감사합니다",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "서류",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 4,
+        "word": "준비",
+        "pinyin": "",
+        "meaning": "preparar"
+      },
+      {
+        "id": 5,
+        "word": "해야",
+        "pinyin": "",
+        "meaning": "precisa fazer"
+      }
+    ],
+    "id": "local-1780231959992-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 취업 허가증, 여권, 회사 영업 허가증, 회사 초청장, 2인치 사진 1장을 준비해야 합니다. 각 서류의 원본과 사본 모두 필요합니다. 또한 신청서를 작성해야 합니다.",
+    "pinyin": "",
+    "translation": "A: Você precisa levar sua permissão de trabalho, passaporte, licença comercial da empresa, carta de convite da empresa e uma foto 2x3. Original e cópia de cada um. Além disso, você também precisa preencher o formulário de inscrição.",
+    "tokens": [
+      "A:",
+      "취업",
+      "허가증",
+      ",",
+      "여권",
+      ",",
+      "회사",
+      "영업",
+      "허가증",
+      ",",
+      "회사",
+      "초청장",
+      ",",
+      "2",
+      "인치",
+      "사진",
+      "1",
+      "장을",
+      "준비해야",
+      "합니다",
+      ".",
+      "각",
+      "서류의",
+      "원본과",
+      "사본",
+      "모두",
+      "필요합니다",
+      ".",
+      "또한",
+      "신청서를",
+      "작성해야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "취업 허가증",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "여권",
+        "pinyin": "",
+        "meaning": "passaporte"
+      },
+      {
+        "id": 3,
+        "word": "회사 영업 허가증",
+        "pinyin": "",
+        "meaning": "licença comercial da empresa"
+      },
+      {
+        "id": 4,
+        "word": "회사 초청장",
+        "pinyin": "",
+        "meaning": "carta de convite da empresa"
+      },
+      {
+        "id": 5,
+        "word": "신청서",
+        "pinyin": "",
+        "meaning": "formulário de inscrição"
+      }
+    ],
+    "id": "local-1780231959992-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 잠시만요. 이거 적어둘게요. 그리고 어떤 비자를 신청하는 건가요?",
+    "pinyin": "",
+    "translation": "B: Espere um pouco. Vou anotar isso. Além disso, que tipo de visto estou solicitando?",
+    "tokens": [
+      "B:",
+      "잠시만요",
+      ".",
+      "이거",
+      "적어둘게요",
+      ".",
+      "그리고",
+      "어떤",
+      "비자를",
+      "신청하는",
+      "건가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "잠시만요",
+        "pinyin": "",
+        "meaning": "espere um momento"
+      },
+      {
+        "id": 2,
+        "word": "적어둘게요",
+        "pinyin": "",
+        "meaning": "vou anotar"
+      },
+      {
+        "id": 3,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 5,
+        "word": "어떤",
+        "pinyin": "",
+        "meaning": "qual / que tipo"
+      }
+    ],
+    "id": "local-1780231959992-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: Z비입니다. 취업 비자예요.",
+    "pinyin": "",
+    "translation": "A: É um visto Z. Um visto de trabalho.",
+    "tokens": [
+      "A:",
+      "Z비입니다",
+      ".",
+      "취업",
+      "비자예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Z비",
+        "pinyin": "",
+        "meaning": "visto Z"
+      },
+      {
+        "id": 2,
+        "word": "취업",
+        "pinyin": "",
+        "meaning": "emprego"
+      },
+      {
+        "id": 3,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "예요",
+        "pinyin": "",
+        "meaning": "é (polido)"
+      }
+    ],
+    "id": "local-1780231959992-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: Z 비자를 신청하려면 해외로 나가야 한다고 들었어요. 홍콩으로 가야 하나요?",
+    "pinyin": "",
+    "translation": "B: Ouvi dizer que para solicitar um visto Z você precisa ir para o exterior. Preciso ir para Hong Kong?",
+    "tokens": [
+      "B:",
+      "Z",
+      "비자를",
+      "신청하려면",
+      "해외로",
+      "나가야",
+      "한다고",
+      "들었어요",
+      ".",
+      "홍콩으로",
+      "가야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Z 비자",
+        "pinyin": "",
+        "meaning": "visto Z"
+      },
+      {
+        "id": 2,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 3,
+        "word": "해외",
+        "pinyin": "",
+        "meaning": "exterior"
+      },
+      {
+        "id": 4,
+        "word": "나가야",
+        "pinyin": "",
+        "meaning": "precisa sair"
+      },
+      {
+        "id": 5,
+        "word": "홍콩",
+        "pinyin": "",
+        "meaning": "Hong Kong"
+      }
+    ],
+    "id": "local-1780231959992-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이 상황에서는 필요하지 않습니다. 비자를 갱신하는 중이니까요.",
+    "pinyin": "",
+    "translation": "A: Nesta situação, você não precisa. Você está renovando seu visto.",
+    "tokens": [
+      "A:",
+      "이",
+      "상황에서는",
+      "필요하지",
+      "않습니다",
+      ".",
+      "비자를",
+      "갱신하는",
+      "중이니까요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "상황",
+        "pinyin": "",
+        "meaning": "situação"
+      },
+      {
+        "id": 2,
+        "word": "필요하지 않습니다",
+        "pinyin": "",
+        "meaning": "não é necessário"
+      },
+      {
+        "id": 3,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "갱신",
+        "pinyin": "",
+        "meaning": "renovação"
+      },
+      {
+        "id": 5,
+        "word": "중이니까요",
+        "pinyin": "",
+        "meaning": "pois está em andamento"
+      }
+    ],
+    "id": "local-1780231959992-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋네요. 그런데, 제 비자를 대신 신청해 줄 수 있는 사람 있나요?",
+    "pinyin": "",
+    "translation": "B: Que ótimo. Ah, a propósito, alguém pode solicitar o visto para mim?",
+    "tokens": [
+      "B:",
+      "좋네요",
+      ".",
+      "그런데",
+      ",",
+      "제",
+      "비자를",
+      "대신",
+      "신청해",
+      "줄",
+      "수",
+      "있는",
+      "사람",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋네요",
+        "pinyin": "",
+        "meaning": "é bom / que ótimo"
+      },
+      {
+        "id": 2,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 3,
+        "word": "대신",
+        "pinyin": "",
+        "meaning": "em vez de / por"
+      },
+      {
+        "id": 4,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "solicitação / pedido"
+      },
+      {
+        "id": 5,
+        "word": "사람",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 6,
+        "word": "있나요",
+        "pinyin": "",
+        "meaning": "existe / há"
+      }
+    ],
+    "id": "local-1780231959992-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 미국인이니까 그렇게 할 수 없어요. 미국인은 직접 사무실에 가서 신청해야 합니다.",
+    "pinyin": "",
+    "translation": "A: Como você é americano, não pode fazer isso. Os americanos precisam se inscrever pessoalmente no escritório.",
+    "tokens": [
+      "A:",
+      "미국인이니까",
+      "그렇게",
+      "할",
+      "수",
+      "없어요",
+      ".",
+      "미국인은",
+      "직접",
+      "사무실에",
+      "가서",
+      "신청해야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "미국인",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 2,
+        "word": "사무실",
+        "pinyin": "",
+        "meaning": "escritório"
+      },
+      {
+        "id": 3,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "inscrição"
+      },
+      {
+        "id": 4,
+        "word": "직접",
+        "pinyin": "",
+        "meaning": "pessoalmente"
+      },
+      {
+        "id": 5,
+        "word": "가서",
+        "pinyin": "",
+        "meaning": "ir"
+      }
+    ],
+    "id": "local-1780231959992-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭐? 나라마다 다른 대우를 받는 거야!",
+    "pinyin": "",
+    "translation": "B: Hã? Existe um tratamento diferente para países diferentes!",
+    "tokens": [
+      "B:",
+      "뭐",
+      "?",
+      "나라마다",
+      "다른",
+      "대우를",
+      "받는",
+      "거야",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뭐",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "나라마다",
+        "pinyin": "",
+        "meaning": "para cada país"
+      },
+      {
+        "id": 3,
+        "word": "다른",
+        "pinyin": "",
+        "meaning": "diferente"
+      },
+      {
+        "id": 4,
+        "word": "대우",
+        "pinyin": "",
+        "meaning": "tratamento"
+      },
+      {
+        "id": 5,
+        "word": "받는",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 6,
+        "word": "거야",
+        "pinyin": "",
+        "meaning": "é / é que"
+      }
+    ],
+    "id": "local-1780231959992-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네, 그게 규칙입니다. 상하이 출입국 관리국 사무실에 가셔야 합니다. 빨리 가세요. 신청하시면 7 영업일 안에 비자를 받을 수 있습니다.",
+    "pinyin": "",
+    "translation": "A: Sim, essa é a regra. Você precisa ir ao escritório do Bureau de Entrada e Saída de Xangai. Vá logo. Após o pedido, você pode obter seu visto em 7 dias úteis.",
+    "tokens": [
+      "A:",
+      "네",
+      ",",
+      "그게",
+      "규칙입니다",
+      ".",
+      "상하이",
+      "출입국",
+      "관리국",
+      "사무실에",
+      "가셔야",
+      "합니다",
+      ".",
+      "빨리",
+      "가세요",
+      ".",
+      "신청하시면",
+      "7",
+      "영업일",
+      "안에",
+      "비자를",
+      "받을",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "규칙",
+        "pinyin": "",
+        "meaning": "regra"
+      },
+      {
+        "id": 2,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "출입국 관리국",
+        "pinyin": "",
+        "meaning": "Bureau de Entrada e Saída"
+      },
+      {
+        "id": 4,
+        "word": "사무실",
+        "pinyin": "",
+        "meaning": "escritório"
+      },
+      {
+        "id": 5,
+        "word": "빨리",
+        "pinyin": "",
+        "meaning": "logo/rapidamente"
+      },
+      {
+        "id": 6,
+        "word": "신청",
+        "pinyin": "",
+        "meaning": "pedido/aplicação"
+      },
+      {
+        "id": 7,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 8,
+        "word": "영업일",
+        "pinyin": "",
+        "meaning": "dias úteis"
+      }
+    ],
+    "id": "local-1780231959992-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네, 감사합니다!",
+    "pinyin": "",
+    "translation": "B: Certo. Obrigado!",
+    "tokens": [
+      "B:",
+      "네",
+      ",",
+      "감사합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "감사합니다",
+        "pinyin": "",
+        "meaning": "obrigado"
+      }
+    ],
+    "id": "local-1780231959992-11",
+    "language": "Coreano"
+  }
+]

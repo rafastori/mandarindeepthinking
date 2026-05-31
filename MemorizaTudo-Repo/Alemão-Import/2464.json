@@ -1,0 +1,832 @@
+[
+  {
+    "chinese": "A: Xiao Wang, willkommen in unserem Unternehmen. Sie haben den Vertrag gelesen, haben Sie dazu Fragen?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, bem-vindo à nossa empresa. Você leu o contrato, tem alguma dúvida?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "willkommen",
+      "in",
+      "unserem",
+      "Unternehmen",
+      ".",
+      "Sie",
+      "haben",
+      "den",
+      "Vertrag",
+      "gelesen",
+      ",",
+      "haben",
+      "Sie",
+      "dazu",
+      "Fragen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "willkommen",
+        "pinyin": "",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "Vertrag",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "gelesen",
+        "pinyin": "",
+        "meaning": "lido"
+      },
+      {
+        "id": 5,
+        "word": "Fragen",
+        "pinyin": "",
+        "meaning": "perguntas"
+      }
+    ],
+    "id": "local-1780247761524-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich möchte fragen, wie die Versicherungen in unserem Unternehmen bezahlt werden?",
+    "pinyin": "",
+    "translation": "B: Gostaria de perguntar como os seguros em nossa empresa são pagos?",
+    "tokens": [
+      "B:",
+      "Ich",
+      "möchte",
+      "fragen",
+      ",",
+      "wie",
+      "die",
+      "Versicherungen",
+      "in",
+      "unserem",
+      "Unternehmen",
+      "bezahlt",
+      "werden",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Versicherungen",
+        "pinyin": "",
+        "meaning": "seguros"
+      },
+      {
+        "id": 2,
+        "word": "bezahlt werden",
+        "pinyin": "",
+        "meaning": "ser pagos"
+      },
+      {
+        "id": 3,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "fragen",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 5,
+        "word": "Ich möchte",
+        "pinyin": "",
+        "meaning": "Eu gostaria"
+      }
+    ],
+    "id": "local-1780247761524-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Die staatliche Regulierung der „fünf sozialen Versicherungen und eines Wohnungsfonds“.",
+    "pinyin": "",
+    "translation": "A: A regulação estatal dos \"cinco seguros sociais e um fundo habitacional\".",
+    "tokens": [
+      "A:",
+      "Die",
+      "staatliche",
+      "Regulierung",
+      "der",
+      "„",
+      "fünf",
+      "sozialen",
+      "Versicherungen",
+      "und",
+      "eines",
+      "Wohnungsfonds",
+      "“",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "staatliche",
+        "pinyin": "",
+        "meaning": "estatal"
+      },
+      {
+        "id": 2,
+        "word": "Regulierung",
+        "pinyin": "",
+        "meaning": "regulação"
+      },
+      {
+        "id": 3,
+        "word": "sozialen",
+        "pinyin": "",
+        "meaning": "sociais"
+      },
+      {
+        "id": 4,
+        "word": "Versicherungen",
+        "pinyin": "",
+        "meaning": "seguros"
+      },
+      {
+        "id": 5,
+        "word": "Wohnungsfonds",
+        "pinyin": "",
+        "meaning": "fundo habitacional"
+      }
+    ],
+    "id": "local-1780247761524-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Entschuldigung, ich bin gerade erst aus China zurückgekehrt. Ich verstehe nicht ganz.",
+    "pinyin": "",
+    "translation": "B: Desculpe, acabei de voltar para a China. Não entendo muito bem.",
+    "tokens": [
+      "B:",
+      "Entschuldigung",
+      ",",
+      "ich",
+      "bin",
+      "gerade",
+      "erst",
+      "aus",
+      "China",
+      "zurückgekehrt",
+      ".",
+      "Ich",
+      "verstehe",
+      "nicht",
+      "ganz",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entschuldigung",
+        "pinyin": "",
+        "meaning": "desculpe"
+      },
+      {
+        "id": 2,
+        "word": "gerade erst",
+        "pinyin": "",
+        "meaning": "acabei de"
+      },
+      {
+        "id": 3,
+        "word": "zurückgekehrt",
+        "pinyin": "",
+        "meaning": "retornado"
+      },
+      {
+        "id": 4,
+        "word": "verstehe",
+        "pinyin": "",
+        "meaning": "entendo"
+      },
+      {
+        "id": 5,
+        "word": "nicht ganz",
+        "pinyin": "",
+        "meaning": "não totalmente"
+      }
+    ],
+    "id": "local-1780247761524-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Die fünf Sozialversicherungen und der eine Wohnungsfonds umfassen: Rentenversicherung, Krankenversicherung, Arbeitslosenversicherung, Unfallversicherung, Mutterschaftsversicherung und den Wohnungsbau-Sparfonds.",
+    "pinyin": "",
+    "translation": "A: Os cinco seguros sociais e o fundo habitacional são: seguro de aposentadoria, seguro saúde, seguro desemprego, seguro de invalidez por acidente de trabalho, seguro maternidade e fundo de poupança habitacional.",
+    "tokens": [
+      "A:",
+      "Die",
+      "fünf",
+      "Sozialversicherungen",
+      "und",
+      "der",
+      "eine",
+      "Wohnungsfonds",
+      "umfassen",
+      ":",
+      "Rentenversicherung",
+      ",",
+      "Krankenversicherung",
+      ",",
+      "Arbeitslosenversicherung",
+      ",",
+      "Unfallversicherung",
+      ",",
+      "Mutterschaftsversicherung",
+      "und",
+      "den",
+      "Wohnungsbau",
+      "-",
+      "Sparfonds",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Rentenversicherung",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "Arbeitslosenversicherung",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "Unfallversicherung",
+        "pinyin": "",
+        "meaning": "seguro de acidentes de trabalho"
+      },
+      {
+        "id": 5,
+        "word": "Mutterschaftsversicherung",
+        "pinyin": "",
+        "meaning": "seguro maternidade"
+      },
+      {
+        "id": 6,
+        "word": "Wohnungsbau-Sparfonds",
+        "pinyin": "",
+        "meaning": "fundo de poupança habitacional"
+      }
+    ],
+    "id": "local-1780247761524-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Zahlt das Unternehmen all das?",
+    "pinyin": "",
+    "translation": "B: A empresa paga por tudo isso?",
+    "tokens": [
+      "B:",
+      "Zahlt",
+      "das",
+      "Unternehmen",
+      "all",
+      "das",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Zahlt",
+        "pinyin": "",
+        "meaning": "paga"
+      },
+      {
+        "id": 2,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "all das",
+        "pinyin": "",
+        "meaning": "tudo isso"
+      }
+    ],
+    "id": "local-1780247761524-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Altersvorsorge, Krankenversicherung, Arbeitslosenversicherung und der Wohnungsbau-Fonds werden gemeinsam vom Unternehmen und vom Einzelnen bezahlt.",
+    "pinyin": "",
+    "translation": "A: A previdência social, o seguro saúde, o seguro desemprego e o fundo de acumulação habitacional são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "A:",
+      "Altersvorsorge",
+      ",",
+      "Krankenversicherung",
+      ",",
+      "Arbeitslosenversicherung",
+      "und",
+      "der",
+      "Wohnungsbau",
+      "-",
+      "Fonds",
+      "werden",
+      "gemeinsam",
+      "vom",
+      "Unternehmen",
+      "und",
+      "vom",
+      "Einzelnen",
+      "bezahlt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Altersvorsorge",
+        "pinyin": "",
+        "meaning": "previdência social"
+      },
+      {
+        "id": 2,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "Arbeitslosenversicherung",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "Wohnungsbau-Fonds",
+        "pinyin": "",
+        "meaning": "fundo habitacional"
+      },
+      {
+        "id": 5,
+        "word": "gemeinsam",
+        "pinyin": "",
+        "meaning": "conjuntamente"
+      },
+      {
+        "id": 6,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 7,
+        "word": "bezahlt",
+        "pinyin": "",
+        "meaning": "pagos"
+      }
+    ],
+    "id": "local-1780247761524-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wie viel muss also bezahlt werden?",
+    "pinyin": "",
+    "translation": "B: Então, quanto deve ser pago?",
+    "tokens": [
+      "B:",
+      "Wie",
+      "viel",
+      "muss",
+      "also",
+      "bezahlt",
+      "werden",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "muss",
+        "pinyin": "",
+        "meaning": "deve"
+      },
+      {
+        "id": 2,
+        "word": "bezahlt",
+        "pinyin": "",
+        "meaning": "pago"
+      },
+      {
+        "id": 3,
+        "word": "werden",
+        "pinyin": "",
+        "meaning": "ser"
+      },
+      {
+        "id": 4,
+        "word": "also",
+        "pinyin": "",
+        "meaning": "então"
+      }
+    ],
+    "id": "local-1780247761524-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Jede Stadt ist anders. In Shanghai zahlt der Einzelne 8 % für die Altersversicherung und der Arbeitgeber 21 %. Für die Krankenversicherung zahlt der Einzelne 2 % und der Arbeitgeber 11 %. Für die Arbeitslosenversicherung zahlt der Einzelne 0,5 % und der Arbeitgeber 1,5 %. Einzelne und Arbeitgeber zahlen jeweils 7 % für den Akkumulationsfonds.",
+    "pinyin": "",
+    "translation": "A: Cada cidade é diferente. Em Xangai, para o seguro de aposentadoria, o indivíduo paga 8% e a empresa paga 21%. Para o seguro saúde, o indivíduo paga 2% e a empresa paga 11%. Para o seguro desemprego, o indivíduo paga 0,5% e a empresa paga 1,5%. O indivíduo e a empresa pagam cada um 7% para o fundo de acumulação.",
+    "tokens": [
+      "A:",
+      "Jede",
+      "Stadt",
+      "ist",
+      "anders",
+      ".",
+      "In",
+      "Shanghai",
+      "zahlt",
+      "der",
+      "Einzelne",
+      "8",
+      "%",
+      "für",
+      "die",
+      "Altersversicherung",
+      "und",
+      "der",
+      "Arbeitgeber",
+      "21",
+      "%",
+      ".",
+      "Für",
+      "die",
+      "Krankenversicherung",
+      "zahlt",
+      "der",
+      "Einzelne",
+      "2",
+      "%",
+      "und",
+      "der",
+      "Arbeitgeber",
+      "11",
+      "%",
+      ".",
+      "Für",
+      "die",
+      "Arbeitslosenversicherung",
+      "zahlt",
+      "der",
+      "Einzelne",
+      "0",
+      ",",
+      "5",
+      "%",
+      "und",
+      "der",
+      "Arbeitgeber",
+      "1",
+      ",",
+      "5",
+      "%",
+      ".",
+      "Einzelne",
+      "und",
+      "Arbeitgeber",
+      "zahlen",
+      "jeweils",
+      "7",
+      "%",
+      "für",
+      "den",
+      "Akkumulationsfonds",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Altersversicherung",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "Arbeitslosenversicherung",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "Arbeitgeber",
+        "pinyin": "",
+        "meaning": "empregador"
+      },
+      {
+        "id": 5,
+        "word": "Einzelne",
+        "pinyin": "",
+        "meaning": "indivíduo"
+      },
+      {
+        "id": 6,
+        "word": "Akkumulationsfonds",
+        "pinyin": "",
+        "meaning": "fundo de acumulação"
+      }
+    ],
+    "id": "local-1780247761524-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Da mein Aufenthaltstitel nicht in Shanghai ausgestellt ist, muss ich mich dann nach den Richtlinien von Shanghai richten?",
+    "pinyin": "",
+    "translation": "B: Como minha autorização de residência não está em Xangai, tenho que pagar de acordo com o critério de Xangai?",
+    "tokens": [
+      "B:",
+      "Da",
+      "mein",
+      "Aufenthaltstitel",
+      "nicht",
+      "in",
+      "Shanghai",
+      "ausgestellt",
+      "ist",
+      ",",
+      "muss",
+      "ich",
+      "mich",
+      "dann",
+      "nach",
+      "den",
+      "Richtlinien",
+      "von",
+      "Shanghai",
+      "richten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aufenthaltstitel",
+        "pinyin": "",
+        "meaning": "autorização de residência"
+      },
+      {
+        "id": 2,
+        "word": "ausgestellt",
+        "pinyin": "",
+        "meaning": "emitida"
+      },
+      {
+        "id": 3,
+        "word": "Richtlinien",
+        "pinyin": "",
+        "meaning": "diretrizes"
+      },
+      {
+        "id": 4,
+        "word": "richten",
+        "pinyin": "",
+        "meaning": "seguir"
+      },
+      {
+        "id": 5,
+        "word": "muss",
+        "pinyin": "",
+        "meaning": "deve"
+      }
+    ],
+    "id": "local-1780247761524-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja, weil du in Shanghai arbeitest.",
+    "pinyin": "",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "A:",
+      "Ja",
+      ",",
+      "weil",
+      "du",
+      "in",
+      "Shanghai",
+      "arbeitest",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "weil",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 2,
+        "word": "arbeitest",
+        "pinyin": "",
+        "meaning": "trabalha"
+      },
+      {
+        "id": 3,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "Ja",
+        "pinyin": "",
+        "meaning": "Sim"
+      }
+    ],
+    "id": "local-1780247761524-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kann ich im Ruhestand Altersversicherungsleistungen aus Shanghai beziehen?",
+    "pinyin": "",
+    "translation": "B: Posso receber benefícios de seguro de velhice de Xangai quando me aposentar?",
+    "tokens": [
+      "B:",
+      "Kann",
+      "ich",
+      "im",
+      "Ruhestand",
+      "Altersversicherungsleistungen",
+      "aus",
+      "Shanghai",
+      "beziehen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ruhestand",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "Altersversicherungsleistungen",
+        "pinyin": "",
+        "meaning": "benefícios de seguro de velhice"
+      },
+      {
+        "id": 3,
+        "word": "beziehen",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 4,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1780247761524-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist eher ein Ärgernis. Wenn Sie in den Ruhestand gehen, aber Ihre Aufenthaltsgenehmigung nicht in Shanghai ist, müssen Sie zur Erhebung der Altersversicherung an Ihren Hauptwohnsitz gehen.",
+    "pinyin": "",
+    "translation": "A: Isso é mais um incômodo. Se você se aposentar, mas sua permissão de residência não for em Xangai, você só poderá ir ao local do seu residência permanente para coletar o seguro de velhice.",
+    "tokens": [
+      "A:",
+      "Das",
+      "ist",
+      "eher",
+      "ein",
+      "Ärgernis",
+      ".",
+      "Wenn",
+      "Sie",
+      "in",
+      "den",
+      "Ruhestand",
+      "gehen",
+      ",",
+      "aber",
+      "Ihre",
+      "Aufenthaltsgenehmigung",
+      "nicht",
+      "in",
+      "Shanghai",
+      "ist",
+      ",",
+      "müssen",
+      "Sie",
+      "zur",
+      "Erhebung",
+      "der",
+      "Altersversicherung",
+      "an",
+      "Ihren",
+      "Hauptwohnsitz",
+      "gehen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ärgernis",
+        "pinyin": "",
+        "meaning": "incômodo"
+      },
+      {
+        "id": 2,
+        "word": "Ruhestand",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 3,
+        "word": "Aufenthaltsgenehmigung",
+        "pinyin": "",
+        "meaning": "permissão de residência"
+      },
+      {
+        "id": 4,
+        "word": "Altersversicherung",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 5,
+        "word": "Hauptwohnsitz",
+        "pinyin": "",
+        "meaning": "residência permanente"
+      }
+    ],
+    "id": "local-1780247761524-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es ist so kompliziert.",
+    "pinyin": "",
+    "translation": "B: É tão complicado.",
+    "tokens": [
+      "B:",
+      "Es",
+      "ist",
+      "so",
+      "kompliziert",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Es",
+        "pinyin": "",
+        "meaning": "Isso"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é"
+      },
+      {
+        "id": 3,
+        "word": "so",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 4,
+        "word": "kompliziert",
+        "pinyin": "",
+        "meaning": "complicado"
+      }
+    ],
+    "id": "local-1780247761524-13",
+    "language": "Alemão"
+  }
+]

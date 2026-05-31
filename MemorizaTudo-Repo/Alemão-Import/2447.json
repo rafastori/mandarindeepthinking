@@ -1,0 +1,629 @@
+[
+  {
+    "chinese": "A: Hast du gerade Weibo gesehen? Es ist wirklich unglaublich.",
+    "pinyin": "",
+    "translation": "A: Você acabou de ver o Weibo? É realmente incrível.",
+    "tokens": [
+      "A:",
+      "Hast",
+      "du",
+      "gerade",
+      "Weibo",
+      "gesehen",
+      "?",
+      "Es",
+      "ist",
+      "wirklich",
+      "unglaublich",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gerade",
+        "pinyin": "",
+        "meaning": "agora mesmo"
+      },
+      {
+        "id": 2,
+        "word": "Weibo",
+        "pinyin": "",
+        "meaning": "plataforma chinesa"
+      },
+      {
+        "id": 3,
+        "word": "gesehen",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "wirklich",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 5,
+        "word": "unglaublich",
+        "pinyin": "",
+        "meaning": "incrível"
+      }
+    ],
+    "id": "local-1780229339504-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was ist passiert?",
+    "pinyin": "",
+    "translation": "B: O que aconteceu?",
+    "tokens": [
+      "B:",
+      "Was",
+      "ist",
+      "passiert",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é/está"
+      },
+      {
+        "id": 3,
+        "word": "passiert",
+        "pinyin": "",
+        "meaning": "aconteceu"
+      }
+    ],
+    "id": "local-1780229339504-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: In Fujian hat sich ein schwules Paar verheiratet. Sie feierten eine große Hochzeitszeremonie und haben zahlreiche Fotos auf Weibo geteilt.",
+    "pinyin": "",
+    "translation": "A: Em Fujian, um casal gay se casou. Eles realizaram uma grande cerimônia de casamento e postaram várias fotos no Weibo.",
+    "tokens": [
+      "A:",
+      "In",
+      "Fujian",
+      "hat",
+      "sich",
+      "ein",
+      "schwules",
+      "Paar",
+      "verheiratet",
+      ".",
+      "Sie",
+      "feierten",
+      "eine",
+      "große",
+      "Hochzeitszeremonie",
+      "und",
+      "haben",
+      "zahlreiche",
+      "Fotos",
+      "auf",
+      "Weibo",
+      "geteilt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "schwules Paar",
+        "pinyin": "",
+        "meaning": "casal gay"
+      },
+      {
+        "id": 2,
+        "word": "verheiratet",
+        "pinyin": "",
+        "meaning": "casado"
+      },
+      {
+        "id": 3,
+        "word": "Hochzeitszeremonie",
+        "pinyin": "",
+        "meaning": "cerimônia de casamento"
+      },
+      {
+        "id": 4,
+        "word": "Fotos",
+        "pinyin": "",
+        "meaning": "fotos"
+      },
+      {
+        "id": 5,
+        "word": "geteilt",
+        "pinyin": "",
+        "meaning": "compartilhado"
+      }
+    ],
+    "id": "local-1780229339504-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist ziemlich normal. Die Gesellschaft ist heutzutage viel offener. Homosexualität ist nicht so selten.",
+    "pinyin": "",
+    "translation": "B: Isso é bastante normal. A sociedade é muito mais aberta hoje em dia. A homossexualidade não é tão rara.",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "ziemlich",
+      "normal",
+      ".",
+      "Die",
+      "Gesellschaft",
+      "ist",
+      "heutzutage",
+      "viel",
+      "offener",
+      ".",
+      "Homosexualität",
+      "ist",
+      "nicht",
+      "so",
+      "selten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ziemlich",
+        "pinyin": "",
+        "meaning": "bastante"
+      },
+      {
+        "id": 2,
+        "word": "offener",
+        "pinyin": "",
+        "meaning": "aberta"
+      },
+      {
+        "id": 3,
+        "word": "heutzutage",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 4,
+        "word": "Homosexualität",
+        "pinyin": "",
+        "meaning": "homossexualidade"
+      },
+      {
+        "id": 5,
+        "word": "selten",
+        "pinyin": "",
+        "meaning": "rara"
+      }
+    ],
+    "id": "local-1780229339504-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Obwohl immer mehr Menschen es akzeptieren können, halte ich eine große Hochzeitszeremonie immer noch für etwas seltsam.",
+    "pinyin": "",
+    "translation": "A: Embora cada vez mais pessoas consigam aceitá-lo, ainda acho que realizar uma grande cerimônia de casamento é um pouco estranho.",
+    "tokens": [
+      "A:",
+      "Obwohl",
+      "immer",
+      "mehr",
+      "Menschen",
+      "es",
+      "akzeptieren",
+      "können",
+      ",",
+      "halte",
+      "ich",
+      "eine",
+      "große",
+      "Hochzeitszeremonie",
+      "immer",
+      "noch",
+      "für",
+      "etwas",
+      "seltsam",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Obwohl",
+        "pinyin": "",
+        "meaning": "Embora"
+      },
+      {
+        "id": 2,
+        "word": "Hochzeitszeremonie",
+        "pinyin": "",
+        "meaning": "cerimônia de casamento"
+      },
+      {
+        "id": 3,
+        "word": "immer mehr",
+        "pinyin": "",
+        "meaning": "cada vez mais"
+      },
+      {
+        "id": 4,
+        "word": "akzeptieren",
+        "pinyin": "",
+        "meaning": "aceitar"
+      },
+      {
+        "id": 5,
+        "word": "seltsam",
+        "pinyin": "",
+        "meaning": "estranho"
+      }
+    ],
+    "id": "local-1780229339504-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Sie sind auch Menschen und haben ebenfalls emotionale Bedürfnisse.",
+    "pinyin": "",
+    "translation": "B: Eles também são pessoas e têm necessidades emocionais.",
+    "tokens": [
+      "B:",
+      "Sie",
+      "sind",
+      "auch",
+      "Menschen",
+      "und",
+      "haben",
+      "ebenfalls",
+      "emotionale",
+      "Bedürfnisse",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Menschen",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 2,
+        "word": "emotionale",
+        "pinyin": "",
+        "meaning": "emocionais"
+      },
+      {
+        "id": 3,
+        "word": "Bedürfnisse",
+        "pinyin": "",
+        "meaning": "necessidades"
+      },
+      {
+        "id": 4,
+        "word": "ebenfalls",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 5,
+        "word": "auch",
+        "pinyin": "",
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1780229339504-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Aber ist gleichgeschlechtliche Ehe in China nicht illegal?",
+    "pinyin": "",
+    "translation": "A: Mas o casamento gay não é ilegal na China?",
+    "tokens": [
+      "A:",
+      "Aber",
+      "ist",
+      "gleichgeschlechtliche",
+      "Ehe",
+      "in",
+      "China",
+      "nicht",
+      "illegal",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gleichgeschlechtliche",
+        "pinyin": "",
+        "meaning": "mesmo sexo"
+      },
+      {
+        "id": 2,
+        "word": "Ehe",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 3,
+        "word": "China",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "illegal",
+        "pinyin": "",
+        "meaning": "ilegal"
+      }
+    ],
+    "id": "local-1780229339504-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das scheint so zu sein. Aber im Ausland gibt es in vielen Orten bereits Gesetze zur gleichgeschlechtlichen Ehe, daher gehen viele Menschen ins Ausland, um sich registrieren zu lassen.",
+    "pinyin": "",
+    "translation": "B: Parece que sim. Mas no exterior, em muitos lugares, já existem leis sobre casamento gay, então muitas pessoas vão ao exterior para se registrar.",
+    "tokens": [
+      "B:",
+      "Das",
+      "scheint",
+      "so",
+      "zu",
+      "sein",
+      ".",
+      "Aber",
+      "im",
+      "Ausland",
+      "gibt",
+      "es",
+      "in",
+      "vielen",
+      "Orten",
+      "bereits",
+      "Gesetze",
+      "zur",
+      "gleichgeschlechtlichen",
+      "Ehe",
+      ",",
+      "daher",
+      "gehen",
+      "viele",
+      "Menschen",
+      "ins",
+      "Ausland",
+      ",",
+      "um",
+      "sich",
+      "registrieren",
+      "zu",
+      "lassen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gleichgeschlechtlichen Ehe",
+        "pinyin": "",
+        "meaning": "casamento entre pessoas do mesmo sexo"
+      },
+      {
+        "id": 2,
+        "word": "registrieren zu lassen",
+        "pinyin": "",
+        "meaning": "deixar-se registrar"
+      },
+      {
+        "id": 3,
+        "word": "Gesetze",
+        "pinyin": "",
+        "meaning": "leis"
+      },
+      {
+        "id": 4,
+        "word": "Orten",
+        "pinyin": "",
+        "meaning": "lugares"
+      }
+    ],
+    "id": "local-1780229339504-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich denke, dass es nur so sein kann. China wird dieses Gesetz wahrscheinlich nicht verabschieden können.",
+    "pinyin": "",
+    "translation": "A: Acho que só pode ser assim. A China provavelmente não conseguirá aprovar essa lei.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "denke",
+      ",",
+      "dass",
+      "es",
+      "nur",
+      "so",
+      "sein",
+      "kann",
+      ".",
+      "China",
+      "wird",
+      "dieses",
+      "Gesetz",
+      "wahrscheinlich",
+      "nicht",
+      "verabschieden",
+      "können",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "verabschieden",
+        "pinyin": "",
+        "meaning": "aprovar (lei)"
+      },
+      {
+        "id": 2,
+        "word": "wahrscheinlich",
+        "pinyin": "",
+        "meaning": "provavelmente"
+      },
+      {
+        "id": 3,
+        "word": "Gesetz",
+        "pinyin": "",
+        "meaning": "lei"
+      },
+      {
+        "id": 4,
+        "word": "verabschieden können",
+        "pinyin": "",
+        "meaning": "conseguir aprovar"
+      },
+      {
+        "id": 5,
+        "word": "nur so",
+        "pinyin": "",
+        "meaning": "só assim"
+      }
+    ],
+    "id": "local-1780229339504-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Am Ende betrachten unsere traditionellen Vorstellungen immer noch nur die heterosexuelle Ehe als Mainstream. Dennoch wünsche ich mir, dass unsere Gesellschaft toleranter und vielfältiger wird.",
+    "pinyin": "",
+    "translation": "B: No final, nossas ideias tradicionais ainda consideram apenas o casamento heterossexual como mainstream. No entanto, ainda desejo que nossa sociedade possa ser mais tolerante e diversa.",
+    "tokens": [
+      "B:",
+      "Am",
+      "Ende",
+      "betrachten",
+      "unsere",
+      "traditionellen",
+      "Vorstellungen",
+      "immer",
+      "noch",
+      "nur",
+      "die",
+      "heterosexuelle",
+      "Ehe",
+      "als",
+      "Mainstream",
+      ".",
+      "Dennoch",
+      "wünsche",
+      "ich",
+      "mir",
+      ",",
+      "dass",
+      "unsere",
+      "Gesellschaft",
+      "toleranter",
+      "und",
+      "vielfältiger",
+      "wird",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "traditionellen Vorstellungen",
+        "pinyin": "",
+        "meaning": "ideias tradicionais"
+      },
+      {
+        "id": 2,
+        "word": "heterosexuelle Ehe",
+        "pinyin": "",
+        "meaning": "casamento heterossexual"
+      },
+      {
+        "id": 3,
+        "word": "Mainstream",
+        "pinyin": "",
+        "meaning": "corrente principal"
+      },
+      {
+        "id": 4,
+        "word": "toleranter",
+        "pinyin": "",
+        "meaning": "mais tolerante"
+      },
+      {
+        "id": 5,
+        "word": "vielfältiger",
+        "pinyin": "",
+        "meaning": "mais diversa"
+      }
+    ],
+    "id": "local-1780229339504-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich befürchte, dass China auf diesem Weg noch einen langen Weg vor sich hat.",
+    "pinyin": "",
+    "translation": "A: Temo que a China ainda tem um longo caminho a percorrer nessa estrada.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "befürchte",
+      ",",
+      "dass",
+      "China",
+      "auf",
+      "diesem",
+      "Weg",
+      "noch",
+      "einen",
+      "langen",
+      "Weg",
+      "vor",
+      "sich",
+      "hat",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "befürchte",
+        "pinyin": "",
+        "meaning": "temo"
+      },
+      {
+        "id": 2,
+        "word": "befürchte",
+        "pinyin": "",
+        "meaning": "temo"
+      },
+      {
+        "id": 3,
+        "word": "Weg",
+        "pinyin": "",
+        "meaning": "caminho"
+      },
+      {
+        "id": 4,
+        "word": "lange",
+        "pinyin": "",
+        "meaning": "longo"
+      },
+      {
+        "id": 5,
+        "word": "vor sich hat",
+        "pinyin": "",
+        "meaning": "tem pela frente"
+      }
+    ],
+    "id": "local-1780229339504-10",
+    "language": "Alemão"
+  }
+]

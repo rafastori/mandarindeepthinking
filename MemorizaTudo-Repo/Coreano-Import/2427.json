@@ -1,0 +1,655 @@
+[
+  {
+    "chinese": "A: 여보, 수족관이 도착했어요!",
+    "pinyin": "",
+    "translation": "A: Querido, meu aquário chegou!",
+    "tokens": [
+      "A:",
+      "여보",
+      ",",
+      "수족관이",
+      "도착했어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여보",
+        "pinyin": "",
+        "meaning": "querido/a"
+      },
+      {
+        "id": 2,
+        "word": "수족관",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "도착",
+        "pinyin": "",
+        "meaning": "chegada"
+      },
+      {
+        "id": 4,
+        "word": "했어요",
+        "pinyin": "",
+        "meaning": "fez/chegou (passado)"
+      },
+      {
+        "id": 5,
+        "word": "!",
+        "pinyin": "",
+        "meaning": "sinal de exclamação"
+      }
+    ],
+    "id": "local-1780231656175-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 와, 물고기 탱크가 정말 크네요! 어떻게 사용하시려고요?",
+    "pinyin": "",
+    "translation": "B: Uau, esse aquário é tão grande! O que você quer fazer com ele?",
+    "tokens": [
+      "B:",
+      "와",
+      ",",
+      "물고기",
+      "탱크가",
+      "정말",
+      "크네요",
+      "!",
+      "어떻게",
+      "사용하시려고요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "물고기",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 2,
+        "word": "탱크",
+        "pinyin": "",
+        "meaning": "tanque"
+      },
+      {
+        "id": 3,
+        "word": "크네요",
+        "pinyin": "",
+        "meaning": "é grande"
+      },
+      {
+        "id": 4,
+        "word": "사용",
+        "pinyin": "",
+        "meaning": "uso"
+      },
+      {
+        "id": 5,
+        "word": "하시려고요",
+        "pinyin": "",
+        "meaning": "quer fazer"
+      }
+    ],
+    "id": "local-1780231656175-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 열대어를 키우고 싶어요.",
+    "pinyin": "",
+    "translation": "A: Quero criar peixes tropicais.",
+    "tokens": [
+      "A:",
+      "열대어를",
+      "키우고",
+      "싶어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "열대어",
+        "pinyin": "",
+        "meaning": "peixe tropical"
+      },
+      {
+        "id": 2,
+        "word": "키우고",
+        "pinyin": "",
+        "meaning": "criar/cuidar"
+      },
+      {
+        "id": 3,
+        "word": "싶어요",
+        "pinyin": "",
+        "meaning": "querer/gostar de"
+      }
+    ],
+    "id": "local-1780231656175-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 진짜로? 이미 수많은 동물과 식물을 죽였잖아. 이번에는 열대어를 살해할 계획이야?",
+    "pinyin": "",
+    "translation": "B: Sério? Você já matou tantos animais e plantas. Desta vez você está planejando assassinar peixes tropicais?",
+    "tokens": [
+      "B:",
+      "진짜로",
+      "?",
+      "이미",
+      "수많은",
+      "동물과",
+      "식물을",
+      "죽였잖아",
+      ".",
+      "이번에는",
+      "열대어를",
+      "살해할",
+      "계획이야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "진짜로",
+        "pinyin": "",
+        "meaning": "sério / verdadeiramente"
+      },
+      {
+        "id": 2,
+        "word": "수많은",
+        "pinyin": "",
+        "meaning": "muitos / inúmeros"
+      },
+      {
+        "id": 3,
+        "word": "동물",
+        "pinyin": "",
+        "meaning": "animal"
+      },
+      {
+        "id": 4,
+        "word": "식물",
+        "pinyin": "",
+        "meaning": "planta"
+      },
+      {
+        "id": 5,
+        "word": "죽였잖아",
+        "pinyin": "",
+        "meaning": "você matou (já fez)"
+      },
+      {
+        "id": 6,
+        "word": "열대어",
+        "pinyin": "",
+        "meaning": "peixe tropical"
+      },
+      {
+        "id": 7,
+        "word": "살해할",
+        "pinyin": "",
+        "meaning": "assassinar / matar"
+      }
+    ],
+    "id": "local-1780231656175-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아니요, 이번엔 정말 조사를 많이 했어요.",
+    "pinyin": "",
+    "translation": "A: Não, dessa vez eu pesquisei muito.",
+    "tokens": [
+      "A:",
+      "아니요",
+      ",",
+      "이번엔",
+      "정말",
+      "조사를",
+      "많이",
+      "했어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니요",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "이번엔",
+        "pinyin": "",
+        "meaning": "dessa vez"
+      },
+      {
+        "id": 3,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 4,
+        "word": "조사를",
+        "pinyin": "",
+        "meaning": "pesquisa"
+      },
+      {
+        "id": 5,
+        "word": "많이",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 6,
+        "word": "했어요",
+        "pinyin": "",
+        "meaning": "fiz"
+      }
+    ],
+    "id": "local-1780231656175-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 그거 잘 말해.",
+    "pinyin": "",
+    "translation": "B: Ah, me conte mais sobre isso.",
+    "tokens": [
+      "B:",
+      "아",
+      ",",
+      "그거",
+      "잘",
+      "말해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": "",
+        "meaning": "interjeição de surpresa ou reconhecimento"
+      },
+      {
+        "id": 2,
+        "word": "그거",
+        "pinyin": "",
+        "meaning": "aquilo, esse assunto"
+      },
+      {
+        "id": 3,
+        "word": "잘",
+        "pinyin": "",
+        "meaning": "bem, bem feito"
+      },
+      {
+        "id": 4,
+        "word": "말해",
+        "pinyin": "",
+        "meaning": "diga, fale"
+      }
+    ],
+    "id": "local-1780231656175-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 물고기를 키우고 싶다면 먼저 물을 처리해야 합니다. 수온, 용존 산소량, pH 수치, 투명도는 물고기에게 모두 매우 중요합니다. 물이 처리된 후에야 물고기를 키울 수 있습니다.",
+    "pinyin": "",
+    "translation": "A: Se você quiser criar peixes, primeiro precisa tratar a água. A temperatura da água, o teor de oxigênio, o nível de pH e a clareza são todos muito importantes para os peixes. Somente após a água ser tratada, os peixes podem ser criados.",
+    "tokens": [
+      "A:",
+      "물고기를",
+      "키우고",
+      "싶다면",
+      "먼저",
+      "물을",
+      "처리해야",
+      "합니다",
+      ".",
+      "수온",
+      ",",
+      "용존",
+      "산소량",
+      ",",
+      "pH",
+      "수치",
+      ",",
+      "투명도는",
+      "물고기에게",
+      "모두",
+      "매우",
+      "중요합니다",
+      ".",
+      "물이",
+      "처리된",
+      "후에야",
+      "물고기를",
+      "키울",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "물고기",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 2,
+        "word": "물",
+        "pinyin": "",
+        "meaning": "água"
+      },
+      {
+        "id": 3,
+        "word": "처리",
+        "pinyin": "",
+        "meaning": "tratamento"
+      },
+      {
+        "id": 4,
+        "word": "수온",
+        "pinyin": "",
+        "meaning": "temperatura da água"
+      },
+      {
+        "id": 5,
+        "word": "용존 산소량",
+        "pinyin": "",
+        "meaning": "teor de oxigênio dissolvido"
+      },
+      {
+        "id": 6,
+        "word": "pH 수치",
+        "pinyin": "",
+        "meaning": "nível de pH"
+      },
+      {
+        "id": 7,
+        "word": "투명도",
+        "pinyin": "",
+        "meaning": "clareza"
+      }
+    ],
+    "id": "local-1780231656175-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 이해가 가네요. 그러면 어떤 종류의 물고기를 키우실 계획인가요?",
+    "pinyin": "",
+    "translation": "B: Isso faz sentido. Então, que tipo de peixe você planeja criar?",
+    "tokens": [
+      "B:",
+      "그건",
+      "이해가",
+      "가네요",
+      ".",
+      "그러면",
+      "어떤",
+      "종류의",
+      "물고기를",
+      "키우실",
+      "계획인가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이해",
+        "pinyin": "",
+        "meaning": "entendimento"
+      },
+      {
+        "id": 2,
+        "word": "물고기",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 3,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 4,
+        "word": "종류",
+        "pinyin": "",
+        "meaning": "tipo"
+      }
+    ],
+    "id": "local-1780231656175-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 구피와 문피를 기르려고 해요. 이 두 물고기는 초보자에게 적합하다고 하네요. 또한 수질 요구 사항이 비슷해서 함께 키울 수 있어요.",
+    "pinyin": "",
+    "translation": "A: Estou planejando criar guppies e moonfish. Dizem que esses dois peixes são adequados para iniciantes. Além disso, suas exigências para a água são mais ou menos as mesmas, então você pode criá-los juntos.",
+    "tokens": [
+      "A:",
+      "구피와",
+      "문피를",
+      "기르려고",
+      "해요",
+      ".",
+      "이",
+      "두",
+      "물고기는",
+      "초보자에게",
+      "적합하다고",
+      "하네요",
+      ".",
+      "또한",
+      "수질",
+      "요구",
+      "사항이",
+      "비슷해서",
+      "함께",
+      "키울",
+      "수",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "구피",
+        "pinyin": "",
+        "meaning": "guppy"
+      },
+      {
+        "id": 2,
+        "word": "문피",
+        "pinyin": "",
+        "meaning": "moonfish"
+      },
+      {
+        "id": 3,
+        "word": "기르려고 해요",
+        "pinyin": "",
+        "meaning": "planejo criar"
+      },
+      {
+        "id": 4,
+        "word": "초보자에게 적합하다",
+        "pinyin": "",
+        "meaning": "adequado para iniciantes"
+      },
+      {
+        "id": 5,
+        "word": "수질 요구 사항",
+        "pinyin": "",
+        "meaning": "exigências para a água"
+      }
+    ],
+    "id": "local-1780231656175-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 당신은 언제 물고기 사러 가나요?",
+    "pinyin": "",
+    "translation": "B: Quando você vai comprar o peixe?",
+    "tokens": [
+      "B:",
+      "당신은",
+      "언제",
+      "물고기",
+      "사러",
+      "가나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "당신은",
+        "pinyin": "",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "언제",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 3,
+        "word": "물고기",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 4,
+        "word": "사러",
+        "pinyin": "",
+        "meaning": "para comprar"
+      },
+      {
+        "id": 5,
+        "word": "가나요",
+        "pinyin": "",
+        "meaning": "vai"
+      }
+    ],
+    "id": "local-1780231656175-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 꽃시장과 새시장에 같이 가볼까요? 다음 주말에 가요.",
+    "pinyin": "",
+    "translation": "A: Vamos juntos dar uma olhada no mercado de flores e pássaros? Vamos no próximo fim de semana.",
+    "tokens": [
+      "A:",
+      "꽃시장과",
+      "새시장에",
+      "같이",
+      "가볼까요",
+      "?",
+      "다음",
+      "주말에",
+      "가요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "꽃시장",
+        "pinyin": "",
+        "meaning": "mercado de flores"
+      },
+      {
+        "id": 2,
+        "word": "새시장",
+        "pinyin": "",
+        "meaning": "mercado de pássaros"
+      },
+      {
+        "id": 3,
+        "word": "같이",
+        "pinyin": "",
+        "meaning": "juntos"
+      },
+      {
+        "id": 4,
+        "word": "가볼까요",
+        "pinyin": "",
+        "meaning": "vamos dar uma olhada/ir"
+      },
+      {
+        "id": 5,
+        "word": "다음 주말",
+        "pinyin": "",
+        "meaning": "próximo fim de semana"
+      }
+    ],
+    "id": "local-1780231656175-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 나중에 가는 게 좋겠어. 그可怜한 물고기들이 며칠 더 살 수 있도록.",
+    "pinyin": "",
+    "translation": "B: Acho melhor irmos mais tarde e deixar esses pobres peixes viverem mais alguns dias.",
+    "tokens": [
+      "B:",
+      "나중에",
+      "가는",
+      "게",
+      "좋겠어",
+      ".",
+      "그可怜한",
+      "물고기들이",
+      "며칠",
+      "더",
+      "살",
+      "수",
+      "있도록",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나중에",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 2,
+        "word": "가는",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "좋겠어",
+        "pinyin": "",
+        "meaning": "é melhor"
+      },
+      {
+        "id": 4,
+        "word": "물고기들이",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 5,
+        "word": "살",
+        "pinyin": "",
+        "meaning": "viver"
+      },
+      {
+        "id": 6,
+        "word": "며칠",
+        "pinyin": "",
+        "meaning": "dias"
+      }
+    ],
+    "id": "local-1780231656175-11",
+    "language": "Coreano"
+  }
+]

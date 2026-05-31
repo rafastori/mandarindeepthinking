@@ -1,0 +1,826 @@
+[
+  {
+    "chinese": "A: Xiao Wang, che c'è che non va? Cosa ti preoccupa?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, o que há de errado? O que está te preocupando?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "che",
+      "c'è",
+      "che",
+      "non",
+      "va",
+      "?",
+      "Cosa",
+      "ti",
+      "preoccupa",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "che c'è che non va",
+        "pinyin": "",
+        "meaning": "o que há de errado"
+      },
+      {
+        "id": 2,
+        "word": "preoccupa",
+        "pinyin": "",
+        "meaning": "preocupa"
+      },
+      {
+        "id": 3,
+        "word": "ti",
+        "pinyin": "",
+        "meaning": "te"
+      }
+    ],
+    "id": "local-1780240692421-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Recentemente ho considerato se iscrivermi o meno a un programma MBA. Quali suggerimenti hai?",
+    "pinyin": "",
+    "translation": "B: Recentemente tenho considerado se devo ou não me inscrever em um programa de MBA. Quais sugestões você tem?",
+    "tokens": [
+      "B:",
+      "Recentemente",
+      "ho",
+      "considerato",
+      "se",
+      "iscrivermi",
+      "o",
+      "meno",
+      "a",
+      "un",
+      "programma",
+      "MBA",
+      ".",
+      "Quali",
+      "suggerimenti",
+      "hai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "iscrivermi",
+        "pinyin": "",
+        "meaning": "inscrever-me"
+      },
+      {
+        "id": 2,
+        "word": "programma",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 3,
+        "word": "considerato",
+        "pinyin": "",
+        "meaning": "considerado"
+      },
+      {
+        "id": 4,
+        "word": "suggerimenti",
+        "pinyin": "",
+        "meaning": "sugestões"
+      }
+    ],
+    "id": "local-1780240692421-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: MBA, eh? Ho un amico che ha appena finito i corsi e sta scrivendo la tesi.",
+    "pinyin": "",
+    "translation": "A: MBA, hein? Tenho um amigo que acabou de terminar os cursos e está escrevendo a tese.",
+    "tokens": [
+      "A:",
+      "MBA",
+      ",",
+      "eh",
+      "?",
+      "Ho",
+      "un",
+      "amico",
+      "che",
+      "ha",
+      "appena",
+      "finito",
+      "i",
+      "corsi",
+      "e",
+      "sta",
+      "scrivendo",
+      "la",
+      "tesi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "MBA",
+        "pinyin": "",
+        "meaning": "Mestrado em Administração de Empresas"
+      },
+      {
+        "id": 2,
+        "word": "amico",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "corsi",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "tesi",
+        "pinyin": "",
+        "meaning": "tese"
+      },
+      {
+        "id": 5,
+        "word": "scrivendo",
+        "pinyin": "",
+        "meaning": "escrevendo"
+      }
+    ],
+    "id": "local-1780240692421-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oh? Sta studiando mentre lavora o studia a tempo pieno?",
+    "pinyin": "",
+    "translation": "B: Ah? Ele está estudando enquanto trabalha ou estuda em tempo integral?",
+    "tokens": [
+      "B:",
+      "Oh",
+      "?",
+      "Sta",
+      "studiando",
+      "mentre",
+      "lavora",
+      "o",
+      "studia",
+      "a",
+      "tempo",
+      "pieno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mentre",
+        "pinyin": "",
+        "meaning": "enquanto"
+      },
+      {
+        "id": 2,
+        "word": "lavora",
+        "pinyin": "",
+        "meaning": "trabalha"
+      },
+      {
+        "id": 3,
+        "word": "tempo pieno",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "studia",
+        "pinyin": "",
+        "meaning": "estuda"
+      }
+    ],
+    "id": "local-1780240692421-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sta studiando mentre lavora. Ma ho sentito dire che il valore effettivo dei corsi a tempo pieno è maggiore e il costo è più basso.",
+    "pinyin": "",
+    "translation": "A: Ele está estudando enquanto trabalha. Mas ouvi dizer que o valor real dos cursos de tempo integral é maior e o custo é mais barato.",
+    "tokens": [
+      "A:",
+      "Sta",
+      "studiando",
+      "mentre",
+      "lavora",
+      ".",
+      "Ma",
+      "ho",
+      "sentito",
+      "dire",
+      "che",
+      "il",
+      "valore",
+      "effettivo",
+      "dei",
+      "corsi",
+      "a",
+      "tempo",
+      "pieno",
+      "è",
+      "maggiore",
+      "e",
+      "il",
+      "costo",
+      "è",
+      "più",
+      "basso",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "studiando",
+        "pinyin": "",
+        "meaning": "estudando"
+      },
+      {
+        "id": 2,
+        "word": "lavora",
+        "pinyin": "",
+        "meaning": "trabalha"
+      },
+      {
+        "id": 3,
+        "word": "corsi",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "tempo pieno",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 5,
+        "word": "costo",
+        "pinyin": "",
+        "meaning": "custo"
+      },
+      {
+        "id": 6,
+        "word": "valore",
+        "pinyin": "",
+        "meaning": "valor"
+      }
+    ],
+    "id": "local-1780240692421-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Davvero? Impossibile! I corsi a tempo pieno costano meno?",
+    "pinyin": "",
+    "translation": "B: Sério? Impossível! Os cursos de tempo integral custam menos?",
+    "tokens": [
+      "B:",
+      "Davvero",
+      "?",
+      "Impossibile",
+      "!",
+      "I",
+      "corsi",
+      "a",
+      "tempo",
+      "pieno",
+      "costano",
+      "meno",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Davvero",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "Impossibile",
+        "pinyin": "",
+        "meaning": "Impossível"
+      },
+      {
+        "id": 3,
+        "word": "corsi",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "tempo pieno",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 5,
+        "word": "costano",
+        "pinyin": "",
+        "meaning": "custam"
+      },
+      {
+        "id": 6,
+        "word": "meno",
+        "pinyin": "",
+        "meaning": "menos"
+      }
+    ],
+    "id": "local-1780240692421-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Poiché un numero minore di direttori generali segue corsi a tempo pieno, c'è anche un po' meno networking. Riflettici: molte persone entrano in contatto con alcuni direttori generali, alti dirigenti e simili di un'azienda principalmente attraverso un programma MBA. Da un lato, possono ampliare le proprie connessioni e dall'altro possono imparare dall'esperienza del direttore generale. Quindi, la maggior parte dei direttori generali studia sicuramente mentre lavora, poiché ciò non influisce sul loro lavoro.",
+    "pinyin": "",
+    "translation": "A: Como menos diretores gerais fazem cursos em tempo integral, há um pouco menos de networking. Pense bem, muitas pessoas se familiarizam com alguns diretores gerais, gerentes seniores e similares de uma empresa, principalmente através de um programa de MBA. Por um lado, eles podem expandir suas conexões e, por outro, podem aprender com a experiência do diretor geral. Então, a maioria dos diretores gerais está definitivamente estudando enquanto trabalha, porque isso não afetará seu trabalho.",
+    "tokens": [
+      "A:",
+      "Poiché",
+      "un",
+      "numero",
+      "minore",
+      "di",
+      "direttori",
+      "generali",
+      "segue",
+      "corsi",
+      "a",
+      "tempo",
+      "pieno",
+      ",",
+      "c'è",
+      "anche",
+      "un",
+      "po",
+      "'",
+      "meno",
+      "networking",
+      ".",
+      "Riflettici",
+      ":",
+      "molte",
+      "persone",
+      "entrano",
+      "in",
+      "contatto",
+      "con",
+      "alcuni",
+      "direttori",
+      "generali",
+      ",",
+      "alti",
+      "dirigenti",
+      "e",
+      "simili",
+      "di",
+      "un'azienda",
+      "principalmente",
+      "attraverso",
+      "un",
+      "programma",
+      "MBA",
+      ".",
+      "Da",
+      "un",
+      "lato",
+      ",",
+      "possono",
+      "ampliare",
+      "le",
+      "proprie",
+      "connessioni",
+      "e",
+      "dall'altro",
+      "possono",
+      "imparare",
+      "dall'esperienza",
+      "del",
+      "direttore",
+      "generale",
+      ".",
+      "Quindi",
+      ",",
+      "la",
+      "maggior",
+      "parte",
+      "dei",
+      "direttori",
+      "generali",
+      "studia",
+      "sicuramente",
+      "mentre",
+      "lavora",
+      ",",
+      "poiché",
+      "ciò",
+      "non",
+      "influisce",
+      "sul",
+      "loro",
+      "lavoro",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "direttori generali",
+        "pinyin": "",
+        "meaning": "diretores gerais"
+      },
+      {
+        "id": 2,
+        "word": "tempo pieno",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "networking",
+        "pinyin": "",
+        "meaning": "networking"
+      },
+      {
+        "id": 4,
+        "word": "alti dirigenti",
+        "pinyin": "",
+        "meaning": "altos gerentes"
+      },
+      {
+        "id": 5,
+        "word": "programma MBA",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 6,
+        "word": "connessioni",
+        "pinyin": "",
+        "meaning": "conexões"
+      },
+      {
+        "id": 7,
+        "word": "esperienza",
+        "pinyin": "",
+        "meaning": "experiência"
+      }
+    ],
+    "id": "local-1780240692421-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È vero. Allora la mia decisione è studiare lavorando! Il tuo amico studia in una scuola cinese o straniera?",
+    "pinyin": "",
+    "translation": "B: É verdade. Então minha decisão é estudar enquanto trabalho! Seu amigo estuda em uma escola chinesa ou estrangeira?",
+    "tokens": [
+      "B:",
+      "È",
+      "vero",
+      ".",
+      "Allora",
+      "la",
+      "mia",
+      "decisione",
+      "è",
+      "studiare",
+      "lavorando",
+      "!",
+      "Il",
+      "tuo",
+      "amico",
+      "studia",
+      "in",
+      "una",
+      "scuola",
+      "cinese",
+      "o",
+      "straniera",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È vero",
+        "pinyin": "",
+        "meaning": "É verdade"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "studiare",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 4,
+        "word": "lavorando",
+        "pinyin": "",
+        "meaning": "trabalhando"
+      },
+      {
+        "id": 5,
+        "word": "amico",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 6,
+        "word": "scuola",
+        "pinyin": "",
+        "meaning": "escola"
+      },
+      {
+        "id": 7,
+        "word": "cinese",
+        "pinyin": "",
+        "meaning": "chinês"
+      }
+    ],
+    "id": "local-1780240692421-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho sentito dire che, sia che si frequenti una scuola cinese o straniera, il programma di studi è più o meno lo stesso. Inoltre, la conoscenza teorica non viene utilizzata molto. Principalmente, tutto dipende dalla creazione di reti di contatti e dallo scambio di esperienze.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que, seja em uma escola chinesa ou estrangeira, o currículo é mais ou menos o mesmo. Além disso, o conhecimento teórico não é muito utilizado. Principalmente, depende-se da criação de conexões e da troca de experiências.",
+    "tokens": [
+      "A:",
+      "Ho",
+      "sentito",
+      "dire",
+      "che",
+      ",",
+      "sia",
+      "che",
+      "si",
+      "frequenti",
+      "una",
+      "scuola",
+      "cinese",
+      "o",
+      "straniera",
+      ",",
+      "il",
+      "programma",
+      "di",
+      "studi",
+      "è",
+      "più",
+      "o",
+      "meno",
+      "lo",
+      "stesso",
+      ".",
+      "Inoltre",
+      ",",
+      "la",
+      "conoscenza",
+      "teorica",
+      "non",
+      "viene",
+      "utilizzata",
+      "molto",
+      ".",
+      "Principalmente",
+      ",",
+      "tutto",
+      "dipende",
+      "dalla",
+      "creazione",
+      "di",
+      "reti",
+      "di",
+      "contatti",
+      "e",
+      "dallo",
+      "scambio",
+      "di",
+      "esperienze",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "programma di studi",
+        "pinyin": "",
+        "meaning": "currículo"
+      },
+      {
+        "id": 2,
+        "word": "conoscenza teorica",
+        "pinyin": "",
+        "meaning": "conhecimento teórico"
+      },
+      {
+        "id": 3,
+        "word": "creazione di reti di contatti",
+        "pinyin": "",
+        "meaning": "criação de conexões"
+      },
+      {
+        "id": 4,
+        "word": "scambio di esperienze",
+        "pinyin": "",
+        "meaning": "troca de experiências"
+      },
+      {
+        "id": 5,
+        "word": "scuola cinese",
+        "pinyin": "",
+        "meaning": "escola chinesa"
+      }
+    ],
+    "id": "local-1780240692421-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quanto denaro ha speso il tuo amico per il suo programma MBA?",
+    "pinyin": "",
+    "translation": "B: Quanto dinheiro seu amigo gastou no programa de MBA dele?",
+    "tokens": [
+      "B:",
+      "Quanto",
+      "denaro",
+      "ha",
+      "speso",
+      "il",
+      "tuo",
+      "amico",
+      "per",
+      "il",
+      "suo",
+      "programma",
+      "MBA",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "denaro",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "speso",
+        "pinyin": "",
+        "meaning": "gastou"
+      },
+      {
+        "id": 3,
+        "word": "amico",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "programma",
+        "pinyin": "",
+        "meaning": "programa"
+      }
+    ],
+    "id": "local-1780240692421-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Forse circa settantamila. I corsi più costosi sono tra centomila e duecentomila.",
+    "pinyin": "",
+    "translation": "A: Talvez cerca de setenta mil. Os cursos mais caros custam entre cem mil e duzentos mil.",
+    "tokens": [
+      "A:",
+      "Forse",
+      "circa",
+      "settantamila",
+      ".",
+      "I",
+      "corsi",
+      "più",
+      "costosi",
+      "sono",
+      "tra",
+      "centomila",
+      "e",
+      "duecentomila",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "circa",
+        "pinyin": "",
+        "meaning": "aproximadamente"
+      },
+      {
+        "id": 2,
+        "word": "costosi",
+        "pinyin": "",
+        "meaning": "caros"
+      },
+      {
+        "id": 3,
+        "word": "corsi",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "centomila",
+        "pinyin": "",
+        "meaning": "cem mil"
+      },
+      {
+        "id": 5,
+        "word": "duecentomila",
+        "pinyin": "",
+        "meaning": "duzentos mil"
+      }
+    ],
+    "id": "local-1780240692421-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sembra che non potrò più buttare i soldi dal finestrino. A partire dal prossimo mese dovrò arrangiarmi stringendo la cinghia e iniziando a risparmiare subito. Ah ah!",
+    "pinyin": "",
+    "translation": "B: Parece que não poderei mais jogar dinheiro pela janela. A partir do próximo mês, terei que me virar apertando o cinto e começando a economizar dinheiro imediatamente. Haha!",
+    "tokens": [
+      "B:",
+      "Sembra",
+      "che",
+      "non",
+      "potrò",
+      "più",
+      "buttare",
+      "i",
+      "soldi",
+      "dal",
+      "finestrino",
+      ".",
+      "A",
+      "partire",
+      "dal",
+      "prossimo",
+      "mese",
+      "dovrò",
+      "arrangiarmi",
+      "stringendo",
+      "la",
+      "cinghia",
+      "e",
+      "iniziando",
+      "a",
+      "risparmiare",
+      "subito",
+      ".",
+      "Ah",
+      "ah",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "buttare i soldi dal finestrino",
+        "pinyin": "",
+        "meaning": "jogar dinheiro fora"
+      },
+      {
+        "id": 2,
+        "word": "stringendo la cinghia",
+        "pinyin": "",
+        "meaning": "apertando o cinto / economizando"
+      },
+      {
+        "id": 3,
+        "word": "risparmiare",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 4,
+        "word": "arrangiarmi",
+        "pinyin": "",
+        "meaning": "me virar / me arranjar"
+      },
+      {
+        "id": 5,
+        "word": "prossimo mese",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      }
+    ],
+    "id": "local-1780240692421-11",
+    "language": "Italiano"
+  }
+]

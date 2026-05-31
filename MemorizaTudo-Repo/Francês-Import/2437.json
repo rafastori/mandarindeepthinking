@@ -1,0 +1,733 @@
+[
+  {
+    "chinese": "A: Bonjour Mike. Votre permis de travail est prêt. Vous pouvez maintenant demander un visa.",
+    "pinyin": "",
+    "translation": "A: Olá, Mike. Sua permissão de trabalho está pronta. Agora você pode solicitar um visto.",
+    "tokens": [
+      "A:",
+      "Bonjour",
+      "Mike",
+      ".",
+      "Votre",
+      "permis",
+      "de",
+      "travail",
+      "est",
+      "prêt",
+      ".",
+      "Vous",
+      "pouvez",
+      "maintenant",
+      "demander",
+      "un",
+      "visa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "permis de travail",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "prêt",
+        "pinyin": "",
+        "meaning": "pronto"
+      },
+      {
+        "id": 3,
+        "word": "demander",
+        "pinyin": "",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 4,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "maintenant",
+        "pinyin": "",
+        "meaning": "agora"
+      }
+    ],
+    "id": "local-1780237327397-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Merci beaucoup. Quels documents dois-je préparer ?",
+    "pinyin": "",
+    "translation": "B: Muito obrigado. Quais documentos devo preparar?",
+    "tokens": [
+      "B:",
+      "Merci",
+      "beaucoup",
+      ".",
+      "Quels",
+      "documents",
+      "dois",
+      "-",
+      "je",
+      "préparer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Merci",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      },
+      {
+        "id": 2,
+        "word": "beaucoup",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 3,
+        "word": "documents",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 4,
+        "word": "préparer",
+        "pinyin": "",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1780237327397-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vous devez présenter votre permis de travail, votre passeport, le registre de commerce de l'entreprise, la lettre d'invitation de l'entreprise, ainsi qu'une photo d'identité de 2 pouces. Il faut fournir l'original et une copie de chacun. Ensuite, vous devez également remplir le formulaire de demande.",
+    "pinyin": "",
+    "translation": "A: Você precisa apresentar sua permissão de trabalho, passaporte, registro comercial da empresa, carta de convite da empresa e uma foto 2x3. É necessário fornecer o original e uma cópia de cada documento. Em seguida, você também deve preencher o formulário de solicitação.",
+    "tokens": [
+      "A:",
+      "Vous",
+      "devez",
+      "présenter",
+      "votre",
+      "permis",
+      "de",
+      "travail",
+      ",",
+      "votre",
+      "passeport",
+      ",",
+      "le",
+      "registre",
+      "de",
+      "commerce",
+      "de",
+      "l'entreprise",
+      ",",
+      "la",
+      "lettre",
+      "d'invitation",
+      "de",
+      "l'entreprise",
+      ",",
+      "ainsi",
+      "qu'une",
+      "photo",
+      "d'identité",
+      "de",
+      "2",
+      "pouces",
+      ".",
+      "Il",
+      "faut",
+      "fournir",
+      "l'original",
+      "et",
+      "une",
+      "copie",
+      "de",
+      "chacun",
+      ".",
+      "Ensuite",
+      ",",
+      "vous",
+      "devez",
+      "également",
+      "remplir",
+      "le",
+      "formulaire",
+      "de",
+      "demande",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "permis de travail",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "passeport",
+        "pinyin": "",
+        "meaning": "passaporte"
+      },
+      {
+        "id": 3,
+        "word": "registre de commerce",
+        "pinyin": "",
+        "meaning": "registro comercial"
+      },
+      {
+        "id": 4,
+        "word": "lettre d'invitation",
+        "pinyin": "",
+        "meaning": "carta de convite"
+      },
+      {
+        "id": 5,
+        "word": "formulaire de demande",
+        "pinyin": "",
+        "meaning": "formulário de solicitação"
+      },
+      {
+        "id": 6,
+        "word": "original",
+        "pinyin": "",
+        "meaning": "original"
+      },
+      {
+        "id": 7,
+        "word": "copie",
+        "pinyin": "",
+        "meaning": "cópia"
+      }
+    ],
+    "id": "local-1780237327397-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Attendez. Je vais noter cela. Aussi, quel type de visa je demande ?",
+    "pinyin": "",
+    "translation": "B: Espere. Vou anotar isso. Além disso, que tipo de visto estou solicitando?",
+    "tokens": [
+      "B:",
+      "Attendez",
+      ".",
+      "Je",
+      "vais",
+      "noter",
+      "cela",
+      ".",
+      "Aussi",
+      ",",
+      "quel",
+      "type",
+      "de",
+      "visa",
+      "je",
+      "demande",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Attendez",
+        "pinyin": "",
+        "meaning": "Espere"
+      },
+      {
+        "id": 2,
+        "word": "note",
+        "pinyin": "",
+        "meaning": "anotar"
+      },
+      {
+        "id": 3,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "demande",
+        "pinyin": "",
+        "meaning": "solicito"
+      },
+      {
+        "id": 5,
+        "word": "Aussi",
+        "pinyin": "",
+        "meaning": "Além disso"
+      }
+    ],
+    "id": "local-1780237327397-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est un Z. Un visa de travail.",
+    "pinyin": "",
+    "translation": "A: É um Z. Um visto de trabalho.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "un",
+      "Z",
+      ".",
+      "Un",
+      "visa",
+      "de",
+      "travail",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Z",
+        "pinyin": "",
+        "meaning": "categoria de visto francês"
+      },
+      {
+        "id": 2,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "autorização de entrada"
+      },
+      {
+        "id": 3,
+        "word": "travail",
+        "pinyin": "",
+        "meaning": "emprego ou labor"
+      }
+    ],
+    "id": "local-1780237327397-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: J'ai entendu dire que pour postuler à un visa Z, il faut sortir du pays. Dois-je me rendre à Hong Kong ?",
+    "pinyin": "",
+    "translation": "B: Ouvi dizer que para se candidatar a um visto Z você precisa sair do país. Preciso ir para Hong Kong?",
+    "tokens": [
+      "B:",
+      "J'ai",
+      "entendu",
+      "dire",
+      "que",
+      "pour",
+      "postuler",
+      "à",
+      "un",
+      "visa",
+      "Z",
+      ",",
+      "il",
+      "faut",
+      "sortir",
+      "du",
+      "pays",
+      ".",
+      "Dois",
+      "-",
+      "je",
+      "me",
+      "rendre",
+      "à",
+      "Hong",
+      "Kong",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "visa Z",
+        "pinyin": "",
+        "meaning": "visto de trabalho chinês"
+      },
+      {
+        "id": 2,
+        "word": "postuler",
+        "pinyin": "",
+        "meaning": "candidatar-se"
+      },
+      {
+        "id": 3,
+        "word": "sortir du pays",
+        "pinyin": "",
+        "meaning": "sair do país"
+      },
+      {
+        "id": 4,
+        "word": "Hong Kong",
+        "pinyin": "",
+        "meaning": "região administrativa especial da China"
+      },
+      {
+        "id": 5,
+        "word": "Dois-je",
+        "pinyin": "",
+        "meaning": "eu devo / preciso"
+      }
+    ],
+    "id": "local-1780237327397-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Dans cette situation, vous n'avez pas besoin de le faire. Vous renouvelez votre visa.",
+    "pinyin": "",
+    "translation": "A: Nesta situação, você não precisa fazer isso. Você está renovando seu visto.",
+    "tokens": [
+      "A:",
+      "Dans",
+      "cette",
+      "situation",
+      ",",
+      "vous",
+      "n'avez",
+      "pas",
+      "besoin",
+      "de",
+      "le",
+      "faire",
+      ".",
+      "Vous",
+      "renouvelez",
+      "votre",
+      "visa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "situation",
+        "pinyin": "",
+        "meaning": "circunstância ou contexto"
+      },
+      {
+        "id": 2,
+        "word": "renouvelez",
+        "pinyin": "",
+        "meaning": "atualiza ou estende"
+      },
+      {
+        "id": 3,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "autorização de entrada"
+      },
+      {
+        "id": 4,
+        "word": "besoin",
+        "pinyin": "",
+        "meaning": "necessidade"
+      },
+      {
+        "id": 5,
+        "word": "faire",
+        "pinyin": "",
+        "meaning": "realizar ou executar"
+      }
+    ],
+    "id": "local-1780237327397-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est super. Oh, au fait, est-ce que quelqu'un peut faire la demande de visa pour moi ?",
+    "pinyin": "",
+    "translation": "B: Isso é ótimo. Ah, a propósito, alguém pode fazer o pedido de visto para mim?",
+    "tokens": [
+      "B:",
+      "C'est",
+      "super",
+      ".",
+      "Oh",
+      ",",
+      "au",
+      "fait",
+      ",",
+      "est",
+      "-",
+      "ce",
+      "que",
+      "quelqu'un",
+      "peut",
+      "faire",
+      "la",
+      "demande",
+      "de",
+      "visa",
+      "pour",
+      "moi",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "super",
+        "pinyin": "",
+        "meaning": "ótimo"
+      },
+      {
+        "id": 2,
+        "word": "au fait",
+        "pinyin": "",
+        "meaning": "a propósito"
+      },
+      {
+        "id": 3,
+        "word": "demande",
+        "pinyin": "",
+        "meaning": "pedido"
+      },
+      {
+        "id": 4,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "quelqu'un",
+        "pinyin": "",
+        "meaning": "alguém"
+      }
+    ],
+    "id": "local-1780237327397-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Vous êtes américain, donc vous ne pouvez pas faire ça. Les Américains doivent se présenter en personne au bureau.",
+    "pinyin": "",
+    "translation": "A: Você é americano, então você não pode fazer isso. Os americanos precisam comparecer pessoalmente ao escritório.",
+    "tokens": [
+      "A:",
+      "Vous",
+      "êtes",
+      "américain",
+      ",",
+      "donc",
+      "vous",
+      "ne",
+      "pouvez",
+      "pas",
+      "faire",
+      "ça",
+      ".",
+      "Les",
+      "Américains",
+      "doivent",
+      "se",
+      "présenter",
+      "en",
+      "personne",
+      "au",
+      "bureau",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "américain",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 2,
+        "word": "personne",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 3,
+        "word": "bureau",
+        "pinyin": "",
+        "meaning": "escritório"
+      },
+      {
+        "id": 4,
+        "word": "présenter",
+        "pinyin": "",
+        "meaning": "apresentar-se"
+      },
+      {
+        "id": 5,
+        "word": "donc",
+        "pinyin": "",
+        "meaning": "portanto"
+      }
+    ],
+    "id": "local-1780237327397-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ah bon ? Il y a des traitements différents selon les pays !",
+    "pinyin": "",
+    "translation": "B: Ah, é? Há tratamentos diferentes para países diferentes!",
+    "tokens": [
+      "B:",
+      "Ah",
+      "bon",
+      "?",
+      "Il",
+      "y",
+      "a",
+      "des",
+      "traitements",
+      "différents",
+      "selon",
+      "les",
+      "pays",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ah bon",
+        "pinyin": "",
+        "meaning": "Ah, é / Não acredito"
+      },
+      {
+        "id": 2,
+        "word": "traitements",
+        "pinyin": "",
+        "meaning": "tratamentos"
+      },
+      {
+        "id": 3,
+        "word": "différents",
+        "pinyin": "",
+        "meaning": "diferentes"
+      },
+      {
+        "id": 4,
+        "word": "pays",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 5,
+        "word": "selon",
+        "pinyin": "",
+        "meaning": "de acordo com / conforme"
+      }
+    ],
+    "id": "local-1780237327397-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. C'est la règle. Vous devez vous rendre au bureau de l'Office des Entrées et des Sorties de Shanghai. Dépêchez-vous. Après avoir déposé votre demande, vous pourrez obtenir votre visa en 7 jours ouvrables.",
+    "pinyin": "",
+    "translation": "A: Sim. Esta é a regra. Você precisa ir ao escritório do Bureau de Entrada e Saída de Xangai. Vá logo. Após solicitar, você poderá obter seu visto em 7 dias úteis.",
+    "tokens": [
+      "A:",
+      "Oui",
+      ".",
+      "C'est",
+      "la",
+      "règle",
+      ".",
+      "Vous",
+      "devez",
+      "vous",
+      "rendre",
+      "au",
+      "bureau",
+      "de",
+      "l'Office",
+      "des",
+      "Entrées",
+      "et",
+      "des",
+      "Sorties",
+      "de",
+      "Shanghai",
+      ".",
+      "Dépêchez",
+      "-",
+      "vous",
+      ".",
+      "Après",
+      "avoir",
+      "déposé",
+      "votre",
+      "demande",
+      ",",
+      "vous",
+      "pourrez",
+      "obtenir",
+      "votre",
+      "visa",
+      "en",
+      "7",
+      "jours",
+      "ouvrables",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entrées et des Sorties",
+        "pinyin": "",
+        "meaning": "Entrada e Saída"
+      },
+      {
+        "id": 2,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "demande",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 4,
+        "word": "visa",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "jours ouvrables",
+        "pinyin": "",
+        "meaning": "dias úteis"
+      }
+    ],
+    "id": "local-1780237327397-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: D'accord. Merci !",
+    "pinyin": "",
+    "translation": "B: Certo. Obrigado!",
+    "tokens": [
+      "B:",
+      "D'accord",
+      ".",
+      "Merci",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "D'accord",
+        "pinyin": "",
+        "meaning": "Certo / Concordo"
+      },
+      {
+        "id": 2,
+        "word": "Merci",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1780237327397-11",
+    "language": "Francês"
+  }
+]

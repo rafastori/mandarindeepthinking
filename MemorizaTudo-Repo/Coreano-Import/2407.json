@@ -1,0 +1,512 @@
+[
+  {
+    "chinese": "A: 리샤오의 아버지는 최근 5일 동안 병원에 입원해 있다가 갑자기 사망했습니다. 병원의 불만족스러운 설명으로 인해 리샤오는 의사들을 공격하여 한 의사의 왼쪽 눈을 실명하게 했습니다. 우리는 이 사건에 대해 병원과 환자 가족을 인터뷰했습니다.",
+    "pinyin": "",
+    "translation": "A: O pai de Li Xiao ficou internado no hospital por cinco dias recentemente e faleceu subitamente. Devido a uma explicação insatisfatória do hospital, Li Xiao atacou os médicos e cegou um deles no olho esquerdo. Entrevistamos o hospital e a família do paciente sobre este incidente.",
+    "tokens": [
+      "A:",
+      "리샤오의",
+      "아버지는",
+      "최근",
+      "5",
+      "일",
+      "동안",
+      "병원에",
+      "입원해",
+      "있다가",
+      "갑자기",
+      "사망했습니다",
+      ".",
+      "병원의",
+      "불만족스러운",
+      "설명으로",
+      "인해",
+      "리샤오는",
+      "의사들을",
+      "공격하여",
+      "한",
+      "의사의",
+      "왼쪽",
+      "눈을",
+      "실명하게",
+      "했습니다",
+      ".",
+      "우리는",
+      "이",
+      "사건에",
+      "대해",
+      "병원과",
+      "환자",
+      "가족을",
+      "인터뷰했습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리샤오",
+        "pinyin": "",
+        "meaning": "Li Xiao"
+      },
+      {
+        "id": 2,
+        "word": "아버지",
+        "pinyin": "",
+        "meaning": "pai"
+      },
+      {
+        "id": 3,
+        "word": "병원",
+        "pinyin": "",
+        "meaning": "hospital"
+      },
+      {
+        "id": 4,
+        "word": "사망",
+        "pinyin": "",
+        "meaning": "morte / falecimento"
+      },
+      {
+        "id": 5,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 6,
+        "word": "공격",
+        "pinyin": "",
+        "meaning": "ataque"
+      },
+      {
+        "id": 7,
+        "word": "실명",
+        "pinyin": "",
+        "meaning": "cegueira"
+      },
+      {
+        "id": 8,
+        "word": "인터뷰",
+        "pinyin": "",
+        "meaning": "entrevista"
+      }
+    ],
+    "id": "local-1780231155999-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 리샤오의 아버지는 나이가 많으셨고, 술을 좋아하시며 건강이 그리 좋지 않으셨습니다. 갑작스러운 별세로 매우 슬프지만, 의사들은 이미 할 수 있는 모든 치료를 다 하셨습니다.",
+    "pinyin": "",
+    "translation": "B: Pai de Li Xiao era idoso. Ele também gostava de beber e sua saúde não era muito boa. Estamos muito tristes com sua morte súbita, mas os médicos já haviam feito tudo o que podiam.",
+    "tokens": [
+      "B:",
+      "리샤오의",
+      "아버지는",
+      "나이가",
+      "많으셨고",
+      ",",
+      "술을",
+      "좋아하시며",
+      "건강이",
+      "그리",
+      "좋지",
+      "않으셨습니다",
+      ".",
+      "갑작스러운",
+      "별세로",
+      "매우",
+      "슬프지만",
+      ",",
+      "의사들은",
+      "이미",
+      "할",
+      "수",
+      "있는",
+      "모든",
+      "치료를",
+      "다",
+      "하셨습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리샤오",
+        "pinyin": "",
+        "meaning": "Li Xiao"
+      },
+      {
+        "id": 2,
+        "word": "아버지",
+        "pinyin": "",
+        "meaning": "pai"
+      },
+      {
+        "id": 3,
+        "word": "술",
+        "pinyin": "",
+        "meaning": "álcool/bebida"
+      },
+      {
+        "id": 4,
+        "word": "건강",
+        "pinyin": "",
+        "meaning": "saúde"
+      },
+      {
+        "id": 5,
+        "word": "별세",
+        "pinyin": "",
+        "meaning": "falecimento"
+      },
+      {
+        "id": 6,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 7,
+        "word": "치료",
+        "pinyin": "",
+        "meaning": "tratamento"
+      }
+    ],
+    "id": "local-1780231155999-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 리샤오의 아버지는 예전부터 건강이 좋았습니다. 병원은 그가 갑자기 사망한 이유에 대해 명확한 설명을 하지 않았습니다. 어떻게 이런 일을 받아들일 수 있겠습니까? 리샤오는 이로 인해 의사들을 폭행한 것을 매우 후회합니다.",
+    "pinyin": "",
+    "translation": "C: A saúde do pai de Li Xiao era boa anteriormente. O hospital nunca deu uma razão clara para sua morte súbita. Como podemos aceitar isso? Li Xiao se arrepende profundamente de ter atacado os médicos por causa disso.",
+    "tokens": [
+      "C:",
+      "리샤오의",
+      "아버지는",
+      "예전부터",
+      "건강이",
+      "좋았습니다",
+      ".",
+      "병원은",
+      "그가",
+      "갑자기",
+      "사망한",
+      "이유에",
+      "대해",
+      "명확한",
+      "설명을",
+      "하지",
+      "않았습니다",
+      ".",
+      "어떻게",
+      "이런",
+      "일을",
+      "받아들일",
+      "수",
+      "있겠습니까",
+      "?",
+      "리샤오는",
+      "이로",
+      "인해",
+      "의사들을",
+      "폭행한",
+      "것을",
+      "매우",
+      "후회합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "리샤오",
+        "pinyin": "",
+        "meaning": "Li Xiao"
+      },
+      {
+        "id": 2,
+        "word": "아버지",
+        "pinyin": "",
+        "meaning": "pai"
+      },
+      {
+        "id": 3,
+        "word": "건강",
+        "pinyin": "",
+        "meaning": "saúde"
+      },
+      {
+        "id": 4,
+        "word": "병원",
+        "pinyin": "",
+        "meaning": "hospital"
+      },
+      {
+        "id": 5,
+        "word": "사망",
+        "pinyin": "",
+        "meaning": "morte"
+      },
+      {
+        "id": 6,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 7,
+        "word": "폭행",
+        "pinyin": "",
+        "meaning": "agressão"
+      },
+      {
+        "id": 8,
+        "word": "후회",
+        "pinyin": "",
+        "meaning": "arrependimento"
+      }
+    ],
+    "id": "local-1780231155999-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이런 의사-환자 간 분쟁은 처음이 아닙니다. 우리는 공중보건국 국장을 인터뷰했으며, 그 역시 깊은 슬픔에 잠겨 있었습니다.",
+    "pinyin": "",
+    "translation": "A: Este não é a primeira vez que esse tipo de disputa entre médicos e pacientes acontece. Entrevistamos o diretor do Bureau de Saúde Pública e ele também estava profundamente triste.",
+    "tokens": [
+      "A:",
+      "이런",
+      "의사",
+      "-",
+      "환자",
+      "간",
+      "분쟁은",
+      "처음이",
+      "아닙니다",
+      ".",
+      "우리는",
+      "공중보건국",
+      "국장을",
+      "인터뷰했으며",
+      ",",
+      "그",
+      "역시",
+      "깊은",
+      "슬픔에",
+      "잠겨",
+      "있었습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 2,
+        "word": "환자",
+        "pinyin": "",
+        "meaning": "paciente"
+      },
+      {
+        "id": 3,
+        "word": "분쟁",
+        "pinyin": "",
+        "meaning": "disputa"
+      },
+      {
+        "id": 4,
+        "word": "공중보건국",
+        "pinyin": "",
+        "meaning": "Bureau de Saúde Pública"
+      },
+      {
+        "id": 5,
+        "word": "국장",
+        "pinyin": "",
+        "meaning": "diretor"
+      },
+      {
+        "id": 6,
+        "word": "인터뷰",
+        "pinyin": "",
+        "meaning": "entrevista"
+      },
+      {
+        "id": 7,
+        "word": "슬픔",
+        "pinyin": "",
+        "meaning": "tristeza"
+      }
+    ],
+    "id": "local-1780231155999-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "D: 의사와 환자 간 분쟁에서 가장 큰 문제는 의사들과 환자들이 충분히 소통하지 않는다는 점입니다. 한편, 일부 의사는 질병을 명확하게 설명하지 않거나 환자의 가족이 이해하지 못하는 경우가 있습니다. 다른 한편으로, 일부 환자는 병원에 가면 반드시 회복될 것이라고 생각합니다.他们对医生的期望过高。因此，医疗人员应竭尽全力为患者提供医疗服务，并主动与患者家属沟通。",
+    "pinyin": "",
+    "translation": "D: Acredito que o maior problema nas disputas entre médicos e pacientes é que médicos e pacientes não se comunicam o suficiente. Por um lado, alguns médicos não explicam as doenças claramente, ou os parentes do paciente não conseguem entender. Por outro lado, alguns pacientes acham que, ao irem ao hospital, certamente se recuperarão. As expectativas deles em relação aos médicos são altas demais. Portanto, a equipe médica deve fazer tudo o que puder para tratar o paciente, bem como se comunicar proativamente com as famílias dos pacientes.",
+    "tokens": [
+      "D:",
+      "의사와",
+      "환자",
+      "간",
+      "분쟁에서",
+      "가장",
+      "큰",
+      "문제는",
+      "의사들과",
+      "환자들이",
+      "충분히",
+      "소통하지",
+      "않는다는",
+      "점입니다",
+      ".",
+      "한편",
+      ",",
+      "일부",
+      "의사는",
+      "질병을",
+      "명확하게",
+      "설명하지",
+      "않거나",
+      "환자의",
+      "가족이",
+      "이해하지",
+      "못하는",
+      "경우가",
+      "있습니다",
+      ".",
+      "다른",
+      "한편으로",
+      ",",
+      "일부",
+      "환자는",
+      "병원에",
+      "가면",
+      "반드시",
+      "회복될",
+      "것이라고",
+      "생각합니다",
+      ".",
+      "他们对医生的期望过高",
+      "。",
+      "因此",
+      "，",
+      "医疗人员应竭尽全力为患者提供医疗服务",
+      "，",
+      "并主动与患者家属沟通",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "분쟁",
+        "pinyin": "",
+        "meaning": "disputa"
+      },
+      {
+        "id": 2,
+        "word": "소통",
+        "pinyin": "",
+        "meaning": "comunicação"
+      },
+      {
+        "id": 3,
+        "word": "질병",
+        "pinyin": "",
+        "meaning": "doença"
+      },
+      {
+        "id": 4,
+        "word": "가족",
+        "pinyin": "",
+        "meaning": "família"
+      }
+    ],
+    "id": "local-1780231155999-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 의사를 공격하는 것은 문제를 해결하지 못합니다. 앞으로 이런 상황에서 환자 가족들이 더 차분해지길 바랍니다. 의사가 이렇게 위험한 직업이라면, 앞으로 누가 의사가 되려 하겠습니까?",
+    "pinyin": "",
+    "translation": "A: Atacar médicos não resolverá o problema. Espero que, no futuro, as famílias dos pacientes possam ser mais calmas nessas situações. Se ser médico é um trabalho tão perigoso, quem vai querer se tornar médico no futuro?",
+    "tokens": [
+      "A:",
+      "의사를",
+      "공격하는",
+      "것은",
+      "문제를",
+      "해결하지",
+      "못합니다",
+      ".",
+      "앞으로",
+      "이런",
+      "상황에서",
+      "환자",
+      "가족들이",
+      "더",
+      "차분해지길",
+      "바랍니다",
+      ".",
+      "의사가",
+      "이렇게",
+      "위험한",
+      "직업이라면",
+      ",",
+      "앞으로",
+      "누가",
+      "의사가",
+      "되려",
+      "하겠습니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "의사",
+        "pinyin": "",
+        "meaning": "médico"
+      },
+      {
+        "id": 2,
+        "word": "공격",
+        "pinyin": "",
+        "meaning": "ataque"
+      },
+      {
+        "id": 3,
+        "word": "문제",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 4,
+        "word": "환자 가족",
+        "pinyin": "",
+        "meaning": "família do paciente"
+      },
+      {
+        "id": 5,
+        "word": "차분",
+        "pinyin": "",
+        "meaning": "calmo"
+      },
+      {
+        "id": 6,
+        "word": "위험",
+        "pinyin": "",
+        "meaning": "perigoso"
+      },
+      {
+        "id": 7,
+        "word": "직업",
+        "pinyin": "",
+        "meaning": "profissão"
+      }
+    ],
+    "id": "local-1780231155999-5",
+    "language": "Coreano"
+  }
+]

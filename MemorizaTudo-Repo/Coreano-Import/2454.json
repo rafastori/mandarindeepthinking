@@ -1,0 +1,657 @@
+[
+  {
+    "chinese": "A: 이번 분기 회사의 판매량은 전 분기 대비 20% 감소했습니다.",
+    "pinyin": "",
+    "translation": "A: Neste trimestre, o volume de vendas da empresa caiu 20% em relação ao trimestre anterior.",
+    "tokens": [
+      "A:",
+      "이번",
+      "분기",
+      "회사의",
+      "판매량은",
+      "전",
+      "분기",
+      "대비",
+      "20",
+      "%",
+      "감소했습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이번 분기",
+        "pinyin": "",
+        "meaning": "este trimestre"
+      },
+      {
+        "id": 2,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "판매량",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "전 분기",
+        "pinyin": "",
+        "meaning": "trimestre anterior"
+      },
+      {
+        "id": 5,
+        "word": "대비",
+        "pinyin": "",
+        "meaning": "em relação a / comparado a"
+      },
+      {
+        "id": 6,
+        "word": "감소했습니다",
+        "pinyin": "",
+        "meaning": "diminuiu / caiu"
+      }
+    ],
+    "id": "local-1780232345422-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이것은 계절의 변화와 관련이 있습니다. 매년 이맘때쯤이면 우리 사업은 항상 매우 부진합니다.",
+    "pinyin": "",
+    "translation": "B: Isso tem a ver com as mudanças sazonais. Toda vez neste período do ano, nossos negócios nunca são muito bons.",
+    "tokens": [
+      "B:",
+      "이것은",
+      "계절의",
+      "변화와",
+      "관련이",
+      "있습니다",
+      ".",
+      "매년",
+      "이맘때쯤이면",
+      "우리",
+      "사업은",
+      "항상",
+      "매우",
+      "부진합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "계절",
+        "pinyin": "",
+        "meaning": "estação"
+      },
+      {
+        "id": 2,
+        "word": "변화",
+        "pinyin": "",
+        "meaning": "mudança"
+      },
+      {
+        "id": 3,
+        "word": "매년",
+        "pinyin": "",
+        "meaning": "anualmente"
+      },
+      {
+        "id": 4,
+        "word": "이맘때쯤이면",
+        "pinyin": "",
+        "meaning": "nesta época"
+      },
+      {
+        "id": 5,
+        "word": "사업",
+        "pinyin": "",
+        "meaning": "negócio"
+      },
+      {
+        "id": 6,
+        "word": "부진합니다",
+        "pinyin": "",
+        "meaning": "é fraco/estagnado"
+      }
+    ],
+    "id": "local-1780232345422-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 단순히 계절적 요인만은 아닌 것 같습니다. 이전에는 물량 감소가 약 5%에 불과했습니다. 최근에는 프로모션에 대한 투자도 줄었기 때문에 당연히 판매량이 하락했습니다. 마케팅 예산을 늘리는 것이 좋겠습니다.",
+    "pinyin": "",
+    "translation": "C: Acho que não é apenas sazonal. Antes, a queda no volume era de apenas cerca de 5%. Recentemente, nosso investimento em promoção também foi menor, então, claro, nosso volume de vendas caiu. Seria melhor aumentarmos o orçamento de marketing.",
+    "tokens": [
+      "C:",
+      "단순히",
+      "계절적",
+      "요인만은",
+      "아닌",
+      "것",
+      "같습니다",
+      ".",
+      "이전에는",
+      "물량",
+      "감소가",
+      "약",
+      "5",
+      "%",
+      "에",
+      "불과했습니다",
+      ".",
+      "최근에는",
+      "프로모션에",
+      "대한",
+      "투자도",
+      "줄었기",
+      "때문에",
+      "당연히",
+      "판매량이",
+      "하락했습니다",
+      ".",
+      "마케팅",
+      "예산을",
+      "늘리는",
+      "것이",
+      "좋겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "계절적",
+        "pinyin": "",
+        "meaning": "sazonal"
+      },
+      {
+        "id": 2,
+        "word": "물량",
+        "pinyin": "",
+        "meaning": "volume"
+      },
+      {
+        "id": 3,
+        "word": "프로모션",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 4,
+        "word": "투자",
+        "pinyin": "",
+        "meaning": "investimento"
+      },
+      {
+        "id": 5,
+        "word": "판매량",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 6,
+        "word": "마케팅 예산",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      }
+    ],
+    "id": "local-1780232345422-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 가능한 일일까요? 마케팅 예산 삭감이 우리 회사만의 현상은 아니며, 모든 기업의 판매량이 반드시 줄어든 것도 아닙니다.",
+    "pinyin": "",
+    "translation": "B: Isso é realmente possível? A redução no orçamento de marketing não se limita à nossa empresa, e os volumes de vendas de todos não necessariamente caíram.",
+    "tokens": [
+      "B:",
+      "정말",
+      "가능한",
+      "일일까요",
+      "?",
+      "마케팅",
+      "예산",
+      "삭감이",
+      "우리",
+      "회사만의",
+      "현상은",
+      "아니며",
+      ",",
+      "모든",
+      "기업의",
+      "판매량이",
+      "반드시",
+      "줄어든",
+      "것도",
+      "아닙니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "마케팅 예산",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      },
+      {
+        "id": 2,
+        "word": "삭감",
+        "pinyin": "",
+        "meaning": "redução/corte"
+      },
+      {
+        "id": 3,
+        "word": "판매량",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "현상",
+        "pinyin": "",
+        "meaning": "fenômeno"
+      },
+      {
+        "id": 5,
+        "word": "가능한",
+        "pinyin": "",
+        "meaning": "possível"
+      }
+    ],
+    "id": "local-1780232345422-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 하지만 예산을 줄였더니 매출량이 떨어졌습니다. 당연한 결과죠.",
+    "pinyin": "",
+    "translation": "C: Mas reduzimos nosso orçamento e o volume de vendas caiu. É óbvio.",
+    "tokens": [
+      "C:",
+      "하지만",
+      "예산을",
+      "줄였더니",
+      "매출량이",
+      "떨어졌습니다",
+      ".",
+      "당연한",
+      "결과죠",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "예산",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "줄였더니",
+        "pinyin": "",
+        "meaning": "ao reduzir"
+      },
+      {
+        "id": 3,
+        "word": "매출량",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "떨어졌습니다",
+        "pinyin": "",
+        "meaning": "caiu/diminuiu"
+      },
+      {
+        "id": 5,
+        "word": "당연한",
+        "pinyin": "",
+        "meaning": "óbvio/natural"
+      }
+    ],
+    "id": "local-1780232345422-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이것은 우리가 돈을 쓰기를 원하느냐 마느냐의 문제가 아닙니다. 예산은 이미 일 년 전에 책정되었습니다. 지금 그것을 늘리는 것은 실용적이지 않습니다.",
+    "pinyin": "",
+    "translation": "A: Esta não é uma questão de estarmos dispostos ou não a gastar dinheiro. O orçamento já foi definido há um ano. Aumentá-lo agora não é prático.",
+    "tokens": [
+      "A:",
+      "이것은",
+      "우리가",
+      "돈을",
+      "쓰기를",
+      "원하느냐",
+      "마느냐의",
+      "문제가",
+      "아닙니다",
+      ".",
+      "예산은",
+      "이미",
+      "일",
+      "년",
+      "전에",
+      "책정되었습니다",
+      ".",
+      "지금",
+      "그것을",
+      "늘리는",
+      "것은",
+      "실용적이지",
+      "않습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "돈",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      },
+      {
+        "id": 2,
+        "word": "예산",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "책정",
+        "pinyin": "",
+        "meaning": "definição/fixação"
+      },
+      {
+        "id": 4,
+        "word": "실용적",
+        "pinyin": "",
+        "meaning": "prático"
+      },
+      {
+        "id": 5,
+        "word": "문제",
+        "pinyin": "",
+        "meaning": "questão/problema"
+      },
+      {
+        "id": 6,
+        "word": "일 년",
+        "pinyin": "",
+        "meaning": "um ano"
+      }
+    ],
+    "id": "local-1780232345422-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 그때는 저도 동의하지 않았어요!",
+    "pinyin": "",
+    "translation": "C: Naquela época, eu também não concordei!",
+    "tokens": [
+      "C:",
+      "그때는",
+      "저도",
+      "동의하지",
+      "않았어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그때",
+        "pinyin": "",
+        "meaning": "naquela época"
+      },
+      {
+        "id": 2,
+        "word": "저도",
+        "pinyin": "",
+        "meaning": "eu também"
+      },
+      {
+        "id": 3,
+        "word": "동의하지",
+        "pinyin": "",
+        "meaning": "não concordar"
+      },
+      {
+        "id": 4,
+        "word": "않았어요",
+        "pinyin": "",
+        "meaning": "não fez (passado)"
+      },
+      {
+        "id": 5,
+        "word": "동의",
+        "pinyin": "",
+        "meaning": "concordância"
+      }
+    ],
+    "id": "local-1780232345422-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 지금 불평할 때가 아닙니다. 우리는 계획을 세워야 합니다.",
+    "pinyin": "",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em um plano.",
+    "tokens": [
+      "A:",
+      "지금",
+      "불평할",
+      "때가",
+      "아닙니다",
+      ".",
+      "우리는",
+      "계획을",
+      "세워야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "지금",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "불평",
+        "pinyin": "",
+        "meaning": "reclamação"
+      },
+      {
+        "id": 3,
+        "word": "때",
+        "pinyin": "",
+        "meaning": "hora / momento"
+      },
+      {
+        "id": 4,
+        "word": "아닙니다",
+        "pinyin": "",
+        "meaning": "não é"
+      },
+      {
+        "id": 5,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 6,
+        "word": "세워야",
+        "pinyin": "",
+        "meaning": "precisamos estabelecer"
+      },
+      {
+        "id": 7,
+        "word": "합니다",
+        "pinyin": "",
+        "meaning": "fazer / realizar"
+      }
+    ],
+    "id": "local-1780232345422-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 큰 행사 몇 개를 열어볼까요?",
+    "pinyin": "",
+    "translation": "B: Que tal organizarmos alguns grandes eventos?",
+    "tokens": [
+      "B:",
+      "큰",
+      "행사",
+      "몇",
+      "개를",
+      "열어볼까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "큰",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 2,
+        "word": "행사",
+        "pinyin": "",
+        "meaning": "evento"
+      },
+      {
+        "id": 3,
+        "word": "몇 개",
+        "pinyin": "",
+        "meaning": "alguns"
+      },
+      {
+        "id": 4,
+        "word": "열어볼까요",
+        "pinyin": "",
+        "meaning": "vamos abrir/organizar"
+      }
+    ],
+    "id": "local-1780232345422-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 그렇게 하고 싶지 않은 게 아니라, 실제로는 어려운 점이 있어서예요.",
+    "pinyin": "",
+    "translation": "C: Não é que eu não queira fazer isso, é que existem desafios reais.",
+    "tokens": [
+      "C:",
+      "그렇게",
+      "하고",
+      "싶지",
+      "않은",
+      "게",
+      "아니라",
+      ",",
+      "실제로는",
+      "어려운",
+      "점이",
+      "있어서예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그렇게",
+        "pinyin": "",
+        "meaning": "assim"
+      },
+      {
+        "id": 2,
+        "word": "하고 싶지 않은",
+        "pinyin": "",
+        "meaning": "não querer fazer"
+      },
+      {
+        "id": 3,
+        "word": "실제로는",
+        "pinyin": "",
+        "meaning": "na verdade"
+      },
+      {
+        "id": 4,
+        "word": "어려운",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 5,
+        "word": "점이",
+        "pinyin": "",
+        "meaning": "ponto/aspecto"
+      },
+      {
+        "id": 6,
+        "word": "있어서예요",
+        "pinyin": "",
+        "meaning": "porque há"
+      }
+    ],
+    "id": "local-1780232345422-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 오늘 이 문제로 논쟁하지 맙시다. 해결하려면 마케팅 부서에 직접 문의하는 것이 더 좋습니다.",
+    "pinyin": "",
+    "translation": "A: Não vamos discutir este problema hoje. É melhor entrarmos em contato diretamente com o Departamento de Marketing para resolvê-lo.",
+    "tokens": [
+      "A:",
+      "오늘",
+      "이",
+      "문제로",
+      "논쟁하지",
+      "맙시다",
+      ".",
+      "해결하려면",
+      "마케팅",
+      "부서에",
+      "직접",
+      "문의하는",
+      "것이",
+      "더",
+      "좋습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "논쟁",
+        "pinyin": "",
+        "meaning": "debate"
+      },
+      {
+        "id": 2,
+        "word": "마케팅",
+        "pinyin": "",
+        "meaning": "marketing"
+      },
+      {
+        "id": 3,
+        "word": "부서",
+        "pinyin": "",
+        "meaning": "departamento"
+      },
+      {
+        "id": 4,
+        "word": "문의",
+        "pinyin": "",
+        "meaning": "contato"
+      },
+      {
+        "id": 5,
+        "word": "해결",
+        "pinyin": "",
+        "meaning": "resolução"
+      }
+    ],
+    "id": "local-1780232345422-10",
+    "language": "Coreano"
+  }
+]

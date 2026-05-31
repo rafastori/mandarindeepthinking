@@ -1,0 +1,736 @@
+[
+  {
+    "chinese": "A: こんにちは、マイク。就労許可証が完成しました。これでビザの申請に行けます。",
+    "pinyin": "",
+    "translation": "A: Olá, Mike. Sua permissão de trabalho está pronta. Agora você pode ir solicitar o visto.",
+    "tokens": [
+      "A:",
+      "こんにちは",
+      "、",
+      "マイク",
+      "。",
+      "就労",
+      "許可",
+      "証",
+      "が",
+      "完成",
+      "し",
+      "まし",
+      "た",
+      "。",
+      "これ",
+      "で",
+      "ビザ",
+      "の",
+      "申請",
+      "に",
+      "行け",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就労許可証",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "完成しました",
+        "pinyin": "",
+        "meaning": "está pronto/concluído"
+      },
+      {
+        "id": 3,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "solicitação/aplicação"
+      },
+      {
+        "id": 5,
+        "word": "行けます",
+        "pinyin": "",
+        "meaning": "pode ir/consegue ir"
+      }
+    ],
+    "id": "local-1780259407529-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ありがとうございます。どのような書類を用意すればよいですか？",
+    "pinyin": "",
+    "translation": "B: Muito obrigado. Que documentos preciso preparar?",
+    "tokens": [
+      "B:",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "。",
+      "どの",
+      "よう",
+      "な",
+      "書類",
+      "を",
+      "用意",
+      "すれ",
+      "ば",
+      "よい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ありがとうございます",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 2,
+        "word": "書類",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 3,
+        "word": "用意",
+        "pinyin": "",
+        "meaning": "preparação"
+      }
+    ],
+    "id": "local-1780259407529-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 雇用許可証、パスポート、会社の営業許可証、会社の招待状、2インチの写真1枚を持参してください。それぞれ原本とコピーが必要です。さらに、申請書に記入する必要があります。",
+    "pinyin": "",
+    "translation": "A: Você precisa levar sua permissão de trabalho, passaporte, licença comercial da empresa, carta de convite da empresa e uma foto de 2 polegadas. Original e cópia de cada um. Além disso, você também deve preencher o formulário de solicitação.",
+    "tokens": [
+      "A:",
+      "雇用",
+      "許可",
+      "証",
+      "、",
+      "パスポート",
+      "、",
+      "会社",
+      "の",
+      "営業",
+      "許可",
+      "証",
+      "、",
+      "会社",
+      "の",
+      "招待",
+      "状",
+      "、",
+      "2",
+      "インチ",
+      "の",
+      "写真",
+      "1",
+      "枚",
+      "を",
+      "持参",
+      "し",
+      "て",
+      "ください",
+      "。",
+      "それぞれ",
+      "原本",
+      "と",
+      "コピー",
+      "が",
+      "必要",
+      "です",
+      "。",
+      "さらに",
+      "、",
+      "申請",
+      "書",
+      "に",
+      "記入",
+      "する",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "雇用許可証",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "パスポート",
+        "pinyin": "",
+        "meaning": "passaporte"
+      },
+      {
+        "id": 3,
+        "word": "営業許可証",
+        "pinyin": "",
+        "meaning": "licença comercial"
+      },
+      {
+        "id": 4,
+        "word": "招待状",
+        "pinyin": "",
+        "meaning": "carta de convite"
+      },
+      {
+        "id": 5,
+        "word": "申請書",
+        "pinyin": "",
+        "meaning": "formulário de solicitação"
+      },
+      {
+        "id": 6,
+        "word": "原本",
+        "pinyin": "",
+        "meaning": "original"
+      },
+      {
+        "id": 7,
+        "word": "コピー",
+        "pinyin": "",
+        "meaning": "cópia"
+      }
+    ],
+    "id": "local-1780259407529-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ちょっと待って。メモします。あと、どんなビザを申請すればいいですか？",
+    "pinyin": "",
+    "translation": "B: Espere um pouco. Vou anotar isso. Além disso, que tipo de visto estou solicitando?",
+    "tokens": [
+      "B:",
+      "ちょっと",
+      "待っ",
+      "て",
+      "。",
+      "メモ",
+      "し",
+      "ます",
+      "。",
+      "あと",
+      "、",
+      "どんな",
+      "ビザ",
+      "を",
+      "申請",
+      "すれ",
+      "ば",
+      "いい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ちょっと待って",
+        "pinyin": "",
+        "meaning": "espere um pouco"
+      },
+      {
+        "id": 2,
+        "word": "メモします",
+        "pinyin": "",
+        "meaning": "vou anotar"
+      },
+      {
+        "id": 3,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 5,
+        "word": "どんな",
+        "pinyin": "",
+        "meaning": "que tipo de"
+      }
+    ],
+    "id": "local-1780259407529-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: Zです。就労ビザです。",
+    "pinyin": "",
+    "translation": "A: É um Z. Um visto de trabalho.",
+    "tokens": [
+      "A:",
+      "Z",
+      "です",
+      "。",
+      "就労",
+      "ビザ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Z",
+        "pinyin": "",
+        "meaning": "categoria de visto"
+      },
+      {
+        "id": 2,
+        "word": "就労ビザ",
+        "pinyin": "",
+        "meaning": "visto de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "です",
+        "pinyin": "",
+        "meaning": "partícula de afirmação"
+      }
+    ],
+    "id": "local-1780259407529-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: Zビザの申請には出国が必要と聞きましたが、香港に行く必要がありますか？",
+    "pinyin": "",
+    "translation": "B: Ouvi dizer que para solicitar um visto Z é necessário sair do país. Preciso ir para Hong Kong?",
+    "tokens": [
+      "B:",
+      "Z",
+      "ビザ",
+      "の",
+      "申請",
+      "に",
+      "は",
+      "出国",
+      "が",
+      "必要",
+      "と",
+      "聞き",
+      "まし",
+      "た",
+      "が",
+      "、",
+      "香港",
+      "に",
+      "行く",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Zビザ",
+        "pinyin": "",
+        "meaning": "visto Z"
+      },
+      {
+        "id": 2,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 3,
+        "word": "出国",
+        "pinyin": "",
+        "meaning": "saída do país"
+      },
+      {
+        "id": 4,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessário"
+      },
+      {
+        "id": 5,
+        "word": "香港",
+        "pinyin": "",
+        "meaning": "Hong Kong"
+      }
+    ],
+    "id": "local-1780259407529-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: この場合、必要ありません。ビザを更新しているだけです。",
+    "pinyin": "",
+    "translation": "A: Nesta situação, você não precisa. Você está renovando seu visto.",
+    "tokens": [
+      "A:",
+      "この",
+      "場合",
+      "、",
+      "必要",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "ビザ",
+      "を",
+      "更新",
+      "し",
+      "て",
+      "いる",
+      "だけ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "場合",
+        "pinyin": "",
+        "meaning": "situação"
+      },
+      {
+        "id": 2,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessidade"
+      },
+      {
+        "id": 3,
+        "word": "更新",
+        "pinyin": "",
+        "meaning": "renovação"
+      },
+      {
+        "id": 4,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      }
+    ],
+    "id": "local-1780259407529-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それは素晴らしいですね。あ、そういえば、誰か私のビザを申請してくれますか？",
+    "pinyin": "",
+    "translation": "B: Isso é ótimo. Ah, a propósito, alguém pode solicitar o visto para mim?",
+    "tokens": [
+      "B:",
+      "それ",
+      "は",
+      "素晴らしい",
+      "です",
+      "ね",
+      "。",
+      "あ",
+      "、",
+      "そう",
+      "いえ",
+      "ば",
+      "、",
+      "誰",
+      "か",
+      "私",
+      "の",
+      "ビザ",
+      "を",
+      "申請",
+      "し",
+      "て",
+      "くれ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 2,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 3,
+        "word": "素晴らしい",
+        "pinyin": "",
+        "meaning": "maravilhoso"
+      },
+      {
+        "id": 4,
+        "word": "あ",
+        "pinyin": "",
+        "meaning": "ah"
+      },
+      {
+        "id": 5,
+        "word": "そういえば",
+        "pinyin": "",
+        "meaning": "a propósito"
+      }
+    ],
+    "id": "local-1780259407529-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: あなたはアメリカ人なので、それはできません。アメリカ人はオフィスで対面で申請する必要があります。",
+    "pinyin": "",
+    "translation": "A: Você é americano, então não pode fazer isso. Os americanos precisam se inscrever pessoalmente no escritório.",
+    "tokens": [
+      "A:",
+      "あなた",
+      "は",
+      "アメリカ",
+      "人",
+      "な",
+      "ので",
+      "、",
+      "それ",
+      "は",
+      "でき",
+      "ませ",
+      "ん",
+      "。",
+      "アメリカ",
+      "人",
+      "は",
+      "オフィス",
+      "で",
+      "対面",
+      "で",
+      "申請",
+      "する",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "アメリカ人",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 2,
+        "word": "できません",
+        "pinyin": "",
+        "meaning": "não pode / não é possível"
+      },
+      {
+        "id": 3,
+        "word": "オフィス",
+        "pinyin": "",
+        "meaning": "escritório"
+      },
+      {
+        "id": 4,
+        "word": "対面で",
+        "pinyin": "",
+        "meaning": "pessoalmente / em pessoa"
+      },
+      {
+        "id": 5,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "inscrição / solicitação"
+      },
+      {
+        "id": 6,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessário"
+      }
+    ],
+    "id": "local-1780259407529-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えっ？国によって扱いが違うの！",
+    "pinyin": "",
+    "translation": "B: Huh? There's different treatment for different countries!",
+    "tokens": [
+      "B:",
+      "えっ",
+      "？",
+      "国",
+      "によって",
+      "扱い",
+      "が",
+      "違う",
+      "の",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "えっ",
+        "pinyin": "",
+        "meaning": "huh"
+      },
+      {
+        "id": 2,
+        "word": "国",
+        "pinyin": "",
+        "meaning": "país"
+      },
+      {
+        "id": 3,
+        "word": "扱い",
+        "pinyin": "",
+        "meaning": "tratamento"
+      },
+      {
+        "id": 4,
+        "word": "違う",
+        "pinyin": "",
+        "meaning": "diferente"
+      }
+    ],
+    "id": "local-1780259407529-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: はい、それがルールです。上海出入国管理局の窓口に行ってください。お早めに。申請後、7営業日でビザが発行されます。",
+    "pinyin": "",
+    "translation": "A: Sim, essa é a regra. Você precisa ir ao escritório do Bureau de Entrada e Saída de Xangai. Vá logo. Após o pedido, você pode obter seu visto em 7 dias úteis.",
+    "tokens": [
+      "A:",
+      "はい",
+      "、",
+      "それ",
+      "が",
+      "ルール",
+      "です",
+      "。",
+      "上海",
+      "出入国",
+      "管理",
+      "局",
+      "の",
+      "窓口",
+      "に",
+      "行っ",
+      "て",
+      "ください",
+      "。",
+      "お",
+      "早め",
+      "に",
+      "。",
+      "申請",
+      "後",
+      "、",
+      "7",
+      "営業",
+      "日",
+      "で",
+      "ビザ",
+      "が",
+      "発行",
+      "さ",
+      "れ",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上海出入国管理局",
+        "pinyin": "",
+        "meaning": "Bureau de Entrada e Saída de Xangai"
+      },
+      {
+        "id": 2,
+        "word": "窓口",
+        "pinyin": "",
+        "meaning": "balcão/escritório"
+      },
+      {
+        "id": 3,
+        "word": "申請",
+        "pinyin": "",
+        "meaning": "pedido/aplicação"
+      },
+      {
+        "id": 4,
+        "word": "営業日",
+        "pinyin": "",
+        "meaning": "dia útil"
+      },
+      {
+        "id": 5,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      }
+    ],
+    "id": "local-1780259407529-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: わかりました。ありがとうございます！",
+    "pinyin": "",
+    "translation": "B: Entendi. Obrigado!",
+    "tokens": [
+      "B:",
+      "わかり",
+      "まし",
+      "た",
+      "。",
+      "ありがとう",
+      "ござい",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "わかりました",
+        "pinyin": "",
+        "meaning": "entendi"
+      },
+      {
+        "id": 2,
+        "word": "ありがとう",
+        "pinyin": "",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "ございます",
+        "pinyin": "",
+        "meaning": "forma honorífica de ser"
+      }
+    ],
+    "id": "local-1780259407529-11",
+    "language": "Japonês"
+  }
+]

@@ -1,0 +1,614 @@
+[
+  {
+    "chinese": "A: あなたは牡羊座ですね。ネットで調べると、牡羊座は火の星座とあります。これは始まりを象徴しています。リーダーシップの才能がある人です。牡羊座の女性はほぼ例外なく優れたビジネスウーマンになれますし、同時に良き家庭婦人でもあります。あなたにそっくりですね！",
+    "pinyin": "",
+    "translation": "A: Você é do signo de Áries. Dizem na internet que Áries é um signo de fogo. Isso representa tudo, desde o início. É uma pessoa que tem talento para a liderança. Mulheres que são Áries quase sempre podem se tornar mulheres de negócios excepcionais e, ao mesmo tempo, podem ser boas donas de casa. É muito parecido com você!",
+    "tokens": [
+      "A:",
+      "あなた",
+      "は",
+      "牡",
+      "羊",
+      "座",
+      "です",
+      "ね",
+      "。",
+      "ネット",
+      "で",
+      "調べる",
+      "と",
+      "、",
+      "牡",
+      "羊",
+      "座",
+      "は",
+      "火",
+      "の",
+      "星座",
+      "と",
+      "あり",
+      "ます",
+      "。",
+      "これ",
+      "は",
+      "始まり",
+      "を",
+      "象徴",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "リーダーシップ",
+      "の",
+      "才能",
+      "が",
+      "ある",
+      "人",
+      "です",
+      "。",
+      "牡",
+      "羊",
+      "座",
+      "の",
+      "女性",
+      "は",
+      "ほぼ",
+      "例外",
+      "なく",
+      "優れ",
+      "た",
+      "ビジネス",
+      "ウーマン",
+      "に",
+      "なれ",
+      "ます",
+      "し",
+      "、",
+      "同時に",
+      "良き",
+      "家庭",
+      "婦人",
+      "で",
+      "も",
+      "あり",
+      "ます",
+      "。",
+      "あなた",
+      "に",
+      "そっくり",
+      "です",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "牡羊座",
+        "pinyin": "",
+        "meaning": "Áries"
+      },
+      {
+        "id": 2,
+        "word": "火の星座",
+        "pinyin": "",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 3,
+        "word": "リーダーシップ",
+        "pinyin": "",
+        "meaning": "liderança"
+      },
+      {
+        "id": 4,
+        "word": "ビジネスウーマン",
+        "pinyin": "",
+        "meaning": "mulher de negócios"
+      },
+      {
+        "id": 5,
+        "word": "家庭婦人",
+        "pinyin": "",
+        "meaning": "dona de casa"
+      }
+    ],
+    "id": "local-1780259010954-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: そうかな。性格はどう？",
+    "pinyin": "",
+    "translation": "B: Acho que sim. E quanto à personalidade?",
+    "tokens": [
+      "B:",
+      "そう",
+      "か",
+      "な",
+      "。",
+      "性格",
+      "は",
+      "どう",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "そう",
+        "pinyin": "",
+        "meaning": "isso / assim"
+      },
+      {
+        "id": 2,
+        "word": "性格",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 3,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "como / qual"
+      }
+    ],
+    "id": "local-1780259010954-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 牡羊座は子供のように本音をさらけ出し、率直でオープンですが、同時に自己中心的で子供っぽい面もあります。とても親切で友人を利用したりはしませんが、最大の欠点は面子を重んじることで、過ちを認めることが決してできません。",
+    "pinyin": "",
+    "translation": "A: Áries são como crianças pequenas - revelando seus verdadeiros sentimentos, francos e abertos. No entanto, eles também são egoístas e infantis. Eles são muito gentis e não tiram vantagem de seus amigos, mas sua maior falha é o amor pela face. Eles nunca podem admitir que cometeram um erro.",
+    "tokens": [
+      "A:",
+      "牡",
+      "羊",
+      "座",
+      "は",
+      "子供",
+      "の",
+      "よう",
+      "に",
+      "本音",
+      "を",
+      "さらけ出し",
+      "、",
+      "率直",
+      "で",
+      "オープン",
+      "です",
+      "が",
+      "、",
+      "同時に",
+      "自己",
+      "中心",
+      "的",
+      "で",
+      "子供",
+      "っぽい",
+      "面",
+      "も",
+      "あり",
+      "ます",
+      "。",
+      "とても",
+      "親切",
+      "で",
+      "友人",
+      "を",
+      "利用",
+      "し",
+      "たり",
+      "は",
+      "し",
+      "ませ",
+      "ん",
+      "が",
+      "、",
+      "最大",
+      "の",
+      "欠点",
+      "は",
+      "面子",
+      "を",
+      "重んじる",
+      "こと",
+      "で",
+      "、",
+      "過ち",
+      "を",
+      "認める",
+      "こと",
+      "が",
+      "決して",
+      "でき",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "牡羊座",
+        "pinyin": "",
+        "meaning": "Áries"
+      },
+      {
+        "id": 2,
+        "word": "子供のように",
+        "pinyin": "",
+        "meaning": "como crianças"
+      },
+      {
+        "id": 3,
+        "word": "本音",
+        "pinyin": "",
+        "meaning": "verdadeiros sentimentos"
+      },
+      {
+        "id": 4,
+        "word": "率直",
+        "pinyin": "",
+        "meaning": "franco"
+      },
+      {
+        "id": 5,
+        "word": "自己中心的",
+        "pinyin": "",
+        "meaning": "egoísta"
+      },
+      {
+        "id": 6,
+        "word": "面子",
+        "pinyin": "",
+        "meaning": "face"
+      },
+      {
+        "id": 7,
+        "word": "過ち",
+        "pinyin": "",
+        "meaning": "erro"
+      }
+    ],
+    "id": "local-1780259010954-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: へへ。これについて知ってるよね…",
+    "pinyin": "",
+    "translation": "B: Hehe. Você sabe sobre isso...",
+    "tokens": [
+      "B:",
+      "へ",
+      "へ",
+      "。",
+      "これ",
+      "について",
+      "知っ",
+      "てる",
+      "よ",
+      "ね",
+      "…"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "へへ",
+        "pinyin": "",
+        "meaning": "risada leve"
+      },
+      {
+        "id": 2,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 3,
+        "word": "について",
+        "pinyin": "",
+        "meaning": "sobre"
+      },
+      {
+        "id": 4,
+        "word": "知ってる",
+        "pinyin": "",
+        "meaning": "saber"
+      },
+      {
+        "id": 5,
+        "word": "よね",
+        "pinyin": "",
+        "meaning": "verdade?"
+      }
+    ],
+    "id": "local-1780259010954-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 蠍座の人は短気で変わりやすく、穏やかな人とは付き合いたがりません。喧嘩しても本気で怒っているわけではありません。本当に怒っているなら、無視します！",
+    "pinyin": "",
+    "translation": "A: Pessoas do signo de Escorpião têm temperamento rápido e se aborrecem facilmente. Elas não gostam de se associar com pessoas tranquilas. Se elas brigam com você, não significa que estejam realmente bravas. Se estiverem realmente bravas, elas simplesmente ignorarão você!",
+    "tokens": [
+      "A:",
+      "蠍",
+      "座",
+      "の",
+      "人",
+      "は",
+      "短気",
+      "で",
+      "変わり",
+      "やすく",
+      "、",
+      "穏やか",
+      "な",
+      "人",
+      "と",
+      "は",
+      "付き合い",
+      "た",
+      "がり",
+      "ませ",
+      "ん",
+      "。",
+      "喧嘩",
+      "し",
+      "て",
+      "も",
+      "本気",
+      "で",
+      "怒っ",
+      "て",
+      "いる",
+      "わけ",
+      "で",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "本当に",
+      "怒っ",
+      "て",
+      "いる",
+      "なら",
+      "、",
+      "無視",
+      "し",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "蠍座",
+        "pinyin": "",
+        "meaning": "Escorpião (signo)"
+      },
+      {
+        "id": 2,
+        "word": "短気",
+        "pinyin": "",
+        "meaning": "temperamento rápido"
+      },
+      {
+        "id": 3,
+        "word": "穏やか",
+        "pinyin": "",
+        "meaning": "tranquilo"
+      },
+      {
+        "id": 4,
+        "word": "喧嘩",
+        "pinyin": "",
+        "meaning": "briga"
+      },
+      {
+        "id": 5,
+        "word": "無視",
+        "pinyin": "",
+        "meaning": "ignorar"
+      }
+    ],
+    "id": "local-1780259010954-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: その観点からすると、私は乙女座とは相性がないということですか？",
+    "pinyin": "",
+    "translation": "B: Então, sob essa perspectiva, não sou compatível com um Virgem, sou?",
+    "tokens": [
+      "B:",
+      "その",
+      "観点",
+      "から",
+      "する",
+      "と",
+      "、",
+      "私",
+      "は",
+      "乙女",
+      "座",
+      "と",
+      "は",
+      "相性",
+      "が",
+      "ない",
+      "という",
+      "こと",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "乙女座",
+        "pinyin": "",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 2,
+        "word": "相性",
+        "pinyin": "",
+        "meaning": "compatibilidade"
+      },
+      {
+        "id": 3,
+        "word": "観点",
+        "pinyin": "",
+        "meaning": "ponto de vista"
+      },
+      {
+        "id": 4,
+        "word": "観点からすると",
+        "pinyin": "",
+        "meaning": "sob essa perspectiva"
+      }
+    ],
+    "id": "local-1780259010954-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: そうだね。乙女座の人は本当に細かいところまで指摘したがり、神経も鋭いよ。二人の生活には多くの問題が生じるはずだ。",
+    "pinyin": "",
+    "translation": "A: É, os virgos realmente gostam de fazer críticas minuciosas e também são nervosos. A vida de vocês juntos deve ter muitos problemas.",
+    "tokens": [
+      "A:",
+      "そう",
+      "だ",
+      "ね",
+      "。",
+      "乙女",
+      "座",
+      "の",
+      "人",
+      "は",
+      "本当に",
+      "細かい",
+      "ところ",
+      "まで",
+      "指摘",
+      "し",
+      "た",
+      "がり",
+      "、",
+      "神経",
+      "も",
+      "鋭い",
+      "よ",
+      "。",
+      "二",
+      "人",
+      "の",
+      "生活",
+      "に",
+      "は",
+      "多く",
+      "の",
+      "問題",
+      "が",
+      "生じる",
+      "はず",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "乙女座",
+        "pinyin": "",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 2,
+        "word": "細かい",
+        "pinyin": "",
+        "meaning": "detalhado/minucioso"
+      },
+      {
+        "id": 3,
+        "word": "指摘",
+        "pinyin": "",
+        "meaning": "crítica/apontamento"
+      },
+      {
+        "id": 4,
+        "word": "神経",
+        "pinyin": "",
+        "meaning": "nervos/sensibilidade"
+      },
+      {
+        "id": 5,
+        "word": "生活",
+        "pinyin": "",
+        "meaning": "vida cotidiana"
+      },
+      {
+        "id": 6,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problemas"
+      }
+    ],
+    "id": "local-1780259010954-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、私はどの星座と相性が良いのでしょうか？",
+    "pinyin": "",
+    "translation": "B: Então, com qual signo eu tenho compatibilidade?",
+    "tokens": [
+      "B:",
+      "では",
+      "、",
+      "私",
+      "は",
+      "どの",
+      "星座",
+      "と",
+      "相性",
+      "が",
+      "良い",
+      "の",
+      "でしょ",
+      "う",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "星座",
+        "pinyin": "",
+        "meaning": "signo (do zodíaco)"
+      },
+      {
+        "id": 2,
+        "word": "相性",
+        "pinyin": "",
+        "meaning": "compatibilidade"
+      },
+      {
+        "id": 3,
+        "word": "良い",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 4,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então / bem"
+      },
+      {
+        "id": 5,
+        "word": "どの",
+        "pinyin": "",
+        "meaning": "qual"
+      }
+    ],
+    "id": "local-1780259010954-7",
+    "language": "Japonês"
+  }
+]

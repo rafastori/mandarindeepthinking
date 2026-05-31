@@ -1,0 +1,696 @@
+[
+  {
+    "chinese": "A: 샤오원, 누군가 너에게 꽃을 줬어. 무슨 일이야?",
+    "pinyin": "",
+    "translation": "A: Xiao Wen, alguém te deu flores. Qual é a história?",
+    "tokens": [
+      "A:",
+      "샤오원",
+      ",",
+      "누군가",
+      "너에게",
+      "꽃을",
+      "줬어",
+      ".",
+      "무슨",
+      "일이야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오원",
+        "pinyin": "",
+        "meaning": "Xiao Wen (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "누군가",
+        "pinyin": "",
+        "meaning": "alguém"
+      },
+      {
+        "id": 3,
+        "word": "꽃",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 4,
+        "word": "줬어",
+        "pinyin": "",
+        "meaning": "deu (passado informal)"
+      },
+      {
+        "id": 5,
+        "word": "무슨 일",
+        "pinyin": "",
+        "meaning": "o que aconteceu / qual é a história"
+      }
+    ],
+    "id": "local-1780231249932-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 세상에, 내가 전에 말해준 그 사람, 그 사람과 소개시켜 준 그 남자야.",
+    "pinyin": "",
+    "translation": "B: Nossa, é aquele cara com quem eu te apresentei, aquele de que eu te falei antes.",
+    "tokens": [
+      "B:",
+      "세상에",
+      ",",
+      "내가",
+      "전에",
+      "말해준",
+      "그",
+      "사람",
+      ",",
+      "그",
+      "사람과",
+      "소개시켜",
+      "준",
+      "그",
+      "남자야",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "세상에",
+        "pinyin": "",
+        "meaning": "nossa / ciúmes"
+      },
+      {
+        "id": 2,
+        "word": "소개시켜 준",
+        "pinyin": "",
+        "meaning": "apresentei / fiz a apresentação"
+      },
+      {
+        "id": 3,
+        "word": "그 남자",
+        "pinyin": "",
+        "meaning": "aquele homem / aquele cara"
+      },
+      {
+        "id": 4,
+        "word": "전에",
+        "pinyin": "",
+        "meaning": "antes"
+      },
+      {
+        "id": 5,
+        "word": "말해준",
+        "pinyin": "",
+        "meaning": "contei / falei"
+      }
+    ],
+    "id": "local-1780231249932-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 너희 사귀기 시작했잖아! 나한테 아무 말도 안 했어. 내가 네 좋은 친구가 아닌 것 같아! 너는 그 사람에 대해 뭐라고 생각했어?",
+    "pinyin": "",
+    "translation": "A: Você começou a namorar! Você não me contou nada. É como se eu não fosse sua boa amiga de jeito nenhum! O que você achou dele?",
+    "tokens": [
+      "A:",
+      "너희",
+      "사귀기",
+      "시작했잖아",
+      "!",
+      "나한테",
+      "아무",
+      "말도",
+      "안",
+      "했어",
+      ".",
+      "내가",
+      "네",
+      "좋은",
+      "친구가",
+      "아닌",
+      "것",
+      "같아",
+      "!",
+      "너는",
+      "그",
+      "사람에",
+      "대해",
+      "뭐라고",
+      "생각했어",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사귀기",
+        "pinyin": "",
+        "meaning": "namorar"
+      },
+      {
+        "id": 2,
+        "word": "시작했잖아",
+        "pinyin": "",
+        "meaning": "começou (e você sabe disso)"
+      },
+      {
+        "id": 3,
+        "word": "아무 말도",
+        "pinyin": "",
+        "meaning": "nenhuma palavra / nada"
+      },
+      {
+        "id": 4,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 5,
+        "word": "생각했어",
+        "pinyin": "",
+        "meaning": "pensou"
+      }
+    ],
+    "id": "local-1780231249932-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 우린 딱 두 번만 만났어요. 첫인상은 괜찮았지만, 그는 좀 이상하고 집착이 심한 편이에요.上次 레스토랑에 가서 먹었는데, 그가 물티슈를 꺼내서 테이블 전체를 닦더니, 종업원에게 뜨거운 물을 가져다 달라고 해서 그릇과 잔을 씻었거든요.",
+    "pinyin": "",
+    "translation": "B: Nós nos encontramos apenas duas vezes. Minha primeira impressão foi okay, no entanto, acho que ele é um pouco estranho e um pouco maníaco por limpeza. Da última vez que fomos a um restaurante comer, ele tirou uma toalha úmida e limpou toda a mesa, e ele pediu especificamente ao garçom para trazer água quente para lavar as tigelas e os copos.",
+    "tokens": [
+      "B:",
+      "우린",
+      "딱",
+      "두",
+      "번만",
+      "만났어요",
+      ".",
+      "첫인상은",
+      "괜찮았지만",
+      ",",
+      "그는",
+      "좀",
+      "이상하고",
+      "집착이",
+      "심한",
+      "편이에요",
+      ".",
+      "上次",
+      "레스토랑에",
+      "가서",
+      "먹었는데",
+      ",",
+      "그가",
+      "물티슈를",
+      "꺼내서",
+      "테이블",
+      "전체를",
+      "닦더니",
+      ",",
+      "종업원에게",
+      "뜨거운",
+      "물을",
+      "가져다",
+      "달라고",
+      "해서",
+      "그릇과",
+      "잔을",
+      "씻었거든요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "두 번만",
+        "pinyin": "",
+        "meaning": "apenas duas vezes"
+      },
+      {
+        "id": 2,
+        "word": "첫인상",
+        "pinyin": "",
+        "meaning": "primeira impressão"
+      },
+      {
+        "id": 3,
+        "word": "이상하고",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 4,
+        "word": "집착이 심한",
+        "pinyin": "",
+        "meaning": "maníaco por limpeza"
+      },
+      {
+        "id": 5,
+        "word": "물티슈",
+        "pinyin": "",
+        "meaning": "toalha úmida"
+      },
+      {
+        "id": 6,
+        "word": "테이블 전체를 닦더니",
+        "pinyin": "",
+        "meaning": "limpou toda a mesa"
+      },
+      {
+        "id": 7,
+        "word": "뜨거운 물",
+        "pinyin": "",
+        "meaning": "água quente"
+      },
+      {
+        "id": 8,
+        "word": "씻었거든요",
+        "pinyin": "",
+        "meaning": "lavou"
+      }
+    ],
+    "id": "local-1780231249932-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그의 별자리는 뭐야?",
+    "pinyin": "",
+    "translation": "A: Qual é o signo dele?",
+    "tokens": [
+      "A:",
+      "그의",
+      "별자리는",
+      "뭐야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "별자리",
+        "pinyin": "",
+        "meaning": "signo"
+      },
+      {
+        "id": 2,
+        "word": "뭐야",
+        "pinyin": "",
+        "meaning": "o que é"
+      },
+      {
+        "id": 3,
+        "word": "그의",
+        "pinyin": "",
+        "meaning": "dele"
+      },
+      {
+        "id": 4,
+        "word": "는",
+        "pinyin": "",
+        "meaning": "partícula do tópico"
+      }
+    ],
+    "id": "local-1780231249932-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 처녀자리",
+    "pinyin": "",
+    "translation": "B: Virgem",
+    "tokens": [
+      "B:",
+      "처녀자리"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "처녀자리",
+        "pinyin": "",
+        "meaning": "Virgem (signo do zodíaco)"
+      }
+    ],
+    "id": "local-1780231249932-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그건 전혀 이상하지 않습니다. 처녀자리 여성은 청결에 대한 관심이 유명합니다. 그러나 처녀자리 남편은 많은 긍정적인 특성을 가지고 있습니다. 그는 쉽게 화내지 않으며, 당신이 아플 때 돌봐주고, 매우 성실하고 신뢰할 수 있습니다. 결혼 후 그는 가족 생활을 세심하게 정리해 줄 것입니다. 가족을 위한 각 계획은 사전에 고려되어 당신이 걱정하지 않도록 할 것입니다.",
+    "pinyin": "",
+    "translation": "A: Isso não é estranho em absoluto. Os virgos são famosos por se importarem com a limpeza. No entanto, um marido virgo tem muitos atributos positivos: ele não se irrita facilmente; ele cuidará de você quando você estiver doente; ele é muito trabalhador e confiável. Depois que você se casar, ele organizará a vida da sua família com muito cuidado. Cada plano para a família será considerado antecipadamente, para que você não tenha nenhuma preocupação.",
+    "tokens": [
+      "A:",
+      "그건",
+      "전혀",
+      "이상하지",
+      "않습니다",
+      ".",
+      "처녀자리",
+      "여성은",
+      "청결에",
+      "대한",
+      "관심이",
+      "유명합니다",
+      ".",
+      "그러나",
+      "처녀자리",
+      "남편은",
+      "많은",
+      "긍정적인",
+      "특성을",
+      "가지고",
+      "있습니다",
+      ".",
+      "그는",
+      "쉽게",
+      "화내지",
+      "않으며",
+      ",",
+      "당신이",
+      "아플",
+      "때",
+      "돌봐주고",
+      ",",
+      "매우",
+      "성실하고",
+      "신뢰할",
+      "수",
+      "있습니다",
+      ".",
+      "결혼",
+      "후",
+      "그는",
+      "가족",
+      "생활을",
+      "세심하게",
+      "정리해",
+      "줄",
+      "것입니다",
+      ".",
+      "가족을",
+      "위한",
+      "각",
+      "계획은",
+      "사전에",
+      "고려되어",
+      "당신이",
+      "걱정하지",
+      "않도록",
+      "할",
+      "것입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "청결",
+        "pinyin": "",
+        "meaning": "limpeza"
+      },
+      {
+        "id": 2,
+        "word": "처녀자리",
+        "pinyin": "",
+        "meaning": "virgem (signo)"
+      },
+      {
+        "id": 3,
+        "word": "남편",
+        "pinyin": "",
+        "meaning": "marido"
+      },
+      {
+        "id": 4,
+        "word": "성실",
+        "pinyin": "",
+        "meaning": "trabalhador/diligente"
+      },
+      {
+        "id": 5,
+        "word": "가족 생활",
+        "pinyin": "",
+        "meaning": "vida familiar"
+      },
+      {
+        "id": 6,
+        "word": "세심하게",
+        "pinyin": "",
+        "meaning": "meticulosamente/cuidadosamente"
+      }
+    ],
+    "id": "local-1780231249932-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그 말로는 내게 도움이 안 돼. 네가 뭐라고 하든, 그가 내 남편감이 맞는지 확신이 서지 않아. 하지만 당신은 점성을 잘 이해하니까, 처녀자리 남자의 성격이 어떤지 말해 줘. 처녀자리 사람들은 어떤 사람을 좋아해?",
+    "pinyin": "",
+    "translation": "B: Essas palavras não me ajudam em nada. Não importa o que você diga, ainda não tenho certeza se ele é um candidato para ser meu marido. No entanto, como você entende tão bem de astrologia, me diga como é a personalidade de um homem do signo de Virgem. Que tipo de pessoas os virgos gostam?",
+    "tokens": [
+      "B:",
+      "그",
+      "말로는",
+      "내게",
+      "도움이",
+      "안",
+      "돼",
+      ".",
+      "네가",
+      "뭐라고",
+      "하든",
+      ",",
+      "그가",
+      "내",
+      "남편감이",
+      "맞는지",
+      "확신이",
+      "서지",
+      "않아",
+      ".",
+      "하지만",
+      "당신은",
+      "점성을",
+      "잘",
+      "이해하니까",
+      ",",
+      "처녀자리",
+      "남자의",
+      "성격이",
+      "어떤지",
+      "말해",
+      "줘",
+      ".",
+      "처녀자리",
+      "사람들은",
+      "어떤",
+      "사람을",
+      "좋아해",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "도움이 안 돼",
+        "pinyin": "",
+        "meaning": "não ajuda"
+      },
+      {
+        "id": 2,
+        "word": "확신이 서지 않아",
+        "pinyin": "",
+        "meaning": "não tenho certeza"
+      },
+      {
+        "id": 3,
+        "word": "점성",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 4,
+        "word": "처녀자리",
+        "pinyin": "",
+        "meaning": "signo de Virgem"
+      },
+      {
+        "id": 5,
+        "word": "성격",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 6,
+        "word": "남편감",
+        "pinyin": "",
+        "meaning": "candidato a marido"
+      }
+    ],
+    "id": "local-1780231249932-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 처녀자리 사람들은 완벽주의자입니다. 그들은 매우 신중하고 내향적이며 사고가 명확합니다. 처녀자리 사람들은 보통 학식이 높은 사람들을 좋아합니다. 처녀자리 남성들의 경우, 아름다운 얼굴보다 아름다운 마음이 훨씬 더 중요합니다. 그들은 무식하고 부주의한 여성들을 참기 어려워합니다.",
+    "pinyin": "",
+    "translation": "A: Virgos são perfeccionistas. Eles são muito meticulosos e introvertidos, com um raciocínio claro. Pessoas do signo de Virgem geralmente gostam de pessoas altamente educadas. No caso dos homens de Virgem, uma mente bela é muito mais importante do que um rosto bonito. Eles têm dificuldade em suportar mulheres ignorantes e descuidadas.",
+    "tokens": [
+      "A:",
+      "처녀자리",
+      "사람들은",
+      "완벽주의자입니다",
+      ".",
+      "그들은",
+      "매우",
+      "신중하고",
+      "내향적이며",
+      "사고가",
+      "명확합니다",
+      ".",
+      "처녀자리",
+      "사람들은",
+      "보통",
+      "학식이",
+      "높은",
+      "사람들을",
+      "좋아합니다",
+      ".",
+      "처녀자리",
+      "남성들의",
+      "경우",
+      ",",
+      "아름다운",
+      "얼굴보다",
+      "아름다운",
+      "마음이",
+      "훨씬",
+      "더",
+      "중요합니다",
+      ".",
+      "그들은",
+      "무식하고",
+      "부주의한",
+      "여성들을",
+      "참기",
+      "어려워합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "완벽주의자",
+        "pinyin": "",
+        "meaning": "perfeccionista"
+      },
+      {
+        "id": 2,
+        "word": "신중하고",
+        "pinyin": "",
+        "meaning": "meticuloso"
+      },
+      {
+        "id": 3,
+        "word": "내향적이며",
+        "pinyin": "",
+        "meaning": "introvertido"
+      },
+      {
+        "id": 4,
+        "word": "학식이",
+        "pinyin": "",
+        "meaning": "cultura/educação"
+      },
+      {
+        "id": 5,
+        "word": "아름다운",
+        "pinyin": "",
+        "meaning": "bonito/belo"
+      },
+      {
+        "id": 6,
+        "word": "무식하고",
+        "pinyin": "",
+        "meaning": "ignorante"
+      },
+      {
+        "id": 7,
+        "word": "부주의한",
+        "pinyin": "",
+        "meaning": "descuidado"
+      }
+    ],
+    "id": "local-1780231249932-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 무심코... 나에 대해 말하는 건 아니죠? 처녀자리 사람들은 디테일에 아주 주의 깊게 챙기는데, 그럼 삶이 지루하지 않을까요? 이걸 알아내 도와주세요. 제 별자리는 그 사람과 궁합이 맞을까요?",
+    "pinyin": "",
+    "translation": "B: Descuidado... você não está falando de mim, está? Com as Virgens prestando tanta atenção aos detalhes, isso não torna a vida exaustiva? Me ajude a descobrir isso. Meu signo é compatível com o dele?",
+    "tokens": [
+      "B:",
+      "무심코",
+      ".",
+      ".",
+      ".",
+      "나에",
+      "대해",
+      "말하는",
+      "건",
+      "아니죠",
+      "?",
+      "처녀자리",
+      "사람들은",
+      "디테일에",
+      "아주",
+      "주의",
+      "깊게",
+      "챙기는데",
+      ",",
+      "그럼",
+      "삶이",
+      "지루하지",
+      "않을까요",
+      "?",
+      "이걸",
+      "알아내",
+      "도와주세요",
+      ".",
+      "제",
+      "별자리는",
+      "그",
+      "사람과",
+      "궁합이",
+      "맞을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "무심코",
+        "pinyin": "",
+        "meaning": "descuidado / sem intenção"
+      },
+      {
+        "id": 2,
+        "word": "디테일",
+        "pinyin": "",
+        "meaning": "detalhe"
+      },
+      {
+        "id": 3,
+        "word": "주의 깊게",
+        "pinyin": "",
+        "meaning": "com atenção / cuidadosamente"
+      },
+      {
+        "id": 4,
+        "word": "궁합",
+        "pinyin": "",
+        "meaning": "compatibilidade / harmonia"
+      },
+      {
+        "id": 5,
+        "word": "별자리",
+        "pinyin": "",
+        "meaning": "signo (zodiacal)"
+      }
+    ],
+    "id": "local-1780231249932-9",
+    "language": "Coreano"
+  }
+]

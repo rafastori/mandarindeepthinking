@@ -1,0 +1,850 @@
+[
+  {
+    "chinese": "A: Xiao Wang, bienvenue dans notre entreprise. Vous avez lu le contrat, avez-vous des questions ?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, bem-vindo à nossa empresa. Você leu o contrato, tem alguma dúvida?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "bienvenue",
+      "dans",
+      "notre",
+      "entreprise",
+      ".",
+      "Vous",
+      "avez",
+      "lu",
+      "le",
+      "contrat",
+      ",",
+      "avez",
+      "-",
+      "vous",
+      "des",
+      "questions",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bienvenue",
+        "pinyin": "",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "contrat",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "questions",
+        "pinyin": "",
+        "meaning": "dúvidas"
+      }
+    ],
+    "id": "local-1780237968838-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je voudrais savoir comment les assurances de notre entreprise sont payées ?",
+    "pinyin": "",
+    "translation": "B: Gostaria de saber como os seguros da nossa empresa são pagos?",
+    "tokens": [
+      "B:",
+      "Je",
+      "voudrais",
+      "savoir",
+      "comment",
+      "les",
+      "assurances",
+      "de",
+      "notre",
+      "entreprise",
+      "sont",
+      "payées",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assurances",
+        "pinyin": "",
+        "meaning": "seguros"
+      },
+      {
+        "id": 2,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "payées",
+        "pinyin": "",
+        "meaning": "pagas"
+      },
+      {
+        "id": 4,
+        "word": "savoir",
+        "pinyin": "",
+        "meaning": "saber"
+      },
+      {
+        "id": 5,
+        "word": "comment",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1780237968838-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: La réglementation étatique des « cinq assurances sociales et un fonds de logement ».",
+    "pinyin": "",
+    "translation": "A: A regulamentação estatal dos \"cinco seguros sociais e um fundo habitacional\".",
+    "tokens": [
+      "A:",
+      "La",
+      "réglementation",
+      "étatique",
+      "des",
+      "«",
+      "cinq",
+      "assurances",
+      "sociales",
+      "et",
+      "un",
+      "fonds",
+      "de",
+      "logement",
+      "»",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "réglementation",
+        "pinyin": "",
+        "meaning": "regulamentação"
+      },
+      {
+        "id": 2,
+        "word": "étatique",
+        "pinyin": "",
+        "meaning": "estatal"
+      },
+      {
+        "id": 3,
+        "word": "assurances sociales",
+        "pinyin": "",
+        "meaning": "seguros sociais"
+      },
+      {
+        "id": 4,
+        "word": "fonds",
+        "pinyin": "",
+        "meaning": "fundo"
+      },
+      {
+        "id": 5,
+        "word": "logement",
+        "pinyin": "",
+        "meaning": "habitação"
+      }
+    ],
+    "id": "local-1780237968838-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Désolé, je viens de rentrer en Chine. Je ne comprends pas très bien.",
+    "pinyin": "",
+    "translation": "B: Desculpe, acabei de voltar para a China. Não entendo muito bem.",
+    "tokens": [
+      "B:",
+      "Désolé",
+      ",",
+      "je",
+      "viens",
+      "de",
+      "rentrer",
+      "en",
+      "Chine",
+      ".",
+      "Je",
+      "ne",
+      "comprends",
+      "pas",
+      "très",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Désolé",
+        "pinyin": "",
+        "meaning": "Desculpe"
+      },
+      {
+        "id": 2,
+        "word": "rentrer",
+        "pinyin": "",
+        "meaning": "voltar"
+      },
+      {
+        "id": 3,
+        "word": "Chine",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "comprends",
+        "pinyin": "",
+        "meaning": "entendo"
+      },
+      {
+        "id": 5,
+        "word": "pas très bien",
+        "pinyin": "",
+        "meaning": "não muito bem"
+      }
+    ],
+    "id": "local-1780237968838-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les cinq assurances sociales et une caisse de logement sont : l'assurance vieillesse, l'assurance maladie, l'assurance chômage, l'assurance invalidité liée au travail, l'assurance maternité et le fonds d'accumulation pour le logement.",
+    "pinyin": "",
+    "translation": "A: Os cinco seguros sociais e um fundo de habitação são: seguro de velhice, seguro de saúde, seguro de desemprego, seguro de invalidez laboral, seguro de maternidade e fundo de acumulação habitacional.",
+    "tokens": [
+      "A:",
+      "Les",
+      "cinq",
+      "assurances",
+      "sociales",
+      "et",
+      "une",
+      "caisse",
+      "de",
+      "logement",
+      "sont",
+      ":",
+      "l'assurance",
+      "vieillesse",
+      ",",
+      "l'assurance",
+      "maladie",
+      ",",
+      "l'assurance",
+      "chômage",
+      ",",
+      "l'assurance",
+      "invalidité",
+      "liée",
+      "au",
+      "travail",
+      ",",
+      "l'assurance",
+      "maternité",
+      "et",
+      "le",
+      "fonds",
+      "d'accumulation",
+      "pour",
+      "le",
+      "logement",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assurances sociales",
+        "pinyin": "",
+        "meaning": "seguros sociais"
+      },
+      {
+        "id": 2,
+        "word": "caisse de logement",
+        "pinyin": "",
+        "meaning": "fundo de habitação"
+      },
+      {
+        "id": 3,
+        "word": "assurance vieillesse",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 4,
+        "word": "assurance maladie",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 5,
+        "word": "assurance chômage",
+        "pinyin": "",
+        "meaning": "seguro de desemprego"
+      },
+      {
+        "id": 6,
+        "word": "assurance invalidité",
+        "pinyin": "",
+        "meaning": "seguro de invalidez"
+      },
+      {
+        "id": 7,
+        "word": "assurance maternité",
+        "pinyin": "",
+        "meaning": "seguro de maternidade"
+      }
+    ],
+    "id": "local-1780237968838-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: L'entreprise paie-t-elle tout cela ?",
+    "pinyin": "",
+    "translation": "B: A empresa paga por tudo isso?",
+    "tokens": [
+      "B:",
+      "L'entreprise",
+      "paie",
+      "-",
+      "t",
+      "-",
+      "elle",
+      "tout",
+      "cela",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "paie",
+        "pinyin": "",
+        "meaning": "paga"
+      },
+      {
+        "id": 3,
+        "word": "tout",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 4,
+        "word": "cela",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780237968838-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: L'assurance vieillesse, l'assurance maladie, l'assurance chômage et le fonds de logement sont payés conjointement par l'entreprise et l'individu.",
+    "pinyin": "",
+    "translation": "A: A previdência social, o seguro saúde, o seguro-desemprego e o fundo de habitação são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "A:",
+      "L'assurance",
+      "vieillesse",
+      ",",
+      "l'assurance",
+      "maladie",
+      ",",
+      "l'assurance",
+      "chômage",
+      "et",
+      "le",
+      "fonds",
+      "de",
+      "logement",
+      "sont",
+      "payés",
+      "conjointement",
+      "par",
+      "l'entreprise",
+      "et",
+      "l'individu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assurance vieillesse",
+        "pinyin": "",
+        "meaning": "previdência social"
+      },
+      {
+        "id": 2,
+        "word": "assurance maladie",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "assurance chômage",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 4,
+        "word": "fonds de logement",
+        "pinyin": "",
+        "meaning": "fundo de habitação"
+      },
+      {
+        "id": 5,
+        "word": "conjointement",
+        "pinyin": "",
+        "meaning": "conjuntamente"
+      },
+      {
+        "id": 6,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "empresa"
+      }
+    ],
+    "id": "local-1780237968838-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Alors, combien faut-il payer ?",
+    "pinyin": "",
+    "translation": "B: Então, quanto deve ser pago?",
+    "tokens": [
+      "B:",
+      "Alors",
+      ",",
+      "combien",
+      "faut",
+      "-",
+      "il",
+      "payer",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "combien",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 2,
+        "word": "faut-il",
+        "pinyin": "",
+        "meaning": "deve-se"
+      },
+      {
+        "id": 3,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 4,
+        "word": "Alors",
+        "pinyin": "",
+        "meaning": "então"
+      }
+    ],
+    "id": "local-1780237968838-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Chaque ville est différente. À Shanghai, pour l'assurance vieillesse, l'individu paie 8 % et l'employeur 21 %. Pour l'assurance maladie, l'individu paie 2 % et l'employeur 11 %. Pour l'assurance chômage, l'individu paie 0,5 % et l'employeur 1,5 %. L'individu et l'employeur paient chacun 7 % pour le fonds de accumulation.",
+    "pinyin": "",
+    "translation": "A: Cada cidade é diferente. Em Xangai, para a previdência social, o indivíduo paga 8% e a empresa paga 21%. Para o seguro saúde, o indivíduo paga 2% e a empresa paga 11%. Para o seguro desemprego, o indivíduo paga 0,5% e a empresa paga 1,5%. O indivíduo e a empresa pagam cada um 7% para o fundo de acumulação.",
+    "tokens": [
+      "A:",
+      "Chaque",
+      "ville",
+      "est",
+      "différente",
+      ".",
+      "À",
+      "Shanghai",
+      ",",
+      "pour",
+      "l'assurance",
+      "vieillesse",
+      ",",
+      "l'individu",
+      "paie",
+      "8",
+      "%",
+      "et",
+      "l'employeur",
+      "21",
+      "%",
+      ".",
+      "Pour",
+      "l'assurance",
+      "maladie",
+      ",",
+      "l'individu",
+      "paie",
+      "2",
+      "%",
+      "et",
+      "l'employeur",
+      "11",
+      "%",
+      ".",
+      "Pour",
+      "l'assurance",
+      "chômage",
+      ",",
+      "l'individu",
+      "paie",
+      "0",
+      ",",
+      "5",
+      "%",
+      "et",
+      "l'employeur",
+      "1",
+      ",",
+      "5",
+      "%",
+      ".",
+      "L'individu",
+      "et",
+      "l'employeur",
+      "paient",
+      "chacun",
+      "7",
+      "%",
+      "pour",
+      "le",
+      "fonds",
+      "de",
+      "accumulation",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assurance vieillesse",
+        "pinyin": "",
+        "meaning": "previdência social"
+      },
+      {
+        "id": 2,
+        "word": "employeur",
+        "pinyin": "",
+        "meaning": "empregador/empresa"
+      },
+      {
+        "id": 3,
+        "word": "assurance maladie",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 4,
+        "word": "assurance chômage",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 5,
+        "word": "fonds de accumulation",
+        "pinyin": "",
+        "meaning": "fundo de acumulação"
+      }
+    ],
+    "id": "local-1780237968838-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ensuite, mon titre de séjour n'est pas à Shanghai, dois-je donc payer selon les critères de Shanghai ?",
+    "pinyin": "",
+    "translation": "B: Então, meu visto de residência não está em Xangai, devo pagar de acordo com os critérios de Xangai?",
+    "tokens": [
+      "B:",
+      "Ensuite",
+      ",",
+      "mon",
+      "titre",
+      "de",
+      "séjour",
+      "n'est",
+      "pas",
+      "à",
+      "Shanghai",
+      ",",
+      "dois",
+      "-",
+      "je",
+      "donc",
+      "payer",
+      "selon",
+      "les",
+      "critères",
+      "de",
+      "Shanghai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "titre de séjour",
+        "pinyin": "",
+        "meaning": "visto de residência"
+      },
+      {
+        "id": 2,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "critères",
+        "pinyin": "",
+        "meaning": "critérios"
+      },
+      {
+        "id": 4,
+        "word": "payer",
+        "pinyin": "",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1780237968838-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui, parce que tu travailles à Shanghai.",
+    "pinyin": "",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "A:",
+      "Oui",
+      ",",
+      "parce",
+      "que",
+      "tu",
+      "travailles",
+      "à",
+      "Shanghai",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oui",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "parce que",
+        "pinyin": "",
+        "meaning": "porque"
+      },
+      {
+        "id": 3,
+        "word": "travailles",
+        "pinyin": "",
+        "meaning": "trabalha"
+      },
+      {
+        "id": 4,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1780237968838-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Si je prends ma retraite, puis-je percevoir l'assurance vieillesse à Shanghai ?",
+    "pinyin": "",
+    "translation": "B: Se eu me aposentar, posso receber o seguro de velhice em Xangai?",
+    "tokens": [
+      "B:",
+      "Si",
+      "je",
+      "prends",
+      "ma",
+      "retraite",
+      ",",
+      "puis",
+      "-",
+      "je",
+      "percevoir",
+      "l'assurance",
+      "vieillesse",
+      "à",
+      "Shanghai",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "retraite",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "percevoir",
+        "pinyin": "",
+        "meaning": "receber (valores)"
+      },
+      {
+        "id": 3,
+        "word": "assurance vieillesse",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 4,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      }
+    ],
+    "id": "local-1780237968838-11",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est plutôt une contrainte. Si vous prenez votre retraite, mais que votre titre de séjour n'est pas à Shanghai, vous ne pouvez retirer votre pension de retraite que dans le lieu de votre résidence permanente.",
+    "pinyin": "",
+    "translation": "A: Isso é bastante um incômodo. Se você se aposentar, mas sua permissão de residência não for em Xangai, você só poderá retirar o seguro de velhice no local da sua residência permanente.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "plutôt",
+      "une",
+      "contrainte",
+      ".",
+      "Si",
+      "vous",
+      "prenez",
+      "votre",
+      "retraite",
+      ",",
+      "mais",
+      "que",
+      "votre",
+      "titre",
+      "de",
+      "séjour",
+      "n'est",
+      "pas",
+      "à",
+      "Shanghai",
+      ",",
+      "vous",
+      "ne",
+      "pouvez",
+      "retirer",
+      "votre",
+      "pension",
+      "de",
+      "retraite",
+      "que",
+      "dans",
+      "le",
+      "lieu",
+      "de",
+      "votre",
+      "résidence",
+      "permanente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "contrainte",
+        "pinyin": "",
+        "meaning": "incômodo"
+      },
+      {
+        "id": 2,
+        "word": "prenez votre retraite",
+        "pinyin": "",
+        "meaning": "se aposentar"
+      },
+      {
+        "id": 3,
+        "word": "titre de séjour",
+        "pinyin": "",
+        "meaning": "permissão de residência"
+      },
+      {
+        "id": 4,
+        "word": "pension de retraite",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 5,
+        "word": "résidence permanente",
+        "pinyin": "",
+        "meaning": "residência permanente"
+      }
+    ],
+    "id": "local-1780237968838-12",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est si compliqué.",
+    "pinyin": "",
+    "translation": "B: É tão complicado.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "si",
+      "compliqué",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "C'est",
+        "pinyin": "",
+        "meaning": "É isso / É"
+      },
+      {
+        "id": 2,
+        "word": "si",
+        "pinyin": "",
+        "meaning": "tão / tão assim"
+      },
+      {
+        "id": 3,
+        "word": "compliqué",
+        "pinyin": "",
+        "meaning": "complicado"
+      }
+    ],
+    "id": "local-1780237968838-13",
+    "language": "Francês"
+  }
+]

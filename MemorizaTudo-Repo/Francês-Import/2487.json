@@ -1,0 +1,941 @@
+[
+  {
+    "chinese": "A: Je souhaite démissionner.",
+    "pinyin": "",
+    "translation": "A: Gostaria de apresentar minha demissão.",
+    "tokens": [
+      "A:",
+      "Je",
+      "souhaite",
+      "démissionner",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "souhaite",
+        "pinyin": "",
+        "meaning": "desejo"
+      },
+      {
+        "id": 2,
+        "word": "Je",
+        "pinyin": "",
+        "meaning": "eu"
+      }
+    ],
+    "id": "local-1780238674312-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Quoi ? Pourquoi veux-tu démissionner du jour au lendemain ?",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer demitir-se de repente?",
+    "tokens": [
+      "B:",
+      "Quoi",
+      "?",
+      "Pourquoi",
+      "veux",
+      "-",
+      "tu",
+      "démissionner",
+      "du",
+      "jour",
+      "au",
+      "lendemain",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quoi",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "veux-tu",
+        "pinyin": "",
+        "meaning": "você quer"
+      },
+      {
+        "id": 3,
+        "word": "démissionner",
+        "pinyin": "",
+        "meaning": "demitir-se"
+      },
+      {
+        "id": 4,
+        "word": "du jour au lendemain",
+        "pinyin": "",
+        "meaning": "de repente"
+      }
+    ],
+    "id": "local-1780238674312-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Pourquoi, le revenu mensuel est si faible. De plus, l'environnement de travail n'est pas bon non plus. Chaque jour, je fais juste de petites tâches insignifiantes et je n'ai aucun sentiment d'accomplissement. C'est trop loin de ce que j'attendais.",
+    "pinyin": "",
+    "translation": "A: Por que a renda mensal é tão baixa. Além disso, o ambiente de trabalho também não é bom. Todo dia eu apenas faço pequenas tarefas insignificantes e não há sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "Pourquoi",
+      ",",
+      "le",
+      "revenu",
+      "mensuel",
+      "est",
+      "si",
+      "faible",
+      ".",
+      "De",
+      "plus",
+      ",",
+      "l'environnement",
+      "de",
+      "travail",
+      "n'est",
+      "pas",
+      "bon",
+      "non",
+      "plus",
+      ".",
+      "Chaque",
+      "jour",
+      ",",
+      "je",
+      "fais",
+      "juste",
+      "de",
+      "petites",
+      "tâches",
+      "insignifiantes",
+      "et",
+      "je",
+      "n'ai",
+      "aucun",
+      "sentiment",
+      "d'accomplissement",
+      ".",
+      "C'est",
+      "trop",
+      "loin",
+      "de",
+      "ce",
+      "que",
+      "j'attendais",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "revenu mensuel",
+        "pinyin": "",
+        "meaning": "renda mensal"
+      },
+      {
+        "id": 2,
+        "word": "faible",
+        "pinyin": "",
+        "meaning": "baixo/fraco"
+      },
+      {
+        "id": 3,
+        "word": "environnement de travail",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "tâches insignifiantes",
+        "pinyin": "",
+        "meaning": "tarefas insignificantes"
+      },
+      {
+        "id": 5,
+        "word": "sentiment d'accomplissement",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 6,
+        "word": "attendais",
+        "pinyin": "",
+        "meaning": "esperava"
+      }
+    ],
+    "id": "local-1780238674312-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: De nos jours, où peut-on trouver un travail qui correspond exactement à ce que l'on souhaite ? Il ne faut pas avoir des exigences trop élevées par rapport à ses capacités.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deve ter padrões altos demais que suas habilidades não consigam corresponder.",
+    "tokens": [
+      "B:",
+      "De",
+      "nos",
+      "jours",
+      ",",
+      "où",
+      "peut",
+      "-",
+      "on",
+      "trouver",
+      "un",
+      "travail",
+      "qui",
+      "correspond",
+      "exactement",
+      "à",
+      "ce",
+      "que",
+      "l'on",
+      "souhaite",
+      "?",
+      "Il",
+      "ne",
+      "faut",
+      "pas",
+      "avoir",
+      "des",
+      "exigences",
+      "trop",
+      "élevées",
+      "par",
+      "rapport",
+      "à",
+      "ses",
+      "capacités",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "De nos jours",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "travail",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "correspond",
+        "pinyin": "",
+        "meaning": "corresponde"
+      },
+      {
+        "id": 4,
+        "word": "exigences",
+        "pinyin": "",
+        "meaning": "exigências"
+      },
+      {
+        "id": 5,
+        "word": "capacités",
+        "pinyin": "",
+        "meaning": "capacidades"
+      }
+    ],
+    "id": "local-1780238674312-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Le problème, c'est que je n'ai pas pris conscience de ma propre valeur, et maintenant tous mes collègues autour de moi ont de bons contacts. Et je ne sais pas si, dans un avenir lointain, ce sera à mon tour d'être promu.",
+    "pinyin": "",
+    "translation": "A: O problema é que não tomei consciência do meu próprio valor, e agora todos os meus colegas ao meu redor têm bons contatos. E não sei se, em um futuro distante, será a minha vez de ser promovido.",
+    "tokens": [
+      "A:",
+      "Le",
+      "problème",
+      ",",
+      "c'est",
+      "que",
+      "je",
+      "n'ai",
+      "pas",
+      "pris",
+      "conscience",
+      "de",
+      "ma",
+      "propre",
+      "valeur",
+      ",",
+      "et",
+      "maintenant",
+      "tous",
+      "mes",
+      "collègues",
+      "autour",
+      "de",
+      "moi",
+      "ont",
+      "de",
+      "bons",
+      "contacts",
+      ".",
+      "Et",
+      "je",
+      "ne",
+      "sais",
+      "pas",
+      "si",
+      ",",
+      "dans",
+      "un",
+      "avenir",
+      "lointain",
+      ",",
+      "ce",
+      "sera",
+      "à",
+      "mon",
+      "tour",
+      "d'être",
+      "promu",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "problème",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 2,
+        "word": "pris conscience",
+        "pinyin": "",
+        "meaning": "tomei consciência"
+      },
+      {
+        "id": 3,
+        "word": "valeur",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 4,
+        "word": "collègues",
+        "pinyin": "",
+        "meaning": "colegas"
+      },
+      {
+        "id": 5,
+        "word": "contacts",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 6,
+        "word": "promu",
+        "pinyin": "",
+        "meaning": "promovido"
+      }
+    ],
+    "id": "local-1780238674312-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Très bien. Alors, avez-vous réfléchi au type de métier vers lequel vous souhaitez vous orienter ?",
+    "pinyin": "",
+    "translation": "B: Muito bem. Então, você já pensou em que tipo de carreira deseja mudar?",
+    "tokens": [
+      "B:",
+      "Très",
+      "bien",
+      ".",
+      "Alors",
+      ",",
+      "avez",
+      "-",
+      "vous",
+      "réfléchi",
+      "au",
+      "type",
+      "de",
+      "métier",
+      "vers",
+      "lequel",
+      "vous",
+      "souhaitez",
+      "vous",
+      "orienter",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "métier",
+        "pinyin": "",
+        "meaning": "profissão"
+      },
+      {
+        "id": 2,
+        "word": "orienter",
+        "pinyin": "",
+        "meaning": "orientar"
+      },
+      {
+        "id": 3,
+        "word": "réfléchi",
+        "pinyin": "",
+        "meaning": "refletido"
+      },
+      {
+        "id": 4,
+        "word": "souhaitez",
+        "pinyin": "",
+        "meaning": "deseja"
+      },
+      {
+        "id": 5,
+        "word": "type",
+        "pinyin": "",
+        "meaning": "tipo"
+      }
+    ],
+    "id": "local-1780238674312-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Tu ne travailles pas dans une agence de recrutement ? Tes contacts doivent être plus étendus que les miens. Pourrais-tu me donner une recommandation ? Tu sais que ma spécialité à l'université était le design publicitaire. C'est juste le résultat d'une série de circonstances étranges si je suis devenu rédacteur. Peux-tu m'aider à chercher des entreprises de publicité ?",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia me dar uma recomendação? Você sabe que minha graduação na universidade foi em design publicitário. Foi apenas o resultado de uma série de circunstâncias estranhas que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "Tu",
+      "ne",
+      "travailles",
+      "pas",
+      "dans",
+      "une",
+      "agence",
+      "de",
+      "recrutement",
+      "?",
+      "Tes",
+      "contacts",
+      "doivent",
+      "être",
+      "plus",
+      "étendus",
+      "que",
+      "les",
+      "miens",
+      ".",
+      "Pourrais",
+      "-",
+      "tu",
+      "me",
+      "donner",
+      "une",
+      "recommandation",
+      "?",
+      "Tu",
+      "sais",
+      "que",
+      "ma",
+      "spécialité",
+      "à",
+      "l'université",
+      "était",
+      "le",
+      "design",
+      "publicitaire",
+      ".",
+      "C'est",
+      "juste",
+      "le",
+      "résultat",
+      "d'une",
+      "série",
+      "de",
+      "circonstances",
+      "étranges",
+      "si",
+      "je",
+      "suis",
+      "devenu",
+      "rédacteur",
+      ".",
+      "Peux",
+      "-",
+      "tu",
+      "m'aider",
+      "à",
+      "chercher",
+      "des",
+      "entreprises",
+      "de",
+      "publicité",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "agence de recrutement",
+        "pinyin": "",
+        "meaning": "agência de recrutamento"
+      },
+      {
+        "id": 2,
+        "word": "contacts",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 3,
+        "word": "recommandation",
+        "pinyin": "",
+        "meaning": "recomendação"
+      },
+      {
+        "id": 4,
+        "word": "design publicitaire",
+        "pinyin": "",
+        "meaning": "design publicitário"
+      },
+      {
+        "id": 5,
+        "word": "rédacteur",
+        "pinyin": "",
+        "meaning": "editor/redator"
+      },
+      {
+        "id": 6,
+        "word": "entreprises de publicité",
+        "pinyin": "",
+        "meaning": "empresas de publicidade"
+      }
+    ],
+    "id": "local-1780238674312-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est un peu difficile. Les exigences des grandes agences de publicité sont élevées. Aucune agence de publicité sérieuse ne pourrait fournir la rémunération que vous souhaitez.",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos das grandes agências de publicidade são altos. Nenhuma agência de publicidade séria seria capaz de fornecer a remuneração que você deseja.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "un",
+      "peu",
+      "difficile",
+      ".",
+      "Les",
+      "exigences",
+      "des",
+      "grandes",
+      "agences",
+      "de",
+      "publicité",
+      "sont",
+      "élevées",
+      ".",
+      "Aucune",
+      "agence",
+      "de",
+      "publicité",
+      "sérieuse",
+      "ne",
+      "pourrait",
+      "fournir",
+      "la",
+      "rémunération",
+      "que",
+      "vous",
+      "souhaitez",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "difficile",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "exigences",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 3,
+        "word": "agences",
+        "pinyin": "",
+        "meaning": "agências"
+      },
+      {
+        "id": 4,
+        "word": "sérieuse",
+        "pinyin": "",
+        "meaning": "séria"
+      },
+      {
+        "id": 5,
+        "word": "rémunération",
+        "pinyin": "",
+        "meaning": "remuneração"
+      }
+    ],
+    "id": "local-1780238674312-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: C'est vrai. Alors, que penses-tu de l'idée que je lance une entreprise ? On dit que les exigences pour le domaine de la publicité sont très faibles. Il suffit de louer un local, d'acheter quelques ordinateurs et ensuite tu peux commencer à faire des affaires. Il se trouve que j'ai sous la main quelques centaines de milliers qui pourraient servir de capital initial.",
+    "pinyin": "",
+    "translation": "A: É verdade. Então, o que você acha de eu começar um negócio? Dizem que os requisitos para a área de publicidade são muito baixos. Basta alugar um local, comprar alguns computadores e aí você pode começar a fazer negócios. Acontece que tenho em mãos algumas centenas de milhares que poderiam servir como capital inicial.",
+    "tokens": [
+      "A:",
+      "C'est",
+      "vrai",
+      ".",
+      "Alors",
+      ",",
+      "que",
+      "penses",
+      "-",
+      "tu",
+      "de",
+      "l'idée",
+      "que",
+      "je",
+      "lance",
+      "une",
+      "entreprise",
+      "?",
+      "On",
+      "dit",
+      "que",
+      "les",
+      "exigences",
+      "pour",
+      "le",
+      "domaine",
+      "de",
+      "la",
+      "publicité",
+      "sont",
+      "très",
+      "faibles",
+      ".",
+      "Il",
+      "suffit",
+      "de",
+      "louer",
+      "un",
+      "local",
+      ",",
+      "d'acheter",
+      "quelques",
+      "ordinateurs",
+      "et",
+      "ensuite",
+      "tu",
+      "peux",
+      "commencer",
+      "à",
+      "faire",
+      "des",
+      "affaires",
+      ".",
+      "Il",
+      "se",
+      "trouve",
+      "que",
+      "j'ai",
+      "sous",
+      "la",
+      "main",
+      "quelques",
+      "centaines",
+      "de",
+      "milliers",
+      "qui",
+      "pourraient",
+      "servir",
+      "de",
+      "capital",
+      "initial",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lance",
+        "pinyin": "",
+        "meaning": "inicia/lança"
+      },
+      {
+        "id": 2,
+        "word": "publicité",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 3,
+        "word": "local",
+        "pinyin": "",
+        "meaning": "local/loja"
+      },
+      {
+        "id": 4,
+        "word": "ordinateurs",
+        "pinyin": "",
+        "meaning": "computadores"
+      },
+      {
+        "id": 5,
+        "word": "affaires",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 6,
+        "word": "capital initial",
+        "pinyin": "",
+        "meaning": "capital inicial"
+      }
+    ],
+    "id": "local-1780238674312-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Se lancer dans une entreprise est en réalité une bonne idée. Mais vous devez trouver un partenaire, puis réfléchir à un moyen d'attirer les clients. Ce n'est pas très facile ; outre la patience, vous avez également besoin de la force concurrentielle clé : la créativité.",
+    "pinyin": "",
+    "translation": "B: Abrir o próprio negócio é na verdade uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "Se",
+      "lancer",
+      "dans",
+      "une",
+      "entreprise",
+      "est",
+      "en",
+      "réalité",
+      "une",
+      "bonne",
+      "idée",
+      ".",
+      "Mais",
+      "vous",
+      "devez",
+      "trouver",
+      "un",
+      "partenaire",
+      ",",
+      "puis",
+      "réfléchir",
+      "à",
+      "un",
+      "moyen",
+      "d'attirer",
+      "les",
+      "clients",
+      ".",
+      "Ce",
+      "n'est",
+      "pas",
+      "très",
+      "facile",
+      ";",
+      "outre",
+      "la",
+      "patience",
+      ",",
+      "vous",
+      "avez",
+      "également",
+      "besoin",
+      "de",
+      "la",
+      "force",
+      "concurrentielle",
+      "clé",
+      ":",
+      "la",
+      "créativité",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Se lancer",
+        "pinyin": "",
+        "meaning": "iniciar, começar"
+      },
+      {
+        "id": 2,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "negócio, empresa"
+      },
+      {
+        "id": 3,
+        "word": "partenaire",
+        "pinyin": "",
+        "meaning": "sócio, parceiro"
+      },
+      {
+        "id": 4,
+        "word": "attirer",
+        "pinyin": "",
+        "meaning": "atrair"
+      },
+      {
+        "id": 5,
+        "word": "patience",
+        "pinyin": "",
+        "meaning": "paciência"
+      },
+      {
+        "id": 6,
+        "word": "créativité",
+        "pinyin": "",
+        "meaning": "criatividade"
+      }
+    ],
+    "id": "local-1780238674312-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Mm, je sais. Je prévois de recruter d'anciens camarades de classe pour travailler avec moi. La publicité est un domaine qui me passionne pleinement, donc je n'abandonnerai pas si facilement.",
+    "pinyin": "",
+    "translation": "A: Mm, eu sei. Planejo recrutar antigos colegas de classe para trabalhar comigo. Publicidade é algo em que tenho total interesse, então não desistirei tão facilmente.",
+    "tokens": [
+      "A:",
+      "Mm",
+      ",",
+      "je",
+      "sais",
+      ".",
+      "Je",
+      "prévois",
+      "de",
+      "recruter",
+      "d'anciens",
+      "camarades",
+      "de",
+      "classe",
+      "pour",
+      "travailler",
+      "avec",
+      "moi",
+      ".",
+      "La",
+      "publicité",
+      "est",
+      "un",
+      "domaine",
+      "qui",
+      "me",
+      "passionne",
+      "pleinement",
+      ",",
+      "donc",
+      "je",
+      "n'abandonnerai",
+      "pas",
+      "si",
+      "facilement",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "recruter",
+        "pinyin": "",
+        "meaning": "recrutar"
+      },
+      {
+        "id": 2,
+        "word": "camarades de classe",
+        "pinyin": "",
+        "meaning": "colegas de classe"
+      },
+      {
+        "id": 3,
+        "word": "passionne",
+        "pinyin": "",
+        "meaning": "apaixona"
+      },
+      {
+        "id": 4,
+        "word": "publicité",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 5,
+        "word": "abandonnerai",
+        "pinyin": "",
+        "meaning": "desistirei"
+      }
+    ],
+    "id": "local-1780238674312-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Mm, je te souhaite donc beaucoup de succès à l'avance !",
+    "pinyin": "",
+    "translation": "B: Mm, então eu te desejo muito sucesso de antemão!",
+    "tokens": [
+      "B:",
+      "Mm",
+      ",",
+      "je",
+      "te",
+      "souhaite",
+      "donc",
+      "beaucoup",
+      "de",
+      "succès",
+      "à",
+      "l'avance",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "succès",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 2,
+        "word": "à l'avance",
+        "pinyin": "",
+        "meaning": "de antemão"
+      },
+      {
+        "id": 3,
+        "word": "souhaite",
+        "pinyin": "",
+        "meaning": "desejo"
+      },
+      {
+        "id": 4,
+        "word": "donc",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 5,
+        "word": "beaucoup",
+        "pinyin": "",
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1780238674312-11",
+    "language": "Francês"
+  }
+]

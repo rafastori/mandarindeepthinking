@@ -1,0 +1,921 @@
+[
+  {
+    "chinese": "A: Vorrei presentare le mie dimissioni.",
+    "pinyin": "",
+    "translation": "A: Gostaria de apresentar minhas demissões.",
+    "tokens": [
+      "A:",
+      "Vorrei",
+      "presentare",
+      "le",
+      "mie",
+      "dimissioni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vorrei",
+        "pinyin": "",
+        "meaning": "Eu gostaria"
+      },
+      {
+        "id": 2,
+        "word": "presentare",
+        "pinyin": "",
+        "meaning": "apresentar"
+      },
+      {
+        "id": 3,
+        "word": "dimissioni",
+        "pinyin": "",
+        "meaning": "demissões"
+      },
+      {
+        "id": 4,
+        "word": "mie",
+        "pinyin": "",
+        "meaning": "minhas"
+      }
+    ],
+    "id": "local-1780241239465-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Cosa? Come mai vuoi dimetterti all'improvviso?",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer se demitir de repente?",
+    "tokens": [
+      "B:",
+      "Cosa",
+      "?",
+      "Come",
+      "mai",
+      "vuoi",
+      "dimetterti",
+      "all'improvviso",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cosa",
+        "pinyin": "",
+        "meaning": "O que"
+      },
+      {
+        "id": 2,
+        "word": "dimetterti",
+        "pinyin": "",
+        "meaning": "se demitir"
+      },
+      {
+        "id": 3,
+        "word": "all'improvviso",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 4,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "você quer"
+      }
+    ],
+    "id": "local-1780241239465-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Perché lo stipendio mensile è così basso. Inoltre, l'ambiente di lavoro non è affatto buono. Ogni giorno mi limito a svolgere piccoli compiti insignificanti e non provo alcun senso di realizzazione. È molto lontano da ciò che mi aspettavo.",
+    "pinyin": "",
+    "translation": "A: Por que o salário mensal é tão baixo. Além disso, o ambiente de trabalho também não é bom. Todo dia eu apenas faço pequenas tarefas insignificantes e não há sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "Perché",
+      "lo",
+      "stipendio",
+      "mensile",
+      "è",
+      "così",
+      "basso",
+      ".",
+      "Inoltre",
+      ",",
+      "l'ambiente",
+      "di",
+      "lavoro",
+      "non",
+      "è",
+      "affatto",
+      "buono",
+      ".",
+      "Ogni",
+      "giorno",
+      "mi",
+      "limito",
+      "a",
+      "svolgere",
+      "piccoli",
+      "compiti",
+      "insignificanti",
+      "e",
+      "non",
+      "provo",
+      "alcun",
+      "senso",
+      "di",
+      "realizzazione",
+      ".",
+      "È",
+      "molto",
+      "lontano",
+      "da",
+      "ciò",
+      "che",
+      "mi",
+      "aspettavo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stipendio mensile",
+        "pinyin": "",
+        "meaning": "salário mensal"
+      },
+      {
+        "id": 2,
+        "word": "ambiente di lavoro",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "piccoli compiti",
+        "pinyin": "",
+        "meaning": "pequenas tarefas"
+      },
+      {
+        "id": 4,
+        "word": "insignificanti",
+        "pinyin": "",
+        "meaning": "insignificantes"
+      },
+      {
+        "id": 5,
+        "word": "senso di realizzazione",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 6,
+        "word": "mi aspettavo",
+        "pinyin": "",
+        "meaning": "eu esperava"
+      }
+    ],
+    "id": "local-1780241239465-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oggi, dove si può trovare un lavoro che sia esattamente ciò che si desidera? Non si dovrebbero avere standard elevati che le proprie capacità non possono soddisfare.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deveria ter padrões altos que suas habilidades não possam corresponder.",
+    "tokens": [
+      "B:",
+      "Oggi",
+      ",",
+      "dove",
+      "si",
+      "può",
+      "trovare",
+      "un",
+      "lavoro",
+      "che",
+      "sia",
+      "esattamente",
+      "ciò",
+      "che",
+      "si",
+      "desidera",
+      "?",
+      "Non",
+      "si",
+      "dovrebbero",
+      "avere",
+      "standard",
+      "elevati",
+      "che",
+      "le",
+      "proprie",
+      "capacità",
+      "non",
+      "possono",
+      "soddisfare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Oggi",
+        "pinyin": "",
+        "meaning": "Hoje"
+      },
+      {
+        "id": 2,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "desidera",
+        "pinyin": "",
+        "meaning": "deseja"
+      },
+      {
+        "id": 4,
+        "word": "standard",
+        "pinyin": "",
+        "meaning": "padrões"
+      },
+      {
+        "id": 5,
+        "word": "capacità",
+        "pinyin": "",
+        "meaning": "habilidades"
+      }
+    ],
+    "id": "local-1780241239465-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Il punto è che non ho ancora preso coscienza del mio valore, e ora tutti i miei colleghi intorno a me hanno ottime connessioni. E non so se sarà il mio turno di essere promosso solo in un futuro lontano.",
+    "pinyin": "",
+    "translation": "A: O ponto é que ainda não tomei consciência do meu valor, e agora todos os meus colegas ao meu redor têm ótimas conexões. E não sei se será a minha vez de ser promovido apenas em um futuro distante.",
+    "tokens": [
+      "A:",
+      "Il",
+      "punto",
+      "è",
+      "che",
+      "non",
+      "ho",
+      "ancora",
+      "preso",
+      "coscienza",
+      "del",
+      "mio",
+      "valore",
+      ",",
+      "e",
+      "ora",
+      "tutti",
+      "i",
+      "miei",
+      "colleghi",
+      "intorno",
+      "a",
+      "me",
+      "hanno",
+      "ottime",
+      "connessioni",
+      ".",
+      "E",
+      "non",
+      "so",
+      "se",
+      "sarà",
+      "il",
+      "mio",
+      "turno",
+      "di",
+      "essere",
+      "promosso",
+      "solo",
+      "in",
+      "un",
+      "futuro",
+      "lontano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "valore",
+        "pinyin": "",
+        "meaning": "mérito, importância"
+      },
+      {
+        "id": 2,
+        "word": "colleghi",
+        "pinyin": "",
+        "meaning": "colegas de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "connessioni",
+        "pinyin": "",
+        "meaning": "contatos, relacionamentos profissionais"
+      },
+      {
+        "id": 4,
+        "word": "promosso",
+        "pinyin": "",
+        "meaning": "ascendido no cargo"
+      },
+      {
+        "id": 5,
+        "word": "futuro lontano",
+        "pinyin": "",
+        "meaning": "tempo muito distante"
+      }
+    ],
+    "id": "local-1780241239465-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Allora hai pensato a che tipo di lavoro vuoi cambiare?",
+    "pinyin": "",
+    "translation": "B: Certo. Então você pensou em que tipo de trabalho quer mudar?",
+    "tokens": [
+      "B:",
+      "Va",
+      "bene",
+      ".",
+      "Allora",
+      "hai",
+      "pensato",
+      "a",
+      "che",
+      "tipo",
+      "di",
+      "lavoro",
+      "vuoi",
+      "cambiare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "Allora",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 3,
+        "word": "hai pensato",
+        "pinyin": "",
+        "meaning": "pensou"
+      },
+      {
+        "id": 4,
+        "word": "che tipo",
+        "pinyin": "",
+        "meaning": "que tipo"
+      },
+      {
+        "id": 5,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 6,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "quer"
+      },
+      {
+        "id": 7,
+        "word": "cambiare",
+        "pinyin": "",
+        "meaning": "mudar"
+      }
+    ],
+    "id": "local-1780241239465-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non lavori in un'agenzia di reclutamento? I tuoi contatti devono essere più ampi dei miei. Potresti darmi una raccomandazione? Sai che il mio corso di laurea all'università era in design della pubblicità. È stato solo il risultato di una strana serie di circostanze se sono diventato un redattore. Puoi aiutarmi a cercare alcune aziende pubblicitarie?",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia dar uma recomendação? Você sabe que meu curso universitário era em design publicitário. Foi apenas o resultado de uma série estranha de circunstâncias que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "Non",
+      "lavori",
+      "in",
+      "un'agenzia",
+      "di",
+      "reclutamento",
+      "?",
+      "I",
+      "tuoi",
+      "contatti",
+      "devono",
+      "essere",
+      "più",
+      "ampi",
+      "dei",
+      "miei",
+      ".",
+      "Potresti",
+      "darmi",
+      "una",
+      "raccomandazione",
+      "?",
+      "Sai",
+      "che",
+      "il",
+      "mio",
+      "corso",
+      "di",
+      "laurea",
+      "all'università",
+      "era",
+      "in",
+      "design",
+      "della",
+      "pubblicità",
+      ".",
+      "È",
+      "stato",
+      "solo",
+      "il",
+      "risultato",
+      "di",
+      "una",
+      "strana",
+      "serie",
+      "di",
+      "circostanze",
+      "se",
+      "sono",
+      "diventato",
+      "un",
+      "redattore",
+      ".",
+      "Puoi",
+      "aiutarmi",
+      "a",
+      "cercare",
+      "alcune",
+      "aziende",
+      "pubblicitarie",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "reclutamento",
+        "pinyin": "",
+        "meaning": "contratação de pessoal"
+      },
+      {
+        "id": 2,
+        "word": "contatti",
+        "pinyin": "",
+        "meaning": "conexões ou relacionamentos"
+      },
+      {
+        "id": 3,
+        "word": "raccomandazione",
+        "pinyin": "",
+        "meaning": "sugestão ou indicação favorável"
+      },
+      {
+        "id": 4,
+        "word": "design della pubblicità",
+        "pinyin": "",
+        "meaning": "design publicitário"
+      },
+      {
+        "id": 5,
+        "word": "redattore",
+        "pinyin": "",
+        "meaning": "editor ou revisor de textos"
+      },
+      {
+        "id": 6,
+        "word": "aziende pubblicitarie",
+        "pinyin": "",
+        "meaning": "empresas de publicidade"
+      }
+    ],
+    "id": "local-1780241239465-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È un po' difficile. I requisiti delle agenzie pubblicitarie rinomate sono elevati. Nessuna agenzia pubblicitaria seria non sarebbe in grado di fornire la compensazione che desideri.",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos das agências de publicidade renomadas são altos. Nenhuma agência de publicidade respeitável seria incapaz de fornecer a compensação que você deseja.",
+    "tokens": [
+      "B:",
+      "È",
+      "un",
+      "po",
+      "'",
+      "difficile",
+      ".",
+      "I",
+      "requisiti",
+      "delle",
+      "agenzie",
+      "pubblicitarie",
+      "rinomate",
+      "sono",
+      "elevati",
+      ".",
+      "Nessuna",
+      "agenzia",
+      "pubblicitaria",
+      "seria",
+      "non",
+      "sarebbe",
+      "in",
+      "grado",
+      "di",
+      "fornire",
+      "la",
+      "compensazione",
+      "che",
+      "desideri",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "difficile",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "requisiti",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 3,
+        "word": "agenzie",
+        "pinyin": "",
+        "meaning": "agências"
+      },
+      {
+        "id": 4,
+        "word": "pubblicitarie",
+        "pinyin": "",
+        "meaning": "de publicidade"
+      },
+      {
+        "id": 5,
+        "word": "rinomate",
+        "pinyin": "",
+        "meaning": "renomadas"
+      },
+      {
+        "id": 6,
+        "word": "elevati",
+        "pinyin": "",
+        "meaning": "elevados"
+      },
+      {
+        "id": 7,
+        "word": "compensazione",
+        "pinyin": "",
+        "meaning": "compensação"
+      }
+    ],
+    "id": "local-1780241239465-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: È vero. Quindi, cosa pensi se iniziassi un'attività? Si dice che i requisiti per il settore della pubblicità siano molto bassi. Basta affittare un locale, comprare qualche computer e poi si può iniziare a fare affari. Per caso ho a disposizione qualche centinaio di migliaia che potrebbero essere il capitale iniziale.",
+    "pinyin": "",
+    "translation": "A: É verdade. Então, o que você acha de eu começar um negócio? Dizem que os requisitos para a área de publicidade são muito baixos. Basta alugar um local, comprar alguns computadores e então você pode começar a fazer negócios. Por acaso, tenho à mão algumas centenas de milhares que poderiam ser o capital inicial.",
+    "tokens": [
+      "A:",
+      "È",
+      "vero",
+      ".",
+      "Quindi",
+      ",",
+      "cosa",
+      "pensi",
+      "se",
+      "iniziassi",
+      "un'attività",
+      "?",
+      "Si",
+      "dice",
+      "che",
+      "i",
+      "requisiti",
+      "per",
+      "il",
+      "settore",
+      "della",
+      "pubblicità",
+      "siano",
+      "molto",
+      "bassi",
+      ".",
+      "Basta",
+      "affittare",
+      "un",
+      "locale",
+      ",",
+      "comprare",
+      "qualche",
+      "computer",
+      "e",
+      "poi",
+      "si",
+      "può",
+      "iniziare",
+      "a",
+      "fare",
+      "affari",
+      ".",
+      "Per",
+      "caso",
+      "ho",
+      "a",
+      "disposizione",
+      "qualche",
+      "centinaio",
+      "di",
+      "migliaia",
+      "che",
+      "potrebbero",
+      "essere",
+      "il",
+      "capitale",
+      "iniziale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "pubblicità",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 2,
+        "word": "locale",
+        "pinyin": "",
+        "meaning": "local"
+      },
+      {
+        "id": 3,
+        "word": "capitale iniziale",
+        "pinyin": "",
+        "meaning": "capital inicial"
+      },
+      {
+        "id": 4,
+        "word": "affittare",
+        "pinyin": "",
+        "meaning": "alugar"
+      },
+      {
+        "id": 5,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 6,
+        "word": "affari",
+        "pinyin": "",
+        "meaning": "negócios"
+      }
+    ],
+    "id": "local-1780241239465-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Avviare la propria attività è in realtà una buona idea. Ma è necessario trovare un partner e poi pensare a un modo per attirare i clienti. Non è molto facile; oltre alla pazienza, hai anche bisogno della forza competitiva chiave: la creatività.",
+    "pinyin": "",
+    "translation": "B: Abrir o próprio negócio é na verdade uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "Avviare",
+      "la",
+      "propria",
+      "attività",
+      "è",
+      "in",
+      "realtà",
+      "una",
+      "buona",
+      "idea",
+      ".",
+      "Ma",
+      "è",
+      "necessario",
+      "trovare",
+      "un",
+      "partner",
+      "e",
+      "poi",
+      "pensare",
+      "a",
+      "un",
+      "modo",
+      "per",
+      "attirare",
+      "i",
+      "clienti",
+      ".",
+      "Non",
+      "è",
+      "molto",
+      "facile",
+      ";",
+      "oltre",
+      "alla",
+      "pazienza",
+      ",",
+      "hai",
+      "anche",
+      "bisogno",
+      "della",
+      "forza",
+      "competitiva",
+      "chiave",
+      ":",
+      "la",
+      "creatività",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Avviare",
+        "pinyin": "",
+        "meaning": "Iniciar"
+      },
+      {
+        "id": 2,
+        "word": "attività",
+        "pinyin": "",
+        "meaning": "Negócio"
+      },
+      {
+        "id": 3,
+        "word": "partner",
+        "pinyin": "",
+        "meaning": "Sócio"
+      },
+      {
+        "id": 4,
+        "word": "attirare",
+        "pinyin": "",
+        "meaning": "Atrair"
+      },
+      {
+        "id": 5,
+        "word": "pazienza",
+        "pinyin": "",
+        "meaning": "Paciência"
+      },
+      {
+        "id": 6,
+        "word": "creatività",
+        "pinyin": "",
+        "meaning": "Criatividade"
+      }
+    ],
+    "id": "local-1780241239465-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Mm, lo so. Ho intenzione di coinvolgere alcuni vecchi compagni di classe per lavorare con me. La pubblicità è qualcosa che mi interessa profondamente, quindi non la abbandonerò facilmente.",
+    "pinyin": "",
+    "translation": "A: Mm, eu sei. Planejo envolver alguns antigos colegas de classe para trabalhar comigo. Publicidade é algo que me interessa profundamente, então não vou desistir facilmente.",
+    "tokens": [
+      "A:",
+      "Mm",
+      ",",
+      "lo",
+      "so",
+      ".",
+      "Ho",
+      "intenzione",
+      "di",
+      "coinvolgere",
+      "alcuni",
+      "vecchi",
+      "compagni",
+      "di",
+      "classe",
+      "per",
+      "lavorare",
+      "con",
+      "me",
+      ".",
+      "La",
+      "pubblicità",
+      "è",
+      "qualcosa",
+      "che",
+      "mi",
+      "interessa",
+      "profondamente",
+      ",",
+      "quindi",
+      "non",
+      "la",
+      "abbandonerò",
+      "facilmente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "coinvolgere",
+        "pinyin": "",
+        "meaning": "envolver"
+      },
+      {
+        "id": 2,
+        "word": "vecchi compagni",
+        "pinyin": "",
+        "meaning": "antigos colegas"
+      },
+      {
+        "id": 3,
+        "word": "pubblicità",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 4,
+        "word": "interessa profondamente",
+        "pinyin": "",
+        "meaning": "interessa profundamente"
+      },
+      {
+        "id": 5,
+        "word": "abbandonerò",
+        "pinyin": "",
+        "meaning": "desistirei/abandonarei"
+      }
+    ],
+    "id": "local-1780241239465-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Mm, allora ti auguro successo in anticipo!",
+    "pinyin": "",
+    "translation": "B: Mm, então te desejo sucesso com antecedência!",
+    "tokens": [
+      "B:",
+      "Mm",
+      ",",
+      "allora",
+      "ti",
+      "auguro",
+      "successo",
+      "in",
+      "anticipo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "allora",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "ti auguro",
+        "pinyin": "",
+        "meaning": "te desejo"
+      },
+      {
+        "id": 3,
+        "word": "successo",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 4,
+        "word": "in anticipo",
+        "pinyin": "",
+        "meaning": "com antecedência"
+      }
+    ],
+    "id": "local-1780241239465-11",
+    "language": "Italiano"
+  }
+]

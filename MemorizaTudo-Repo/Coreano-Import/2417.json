@@ -1,0 +1,831 @@
+[
+  {
+    "chinese": "A: 내일 같이 밥 먹자. 다이핑에서 그룹 구매 이용할게.",
+    "pinyin": "",
+    "translation": "A: Vamos comer juntos amanhã. Vou usar um grupo de compras do Dianping.",
+    "tokens": [
+      "A:",
+      "내일",
+      "같이",
+      "밥",
+      "먹자",
+      ".",
+      "다이핑에서",
+      "그룹",
+      "구매",
+      "이용할게",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "내일",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "같이",
+        "pinyin": "",
+        "meaning": "juntos"
+      },
+      {
+        "id": 3,
+        "word": "밥 먹자",
+        "pinyin": "",
+        "meaning": "vamos comer"
+      },
+      {
+        "id": 4,
+        "word": "다이핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 5,
+        "word": "그룹 구매",
+        "pinyin": "",
+        "meaning": "compras em grupo"
+      },
+      {
+        "id": 6,
+        "word": "이용할게",
+        "pinyin": "",
+        "meaning": "vou usar"
+      }
+    ],
+    "id": "local-1780231386051-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋아요.",
+    "pinyin": "",
+    "translation": "B: Ok.",
+    "tokens": [
+      "B:",
+      "좋아요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "좋아요",
+        "pinyin": "",
+        "meaning": "ok / certo / de acordo"
+      }
+    ],
+    "id": "local-1780231386051-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 지금 그룹 구매 특별 할인이 있대요. 위챗 페이로 결제하면 20위안 더 할인해 줘요. 근데 저는 알리페이밖에 없는데, 위챗 페이 가입하면 어때요?",
+    "pinyin": "",
+    "translation": "A: Agora tem uma promoção especial em compras em grupo. Se você usar o WeChat Pay, ganha mais 20 yuan de desconto. Mas eu só tenho o Alipay. E se eu me cadastrar no WeChat Pay?",
+    "tokens": [
+      "A:",
+      "지금",
+      "그룹",
+      "구매",
+      "특별",
+      "할인이",
+      "있대요",
+      ".",
+      "위챗",
+      "페이로",
+      "결제하면",
+      "20",
+      "위안",
+      "더",
+      "할인해",
+      "줘요",
+      ".",
+      "근데",
+      "저는",
+      "알리페이밖에",
+      "없는데",
+      ",",
+      "위챗",
+      "페이",
+      "가입하면",
+      "어때요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그룹 구매",
+        "pinyin": "",
+        "meaning": "compras em grupo"
+      },
+      {
+        "id": 2,
+        "word": "특별 할인",
+        "pinyin": "",
+        "meaning": "desconto especial"
+      },
+      {
+        "id": 3,
+        "word": "위챗 페이",
+        "pinyin": "",
+        "meaning": "WeChat Pay"
+      },
+      {
+        "id": 4,
+        "word": "결제",
+        "pinyin": "",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 5,
+        "word": "할인",
+        "pinyin": "",
+        "meaning": "desconto"
+      },
+      {
+        "id": 6,
+        "word": "알리페이",
+        "pinyin": "",
+        "meaning": "Alipay"
+      },
+      {
+        "id": 7,
+        "word": "가입",
+        "pinyin": "",
+        "meaning": "cadastro"
+      }
+    ],
+    "id": "local-1780231386051-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 텐센트는 정말 빠릅니다. 디핑에 투자한 후, 그들은 빠르게 위챗 마케팅 계획을 내놓았습니다.",
+    "pinyin": "",
+    "translation": "B: A Tencent é realmente rápida. Após investir na Dianping, eles lançaram rapidamente um plano de marketing do WeChat.",
+    "tokens": [
+      "B:",
+      "텐센트는",
+      "정말",
+      "빠릅니다",
+      ".",
+      "디핑에",
+      "투자한",
+      "후",
+      ",",
+      "그들은",
+      "빠르게",
+      "위챗",
+      "마케팅",
+      "계획을",
+      "내놓았습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "텐센트",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 2,
+        "word": "빠릅니다",
+        "pinyin": "",
+        "meaning": "rápida"
+      },
+      {
+        "id": 3,
+        "word": "디핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 4,
+        "word": "위챗",
+        "pinyin": "",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 5,
+        "word": "마케팅",
+        "pinyin": "",
+        "meaning": "marketing"
+      },
+      {
+        "id": 6,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      }
+    ],
+    "id": "local-1780231386051-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 텐센트의 QQ와 위챗은 모두 채팅 서비스입니다. 왜 다이핑에 투자하려 했을까요?",
+    "pinyin": "",
+    "translation": "A: O QQ e o WeChat da Tencent são ambos produtos de chat. Por que eles queriam investir no Dianping?",
+    "tokens": [
+      "A:",
+      "텐센트의",
+      "QQ와",
+      "위챗은",
+      "모두",
+      "채팅",
+      "서비스입니다",
+      ".",
+      "왜",
+      "다이핑에",
+      "투자하려",
+      "했을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "텐센트",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 2,
+        "word": "QQ",
+        "pinyin": "",
+        "meaning": "QQ"
+      },
+      {
+        "id": 3,
+        "word": "위챗",
+        "pinyin": "",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 4,
+        "word": "채팅 서비스",
+        "pinyin": "",
+        "meaning": "serviço de chat"
+      },
+      {
+        "id": 5,
+        "word": "다이핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 6,
+        "word": "투자",
+        "pinyin": "",
+        "meaning": "investimento"
+      }
+    ],
+    "id": "local-1780231386051-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 요즘 가장 핫한 것은 O2O입니다. BAT 기업들은 O2O에 많은 돈을 투자할 의사가 있습니다.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, o que está em alta é o O2O. As empresas BAT estão dispostas a gastar muito dinheiro no O2O.",
+    "tokens": [
+      "B:",
+      "요즘",
+      "가장",
+      "핫한",
+      "것은",
+      "O",
+      "2",
+      "O입니다",
+      ".",
+      "BAT",
+      "기업들은",
+      "O",
+      "2",
+      "O에",
+      "많은",
+      "돈을",
+      "투자할",
+      "의사가",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "요즘",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "가장",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 3,
+        "word": "핫한",
+        "pinyin": "",
+        "meaning": "quente/em alta"
+      },
+      {
+        "id": 4,
+        "word": "것",
+        "pinyin": "",
+        "meaning": "coisa"
+      },
+      {
+        "id": 5,
+        "word": "기업들",
+        "pinyin": "",
+        "meaning": "empresas"
+      },
+      {
+        "id": 6,
+        "word": "투자",
+        "pinyin": "",
+        "meaning": "investimento"
+      }
+    ],
+    "id": "local-1780231386051-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 사람처럼 말하세요!",
+    "pinyin": "",
+    "translation": "A: Fale como um ser humano!",
+    "tokens": [
+      "A:",
+      "사람처럼",
+      "말하세요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사람",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 2,
+        "word": "말하세요",
+        "pinyin": "",
+        "meaning": "fale"
+      },
+      {
+        "id": 3,
+        "word": "처럼",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1780231386051-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: O2O는 온라인에서 오프라인으로(Online to Offline)를 의미합니다. 온라인에서의 지출과 오프라인에서의 지출을 연결하는 것입니다. 생각해 보세요: 다이핑(Dianping)에서 레스토랑을 온라인으로 검색하지만, 온라인으로 식사를 할 수는 없습니다. 결국 오프라인 레스토랑에 직접 가서 식사를 해야 합니다. 그것이 바로 O2O입니다.",
+    "pinyin": "",
+    "translation": "B: O2O significa Online to Offline. É conectar os gastos online com os gastos offline. Pense bem: você procura um restaurante no Dianping online, mas não pode comer online. No final, você ainda precisa ir a um restaurante offline para comer. Isso é O2O.",
+    "tokens": [
+      "B:",
+      "O",
+      "2",
+      "O는",
+      "온라인에서",
+      "오프라인으로",
+      "(",
+      "Online",
+      "to",
+      "Offline",
+      ")",
+      "를",
+      "의미합니다",
+      ".",
+      "온라인에서의",
+      "지출과",
+      "오프라인에서의",
+      "지출을",
+      "연결하는",
+      "것입니다",
+      ".",
+      "생각해",
+      "보세요",
+      ":",
+      "다이핑",
+      "(",
+      "Dianping",
+      ")",
+      "에서",
+      "레스토랑을",
+      "온라인으로",
+      "검색하지만",
+      ",",
+      "온라인으로",
+      "식사를",
+      "할",
+      "수는",
+      "없습니다",
+      ".",
+      "결국",
+      "오프라인",
+      "레스토랑에",
+      "직접",
+      "가서",
+      "식사를",
+      "해야",
+      "합니다",
+      ".",
+      "그것이",
+      "바로",
+      "O",
+      "2",
+      "O입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "온라인",
+        "pinyin": "",
+        "meaning": "online"
+      },
+      {
+        "id": 2,
+        "word": "오프라인",
+        "pinyin": "",
+        "meaning": "offline"
+      },
+      {
+        "id": 3,
+        "word": "다이핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 4,
+        "word": "레스토랑",
+        "pinyin": "",
+        "meaning": "restaurante"
+      },
+      {
+        "id": 5,
+        "word": "식사",
+        "pinyin": "",
+        "meaning": "refeição/comida"
+      },
+      {
+        "id": 6,
+        "word": "지출",
+        "pinyin": "",
+        "meaning": "gastos/despesas"
+      }
+    ],
+    "id": "local-1780231386051-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 그럼 BAT는 뭐야?",
+    "pinyin": "",
+    "translation": "A: Ah, então o que é BAT?",
+    "tokens": [
+      "A:",
+      "아",
+      ",",
+      "그럼",
+      "BAT는",
+      "뭐야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아",
+        "pinyin": "",
+        "meaning": "ah"
+      },
+      {
+        "id": 2,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "BAT",
+        "pinyin": "",
+        "meaning": "BAT"
+      },
+      {
+        "id": 4,
+        "word": "뭐야",
+        "pinyin": "",
+        "meaning": "o que é"
+      }
+    ],
+    "id": "local-1780231386051-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 바이두, 알리바바, 텐센트, 이 세 거대 기업인 BAT는 모두 미래의 비즈니스 제국에서의 입지를 위해 O2O에 대규모로 투자하고 인수하고 있다.",
+    "pinyin": "",
+    "translation": "B: Baidu, Alibaba, Tencent, essas três grandes empresas. O BAT está tudo investindo e comprando O2Os em grande escala, para a posição futura de seus impérios de negócios.",
+    "tokens": [
+      "B:",
+      "바이두",
+      ",",
+      "알리바바",
+      ",",
+      "텐센트",
+      ",",
+      "이",
+      "세",
+      "거대",
+      "기업인",
+      "BAT는",
+      "모두",
+      "미래의",
+      "비즈니스",
+      "제국에서의",
+      "입지를",
+      "위해",
+      "O",
+      "2",
+      "O에",
+      "대규모로",
+      "투자하고",
+      "인수하고",
+      "있다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "바이두",
+        "pinyin": "",
+        "meaning": "Baidu"
+      },
+      {
+        "id": 2,
+        "word": "알리바바",
+        "pinyin": "",
+        "meaning": "Alibaba"
+      },
+      {
+        "id": 3,
+        "word": "텐센트",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 4,
+        "word": "BAT",
+        "pinyin": "",
+        "meaning": "BAT (sigla para as três empresas)"
+      },
+      {
+        "id": 5,
+        "word": "O2O",
+        "pinyin": "",
+        "meaning": "O2O (Online to Offline)"
+      },
+      {
+        "id": 6,
+        "word": "투자",
+        "pinyin": "",
+        "meaning": "investimento"
+      },
+      {
+        "id": 7,
+        "word": "인수",
+        "pinyin": "",
+        "meaning": "aquisição"
+      },
+      {
+        "id": 8,
+        "word": "비즈니스 제국",
+        "pinyin": "",
+        "meaning": "império de negócios"
+      }
+    ],
+    "id": "local-1780231386051-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이런 식으로 디안핑은 막대한 투자를 받습니다. 이것이 텐센트에게 어떤 이점이 있습니까?",
+    "pinyin": "",
+    "translation": "A: Dianping recebe tantos investimentos dessa maneira. Que vantagem isso traz para a Tencent?",
+    "tokens": [
+      "A:",
+      "이런",
+      "식으로",
+      "디안핑은",
+      "막대한",
+      "투자를",
+      "받습니다",
+      ".",
+      "이것이",
+      "텐센트에게",
+      "어떤",
+      "이점이",
+      "있습니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "디안핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 2,
+        "word": "투자",
+        "pinyin": "",
+        "meaning": "investimento"
+      },
+      {
+        "id": 3,
+        "word": "텐센트",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 4,
+        "word": "이점",
+        "pinyin": "",
+        "meaning": "vantagem"
+      },
+      {
+        "id": 5,
+        "word": "막대한",
+        "pinyin": "",
+        "meaning": "maciço/grande"
+      }
+    ],
+    "id": "local-1780231386051-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 많습니다. 예를 들어 텐센트의 결제 제품은 알리바바와 비교조차 못 했습니다. 이제 디핑과 마케팅을 하고 있는데, 위챗 페이를 도입할 계획이 아니었나요? 디핑은 돈만 추구하는 것이 아닙니다. O2O 서비스는 폐쇄적인 환경을 구축해야 하는데 디핑에는 결제 링크가 빠져 있습니다. 두 회사는 서로의 부족한 점을 보완해 줍니다.",
+    "pinyin": "",
+    "translation": "B: Muito! Por exemplo, os produtos de pagamento da Tencent não conseguiam se comparar aos da Alibaba. Agora que estão fazendo marketing com o Dianping, você não planejava adotar o WeChat Payment? O Dianping não está lá apenas pelo dinheiro. Os serviços O2O precisam formar um ambiente fechado e o Dianping carece de um elo de pagamento. As duas empresas se complementam nas deficiências uma da outra.",
+    "tokens": [
+      "B:",
+      "정말",
+      "많습니다",
+      ".",
+      "예를",
+      "들어",
+      "텐센트의",
+      "결제",
+      "제품은",
+      "알리바바와",
+      "비교조차",
+      "못",
+      "했습니다",
+      ".",
+      "이제",
+      "디핑과",
+      "마케팅을",
+      "하고",
+      "있는데",
+      ",",
+      "위챗",
+      "페이를",
+      "도입할",
+      "계획이",
+      "아니었나요",
+      "?",
+      "디핑은",
+      "돈만",
+      "추구하는",
+      "것이",
+      "아닙니다",
+      ".",
+      "O",
+      "2",
+      "O",
+      "서비스는",
+      "폐쇄적인",
+      "환경을",
+      "구축해야",
+      "하는데",
+      "디핑에는",
+      "결제",
+      "링크가",
+      "빠져",
+      "있습니다",
+      ".",
+      "두",
+      "회사는",
+      "서로의",
+      "부족한",
+      "점을",
+      "보완해",
+      "줍니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "텐센트",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 2,
+        "word": "알리바바",
+        "pinyin": "",
+        "meaning": "Alibaba"
+      },
+      {
+        "id": 3,
+        "word": "디핑",
+        "pinyin": "",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 4,
+        "word": "위챗 페이",
+        "pinyin": "",
+        "meaning": "WeChat Pay"
+      },
+      {
+        "id": 5,
+        "word": "결제 제품",
+        "pinyin": "",
+        "meaning": "produtos de pagamento"
+      },
+      {
+        "id": 6,
+        "word": "O2O 서비스",
+        "pinyin": "",
+        "meaning": "serviços O2O"
+      },
+      {
+        "id": 7,
+        "word": "폐쇄적인 환경",
+        "pinyin": "",
+        "meaning": "ambiente fechado"
+      }
+    ],
+    "id": "local-1780231386051-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말 복잡하네요. 위챗 페이 등록을 다 끝냈어요. 이제 20위안을 아낄 수 있겠네요!",
+    "pinyin": "",
+    "translation": "A: Isso é tão complicado. Terminei de me registrar no WeChat Pay. Agora podemos economizar 20 yuanes!",
+    "tokens": [
+      "A:",
+      "정말",
+      "복잡하네요",
+      ".",
+      "위챗",
+      "페이",
+      "등록을",
+      "다",
+      "끝냈어요",
+      ".",
+      "이제",
+      "20",
+      "위안을",
+      "아낄",
+      "수",
+      "있겠네요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "복잡하네요",
+        "pinyin": "",
+        "meaning": "complicado"
+      },
+      {
+        "id": 2,
+        "word": "등록",
+        "pinyin": "",
+        "meaning": "registro"
+      },
+      {
+        "id": 3,
+        "word": "끝냈어요",
+        "pinyin": "",
+        "meaning": "terminei"
+      },
+      {
+        "id": 4,
+        "word": "아낄",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "위안",
+        "pinyin": "",
+        "meaning": "yuan"
+      }
+    ],
+    "id": "local-1780231386051-12",
+    "language": "Coreano"
+  }
+]

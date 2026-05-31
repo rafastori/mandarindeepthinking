@@ -1,0 +1,683 @@
+[
+  {
+    "chinese": "A: Tu viens de voir Weibo ? C'est vraiment stupéfiant.",
+    "pinyin": "",
+    "translation": "A: Você acabou de ver o Weibo? É realmente impressionante.",
+    "tokens": [
+      "A:",
+      "Tu",
+      "viens",
+      "de",
+      "voir",
+      "Weibo",
+      "?",
+      "C'est",
+      "vraiment",
+      "stupéfiant",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stupéfiant",
+        "pinyin": "",
+        "meaning": "impressionante"
+      },
+      {
+        "id": 2,
+        "word": "Weibo",
+        "pinyin": "",
+        "meaning": "plataforma chinesa"
+      },
+      {
+        "id": 3,
+        "word": "Tu viens de voir",
+        "pinyin": "",
+        "meaning": "você acabou de ver"
+      },
+      {
+        "id": 4,
+        "word": "vraiment",
+        "pinyin": "",
+        "meaning": "realmente"
+      }
+    ],
+    "id": "local-1780237589231-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Qu'est-ce qui s'est passé ?",
+    "pinyin": "",
+    "translation": "B: O que aconteceu?",
+    "tokens": [
+      "B:",
+      "Qu'est",
+      "-",
+      "ce",
+      "qui",
+      "s'est",
+      "passé",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Qu'est-ce",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "passé",
+        "pinyin": "",
+        "meaning": "aconteceu"
+      },
+      {
+        "id": 3,
+        "word": "s'est",
+        "pinyin": "",
+        "meaning": "se"
+      }
+    ],
+    "id": "local-1780237589231-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Un couple gay du Fujian s'est marié. Ils ont organisé une grande cérémonie de mariage. Ils ont également publié une série de photos sur Weibo.",
+    "pinyin": "",
+    "translation": "A: Um casal gay de Fujian se casou. Eles realizaram uma grande cerimônia de casamento. Eles também publicaram uma série de fotos no Weibo.",
+    "tokens": [
+      "A:",
+      "Un",
+      "couple",
+      "gay",
+      "du",
+      "Fujian",
+      "s'est",
+      "marié",
+      ".",
+      "Ils",
+      "ont",
+      "organisé",
+      "une",
+      "grande",
+      "cérémonie",
+      "de",
+      "mariage",
+      ".",
+      "Ils",
+      "ont",
+      "également",
+      "publié",
+      "une",
+      "série",
+      "de",
+      "photos",
+      "sur",
+      "Weibo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "couple gay",
+        "pinyin": "",
+        "meaning": "casal homossexual"
+      },
+      {
+        "id": 2,
+        "word": "Fujian",
+        "pinyin": "",
+        "meaning": "província chinesa"
+      },
+      {
+        "id": 3,
+        "word": "marié",
+        "pinyin": "",
+        "meaning": "casado"
+      },
+      {
+        "id": 4,
+        "word": "cérémonie de mariage",
+        "pinyin": "",
+        "meaning": "cerimônia de casamento"
+      },
+      {
+        "id": 5,
+        "word": "Weibo",
+        "pinyin": "",
+        "meaning": "plataforma de redes sociais chinesa"
+      },
+      {
+        "id": 6,
+        "word": "photos",
+        "pinyin": "",
+        "meaning": "imagens"
+      }
+    ],
+    "id": "local-1780237589231-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est assez normal. De nos jours, la société est beaucoup plus ouverte. L'homosexualité n'est pas si rare.",
+    "pinyin": "",
+    "translation": "B: Isso é bastante normal. Hoje em dia, a sociedade é muito mais aberta. A homossexualidade não é tão rara.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "assez",
+      "normal",
+      ".",
+      "De",
+      "nos",
+      "jours",
+      ",",
+      "la",
+      "société",
+      "est",
+      "beaucoup",
+      "plus",
+      "ouverte",
+      ".",
+      "L'homosexualité",
+      "n'est",
+      "pas",
+      "si",
+      "rare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "normal",
+        "pinyin": "",
+        "meaning": "comum, usual"
+      },
+      {
+        "id": 2,
+        "word": "société",
+        "pinyin": "",
+        "meaning": "sociedade"
+      },
+      {
+        "id": 3,
+        "word": "ouverte",
+        "pinyin": "",
+        "meaning": "aberta, tolerante"
+      },
+      {
+        "id": 4,
+        "word": "homosexualité",
+        "pinyin": "",
+        "meaning": "orientação homossexual"
+      },
+      {
+        "id": 5,
+        "word": "rare",
+        "pinyin": "",
+        "meaning": "pouco frequente"
+      }
+    ],
+    "id": "local-1780237589231-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Bien que de plus en plus de personnes l'acceptent, je trouve toujours qu'organiser un grand mariage est un peu étrange.",
+    "pinyin": "",
+    "translation": "A: Embora cada vez mais pessoas estejam dispostas a aceitar, ainda acho que realizar uma grande cerimônia de casamento é um pouco estranho.",
+    "tokens": [
+      "A:",
+      "Bien",
+      "que",
+      "de",
+      "plus",
+      "en",
+      "plus",
+      "de",
+      "personnes",
+      "l'acceptent",
+      ",",
+      "je",
+      "trouve",
+      "toujours",
+      "qu'organiser",
+      "un",
+      "grand",
+      "mariage",
+      "est",
+      "un",
+      "peu",
+      "étrange",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien que",
+        "pinyin": "",
+        "meaning": "embora"
+      },
+      {
+        "id": 2,
+        "word": "de plus en plus",
+        "pinyin": "",
+        "meaning": "cada vez mais"
+      },
+      {
+        "id": 3,
+        "word": "acceptent",
+        "pinyin": "",
+        "meaning": "aceitam"
+      },
+      {
+        "id": 4,
+        "word": "toujours",
+        "pinyin": "",
+        "meaning": "sempre/ainda"
+      },
+      {
+        "id": 5,
+        "word": "organiser",
+        "pinyin": "",
+        "meaning": "organizar"
+      },
+      {
+        "id": 6,
+        "word": "mariage",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 7,
+        "word": "étrange",
+        "pinyin": "",
+        "meaning": "estranho"
+      }
+    ],
+    "id": "local-1780237589231-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ce sont aussi des gens et ils ont des besoins émotionnels.",
+    "pinyin": "",
+    "translation": "B: Eles também são pessoas e têm necessidades emocionais.",
+    "tokens": [
+      "B:",
+      "Ce",
+      "sont",
+      "aussi",
+      "des",
+      "gens",
+      "et",
+      "ils",
+      "ont",
+      "des",
+      "besoins",
+      "émotionnels",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gens",
+        "pinyin": "",
+        "meaning": "pessoas"
+      },
+      {
+        "id": 2,
+        "word": "besoins",
+        "pinyin": "",
+        "meaning": "necessidades"
+      },
+      {
+        "id": 3,
+        "word": "émotionnels",
+        "pinyin": "",
+        "meaning": "emocionais"
+      },
+      {
+        "id": 4,
+        "word": "aussi",
+        "pinyin": "",
+        "meaning": "também"
+      }
+    ],
+    "id": "local-1780237589231-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Mais le mariage homosexuel n'est-il pas illégal en Chine ?",
+    "pinyin": "",
+    "translation": "A: Mas o casamento gay não é ilegal na China?",
+    "tokens": [
+      "A:",
+      "Mais",
+      "le",
+      "mariage",
+      "homosexuel",
+      "n'est",
+      "-",
+      "il",
+      "pas",
+      "illégal",
+      "en",
+      "Chine",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mariage",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 2,
+        "word": "homosexuel",
+        "pinyin": "",
+        "meaning": "homossexual"
+      },
+      {
+        "id": 3,
+        "word": "illégal",
+        "pinyin": "",
+        "meaning": "ilegal"
+      },
+      {
+        "id": 4,
+        "word": "Chine",
+        "pinyin": "",
+        "meaning": "China"
+      }
+    ],
+    "id": "local-1780237589231-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il paraît que oui. Mais à l'étranger, dans de nombreux endroits, il existe déjà des lois sur le mariage homosexuel, de sorte que beaucoup de gens partent à l'étranger pour se marier.",
+    "pinyin": "",
+    "translation": "B: Parece que sim. Mas no exterior, em muitos lugares, já existem leis sobre casamento gay, então muitas pessoas vão ao exterior para registrar.",
+    "tokens": [
+      "B:",
+      "Il",
+      "paraît",
+      "que",
+      "oui",
+      ".",
+      "Mais",
+      "à",
+      "l'étranger",
+      ",",
+      "dans",
+      "de",
+      "nombreux",
+      "endroits",
+      ",",
+      "il",
+      "existe",
+      "déjà",
+      "des",
+      "lois",
+      "sur",
+      "le",
+      "mariage",
+      "homosexuel",
+      ",",
+      "de",
+      "sorte",
+      "que",
+      "beaucoup",
+      "de",
+      "gens",
+      "partent",
+      "à",
+      "l'étranger",
+      "pour",
+      "se",
+      "marier",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "paraît",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 2,
+        "word": "étranger",
+        "pinyin": "",
+        "meaning": "exterior"
+      },
+      {
+        "id": 3,
+        "word": "lois",
+        "pinyin": "",
+        "meaning": "leis"
+      },
+      {
+        "id": 4,
+        "word": "mariage homosexuel",
+        "pinyin": "",
+        "meaning": "casamento gay"
+      },
+      {
+        "id": 5,
+        "word": "se marier",
+        "pinyin": "",
+        "meaning": "casar-se"
+      }
+    ],
+    "id": "local-1780237589231-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je pense que cela ne peut être que de cette façon. La Chine ne serait probablement pas en mesure de faire passer cette loi.",
+    "pinyin": "",
+    "translation": "A: Acho que só pode ser assim. A China provavelmente não conseguiria aprovar essa lei.",
+    "tokens": [
+      "A:",
+      "Je",
+      "pense",
+      "que",
+      "cela",
+      "ne",
+      "peut",
+      "être",
+      "que",
+      "de",
+      "cette",
+      "façon",
+      ".",
+      "La",
+      "Chine",
+      "ne",
+      "serait",
+      "probablement",
+      "pas",
+      "en",
+      "mesure",
+      "de",
+      "faire",
+      "passer",
+      "cette",
+      "loi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Je pense",
+        "pinyin": "",
+        "meaning": "Eu acho"
+      },
+      {
+        "id": 2,
+        "word": "cette façon",
+        "pinyin": "",
+        "meaning": "essa maneira"
+      },
+      {
+        "id": 3,
+        "word": "probablement",
+        "pinyin": "",
+        "meaning": "provavelmente"
+      },
+      {
+        "id": 4,
+        "word": "en mesure",
+        "pinyin": "",
+        "meaning": "capaz / em posição"
+      },
+      {
+        "id": 5,
+        "word": "faire passer",
+        "pinyin": "",
+        "meaning": "aprovar / fazer passar"
+      },
+      {
+        "id": 6,
+        "word": "loi",
+        "pinyin": "",
+        "meaning": "lei"
+      }
+    ],
+    "id": "local-1780237589231-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: En fin de compte, nos idées traditionnelles considèrent toujours uniquement le mariage hétérosexuel comme étant la norme. Cependant, je souhaite toujours que notre société puisse être plus tolérante et diversifiée.",
+    "pinyin": "",
+    "translation": "B: No final das contas, nossas ideias tradicionais ainda consideram apenas o casamento heterossexual como sendo a norma. No entanto, eu ainda desejo que nossa sociedade possa ser mais tolerante e diversificada.",
+    "tokens": [
+      "B:",
+      "En",
+      "fin",
+      "de",
+      "compte",
+      ",",
+      "nos",
+      "idées",
+      "traditionnelles",
+      "considèrent",
+      "toujours",
+      "uniquement",
+      "le",
+      "mariage",
+      "hétérosexuel",
+      "comme",
+      "étant",
+      "la",
+      "norme",
+      ".",
+      "Cependant",
+      ",",
+      "je",
+      "souhaite",
+      "toujours",
+      "que",
+      "notre",
+      "société",
+      "puisse",
+      "être",
+      "plus",
+      "tolérante",
+      "et",
+      "diversifiée",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mariage hétérosexuel",
+        "pinyin": "",
+        "meaning": "casamento heterossexual"
+      },
+      {
+        "id": 2,
+        "word": "norme",
+        "pinyin": "",
+        "meaning": "norma"
+      },
+      {
+        "id": 3,
+        "word": "tolérante",
+        "pinyin": "",
+        "meaning": "tolerante"
+      },
+      {
+        "id": 4,
+        "word": "diversifiée",
+        "pinyin": "",
+        "meaning": "diversificada"
+      },
+      {
+        "id": 5,
+        "word": "traditionnelles",
+        "pinyin": "",
+        "meaning": "tradicionais"
+      }
+    ],
+    "id": "local-1780237589231-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je crains que la Chine ait encore un long chemin à parcourir sur cette voie.",
+    "pinyin": "",
+    "translation": "A: Temo que a China ainda tenha um longo caminho a percorrer nesse caminho.",
+    "tokens": [
+      "A:",
+      "Je",
+      "crains",
+      "que",
+      "la",
+      "Chine",
+      "ait",
+      "encore",
+      "un",
+      "long",
+      "chemin",
+      "à",
+      "parcourir",
+      "sur",
+      "cette",
+      "voie",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "crains",
+        "pinyin": "",
+        "meaning": "temo"
+      },
+      {
+        "id": 2,
+        "word": "long chemin",
+        "pinyin": "",
+        "meaning": "longo caminho"
+      },
+      {
+        "id": 3,
+        "word": "parcourir",
+        "pinyin": "",
+        "meaning": "percorrer"
+      },
+      {
+        "id": 4,
+        "word": "voie",
+        "pinyin": "",
+        "meaning": "caminho/via"
+      },
+      {
+        "id": 5,
+        "word": "encore",
+        "pinyin": "",
+        "meaning": "ainda"
+      }
+    ],
+    "id": "local-1780237589231-10",
+    "language": "Francês"
+  }
+]

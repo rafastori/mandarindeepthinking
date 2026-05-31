@@ -1,0 +1,677 @@
+[
+  {
+    "chinese": "A: In diesem Quartal ist das Verkaufsvolumen des Unternehmens im Vergleich zum letzten Quartal um 20 Prozent gesunken.",
+    "pinyin": "",
+    "translation": "A: Neste trimestre, o volume de vendas da empresa caiu 20 por cento em relação ao último trimestre.",
+    "tokens": [
+      "A:",
+      "In",
+      "diesem",
+      "Quartal",
+      "ist",
+      "das",
+      "Verkaufsvolumen",
+      "des",
+      "Unternehmens",
+      "im",
+      "Vergleich",
+      "zum",
+      "letzten",
+      "Quartal",
+      "um",
+      "20",
+      "Prozent",
+      "gesunken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Verkaufsvolumen",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 2,
+        "word": "Quartal",
+        "pinyin": "",
+        "meaning": "trimestre"
+      },
+      {
+        "id": 3,
+        "word": "gesunken",
+        "pinyin": "",
+        "meaning": "caído"
+      },
+      {
+        "id": 4,
+        "word": "Prozent",
+        "pinyin": "",
+        "meaning": "por cento"
+      },
+      {
+        "id": 5,
+        "word": "Vergleich",
+        "pinyin": "",
+        "meaning": "comparação"
+      }
+    ],
+    "id": "local-1780229472773-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das hat mit den jahreszeitlichen Veränderungen zu tun. Unsere Geschäftslage ist zu dieser Zeit jedes Jahr nicht besonders gut.",
+    "pinyin": "",
+    "translation": "B: Isso tem a ver com as mudanças sazonais. Nosso negócio nunca é muito bom nesta época do ano.",
+    "tokens": [
+      "B:",
+      "Das",
+      "hat",
+      "mit",
+      "den",
+      "jahreszeitlichen",
+      "Veränderungen",
+      "zu",
+      "tun",
+      ".",
+      "Unsere",
+      "Geschäftslage",
+      "ist",
+      "zu",
+      "dieser",
+      "Zeit",
+      "jedes",
+      "Jahr",
+      "nicht",
+      "besonders",
+      "gut",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jahreszeitlichen Veränderungen",
+        "pinyin": "",
+        "meaning": "mudanças sazonais"
+      },
+      {
+        "id": 2,
+        "word": "Geschäftslage",
+        "pinyin": "",
+        "meaning": "situação do negócio"
+      },
+      {
+        "id": 3,
+        "word": "zu dieser Zeit",
+        "pinyin": "",
+        "meaning": "nesta época"
+      },
+      {
+        "id": 4,
+        "word": "jedes Jahr",
+        "pinyin": "",
+        "meaning": "todo ano"
+      },
+      {
+        "id": 5,
+        "word": "nicht besonders gut",
+        "pinyin": "",
+        "meaning": "não muito bom"
+      }
+    ],
+    "id": "local-1780229472773-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Ich denke, es ist nicht nur saisonal bedingt. Vor dem Rückgang war der Rückgang nur etwa fünf Prozent. In letzter Zeit war auch unsere Investition in Werbung geringer, also ist unser Verkaufsvolumen natürlich gesunken. Wir sollten das Marketingbudget besser erhöhen.",
+    "pinyin": "",
+    "translation": "C: Acho que não é apenas sazonal. Antes da queda, a redução era de apenas cerca de cinco por cento. Recentemente, nosso investimento em promoção também foi menor, então, claro, nosso volume de vendas caiu. Seria melhor aumentarmos o orçamento de marketing.",
+    "tokens": [
+      "C:",
+      "Ich",
+      "denke",
+      ",",
+      "es",
+      "ist",
+      "nicht",
+      "nur",
+      "saisonal",
+      "bedingt",
+      ".",
+      "Vor",
+      "dem",
+      "Rückgang",
+      "war",
+      "der",
+      "Rückgang",
+      "nur",
+      "etwa",
+      "fünf",
+      "Prozent",
+      ".",
+      "In",
+      "letzter",
+      "Zeit",
+      "war",
+      "auch",
+      "unsere",
+      "Investition",
+      "in",
+      "Werbung",
+      "geringer",
+      ",",
+      "also",
+      "ist",
+      "unser",
+      "Verkaufsvolumen",
+      "natürlich",
+      "gesunken",
+      ".",
+      "Wir",
+      "sollten",
+      "das",
+      "Marketingbudget",
+      "besser",
+      "erhöhen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "saisonal bedingt",
+        "pinyin": "",
+        "meaning": "condicionado sazonalmente"
+      },
+      {
+        "id": 2,
+        "word": "Rückgang",
+        "pinyin": "",
+        "meaning": "queda ou declínio"
+      },
+      {
+        "id": 3,
+        "word": "Werbung",
+        "pinyin": "",
+        "meaning": "publicidade ou propaganda"
+      },
+      {
+        "id": 4,
+        "word": "Verkaufsvolumen",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 5,
+        "word": "Marketingbudget",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      }
+    ],
+    "id": "local-1780229472773-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ist das wirklich möglich? Diese Kürzung des Marketingbudgets betrifft nicht nur unser Unternehmen, und die Verkaufszahlen sind nicht zwangsläufig bei allen gesunken.",
+    "pinyin": "",
+    "translation": "B: Isso é realmente possível? Essa redução no orçamento de marketing não se limita à nossa empresa, e os volumes de vendas não caíram necessariamente para todos.",
+    "tokens": [
+      "B:",
+      "Ist",
+      "das",
+      "wirklich",
+      "möglich",
+      "?",
+      "Diese",
+      "Kürzung",
+      "des",
+      "Marketingbudgets",
+      "betrifft",
+      "nicht",
+      "nur",
+      "unser",
+      "Unternehmen",
+      ",",
+      "und",
+      "die",
+      "Verkaufszahlen",
+      "sind",
+      "nicht",
+      "zwangsläufig",
+      "bei",
+      "allen",
+      "gesunken",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kürzung",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 2,
+        "word": "Marketingbudgets",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      },
+      {
+        "id": 3,
+        "word": "betrifft",
+        "pinyin": "",
+        "meaning": "afeta"
+      },
+      {
+        "id": 4,
+        "word": "Verkaufszahlen",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 5,
+        "word": "gesunken",
+        "pinyin": "",
+        "meaning": "caíram"
+      },
+      {
+        "id": 6,
+        "word": "nicht nur",
+        "pinyin": "",
+        "meaning": "não apenas"
+      }
+    ],
+    "id": "local-1780229472773-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Aber wir haben unser Budget gekürzt und das Verkaufsvolumen ist gesunken. Das ist offensichtlich.",
+    "pinyin": "",
+    "translation": "C: Mas reduzimos nosso orçamento e o volume de vendas caiu. É óbvio.",
+    "tokens": [
+      "C:",
+      "Aber",
+      "wir",
+      "haben",
+      "unser",
+      "Budget",
+      "gekürzt",
+      "und",
+      "das",
+      "Verkaufsvolumen",
+      "ist",
+      "gesunken",
+      ".",
+      "Das",
+      "ist",
+      "offensichtlich",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "gekürzt",
+        "pinyin": "",
+        "meaning": "reduzido"
+      },
+      {
+        "id": 3,
+        "word": "Verkaufsvolumen",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "gesunken",
+        "pinyin": "",
+        "meaning": "caiu"
+      },
+      {
+        "id": 5,
+        "word": "offensichtlich",
+        "pinyin": "",
+        "meaning": "óbvio"
+      }
+    ],
+    "id": "local-1780229472773-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Es geht hier nicht darum, ob wir bereit sind, Geld auszugeben. Der Haushalt wurde bereits vor einem Jahr festgelegt. Eine Erhöhung wäre jetzt nicht praktikabel.",
+    "pinyin": "",
+    "translation": "A: Não se trata de saber se estamos dispostos a gastar dinheiro. O orçamento já foi definido há um ano. Aumentá-lo agora não é prático.",
+    "tokens": [
+      "A:",
+      "Es",
+      "geht",
+      "hier",
+      "nicht",
+      "darum",
+      ",",
+      "ob",
+      "wir",
+      "bereit",
+      "sind",
+      ",",
+      "Geld",
+      "auszugeben",
+      ".",
+      "Der",
+      "Haushalt",
+      "wurde",
+      "bereits",
+      "vor",
+      "einem",
+      "Jahr",
+      "festgelegt",
+      ".",
+      "Eine",
+      "Erhöhung",
+      "wäre",
+      "jetzt",
+      "nicht",
+      "praktikabel",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Haushalt",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "festgelegt",
+        "pinyin": "",
+        "meaning": "definido"
+      },
+      {
+        "id": 3,
+        "word": "praktikabel",
+        "pinyin": "",
+        "meaning": "prático"
+      },
+      {
+        "id": 4,
+        "word": "auszugeben",
+        "pinyin": "",
+        "meaning": "gastar"
+      }
+    ],
+    "id": "local-1780229472773-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Da habe ich nicht zugestimmt!",
+    "pinyin": "",
+    "translation": "C: Naquela época, eu não concordei com isso!",
+    "tokens": [
+      "C:",
+      "Da",
+      "habe",
+      "ich",
+      "nicht",
+      "zugestimmt",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Da",
+        "pinyin": "",
+        "meaning": "naquela época"
+      },
+      {
+        "id": 2,
+        "word": "habe",
+        "pinyin": "",
+        "meaning": "tenho (auxiliar)"
+      },
+      {
+        "id": 3,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "zugestimmt",
+        "pinyin": "",
+        "meaning": "concordado"
+      }
+    ],
+    "id": "local-1780229472773-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Jetzt ist nicht die Zeit zu klagen. Wir müssen einen Plan entwickeln.",
+    "pinyin": "",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em um plano.",
+    "tokens": [
+      "A:",
+      "Jetzt",
+      "ist",
+      "nicht",
+      "die",
+      "Zeit",
+      "zu",
+      "klagen",
+      ".",
+      "Wir",
+      "müssen",
+      "einen",
+      "Plan",
+      "entwickeln",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "klagen",
+        "pinyin": "",
+        "meaning": "reclamar"
+      },
+      {
+        "id": 2,
+        "word": "Plan",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 3,
+        "word": "entwickeln",
+        "pinyin": "",
+        "meaning": "desenvolver"
+      },
+      {
+        "id": 4,
+        "word": "Zeit",
+        "pinyin": "",
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1780229472773-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wie wäre es, wenn wir ein paar große Veranstaltungen organisieren?",
+    "pinyin": "",
+    "translation": "B: Que tal organizarmos alguns grandes eventos?",
+    "tokens": [
+      "B:",
+      "Wie",
+      "wäre",
+      "es",
+      ",",
+      "wenn",
+      "wir",
+      "ein",
+      "paar",
+      "große",
+      "Veranstaltungen",
+      "organisieren",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Veranstaltungen",
+        "pinyin": "",
+        "meaning": "eventos"
+      },
+      {
+        "id": 2,
+        "word": "große",
+        "pinyin": "",
+        "meaning": "grandes"
+      },
+      {
+        "id": 3,
+        "word": "organisieren",
+        "pinyin": "",
+        "meaning": "organizar"
+      },
+      {
+        "id": 4,
+        "word": "Wie wäre es",
+        "pinyin": "",
+        "meaning": "que tal"
+      },
+      {
+        "id": 5,
+        "word": "wenn",
+        "pinyin": "",
+        "meaning": "se"
+      }
+    ],
+    "id": "local-1780229472773-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Es ist nicht so, dass ich das nicht tun möchte, es gibt einfach echte Herausforderungen.",
+    "pinyin": "",
+    "translation": "C: Não é que eu não queira fazer isso, é que existem desafios reais.",
+    "tokens": [
+      "C:",
+      "Es",
+      "ist",
+      "nicht",
+      "so",
+      ",",
+      "dass",
+      "ich",
+      "das",
+      "nicht",
+      "tun",
+      "möchte",
+      ",",
+      "es",
+      "gibt",
+      "einfach",
+      "echte",
+      "Herausforderungen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Herausforderungen",
+        "pinyin": "",
+        "meaning": "desafios"
+      },
+      {
+        "id": 2,
+        "word": "einfach",
+        "pinyin": "",
+        "meaning": "simplesmente"
+      },
+      {
+        "id": 3,
+        "word": "nicht",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "tun",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1780229472773-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Lassen Sie uns das Problem heute nicht diskutieren. Es ist besser, dass wir die Marketingabteilung selbst kontaktieren, um es zu lösen.",
+    "pinyin": "",
+    "translation": "A: Não vamos discutir este problema hoje. É melhor que entremos em contato com o próprio Departamento de Marketing para resolvê-lo.",
+    "tokens": [
+      "A:",
+      "Lassen",
+      "Sie",
+      "uns",
+      "das",
+      "Problem",
+      "heute",
+      "nicht",
+      "diskutieren",
+      ".",
+      "Es",
+      "ist",
+      "besser",
+      ",",
+      "dass",
+      "wir",
+      "die",
+      "Marketingabteilung",
+      "selbst",
+      "kontaktieren",
+      ",",
+      "um",
+      "es",
+      "zu",
+      "lösen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "diskutieren",
+        "pinyin": "",
+        "meaning": "discutir"
+      },
+      {
+        "id": 2,
+        "word": "Marketingabteilung",
+        "pinyin": "",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 3,
+        "word": "kontaktieren",
+        "pinyin": "",
+        "meaning": "contatar"
+      },
+      {
+        "id": 4,
+        "word": "lösen",
+        "pinyin": "",
+        "meaning": "resolver"
+      },
+      {
+        "id": 5,
+        "word": "Problem",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780229472773-10",
+    "language": "Alemão"
+  }
+]

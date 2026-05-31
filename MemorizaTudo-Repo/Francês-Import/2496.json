@@ -1,0 +1,867 @@
+[
+  {
+    "chinese": "A: Tout le monde est présent ! Permettez-moi de vous présenter mon collègue Tom. Son chinois est super impressionnant. Il a déjà obtenu le niveau 6 du HSK ! Et il possède déjà plusieurs années d'expérience en traduction.",
+    "pinyin": "",
+    "translation": "A: Todos estão presentes! Deixem-me apresentar meu colega Tom. O chinês dele é super impressionante. Ele já passou no nível 6 do HSK! E ele já tem vários anos de experiência em tradução.",
+    "tokens": [
+      "A:",
+      "Tout",
+      "le",
+      "monde",
+      "est",
+      "présent",
+      "!",
+      "Permettez",
+      "-",
+      "moi",
+      "de",
+      "vous",
+      "présenter",
+      "mon",
+      "collègue",
+      "Tom",
+      ".",
+      "Son",
+      "chinois",
+      "est",
+      "super",
+      "impressionnant",
+      ".",
+      "Il",
+      "a",
+      "déjà",
+      "obtenu",
+      "le",
+      "niveau",
+      "6",
+      "du",
+      "HSK",
+      "!",
+      "Et",
+      "il",
+      "possède",
+      "déjà",
+      "plusieurs",
+      "années",
+      "d'expérience",
+      "en",
+      "traduction",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "présent",
+        "pinyin": "",
+        "meaning": "presente"
+      },
+      {
+        "id": 2,
+        "word": "collègue",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 3,
+        "word": "impressionnant",
+        "pinyin": "",
+        "meaning": "impressionante"
+      },
+      {
+        "id": 4,
+        "word": "niveau",
+        "pinyin": "",
+        "meaning": "nível"
+      },
+      {
+        "id": 5,
+        "word": "expérience",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 6,
+        "word": "traduction",
+        "pinyin": "",
+        "meaning": "tradução"
+      }
+    ],
+    "id": "local-1780238970125-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est génial ! Partagez-nous vos secrets d'étude ! Je n'arrive jamais à retenir les nouveaux mots. Une fois que j'ai fini d'étudier une chose, j'oublie l'autre. J'ai déjà étudié pendant trois ou quatre ans et avant de dire quelque chose, je dois encore réfléchir assez longtemps. J'ai peur que si je fais une erreur ou si mes tons ne sont pas corrects, les autres se moquent de moi.",
+    "pinyin": "",
+    "translation": "B: Que incrível! Compartilhe conosco seus segredos de estudo! Eu nunca consigo lembrar palavras novas. Assim que termino de estudar uma coisa, esqueço a outra. Já estudei por três ou quatro anos e antes de dizer algo ainda tenho que pensar por um bom tempo. Tenho medo de que, se eu cometer um erro ou se meus tons não estiverem corretos, os outros rirão de mim.",
+    "tokens": [
+      "B:",
+      "C'est",
+      "génial",
+      "!",
+      "Partagez",
+      "-",
+      "nous",
+      "vos",
+      "secrets",
+      "d'étude",
+      "!",
+      "Je",
+      "n'arrive",
+      "jamais",
+      "à",
+      "retenir",
+      "les",
+      "nouveaux",
+      "mots",
+      ".",
+      "Une",
+      "fois",
+      "que",
+      "j'ai",
+      "fini",
+      "d'étudier",
+      "une",
+      "chose",
+      ",",
+      "j'oublie",
+      "l'autre",
+      ".",
+      "J'ai",
+      "déjà",
+      "étudié",
+      "pendant",
+      "trois",
+      "ou",
+      "quatre",
+      "ans",
+      "et",
+      "avant",
+      "de",
+      "dire",
+      "quelque",
+      "chose",
+      ",",
+      "je",
+      "dois",
+      "encore",
+      "réfléchir",
+      "assez",
+      "longtemps",
+      ".",
+      "J'ai",
+      "peur",
+      "que",
+      "si",
+      "je",
+      "fais",
+      "une",
+      "erreur",
+      "ou",
+      "si",
+      "mes",
+      "tons",
+      "ne",
+      "sont",
+      "pas",
+      "corrects",
+      ",",
+      "les",
+      "autres",
+      "se",
+      "moquent",
+      "de",
+      "moi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "génial",
+        "pinyin": "",
+        "meaning": "incrível"
+      },
+      {
+        "id": 2,
+        "word": "secrets d'étude",
+        "pinyin": "",
+        "meaning": "segredos de estudo"
+      },
+      {
+        "id": 3,
+        "word": "retenir",
+        "pinyin": "",
+        "meaning": "lembrar"
+      },
+      {
+        "id": 4,
+        "word": "réfléchir",
+        "pinyin": "",
+        "meaning": "pensar"
+      },
+      {
+        "id": 5,
+        "word": "ton",
+        "pinyin": "",
+        "meaning": "tom"
+      },
+      {
+        "id": 6,
+        "word": "se moque",
+        "pinyin": "",
+        "meaning": "rir"
+      }
+    ],
+    "id": "local-1780238970125-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Il semble que j'aie atteint un plateau d'apprentissage. Ces derniers temps, j'ai toujours eu l'impression que mon niveau de chinois stagnait et je ne sais pas comment franchir ce cap. C'est si décourageant !",
+    "pinyin": "",
+    "translation": "C: Parece que agora alcancei um platô de aprendizado. Ultimamente, sempre sinto que meu nível de chinês está estagnado e não sei como superar esse gargalo. É tão deprimente!",
+    "tokens": [
+      "C:",
+      "Il",
+      "semble",
+      "que",
+      "j'aie",
+      "atteint",
+      "un",
+      "plateau",
+      "d'apprentissage",
+      ".",
+      "Ces",
+      "derniers",
+      "temps",
+      ",",
+      "j'ai",
+      "toujours",
+      "eu",
+      "l'impression",
+      "que",
+      "mon",
+      "niveau",
+      "de",
+      "chinois",
+      "stagnait",
+      "et",
+      "je",
+      "ne",
+      "sais",
+      "pas",
+      "comment",
+      "franchir",
+      "ce",
+      "cap",
+      ".",
+      "C'est",
+      "si",
+      "décourageant",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "plateau",
+        "pinyin": "",
+        "meaning": "platô"
+      },
+      {
+        "id": 2,
+        "word": "stagnait",
+        "pinyin": "",
+        "meaning": "estagnava"
+      },
+      {
+        "id": 3,
+        "word": "franchir",
+        "pinyin": "",
+        "meaning": "transpor/superar"
+      },
+      {
+        "id": 4,
+        "word": "décourageant",
+        "pinyin": "",
+        "meaning": "desanimador"
+      },
+      {
+        "id": 5,
+        "word": "apprentissage",
+        "pinyin": "",
+        "meaning": "aprendizado"
+      }
+    ],
+    "id": "local-1780238970125-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'aime écrire des caractères chinois, mais j'oublie toujours l'ordre des traits et je les écris de travers. Cela m'inquiète vraiment !",
+    "pinyin": "",
+    "translation": "A: Eu gosto de escrever caracteres chineses, mas sempre esqueço a ordem dos traços e os escrevo tortos. Isso me preocupa muito!",
+    "tokens": [
+      "A:",
+      "J'aime",
+      "écrire",
+      "des",
+      "caractères",
+      "chinois",
+      ",",
+      "mais",
+      "j'oublie",
+      "toujours",
+      "l'ordre",
+      "des",
+      "traits",
+      "et",
+      "je",
+      "les",
+      "écris",
+      "de",
+      "travers",
+      ".",
+      "Cela",
+      "m'inquiète",
+      "vraiment",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "écrire",
+        "pinyin": "",
+        "meaning": "escrever"
+      },
+      {
+        "id": 2,
+        "word": "caractères chinois",
+        "pinyin": "",
+        "meaning": "caracteres chineses"
+      },
+      {
+        "id": 3,
+        "word": "ordre des traits",
+        "pinyin": "",
+        "meaning": "ordem dos traços"
+      },
+      {
+        "id": 4,
+        "word": "de travers",
+        "pinyin": "",
+        "meaning": "torto"
+      },
+      {
+        "id": 5,
+        "word": "inquiète",
+        "pinyin": "",
+        "meaning": "preocupa"
+      }
+    ],
+    "id": "local-1780238970125-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D: Personnellement, je pense qu'il n'y a pas de raccourcis pour apprendre une langue. Cela dépend principalement de votre volonté d'accorder plus de temps et d'efforts à vos études. Certains peuvent dire qu'ils sont vraiment trop occupés par le travail et ne peuvent pas dégager de grands blocs de temps pour étudier. Mais en réalité, je peux utiliser les petits moments libres ici et là pour mémoriser de nouveaux mots et écrire des caractères.",
+    "pinyin": "",
+    "translation": "D: Pessoalmente, sinto que não há atalhos para aprender um idioma. Depende principalmente de você estar disposto a dedicar mais tempo e esforço aos estudos. Algumas pessoas podem dizer que estão realmente muito ocupadas com o trabalho e não conseguem encontrar um bloco grande de tempo para estudar. Mas, na verdade, posso usar os tempos livres aqui e ali para lembrar novas palavras e escrever caracteres.",
+    "tokens": [
+      "D:",
+      "Personnellement",
+      ",",
+      "je",
+      "pense",
+      "qu'il",
+      "n'y",
+      "a",
+      "pas",
+      "de",
+      "raccourcis",
+      "pour",
+      "apprendre",
+      "une",
+      "langue",
+      ".",
+      "Cela",
+      "dépend",
+      "principalement",
+      "de",
+      "votre",
+      "volonté",
+      "d'accorder",
+      "plus",
+      "de",
+      "temps",
+      "et",
+      "d'efforts",
+      "à",
+      "vos",
+      "études",
+      ".",
+      "Certains",
+      "peuvent",
+      "dire",
+      "qu'ils",
+      "sont",
+      "vraiment",
+      "trop",
+      "occupés",
+      "par",
+      "le",
+      "travail",
+      "et",
+      "ne",
+      "peuvent",
+      "pas",
+      "dégager",
+      "de",
+      "grands",
+      "blocs",
+      "de",
+      "temps",
+      "pour",
+      "étudier",
+      ".",
+      "Mais",
+      "en",
+      "réalité",
+      ",",
+      "je",
+      "peux",
+      "utiliser",
+      "les",
+      "petits",
+      "moments",
+      "libres",
+      "ici",
+      "et",
+      "là",
+      "pour",
+      "mémoriser",
+      "de",
+      "nouveaux",
+      "mots",
+      "et",
+      "écrire",
+      "des",
+      "caractères",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "raccourcis",
+        "pinyin": "",
+        "meaning": "atalhos"
+      },
+      {
+        "id": 2,
+        "word": "mémoriser",
+        "pinyin": "",
+        "meaning": "memorizar"
+      },
+      {
+        "id": 3,
+        "word": "caractères",
+        "pinyin": "",
+        "meaning": "caracteres"
+      },
+      {
+        "id": 4,
+        "word": "temps",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 5,
+        "word": "efforts",
+        "pinyin": "",
+        "meaning": "esforços"
+      },
+      {
+        "id": 6,
+        "word": "étudier",
+        "pinyin": "",
+        "meaning": "estudar"
+      }
+    ],
+    "id": "local-1780238970125-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il semble que nous ne soyons pas assez persévérants. Nous utilisons toujours l'excuse de ne pas avoir le temps !",
+    "pinyin": "",
+    "translation": "B: Parece que não somos realmente persistentes o suficiente. Sempre usamos a desculpa de que não temos tempo!",
+    "tokens": [
+      "B:",
+      "Il",
+      "semble",
+      "que",
+      "nous",
+      "ne",
+      "soyons",
+      "pas",
+      "assez",
+      "persévérants",
+      ".",
+      "Nous",
+      "utilisons",
+      "toujours",
+      "l'excuse",
+      "de",
+      "ne",
+      "pas",
+      "avoir",
+      "le",
+      "temps",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "persévérants",
+        "pinyin": "",
+        "meaning": "persistentes"
+      },
+      {
+        "id": 2,
+        "word": "excuse",
+        "pinyin": "",
+        "meaning": "desculpa"
+      },
+      {
+        "id": 3,
+        "word": "temps",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 4,
+        "word": "semble",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 5,
+        "word": "assez",
+        "pinyin": "",
+        "meaning": "suficientemente"
+      }
+    ],
+    "id": "local-1780238970125-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D: En ce qui concerne la « parole », lorsque nous ne disposons pas de l'environnement linguistique, nous pouvons nous parler à nous-mêmes, ce qui nous aidera à développer l'habitude de penser en chinois. L'étude d'une langue a pour but l'interaction, vous devez donc parler avec audace et ne pas craindre de faire des erreurs. Plus nous faisons d'erreurs, plus nos progrès seront rapides.",
+    "pinyin": "",
+    "translation": "D: No que diz respeito à \"falar\", quando não temos o ambiente linguístico, podemos falar conosco mesmos, e isso nos ajudará a desenvolver o hábito de pensar em chinês. Estudar um idioma tem como propósito a interação, então você deve falar com ousadia e não ter medo de dizer algo incorretamente. Quanto mais erros cometemos, mais rápido será o nosso progresso.",
+    "tokens": [
+      "D:",
+      "En",
+      "ce",
+      "qui",
+      "concerne",
+      "la",
+      "«",
+      "parole",
+      "»",
+      ",",
+      "lorsque",
+      "nous",
+      "ne",
+      "disposons",
+      "pas",
+      "de",
+      "l'environnement",
+      "linguistique",
+      ",",
+      "nous",
+      "pouvons",
+      "nous",
+      "parler",
+      "à",
+      "nous",
+      "-",
+      "mêmes",
+      ",",
+      "ce",
+      "qui",
+      "nous",
+      "aidera",
+      "à",
+      "développer",
+      "l'habitude",
+      "de",
+      "penser",
+      "en",
+      "chinois",
+      ".",
+      "L'étude",
+      "d'une",
+      "langue",
+      "a",
+      "pour",
+      "but",
+      "l'interaction",
+      ",",
+      "vous",
+      "devez",
+      "donc",
+      "parler",
+      "avec",
+      "audace",
+      "et",
+      "ne",
+      "pas",
+      "craindre",
+      "de",
+      "faire",
+      "des",
+      "erreurs",
+      ".",
+      "Plus",
+      "nous",
+      "faisons",
+      "d'erreurs",
+      ",",
+      "plus",
+      "nos",
+      "progrès",
+      "seront",
+      "rapides",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "parole",
+        "pinyin": "",
+        "meaning": "fala"
+      },
+      {
+        "id": 2,
+        "word": "environnement linguistique",
+        "pinyin": "",
+        "meaning": "ambiente linguístico"
+      },
+      {
+        "id": 3,
+        "word": "penser",
+        "pinyin": "",
+        "meaning": "pensar"
+      },
+      {
+        "id": 4,
+        "word": "interaction",
+        "pinyin": "",
+        "meaning": "interação"
+      },
+      {
+        "id": 5,
+        "word": "audace",
+        "pinyin": "",
+        "meaning": "ousadia"
+      },
+      {
+        "id": 6,
+        "word": "erreurs",
+        "pinyin": "",
+        "meaning": "erros"
+      },
+      {
+        "id": 7,
+        "word": "progrès",
+        "pinyin": "",
+        "meaning": "progresso"
+      }
+    ],
+    "id": "local-1780238970125-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Mhm ! Il faut parler avec audace !",
+    "pinyin": "",
+    "translation": "C: Mhm! Temos que falar com ousadia!",
+    "tokens": [
+      "C:",
+      "Mhm",
+      "!",
+      "Il",
+      "faut",
+      "parler",
+      "avec",
+      "audace",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "audace",
+        "pinyin": "",
+        "meaning": "ousadia"
+      },
+      {
+        "id": 2,
+        "word": "parler",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 3,
+        "word": "faut",
+        "pinyin": "",
+        "meaning": "é necessário"
+      },
+      {
+        "id": 4,
+        "word": "Il",
+        "pinyin": "",
+        "meaning": "ele (impessoal)"
+      }
+    ],
+    "id": "local-1780238970125-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Élaborons donc un plan d'étude et restons à l'écoute les uns des autres !",
+    "pinyin": "",
+    "translation": "A: Então vamos elaborar um plano de estudos e ficar de olho um no outro!",
+    "tokens": [
+      "A:",
+      "Élaborons",
+      "donc",
+      "un",
+      "plan",
+      "d'étude",
+      "et",
+      "restons",
+      "à",
+      "l'écoute",
+      "les",
+      "uns",
+      "des",
+      "autres",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Élaborons",
+        "pinyin": "",
+        "meaning": "elaboramos"
+      },
+      {
+        "id": 2,
+        "word": "plan d'étude",
+        "pinyin": "",
+        "meaning": "plano de estudos"
+      },
+      {
+        "id": 3,
+        "word": "restons",
+        "pinyin": "",
+        "meaning": "permanecemos"
+      },
+      {
+        "id": 4,
+        "word": "à l'écoute",
+        "pinyin": "",
+        "meaning": "atentos"
+      },
+      {
+        "id": 5,
+        "word": "les uns des autres",
+        "pinyin": "",
+        "meaning": "uns dos outros"
+      }
+    ],
+    "id": "local-1780238970125-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "D: J'ai un ami avocat qui parle souvent chinois tout seul sous la douche ! Il y a une expression : « La persévérance est le chemin vers le succès ». Continuons tous ensemble !",
+    "pinyin": "",
+    "translation": "D: Tenho um amigo advogado que frequentemente fala chinês consigo mesmo enquanto toma banho! Existe uma expressão: « A perseverança é o caminho para o sucesso ». Vamos todos continuar juntos!",
+    "tokens": [
+      "D:",
+      "J'ai",
+      "un",
+      "ami",
+      "avocat",
+      "qui",
+      "parle",
+      "souvent",
+      "chinois",
+      "tout",
+      "seul",
+      "sous",
+      "la",
+      "douche",
+      "!",
+      "Il",
+      "y",
+      "a",
+      "une",
+      "expression",
+      ":",
+      "«",
+      "La",
+      "persévérance",
+      "est",
+      "le",
+      "chemin",
+      "vers",
+      "le",
+      "succès",
+      "»",
+      ".",
+      "Continuons",
+      "tous",
+      "ensemble",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "avocat",
+        "pinyin": "",
+        "meaning": "advogado"
+      },
+      {
+        "id": 2,
+        "word": "parle",
+        "pinyin": "",
+        "meaning": "fala"
+      },
+      {
+        "id": 3,
+        "word": "chinois",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 4,
+        "word": "douche",
+        "pinyin": "",
+        "meaning": "banho/chuveiro"
+      },
+      {
+        "id": 5,
+        "word": "persévérance",
+        "pinyin": "",
+        "meaning": "perseverança"
+      },
+      {
+        "id": 6,
+        "word": "succès",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 7,
+        "word": "ensemble",
+        "pinyin": "",
+        "meaning": "juntos"
+      }
+    ],
+    "id": "local-1780238970125-9",
+    "language": "Francês"
+  }
+]

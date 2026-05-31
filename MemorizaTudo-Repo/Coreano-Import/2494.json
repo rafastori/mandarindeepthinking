@@ -1,0 +1,874 @@
+[
+  {
+    "chinese": "A: 형님, 왜 여기 있어요?",
+    "pinyin": "",
+    "translation": "A: Irmão mais velho, por que você está aqui?",
+    "tokens": [
+      "A:",
+      "형님",
+      ",",
+      "왜",
+      "여기",
+      "있어요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "형님",
+        "pinyin": "",
+        "meaning": "irmão mais velho (respeito)"
+      },
+      {
+        "id": 2,
+        "word": "왜",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "여기",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 4,
+        "word": "있어요",
+        "pinyin": "",
+        "meaning": "estar (presente formal)"
+      }
+    ],
+    "id": "local-1780233504849-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 오늘 정말 당신께 여쭤볼 게 있어서 왔어요. 빨리 아이디어를 내주세요.",
+    "pinyin": "",
+    "translation": "B: Hoje realmente vim pedir algo a você. Aja rápido e me ajude a ter uma ideia.",
+    "tokens": [
+      "B:",
+      "오늘",
+      "정말",
+      "당신께",
+      "여쭤볼",
+      "게",
+      "있어서",
+      "왔어요",
+      ".",
+      "빨리",
+      "아이디어를",
+      "내주세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오늘",
+        "pinyin": "",
+        "meaning": "hoje"
+      },
+      {
+        "id": 2,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 3,
+        "word": "당신께",
+        "pinyin": "",
+        "meaning": "a você"
+      },
+      {
+        "id": 4,
+        "word": "여쭤볼",
+        "pinyin": "",
+        "meaning": "perguntar/pedir"
+      },
+      {
+        "id": 5,
+        "word": "아이디어",
+        "pinyin": "",
+        "meaning": "ideia"
+      }
+    ],
+    "id": "local-1780233504849-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 무엇이든 작은 형이 도울 수 있다면 큰 형은 주저하지 말고 말해야 합니다!",
+    "pinyin": "",
+    "translation": "A: Seja o que for, se o irmão mais novo puder ajudar, o irmão mais velho não deve hesitar em falar!",
+    "tokens": [
+      "A:",
+      "무엇이든",
+      "작은",
+      "형이",
+      "도울",
+      "수",
+      "있다면",
+      "큰",
+      "형은",
+      "주저하지",
+      "말고",
+      "말해야",
+      "합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "무엇이든",
+        "pinyin": "",
+        "meaning": "seja o que for / qualquer coisa"
+      },
+      {
+        "id": 2,
+        "word": "작은 형",
+        "pinyin": "",
+        "meaning": "irmão mais novo"
+      },
+      {
+        "id": 3,
+        "word": "도울",
+        "pinyin": "",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 4,
+        "word": "큰 형",
+        "pinyin": "",
+        "meaning": "irmão mais velho"
+      },
+      {
+        "id": 5,
+        "word": "주저하지",
+        "pinyin": "",
+        "meaning": "não hesitar"
+      },
+      {
+        "id": 6,
+        "word": "말해야",
+        "pinyin": "",
+        "meaning": "deve falar / dizer"
+      }
+    ],
+    "id": "local-1780233504849-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이렇게요.上次 バンジージャンプに行った時に会った女の子、まだ覚えてますか？",
+    "pinyin": "",
+    "translation": "B: É assim. Você ainda se lembra da garota que conhecemos na última vez que fomos fazer bungee jumping?",
+    "tokens": [
+      "B:",
+      "이렇게요",
+      ".",
+      "上次",
+      "バンジージャンプに行った時に会った女の子",
+      "、",
+      "まだ覚えてますか",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上次",
+        "pinyin": "",
+        "meaning": "última vez"
+      },
+      {
+        "id": 2,
+        "word": "バンジージャンプ",
+        "pinyin": "",
+        "meaning": "bungee jumping"
+      },
+      {
+        "id": 3,
+        "word": "会った",
+        "pinyin": "",
+        "meaning": "encontrado"
+      },
+      {
+        "id": 4,
+        "word": "女の子",
+        "pinyin": "",
+        "meaning": "garota"
+      },
+      {
+        "id": 5,
+        "word": "覚えてますか",
+        "pinyin": "",
+        "meaning": "lembra-se"
+      }
+    ],
+    "id": "local-1780233504849-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 기억나요. 그녀는 매우 자유로웠고 또한 매우 재미있었어요.",
+    "pinyin": "",
+    "translation": "A: Eu me lembro. Ela era muito despreocupada e também muito engraçada.",
+    "tokens": [
+      "A:",
+      "기억나요",
+      ".",
+      "그녀는",
+      "매우",
+      "자유로웠고",
+      "또한",
+      "매우",
+      "재미있었어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기억나요",
+        "pinyin": "",
+        "meaning": "eu me lembro"
+      },
+      {
+        "id": 2,
+        "word": "자유로웠고",
+        "pinyin": "",
+        "meaning": "despreocupada"
+      },
+      {
+        "id": 3,
+        "word": "재미있었어요",
+        "pinyin": "",
+        "meaning": "engraçada"
+      },
+      {
+        "id": 4,
+        "word": "매우",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 5,
+        "word": "그녀는",
+        "pinyin": "",
+        "meaning": "ela"
+      }
+    ],
+    "id": "local-1780233504849-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그래요. 그 성격이 제 취향이고, 이제 저는 그녀에게 완전히 빠져버렸어요. 그래서 그녀에게 청혼하기로 했어요!",
+    "pinyin": "",
+    "translation": "B: É. Esse é o tipo de personalidade que eu gosto e agora eu simplesmente me apaixonei perdidamente por ela, então decidi pedir ela em casamento!",
+    "tokens": [
+      "B:",
+      "그래요",
+      ".",
+      "그",
+      "성격이",
+      "제",
+      "취향이고",
+      ",",
+      "이제",
+      "저는",
+      "그녀에게",
+      "완전히",
+      "빠져버렸어요",
+      ".",
+      "그래서",
+      "그녀에게",
+      "청혼하기로",
+      "했어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "성격",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 2,
+        "word": "취향",
+        "pinyin": "",
+        "meaning": "gosto"
+      },
+      {
+        "id": 3,
+        "word": "빠져버렸어요",
+        "pinyin": "",
+        "meaning": "me apaixonei / me envolvi"
+      },
+      {
+        "id": 4,
+        "word": "청혼",
+        "pinyin": "",
+        "meaning": "pedido de casamento"
+      }
+    ],
+    "id": "local-1780233504849-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 축하합니다! 저는 당신을 지지합니다. 하지만 이건 정말 중요한 일이에요. 우리는 잘 계획하고 준비해야 해요.",
+    "pinyin": "",
+    "translation": "A: Parabéns! Eu apoio você! Mas isso é realmente importante. Temos que planejar e nos preparar bem.",
+    "tokens": [
+      "A:",
+      "축하합니다",
+      "!",
+      "저는",
+      "당신을",
+      "지지합니다",
+      ".",
+      "하지만",
+      "이건",
+      "정말",
+      "중요한",
+      "일이에요",
+      ".",
+      "우리는",
+      "잘",
+      "계획하고",
+      "준비해야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "축하합니다",
+        "pinyin": "",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 2,
+        "word": "지지합니다",
+        "pinyin": "",
+        "meaning": "apoio"
+      },
+      {
+        "id": 3,
+        "word": "중요한",
+        "pinyin": "",
+        "meaning": "importante"
+      },
+      {
+        "id": 4,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "planejar"
+      },
+      {
+        "id": 5,
+        "word": "준비",
+        "pinyin": "",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1780233504849-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 어떻게 고백할지 머리를 쥐어짜고 있어요.",
+    "pinyin": "",
+    "translation": "B: Estou me esforçando para pensar na melhor maneira de confessar meus sentimentos.",
+    "tokens": [
+      "B:",
+      "어떻게",
+      "고백할지",
+      "머리를",
+      "쥐어짜고",
+      "있어요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "머리를 쥐어짜고",
+        "pinyin": "",
+        "meaning": "esforçando-se para pensar"
+      },
+      {
+        "id": 2,
+        "word": "고백",
+        "pinyin": "",
+        "meaning": "confissão de amor"
+      },
+      {
+        "id": 3,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1780233504849-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 제 생각에는 불꽃놀이, 장미 같은 건 너무 유치하고 독창성이 부족해요. 장인이나 장모님이 될 분을 위해 평생 잊지 못할 특별한 무언가를 준비해야 해요.",
+    "pinyin": "",
+    "translation": "A: Na minha opinião, fogos de artifício, rosas e coisas do gênero são muito infantis e falta originalidade. Temos que pensar em algo especial para a futura cunhada para que ela nunca esqueça pelo resto da vida.",
+    "tokens": [
+      "A:",
+      "제",
+      "생각에는",
+      "불꽃놀이",
+      ",",
+      "장미",
+      "같은",
+      "건",
+      "너무",
+      "유치하고",
+      "독창성이",
+      "부족해요",
+      ".",
+      "장인이나",
+      "장모님이",
+      "될",
+      "분을",
+      "위해",
+      "평생",
+      "잊지",
+      "못할",
+      "특별한",
+      "무언가를",
+      "준비해야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "불꽃놀이",
+        "pinyin": "",
+        "meaning": "fogos de artifício"
+      },
+      {
+        "id": 2,
+        "word": "장미",
+        "pinyin": "",
+        "meaning": "rosas"
+      },
+      {
+        "id": 3,
+        "word": "유치",
+        "pinyin": "",
+        "meaning": "infantil"
+      },
+      {
+        "id": 4,
+        "word": "독창성",
+        "pinyin": "",
+        "meaning": "originalidade"
+      },
+      {
+        "id": 5,
+        "word": "장인",
+        "pinyin": "",
+        "meaning": "cunhado (marido da irmã)"
+      },
+      {
+        "id": 6,
+        "word": "장모님",
+        "pinyin": "",
+        "meaning": "cunhada (esposa do irmão)"
+      },
+      {
+        "id": 7,
+        "word": "특별한",
+        "pinyin": "",
+        "meaning": "especial"
+      }
+    ],
+    "id": "local-1780233504849-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 형, 나를 잘 알아!",
+    "pinyin": "",
+    "translation": "B: Irmão, você me conhece bem!",
+    "tokens": [
+      "B:",
+      "형",
+      ",",
+      "나를",
+      "잘",
+      "알아",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "형",
+        "pinyin": "",
+        "meaning": "irmão mais velho"
+      },
+      {
+        "id": 2,
+        "word": "나를",
+        "pinyin": "",
+        "meaning": "a mim"
+      },
+      {
+        "id": 3,
+        "word": "잘",
+        "pinyin": "",
+        "meaning": "bem"
+      },
+      {
+        "id": 4,
+        "word": "알아",
+        "pinyin": "",
+        "meaning": "conhece"
+      }
+    ],
+    "id": "local-1780233504849-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 기호에 맞게 조정하고, 대담한 것도 해볼 수 있어요. 바로 이렇게요... (속삭임)",
+    "pinyin": "",
+    "translation": "A: Podemos adaptá-lo aos gostos e fazer algoousado. Exatamente assim... (sussurrando)",
+    "tokens": [
+      "A:",
+      "기호에",
+      "맞게",
+      "조정하고",
+      ",",
+      "대담한",
+      "것도",
+      "해볼",
+      "수",
+      "있어요",
+      ".",
+      "바로",
+      "이렇게요",
+      ".",
+      ".",
+      ".",
+      "(",
+      "속삭임",
+      ")"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기호",
+        "pinyin": "",
+        "meaning": "gosto, preferência"
+      },
+      {
+        "id": 2,
+        "word": "조정",
+        "pinyin": "",
+        "meaning": "ajuste, adaptação"
+      },
+      {
+        "id": 3,
+        "word": "대담한",
+        "pinyin": "",
+        "meaning": "ousado, corajoso"
+      },
+      {
+        "id": 4,
+        "word": "속삭임",
+        "pinyin": "",
+        "meaning": "sussurro"
+      }
+    ],
+    "id": "local-1780233504849-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 하하, 좋은 방법이야. 신선하고 신나! 이걸로 가자! 며칠 후.....",
+    "pinyin": "",
+    "translation": "B: Haha, essa é uma boa maneira. É fresco e emocionante! Vamos com esse! alguns dias depois.....",
+    "tokens": [
+      "B:",
+      "하하",
+      ",",
+      "좋은",
+      "방법이야",
+      ".",
+      "신선하고",
+      "신나",
+      "!",
+      "이걸로",
+      "가자",
+      "!",
+      "며칠",
+      "후",
+      ".",
+      ".",
+      ".",
+      ".",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "하하",
+        "pinyin": "",
+        "meaning": "risada"
+      },
+      {
+        "id": 2,
+        "word": "좋은 방법",
+        "pinyin": "",
+        "meaning": "boa maneira"
+      },
+      {
+        "id": 3,
+        "word": "신선하고",
+        "pinyin": "",
+        "meaning": "fresco e"
+      },
+      {
+        "id": 4,
+        "word": "신나",
+        "pinyin": "",
+        "meaning": "emocionante"
+      },
+      {
+        "id": 5,
+        "word": "이걸로 가자",
+        "pinyin": "",
+        "meaning": "vamos com esse"
+      },
+      {
+        "id": 6,
+        "word": "며칠 후",
+        "pinyin": "",
+        "meaning": "alguns dias depois"
+      }
+    ],
+    "id": "local-1780233504849-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 형, 형수님이 제 청혼을 받아주셨나요?",
+    "pinyin": "",
+    "translation": "A: Irmão mais velho, sua cunhada aceitou sua proposta?",
+    "tokens": [
+      "A:",
+      "형",
+      ",",
+      "형수님이",
+      "제",
+      "청혼을",
+      "받아주셨나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "형",
+        "pinyin": "",
+        "meaning": "irmão mais velho (homem falando)"
+      },
+      {
+        "id": 2,
+        "word": "형수님",
+        "pinyin": "",
+        "meaning": "cunhada (esposa do irmão mais velho)"
+      },
+      {
+        "id": 3,
+        "word": "청혼",
+        "pinyin": "",
+        "meaning": "proposta de casamento"
+      },
+      {
+        "id": 4,
+        "word": "받아주셨나요",
+        "pinyin": "",
+        "meaning": "aceitou (forma honorífica)"
+      }
+    ],
+    "id": "local-1780233504849-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 말하지 마. 한밤중에 그녀에게 프로포즈하려고 전화를 했을 때, 그녀는 내가 귀신 분장을 하고 놀리려는 줄 알았어. 그리고 베개 밑에 숨겨둔 반지를 찾지 못했다고 했지.",
+    "pinyin": "",
+    "translation": "B: Não mencione isso. Naquela noite, quando liguei para ela à meia-noite para pedir ela em casamento, ela achou que eu estava se passando por um fantasma para assustá-la e brincar. E ela disse que não encontrou a aliança que eu escondi embaixo do travesseiro dela.",
+    "tokens": [
+      "B:",
+      "그건",
+      "말하지",
+      "마",
+      ".",
+      "한밤중에",
+      "그녀에게",
+      "프로포즈하려고",
+      "전화를",
+      "했을",
+      "때",
+      ",",
+      "그녀는",
+      "내가",
+      "귀신",
+      "분장을",
+      "하고",
+      "놀리려는",
+      "줄",
+      "알았어",
+      ".",
+      "그리고",
+      "베개",
+      "밑에",
+      "숨겨둔",
+      "반지를",
+      "찾지",
+      "못했다고",
+      "했지",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "프로포즈",
+        "pinyin": "",
+        "meaning": "proposta de casamento"
+      },
+      {
+        "id": 2,
+        "word": "귀신",
+        "pinyin": "",
+        "meaning": "fantasma"
+      },
+      {
+        "id": 3,
+        "word": "반지",
+        "pinyin": "",
+        "meaning": "aliança"
+      },
+      {
+        "id": 4,
+        "word": "베개",
+        "pinyin": "",
+        "meaning": "travesseiro"
+      },
+      {
+        "id": 5,
+        "word": "한밤중",
+        "pinyin": "",
+        "meaning": "meia-noite"
+      }
+    ],
+    "id": "local-1780233504849-13",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아이고! 다음번에는 더 전통적인 방법을 사용하는 게 좋겠어요!",
+    "pinyin": "",
+    "translation": "A: Oh no! Da próxima vez, seria melhor usarmos um método mais tradicional!",
+    "tokens": [
+      "A:",
+      "아이고",
+      "!",
+      "다음번에는",
+      "더",
+      "전통적인",
+      "방법을",
+      "사용하는",
+      "게",
+      "좋겠어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아이고",
+        "pinyin": "",
+        "meaning": "expressão de surpresa ou desespero"
+      },
+      {
+        "id": 2,
+        "word": "다음번에는",
+        "pinyin": "",
+        "meaning": "da próxima vez"
+      },
+      {
+        "id": 3,
+        "word": "전통적인",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "방법",
+        "pinyin": "",
+        "meaning": "método"
+      },
+      {
+        "id": 5,
+        "word": "사용하는",
+        "pinyin": "",
+        "meaning": "usando"
+      },
+      {
+        "id": 6,
+        "word": "좋겠어요",
+        "pinyin": "",
+        "meaning": "seria bom"
+      }
+    ],
+    "id": "local-1780233504849-14",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 다음 기회는 없을 거야. 우리 사이에는 희망이 없어.",
+    "pinyin": "",
+    "translation": "B: Acredito que não haverá uma próxima vez. Não há esperança para nós.",
+    "tokens": [
+      "B:",
+      "다음",
+      "기회는",
+      "없을",
+      "거야",
+      ".",
+      "우리",
+      "사이에는",
+      "희망이",
+      "없어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 2,
+        "word": "기회",
+        "pinyin": "",
+        "meaning": "oportunidade"
+      },
+      {
+        "id": 3,
+        "word": "희망",
+        "pinyin": "",
+        "meaning": "esperança"
+      },
+      {
+        "id": 4,
+        "word": "사이",
+        "pinyin": "",
+        "meaning": "relação / entre"
+      },
+      {
+        "id": 5,
+        "word": "없어",
+        "pinyin": "",
+        "meaning": "não há / não existe"
+      }
+    ],
+    "id": "local-1780233504849-15",
+    "language": "Coreano"
+  }
+]

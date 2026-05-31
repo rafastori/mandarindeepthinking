@@ -1,0 +1,704 @@
+[
+  {
+    "chinese": "A: Le volume des ventes de l'entreprise a diminué de 20 % par rapport au trimestre précédent.",
+    "pinyin": "",
+    "translation": "A: O volume de vendas da empresa caiu 20% em relação ao trimestre anterior.",
+    "tokens": [
+      "A:",
+      "Le",
+      "volume",
+      "des",
+      "ventes",
+      "de",
+      "l'entreprise",
+      "a",
+      "diminué",
+      "de",
+      "20",
+      "%",
+      "par",
+      "rapport",
+      "au",
+      "trimestre",
+      "précédent",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "volume",
+        "pinyin": "",
+        "meaning": "quantidade total"
+      },
+      {
+        "id": 2,
+        "word": "ventes",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 3,
+        "word": "diminué",
+        "pinyin": "",
+        "meaning": "caiu ou reduziu"
+      },
+      {
+        "id": 4,
+        "word": "trimestre",
+        "pinyin": "",
+        "meaning": "período de três meses"
+      },
+      {
+        "id": 5,
+        "word": "précédent",
+        "pinyin": "",
+        "meaning": "anterior"
+      }
+    ],
+    "id": "local-1780237714223-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Cela a trait aux changements saisonniers. Chaque année à cette époque, notre entreprise n'est jamais très florissante.",
+    "pinyin": "",
+    "translation": "B: Isso tem a ver com as mudanças sazonais. Toda ano nesta época nosso negócio nunca é muito bom.",
+    "tokens": [
+      "B:",
+      "Cela",
+      "a",
+      "trait",
+      "aux",
+      "changements",
+      "saisonniers",
+      ".",
+      "Chaque",
+      "année",
+      "à",
+      "cette",
+      "époque",
+      ",",
+      "notre",
+      "entreprise",
+      "n'est",
+      "jamais",
+      "très",
+      "florissante",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "changements saisonniers",
+        "pinyin": "",
+        "meaning": "mudanças sazonais"
+      },
+      {
+        "id": 2,
+        "word": "époque",
+        "pinyin": "",
+        "meaning": "época"
+      },
+      {
+        "id": 3,
+        "word": "entreprise",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "florissante",
+        "pinyin": "",
+        "meaning": "próspero"
+      }
+    ],
+    "id": "local-1780237714223-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Je ne pense pas que ce soit seulement saisonnier. Avant, la baisse de volume n'était que d'environ 5 %. Récemment, nos investissements en promotion ont également été moindres, donc, bien sûr, notre volume de ventes a chuté. Nous ferions mieux d'augmenter le budget marketing.",
+    "pinyin": "",
+    "translation": "C: Acho que não é apenas sazonal. Antes, a queda no volume era de apenas cerca de 5%. Recentemente, nossos investimentos em promoção também foram menores, então, claro, nosso volume de vendas caiu. Seria melhor aumentarmos o orçamento de marketing.",
+    "tokens": [
+      "C:",
+      "Je",
+      "ne",
+      "pense",
+      "pas",
+      "que",
+      "ce",
+      "soit",
+      "seulement",
+      "saisonnier",
+      ".",
+      "Avant",
+      ",",
+      "la",
+      "baisse",
+      "de",
+      "volume",
+      "n'était",
+      "que",
+      "d'environ",
+      "5",
+      "%",
+      ".",
+      "Récemment",
+      ",",
+      "nos",
+      "investissements",
+      "en",
+      "promotion",
+      "ont",
+      "également",
+      "été",
+      "moindres",
+      ",",
+      "donc",
+      ",",
+      "bien",
+      "sûr",
+      ",",
+      "notre",
+      "volume",
+      "de",
+      "ventes",
+      "a",
+      "chuté",
+      ".",
+      "Nous",
+      "ferions",
+      "mieux",
+      "d'augmenter",
+      "le",
+      "budget",
+      "marketing",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "saisonnier",
+        "pinyin": "",
+        "meaning": "sazonal"
+      },
+      {
+        "id": 2,
+        "word": "volume",
+        "pinyin": "",
+        "meaning": "volume"
+      },
+      {
+        "id": 3,
+        "word": "promotion",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 4,
+        "word": "ventes",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 5,
+        "word": "budget marketing",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      }
+    ],
+    "id": "local-1780237714223-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Est-ce vraiment possible ? Cette réduction du budget marketing ne se limite pas à notre entreprise, et les volumes de ventes de tout le monde n'ont pas nécessairement baissé.",
+    "pinyin": "",
+    "translation": "B: Isso é realmente possível? Essa redução no orçamento de marketing não se limita à nossa empresa, e os volumes de vendas de todos não necessariamente caíram.",
+    "tokens": [
+      "B:",
+      "Est",
+      "-",
+      "ce",
+      "vraiment",
+      "possible",
+      "?",
+      "Cette",
+      "réduction",
+      "du",
+      "budget",
+      "marketing",
+      "ne",
+      "se",
+      "limite",
+      "pas",
+      "à",
+      "notre",
+      "entreprise",
+      ",",
+      "et",
+      "les",
+      "volumes",
+      "de",
+      "ventes",
+      "de",
+      "tout",
+      "le",
+      "monde",
+      "n'ont",
+      "pas",
+      "nécessairement",
+      "baissé",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "réduction",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 2,
+        "word": "budget marketing",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      },
+      {
+        "id": 3,
+        "word": "volumes de ventes",
+        "pinyin": "",
+        "meaning": "volumes de vendas"
+      },
+      {
+        "id": 4,
+        "word": "baissé",
+        "pinyin": "",
+        "meaning": "caído"
+      },
+      {
+        "id": 5,
+        "word": "nécessairement",
+        "pinyin": "",
+        "meaning": "necessariamente"
+      }
+    ],
+    "id": "local-1780237714223-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Mais nous avons réduit notre budget et le volume des ventes a chuté. C'est évident.",
+    "pinyin": "",
+    "translation": "C: Mas reduzimos nosso orçamento e o volume de vendas caiu. É óbvio.",
+    "tokens": [
+      "C:",
+      "Mais",
+      "nous",
+      "avons",
+      "réduit",
+      "notre",
+      "budget",
+      "et",
+      "le",
+      "volume",
+      "des",
+      "ventes",
+      "a",
+      "chuté",
+      ".",
+      "C'est",
+      "évident",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "réduit",
+        "pinyin": "",
+        "meaning": "reduzido"
+      },
+      {
+        "id": 2,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "volume des ventes",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "chuté",
+        "pinyin": "",
+        "meaning": "caiu"
+      },
+      {
+        "id": 5,
+        "word": "évident",
+        "pinyin": "",
+        "meaning": "óbvio"
+      }
+    ],
+    "id": "local-1780237714223-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Il ne s'agit pas de savoir si nous sommes disposés à dépenser de l'argent. Le budget a déjà été établi il y a un an. L'augmenter maintenant n'est pas pratique.",
+    "pinyin": "",
+    "translation": "A: Não se trata de saber se estamos dispostos a gastar dinheiro. O orçamento já foi definido há um ano. Aumentá-lo agora não é prático.",
+    "tokens": [
+      "A:",
+      "Il",
+      "ne",
+      "s'agit",
+      "pas",
+      "de",
+      "savoir",
+      "si",
+      "nous",
+      "sommes",
+      "disposés",
+      "à",
+      "dépenser",
+      "de",
+      "l'argent",
+      ".",
+      "Le",
+      "budget",
+      "a",
+      "déjà",
+      "été",
+      "établi",
+      "il",
+      "y",
+      "a",
+      "un",
+      "an",
+      ".",
+      "L'augmenter",
+      "maintenant",
+      "n'est",
+      "pas",
+      "pratique",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "disposés",
+        "pinyin": "",
+        "meaning": "dispostos"
+      },
+      {
+        "id": 2,
+        "word": "dépenser",
+        "pinyin": "",
+        "meaning": "gastar"
+      },
+      {
+        "id": 3,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 4,
+        "word": "établi",
+        "pinyin": "",
+        "meaning": "definido"
+      },
+      {
+        "id": 5,
+        "word": "augmenter",
+        "pinyin": "",
+        "meaning": "aumentar"
+      },
+      {
+        "id": 6,
+        "word": "pratique",
+        "pinyin": "",
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1780237714223-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Donc à ce moment-là, je n'étais pas d'accord !",
+    "pinyin": "",
+    "translation": "C: Então naquela época eu não concordava!",
+    "tokens": [
+      "C:",
+      "Donc",
+      "à",
+      "ce",
+      "moment",
+      "-",
+      "là",
+      ",",
+      "je",
+      "n'étais",
+      "pas",
+      "d'accord",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Donc",
+        "pinyin": "",
+        "meaning": "Portanto"
+      },
+      {
+        "id": 2,
+        "word": "moment-là",
+        "pinyin": "",
+        "meaning": "Aquele momento"
+      },
+      {
+        "id": 3,
+        "word": "étais",
+        "pinyin": "",
+        "meaning": "Estava"
+      },
+      {
+        "id": 4,
+        "word": "pas",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 5,
+        "word": "d'accord",
+        "pinyin": "",
+        "meaning": "De acordo"
+      }
+    ],
+    "id": "local-1780237714223-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Ce n'est pas le moment de se plaindre. Nous devons réfléchir à un plan.",
+    "pinyin": "",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em um plano.",
+    "tokens": [
+      "A:",
+      "Ce",
+      "n'est",
+      "pas",
+      "le",
+      "moment",
+      "de",
+      "se",
+      "plaindre",
+      ".",
+      "Nous",
+      "devons",
+      "réfléchir",
+      "à",
+      "un",
+      "plan",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "moment",
+        "pinyin": "",
+        "meaning": "momento"
+      },
+      {
+        "id": 2,
+        "word": "plaindre",
+        "pinyin": "",
+        "meaning": "reclamar"
+      },
+      {
+        "id": 3,
+        "word": "réfléchir",
+        "pinyin": "",
+        "meaning": "refletir/pensar"
+      },
+      {
+        "id": 4,
+        "word": "plan",
+        "pinyin": "",
+        "meaning": "plano"
+      }
+    ],
+    "id": "local-1780237714223-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Et si nous organisions quelques grands événements ?",
+    "pinyin": "",
+    "translation": "B: E que tal organizarmos alguns grandes eventos?",
+    "tokens": [
+      "B:",
+      "Et",
+      "si",
+      "nous",
+      "organisions",
+      "quelques",
+      "grands",
+      "événements",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "grands",
+        "pinyin": "",
+        "meaning": "grandes"
+      },
+      {
+        "id": 2,
+        "word": "événements",
+        "pinyin": "",
+        "meaning": "eventos"
+      },
+      {
+        "id": 3,
+        "word": "quelques",
+        "pinyin": "",
+        "meaning": "alguns"
+      },
+      {
+        "id": 4,
+        "word": "si",
+        "pinyin": "",
+        "meaning": "se / que tal"
+      }
+    ],
+    "id": "local-1780237714223-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "C: Ce n'est pas que je ne veuille pas le faire, c'est juste qu'il y a de réels défis.",
+    "pinyin": "",
+    "translation": "C: Não é que eu não queira fazer isso, é só que existem desafios reais.",
+    "tokens": [
+      "C:",
+      "Ce",
+      "n'est",
+      "pas",
+      "que",
+      "je",
+      "ne",
+      "veuille",
+      "pas",
+      "le",
+      "faire",
+      ",",
+      "c'est",
+      "juste",
+      "qu'il",
+      "y",
+      "a",
+      "de",
+      "réels",
+      "défis",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "défis",
+        "pinyin": "",
+        "meaning": "desafios"
+      },
+      {
+        "id": 2,
+        "word": "réels",
+        "pinyin": "",
+        "meaning": "reais"
+      },
+      {
+        "id": 3,
+        "word": "veuille",
+        "pinyin": "",
+        "meaning": "queira (subjuntivo)"
+      },
+      {
+        "id": 4,
+        "word": "juste",
+        "pinyin": "",
+        "meaning": "apenas/só"
+      }
+    ],
+    "id": "local-1780237714223-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Ne discutons pas de ce problème aujourd'hui. Il vaut mieux que nous nous adressions directement au service Marketing pour le résoudre.",
+    "pinyin": "",
+    "translation": "A: Não vamos discutir este problema hoje. É melhor que entremos em contato diretamente com o Departamento de Marketing para resolvê-lo.",
+    "tokens": [
+      "A:",
+      "Ne",
+      "discutons",
+      "pas",
+      "de",
+      "ce",
+      "problème",
+      "aujourd'hui",
+      ".",
+      "Il",
+      "vaut",
+      "mieux",
+      "que",
+      "nous",
+      "nous",
+      "adressions",
+      "directement",
+      "au",
+      "service",
+      "Marketing",
+      "pour",
+      "le",
+      "résoudre",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "discutons",
+        "pinyin": "",
+        "meaning": "discutimos"
+      },
+      {
+        "id": 2,
+        "word": "problème",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "vaut mieux",
+        "pinyin": "",
+        "meaning": "é melhor"
+      },
+      {
+        "id": 4,
+        "word": "nous adressions",
+        "pinyin": "",
+        "meaning": "nos dirigimos/contatamos"
+      },
+      {
+        "id": 5,
+        "word": "service",
+        "pinyin": "",
+        "meaning": "departamento/setor"
+      },
+      {
+        "id": 6,
+        "word": "résoudre",
+        "pinyin": "",
+        "meaning": "resolver"
+      }
+    ],
+    "id": "local-1780237714223-10",
+    "language": "Francês"
+  }
+]

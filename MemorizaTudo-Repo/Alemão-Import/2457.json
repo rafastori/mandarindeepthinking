@@ -1,0 +1,722 @@
+[
+  {
+    "chinese": "A: Heute haben wir das große Privileg, Professor Zhang in unserer Sendung zu haben, der uns über die Reformen des US-Gesundheitswesens berichten wird. Willkommen, Professor Zhang!",
+    "pinyin": "",
+    "translation": "A: Hoje temos o grande privilégio de ter o Professor Zhang em nosso programa para nos falar sobre as reformas do sistema de saúde dos EUA. Bem-vindo, Professor Zhang!",
+    "tokens": [
+      "A:",
+      "Heute",
+      "haben",
+      "wir",
+      "das",
+      "große",
+      "Privileg",
+      ",",
+      "Professor",
+      "Zhang",
+      "in",
+      "unserer",
+      "Sendung",
+      "zu",
+      "haben",
+      ",",
+      "der",
+      "uns",
+      "über",
+      "die",
+      "Reformen",
+      "des",
+      "US",
+      "-",
+      "Gesundheitswesens",
+      "berichten",
+      "wird",
+      ".",
+      "Willkommen",
+      ",",
+      "Professor",
+      "Zhang",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Privileg",
+        "pinyin": "",
+        "meaning": "privilégio"
+      },
+      {
+        "id": 2,
+        "word": "Gesundheitswesens",
+        "pinyin": "",
+        "meaning": "sistema de saúde"
+      },
+      {
+        "id": 3,
+        "word": "Reformen",
+        "pinyin": "",
+        "meaning": "reformas"
+      },
+      {
+        "id": 4,
+        "word": "Sendung",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 5,
+        "word": "berichten",
+        "pinyin": "",
+        "meaning": "relatar/falar"
+      }
+    ],
+    "id": "local-1780229608883-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Hallo zusammen. Zunächst einmal ist dies ein sehr kompliziertes Thema. Am 23. März 2010 unterzeichnete der US-Präsident Obama im Weißen Haus ein Gesetz zur Reform der Krankenversicherung. Es ist eine der wichtigsten legislativen Errungenschaften der Regierung Obamas. Es wird als die größte Transformation des US-Sozialversicherungssystems seit 45 Jahren bezeichnet. Es hat weitreichende Auswirkungen auf den Einzelnen, die Unternehmen und die Regierung.",
+    "pinyin": "",
+    "translation": "B: Olá a todos. Em primeiro lugar, esta é uma questão muito complicada. Em 23 de março de 2010, o presidente dos EUA, Obama, assinou na Casa Branca uma lei de reforma do seguro de saúde. É uma das maiores conquistas legislativas do governo Obama. É considerada a maior transformação no sistema de segurança social dos EUA em 45 anos. Tem efeitos de longo alcance sobre o indivíduo, as empresas e o governo.",
+    "tokens": [
+      "B:",
+      "Hallo",
+      "zusammen",
+      ".",
+      "Zunächst",
+      "einmal",
+      "ist",
+      "dies",
+      "ein",
+      "sehr",
+      "kompliziertes",
+      "Thema",
+      ".",
+      "Am",
+      "23",
+      ".",
+      "März",
+      "2010",
+      "unterzeichnete",
+      "der",
+      "US",
+      "-",
+      "Präsident",
+      "Obama",
+      "im",
+      "Weißen",
+      "Haus",
+      "ein",
+      "Gesetz",
+      "zur",
+      "Reform",
+      "der",
+      "Krankenversicherung",
+      ".",
+      "Es",
+      "ist",
+      "eine",
+      "der",
+      "wichtigsten",
+      "legislativen",
+      "Errungenschaften",
+      "der",
+      "Regierung",
+      "Obamas",
+      ".",
+      "Es",
+      "wird",
+      "als",
+      "die",
+      "größte",
+      "Transformation",
+      "des",
+      "US",
+      "-",
+      "Sozialversicherungssystems",
+      "seit",
+      "45",
+      "Jahren",
+      "bezeichnet",
+      ".",
+      "Es",
+      "hat",
+      "weitreichende",
+      "Auswirkungen",
+      "auf",
+      "den",
+      "Einzelnen",
+      ",",
+      "die",
+      "Unternehmen",
+      "und",
+      "die",
+      "Regierung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 2,
+        "word": "Weißen Haus",
+        "pinyin": "",
+        "meaning": "Casa Branca"
+      },
+      {
+        "id": 3,
+        "word": "Gesetz",
+        "pinyin": "",
+        "meaning": "lei"
+      },
+      {
+        "id": 4,
+        "word": "Errungenschaften",
+        "pinyin": "",
+        "meaning": "conquistas"
+      },
+      {
+        "id": 5,
+        "word": "Sozialversicherungssystems",
+        "pinyin": "",
+        "meaning": "sistema de seguridade social"
+      },
+      {
+        "id": 6,
+        "word": "Transformation",
+        "pinyin": "",
+        "meaning": "transformação"
+      },
+      {
+        "id": 7,
+        "word": "Auswirkungen",
+        "pinyin": "",
+        "meaning": "impactos"
+      }
+    ],
+    "id": "local-1780229608883-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was ist das Hauptziel von Obamas Gesundheitsreformgesetz?",
+    "pinyin": "",
+    "translation": "A: Qual é o principal objetivo da lei de reforma da saúde de Obama?",
+    "tokens": [
+      "A:",
+      "Was",
+      "ist",
+      "das",
+      "Hauptziel",
+      "von",
+      "Obamas",
+      "Gesundheitsreformgesetz",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hauptziel",
+        "pinyin": "",
+        "meaning": "objetivo principal"
+      },
+      {
+        "id": 2,
+        "word": "Gesundheitsreformgesetz",
+        "pinyin": "",
+        "meaning": "lei de reforma da saúde"
+      },
+      {
+        "id": 3,
+        "word": "Obamas",
+        "pinyin": "",
+        "meaning": "de Obama"
+      },
+      {
+        "id": 4,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 5,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é"
+      }
+    ],
+    "id": "local-1780229608883-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Erstens bietet es mehr Sicherheit für diejenigen, die bereits eine Krankenversicherung haben. Zweitens bietet es \"erschwingliche\" Krankenversicherung für diejenigen, die keine haben. Drittens kontrolliert es die ständig steigenden Kosten der Gesundheitsversorgung.",
+    "pinyin": "",
+    "translation": "B: Primeiro, oferece mais segurança para aqueles que já têm seguro de saúde. Segundo, oferece seguro de saúde \"acessível\" para aqueles que não têm. Terceiro, controla os custos continuamente crescentes da assistência médica.",
+    "tokens": [
+      "B:",
+      "Erstens",
+      "bietet",
+      "es",
+      "mehr",
+      "Sicherheit",
+      "für",
+      "diejenigen",
+      ",",
+      "die",
+      "bereits",
+      "eine",
+      "Krankenversicherung",
+      "haben",
+      ".",
+      "Zweitens",
+      "bietet",
+      "es",
+      "\"",
+      "erschwingliche",
+      "\"",
+      "Krankenversicherung",
+      "für",
+      "diejenigen",
+      ",",
+      "die",
+      "keine",
+      "haben",
+      ".",
+      "Drittens",
+      "kontrolliert",
+      "es",
+      "die",
+      "ständig",
+      "steigenden",
+      "Kosten",
+      "der",
+      "Gesundheitsversorgung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 2,
+        "word": "erschwingliche",
+        "pinyin": "",
+        "meaning": "acessível"
+      },
+      {
+        "id": 3,
+        "word": "Gesundheitsversorgung",
+        "pinyin": "",
+        "meaning": "assistência médica"
+      },
+      {
+        "id": 4,
+        "word": "steigenden Kosten",
+        "pinyin": "",
+        "meaning": "custos crescentes"
+      },
+      {
+        "id": 5,
+        "word": "Sicherheit",
+        "pinyin": "",
+        "meaning": "segurança"
+      }
+    ],
+    "id": "local-1780229608883-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das klingt ziemlich gut. Nach meinem Wissen war die Gesundheitsreform ein zentrales Thema für die amerikanische Bevölkerung und ein historisches Problem. Aber tatsächlich erhielt Obamas Gesetzgebung keine energische Unterstützung, sondern löste mehrere Kontroversen aus, oder?",
+    "pinyin": "",
+    "translation": "A: Isso soa bastante bom. De acordo com o meu conhecimento, a reforma da saúde tem sido uma questão central para o povo americano e é um problema histórico. Mas, na verdade, o projeto de lei de Obama não recebeu apoio entusiástico, pelo contrário, causou várias controvérsias, certo?",
+    "tokens": [
+      "A:",
+      "Das",
+      "klingt",
+      "ziemlich",
+      "gut",
+      ".",
+      "Nach",
+      "meinem",
+      "Wissen",
+      "war",
+      "die",
+      "Gesundheitsreform",
+      "ein",
+      "zentrales",
+      "Thema",
+      "für",
+      "die",
+      "amerikanische",
+      "Bevölkerung",
+      "und",
+      "ein",
+      "historisches",
+      "Problem",
+      ".",
+      "Aber",
+      "tatsächlich",
+      "erhielt",
+      "Obamas",
+      "Gesetzgebung",
+      "keine",
+      "energische",
+      "Unterstützung",
+      ",",
+      "sondern",
+      "löste",
+      "mehrere",
+      "Kontroversen",
+      "aus",
+      ",",
+      "oder",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gesundheitsreform",
+        "pinyin": "",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 2,
+        "word": "zentrales Thema",
+        "pinyin": "",
+        "meaning": "questão central"
+      },
+      {
+        "id": 3,
+        "word": "amerikanische Bevölkerung",
+        "pinyin": "",
+        "meaning": "povo americano"
+      },
+      {
+        "id": 4,
+        "word": "historisches Problem",
+        "pinyin": "",
+        "meaning": "problema histórico"
+      },
+      {
+        "id": 5,
+        "word": "Gesetzgebung",
+        "pinyin": "",
+        "meaning": "legislação"
+      },
+      {
+        "id": 6,
+        "word": "Kontroversen",
+        "pinyin": "",
+        "meaning": "controvérsias"
+      }
+    ],
+    "id": "local-1780229608883-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Richtig. Derzeit haben laut Statistiken immer noch etwa 46 Millionen Menschen keine Krankenversicherung. Und die erforderlichen Gesundheitsreformen erfordern die Investition großer Geldbeträge. Daher ist die Frage, wer die Rechnung für diese massive Gesundheitsreform bezahlen soll, ein Kernproblem.",
+    "pinyin": "",
+    "translation": "B: Isso mesmo. Atualmente, de acordo com as estatísticas, cerca de 46 milhões de pessoas ainda não possuem seguro saúde. E as reformas na saúde exigem o investimento de grandes quantias de dinheiro. Portanto, quem pagará a conta por essa reforma massiva na saúde é um problema central.",
+    "tokens": [
+      "B:",
+      "Richtig",
+      ".",
+      "Derzeit",
+      "haben",
+      "laut",
+      "Statistiken",
+      "immer",
+      "noch",
+      "etwa",
+      "46",
+      "Millionen",
+      "Menschen",
+      "keine",
+      "Krankenversicherung",
+      ".",
+      "Und",
+      "die",
+      "erforderlichen",
+      "Gesundheitsreformen",
+      "erfordern",
+      "die",
+      "Investition",
+      "großer",
+      "Geldbeträge",
+      ".",
+      "Daher",
+      "ist",
+      "die",
+      "Frage",
+      ",",
+      "wer",
+      "die",
+      "Rechnung",
+      "für",
+      "diese",
+      "massive",
+      "Gesundheitsreform",
+      "bezahlen",
+      "soll",
+      ",",
+      "ein",
+      "Kernproblem",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Krankenversicherung",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 2,
+        "word": "Gesundheitsreformen",
+        "pinyin": "",
+        "meaning": "reformas na saúde"
+      },
+      {
+        "id": 3,
+        "word": "Geldbeträge",
+        "pinyin": "",
+        "meaning": "quantias de dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "Kernproblem",
+        "pinyin": "",
+        "meaning": "problema central"
+      },
+      {
+        "id": 5,
+        "word": "Statistiken",
+        "pinyin": "",
+        "meaning": "estatísticas"
+      }
+    ],
+    "id": "local-1780229608883-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wie war Obamas Haltung angesichts der Opposition?",
+    "pinyin": "",
+    "translation": "A: Qual foi a atitude de Obama diante da oposição?",
+    "tokens": [
+      "A:",
+      "Wie",
+      "war",
+      "Obamas",
+      "Haltung",
+      "angesichts",
+      "der",
+      "Opposition",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Haltung",
+        "pinyin": "",
+        "meaning": "atitude"
+      },
+      {
+        "id": 2,
+        "word": "Opposition",
+        "pinyin": "",
+        "meaning": "oposição"
+      },
+      {
+        "id": 3,
+        "word": "angesichts",
+        "pinyin": "",
+        "meaning": "diante de"
+      },
+      {
+        "id": 4,
+        "word": "Wie",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1780229608883-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Obama wies entschieden darauf hin, dass das Wohlergehen der amerikanischen Bevölkerung nicht für politische Rivalitäten geopfert werden darf. Gleichzeitig klärt er, dass er die bereits schwer lastenden wirtschaftlichen Belastungen der Steuerzahler nicht erhöhen wird, sondern Mittel durch die Reduzierung der aktuellen Verschwendung und des Missbrauchs von Geldern im Gesundheitssystem aufbringen wird.",
+    "pinyin": "",
+    "translation": "B: Obama apontou firmemente que o bem-estar do povo americano não pode ser sacrificado em prol de rivalidades políticas. Ao mesmo tempo, ele esclareceu que não aumentaria os já pesados encargos econômicos dos contribuintes, mas levantaria fundos através da redução do desperdício atual e do mau uso dos recursos no sistema de seguro saúde.",
+    "tokens": [
+      "B:",
+      "Obama",
+      "wies",
+      "entschieden",
+      "darauf",
+      "hin",
+      ",",
+      "dass",
+      "das",
+      "Wohlergehen",
+      "der",
+      "amerikanischen",
+      "Bevölkerung",
+      "nicht",
+      "für",
+      "politische",
+      "Rivalitäten",
+      "geopfert",
+      "werden",
+      "darf",
+      ".",
+      "Gleichzeitig",
+      "klärt",
+      "er",
+      ",",
+      "dass",
+      "er",
+      "die",
+      "bereits",
+      "schwer",
+      "lastenden",
+      "wirtschaftlichen",
+      "Belastungen",
+      "der",
+      "Steuerzahler",
+      "nicht",
+      "erhöhen",
+      "wird",
+      ",",
+      "sondern",
+      "Mittel",
+      "durch",
+      "die",
+      "Reduzierung",
+      "der",
+      "aktuellen",
+      "Verschwendung",
+      "und",
+      "des",
+      "Missbrauchs",
+      "von",
+      "Geldern",
+      "im",
+      "Gesundheitssystem",
+      "aufbringen",
+      "wird",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wohlergehen",
+        "pinyin": "",
+        "meaning": "bem-estar"
+      },
+      {
+        "id": 2,
+        "word": "Steuerzahler",
+        "pinyin": "",
+        "meaning": "contribuinte"
+      },
+      {
+        "id": 3,
+        "word": "Gesundheitssystem",
+        "pinyin": "",
+        "meaning": "sistema de saúde"
+      },
+      {
+        "id": 4,
+        "word": "Verschwendung",
+        "pinyin": "",
+        "meaning": "desperdício"
+      },
+      {
+        "id": 5,
+        "word": "Rivalitäten",
+        "pinyin": "",
+        "meaning": "rivalidades"
+      }
+    ],
+    "id": "local-1780229608883-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sehr ehrgeizig. Genau wie Obama selbst sagte: „Ich bin nicht der erste Präsident, der dieses Thema anspricht, aber ich habe beschlossen, der letzte Präsident zu sein, der es tut!\"",
+    "pinyin": "",
+    "translation": "A: Muito ambicioso. Assim como o próprio Obama disse: \"Não sou o primeiro presidente a levantar essa questão, mas decidi me tornar o último presidente a fazê-lo!\"",
+    "tokens": [
+      "A:",
+      "Sehr",
+      "ehrgeizig",
+      ".",
+      "Genau",
+      "wie",
+      "Obama",
+      "selbst",
+      "sagte",
+      ":",
+      "„",
+      "Ich",
+      "bin",
+      "nicht",
+      "der",
+      "erste",
+      "Präsident",
+      ",",
+      "der",
+      "dieses",
+      "Thema",
+      "anspricht",
+      ",",
+      "aber",
+      "ich",
+      "habe",
+      "beschlossen",
+      ",",
+      "der",
+      "letzte",
+      "Präsident",
+      "zu",
+      "sein",
+      ",",
+      "der",
+      "es",
+      "tut",
+      "!",
+      "\""
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ehrgeizig",
+        "pinyin": "",
+        "meaning": "ambicioso"
+      },
+      {
+        "id": 2,
+        "word": "Präsident",
+        "pinyin": "",
+        "meaning": "presidente"
+      },
+      {
+        "id": 3,
+        "word": "Thema",
+        "pinyin": "",
+        "meaning": "questão / assunto"
+      },
+      {
+        "id": 4,
+        "word": "anspricht",
+        "pinyin": "",
+        "meaning": "levanta / aborda"
+      }
+    ],
+    "id": "local-1780229608883-8",
+    "language": "Alemão"
+  }
+]

@@ -1,0 +1,535 @@
+[
+  {
+    "chinese": "A: Eres Aries. Dice en internet que Aries es un signo de fuego. Esto representa todo desde el principio. Es una persona que tiene talento para el liderazgo. Las mujeres que son Aries casi siempre pueden convertirse en empresarias destacadas y, al mismo tiempo, pueden ser buenas amas de casa. ¡Es mucho como tú!",
+    "pinyin": "",
+    "translation": "A: Você é Áries. Diz na internet que Áries é um signo de fogo. Isso representa tudo desde o início. É uma pessoa que tem talento para a liderança. As mulheres que são Áries quase sempre podem se tornar empresárias de destaque e, ao mesmo tempo, podem ser boas donas de casa. É muito parecido com você!",
+    "tokens": [
+      "A:",
+      "Eres",
+      "Aries",
+      ".",
+      "Dice",
+      "en",
+      "internet",
+      "que",
+      "Aries",
+      "es",
+      "un",
+      "signo",
+      "de",
+      "fuego",
+      ".",
+      "Esto",
+      "representa",
+      "todo",
+      "desde",
+      "el",
+      "principio",
+      ".",
+      "Es",
+      "una",
+      "persona",
+      "que",
+      "tiene",
+      "talento",
+      "para",
+      "el",
+      "liderazgo",
+      ".",
+      "Las",
+      "mujeres",
+      "que",
+      "son",
+      "Aries",
+      "casi",
+      "siempre",
+      "pueden",
+      "convertirse",
+      "en",
+      "empresarias",
+      "destacadas",
+      "y",
+      ",",
+      "al",
+      "mismo",
+      "tiempo",
+      ",",
+      "pueden",
+      "ser",
+      "buenas",
+      "amas",
+      "de",
+      "casa",
+      ".",
+      "¡",
+      "Es",
+      "mucho",
+      "como",
+      "tú",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Aries",
+        "pinyin": "",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 2,
+        "word": "signo de fuego",
+        "pinyin": "",
+        "meaning": "classificação astrológica"
+      },
+      {
+        "id": 3,
+        "word": "liderazgo",
+        "pinyin": "",
+        "meaning": "capacidade de liderar"
+      },
+      {
+        "id": 4,
+        "word": "empresarias",
+        "pinyin": "",
+        "meaning": "mulheres que gerenciam negócios"
+      },
+      {
+        "id": 5,
+        "word": "amas de casa",
+        "pinyin": "",
+        "meaning": "mulheres que cuidam do lar"
+      }
+    ],
+    "id": "local-1780234189850-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Supongo que sí. ¿Qué pasa con la personalidad?",
+    "pinyin": "",
+    "translation": "B: Acho que sim. E quanto à personalidade?",
+    "tokens": [
+      "B:",
+      "Supongo",
+      "que",
+      "sí",
+      ".",
+      "¿",
+      "Qué",
+      "pasa",
+      "con",
+      "la",
+      "personalidad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Supongo",
+        "pinyin": "",
+        "meaning": "acho / suponho"
+      },
+      {
+        "id": 2,
+        "word": "personalidad",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 3,
+        "word": "con",
+        "pinyin": "",
+        "meaning": "com / quanto a"
+      }
+    ],
+    "id": "local-1780234189850-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Los arianos son como niños pequeños: revelan sus verdaderos sentimientos, son francos y abiertos. Sin embargo, también son egoístas e infantiles. Son muy amables y no se aprovecharán de sus amigos, pero su mayor defecto es su amor por la imagen. Nunca pueden admitir que han cometido un error.",
+    "pinyin": "",
+    "translation": "A: Os arianos são como crianças pequenas: revelam seus verdadeiros sentimentos, são francos e abertos. No entanto, também são egoístas e infantis. São muito gentis e não tirarão vantagem de seus amigos, mas sua maior falha é o amor pela imagem. Eles nunca podem admitir que cometeram um erro.",
+    "tokens": [
+      "A:",
+      "Los",
+      "arianos",
+      "son",
+      "como",
+      "niños",
+      "pequeños",
+      ":",
+      "revelan",
+      "sus",
+      "verdaderos",
+      "sentimientos",
+      ",",
+      "son",
+      "francos",
+      "y",
+      "abiertos",
+      ".",
+      "Sin",
+      "embargo",
+      ",",
+      "también",
+      "son",
+      "egoístas",
+      "e",
+      "infantiles",
+      ".",
+      "Son",
+      "muy",
+      "amables",
+      "y",
+      "no",
+      "se",
+      "aprovecharán",
+      "de",
+      "sus",
+      "amigos",
+      ",",
+      "pero",
+      "su",
+      "mayor",
+      "defecto",
+      "es",
+      "su",
+      "amor",
+      "por",
+      "la",
+      "imagen",
+      ".",
+      "Nunca",
+      "pueden",
+      "admitir",
+      "que",
+      "han",
+      "cometido",
+      "un",
+      "error",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arianos",
+        "pinyin": "",
+        "meaning": "pessoas do signo de Áries"
+      },
+      {
+        "id": 2,
+        "word": "niños pequeños",
+        "pinyin": "",
+        "meaning": "crianças pequenas"
+      },
+      {
+        "id": 3,
+        "word": "francos",
+        "pinyin": "",
+        "meaning": "sinceros, diretos"
+      },
+      {
+        "id": 4,
+        "word": "egoístas",
+        "pinyin": "",
+        "meaning": "que pensam apenas em si mesmos"
+      },
+      {
+        "id": 5,
+        "word": "infantiles",
+        "pinyin": "",
+        "meaning": "próprios de crianças, imaturos"
+      },
+      {
+        "id": 6,
+        "word": "amor por la imagen",
+        "pinyin": "",
+        "meaning": "preocupação com a aparência ou reputação"
+      },
+      {
+        "id": 7,
+        "word": "admitir",
+        "pinyin": "",
+        "meaning": "reconhecer como verdadeiro"
+      }
+    ],
+    "id": "local-1780234189850-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Jeje. Ya sabes de esto...",
+    "pinyin": "",
+    "translation": "B: Hehe. Você sabe sobre isso...",
+    "tokens": [
+      "B:",
+      "Jeje",
+      ".",
+      "Ya",
+      "sabes",
+      "de",
+      "esto",
+      ".",
+      ".",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Jeje",
+        "pinyin": "",
+        "meaning": "riso"
+      },
+      {
+        "id": 2,
+        "word": "Ya",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "sabes",
+        "pinyin": "",
+        "meaning": "sabe"
+      },
+      {
+        "id": 4,
+        "word": "esto",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780234189850-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Las personas que son Aries tienen un temperamento rápido y se enfadan fácilmente. No les gusta asociarse con personas tranquilas. Si discuten contigo, no significa que estén realmente enfadadas. Si de verdad están enfadadas, ¡simplemente te ignorarán!",
+    "pinyin": "",
+    "translation": "A: As pessoas que são Áries têm um temperamento rápido e se aborrecem facilmente. Elas não gostam de se associar com pessoas tranquilas. Se elas brigarem com você, não significa que estejam realmente bravas. Se estiverem realmente bravas, elas simplesmente vão ignorar você!",
+    "tokens": [
+      "A:",
+      "Las",
+      "personas",
+      "que",
+      "son",
+      "Aries",
+      "tienen",
+      "un",
+      "temperamento",
+      "rápido",
+      "y",
+      "se",
+      "enfadan",
+      "fácilmente",
+      ".",
+      "No",
+      "les",
+      "gusta",
+      "asociarse",
+      "con",
+      "personas",
+      "tranquilas",
+      ".",
+      "Si",
+      "discuten",
+      "contigo",
+      ",",
+      "no",
+      "significa",
+      "que",
+      "estén",
+      "realmente",
+      "enfadadas",
+      ".",
+      "Si",
+      "de",
+      "verdad",
+      "están",
+      "enfadadas",
+      ",",
+      "¡",
+      "simplemente",
+      "te",
+      "ignorarán",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "temperamento",
+        "pinyin": "",
+        "meaning": "temperamento"
+      },
+      {
+        "id": 2,
+        "word": "tranquilas",
+        "pinyin": "",
+        "meaning": "tranquilas"
+      },
+      {
+        "id": 3,
+        "word": "discuten",
+        "pinyin": "",
+        "meaning": "brigam"
+      },
+      {
+        "id": 4,
+        "word": "ignorarán",
+        "pinyin": "",
+        "meaning": "ignorarão"
+      }
+    ],
+    "id": "local-1780234189850-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Así que desde ese punto de vista, no soy compatible con un Virgo, ¿verdad?",
+    "pinyin": "",
+    "translation": "B: Então, nesse ponto de vista, não sou compatível com um Virgem, não é?",
+    "tokens": [
+      "B:",
+      "Así",
+      "que",
+      "desde",
+      "ese",
+      "punto",
+      "de",
+      "vista",
+      ",",
+      "no",
+      "soy",
+      "compatible",
+      "con",
+      "un",
+      "Virgo",
+      ",",
+      "¿",
+      "verdad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "punto de vista",
+        "pinyin": "",
+        "meaning": "ponto de vista"
+      },
+      {
+        "id": 2,
+        "word": "compatible",
+        "pinyin": "",
+        "meaning": "compatível"
+      },
+      {
+        "id": 3,
+        "word": "Virgo",
+        "pinyin": "",
+        "meaning": "Virgem"
+      },
+      {
+        "id": 4,
+        "word": "desde",
+        "pinyin": "",
+        "meaning": "desde"
+      }
+    ],
+    "id": "local-1780234189850-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí. Los virgos realmente les gusta hacer pelar la papa y también están nerviosos. Su vida juntos debería tener muchos problemas.",
+    "pinyin": "",
+    "translation": "A: Sim. Os virgos realmente gostam de fazer pelar a batata e também estão nervosos. Sua vida juntos deveria ter muitos problemas.",
+    "tokens": [
+      "A:",
+      "Sí",
+      ".",
+      "Los",
+      "virgos",
+      "realmente",
+      "les",
+      "gusta",
+      "hacer",
+      "pelar",
+      "la",
+      "papa",
+      "y",
+      "también",
+      "están",
+      "nerviosos",
+      ".",
+      "Su",
+      "vida",
+      "juntos",
+      "debería",
+      "tener",
+      "muchos",
+      "problemas",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "virgos",
+        "pinyin": "",
+        "meaning": "pessoas do signo de Virgem"
+      },
+      {
+        "id": 2,
+        "word": "pelar la papa",
+        "pinyin": "",
+        "meaning": "fazer críticas minuciosas"
+      },
+      {
+        "id": 3,
+        "word": "nerviosos",
+        "pinyin": "",
+        "meaning": "ansiosos, inquietos"
+      },
+      {
+        "id": 4,
+        "word": "problemas",
+        "pinyin": "",
+        "meaning": "dificuldades, contratempos"
+      }
+    ],
+    "id": "local-1780234189850-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Con qué signo zodiacal soy compatible?",
+    "pinyin": "",
+    "translation": "B: Com qual signo do zodíaco eu sou compatível?",
+    "tokens": [
+      "B:",
+      "¿",
+      "Con",
+      "qué",
+      "signo",
+      "zodiacal",
+      "soy",
+      "compatible",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "signo zodiacal",
+        "pinyin": "",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 2,
+        "word": "compatible",
+        "pinyin": "",
+        "meaning": "compatível"
+      },
+      {
+        "id": 3,
+        "word": "compatible",
+        "pinyin": "",
+        "meaning": "compatível"
+      }
+    ],
+    "id": "local-1780234189850-7",
+    "language": "Espanhol"
+  }
+]

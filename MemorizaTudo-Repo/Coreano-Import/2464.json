@@ -1,0 +1,791 @@
+[
+  {
+    "chinese": "A: 샤오 왕님, 저희 회사에 오신 것을 환영합니다. 계약서를 이미 읽으셨으니 궁금한 점이 있으신가요?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, bem-vindo à nossa empresa. Você já leu o contrato, então tem alguma dúvida?",
+    "tokens": [
+      "A:",
+      "샤오",
+      "왕님",
+      ",",
+      "저희",
+      "회사에",
+      "오신",
+      "것을",
+      "환영합니다",
+      ".",
+      "계약서를",
+      "이미",
+      "읽으셨으니",
+      "궁금한",
+      "점이",
+      "있으신가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오 왕님",
+        "pinyin": "",
+        "meaning": "Xiao Wang (tratamento honorífico)"
+      },
+      {
+        "id": 2,
+        "word": "환영합니다",
+        "pinyin": "",
+        "meaning": "bem-vindo / damos as boas-vindas"
+      },
+      {
+        "id": 3,
+        "word": "계약서",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "읽으셨으니",
+        "pinyin": "",
+        "meaning": "já que leu"
+      },
+      {
+        "id": 5,
+        "word": "궁금한 점",
+        "pinyin": "",
+        "meaning": "dúvida / ponto curioso"
+      },
+      {
+        "id": 6,
+        "word": "있으신가요",
+        "pinyin": "",
+        "meaning": "existe / há (pergunta formal)"
+      }
+    ],
+    "id": "local-1780232600970-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 우리 회사에서 보험료는 어떻게 지급되나요?",
+    "pinyin": "",
+    "translation": "B: Como os seguros da nossa empresa são pagos?",
+    "tokens": [
+      "B:",
+      "우리",
+      "회사에서",
+      "보험료는",
+      "어떻게",
+      "지급되나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "보험료",
+        "pinyin": "",
+        "meaning": "prêmio de seguro"
+      },
+      {
+        "id": 3,
+        "word": "지급",
+        "pinyin": "",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 4,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 5,
+        "word": "우리",
+        "pinyin": "",
+        "meaning": "nossa"
+      }
+    ],
+    "id": "local-1780232600970-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 5대 사회보험과 주택공적기금에 대한 국가 규제",
+    "pinyin": "",
+    "translation": "A: Regulação estatal dos \"cinco seguros sociais e um fundo habitacional\"",
+    "tokens": [
+      "A:",
+      "5",
+      "대",
+      "사회보험과",
+      "주택공적기금에",
+      "대한",
+      "국가",
+      "규제"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사회보험",
+        "pinyin": "",
+        "meaning": "seguro social"
+      },
+      {
+        "id": 2,
+        "word": "주택공적기금",
+        "pinyin": "",
+        "meaning": "fundo habitacional público"
+      },
+      {
+        "id": 3,
+        "word": "국가 규제",
+        "pinyin": "",
+        "meaning": "regulação estatal"
+      },
+      {
+        "id": 4,
+        "word": "5대",
+        "pinyin": "",
+        "meaning": "cinco grandes"
+      }
+    ],
+    "id": "local-1780232600970-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 죄송합니다, 방금 중국에 돌아왔어요. 잘 이해가 안 가네요.",
+    "pinyin": "",
+    "translation": "B: Desculpe, acabei de voltar para a China. Não estou entendendo muito bem.",
+    "tokens": [
+      "B:",
+      "죄송합니다",
+      ",",
+      "방금",
+      "중국에",
+      "돌아왔어요",
+      ".",
+      "잘",
+      "이해가",
+      "안",
+      "가네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "죄송합니다",
+        "pinyin": "",
+        "meaning": "desculpe"
+      },
+      {
+        "id": 2,
+        "word": "방금",
+        "pinyin": "",
+        "meaning": "acabei de"
+      },
+      {
+        "id": 3,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "돌아왔어요",
+        "pinyin": "",
+        "meaning": "voltei"
+      },
+      {
+        "id": 5,
+        "word": "이해",
+        "pinyin": "",
+        "meaning": "entendimento"
+      },
+      {
+        "id": 6,
+        "word": "안 가네요",
+        "pinyin": "",
+        "meaning": "não vai"
+      }
+    ],
+    "id": "local-1780232600970-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: ‘5대 1금’은 연금보험, 의료보험, 실업보험, 산업재해보상보험, 출산보험 및 주택축적기금을 의미합니다.",
+    "pinyin": "",
+    "translation": "A: \"Os cinco seguros sociais e um fundo de habitação\" são: seguro de aposentadoria, seguro saúde, seguro desemprego, seguro de invalidez por acidente de trabalho, seguro maternidade e fundo de acumulação habitacional.",
+    "tokens": [
+      "A:",
+      "‘",
+      "5",
+      "대",
+      "1",
+      "금’은",
+      "연금보험",
+      ",",
+      "의료보험",
+      ",",
+      "실업보험",
+      ",",
+      "산업재해보상보험",
+      ",",
+      "출산보험",
+      "및",
+      "주택축적기금을",
+      "의미합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "연금보험",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "의료보험",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "실업보험",
+        "pinyin": "",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "산업재해보상보험",
+        "pinyin": "",
+        "meaning": "seguro de invalidez por acidente de trabalho"
+      },
+      {
+        "id": 5,
+        "word": "출산보험",
+        "pinyin": "",
+        "meaning": "seguro maternidade"
+      },
+      {
+        "id": 6,
+        "word": "주택축적기금",
+        "pinyin": "",
+        "meaning": "fundo de acumulação habitacional"
+      }
+    ],
+    "id": "local-1780232600970-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 회사가 이 모든 것을 지불합니까?",
+    "pinyin": "",
+    "translation": "B: A empresa paga por tudo isso?",
+    "tokens": [
+      "B:",
+      "회사가",
+      "이",
+      "모든",
+      "것을",
+      "지불합니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "지불",
+        "pinyin": "",
+        "meaning": "pagar"
+      },
+      {
+        "id": 3,
+        "word": "모든",
+        "pinyin": "",
+        "meaning": "todo"
+      },
+      {
+        "id": 4,
+        "word": "것",
+        "pinyin": "",
+        "meaning": "coisa"
+      }
+    ],
+    "id": "local-1780232600970-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 노령연금, 의료보험, 실업보험 및 주택적립금은 회사와 개인이 공동으로 납부합니다.",
+    "pinyin": "",
+    "translation": "A: A previdência para a velhice, o seguro saúde, o seguro-desemprego e o fundo de acumulação habitacional são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "A:",
+      "노령연금",
+      ",",
+      "의료보험",
+      ",",
+      "실업보험",
+      "및",
+      "주택적립금은",
+      "회사와",
+      "개인이",
+      "공동으로",
+      "납부합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "노령연금",
+        "pinyin": "",
+        "meaning": "previdência para a velhice"
+      },
+      {
+        "id": 2,
+        "word": "의료보험",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "실업보험",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 4,
+        "word": "주택적립금",
+        "pinyin": "",
+        "meaning": "fundo de acumulação habitacional"
+      },
+      {
+        "id": 5,
+        "word": "공동으로",
+        "pinyin": "",
+        "meaning": "conjuntamente"
+      },
+      {
+        "id": 6,
+        "word": "납부합니다",
+        "pinyin": "",
+        "meaning": "pagam"
+      }
+    ],
+    "id": "local-1780232600970-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 얼마를 내야 하나요?",
+    "pinyin": "",
+    "translation": "B: Então, quanto precisa ser pago?",
+    "tokens": [
+      "B:",
+      "그럼",
+      "얼마를",
+      "내야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "얼마",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 2,
+        "word": "내야",
+        "pinyin": "",
+        "meaning": "precisa pagar"
+      },
+      {
+        "id": 3,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 4,
+        "word": "나요",
+        "pinyin": "",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1780232600970-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 모든 도시는 다릅니다. 상하이에서는 연금 보험의 경우 개인이 8%를 내고 회사가 21%를 내며, 의료 보험은 개인이 2%, 회사가 11%를 내고, 실업 보험은 개인이 0.5%, 회사가 1.5%를 냅니다. 또한 주택 공적 기금(적립금)은 개인과 회사가 각각 7%씩 부담합니다.",
+    "pinyin": "",
+    "translation": "A: Cada cidade é diferente. Em Xangai, para o seguro de aposentadoria, o indivíduo paga 8% e a empresa paga 21%. Para o seguro saúde, o indivíduo paga 2% e a empresa paga 11%. Para o seguro-desemprego, o indivíduo paga 0,5% e a empresa paga 1,5%. O indivíduo e a empresa pagam cada um 7% para o fundo de acumulação (fundo de habitação).",
+    "tokens": [
+      "A:",
+      "모든",
+      "도시는",
+      "다릅니다",
+      ".",
+      "상하이에서는",
+      "연금",
+      "보험의",
+      "경우",
+      "개인이",
+      "8",
+      "%",
+      "를",
+      "내고",
+      "회사가",
+      "21",
+      "%",
+      "를",
+      "내며",
+      ",",
+      "의료",
+      "보험은",
+      "개인이",
+      "2",
+      "%",
+      ",",
+      "회사가",
+      "11",
+      "%",
+      "를",
+      "내고",
+      ",",
+      "실업",
+      "보험은",
+      "개인이",
+      "0",
+      ".",
+      "5",
+      "%",
+      ",",
+      "회사가",
+      "1",
+      ".",
+      "5",
+      "%",
+      "를",
+      "냅니다",
+      ".",
+      "또한",
+      "주택",
+      "공적",
+      "기금",
+      "(",
+      "적립금",
+      ")",
+      "은",
+      "개인과",
+      "회사가",
+      "각각",
+      "7",
+      "%",
+      "씩",
+      "부담합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "연금 보험",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "의료 보험",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "실업 보험",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 4,
+        "word": "주택 공적 기금",
+        "pinyin": "",
+        "meaning": "fundo de habitação"
+      },
+      {
+        "id": 5,
+        "word": "개인",
+        "pinyin": "",
+        "meaning": "indivíduo"
+      },
+      {
+        "id": 6,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 7,
+        "word": "부담",
+        "pinyin": "",
+        "meaning": "custear/arcar com"
+      }
+    ],
+    "id": "local-1780232600970-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그런데 제 거주 허가증이 상하이에 없는데, 상하이 기준에 따라 납부해야 하나요?",
+    "pinyin": "",
+    "translation": "B: Mas, como minha permissão de residência não está em Xangai, tenho que pagar de acordo com o critério de Xangai?",
+    "tokens": [
+      "B:",
+      "그런데",
+      "제",
+      "거주",
+      "허가증이",
+      "상하이에",
+      "없는데",
+      ",",
+      "상하이",
+      "기준에",
+      "따라",
+      "납부해야",
+      "하나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "거주 허가증",
+        "pinyin": "",
+        "meaning": "permissão de residência"
+      },
+      {
+        "id": 2,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "기준",
+        "pinyin": "",
+        "meaning": "critério"
+      },
+      {
+        "id": 4,
+        "word": "납부",
+        "pinyin": "",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 5,
+        "word": "없는데",
+        "pinyin": "",
+        "meaning": "não está / não tem"
+      }
+    ],
+    "id": "local-1780232600970-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 네, 상하이에서 일하시니까요.",
+    "pinyin": "",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "A:",
+      "네",
+      ",",
+      "상하이에서",
+      "일하시니까요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "네",
+        "pinyin": "",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "일하",
+        "pinyin": "",
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 4,
+        "word": "시니까요",
+        "pinyin": "",
+        "meaning": "porque"
+      }
+    ],
+    "id": "local-1780232600970-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 은퇴하면 상하이에서 노령 연금을 받을 수 있나요?",
+    "pinyin": "",
+    "translation": "B: Se eu me aposentar, posso receber a previdência de velhice em Xangai?",
+    "tokens": [
+      "B:",
+      "은퇴하면",
+      "상하이에서",
+      "노령",
+      "연금을",
+      "받을",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "은퇴",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "노령 연금",
+        "pinyin": "",
+        "meaning": "previdência de velhice"
+      },
+      {
+        "id": 4,
+        "word": "받을 수 있나요",
+        "pinyin": "",
+        "meaning": "posso receber"
+      }
+    ],
+    "id": "local-1780232600970-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이것은 꽤나 번거로운 일입니다. 퇴직하더라도 주민등록증이 상하이에 없다면, 연금 수령은 본거지인 거주지에서만 가능합니다.",
+    "pinyin": "",
+    "translation": "A: Isso é bastante incômodo. Se você se aposentar, mas sua permissão de residência não estiver em Xangai, você só poderá receber a aposentadoria no local de sua residência permanente.",
+    "tokens": [
+      "A:",
+      "이것은",
+      "꽤나",
+      "번거로운",
+      "일입니다",
+      ".",
+      "퇴직하더라도",
+      "주민등록증이",
+      "상하이에",
+      "없다면",
+      ",",
+      "연금",
+      "수령은",
+      "본거지인",
+      "거주지에서만",
+      "가능합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "번거로운",
+        "pinyin": "",
+        "meaning": "incômodo"
+      },
+      {
+        "id": 2,
+        "word": "퇴직",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 3,
+        "word": "주민등록증",
+        "pinyin": "",
+        "meaning": "permissão de residência"
+      },
+      {
+        "id": 4,
+        "word": "상하이",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 5,
+        "word": "연금",
+        "pinyin": "",
+        "meaning": "aposentadoria"
+      },
+      {
+        "id": 6,
+        "word": "수령",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 7,
+        "word": "본거지",
+        "pinyin": "",
+        "meaning": "residência permanente"
+      }
+    ],
+    "id": "local-1780232600970-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 복잡해요.",
+    "pinyin": "",
+    "translation": "B: É muito complicado.",
+    "tokens": [
+      "B:",
+      "정말",
+      "복잡해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "복잡해요",
+        "pinyin": "",
+        "meaning": "complicado"
+      },
+      {
+        "id": 3,
+        "word": "복잡",
+        "pinyin": "",
+        "meaning": "complexidade"
+      },
+      {
+        "id": 4,
+        "word": "해요",
+        "pinyin": "",
+        "meaning": "forma polida"
+      }
+    ],
+    "id": "local-1780232600970-13",
+    "language": "Coreano"
+  }
+]

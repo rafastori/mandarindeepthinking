@@ -1,0 +1,805 @@
+[
+  {
+    "chinese": "A: あなたは火の星座です。最も相性が良いのは、同じ火の星座であるしし座といて座です。あるいは、風のエレメントの星座とも相性が良いかもしれません。",
+    "pinyin": "",
+    "translation": "A: Você é um signo de fogo. Os mais compatíveis com você são outros signos de fogo: Leão e Sagitário. Ou então, você também pode se dar bem com um signo de ar.",
+    "tokens": [
+      "A:",
+      "あなた",
+      "は",
+      "火",
+      "の",
+      "星座",
+      "です",
+      "。",
+      "最も",
+      "相性",
+      "が",
+      "良い",
+      "の",
+      "は",
+      "、",
+      "同じ",
+      "火",
+      "の",
+      "星座",
+      "で",
+      "ある",
+      "しし",
+      "座",
+      "と",
+      "い",
+      "て",
+      "座",
+      "です",
+      "。",
+      "あるいは",
+      "、",
+      "風",
+      "の",
+      "エレメント",
+      "の",
+      "星座",
+      "とも",
+      "相性",
+      "が",
+      "良い",
+      "かも",
+      "しれ",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "火の星座",
+        "pinyin": "",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 2,
+        "word": "相性",
+        "pinyin": "",
+        "meaning": "compatibilidade"
+      },
+      {
+        "id": 3,
+        "word": "しし座",
+        "pinyin": "",
+        "meaning": "Leão"
+      },
+      {
+        "id": 4,
+        "word": "いて座",
+        "pinyin": "",
+        "meaning": "Sagitário"
+      },
+      {
+        "id": 5,
+        "word": "風のエレメント",
+        "pinyin": "",
+        "meaning": "signo de ar"
+      }
+    ],
+    "id": "local-1780259540119-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: シス・チェン。いつも火の星座や風の星座の話をするけど、結局どういう意味なの？",
+    "pinyin": "",
+    "translation": "B: Sis Chen. Você sempre fala sobre signos de fogo e signos de vento, coisas do tipo. O que isso significa afinal?",
+    "tokens": [
+      "B:",
+      "シス・チェン",
+      "。",
+      "いつも",
+      "火",
+      "の",
+      "星座",
+      "や",
+      "風",
+      "の",
+      "星座",
+      "の",
+      "話",
+      "を",
+      "する",
+      "けど",
+      "、",
+      "結局",
+      "どういう",
+      "意味",
+      "な",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "シス・チェン",
+        "pinyin": "",
+        "meaning": "Sis Chen"
+      },
+      {
+        "id": 2,
+        "word": "火の星座",
+        "pinyin": "",
+        "meaning": "signos de fogo"
+      },
+      {
+        "id": 3,
+        "word": "風の星座",
+        "pinyin": "",
+        "meaning": "signos de vento"
+      },
+      {
+        "id": 4,
+        "word": "意味",
+        "pinyin": "",
+        "meaning": "significado"
+      },
+      {
+        "id": 5,
+        "word": "結局",
+        "pinyin": "",
+        "meaning": "finalmente / ao fim"
+      }
+    ],
+    "id": "local-1780259540119-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 十二の星座は、風、火、水、土の四つの要素に分けられます。風と火の要素は陽のサインです。水と土の要素は陰のサインです。",
+    "pinyin": "",
+    "translation": "A: Os doze signos são divididos em quatro elementos, ou seja: ar, fogo, água e terra. Os elementos de ar e fogo são signos Yang. Os elementos de água e terra são signos Yin.",
+    "tokens": [
+      "A:",
+      "十",
+      "二",
+      "の",
+      "星座",
+      "は",
+      "、",
+      "風",
+      "、",
+      "火",
+      "、",
+      "水",
+      "、",
+      "土",
+      "の",
+      "四つ",
+      "の",
+      "要素",
+      "に",
+      "分け",
+      "られ",
+      "ます",
+      "。",
+      "風",
+      "と",
+      "火",
+      "の",
+      "要素",
+      "は",
+      "陽",
+      "の",
+      "サイン",
+      "です",
+      "。",
+      "水",
+      "と",
+      "土",
+      "の",
+      "要素",
+      "は",
+      "陰",
+      "の",
+      "サイン",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "十二の星座",
+        "pinyin": "",
+        "meaning": "doze signos"
+      },
+      {
+        "id": 2,
+        "word": "四つの要素",
+        "pinyin": "",
+        "meaning": "quatro elementos"
+      },
+      {
+        "id": 3,
+        "word": "風",
+        "pinyin": "",
+        "meaning": "ar"
+      },
+      {
+        "id": 4,
+        "word": "火",
+        "pinyin": "",
+        "meaning": "fogo"
+      },
+      {
+        "id": 5,
+        "word": "水",
+        "pinyin": "",
+        "meaning": "água"
+      },
+      {
+        "id": 6,
+        "word": "土",
+        "pinyin": "",
+        "meaning": "terra"
+      },
+      {
+        "id": 7,
+        "word": "陽",
+        "pinyin": "",
+        "meaning": "Yang"
+      },
+      {
+        "id": 8,
+        "word": "陰",
+        "pinyin": "",
+        "meaning": "Yin"
+      }
+    ],
+    "id": "local-1780259540119-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: 陳さん、迷信にならないで。占いは食後の雑談としてはいいけど、小文さんが本当に彼氏を見つけるために頼るようなものじゃないわ。",
+    "pinyin": "",
+    "translation": "C: Chen, não seja supersticiosa. Isso de signos do zodíaco serve para conversa pós-jantar, mas não é algo confiável para a Xiaowen usar de verdade para encontrar um namorado.",
+    "tokens": [
+      "C:",
+      "陳",
+      "さん",
+      "、",
+      "迷信",
+      "に",
+      "なら",
+      "ない",
+      "で",
+      "。",
+      "占い",
+      "は",
+      "食後",
+      "の",
+      "雑談",
+      "として",
+      "は",
+      "いい",
+      "けど",
+      "、",
+      "小文",
+      "さん",
+      "が",
+      "本当に",
+      "彼氏",
+      "を",
+      "見つける",
+      "ため",
+      "に",
+      "頼る",
+      "よう",
+      "な",
+      "もの",
+      "じゃ",
+      "ない",
+      "わ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "迷信",
+        "pinyin": "",
+        "meaning": "superstição"
+      },
+      {
+        "id": 2,
+        "word": "占い",
+        "pinyin": "",
+        "meaning": "horóscopo / adivinhação"
+      },
+      {
+        "id": 3,
+        "word": "雑談",
+        "pinyin": "",
+        "meaning": "conversa fiada / bate-papo"
+      },
+      {
+        "id": 4,
+        "word": "彼氏",
+        "pinyin": "",
+        "meaning": "namorado"
+      },
+      {
+        "id": 5,
+        "word": "頼る",
+        "pinyin": "",
+        "meaning": "confiar / depender"
+      }
+    ],
+    "id": "local-1780259540119-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 占星術？ 言っておくけど、星座は科学的だよ。そうでなければ、これほど長年人気を保てたはずがない。みんなそれが正確だと思っているし。",
+    "pinyin": "",
+    "translation": "A: Superstição? Estou te dizendo, o zodíaco é científico, caso contrário, como teria sido popular por tantos anos? E todos acham que é preciso.",
+    "tokens": [
+      "A:",
+      "占星術",
+      "？",
+      " ",
+      "言っ",
+      "て",
+      "おく",
+      "けど",
+      "、",
+      "星座",
+      "は",
+      "科学",
+      "的",
+      "だ",
+      "よ",
+      "。",
+      "そう",
+      "で",
+      "なけれ",
+      "ば",
+      "、",
+      "これ",
+      "ほど",
+      "長年",
+      "人気",
+      "を",
+      "保て",
+      "た",
+      "はず",
+      "が",
+      "ない",
+      "。",
+      "みんな",
+      "それ",
+      "が",
+      "正確",
+      "だ",
+      "と",
+      "思っ",
+      "て",
+      "いる",
+      "し",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "占星術",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 2,
+        "word": "星座",
+        "pinyin": "",
+        "meaning": "constelação / zodíaco"
+      },
+      {
+        "id": 3,
+        "word": "科学的",
+        "pinyin": "",
+        "meaning": "científico"
+      },
+      {
+        "id": 4,
+        "word": "人気",
+        "pinyin": "",
+        "meaning": "popularidade"
+      },
+      {
+        "id": 5,
+        "word": "正確",
+        "pinyin": "",
+        "meaning": "preciso / exato"
+      }
+    ],
+    "id": "local-1780259540119-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: これは単なる心理的暗示です。多くの人は占星術が予測する性格特性を持っていません。彼らは占星術の説明を見ると、自分自身にそれが自分たちの行動だと暗示し、最終的にはその星座の説明をコピーしてしまいます。",
+    "pinyin": "",
+    "translation": "C: Isso é apenas uma sugestão psicológica. Muitas pessoas não possuem os traços de personalidade que o zodíaco prevê. Ao verem a explicação do zodíaco, elas se sugerem a si mesmas que é isso que fazem, acabando por copiar a descrição do signo.",
+    "tokens": [
+      "C:",
+      "これ",
+      "は",
+      "単なる",
+      "心理",
+      "的",
+      "暗示",
+      "です",
+      "。",
+      "多く",
+      "の",
+      "人",
+      "は",
+      "占星術",
+      "が",
+      "予測",
+      "する",
+      "性格",
+      "特性",
+      "を",
+      "持っ",
+      "て",
+      "い",
+      "ませ",
+      "ん",
+      "。",
+      "彼ら",
+      "は",
+      "占星術",
+      "の",
+      "説明",
+      "を",
+      "見る",
+      "と",
+      "、",
+      "自分",
+      "自身",
+      "に",
+      "それ",
+      "が",
+      "自分",
+      "たち",
+      "の",
+      "行動",
+      "だ",
+      "と",
+      "暗示",
+      "し",
+      "、",
+      "最終",
+      "的",
+      "に",
+      "は",
+      "その",
+      "星座",
+      "の",
+      "説明",
+      "を",
+      "コピー",
+      "し",
+      "て",
+      "しまい",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "心理的暗示",
+        "pinyin": "",
+        "meaning": "sugestão psicológica"
+      },
+      {
+        "id": 2,
+        "word": "占星術",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 3,
+        "word": "性格特性",
+        "pinyin": "",
+        "meaning": "traços de personalidade"
+      },
+      {
+        "id": 4,
+        "word": "暗示",
+        "pinyin": "",
+        "meaning": "sugestão"
+      },
+      {
+        "id": 5,
+        "word": "星座",
+        "pinyin": "",
+        "meaning": "signo (do zodíaco)"
+      },
+      {
+        "id": 6,
+        "word": "コピー",
+        "pinyin": "",
+        "meaning": "copiar"
+      }
+    ],
+    "id": "local-1780259540119-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 小麗さん、お尋ねしたいのですが、あなたの誕生日は5月でしたっけ？",
+    "pinyin": "",
+    "translation": "A: Xiao Li, eu queria te perguntar, seu aniversário é em maio, certo?",
+    "tokens": [
+      "A:",
+      "小",
+      "麗",
+      "さん",
+      "、",
+      "お尋ね",
+      "し",
+      "たい",
+      "の",
+      "です",
+      "が",
+      "、",
+      "あなた",
+      "の",
+      "誕生",
+      "日",
+      "は",
+      "5",
+      "月",
+      "でし",
+      "た",
+      "っけ",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小麗さん",
+        "pinyin": "",
+        "meaning": "Xiao Li (nome próprio com tratamento honorífico)"
+      },
+      {
+        "id": 2,
+        "word": "お尋ねしたい",
+        "pinyin": "",
+        "meaning": "gostaria de perguntar"
+      },
+      {
+        "id": 3,
+        "word": "誕生日",
+        "pinyin": "",
+        "meaning": "aniversário"
+      },
+      {
+        "id": 4,
+        "word": "5月",
+        "pinyin": "",
+        "meaning": "maio"
+      },
+      {
+        "id": 5,
+        "word": "でしたっけ",
+        "pinyin": "",
+        "meaning": "era... não é? (confirmação)"
+      }
+    ],
+    "id": "local-1780259540119-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: ええと、どうしたの？",
+    "pinyin": "",
+    "translation": "C: É, o que houve?",
+    "tokens": [
+      "C:",
+      "え",
+      "えと",
+      "、",
+      "どう",
+      "し",
+      "た",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ええと",
+        "pinyin": "",
+        "meaning": "hmm / bem"
+      },
+      {
+        "id": 2,
+        "word": "どうした",
+        "pinyin": "",
+        "meaning": "o que aconteceu"
+      },
+      {
+        "id": 3,
+        "word": "の",
+        "pinyin": "",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1780259540119-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 君を見ると、典型的な牡牛座だな。牡牛座の君たちは皆そうさ。一方では頑固で、他方では理性的だ。牡牛座は占星術を信じていない。小文、彼は頑固な牛のようじゃないか？",
+    "pinyin": "",
+    "translation": "A: Quando vejo você, vejo um Touro típico. Vocês, Taurianos, são assim; de um lado são teimosos e, de outro, racionais. Os Taurianos não acreditam no zodíaco. Xiao Wen, você não acha que ele é como um touro obstinado?",
+    "tokens": [
+      "A:",
+      "君",
+      "を",
+      "見る",
+      "と",
+      "、",
+      "典型",
+      "的",
+      "な",
+      "牡",
+      "牛",
+      "座",
+      "だ",
+      "な",
+      "。",
+      "牡",
+      "牛",
+      "座",
+      "の",
+      "君たち",
+      "は",
+      "皆",
+      "そう",
+      "さ",
+      "。",
+      "一方",
+      "で",
+      "は",
+      "頑固",
+      "で",
+      "、",
+      "他方",
+      "で",
+      "は",
+      "理性",
+      "的",
+      "だ",
+      "。",
+      "牡",
+      "牛",
+      "座",
+      "は",
+      "占星術",
+      "を",
+      "信じ",
+      "て",
+      "い",
+      "ない",
+      "。",
+      "小文",
+      "、",
+      "彼",
+      "は",
+      "頑固",
+      "な",
+      "牛",
+      "の",
+      "よう",
+      "じゃ",
+      "ない",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "牡牛座",
+        "pinyin": "",
+        "meaning": "signo de Touro"
+      },
+      {
+        "id": 2,
+        "word": "頑固",
+        "pinyin": "",
+        "meaning": "teimoso"
+      },
+      {
+        "id": 3,
+        "word": "理性的",
+        "pinyin": "",
+        "meaning": "racional"
+      },
+      {
+        "id": 4,
+        "word": "占星術",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 5,
+        "word": "小文",
+        "pinyin": "",
+        "meaning": "Xiao Wen (nome próprio)"
+      },
+      {
+        "id": 6,
+        "word": "牛",
+        "pinyin": "",
+        "meaning": "boi/touro"
+      }
+    ],
+    "id": "local-1780259540119-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: 陳さん、間違えてますよ。私は5月の終わりに生まれました。双子座です。",
+    "pinyin": "",
+    "translation": "C: Chen, você está enganada. Eu nasci no final de maio. Sou Gêmeos.",
+    "tokens": [
+      "C:",
+      "陳",
+      "さん",
+      "、",
+      "間違え",
+      "て",
+      "ます",
+      "よ",
+      "。",
+      "私",
+      "は",
+      "5",
+      "月",
+      "の",
+      "終わり",
+      "に",
+      "生まれ",
+      "まし",
+      "た",
+      "。",
+      "双子",
+      "座",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陳さん",
+        "pinyin": "",
+        "meaning": "Senhorita Chen"
+      },
+      {
+        "id": 2,
+        "word": "間違えてます",
+        "pinyin": "",
+        "meaning": "está enganado(a)"
+      },
+      {
+        "id": 3,
+        "word": "5月",
+        "pinyin": "",
+        "meaning": "maio"
+      },
+      {
+        "id": 4,
+        "word": "終わり",
+        "pinyin": "",
+        "meaning": "final"
+      },
+      {
+        "id": 5,
+        "word": "双子座",
+        "pinyin": "",
+        "meaning": "Gêmeos (signo)"
+      }
+    ],
+    "id": "local-1780259540119-9",
+    "language": "Japonês"
+  }
+]

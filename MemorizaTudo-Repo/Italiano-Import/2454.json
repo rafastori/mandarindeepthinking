@@ -1,0 +1,722 @@
+[
+  {
+    "chinese": "A: Questo trimestre il volume delle vendite dell'azienda è sceso del 20 percento rispetto al trimestre precedente.",
+    "pinyin": "",
+    "translation": "A: Este trimestre, o volume de vendas da empresa caiu 20 por cento em relação ao trimestre anterior.",
+    "tokens": [
+      "A:",
+      "Questo",
+      "trimestre",
+      "il",
+      "volume",
+      "delle",
+      "vendite",
+      "dell'azienda",
+      "è",
+      "sceso",
+      "del",
+      "20",
+      "percento",
+      "rispetto",
+      "al",
+      "trimestre",
+      "precedente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "trimestre",
+        "pinyin": "",
+        "meaning": "período de três meses"
+      },
+      {
+        "id": 2,
+        "word": "volume delle vendite",
+        "pinyin": "",
+        "meaning": "quantidade total vendida"
+      },
+      {
+        "id": 3,
+        "word": "sceso",
+        "pinyin": "",
+        "meaning": "diminuído ou caído"
+      },
+      {
+        "id": 4,
+        "word": "percento",
+        "pinyin": "",
+        "meaning": "cem avos"
+      },
+      {
+        "id": 5,
+        "word": "precedente",
+        "pinyin": "",
+        "meaning": "que veio antes"
+      }
+    ],
+    "id": "local-1780240275045-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questo ha a che fare con i cambiamenti stagionali. Ogni anno in questo periodo la nostra attività non va mai molto bene.",
+    "pinyin": "",
+    "translation": "B: Isso tem a ver com as mudanças sazonais. Todo ano nesta época nossos negócios nunca vão muito bem.",
+    "tokens": [
+      "B:",
+      "Questo",
+      "ha",
+      "a",
+      "che",
+      "fare",
+      "con",
+      "i",
+      "cambiamenti",
+      "stagionali",
+      ".",
+      "Ogni",
+      "anno",
+      "in",
+      "questo",
+      "periodo",
+      "la",
+      "nostra",
+      "attività",
+      "non",
+      "va",
+      "mai",
+      "molto",
+      "bene",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stagionali",
+        "pinyin": "",
+        "meaning": "sazonais"
+      },
+      {
+        "id": 2,
+        "word": "periodo",
+        "pinyin": "",
+        "meaning": "época"
+      },
+      {
+        "id": 3,
+        "word": "attività",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 4,
+        "word": "cambiamenti",
+        "pinyin": "",
+        "meaning": "mudanças"
+      },
+      {
+        "id": 5,
+        "word": "questo",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780240275045-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Non credo sia solo una questione stagionale. In precedenza, il calo del volume era solo del cinque percento. Recentemente, anche i nostri investimenti in promozione sono stati inferiori, quindi, naturalmente, il nostro volume di vendite è diminuito. È meglio aumentare il budget per il marketing.",
+    "pinyin": "",
+    "translation": "C: Acho que não é apenas sazonal. Antes, a queda no volume era de apenas cinco por cento. Recentemente, nossos investimentos em promoção também foram menores, então, é claro, nosso volume de vendas caiu. Seria melhor aumentar o orçamento de marketing.",
+    "tokens": [
+      "C:",
+      "Non",
+      "credo",
+      "sia",
+      "solo",
+      "una",
+      "questione",
+      "stagionale",
+      ".",
+      "In",
+      "precedenza",
+      ",",
+      "il",
+      "calo",
+      "del",
+      "volume",
+      "era",
+      "solo",
+      "del",
+      "cinque",
+      "percento",
+      ".",
+      "Recentemente",
+      ",",
+      "anche",
+      "i",
+      "nostri",
+      "investimenti",
+      "in",
+      "promozione",
+      "sono",
+      "stati",
+      "inferiori",
+      ",",
+      "quindi",
+      ",",
+      "naturalmente",
+      ",",
+      "il",
+      "nostro",
+      "volume",
+      "di",
+      "vendite",
+      "è",
+      "diminuito",
+      ".",
+      "È",
+      "meglio",
+      "aumentare",
+      "il",
+      "budget",
+      "per",
+      "il",
+      "marketing",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "stagionale",
+        "pinyin": "",
+        "meaning": "sazonal"
+      },
+      {
+        "id": 2,
+        "word": "calo",
+        "pinyin": "",
+        "meaning": "queda"
+      },
+      {
+        "id": 3,
+        "word": "volume",
+        "pinyin": "",
+        "meaning": "volume"
+      },
+      {
+        "id": 4,
+        "word": "promozione",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 5,
+        "word": "vendite",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 6,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 7,
+        "word": "marketing",
+        "pinyin": "",
+        "meaning": "marketing"
+      }
+    ],
+    "id": "local-1780240275045-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È davvero possibile? Questa riduzione del budget di marketing non è limitata alla nostra azienda e i volumi di vendita di tutti non sono necessariamente diminuiti.",
+    "pinyin": "",
+    "translation": "B: Isso é realmente possível? Essa redução no orçamento de marketing não se limita à nossa empresa, e os volumes de vendas de todos não caíram necessariamente.",
+    "tokens": [
+      "B:",
+      "È",
+      "davvero",
+      "possibile",
+      "?",
+      "Questa",
+      "riduzione",
+      "del",
+      "budget",
+      "di",
+      "marketing",
+      "non",
+      "è",
+      "limitata",
+      "alla",
+      "nostra",
+      "azienda",
+      "e",
+      "i",
+      "volumi",
+      "di",
+      "vendita",
+      "di",
+      "tutti",
+      "non",
+      "sono",
+      "necessariamente",
+      "diminuiti",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "riduzione",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 2,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "marketing",
+        "pinyin": "",
+        "meaning": "marketing"
+      },
+      {
+        "id": 4,
+        "word": "limitata",
+        "pinyin": "",
+        "meaning": "limitada"
+      },
+      {
+        "id": 5,
+        "word": "volumi",
+        "pinyin": "",
+        "meaning": "volumes"
+      },
+      {
+        "id": 6,
+        "word": "vendita",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 7,
+        "word": "diminuiti",
+        "pinyin": "",
+        "meaning": "diminuídos"
+      }
+    ],
+    "id": "local-1780240275045-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Ma abbiamo ridotto il nostro budget e il volume delle vendite è diminuito. È ovvio.",
+    "pinyin": "",
+    "translation": "C: Mas reduzimos nosso orçamento e o volume de vendas caiu. É óbvio.",
+    "tokens": [
+      "C:",
+      "Ma",
+      "abbiamo",
+      "ridotto",
+      "il",
+      "nostro",
+      "budget",
+      "e",
+      "il",
+      "volume",
+      "delle",
+      "vendite",
+      "è",
+      "diminuito",
+      ".",
+      "È",
+      "ovvio",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ridotto",
+        "pinyin": "",
+        "meaning": "reduzido"
+      },
+      {
+        "id": 2,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 3,
+        "word": "volume",
+        "pinyin": "",
+        "meaning": "volume"
+      },
+      {
+        "id": 4,
+        "word": "vendite",
+        "pinyin": "",
+        "meaning": "vendas"
+      },
+      {
+        "id": 5,
+        "word": "diminuito",
+        "pinyin": "",
+        "meaning": "diminuído"
+      },
+      {
+        "id": 6,
+        "word": "ovvio",
+        "pinyin": "",
+        "meaning": "óbvio"
+      }
+    ],
+    "id": "local-1780240275045-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non si tratta di una questione di disponibilità a spendere denaro. Il budget è stato già stabilito un anno fa. Aumentarlo ora non è pratico.",
+    "pinyin": "",
+    "translation": "A: Não se trata de uma questão de disposição para gastar dinheiro. O orçamento já foi definido há um ano. Aumentá-lo agora não é prático.",
+    "tokens": [
+      "A:",
+      "Non",
+      "si",
+      "tratta",
+      "di",
+      "una",
+      "questione",
+      "di",
+      "disponibilità",
+      "a",
+      "spendere",
+      "denaro",
+      ".",
+      "Il",
+      "budget",
+      "è",
+      "stato",
+      "già",
+      "stabilito",
+      "un",
+      "anno",
+      "fa",
+      ".",
+      "Aumentarlo",
+      "ora",
+      "non",
+      "è",
+      "pratico",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "disponibilità",
+        "pinyin": "",
+        "meaning": "disposição"
+      },
+      {
+        "id": 2,
+        "word": "spendere",
+        "pinyin": "",
+        "meaning": "gastar"
+      },
+      {
+        "id": 3,
+        "word": "budget",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 4,
+        "word": "stabilito",
+        "pinyin": "",
+        "meaning": "definido"
+      },
+      {
+        "id": 5,
+        "word": "pratico",
+        "pinyin": "",
+        "meaning": "prático"
+      }
+    ],
+    "id": "local-1780240275045-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Quindi in quel momento non ero d'accordo!",
+    "pinyin": "",
+    "translation": "C: Então naquela época eu não concordava!",
+    "tokens": [
+      "C:",
+      "Quindi",
+      "in",
+      "quel",
+      "momento",
+      "non",
+      "ero",
+      "d'accordo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quindi",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "quel momento",
+        "pinyin": "",
+        "meaning": "aquele momento"
+      },
+      {
+        "id": 3,
+        "word": "non",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "ero",
+        "pinyin": "",
+        "meaning": "eu estava"
+      },
+      {
+        "id": 5,
+        "word": "d'accordo",
+        "pinyin": "",
+        "meaning": "de acordo"
+      }
+    ],
+    "id": "local-1780240275045-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ora, non è il momento di lamentarsi. Dobbiamo pensare a un piano.",
+    "pinyin": "",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em um plano.",
+    "tokens": [
+      "A:",
+      "Ora",
+      ",",
+      "non",
+      "è",
+      "il",
+      "momento",
+      "di",
+      "lamentarsi",
+      ".",
+      "Dobbiamo",
+      "pensare",
+      "a",
+      "un",
+      "piano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "lamentarsi",
+        "pinyin": "",
+        "meaning": "reclamar"
+      },
+      {
+        "id": 2,
+        "word": "piano",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 3,
+        "word": "momento",
+        "pinyin": "",
+        "meaning": "hora"
+      },
+      {
+        "id": 4,
+        "word": "pensare",
+        "pinyin": "",
+        "meaning": "pensar"
+      }
+    ],
+    "id": "local-1780240275045-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Che ne dici se organizziamo qualche grande evento?",
+    "pinyin": "",
+    "translation": "B: Que tal se organizarmos alguns grandes eventos?",
+    "tokens": [
+      "B:",
+      "Che",
+      "ne",
+      "dici",
+      "se",
+      "organizziamo",
+      "qualche",
+      "grande",
+      "evento",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Che ne dici",
+        "pinyin": "",
+        "meaning": "o que acha"
+      },
+      {
+        "id": 2,
+        "word": "organizziamo",
+        "pinyin": "",
+        "meaning": "organizamos"
+      },
+      {
+        "id": 3,
+        "word": "qualche",
+        "pinyin": "",
+        "meaning": "alguns"
+      },
+      {
+        "id": 4,
+        "word": "grande",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 5,
+        "word": "evento",
+        "pinyin": "",
+        "meaning": "evento"
+      }
+    ],
+    "id": "local-1780240275045-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Non è che non voglia farlo, è solo che ci sono sfide concrete.",
+    "pinyin": "",
+    "translation": "C: Não é que eu não queira fazer isso, é só que existem desafios reais.",
+    "tokens": [
+      "C:",
+      "Non",
+      "è",
+      "che",
+      "non",
+      "voglia",
+      "farlo",
+      ",",
+      "è",
+      "solo",
+      "che",
+      "ci",
+      "sono",
+      "sfide",
+      "concrete",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sfide",
+        "pinyin": "",
+        "meaning": "desafios"
+      },
+      {
+        "id": 2,
+        "word": "concrete",
+        "pinyin": "",
+        "meaning": "reais"
+      },
+      {
+        "id": 3,
+        "word": "non",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 4,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "só"
+      }
+    ],
+    "id": "local-1780240275045-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non discutiamo di questo problema oggi. È meglio che contattiamo direttamente il Dipartimento di Marketing per risolverlo.",
+    "pinyin": "",
+    "translation": "A: Não vamos discutir este problema hoje. É melhor que contactemos diretamente o Departamento de Marketing para resolvê-lo.",
+    "tokens": [
+      "A:",
+      "Non",
+      "discutiamo",
+      "di",
+      "questo",
+      "problema",
+      "oggi",
+      ".",
+      "È",
+      "meglio",
+      "che",
+      "contattiamo",
+      "direttamente",
+      "il",
+      "Dipartimento",
+      "di",
+      "Marketing",
+      "per",
+      "risolverlo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Non discutiamo",
+        "pinyin": "",
+        "meaning": "não discutimos"
+      },
+      {
+        "id": 2,
+        "word": "Dipartimento",
+        "pinyin": "",
+        "meaning": "departamento"
+      },
+      {
+        "id": 3,
+        "word": "Marketing",
+        "pinyin": "",
+        "meaning": "marketing"
+      },
+      {
+        "id": 4,
+        "word": "meglio",
+        "pinyin": "",
+        "meaning": "melhor"
+      },
+      {
+        "id": 5,
+        "word": "contattiamo",
+        "pinyin": "",
+        "meaning": "contactamos"
+      },
+      {
+        "id": 6,
+        "word": "risolverlo",
+        "pinyin": "",
+        "meaning": "resolvê-lo"
+      }
+    ],
+    "id": "local-1780240275045-10",
+    "language": "Italiano"
+  }
+]

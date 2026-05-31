@@ -1,0 +1,727 @@
+[
+  {
+    "chinese": "A: 샤오왕, 무슨 일이야? 무슨 생각이야?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, o que há de errado? O que está na sua mente?",
+    "tokens": [
+      "A:",
+      "샤오왕",
+      ",",
+      "무슨",
+      "일이야",
+      "?",
+      "무슨",
+      "생각이야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤오왕",
+        "pinyin": "",
+        "meaning": "Xiao Wang (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "무슨 일이야",
+        "pinyin": "",
+        "meaning": "o que aconteceu / o que há de errado"
+      },
+      {
+        "id": 3,
+        "word": "무슨 생각이야",
+        "pinyin": "",
+        "meaning": "o que está pensando"
+      },
+      {
+        "id": 4,
+        "word": "무슨",
+        "pinyin": "",
+        "meaning": "o que / qual"
+      },
+      {
+        "id": 5,
+        "word": "이야",
+        "pinyin": "",
+        "meaning": "é / é o que"
+      }
+    ],
+    "id": "local-1780232770004-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 최근에 MBA 과정에 진학할지 고민 중입니다. 어떤 조언을 해주실 수 있나요?",
+    "pinyin": "",
+    "translation": "B: Recentemente tenho considerado se devo ou não ingressar em um programa de MBA. Quais sugestões você tem?",
+    "tokens": [
+      "B:",
+      "최근에",
+      "MBA",
+      "과정에",
+      "진학할지",
+      "고민",
+      "중입니다",
+      ".",
+      "어떤",
+      "조언을",
+      "해주실",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "최근에",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 2,
+        "word": "MBA 과정",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 3,
+        "word": "진학할지",
+        "pinyin": "",
+        "meaning": "se ingressar/estudar"
+      },
+      {
+        "id": 4,
+        "word": "고민 중입니다",
+        "pinyin": "",
+        "meaning": "estou considerando/gostando"
+      },
+      {
+        "id": 5,
+        "word": "조언",
+        "pinyin": "",
+        "meaning": "conselhos/sugestões"
+      },
+      {
+        "id": 6,
+        "word": "주실 수 있나요",
+        "pinyin": "",
+        "meaning": "você pode dar"
+      }
+    ],
+    "id": "local-1780232770004-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 경영학 석사 학위라니요? 친구가 방금 과정을 마치고 논문을 쓰고 있대요.",
+    "pinyin": "",
+    "translation": "A: Mestrado em administração de empresas, hein? Tenho um amigo que acabou de terminar os cursos e está escrevendo a tese.",
+    "tokens": [
+      "A:",
+      "경영학",
+      "석사",
+      "학위라니요",
+      "?",
+      "친구가",
+      "방금",
+      "과정을",
+      "마치고",
+      "논문을",
+      "쓰고",
+      "있대요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "경영학",
+        "pinyin": "",
+        "meaning": "administração de empresas"
+      },
+      {
+        "id": 2,
+        "word": "석사 학위",
+        "pinyin": "",
+        "meaning": "mestrado"
+      },
+      {
+        "id": 3,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 4,
+        "word": "과정",
+        "pinyin": "",
+        "meaning": "curso"
+      },
+      {
+        "id": 5,
+        "word": "논문",
+        "pinyin": "",
+        "meaning": "tese"
+      }
+    ],
+    "id": "local-1780232770004-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아, 그는 일을 하면서 공부하는 건가, 아니면 전일제 학생인가?",
+    "pinyin": "",
+    "translation": "B: Ah, ele estuda enquanto trabalha ou é estudante de período integral?",
+    "tokens": [
+      "B:",
+      "아",
+      ",",
+      "그는",
+      "일을",
+      "하면서",
+      "공부하는",
+      "건가",
+      ",",
+      "아니면",
+      "전일제",
+      "학생인가",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "일을",
+        "pinyin": "",
+        "meaning": "trabalho (acusativo)"
+      },
+      {
+        "id": 2,
+        "word": "하면서",
+        "pinyin": "",
+        "meaning": "enquanto"
+      },
+      {
+        "id": 3,
+        "word": "공부",
+        "pinyin": "",
+        "meaning": "estudo"
+      },
+      {
+        "id": 4,
+        "word": "전일제",
+        "pinyin": "",
+        "meaning": "período integral"
+      },
+      {
+        "id": 5,
+        "word": "학생",
+        "pinyin": "",
+        "meaning": "estudante"
+      }
+    ],
+    "id": "local-1780232770004-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그는 일하면서 공부하고 있지만, 정규 과정의 실제 가치가 더 높고 비용이 더 저렴하다는 말을 들었습니다.",
+    "pinyin": "",
+    "translation": "A: Ele está estudando enquanto trabalha. Mas ouvi dizer que o valor real dos cursos de tempo integral é maior e o custo é mais barato.",
+    "tokens": [
+      "A:",
+      "그는",
+      "일하면서",
+      "공부하고",
+      "있지만",
+      ",",
+      "정규",
+      "과정의",
+      "실제",
+      "가치가",
+      "더",
+      "높고",
+      "비용이",
+      "더",
+      "저렴하다는",
+      "말을",
+      "들었습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정규 과정",
+        "pinyin": "",
+        "meaning": "curso de tempo integral"
+      },
+      {
+        "id": 2,
+        "word": "실제 가치",
+        "pinyin": "",
+        "meaning": "valor real"
+      },
+      {
+        "id": 3,
+        "word": "비용",
+        "pinyin": "",
+        "meaning": "custo"
+      },
+      {
+        "id": 4,
+        "word": "일하면서",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 5,
+        "word": "공부",
+        "pinyin": "",
+        "meaning": "estudo"
+      }
+    ],
+    "id": "local-1780232770004-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말요? 그럴 리가요. 정규 과정은 시간이 더 많이 들지만 비용은 더 저렴해요?",
+    "pinyin": "",
+    "translation": "B: Sério? Impossível! O curso integral exige mais tempo, mas o custo é mais barato?",
+    "tokens": [
+      "B:",
+      "정말요",
+      "?",
+      "그럴",
+      "리가요",
+      ".",
+      "정규",
+      "과정은",
+      "시간이",
+      "더",
+      "많이",
+      "들지만",
+      "비용은",
+      "더",
+      "저렴해요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "정규 과정",
+        "pinyin": "",
+        "meaning": "curso integral"
+      },
+      {
+        "id": 3,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 4,
+        "word": "비용",
+        "pinyin": "",
+        "meaning": "custo"
+      },
+      {
+        "id": 5,
+        "word": "저렴해요",
+        "pinyin": "",
+        "meaning": "é barato"
+      }
+    ],
+    "id": "local-1780232770004-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 전임 과정에 참여하는 일반 관리자 수가 줄어들면서 네트워킹 기회도 다소 감소했습니다. 많은 사람들이 비즈니스의 일반 관리자나 고위 임원들과 주로 MBA 과정을 통해 인연을 맺는다는 점을 고려해 보세요. 한편으로는 인맥을 확장할 수 있고, 다른 한편으로는 일반 관리자의 경험을 배울 수 있습니다. 따라서 대부분의 일반 관리자는 업무에 지장을 주지 않기 위해 재직 중 공부를 하고 있습니다.",
+    "pinyin": "",
+    "translation": "A: Como menos gerentes gerais fazem os cursos em tempo integral, há um pouco menos de networking. Pense bem, muitas pessoas se familiarizam com alguns gerentes gerais, gerentes seniores e afins de uma empresa, principalmente através de um programa de MBA. Por um lado, eles podem expandir seus contatos e, por outro, podem aprender com a experiência do gerente geral. Então, a maioria dos gerentes gerais está definitivamente estudando enquanto trabalha, porque isso não afetará seu trabalho.",
+    "tokens": [
+      "A:",
+      "전임",
+      "과정에",
+      "참여하는",
+      "일반",
+      "관리자",
+      "수가",
+      "줄어들면서",
+      "네트워킹",
+      "기회도",
+      "다소",
+      "감소했습니다",
+      ".",
+      "많은",
+      "사람들이",
+      "비즈니스의",
+      "일반",
+      "관리자나",
+      "고위",
+      "임원들과",
+      "주로",
+      "MBA",
+      "과정을",
+      "통해",
+      "인연을",
+      "맺는다는",
+      "점을",
+      "고려해",
+      "보세요",
+      ".",
+      "한편으로는",
+      "인맥을",
+      "확장할",
+      "수",
+      "있고",
+      ",",
+      "다른",
+      "한편으로는",
+      "일반",
+      "관리자의",
+      "경험을",
+      "배울",
+      "수",
+      "있습니다",
+      ".",
+      "따라서",
+      "대부분의",
+      "일반",
+      "관리자는",
+      "업무에",
+      "지장을",
+      "주지",
+      "않기",
+      "위해",
+      "재직",
+      "중",
+      "공부를",
+      "하고",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "일반 관리자",
+        "pinyin": "",
+        "meaning": "gerente geral"
+      },
+      {
+        "id": 2,
+        "word": "전임 과정",
+        "pinyin": "",
+        "meaning": "curso em tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "네트워킹",
+        "pinyin": "",
+        "meaning": "networking"
+      },
+      {
+        "id": 4,
+        "word": "MBA 과정",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 5,
+        "word": "인맥",
+        "pinyin": "",
+        "meaning": "contatos/relacionamentos"
+      },
+      {
+        "id": 6,
+        "word": "재직 중",
+        "pinyin": "",
+        "meaning": "enquanto trabalha/empregado"
+      }
+    ],
+    "id": "local-1780232770004-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 맞아요. 그럼 저는 일하면서 공부하기로 결정했어요! 친구분은 중국 학교에서 공부하시나요, 아니면 외국 학교에서 공부하시나요?",
+    "pinyin": "",
+    "translation": "B: É verdade. Então minha decisão é estudar enquanto trabalho! Seu amigo está estudando em uma escola chinesa ou estrangeira?",
+    "tokens": [
+      "B:",
+      "맞아요",
+      ".",
+      "그럼",
+      "저는",
+      "일하면서",
+      "공부하기로",
+      "결정했어요",
+      "!",
+      "친구분은",
+      "중국",
+      "학교에서",
+      "공부하시나요",
+      ",",
+      "아니면",
+      "외국",
+      "학교에서",
+      "공부하시나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "맞아요",
+        "pinyin": "",
+        "meaning": "verdadeiro / correto"
+      },
+      {
+        "id": 2,
+        "word": "결정했어요",
+        "pinyin": "",
+        "meaning": "decidiu"
+      },
+      {
+        "id": 3,
+        "word": "일하면서",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 4,
+        "word": "공부하기로",
+        "pinyin": "",
+        "meaning": "decidiu estudar"
+      },
+      {
+        "id": 5,
+        "word": "중국 학교",
+        "pinyin": "",
+        "meaning": "escola chinesa"
+      },
+      {
+        "id": 6,
+        "word": "외국 학교",
+        "pinyin": "",
+        "meaning": "escola estrangeira"
+      },
+      {
+        "id": 7,
+        "word": "친구분",
+        "pinyin": "",
+        "meaning": "seu amigo (respeitoso)"
+      }
+    ],
+    "id": "local-1780232770004-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 중국 학교나 외국 학교나 커리큘럼이 비슷하다는 말을 들었습니다. 또한 서적 지식은 많이 활용되지 않습니다. 주로 인맥을 쌓고 경험을 교환하는 데 의존합니다.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que, seja em uma escola chinesa ou estrangeira, o currículo é mais ou menos o mesmo. Além disso, o conhecimento teórico dos livros não é muito utilizado. Principalmente, depende-se de criar conexões e trocar experiências.",
+    "tokens": [
+      "A:",
+      "중국",
+      "학교나",
+      "외국",
+      "학교나",
+      "커리큘럼이",
+      "비슷하다는",
+      "말을",
+      "들었습니다",
+      ".",
+      "또한",
+      "서적",
+      "지식은",
+      "많이",
+      "활용되지",
+      "않습니다",
+      ".",
+      "주로",
+      "인맥을",
+      "쌓고",
+      "경험을",
+      "교환하는",
+      "데",
+      "의존합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "커리큘럼",
+        "pinyin": "",
+        "meaning": "currículo"
+      },
+      {
+        "id": 2,
+        "word": "서적 지식",
+        "pinyin": "",
+        "meaning": "conhecimento de livros"
+      },
+      {
+        "id": 3,
+        "word": "인맥",
+        "pinyin": "",
+        "meaning": "networking"
+      },
+      {
+        "id": 4,
+        "word": "경험",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 5,
+        "word": "교환",
+        "pinyin": "",
+        "meaning": "troca"
+      }
+    ],
+    "id": "local-1780232770004-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 친구가 MBA 과정에 얼마를 썼나요?",
+    "pinyin": "",
+    "translation": "B: Quanto dinheiro seu amigo gastou no programa de MBA?",
+    "tokens": [
+      "B:",
+      "친구가",
+      "MBA",
+      "과정에",
+      "얼마를",
+      "썼나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "친구",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 2,
+        "word": "MBA",
+        "pinyin": "",
+        "meaning": "MBA"
+      },
+      {
+        "id": 3,
+        "word": "과정",
+        "pinyin": "",
+        "meaning": "curso"
+      },
+      {
+        "id": 4,
+        "word": "얼마",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 5,
+        "word": "썼나요",
+        "pinyin": "",
+        "meaning": "gastou?"
+      }
+    ],
+    "id": "local-1780232770004-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아마 7만 달러 정도 될 겁니다. 비싼 과정은 10만 달러에서 20만 달러 사이입니다.",
+    "pinyin": "",
+    "translation": "A: Provavelmente cerca de setenta mil. Os cursos mais caros custam entre cem e duzentos mil.",
+    "tokens": [
+      "A:",
+      "아마",
+      "7",
+      "만",
+      "달러",
+      "정도",
+      "될",
+      "겁니다",
+      ".",
+      "비싼",
+      "과정은",
+      "10",
+      "만",
+      "달러에서",
+      "20",
+      "만",
+      "달러",
+      "사이입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "7만 달러",
+        "pinyin": "",
+        "meaning": "70 mil dólares"
+      },
+      {
+        "id": 2,
+        "word": "비싼",
+        "pinyin": "",
+        "meaning": "caro"
+      },
+      {
+        "id": 3,
+        "word": "과정",
+        "pinyin": "",
+        "meaning": "curso"
+      },
+      {
+        "id": 4,
+        "word": "10만 달러",
+        "pinyin": "",
+        "meaning": "100 mil dólares"
+      },
+      {
+        "id": 5,
+        "word": "20만 달러",
+        "pinyin": "",
+        "meaning": "200 mil dólares"
+      }
+    ],
+    "id": "local-1780232770004-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이제부터는 돈을 함부로 쓸 수 없을 것 같아요. 다음 달부터는 허리띠를 졸라매고 돈을 아끼며 살아야겠네요. 하하!",
+    "pinyin": "",
+    "translation": "B: Parece que não poderei mais jogar meu dinheiro fora. A partir do próximo mês, terei que me virar apertando o cinto e começando a economizar dinheiro imediatamente. Haha!",
+    "tokens": [
+      "B:",
+      "이제부터는",
+      "돈을",
+      "함부로",
+      "쓸",
+      "수",
+      "없을",
+      "것",
+      "같아요",
+      ".",
+      "다음",
+      "달부터는",
+      "허리띠를",
+      "졸라매고",
+      "돈을",
+      "아끼며",
+      "살아야겠네요",
+      ".",
+      "하하",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "다음 달",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      }
+    ],
+    "id": "local-1780232770004-11",
+    "language": "Coreano"
+  }
+]

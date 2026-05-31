@@ -1,0 +1,903 @@
+[
+  {
+    "chinese": "A: マイク、あなたの労働許可は却下されました！",
+    "pinyin": "",
+    "translation": "A: Mike, sua permissão de trabalho foi negada!",
+    "tokens": [
+      "A:",
+      "マイク",
+      "、",
+      "あなた",
+      "の",
+      "労働",
+      "許可",
+      "は",
+      "却下",
+      "さ",
+      "れ",
+      "まし",
+      "た",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "マイク",
+        "pinyin": "",
+        "meaning": "Mike"
+      },
+      {
+        "id": 2,
+        "word": "労働許可",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "却下",
+        "pinyin": "",
+        "meaning": "negação"
+      },
+      {
+        "id": 4,
+        "word": "されました",
+        "pinyin": "",
+        "meaning": "foi feito (passado formal)"
+      }
+    ],
+    "id": "local-1780259250026-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ああ、ではどうすればいいですか？問題はないはずです。前の会社ではビザの取得もスムーズにできました。",
+    "pinyin": "",
+    "translation": "B: Ah, então o que eu faço? Não deveria haver nenhum problema. Na minha última empresa, consegui minha permissão de trabalho sem problemas.",
+    "tokens": [
+      "B:",
+      "ああ",
+      "、",
+      "では",
+      "どう",
+      "すれ",
+      "ば",
+      "いい",
+      "です",
+      "か",
+      "？",
+      "問題",
+      "は",
+      "ない",
+      "はず",
+      "です",
+      "。",
+      "前",
+      "の",
+      "会社",
+      "で",
+      "は",
+      "ビザ",
+      "の",
+      "取得",
+      "も",
+      "スムーズ",
+      "に",
+      "でき",
+      "まし",
+      "た",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ビザ",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 2,
+        "word": "取得",
+        "pinyin": "",
+        "meaning": "obtenção"
+      },
+      {
+        "id": 3,
+        "word": "スムーズ",
+        "pinyin": "",
+        "meaning": "suavemente"
+      },
+      {
+        "id": 4,
+        "word": "会社",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 5,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780259250026-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私が尋ねました。これは職務記述書とあなたの専攻に関連する問題です。あなたの大学の専攻は言語学でした。最後の仕事は翻訳者だったので、それは問題ありません。しかし、今回はマーケティングアシスタントとして働きたいのです。",
+    "pinyin": "",
+    "translation": "A: Eu perguntei. É um problema com a descrição do cargo e sua graduação. Sua graduação universitária era em linguística. Seu último emprego foi como tradutor, então isso está bem. No entanto, desta vez você quer trabalhar como Assistente de Marketing.",
+    "tokens": [
+      "A:",
+      "私",
+      "が",
+      "尋ね",
+      "まし",
+      "た",
+      "。",
+      "これ",
+      "は",
+      "職務",
+      "記述",
+      "書",
+      "と",
+      "あなた",
+      "の",
+      "専攻",
+      "に",
+      "関連",
+      "する",
+      "問題",
+      "です",
+      "。",
+      "あなた",
+      "の",
+      "大学",
+      "の",
+      "専攻",
+      "は",
+      "言語",
+      "学",
+      "でし",
+      "た",
+      "。",
+      "最後",
+      "の",
+      "仕事",
+      "は",
+      "翻訳",
+      "者",
+      "だっ",
+      "た",
+      "ので",
+      "、",
+      "それ",
+      "は",
+      "問題",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "しかし",
+      "、",
+      "今回",
+      "は",
+      "マーケティング",
+      "アシスタント",
+      "として",
+      "働き",
+      "たい",
+      "の",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "職務記述書",
+        "pinyin": "",
+        "meaning": "descrição do cargo"
+      },
+      {
+        "id": 2,
+        "word": "専攻",
+        "pinyin": "",
+        "meaning": "graduação / especialização"
+      },
+      {
+        "id": 3,
+        "word": "言語学",
+        "pinyin": "",
+        "meaning": "linguística"
+      },
+      {
+        "id": 4,
+        "word": "翻訳者",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "マーケティングアシスタント",
+        "pinyin": "",
+        "meaning": "assistente de marketing"
+      }
+    ],
+    "id": "local-1780259250026-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: それが何の関係があるんですか。会社は私がその仕事にふさわしいと考えています。それで十分はずです。",
+    "pinyin": "",
+    "translation": "B: O que isso tem a ver com tudo? A empresa acha que sou qualificado para o trabalho. Isso deveria ser suficiente.",
+    "tokens": [
+      "B:",
+      "それ",
+      "が",
+      "何",
+      "の",
+      "関係",
+      "が",
+      "ある",
+      "ん",
+      "です",
+      "か",
+      "。",
+      "会社",
+      "は",
+      "私",
+      "が",
+      "その",
+      "仕事",
+      "に",
+      "ふさわしい",
+      "と",
+      "考え",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "それで",
+      "十",
+      "分",
+      "はず",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "関係",
+        "pinyin": "",
+        "meaning": "relação"
+      },
+      {
+        "id": 2,
+        "word": "会社",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "ふさわしい",
+        "pinyin": "",
+        "meaning": "apropriado"
+      },
+      {
+        "id": 4,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 5,
+        "word": "十分",
+        "pinyin": "",
+        "meaning": "suficiente"
+      }
+    ],
+    "id": "local-1780259250026-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 違います。中国の規制では、専攻と業務は関連していなければなりません。",
+    "pinyin": "",
+    "translation": "A: Não é. As regulamentações chinesas estabelecem que o curso superior e o trabalho devem estar relacionados.",
+    "tokens": [
+      "A:",
+      "違い",
+      "ます",
+      "。",
+      "中国",
+      "の",
+      "規制",
+      "で",
+      "は",
+      "、",
+      "専攻",
+      "と",
+      "業務",
+      "は",
+      "関連",
+      "し",
+      "て",
+      "い",
+      "なけれ",
+      "ば",
+      "なり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "専攻",
+        "pinyin": "",
+        "meaning": "curso superior / especialização"
+      },
+      {
+        "id": 2,
+        "word": "業務",
+        "pinyin": "",
+        "meaning": "trabalho / atividades profissionais"
+      },
+      {
+        "id": 3,
+        "word": "規制",
+        "pinyin": "",
+        "meaning": "regulamentação / regulação"
+      },
+      {
+        "id": 4,
+        "word": "関連",
+        "pinyin": "",
+        "meaning": "relação / conexão"
+      },
+      {
+        "id": 5,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      }
+    ],
+    "id": "local-1780259250026-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 不思議ですね。ただ、大学ではビジネスを副専攻していました。これで大丈夫ですか？",
+    "pinyin": "",
+    "translation": "B: Isso é muito estranho. No entanto, na faculdade fiz um bacharelado secundário em negócios. Está tudo bem?",
+    "tokens": [
+      "B:",
+      "不思議",
+      "です",
+      "ね",
+      "。",
+      "ただ",
+      "、",
+      "大学",
+      "で",
+      "は",
+      "ビジネス",
+      "を",
+      "副",
+      "専攻",
+      "し",
+      "て",
+      "い",
+      "まし",
+      "た",
+      "。",
+      "これ",
+      "で",
+      "大丈夫",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不思議",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 2,
+        "word": "大学",
+        "pinyin": "",
+        "meaning": "faculdade"
+      },
+      {
+        "id": 3,
+        "word": "ビジネス",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 4,
+        "word": "副専攻",
+        "pinyin": "",
+        "meaning": "bacharelado secundário"
+      },
+      {
+        "id": 5,
+        "word": "大丈夫",
+        "pinyin": "",
+        "meaning": "tudo bem"
+      }
+    ],
+    "id": "local-1780259250026-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 試してみたらどうですか？でも、こういう仕事はしたことがありますか？",
+    "pinyin": "",
+    "translation": "A: Acho que você pode tentar, mas você já fez esse tipo de trabalho antes?",
+    "tokens": [
+      "A:",
+      "試し",
+      "て",
+      "み",
+      "たら",
+      "どう",
+      "です",
+      "か",
+      "？",
+      "でも",
+      "、",
+      "こういう",
+      "仕事",
+      "は",
+      "し",
+      "た",
+      "こと",
+      "が",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1780259250026-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: いいえ",
+    "pinyin": "",
+    "translation": "B: Não",
+    "tokens": [
+      "B:",
+      "いいえ"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "いいえ",
+        "pinyin": "",
+        "meaning": "não"
+      }
+    ],
+    "id": "local-1780259250026-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: ねえ、それもダメだよ。専攻が同じであるだけでなく、こういう経験も必要なんだ。",
+    "pinyin": "",
+    "translation": "A: Ei, isso também não serve. Não basta ter a mesma graduação, você também precisa ter esse tipo de experiência de trabalho.",
+    "tokens": [
+      "A:",
+      "ねえ",
+      "、",
+      "それ",
+      "も",
+      "ダメ",
+      "だ",
+      "よ",
+      "。",
+      "専攻",
+      "が",
+      "同じ",
+      "で",
+      "ある",
+      "だけ",
+      "で",
+      "なく",
+      "、",
+      "こういう",
+      "経験",
+      "も",
+      "必要",
+      "な",
+      "ん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "専攻",
+        "pinyin": "",
+        "meaning": "graduação"
+      },
+      {
+        "id": 2,
+        "word": "経験",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 3,
+        "word": "必要",
+        "pinyin": "",
+        "meaning": "necessário"
+      },
+      {
+        "id": 4,
+        "word": "ダメ",
+        "pinyin": "",
+        "meaning": "não serve"
+      },
+      {
+        "id": 5,
+        "word": "だけでなく",
+        "pinyin": "",
+        "meaning": "não apenas"
+      }
+    ],
+    "id": "local-1780259250026-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、中国では翻訳者としてしか働けないのでしょうか？",
+    "pinyin": "",
+    "translation": "B: Então, só posso trabalhar como tradutor na China?",
+    "tokens": [
+      "B:",
+      "では",
+      "、",
+      "中国",
+      "で",
+      "は",
+      "翻訳",
+      "者",
+      "として",
+      "しか",
+      "働け",
+      "ない",
+      "の",
+      "でしょ",
+      "う",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "nesse caso / então"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "翻訳者",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 4,
+        "word": "しか",
+        "pinyin": "",
+        "meaning": "apenas / só"
+      },
+      {
+        "id": 5,
+        "word": "働けない",
+        "pinyin": "",
+        "meaning": "não poder trabalhar"
+      },
+      {
+        "id": 6,
+        "word": "のでしょうか",
+        "pinyin": "",
+        "meaning": "será que...? / é que...?"
+      }
+    ],
+    "id": "local-1780259250026-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: こうしましょう：私がマネージャーに話してきます。あなたの肩書は「マーケティング部翻訳」に変更しますが、実際にはあなたがやっている仕事は変わりません。",
+    "pinyin": "",
+    "translation": "A: Vamos fazer o seguinte: vou falar com o gerente sobre isso. Vamos alterar seu título para Tradução do Departamento de Marketing, mas, na realidade, o trabalho que você está fazendo não mudará.",
+    "tokens": [
+      "A:",
+      "こう",
+      "し",
+      "ましょ",
+      "う",
+      "：",
+      "私",
+      "が",
+      "マネージャー",
+      "に",
+      "話し",
+      "て",
+      "き",
+      "ます",
+      "。",
+      "あなた",
+      "の",
+      "肩書",
+      "は",
+      "「",
+      "マーケティング",
+      "部",
+      "翻訳",
+      "」",
+      "に",
+      "変更",
+      "し",
+      "ます",
+      "が",
+      "、",
+      "実際",
+      "に",
+      "は",
+      "あなた",
+      "が",
+      "やっ",
+      "て",
+      "いる",
+      "仕事",
+      "は",
+      "変わり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "マネージャー",
+        "pinyin": "",
+        "meaning": "gerente"
+      },
+      {
+        "id": 2,
+        "word": "肩書",
+        "pinyin": "",
+        "meaning": "título / cargo"
+      },
+      {
+        "id": 3,
+        "word": "マーケティング部",
+        "pinyin": "",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 4,
+        "word": "翻訳",
+        "pinyin": "",
+        "meaning": "tradução"
+      },
+      {
+        "id": 5,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 6,
+        "word": "変わりません",
+        "pinyin": "",
+        "meaning": "não muda"
+      }
+    ],
+    "id": "local-1780259250026-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: これでいいですか？",
+    "pinyin": "",
+    "translation": "B: Isso está ok?",
+    "tokens": [
+      "B:",
+      "これ",
+      "で",
+      "いい",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "これ",
+        "pinyin": "",
+        "meaning": "isto"
+      },
+      {
+        "id": 2,
+        "word": "いい",
+        "pinyin": "",
+        "meaning": "bom"
+      },
+      {
+        "id": 3,
+        "word": "ですか",
+        "pinyin": "",
+        "meaning": "é?"
+      }
+    ],
+    "id": "local-1780259250026-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: そうあるべきですね。一部の企業は実際にそのようなことをしているそうです。そうすれば通過しやすいですから。いずれにせよ、翻訳者は外国人にとって全く問題のない職業です。",
+    "pinyin": "",
+    "translation": "A: Deveria ser assim. Ouvi dizer que algumas empresas fazem isso. Dessa forma, é fácil passar. De qualquer forma, um tradutor é um trabalho perfeitamente aceitável para um estrangeiro.",
+    "tokens": [
+      "A:",
+      "そう",
+      "ある",
+      "べき",
+      "です",
+      "ね",
+      "。",
+      "一部",
+      "の",
+      "企業",
+      "は",
+      "実際",
+      "に",
+      "その",
+      "よう",
+      "な",
+      "こと",
+      "を",
+      "し",
+      "て",
+      "いる",
+      "そう",
+      "です",
+      "。",
+      "そう",
+      "すれ",
+      "ば",
+      "通過",
+      "し",
+      "やすい",
+      "です",
+      "から",
+      "。",
+      "いずれ",
+      "に",
+      "せよ",
+      "、",
+      "翻訳",
+      "者",
+      "は",
+      "外国",
+      "人",
+      "にとって",
+      "全く",
+      "問題",
+      "の",
+      "ない",
+      "職業",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "企業",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 2,
+        "word": "翻訳者",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 3,
+        "word": "外国人",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "職業",
+        "pinyin": "",
+        "meaning": "profissão"
+      },
+      {
+        "id": 5,
+        "word": "通過",
+        "pinyin": "",
+        "meaning": "passagem"
+      },
+      {
+        "id": 6,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780259250026-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: なるほど、中国では翻訳家として働き続けることになりそうです。",
+    "pinyin": "",
+    "translation": "B: Entendi. Parece que vou continuar sendo tradutor na China.",
+    "tokens": [
+      "B:",
+      "なるほど",
+      "、",
+      "中国",
+      "で",
+      "は",
+      "翻訳",
+      "家",
+      "として",
+      "働き",
+      "続ける",
+      "こと",
+      "に",
+      "なり",
+      "そう",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "なるほど",
+        "pinyin": "",
+        "meaning": "entendo / compreendo"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "翻訳家",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 4,
+        "word": "働き続ける",
+        "pinyin": "",
+        "meaning": "continuar trabalhando"
+      },
+      {
+        "id": 5,
+        "word": "そうです",
+        "pinyin": "",
+        "meaning": "parece que / parece ser"
+      }
+    ],
+    "id": "local-1780259250026-13",
+    "language": "Japonês"
+  }
+]

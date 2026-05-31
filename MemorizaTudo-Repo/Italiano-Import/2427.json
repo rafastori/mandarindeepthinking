@@ -1,0 +1,694 @@
+[
+  {
+    "chinese": "A: Tesoro, è arrivato il mio acquario!",
+    "pinyin": "",
+    "translation": "A: Querido, meu aquário chegou!",
+    "tokens": [
+      "A:",
+      "Tesoro",
+      ",",
+      "è",
+      "arrivato",
+      "il",
+      "mio",
+      "acquario",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tesoro",
+        "pinyin": "",
+        "meaning": "Querido"
+      },
+      {
+        "id": 2,
+        "word": "acquario",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "arrivato",
+        "pinyin": "",
+        "meaning": "chegado"
+      },
+      {
+        "id": 4,
+        "word": "mio",
+        "pinyin": "",
+        "meaning": "meu"
+      }
+    ],
+    "id": "local-1780239608798-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Wow, che grande acquario! Cosa vuoi farne?",
+    "pinyin": "",
+    "translation": "B: Nossa, que aquário grande! O que você quer fazer com ele?",
+    "tokens": [
+      "B:",
+      "Wow",
+      ",",
+      "che",
+      "grande",
+      "acquario",
+      "!",
+      "Cosa",
+      "vuoi",
+      "farne",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "acquario",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 2,
+        "word": "grande",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 3,
+        "word": "vuoi",
+        "pinyin": "",
+        "meaning": "quer"
+      },
+      {
+        "id": 4,
+        "word": "farne",
+        "pinyin": "",
+        "meaning": "fazer com ele"
+      }
+    ],
+    "id": "local-1780239608798-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Voglio allevare pesci tropicali.",
+    "pinyin": "",
+    "translation": "A: Quero criar peixes tropicais.",
+    "tokens": [
+      "A:",
+      "Voglio",
+      "allevare",
+      "pesci",
+      "tropicali",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "allevare",
+        "pinyin": "",
+        "meaning": "criar"
+      },
+      {
+        "id": 2,
+        "word": "pesci",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 3,
+        "word": "tropicali",
+        "pinyin": "",
+        "meaning": "tropicais"
+      }
+    ],
+    "id": "local-1780239608798-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Davvero? Hai già ucciso così tanti animali e piante. Questa volta stai pianificando di uccidere i pesci tropicali?",
+    "pinyin": "",
+    "translation": "B: Sério? Você já matou tantos animais e plantas. Desta vez você está planejando assassinar peixes tropicais?",
+    "tokens": [
+      "B:",
+      "Davvero",
+      "?",
+      "Hai",
+      "già",
+      "ucciso",
+      "così",
+      "tanti",
+      "animali",
+      "e",
+      "piante",
+      ".",
+      "Questa",
+      "volta",
+      "stai",
+      "pianificando",
+      "di",
+      "uccidere",
+      "i",
+      "pesci",
+      "tropicali",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Davvero",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "ucciso",
+        "pinyin": "",
+        "meaning": "matado"
+      },
+      {
+        "id": 3,
+        "word": "animali",
+        "pinyin": "",
+        "meaning": "animais"
+      },
+      {
+        "id": 4,
+        "word": "piante",
+        "pinyin": "",
+        "meaning": "plantas"
+      },
+      {
+        "id": 5,
+        "word": "pianificando",
+        "pinyin": "",
+        "meaning": "planejando"
+      },
+      {
+        "id": 6,
+        "word": "pesci tropicali",
+        "pinyin": "",
+        "meaning": "peixes tropicais"
+      }
+    ],
+    "id": "local-1780239608798-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: No, non lo sono. Questa volta ho fatto molte ricerche.",
+    "pinyin": "",
+    "translation": "A: Não, não sou. Desta vez fiz muitas pesquisas.",
+    "tokens": [
+      "A:",
+      "No",
+      ",",
+      "non",
+      "lo",
+      "sono",
+      ".",
+      "Questa",
+      "volta",
+      "ho",
+      "fatto",
+      "molte",
+      "ricerche",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ricerche",
+        "pinyin": "",
+        "meaning": "pesquisas"
+      },
+      {
+        "id": 2,
+        "word": "fatto",
+        "pinyin": "",
+        "meaning": "feito"
+      },
+      {
+        "id": 3,
+        "word": "molte",
+        "pinyin": "",
+        "meaning": "muitas"
+      },
+      {
+        "id": 4,
+        "word": "non lo sono",
+        "pinyin": "",
+        "meaning": "não sou"
+      }
+    ],
+    "id": "local-1780239608798-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ah? Raccontamelo.",
+    "pinyin": "",
+    "translation": "B: Ah? Me conta.",
+    "tokens": [
+      "B:",
+      "Ah",
+      "?",
+      "Raccontamelo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Raccontamelo",
+        "pinyin": "",
+        "meaning": "Conte-me (imperativo)"
+      },
+      {
+        "id": 2,
+        "word": "Ah",
+        "pinyin": "",
+        "meaning": "Interjeição de surpresa"
+      }
+    ],
+    "id": "local-1780239608798-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Se vuoi allevare pesci, devi prima trattare l'acqua. La temperatura dell'acqua, il contenuto di ossigeno, il livello di pH e la limpidezza sono tutti molto importanti per i pesci. Una volta trattata l'acqua, i pesci possono essere allevati.",
+    "pinyin": "",
+    "translation": "A: Se você quer criar peixes, primeiro você precisa tratar a água. A temperatura da água, o teor de oxigênio, o nível de pH e a clareza são todos muito importantes para os peixes. Uma vez que a água é tratada, os peixes podem ser criados.",
+    "tokens": [
+      "A:",
+      "Se",
+      "vuoi",
+      "allevare",
+      "pesci",
+      ",",
+      "devi",
+      "prima",
+      "trattare",
+      "l'acqua",
+      ".",
+      "La",
+      "temperatura",
+      "dell'acqua",
+      ",",
+      "il",
+      "contenuto",
+      "di",
+      "ossigeno",
+      ",",
+      "il",
+      "livello",
+      "di",
+      "pH",
+      "e",
+      "la",
+      "limpidezza",
+      "sono",
+      "tutti",
+      "molto",
+      "importanti",
+      "per",
+      "i",
+      "pesci",
+      ".",
+      "Una",
+      "volta",
+      "trattata",
+      "l'acqua",
+      ",",
+      "i",
+      "pesci",
+      "possono",
+      "essere",
+      "allevati",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "allevare",
+        "pinyin": "",
+        "meaning": "criar, cultivar"
+      },
+      {
+        "id": 2,
+        "word": "pesci",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 3,
+        "word": "trattare",
+        "pinyin": "",
+        "meaning": "tratar"
+      },
+      {
+        "id": 4,
+        "word": "temperatura",
+        "pinyin": "",
+        "meaning": "temperatura"
+      },
+      {
+        "id": 5,
+        "word": "ossigeno",
+        "pinyin": "",
+        "meaning": "oxigênio"
+      },
+      {
+        "id": 6,
+        "word": "pH",
+        "pinyin": "",
+        "meaning": "potencial hidrogeniônico"
+      },
+      {
+        "id": 7,
+        "word": "limpidezza",
+        "pinyin": "",
+        "meaning": "clareza, transparência"
+      }
+    ],
+    "id": "local-1780239608798-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ha senso. Quindi che tipo di pesci hai intenzione di allevare?",
+    "pinyin": "",
+    "translation": "B: Isso faz sentido. Então que tipo de peixes você planeja criar?",
+    "tokens": [
+      "B:",
+      "Ha",
+      "senso",
+      ".",
+      "Quindi",
+      "che",
+      "tipo",
+      "di",
+      "pesci",
+      "hai",
+      "intenzione",
+      "di",
+      "allevare",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ha senso",
+        "pinyin": "",
+        "meaning": "faz sentido"
+      },
+      {
+        "id": 2,
+        "word": "intenzione",
+        "pinyin": "",
+        "meaning": "intenção"
+      },
+      {
+        "id": 3,
+        "word": "allevare",
+        "pinyin": "",
+        "meaning": "criar, criar animais"
+      },
+      {
+        "id": 4,
+        "word": "pesci",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 5,
+        "word": "tipo",
+        "pinyin": "",
+        "meaning": "tipo"
+      }
+    ],
+    "id": "local-1780239608798-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho intenzione di allevare guppy e pesci luna. Si dice che questi due pesci siano adatti ai principianti. Inoltre, le loro esigenze per l'acqua sono più o meno le stesse, quindi puoi allevarli insieme.",
+    "pinyin": "",
+    "translation": "A: Estou planejando criar guppies e peixes-lua. Diz-se que esses dois peixes são adequados para iniciantes. Além disso, suas exigências para a água são mais ou menos as mesmas, então você pode criá-los juntos.",
+    "tokens": [
+      "A:",
+      "Ho",
+      "intenzione",
+      "di",
+      "allevare",
+      "guppy",
+      "e",
+      "pesci",
+      "luna",
+      ".",
+      "Si",
+      "dice",
+      "che",
+      "questi",
+      "due",
+      "pesci",
+      "siano",
+      "adatti",
+      "ai",
+      "principianti",
+      ".",
+      "Inoltre",
+      ",",
+      "le",
+      "loro",
+      "esigenze",
+      "per",
+      "l'acqua",
+      "sono",
+      "più",
+      "o",
+      "meno",
+      "le",
+      "stesse",
+      ",",
+      "quindi",
+      "puoi",
+      "allevarli",
+      "insieme",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "guppy",
+        "pinyin": "",
+        "meaning": "peixe de aquário"
+      },
+      {
+        "id": 2,
+        "word": "pesci luna",
+        "pinyin": "",
+        "meaning": "peixes-lua"
+      },
+      {
+        "id": 3,
+        "word": "principianti",
+        "pinyin": "",
+        "meaning": "iniciantes"
+      },
+      {
+        "id": 4,
+        "word": "esigenze",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 5,
+        "word": "acqua",
+        "pinyin": "",
+        "meaning": "água"
+      },
+      {
+        "id": 6,
+        "word": "allevarli",
+        "pinyin": "",
+        "meaning": "criá-los"
+      }
+    ],
+    "id": "local-1780239608798-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quando andrai a comprare il pesce?",
+    "pinyin": "",
+    "translation": "B: Quando você vai comprar o peixe?",
+    "tokens": [
+      "B:",
+      "Quando",
+      "andrai",
+      "a",
+      "comprare",
+      "il",
+      "pesce",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quando",
+        "pinyin": "",
+        "meaning": "Quando"
+      },
+      {
+        "id": 2,
+        "word": "andrai",
+        "pinyin": "",
+        "meaning": "você irá"
+      },
+      {
+        "id": 3,
+        "word": "comprare",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "pesce",
+        "pinyin": "",
+        "meaning": "peixe"
+      }
+    ],
+    "id": "local-1780239608798-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Vieni con me a dare un'occhiata al mercato di fiori e uccelli. Andiamo il prossimo fine settimana.",
+    "pinyin": "",
+    "translation": "A: Vá comigo dar uma olhada no mercado de flores e pássaros. Vamos no próximo fim de semana.",
+    "tokens": [
+      "A:",
+      "Vieni",
+      "con",
+      "me",
+      "a",
+      "dare",
+      "un'occhiata",
+      "al",
+      "mercato",
+      "di",
+      "fiori",
+      "e",
+      "uccelli",
+      ".",
+      "Andiamo",
+      "il",
+      "prossimo",
+      "fine",
+      "settimana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vieni",
+        "pinyin": "",
+        "meaning": "Venha"
+      },
+      {
+        "id": 2,
+        "word": "mercato",
+        "pinyin": "",
+        "meaning": "mercado"
+      },
+      {
+        "id": 3,
+        "word": "fiori",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 4,
+        "word": "uccelli",
+        "pinyin": "",
+        "meaning": "pássaros"
+      },
+      {
+        "id": 5,
+        "word": "prossimo",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 6,
+        "word": "fine settimana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1780239608798-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Penso che sia meglio andare un po' più tardi e lasciare vivere il povero pesce per qualche giorno in più.",
+    "pinyin": "",
+    "translation": "B: Acho que é melhor irmos um pouco mais tarde e deixar o pobre peixe viver por mais alguns dias.",
+    "tokens": [
+      "B:",
+      "Penso",
+      "che",
+      "sia",
+      "meglio",
+      "andare",
+      "un",
+      "po",
+      "'",
+      "più",
+      "tardi",
+      "e",
+      "lasciare",
+      "vivere",
+      "il",
+      "povero",
+      "pesce",
+      "per",
+      "qualche",
+      "giorno",
+      "in",
+      "più",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "meglio",
+        "pinyin": "",
+        "meaning": "melhor"
+      },
+      {
+        "id": 2,
+        "word": "andare",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "lasciare",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 4,
+        "word": "vivere",
+        "pinyin": "",
+        "meaning": "viver"
+      },
+      {
+        "id": 5,
+        "word": "povero",
+        "pinyin": "",
+        "meaning": "pobre"
+      },
+      {
+        "id": 6,
+        "word": "giorno",
+        "pinyin": "",
+        "meaning": "dia"
+      }
+    ],
+    "id": "local-1780239608798-11",
+    "language": "Italiano"
+  }
+]

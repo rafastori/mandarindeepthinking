@@ -1,0 +1,722 @@
+[
+  {
+    "chinese": "A: Chérie, mon aquarium est arrivé !",
+    "pinyin": "",
+    "translation": "A: Querida, meu aquário chegou!",
+    "tokens": [
+      "A:",
+      "Chérie",
+      ",",
+      "mon",
+      "aquarium",
+      "est",
+      "arrivé",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Chérie",
+        "pinyin": "",
+        "meaning": "Querida"
+      },
+      {
+        "id": 2,
+        "word": "aquarium",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "arrivé",
+        "pinyin": "",
+        "meaning": "chegou"
+      },
+      {
+        "id": 4,
+        "word": "est",
+        "pinyin": "",
+        "meaning": "é/está"
+      }
+    ],
+    "id": "local-1780237039299-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Wow, quel grand aquarium ! Que veux-tu en faire ?",
+    "pinyin": "",
+    "translation": "B: Uau, que aquário grande! O que você quer fazer com ele?",
+    "tokens": [
+      "B:",
+      "Wow",
+      ",",
+      "quel",
+      "grand",
+      "aquarium",
+      "!",
+      "Que",
+      "veux",
+      "-",
+      "tu",
+      "en",
+      "faire",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aquarium",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 2,
+        "word": "grand",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 3,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quer"
+      },
+      {
+        "id": 4,
+        "word": "faire",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "Wow",
+        "pinyin": "",
+        "meaning": "uau"
+      }
+    ],
+    "id": "local-1780237039299-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je veux élever des poissons tropicaux.",
+    "pinyin": "",
+    "translation": "A: Eu quero criar peixes tropicais.",
+    "tokens": [
+      "A:",
+      "Je",
+      "veux",
+      "élever",
+      "des",
+      "poissons",
+      "tropicaux",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "élever",
+        "pinyin": "",
+        "meaning": "criar"
+      },
+      {
+        "id": 2,
+        "word": "poissons",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 3,
+        "word": "tropicaux",
+        "pinyin": "",
+        "meaning": "tropicais"
+      },
+      {
+        "id": 4,
+        "word": "veux",
+        "pinyin": "",
+        "meaning": "quero"
+      }
+    ],
+    "id": "local-1780237039299-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Sérieusement ? Tu as déjà tué tant d'animaux et de plantes. Cette fois, tu envisages de massacrer des poissons tropicaux ?",
+    "pinyin": "",
+    "translation": "B: Sério? Você já matou tantos animais e plantas. Desta vez, você planeja assassinar peixes tropicais?",
+    "tokens": [
+      "B:",
+      "Sérieusement",
+      "?",
+      "Tu",
+      "as",
+      "déjà",
+      "tué",
+      "tant",
+      "d'animaux",
+      "et",
+      "de",
+      "plantes",
+      ".",
+      "Cette",
+      "fois",
+      ",",
+      "tu",
+      "envisages",
+      "de",
+      "massacrer",
+      "des",
+      "poissons",
+      "tropicaux",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sérieusement",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "déjà",
+        "pinyin": "",
+        "meaning": "já"
+      },
+      {
+        "id": 3,
+        "word": "tué",
+        "pinyin": "",
+        "meaning": "matou"
+      },
+      {
+        "id": 4,
+        "word": "tant d'",
+        "pinyin": "",
+        "meaning": "tantos"
+      },
+      {
+        "id": 5,
+        "word": "envisages",
+        "pinyin": "",
+        "meaning": "planeja"
+      },
+      {
+        "id": 6,
+        "word": "massacrer",
+        "pinyin": "",
+        "meaning": "massacrar/assassinar"
+      },
+      {
+        "id": 7,
+        "word": "poissons tropicaux",
+        "pinyin": "",
+        "meaning": "peixes tropicais"
+      }
+    ],
+    "id": "local-1780237039299-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Non, je ne le suis pas. Cette fois, j'ai fait beaucoup de recherches.",
+    "pinyin": "",
+    "translation": "A: Não, não sou. Desta vez, fiz muitas pesquisas.",
+    "tokens": [
+      "A:",
+      "Non",
+      ",",
+      "je",
+      "ne",
+      "le",
+      "suis",
+      "pas",
+      ".",
+      "Cette",
+      "fois",
+      ",",
+      "j'ai",
+      "fait",
+      "beaucoup",
+      "de",
+      "recherches",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "recherches",
+        "pinyin": "",
+        "meaning": "pesquisas"
+      },
+      {
+        "id": 2,
+        "word": "beaucoup",
+        "pinyin": "",
+        "meaning": "muito/muitas"
+      },
+      {
+        "id": 3,
+        "word": "Non",
+        "pinyin": "",
+        "meaning": "Não"
+      },
+      {
+        "id": 4,
+        "word": "fait",
+        "pinyin": "",
+        "meaning": "fez/fiz"
+      }
+    ],
+    "id": "local-1780237039299-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ah bon ? Parle-m'en.",
+    "pinyin": "",
+    "translation": "B: Ah, é? Conte-me sobre isso.",
+    "tokens": [
+      "B:",
+      "Ah",
+      "bon",
+      "?",
+      "Parle",
+      "-",
+      "m'en",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ah bon",
+        "pinyin": "",
+        "meaning": "Ah, é? / Sério?"
+      },
+      {
+        "id": 2,
+        "word": "Parle-m'en",
+        "pinyin": "",
+        "meaning": "Conte-me sobre isso"
+      },
+      {
+        "id": 3,
+        "word": "en",
+        "pinyin": "",
+        "meaning": "sobre isso / dele"
+      }
+    ],
+    "id": "local-1780237039299-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Si vous voulez élever des poissons, vous devez d'abord traiter l'eau. La température de l'eau, la teneur en oxygène, le niveau de pH et la clarté sont tous très importants pour les poissons. Une fois l'eau traitée, les poissons peuvent être élevés.",
+    "pinyin": "",
+    "translation": "A: Se você quiser criar peixes, primeiro você precisa tratar a água. A temperatura da água, o teor de oxigênio, o nível de pH e a clareza são todos muito importantes para os peixes. Uma vez que a água seja tratada, os peixes podem ser criados.",
+    "tokens": [
+      "A:",
+      "Si",
+      "vous",
+      "voulez",
+      "élever",
+      "des",
+      "poissons",
+      ",",
+      "vous",
+      "devez",
+      "d'abord",
+      "traiter",
+      "l'eau",
+      ".",
+      "La",
+      "température",
+      "de",
+      "l'eau",
+      ",",
+      "la",
+      "teneur",
+      "en",
+      "oxygène",
+      ",",
+      "le",
+      "niveau",
+      "de",
+      "pH",
+      "et",
+      "la",
+      "clarté",
+      "sont",
+      "tous",
+      "très",
+      "importants",
+      "pour",
+      "les",
+      "poissons",
+      ".",
+      "Une",
+      "fois",
+      "l'eau",
+      "traitée",
+      ",",
+      "les",
+      "poissons",
+      "peuvent",
+      "être",
+      "élevés",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "élever",
+        "pinyin": "",
+        "meaning": "criar"
+      },
+      {
+        "id": 2,
+        "word": "traiter",
+        "pinyin": "",
+        "meaning": "tratar"
+      },
+      {
+        "id": 3,
+        "word": "température",
+        "pinyin": "",
+        "meaning": "temperatura"
+      },
+      {
+        "id": 4,
+        "word": "oxygène",
+        "pinyin": "",
+        "meaning": "oxigênio"
+      },
+      {
+        "id": 5,
+        "word": "pH",
+        "pinyin": "",
+        "meaning": "potencial hidrogeniônico"
+      },
+      {
+        "id": 6,
+        "word": "clarté",
+        "pinyin": "",
+        "meaning": "clareza"
+      }
+    ],
+    "id": "local-1780237039299-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Ça a du sens. Alors, quel type de poisson comptez-vous élever ?",
+    "pinyin": "",
+    "translation": "B: Isso faz sentido. Então, que tipo de peixe você planeja criar?",
+    "tokens": [
+      "B:",
+      "Ça",
+      "a",
+      "du",
+      "sens",
+      ".",
+      "Alors",
+      ",",
+      "quel",
+      "type",
+      "de",
+      "poisson",
+      "comptez",
+      "-",
+      "vous",
+      "élever",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sens",
+        "pinyin": "",
+        "meaning": "sentido"
+      },
+      {
+        "id": 2,
+        "word": "type",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 3,
+        "word": "poisson",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 4,
+        "word": "élever",
+        "pinyin": "",
+        "meaning": "criar"
+      }
+    ],
+    "id": "local-1780237039299-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Je prévois d'élever des guppys et des poissons-lunes. On dit que ces deux poissons sont adaptés aux débutants. De plus, leurs exigences en matière d'eau étant similaires, vous pouvez les élever ensemble.",
+    "pinyin": "",
+    "translation": "A: Estou planejando criar guppies e peixes-lua. Diz-se que esses dois peixes são adequados para iniciantes. Além disso, como suas exigências em relação à água são semelhantes, você pode criá-los juntos.",
+    "tokens": [
+      "A:",
+      "Je",
+      "prévois",
+      "d'élever",
+      "des",
+      "guppys",
+      "et",
+      "des",
+      "poissons",
+      "-",
+      "lunes",
+      ".",
+      "On",
+      "dit",
+      "que",
+      "ces",
+      "deux",
+      "poissons",
+      "sont",
+      "adaptés",
+      "aux",
+      "débutants",
+      ".",
+      "De",
+      "plus",
+      ",",
+      "leurs",
+      "exigences",
+      "en",
+      "matière",
+      "d'eau",
+      "étant",
+      "similaires",
+      ",",
+      "vous",
+      "pouvez",
+      "les",
+      "élever",
+      "ensemble",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "guppys",
+        "pinyin": "",
+        "meaning": "guppies"
+      },
+      {
+        "id": 2,
+        "word": "poissons-lunes",
+        "pinyin": "",
+        "meaning": "peixes-lua"
+      },
+      {
+        "id": 3,
+        "word": "débutants",
+        "pinyin": "",
+        "meaning": "iniciantes"
+      },
+      {
+        "id": 4,
+        "word": "exigences",
+        "pinyin": "",
+        "meaning": "exigências"
+      },
+      {
+        "id": 5,
+        "word": "similaires",
+        "pinyin": "",
+        "meaning": "semelhantes"
+      }
+    ],
+    "id": "local-1780237039299-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Quand vas-tu acheter du poisson ?",
+    "pinyin": "",
+    "translation": "B: Quando você vai comprar peixe?",
+    "tokens": [
+      "B:",
+      "Quand",
+      "vas",
+      "-",
+      "tu",
+      "acheter",
+      "du",
+      "poisson",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quand",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 2,
+        "word": "vas-tu",
+        "pinyin": "",
+        "meaning": "você vai"
+      },
+      {
+        "id": 3,
+        "word": "acheter",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "poisson",
+        "pinyin": "",
+        "meaning": "peixe"
+      }
+    ],
+    "id": "local-1780237039299-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Viens avec moi jeter un coup d'œil au marché aux fleurs et aux oiseaux. Allons-y le week-end prochain.",
+    "pinyin": "",
+    "translation": "A: Vá comigo dar uma olhada no mercado de flores e pássaros. Vamos lá no próximo fim de semana.",
+    "tokens": [
+      "A:",
+      "Viens",
+      "avec",
+      "moi",
+      "jeter",
+      "un",
+      "coup",
+      "d'œil",
+      "au",
+      "marché",
+      "aux",
+      "fleurs",
+      "et",
+      "aux",
+      "oiseaux",
+      ".",
+      "Allons",
+      "-",
+      "y",
+      "le",
+      "week",
+      "-",
+      "end",
+      "prochain",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Viens",
+        "pinyin": "",
+        "meaning": "vem"
+      },
+      {
+        "id": 2,
+        "word": "marché",
+        "pinyin": "",
+        "meaning": "mercado"
+      },
+      {
+        "id": 3,
+        "word": "fleurs",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 4,
+        "word": "oiseaux",
+        "pinyin": "",
+        "meaning": "pássaros"
+      },
+      {
+        "id": 5,
+        "word": "week-end",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 6,
+        "word": "prochain",
+        "pinyin": "",
+        "meaning": "próximo"
+      }
+    ],
+    "id": "local-1780237039299-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je pense que nous ferions mieux d'y aller un peu plus tard et de laisser vivre ces pauvres poissons quelques jours de plus.",
+    "pinyin": "",
+    "translation": "B: Acho que seria melhor irmos um pouco mais tarde e deixar esses peixes pobres viverem mais alguns dias.",
+    "tokens": [
+      "B:",
+      "Je",
+      "pense",
+      "que",
+      "nous",
+      "ferions",
+      "mieux",
+      "d'y",
+      "aller",
+      "un",
+      "peu",
+      "plus",
+      "tard",
+      "et",
+      "de",
+      "laisser",
+      "vivre",
+      "ces",
+      "pauvres",
+      "poissons",
+      "quelques",
+      "jours",
+      "de",
+      "plus",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ferions mieux",
+        "pinyin": "",
+        "meaning": "seria melhor"
+      },
+      {
+        "id": 2,
+        "word": "pauvres poissons",
+        "pinyin": "",
+        "meaning": "peixes pobres"
+      },
+      {
+        "id": 3,
+        "word": "quelques jours",
+        "pinyin": "",
+        "meaning": "alguns dias"
+      },
+      {
+        "id": 4,
+        "word": "de plus",
+        "pinyin": "",
+        "meaning": "a mais / a mais"
+      },
+      {
+        "id": 5,
+        "word": "y aller",
+        "pinyin": "",
+        "meaning": "ir lá"
+      }
+    ],
+    "id": "local-1780237039299-11",
+    "language": "Francês"
+  }
+]

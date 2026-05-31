@@ -1,0 +1,771 @@
+[
+  {
+    "chinese": "A: 마이크, 당신의 작업 허가증이 거부되었습니다!",
+    "pinyin": "",
+    "translation": "A: Mike, sua permissão de trabalho foi negada!",
+    "tokens": [
+      "A:",
+      "마이크",
+      ",",
+      "당신의",
+      "작업",
+      "허가증이",
+      "거부되었습니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "마이크",
+        "pinyin": "",
+        "meaning": "Mike"
+      },
+      {
+        "id": 2,
+        "word": "작업 허가증",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "거부되었습니다",
+        "pinyin": "",
+        "meaning": "foi negado"
+      },
+      {
+        "id": 4,
+        "word": "당신의",
+        "pinyin": "",
+        "meaning": "seu"
+      }
+    ],
+    "id": "local-1780231794832-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 제가 뭘 해야 하나요? 문제가 없어야 하는데, 전 회사에서는 비자 발급이 잘 됐거든요.",
+    "pinyin": "",
+    "translation": "B: Então, o que eu devo fazer? Não deveria haver nenhum problema. Na minha última empresa, o visto foi emitido sem problemas.",
+    "tokens": [
+      "B:",
+      "그럼",
+      "제가",
+      "뭘",
+      "해야",
+      "하나요",
+      "?",
+      "문제가",
+      "없어야",
+      "하는데",
+      ",",
+      "전",
+      "회사에서는",
+      "비자",
+      "발급이",
+      "잘",
+      "됐거든요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "뭘 해야 하나요",
+        "pinyin": "",
+        "meaning": "o que devo fazer"
+      },
+      {
+        "id": 3,
+        "word": "문제",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 4,
+        "word": "없어야",
+        "pinyin": "",
+        "meaning": "não deveria haver"
+      },
+      {
+        "id": 5,
+        "word": "전 회사",
+        "pinyin": "",
+        "meaning": "minha última empresa"
+      },
+      {
+        "id": 6,
+        "word": "비자",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 7,
+        "word": "발급",
+        "pinyin": "",
+        "meaning": "emissão"
+      }
+    ],
+    "id": "local-1780231794832-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 제가 물어봤어요. 이 문제는 직무 설명과 전공의 불일치 때문입니다. 대학 전공은 언어학이었고, 마지막 직종은 번역가였으니 괜찮습니다. 하지만 이번에는 마케팅 보조직으로 일하고 싶어 하십니다.",
+    "pinyin": "",
+    "translation": "A: Eu perguntei. É um problema com a descrição do cargo e sua área de formação. Sua graduação foi em linguística. Seu último emprego foi como tradutor, então isso está bem. No entanto, desta vez você quer trabalhar como Assistente de Marketing.",
+    "tokens": [
+      "A:",
+      "제가",
+      "물어봤어요",
+      ".",
+      "이",
+      "문제는",
+      "직무",
+      "설명과",
+      "전공의",
+      "불일치",
+      "때문입니다",
+      ".",
+      "대학",
+      "전공은",
+      "언어학이었고",
+      ",",
+      "마지막",
+      "직종은",
+      "번역가였으니",
+      "괜찮습니다",
+      ".",
+      "하지만",
+      "이번에는",
+      "마케팅",
+      "보조직으로",
+      "일하고",
+      "싶어",
+      "하십니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "직무 설명",
+        "pinyin": "",
+        "meaning": "descrição do cargo"
+      },
+      {
+        "id": 2,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "área de formação / graduação"
+      },
+      {
+        "id": 3,
+        "word": "언어학",
+        "pinyin": "",
+        "meaning": "linguística"
+      },
+      {
+        "id": 4,
+        "word": "번역가",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "마케팅 보조직",
+        "pinyin": "",
+        "meaning": "Assistente de Marketing"
+      },
+      {
+        "id": 6,
+        "word": "불일치",
+        "pinyin": "",
+        "meaning": "desajuste / incompatibilidade"
+      }
+    ],
+    "id": "local-1780231794832-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그게 무슨 상관이야? 회사는 내가 그 일에 적합하다고 생각해. 그게 충분해야 해.",
+    "pinyin": "",
+    "translation": "B: O que isso tem a ver com tudo? A empresa acha que sou qualificado para o trabalho. Isso deveria ser o suficiente.",
+    "tokens": [
+      "B:",
+      "그게",
+      "무슨",
+      "상관이야",
+      "?",
+      "회사는",
+      "내가",
+      "그",
+      "일에",
+      "적합하다고",
+      "생각해",
+      ".",
+      "그게",
+      "충분해야",
+      "해",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "무슨 상관이야",
+        "pinyin": "",
+        "meaning": "tem a ver com o quê"
+      },
+      {
+        "id": 2,
+        "word": "회사",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "적합하다",
+        "pinyin": "",
+        "meaning": "qualificado / adequado"
+      },
+      {
+        "id": 4,
+        "word": "충분해야 해",
+        "pinyin": "",
+        "meaning": "deveria ser suficiente"
+      },
+      {
+        "id": 5,
+        "word": "그게",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780231794832-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그렇지 않습니다. 중국 규정에 따르면 전공과 직무는 관련이 있어야 합니다.",
+    "pinyin": "",
+    "translation": "A: Não é. As regulamentações chinesas estabelecem que o curso superior e o trabalho devem estar relacionados.",
+    "tokens": [
+      "A:",
+      "그렇지",
+      "않습니다",
+      ".",
+      "중국",
+      "규정에",
+      "따르면",
+      "전공과",
+      "직무는",
+      "관련이",
+      "있어야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "규정",
+        "pinyin": "",
+        "meaning": "regulamento"
+      },
+      {
+        "id": 3,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "curso superior / especialidade"
+      },
+      {
+        "id": 4,
+        "word": "직무",
+        "pinyin": "",
+        "meaning": "cargo / função"
+      },
+      {
+        "id": 5,
+        "word": "관련",
+        "pinyin": "",
+        "meaning": "relação"
+      }
+    ],
+    "id": "local-1780231794832-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 이상하네요. 하지만 대학 시절 경영학을 부전공했어요. 괜찮을까요?",
+    "pinyin": "",
+    "translation": "B: Isso é muito estranho. No entanto, fiz um bacharelado secundário em negócios na faculdade. Está tudo bem?",
+    "tokens": [
+      "B:",
+      "정말",
+      "이상하네요",
+      ".",
+      "하지만",
+      "대학",
+      "시절",
+      "경영학을",
+      "부전공했어요",
+      ".",
+      "괜찮을까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이상하네요",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 2,
+        "word": "대학",
+        "pinyin": "",
+        "meaning": "faculdade"
+      },
+      {
+        "id": 3,
+        "word": "경영학",
+        "pinyin": "",
+        "meaning": "administração"
+      },
+      {
+        "id": 4,
+        "word": "부전공",
+        "pinyin": "",
+        "meaning": "bacharelado secundário"
+      },
+      {
+        "id": 5,
+        "word": "괜찮을까요",
+        "pinyin": "",
+        "meaning": "está tudo bem"
+      }
+    ],
+    "id": "local-1780231794832-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 시도해 보실 수 있겠지만, 이런 종류의 일을 해보신 적이 있으신가요?",
+    "pinyin": "",
+    "translation": "A: Você pode tentar, mas você já fez esse tipo de trabalho antes?",
+    "tokens": [
+      "A:",
+      "시도해",
+      "보실",
+      "수",
+      "있겠지만",
+      ",",
+      "이런",
+      "종류의",
+      "일을",
+      "해보신",
+      "적이",
+      "있으신가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "시도해",
+        "pinyin": "",
+        "meaning": "tentar"
+      },
+      {
+        "id": 2,
+        "word": "이런",
+        "pinyin": "",
+        "meaning": "esse tipo"
+      },
+      {
+        "id": 3,
+        "word": "종류",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 4,
+        "word": "일",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 5,
+        "word": "해보신",
+        "pinyin": "",
+        "meaning": "feito"
+      },
+      {
+        "id": 6,
+        "word": "적",
+        "pinyin": "",
+        "meaning": "experiência"
+      }
+    ],
+    "id": "local-1780231794832-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 아니요.",
+    "pinyin": "",
+    "translation": "B: Não.",
+    "tokens": [
+      "B:",
+      "아니요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "아니요",
+        "pinyin": "",
+        "meaning": "não"
+      }
+    ],
+    "id": "local-1780231794832-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 저것도 안 되네요. 전공이 같아야 하는 것뿐만 아니라, 이런 경력도 있어야 해요.",
+    "pinyin": "",
+    "translation": "A: Isso também não funciona. Não é só preciso ter a mesma graduação, mas também ter esse tipo de experiência de trabalho.",
+    "tokens": [
+      "A:",
+      "저것도",
+      "안",
+      "되네요",
+      ".",
+      "전공이",
+      "같아야",
+      "하는",
+      "것뿐만",
+      "아니라",
+      ",",
+      "이런",
+      "경력도",
+      "있어야",
+      "해요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "전공",
+        "pinyin": "",
+        "meaning": "graduação"
+      },
+      {
+        "id": 2,
+        "word": "경력",
+        "pinyin": "",
+        "meaning": "experiência de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "같아야",
+        "pinyin": "",
+        "meaning": "ter que ser igual"
+      },
+      {
+        "id": 4,
+        "word": "뿐만 아니라",
+        "pinyin": "",
+        "meaning": "além de"
+      }
+    ],
+    "id": "local-1780231794832-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그럼 중국에서는 통역사로서만 일할 수 있나요?",
+    "pinyin": "",
+    "translation": "B: Então só posso trabalhar como tradutor na China?",
+    "tokens": [
+      "B:",
+      "그럼",
+      "중국에서는",
+      "통역사로서만",
+      "일할",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "중국에서는",
+        "pinyin": "",
+        "meaning": "na China"
+      },
+      {
+        "id": 3,
+        "word": "통역사로서만",
+        "pinyin": "",
+        "meaning": "apenas como intérprete"
+      },
+      {
+        "id": 4,
+        "word": "일할",
+        "pinyin": "",
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 5,
+        "word": "수 있나요",
+        "pinyin": "",
+        "meaning": "é possível?"
+      }
+    ],
+    "id": "local-1780231794832-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 이렇게 해 보죠. 제가 매니저에게 이 건에 대해 말씀드리겠습니다. 직함을 마케팅 부서 번역가로 변경해 드리겠지만, 실제로 하시는 업무는 변함이 없을 겁니다.",
+    "pinyin": "",
+    "translation": "A: Vamos fazer o seguinte: eu vou falar com o gerente sobre isso. Vamos mudar seu título para Tradução do Departamento de Marketing, mas na realidade o trabalho que você está fazendo não vai mudar.",
+    "tokens": [
+      "A:",
+      "이렇게",
+      "해",
+      "보죠",
+      ".",
+      "제가",
+      "매니저에게",
+      "이",
+      "건에",
+      "대해",
+      "말씀드리겠습니다",
+      ".",
+      "직함을",
+      "마케팅",
+      "부서",
+      "번역가로",
+      "변경해",
+      "드리겠지만",
+      ",",
+      "실제로",
+      "하시는",
+      "업무는",
+      "변함이",
+      "없을",
+      "겁니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "매니저",
+        "pinyin": "",
+        "meaning": "gerente"
+      },
+      {
+        "id": 2,
+        "word": "직함",
+        "pinyin": "",
+        "meaning": "título"
+      },
+      {
+        "id": 3,
+        "word": "마케팅 부서",
+        "pinyin": "",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 4,
+        "word": "번역가",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "업무",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 6,
+        "word": "변함",
+        "pinyin": "",
+        "meaning": "mudança"
+      }
+    ],
+    "id": "local-1780231794832-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이거 괜찮아요?",
+    "pinyin": "",
+    "translation": "B: Isso está ok?",
+    "tokens": [
+      "B:",
+      "이거",
+      "괜찮아요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이거",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 2,
+        "word": "괜찮아요",
+        "pinyin": "",
+        "meaning": "está ok / é aceitável"
+      },
+      {
+        "id": 3,
+        "word": "이",
+        "pinyin": "",
+        "meaning": "este/esta (demonstrativo)"
+      },
+      {
+        "id": 4,
+        "word": "거",
+        "pinyin": "",
+        "meaning": "coisa (substantivo)"
+      },
+      {
+        "id": 5,
+        "word": "요",
+        "pinyin": "",
+        "meaning": "sufixo de polidez"
+      }
+    ],
+    "id": "local-1780231794832-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럴 거예요. 일부 기업들이 그렇게 한다는 이야기를 들었어요. 그렇게 하면 통과하기가 쉬워지죠. 어쨌든 번역가는 외국인이 하기에도 전혀 문제없는 직업이에요.",
+    "pinyin": "",
+    "translation": "A: Deveria ser. Ouvi dizer que algumas empresas fazem isso. Dessa forma, é fácil passar. De qualquer forma, um tradutor é um trabalho perfeitamente aceitável para um estrangeiro.",
+    "tokens": [
+      "A:",
+      "그럴",
+      "거예요",
+      ".",
+      "일부",
+      "기업들이",
+      "그렇게",
+      "한다는",
+      "이야기를",
+      "들었어요",
+      ".",
+      "그렇게",
+      "하면",
+      "통과하기가",
+      "쉬워지죠",
+      ".",
+      "어쨌든",
+      "번역가는",
+      "외국인이",
+      "하기에도",
+      "전혀",
+      "문제없는",
+      "직업이에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기업들",
+        "pinyin": "",
+        "meaning": "empresas"
+      },
+      {
+        "id": 2,
+        "word": "통과하기",
+        "pinyin": "",
+        "meaning": "passar / ser aprovado"
+      },
+      {
+        "id": 3,
+        "word": "번역가",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 4,
+        "word": "외국인",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 5,
+        "word": "직업",
+        "pinyin": "",
+        "meaning": "profissão / trabalho"
+      }
+    ],
+    "id": "local-1780231794832-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 알겠습니다. 중국에서는 제가 항상 번역가가 될 것 같습니다.",
+    "pinyin": "",
+    "translation": "B: Certo. Parece que vou ser sempre um tradutor na China.",
+    "tokens": [
+      "B:",
+      "알겠습니다",
+      ".",
+      "중국에서는",
+      "제가",
+      "항상",
+      "번역가가",
+      "될",
+      "것",
+      "같습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "번역가",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 3,
+        "word": "항상",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 4,
+        "word": "될",
+        "pinyin": "",
+        "meaning": "será/virar"
+      },
+      {
+        "id": 5,
+        "word": "것",
+        "pinyin": "",
+        "meaning": "coisa/resultado"
+      }
+    ],
+    "id": "local-1780231794832-13",
+    "language": "Coreano"
+  }
+]

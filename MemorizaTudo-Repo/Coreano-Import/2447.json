@@ -1,0 +1,604 @@
+[
+  {
+    "chinese": "A: 위보 봤어요? 정말 충격적이에요.",
+    "pinyin": "",
+    "translation": "A: Você viu o Weibo? É realmente chocante.",
+    "tokens": [
+      "A:",
+      "위보",
+      "봤어요",
+      "?",
+      "정말",
+      "충격적이에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "위보",
+        "pinyin": "",
+        "meaning": "Weibo"
+      },
+      {
+        "id": 2,
+        "word": "봤어요",
+        "pinyin": "",
+        "meaning": "viu (ver)"
+      },
+      {
+        "id": 3,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 4,
+        "word": "충격적이에요",
+        "pinyin": "",
+        "meaning": "chocante"
+      }
+    ],
+    "id": "local-1780232222978-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 무슨 일이 있었나요?",
+    "pinyin": "",
+    "translation": "B: O que aconteceu?",
+    "tokens": [
+      "B:",
+      "무슨",
+      "일이",
+      "있었나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "무슨",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "일",
+        "pinyin": "",
+        "meaning": "coisa"
+      },
+      {
+        "id": 3,
+        "word": "있었",
+        "pinyin": "",
+        "meaning": "havia"
+      },
+      {
+        "id": 4,
+        "word": "나요",
+        "pinyin": "",
+        "meaning": "interrogativo"
+      }
+    ],
+    "id": "local-1780232222978-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 푸젠에 결혼한 동성 커플이 있는데, 그들은 화려한 결혼식을 올렸고 웨이보에 수많은 사진을 게시했습니다.",
+    "pinyin": "",
+    "translation": "A: Há um casal gay em Fujian que se casou. Eles realizaram uma grande cerimônia de casamento e também postaram várias fotos no Weibo.",
+    "tokens": [
+      "A:",
+      "푸젠에",
+      "결혼한",
+      "동성",
+      "커플이",
+      "있는데",
+      ",",
+      "그들은",
+      "화려한",
+      "결혼식을",
+      "올렸고",
+      "웨이보에",
+      "수많은",
+      "사진을",
+      "게시했습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "동성 커플",
+        "pinyin": "",
+        "meaning": "casal gay"
+      },
+      {
+        "id": 2,
+        "word": "결혼식",
+        "pinyin": "",
+        "meaning": "cerimônia de casamento"
+      },
+      {
+        "id": 3,
+        "word": "화려한",
+        "pinyin": "",
+        "meaning": "grandioso"
+      },
+      {
+        "id": 4,
+        "word": "웨이보",
+        "pinyin": "",
+        "meaning": "Weibo"
+      },
+      {
+        "id": 5,
+        "word": "사진",
+        "pinyin": "",
+        "meaning": "fotos"
+      },
+      {
+        "id": 6,
+        "word": "게시했습니다",
+        "pinyin": "",
+        "meaning": "postou"
+      }
+    ],
+    "id": "local-1780232222978-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 꽤 정상적인 일이에요. 요즘 사회는 훨씬 더 개방적이죠. 동성애도 그리 드문 일이 아니에요.",
+    "pinyin": "",
+    "translation": "B: Isso é bastante normal. Hoje em dia, a sociedade é muito mais aberta. A homossexualidade não é tão rara.",
+    "tokens": [
+      "B:",
+      "그건",
+      "꽤",
+      "정상적인",
+      "일이에요",
+      ".",
+      "요즘",
+      "사회는",
+      "훨씬",
+      "더",
+      "개방적이죠",
+      ".",
+      "동성애도",
+      "그리",
+      "드문",
+      "일이",
+      "아니에요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정상적인",
+        "pinyin": "",
+        "meaning": "normal"
+      },
+      {
+        "id": 2,
+        "word": "개방적이죠",
+        "pinyin": "",
+        "meaning": "aberta"
+      },
+      {
+        "id": 3,
+        "word": "동성애",
+        "pinyin": "",
+        "meaning": "homossexualidade"
+      },
+      {
+        "id": 4,
+        "word": "드문",
+        "pinyin": "",
+        "meaning": "rara"
+      },
+      {
+        "id": 5,
+        "word": "사회",
+        "pinyin": "",
+        "meaning": "sociedade"
+      }
+    ],
+    "id": "local-1780232222978-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 점점 더 많은 사람들이 이를 받아들이고 있지만, 저는 여전히 대규모 결혼식을 올리는 것이 조금 이상하다고 생각합니다.",
+    "pinyin": "",
+    "translation": "A: Embora cada vez mais pessoas estejam aceitando isso, ainda acho que realizar uma grande cerimônia de casamento é um pouco estranho.",
+    "tokens": [
+      "A:",
+      "점점",
+      "더",
+      "많은",
+      "사람들이",
+      "이를",
+      "받아들이고",
+      "있지만",
+      ",",
+      "저는",
+      "여전히",
+      "대규모",
+      "결혼식을",
+      "올리는",
+      "것이",
+      "조금",
+      "이상하다고",
+      "생각합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "대규모",
+        "pinyin": "",
+        "meaning": "grande escala"
+      },
+      {
+        "id": 2,
+        "word": "결혼식",
+        "pinyin": "",
+        "meaning": "casamento"
+      },
+      {
+        "id": 3,
+        "word": "올리는",
+        "pinyin": "",
+        "meaning": "realizar/celebrar"
+      },
+      {
+        "id": 4,
+        "word": "이상하다",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 5,
+        "word": "받아들이고",
+        "pinyin": "",
+        "meaning": "aceitando"
+      },
+      {
+        "id": 6,
+        "word": "점점",
+        "pinyin": "",
+        "meaning": "gradualmente/cada vez mais"
+      }
+    ],
+    "id": "local-1780232222978-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그들도 사람이고 감정적 필요가 있습니다.",
+    "pinyin": "",
+    "translation": "B: Eles também são pessoas e têm necessidades emocionais.",
+    "tokens": [
+      "B:",
+      "그들도",
+      "사람이고",
+      "감정적",
+      "필요가",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "그들도",
+        "pinyin": "",
+        "meaning": "eles também"
+      },
+      {
+        "id": 2,
+        "word": "사람",
+        "pinyin": "",
+        "meaning": "pessoa"
+      },
+      {
+        "id": 3,
+        "word": "감정적",
+        "pinyin": "",
+        "meaning": "emocional"
+      },
+      {
+        "id": 4,
+        "word": "필요",
+        "pinyin": "",
+        "meaning": "necessidade"
+      },
+      {
+        "id": 5,
+        "word": "있습니다",
+        "pinyin": "",
+        "meaning": "tem/há"
+      }
+    ],
+    "id": "local-1780232222978-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 하지만 중국에서는 동성결혼이 불법이 아닙니까?",
+    "pinyin": "",
+    "translation": "A: Mas o casamento gay não é ilegal na China?",
+    "tokens": [
+      "A:",
+      "하지만",
+      "중국에서는",
+      "동성결혼이",
+      "불법이",
+      "아닙니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "동성결혼",
+        "pinyin": "",
+        "meaning": "casamento entre pessoas do mesmo sexo"
+      },
+      {
+        "id": 3,
+        "word": "불법",
+        "pinyin": "",
+        "meaning": "ilegal"
+      },
+      {
+        "id": 4,
+        "word": "아닙니까",
+        "pinyin": "",
+        "meaning": "não é?"
+      },
+      {
+        "id": 5,
+        "word": "하지만",
+        "pinyin": "",
+        "meaning": "mas"
+      }
+    ],
+    "id": "local-1780232222978-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그런 것 같습니다. 하지만 해외 많은 곳에서는 이미 동성결혼 법이 시행되고 있어 많은 사람들이 등록을 위해 해외로 나갑니다.",
+    "pinyin": "",
+    "translation": "B: Parece que sim. Mas em muitos lugares no exterior, as leis de casamento gay já estão em vigor, então muitas pessoas vão para o exterior para se registrar.",
+    "tokens": [
+      "B:",
+      "그런",
+      "것",
+      "같습니다",
+      ".",
+      "하지만",
+      "해외",
+      "많은",
+      "곳에서는",
+      "이미",
+      "동성결혼",
+      "법이",
+      "시행되고",
+      "있어",
+      "많은",
+      "사람들이",
+      "등록을",
+      "위해",
+      "해외로",
+      "나갑니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "동성결혼",
+        "pinyin": "",
+        "meaning": "casamento gay"
+      },
+      {
+        "id": 2,
+        "word": "법",
+        "pinyin": "",
+        "meaning": "lei"
+      },
+      {
+        "id": 3,
+        "word": "시행되고",
+        "pinyin": "",
+        "meaning": "em vigor"
+      },
+      {
+        "id": 4,
+        "word": "해외",
+        "pinyin": "",
+        "meaning": "no exterior"
+      },
+      {
+        "id": 5,
+        "word": "등록",
+        "pinyin": "",
+        "meaning": "registro"
+      },
+      {
+        "id": 6,
+        "word": "나갑니다",
+        "pinyin": "",
+        "meaning": "vai"
+      }
+    ],
+    "id": "local-1780232222978-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 저는 그것이 오직 이렇게 될 수밖에 없다고 생각합니다. 중국은 아마도 그 법안을 통과시키지 못할 것입니다.",
+    "pinyin": "",
+    "translation": "A: Acho que só pode ser assim. A China provavelmente não conseguiria aprovar essa lei.",
+    "tokens": [
+      "A:",
+      "저는",
+      "그것이",
+      "오직",
+      "이렇게",
+      "될",
+      "수밖에",
+      "없다고",
+      "생각합니다",
+      ".",
+      "중국은",
+      "아마도",
+      "그",
+      "법안을",
+      "통과시키지",
+      "못할",
+      "것입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저는",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "오직",
+        "pinyin": "",
+        "meaning": "apenas / somente"
+      },
+      {
+        "id": 3,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "법안",
+        "pinyin": "",
+        "meaning": "projeto de lei / lei"
+      },
+      {
+        "id": 5,
+        "word": "통과시키지",
+        "pinyin": "",
+        "meaning": "não aprovar / não passar"
+      },
+      {
+        "id": 6,
+        "word": "생각합니다",
+        "pinyin": "",
+        "meaning": "penso / acho"
+      }
+    ],
+    "id": "local-1780232222978-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 결국 우리의 전통적인 관념은 여전히 이성애 결혼만을 주류로 간주합니다. 하지만 저는 우리 사회가 더 관용적이고 다양해지기를 바랍니다.",
+    "pinyin": "",
+    "translation": "B: No final das contas, nossas ideias tradicionais ainda consideram apenas o casamento heterossexual como mainstream. No entanto, ainda desejo que nossa sociedade possa ser mais tolerante e diversa.",
+    "tokens": [
+      "B:",
+      "결국",
+      "우리의",
+      "전통적인",
+      "관념은",
+      "여전히",
+      "이성애",
+      "결혼만을",
+      "주류로",
+      "간주합니다",
+      ".",
+      "하지만",
+      "저는",
+      "우리",
+      "사회가",
+      "더",
+      "관용적이고",
+      "다양해지기를",
+      "바랍니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "전통적인",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 2,
+        "word": "관념",
+        "pinyin": "",
+        "meaning": "ideias/conceitos"
+      },
+      {
+        "id": 3,
+        "word": "이성애",
+        "pinyin": "",
+        "meaning": "heterossexual"
+      },
+      {
+        "id": 4,
+        "word": "주류",
+        "pinyin": "",
+        "meaning": "mainstream"
+      },
+      {
+        "id": 5,
+        "word": "관용",
+        "pinyin": "",
+        "meaning": "tolerância"
+      }
+    ],
+    "id": "local-1780232222978-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 중국에는 아직 갈 길이 멉니다.",
+    "pinyin": "",
+    "translation": "A: A China ainda tem um longo caminho a percorrer nesse aspecto.",
+    "tokens": [
+      "A:",
+      "중국에는",
+      "아직",
+      "갈",
+      "길이",
+      "멉니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 2,
+        "word": "아직",
+        "pinyin": "",
+        "meaning": "ainda"
+      },
+      {
+        "id": 3,
+        "word": "갈 길이",
+        "pinyin": "",
+        "meaning": "caminho a percorrer"
+      },
+      {
+        "id": 4,
+        "word": "멉니다",
+        "pinyin": "",
+        "meaning": "é longo/distante"
+      }
+    ],
+    "id": "local-1780232222978-10",
+    "language": "Coreano"
+  }
+]

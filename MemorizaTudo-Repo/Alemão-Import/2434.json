@@ -1,0 +1,834 @@
+[
+  {
+    "chinese": "A: Mike, Ihr Arbeitsgenehmigung wurde abgelehnt!",
+    "pinyin": "",
+    "translation": "A: Mike, sua permissão de trabalho foi negada!",
+    "tokens": [
+      "A:",
+      "Mike",
+      ",",
+      "Ihr",
+      "Arbeitsgenehmigung",
+      "wurde",
+      "abgelehnt",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Arbeitsgenehmigung",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "abgelehnt",
+        "pinyin": "",
+        "meaning": "negada"
+      },
+      {
+        "id": 3,
+        "word": "Ihr",
+        "pinyin": "",
+        "meaning": "sua"
+      }
+    ],
+    "id": "local-1780228875547-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Oh, was soll ich dann tun? Da sollte es kein Problem geben. Meine letzte Firma hat mein Arbeitserlaubnis ganz gut besorgt.",
+    "pinyin": "",
+    "translation": "B: Ah, então o que eu faço? Não deveria haver nenhum problema. Minha última empresa conseguiu meu visto de trabalho sem problemas.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "was",
+      "soll",
+      "ich",
+      "dann",
+      "tun",
+      "?",
+      "Da",
+      "sollte",
+      "es",
+      "kein",
+      "Problem",
+      "geben",
+      ".",
+      "Meine",
+      "letzte",
+      "Firma",
+      "hat",
+      "mein",
+      "Arbeitserlaubnis",
+      "ganz",
+      "gut",
+      "besorgt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Arbeitserlaubnis",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "Problem",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "Firma",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "tun",
+        "pinyin": "",
+        "meaning": "fazer"
+      },
+      {
+        "id": 5,
+        "word": "besorgt",
+        "pinyin": "",
+        "meaning": "arranjado/conquistado"
+      }
+    ],
+    "id": "local-1780228875547-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich habe nachgefragt. Es ist ein Problem mit der Stellenbeschreibung und Ihrem Studium. Ihr Hochschulstudium war in Linguistik. Ihr letzter Job war als Übersetzer, also ist das in Ordnung. Allerdings möchten Sie dieses Mal als Marketing-Assistent arbeiten.",
+    "pinyin": "",
+    "translation": "A: Perguntei. É um problema com a descrição do cargo e sua graduação. Sua graduação universitária era em linguística. Seu último emprego foi como tradutor, então isso está tudo bem. No entanto, desta vez você quer trabalhar como Assistente de Marketing.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "habe",
+      "nachgefragt",
+      ".",
+      "Es",
+      "ist",
+      "ein",
+      "Problem",
+      "mit",
+      "der",
+      "Stellenbeschreibung",
+      "und",
+      "Ihrem",
+      "Studium",
+      ".",
+      "Ihr",
+      "Hochschulstudium",
+      "war",
+      "in",
+      "Linguistik",
+      ".",
+      "Ihr",
+      "letzter",
+      "Job",
+      "war",
+      "als",
+      "Übersetzer",
+      ",",
+      "also",
+      "ist",
+      "das",
+      "in",
+      "Ordnung",
+      ".",
+      "Allerdings",
+      "möchten",
+      "Sie",
+      "dieses",
+      "Mal",
+      "als",
+      "Marketing",
+      "-",
+      "Assistent",
+      "arbeiten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Stellenbeschreibung",
+        "pinyin": "",
+        "meaning": "descrição do cargo"
+      },
+      {
+        "id": 2,
+        "word": "Studium",
+        "pinyin": "",
+        "meaning": "estudo / graduação"
+      },
+      {
+        "id": 3,
+        "word": "Linguistik",
+        "pinyin": "",
+        "meaning": "linguística"
+      },
+      {
+        "id": 4,
+        "word": "Übersetzer",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "Marketing-Assistent",
+        "pinyin": "",
+        "meaning": "assistente de marketing"
+      },
+      {
+        "id": 6,
+        "word": "nachgefragt",
+        "pinyin": "",
+        "meaning": "perguntado / questionado"
+      }
+    ],
+    "id": "local-1780228875547-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was hat das überhaupt mit zu tun? Das Unternehmen ist der Ansicht, dass ich für den Job qualifiziert bin. Das sollte ausreichen.",
+    "pinyin": "",
+    "translation": "B: O que isso tem a ver com tudo? A empresa acha que sou qualificada para o trabalho. Isso deveria ser o suficiente.",
+    "tokens": [
+      "B:",
+      "Was",
+      "hat",
+      "das",
+      "überhaupt",
+      "mit",
+      "zu",
+      "tun",
+      "?",
+      "Das",
+      "Unternehmen",
+      "ist",
+      "der",
+      "Ansicht",
+      ",",
+      "dass",
+      "ich",
+      "für",
+      "den",
+      "Job",
+      "qualifiziert",
+      "bin",
+      ".",
+      "Das",
+      "sollte",
+      "ausreichen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "überhaupt",
+        "pinyin": "",
+        "meaning": "de forma alguma / no geral"
+      },
+      {
+        "id": 2,
+        "word": "Ansicht",
+        "pinyin": "",
+        "meaning": "opinião / ponto de vista"
+      },
+      {
+        "id": 3,
+        "word": "qualifiziert",
+        "pinyin": "",
+        "meaning": "qualificado"
+      },
+      {
+        "id": 4,
+        "word": "ausreichen",
+        "pinyin": "",
+        "meaning": "ser suficiente"
+      }
+    ],
+    "id": "local-1780228875547-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist nicht so. Die chinesischen Vorschriften besagen, dass das Hauptfach und die Arbeit in Beziehung stehen müssen.",
+    "pinyin": "",
+    "translation": "A: Não é assim. Os regulamentos chineses estabelecem que o curso principal e o trabalho devem estar relacionados.",
+    "tokens": [
+      "A:",
+      "Das",
+      "ist",
+      "nicht",
+      "so",
+      ".",
+      "Die",
+      "chinesischen",
+      "Vorschriften",
+      "besagen",
+      ",",
+      "dass",
+      "das",
+      "Hauptfach",
+      "und",
+      "die",
+      "Arbeit",
+      "in",
+      "Beziehung",
+      "stehen",
+      "müssen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chinesischen Vorschriften",
+        "pinyin": "",
+        "meaning": "regulamentos chineses"
+      },
+      {
+        "id": 2,
+        "word": "Hauptfach",
+        "pinyin": "",
+        "meaning": "curso principal"
+      },
+      {
+        "id": 3,
+        "word": "in Beziehung stehen",
+        "pinyin": "",
+        "meaning": "estar relacionado"
+      },
+      {
+        "id": 4,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "devem"
+      },
+      {
+        "id": 5,
+        "word": "besagen",
+        "pinyin": "",
+        "meaning": "estabelecer"
+      }
+    ],
+    "id": "local-1780228875547-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist sehr seltsam. Allerdings habe ich an der Universität Nebenfach Betriebswirtschaftslehre gewählt. Ist das in Ordnung?",
+    "pinyin": "",
+    "translation": "B: Isso é muito estranho. No entanto, fiz um curso secundário de administração na faculdade. Isso está ok?",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "sehr",
+      "seltsam",
+      ".",
+      "Allerdings",
+      "habe",
+      "ich",
+      "an",
+      "der",
+      "Universität",
+      "Nebenfach",
+      "Betriebswirtschaftslehre",
+      "gewählt",
+      ".",
+      "Ist",
+      "das",
+      "in",
+      "Ordnung",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seltsam",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 2,
+        "word": "Allerdings",
+        "pinyin": "",
+        "meaning": "no entanto"
+      },
+      {
+        "id": 3,
+        "word": "Universität",
+        "pinyin": "",
+        "meaning": "universidade"
+      },
+      {
+        "id": 4,
+        "word": "Nebenfach",
+        "pinyin": "",
+        "meaning": "curso secundário"
+      },
+      {
+        "id": 5,
+        "word": "Betriebswirtschaftslehre",
+        "pinyin": "",
+        "meaning": "administração"
+      },
+      {
+        "id": 6,
+        "word": "Ordnung",
+        "pinyin": "",
+        "meaning": "ordem"
+      }
+    ],
+    "id": "local-1780228875547-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich denke, du kannst es versuchen, aber hast du diese Art von Arbeit schon einmal gemacht?",
+    "pinyin": "",
+    "translation": "A: Acho que você pode tentar, mas você já fez esse tipo de trabalho antes?",
+    "tokens": [
+      "A:",
+      "Ich",
+      "denke",
+      ",",
+      "du",
+      "kannst",
+      "es",
+      "versuchen",
+      ",",
+      "aber",
+      "hast",
+      "du",
+      "diese",
+      "Art",
+      "von",
+      "Arbeit",
+      "schon",
+      "einmal",
+      "gemacht",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "versuchen",
+        "pinyin": "",
+        "meaning": "tentar"
+      },
+      {
+        "id": 2,
+        "word": "Arbeit",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "gemacht",
+        "pinyin": "",
+        "meaning": "feito"
+      },
+      {
+        "id": 4,
+        "word": "diese Art",
+        "pinyin": "",
+        "meaning": "esse tipo"
+      },
+      {
+        "id": 5,
+        "word": "schon einmal",
+        "pinyin": "",
+        "meaning": "já alguma vez"
+      }
+    ],
+    "id": "local-1780228875547-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Nein.",
+    "pinyin": "",
+    "translation": "B: Não.",
+    "tokens": [
+      "B:",
+      "Nein",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": "",
+        "meaning": "não"
+      }
+    ],
+    "id": "local-1780228875547-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Hey, das ist auch nicht gut. Du musst nicht nur den gleichen Hauptfach haben, sondern auch diese Art von Berufserfahrung.",
+    "pinyin": "",
+    "translation": "A: Ei, isso também não está bom. Você não precisa apenas ter a mesma graduação, mas também ter esse tipo de experiência de trabalho.",
+    "tokens": [
+      "A:",
+      "Hey",
+      ",",
+      "das",
+      "ist",
+      "auch",
+      "nicht",
+      "gut",
+      ".",
+      "Du",
+      "musst",
+      "nicht",
+      "nur",
+      "den",
+      "gleichen",
+      "Hauptfach",
+      "haben",
+      ",",
+      "sondern",
+      "auch",
+      "diese",
+      "Art",
+      "von",
+      "Berufserfahrung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hauptfach",
+        "pinyin": "",
+        "meaning": "graduação"
+      },
+      {
+        "id": 2,
+        "word": "Berufserfahrung",
+        "pinyin": "",
+        "meaning": "experiência de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "nicht nur",
+        "pinyin": "",
+        "meaning": "não apenas"
+      },
+      {
+        "id": 4,
+        "word": "sondern auch",
+        "pinyin": "",
+        "meaning": "mas também"
+      },
+      {
+        "id": 5,
+        "word": "Art",
+        "pinyin": "",
+        "meaning": "tipo"
+      }
+    ],
+    "id": "local-1780228875547-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Kann ich dann nur als Übersetzer in China arbeiten?",
+    "pinyin": "",
+    "translation": "B: Então posso trabalhar apenas como tradutor na China?",
+    "tokens": [
+      "B:",
+      "Kann",
+      "ich",
+      "dann",
+      "nur",
+      "als",
+      "Übersetzer",
+      "in",
+      "China",
+      "arbeiten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Übersetzer",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 2,
+        "word": "China",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "arbeiten",
+        "pinyin": "",
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 4,
+        "word": "dann",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 5,
+        "word": "nur",
+        "pinyin": "",
+        "meaning": "apenas"
+      }
+    ],
+    "id": "local-1780228875547-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wie wäre es, wenn ich das so mache: Ich spreche mit dem Manager darüber. Wir ändern deinen Titel in 'Übersetzer für die Marketingabteilung', aber in der Praxis ändert sich an deiner Arbeit nichts.",
+    "pinyin": "",
+    "translation": "A: Que tal fazermos o seguinte: vou falar com o gerente sobre isso. Vamos mudar seu título para Tradutor do Departamento de Marketing, mas, na realidade, o trabalho que você está fazendo não vai mudar.",
+    "tokens": [
+      "A:",
+      "Wie",
+      "wäre",
+      "es",
+      ",",
+      "wenn",
+      "ich",
+      "das",
+      "so",
+      "mache",
+      ":",
+      "Ich",
+      "spreche",
+      "mit",
+      "dem",
+      "Manager",
+      "darüber",
+      ".",
+      "Wir",
+      "ändern",
+      "deinen",
+      "Titel",
+      "in",
+      "'",
+      "Übersetzer",
+      "für",
+      "die",
+      "Marketingabteilung",
+      "'",
+      ",",
+      "aber",
+      "in",
+      "der",
+      "Praxis",
+      "ändert",
+      "sich",
+      "an",
+      "deiner",
+      "Arbeit",
+      "nichts",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Manager",
+        "pinyin": "",
+        "meaning": "gerente"
+      },
+      {
+        "id": 2,
+        "word": "Übersetzer",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 3,
+        "word": "Marketingabteilung",
+        "pinyin": "",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 4,
+        "word": "ändern",
+        "pinyin": "",
+        "meaning": "mudar"
+      }
+    ],
+    "id": "local-1780228875547-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ist das okay?",
+    "pinyin": "",
+    "translation": "B: Isso está ok?",
+    "tokens": [
+      "B:",
+      "Ist",
+      "das",
+      "okay",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ist",
+        "pinyin": "",
+        "meaning": "é (forma do verbo ser/estar)"
+      },
+      {
+        "id": 2,
+        "word": "das",
+        "pinyin": "",
+        "meaning": "isso/aquilo"
+      },
+      {
+        "id": 3,
+        "word": "okay",
+        "pinyin": "",
+        "meaning": "ok/aceitável"
+      }
+    ],
+    "id": "local-1780228875547-11",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das sollte so sein. Ich habe gehört, dass einige Unternehmen das tun. Auf diese Weise ist es leicht, durchzukommen. Wie auch immer, ein Übersetzer ist ein völlig akzeptabler Job für einen Ausländer.",
+    "pinyin": "",
+    "translation": "A: Deveria ser assim. Ouvi dizer que algumas empresas fazem isso. Dessa forma, é fácil passar. De qualquer forma, um tradutor é um trabalho perfeitamente aceitável para um estrangeiro.",
+    "tokens": [
+      "A:",
+      "Das",
+      "sollte",
+      "so",
+      "sein",
+      ".",
+      "Ich",
+      "habe",
+      "gehört",
+      ",",
+      "dass",
+      "einige",
+      "Unternehmen",
+      "das",
+      "tun",
+      ".",
+      "Auf",
+      "diese",
+      "Weise",
+      "ist",
+      "es",
+      "leicht",
+      ",",
+      "durchzukommen",
+      ".",
+      "Wie",
+      "auch",
+      "immer",
+      ",",
+      "ein",
+      "Übersetzer",
+      "ist",
+      "ein",
+      "völlig",
+      "akzeptabler",
+      "Job",
+      "für",
+      "einen",
+      "Ausländer",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "durchzukommen",
+        "pinyin": "",
+        "meaning": "passar / conseguir avançar"
+      },
+      {
+        "id": 2,
+        "word": "Unternehmen",
+        "pinyin": "",
+        "meaning": "empresas"
+      },
+      {
+        "id": 3,
+        "word": "akzeptabler",
+        "pinyin": "",
+        "meaning": "aceitável"
+      },
+      {
+        "id": 4,
+        "word": "Ausländer",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 5,
+        "word": "Übersetzer",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 6,
+        "word": "gehört",
+        "pinyin": "",
+        "meaning": "ouvido"
+      }
+    ],
+    "id": "local-1780228875547-12",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay. Es sieht so aus, als würde ich in China immer Übersetzer sein.",
+    "pinyin": "",
+    "translation": "B: Certo. Parece que vou ser sempre um tradutor na China.",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Es",
+      "sieht",
+      "so",
+      "aus",
+      ",",
+      "als",
+      "würde",
+      "ich",
+      "in",
+      "China",
+      "immer",
+      "Übersetzer",
+      "sein",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "immer",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 2,
+        "word": "sieht so aus",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 3,
+        "word": "als würde",
+        "pinyin": "",
+        "meaning": "como se"
+      }
+    ],
+    "id": "local-1780228875547-13",
+    "language": "Alemão"
+  }
+]

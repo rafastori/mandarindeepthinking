@@ -1,0 +1,958 @@
+[
+  {
+    "chinese": "A: Attraversa la strada. Non perdertela... La maglietta di Mike costa solo 50 yuan!",
+    "pinyin": "",
+    "translation": "A: Atravesse a rua. Não perca... A camiseta do Mike custa apenas 50 yuan!",
+    "tokens": [
+      "A:",
+      "Attraversa",
+      "la",
+      "strada",
+      ".",
+      "Non",
+      "perdertela",
+      ".",
+      ".",
+      ".",
+      "La",
+      "maglietta",
+      "di",
+      "Mike",
+      "costa",
+      "solo",
+      "50",
+      "yuan",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "strada",
+        "pinyin": "",
+        "meaning": "rua"
+      },
+      {
+        "id": 2,
+        "word": "maglietta",
+        "pinyin": "",
+        "meaning": "camiseta"
+      },
+      {
+        "id": 3,
+        "word": "costa",
+        "pinyin": "",
+        "meaning": "custa"
+      },
+      {
+        "id": 4,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 5,
+        "word": "yuan",
+        "pinyin": "",
+        "meaning": "yuan"
+      }
+    ],
+    "id": "local-1780258253407-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Guarda quel ragazzo. Mi sembra molto familiare.",
+    "pinyin": "",
+    "translation": "B: Olha para aquele cara. Ele parece muito familiar.",
+    "tokens": [
+      "B:",
+      "Guarda",
+      "quel",
+      "ragazzo",
+      ".",
+      "Mi",
+      "sembra",
+      "molto",
+      "familiare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guarda",
+        "pinyin": "",
+        "meaning": "Olha"
+      },
+      {
+        "id": 2,
+        "word": "ragazzo",
+        "pinyin": "",
+        "meaning": "rapaz"
+      },
+      {
+        "id": 3,
+        "word": "sembra",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 4,
+        "word": "familiare",
+        "pinyin": "",
+        "meaning": "familiar"
+      }
+    ],
+    "id": "local-1780258253407-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Ehi? Non è Tang, il tuo vicino di casa della tua città? Tang qualcosa? Cavolo, all'improvviso non riesco a ricordarmi.",
+    "pinyin": "",
+    "translation": "C: Ei? Não é o Tang, seu vizinho da sua cidade natal? Tang algo? Puxa, de repente não consigo me lembrar.",
+    "tokens": [
+      "C:",
+      "Ehi",
+      "?",
+      "Non",
+      "è",
+      "Tang",
+      ",",
+      "il",
+      "tuo",
+      "vicino",
+      "di",
+      "casa",
+      "della",
+      "tua",
+      "città",
+      "?",
+      "Tang",
+      "qualcosa",
+      "?",
+      "Cavolo",
+      ",",
+      "all'improvviso",
+      "non",
+      "riesco",
+      "a",
+      "ricordarmi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vicino di casa",
+        "pinyin": "",
+        "meaning": "vizinho"
+      },
+      {
+        "id": 2,
+        "word": "città",
+        "pinyin": "",
+        "meaning": "cidade"
+      },
+      {
+        "id": 3,
+        "word": "Cavolo",
+        "pinyin": "",
+        "meaning": "Puxa / Cara"
+      },
+      {
+        "id": 4,
+        "word": "all'improvviso",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 5,
+        "word": "ricordarmi",
+        "pinyin": "",
+        "meaning": "lembrar-me"
+      }
+    ],
+    "id": "local-1780258253407-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tang Guo!",
+    "pinyin": "",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "B:",
+      "Tang",
+      "Guo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tang",
+        "pinyin": "",
+        "meaning": "Sobrenome chinês"
+      },
+      {
+        "id": 2,
+        "word": "Guo",
+        "pinyin": "",
+        "meaning": "Sobrenome chinês"
+      }
+    ],
+    "id": "local-1780258253407-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: È vero! È lui! Sembra che sia venuto in città per vendere vestiti. Non lo vedo da soli due anni e già se la cava bene. Andiamo a salutarlo! Nel frattempo, possiamo anche dare un'occhiata per vedere se ci piace qualche capo.",
+    "pinyin": "",
+    "translation": "C: Isso mesmo! É ele! Parece que ele veio para a cidade vender roupas. Não o vejo há apenas dois anos e já está se dando bem. Vamos lá cumprimentá-lo! Enquanto isso, podemos dar uma olhada para ver se gostamos de alguma peça.",
+    "tokens": [
+      "C:",
+      "È",
+      "vero",
+      "!",
+      "È",
+      "lui",
+      "!",
+      "Sembra",
+      "che",
+      "sia",
+      "venuto",
+      "in",
+      "città",
+      "per",
+      "vendere",
+      "vestiti",
+      ".",
+      "Non",
+      "lo",
+      "vedo",
+      "da",
+      "soli",
+      "due",
+      "anni",
+      "e",
+      "già",
+      "se",
+      "la",
+      "cava",
+      "bene",
+      ".",
+      "Andiamo",
+      "a",
+      "salutarlo",
+      "!",
+      "Nel",
+      "frattempo",
+      ",",
+      "possiamo",
+      "anche",
+      "dare",
+      "un'occhiata",
+      "per",
+      "vedere",
+      "se",
+      "ci",
+      "piace",
+      "qualche",
+      "capo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "È vero",
+        "pinyin": "",
+        "meaning": "É verdade / Isso mesmo"
+      },
+      {
+        "id": 2,
+        "word": "vestiti",
+        "pinyin": "",
+        "meaning": "roupas"
+      },
+      {
+        "id": 3,
+        "word": "se la cava",
+        "pinyin": "",
+        "meaning": "se dá bem / se sai bem"
+      },
+      {
+        "id": 4,
+        "word": "salutarlo",
+        "pinyin": "",
+        "meaning": "cumprimentá-lo"
+      },
+      {
+        "id": 5,
+        "word": "capo",
+        "pinyin": "",
+        "meaning": "peça (de roupa)"
+      }
+    ],
+    "id": "local-1780258253407-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Tang Guo!",
+    "pinyin": "",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "B:",
+      "Tang",
+      "Guo",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tang",
+        "pinyin": "",
+        "meaning": "sobrenome chinês"
+      },
+      {
+        "id": 2,
+        "word": "Guo",
+        "pinyin": "",
+        "meaning": "sobrenome chinês"
+      }
+    ],
+    "id": "local-1780258253407-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Eh? È il fratello Zhang! Che coincidenza!",
+    "pinyin": "",
+    "translation": "A: Hã? É o irmão Zhang! Que coincidência!",
+    "tokens": [
+      "A:",
+      "Eh",
+      "?",
+      "È",
+      "il",
+      "fratello",
+      "Zhang",
+      "!",
+      "Che",
+      "coincidenza",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fratello",
+        "pinyin": "",
+        "meaning": "irmão"
+      },
+      {
+        "id": 2,
+        "word": "coincidenza",
+        "pinyin": "",
+        "meaning": "coincidência"
+      },
+      {
+        "id": 3,
+        "word": "Eh",
+        "pinyin": "",
+        "meaning": "hã / eh"
+      },
+      {
+        "id": 4,
+        "word": "Che",
+        "pinyin": "",
+        "meaning": "que"
+      }
+    ],
+    "id": "local-1780258253407-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Sì! Quasi non ti ho riconosciuto! Quando sei arrivato a Shanghai? Il tuo business non è male!",
+    "pinyin": "",
+    "translation": "B: Sim! Quase não te reconheci! Quando você chegou em Xangai? Seu negócio não está mal!",
+    "tokens": [
+      "B:",
+      "Sì",
+      "!",
+      "Quasi",
+      "non",
+      "ti",
+      "ho",
+      "riconosciuto",
+      "!",
+      "Quando",
+      "sei",
+      "arrivato",
+      "a",
+      "Shanghai",
+      "?",
+      "Il",
+      "tuo",
+      "business",
+      "non",
+      "è",
+      "male",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "riconosciuto",
+        "pinyin": "",
+        "meaning": "reconhecido"
+      },
+      {
+        "id": 2,
+        "word": "arrivato",
+        "pinyin": "",
+        "meaning": "chegado"
+      },
+      {
+        "id": 3,
+        "word": "Shanghai",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "business",
+        "pinyin": "",
+        "meaning": "negócio"
+      },
+      {
+        "id": 5,
+        "word": "male",
+        "pinyin": "",
+        "meaning": "mal"
+      }
+    ],
+    "id": "local-1780258253407-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non è male. Basta per arrangiarsi. Andiamo, andiamo, andiamo! Cugino Zhang, vediamo se ti piace qualcosa o no. Scegli qualcosa e provatela!",
+    "pinyin": "",
+    "translation": "A: Não está mal. É o suficiente para se virar. Vamos, vamos, vamos! Primo Zhang, veja se você gosta de algo ou não. Escolha algo e experimente!",
+    "tokens": [
+      "A:",
+      "Non",
+      "è",
+      "male",
+      ".",
+      "Basta",
+      "per",
+      "arrangiarsi",
+      ".",
+      "Andiamo",
+      ",",
+      "andiamo",
+      ",",
+      "andiamo",
+      "!",
+      "Cugino",
+      "Zhang",
+      ",",
+      "vediamo",
+      "se",
+      "ti",
+      "piace",
+      "qualcosa",
+      "o",
+      "no",
+      ".",
+      "Scegli",
+      "qualcosa",
+      "e",
+      "provatela",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "arrangiarsi",
+        "pinyin": "",
+        "meaning": "se virar"
+      },
+      {
+        "id": 2,
+        "word": "Cugino",
+        "pinyin": "",
+        "meaning": "primo"
+      },
+      {
+        "id": 3,
+        "word": "provatela",
+        "pinyin": "",
+        "meaning": "experimente"
+      },
+      {
+        "id": 4,
+        "word": "andiamo",
+        "pinyin": "",
+        "meaning": "vamos"
+      }
+    ],
+    "id": "local-1780258253407-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Wow! Gucci, LV, Chanel, Burberry, Prada... Sono tutti grandi marchi internazionali. Sono veri?",
+    "pinyin": "",
+    "translation": "C: Uau! Gucci, LV, Chanel, Burberry, Prada... São todas grandes marcas internacionais. Elas são originais?",
+    "tokens": [
+      "C:",
+      "Wow",
+      "!",
+      "Gucci",
+      ",",
+      "LV",
+      ",",
+      "Chanel",
+      ",",
+      "Burberry",
+      ",",
+      "Prada",
+      ".",
+      ".",
+      ".",
+      "Sono",
+      "tutti",
+      "grandi",
+      "marchi",
+      "internazionali",
+      ".",
+      "Sono",
+      "veri",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "marchi",
+        "pinyin": "",
+        "meaning": "marcas"
+      },
+      {
+        "id": 2,
+        "word": "internazionali",
+        "pinyin": "",
+        "meaning": "internacionais"
+      },
+      {
+        "id": 3,
+        "word": "veri",
+        "pinyin": "",
+        "meaning": "originais"
+      },
+      {
+        "id": 4,
+        "word": "grandi",
+        "pinyin": "",
+        "meaning": "grandes"
+      },
+      {
+        "id": 5,
+        "word": "tutti",
+        "pinyin": "",
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1780258253407-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Questi sono tutti prodotti respinti, vero?",
+    "pinyin": "",
+    "translation": "B: Estes são todas as mercadorias rejeitadas, certo?",
+    "tokens": [
+      "B:",
+      "Questi",
+      "sono",
+      "tutti",
+      "prodotti",
+      "respinti",
+      ",",
+      "vero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "prodotti",
+        "pinyin": "",
+        "meaning": "produtos"
+      },
+      {
+        "id": 2,
+        "word": "respinti",
+        "pinyin": "",
+        "meaning": "rejeitados"
+      },
+      {
+        "id": 3,
+        "word": "tutti",
+        "pinyin": "",
+        "meaning": "todos"
+      }
+    ],
+    "id": "local-1780258253407-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Sono falsi? Ma la qualità e la fattura di questi vestiti sono davvero ottime. È come se non riuscissi a distinguere l'originale dalla copia. Dovrebbero essere veri.",
+    "pinyin": "",
+    "translation": "C: São falsos? Mas a qualidade e o acabamento dessas roupas são realmente bons. É como se eu não conseguisse distinguir o original da falsificação. Eles deveriam ser verdadeiros.",
+    "tokens": [
+      "C:",
+      "Sono",
+      "falsi",
+      "?",
+      "Ma",
+      "la",
+      "qualità",
+      "e",
+      "la",
+      "fattura",
+      "di",
+      "questi",
+      "vestiti",
+      "sono",
+      "davvero",
+      "ottime",
+      ".",
+      "È",
+      "come",
+      "se",
+      "non",
+      "riuscissi",
+      "a",
+      "distinguere",
+      "l'originale",
+      "dalla",
+      "copia",
+      ".",
+      "Dovrebbero",
+      "essere",
+      "veri",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "falsi",
+        "pinyin": "",
+        "meaning": "falsos"
+      },
+      {
+        "id": 2,
+        "word": "qualità",
+        "pinyin": "",
+        "meaning": "qualidade"
+      },
+      {
+        "id": 3,
+        "word": "fattura",
+        "pinyin": "",
+        "meaning": "acabamento"
+      },
+      {
+        "id": 4,
+        "word": "vestiti",
+        "pinyin": "",
+        "meaning": "roupas"
+      },
+      {
+        "id": 5,
+        "word": "distinguere",
+        "pinyin": "",
+        "meaning": "distinguir"
+      },
+      {
+        "id": 6,
+        "word": "originale",
+        "pinyin": "",
+        "meaning": "original"
+      },
+      {
+        "id": 7,
+        "word": "copia",
+        "pinyin": "",
+        "meaning": "cópia"
+      }
+    ],
+    "id": "local-1780258253407-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Shh! Ciò che ha detto il fratello Zhang è vero. Si tratta in realtà di merce respinta. Se non si guarda attentamente, non si nota la differenza. La merce respinta è identica a quella autentica per quanto riguarda materiali, design e cucitura. Tuttavia, presentano tutte piccole imperfezioni. Ad esempio, i bottoni non sono simmetrici o le etichette sono errate. Secondo i regolamenti, questi vestiti dovrebbero essere tutti distrutti, ma ci sono alcune persone nelle fabbriche di abbigliamento che escono di nascosto con queste merci difettose e le vendono. La merce respinta è una: economica; due: gli stili più nuovi; tre: buona qualità; e quattro: di marca. Quindi è facile da vendere nei mercati di fascia bassa.",
+    "pinyin": "",
+    "translation": "A: Shh! O que o Irmão Zhang disse é verdade. Estas são na verdade mercadorias rejeitadas. Se você não olhar com cuidado, não consegue ver a diferença. Mercadorias rejeitadas são iguais às mercadorias genuínas em termos de materiais, design e costura. No entanto, elas têm pequenas imperfeições. Por exemplo, os botões não são simétricos ou as etiquetas estão incorretas. De acordo com os regulamentos, essas roupas deveriam ser todas destruídas, mas há algumas pessoas nas fábricas de roupas que escondem essas mercadorias defeituosas e as vendem. Mercadorias rejeitadas são uma: baratas; duas: os estilos mais novos; três: boa qualidade; e quatro: de marca. Então são boas para vender em mercados de baixo custo.",
+    "tokens": [
+      "A:",
+      "Shh",
+      "!",
+      "Ciò",
+      "che",
+      "ha",
+      "detto",
+      "il",
+      "fratello",
+      "Zhang",
+      "è",
+      "vero",
+      ".",
+      "Si",
+      "tratta",
+      "in",
+      "realtà",
+      "di",
+      "merce",
+      "respinta",
+      ".",
+      "Se",
+      "non",
+      "si",
+      "guarda",
+      "attentamente",
+      ",",
+      "non",
+      "si",
+      "nota",
+      "la",
+      "differenza",
+      ".",
+      "La",
+      "merce",
+      "respinta",
+      "è",
+      "identica",
+      "a",
+      "quella",
+      "autentica",
+      "per",
+      "quanto",
+      "riguarda",
+      "materiali",
+      ",",
+      "design",
+      "e",
+      "cucitura",
+      ".",
+      "Tuttavia",
+      ",",
+      "presentano",
+      "tutte",
+      "piccole",
+      "imperfezioni",
+      ".",
+      "Ad",
+      "esempio",
+      ",",
+      "i",
+      "bottoni",
+      "non",
+      "sono",
+      "simmetrici",
+      "o",
+      "le",
+      "etichette",
+      "sono",
+      "errate",
+      ".",
+      "Secondo",
+      "i",
+      "regolamenti",
+      ",",
+      "questi",
+      "vestiti",
+      "dovrebbero",
+      "essere",
+      "tutti",
+      "distrutti",
+      ",",
+      "ma",
+      "ci",
+      "sono",
+      "alcune",
+      "persone",
+      "nelle",
+      "fabbriche",
+      "di",
+      "abbigliamento",
+      "che",
+      "escono",
+      "di",
+      "nascosto",
+      "con",
+      "queste",
+      "merci",
+      "difettose",
+      "e",
+      "le",
+      "vendono",
+      ".",
+      "La",
+      "merce",
+      "respinta",
+      "è",
+      "una",
+      ":",
+      "economica",
+      ";",
+      "due",
+      ":",
+      "gli",
+      "stili",
+      "più",
+      "nuovi",
+      ";",
+      "tre",
+      ":",
+      "buona",
+      "qualità",
+      ";",
+      "e",
+      "quattro",
+      ":",
+      "di",
+      "marca",
+      ".",
+      "Quindi",
+      "è",
+      "facile",
+      "da",
+      "vendere",
+      "nei",
+      "mercati",
+      "di",
+      "fascia",
+      "bassa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "merce respinta",
+        "pinyin": "",
+        "meaning": "mercadoria rejeitada"
+      },
+      {
+        "id": 2,
+        "word": "fratello Zhang",
+        "pinyin": "",
+        "meaning": "Irmão Zhang"
+      },
+      {
+        "id": 3,
+        "word": "materiali",
+        "pinyin": "",
+        "meaning": "materiais"
+      },
+      {
+        "id": 4,
+        "word": "design",
+        "pinyin": "",
+        "meaning": "design"
+      },
+      {
+        "id": 5,
+        "word": "cucitura",
+        "pinyin": "",
+        "meaning": "costura"
+      },
+      {
+        "id": 6,
+        "word": "imperfezioni",
+        "pinyin": "",
+        "meaning": "imperfeições"
+      },
+      {
+        "id": 7,
+        "word": "bottoni",
+        "pinyin": "",
+        "meaning": "botões"
+      },
+      {
+        "id": 8,
+        "word": "etichette",
+        "pinyin": "",
+        "meaning": "etiquetas"
+      }
+    ],
+    "id": "local-1780258253407-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Hai un bel po' di fegato!",
+    "pinyin": "",
+    "translation": "B: Você tem muita coragem!",
+    "tokens": [
+      "B:",
+      "Hai",
+      "un",
+      "bel",
+      "po",
+      "'",
+      "di",
+      "fegato",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fegato",
+        "pinyin": "",
+        "meaning": "coragem"
+      },
+      {
+        "id": 2,
+        "word": "bel po'",
+        "pinyin": "",
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1780258253407-13",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "C: Tesoro, guarda, come mi sta?",
+    "pinyin": "",
+    "translation": "C: Querido, olha, como eu estou com isso?",
+    "tokens": [
+      "C:",
+      "Tesoro",
+      ",",
+      "guarda",
+      ",",
+      "come",
+      "mi",
+      "sta",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Tesoro",
+        "pinyin": "",
+        "meaning": "Querido / Tesouro"
+      },
+      {
+        "id": 2,
+        "word": "guarda",
+        "pinyin": "",
+        "meaning": "olha / veja"
+      },
+      {
+        "id": 3,
+        "word": "come",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "mi sta",
+        "pinyin": "",
+        "meaning": "me fica / me fica bem"
+      }
+    ],
+    "id": "local-1780258253407-14",
+    "language": "Italiano"
+  }
+]

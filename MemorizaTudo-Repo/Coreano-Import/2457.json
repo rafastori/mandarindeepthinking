@@ -1,0 +1,695 @@
+[
+  {
+    "chinese": "A: 오늘 우리는 미국 의료 개혁 문제에 대해 말씀해 주실 장 교수님을 저희 프로그램에 모시게 되어 매우 영광입니다. 장 교수님, 환영합니다!",
+    "pinyin": "",
+    "translation": "A: Hoje temos a grande honra de ter o Professor Zhang em nosso programa para falar conosco sobre a questão das reformas da saúde nos EUA. Bem-vindo, Professor Zhang!",
+    "tokens": [
+      "A:",
+      "오늘",
+      "우리는",
+      "미국",
+      "의료",
+      "개혁",
+      "문제에",
+      "대해",
+      "말씀해",
+      "주실",
+      "장",
+      "교수님을",
+      "저희",
+      "프로그램에",
+      "모시게",
+      "되어",
+      "매우",
+      "영광입니다",
+      ".",
+      "장",
+      "교수님",
+      ",",
+      "환영합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "장 교수님",
+        "pinyin": "",
+        "meaning": "Professor Zhang"
+      },
+      {
+        "id": 2,
+        "word": "미국 의료 개혁",
+        "pinyin": "",
+        "meaning": "reformas da saúde nos EUA"
+      },
+      {
+        "id": 3,
+        "word": "영광",
+        "pinyin": "",
+        "meaning": "honra/glória"
+      },
+      {
+        "id": 4,
+        "word": "프로그램",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 5,
+        "word": "환영합니다",
+        "pinyin": "",
+        "meaning": "bem-vindo"
+      }
+    ],
+    "id": "local-1780232473207-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 안녕하세요 여러분. 우선 이것은 매우 복잡한 문제입니다. 2010년 3월 23일, 오바마 미국 대통령은 백악관에서 의료보험 개혁 법안에 서명했습니다. 이는 오바마 행정부의 가장 중요한 입법 성과 중 하나입니다. 이 법안은 미국 사회보장 시스템에 45년 만에 가장 큰 변화라고 불립니다. 이는 개인, 기업 및 정부에 지대한 영향을 미쳤습니다.",
+    "pinyin": "",
+    "translation": "B: Olá a todos. Em primeiro lugar, esta é uma questão muito complicada. Em 23 de março de 2010, o presidente dos EUA, Obama, assinou um projeto de lei de reforma do seguro de saúde na Casa Branca. É uma das conquistas legislativas mais importantes do governo Obama. É chamada de a maior transformação em 45 anos no sistema de seguridade social dos EUA. Ela produziu efeitos de longo alcance sobre indivíduos, empresas e o governo.",
+    "tokens": [
+      "B:",
+      "안녕하세요",
+      "여러분",
+      ".",
+      "우선",
+      "이것은",
+      "매우",
+      "복잡한",
+      "문제입니다",
+      ".",
+      "2010",
+      "년",
+      "3",
+      "월",
+      "23",
+      "일",
+      ",",
+      "오바마",
+      "미국",
+      "대통령은",
+      "백악관에서",
+      "의료보험",
+      "개혁",
+      "법안에",
+      "서명했습니다",
+      ".",
+      "이는",
+      "오바마",
+      "행정부의",
+      "가장",
+      "중요한",
+      "입법",
+      "성과",
+      "중",
+      "하나입니다",
+      ".",
+      "이",
+      "법안은",
+      "미국",
+      "사회보장",
+      "시스템에",
+      "45",
+      "년",
+      "만에",
+      "가장",
+      "큰",
+      "변화라고",
+      "불립니다",
+      ".",
+      "이는",
+      "개인",
+      ",",
+      "기업",
+      "및",
+      "정부에",
+      "지대한",
+      "영향을",
+      "미쳤습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "의료보험 개혁",
+        "pinyin": "",
+        "meaning": "reforma do seguro de saúde"
+      },
+      {
+        "id": 2,
+        "word": "백악관",
+        "pinyin": "",
+        "meaning": "Casa Branca"
+      },
+      {
+        "id": 3,
+        "word": "입법 성과",
+        "pinyin": "",
+        "meaning": "conquista legislativa"
+      },
+      {
+        "id": 4,
+        "word": "사회보장 시스템",
+        "pinyin": "",
+        "meaning": "sistema de seguridade social"
+      },
+      {
+        "id": 5,
+        "word": "지대한 영향",
+        "pinyin": "",
+        "meaning": "grande influência"
+      },
+      {
+        "id": 6,
+        "word": "오바마 행정부",
+        "pinyin": "",
+        "meaning": "governo Obama"
+      }
+    ],
+    "id": "local-1780232473207-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 오바마의 의료 개혁 법안의 주요 목표는 무엇입니까?",
+    "pinyin": "",
+    "translation": "A: Qual é o principal objetivo da reforma da saúde do Obama?",
+    "tokens": [
+      "A:",
+      "오바마의",
+      "의료",
+      "개혁",
+      "법안의",
+      "주요",
+      "목표는",
+      "무엇입니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오바마",
+        "pinyin": "",
+        "meaning": "Obama"
+      },
+      {
+        "id": 2,
+        "word": "의료 개혁",
+        "pinyin": "",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 3,
+        "word": "법안",
+        "pinyin": "",
+        "meaning": "projeto de lei"
+      },
+      {
+        "id": 4,
+        "word": "주요",
+        "pinyin": "",
+        "meaning": "principal"
+      },
+      {
+        "id": 5,
+        "word": "목표",
+        "pinyin": "",
+        "meaning": "objetivo"
+      }
+    ],
+    "id": "local-1780232473207-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 첫째, 이미 건강보험에 가입한 사람들에게 더 많은 보안을 제공합니다. 둘째, 가입하지 않은 사람들에게 '저렴한' 건강보험을 제공합니다. 셋째, 지속적으로 증가하는 의료비를 통제합니다.",
+    "pinyin": "",
+    "translation": "B: Primeiro, oferece mais segurança para aqueles que já possuem seguro de saúde. Segundo, oferece um seguro de saúde 'acessível' para aqueles que não possuem. Terceiro, controla os custos continuamente crescentes da assistência médica.",
+    "tokens": [
+      "B:",
+      "첫째",
+      ",",
+      "이미",
+      "건강보험에",
+      "가입한",
+      "사람들에게",
+      "더",
+      "많은",
+      "보안을",
+      "제공합니다",
+      ".",
+      "둘째",
+      ",",
+      "가입하지",
+      "않은",
+      "사람들에게",
+      "'",
+      "저렴한",
+      "'",
+      "건강보험을",
+      "제공합니다",
+      ".",
+      "셋째",
+      ",",
+      "지속적으로",
+      "증가하는",
+      "의료비를",
+      "통제합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "건강보험",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 2,
+        "word": "가입한",
+        "pinyin": "",
+        "meaning": "inscritos / filiados"
+      },
+      {
+        "id": 3,
+        "word": "보안",
+        "pinyin": "",
+        "meaning": "segurança"
+      },
+      {
+        "id": 4,
+        "word": "저렴한",
+        "pinyin": "",
+        "meaning": "barato / acessível"
+      },
+      {
+        "id": 5,
+        "word": "의료비",
+        "pinyin": "",
+        "meaning": "custos médicos"
+      },
+      {
+        "id": 6,
+        "word": "통제합니다",
+        "pinyin": "",
+        "meaning": "controla"
+      }
+    ],
+    "id": "local-1780232473207-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 꽤 괜찮아 보입니다. 제 지식에 따르면, 의료 개혁은 미국인들에게 핵심적인 이슈였으며 역사적인 쟁점이었습니다. 하지만 실제로 오바마의 법안은 열렬한 지지를 받지 못했고, 오히려 여러 논쟁을 불러일으켰습니다, 맞습니까?",
+    "pinyin": "",
+    "translation": "A: Parece bastante bom. De acordo com meu conhecimento, a reforma da saúde tem sido uma questão central para o povo americano e é uma questão histórica. Mas, na verdade, a lei de Obama não recebeu apoio entusiástico; pelo contrário, causou várias controvérsias, certo?",
+    "tokens": [
+      "A:",
+      "꽤",
+      "괜찮아",
+      "보입니다",
+      ".",
+      "제",
+      "지식에",
+      "따르면",
+      ",",
+      "의료",
+      "개혁은",
+      "미국인들에게",
+      "핵심적인",
+      "이슈였으며",
+      "역사적인",
+      "쟁점이었습니다",
+      ".",
+      "하지만",
+      "실제로",
+      "오바마의",
+      "법안은",
+      "열렬한",
+      "지지를",
+      "받지",
+      "못했고",
+      ",",
+      "오히려",
+      "여러",
+      "논쟁을",
+      "불러일으켰습니다",
+      ",",
+      "맞습니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "의료 개혁",
+        "pinyin": "",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 2,
+        "word": "핵심적인",
+        "pinyin": "",
+        "meaning": "central"
+      },
+      {
+        "id": 3,
+        "word": "역사적인",
+        "pinyin": "",
+        "meaning": "histórico"
+      },
+      {
+        "id": 4,
+        "word": "열렬한",
+        "pinyin": "",
+        "meaning": "entusiástico"
+      },
+      {
+        "id": 5,
+        "word": "논쟁",
+        "pinyin": "",
+        "meaning": "controvérsia"
+      },
+      {
+        "id": 6,
+        "word": "불러일으켰습니다",
+        "pinyin": "",
+        "meaning": "causou"
+      }
+    ],
+    "id": "local-1780232473207-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 맞습니다. 현재 통계에 따르면 약 4,600만 명의 사람들이 여전히 건강보험에 가입되어 있지 않습니다. 그리고 의료 개혁에는 막대한 자금이 필요합니다. 따라서 이러한 대규모 의료 개혁의 비용을 누가 부담할 것인가가 핵심 문제입니다.",
+    "pinyin": "",
+    "translation": "B: Isso mesmo. Atualmente, de acordo com as estatísticas, cerca de 46 milhões de pessoas ainda não possuem seguro de saúde. E as reformas na saúde exigem um grande investimento de fundos. Portanto, quem pagará a conta por essa reforma massiva da saúde é um problema central.",
+    "tokens": [
+      "B:",
+      "맞습니다",
+      ".",
+      "현재",
+      "통계에",
+      "따르면",
+      "약",
+      "4",
+      ",",
+      "600",
+      "만",
+      "명의",
+      "사람들이",
+      "여전히",
+      "건강보험에",
+      "가입되어",
+      "있지",
+      "않습니다",
+      ".",
+      "그리고",
+      "의료",
+      "개혁에는",
+      "막대한",
+      "자금이",
+      "필요합니다",
+      ".",
+      "따라서",
+      "이러한",
+      "대규모",
+      "의료",
+      "개혁의",
+      "비용을",
+      "누가",
+      "부담할",
+      "것인가가",
+      "핵심",
+      "문제입니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "건강보험",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 2,
+        "word": "의료 개혁",
+        "pinyin": "",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 3,
+        "word": "막대한",
+        "pinyin": "",
+        "meaning": "grande/massivo"
+      },
+      {
+        "id": 4,
+        "word": "자금",
+        "pinyin": "",
+        "meaning": "fundos/capital"
+      },
+      {
+        "id": 5,
+        "word": "비용",
+        "pinyin": "",
+        "meaning": "custo"
+      },
+      {
+        "id": 6,
+        "word": "핵심 문제",
+        "pinyin": "",
+        "meaning": "problema central"
+      }
+    ],
+    "id": "local-1780232473207-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그렇다면 오바마는 야당에 직면했을 때 어떤 태도를 취했습니까?",
+    "pinyin": "",
+    "translation": "A: Então, qual foi a atitude de Obama ao enfrentar a oposição?",
+    "tokens": [
+      "A:",
+      "그렇다면",
+      "오바마는",
+      "야당에",
+      "직면했을",
+      "때",
+      "어떤",
+      "태도를",
+      "취했습니까",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "오바마",
+        "pinyin": "",
+        "meaning": "Obama"
+      },
+      {
+        "id": 2,
+        "word": "야당",
+        "pinyin": "",
+        "meaning": "oposição"
+      },
+      {
+        "id": 3,
+        "word": "직면했을 때",
+        "pinyin": "",
+        "meaning": "ao enfrentar"
+      },
+      {
+        "id": 4,
+        "word": "태도",
+        "pinyin": "",
+        "meaning": "atitude"
+      },
+      {
+        "id": 5,
+        "word": "취했습니까",
+        "pinyin": "",
+        "meaning": "tomou/teve"
+      }
+    ],
+    "id": "local-1780232473207-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 오바마는 미국 국민의 복지가 정치적 경쟁을 위해 희생되어서는 안 된다고 단호히 지적했다. 동시에 그는 납세자들의 이미 무거운 경제적 부담을 더 이상 늘리지 않되, 현재 건강보험 시스템에서의 낭비와 자금 오용을 줄여 재원을 마련하겠다고 분명히 했다.",
+    "pinyin": "",
+    "translation": "B: Obama apontou firmemente que o bem-estar do povo americano não pode ser sacrificado pela rivalidade política. Ao mesmo tempo, ele esclareceu que não aumentaria os já pesados encargos econômicos dos contribuintes, mas levantaria fundos reduzindo o desperdício e o mau uso dos recursos atuais no sistema de seguro saúde.",
+    "tokens": [
+      "B:",
+      "오바마는",
+      "미국",
+      "국민의",
+      "복지가",
+      "정치적",
+      "경쟁을",
+      "위해",
+      "희생되어서는",
+      "안",
+      "된다고",
+      "단호히",
+      "지적했다",
+      ".",
+      "동시에",
+      "그는",
+      "납세자들의",
+      "이미",
+      "무거운",
+      "경제적",
+      "부담을",
+      "더",
+      "이상",
+      "늘리지",
+      "않되",
+      ",",
+      "현재",
+      "건강보험",
+      "시스템에서의",
+      "낭비와",
+      "자금",
+      "오용을",
+      "줄여",
+      "재원을",
+      "마련하겠다고",
+      "분명히",
+      "했다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "단호히",
+        "pinyin": "",
+        "meaning": "firmemente"
+      },
+      {
+        "id": 2,
+        "word": "희생되어서는 안 된다고",
+        "pinyin": "",
+        "meaning": "não pode ser sacrificado"
+      },
+      {
+        "id": 3,
+        "word": "정치적 경쟁",
+        "pinyin": "",
+        "meaning": "rivalidade política"
+      },
+      {
+        "id": 4,
+        "word": "납세자들",
+        "pinyin": "",
+        "meaning": "contribuintes"
+      },
+      {
+        "id": 5,
+        "word": "경제적 부담",
+        "pinyin": "",
+        "meaning": "encargos econômicos"
+      },
+      {
+        "id": 6,
+        "word": "건강보험 시스템",
+        "pinyin": "",
+        "meaning": "sistema de seguro saúde"
+      },
+      {
+        "id": 7,
+        "word": "낭비",
+        "pinyin": "",
+        "meaning": "desperdício"
+      },
+      {
+        "id": 8,
+        "word": "오용",
+        "pinyin": "",
+        "meaning": "mau uso"
+      }
+    ],
+    "id": "local-1780232473207-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 매우 야심적입니다. 오바마 대통령 자신이 말한 대로입니다: \"나는 이 문제를 제기한 첫 번째 대통령은 아니지만, 이 문제를 해결한 마지막 대통령이 되기로 결정했습니다!\"",
+    "pinyin": "",
+    "translation": "A: Muito ambicioso. Assim como o próprio Obama disse: \"Não sou o primeiro presidente a levantar essa questão, mas decidi me tornar o último presidente a fazê-lo!\"",
+    "tokens": [
+      "A:",
+      "매우",
+      "야심적입니다",
+      ".",
+      "오바마",
+      "대통령",
+      "자신이",
+      "말한",
+      "대로입니다",
+      ":",
+      "\"",
+      "나는",
+      "이",
+      "문제를",
+      "제기한",
+      "첫",
+      "번째",
+      "대통령은",
+      "아니지만",
+      ",",
+      "이",
+      "문제를",
+      "해결한",
+      "마지막",
+      "대통령이",
+      "되기로",
+      "결정했습니다",
+      "!",
+      "\""
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "야심적",
+        "pinyin": "",
+        "meaning": "ambicioso"
+      },
+      {
+        "id": 2,
+        "word": "오바마",
+        "pinyin": "",
+        "meaning": "Obama"
+      },
+      {
+        "id": 3,
+        "word": "대통령",
+        "pinyin": "",
+        "meaning": "presidente"
+      },
+      {
+        "id": 4,
+        "word": "문제",
+        "pinyin": "",
+        "meaning": "questão / problema"
+      },
+      {
+        "id": 5,
+        "word": "제기",
+        "pinyin": "",
+        "meaning": "levantar / propor"
+      },
+      {
+        "id": 6,
+        "word": "해결",
+        "pinyin": "",
+        "meaning": "resolver / solucionar"
+      },
+      {
+        "id": 7,
+        "word": "결정",
+        "pinyin": "",
+        "meaning": "decisão"
+      }
+    ],
+    "id": "local-1780232473207-8",
+    "language": "Coreano"
+  }
+]

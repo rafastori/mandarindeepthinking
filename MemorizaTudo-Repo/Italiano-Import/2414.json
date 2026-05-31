@@ -1,0 +1,751 @@
+[
+  {
+    "chinese": "A: Xiao Wen, ti hanno regalato dei fiori. Che succede?",
+    "pinyin": "",
+    "translation": "A: Xiao Wen, alguém te deu flores. Qual é a história?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wen",
+      ",",
+      "ti",
+      "hanno",
+      "regalato",
+      "dei",
+      "fiori",
+      ".",
+      "Che",
+      "succede",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "regalato",
+        "pinyin": "",
+        "meaning": "presenteado"
+      },
+      {
+        "id": 2,
+        "word": "fiori",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 3,
+        "word": "succede",
+        "pinyin": "",
+        "meaning": "acontece"
+      },
+      {
+        "id": 4,
+        "word": "ti hanno",
+        "pinyin": "",
+        "meaning": "te deram"
+      }
+    ],
+    "id": "local-1780239232759-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Cavolo, è quel tizio che ti ho presentato prima.",
+    "pinyin": "",
+    "translation": "B: Nossa, é aquele cara que eu te apresentei antes.",
+    "tokens": [
+      "B:",
+      "Cavolo",
+      ",",
+      "è",
+      "quel",
+      "tizio",
+      "che",
+      "ti",
+      "ho",
+      "presentato",
+      "prima",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cavolo",
+        "pinyin": "",
+        "meaning": "expressão de surpresa ou irritação"
+      },
+      {
+        "id": 2,
+        "word": "tizio",
+        "pinyin": "",
+        "meaning": "cara, sujeito"
+      },
+      {
+        "id": 3,
+        "word": "presentato",
+        "pinyin": "",
+        "meaning": "apresentado"
+      },
+      {
+        "id": 4,
+        "word": "prima",
+        "pinyin": "",
+        "meaning": "antes"
+      }
+    ],
+    "id": "local-1780239232759-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Avete iniziato a frequentarvi! Non mi hai detto niente. È come se non fossi affatto la tua buona amica! Cosa ne pensi di lui?",
+    "pinyin": "",
+    "translation": "A: Você começou a namorar! Você não me contou nada. É como se eu não fosse sua boa amiga de jeito nenhum! O que você achou dele?",
+    "tokens": [
+      "A:",
+      "Avete",
+      "iniziato",
+      "a",
+      "frequentarvi",
+      "!",
+      "Non",
+      "mi",
+      "hai",
+      "detto",
+      "niente",
+      ".",
+      "È",
+      "come",
+      "se",
+      "non",
+      "fossi",
+      "affatto",
+      "la",
+      "tua",
+      "buona",
+      "amica",
+      "!",
+      "Cosa",
+      "ne",
+      "pensi",
+      "di",
+      "lui",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "frequentarvi",
+        "pinyin": "",
+        "meaning": "namorar / sair juntos"
+      },
+      {
+        "id": 2,
+        "word": "niente",
+        "pinyin": "",
+        "meaning": "nada"
+      },
+      {
+        "id": 3,
+        "word": "amica",
+        "pinyin": "",
+        "meaning": "amiga"
+      },
+      {
+        "id": 4,
+        "word": "affatto",
+        "pinyin": "",
+        "meaning": "de jeito algum / de forma alguma"
+      }
+    ],
+    "id": "local-1780239232759-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ci siamo incontrati solo due volte. La mia prima impressione era ok, però penso che sia un po' strano e un po' maniacale della pulizia. L'ultima volta che siamo andati in un ristorante a mangiare, ha tirato fuori un salviettina umida e ha pulito tutto il tavolo, e ha specificamente chiesto al cameriere di portare acqua calda per lavare le ciotole e i bicchieri.",
+    "pinyin": "",
+    "translation": "B: Nós nos encontramos apenas duas vezes. Minha primeira impressão foi ok, mas acho que ele é um pouco estranho e meio maníaco por limpeza. Na última vez que fomos a um restaurante comer, ele tirou uma toalha úmida e limpou toda a mesa, e pediu especificamente ao garçom para trazer água quente para lavar as tigelas e os copos.",
+    "tokens": [
+      "B:",
+      "Ci",
+      "siamo",
+      "incontrati",
+      "solo",
+      "due",
+      "volte",
+      ".",
+      "La",
+      "mia",
+      "prima",
+      "impressione",
+      "era",
+      "ok",
+      ",",
+      "però",
+      "penso",
+      "che",
+      "sia",
+      "un",
+      "po",
+      "'",
+      "strano",
+      "e",
+      "un",
+      "po",
+      "'",
+      "maniacale",
+      "della",
+      "pulizia",
+      ".",
+      "L'ultima",
+      "volta",
+      "che",
+      "siamo",
+      "andati",
+      "in",
+      "un",
+      "ristorante",
+      "a",
+      "mangiare",
+      ",",
+      "ha",
+      "tirato",
+      "fuori",
+      "un",
+      "salviettina",
+      "umida",
+      "e",
+      "ha",
+      "pulito",
+      "tutto",
+      "il",
+      "tavolo",
+      ",",
+      "e",
+      "ha",
+      "specificamente",
+      "chiesto",
+      "al",
+      "cameriere",
+      "di",
+      "portare",
+      "acqua",
+      "calda",
+      "per",
+      "lavare",
+      "le",
+      "ciotole",
+      "e",
+      "i",
+      "bicchieri",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "incontrati",
+        "pinyin": "",
+        "meaning": "encontrados"
+      },
+      {
+        "id": 2,
+        "word": "maniacale",
+        "pinyin": "",
+        "meaning": "maníaco"
+      },
+      {
+        "id": 3,
+        "word": "salviettina umida",
+        "pinyin": "",
+        "meaning": "toalha úmida"
+      },
+      {
+        "id": 4,
+        "word": "pulito",
+        "pinyin": "",
+        "meaning": "limpou"
+      },
+      {
+        "id": 5,
+        "word": "cameriere",
+        "pinyin": "",
+        "meaning": "garçom"
+      },
+      {
+        "id": 6,
+        "word": "acqua calda",
+        "pinyin": "",
+        "meaning": "água quente"
+      },
+      {
+        "id": 7,
+        "word": "lavare",
+        "pinyin": "",
+        "meaning": "lavar"
+      }
+    ],
+    "id": "local-1780239232759-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual è il suo segno zodiacale?",
+    "pinyin": "",
+    "translation": "A: Qual é o signo dele?",
+    "tokens": [
+      "A:",
+      "Qual",
+      "è",
+      "il",
+      "suo",
+      "segno",
+      "zodiacale",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "segno",
+        "pinyin": "",
+        "meaning": "signo"
+      },
+      {
+        "id": 2,
+        "word": "zodiacale",
+        "pinyin": "",
+        "meaning": "zodiacal"
+      },
+      {
+        "id": 3,
+        "word": "suo",
+        "pinyin": "",
+        "meaning": "dele/dela"
+      }
+    ],
+    "id": "local-1780239232759-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Vergine",
+    "pinyin": "",
+    "translation": "B: Virgem",
+    "tokens": [
+      "B:",
+      "Vergine"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vergine",
+        "pinyin": "",
+        "meaning": "Virgem"
+      }
+    ],
+    "id": "local-1780239232759-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non è affatto strano. I Vergini sono famosi per la cura della pulizia. Tuttavia, un marito Vergino ha molte qualità positive: non si arrabbia facilmente; si prenderà cura di te quando sei malato; è molto laborioso e affidabile. Dopo il matrimonio, organizzerà la vita familiare con grande attenzione. Ogni piano per la famiglia sarà considerato in anticipo, in modo da non avere preoccupazioni.",
+    "pinyin": "",
+    "translation": "A: Não é de forma alguma estranho. Os Virgos são famosos por se preocuparem com a limpeza. No entanto, um marido Virgo tem muitos atributos positivos: ele não fica com raiva facilmente; ele cuidará de você quando você estiver doente; ele é muito trabalhador e confiável. Depois que você se casar, ele organizará a vida da sua família com grande cuidado. Cada plano para a família será considerado com antecedência, para que você não tenha nenhuma preocupação.",
+    "tokens": [
+      "A:",
+      "Non",
+      "è",
+      "affatto",
+      "strano",
+      ".",
+      "I",
+      "Vergini",
+      "sono",
+      "famosi",
+      "per",
+      "la",
+      "cura",
+      "della",
+      "pulizia",
+      ".",
+      "Tuttavia",
+      ",",
+      "un",
+      "marito",
+      "Vergino",
+      "ha",
+      "molte",
+      "qualità",
+      "positive",
+      ":",
+      "non",
+      "si",
+      "arrabbia",
+      "facilmente",
+      ";",
+      "si",
+      "prenderà",
+      "cura",
+      "di",
+      "te",
+      "quando",
+      "sei",
+      "malato",
+      ";",
+      "è",
+      "molto",
+      "laborioso",
+      "e",
+      "affidabile",
+      ".",
+      "Dopo",
+      "il",
+      "matrimonio",
+      ",",
+      "organizzerà",
+      "la",
+      "vita",
+      "familiare",
+      "con",
+      "grande",
+      "attenzione",
+      ".",
+      "Ogni",
+      "piano",
+      "per",
+      "la",
+      "famiglia",
+      "sarà",
+      "considerato",
+      "in",
+      "anticipo",
+      ",",
+      "in",
+      "modo",
+      "da",
+      "non",
+      "avere",
+      "preoccupazioni",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vergini",
+        "pinyin": "",
+        "meaning": "Virgos"
+      },
+      {
+        "id": 2,
+        "word": "pulizia",
+        "pinyin": "",
+        "meaning": "limpeza"
+      },
+      {
+        "id": 3,
+        "word": "affidabile",
+        "pinyin": "",
+        "meaning": "confiável"
+      },
+      {
+        "id": 4,
+        "word": "laborioso",
+        "pinyin": "",
+        "meaning": "trabalhador"
+      },
+      {
+        "id": 5,
+        "word": "preoccupazioni",
+        "pinyin": "",
+        "meaning": "preocupações"
+      },
+      {
+        "id": 6,
+        "word": "anticipo",
+        "pinyin": "",
+        "meaning": "antecipação"
+      }
+    ],
+    "id": "local-1780239232759-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Queste parole non mi aiutano in alcun modo. Non importa cosa tu dica, non sono ancora sicura che lui sia un candidato adatto per diventare mio marito. Tuttavia, dato che conosci così bene l'astrologia, dimmi com'è la personalità di un Vergine. Che tipo di persone piacciono ai Vergini?",
+    "pinyin": "",
+    "translation": "B: Essas palavras não me ajudam em nada. Não importa o que você diga, ainda não tenho certeza de que ele seja um candidato adequado para se tornar meu marido. No entanto, já que você conhece tão bem a astrologia, me diga como é a personalidade de um Virgem. Que tipo de pessoas os Virgens gostam?",
+    "tokens": [
+      "B:",
+      "Queste",
+      "parole",
+      "non",
+      "mi",
+      "aiutano",
+      "in",
+      "alcun",
+      "modo",
+      ".",
+      "Non",
+      "importa",
+      "cosa",
+      "tu",
+      "dica",
+      ",",
+      "non",
+      "sono",
+      "ancora",
+      "sicura",
+      "che",
+      "lui",
+      "sia",
+      "un",
+      "candidato",
+      "adatto",
+      "per",
+      "diventare",
+      "mio",
+      "marito",
+      ".",
+      "Tuttavia",
+      ",",
+      "dato",
+      "che",
+      "conosci",
+      "così",
+      "bene",
+      "l'astrologia",
+      ",",
+      "dimmi",
+      "com'è",
+      "la",
+      "personalità",
+      "di",
+      "un",
+      "Vergine",
+      ".",
+      "Che",
+      "tipo",
+      "di",
+      "persone",
+      "piacciono",
+      "ai",
+      "Vergini",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "candidato",
+        "pinyin": "",
+        "meaning": "candidato"
+      },
+      {
+        "id": 2,
+        "word": "astrologia",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 3,
+        "word": "Vergine",
+        "pinyin": "",
+        "meaning": "Virgem"
+      },
+      {
+        "id": 4,
+        "word": "personalità",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 5,
+        "word": "marito",
+        "pinyin": "",
+        "meaning": "marido"
+      }
+    ],
+    "id": "local-1780239232759-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: I Vergini sono perfezionisti. Sono molto meticolosi e introversi, con un filo di pensiero chiaro. Le persone che sono Vergini di solito amano le persone altamente istruite. Per quanto riguarda gli uomini Vergini, una bella mente è molto più importante di un bel viso. Trovano difficile sopportare donne ignoranti e trascurate.",
+    "pinyin": "",
+    "translation": "A: As Virgens são perfeccionistas. São muito meticulosas e introvertidas, com um raciocínio claro. Pessoas que são Virgens geralmente gostam de pessoas altamente instruídas. No que diz respeito aos homens Virgens, uma bela mente é muito mais importante do que um belo rosto. Eles têm dificuldade em suportar mulheres ignorantes e descuidadas.",
+    "tokens": [
+      "A:",
+      "I",
+      "Vergini",
+      "sono",
+      "perfezionisti",
+      ".",
+      "Sono",
+      "molto",
+      "meticolosi",
+      "e",
+      "introversi",
+      ",",
+      "con",
+      "un",
+      "filo",
+      "di",
+      "pensiero",
+      "chiaro",
+      ".",
+      "Le",
+      "persone",
+      "che",
+      "sono",
+      "Vergini",
+      "di",
+      "solito",
+      "amano",
+      "le",
+      "persone",
+      "altamente",
+      "istruite",
+      ".",
+      "Per",
+      "quanto",
+      "riguarda",
+      "gli",
+      "uomini",
+      "Vergini",
+      ",",
+      "una",
+      "bella",
+      "mente",
+      "è",
+      "molto",
+      "più",
+      "importante",
+      "di",
+      "un",
+      "bel",
+      "viso",
+      ".",
+      "Trovano",
+      "difficile",
+      "sopportare",
+      "donne",
+      "ignoranti",
+      "e",
+      "trascurate",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "perfezionisti",
+        "pinyin": "",
+        "meaning": "pessoas que buscam a perfeição"
+      },
+      {
+        "id": 2,
+        "word": "introversi",
+        "pinyin": "",
+        "meaning": "pessoas reservadas ou tímidas"
+      },
+      {
+        "id": 3,
+        "word": "filo di pensiero",
+        "pinyin": "",
+        "meaning": "sequência lógica de ideias"
+      },
+      {
+        "id": 4,
+        "word": "bella mente",
+        "pinyin": "",
+        "meaning": "inteligência ou espírito refinado"
+      },
+      {
+        "id": 5,
+        "word": "ignoranti",
+        "pinyin": "",
+        "meaning": "que não têm conhecimento"
+      }
+    ],
+    "id": "local-1780239232759-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Imprudente... non stai parlando di me, vero? Con le Vergini che prestano così tanta attenzione ai dettagli, non sarà esaustivo? Aiutami a capirlo. Il mio segno zodiacale è compatibile con il suo?",
+    "pinyin": "",
+    "translation": "B: Imprudente... você não está falando de mim, está? Com as Virgens prestando tanta atenção aos detalhes, isso não vai ser exaustivo? Me ajude a entender. Meu signo é compatível com o dele?",
+    "tokens": [
+      "B:",
+      "Imprudente",
+      ".",
+      ".",
+      ".",
+      "non",
+      "stai",
+      "parlando",
+      "di",
+      "me",
+      ",",
+      "vero",
+      "?",
+      "Con",
+      "le",
+      "Vergini",
+      "che",
+      "prestano",
+      "così",
+      "tanta",
+      "attenzione",
+      "ai",
+      "dettagli",
+      ",",
+      "non",
+      "sarà",
+      "esaustivo",
+      "?",
+      "Aiutami",
+      "a",
+      "capirlo",
+      ".",
+      "Il",
+      "mio",
+      "segno",
+      "zodiacale",
+      "è",
+      "compatibile",
+      "con",
+      "il",
+      "suo",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Imprudente",
+        "pinyin": "",
+        "meaning": "Imprudente"
+      },
+      {
+        "id": 2,
+        "word": "Vergini",
+        "pinyin": "",
+        "meaning": "Virgens"
+      },
+      {
+        "id": 3,
+        "word": "dettagli",
+        "pinyin": "",
+        "meaning": "detalhes"
+      },
+      {
+        "id": 4,
+        "word": "esaustivo",
+        "pinyin": "",
+        "meaning": "exaustivo"
+      },
+      {
+        "id": 5,
+        "word": "segno zodiacale",
+        "pinyin": "",
+        "meaning": "signo zodiacal"
+      },
+      {
+        "id": 6,
+        "word": "compatibile",
+        "pinyin": "",
+        "meaning": "compatível"
+      }
+    ],
+    "id": "local-1780239232759-9",
+    "language": "Italiano"
+  }
+]

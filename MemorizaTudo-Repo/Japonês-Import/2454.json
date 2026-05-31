@@ -1,0 +1,793 @@
+[
+  {
+    "chinese": "A: 今四半期、会社の販売量は前四半期から20％減少しました。",
+    "pinyin": "",
+    "translation": "A: Neste trimestre, o volume de vendas da empresa caiu 20% em relação ao trimestre anterior.",
+    "tokens": [
+      "A:",
+      "今",
+      "四半期",
+      "、",
+      "会社",
+      "の",
+      "販売",
+      "量",
+      "は",
+      "前",
+      "四半期",
+      "から",
+      "20",
+      "％",
+      "減少",
+      "し",
+      "まし",
+      "た",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今四半期",
+        "pinyin": "",
+        "meaning": "este trimestre"
+      },
+      {
+        "id": 2,
+        "word": "販売量",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 3,
+        "word": "減少",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 4,
+        "word": "前四半期",
+        "pinyin": "",
+        "meaning": "trimestre anterior"
+      },
+      {
+        "id": 5,
+        "word": "20％",
+        "pinyin": "",
+        "meaning": "20 por cento"
+      }
+    ],
+    "id": "local-1780259823058-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: これは季節の変化に関係しています。毎年この時期は、私たちのビジネスはあまり良くありません。",
+    "pinyin": "",
+    "translation": "B: Isso tem a ver com as mudanças sazonais. Toda vez neste período do ano, nossos negócios nunca vão muito bem.",
+    "tokens": [
+      "B:",
+      "これ",
+      "は",
+      "季節",
+      "の",
+      "変化",
+      "に",
+      "関係",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "毎年",
+      "この",
+      "時期",
+      "は",
+      "、",
+      "私",
+      "たち",
+      "の",
+      "ビジネス",
+      "は",
+      "あまり",
+      "良く",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "季節",
+        "pinyin": "",
+        "meaning": "estação"
+      },
+      {
+        "id": 2,
+        "word": "変化",
+        "pinyin": "",
+        "meaning": "mudança"
+      },
+      {
+        "id": 3,
+        "word": "毎年",
+        "pinyin": "",
+        "meaning": "todos os anos"
+      },
+      {
+        "id": 4,
+        "word": "時期",
+        "pinyin": "",
+        "meaning": "período"
+      },
+      {
+        "id": 5,
+        "word": "ビジネス",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 6,
+        "word": "良くありません",
+        "pinyin": "",
+        "meaning": "não vai bem"
+      }
+    ],
+    "id": "local-1780259823058-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: 季節要因だけではないと思います。以前は数量の減少が約5％程度でした。最近ではプロモーションへの投資も減ったので、もちろん売上高は下落しています。マーケティング予算を増やすべきです。",
+    "pinyin": "",
+    "translation": "C: Acho que não é apenas sazonal. Antes, a queda no volume era de apenas cerca de 5%. Recentemente, nosso investimento em promoção também foi menor, então, é claro, nosso volume de vendas caiu. Seria melhor aumentarmos o orçamento de marketing.",
+    "tokens": [
+      "C:",
+      "季節",
+      "要因",
+      "だけ",
+      "で",
+      "は",
+      "ない",
+      "と",
+      "思い",
+      "ます",
+      "。",
+      "以前",
+      "は",
+      "数量",
+      "の",
+      "減少",
+      "が",
+      "約",
+      "5",
+      "％",
+      "程度",
+      "でし",
+      "た",
+      "。",
+      "最近",
+      "で",
+      "は",
+      "プロモーション",
+      "へ",
+      "の",
+      "投資",
+      "も",
+      "減っ",
+      "た",
+      "ので",
+      "、",
+      "もちろん",
+      "売上",
+      "高",
+      "は",
+      "下落",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "マーケティング",
+      "予算",
+      "を",
+      "増やす",
+      "べき",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "季節要因",
+        "pinyin": "",
+        "meaning": "fator sazonal"
+      },
+      {
+        "id": 2,
+        "word": "数量",
+        "pinyin": "",
+        "meaning": "volume/quantidade"
+      },
+      {
+        "id": 3,
+        "word": "減少",
+        "pinyin": "",
+        "meaning": "queda/redução"
+      },
+      {
+        "id": 4,
+        "word": "プロモーション",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 5,
+        "word": "投資",
+        "pinyin": "",
+        "meaning": "investimento"
+      },
+      {
+        "id": 6,
+        "word": "売上高",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 7,
+        "word": "下落",
+        "pinyin": "",
+        "meaning": "queda/desvalorização"
+      },
+      {
+        "id": 8,
+        "word": "マーケティング予算",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      }
+    ],
+    "id": "local-1780259823058-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当に可能なのだろうか。マーケティング予算の削減は当社だけでなく、皆の売上高が必ずしも減少したわけではない。",
+    "pinyin": "",
+    "translation": "B: Isso realmente é possível? A redução no orçamento de marketing não se limita à nossa empresa, e os volumes de vendas de todos não caíram necessariamente.",
+    "tokens": [
+      "B:",
+      "本当に",
+      "可能",
+      "な",
+      "の",
+      "だろ",
+      "う",
+      "か",
+      "。",
+      "マーケティング",
+      "予算",
+      "の",
+      "削減",
+      "は",
+      "当社",
+      "だけ",
+      "で",
+      "なく",
+      "、",
+      "皆",
+      "の",
+      "売上",
+      "高",
+      "が",
+      "必ずしも",
+      "減少",
+      "し",
+      "た",
+      "わけ",
+      "で",
+      "は",
+      "ない",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当に",
+        "pinyin": "",
+        "meaning": "realmente"
+      },
+      {
+        "id": 2,
+        "word": "マーケティング予算",
+        "pinyin": "",
+        "meaning": "orçamento de marketing"
+      },
+      {
+        "id": 3,
+        "word": "削減",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 4,
+        "word": "当社",
+        "pinyin": "",
+        "meaning": "nossa empresa"
+      },
+      {
+        "id": 5,
+        "word": "売上高",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 6,
+        "word": "減少",
+        "pinyin": "",
+        "meaning": "queda"
+      }
+    ],
+    "id": "local-1780259823058-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: しかし、予算を削減したため、売上高は減少しました。当然のことです。",
+    "pinyin": "",
+    "translation": "C: Mas reduzimos nosso orçamento e o volume de vendas caiu. É óbvio.",
+    "tokens": [
+      "C:",
+      "しかし",
+      "、",
+      "予算",
+      "を",
+      "削減",
+      "し",
+      "た",
+      "ため",
+      "、",
+      "売上",
+      "高",
+      "は",
+      "減少",
+      "し",
+      "まし",
+      "た",
+      "。",
+      "当然",
+      "の",
+      "こと",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "予算",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "削減",
+        "pinyin": "",
+        "meaning": "redução"
+      },
+      {
+        "id": 3,
+        "word": "売上高",
+        "pinyin": "",
+        "meaning": "volume de vendas"
+      },
+      {
+        "id": 4,
+        "word": "減少",
+        "pinyin": "",
+        "meaning": "queda"
+      },
+      {
+        "id": 5,
+        "word": "当然",
+        "pinyin": "",
+        "meaning": "óbvio"
+      }
+    ],
+    "id": "local-1780259823058-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: これは私たちが金を使う意志があるかどうかの問題ではありません。予算はすでに1年前に決定されています。今それを増やすのは現実的ではありません。",
+    "pinyin": "",
+    "translation": "A: Esta não é uma questão de estarmos dispostos ou não a gastar dinheiro. O orçamento já foi definido há um ano. Aumentá-lo agora não é prático.",
+    "tokens": [
+      "A:",
+      "これ",
+      "は",
+      "私",
+      "たち",
+      "が",
+      "金",
+      "を",
+      "使う",
+      "意志",
+      "が",
+      "ある",
+      "か",
+      "どう",
+      "か",
+      "の",
+      "問題",
+      "で",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "予算",
+      "は",
+      "すでに",
+      "1",
+      "年",
+      "前",
+      "に",
+      "決定",
+      "さ",
+      "れ",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "今",
+      "それ",
+      "を",
+      "増やす",
+      "の",
+      "は",
+      "現実",
+      "的",
+      "で",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "予算",
+        "pinyin": "",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 2,
+        "word": "決定",
+        "pinyin": "",
+        "meaning": "decisão"
+      },
+      {
+        "id": 3,
+        "word": "現実的",
+        "pinyin": "",
+        "meaning": "prático"
+      },
+      {
+        "id": 4,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "questão"
+      },
+      {
+        "id": 5,
+        "word": "意志",
+        "pinyin": "",
+        "meaning": "vontade"
+      }
+    ],
+    "id": "local-1780259823058-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: だから、その時はそれに同意しませんでした！",
+    "pinyin": "",
+    "translation": "C: Então, na época, eu não concordei com isso!",
+    "tokens": [
+      "C:",
+      "だから",
+      "、",
+      "その",
+      "時",
+      "は",
+      "それ",
+      "に",
+      "同意",
+      "し",
+      "ませ",
+      "ん",
+      "でし",
+      "た",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "だから",
+        "pinyin": "",
+        "meaning": "por isso / então"
+      },
+      {
+        "id": 2,
+        "word": "その時",
+        "pinyin": "",
+        "meaning": "naquela época / naquele momento"
+      },
+      {
+        "id": 3,
+        "word": "同意",
+        "pinyin": "",
+        "meaning": "concordância / acordo"
+      },
+      {
+        "id": 4,
+        "word": "しませんでした",
+        "pinyin": "",
+        "meaning": "não fiz (passado negativo formal)"
+      },
+      {
+        "id": 5,
+        "word": "それ",
+        "pinyin": "",
+        "meaning": "isso / aquilo"
+      }
+    ],
+    "id": "local-1780259823058-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 今、文句を言っている時じゃない。計画を考えなければならない。",
+    "pinyin": "",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em um plano.",
+    "tokens": [
+      "A:",
+      "今",
+      "、",
+      "文句",
+      "を",
+      "言っ",
+      "て",
+      "いる",
+      "時",
+      "じゃ",
+      "ない",
+      "。",
+      "計画",
+      "を",
+      "考え",
+      "なけれ",
+      "ば",
+      "なら",
+      "ない",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "文句",
+        "pinyin": "",
+        "meaning": "reclamação"
+      },
+      {
+        "id": 3,
+        "word": "計画",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 4,
+        "word": "考え",
+        "pinyin": "",
+        "meaning": "pensamento"
+      }
+    ],
+    "id": "local-1780259823058-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 大きなイベントをいくつか開催するのはどうですか？",
+    "pinyin": "",
+    "translation": "B: Que tal organizarmos alguns grandes eventos?",
+    "tokens": [
+      "B:",
+      "大きな",
+      "イベント",
+      "を",
+      "いくつ",
+      "か",
+      "開催",
+      "する",
+      "の",
+      "は",
+      "どう",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大きな",
+        "pinyin": "",
+        "meaning": "grande"
+      },
+      {
+        "id": 2,
+        "word": "イベント",
+        "pinyin": "",
+        "meaning": "evento"
+      },
+      {
+        "id": 3,
+        "word": "いくつか",
+        "pinyin": "",
+        "meaning": "alguns"
+      },
+      {
+        "id": 4,
+        "word": "開催",
+        "pinyin": "",
+        "meaning": "realização"
+      },
+      {
+        "id": 5,
+        "word": "どうですか",
+        "pinyin": "",
+        "meaning": "como está?"
+      }
+    ],
+    "id": "local-1780259823058-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "C: やりたくないわけじゃないんです。ただ、現実的な課題があるんです。",
+    "pinyin": "",
+    "translation": "C: Não é que eu não queira fazer isso, é que existem desafios reais.",
+    "tokens": [
+      "C:",
+      "やり",
+      "たく",
+      "ない",
+      "わけ",
+      "じゃ",
+      "ない",
+      "ん",
+      "です",
+      "。",
+      "ただ",
+      "、",
+      "現実",
+      "的",
+      "な",
+      "課題",
+      "が",
+      "ある",
+      "ん",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "やりたくない",
+        "pinyin": "",
+        "meaning": "não querer fazer"
+      },
+      {
+        "id": 2,
+        "word": "わけじゃない",
+        "pinyin": "",
+        "meaning": "não é que"
+      },
+      {
+        "id": 3,
+        "word": "現実的な",
+        "pinyin": "",
+        "meaning": "realistas"
+      },
+      {
+        "id": 4,
+        "word": "課題",
+        "pinyin": "",
+        "meaning": "desafios"
+      },
+      {
+        "id": 5,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "existir"
+      }
+    ],
+    "id": "local-1780259823058-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 今日はこの問題について議論しないようにしましょう。解決するには、マーケティング部門に直接連絡するのが良いでしょう。",
+    "pinyin": "",
+    "translation": "A: Não vamos discutir este problema hoje. É melhor entrarmos em contato diretamente com o Departamento de Marketing para resolvê-lo.",
+    "tokens": [
+      "A:",
+      "今日",
+      "は",
+      "この",
+      "問題",
+      "について",
+      "議論",
+      "し",
+      "ない",
+      "よう",
+      "に",
+      "し",
+      "ましょ",
+      "う",
+      "。",
+      "解決",
+      "する",
+      "に",
+      "は",
+      "、",
+      "マーケティング",
+      "部門",
+      "に",
+      "直接",
+      "連絡",
+      "する",
+      "の",
+      "が",
+      "良い",
+      "でしょ",
+      "う",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "議論",
+        "pinyin": "",
+        "meaning": "debate"
+      },
+      {
+        "id": 2,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      },
+      {
+        "id": 3,
+        "word": "マーケティング部門",
+        "pinyin": "",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 4,
+        "word": "直接",
+        "pinyin": "",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 5,
+        "word": "連絡",
+        "pinyin": "",
+        "meaning": "contato"
+      },
+      {
+        "id": 6,
+        "word": "解決",
+        "pinyin": "",
+        "meaning": "resolução"
+      }
+    ],
+    "id": "local-1780259823058-10",
+    "language": "Japonês"
+  }
+]

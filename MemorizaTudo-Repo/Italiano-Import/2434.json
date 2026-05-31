@@ -1,0 +1,824 @@
+[
+  {
+    "chinese": "A: Mike, il tuo permesso di lavoro è stato rifiutato!",
+    "pinyin": "",
+    "translation": "A: Mike, sua permissão de trabalho foi negada!",
+    "tokens": [
+      "A:",
+      "Mike",
+      ",",
+      "il",
+      "tuo",
+      "permesso",
+      "di",
+      "lavoro",
+      "è",
+      "stato",
+      "rifiutato",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "permesso",
+        "pinyin": "",
+        "meaning": "permissão"
+      },
+      {
+        "id": 2,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "rifiutato",
+        "pinyin": "",
+        "meaning": "negado"
+      },
+      {
+        "id": 4,
+        "word": "tuo",
+        "pinyin": "",
+        "meaning": "seu"
+      }
+    ],
+    "id": "local-1780239743412-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Oh, allora cosa devo fare? Non dovrebbe esserci alcun problema. La mia ultima azienda mi ha ottenuto il permesso di lavoro senza problemi.",
+    "pinyin": "",
+    "translation": "B: Ah, então o que eu faço? Não deveria haver nenhum problema. Minha última empresa conseguiu meu visto de trabalho sem problemas.",
+    "tokens": [
+      "B:",
+      "Oh",
+      ",",
+      "allora",
+      "cosa",
+      "devo",
+      "fare",
+      "?",
+      "Non",
+      "dovrebbe",
+      "esserci",
+      "alcun",
+      "problema",
+      ".",
+      "La",
+      "mia",
+      "ultima",
+      "azienda",
+      "mi",
+      "ha",
+      "ottenuto",
+      "il",
+      "permesso",
+      "di",
+      "lavoro",
+      "senza",
+      "problemi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "allora",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "permesso di lavoro",
+        "pinyin": "",
+        "meaning": "visto de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "senza problemi",
+        "pinyin": "",
+        "meaning": "sem problemas"
+      },
+      {
+        "id": 4,
+        "word": "alcun",
+        "pinyin": "",
+        "meaning": "nenhum"
+      },
+      {
+        "id": 5,
+        "word": "azienda",
+        "pinyin": "",
+        "meaning": "empresa"
+      }
+    ],
+    "id": "local-1780239743412-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ho chiesto. È un problema con la descrizione del lavoro e il tuo corso di studi. Il tuo corso di laurea era in linguistica. Il tuo ultimo lavoro è stato come traduttore, quindi va bene. Tuttavia, questa volta vuoi lavorare come assistente di marketing.",
+    "pinyin": "",
+    "translation": "A: Eu perguntei. É um problema com a descrição do cargo e sua área de formação. Sua graduação era em linguística. Seu último trabalho foi como tradutor, então está tudo bem. No entanto, desta vez você quer trabalhar como assistente de marketing.",
+    "tokens": [
+      "A:",
+      "Ho",
+      "chiesto",
+      ".",
+      "È",
+      "un",
+      "problema",
+      "con",
+      "la",
+      "descrizione",
+      "del",
+      "lavoro",
+      "e",
+      "il",
+      "tuo",
+      "corso",
+      "di",
+      "studi",
+      ".",
+      "Il",
+      "tuo",
+      "corso",
+      "di",
+      "laurea",
+      "era",
+      "in",
+      "linguistica",
+      ".",
+      "Il",
+      "tuo",
+      "ultimo",
+      "lavoro",
+      "è",
+      "stato",
+      "come",
+      "traduttore",
+      ",",
+      "quindi",
+      "va",
+      "bene",
+      ".",
+      "Tuttavia",
+      ",",
+      "questa",
+      "volta",
+      "vuoi",
+      "lavorare",
+      "come",
+      "assistente",
+      "di",
+      "marketing",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "descrizione del lavoro",
+        "pinyin": "",
+        "meaning": "descrição do cargo"
+      },
+      {
+        "id": 2,
+        "word": "corso di studi",
+        "pinyin": "",
+        "meaning": "área de formação"
+      },
+      {
+        "id": 3,
+        "word": "linguistica",
+        "pinyin": "",
+        "meaning": "linguística"
+      },
+      {
+        "id": 4,
+        "word": "traduttore",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "assistente di marketing",
+        "pinyin": "",
+        "meaning": "assistente de marketing"
+      }
+    ],
+    "id": "local-1780239743412-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Che cosa c'entra? L'azienda pensa che io sia qualificato per il lavoro. Questo dovrebbe bastare.",
+    "pinyin": "",
+    "translation": "B: O que é que isso tem a ver? A empresa acha que eu sou qualificado para o emprego. Isso deveria ser suficiente.",
+    "tokens": [
+      "B:",
+      "Che",
+      "cosa",
+      "c'entra",
+      "?",
+      "L'azienda",
+      "pensa",
+      "che",
+      "io",
+      "sia",
+      "qualificato",
+      "per",
+      "il",
+      "lavoro",
+      ".",
+      "Questo",
+      "dovrebbe",
+      "bastare",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Che cosa c'entra",
+        "pinyin": "",
+        "meaning": "O que é que isso tem a ver"
+      },
+      {
+        "id": 2,
+        "word": "azienda",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "qualificato",
+        "pinyin": "",
+        "meaning": "qualificado"
+      },
+      {
+        "id": 4,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 5,
+        "word": "bastare",
+        "pinyin": "",
+        "meaning": "basta/suficiente"
+      }
+    ],
+    "id": "local-1780239743412-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Non è così. La normativa cinese stabilisce che il corso di laurea e il lavoro devono essere correlati.",
+    "pinyin": "",
+    "translation": "A: Não é assim. A regulamentação chinesa estabelece que o curso e o trabalho devem estar relacionados.",
+    "tokens": [
+      "A:",
+      "Non",
+      "è",
+      "così",
+      ".",
+      "La",
+      "normativa",
+      "cinese",
+      "stabilisce",
+      "che",
+      "il",
+      "corso",
+      "di",
+      "laurea",
+      "e",
+      "il",
+      "lavoro",
+      "devono",
+      "essere",
+      "correlati",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "normativa",
+        "pinyin": "",
+        "meaning": "regulamentação"
+      },
+      {
+        "id": 2,
+        "word": "corso di laurea",
+        "pinyin": "",
+        "meaning": "curso de graduação"
+      },
+      {
+        "id": 3,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 4,
+        "word": "correlati",
+        "pinyin": "",
+        "meaning": "relacionados"
+      },
+      {
+        "id": 5,
+        "word": "stabilisce",
+        "pinyin": "",
+        "meaning": "estabelece"
+      }
+    ],
+    "id": "local-1780239743412-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È così strano. Tuttavia, all'università ho seguito un corso secondario in economia. Va bene così?",
+    "pinyin": "",
+    "translation": "B: É tão estranho. No entanto, na faculdade fiz uma habilitação em negócios. Está tudo bem?",
+    "tokens": [
+      "B:",
+      "È",
+      "così",
+      "strano",
+      ".",
+      "Tuttavia",
+      ",",
+      "all'università",
+      "ho",
+      "seguito",
+      "un",
+      "corso",
+      "secondario",
+      "in",
+      "economia",
+      ".",
+      "Va",
+      "bene",
+      "così",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "strano",
+        "pinyin": "",
+        "meaning": "estranho"
+      },
+      {
+        "id": 2,
+        "word": "università",
+        "pinyin": "",
+        "meaning": "universidade"
+      },
+      {
+        "id": 3,
+        "word": "corso secondario",
+        "pinyin": "",
+        "meaning": "habilitação"
+      },
+      {
+        "id": 4,
+        "word": "economia",
+        "pinyin": "",
+        "meaning": "negócios"
+      }
+    ],
+    "id": "local-1780239743412-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Credo che tu possa provare, ma hai già fatto questo tipo di lavoro in precedenza?",
+    "pinyin": "",
+    "translation": "A: Acho que você pode tentar, mas você já fez esse tipo de trabalho antes?",
+    "tokens": [
+      "A:",
+      "Credo",
+      "che",
+      "tu",
+      "possa",
+      "provare",
+      ",",
+      "ma",
+      "hai",
+      "già",
+      "fatto",
+      "questo",
+      "tipo",
+      "di",
+      "lavoro",
+      "in",
+      "precedenza",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Credo",
+        "pinyin": "",
+        "meaning": "Acho / Creio"
+      },
+      {
+        "id": 2,
+        "word": "provare",
+        "pinyin": "",
+        "meaning": "tentar"
+      },
+      {
+        "id": 3,
+        "word": "tipo di lavoro",
+        "pinyin": "",
+        "meaning": "tipo de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "precedenza",
+        "pinyin": "",
+        "meaning": "antes / anteriormente"
+      },
+      {
+        "id": 5,
+        "word": "già",
+        "pinyin": "",
+        "meaning": "já"
+      }
+    ],
+    "id": "local-1780239743412-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: No.",
+    "pinyin": "",
+    "translation": "B: Não.",
+    "tokens": [
+      "B:",
+      "No",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "No",
+        "pinyin": "",
+        "meaning": "Não"
+      }
+    ],
+    "id": "local-1780239743412-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Ehi, anche questo non va bene. Non solo devi avere lo stesso corso di laurea, ma devi anche avere questo tipo di esperienza lavorativa.",
+    "pinyin": "",
+    "translation": "A: Ei, isso também não está bom. Não só você precisa ter o mesmo curso de graduação, mas também precisa ter esse tipo de experiência de trabalho.",
+    "tokens": [
+      "A:",
+      "Ehi",
+      ",",
+      "anche",
+      "questo",
+      "non",
+      "va",
+      "bene",
+      ".",
+      "Non",
+      "solo",
+      "devi",
+      "avere",
+      "lo",
+      "stesso",
+      "corso",
+      "di",
+      "laurea",
+      ",",
+      "ma",
+      "devi",
+      "anche",
+      "avere",
+      "questo",
+      "tipo",
+      "di",
+      "esperienza",
+      "lavorativa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "corso di laurea",
+        "pinyin": "",
+        "meaning": "curso de graduação"
+      },
+      {
+        "id": 2,
+        "word": "esperienza lavorativa",
+        "pinyin": "",
+        "meaning": "experiência de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "non va bene",
+        "pinyin": "",
+        "meaning": "não está bom"
+      },
+      {
+        "id": 4,
+        "word": "anche",
+        "pinyin": "",
+        "meaning": "também"
+      },
+      {
+        "id": 5,
+        "word": "devi",
+        "pinyin": "",
+        "meaning": "você precisa"
+      }
+    ],
+    "id": "local-1780239743412-8",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Posso quindi lavorare solo come traduttore in Cina?",
+    "pinyin": "",
+    "translation": "B: Então posso trabalhar apenas como tradutor na China?",
+    "tokens": [
+      "B:",
+      "Posso",
+      "quindi",
+      "lavorare",
+      "solo",
+      "come",
+      "traduttore",
+      "in",
+      "Cina",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "quindi",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "lavorare",
+        "pinyin": "",
+        "meaning": "trabalhar"
+      },
+      {
+        "id": 3,
+        "word": "solo",
+        "pinyin": "",
+        "meaning": "apenas"
+      },
+      {
+        "id": 4,
+        "word": "traduttore",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 5,
+        "word": "Cina",
+        "pinyin": "",
+        "meaning": "China"
+      }
+    ],
+    "id": "local-1780239743412-9",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Che ne dici se facciamo così: vado a parlare con il manager della questione. Cambieremo il tuo titolo in Traduzione del Dipartimento di Marketing, ma in realtà il lavoro che stai facendo non cambierà.",
+    "pinyin": "",
+    "translation": "A: Que tal fazermos o seguinte: vou falar com o gerente sobre isso. Vamos mudar seu título para Tradução do Departamento de Marketing, mas na realidade o trabalho que você está fazendo não mudará.",
+    "tokens": [
+      "A:",
+      "Che",
+      "ne",
+      "dici",
+      "se",
+      "facciamo",
+      "così",
+      ":",
+      "vado",
+      "a",
+      "parlare",
+      "con",
+      "il",
+      "manager",
+      "della",
+      "questione",
+      ".",
+      "Cambieremo",
+      "il",
+      "tuo",
+      "titolo",
+      "in",
+      "Traduzione",
+      "del",
+      "Dipartimento",
+      "di",
+      "Marketing",
+      ",",
+      "ma",
+      "in",
+      "realtà",
+      "il",
+      "lavoro",
+      "che",
+      "stai",
+      "facendo",
+      "non",
+      "cambierà",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "manager",
+        "pinyin": "",
+        "meaning": "gerente"
+      },
+      {
+        "id": 2,
+        "word": "titolo",
+        "pinyin": "",
+        "meaning": "título"
+      },
+      {
+        "id": 3,
+        "word": "Dipartimento",
+        "pinyin": "",
+        "meaning": "departamento"
+      },
+      {
+        "id": 4,
+        "word": "Marketing",
+        "pinyin": "",
+        "meaning": "marketing"
+      },
+      {
+        "id": 5,
+        "word": "lavoro",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 6,
+        "word": "questione",
+        "pinyin": "",
+        "meaning": "questão"
+      }
+    ],
+    "id": "local-1780239743412-10",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene così?",
+    "pinyin": "",
+    "translation": "B: Está tudo bem assim?",
+    "tokens": [
+      "B:",
+      "Va",
+      "bene",
+      "così",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Va bene",
+        "pinyin": "",
+        "meaning": "Está bem / é aceitável"
+      },
+      {
+        "id": 2,
+        "word": "così",
+        "pinyin": "",
+        "meaning": "assim / desta forma"
+      }
+    ],
+    "id": "local-1780239743412-11",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Dovrebbe essere così. Ho sentito che alcune aziende lo fanno. In questo modo è facile passare. Comunque, un traduttore è un lavoro perfettamente accettabile per uno straniero.",
+    "pinyin": "",
+    "translation": "A: Deveria ser assim. Ouvi dizer que algumas empresas fazem isso. Dessa forma, é fácil passar. De qualquer forma, um tradutor é um trabalho perfeitamente aceitável para um estrangeiro.",
+    "tokens": [
+      "A:",
+      "Dovrebbe",
+      "essere",
+      "così",
+      ".",
+      "Ho",
+      "sentito",
+      "che",
+      "alcune",
+      "aziende",
+      "lo",
+      "fanno",
+      ".",
+      "In",
+      "questo",
+      "modo",
+      "è",
+      "facile",
+      "passare",
+      ".",
+      "Comunque",
+      ",",
+      "un",
+      "traduttore",
+      "è",
+      "un",
+      "lavoro",
+      "perfettamente",
+      "accettabile",
+      "per",
+      "uno",
+      "straniero",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aziende",
+        "pinyin": "",
+        "meaning": "empresas"
+      },
+      {
+        "id": 2,
+        "word": "traduttore",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 3,
+        "word": "straniero",
+        "pinyin": "",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 4,
+        "word": "accettabile",
+        "pinyin": "",
+        "meaning": "aceitável"
+      }
+    ],
+    "id": "local-1780239743412-12",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Va bene. Sembra che sarò sempre un traduttore in Cina.",
+    "pinyin": "",
+    "translation": "B: Certo. Parece que eu sempre vou ser um tradutor na China.",
+    "tokens": [
+      "B:",
+      "Va",
+      "bene",
+      ".",
+      "Sembra",
+      "che",
+      "sarò",
+      "sempre",
+      "un",
+      "traduttore",
+      "in",
+      "Cina",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "traduttore",
+        "pinyin": "",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 2,
+        "word": "Cina",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "sempre",
+        "pinyin": "",
+        "meaning": "sempre"
+      },
+      {
+        "id": 4,
+        "word": "Sembra",
+        "pinyin": "",
+        "meaning": "parece"
+      },
+      {
+        "id": 5,
+        "word": "sarò",
+        "pinyin": "",
+        "meaning": "serei/estarei"
+      }
+    ],
+    "id": "local-1780239743412-13",
+    "language": "Italiano"
+  }
+]

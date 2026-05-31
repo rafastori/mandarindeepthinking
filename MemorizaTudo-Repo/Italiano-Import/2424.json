@@ -1,0 +1,534 @@
+[
+  {
+    "chinese": "A: Sei un Ariete. Si dice online che l'Ariete è un segno di fuoco. Questo rappresenta tutto dall'inizio. È una persona che ha talento nella leadership. Le donne che sono Ariete quasi sempre possono diventare donne d'affari eccezionali e, allo stesso tempo, possono essere brave a fare la casalinga. È molto simile a te!",
+    "pinyin": "",
+    "translation": "A: Você é Áries. Dizem online que Áries é um signo de fogo. Isso representa tudo desde o início. É uma pessoa que tem talento para a liderança. Mulheres que são Áries quase sempre podem se tornar mulheres de negócios excepcionais e, ao mesmo tempo, podem ser boas em ser donas de casa. É muito parecido com você!",
+    "tokens": [
+      "A:",
+      "Sei",
+      "un",
+      "Ariete",
+      ".",
+      "Si",
+      "dice",
+      "online",
+      "che",
+      "l'Ariete",
+      "è",
+      "un",
+      "segno",
+      "di",
+      "fuoco",
+      ".",
+      "Questo",
+      "rappresenta",
+      "tutto",
+      "dall'inizio",
+      ".",
+      "È",
+      "una",
+      "persona",
+      "che",
+      "ha",
+      "talento",
+      "nella",
+      "leadership",
+      ".",
+      "Le",
+      "donne",
+      "che",
+      "sono",
+      "Ariete",
+      "quasi",
+      "sempre",
+      "possono",
+      "diventare",
+      "donne",
+      "d'affari",
+      "eccezionali",
+      "e",
+      ",",
+      "allo",
+      "stesso",
+      "tempo",
+      ",",
+      "possono",
+      "essere",
+      "brave",
+      "a",
+      "fare",
+      "la",
+      "casalinga",
+      ".",
+      "È",
+      "molto",
+      "simile",
+      "a",
+      "te",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ariete",
+        "pinyin": "",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 2,
+        "word": "segno di fuoco",
+        "pinyin": "",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 3,
+        "word": "leadership",
+        "pinyin": "",
+        "meaning": "liderança"
+      },
+      {
+        "id": 4,
+        "word": "donne d'affari",
+        "pinyin": "",
+        "meaning": "mulheres de negócios"
+      },
+      {
+        "id": 5,
+        "word": "casalinga",
+        "pinyin": "",
+        "meaning": "dona de casa"
+      }
+    ],
+    "id": "local-1780239511671-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Suppongo di sì. E per quanto riguarda la personalità?",
+    "pinyin": "",
+    "translation": "B: Acho que sim. E quanto à personalidade?",
+    "tokens": [
+      "B:",
+      "Suppongo",
+      "di",
+      "sì",
+      ".",
+      "E",
+      "per",
+      "quanto",
+      "riguarda",
+      "la",
+      "personalità",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Suppongo",
+        "pinyin": "",
+        "meaning": "acho / suponho"
+      },
+      {
+        "id": 2,
+        "word": "personalità",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 3,
+        "word": "per quanto",
+        "pinyin": "",
+        "meaning": "no que diz respeito"
+      }
+    ],
+    "id": "local-1780239511671-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Gli Arieti sono come bambini piccoli: rivelano i loro veri sentimenti, sono schietti e aperti. Tuttavia, sono anche egoisti e infantili. Sono molto gentili e non approfittano dei loro amici, ma il loro difetto più grande è l'amore per la faccia. Non possono mai ammettere di aver sbagliato.",
+    "pinyin": "",
+    "translation": "A: Os Arianos são como crianças pequenas - revelando seus verdadeiros sentimentos, francos e abertos. No entanto, eles também são egoístas e infantis. Eles são muito gentis e não tiram vantagem de seus amigos, mas sua maior falha é o amor pela aparência. Eles nunca podem admitir que cometeram um erro.",
+    "tokens": [
+      "A:",
+      "Gli",
+      "Arieti",
+      "sono",
+      "come",
+      "bambini",
+      "piccoli",
+      ":",
+      "rivelano",
+      "i",
+      "loro",
+      "veri",
+      "sentimenti",
+      ",",
+      "sono",
+      "schietti",
+      "e",
+      "aperti",
+      ".",
+      "Tuttavia",
+      ",",
+      "sono",
+      "anche",
+      "egoisti",
+      "e",
+      "infantili",
+      ".",
+      "Sono",
+      "molto",
+      "gentili",
+      "e",
+      "non",
+      "approfittano",
+      "dei",
+      "loro",
+      "amici",
+      ",",
+      "ma",
+      "il",
+      "loro",
+      "difetto",
+      "più",
+      "grande",
+      "è",
+      "l'amore",
+      "per",
+      "la",
+      "faccia",
+      ".",
+      "Non",
+      "possono",
+      "mai",
+      "ammettere",
+      "di",
+      "aver",
+      "sbagliato",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bambini piccoli",
+        "pinyin": "",
+        "meaning": "crianças pequenas"
+      },
+      {
+        "id": 2,
+        "word": "schietti",
+        "pinyin": "",
+        "meaning": "francos"
+      },
+      {
+        "id": 3,
+        "word": "egoisti",
+        "pinyin": "",
+        "meaning": "egoístas"
+      },
+      {
+        "id": 4,
+        "word": "infantili",
+        "pinyin": "",
+        "meaning": "infantis"
+      },
+      {
+        "id": 5,
+        "word": "gentili",
+        "pinyin": "",
+        "meaning": "gentis"
+      },
+      {
+        "id": 6,
+        "word": "difetto",
+        "pinyin": "",
+        "meaning": "falha"
+      },
+      {
+        "id": 7,
+        "word": "ammettere",
+        "pinyin": "",
+        "meaning": "admitir"
+      }
+    ],
+    "id": "local-1780239511671-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Hehe. Ne sai.",
+    "pinyin": "",
+    "translation": "B: Hehe. Você sabe disso...",
+    "tokens": [
+      "B:",
+      "Hehe",
+      ".",
+      "Ne",
+      "sai",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hehe",
+        "pinyin": "",
+        "meaning": "risada"
+      },
+      {
+        "id": 2,
+        "word": "Ne",
+        "pinyin": "",
+        "meaning": "disso/nele"
+      },
+      {
+        "id": 3,
+        "word": "sai",
+        "pinyin": "",
+        "meaning": "sabe"
+      }
+    ],
+    "id": "local-1780239511671-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Le persone che sono Ariete hanno un carattere impulsivo e si arrabbiano facilmente. Non amano frequentare persone tranquille. Se litigano con te, non significa che siano davvero arrabbiate. Se lo sono davvero, allora ti ignoreranno!",
+    "pinyin": "",
+    "translation": "A: As pessoas que são Áries têm um temperamento rápido e se aborrecem facilmente. Elas não gostam de se associar com pessoas tranquilas. Se brigam com você, não significa que estejam realmente bravas. Se estiverem realmente bravas, então vão simplesmente ignorar você!",
+    "tokens": [
+      "A:",
+      "Le",
+      "persone",
+      "che",
+      "sono",
+      "Ariete",
+      "hanno",
+      "un",
+      "carattere",
+      "impulsivo",
+      "e",
+      "si",
+      "arrabbiano",
+      "facilmente",
+      ".",
+      "Non",
+      "amano",
+      "frequentare",
+      "persone",
+      "tranquille",
+      ".",
+      "Se",
+      "litigano",
+      "con",
+      "te",
+      ",",
+      "non",
+      "significa",
+      "che",
+      "siano",
+      "davvero",
+      "arrabbiate",
+      ".",
+      "Se",
+      "lo",
+      "sono",
+      "davvero",
+      ",",
+      "allora",
+      "ti",
+      "ignoreranno",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ariete",
+        "pinyin": "",
+        "meaning": "signo de Áries"
+      },
+      {
+        "id": 2,
+        "word": "impulsivo",
+        "pinyin": "",
+        "meaning": "rápido temperamento"
+      },
+      {
+        "id": 3,
+        "word": "arrabbiano",
+        "pinyin": "",
+        "meaning": "ficam bravos"
+      },
+      {
+        "id": 4,
+        "word": "tranquille",
+        "pinyin": "",
+        "meaning": "pessoas calmas"
+      },
+      {
+        "id": 5,
+        "word": "litigano",
+        "pinyin": "",
+        "meaning": "brigam"
+      },
+      {
+        "id": 6,
+        "word": "ignoreranno",
+        "pinyin": "",
+        "meaning": "ignorarão"
+      }
+    ],
+    "id": "local-1780239511671-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Quindi da questo punto di vista, non sono compatibile con un Vergine, vero?",
+    "pinyin": "",
+    "translation": "B: Então, desse ponto de vista, não sou compatível com um Virgem, sou?",
+    "tokens": [
+      "B:",
+      "Quindi",
+      "da",
+      "questo",
+      "punto",
+      "di",
+      "vista",
+      ",",
+      "non",
+      "sono",
+      "compatibile",
+      "con",
+      "un",
+      "Vergine",
+      ",",
+      "vero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "punto di vista",
+        "pinyin": "",
+        "meaning": "ponto de vista"
+      },
+      {
+        "id": 2,
+        "word": "compatibile",
+        "pinyin": "",
+        "meaning": "compatível"
+      },
+      {
+        "id": 3,
+        "word": "Vergine",
+        "pinyin": "",
+        "meaning": "Virgem"
+      },
+      {
+        "id": 4,
+        "word": "vero",
+        "pinyin": "",
+        "meaning": "verdadeiro / certo"
+      }
+    ],
+    "id": "local-1780239511671-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sì. I Vergini amano davvero fare i pignoli e sono anche nervosi. La vostra vita insieme dovrebbe avere molti problemi.",
+    "pinyin": "",
+    "translation": "A: Sim. Os Virgos realmente gostam de fazer críticas pedantes e também são nervosos. A vida de vocês juntos deveria ter muitos problemas.",
+    "tokens": [
+      "A:",
+      "Sì",
+      ".",
+      "I",
+      "Vergini",
+      "amano",
+      "davvero",
+      "fare",
+      "i",
+      "pignoli",
+      "e",
+      "sono",
+      "anche",
+      "nervosi",
+      ".",
+      "La",
+      "vostra",
+      "vita",
+      "insieme",
+      "dovrebbe",
+      "avere",
+      "molti",
+      "problemi",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vergini",
+        "pinyin": "",
+        "meaning": "Virgos"
+      },
+      {
+        "id": 2,
+        "word": "pignoli",
+        "pinyin": "",
+        "meaning": "pedantes"
+      },
+      {
+        "id": 3,
+        "word": "nervosi",
+        "pinyin": "",
+        "meaning": "nervosos"
+      },
+      {
+        "id": 4,
+        "word": "vita",
+        "pinyin": "",
+        "meaning": "vida"
+      },
+      {
+        "id": 5,
+        "word": "problemi",
+        "pinyin": "",
+        "meaning": "problemas"
+      }
+    ],
+    "id": "local-1780239511671-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Con quale segno zodiacale sono compatibile?",
+    "pinyin": "",
+    "translation": "B: Com qual signo zodiacal eu sou compatível?",
+    "tokens": [
+      "B:",
+      "Con",
+      "quale",
+      "segno",
+      "zodiacale",
+      "sono",
+      "compatibile",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "segno zodiacale",
+        "pinyin": "",
+        "meaning": "signo zodiacal"
+      },
+      {
+        "id": 2,
+        "word": "compatibile",
+        "pinyin": "",
+        "meaning": "compatível"
+      },
+      {
+        "id": 3,
+        "word": "sono",
+        "pinyin": "",
+        "meaning": "sou"
+      }
+    ],
+    "id": "local-1780239511671-7",
+    "language": "Italiano"
+  }
+]

@@ -1,0 +1,878 @@
+[
+  {
+    "chinese": "A: Xiao Wang, bienvenido a nuestra empresa. Ha leído el contrato, ¿tiene alguna pregunta?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, bem-vindo à nossa empresa. Você leu o contrato, tem alguma dúvida?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "bienvenido",
+      "a",
+      "nuestra",
+      "empresa",
+      ".",
+      "Ha",
+      "leído",
+      "el",
+      "contrato",
+      ",",
+      "¿",
+      "tiene",
+      "alguna",
+      "pregunta",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "bienvenido",
+        "pinyin": "",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "empresa",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "contrato",
+        "pinyin": "",
+        "meaning": "contrato"
+      },
+      {
+        "id": 4,
+        "word": "pregunta",
+        "pinyin": "",
+        "meaning": "pergunta"
+      }
+    ],
+    "id": "local-1780235209095-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Me gustaría preguntar cómo se pagan los seguros en nuestra empresa.",
+    "pinyin": "",
+    "translation": "B: Gostaria de perguntar como os seguros da nossa empresa são pagos.",
+    "tokens": [
+      "B:",
+      "Me",
+      "gustaría",
+      "preguntar",
+      "cómo",
+      "se",
+      "pagan",
+      "los",
+      "seguros",
+      "en",
+      "nuestra",
+      "empresa",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seguros",
+        "pinyin": "",
+        "meaning": "seguros"
+      },
+      {
+        "id": 2,
+        "word": "empresa",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 3,
+        "word": "preguntar",
+        "pinyin": "",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 4,
+        "word": "nuestra",
+        "pinyin": "",
+        "meaning": "nossa"
+      }
+    ],
+    "id": "local-1780235209095-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La regulación estatal de los \"cinco seguros sociales y un fondo de vivienda\".",
+    "pinyin": "",
+    "translation": "A: A regulação estatal dos \"cinco seguros sociais e um fundo de habitação\".",
+    "tokens": [
+      "A:",
+      "La",
+      "regulación",
+      "estatal",
+      "de",
+      "los",
+      "\"",
+      "cinco",
+      "seguros",
+      "sociales",
+      "y",
+      "un",
+      "fondo",
+      "de",
+      "vivienda",
+      "\"",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "regulación",
+        "pinyin": "",
+        "meaning": "regulação"
+      },
+      {
+        "id": 2,
+        "word": "estatal",
+        "pinyin": "",
+        "meaning": "estatal"
+      },
+      {
+        "id": 3,
+        "word": "seguros sociales",
+        "pinyin": "",
+        "meaning": "seguros sociais"
+      },
+      {
+        "id": 4,
+        "word": "fondo",
+        "pinyin": "",
+        "meaning": "fundo"
+      },
+      {
+        "id": 5,
+        "word": "vivienda",
+        "pinyin": "",
+        "meaning": "habitação"
+      }
+    ],
+    "id": "local-1780235209095-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Lo siento, acabo de regresar a China. No lo entiendo muy bien.",
+    "pinyin": "",
+    "translation": "B: Desculpe, acabei de voltar para a China. Não entendo muito bem.",
+    "tokens": [
+      "B:",
+      "Lo",
+      "siento",
+      ",",
+      "acabo",
+      "de",
+      "regresar",
+      "a",
+      "China",
+      ".",
+      "No",
+      "lo",
+      "entiendo",
+      "muy",
+      "bien",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lo siento",
+        "pinyin": "",
+        "meaning": "Desculpe"
+      },
+      {
+        "id": 2,
+        "word": "acabo de regresar",
+        "pinyin": "",
+        "meaning": "acabei de voltar"
+      },
+      {
+        "id": 3,
+        "word": "China",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 4,
+        "word": "No lo entiendo",
+        "pinyin": "",
+        "meaning": "Não entendo"
+      },
+      {
+        "id": 5,
+        "word": "muy bien",
+        "pinyin": "",
+        "meaning": "muito bem"
+      }
+    ],
+    "id": "local-1780235209095-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Los cinco seguros sociales y un fondo de vivienda son: seguro de vejez, seguro médico, seguro de desempleo, seguro de invalidez laboral, seguro de maternidad y fondo de acumulación de vivienda.",
+    "pinyin": "",
+    "translation": "A: Os cinco seguros sociais e um fundo de habitação são: seguro de velhice, seguro médico, seguro de desemprego, seguro de invalidez laboral, seguro de maternidade e fundo de acumulação habitacional.",
+    "tokens": [
+      "A:",
+      "Los",
+      "cinco",
+      "seguros",
+      "sociales",
+      "y",
+      "un",
+      "fondo",
+      "de",
+      "vivienda",
+      "son",
+      ":",
+      "seguro",
+      "de",
+      "vejez",
+      ",",
+      "seguro",
+      "médico",
+      ",",
+      "seguro",
+      "de",
+      "desempleo",
+      ",",
+      "seguro",
+      "de",
+      "invalidez",
+      "laboral",
+      ",",
+      "seguro",
+      "de",
+      "maternidad",
+      "y",
+      "fondo",
+      "de",
+      "acumulación",
+      "de",
+      "vivienda",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seguros sociales",
+        "pinyin": "",
+        "meaning": "seguros sociais"
+      },
+      {
+        "id": 2,
+        "word": "fondo de vivienda",
+        "pinyin": "",
+        "meaning": "fundo de habitação"
+      },
+      {
+        "id": 3,
+        "word": "seguro de vejez",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 4,
+        "word": "seguro médico",
+        "pinyin": "",
+        "meaning": "seguro médico"
+      },
+      {
+        "id": 5,
+        "word": "seguro de desempleo",
+        "pinyin": "",
+        "meaning": "seguro de desemprego"
+      },
+      {
+        "id": 6,
+        "word": "seguro de invalidez laboral",
+        "pinyin": "",
+        "meaning": "seguro de invalidez laboral"
+      },
+      {
+        "id": 7,
+        "word": "seguro de maternidad",
+        "pinyin": "",
+        "meaning": "seguro de maternidade"
+      }
+    ],
+    "id": "local-1780235209095-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿La empresa paga por todo esto?",
+    "pinyin": "",
+    "translation": "B: A empresa paga por tudo isso?",
+    "tokens": [
+      "B:",
+      "¿",
+      "La",
+      "empresa",
+      "paga",
+      "por",
+      "todo",
+      "esto",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "empresa",
+        "pinyin": "",
+        "meaning": "companhia"
+      },
+      {
+        "id": 2,
+        "word": "paga",
+        "pinyin": "",
+        "meaning": "custeia"
+      },
+      {
+        "id": 3,
+        "word": "todo",
+        "pinyin": "",
+        "meaning": "tudo"
+      },
+      {
+        "id": 4,
+        "word": "esto",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780235209095-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: El seguro de vejez, el seguro médico, el seguro de desempleo y el fondo de acumulación de vivienda son pagados conjuntamente por la empresa y el individuo.",
+    "pinyin": "",
+    "translation": "A: O seguro de velhice, o seguro médico, o seguro-desemprego e o fundo de acumulação habitacional são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "A:",
+      "El",
+      "seguro",
+      "de",
+      "vejez",
+      ",",
+      "el",
+      "seguro",
+      "médico",
+      ",",
+      "el",
+      "seguro",
+      "de",
+      "desempleo",
+      "y",
+      "el",
+      "fondo",
+      "de",
+      "acumulación",
+      "de",
+      "vivienda",
+      "son",
+      "pagados",
+      "conjuntamente",
+      "por",
+      "la",
+      "empresa",
+      "y",
+      "el",
+      "individuo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seguro de vejez",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 2,
+        "word": "seguro médico",
+        "pinyin": "",
+        "meaning": "seguro médico"
+      },
+      {
+        "id": 3,
+        "word": "seguro de desempleo",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 4,
+        "word": "fondo de acumulación de vivienda",
+        "pinyin": "",
+        "meaning": "fundo de acumulação habitacional"
+      },
+      {
+        "id": 5,
+        "word": "empresa",
+        "pinyin": "",
+        "meaning": "empresa"
+      },
+      {
+        "id": 6,
+        "word": "individuo",
+        "pinyin": "",
+        "meaning": "indivíduo"
+      }
+    ],
+    "id": "local-1780235209095-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Entonces cuánto hay que pagar?",
+    "pinyin": "",
+    "translation": "B: Então quanto precisa ser pago?",
+    "tokens": [
+      "B:",
+      "¿",
+      "Entonces",
+      "cuánto",
+      "hay",
+      "que",
+      "pagar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "cuánto",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 2,
+        "word": "hay que",
+        "pinyin": "",
+        "meaning": "é preciso"
+      },
+      {
+        "id": 3,
+        "word": "pagar",
+        "pinyin": "",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1780235209095-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Cada ciudad es diferente. En Shanghái, para el seguro de vejez, el individuo paga el 8 % y la empresa el 21 %. Para el seguro médico, el individuo paga el 2 % y la empresa el 11 %. Para el seguro de desempleo, el individuo paga el 0,5 % y la empresa el 1,5 %. El individuo y la empresa pagan cada uno el 7 % para el fondo de acumulación.",
+    "pinyin": "",
+    "translation": "A: Cada cidade é diferente. Em Xangai, para o seguro de aposentadoria, o indivíduo paga 8% e a empresa 21%. Para o seguro saúde, o indivíduo paga 2% e a empresa 11%. Para o seguro-desemprego, o indivíduo paga 0,5% e a empresa 1,5%. O indivíduo e a empresa pagam cada um 7% para o fundo de acumulação.",
+    "tokens": [
+      "A:",
+      "Cada",
+      "ciudad",
+      "es",
+      "diferente",
+      ".",
+      "En",
+      "Shanghái",
+      ",",
+      "para",
+      "el",
+      "seguro",
+      "de",
+      "vejez",
+      ",",
+      "el",
+      "individuo",
+      "paga",
+      "el",
+      "8",
+      "%",
+      "y",
+      "la",
+      "empresa",
+      "el",
+      "21",
+      "%",
+      ".",
+      "Para",
+      "el",
+      "seguro",
+      "médico",
+      ",",
+      "el",
+      "individuo",
+      "paga",
+      "el",
+      "2",
+      "%",
+      "y",
+      "la",
+      "empresa",
+      "el",
+      "11",
+      "%",
+      ".",
+      "Para",
+      "el",
+      "seguro",
+      "de",
+      "desempleo",
+      ",",
+      "el",
+      "individuo",
+      "paga",
+      "el",
+      "0",
+      ",",
+      "5",
+      "%",
+      "y",
+      "la",
+      "empresa",
+      "el",
+      "1",
+      ",",
+      "5",
+      "%",
+      ".",
+      "El",
+      "individuo",
+      "y",
+      "la",
+      "empresa",
+      "pagan",
+      "cada",
+      "uno",
+      "el",
+      "7",
+      "%",
+      "para",
+      "el",
+      "fondo",
+      "de",
+      "acumulación",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "seguro de vejez",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 2,
+        "word": "individuo",
+        "pinyin": "",
+        "meaning": "pessoa física, contribuinte"
+      },
+      {
+        "id": 3,
+        "word": "empresa",
+        "pinyin": "",
+        "meaning": "empregador, trabalho"
+      },
+      {
+        "id": 4,
+        "word": "seguro médico",
+        "pinyin": "",
+        "meaning": "plano de saúde"
+      },
+      {
+        "id": 5,
+        "word": "seguro de desempleo",
+        "pinyin": "",
+        "meaning": "seguro-desemprego"
+      },
+      {
+        "id": 6,
+        "word": "fondo de acumulación",
+        "pinyin": "",
+        "meaning": "fundo de pensão, fundo de reserva"
+      }
+    ],
+    "id": "local-1780235209095-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Entonces, mi permiso de residencia no está en Shanghái, ¿tengo que pagar según el criterio de Shanghái?",
+    "pinyin": "",
+    "translation": "B: Então, meu visto de residência não está em Xangai, tenho que pagar de acordo com o critério de Xangai?",
+    "tokens": [
+      "B:",
+      "Entonces",
+      ",",
+      "mi",
+      "permiso",
+      "de",
+      "residencia",
+      "no",
+      "está",
+      "en",
+      "Shanghái",
+      ",",
+      "¿",
+      "tengo",
+      "que",
+      "pagar",
+      "según",
+      "el",
+      "criterio",
+      "de",
+      "Shanghái",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "permiso de residencia",
+        "pinyin": "",
+        "meaning": "visto de residência"
+      },
+      {
+        "id": 2,
+        "word": "Shanghái",
+        "pinyin": "",
+        "meaning": "cidade chinesa"
+      },
+      {
+        "id": 3,
+        "word": "pagar",
+        "pinyin": "",
+        "meaning": "efetuar pagamento"
+      },
+      {
+        "id": 4,
+        "word": "criterio",
+        "pinyin": "",
+        "meaning": "padrão ou norma"
+      },
+      {
+        "id": 5,
+        "word": "tengo que",
+        "pinyin": "",
+        "meaning": "tenho obrigação de"
+      }
+    ],
+    "id": "local-1780235209095-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Sí, porque trabajas en Shanghái.",
+    "pinyin": "",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "A:",
+      "Sí",
+      ",",
+      "porque",
+      "trabajas",
+      "en",
+      "Shanghái",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sí",
+        "pinyin": "",
+        "meaning": "Sim"
+      },
+      {
+        "id": 2,
+        "word": "porque",
+        "pinyin": "",
+        "meaning": "pois, já que"
+      },
+      {
+        "id": 3,
+        "word": "trabajas",
+        "pinyin": "",
+        "meaning": "você trabalha"
+      },
+      {
+        "id": 4,
+        "word": "Shanghái",
+        "pinyin": "",
+        "meaning": "cidade na China"
+      }
+    ],
+    "id": "local-1780235209095-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Si me jubilo, ¿puedo cobrar el seguro de vejez de Shanghái?",
+    "pinyin": "",
+    "translation": "B: Se eu me aposentar, posso receber o seguro de velhice de Xangai?",
+    "tokens": [
+      "B:",
+      "Si",
+      "me",
+      "jubilo",
+      ",",
+      "¿",
+      "puedo",
+      "cobrar",
+      "el",
+      "seguro",
+      "de",
+      "vejez",
+      "de",
+      "Shanghái",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jubilo",
+        "pinyin": "",
+        "meaning": "aposento"
+      },
+      {
+        "id": 2,
+        "word": "seguro de vejez",
+        "pinyin": "",
+        "meaning": "seguro de velhice"
+      },
+      {
+        "id": 3,
+        "word": "Shanghái",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "cobrar",
+        "pinyin": "",
+        "meaning": "receber"
+      },
+      {
+        "id": 5,
+        "word": "Si",
+        "pinyin": "",
+        "meaning": "se"
+      }
+    ],
+    "id": "local-1780235209095-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Esto es más bien una molestia. Si te jubilas, pero tu permiso de residencia no está en Shanghái, entonces solo puedes ir al lugar de tu residencia permanente a cobrar el seguro de vejez.",
+    "pinyin": "",
+    "translation": "A: Isso é mais uma inconveniência. Se você se aposentar, mas sua permissão de residência não estiver em Xangai, então você só pode ir ao local da sua residência permanente para receber o seguro de aposentadoria.",
+    "tokens": [
+      "A:",
+      "Esto",
+      "es",
+      "más",
+      "bien",
+      "una",
+      "molestia",
+      ".",
+      "Si",
+      "te",
+      "jubilas",
+      ",",
+      "pero",
+      "tu",
+      "permiso",
+      "de",
+      "residencia",
+      "no",
+      "está",
+      "en",
+      "Shanghái",
+      ",",
+      "entonces",
+      "solo",
+      "puedes",
+      "ir",
+      "al",
+      "lugar",
+      "de",
+      "tu",
+      "residencia",
+      "permanente",
+      "a",
+      "cobrar",
+      "el",
+      "seguro",
+      "de",
+      "vejez",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "molestia",
+        "pinyin": "",
+        "meaning": "incômodo"
+      },
+      {
+        "id": 2,
+        "word": "jubilas",
+        "pinyin": "",
+        "meaning": "aposenta"
+      },
+      {
+        "id": 3,
+        "word": "permiso de residencia",
+        "pinyin": "",
+        "meaning": "permissão de residência"
+      },
+      {
+        "id": 4,
+        "word": "Shanghái",
+        "pinyin": "",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 5,
+        "word": "residencia permanente",
+        "pinyin": "",
+        "meaning": "residência permanente"
+      },
+      {
+        "id": 6,
+        "word": "seguro de vejez",
+        "pinyin": "",
+        "meaning": "seguro de aposentadoria"
+      }
+    ],
+    "id": "local-1780235209095-12",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es tan complicado.",
+    "pinyin": "",
+    "translation": "B: É tão complicado.",
+    "tokens": [
+      "B:",
+      "Es",
+      "tan",
+      "complicado",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "tan",
+        "pinyin": "",
+        "meaning": "tão"
+      },
+      {
+        "id": 2,
+        "word": "complicado",
+        "pinyin": "",
+        "meaning": "complicado"
+      }
+    ],
+    "id": "local-1780235209095-13",
+    "language": "Espanhol"
+  }
+]

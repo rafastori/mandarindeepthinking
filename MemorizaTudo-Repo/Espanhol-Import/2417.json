@@ -1,0 +1,851 @@
+[
+  {
+    "chinese": "A: Vamos comer juntos mañana. Voy a usar una compra grupal de Dianping.",
+    "pinyin": "",
+    "translation": "A: Vamos comer juntos amanhã. Vou usar uma compra em grupo do Dianping.",
+    "tokens": [
+      "A:",
+      "Vamos",
+      "comer",
+      "juntos",
+      "mañana",
+      ".",
+      "Voy",
+      "a",
+      "usar",
+      "una",
+      "compra",
+      "grupal",
+      "de",
+      "Dianping",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "comer",
+        "pinyin": "",
+        "meaning": "comer"
+      },
+      {
+        "id": 2,
+        "word": "juntos",
+        "pinyin": "",
+        "meaning": "juntos"
+      },
+      {
+        "id": 3,
+        "word": "mañana",
+        "pinyin": "",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 4,
+        "word": "compra grupal",
+        "pinyin": "",
+        "meaning": "compra em grupo"
+      },
+      {
+        "id": 5,
+        "word": "Dianping",
+        "pinyin": "",
+        "meaning": "Dianping"
+      }
+    ],
+    "id": "local-1780234036754-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Vale.",
+    "pinyin": "",
+    "translation": "B: Ok.",
+    "tokens": [
+      "B:",
+      "Vale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vale",
+        "pinyin": "",
+        "meaning": "Ok, certo"
+      }
+    ],
+    "id": "local-1780234036754-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oye, ahora hay una oferta especial en compras grupales. Si usas WeChat Pay, puedes ahorrar otros 20 yuanes. Pero solo tengo Alipay. ¿Qué tal si me registro en WeChat Pay?",
+    "pinyin": "",
+    "translation": "A: Ei, agora há uma oferta especial em compras em grupo. Se você usar o WeChat Pay, pode economizar mais 20 yuanes. Mas eu só tenho o Alipay. Que tal se eu me registrar no WeChat Pay?",
+    "tokens": [
+      "A:",
+      "Oye",
+      ",",
+      "ahora",
+      "hay",
+      "una",
+      "oferta",
+      "especial",
+      "en",
+      "compras",
+      "grupales",
+      ".",
+      "Si",
+      "usas",
+      "WeChat",
+      "Pay",
+      ",",
+      "puedes",
+      "ahorrar",
+      "otros",
+      "20",
+      "yuanes",
+      ".",
+      "Pero",
+      "solo",
+      "tengo",
+      "Alipay",
+      ".",
+      "¿",
+      "Qué",
+      "tal",
+      "si",
+      "me",
+      "registro",
+      "en",
+      "WeChat",
+      "Pay",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "oferta especial",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 2,
+        "word": "compras grupales",
+        "pinyin": "",
+        "meaning": "compras em grupo"
+      },
+      {
+        "id": 3,
+        "word": "ahorrar",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 4,
+        "word": "yuanes",
+        "pinyin": "",
+        "meaning": "moeda chinesa"
+      }
+    ],
+    "id": "local-1780234036754-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Tencent es realmente rápida. Tras invertir en Dianping, lanzó rápidamente un plan de marketing en WeChat.",
+    "pinyin": "",
+    "translation": "B: A Tencent é realmente rápida. Após investir na Dianping, ela lançou rapidamente um plano de marketing no WeChat.",
+    "tokens": [
+      "B:",
+      "Tencent",
+      "es",
+      "realmente",
+      "rápida",
+      ".",
+      "Tras",
+      "invertir",
+      "en",
+      "Dianping",
+      ",",
+      "lanzó",
+      "rápidamente",
+      "un",
+      "plan",
+      "de",
+      "marketing",
+      "en",
+      "WeChat",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "rápida",
+        "pinyin": "",
+        "meaning": "rápido"
+      },
+      {
+        "id": 2,
+        "word": "invertir",
+        "pinyin": "",
+        "meaning": "investir"
+      },
+      {
+        "id": 3,
+        "word": "lanzó",
+        "pinyin": "",
+        "meaning": "lançou"
+      },
+      {
+        "id": 4,
+        "word": "rápidamente",
+        "pinyin": "",
+        "meaning": "rapidamente"
+      },
+      {
+        "id": 5,
+        "word": "plan",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 6,
+        "word": "marketing",
+        "pinyin": "",
+        "meaning": "marketing"
+      }
+    ],
+    "id": "local-1780234036754-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Tanto QQ como WeChat de Tencent son productos de mensajería. ¿Por qué querían invertir en Dianping?",
+    "pinyin": "",
+    "translation": "A: Tanto o QQ quanto o WeChat da Tencent são produtos de mensagens. Por que eles queriam investir na Dianping?",
+    "tokens": [
+      "A:",
+      "Tanto",
+      "QQ",
+      "como",
+      "WeChat",
+      "de",
+      "Tencent",
+      "son",
+      "productos",
+      "de",
+      "mensajería",
+      ".",
+      "¿",
+      "Por",
+      "qué",
+      "querían",
+      "invertir",
+      "en",
+      "Dianping",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mensajería",
+        "pinyin": "",
+        "meaning": "mensagens"
+      },
+      {
+        "id": 2,
+        "word": "Tencent",
+        "pinyin": "",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 3,
+        "word": "invertir",
+        "pinyin": "",
+        "meaning": "investir"
+      },
+      {
+        "id": 4,
+        "word": "productos",
+        "pinyin": "",
+        "meaning": "produtos"
+      },
+      {
+        "id": 5,
+        "word": "Dianping",
+        "pinyin": "",
+        "meaning": "Dianping"
+      }
+    ],
+    "id": "local-1780234036754-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Hoy en día, lo más popular es el O2O. Las BAT están dispuestas a invertir mucho dinero en el O2O.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, o mais em alta é o O2O. As BAT estão dispostas a gastar muito dinheiro no O2O.",
+    "tokens": [
+      "B:",
+      "Hoy",
+      "en",
+      "día",
+      ",",
+      "lo",
+      "más",
+      "popular",
+      "es",
+      "el",
+      "O",
+      "2",
+      "O",
+      ".",
+      "Las",
+      "BAT",
+      "están",
+      "dispuestas",
+      "a",
+      "invertir",
+      "mucho",
+      "dinero",
+      "en",
+      "el",
+      "O",
+      "2",
+      "O",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "popular",
+        "pinyin": "",
+        "meaning": "em alta, popular"
+      },
+      {
+        "id": 2,
+        "word": "O2O",
+        "pinyin": "",
+        "meaning": "modelo de negócios online-to-offline"
+      },
+      {
+        "id": 3,
+        "word": "BAT",
+        "pinyin": "",
+        "meaning": "Baidu, Alibaba, Tencent"
+      },
+      {
+        "id": 4,
+        "word": "invertir",
+        "pinyin": "",
+        "meaning": "gastar, aplicar capital"
+      },
+      {
+        "id": 5,
+        "word": "dinero",
+        "pinyin": "",
+        "meaning": "capital, recursos financeiros"
+      }
+    ],
+    "id": "local-1780234036754-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¡Habla como un ser humano!",
+    "pinyin": "",
+    "translation": "A: Fale como um ser humano!",
+    "tokens": [
+      "A:",
+      "¡",
+      "Habla",
+      "como",
+      "un",
+      "ser",
+      "humano",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Habla",
+        "pinyin": "",
+        "meaning": "Fale"
+      },
+      {
+        "id": 2,
+        "word": "humano",
+        "pinyin": "",
+        "meaning": "humano"
+      },
+      {
+        "id": 3,
+        "word": "ser",
+        "pinyin": "",
+        "meaning": "ser"
+      },
+      {
+        "id": 4,
+        "word": "como",
+        "pinyin": "",
+        "meaning": "como"
+      }
+    ],
+    "id": "local-1780234036754-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: O2O significa de online a offline. Se trata de conectar el gasto en línea con el gasto en físico. Piénsalo: buscas un restaurante en Dianping en línea, pero no puedes comer en línea. Al final, aún necesitas ir a un restaurante en físico para comer. Eso es O2O.",
+    "pinyin": "",
+    "translation": "B: O2O significa de online para offline. Trata-se de conectar o gasto online com o gasto offline. Pense bem: você procura um restaurante no Dianping online, mas não pode comer online. No final, você ainda precisa ir a um restaurante offline para comer. Isso é O2O.",
+    "tokens": [
+      "B:",
+      "O",
+      "2",
+      "O",
+      "significa",
+      "de",
+      "online",
+      "a",
+      "offline",
+      ".",
+      "Se",
+      "trata",
+      "de",
+      "conectar",
+      "el",
+      "gasto",
+      "en",
+      "línea",
+      "con",
+      "el",
+      "gasto",
+      "en",
+      "físico",
+      ".",
+      "Piénsalo",
+      ":",
+      "buscas",
+      "un",
+      "restaurante",
+      "en",
+      "Dianping",
+      "en",
+      "línea",
+      ",",
+      "pero",
+      "no",
+      "puedes",
+      "comer",
+      "en",
+      "línea",
+      ".",
+      "Al",
+      "final",
+      ",",
+      "aún",
+      "necesitas",
+      "ir",
+      "a",
+      "un",
+      "restaurante",
+      "en",
+      "físico",
+      "para",
+      "comer",
+      ".",
+      "Eso",
+      "es",
+      "O",
+      "2",
+      "O",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "online",
+        "pinyin": "",
+        "meaning": "na internet"
+      },
+      {
+        "id": 2,
+        "word": "offline",
+        "pinyin": "",
+        "meaning": "no mundo físico"
+      },
+      {
+        "id": 3,
+        "word": "gasto",
+        "pinyin": "",
+        "meaning": "despesa"
+      },
+      {
+        "id": 4,
+        "word": "físico",
+        "pinyin": "",
+        "meaning": "presencial"
+      },
+      {
+        "id": 5,
+        "word": "restaurante",
+        "pinyin": "",
+        "meaning": "estabelecimento de alimentação"
+      },
+      {
+        "id": 6,
+        "word": "Dianping",
+        "pinyin": "",
+        "meaning": "plataforma chinesa"
+      }
+    ],
+    "id": "local-1780234036754-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Oh. Entonces, ¿qué es BAT?",
+    "pinyin": "",
+    "translation": "A: Ah. Então, o que é BAT?",
+    "tokens": [
+      "A:",
+      "Oh",
+      ".",
+      "Entonces",
+      ",",
+      "¿",
+      "qué",
+      "es",
+      "BAT",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qué",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 2,
+        "word": "es",
+        "pinyin": "",
+        "meaning": "é"
+      },
+      {
+        "id": 3,
+        "word": "BAT",
+        "pinyin": "",
+        "meaning": "sigla BAT"
+      }
+    ],
+    "id": "local-1780234036754-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Baidu, Alibaba, Tencent, estas tres grandes empresas. Los BAT están invirtiendo y adquiriendo O2O a gran escala, por la posición futura de sus imperios empresariales.",
+    "pinyin": "",
+    "translation": "B: Baidu, Alibaba, Tencent, essas três grandes empresas. Os BAT estão investindo e adquirindo O2O em grande escala, pela posição futura de seus impérios empresariais.",
+    "tokens": [
+      "B:",
+      "Baidu",
+      ",",
+      "Alibaba",
+      ",",
+      "Tencent",
+      ",",
+      "estas",
+      "tres",
+      "grandes",
+      "empresas",
+      ".",
+      "Los",
+      "BAT",
+      "están",
+      "invirtiendo",
+      "y",
+      "adquiriendo",
+      "O",
+      "2",
+      "O",
+      "a",
+      "gran",
+      "escala",
+      ",",
+      "por",
+      "la",
+      "posición",
+      "futura",
+      "de",
+      "sus",
+      "imperios",
+      "empresariales",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "empresas",
+        "pinyin": "",
+        "meaning": "companhias"
+      },
+      {
+        "id": 2,
+        "word": "invirtiendo",
+        "pinyin": "",
+        "meaning": "aplicando capital"
+      },
+      {
+        "id": 3,
+        "word": "adquiriendo",
+        "pinyin": "",
+        "meaning": "comprando"
+      },
+      {
+        "id": 4,
+        "word": "escala",
+        "pinyin": "",
+        "meaning": "proporção"
+      },
+      {
+        "id": 5,
+        "word": "imperios",
+        "pinyin": "",
+        "meaning": "domínios"
+      }
+    ],
+    "id": "local-1780234036754-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Dianping recibe tanta inversión de esta manera. ¿De qué ventaja es esto para Tencent?",
+    "pinyin": "",
+    "translation": "A: O Dianping recebe tanto investimento dessa maneira. De que vantagem isso é para a Tencent?",
+    "tokens": [
+      "A:",
+      "Dianping",
+      "recibe",
+      "tanta",
+      "inversión",
+      "de",
+      "esta",
+      "manera",
+      ".",
+      "¿",
+      "De",
+      "qué",
+      "ventaja",
+      "es",
+      "esto",
+      "para",
+      "Tencent",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "inversión",
+        "pinyin": "",
+        "meaning": "investimento"
+      },
+      {
+        "id": 2,
+        "word": "manera",
+        "pinyin": "",
+        "meaning": "maneira"
+      },
+      {
+        "id": 3,
+        "word": "ventaja",
+        "pinyin": "",
+        "meaning": "vantagem"
+      },
+      {
+        "id": 4,
+        "word": "recibe",
+        "pinyin": "",
+        "meaning": "recebe"
+      },
+      {
+        "id": 5,
+        "word": "tanta",
+        "pinyin": "",
+        "meaning": "tanta"
+      }
+    ],
+    "id": "local-1780234036754-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Mucho! Por ejemplo, los productos de pago de Tencent no han podido competir con los de Alibaba. Ahora que se están promocionando con Dianping, ¿no pensabas adoptar WeChat Payment? Dianping no solo busca el dinero. Las plataformas O2O necesitan formar un entorno cerrado y a Dianping le falta un eslabón de pago. Ambas empresas se complementan en sus deficiencias.",
+    "pinyin": "",
+    "translation": "B: Muito! Por exemplo, os produtos de pagamento da Tencent não conseguiram competir com os da Alibaba. Agora que estão se promovendo com a Dianping, você não planejava adotar o WeChat Payment? A Dianping não está apenas atrás do dinheiro. As plataformas O2O precisam formar um ambiente fechado e à Dianping falta um elo de pagamento. Ambas as empresas se complementam nas suas deficiências.",
+    "tokens": [
+      "B:",
+      "¡",
+      "Mucho",
+      "!",
+      "Por",
+      "ejemplo",
+      ",",
+      "los",
+      "productos",
+      "de",
+      "pago",
+      "de",
+      "Tencent",
+      "no",
+      "han",
+      "podido",
+      "competir",
+      "con",
+      "los",
+      "de",
+      "Alibaba",
+      ".",
+      "Ahora",
+      "que",
+      "se",
+      "están",
+      "promocionando",
+      "con",
+      "Dianping",
+      ",",
+      "¿",
+      "no",
+      "pensabas",
+      "adoptar",
+      "WeChat",
+      "Payment",
+      "?",
+      "Dianping",
+      "no",
+      "solo",
+      "busca",
+      "el",
+      "dinero",
+      ".",
+      "Las",
+      "plataformas",
+      "O",
+      "2",
+      "O",
+      "necesitan",
+      "formar",
+      "un",
+      "entorno",
+      "cerrado",
+      "y",
+      "a",
+      "Dianping",
+      "le",
+      "falta",
+      "un",
+      "eslabón",
+      "de",
+      "pago",
+      ".",
+      "Ambas",
+      "empresas",
+      "se",
+      "complementan",
+      "en",
+      "sus",
+      "deficiencias",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "productos de pago",
+        "pinyin": "",
+        "meaning": "produtos de pagamento"
+      },
+      {
+        "id": 2,
+        "word": "competir",
+        "pinyin": "",
+        "meaning": "competir"
+      },
+      {
+        "id": 3,
+        "word": "promocionando",
+        "pinyin": "",
+        "meaning": "promovendo"
+      },
+      {
+        "id": 4,
+        "word": "plataformas O2O",
+        "pinyin": "",
+        "meaning": "plataformas O2O"
+      },
+      {
+        "id": 5,
+        "word": "entorno cerrado",
+        "pinyin": "",
+        "meaning": "ambiente fechado"
+      },
+      {
+        "id": 6,
+        "word": "eslabón de pago",
+        "pinyin": "",
+        "meaning": "elo de pagamento"
+      },
+      {
+        "id": 7,
+        "word": "se complementan",
+        "pinyin": "",
+        "meaning": "se complementam"
+      }
+    ],
+    "id": "local-1780234036754-11",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Es tan complicado. Terminé de registrarme en WeChat Pay. ¡Ahora podemos ahorrar 20 yuanes!",
+    "pinyin": "",
+    "translation": "A: Isso é tão complicado. Terminei de me registrar no WeChat Pay. Agora podemos economizar 20 yuanes!",
+    "tokens": [
+      "A:",
+      "Es",
+      "tan",
+      "complicado",
+      ".",
+      "Terminé",
+      "de",
+      "registrarme",
+      "en",
+      "WeChat",
+      "Pay",
+      ".",
+      "¡",
+      "Ahora",
+      "podemos",
+      "ahorrar",
+      "20",
+      "yuanes",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "complicado",
+        "pinyin": "",
+        "meaning": "difícil, complexo"
+      },
+      {
+        "id": 2,
+        "word": "registrarme",
+        "pinyin": "",
+        "meaning": "inscrever-me, cadastrar-me"
+      },
+      {
+        "id": 3,
+        "word": "ahorrar",
+        "pinyin": "",
+        "meaning": "economizar, poupar"
+      },
+      {
+        "id": 4,
+        "word": "yuanes",
+        "pinyin": "",
+        "meaning": "moeda chinesa"
+      }
+    ],
+    "id": "local-1780234036754-12",
+    "language": "Espanhol"
+  }
+]

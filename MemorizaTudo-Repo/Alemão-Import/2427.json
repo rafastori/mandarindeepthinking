@@ -1,0 +1,687 @@
+[
+  {
+    "chinese": "A: Schatz, mein Aquarium ist angekommen!",
+    "pinyin": "",
+    "translation": "A: Querido, meu aquário chegou!",
+    "tokens": [
+      "A:",
+      "Schatz",
+      ",",
+      "mein",
+      "Aquarium",
+      "ist",
+      "angekommen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schatz",
+        "pinyin": "",
+        "meaning": "querido"
+      },
+      {
+        "id": 2,
+        "word": "Aquarium",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "angekommen",
+        "pinyin": "",
+        "meaning": "chegado"
+      }
+    ],
+    "id": "local-1780228733780-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wow, das ist ja ein riesiges Aquarium! Was hast du damit vor?",
+    "pinyin": "",
+    "translation": "B: Uau, que aquário enorme! O que você quer fazer com ele?",
+    "tokens": [
+      "B:",
+      "Wow",
+      ",",
+      "das",
+      "ist",
+      "ja",
+      "ein",
+      "riesiges",
+      "Aquarium",
+      "!",
+      "Was",
+      "hast",
+      "du",
+      "damit",
+      "vor",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "riesiges",
+        "pinyin": "",
+        "meaning": "enorme"
+      },
+      {
+        "id": 2,
+        "word": "Aquarium",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "o que"
+      },
+      {
+        "id": 4,
+        "word": "vor",
+        "pinyin": "",
+        "meaning": "intenção/plano"
+      }
+    ],
+    "id": "local-1780228733780-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich möchte tropische Fische halten.",
+    "pinyin": "",
+    "translation": "A: Eu quero criar peixes tropicais.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "möchte",
+      "tropische",
+      "Fische",
+      "halten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Ich",
+        "pinyin": "",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "möchte",
+        "pinyin": "",
+        "meaning": "gostaria / quero"
+      },
+      {
+        "id": 3,
+        "word": "tropische",
+        "pinyin": "",
+        "meaning": "tropicais"
+      },
+      {
+        "id": 4,
+        "word": "Fische",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 5,
+        "word": "halten",
+        "pinyin": "",
+        "meaning": "manter / criar"
+      }
+    ],
+    "id": "local-1780228733780-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Im Ernst? Du hast schon so viele Tiere und Pflanzen getötet. Dieses Mal planst du, tropische Fische zu ermorden?",
+    "pinyin": "",
+    "translation": "B: Sério? Você já matou tantos animais e plantas. Desta vez você está planejando assassinar peixes tropicais?",
+    "tokens": [
+      "B:",
+      "Im",
+      "Ernst",
+      "?",
+      "Du",
+      "hast",
+      "schon",
+      "so",
+      "viele",
+      "Tiere",
+      "und",
+      "Pflanzen",
+      "getötet",
+      ".",
+      "Dieses",
+      "Mal",
+      "planst",
+      "du",
+      ",",
+      "tropische",
+      "Fische",
+      "zu",
+      "ermorden",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Im Ernst",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "Tiere",
+        "pinyin": "",
+        "meaning": "animais"
+      },
+      {
+        "id": 3,
+        "word": "Pflanzen",
+        "pinyin": "",
+        "meaning": "plantas"
+      },
+      {
+        "id": 4,
+        "word": "getötet",
+        "pinyin": "",
+        "meaning": "matados"
+      },
+      {
+        "id": 5,
+        "word": "planst",
+        "pinyin": "",
+        "meaning": "planeja"
+      },
+      {
+        "id": 6,
+        "word": "tropische Fische",
+        "pinyin": "",
+        "meaning": "peixes tropicais"
+      },
+      {
+        "id": 7,
+        "word": "ermorden",
+        "pinyin": "",
+        "meaning": "assassinar"
+      }
+    ],
+    "id": "local-1780228733780-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Nein, das nicht. Dieses Mal habe ich viel recherchiert.",
+    "pinyin": "",
+    "translation": "A: Não, dessa vez não. Desta vez fiz muitas pesquisas.",
+    "tokens": [
+      "A:",
+      "Nein",
+      ",",
+      "das",
+      "nicht",
+      ".",
+      "Dieses",
+      "Mal",
+      "habe",
+      "ich",
+      "viel",
+      "recherchiert",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Nein",
+        "pinyin": "",
+        "meaning": "não"
+      },
+      {
+        "id": 2,
+        "word": "habe",
+        "pinyin": "",
+        "meaning": "tenho"
+      },
+      {
+        "id": 3,
+        "word": "viel",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "recherchiert",
+        "pinyin": "",
+        "meaning": "pesquisado"
+      }
+    ],
+    "id": "local-1780228733780-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Oh? Erzähl mir davon.",
+    "pinyin": "",
+    "translation": "B: Ah? Me conte sobre isso.",
+    "tokens": [
+      "B:",
+      "Oh",
+      "?",
+      "Erzähl",
+      "mir",
+      "davon",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Erzähl",
+        "pinyin": "",
+        "meaning": "conte/narre"
+      },
+      {
+        "id": 2,
+        "word": "davon",
+        "pinyin": "",
+        "meaning": "sobre isso/disto"
+      }
+    ],
+    "id": "local-1780228733780-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Wenn Sie Fische züchten möchten, müssen Sie zuerst das Wasser aufbereiten. Die Wassertemperatur, der Sauerstoffgehalt, der pH-Wert und die Klarheit sind für die Fische sehr wichtig. Sobald das Wasser aufbereitet ist, können die Fische gezüchtet werden.",
+    "pinyin": "",
+    "translation": "A: Se você deseja criar peixes, primeiro precisa tratar a água. A temperatura da água, o teor de oxigênio, o nível de pH e a clareza são muito importantes para os peixes. Uma vez que a água seja tratada, os peixes podem ser criados.",
+    "tokens": [
+      "A:",
+      "Wenn",
+      "Sie",
+      "Fische",
+      "züchten",
+      "möchten",
+      ",",
+      "müssen",
+      "Sie",
+      "zuerst",
+      "das",
+      "Wasser",
+      "aufbereiten",
+      ".",
+      "Die",
+      "Wassertemperatur",
+      ",",
+      "der",
+      "Sauerstoffgehalt",
+      ",",
+      "der",
+      "pH",
+      "-",
+      "Wert",
+      "und",
+      "die",
+      "Klarheit",
+      "sind",
+      "für",
+      "die",
+      "Fische",
+      "sehr",
+      "wichtig",
+      ".",
+      "Sobald",
+      "das",
+      "Wasser",
+      "aufbereitet",
+      "ist",
+      ",",
+      "können",
+      "die",
+      "Fische",
+      "gezüchtet",
+      "werden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "aufbereiten",
+        "pinyin": "",
+        "meaning": "tratar"
+      },
+      {
+        "id": 2,
+        "word": "Wassertemperatur",
+        "pinyin": "",
+        "meaning": "temperatura da água"
+      },
+      {
+        "id": 3,
+        "word": "Sauerstoffgehalt",
+        "pinyin": "",
+        "meaning": "teor de oxigênio"
+      },
+      {
+        "id": 4,
+        "word": "pH-Wert",
+        "pinyin": "",
+        "meaning": "nível de pH"
+      },
+      {
+        "id": 5,
+        "word": "Klarheit",
+        "pinyin": "",
+        "meaning": "clareza"
+      },
+      {
+        "id": 6,
+        "word": "Fische",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 7,
+        "word": "züchten",
+        "pinyin": "",
+        "meaning": "criar"
+      }
+    ],
+    "id": "local-1780228733780-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ergibt Sinn. Welche Fischarten planst du dann zu züchten?",
+    "pinyin": "",
+    "translation": "B: Isso faz sentido. Então, que tipo de peixes você planeja criar?",
+    "tokens": [
+      "B:",
+      "Das",
+      "ergibt",
+      "Sinn",
+      ".",
+      "Welche",
+      "Fischarten",
+      "planst",
+      "du",
+      "dann",
+      "zu",
+      "züchten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Fischarten",
+        "pinyin": "",
+        "meaning": "espécies de peixes"
+      },
+      {
+        "id": 2,
+        "word": "züchten",
+        "pinyin": "",
+        "meaning": "criar (animais)"
+      },
+      {
+        "id": 3,
+        "word": "ergibt Sinn",
+        "pinyin": "",
+        "meaning": "faz sentido"
+      },
+      {
+        "id": 4,
+        "word": "planst",
+        "pinyin": "",
+        "meaning": "planeja"
+      }
+    ],
+    "id": "local-1780228733780-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich plane, Guppys und Mondfische zu halten. Es heißt, dass diese beiden Fischarten für Anfänger geeignet sind. Außerdem sind ihre Wasseranforderungen ähnlich, sodass man sie gemeinsam halten kann.",
+    "pinyin": "",
+    "translation": "A: Estou planejando criar guppies e peixes-lua. Dizem que esses dois peixes são adequados para iniciantes. Além disso, suas exigências de água são semelhantes, então você pode criá-los juntos.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "plane",
+      ",",
+      "Guppys",
+      "und",
+      "Mondfische",
+      "zu",
+      "halten",
+      ".",
+      "Es",
+      "heißt",
+      ",",
+      "dass",
+      "diese",
+      "beiden",
+      "Fischarten",
+      "für",
+      "Anfänger",
+      "geeignet",
+      "sind",
+      ".",
+      "Außerdem",
+      "sind",
+      "ihre",
+      "Wasseranforderungen",
+      "ähnlich",
+      ",",
+      "sodass",
+      "man",
+      "sie",
+      "gemeinsam",
+      "halten",
+      "kann",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Guppys",
+        "pinyin": "",
+        "meaning": "guppies"
+      },
+      {
+        "id": 2,
+        "word": "Mondfische",
+        "pinyin": "",
+        "meaning": "peixes-lua"
+      },
+      {
+        "id": 3,
+        "word": "Anfänger",
+        "pinyin": "",
+        "meaning": "iniciantes"
+      },
+      {
+        "id": 4,
+        "word": "Wasseranforderungen",
+        "pinyin": "",
+        "meaning": "exigências de água"
+      },
+      {
+        "id": 5,
+        "word": "gemeinsam",
+        "pinyin": "",
+        "meaning": "juntos"
+      }
+    ],
+    "id": "local-1780228733780-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wann gehst du den Fisch kaufen?",
+    "pinyin": "",
+    "translation": "B: Quando você vai comprar o peixe?",
+    "tokens": [
+      "B:",
+      "Wann",
+      "gehst",
+      "du",
+      "den",
+      "Fisch",
+      "kaufen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wann",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 2,
+        "word": "gehst",
+        "pinyin": "",
+        "meaning": "vai (ir)"
+      },
+      {
+        "id": 3,
+        "word": "Fisch",
+        "pinyin": "",
+        "meaning": "peixe"
+      },
+      {
+        "id": 4,
+        "word": "kaufen",
+        "pinyin": "",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1780228733780-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Geh mit mir, um den Blumen- und Vogelmarkt zu besichtigen. Lass uns das nächste Wochenende machen.",
+    "pinyin": "",
+    "translation": "A: Vá comigo dar uma olhada no mercado de flores e pássaros. Vamos fazer isso no próximo fim de semana.",
+    "tokens": [
+      "A:",
+      "Geh",
+      "mit",
+      "mir",
+      ",",
+      "um",
+      "den",
+      "Blumen",
+      "-",
+      "und",
+      "Vogelmarkt",
+      "zu",
+      "besichtigen",
+      ".",
+      "Lass",
+      "uns",
+      "das",
+      "nächste",
+      "Wochenende",
+      "machen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Geh",
+        "pinyin": "",
+        "meaning": "vá"
+      },
+      {
+        "id": 2,
+        "word": "Blumen- und Vogelmarkt",
+        "pinyin": "",
+        "meaning": "mercado de flores e pássaros"
+      },
+      {
+        "id": 3,
+        "word": "besichtigen",
+        "pinyin": "",
+        "meaning": "visitar"
+      },
+      {
+        "id": 4,
+        "word": "nächste Wochenende",
+        "pinyin": "",
+        "meaning": "próximo fim de semana"
+      },
+      {
+        "id": 5,
+        "word": "machen",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1780228733780-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich denke, wir sollten etwas später hingehen und den armen Fischen ein paar Tage mehr gönnen.",
+    "pinyin": "",
+    "translation": "B: Acho que seria melhor irmos um pouco mais tarde e deixar os pobres peixes viverem mais alguns dias.",
+    "tokens": [
+      "B:",
+      "Ich",
+      "denke",
+      ",",
+      "wir",
+      "sollten",
+      "etwas",
+      "später",
+      "hingehen",
+      "und",
+      "den",
+      "armen",
+      "Fischen",
+      "ein",
+      "paar",
+      "Tage",
+      "mehr",
+      "gönnen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "später",
+        "pinyin": "",
+        "meaning": "mais tarde"
+      },
+      {
+        "id": 2,
+        "word": "hingehen",
+        "pinyin": "",
+        "meaning": "ir (para um local)"
+      },
+      {
+        "id": 3,
+        "word": "armen",
+        "pinyin": "",
+        "meaning": "pobres"
+      },
+      {
+        "id": 4,
+        "word": "Fischen",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 5,
+        "word": "Tage",
+        "pinyin": "",
+        "meaning": "dias"
+      },
+      {
+        "id": 6,
+        "word": "gönnen",
+        "pinyin": "",
+        "meaning": "conceder/dar"
+      }
+    ],
+    "id": "local-1780228733780-11",
+    "language": "Alemão"
+  }
+]

@@ -61,7 +61,7 @@ def tokenize(lang_pt, text, letra="A"):
 
 # ---------- LLM local ----------
 class LLM:
-    def __init__(self, url, model, debug=False, timeout=180):
+    def __init__(self, url, model, debug=False, timeout=90):
         self.url = url.rstrip("/") + "/v1/chat/completions"
         self.model = model; self.debug = debug; self.timeout = timeout
 
@@ -97,14 +97,14 @@ class LLM:
         msg = resp["choices"][0]["message"]
         return msg.get("content") or msg.get("reasoning_content") or ""
 
-    def traduzir(self, eng, lang_nome, tentativas=3):
+    def traduzir(self, eng, lang_nome, tentativas=4):
         last = ""
         core = SPK.sub("", eng)
-        for _ in range(tentativas):
+        for attempt in range(tentativas):
             try:
                 raw = self._call(core, lang_nome)
             except Exception as e:
-                last = f"rede: {e}"; time.sleep(1); continue
+                last = f"rede/timeout: {e}"; time.sleep(2 * (attempt + 1)); continue
             if self.debug:
                 print("\n--- CRU ---\n"+raw+"\n-----------\n")
             raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.S)
@@ -165,8 +165,10 @@ def processa_licao(lang_pt, lang_nome, lid, traduzir, limit=None):
     eng_lines = linhas(ING_DIR / f"{lid}.txt")
     if limit: eng_lines = eng_lines[:limit]
     ts = int(time.time()*1000)
+    n = len(eng_lines)
     objs, txt_lines = [], []
     for idx, eng in enumerate(eng_lines):
+        print(f"    {lang_pt} {lid}: fala {idx+1}/{n}...", end="\r", flush=True)
         m = SPK.match(eng)
         letra = (m.group(1).upper() if m else "A")
         text, pt, kws = traduzir(eng, lang_nome)
@@ -181,6 +183,7 @@ def processa_licao(lang_pt, lang_nome, lid, traduzir, limit=None):
             "language": lang_pt,
         })
         txt_lines.append(f"{letra}: {text}")
+    print(" " * 60, end="\r")  # limpa a linha de progresso
     return objs, txt_lines
 
 def main():

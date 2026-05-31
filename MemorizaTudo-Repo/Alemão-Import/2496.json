@@ -1,0 +1,862 @@
+[
+  {
+    "chinese": "A: Alle sind da! Lassen Sie mich meinen Kollegen Tom vorstellen. Sein Chinesisch ist super toll. Er hat bereits das HSK-Niveau 6 bestanden! Und er hat bereits einige Jahre Erfahrung in der Übersetzung.",
+    "pinyin": "",
+    "translation": "A: Todos estão presentes! Deixem-me apresentar meu colega Tom. O chinês dele é super incrível. Ele já passou no nível 6 do HSK! E ele já tem alguns anos de experiência em tradução.",
+    "tokens": [
+      "A:",
+      "Alle",
+      "sind",
+      "da",
+      "!",
+      "Lassen",
+      "Sie",
+      "mich",
+      "meinen",
+      "Kollegen",
+      "Tom",
+      "vorstellen",
+      ".",
+      "Sein",
+      "Chinesisch",
+      "ist",
+      "super",
+      "toll",
+      ".",
+      "Er",
+      "hat",
+      "bereits",
+      "das",
+      "HSK",
+      "-",
+      "Niveau",
+      "6",
+      "bestanden",
+      "!",
+      "Und",
+      "er",
+      "hat",
+      "bereits",
+      "einige",
+      "Jahre",
+      "Erfahrung",
+      "in",
+      "der",
+      "Übersetzung",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Alle",
+        "pinyin": "",
+        "meaning": "Todos"
+      },
+      {
+        "id": 2,
+        "word": "Kollegen",
+        "pinyin": "",
+        "meaning": "Colegas"
+      },
+      {
+        "id": 3,
+        "word": "Chinesisch",
+        "pinyin": "",
+        "meaning": "Chinês"
+      },
+      {
+        "id": 4,
+        "word": "bestanden",
+        "pinyin": "",
+        "meaning": "Aprovado"
+      },
+      {
+        "id": 5,
+        "word": "Erfahrung",
+        "pinyin": "",
+        "meaning": "Experiência"
+      },
+      {
+        "id": 6,
+        "word": "Übersetzung",
+        "pinyin": "",
+        "meaning": "Tradução"
+      }
+    ],
+    "id": "local-1780230837068-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: So großartig! Teilen Sie uns Ihre Geheimnisse zum Lernen mit! Ich kann mir neue Wörter nie merken. Sobald ich eine Sache gelernt habe, vergesse ich die andere. Ich lerne schon seit drei oder vier Jahren, und bevor ich etwas sage, muss ich noch lange nachdenken. Ich habe Angst, dass andere mich auslachen, wenn ich einen Fehler mache oder meine Töne nicht richtig sind.",
+    "pinyin": "",
+    "translation": "B: Tão incrível! Compartilhe conosco seus segredos de estudo! Eu nunca consigo lembrar de palavras novas. Assim que termino de estudar uma coisa, esqueço a outra. Já estudo há três ou quatro anos e, antes de dizer algo, ainda tenho que pensar por um bom tempo. Tenho medo de que, se cometer um erro ou se meus tons não estiverem corretos, os outros rirão de mim.",
+    "tokens": [
+      "B:",
+      "So",
+      "großartig",
+      "!",
+      "Teilen",
+      "Sie",
+      "uns",
+      "Ihre",
+      "Geheimnisse",
+      "zum",
+      "Lernen",
+      "mit",
+      "!",
+      "Ich",
+      "kann",
+      "mir",
+      "neue",
+      "Wörter",
+      "nie",
+      "merken",
+      ".",
+      "Sobald",
+      "ich",
+      "eine",
+      "Sache",
+      "gelernt",
+      "habe",
+      ",",
+      "vergesse",
+      "ich",
+      "die",
+      "andere",
+      ".",
+      "Ich",
+      "lerne",
+      "schon",
+      "seit",
+      "drei",
+      "oder",
+      "vier",
+      "Jahren",
+      ",",
+      "und",
+      "bevor",
+      "ich",
+      "etwas",
+      "sage",
+      ",",
+      "muss",
+      "ich",
+      "noch",
+      "lange",
+      "nachdenken",
+      ".",
+      "Ich",
+      "habe",
+      "Angst",
+      ",",
+      "dass",
+      "andere",
+      "mich",
+      "auslachen",
+      ",",
+      "wenn",
+      "ich",
+      "einen",
+      "Fehler",
+      "mache",
+      "oder",
+      "meine",
+      "Töne",
+      "nicht",
+      "richtig",
+      "sind",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Geheimnisse",
+        "pinyin": "",
+        "meaning": "segredos"
+      },
+      {
+        "id": 2,
+        "word": "Lernen",
+        "pinyin": "",
+        "meaning": "aprendizagem"
+      },
+      {
+        "id": 3,
+        "word": "merken",
+        "pinyin": "",
+        "meaning": "lembrar"
+      },
+      {
+        "id": 4,
+        "word": "vergesse",
+        "pinyin": "",
+        "meaning": "esqueço"
+      },
+      {
+        "id": 5,
+        "word": "nachdenken",
+        "pinyin": "",
+        "meaning": "pensar"
+      },
+      {
+        "id": 6,
+        "word": "Angst",
+        "pinyin": "",
+        "meaning": "medo"
+      },
+      {
+        "id": 7,
+        "word": "auslachen",
+        "pinyin": "",
+        "meaning": "rir de"
+      }
+    ],
+    "id": "local-1780230837068-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: Es scheint, als hätte ich jetzt eine Lernplateau erreicht. In letzter Zeit habe ich das Gefühl, dass mein Chinesisch auf der Stelle tritt und ich nicht weiß, wie ich diesen Engpass durchbrechen soll. Das ist so deprimierend!",
+    "pinyin": "",
+    "translation": "C: Parece que agora alcancei um platô de aprendizado. Ultimamente, sempre sinto que meu nível de chinês está estagnado e não sei como superar esse gargalo. É tão deprimente!",
+    "tokens": [
+      "C:",
+      "Es",
+      "scheint",
+      ",",
+      "als",
+      "hätte",
+      "ich",
+      "jetzt",
+      "eine",
+      "Lernplateau",
+      "erreicht",
+      ".",
+      "In",
+      "letzter",
+      "Zeit",
+      "habe",
+      "ich",
+      "das",
+      "Gefühl",
+      ",",
+      "dass",
+      "mein",
+      "Chinesisch",
+      "auf",
+      "der",
+      "Stelle",
+      "tritt",
+      "und",
+      "ich",
+      "nicht",
+      "weiß",
+      ",",
+      "wie",
+      "ich",
+      "diesen",
+      "Engpass",
+      "durchbrechen",
+      "soll",
+      ".",
+      "Das",
+      "ist",
+      "so",
+      "deprimierend",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lernplateau",
+        "pinyin": "",
+        "meaning": "platô de aprendizado"
+      },
+      {
+        "id": 2,
+        "word": "auf der Stelle tritt",
+        "pinyin": "",
+        "meaning": "está estagnado"
+      },
+      {
+        "id": 3,
+        "word": "Engpass",
+        "pinyin": "",
+        "meaning": "gargalo"
+      },
+      {
+        "id": 4,
+        "word": "durchbrechen",
+        "pinyin": "",
+        "meaning": "superar"
+      },
+      {
+        "id": 5,
+        "word": "deprimierend",
+        "pinyin": "",
+        "meaning": "deprimido"
+      }
+    ],
+    "id": "local-1780230837068-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich schreibe gerne chinesische Zeichen, aber ich vergesse immer die Strichreihenfolge und schreibe sie schief. Das macht mir wirklich Sorgen!",
+    "pinyin": "",
+    "translation": "A: Eu gosto de escrever caracteres chineses, mas sempre esqueço a ordem dos traços e os escrevo tortos. Isso realmente me preocupa!",
+    "tokens": [
+      "A:",
+      "Ich",
+      "schreibe",
+      "gerne",
+      "chinesische",
+      "Zeichen",
+      ",",
+      "aber",
+      "ich",
+      "vergesse",
+      "immer",
+      "die",
+      "Strichreihenfolge",
+      "und",
+      "schreibe",
+      "sie",
+      "schief",
+      ".",
+      "Das",
+      "macht",
+      "mir",
+      "wirklich",
+      "Sorgen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "chinesische Zeichen",
+        "pinyin": "",
+        "meaning": "caracteres chineses"
+      },
+      {
+        "id": 2,
+        "word": "Strichreihenfolge",
+        "pinyin": "",
+        "meaning": "ordem dos traços"
+      },
+      {
+        "id": 3,
+        "word": "schief",
+        "pinyin": "",
+        "meaning": "torto"
+      },
+      {
+        "id": 4,
+        "word": "Sorgen",
+        "pinyin": "",
+        "meaning": "preocupações"
+      },
+      {
+        "id": 5,
+        "word": "gerne",
+        "pinyin": "",
+        "meaning": "gostaria / com prazer"
+      }
+    ],
+    "id": "local-1780230837068-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "D: Ich persönlich bin der Ansicht, dass es keine Abkürzungen beim Sprachenlernen gibt. Es hängt vor allem davon ab, ob man bereit ist, mehr Zeit und Mühe in das Studium zu investieren. Manche mögen sagen, ich sei wirklich zu sehr mit der Arbeit beschäftigt und könne keine größeren Zeitblöcke zum Lernen finden. Aber tatsächlich kann ich kleine, verteilte Zeitfetzen nutzen, um neue Vokabeln zu lernen und Zeichen zu schreiben.",
+    "pinyin": "",
+    "translation": "D: Pessoalmente, sinto que não há atalhos para aprender um idioma. Depende principalmente de você estar disposto a gastar mais tempo e esforço estudando. Algumas pessoas podem dizer que estou realmente muito ocupado com o trabalho e não consigo encontrar um bloco grande de tempo para estudar. Mas na verdade, posso usar pedaços de tempo aqui e ali para lembrar novas palavras e escrever caracteres.",
+    "tokens": [
+      "D:",
+      "Ich",
+      "persönlich",
+      "bin",
+      "der",
+      "Ansicht",
+      ",",
+      "dass",
+      "es",
+      "keine",
+      "Abkürzungen",
+      "beim",
+      "Sprachenlernen",
+      "gibt",
+      ".",
+      "Es",
+      "hängt",
+      "vor",
+      "allem",
+      "davon",
+      "ab",
+      ",",
+      "ob",
+      "man",
+      "bereit",
+      "ist",
+      ",",
+      "mehr",
+      "Zeit",
+      "und",
+      "Mühe",
+      "in",
+      "das",
+      "Studium",
+      "zu",
+      "investieren",
+      ".",
+      "Manche",
+      "mögen",
+      "sagen",
+      ",",
+      "ich",
+      "sei",
+      "wirklich",
+      "zu",
+      "sehr",
+      "mit",
+      "der",
+      "Arbeit",
+      "beschäftigt",
+      "und",
+      "könne",
+      "keine",
+      "größeren",
+      "Zeitblöcke",
+      "zum",
+      "Lernen",
+      "finden",
+      ".",
+      "Aber",
+      "tatsächlich",
+      "kann",
+      "ich",
+      "kleine",
+      ",",
+      "verteilte",
+      "Zeitfetzen",
+      "nutzen",
+      ",",
+      "um",
+      "neue",
+      "Vokabeln",
+      "zu",
+      "lernen",
+      "und",
+      "Zeichen",
+      "zu",
+      "schreiben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Abkürzungen",
+        "pinyin": "",
+        "meaning": "atalhos"
+      },
+      {
+        "id": 2,
+        "word": "Sprachenlernen",
+        "pinyin": "",
+        "meaning": "aprendizado de idiomas"
+      },
+      {
+        "id": 3,
+        "word": "Zeit",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 4,
+        "word": "Mühe",
+        "pinyin": "",
+        "meaning": "esforço"
+      },
+      {
+        "id": 5,
+        "word": "Vokabeln",
+        "pinyin": "",
+        "meaning": "vocabulary/palavras"
+      },
+      {
+        "id": 6,
+        "word": "Zeichen",
+        "pinyin": "",
+        "meaning": "caracteres"
+      }
+    ],
+    "id": "local-1780230837068-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es sieht so aus, als wären wir eigentlich nicht hartnäckig genug. Wir nehmen immer die Ausrede, dass wir keine Zeit haben!",
+    "pinyin": "",
+    "translation": "B: Parece que na verdade não somos persistentes o suficiente. Sempre usamos a desculpa de que não temos tempo!",
+    "tokens": [
+      "B:",
+      "Es",
+      "sieht",
+      "so",
+      "aus",
+      ",",
+      "als",
+      "wären",
+      "wir",
+      "eigentlich",
+      "nicht",
+      "hartnäckig",
+      "genug",
+      ".",
+      "Wir",
+      "nehmen",
+      "immer",
+      "die",
+      "Ausrede",
+      ",",
+      "dass",
+      "wir",
+      "keine",
+      "Zeit",
+      "haben",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "hartnäckig",
+        "pinyin": "",
+        "meaning": "persistente"
+      },
+      {
+        "id": 2,
+        "word": "Ausrede",
+        "pinyin": "",
+        "meaning": "desculpa"
+      },
+      {
+        "id": 3,
+        "word": "eigentlich",
+        "pinyin": "",
+        "meaning": "na verdade"
+      },
+      {
+        "id": 4,
+        "word": "genug",
+        "pinyin": "",
+        "meaning": "suficiente"
+      },
+      {
+        "id": 5,
+        "word": "Zeit",
+        "pinyin": "",
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1780230837068-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "D: Bezüglich des \"Sprechens\": Wenn wir nicht in einem sprachlichen Umfeld sind, können wir mit uns selbst sprechen, was uns helfen würde, die Gewohnheit zu entwickeln, auf Chinesisch zu denken. Das Lernen einer Sprache dient der Interaktion, daher müssen Sie mutig sprechen und keine Angst haben, etwas falsch zu sagen. Je mehr Fehler wir machen, desto schneller ist unser Fortschritt.",
+    "pinyin": "",
+    "translation": "D: Quanto ao \"falar\": quando não temos o ambiente linguístico, podemos falar conosco mesmos, o que nos ajudaria a desenvolver o hábito de pensar em chinês. Estudar um idioma tem como objetivo a interação, por isso você deve falar com coragem e não ter medo de dizer algo errado. Quanto mais erros cometemos, mais rápido será o nosso progresso.",
+    "tokens": [
+      "D:",
+      "Bezüglich",
+      "des",
+      "\"",
+      "Sprechens",
+      "\"",
+      ":",
+      "Wenn",
+      "wir",
+      "nicht",
+      "in",
+      "einem",
+      "sprachlichen",
+      "Umfeld",
+      "sind",
+      ",",
+      "können",
+      "wir",
+      "mit",
+      "uns",
+      "selbst",
+      "sprechen",
+      ",",
+      "was",
+      "uns",
+      "helfen",
+      "würde",
+      ",",
+      "die",
+      "Gewohnheit",
+      "zu",
+      "entwickeln",
+      ",",
+      "auf",
+      "Chinesisch",
+      "zu",
+      "denken",
+      ".",
+      "Das",
+      "Lernen",
+      "einer",
+      "Sprache",
+      "dient",
+      "der",
+      "Interaktion",
+      ",",
+      "daher",
+      "müssen",
+      "Sie",
+      "mutig",
+      "sprechen",
+      "und",
+      "keine",
+      "Angst",
+      "haben",
+      ",",
+      "etwas",
+      "falsch",
+      "zu",
+      "sagen",
+      ".",
+      "Je",
+      "mehr",
+      "Fehler",
+      "wir",
+      "machen",
+      ",",
+      "desto",
+      "schneller",
+      "ist",
+      "unser",
+      "Fortschritt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sprechens",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 2,
+        "word": "sprachlichen Umfeld",
+        "pinyin": "",
+        "meaning": "ambiente linguístico"
+      },
+      {
+        "id": 3,
+        "word": "mit uns selbst sprechen",
+        "pinyin": "",
+        "meaning": "falar conosco mesmos"
+      },
+      {
+        "id": 4,
+        "word": "Gewohnheit",
+        "pinyin": "",
+        "meaning": "hábito"
+      },
+      {
+        "id": 5,
+        "word": "Interaktion",
+        "pinyin": "",
+        "meaning": "interação"
+      },
+      {
+        "id": 6,
+        "word": "mutig",
+        "pinyin": "",
+        "meaning": "corajoso"
+      },
+      {
+        "id": 7,
+        "word": "Fehler",
+        "pinyin": "",
+        "meaning": "erros"
+      },
+      {
+        "id": 8,
+        "word": "Fortschritt",
+        "pinyin": "",
+        "meaning": "progresso"
+      }
+    ],
+    "id": "local-1780230837068-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "C: M-hm! Wir müssen mutig die Sprache erheben!",
+    "pinyin": "",
+    "translation": "C: M-hm! Temos que falar corajosamente!",
+    "tokens": [
+      "C:",
+      "M",
+      "-",
+      "hm",
+      "!",
+      "Wir",
+      "müssen",
+      "mutig",
+      "die",
+      "Sprache",
+      "erheben",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mutig",
+        "pinyin": "",
+        "meaning": "corajosamente"
+      },
+      {
+        "id": 2,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "temos que"
+      }
+    ],
+    "id": "local-1780230837068-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Dann erarbeiten wir einen Studienplan und halten ein Auge aufeinander!",
+    "pinyin": "",
+    "translation": "A: Então vamos elaborar um plano de estudos e ficar de olho um no outro!",
+    "tokens": [
+      "A:",
+      "Dann",
+      "erarbeiten",
+      "wir",
+      "einen",
+      "Studienplan",
+      "und",
+      "halten",
+      "ein",
+      "Auge",
+      "aufeinander",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "erarbeiten",
+        "pinyin": "",
+        "meaning": "elaborar"
+      },
+      {
+        "id": 2,
+        "word": "Studienplan",
+        "pinyin": "",
+        "meaning": "plano de estudos"
+      },
+      {
+        "id": 3,
+        "word": "halten",
+        "pinyin": "",
+        "meaning": "manter"
+      },
+      {
+        "id": 4,
+        "word": "Auge",
+        "pinyin": "",
+        "meaning": "olho"
+      },
+      {
+        "id": 5,
+        "word": "aufeinander",
+        "pinyin": "",
+        "meaning": "um no outro"
+      }
+    ],
+    "id": "local-1780230837068-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "D: Ich habe einen Anwaltsfreund, der oft chinesisch mit sich selbst spricht, während er duscht! Es gibt einen Ausdruck: 'Beharrlichkeit führt zum Erfolg'. Lasst uns gemeinsam weitermachen!",
+    "pinyin": "",
+    "translation": "D: Tenho um amigo advogado que frequentemente fala chinês consigo mesmo enquanto toma banho! Existe uma expressão: 'A perseverança leva ao sucesso'. Vamos todos continuar juntos!",
+    "tokens": [
+      "D:",
+      "Ich",
+      "habe",
+      "einen",
+      "Anwaltsfreund",
+      ",",
+      "der",
+      "oft",
+      "chinesisch",
+      "mit",
+      "sich",
+      "selbst",
+      "spricht",
+      ",",
+      "während",
+      "er",
+      "duscht",
+      "!",
+      "Es",
+      "gibt",
+      "einen",
+      "Ausdruck",
+      ":",
+      "'",
+      "Beharrlichkeit",
+      "führt",
+      "zum",
+      "Erfolg",
+      "'",
+      ".",
+      "Lasst",
+      "uns",
+      "gemeinsam",
+      "weitermachen",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Anwaltsfreund",
+        "pinyin": "",
+        "meaning": "amigo advogado"
+      },
+      {
+        "id": 2,
+        "word": "chinesisch",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 3,
+        "word": "duscht",
+        "pinyin": "",
+        "meaning": "toma banho"
+      },
+      {
+        "id": 4,
+        "word": "Beharrlichkeit",
+        "pinyin": "",
+        "meaning": "perseverança"
+      },
+      {
+        "id": 5,
+        "word": "Erfolg",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 6,
+        "word": "gemeinsam",
+        "pinyin": "",
+        "meaning": "juntos"
+      }
+    ],
+    "id": "local-1780230837068-9",
+    "language": "Alemão"
+  }
+]

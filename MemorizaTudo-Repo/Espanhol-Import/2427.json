@@ -1,0 +1,678 @@
+[
+  {
+    "chinese": "A: Cariño, ¡ha llegado mi acuario!",
+    "pinyin": "",
+    "translation": "A: Querido, meu aquário chegou!",
+    "tokens": [
+      "A:",
+      "Cariño",
+      ",",
+      "¡",
+      "ha",
+      "llegado",
+      "mi",
+      "acuario",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Cariño",
+        "pinyin": "",
+        "meaning": "Querido"
+      },
+      {
+        "id": 2,
+        "word": "acuario",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "llegado",
+        "pinyin": "",
+        "meaning": "chegado"
+      },
+      {
+        "id": 4,
+        "word": "ha llegado",
+        "pinyin": "",
+        "meaning": "chegou"
+      }
+    ],
+    "id": "local-1780234287143-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¡Vaya, qué tanque de peces tan grande! ¿Qué quieres hacer con él?",
+    "pinyin": "",
+    "translation": "B: Uau, que aquário tão grande! O que você quer fazer com ele?",
+    "tokens": [
+      "B:",
+      "¡",
+      "Vaya",
+      ",",
+      "qué",
+      "tanque",
+      "de",
+      "peces",
+      "tan",
+      "grande",
+      "!",
+      "¿",
+      "Qué",
+      "quieres",
+      "hacer",
+      "con",
+      "él",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vaya",
+        "pinyin": "",
+        "meaning": "expressão de surpresa"
+      },
+      {
+        "id": 2,
+        "word": "tanque de peces",
+        "pinyin": "",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "grande",
+        "pinyin": "",
+        "meaning": "de grande porte"
+      },
+      {
+        "id": 4,
+        "word": "quieres",
+        "pinyin": "",
+        "meaning": "você quer"
+      },
+      {
+        "id": 5,
+        "word": "hacer",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1780234287143-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Quiero criar peces tropicales.",
+    "pinyin": "",
+    "translation": "A: Quero criar peixes tropicais.",
+    "tokens": [
+      "A:",
+      "Quiero",
+      "criar",
+      "peces",
+      "tropicales",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Quiero",
+        "pinyin": "",
+        "meaning": "Quero"
+      },
+      {
+        "id": 2,
+        "word": "criar",
+        "pinyin": "",
+        "meaning": "criar"
+      },
+      {
+        "id": 3,
+        "word": "peces",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 4,
+        "word": "tropicales",
+        "pinyin": "",
+        "meaning": "tropicais"
+      }
+    ],
+    "id": "local-1780234287143-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿En serio? Ya has matado a tantos animales y plantas. ¿Esta vez planeas asesinar peces tropicales?",
+    "pinyin": "",
+    "translation": "B: Sério? Você já matou tantos animais e plantas. Desta vez você planeja assassinar peixes tropicais?",
+    "tokens": [
+      "B:",
+      "¿",
+      "En",
+      "serio",
+      "?",
+      "Ya",
+      "has",
+      "matado",
+      "a",
+      "tantos",
+      "animales",
+      "y",
+      "plantas",
+      ".",
+      "¿",
+      "Esta",
+      "vez",
+      "planeas",
+      "asesinar",
+      "peces",
+      "tropicales",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "En serio",
+        "pinyin": "",
+        "meaning": "Sério"
+      },
+      {
+        "id": 2,
+        "word": "tantos",
+        "pinyin": "",
+        "meaning": "tantos"
+      },
+      {
+        "id": 3,
+        "word": "matado",
+        "pinyin": "",
+        "meaning": "matado"
+      },
+      {
+        "id": 4,
+        "word": "planeas",
+        "pinyin": "",
+        "meaning": "planeja"
+      },
+      {
+        "id": 5,
+        "word": "asesinar",
+        "pinyin": "",
+        "meaning": "assassinar"
+      },
+      {
+        "id": 6,
+        "word": "peces tropicales",
+        "pinyin": "",
+        "meaning": "peixes tropicais"
+      }
+    ],
+    "id": "local-1780234287143-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: No, no lo estoy. Esta vez he hecho muchas investigaciones.",
+    "pinyin": "",
+    "translation": "A: Não, não estou. Desta vez fiz muitas pesquisas.",
+    "tokens": [
+      "A:",
+      "No",
+      ",",
+      "no",
+      "lo",
+      "estoy",
+      ".",
+      "Esta",
+      "vez",
+      "he",
+      "hecho",
+      "muchas",
+      "investigaciones",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "investigaciones",
+        "pinyin": "",
+        "meaning": "pesquisas"
+      },
+      {
+        "id": 2,
+        "word": "he hecho",
+        "pinyin": "",
+        "meaning": "fiz"
+      },
+      {
+        "id": 3,
+        "word": "muchas",
+        "pinyin": "",
+        "meaning": "muitas"
+      },
+      {
+        "id": 4,
+        "word": "no lo estoy",
+        "pinyin": "",
+        "meaning": "não estou"
+      }
+    ],
+    "id": "local-1780234287143-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Ah? Cuéntame.",
+    "pinyin": "",
+    "translation": "B: Ah? Conte-me.",
+    "tokens": [
+      "B:",
+      "¿",
+      "Ah",
+      "?",
+      "Cuéntame",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "¿Ah?",
+        "pinyin": "",
+        "meaning": "Interjeição de surpresa ou curiosidade"
+      },
+      {
+        "id": 2,
+        "word": "Cuéntame",
+        "pinyin": "",
+        "meaning": "Imperativo de contar, pede para narrar ou explicar"
+      }
+    ],
+    "id": "local-1780234287143-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Si quieres criar peces, primero debes tratar el agua. La temperatura del agua, el contenido de oxígeno, el nivel de pH y la claridad son muy importantes para los peces. Una vez que el agua está tratada, entonces se pueden criar los peces.",
+    "pinyin": "",
+    "translation": "A: Se você quiser criar peixes, primeiro você precisa tratar a água. A temperatura da água, o teor de oxigênio, o nível de pH e a clareza são muito importantes para os peixes. Uma vez que a água está tratada, então os peixes podem ser criados.",
+    "tokens": [
+      "A:",
+      "Si",
+      "quieres",
+      "criar",
+      "peces",
+      ",",
+      "primero",
+      "debes",
+      "tratar",
+      "el",
+      "agua",
+      ".",
+      "La",
+      "temperatura",
+      "del",
+      "agua",
+      ",",
+      "el",
+      "contenido",
+      "de",
+      "oxígeno",
+      ",",
+      "el",
+      "nivel",
+      "de",
+      "pH",
+      "y",
+      "la",
+      "claridad",
+      "son",
+      "muy",
+      "importantes",
+      "para",
+      "los",
+      "peces",
+      ".",
+      "Una",
+      "vez",
+      "que",
+      "el",
+      "agua",
+      "está",
+      "tratada",
+      ",",
+      "entonces",
+      "se",
+      "pueden",
+      "criar",
+      "los",
+      "peces",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "criar",
+        "pinyin": "",
+        "meaning": "criar, cultivar"
+      },
+      {
+        "id": 2,
+        "word": "tratar",
+        "pinyin": "",
+        "meaning": "tratar, processar"
+      },
+      {
+        "id": 3,
+        "word": "temperatura",
+        "pinyin": "",
+        "meaning": "temperatura"
+      },
+      {
+        "id": 4,
+        "word": "oxígeno",
+        "pinyin": "",
+        "meaning": "oxigênio"
+      },
+      {
+        "id": 5,
+        "word": "nivel de pH",
+        "pinyin": "",
+        "meaning": "nível de pH"
+      },
+      {
+        "id": 6,
+        "word": "claridad",
+        "pinyin": "",
+        "meaning": "clareza"
+      }
+    ],
+    "id": "local-1780234287143-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Tiene sentido. Entonces, ¿qué tipo de peces planeas criar?",
+    "pinyin": "",
+    "translation": "B: Isso faz sentido. Então, que tipo de peixes você planeja criar?",
+    "tokens": [
+      "B:",
+      "Tiene",
+      "sentido",
+      ".",
+      "Entonces",
+      ",",
+      "¿",
+      "qué",
+      "tipo",
+      "de",
+      "peces",
+      "planeas",
+      "criar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "peces",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 2,
+        "word": "planeas",
+        "pinyin": "",
+        "meaning": "planeja"
+      }
+    ],
+    "id": "local-1780234287143-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Planejo criar guppies e peixes-lua. Se dice que estos dos peces son adecuados para principiantes. Además, sus requisitos para el agua son aproximadamente los mismos, por lo que puedes criarlos juntos.",
+    "pinyin": "",
+    "translation": "A: Estou planejando criar guppies e peixes-lua. Diz-se que esses dois peixes são adequados para iniciantes. Além disso, seus requisitos para a água são aproximadamente os mesmos, então você pode criá-los juntos.",
+    "tokens": [
+      "A:",
+      "Planejo",
+      "criar",
+      "guppies",
+      "e",
+      "peixes",
+      "-",
+      "lua",
+      ".",
+      "Se",
+      "dice",
+      "que",
+      "estos",
+      "dos",
+      "peces",
+      "son",
+      "adecuados",
+      "para",
+      "principiantes",
+      ".",
+      "Además",
+      ",",
+      "sus",
+      "requisitos",
+      "para",
+      "el",
+      "agua",
+      "son",
+      "aproximadamente",
+      "los",
+      "mismos",
+      ",",
+      "por",
+      "lo",
+      "que",
+      "puedes",
+      "criarlos",
+      "juntos",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "guppies",
+        "pinyin": "",
+        "meaning": "guppies"
+      },
+      {
+        "id": 2,
+        "word": "peixes-lua",
+        "pinyin": "",
+        "meaning": "peixes-lua"
+      },
+      {
+        "id": 3,
+        "word": "principiantes",
+        "pinyin": "",
+        "meaning": "iniciantes"
+      },
+      {
+        "id": 4,
+        "word": "requisitos",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 5,
+        "word": "criar",
+        "pinyin": "",
+        "meaning": "criar"
+      }
+    ],
+    "id": "local-1780234287143-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Cuándo vas a ir a comprar el pescado?",
+    "pinyin": "",
+    "translation": "B: Quando você vai comprar o peixe?",
+    "tokens": [
+      "B:",
+      "¿",
+      "Cuándo",
+      "vas",
+      "a",
+      "ir",
+      "a",
+      "comprar",
+      "el",
+      "pescado",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "vas",
+        "pinyin": "",
+        "meaning": "você vai"
+      },
+      {
+        "id": 2,
+        "word": "ir",
+        "pinyin": "",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "comprar",
+        "pinyin": "",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "pescado",
+        "pinyin": "",
+        "meaning": "peixe"
+      }
+    ],
+    "id": "local-1780234287143-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Vamos dar una vuelta por el mercado de flores y aves. Quedemos para el próximo fin de semana.",
+    "pinyin": "",
+    "translation": "A: Vamos dar uma volta pelo mercado de flores e aves. Vamos marcar para o próximo fim de semana.",
+    "tokens": [
+      "A:",
+      "Vamos",
+      "dar",
+      "una",
+      "vuelta",
+      "por",
+      "el",
+      "mercado",
+      "de",
+      "flores",
+      "y",
+      "aves",
+      ".",
+      "Quedemos",
+      "para",
+      "el",
+      "próximo",
+      "fin",
+      "de",
+      "semana",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mercado",
+        "pinyin": "",
+        "meaning": "mercado"
+      },
+      {
+        "id": 2,
+        "word": "flores",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 3,
+        "word": "aves",
+        "pinyin": "",
+        "meaning": "aves"
+      },
+      {
+        "id": 4,
+        "word": "próximo",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 5,
+        "word": "fin de semana",
+        "pinyin": "",
+        "meaning": "fim de semana"
+      }
+    ],
+    "id": "local-1780234287143-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Creo que será mejor ir un poco más tarde y dejar que los pobres peces vivan unos días más.",
+    "pinyin": "",
+    "translation": "B: Acho que será melhor ir um pouco mais tarde e deixar os pobres peixes viverem mais alguns dias.",
+    "tokens": [
+      "B:",
+      "Creo",
+      "que",
+      "será",
+      "mejor",
+      "ir",
+      "un",
+      "poco",
+      "más",
+      "tarde",
+      "y",
+      "dejar",
+      "que",
+      "los",
+      "pobres",
+      "peces",
+      "vivan",
+      "unos",
+      "días",
+      "más",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mejor",
+        "pinyin": "",
+        "meaning": "melhor"
+      },
+      {
+        "id": 2,
+        "word": "tarde",
+        "pinyin": "",
+        "meaning": "tarde"
+      },
+      {
+        "id": 3,
+        "word": "dejar",
+        "pinyin": "",
+        "meaning": "deixar"
+      },
+      {
+        "id": 4,
+        "word": "peces",
+        "pinyin": "",
+        "meaning": "peixes"
+      },
+      {
+        "id": 5,
+        "word": "días",
+        "pinyin": "",
+        "meaning": "dias"
+      }
+    ],
+    "id": "local-1780234287143-11",
+    "language": "Espanhol"
+  }
+]

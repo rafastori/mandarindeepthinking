@@ -1,0 +1,783 @@
+[
+  {
+    "chinese": "A: Oggi abbiamo il grande privilegio di avere il Professor Zhang nel nostro programma per parlarci delle riforme del sistema sanitario negli Stati Uniti. Benvenuto, Professor Zhang!",
+    "pinyin": "",
+    "translation": "A: Hoje temos o grande privilégio de ter o Professor Zhang em nosso programa para falar conosco sobre as reformas do sistema de saúde nos Estados Unidos. Bem-vindo, Professor Zhang!",
+    "tokens": [
+      "A:",
+      "Oggi",
+      "abbiamo",
+      "il",
+      "grande",
+      "privilegio",
+      "di",
+      "avere",
+      "il",
+      "Professor",
+      "Zhang",
+      "nel",
+      "nostro",
+      "programma",
+      "per",
+      "parlarci",
+      "delle",
+      "riforme",
+      "del",
+      "sistema",
+      "sanitario",
+      "negli",
+      "Stati",
+      "Uniti",
+      ".",
+      "Benvenuto",
+      ",",
+      "Professor",
+      "Zhang",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "privilegio",
+        "pinyin": "",
+        "meaning": "privilégio"
+      },
+      {
+        "id": 2,
+        "word": "programma",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 3,
+        "word": "sistema sanitario",
+        "pinyin": "",
+        "meaning": "sistema de saúde"
+      },
+      {
+        "id": 4,
+        "word": "riforme",
+        "pinyin": "",
+        "meaning": "reformas"
+      },
+      {
+        "id": 5,
+        "word": "Stati Uniti",
+        "pinyin": "",
+        "meaning": "Estados Unidos"
+      },
+      {
+        "id": 6,
+        "word": "Benvenuto",
+        "pinyin": "",
+        "meaning": "Bem-vindo"
+      }
+    ],
+    "id": "local-1780240403150-0",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Ciao a tutti. Innanzitutto, questa è una questione molto complessa. Il 23 marzo 2010, il presidente degli Stati Uniti Obama ha firmato un disegno di legge sulla riforma dell'assicurazione sanitaria alla Casa Bianca. È uno dei risultati legislativi più importanti del governo Obama. È considerata la più grande trasformazione in 45 anni del sistema di sicurezza sociale degli Stati Uniti. Ha prodotto effetti di vasta portata su singoli, imprese e governo.",
+    "pinyin": "",
+    "translation": "B: Olá a todos. Em primeiro lugar, esta é uma questão muito complicada. Em 23 de março de 2010, o presidente dos Estados Unidos, Obama, assinou um projeto de lei de reforma do seguro de saúde na Casa Branca. É uma das maiores conquistas legislativas do governo Obama. É considerada a maior transformação em 45 anos do sistema de segurança social dos Estados Unidos. Produziu efeitos de longo alcance sobre indivíduos, empresas e o governo.",
+    "tokens": [
+      "B:",
+      "Ciao",
+      "a",
+      "tutti",
+      ".",
+      "Innanzitutto",
+      ",",
+      "questa",
+      "è",
+      "una",
+      "questione",
+      "molto",
+      "complessa",
+      ".",
+      "Il",
+      "23",
+      "marzo",
+      "2010",
+      ",",
+      "il",
+      "presidente",
+      "degli",
+      "Stati",
+      "Uniti",
+      "Obama",
+      "ha",
+      "firmato",
+      "un",
+      "disegno",
+      "di",
+      "legge",
+      "sulla",
+      "riforma",
+      "dell'assicurazione",
+      "sanitaria",
+      "alla",
+      "Casa",
+      "Bianca",
+      ".",
+      "È",
+      "uno",
+      "dei",
+      "risultati",
+      "legislativi",
+      "più",
+      "importanti",
+      "del",
+      "governo",
+      "Obama",
+      ".",
+      "È",
+      "considerata",
+      "la",
+      "più",
+      "grande",
+      "trasformazione",
+      "in",
+      "45",
+      "anni",
+      "del",
+      "sistema",
+      "di",
+      "sicurezza",
+      "sociale",
+      "degli",
+      "Stati",
+      "Uniti",
+      ".",
+      "Ha",
+      "prodotto",
+      "effetti",
+      "di",
+      "vasta",
+      "portata",
+      "su",
+      "singoli",
+      ",",
+      "imprese",
+      "e",
+      "governo",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "questione",
+        "pinyin": "",
+        "meaning": "assunto ou problema"
+      },
+      {
+        "id": 2,
+        "word": "complessa",
+        "pinyin": "",
+        "meaning": "difícil ou intricada"
+      },
+      {
+        "id": 3,
+        "word": "disegno di legge",
+        "pinyin": "",
+        "meaning": "projeto de lei"
+      },
+      {
+        "id": 4,
+        "word": "riforma",
+        "pinyin": "",
+        "meaning": "mudança estrutural"
+      },
+      {
+        "id": 5,
+        "word": "assicurazione sanitaria",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 6,
+        "word": "Casa Bianca",
+        "pinyin": "",
+        "meaning": "residência oficial do presidente dos EUA"
+      },
+      {
+        "id": 7,
+        "word": "sicurezza sociale",
+        "pinyin": "",
+        "meaning": "proteção social do Estado"
+      },
+      {
+        "id": 8,
+        "word": "effetti di vasta portata",
+        "pinyin": "",
+        "meaning": "consequências amplas ou profundas"
+      }
+    ],
+    "id": "local-1780240403150-1",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual è l'obiettivo principale della riforma sanitaria di Obama?",
+    "pinyin": "",
+    "translation": "A: Qual é o principal objetivo da reforma da saúde de Obama?",
+    "tokens": [
+      "A:",
+      "Qual",
+      "è",
+      "l'obiettivo",
+      "principale",
+      "della",
+      "riforma",
+      "sanitaria",
+      "di",
+      "Obama",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "obiettivo",
+        "pinyin": "",
+        "meaning": "objetivo"
+      },
+      {
+        "id": 2,
+        "word": "principale",
+        "pinyin": "",
+        "meaning": "principal"
+      },
+      {
+        "id": 3,
+        "word": "riforma",
+        "pinyin": "",
+        "meaning": "reforma"
+      },
+      {
+        "id": 4,
+        "word": "sanitaria",
+        "pinyin": "",
+        "meaning": "da saúde"
+      },
+      {
+        "id": 5,
+        "word": "Obama",
+        "pinyin": "",
+        "meaning": "Obama"
+      }
+    ],
+    "id": "local-1780240403150-2",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Innanzitutto, offre maggiore sicurezza a chi ha già un'assicurazione sanitaria. In secondo luogo, fornisce un'assicurazione sanitaria \"accessibile\" a chi non ne è titolare. In terzo luogo, controlla i costi della sanità in continua crescita.",
+    "pinyin": "",
+    "translation": "B: Primeiro, oferece mais segurança para aqueles que já têm seguro de saúde. Segundo, oferece seguro de saúde \"acessível\" para aqueles que não têm. Terceiro, controla os custos continuamente crescentes da assistência médica.",
+    "tokens": [
+      "B:",
+      "Innanzitutto",
+      ",",
+      "offre",
+      "maggiore",
+      "sicurezza",
+      "a",
+      "chi",
+      "ha",
+      "già",
+      "un'assicurazione",
+      "sanitaria",
+      ".",
+      "In",
+      "secondo",
+      "luogo",
+      ",",
+      "fornisce",
+      "un'assicurazione",
+      "sanitaria",
+      "\"",
+      "accessibile",
+      "\"",
+      "a",
+      "chi",
+      "non",
+      "ne",
+      "è",
+      "titolare",
+      ".",
+      "In",
+      "terzo",
+      "luogo",
+      ",",
+      "controlla",
+      "i",
+      "costi",
+      "della",
+      "sanità",
+      "in",
+      "continua",
+      "crescita",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "sicurezza",
+        "pinyin": "",
+        "meaning": "segurança"
+      },
+      {
+        "id": 2,
+        "word": "assicurazione sanitaria",
+        "pinyin": "",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 3,
+        "word": "accessibile",
+        "pinyin": "",
+        "meaning": "acessível"
+      },
+      {
+        "id": 4,
+        "word": "controlla",
+        "pinyin": "",
+        "meaning": "controla"
+      },
+      {
+        "id": 5,
+        "word": "costi",
+        "pinyin": "",
+        "meaning": "custos"
+      },
+      {
+        "id": 6,
+        "word": "crescita",
+        "pinyin": "",
+        "meaning": "crescimento"
+      }
+    ],
+    "id": "local-1780240403150-3",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Sembra piuttosto buono. Secondo la mia conoscenza, la riforma sanitaria è stata una questione centrale per il popolo americano ed è una questione storica. Ma in realtà il disegno di legge di Obama non ha ricevuto un sostegno energico, piuttosto ha causato diverse controversie, vero?",
+    "pinyin": "",
+    "translation": "A: Parece bastante bom. De acordo com meu conhecimento, a reforma da saúde tem sido uma questão central para o povo americano e é uma questão histórica. Mas, na verdade, o projeto de lei de Obama não recebeu apoio enérgico, pelo contrário, causou várias controvérsias, certo?",
+    "tokens": [
+      "A:",
+      "Sembra",
+      "piuttosto",
+      "buono",
+      ".",
+      "Secondo",
+      "la",
+      "mia",
+      "conoscenza",
+      ",",
+      "la",
+      "riforma",
+      "sanitaria",
+      "è",
+      "stata",
+      "una",
+      "questione",
+      "centrale",
+      "per",
+      "il",
+      "popolo",
+      "americano",
+      "ed",
+      "è",
+      "una",
+      "questione",
+      "storica",
+      ".",
+      "Ma",
+      "in",
+      "realtà",
+      "il",
+      "disegno",
+      "di",
+      "legge",
+      "di",
+      "Obama",
+      "non",
+      "ha",
+      "ricevuto",
+      "un",
+      "sostegno",
+      "energico",
+      ",",
+      "piuttosto",
+      "ha",
+      "causato",
+      "diverse",
+      "controversie",
+      ",",
+      "vero",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "riforma sanitaria",
+        "pinyin": "",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 2,
+        "word": "questione centrale",
+        "pinyin": "",
+        "meaning": "questão central"
+      },
+      {
+        "id": 3,
+        "word": "popolo americano",
+        "pinyin": "",
+        "meaning": "povo americano"
+      },
+      {
+        "id": 4,
+        "word": "disegno di legge",
+        "pinyin": "",
+        "meaning": "projeto de lei"
+      },
+      {
+        "id": 5,
+        "word": "sostegno energico",
+        "pinyin": "",
+        "meaning": "apoio enérgico"
+      },
+      {
+        "id": 6,
+        "word": "controversie",
+        "pinyin": "",
+        "meaning": "controvérsias"
+      }
+    ],
+    "id": "local-1780240403150-4",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: È corretto. Attualmente, secondo le statistiche, circa 46 milioni di persone non hanno ancora un'assicurazione sanitaria. Le riforme del sistema sanitario richiedono investimenti di ingenti somme di denaro. Pertanto, chi pagherà il conto per questa massiccia riforma sanitaria è un problema centrale.",
+    "pinyin": "",
+    "translation": "B: Isso mesmo. Atualmente, de acordo com as estatísticas, cerca de 46 milhões de pessoas ainda não possuem seguro saúde. As reformas na área da saúde exigem investimentos de grandes quantias de dinheiro. Portanto, quem pagará a conta por essa reforma massiva da saúde é um problema central.",
+    "tokens": [
+      "B:",
+      "È",
+      "corretto",
+      ".",
+      "Attualmente",
+      ",",
+      "secondo",
+      "le",
+      "statistiche",
+      ",",
+      "circa",
+      "46",
+      "milioni",
+      "di",
+      "persone",
+      "non",
+      "hanno",
+      "ancora",
+      "un'assicurazione",
+      "sanitaria",
+      ".",
+      "Le",
+      "riforme",
+      "del",
+      "sistema",
+      "sanitario",
+      "richiedono",
+      "investimenti",
+      "di",
+      "ingenti",
+      "somme",
+      "di",
+      "denaro",
+      ".",
+      "Pertanto",
+      ",",
+      "chi",
+      "pagherà",
+      "il",
+      "conto",
+      "per",
+      "questa",
+      "massiccia",
+      "riforma",
+      "sanitaria",
+      "è",
+      "un",
+      "problema",
+      "centrale",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "assicurazione sanitaria",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 2,
+        "word": "riforme",
+        "pinyin": "",
+        "meaning": "reformas"
+      },
+      {
+        "id": 3,
+        "word": "investimenti",
+        "pinyin": "",
+        "meaning": "investimentos"
+      },
+      {
+        "id": 4,
+        "word": "ingenti somme",
+        "pinyin": "",
+        "meaning": "grandes quantias"
+      },
+      {
+        "id": 5,
+        "word": "pagherà il conto",
+        "pinyin": "",
+        "meaning": "pagará a conta"
+      },
+      {
+        "id": 6,
+        "word": "problema centrale",
+        "pinyin": "",
+        "meaning": "problema central"
+      }
+    ],
+    "id": "local-1780240403150-5",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Qual era l'atteggiamento di Obama di fronte all'opposizione?",
+    "pinyin": "",
+    "translation": "A: Qual era a atitude de Obama ao enfrentar a oposição?",
+    "tokens": [
+      "A:",
+      "Qual",
+      "era",
+      "l'atteggiamento",
+      "di",
+      "Obama",
+      "di",
+      "fronte",
+      "all'opposizione",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "atteggiamento",
+        "pinyin": "",
+        "meaning": "atitude"
+      },
+      {
+        "id": 2,
+        "word": "di fronte",
+        "pinyin": "",
+        "meaning": "diante de"
+      },
+      {
+        "id": 3,
+        "word": "opposizione",
+        "pinyin": "",
+        "meaning": "oposição"
+      }
+    ],
+    "id": "local-1780240403150-6",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "B: Obama ha sottolineato con fermezza che il benessere del popolo americano non può essere sacrificato per la rivalità politica. Al tempo stesso, ha chiarito che non avrebbe aumentato gli oneri economici già gravosi per i contribuenti, ma avrebbe raccolto fondi riducendo gli attuali sprechi e cattivi utilizzi delle risorse nel sistema di assicurazione sanitaria.",
+    "pinyin": "",
+    "translation": "B: Obama apontou firmemente que o bem-estar do povo americano não pode ser sacrificado pela rivalidade política. Ao mesmo tempo, ele esclareceu que não aumentaria os encargos econômicos já difíceis de suportar para os contribuintes, mas arrecadaria fundos reduzindo o atual desperdício e mau uso dos recursos no sistema de seguro saúde.",
+    "tokens": [
+      "B:",
+      "Obama",
+      "ha",
+      "sottolineato",
+      "con",
+      "fermezza",
+      "che",
+      "il",
+      "benessere",
+      "del",
+      "popolo",
+      "americano",
+      "non",
+      "può",
+      "essere",
+      "sacrificato",
+      "per",
+      "la",
+      "rivalità",
+      "politica",
+      ".",
+      "Al",
+      "tempo",
+      "stesso",
+      ",",
+      "ha",
+      "chiarito",
+      "che",
+      "non",
+      "avrebbe",
+      "aumentato",
+      "gli",
+      "oneri",
+      "economici",
+      "già",
+      "gravosi",
+      "per",
+      "i",
+      "contribuenti",
+      ",",
+      "ma",
+      "avrebbe",
+      "raccolto",
+      "fondi",
+      "riducendo",
+      "gli",
+      "attuali",
+      "sprechi",
+      "e",
+      "cattivi",
+      "utilizzi",
+      "delle",
+      "risorse",
+      "nel",
+      "sistema",
+      "di",
+      "assicurazione",
+      "sanitaria",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "fermezza",
+        "pinyin": "",
+        "meaning": "firmeza"
+      },
+      {
+        "id": 2,
+        "word": "rivalità politica",
+        "pinyin": "",
+        "meaning": "rivalidade política"
+      },
+      {
+        "id": 3,
+        "word": "contribuenti",
+        "pinyin": "",
+        "meaning": "contribuintes"
+      },
+      {
+        "id": 4,
+        "word": "oneri economici",
+        "pinyin": "",
+        "meaning": "encargos econômicos"
+      },
+      {
+        "id": 5,
+        "word": "sprechi",
+        "pinyin": "",
+        "meaning": "desperdícios"
+      },
+      {
+        "id": 6,
+        "word": "assicurazione sanitaria",
+        "pinyin": "",
+        "meaning": "seguro saúde"
+      }
+    ],
+    "id": "local-1780240403150-7",
+    "language": "Italiano"
+  },
+  {
+    "chinese": "A: Molto ambizioso. Proprio come ha detto lo stesso Obama: \"Non sono il primo presidente a sollevare questa questione, ma ho deciso di diventare l'ultimo presidente a farlo!\"",
+    "pinyin": "",
+    "translation": "A: Muito ambicioso. Assim como o próprio Obama disse: \"Não sou o primeiro presidente a levantar essa questão, mas decidi me tornar o último presidente a fazê-lo!\"",
+    "tokens": [
+      "A:",
+      "Molto",
+      "ambizioso",
+      ".",
+      "Proprio",
+      "come",
+      "ha",
+      "detto",
+      "lo",
+      "stesso",
+      "Obama",
+      ":",
+      "\"",
+      "Non",
+      "sono",
+      "il",
+      "primo",
+      "presidente",
+      "a",
+      "sollevare",
+      "questa",
+      "questione",
+      ",",
+      "ma",
+      "ho",
+      "deciso",
+      "di",
+      "diventare",
+      "l'ultimo",
+      "presidente",
+      "a",
+      "farlo",
+      "!",
+      "\""
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ambizioso",
+        "pinyin": "",
+        "meaning": "ambicioso"
+      },
+      {
+        "id": 2,
+        "word": "presidente",
+        "pinyin": "",
+        "meaning": "presidente"
+      },
+      {
+        "id": 3,
+        "word": "sollevare",
+        "pinyin": "",
+        "meaning": "levantar/suscitar"
+      },
+      {
+        "id": 4,
+        "word": "questione",
+        "pinyin": "",
+        "meaning": "questão"
+      },
+      {
+        "id": 5,
+        "word": "deciso",
+        "pinyin": "",
+        "meaning": "decidido"
+      },
+      {
+        "id": 6,
+        "word": "ultimo",
+        "pinyin": "",
+        "meaning": "último"
+      }
+    ],
+    "id": "local-1780240403150-8",
+    "language": "Italiano"
+  }
+]

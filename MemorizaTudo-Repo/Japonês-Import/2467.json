@@ -1,0 +1,957 @@
+[
+  {
+    "chinese": "A: 小王、どうしたの？何か心配ごとがあるの？",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, o que houve? O que está na sua mente?",
+    "tokens": [
+      "A:",
+      "小",
+      "王",
+      "、",
+      "どう",
+      "し",
+      "た",
+      "の",
+      "？",
+      "何",
+      "か",
+      "心配",
+      "ごと",
+      "が",
+      "ある",
+      "の",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小王",
+        "pinyin": "",
+        "meaning": "Xiao Wang"
+      },
+      {
+        "id": 2,
+        "word": "どうしたの",
+        "pinyin": "",
+        "meaning": "o que houve"
+      },
+      {
+        "id": 3,
+        "word": "心配ごと",
+        "pinyin": "",
+        "meaning": "preocupação"
+      },
+      {
+        "id": 4,
+        "word": "ある",
+        "pinyin": "",
+        "meaning": "existir/haver"
+      }
+    ],
+    "id": "local-1780260261815-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 最近、MBAプログラムへの進学を検討しています。何かアドバイスはありますか？",
+    "pinyin": "",
+    "translation": "B: Recentemente, tenho considerado se devo ou não ingressar em um programa de MBA. Quais sugestões você tem?",
+    "tokens": [
+      "B:",
+      "最近",
+      "、",
+      "MBA",
+      "プログラム",
+      "へ",
+      "の",
+      "進学",
+      "を",
+      "検討",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "何",
+      "か",
+      "アドバイス",
+      "は",
+      "あり",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最近",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 2,
+        "word": "MBAプログラム",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 3,
+        "word": "進学",
+        "pinyin": "",
+        "meaning": "ingressar nos estudos"
+      },
+      {
+        "id": 4,
+        "word": "検討",
+        "pinyin": "",
+        "meaning": "consideração"
+      },
+      {
+        "id": 5,
+        "word": "アドバイス",
+        "pinyin": "",
+        "meaning": "sugestão"
+      }
+    ],
+    "id": "local-1780260261815-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 経営学修士ですか。友人がちょうど課程を終えて、論文を書いているところです。",
+    "pinyin": "",
+    "translation": "A: Mestre em administração de empresas, hein? Tenho um amigo que acabou de terminar os cursos e está escrevendo a tese.",
+    "tokens": [
+      "A:",
+      "経営",
+      "学修",
+      "士",
+      "です",
+      "か",
+      "。",
+      "友人",
+      "が",
+      "ちょうど",
+      "課程",
+      "を",
+      "終え",
+      "て",
+      "、",
+      "論文",
+      "を",
+      "書い",
+      "て",
+      "いる",
+      "ところ",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "経営学修士",
+        "pinyin": "",
+        "meaning": "mestre em administração"
+      },
+      {
+        "id": 2,
+        "word": "友人",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "課程",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "論文",
+        "pinyin": "",
+        "meaning": "tese"
+      },
+      {
+        "id": 5,
+        "word": "書いている",
+        "pinyin": "",
+        "meaning": "escrevendo"
+      }
+    ],
+    "id": "local-1780260261815-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えっ、彼は働きながら勉強しているのか、それとも全日制で勉強しているのか？",
+    "pinyin": "",
+    "translation": "B: É? Ele estuda enquanto trabalha ou estuda em período integral?",
+    "tokens": [
+      "B:",
+      "えっ",
+      "、",
+      "彼",
+      "は",
+      "働き",
+      "ながら",
+      "勉強",
+      "し",
+      "て",
+      "いる",
+      "の",
+      "か",
+      "、",
+      "それとも",
+      "全",
+      "日",
+      "制",
+      "で",
+      "勉強",
+      "し",
+      "て",
+      "いる",
+      "の",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "働きながら",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 2,
+        "word": "勉強",
+        "pinyin": "",
+        "meaning": "estudo"
+      },
+      {
+        "id": 3,
+        "word": "全日制",
+        "pinyin": "",
+        "meaning": "período integral"
+      },
+      {
+        "id": 4,
+        "word": "それとも",
+        "pinyin": "",
+        "meaning": "ou"
+      },
+      {
+        "id": 5,
+        "word": "彼",
+        "pinyin": "",
+        "meaning": "ele"
+      }
+    ],
+    "id": "local-1780260261815-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 彼は働きながら勉強しています。しかし、フルタイムのコースは実際の価値が高く、コストも安いと聞いています。",
+    "pinyin": "",
+    "translation": "A: Ele está estudando enquanto trabalha. Mas ouvi dizer que o valor real dos cursos em tempo integral é maior e o custo é mais barato.",
+    "tokens": [
+      "A:",
+      "彼",
+      "は",
+      "働き",
+      "ながら",
+      "勉強",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "しかし",
+      "、",
+      "フルタイム",
+      "の",
+      "コース",
+      "は",
+      "実際",
+      "の",
+      "価値",
+      "が",
+      "高く",
+      "、",
+      "コスト",
+      "も",
+      "安い",
+      "と",
+      "聞い",
+      "て",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "働きながら",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 2,
+        "word": "勉強しています",
+        "pinyin": "",
+        "meaning": "está estudando"
+      },
+      {
+        "id": 3,
+        "word": "フルタイム",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "コース",
+        "pinyin": "",
+        "meaning": "curso"
+      },
+      {
+        "id": 5,
+        "word": "価値",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 6,
+        "word": "コスト",
+        "pinyin": "",
+        "meaning": "custo"
+      }
+    ],
+    "id": "local-1780260261815-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当ですか？あり得ない！フルタイムのクラスは時間がかかるけど、料金は安いんですか？",
+    "pinyin": "",
+    "translation": "B: Sério? Impossível! O curso de tempo integral leva mais tempo, mas o custo é mais barato?",
+    "tokens": [
+      "B:",
+      "本当",
+      "です",
+      "か",
+      "？",
+      "あり",
+      "得",
+      "ない",
+      "！",
+      "フルタイム",
+      "の",
+      "クラス",
+      "は",
+      "時間",
+      "が",
+      "かかる",
+      "けど",
+      "、",
+      "料金",
+      "は",
+      "安い",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "",
+        "meaning": "verdadeiro"
+      },
+      {
+        "id": 2,
+        "word": "あり得ない",
+        "pinyin": "",
+        "meaning": "impossível"
+      },
+      {
+        "id": 3,
+        "word": "フルタイム",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "クラス",
+        "pinyin": "",
+        "meaning": "aula"
+      },
+      {
+        "id": 5,
+        "word": "時間",
+        "pinyin": "",
+        "meaning": "tempo"
+      },
+      {
+        "id": 6,
+        "word": "料金",
+        "pinyin": "",
+        "meaning": "tarifa"
+      },
+      {
+        "id": 7,
+        "word": "安い",
+        "pinyin": "",
+        "meaning": "barato"
+      }
+    ],
+    "id": "local-1780260261815-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 一般経営者がフルタイムのコースを受講する人が減ったため、ネットワーク形成の機会もやや減少しています。考えてみてください。多くの人は、ビジネスにおける一般経営者や上級管理者などと知り合う主な手段としてMBAプログラムを利用しています。一方では、人的つながりを広げ、他方では経営者の経験から学ぶことができます。したがって、多くの一般経営者は仕事を続けながら勉強しているのです。これは、仕事に支障をきたさないからです。",
+    "pinyin": "",
+    "translation": "A: Como menos gerentes gerais fazem os cursos em tempo integral, há um pouco menos de networking. Pense bem, muitas pessoas se familiarizam com alguns gerentes gerais, gerentes seniores e afins de uma empresa, principalmente através de um programa de MBA. Por um lado, eles podem expandir seus contatos e, por outro, podem aprender com a experiência do gerente geral. Então, a maioria dos gerentes gerais está definitivamente estudando enquanto trabalha, porque isso não afetará seu trabalho.",
+    "tokens": [
+      "A:",
+      "一般",
+      "経営",
+      "者",
+      "が",
+      "フルタイム",
+      "の",
+      "コース",
+      "を",
+      "受講",
+      "する",
+      "人",
+      "が",
+      "減っ",
+      "た",
+      "ため",
+      "、",
+      "ネットワーク",
+      "形成",
+      "の",
+      "機会",
+      "も",
+      "やや",
+      "減少",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "考え",
+      "て",
+      "み",
+      "て",
+      "ください",
+      "。",
+      "多く",
+      "の",
+      "人",
+      "は",
+      "、",
+      "ビジネス",
+      "における",
+      "一般",
+      "経営",
+      "者",
+      "や",
+      "上級",
+      "管理",
+      "者",
+      "など",
+      "と",
+      "知り合う",
+      "主",
+      "な",
+      "手段",
+      "として",
+      "MBA",
+      "プログラム",
+      "を",
+      "利用",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "一方",
+      "で",
+      "は",
+      "、",
+      "人的",
+      "つながり",
+      "を",
+      "広げ",
+      "、",
+      "他方",
+      "で",
+      "は",
+      "経営",
+      "者",
+      "の",
+      "経験",
+      "から",
+      "学ぶ",
+      "こと",
+      "が",
+      "でき",
+      "ます",
+      "。",
+      "したがって",
+      "、",
+      "多く",
+      "の",
+      "一般",
+      "経営",
+      "者",
+      "は",
+      "仕事",
+      "を",
+      "続け",
+      "ながら",
+      "勉強",
+      "し",
+      "て",
+      "いる",
+      "の",
+      "です",
+      "。",
+      "これ",
+      "は",
+      "、",
+      "仕事",
+      "に",
+      "支障",
+      "を",
+      "きたさ",
+      "ない",
+      "から",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "一般経営者",
+        "pinyin": "",
+        "meaning": "gerente geral"
+      },
+      {
+        "id": 2,
+        "word": "フルタイム",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "コース",
+        "pinyin": "",
+        "meaning": "curso"
+      },
+      {
+        "id": 4,
+        "word": "ネットワーク",
+        "pinyin": "",
+        "meaning": "rede de contatos"
+      },
+      {
+        "id": 5,
+        "word": "MBAプログラム",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 6,
+        "word": "人的つながり",
+        "pinyin": "",
+        "meaning": "conexões humanas"
+      },
+      {
+        "id": 7,
+        "word": "経験",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 8,
+        "word": "支障",
+        "pinyin": "",
+        "meaning": "obstáculo/interferência"
+      }
+    ],
+    "id": "local-1780260261815-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 本当ですね。では、働きながら勉強するという決断です。あなたの友人は中国の学校で勉強していますか、それとも外国の学校で勉強していますか？",
+    "pinyin": "",
+    "translation": "B: É verdade. Então, minha decisão é estudar enquanto trabalho! Seu amigo está estudando em uma escola chinesa ou estrangeira?",
+    "tokens": [
+      "B:",
+      "本当",
+      "です",
+      "ね",
+      "。",
+      "で",
+      "は",
+      "、",
+      "働き",
+      "ながら",
+      "勉強",
+      "する",
+      "という",
+      "決断",
+      "です",
+      "。",
+      "あなた",
+      "の",
+      "友人",
+      "は",
+      "中国",
+      "の",
+      "学校",
+      "で",
+      "勉強",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "か",
+      "、",
+      "それとも",
+      "外国",
+      "の",
+      "学校",
+      "で",
+      "勉強",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "本当",
+        "pinyin": "",
+        "meaning": "verdadeiro"
+      },
+      {
+        "id": 2,
+        "word": "働きながら",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 3,
+        "word": "勉強",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 4,
+        "word": "決断",
+        "pinyin": "",
+        "meaning": "decisão"
+      },
+      {
+        "id": 5,
+        "word": "友人",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 6,
+        "word": "中国",
+        "pinyin": "",
+        "meaning": "China"
+      },
+      {
+        "id": 7,
+        "word": "学校",
+        "pinyin": "",
+        "meaning": "escola"
+      }
+    ],
+    "id": "local-1780260261815-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 中国校でも外国校でも、カリキュラムはそれほど変わらないと聞いています。さらに、教科書の知識はあまり使われません。主に、人脈を築き、経験を交換することに依存しています。",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que, seja em uma escola chinesa ou estrangeira, o currículo é mais ou menos o mesmo. Além disso, o conhecimento dos livros não é muito utilizado. Principalmente, depende-se de criar conexões e trocar experiências.",
+    "tokens": [
+      "A:",
+      "中国",
+      "校",
+      "で",
+      "も",
+      "外国",
+      "校",
+      "で",
+      "も",
+      "、",
+      "カリキュラム",
+      "は",
+      "それほど",
+      "変わら",
+      "ない",
+      "と",
+      "聞い",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "さらに",
+      "、",
+      "教科書",
+      "の",
+      "知識",
+      "は",
+      "あまり",
+      "使わ",
+      "れ",
+      "ませ",
+      "ん",
+      "。",
+      "主",
+      "に",
+      "、",
+      "人脈",
+      "を",
+      "築き",
+      "、",
+      "経験",
+      "を",
+      "交換",
+      "する",
+      "こと",
+      "に",
+      "依存",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "カリキュラム",
+        "pinyin": "",
+        "meaning": "currículo"
+      },
+      {
+        "id": 2,
+        "word": "教科書",
+        "pinyin": "",
+        "meaning": "livro didático"
+      },
+      {
+        "id": 3,
+        "word": "人脈",
+        "pinyin": "",
+        "meaning": "rede de contatos"
+      },
+      {
+        "id": 4,
+        "word": "経験",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 5,
+        "word": "交換",
+        "pinyin": "",
+        "meaning": "troca"
+      }
+    ],
+    "id": "local-1780260261815-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 友人はMBAのプログラムにいくら使いましたか？",
+    "pinyin": "",
+    "translation": "B: Quanto dinheiro seu amigo gastou no programa de MBA?",
+    "tokens": [
+      "B:",
+      "友人",
+      "は",
+      "MBA",
+      "の",
+      "プログラム",
+      "に",
+      "いくら",
+      "使い",
+      "まし",
+      "た",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "友人",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 2,
+        "word": "MBA",
+        "pinyin": "",
+        "meaning": "MBA"
+      },
+      {
+        "id": 3,
+        "word": "プログラム",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 4,
+        "word": "いくら",
+        "pinyin": "",
+        "meaning": "quanto"
+      },
+      {
+        "id": 5,
+        "word": "使いました",
+        "pinyin": "",
+        "meaning": "gastou/usou"
+      }
+    ],
+    "id": "local-1780260261815-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: おそらく7万人くらいでしょう。高めのコースだと10万超から20万くらいです。",
+    "pinyin": "",
+    "translation": "A: Provavelmente cerca de setenta mil. Os cursos mais caros custam de pouco mais de cem mil a duzentos mil.",
+    "tokens": [
+      "A:",
+      "おそらく",
+      "7",
+      "万",
+      "人",
+      "くらい",
+      "でしょ",
+      "う",
+      "。",
+      "高め",
+      "の",
+      "コース",
+      "だ",
+      "と",
+      "10",
+      "万",
+      "超",
+      "から",
+      "20",
+      "万",
+      "くらい",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "おそらく",
+        "pinyin": "",
+        "meaning": "provavelmente"
+      },
+      {
+        "id": 2,
+        "word": "くらい",
+        "pinyin": "",
+        "meaning": "cerca de"
+      },
+      {
+        "id": 3,
+        "word": "高めの",
+        "pinyin": "",
+        "meaning": "mais caros"
+      },
+      {
+        "id": 4,
+        "word": "コース",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 5,
+        "word": "超",
+        "pinyin": "",
+        "meaning": "mais de"
+      }
+    ],
+    "id": "local-1780260261815-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: どうやら、これからはお金を無駄遣いできなくなりそうです。来月からは、生活を引き締めて、すぐに貯金を始めなければなりません。ははっ！",
+    "pinyin": "",
+    "translation": "B: Parece que não poderei mais jogar meu dinheiro fora. A partir do próximo mês, terei que me virar apertando o cinto e começando a economizar dinheiro imediatamente. Haha!",
+    "tokens": [
+      "B:",
+      "どうやら",
+      "、",
+      "これから",
+      "は",
+      "お金",
+      "を",
+      "無駄遣い",
+      "でき",
+      "なく",
+      "なり",
+      "そう",
+      "です",
+      "。",
+      "来月",
+      "から",
+      "は",
+      "、",
+      "生活",
+      "を",
+      "引き締め",
+      "て",
+      "、",
+      "すぐ",
+      "に",
+      "貯金",
+      "を",
+      "始め",
+      "なけれ",
+      "ば",
+      "なり",
+      "ませ",
+      "ん",
+      "。",
+      "は",
+      "はっ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "無駄遣い",
+        "pinyin": "",
+        "meaning": "desperdício"
+      },
+      {
+        "id": 2,
+        "word": "貯金",
+        "pinyin": "",
+        "meaning": "poupança"
+      },
+      {
+        "id": 3,
+        "word": "来月",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      }
+    ],
+    "id": "local-1780260261815-11",
+    "language": "Japonês"
+  }
+]

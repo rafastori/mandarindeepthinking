@@ -1,0 +1,826 @@
+[
+  {
+    "chinese": "A: Xiao Wang, was ist los? Was geht dir durch den Kopf?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, o que houve? O que está passando pela sua cabeça?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "was",
+      "ist",
+      "los",
+      "?",
+      "Was",
+      "geht",
+      "dir",
+      "durch",
+      "den",
+      "Kopf",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "was ist los",
+        "pinyin": "",
+        "meaning": "o que houve"
+      },
+      {
+        "id": 2,
+        "word": "Xiao Wang",
+        "pinyin": "",
+        "meaning": "nome próprio"
+      }
+    ],
+    "id": "local-1780229882353-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: In letzter Zeit überlege ich, ob ich mich für ein MBA-Programm einschreiben soll. Welche Vorschläge haben Sie?",
+    "pinyin": "",
+    "translation": "B: Ultimamente tenho considerado se devo ou não me inscrever em um programa de MBA. Quais sugestões você tem?",
+    "tokens": [
+      "B:",
+      "In",
+      "letzter",
+      "Zeit",
+      "überlege",
+      "ich",
+      ",",
+      "ob",
+      "ich",
+      "mich",
+      "für",
+      "ein",
+      "MBA",
+      "-",
+      "Programm",
+      "einschreiben",
+      "soll",
+      ".",
+      "Welche",
+      "Vorschläge",
+      "haben",
+      "Sie",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "überlege",
+        "pinyin": "",
+        "meaning": "penso / considero"
+      },
+      {
+        "id": 2,
+        "word": "MBA-Programm",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 3,
+        "word": "einschreiben",
+        "pinyin": "",
+        "meaning": "inscrever-se"
+      },
+      {
+        "id": 4,
+        "word": "Vorschläge",
+        "pinyin": "",
+        "meaning": "sugestões"
+      },
+      {
+        "id": 5,
+        "word": "letzter Zeit",
+        "pinyin": "",
+        "meaning": "últimamente"
+      }
+    ],
+    "id": "local-1780229882353-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Master of Business Administration, huh? Ich habe einen Freund, der gerade seine Kurse abgeschlossen hat und seine Masterarbeit schreibt.",
+    "pinyin": "",
+    "translation": "A: MBA, hein? Tenho um amigo que acabou de terminar os cursos e está escrevendo a tese.",
+    "tokens": [
+      "A:",
+      "Master",
+      "of",
+      "Business",
+      "Administration",
+      ",",
+      "huh",
+      "?",
+      "Ich",
+      "habe",
+      "einen",
+      "Freund",
+      ",",
+      "der",
+      "gerade",
+      "seine",
+      "Kurse",
+      "abgeschlossen",
+      "hat",
+      "und",
+      "seine",
+      "Masterarbeit",
+      "schreibt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Master of Business Administration",
+        "pinyin": "",
+        "meaning": "MBA"
+      },
+      {
+        "id": 2,
+        "word": "Kurse",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 3,
+        "word": "abgeschlossen",
+        "pinyin": "",
+        "meaning": "concluídos"
+      },
+      {
+        "id": 4,
+        "word": "Masterarbeit",
+        "pinyin": "",
+        "meaning": "tese de mestrado"
+      },
+      {
+        "id": 5,
+        "word": "schreibt",
+        "pinyin": "",
+        "meaning": "escreve"
+      }
+    ],
+    "id": "local-1780229882353-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Oh? Studiert er nebenbei oder Vollzeit?",
+    "pinyin": "",
+    "translation": "B: Ah? Ele estuda enquanto trabalha ou em tempo integral?",
+    "tokens": [
+      "B:",
+      "Oh",
+      "?",
+      "Studiert",
+      "er",
+      "nebenbei",
+      "oder",
+      "Vollzeit",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "nebenbei",
+        "pinyin": "",
+        "meaning": "ao mesmo tempo"
+      },
+      {
+        "id": 2,
+        "word": "Vollzeit",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "oder",
+        "pinyin": "",
+        "meaning": "ou"
+      }
+    ],
+    "id": "local-1780229882353-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Er studiert nebenbei, aber ich habe gehört, dass der tatsächliche Wert der Vollzeitkurse höher und die Kosten günstiger sind.",
+    "pinyin": "",
+    "translation": "A: Ele estuda enquanto trabalha, mas ouvi dizer que o valor real dos cursos de tempo integral é maior e o custo é mais barato.",
+    "tokens": [
+      "A:",
+      "Er",
+      "studiert",
+      "nebenbei",
+      ",",
+      "aber",
+      "ich",
+      "habe",
+      "gehört",
+      ",",
+      "dass",
+      "der",
+      "tatsächliche",
+      "Wert",
+      "der",
+      "Vollzeitkurse",
+      "höher",
+      "und",
+      "die",
+      "Kosten",
+      "günstiger",
+      "sind",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "studiert",
+        "pinyin": "",
+        "meaning": "estuda"
+      },
+      {
+        "id": 2,
+        "word": "nebenbei",
+        "pinyin": "",
+        "meaning": "enquanto trabalha / paralelamente"
+      },
+      {
+        "id": 3,
+        "word": "Vollzeitkurse",
+        "pinyin": "",
+        "meaning": "cursos de tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "tatsächliche",
+        "pinyin": "",
+        "meaning": "real / efetiva"
+      },
+      {
+        "id": 5,
+        "word": "Wert",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 6,
+        "word": "günstiger",
+        "pinyin": "",
+        "meaning": "mais barato / mais acessível"
+      },
+      {
+        "id": 7,
+        "word": "Kosten",
+        "pinyin": "",
+        "meaning": "custos"
+      }
+    ],
+    "id": "local-1780229882353-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wirklich? Keine Chance! Die Kurszeit ist eher für Vollzeit gedacht, aber die Kosten sind günstiger?",
+    "pinyin": "",
+    "translation": "B: Sério? Impossível! O horário da aula é mais para tempo integral, mas o custo é mais barato?",
+    "tokens": [
+      "B:",
+      "Wirklich",
+      "?",
+      "Keine",
+      "Chance",
+      "!",
+      "Die",
+      "Kurszeit",
+      "ist",
+      "eher",
+      "für",
+      "Vollzeit",
+      "gedacht",
+      ",",
+      "aber",
+      "die",
+      "Kosten",
+      "sind",
+      "günstiger",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wirklich",
+        "pinyin": "",
+        "meaning": "Realmente"
+      },
+      {
+        "id": 2,
+        "word": "Keine Chance",
+        "pinyin": "",
+        "meaning": "Sem chance"
+      },
+      {
+        "id": 3,
+        "word": "Kurszeit",
+        "pinyin": "",
+        "meaning": "Horário da aula"
+      },
+      {
+        "id": 4,
+        "word": "Vollzeit",
+        "pinyin": "",
+        "meaning": "Tempo integral"
+      },
+      {
+        "id": 5,
+        "word": "Kosten",
+        "pinyin": "",
+        "meaning": "Custos"
+      },
+      {
+        "id": 6,
+        "word": "günstiger",
+        "pinyin": "",
+        "meaning": "Mais barato"
+      }
+    ],
+    "id": "local-1780229882353-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Da weniger Generalmanager Vollzeitkurse belegen, gibt es etwas weniger Networking. Denken Sie daran: Viele Menschen lernen Generalmanager, Senior-Manager und dergleichen eines Unternehmens hauptsächlich über ein MBA-Programm kennen. Einerseits können sie ihren Kontaktbereich erweitern, andererseits können sie von der Erfahrung der Generalmanager lernen. Daher studieren die meisten Generalmanager definitiv neben dem Beruf, da dies ihre Arbeit nicht beeinträchtigt.",
+    "pinyin": "",
+    "translation": "A: Como menos gerentes gerais fazem cursos de tempo integral, há um pouco menos de networking. Pense bem: muitas pessoas se familiarizam com gerentes gerais, gerentes seniores e semelhantes de uma empresa, principalmente por meio de um programa de MBA. Por um lado, eles podem expandir suas conexões e, por outro, podem aprender com a experiência dos gerentes gerais. Portanto, a maioria dos gerentes gerais está definitivamente estudando enquanto trabalha, pois isso não afetará seu trabalho.",
+    "tokens": [
+      "A:",
+      "Da",
+      "weniger",
+      "Generalmanager",
+      "Vollzeitkurse",
+      "belegen",
+      ",",
+      "gibt",
+      "es",
+      "etwas",
+      "weniger",
+      "Networking",
+      ".",
+      "Denken",
+      "Sie",
+      "daran",
+      ":",
+      "Viele",
+      "Menschen",
+      "lernen",
+      "Generalmanager",
+      ",",
+      "Senior",
+      "-",
+      "Manager",
+      "und",
+      "dergleichen",
+      "eines",
+      "Unternehmens",
+      "hauptsächlich",
+      "über",
+      "ein",
+      "MBA",
+      "-",
+      "Programm",
+      "kennen",
+      ".",
+      "Einerseits",
+      "können",
+      "sie",
+      "ihren",
+      "Kontaktbereich",
+      "erweitern",
+      ",",
+      "andererseits",
+      "können",
+      "sie",
+      "von",
+      "der",
+      "Erfahrung",
+      "der",
+      "Generalmanager",
+      "lernen",
+      ".",
+      "Daher",
+      "studieren",
+      "die",
+      "meisten",
+      "Generalmanager",
+      "definitiv",
+      "neben",
+      "dem",
+      "Beruf",
+      ",",
+      "da",
+      "dies",
+      "ihre",
+      "Arbeit",
+      "nicht",
+      "beeinträchtigt",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Generalmanager",
+        "pinyin": "",
+        "meaning": "gerente geral"
+      },
+      {
+        "id": 2,
+        "word": "Vollzeitkurse",
+        "pinyin": "",
+        "meaning": "cursos de tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "Networking",
+        "pinyin": "",
+        "meaning": "networking"
+      },
+      {
+        "id": 4,
+        "word": "MBA-Programm",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 5,
+        "word": "Kontaktbereich",
+        "pinyin": "",
+        "meaning": "rede de contatos"
+      },
+      {
+        "id": 6,
+        "word": "Erfahrung",
+        "pinyin": "",
+        "meaning": "experiência"
+      },
+      {
+        "id": 7,
+        "word": "neben dem Beruf",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      }
+    ],
+    "id": "local-1780229882353-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das stimmt. Dann ist meine Entscheidung, während der Arbeit zu studieren! Studiert dein Freund an einer chinesischen oder einer ausländischen Schule?",
+    "pinyin": "",
+    "translation": "B: Isso é verdade. Então, minha decisão é estudar enquanto trabalho! Seu amigo está estudando em uma escola chinesa ou estrangeira?",
+    "tokens": [
+      "B:",
+      "Das",
+      "stimmt",
+      ".",
+      "Dann",
+      "ist",
+      "meine",
+      "Entscheidung",
+      ",",
+      "während",
+      "der",
+      "Arbeit",
+      "zu",
+      "studieren",
+      "!",
+      "Studiert",
+      "dein",
+      "Freund",
+      "an",
+      "einer",
+      "chinesischen",
+      "oder",
+      "einer",
+      "ausländischen",
+      "Schule",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Das stimmt",
+        "pinyin": "",
+        "meaning": "Isso é verdade"
+      },
+      {
+        "id": 2,
+        "word": "während der Arbeit",
+        "pinyin": "",
+        "meaning": "enquanto trabalha"
+      },
+      {
+        "id": 3,
+        "word": "studieren",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 4,
+        "word": "dein Freund",
+        "pinyin": "",
+        "meaning": "seu amigo"
+      },
+      {
+        "id": 5,
+        "word": "chinesischen",
+        "pinyin": "",
+        "meaning": "chinesa"
+      },
+      {
+        "id": 6,
+        "word": "ausländischen",
+        "pinyin": "",
+        "meaning": "estrangeira"
+      }
+    ],
+    "id": "local-1780229882353-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ich habe gehört, dass der Lehrplan an chinesischen oder ausländischen Schulen etwa gleich ist. Darüber hinaus wird theoretisches Wissen kaum genutzt. Vielmehr liegt der Fokus auf dem Aufbau von Kontakten und dem Austausch von Erfahrungen.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que o currículo é mais ou menos o mesmo, seja em uma escola chinesa ou estrangeira. Além disso, o conhecimento teórico não é muito utilizado. Principalmente, depende-se de criar conexões e trocar experiências.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "habe",
+      "gehört",
+      ",",
+      "dass",
+      "der",
+      "Lehrplan",
+      "an",
+      "chinesischen",
+      "oder",
+      "ausländischen",
+      "Schulen",
+      "etwa",
+      "gleich",
+      "ist",
+      ".",
+      "Darüber",
+      "hinaus",
+      "wird",
+      "theoretisches",
+      "Wissen",
+      "kaum",
+      "genutzt",
+      ".",
+      "Vielmehr",
+      "liegt",
+      "der",
+      "Fokus",
+      "auf",
+      "dem",
+      "Aufbau",
+      "von",
+      "Kontakten",
+      "und",
+      "dem",
+      "Austausch",
+      "von",
+      "Erfahrungen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Lehrplan",
+        "pinyin": "",
+        "meaning": "currículo"
+      },
+      {
+        "id": 2,
+        "word": "chinesischen",
+        "pinyin": "",
+        "meaning": "chinesas"
+      },
+      {
+        "id": 3,
+        "word": "ausländischen",
+        "pinyin": "",
+        "meaning": "estrangeiras"
+      },
+      {
+        "id": 4,
+        "word": "theoretisches Wissen",
+        "pinyin": "",
+        "meaning": "conhecimento teórico"
+      },
+      {
+        "id": 5,
+        "word": "Aufbau von Kontakten",
+        "pinyin": "",
+        "meaning": "criação de conexões"
+      },
+      {
+        "id": 6,
+        "word": "Austausch",
+        "pinyin": "",
+        "meaning": "troca"
+      }
+    ],
+    "id": "local-1780229882353-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wie viel Geld hat dein Freund für sein MBA-Programm ausgegeben?",
+    "pinyin": "",
+    "translation": "B: Quanto dinheiro seu amigo gastou em seu programa de MBA?",
+    "tokens": [
+      "B:",
+      "Wie",
+      "viel",
+      "Geld",
+      "hat",
+      "dein",
+      "Freund",
+      "für",
+      "sein",
+      "MBA",
+      "-",
+      "Programm",
+      "ausgegeben",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Wie viel",
+        "pinyin": "",
+        "meaning": "Quanto"
+      },
+      {
+        "id": 2,
+        "word": "Geld",
+        "pinyin": "",
+        "meaning": "Dinheiro"
+      },
+      {
+        "id": 3,
+        "word": "dein Freund",
+        "pinyin": "",
+        "meaning": "seu amigo"
+      },
+      {
+        "id": 4,
+        "word": "MBA-Programm",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 5,
+        "word": "ausgegeben",
+        "pinyin": "",
+        "meaning": "gastou"
+      }
+    ],
+    "id": "local-1780229882353-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Vielleicht etwa siebzigtausend. Die teureren Kurse kosten hunderttausend bis zweihunderttausend.",
+    "pinyin": "",
+    "translation": "A: Talvez cerca de setenta mil. Os cursos mais caros custam de cem mil a duzentos mil.",
+    "tokens": [
+      "A:",
+      "Vielleicht",
+      "etwa",
+      "siebzigtausend",
+      ".",
+      "Die",
+      "teureren",
+      "Kurse",
+      "kosten",
+      "hunderttausend",
+      "bis",
+      "zweihunderttausend",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "siebzigtausend",
+        "pinyin": "",
+        "meaning": "setenta mil"
+      },
+      {
+        "id": 2,
+        "word": "teureren",
+        "pinyin": "",
+        "meaning": "mais caros"
+      },
+      {
+        "id": 3,
+        "word": "Kurse",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 4,
+        "word": "kosten",
+        "pinyin": "",
+        "meaning": "custam"
+      },
+      {
+        "id": 5,
+        "word": "hunderttausend",
+        "pinyin": "",
+        "meaning": "cem mil"
+      },
+      {
+        "id": 6,
+        "word": "zweihunderttausend",
+        "pinyin": "",
+        "meaning": "duzentos mil"
+      }
+    ],
+    "id": "local-1780229882353-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es sieht so aus, als könnte ich mein Geld nicht mehr einfach so wegwerfen. Ab nächstem Monat muss ich mit knapper Kasse auskommen und sofort anfangen, Geld zu sparen. Haha!",
+    "pinyin": "",
+    "translation": "B: Parece que não vou mais poder jogar meu dinheiro fora. A partir do próximo mês, terei que me virar com o que tenho e começar a economizar dinheiro imediatamente. Haha!",
+    "tokens": [
+      "B:",
+      "Es",
+      "sieht",
+      "so",
+      "aus",
+      ",",
+      "als",
+      "könnte",
+      "ich",
+      "mein",
+      "Geld",
+      "nicht",
+      "mehr",
+      "einfach",
+      "so",
+      "wegwerfen",
+      ".",
+      "Ab",
+      "nächstem",
+      "Monat",
+      "muss",
+      "ich",
+      "mit",
+      "knapper",
+      "Kasse",
+      "auskommen",
+      "und",
+      "sofort",
+      "anfangen",
+      ",",
+      "Geld",
+      "zu",
+      "sparen",
+      ".",
+      "Haha",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "wegwerfen",
+        "pinyin": "",
+        "meaning": "jogar fora"
+      },
+      {
+        "id": 2,
+        "word": "knapper Kasse",
+        "pinyin": "",
+        "meaning": "dinheiro apertado"
+      },
+      {
+        "id": 3,
+        "word": "auskommen",
+        "pinyin": "",
+        "meaning": "se virar / sobreviver"
+      },
+      {
+        "id": 4,
+        "word": "sparen",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "nächstem Monat",
+        "pinyin": "",
+        "meaning": "próximo mês"
+      }
+    ],
+    "id": "local-1780229882353-11",
+    "language": "Alemão"
+  }
+]

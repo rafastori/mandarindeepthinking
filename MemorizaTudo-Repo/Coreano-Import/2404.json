@@ -1,0 +1,905 @@
+[
+  {
+    "chinese": "A: 길을 건너세요. 놓치지 마세요... 마이크 티셔츠가 단돈 50위안이에요!",
+    "pinyin": "",
+    "translation": "A: Atravesse a rua. Não perca... A camiseta do Mike é apenas 50 yuans!",
+    "tokens": [
+      "A:",
+      "길을",
+      "건너세요",
+      ".",
+      "놓치지",
+      "마세요",
+      ".",
+      ".",
+      ".",
+      "마이크",
+      "티셔츠가",
+      "단돈",
+      "50",
+      "위안이에요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "길을",
+        "pinyin": "",
+        "meaning": "rua"
+      },
+      {
+        "id": 2,
+        "word": "건너세요",
+        "pinyin": "",
+        "meaning": "atravesse"
+      },
+      {
+        "id": 3,
+        "word": "놓치지",
+        "pinyin": "",
+        "meaning": "não perca"
+      },
+      {
+        "id": 4,
+        "word": "마이크",
+        "pinyin": "",
+        "meaning": "Mike"
+      },
+      {
+        "id": 5,
+        "word": "티셔츠가",
+        "pinyin": "",
+        "meaning": "camiseta"
+      },
+      {
+        "id": 6,
+        "word": "위안이에요",
+        "pinyin": "",
+        "meaning": "yuans"
+      }
+    ],
+    "id": "local-1780230976035-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 저 남자 봐. 정말 낯이 익어.",
+    "pinyin": "",
+    "translation": "B: Olha para aquele cara. Ele parece tão familiar.",
+    "tokens": [
+      "B:",
+      "저",
+      "남자",
+      "봐",
+      ".",
+      "정말",
+      "낯이",
+      "익어",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "저",
+        "pinyin": "",
+        "meaning": "aquele"
+      },
+      {
+        "id": 2,
+        "word": "남자",
+        "pinyin": "",
+        "meaning": "homem"
+      },
+      {
+        "id": 3,
+        "word": "낯이 익어",
+        "pinyin": "",
+        "meaning": "parece familiar"
+      }
+    ],
+    "id": "local-1780230976035-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 이봐? 그거 탱 아니야? 고향 이웃이잖아. 탱 뭐라고 했지? 헐, 갑자기 기억이 안 나.",
+    "pinyin": "",
+    "translation": "C: Ei? Não é o Tang, seu vizinho da sua cidade natal? Tang algo? Caramba, de repente não consigo lembrar.",
+    "tokens": [
+      "C:",
+      "이봐",
+      "?",
+      "그거",
+      "탱",
+      "아니야",
+      "?",
+      "고향",
+      "이웃이잖아",
+      ".",
+      "탱",
+      "뭐라고",
+      "했지",
+      "?",
+      "헐",
+      ",",
+      "갑자기",
+      "기억이",
+      "안",
+      "나",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "이봐",
+        "pinyin": "",
+        "meaning": "ei / olá"
+      },
+      {
+        "id": 2,
+        "word": "탱",
+        "pinyin": "",
+        "meaning": "Tang (nome próprio)"
+      },
+      {
+        "id": 3,
+        "word": "고향",
+        "pinyin": "",
+        "meaning": "cidade natal / terra natal"
+      },
+      {
+        "id": 4,
+        "word": "이웃",
+        "pinyin": "",
+        "meaning": "vizinho"
+      },
+      {
+        "id": 5,
+        "word": "기억",
+        "pinyin": "",
+        "meaning": "memória / lembrança"
+      },
+      {
+        "id": 6,
+        "word": "안 나",
+        "pinyin": "",
+        "meaning": "não sai / não aparece (no contexto de memória)"
+      }
+    ],
+    "id": "local-1780230976035-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 탕궈!",
+    "pinyin": "",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "B:",
+      "탕궈",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "탕궈",
+        "pinyin": "",
+        "meaning": "Tang Guo (nome próprio)"
+      }
+    ],
+    "id": "local-1780230976035-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 맞아요! 바로 그 사람이에요! 이제 옷을 팔려고 시내에 온 것 같아요. 단 이 년 만에 봤는데 벌써 잘 먹고 사네요.那边에 가서 인사도 하고, 김치도 좀 사볼까요? 김치도 보고 우리도 마음에 드는 옷이 있는지 살펴봐요.",
+    "pinyin": "",
+    "translation": "C: Isso mesmo! É ele! Parece que ele veio para a cidade vender roupas. Não o vejo há apenas dois anos e ele já está se dando bem. Vamos lá dar um oi! Enquanto estamos lá, podemos ver se gostamos de alguma das roupas.",
+    "tokens": [
+      "C:",
+      "맞아요",
+      "!",
+      "바로",
+      "그",
+      "사람이에요",
+      "!",
+      "이제",
+      "옷을",
+      "팔려고",
+      "시내에",
+      "온",
+      "것",
+      "같아요",
+      ".",
+      "단",
+      "이",
+      "년",
+      "만에",
+      "봤는데",
+      "벌써",
+      "잘",
+      "먹고",
+      "사네요",
+      ".",
+      "那边에",
+      "가서",
+      "인사도",
+      "하고",
+      ",",
+      "김치도",
+      "좀",
+      "사볼까요",
+      "?",
+      "김치도",
+      "보고",
+      "우리도",
+      "마음에",
+      "드는",
+      "옷이",
+      "있는지",
+      "살펴봐요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "맞아요",
+        "pinyin": "",
+        "meaning": "isso mesmo / correto"
+      },
+      {
+        "id": 2,
+        "word": "바로",
+        "pinyin": "",
+        "meaning": "exatamente / logo"
+      },
+      {
+        "id": 3,
+        "word": "시내",
+        "pinyin": "",
+        "meaning": "centro da cidade"
+      },
+      {
+        "id": 4,
+        "word": "옷",
+        "pinyin": "",
+        "meaning": "roupa"
+      },
+      {
+        "id": 5,
+        "word": "인사",
+        "pinyin": "",
+        "meaning": "saudação / cumprimento"
+      },
+      {
+        "id": 6,
+        "word": "살펴봐요",
+        "pinyin": "",
+        "meaning": "olhar / verificar"
+      }
+    ],
+    "id": "local-1780230976035-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 탕궈!",
+    "pinyin": "",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "B:",
+      "탕궈",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "탕궈",
+        "pinyin": "",
+        "meaning": "Tang Guo (nome próprio)"
+      }
+    ],
+    "id": "local-1780230976035-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 어? 장 형님! 정말 우연이네요!",
+    "pinyin": "",
+    "translation": "A: Huh? É o irmão Zhang! Que coincidência!",
+    "tokens": [
+      "A:",
+      "어",
+      "?",
+      "장",
+      "형님",
+      "!",
+      "정말",
+      "우연이네요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "장 형님",
+        "pinyin": "",
+        "meaning": "irmão Zhang (termo de respeito para homem mais velho)"
+      },
+      {
+        "id": 2,
+        "word": "우연",
+        "pinyin": "",
+        "meaning": "coincidência"
+      },
+      {
+        "id": 3,
+        "word": "형님",
+        "pinyin": "",
+        "meaning": "irmão mais velho (usado por homens)"
+      },
+      {
+        "id": 4,
+        "word": "정말",
+        "pinyin": "",
+        "meaning": "realmente / verdadeiramente"
+      },
+      {
+        "id": 5,
+        "word": "어",
+        "pinyin": "",
+        "meaning": "huh? / o quê?"
+      }
+    ],
+    "id": "local-1780230976035-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 와! 거의 못 알아봤어! 언제 상하이에 왔어? 사업 잘 되네!",
+    "pinyin": "",
+    "translation": "B: Nossa! Quase não te reconheci! Quando você veio para Xangai? Os negócios estão indo bem!",
+    "tokens": [
+      "B:",
+      "와",
+      "!",
+      "거의",
+      "못",
+      "알아봤어",
+      "!",
+      "언제",
+      "상하이에",
+      "왔어",
+      "?",
+      "사업",
+      "잘",
+      "되네",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "와",
+        "pinyin": "",
+        "meaning": "nossa / uau"
+      },
+      {
+        "id": 2,
+        "word": "못 알아봤어",
+        "pinyin": "",
+        "meaning": "não reconheci"
+      },
+      {
+        "id": 3,
+        "word": "언제",
+        "pinyin": "",
+        "meaning": "quando"
+      },
+      {
+        "id": 4,
+        "word": "상하이에",
+        "pinyin": "",
+        "meaning": "em Xangai"
+      },
+      {
+        "id": 5,
+        "word": "왔어",
+        "pinyin": "",
+        "meaning": "veio"
+      },
+      {
+        "id": 6,
+        "word": "사업",
+        "pinyin": "",
+        "meaning": "negócios"
+      },
+      {
+        "id": 7,
+        "word": "잘 되네",
+        "pinyin": "",
+        "meaning": "vai bem / está indo bem"
+      }
+    ],
+    "id": "local-1780230976035-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 나쁘진 않아요. 살아갈 만큼은 돼요. 어서, 어서, 어서! 장 씨, 마음에 드는 게 있는지 보세요. 하나 골라서 입어보세요!",
+    "pinyin": "",
+    "translation": "A: Não está ruim. É o suficiente para se virar. Vamos, vamos, vamos! Primo Zhang, veja se há algo que você goste. Escolha algo e experimente!",
+    "tokens": [
+      "A:",
+      "나쁘진",
+      "않아요",
+      ".",
+      "살아갈",
+      "만큼은",
+      "돼요",
+      ".",
+      "어서",
+      ",",
+      "어서",
+      ",",
+      "어서",
+      "!",
+      "장",
+      "씨",
+      ",",
+      "마음에",
+      "드는",
+      "게",
+      "있는지",
+      "보세요",
+      ".",
+      "하나",
+      "골라서",
+      "입어보세요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나쁘진 않아요",
+        "pinyin": "",
+        "meaning": "não está ruim"
+      },
+      {
+        "id": 2,
+        "word": "살아갈 만큼은 돼요",
+        "pinyin": "",
+        "meaning": "suficiente para se virar"
+      },
+      {
+        "id": 3,
+        "word": "어서",
+        "pinyin": "",
+        "meaning": "rápido / vamos"
+      },
+      {
+        "id": 4,
+        "word": "장 씨",
+        "pinyin": "",
+        "meaning": "primo Zhang / senhor Zhang"
+      },
+      {
+        "id": 5,
+        "word": "마음에 드는",
+        "pinyin": "",
+        "meaning": "que agrada / que gosta"
+      },
+      {
+        "id": 6,
+        "word": "입어보세요",
+        "pinyin": "",
+        "meaning": "experimente (roupa)"
+      }
+    ],
+    "id": "local-1780230976035-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 와! 구찌, LV, 샤넬, 버버리, 프라다... 모두 큰 국제 브랜드잖아. 진짜야?",
+    "pinyin": "",
+    "translation": "C: Uau! Gucci, LV, Chanel, Burberry, Prada... São todas grandes marcas internacionais. São originais?",
+    "tokens": [
+      "C:",
+      "와",
+      "!",
+      "구찌",
+      ",",
+      "LV",
+      ",",
+      "샤넬",
+      ",",
+      "버버리",
+      ",",
+      "프라다",
+      ".",
+      ".",
+      ".",
+      "모두",
+      "큰",
+      "국제",
+      "브랜드잖아",
+      ".",
+      "진짜야",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "구찌",
+        "pinyin": "",
+        "meaning": "Gucci"
+      },
+      {
+        "id": 2,
+        "word": "샤넬",
+        "pinyin": "",
+        "meaning": "Chanel"
+      },
+      {
+        "id": 3,
+        "word": "버버리",
+        "pinyin": "",
+        "meaning": "Burberry"
+      },
+      {
+        "id": 4,
+        "word": "프라다",
+        "pinyin": "",
+        "meaning": "Prada"
+      },
+      {
+        "id": 5,
+        "word": "국제 브랜드",
+        "pinyin": "",
+        "meaning": "marca internacional"
+      },
+      {
+        "id": 6,
+        "word": "진짜",
+        "pinyin": "",
+        "meaning": "verdadeiro/autêntico"
+      }
+    ],
+    "id": "local-1780230976035-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 이것들은 모두 반품된 상품인가요?",
+    "pinyin": "",
+    "translation": "B: Estes são todos produtos devolvidos, certo?",
+    "tokens": [
+      "B:",
+      "이것들은",
+      "모두",
+      "반품된",
+      "상품인가요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "반품된",
+        "pinyin": "",
+        "meaning": "devolvidos"
+      },
+      {
+        "id": 2,
+        "word": "상품",
+        "pinyin": "",
+        "meaning": "produtos"
+      },
+      {
+        "id": 3,
+        "word": "모두",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 4,
+        "word": "이것들",
+        "pinyin": "",
+        "meaning": "estes"
+      },
+      {
+        "id": 5,
+        "word": "인가요",
+        "pinyin": "",
+        "meaning": "certo?"
+      }
+    ],
+    "id": "local-1780230976035-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 가짜예요? 근데 이 옷들의 품질과 제작 수준이 다 진짜로 좋아요. 진짜와 가짜를 구분할 수 없을 정도예요. 진짜일 거예요.",
+    "pinyin": "",
+    "translation": "C: São falsos? Mas a qualidade e o acabamento dessas roupas são realmente bons. É como se eu não conseguisse distinguir o original do falso. Eles devem ser originais.",
+    "tokens": [
+      "C:",
+      "가짜예요",
+      "?",
+      "근데",
+      "이",
+      "옷들의",
+      "품질과",
+      "제작",
+      "수준이",
+      "다",
+      "진짜로",
+      "좋아요",
+      ".",
+      "진짜와",
+      "가짜를",
+      "구분할",
+      "수",
+      "없을",
+      "정도예요",
+      ".",
+      "진짜일",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "가짜",
+        "pinyin": "",
+        "meaning": "falso"
+      },
+      {
+        "id": 2,
+        "word": "품질",
+        "pinyin": "",
+        "meaning": "qualidade"
+      },
+      {
+        "id": 3,
+        "word": "제작",
+        "pinyin": "",
+        "meaning": "fabricação"
+      },
+      {
+        "id": 4,
+        "word": "구분",
+        "pinyin": "",
+        "meaning": "distinção"
+      },
+      {
+        "id": 5,
+        "word": "진짜",
+        "pinyin": "",
+        "meaning": "original"
+      }
+    ],
+    "id": "local-1780230976035-11",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 쉿! 장 형님이 하신 말씀이 맞습니다. 이건 실제로 반품된 상품입니다. 자세히 보지 않으면 차이가 보이지 않습니다. 반품된 상품은 원단, 디자인, 재봉 면에서 정품과 동일합니다. 하지만 작은 결함이 하나씩 있습니다. 예를 들어 단추가 대칭이 아니거나 라벨이 잘못 붙은 경우입니다. 규정에 따르면 이 옷들은 모두 폐기해야 하지만, 의류 공장 내부자들이 이런 불량품을 몰래 빼내 팔고 있습니다. 반품 상품은 장점이 네 가지입니다. 첫째, 저렴합니다. 둘째, 최신 스타일입니다. 셋째, 품질이 좋습니다. 넷째, 브랜드 제품입니다. 그래서 저가 시장에서 팔기 좋습니다.",
+    "pinyin": "",
+    "translation": "A: Shh! O que o Irmão Zhang disse é verdade. Estes são, na verdade, mercadorias rejeitadas. Se você não olhar com cuidado, não conseguirá ver a diferença. As mercadorias rejeitadas são iguais às mercadorias genuínas em termos de materiais, design e costura. No entanto, elas têm pequenas imperfeições. Por exemplo, os botões não são simétricos ou as etiquetas estão incorretas. De acordo com os regulamentos, essas roupas deveriam ser todas destruídas, mas há algumas pessoas nas fábricas de roupas que contrabandeiam essas mercadorias defeituosas para vendê-las. As mercadorias rejeitadas têm quatro vantagens: uma, são baratas; duas, são do estilo mais novo; três, têm boa qualidade; e quatro, são de marca. Por isso, são boas para vender em mercados de baixo custo.",
+    "tokens": [
+      "A:",
+      "쉿",
+      "!",
+      "장",
+      "형님이",
+      "하신",
+      "말씀이",
+      "맞습니다",
+      ".",
+      "이건",
+      "실제로",
+      "반품된",
+      "상품입니다",
+      ".",
+      "자세히",
+      "보지",
+      "않으면",
+      "차이가",
+      "보이지",
+      "않습니다",
+      ".",
+      "반품된",
+      "상품은",
+      "원단",
+      ",",
+      "디자인",
+      ",",
+      "재봉",
+      "면에서",
+      "정품과",
+      "동일합니다",
+      ".",
+      "하지만",
+      "작은",
+      "결함이",
+      "하나씩",
+      "있습니다",
+      ".",
+      "예를",
+      "들어",
+      "단추가",
+      "대칭이",
+      "아니거나",
+      "라벨이",
+      "잘못",
+      "붙은",
+      "경우입니다",
+      ".",
+      "규정에",
+      "따르면",
+      "이",
+      "옷들은",
+      "모두",
+      "폐기해야",
+      "하지만",
+      ",",
+      "의류",
+      "공장",
+      "내부자들이",
+      "이런",
+      "불량품을",
+      "몰래",
+      "빼내",
+      "팔고",
+      "있습니다",
+      ".",
+      "반품",
+      "상품은",
+      "장점이",
+      "네",
+      "가지입니다",
+      ".",
+      "첫째",
+      ",",
+      "저렴합니다",
+      ".",
+      "둘째",
+      ",",
+      "최신",
+      "스타일입니다",
+      ".",
+      "셋째",
+      ",",
+      "품질이",
+      "좋습니다",
+      ".",
+      "넷째",
+      ",",
+      "브랜드",
+      "제품입니다",
+      ".",
+      "그래서",
+      "저가",
+      "시장에서",
+      "팔기",
+      "좋습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "반품된 상품",
+        "pinyin": "",
+        "meaning": "mercadoria rejeitada"
+      },
+      {
+        "id": 2,
+        "word": "정품",
+        "pinyin": "",
+        "meaning": "genuíno"
+      },
+      {
+        "id": 3,
+        "word": "원단",
+        "pinyin": "",
+        "meaning": "tecido/material"
+      },
+      {
+        "id": 4,
+        "word": "결함",
+        "pinyin": "",
+        "meaning": "defeito/imperfeição"
+      },
+      {
+        "id": 5,
+        "word": "폐기",
+        "pinyin": "",
+        "meaning": "destruição"
+      },
+      {
+        "id": 6,
+        "word": "브랜드",
+        "pinyin": "",
+        "meaning": "marca"
+      },
+      {
+        "id": 7,
+        "word": "저가 시장",
+        "pinyin": "",
+        "meaning": "mercado de baixo custo"
+      }
+    ],
+    "id": "local-1780230976035-12",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 대단한 용기야!",
+    "pinyin": "",
+    "translation": "B: Você tem muita coragem!",
+    "tokens": [
+      "B:",
+      "대단한",
+      "용기야",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "대단한",
+        "pinyin": "",
+        "meaning": "extraordinário"
+      },
+      {
+        "id": 2,
+        "word": "용기",
+        "pinyin": "",
+        "meaning": "coragem"
+      },
+      {
+        "id": 3,
+        "word": "야",
+        "pinyin": "",
+        "meaning": "interjeição enfática"
+      }
+    ],
+    "id": "local-1780230976035-13",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 여보, 이거 입어봤어? 어떻게 보여?",
+    "pinyin": "",
+    "translation": "C: Querido, olhe, como eu fico com isso?",
+    "tokens": [
+      "C:",
+      "여보",
+      ",",
+      "이거",
+      "입어봤어",
+      "?",
+      "어떻게",
+      "보여",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "여보",
+        "pinyin": "",
+        "meaning": "querido/a"
+      },
+      {
+        "id": 2,
+        "word": "이거",
+        "pinyin": "",
+        "meaning": "isso"
+      },
+      {
+        "id": 3,
+        "word": "입어봤어",
+        "pinyin": "",
+        "meaning": "experimentou"
+      },
+      {
+        "id": 4,
+        "word": "어떻게",
+        "pinyin": "",
+        "meaning": "como"
+      },
+      {
+        "id": 5,
+        "word": "보여",
+        "pinyin": "",
+        "meaning": "parece"
+      }
+    ],
+    "id": "local-1780230976035-14",
+    "language": "Coreano"
+  }
+]

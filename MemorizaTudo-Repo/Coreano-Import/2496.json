@@ -1,0 +1,719 @@
+[
+  {
+    "chinese": "A: 모두 다 모였네요! 제 동료 톰을 소개해 드릴게요. 중국어가 정말 훌륭하거든요. 이미 HSK 6급을 합격했고, 번역 경력도 꽤 됩니다.",
+    "pinyin": "",
+    "translation": "A: Todos estão presentes! Deixem-me apresentar meu colega Tom. O chinês dele é super incrível. Ele já passou no nível 6 do HSK! E ele já tem uma experiência considerável traduzindo.",
+    "tokens": [
+      "A:",
+      "모두",
+      "다",
+      "모였네요",
+      "!",
+      "제",
+      "동료",
+      "톰을",
+      "소개해",
+      "드릴게요",
+      ".",
+      "중국어가",
+      "정말",
+      "훌륭하거든요",
+      ".",
+      "이미",
+      "HSK",
+      "6",
+      "급을",
+      "합격했고",
+      ",",
+      "번역",
+      "경력도",
+      "꽤",
+      "됩니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "모두",
+        "pinyin": "",
+        "meaning": "todos"
+      },
+      {
+        "id": 2,
+        "word": "동료",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 3,
+        "word": "중국어가",
+        "pinyin": "",
+        "meaning": "chinês (língua)"
+      },
+      {
+        "id": 4,
+        "word": "훌륭하거든요",
+        "pinyin": "",
+        "meaning": "é excelente/incrível"
+      },
+      {
+        "id": 5,
+        "word": "합격했고",
+        "pinyin": "",
+        "meaning": "passou (em exame)"
+      },
+      {
+        "id": 6,
+        "word": "번역",
+        "pinyin": "",
+        "meaning": "tradução"
+      }
+    ],
+    "id": "local-1780233687856-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 정말 멋지네요! 공부 비결을 공유해 주세요. 저는 새로운 단어를 절대 기억하지 못해요. 한 가지를 공부하고 나면 다른 것은 잊어버려요. 3~4년 동안 공부했지만, 말을 하기 전에 꽤 오랫동안 생각해야 해요. 실수를 하거나 발음이 정확하지 않으면 다른 사람들이 저를 비웃을까 봐 두려워요.",
+    "pinyin": "",
+    "translation": "B: Muito legal! Compartilhe conosco seus segredos de estudo! Eu nunca consigo lembrar de palavras novas. Assim que termino de estudar uma coisa, esqueço a outra. Já estudei por três ou quatro anos e antes de dizer algo ainda tenho que pensar por um bom tempo. Tenho medo de que, se cometer um erro ou se meus tons não estiverem corretos, os outros rirão de mim.",
+    "tokens": [
+      "B:",
+      "정말",
+      "멋지네요",
+      "!",
+      "공부",
+      "비결을",
+      "공유해",
+      "주세요",
+      ".",
+      "저는",
+      "새로운",
+      "단어를",
+      "절대",
+      "기억하지",
+      "못해요",
+      ".",
+      "한",
+      "가지를",
+      "공부하고",
+      "나면",
+      "다른",
+      "것은",
+      "잊어버려요",
+      ".",
+      "3",
+      "~",
+      "4",
+      "년",
+      "동안",
+      "공부했지만",
+      ",",
+      "말을",
+      "하기",
+      "전에",
+      "꽤",
+      "오랫동안",
+      "생각해야",
+      "해요",
+      ".",
+      "실수를",
+      "하거나",
+      "발음이",
+      "정확하지",
+      "않으면",
+      "다른",
+      "사람들이",
+      "저를",
+      "비웃을까",
+      "봐",
+      "두려워요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "공부 비결",
+        "pinyin": "",
+        "meaning": "segredo de estudo"
+      },
+      {
+        "id": 2,
+        "word": "새로운 단어",
+        "pinyin": "",
+        "meaning": "palavra nova"
+      },
+      {
+        "id": 3,
+        "word": "기억하지 못해요",
+        "pinyin": "",
+        "meaning": "não consigo lembrar"
+      },
+      {
+        "id": 4,
+        "word": "잊어버려요",
+        "pinyin": "",
+        "meaning": "esqueço"
+      },
+      {
+        "id": 5,
+        "word": "생각해야 해요",
+        "pinyin": "",
+        "meaning": "tenho que pensar"
+      },
+      {
+        "id": 6,
+        "word": "실수",
+        "pinyin": "",
+        "meaning": "erro"
+      },
+      {
+        "id": 7,
+        "word": "발음",
+        "pinyin": "",
+        "meaning": "pronúncia"
+      },
+      {
+        "id": 8,
+        "word": "두려워요",
+        "pinyin": "",
+        "meaning": "tenho medo"
+      }
+    ],
+    "id": "local-1780233687856-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 요즘 제 중국어 실력이 정체된 것 같아서 학습 정체기에 도달한 것 같습니다. 어떻게 이 벽을 넘을지 모르니 정말 답답하네요!",
+    "pinyin": "",
+    "translation": "C: Parece que agora cheguei a um platô de aprendizado. Ultimamente sinto sempre que meu nível de chinês está estagnado e não sei como superar esse gargalo. É muito deprimente!",
+    "tokens": [
+      "C:",
+      "요즘",
+      "제",
+      "중국어",
+      "실력이",
+      "정체된",
+      "것",
+      "같아서",
+      "학습",
+      "정체기에",
+      "도달한",
+      "것",
+      "같습니다",
+      ".",
+      "어떻게",
+      "이",
+      "벽을",
+      "넘을지",
+      "모르니",
+      "정말",
+      "답답하네요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "정체기",
+        "pinyin": "",
+        "meaning": "platô de aprendizado"
+      },
+      {
+        "id": 2,
+        "word": "정체된",
+        "pinyin": "",
+        "meaning": "estagnado"
+      },
+      {
+        "id": 3,
+        "word": "벽",
+        "pinyin": "",
+        "meaning": "barreira/gargalo"
+      },
+      {
+        "id": 4,
+        "word": "답답하네요",
+        "pinyin": "",
+        "meaning": "depressivo/frustrante"
+      },
+      {
+        "id": 5,
+        "word": "실력",
+        "pinyin": "",
+        "meaning": "nível/habilidade"
+      }
+    ],
+    "id": "local-1780233687856-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 저는 중국어 한자를 쓰는 것을 좋아하지만, 항상 획 순서를 잊고 삐뚤빼뚤 쓰게 돼요. 정말 걱정돼요!",
+    "pinyin": "",
+    "translation": "A: Eu gosto de escrever caracteres chineses, mas sempre esqueço a ordem dos traços e os escrevo tortos. Isso me preocupa muito!",
+    "tokens": [
+      "A:",
+      "저는",
+      "중국어",
+      "한자를",
+      "쓰는",
+      "것을",
+      "좋아하지만",
+      ",",
+      "항상",
+      "획",
+      "순서를",
+      "잊고",
+      "삐뚤빼뚤",
+      "쓰게",
+      "돼요",
+      ".",
+      "정말",
+      "걱정돼요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "중국어",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 2,
+        "word": "한자",
+        "pinyin": "",
+        "meaning": "caracteres chineses"
+      },
+      {
+        "id": 3,
+        "word": "쓰는",
+        "pinyin": "",
+        "meaning": "escrever"
+      },
+      {
+        "id": 4,
+        "word": "좋아하지만",
+        "pinyin": "",
+        "meaning": "gosto, mas"
+      },
+      {
+        "id": 5,
+        "word": "획 순서",
+        "pinyin": "",
+        "meaning": "ordem dos traços"
+      },
+      {
+        "id": 6,
+        "word": "잊고",
+        "pinyin": "",
+        "meaning": "esqueço"
+      },
+      {
+        "id": 7,
+        "word": "삐뚤빼뚤",
+        "pinyin": "",
+        "meaning": "torto/irregular"
+      },
+      {
+        "id": 8,
+        "word": "걱정돼요",
+        "pinyin": "",
+        "meaning": "preocupa"
+      }
+    ],
+    "id": "local-1780233687856-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "D: 개인적으로 언어를 배우는 데는 지름길이 없다고 생각합니다. 이는 주로 더 많은 시간과 노력을 들여 공부할 의지가 있는지 여부에 달려 있습니다. 어떤 사람들은 일이 너무 바빠서 공부할 충분한 시간을 낼 수 없다고 말할 수도 있습니다. 하지만 실제로는 틈틈이 시간을 내어 새로운 단어를 암기하고 한자를 쓸 수 있습니다.",
+    "pinyin": "",
+    "translation": "D: Pessoalmente, acho que não há atalhos para aprender um idioma. Isso depende principalmente de você estar disposto a dedicar mais tempo e esforço aos estudos. Algumas pessoas podem dizer que estão realmente muito ocupadas com o trabalho e não conseguem encontrar um bloco grande de tempo para estudar. Mas na verdade, posso usar os tempos livres aqui e ali para memorizar novas palavras e escrever caracteres.",
+    "tokens": [
+      "D:",
+      "개인적으로",
+      "언어를",
+      "배우는",
+      "데는",
+      "지름길이",
+      "없다고",
+      "생각합니다",
+      ".",
+      "이는",
+      "주로",
+      "더",
+      "많은",
+      "시간과",
+      "노력을",
+      "들여",
+      "공부할",
+      "의지가",
+      "있는지",
+      "여부에",
+      "달려",
+      "있습니다",
+      ".",
+      "어떤",
+      "사람들은",
+      "일이",
+      "너무",
+      "바빠서",
+      "공부할",
+      "충분한",
+      "시간을",
+      "낼",
+      "수",
+      "없다고",
+      "말할",
+      "수도",
+      "있습니다",
+      ".",
+      "하지만",
+      "실제로는",
+      "틈틈이",
+      "시간을",
+      "내어",
+      "새로운",
+      "단어를",
+      "암기하고",
+      "한자를",
+      "쓸",
+      "수",
+      "있습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "지름길",
+        "pinyin": "",
+        "meaning": "atalho"
+      },
+      {
+        "id": 2,
+        "word": "의지",
+        "pinyin": "",
+        "meaning": "vontade"
+      },
+      {
+        "id": 3,
+        "word": "충분한",
+        "pinyin": "",
+        "meaning": "suficiente"
+      },
+      {
+        "id": 4,
+        "word": "틈틈이",
+        "pinyin": "",
+        "meaning": "nos tempos livres"
+      },
+      {
+        "id": 5,
+        "word": "암기",
+        "pinyin": "",
+        "meaning": "memorização"
+      },
+      {
+        "id": 6,
+        "word": "한자",
+        "pinyin": "",
+        "meaning": "caracteres chineses"
+      }
+    ],
+    "id": "local-1780233687856-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 우리가 실제로 충분히 끈기 있게 행동하지 않는 것 같습니다. 우리는 항상 시간이 없다는 변명을 합니다!",
+    "pinyin": "",
+    "translation": "B: Parece que na verdade não somos persistentes o suficiente. Sempre usamos a desculpa de que não temos tempo!",
+    "tokens": [
+      "B:",
+      "우리가",
+      "실제로",
+      "충분히",
+      "끈기",
+      "있게",
+      "행동하지",
+      "않는",
+      "것",
+      "같습니다",
+      ".",
+      "우리는",
+      "항상",
+      "시간이",
+      "없다는",
+      "변명을",
+      "합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "실제로",
+        "pinyin": "",
+        "meaning": "na verdade"
+      },
+      {
+        "id": 2,
+        "word": "충분히",
+        "pinyin": "",
+        "meaning": "suficientemente"
+      },
+      {
+        "id": 3,
+        "word": "끈기",
+        "pinyin": "",
+        "meaning": "persistência"
+      },
+      {
+        "id": 4,
+        "word": "변명",
+        "pinyin": "",
+        "meaning": "desculpa"
+      },
+      {
+        "id": 5,
+        "word": "시간",
+        "pinyin": "",
+        "meaning": "tempo"
+      }
+    ],
+    "id": "local-1780233687856-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "D: 말하기와 관련하여 언어 환경이 없을 때는 혼자 말해보는 것도 중국어로 생각하는 습관을 기르는 데 도움이 됩니다. 언어 학습의 목적은 소통이므로, 틀릴까 봐 두려워하지 말고 용기 내어 말해야 합니다. 실수를 할수록 실력이 더 빨리 향상됩니다.",
+    "pinyin": "",
+    "translation": "D: Quanto a 'falar', quando não temos o ambiente linguístico, podemos falar conosco mesmos, e isso nos ajudaria a desenvolver o hábito de pensar em chinês. Estudar um idioma tem como objetivo a interação, então você deve falar com ousadia e não ter medo de dizer algo incorretamente. Quanto mais erros cometemos, mais rápido será nosso progresso.",
+    "tokens": [
+      "D:",
+      "말하기와",
+      "관련하여",
+      "언어",
+      "환경이",
+      "없을",
+      "때는",
+      "혼자",
+      "말해보는",
+      "것도",
+      "중국어로",
+      "생각하는",
+      "습관을",
+      "기르는",
+      "데",
+      "도움이",
+      "됩니다",
+      ".",
+      "언어",
+      "학습의",
+      "목적은",
+      "소통이므로",
+      ",",
+      "틀릴까",
+      "봐",
+      "두려워하지",
+      "말고",
+      "용기",
+      "내어",
+      "말해야",
+      "합니다",
+      ".",
+      "실수를",
+      "할수록",
+      "실력이",
+      "더",
+      "빨리",
+      "향상됩니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "말하기",
+        "pinyin": "",
+        "meaning": "falar"
+      },
+      {
+        "id": 2,
+        "word": "언어 환경",
+        "pinyin": "",
+        "meaning": "ambiente linguístico"
+      },
+      {
+        "id": 3,
+        "word": "혼자 말해보는",
+        "pinyin": "",
+        "meaning": "falar sozinho"
+      },
+      {
+        "id": 4,
+        "word": "중국어로 생각하는",
+        "pinyin": "",
+        "meaning": "pensar em chinês"
+      },
+      {
+        "id": 5,
+        "word": "소통",
+        "pinyin": "",
+        "meaning": "comunicação/interação"
+      },
+      {
+        "id": 6,
+        "word": "용기 내어",
+        "pinyin": "",
+        "meaning": "com coragem/ousadia"
+      },
+      {
+        "id": 7,
+        "word": "실수",
+        "pinyin": "",
+        "meaning": "erro"
+      },
+      {
+        "id": 8,
+        "word": "향상됩니다",
+        "pinyin": "",
+        "meaning": "melhora/avança"
+      }
+    ],
+    "id": "local-1780233687856-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "C: 음! 우리는 과감하게 목소리를 내야 합니다!",
+    "pinyin": "",
+    "translation": "C: Hm! Precisamos falar com ousadia!",
+    "tokens": [
+      "C:",
+      "음",
+      "!",
+      "우리는",
+      "과감하게",
+      "목소리를",
+      "내야",
+      "합니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "음",
+        "pinyin": "",
+        "meaning": "interjeição de concordância ou pensamento"
+      },
+      {
+        "id": 2,
+        "word": "과감하게",
+        "pinyin": "",
+        "meaning": "com ousadia, corajosamente"
+      },
+      {
+        "id": 3,
+        "word": "우리는",
+        "pinyin": "",
+        "meaning": "nós"
+      }
+    ],
+    "id": "local-1780233687856-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 그럼 공부 계획을 세우고 서로 챙기자!",
+    "pinyin": "",
+    "translation": "A: Então vamos elaborar um plano de estudos e ficar de olho um no outro!",
+    "tokens": [
+      "A:",
+      "그럼",
+      "공부",
+      "계획을",
+      "세우고",
+      "서로",
+      "챙기자",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "공부",
+        "pinyin": "",
+        "meaning": "estudo"
+      },
+      {
+        "id": 2,
+        "word": "계획",
+        "pinyin": "",
+        "meaning": "plano"
+      },
+      {
+        "id": 3,
+        "word": "서로",
+        "pinyin": "",
+        "meaning": "um ao outro/mútuo"
+      }
+    ],
+    "id": "local-1780233687856-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "D: 샤워할 때 혼자 중국어로 중얼거리는 변호사 친구가 있어요. '인내심은 성공을 낳는다'는 말이 있죠. 모두 함께 계속 나아가요!",
+    "pinyin": "",
+    "translation": "D: Tenho um amigo advogado que frequentemente fala chinês sozinho enquanto toma banho! Existe uma expressão: 'A perseverança leva ao sucesso'. Vamos todos continuar juntos!",
+    "tokens": [
+      "D:",
+      "샤워할",
+      "때",
+      "혼자",
+      "중국어로",
+      "중얼거리는",
+      "변호사",
+      "친구가",
+      "있어요",
+      ".",
+      "'",
+      "인내심은",
+      "성공을",
+      "낳는다'는",
+      "말이",
+      "있죠",
+      ".",
+      "모두",
+      "함께",
+      "계속",
+      "나아가요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "샤워할 때",
+        "pinyin": "",
+        "meaning": "enquanto toma banho"
+      },
+      {
+        "id": 2,
+        "word": "중국어",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 3,
+        "word": "중얼거리는",
+        "pinyin": "",
+        "meaning": "murmurando/falando sozinho"
+      },
+      {
+        "id": 4,
+        "word": "인내심",
+        "pinyin": "",
+        "meaning": "perseverança/paciência"
+      },
+      {
+        "id": 5,
+        "word": "성공",
+        "pinyin": "",
+        "meaning": "sucesso"
+      }
+    ],
+    "id": "local-1780233687856-9",
+    "language": "Coreano"
+  }
+]

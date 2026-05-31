@@ -1,0 +1,882 @@
+[
+  {
+    "chinese": "A: Quiero presentar mi renuncia.",
+    "pinyin": "",
+    "translation": "A: Quero apresentar minha renúncia.",
+    "tokens": [
+      "A:",
+      "Quiero",
+      "presentar",
+      "mi",
+      "renuncia",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "renuncia",
+        "pinyin": "",
+        "meaning": "demissão"
+      },
+      {
+        "id": 2,
+        "word": "presentar",
+        "pinyin": "",
+        "meaning": "apresentar"
+      }
+    ],
+    "id": "local-1780235925598-0",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: ¿Qué? ¿Por qué de repente quieres renunciar?",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer renunciar de repente?",
+    "tokens": [
+      "B:",
+      "¿",
+      "Qué",
+      "?",
+      "¿",
+      "Por",
+      "qué",
+      "de",
+      "repente",
+      "quieres",
+      "renunciar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "renunciar",
+        "pinyin": "",
+        "meaning": "renunciar"
+      },
+      {
+        "id": 2,
+        "word": "de repente",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "¿Qué?",
+        "pinyin": "",
+        "meaning": "O quê?"
+      },
+      {
+        "id": 4,
+        "word": "¿Por qué",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 5,
+        "word": "quieres",
+        "pinyin": "",
+        "meaning": "você quer"
+      }
+    ],
+    "id": "local-1780235925598-1",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Por qué, los ingresos mensuales son tan bajos. Además, el entorno laboral tampoco es bueno. Todos los días solo hago pequeñas tareas insignificantes y no hay sensación de logro. Esto está demasiado lejos de lo que esperaba.",
+    "pinyin": "",
+    "translation": "A: Por que, a renda mensal é tão baixa. Além disso, o ambiente de trabalho também não é bom. Todo dia eu apenas faço pequenas tarefas insignificantes e não há sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "Por",
+      "qué",
+      ",",
+      "los",
+      "ingresos",
+      "mensuales",
+      "son",
+      "tan",
+      "bajos",
+      ".",
+      "Además",
+      ",",
+      "el",
+      "entorno",
+      "laboral",
+      "tampoco",
+      "es",
+      "bueno",
+      ".",
+      "Todos",
+      "los",
+      "días",
+      "solo",
+      "hago",
+      "pequeñas",
+      "tareas",
+      "insignificantes",
+      "y",
+      "no",
+      "hay",
+      "sensación",
+      "de",
+      "logro",
+      ".",
+      "Esto",
+      "está",
+      "demasiado",
+      "lejos",
+      "de",
+      "lo",
+      "que",
+      "esperaba",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ingresos mensuales",
+        "pinyin": "",
+        "meaning": "renda mensal"
+      },
+      {
+        "id": 2,
+        "word": "entorno laboral",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "tareas insignificantes",
+        "pinyin": "",
+        "meaning": "tarefas insignificantes"
+      },
+      {
+        "id": 4,
+        "word": "sensación de logro",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 5,
+        "word": "demasiado lejos",
+        "pinyin": "",
+        "meaning": "muito longe"
+      }
+    ],
+    "id": "local-1780235925598-2",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Hoy en día, ¿dónde puedes encontrar un trabajo que sea exactamente lo que deseas? No deberías tener estándares altos que tus habilidades no puedan cumplir.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deveria ter padrões altos que suas habilidades não possam corresponder.",
+    "tokens": [
+      "B:",
+      "Hoy",
+      "en",
+      "día",
+      ",",
+      "¿",
+      "dónde",
+      "puedes",
+      "encontrar",
+      "un",
+      "trabajo",
+      "que",
+      "sea",
+      "exactamente",
+      "lo",
+      "que",
+      "deseas",
+      "?",
+      "No",
+      "deberías",
+      "tener",
+      "estándares",
+      "altos",
+      "que",
+      "tus",
+      "habilidades",
+      "no",
+      "puedan",
+      "cumplir",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hoy en día",
+        "pinyin": "",
+        "meaning": "Hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "trabajo",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "exactamente",
+        "pinyin": "",
+        "meaning": "exatamente"
+      },
+      {
+        "id": 4,
+        "word": "estándares",
+        "pinyin": "",
+        "meaning": "padrões"
+      },
+      {
+        "id": 5,
+        "word": "habilidades",
+        "pinyin": "",
+        "meaning": "habilidades"
+      },
+      {
+        "id": 6,
+        "word": "cumplir",
+        "pinyin": "",
+        "meaning": "cumprir"
+      }
+    ],
+    "id": "local-1780235925598-3",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: La clave es que no he valorado mi propio mérito, y ahora todos mis colegas a mi alrededor tienen buenos contactos. Y no sé si solo en un futuro lejano me tocará a mí ser promovido.",
+    "pinyin": "",
+    "translation": "A: O ponto é que não reconheci meu próprio valor, e agora todos os meus colegas ao meu redor têm bons contatos. E não sei se só no futuro distante será minha vez de ser promovido.",
+    "tokens": [
+      "A:",
+      "La",
+      "clave",
+      "es",
+      "que",
+      "no",
+      "he",
+      "valorado",
+      "mi",
+      "propio",
+      "mérito",
+      ",",
+      "y",
+      "ahora",
+      "todos",
+      "mis",
+      "colegas",
+      "a",
+      "mi",
+      "alrededor",
+      "tienen",
+      "buenos",
+      "contactos",
+      ".",
+      "Y",
+      "no",
+      "sé",
+      "si",
+      "solo",
+      "en",
+      "un",
+      "futuro",
+      "lejano",
+      "me",
+      "tocará",
+      "a",
+      "mí",
+      "ser",
+      "promovido",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "mérito",
+        "pinyin": "",
+        "meaning": "mérito, valia"
+      },
+      {
+        "id": 2,
+        "word": "contactos",
+        "pinyin": "",
+        "meaning": "contatos, relacionamentos"
+      },
+      {
+        "id": 3,
+        "word": "promovido",
+        "pinyin": "",
+        "meaning": "promovido, ascendido"
+      },
+      {
+        "id": 4,
+        "word": "clave",
+        "pinyin": "",
+        "meaning": "chave, ponto central"
+      },
+      {
+        "id": 5,
+        "word": "futuro lejano",
+        "pinyin": "",
+        "meaning": "futuro distante"
+      }
+    ],
+    "id": "local-1780235925598-4",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Bien. ¿Entonces has pensado en qué tipo de trabajo quieres cambiar?",
+    "pinyin": "",
+    "translation": "B: Certo. Então você já pensou em que tipo de trabalho quer mudar?",
+    "tokens": [
+      "B:",
+      "Bien",
+      ".",
+      "¿",
+      "Entonces",
+      "has",
+      "pensado",
+      "en",
+      "qué",
+      "tipo",
+      "de",
+      "trabajo",
+      "quieres",
+      "cambiar",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bien",
+        "pinyin": "",
+        "meaning": "Bem"
+      },
+      {
+        "id": 2,
+        "word": "cambiar",
+        "pinyin": "",
+        "meaning": "mudar"
+      },
+      {
+        "id": 3,
+        "word": "trabajo",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 4,
+        "word": "tipo",
+        "pinyin": "",
+        "meaning": "tipo"
+      },
+      {
+        "id": 5,
+        "word": "pensado",
+        "pinyin": "",
+        "meaning": "pensado"
+      }
+    ],
+    "id": "local-1780235925598-5",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: ¿No trabajas en una agencia de reclutamiento? Tus contactos deben ser más amplios que los míos. ¿Podrías darme una recomendación? Sabes que mi especialidad en la universidad fue diseño publicitario. Fue solo el resultado de una serie de circunstancias extrañas que me convertí en editor. ¿Puedes ayudarme a buscar algunas empresas de publicidad?",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia me dar uma recomendação? Você sabe que minha graduação na universidade foi em design publicitário. Foi apenas o resultado de uma série de circunstâncias estranhas que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "¿",
+      "No",
+      "trabajas",
+      "en",
+      "una",
+      "agencia",
+      "de",
+      "reclutamiento",
+      "?",
+      "Tus",
+      "contactos",
+      "deben",
+      "ser",
+      "más",
+      "amplios",
+      "que",
+      "los",
+      "míos",
+      ".",
+      "¿",
+      "Podrías",
+      "darme",
+      "una",
+      "recomendación",
+      "?",
+      "Sabes",
+      "que",
+      "mi",
+      "especialidad",
+      "en",
+      "la",
+      "universidad",
+      "fue",
+      "diseño",
+      "publicitario",
+      ".",
+      "Fue",
+      "solo",
+      "el",
+      "resultado",
+      "de",
+      "una",
+      "serie",
+      "de",
+      "circunstancias",
+      "extrañas",
+      "que",
+      "me",
+      "convertí",
+      "en",
+      "editor",
+      ".",
+      "¿",
+      "Puedes",
+      "ayudarme",
+      "a",
+      "buscar",
+      "algunas",
+      "empresas",
+      "de",
+      "publicidad",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "agencia de reclutamiento",
+        "pinyin": "",
+        "meaning": "agência de recrutamento"
+      },
+      {
+        "id": 2,
+        "word": "contactos",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 3,
+        "word": "recomendación",
+        "pinyin": "",
+        "meaning": "recomendação"
+      },
+      {
+        "id": 4,
+        "word": "diseño publicitario",
+        "pinyin": "",
+        "meaning": "design publicitário"
+      },
+      {
+        "id": 5,
+        "word": "editor",
+        "pinyin": "",
+        "meaning": "editor"
+      },
+      {
+        "id": 6,
+        "word": "empresas de publicidad",
+        "pinyin": "",
+        "meaning": "empresas de publicidade"
+      }
+    ],
+    "id": "local-1780235925598-6",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Es un poco difícil. Los requisitos de las empresas publicitarias reconocidas son altos. Ninguna empresa publicitaria reputada podría no proporcionar la compensación que usted desea.",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos das empresas de publicidade conhecidas são altos. Nenhuma empresa de publicidade reputada seria incapaz de fornecer a compensação que você deseja.",
+    "tokens": [
+      "B:",
+      "Es",
+      "un",
+      "poco",
+      "difícil",
+      ".",
+      "Los",
+      "requisitos",
+      "de",
+      "las",
+      "empresas",
+      "publicitarias",
+      "reconocidas",
+      "son",
+      "altos",
+      ".",
+      "Ninguna",
+      "empresa",
+      "publicitaria",
+      "reputada",
+      "podría",
+      "no",
+      "proporcionar",
+      "la",
+      "compensación",
+      "que",
+      "usted",
+      "desea",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "difícil",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "requisitos",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 3,
+        "word": "publicitarias",
+        "pinyin": "",
+        "meaning": "de publicidade"
+      },
+      {
+        "id": 4,
+        "word": "reconocidas",
+        "pinyin": "",
+        "meaning": "conhecidas"
+      },
+      {
+        "id": 5,
+        "word": "reputada",
+        "pinyin": "",
+        "meaning": "reputada"
+      },
+      {
+        "id": 6,
+        "word": "compensación",
+        "pinyin": "",
+        "meaning": "compensação"
+      }
+    ],
+    "id": "local-1780235925598-7",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Es cierto. ¿Qué opinas de que empiece un negocio? Dicen que los requisitos para el sector de la publicidad son muy bajos. Solo necesitas alquilar un local, comprar unas cuantas computadoras y ya puedes empezar a hacer negocios. Por casualidad, tengo a mano unos cientos de miles que podrían ser el capital inicial.",
+    "pinyin": "",
+    "translation": "A: É verdade. O que você acha de eu começar um negócio? Dizem que os requisitos para o setor de publicidade são muito baixos. Você só precisa alugar um local, comprar alguns computadores e já pode começar a fazer negócios. Por acaso, tenho à mão algumas centenas de milhares que poderiam ser o capital inicial.",
+    "tokens": [
+      "A:",
+      "Es",
+      "cierto",
+      ".",
+      "¿",
+      "Qué",
+      "opinas",
+      "de",
+      "que",
+      "empiece",
+      "un",
+      "negocio",
+      "?",
+      "Dicen",
+      "que",
+      "los",
+      "requisitos",
+      "para",
+      "el",
+      "sector",
+      "de",
+      "la",
+      "publicidad",
+      "son",
+      "muy",
+      "bajos",
+      ".",
+      "Solo",
+      "necesitas",
+      "alquilar",
+      "un",
+      "local",
+      ",",
+      "comprar",
+      "unas",
+      "cuantas",
+      "computadoras",
+      "y",
+      "ya",
+      "puedes",
+      "empezar",
+      "a",
+      "hacer",
+      "negocios",
+      ".",
+      "Por",
+      "casualidad",
+      ",",
+      "tengo",
+      "a",
+      "mano",
+      "unos",
+      "cientos",
+      "de",
+      "miles",
+      "que",
+      "podrían",
+      "ser",
+      "el",
+      "capital",
+      "inicial",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "publicidad",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 2,
+        "word": "capital inicial",
+        "pinyin": "",
+        "meaning": "capital inicial"
+      },
+      {
+        "id": 3,
+        "word": "local",
+        "pinyin": "",
+        "meaning": "local"
+      },
+      {
+        "id": 4,
+        "word": "computadoras",
+        "pinyin": "",
+        "meaning": "computadores"
+      },
+      {
+        "id": 5,
+        "word": "negocio",
+        "pinyin": "",
+        "meaning": "negócio"
+      }
+    ],
+    "id": "local-1780235925598-8",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Iniciar tu propio negocio es en realidad una buena idea. Pero necesitas encontrar un socio y luego pensar en una manera de atraer clientes. Esto no es muy fácil; además de paciencia, también necesitas la fuerza competitiva clave: la creatividad.",
+    "pinyin": "",
+    "translation": "B: Iniciar seu próprio negócio é na verdade uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "Iniciar",
+      "tu",
+      "propio",
+      "negocio",
+      "es",
+      "en",
+      "realidad",
+      "una",
+      "buena",
+      "idea",
+      ".",
+      "Pero",
+      "necesitas",
+      "encontrar",
+      "un",
+      "socio",
+      "y",
+      "luego",
+      "pensar",
+      "en",
+      "una",
+      "manera",
+      "de",
+      "atraer",
+      "clientes",
+      ".",
+      "Esto",
+      "no",
+      "es",
+      "muy",
+      "fácil",
+      ";",
+      "además",
+      "de",
+      "paciencia",
+      ",",
+      "también",
+      "necesitas",
+      "la",
+      "fuerza",
+      "competitiva",
+      "clave",
+      ":",
+      "la",
+      "creatividad",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "socio",
+        "pinyin": "",
+        "meaning": "sócio"
+      },
+      {
+        "id": 2,
+        "word": "atraer",
+        "pinyin": "",
+        "meaning": "atrair"
+      },
+      {
+        "id": 3,
+        "word": "paciencia",
+        "pinyin": "",
+        "meaning": "paciência"
+      },
+      {
+        "id": 4,
+        "word": "fuerza competitiva",
+        "pinyin": "",
+        "meaning": "força competitiva"
+      },
+      {
+        "id": 5,
+        "word": "creatividad",
+        "pinyin": "",
+        "meaning": "criatividade"
+      }
+    ],
+    "id": "local-1780235925598-9",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "A: Mm, lo sé. Planeo reunir a algunos antiguos compañeros de clase para trabajar conmigo. La publicidad es algo en lo que estoy totalmente interesado, así que no lo dejaré fácilmente.",
+    "pinyin": "",
+    "translation": "A: Mm, eu sei. Planejo reunir alguns antigos colegas de classe para trabalhar comigo. Publicidade é algo em que estou totalmente interessado, então não vou desistir facilmente.",
+    "tokens": [
+      "A:",
+      "Mm",
+      ",",
+      "lo",
+      "sé",
+      ".",
+      "Planeo",
+      "reunir",
+      "a",
+      "algunos",
+      "antiguos",
+      "compañeros",
+      "de",
+      "clase",
+      "para",
+      "trabajar",
+      "conmigo",
+      ".",
+      "La",
+      "publicidad",
+      "es",
+      "algo",
+      "en",
+      "lo",
+      "que",
+      "estoy",
+      "totalmente",
+      "interesado",
+      ",",
+      "así",
+      "que",
+      "no",
+      "lo",
+      "dejaré",
+      "fácilmente",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "antiguos",
+        "pinyin": "",
+        "meaning": "antigos"
+      },
+      {
+        "id": 2,
+        "word": "compañeros",
+        "pinyin": "",
+        "meaning": "companheiros"
+      },
+      {
+        "id": 3,
+        "word": "publicidad",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 4,
+        "word": "totalmente",
+        "pinyin": "",
+        "meaning": "totalmente"
+      },
+      {
+        "id": 5,
+        "word": "fácilmente",
+        "pinyin": "",
+        "meaning": "facilmente"
+      }
+    ],
+    "id": "local-1780235925598-10",
+    "language": "Espanhol"
+  },
+  {
+    "chinese": "B: Mm, entonces te deseo éxito de antemano.",
+    "pinyin": "",
+    "translation": "B: Mm, então te desejo sucesso de antemão!",
+    "tokens": [
+      "B:",
+      "Mm",
+      ",",
+      "entonces",
+      "te",
+      "deseo",
+      "éxito",
+      "de",
+      "antemano",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "entonces",
+        "pinyin": "",
+        "meaning": "então"
+      },
+      {
+        "id": 2,
+        "word": "deseo",
+        "pinyin": "",
+        "meaning": "desejo"
+      },
+      {
+        "id": 3,
+        "word": "éxito",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 4,
+        "word": "de antemano",
+        "pinyin": "",
+        "meaning": "de antemão"
+      }
+    ],
+    "id": "local-1780235925598-11",
+    "language": "Espanhol"
+  }
+]

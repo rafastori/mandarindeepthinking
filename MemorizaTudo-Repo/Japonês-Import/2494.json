@@ -1,0 +1,1038 @@
+[
+  {
+    "chinese": "A: 李さん、どうしてここにいるんですか？",
+    "pinyin": "",
+    "translation": "A: Irmão Li, por que você está aqui?",
+    "tokens": [
+      "A:",
+      "李",
+      "さん",
+      "、",
+      "どうして",
+      "ここ",
+      "に",
+      "いる",
+      "ん",
+      "です",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "李さん",
+        "pinyin": "",
+        "meaning": "Irmão Li"
+      },
+      {
+        "id": 2,
+        "word": "どうして",
+        "pinyin": "",
+        "meaning": "por que"
+      },
+      {
+        "id": 3,
+        "word": "ここ",
+        "pinyin": "",
+        "meaning": "aqui"
+      },
+      {
+        "id": 4,
+        "word": "いる",
+        "pinyin": "",
+        "meaning": "estar"
+      },
+      {
+        "id": 5,
+        "word": "んですか",
+        "pinyin": "",
+        "meaning": "pergunta enfática"
+      }
+    ],
+    "id": "local-1780260991892-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 今日はあなたにお願いしたいことがあって来ました。さっと考えさせてください。",
+    "pinyin": "",
+    "translation": "B: Hoje vim pedir algo a você. Me deixe pensar rápido.",
+    "tokens": [
+      "B:",
+      "今日",
+      "は",
+      "あなた",
+      "に",
+      "お願い",
+      "し",
+      "たい",
+      "こと",
+      "が",
+      "あっ",
+      "て",
+      "来",
+      "まし",
+      "た",
+      "。",
+      "さっと",
+      "考え",
+      "させ",
+      "て",
+      "ください",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今日",
+        "pinyin": "",
+        "meaning": "hoje"
+      },
+      {
+        "id": 2,
+        "word": "お願い",
+        "pinyin": "",
+        "meaning": "pedido"
+      },
+      {
+        "id": 3,
+        "word": "来ました",
+        "pinyin": "",
+        "meaning": "vim"
+      },
+      {
+        "id": 4,
+        "word": "さっと",
+        "pinyin": "",
+        "meaning": "rapidamente"
+      },
+      {
+        "id": 5,
+        "word": "考え",
+        "pinyin": "",
+        "meaning": "pensar"
+      }
+    ],
+    "id": "local-1780260991892-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 何であれ、弟が手伝えるなら、兄は躊躇せずに声を上げるべきだ！",
+    "pinyin": "",
+    "translation": "A: Seja o que for, se o irmão mais novo puder ajudar, o irmão mais velho não deve hesitar em falar!",
+    "tokens": [
+      "A:",
+      "何",
+      "で",
+      "あれ",
+      "、",
+      "弟",
+      "が",
+      "手伝える",
+      "なら",
+      "、",
+      "兄",
+      "は",
+      "躊躇",
+      "せ",
+      "ず",
+      "に",
+      "声",
+      "を",
+      "上げる",
+      "べき",
+      "だ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何であれ",
+        "pinyin": "",
+        "meaning": "seja o que for"
+      },
+      {
+        "id": 2,
+        "word": "弟",
+        "pinyin": "",
+        "meaning": "irmão mais novo"
+      },
+      {
+        "id": 3,
+        "word": "手伝える",
+        "pinyin": "",
+        "meaning": "poder ajudar"
+      },
+      {
+        "id": 4,
+        "word": "兄",
+        "pinyin": "",
+        "meaning": "irmão mais velho"
+      },
+      {
+        "id": 5,
+        "word": "躊躇",
+        "pinyin": "",
+        "meaning": "hesitar"
+      },
+      {
+        "id": 6,
+        "word": "声を上げる",
+        "pinyin": "",
+        "meaning": "falar / se manifestar"
+      }
+    ],
+    "id": "local-1780260991892-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: こんな感じだよ。前回バンジージャンプに行った時に会った女の子、まだ覚えてる？",
+    "pinyin": "",
+    "translation": "B: É mais ou menos assim. Você ainda se lembra da garota que conhecemos na última vez que fomos fazer bungee jumping?",
+    "tokens": [
+      "B:",
+      "こんな",
+      "感じ",
+      "だ",
+      "よ",
+      "。",
+      "前回",
+      "バンジージャンプ",
+      "に",
+      "行っ",
+      "た",
+      "時",
+      "に",
+      "会っ",
+      "た",
+      "女の子",
+      "、",
+      "まだ",
+      "覚え",
+      "てる",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "こんな感じ",
+        "pinyin": "",
+        "meaning": "mais ou menos assim"
+      },
+      {
+        "id": 2,
+        "word": "前回",
+        "pinyin": "",
+        "meaning": "última vez"
+      },
+      {
+        "id": 3,
+        "word": "バンジージャンプ",
+        "pinyin": "",
+        "meaning": "bungee jumping"
+      },
+      {
+        "id": 4,
+        "word": "会った",
+        "pinyin": "",
+        "meaning": "conhecido/encontrado"
+      },
+      {
+        "id": 5,
+        "word": "女の子",
+        "pinyin": "",
+        "meaning": "garota"
+      },
+      {
+        "id": 6,
+        "word": "覚えてる",
+        "pinyin": "",
+        "meaning": "lembrar"
+      }
+    ],
+    "id": "local-1780260991892-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 覚えてる。彼女は非常に無邪気で、とても面白かった。",
+    "pinyin": "",
+    "translation": "A: Eu me lembro. Ela era muito despreocupada e também muito engraçada.",
+    "tokens": [
+      "A:",
+      "覚え",
+      "てる",
+      "。",
+      "彼女",
+      "は",
+      "非常",
+      "に",
+      "無邪気",
+      "で",
+      "、",
+      "とても",
+      "面白かっ",
+      "た",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "覚えてる",
+        "pinyin": "",
+        "meaning": "lembro"
+      },
+      {
+        "id": 2,
+        "word": "無邪気",
+        "pinyin": "",
+        "meaning": "despreocupada"
+      },
+      {
+        "id": 3,
+        "word": "彼女",
+        "pinyin": "",
+        "meaning": "ela"
+      },
+      {
+        "id": 4,
+        "word": "非常に",
+        "pinyin": "",
+        "meaning": "muito"
+      }
+    ],
+    "id": "local-1780260991892-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: うん。彼女のその気質が気に入って、今ではすっかり彼女に夢中だから、プロポーズするって決めたんだ！",
+    "pinyin": "",
+    "translation": "B: Sim. Eu gosto desse tipo de personalidade dela e agora estou completamente apaixonado por ela, então decidi pedir ela em casamento!",
+    "tokens": [
+      "B:",
+      "うん",
+      "。",
+      "彼女",
+      "の",
+      "その",
+      "気質",
+      "が",
+      "気に入っ",
+      "て",
+      "、",
+      "今",
+      "で",
+      "は",
+      "すっかり",
+      "彼女",
+      "に",
+      "夢中",
+      "だ",
+      "から",
+      "、",
+      "プロポーズ",
+      "する",
+      "って",
+      "決め",
+      "た",
+      "ん",
+      "だ",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "気質",
+        "pinyin": "",
+        "meaning": "personalidade, temperamento"
+      },
+      {
+        "id": 2,
+        "word": "夢中",
+        "pinyin": "",
+        "meaning": "apaixonado, obcecado"
+      },
+      {
+        "id": 3,
+        "word": "プロポーズ",
+        "pinyin": "",
+        "meaning": "proposta de casamento"
+      },
+      {
+        "id": 4,
+        "word": "決めた",
+        "pinyin": "",
+        "meaning": "decidiu"
+      }
+    ],
+    "id": "local-1780260991892-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: おめでとうございます！応援しています。でもこれは本当に重大な問題です。しっかり計画を立て、準備をしなければなりません。",
+    "pinyin": "",
+    "translation": "A: Parabéns! Eu te apoio! Mas isso é realmente muito sério. Precisamos planejar e nos preparar bem.",
+    "tokens": [
+      "A:",
+      "おめでとう",
+      "ござい",
+      "ます",
+      "！",
+      "応援",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "でも",
+      "これ",
+      "は",
+      "本当に",
+      "重大",
+      "な",
+      "問題",
+      "です",
+      "。",
+      "しっかり",
+      "計画",
+      "を",
+      "立て",
+      "、",
+      "準備",
+      "を",
+      "し",
+      "なけれ",
+      "ば",
+      "なり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "おめでとうございます",
+        "pinyin": "",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 2,
+        "word": "応援しています",
+        "pinyin": "",
+        "meaning": "apoio / torço por você"
+      },
+      {
+        "id": 3,
+        "word": "重大",
+        "pinyin": "",
+        "meaning": "grave / sério"
+      },
+      {
+        "id": 4,
+        "word": "計画",
+        "pinyin": "",
+        "meaning": "plano / planejamento"
+      },
+      {
+        "id": 5,
+        "word": "準備",
+        "pinyin": "",
+        "meaning": "preparação"
+      }
+    ],
+    "id": "local-1780260991892-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: どうプロポーズするのが一番いいか、頭を悩ませている",
+    "pinyin": "",
+    "translation": "B: Estou me esforçando para pensar na melhor maneira de pedir em casamento.",
+    "tokens": [
+      "B:",
+      "どう",
+      "プロポーズ",
+      "する",
+      "の",
+      "が",
+      "一番",
+      "いい",
+      "か",
+      "、",
+      "頭",
+      "を",
+      "悩ま",
+      "せ",
+      "て",
+      "いる"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "プロポーズ",
+        "pinyin": "",
+        "meaning": "pedido de casamento"
+      },
+      {
+        "id": 2,
+        "word": "どう",
+        "pinyin": "",
+        "meaning": "como, de que maneira"
+      },
+      {
+        "id": 3,
+        "word": "一番",
+        "pinyin": "",
+        "meaning": "o melhor, o mais"
+      },
+      {
+        "id": 4,
+        "word": "いい",
+        "pinyin": "",
+        "meaning": "bom, adequado"
+      }
+    ],
+    "id": "local-1780260991892-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 私の意見では、花火やバラなどは子供じみていてオリジナリティに欠けます。将来の義理の妹に一生忘れられないような特別なものを考えなければなりません。",
+    "pinyin": "",
+    "translation": "A: Na minha opinião, fogos de artifício, rosas e coisas assim são muito infantis e falta originalidade. Temos que pensar em algo especial para a futura cunhada para que ela nunca esqueça pelo resto da vida.",
+    "tokens": [
+      "A:",
+      "私",
+      "の",
+      "意見",
+      "で",
+      "は",
+      "、",
+      "花火",
+      "や",
+      "バラ",
+      "など",
+      "は",
+      "子供",
+      "じみ",
+      "て",
+      "い",
+      "て",
+      "オリジナリティ",
+      "に",
+      "欠け",
+      "ます",
+      "。",
+      "将来",
+      "の",
+      "義理",
+      "の",
+      "妹",
+      "に",
+      "一生",
+      "忘れ",
+      "られ",
+      "ない",
+      "よう",
+      "な",
+      "特別",
+      "な",
+      "もの",
+      "を",
+      "考え",
+      "なけれ",
+      "ば",
+      "なり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "花火",
+        "pinyin": "",
+        "meaning": "fogos de artifício"
+      },
+      {
+        "id": 2,
+        "word": "バラ",
+        "pinyin": "",
+        "meaning": "rosas"
+      },
+      {
+        "id": 3,
+        "word": "子供じみていて",
+        "pinyin": "",
+        "meaning": "infantil"
+      },
+      {
+        "id": 4,
+        "word": "オリジナリティ",
+        "pinyin": "",
+        "meaning": "originalidade"
+      },
+      {
+        "id": 5,
+        "word": "義理の妹",
+        "pinyin": "",
+        "meaning": "cunhada"
+      },
+      {
+        "id": 6,
+        "word": "特別な",
+        "pinyin": "",
+        "meaning": "especial"
+      },
+      {
+        "id": 7,
+        "word": "一生",
+        "pinyin": "",
+        "meaning": "para sempre"
+      }
+    ],
+    "id": "local-1780260991892-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 兄貴、俺のことよく知ってるね！",
+    "pinyin": "",
+    "translation": "B: Irmão, você me conhece bem!",
+    "tokens": [
+      "B:",
+      "兄貴",
+      "、",
+      "俺",
+      "の",
+      "こと",
+      "よく",
+      "知っ",
+      "てる",
+      "ね",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "兄貴",
+        "pinyin": "",
+        "meaning": "irmão mais velho / cara"
+      },
+      {
+        "id": 2,
+        "word": "俺",
+        "pinyin": "",
+        "meaning": "eu (masculino informal)"
+      },
+      {
+        "id": 3,
+        "word": "よく",
+        "pinyin": "",
+        "meaning": "bem / bem entendido"
+      },
+      {
+        "id": 4,
+        "word": "知ってる",
+        "pinyin": "",
+        "meaning": "saber / conhecer"
+      },
+      {
+        "id": 5,
+        "word": "ね",
+        "pinyin": "",
+        "meaning": "partícula de confirmação / né"
+      }
+    ],
+    "id": "local-1780260991892-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 味に合わせて調整して、大胆なことをしてあげましょう。まさにこのように…（囁く）",
+    "pinyin": "",
+    "translation": "A: Podemos adaptá-lo aos gostos e fazer algoousado. Exatamente assim... (sussurrando)",
+    "tokens": [
+      "A:",
+      "味",
+      "に",
+      "合わせ",
+      "て",
+      "調整",
+      "し",
+      "て",
+      "、",
+      "大胆",
+      "な",
+      "こと",
+      "を",
+      "し",
+      "て",
+      "あげ",
+      "ましょ",
+      "う",
+      "。",
+      "まさに",
+      "この",
+      "よう",
+      "に",
+      "…",
+      "（",
+      "囁く",
+      "）"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "味",
+        "pinyin": "",
+        "meaning": "sabor"
+      },
+      {
+        "id": 2,
+        "word": "大胆",
+        "pinyin": "",
+        "meaning": "ousado"
+      },
+      {
+        "id": 3,
+        "word": "囁く",
+        "pinyin": "",
+        "meaning": "sussurrar"
+      }
+    ],
+    "id": "local-1780260991892-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: ハハ、これはいい方法だね。新鮮でワクワクする！これにしよう！数日後……",
+    "pinyin": "",
+    "translation": "B: Haha, essa é uma boa maneira. É fresco e emocionante! Então, esse! Alguns dias depois...",
+    "tokens": [
+      "B:",
+      "ハハ",
+      "、",
+      "これ",
+      "は",
+      "いい",
+      "方法",
+      "だ",
+      "ね",
+      "。",
+      "新鮮",
+      "で",
+      "ワクワク",
+      "する",
+      "！",
+      "これ",
+      "に",
+      "しよ",
+      "う",
+      "！",
+      "数",
+      "日",
+      "後",
+      "…",
+      "…"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "ハハ",
+        "pinyin": "",
+        "meaning": "risada"
+      },
+      {
+        "id": 2,
+        "word": "新鮮",
+        "pinyin": "",
+        "meaning": "fresco"
+      },
+      {
+        "id": 3,
+        "word": "ワクワク",
+        "pinyin": "",
+        "meaning": "emoção"
+      },
+      {
+        "id": 4,
+        "word": "方法",
+        "pinyin": "",
+        "meaning": "método"
+      },
+      {
+        "id": 5,
+        "word": "数日後",
+        "pinyin": "",
+        "meaning": "alguns dias depois"
+      }
+    ],
+    "id": "local-1780260991892-11",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: お兄さん、お嫁さんはあなたのプロポーズを受け入れてくれましたか？",
+    "pinyin": "",
+    "translation": "A: Irmão mais velho, sua cunhada aceitou sua proposta?",
+    "tokens": [
+      "A:",
+      "お",
+      "兄さん",
+      "、",
+      "お",
+      "嫁さん",
+      "は",
+      "あなた",
+      "の",
+      "プロポーズ",
+      "を",
+      "受け入れ",
+      "て",
+      "くれ",
+      "まし",
+      "た",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "お兄さん",
+        "pinyin": "",
+        "meaning": "irmão mais velho"
+      },
+      {
+        "id": 2,
+        "word": "お嫁さん",
+        "pinyin": "",
+        "meaning": "esposa / cunhada"
+      },
+      {
+        "id": 3,
+        "word": "プロポーズ",
+        "pinyin": "",
+        "meaning": "proposta de casamento"
+      },
+      {
+        "id": 4,
+        "word": "くれました",
+        "pinyin": "",
+        "meaning": "fez por mim (honorífico)"
+      }
+    ],
+    "id": "local-1780260991892-12",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: そんなこと言うなよ。真夜中にプロポーズの電話をしたあの夜、彼女は幽霊に化けて怖がらせようとしてるのかと思ったんだ。そして、枕の下に隠した指輪が見つからないって言ったんだ。",
+    "pinyin": "",
+    "translation": "B: Não mencione isso. Naquela noite, quando liguei para ela à meia-noite para pedir casamento, ela achou que eu estava se passando por um fantasma para assustá-la e brincar. E ela disse que não encontrou a aliança que eu escondi debaixo do travesseiro dela.",
+    "tokens": [
+      "B:",
+      "そんな",
+      "こと",
+      "言う",
+      "な",
+      "よ",
+      "。",
+      "真夜中",
+      "に",
+      "プロポーズ",
+      "の",
+      "電話",
+      "を",
+      "し",
+      "た",
+      "あの",
+      "夜",
+      "、",
+      "彼女",
+      "は",
+      "幽霊",
+      "に",
+      "化け",
+      "て",
+      "怖がら",
+      "せよ",
+      "う",
+      "と",
+      "し",
+      "てる",
+      "の",
+      "か",
+      "と",
+      "思っ",
+      "た",
+      "ん",
+      "だ",
+      "。",
+      "そして",
+      "、",
+      "枕",
+      "の",
+      "下",
+      "に",
+      "隠し",
+      "た",
+      "指輪",
+      "が",
+      "見つから",
+      "ない",
+      "って",
+      "言っ",
+      "た",
+      "ん",
+      "だ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真夜中",
+        "pinyin": "",
+        "meaning": "meia-noite"
+      },
+      {
+        "id": 2,
+        "word": "プロポーズ",
+        "pinyin": "",
+        "meaning": "pedido de casamento"
+      },
+      {
+        "id": 3,
+        "word": "幽霊",
+        "pinyin": "",
+        "meaning": "fantasma"
+      },
+      {
+        "id": 4,
+        "word": "指輪",
+        "pinyin": "",
+        "meaning": "aliança"
+      },
+      {
+        "id": 5,
+        "word": "枕",
+        "pinyin": "",
+        "meaning": "travesseiro"
+      },
+      {
+        "id": 6,
+        "word": "隠した",
+        "pinyin": "",
+        "meaning": "escondi"
+      }
+    ],
+    "id": "local-1780260991892-13",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: あー、次はもっと伝統的な方法を使おう！",
+    "pinyin": "",
+    "translation": "A: Ah, da próxima vez vamos usar um método mais tradicional!",
+    "tokens": [
+      "A:",
+      "あー",
+      "、",
+      "次",
+      "は",
+      "もっと",
+      "伝統",
+      "的",
+      "な",
+      "方法",
+      "を",
+      "使お",
+      "う",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "伝統的な",
+        "pinyin": "",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 2,
+        "word": "方法",
+        "pinyin": "",
+        "meaning": "método"
+      },
+      {
+        "id": 3,
+        "word": "次",
+        "pinyin": "",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 4,
+        "word": "使おう",
+        "pinyin": "",
+        "meaning": "vamos usar"
+      }
+    ],
+    "id": "local-1780260991892-14",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 次はないと思います。私たちの間に希望はありません。",
+    "pinyin": "",
+    "translation": "B: Acho que não haverá uma próxima vez. Não há esperança para nós.",
+    "tokens": [
+      "B:",
+      "次",
+      "は",
+      "ない",
+      "と",
+      "思い",
+      "ます",
+      "。",
+      "私",
+      "たち",
+      "の",
+      "間",
+      "に",
+      "希望",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "次",
+        "pinyin": "",
+        "meaning": "próximo"
+      },
+      {
+        "id": 2,
+        "word": "ない",
+        "pinyin": "",
+        "meaning": "não há / inexistente"
+      },
+      {
+        "id": 3,
+        "word": "私たち",
+        "pinyin": "",
+        "meaning": "nós"
+      },
+      {
+        "id": 4,
+        "word": "間",
+        "pinyin": "",
+        "meaning": "entre / relação"
+      },
+      {
+        "id": 5,
+        "word": "希望",
+        "pinyin": "",
+        "meaning": "esperança"
+      },
+      {
+        "id": 6,
+        "word": "ありません",
+        "pinyin": "",
+        "meaning": "não existe (formal)"
+      }
+    ],
+    "id": "local-1780260991892-15",
+    "language": "Japonês"
+  }
+]

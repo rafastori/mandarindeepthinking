@@ -1,0 +1,925 @@
+[
+  {
+    "chinese": "A: Ich möchte meine Kündigung einreichen.",
+    "pinyin": "",
+    "translation": "A: Quero entregar minha carta de demissão.",
+    "tokens": [
+      "A:",
+      "Ich",
+      "möchte",
+      "meine",
+      "Kündigung",
+      "einreichen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Kündigung",
+        "pinyin": "",
+        "meaning": "demissão"
+      },
+      {
+        "id": 2,
+        "word": "einreichen",
+        "pinyin": "",
+        "meaning": "entregar/apresentar"
+      },
+      {
+        "id": 3,
+        "word": "Ich möchte",
+        "pinyin": "",
+        "meaning": "eu quero"
+      }
+    ],
+    "id": "local-1780230487422-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Was? Warum willst du plötzlich kündigen?",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer demitir-se de repente?",
+    "tokens": [
+      "B:",
+      "Was",
+      "?",
+      "Warum",
+      "willst",
+      "du",
+      "plötzlich",
+      "kündigen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "O quê"
+      },
+      {
+        "id": 2,
+        "word": "Warum",
+        "pinyin": "",
+        "meaning": "Por que"
+      },
+      {
+        "id": 3,
+        "word": "plötzlich",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 4,
+        "word": "kündigen",
+        "pinyin": "",
+        "meaning": "demitir-se"
+      },
+      {
+        "id": 5,
+        "word": "willst",
+        "pinyin": "",
+        "meaning": "quer"
+      }
+    ],
+    "id": "local-1780230487422-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Warum ist das monatliche Einkommen so niedrig? Außerdem ist die Arbeitsumgebung auch nicht gut. Jeden Tag mache ich nur unbedeutende Kleinigkeiten und habe kein Erfolgserlebnis. Das ist weit entfernt von dem, was ich erwartet habe.",
+    "pinyin": "",
+    "translation": "A: Por que a renda mensal é tão baixa? Além disso, o ambiente de trabalho também não é bom. Todo dia eu apenas faço pequenas tarefas insignificantes e não sinto sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "Warum",
+      "ist",
+      "das",
+      "monatliche",
+      "Einkommen",
+      "so",
+      "niedrig",
+      "?",
+      "Außerdem",
+      "ist",
+      "die",
+      "Arbeitsumgebung",
+      "auch",
+      "nicht",
+      "gut",
+      ".",
+      "Jeden",
+      "Tag",
+      "mache",
+      "ich",
+      "nur",
+      "unbedeutende",
+      "Kleinigkeiten",
+      "und",
+      "habe",
+      "kein",
+      "Erfolgserlebnis",
+      ".",
+      "Das",
+      "ist",
+      "weit",
+      "entfernt",
+      "von",
+      "dem",
+      ",",
+      "was",
+      "ich",
+      "erwartet",
+      "habe",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "monatliche Einkommen",
+        "pinyin": "",
+        "meaning": "renda mensal"
+      },
+      {
+        "id": 2,
+        "word": "Arbeitsumgebung",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "unbedeutende Kleinigkeiten",
+        "pinyin": "",
+        "meaning": "pequenas tarefas insignificantes"
+      },
+      {
+        "id": 4,
+        "word": "Erfolgserlebnis",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 5,
+        "word": "weit entfernt",
+        "pinyin": "",
+        "meaning": "muito longe"
+      }
+    ],
+    "id": "local-1780230487422-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wo findet man heutzutage Arbeit, die genau das ist, was man sich wünscht? Man sollte keine hohen Maßstäbe haben, die man mit seinen Fähigkeiten nicht erfüllen kann.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deve ter padrões altos que suas habilidades não consigam corresponder.",
+    "tokens": [
+      "B:",
+      "Wo",
+      "findet",
+      "man",
+      "heutzutage",
+      "Arbeit",
+      ",",
+      "die",
+      "genau",
+      "das",
+      "ist",
+      ",",
+      "was",
+      "man",
+      "sich",
+      "wünscht",
+      "?",
+      "Man",
+      "sollte",
+      "keine",
+      "hohen",
+      "Maßstäbe",
+      "haben",
+      ",",
+      "die",
+      "man",
+      "mit",
+      "seinen",
+      "Fähigkeiten",
+      "nicht",
+      "erfüllen",
+      "kann",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "heutzutage",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "findet man",
+        "pinyin": "",
+        "meaning": "pode-se encontrar"
+      },
+      {
+        "id": 3,
+        "word": "genau das ist",
+        "pinyin": "",
+        "meaning": "exatamente o que é"
+      },
+      {
+        "id": 4,
+        "word": "was man sich wünscht",
+        "pinyin": "",
+        "meaning": "o que se deseja"
+      },
+      {
+        "id": 5,
+        "word": "Maßstäbe",
+        "pinyin": "",
+        "meaning": "padrões"
+      },
+      {
+        "id": 6,
+        "word": "Fähigkeiten",
+        "pinyin": "",
+        "meaning": "habilidades"
+      },
+      {
+        "id": 7,
+        "word": "erfüllen kann",
+        "pinyin": "",
+        "meaning": "pode cumprir"
+      }
+    ],
+    "id": "local-1780230487422-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Der Schlüssel liegt darin, dass ich meinen eigenen Wert nicht erkannt habe, und jetzt haben alle meine Kollegen um mich herum gute Verbindungen. Und ich weiß nicht, ob es nur in ferner Zukunft an der Reihe sein wird, befördert zu werden.",
+    "pinyin": "",
+    "translation": "A: O ponto crucial é que eu não reconheci meu próprio valor, e agora todos os meus colegas ao meu redor têm bons contatos. E eu não sei se só no futuro distante será a minha vez de ser promovido.",
+    "tokens": [
+      "A:",
+      "Der",
+      "Schlüssel",
+      "liegt",
+      "darin",
+      ",",
+      "dass",
+      "ich",
+      "meinen",
+      "eigenen",
+      "Wert",
+      "nicht",
+      "erkannt",
+      "habe",
+      ",",
+      "und",
+      "jetzt",
+      "haben",
+      "alle",
+      "meine",
+      "Kollegen",
+      "um",
+      "mich",
+      "herum",
+      "gute",
+      "Verbindungen",
+      ".",
+      "Und",
+      "ich",
+      "weiß",
+      "nicht",
+      ",",
+      "ob",
+      "es",
+      "nur",
+      "in",
+      "ferner",
+      "Zukunft",
+      "an",
+      "der",
+      "Reihe",
+      "sein",
+      "wird",
+      ",",
+      "befördert",
+      "zu",
+      "werden",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Schlüssel",
+        "pinyin": "",
+        "meaning": "chave"
+      },
+      {
+        "id": 2,
+        "word": "Wert",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 3,
+        "word": "Kollegen",
+        "pinyin": "",
+        "meaning": "colegas"
+      },
+      {
+        "id": 4,
+        "word": "Verbindungen",
+        "pinyin": "",
+        "meaning": "conexões"
+      },
+      {
+        "id": 5,
+        "word": "befördert",
+        "pinyin": "",
+        "meaning": "promovido"
+      }
+    ],
+    "id": "local-1780230487422-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Gut. Hast du schon darüber nachgedacht, in welche Art von Job du wechseln möchtest?",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Você já pensou em que tipo de emprego quer mudar?",
+    "tokens": [
+      "B:",
+      "Gut",
+      ".",
+      "Hast",
+      "du",
+      "schon",
+      "darüber",
+      "nachgedacht",
+      ",",
+      "in",
+      "welche",
+      "Art",
+      "von",
+      "Job",
+      "du",
+      "wechseln",
+      "möchtest",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Gut",
+        "pinyin": "",
+        "meaning": "Bom"
+      },
+      {
+        "id": 2,
+        "word": "Hast du",
+        "pinyin": "",
+        "meaning": "Você tem"
+      },
+      {
+        "id": 3,
+        "word": "nachgedacht",
+        "pinyin": "",
+        "meaning": "pensado"
+      },
+      {
+        "id": 4,
+        "word": "darüber",
+        "pinyin": "",
+        "meaning": "sobre isso"
+      },
+      {
+        "id": 5,
+        "word": "Job",
+        "pinyin": "",
+        "meaning": "emprego"
+      },
+      {
+        "id": 6,
+        "word": "wechseln",
+        "pinyin": "",
+        "meaning": "mudar"
+      }
+    ],
+    "id": "local-1780230487422-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Arbeitest du nicht in einer Personalvermittlung? Deine Kontakte müssen umfangreicher sein als meine. Könntest du eine Empfehlung aussprechen? Du weißt, dass ich Werbung und Design an der Universität studiert habe. Es war nur das Ergebnis einer seltsamen Reihe von Umständen, dass ich Redakteur wurde. Kannst du mir helfen, nach Werbeagenturen zu suchen?",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia dar uma recomendação? Você sabe que meu curso universitário foi design de publicidade. Foi apenas resultado de uma série de circunstâncias estranhas que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "Arbeitest",
+      "du",
+      "nicht",
+      "in",
+      "einer",
+      "Personalvermittlung",
+      "?",
+      "Deine",
+      "Kontakte",
+      "müssen",
+      "umfangreicher",
+      "sein",
+      "als",
+      "meine",
+      ".",
+      "Könntest",
+      "du",
+      "eine",
+      "Empfehlung",
+      "aussprechen",
+      "?",
+      "Du",
+      "weißt",
+      ",",
+      "dass",
+      "ich",
+      "Werbung",
+      "und",
+      "Design",
+      "an",
+      "der",
+      "Universität",
+      "studiert",
+      "habe",
+      ".",
+      "Es",
+      "war",
+      "nur",
+      "das",
+      "Ergebnis",
+      "einer",
+      "seltsamen",
+      "Reihe",
+      "von",
+      "Umständen",
+      ",",
+      "dass",
+      "ich",
+      "Redakteur",
+      "wurde",
+      ".",
+      "Kannst",
+      "du",
+      "mir",
+      "helfen",
+      ",",
+      "nach",
+      "Werbeagenturen",
+      "zu",
+      "suchen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Personalvermittlung",
+        "pinyin": "",
+        "meaning": "agência de recrutamento"
+      },
+      {
+        "id": 2,
+        "word": "Kontakte",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 3,
+        "word": "Empfehlung",
+        "pinyin": "",
+        "meaning": "recomendação"
+      },
+      {
+        "id": 4,
+        "word": "Werbung",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 5,
+        "word": "Redakteur",
+        "pinyin": "",
+        "meaning": "editor"
+      },
+      {
+        "id": 6,
+        "word": "Umstände",
+        "pinyin": "",
+        "meaning": "circunstâncias"
+      },
+      {
+        "id": 7,
+        "word": "Werbeagenturen",
+        "pinyin": "",
+        "meaning": "agências de publicidade"
+      }
+    ],
+    "id": "local-1780230487422-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Es ist etwas schwierig. Die Anforderungen renommierter Werbeagenturen sind hoch. Keine seriöse Werbeagentur könnte die von Ihnen gewünschte Vergütung nicht bereitstellen.",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos de agências de publicidade renomadas são altos. Nenhuma agência de publicidade respeitável seria incapaz de fornecer a compensação que você deseja.",
+    "tokens": [
+      "B:",
+      "Es",
+      "ist",
+      "etwas",
+      "schwierig",
+      ".",
+      "Die",
+      "Anforderungen",
+      "renommierter",
+      "Werbeagenturen",
+      "sind",
+      "hoch",
+      ".",
+      "Keine",
+      "seriöse",
+      "Werbeagentur",
+      "könnte",
+      "die",
+      "von",
+      "Ihnen",
+      "gewünschte",
+      "Vergütung",
+      "nicht",
+      "bereitstellen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "schwierig",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "Anforderungen",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 3,
+        "word": "Werbeagenturen",
+        "pinyin": "",
+        "meaning": "agências de publicidade"
+      },
+      {
+        "id": 4,
+        "word": "Vergütung",
+        "pinyin": "",
+        "meaning": "compensação"
+      },
+      {
+        "id": 5,
+        "word": "seriöse",
+        "pinyin": "",
+        "meaning": "respeitáveis"
+      }
+    ],
+    "id": "local-1780230487422-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Es ist wahr. Was hältst du davon, wenn ich ein Unternehmen gründe? Man sagt, die Anforderungen in der Werbebranche seien sehr gering. Man muss nur einen Raum mieten, ein paar Computer kaufen und schon kann man das Geschäft aufnehmen. Ich habe zufällig ein paar hunderttausend zur Verfügung, die als Startkapital dienen könnten.",
+    "pinyin": "",
+    "translation": "A: É verdade. O que você acha de eu abrir uma empresa? Dizem que os requisitos para a área de publicidade são muito baixos. Você só precisa alugar um local, comprar alguns computadores e já pode começar a fazer negócios. Eu acabo de ter à mão algumas centenas de milhares que poderiam ser o capital inicial.",
+    "tokens": [
+      "A:",
+      "Es",
+      "ist",
+      "wahr",
+      ".",
+      "Was",
+      "hältst",
+      "du",
+      "davon",
+      ",",
+      "wenn",
+      "ich",
+      "ein",
+      "Unternehmen",
+      "gründe",
+      "?",
+      "Man",
+      "sagt",
+      ",",
+      "die",
+      "Anforderungen",
+      "in",
+      "der",
+      "Werbebranche",
+      "seien",
+      "sehr",
+      "gering",
+      ".",
+      "Man",
+      "muss",
+      "nur",
+      "einen",
+      "Raum",
+      "mieten",
+      ",",
+      "ein",
+      "paar",
+      "Computer",
+      "kaufen",
+      "und",
+      "schon",
+      "kann",
+      "man",
+      "das",
+      "Geschäft",
+      "aufnehmen",
+      ".",
+      "Ich",
+      "habe",
+      "zufällig",
+      "ein",
+      "paar",
+      "hunderttausend",
+      "zur",
+      "Verfügung",
+      ",",
+      "die",
+      "als",
+      "Startkapital",
+      "dienen",
+      "könnten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Werbebranche",
+        "pinyin": "",
+        "meaning": "indústria publicitária"
+      },
+      {
+        "id": 2,
+        "word": "Startkapital",
+        "pinyin": "",
+        "meaning": "capital inicial"
+      },
+      {
+        "id": 3,
+        "word": "gründe",
+        "pinyin": "",
+        "meaning": "fundar/criar"
+      },
+      {
+        "id": 4,
+        "word": "Raum",
+        "pinyin": "",
+        "meaning": "espaço/sala"
+      },
+      {
+        "id": 5,
+        "word": "Computer",
+        "pinyin": "",
+        "meaning": "computadores"
+      },
+      {
+        "id": 6,
+        "word": "Geschäft",
+        "pinyin": "",
+        "meaning": "negócio"
+      }
+    ],
+    "id": "local-1780230487422-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ein eigenes Unternehmen zu gründen ist eigentlich eine gute Idee. Aber man muss einen Partner finden und dann einen Weg finden, Kunden anzuziehen. Das ist nicht sehr einfach; neben Geduld braucht man auch die entscheidende Wettbewerbsstärke – Kreativität.",
+    "pinyin": "",
+    "translation": "B: Abrir o próprio negócio é, na verdade, uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "Ein",
+      "eigenes",
+      "Unternehmen",
+      "zu",
+      "gründen",
+      "ist",
+      "eigentlich",
+      "eine",
+      "gute",
+      "Idee",
+      ".",
+      "Aber",
+      "man",
+      "muss",
+      "einen",
+      "Partner",
+      "finden",
+      "und",
+      "dann",
+      "einen",
+      "Weg",
+      "finden",
+      ",",
+      "Kunden",
+      "anzuziehen",
+      ".",
+      "Das",
+      "ist",
+      "nicht",
+      "sehr",
+      "einfach",
+      ";",
+      "neben",
+      "Geduld",
+      "braucht",
+      "man",
+      "auch",
+      "die",
+      "entscheidende",
+      "Wettbewerbsstärke",
+      "–",
+      "Kreativität",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "gründen",
+        "pinyin": "",
+        "meaning": "fundar"
+      },
+      {
+        "id": 2,
+        "word": "Partner",
+        "pinyin": "",
+        "meaning": "parceiro"
+      },
+      {
+        "id": 3,
+        "word": "Kunden",
+        "pinyin": "",
+        "meaning": "clientes"
+      },
+      {
+        "id": 4,
+        "word": "Geduld",
+        "pinyin": "",
+        "meaning": "paciência"
+      },
+      {
+        "id": 5,
+        "word": "Wettbewerbsstärke",
+        "pinyin": "",
+        "meaning": "força competitiva"
+      },
+      {
+        "id": 6,
+        "word": "Kreativität",
+        "pinyin": "",
+        "meaning": "criatividade"
+      }
+    ],
+    "id": "local-1780230487422-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Mm, das weiß ich. Ich plane, einige alte Klassenkameraden mit ins Boot zu holen, um mit mir zusammenzuarbeiten. Werbung ist etwas, das mich zutiefst interessiert, also werde ich es nicht so leicht aufgeben.",
+    "pinyin": "",
+    "translation": "A: Mm, eu sei. Planejo trazer alguns antigos colegas de classe para trabalhar comigo. Publicidade é algo que me interessa profundamente, então não vou desistir disso facilmente.",
+    "tokens": [
+      "A:",
+      "Mm",
+      ",",
+      "das",
+      "weiß",
+      "ich",
+      ".",
+      "Ich",
+      "plane",
+      ",",
+      "einige",
+      "alte",
+      "Klassenkameraden",
+      "mit",
+      "ins",
+      "Boot",
+      "zu",
+      "holen",
+      ",",
+      "um",
+      "mit",
+      "mir",
+      "zusammenzuarbeiten",
+      ".",
+      "Werbung",
+      "ist",
+      "etwas",
+      ",",
+      "das",
+      "mich",
+      "zutiefst",
+      "interessiert",
+      ",",
+      "also",
+      "werde",
+      "ich",
+      "es",
+      "nicht",
+      "so",
+      "leicht",
+      "aufgeben",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Klassenkameraden",
+        "pinyin": "",
+        "meaning": "colegas de classe"
+      },
+      {
+        "id": 2,
+        "word": "Werbung",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 3,
+        "word": "zutiefst interessiert",
+        "pinyin": "",
+        "meaning": "profundamente interessado"
+      },
+      {
+        "id": 4,
+        "word": "aufgeben",
+        "pinyin": "",
+        "meaning": "desistir"
+      }
+    ],
+    "id": "local-1780230487422-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Dann wünsche ich dir schon mal viel Erfolg!",
+    "pinyin": "",
+    "translation": "B: Então, já te desejo muito sucesso!",
+    "tokens": [
+      "B:",
+      "Dann",
+      "wünsche",
+      "ich",
+      "dir",
+      "schon",
+      "mal",
+      "viel",
+      "Erfolg",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Dann",
+        "pinyin": "",
+        "meaning": "Então"
+      },
+      {
+        "id": 2,
+        "word": "wünsche",
+        "pinyin": "",
+        "meaning": "desejo"
+      },
+      {
+        "id": 3,
+        "word": "dir",
+        "pinyin": "",
+        "meaning": "a ti"
+      },
+      {
+        "id": 4,
+        "word": "schon mal",
+        "pinyin": "",
+        "meaning": "já, antecipadamente"
+      },
+      {
+        "id": 5,
+        "word": "viel",
+        "pinyin": "",
+        "meaning": "muito"
+      },
+      {
+        "id": 6,
+        "word": "Erfolg",
+        "pinyin": "",
+        "meaning": "sucesso"
+      }
+    ],
+    "id": "local-1780230487422-11",
+    "language": "Alemão"
+  }
+]

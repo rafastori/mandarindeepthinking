@@ -1,0 +1,672 @@
+[
+  {
+    "chinese": "A: Hallo, Mike. Ihre Arbeitserlaubnis ist fertig. Jetzt können Sie ein Visum beantragen.",
+    "pinyin": "",
+    "translation": "A: Olá, Mike. Sua autorização de trabalho está pronta. Agora você pode solicitar um visto.",
+    "tokens": [
+      "A:",
+      "Hallo",
+      ",",
+      "Mike",
+      ".",
+      "Ihre",
+      "Arbeitserlaubnis",
+      "ist",
+      "fertig",
+      ".",
+      "Jetzt",
+      "können",
+      "Sie",
+      "ein",
+      "Visum",
+      "beantragen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Arbeitserlaubnis",
+        "pinyin": "",
+        "meaning": "autorização de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "beantragen",
+        "pinyin": "",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 3,
+        "word": "Visum",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "fertig",
+        "pinyin": "",
+        "meaning": "pronto"
+      },
+      {
+        "id": 5,
+        "word": "Ihre",
+        "pinyin": "",
+        "meaning": "seu (formal)"
+      }
+    ],
+    "id": "local-1780229043914-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Vielen Dank. Welche Dokumente muss ich vorbereiten?",
+    "pinyin": "",
+    "translation": "B: Muito obrigado. Quais documentos preciso preparar?",
+    "tokens": [
+      "B:",
+      "Vielen",
+      "Dank",
+      ".",
+      "Welche",
+      "Dokumente",
+      "muss",
+      "ich",
+      "vorbereiten",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vielen Dank",
+        "pinyin": "",
+        "meaning": "muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "Welche",
+        "pinyin": "",
+        "meaning": "quais"
+      },
+      {
+        "id": 3,
+        "word": "Dokumente",
+        "pinyin": "",
+        "meaning": "documentos"
+      },
+      {
+        "id": 4,
+        "word": "vorbereiten",
+        "pinyin": "",
+        "meaning": "preparar"
+      }
+    ],
+    "id": "local-1780229043914-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Sie benötigen Ihren Arbeitserlaubnis, Reisepass, die gewerbliche Anmeldung Ihres Unternehmens, die Einladung des Unternehmens, ein 2-Zoll-Foto. Sowohl das Original als auch eine Kopie von jedem Dokument. Außerdem müssen Sie das Antragsformular ausfüllen.",
+    "pinyin": "",
+    "translation": "A: Você precisa levar sua permissão de trabalho, passaporte, registro comercial da empresa, carta de convite da empresa, uma foto 2x3. Tanto o original quanto uma cópia de cada um. Além disso, você também deve preencher o formulário de solicitação.",
+    "tokens": [
+      "A:",
+      "Sie",
+      "benötigen",
+      "Ihren",
+      "Arbeitserlaubnis",
+      ",",
+      "Reisepass",
+      ",",
+      "die",
+      "gewerbliche",
+      "Anmeldung",
+      "Ihres",
+      "Unternehmens",
+      ",",
+      "die",
+      "Einladung",
+      "des",
+      "Unternehmens",
+      ",",
+      "ein",
+      "2",
+      "-",
+      "Zoll",
+      "-",
+      "Foto",
+      ".",
+      "Sowohl",
+      "das",
+      "Original",
+      "als",
+      "auch",
+      "eine",
+      "Kopie",
+      "von",
+      "jedem",
+      "Dokument",
+      ".",
+      "Außerdem",
+      "müssen",
+      "Sie",
+      "das",
+      "Antragsformular",
+      "ausfüllen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Arbeitserlaubnis",
+        "pinyin": "",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "Reisepass",
+        "pinyin": "",
+        "meaning": "passaporte"
+      },
+      {
+        "id": 3,
+        "word": "gewerbliche Anmeldung",
+        "pinyin": "",
+        "meaning": "registro comercial"
+      },
+      {
+        "id": 4,
+        "word": "Einladung",
+        "pinyin": "",
+        "meaning": "convite"
+      },
+      {
+        "id": 5,
+        "word": "Antragsformular",
+        "pinyin": "",
+        "meaning": "formulário de solicitação"
+      }
+    ],
+    "id": "local-1780229043914-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Warten Sie. Ich schreibe das auf. Außerdem, für welche Art von Visum bewerbe ich mich?",
+    "pinyin": "",
+    "translation": "B: Espere. Vou anotar isso. Além disso, para que tipo de visto estou me candidatando?",
+    "tokens": [
+      "B:",
+      "Warten",
+      "Sie",
+      ".",
+      "Ich",
+      "schreibe",
+      "das",
+      "auf",
+      ".",
+      "Außerdem",
+      ",",
+      "für",
+      "welche",
+      "Art",
+      "von",
+      "Visum",
+      "bewerbe",
+      "ich",
+      "mich",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Warten",
+        "pinyin": "",
+        "meaning": "Esperar"
+      },
+      {
+        "id": 2,
+        "word": "Außerdem",
+        "pinyin": "",
+        "meaning": "Além disso"
+      },
+      {
+        "id": 3,
+        "word": "Visum",
+        "pinyin": "",
+        "meaning": "Visto"
+      }
+    ],
+    "id": "local-1780229043914-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Es ist ein Z. Ein Arbeitsvisum.",
+    "pinyin": "",
+    "translation": "A: É um Z. Um visto de trabalho.",
+    "tokens": [
+      "A:",
+      "Es",
+      "ist",
+      "ein",
+      "Z",
+      ".",
+      "Ein",
+      "Arbeitsvisum",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Arbeitsvisum",
+        "pinyin": "",
+        "meaning": "visto de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "Arbeits",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é"
+      },
+      {
+        "id": 4,
+        "word": "Es",
+        "pinyin": "",
+        "meaning": "Isso/Ele"
+      }
+    ],
+    "id": "local-1780229043914-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Ich habe gehört, dass man für einen Z-Visum ins Ausland gehen muss. Muss ich nach Hongkong reisen?",
+    "pinyin": "",
+    "translation": "B: Ouvi dizer que para solicitar um visto Z você precisa ir ao exterior. Preciso ir para Hong Kong?",
+    "tokens": [
+      "B:",
+      "Ich",
+      "habe",
+      "gehört",
+      ",",
+      "dass",
+      "man",
+      "für",
+      "einen",
+      "Z",
+      "-",
+      "Visum",
+      "ins",
+      "Ausland",
+      "gehen",
+      "muss",
+      ".",
+      "Muss",
+      "ich",
+      "nach",
+      "Hongkong",
+      "reisen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Z-Visum",
+        "pinyin": "",
+        "meaning": "visto Z"
+      },
+      {
+        "id": 2,
+        "word": "Ausland",
+        "pinyin": "",
+        "meaning": "exterior"
+      },
+      {
+        "id": 3,
+        "word": "reisen",
+        "pinyin": "",
+        "meaning": "viajar"
+      },
+      {
+        "id": 4,
+        "word": "Hongkong",
+        "pinyin": "",
+        "meaning": "Hong Kong"
+      },
+      {
+        "id": 5,
+        "word": "gehört",
+        "pinyin": "",
+        "meaning": "ouvido"
+      }
+    ],
+    "id": "local-1780229043914-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: In dieser Situation müssen Sie das nicht tun. Sie verlängern Ihr Visum.",
+    "pinyin": "",
+    "translation": "A: Nesta situação, você não precisa fazer isso. Você está renovando seu visto.",
+    "tokens": [
+      "A:",
+      "In",
+      "dieser",
+      "Situation",
+      "müssen",
+      "Sie",
+      "das",
+      "nicht",
+      "tun",
+      ".",
+      "Sie",
+      "verlängern",
+      "Ihr",
+      "Visum",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Situation",
+        "pinyin": "",
+        "meaning": "situação"
+      },
+      {
+        "id": 2,
+        "word": "müssen",
+        "pinyin": "",
+        "meaning": "dever/poder (obrigação)"
+      },
+      {
+        "id": 3,
+        "word": "verlängern",
+        "pinyin": "",
+        "meaning": "renovar/prolongar"
+      },
+      {
+        "id": 4,
+        "word": "Visum",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "dieser",
+        "pinyin": "",
+        "meaning": "este/esta"
+      }
+    ],
+    "id": "local-1780229043914-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Das ist großartig. Übrigens, kann mir jemand das Visum besorgen?",
+    "pinyin": "",
+    "translation": "B: Isso é ótimo. Ah, a propósito, alguém pode tirar o visto para mim?",
+    "tokens": [
+      "B:",
+      "Das",
+      "ist",
+      "großartig",
+      ".",
+      "Übrigens",
+      ",",
+      "kann",
+      "mir",
+      "jemand",
+      "das",
+      "Visum",
+      "besorgen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "großartig",
+        "pinyin": "",
+        "meaning": "ótimo"
+      },
+      {
+        "id": 2,
+        "word": "Visum",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 3,
+        "word": "besorgen",
+        "pinyin": "",
+        "meaning": "conseguir/tirar"
+      },
+      {
+        "id": 4,
+        "word": "kann",
+        "pinyin": "",
+        "meaning": "pode"
+      }
+    ],
+    "id": "local-1780229043914-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Du bist Amerikaner, also kannst du das nicht tun. Amerikaner müssen persönlich im Büro einen Antrag stellen.",
+    "pinyin": "",
+    "translation": "A: Você é americano, então você não pode fazer isso. Americanos precisam se apresentar pessoalmente no escritório para solicitar.",
+    "tokens": [
+      "A:",
+      "Du",
+      "bist",
+      "Amerikaner",
+      ",",
+      "also",
+      "kannst",
+      "du",
+      "das",
+      "nicht",
+      "tun",
+      ".",
+      "Amerikaner",
+      "müssen",
+      "persönlich",
+      "im",
+      "Büro",
+      "einen",
+      "Antrag",
+      "stellen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Amerikaner",
+        "pinyin": "",
+        "meaning": "americano"
+      },
+      {
+        "id": 2,
+        "word": "persönlich",
+        "pinyin": "",
+        "meaning": "pessoalmente"
+      },
+      {
+        "id": 3,
+        "word": "Büro",
+        "pinyin": "",
+        "meaning": "escritório"
+      },
+      {
+        "id": 4,
+        "word": "Antrag stellen",
+        "pinyin": "",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 5,
+        "word": "tun",
+        "pinyin": "",
+        "meaning": "fazer"
+      }
+    ],
+    "id": "local-1780229043914-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Huh? Es gibt unterschiedliche Behandlungen für verschiedene Länder!",
+    "pinyin": "",
+    "translation": "B: Hã? Há tratamentos diferentes para países diferentes!",
+    "tokens": [
+      "B:",
+      "Huh",
+      "?",
+      "Es",
+      "gibt",
+      "unterschiedliche",
+      "Behandlungen",
+      "für",
+      "verschiedene",
+      "Länder",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "unterschiedliche",
+        "pinyin": "",
+        "meaning": "diferentes"
+      },
+      {
+        "id": 2,
+        "word": "Behandlungen",
+        "pinyin": "",
+        "meaning": "tratamentos"
+      },
+      {
+        "id": 3,
+        "word": "verschiedene",
+        "pinyin": "",
+        "meaning": "vários/diferentes"
+      },
+      {
+        "id": 4,
+        "word": "Länder",
+        "pinyin": "",
+        "meaning": "países"
+      },
+      {
+        "id": 5,
+        "word": "gibt",
+        "pinyin": "",
+        "meaning": "há/existe"
+      }
+    ],
+    "id": "local-1780229043914-9",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ja. Das ist die Regel. Sie müssen zum Büro der Shanghai Entry-Exit-Behörde gehen. Gehen Sie bald. Nach der Antragstellung können Sie Ihr Visum in 7 Werktagen erhalten.",
+    "pinyin": "",
+    "translation": "A: Sim. Esta é a regra. Você precisa ir ao escritório do Bureau de Entrada e Saída de Xangai. Vá logo. Após a solicitação, você pode obter seu visto em 7 dias úteis.",
+    "tokens": [
+      "A:",
+      "Ja",
+      ".",
+      "Das",
+      "ist",
+      "die",
+      "Regel",
+      ".",
+      "Sie",
+      "müssen",
+      "zum",
+      "Büro",
+      "der",
+      "Shanghai",
+      "Entry",
+      "-",
+      "Exit",
+      "-",
+      "Behörde",
+      "gehen",
+      ".",
+      "Gehen",
+      "Sie",
+      "bald",
+      ".",
+      "Nach",
+      "der",
+      "Antragstellung",
+      "können",
+      "Sie",
+      "Ihr",
+      "Visum",
+      "in",
+      "7",
+      "Werktagen",
+      "erhalten",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Entry-Exit-Behörde",
+        "pinyin": "",
+        "meaning": "Bureau de entrada e saída"
+      },
+      {
+        "id": 2,
+        "word": "Werktagen",
+        "pinyin": "",
+        "meaning": "dias úteis"
+      },
+      {
+        "id": 3,
+        "word": "Antragstellung",
+        "pinyin": "",
+        "meaning": "solicitação"
+      },
+      {
+        "id": 4,
+        "word": "Visum",
+        "pinyin": "",
+        "meaning": "visto"
+      },
+      {
+        "id": 5,
+        "word": "Büro",
+        "pinyin": "",
+        "meaning": "escritório"
+      }
+    ],
+    "id": "local-1780229043914-10",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Okay. Danke!",
+    "pinyin": "",
+    "translation": "B: Certo. Obrigado!",
+    "tokens": [
+      "B:",
+      "Okay",
+      ".",
+      "Danke",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Okay",
+        "pinyin": "",
+        "meaning": "Certo"
+      },
+      {
+        "id": 2,
+        "word": "Danke",
+        "pinyin": "",
+        "meaning": "Obrigado"
+      }
+    ],
+    "id": "local-1780229043914-11",
+    "language": "Alemão"
+  }
+]

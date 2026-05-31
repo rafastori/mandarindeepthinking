@@ -1,0 +1,631 @@
+[
+  {
+    "chinese": "A: 어제 축구하다가 학교 교사 동거 1층 유리창 일부를 깨뜨렸습니다. 선생님이 공식적으로 사과하는 편지를 써야 한다고 하셨는데, 저는 이런 편지를 써본 적이 없어서 어떻게 써야 할지 모르겠습니다.",
+    "pinyin": "",
+    "translation": "A: Ontem, enquanto jogava futebol, quebrei uma parte do vidro no primeiro andar do dormitório dos funcionários da escola. O professor disse que preciso escrever uma carta de desculpas para me desculpar formalmente. Nunca escrevi uma antes. Como faço para escrevê-la?",
+    "tokens": [
+      "A:",
+      "어제",
+      "축구하다가",
+      "학교",
+      "교사",
+      "동거",
+      "1",
+      "층",
+      "유리창",
+      "일부를",
+      "깨뜨렸습니다",
+      ".",
+      "선생님이",
+      "공식적으로",
+      "사과하는",
+      "편지를",
+      "써야",
+      "한다고",
+      "하셨는데",
+      ",",
+      "저는",
+      "이런",
+      "편지를",
+      "써본",
+      "적이",
+      "없어서",
+      "어떻게",
+      "써야",
+      "할지",
+      "모르겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "축구",
+        "pinyin": "",
+        "meaning": "futebol"
+      },
+      {
+        "id": 2,
+        "word": "유리창",
+        "pinyin": "",
+        "meaning": "vidro/janela"
+      },
+      {
+        "id": 3,
+        "word": "교사 동거",
+        "pinyin": "",
+        "meaning": "dormitório dos professores"
+      },
+      {
+        "id": 4,
+        "word": "사과하는 편지",
+        "pinyin": "",
+        "meaning": "carta de desculpas"
+      },
+      {
+        "id": 5,
+        "word": "공식적으로",
+        "pinyin": "",
+        "meaning": "formalmente"
+      }
+    ],
+    "id": "local-1780232922797-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 그건 쉽습니다. 먼저 상대방의 분노가 가라앉도록 솔직하게 자신의 실수를 인정해야 합니다. 그 후에 실수를 저지른 이유를 분석하고 어려웠던 점을 설명하세요. 그런 다음 상대방이 자신의 실수를 이해하고 용서해 주기를 진심으로 요청하세요.",
+    "pinyin": "",
+    "translation": "B: Isso é fácil. Primeiro, você precisa admitir francamente seu erro para acalmar a raiva da outra pessoa. Depois, analise as razões pelas quais cometeu o erro e explique suas dificuldades. Em seguida, peça sinceramente que a outra pessoa entenda e perdoe seu erro.",
+    "tokens": [
+      "B:",
+      "그건",
+      "쉽습니다",
+      ".",
+      "먼저",
+      "상대방의",
+      "분노가",
+      "가라앉도록",
+      "솔직하게",
+      "자신의",
+      "실수를",
+      "인정해야",
+      "합니다",
+      ".",
+      "그",
+      "후에",
+      "실수를",
+      "저지른",
+      "이유를",
+      "분석하고",
+      "어려웠던",
+      "점을",
+      "설명하세요",
+      ".",
+      "그런",
+      "다음",
+      "상대방이",
+      "자신의",
+      "실수를",
+      "이해하고",
+      "용서해",
+      "주기를",
+      "진심으로",
+      "요청하세요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "솔직하게",
+        "pinyin": "",
+        "meaning": "francamente"
+      },
+      {
+        "id": 2,
+        "word": "실수",
+        "pinyin": "",
+        "meaning": "erro"
+      },
+      {
+        "id": 3,
+        "word": "인정",
+        "pinyin": "",
+        "meaning": "admissão"
+      },
+      {
+        "id": 4,
+        "word": "분노",
+        "pinyin": "",
+        "meaning": "raiva"
+      },
+      {
+        "id": 5,
+        "word": "분석",
+        "pinyin": "",
+        "meaning": "análise"
+      },
+      {
+        "id": 6,
+        "word": "용서",
+        "pinyin": "",
+        "meaning": "perdão"
+      },
+      {
+        "id": 7,
+        "word": "이해",
+        "pinyin": "",
+        "meaning": "entendimento"
+      }
+    ],
+    "id": "local-1780232922797-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 제가 생각할 수 있는 사과하는 세 단어는 이거예요. \"미안합니다.\"",
+    "pinyin": "",
+    "translation": "A: As três palavras de desculpa que consigo pensar são estas: \"Desculpe.\"",
+    "tokens": [
+      "A:",
+      "제가",
+      "생각할",
+      "수",
+      "있는",
+      "사과하는",
+      "세",
+      "단어는",
+      "이거예요",
+      ".",
+      "\"",
+      "미안합니다",
+      ".",
+      "\""
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사과",
+        "pinyin": "",
+        "meaning": "desculpa"
+      },
+      {
+        "id": 2,
+        "word": "단어",
+        "pinyin": "",
+        "meaning": "palavra"
+      },
+      {
+        "id": 3,
+        "word": "미안합니다",
+        "pinyin": "",
+        "meaning": "desculpe"
+      },
+      {
+        "id": 4,
+        "word": "생각",
+        "pinyin": "",
+        "meaning": "pensamento"
+      },
+      {
+        "id": 5,
+        "word": "세",
+        "pinyin": "",
+        "meaning": "três"
+      }
+    ],
+    "id": "local-1780232922797-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 물론 그 이상으로 더 많은 기술이 필요합니다. 실수를 과장해야 합니다.",
+    "pinyin": "",
+    "translation": "B: Claro, há mais habilidade envolvida do que isso. Você precisa exagerar seu erro.",
+    "tokens": [
+      "B:",
+      "물론",
+      "그",
+      "이상으로",
+      "더",
+      "많은",
+      "기술이",
+      "필요합니다",
+      ".",
+      "실수를",
+      "과장해야",
+      "합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "기술",
+        "pinyin": "",
+        "meaning": "habilidade"
+      },
+      {
+        "id": 2,
+        "word": "실수",
+        "pinyin": "",
+        "meaning": "erro"
+      },
+      {
+        "id": 3,
+        "word": "과장",
+        "pinyin": "",
+        "meaning": "exagero"
+      },
+      {
+        "id": 4,
+        "word": "필요합니다",
+        "pinyin": "",
+        "meaning": "é necessário"
+      },
+      {
+        "id": 5,
+        "word": "물론",
+        "pinyin": "",
+        "meaning": "claro"
+      }
+    ],
+    "id": "local-1780232922797-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 아, 그럼 더 진지하게 표현해야겠네요.",
+    "pinyin": "",
+    "translation": "A: Ah, então tenho que expressá-lo de forma mais séria.",
+    "tokens": [
+      "A:",
+      "아",
+      ",",
+      "그럼",
+      "더",
+      "진지하게",
+      "표현해야겠네요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "진지하게",
+        "pinyin": "",
+        "meaning": "séria ou seriamente"
+      },
+      {
+        "id": 2,
+        "word": "표현",
+        "pinyin": "",
+        "meaning": "expressão ou expressar"
+      },
+      {
+        "id": 3,
+        "word": "더",
+        "pinyin": "",
+        "meaning": "mais"
+      },
+      {
+        "id": 4,
+        "word": "그럼",
+        "pinyin": "",
+        "meaning": "então ou nesse caso"
+      },
+      {
+        "id": 5,
+        "word": "해야겠네요",
+        "pinyin": "",
+        "meaning": "tenho que fazer ou devo fazer"
+      }
+    ],
+    "id": "local-1780232922797-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 또한 상대방을 칭찬해야 합니다. 칭찬을 받은 후 대부분의 사람들은 무의식적으로 그 칭찬의 말에 따라 행동합니다.",
+    "pinyin": "",
+    "translation": "B: Além disso, você também deve elogiar a outra pessoa. Após receberem elogios, a maioria das pessoas inconscientemente age de acordo com as palavras do elogio.",
+    "tokens": [
+      "B:",
+      "또한",
+      "상대방을",
+      "칭찬해야",
+      "합니다",
+      ".",
+      "칭찬을",
+      "받은",
+      "후",
+      "대부분의",
+      "사람들은",
+      "무의식적으로",
+      "그",
+      "칭찬의",
+      "말에",
+      "따라",
+      "행동합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "칭찬",
+        "pinyin": "",
+        "meaning": "elogio"
+      },
+      {
+        "id": 2,
+        "word": "상대방",
+        "pinyin": "",
+        "meaning": "a outra pessoa"
+      },
+      {
+        "id": 3,
+        "word": "무의식적으로",
+        "pinyin": "",
+        "meaning": "inconscientemente"
+      },
+      {
+        "id": 4,
+        "word": "행동",
+        "pinyin": "",
+        "meaning": "agir"
+      },
+      {
+        "id": 5,
+        "word": "따라",
+        "pinyin": "",
+        "meaning": "de acordo com"
+      }
+    ],
+    "id": "local-1780232922797-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 나머지는 제가 쓰도록 도와드릴까요?",
+    "pinyin": "",
+    "translation": "A: Posso ajudar você com o resto, ou seja, escrevê-lo?",
+    "tokens": [
+      "A:",
+      "나머지는",
+      "제가",
+      "쓰도록",
+      "도와드릴까요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "나머지",
+        "pinyin": "",
+        "meaning": "resto"
+      },
+      {
+        "id": 2,
+        "word": "제가",
+        "pinyin": "",
+        "meaning": "eu (humble)"
+      },
+      {
+        "id": 3,
+        "word": "드릴까요",
+        "pinyin": "",
+        "meaning": "oferecer ajuda (polite)"
+      }
+    ],
+    "id": "local-1780232922797-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 네. 이렇게 적을 수 있습니다: 교내 지도자들의 교육적 도움과 깊은 자기 성찰을 통해 저는 저의 실수가 얼마나 심각한지 깨달았습니다. 이에 대해 학교와 선생님들께 진심으로 사과드립니다. 또한 이번 사건에서 저를 지적하고, 일깨워 주며, 챙겨 주신 선생님들과 동료 학생들에게 깊은 감사를 전합니다. 전교생으로서 저는 우리 학교를 깊이 사랑하며, 이 우발적인 실수를 통해 저는 항상 안전 의식을 높이고 공을 다룰 때 기술을 향상시켜야 한다는 것을 깨달았습니다. 동시에 저는 제 말과 행동이 학교에 미치는 영향에 더 주의를 기울여야 한다는 것을 느꼈습니다. 저는 이 교훈을 출발점으로 삼아 도덕적, 지적, 신체적으로 균형 있게 발전하는 좋은 학생이 되기 위해 노력하겠습니다. 마지막으로 다시 한번 사과드립니다.",
+    "pinyin": "",
+    "translation": "B: Sim. Posso escrever assim: Através de profunda autoexame, bem como da ajuda educacional dos líderes da escola, percebi a gravidade do meu erro. A respeito disso, expresso meus mais sinceros pedidos de desculpa à escola e aos professores. Também quero transmitir meus sinceros agradecimentos aos professores e colegas de classe que me criticaram, me alertaram e me cuidaram neste incidente. Como estudante em tempo integral, amo profundamente o meu ambiente escolar, e através deste erro não intencional, percebi que preciso aumentar minha consciência de segurança a todo momento e melhorar minha técnica ao jogar bola. Ao mesmo tempo, senti que devo prestar mais atenção ao efeito das minhas palavras e ações na escola. Usarei esta lição como ponto de partida para me esforçar e me tornar um bom aluno que se desenvolve de forma abrangente: moral, intelectualmente e fisicamente. Por fim, expresso novamente meus pedidos de desculpas.",
+    "tokens": [
+      "B:",
+      "네",
+      ".",
+      "이렇게",
+      "적을",
+      "수",
+      "있습니다",
+      ":",
+      "교내",
+      "지도자들의",
+      "교육적",
+      "도움과",
+      "깊은",
+      "자기",
+      "성찰을",
+      "통해",
+      "저는",
+      "저의",
+      "실수가",
+      "얼마나",
+      "심각한지",
+      "깨달았습니다",
+      ".",
+      "이에",
+      "대해",
+      "학교와",
+      "선생님들께",
+      "진심으로",
+      "사과드립니다",
+      ".",
+      "또한",
+      "이번",
+      "사건에서",
+      "저를",
+      "지적하고",
+      ",",
+      "일깨워",
+      "주며",
+      ",",
+      "챙겨",
+      "주신",
+      "선생님들과",
+      "동료",
+      "학생들에게",
+      "깊은",
+      "감사를",
+      "전합니다",
+      ".",
+      "전교생으로서",
+      "저는",
+      "우리",
+      "학교를",
+      "깊이",
+      "사랑하며",
+      ",",
+      "이",
+      "우발적인",
+      "실수를",
+      "통해",
+      "저는",
+      "항상",
+      "안전",
+      "의식을",
+      "높이고",
+      "공을",
+      "다룰",
+      "때",
+      "기술을",
+      "향상시켜야",
+      "한다는",
+      "것을",
+      "깨달았습니다",
+      ".",
+      "동시에",
+      "저는",
+      "제",
+      "말과",
+      "행동이",
+      "학교에",
+      "미치는",
+      "영향에",
+      "더",
+      "주의를",
+      "기울여야",
+      "한다는",
+      "것을",
+      "느꼈습니다",
+      ".",
+      "저는",
+      "이",
+      "교훈을",
+      "출발점으로",
+      "삼아",
+      "도덕적",
+      ",",
+      "지적",
+      ",",
+      "신체적으로",
+      "균형",
+      "있게",
+      "발전하는",
+      "좋은",
+      "학생이",
+      "되기",
+      "위해",
+      "노력하겠습니다",
+      ".",
+      "마지막으로",
+      "다시",
+      "한번",
+      "사과드립니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "자기 성찰",
+        "pinyin": "",
+        "meaning": "autoexame"
+      },
+      {
+        "id": 2,
+        "word": "사과드립니다",
+        "pinyin": "",
+        "meaning": "peço desculpas"
+      },
+      {
+        "id": 3,
+        "word": "안전 의식",
+        "pinyin": "",
+        "meaning": "consciência de segurança"
+      },
+      {
+        "id": 4,
+        "word": "기술",
+        "pinyin": "",
+        "meaning": "técnica"
+      },
+      {
+        "id": 5,
+        "word": "균형 있게",
+        "pinyin": "",
+        "meaning": "de forma equilibrada"
+      },
+      {
+        "id": 6,
+        "word": "도덕적",
+        "pinyin": "",
+        "meaning": "moral"
+      }
+    ],
+    "id": "local-1780232922797-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 저는 당신을 정말 존경합니다. 당신은 학문의 리더임을 입증했습니다. 그래서 당신이 말한 것을 기록하겠습니다!",
+    "pinyin": "",
+    "translation": "A: Eu admiro você muito. Você provou ser um líder nos estudos. Então, eu escreverei o que você disse!",
+    "tokens": [
+      "A:",
+      "저는",
+      "당신을",
+      "정말",
+      "존경합니다",
+      ".",
+      "당신은",
+      "학문의",
+      "리더임을",
+      "입증했습니다",
+      ".",
+      "그래서",
+      "당신이",
+      "말한",
+      "것을",
+      "기록하겠습니다",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "존경합니다",
+        "pinyin": "",
+        "meaning": "admira/respeito"
+      },
+      {
+        "id": 2,
+        "word": "입증했습니다",
+        "pinyin": "",
+        "meaning": "provou/demonstrou"
+      },
+      {
+        "id": 3,
+        "word": "리더",
+        "pinyin": "",
+        "meaning": "líder"
+      },
+      {
+        "id": 4,
+        "word": "학문",
+        "pinyin": "",
+        "meaning": "estudos/academia"
+      },
+      {
+        "id": 5,
+        "word": "기록하겠습니다",
+        "pinyin": "",
+        "meaning": "escreverei/registarei"
+      }
+    ],
+    "id": "local-1780232922797-8",
+    "language": "Coreano"
+  }
+]

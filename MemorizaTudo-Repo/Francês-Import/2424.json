@@ -1,0 +1,563 @@
+[
+  {
+    "chinese": "A: Tu es Bélier. Il est dit en ligne que le Bélier est un signe de feu. Cela représente tout depuis le début. C'est une personne qui a du talent pour le leadership. Les femmes qui sont Bélier peuvent presque toujours devenir des femmes d'affaires exceptionnelles, et en même temps peuvent être bonnes pour être une femme au foyer. C'est beaucoup comme toi !",
+    "pinyin": "",
+    "translation": "A: Você é Áries. Dizem online que Áries é um signo de fogo. Isso representa tudo desde o início. É uma pessoa que tem talento para liderança. Mulheres que são Áries quase sempre podem se tornar mulheres de negócios excepcionais, e ao mesmo tempo podem ser boas em ser donas de casa. É muito parecido com você!",
+    "tokens": [
+      "A:",
+      "Tu",
+      "es",
+      "Bélier",
+      ".",
+      "Il",
+      "est",
+      "dit",
+      "en",
+      "ligne",
+      "que",
+      "le",
+      "Bélier",
+      "est",
+      "un",
+      "signe",
+      "de",
+      "feu",
+      ".",
+      "Cela",
+      "représente",
+      "tout",
+      "depuis",
+      "le",
+      "début",
+      ".",
+      "C'est",
+      "une",
+      "personne",
+      "qui",
+      "a",
+      "du",
+      "talent",
+      "pour",
+      "le",
+      "leadership",
+      ".",
+      "Les",
+      "femmes",
+      "qui",
+      "sont",
+      "Bélier",
+      "peuvent",
+      "presque",
+      "toujours",
+      "devenir",
+      "des",
+      "femmes",
+      "d'affaires",
+      "exceptionnelles",
+      ",",
+      "et",
+      "en",
+      "même",
+      "temps",
+      "peuvent",
+      "être",
+      "bonnes",
+      "pour",
+      "être",
+      "une",
+      "femme",
+      "au",
+      "foyer",
+      ".",
+      "C'est",
+      "beaucoup",
+      "comme",
+      "toi",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Bélier",
+        "pinyin": "",
+        "meaning": "Áries"
+      },
+      {
+        "id": 2,
+        "word": "signe de feu",
+        "pinyin": "",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 3,
+        "word": "leadership",
+        "pinyin": "",
+        "meaning": "liderança"
+      },
+      {
+        "id": 4,
+        "word": "femmes d'affaires",
+        "pinyin": "",
+        "meaning": "mulheres de negócios"
+      },
+      {
+        "id": 5,
+        "word": "femme au foyer",
+        "pinyin": "",
+        "meaning": "dona de casa"
+      }
+    ],
+    "id": "local-1780236941590-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Je suppose que oui. Et la personnalité ?",
+    "pinyin": "",
+    "translation": "B: Acho que sim. E a personalidade?",
+    "tokens": [
+      "B:",
+      "Je",
+      "suppose",
+      "que",
+      "oui",
+      ".",
+      "Et",
+      "la",
+      "personnalité",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Je suppose",
+        "pinyin": "",
+        "meaning": "Eu suponho / Acho"
+      },
+      {
+        "id": 2,
+        "word": "personnalité",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 3,
+        "word": "Et",
+        "pinyin": "",
+        "meaning": "E"
+      }
+    ],
+    "id": "local-1780236941590-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les Béliers sont comme de petits enfants : ils révèlent leurs vrais sentiments, sont francs et ouverts. Cependant, ils sont aussi égoïstes et immatures. Ils sont très gentils et ne profiteront pas de leurs amis, mais leur plus grand défaut est leur amour-propre. Ils ne peuvent jamais admettre qu'ils ont fait une erreur.",
+    "pinyin": "",
+    "translation": "A: Os Áries são como crianças pequenas - revelando seus verdadeiros sentimentos, francos e abertos. No entanto, eles também são egoístas e imaturos. Eles são muito gentis e não tirarão vantagem de seus amigos, mas sua maior falha é o amor próprio. Eles nunca podem admitir que cometeram um erro.",
+    "tokens": [
+      "A:",
+      "Les",
+      "Béliers",
+      "sont",
+      "comme",
+      "de",
+      "petits",
+      "enfants",
+      ":",
+      "ils",
+      "révèlent",
+      "leurs",
+      "vrais",
+      "sentiments",
+      ",",
+      "sont",
+      "francs",
+      "et",
+      "ouverts",
+      ".",
+      "Cependant",
+      ",",
+      "ils",
+      "sont",
+      "aussi",
+      "égoïstes",
+      "et",
+      "immatures",
+      ".",
+      "Ils",
+      "sont",
+      "très",
+      "gentils",
+      "et",
+      "ne",
+      "profiteront",
+      "pas",
+      "de",
+      "leurs",
+      "amis",
+      ",",
+      "mais",
+      "leur",
+      "plus",
+      "grand",
+      "défaut",
+      "est",
+      "leur",
+      "amour",
+      "-",
+      "propre",
+      ".",
+      "Ils",
+      "ne",
+      "peuvent",
+      "jamais",
+      "admettre",
+      "qu'ils",
+      "ont",
+      "fait",
+      "une",
+      "erreur",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Béliers",
+        "pinyin": "",
+        "meaning": "Áries (signo zodiacal)"
+      },
+      {
+        "id": 2,
+        "word": "francs",
+        "pinyin": "",
+        "meaning": "francos/sinceros"
+      },
+      {
+        "id": 3,
+        "word": "égoïstes",
+        "pinyin": "",
+        "meaning": "egoístas"
+      },
+      {
+        "id": 4,
+        "word": "immatures",
+        "pinyin": "",
+        "meaning": "imaturos"
+      },
+      {
+        "id": 5,
+        "word": "amour-propre",
+        "pinyin": "",
+        "meaning": "amor próprio/vaidade"
+      },
+      {
+        "id": 6,
+        "word": "admettre",
+        "pinyin": "",
+        "meaning": "admitir"
+      }
+    ],
+    "id": "local-1780236941590-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Hé hé. Tu sais pour ça...",
+    "pinyin": "",
+    "translation": "B: Hehe. Você sabe sobre isso...",
+    "tokens": [
+      "B:",
+      "Hé",
+      "hé",
+      ".",
+      "Tu",
+      "sais",
+      "pour",
+      "ça",
+      ".",
+      ".",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Hé hé",
+        "pinyin": "",
+        "meaning": "riso"
+      },
+      {
+        "id": 2,
+        "word": "Tu sais",
+        "pinyin": "",
+        "meaning": "você sabe"
+      },
+      {
+        "id": 3,
+        "word": "pour",
+        "pinyin": "",
+        "meaning": "sobre"
+      },
+      {
+        "id": 4,
+        "word": "ça",
+        "pinyin": "",
+        "meaning": "isso"
+      }
+    ],
+    "id": "local-1780236941590-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Les Béliers ont un caractère vif et s'irritent facilement. Ils n'aiment pas fréquenter des personnes trop détendues. S'ils se disputent avec vous, cela ne signifie pas qu'ils sont vraiment en colère. S'ils le sont vraiment, ils vous ignoreront tout simplement !",
+    "pinyin": "",
+    "translation": "A: As pessoas que são Áries têm um temperamento rápido e se aborrecem facilmente. Elas não gostam de se associar com pessoas tranquilas. Se elas brigarem com você, não significa que estejam realmente bravas. Se estiverem realmente bravas, elas simplesmente ignorarão você!",
+    "tokens": [
+      "A:",
+      "Les",
+      "Béliers",
+      "ont",
+      "un",
+      "caractère",
+      "vif",
+      "et",
+      "s'irritent",
+      "facilement",
+      ".",
+      "Ils",
+      "n'aiment",
+      "pas",
+      "fréquenter",
+      "des",
+      "personnes",
+      "trop",
+      "détendues",
+      ".",
+      "S'ils",
+      "se",
+      "disputent",
+      "avec",
+      "vous",
+      ",",
+      "cela",
+      "ne",
+      "signifie",
+      "pas",
+      "qu'ils",
+      "sont",
+      "vraiment",
+      "en",
+      "colère",
+      ".",
+      "S'ils",
+      "le",
+      "sont",
+      "vraiment",
+      ",",
+      "ils",
+      "vous",
+      "ignoreront",
+      "tout",
+      "simplement",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Béliers",
+        "pinyin": "",
+        "meaning": "Áries (signo zodiacal)"
+      },
+      {
+        "id": 2,
+        "word": "caractère vif",
+        "pinyin": "",
+        "meaning": "temperamento rápido"
+      },
+      {
+        "id": 3,
+        "word": "s'irritent facilement",
+        "pinyin": "",
+        "meaning": "se aborrecem facilmente"
+      },
+      {
+        "id": 4,
+        "word": "trop détendues",
+        "pinyin": "",
+        "meaning": "muito tranquilas"
+      },
+      {
+        "id": 5,
+        "word": "se disputent",
+        "pinyin": "",
+        "meaning": "brigam"
+      },
+      {
+        "id": 6,
+        "word": "en colère",
+        "pinyin": "",
+        "meaning": "bravas"
+      },
+      {
+        "id": 7,
+        "word": "ignoreront",
+        "pinyin": "",
+        "meaning": "ignorarão"
+      }
+    ],
+    "id": "local-1780236941590-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Donc, sous cet angle, je ne suis pas compatible avec un Vierge, n'est-ce pas ?",
+    "pinyin": "",
+    "translation": "B: Então, sob esse ponto de vista, eu não sou compatível com um Virgem, não é?",
+    "tokens": [
+      "B:",
+      "Donc",
+      ",",
+      "sous",
+      "cet",
+      "angle",
+      ",",
+      "je",
+      "ne",
+      "suis",
+      "pas",
+      "compatible",
+      "avec",
+      "un",
+      "Vierge",
+      ",",
+      "n'est",
+      "-",
+      "ce",
+      "pas",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vierge",
+        "pinyin": "",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 2,
+        "word": "angle",
+        "pinyin": "",
+        "meaning": "ângulo, ponto de vista"
+      },
+      {
+        "id": 3,
+        "word": "Donc",
+        "pinyin": "",
+        "meaning": "Portanto, então"
+      }
+    ],
+    "id": "local-1780236941590-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Oui. Les Vierge aiment vraiment faire la fine bouche et sont aussi nerveuses. Votre vie ensemble devrait avoir beaucoup de problèmes.",
+    "pinyin": "",
+    "translation": "A: Sim. Os Virgos realmente gostam de fazer críticas excessivas e também são nervosos. Sua vida juntos deveria ter muitos problemas.",
+    "tokens": [
+      "A:",
+      "Oui",
+      ".",
+      "Les",
+      "Vierge",
+      "aiment",
+      "vraiment",
+      "faire",
+      "la",
+      "fine",
+      "bouche",
+      "et",
+      "sont",
+      "aussi",
+      "nerveuses",
+      ".",
+      "Votre",
+      "vie",
+      "ensemble",
+      "devrait",
+      "avoir",
+      "beaucoup",
+      "de",
+      "problèmes",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vierge",
+        "pinyin": "",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 2,
+        "word": "faire la fine bouche",
+        "pinyin": "",
+        "meaning": "ser exigente/crítico"
+      },
+      {
+        "id": 3,
+        "word": "nerveuses",
+        "pinyin": "",
+        "meaning": "nervosas"
+      },
+      {
+        "id": 4,
+        "word": "ensemble",
+        "pinyin": "",
+        "meaning": "juntos"
+      },
+      {
+        "id": 5,
+        "word": "problèmes",
+        "pinyin": "",
+        "meaning": "problemas"
+      }
+    ],
+    "id": "local-1780236941590-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Avec quel signe astrologique suis-je compatible ?",
+    "pinyin": "",
+    "translation": "B: Com qual signo astrológico eu sou compatível?",
+    "tokens": [
+      "B:",
+      "Avec",
+      "quel",
+      "signe",
+      "astrologique",
+      "suis",
+      "-",
+      "je",
+      "compatible",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "signe astrologique",
+        "pinyin": "",
+        "meaning": "signo astrológico"
+      },
+      {
+        "id": 2,
+        "word": "compatible",
+        "pinyin": "",
+        "meaning": "compatível"
+      },
+      {
+        "id": 3,
+        "word": "suis-je",
+        "pinyin": "",
+        "meaning": "eu sou"
+      }
+    ],
+    "id": "local-1780236941590-7",
+    "language": "Francês"
+  }
+]

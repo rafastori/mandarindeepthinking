@@ -1,0 +1,942 @@
+[
+  {
+    "chinese": "A: 退職届を出します。",
+    "pinyin": "",
+    "translation": "A: Quero entregar minha carta de demissão.",
+    "tokens": [
+      "A:",
+      "退職",
+      "届",
+      "を",
+      "出し",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "退職",
+        "pinyin": "",
+        "meaning": "demissão"
+      },
+      {
+        "id": 2,
+        "word": "届",
+        "pinyin": "",
+        "meaning": "notificação"
+      }
+    ],
+    "id": "local-1780260831605-0",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: えっ？いきなり辞めたいってどういうこと？",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer demitir-se de repente?",
+    "tokens": [
+      "B:",
+      "えっ",
+      "？",
+      "いきなり",
+      "辞め",
+      "たい",
+      "って",
+      "どういう",
+      "こと",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "えっ",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "いきなり",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "辞めたい",
+        "pinyin": "",
+        "meaning": "querer demitir-se"
+      },
+      {
+        "id": 4,
+        "word": "どういうこと",
+        "pinyin": "",
+        "meaning": "o que significa"
+      }
+    ],
+    "id": "local-1780260831605-1",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: なぜなら、月収が低すぎるからです。それに、職場環境も良くありません。毎日些細な仕事ばかりで、達成感がありません。これは私の期待とはほど遠いです。",
+    "pinyin": "",
+    "translation": "A: Bem, a renda mensal é muito baixa. Além disso, o ambiente de trabalho também não é bom. Todo dia eu apenas faço pequenas tarefas insignificantes e não há sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "なぜなら",
+      "、",
+      "月収",
+      "が",
+      "低",
+      "すぎる",
+      "から",
+      "です",
+      "。",
+      "それ",
+      "に",
+      "、",
+      "職場",
+      "環境",
+      "も",
+      "良く",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "毎日",
+      "些細",
+      "な",
+      "仕事",
+      "ばかり",
+      "で",
+      "、",
+      "達成",
+      "感",
+      "が",
+      "あり",
+      "ませ",
+      "ん",
+      "。",
+      "これ",
+      "は",
+      "私",
+      "の",
+      "期待",
+      "と",
+      "は",
+      "ほど遠い",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "月収",
+        "pinyin": "",
+        "meaning": "renda mensal"
+      },
+      {
+        "id": 2,
+        "word": "職場環境",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "些細な",
+        "pinyin": "",
+        "meaning": "insignificante"
+      },
+      {
+        "id": 4,
+        "word": "達成感",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 5,
+        "word": "期待",
+        "pinyin": "",
+        "meaning": "esperança"
+      }
+    ],
+    "id": "local-1780260831605-2",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 今、あなたが望むような仕事はどこで見つかるでしょうか？あなたの能力が追いつかないような高い基準を持つべきではありません。",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deveria ter padrões altos demais que suas habilidades não consigam alcançar.",
+    "tokens": [
+      "B:",
+      "今",
+      "、",
+      "あなた",
+      "が",
+      "望む",
+      "よう",
+      "な",
+      "仕事",
+      "は",
+      "どこ",
+      "で",
+      "見つかる",
+      "でしょ",
+      "う",
+      "か",
+      "？",
+      "あなた",
+      "の",
+      "能力",
+      "が",
+      "追いつか",
+      "ない",
+      "よう",
+      "な",
+      "高い",
+      "基準",
+      "を",
+      "持つ",
+      "べき",
+      "で",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今",
+        "pinyin": "",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "望む",
+        "pinyin": "",
+        "meaning": "desejar"
+      },
+      {
+        "id": 3,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 4,
+        "word": "能力",
+        "pinyin": "",
+        "meaning": "habilidade"
+      },
+      {
+        "id": 5,
+        "word": "基準",
+        "pinyin": "",
+        "meaning": "padrão"
+      },
+      {
+        "id": 6,
+        "word": "高い",
+        "pinyin": "",
+        "meaning": "alto"
+      }
+    ],
+    "id": "local-1780260831605-3",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 問題は、自分の価値に気づいていなかったこと、そして今、周りの同僚はみんな良いコネを持っていることです。いつか昇進の番が回ってくるのか、遠い未来のことなのかさえ分かりません。",
+    "pinyin": "",
+    "translation": "A: O problema é que eu não percebi meu próprio valor, e agora todos os meus colegas ao meu redor têm bons contatos. E não sei se, apenas no futuro distante, será a minha vez de ser promovido.",
+    "tokens": [
+      "A:",
+      "問題",
+      "は",
+      "、",
+      "自分",
+      "の",
+      "価値",
+      "に",
+      "気づい",
+      "て",
+      "い",
+      "なかっ",
+      "た",
+      "こと",
+      "、",
+      "そして",
+      "今",
+      "、",
+      "周り",
+      "の",
+      "同僚",
+      "は",
+      "みんな",
+      "良い",
+      "コネ",
+      "を",
+      "持っ",
+      "て",
+      "いる",
+      "こと",
+      "です",
+      "。",
+      "いつか",
+      "昇進",
+      "の",
+      "番",
+      "が",
+      "回っ",
+      "て",
+      "くる",
+      "の",
+      "か",
+      "、",
+      "遠い",
+      "未来",
+      "の",
+      "こと",
+      "な",
+      "の",
+      "か",
+      "さえ",
+      "分かり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "価値",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 2,
+        "word": "同僚",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 3,
+        "word": "コネ",
+        "pinyin": "",
+        "meaning": "conexões"
+      },
+      {
+        "id": 4,
+        "word": "昇進",
+        "pinyin": "",
+        "meaning": "promoção"
+      },
+      {
+        "id": 5,
+        "word": "問題",
+        "pinyin": "",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780260831605-4",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: いいですね。では、どんな仕事に転職したいか考えましたか？",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Então, você já pensou em que tipo de emprego quer mudar?",
+    "tokens": [
+      "B:",
+      "いい",
+      "です",
+      "ね",
+      "。",
+      "で",
+      "は",
+      "、",
+      "どんな",
+      "仕事",
+      "に",
+      "転職",
+      "し",
+      "たい",
+      "か",
+      "考え",
+      "まし",
+      "た",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "転職",
+        "pinyin": "",
+        "meaning": "mudança de emprego"
+      },
+      {
+        "id": 2,
+        "word": "仕事",
+        "pinyin": "",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 3,
+        "word": "考えましたか",
+        "pinyin": "",
+        "meaning": "pensou?"
+      },
+      {
+        "id": 4,
+        "word": "どんな",
+        "pinyin": "",
+        "meaning": "que tipo de"
+      },
+      {
+        "id": 5,
+        "word": "いいですね",
+        "pinyin": "",
+        "meaning": "tudo bem / ótimo"
+      }
+    ],
+    "id": "local-1780260831605-5",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: リクルート会社で働いていませんか？あなたのコネクションは私のものより広範に違いないでしょう。推薦をいただけますか？大学での専攻は広告デザインでした。奇妙な一連の出来事が重なった結果、編集者になったのです。広告会社を探していただけますか？",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma empresa de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia dar uma recomendação? Você sabe que minha graduação na universidade foi em design de publicidade. Foi apenas o resultado de uma série estranha de circunstâncias que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "リクルート",
+      "会社",
+      "で",
+      "働い",
+      "て",
+      "い",
+      "ませ",
+      "ん",
+      "か",
+      "？",
+      "あなた",
+      "の",
+      "コネクション",
+      "は",
+      "私",
+      "の",
+      "もの",
+      "より",
+      "広範",
+      "に",
+      "違い",
+      "ない",
+      "でしょ",
+      "う",
+      "。",
+      "推薦",
+      "を",
+      "いただけ",
+      "ます",
+      "か",
+      "？",
+      "大学",
+      "で",
+      "の",
+      "専攻",
+      "は",
+      "広告",
+      "デザイン",
+      "でし",
+      "た",
+      "。",
+      "奇妙",
+      "な",
+      "一連",
+      "の",
+      "出来事",
+      "が",
+      "重なっ",
+      "た",
+      "結果",
+      "、",
+      "編集",
+      "者",
+      "に",
+      "なっ",
+      "た",
+      "の",
+      "です",
+      "。",
+      "広告",
+      "会社",
+      "を",
+      "探し",
+      "て",
+      "いただけ",
+      "ます",
+      "か",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "リクルート会社",
+        "pinyin": "",
+        "meaning": "empresa de recrutamento"
+      },
+      {
+        "id": 2,
+        "word": "コネクション",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 3,
+        "word": "推薦",
+        "pinyin": "",
+        "meaning": "recomendação"
+      },
+      {
+        "id": 4,
+        "word": "広告デザイン",
+        "pinyin": "",
+        "meaning": "design de publicidade"
+      },
+      {
+        "id": 5,
+        "word": "編集者",
+        "pinyin": "",
+        "meaning": "editor"
+      },
+      {
+        "id": 6,
+        "word": "広告会社",
+        "pinyin": "",
+        "meaning": "empresa de publicidade"
+      }
+    ],
+    "id": "local-1780260831605-6",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 少し難しいですね。大手広告会社の基準は高いです。評判の良い広告会社であれば、あなたが望む報酬を提供できないところはありません。",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos das empresas de publicidade bem conhecidas são altos. Nenhuma empresa de publicidade respeitável seria incapaz de fornecer a compensação que você deseja.",
+    "tokens": [
+      "B:",
+      "少し",
+      "難しい",
+      "です",
+      "ね",
+      "。",
+      "大手",
+      "広告",
+      "会社",
+      "の",
+      "基準",
+      "は",
+      "高い",
+      "です",
+      "。",
+      "評判",
+      "の",
+      "良い",
+      "広告",
+      "会社",
+      "で",
+      "あれ",
+      "ば",
+      "、",
+      "あなた",
+      "が",
+      "望む",
+      "報酬",
+      "を",
+      "提供",
+      "でき",
+      "ない",
+      "ところ",
+      "は",
+      "あり",
+      "ませ",
+      "ん",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "難しい",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "大手",
+        "pinyin": "",
+        "meaning": "grande empresa / líder de mercado"
+      },
+      {
+        "id": 3,
+        "word": "広告会社",
+        "pinyin": "",
+        "meaning": "empresa de publicidade"
+      },
+      {
+        "id": 4,
+        "word": "基準",
+        "pinyin": "",
+        "meaning": "padrão / critério"
+      },
+      {
+        "id": 5,
+        "word": "報酬",
+        "pinyin": "",
+        "meaning": "remuneração / compensação"
+      },
+      {
+        "id": 6,
+        "word": "評判",
+        "pinyin": "",
+        "meaning": "reputação / fama"
+      }
+    ],
+    "id": "local-1780260831605-7",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: 本当です。じゃあ、私がビジネスを始めることについてどう思いますか？広告業界の参入障壁は非常に低いと言われています。場所を借りて、コンピュータを数台買えば、すぐに事業を始めることができます。実は、初期投資として使える数十万円の資金を手持ちで持っています。",
+    "pinyin": "",
+    "translation": "A: É verdade. Então, o que você acha de eu começar um negócio? Dizem que os requisitos para o campo da publicidade são muito baixos. Você só precisa alugar um local, comprar alguns computadores e então pode começar a fazer negócios. Por acaso, tenho em mãos algumas centenas de milhares que poderiam ser o capital inicial.",
+    "tokens": [
+      "A:",
+      "本当",
+      "です",
+      "。",
+      "じゃあ",
+      "、",
+      "私",
+      "が",
+      "ビジネス",
+      "を",
+      "始める",
+      "こと",
+      "について",
+      "どう",
+      "思い",
+      "ます",
+      "か",
+      "？",
+      "広告",
+      "業界",
+      "の",
+      "参入",
+      "障壁",
+      "は",
+      "非常",
+      "に",
+      "低い",
+      "と",
+      "言わ",
+      "れ",
+      "て",
+      "い",
+      "ます",
+      "。",
+      "場所",
+      "を",
+      "借り",
+      "て",
+      "、",
+      "コンピュータ",
+      "を",
+      "数",
+      "台",
+      "買え",
+      "ば",
+      "、",
+      "すぐ",
+      "に",
+      "事業",
+      "を",
+      "始める",
+      "こと",
+      "が",
+      "でき",
+      "ます",
+      "。",
+      "実は",
+      "、",
+      "初期",
+      "投資",
+      "として",
+      "使える",
+      "数",
+      "十",
+      "万",
+      "円",
+      "の",
+      "資金",
+      "を",
+      "手持ち",
+      "で",
+      "持っ",
+      "て",
+      "い",
+      "ます",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "参入障壁",
+        "pinyin": "",
+        "meaning": "barreira de entrada"
+      },
+      {
+        "id": 2,
+        "word": "広告業界",
+        "pinyin": "",
+        "meaning": "indústria publicitária"
+      },
+      {
+        "id": 3,
+        "word": "初期投資",
+        "pinyin": "",
+        "meaning": "investimento inicial"
+      },
+      {
+        "id": 4,
+        "word": "資金",
+        "pinyin": "",
+        "meaning": "capital/fundos"
+      },
+      {
+        "id": 5,
+        "word": "事業",
+        "pinyin": "",
+        "meaning": "negócio/empresa"
+      }
+    ],
+    "id": "local-1780260831605-8",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: 起業するのは実際には良いアイデアですが、パートナーを見つけ、さらに顧客を引き込む方法を考える必要があります。これはそれほど簡単ではなく、忍耐だけでなく、重要な競争力である創造性も必要です。",
+    "pinyin": "",
+    "translation": "B: Empreender é, na verdade, uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "起業",
+      "する",
+      "の",
+      "は",
+      "実際",
+      "に",
+      "は",
+      "良い",
+      "アイデア",
+      "です",
+      "が",
+      "、",
+      "パートナー",
+      "を",
+      "見つけ",
+      "、",
+      "さらに",
+      "顧客",
+      "を",
+      "引き込む",
+      "方法",
+      "を",
+      "考える",
+      "必要",
+      "が",
+      "あり",
+      "ます",
+      "。",
+      "これ",
+      "は",
+      "それほど",
+      "簡単",
+      "で",
+      "は",
+      "なく",
+      "、",
+      "忍耐",
+      "だけ",
+      "で",
+      "なく",
+      "、",
+      "重要",
+      "な",
+      "競争",
+      "力",
+      "で",
+      "ある",
+      "創造",
+      "性",
+      "も",
+      "必要",
+      "です",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "起業",
+        "pinyin": "",
+        "meaning": "empreender"
+      },
+      {
+        "id": 2,
+        "word": "パートナー",
+        "pinyin": "",
+        "meaning": "sócio"
+      },
+      {
+        "id": 3,
+        "word": "顧客",
+        "pinyin": "",
+        "meaning": "clientes"
+      },
+      {
+        "id": 4,
+        "word": "忍耐",
+        "pinyin": "",
+        "meaning": "paciência"
+      },
+      {
+        "id": 5,
+        "word": "創造性",
+        "pinyin": "",
+        "meaning": "criatividade"
+      }
+    ],
+    "id": "local-1780260831605-9",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "A: うん、わかる。昔のクラスメートを何人か誘って、一緒に仕事をするつもりだよ。広告業界には本気で興味があるから、簡単に諦めたりしないよ。",
+    "pinyin": "",
+    "translation": "A: É, eu sei. Planejo chamar alguns antigos colegas de classe para trabalhar comigo. Publicidade é algo em que tenho um interesse sincero, então não vou desistir facilmente.",
+    "tokens": [
+      "A:",
+      "うん",
+      "、",
+      "わかる",
+      "。",
+      "昔",
+      "の",
+      "クラスメート",
+      "を",
+      "何",
+      "人",
+      "か",
+      "誘っ",
+      "て",
+      "、",
+      "一緒",
+      "に",
+      "仕事",
+      "を",
+      "する",
+      "つもり",
+      "だ",
+      "よ",
+      "。",
+      "広告",
+      "業界",
+      "に",
+      "は",
+      "本気",
+      "で",
+      "興味",
+      "が",
+      "ある",
+      "から",
+      "、",
+      "簡単",
+      "に",
+      "諦め",
+      "たり",
+      "し",
+      "ない",
+      "よ",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "クラスメート",
+        "pinyin": "",
+        "meaning": "colega de classe"
+      },
+      {
+        "id": 2,
+        "word": "広告",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 3,
+        "word": "本気",
+        "pinyin": "",
+        "meaning": "sinceridade/seriedade"
+      }
+    ],
+    "id": "local-1780260831605-10",
+    "language": "Japonês"
+  },
+  {
+    "chinese": "B: では、事前に成功をお祈りしています！",
+    "pinyin": "",
+    "translation": "B: Então, desejo sucesso a você com antecedência!",
+    "tokens": [
+      "B:",
+      "では",
+      "、",
+      "事前",
+      "に",
+      "成功",
+      "を",
+      "お祈り",
+      "し",
+      "て",
+      "い",
+      "ます",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "では",
+        "pinyin": "",
+        "meaning": "então / bem"
+      },
+      {
+        "id": 2,
+        "word": "事前に",
+        "pinyin": "",
+        "meaning": "com antecedência / previamente"
+      },
+      {
+        "id": 3,
+        "word": "成功",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 4,
+        "word": "お祈り",
+        "pinyin": "",
+        "meaning": "oração / desejo"
+      },
+      {
+        "id": 5,
+        "word": "しています",
+        "pinyin": "",
+        "meaning": "está fazendo (presente contínuo)"
+      }
+    ],
+    "id": "local-1780260831605-11",
+    "language": "Japonês"
+  }
+]

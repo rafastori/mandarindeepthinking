@@ -1,0 +1,755 @@
+[
+  {
+    "chinese": "A: 사직서를 제출하겠습니다.",
+    "pinyin": "",
+    "translation": "A: Vou entregar minha carta de demissão.",
+    "tokens": [
+      "A:",
+      "사직서를",
+      "제출하겠습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "사직서",
+        "pinyin": "",
+        "meaning": "carta de demissão"
+      },
+      {
+        "id": 2,
+        "word": "제출",
+        "pinyin": "",
+        "meaning": "entrega/submissão"
+      },
+      {
+        "id": 3,
+        "word": "하겠습니다",
+        "pinyin": "",
+        "meaning": "farei/vou fazer"
+      }
+    ],
+    "id": "local-1780233352617-0",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 뭐? 갑자기 사직하고 싶다고?",
+    "pinyin": "",
+    "translation": "B: O quê? Por que você quer demitir-se de repente?",
+    "tokens": [
+      "B:",
+      "뭐",
+      "?",
+      "갑자기",
+      "사직하고",
+      "싶다고",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "뭐",
+        "pinyin": "",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "갑자기",
+        "pinyin": "",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "사직",
+        "pinyin": "",
+        "meaning": "demissão"
+      },
+      {
+        "id": 4,
+        "word": "하고",
+        "pinyin": "",
+        "meaning": "fazer/querer"
+      },
+      {
+        "id": 5,
+        "word": "싶다고",
+        "pinyin": "",
+        "meaning": "querer (dizer)"
+      }
+    ],
+    "id": "local-1780233352617-1",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 월급이 너무 적어요. 게다가 근무 환경도 좋지 않아요. 매일 하찮은 일만 하고 성취감도 없어요. 제가 기대했던 것과 너무 달라요.",
+    "pinyin": "",
+    "translation": "A: O salário mensal é muito baixo. Além disso, o ambiente de trabalho também não é bom. Todo dia eu só faço pequenas tarefas insignificantes e não há sensação de realização. Isso está muito longe do que eu esperava.",
+    "tokens": [
+      "A:",
+      "월급이",
+      "너무",
+      "적어요",
+      ".",
+      "게다가",
+      "근무",
+      "환경도",
+      "좋지",
+      "않아요",
+      ".",
+      "매일",
+      "하찮은",
+      "일만",
+      "하고",
+      "성취감도",
+      "없어요",
+      ".",
+      "제가",
+      "기대했던",
+      "것과",
+      "너무",
+      "달라요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "월급",
+        "pinyin": "",
+        "meaning": "salário mensal"
+      },
+      {
+        "id": 2,
+        "word": "근무 환경",
+        "pinyin": "",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 3,
+        "word": "하찮은",
+        "pinyin": "",
+        "meaning": "insignificante"
+      },
+      {
+        "id": 4,
+        "word": "성취감",
+        "pinyin": "",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 5,
+        "word": "기대했던",
+        "pinyin": "",
+        "meaning": "esperado"
+      }
+    ],
+    "id": "local-1780233352617-2",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 요즘에는 정말 원하는 일을 어디에서 찾을 수 있나요? 자신의 능력으로는 도저히 따라갈 수 없는 높은 기준을 가질 필요는 없습니다.",
+    "pinyin": "",
+    "translation": "B: Hoje em dia, onde você pode encontrar um trabalho que seja exatamente o que você deseja? Você não deve ter padrões altos demais que suas habilidades não consigam corresponder.",
+    "tokens": [
+      "B:",
+      "요즘에는",
+      "정말",
+      "원하는",
+      "일을",
+      "어디에서",
+      "찾을",
+      "수",
+      "있나요",
+      "?",
+      "자신의",
+      "능력으로는",
+      "도저히",
+      "따라갈",
+      "수",
+      "없는",
+      "높은",
+      "기준을",
+      "가질",
+      "필요는",
+      "없습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "요즘",
+        "pinyin": "",
+        "meaning": "hoje em dia"
+      },
+      {
+        "id": 2,
+        "word": "원하는 일",
+        "pinyin": "",
+        "meaning": "trabalho desejado"
+      },
+      {
+        "id": 3,
+        "word": "능력",
+        "pinyin": "",
+        "meaning": "habilidade"
+      },
+      {
+        "id": 4,
+        "word": "기준",
+        "pinyin": "",
+        "meaning": "padrão"
+      }
+    ],
+    "id": "local-1780233352617-3",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 핵심은 제가 제 가치를 깨닫지 못했다는 점이고, 지금 제 주변의 동료들은 모두 좋은 인맥을 가지고 있습니다. 그리고 언제쯤 제 차례로 승진이 올지 알 수 없습니다.",
+    "pinyin": "",
+    "translation": "A: O ponto principal é que eu não percebi meu próprio valor, e agora todos os meus colegas ao meu redor têm bons contatos. E não sei se, apenas no futuro distante, será a minha vez de ser promovido.",
+    "tokens": [
+      "A:",
+      "핵심은",
+      "제가",
+      "제",
+      "가치를",
+      "깨닫지",
+      "못했다는",
+      "점이고",
+      ",",
+      "지금",
+      "제",
+      "주변의",
+      "동료들은",
+      "모두",
+      "좋은",
+      "인맥을",
+      "가지고",
+      "있습니다",
+      ".",
+      "그리고",
+      "언제쯤",
+      "제",
+      "차례로",
+      "승진이",
+      "올지",
+      "알",
+      "수",
+      "없습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "핵심",
+        "pinyin": "",
+        "meaning": "ponto principal"
+      },
+      {
+        "id": 2,
+        "word": "가치",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 3,
+        "word": "동료",
+        "pinyin": "",
+        "meaning": "colega"
+      },
+      {
+        "id": 4,
+        "word": "인맥",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 5,
+        "word": "승진",
+        "pinyin": "",
+        "meaning": "promoção"
+      }
+    ],
+    "id": "local-1780233352617-4",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 좋아요. 그렇다면 어떤 직종으로 전직할지 생각해 보셨나요?",
+    "pinyin": "",
+    "translation": "B: Tudo bem. Então você já pensou em que tipo de cargo quer mudar?",
+    "tokens": [
+      "B:",
+      "좋아요",
+      ".",
+      "그렇다면",
+      "어떤",
+      "직종으로",
+      "전직할지",
+      "생각해",
+      "보셨나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "전직",
+        "pinyin": "",
+        "meaning": "mudança de emprego"
+      },
+      {
+        "id": 2,
+        "word": "직종",
+        "pinyin": "",
+        "meaning": "tipo de profissão"
+      },
+      {
+        "id": 3,
+        "word": "좋아요",
+        "pinyin": "",
+        "meaning": "tudo bem"
+      },
+      {
+        "id": 4,
+        "word": "생각해 보셨나요",
+        "pinyin": "",
+        "meaning": "já pensou"
+      },
+      {
+        "id": 5,
+        "word": "그렇다면",
+        "pinyin": "",
+        "meaning": "nesse caso"
+      }
+    ],
+    "id": "local-1780233352617-5",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 취업 대행사에서 일하지 않나요? 당신의 인맥이 저보다 훨씬 넓을 거예요. 추천을 해줄 수 있나요? 대학 전공이 광고 디자인이었어요. 이상한 일련의 상황 때문에 편집자가 된 거죠. 광고 회사들을 찾아봐 줄 수 있나요?",
+    "pinyin": "",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seus contatos devem ser mais extensos que os meus. Você poderia dar uma recomendação? Você sabe que meu curso universitário foi design de publicidade. Foi apenas resultado de uma série de circunstâncias estranhas que me tornei editor. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "A:",
+      "취업",
+      "대행사에서",
+      "일하지",
+      "않나요",
+      "?",
+      "당신의",
+      "인맥이",
+      "저보다",
+      "훨씬",
+      "넓을",
+      "거예요",
+      ".",
+      "추천을",
+      "해줄",
+      "수",
+      "있나요",
+      "?",
+      "대학",
+      "전공이",
+      "광고",
+      "디자인이었어요",
+      ".",
+      "이상한",
+      "일련의",
+      "상황",
+      "때문에",
+      "편집자가",
+      "된",
+      "거죠",
+      ".",
+      "광고",
+      "회사들을",
+      "찾아봐",
+      "줄",
+      "수",
+      "있나요",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "취업 대행사",
+        "pinyin": "",
+        "meaning": "agência de recrutamento"
+      },
+      {
+        "id": 2,
+        "word": "인맥",
+        "pinyin": "",
+        "meaning": "contatos"
+      },
+      {
+        "id": 3,
+        "word": "추천",
+        "pinyin": "",
+        "meaning": "recomendação"
+      },
+      {
+        "id": 4,
+        "word": "광고 디자인",
+        "pinyin": "",
+        "meaning": "design de publicidade"
+      },
+      {
+        "id": 5,
+        "word": "편집자",
+        "pinyin": "",
+        "meaning": "editor"
+      },
+      {
+        "id": 6,
+        "word": "광고 회사",
+        "pinyin": "",
+        "meaning": "empresa de publicidade"
+      }
+    ],
+    "id": "local-1780233352617-6",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 조금 어렵습니다. 유명 광고 회사들의 요구 사항은 높습니다. 명성이 있는 광고 회사라면 귀하가 원하는 보상을 제공하지 못할 곳이 없습니다.",
+    "pinyin": "",
+    "translation": "B: É um pouco difícil. Os requisitos das empresas de publicidade bem conhecidas são altos. Nenhuma empresa de publicidade reputável seria incapaz de fornecer a compensação que você deseja.",
+    "tokens": [
+      "B:",
+      "조금",
+      "어렵습니다",
+      ".",
+      "유명",
+      "광고",
+      "회사들의",
+      "요구",
+      "사항은",
+      "높습니다",
+      ".",
+      "명성이",
+      "있는",
+      "광고",
+      "회사라면",
+      "귀하가",
+      "원하는",
+      "보상을",
+      "제공하지",
+      "못할",
+      "곳이",
+      "없습니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "어렵습니다",
+        "pinyin": "",
+        "meaning": "difícil"
+      },
+      {
+        "id": 2,
+        "word": "요구 사항",
+        "pinyin": "",
+        "meaning": "requisitos"
+      },
+      {
+        "id": 3,
+        "word": "명성",
+        "pinyin": "",
+        "meaning": "reputação"
+      },
+      {
+        "id": 4,
+        "word": "보상",
+        "pinyin": "",
+        "meaning": "compensação"
+      },
+      {
+        "id": 5,
+        "word": "제공",
+        "pinyin": "",
+        "meaning": "fornecer"
+      }
+    ],
+    "id": "local-1780233352617-7",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 정말요. 제가 사업을 시작하는 게 어때요? 광고 업계 진입 장벽이 매우 낮다고 하잖아요. 장소만 임대하고 컴퓨터 몇 대만 사면 사업을 시작할 수 있죠. 저는 초기 자본으로 쓸 수 있는 수십만 위안을 손에 쥐고 있거든요.",
+    "pinyin": "",
+    "translation": "A: É verdade. O que acha de eu começar um negócio? Dizem que as barreiras de entrada para o setor de publicidade são muito baixas. Você só precisa alugar um local, comprar alguns computadores e já pode começar a fazer negócios. Eu tenho algumas centenas de milhares de yuans à mão que poderiam ser o capital inicial.",
+    "tokens": [
+      "A:",
+      "정말요",
+      ".",
+      "제가",
+      "사업을",
+      "시작하는",
+      "게",
+      "어때요",
+      "?",
+      "광고",
+      "업계",
+      "진입",
+      "장벽이",
+      "매우",
+      "낮다고",
+      "하잖아요",
+      ".",
+      "장소만",
+      "임대하고",
+      "컴퓨터",
+      "몇",
+      "대만",
+      "사면",
+      "사업을",
+      "시작할",
+      "수",
+      "있죠",
+      ".",
+      "저는",
+      "초기",
+      "자본으로",
+      "쓸",
+      "수",
+      "있는",
+      "수십만",
+      "위안을",
+      "손에",
+      "쥐고",
+      "있거든요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "진입 장벽",
+        "pinyin": "",
+        "meaning": "barreira de entrada"
+      },
+      {
+        "id": 2,
+        "word": "초기 자본",
+        "pinyin": "",
+        "meaning": "capital inicial"
+      },
+      {
+        "id": 3,
+        "word": "임대",
+        "pinyin": "",
+        "meaning": "aluguel"
+      },
+      {
+        "id": 4,
+        "word": "컴퓨터",
+        "pinyin": "",
+        "meaning": "computador"
+      },
+      {
+        "id": 5,
+        "word": "사업",
+        "pinyin": "",
+        "meaning": "negócio"
+      },
+      {
+        "id": 6,
+        "word": "업계",
+        "pinyin": "",
+        "meaning": "setor/indústria"
+      }
+    ],
+    "id": "local-1780233352617-8",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 자영업을 시작하는 것은 실제로 좋은 아이디어입니다. 하지만 파트너를 찾아야 하고, 고객을 끌어들이는 방법을 고민해야 합니다. 이는 그리 쉽지 않습니다. 인내심 외에도 창의성이라는 핵심 경쟁력이 필요합니다.",
+    "pinyin": "",
+    "translation": "B: Começar o próprio negócio é na verdade uma boa ideia. Mas você precisa encontrar um sócio e, em seguida, pensar em uma maneira de atrair clientes. Isso não é muito fácil; além de paciência, você também precisa da força competitiva chave: criatividade.",
+    "tokens": [
+      "B:",
+      "자영업을",
+      "시작하는",
+      "것은",
+      "실제로",
+      "좋은",
+      "아이디어입니다",
+      ".",
+      "하지만",
+      "파트너를",
+      "찾아야",
+      "하고",
+      ",",
+      "고객을",
+      "끌어들이는",
+      "방법을",
+      "고민해야",
+      "합니다",
+      ".",
+      "이는",
+      "그리",
+      "쉽지",
+      "않습니다",
+      ".",
+      "인내심",
+      "외에도",
+      "창의성이라는",
+      "핵심",
+      "경쟁력이",
+      "필요합니다",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "자영업",
+        "pinyin": "",
+        "meaning": "negócio próprio"
+      },
+      {
+        "id": 2,
+        "word": "파트너",
+        "pinyin": "",
+        "meaning": "sócio"
+      },
+      {
+        "id": 3,
+        "word": "고객",
+        "pinyin": "",
+        "meaning": "cliente"
+      },
+      {
+        "id": 4,
+        "word": "인내심",
+        "pinyin": "",
+        "meaning": "paciência"
+      },
+      {
+        "id": 5,
+        "word": "창의성",
+        "pinyin": "",
+        "meaning": "criatividade"
+      },
+      {
+        "id": 6,
+        "word": "경쟁력",
+        "pinyin": "",
+        "meaning": "competitividade"
+      }
+    ],
+    "id": "local-1780233352617-9",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "A: 응, 알아요. 옛날 친구들을 몇 명 불러서 같이 일할 계획이에요. 광고는 제가 진심으로 관심 있는 분야라서 쉽게 포기하지 않을 거예요.",
+    "pinyin": "",
+    "translation": "A: É, eu sei. Planejo chamar alguns antigos colegas de classe para trabalhar comigo. Publicidade é algo em que tenho interesse sincero, então não vou desistir facilmente.",
+    "tokens": [
+      "A:",
+      "응",
+      ",",
+      "알아요",
+      ".",
+      "옛날",
+      "친구들을",
+      "몇",
+      "명",
+      "불러서",
+      "같이",
+      "일할",
+      "계획이에요",
+      ".",
+      "광고는",
+      "제가",
+      "진심으로",
+      "관심",
+      "있는",
+      "분야라서",
+      "쉽게",
+      "포기하지",
+      "않을",
+      "거예요",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "옛날 친구들",
+        "pinyin": "",
+        "meaning": "antigos amigos"
+      },
+      {
+        "id": 2,
+        "word": "같이 일할",
+        "pinyin": "",
+        "meaning": "trabalhar junto"
+      },
+      {
+        "id": 3,
+        "word": "광고",
+        "pinyin": "",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 4,
+        "word": "진심으로",
+        "pinyin": "",
+        "meaning": "sinceramente"
+      },
+      {
+        "id": 5,
+        "word": "관심 있는",
+        "pinyin": "",
+        "meaning": "interessado em"
+      },
+      {
+        "id": 6,
+        "word": "포기하지 않을",
+        "pinyin": "",
+        "meaning": "não desistir"
+      }
+    ],
+    "id": "local-1780233352617-10",
+    "language": "Coreano"
+  },
+  {
+    "chinese": "B: 음, 그럼 미리 성공을 빌어요!",
+    "pinyin": "",
+    "translation": "B: Mm, então eu te desejo sucesso antecipadamente!",
+    "tokens": [
+      "B:",
+      "음",
+      ",",
+      "그럼",
+      "미리",
+      "성공을",
+      "빌어요",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "음",
+        "pinyin": "",
+        "meaning": "hum / hmm"
+      },
+      {
+        "id": 2,
+        "word": "미리",
+        "pinyin": "",
+        "meaning": "antes / antecipadamente"
+      },
+      {
+        "id": 3,
+        "word": "성공",
+        "pinyin": "",
+        "meaning": "sucesso"
+      },
+      {
+        "id": 4,
+        "word": "빌어요",
+        "pinyin": "",
+        "meaning": "desejar / orar"
+      }
+    ],
+    "id": "local-1780233352617-11",
+    "language": "Coreano"
+  }
+]

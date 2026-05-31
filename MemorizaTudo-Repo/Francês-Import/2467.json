@@ -1,0 +1,876 @@
+[
+  {
+    "chinese": "A: Xiao Wang, qu'est-ce qui ne va pas ? Qu'est-ce qui te tracasse ?",
+    "pinyin": "",
+    "translation": "A: Xiao Wang, o que há de errado? O que está te preocupando?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wang",
+      ",",
+      "qu'est",
+      "-",
+      "ce",
+      "qui",
+      "ne",
+      "va",
+      "pas",
+      "?",
+      "Qu'est",
+      "-",
+      "ce",
+      "qui",
+      "te",
+      "tracasse",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "qu'est-ce qui ne va pas",
+        "pinyin": "",
+        "meaning": "o que há de errado"
+      },
+      {
+        "id": 2,
+        "word": "tracasse",
+        "pinyin": "",
+        "meaning": "preocupa"
+      },
+      {
+        "id": 3,
+        "word": "Xiao Wang",
+        "pinyin": "",
+        "meaning": "nome próprio"
+      }
+    ],
+    "id": "local-1780238128099-0",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Récemment, je me demande si je dois ou non m'inscrire à un programme de MBA. Quelles suggestions avez-vous ?",
+    "pinyin": "",
+    "translation": "B: Recentemente, tenho considerado se devo ou não me inscrever em um programa de MBA. Quais sugestões você tem?",
+    "tokens": [
+      "B:",
+      "Récemment",
+      ",",
+      "je",
+      "me",
+      "demande",
+      "si",
+      "je",
+      "dois",
+      "ou",
+      "non",
+      "m'inscrire",
+      "à",
+      "un",
+      "programme",
+      "de",
+      "MBA",
+      ".",
+      "Quelles",
+      "suggestions",
+      "avez",
+      "-",
+      "vous",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Récemment",
+        "pinyin": "",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 2,
+        "word": "programme",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 3,
+        "word": "MBA",
+        "pinyin": "",
+        "meaning": "MBA"
+      },
+      {
+        "id": 4,
+        "word": "suggestions",
+        "pinyin": "",
+        "meaning": "sugestões"
+      },
+      {
+        "id": 5,
+        "word": "inscrire",
+        "pinyin": "",
+        "meaning": "inscrever"
+      }
+    ],
+    "id": "local-1780238128099-1",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Un master en administration des affaires, hein ? J'ai un ami qui vient de terminer ses cours et qui rédige sa thèse.",
+    "pinyin": "",
+    "translation": "A: MBA, hein? Tenho um amigo que acabou de terminar os cursos e está escrevendo a tese.",
+    "tokens": [
+      "A:",
+      "Un",
+      "master",
+      "en",
+      "administration",
+      "des",
+      "affaires",
+      ",",
+      "hein",
+      "?",
+      "J'ai",
+      "un",
+      "ami",
+      "qui",
+      "vient",
+      "de",
+      "terminer",
+      "ses",
+      "cours",
+      "et",
+      "qui",
+      "rédige",
+      "sa",
+      "thèse",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "master en administration des affaires",
+        "pinyin": "",
+        "meaning": "MBA"
+      },
+      {
+        "id": 2,
+        "word": "rédige",
+        "pinyin": "",
+        "meaning": "escreve"
+      },
+      {
+        "id": 3,
+        "word": "thèse",
+        "pinyin": "",
+        "meaning": "tese"
+      },
+      {
+        "id": 4,
+        "word": "cours",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 5,
+        "word": "vient de terminer",
+        "pinyin": "",
+        "meaning": "acabou de terminar"
+      }
+    ],
+    "id": "local-1780238128099-2",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Oh ? Il étudie en travaillant ou à temps plein ?",
+    "pinyin": "",
+    "translation": "B: Ah? Ele estuda trabalhando ou em tempo integral?",
+    "tokens": [
+      "B:",
+      "Oh",
+      "?",
+      "Il",
+      "étudie",
+      "en",
+      "travaillant",
+      "ou",
+      "à",
+      "temps",
+      "plein",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "étudie",
+        "pinyin": "",
+        "meaning": "estuda"
+      },
+      {
+        "id": 2,
+        "word": "travaillant",
+        "pinyin": "",
+        "meaning": "trabalhando"
+      },
+      {
+        "id": 3,
+        "word": "temps plein",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "Oh",
+        "pinyin": "",
+        "meaning": "Ah"
+      }
+    ],
+    "id": "local-1780238128099-3",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Il étudie tout en travaillant. Mais j'ai entendu dire que la valeur réelle des cours à temps plein est plus élevée et que le coût est moins cher.",
+    "pinyin": "",
+    "translation": "A: Ele estuda enquanto trabalha. Mas ouvi dizer que o valor real dos cursos de tempo integral é maior e o custo é mais barato.",
+    "tokens": [
+      "A:",
+      "Il",
+      "étudie",
+      "tout",
+      "en",
+      "travaillant",
+      ".",
+      "Mais",
+      "j'ai",
+      "entendu",
+      "dire",
+      "que",
+      "la",
+      "valeur",
+      "réelle",
+      "des",
+      "cours",
+      "à",
+      "temps",
+      "plein",
+      "est",
+      "plus",
+      "élevée",
+      "et",
+      "que",
+      "le",
+      "coût",
+      "est",
+      "moins",
+      "cher",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "étudie",
+        "pinyin": "",
+        "meaning": "estuda"
+      },
+      {
+        "id": 2,
+        "word": "travaillant",
+        "pinyin": "",
+        "meaning": "trabalhando"
+      },
+      {
+        "id": 3,
+        "word": "temps plein",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 4,
+        "word": "valeur",
+        "pinyin": "",
+        "meaning": "valor"
+      },
+      {
+        "id": 5,
+        "word": "coût",
+        "pinyin": "",
+        "meaning": "custo"
+      }
+    ],
+    "id": "local-1780238128099-4",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Vraiment ? Pas possible ! Le coût horaire est plus élevé pour les cours à temps plein, mais le prix global est moins cher ?",
+    "pinyin": "",
+    "translation": "B: Sério? Impossível! O custo horário é mais alto para os cursos de tempo integral, mas o preço total é mais barato?",
+    "tokens": [
+      "B:",
+      "Vraiment",
+      "?",
+      "Pas",
+      "possible",
+      "!",
+      "Le",
+      "coût",
+      "horaire",
+      "est",
+      "plus",
+      "élevé",
+      "pour",
+      "les",
+      "cours",
+      "à",
+      "temps",
+      "plein",
+      ",",
+      "mais",
+      "le",
+      "prix",
+      "global",
+      "est",
+      "moins",
+      "cher",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Vraiment",
+        "pinyin": "",
+        "meaning": "Realmente"
+      },
+      {
+        "id": 2,
+        "word": "Pas possible",
+        "pinyin": "",
+        "meaning": "Impossível"
+      },
+      {
+        "id": 3,
+        "word": "coût horaire",
+        "pinyin": "",
+        "meaning": "custo horário"
+      },
+      {
+        "id": 4,
+        "word": "temps plein",
+        "pinyin": "",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 5,
+        "word": "prix",
+        "pinyin": "",
+        "meaning": "preço"
+      },
+      {
+        "id": 6,
+        "word": "moins cher",
+        "pinyin": "",
+        "meaning": "mais barato"
+      }
+    ],
+    "id": "local-1780238128099-5",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Comme moins de directeurs généraux suivent des cours à temps plein, il y a un peu moins de réseautage. Réfléchissez-y : beaucoup de personnes font la connaissance de directeurs généraux, de cadres supérieurs et autres, au sein d'une entreprise, principalement grâce à un programme de MBA. D'une part, elles peuvent élargir leur réseau et, d'autre part, elles peuvent apprendre de l'expérience des directeurs généraux. Ainsi, la plupart des directeurs généraux étudient certainement tout en travaillant, car cela n'affecte pas leur travail.",
+    "pinyin": "",
+    "translation": "A: Como menos diretores gerais fazem cursos em tempo integral, há um pouco menos de networking. Pense bem, muitas pessoas se conhecem com alguns diretores gerais, gerentes seniores e afins, de uma empresa, principalmente através de um programa de MBA. Por um lado, eles podem expandir suas conexões e, por outro lado, podem aprender com a experiência do diretor geral. Então, a maioria dos diretores gerais está definitivamente estudando enquanto trabalha, porque isso não afetará seu trabalho.",
+    "tokens": [
+      "A:",
+      "Comme",
+      "moins",
+      "de",
+      "directeurs",
+      "généraux",
+      "suivent",
+      "des",
+      "cours",
+      "à",
+      "temps",
+      "plein",
+      ",",
+      "il",
+      "y",
+      "a",
+      "un",
+      "peu",
+      "moins",
+      "de",
+      "réseautage",
+      ".",
+      "Réfléchissez",
+      "-",
+      "y",
+      ":",
+      "beaucoup",
+      "de",
+      "personnes",
+      "font",
+      "la",
+      "connaissance",
+      "de",
+      "directeurs",
+      "généraux",
+      ",",
+      "de",
+      "cadres",
+      "supérieurs",
+      "et",
+      "autres",
+      ",",
+      "au",
+      "sein",
+      "d'une",
+      "entreprise",
+      ",",
+      "principalement",
+      "grâce",
+      "à",
+      "un",
+      "programme",
+      "de",
+      "MBA",
+      ".",
+      "D'une",
+      "part",
+      ",",
+      "elles",
+      "peuvent",
+      "élargir",
+      "leur",
+      "réseau",
+      "et",
+      ",",
+      "d'autre",
+      "part",
+      ",",
+      "elles",
+      "peuvent",
+      "apprendre",
+      "de",
+      "l'expérience",
+      "des",
+      "directeurs",
+      "généraux",
+      ".",
+      "Ainsi",
+      ",",
+      "la",
+      "plupart",
+      "des",
+      "directeurs",
+      "généraux",
+      "étudient",
+      "certainement",
+      "tout",
+      "en",
+      "travaillant",
+      ",",
+      "car",
+      "cela",
+      "n'affecte",
+      "pas",
+      "leur",
+      "travail",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "directeurs généraux",
+        "pinyin": "",
+        "meaning": "diretores gerais"
+      },
+      {
+        "id": 2,
+        "word": "réseautage",
+        "pinyin": "",
+        "meaning": "networking"
+      },
+      {
+        "id": 3,
+        "word": "programme de MBA",
+        "pinyin": "",
+        "meaning": "programa de MBA"
+      },
+      {
+        "id": 4,
+        "word": "cadres supérieurs",
+        "pinyin": "",
+        "meaning": "gerentes seniores"
+      },
+      {
+        "id": 5,
+        "word": "réseau",
+        "pinyin": "",
+        "meaning": "rede de contatos"
+      },
+      {
+        "id": 6,
+        "word": "expérience",
+        "pinyin": "",
+        "meaning": "experiência"
+      }
+    ],
+    "id": "local-1780238128099-6",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: C'est vrai. Alors ma décision est d'étudier tout en travaillant ! Ton ami étudie-t-il dans une école chinoise ou étrangère ?",
+    "pinyin": "",
+    "translation": "B: É verdade. Então minha decisão é estudar enquanto trabalho! Seu amigo estuda em uma escola chinesa ou estrangeira?",
+    "tokens": [
+      "B:",
+      "C'est",
+      "vrai",
+      ".",
+      "Alors",
+      "ma",
+      "décision",
+      "est",
+      "d'étudier",
+      "tout",
+      "en",
+      "travaillant",
+      "!",
+      "Ton",
+      "ami",
+      "étudie",
+      "-",
+      "t",
+      "-",
+      "il",
+      "dans",
+      "une",
+      "école",
+      "chinoise",
+      "ou",
+      "étrangère",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "étudier",
+        "pinyin": "",
+        "meaning": "estudar"
+      },
+      {
+        "id": 2,
+        "word": "travaillant",
+        "pinyin": "",
+        "meaning": "trabalhando"
+      },
+      {
+        "id": 3,
+        "word": "chinois",
+        "pinyin": "",
+        "meaning": "chinês"
+      },
+      {
+        "id": 4,
+        "word": "étrangère",
+        "pinyin": "",
+        "meaning": "estrangeira"
+      },
+      {
+        "id": 5,
+        "word": "école",
+        "pinyin": "",
+        "meaning": "escola"
+      }
+    ],
+    "id": "local-1780238128099-7",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: J'ai entendu dire que, que ce soit dans une école chinoise ou étrangère, le programme est à peu près le même. De plus, les connaissances théoriques sont peu utilisées. L'essentiel repose sur la création de réseaux et l'échange d'expériences.",
+    "pinyin": "",
+    "translation": "A: Ouvi dizer que, seja em uma escola chinesa ou estrangeira, o currículo é mais ou menos o mesmo. Além disso, o conhecimento teórico é pouco utilizado. Principalmente, depende-se da criação de conexões e da troca de experiências.",
+    "tokens": [
+      "A:",
+      "J'ai",
+      "entendu",
+      "dire",
+      "que",
+      ",",
+      "que",
+      "ce",
+      "soit",
+      "dans",
+      "une",
+      "école",
+      "chinoise",
+      "ou",
+      "étrangère",
+      ",",
+      "le",
+      "programme",
+      "est",
+      "à",
+      "peu",
+      "près",
+      "le",
+      "même",
+      ".",
+      "De",
+      "plus",
+      ",",
+      "les",
+      "connaissances",
+      "théoriques",
+      "sont",
+      "peu",
+      "utilisées",
+      ".",
+      "L'essentiel",
+      "repose",
+      "sur",
+      "la",
+      "création",
+      "de",
+      "réseaux",
+      "et",
+      "l'échange",
+      "d'expériences",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "programme",
+        "pinyin": "",
+        "meaning": "currículo"
+      },
+      {
+        "id": 2,
+        "word": "connaissances théoriques",
+        "pinyin": "",
+        "meaning": "conhecimento teórico"
+      },
+      {
+        "id": 3,
+        "word": "création de réseaux",
+        "pinyin": "",
+        "meaning": "criação de conexões"
+      },
+      {
+        "id": 4,
+        "word": "échange d'expériences",
+        "pinyin": "",
+        "meaning": "troca de experiências"
+      },
+      {
+        "id": 5,
+        "word": "repose sur",
+        "pinyin": "",
+        "meaning": "depende de"
+      }
+    ],
+    "id": "local-1780238128099-8",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Combien d'argent votre ami a-t-il dépensé pour son programme de MBA ?",
+    "pinyin": "",
+    "translation": "B: Quanto dinheiro seu amigo gastou em seu programa de MBA?",
+    "tokens": [
+      "B:",
+      "Combien",
+      "d'argent",
+      "votre",
+      "ami",
+      "a",
+      "-",
+      "t",
+      "-",
+      "il",
+      "dépensé",
+      "pour",
+      "son",
+      "programme",
+      "de",
+      "MBA",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Combien",
+        "pinyin": "",
+        "meaning": "Quanto"
+      },
+      {
+        "id": 2,
+        "word": "dépensé",
+        "pinyin": "",
+        "meaning": "gastou"
+      },
+      {
+        "id": 3,
+        "word": "programme",
+        "pinyin": "",
+        "meaning": "programa"
+      },
+      {
+        "id": 4,
+        "word": "ami",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 5,
+        "word": "argent",
+        "pinyin": "",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1780238128099-9",
+    "language": "Francês"
+  },
+  {
+    "chinese": "A: Peut-être environ soixante-dix mille. Les cours les plus coûteux coûtent entre cent et quelque chose de mille et deux cent mille.",
+    "pinyin": "",
+    "translation": "A: Talvez cerca de setenta mil. Os cursos mais caros custam entre cem e algo de mil e duzentos mil.",
+    "tokens": [
+      "A:",
+      "Peut",
+      "-",
+      "être",
+      "environ",
+      "soixante",
+      "-",
+      "dix",
+      "mille",
+      ".",
+      "Les",
+      "cours",
+      "les",
+      "plus",
+      "coûteux",
+      "coûtent",
+      "entre",
+      "cent",
+      "et",
+      "quelque",
+      "chose",
+      "de",
+      "mille",
+      "et",
+      "deux",
+      "cent",
+      "mille",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "soixante-dix mille",
+        "pinyin": "",
+        "meaning": "setenta mil"
+      },
+      {
+        "id": 2,
+        "word": "cours",
+        "pinyin": "",
+        "meaning": "cursos"
+      },
+      {
+        "id": 3,
+        "word": "coûteux",
+        "pinyin": "",
+        "meaning": "caros"
+      },
+      {
+        "id": 4,
+        "word": "cent",
+        "pinyin": "",
+        "meaning": "cem"
+      },
+      {
+        "id": 5,
+        "word": "deux cent mille",
+        "pinyin": "",
+        "meaning": "duzentos mil"
+      }
+    ],
+    "id": "local-1780238128099-10",
+    "language": "Francês"
+  },
+  {
+    "chinese": "B: Il semble que je ne pourrai plus jeter mon argent par les fenêtres. À partir du mois prochain, je devrai serrer la ceinture et commencer à économiser immédiatement. Ha ha !",
+    "pinyin": "",
+    "translation": "B: Parece que não poderei mais jogar meu dinheiro fora. A partir do próximo mês, terei que apertar o cinto e começar a economizar dinheiro imediatamente. Ha ha!",
+    "tokens": [
+      "B:",
+      "Il",
+      "semble",
+      "que",
+      "je",
+      "ne",
+      "pourrai",
+      "plus",
+      "jeter",
+      "mon",
+      "argent",
+      "par",
+      "les",
+      "fenêtres",
+      ".",
+      "À",
+      "partir",
+      "du",
+      "mois",
+      "prochain",
+      ",",
+      "je",
+      "devrai",
+      "serrer",
+      "la",
+      "ceinture",
+      "et",
+      "commencer",
+      "à",
+      "économiser",
+      "immédiatement",
+      ".",
+      "Ha",
+      "ha",
+      "!"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jeter mon argent par les fenêtres",
+        "pinyin": "",
+        "meaning": "jogar dinheiro fora"
+      },
+      {
+        "id": 2,
+        "word": "serrer la ceinture",
+        "pinyin": "",
+        "meaning": "apertar o cinto / viver com menos"
+      },
+      {
+        "id": 3,
+        "word": "économiser",
+        "pinyin": "",
+        "meaning": "economizar"
+      },
+      {
+        "id": 4,
+        "word": "immédiatement",
+        "pinyin": "",
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 5,
+        "word": "serrer",
+        "pinyin": "",
+        "meaning": "apertar"
+      }
+    ],
+    "id": "local-1780238128099-11",
+    "language": "Francês"
+  }
+]
