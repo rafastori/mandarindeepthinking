@@ -3,7 +3,7 @@ import Icon from '../../components/Icon';
 import EmptyState from '../../components/EmptyState';
 import { StudyItem, Keyword, SupportedLanguage } from '../../types';
 import { usePuterSpeech } from '../../hooks/usePuterSpeech';
-import { generateWordCard, correctColorHighlights, ColorCorrectionOutput } from '../../services/gemini';
+import { generateWordCard, generateWordCardWithColor, correctColorHighlights, ColorCorrectionOutput } from '../../services/gemini';
 import { moveItemsToFolder, extractFolderPaths } from '../../services/folderService';
 import ExportModal, { ExportConfig } from '../../components/ExportModal';
 import VoiceMicButton from '../../components/VoiceMicButton';
@@ -238,29 +238,29 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         { text: '#dc2626', bg: '#fef2f2' },   // vermelho vivo
     ];
 
-    // Mapa estável: cada palavra salva recebe um índice de cor único
+    // Mapa estável: cada palavra salva recebe um índice de cor FIXO.
+    // Iteramos `data` do mais antigo para o mais novo (a lista vem ordenada por
+    // createdAt DESC e palavras novas entram no início), de modo que salvar uma
+    // palavra nova NÃO altera a cor das já existentes: a nova recebe o próximo
+    // índice livre (= wordColorMap.size) e as antigas mantêm o seu.
     const wordColorMap = useMemo(() => {
         const map = new Map<string, number>();
         let colorIndex = 0;
-        data.forEach(item => {
+        const consider = (rawWord: string) => {
+            const key = rawWord.toLowerCase().trim();
+            if (key && !map.has(key)) {
+                map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
+                colorIndex++;
+            }
+        };
+        for (let idx = data.length - 1; idx >= 0; idx--) {
+            const item = data[idx];
             item.keywords?.forEach(k => {
-                if (savedIds.includes(k.id)) {
-                    const key = k.word.toLowerCase().trim();
-                    if (!map.has(key)) {
-                        map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
-                        colorIndex++;
-                    }
-                }
+                if (savedIds.includes(k.id)) consider(k.word);
             });
             const isWordCard = item.type === 'word' || (item.tokens.length === 1 && savedIds.includes(item.id.toString()));
-            if (isWordCard) {
-                const key = item.chinese.toLowerCase().trim();
-                if (!map.has(key)) {
-                    map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
-                    colorIndex++;
-                }
-            }
-        });
+            if (isWordCard) consider(item.chinese);
+        }
         return map;
     }, [data, savedIds]);
 
@@ -612,9 +612,58 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
         try {
             const lang = sentence.language || 'zh';
-            const newCard = await generateWordCard(word, sentence.chinese, lang);
+            const translation = (sentence.translation || '').trim();
+
+            // Sem tradução para colorir: mantém o fluxo simples (só gera o card).
+            if (!translation) {
+                const newCard = await generateWordCard(word, sentence.chinese, lang);
+                onSaveGeneratedCard(newCard, sentence.chinese);
+                speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
+                return;
+            }
+
+            // Palavras já salvas DESTA frase, com seus índices de cor atuais — para a IA
+            // recolorir a frase inteira de forma consistente (não só a palavra nova).
+            const sentenceSavedWords: { word: string; meaning: string; colorIndex: number }[] = [];
+            const seen = new Set<string>();
+            sentence.tokens.forEach(token => {
+                const clean = cleanPunctuation(token).toLowerCase();
+                const kw = savedWordsMap.get(clean);
+                const colorIdx = wordColorMap.get(clean);
+                if (kw && colorIdx !== undefined && kw.meaning && !seen.has(kw.word)) {
+                    seen.add(kw.word);
+                    sentenceSavedWords.push({ word: kw.word, meaning: kw.meaning, colorIndex: colorIdx });
+                }
+            });
+
+            // Cores são estáveis (wordColorMap por ordem de criação): a palavra nova
+            // recebe o próximo índice livre — o mesmo que o texto original vai usar.
+            const newWordColorIndex = wordColorMap.size % HIGHLIGHT_COLORS.length;
+
+            const result = await generateWordCardWithColor(
+                word, sentence.chinese, translation, lang, sentenceSavedWords, newWordColorIndex
+            );
+
+            const newCard: Keyword = {
+                id: `card-${Date.now()}`,
+                word: result.word,
+                pinyin: result.pinyin,
+                meaning: result.meaning,
+                language: lang
+            };
             onSaveGeneratedCard(newCard, sentence.chinese);
-            speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
+
+            // Aplica a correção de cor desta frase imediatamente (sem o botão manual).
+            if (result.coloredTranslation.length > 0) {
+                setColorCorrections(prev => {
+                    const merged = new Map(prev);
+                    merged.set(sentence.id.toString(), result.coloredTranslation);
+                    return merged;
+                });
+                if (!isColorHighlightEnabled) setIsColorHighlightEnabled(true);
+            }
+
+            speak(result.word, lang as 'zh' | 'de' | 'pt' | 'en');
         } catch (error) {
             console.error(error);
             alert("Erro ao processar. Verifique sua conexão.");

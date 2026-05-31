@@ -239,6 +239,40 @@ FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
 ]`;
     }
 
+    if (type === 'card_with_color') {
+        const isCJK = ['zh', 'ja', 'ko'].includes(targetLang);
+        return `Você é um professor de ${langName} e linguista especialista em correspondência entre idiomas.
+
+Você receberá: uma PALAVRA em ${langName} (para criar um cartão de estudo), a FRASE de contexto, a TRADUÇÃO da frase em Português, o colorIndex que essa palavra nova deve receber, e uma lista de palavras JÁ SALVAS que aparecem na frase (cada uma com seu colorIndex).
+
+SUA TAREFA — faça as DUAS coisas e devolva em UM ÚNICO JSON (sem markdown):
+
+1) CARTÃO da PALAVRA nova:
+   - "word": a palavra (forma de dicionário quando fizer sentido)
+   - "pinyin": ${isCJK ? 'a transcrição fonética' : 'vazio ou null'}
+   - "meaning": o significado em Português
+
+2) "coloredTranslation": a TRADUÇÃO em Português tokenizada palavra por palavra:
+   - Inclua TODAS as palavras da tradução, na ORDEM original. Não invente, não omita e não reordene palavras.
+   - Para cada token defina "colorIndex":
+       • Se o token é a tradução (direta ou sinônimo próximo) da PALAVRA nova -> use o colorIndex informado para ela.
+       • Se o token corresponde a uma das PALAVRAS JÁ SALVAS -> use o colorIndex daquela palavra.
+       • Caso contrário -> null.
+   - Seja PRECISO: só marque traduções diretas ou sinônimos próximos. Artigos, preposições e conjunções recebem null, a menos que façam parte integral da expressão traduzida.
+   - Uma expressão com várias palavras pode marcar mais de um token com o mesmo colorIndex.
+
+FORMATO — APENAS este JSON:
+{
+  "word": "...",
+  "pinyin": "...",
+  "meaning": "...",
+  "coloredTranslation": [
+    { "word": "palavra", "colorIndex": 0 },
+    { "word": "outra", "colorIndex": null }
+  ]
+}`;
+    }
+
     return '';
 };
 
@@ -373,6 +407,79 @@ export const generateWordCard = async (word: string, contextSentence: string, ta
         };
     } catch (error) {
         console.error("Card Error:", error);
+        throw error;
+    }
+};
+
+export interface WordCardWithColorResult {
+    word: string;
+    pinyin: string;
+    meaning: string;
+    coloredTranslation: { word: string; colorIndex: number | null }[];
+}
+
+/**
+ * Versão combinada de generateWordCard: numa ÚNICA chamada, cria o card da palavra
+ * E devolve a tradução da frase tokenizada com as cores já aplicadas (a palavra nova
+ * recebe newWordColorIndex; as palavras já salvas recebem o colorIndex informado).
+ * Usado para colorir a frase automaticamente assim que a palavra é salva na Leitura.
+ */
+export const generateWordCardWithColor = async (
+    word: string,
+    contextSentence: string,
+    translation: string,
+    targetLanguage: SupportedLanguage,
+    sentenceSavedWords: { word: string; meaning: string; colorIndex: number }[],
+    newWordColorIndex: number
+): Promise<WordCardWithColorResult> => {
+    const savedWordsJson = sentenceSavedWords.length > 0
+        ? JSON.stringify(sentenceSavedWords.map(w => ({ word: w.word, meaning: w.meaning, colorIndex: w.colorIndex })), null, 2)
+        : '(nenhuma)';
+
+    const userPrompt = `PALAVRA nova (criar cartão e marcar na tradução): "${word}"
+colorIndex da palavra nova: ${newWordColorIndex}
+
+FRASE (idioma estudado): "${contextSentence}"
+TRADUÇÃO (Português) a tokenizar: "${translation}"
+
+PALAVRAS JÁ SALVAS nesta frase (marque cada uma na tradução com seu colorIndex):
+${savedWordsJson}`;
+
+    const normalize = (data: any): WordCardWithColorResult => ({
+        word: data.word,
+        pinyin: data.pinyin,
+        meaning: data.meaning,
+        coloredTranslation: Array.isArray(data.coloredTranslation) ? data.coloredTranslation : []
+    });
+
+    // DEV MODE
+    if (import.meta.env.DEV) {
+        console.log("Using Local Gemini SDK for Word Card + Color");
+        const systemPrompt = getSystemInstruction('card_with_color', targetLanguage);
+        const data = await callLocalGemini(userPrompt, systemPrompt);
+        return normalize(data);
+    }
+
+    // PROD MODE
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'card_with_color',
+                word,
+                context: contextSentence,
+                translation,
+                targetLanguage,
+                sentenceSavedWords,
+                newWordColorIndex
+            }),
+        });
+
+        if (!response.ok) throw new Error("Erro ao gerar card com cor");
+        return normalize(await response.json());
+    } catch (error) {
+        console.error("Card+Color Error:", error);
         throw error;
     }
 };

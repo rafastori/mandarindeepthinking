@@ -80,6 +80,64 @@ export default async function handler(req, res) {
       return res.status(200).json(result);
     }
 
+    // --- 1.1 CARD + CORREÇÃO DE COR (combinado) ---
+    if (type === 'card_with_color') {
+      const { translation = '', sentenceSavedWords = [], newWordColorIndex = 0 } = req.body;
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano'
+      };
+      const langName = langNames[targetLanguage] || targetLanguage;
+      const isCJK = ['zh', 'ja', 'ko'].includes(targetLanguage);
+
+      const systemPrompt = `Você é um professor de ${langName} e linguista especialista em correspondência entre idiomas.
+
+Você receberá: uma PALAVRA em ${langName} (para criar um cartão de estudo), a FRASE de contexto, a TRADUÇÃO da frase em Português, o colorIndex que essa palavra nova deve receber, e uma lista de palavras JÁ SALVAS que aparecem na frase (cada uma com seu colorIndex).
+
+SUA TAREFA — faça as DUAS coisas e devolva em UM ÚNICO JSON (sem markdown):
+
+1) CARTÃO da PALAVRA nova:
+   - "word": a palavra (forma de dicionário quando fizer sentido)
+   - "pinyin": ${isCJK ? 'a transcrição fonética' : 'vazio ou null'}
+   - "meaning": o significado em Português
+
+2) "coloredTranslation": a TRADUÇÃO em Português tokenizada palavra por palavra:
+   - Inclua TODAS as palavras da tradução, na ORDEM original. Não invente, não omita e não reordene palavras.
+   - Para cada token defina "colorIndex":
+       • Se o token é a tradução (direta ou sinônimo próximo) da PALAVRA nova -> use o colorIndex informado para ela.
+       • Se o token corresponde a uma das PALAVRAS JÁ SALVAS -> use o colorIndex daquela palavra.
+       • Caso contrário -> null.
+   - Seja PRECISO: só marque traduções diretas ou sinônimos próximos. Artigos, preposições e conjunções recebem null, a menos que façam parte integral da expressão traduzida.
+   - Uma expressão com várias palavras pode marcar mais de um token com o mesmo colorIndex.
+
+FORMATO — APENAS este JSON:
+{
+  "word": "...",
+  "pinyin": "...",
+  "meaning": "...",
+  "coloredTranslation": [
+    { "word": "palavra", "colorIndex": 0 },
+    { "word": "outra", "colorIndex": null }
+  ]
+}`;
+
+      const savedWordsJson = (Array.isArray(sentenceSavedWords) && sentenceSavedWords.length > 0)
+        ? JSON.stringify(sentenceSavedWords, null, 2)
+        : '(nenhuma)';
+
+      const userPrompt = `PALAVRA nova (criar cartão e marcar na tradução): "${word}"
+colorIndex da palavra nova: ${newWordColorIndex}
+
+FRASE (${langName}): "${context}"
+TRADUÇÃO (Português) a tokenizar: "${translation}"
+
+PALAVRAS JÁ SALVAS nesta frase (marque cada uma na tradução com seu colorIndex):
+${savedWordsJson}`;
+
+      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      return res.status(200).json(result);
+    }
+
     // --- 2. GERAÇÃO DE JOGO ---
     if (type === 'game_deck') {
       const langNames = {
