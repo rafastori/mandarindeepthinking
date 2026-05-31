@@ -1,0 +1,897 @@
+[
+  {
+    "chinese": "A: 走过路过，不要错过……耐克的T恤只要50元了哦！",
+    "pinyin": "Zǒuguò lùguò, búyào cuòguò.. Nàikè de Txù zhǐyào 50 yuán le ó!",
+    "translation": "A: Quem passa e quem para, não perca... A camiseta da Nike está por apenas 50 yuan!",
+    "tokens": [
+      "走过",
+      "路过",
+      "，",
+      "不要",
+      "错过",
+      "…",
+      "…",
+      "耐克",
+      "的",
+      "T恤",
+      "只要",
+      "50",
+      "元",
+      "了",
+      "哦",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "走过",
+        "pinyin": "zǒuguò",
+        "meaning": "passar por"
+      },
+      {
+        "id": 2,
+        "word": "路过",
+        "pinyin": "lùguò",
+        "meaning": "passar por ali"
+      },
+      {
+        "id": 3,
+        "word": "不要错过",
+        "pinyin": "búyàocuòguò",
+        "meaning": "não perca"
+      },
+      {
+        "id": 4,
+        "word": "耐克",
+        "pinyin": "nàikè",
+        "meaning": "Nike"
+      },
+      {
+        "id": 5,
+        "word": "T恤",
+        "pinyin": "Txù",
+        "meaning": "camiseta"
+      },
+      {
+        "id": 6,
+        "word": "只要",
+        "pinyin": "zhǐyào",
+        "meaning": "apenas"
+      },
+      {
+        "id": 7,
+        "word": "元",
+        "pinyin": "yuán",
+        "meaning": "yuan (moeda)"
+      }
+    ],
+    "id": "local-1780224633346-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你看那个人，怎么那么眼熟。",
+    "pinyin": "Nǐ kàn nàge rén, zěnme nàme yǎnshú.",
+    "translation": "B: Olha aquela pessoa, por que ela parece tão familiar.",
+    "tokens": [
+      "你",
+      "看",
+      "那个",
+      "人",
+      "，",
+      "怎么",
+      "那么",
+      "眼熟",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你看",
+        "pinyin": "nǐkàn",
+        "meaning": "olhe / veja"
+      },
+      {
+        "id": 2,
+        "word": "那个人",
+        "pinyin": "nàgerén",
+        "meaning": "aquela pessoa"
+      },
+      {
+        "id": 3,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "por que / como"
+      },
+      {
+        "id": 4,
+        "word": "那么",
+        "pinyin": "nàme",
+        "meaning": "tão / tão assim"
+      },
+      {
+        "id": 5,
+        "word": "眼熟",
+        "pinyin": "yǎnshú",
+        "meaning": "familiar / parece conhecido"
+      }
+    ],
+    "id": "local-1780224633346-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 咦？那不是你老家的邻居唐……唐什么来着？哎呀，一下子想不起来了。",
+    "pinyin": "Yí? Nà búshì nǐ lǎojiā de línjū táng.. Táng shénme lái zhe? Āiyā, yīxiàzi xiǎngbùqǐlái le.",
+    "translation": "C: Ei? Não é o vizinho da sua terra natal, o Tang... Tang o quê mesmo? Ai, não estou conseguindo lembrar agora.",
+    "tokens": [
+      "咦",
+      "？",
+      "那",
+      "不是",
+      "你",
+      "老家",
+      "的",
+      "邻居",
+      "唐",
+      "…",
+      "…",
+      "唐",
+      "什么",
+      "来",
+      "着",
+      "？",
+      "哎呀",
+      "，",
+      "一下子",
+      "想不起来",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "咦",
+        "pinyin": "yí",
+        "meaning": "interjeição de surpresa ou dúvida"
+      },
+      {
+        "id": 2,
+        "word": "老家",
+        "pinyin": "lǎojiā",
+        "meaning": "terra natal, cidade de origem"
+      },
+      {
+        "id": 3,
+        "word": "邻居",
+        "pinyin": "línjū",
+        "meaning": "vizinho"
+      },
+      {
+        "id": 4,
+        "word": "一下子",
+        "pinyin": "yīxiàzi",
+        "meaning": "de repente, de uma vez"
+      }
+    ],
+    "id": "local-1780224633346-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 唐果！",
+    "pinyin": "Tángguǒ!",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "唐果",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "唐果",
+        "pinyin": "tángguǒ",
+        "meaning": "Tang Guo (nome próprio)"
+      }
+    ],
+    "id": "local-1780224633346-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 没错没错！就是他！看来现在跑到城里来做服装生意了。两年不见，都发福了。咱们过去跟他打个招呼吧！顺便看看有没有喜欢的衣服。",
+    "pinyin": "Méicuò méicuò! Jiùshì tā! Kànlái xiànzài pǎo dào chénglǐ lái zuò fúzhuāng shēngyì le. Liǎngnián bújiàn, dōu fāfú le. Zánmen guòqù gēn tā dǎgèzhāohū ba! Shùnbiàn kànkàn yǒuméiyǒu xǐhuān de yīfú.",
+    "translation": "C: Isso mesmo, isso mesmo! É ele! Parece que agora foi para a cidade fazer negócios com roupas. Não nos vemos há dois anos e ele já engordou. Vamos lá cumprimentá-lo! E aproveite para ver se há roupas que você goste.",
+    "tokens": [
+      "没错",
+      "没错",
+      "！",
+      "就是",
+      "他",
+      "！",
+      "看来",
+      "现在",
+      "跑",
+      "到",
+      "城里",
+      "来",
+      "做",
+      "服装",
+      "生意",
+      "了",
+      "。",
+      "两年",
+      "不见",
+      "，",
+      "都",
+      "发福",
+      "了",
+      "。",
+      "咱们",
+      "过去",
+      "跟",
+      "他",
+      "打个招呼",
+      "吧",
+      "！",
+      "顺便",
+      "看看",
+      "有没有",
+      "喜欢",
+      "的",
+      "衣服",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没错",
+        "pinyin": "méicuò",
+        "meaning": "isso mesmo / correto"
+      },
+      {
+        "id": 2,
+        "word": "服装生意",
+        "pinyin": "fúzhuāngshēngyì",
+        "meaning": "negócios de roupas"
+      },
+      {
+        "id": 3,
+        "word": "发福",
+        "pinyin": "fāfú",
+        "meaning": "engordar / ficar gordo"
+      },
+      {
+        "id": 4,
+        "word": "顺便",
+        "pinyin": "shùnbiàn",
+        "meaning": "de passagem / aproveitando a oportunidade"
+      }
+    ],
+    "id": "local-1780224633346-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 唐果！",
+    "pinyin": "Tángguǒ!",
+    "translation": "B: Tang Guo!",
+    "tokens": [
+      "唐果",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "唐果",
+        "pinyin": "tángguǒ",
+        "meaning": "Tang Guo (nome próprio)"
+      }
+    ],
+    "id": "local-1780224633346-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哟！是张哥啊，这么巧！",
+    "pinyin": "Yō! Shì zhānggē a, zhème qiǎo!",
+    "translation": "A: Oh! É o irmão Zhang, que coincidência!",
+    "tokens": [
+      "哟",
+      "！",
+      "是",
+      "张哥",
+      "啊",
+      "，",
+      "这么",
+      "巧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哟",
+        "pinyin": "yō",
+        "meaning": "interjeição de surpresa"
+      },
+      {
+        "id": 2,
+        "word": "张哥",
+        "pinyin": "zhānggē",
+        "meaning": "irmão Zhang (título de respeito)"
+      },
+      {
+        "id": 3,
+        "word": "这么",
+        "pinyin": "zhème",
+        "meaning": "tão"
+      },
+      {
+        "id": 4,
+        "word": "巧",
+        "pinyin": "qiǎo",
+        "meaning": "coincidência"
+      }
+    ],
+    "id": "local-1780224633346-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是啊！刚差点儿没认出来！你啥时候来上海的？生意不错嘛！",
+    "pinyin": "Shì a! Gāng chàdiǎnér méi rènchūlái! Nǐ sháshíhòu lái shànghǎi de? Shēngyì bùcuò ma!",
+    "translation": "B: É, verdade! Quase não te reconheci! Quando você veio para Xangai? Os negócios estão indo bem!",
+    "tokens": [
+      "是",
+      "啊",
+      "！",
+      "刚",
+      "差点儿",
+      "没",
+      "认出来",
+      "！",
+      "你",
+      "啥时候",
+      "来",
+      "上海",
+      "的",
+      "？",
+      "生意",
+      "不错",
+      "嘛",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "差点儿",
+        "pinyin": "chàdiǎnér",
+        "meaning": "quase"
+      },
+      {
+        "id": 2,
+        "word": "没认出来",
+        "pinyin": "méirènchūlái",
+        "meaning": "não reconhecer"
+      },
+      {
+        "id": 3,
+        "word": "上海",
+        "pinyin": "shànghǎi",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "生意",
+        "pinyin": "shēngyì",
+        "meaning": "negócios"
+      },
+      {
+        "id": 5,
+        "word": "不错",
+        "pinyin": "bùcuò",
+        "meaning": "bom, não ruim"
+      }
+    ],
+    "id": "local-1780224633346-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 还凑合吧。混口饭吃呗。来来来，张嫂看看有没有喜欢的，拿件穿吧！",
+    "pinyin": "Hái còuhé ba. Hùnkǒufànchī bei. Láiláilái, zhāngsǎo kànkàn yǒuméiyǒu xǐhuān de, nájiàn chuān ba!",
+    "translation": "A: É mais ou menos. Dá para sobreviver. Vamos lá, irmã Zhang, dê uma olhada se tem algo que você goste, pegue uma peça para vestir!",
+    "tokens": [
+      "还",
+      "凑合",
+      "吧",
+      "。",
+      "混口饭吃",
+      "呗",
+      "。",
+      "来来来",
+      "，",
+      "张嫂",
+      "看看",
+      "有没有",
+      "喜欢",
+      "的",
+      "，",
+      "拿件",
+      "穿",
+      "吧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "凑合",
+        "pinyin": "còuhé",
+        "meaning": "mais ou menos, improvisar"
+      },
+      {
+        "id": 2,
+        "word": "混口饭吃",
+        "pinyin": "hùnkǒufànchī",
+        "meaning": "ganhar o pão de cada dia, sobreviver"
+      },
+      {
+        "id": 3,
+        "word": "来来来",
+        "pinyin": "láiláilái",
+        "meaning": "vamos lá, venha"
+      },
+      {
+        "id": 4,
+        "word": "张嫂",
+        "pinyin": "zhāngsǎo",
+        "meaning": "irmã Zhang (esposa do Sr. Zhang)"
+      },
+      {
+        "id": 5,
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar"
+      },
+      {
+        "id": 6,
+        "word": "拿",
+        "pinyin": "ná",
+        "meaning": "pegar, levar"
+      }
+    ],
+    "id": "local-1780224633346-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 哇！古奇、LV、香奈尔、巴宝莉、普拉达。。。全是国际大牌啊！这是真的吗?",
+    "pinyin": "Wa! Gǔqí, LV, xiāngnàiěr, bābǎolì, pǔlādá... Quánshì guójì dàpái a! Zhèshì zhēnde ma?",
+    "translation": "C: Uau! Gucci, LV, Chanel, Burberry, Prada... São todas marcas internacionais de luxo! Isso é verdade?",
+    "tokens": [
+      "哇",
+      "！",
+      "古奇",
+      "、",
+      "LV",
+      "、",
+      "香奈尔",
+      "、",
+      "巴宝莉",
+      "、",
+      "普拉达",
+      "。",
+      "。",
+      "。",
+      "全是",
+      "国际",
+      "大牌",
+      "啊",
+      "！",
+      "这是",
+      "真的",
+      "吗",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哇",
+        "pinyin": "wa",
+        "meaning": "uau"
+      },
+      {
+        "id": 2,
+        "word": "古奇",
+        "pinyin": "gǔqí",
+        "meaning": "Gucci"
+      },
+      {
+        "id": 3,
+        "word": "香奈尔",
+        "pinyin": "xiāngnàiěr",
+        "meaning": "Chanel"
+      },
+      {
+        "id": 4,
+        "word": "巴宝莉",
+        "pinyin": "bābǎolì",
+        "meaning": "Burberry"
+      },
+      {
+        "id": 5,
+        "word": "普拉达",
+        "pinyin": "pǔlādá",
+        "meaning": "Prada"
+      },
+      {
+        "id": 6,
+        "word": "国际大牌",
+        "pinyin": "guójìdàpái",
+        "meaning": "marcas internacionais de luxo"
+      },
+      {
+        "id": 7,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "verdadeiro"
+      }
+    ],
+    "id": "local-1780224633346-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这些都是A货吧？",
+    "pinyin": "Zhèxiē dōu shì A huò ba?",
+    "translation": "B: Essas são réplicas, não é?",
+    "tokens": [
+      "这些",
+      "都",
+      "是",
+      "A",
+      "货",
+      "吧",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "esses"
+      },
+      {
+        "id": 2,
+        "word": "都是",
+        "pinyin": "dōushì",
+        "meaning": "são todos"
+      },
+      {
+        "id": 3,
+        "word": "A货",
+        "pinyin": "Ahuò",
+        "meaning": "réplicas/falsificações"
+      },
+      {
+        "id": 4,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de suposição"
+      }
+    ],
+    "id": "local-1780224633346-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 就是假的喽？可是看上去这些衣服质量和做工都很好啊，好像分不出真假嘛。应该是真的吧！",
+    "pinyin": "Jiùshì jiǎ de lóu? Kěshì kànshàngqù zhèxiē yīfú zhìliàng hé zuògōng dōu hěn hǎo a, hǎoxiàng fēnbùchū zhēnjiǎ ma. Yīnggāi shì zhēnde ba!",
+    "translation": "C: Então é falso? Mas parece que a qualidade e o acabamento dessas roupas são muito bons, não dá para distinguir o original do falso. Deve ser verdadeiro!",
+    "tokens": [
+      "就是",
+      "假",
+      "的",
+      "喽",
+      "？",
+      "可是",
+      "看上去",
+      "这些",
+      "衣服",
+      "质量",
+      "和",
+      "做工",
+      "都",
+      "很",
+      "好",
+      "啊",
+      "，",
+      "好像",
+      "分不出",
+      "真假",
+      "嘛",
+      "。",
+      "应该",
+      "是",
+      "真的",
+      "吧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就是",
+        "pinyin": "jiùshì",
+        "meaning": "então / é exatamente"
+      },
+      {
+        "id": 2,
+        "word": "假",
+        "pinyin": "jiǎ",
+        "meaning": "falso / falso"
+      },
+      {
+        "id": 3,
+        "word": "质量",
+        "pinyin": "zhìliàng",
+        "meaning": "qualidade"
+      },
+      {
+        "id": 4,
+        "word": "做工",
+        "pinyin": "zuògōng",
+        "meaning": "acabamento / trabalho artesanal"
+      },
+      {
+        "id": 5,
+        "word": "真假",
+        "pinyin": "zhēnjiǎ",
+        "meaning": "autêntico ou falso"
+      },
+      {
+        "id": 6,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "verdadeiro / original"
+      }
+    ],
+    "id": "local-1780224633346-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 嘘！张哥说的没错，这些的确是A货。不仔细看的话是看不出有什么两样的。A货从材料、设计、缝纫等都和正品是一样的。不过，它们多少都是有瑕疵的。比如纽扣不对称、商标装错等。按照规定，这些服装都该被销毁的，但是，服装厂里有些人把这些残次品偷偷卖了。A货服装一是价钱便宜、二是款式新、三是质量好、四是有品牌，所以在低端市场很好卖。",
+    "pinyin": "Xū! Zhānggē shuō de méicuò, zhèxiē díquè shì A huò. Bù zǐxì kàn dehuà shì kànbùchū yǒu shénme liǎngyàng de. A huòcóng cáiliào, shèjì, féngrèn děng dōu hé zhèngpǐn shì yīyàng de. Bùguò, tāmen duōshǎo dōu shì yǒu xiácī de. Bǐrú niǔkòu bù duìchèn, shāngbiāo zhuāngcuò děng. Ànzhào guīdìng, zhèxiē fúzhuāng dōu gāi bèi xiāohuǐ de, dànshì, fúzhuāngchǎng lǐ yǒuxiē rén bǎ zhèxiē cáncìpǐn tōutōu mài le. A huò fúzhuāng yīshì jiàqián piányi, èrshì kuǎnshì xīn, sānshì zhìliàng hǎo, sìshì yǒu pǐnpái, suǒyǐ zài dīduān shìchǎng hěn hǎo mài.",
+    "translation": "A: Shh! O irmão Zhang está certo, estes são realmente produtos de categoria A. Sem olhar de perto, não dá para ver diferença. Os produtos de categoria A têm os mesmos materiais, design e costura dos originais. No entanto, eles têm algumas falhas. Por exemplo, botões assimétricos ou etiquetas mal colocadas. De acordo com as regras, essas roupas deveriam ser destruídas, mas algumas pessoas na fábrica as venderam secretamente. Os produtos de categoria A são baratos, têm modelos novos, boa qualidade e são de marca, por isso vendem muito bem no mercado de baixo custo.",
+    "tokens": [
+      "嘘",
+      "！",
+      "张哥",
+      "说",
+      "的",
+      "没错",
+      "，",
+      "这些",
+      "的确",
+      "是",
+      "A",
+      "货",
+      "。",
+      "不",
+      "仔细",
+      "看",
+      "的话",
+      "是",
+      "看不出",
+      "有",
+      "什么",
+      "两样",
+      "的",
+      "。",
+      "A",
+      "货从",
+      "材料",
+      "、",
+      "设计",
+      "、",
+      "缝纫",
+      "等",
+      "都",
+      "和",
+      "正品",
+      "是",
+      "一样",
+      "的",
+      "。",
+      "不过",
+      "，",
+      "它们",
+      "多少",
+      "都",
+      "是",
+      "有",
+      "瑕疵",
+      "的",
+      "。",
+      "比如",
+      "纽扣",
+      "不",
+      "对称",
+      "、",
+      "商标",
+      "装错",
+      "等",
+      "。",
+      "按照",
+      "规定",
+      "，",
+      "这些",
+      "服装",
+      "都",
+      "该",
+      "被",
+      "销毁",
+      "的",
+      "，",
+      "但是",
+      "，",
+      "服装厂",
+      "里",
+      "有些",
+      "人",
+      "把",
+      "这些",
+      "残次品",
+      "偷偷",
+      "卖",
+      "了",
+      "。",
+      "A",
+      "货",
+      "服装",
+      "一是",
+      "价钱",
+      "便宜",
+      "、",
+      "二是",
+      "款式",
+      "新",
+      "、",
+      "三是",
+      "质量",
+      "好",
+      "、",
+      "四是",
+      "有",
+      "品牌",
+      "，",
+      "所以",
+      "在",
+      "低端",
+      "市场",
+      "很",
+      "好",
+      "卖",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "嘘",
+        "pinyin": "xū",
+        "meaning": "shh / silêncio"
+      },
+      {
+        "id": 2,
+        "word": "A货",
+        "pinyin": "Ahuò",
+        "meaning": "produto de categoria A / réplica"
+      },
+      {
+        "id": 3,
+        "word": "正品",
+        "pinyin": "zhèngpǐn",
+        "meaning": "produto original"
+      },
+      {
+        "id": 4,
+        "word": "瑕疵",
+        "pinyin": "xiácī",
+        "meaning": "defeito / falha"
+      },
+      {
+        "id": 5,
+        "word": "销毁",
+        "pinyin": "xiāohuǐ",
+        "meaning": "destruir / eliminar"
+      },
+      {
+        "id": 6,
+        "word": "残次品",
+        "pinyin": "cáncìpǐn",
+        "meaning": "produto defeituoso / rejeitado"
+      },
+      {
+        "id": 7,
+        "word": "低端市场",
+        "pinyin": "dīduānshìchǎng",
+        "meaning": "mercado de baixo custo"
+      }
+    ],
+    "id": "local-1780224633346-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你小子胆子真大啊！",
+    "pinyin": "Nǐ xiǎozi dǎnzi zhēndà a!",
+    "translation": "B: Você tem muita coragem!",
+    "tokens": [
+      "你",
+      "小子",
+      "胆子",
+      "真大",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 2,
+        "word": "小子",
+        "pinyin": "xiǎozi",
+        "meaning": "garoto / moleque"
+      },
+      {
+        "id": 3,
+        "word": "胆子",
+        "pinyin": "dǎnzi",
+        "meaning": "coragem"
+      },
+      {
+        "id": 4,
+        "word": "大",
+        "pinyin": "dà",
+        "meaning": "grande"
+      }
+    ],
+    "id": "local-1780224633346-13",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 老公，看，这件我穿怎么样？",
+    "pinyin": "Lǎogōng, kàn, zhèjiàn wǒ chuān zěnmeyàng?",
+    "translation": "C: Marido, olha, como fica essa roupa em mim?",
+    "tokens": [
+      "老公",
+      "，",
+      "看",
+      "，",
+      "这件",
+      "我",
+      "穿",
+      "怎么样",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "meaning": "marido"
+      },
+      {
+        "id": 2,
+        "word": "这件",
+        "pinyin": "zhèjiàn",
+        "meaning": "essa peça/roupa"
+      },
+      {
+        "id": 3,
+        "word": "穿",
+        "pinyin": "chuān",
+        "meaning": "vestir/usar"
+      },
+      {
+        "id": 4,
+        "word": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "meaning": "como fica/que tal"
+      }
+    ],
+    "id": "local-1780224633346-14",
+    "language": "Chinês"
+  }
+]

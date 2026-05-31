@@ -1,0 +1,808 @@
+[
+  {
+    "chinese": "A: 明天一起去吃饭吧。我用大众点评团购一下。",
+    "pinyin": "Míngtiān yìqǐ qù chīfàn ba. Wǒyòng dàzhòng diǎnpíng tuángòu yīxià.",
+    "translation": "A: Vamos comer juntos amanhã. Vou fazer um pedido em grupo pelo Dianping.",
+    "tokens": [
+      "明天",
+      "一起",
+      "去",
+      "吃饭",
+      "吧",
+      "。",
+      "我用",
+      "大众",
+      "点评",
+      "团购",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "明天",
+        "pinyin": "míngtiān",
+        "meaning": "amanhã"
+      },
+      {
+        "id": 2,
+        "word": "一起",
+        "pinyin": "yìqǐ",
+        "meaning": "juntos"
+      },
+      {
+        "id": 3,
+        "word": "吃饭",
+        "pinyin": "chīfàn",
+        "meaning": "comer"
+      },
+      {
+        "id": 4,
+        "word": "大众点评",
+        "pinyin": "dàzhòngdiǎnpíng",
+        "meaning": "Dianping (app de avaliações)"
+      },
+      {
+        "id": 5,
+        "word": "团购",
+        "pinyin": "tuángòu",
+        "meaning": "compra em grupo"
+      }
+    ],
+    "id": "local-1780225089605-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 行啊。",
+    "pinyin": "Xíng a.",
+    "translation": "B: Tudo bem.",
+    "tokens": [
+      "行",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "行",
+        "pinyin": "xíng",
+        "meaning": "ok, tudo bem"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "partícula de concordância ou ênfase"
+      }
+    ],
+    "id": "local-1780225089605-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哎，现在团购有优惠。用微信支付可以再省20块。可是我只有支付宝啊，要不申请一个微信支付吧。",
+    "pinyin": "Āi, xiànzài tuángòu yǒu yōuhuì. Yòng wēixìn zhīfù kěyǐ zàishěng 20 kuài. Kěshì wǒ zhǐyǒu zhīfùbǎo a, yào bù shēnqǐng yígè wēixìn zhīfù ba.",
+    "translation": "A: Ei, agora há descontos em compras em grupo. Se pagar com WeChat Pay, você economiza mais 20 yuan. Mas eu só tenho Alipay, melhor eu criar uma conta no WeChat Pay.",
+    "tokens": [
+      "哎",
+      "，",
+      "现在",
+      "团购",
+      "有",
+      "优惠",
+      "。",
+      "用",
+      "微信",
+      "支付",
+      "可以",
+      "再省",
+      "20",
+      "块",
+      "。",
+      "可是",
+      "我",
+      "只有",
+      "支付宝",
+      "啊",
+      "，",
+      "要",
+      "不",
+      "申请",
+      "一个",
+      "微信",
+      "支付",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "团购",
+        "pinyin": "tuángòu",
+        "meaning": "compras em grupo"
+      },
+      {
+        "id": 2,
+        "word": "优惠",
+        "pinyin": "yōuhuì",
+        "meaning": "desconto"
+      },
+      {
+        "id": 3,
+        "word": "微信支付",
+        "pinyin": "wēixìnzhīfù",
+        "meaning": "WeChat Pay"
+      },
+      {
+        "id": 4,
+        "word": "省",
+        "pinyin": "shěng",
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "支付宝",
+        "pinyin": "zhīfùbǎo",
+        "meaning": "Alipay"
+      },
+      {
+        "id": 6,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar/criar conta"
+      }
+    ],
+    "id": "local-1780225089605-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 腾讯果然很迅速嘛。入股点评后，那么快就推出微信营销方案了。",
+    "pinyin": "Téngxùn guǒrán hěn xùnsù ma. Rùgǔ diǎnpíng hòu, nàme kuài jiù tuīchū wēixìn yíngxiāo fāngàn le.",
+    "translation": "B: A Tencent é realmente rápida. Depois de investir na Dianping, lançou o plano de marketing do WeChat tão rapidamente.",
+    "tokens": [
+      "腾讯",
+      "果然",
+      "很",
+      "迅速",
+      "嘛",
+      "。",
+      "入股",
+      "点评",
+      "后",
+      "，",
+      "那么",
+      "快",
+      "就",
+      "推出",
+      "微信",
+      "营销",
+      "方案",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "腾讯",
+        "pinyin": "téngxùn",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 2,
+        "word": "迅速",
+        "pinyin": "xùnsù",
+        "meaning": "rápido"
+      },
+      {
+        "id": 3,
+        "word": "入股",
+        "pinyin": "rùgǔ",
+        "meaning": "investir/adquirir ações"
+      },
+      {
+        "id": 4,
+        "word": "点评",
+        "pinyin": "diǎnpíng",
+        "meaning": "Dianping"
+      },
+      {
+        "id": 5,
+        "word": "推出",
+        "pinyin": "tuīchū",
+        "meaning": "lançar"
+      },
+      {
+        "id": 6,
+        "word": "微信",
+        "pinyin": "wēixìn",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 7,
+        "word": "营销",
+        "pinyin": "yíngxiāo",
+        "meaning": "marketing"
+      }
+    ],
+    "id": "local-1780225089605-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 腾讯的QQ、微信都是聊天产品，为什么要投资点评啊？",
+    "pinyin": "Téngxùn de QQ, wēixìn dōu shì liáotiān chǎnpǐn, wèishénme yào tóuzī diǎnpíng a?",
+    "translation": "A: O QQ e o WeChat da Tencent são ambos produtos de chat, por que investir na Dianping?",
+    "tokens": [
+      "腾讯",
+      "的",
+      "QQ",
+      "、",
+      "微信",
+      "都",
+      "是",
+      "聊天",
+      "产品",
+      "，",
+      "为什么",
+      "要",
+      "投资",
+      "点评",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "腾讯",
+        "pinyin": "téngxùn",
+        "meaning": "Tencent"
+      },
+      {
+        "id": 2,
+        "word": "聊天",
+        "pinyin": "liáotiān",
+        "meaning": "conversa/chat"
+      },
+      {
+        "id": 3,
+        "word": "产品",
+        "pinyin": "chǎnpǐn",
+        "meaning": "produto"
+      },
+      {
+        "id": 4,
+        "word": "投资",
+        "pinyin": "tóuzī",
+        "meaning": "investimento/investir"
+      },
+      {
+        "id": 5,
+        "word": "点评",
+        "pinyin": "diǎnpíng",
+        "meaning": "Dianping"
+      }
+    ],
+    "id": "local-1780225089605-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 现在最热的就是O2O，BAT为了O2O花了大钱。",
+    "pinyin": "Xiànzài zuìrè de jiùshì O2O, BAT wèile O2O huā le dàqián.",
+    "translation": "B: O que está mais em alta agora é o O2O. O BAT gastou muito dinheiro no O2O.",
+    "tokens": [
+      "现在",
+      "最热",
+      "的",
+      "就是",
+      "O2O",
+      "，",
+      "BAT",
+      "为了",
+      "O2O",
+      "花",
+      "了",
+      "大钱",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "最热",
+        "pinyin": "zuìrè",
+        "meaning": "mais quente/em alta"
+      },
+      {
+        "id": 3,
+        "word": "O2O",
+        "pinyin": "O2O",
+        "meaning": "modelo de negócios online-to-offline"
+      },
+      {
+        "id": 4,
+        "word": "BAT",
+        "pinyin": "BAT",
+        "meaning": "iniciais de Baidu, Alibaba e Tencent"
+      },
+      {
+        "id": 5,
+        "word": "为了",
+        "pinyin": "wèile",
+        "meaning": "para / em prol de"
+      },
+      {
+        "id": 6,
+        "word": "花了",
+        "pinyin": "huāle",
+        "meaning": "gastou"
+      },
+      {
+        "id": 7,
+        "word": "大钱",
+        "pinyin": "dàqián",
+        "meaning": "grande quantia de dinheiro"
+      }
+    ],
+    "id": "local-1780225089605-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 说人话！",
+    "pinyin": "Shuōrénhuà!",
+    "translation": "A: Fale de forma clara! / Fale como gente!",
+    "tokens": [
+      "说人话",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "falar"
+      },
+      {
+        "id": 2,
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoa / gente"
+      },
+      {
+        "id": 3,
+        "word": "话",
+        "pinyin": "huà",
+        "meaning": "palavra / fala"
+      }
+    ],
+    "id": "local-1780225089605-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: O2O就是线上对线下。把线上消费和线下消费结合起来。你想你在点评上搜饭店是在线上，但是你不能在网上吃饭吧。最后还是得去线下的饭店吃饭。这就是O2O。",
+    "pinyin": "O2O jiùshì xiànshàng duì xiànxià. Bǎ xiàn shàng xiāofèi hé xiànxià xiāofèi jiéhé qǐlái. Nǐ xiǎng nǐ zài diǎnpíng shàng sōu fàndiàn shì zàixiàn shàng, dànshì nǐ bùnéng zài wǎngshàng chīfàn ba. Zuìhòu háishì dé qù xiànxià de fàndiàn chīfàn. Zhè jiùshì O2O.",
+    "translation": "B: O2O é a integração do online com o offline. Combina o consumo online ao consumo offline. Por exemplo, quando você pesquisa restaurantes no Dianping, isso é online, mas você não pode comer na internet, certo? No final, você precisa ir a um restaurante físico para comer. Isso é O2O.",
+    "tokens": [
+      "O2O",
+      "就是",
+      "线上",
+      "对",
+      "线下",
+      "。",
+      "把",
+      "线",
+      "上",
+      "消费",
+      "和",
+      "线下",
+      "消费",
+      "结合",
+      "起来",
+      "。",
+      "你",
+      "想",
+      "你",
+      "在",
+      "点评",
+      "上",
+      "搜",
+      "饭店",
+      "是",
+      "在线",
+      "上",
+      "，",
+      "但是",
+      "你",
+      "不能",
+      "在",
+      "网上",
+      "吃饭",
+      "吧",
+      "。",
+      "最后",
+      "还是",
+      "得",
+      "去",
+      "线下",
+      "的",
+      "饭店",
+      "吃饭",
+      "。",
+      "这",
+      "就是",
+      "O2O",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "O2O",
+        "pinyin": "O2O",
+        "meaning": "Online to Offline"
+      },
+      {
+        "id": 2,
+        "word": "线上",
+        "pinyin": "xiànshàng",
+        "meaning": "online"
+      },
+      {
+        "id": 3,
+        "word": "线下",
+        "pinyin": "xiànxià",
+        "meaning": "offline"
+      },
+      {
+        "id": 4,
+        "word": "结合",
+        "pinyin": "jiéhé",
+        "meaning": "combinar/integrar"
+      },
+      {
+        "id": 5,
+        "word": "点评",
+        "pinyin": "diǎnpíng",
+        "meaning": "avaliação (plataforma Dianping)"
+      },
+      {
+        "id": 6,
+        "word": "饭店",
+        "pinyin": "fàndiàn",
+        "meaning": "restaurante"
+      }
+    ],
+    "id": "local-1780225089605-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦，那BAT呢？",
+    "pinyin": "Ó, nà BAT ne?",
+    "translation": "A: Ah, e o BAT?",
+    "tokens": [
+      "哦",
+      "，",
+      "那",
+      "BAT",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh"
+      },
+      {
+        "id": 2,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então"
+      },
+      {
+        "id": 3,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "e/então (pergunta)"
+      }
+    ],
+    "id": "local-1780225089605-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 百度、阿里巴巴、腾讯三巨头。BAT都在大规模投资、收购O2O。为他们将来的商业帝国布局。",
+    "pinyin": "Bǎidù, ālǐbābā, téngxùn sān jùtóu. BAT dōu zài dàguīmó tóuzī, shōugòu O2O. Wèi tāmen jiānglái de shāngyè dìguó bùjú.",
+    "translation": "B: Os três gigantes: Baidu, Alibaba e Tencent. O BAT está investindo e adquirindo em larga escala no setor O2O, traçando o plano para seu futuro império comercial.",
+    "tokens": [
+      "百度",
+      "、",
+      "阿里巴巴",
+      "、",
+      "腾讯",
+      "三",
+      "巨头",
+      "。",
+      "BAT",
+      "都",
+      "在",
+      "大规模",
+      "投资",
+      "、",
+      "收购",
+      "O2O",
+      "。",
+      "为",
+      "他们",
+      "将来",
+      "的",
+      "商业",
+      "帝国",
+      "布局",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "巨头",
+        "pinyin": "jùtóu",
+        "meaning": "gigante (empresarial)"
+      },
+      {
+        "id": 2,
+        "word": "大规模",
+        "pinyin": "dàguīmó",
+        "meaning": "em larga escala"
+      },
+      {
+        "id": 3,
+        "word": "收购",
+        "pinyin": "shōugòu",
+        "meaning": "aquisição"
+      },
+      {
+        "id": 4,
+        "word": "布局",
+        "pinyin": "bùjú",
+        "meaning": "planejamento estratégico"
+      },
+      {
+        "id": 5,
+        "word": "帝国",
+        "pinyin": "dìguó",
+        "meaning": "império"
+      }
+    ],
+    "id": "local-1780225089605-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 大众点评这样可以得到投资，那腾讯有什么好处？",
+    "pinyin": "Dàzhòng diǎnpíng zhèyàng kěyǐ dédào tóuzī, nà téngxùn yǒu shénme hǎochù?",
+    "translation": "A: Se o Dianping consegue obter investimentos dessa forma, qual é o benefício para a Tencent?",
+    "tokens": [
+      "大众",
+      "点评",
+      "这样",
+      "可以",
+      "得到",
+      "投资",
+      "，",
+      "那",
+      "腾讯",
+      "有",
+      "什么",
+      "好处",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大众点评",
+        "pinyin": "dàzhòngdiǎnpíng",
+        "meaning": "Dianping (plataforma de avaliações)"
+      },
+      {
+        "id": 2,
+        "word": "这样",
+        "pinyin": "zhèyàng",
+        "meaning": "dessa forma / assim"
+      },
+      {
+        "id": 3,
+        "word": "得到",
+        "pinyin": "dédào",
+        "meaning": "obter / conseguir"
+      },
+      {
+        "id": 4,
+        "word": "投资",
+        "pinyin": "tóuzī",
+        "meaning": "investimento"
+      },
+      {
+        "id": 5,
+        "word": "腾讯",
+        "pinyin": "téngxùn",
+        "meaning": "Tencent (empresa)"
+      },
+      {
+        "id": 6,
+        "word": "好处",
+        "pinyin": "hǎochù",
+        "meaning": "benefício / vantagem"
+      }
+    ],
+    "id": "local-1780225089605-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 多了！比如，腾讯的支付产品一直比不上阿里巴巴。现在跟大众点评一起营销，你不就打算申请微信支付了？大众点评也不光是为了钱，O2O需要形成一个封闭的环，大众点评缺少支付环节。两家公司正好短板互补。",
+    "pinyin": "Duō le! Bǐrú, téngxùn de zhīfù chǎnpǐn yìzhí bǐbùshàng ālǐbābā. Xiànzài gēn dàzhòng diǎnpíng yìqǐ yíngxiāo, nǐ bù jiù dǎsuàn shēnqǐng wēixìn zhīfù le? Dàzhòng diǎnpíng yě bùguāng shì wèile qián, O2O xūyào xíngchéng yígè fēngbì de huán, dàzhòng diǎnpíng quēshǎo zhīfù huánjié. Liǎngjiā gōngsī zhènghǎo duǎnbǎn hùbǔ.",
+    "translation": "B: Muito! Por exemplo, os produtos de pagamento da Tencent nunca chegaram ao nível do Alibaba. Agora, ao fazer marketing junto com o Dianping, você não está planejando solicitar o WeChat Pay? O Dianping não está fazendo isso apenas por dinheiro; o O2O precisa formar um ciclo fechado, e o Dianping carece da etapa de pagamento. As duas empresas complementam exatamente suas fraquezas.",
+    "tokens": [
+      "多",
+      "了",
+      "！",
+      "比如",
+      "，",
+      "腾讯",
+      "的",
+      "支付",
+      "产品",
+      "一直",
+      "比不上",
+      "阿里巴巴",
+      "。",
+      "现在",
+      "跟",
+      "大众",
+      "点评",
+      "一起",
+      "营销",
+      "，",
+      "你",
+      "不",
+      "就",
+      "打算",
+      "申请",
+      "微信",
+      "支付",
+      "了",
+      "？",
+      "大众",
+      "点评",
+      "也",
+      "不光",
+      "是",
+      "为了",
+      "钱",
+      "，",
+      "O2O",
+      "需要",
+      "形成",
+      "一个",
+      "封闭",
+      "的",
+      "环",
+      "，",
+      "大众",
+      "点评",
+      "缺少",
+      "支付",
+      "环节",
+      "。",
+      "两家",
+      "公司",
+      "正好",
+      "短板",
+      "互补",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "支付",
+        "pinyin": "zhīfù",
+        "meaning": "pagamento"
+      },
+      {
+        "id": 2,
+        "word": "比不上",
+        "pinyin": "bǐbùshàng",
+        "meaning": "não chega ao nível de"
+      },
+      {
+        "id": 3,
+        "word": "营销",
+        "pinyin": "yíngxiāo",
+        "meaning": "marketing"
+      },
+      {
+        "id": 4,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 5,
+        "word": "封闭",
+        "pinyin": "fēngbì",
+        "meaning": "fechado"
+      },
+      {
+        "id": 6,
+        "word": "短板",
+        "pinyin": "duǎnbǎn",
+        "meaning": "fraqueza"
+      },
+      {
+        "id": 7,
+        "word": "互补",
+        "pinyin": "hùbǔ",
+        "meaning": "complementar"
+      }
+    ],
+    "id": "local-1780225089605-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 太复杂了。我微信支付申请好了，可以省20块啦！",
+    "pinyin": "Tài fùzá le. Wǒ wēixìn zhīfù shēnqǐng hǎo le, kěyǐ shěng 20 kuài la!",
+    "translation": "A: É muito complicado. Já finalizei o pedido do WeChat Pay, consigo economizar 20 yuanes!",
+    "tokens": [
+      "太",
+      "复杂",
+      "了",
+      "。",
+      "我",
+      "微信",
+      "支付",
+      "申请",
+      "好",
+      "了",
+      "，",
+      "可以",
+      "省",
+      "20",
+      "块",
+      "啦",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "复杂",
+        "pinyin": "fùzá",
+        "meaning": "complexo"
+      },
+      {
+        "id": 2,
+        "word": "微信支付",
+        "pinyin": "wēixìnzhīfù",
+        "meaning": "WeChat Pay"
+      },
+      {
+        "id": 3,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 4,
+        "word": "省",
+        "pinyin": "shěng",
+        "meaning": "economizar"
+      },
+      {
+        "id": 5,
+        "word": "块",
+        "pinyin": "kuài",
+        "meaning": "yuan (moeda)"
+      }
+    ],
+    "id": "local-1780225089605-12",
+    "language": "Chinês"
+  }
+]

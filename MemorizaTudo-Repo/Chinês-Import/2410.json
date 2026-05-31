@@ -1,14 +1,13 @@
 [
   {
-    "chinese": "小姐，你们几位？",
-    "pinyin": "xiǎojiě, nǐmen jǐ wèi?",
-    "translation": "Senhorita, quantos de vocês?",
+    "chinese": "A: 小姐，请问几位？",
+    "pinyin": "Xiǎojiě, qǐngwèn jǐwèi?",
+    "translation": "A: Senhorita, quantos são vocês?",
     "tokens": [
       "小姐",
       "，",
-      "你们",
-      "几",
-      "位",
+      "请问",
+      "几位",
       "？"
     ],
     "keywords": [
@@ -16,100 +15,89 @@
         "id": 1,
         "word": "小姐",
         "pinyin": "xiǎojiě",
-        "meaning": "senhorita, moça, garçonete"
+        "meaning": "senhorita / garçonete"
       },
       {
         "id": 2,
-        "word": "你们",
-        "pinyin": "nǐmen",
-        "meaning": "vocês (plural)"
+        "word": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "por favor, diga-me / com licença"
       },
       {
         "id": 3,
-        "word": "几",
-        "pinyin": "jǐ",
-        "meaning": "quantos (geralmente para números pequenos)"
-      },
-      {
-        "id": 4,
-        "word": "位",
-        "pinyin": "wèi",
-        "meaning": "classificador educado para pessoas"
+        "word": "几位",
+        "pinyin": "jǐwèi",
+        "meaning": "quantas pessoas / quantos"
       }
     ],
-    "id": "local-1772295680702-0",
+    "id": "local-1780200428693-0",
     "language": "Chinês"
   },
   {
-    "chinese": "两位。",
-    "pinyin": "liǎng wèi.",
-    "translation": "Duas pessoas.",
+    "chinese": "B: 两个。",
+    "pinyin": "Liǎnggè.",
+    "translation": "B: Dois.",
     "tokens": [
-      "两",
-      "位",
+      "两个",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "两",
-        "pinyin": "liǎng",
-        "meaning": "dois (usado antes de classificadores)"
-      },
-      {
-        "id": 2,
-        "word": "位",
-        "pinyin": "wèi",
-        "meaning": "classificador educado para pessoas"
+        "word": "两个",
+        "pinyin": "liǎnggè",
+        "meaning": "dois"
       }
     ],
-    "id": "local-1772295680702-1",
+    "id": "local-1780200428693-1",
     "language": "Chinês"
   },
   {
-    "chinese": "好的，这是你们的号。请稍等。",
-    "pinyin": "hǎo de, zhè shì nǐmen de hào. qǐng shāo děng.",
-    "translation": "Ok, este é o número de vocês. Por favor, aguardem um pouco.",
+    "chinese": "A: 好的，这是你们的号码。请等一下。",
+    "pinyin": "Hǎo de, zhèshì nǐmen de hàomǎ. Qǐngděngyíxià.",
+    "translation": "A: Certo, aqui estão os números de vocês. Por favor, aguarde um momento.",
     "tokens": [
       "好",
       "的",
       "，",
-      "这",
-      "是",
+      "这是",
       "你们",
       "的",
-      "("
+      "号码",
+      "。",
+      "请等一下",
+      "。"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok, certo"
+        "pinyin": "hǎode",
+        "meaning": "ok / certo"
       },
       {
         "id": 2,
-        "word": "这",
-        "pinyin": "zhè",
-        "meaning": "este, esta"
+        "word": "这是",
+        "pinyin": "zhèshì",
+        "meaning": "este é / aqui está"
       },
       {
         "id": 3,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
+        "word": "你们",
+        "pinyin": "nǐmen",
+        "meaning": "vocês"
       },
       {
         "id": 4,
-        "word": "你们",
-        "pinyin": "nǐmen",
-        "meaning": "vocês (plural)"
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "de (posse)"
       },
       {
         "id": 5,
-        "word": "号",
-        "pinyin": "hào",
-        "meaning": "número (da fila), tamanho"
+        "word": "号码",
+        "pinyin": "hàomǎ",
+        "meaning": "número"
       },
       {
         "id": 6,
@@ -119,23 +107,22 @@
       },
       {
         "id": 7,
-        "word": "稍等",
-        "pinyin": "shāo děng",
-        "meaning": "aguardar um momento"
+        "word": "等一下",
+        "pinyin": "děngyíxià",
+        "meaning": "aguarde um momento"
       }
     ],
-    "id": "local-1772295680702-2",
+    "id": "local-1780200428693-2",
     "language": "Chinês"
   },
   {
-    "chinese": "要等多久？",
-    "pinyin": "yào děng duō jiǔ?",
-    "translation": "Precisa esperar quanto tempo?",
+    "chinese": "B: 要等多久？",
+    "pinyin": "Yào děng duōjiǔ?",
+    "translation": "B: Quanto tempo preciso esperar?",
     "tokens": [
       "要",
       "等",
-      "多",
-      "久",
+      "多久",
       "？"
     ],
     "keywords": [
@@ -143,7 +130,7 @@
         "id": 1,
         "word": "要",
         "pinyin": "yào",
-        "meaning": "querer, precisar, dever, irá"
+        "meaning": "precisar / ter que"
       },
       {
         "id": 2,
@@ -154,195 +141,134 @@
       {
         "id": 3,
         "word": "多久",
-        "pinyin": "duō jiǔ",
+        "pinyin": "duōjiǔ",
         "meaning": "quanto tempo"
       }
     ],
-    "id": "local-1772295680702-3",
+    "id": "local-1780200428693-3",
     "language": "Chinês"
   },
   {
-    "chinese": "不一定。你可以下载这个软件，然后去附近逛逛。它会告诉你排队情况。",
-    "pinyin": "bù yīdìng. nǐ kěyǐ xiàzài zhège ruǎnjiàn, ránhòu qù fùjìn guàngguang. tā huì gàosù nǐ páiduì qíngkuàng.",
-    "translation": "Não é certo. Você pode baixar este aplicativo e depois dar uma volta por perto. Ele te dirá a situação da fila.",
+    "chinese": "A: 这个不确定。您可以在这里下个软件，然后去逛一下。它会告诉您排队的情况。",
+    "pinyin": "Zhège bù quèdìng. Nín kěyǐ zài zhèlǐ xiàgè ruǎnjiàn, ránhòu qùguàng yīxià. Tāhuì gàosùnín páiduì de qíngkuàng.",
+    "translation": "A: Isso não é certo. Você pode baixar um aplicativo aqui e ir dar uma volta. Ele vai informar sobre a situação da fila.",
     "tokens": [
+      "这个",
       "不",
-      "一定",
+      "确定",
       "。",
-      "你",
+      "您",
       "可以",
-      "下载",
-      "这",
-      "个",
+      "在",
+      "这里",
+      "下个",
       "软件",
       "，",
       "然后",
-      "去",
-      "附近",
-      "逛逛",
+      "去逛",
+      "一下",
       "。",
-      "它",
-      "会",
-      "告诉",
-      "你",
+      "它会",
+      "告诉您",
       "排队",
+      "的",
       "情况",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "不一定",
-        "pinyin": "bù yīdìng",
-        "meaning": "não necessariamente, não é certo"
+        "word": "不确定",
+        "pinyin": "bùquèdìng",
+        "meaning": "incerto"
       },
       {
         "id": 2,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "poder, conseguir"
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software"
       },
       {
         "id": 3,
-        "word": "下载",
-        "pinyin": "xiàzài",
-        "meaning": "baixar, fazer download"
+        "word": "逛",
+        "pinyin": "guàng",
+        "meaning": "passear"
       },
       {
         "id": 4,
-        "word": "软件",
-        "pinyin": "ruǎnjiàn",
-        "meaning": "software, aplicativo"
+        "word": "排队",
+        "pinyin": "páiduì",
+        "meaning": "fazer fila"
       },
       {
         "id": 5,
-        "word": "然后",
-        "pinyin": "ránhòu",
-        "meaning": "depois, em seguida"
-      },
-      {
-        "id": 6,
-        "word": "附近",
-        "pinyin": "fùjìn",
-        "meaning": "próximo, por perto, vizinhança"
-      },
-      {
-        "id": 7,
-        "word": "逛逛",
-        "pinyin": "guàngguang",
-        "meaning": "passear, dar uma volta"
-      },
-      {
-        "id": 8,
-        "word": "会",
-        "pinyin": "huì",
-        "meaning": "irá (auxiliar para futuro), saber, poder"
-      },
-      {
-        "id": 9,
-        "word": "告诉",
-        "pinyin": "gàosù",
-        "meaning": "contar, dizer"
-      },
-      {
-        "id": 10,
-        "word": "排队",
-        "pinyin": "páiduì",
-        "meaning": "formar fila, entrar na fila"
-      },
-      {
-        "id": 11,
         "word": "情况",
         "pinyin": "qíngkuàng",
-        "meaning": "situação, circunstância"
+        "meaning": "situação"
       }
     ],
-    "id": "local-1772295680702-4",
+    "id": "local-1780200428693-4",
     "language": "Chinês"
   },
   {
-    "chinese": "哦！嘿，这是什么？那个黑色的东西。",
-    "pinyin": "ò! hēi, zhè shì shénme? nàge hēisè de dōngxi.",
-    "translation": "Oh! Ei, o que é isso? Aquela coisa preta.",
+    "chinese": "B: 喔。咦，这是什么呀？黑乎乎的。",
+    "pinyin": "Ō. Yí, zhèshì shénme ya? Hēihūhū de.",
+    "translation": "B: Ah. Ei, o que é isso? Está todo escuro.",
     "tokens": [
-      "哦",
-      "！",
-      "嘿",
+      "喔",
+      "。",
+      "咦",
       "，",
-      "这",
-      "是",
+      "这是",
       "什么",
+      "呀",
       "？",
-      "那",
-      "个",
-      "黑色",
+      "黑乎乎",
       "的",
-      "东西",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ò",
-        "meaning": "oh (interjeição)"
+        "word": "咦",
+        "pinyin": "yí",
+        "meaning": "interjeição de surpresa"
       },
       {
         "id": 2,
-        "word": "嘿",
-        "pinyin": "hēi",
-        "meaning": "ei (interjeição)"
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
       },
       {
         "id": 3,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê?"
-      },
-      {
-        "id": 4,
-        "word": "那个",
-        "pinyin": "nàge",
-        "meaning": "aquele, aquela"
-      },
-      {
-        "id": 5,
-        "word": "黑色",
-        "pinyin": "hēisè",
-        "meaning": "cor preta, preto"
-      },
-      {
-        "id": 6,
-        "word": "东西",
-        "pinyin": "dōngxi",
-        "meaning": "coisa, objeto"
+        "word": "黑乎乎",
+        "pinyin": "hēihūhū",
+        "meaning": "escuro e escuro"
       }
     ],
-    "id": "local-1772295680702-5",
+    "id": "local-1780200428693-5",
     "language": "Chinês"
   },
   {
-    "chinese": "那是二维码。你可真落伍。用手机扫一下，它就会自动跳转到下载页面。",
-    "pinyin": "nà shì èrwéimǎ. nǐ kě zhēn luòwǔ. yòng shǒujī sǎo yīxià, tā jiù huì zìdòng tiàozhuǎn dào xiàzài yèmiàn.",
-    "translation": "Aquilo é um QR code. Você está realmente desatualizado. Use o celular para escanear, ele irá automaticamente pular para a página de download.",
+    "chinese": "C: 二维码呀，你也太落伍了。用手机扫一下，就会自动跳转到下载页面。",
+    "pinyin": "Èrwéimǎ ya, nǐ yě tài luòwǔ le. Yòng shǒujī sǎo yīxià, jiù huì zìdòng tiàozhuǎn dào xiàzài yèmiàn.",
+    "translation": "C: Código QR? Você está muito defasado. Basta usar o celular para escanear e ele vai redirecionar automaticamente para a página de download.",
     "tokens": [
-      "那",
-      "是",
-      "二",
-      "维",
-      "码",
-      "。",
+      "二维码",
+      "呀",
+      "，",
       "你",
-      "可",
-      "真",
+      "也",
+      "太",
       "落伍",
+      "了",
       "。",
       "用",
       "手机",
       "扫",
       "一下",
       "，",
-      "它",
       "就",
       "会",
       "自动",
@@ -355,142 +281,100 @@
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "aquilo, aquele"
+        "word": "二维码",
+        "pinyin": "èrwéimǎ",
+        "meaning": "código QR"
       },
       {
         "id": 2,
-        "word": "二维码",
-        "pinyin": "èrwéimǎ",
-        "meaning": "código QR, código bidimensional"
+        "word": "落伍",
+        "pinyin": "luòwǔ",
+        "meaning": "defasado, ultrapassado"
       },
       {
         "id": 3,
-        "word": "可真",
-        "pinyin": "kě zhēn",
-        "meaning": "realmente, de verdade (para enfatizar)"
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
       },
       {
         "id": 4,
-        "word": "落伍",
-        "pinyin": "luòwǔ",
-        "meaning": "estar desatualizado, ficar para trás"
+        "word": "扫",
+        "pinyin": "sǎo",
+        "meaning": "escanear"
       },
       {
         "id": 5,
-        "word": "用",
-        "pinyin": "yòng",
-        "meaning": "usar"
+        "word": "自动",
+        "pinyin": "zìdòng",
+        "meaning": "automaticamente"
       },
       {
         "id": 6,
-        "word": "手机",
-        "pinyin": "shǒujī",
-        "meaning": "celular, telefone móvel"
+        "word": "跳转",
+        "pinyin": "tiàozhuǎn",
+        "meaning": "redirecionar, pular para"
       },
       {
         "id": 7,
-        "word": "扫",
-        "pinyin": "sǎo",
-        "meaning": "escanear, varrer"
-      },
-      {
-        "id": 8,
-        "word": "一下",
-        "pinyin": "yīxià",
-        "meaning": "um pouco, rapidamente (depois de um verbo)"
-      },
-      {
-        "id": 9,
-        "word": "自动",
-        "pinyin": "zìdòng",
-        "meaning": "automático, automaticamente"
-      },
-      {
-        "id": 10,
-        "word": "跳转",
-        "pinyin": "tiàozhuǎn",
-        "meaning": "redirecionar, pular (para uma página)"
-      },
-      {
-        "id": 11,
         "word": "下载页面",
-        "pinyin": "xiàzài yèmiàn",
+        "pinyin": "xiàzàiyèmiàn",
         "meaning": "página de download"
       }
     ],
-    "id": "local-1772295680702-6",
+    "id": "local-1780200428693-6",
     "language": "Chinês"
   },
   {
-    "chinese": "哦，真先进！",
-    "pinyin": "ò, zhēn xiānjìn!",
-    "translation": "Oh, que avançado!",
+    "chinese": "B: 啊，那么先进啊。",
+    "pinyin": "A, nàme xiānjìn a.",
+    "translation": "B: Ah, tão avançado assim.",
     "tokens": [
-      "哦",
+      "啊",
       "，",
-      "真",
+      "那么",
       "先进",
-      "！"
+      "啊",
+      "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ò",
-        "meaning": "oh (interjeição)"
-      },
-      {
-        "id": 2,
-        "word": "真",
-        "pinyin": "zhēn",
-        "meaning": "realmente, de verdade"
-      },
-      {
-        "id": 3,
         "word": "先进",
         "pinyin": "xiānjìn",
-        "meaning": "avançado, moderno, progressivo"
+        "meaning": "avançado"
       }
     ],
-    "id": "local-1772295680702-7",
+    "id": "local-1780200428693-7",
     "language": "Chinês"
   },
   {
-    "chinese": "二维码现在用得可多了！上周我去听演唱会，都没用票，只用了一个二维码。",
-    "pinyin": "èrwéimǎ xiànzài yòng de kě duō le! shàng zhōu wǒ qù tīng yǎnchànghuì, dōu méi yòng piào, zhǐ yòngle yī gè èrwéimǎ.",
-    "translation": "QR codes são muito usados agora! Na semana passada fui a um show, nem usei ingresso, apenas usei um QR code.",
+    "chinese": "C: 二维码用得很多啊。上个礼拜我去了一场演唱会，都不用门票，只要二维码就行。",
+    "pinyin": "Èrwéimǎ yòng dé hěnduō a. Shàng gè lǐbài wǒ qù le yīcháng yǎnchànghuì, dōu bùyòng ménpiào, zhǐyào èrwéimǎ jiùxíng.",
+    "translation": "C: Os códigos QR são muito usados. Na semana passada, fui a um show e não precisei de ingresso físico, bastava apresentar o código QR.",
     "tokens": [
-      "二",
-      "维",
-      "码",
-      "现在",
+      "二维码",
       "用",
       "得",
-      "可",
-      "多",
-      "了",
-      "！",
-      "上周",
+      "很多",
+      "啊",
+      "。",
+      "上",
+      "个",
+      "礼拜",
       "我",
       "去",
-      "听",
+      "了",
+      "一场",
       "演唱会",
       "，",
       "都",
-      "没",
-      "用",
-      "票",
+      "不用",
+      "门票",
       "，",
-      "只",
-      "用",
-      "了",
-      "一",
-      "个",
-      "二",
-      "维",
-      "码",
+      "只要",
+      "二维码",
+      "就行",
       "。"
     ],
     "keywords": [
@@ -498,237 +382,149 @@
         "id": 1,
         "word": "二维码",
         "pinyin": "èrwéimǎ",
-        "meaning": "código QR, código bidimensional"
+        "meaning": "código QR"
       },
       {
         "id": 2,
-        "word": "现在",
-        "pinyin": "xiànzài",
-        "meaning": "agora, atualmente"
+        "word": "演唱会",
+        "pinyin": "yǎnchànghuì",
+        "meaning": "show / concerto"
       },
       {
         "id": 3,
-        "word": "用得可多了",
-        "pinyin": "yòng de kě duō le",
-        "meaning": "é muito usado, usado bastante"
+        "word": "门票",
+        "pinyin": "ménpiào",
+        "meaning": "ingresso / bilhete"
       },
       {
         "id": 4,
-        "word": "上周",
-        "pinyin": "shàng zhōu",
-        "meaning": "semana passada"
-      },
-      {
-        "id": 5,
-        "word": "听",
-        "pinyin": "tīng",
-        "meaning": "ouvir"
-      },
-      {
-        "id": 6,
-        "word": "演唱会",
-        "pinyin": "yǎnchànghuì",
-        "meaning": "concerto, show"
-      },
-      {
-        "id": 7,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "todos, tudo, (aqui) nem sequer"
-      },
-      {
-        "id": 8,
-        "word": "没用",
-        "pinyin": "méi yòng",
-        "meaning": "não usou, inútil"
-      },
-      {
-        "id": 9,
-        "word": "票",
-        "pinyin": "piào",
-        "meaning": "ingresso, bilhete"
-      },
-      {
-        "id": 10,
-        "word": "只",
-        "pinyin": "zhǐ",
-        "meaning": "somente, apenas"
+        "word": "礼拜",
+        "pinyin": "lǐbài",
+        "meaning": "semana"
       }
     ],
-    "id": "local-1772295680702-8",
+    "id": "local-1780200428693-8",
     "language": "Chinês"
   },
   {
-    "chinese": "我见过很多商店都有这个。那扫了之后，能获得他们的产品信息吗？",
-    "pinyin": "wǒ jiàn guò hěn duō shāngdiàn dōu yǒu zhège. nà sǎo le zhīhòu, néng huòdé tāmen de chǎnpǐn xìnxī ma?",
-    "translation": "Eu já vi muitas lojas que têm isso. Depois de escanear, consigo obter as informações dos produtos deles?",
+    "chinese": "B: 我看很多商店都有这个。是不是扫一扫就能知道商品信息？",
+    "pinyin": "Wǒ kàn hěnduō shāngdiàn dōu yǒu zhège. Shìbúshì sǎoyīsǎo jiù néng zhīdào shāngpǐnxìnxī?",
+    "translation": "B: Vejo que muitas lojas têm isso. Será que dá para escanear e saber as informações do produto?",
     "tokens": [
       "我",
-      "见过",
+      "看",
       "很多",
       "商店",
       "都",
       "有",
-      "这",
-      "个",
+      "这个",
       "。",
-      "那",
-      "扫",
-      "了",
-      "之后",
-      "，",
+      "是不是",
+      "扫一扫",
+      "就",
       "能",
-      "获得",
-      "他们",
-      "的",
-      "产品",
-      "信息",
-      "吗",
+      "知道",
+      "商品信息",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "见过",
-        "pinyin": "jiàn guò",
-        "meaning": "já vi, ter visto antes (com experiência)"
-      },
-      {
-        "id": 2,
-        "word": "很多",
-        "pinyin": "hěn duō",
-        "meaning": "muitos, bastante"
-      },
-      {
-        "id": 3,
         "word": "商店",
         "pinyin": "shāngdiàn",
         "meaning": "loja"
       },
       {
-        "id": 4,
-        "word": "之后",
-        "pinyin": "zhīhòu",
-        "meaning": "depois, em seguida"
+        "id": 2,
+        "word": "扫一扫",
+        "pinyin": "sǎoyīsǎo",
+        "meaning": "escanear (código de barras/QR)"
       },
       {
-        "id": 5,
-        "word": "能",
-        "pinyin": "néng",
-        "meaning": "poder, ser capaz de"
-      },
-      {
-        "id": 6,
-        "word": "获得",
-        "pinyin": "huòdé",
-        "meaning": "obter, conseguir"
-      },
-      {
-        "id": 7,
-        "word": "他们",
-        "pinyin": "tāmen",
-        "meaning": "eles, elas"
-      },
-      {
-        "id": 8,
-        "word": "产品",
-        "pinyin": "chǎnpǐn",
+        "id": 3,
+        "word": "商品",
+        "pinyin": "shāngpǐn",
         "meaning": "produto"
       },
       {
-        "id": 9,
+        "id": 4,
         "word": "信息",
         "pinyin": "xìnxī",
         "meaning": "informação"
       },
       {
-        "id": 10,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "(partícula interrogativa)"
+        "id": 5,
+        "word": "是不是",
+        "pinyin": "shìbúshì",
+        "meaning": "será que / não é que"
       }
     ],
-    "id": "local-1772295680702-9",
+    "id": "local-1780200428693-9",
     "language": "Chinês"
   },
   {
-    "chinese": "是的。很多商家都用二维码做广告。",
-    "pinyin": "shì de. hěn duō shāngjiā dōu yòng èrwéimǎ zuò guǎnggào.",
-    "translation": "Sim. Muitos comerciantes usam QR codes para fazer publicidade.",
+    "chinese": "C: 对啊。很多商家都用二维码做广告。",
+    "pinyin": "Duì a. Hěnduō shāngjiā dōu yòng èrwéimǎ zuòguǎnggào.",
+    "translation": "C: Isso mesmo. Muitos comerciantes usam códigos QR para fazer propaganda.",
     "tokens": [
-      "是",
-      "的",
+      "对",
+      "啊",
       "。",
       "很多",
       "商家",
       "都",
       "用",
-      "二",
-      "维",
-      "码",
-      "做",
-      "广告",
+      "二维码",
+      "做广告",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "是的",
-        "pinyin": "shì de",
-        "meaning": "sim, é isso"
+        "word": "商家",
+        "pinyin": "shāngjiā",
+        "meaning": "comerciantes"
       },
       {
         "id": 2,
-        "word": "商家",
-        "pinyin": "shāngjiā",
-        "meaning": "comerciante, empresa"
+        "word": "二维码",
+        "pinyin": "èrwéimǎ",
+        "meaning": "código QR"
       },
       {
         "id": 3,
-        "word": "二维码",
-        "pinyin": "èrwéimǎ",
-        "meaning": "código QR, código bidimensional"
-      },
-      {
-        "id": 4,
-        "word": "做",
-        "pinyin": "zuò",
-        "meaning": "fazer"
-      },
-      {
-        "id": 5,
         "word": "广告",
         "pinyin": "guǎnggào",
-        "meaning": "anúncio, publicidade, fazer propaganda"
+        "meaning": "propaganda"
       }
     ],
-    "id": "local-1772295680702-10",
+    "id": "local-1780200428693-10",
     "language": "Chinês"
   },
   {
-    "chinese": "真方便。嘿，那边有个二维码。我去扫一下看看是什么。",
-    "pinyin": "zhēn fāngbiàn. hēi, nà biān yǒu gè èrwéimǎ. wǒ qù sǎo yīxià kànkan shì shénme.",
-    "translation": "Que conveniente. Ei, tem um QR code ali. Vou escanear para ver o que é.",
+    "chinese": "B: 那真方便。唉，你看那里就有一个二维码，我去扫一扫，看看是什么。",
+    "pinyin": "Nàzhēn fāngbiàn. Āi, nǐ kàn nàlǐ jiù yǒu yígè èrwéimǎ, wǒ qù sǎo yīsǎo, kànkàn shì shénme.",
+    "translation": "B: Isso é realmente conveniente. Ai, olha ali, tem um código QR. Vou escanear para ver o que é.",
     "tokens": [
-      "真",
+      "那真",
       "方便",
       "。",
-      "嘿",
+      "唉",
       "，",
-      "那",
-      "边",
+      "你",
+      "看",
+      "那里",
+      "就",
       "有",
-      "个",
-      "二",
-      "维",
-      "码",
-      "。",
+      "一个",
+      "二维码",
+      "，",
       "我",
       "去",
       "扫",
-      "一下",
-      "看",
-      "看",
+      "一扫",
+      "，",
+      "看看",
       "是",
       "什么",
       "。"
@@ -736,81 +532,45 @@
     "keywords": [
       {
         "id": 1,
-        "word": "真",
-        "pinyin": "zhēn",
-        "meaning": "realmente, de verdade"
+        "word": "那真方便",
+        "pinyin": "nàzhēnfāngbiàn",
+        "meaning": "isso é realmente conveniente"
       },
       {
         "id": 2,
-        "word": "方便",
-        "pinyin": "fāngbiàn",
-        "meaning": "conveniente"
+        "word": "二维码",
+        "pinyin": "èrwéimǎ",
+        "meaning": "código QR"
       },
       {
         "id": 3,
-        "word": "那边",
-        "pinyin": "nà biān",
-        "meaning": "lá, naquele lado"
+        "word": "扫一扫",
+        "pinyin": "sǎoyīsǎo",
+        "meaning": "escanear"
       },
       {
         "id": 4,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter, haver"
-      },
-      {
-        "id": 5,
-        "word": "二维码",
-        "pinyin": "èrwéimǎ",
-        "meaning": "código QR, código bidimensional"
-      },
-      {
-        "id": 6,
-        "word": "去",
-        "pinyin": "qù",
-        "meaning": "ir"
-      },
-      {
-        "id": 7,
-        "word": "扫",
-        "pinyin": "sǎo",
-        "meaning": "escanear, varrer"
-      },
-      {
-        "id": 8,
-        "word": "一下",
-        "pinyin": "yīxià",
-        "meaning": "um pouco, rapidamente (depois de um verbo)"
-      },
-      {
-        "id": 9,
         "word": "看看",
-        "pinyin": "kànkan",
-        "meaning": "dar uma olhada, ver"
-      },
-      {
-        "id": 10,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê?"
+        "pinyin": "kànkàn",
+        "meaning": "ver/olhar"
       }
     ],
-    "id": "local-1772295680702-11",
+    "id": "local-1780200428693-11",
     "language": "Chinês"
   },
   {
-    "chinese": "别乱扫。有些二维码可能有病毒。",
-    "pinyin": "bié luàn sǎo. yǒuxiē èrwéimǎ kěnéng yǒu bìngdú.",
-    "translation": "Não escaneie aleatoriamente. Alguns QR codes podem ter vírus.",
+    "chinese": "C: 你也别乱扫啊。有些二维码可能有病毒。",
+    "pinyin": "Nǐ yě biéluàn sǎo a. Yǒuxiē èrwéimǎ kěnéng yǒu bìngdú.",
+    "translation": "C: Você também não deve escanear aleatoriamente. Alguns códigos QR podem conter vírus.",
     "tokens": [
-      "别",
-      "乱",
+      "你",
+      "也",
+      "别乱",
       "扫",
+      "啊",
       "。",
       "有些",
-      "二",
-      "维",
-      "码",
+      "二维码",
       "可能",
       "有",
       "病毒",
@@ -821,46 +581,34 @@
         "id": 1,
         "word": "别",
         "pinyin": "bié",
-        "meaning": "não (usado para proibir ou advertir)"
+        "meaning": "não faça / não"
       },
       {
         "id": 2,
-        "word": "乱",
-        "pinyin": "luàn",
-        "meaning": "aleatoriamente, sem pensar, bagunçado"
+        "word": "乱扫",
+        "pinyin": "luànsǎo",
+        "meaning": "escanear aleatoriamente"
       },
       {
         "id": 3,
-        "word": "扫",
-        "pinyin": "sǎo",
-        "meaning": "escanear, varrer"
+        "word": "二维码",
+        "pinyin": "èrwéimǎ",
+        "meaning": "código QR"
       },
       {
         "id": 4,
-        "word": "有些",
-        "pinyin": "yǒuxiē",
-        "meaning": "alguns, um pouco"
+        "word": "可能",
+        "pinyin": "kěnéng",
+        "meaning": "pode / possivelmente"
       },
       {
         "id": 5,
-        "word": "二维码",
-        "pinyin": "èrwéimǎ",
-        "meaning": "código QR, código bidimensional"
-      },
-      {
-        "id": 6,
-        "word": "可能",
-        "pinyin": "kěnéng",
-        "meaning": "talvez, possível, poder (probabilidade)"
-      },
-      {
-        "id": 7,
         "word": "病毒",
         "pinyin": "bìngdú",
         "meaning": "vírus"
       }
     ],
-    "id": "local-1772295680702-12",
+    "id": "local-1780200428693-12",
     "language": "Chinês"
   }
 ]

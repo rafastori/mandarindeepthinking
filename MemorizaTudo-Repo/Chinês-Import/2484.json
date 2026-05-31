@@ -1,0 +1,740 @@
+[
+  {
+    "chinese": "A: 我去，没想到半决赛是这个结果。",
+    "pinyin": "Wǒ qù, méixiǎngdào bànjuésài shì zhège jiéguǒ.",
+    "translation": "A: Nossa, não esperava que o resultado das semifinais fosse esse.",
+    "tokens": [
+      "我",
+      "去",
+      "，",
+      "没想到",
+      "半决赛",
+      "是",
+      "这个",
+      "结果",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没想到",
+        "pinyin": "méixiǎngdào",
+        "meaning": "não esperava / inesperado"
+      },
+      {
+        "id": 2,
+        "word": "半决赛",
+        "pinyin": "bànjuésài",
+        "meaning": "semifinal"
+      },
+      {
+        "id": 3,
+        "word": "结果",
+        "pinyin": "jiéguǒ",
+        "meaning": "resultado"
+      }
+    ],
+    "id": "local-1780226635060-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 看你的黑眼圈，昨晚肯定熬夜看球了。",
+    "pinyin": "Kàn nǐ de hēiyǎnquān, zuówǎn kěndìng áoyè kànqiú le.",
+    "translation": "B: Pelas suas olheiras, você com certeza ficou até tarde assistindo ao jogo ontem à noite.",
+    "tokens": [
+      "看",
+      "你",
+      "的",
+      "黑眼圈",
+      "，",
+      "昨晚",
+      "肯定",
+      "熬夜",
+      "看球",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "黑眼圈",
+        "pinyin": "hēiyǎnquān",
+        "meaning": "olheiras"
+      },
+      {
+        "id": 2,
+        "word": "熬夜",
+        "pinyin": "áoyè",
+        "meaning": "ficar até tarde / dormir pouco"
+      },
+      {
+        "id": 3,
+        "word": "看球",
+        "pinyin": "kànqiú",
+        "meaning": "assistir ao jogo"
+      }
+    ],
+    "id": "local-1780226635060-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 可不是，4点的比赛，看到早上6点。不过这段时间也都习以为常了。",
+    "pinyin": "Kěbúshì, 4 diǎn de bǐsài, kàndào zǎoshàng 6 diǎn. Bùguò zhè duànshíjiān yě dōu xíyǐwéicháng le.",
+    "translation": "A: Pois é, o jogo é às 4 horas, mas eu assisto desde as 6 da manhã. Embora já tenha me acostumado com isso.",
+    "tokens": [
+      "可不是",
+      "，",
+      "4",
+      "点",
+      "的",
+      "比赛",
+      "，",
+      "看到",
+      "早上",
+      "6",
+      "点",
+      "。",
+      "不过",
+      "这",
+      "段时间",
+      "也",
+      "都",
+      "习以为常",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "可不是",
+        "pinyin": "kěbúshì",
+        "meaning": "Pois é / É verdade"
+      },
+      {
+        "id": 2,
+        "word": "比赛",
+        "pinyin": "bǐsài",
+        "meaning": "jogo / competição"
+      },
+      {
+        "id": 3,
+        "word": "看到",
+        "pinyin": "kàndào",
+        "meaning": "assistir até"
+      },
+      {
+        "id": 4,
+        "word": "早上",
+        "pinyin": "zǎoshàng",
+        "meaning": "manhã"
+      },
+      {
+        "id": 5,
+        "word": "不过",
+        "pinyin": "bùguò",
+        "meaning": "mas / porém"
+      },
+      {
+        "id": 6,
+        "word": "这段时间",
+        "pinyin": "zhèduànshíjiān",
+        "meaning": "esse período"
+      },
+      {
+        "id": 7,
+        "word": "习以为常",
+        "pinyin": "xíyǐwéicháng",
+        "meaning": "acostumar-se com o habitual"
+      }
+    ],
+    "id": "local-1780226635060-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这次总共输了多少钱啊？",
+    "pinyin": "Zhècì zǒnggòng shū le duōshǎo qián a?",
+    "translation": "B: Quanto dinheiro no total foi perdido dessa vez?",
+    "tokens": [
+      "这次",
+      "总共",
+      "输",
+      "了",
+      "多少",
+      "钱",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这次",
+        "pinyin": "zhècì",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 2,
+        "word": "总共",
+        "pinyin": "zǒnggòng",
+        "meaning": "no total"
+      },
+      {
+        "id": 3,
+        "word": "输",
+        "pinyin": "shū",
+        "meaning": "perder (jogo/aposta)"
+      },
+      {
+        "id": 4,
+        "word": "钱",
+        "pinyin": "qián",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1780226635060-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 别提了，半个月的工资都没了。下个月我要多加点班。",
+    "pinyin": "Biétí le, bàngè yuè de gōngzī dōu méi le. Xiàgèyuè wǒyào duō jiādiǎn bān.",
+    "translation": "A: Não me fale, perdi meio mês de salário. No próximo mês vou ter que trabalhar horas extras a mais.",
+    "tokens": [
+      "别提",
+      "了",
+      "，",
+      "半个",
+      "月",
+      "的",
+      "工资",
+      "都",
+      "没",
+      "了",
+      "。",
+      "下个月",
+      "我要",
+      "多",
+      "加点",
+      "班",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "别提了",
+        "pinyin": "biétíle",
+        "meaning": "não me fale / nem me pergunte"
+      },
+      {
+        "id": 2,
+        "word": "半个月",
+        "pinyin": "bàngèyuè",
+        "meaning": "meio mês"
+      },
+      {
+        "id": 3,
+        "word": "工资",
+        "pinyin": "gōngzī",
+        "meaning": "salário"
+      },
+      {
+        "id": 4,
+        "word": "没了",
+        "pinyin": "méile",
+        "meaning": "perdeu / acabou"
+      }
+    ],
+    "id": "local-1780226635060-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 何必呢？看球就可以了，还赌球。",
+    "pinyin": "Hébì ne? Kànqiú jiù kěyǐ le, hái dǔqiú.",
+    "translation": "B: Pra que se dar tanto trabalho? É só assistir ao jogo, ainda por cima apostar nele.",
+    "tokens": [
+      "何必",
+      "呢",
+      "？",
+      "看球",
+      "就",
+      "可以",
+      "了",
+      "，",
+      "还",
+      "赌球",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "何必",
+        "pinyin": "hébì",
+        "meaning": "por que / para que"
+      },
+      {
+        "id": 2,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa"
+      },
+      {
+        "id": 3,
+        "word": "看球",
+        "pinyin": "kànqiú",
+        "meaning": "assistir ao jogo"
+      },
+      {
+        "id": 4,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "apenas / só"
+      },
+      {
+        "id": 5,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "pode / é suficiente"
+      },
+      {
+        "id": 6,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda por cima / além disso"
+      },
+      {
+        "id": 7,
+        "word": "赌球",
+        "pinyin": "dǔqiú",
+        "meaning": "apostar em jogos"
+      }
+    ],
+    "id": "local-1780226635060-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 刺激啊，而且这次淘宝大力推广足球竞猜，不知不觉就给带进去了。",
+    "pinyin": "Cìjī a, érqiě zhècì táobǎo dàlìtuīguǎng zúqiú jìngcāi, bùzhībùjué jiù gěi dàijìnqù le.",
+    "translation": "A: É emocionante, e dessa vez o Taobao está promovendo fortemente as apostas em futebol, acabando por me envolver sem eu perceber.",
+    "tokens": [
+      "刺激",
+      "啊",
+      "，",
+      "而且",
+      "这次",
+      "淘宝",
+      "大力推广",
+      "足球",
+      "竞猜",
+      "，",
+      "不知不觉",
+      "就",
+      "给",
+      "带进去",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "刺激",
+        "pinyin": "cìjī",
+        "meaning": "emocionante"
+      },
+      {
+        "id": 2,
+        "word": "淘宝",
+        "pinyin": "táobǎo",
+        "meaning": "Taobao"
+      },
+      {
+        "id": 3,
+        "word": "大力推广",
+        "pinyin": "dàlìtuīguǎng",
+        "meaning": "promover fortemente"
+      },
+      {
+        "id": 4,
+        "word": "足球竞猜",
+        "pinyin": "zúqiújìngcāi",
+        "meaning": "apostas em futebol"
+      },
+      {
+        "id": 5,
+        "word": "不知不觉",
+        "pinyin": "bùzhībùjué",
+        "meaning": "sem perceber"
+      },
+      {
+        "id": 6,
+        "word": "带进去",
+        "pinyin": "dàijìnqù",
+        "meaning": "envolver/arrastar para dentro"
+      }
+    ],
+    "id": "local-1780226635060-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我觉得这次中国球迷数量没增加，赌徒倒是增加了不少。",
+    "pinyin": "Wǒ juéde zhècì zhōngguó qiúmí shùliàng méi zēngjiā, dǔtú dào shì zēngjiā le bùshǎo.",
+    "translation": "B: Acho que o número de torcedores chineses não aumentou desta vez, mas os jogadores de aposta aumentaram bastante.",
+    "tokens": [
+      "我",
+      "觉得",
+      "这次",
+      "中国",
+      "球迷",
+      "数量",
+      "没",
+      "增加",
+      "，",
+      "赌徒",
+      "倒",
+      "是",
+      "增加",
+      "了",
+      "不少",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我觉得",
+        "pinyin": "wǒjuéde",
+        "meaning": "acho que / sinto que"
+      },
+      {
+        "id": 2,
+        "word": "这次",
+        "pinyin": "zhècì",
+        "meaning": "desta vez / nesta ocasião"
+      },
+      {
+        "id": 3,
+        "word": "中国球迷",
+        "pinyin": "zhōngguóqiúmí",
+        "meaning": "torcedores chineses"
+      },
+      {
+        "id": 4,
+        "word": "数量",
+        "pinyin": "shùliàng",
+        "meaning": "quantidade / número"
+      },
+      {
+        "id": 5,
+        "word": "赌徒",
+        "pinyin": "dǔtú",
+        "meaning": "jogador de aposta / apostador"
+      },
+      {
+        "id": 6,
+        "word": "增加",
+        "pinyin": "zēngjiā",
+        "meaning": "aumentar"
+      }
+    ],
+    "id": "local-1780226635060-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 适度玩玩也能增添些乐趣嘛。你最近没买？",
+    "pinyin": "Shìdù wánwán yě néng zēngtiān xiē lèqù ma. Nǐ zuìjìn méimǎi?",
+    "translation": "A: Jogar com moderação também pode aumentar a diversão. Você não comprou nada recentemente?",
+    "tokens": [
+      "适度",
+      "玩玩",
+      "也",
+      "能",
+      "增添",
+      "些",
+      "乐趣",
+      "嘛",
+      "。",
+      "你",
+      "最近",
+      "没买",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "适度",
+        "pinyin": "shìdù",
+        "meaning": "moderadamente"
+      },
+      {
+        "id": 2,
+        "word": "玩玩",
+        "pinyin": "wánwán",
+        "meaning": "jogar/divertir-se"
+      },
+      {
+        "id": 3,
+        "word": "增添",
+        "pinyin": "zēngtiān",
+        "meaning": "acrescentar"
+      },
+      {
+        "id": 4,
+        "word": "乐趣",
+        "pinyin": "lèqù",
+        "meaning": "diversão"
+      },
+      {
+        "id": 5,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 6,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      }
+    ],
+    "id": "local-1780226635060-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 别说买了，自从西班牙出局，我就没再关心过。",
+    "pinyin": "Biéshuō mǎi le, zìcóng xībānyá chūjú, wǒ jiù méi zài guānxīn guò.",
+    "translation": "B: Não fale em comprar, desde que a Espanha foi eliminada, eu não me importo mais.",
+    "tokens": [
+      "别说",
+      "买",
+      "了",
+      "，",
+      "自从",
+      "西班牙",
+      "出局",
+      "，",
+      "我",
+      "就",
+      "没",
+      "再",
+      "关心",
+      "过",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "别说",
+        "pinyin": "biéshuō",
+        "meaning": "não fale em / nem pensar em"
+      },
+      {
+        "id": 2,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 3,
+        "word": "自从",
+        "pinyin": "zìcóng",
+        "meaning": "desde"
+      },
+      {
+        "id": 4,
+        "word": "西班牙",
+        "pinyin": "xībānyá",
+        "meaning": "Espanha"
+      },
+      {
+        "id": 5,
+        "word": "出局",
+        "pinyin": "chūjú",
+        "meaning": "eliminado / fora"
+      },
+      {
+        "id": 6,
+        "word": "关心",
+        "pinyin": "guānxīn",
+        "meaning": "se importar / cuidar"
+      }
+    ],
+    "id": "local-1780226635060-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 西班牙也太让人大跌眼镜了，还有英格兰，小组都没出线。",
+    "pinyin": "Xībānyá yě tài ràng rén dàdiēyǎnjìng le, háiyǒu yīnggélán, xiǎozǔ dōu méi chūxiàn.",
+    "translation": "A: A Espanha foi realmente surpreendente, assim como a Inglaterra, ambas não avançaram da fase de grupos.",
+    "tokens": [
+      "西班牙",
+      "也",
+      "太",
+      "让",
+      "人",
+      "大跌眼镜",
+      "了",
+      "，",
+      "还有",
+      "英格兰",
+      "，",
+      "小组",
+      "都",
+      "没",
+      "出线",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "西班牙",
+        "pinyin": "xībānyá",
+        "meaning": "Espanha"
+      },
+      {
+        "id": 2,
+        "word": "大跌眼镜",
+        "pinyin": "dàdiēyǎnjìng",
+        "meaning": "chocar-se / ficar de boca aberta"
+      },
+      {
+        "id": 3,
+        "word": "英格兰",
+        "pinyin": "yīnggélán",
+        "meaning": "Inglaterra"
+      },
+      {
+        "id": 4,
+        "word": "小组",
+        "pinyin": "xiǎozǔ",
+        "meaning": "grupo (fase de grupos)"
+      },
+      {
+        "id": 5,
+        "word": "出线",
+        "pinyin": "chūxiàn",
+        "meaning": "avançar / classificar-se"
+      }
+    ],
+    "id": "local-1780226635060-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 锋线疲软，后防无力，不谈了。你觉得冠军会是谁？",
+    "pinyin": "Fēngxiàn píruǎn, hòufáng wúlì, bùtán le. Nǐ juéde guànjūn huì shì shuí?",
+    "translation": "B: O ataque está fraco, a defesa é ineficaz, nem vamos falar disso. Quem você acha que será o campeão?",
+    "tokens": [
+      "锋线",
+      "疲软",
+      "，",
+      "后防",
+      "无力",
+      "，",
+      "不谈",
+      "了",
+      "。",
+      "你",
+      "觉得",
+      "冠军",
+      "会",
+      "是",
+      "谁",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "锋线",
+        "pinyin": "fēngxiàn",
+        "meaning": "linha de ataque"
+      },
+      {
+        "id": 2,
+        "word": "疲软",
+        "pinyin": "píruǎn",
+        "meaning": "fraco, fraco"
+      },
+      {
+        "id": 3,
+        "word": "后防",
+        "pinyin": "hòufáng",
+        "meaning": "defesa"
+      },
+      {
+        "id": 4,
+        "word": "无力",
+        "pinyin": "wúlì",
+        "meaning": "sem força, ineficaz"
+      },
+      {
+        "id": 5,
+        "word": "不谈了",
+        "pinyin": "bùtánle",
+        "meaning": "não vamos falar disso"
+      },
+      {
+        "id": 6,
+        "word": "冠军",
+        "pinyin": "guànjūn",
+        "meaning": "campeão"
+      },
+      {
+        "id": 7,
+        "word": "谁",
+        "pinyin": "shuí",
+        "meaning": "quem"
+      }
+    ],
+    "id": "local-1780226635060-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 对了，决赛的盘口出来了没有，快给我看看。",
+    "pinyin": "Duì le, juésài de pánkǒu chūlái le méiyǒu, kuàigěiwǒ kànkàn.",
+    "translation": "A: Ah, já saiu as odds da final? Me deixa ver rápido.",
+    "tokens": [
+      "对",
+      "了",
+      "，",
+      "决赛",
+      "的",
+      "盘口",
+      "出来",
+      "了",
+      "没有",
+      "，",
+      "快给我",
+      "看看",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "决赛",
+        "pinyin": "juésài",
+        "meaning": "final"
+      },
+      {
+        "id": 2,
+        "word": "盘口",
+        "pinyin": "pánkǒu",
+        "meaning": "odds/apostas"
+      },
+      {
+        "id": 3,
+        "word": "出来",
+        "pinyin": "chūlái",
+        "meaning": "sair/aparecer"
+      },
+      {
+        "id": 4,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "já? (pergunta)"
+      },
+      {
+        "id": 5,
+        "word": "快",
+        "pinyin": "kuài",
+        "meaning": "rápido"
+      }
+    ],
+    "id": "local-1780226635060-12",
+    "language": "Chinês"
+  }
+]

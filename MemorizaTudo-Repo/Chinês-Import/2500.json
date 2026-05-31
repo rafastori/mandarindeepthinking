@@ -1,0 +1,562 @@
+[
+  {
+    "chinese": "A: 汽车怎么发动不了了？",
+    "pinyin": "Qìchē zěnme fādòng bùliǎo le?",
+    "translation": "A: Por que o carro não está ligando?",
+    "tokens": [
+      "汽车",
+      "怎么",
+      "发动",
+      "不了",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "汽车",
+        "pinyin": "qìchē",
+        "meaning": "carro"
+      },
+      {
+        "id": 2,
+        "word": "发动",
+        "pinyin": "fādòng",
+        "meaning": "ligar (motor)"
+      },
+      {
+        "id": 3,
+        "word": "不了",
+        "pinyin": "bùliǎo",
+        "meaning": "não conseguir"
+      }
+    ],
+    "id": "local-1780227169349-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我看看！真是奇怪！",
+    "pinyin": "Wǒ kànkàn! Zhēnshì qíguài!",
+    "translation": "B: Deixa eu ver! É realmente estranho!",
+    "tokens": [
+      "我",
+      "看看",
+      "！",
+      "真是",
+      "奇怪",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 2,
+        "word": "看看",
+        "pinyin": "kànkàn",
+        "meaning": "dar uma olhada"
+      },
+      {
+        "id": 3,
+        "word": "真是",
+        "pinyin": "zhēnshì",
+        "meaning": "realmente é"
+      },
+      {
+        "id": 4,
+        "word": "奇怪",
+        "pinyin": "qíguài",
+        "meaning": "estranho"
+      }
+    ],
+    "id": "local-1780227169349-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不会没油了吧？",
+    "pinyin": "Búhuì méiyóu le ba?",
+    "translation": "A: Será que ficou sem gasolina?",
+    "tokens": [
+      "不会",
+      "没油",
+      "了",
+      "吧",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不会",
+        "pinyin": "búhuì",
+        "meaning": "será que não / não é que"
+      },
+      {
+        "id": 2,
+        "word": "没油",
+        "pinyin": "méiyóu",
+        "meaning": "sem combustível / sem gasolina"
+      },
+      {
+        "id": 3,
+        "word": "了吧",
+        "pinyin": "leba",
+        "meaning": "partícula de suposição ou confirmação"
+      }
+    ],
+    "id": "local-1780227169349-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不可能，我中午加满油的。",
+    "pinyin": "Bù kěnéng, wǒ zhōngwǔ jiāmǎn yóu de.",
+    "translation": "B: Impossível, eu enchi o tanque de combustível ao meio-dia.",
+    "tokens": [
+      "不",
+      "可能",
+      "，",
+      "我",
+      "中午",
+      "加满",
+      "油",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不可能",
+        "pinyin": "bùkěnéng",
+        "meaning": "impossível"
+      },
+      {
+        "id": 2,
+        "word": "中午",
+        "pinyin": "zhōngwǔ",
+        "meaning": "meio-dia"
+      },
+      {
+        "id": 3,
+        "word": "加满",
+        "pinyin": "jiāmǎn",
+        "meaning": "encher completamente"
+      },
+      {
+        "id": 4,
+        "word": "油",
+        "pinyin": "yóu",
+        "meaning": "combustível/óleo"
+      }
+    ],
+    "id": "local-1780227169349-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你刚跟警察处理事故的时候，是不是一直打着灯？",
+    "pinyin": "Nǐ gāng gēn jǐngchá chǔlǐ shìgù de shíhòu, shìbúshì yìzhí dǎzhe dēng?",
+    "translation": "A: Quando você estava resolvendo o acidente com a polícia, você estava mantendo as luzes de emergência ligadas o tempo todo?",
+    "tokens": [
+      "你",
+      "刚",
+      "跟",
+      "警察",
+      "处理",
+      "事故",
+      "的",
+      "时候",
+      "，",
+      "是不是",
+      "一直",
+      "打着",
+      "灯",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "警察",
+        "pinyin": "jǐngchá",
+        "meaning": "polícia"
+      },
+      {
+        "id": 2,
+        "word": "处理",
+        "pinyin": "chǔlǐ",
+        "meaning": "tratar / resolver"
+      },
+      {
+        "id": 3,
+        "word": "事故",
+        "pinyin": "shìgù",
+        "meaning": "acidente"
+      },
+      {
+        "id": 4,
+        "word": "一直",
+        "pinyin": "yìzhí",
+        "meaning": "sempre / continuamente"
+      }
+    ],
+    "id": "local-1780227169349-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是啊，你不是告诉我停车要打双闪吗？哦！收音机也没关。",
+    "pinyin": "Shì a, nǐ búshì gàosù wǒ tíngchē yào dǎ shuāngshǎn ma? Ó! Shōuyīnjī yě méiguān.",
+    "translation": "B: É, você não me disse para ligar as luzes de emergência ao estacionar? Ah! O rádio também não foi desligado.",
+    "tokens": [
+      "是",
+      "啊",
+      "，",
+      "你",
+      "不是",
+      "告诉",
+      "我",
+      "停车",
+      "要",
+      "打",
+      "双闪",
+      "吗",
+      "？",
+      "哦",
+      "！",
+      "收音机",
+      "也",
+      "没关",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是啊",
+        "pinyin": "shìa",
+        "meaning": "sim, é verdade"
+      },
+      {
+        "id": 2,
+        "word": "告诉",
+        "pinyin": "gàosù",
+        "meaning": "dizer, informar"
+      },
+      {
+        "id": 3,
+        "word": "停车",
+        "pinyin": "tíngchē",
+        "meaning": "estacionar"
+      },
+      {
+        "id": 4,
+        "word": "打双闪",
+        "pinyin": "dǎshuāngshǎn",
+        "meaning": "ligar as luzes de emergência"
+      },
+      {
+        "id": 5,
+        "word": "收音机",
+        "pinyin": "shōuyīnjī",
+        "meaning": "rádio"
+      },
+      {
+        "id": 6,
+        "word": "关",
+        "pinyin": "guān",
+        "meaning": "desligar"
+      }
+    ],
+    "id": "local-1780227169349-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我知道了，汽车电瓶没电了。",
+    "pinyin": "Wǒ zhīdào le, qìchē diànpíng méidiàn le.",
+    "translation": "A: Entendi, a bateria do carro descarregou.",
+    "tokens": [
+      "我",
+      "知道",
+      "了",
+      "，",
+      "汽车",
+      "电瓶",
+      "没电",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "汽车",
+        "pinyin": "qìchē",
+        "meaning": "carro"
+      },
+      {
+        "id": 2,
+        "word": "电瓶",
+        "pinyin": "diànpíng",
+        "meaning": "bateria"
+      },
+      {
+        "id": 3,
+        "word": "没电",
+        "pinyin": "méidiàn",
+        "meaning": "sem energia / descarregado"
+      }
+    ],
+    "id": "local-1780227169349-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那推着车走一段，然后就可以发动了。",
+    "pinyin": "Nà tuīzhe chē zǒu yīduàn, ránhòu jiù kěyǐ fādòng le.",
+    "translation": "B: Empurre o carro por um trecho e, em seguida, você poderá ligá-lo.",
+    "tokens": [
+      "那",
+      "推着",
+      "车",
+      "走",
+      "一段",
+      "，",
+      "然后",
+      "就",
+      "可以",
+      "发动",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "推着",
+        "pinyin": "tuīzhe",
+        "meaning": "empurrar"
+      },
+      {
+        "id": 2,
+        "word": "车",
+        "pinyin": "chē",
+        "meaning": "carro"
+      },
+      {
+        "id": 3,
+        "word": "走一段",
+        "pinyin": "zǒuyīduàn",
+        "meaning": "andar por um trecho"
+      },
+      {
+        "id": 4,
+        "word": "发动",
+        "pinyin": "fādòng",
+        "meaning": "ligar (o motor)"
+      }
+    ],
+    "id": "local-1780227169349-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不行的，那是手动挡汽车。咱们自动挡的不行。",
+    "pinyin": "Bùxíng de, nà shì shǒudòngdǎng qìchē. Zánmen zìdòngdǎng de bùxíng.",
+    "translation": "A: Não dá, esse é um carro com câmbio manual. O nosso, que é automático, não serve.",
+    "tokens": [
+      "不行",
+      "的",
+      "，",
+      "那",
+      "是",
+      "手动挡",
+      "汽车",
+      "。",
+      "咱们",
+      "自动挡",
+      "的",
+      "不行",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não dá / não serve"
+      },
+      {
+        "id": 2,
+        "word": "手动挡",
+        "pinyin": "shǒudòngdǎng",
+        "meaning": "câmbio manual"
+      },
+      {
+        "id": 3,
+        "word": "汽车",
+        "pinyin": "qìchē",
+        "meaning": "carro"
+      },
+      {
+        "id": 4,
+        "word": "自动挡",
+        "pinyin": "zìdòngdǎng",
+        "meaning": "câmbio automático"
+      }
+    ],
+    "id": "local-1780227169349-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那怎么办？",
+    "pinyin": "Nà zěnmebàn?",
+    "translation": "B: Então, o que fazer?",
+    "tokens": [
+      "那",
+      "怎么办",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "怎么办",
+        "pinyin": "zěnmebàn",
+        "meaning": "o que fazer / como resolver"
+      }
+    ],
+    "id": "local-1780227169349-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 看来，只能找汽修师傅帮我们接电了。",
+    "pinyin": "Kànlái, zhǐnéng zhǎo qìxiū shīfù bāng wǒmen jiēdiàn le.",
+    "translation": "A: Parece que só resta procurar um mecânico para nos ajudar a ligar a bateria.",
+    "tokens": [
+      "看来",
+      "，",
+      "只能",
+      "找",
+      "汽修",
+      "师傅",
+      "帮",
+      "我们",
+      "接电",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看来",
+        "pinyin": "kànlái",
+        "meaning": "parece que"
+      },
+      {
+        "id": 2,
+        "word": "只能",
+        "pinyin": "zhǐnéng",
+        "meaning": "só pode / só resta"
+      },
+      {
+        "id": 3,
+        "word": "找",
+        "pinyin": "zhǎo",
+        "meaning": "procurar"
+      },
+      {
+        "id": 4,
+        "word": "汽修师傅",
+        "pinyin": "qìxiūshīfù",
+        "meaning": "mecânico de automóveis"
+      },
+      {
+        "id": 5,
+        "word": "接电",
+        "pinyin": "jiēdiàn",
+        "meaning": "ligar a bateria / dar partida"
+      }
+    ],
+    "id": "local-1780227169349-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那么晚了，哪里可以找到师傅呀！",
+    "pinyin": "Nàme wǎn le, nǎlǐ kěyǐ zhǎodào shīfù ya!",
+    "translation": "B: Já está tão tarde, onde consigo encontrar um mestre!",
+    "tokens": [
+      "那么",
+      "晚",
+      "了",
+      "，",
+      "哪里",
+      "可以",
+      "找到",
+      "师傅",
+      "呀",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那么晚",
+        "pinyin": "nàmewǎn",
+        "meaning": "tão tarde"
+      },
+      {
+        "id": 2,
+        "word": "哪里",
+        "pinyin": "nǎlǐ",
+        "meaning": "onde"
+      },
+      {
+        "id": 3,
+        "word": "师傅",
+        "pinyin": "shīfù",
+        "meaning": "mestre"
+      }
+    ],
+    "id": "local-1780227169349-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 今晚咱们真是倒霉啊！",
+    "pinyin": "Jīnwǎn zánmen zhēnshì dǎoméi a!",
+    "translation": "A: Nós realmente tivemos muita azar hoje à noite!",
+    "tokens": [
+      "今晚",
+      "咱们",
+      "真是",
+      "倒霉",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "今晚",
+        "pinyin": "jīnwǎn",
+        "meaning": "hoje à noite"
+      },
+      {
+        "id": 2,
+        "word": "咱们",
+        "pinyin": "zánmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 3,
+        "word": "真是",
+        "pinyin": "zhēnshì",
+        "meaning": "realmente é"
+      },
+      {
+        "id": 4,
+        "word": "倒霉",
+        "pinyin": "dǎoméi",
+        "meaning": "azar"
+      }
+    ],
+    "id": "local-1780227169349-12",
+    "language": "Chinês"
+  }
+]

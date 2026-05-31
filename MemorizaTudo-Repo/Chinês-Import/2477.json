@@ -1,0 +1,800 @@
+[
+  {
+    "chinese": "A: 今天我们开会的主题是微信营销，会议由我来主持。我们目前已经通过了腾讯的审核，拥有了微信公众号。接下来，我们需要集思广益，看看如何运用微信来推广我们的产品。",
+    "pinyin": "Jīntiān wǒmen kāihuì de zhǔtí shì wēixìn yíngxiāo, huìyì yóu wǒ lái zhǔchí. Wǒmen mùqián yǐjīng tōngguò le téngxùn de shěnhé, yōngyǒu le wēixìn gōngzhòng hào. Jiēxiàlái, wǒmen xūyào jísīguǎngyì, kànkàn rúhé yùnyòng wēixìnlái tuīguǎng wǒmen de chǎnpǐn.",
+    "translation": "A: O tema da nossa reunião de hoje é o marketing no WeChat, e eu serei o moderador. Já passamos pela aprovação da Tencent e já temos nossa conta oficial no WeChat. A seguir, precisamos reunir ideias para ver como usar o WeChat para promover nossos produtos.",
+    "tokens": [
+      "今天",
+      "我们",
+      "开会",
+      "的",
+      "主题",
+      "是",
+      "微信",
+      "营销",
+      "，",
+      "会议",
+      "由",
+      "我",
+      "来",
+      "主持",
+      "。",
+      "我们",
+      "目前",
+      "已经",
+      "通过",
+      "了",
+      "腾讯",
+      "的",
+      "审核",
+      "，",
+      "拥有",
+      "了",
+      "微信",
+      "公众",
+      "号",
+      "。",
+      "接下来",
+      "，",
+      "我们",
+      "需要",
+      "集思广益",
+      "，",
+      "看看",
+      "如何",
+      "运用",
+      "微信来",
+      "推广",
+      "我们",
+      "的",
+      "产品",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "会议",
+        "pinyin": "huìyì",
+        "meaning": "reunião"
+      },
+      {
+        "id": 2,
+        "word": "主题",
+        "pinyin": "zhǔtí",
+        "meaning": "tema"
+      },
+      {
+        "id": 3,
+        "word": "主持",
+        "pinyin": "zhǔchí",
+        "meaning": "moderar"
+      },
+      {
+        "id": 4,
+        "word": "审核",
+        "pinyin": "shěnhé",
+        "meaning": "aprovação"
+      },
+      {
+        "id": 5,
+        "word": "集思广益",
+        "pinyin": "jísīguǎngyì",
+        "meaning": "reunir ideias"
+      },
+      {
+        "id": 6,
+        "word": "推广",
+        "pinyin": "tuīguǎng",
+        "meaning": "promover"
+      }
+    ],
+    "id": "local-1780226527809-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 有了公众号，当然最重要的是要订阅这个公众号的人。我觉得第一步需要在我们现有的宣传手段中植入公众号的信息。然后，通过二维码扫描、微博宣传等方式增加新的订阅。",
+    "pinyin": "Yǒu le gōngzhòng hào, dāngrán zuì zhòngyào de shì yào dìngyuè zhège gōngzhòng hào de rén. Wǒ juéde dìyībù xūyào zài wǒmen xiànyǒu de xuānchuán shǒuduàn zhōng zhírù gōngzhòng hào de xìnxī. Ránhòu, tōngguò èrwéimǎ sǎomiáo, wēibó xuānchuán děng fāngshì zēngjiā xīn de dìngyuè.",
+    "translation": "B: Tendo um conta oficial, é claro que o mais importante são as pessoas que se inscrevem nela. Acho que o primeiro passo é incorporar as informações da conta oficial nos nossos métodos de divulgação existentes. Em seguida, aumentar as novas inscrições através de escaneamento de códigos QR, divulgação no Weibo, entre outras formas.",
+    "tokens": [
+      "有",
+      "了",
+      "公众",
+      "号",
+      "，",
+      "当然",
+      "最",
+      "重要",
+      "的",
+      "是",
+      "要",
+      "订阅",
+      "这个",
+      "公众",
+      "号",
+      "的",
+      "人",
+      "。",
+      "我",
+      "觉得",
+      "第一步",
+      "需要",
+      "在",
+      "我们",
+      "现有",
+      "的",
+      "宣传",
+      "手段",
+      "中",
+      "植入",
+      "公众",
+      "号",
+      "的",
+      "信息",
+      "。",
+      "然后",
+      "，",
+      "通过",
+      "二维码",
+      "扫描",
+      "、",
+      "微博",
+      "宣传",
+      "等",
+      "方式",
+      "增加",
+      "新",
+      "的",
+      "订阅",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "公众号",
+        "pinyin": "gōngzhònghào",
+        "meaning": "conta oficial (WeChat)"
+      },
+      {
+        "id": 2,
+        "word": "订阅",
+        "pinyin": "dìngyuè",
+        "meaning": "inscrever-se"
+      },
+      {
+        "id": 3,
+        "word": "宣传",
+        "pinyin": "xuānchuán",
+        "meaning": "divulgação"
+      },
+      {
+        "id": 4,
+        "word": "植入",
+        "pinyin": "zhírù",
+        "meaning": "incorporar/inserir"
+      },
+      {
+        "id": 5,
+        "word": "二维码",
+        "pinyin": "èrwéimǎ",
+        "meaning": "código QR"
+      },
+      {
+        "id": 6,
+        "word": "扫描",
+        "pinyin": "sǎomiáo",
+        "meaning": "escanear"
+      },
+      {
+        "id": 7,
+        "word": "微博",
+        "pinyin": "wēibó",
+        "meaning": "Weibo"
+      }
+    ],
+    "id": "local-1780226527809-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 那这个和微博有什么区别？当初我们花了很多精力来培育微博粉丝，现在再花精力来增加微信订阅会不会重复？",
+    "pinyin": "Nà zhège hé wēibóyǒu shénme qūbié? Dāngchū wǒmen huā le hěnduō jīnglì lái péiyù wēibó fěnsī, xiànzài zàihuā jīnglì lái zēngjiā wēixìn dìngyuè huì búhuì chóngfù?",
+    "translation": "C: Então, qual é a diferença entre isso e o Weibo? Na época, gastamos muito esforço para cultivar seguidores no Weibo; agora, gastar esforço para aumentar as assinaturas do WeChat não seria redundante?",
+    "tokens": [
+      "那",
+      "这个",
+      "和",
+      "微博有",
+      "什么",
+      "区别",
+      "？",
+      "当初",
+      "我们",
+      "花",
+      "了",
+      "很多",
+      "精力",
+      "来",
+      "培育",
+      "微博",
+      "粉丝",
+      "，",
+      "现在",
+      "再花",
+      "精力",
+      "来",
+      "增加",
+      "微信",
+      "订阅",
+      "会",
+      "不会",
+      "重复",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "区别",
+        "pinyin": "qūbié",
+        "meaning": "diferença"
+      },
+      {
+        "id": 2,
+        "word": "微博",
+        "pinyin": "wēibó",
+        "meaning": "Weibo"
+      },
+      {
+        "id": 3,
+        "word": "精力",
+        "pinyin": "jīnglì",
+        "meaning": "esforço / energia"
+      },
+      {
+        "id": 4,
+        "word": "培育",
+        "pinyin": "péiyù",
+        "meaning": "cultivar / desenvolver"
+      },
+      {
+        "id": 5,
+        "word": "粉丝",
+        "pinyin": "fěnsī",
+        "meaning": "seguidores / fãs"
+      },
+      {
+        "id": 6,
+        "word": "微信",
+        "pinyin": "wēixìn",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 7,
+        "word": "订阅",
+        "pinyin": "dìngyuè",
+        "meaning": "assinatura"
+      },
+      {
+        "id": 8,
+        "word": "重复",
+        "pinyin": "chóngfù",
+        "meaning": "repetir / redundante"
+      }
+    ],
+    "id": "local-1780226527809-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 微博主要是信息的发布，微信除了信息发布还可以更好地与用户互动。比如，我订阅了银行的微信公众号。在上面除了能收到银行的活动信息，还可以收到我的信用卡账单、还款情况等等。",
+    "pinyin": "Wēibó zhǔyào shì xìnxī de fābù, wēixìn chúle xìnxī fābù hái kěyǐ gènghǎo dì yǔ yònghù hùdòng. Bǐrú, wǒ dìngyuè le yínháng de wēixìn gōngzhòng hào. Zài shàngmiàn chúle néng shōudào yínháng de huódòng xìnxī, hái kěyǐ shōudào wǒ de xìnyòngkǎ zhàngdān, háikuǎn qíngkuàng děngděng.",
+    "translation": "B: O Weibo é principalmente para a publicação de informações, enquanto o WeChat, além de publicar informações, permite uma interação melhor com os usuários. Por exemplo, assinei a conta oficial do banco no WeChat. Além de receber informações sobre promoções do banco, também posso receber o extrato do meu cartão de crédito, o status de pagamento e outras coisas.",
+    "tokens": [
+      "微博",
+      "主要",
+      "是",
+      "信息",
+      "的",
+      "发布",
+      "，",
+      "微信",
+      "除了",
+      "信息",
+      "发布",
+      "还",
+      "可以",
+      "更好",
+      "地",
+      "与",
+      "用户",
+      "互动",
+      "。",
+      "比如",
+      "，",
+      "我",
+      "订阅",
+      "了",
+      "银行",
+      "的",
+      "微信",
+      "公众",
+      "号",
+      "。",
+      "在",
+      "上面",
+      "除了",
+      "能",
+      "收到",
+      "银行",
+      "的",
+      "活动",
+      "信息",
+      "，",
+      "还",
+      "可以",
+      "收到",
+      "我",
+      "的",
+      "信用卡",
+      "账单",
+      "、",
+      "还款",
+      "情况",
+      "等等",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "微博",
+        "pinyin": "wēibó",
+        "meaning": "Weibo (rede social chinesa)"
+      },
+      {
+        "id": 2,
+        "word": "微信",
+        "pinyin": "wēixìn",
+        "meaning": "WeChat (app de mensagens)"
+      },
+      {
+        "id": 3,
+        "word": "互动",
+        "pinyin": "hùdòng",
+        "meaning": "interação"
+      },
+      {
+        "id": 4,
+        "word": "订阅",
+        "pinyin": "dìngyuè",
+        "meaning": "assinar"
+      },
+      {
+        "id": 5,
+        "word": "微信公众号",
+        "pinyin": "wēixìngōngzhònghào",
+        "meaning": "conta oficial do WeChat"
+      },
+      {
+        "id": 6,
+        "word": "信用卡",
+        "pinyin": "xìnyòngkǎ",
+        "meaning": "cartão de crédito"
+      },
+      {
+        "id": 7,
+        "word": "账单",
+        "pinyin": "zhàngdān",
+        "meaning": "extrato / fatura"
+      }
+    ],
+    "id": "local-1780226527809-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 那我们的微信号里要添加什么功能呢？",
+    "pinyin": "Nà wǒmen de wēi xìnhào lǐ yào tiānjiā shénme gōngnéng ne?",
+    "translation": "C: Então, que funcionalidades devemos adicionar ao nosso WeChat?",
+    "tokens": [
+      "那",
+      "我们",
+      "的",
+      "微",
+      "信号",
+      "里",
+      "要",
+      "添加",
+      "什么",
+      "功能",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós / nosso"
+      },
+      {
+        "id": 3,
+        "word": "微信",
+        "pinyin": "wēixìn",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 4,
+        "word": "号",
+        "pinyin": "hào",
+        "meaning": "número / conta"
+      },
+      {
+        "id": 5,
+        "word": "添加",
+        "pinyin": "tiānjiā",
+        "meaning": "adicionar"
+      },
+      {
+        "id": 6,
+        "word": "功能",
+        "pinyin": "gōngnéng",
+        "meaning": "funcionalidade / recurso"
+      }
+    ],
+    "id": "local-1780226527809-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 既然是更加有针对性的营销，那么一定要绑定用户帐号。然后，应该让客户可以在微信里留言，由我们的客服来解答他们的问题。",
+    "pinyin": "Jìrán shì gèngjiā yǒu zhēnduìxìng de yíngxiāo, nàme yídìng yào bǎngdìng yònghù zhànghào. Ránhòu, yīnggāi ràng kèhù kěyǐ zài wēixìnlǐ liúyán, yóu wǒmen de kèfú lái jiědá tāmen de wèntí.",
+    "translation": "A: Como se trata de um marketing mais direcionado, é essencial vincular as contas dos usuários. Em seguida, deve-se permitir que os clientes deixem mensagens no WeChat, para que nossa equipe de atendimento ao cliente possa responder às suas dúvidas.",
+    "tokens": [
+      "既然",
+      "是",
+      "更加",
+      "有",
+      "针对性",
+      "的",
+      "营销",
+      "，",
+      "那么",
+      "一定",
+      "要",
+      "绑定",
+      "用户",
+      "帐号",
+      "。",
+      "然后",
+      "，",
+      "应该",
+      "让",
+      "客户",
+      "可以",
+      "在",
+      "微信里",
+      "留言",
+      "，",
+      "由",
+      "我们",
+      "的",
+      "客服",
+      "来",
+      "解答",
+      "他们",
+      "的",
+      "问题",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "针对性",
+        "pinyin": "zhēnduìxìng",
+        "meaning": "direcionado/específico"
+      },
+      {
+        "id": 2,
+        "word": "营销",
+        "pinyin": "yíngxiāo",
+        "meaning": "marketing"
+      },
+      {
+        "id": 3,
+        "word": "绑定",
+        "pinyin": "bǎngdìng",
+        "meaning": "vincular/associar"
+      },
+      {
+        "id": 4,
+        "word": "用户帐号",
+        "pinyin": "yònghùzhànghào",
+        "meaning": "conta do usuário"
+      },
+      {
+        "id": 5,
+        "word": "留言",
+        "pinyin": "liúyán",
+        "meaning": "deixar mensagem"
+      },
+      {
+        "id": 6,
+        "word": "客服",
+        "pinyin": "kèfú",
+        "meaning": "atendimento ao cliente"
+      },
+      {
+        "id": 7,
+        "word": "解答",
+        "pinyin": "jiědá",
+        "meaning": "responder/esclarecer"
+      }
+    ],
+    "id": "local-1780226527809-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 精彩、实用的帖子也必不可少。我们要避免赤裸裸的推销，否则每天都看到推销广告，谁还愿意看我们的公众号？",
+    "pinyin": "Jīngcǎi, shíyòng de tiězi yě bìbùkěshǎo. Wǒmen yào bìmiǎn chìluǒluǒ de tuīxiāo, fǒuzé měitiān dōu kàndào tuīxiāo guǎnggào, shuí hái yuànyì kàn wǒmen de gōngzhòng hào?",
+    "translation": "C: Posts interessantes e práticos também são indispensáveis. Devemos evitar promoções descaradas, caso contrário, se todos os dias virmos anúncios promocionais, quem ainda se interessaria por ler nosso canal oficial?",
+    "tokens": [
+      "精彩",
+      "、",
+      "实用",
+      "的",
+      "帖子",
+      "也",
+      "必不可少",
+      "。",
+      "我们",
+      "要",
+      "避免",
+      "赤裸裸",
+      "的",
+      "推销",
+      "，",
+      "否则",
+      "每天",
+      "都",
+      "看到",
+      "推销",
+      "广告",
+      "，",
+      "谁",
+      "还",
+      "愿意",
+      "看",
+      "我们",
+      "的",
+      "公众",
+      "号",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "精彩",
+        "pinyin": "jīngcǎi",
+        "meaning": "interessante / brilhante"
+      },
+      {
+        "id": 2,
+        "word": "实用",
+        "pinyin": "shíyòng",
+        "meaning": "prático / útil"
+      },
+      {
+        "id": 3,
+        "word": "必不可少",
+        "pinyin": "bìbùkěshǎo",
+        "meaning": "indispensável / essencial"
+      },
+      {
+        "id": 4,
+        "word": "赤裸裸",
+        "pinyin": "chìluǒluǒ",
+        "meaning": "desarregado / descarado"
+      },
+      {
+        "id": 5,
+        "word": "推销",
+        "pinyin": "tuīxiāo",
+        "meaning": "promoção / venda"
+      },
+      {
+        "id": 6,
+        "word": "公众号",
+        "pinyin": "gōngzhònghào",
+        "meaning": "canal oficial (WeChat)"
+      }
+    ],
+    "id": "local-1780226527809-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 微信也有在线商店，这个也要添加进去，方便用户购买。另外还可以搞一些活动，比如如果将我们的帖子分享在“朋友圈”或者推送给朋友，就可以积分之类的。",
+    "pinyin": "Wēixìn yě yǒu zàixiàn shāngdiàn, zhège yě yào tiānjiā jìnqù, fāngbiàn yònghù gòumǎi. Lìngwài hái kěyǐ gǎo yīxiē huódòng, bǐrú rúguǒ jiāng wǒmen de tiězi fēnxiǎng zài\" péngyǒuquān\" huòzhě tuīsòng gěi péngyǒu, jiù kěyǐ jīfēn zhīlèi de.",
+    "translation": "B: O WeChat também tem uma loja online, que deve ser incluída para facilitar a compra dos usuários. Além disso, podemos realizar algumas atividades, como conceder pontos se os usuários compartilharem nossas postagens no 'Moments' ou enviá-las para amigos.",
+    "tokens": [
+      "微信",
+      "也",
+      "有",
+      "在线",
+      "商店",
+      "，",
+      "这个",
+      "也",
+      "要",
+      "添加",
+      "进去",
+      "，",
+      "方便",
+      "用户",
+      "购买",
+      "。",
+      "另外",
+      "还",
+      "可以",
+      "搞",
+      "一些",
+      "活动",
+      "，",
+      "比如",
+      "如果",
+      "将",
+      "我们",
+      "的",
+      "帖子",
+      "分享",
+      "在",
+      "“",
+      "朋友圈",
+      "”",
+      "或者",
+      "推送",
+      "给",
+      "朋友",
+      "，",
+      "就",
+      "可以",
+      "积分",
+      "之类",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "微信",
+        "pinyin": "wēixìn",
+        "meaning": "WeChat"
+      },
+      {
+        "id": 2,
+        "word": "在线商店",
+        "pinyin": "zàixiànshāngdiàn",
+        "meaning": "loja online"
+      },
+      {
+        "id": 3,
+        "word": "添加",
+        "pinyin": "tiānjiā",
+        "meaning": "adicionar"
+      },
+      {
+        "id": 4,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente/facilitar"
+      },
+      {
+        "id": 5,
+        "word": "活动",
+        "pinyin": "huódòng",
+        "meaning": "atividade/campanha"
+      },
+      {
+        "id": 6,
+        "word": "分享",
+        "pinyin": "fēnxiǎng",
+        "meaning": "compartilhar"
+      },
+      {
+        "id": 7,
+        "word": "朋友圈",
+        "pinyin": "péngyǒuquān",
+        "meaning": "Moments (feed social do WeChat)"
+      },
+      {
+        "id": 8,
+        "word": "积分",
+        "pinyin": "jīfēn",
+        "meaning": "pontos (de recompensa)"
+      }
+    ],
+    "id": "local-1780226527809-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 大家的想法都很好，那么接下来由小刘具体负责。下周一前，拿出一个初步方案，我们再来讨论。",
+    "pinyin": "Dàjiā de xiǎngfǎ dōu hěn hǎo, nàme jiēxiàlái yóu xiǎo liú jùtǐ fùzé. Xiàzhōuyī qián, náchū yígè chūbù fāngàn, wǒmen zài lái tǎolùn.",
+    "translation": "A: As ideias de todos são muito boas. A partir de agora, o Xiao Liu será o responsável específico. Antes de segunda-feira, apresentem um esboço inicial para que possamos discutir novamente.",
+    "tokens": [
+      "大家",
+      "的",
+      "想法",
+      "都",
+      "很",
+      "好",
+      "，",
+      "那么",
+      "接下来",
+      "由",
+      "小",
+      "刘",
+      "具体",
+      "负责",
+      "。",
+      "下周一",
+      "前",
+      "，",
+      "拿出",
+      "一个",
+      "初步",
+      "方案",
+      "，",
+      "我们",
+      "再",
+      "来",
+      "讨论",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "todos"
+      },
+      {
+        "id": 2,
+        "word": "想法",
+        "pinyin": "xiǎngfǎ",
+        "meaning": "ideias"
+      },
+      {
+        "id": 3,
+        "word": "接下来",
+        "pinyin": "jiēxiàlái",
+        "meaning": "a partir de agora"
+      },
+      {
+        "id": 4,
+        "word": "负责",
+        "pinyin": "fùzé",
+        "meaning": "ser responsável"
+      },
+      {
+        "id": 5,
+        "word": "初步",
+        "pinyin": "chūbù",
+        "meaning": "inicial"
+      },
+      {
+        "id": 6,
+        "word": "方案",
+        "pinyin": "fāngàn",
+        "meaning": "plano"
+      },
+      {
+        "id": 7,
+        "word": "讨论",
+        "pinyin": "tǎolùn",
+        "meaning": "discutir"
+      }
+    ],
+    "id": "local-1780226527809-8",
+    "language": "Chinês"
+  }
+]

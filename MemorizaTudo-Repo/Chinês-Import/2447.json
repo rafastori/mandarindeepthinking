@@ -1,0 +1,625 @@
+[
+  {
+    "chinese": "A: 你刚刚有没有看微博，真是”毁三观“。",
+    "pinyin": "Nǐ gānggāng yǒuméiyǒu kànwēibó, zhēnshì\" huǐ sānguān\".",
+    "translation": "A: Você acabou de ver o Weibo? É realmente 'destruidor dos valores'.",
+    "tokens": [
+      "你",
+      "刚刚",
+      "有没有",
+      "看微博",
+      "，",
+      "真是",
+      "”",
+      "毁",
+      "三观",
+      "“",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "刚刚",
+        "pinyin": "gānggāng",
+        "meaning": "acabou de"
+      },
+      {
+        "id": 2,
+        "word": "微博",
+        "pinyin": "wēibó",
+        "meaning": "Weibo"
+      },
+      {
+        "id": 3,
+        "word": "真是",
+        "pinyin": "zhēnshì",
+        "meaning": "é realmente"
+      },
+      {
+        "id": 4,
+        "word": "毁三观",
+        "pinyin": "huǐsānguān",
+        "meaning": "destruidor dos valores"
+      }
+    ],
+    "id": "local-1780225816786-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 怎么了？",
+    "pinyin": "Zěnme le?",
+    "translation": "B: O que houve?",
+    "tokens": [
+      "怎么",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 2,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "partícula de mudança de estado"
+      }
+    ],
+    "id": "local-1780225816786-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 福建有对“同志”结婚了，举办了盛大的婚礼。还在微博上贴了很多婚礼照片。",
+    "pinyin": "Fújiàn yǒu duì\" tóngzhì\" jiéhūn le, jǔbàn le shèngdà de hūnlǐ. Hái zài wēibóshàng tiē le hěnduō hūnlǐ zhàopiān.",
+    "translation": "A: Um casal de 'camaradas' em Fujian se casou, realizou um grande casamento e postou muitas fotos da cerimônia no Weibo.",
+    "tokens": [
+      "福建",
+      "有",
+      "对",
+      "“",
+      "同志",
+      "”",
+      "结婚",
+      "了",
+      "，",
+      "举办",
+      "了",
+      "盛大",
+      "的",
+      "婚礼",
+      "。",
+      "还",
+      "在",
+      "微博上",
+      "贴",
+      "了",
+      "很多",
+      "婚礼",
+      "照片",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "福建",
+        "pinyin": "fújiàn",
+        "meaning": "Fujian (província da China)"
+      },
+      {
+        "id": 2,
+        "word": "同志",
+        "pinyin": "tóngzhì",
+        "meaning": "camaradas (termo usado para casais do mesmo sexo)"
+      },
+      {
+        "id": 3,
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 4,
+        "word": "婚礼",
+        "pinyin": "hūnlǐ",
+        "meaning": "casamento (cerimônia)"
+      },
+      {
+        "id": 5,
+        "word": "微博",
+        "pinyin": "wēibó",
+        "meaning": "Weibo (rede social chinesa)"
+      },
+      {
+        "id": 6,
+        "word": "照片",
+        "pinyin": "zhàopiān",
+        "meaning": "fotos"
+      }
+    ],
+    "id": "local-1780225816786-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这也很正常嘛。现在社会开明了很多，同性恋也不稀奇。",
+    "pinyin": "Zhè yě hěn zhèngcháng ma. Xiànzài shèhuì kāimíng le hěnduō, tóngxìngliàn yě bù xīqí.",
+    "translation": "B: Isso também é muito normal. A sociedade hoje está muito mais aberta, e homossexualidade não é mais novidade.",
+    "tokens": [
+      "这",
+      "也",
+      "很",
+      "正常",
+      "嘛",
+      "。",
+      "现在",
+      "社会",
+      "开明",
+      "了",
+      "很多",
+      "，",
+      "同性恋",
+      "也",
+      "不",
+      "稀奇",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "正常",
+        "pinyin": "zhèngcháng",
+        "meaning": "normal"
+      },
+      {
+        "id": 2,
+        "word": "社会",
+        "pinyin": "shèhuì",
+        "meaning": "sociedade"
+      },
+      {
+        "id": 3,
+        "word": "开明",
+        "pinyin": "kāimíng",
+        "meaning": "aberto, tolerante"
+      },
+      {
+        "id": 4,
+        "word": "同性恋",
+        "pinyin": "tóngxìngliàn",
+        "meaning": "homossexualidade"
+      },
+      {
+        "id": 5,
+        "word": "稀奇",
+        "pinyin": "xīqí",
+        "meaning": "incomum, raro"
+      }
+    ],
+    "id": "local-1780225816786-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 虽然越来越多的人可以接受，但是举办盛大的婚礼总觉得有点奇怪。",
+    "pinyin": "Suīrán yuèláiyuè duō de rén kěyǐ jiēshòu, dànshì jǔbàn shèngdà de hūnlǐ zǒng juéde yǒudiǎn qíguài.",
+    "translation": "A: Embora cada vez mais pessoas possam aceitar, ainda parece um pouco estranho organizar um casamento grandioso.",
+    "tokens": [
+      "虽然",
+      "越来越",
+      "多",
+      "的",
+      "人",
+      "可以",
+      "接受",
+      "，",
+      "但是",
+      "举办",
+      "盛大",
+      "的",
+      "婚礼",
+      "总",
+      "觉得",
+      "有点",
+      "奇怪",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "虽然",
+        "pinyin": "suīrán",
+        "meaning": "embora"
+      },
+      {
+        "id": 2,
+        "word": "越来越",
+        "pinyin": "yuèláiyuè",
+        "meaning": "cada vez mais"
+      },
+      {
+        "id": 3,
+        "word": "接受",
+        "pinyin": "jiēshòu",
+        "meaning": "aceitar"
+      },
+      {
+        "id": 4,
+        "word": "但是",
+        "pinyin": "dànshì",
+        "meaning": "mas"
+      },
+      {
+        "id": 5,
+        "word": "举办",
+        "pinyin": "jǔbàn",
+        "meaning": "organizar/sediar"
+      },
+      {
+        "id": 6,
+        "word": "盛大",
+        "pinyin": "shèngdà",
+        "meaning": "grandioso/solenne"
+      },
+      {
+        "id": 7,
+        "word": "婚礼",
+        "pinyin": "hūnlǐ",
+        "meaning": "casamento"
+      },
+      {
+        "id": 8,
+        "word": "奇怪",
+        "pinyin": "qíguài",
+        "meaning": "estranho"
+      }
+    ],
+    "id": "local-1780225816786-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 他们也是人，也有情感需要。",
+    "pinyin": "Tāmen yě shì rén, yě yǒu qínggǎn xūyào.",
+    "translation": "B: Eles também são humanos, também têm necessidades emocionais.",
+    "tokens": [
+      "他们",
+      "也",
+      "是",
+      "人",
+      "，",
+      "也",
+      "有",
+      "情感",
+      "需要",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "他们",
+        "pinyin": "tāmen",
+        "meaning": "eles"
+      },
+      {
+        "id": 2,
+        "word": "也是",
+        "pinyin": "yěshì",
+        "meaning": "também são"
+      },
+      {
+        "id": 3,
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoa/humano"
+      },
+      {
+        "id": 4,
+        "word": "也有",
+        "pinyin": "yěyǒu",
+        "meaning": "também têm"
+      },
+      {
+        "id": 5,
+        "word": "情感",
+        "pinyin": "qínggǎn",
+        "meaning": "emoções/sentimentos"
+      },
+      {
+        "id": 6,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "necessidade"
+      }
+    ],
+    "id": "local-1780225816786-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不过在中国同性婚姻并不合法吧。",
+    "pinyin": "Bùguò zài zhōngguó tóngxìng hūnyīn bìng bù héfǎ ba.",
+    "translation": "A: Mas o casamento entre pessoas do mesmo sexo não é legal na China, certo?",
+    "tokens": [
+      "不过",
+      "在",
+      "中国",
+      "同性",
+      "婚姻",
+      "并",
+      "不",
+      "合法",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不过",
+        "pinyin": "bùguò",
+        "meaning": "mas / contudo"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "同性",
+        "pinyin": "tóngxìng",
+        "meaning": "mesmo sexo"
+      },
+      {
+        "id": 4,
+        "word": "婚姻",
+        "pinyin": "hūnyīn",
+        "meaning": "casamento / matrimônio"
+      },
+      {
+        "id": 5,
+        "word": "合法",
+        "pinyin": "héfǎ",
+        "meaning": "legal / lícito"
+      }
+    ],
+    "id": "local-1780225816786-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好像是的。不过国外有很多地方已经有同性婚姻法了，所以也有很多人去国外登记。",
+    "pinyin": "Hǎoxiàng shì de. Bùguò guówài yǒu hěnduō dìfāng yǐjīng yǒu tóngxìng hūnyīnfǎ le, suǒyǐ yě yǒu hěnduō rénqù guówài dēngjì.",
+    "translation": "B: Parece que sim. Mas em muitos lugares no exterior já existe legislação sobre casamento entre pessoas do mesmo sexo, então muitas pessoas vão ao exterior para registrar o casamento.",
+    "tokens": [
+      "好像",
+      "是",
+      "的",
+      "。",
+      "不过",
+      "国外",
+      "有",
+      "很多",
+      "地方",
+      "已经",
+      "有",
+      "同性",
+      "婚姻法",
+      "了",
+      "，",
+      "所以",
+      "也",
+      "有",
+      "很多",
+      "人去",
+      "国外",
+      "登记",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "国外",
+        "pinyin": "guówài",
+        "meaning": "no exterior"
+      },
+      {
+        "id": 2,
+        "word": "同性婚姻",
+        "pinyin": "tóngxìnghūnyīn",
+        "meaning": "casamento entre pessoas do mesmo sexo"
+      },
+      {
+        "id": 3,
+        "word": "登记",
+        "pinyin": "dēngjì",
+        "meaning": "registrar"
+      }
+    ],
+    "id": "local-1780225816786-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我觉得也只能这样了。中国恐怕是不会通过这个法律的。",
+    "pinyin": "Wǒ juéde yě zhǐnéng zhèyàng le. Zhōngguó kǒngpà shì búhuì tōngguò zhège fǎlǜ de.",
+    "translation": "A: Acho que só podemos fazer assim. Acho que a China não aprovará essa lei.",
+    "tokens": [
+      "我",
+      "觉得",
+      "也",
+      "只能",
+      "这样",
+      "了",
+      "。",
+      "中国",
+      "恐怕",
+      "是",
+      "不会",
+      "通过",
+      "这个",
+      "法律",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar, sentir"
+      },
+      {
+        "id": 2,
+        "word": "只能",
+        "pinyin": "zhǐnéng",
+        "meaning": "só pode, apenas pode"
+      },
+      {
+        "id": 3,
+        "word": "这样",
+        "pinyin": "zhèyàng",
+        "meaning": "assim, desse jeito"
+      },
+      {
+        "id": 4,
+        "word": "恐怕",
+        "pinyin": "kǒngpà",
+        "meaning": "temo que, acho que não"
+      },
+      {
+        "id": 5,
+        "word": "通过",
+        "pinyin": "tōngguò",
+        "meaning": "aprovar, passar"
+      },
+      {
+        "id": 6,
+        "word": "法律",
+        "pinyin": "fǎlǜ",
+        "meaning": "lei, legislação"
+      }
+    ],
+    "id": "local-1780225816786-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 毕竟我们的传统观念里还是认为异性才能结婚。不过我还是希望我们的社会可以更宽容、更多元。",
+    "pinyin": "Bìjìng wǒmen de chuántǒngguānniàn lǐ háishì rènwéi yìxìng cáinéng jiéhūn. Bùguò wǒ háishì xīwàng wǒmen de shèhuì kěyǐ gèng kuānróng, gèng duōyuán.",
+    "translation": "B: Afinal, em nossa concepção tradicional, ainda se acredita que apenas homens e mulheres de sexos opostos podem se casar. No entanto, ainda espero que nossa sociedade possa se tornar mais tolerante e diversa.",
+    "tokens": [
+      "毕竟",
+      "我们",
+      "的",
+      "传统观念",
+      "里",
+      "还是",
+      "认为",
+      "异性",
+      "才能",
+      "结婚",
+      "。",
+      "不过",
+      "我",
+      "还是",
+      "希望",
+      "我们",
+      "的",
+      "社会",
+      "可以",
+      "更",
+      "宽容",
+      "、",
+      "更",
+      "多元",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "毕竟",
+        "pinyin": "bìjìng",
+        "meaning": "afinal, no fim das contas"
+      },
+      {
+        "id": 2,
+        "word": "传统观念",
+        "pinyin": "chuántǒngguānniàn",
+        "meaning": "concepção tradicional"
+      },
+      {
+        "id": 3,
+        "word": "异性",
+        "pinyin": "yìxìng",
+        "meaning": "sexo oposto"
+      },
+      {
+        "id": 4,
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casar-se"
+      },
+      {
+        "id": 5,
+        "word": "宽容",
+        "pinyin": "kuānróng",
+        "meaning": "tolerante"
+      },
+      {
+        "id": 6,
+        "word": "多元",
+        "pinyin": "duōyuán",
+        "meaning": "diverso"
+      }
+    ],
+    "id": "local-1780225816786-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 恐怕在中国这条路还很长啊。",
+    "pinyin": "Kǒngpà zài zhōngguó zhètiáo lù hái hěnzhǎng a.",
+    "translation": "A: Acho que o caminho ainda é longo na China.",
+    "tokens": [
+      "恐怕",
+      "在",
+      "中国",
+      "这条",
+      "路",
+      "还",
+      "很长",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "恐怕",
+        "pinyin": "kǒngpà",
+        "meaning": "temer / acho que"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "这条路",
+        "pinyin": "zhètiáolù",
+        "meaning": "esse caminho / essa estrada"
+      },
+      {
+        "id": 4,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda"
+      },
+      {
+        "id": 5,
+        "word": "很长",
+        "pinyin": "hěnzhǎng",
+        "meaning": "muito longo"
+      }
+    ],
+    "id": "local-1780225816786-10",
+    "language": "Chinês"
+  }
+]

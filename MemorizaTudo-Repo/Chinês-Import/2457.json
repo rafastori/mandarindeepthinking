@@ -1,0 +1,733 @@
+[
+  {
+    "chinese": "A: 今天我们节目很荣幸请到张教授，来给我们谈谈有关美国医疗改革的问题。欢迎你，张教授！",
+    "pinyin": "Jīntiān wǒmen jiémù hěn róngxìng qǐng dào zhāng jiàoshòu, lái gěi wǒmen tántán yǒuguān měiguó yīliáo gǎigé de wèntí. Huānyíng nǐ, zhāng jiàoshòu!",
+    "translation": "A: Hoje, nosso programa tem a honra de receber o Professor Zhang para falar conosco sobre a reforma do sistema de saúde nos Estados Unidos. Bem-vindo, Professor Zhang!",
+    "tokens": [
+      "今天",
+      "我们",
+      "节目",
+      "很",
+      "荣幸",
+      "请",
+      "到",
+      "张",
+      "教授",
+      "，",
+      "来",
+      "给",
+      "我们",
+      "谈谈",
+      "有关",
+      "美国",
+      "医疗",
+      "改革",
+      "的",
+      "问题",
+      "。",
+      "欢迎",
+      "你",
+      "，",
+      "张",
+      "教授",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "节目",
+        "pinyin": "jiémù",
+        "meaning": "programa"
+      },
+      {
+        "id": 2,
+        "word": "荣幸",
+        "pinyin": "róngxìng",
+        "meaning": "honra"
+      },
+      {
+        "id": 3,
+        "word": "教授",
+        "pinyin": "jiàoshòu",
+        "meaning": "professor"
+      },
+      {
+        "id": 4,
+        "word": "医疗改革",
+        "pinyin": "yīliáogǎigé",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 5,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "questão"
+      }
+    ],
+    "id": "local-1780226043582-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 大家好，首先这是一个很复杂的问题。2010年3月23日，美国总统奥巴马在白宫签署了医疗保险改革法案，是奥巴马政府最重要的立法成果之一。被称为美国社会保障体系45年来最大变革，对个人、企业和政府都将产生深远的影响。",
+    "pinyin": "Dàjiā hǎo, shǒuxiān zhèshì yígè hěn fùzá de wèntí. 2010 Nián 3 yuè 23 rì, měiguó zǒngtǒng àobāmǎ zài báigōng qiānshǔ le yīliáobǎoxiǎn gǎigé fǎàn, shì àobāmǎ zhèngfǔ zuì zhòngyào de lìfǎ chéngguǒ zhīyī. Bèi chēngwéi měiguó shèhuìbǎozhàng tǐxì 45 niánlái zuìdà biàngé, duì gèrén, qǐyè hé zhèngfǔ dōu jiāng chǎnshēng shēnyuǎn de yǐngxiǎng.",
+    "translation": "B: Olá a todos. Primeiro, esta é uma questão bastante complexa. Em 23 de março de 2010, o presidente dos Estados Unidos, Barack Obama, assinou na Casa Branca a lei de reforma do seguro de saúde, que é um dos maiores conquistas legislativas do governo Obama. Conhecida como a maior mudança no sistema de proteção social dos EUA em 45 anos, ela terá um impacto profundo sobre indivíduos, empresas e o governo.",
+    "tokens": [
+      "大家",
+      "好",
+      "，",
+      "首先",
+      "这是",
+      "一个",
+      "很",
+      "复杂",
+      "的",
+      "问题",
+      "。",
+      "2010",
+      "年",
+      "3",
+      "月",
+      "23",
+      "日",
+      "，",
+      "美国",
+      "总统",
+      "奥巴马",
+      "在",
+      "白宫",
+      "签署",
+      "了",
+      "医疗保险",
+      "改革",
+      "法案",
+      "，",
+      "是",
+      "奥巴马",
+      "政府",
+      "最",
+      "重要",
+      "的",
+      "立法",
+      "成果",
+      "之一",
+      "。",
+      "被",
+      "称为",
+      "美国",
+      "社会保障",
+      "体系",
+      "45",
+      "年来",
+      "最大",
+      "变革",
+      "，",
+      "对",
+      "个人",
+      "、",
+      "企业",
+      "和",
+      "政府",
+      "都",
+      "将",
+      "产生",
+      "深远",
+      "的",
+      "影响",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "复杂",
+        "pinyin": "fùzá",
+        "meaning": "complexo"
+      },
+      {
+        "id": 2,
+        "word": "医疗保险",
+        "pinyin": "yīliáobǎoxiǎn",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 3,
+        "word": "改革",
+        "pinyin": "gǎigé",
+        "meaning": "reforma"
+      },
+      {
+        "id": 4,
+        "word": "法案",
+        "pinyin": "fǎàn",
+        "meaning": "projeto de lei / lei"
+      },
+      {
+        "id": 5,
+        "word": "社会保障",
+        "pinyin": "shèhuìbǎozhàng",
+        "meaning": "proteção social"
+      },
+      {
+        "id": 6,
+        "word": "变革",
+        "pinyin": "biàngé",
+        "meaning": "mudança / transformação"
+      },
+      {
+        "id": 7,
+        "word": "深远",
+        "pinyin": "shēnyuǎn",
+        "meaning": "profundo"
+      }
+    ],
+    "id": "local-1780226043582-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 奥巴马医改法案的主要目标是什么呢？",
+    "pinyin": "Àobāmǎ yīgǎi fǎàn de zhǔyào mùbiāo shì shénme ne?",
+    "translation": "A: Qual é o principal objetivo da Lei de Reforma da Saúde de Obama?",
+    "tokens": [
+      "奥巴马",
+      "医改",
+      "法案",
+      "的",
+      "主要",
+      "目标",
+      "是",
+      "什么",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "奥巴马",
+        "pinyin": "àobāmǎ",
+        "meaning": "Obama"
+      },
+      {
+        "id": 2,
+        "word": "医改",
+        "pinyin": "yīgǎi",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 3,
+        "word": "法案",
+        "pinyin": "fǎàn",
+        "meaning": "projeto de lei"
+      },
+      {
+        "id": 4,
+        "word": "主要",
+        "pinyin": "zhǔyào",
+        "meaning": "principal"
+      },
+      {
+        "id": 5,
+        "word": "目标",
+        "pinyin": "mùbiāo",
+        "meaning": "objetivo"
+      }
+    ],
+    "id": "local-1780226043582-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 第一，给已有医保的人提供更多安全保障。第二，给没有医保的人提供“负担得起”的医保。第三，控制不断增长的医疗费用。",
+    "pinyin": "Dìyī, gěi yǐyǒu yībǎo de rén tígōng gèng duō ānquán bǎozhàng. Dìèr, gěi méiyǒu yībǎo de rén tígōng\" fùdāndéqǐ\" de yībǎo. Dìsān, kòngzhì bùduàn zēngzhǎng de yīliáo fèiyòng.",
+    "translation": "B: Primeiro, oferecer mais segurança aos que já possuem seguro saúde. Segundo, fornecer um seguro saúde \"acessível\" aos que não têm. Terceiro, controlar os custos médicos em constante aumento.",
+    "tokens": [
+      "第一",
+      "，",
+      "给",
+      "已有",
+      "医保",
+      "的",
+      "人",
+      "提供",
+      "更",
+      "多",
+      "安全",
+      "保障",
+      "。",
+      "第二",
+      "，",
+      "给",
+      "没有",
+      "医保",
+      "的",
+      "人",
+      "提供",
+      "“",
+      "负担得起",
+      "”",
+      "的",
+      "医保",
+      "。",
+      "第三",
+      "，",
+      "控制",
+      "不断",
+      "增长",
+      "的",
+      "医疗",
+      "费用",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "第一",
+        "pinyin": "dìyī",
+        "meaning": "primeiro"
+      },
+      {
+        "id": 2,
+        "word": "医保",
+        "pinyin": "yībǎo",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "安全保障",
+        "pinyin": "ānquánbǎozhàng",
+        "meaning": "segurança"
+      },
+      {
+        "id": 4,
+        "word": "负担得起",
+        "pinyin": "fùdāndéqǐ",
+        "meaning": "acessível / suportável"
+      },
+      {
+        "id": 5,
+        "word": "控制",
+        "pinyin": "kòngzhì",
+        "meaning": "controlar"
+      },
+      {
+        "id": 6,
+        "word": "医疗费用",
+        "pinyin": "yīliáofèiyòng",
+        "meaning": "custos médicos"
+      }
+    ],
+    "id": "local-1780226043582-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 听起来挺不错的。据我所知，医疗改革一直是美国民众的焦点，也是一个历史性的问题。但是奥巴马的法案其实并没有得到大力的支持，而是引起了许多争议，是吗？",
+    "pinyin": "Tīng qǐlái tǐngbùcuò de. Jùwǒsuǒzhī, yīliáo gǎigé yìzhí shì měiguó mínzhòng de jiāodiǎn, yě shì yígè lìshǐxìng de wèntí. Dànshì àobāmǎ de fǎàn qíshí bìng méiyǒu dédào dàlì de zhīchí, érshì yǐnqǐ le xǔduō zhēngyì, shì ma?",
+    "translation": "A: Parece bastante bom. Pelo que sei, a reforma da saúde tem sido o foco da população americana e uma questão histórica. No entanto, o projeto de lei de Obama na verdade não recebeu um forte apoio, mas sim causou muitas controvérsias, não é?",
+    "tokens": [
+      "听",
+      "起来",
+      "挺不错",
+      "的",
+      "。",
+      "据我所知",
+      "，",
+      "医疗",
+      "改革",
+      "一直",
+      "是",
+      "美国",
+      "民众",
+      "的",
+      "焦点",
+      "，",
+      "也",
+      "是",
+      "一个",
+      "历史性",
+      "的",
+      "问题",
+      "。",
+      "但是",
+      "奥巴马",
+      "的",
+      "法案",
+      "其实",
+      "并",
+      "没有",
+      "得到",
+      "大力",
+      "的",
+      "支持",
+      "，",
+      "而是",
+      "引起",
+      "了",
+      "许多",
+      "争议",
+      "，",
+      "是",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "医疗改革",
+        "pinyin": "yīliáogǎigé",
+        "meaning": "reforma da saúde"
+      },
+      {
+        "id": 2,
+        "word": "焦点",
+        "pinyin": "jiāodiǎn",
+        "meaning": "foco / ponto central"
+      },
+      {
+        "id": 3,
+        "word": "历史性",
+        "pinyin": "lìshǐxìng",
+        "meaning": "histórico"
+      },
+      {
+        "id": 4,
+        "word": "法案",
+        "pinyin": "fǎàn",
+        "meaning": "projeto de lei"
+      },
+      {
+        "id": 5,
+        "word": "支持",
+        "pinyin": "zhīchí",
+        "meaning": "apoio"
+      },
+      {
+        "id": 6,
+        "word": "争议",
+        "pinyin": "zhēngyì",
+        "meaning": "controvérsia"
+      }
+    ],
+    "id": "local-1780226043582-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 没错，目前据统计大约还有4600万人没有医疗保险。而医改也需要投入大量资金。因此谁来为这次庞大的医改买单成为了核心问题。",
+    "pinyin": "Méicuò, mùqián jùtǒngjì dàyuē háiyǒu 4600 wànrén méiyǒu yīliáobǎoxiǎn. Ér yīgǎi yě xūyào tóurù dàliàng zījīn. Yīncǐ shuí lái wèi zhècì pángdà de yīgǎi mǎidān chéngwéi le héxīn wèntí.",
+    "translation": "B: Isso mesmo. Atualmente, estima-se que ainda haja cerca de 46 milhões de pessoas sem seguro de saúde. Além disso, a reforma do sistema de saúde exige um grande investimento financeiro. Portanto, quem vai pagar por essa ampla reforma tornou-se a questão central.",
+    "tokens": [
+      "没错",
+      "，",
+      "目前",
+      "据统计",
+      "大约",
+      "还有",
+      "4600",
+      "万人",
+      "没有",
+      "医疗保险",
+      "。",
+      "而",
+      "医改",
+      "也",
+      "需要",
+      "投入",
+      "大量",
+      "资金",
+      "。",
+      "因此",
+      "谁",
+      "来",
+      "为",
+      "这次",
+      "庞大",
+      "的",
+      "医改",
+      "买单",
+      "成为",
+      "了",
+      "核心",
+      "问题",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没错",
+        "pinyin": "méicuò",
+        "meaning": "isso mesmo / correto"
+      },
+      {
+        "id": 2,
+        "word": "据统计",
+        "pinyin": "jùtǒngjì",
+        "meaning": "segundo estatísticas"
+      },
+      {
+        "id": 3,
+        "word": "医疗保险",
+        "pinyin": "yīliáobǎoxiǎn",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 4,
+        "word": "医改",
+        "pinyin": "yīgǎi",
+        "meaning": "reforma do sistema de saúde"
+      },
+      {
+        "id": 5,
+        "word": "投入",
+        "pinyin": "tóurù",
+        "meaning": "investir / aplicar"
+      },
+      {
+        "id": 6,
+        "word": "资金",
+        "pinyin": "zījīn",
+        "meaning": "fundos / capital"
+      },
+      {
+        "id": 7,
+        "word": "核心问题",
+        "pinyin": "héxīnwèntí",
+        "meaning": "questão central"
+      }
+    ],
+    "id": "local-1780226043582-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那面对反对派，奥巴马的态度是如何的呢？",
+    "pinyin": "Nà miànduì fǎnduìpài, àobāmǎ de tàidù shì rúhé de ne?",
+    "translation": "A: Então, qual foi a atitude de Obama em relação à oposição?",
+    "tokens": [
+      "那",
+      "面对",
+      "反对派",
+      "，",
+      "奥巴马",
+      "的",
+      "态度",
+      "是",
+      "如何",
+      "的",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "反对派",
+        "pinyin": "fǎnduìpài",
+        "meaning": "oposição"
+      },
+      {
+        "id": 2,
+        "word": "奥巴马",
+        "pinyin": "àobāmǎ",
+        "meaning": "Obama"
+      },
+      {
+        "id": 3,
+        "word": "态度",
+        "pinyin": "tàidù",
+        "meaning": "atitude"
+      },
+      {
+        "id": 4,
+        "word": "如何",
+        "pinyin": "rúhé",
+        "meaning": "como / de que maneira"
+      },
+      {
+        "id": 5,
+        "word": "面对",
+        "pinyin": "miànduì",
+        "meaning": "enfrentar / lidar com"
+      }
+    ],
+    "id": "local-1780226043582-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 奥巴马坚定地指出，不能因政治上的勾心斗角而牺牲美国百姓的民生。同时他也澄清，不会增加纳税人已经难以承受的经济重负，而是会通过减少现有医保体系中的资金浪费和滥用来筹集资金。",
+    "pinyin": "Àobāmǎ jiāndìng dì zhǐchū, bùnéng yīn zhèngzhì shàng de gōuxīndòujiǎo ér xīshēng měiguó bǎixìng de mínshēng. Tóngshí tā yě chéngqīng, búhuì zēngjiā nàshuìrén yǐjīng nányǐchéngshòu de jīngjì zhòngfù, érshì huì tōngguò jiǎnshǎo xiànyǒu yībǎo tǐxì zhōng de zījīn làngfèi hé lànyòng lái chóujízījīn.",
+    "translation": "B: Obama enfatizou firmemente que não se deve sacrificar o bem-estar da população americana em prol de disputas políticas. Ao mesmo tempo, ele esclareceu que não aumentará o fardo econômico já difícil de suportar pelos contribuintes, mas sim arrecadará fundos reduzindo o desperdício e o abuso de recursos no sistema de saúde existente.",
+    "tokens": [
+      "奥巴马",
+      "坚定",
+      "地",
+      "指出",
+      "，",
+      "不能",
+      "因",
+      "政治",
+      "上",
+      "的",
+      "勾心斗角",
+      "而",
+      "牺牲",
+      "美国",
+      "百姓",
+      "的",
+      "民生",
+      "。",
+      "同时",
+      "他",
+      "也",
+      "澄清",
+      "，",
+      "不会",
+      "增加",
+      "纳税人",
+      "已经",
+      "难以承受",
+      "的",
+      "经济",
+      "重负",
+      "，",
+      "而是",
+      "会",
+      "通过",
+      "减少",
+      "现有",
+      "医保",
+      "体系",
+      "中",
+      "的",
+      "资金",
+      "浪费",
+      "和",
+      "滥用",
+      "来",
+      "筹集资金",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "奥巴马",
+        "pinyin": "àobāmǎ",
+        "meaning": "Obama"
+      },
+      {
+        "id": 2,
+        "word": "坚定地",
+        "pinyin": "jiāndìngdì",
+        "meaning": "firmemente"
+      },
+      {
+        "id": 3,
+        "word": "勾心斗角",
+        "pinyin": "gōuxīndòujiǎo",
+        "meaning": "disputas políticas / intrigas"
+      },
+      {
+        "id": 4,
+        "word": "民生",
+        "pinyin": "mínshēng",
+        "meaning": "bem-estar da população"
+      },
+      {
+        "id": 5,
+        "word": "澄清",
+        "pinyin": "chéngqīng",
+        "meaning": "esclarecer"
+      },
+      {
+        "id": 6,
+        "word": "纳税人",
+        "pinyin": "nàshuìrén",
+        "meaning": "contribuintes"
+      },
+      {
+        "id": 7,
+        "word": "医保体系",
+        "pinyin": "yībǎotǐxì",
+        "meaning": "sistema de saúde / seguro médico"
+      },
+      {
+        "id": 8,
+        "word": "浪费",
+        "pinyin": "làngfèi",
+        "meaning": "desperdício"
+      }
+    ],
+    "id": "local-1780226043582-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 很有魄力啊，正如奥巴马自己所说：“我不是提出这一问题的第一位总统，但我决定要成为最后一位总统！”",
+    "pinyin": "Hěn yǒu pòlì a, zhèngrú àobāmǎ zìjǐ suǒshuō:\" wǒ búshì tíchū zhèyī wèntí de dìyīwèi zǒngtǒng, dàn wǒ juédìng yào chéngwéi zuìhòu yīwèi zǒngtǒng!\"",
+    "translation": "A: Que atitude corajosa! Como o próprio Obama disse: \"Não sou o primeiro presidente a levantar essa questão, mas decido ser o último!\"",
+    "tokens": [
+      "很",
+      "有",
+      "魄力",
+      "啊",
+      "，",
+      "正如",
+      "奥巴马",
+      "自己",
+      "所说",
+      "：",
+      "“",
+      "我",
+      "不是",
+      "提出",
+      "这一",
+      "问题",
+      "的",
+      "第一位",
+      "总统",
+      "，",
+      "但",
+      "我",
+      "决定",
+      "要",
+      "成为",
+      "最后",
+      "一位",
+      "总统",
+      "！",
+      "”"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "很有魄力",
+        "pinyin": "hěnyǒupòlì",
+        "meaning": "ter atitude corajosa / ser determinado"
+      },
+      {
+        "id": 2,
+        "word": "正如",
+        "pinyin": "zhèngrú",
+        "meaning": "assim como / conforme"
+      },
+      {
+        "id": 3,
+        "word": "自己",
+        "pinyin": "zìjǐ",
+        "meaning": "próprio / si mesmo"
+      },
+      {
+        "id": 4,
+        "word": "提出",
+        "pinyin": "tíchū",
+        "meaning": "levantar / propor"
+      },
+      {
+        "id": 5,
+        "word": "决定",
+        "pinyin": "juédìng",
+        "meaning": "decidir"
+      },
+      {
+        "id": 6,
+        "word": "成为",
+        "pinyin": "chéngwéi",
+        "meaning": "tornar-se / ser"
+      }
+    ],
+    "id": "local-1780226043582-8",
+    "language": "Chinês"
+  }
+]

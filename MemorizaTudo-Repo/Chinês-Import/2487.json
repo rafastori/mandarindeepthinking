@@ -1,0 +1,773 @@
+[
+  {
+    "chinese": "A: 我想辞职了。",
+    "pinyin": "Wǒ xiǎng cízhí le.",
+    "translation": "A: Quero pedir demissão.",
+    "tokens": [
+      "我",
+      "想",
+      "辞职",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer, desejar"
+      },
+      {
+        "id": 2,
+        "word": "辞职",
+        "pinyin": "cízhí",
+        "meaning": "pedir demissão, renunciar"
+      },
+      {
+        "id": 3,
+        "word": "了",
+        "pinyin": "le",
+        "meaning": "indica mudança de estado ou conclusão"
+      }
+    ],
+    "id": "local-1780226768384-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 什么？怎么突然要辞职？",
+    "pinyin": "Shénme? Zěnme tūrán yào cízhí?",
+    "translation": "B: O quê? Por que você quer demitir-se de repente?",
+    "tokens": [
+      "什么",
+      "？",
+      "怎么",
+      "突然",
+      "要",
+      "辞职",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o quê"
+      },
+      {
+        "id": 2,
+        "word": "突然",
+        "pinyin": "tūrán",
+        "meaning": "de repente"
+      },
+      {
+        "id": 3,
+        "word": "辞职",
+        "pinyin": "cízhí",
+        "meaning": "demitir-se"
+      }
+    ],
+    "id": "local-1780226768384-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哎，月薪那么低。再说，工作环境又不好，每天做的还都是一些鸡毛蒜皮的小事，一点成就感也没有。这离我的预期差距也太大了。",
+    "pinyin": "Āi, yuèxīn nàme dī. Zàishuō, gōngzuò huánjìng yòu bùhǎo, měitiān zuò de hái dōu shì yīxiē jīmáosuànpí de xiǎoshì, yìdiǎn chéngjiùgǎn yě méiyǒu. Zhèlí wǒ de yùqī chājù yě tàidà le.",
+    "translation": "A: Ai, o salário mensal é tão baixo. Além disso, o ambiente de trabalho não é bom, e todo dia eu só faço aquelas pequenas coisas insignificantes, sem nenhuma sensação de realização. Isso está muito longe das minhas expectativas.",
+    "tokens": [
+      "哎",
+      "，",
+      "月薪",
+      "那么",
+      "低",
+      "。",
+      "再说",
+      "，",
+      "工作",
+      "环境",
+      "又",
+      "不好",
+      "，",
+      "每天",
+      "做",
+      "的",
+      "还",
+      "都",
+      "是",
+      "一些",
+      "鸡毛蒜皮",
+      "的",
+      "小事",
+      "，",
+      "一点",
+      "成就感",
+      "也",
+      "没有",
+      "。",
+      "这离",
+      "我",
+      "的",
+      "预期",
+      "差距",
+      "也",
+      "太大",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "月薪",
+        "pinyin": "yuèxīn",
+        "meaning": "salário mensal"
+      },
+      {
+        "id": 2,
+        "word": "再说",
+        "pinyin": "zàishuō",
+        "meaning": "além disso / para mais"
+      },
+      {
+        "id": 3,
+        "word": "工作环境",
+        "pinyin": "gōngzuòhuánjìng",
+        "meaning": "ambiente de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "鸡毛蒜皮",
+        "pinyin": "jīmáosuànpí",
+        "meaning": "insignificante / trivial"
+      },
+      {
+        "id": 5,
+        "word": "成就感",
+        "pinyin": "chéngjiùgǎn",
+        "meaning": "sensação de realização"
+      },
+      {
+        "id": 6,
+        "word": "预期",
+        "pinyin": "yùqī",
+        "meaning": "expectativa"
+      }
+    ],
+    "id": "local-1780226768384-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 现在哪有事事如意的工作呢？你不要“眼高手低”了。",
+    "pinyin": "Xiànzài nǎyǒu shìshìrúyì de gōngzuò ne? Nǐ búyào\" yǎngāoshǒudī\" le.",
+    "translation": "B: Que trabalho é perfeito em tudo hoje em dia? Pare de ter ambições altas mas pouca capacidade prática.",
+    "tokens": [
+      "现在",
+      "哪有",
+      "事事如意",
+      "的",
+      "工作",
+      "呢",
+      "？",
+      "你",
+      "不要",
+      "“",
+      "眼高手低",
+      "”",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "事事如意",
+        "pinyin": "shìshìrúyì",
+        "meaning": "tudo correr como desejado"
+      },
+      {
+        "id": 2,
+        "word": "眼高手低",
+        "pinyin": "yǎngāoshǒudī",
+        "meaning": "ter ambições altas mas pouca capacidade prática"
+      }
+    ],
+    "id": "local-1780226768384-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 关键是我觉得自我价值没有得到体现，而且现在身边的同事都是“关系户”，也不知道猴年马月才能轮到我升职呢。",
+    "pinyin": "Guānjiàn shì wǒ juéde zìwǒ jiàzhí méiyǒu dédào tǐxiàn, érqiě xiànzài shēnbiān de tóngshì dōu shì\" guānxìhù\", yě bù zhīdào hóuniánmǎyuè cáinéng lúndào wǒ shēngzhí ne.",
+    "translation": "A: O ponto principal é que sinto que meu valor pessoal não está sendo reconhecido, e além disso, todos os colegas ao meu redor são 'contratados por indicação', então não sei em que ano ou mês terei a chance de ser promovido.",
+    "tokens": [
+      "关键",
+      "是",
+      "我",
+      "觉得",
+      "自我",
+      "价值",
+      "没有",
+      "得到",
+      "体现",
+      "，",
+      "而且",
+      "现在",
+      "身边",
+      "的",
+      "同事",
+      "都",
+      "是",
+      "“",
+      "关系户",
+      "”",
+      "，",
+      "也",
+      "不",
+      "知道",
+      "猴年马月",
+      "才能",
+      "轮到",
+      "我",
+      "升职",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "关键",
+        "pinyin": "guānjiàn",
+        "meaning": "ponto crucial"
+      },
+      {
+        "id": 2,
+        "word": "自我价值",
+        "pinyin": "zìwǒjiàzhí",
+        "meaning": "valor pessoal"
+      },
+      {
+        "id": 3,
+        "word": "体现",
+        "pinyin": "tǐxiàn",
+        "meaning": "refletir/demonstrar"
+      },
+      {
+        "id": 4,
+        "word": "关系户",
+        "pinyin": "guānxìhù",
+        "meaning": "pessoa com conexões/indicação"
+      },
+      {
+        "id": 5,
+        "word": "猴年马月",
+        "pinyin": "hóuniánmǎyuè",
+        "meaning": "data incerta/longe"
+      },
+      {
+        "id": 6,
+        "word": "升职",
+        "pinyin": "shēngzhí",
+        "meaning": "promoção"
+      }
+    ],
+    "id": "local-1780226768384-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好吧，那你想好要换什么样的工作了吗？",
+    "pinyin": "Hǎo ba, nà nǐ xiǎng hǎo yào huàn shénmeyàng de gōngzuò le ma?",
+    "translation": "B: Tudo bem, então você já decidiu que tipo de trabalho quer mudar para?",
+    "tokens": [
+      "好",
+      "吧",
+      "，",
+      "那",
+      "你",
+      "想",
+      "好",
+      "要",
+      "换",
+      "什么样",
+      "的",
+      "工作",
+      "了",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好吧",
+        "pinyin": "hǎoba",
+        "meaning": "tudo bem / ok"
+      },
+      {
+        "id": 2,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 3,
+        "word": "想好",
+        "pinyin": "xiǎnghǎo",
+        "meaning": "pensar bem / decidir"
+      },
+      {
+        "id": 4,
+        "word": "换",
+        "pinyin": "huàn",
+        "meaning": "trocar / mudar"
+      },
+      {
+        "id": 5,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual / que tipo de"
+      },
+      {
+        "id": 6,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1780226768384-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你不是在猎头公司里面做吗？人脉肯定比我广，推荐一下？你知道的，我大学专业学的是广告设计，阴差阳错才成了编辑。你能帮我物色一些广告公司吗？",
+    "pinyin": "Nǐ búshì zài liètóugōngsī lǐmiàn zuò ma? Rén mài kěndìng bǐ wǒ guǎng, tuījiàn yīxià? Nǐ zhīdào de, wǒ dàxué zhuānyè xué de shì guǎnggàoshèjì, yīnchāyángcuò cái chéng le biānjí. Nǐ néng bāng wǒ wùsè yīxiē guǎnggàogōngsī ma?",
+    "translation": "A: Você não trabalha em uma agência de recrutamento? Seu networking deve ser muito mais amplo que o meu, pode me recomendar algo? Como você sabe, meu curso de graduação foi em design publicitário, acabei virando editor por uma coincidência. Você pode me ajudar a procurar algumas empresas de publicidade?",
+    "tokens": [
+      "你",
+      "不是",
+      "在",
+      "猎头公司",
+      "里面",
+      "做",
+      "吗",
+      "？",
+      "人",
+      "脉",
+      "肯定",
+      "比",
+      "我",
+      "广",
+      "，",
+      "推荐",
+      "一下",
+      "？",
+      "你",
+      "知道",
+      "的",
+      "，",
+      "我",
+      "大学",
+      "专业",
+      "学",
+      "的",
+      "是",
+      "广告设计",
+      "，",
+      "阴差阳错",
+      "才",
+      "成",
+      "了",
+      "编辑",
+      "。",
+      "你",
+      "能",
+      "帮",
+      "我",
+      "物色",
+      "一些",
+      "广告公司",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "猎头公司",
+        "pinyin": "liètóugōngsī",
+        "meaning": "agência de recrutamento/executive search"
+      },
+      {
+        "id": 2,
+        "word": "人脉",
+        "pinyin": "rénmài",
+        "meaning": "networking, contatos"
+      },
+      {
+        "id": 3,
+        "word": "推荐",
+        "pinyin": "tuījiàn",
+        "meaning": "recomendar"
+      },
+      {
+        "id": 4,
+        "word": "广告设计",
+        "pinyin": "guǎnggàoshèjì",
+        "meaning": "design publicitário"
+      },
+      {
+        "id": 5,
+        "word": "阴差阳错",
+        "pinyin": "yīnchāyángcuò",
+        "meaning": "por uma coincidência/acaso"
+      },
+      {
+        "id": 6,
+        "word": "物色",
+        "pinyin": "wùsè",
+        "meaning": "procurar, selecionar"
+      }
+    ],
+    "id": "local-1780226768384-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 有点难。知名的广告公司门槛儿高，没什么名气的广告公司则提供不了你想要的待遇。",
+    "pinyin": "Yǒudiǎn nán. Zhīmíng de guǎnggàogōngsī ménkǎnér gāo, méishénme míngqì de guǎnggàogōngsī zé tígōng bùliǎo nǐ xiǎngyào de dàiyù.",
+    "translation": "B: É um pouco difícil. As agências de publicidade conhecidas têm uma barreira de entrada alta, enquanto as agências sem muito nome não conseguem oferecer o tratamento que você deseja.",
+    "tokens": [
+      "有点",
+      "难",
+      "。",
+      "知名",
+      "的",
+      "广告公司",
+      "门槛儿",
+      "高",
+      "，",
+      "没什么",
+      "名气",
+      "的",
+      "广告公司",
+      "则",
+      "提供",
+      "不了",
+      "你",
+      "想要",
+      "的",
+      "待遇",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有点难",
+        "pinyin": "yǒudiǎnnán",
+        "meaning": "um pouco difícil"
+      },
+      {
+        "id": 2,
+        "word": "知名",
+        "pinyin": "zhīmíng",
+        "meaning": "conhecido, famoso"
+      },
+      {
+        "id": 3,
+        "word": "广告公司",
+        "pinyin": "guǎnggàogōngsī",
+        "meaning": "agência de publicidade"
+      },
+      {
+        "id": 4,
+        "word": "门槛儿",
+        "pinyin": "ménkǎnér",
+        "meaning": "barreira de entrada, critério"
+      },
+      {
+        "id": 5,
+        "word": "名气",
+        "pinyin": "míngqì",
+        "meaning": "reputação, fama"
+      },
+      {
+        "id": 6,
+        "word": "待遇",
+        "pinyin": "dàiyù",
+        "meaning": "tratamento, remuneração, benefícios"
+      }
+    ],
+    "id": "local-1780226768384-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 也是，那你说自己创业怎么样呢？据说广告这个行业门槛儿挺低的，租个房子，买几台电脑就开张了。我手头上正好有十几万可以作为启动资金。",
+    "pinyin": "Yě shì, nà nǐ shuō zìjǐ chuàngyè zěnmeyàng ne? Jùshuō guǎnggào zhège hángyè ménkǎnér tǐng dī de, zūgè fángzi, mǎi jǐtái diànnǎo jiù kāizhāng le. Wǒ shǒutóushàng zhènghǎo yǒu shíjǐwàn kěyǐ zuòwéi qǐdòngzījīn.",
+    "translation": "A: É verdade. Então, o que acha de empreender por conta própria? Dizem que a barreira de entrada para o setor de publicidade é bem baixa: basta alugar um apartamento e comprar alguns computadores para começar. Eu tenho exatamente mais de cem mil yuans disponíveis como capital inicial.",
+    "tokens": [
+      "也",
+      "是",
+      "，",
+      "那",
+      "你",
+      "说",
+      "自己",
+      "创业",
+      "怎么样",
+      "呢",
+      "？",
+      "据说",
+      "广告",
+      "这个",
+      "行业",
+      "门槛儿",
+      "挺",
+      "低",
+      "的",
+      "，",
+      "租个",
+      "房子",
+      "，",
+      "买",
+      "几台",
+      "电脑",
+      "就",
+      "开张",
+      "了",
+      "。",
+      "我",
+      "手头上",
+      "正好",
+      "有",
+      "十几万",
+      "可以",
+      "作为",
+      "启动资金",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "创业",
+        "pinyin": "chuàngyè",
+        "meaning": "empreender"
+      },
+      {
+        "id": 2,
+        "word": "广告",
+        "pinyin": "guǎnggào",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 3,
+        "word": "门槛儿",
+        "pinyin": "ménkǎnér",
+        "meaning": "barreira de entrada"
+      },
+      {
+        "id": 4,
+        "word": "开张",
+        "pinyin": "kāizhāng",
+        "meaning": "abrir (negócio)"
+      },
+      {
+        "id": 5,
+        "word": "启动资金",
+        "pinyin": "qǐdòngzījīn",
+        "meaning": "capital inicial"
+      }
+    ],
+    "id": "local-1780226768384-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 创业倒是个好主意。不过你要先找到合伙人，然后还得想办法拉客户，可不是那么容易的，除了耐心，还要有核心竞争力——创意。",
+    "pinyin": "Chuàngyè dào shì gè hǎo zhǔyì. Bùguò nǐ yào xiān zhǎodào héhuǒrén, ránhòu hái dé xiǎng bànfǎ lākèhù, kěbúshì nàme róngyì de, chúle nàixīn, háiyào yǒu héxīn jìngzhēnglì — — chuàngyì.",
+    "translation": "B: Empreender é realmente uma boa ideia. No entanto, você precisa primeiro encontrar um sócio e depois pensar em como atrair clientes, o que não é tão fácil. Além de paciência, é necessário ter um núcleo competitivo — criatividade.",
+    "tokens": [
+      "创业",
+      "倒",
+      "是",
+      "个",
+      "好",
+      "主意",
+      "。",
+      "不过",
+      "你",
+      "要",
+      "先",
+      "找到",
+      "合伙人",
+      "，",
+      "然后",
+      "还",
+      "得",
+      "想",
+      "办法",
+      "拉客户",
+      "，",
+      "可不是",
+      "那么",
+      "容易",
+      "的",
+      "，",
+      "除了",
+      "耐心",
+      "，",
+      "还要",
+      "有",
+      "核心",
+      "竞争力",
+      "—",
+      "—",
+      "创意",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "创业",
+        "pinyin": "chuàngyè",
+        "meaning": "empreender"
+      },
+      {
+        "id": 2,
+        "word": "合伙人",
+        "pinyin": "héhuǒrén",
+        "meaning": "sócio"
+      },
+      {
+        "id": 3,
+        "word": "拉客户",
+        "pinyin": "lākèhù",
+        "meaning": "atrair clientes"
+      },
+      {
+        "id": 4,
+        "word": "耐心",
+        "pinyin": "nàixīn",
+        "meaning": "paciência"
+      },
+      {
+        "id": 5,
+        "word": "核心竞争力",
+        "pinyin": "héxīnjìngzhēnglì",
+        "meaning": "núcleo competitivo"
+      },
+      {
+        "id": 6,
+        "word": "创意",
+        "pinyin": "chuàngyì",
+        "meaning": "criatividade"
+      }
+    ],
+    "id": "local-1780226768384-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 嗯，我知道的。我准备拉老同学一起做，广告是我真心感兴趣的事，我不会轻易放弃的。",
+    "pinyin": "Ń, wǒ zhīdào de. Wǒ zhǔnbèi lā lǎotóngxué yìqǐ zuò, guǎnggào shì wǒ zhēnxīn gǎnxìngqù de shì, wǒ búhuì qīngyì fàngqì de.",
+    "translation": "A: Sim, eu sei. Estou planejando convidar antigos colegas de classe para trabalhar juntos. Publicidade é algo que me interessa sinceramente, e não vou desistir facilmente.",
+    "tokens": [
+      "嗯",
+      "，",
+      "我",
+      "知道",
+      "的",
+      "。",
+      "我",
+      "准备",
+      "拉",
+      "老同学",
+      "一起",
+      "做",
+      "，",
+      "广告",
+      "是",
+      "我",
+      "真心",
+      "感兴趣",
+      "的",
+      "事",
+      "，",
+      "我",
+      "不会",
+      "轻易",
+      "放弃",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "准备",
+        "pinyin": "zhǔnbèi",
+        "meaning": "preparar-se, planejar"
+      },
+      {
+        "id": 2,
+        "word": "老同学",
+        "pinyin": "lǎotóngxué",
+        "meaning": "antigos colegas de classe"
+      },
+      {
+        "id": 3,
+        "word": "广告",
+        "pinyin": "guǎnggào",
+        "meaning": "publicidade"
+      },
+      {
+        "id": 4,
+        "word": "真心",
+        "pinyin": "zhēnxīn",
+        "meaning": "sinceramente, de coração"
+      },
+      {
+        "id": 5,
+        "word": "感兴趣",
+        "pinyin": "gǎnxìngqù",
+        "meaning": "interessado"
+      },
+      {
+        "id": 6,
+        "word": "轻易",
+        "pinyin": "qīngyì",
+        "meaning": "facilmente, levemente"
+      },
+      {
+        "id": 7,
+        "word": "放弃",
+        "pinyin": "fàngqì",
+        "meaning": "desistir, abandonar"
+      }
+    ],
+    "id": "local-1780226768384-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 嗯，那提前祝你成功！",
+    "pinyin": "Ń, nà tíqián zhùnǐchénggōng!",
+    "translation": "B: Ok, então te desejo sucesso antecipadamente!",
+    "tokens": [
+      "嗯",
+      "，",
+      "那",
+      "提前",
+      "祝你成功",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "提前",
+        "pinyin": "tíqián",
+        "meaning": "antecipadamente"
+      },
+      {
+        "id": 2,
+        "word": "祝",
+        "pinyin": "zhù",
+        "meaning": "desejar"
+      },
+      {
+        "id": 3,
+        "word": "成功",
+        "pinyin": "chénggōng",
+        "meaning": "sucesso"
+      }
+    ],
+    "id": "local-1780226768384-11",
+    "language": "Chinês"
+  }
+]

@@ -1,0 +1,532 @@
+[
+  {
+    "chinese": "A: 李晓的父亲刚住院5天就突然去世了。李晓由于不满意医院的解释，打了医生，导致一位医生左眼失明。我们就这件事采访了医院和病人家属。",
+    "pinyin": "Lǐxiǎo de fùqīn gāng zhùyuàn 5 tiān jiù tūrán qùshì le. Lǐxiǎo yóuyú bù mǎnyì yīyuàn de jiěshì, dǎ le yīshēng, dǎozhì yīwèi yīshēng zuǒyǎn shīmíng. Wǒmen jiù zhèjiàn shì cǎifǎng le yīyuàn hé bìngrén jiāshǔ.",
+    "translation": "A: O pai de Li Xiao foi hospitalizado e faleceu repentinamente após apenas cinco dias. Insatisfeito com a explicação do hospital, Li Xiao agrediu um médico, resultando na perda de visão do olho esquerdo do profissional. Entrevistamos o hospital e a família do paciente sobre este incidente.",
+    "tokens": [
+      "李晓",
+      "的",
+      "父亲",
+      "刚",
+      "住院",
+      "5",
+      "天",
+      "就",
+      "突然",
+      "去世",
+      "了",
+      "。",
+      "李晓",
+      "由于",
+      "不",
+      "满意",
+      "医院",
+      "的",
+      "解释",
+      "，",
+      "打",
+      "了",
+      "医生",
+      "，",
+      "导致",
+      "一位",
+      "医生",
+      "左眼",
+      "失明",
+      "。",
+      "我们",
+      "就",
+      "这件",
+      "事",
+      "采访",
+      "了",
+      "医院",
+      "和",
+      "病人",
+      "家属",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "住院",
+        "pinyin": "zhùyuàn",
+        "meaning": "hospitalizar-se"
+      },
+      {
+        "id": 2,
+        "word": "去世",
+        "pinyin": "qùshì",
+        "meaning": "falecer"
+      },
+      {
+        "id": 3,
+        "word": "不满意",
+        "pinyin": "bùmǎnyì",
+        "meaning": "insatisfeito"
+      },
+      {
+        "id": 4,
+        "word": "解释",
+        "pinyin": "jiěshì",
+        "meaning": "explicação"
+      },
+      {
+        "id": 5,
+        "word": "导致",
+        "pinyin": "dǎozhì",
+        "meaning": "resultar em"
+      },
+      {
+        "id": 6,
+        "word": "失明",
+        "pinyin": "shīmíng",
+        "meaning": "cegueira/perda de visão"
+      },
+      {
+        "id": 7,
+        "word": "采访",
+        "pinyin": "cǎifǎng",
+        "meaning": "entrevistar"
+      }
+    ],
+    "id": "local-1780224900560-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 李晓的父亲年龄大了，又爱喝酒，身体比较差。他突然去世，我们也很难受，但医生已经尽力了。",
+    "pinyin": "Lǐxiǎo de fùqīn niánlíng dà le, yòu ài hējiǔ, shēntǐ bǐjiào chà. Tā tūrán qùshì, wǒmen yě hěn nánshòu, dàn yīshēng yǐjīng jìnlì le.",
+    "translation": "B: O pai do Li Xiao está idoso, gosta de beber e tem uma saúde frágil. Sua morte súbita nos deixou muito tristes, mas os médicos já fizeram o possível.",
+    "tokens": [
+      "李晓",
+      "的",
+      "父亲",
+      "年龄",
+      "大",
+      "了",
+      "，",
+      "又",
+      "爱",
+      "喝酒",
+      "，",
+      "身体",
+      "比较",
+      "差",
+      "。",
+      "他",
+      "突然",
+      "去世",
+      "，",
+      "我们",
+      "也",
+      "很",
+      "难受",
+      "，",
+      "但",
+      "医生",
+      "已经",
+      "尽力",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "年龄",
+        "pinyin": "niánlíng",
+        "meaning": "idade"
+      },
+      {
+        "id": 2,
+        "word": "喝酒",
+        "pinyin": "hējiǔ",
+        "meaning": "beber álcool"
+      },
+      {
+        "id": 3,
+        "word": "身体",
+        "pinyin": "shēntǐ",
+        "meaning": "corpo/saúde"
+      },
+      {
+        "id": 4,
+        "word": "突然",
+        "pinyin": "tūrán",
+        "meaning": "repentinamente"
+      },
+      {
+        "id": 5,
+        "word": "去世",
+        "pinyin": "qùshì",
+        "meaning": "falecer"
+      },
+      {
+        "id": 6,
+        "word": "难受",
+        "pinyin": "nánshòu",
+        "meaning": "sentir-se mal/triste"
+      },
+      {
+        "id": 7,
+        "word": "尽力",
+        "pinyin": "jìnlì",
+        "meaning": "fazer o possível"
+      }
+    ],
+    "id": "local-1780224900560-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 李晓的父亲以前身体一直很好。突然去世，医院没有说清楚原因，这让我们怎么接受。李晓这才打了医生，他也很后悔。",
+    "pinyin": "Lǐxiǎo de fùqīn yǐqián shēntǐ yìzhí hěn hǎo. Tūrán qùshì, yīyuàn méiyǒu shuō qīngchǔ yuányīn, zhè ràng wǒmen zěnme jiēshòu. Lǐxiǎo zhè cái dǎ le yīshēng, tā yě hěn hòuhuǐ.",
+    "translation": "C: O pai de Li Xiao sempre teve boa saúde. Sua morte súbita, sem que o hospital esclarecesse a causa, é difícil de aceitar. Li Xiao acabou agredindo o médico, e ele também se arrepende muito.",
+    "tokens": [
+      "李晓",
+      "的",
+      "父亲",
+      "以前",
+      "身体",
+      "一直",
+      "很",
+      "好",
+      "。",
+      "突然",
+      "去世",
+      "，",
+      "医院",
+      "没有",
+      "说",
+      "清楚",
+      "原因",
+      "，",
+      "这",
+      "让",
+      "我们",
+      "怎么",
+      "接受",
+      "。",
+      "李晓",
+      "这",
+      "才",
+      "打",
+      "了",
+      "医生",
+      "，",
+      "他",
+      "也",
+      "很",
+      "后悔",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "父亲",
+        "pinyin": "fùqīn",
+        "meaning": "pai"
+      },
+      {
+        "id": 2,
+        "word": "身体",
+        "pinyin": "shēntǐ",
+        "meaning": "corpo/saúde"
+      },
+      {
+        "id": 3,
+        "word": "突然",
+        "pinyin": "tūrán",
+        "meaning": "repentinamente"
+      },
+      {
+        "id": 4,
+        "word": "去世",
+        "pinyin": "qùshì",
+        "meaning": "falecer"
+      },
+      {
+        "id": 5,
+        "word": "原因",
+        "pinyin": "yuányīn",
+        "meaning": "causa"
+      },
+      {
+        "id": 6,
+        "word": "接受",
+        "pinyin": "jiēshòu",
+        "meaning": "aceitar"
+      },
+      {
+        "id": 7,
+        "word": "后悔",
+        "pinyin": "hòuhuǐ",
+        "meaning": "se arrepender"
+      }
+    ],
+    "id": "local-1780224900560-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 这样的医患纠纷，已经不是第一次了。我们采访了卫生局局长，他也十分痛心。",
+    "pinyin": "Zhèyàng de yīhuàn jiūfēn, yǐjīng búshì dìyīcì le. Wǒmen cǎifǎng le wèishēngjú júzhǎng, tā yě shífēn tòngxīn.",
+    "translation": "A: Esse tipo de disputa médico-paciente não é a primeira vez que acontece. Entrevistamos o diretor do Bureau de Saúde, e ele também está muito consternado.",
+    "tokens": [
+      "这样",
+      "的",
+      "医患",
+      "纠纷",
+      "，",
+      "已经",
+      "不是",
+      "第一次",
+      "了",
+      "。",
+      "我们",
+      "采访",
+      "了",
+      "卫生局",
+      "局长",
+      "，",
+      "他",
+      "也",
+      "十分",
+      "痛心",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "医患纠纷",
+        "pinyin": "yīhuànjiūfēn",
+        "meaning": "disputa médico-paciente"
+      },
+      {
+        "id": 2,
+        "word": "采访",
+        "pinyin": "cǎifǎng",
+        "meaning": "entrevistar"
+      },
+      {
+        "id": 3,
+        "word": "卫生局局长",
+        "pinyin": "wèishēngjújúzhǎng",
+        "meaning": "diretor do Bureau de Saúde"
+      },
+      {
+        "id": 4,
+        "word": "痛心",
+        "pinyin": "tòngxīn",
+        "meaning": "consternado / muito triste"
+      }
+    ],
+    "id": "local-1780224900560-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "D: 我认为现在医患纠纷最大的问题是医生和病人的沟通不够。一方面，有时医生解释不清病情，或者病人家属不能理解。另一方面，有些病人认为来到医院就一定能康复，对医生的期望太高。所以，医护人员应该尽力医治病人，更要积极有效地跟病人家属沟通。",
+    "pinyin": "Wǒ rènwéi xiànzài yīhuàn jiūfēn zuìdà de wèntí shì yīshēng hé bìngrén de gōutōng bùgòu. Yìfāngmiàn, yǒushí yīshēng jiěshì bùqīng bìngqíng, huòzhě bìngrén jiāshǔ bùnéng lǐjiě. Lìngyìfāngmiàn, yǒuxiē bìngrén rènwéi láidào yīyuàn jiù yídìng néng kāngfù, duì yīshēng de qīwàng tàigāo. Suǒyǐ, yīhùrényuán yīnggāi jìnlì yīzhì bìngrén, gèngyào jījí yǒuxiào dì gēn bìngrén jiāshǔ gōutōng.",
+    "translation": "D: Acho que o maior problema atual nas disputas médico-paciente é a falta de comunicação entre médicos e pacientes. Por um lado, às vezes os médicos não conseguem explicar claramente a condição da doença, ou os familiares dos pacientes não conseguem entender. Por outro lado, alguns pacientes acreditam que, ao chegar ao hospital, certamente se recuperarão, tendo expectativas muito altas dos médicos. Portanto, a equipe médica deve fazer o possível para tratar os pacientes e, mais importante, comunicar-se de forma ativa e eficaz com os familiares dos pacientes.",
+    "tokens": [
+      "我",
+      "认为",
+      "现在",
+      "医患",
+      "纠纷",
+      "最大",
+      "的",
+      "问题",
+      "是",
+      "医生",
+      "和",
+      "病人",
+      "的",
+      "沟通",
+      "不够",
+      "。",
+      "一方面",
+      "，",
+      "有时",
+      "医生",
+      "解释",
+      "不清",
+      "病情",
+      "，",
+      "或者",
+      "病人",
+      "家属",
+      "不能",
+      "理解",
+      "。",
+      "另一方面",
+      "，",
+      "有些",
+      "病人",
+      "认为",
+      "来到",
+      "医院",
+      "就",
+      "一定",
+      "能",
+      "康复",
+      "，",
+      "对",
+      "医生",
+      "的",
+      "期望",
+      "太高",
+      "。",
+      "所以",
+      "，",
+      "医护人员",
+      "应该",
+      "尽力",
+      "医治",
+      "病人",
+      "，",
+      "更要",
+      "积极",
+      "有效",
+      "地",
+      "跟",
+      "病人",
+      "家属",
+      "沟通",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "医患纠纷",
+        "pinyin": "yīhuànjiūfēn",
+        "meaning": "disputas médico-paciente"
+      },
+      {
+        "id": 2,
+        "word": "沟通",
+        "pinyin": "gōutōng",
+        "meaning": "comunicação"
+      },
+      {
+        "id": 3,
+        "word": "病情",
+        "pinyin": "bìngqíng",
+        "meaning": "condição da doença"
+      },
+      {
+        "id": 4,
+        "word": "家属",
+        "pinyin": "jiāshǔ",
+        "meaning": "familiares"
+      },
+      {
+        "id": 5,
+        "word": "康复",
+        "pinyin": "kāngfù",
+        "meaning": "recuperação"
+      },
+      {
+        "id": 6,
+        "word": "期望",
+        "pinyin": "qīwàng",
+        "meaning": "expectativa"
+      },
+      {
+        "id": 7,
+        "word": "医护人员",
+        "pinyin": "yīhùrényuán",
+        "meaning": "equipe médica"
+      }
+    ],
+    "id": "local-1780224900560-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 打医生并不能解决问题。我也希望病人家属以后在这样的事上能冷静一点。如果医生是这么危险的工作，以后还有谁愿意做医生呢。",
+    "pinyin": "Dǎ yīshēng bìng bùnéng jiějuéwèntí. Wǒ yě xīwàng bìngrén jiāshǔ yǐhòu zài zhèyàng de shì shàng néng lěngjìng yìdiǎn. Rúguǒ yīshēng shì zhème wēixiǎn de gōngzuò, yǐhòu háiyǒu shuí yuànyì zuò yīshēng ne.",
+    "translation": "A: Bater em médicos não resolve o problema. Também espero que as famílias dos pacientes possam ser mais calmas em situações assim no futuro. Se o trabalho de médico é tão perigoso, quem mais vai querer ser médico no futuro?",
+    "tokens": [
+      "打",
+      "医生",
+      "并",
+      "不能",
+      "解决问题",
+      "。",
+      "我",
+      "也",
+      "希望",
+      "病人",
+      "家属",
+      "以后",
+      "在",
+      "这样",
+      "的",
+      "事",
+      "上",
+      "能",
+      "冷静",
+      "一点",
+      "。",
+      "如果",
+      "医生",
+      "是",
+      "这么",
+      "危险",
+      "的",
+      "工作",
+      "，",
+      "以后",
+      "还有",
+      "谁",
+      "愿意",
+      "做",
+      "医生",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打",
+        "pinyin": "dǎ",
+        "meaning": "bater"
+      },
+      {
+        "id": 2,
+        "word": "医生",
+        "pinyin": "yīshēng",
+        "meaning": "médico"
+      },
+      {
+        "id": 3,
+        "word": "解决",
+        "pinyin": "jiějué",
+        "meaning": "resolver"
+      },
+      {
+        "id": 4,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      },
+      {
+        "id": 5,
+        "word": "病人",
+        "pinyin": "bìngrén",
+        "meaning": "paciente"
+      },
+      {
+        "id": 6,
+        "word": "家属",
+        "pinyin": "jiāshǔ",
+        "meaning": "familiar"
+      },
+      {
+        "id": 7,
+        "word": "冷静",
+        "pinyin": "lěngjìng",
+        "meaning": "calmo/frio"
+      }
+    ],
+    "id": "local-1780224900560-5",
+    "language": "Chinês"
+  }
+]

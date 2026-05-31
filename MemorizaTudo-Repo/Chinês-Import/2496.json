@@ -1,0 +1,757 @@
+[
+  {
+    "chinese": "A: 大家都到齐啦！我来介绍一下，这位是我同事汤姆。他中文超厉害的，已经通过HSK六级了！而且已经有好几年的翻译经验了。",
+    "pinyin": "Dàjiā dōu dào qí la! Wǒlái jièshào yīxià, zhèwèi shì wǒ tóngshì tāngmǔ. Tā zhōngwén chāo lìhài de, yǐjīng tōngguò HSK liùjí le! Érqiě yǐjīng yǒu hǎojǐnián de fānyì jīngyàn le.",
+    "translation": "A: Todos estão presentes! Deixa-me apresentar, este é o meu colega Tom. Ele é muito bom em chinês, já passou no HSK nível 6! E já tem vários anos de experiência em tradução.",
+    "tokens": [
+      "大家",
+      "都",
+      "到",
+      "齐",
+      "啦",
+      "！",
+      "我来",
+      "介绍",
+      "一下",
+      "，",
+      "这位",
+      "是",
+      "我",
+      "同事",
+      "汤姆",
+      "。",
+      "他",
+      "中文",
+      "超",
+      "厉害",
+      "的",
+      "，",
+      "已经",
+      "通过",
+      "HSK",
+      "六级",
+      "了",
+      "！",
+      "而且",
+      "已经",
+      "有",
+      "好几年",
+      "的",
+      "翻译",
+      "经验",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "到齐",
+        "pinyin": "dàoqí",
+        "meaning": "estar todos presentes"
+      },
+      {
+        "id": 2,
+        "word": "介绍",
+        "pinyin": "jièshào",
+        "meaning": "apresentar"
+      },
+      {
+        "id": 3,
+        "word": "同事",
+        "pinyin": "tóngshì",
+        "meaning": "colega de trabalho"
+      },
+      {
+        "id": 4,
+        "word": "厉害",
+        "pinyin": "lìhài",
+        "meaning": "excelente, impressionante"
+      },
+      {
+        "id": 5,
+        "word": "通过",
+        "pinyin": "tōngguò",
+        "meaning": "passar (em exame)"
+      },
+      {
+        "id": 6,
+        "word": "经验",
+        "pinyin": "jīngyàn",
+        "meaning": "experiência"
+      }
+    ],
+    "id": "local-1780227054324-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这么牛啊！快给我们传授传授你的学习秘诀吧！我老记不住生词，这边学完那边就忘了。我都学了三、四年了，现在说一句话还要想半天，生怕自己说错了，或者声调不对，别人会笑话。",
+    "pinyin": "Zhème niú a! Kuài gěi wǒmen chuánshòu chuánshòu nǐ de xuéxí mìjué ba! Wǒ lǎo jìbúzhù shēngcí, zhèbiān xuéwán nàbiān jiù wàng le. Wǒ dōu xué le sān, sìnián le, xiànzài shuō yījù huà háiyào xiǎng bàntiān, shēngpà zìjǐ shuōcuò le, huòzhě shēngdiào bù duì, biérén huì xiàohuà.",
+    "translation": "B: Nossa, que incrível! Por favor, compartilhe seus segredos de estudo conosco. Eu tenho muita dificuldade em memorizar palavras novas; aprendo aqui e esqueço ali. Já estudo há três ou quatro anos, mas ainda preciso pensar muito para dizer uma frase, com medo de cometer erros ou usar os tons errados e ser ridicularizado pelos outros.",
+    "tokens": [
+      "这么",
+      "牛",
+      "啊",
+      "！",
+      "快",
+      "给",
+      "我们",
+      "传授",
+      "传授",
+      "你",
+      "的",
+      "学习",
+      "秘诀",
+      "吧",
+      "！",
+      "我",
+      "老",
+      "记不住",
+      "生词",
+      "，",
+      "这边",
+      "学完",
+      "那边",
+      "就",
+      "忘",
+      "了",
+      "。",
+      "我",
+      "都",
+      "学",
+      "了",
+      "三",
+      "、",
+      "四年",
+      "了",
+      "，",
+      "现在",
+      "说",
+      "一句",
+      "话",
+      "还要",
+      "想",
+      "半天",
+      "，",
+      "生怕",
+      "自己",
+      "说错",
+      "了",
+      "，",
+      "或者",
+      "声调",
+      "不",
+      "对",
+      "，",
+      "别人",
+      "会",
+      "笑话",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这么牛",
+        "pinyin": "zhèmeniú",
+        "meaning": "tão impressionante/incrível"
+      },
+      {
+        "id": 2,
+        "word": "传授",
+        "pinyin": "chuánshòu",
+        "meaning": "transmitir/compartilhar"
+      },
+      {
+        "id": 3,
+        "word": "秘诀",
+        "pinyin": "mìjué",
+        "meaning": "segredo"
+      },
+      {
+        "id": 4,
+        "word": "生词",
+        "pinyin": "shēngcí",
+        "meaning": "palavras novas/vocabulário"
+      },
+      {
+        "id": 5,
+        "word": "声调",
+        "pinyin": "shēngdiào",
+        "meaning": "tom (tonalidade)"
+      },
+      {
+        "id": 6,
+        "word": "笑话",
+        "pinyin": "xiàohuà",
+        "meaning": "rir de/alguém"
+      }
+    ],
+    "id": "local-1780227054324-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 我现在好像遇到学习的一个瓶颈了。这段时间我总觉得我的中文水平一直在原地踏步，不知道怎么突破这个瓶颈。真是郁闷啊！",
+    "pinyin": "Wǒ xiànzài hǎoxiàng yùdào xuéxí de yígè píngjǐng le. Zhè duànshíjiān wǒ zǒng juéde wǒ de zhōngwén shuǐpíng yìzhí zài yuándìtàbù, bù zhīdào zěnme tūpò zhège píngjǐng. Zhēnshì yùmèn a!",
+    "translation": "C: Acho que estou enfrentando um platô nos meus estudos. Ultimamente, sinto que meu nível de chinês está estagnado e não sei como superar esse obstáculo. Estou realmente frustrado!",
+    "tokens": [
+      "我",
+      "现在",
+      "好像",
+      "遇到",
+      "学习",
+      "的",
+      "一个",
+      "瓶颈",
+      "了",
+      "。",
+      "这",
+      "段时间",
+      "我",
+      "总",
+      "觉得",
+      "我",
+      "的",
+      "中文",
+      "水平",
+      "一直",
+      "在",
+      "原地踏步",
+      "，",
+      "不",
+      "知道",
+      "怎么",
+      "突破",
+      "这个",
+      "瓶颈",
+      "。",
+      "真是",
+      "郁闷",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "瓶颈",
+        "pinyin": "píngjǐng",
+        "meaning": "gargalo, platô, obstáculo"
+      },
+      {
+        "id": 2,
+        "word": "原地踏步",
+        "pinyin": "yuándìtàbù",
+        "meaning": "ficar parado, não progredir"
+      },
+      {
+        "id": 3,
+        "word": "突破",
+        "pinyin": "tūpò",
+        "meaning": "superar, romper"
+      },
+      {
+        "id": 4,
+        "word": "郁闷",
+        "pinyin": "yùmèn",
+        "meaning": "frustrado, deprimido, aborrecido"
+      },
+      {
+        "id": 5,
+        "word": "水平",
+        "pinyin": "shuǐpíng",
+        "meaning": "nível, competência"
+      },
+      {
+        "id": 6,
+        "word": "这段时间",
+        "pinyin": "zhèduànshíjiān",
+        "meaning": "este período, ultimamente"
+      }
+    ],
+    "id": "local-1780227054324-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我喜欢写汉字，但是总记不住笔画顺序，而且写得东倒西歪的。愁死我了！",
+    "pinyin": "Wǒ xǐhuān xiě hànzì, dànshì zǒng jìbúzhù bǐhuà shùnxù, érqiě xiědé dōngdǎoxīwāi de. Chóu sǐ wǒ le!",
+    "translation": "A: Eu gosto de escrever caracteres chineses, mas sempre esqueço a ordem dos traços, e ainda escrevo torto. Isso me deixa desesperado!",
+    "tokens": [
+      "我",
+      "喜欢",
+      "写",
+      "汉字",
+      "，",
+      "但是",
+      "总",
+      "记不住",
+      "笔画",
+      "顺序",
+      "，",
+      "而且",
+      "写得",
+      "东倒西歪",
+      "的",
+      "。",
+      "愁",
+      "死",
+      "我",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "汉字",
+        "pinyin": "hànzì",
+        "meaning": "caracteres chineses"
+      },
+      {
+        "id": 2,
+        "word": "笔画顺序",
+        "pinyin": "bǐhuàshùnxù",
+        "meaning": "ordem dos traços"
+      },
+      {
+        "id": 3,
+        "word": "东倒西歪",
+        "pinyin": "dōngdǎoxīwāi",
+        "meaning": "torto, desalinhado"
+      },
+      {
+        "id": 4,
+        "word": "愁死",
+        "pinyin": "chóusǐ",
+        "meaning": "preocupar-se muito, desesperar-se"
+      }
+    ],
+    "id": "local-1780227054324-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "D: 我个人觉得学习语言没有捷径。主要看你愿不愿意在学习上花更多的时间和精力。有的人可能会说我工作实在太忙，挤不出大块儿的时间学习。但其实我们完全可以利用零碎的时间去记生词、写汉字。",
+    "pinyin": "Wǒ gèrén juéde xuéxí yǔyán méiyǒu jiéjìng. Zhǔyào kàn nǐ yuànbùyuànyì zài xuéxí shànghuā gèng duō de shíjiān hé jīnglì. Yǒu de rén kěnéng huì shuō wǒ gōngzuò shízài tàimáng, jǐbùchū dàkuài ér de shíjiān xuéxí. Dàn qíshí wǒmen wánquán kěyǐ lìyòng língsuì de shíjiān qù jì shēngcí, xiě hànzì.",
+    "translation": "D: Pessoalmente, acho que não há atalhos para aprender um idioma. Tudo depende de você estar disposto a dedicar mais tempo e energia aos estudos. Algumas pessoas podem dizer que estão realmente muito ocupadas com o trabalho e não conseguem reservar blocos grandes de tempo para estudar. Na verdade, podemos perfeitamente aproveitar os tempos livres para memorizar novas palavras e escrever caracteres chineses.",
+    "tokens": [
+      "我",
+      "个人",
+      "觉得",
+      "学习",
+      "语言",
+      "没有",
+      "捷径",
+      "。",
+      "主要",
+      "看",
+      "你",
+      "愿不愿意",
+      "在",
+      "学习",
+      "上花",
+      "更",
+      "多",
+      "的",
+      "时间",
+      "和",
+      "精力",
+      "。",
+      "有",
+      "的",
+      "人",
+      "可能",
+      "会",
+      "说",
+      "我",
+      "工作",
+      "实在",
+      "太忙",
+      "，",
+      "挤不出",
+      "大块",
+      "儿",
+      "的",
+      "时间",
+      "学习",
+      "。",
+      "但",
+      "其实",
+      "我们",
+      "完全",
+      "可以",
+      "利用",
+      "零碎",
+      "的",
+      "时间",
+      "去",
+      "记",
+      "生词",
+      "、",
+      "写",
+      "汉字",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "捷径",
+        "pinyin": "jiéjìng",
+        "meaning": "atalho"
+      },
+      {
+        "id": 2,
+        "word": "愿意",
+        "pinyin": "yuànyì",
+        "meaning": "estar disposto"
+      },
+      {
+        "id": 3,
+        "word": "精力",
+        "pinyin": "jīnglì",
+        "meaning": "energia"
+      },
+      {
+        "id": 4,
+        "word": "大块儿",
+        "pinyin": "dàkuàiér",
+        "meaning": "bloco grande"
+      },
+      {
+        "id": 5,
+        "word": "零碎",
+        "pinyin": "língsuì",
+        "meaning": "fragmentado/esparsos"
+      },
+      {
+        "id": 6,
+        "word": "生词",
+        "pinyin": "shēngcí",
+        "meaning": "palavras novas"
+      }
+    ],
+    "id": "local-1780227054324-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 看来还是我们不够坚持，总是拿“没有时间”当借口啊！",
+    "pinyin": "Kànlái háishì wǒmen bùgòu jiānchí, zǒngshì ná\" méiyǒu shíjiān\" dāng jièkǒu a!",
+    "translation": "B: Parece que ainda não somos suficientemente persistentes, sempre usando \"não ter tempo\" como desculpa!",
+    "tokens": [
+      "看来",
+      "还是",
+      "我们",
+      "不够",
+      "坚持",
+      "，",
+      "总是",
+      "拿",
+      "“",
+      "没有",
+      "时间",
+      "”",
+      "当",
+      "借口",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "看来",
+        "pinyin": "kànlái",
+        "meaning": "parece que"
+      },
+      {
+        "id": 2,
+        "word": "坚持",
+        "pinyin": "jiānchí",
+        "meaning": "persistência"
+      },
+      {
+        "id": 3,
+        "word": "总是",
+        "pinyin": "zǒngshì",
+        "meaning": "sempre"
+      },
+      {
+        "id": 4,
+        "word": "时间",
+        "pinyin": "shíjiān",
+        "meaning": "tempo"
+      },
+      {
+        "id": 5,
+        "word": "借口",
+        "pinyin": "jièkǒu",
+        "meaning": "desculpa"
+      }
+    ],
+    "id": "local-1780227054324-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "D: 至于“说”嘛，我们在没有语言环境的时候也可以自言自语，这样非常有助于培养中文思维习惯。学习语言是为了交流，所以一定要大胆地说出来，别怕说错。错得越多，我们就会进步得越快。",
+    "pinyin": "Zhìyú\" shuō\" ma, wǒmen zài méiyǒu yǔyán huánjìng de shíhòu yě kěyǐ zìyánzìyǔ, zhèyàng fēicháng yǒuzhùyú péiyǎng zhōngwén sīwéixíguàn. Xuéxí yǔyán shì wèile jiāoliú, suǒyǐ yídìng yào dàdǎn dìshuō chūlái, biépà shuōcuò. Cuòdé yuè duō, wǒmen jiù huì jìnbù dé yuè kuài.",
+    "translation": "D: Quanto ao ato de 'falar', mesmo sem um ambiente linguístico, podemos conversar conosco mesmos, o que é muito benéfico para cultivar o hábito de pensar em chinês. Aprender uma língua é para se comunicar, por isso é essencial falar em voz alta com coragem, sem medo de errar. Quanto mais erros cometermos, mais rápido progrediremos.",
+    "tokens": [
+      "至于",
+      "“",
+      "说",
+      "”",
+      "嘛",
+      "，",
+      "我们",
+      "在",
+      "没有",
+      "语言",
+      "环境",
+      "的",
+      "时候",
+      "也",
+      "可以",
+      "自言自语",
+      "，",
+      "这样",
+      "非常",
+      "有助于",
+      "培养",
+      "中文",
+      "思维习惯",
+      "。",
+      "学习",
+      "语言",
+      "是",
+      "为了",
+      "交流",
+      "，",
+      "所以",
+      "一定",
+      "要",
+      "大胆",
+      "地说",
+      "出来",
+      "，",
+      "别怕",
+      "说错",
+      "。",
+      "错得",
+      "越",
+      "多",
+      "，",
+      "我们",
+      "就",
+      "会",
+      "进步",
+      "得",
+      "越",
+      "快",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "自言自语",
+        "pinyin": "zìyánzìyǔ",
+        "meaning": "conversar consigo mesmo"
+      },
+      {
+        "id": 2,
+        "word": "有助于",
+        "pinyin": "yǒuzhùyú",
+        "meaning": "ser benéfico para"
+      },
+      {
+        "id": 3,
+        "word": "培养",
+        "pinyin": "péiyǎng",
+        "meaning": "cultivar"
+      },
+      {
+        "id": 4,
+        "word": "思维习惯",
+        "pinyin": "sīwéixíguàn",
+        "meaning": "hábito de pensamento"
+      },
+      {
+        "id": 5,
+        "word": "交流",
+        "pinyin": "jiāoliú",
+        "meaning": "comunicação"
+      },
+      {
+        "id": 6,
+        "word": "大胆",
+        "pinyin": "dàdǎn",
+        "meaning": "ousado/corajoso"
+      },
+      {
+        "id": 7,
+        "word": "进步",
+        "pinyin": "jìnbù",
+        "meaning": "progresso"
+      }
+    ],
+    "id": "local-1780227054324-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 嗯！要大胆说出来！",
+    "pinyin": "Ń! Yào dàdǎn shuō chūlái!",
+    "translation": "C: Sim! Fale com coragem!",
+    "tokens": [
+      "嗯",
+      "！",
+      "要",
+      "大胆",
+      "说",
+      "出来",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大胆",
+        "pinyin": "dàdǎn",
+        "meaning": "ousado, corajoso"
+      },
+      {
+        "id": 2,
+        "word": "说出来",
+        "pinyin": "shuōchūlái",
+        "meaning": "falar em voz alta, expressar"
+      }
+    ],
+    "id": "local-1780227054324-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那我们一起制定个学习计划、相互监督吧！",
+    "pinyin": "Nà wǒmen yìqǐ zhìdìng gè xuéxí jìhuà, xiānghù jiāndū ba!",
+    "translation": "A: Então, vamos criar juntos um plano de estudos e nos supervisionar mutuamente!",
+    "tokens": [
+      "那",
+      "我们",
+      "一起",
+      "制定",
+      "个",
+      "学习",
+      "计划",
+      "、",
+      "相互",
+      "监督",
+      "吧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "一起",
+        "pinyin": "yìqǐ",
+        "meaning": "juntos"
+      },
+      {
+        "id": 2,
+        "word": "制定",
+        "pinyin": "zhìdìng",
+        "meaning": "elaborar / criar"
+      },
+      {
+        "id": 3,
+        "word": "学习",
+        "pinyin": "xuéxí",
+        "meaning": "estudo / aprender"
+      },
+      {
+        "id": 4,
+        "word": "计划",
+        "pinyin": "jìhuà",
+        "meaning": "plano"
+      },
+      {
+        "id": 5,
+        "word": "相互",
+        "pinyin": "xiānghù",
+        "meaning": "mutuamente"
+      },
+      {
+        "id": 6,
+        "word": "监督",
+        "pinyin": "jiāndū",
+        "meaning": "supervisionar / monitorar"
+      }
+    ],
+    "id": "local-1780227054324-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "D: 我有一个律师朋友，他经常一边洗澡一边跟自己说中文呢！俗话说“只要功夫深，铁棒磨成针”嘛。大家一起加油哦！",
+    "pinyin": "Wǒ yǒu yígè lǜshī péngyǒu, tā jīngcháng yībiān xǐzǎo yībiān gēn zìjǐ shuō zhōngwén ne! Súhuàshuō\" zhǐyào gōngfu shēn, tiěbàng móchéng zhēn\" ma. Dàjiā yìqǐ jiāyóu ó!",
+    "translation": "D: Tenho um amigo advogado que frequentemente fala chinês consigo mesmo enquanto toma banho! Como diz o ditado: 'Se você se esforçar o suficiente, pode afiar uma barra de ferro até virar uma agulha'. Vamos todos nos esforçar!",
+    "tokens": [
+      "我",
+      "有",
+      "一个",
+      "律师",
+      "朋友",
+      "，",
+      "他",
+      "经常",
+      "一边",
+      "洗澡",
+      "一边",
+      "跟",
+      "自己",
+      "说",
+      "中文",
+      "呢",
+      "！",
+      "俗话说",
+      "“",
+      "只要",
+      "功夫",
+      "深",
+      "，",
+      "铁棒",
+      "磨成",
+      "针",
+      "”",
+      "嘛",
+      "。",
+      "大家",
+      "一起",
+      "加油",
+      "哦",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "律师",
+        "pinyin": "lǜshī",
+        "meaning": "advogado"
+      },
+      {
+        "id": 2,
+        "word": "洗澡",
+        "pinyin": "xǐzǎo",
+        "meaning": "tomar banho"
+      },
+      {
+        "id": 3,
+        "word": "功夫",
+        "pinyin": "gōngfu",
+        "meaning": "esforço, prática"
+      },
+      {
+        "id": 4,
+        "word": "铁棒",
+        "pinyin": "tiěbàng",
+        "meaning": "barra de ferro"
+      },
+      {
+        "id": 5,
+        "word": "磨成针",
+        "pinyin": "móchéngzhēn",
+        "meaning": "afiar até virar agulha"
+      }
+    ],
+    "id": "local-1780227054324-9",
+    "language": "Chinês"
+  }
+]

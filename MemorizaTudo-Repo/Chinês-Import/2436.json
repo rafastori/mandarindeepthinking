@@ -1,26 +1,25 @@
 [
   {
-    "chinese": "亲爱的，我们快没米和油了。",
-    "pinyin": "qīn'ài de, wǒmen kuài méi mǐ hé yóu le.",
-    "translation": "Querido(a), estamos quase sem arroz e óleo.",
+    "chinese": "A: 老公，我们米和油都快没了。",
+    "pinyin": "Lǎogōng, wǒmen mǐ hé yóu dōu kuàiméile.",
+    "translation": "A: Marido, nosso arroz e óleo estão quase acabando.",
     "tokens": [
-      "亲爱的",
+      "老公",
       "，",
       "我们",
-      "快",
-      "没",
       "米",
       "和",
       "油",
-      "了",
+      "都",
+      "快没了",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "亲爱的",
-        "pinyin": "qīn'ài de",
-        "meaning": "querido(a), meu amor"
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "meaning": "marido"
       },
       {
         "id": 2,
@@ -30,56 +29,52 @@
       },
       {
         "id": 3,
-        "word": "快",
-        "pinyin": "kuài",
-        "meaning": "quase, em breve"
-      },
-      {
-        "id": 4,
-        "word": "没",
-        "pinyin": "méi",
-        "meaning": "não ter, sem"
-      },
-      {
-        "id": 5,
         "word": "米",
         "pinyin": "mǐ",
         "meaning": "arroz"
       },
       {
-        "id": 6,
+        "id": 4,
         "word": "和",
         "pinyin": "hé",
         "meaning": "e"
       },
       {
-        "id": 7,
+        "id": 5,
         "word": "油",
         "pinyin": "yóu",
         "meaning": "óleo"
+      },
+      {
+        "id": 6,
+        "word": "快",
+        "pinyin": "kuài",
+        "meaning": "quase"
+      },
+      {
+        "id": 7,
+        "word": "没了",
+        "pinyin": "méile",
+        "meaning": "acabou"
       }
     ],
-    "id": "local-1772297511749-0",
+    "id": "local-1780201462897-0",
     "language": "Chinês"
   },
   {
-    "chinese": "哦？那我上1号店买。我们还需要买什么？",
-    "pinyin": "ó? nà wǒ shàng yī hào diàn mǎi. wǒmen hái xūyào mǎi shénme?",
-    "translation": "Oh? Então vou comprar na Loja Nº1. O que mais precisamos comprar?",
+    "chinese": "B: 噢，那我在一号店买。还要买什么？",
+    "pinyin": "Ō, nà wǒ zài yīhào diànmǎi. Háiyào mǎi shénme?",
+    "translation": "B: Ah, então vou comprar na Yidian. O mais que preciso comprar?",
     "tokens": [
-      "哦",
-      "？",
+      "噢",
+      "，",
       "那",
       "我",
-      "上",
-      "1",
-      "号",
-      "店",
-      "买",
+      "在",
+      "一号",
+      "店买",
       "。",
-      "我们",
-      "还",
-      "需要",
+      "还要",
       "买",
       "什么",
       "？"
@@ -87,187 +82,127 @@
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ó",
-        "meaning": "oh"
+        "word": "一号店",
+        "pinyin": "yīhàodiàn",
+        "meaning": "Yidian (plataforma de compras online)"
       },
       {
         "id": 2,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, aquele(a)"
-      },
-      {
-        "id": 3,
-        "word": "上",
-        "pinyin": "shàng",
-        "meaning": "ir para, subir"
-      },
-      {
-        "id": 4,
-        "word": "1号店",
-        "pinyin": "yī hào diàn",
-        "meaning": "Loja Nº1 (antiga plataforma de e-commerce chinesa)"
-      },
-      {
-        "id": 5,
         "word": "买",
         "pinyin": "mǎi",
         "meaning": "comprar"
       },
       {
-        "id": 6,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "id": 3,
+        "word": "还要",
+        "pinyin": "háiyào",
+        "meaning": "além disso / ainda"
       },
       {
-        "id": 7,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda, mais"
-      },
-      {
-        "id": 8,
-        "word": "需要",
-        "pinyin": "xūyào",
-        "meaning": "precisar"
-      },
-      {
-        "id": 9,
+        "id": 4,
         "word": "什么",
         "pinyin": "shénme",
-        "meaning": "o que"
+        "meaning": "o que / quê"
       }
     ],
-    "id": "local-1772297511749-1",
+    "id": "local-1780201462897-1",
     "language": "Chinês"
   },
   {
-    "chinese": "我们还需要买些卫生纸。",
-    "pinyin": "wǒmen hái xūyào mǎi xiē wèishēngzhǐ.",
-    "translation": "Nós ainda precisamos comprar um pouco de papel higiênico.",
+    "chinese": "A: 再买点卷筒纸。",
+    "pinyin": "Zài mǎidiǎn juàntǒngzhǐ.",
+    "translation": "A: Compre mais papel higiênico em rolo.",
     "tokens": [
-      "我们",
-      "还",
-      "需要",
-      "买",
-      "些",
-      "卫生纸",
+      "再",
+      "买点",
+      "卷筒纸",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "word": "再",
+        "pinyin": "zài",
+        "meaning": "ainda mais"
       },
       {
         "id": 2,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda, mais"
-      },
-      {
-        "id": 3,
-        "word": "需要",
-        "pinyin": "xūyào",
-        "meaning": "precisar"
-      },
-      {
-        "id": 4,
         "word": "买",
         "pinyin": "mǎi",
         "meaning": "comprar"
       },
       {
-        "id": 5,
-        "word": "些",
-        "pinyin": "xiē",
-        "meaning": "alguns, um pouco"
+        "id": 3,
+        "word": "点",
+        "pinyin": "diǎn",
+        "meaning": "um pouco de"
       },
       {
-        "id": 6,
-        "word": "卫生纸",
-        "pinyin": "wèishēngzhǐ",
-        "meaning": "papel higiênico"
+        "id": 4,
+        "word": "卷筒纸",
+        "pinyin": "juàntǒngzhǐ",
+        "meaning": "papel higiênico em rolo"
       }
     ],
-    "id": "local-1772297511749-2",
+    "id": "local-1780201462897-2",
     "language": "Chinês"
   },
   {
-    "chinese": "我们有洗碗液和洗衣粉吗？",
-    "pinyin": "wǒmen yǒu xǐwǎnyè hé xǐyīfěn ma?",
-    "translation": "Nós temos detergente e sabão em pó?",
+    "chinese": "B: 洗洁精、洗衣粉还有吗？",
+    "pinyin": "Xǐjiéjīng, xǐyīfěn háiyǒu ma?",
+    "translation": "B: Tem detergente, sabão em pó e mais alguma coisa?",
     "tokens": [
-      "我们",
-      "有",
-      "洗碗液",
-      "和",
+      "洗洁精",
+      "、",
       "洗衣粉",
+      "还有",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "word": "洗洁精",
+        "pinyin": "xǐjiéjīng",
+        "meaning": "detergente"
       },
       {
         "id": 2,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 3,
-        "word": "洗碗液",
-        "pinyin": "xǐwǎnyè",
-        "meaning": "detergente de louça"
-      },
-      {
-        "id": 4,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e"
-      },
-      {
-        "id": 5,
         "word": "洗衣粉",
         "pinyin": "xǐyīfěn",
         "meaning": "sabão em pó"
       },
       {
-        "id": 6,
+        "id": 3,
+        "word": "还有",
+        "pinyin": "háiyǒu",
+        "meaning": "e mais / além disso"
+      },
+      {
+        "id": 4,
         "word": "吗",
         "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "(partícula de pergunta)"
       }
     ],
-    "id": "local-1772297511749-3",
+    "id": "local-1780201462897-3",
     "language": "Chinês"
   },
   {
-    "chinese": "有。哦，我们还需要给宝宝买奶粉和尿布。",
-    "pinyin": "yǒu. ó, wǒmen hái xūyào gěi bǎobǎo mǎi nǎifěn hé niàobù.",
-    "translation": "Temos. Ah, nós também precisamos comprar fórmula para bebê e fraldas para o bebê.",
+    "chinese": "A: 有。噢，还要买宝宝的奶粉、尿布。",
+    "pinyin": "Yǒu. Ō, háiyào mǎi bǎobǎo de nǎifěn, niàobù.",
+    "translation": "A: Sim. Ah, também preciso comprar leite em pó e fraldas para o bebê.",
     "tokens": [
       "有",
       "。",
-      "哦",
+      "噢",
       "，",
-      "我们",
-      "还",
-      "需要",
-      "给",
-      "宝宝",
+      "还要",
       "买",
+      "宝宝",
+      "的",
       "奶粉",
-      "和",
+      "、",
       "尿布",
       "。"
     ],
@@ -276,81 +211,51 @@
         "id": 1,
         "word": "有",
         "pinyin": "yǒu",
-        "meaning": "ter"
+        "meaning": "ter / sim"
       },
       {
         "id": 2,
-        "word": "哦",
-        "pinyin": "ó",
-        "meaning": "oh, ah"
+        "word": "还要",
+        "pinyin": "háiyào",
+        "meaning": "ainda preciso"
       },
       {
         "id": 3,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
-      },
-      {
-        "id": 4,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda, mais"
-      },
-      {
-        "id": 5,
-        "word": "需要",
-        "pinyin": "xūyào",
-        "meaning": "precisar"
-      },
-      {
-        "id": 6,
-        "word": "给",
-        "pinyin": "gěi",
-        "meaning": "dar para, para (o bebê)"
-      },
-      {
-        "id": 7,
-        "word": "宝宝",
-        "pinyin": "bǎobǎo",
-        "meaning": "bebê"
-      },
-      {
-        "id": 8,
         "word": "买",
         "pinyin": "mǎi",
         "meaning": "comprar"
       },
       {
-        "id": 9,
+        "id": 4,
+        "word": "宝宝",
+        "pinyin": "bǎobǎo",
+        "meaning": "bebê"
+      },
+      {
+        "id": 5,
         "word": "奶粉",
         "pinyin": "nǎifěn",
-        "meaning": "leite em pó, fórmula para bebê"
+        "meaning": "leite em pó"
       },
       {
-        "id": 10,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e"
-      },
-      {
-        "id": 11,
+        "id": 6,
         "word": "尿布",
         "pinyin": "niàobù",
-        "meaning": "fralda"
+        "meaning": "fraldas"
       }
     ],
-    "id": "local-1772297511749-4",
+    "id": "local-1780201462897-4",
     "language": "Chinês"
   },
   {
-    "chinese": "好的。家里有零食吗？",
-    "pinyin": "hǎo de. jiālǐ yǒu língshí ma?",
-    "translation": "Ok. Tem lanches em casa?",
+    "chinese": "B: 行。家里还有零食吗？",
+    "pinyin": "Xíng. Jiālǐ háiyǒu língshí ma?",
+    "translation": "B: Ok. Ainda tem lanches em casa?",
     "tokens": [
-      "好的",
+      "行",
       "。",
       "家里",
-      "有",
+      "还有",
       "零食",
       "吗",
       "？"
@@ -358,42 +263,36 @@
     "keywords": [
       {
         "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok, bom"
+        "word": "行",
+        "pinyin": "xíng",
+        "meaning": "ok / certo"
       },
       {
         "id": 2,
         "word": "家里",
         "pinyin": "jiālǐ",
-        "meaning": "em casa, dentro de casa"
+        "meaning": "em casa"
       },
       {
         "id": 3,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
+        "word": "还有",
+        "pinyin": "háiyǒu",
+        "meaning": "ainda tem"
       },
       {
         "id": 4,
         "word": "零食",
         "pinyin": "língshí",
-        "meaning": "lanche, petisco"
-      },
-      {
-        "id": 5,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "lanches / petiscos"
       }
     ],
-    "id": "local-1772297511749-5",
+    "id": "local-1780201462897-5",
     "language": "Chinês"
   },
   {
-    "chinese": "有。",
-    "pinyin": "yǒu.",
-    "translation": "Temos.",
+    "chinese": "A: 有。",
+    "pinyin": "Yǒu.",
+    "translation": "A: Sim, tenho.",
     "tokens": [
       "有",
       "。"
@@ -403,18 +302,17 @@
         "id": 1,
         "word": "有",
         "pinyin": "yǒu",
-        "meaning": "ter"
+        "meaning": "ter / existir"
       }
     ],
-    "id": "local-1772297511749-6",
+    "id": "local-1780201462897-6",
     "language": "Chinês"
   },
   {
-    "chinese": "我们有方便面吗？",
-    "pinyin": "wǒmen yǒu fāngbiànmiàn ma?",
-    "translation": "Nós temos macarrão instantâneo?",
+    "chinese": "B: 有方便面吗？",
+    "pinyin": "Yǒu fāngbiànmiàn ma?",
+    "translation": "B: Tem macarrão instantâneo?",
     "tokens": [
-      "我们",
       "有",
       "方便面",
       "吗",
@@ -423,42 +321,35 @@
     "keywords": [
       {
         "id": 1,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter / haver"
       },
       {
         "id": 2,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 3,
         "word": "方便面",
         "pinyin": "fāngbiànmiàn",
         "meaning": "macarrão instantâneo"
       },
       {
-        "id": 4,
+        "id": 3,
         "word": "吗",
         "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "partícula de pergunta"
       }
     ],
-    "id": "local-1772297511749-7",
+    "id": "local-1780201462897-7",
     "language": "Chinês"
   },
   {
-    "chinese": "别买方便面。它们不健康。",
-    "pinyin": "bié mǎi fāngbiànmiàn. tāmen bù jiànkāng.",
-    "translation": "Não compre macarrão instantâneo. Eles não são saudáveis.",
+    "chinese": "A: 不要买方便面，不健康。",
+    "pinyin": "Búyào mǎi fāngbiànmiàn, bù jiànkāng.",
+    "translation": "A: Não compre macarrão instantâneo, não é saudável.",
     "tokens": [
-      "别",
+      "不要",
       "买",
       "方便面",
-      "。",
-      "它们",
+      "，",
       "不",
       "健康",
       "。"
@@ -466,9 +357,9 @@
     "keywords": [
       {
         "id": 1,
-        "word": "别",
-        "pinyin": "bié",
-        "meaning": "não (imperativo), não faça"
+        "word": "不要",
+        "pinyin": "búyào",
+        "meaning": "não deve / não precisa"
       },
       {
         "id": 2,
@@ -484,99 +375,81 @@
       },
       {
         "id": 4,
-        "word": "它们",
-        "pinyin": "tāmen",
-        "meaning": "eles/elas (para coisas/animais)"
-      },
-      {
-        "id": 5,
         "word": "不",
         "pinyin": "bù",
         "meaning": "não"
       },
       {
-        "id": 6,
+        "id": 5,
         "word": "健康",
         "pinyin": "jiànkāng",
-        "meaning": "saudável, saúde"
+        "meaning": "saudável"
       }
     ],
-    "id": "local-1772297511749-8",
+    "id": "local-1780201462897-8",
     "language": "Chinês"
   },
   {
-    "chinese": "好的，好的。嘿，都买好了。明天会送过来。",
-    "pinyin": "hǎo de, hǎo de. hēi, dōu mǎi hǎo le. míngtiān huì sòng guòlái.",
-    "translation": "Ok, ok. Ei, tudo já foi comprado. Será entregue amanhã.",
+    "chinese": "B: 好吧、好吧。哎，都买好了。明天晚上送。",
+    "pinyin": "Hǎo ba, hǎo ba. Āi, dōu mǎihǎo le. Míngtiān wǎnshàng sòng.",
+    "translation": "B: Tudo bem, tudo bem. Ah, já comprei tudo. Entrego amanhã à noite.",
     "tokens": [
-      "好的",
-      "，",
-      "好的",
+      "好",
+      "吧",
+      "、",
+      "好",
+      "吧",
       "。",
-      "嘿",
+      "哎",
       "，",
       "都",
-      "买",
-      "好",
+      "买好",
       "了",
       "。",
       "明天",
-      "会",
+      "晚上",
       "送",
-      "过来",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok, bom"
+        "word": "好吧",
+        "pinyin": "hǎoba",
+        "meaning": "tudo bem / ok"
       },
       {
         "id": 2,
-        "word": "嘿",
-        "pinyin": "hēi",
-        "meaning": "ei"
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
       },
       {
         "id": 3,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "tudo, todos"
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "terminar / pronto"
       },
       {
         "id": 4,
-        "word": "买好",
-        "pinyin": "mǎi hǎo",
-        "meaning": "ter comprado, terminar de comprar"
-      },
-      {
-        "id": 5,
         "word": "明天",
         "pinyin": "míngtiān",
         "meaning": "amanhã"
       },
       {
-        "id": 6,
-        "word": "会",
-        "pinyin": "huì",
-        "meaning": "irá (indicativo de futuro)"
+        "id": 5,
+        "word": "晚上",
+        "pinyin": "wǎnshàng",
+        "meaning": "noite"
       },
       {
-        "id": 7,
+        "id": 6,
         "word": "送",
         "pinyin": "sòng",
-        "meaning": "enviar, entregar"
-      },
-      {
-        "id": 8,
-        "word": "过来",
-        "pinyin": "guòlái",
-        "meaning": "vir (para cá)"
+        "meaning": "entregar / levar"
       }
     ],
-    "id": "local-1772297511749-9",
+    "id": "local-1780201462897-9",
     "language": "Chinês"
   }
 ]

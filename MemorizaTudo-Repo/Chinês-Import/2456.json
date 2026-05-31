@@ -1,139 +1,114 @@
 [
   {
-    "chinese": "小刘，这是你实习的第一天。如果有什么不明白的，尽管问。",
-    "pinyin": "Xiǎo Liú, zhè shì nǐ shíxí de dì yī tiān. Rúguǒ yǒu shénme bù míngbái de, jǐnguǎn wèn.",
-    "translation": "A: Pequeno Liu, este é o seu primeiro dia de estágio. Se houver algo que não entenda, pode perguntar à vontade.",
+    "chinese": "A: 小刘，你第一天来实习，有什么不懂的就问我吧。",
+    "pinyin": "Xiǎo liú, nǐ dìyītiān lái shíxí, yǒu shénme bù dǒng de jiù wèn wǒ ba.",
+    "translation": "A: Xiao Liu, como é o seu primeiro dia de estágio, pode me perguntar sobre qualquer dúvida que tiver.",
     "tokens": [
-      "小刘",
+      "小",
+      "刘",
       "，",
-      "这",
-      "是",
       "你",
-      "实习",
-      "的",
       "第一天",
-      "。",
-      "如果",
+      "来",
+      "实习",
+      "，",
       "有",
       "什么",
       "不",
-      "明白",
+      "懂",
       "的",
-      "，",
-      "尽管",
+      "就",
       "问",
+      "我",
+      "吧",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "小刘",
-        "pinyin": "Xiǎo Liú",
-        "meaning": "Pequeno Liu (forma informal de se referir a alguém com o sobrenome Liu)"
-      },
-      {
-        "id": 2,
         "word": "实习",
         "pinyin": "shíxí",
         "meaning": "estágio"
       },
       {
-        "id": 3,
+        "id": 2,
         "word": "第一天",
-        "pinyin": "dì yī tiān",
+        "pinyin": "dìyītiān",
         "meaning": "primeiro dia"
       },
       {
+        "id": 3,
+        "word": "不懂",
+        "pinyin": "bùdǒng",
+        "meaning": "não entender"
+      },
+      {
         "id": 4,
-        "word": "如果",
-        "pinyin": "rúguǒ",
-        "meaning": "se, caso"
-      },
-      {
-        "id": 5,
-        "word": "不明白",
-        "pinyin": "bù míngbái",
-        "meaning": "não entender, não estar claro"
-      },
-      {
-        "id": 6,
-        "word": "尽管",
-        "pinyin": "jǐnguǎn",
-        "meaning": "à vontade, mesmo que"
-      },
-      {
-        "id": 7,
         "word": "问",
         "pinyin": "wèn",
         "meaning": "perguntar"
       }
     ],
-    "id": "local-1772298740990-0",
+    "id": "local-1780202118724-0",
     "language": "Chinês"
   },
   {
-    "chinese": "好的，李女士。我需要做什么？",
-    "pinyin": "Hǎo de, Lǐ nǚshì. Wǒ xūyào zuò shénme?",
-    "translation": "B: Certo, Sra. Li. O que preciso fazer?",
+    "chinese": "B: 好的，李姐。那我干些什么呢？",
+    "pinyin": "Hǎo de, lǐjiě. Nà wǒ gànxiē shénme ne?",
+    "translation": "B: Certo, irmã Li. Então, o que eu devo fazer?",
     "tokens": [
-      "好的",
+      "好",
+      "的",
       "，",
-      "李女士",
+      "李姐",
       "。",
+      "那",
       "我",
-      "需要",
-      "做",
+      "干些",
       "什么",
+      "呢",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "certo, ok"
+        "pinyin": "hǎode",
+        "meaning": "certo / ok"
       },
       {
         "id": 2,
-        "word": "李女士",
-        "pinyin": "Lǐ nǚshì",
-        "meaning": "Sra. Li"
+        "word": "李姐",
+        "pinyin": "lǐjiě",
+        "meaning": "irmã Li (termo de tratamento para mulher mais velha)"
       },
       {
         "id": 3,
-        "word": "需要",
-        "pinyin": "xūyào",
-        "meaning": "precisar"
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
       },
       {
         "id": 4,
-        "word": "做",
-        "pinyin": "zuò",
-        "meaning": "fazer"
-      },
-      {
-        "id": 5,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê"
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "(partícula interrogativa final)"
       }
     ],
-    "id": "local-1772298740990-1",
+    "id": "local-1780202118724-1",
     "language": "Chinês"
   },
   {
-    "chinese": "这里有一些文件。请把它们整理一下。看看哪些是有用的，哪些上面写着“作废”。",
-    "pinyin": "Zhè lǐ yǒu yīxiē wénjiàn. Qǐng bǎ tāmen zhěnglǐ yīxià. Kàn kàn nǎxiē shì yǒuyòng de, nǎxiē shàngmiàn xiězhe “zuòfèi”.",
-    "translation": "A: Aqui estão alguns documentos. Por favor, organize-os. Veja quais são úteis e quais estão marcados como 'inválidos/cancelados'.",
+    "chinese": "A: 这里有一些文件，你整理一下。看看哪些是有用的，哪些写了“作废”。",
+    "pinyin": "Zhèlǐ yǒu yīxiē wénjiàn, nǐ zhěnglǐ yīxià. Kànkàn nǎxiē shì yǒuyòng de, nǎxiē xiě le\" zuòfèi\".",
+    "translation": "A: Aqui estão alguns documentos, organize-os. Veja quais são úteis e quais estão marcados como \"inválidos\".",
     "tokens": [
       "这里",
       "有",
       "一些",
       "文件",
-      "。",
-      "请",
-      "把",
-      "它们",
+      "，",
+      "你",
       "整理",
       "一下",
       "。",
@@ -144,8 +119,8 @@
       "的",
       "，",
       "哪些",
-      "上面",
-      "写着",
+      "写",
+      "了",
       "“",
       "作废",
       "”",
@@ -154,272 +129,259 @@
     "keywords": [
       {
         "id": 1,
-        "word": "这里",
-        "pinyin": "zhèlǐ",
-        "meaning": "aqui"
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documentos"
       },
       {
         "id": 2,
-        "word": "文件",
-        "pinyin": "wénjiàn",
-        "meaning": "documento(s)"
-      },
-      {
-        "id": 3,
-        "word": "请",
-        "pinyin": "qǐng",
-        "meaning": "por favor"
-      },
-      {
-        "id": 4,
         "word": "整理",
         "pinyin": "zhěnglǐ",
         "meaning": "organizar"
       },
       {
-        "id": 5,
+        "id": 3,
         "word": "有用",
         "pinyin": "yǒuyòng",
         "meaning": "útil"
       },
       {
-        "id": 6,
+        "id": 4,
         "word": "作废",
         "pinyin": "zuòfèi",
-        "meaning": "inválido, cancelado, obsoleto"
-      },
-      {
-        "id": 7,
-        "word": "看看",
-        "pinyin": "kànkàn",
-        "meaning": "dar uma olhada, ver"
+        "meaning": "inválido/anulado"
       }
     ],
-    "id": "local-1772298740990-2",
+    "id": "local-1780202118724-2",
     "language": "Chinês"
   },
   {
-    "chinese": "好的，李女士。这些都是作废文件。",
-    "pinyin": "Hǎo de, Lǐ nǚshì. Zhèxiē dōu shì zuòfèi wénjiàn.",
-    "translation": "B: Certo, Sra. Li. Todos estes são documentos inválidos.",
+    "chinese": "B: 好了，李姐。这些都是作废的文件。",
+    "pinyin": "Hǎo le, lǐjiě. Zhèxiē dōu shì zuòfèi de wénjiàn.",
+    "translation": "B: Certo, irmã Li. Estes são documentos inválidos.",
     "tokens": [
-      "好的",
+      "好",
+      "了",
       "，",
-      "李女士",
+      "李姐",
       "。",
       "这些",
       "都",
       "是",
-      "作废文件",
+      "作废",
+      "的",
+      "文件",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "certo, ok"
+        "word": "好了",
+        "pinyin": "hǎole",
+        "meaning": "pronto / está bem"
       },
       {
         "id": 2,
-        "word": "李女士",
-        "pinyin": "Lǐ nǚshì",
-        "meaning": "Sra. Li"
+        "word": "李姐",
+        "pinyin": "lǐjiě",
+        "meaning": "irmã Li (termo de cortesia para mulher mais velha)"
       },
       {
         "id": 3,
-        "word": "这些",
-        "pinyin": "zhèxiē",
-        "meaning": "estes, estas"
+        "word": "作废",
+        "pinyin": "zuòfèi",
+        "meaning": "inválido / anulado"
       },
       {
         "id": 4,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "todos, ambos"
-      },
-      {
-        "id": 5,
-        "word": "作废文件",
-        "pinyin": "zuòfèi wénjiàn",
-        "meaning": "documentos inválidos/obsoletos"
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documento"
       }
     ],
-    "id": "local-1772298740990-3",
+    "id": "local-1780202118724-3",
     "language": "Chinês"
   },
   {
-    "chinese": "好的，那把它们处理掉。",
-    "pinyin": "Hǎo de, nà bǎ tāmen chǔlǐ diào.",
-    "translation": "A: Certo, então descarte-os/dê um jeito neles.",
+    "chinese": "A: 嗯，那把它们处理掉吧。",
+    "pinyin": "Ń, nà bǎ tāmen chǔlǐ diào ba.",
+    "translation": "A: Ok, então vamos descartá-los.",
     "tokens": [
-      "好的",
+      "嗯",
       "，",
       "那",
       "把",
       "它们",
-      "处理掉",
+      "处理",
+      "掉",
+      "吧",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "certo, ok"
+        "word": "嗯",
+        "pinyin": "ń",
+        "meaning": "ok / hum"
       },
       {
         "id": 2,
         "word": "那",
         "pinyin": "nà",
-        "meaning": "então"
+        "meaning": "então / nesse caso"
       },
       {
         "id": 3,
-        "word": "处理掉",
-        "pinyin": "chǔlǐ diào",
-        "meaning": "descartar, se livrar de, processar e eliminar"
+        "word": "把",
+        "pinyin": "bǎ",
+        "meaning": "partícula para objeto (ba-structure)"
+      },
+      {
+        "id": 4,
+        "word": "它们",
+        "pinyin": "tāmen",
+        "meaning": "eles / elas (coisas)"
+      },
+      {
+        "id": 5,
+        "word": "处理",
+        "pinyin": "chǔlǐ",
+        "meaning": "processar / lidar com"
+      },
+      {
+        "id": 6,
+        "word": "掉",
+        "pinyin": "diào",
+        "meaning": "partícula de resultado (eliminar / descartar)"
       }
     ],
-    "id": "local-1772298740990-4",
+    "id": "local-1780202118724-4",
     "language": "Chinês"
   },
   {
-    "chinese": "把它们扔进垃圾桶可以吗？",
-    "pinyin": "Bǎ tāmen rēng jìn lājītǒng kěyǐ ma?",
-    "translation": "B: Posso jogá-los na lixeira?",
+    "chinese": "B: 扔进垃圾桶就可以了吗？",
+    "pinyin": "Rēngjìn lājītǒng jiù kěyǐ le ma?",
+    "translation": "B: Posso simplesmente jogar no lixo?",
     "tokens": [
-      "把",
-      "它们",
       "扔进",
       "垃圾桶",
+      "就",
       "可以",
+      "了",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "扔进",
-        "pinyin": "rēng jìn",
-        "meaning": "jogar dentro de"
+        "word": "扔",
+        "pinyin": "rēng",
+        "meaning": "jogar / atirar"
       },
       {
         "id": 2,
+        "word": "进",
+        "pinyin": "jìn",
+        "meaning": "entrar em"
+      },
+      {
+        "id": 3,
         "word": "垃圾桶",
         "pinyin": "lājītǒng",
         "meaning": "lixeira"
       },
       {
-        "id": 3,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "pode, ser possível"
+        "id": 4,
+        "word": "就可以",
+        "pinyin": "jiùkěyǐ",
+        "meaning": "basta / já é suficiente"
+      },
+      {
+        "id": 5,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "(partícula de pergunta)"
       }
     ],
-    "id": "local-1772298740990-5",
+    "id": "local-1780202118724-5",
     "language": "Chinês"
   },
   {
-    "chinese": "不可以。公司文件不能随便扔掉。万一里面包含重要的信息怎么办？",
-    "pinyin": "Bù kěyǐ. Gōngsī wénjiàn bù néng suíbiàn rēng diào. Wàn yī lǐmiàn bāohán zhòngyào de xìnxī zěnme bàn?",
-    "translation": "A: Não pode. Documentos da empresa não podem ser descartados de qualquer jeito. E se eles contiverem informações importantes?",
+    "chinese": "A: 不行，公司的文件不能乱扔。万一有什么重要的信息呢？",
+    "pinyin": "Bùxíng, gōngsī de wénjiàn bùnéng luàn rēng. Wànyī yǒu shénme zhòngyào de xìnxī ne?",
+    "translation": "A: Não, não podemos jogar os documentos da empresa fora à toa. E se houver alguma informação importante?",
     "tokens": [
-      "不可以",
-      "。",
-      "公司文件",
+      "不行",
+      "，",
+      "公司",
+      "的",
+      "文件",
       "不能",
-      "随便",
-      "扔掉",
+      "乱",
+      "扔",
       "。",
       "万一",
-      "里面",
-      "包含",
+      "有",
+      "什么",
       "重要",
       "的",
       "信息",
-      "怎么办",
+      "呢",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "不可以",
-        "pinyin": "bù kěyǐ",
-        "meaning": "não pode"
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não, não pode"
       },
       {
         "id": 2,
-        "word": "公司文件",
-        "pinyin": "gōngsī wénjiàn",
-        "meaning": "documentos da empresa"
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
       },
       {
         "id": 3,
-        "word": "不能",
-        "pinyin": "bù néng",
-        "meaning": "não pode"
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documento"
       },
       {
         "id": 4,
-        "word": "随便",
-        "pinyin": "suíbiàn",
-        "meaning": "de qualquer jeito, arbitrariamente"
+        "word": "乱扔",
+        "pinyin": "luànrēng",
+        "meaning": "jogar fora à toa"
       },
       {
         "id": 5,
-        "word": "扔掉",
-        "pinyin": "rēng diào",
-        "meaning": "jogar fora, descartar"
+        "word": "万一",
+        "pinyin": "wànyī",
+        "meaning": "caso, por acaso"
       },
       {
         "id": 6,
-        "word": "万一",
-        "pinyin": "wàn yī",
-        "meaning": "e se, caso"
-      },
-      {
-        "id": 7,
-        "word": "里面",
-        "pinyin": "lǐmiàn",
-        "meaning": "dentro"
-      },
-      {
-        "id": 8,
-        "word": "包含",
-        "pinyin": "bāohán",
-        "meaning": "conter, incluir"
-      },
-      {
-        "id": 9,
         "word": "重要",
         "pinyin": "zhòngyào",
         "meaning": "importante"
       },
       {
-        "id": 10,
+        "id": 7,
         "word": "信息",
         "pinyin": "xìnxī",
         "meaning": "informação"
-      },
-      {
-        "id": 11,
-        "word": "怎么办",
-        "pinyin": "zěnme bàn",
-        "meaning": "o que fazer, como resolver"
       }
     ],
-    "id": "local-1772298740990-6",
+    "id": "local-1780202118724-6",
     "language": "Chinês"
   },
   {
-    "chinese": "那我用手撕掉吗？",
-    "pinyin": "Nà wǒ yòng shǒu sī diào ma?",
-    "translation": "B: Então eu os rasgo com as mãos?",
+    "chinese": "B: 那用手撕掉吗？",
+    "pinyin": "Nàyòng shǒu sīdiào ma?",
+    "translation": "B: Então, devo rasgar com a mão?",
     "tokens": [
-      "那",
-      "我",
-      "用",
+      "那用",
       "手",
       "撕掉",
       "吗",
@@ -430,120 +392,90 @@
         "id": 1,
         "word": "那",
         "pinyin": "nà",
-        "meaning": "então"
+        "meaning": "então / nesse caso"
       },
       {
         "id": 2,
-        "word": "用",
-        "pinyin": "yòng",
-        "meaning": "usar"
+        "word": "用手",
+        "pinyin": "yòngshǒu",
+        "meaning": "usar a mão"
       },
       {
         "id": 3,
-        "word": "手",
-        "pinyin": "shǒu",
-        "meaning": "mão"
-      },
-      {
-        "id": 4,
         "word": "撕掉",
-        "pinyin": "sī diào",
-        "meaning": "rasgar"
+        "pinyin": "sīdiào",
+        "meaning": "rasgar / arrancar"
       }
     ],
-    "id": "local-1772298740990-7",
+    "id": "local-1780202118724-7",
     "language": "Chinês"
   },
   {
-    "chinese": "哈哈，当然不是。用碎纸机。来，我教你。打开碎纸机，然后慢慢地把文件放进去。",
-    "pinyin": "Hāhā, dāngrán bù shì. Yòng suìzhǐjī. Lái, wǒ jiāo nǐ. Dǎkāi suìzhǐjī, ránhòu mànmàn de bǎ wénjiàn fàng jìnqù.",
-    "translation": "A: Haha, claro que não. Use a fragmentadora de papel. Venha, eu te ensino. Ligue a fragmentadora, e então coloque os documentos lentamente.",
+    "chinese": "A: 哈哈，当然不是。用碎纸机啊。来，我教你。把碎纸机打开，再把文件慢慢塞进去。",
+    "pinyin": "Hāhā, dāngrán búshì. Yòng suìzhǐjī a. Lái, wǒjiào nǐ. Bǎ suìzhǐjī dǎkāi, zài bǎ wénjiàn mànmàn sāijìnqù.",
+    "translation": "A: Haha, é claro que não. Usa a trituradora. Vamos lá, eu te ensino. Ligue a trituradora e vá inserindo o documento devagarinho.",
     "tokens": [
       "哈哈",
       "，",
-      "当然不是",
+      "当然",
+      "不是",
       "。",
       "用",
       "碎纸机",
+      "啊",
       "。",
       "来",
       "，",
-      "我",
-      "教",
+      "我教",
       "你",
       "。",
-      "打开",
+      "把",
       "碎纸机",
+      "打开",
       "，",
-      "然后",
-      "慢慢地",
+      "再",
       "把",
       "文件",
-      "放进去",
+      "慢慢",
+      "塞进去",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哈哈",
-        "pinyin": "hāhā",
-        "meaning": "haha (risada)"
+        "word": "碎纸机",
+        "pinyin": "suìzhǐjī",
+        "meaning": "trituradora de papel"
       },
       {
         "id": 2,
-        "word": "当然不是",
-        "pinyin": "dāngrán bù shì",
-        "meaning": "claro que não"
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documento"
       },
       {
         "id": 3,
-        "word": "碎纸机",
-        "pinyin": "suìzhǐjī",
-        "meaning": "fragmentadora de papel"
+        "word": "慢慢",
+        "pinyin": "mànmàn",
+        "meaning": "devagar"
       },
       {
         "id": 4,
-        "word": "教",
-        "pinyin": "jiāo",
-        "meaning": "ensinar"
-      },
-      {
-        "id": 5,
-        "word": "打开",
-        "pinyin": "dǎkāi",
-        "meaning": "abrir, ligar"
-      },
-      {
-        "id": 6,
-        "word": "然后",
-        "pinyin": "ránhòu",
-        "meaning": "depois, então"
-      },
-      {
-        "id": 7,
-        "word": "慢慢地",
-        "pinyin": "mànmàn de",
-        "meaning": "lentamente"
-      },
-      {
-        "id": 8,
-        "word": "放进去",
-        "pinyin": "fàng jìnqù",
-        "meaning": "colocar dentro"
+        "word": "塞进去",
+        "pinyin": "sāijìnqù",
+        "meaning": "inserir/enfiar"
       }
     ],
-    "id": "local-1772298740990-8",
+    "id": "local-1780202118724-8",
     "language": "Chinês"
   },
   {
-    "chinese": "谢谢你，李女士。",
-    "pinyin": "Xièxiè nǐ, Lǐ nǚshì.",
-    "translation": "B: Obrigado(a), Sra. Li.",
+    "chinese": "B: 谢谢李姐。",
+    "pinyin": "Xièxiè lǐjiě.",
+    "translation": "B: Obrigada, irmã Li.",
     "tokens": [
       "谢谢",
-      "你",
-      "，",
-      "李女士",
+      "李姐",
       "。"
     ],
     "keywords": [
@@ -551,16 +483,16 @@
         "id": 1,
         "word": "谢谢",
         "pinyin": "xièxiè",
-        "meaning": "obrigado(a)"
+        "meaning": "obrigado"
       },
       {
         "id": 2,
-        "word": "李女士",
-        "pinyin": "Lǐ nǚshì",
-        "meaning": "Sra. Li"
+        "word": "李姐",
+        "pinyin": "lǐjiě",
+        "meaning": "irmã Li (termo de respeito para mulher mais velha)"
       }
     ],
-    "id": "local-1772298740990-9",
+    "id": "local-1780202118724-9",
     "language": "Chinês"
   }
 ]

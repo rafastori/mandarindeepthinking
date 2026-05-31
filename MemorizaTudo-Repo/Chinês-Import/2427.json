@@ -1,0 +1,663 @@
+[
+  {
+    "chinese": "A: 老公，我的水族箱到啦。",
+    "pinyin": "Lǎogōng, wǒ de shuǐzúxiāng dào la.",
+    "translation": "A: Marido, meu aquário chegou.",
+    "tokens": [
+      "老公",
+      "，",
+      "我",
+      "的",
+      "水族箱",
+      "到",
+      "啦",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "meaning": "marido"
+      },
+      {
+        "id": 2,
+        "word": "水族箱",
+        "pinyin": "shuǐzúxiāng",
+        "meaning": "aquário"
+      },
+      {
+        "id": 3,
+        "word": "到",
+        "pinyin": "dào",
+        "meaning": "chegar"
+      }
+    ],
+    "id": "local-1780225317539-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 哇，这么大的鱼缸，你想干嘛？",
+    "pinyin": "Wa, zhème dà de yúgāng, nǐ xiǎng gànmá?",
+    "translation": "B: Uau, aquário tão grande, o que você quer fazer?",
+    "tokens": [
+      "哇",
+      "，",
+      "这么",
+      "大",
+      "的",
+      "鱼缸",
+      "，",
+      "你",
+      "想",
+      "干嘛",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哇",
+        "pinyin": "wa",
+        "meaning": "uau"
+      },
+      {
+        "id": 2,
+        "word": "这么大",
+        "pinyin": "zhèmedà",
+        "meaning": "tão grande"
+      },
+      {
+        "id": 3,
+        "word": "鱼缸",
+        "pinyin": "yúgāng",
+        "meaning": "aquário"
+      },
+      {
+        "id": 4,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer"
+      },
+      {
+        "id": 5,
+        "word": "干嘛",
+        "pinyin": "gànmá",
+        "meaning": "o que fazer"
+      }
+    ],
+    "id": "local-1780225317539-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我要养热带鱼。",
+    "pinyin": "Wǒyào yǎng rèdàiyú.",
+    "translation": "A: Quero criar peixes tropicais.",
+    "tokens": [
+      "我要",
+      "养",
+      "热带鱼",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer / precisar"
+      },
+      {
+        "id": 2,
+        "word": "养",
+        "pinyin": "yǎng",
+        "meaning": "criar / cuidar"
+      },
+      {
+        "id": 3,
+        "word": "热带鱼",
+        "pinyin": "rèdàiyú",
+        "meaning": "peixes tropicais"
+      }
+    ],
+    "id": "local-1780225317539-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不是吧，你已经养死过很多动物和植物了，这次你又打算谋杀热带鱼啦？",
+    "pinyin": "Búshì ba, nǐ yǐjīng yǎngsǐ guò hěnduō dòngwù hé zhíwù le, zhècì nǐ yòu dǎsuàn móushā rèdàiyú la?",
+    "translation": "B: Não pode ser, você já matou muitos animais e plantas, dessa vez você planeja assassinar os peixes tropicais também?",
+    "tokens": [
+      "不是",
+      "吧",
+      "，",
+      "你",
+      "已经",
+      "养死",
+      "过",
+      "很多",
+      "动物",
+      "和",
+      "植物",
+      "了",
+      "，",
+      "这次",
+      "你",
+      "又",
+      "打算",
+      "谋杀",
+      "热带鱼",
+      "啦",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不是吧",
+        "pinyin": "búshìba",
+        "meaning": "não pode ser / não acredito"
+      },
+      {
+        "id": 2,
+        "word": "养死",
+        "pinyin": "yǎngsǐ",
+        "meaning": "matar por descuido ao criar"
+      },
+      {
+        "id": 3,
+        "word": "动物",
+        "pinyin": "dòngwù",
+        "meaning": "animal"
+      },
+      {
+        "id": 4,
+        "word": "植物",
+        "pinyin": "zhíwù",
+        "meaning": "planta"
+      },
+      {
+        "id": 5,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "pretender / planejar"
+      },
+      {
+        "id": 6,
+        "word": "谋杀",
+        "pinyin": "móushā",
+        "meaning": "assassinar / matar"
+      },
+      {
+        "id": 7,
+        "word": "热带鱼",
+        "pinyin": "rèdàiyú",
+        "meaning": "peixe tropical"
+      }
+    ],
+    "id": "local-1780225317539-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 才不是呢，这次我可是做了很多功课的。",
+    "pinyin": "Cái búshì ne, zhècì wǒ kěshì zuò le hěnduō gōngkè de.",
+    "translation": "A: Não é nada disso, desta vez eu me preparei muito bem.",
+    "tokens": [
+      "才",
+      "不是",
+      "呢",
+      "，",
+      "这次",
+      "我",
+      "可是",
+      "做",
+      "了",
+      "很多",
+      "功课",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "才不是",
+        "pinyin": "cáibúshì",
+        "meaning": "não é nada / de forma alguma"
+      },
+      {
+        "id": 2,
+        "word": "功课",
+        "pinyin": "gōngkè",
+        "meaning": "preparação / pesquisa / estudo"
+      },
+      {
+        "id": 3,
+        "word": "这次",
+        "pinyin": "zhècì",
+        "meaning": "desta vez"
+      },
+      {
+        "id": 4,
+        "word": "可是",
+        "pinyin": "kěshì",
+        "meaning": "mas / realmente (ênfase)"
+      },
+      {
+        "id": 5,
+        "word": "做了",
+        "pinyin": "zuòle",
+        "meaning": "fez / realizou"
+      }
+    ],
+    "id": "local-1780225317539-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 哦？说来听听。",
+    "pinyin": "Ó? Shuōláitīngtīng.",
+    "translation": "B: Oh? Conte-me.",
+    "tokens": [
+      "哦",
+      "？",
+      "说来听听",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "oh"
+      },
+      {
+        "id": 2,
+        "word": "说来听听",
+        "pinyin": "shuōláitīngtīng",
+        "meaning": "contar para ouvir / explicar"
+      }
+    ],
+    "id": "local-1780225317539-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 要养鱼啊，得先养水。水的温度、含氧量、PH值、清澈度对小鱼来说，都很重要。养好了水，才能养好鱼。",
+    "pinyin": "Yào yǎngyú a, dé xiānyǎng shuǐ. Shuǐ de wēndù, hányǎngliàng, PHzhí, qīngchè dù duì xiǎoyú láishuō, dōu hěn zhòngyào. Yǎnghǎo le shuǐ, cáinéng yǎnghǎo yú.",
+    "translation": "A: Para criar peixes, é preciso primeiro cuidar da água. A temperatura, o teor de oxigênio, o valor de pH e a transparência da água são muito importantes para os pequenos peixes. Só depois de cuidar bem da água é possível criar bem os peixes.",
+    "tokens": [
+      "要",
+      "养鱼",
+      "啊",
+      "，",
+      "得",
+      "先养",
+      "水",
+      "。",
+      "水",
+      "的",
+      "温度",
+      "、",
+      "含氧量",
+      "、",
+      "PH值",
+      "、",
+      "清澈",
+      "度",
+      "对",
+      "小鱼",
+      "来说",
+      "，",
+      "都",
+      "很",
+      "重要",
+      "。",
+      "养好",
+      "了",
+      "水",
+      "，",
+      "才能",
+      "养好",
+      "鱼",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "养鱼",
+        "pinyin": "yǎngyú",
+        "meaning": "criar peixes"
+      },
+      {
+        "id": 2,
+        "word": "养水",
+        "pinyin": "yǎngshuǐ",
+        "meaning": "cuidar da água"
+      },
+      {
+        "id": 3,
+        "word": "温度",
+        "pinyin": "wēndù",
+        "meaning": "temperatura"
+      },
+      {
+        "id": 4,
+        "word": "含氧量",
+        "pinyin": "hányǎngliàng",
+        "meaning": "teor de oxigênio"
+      },
+      {
+        "id": 5,
+        "word": "PH值",
+        "pinyin": "PHzhí",
+        "meaning": "valor de pH"
+      },
+      {
+        "id": 6,
+        "word": "清澈度",
+        "pinyin": "qīngchèdù",
+        "meaning": "transparência/clareza"
+      }
+    ],
+    "id": "local-1780225317539-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 有点儿道理，那你打算养什么鱼啊？",
+    "pinyin": "Yǒudiǎnér dàolǐ, nà nǐ dǎsuàn yǎng shénme yú a?",
+    "translation": "B: Tem alguma razão. Então, o que você planeja criar de peixe?",
+    "tokens": [
+      "有点儿",
+      "道理",
+      "，",
+      "那",
+      "你",
+      "打算",
+      "养",
+      "什么",
+      "鱼",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有点儿",
+        "pinyin": "yǒudiǎnér",
+        "meaning": "um pouco"
+      },
+      {
+        "id": 2,
+        "word": "道理",
+        "pinyin": "dàolǐ",
+        "meaning": "razão / lógica"
+      },
+      {
+        "id": 3,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "pretender / planejar"
+      },
+      {
+        "id": 4,
+        "word": "养",
+        "pinyin": "yǎng",
+        "meaning": "criar / cuidar"
+      },
+      {
+        "id": 5,
+        "word": "鱼",
+        "pinyin": "yú",
+        "meaning": "peixe"
+      }
+    ],
+    "id": "local-1780225317539-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我打算养孔雀鱼和月光鱼，据说这两种鱼比较适合新手，而且它们对水质的要求差不多，可以放在一起养。",
+    "pinyin": "Wǒ dǎsuàn yǎng kǒngquèyú hé yuèguāng yú, jùshuō zhè liǎngzhǒng yú bǐjiào shìhé xīnshǒu, érqiě tāmen duì shuǐzhì de yāoqiú chàbuduō, kěyǐ fàngzài yìqǐ yǎng.",
+    "translation": "A: Tenho a intenção de criar guppies e peixes-lua; dizem que essas duas espécies são mais adequadas para iniciantes, e como exigem condições de água semelhantes, podem ser mantidas juntas.",
+    "tokens": [
+      "我",
+      "打算",
+      "养",
+      "孔雀鱼",
+      "和",
+      "月光",
+      "鱼",
+      "，",
+      "据说",
+      "这",
+      "两种",
+      "鱼",
+      "比较",
+      "适合",
+      "新手",
+      "，",
+      "而且",
+      "它们",
+      "对",
+      "水质",
+      "的",
+      "要求",
+      "差不多",
+      "，",
+      "可以",
+      "放在",
+      "一起",
+      "养",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "ter a intenção de / planejar"
+      },
+      {
+        "id": 2,
+        "word": "养",
+        "pinyin": "yǎng",
+        "meaning": "criar / cuidar de (animais)"
+      },
+      {
+        "id": 3,
+        "word": "孔雀鱼",
+        "pinyin": "kǒngquèyú",
+        "meaning": "guppy"
+      },
+      {
+        "id": 4,
+        "word": "月光鱼",
+        "pinyin": "yuèguāngyú",
+        "meaning": "peixe-lua (moonfish)"
+      },
+      {
+        "id": 5,
+        "word": "据说",
+        "pinyin": "jùshuō",
+        "meaning": "dizem que / segundo relatos"
+      },
+      {
+        "id": 6,
+        "word": "新手",
+        "pinyin": "xīnshǒu",
+        "meaning": "iniciante / novato"
+      },
+      {
+        "id": 7,
+        "word": "水质",
+        "pinyin": "shuǐzhì",
+        "meaning": "qualidade da água"
+      },
+      {
+        "id": 8,
+        "word": "差不多",
+        "pinyin": "chàbuduō",
+        "meaning": "mais ou menos / semelhantes"
+      }
+    ],
+    "id": "local-1780225317539-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你打算什么时候去买鱼呢？",
+    "pinyin": "Nǐ dǎsuàn shénme shíhòu qù mǎi yú ne?",
+    "translation": "B: Quando você pretende comprar peixe?",
+    "tokens": [
+      "你",
+      "打算",
+      "什么",
+      "时候",
+      "去",
+      "买",
+      "鱼",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "pretender, planejar"
+      },
+      {
+        "id": 2,
+        "word": "什么时候",
+        "pinyin": "shénmeshíhòu",
+        "meaning": "quando"
+      },
+      {
+        "id": 3,
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
+      },
+      {
+        "id": 4,
+        "word": "鱼",
+        "pinyin": "yú",
+        "meaning": "peixe"
+      }
+    ],
+    "id": "local-1780225317539-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你陪我去一趟花鸟市场吧。我们下个周末去吧。",
+    "pinyin": "Nǐ péi wǒ qùyītàng huāniǎo shìchǎng ba. Wǒmen xiàgè zhōumò qù ba.",
+    "translation": "A: Acompanhe-me ao mercado de pássaros e flores. Vamos lá no próximo fim de semana.",
+    "tokens": [
+      "你",
+      "陪",
+      "我",
+      "去一趟",
+      "花鸟",
+      "市场",
+      "吧",
+      "。",
+      "我们",
+      "下个",
+      "周末",
+      "去",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陪",
+        "pinyin": "péi",
+        "meaning": "acompanhar"
+      },
+      {
+        "id": 2,
+        "word": "去",
+        "pinyin": "qù",
+        "meaning": "ir"
+      },
+      {
+        "id": 3,
+        "word": "一趟",
+        "pinyin": "yītàng",
+        "meaning": "uma ida/viagem"
+      },
+      {
+        "id": 4,
+        "word": "花鸟市场",
+        "pinyin": "huāniǎoshìchǎng",
+        "meaning": "mercado de pássaros e flores"
+      },
+      {
+        "id": 5,
+        "word": "下个周末",
+        "pinyin": "xiàgèzhōumò",
+        "meaning": "próximo fim de semana"
+      }
+    ],
+    "id": "local-1780225317539-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我看我们还是再晚点儿去，让那些可怜的小鱼多活几天吧。",
+    "pinyin": "Wǒ kàn wǒmen háishì zàiwǎn diǎnér qù, ràng nàxiē kělián de xiǎoyú duōhuó jǐtiān ba.",
+    "translation": "B: Acho que devemos ir um pouco mais tarde, para deixar aqueles peixinhos coitadinhos viverem mais alguns dias.",
+    "tokens": [
+      "我",
+      "看",
+      "我们",
+      "还是",
+      "再晚",
+      "点儿",
+      "去",
+      "，",
+      "让",
+      "那些",
+      "可怜",
+      "的",
+      "小鱼",
+      "多活",
+      "几天",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "我看",
+        "pinyin": "wǒkàn",
+        "meaning": "acho que / penso que"
+      },
+      {
+        "id": 2,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ainda melhor / preferivelmente"
+      },
+      {
+        "id": 3,
+        "word": "晚点儿",
+        "pinyin": "wǎndiǎnér",
+        "meaning": "um pouco mais tarde"
+      },
+      {
+        "id": 4,
+        "word": "可怜",
+        "pinyin": "kělián",
+        "meaning": "coitado / piedoso"
+      },
+      {
+        "id": 5,
+        "word": "小鱼",
+        "pinyin": "xiǎoyú",
+        "meaning": "peixinho"
+      },
+      {
+        "id": 6,
+        "word": "活",
+        "pinyin": "huó",
+        "meaning": "viver / sobreviver"
+      }
+    ],
+    "id": "local-1780225317539-11",
+    "language": "Chinês"
+  }
+]

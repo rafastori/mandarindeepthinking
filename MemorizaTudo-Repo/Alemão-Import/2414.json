@@ -1,0 +1,831 @@
+[
+  {
+    "chinese": "A: Xiao Wen, jemand hat dir Blumen gegeben. Was ist los?",
+    "pinyin": "",
+    "translation": "A: Xiao Wen, alguém te deu flores. Qual é a questão?",
+    "tokens": [
+      "A:",
+      "Xiao",
+      "Wen",
+      ",",
+      "jemand",
+      "hat",
+      "dir",
+      "Blumen",
+      "gegeben",
+      ".",
+      "Was",
+      "ist",
+      "los",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "jemand",
+        "pinyin": "",
+        "meaning": "alguém"
+      },
+      {
+        "id": 2,
+        "word": "Blumen",
+        "pinyin": "",
+        "meaning": "flores"
+      },
+      {
+        "id": 3,
+        "word": "gegeben",
+        "pinyin": "",
+        "meaning": "dado"
+      },
+      {
+        "id": 4,
+        "word": "los",
+        "pinyin": "",
+        "meaning": "acontecendo"
+      }
+    ],
+    "id": "local-1780228334936-0",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Mann, das ist der Typ, den ich dir vorgestellt habe, von dem ich dir schon erzählt habe.",
+    "pinyin": "",
+    "translation": "B: Nossa, é aquele cara que eu arrumei para você, aquele de que eu já te falei antes.",
+    "tokens": [
+      "B:",
+      "Mann",
+      ",",
+      "das",
+      "ist",
+      "der",
+      "Typ",
+      ",",
+      "den",
+      "ich",
+      "dir",
+      "vorgestellt",
+      "habe",
+      ",",
+      "von",
+      "dem",
+      "ich",
+      "dir",
+      "schon",
+      "erzählt",
+      "habe",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Mann",
+        "pinyin": "",
+        "meaning": "Nossa / Cara"
+      },
+      {
+        "id": 2,
+        "word": "Typ",
+        "pinyin": "",
+        "meaning": "cara / sujeito"
+      },
+      {
+        "id": 3,
+        "word": "vorgestellt",
+        "pinyin": "",
+        "meaning": "apresentado"
+      },
+      {
+        "id": 4,
+        "word": "erzählt",
+        "pinyin": "",
+        "meaning": "contado / falado"
+      },
+      {
+        "id": 5,
+        "word": "vorgestellt habe",
+        "pinyin": "",
+        "meaning": "apresentei"
+      }
+    ],
+    "id": "local-1780228334936-1",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Ihr seid angefangen, euch zu sehen! Du hast mir nichts erzählt. Es ist, als wäre ich überhaupt nicht dein guter Freund! Was hast du von ihm gedacht?",
+    "pinyin": "",
+    "translation": "A: Você começou a sair com ele! Você não me contou nada. É como se eu não fosse seu bom amigo de forma alguma! O que você achou dele?",
+    "tokens": [
+      "A:",
+      "Ihr",
+      "seid",
+      "angefangen",
+      ",",
+      "euch",
+      "zu",
+      "sehen",
+      "!",
+      "Du",
+      "hast",
+      "mir",
+      "nichts",
+      "erzählt",
+      ".",
+      "Es",
+      "ist",
+      ",",
+      "als",
+      "wäre",
+      "ich",
+      "überhaupt",
+      "nicht",
+      "dein",
+      "guter",
+      "Freund",
+      "!",
+      "Was",
+      "hast",
+      "du",
+      "von",
+      "ihm",
+      "gedacht",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "angefangen",
+        "pinyin": "",
+        "meaning": "começado"
+      },
+      {
+        "id": 2,
+        "word": "sehen",
+        "pinyin": "",
+        "meaning": "ver"
+      },
+      {
+        "id": 3,
+        "word": "erzählt",
+        "pinyin": "",
+        "meaning": "contado"
+      },
+      {
+        "id": 4,
+        "word": "Freund",
+        "pinyin": "",
+        "meaning": "amigo"
+      },
+      {
+        "id": 5,
+        "word": "gedacht",
+        "pinyin": "",
+        "meaning": "pensado"
+      }
+    ],
+    "id": "local-1780228334936-2",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Wir haben uns nur zweimal getroffen. Mein erster Eindruck war okay, aber ich finde, er ist ein bisschen seltsam und ein ziemlicher Penner. Letztes Mal, als wir in ein Restaurant gingen, um zu essen, holte er sich ein feuchtes Tuch und wischte den ganzen Tisch ab. Er bat den Kellner sogar extra, heißes Wasser zu bringen, um die Schalen und Gläser zu spülen.",
+    "pinyin": "",
+    "translation": "B: Nós só nos encontramos duas vezes. Minha primeira impressão foi razoável, mas acho que ele é um pouco estranho e um grande maníaco por limpeza. Da última vez que fomos a um restaurante comer, ele tirou uma toalha úmida e limpou toda a mesa, e ele pediu especificamente ao garçom para trazer água quente para lavar as tigelas e os copos.",
+    "tokens": [
+      "B:",
+      "Wir",
+      "haben",
+      "uns",
+      "nur",
+      "zweimal",
+      "getroffen",
+      ".",
+      "Mein",
+      "erster",
+      "Eindruck",
+      "war",
+      "okay",
+      ",",
+      "aber",
+      "ich",
+      "finde",
+      ",",
+      "er",
+      "ist",
+      "ein",
+      "bisschen",
+      "seltsam",
+      "und",
+      "ein",
+      "ziemlicher",
+      "Penner",
+      ".",
+      "Letztes",
+      "Mal",
+      ",",
+      "als",
+      "wir",
+      "in",
+      "ein",
+      "Restaurant",
+      "gingen",
+      ",",
+      "um",
+      "zu",
+      "essen",
+      ",",
+      "holte",
+      "er",
+      "sich",
+      "ein",
+      "feuchtes",
+      "Tuch",
+      "und",
+      "wischte",
+      "den",
+      "ganzen",
+      "Tisch",
+      "ab",
+      ".",
+      "Er",
+      "bat",
+      "den",
+      "Kellner",
+      "sogar",
+      "extra",
+      ",",
+      "heißes",
+      "Wasser",
+      "zu",
+      "bringen",
+      ",",
+      "um",
+      "die",
+      "Schalen",
+      "und",
+      "Gläser",
+      "zu",
+      "spülen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "zweimal",
+        "pinyin": "",
+        "meaning": "duas vezes"
+      },
+      {
+        "id": 2,
+        "word": "Penner",
+        "pinyin": "",
+        "meaning": "maníaco por limpeza"
+      },
+      {
+        "id": 3,
+        "word": "feuchtes Tuch",
+        "pinyin": "",
+        "meaning": "toalha úmida"
+      },
+      {
+        "id": 4,
+        "word": "wischte",
+        "pinyin": "",
+        "meaning": "limpou"
+      },
+      {
+        "id": 5,
+        "word": "Kellner",
+        "pinyin": "",
+        "meaning": "garçom"
+      },
+      {
+        "id": 6,
+        "word": "heißes Wasser",
+        "pinyin": "",
+        "meaning": "água quente"
+      },
+      {
+        "id": 7,
+        "word": "spülen",
+        "pinyin": "",
+        "meaning": "lavar"
+      }
+    ],
+    "id": "local-1780228334936-3",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Was ist sein Sternzeichen?",
+    "pinyin": "",
+    "translation": "A: Qual é o signo dele?",
+    "tokens": [
+      "A:",
+      "Was",
+      "ist",
+      "sein",
+      "Sternzeichen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sternzeichen",
+        "pinyin": "",
+        "meaning": "signo (zodíaco)"
+      },
+      {
+        "id": 2,
+        "word": "sein",
+        "pinyin": "",
+        "meaning": "dele / seu"
+      },
+      {
+        "id": 3,
+        "word": "ist",
+        "pinyin": "",
+        "meaning": "é"
+      },
+      {
+        "id": 4,
+        "word": "Was",
+        "pinyin": "",
+        "meaning": "o que / qual"
+      }
+    ],
+    "id": "local-1780228334936-4",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Jungfrau",
+    "pinyin": "",
+    "translation": "B: Virgem",
+    "tokens": [
+      "B:",
+      "Jungfrau"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Jungfrau",
+        "pinyin": "",
+        "meaning": "Virgem (signo do zodíaco)"
+      }
+    ],
+    "id": "local-1780228334936-5",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Das ist überhaupt nicht seltsam. Jungfrauen sind bekannt dafür, dass sie auf Sauberkeit achten. Allerdings hat ein Ehemann aus dem Sternzeichen Jungfrau viele positive Eigenschaften: Er wird nicht leicht wütend; er wird sich um dich kümmern, wenn du krank bist; er ist sehr fleißig und zuverlässig. Nach der Heirat wird er dein Familienleben mit großer Sorgfalt organisieren. Jeder Plan für die Familie wird im Voraus berücksichtigt, sodass du dir keine Sorgen machen musst.",
+    "pinyin": "",
+    "translation": "A: Isso não é nada estranho. Virgos são famosos por se importarem com a limpeza. No entanto, um marido virgo tem muitos atributos positivos: ele não fica com raiva facilmente; ele cuidará de você quando você estiver doente; ele é muito trabalhador e confiável. Depois que você se casar, ele organizará a vida da sua família com muito cuidado. Cada plano para a família será considerado de antemão, fazendo com que você não tenha nenhuma preocupação.",
+    "tokens": [
+      "A:",
+      "Das",
+      "ist",
+      "überhaupt",
+      "nicht",
+      "seltsam",
+      ".",
+      "Jungfrauen",
+      "sind",
+      "bekannt",
+      "dafür",
+      ",",
+      "dass",
+      "sie",
+      "auf",
+      "Sauberkeit",
+      "achten",
+      ".",
+      "Allerdings",
+      "hat",
+      "ein",
+      "Ehemann",
+      "aus",
+      "dem",
+      "Sternzeichen",
+      "Jungfrau",
+      "viele",
+      "positive",
+      "Eigenschaften",
+      ":",
+      "Er",
+      "wird",
+      "nicht",
+      "leicht",
+      "wütend",
+      ";",
+      "er",
+      "wird",
+      "sich",
+      "um",
+      "dich",
+      "kümmern",
+      ",",
+      "wenn",
+      "du",
+      "krank",
+      "bist",
+      ";",
+      "er",
+      "ist",
+      "sehr",
+      "fleißig",
+      "und",
+      "zuverlässig",
+      ".",
+      "Nach",
+      "der",
+      "Heirat",
+      "wird",
+      "er",
+      "dein",
+      "Familienleben",
+      "mit",
+      "großer",
+      "Sorgfalt",
+      "organisieren",
+      ".",
+      "Jeder",
+      "Plan",
+      "für",
+      "die",
+      "Familie",
+      "wird",
+      "im",
+      "Voraus",
+      "berücksichtigt",
+      ",",
+      "sodass",
+      "du",
+      "dir",
+      "keine",
+      "Sorgen",
+      "machen",
+      "musst",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Sauberkeit",
+        "pinyin": "",
+        "meaning": "limpeza"
+      },
+      {
+        "id": 2,
+        "word": "Jungfrau",
+        "pinyin": "",
+        "meaning": "virgem (signo)"
+      },
+      {
+        "id": 3,
+        "word": "Ehemann",
+        "pinyin": "",
+        "meaning": "marido"
+      },
+      {
+        "id": 4,
+        "word": "fleißig",
+        "pinyin": "",
+        "meaning": "trabalhador"
+      },
+      {
+        "id": 5,
+        "word": "zuverlässig",
+        "pinyin": "",
+        "meaning": "confiável"
+      },
+      {
+        "id": 6,
+        "word": "Sorge",
+        "pinyin": "",
+        "meaning": "preocupação"
+      }
+    ],
+    "id": "local-1780228334936-6",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Diese Worte helfen mir überhaupt nicht. Egal, was du sagst, ich bin mir immer noch nicht sicher, ob er ein Kandidat für meinen Ehemann ist. Da du dich aber so gut mit Astrologie auskennst, sag mir bitte, wie die Persönlichkeit eines Jungfrau-Mannes aussieht. Welche Art von Menschen mögen Jungfrauen?",
+    "pinyin": "",
+    "translation": "B: Essas palavras não me ajudam em nada. Não importa o que você diga, ainda não tenho certeza se ele é um candidato para ser meu marido. No entanto, como você entende tão bem de astrologia, me diga como é a personalidade de um homem Virgem. Que tipo de pessoas os Virgens gostam?",
+    "tokens": [
+      "B:",
+      "Diese",
+      "Worte",
+      "helfen",
+      "mir",
+      "überhaupt",
+      "nicht",
+      ".",
+      "Egal",
+      ",",
+      "was",
+      "du",
+      "sagst",
+      ",",
+      "ich",
+      "bin",
+      "mir",
+      "immer",
+      "noch",
+      "nicht",
+      "sicher",
+      ",",
+      "ob",
+      "er",
+      "ein",
+      "Kandidat",
+      "für",
+      "meinen",
+      "Ehemann",
+      "ist",
+      ".",
+      "Da",
+      "du",
+      "dich",
+      "aber",
+      "so",
+      "gut",
+      "mit",
+      "Astrologie",
+      "auskennst",
+      ",",
+      "sag",
+      "mir",
+      "bitte",
+      ",",
+      "wie",
+      "die",
+      "Persönlichkeit",
+      "eines",
+      "Jungfrau",
+      "-",
+      "Mannes",
+      "aussieht",
+      ".",
+      "Welche",
+      "Art",
+      "von",
+      "Menschen",
+      "mögen",
+      "Jungfrauen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "helfen",
+        "pinyin": "",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 2,
+        "word": "Kandidat",
+        "pinyin": "",
+        "meaning": "candidato"
+      },
+      {
+        "id": 3,
+        "word": "Ehemann",
+        "pinyin": "",
+        "meaning": "marido"
+      },
+      {
+        "id": 4,
+        "word": "Astrologie",
+        "pinyin": "",
+        "meaning": "astrologia"
+      },
+      {
+        "id": 5,
+        "word": "Jungfrau",
+        "pinyin": "",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 6,
+        "word": "Persönlichkeit",
+        "pinyin": "",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 7,
+        "word": "auskennst",
+        "pinyin": "",
+        "meaning": "conhece bem / entende"
+      }
+    ],
+    "id": "local-1780228334936-7",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "A: Jungfrauen sind Perfektionisten. Sie sind sehr akribisch und introvertiert mit einem klaren Gedankengang. Menschen, die unter dem Sternzeichen Jungfrau geboren sind, mögen normalerweise hochgebildete Menschen. Was Männer betrifft, die unter dem Sternzeichen Jungfrau geboren sind, ist ein schöner Geist viel wichtiger als ein hübsches Gesicht. Es fällt ihnen schwer, unwissende und nachlässige Frauen zu ertragen.",
+    "pinyin": "",
+    "translation": "A: Virgos são perfeccionistas. Eles são muito meticulosos e introvertidos, com um raciocínio claro. Pessoas que são Virgos geralmente gostam de pessoas altamente educadas. No que diz respeito aos homens que são Virgos, uma mente bela é muito mais importante do que um rosto bonito. Eles acham difícil suportar mulheres ignorantes e descuidadas.",
+    "tokens": [
+      "A:",
+      "Jungfrauen",
+      "sind",
+      "Perfektionisten",
+      ".",
+      "Sie",
+      "sind",
+      "sehr",
+      "akribisch",
+      "und",
+      "introvertiert",
+      "mit",
+      "einem",
+      "klaren",
+      "Gedankengang",
+      ".",
+      "Menschen",
+      ",",
+      "die",
+      "unter",
+      "dem",
+      "Sternzeichen",
+      "Jungfrau",
+      "geboren",
+      "sind",
+      ",",
+      "mögen",
+      "normalerweise",
+      "hochgebildete",
+      "Menschen",
+      ".",
+      "Was",
+      "Männer",
+      "betrifft",
+      ",",
+      "die",
+      "unter",
+      "dem",
+      "Sternzeichen",
+      "Jungfrau",
+      "geboren",
+      "sind",
+      ",",
+      "ist",
+      "ein",
+      "schöner",
+      "Geist",
+      "viel",
+      "wichtiger",
+      "als",
+      "ein",
+      "hübsches",
+      "Gesicht",
+      ".",
+      "Es",
+      "fällt",
+      "ihnen",
+      "schwer",
+      ",",
+      "unwissende",
+      "und",
+      "nachlässige",
+      "Frauen",
+      "zu",
+      "ertragen",
+      "."
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Perfektionisten",
+        "pinyin": "",
+        "meaning": "perfeccionistas"
+      },
+      {
+        "id": 2,
+        "word": "akribisch",
+        "pinyin": "",
+        "meaning": "meticuloso"
+      },
+      {
+        "id": 3,
+        "word": "introvertiert",
+        "pinyin": "",
+        "meaning": "introvertido"
+      },
+      {
+        "id": 4,
+        "word": "Gedankengang",
+        "pinyin": "",
+        "meaning": "raciocínio"
+      },
+      {
+        "id": 5,
+        "word": "hochgebildete",
+        "pinyin": "",
+        "meaning": "altamente educados"
+      },
+      {
+        "id": 6,
+        "word": "Geist",
+        "pinyin": "",
+        "meaning": "mente"
+      },
+      {
+        "id": 7,
+        "word": "unwissende",
+        "pinyin": "",
+        "meaning": "ignorantes"
+      }
+    ],
+    "id": "local-1780228334936-8",
+    "language": "Alemão"
+  },
+  {
+    "chinese": "B: Leichtsinnig... du meinst doch nicht mich, oder? Wenn Jungfrauen so genau auf Details achten, macht das das Leben dann nicht erschöpfend? Hilf mir, das herauszufinden. Sind meine Sternzeichen kompatibel mit seinen?",
+    "pinyin": "",
+    "translation": "B: Descuidado... você não está falando de mim, está? Com as Virgens prestando tanta atenção aos detalhes, isso não torna a vida exaustiva? Ajude-me a entender isso. Meu signo é compatível com o dele?",
+    "tokens": [
+      "B:",
+      "Leichtsinnig",
+      ".",
+      ".",
+      ".",
+      "du",
+      "meinst",
+      "doch",
+      "nicht",
+      "mich",
+      ",",
+      "oder",
+      "?",
+      "Wenn",
+      "Jungfrauen",
+      "so",
+      "genau",
+      "auf",
+      "Details",
+      "achten",
+      ",",
+      "macht",
+      "das",
+      "das",
+      "Leben",
+      "dann",
+      "nicht",
+      "erschöpfend",
+      "?",
+      "Hilf",
+      "mir",
+      ",",
+      "das",
+      "herauszufinden",
+      ".",
+      "Sind",
+      "meine",
+      "Sternzeichen",
+      "kompatibel",
+      "mit",
+      "seinen",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "Leichtsinnig",
+        "pinyin": "",
+        "meaning": "descuidado"
+      },
+      {
+        "id": 2,
+        "word": "Jungfrauen",
+        "pinyin": "",
+        "meaning": "Virgens"
+      },
+      {
+        "id": 3,
+        "word": "Details",
+        "pinyin": "",
+        "meaning": "detalhes"
+      },
+      {
+        "id": 4,
+        "word": "erschöpfend",
+        "pinyin": "",
+        "meaning": "exaustivo"
+      },
+      {
+        "id": 5,
+        "word": "Sternzeichen",
+        "pinyin": "",
+        "meaning": "signo"
+      },
+      {
+        "id": 6,
+        "word": "kompatibel",
+        "pinyin": "",
+        "meaning": "compatível"
+      }
+    ],
+    "id": "local-1780228334936-9",
+    "language": "Alemão"
+  }
+]

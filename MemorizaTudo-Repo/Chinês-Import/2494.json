@@ -1,0 +1,864 @@
+[
+  {
+    "chinese": "A: 李哥，你怎么来了！",
+    "pinyin": "Lǐgē, nǐ zěnme lái le!",
+    "translation": "A: Irmão Li, por que você veio!",
+    "tokens": [
+      "李哥",
+      "，",
+      "你",
+      "怎么",
+      "来",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "李哥",
+        "pinyin": "lǐgē",
+        "meaning": "irmão Li (termo de respeito para homem mais velho)"
+      },
+      {
+        "id": 2,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "por que / como"
+      },
+      {
+        "id": 3,
+        "word": "来了",
+        "pinyin": "láile",
+        "meaning": "veio / chegou"
+      }
+    ],
+    "id": "local-1780226896847-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我今天真是无事不登三宝殿，你快帮我出出主意。",
+    "pinyin": "Wǒ jīntiān zhēnshì wúshìbùdēngsānbǎodiàn, nǐ kuài bāng wǒ chūchū zhǔyì.",
+    "translation": "B: Hoje só vim até aqui porque tenho um problema sério; por favor, me ajude a pensar em uma solução.",
+    "tokens": [
+      "我",
+      "今天",
+      "真是",
+      "无事不登三宝殿",
+      "，",
+      "你",
+      "快",
+      "帮",
+      "我",
+      "出出",
+      "主意",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "无事不登三宝殿",
+        "pinyin": "wúshìbùdēngsānbǎodiàn",
+        "meaning": "idioma: só vir quando há necessidade urgente"
+      },
+      {
+        "id": 2,
+        "word": "出出主意",
+        "pinyin": "chūchūzhǔyì",
+        "meaning": "dar ideias / ajudar a pensar"
+      }
+    ],
+    "id": "local-1780226896847-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 什么事情，只要小弟能帮上的，大哥尽管说！",
+    "pinyin": "Shénme shìqíng, zhǐyào xiǎodì néng bāng shàng de, dàgē jǐnguǎn shuō!",
+    "translation": "A: Qualquer coisa, se eu puder ajudar, irmão mais velho, é só falar!",
+    "tokens": [
+      "什么",
+      "事情",
+      "，",
+      "只要",
+      "小弟",
+      "能",
+      "帮",
+      "上",
+      "的",
+      "，",
+      "大哥",
+      "尽管",
+      "说",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "什么事情",
+        "pinyin": "shénmeshìqíng",
+        "meaning": "qualquer coisa / que assunto"
+      },
+      {
+        "id": 2,
+        "word": "只要",
+        "pinyin": "zhǐyào",
+        "meaning": "desde que / se"
+      },
+      {
+        "id": 3,
+        "word": "小弟",
+        "pinyin": "xiǎodì",
+        "meaning": "irmão mais novo (autodepreciação)"
+      },
+      {
+        "id": 4,
+        "word": "能帮上",
+        "pinyin": "néngbāngshàng",
+        "meaning": "poder ajudar"
+      },
+      {
+        "id": 5,
+        "word": "大哥",
+        "pinyin": "dàgē",
+        "meaning": "irmão mais velho (respeito)"
+      },
+      {
+        "id": 6,
+        "word": "尽管说",
+        "pinyin": "jǐnguǎnshuō",
+        "meaning": "fique à vontade para falar / não hesite"
+      }
+    ],
+    "id": "local-1780226896847-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是这样的，你还记得上回我们蹦极的时候遇见的那个女孩吗？",
+    "pinyin": "Shì zhèyàng de, nǐ hái jìde shàng huí wǒmen bèngjí de shíhòu yùjiàn de nàge nǚhái ma?",
+    "translation": "B: É que, você se lembra da garota que conhecemos na última vez que fizemos bungee jumping?",
+    "tokens": [
+      "是",
+      "这样",
+      "的",
+      "，",
+      "你",
+      "还",
+      "记得",
+      "上",
+      "回",
+      "我们",
+      "蹦极",
+      "的",
+      "时候",
+      "遇见",
+      "的",
+      "那个",
+      "女孩",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是这样的",
+        "pinyin": "shìzhèyàngde",
+        "meaning": "é que / a situação é a seguinte"
+      },
+      {
+        "id": 2,
+        "word": "还记得",
+        "pinyin": "háijìde",
+        "meaning": "ainda lembra"
+      },
+      {
+        "id": 3,
+        "word": "上回",
+        "pinyin": "shànghuí",
+        "meaning": "da última vez / na vez passada"
+      },
+      {
+        "id": 4,
+        "word": "蹦极",
+        "pinyin": "bèngjí",
+        "meaning": "bungee jumping"
+      },
+      {
+        "id": 5,
+        "word": "遇见",
+        "pinyin": "yùjiàn",
+        "meaning": "encontrar / conhecer"
+      },
+      {
+        "id": 6,
+        "word": "那个",
+        "pinyin": "nàge",
+        "meaning": "aquele"
+      }
+    ],
+    "id": "local-1780226896847-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 记得呀，她很开朗，也挺逗的。",
+    "pinyin": "Jìde ya, tā hěn kāilǎng, yě tǐng dòu de.",
+    "translation": "A: Lembro sim, ela é muito extrovertida e também bem engraçada.",
+    "tokens": [
+      "记得",
+      "呀",
+      "，",
+      "她",
+      "很",
+      "开朗",
+      "，",
+      "也",
+      "挺",
+      "逗",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "记得",
+        "pinyin": "jìde",
+        "meaning": "lembrar"
+      },
+      {
+        "id": 2,
+        "word": "开朗",
+        "pinyin": "kāilǎng",
+        "meaning": "extrovertido"
+      },
+      {
+        "id": 3,
+        "word": "挺",
+        "pinyin": "tǐng",
+        "meaning": "bastante"
+      },
+      {
+        "id": 4,
+        "word": "逗",
+        "pinyin": "dòu",
+        "meaning": "engraçado"
+      }
+    ],
+    "id": "local-1780226896847-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 是啊，我就是喜欢她这种个性，现在我简直为她神魂颠倒了，所以我决定向她求婚！",
+    "pinyin": "Shì a, wǒ jiùshì xǐhuān tā zhèzhǒng gèxìng, xiànzài wǒ jiǎnzhí wèi tā shénhúndiāndǎo le, suǒyǐ wǒ juédìng xiàng tā qiúhūn!",
+    "translation": "B: Sim, é exatamente esse tipo de personalidade dela que eu gosto. Agora estou completamente apaixonado por ela, então decidi pedir ela em casamento!",
+    "tokens": [
+      "是",
+      "啊",
+      "，",
+      "我",
+      "就是",
+      "喜欢",
+      "她",
+      "这种",
+      "个性",
+      "，",
+      "现在",
+      "我",
+      "简直",
+      "为",
+      "她",
+      "神魂颠倒",
+      "了",
+      "，",
+      "所以",
+      "我",
+      "决定",
+      "向",
+      "她",
+      "求婚",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "个性",
+        "pinyin": "gèxìng",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 2,
+        "word": "神魂颠倒",
+        "pinyin": "shénhúndiāndǎo",
+        "meaning": "completamente apaixonado / deslumbrado"
+      },
+      {
+        "id": 3,
+        "word": "求婚",
+        "pinyin": "qiúhūn",
+        "meaning": "pedir em casamento"
+      }
+    ],
+    "id": "local-1780226896847-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 恭喜呀，我支持你！不过这可是件大事，我们得好好筹划一下。",
+    "pinyin": "Gōngxǐ ya, wǒ zhīchí nǐ! Bùguò zhè kěshì jiàn dàshì, wǒmen dé hǎohǎo chóuhuà yīxià.",
+    "translation": "A: Parabéns, eu te apoio! Mas isso é uma questão importante, precisamos planejar isso cuidadosamente.",
+    "tokens": [
+      "恭喜",
+      "呀",
+      "，",
+      "我",
+      "支持",
+      "你",
+      "！",
+      "不过",
+      "这",
+      "可是",
+      "件",
+      "大事",
+      "，",
+      "我们",
+      "得",
+      "好好",
+      "筹划",
+      "一下",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "恭喜",
+        "pinyin": "gōngxǐ",
+        "meaning": "parabéns"
+      },
+      {
+        "id": 2,
+        "word": "支持",
+        "pinyin": "zhīchí",
+        "meaning": "apoio"
+      },
+      {
+        "id": 3,
+        "word": "大事",
+        "pinyin": "dàshì",
+        "meaning": "questão importante"
+      },
+      {
+        "id": 4,
+        "word": "筹划",
+        "pinyin": "chóuhuà",
+        "meaning": "planejar"
+      }
+    ],
+    "id": "local-1780226896847-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我现在伤脑筋哪种求婚方式比较好。",
+    "pinyin": "Wǒ xiànzài shāngnǎojīn nǎ zhǒng qiúhūn fāngshì bǐjiào hǎo.",
+    "translation": "B: Estou com dificuldade para decidir qual método de pedido de casamento é melhor.",
+    "tokens": [
+      "我",
+      "现在",
+      "伤脑筋",
+      "哪",
+      "种",
+      "求婚",
+      "方式",
+      "比较",
+      "好",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "伤脑筋",
+        "pinyin": "shāngnǎojīn",
+        "meaning": "preocupado, ter dificuldade para decidir"
+      },
+      {
+        "id": 3,
+        "word": "求婚",
+        "pinyin": "qiúhūn",
+        "meaning": "pedido de casamento"
+      },
+      {
+        "id": 4,
+        "word": "方式",
+        "pinyin": "fāngshì",
+        "meaning": "método, maneira"
+      }
+    ],
+    "id": "local-1780226896847-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 依我看，什么烟花呀，玫瑰呀都太小儿科了，缺乏新意。咱们得想点特别的，让未来嫂子终身难忘。",
+    "pinyin": "Yīwǒkàn, shénme yānhuā ya, méiguī ya dōu tài xiǎoérkē le, quēfá xīnyì. Zánmen dé xiǎngdiǎn tèbié de, ràng wèilái sǎozi zhōngshēnnánwàng.",
+    "translation": "A: Na minha opinião, fogos de artifício e rosas são coisas muito infantis e sem criatividade. Precisamos pensar em algo especial para deixar a futura cunhada inesquecível.",
+    "tokens": [
+      "依我看",
+      "，",
+      "什么",
+      "烟花",
+      "呀",
+      "，",
+      "玫瑰",
+      "呀",
+      "都",
+      "太",
+      "小儿科",
+      "了",
+      "，",
+      "缺乏",
+      "新意",
+      "。",
+      "咱们",
+      "得",
+      "想点",
+      "特别",
+      "的",
+      "，",
+      "让",
+      "未来",
+      "嫂子",
+      "终身难忘",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "依我看",
+        "pinyin": "yīwǒkàn",
+        "meaning": "na minha opinião"
+      },
+      {
+        "id": 2,
+        "word": "小儿科",
+        "pinyin": "xiǎoérkē",
+        "meaning": "infantil, trivial"
+      },
+      {
+        "id": 3,
+        "word": "缺乏",
+        "pinyin": "quēfá",
+        "meaning": "falta, carece de"
+      },
+      {
+        "id": 4,
+        "word": "新意",
+        "pinyin": "xīnyì",
+        "meaning": "novidade, criatividade"
+      },
+      {
+        "id": 5,
+        "word": "咱们",
+        "pinyin": "zánmen",
+        "meaning": "nós (incluindo o ouvinte)"
+      },
+      {
+        "id": 6,
+        "word": "特别",
+        "pinyin": "tèbié",
+        "meaning": "especial"
+      },
+      {
+        "id": 7,
+        "word": "终身难忘",
+        "pinyin": "zhōngshēnnánwàng",
+        "meaning": "inesquecível por toda a vida"
+      }
+    ],
+    "id": "local-1780226896847-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 兄弟，你真是深知我心啊！",
+    "pinyin": "Xiōngdì, nǐ zhēnshì shēnzhī wǒxīn a!",
+    "translation": "B: Irmão, você realmente entende o que eu sinto!",
+    "tokens": [
+      "兄弟",
+      "，",
+      "你",
+      "真是",
+      "深知",
+      "我心",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "兄弟",
+        "pinyin": "xiōngdì",
+        "meaning": "irmão (amigo próximo)"
+      },
+      {
+        "id": 2,
+        "word": "真是",
+        "pinyin": "zhēnshì",
+        "meaning": "realmente é"
+      },
+      {
+        "id": 3,
+        "word": "深知",
+        "pinyin": "shēnzhī",
+        "meaning": "conhecer profundamente"
+      },
+      {
+        "id": 4,
+        "word": "我心",
+        "pinyin": "wǒxīn",
+        "meaning": "meu coração / meus sentimentos"
+      }
+    ],
+    "id": "local-1780226896847-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 咱们可以投其所好，来个惊险一点的。具体这么做……",
+    "pinyin": "Zánmen kěyǐ tóuqísuǒhào, láigè jīngxiǎn yìdiǎn de. Jùtǐ zhème zuò..",
+    "translation": "A: Podemos seguir o gosto deles e escolher algo mais emocionante. Para fazer isso especificamente...",
+    "tokens": [
+      "咱们",
+      "可以",
+      "投其所好",
+      "，",
+      "来个",
+      "惊险",
+      "一点",
+      "的",
+      "。",
+      "具体",
+      "这么",
+      "做",
+      "…",
+      "…"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "咱们",
+        "pinyin": "zánmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 2,
+        "word": "投其所好",
+        "pinyin": "tóuqísuǒhào",
+        "meaning": "satisfazer os gostos de alguém"
+      },
+      {
+        "id": 3,
+        "word": "惊险",
+        "pinyin": "jīngxiǎn",
+        "meaning": "emocionante / perigoso"
+      },
+      {
+        "id": 4,
+        "word": "具体",
+        "pinyin": "jùtǐ",
+        "meaning": "especificamente / concreto"
+      },
+      {
+        "id": 5,
+        "word": "这么做",
+        "pinyin": "zhèmezuò",
+        "meaning": "fazer assim"
+      }
+    ],
+    "id": "local-1780226896847-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 哈哈，这个办法不错，够新鲜、刺激！就这个了！",
+    "pinyin": "Hāhā, zhège bànfǎ bùcuò, gòu xīnxiān, cìjī! Jiù zhège le!",
+    "translation": "B: Haha, essa ideia é boa, bem nova e emocionante! Vamos com essa!",
+    "tokens": [
+      "哈哈",
+      "，",
+      "这个",
+      "办法",
+      "不错",
+      "，",
+      "够",
+      "新鲜",
+      "、",
+      "刺激",
+      "！",
+      "就",
+      "这个",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哈哈",
+        "pinyin": "hāhā",
+        "meaning": "haha"
+      },
+      {
+        "id": 2,
+        "word": "办法",
+        "pinyin": "bànfǎ",
+        "meaning": "método, ideia"
+      },
+      {
+        "id": 3,
+        "word": "不错",
+        "pinyin": "bùcuò",
+        "meaning": "bom, não é ruim"
+      },
+      {
+        "id": 4,
+        "word": "新鲜",
+        "pinyin": "xīnxiān",
+        "meaning": "novo, fresco"
+      },
+      {
+        "id": 5,
+        "word": "刺激",
+        "pinyin": "cìjī",
+        "meaning": "emocionante, estimulante"
+      },
+      {
+        "id": 6,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "exatamente, apenas"
+      }
+    ],
+    "id": "local-1780226896847-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 大哥，嫂子答应你求婚了吗？",
+    "pinyin": "Dàgē, sǎozi dāyìng nǐ qiúhūn le ma?",
+    "translation": "A: Irmão mais velho, sua cunhada aceitou o seu pedido de casamento?",
+    "tokens": [
+      "大哥",
+      "，",
+      "嫂子",
+      "答应",
+      "你",
+      "求婚",
+      "了",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大哥",
+        "pinyin": "dàgē",
+        "meaning": "irmão mais velho"
+      },
+      {
+        "id": 2,
+        "word": "嫂子",
+        "pinyin": "sǎozi",
+        "meaning": "esposa do irmão mais velho"
+      },
+      {
+        "id": 3,
+        "word": "答应",
+        "pinyin": "dāyìng",
+        "meaning": "aceitar, concordar"
+      },
+      {
+        "id": 4,
+        "word": "求婚",
+        "pinyin": "qiúhūn",
+        "meaning": "pedido de casamento"
+      }
+    ],
+    "id": "local-1780226896847-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 别提了，那晚我半夜给她打电话求婚，她认为我是装鬼吓她，瞎胡闹。还说没发现我藏在她枕头下面的戒指。",
+    "pinyin": "Biétí le, nàwǎn wǒ bànyè gěi tā dǎdiànhuà qiúhūn, tā rènwéi wǒ shì zhuāngguǐ xià tā, xiāhúnào. Hái shuō méi fāxiàn wǒcáng zài tā zhěntou xiàmiàn de jièzhǐ.",
+    "translation": "B: Não me fale sobre isso. Naquela noite, liguei para ela de madrugada para pedir sua mão em casamento, mas ela achou que eu estava fazendo brincadeira de assombração para assustá-la e agindo de forma absurda. Ela ainda disse que não percebeu que eu havia escondido o anel debaixo do travesseiro dela.",
+    "tokens": [
+      "别提",
+      "了",
+      "，",
+      "那晚",
+      "我",
+      "半夜",
+      "给",
+      "她",
+      "打电话",
+      "求婚",
+      "，",
+      "她",
+      "认为",
+      "我",
+      "是",
+      "装鬼",
+      "吓",
+      "她",
+      "，",
+      "瞎胡闹",
+      "。",
+      "还",
+      "说",
+      "没",
+      "发现",
+      "我藏",
+      "在",
+      "她",
+      "枕头",
+      "下面",
+      "的",
+      "戒指",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "别提了",
+        "pinyin": "biétíle",
+        "meaning": "não me fale sobre isso / nem me pergunte"
+      },
+      {
+        "id": 2,
+        "word": "求婚",
+        "pinyin": "qiúhūn",
+        "meaning": "pedir em casamento"
+      },
+      {
+        "id": 3,
+        "word": "装鬼",
+        "pinyin": "zhuāngguǐ",
+        "meaning": "fingir ser fantasma / fazer brincadeira de assombração"
+      },
+      {
+        "id": 4,
+        "word": "瞎胡闹",
+        "pinyin": "xiāhúnào",
+        "meaning": "agir de forma absurda / bobagem"
+      },
+      {
+        "id": 5,
+        "word": "戒指",
+        "pinyin": "jièzhǐ",
+        "meaning": "anel"
+      },
+      {
+        "id": 6,
+        "word": "枕头",
+        "pinyin": "zhěntou",
+        "meaning": "travesseiro"
+      }
+    ],
+    "id": "local-1780226896847-13",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 啊！那下次我们还是来个传统一点的方式吧！",
+    "pinyin": "A! Nà xiàcì wǒmen háishì láigè chuántǒng yìdiǎn de fāngshì ba!",
+    "translation": "A: Ah! Da próxima vez, vamos adotar um método mais tradicional!",
+    "tokens": [
+      "啊",
+      "！",
+      "那",
+      "下次",
+      "我们",
+      "还是",
+      "来个",
+      "传统",
+      "一点",
+      "的",
+      "方式",
+      "吧",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "下次",
+        "pinyin": "xiàcì",
+        "meaning": "próxima vez"
+      },
+      {
+        "id": 2,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ainda/continuamente"
+      },
+      {
+        "id": 3,
+        "word": "传统",
+        "pinyin": "chuántǒng",
+        "meaning": "tradicional"
+      },
+      {
+        "id": 4,
+        "word": "方式",
+        "pinyin": "fāngshì",
+        "meaning": "método/forma"
+      }
+    ],
+    "id": "local-1780226896847-14",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 恐怕没有下次了，我和她没戏了。",
+    "pinyin": "Kǒngpà méiyǒu xiàcì le, wǒ hé tā méixì le.",
+    "translation": "B: Acho que não haverá uma próxima vez, não temos mais chance juntos.",
+    "tokens": [
+      "恐怕",
+      "没有",
+      "下次",
+      "了",
+      "，",
+      "我",
+      "和",
+      "她",
+      "没戏",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "恐怕",
+        "pinyin": "kǒngpà",
+        "meaning": "temo que / acho que"
+      },
+      {
+        "id": 2,
+        "word": "没有下次",
+        "pinyin": "méiyǒuxiàcì",
+        "meaning": "não haverá próxima vez"
+      },
+      {
+        "id": 3,
+        "word": "没戏",
+        "pinyin": "méixì",
+        "meaning": "sem chance / sem esperança"
+      },
+      {
+        "id": 4,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu"
+      },
+      {
+        "id": 5,
+        "word": "她",
+        "pinyin": "tā",
+        "meaning": "ela"
+      }
+    ],
+    "id": "local-1780226896847-15",
+    "language": "Chinês"
+  }
+]

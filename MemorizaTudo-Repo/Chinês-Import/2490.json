@@ -1,77 +1,57 @@
 [
   {
-    "chinese": "珍珍，你查高考分数了吗？",
-    "pinyin": "Zhēnzhēn, nǐ chá gāokǎo fēnshù le ma?",
-    "translation": "A: Zhenzhen, você verificou a pontuação do vestibular?",
+    "chinese": "A: 真真，你查了高考分数吗？",
+    "pinyin": "Zhēnzhēn, nǐchá le gāokǎo fēnshù ma?",
+    "translation": "A: Zhenzhen, você já conferiu a nota do exame de admissão universitário?",
     "tokens": [
-      "珍珍",
+      "真真",
       "，",
-      "你",
-      "查",
+      "你查",
+      "了",
       "高考",
       "分数",
-      "了",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "珍珍",
-        "pinyin": "Zhēnzhēn",
+        "word": "真真",
+        "pinyin": "zhēnzhēn",
         "meaning": "Zhenzhen (nome próprio)"
       },
       {
         "id": 2,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "查",
+        "pinyin": "chá",
+        "meaning": "consultar / verificar"
       },
       {
         "id": 3,
-        "word": "查",
-        "pinyin": "chá",
-        "meaning": "verificar, consultar"
+        "word": "高考",
+        "pinyin": "gāokǎo",
+        "meaning": "exame de admissão universitário (Gaokao)"
       },
       {
         "id": 4,
-        "word": "高考",
-        "pinyin": "gāokǎo",
-        "meaning": "vestibular (exame nacional de admissão à universidade)"
-      },
-      {
-        "id": 5,
         "word": "分数",
         "pinyin": "fēnshù",
-        "meaning": "pontuação, nota"
-      },
-      {
-        "id": 6,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança)"
-      },
-      {
-        "id": 7,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "nota / pontuação"
       }
     ],
-    "id": "local-1772393983056-0",
+    "id": "local-1780203626711-0",
     "language": "Chinês"
   },
   {
-    "chinese": "查了。是452。你呢？",
-    "pinyin": "Chá le. Shì sìbǎi wǔshí'èr. Nǐ ne?",
-    "translation": "B: Verifiquei. Foi 452. E você?",
+    "chinese": "B: 查了，452，你呢？",
+    "pinyin": "Chá le, 452, nǐ ne?",
+    "translation": "B: Verifiquei, é 452, e você?",
     "tokens": [
       "查",
       "了",
-      "。",
-      "是",
+      "，",
       "452",
-      "。",
+      "，",
       "你",
       "呢",
       "？"
@@ -79,57 +59,44 @@
     "keywords": [
       {
         "id": 1,
-        "word": "查",
-        "pinyin": "chá",
-        "meaning": "verificar, consultar"
+        "word": "查了",
+        "pinyin": "chále",
+        "meaning": "verificou"
       },
       {
         "id": 2,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão)"
+        "word": "452",
+        "pinyin": "452",
+        "meaning": "número 452"
       },
       {
         "id": 3,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
-      },
-      {
-        "id": 4,
-        "word": "452",
-        "pinyin": "sìbǎi wǔshí'èr",
-        "meaning": "quatrocentos e cinquenta e dois"
-      },
-      {
-        "id": 5,
         "word": "你",
         "pinyin": "nǐ",
         "meaning": "você"
       },
       {
-        "id": 6,
+        "id": 4,
         "word": "呢",
         "pinyin": "ne",
-        "meaning": "partícula interrogativa (e quanto a...?)"
+        "meaning": "e/então (pergunta)"
       }
     ],
-    "id": "local-1772393983056-1",
+    "id": "local-1780203626711-1",
     "language": "Chinês"
   },
   {
-    "chinese": "哇，好高啊。我才417。",
-    "pinyin": "Wa, hǎo gāo a. Wǒ cái sìbǎi yīshíqī.",
-    "translation": "A: Uau, que alto! Eu só tenho 417.",
+    "chinese": "A: 哇，那么高，我只有417。",
+    "pinyin": "Wa, nàme gāo, wǒ zhǐyǒu 417.",
+    "translation": "A: Uau, tão alto, eu só tenho 417.",
     "tokens": [
       "哇",
       "，",
-      "好",
+      "那么",
       "高",
-      "啊",
-      "。",
+      "，",
       "我",
-      "才",
+      "只有",
       "417",
       "。"
     ],
@@ -138,63 +105,43 @@
         "id": 1,
         "word": "哇",
         "pinyin": "wa",
-        "meaning": "uau (interjeição de surpresa)"
+        "meaning": "uau"
       },
       {
         "id": 2,
-        "word": "好",
-        "pinyin": "hǎo",
-        "meaning": "muito (advérbio), bom"
+        "word": "那么高",
+        "pinyin": "nàmegāo",
+        "meaning": "tão alto"
       },
       {
         "id": 3,
-        "word": "高",
-        "pinyin": "gāo",
-        "meaning": "alto"
+        "word": "只有",
+        "pinyin": "zhǐyǒu",
+        "meaning": "apenas ter"
       },
       {
         "id": 4,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula exclamativa"
-      },
-      {
-        "id": 5,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 6,
-        "word": "才",
-        "pinyin": "cái",
-        "meaning": "só, apenas (indicando pequena quantidade ou algo tardio)"
-      },
-      {
-        "id": 7,
         "word": "417",
-        "pinyin": "sìbǎi yīshíqī",
-        "meaning": "quatrocentos e dezessete"
+        "pinyin": "417",
+        "meaning": "417"
       }
     ],
-    "id": "local-1772393983056-2",
+    "id": "local-1780203626711-2",
     "language": "Chinês"
   },
   {
-    "chinese": "那我们差不多。文科的最低录取分数线普遍比理科高。",
-    "pinyin": "Nà wǒmen chàbuduō. Wénkē de zuìdī lùqǔ fēnshùxiàn pǔbiàn bǐ lǐkē gāo.",
-    "translation": "B: Então estamos quase lá. A nota de corte mínima para artes liberais é geralmente mais alta do que para ciências.",
+    "chinese": "B: 那我们差不多呀，文科分数线一般比理科高。",
+    "pinyin": "Nà wǒmen chàbuduō ya, wénkē fēnshùxiàn yìbān bǐ lǐkē gāo.",
+    "translation": "B: Então somos parecidos, as notas de corte para humanas geralmente são mais altas que para as exatas.",
     "tokens": [
       "那",
       "我们",
       "差不多",
-      "。",
+      "呀",
+      "，",
       "文科",
-      "的",
-      "最低",
-      "录取",
       "分数线",
-      "普遍",
+      "一般",
       "比",
       "理科",
       "高",
@@ -203,252 +150,157 @@
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, nesse caso"
+        "word": "差不多",
+        "pinyin": "chàbuduō",
+        "meaning": "parecido, quase igual"
       },
       {
         "id": 2,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "word": "文科",
+        "pinyin": "wénkē",
+        "meaning": "ciências humanas"
       },
       {
         "id": 3,
-        "word": "差不多",
-        "pinyin": "chàbuduō",
-        "meaning": "quase, similar, cerca de"
-      },
-      {
-        "id": 4,
-        "word": "文科",
-        "pinyin": "wénkē",
-        "meaning": "humanidades, artes liberais"
-      },
-      {
-        "id": 5,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/conectora"
-      },
-      {
-        "id": 6,
-        "word": "最低",
-        "pinyin": "zuìdī",
-        "meaning": "o mais baixo, mínimo"
-      },
-      {
-        "id": 7,
-        "word": "录取",
-        "pinyin": "lùqǔ",
-        "meaning": "admitir, recrutar"
-      },
-      {
-        "id": 8,
         "word": "分数线",
         "pinyin": "fēnshùxiàn",
         "meaning": "nota de corte, linha de pontuação"
       },
       {
-        "id": 9,
-        "word": "普遍",
-        "pinyin": "pǔbiàn",
-        "meaning": "geralmente, universalmente"
+        "id": 4,
+        "word": "理科",
+        "pinyin": "lǐkē",
+        "meaning": "ciências exatas"
       },
       {
-        "id": 10,
+        "id": 5,
+        "word": "一般",
+        "pinyin": "yìbān",
+        "meaning": "geralmente"
+      },
+      {
+        "id": 6,
         "word": "比",
         "pinyin": "bǐ",
         "meaning": "comparado a, do que"
       },
       {
-        "id": 11,
-        "word": "理科",
-        "pinyin": "lǐkē",
-        "meaning": "ciências exatas e naturais"
-      },
-      {
-        "id": 12,
+        "id": 7,
         "word": "高",
         "pinyin": "gāo",
-        "meaning": "alto"
+        "meaning": "alto, elevado"
       }
     ],
-    "id": "local-1772393983056-3",
+    "id": "local-1780203626711-3",
     "language": "Chinês"
   },
   {
-    "chinese": "也许我们还能上同一所大学。你想报哪所学校？",
-    "pinyin": "Yěxǔ wǒmen hái néng shàng tóngyī suǒ dàxué. Nǐ xiǎng bào nǎ suǒ xuéxiào?",
-    "translation": "A: Talvez ainda possamos entrar na mesma universidade. Que universidade você quer se candidatar?",
+    "chinese": "A: 说不定我们还可以上同一所大学呢，你想报什么学校？",
+    "pinyin": "Shuōbùdìng wǒmen hái kěyǐ shàng tóngyī suǒ dàxué ne, nǐ xiǎng bào shénme xuéxiào?",
+    "translation": "A: Talvez possamos entrar na mesma universidade, que escola você quer se inscrever?",
     "tokens": [
-      "也许",
+      "说不定",
       "我们",
       "还",
-      "能",
+      "可以",
       "上",
-      "同一所",
+      "同一",
+      "所",
       "大学",
-      "。",
+      "呢",
+      "，",
       "你",
       "想",
       "报",
-      "哪所",
+      "什么",
       "学校",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "也许",
-        "pinyin": "yěxǔ",
-        "meaning": "talvez, possivelmente"
+        "word": "说不定",
+        "pinyin": "shuōbùdìng",
+        "meaning": "talvez / quem sabe"
       },
       {
         "id": 2,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
+        "word": "同一所大学",
+        "pinyin": "tóngyīsuǒdàxué",
+        "meaning": "a mesma universidade"
       },
       {
         "id": 3,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda"
+        "word": "报",
+        "pinyin": "bào",
+        "meaning": "inscrever-se / candidatar-se"
       },
       {
         "id": 4,
-        "word": "能",
-        "pinyin": "néng",
-        "meaning": "poder, ser capaz de"
-      },
-      {
-        "id": 5,
-        "word": "上",
-        "pinyin": "shàng",
-        "meaning": "subir, frequentar (uma escola)"
-      },
-      {
-        "id": 6,
-        "word": "同一所",
-        "pinyin": "tóngyī suǒ",
-        "meaning": "a mesma (com classificador para instituições)"
-      },
-      {
-        "id": 7,
-        "word": "大学",
-        "pinyin": "dàxué",
-        "meaning": "universidade"
-      },
-      {
-        "id": 8,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 9,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
-      },
-      {
-        "id": 10,
-        "word": "报",
-        "pinyin": "bào",
-        "meaning": "se candidatar a, inscrever-se para"
-      },
-      {
-        "id": 11,
-        "word": "哪所",
-        "pinyin": "nǎ suǒ",
-        "meaning": "qual (com classificador para instituições)"
-      },
-      {
-        "id": 12,
         "word": "学校",
         "pinyin": "xuéxiào",
-        "meaning": "escola"
+        "meaning": "escola / universidade"
       }
     ],
-    "id": "local-1772393983056-4",
+    "id": "local-1780203626711-4",
     "language": "Chinês"
   },
   {
-    "chinese": "还没决定。你想好了吗？",
-    "pinyin": "Hái méi juédìng. Nǐ xiǎng hǎo le ma?",
-    "translation": "B: Ainda não decidi. Você já pensou bem?",
+    "chinese": "B: 我还没决定，你有没有想好？",
+    "pinyin": "Wǒ hái méi juédìng, nǐ yǒuméiyǒu xiǎng hǎo?",
+    "translation": "B: Ainda não decidi, você já pensou?",
     "tokens": [
+      "我",
       "还",
       "没",
       "决定",
-      "。",
+      "，",
       "你",
+      "有没有",
       "想",
       "好",
-      "了",
-      "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda"
+        "word": "还没",
+        "pinyin": "háiméi",
+        "meaning": "ainda não"
       },
       {
         "id": 2,
-        "word": "没",
-        "pinyin": "méi",
-        "meaning": "não (usado para ações passadas ou existência)"
+        "word": "决定",
+        "pinyin": "juédìng",
+        "meaning": "decidir"
       },
       {
         "id": 3,
-        "word": "决定",
-        "pinyin": "juédìng",
-        "meaning": "decidir, decisão"
+        "word": "有没有",
+        "pinyin": "yǒuméiyǒu",
+        "meaning": "se tem ou não"
       },
       {
         "id": 4,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 5,
         "word": "想好",
         "pinyin": "xiǎnghǎo",
-        "meaning": "pensar bem, decidir após pensar"
-      },
-      {
-        "id": 6,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão)"
-      },
-      {
-        "id": 7,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "pensar bem / decidir"
       }
     ],
-    "id": "local-1772393983056-5",
+    "id": "local-1780203626711-5",
     "language": "Chinês"
   },
   {
-    "chinese": "我也没。你想学什么专业？",
-    "pinyin": "Wǒ yě méi. Nǐ xiǎng xué shénme zhuānyè?",
+    "chinese": "A: 我也没，你想学什么专业？",
+    "pinyin": "Wǒ yě méi, nǐ xiǎngxué shénme zhuānyè?",
     "translation": "A: Eu também não. Que curso você quer estudar?",
     "tokens": [
       "我",
       "也",
       "没",
-      "。",
+      "，",
       "你",
-      "想",
-      "学",
+      "想学",
       "什么",
       "专业",
       "？"
@@ -456,147 +308,108 @@
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 2,
         "word": "也",
         "pinyin": "yě",
         "meaning": "também"
       },
       {
-        "id": 3,
+        "id": 2,
         "word": "没",
         "pinyin": "méi",
-        "meaning": "não (implica que não decidiu ainda)"
+        "meaning": "não (negação)"
+      },
+      {
+        "id": 3,
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer / desejar"
       },
       {
         "id": 4,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "学",
+        "pinyin": "xué",
+        "meaning": "estudar"
       },
       {
         "id": 5,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual / que"
       },
       {
         "id": 6,
-        "word": "学",
-        "pinyin": "xué",
-        "meaning": "estudar, aprender"
-      },
-      {
-        "id": 7,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê"
-      },
-      {
-        "id": 8,
         "word": "专业",
         "pinyin": "zhuānyè",
-        "meaning": "curso universitário, especialidade"
+        "meaning": "curso / especialidade"
       }
     ],
-    "id": "local-1772393983056-6",
+    "id": "local-1780203626711-6",
     "language": "Chinês"
   },
   {
-    "chinese": "我想报中文系，可我爸妈想让我学会计。",
-    "pinyin": "Wǒ xiǎng bào Zhōngwénxì, kě wǒ bàma xiǎng ràng wǒ xué kuàijì.",
-    "translation": "B: Eu quero me candidatar ao departamento de chinês, mas meus pais querem que eu estude contabilidade.",
+    "chinese": "B: 我想报中文系，不过我爸妈要我学会计。",
+    "pinyin": "Wǒ xiǎng bào zhōngwénxì, bùguò wǒ bàmā yào wǒxué kuàijì.",
+    "translation": "B: Quero me matricular no departamento de chinês, mas meus pais querem que eu estude contabilidade.",
     "tokens": [
       "我",
       "想",
       "报",
       "中文系",
       "，",
-      "可",
+      "不过",
       "我",
       "爸妈",
-      "想",
-      "让",
-      "我",
-      "学",
+      "要",
+      "我学",
       "会计",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "报",
+        "pinyin": "bào",
+        "meaning": "inscrever-se"
       },
       {
         "id": 2,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
+        "word": "中文系",
+        "pinyin": "zhōngwénxì",
+        "meaning": "departamento de chinês"
       },
       {
         "id": 3,
-        "word": "报",
-        "pinyin": "bào",
-        "meaning": "se candidatar a, inscrever-se para"
+        "word": "不过",
+        "pinyin": "bùguò",
+        "meaning": "mas, contudo"
       },
       {
         "id": 4,
-        "word": "中文系",
-        "pinyin": "Zhōngwénxì",
-        "meaning": "Departamento de Língua e Literatura Chinesa"
+        "word": "爸妈",
+        "pinyin": "bàmā",
+        "meaning": "pais"
       },
       {
         "id": 5,
-        "word": "可",
-        "pinyin": "kě",
-        "meaning": "mas, porém (abreviação de 可是/但是)"
-      },
-      {
-        "id": 6,
-        "word": "爸妈",
-        "pinyin": "bàma",
-        "meaning": "pais (pai e mãe)"
-      },
-      {
-        "id": 7,
-        "word": "让",
-        "pinyin": "ràng",
-        "meaning": "deixar, permitir, fazer com que"
-      },
-      {
-        "id": 8,
-        "word": "学",
-        "pinyin": "xué",
-        "meaning": "estudar, aprender"
-      },
-      {
-        "id": 9,
         "word": "会计",
         "pinyin": "kuàijì",
         "meaning": "contabilidade"
       }
     ],
-    "id": "local-1772393983056-7",
+    "id": "local-1780203626711-7",
     "language": "Chinês"
   },
   {
-    "chinese": "我听说中文系是就业最差的专业。",
-    "pinyin": "Wǒ tīngshuō Zhōngwénxì shì jiùyè zuì chà de zhuānyè.",
-    "translation": "A: Ouvi dizer que o departamento de chinês é o curso com a pior empregabilidade.",
+    "chinese": "A: 我听说中文是就业最差的专业。",
+    "pinyin": "Wǒ tīngshuō zhōngwén shì jiùyè zuìchà de zhuānyè.",
+    "translation": "A: Ouvi dizer que chinês é a área com as piores oportunidades de emprego.",
     "tokens": [
       "我",
       "听说",
-      "中文系",
+      "中文",
       "是",
       "就业",
-      "最",
-      "差",
+      "最差",
       "的",
       "专业",
       "。"
@@ -604,77 +417,56 @@
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 2,
         "word": "听说",
         "pinyin": "tīngshuō",
         "meaning": "ouvir dizer"
       },
       {
+        "id": 2,
+        "word": "中文",
+        "pinyin": "zhōngwén",
+        "meaning": "idioma chinês"
+      },
+      {
         "id": 3,
-        "word": "中文系",
-        "pinyin": "Zhōngwénxì",
-        "meaning": "Departamento de Língua e Literatura Chinesa"
+        "word": "就业",
+        "pinyin": "jiùyè",
+        "meaning": "emprego"
       },
       {
         "id": 4,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
+        "word": "最差",
+        "pinyin": "zuìchà",
+        "meaning": "pior"
       },
       {
         "id": 5,
-        "word": "就业",
-        "pinyin": "jiùyè",
-        "meaning": "emprego, empregabilidade"
-      },
-      {
-        "id": 6,
-        "word": "最",
-        "pinyin": "zuì",
-        "meaning": "o mais (partícula de superlativo)"
-      },
-      {
-        "id": 7,
-        "word": "差",
-        "pinyin": "chà",
-        "meaning": "ruim, pobre, inferior"
-      },
-      {
-        "id": 8,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula conectora"
-      },
-      {
-        "id": 9,
         "word": "专业",
         "pinyin": "zhuānyè",
-        "meaning": "curso universitário, especialidade"
+        "meaning": "área de estudo / especialidade"
       }
     ],
-    "id": "local-1772393983056-8",
+    "id": "local-1780203626711-8",
     "language": "Chinês"
   },
   {
-    "chinese": "可是我喜欢文学，会计听起来好无聊。你想报什么专业？",
-    "pinyin": "Kěshì wǒ xǐhuan wénxué, kuàijì tīng qǐlái hǎo wúliáo. Nǐ xiǎng bào shénme zhuānyè?",
-    "translation": "B: Mas eu gosto de literatura, e contabilidade parece tão chata. Que curso você quer se candidatar?",
+    "chinese": "B: 可是我喜欢文学呀，而且会计听起来好无聊，你想报什么专业？",
+    "pinyin": "Kěshì wǒ xǐhuān wénxué ya, érqiě kuàijì tīng qǐlái hǎo wúliáo, nǐ xiǎng bào shénme zhuānyè?",
+    "translation": "B: Mas eu gosto de literatura, e contabilidade parece muito chata. Que curso você quer fazer?",
     "tokens": [
       "可是",
       "我",
       "喜欢",
       "文学",
+      "呀",
       "，",
+      "而且",
       "会计",
-      "听起来",
+      "听",
+      "起来",
       "好",
       "无聊",
-      "。",
+      "，",
       "你",
       "想",
       "报",
@@ -687,25 +479,25 @@
         "id": 1,
         "word": "可是",
         "pinyin": "kěshì",
-        "meaning": "mas, porém"
+        "meaning": "mas"
       },
       {
         "id": 2,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar"
       },
       {
         "id": 3,
-        "word": "喜欢",
-        "pinyin": "xǐhuan",
-        "meaning": "gostar, preferir"
-      },
-      {
-        "id": 4,
         "word": "文学",
         "pinyin": "wénxué",
         "meaning": "literatura"
+      },
+      {
+        "id": 4,
+        "word": "而且",
+        "pinyin": "érqiě",
+        "meaning": "e além disso"
       },
       {
         "id": 5,
@@ -715,155 +507,91 @@
       },
       {
         "id": 6,
-        "word": "听起来",
-        "pinyin": "tīng qǐlái",
-        "meaning": "soar como, parecer (ao ouvir)"
+        "word": "无聊",
+        "pinyin": "wúliáo",
+        "meaning": "chato"
       },
       {
         "id": 7,
-        "word": "好",
-        "pinyin": "hǎo",
-        "meaning": "muito (advérbio)"
-      },
-      {
-        "id": 8,
-        "word": "无聊",
-        "pinyin": "wúliáo",
-        "meaning": "chato, entediante"
-      },
-      {
-        "id": 9,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 10,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
-      },
-      {
-        "id": 11,
-        "word": "报",
-        "pinyin": "bào",
-        "meaning": "se candidatar a, inscrever-se para"
-      },
-      {
-        "id": 12,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê"
-      },
-      {
-        "id": 13,
         "word": "专业",
         "pinyin": "zhuānyè",
-        "meaning": "curso universitário, especialidade"
+        "meaning": "curso / especialização"
       }
     ],
-    "id": "local-1772393983056-9",
+    "id": "local-1780203626711-9",
     "language": "Chinês"
   },
   {
-    "chinese": "我想学计算机。就业前景挺好的。",
-    "pinyin": "Wǒ xiǎng xué jìsuànjī. Jiùyè qiánjǐng tǐng hǎo de.",
-    "translation": "A: Eu quero estudar ciência da computação. As perspectivas de emprego são muito boas.",
+    "chinese": "A: 我想学计算机，就业前景比较好。",
+    "pinyin": "Wǒxiǎngxué jìsuànjī, jiùyè qiánjǐng bǐjiào hǎo.",
+    "translation": "A: Quero estudar computação, pois as perspectivas de emprego são boas.",
     "tokens": [
-      "我",
-      "想",
-      "学",
+      "我想学",
       "计算机",
-      "。",
+      "，",
       "就业",
       "前景",
-      "挺",
+      "比较",
       "好",
-      "的",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "我想学",
+        "pinyin": "wǒxiǎngxué",
+        "meaning": "quero estudar"
       },
       {
         "id": 2,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
+        "word": "计算机",
+        "pinyin": "jìsuànjī",
+        "meaning": "computação"
       },
       {
         "id": 3,
-        "word": "学",
-        "pinyin": "xué",
-        "meaning": "estudar, aprender"
+        "word": "就业",
+        "pinyin": "jiùyè",
+        "meaning": "emprego"
       },
       {
         "id": 4,
-        "word": "计算机",
-        "pinyin": "jìsuànjī",
-        "meaning": "computador, ciência da computação"
+        "word": "前景",
+        "pinyin": "qiánjǐng",
+        "meaning": "perspectivas"
       },
       {
         "id": 5,
-        "word": "就业",
-        "pinyin": "jiùyè",
-        "meaning": "emprego, empregabilidade"
-      },
-      {
-        "id": 6,
-        "word": "前景",
-        "pinyin": "qiánjǐng",
-        "meaning": "perspectiva, panorama"
-      },
-      {
-        "id": 7,
-        "word": "挺",
-        "pinyin": "tǐng",
-        "meaning": "bastante, muito"
-      },
-      {
-        "id": 8,
         "word": "好",
         "pinyin": "hǎo",
         "meaning": "bom"
-      },
-      {
-        "id": 9,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula conectora"
       }
     ],
-    "id": "local-1772393983056-10",
+    "id": "local-1780203626711-10",
     "language": "Chinês"
   },
   {
-    "chinese": "哇。那以后我要是找不到工作，你可要天天请我吃饭。",
-    "pinyin": "Wa. Nà yǐhòu wǒ yàoshì zhǎobudào gōngzuò, nǐ kě yào tiāntiān qǐng wǒ chīfàn.",
-    "translation": "B: Uau. Então, se eu não conseguir um emprego no futuro, você vai ter que me pagar o jantar todos os dias.",
+    "chinese": "B: 哇，那以后要是我找不到工作，你就每天请我吃饭吧。",
+    "pinyin": "Wa, nà yǐhòu yàoshì wǒ zhǎo búdào gōngzuò, nǐ jiù měitiān qǐng wǒ chīfàn ba.",
+    "translation": "B: Uau, então se eu não conseguir arrumar um emprego no futuro, você vai ter que me pagar as refeições todos os dias.",
     "tokens": [
       "哇",
-      "。",
+      "，",
       "那",
       "以后",
-      "我",
       "要是",
+      "我",
       "找",
-      "不",
-      "到",
+      "不到",
       "工作",
       "，",
       "你",
-      "可",
-      "要",
-      "天天",
+      "就",
+      "每天",
       "请",
       "我",
       "吃饭",
+      "吧",
       "。"
     ],
     "keywords": [
@@ -871,88 +599,52 @@
         "id": 1,
         "word": "哇",
         "pinyin": "wa",
-        "meaning": "uau (interjeição de surpresa)"
+        "meaning": "uau"
       },
       {
         "id": 2,
         "word": "那",
         "pinyin": "nà",
-        "meaning": "então, nesse caso"
+        "meaning": "então"
       },
       {
         "id": 3,
         "word": "以后",
         "pinyin": "yǐhòu",
-        "meaning": "depois, no futuro"
+        "meaning": "no futuro"
       },
       {
         "id": 4,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "要是",
+        "pinyin": "yàoshì",
+        "meaning": "se"
       },
       {
         "id": 5,
-        "word": "要是",
-        "pinyin": "yàoshì",
-        "meaning": "se, caso"
-      },
-      {
-        "id": 6,
-        "word": "找",
-        "pinyin": "zhǎo",
-        "meaning": "procurar"
-      },
-      {
-        "id": 7,
-        "word": "不到",
-        "pinyin": "bù dào",
+        "word": "找不到",
+        "pinyin": "zhǎobúdào",
         "meaning": "não conseguir encontrar"
       },
       {
-        "id": 8,
+        "id": 6,
         "word": "工作",
         "pinyin": "gōngzuò",
-        "meaning": "trabalho, emprego"
+        "meaning": "emprego"
       },
       {
-        "id": 9,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 10,
-        "word": "可",
-        "pinyin": "kě",
-        "meaning": "certamente, de fato (enfatiza o '要')"
-      },
-      {
-        "id": 11,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "dever, ter que"
-      },
-      {
-        "id": 12,
-        "word": "天天",
-        "pinyin": "tiāntiān",
-        "meaning": "todos os dias"
-      },
-      {
-        "id": 13,
+        "id": 7,
         "word": "请",
         "pinyin": "qǐng",
-        "meaning": "convidar, pagar (uma refeição)"
+        "meaning": "convidar/pagar"
       },
       {
-        "id": 14,
+        "id": 8,
         "word": "吃饭",
         "pinyin": "chīfàn",
-        "meaning": "comer uma refeição"
+        "meaning": "comer/refeição"
       }
     ],
-    "id": "local-1772393983056-11",
+    "id": "local-1780203626711-11",
     "language": "Chinês"
   }
 ]

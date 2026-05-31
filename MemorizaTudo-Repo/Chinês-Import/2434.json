@@ -1,0 +1,821 @@
+[
+  {
+    "chinese": "A: Mike,你的就业申请被拒了！",
+    "pinyin": "Mike, nǐ de jiùyè shēnqǐng bèi jù le!",
+    "translation": "A: Mike, seu pedido de emprego foi recusado!",
+    "tokens": [
+      "Mike",
+      ",",
+      "你",
+      "的",
+      "就业",
+      "申请",
+      "被",
+      "拒",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就业",
+        "pinyin": "jiùyè",
+        "meaning": "emprego"
+      },
+      {
+        "id": 2,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "pedido"
+      },
+      {
+        "id": 3,
+        "word": "被",
+        "pinyin": "bèi",
+        "meaning": "passivo"
+      },
+      {
+        "id": 4,
+        "word": "拒",
+        "pinyin": "jù",
+        "meaning": "recusar"
+      }
+    ],
+    "id": "local-1780225437578-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 啊，怎么回事啊？应该没问题啊，我上一份工作办就业证也很顺利。",
+    "pinyin": "A, zěnmehuíshì a? Yīnggāi méi wèntí a, wǒ shàng yīfèn gōngzuò bàn jiùyèzhèng yě hěn shùnlì.",
+    "translation": "B: Ah, o que aconteceu? Não deveria haver problema, eu também consegui meu certificado de trabalho no meu último emprego sem dificuldades.",
+    "tokens": [
+      "啊",
+      "，",
+      "怎么回事",
+      "啊",
+      "？",
+      "应该",
+      "没",
+      "问题",
+      "啊",
+      "，",
+      "我",
+      "上",
+      "一份",
+      "工作",
+      "办",
+      "就业证",
+      "也",
+      "很",
+      "顺利",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "怎么回事",
+        "pinyin": "zěnmehuíshì",
+        "meaning": "o que aconteceu"
+      },
+      {
+        "id": 2,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "deveria"
+      },
+      {
+        "id": 3,
+        "word": "没问题",
+        "pinyin": "méiwèntí",
+        "meaning": "sem problema"
+      },
+      {
+        "id": 4,
+        "word": "上一份",
+        "pinyin": "shàngyīfèn",
+        "meaning": "a anterior"
+      },
+      {
+        "id": 5,
+        "word": "就业证",
+        "pinyin": "jiùyèzhèng",
+        "meaning": "certificado de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "顺利",
+        "pinyin": "shùnlì",
+        "meaning": "sem dificuldades"
+      }
+    ],
+    "id": "local-1780225437578-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我问过了，是工作内容和你的专业问题。你大学的专业是语言文学，上份工作是翻译没问题。但是这次你来是做市场部助理。",
+    "pinyin": "Wǒ wènguò le, shì gōngzuò nèiróng hé nǐ de zhuānyè wèntí. Nǐ dàxué de zhuānyè shì yǔyánwénxué, shàngfèn gōngzuò shì fānyì méi wèntí. Dànshì zhècì nǐ lái shì zuò shìchǎngbù zhùlǐ.",
+    "translation": "A: Eu perguntei, é sobre o conteúdo do trabalho e a sua área de formação. O seu curso universitário foi em língua e literatura, então não há problema em ter trabalhado como tradutor na última vez. Mas desta vez você veio para atuar como assistente de marketing.",
+    "tokens": [
+      "我",
+      "问过",
+      "了",
+      "，",
+      "是",
+      "工作",
+      "内容",
+      "和",
+      "你",
+      "的",
+      "专业",
+      "问题",
+      "。",
+      "你",
+      "大学",
+      "的",
+      "专业",
+      "是",
+      "语言文学",
+      "，",
+      "上份",
+      "工作",
+      "是",
+      "翻译",
+      "没",
+      "问题",
+      "。",
+      "但是",
+      "这次",
+      "你",
+      "来",
+      "是",
+      "做",
+      "市场部",
+      "助理",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "工作内容",
+        "pinyin": "gōngzuònèiróng",
+        "meaning": "conteúdo do trabalho"
+      },
+      {
+        "id": 2,
+        "word": "专业",
+        "pinyin": "zhuānyè",
+        "meaning": "formação / especialidade"
+      },
+      {
+        "id": 3,
+        "word": "语言文学",
+        "pinyin": "yǔyánwénxué",
+        "meaning": "língua e literatura"
+      },
+      {
+        "id": 4,
+        "word": "翻译",
+        "pinyin": "fānyì",
+        "meaning": "tradução / tradutor"
+      },
+      {
+        "id": 5,
+        "word": "市场部",
+        "pinyin": "shìchǎngbù",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 6,
+        "word": "助理",
+        "pinyin": "zhùlǐ",
+        "meaning": "assistente"
+      }
+    ],
+    "id": "local-1780225437578-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这有什么关系？公司觉得我合格就行啦。",
+    "pinyin": "Zhèyǒu shénme guānxì? Gōngsī juéde wǒ hégé jiùxíng la.",
+    "translation": "B: Que diferença faz? Desde que a empresa considere-me qualificado, está tudo bem.",
+    "tokens": [
+      "这有",
+      "什么",
+      "关系",
+      "？",
+      "公司",
+      "觉得",
+      "我",
+      "合格",
+      "就行",
+      "啦",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "isto"
+      },
+      {
+        "id": 2,
+        "word": "有什么关系",
+        "pinyin": "yǒushénmeguānxì",
+        "meaning": "qual a importância / que diferença faz"
+      },
+      {
+        "id": 3,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar / considerar"
+      },
+      {
+        "id": 5,
+        "word": "合格",
+        "pinyin": "hégé",
+        "meaning": "qualificado / apto"
+      },
+      {
+        "id": 6,
+        "word": "就行",
+        "pinyin": "jiùxíng",
+        "meaning": "basta / está ok"
+      }
+    ],
+    "id": "local-1780225437578-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 不行，中国规定专业和工作必须对口。",
+    "pinyin": "Bùxíng, zhōngguó guīdìng zhuānyè hé gōngzuò bìxū duìkǒu.",
+    "translation": "A: Não, a China exige que a formação acadêmica esteja alinhada com a profissão.",
+    "tokens": [
+      "不行",
+      "，",
+      "中国",
+      "规定",
+      "专业",
+      "和",
+      "工作",
+      "必须",
+      "对口",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não, não é possível"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "规定",
+        "pinyin": "guīdìng",
+        "meaning": "regra, regulamento"
+      },
+      {
+        "id": 4,
+        "word": "专业",
+        "pinyin": "zhuānyè",
+        "meaning": "formação acadêmica, especialidade"
+      },
+      {
+        "id": 5,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho, emprego"
+      },
+      {
+        "id": 6,
+        "word": "对口",
+        "pinyin": "duìkǒu",
+        "meaning": "alinhado, compatível"
+      }
+    ],
+    "id": "local-1780225437578-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 太奇怪了。不过我在大学辅修过商贸课程，这个可以吗？",
+    "pinyin": "Tài qíguài le. Bùguò wǒ zài dàxué fǔxiū guò shāngmào kèchéng, zhège kěyǐ ma?",
+    "translation": "B: É muito estranho. Mas eu fiz um curso complementar de comércio na universidade, isso serve?",
+    "tokens": [
+      "太",
+      "奇怪",
+      "了",
+      "。",
+      "不过",
+      "我",
+      "在",
+      "大学",
+      "辅修",
+      "过",
+      "商贸",
+      "课程",
+      "，",
+      "这个",
+      "可以",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "奇怪",
+        "pinyin": "qíguài",
+        "meaning": "estranho"
+      },
+      {
+        "id": 2,
+        "word": "不过",
+        "pinyin": "bùguò",
+        "meaning": "mas, no entanto"
+      },
+      {
+        "id": 3,
+        "word": "大学",
+        "pinyin": "dàxué",
+        "meaning": "universidade"
+      },
+      {
+        "id": 4,
+        "word": "辅修",
+        "pinyin": "fǔxiū",
+        "meaning": "fazer curso complementar/minor"
+      },
+      {
+        "id": 5,
+        "word": "商贸",
+        "pinyin": "shāngmào",
+        "meaning": "comércio e negócios"
+      },
+      {
+        "id": 6,
+        "word": "课程",
+        "pinyin": "kèchéng",
+        "meaning": "curso, disciplina"
+      }
+    ],
+    "id": "local-1780225437578-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我觉得可以试试看，但是你以前做过类似的工作吗？",
+    "pinyin": "Wǒ juéde kěyǐ shìshìkàn, dànshì nǐ yǐqián zuòguò lèisì de gōngzuò ma?",
+    "translation": "A: Acho que vale a pena tentar, mas você já fez um trabalho parecido antes?",
+    "tokens": [
+      "我",
+      "觉得",
+      "可以",
+      "试试看",
+      "，",
+      "但是",
+      "你",
+      "以前",
+      "做过",
+      "类似",
+      "的",
+      "工作",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar, sentir"
+      },
+      {
+        "id": 2,
+        "word": "试试看",
+        "pinyin": "shìshìkàn",
+        "meaning": "tentar, experimentar"
+      },
+      {
+        "id": 3,
+        "word": "以前",
+        "pinyin": "yǐqián",
+        "meaning": "antes, anteriormente"
+      },
+      {
+        "id": 4,
+        "word": "做过",
+        "pinyin": "zuòguò",
+        "meaning": "ter feito, ter trabalhado com"
+      },
+      {
+        "id": 5,
+        "word": "类似",
+        "pinyin": "lèisì",
+        "meaning": "similar, parecido"
+      },
+      {
+        "id": 6,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      }
+    ],
+    "id": "local-1780225437578-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 没有。",
+    "pinyin": "Méiyǒu.",
+    "translation": "B: Não.",
+    "tokens": [
+      "没有",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "não / não ter"
+      }
+    ],
+    "id": "local-1780225437578-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 唉，那也不行。不但要求专业对口，还必须有类似的工作经验。",
+    "pinyin": "Āi, nà yě bùxíng. Bùdàn yāoqiú zhuānyèduìkǒu, hái bìxū yǒu lèisì de gōngzuò jīngyàn.",
+    "translation": "A: Ah, isso também não serve. Não só exige que a formação seja compatível com a área, como também é necessário ter experiência de trabalho semelhante.",
+    "tokens": [
+      "唉",
+      "，",
+      "那",
+      "也",
+      "不行",
+      "。",
+      "不但",
+      "要求",
+      "专业对口",
+      "，",
+      "还",
+      "必须",
+      "有",
+      "类似",
+      "的",
+      "工作",
+      "经验",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不行",
+        "pinyin": "bùxíng",
+        "meaning": "não serve / não funciona"
+      },
+      {
+        "id": 2,
+        "word": "不但",
+        "pinyin": "bùdàn",
+        "meaning": "não só"
+      },
+      {
+        "id": 3,
+        "word": "专业",
+        "pinyin": "zhuānyè",
+        "meaning": "formação profissional / área de estudo"
+      },
+      {
+        "id": 4,
+        "word": "对口",
+        "pinyin": "duìkǒu",
+        "meaning": "compatível / adequado"
+      },
+      {
+        "id": 5,
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "além disso / também"
+      },
+      {
+        "id": 6,
+        "word": "必须",
+        "pinyin": "bìxū",
+        "meaning": "deve / é necessário"
+      },
+      {
+        "id": 7,
+        "word": "经验",
+        "pinyin": "jīngyàn",
+        "meaning": "experiência"
+      }
+    ],
+    "id": "local-1780225437578-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那我在中国只能做翻译？",
+    "pinyin": "Nà wǒ zài zhōngguó zhǐnéng zuò fānyì?",
+    "translation": "B: Então, na China, só posso trabalhar como tradutor?",
+    "tokens": [
+      "那",
+      "我",
+      "在",
+      "中国",
+      "只能",
+      "做",
+      "翻译",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 3,
+        "word": "只能",
+        "pinyin": "zhǐnéng",
+        "meaning": "só pode / apenas pode"
+      },
+      {
+        "id": 4,
+        "word": "做",
+        "pinyin": "zuò",
+        "meaning": "fazer / trabalhar como"
+      },
+      {
+        "id": 5,
+        "word": "翻译",
+        "pinyin": "fānyì",
+        "meaning": "tradutor / tradução"
+      }
+    ],
+    "id": "local-1780225437578-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 要不然这样吧，我回去和经理商量一下。把你的职位改一下，改成市场部翻译。但是你实际的工作内容还是不变。",
+    "pinyin": "Yàobùrán zhèyàng ba, wǒ huíqù hé jīnglǐ shāngliángyīxià. Bǎ nǐ de zhíwèi gǎi yīxià, gǎichéng shìchǎngbù fānyì. Dànshì nǐ shíjì de gōngzuò nèiróng háishì bùbiàn.",
+    "translation": "A: Que tal assim: eu volto e discuto com o gerente. Vou alterar o seu cargo para Tradutor do Departamento de Marketing, mas o seu conteúdo de trabalho real permanecerá o mesmo.",
+    "tokens": [
+      "要不然",
+      "这样",
+      "吧",
+      "，",
+      "我",
+      "回去",
+      "和",
+      "经理",
+      "商量一下",
+      "。",
+      "把",
+      "你",
+      "的",
+      "职位",
+      "改",
+      "一下",
+      "，",
+      "改成",
+      "市场部",
+      "翻译",
+      "。",
+      "但是",
+      "你",
+      "实际",
+      "的",
+      "工作",
+      "内容",
+      "还是",
+      "不变",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "要不然",
+        "pinyin": "yàobùrán",
+        "meaning": "caso contrário / senão"
+      },
+      {
+        "id": 2,
+        "word": "商量",
+        "pinyin": "shāngliáng",
+        "meaning": "discutir / consultar"
+      },
+      {
+        "id": 3,
+        "word": "职位",
+        "pinyin": "zhíwèi",
+        "meaning": "cargo / posição"
+      },
+      {
+        "id": 4,
+        "word": "市场部",
+        "pinyin": "shìchǎngbù",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 5,
+        "word": "翻译",
+        "pinyin": "fānyì",
+        "meaning": "tradutor / tradução"
+      },
+      {
+        "id": 6,
+        "word": "实际",
+        "pinyin": "shíjì",
+        "meaning": "real / prático"
+      },
+      {
+        "id": 7,
+        "word": "不变",
+        "pinyin": "bùbiàn",
+        "meaning": "inalterado / invariável"
+      }
+    ],
+    "id": "local-1780225437578-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这样行吗？",
+    "pinyin": "Zhèyàng xíng ma?",
+    "translation": "B: Isso funciona?",
+    "tokens": [
+      "这样",
+      "行",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这样",
+        "pinyin": "zhèyàng",
+        "meaning": "assim, dessa maneira"
+      },
+      {
+        "id": 2,
+        "word": "行",
+        "pinyin": "xíng",
+        "meaning": "funcionar, ser aceitável"
+      },
+      {
+        "id": 3,
+        "word": "吗",
+        "pinyin": "ma",
+        "meaning": "partícula de pergunta"
+      }
+    ],
+    "id": "local-1780225437578-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 应该可以，我听说有些公司就这么干的。这样也容易通过，反正翻译是外国人天经地义。",
+    "pinyin": "Yīnggāi kěyǐ, wǒ tīngshuō yǒuxiē gōngsī jiù zhème gàn de. Zhèyàng yě róngyì tōngguò, fǎnzhèng fānyì shì wàiguórén tiānjīngdìyì.",
+    "translation": "A: Deve ser possível, ouvi dizer que algumas empresas fazem isso. Assim também é mais fácil de aprovar, afinal, ser estrangeiro é algo natural e esperado.",
+    "tokens": [
+      "应该",
+      "可以",
+      "，",
+      "我",
+      "听说",
+      "有些",
+      "公司",
+      "就",
+      "这么",
+      "干",
+      "的",
+      "。",
+      "这样",
+      "也",
+      "容易",
+      "通过",
+      "，",
+      "反正",
+      "翻译",
+      "是",
+      "外国人",
+      "天经地义",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "deveria / provavelmente"
+      },
+      {
+        "id": 2,
+        "word": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "ouvi dizer / soube"
+      },
+      {
+        "id": 3,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "通过",
+        "pinyin": "tōngguò",
+        "meaning": "aprovar / passar"
+      },
+      {
+        "id": 5,
+        "word": "反正",
+        "pinyin": "fǎnzhèng",
+        "meaning": "de qualquer forma / de todo modo"
+      },
+      {
+        "id": 6,
+        "word": "翻译",
+        "pinyin": "fānyì",
+        "meaning": "tradutor"
+      },
+      {
+        "id": 7,
+        "word": "天经地义",
+        "pinyin": "tiānjīngdìyì",
+        "meaning": "algo natural e esperado / regra absoluta"
+      }
+    ],
+    "id": "local-1780225437578-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好吧，看来我要一直在中国当翻译了。",
+    "pinyin": "Hǎo ba, kànlái wǒyào yìzhí zài zhōngguó dāng fānyì le.",
+    "translation": "B: Tudo bem, parece que vou ter que ser tradutor na China para sempre.",
+    "tokens": [
+      "好",
+      "吧",
+      "，",
+      "看来",
+      "我要",
+      "一直",
+      "在",
+      "中国",
+      "当",
+      "翻译",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好吧",
+        "pinyin": "hǎoba",
+        "meaning": "tudo bem / ok"
+      },
+      {
+        "id": 2,
+        "word": "看来",
+        "pinyin": "kànlái",
+        "meaning": "parece que"
+      },
+      {
+        "id": 3,
+        "word": "一直",
+        "pinyin": "yìzhí",
+        "meaning": "sempre / continuamente"
+      },
+      {
+        "id": 4,
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "meaning": "China"
+      },
+      {
+        "id": 5,
+        "word": "翻译",
+        "pinyin": "fānyì",
+        "meaning": "tradutor / tradução"
+      }
+    ],
+    "id": "local-1780225437578-13",
+    "language": "Chinês"
+  }
+]

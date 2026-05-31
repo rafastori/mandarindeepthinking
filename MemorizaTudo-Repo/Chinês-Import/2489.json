@@ -1,444 +1,299 @@
 [
   {
-    "chinese": "我气死了。你整天说我这不好那不好。",
-    "pinyin": "Wǒ qì sǐ le. Nǐ zhěng tiān shuō wǒ zhè bù hǎo nà bù hǎo.",
-    "translation": "Estou furioso/a. Você o dia inteiro diz que isso em mim não é bom, aquilo em mim não é bom.",
+    "chinese": "A: 气死我了，一天到晚说我这里不好，那里不好。",
+    "pinyin": "Qìsǐwǒle, yītiāndàowǎn shuō wǒ zhèlǐ bùhǎo, nàlǐ bùhǎo.",
+    "translation": "A: Estou morrendo de raiva, o dia inteiro me criticando por isso e aquilo.",
     "tokens": [
-      "我",
-      "气",
-      "死",
-      "了",
-      "你",
-      "整天",
+      "气死我了",
+      "，",
+      "一天到晚",
       "说",
       "我",
-      "这",
-      "不",
-      "好",
-      "那",
-      "不",
-      "好"
+      "这里",
+      "不好",
+      "，",
+      "那里",
+      "不好",
+      "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "气死",
+        "pinyin": "qìsǐ",
+        "meaning": "ficar furioso"
       },
       {
         "id": 2,
-        "word": "气死了",
-        "pinyin": "qì sǐ le",
-        "meaning": "estar furioso, morrer de raiva"
+        "word": "一天到晚",
+        "pinyin": "yītiāndàowǎn",
+        "meaning": "o dia inteiro"
       },
       {
         "id": 3,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "dizer"
       },
       {
         "id": 4,
-        "word": "整天",
-        "pinyin": "zhěng tiān",
-        "meaning": "o dia inteiro, o tempo todo"
-      },
-      {
-        "id": 5,
-        "word": "说",
-        "pinyin": "shuō",
-        "meaning": "falar, dizer"
-      },
-      {
-        "id": 6,
-        "word": "这",
-        "pinyin": "zhè",
-        "meaning": "este, isso"
-      },
-      {
-        "id": 7,
         "word": "不好",
-        "pinyin": "bù hǎo",
-        "meaning": "não é bom, ruim"
-      },
-      {
-        "id": 8,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "aquele, aquilo"
+        "pinyin": "bùhǎo",
+        "meaning": "não bom / ruim"
       }
     ],
-    "id": "local-1772301544152-0",
+    "id": "local-1780203547664-0",
     "language": "Chinês"
   },
   {
-    "chinese": "真的有你这样的老婆吗？我跟朋友出去吃饭，你连问都要问得清清楚楚。",
-    "pinyin": "Zhēn de yǒu nǐ zhè yàng de lǎo pó ma? Wǒ gēn péng yǒu chū qù chī fàn, nǐ lián wèn dōu yào wèn de qīng qīng chǔ chǔ.",
-    "translation": "Será que existe mesmo uma esposa assim como você? Eu saio para comer com amigos, e você até mesmo precisa perguntar tudo muito claramente.",
+    "chinese": "A: 有你这样做妻子的吗？和朋友吃个饭都要问长问短。",
+    "pinyin": "Yǒu nǐ zhèyàng zuò qīzǐ de ma? Hé péngyǒu chīgè fàn dōu yào wènchángwènduǎn.",
+    "translation": "A: Existe esposa que faz isso? Até para jantar com amigos, ela fica perguntando tudo.",
     "tokens": [
-      "真的",
       "有",
       "你",
       "这样",
+      "做",
+      "妻子",
       "的",
-      "老婆",
       "吗",
-      "我",
-      "跟",
+      "？",
+      "和",
       "朋友",
-      "出去",
-      "吃饭",
-      "你",
-      "连",
-      "问",
+      "吃个",
+      "饭",
       "都",
       "要",
-      "问",
-      "得",
-      "清清楚楚"
+      "问长问短",
+      "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "真的",
-        "pinyin": "zhēn de",
-        "meaning": "realmente, de verdade"
-      },
-      {
-        "id": 2,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter, haver"
-      },
-      {
-        "id": 3,
-        "word": "这样",
-        "pinyin": "zhè yàng",
-        "meaning": "assim, dessa forma"
-      },
-      {
-        "id": 4,
-        "word": "老婆",
-        "pinyin": "lǎo pó",
+        "word": "妻子",
+        "pinyin": "qīzǐ",
         "meaning": "esposa"
       },
       {
-        "id": 5,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
-      },
-      {
-        "id": 6,
-        "word": "跟",
-        "pinyin": "gēn",
-        "meaning": "com, seguir"
-      },
-      {
-        "id": 7,
+        "id": 2,
         "word": "朋友",
-        "pinyin": "péng yǒu",
-        "meaning": "amigo"
+        "pinyin": "péngyǒu",
+        "meaning": "amigo(s)"
       },
       {
-        "id": 8,
-        "word": "出去",
-        "pinyin": "chū qù",
-        "meaning": "sair"
-      },
-      {
-        "id": 9,
-        "word": "吃饭",
-        "pinyin": "chī fàn",
-        "meaning": "comer (uma refeição)"
-      },
-      {
-        "id": 10,
-        "word": "连...都",
-        "pinyin": "lián...dōu",
-        "meaning": "até mesmo...também/tudo (estrutura para enfatizar)"
-      },
-      {
-        "id": 11,
-        "word": "问",
-        "pinyin": "wèn",
-        "meaning": "perguntar"
-      },
-      {
-        "id": 12,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "precisar, querer, dever"
-      },
-      {
-        "id": 13,
-        "word": "清清楚楚",
-        "pinyin": "qīng qīng chǔ chǔ",
-        "meaning": "muito claro, detalhado, nítido"
+        "id": 3,
+        "word": "问长问短",
+        "pinyin": "wènchángwènduǎn",
+        "meaning": "perguntar tudo, indagar incessantemente"
       }
     ],
-    "id": "local-1772301544152-1",
+    "id": "local-1780203547664-1",
     "language": "Chinês"
   },
   {
-    "chinese": "秘书给我发的每一条短信你都要检查。你讲不讲道理？！",
-    "pinyin": "Mì shū gěi wǒ fā de měi yī tiáo duǎn xìn nǐ dōu yào jiǎn chá. Nǐ jiǎng bù jiǎng dào lǐ?!",
-    "translation": "Cada mensagem que a secretária me envia, você tem que verificar. Você é razoável ou não?! (Você tem bom senso?!)",
+    "chinese": "A: 秘书给我发的每条短信都要审查。你讲不讲理啊！",
+    "pinyin": "Mìshū gěiwǒfā de měitiáo duǎnxìn dōu yào shěnchá. Nǐ jiǎng bùjiǎnglǐ a!",
+    "translation": "A: Preciso revisar cada mensagem de texto que a secretária me envia. Você está sendo irracional!",
     "tokens": [
       "秘书",
-      "给",
-      "我",
-      "发",
+      "给我发",
       "的",
-      "每一",
-      "条",
+      "每条",
       "短信",
-      "你",
       "都",
       "要",
-      "检查",
+      "审查",
+      "。",
       "你",
       "讲",
-      "不",
-      "讲",
-      "道理"
+      "不讲理",
+      "啊",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "秘书",
-        "pinyin": "mì shū",
+        "pinyin": "mìshū",
         "meaning": "secretário(a)"
       },
       {
         "id": 2,
-        "word": "给",
-        "pinyin": "gěi",
-        "meaning": "dar, para (preposição)"
+        "word": "短信",
+        "pinyin": "duǎnxìn",
+        "meaning": "mensagem de texto/SMS"
       },
       {
         "id": 3,
-        "word": "发",
-        "pinyin": "fā",
-        "meaning": "enviar, emitir"
+        "word": "审查",
+        "pinyin": "shěnchá",
+        "meaning": "revisar/examinar"
       },
       {
         "id": 4,
-        "word": "每一条",
-        "pinyin": "měi yī tiáo",
-        "meaning": "cada (usado com medida para itens longos e finos, como mensagens)"
-      },
-      {
-        "id": 5,
-        "word": "短信",
-        "pinyin": "duǎn xìn",
-        "meaning": "mensagem de texto, SMS"
-      },
-      {
-        "id": 6,
-        "word": "检查",
-        "pinyin": "jiǎn chá",
-        "meaning": "verificar, inspecionar"
-      },
-      {
-        "id": 7,
-        "word": "讲道理",
-        "pinyin": "jiǎng dào lǐ",
-        "meaning": "ser razoável, ter bom senso"
-      },
-      {
-        "id": 8,
-        "word": "讲不讲道理",
-        "pinyin": "jiǎng bù jiǎng dào lǐ",
-        "meaning": "é razoável ou não?, tem bom senso ou não?"
+        "word": "讲理",
+        "pinyin": "jiǎnglǐ",
+        "meaning": "ser razoável/lógico"
       }
     ],
-    "id": "local-1772301544152-2",
+    "id": "local-1780203547664-2",
     "language": "Chinês"
   },
   {
-    "chinese": "上次我过生日，你都没问我就买那么贵的蛋糕。太过分了！",
-    "pinyin": "Shàng cì wǒ guò shēng rì, nǐ dōu méi wèn wǒ jiù mǎi nà me guì de dàn gāo. Tài guò fèn le!",
-    "translation": "Da última vez que eu fiz aniversário, você nem me perguntou e já comprou um bolo tão caro. É demais! (É um exagero!)",
+    "chinese": "A: 上次我过生日，不和我商量就买了那么贵的蛋糕。太过分了！",
+    "pinyin": "Shàngcì wǒ guòshēngrì, bù hé wǒ shāngliáng jiù mǎi le nàme guì de dàngāo. Tàiguòfèn le!",
+    "translation": "A: Na minha última aniversário, eles compraram um bolo tão caro sem me consultar. Foi demais!",
     "tokens": [
       "上次",
       "我",
-      "过",
-      "生日",
-      "你",
-      "都",
-      "没",
-      "问",
+      "过生日",
+      "，",
+      "不",
+      "和",
       "我",
+      "商量",
       "就",
       "买",
+      "了",
       "那么",
       "贵",
       "的",
       "蛋糕",
-      "太",
-      "过分",
-      "了"
+      "。",
+      "太过分",
+      "了",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "上次",
-        "pinyin": "shàng cì",
+        "pinyin": "shàngcì",
         "meaning": "da última vez"
       },
       {
         "id": 2,
         "word": "过生日",
-        "pinyin": "guò shēng rì",
-        "meaning": "celebrar o aniversário"
+        "pinyin": "guòshēngrì",
+        "meaning": "comemorar aniversário"
       },
       {
         "id": 3,
-        "word": "没",
-        "pinyin": "méi",
-        "meaning": "não (para o passado), não ter"
+        "word": "商量",
+        "pinyin": "shāngliáng",
+        "meaning": "consultar/discutir"
       },
       {
         "id": 4,
-        "word": "就",
-        "pinyin": "jiù",
-        "meaning": "então, logo, imediatamente"
+        "word": "那么",
+        "pinyin": "nàme",
+        "meaning": "tão"
       },
       {
         "id": 5,
-        "word": "买",
-        "pinyin": "mǎi",
-        "meaning": "comprar"
-      },
-      {
-        "id": 6,
-        "word": "那么",
-        "pinyin": "nà me",
-        "meaning": "tão, tanto"
-      },
-      {
-        "id": 7,
         "word": "贵",
         "pinyin": "guì",
         "meaning": "caro"
       },
       {
-        "id": 8,
-        "word": "蛋糕",
-        "pinyin": "dàn gāo",
-        "meaning": "bolo"
-      },
-      {
-        "id": 9,
-        "word": "太过分了",
-        "pinyin": "tài guò fèn le",
-        "meaning": "é demais, é um exagero"
+        "id": 6,
+        "word": "过分",
+        "pinyin": "guòfèn",
+        "meaning": "excessivo/demais"
       }
     ],
-    "id": "local-1772301544152-3",
+    "id": "local-1780203547664-3",
     "language": "Chinês"
   },
   {
-    "chinese": "连我看足球赛的时候，你都要抢电视遥控器。我受不了了！",
-    "pinyin": "Lián wǒ kàn zú qiú sài de shí hou, nǐ dōu yào qiǎng diàn shì yáo kòng qì. Wǒ shòu bu liǎo le!",
-    "translation": "Até mesmo quando estou assistindo a um jogo de futebol, você tem que pegar o controle remoto da televisão. Eu não aguento mais!",
+    "chinese": "A: 连看个足球，都要跟我抢电视遥控器。这日子没法过了！",
+    "pinyin": "Lián kàngè zúqiú, dōu yào gēn wǒ qiǎng diànshì yáokòngqì. Zhè rìzi méifǎ guò le!",
+    "translation": "A: Até para ver futebol, ele tem que brigar comigo pelo controle remoto da TV. Não dá mais pra viver assim!",
     "tokens": [
       "连",
-      "我",
-      "看",
-      "足球赛",
-      "的",
-      "时候",
-      "你",
+      "看个",
+      "足球",
+      "，",
       "都",
       "要",
+      "跟",
+      "我",
       "抢",
       "电视",
       "遥控器",
-      "我",
-      "受不了",
-      "了"
+      "。",
+      "这",
+      "日子",
+      "没法",
+      "过",
+      "了",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "看",
-        "pinyin": "kàn",
-        "meaning": "ver, assistir"
+        "word": "连",
+        "pinyin": "lián",
+        "meaning": "até mesmo"
       },
       {
         "id": 2,
-        "word": "足球赛",
-        "pinyin": "zú qiú sài",
-        "meaning": "jogo de futebol"
+        "word": "看个足球",
+        "pinyin": "kàngèzúqiú",
+        "meaning": "assistir a um jogo de futebol"
       },
       {
         "id": 3,
-        "word": "的时候",
-        "pinyin": "de shí hou",
-        "meaning": "quando, no momento em que"
+        "word": "抢",
+        "pinyin": "qiǎng",
+        "meaning": "roubar, disputar"
       },
       {
         "id": 4,
-        "word": "抢",
-        "pinyin": "qiǎng",
-        "meaning": "pegar, disputar, roubar"
-      },
-      {
-        "id": 5,
-        "word": "电视",
-        "pinyin": "diàn shì",
-        "meaning": "televisão"
-      },
-      {
-        "id": 6,
         "word": "遥控器",
-        "pinyin": "yáo kòng qì",
+        "pinyin": "yáokòngqì",
         "meaning": "controle remoto"
       },
       {
-        "id": 7,
-        "word": "受不了",
-        "pinyin": "shòu bu liǎo",
-        "meaning": "não aguentar, não suportar"
+        "id": 5,
+        "word": "没法过",
+        "pinyin": "méifǎguò",
+        "meaning": "impossível de viver/suportar"
       }
     ],
-    "id": "local-1772301544152-4",
+    "id": "local-1780203547664-4",
     "language": "Chinês"
   },
   {
-    "chinese": "到底这个家谁说了算？！",
-    "pinyin": "Dào dǐ zhè ge jiā shuí shuō le suàn?!",
-    "translation": "Afinal, quem manda nesta casa?!",
+    "chinese": "A: 这家里到底谁说了算！",
+    "pinyin": "Zhè jiālǐ dàodǐ shuí shuōlesuàn!",
+    "translation": "A: Quem é que manda realmente nesta casa!",
     "tokens": [
+      "这",
+      "家里",
       "到底",
-      "这个",
-      "家",
       "谁",
-      "说",
-      "了",
-      "算"
+      "说了算",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "到底",
-        "pinyin": "dào dǐ",
-        "meaning": "afinal, no final das contas"
+        "word": "这",
+        "pinyin": "zhè",
+        "meaning": "esta"
       },
       {
         "id": 2,
-        "word": "这个",
-        "pinyin": "zhè ge",
-        "meaning": "este, esta"
+        "word": "家里",
+        "pinyin": "jiālǐ",
+        "meaning": "em casa"
       },
       {
         "id": 3,
-        "word": "家",
-        "pinyin": "jiā",
-        "meaning": "casa, família"
+        "word": "到底",
+        "pinyin": "dàodǐ",
+        "meaning": "no fundo / afinal"
       },
       {
         "id": 4,
@@ -449,126 +304,115 @@
       {
         "id": 5,
         "word": "说了算",
-        "pinyin": "shuō le suàn",
-        "meaning": "ter a palavra final, decidir, mandar"
+        "pinyin": "shuōlesuàn",
+        "meaning": "tem a última palavra / manda"
       }
     ],
-    "id": "local-1772301544152-5",
+    "id": "local-1780203547664-5",
     "language": "Chinês"
   },
   {
-    "chinese": "你在干什么？对着镜子自言自语。碗还没洗呢！",
-    "pinyin": "Nǐ zài gàn shén me? Duì zhe jìng zi zì yán zì yǔ. Wǎn hái méi xǐ ne!",
-    "translation": "O que você está fazendo? Falando sozinho para o espelho. Os pratos ainda não foram lavados!",
+    "chinese": "B: 你在干嘛呢?一个人对着镜子说话，还不快去洗碗！",
+    "pinyin": "Nǐ zài gànmá ne? Yígè rén duì zhe jìngzi shuōhuà, hái bùkuài qù xǐwǎn!",
+    "translation": "B: O que você está fazendo? Ficando sozinho falando com o espelho, vá lavar a louça logo!",
     "tokens": [
       "你",
       "在",
-      "干什么",
+      "干嘛",
+      "呢",
+      "?",
+      "一个",
+      "人",
       "对",
       "着",
       "镜子",
-      "自言自语",
-      "碗",
+      "说话",
+      "，",
       "还",
-      "没",
-      "洗",
-      "呢"
+      "不快",
+      "去",
+      "洗碗",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "在",
         "pinyin": "zài",
-        "meaning": "estar (fazendo algo), em"
+        "meaning": "em (indica ação contínua)"
       },
       {
         "id": 2,
-        "word": "干什么",
-        "pinyin": "gàn shén me",
-        "meaning": "o que fazer, o que está acontecendo"
+        "word": "干嘛",
+        "pinyin": "gànmá",
+        "meaning": "fazer o quê"
       },
       {
         "id": 3,
-        "word": "对着",
-        "pinyin": "duì zhe",
-        "meaning": "em direção a, de frente para"
+        "word": "一个人",
+        "pinyin": "yígèrén",
+        "meaning": "sozinho"
       },
       {
         "id": 4,
-        "word": "镜子",
-        "pinyin": "jìng zi",
-        "meaning": "espelho"
+        "word": "对着",
+        "pinyin": "duìzhe",
+        "meaning": "de frente para"
       },
       {
         "id": 5,
-        "word": "自言自语",
-        "pinyin": "zì yán zì yǔ",
-        "meaning": "falar sozinho"
+        "word": "镜子",
+        "pinyin": "jìngzi",
+        "meaning": "espelho"
       },
       {
         "id": 6,
-        "word": "碗",
-        "pinyin": "wǎn",
-        "meaning": "tigela, prato"
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "falar"
       },
       {
         "id": 7,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda"
-      },
-      {
-        "id": 8,
-        "word": "没",
-        "pinyin": "méi",
-        "meaning": "não (para o passado), não ter"
-      },
-      {
-        "id": 9,
-        "word": "洗",
-        "pinyin": "xǐ",
-        "meaning": "lavar"
-      },
-      {
-        "id": 10,
-        "word": "呢",
-        "pinyin": "ne",
-        "meaning": "partícula para indicar continuidade ou suavizar uma pergunta"
+        "word": "洗碗",
+        "pinyin": "xǐwǎn",
+        "meaning": "lavar a louça"
       }
     ],
-    "id": "local-1772301544152-6",
+    "id": "local-1780203547664-6",
     "language": "Chinês"
   },
   {
-    "chinese": "噢，噢。好。我这就去！",
-    "pinyin": "Ō, ō. Hǎo. Wǒ zhè jiù qù!",
-    "translation": "Ah, ah. Certo. Eu vou agora mesmo!",
+    "chinese": "A: 哦哦，好的！马上去！",
+    "pinyin": "Ó ó, hǎo de! Mǎshàng qù!",
+    "translation": "A: Ah, entendi! Vou lá agora mesmo!",
     "tokens": [
-      "噢",
-      "噢",
+      "哦",
+      "哦",
+      "，",
       "好",
-      "我",
-      "这",
-      "就",
-      "去"
+      "的",
+      "！",
+      "马上",
+      "去",
+      "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "噢",
-        "pinyin": "ō",
-        "meaning": "oh, ah (interjeição)"
+        "word": "哦哦",
+        "pinyin": "óó",
+        "meaning": "ah, entendi"
       },
       {
         "id": 2,
-        "word": "好",
-        "pinyin": "hǎo",
-        "meaning": "bom, ok, certo"
+        "word": "好的",
+        "pinyin": "hǎode",
+        "meaning": "tudo bem, ok"
       },
       {
         "id": 3,
-        "word": "这就",
-        "pinyin": "zhè jiù",
+        "word": "马上",
+        "pinyin": "mǎshàng",
         "meaning": "imediatamente, agora mesmo"
       },
       {
@@ -578,7 +422,7 @@
         "meaning": "ir"
       }
     ],
-    "id": "local-1772301544152-7",
+    "id": "local-1780203547664-7",
     "language": "Chinês"
   }
 ]

@@ -1,0 +1,690 @@
+[
+  {
+    "chinese": "A: 这个季度公司的销售额比上个季度下降了20\\\\%",
+    "pinyin": "Zhège jìdù gōngsī de xiāoshòué bǐ shànggèjìdù xiàjiàng le 20 \\ \\ %",
+    "translation": "A: As vendas da empresa neste trimestre caíram 20% em comparação com o trimestre anterior.",
+    "tokens": [
+      "这个",
+      "季度",
+      "公司",
+      "的",
+      "销售额",
+      "比",
+      "上个季度",
+      "下降",
+      "了",
+      "20",
+      "\\",
+      "\\",
+      "%"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "季度",
+        "pinyin": "jìdù",
+        "meaning": "trimestre"
+      },
+      {
+        "id": 2,
+        "word": "销售额",
+        "pinyin": "xiāoshòué",
+        "meaning": "vendas / faturamento"
+      },
+      {
+        "id": 3,
+        "word": "下降",
+        "pinyin": "xiàjiàng",
+        "meaning": "cair / diminuir"
+      },
+      {
+        "id": 4,
+        "word": "上个季度",
+        "pinyin": "shànggèjìdù",
+        "meaning": "trimestre anterior"
+      }
+    ],
+    "id": "local-1780225928076-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这和季节性有关。每年这个时候我们的生意总是不太好。",
+    "pinyin": "Zhè hé jìjiéxìng yǒuguān. Měinián zhège shíhòu wǒmen de shēngyì zǒngshì bùtàihǎo.",
+    "translation": "B: Isso tem a ver com a sazonalidade. Nesta época do ano, nossos negócios nunca vão bem.",
+    "tokens": [
+      "这",
+      "和",
+      "季节性",
+      "有关",
+      "。",
+      "每年",
+      "这个",
+      "时候",
+      "我们",
+      "的",
+      "生意",
+      "总是",
+      "不太好",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "季节性",
+        "pinyin": "jìjiéxìng",
+        "meaning": "sazonalidade"
+      },
+      {
+        "id": 2,
+        "word": "有关",
+        "pinyin": "yǒuguān",
+        "meaning": "ter relação com"
+      },
+      {
+        "id": 3,
+        "word": "每年",
+        "pinyin": "měinián",
+        "meaning": "todos os anos"
+      },
+      {
+        "id": 4,
+        "word": "这个时候",
+        "pinyin": "zhègeshíhòu",
+        "meaning": "esta época"
+      },
+      {
+        "id": 5,
+        "word": "生意",
+        "pinyin": "shēngyì",
+        "meaning": "negócios"
+      },
+      {
+        "id": 6,
+        "word": "不太好",
+        "pinyin": "bùtàihǎo",
+        "meaning": "não vai bem"
+      }
+    ],
+    "id": "local-1780225928076-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 我觉得不光是季节性。以前下降额一般也就是5\\\\%左右最近我们在宣传上投入的也少，销售额当然也就下降了。还是应该增加市场部的预算。",
+    "pinyin": "Wǒ juéde bùguāng shì jìjiéxìng. Yǐqián xiàjiàng é yìbān yě jiùshì 5 \\ \\ % zuǒyòu zuìjìn wǒmen zài xuānchuán shàng tóurù de yě shǎo, xiāoshòué dāngrán yě jiù xiàjiàng le. Háishì yīnggāi zēngjiā shìchǎngbù de yùsuàn.",
+    "translation": "C: Acho que não é apenas uma questão sazonal. Anteriormente, a queda era geralmente de cerca de 5%. Como recentemente investimos pouco em propaganda, as vendas caíram naturalmente. Ainda assim, devemos aumentar o orçamento do departamento de marketing.",
+    "tokens": [
+      "我",
+      "觉得",
+      "不光",
+      "是",
+      "季节性",
+      "。",
+      "以前",
+      "下降",
+      "额",
+      "一般",
+      "也",
+      "就是",
+      "5",
+      "\\",
+      "\\",
+      "%",
+      "左右",
+      "最近",
+      "我们",
+      "在",
+      "宣传",
+      "上",
+      "投入",
+      "的",
+      "也",
+      "少",
+      "，",
+      "销售额",
+      "当然",
+      "也",
+      "就",
+      "下降",
+      "了",
+      "。",
+      "还是",
+      "应该",
+      "增加",
+      "市场部",
+      "的",
+      "预算",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "季节性",
+        "pinyin": "jìjiéxìng",
+        "meaning": "sazonalidade"
+      },
+      {
+        "id": 2,
+        "word": "下降",
+        "pinyin": "xiàjiàng",
+        "meaning": "queda"
+      },
+      {
+        "id": 3,
+        "word": "宣传",
+        "pinyin": "xuānchuán",
+        "meaning": "propaganda/publicidade"
+      },
+      {
+        "id": 4,
+        "word": "投入",
+        "pinyin": "tóurù",
+        "meaning": "investimento/aplicação"
+      },
+      {
+        "id": 5,
+        "word": "销售额",
+        "pinyin": "xiāoshòué",
+        "meaning": "vendas"
+      },
+      {
+        "id": 6,
+        "word": "市场部",
+        "pinyin": "shìchǎngbù",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 7,
+        "word": "预算",
+        "pinyin": "yùsuàn",
+        "meaning": "orçamento"
+      }
+    ],
+    "id": "local-1780225928076-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这样真的可以吗？减少市场部预算的不止我们一家公司，也不见得大家的销售额都减少了。",
+    "pinyin": "Zhèyàng zhēnde kěyǐ ma? Jiǎnshǎo shìchǎngbù yùsuàn de bùzhǐ wǒmen yījiā gōngsī, yě bújiànde dàjiā de xiāoshòué dōu jiǎnshǎo le.",
+    "translation": "B: Isso realmente funciona? Não somos a única empresa a reduzir o orçamento do departamento de marketing, e nem por isso as vendas de todos diminuíram.",
+    "tokens": [
+      "这样",
+      "真的",
+      "可以",
+      "吗",
+      "？",
+      "减少",
+      "市场部",
+      "预算",
+      "的",
+      "不止",
+      "我们",
+      "一家",
+      "公司",
+      "，",
+      "也",
+      "不见得",
+      "大家",
+      "的",
+      "销售额",
+      "都",
+      "减少",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这样",
+        "pinyin": "zhèyàng",
+        "meaning": "assim, dessa maneira"
+      },
+      {
+        "id": 2,
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "realmente, de verdade"
+      },
+      {
+        "id": 3,
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder, ser possível"
+      },
+      {
+        "id": 4,
+        "word": "减少",
+        "pinyin": "jiǎnshǎo",
+        "meaning": "reduzir, diminuir"
+      },
+      {
+        "id": 5,
+        "word": "市场部",
+        "pinyin": "shìchǎngbù",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 6,
+        "word": "预算",
+        "pinyin": "yùsuàn",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 7,
+        "word": "销售额",
+        "pinyin": "xiāoshòué",
+        "meaning": "vendas, volume de vendas"
+      }
+    ],
+    "id": "local-1780225928076-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 但是我们减少了预算，销售额就下降了。这很明显。",
+    "pinyin": "Dànshì wǒmen jiǎnshǎo le yùsuàn, xiāoshòué jiù xiàjiàng le. Zhè hěn míngxiǎn.",
+    "translation": "C: Mas quando reduzimos o orçamento, as vendas caíram. Isso é bem óbvio.",
+    "tokens": [
+      "但是",
+      "我们",
+      "减少",
+      "了",
+      "预算",
+      "，",
+      "销售额",
+      "就",
+      "下降",
+      "了",
+      "。",
+      "这",
+      "很",
+      "明显",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "但是",
+        "pinyin": "dànshì",
+        "meaning": "mas"
+      },
+      {
+        "id": 2,
+        "word": "减少",
+        "pinyin": "jiǎnshǎo",
+        "meaning": "reduzir"
+      },
+      {
+        "id": 3,
+        "word": "预算",
+        "pinyin": "yùsuàn",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 4,
+        "word": "销售额",
+        "pinyin": "xiāoshòué",
+        "meaning": "vendas"
+      },
+      {
+        "id": 5,
+        "word": "下降",
+        "pinyin": "xiàjiàng",
+        "meaning": "cair/diminuir"
+      },
+      {
+        "id": 6,
+        "word": "明显",
+        "pinyin": "míngxiǎn",
+        "meaning": "óbvio/evidente"
+      }
+    ],
+    "id": "local-1780225928076-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 这个不是肯不肯花钱的问题。预算在年前已经做好了，现在要增加不现实。",
+    "pinyin": "Zhège búshì kěnbùkěn huāqián de wèntí. Yùsuàn zài niánqián yǐjīng zuòhǎo le, xiànzài yào zēngjiā bù xiànshí.",
+    "translation": "A: Não se trata de querer ou não gastar dinheiro. O orçamento já foi definido antes do Ano Novo e agora é irrealista aumentá-lo.",
+    "tokens": [
+      "这个",
+      "不是",
+      "肯不肯",
+      "花钱",
+      "的",
+      "问题",
+      "。",
+      "预算",
+      "在",
+      "年前",
+      "已经",
+      "做好",
+      "了",
+      "，",
+      "现在",
+      "要",
+      "增加",
+      "不",
+      "现实",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "isto / isso"
+      },
+      {
+        "id": 2,
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "花钱",
+        "pinyin": "huāqián",
+        "meaning": "gastar dinheiro"
+      },
+      {
+        "id": 4,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema / questão"
+      },
+      {
+        "id": 5,
+        "word": "预算",
+        "pinyin": "yùsuàn",
+        "meaning": "orçamento"
+      },
+      {
+        "id": 6,
+        "word": "年前",
+        "pinyin": "niánqián",
+        "meaning": "antes do Ano Novo"
+      },
+      {
+        "id": 7,
+        "word": "现实",
+        "pinyin": "xiànshí",
+        "meaning": "realista / realidade"
+      }
+    ],
+    "id": "local-1780225928076-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 所以我当时就不同意啊。",
+    "pinyin": "Suǒyǐ wǒ dāngshí jiù bù tóngyì a.",
+    "translation": "C: Por isso, na época, eu discordava.",
+    "tokens": [
+      "所以",
+      "我",
+      "当时",
+      "就",
+      "不",
+      "同意",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "por isso"
+      },
+      {
+        "id": 2,
+        "word": "当时",
+        "pinyin": "dāngshí",
+        "meaning": "na época"
+      },
+      {
+        "id": 3,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "já"
+      },
+      {
+        "id": 4,
+        "word": "不同意",
+        "pinyin": "bùtóngyì",
+        "meaning": "discordar"
+      }
+    ],
+    "id": "local-1780225928076-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 现在不是抱怨的时候。我们要想出方案。",
+    "pinyin": "Xiànzài búshì bàoyuàn de shíhòu. Wǒmen yào xiǎng chū fāngàn.",
+    "translation": "A: Agora não é hora de reclamar. Precisamos pensar em uma solução.",
+    "tokens": [
+      "现在",
+      "不是",
+      "抱怨",
+      "的",
+      "时候",
+      "。",
+      "我们",
+      "要",
+      "想",
+      "出",
+      "方案",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 2,
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
+      },
+      {
+        "id": 3,
+        "word": "抱怨",
+        "pinyin": "bàoyuàn",
+        "meaning": "reclamar"
+      },
+      {
+        "id": 4,
+        "word": "时候",
+        "pinyin": "shíhòu",
+        "meaning": "hora/momento"
+      },
+      {
+        "id": 5,
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "meaning": "nós"
+      },
+      {
+        "id": 6,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "precisar/querer"
+      },
+      {
+        "id": 7,
+        "word": "想出",
+        "pinyin": "xiǎngchū",
+        "meaning": "pensar em/sair com"
+      },
+      {
+        "id": 8,
+        "word": "方案",
+        "pinyin": "fāngàn",
+        "meaning": "solução/plano"
+      }
+    ],
+    "id": "local-1780225928076-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 要么搞几个大型的活动。",
+    "pinyin": "Yàome gǎo jǐgè dàxíng de huódòng.",
+    "translation": "B: Ou organiza algumas atividades grandes.",
+    "tokens": [
+      "要么",
+      "搞",
+      "几个",
+      "大型",
+      "的",
+      "活动",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "要么",
+        "pinyin": "yàome",
+        "meaning": "ou"
+      },
+      {
+        "id": 2,
+        "word": "搞",
+        "pinyin": "gǎo",
+        "meaning": "organizar/fazer"
+      },
+      {
+        "id": 3,
+        "word": "几个",
+        "pinyin": "jǐgè",
+        "meaning": "alguns"
+      },
+      {
+        "id": 4,
+        "word": "大型",
+        "pinyin": "dàxíng",
+        "meaning": "grande/portáto"
+      },
+      {
+        "id": 5,
+        "word": "活动",
+        "pinyin": "huódòng",
+        "meaning": "atividade"
+      }
+    ],
+    "id": "local-1780225928076-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 不是我不想，是有实际困难。",
+    "pinyin": "Búshì wǒ bùxiǎng, shì yǒu shíjìkùnnán.",
+    "translation": "C: Não é que eu não queira, mas há dificuldades práticas.",
+    "tokens": [
+      "不是",
+      "我",
+      "不想",
+      "，",
+      "是",
+      "有",
+      "实际困难",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
+      },
+      {
+        "id": 2,
+        "word": "不想",
+        "pinyin": "bùxiǎng",
+        "meaning": "não querer"
+      },
+      {
+        "id": 3,
+        "word": "有",
+        "pinyin": "yǒu",
+        "meaning": "ter/haver"
+      },
+      {
+        "id": 4,
+        "word": "实际",
+        "pinyin": "shíjì",
+        "meaning": "prático/real"
+      },
+      {
+        "id": 5,
+        "word": "困难",
+        "pinyin": "kùnnán",
+        "meaning": "dificuldade"
+      }
+    ],
+    "id": "local-1780225928076-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 这个问题我们今天就不要争了，还是交给市场部自己解决吧。",
+    "pinyin": "Zhège wèntí wǒmen jīntiān jiù búyào zhēng le, háishì jiāogěi shìchǎngbù zìjǐ jiějué ba.",
+    "translation": "A: Não vamos discutir essa questão hoje, melhor deixar o departamento de marketing resolvê-lo por conta própria.",
+    "tokens": [
+      "这个",
+      "问题",
+      "我们",
+      "今天",
+      "就",
+      "不要",
+      "争",
+      "了",
+      "，",
+      "还是",
+      "交给",
+      "市场部",
+      "自己",
+      "解决",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema, questão"
+      },
+      {
+        "id": 2,
+        "word": "争",
+        "pinyin": "zhēng",
+        "meaning": "discutir, disputar"
+      },
+      {
+        "id": 3,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ainda melhor, seria melhor"
+      },
+      {
+        "id": 4,
+        "word": "交给",
+        "pinyin": "jiāogěi",
+        "meaning": "entregar a, confiar a"
+      },
+      {
+        "id": 5,
+        "word": "市场部",
+        "pinyin": "shìchǎngbù",
+        "meaning": "departamento de marketing"
+      },
+      {
+        "id": 6,
+        "word": "解决",
+        "pinyin": "jiějué",
+        "meaning": "resolver, solucionar"
+      }
+    ],
+    "id": "local-1780225928076-10",
+    "language": "Chinês"
+  }
+]

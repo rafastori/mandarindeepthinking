@@ -1,0 +1,708 @@
+[
+  {
+    "chinese": "A: 昨天踢球把学校员工宿舍一楼的一块玻璃给踢碎了。老师说要我写封致歉信，正式赔礼道歉。我从来没写过，这怎么写呀？",
+    "pinyin": "Zuótiān tīqiú bǎ xuéxiào yuángōng sùshè yīlóu de yīkuài bōlí gěi tī suì le. Lǎoshī shuō yào wǒ xiě fēng zhìqiànxìn, zhèngshì péilǐdàoqiàn. Wǒ cónglái méixiě guò, zhè zěnme xiě ya?",
+    "translation": "A: Ontem, ao jogar futebol, chutei e quebrei um vidro do primeiro andar do alojamento dos funcionários da escola. O professor disse que eu preciso escrever uma carta de desculpas para me desculpar formalmente. Nunca escrevi uma antes, como faço isso?",
+    "tokens": [
+      "昨天",
+      "踢球",
+      "把",
+      "学校",
+      "员工",
+      "宿舍",
+      "一楼",
+      "的",
+      "一块",
+      "玻璃",
+      "给",
+      "踢",
+      "碎",
+      "了",
+      "。",
+      "老师",
+      "说",
+      "要",
+      "我",
+      "写",
+      "封",
+      "致歉信",
+      "，",
+      "正式",
+      "赔礼道歉",
+      "。",
+      "我",
+      "从来",
+      "没写",
+      "过",
+      "，",
+      "这",
+      "怎么",
+      "写",
+      "呀",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "昨天",
+        "pinyin": "zuótiān",
+        "meaning": "ontem"
+      },
+      {
+        "id": 2,
+        "word": "踢球",
+        "pinyin": "tīqiú",
+        "meaning": "jogar futebol"
+      },
+      {
+        "id": 3,
+        "word": "学校",
+        "pinyin": "xuéxiào",
+        "meaning": "escola"
+      },
+      {
+        "id": 4,
+        "word": "员工宿舍",
+        "pinyin": "yuángōngsùshè",
+        "meaning": "alojamento dos funcionários"
+      },
+      {
+        "id": 5,
+        "word": "玻璃",
+        "pinyin": "bōlí",
+        "meaning": "vidro"
+      },
+      {
+        "id": 6,
+        "word": "踢碎",
+        "pinyin": "tīsuì",
+        "meaning": "chutar e quebrar"
+      },
+      {
+        "id": 7,
+        "word": "致歉信",
+        "pinyin": "zhìqiànxìn",
+        "meaning": "carta de desculpas"
+      },
+      {
+        "id": 8,
+        "word": "赔礼道歉",
+        "pinyin": "péilǐdàoqiàn",
+        "meaning": "pedir desculpas formalmente"
+      }
+    ],
+    "id": "local-1780226426201-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这个容易。首先，要坦率地承认自己的错误，使对方的怒气平息下来。然后分析自己犯错的原因，述说自己的难处。再恳请对方理解，原谅你的过失。",
+    "pinyin": "Zhège róngyì. Shǒuxiān, yào tǎnshuàidì chéngrèn zìjǐ de cuòwù, shǐ duìfāng de nùqì píngxī xiàlái. Ránhòu fēnxī zìjǐ fàncuò de yuányīn, shùshuō zìjǐ de nánchǔ. Zài kěnqǐng duìfāng lǐjiě, yuánliàng nǐ de guòshī.",
+    "translation": "B: Isso é fácil. Primeiro, admita seus erros com franqueza para acalmar a raiva da outra pessoa. Em seguida, analise as razões do seu erro e explique suas dificuldades. Por fim, peça humildemente que ela entenda e perdoe sua falha.",
+    "tokens": [
+      "这个",
+      "容易",
+      "。",
+      "首先",
+      "，",
+      "要",
+      "坦率地",
+      "承认",
+      "自己",
+      "的",
+      "错误",
+      "，",
+      "使",
+      "对方",
+      "的",
+      "怒气",
+      "平息",
+      "下来",
+      "。",
+      "然后",
+      "分析",
+      "自己",
+      "犯错",
+      "的",
+      "原因",
+      "，",
+      "述说",
+      "自己",
+      "的",
+      "难处",
+      "。",
+      "再",
+      "恳请",
+      "对方",
+      "理解",
+      "，",
+      "原谅",
+      "你",
+      "的",
+      "过失",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "坦率",
+        "pinyin": "tǎnshuài",
+        "meaning": "franco"
+      },
+      {
+        "id": 2,
+        "word": "承认",
+        "pinyin": "chéngrèn",
+        "meaning": "admitir"
+      },
+      {
+        "id": 3,
+        "word": "错误",
+        "pinyin": "cuòwù",
+        "meaning": "erro"
+      },
+      {
+        "id": 4,
+        "word": "平息",
+        "pinyin": "píngxī",
+        "meaning": "acalmar"
+      },
+      {
+        "id": 5,
+        "word": "分析",
+        "pinyin": "fēnxī",
+        "meaning": "analisar"
+      },
+      {
+        "id": 6,
+        "word": "原因",
+        "pinyin": "yuányīn",
+        "meaning": "razão"
+      },
+      {
+        "id": 7,
+        "word": "恳请",
+        "pinyin": "kěnqǐng",
+        "meaning": "suplicar"
+      },
+      {
+        "id": 8,
+        "word": "原谅",
+        "pinyin": "yuánliàng",
+        "meaning": "perdoar"
+      }
+    ],
+    "id": "local-1780226426201-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我能想到的道歉的话就是三个字——“对不起”。",
+    "pinyin": "Wǒnéng xiǎngdào de dàoqiàn dehuà jiùshì sāngè zì — —\" duìbùqǐ\".",
+    "translation": "A: A única desculpa que consigo pensar são três palavras: \"Desculpe\".",
+    "tokens": [
+      "我能",
+      "想到",
+      "的",
+      "道歉",
+      "的话",
+      "就是",
+      "三个",
+      "字",
+      "—",
+      "—",
+      "“",
+      "对不起",
+      "”",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "能",
+        "pinyin": "néng",
+        "meaning": "poder, conseguir"
+      },
+      {
+        "id": 2,
+        "word": "想到",
+        "pinyin": "xiǎngdào",
+        "meaning": "pensar, lembrar-se"
+      },
+      {
+        "id": 3,
+        "word": "道歉",
+        "pinyin": "dàoqiàn",
+        "meaning": "pedir desculpas"
+      },
+      {
+        "id": 4,
+        "word": "话",
+        "pinyin": "huà",
+        "meaning": "palavras, fala"
+      },
+      {
+        "id": 5,
+        "word": "对不起",
+        "pinyin": "duìbùqǐ",
+        "meaning": "desculpe, perdão"
+      }
+    ],
+    "id": "local-1780226426201-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 当然还有技巧呢。你要夸大自己的过错。",
+    "pinyin": "Dāngrán háiyǒu jìqiǎo ne. Nǐ yào kuādà zìjǐ de guòcuò.",
+    "translation": "B: Claro, há truques também. Você deve exagerar suas próprias falhas.",
+    "tokens": [
+      "当然",
+      "还有",
+      "技巧",
+      "呢",
+      "。",
+      "你",
+      "要",
+      "夸大",
+      "自己",
+      "的",
+      "过错",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "当然",
+        "pinyin": "dāngrán",
+        "meaning": "claro"
+      },
+      {
+        "id": 2,
+        "word": "技巧",
+        "pinyin": "jìqiǎo",
+        "meaning": "técnica, truque"
+      },
+      {
+        "id": 3,
+        "word": "夸大",
+        "pinyin": "kuādà",
+        "meaning": "exagerar"
+      },
+      {
+        "id": 4,
+        "word": "过错",
+        "pinyin": "guòcuò",
+        "meaning": "falha, erro"
+      }
+    ],
+    "id": "local-1780226426201-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦，那我得说得严重点儿。",
+    "pinyin": "Ó, nà wǒ dé shuō dé yánzhòng diǎnér.",
+    "translation": "A: Ah, então preciso falar de forma mais severa.",
+    "tokens": [
+      "哦",
+      "，",
+      "那",
+      "我",
+      "得",
+      "说",
+      "得",
+      "严重",
+      "点儿",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "得",
+        "pinyin": "dé",
+        "meaning": "precisar"
+      },
+      {
+        "id": 2,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "falar"
+      },
+      {
+        "id": 3,
+        "word": "严重",
+        "pinyin": "yánzhòng",
+        "meaning": "severo"
+      },
+      {
+        "id": 4,
+        "word": "点儿",
+        "pinyin": "diǎnér",
+        "meaning": "um pouco"
+      }
+    ],
+    "id": "local-1780226426201-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 另外，你还得赞美对方。大多数人受到赞美后，都会不自觉地按照赞美的话去做。",
+    "pinyin": "Lìngwài, nǐ hái dé zànměi duìfāng. Dàduōshù rén shòudào zànměi hòu, dōu huì bù zìjué dì ànzhào zànměi dehuà qù zuò.",
+    "translation": "B: Além disso, você também precisa elogiar a outra pessoa. A maioria das pessoas, após receber elogios, acaba seguindo inconscientemente o que foi dito.",
+    "tokens": [
+      "另外",
+      "，",
+      "你",
+      "还",
+      "得",
+      "赞美",
+      "对方",
+      "。",
+      "大多数",
+      "人",
+      "受到",
+      "赞美",
+      "后",
+      "，",
+      "都",
+      "会",
+      "不",
+      "自觉",
+      "地",
+      "按照",
+      "赞美",
+      "的话",
+      "去",
+      "做",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "另外",
+        "pinyin": "lìngwài",
+        "meaning": "além disso"
+      },
+      {
+        "id": 2,
+        "word": "赞美",
+        "pinyin": "zànměi",
+        "meaning": "elogiar"
+      },
+      {
+        "id": 3,
+        "word": "大多数人",
+        "pinyin": "dàduōshùrén",
+        "meaning": "a maioria das pessoas"
+      },
+      {
+        "id": 4,
+        "word": "不自觉地",
+        "pinyin": "bùzìjuédì",
+        "meaning": "inconscientemente"
+      },
+      {
+        "id": 5,
+        "word": "按照",
+        "pinyin": "ànzhào",
+        "meaning": "de acordo com"
+      }
+    ],
+    "id": "local-1780226426201-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你能不能帮忙帮到底，帮我写一下吧。",
+    "pinyin": "Nǐ néng bùnéng bāngmáng bāng dàodǐ, bāng wǒ xiě yīxià ba.",
+    "translation": "A: Você pode me ajudar até o fim e escrever para mim?",
+    "tokens": [
+      "你",
+      "能",
+      "不能",
+      "帮忙",
+      "帮",
+      "到底",
+      "，",
+      "帮",
+      "我",
+      "写",
+      "一下",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "能不能",
+        "pinyin": "néngbùnéng",
+        "meaning": "poderia / será que pode"
+      },
+      {
+        "id": 2,
+        "word": "帮忙",
+        "pinyin": "bāngmáng",
+        "meaning": "ajudar"
+      },
+      {
+        "id": 3,
+        "word": "帮到底",
+        "pinyin": "bāngdàodǐ",
+        "meaning": "ajudar até o fim"
+      },
+      {
+        "id": 4,
+        "word": "写",
+        "pinyin": "xiě",
+        "meaning": "escrever"
+      },
+      {
+        "id": 5,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "sugestão / pedido"
+      }
+    ],
+    "id": "local-1780226426201-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 嗯，你就这样写：经过深刻的反省，以及学校领导的教育帮助，我感到自己错误的严重性。对此，我对学校对老师表示最诚恳的歉意，也向在这起事件中批评、提醒及关心爱护我的老师们同学们表达最诚挚的谢意！作为一个在校学生，我非常热爱我的校园，而通过这次无心之失，我意识到要随时加强安全意识和提高自身球技。同时，也感受到应该更加注意自我言行对学校的影响。我会以这次教训作为起点，争取成为一个德智体全面发展的好学生。最后，再次表达我的歉意！",
+    "pinyin": "Ń, nǐ jiù zhèyàng xiě: jīngguò shēnkè de fǎnxǐng, yǐjí xuéxiào lǐngdǎo de jiàoyù bāngzhù, wǒ gǎndào zìjǐ cuòwù de yánzhòngxìng. Duìcǐ, wǒ duì xuéxiào duì lǎoshī biǎoshì zuì chéngkěn de qiànyì, yě xiàng zài zhèqǐ shìjiàn zhōng pīpíng, tíxǐng jí guānxīn àihù wǒ de lǎoshī men tóngxué men biǎodá zuì chéngzhì de xièyì! Zuòwéi yígè zàixiàoxuéshēng, wǒ fēicháng rèài wǒ de xiàoyuán, ér tōngguò zhècì wúxīn zhīshī, wǒ yìshí dào yào suíshí jiāqiáng ānquányìshí hé tígāo zìshēn qiújì. Tóngshí, yě gǎnshòu dào yīnggāi gèngjiā zhùyì zìwǒ yánxíng duì xuéxiào de yǐngxiǎng. Wǒhuì yǐ zhècì jiàoxùn zuòwéi qǐdiǎn, zhēngqǔ chéngwéi yígè dézhìtǐ quánmiàn fāzhǎn de hǎo xuéshēng. Zuìhòu, zàicì biǎodá wǒ de qiànyì!",
+    "translation": "B: Sim, escreva assim: Após uma profunda reflexão, e com a educação e ajuda da direção da escola, percebo a gravidade dos meus erros. Por isso, ofereço minhas mais sinceras desculpas à escola e aos professores, e também expresso minha mais cordial gratidão aos professores e colegas que me criticaram, alertaram e cuidaram de mim neste incidente. Como estudante, amo muito meu campus, e através desse erro involuntário, percebi a necessidade de reforçar constantemente minha consciência de segurança e melhorar minhas habilidades esportivas. Ao mesmo tempo, sinto que devo prestar mais atenção ao impacto de meus atos e palavras na escola. Usarei esta lição como ponto de partida para me esforçar e me tornar um bom estudante com desenvolvimento integral em moralidade, inteligência e física. Por fim, reitero minhas desculpas!",
+    "tokens": [
+      "嗯",
+      "，",
+      "你",
+      "就",
+      "这样",
+      "写",
+      "：",
+      "经过",
+      "深刻",
+      "的",
+      "反省",
+      "，",
+      "以及",
+      "学校",
+      "领导",
+      "的",
+      "教育",
+      "帮助",
+      "，",
+      "我",
+      "感到",
+      "自己",
+      "错误",
+      "的",
+      "严重性",
+      "。",
+      "对此",
+      "，",
+      "我",
+      "对",
+      "学校",
+      "对",
+      "老师",
+      "表示",
+      "最",
+      "诚恳",
+      "的",
+      "歉意",
+      "，",
+      "也",
+      "向",
+      "在",
+      "这起",
+      "事件",
+      "中",
+      "批评",
+      "、",
+      "提醒",
+      "及",
+      "关心",
+      "爱护",
+      "我",
+      "的",
+      "老师",
+      "们",
+      "同学",
+      "们",
+      "表达",
+      "最",
+      "诚挚",
+      "的",
+      "谢意",
+      "！",
+      "作为",
+      "一个",
+      "在校学生",
+      "，",
+      "我",
+      "非常",
+      "热爱",
+      "我",
+      "的",
+      "校园",
+      "，",
+      "而",
+      "通过",
+      "这次",
+      "无心",
+      "之失",
+      "，",
+      "我",
+      "意识",
+      "到",
+      "要",
+      "随时",
+      "加强",
+      "安全意识",
+      "和",
+      "提高",
+      "自身",
+      "球技",
+      "。",
+      "同时",
+      "，",
+      "也",
+      "感受",
+      "到",
+      "应该",
+      "更加",
+      "注意",
+      "自我",
+      "言行",
+      "对",
+      "学校",
+      "的",
+      "影响",
+      "。",
+      "我会",
+      "以",
+      "这次",
+      "教训",
+      "作为",
+      "起点",
+      "，",
+      "争取",
+      "成为",
+      "一个",
+      "德智体",
+      "全面",
+      "发展",
+      "的",
+      "好",
+      "学生",
+      "。",
+      "最后",
+      "，",
+      "再次",
+      "表达",
+      "我",
+      "的",
+      "歉意",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "反省",
+        "pinyin": "fǎnxǐng",
+        "meaning": "reflexão / arrependimento"
+      },
+      {
+        "id": 2,
+        "word": "错误",
+        "pinyin": "cuòwù",
+        "meaning": "erro"
+      },
+      {
+        "id": 3,
+        "word": "歉意",
+        "pinyin": "qiànyì",
+        "meaning": "desculpas / pedido de desculpas"
+      },
+      {
+        "id": 4,
+        "word": "谢意",
+        "pinyin": "xièyì",
+        "meaning": "gratidão"
+      },
+      {
+        "id": 5,
+        "word": "安全意识",
+        "pinyin": "ānquányìshí",
+        "meaning": "consciência de segurança"
+      },
+      {
+        "id": 6,
+        "word": "教训",
+        "pinyin": "jiàoxùn",
+        "meaning": "lição / ensinamento"
+      },
+      {
+        "id": 7,
+        "word": "全面发展",
+        "pinyin": "quánmiànfāzhǎn",
+        "meaning": "desenvolvimento integral"
+      }
+    ],
+    "id": "local-1780226426201-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 太佩服你了。不愧是学习委员。我就照着你说的写！",
+    "pinyin": "Tài pèifú nǐ le. Bùkuì shì xuéxí wěiyuán. Wǒ jiù zhàozhe nǐ shuō de xiě!",
+    "translation": "A: Admiro muito você. Realmente é o delegado de estudos. Vou escrever exatamente como você disse!",
+    "tokens": [
+      "太",
+      "佩服",
+      "你",
+      "了",
+      "。",
+      "不愧",
+      "是",
+      "学习",
+      "委员",
+      "。",
+      "我",
+      "就",
+      "照着",
+      "你",
+      "说",
+      "的",
+      "写",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "佩服",
+        "pinyin": "pèifú",
+        "meaning": "admirar"
+      },
+      {
+        "id": 2,
+        "word": "不愧是",
+        "pinyin": "bùkuìshì",
+        "meaning": "como era de se esperar de"
+      },
+      {
+        "id": 3,
+        "word": "学习委员",
+        "pinyin": "xuéxíwěiyuán",
+        "meaning": "delegado de estudos"
+      },
+      {
+        "id": 4,
+        "word": "照着",
+        "pinyin": "zhàozhe",
+        "meaning": "seguindo"
+      },
+      {
+        "id": 5,
+        "word": "说",
+        "pinyin": "shuō",
+        "meaning": "dizer"
+      }
+    ],
+    "id": "local-1780226426201-8",
+    "language": "Chinês"
+  }
+]

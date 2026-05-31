@@ -1,13 +1,13 @@
 [
   {
-    "chinese": "A: 世界杯来了！",
-    "pinyin": "A: Shìjièbēi lái le!",
-    "translation": "A: A Copa do Mundo chegou!",
+    "chinese": "A: 世界杯又来啦！",
+    "pinyin": "Shìjièbēi yòu lái la!",
+    "translation": "A: A Copa do Mundo está de volta!",
     "tokens": [
-      "世界",
-      "杯",
+      "世界杯",
+      "又",
       "来",
-      "了",
+      "啦",
       "！"
     ],
     "keywords": [
@@ -19,32 +19,31 @@
       },
       {
         "id": 2,
-        "word": "来",
-        "pinyin": "lái",
-        "meaning": "vir, chegar"
+        "word": "又",
+        "pinyin": "yòu",
+        "meaning": "de novo / novamente"
       },
       {
         "id": 3,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança de estado)"
+        "word": "来",
+        "pinyin": "lái",
+        "meaning": "vir / chegar"
       }
     ],
-    "id": "local-1772298956810-0",
+    "id": "local-1780202218016-0",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 今年的世界杯在哪里举行？",
-    "pinyin": "B: Jīnnián de shìjièbēi zài nǎlǐ jǔxíng?",
+    "chinese": "B: 今年世界杯在哪里举办啊？",
+    "pinyin": "Jīnnián shìjièbēi zài nǎlǐ jǔbàn a?",
     "translation": "B: Onde a Copa do Mundo deste ano será realizada?",
     "tokens": [
       "今年",
-      "的",
-      "世界",
-      "杯",
+      "世界杯",
       "在",
       "哪里",
-      "举行",
+      "举办",
+      "啊",
       "？"
     ],
     "keywords": [
@@ -56,54 +55,39 @@
       },
       {
         "id": 2,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 3,
         "word": "世界杯",
         "pinyin": "shìjièbēi",
         "meaning": "Copa do Mundo"
       },
       {
-        "id": 4,
-        "word": "在",
-        "pinyin": "zài",
-        "meaning": "em, estar em"
-      },
-      {
-        "id": 5,
+        "id": 3,
         "word": "哪里",
         "pinyin": "nǎlǐ",
         "meaning": "onde"
       },
       {
-        "id": 6,
-        "word": "举行",
-        "pinyin": "jǔxíng",
-        "meaning": "realizar, acontecer"
+        "id": 4,
+        "word": "举办",
+        "pinyin": "jǔbàn",
+        "meaning": "realizar/organizar"
       }
     ],
-    "id": "local-1772298956810-1",
+    "id": "local-1780202218016-1",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 巴西！足球王国！今年的世界杯肯定很好看！",
-    "pinyin": "A: Bāxī! Zúqiú wángguó! Jīnnián de shìjièbēi kěndìng hěn hǎokàn!",
-    "translation": "A: Brasil! Reino do futebol! A Copa do Mundo deste ano certamente será muito boa de assistir!",
+    "chinese": "A: 巴西！足球王国。今年世界杯一定好看！",
+    "pinyin": "Bāxī! Zúqiú wángguó. Jīnnián shìjièbēi yídìng hǎokàn!",
+    "translation": "A: Brasil! O reino do futebol. A Copa do Mundo deste ano com certeza será incrível!",
     "tokens": [
       "巴西",
       "！",
       "足球",
       "王国",
-      "！",
+      "。",
       "今年",
-      "的",
-      "世界",
-      "杯",
-      "肯定",
-      "很",
+      "世界杯",
+      "一定",
       "好看",
       "！"
     ],
@@ -111,7 +95,7 @@
       {
         "id": 1,
         "word": "巴西",
-        "pinyin": "Bāxī",
+        "pinyin": "bāxī",
         "meaning": "Brasil"
       },
       {
@@ -134,196 +118,100 @@
       },
       {
         "id": 5,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 6,
         "word": "世界杯",
         "pinyin": "shìjièbēi",
         "meaning": "Copa do Mundo"
       },
       {
-        "id": 7,
-        "word": "肯定",
-        "pinyin": "kěndìng",
-        "meaning": "certamente, com certeza"
-      },
-      {
-        "id": 8,
-        "word": "很",
-        "pinyin": "hěn",
-        "meaning": "muito"
-      },
-      {
-        "id": 9,
-        "word": "好看",
-        "pinyin": "hǎokàn",
-        "meaning": "bonito (de ver), bom de assistir"
+        "id": 6,
+        "word": "一定",
+        "pinyin": "yídìng",
+        "meaning": "com certeza / com toda a certeza"
       }
     ],
-    "id": "local-1772298956810-2",
+    "id": "local-1780202218016-2",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 巴西？那我可要看了。巴西有很多美女。开幕式肯定会有很热闹的桑巴舞。开幕式是哪天？",
-    "pinyin": "B: Bāxī? Nà wǒ kě yào kàn le. Bāxī yǒu hěn duō měinǚ. Kāimùshì kěndìng huì yǒu hěn rènào de sāngbāwǔ. Kāimùshì shì nǎ tiān?",
-    "translation": "B: Brasil? Então eu terei que assistir. O Brasil tem muitas mulheres bonitas. A cerimônia de abertura certamente terá muita dança de samba animada. Que dia é a cerimônia de abertura?",
+    "chinese": "B: 巴西？那我也要看。巴西美女多，开幕式一定有热情的桑巴舞。开幕式是几号啊？",
+    "pinyin": "Bāxī? Nà wǒ yě yào kàn. Bāxī měinǚ duō, kāimùshì yídìng yǒu rèqíng de sāngbāwǔ. Kāimùshì shì jǐhào a?",
+    "translation": "B: Brasil? Então eu também quero assistir. O Brasil tem muitas mulheres bonitas, com certeza haverá danças de samba apaixonadas na cerimônia de abertura. Qual é a data da cerimônia de abertura?",
     "tokens": [
       "巴西",
       "？",
       "那",
       "我",
-      "可",
+      "也",
       "要",
       "看",
-      "了",
       "。",
       "巴西",
-      "有",
-      "很",
-      "多",
       "美女",
-      "。",
+      "多",
+      "，",
       "开幕式",
-      "肯定",
-      "会",
+      "一定",
       "有",
-      "很",
-      "热闹",
+      "热情",
       "的",
       "桑巴舞",
       "。",
       "开幕式",
       "是",
-      "哪",
-      "天",
+      "几号",
+      "啊",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "巴西",
-        "pinyin": "Bāxī",
+        "pinyin": "bāxī",
         "meaning": "Brasil"
       },
       {
         "id": 2,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, aquele"
+        "word": "美女",
+        "pinyin": "měinǚ",
+        "meaning": "mulheres bonitas"
       },
       {
         "id": 3,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 4,
-        "word": "可",
-        "pinyin": "kě",
-        "meaning": "certamente, de fato (enfatiza)"
-      },
-      {
-        "id": 5,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "querer, precisar, estar prestes a"
-      },
-      {
-        "id": 6,
-        "word": "看",
-        "pinyin": "kàn",
-        "meaning": "ver, assistir"
-      },
-      {
-        "id": 7,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança de estado)"
-      },
-      {
-        "id": 8,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 9,
-        "word": "很多",
-        "pinyin": "hěnduō",
-        "meaning": "muitos, muitas"
-      },
-      {
-        "id": 10,
-        "word": "美女",
-        "pinyin": "měinǚ",
-        "meaning": "mulher bonita"
-      },
-      {
-        "id": 11,
         "word": "开幕式",
         "pinyin": "kāimùshì",
         "meaning": "cerimônia de abertura"
       },
       {
-        "id": 12,
-        "word": "肯定",
-        "pinyin": "kěndìng",
-        "meaning": "certamente, com certeza"
+        "id": 4,
+        "word": "热情",
+        "pinyin": "rèqíng",
+        "meaning": "apaixonado/entusiasta"
       },
       {
-        "id": 13,
-        "word": "会",
-        "pinyin": "huì",
-        "meaning": "poder, saber, é provável que"
-      },
-      {
-        "id": 14,
-        "word": "热闹",
-        "pinyin": "rènào",
-        "meaning": "animado, movimentado"
-      },
-      {
-        "id": 15,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 16,
+        "id": 5,
         "word": "桑巴舞",
         "pinyin": "sāngbāwǔ",
         "meaning": "dança de samba"
       },
       {
-        "id": 17,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
-      },
-      {
-        "id": 18,
-        "word": "哪天",
-        "pinyin": "nǎ tiān",
-        "meaning": "que dia"
+        "id": 6,
+        "word": "几号",
+        "pinyin": "jǐhào",
+        "meaning": "que dia (do mês)"
       }
     ],
-    "id": "local-1772298956810-3",
+    "id": "local-1780202218016-3",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 6月14日，在圣保罗。",
-    "pinyin": "A: Liù yuè shísì rì, zài Shèngbǎoluó.",
-    "translation": "A: 14 de junho, em São Paulo.",
+    "chinese": "A: 6月14号在圣保罗。",
+    "pinyin": "6 Yuè 14 hào zài shèngbǎoluó.",
+    "translation": "A: Dia 14 de junho em São Paulo.",
     "tokens": [
       "6",
       "月",
       "14",
-      "日",
-      "，",
+      "号",
       "在",
       "圣保罗",
       "。"
@@ -331,56 +219,51 @@
     "keywords": [
       {
         "id": 1,
-        "word": "6月",
-        "pinyin": "liù yuè",
-        "meaning": "junho"
+        "word": "6月14号",
+        "pinyin": "6yuè14hào",
+        "meaning": "14 de junho"
       },
       {
         "id": 2,
-        "word": "14日",
-        "pinyin": "shísì rì",
-        "meaning": "dia 14"
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "em"
       },
       {
         "id": 3,
-        "word": "在",
-        "pinyin": "zài",
-        "meaning": "em, estar em"
-      },
-      {
-        "id": 4,
         "word": "圣保罗",
-        "pinyin": "Shèngbǎoluó",
+        "pinyin": "shèngbǎoluó",
         "meaning": "São Paulo"
       }
     ],
-    "id": "local-1772298956810-4",
+    "id": "local-1780202218016-4",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 圣保罗？为什么不在里约呢？里约最有名了。",
-    "pinyin": "B: Shèngbǎoluó? Wèishénme bù zài Lǐyuē ne? Lǐyuē zuì yǒumíng le.",
-    "translation": "B: São Paulo? Por que não no Rio? O Rio é o mais famoso.",
+    "chinese": "B: 圣保罗？为什么不是里约？好像里约最有名嘛。",
+    "pinyin": "Shèngbǎoluó? Wèishénme búshì lǐ yuē? Hǎoxiàng lǐ yuē zuì yǒumíng ma.",
+    "translation": "B: São Paulo? Por que não o Rio? Parece que o Rio é o mais famoso.",
     "tokens": [
       "圣保罗",
       "？",
       "为什么",
-      "不",
-      "在",
-      "里约",
-      "呢",
+      "不是",
+      "里",
+      "约",
       "？",
-      "里约",
+      "好像",
+      "里",
+      "约",
       "最",
       "有名",
-      "了",
+      "嘛",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "圣保罗",
-        "pinyin": "Shèngbǎoluó",
+        "pinyin": "shèngbǎoluó",
         "meaning": "São Paulo"
       },
       {
@@ -391,56 +274,39 @@
       },
       {
         "id": 3,
-        "word": "不",
-        "pinyin": "bù",
-        "meaning": "não"
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
       },
       {
         "id": 4,
-        "word": "在",
-        "pinyin": "zài",
-        "meaning": "em, estar em"
+        "word": "里约",
+        "pinyin": "lǐyuē",
+        "meaning": "Rio"
       },
       {
         "id": 5,
-        "word": "里约",
-        "pinyin": "Lǐyuē",
-        "meaning": "Rio de Janeiro"
+        "word": "好像",
+        "pinyin": "hǎoxiàng",
+        "meaning": "parece que"
       },
       {
         "id": 6,
-        "word": "呢",
-        "pinyin": "ne",
-        "meaning": "partícula interrogativa/modal"
-      },
-      {
-        "id": 7,
-        "word": "最",
-        "pinyin": "zuì",
-        "meaning": "o mais, o superlativo"
-      },
-      {
-        "id": 8,
-        "word": "有名",
-        "pinyin": "yǒumíng",
-        "meaning": "famoso"
-      },
-      {
-        "id": 9,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança de estado)"
+        "word": "最有名",
+        "pinyin": "zuìyǒumíng",
+        "meaning": "o mais famoso"
       }
     ],
-    "id": "local-1772298956810-5",
+    "id": "local-1780202218016-5",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 圣保罗是巴西的主要城市之一。决赛会在里约举行。",
-    "pinyin": "A: Shèngbǎoluó shì Bāxī de zhǔyào chéngshì zhī yī. Juésài huì zài Lǐyuē jǔxíng.",
-    "translation": "A: São Paulo é uma das principais cidades do Brasil. A final será realizada no Rio.",
+    "chinese": "A: 圣保罗也是巴西的主要城市之一。决赛会在里约举行。",
+    "pinyin": "Shèngbǎoluó yě shì bāxī de zhǔyào chéngshì zhīyī. Juésài huì zài lǐ yuē jǔxíng.",
+    "translation": "A: São Paulo também é uma das principais cidades do Brasil. A final será realizada no Rio.",
     "tokens": [
       "圣保罗",
+      "也",
       "是",
       "巴西",
       "的",
@@ -451,7 +317,8 @@
       "决赛",
       "会",
       "在",
-      "里约",
+      "里",
+      "约",
       "举行",
       "。"
     ],
@@ -459,88 +326,58 @@
       {
         "id": 1,
         "word": "圣保罗",
-        "pinyin": "Shèngbǎoluó",
+        "pinyin": "shèngbǎoluó",
         "meaning": "São Paulo"
       },
       {
         "id": 2,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
-      },
-      {
-        "id": 3,
         "word": "巴西",
-        "pinyin": "Bāxī",
+        "pinyin": "bāxī",
         "meaning": "Brasil"
       },
       {
-        "id": 4,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 5,
+        "id": 3,
         "word": "主要",
         "pinyin": "zhǔyào",
         "meaning": "principal"
       },
       {
-        "id": 6,
+        "id": 4,
         "word": "城市",
         "pinyin": "chéngshì",
         "meaning": "cidade"
       },
       {
-        "id": 7,
-        "word": "之一",
-        "pinyin": "zhī yī",
-        "meaning": "um dos"
-      },
-      {
-        "id": 8,
+        "id": 5,
         "word": "决赛",
         "pinyin": "juésài",
-        "meaning": "final (de competição)"
+        "meaning": "final"
       },
       {
-        "id": 9,
-        "word": "会",
-        "pinyin": "huì",
-        "meaning": "será, é provável que"
-      },
-      {
-        "id": 10,
-        "word": "在",
-        "pinyin": "zài",
-        "meaning": "em, estar em"
-      },
-      {
-        "id": 11,
+        "id": 6,
         "word": "里约",
-        "pinyin": "Lǐyuē",
-        "meaning": "Rio de Janeiro"
+        "pinyin": "lǐyuē",
+        "meaning": "Rio"
       },
       {
-        "id": 12,
+        "id": 7,
         "word": "举行",
         "pinyin": "jǔxíng",
-        "meaning": "realizar, acontecer"
+        "meaning": "realizar/sediar"
       }
     ],
-    "id": "local-1772298956810-6",
+    "id": "local-1780202218016-6",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 可惜我们和巴西有11个小时的时差。恐怕这次我们要熬夜了。",
-    "pinyin": "B: Kěxī wǒmen hé Bāxī yǒu shíyī ge xiǎoshí de shíchā. Kǒngpà zhè cì wǒmen yào áoyè le.",
-    "translation": "B: Que pena que nós e o Brasil temos 11 horas de fuso horário. Receio que desta vez teremos que virar a noite.",
+    "chinese": "B: 可惜巴西和我们有11个小时的时差。恐怕这次又得熬夜了。",
+    "pinyin": "Kěxī bāxī hé wǒmen yǒu 11 gè xiǎoshí de shíchà. Kǒngpà zhècì yòu dé áoyè le.",
+    "translation": "B: Que pena que o Brasil tem uma diferença de fuso horário de 11 horas conosco. Acho que vou ter que ficar acordado até tarde novamente.",
     "tokens": [
       "可惜",
-      "我们",
-      "和",
       "巴西",
+      "和",
+      "我们",
       "有",
       "11",
       "个",
@@ -549,10 +386,9 @@
       "时差",
       "。",
       "恐怕",
-      "这",
-      "次",
-      "我们",
-      "要",
+      "这次",
+      "又",
+      "得",
       "熬夜",
       "了",
       "。"
@@ -562,230 +398,89 @@
         "id": 1,
         "word": "可惜",
         "pinyin": "kěxī",
-        "meaning": "que pena, lamentável"
+        "meaning": "que pena / lamentável"
       },
       {
         "id": 2,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
-      },
-      {
-        "id": 3,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e, com"
-      },
-      {
-        "id": 4,
         "word": "巴西",
-        "pinyin": "Bāxī",
+        "pinyin": "bāxī",
         "meaning": "Brasil"
       },
       {
-        "id": 5,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 6,
-        "word": "11个小时",
-        "pinyin": "shíyī ge xiǎoshí",
-        "meaning": "11 horas"
-      },
-      {
-        "id": 7,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 8,
+        "id": 3,
         "word": "时差",
-        "pinyin": "shíchā",
-        "meaning": "fuso horário, diferença de horário"
+        "pinyin": "shíchà",
+        "meaning": "diferença de fuso horário"
       },
       {
-        "id": 9,
+        "id": 4,
         "word": "恐怕",
         "pinyin": "kǒngpà",
-        "meaning": "receio que, talvez"
+        "meaning": "acho que / receio que"
       },
       {
-        "id": 10,
-        "word": "这次",
-        "pinyin": "zhè cì",
-        "meaning": "desta vez"
-      },
-      {
-        "id": 11,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "precisar, ter que"
-      },
-      {
-        "id": 12,
+        "id": 5,
         "word": "熬夜",
         "pinyin": "áoyè",
-        "meaning": "virar a noite, ficar acordado até tarde"
-      },
-      {
-        "id": 13,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança de estado)"
+        "meaning": "ficar acordado até tarde / virar a noite"
       }
     ],
-    "id": "local-1772298956810-7",
+    "id": "local-1780202218016-7",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 那我得先去超市囤点红牛了。为了看那些漂亮的女孩，我什么都愿意！",
-    "pinyin": "A: Nà wǒ děi xiān qù chāoshì tún diǎn Hóngniú le. Wèile kàn nàxiē piàoliang de nǚhái, wǒ shénme dōu yuànyì!",
-    "translation": "A: Então eu tenho que ir primeiro ao supermercado estocar um pouco de Red Bull. Para ver aquelas garotas bonitas, eu estou disposto a tudo!",
+    "chinese": "A: 那要先去超市囤点红牛啊。为了看美女我拼了！",
+    "pinyin": "Nàyào xiānqù chāoshì dùndiǎn hóngniú a. Wèile kàn měinǚ wǒ pīn le!",
+    "translation": "A: Então preciso ir ao supermercado estocar um pouco de Red Bull. Vou me dar ao máximo por causa das garotas bonitas!",
     "tokens": [
-      "那",
-      "我",
-      "得",
-      "先",
-      "去",
+      "那要",
+      "先去",
       "超市",
-      "囤",
-      "点",
+      "囤点",
       "红牛",
-      "了",
+      "啊",
       "。",
       "为了",
       "看",
-      "那些",
-      "漂亮",
-      "的",
-      "女孩",
-      "，",
+      "美女",
       "我",
-      "什么",
-      "都",
-      "愿意",
+      "拼",
+      "了",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, aquele"
-      },
-      {
-        "id": 2,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 3,
-        "word": "得",
-        "pinyin": "děi",
-        "meaning": "ter que, precisar"
-      },
-      {
-        "id": 4,
-        "word": "先",
-        "pinyin": "xiān",
-        "meaning": "primeiro, antes"
-      },
-      {
-        "id": 5,
-        "word": "去",
-        "pinyin": "qù",
-        "meaning": "ir"
-      },
-      {
-        "id": 6,
         "word": "超市",
         "pinyin": "chāoshì",
         "meaning": "supermercado"
       },
       {
-        "id": 7,
+        "id": 2,
         "word": "囤",
-        "pinyin": "tún",
+        "pinyin": "dùn",
         "meaning": "estocar, acumular"
       },
       {
-        "id": 8,
-        "word": "点",
-        "pinyin": "diǎn",
-        "meaning": "um pouco de (quantidade pequena)"
-      },
-      {
-        "id": 9,
+        "id": 3,
         "word": "红牛",
-        "pinyin": "Hóngniú",
-        "meaning": "Red Bull"
+        "pinyin": "hóngniú",
+        "meaning": "Red Bull (energia)"
       },
       {
-        "id": 10,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de aspecto (indica conclusão ou mudança de estado)"
+        "id": 4,
+        "word": "美女",
+        "pinyin": "měinǚ",
+        "meaning": "garota bonita, bela"
       },
       {
-        "id": 11,
-        "word": "为了",
-        "pinyin": "wèile",
-        "meaning": "para, a fim de"
-      },
-      {
-        "id": 12,
-        "word": "看",
-        "pinyin": "kàn",
-        "meaning": "ver, assistir"
-      },
-      {
-        "id": 13,
-        "word": "那些",
-        "pinyin": "nàxiē",
-        "meaning": "aqueles, aquelas"
-      },
-      {
-        "id": 14,
-        "word": "漂亮",
-        "pinyin": "piàoliang",
-        "meaning": "bonito, linda"
-      },
-      {
-        "id": 15,
-        "word": "的",
-        "pinyin": "de",
-        "meaning": "partícula possessiva/modificadora"
-      },
-      {
-        "id": 16,
-        "word": "女孩",
-        "pinyin": "nǚhái",
-        "meaning": "garota"
-      },
-      {
-        "id": 17,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o que, qualquer coisa"
-      },
-      {
-        "id": 18,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "tudo, todos"
-      },
-      {
-        "id": 19,
-        "word": "愿意",
-        "pinyin": "yuànyì",
-        "meaning": "estar disposto a, querer"
+        "id": 5,
+        "word": "拼了",
+        "pinyin": "pīnle",
+        "meaning": "dar o máximo, arriscar tudo"
       }
     ],
-    "id": "local-1772298956810-8",
+    "id": "local-1780202218016-8",
     "language": "Chinês"
   }
 ]

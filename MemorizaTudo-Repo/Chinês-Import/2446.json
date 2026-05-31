@@ -1,21 +1,20 @@
 [
   {
-    "chinese": "老公，我胖了好多！我想买个减肥器！",
-    "pinyin": "Lǎogōng, wǒ pàngle hǎoduō! Wǒ xiǎng mǎi ge jiǎnféiqì!",
-    "translation": "Marido, engordei muito! Quero comprar um aparelho de emagrecimento!",
+    "chinese": "A: 老公，我肉好多啊，我想买个机器来减肥！",
+    "pinyin": "Lǎogōng, wǒròu hǎoduō a, wǒxiǎng mǎigè jīqì lái jiǎnféi!",
+    "translation": "A: Marido, estou com muita gordura corporal, quero comprar uma máquina para emagrecer!",
     "tokens": [
       "老公",
       "，",
-      "我",
-      "胖",
-      "了",
+      "我肉",
       "好多",
-      "！",
-      "我",
-      "想",
-      "买",
-      "个",
-      "减肥器",
+      "啊",
+      "，",
+      "我想",
+      "买个",
+      "机器",
+      "来",
+      "减肥",
       "！"
     ],
     "keywords": [
@@ -27,48 +26,29 @@
       },
       {
         "id": 2,
-        "word": "胖",
-        "pinyin": "pàng",
-        "meaning": "engordar, gordo"
+        "word": "肉",
+        "pinyin": "ròu",
+        "meaning": "gordura/carne"
       },
       {
         "id": 3,
-        "word": "好多",
-        "pinyin": "hǎoduō",
-        "meaning": "muito, bastante"
-      },
-      {
-        "id": 4,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
-      },
-      {
-        "id": 5,
-        "word": "买",
-        "pinyin": "mǎi",
-        "meaning": "comprar"
-      },
-      {
-        "id": 6,
-        "word": "减肥器",
-        "pinyin": "jiǎnféiqì",
-        "meaning": "aparelho de emagrecimento"
+        "word": "减肥",
+        "pinyin": "jiǎnféi",
+        "meaning": "emagrecer/dietar"
       }
     ],
-    "id": "local-1772298175194-0",
+    "id": "local-1780201840195-0",
     "language": "Chinês"
   },
   {
-    "chinese": "你想买哪种？",
-    "pinyin": "Nǐ xiǎng mǎi nǎ zhǒng?",
-    "translation": "Qual tipo você quer comprar?",
+    "chinese": "B: 你想买哪种？",
+    "pinyin": "Nǐ xiǎng mǎi nǎzhǒng?",
+    "translation": "B: Que tipo você quer comprar?",
     "tokens": [
       "你",
       "想",
       "买",
-      "哪",
-      "种",
+      "哪种",
       "？"
     ],
     "keywords": [
@@ -76,7 +56,7 @@
         "id": 1,
         "word": "想",
         "pinyin": "xiǎng",
-        "meaning": "querer, pensar"
+        "meaning": "querer"
       },
       {
         "id": 2,
@@ -87,23 +67,22 @@
       {
         "id": 3,
         "word": "哪种",
-        "pinyin": "nǎ zhǒng",
-        "meaning": "que tipo/espécie"
+        "pinyin": "nǎzhǒng",
+        "meaning": "que tipo"
       }
     ],
-    "id": "local-1772298175194-1",
+    "id": "local-1780201840195-1",
     "language": "Chinês"
   },
   {
-    "chinese": "你看！这个跑步机怎么样？",
-    "pinyin": "Nǐ kàn! Zhège pǎobùjī zěnmeyàng?",
-    "translation": "Olha! O que você acha desta esteira?",
+    "chinese": "A: 你看，这个跑步机怎么样？",
+    "pinyin": "Nǐ kàn, zhège pǎobùjī zěnmeyàng?",
+    "translation": "A: Olha, que tal esta esteira?",
     "tokens": [
       "你",
       "看",
-      "！",
-      "这",
-      "个",
+      "，",
+      "这个",
       "跑步机",
       "怎么样",
       "？"
@@ -111,105 +90,113 @@
     "keywords": [
       {
         "id": 1,
-        "word": "看",
-        "pinyin": "kàn",
-        "meaning": "olhar, ver"
+        "word": "跑步机",
+        "pinyin": "pǎobùjī",
+        "meaning": "esteira (rolante)"
       },
       {
         "id": 2,
-        "word": "跑步机",
-        "pinyin": "pǎobùjī",
-        "meaning": "esteira (de corrida)"
+        "word": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "meaning": "como está / que tal"
       },
       {
         "id": 3,
-        "word": "怎么样",
-        "pinyin": "zěnmeyàng",
-        "meaning": "o que você acha? como é?"
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "olhar"
+      },
+      {
+        "id": 4,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este / esta"
       }
     ],
-    "id": "local-1772298175194-2",
+    "id": "local-1780201840195-2",
     "language": "Chinês"
   },
   {
-    "chinese": "嗯，这个挺好的！",
-    "pinyin": "Èn, zhège tǐng hǎo de!",
-    "translation": "Hum, este é muito bom!",
+    "chinese": "B: 嗯，还不错！",
+    "pinyin": "Ń, hái bùcuò!",
+    "translation": "B: Sim, não está nada mal!",
     "tokens": [
       "嗯",
       "，",
-      "这",
-      "个",
-      "挺",
-      "好",
-      "的",
+      "还",
+      "不错",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "嗯",
-        "pinyin": "èn",
-        "meaning": "hm, uhm (interjeição de concordância/pensamento)"
+        "pinyin": "ń",
+        "meaning": "sim / hum"
       },
       {
         "id": 2,
-        "word": "挺好的",
-        "pinyin": "tǐng hǎo de",
-        "meaning": "muito bom, bastante bom"
+        "word": "还",
+        "pinyin": "hái",
+        "meaning": "ainda / até"
+      },
+      {
+        "id": 3,
+        "word": "不错",
+        "pinyin": "bùcuò",
+        "meaning": "não está mal / bom"
       }
     ],
-    "id": "local-1772298175194-3",
+    "id": "local-1780201840195-3",
     "language": "Chinês"
   },
   {
-    "chinese": "这个椭圆机能瘦腿瘦腰！",
-    "pinyin": "Zhège tuǒyuánjī néng shòutuǐ shòuyāo!",
-    "translation": "Este elíptico pode emagrecer as pernas e a cintura!",
+    "chinese": "A: 这个踏步机又能瘦腿又能瘦腰呢！",
+    "pinyin": "Zhège tàbùjī yòu néng shòu tuǐ yòu néng shòu yāo ne!",
+    "translation": "A: Esta esteira de passo emagrece as pernas e a cintura ao mesmo tempo!",
     "tokens": [
-      "这",
-      "个",
-      "椭圆机",
+      "这个",
+      "踏步机",
+      "又",
       "能",
-      "瘦腿",
-      "瘦腰",
+      "瘦",
+      "腿",
+      "又",
+      "能",
+      "瘦",
+      "腰",
+      "呢",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "椭圆机",
-        "pinyin": "tuǒyuánjī",
-        "meaning": "máquina elíptica"
+        "word": "踏步机",
+        "pinyin": "tàbùjī",
+        "meaning": "esteira de passo / mini stepper"
       },
       {
         "id": 2,
-        "word": "能",
-        "pinyin": "néng",
-        "meaning": "poder, ser capaz de"
-      },
-      {
-        "id": 3,
         "word": "瘦腿",
         "pinyin": "shòutuǐ",
         "meaning": "emagrecer as pernas"
       },
       {
-        "id": 4,
+        "id": 3,
         "word": "瘦腰",
         "pinyin": "shòuyāo",
         "meaning": "emagrecer a cintura"
       }
     ],
-    "id": "local-1772298175194-4",
+    "id": "local-1780201840195-4",
     "language": "Chinês"
   },
   {
-    "chinese": "好像挺适合你的。",
-    "pinyin": "Hǎoxiàng tǐng shìhé nǐ de.",
-    "translation": "Parece que é bem adequado para você.",
+    "chinese": "B: 看起来挺适合你的。",
+    "pinyin": "Kànqǐlái tǐng shìhé nǐ de.",
+    "translation": "B: Parece bem adequado para você.",
     "tokens": [
-      "好像",
+      "看起来",
       "挺",
       "适合",
       "你",
@@ -219,108 +206,96 @@
     "keywords": [
       {
         "id": 1,
-        "word": "好像",
-        "pinyin": "hǎoxiàng",
-        "meaning": "parece que, como se"
+        "word": "看起来",
+        "pinyin": "kànqǐlái",
+        "meaning": "parece"
       },
       {
         "id": 2,
+        "word": "挺",
+        "pinyin": "tǐng",
+        "meaning": "bastante"
+      },
+      {
+        "id": 3,
         "word": "适合",
         "pinyin": "shìhé",
-        "meaning": "adequado, apropriado"
+        "meaning": "adequado"
+      },
+      {
+        "id": 4,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
       }
     ],
-    "id": "local-1772298175194-5",
+    "id": "local-1780201840195-5",
     "language": "Chinês"
   },
   {
-    "chinese": "哦，这里还有个减肥机器人，可惜太贵了！",
-    "pinyin": "Ó, zhèlǐ hái yǒu ge jiǎnféi jīqìrén, kěxī tài guì le!",
-    "translation": "Oh, aqui também tem um robô de emagrecimento, pena que é muito caro!",
+    "chinese": "A: 哎呀，这里有个减肥机器人呢，可惜就是太贵了！",
+    "pinyin": "Āiyā, zhèlǐ yǒugè jiǎnféi jīqìrén ne, kěxī jiùshì tàiguì le!",
+    "translation": "A: Ai, tem um robô de emagrecimento aqui, que pena que é muito caro!",
     "tokens": [
-      "哦",
+      "哎呀",
       "，",
-      "这",
-      "里",
-      "还",
-      "有",
-      "个",
+      "这里",
+      "有个",
       "减肥",
       "机器人",
+      "呢",
       "，",
       "可惜",
-      "太",
-      "贵",
+      "就是",
+      "太贵",
       "了",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ó",
-        "meaning": "oh (interjeição de surpresa/percepção)"
+        "word": "减肥",
+        "pinyin": "jiǎnféi",
+        "meaning": "emagrecimento"
       },
       {
         "id": 2,
-        "word": "这里",
-        "pinyin": "zhèlǐ",
-        "meaning": "aqui"
-      },
-      {
-        "id": 3,
-        "word": "还有",
-        "pinyin": "hái yǒu",
-        "meaning": "ainda tem, também tem"
-      },
-      {
-        "id": 4,
-        "word": "减肥",
-        "pinyin": "jiǎnféi",
-        "meaning": "emagrecer, perder peso"
-      },
-      {
-        "id": 5,
         "word": "机器人",
         "pinyin": "jīqìrén",
         "meaning": "robô"
       },
       {
-        "id": 6,
+        "id": 3,
         "word": "可惜",
         "pinyin": "kěxī",
-        "meaning": "pena que, infelizmente"
+        "meaning": "que pena"
       },
       {
-        "id": 7,
-        "word": "太贵了",
-        "pinyin": "tài guì le",
-        "meaning": "muito caro"
+        "id": 4,
+        "word": "贵",
+        "pinyin": "guì",
+        "meaning": "caro"
       }
     ],
-    "id": "local-1772298175194-6",
+    "id": "local-1780201840195-6",
     "language": "Chinês"
   },
   {
-    "chinese": "钱不是问题。我只是担心你用两天就不用了。",
-    "pinyin": "Qián bù shì wèntí. Wǒ zhǐshì dānxīn nǐ yòng liǎng tiān jiù bù yòng le.",
-    "translation": "Dinheiro não é problema. Só estou preocupado que você use por dois dias e depois não use mais.",
+    "chinese": "B: 钱不是问题，就怕你用了两天不用了。",
+    "pinyin": "Qián búshì wèntí, jiù pà nǐ yòng le liǎngtiān bùyòng le.",
+    "translation": "B: O dinheiro não é problema, o que me preocupa é que você use por dois dias e depois pare.",
     "tokens": [
       "钱",
-      "不",
-      "是",
+      "不是",
       "问题",
-      "。",
-      "我",
-      "只是",
-      "担心",
+      "，",
+      "就",
+      "怕",
       "你",
       "用",
-      "两",
-      "天",
-      "就",
-      "不",
-      "用",
+      "了",
+      "两天",
+      "不用",
       "了",
       "。"
     ],
@@ -333,21 +308,21 @@
       },
       {
         "id": 2,
-        "word": "问题",
-        "pinyin": "wèntí",
-        "meaning": "problema, questão"
+        "word": "不是",
+        "pinyin": "búshì",
+        "meaning": "não é"
       },
       {
         "id": 3,
-        "word": "只是",
-        "pinyin": "zhǐshì",
-        "meaning": "apenas, somente"
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
       },
       {
         "id": 4,
-        "word": "担心",
-        "pinyin": "dānxīn",
-        "meaning": "preocupar-se"
+        "word": "怕",
+        "pinyin": "pà",
+        "meaning": "temer/preocupar-se"
       },
       {
         "id": 5,
@@ -357,66 +332,60 @@
       },
       {
         "id": 6,
-        "word": "两天",
-        "pinyin": "liǎng tiān",
-        "meaning": "dois dias"
-      },
-      {
-        "id": 7,
-        "word": "就不用了",
-        "pinyin": "jiù bù yòng le",
-        "meaning": "então não usará mais"
+        "word": "天",
+        "pinyin": "tiān",
+        "meaning": "dia(s)"
       }
     ],
-    "id": "local-1772298175194-7",
+    "id": "local-1780201840195-7",
     "language": "Chinês"
   },
   {
-    "chinese": "这次我保证不会！",
-    "pinyin": "Zhè cì wǒ bǎozhèng bú huì!",
-    "translation": "Desta vez eu garanto que não!",
+    "chinese": "A: 这次，我保证不会了！",
+    "pinyin": "Zhècì, wǒ bǎozhèng búhuì le!",
+    "translation": "A: Desta vez, garanto que não vou fazer de novo!",
     "tokens": [
-      "这",
-      "次",
+      "这次",
+      "，",
       "我",
       "保证",
-      "不",
-      "会",
+      "不会",
+      "了",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "这次",
-        "pinyin": "zhè cì",
+        "pinyin": "zhècì",
         "meaning": "desta vez"
       },
       {
         "id": 2,
         "word": "保证",
         "pinyin": "bǎozhèng",
-        "meaning": "garantir, assegurar"
+        "meaning": "garantir"
       },
       {
         "id": 3,
         "word": "不会",
-        "pinyin": "bú huì",
-        "meaning": "não vai, não irá"
+        "pinyin": "búhuì",
+        "meaning": "não vai / não farei"
       }
     ],
-    "id": "local-1772298175194-8",
+    "id": "local-1780201840195-8",
     "language": "Chinês"
   },
   {
-    "chinese": "好吧。那就买吧！我支持你！",
-    "pinyin": "Hǎo ba. Nà jiù mǎi ba! Wǒ zhīchí nǐ!",
-    "translation": "Tudo bem. Então compre! Eu te apoio!",
+    "chinese": "B: 好吧，那你买吧！我支持你！",
+    "pinyin": "Hǎo ba, nà nǐ mǎi ba! Wǒ zhīchí nǐ!",
+    "translation": "B: Tudo bem, então você compra! Eu te apoio!",
     "tokens": [
       "好",
       "吧",
-      "。",
+      "，",
       "那",
-      "就",
+      "你",
       "买",
       "吧",
       "！",
@@ -429,14 +398,14 @@
       {
         "id": 1,
         "word": "好吧",
-        "pinyin": "hǎo ba",
-        "meaning": "tudo bem, ok"
+        "pinyin": "hǎoba",
+        "meaning": "tudo bem / ok"
       },
       {
         "id": 2,
-        "word": "那就",
-        "pinyin": "nà jiù",
-        "meaning": "então, nesse caso"
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
       },
       {
         "id": 3,
@@ -448,10 +417,10 @@
         "id": 4,
         "word": "支持",
         "pinyin": "zhīchí",
-        "meaning": "apoiar, suporte"
+        "meaning": "apoiar"
       }
     ],
-    "id": "local-1772298175194-9",
+    "id": "local-1780201840195-9",
     "language": "Chinês"
   }
 ]

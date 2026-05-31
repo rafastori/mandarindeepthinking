@@ -1,0 +1,673 @@
+[
+  {
+    "chinese": "A: 你是火象星座，跟你最配的就是同为火象星座的狮子座和射手座，要不风象星座也行。",
+    "pinyin": "Nǐ shì huǒxiàng xīngzuò, gēn nǐ zuìpèi de jiùshì tóngwèi huǒxiàng xīngzuò de shīzizuò hé shèshǒuzuò, yào bùfēngxiàng xīngzuò yě xíng.",
+    "translation": "A: Você é do signo de fogo, e os que mais combinam com você são Leão e Sagitário, que também são signos de fogo, ou então signos de ar.",
+    "tokens": [
+      "你",
+      "是",
+      "火象",
+      "星座",
+      "，",
+      "跟",
+      "你",
+      "最配",
+      "的",
+      "就是",
+      "同为",
+      "火象",
+      "星座",
+      "的",
+      "狮子座",
+      "和",
+      "射手座",
+      "，",
+      "要",
+      "不风象",
+      "星座",
+      "也",
+      "行",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "火象星座",
+        "pinyin": "huǒxiàngxīngzuò",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 2,
+        "word": "最配",
+        "pinyin": "zuìpèi",
+        "meaning": "mais compatível"
+      },
+      {
+        "id": 3,
+        "word": "狮子座",
+        "pinyin": "shīzizuò",
+        "meaning": "Leão (signo)"
+      },
+      {
+        "id": 4,
+        "word": "射手座",
+        "pinyin": "shèshǒuzuò",
+        "meaning": "Sagitário (signo)"
+      },
+      {
+        "id": 5,
+        "word": "风象星座",
+        "pinyin": "fēngxiàngxīngzuò",
+        "meaning": "signo de ar"
+      }
+    ],
+    "id": "local-1780225701945-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 陈姐，我老听你说火象，风象什么的，这到底是什么意思啊？",
+    "pinyin": "Chénjiě, wǒ lǎo tīng nǐ shuō huǒxiàng, fēngxiàng shénme de, zhè dàodǐ shì shénme yìsi a?",
+    "translation": "B: Irmã Chen, eu sempre ouço você falar sobre signos de fogo, signos de vento, etc., o que isso significa exatamente?",
+    "tokens": [
+      "陈姐",
+      "，",
+      "我",
+      "老",
+      "听",
+      "你",
+      "说",
+      "火象",
+      "，",
+      "风象",
+      "什么",
+      "的",
+      "，",
+      "这",
+      "到底",
+      "是",
+      "什么",
+      "意思",
+      "啊",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陈姐",
+        "pinyin": "chénjiě",
+        "meaning": "Irmã Chen (tratamento respeitoso para mulher mais velha)"
+      },
+      {
+        "id": 2,
+        "word": "老",
+        "pinyin": "lǎo",
+        "meaning": "sempre, frequentemente"
+      },
+      {
+        "id": 3,
+        "word": "火象",
+        "pinyin": "huǒxiàng",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 4,
+        "word": "风象",
+        "pinyin": "fēngxiàng",
+        "meaning": "signo de vento"
+      },
+      {
+        "id": 5,
+        "word": "到底",
+        "pinyin": "dàodǐ",
+        "meaning": "no fundo, exatamente, afinal"
+      }
+    ],
+    "id": "local-1780225701945-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 十二星座分成四象，分别是风象、火象、水象和土象，其中风象和火象是阳性星座，水象和土象是阴性星座。",
+    "pinyin": "Shíèr xīngzuò fēnchéng sìxiàng, fēnbié shì fēngxiàng, huǒxiàng, shuǐxiàng hé tǔxiàng, qízhōng fēngxiàng hé huǒ xiàngshì yángxìng xīngzuò, shuǐxiàng hé tǔ xiàngshì yīnxìng xīngzuò.",
+    "translation": "A: Os doze signos do zodíaco são divididos em quatro elementos: ar, fogo, água e terra. Entre eles, os signos de ar e fogo são do tipo yang, enquanto os signos de água e terra são do tipo yin.",
+    "tokens": [
+      "十二",
+      "星座",
+      "分成",
+      "四象",
+      "，",
+      "分别",
+      "是",
+      "风象",
+      "、",
+      "火象",
+      "、",
+      "水象",
+      "和",
+      "土象",
+      "，",
+      "其中",
+      "风象",
+      "和",
+      "火",
+      "象是",
+      "阳性",
+      "星座",
+      "，",
+      "水象",
+      "和",
+      "土",
+      "象是",
+      "阴性",
+      "星座",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "十二星座",
+        "pinyin": "shíèrxīngzuò",
+        "meaning": "doze signos do zodíaco"
+      },
+      {
+        "id": 2,
+        "word": "四象",
+        "pinyin": "sìxiàng",
+        "meaning": "quatro elementos"
+      },
+      {
+        "id": 3,
+        "word": "风象",
+        "pinyin": "fēngxiàng",
+        "meaning": "signo de ar"
+      },
+      {
+        "id": 4,
+        "word": "火象",
+        "pinyin": "huǒxiàng",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 5,
+        "word": "水象",
+        "pinyin": "shuǐxiàng",
+        "meaning": "signo de água"
+      },
+      {
+        "id": 6,
+        "word": "土象",
+        "pinyin": "tǔxiàng",
+        "meaning": "signo de terra"
+      },
+      {
+        "id": 7,
+        "word": "阳性",
+        "pinyin": "yángxìng",
+        "meaning": "yang (masculino/ativo)"
+      },
+      {
+        "id": 8,
+        "word": "阴性",
+        "pinyin": "yīnxìng",
+        "meaning": "yin (feminino/passivo)"
+      }
+    ],
+    "id": "local-1780225701945-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 陈姐，别迷信了，星座那一套，拿来茶余饭后聊聊天还可以，真让小文照着星座来找男朋友，不靠谱。",
+    "pinyin": "Chénjiě, bié míxìn le, xīngzuò nà yītào, nálái cháyúfànhòu liáoliáotiān hái kěyǐ, zhēn ràng xiǎowén zhàozhe xīngzuò lái zhǎo nánpéngyǒu, bùkào pǔ.",
+    "translation": "C: Irmã Chen, pare de acreditar cegamente nisso. Horóscopos podem servir apenas como assunto de conversa durante o chá ou as refeições, mas se a Xiao Wen for realmente escolher um namorado com base nisso, não é confiável.",
+    "tokens": [
+      "陈姐",
+      "，",
+      "别",
+      "迷信",
+      "了",
+      "，",
+      "星座",
+      "那",
+      "一套",
+      "，",
+      "拿来",
+      "茶余饭后",
+      "聊聊天",
+      "还",
+      "可以",
+      "，",
+      "真",
+      "让",
+      "小文",
+      "照着",
+      "星座",
+      "来",
+      "找",
+      "男朋友",
+      "，",
+      "不靠",
+      "谱",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "迷信",
+        "pinyin": "míxìn",
+        "meaning": "superstição / acreditar cegamente"
+      },
+      {
+        "id": 2,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo do zodíaco / horóscopo"
+      },
+      {
+        "id": 3,
+        "word": "茶余饭后",
+        "pinyin": "cháyúfànhòu",
+        "meaning": "no tempo livre / para conversar casualmente"
+      },
+      {
+        "id": 4,
+        "word": "靠谱",
+        "pinyin": "kàopǔ",
+        "meaning": "confiável / sério"
+      }
+    ],
+    "id": "local-1780225701945-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 迷信？我告诉你，星座是有科学道理的，要不然怎么会流行了这么多年，而且大家都觉得准。",
+    "pinyin": "Míxìn? Wǒ gàosù nǐ, xīngzuò shì yǒu kēxué dàolǐ de, yàobùrán zěnme huì liúxíng le zhème duōnián, érqiě dàjiā dōu juéde zhǔn.",
+    "translation": "A: Superstição? Eu te digo, os signos do zodíaco têm base científica, caso contrário, por que teriam sido populares por tantos anos e todos acham que são precisos.",
+    "tokens": [
+      "迷信",
+      "？",
+      "我",
+      "告诉",
+      "你",
+      "，",
+      "星座",
+      "是",
+      "有",
+      "科学",
+      "道理",
+      "的",
+      "，",
+      "要不然",
+      "怎么",
+      "会",
+      "流行",
+      "了",
+      "这么",
+      "多年",
+      "，",
+      "而且",
+      "大家",
+      "都",
+      "觉得",
+      "准",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "迷信",
+        "pinyin": "míxìn",
+        "meaning": "superstição"
+      },
+      {
+        "id": 2,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signos do zodíaco"
+      },
+      {
+        "id": 3,
+        "word": "科学",
+        "pinyin": "kēxué",
+        "meaning": "ciência"
+      },
+      {
+        "id": 4,
+        "word": "道理",
+        "pinyin": "dàolǐ",
+        "meaning": "lógica / fundamento"
+      },
+      {
+        "id": 5,
+        "word": "流行",
+        "pinyin": "liúxíng",
+        "meaning": "popular / em voga"
+      },
+      {
+        "id": 6,
+        "word": "准",
+        "pinyin": "zhǔn",
+        "meaning": "preciso / exato"
+      }
+    ],
+    "id": "local-1780225701945-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 你这就是心理暗示，好多人本来没有星座预测中那些性格特点，看了星座的解释，就会在心里暗示自己这样去做，反而模仿了星座。",
+    "pinyin": "Nǐ zhè jiùshì xīnlǐ ànshì, hǎoduō rén běnlái méiyǒu xīngzuò yùcè zhōng nàxiē xìnggétèdiǎn, kàn le xīngzuò de jiěshì, jiù huì zài xīnlǐ ànshì zìjǐ zhèyàng qù zuò, fǎnér mófǎng le xīngzuò.",
+    "translation": "C: Isso é apenas uma sugestão psicológica. Muitas pessoas, que originalmente não possuem as características de personalidade previstas pela astrologia, ao lerem as interpretações dos signos, passam a se sugerir internamente a agir dessa forma, acabando por imitar o que diz o signo.",
+    "tokens": [
+      "你",
+      "这",
+      "就是",
+      "心理",
+      "暗示",
+      "，",
+      "好多",
+      "人",
+      "本来",
+      "没有",
+      "星座",
+      "预测",
+      "中",
+      "那些",
+      "性格特点",
+      "，",
+      "看",
+      "了",
+      "星座",
+      "的",
+      "解释",
+      "，",
+      "就",
+      "会",
+      "在",
+      "心里",
+      "暗示",
+      "自己",
+      "这样",
+      "去",
+      "做",
+      "，",
+      "反而",
+      "模仿",
+      "了",
+      "星座",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "心理暗示",
+        "pinyin": "xīnlǐànshì",
+        "meaning": "sugestão psicológica"
+      },
+      {
+        "id": 2,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 3,
+        "word": "性格特点",
+        "pinyin": "xìnggétèdiǎn",
+        "meaning": "características de personalidade"
+      },
+      {
+        "id": 4,
+        "word": "解释",
+        "pinyin": "jiěshì",
+        "meaning": "interpretação"
+      },
+      {
+        "id": 5,
+        "word": "暗示",
+        "pinyin": "ànshì",
+        "meaning": "sugerir"
+      },
+      {
+        "id": 6,
+        "word": "模仿",
+        "pinyin": "mófǎng",
+        "meaning": "imitar"
+      }
+    ],
+    "id": "local-1780225701945-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 小李，我问你，你的生日是五月份吧。",
+    "pinyin": "Xiǎolǐ, wǒ wèn nǐ, nǐ de shēngrì shì wǔyuèfèn ba.",
+    "translation": "A: Xiao Li, deixa eu te perguntar, seu aniversário é em maio, né?",
+    "tokens": [
+      "小李",
+      "，",
+      "我",
+      "问",
+      "你",
+      "，",
+      "你",
+      "的",
+      "生日",
+      "是",
+      "五月份",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小李",
+        "pinyin": "xiǎolǐ",
+        "meaning": "Xiao Li (apelido para Li)"
+      },
+      {
+        "id": 2,
+        "word": "问",
+        "pinyin": "wèn",
+        "meaning": "perguntar"
+      },
+      {
+        "id": 3,
+        "word": "生日",
+        "pinyin": "shēngrì",
+        "meaning": "aniversário de nascimento"
+      },
+      {
+        "id": 4,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser/estar"
+      },
+      {
+        "id": 5,
+        "word": "五月份",
+        "pinyin": "wǔyuèfèn",
+        "meaning": "mês de maio"
+      },
+      {
+        "id": 6,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula de confirmação ou suposição"
+      }
+    ],
+    "id": "local-1780225701945-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 是啊，怎么了？",
+    "pinyin": "Shì a, zěnme le?",
+    "translation": "C: Sim, o que houve?",
+    "tokens": [
+      "是",
+      "啊",
+      "，",
+      "怎么",
+      "了",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是啊",
+        "pinyin": "shìa",
+        "meaning": "sim / é verdade"
+      },
+      {
+        "id": 2,
+        "word": "怎么了",
+        "pinyin": "zěnmele",
+        "meaning": "o que houve / o que aconteceu"
+      }
+    ],
+    "id": "local-1780225701945-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 我看你啊，就是典型的金牛座，你们金牛座就是这样，又固执又理性，金牛座都不相信星座。小文你看他，像不像一头犟牛。",
+    "pinyin": "Wǒ kàn nǐ a, jiùshì diǎnxíng de jīnniúzuò, nǐmen jīnniúzuò jiùshì zhèyàng, yòu gùzhí yòu lǐxìng, jīnniúzuò dōu bù xiāngxìn xīngzuò. Xiǎowén nǐ kàn tā, xiàngbùxiàng yītóu jiàng niú.",
+    "translation": "A: Eu acho que você é um típico Touro. Vocês, touros, são assim: teimosos e racionais. Os touros nem acreditam em signos do zodíaco. Xiaowen, olhe para ele, não parece um touro teimoso?",
+    "tokens": [
+      "我",
+      "看",
+      "你",
+      "啊",
+      "，",
+      "就是",
+      "典型",
+      "的",
+      "金牛座",
+      "，",
+      "你们",
+      "金牛座",
+      "就是",
+      "这样",
+      "，",
+      "又",
+      "固执",
+      "又",
+      "理性",
+      "，",
+      "金牛座",
+      "都",
+      "不",
+      "相信",
+      "星座",
+      "。",
+      "小文",
+      "你",
+      "看",
+      "他",
+      "，",
+      "像不像",
+      "一头",
+      "犟",
+      "牛",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "典型",
+        "pinyin": "diǎnxíng",
+        "meaning": "típico"
+      },
+      {
+        "id": 2,
+        "word": "金牛座",
+        "pinyin": "jīnniúzuò",
+        "meaning": "signo Touro"
+      },
+      {
+        "id": 3,
+        "word": "固执",
+        "pinyin": "gùzhí",
+        "meaning": "teimoso"
+      },
+      {
+        "id": 4,
+        "word": "理性",
+        "pinyin": "lǐxìng",
+        "meaning": "racional"
+      },
+      {
+        "id": 5,
+        "word": "相信",
+        "pinyin": "xiāngxìn",
+        "meaning": "acreditar"
+      },
+      {
+        "id": 6,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 7,
+        "word": "犟牛",
+        "pinyin": "jiàngniú",
+        "meaning": "touro teimoso"
+      }
+    ],
+    "id": "local-1780225701945-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "C: 陈姐，你弄错了，我是五月底出生的，是双子座。",
+    "pinyin": "Chénjiě, nǐ nòngcuò le, wǒ shì wǔyuè dǐ chūshēng de, shì shuāngzizuò.",
+    "translation": "C: Irmã Chen, você está errada. Eu nasci no final de maio, sou do signo de Gêmeos.",
+    "tokens": [
+      "陈姐",
+      "，",
+      "你",
+      "弄错",
+      "了",
+      "，",
+      "我",
+      "是",
+      "五月",
+      "底",
+      "出生",
+      "的",
+      "，",
+      "是",
+      "双子座",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "陈姐",
+        "pinyin": "chénjiě",
+        "meaning": "Irmã Chen (termo de tratamento para mulher mais velha)"
+      },
+      {
+        "id": 2,
+        "word": "弄错",
+        "pinyin": "nòngcuò",
+        "meaning": "errar, confundir"
+      },
+      {
+        "id": 3,
+        "word": "五月底",
+        "pinyin": "wǔyuèdǐ",
+        "meaning": "final de maio"
+      },
+      {
+        "id": 4,
+        "word": "出生",
+        "pinyin": "chūshēng",
+        "meaning": "nascer"
+      },
+      {
+        "id": 5,
+        "word": "双子座",
+        "pinyin": "shuāngzizuò",
+        "meaning": "Gêmeos (signo do zodíaco)"
+      }
+    ],
+    "id": "local-1780225701945-9",
+    "language": "Chinês"
+  }
+]

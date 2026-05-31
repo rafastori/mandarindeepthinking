@@ -1,85 +1,56 @@
 [
   {
-    "chinese": "A: 嘿，叫出租车的电话是多少？",
-    "pinyin": "Hēi, jiào chūzūchē de diànhuà shì duōshǎo?",
-    "translation": "A: Ei, qual é o número de telefone para chamar um táxi?",
+    "chinese": "A: 哎，那个订车电话是多少啊？",
+    "pinyin": "Āi, nàge dìngchē diànhuà shì duōshǎo a?",
+    "translation": "A: Ei, qual é o número de telefone para reservar um carro?",
     "tokens": [
-      "嘿",
+      "哎",
       "，",
-      "叫",
-      "出租车",
-      "的",
+      "那个",
+      "订车",
       "电话",
       "是",
       "多少",
+      "啊",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "嘿",
-        "pinyin": "hēi",
-        "meaning": "ei; olá"
+        "word": "订车",
+        "pinyin": "dìngchē",
+        "meaning": "reservar carro"
       },
       {
         "id": 2,
-        "word": "叫",
-        "pinyin": "jiào",
-        "meaning": "chamar; gritar"
-      },
-      {
-        "id": 3,
-        "word": "出租车",
-        "pinyin": "chūzūchē",
-        "meaning": "táxi"
-      },
-      {
-        "id": 4,
         "word": "电话",
         "pinyin": "diànhuà",
         "meaning": "telefone"
       },
       {
-        "id": 5,
+        "id": 3,
         "word": "多少",
         "pinyin": "duōshǎo",
-        "meaning": "quanto; qual (número)"
+        "meaning": "quanto/quais"
       }
     ],
-    "id": "local-1772294347373-0",
+    "id": "local-1780198500048-0",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 什么？",
-    "pinyin": "Shénme?",
-    "translation": "B: O quê?",
+    "chinese": "B: 啊？现在谁还用电话订出租车？",
+    "pinyin": "A? Xiànzài shuí hái yòng diànhuà dìng chūzūchē?",
+    "translation": "B: Ah? Quem ainda usa telefone para reservar táxi agora?",
     "tokens": [
-      "什么",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê; qual"
-      }
-    ],
-    "id": "local-1772294347373-1",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "现在谁还打电话叫出租车啊？",
-    "pinyin": "Xiànzài shuí hái dǎ diànhuà jiào chūzūchē a?",
-    "translation": "Hoje em dia quem ainda liga para chamar táxi?",
-    "tokens": [
+      "啊",
+      "？",
       "现在",
       "谁",
       "还",
-      "打电话",
-      "叫",
+      "用",
+      "电话",
+      "订",
       "出租车",
-      "啊",
       "？"
     ],
     "keywords": [
@@ -87,7 +58,7 @@
         "id": 1,
         "word": "现在",
         "pinyin": "xiànzài",
-        "meaning": "agora; hoje em dia"
+        "meaning": "agora"
       },
       {
         "id": 2,
@@ -99,264 +70,44 @@
         "id": 3,
         "word": "还",
         "pinyin": "hái",
-        "meaning": "ainda; também"
+        "meaning": "ainda"
       },
       {
         "id": 4,
-        "word": "打电话",
-        "pinyin": "dǎ diànhuà",
-        "meaning": "telefonar; ligar"
+        "word": "用",
+        "pinyin": "yòng",
+        "meaning": "usar"
       },
       {
         "id": 5,
-        "word": "叫",
-        "pinyin": "jiào",
-        "meaning": "chamar"
+        "word": "电话",
+        "pinyin": "diànhuà",
+        "meaning": "telefone"
       },
       {
         "id": 6,
-        "word": "出租车",
-        "pinyin": "chūzūchē",
-        "meaning": "táxi"
+        "word": "订",
+        "pinyin": "dìng",
+        "meaning": "reservar"
       },
       {
         "id": 7,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula exclamativa/interrogativa"
+        "word": "出租车",
+        "pinyin": "chūzūchē",
+        "meaning": "táxi"
       }
     ],
-    "id": "local-1772294347373-2",
+    "id": "local-1780198500048-1",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 那你都是怎么叫车的？",
-    "pinyin": "Nà nǐ dōu shì zěnme jiào chē de?",
-    "translation": "A: Então, como você chama um carro?",
+    "chinese": "A: 那怎么订？",
+    "pinyin": "Nà zěnme dìng?",
+    "translation": "A: Como fazer a reserva?",
     "tokens": [
       "那",
-      "你",
-      "都",
-      "是",
       "怎么",
-      "叫车",
-      "的",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então; aquele"
-      },
-      {
-        "id": 2,
-        "word": "怎么",
-        "pinyin": "zěnme",
-        "meaning": "como"
-      },
-      {
-        "id": 3,
-        "word": "叫车",
-        "pinyin": "jiào chē",
-        "meaning": "chamar carro/táxi"
-      }
-    ],
-    "id": "local-1772294347373-3",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "B: 用叫车软件啊。",
-    "pinyin": "Yòng jiào chē ruǎnjiàn a.",
-    "translation": "B: Uso aplicativos de transporte!",
-    "tokens": [
-      "用",
-      "叫车",
-      "软件",
-      "啊",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "用",
-        "pinyin": "yòng",
-        "meaning": "usar; com"
-      },
-      {
-        "id": 2,
-        "word": "叫车软件",
-        "pinyin": "jiào chē ruǎnjiàn",
-        "meaning": "aplicativo de transporte"
-      },
-      {
-        "id": 3,
-        "word": "软件",
-        "pinyin": "ruǎnjiàn",
-        "meaning": "software; aplicativo"
-      },
-      {
-        "id": 4,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula exclamativa"
-      }
-    ],
-    "id": "local-1772294347373-4",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "下载一个在手机上就行了。",
-    "pinyin": "Xiàzài yīgè zài shǒujī shàng jiù xíng le.",
-    "translation": "É só baixar um no celular.",
-    "tokens": [
-      "下载",
-      "一个",
-      "在",
-      "手机",
-      "上",
-      "就",
-      "行",
-      "了",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "下载",
-        "pinyin": "xiàzài",
-        "meaning": "baixar; fazer download"
-      },
-      {
-        "id": 2,
-        "word": "一个",
-        "pinyin": "yīgè",
-        "meaning": "um (classificador)"
-      },
-      {
-        "id": 3,
-        "word": "手机",
-        "pinyin": "shǒujī",
-        "meaning": "celular"
-      },
-      {
-        "id": 4,
-        "word": "就...行了",
-        "pinyin": "jiù...xíng le",
-        "meaning": "já pode; é só"
-      }
-    ],
-    "id": "local-1772294347373-5",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "A: 哦。",
-    "pinyin": "Ò.",
-    "translation": "A: Ah, entendi.",
-    "tokens": [
-      "哦",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "哦",
-        "pinyin": "ò",
-        "meaning": "oh; ah (entendi)"
-      }
-    ],
-    "id": "local-1772294347373-6",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "然后呢？",
-    "pinyin": "Ránhòu ne?",
-    "translation": "E depois?",
-    "tokens": [
-      "然后",
-      "呢",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "然后",
-        "pinyin": "ránhòu",
-        "meaning": "depois; em seguida"
-      },
-      {
-        "id": 2,
-        "word": "呢",
-        "pinyin": "ne",
-        "meaning": "partícula interrogativa (e quanto a?)"
-      }
-    ],
-    "id": "local-1772294347373-7",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "B: 输入手机号直接注册就可以了。",
-    "pinyin": "Shūrù shǒujīhào zhíjiē zhùcè jiù kěyǐ le.",
-    "translation": "B: É só inserir o número de celular e registrar diretamente.",
-    "tokens": [
-      "输入",
-      "手机号",
-      "直接",
-      "注册",
-      "就",
-      "可以",
-      "了",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "输入",
-        "pinyin": "shūrù",
-        "meaning": "inserir; digitar"
-      },
-      {
-        "id": 2,
-        "word": "手机号",
-        "pinyin": "shǒujīhào",
-        "meaning": "número de celular"
-      },
-      {
-        "id": 3,
-        "word": "直接",
-        "pinyin": "zhíjiē",
-        "meaning": "diretamente"
-      },
-      {
-        "id": 4,
-        "word": "注册",
-        "pinyin": "zhùcè",
-        "meaning": "registrar; cadastrar"
-      },
-      {
-        "id": 5,
-        "word": "就可以",
-        "pinyin": "jiù kěyǐ",
-        "meaning": "já pode; então pode"
-      }
-    ],
-    "id": "local-1772294347373-8",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "A: 那他们怎么知道我在哪里啊？",
-    "pinyin": "Nà tāmen zěnme zhīdào wǒ zài nǎlǐ a?",
-    "translation": "A: Então, como eles sabem onde eu estou?",
-    "tokens": [
-      "那",
-      "他们",
-      "怎么",
-      "知道",
-      "我",
-      "在",
-      "哪里",
-      "啊",
+      "订",
       "？"
     ],
     "keywords": [
@@ -368,38 +119,228 @@
       },
       {
         "id": 2,
-        "word": "知道",
-        "pinyin": "zhīdào",
-        "meaning": "saber"
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
       },
       {
         "id": 3,
-        "word": "哪里",
-        "pinyin": "nǎlǐ",
-        "meaning": "onde"
-      },
-      {
-        "id": 4,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula interrogativa"
+        "word": "订",
+        "pinyin": "dìng",
+        "meaning": "reservar"
       }
     ],
-    "id": "local-1772294347373-9",
+    "id": "local-1780198500048-2",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 通过GPS他们很快就能找到你的位置，附近的空车很快就过来。",
-    "pinyin": "Tōngguò GPS tāmen hěn kuài jiù néng zhǎodào nǐ de wèizhì, fùjìn de kōngchē hěn kuài jiù guòlái.",
-    "translation": "B: Através do GPS eles podem encontrar sua localização muito rapidamente, e os carros disponíveis próximos logo chegarão.",
+    "chinese": "B: 用打车软件呀，在手机上下载一个就好了。",
+    "pinyin": "Yòng dǎchē ruǎnjiàn ya, zài shǒujī shàng xiàzài yígè jiù hǎo le.",
+    "translation": "B: Usando aplicativos de táxi, basta baixar um no celular.",
+    "tokens": [
+      "用",
+      "打车",
+      "软件",
+      "呀",
+      "，",
+      "在",
+      "手机",
+      "上",
+      "下载",
+      "一个",
+      "就",
+      "好",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打车软件",
+        "pinyin": "dǎchēruǎnjiàn",
+        "meaning": "aplicativo de táxi"
+      },
+      {
+        "id": 2,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "下载",
+        "pinyin": "xiàzài",
+        "meaning": "baixar"
+      },
+      {
+        "id": 4,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "apenas/basta"
+      },
+      {
+        "id": 5,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bem/pronto"
+      }
+    ],
+    "id": "local-1780198500048-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 哦，然后呢？",
+    "pinyin": "Ó, ránhòu ne?",
+    "translation": "A: Ah, e depois?",
+    "tokens": [
+      "哦",
+      "，",
+      "然后",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "哦",
+        "pinyin": "ó",
+        "meaning": "ah"
+      },
+      {
+        "id": 2,
+        "word": "然后",
+        "pinyin": "ránhòu",
+        "meaning": "então / depois"
+      },
+      {
+        "id": 3,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "(partícula interrogativa)"
+      }
+    ],
+    "id": "local-1780198500048-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 输入你的手机号码，就可以直接登录了。",
+    "pinyin": "Shūrù nǐ de shǒujīhàomǎ, jiù kěyǐ zhíjiē dēnglù le.",
+    "translation": "B: Basta inserir seu número de telefone para fazer login diretamente.",
+    "tokens": [
+      "输入",
+      "你",
+      "的",
+      "手机号码",
+      "，",
+      "就",
+      "可以",
+      "直接",
+      "登录",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "输入",
+        "pinyin": "shūrù",
+        "meaning": "inserir / digitar"
+      },
+      {
+        "id": 2,
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
+      },
+      {
+        "id": 3,
+        "word": "号码",
+        "pinyin": "hàomǎ",
+        "meaning": "número"
+      },
+      {
+        "id": 4,
+        "word": "直接",
+        "pinyin": "zhíjiē",
+        "meaning": "diretamente"
+      },
+      {
+        "id": 5,
+        "word": "登录",
+        "pinyin": "dēnglù",
+        "meaning": "fazer login"
+      }
+    ],
+    "id": "local-1780198500048-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那他们怎么知道你在哪儿？",
+    "pinyin": "Nà tāmen zěnme zhīdào nǐ zài nǎér?",
+    "translation": "A: Então, como eles sabem onde você está?",
+    "tokens": [
+      "那",
+      "他们",
+      "怎么",
+      "知道",
+      "你",
+      "在",
+      "哪儿",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "他们",
+        "pinyin": "tāmen",
+        "meaning": "eles"
+      },
+      {
+        "id": 3,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 4,
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "saber / conhecer"
+      },
+      {
+        "id": 5,
+        "word": "在",
+        "pinyin": "zài",
+        "meaning": "estar em / localizar-se"
+      },
+      {
+        "id": 6,
+        "word": "哪儿",
+        "pinyin": "nǎér",
+        "meaning": "onde / aonde"
+      }
+    ],
+    "id": "local-1780198500048-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 通过GPS，他们很快就可以找到你的位置，附近的车子就会马上过来。当然你也可以给他们语音留言。",
+    "pinyin": "Tōngguò GPS, tāmen hěnkuài jiù kěyǐ zhǎodào nǐ de wèizhì, fùjìn de chēzi jiù huì mǎshàng guòlái. Dāngrán nǐ yě kěyǐ gěi tāmen yǔyīn liúyán.",
+    "translation": "B: Através do GPS, eles podem encontrar sua localização rapidamente e os carros próximos virão imediatamente. Claro, você também pode deixar uma mensagem de voz para eles.",
     "tokens": [
       "通过",
       "GPS",
+      "，",
       "他们",
-      "很",
-      "快",
+      "很快",
       "就",
-      "能",
+      "可以",
       "找到",
       "你",
       "的",
@@ -407,11 +348,20 @@
       "，",
       "附近",
       "的",
-      "空车",
-      "很",
-      "快",
+      "车子",
       "就",
+      "会",
+      "马上",
       "过来",
+      "。",
+      "当然",
+      "你",
+      "也",
+      "可以",
+      "给",
+      "他们",
+      "语音",
+      "留言",
       "。"
     ],
     "keywords": [
@@ -419,167 +369,126 @@
         "id": 1,
         "word": "通过",
         "pinyin": "tōngguò",
-        "meaning": "através de; por meio de"
+        "meaning": "através de"
       },
       {
         "id": 2,
-        "word": "很快",
-        "pinyin": "hěn kuài",
-        "meaning": "muito rápido; em breve"
+        "word": "GPS",
+        "pinyin": "GPS",
+        "meaning": "GPS"
       },
       {
         "id": 3,
+        "word": "很快",
+        "pinyin": "hěnkuài",
+        "meaning": "rapidamente"
+      },
+      {
+        "id": 4,
         "word": "找到",
         "pinyin": "zhǎodào",
         "meaning": "encontrar"
       },
       {
-        "id": 4,
+        "id": 5,
         "word": "位置",
         "pinyin": "wèizhì",
-        "meaning": "localização; posição"
-      },
-      {
-        "id": 5,
-        "word": "附近",
-        "pinyin": "fùjìn",
-        "meaning": "perto; nas proximidades"
+        "meaning": "localização"
       },
       {
         "id": 6,
-        "word": "空车",
-        "pinyin": "kōngchē",
-        "meaning": "carro vazio (disponível)"
+        "word": "附近",
+        "pinyin": "fùjìn",
+        "meaning": "próximo"
       },
       {
         "id": 7,
-        "word": "过来",
-        "pinyin": "guòlái",
-        "meaning": "vir aqui; chegar"
+        "word": "马上",
+        "pinyin": "mǎshàng",
+        "meaning": "imediatamente"
+      },
+      {
+        "id": 8,
+        "word": "语音留言",
+        "pinyin": "yǔyīnliúyán",
+        "meaning": "mensagem de voz"
       }
     ],
-    "id": "local-1772294347373-10",
+    "id": "local-1780198500048-7",
     "language": "Chinês"
   },
   {
-    "chinese": "当然你也可以给他们留言。",
-    "pinyin": "Dāngrán nǐ yě kěyǐ gěi tāmen liúyán.",
-    "translation": "Claro, você também pode deixar uma mensagem para eles.",
+    "chinese": "A: 听起来真不错，你用过了吗？",
+    "pinyin": "Tīng qǐlái zhēnbùcuò, nǐ yòng guò le ma?",
+    "translation": "A: Parece realmente bom, você já experimentou?",
     "tokens": [
-      "当然",
-      "你",
-      "也",
-      "可以",
-      "给",
-      "他们",
-      "留言",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "当然",
-        "pinyin": "dāngrán",
-        "meaning": "claro; certamente"
-      },
-      {
-        "id": 2,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "poder; ser possível"
-      },
-      {
-        "id": 3,
-        "word": "给",
-        "pinyin": "gěi",
-        "meaning": "dar; para (preposição)"
-      },
-      {
-        "id": 4,
-        "word": "留言",
-        "pinyin": "liúyán",
-        "meaning": "deixar mensagem"
-      }
-    ],
-    "id": "local-1772294347373-11",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "A: 听起来还不错嘛。",
-    "pinyin": "Tīng qǐlái hái bùcuò ma.",
-    "translation": "A: Parece bem bom, hein.",
-    "tokens": [
-      "听起来",
-      "还",
-      "不",
-      "错",
-      "嘛",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "听起来",
-        "pinyin": "tīng qǐlái",
-        "meaning": "parecer (ao ouvir); soar"
-      },
-      {
-        "id": 2,
-        "word": "还不错",
-        "pinyin": "hái bùcuò",
-        "meaning": "nada mal; bastante bom"
-      },
-      {
-        "id": 3,
-        "word": "嘛",
-        "pinyin": "ma",
-        "meaning": "partícula que indica obviedade/concordância"
-      }
-    ],
-    "id": "local-1772294347373-12",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "你用过吗？",
-    "pinyin": "Nǐ yòng guò ma?",
-    "translation": "Você já usou?",
-    "tokens": [
+      "听",
+      "起来",
+      "真不错",
+      "，",
       "你",
       "用",
       "过",
+      "了",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
+        "word": "听起来",
+        "pinyin": "tīngqǐlái",
+        "meaning": "soar como / parecer"
+      },
+      {
+        "id": 2,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "verdadeiramente / realmente"
+      },
+      {
+        "id": 3,
+        "word": "不错",
+        "pinyin": "bùcuò",
+        "meaning": "bom / não ruim"
+      },
+      {
+        "id": 4,
         "word": "用",
         "pinyin": "yòng",
         "meaning": "usar"
       },
       {
-        "id": 2,
+        "id": 5,
         "word": "过",
-        "pinyin": "guo",
-        "meaning": "partícula que indica experiência passada"
-      },
-      {
-        "id": 3,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "pinyin": "guò",
+        "meaning": "partícula de experiência (já fez)"
       }
     ],
-    "id": "local-1772294347373-13",
+    "id": "local-1780198500048-8",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 当然了。",
-    "pinyin": "Dāngrán le.",
-    "translation": "B: Claro que sim.",
+    "chinese": "B: 当然，这几天一直下雨，很难打车，这个软件又方便又快捷。",
+    "pinyin": "Dāngrán, zhè jǐtiān yìzhí xiàyǔ, hěnnán dǎchē, zhège ruǎnjiàn yòu fāngbiàn yòu kuàijié.",
+    "translation": "B: Claro, tem chovido todos esses dias, é difícil chamar um táxi, este aplicativo é conveniente e rápido.",
     "tokens": [
       "当然",
-      "了",
+      "，",
+      "这",
+      "几天",
+      "一直",
+      "下雨",
+      "，",
+      "很难",
+      "打车",
+      "，",
+      "这个",
+      "软件",
+      "又",
+      "方便",
+      "又",
+      "快捷",
       "。"
     ],
     "keywords": [
@@ -587,41 +496,13 @@
         "id": 1,
         "word": "当然",
         "pinyin": "dāngrán",
-        "meaning": "claro; certamente"
-      }
-    ],
-    "id": "local-1772294347373-14",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "最近老下雨，根本就打不到车。",
-    "pinyin": "Zuìjìn lǎo xiàyǔ, gēnběn jiù dǎ bú dào chē.",
-    "translation": "Ultimamente tem chovido muito, e é impossível conseguir um carro.",
-    "tokens": [
-      "最近",
-      "老",
-      "下雨",
-      "，",
-      "根本",
-      "就",
-      "打",
-      "不",
-      "到",
-      "车",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "最近",
-        "pinyin": "zuìjìn",
-        "meaning": "recentemente; ultimamente"
+        "meaning": "claro / é claro"
       },
       {
         "id": 2,
-        "word": "老",
-        "pinyin": "lǎo",
-        "meaning": "sempre; frequentemente (neste contexto)"
+        "word": "一直",
+        "pinyin": "yìzhí",
+        "meaning": "continuamente / sempre"
       },
       {
         "id": 3,
@@ -631,91 +512,53 @@
       },
       {
         "id": 4,
-        "word": "根本",
-        "pinyin": "gēnběn",
-        "meaning": "simplesmente; de modo algum (negativo)"
+        "word": "打车",
+        "pinyin": "dǎchē",
+        "meaning": "chamar táxi"
       },
       {
         "id": 5,
-        "word": "打不到车",
-        "pinyin": "dǎ bú dào chē",
-        "meaning": "não conseguir pegar um carro/táxi"
+        "word": "软件",
+        "pinyin": "ruǎnjiàn",
+        "meaning": "software / aplicativo"
       },
       {
         "id": 6,
-        "word": "打到",
-        "pinyin": "dǎ dào",
-        "meaning": "conseguir (algo por meio de ação, ex. pegar táxi)"
-      }
-    ],
-    "id": "local-1772294347373-15",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "这个软件又方便又快。",
-    "pinyin": "Zhège ruǎnjiàn yòu fāngbiàn yòu kuài.",
-    "translation": "Este aplicativo é conveniente e rápido.",
-    "tokens": [
-      "这个",
-      "软件",
-      "又",
-      "方便",
-      "又",
-      "快",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "这个",
-        "pinyin": "zhège",
-        "meaning": "este; esta"
-      },
-      {
-        "id": 2,
-        "word": "软件",
-        "pinyin": "ruǎnjiàn",
-        "meaning": "software; aplicativo"
-      },
-      {
-        "id": 3,
-        "word": "又...又...",
-        "pinyin": "yòu...yòu...",
-        "meaning": "tanto...quanto...; e...e..."
-      },
-      {
-        "id": 4,
         "word": "方便",
         "pinyin": "fāngbiàn",
         "meaning": "conveniente"
       },
       {
-        "id": 5,
-        "word": "快",
-        "pinyin": "kuài",
-        "meaning": "rápido"
+        "id": 7,
+        "word": "快捷",
+        "pinyin": "kuàijié",
+        "meaning": "rápido e ágil"
       }
     ],
-    "id": "local-1772294347373-16",
+    "id": "local-1780198500048-9",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 我下次也试试。",
-    "pinyin": "Wǒ xià cì yě shìshi.",
-    "translation": "A: Vou experimentar da próxima vez também.",
+    "chinese": "A: 下次我也试试，怎么付钱呢？",
+    "pinyin": "Xiàcì wǒ yě shìshì, zěnme fùqián ne?",
+    "translation": "A: Da próxima vez eu também vou experimentar. Como faço o pagamento?",
     "tokens": [
-      "我",
       "下次",
+      "我",
       "也",
       "试试",
-      "。"
+      "，",
+      "怎么",
+      "付钱",
+      "呢",
+      "？"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "下次",
-        "pinyin": "xià cì",
-        "meaning": "próxima vez"
+        "pinyin": "xiàcì",
+        "meaning": "da próxima vez"
       },
       {
         "id": 2,
@@ -726,193 +569,91 @@
       {
         "id": 3,
         "word": "试试",
-        "pinyin": "shìshi",
-        "meaning": "tentar; experimentar (reduplicação do verbo)"
-      }
-    ],
-    "id": "local-1772294347373-17",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "怎么付钱啊？",
-    "pinyin": "Zěnme fù qián a?",
-    "translation": "Como se paga?",
-    "tokens": [
-      "怎么",
-      "付钱",
-      "啊",
-      "？"
-    ],
-    "keywords": [
+        "pinyin": "shìshì",
+        "meaning": "tentar / experimentar"
+      },
       {
-        "id": 1,
+        "id": 4,
         "word": "怎么",
         "pinyin": "zěnme",
         "meaning": "como"
       },
       {
-        "id": 2,
+        "id": 5,
         "word": "付钱",
-        "pinyin": "fù qián",
+        "pinyin": "fùqián",
         "meaning": "pagar"
-      },
-      {
-        "id": 3,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula interrogativa"
       }
     ],
-    "id": "local-1772294347373-18",
+    "id": "local-1780198500048-10",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 可以用现金也可以用手机支付宝付钱。",
-    "pinyin": "Kěyǐ yòng xiànjīn yě kěyǐ yòng shǒujī zhīfùbǎo fù qián.",
-    "translation": "B: Pode-se usar dinheiro em espécie ou pagar com Alipay no celular.",
+    "chinese": "B: 用现金或者用手机支付宝，有时还可以便宜五块呢。",
+    "pinyin": "Yòng xiànjīn huòzhě yòng shǒujī zhīfùbǎo, yǒushí hái kěyǐ piányi wǔkuài ne.",
+    "translation": "B: Pague em dinheiro ou pelo Alipay do celular; às vezes pode ficar cinco yuan mais barato.",
     "tokens": [
-      "可以",
       "用",
       "现金",
-      "也",
-      "可以",
+      "或者",
       "用",
       "手机",
       "支付宝",
-      "付钱",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "poder; ser possível"
-      },
-      {
-        "id": 2,
-        "word": "用",
-        "pinyin": "yòng",
-        "meaning": "usar"
-      },
-      {
-        "id": 3,
-        "word": "现金",
-        "pinyin": "xiànjīn",
-        "meaning": "dinheiro em espécie"
-      },
-      {
-        "id": 4,
-        "word": "支付宝",
-        "pinyin": "Zhīfùbǎo",
-        "meaning": "Alipay (plataforma de pagamento)"
-      },
-      {
-        "id": 5,
-        "word": "手机支付宝",
-        "pinyin": "shǒujī zhīfùbǎo",
-        "meaning": "Alipay no celular"
-      },
-      {
-        "id": 6,
-        "word": "付钱",
-        "pinyin": "fù qián",
-        "meaning": "pagar"
-      }
-    ],
-    "id": "local-1772294347373-19",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "有时候还能便宜五块钱呢。",
-    "pinyin": "Yǒu shíhou hái néng piányi wǔ kuài qián ne.",
-    "translation": "Às vezes ainda pode ser cinco yuans mais barato.",
-    "tokens": [
-      "有",
-      "时候",
+      "，",
+      "有时",
       "还",
-      "能",
+      "可以",
       "便宜",
-      "五",
-      "块钱",
+      "五块",
       "呢",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "有时候",
-        "pinyin": "yǒu shíhou",
-        "meaning": "às vezes"
+        "word": "现金",
+        "pinyin": "xiànjīn",
+        "meaning": "dinheiro em espécie"
       },
       {
         "id": 2,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda; também"
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "meaning": "celular"
       },
       {
         "id": 3,
-        "word": "能",
-        "pinyin": "néng",
-        "meaning": "poder; ser capaz de"
+        "word": "支付宝",
+        "pinyin": "zhīfùbǎo",
+        "meaning": "Alipay (app de pagamento)"
       },
       {
         "id": 4,
         "word": "便宜",
         "pinyin": "piányi",
-        "meaning": "barato; mais barato"
+        "meaning": "barato"
       },
       {
         "id": 5,
-        "word": "五块钱",
-        "pinyin": "wǔ kuài qián",
-        "meaning": "cinco yuans (moeda chinesa)"
-      },
-      {
-        "id": 6,
-        "word": "呢",
-        "pinyin": "ne",
-        "meaning": "partícula exclamativa (surpresa, ênfase)"
+        "word": "块",
+        "pinyin": "kuài",
+        "meaning": "yuan (moeda)"
       }
     ],
-    "id": "local-1772294347373-20",
+    "id": "local-1780198500048-11",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 真的啊？",
-    "pinyin": "Zhēnde a?",
-    "translation": "A: Sério?",
+    "chinese": "A: 真的啊？那我现在就用！",
+    "pinyin": "Zhēnde a? Nà wǒ xiànzài jiù yòng!",
+    "translation": "A: Sério? Então vou usar agora mesmo!",
     "tokens": [
       "真的",
       "啊",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "真的",
-        "pinyin": "zhēnde",
-        "meaning": "de verdade; sério"
-      },
-      {
-        "id": 2,
-        "word": "啊",
-        "pinyin": "a",
-        "meaning": "partícula interrogativa/exclamativa"
-      }
-    ],
-    "id": "local-1772294347373-21",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "那我马上就用！",
-    "pinyin": "Nà wǒ mǎshàng jiù yòng!",
-    "translation": "Então vou usar agora mesmo!",
-    "tokens": [
+      "？",
       "那",
       "我",
-      "马上",
+      "现在",
       "就",
       "用",
       "！"
@@ -920,24 +661,36 @@
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então"
+        "word": "真的",
+        "pinyin": "zhēnde",
+        "meaning": "sério / verdadeiramente"
       },
       {
         "id": 2,
-        "word": "马上",
-        "pinyin": "mǎshàng",
-        "meaning": "imediatamente; agora mesmo"
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
       },
       {
         "id": 3,
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "meaning": "agora"
+      },
+      {
+        "id": 4,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "logo / imediatamente"
+      },
+      {
+        "id": 5,
         "word": "用",
         "pinyin": "yòng",
         "meaning": "usar"
       }
     ],
-    "id": "local-1772294347373-22",
+    "id": "local-1780198500048-12",
     "language": "Chinês"
   }
 ]

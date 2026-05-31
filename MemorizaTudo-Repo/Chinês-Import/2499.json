@@ -1,48 +1,42 @@
 [
   {
-    "chinese": "欢乐谷到了！",
-    "pinyin": "Huānlègǔ dào le!",
-    "translation": "A: Chegamos no Happy Valley!",
+    "chinese": "A: 欢乐谷到啦！",
+    "pinyin": "Huānlègǔ dào la!",
+    "translation": "A: Chegamos ao Happy Valley!",
     "tokens": [
       "欢乐谷",
       "到",
-      "了",
+      "啦",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "欢乐谷",
-        "pinyin": "Huānlègǔ",
-        "meaning": "Happy Valley (nome de parque de diversões)"
+        "pinyin": "huānlègǔ",
+        "meaning": "Happy Valley (parque temático)"
       },
       {
         "id": 2,
         "word": "到",
         "pinyin": "dào",
         "meaning": "chegar"
-      },
-      {
-        "id": 3,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de mudança de estado"
       }
     ],
-    "id": "local-1772394687216-0",
+    "id": "local-1780203985398-0",
     "language": "Chinês"
   },
   {
-    "chinese": "耶！怎么这么多人？！什么都要排队。",
-    "pinyin": "Yē! Zěnme zhème duō rén?! Shénme dōu yào páiduì.",
-    "translation": "B: Oba! Por que tanta gente?! Tudo tem que pegar fila.",
+    "chinese": "B: 耶！怎么这么多人啊？！什么都要排队。",
+    "pinyin": "Yé! Zěnme zhème duōrén a?! Shénme dōu yào páiduì.",
+    "translation": "B: Uau! Por que tem tanta gente? Tudo tem que fazer fila.",
     "tokens": [
       "耶",
       "！",
       "怎么",
       "这么",
-      "多",
-      "人",
+      "多人",
+      "啊",
       "？",
       "！",
       "什么",
@@ -54,183 +48,178 @@
     "keywords": [
       {
         "id": 1,
-        "word": "耶",
-        "pinyin": "yē",
-        "meaning": "oba! (interjeição de alegria)"
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "por que / como"
       },
       {
         "id": 2,
-        "word": "怎么",
-        "pinyin": "zěnme",
-        "meaning": "como, por que"
+        "word": "这么多",
+        "pinyin": "zhèmeduō",
+        "meaning": "tão muitos / tanta"
       },
       {
         "id": 3,
-        "word": "这么",
-        "pinyin": "zhème",
-        "meaning": "tão, assim tão"
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoas"
       },
       {
         "id": 4,
-        "word": "多人",
-        "pinyin": "duōrén",
-        "meaning": "muitas pessoas"
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que / tudo"
       },
       {
         "id": 5,
-        "word": "什么都",
-        "pinyin": "shénme dōu",
-        "meaning": "tudo"
-      },
-      {
-        "id": 6,
         "word": "排队",
         "pinyin": "páiduì",
-        "meaning": "pegar fila, enfileirar"
+        "meaning": "fazer fila"
       }
     ],
-    "id": "local-1772394687216-1",
+    "id": "local-1780203985398-1",
     "language": "Chinês"
   },
   {
-    "chinese": "这样玩一天不够啊。是不是应该办个年票？",
-    "pinyin": "Zhèyàng wán yī tiān bùgòu a. Shì bùshì yīnggāi bàngè niánpiào?",
-    "translation": "A: Brincar assim um dia não é suficiente. Será que não devíamos fazer um passe anual?",
+    "chinese": "A: 所以一天玩不够嘛。不如我们办张年卡？",
+    "pinyin": "Suǒyǐ yītiān wán bùgòu ma. Bùrú wǒmen bànzhāng nián kǎ?",
+    "translation": "A: Então jogar por um dia não é suficiente. Que tal a gente fazer uma assinatura anual?",
     "tokens": [
-      "这样",
+      "所以",
+      "一天",
       "玩",
-      "一",
-      "天",
-      "不",
-      "够",
-      "啊",
+      "不够",
+      "嘛",
       "。",
-      "是不是",
-      "应该",
-      "办",
-      "个",
-      "年票",
+      "不如",
+      "我们",
+      "办张",
+      "年",
+      "卡",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "这样",
-        "pinyin": "zhèyàng",
-        "meaning": "assim, desta forma"
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "por isso / então"
       },
       {
         "id": 2,
-        "word": "玩",
-        "pinyin": "wán",
-        "meaning": "brincar, jogar, se divertir"
+        "word": "一天",
+        "pinyin": "yītiān",
+        "meaning": "um dia"
       },
       {
         "id": 3,
         "word": "不够",
         "pinyin": "bùgòu",
-        "meaning": "não ser suficiente"
+        "meaning": "não é suficiente"
       },
       {
         "id": 4,
-        "word": "是不是",
-        "pinyin": "shìbùshì",
-        "meaning": "é ou não é, será que"
+        "word": "不如",
+        "pinyin": "bùrú",
+        "meaning": "seria melhor / que tal"
       },
       {
         "id": 5,
-        "word": "应该",
-        "pinyin": "yīnggāi",
-        "meaning": "deveria"
+        "word": "办",
+        "pinyin": "bàn",
+        "meaning": "fazer / contratar"
       },
       {
         "id": 6,
-        "word": "办",
-        "pinyin": "bàn",
-        "meaning": "fazer, emitir, resolver"
-      },
-      {
-        "id": 7,
-        "word": "年票",
-        "pinyin": "niánpiào",
-        "meaning": "passe anual, ingresso anual"
+        "word": "年卡",
+        "pinyin": "niánkǎ",
+        "meaning": "assinatura anual / cartão anual"
       }
     ],
-    "id": "local-1772394687216-2",
+    "id": "local-1780203985398-2",
     "language": "Chinês"
   },
   {
-    "chinese": "以后再说吧。你先给我看看有什么好玩的。",
-    "pinyin": "Yǐhòu zàishuō ba. Nǐ xiān gěi wǒ kànkan yǒu shénme hǎo wán de.",
-    "translation": "B: Vamos falar disso depois. Primeiro, me mostre o que tem de bom para brincar.",
+    "chinese": "B: 这个以后再说。你先给我介绍介绍什么好玩。",
+    "pinyin": "Zhège yǐhòu zàishuō. Nǐ xiān gěi wǒ jièshào jièshào shénme hǎowán.",
+    "translation": "B: Isso a gente conversa depois. Primeiro me conta o que tem de divertido.",
     "tokens": [
+      "这个",
       "以后",
-      "再",
-      "说",
-      "吧",
+      "再说",
       "。",
       "你",
       "先",
       "给",
       "我",
-      "看看",
-      "有",
+      "介绍",
+      "介绍",
       "什么",
       "好玩",
-      "的",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "以后",
-        "pinyin": "yǐhòu",
-        "meaning": "depois, no futuro"
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "isso"
       },
       {
         "id": 2,
-        "word": "再说",
-        "pinyin": "zàishuō",
-        "meaning": "falar depois"
+        "word": "以后",
+        "pinyin": "yǐhòu",
+        "meaning": "depois"
       },
       {
         "id": 3,
+        "word": "再说",
+        "pinyin": "zàishuō",
+        "meaning": "conversar depois / deixar para lá"
+      },
+      {
+        "id": 4,
         "word": "先",
         "pinyin": "xiān",
         "meaning": "primeiro"
       },
       {
-        "id": 4,
-        "word": "看看",
-        "pinyin": "kànkan",
-        "meaning": "dar uma olhada"
+        "id": 5,
+        "word": "介绍",
+        "pinyin": "jièshào",
+        "meaning": "apresentar / explicar"
       },
       {
-        "id": 5,
+        "id": 6,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que"
+      },
+      {
+        "id": 7,
         "word": "好玩",
         "pinyin": "hǎowán",
-        "meaning": "divertido, interessante de brincar"
+        "meaning": "divertido"
       }
     ],
-    "id": "local-1772394687216-3",
+    "id": "local-1780203985398-3",
     "language": "Chinês"
   },
   {
-    "chinese": "你看前面那个高高的，有两个塔，上面的人都在尖叫。",
-    "pinyin": "Nǐ kàn qiánmiàn nàgè gāogāo de, yǒu liǎng ge tǎ, shàngmiàn de rén dōu zài jiānjiào.",
-    "translation": "A: Olha aquele lá na frente, bem alto, tem duas torres, as pessoas lá em cima estão todas gritando.",
+    "chinese": "A: 看，前面那个高的，两座塔的，上面的人都在尖叫。",
+    "pinyin": "Kàn, qiánmiàn nàge gāo de, liǎngzuò tǎ de, shàngmiàn de rén dōu zài jiānjiào.",
+    "translation": "A: Olha, aquele alto lá na frente, com as duas torres, as pessoas em cima estão todas gritando.",
     "tokens": [
-      "你",
       "看",
+      "，",
       "前面",
       "那个",
-      "高高",
+      "高",
       "的",
       "，",
-      "有",
-      "两",
-      "个",
+      "两座",
       "塔",
+      "的",
       "，",
       "上面",
       "的",
@@ -243,107 +232,112 @@
     "keywords": [
       {
         "id": 1,
-        "word": "前面",
-        "pinyin": "qiánmiàn",
-        "meaning": "na frente"
+        "word": "看",
+        "pinyin": "kàn",
+        "meaning": "olhar"
       },
       {
         "id": 2,
-        "word": "高高的",
-        "pinyin": "gāogāo de",
-        "meaning": "bem alto (repetição para ênfase)"
+        "word": "前面",
+        "pinyin": "qiánmiàn",
+        "meaning": "à frente"
       },
       {
         "id": 3,
+        "word": "高",
+        "pinyin": "gāo",
+        "meaning": "alto"
+      },
+      {
+        "id": 4,
         "word": "塔",
         "pinyin": "tǎ",
         "meaning": "torre"
       },
       {
-        "id": 4,
-        "word": "上面",
-        "pinyin": "shàngmiàn",
-        "meaning": "em cima"
-      },
-      {
         "id": 5,
         "word": "尖叫",
         "pinyin": "jiānjiào",
-        "meaning": "gritar, berrar (de excitação ou medo)"
+        "meaning": "gritar"
       }
     ],
-    "id": "local-1772394687216-4",
+    "id": "local-1780203985398-4",
     "language": "Chinês"
   },
   {
-    "chinese": "哦，我知道了。那是双塔英雄。太刺激了，我不敢玩。",
-    "pinyin": "Ó, wǒ zhīdào le. Nà shì Shuāngtǎ Yīngxióng. Tài cìjī le, wǒ bù gǎn wán.",
-    "translation": "B: Ah, eu sei. Aquilo é o Heróis da Torre Dupla. É muito emocionante, eu não ouso brincar.",
+    "chinese": "B: 哦，我知道，就是双塔跳楼机，这个太刺激，我不敢玩儿。",
+    "pinyin": "Ó, wǒ zhīdào, jiùshì shuāngtǎ tiàolóu jī, zhège tài cìjī, wǒ bùgǎn wánér.",
+    "translation": "B: Ah, eu sei, é a Torre Gêmea, a montanha-russa de queda livre. É muito emocionante, não tenho coragem de brincar.",
     "tokens": [
       "哦",
       "，",
       "我",
       "知道",
-      "了",
-      "。",
-      "那",
-      "是",
+      "，",
+      "就是",
       "双塔",
-      "英雄",
-      "。",
+      "跳楼",
+      "机",
+      "，",
+      "这个",
       "太",
       "刺激",
-      "了",
       "，",
       "我",
-      "不",
-      "敢",
-      "玩",
+      "不敢",
+      "玩儿",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "知道",
-        "pinyin": "zhīdào",
-        "meaning": "saber, conhecer"
+        "word": "双塔",
+        "pinyin": "shuāngtǎ",
+        "meaning": "Torres Gêmeas"
       },
       {
         "id": 2,
-        "word": "双塔英雄",
-        "pinyin": "Shuāngtǎ Yīngxióng",
-        "meaning": "Heróis da Torre Dupla (nome de atração)"
+        "word": "跳楼机",
+        "pinyin": "tiàolóujī",
+        "meaning": "montanha-russa de queda livre"
       },
       {
         "id": 3,
         "word": "刺激",
         "pinyin": "cìjī",
-        "meaning": "emocionante, estimulante"
+        "meaning": "emocionante / intenso"
       },
       {
         "id": 4,
         "word": "不敢",
-        "pinyin": "bù gǎn",
-        "meaning": "não ousar, não ter coragem"
+        "pinyin": "bùgǎn",
+        "meaning": "não ter coragem"
+      },
+      {
+        "id": 5,
+        "word": "玩儿",
+        "pinyin": "wánér",
+        "meaning": "brincar / jogar"
       }
     ],
-    "id": "local-1772394687216-5",
+    "id": "local-1780203985398-5",
     "language": "Chinês"
   },
   {
-    "chinese": "旁边那个来回摇摆的是海盗船的升级版。",
-    "pinyin": "Pángbiān nàgè láihuí yáobǎi de shì hǎidàochuán de shēngjí bǎn.",
-    "translation": "A: Aquele que balança para lá e para cá ao lado é a versão melhorada do barco pirata.",
+    "chinese": "A: 旁边那个，摆来摆去的，是升级版的海盗船。",
+    "pinyin": "Pángbiān nàge, bǎiláibǎiqù de, shì shēngjíbǎn de hǎidàochuán.",
+    "translation": "A: Aquilo ali ao lado, balançando para os lados, é a versão aprimorada do barco pirata.",
     "tokens": [
       "旁边",
       "那个",
-      "来回",
-      "摇摆",
+      "，",
+      "摆来摆去",
       "的",
+      "，",
       "是",
-      "海盗船",
-      "的",
       "升级版",
+      "的",
+      "海盗船",
       "。"
     ],
     "keywords": [
@@ -355,123 +349,141 @@
       },
       {
         "id": 2,
-        "word": "来回",
-        "pinyin": "láihuí",
-        "meaning": "ir e vir, para lá e para cá"
+        "word": "摆来摆去",
+        "pinyin": "bǎiláibǎiqù",
+        "meaning": "balançando para os lados"
       },
       {
         "id": 3,
-        "word": "摇摆",
-        "pinyin": "yáobǎi",
-        "meaning": "balançar, oscilar"
+        "word": "升级",
+        "pinyin": "shēngjí",
+        "meaning": "atualizado / aprimorado"
       },
       {
         "id": 4,
         "word": "海盗船",
         "pinyin": "hǎidàochuán",
-        "meaning": "barco pirata"
-      },
-      {
-        "id": 5,
-        "word": "升级版",
-        "pinyin": "shēngjí bǎn",
-        "meaning": "versão atualizada/melhorada"
+        "meaning": "barco pirata (montanha-russa)"
       }
     ],
-    "id": "local-1772394687216-6",
+    "id": "local-1780203985398-6",
     "language": "Chinês"
   },
   {
-    "chinese": "那个也看起来很吓人！",
-    "pinyin": "Nàgè yě kàn qǐlái hěn xiàrén!",
-    "translation": "B: Aquele também parece muito assustador!",
+    "chinese": "B: 看起来也好恐怖啊！",
+    "pinyin": "Kànqǐlái yěhǎo kǒngbù a!",
+    "translation": "B: Parece ainda mais assustador!",
     "tokens": [
-      "那个",
-      "也",
       "看起来",
-      "很",
-      "吓人",
+      "也好",
+      "恐怖",
+      "啊",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "看起来",
-        "pinyin": "kàn qǐlái",
+        "pinyin": "kànqǐlái",
         "meaning": "parecer"
       },
       {
         "id": 2,
-        "word": "吓人",
-        "pinyin": "xiàrén",
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
+      },
+      {
+        "id": 3,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "muito"
+      },
+      {
+        "id": 4,
+        "word": "恐怖",
+        "pinyin": "kǒngbù",
         "meaning": "assustador"
       }
     ],
-    "id": "local-1772394687216-7",
+    "id": "local-1780203985398-7",
     "language": "Chinês"
   },
   {
-    "chinese": "湖边那个大型的木质过山车。",
-    "pinyin": "Hú biān nàgè dàxíng de mùzhì guòshānchē.",
-    "translation": "A: Aquela montanha-russa de madeira grande na beira do lago.",
+    "chinese": "A: 湖旁边那个规模很大的，是木材结构的过山车。",
+    "pinyin": "Hú pángbiān nàge guīmó hěndà de, shì mùcái jiégòu de guòshānchē.",
+    "translation": "A: Aquele de grande porte ao lado do lago é uma montanha-russa de estrutura de madeira.",
     "tokens": [
-      "湖边",
+      "湖",
+      "旁边",
       "那个",
-      "大型",
+      "规模",
+      "很大",
       "的",
-      "木质",
+      "，",
+      "是",
+      "木材",
+      "结构",
+      "的",
       "过山车",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "湖边",
-        "pinyin": "húbiān",
-        "meaning": "beira do lago"
+        "word": "湖",
+        "pinyin": "hú",
+        "meaning": "lago"
       },
       {
         "id": 2,
-        "word": "大型",
-        "pinyin": "dàxíng",
-        "meaning": "grande escala, grande porte"
+        "word": "旁边",
+        "pinyin": "pángbiān",
+        "meaning": "ao lado"
       },
       {
         "id": 3,
-        "word": "木质",
-        "pinyin": "mùzhì",
-        "meaning": "de madeira"
+        "word": "规模",
+        "pinyin": "guīmó",
+        "meaning": "escala, porte"
       },
       {
         "id": 4,
+        "word": "木材",
+        "pinyin": "mùcái",
+        "meaning": "madeira"
+      },
+      {
+        "id": 5,
+        "word": "结构",
+        "pinyin": "jiégòu",
+        "meaning": "estrutura"
+      },
+      {
+        "id": 6,
         "word": "过山车",
         "pinyin": "guòshānchē",
         "meaning": "montanha-russa"
       }
     ],
-    "id": "local-1772394687216-8",
+    "id": "local-1780203985398-8",
     "language": "Chinês"
   },
   {
-    "chinese": "可是排队的人太多了。我估计排队就要两个小时。",
-    "pinyin": "Kěshì páiduì de rén tài duō le. Wǒ gūjì páiduì jiù yào liǎng ge xiǎoshí.",
-    "translation": "B: Mas tem gente demais na fila. Eu estimo que só a fila levará duas horas.",
+    "chinese": "B: 可是排队的人太多了，估计要排上两个小时。",
+    "pinyin": "Kěshì páiduì de réntàiduō le, gūjì yào páishàng liǎnggè xiǎoshí.",
+    "translation": "B: Mas tem muita gente na fila, deve levar duas horas para esperar.",
     "tokens": [
       "可是",
       "排队",
       "的",
-      "人",
-      "太",
-      "多",
+      "人太多",
       "了",
-      "。",
-      "我",
+      "，",
       "估计",
-      "排队",
-      "就",
       "要",
-      "两",
-      "个",
+      "排上",
+      "两个",
       "小时",
       "。"
     ],
@@ -480,44 +492,66 @@
         "id": 1,
         "word": "可是",
         "pinyin": "kěshì",
-        "meaning": "mas, porém"
+        "meaning": "mas"
       },
       {
         "id": 2,
         "word": "排队",
         "pinyin": "páiduì",
-        "meaning": "pegar fila"
+        "meaning": "fazer fila"
       },
       {
         "id": 3,
-        "word": "估计",
-        "pinyin": "gūjì",
-        "meaning": "estimar, calcular"
+        "word": "人",
+        "pinyin": "rén",
+        "meaning": "pessoa"
       },
       {
         "id": 4,
-        "word": "两个小时",
-        "pinyin": "liǎng ge xiǎoshí",
-        "meaning": "duas horas"
+        "word": "太",
+        "pinyin": "tài",
+        "meaning": "demais"
+      },
+      {
+        "id": 5,
+        "word": "多",
+        "pinyin": "duō",
+        "meaning": "muitos"
+      },
+      {
+        "id": 6,
+        "word": "估计",
+        "pinyin": "gūjì",
+        "meaning": "estimativa"
+      },
+      {
+        "id": 7,
+        "word": "两",
+        "pinyin": "liǎng",
+        "meaning": "dois"
+      },
+      {
+        "id": 8,
+        "word": "小时",
+        "pinyin": "xiǎoshí",
+        "meaning": "horas"
       }
     ],
-    "id": "local-1772394687216-9",
+    "id": "local-1780203985398-9",
     "language": "Chinês"
   },
   {
-    "chinese": "想玩激流勇进吗？那是经典的水上项目。",
-    "pinyin": "Xiǎng wán jīliú yǒngjìn ma? Nà shì jīngdiǎn de shuǐshàng xiàngmù.",
-    "translation": "A: Quer ir no \"Corredeiras Rápidas\"? É uma atração clássica aquática.",
+    "chinese": "A: 激流勇进你想玩儿吗？经典水上项目。",
+    "pinyin": "Jīliúyǒngjìn nǐ xiǎng wánér ma? Jīngdiǎn shuǐshàng xiàngmù.",
+    "translation": "A: Você quer se aventurar nas águas turbulentas? Um clássico projeto aquático.",
     "tokens": [
-      "想",
-      "玩",
       "激流勇进",
+      "你",
+      "想",
+      "玩儿",
       "吗",
       "？",
-      "那",
-      "是",
       "经典",
-      "的",
       "水上",
       "项目",
       "。"
@@ -525,36 +559,42 @@
     "keywords": [
       {
         "id": 1,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, desejar"
+        "word": "激流勇进",
+        "pinyin": "jīliúyǒngjìn",
+        "meaning": "aventurar-se nas águas turbulentas"
       },
       {
         "id": 2,
-        "word": "激流勇进",
-        "pinyin": "jīliú yǒngjìn",
-        "meaning": "Corredeiras Rápidas (nome de atração aquática)"
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "querer"
       },
       {
         "id": 3,
+        "word": "玩儿",
+        "pinyin": "wánér",
+        "meaning": "brincar/jogar"
+      },
+      {
+        "id": 4,
         "word": "经典",
         "pinyin": "jīngdiǎn",
         "meaning": "clássico"
       },
       {
-        "id": 4,
+        "id": 5,
         "word": "水上项目",
-        "pinyin": "shuǐshàng xiàngmù",
-        "meaning": "atração aquática, projeto aquático"
+        "pinyin": "shuǐshàngxiàngmù",
+        "meaning": "projeto aquático"
       }
     ],
-    "id": "local-1772394687216-10",
+    "id": "local-1780203985398-10",
     "language": "Chinês"
   },
   {
-    "chinese": "好啊！",
+    "chinese": "B: 好啊！",
     "pinyin": "Hǎo a!",
-    "translation": "B: Boa! / Ok!",
+    "translation": "B: Claro!",
     "tokens": [
       "好",
       "啊",
@@ -565,70 +605,57 @@
         "id": 1,
         "word": "好",
         "pinyin": "hǎo",
-        "meaning": "bom, ok"
+        "meaning": "bom"
+      },
+      {
+        "id": 2,
+        "word": "啊",
+        "pinyin": "a",
+        "meaning": "interjeição de concordância"
       }
     ],
-    "id": "local-1772394687216-11",
+    "id": "local-1780203985398-11",
     "language": "Chinês"
   },
   {
-    "chinese": "那你先去排队吧。我去买一次性雨衣。",
-    "pinyin": "Nà nǐ xiān qù páiduì ba. Wǒ qù mǎi yīcìxìng yǔyī.",
-    "translation": "A: Então, você vai primeiro para a fila. Eu vou comprar capas de chuva descartáveis.",
+    "chinese": "A: 那你先去排队，我去买一次性雨披。",
+    "pinyin": "Nà nǐ xiān qù páiduì, wǒ qù mǎi yícìxìng yǔpī.",
+    "translation": "A: Então você vai para a fila primeiro, eu vou comprar capas de chuva descartáveis.",
     "tokens": [
       "那",
       "你",
       "先",
       "去",
       "排队",
-      "吧",
-      "。",
+      "，",
       "我",
       "去",
       "买",
       "一次性",
-      "雨衣",
+      "雨披",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, nesse caso"
+        "word": "排队",
+        "pinyin": "páiduì",
+        "meaning": "fazer fila"
       },
       {
         "id": 2,
-        "word": "先",
-        "pinyin": "xiān",
-        "meaning": "primeiro"
+        "word": "一次性",
+        "pinyin": "yícìxìng",
+        "meaning": "descartável"
       },
       {
         "id": 3,
-        "word": "排队",
-        "pinyin": "páiduì",
-        "meaning": "pegar fila"
-      },
-      {
-        "id": 4,
-        "word": "买",
-        "pinyin": "mǎi",
-        "meaning": "comprar"
-      },
-      {
-        "id": 5,
-        "word": "一次性",
-        "pinyin": "yīcìxìng",
-        "meaning": "descartável, de uso único"
-      },
-      {
-        "id": 6,
-        "word": "雨衣",
-        "pinyin": "yǔyī",
+        "word": "雨披",
+        "pinyin": "yǔpī",
         "meaning": "capa de chuva"
       }
     ],
-    "id": "local-1772394687216-12",
+    "id": "local-1780203985398-12",
     "language": "Chinês"
   }
 ]

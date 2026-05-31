@@ -1,0 +1,653 @@
+[
+  {
+    "chinese": "A: 喂，Mike，你的就业证办好了。现在可以去申请签证了。",
+    "pinyin": "Wèi, Mike, nǐ de jiùyèzhèng bànhǎo le. Xiànzài kěyǐ qù shēnqǐng qiānzhèng le.",
+    "translation": "A: Alô, Mike, seu certificado de trabalho já está pronto. Agora você pode solicitar o visto.",
+    "tokens": [
+      "喂",
+      "，",
+      "Mike",
+      "，",
+      "你",
+      "的",
+      "就业证",
+      "办好",
+      "了",
+      "。",
+      "现在",
+      "可以",
+      "去",
+      "申请",
+      "签证",
+      "了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就业证",
+        "pinyin": "jiùyèzhèng",
+        "meaning": "certificado de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "办好了",
+        "pinyin": "bànhǎole",
+        "meaning": "concluído/pronto"
+      },
+      {
+        "id": 3,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar/aplicar"
+      },
+      {
+        "id": 4,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      }
+    ],
+    "id": "local-1780225585982-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 太谢谢了。我要准备些什么文件？",
+    "pinyin": "Tài xièxiè le. Wǒyào zhǔnbèi xiē shénme wénjiàn?",
+    "translation": "B: Muito obrigado. Que documentos preciso preparar?",
+    "tokens": [
+      "太",
+      "谢谢",
+      "了",
+      "。",
+      "我要",
+      "准备",
+      "些",
+      "什么",
+      "文件",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "太谢谢了",
+        "pinyin": "tàixièxièle",
+        "meaning": "muito obrigado"
+      },
+      {
+        "id": 2,
+        "word": "准备",
+        "pinyin": "zhǔnbèi",
+        "meaning": "preparar"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "o que / quais"
+      },
+      {
+        "id": 4,
+        "word": "文件",
+        "pinyin": "wénjiàn",
+        "meaning": "documentos"
+      }
+    ],
+    "id": "local-1780225585982-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你需要带好就业证、护照、公司的营业执照、邀请函、1张2寸照片，原件和复印件各一张。然后还有你填写的申请表格。",
+    "pinyin": "Nǐ xūyào dài hǎo jiùyèzhèng, hùzhào, gōngsī de yíngyèzhízhào, yāoqǐnghán, 1 zhāng 2 cùn zhàopiān, yuánjiàn hé fùyìnjiàn gè yīzhāng. Ránhòu háiyǒu nǐ tiánxiě de shēnqǐng biǎogé.",
+    "translation": "A: Você precisa levar a permissão de trabalho, o passaporte, o certificado de registro da empresa, o convite, uma foto 2x3, além do original e uma cópia de cada um. Também há o formulário de inscrição preenchido por você.",
+    "tokens": [
+      "你",
+      "需要",
+      "带",
+      "好",
+      "就业证",
+      "、",
+      "护照",
+      "、",
+      "公司",
+      "的",
+      "营业执照",
+      "、",
+      "邀请函",
+      "、",
+      "1",
+      "张",
+      "2",
+      "寸",
+      "照片",
+      "，",
+      "原件",
+      "和",
+      "复印件",
+      "各",
+      "一张",
+      "。",
+      "然后",
+      "还有",
+      "你",
+      "填写",
+      "的",
+      "申请",
+      "表格",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "就业证",
+        "pinyin": "jiùyèzhèng",
+        "meaning": "permissão de trabalho"
+      },
+      {
+        "id": 2,
+        "word": "护照",
+        "pinyin": "hùzhào",
+        "meaning": "passaporte"
+      },
+      {
+        "id": 3,
+        "word": "营业执照",
+        "pinyin": "yíngyèzhízhào",
+        "meaning": "certificado de registro da empresa"
+      },
+      {
+        "id": 4,
+        "word": "邀请函",
+        "pinyin": "yāoqǐnghán",
+        "meaning": "convite"
+      },
+      {
+        "id": 5,
+        "word": "原件",
+        "pinyin": "yuánjiàn",
+        "meaning": "original"
+      },
+      {
+        "id": 6,
+        "word": "复印件",
+        "pinyin": "fùyìnjiàn",
+        "meaning": "cópia"
+      },
+      {
+        "id": 7,
+        "word": "申请表格",
+        "pinyin": "shēnqǐngbiǎogé",
+        "meaning": "formulário de inscrição"
+      }
+    ],
+    "id": "local-1780225585982-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你等等，我记一下。另外我申请的签证类型是哪种？",
+    "pinyin": "Nǐ děngděng, wǒjì yīxià. Lìngwài wǒ shēnqǐng de qiānzhèng lèixíng shì nǎzhǒng?",
+    "translation": "B: Espere um pouco, vou anotar. Além disso, qual é o tipo de visto que solicitei?",
+    "tokens": [
+      "你",
+      "等等",
+      "，",
+      "我记",
+      "一下",
+      "。",
+      "另外",
+      "我",
+      "申请",
+      "的",
+      "签证",
+      "类型",
+      "是",
+      "哪种",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "等等",
+        "pinyin": "děngděng",
+        "meaning": "espere um momento"
+      },
+      {
+        "id": 2,
+        "word": "记",
+        "pinyin": "jì",
+        "meaning": "anotar, registrar"
+      },
+      {
+        "id": 3,
+        "word": "另外",
+        "pinyin": "lìngwài",
+        "meaning": "além disso, além do mais"
+      },
+      {
+        "id": 4,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar, aplicar"
+      },
+      {
+        "id": 5,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      },
+      {
+        "id": 6,
+        "word": "类型",
+        "pinyin": "lèixíng",
+        "meaning": "tipo, categoria"
+      }
+    ],
+    "id": "local-1780225585982-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是Z，工作签证。",
+    "pinyin": "Shì Z, gōngzuò qiānzhèng.",
+    "translation": "A: É o Z, visto de trabalho.",
+    "tokens": [
+      "是",
+      "Z",
+      "，",
+      "工作",
+      "签证",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "ser / é"
+      },
+      {
+        "id": 2,
+        "word": "Z",
+        "pinyin": "Z",
+        "meaning": "Z (tipo de visto)"
+      },
+      {
+        "id": 3,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalho"
+      },
+      {
+        "id": 4,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      }
+    ],
+    "id": "local-1780225585982-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我听说申请Z签证要去国外，我需要去香港吗？",
+    "pinyin": "Wǒ tīngshuō shēnqǐng Z qiānzhèng yào qù guówài, wǒ xūyào qù xiānggǎng ma?",
+    "translation": "B: Ouvi dizer que para solicitar o visto Z é necessário ir ao exterior. Preciso ir para Hong Kong?",
+    "tokens": [
+      "我",
+      "听说",
+      "申请",
+      "Z",
+      "签证",
+      "要",
+      "去",
+      "国外",
+      "，",
+      "我",
+      "需要",
+      "去",
+      "香港",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "ouvir dizer"
+      },
+      {
+        "id": 2,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "solicitar"
+      },
+      {
+        "id": 3,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      },
+      {
+        "id": 4,
+        "word": "国外",
+        "pinyin": "guówài",
+        "meaning": "no exterior"
+      },
+      {
+        "id": 5,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar"
+      },
+      {
+        "id": 6,
+        "word": "香港",
+        "pinyin": "xiānggǎng",
+        "meaning": "Hong Kong"
+      }
+    ],
+    "id": "local-1780225585982-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你这种情况不需要。你是续签。",
+    "pinyin": "Nǐ zhèzhǒng qíngkuàng bù xūyào. Nǐ shì xùqiān.",
+    "translation": "A: Nesse seu caso, não é necessário. Você está renovando o visto.",
+    "tokens": [
+      "你",
+      "这种",
+      "情况",
+      "不",
+      "需要",
+      "。",
+      "你",
+      "是",
+      "续签",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "情况",
+        "pinyin": "qíngkuàng",
+        "meaning": "situação"
+      },
+      {
+        "id": 2,
+        "word": "不需要",
+        "pinyin": "bùxūyào",
+        "meaning": "não é necessário"
+      },
+      {
+        "id": 3,
+        "word": "续签",
+        "pinyin": "xùqiān",
+        "meaning": "renovar (visto/contrato)"
+      }
+    ],
+    "id": "local-1780225585982-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那太好了。对了，签证可以代办吗？",
+    "pinyin": "Nà tàihǎole. Duì le, qiānzhèng kěyǐ dàibàn ma?",
+    "translation": "B: Isso é ótimo. A propósito, é possível contratar um serviço para processar o visto?",
+    "tokens": [
+      "那",
+      "太好了",
+      "。",
+      "对",
+      "了",
+      "，",
+      "签证",
+      "可以",
+      "代办",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "签证",
+        "pinyin": "qiānzhèng",
+        "meaning": "visto"
+      },
+      {
+        "id": 2,
+        "word": "代办",
+        "pinyin": "dàibàn",
+        "meaning": "processar em nome de outrem / serviço de terceiros"
+      },
+      {
+        "id": 3,
+        "word": "那太好了",
+        "pinyin": "nàtàihǎole",
+        "meaning": "isso é ótimo / que maravilha"
+      },
+      {
+        "id": 4,
+        "word": "对了",
+        "pinyin": "duìle",
+        "meaning": "a propósito / aliás"
+      }
+    ],
+    "id": "local-1780225585982-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你是美国人，所以不可以。美国人需要本人到现场办理。",
+    "pinyin": "Nǐ shì měiguó rén, suǒyǐ bù kěyǐ. Měiguó rén xūyào běnrén dào xiànchǎng bànlǐ.",
+    "translation": "A: Você é americano, então não pode. Americanos precisam comparecer pessoalmente para realizar o procedimento.",
+    "tokens": [
+      "你",
+      "是",
+      "美国",
+      "人",
+      "，",
+      "所以",
+      "不",
+      "可以",
+      "。",
+      "美国",
+      "人",
+      "需要",
+      "本人",
+      "到",
+      "现场",
+      "办理",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "美国人",
+        "pinyin": "měiguórén",
+        "meaning": "americano"
+      },
+      {
+        "id": 2,
+        "word": "所以",
+        "pinyin": "suǒyǐ",
+        "meaning": "portanto/então"
+      },
+      {
+        "id": 3,
+        "word": "不可以",
+        "pinyin": "bùkěyǐ",
+        "meaning": "não pode/não é permitido"
+      },
+      {
+        "id": 4,
+        "word": "需要",
+        "pinyin": "xūyào",
+        "meaning": "precisar/necessitar"
+      },
+      {
+        "id": 5,
+        "word": "本人",
+        "pinyin": "běnrén",
+        "meaning": "a própria pessoa"
+      },
+      {
+        "id": 6,
+        "word": "现场",
+        "pinyin": "xiànchǎng",
+        "meaning": "no local/na cena"
+      },
+      {
+        "id": 7,
+        "word": "办理",
+        "pinyin": "bànlǐ",
+        "meaning": "realizar/processar"
+      }
+    ],
+    "id": "local-1780225585982-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 啊？不同国家不同待遇啊！",
+    "pinyin": "A? Bùtóng guójiā bùtóng dàiyù a!",
+    "translation": "B: Ah? Países diferentes recebem tratamentos diferentes!",
+    "tokens": [
+      "啊",
+      "？",
+      "不同",
+      "国家",
+      "不同",
+      "待遇",
+      "啊",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不同",
+        "pinyin": "bùtóng",
+        "meaning": "diferente"
+      },
+      {
+        "id": 2,
+        "word": "国家",
+        "pinyin": "guójiā",
+        "meaning": "país"
+      },
+      {
+        "id": 3,
+        "word": "待遇",
+        "pinyin": "dàiyù",
+        "meaning": "tratamento"
+      }
+    ],
+    "id": "local-1780225585982-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是啊，这是规定。你要去上海市出入境管理处办理。你快点去，申请以后要7个工作日才能拿到。",
+    "pinyin": "Shì a, zhèshì guīdìng. Nǐ yào qù shànghǎishì chūrùjìng guǎnlǐchù bànlǐ. Nǐ kuàidiǎn qù, shēnqǐng yǐhòu yào 7 gè gōngzuòrì cáinéng nádào.",
+    "translation": "A: Sim, essa é a regra. Você precisa ir ao Departamento de Gestão de Entrada e Saída de Xangai para processar. Vá rápido, pois após o pedido, levará 7 dias úteis para receber.",
+    "tokens": [
+      "是",
+      "啊",
+      "，",
+      "这是",
+      "规定",
+      "。",
+      "你",
+      "要",
+      "去",
+      "上海市",
+      "出入境",
+      "管理处",
+      "办理",
+      "。",
+      "你",
+      "快点",
+      "去",
+      "，",
+      "申请",
+      "以后",
+      "要",
+      "7",
+      "个",
+      "工作日",
+      "才能",
+      "拿到",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "规定",
+        "pinyin": "guīdìng",
+        "meaning": "regra, regulamento"
+      },
+      {
+        "id": 2,
+        "word": "上海市",
+        "pinyin": "shànghǎishì",
+        "meaning": "Cidade de Xangai"
+      },
+      {
+        "id": 3,
+        "word": "出入境管理处",
+        "pinyin": "chūrùjìngguǎnlǐchù",
+        "meaning": "Departamento de Gestão de Entrada e Saída"
+      },
+      {
+        "id": 4,
+        "word": "办理",
+        "pinyin": "bànlǐ",
+        "meaning": "processar, tratar"
+      },
+      {
+        "id": 5,
+        "word": "申请",
+        "pinyin": "shēnqǐng",
+        "meaning": "pedido, solicitação"
+      },
+      {
+        "id": 6,
+        "word": "工作日",
+        "pinyin": "gōngzuòrì",
+        "meaning": "dia útil"
+      }
+    ],
+    "id": "local-1780225585982-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 好的，谢谢你了！",
+    "pinyin": "Hǎo de, xièxiè nǐ le!",
+    "translation": "B: Ok, obrigado!",
+    "tokens": [
+      "好",
+      "的",
+      "，",
+      "谢谢",
+      "你",
+      "了",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好的",
+        "pinyin": "hǎode",
+        "meaning": "ok / certo"
+      },
+      {
+        "id": 2,
+        "word": "谢谢",
+        "pinyin": "xièxiè",
+        "meaning": "obrigado"
+      },
+      {
+        "id": 3,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      }
+    ],
+    "id": "local-1780225585982-11",
+    "language": "Chinês"
+  }
+]

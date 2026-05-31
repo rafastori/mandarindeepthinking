@@ -1,60 +1,54 @@
 [
   {
-    "chinese": "小陈，你打算买车吗？",
-    "pinyin": "Xiǎo Chén, nǐ dǎsuàn mǎi chē ma?",
-    "translation": "Xiao Chen, você planeja comprar um carro?",
+    "chinese": "A: 小陈，打算买车啦？",
+    "pinyin": "Xiǎo chén, dǎsuàn mǎichē la?",
+    "translation": "A: Xiao Chen, planejando comprar um carro?",
     "tokens": [
-      "小陈",
+      "小",
+      "陈",
       "，",
-      "你",
       "打算",
       "买车",
-      "吗",
+      "啦",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "小陈",
-        "pinyin": "xiǎo Chén",
+        "pinyin": "xiǎochén",
         "meaning": "Xiao Chen (nome próprio)"
       },
       {
         "id": 2,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "planejar / ter a intenção"
       },
       {
         "id": 3,
-        "word": "打算",
-        "pinyin": "dǎsuàn",
-        "meaning": "planejar, pretender"
+        "word": "买",
+        "pinyin": "mǎi",
+        "meaning": "comprar"
       },
       {
         "id": 4,
-        "word": "买车",
-        "pinyin": "mǎi chē",
-        "meaning": "comprar carro"
-      },
-      {
-        "id": 5,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "word": "车",
+        "pinyin": "chē",
+        "meaning": "carro"
       }
     ],
-    "id": "local-1772297659975-0",
+    "id": "local-1780201553341-0",
     "language": "Chinês"
   },
   {
-    "chinese": "是啊！小孙，我正打算问问你的意见呢。",
-    "pinyin": "Shì a! Xiǎo Sūn, wǒ zhèng dǎsuàn wènwen nǐ de yìjiàn ne.",
-    "translation": "Sim! Xiao Sun, eu estava planejando te perguntar sua opinião.",
+    "chinese": "B: 是呀，小孙，我正打算问问你的意见呢。",
+    "pinyin": "Shì ya, xiǎosūn, wǒ zhèng dǎsuàn wènwèn nǐ de yìjiàn ne.",
+    "translation": "B: Sim, Xiao Sun, eu estava justamente pensando em pedir sua opinião.",
     "tokens": [
       "是",
-      "啊",
-      "！",
+      "呀",
+      "，",
       "小孙",
       "，",
       "我",
@@ -70,60 +64,42 @@
     "keywords": [
       {
         "id": 1,
-        "word": "是啊",
-        "pinyin": "shì a",
+        "word": "是呀",
+        "pinyin": "shìya",
         "meaning": "sim, exatamente"
       },
       {
         "id": 2,
         "word": "小孙",
-        "pinyin": "xiǎo Sūn",
-        "meaning": "Xiao Sun (nome próprio)"
+        "pinyin": "xiǎosūn",
+        "meaning": "Xiao Sun (apelido/nome)"
       },
       {
         "id": 3,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "正打算",
+        "pinyin": "zhèngdǎsuàn",
+        "meaning": "estava prestes a / estava planejando"
       },
       {
         "id": 4,
-        "word": "正",
-        "pinyin": "zhèng",
-        "meaning": "justamente, no meio de (indicando ação contínua)"
+        "word": "问问",
+        "pinyin": "wènwèn",
+        "meaning": "perguntar / consultar"
       },
       {
         "id": 5,
-        "word": "打算",
-        "pinyin": "dǎsuàn",
-        "meaning": "planejar, pretender"
-      },
-      {
-        "id": 6,
-        "word": "问问",
-        "pinyin": "wènwen",
-        "meaning": "perguntar (reduplicado para suavizar ou indicar brevemente)"
-      },
-      {
-        "id": 7,
         "word": "意见",
         "pinyin": "yìjiàn",
         "meaning": "opinião"
-      },
-      {
-        "id": 8,
-        "word": "呢",
-        "pinyin": "ne",
-        "meaning": "partícula modal (enfatiza, indica ação em andamento)"
       }
     ],
-    "id": "local-1772297659975-1",
+    "id": "local-1780201553341-1",
     "language": "Chinês"
   },
   {
-    "chinese": "你的预算大概是多少？",
-    "pinyin": "Nǐ de yùsuàn dàgài shì duōshao?",
-    "translation": "Qual é o seu orçamento aproximadamente?",
+    "chinese": "A: 你的预算大概是多少啊？",
+    "pinyin": "Nǐ de yùsuàn dàgài shì duōshǎo a?",
+    "translation": "A: Qual é o seu orçamento aproximado?",
     "tokens": [
       "你",
       "的",
@@ -131,325 +107,271 @@
       "大概",
       "是",
       "多少",
+      "啊",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 2,
         "word": "预算",
         "pinyin": "yùsuàn",
         "meaning": "orçamento"
       },
       {
-        "id": 3,
+        "id": 2,
         "word": "大概",
         "pinyin": "dàgài",
-        "meaning": "aproximadamente, cerca de"
+        "meaning": "aproximadamente"
       },
       {
-        "id": 4,
+        "id": 3,
         "word": "多少",
-        "pinyin": "duōshao",
+        "pinyin": "duōshǎo",
         "meaning": "quanto"
       }
     ],
-    "id": "local-1772297659975-2",
+    "id": "local-1780201553341-2",
     "language": "Chinês"
   },
   {
-    "chinese": "算上牌照和税费，二十万出头一点。",
-    "pinyin": "Suàn shàng páizhào hé shuìfèi, èrshí wàn chūtóu yīdiǎn.",
-    "translation": "Incluindo a placa e as taxas, um pouco mais de 200 mil.",
+    "chinese": "B: 包括牌照和税费，二十多万吧。",
+    "pinyin": "Bāokuò páizhào hé shuìfèi, èrshíduōwàn ba.",
+    "translation": "B: Incluindo a licença e os impostos, deve ser mais de duzentos mil.",
     "tokens": [
-      "算上",
+      "包括",
       "牌照",
       "和",
       "税费",
       "，",
-      "二十万",
-      "出头",
+      "二十多万",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "包括",
+        "pinyin": "bāokuò",
+        "meaning": "incluindo"
+      },
+      {
+        "id": 2,
+        "word": "牌照",
+        "pinyin": "páizhào",
+        "meaning": "licença / placa"
+      },
+      {
+        "id": 3,
+        "word": "税费",
+        "pinyin": "shuìfèi",
+        "meaning": "impostos e taxas"
+      },
+      {
+        "id": 4,
+        "word": "二十多万",
+        "pinyin": "èrshíduōwàn",
+        "meaning": "mais de duzentos mil"
+      },
+      {
+        "id": 5,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "expressão de suposição"
+      }
+    ],
+    "id": "local-1780201553341-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 打算上沪牌还是外牌呢？",
+    "pinyin": "Dǎsuàn shànghùpái háishì wàipái ne?",
+    "translation": "A: Você pretende usar a placa de Xangai ou uma placa de outra cidade?",
+    "tokens": [
+      "打算",
+      "上沪牌",
+      "还是",
+      "外牌",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "pretender, planejar"
+      },
+      {
+        "id": 2,
+        "word": "沪牌",
+        "pinyin": "hùpái",
+        "meaning": "placa de Xangai"
+      },
+      {
+        "id": 3,
+        "word": "还是",
+        "pinyin": "háishì",
+        "meaning": "ou (em perguntas)"
+      },
+      {
+        "id": 4,
+        "word": "外牌",
+        "pinyin": "wàipái",
+        "meaning": "placa de fora (de outra cidade/província)"
+      }
+    ],
+    "id": "local-1780201553341-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 上外牌，我就打算周末的时候开开，平时上下班坐公司班车就挺方便的。",
+    "pinyin": "Shàng wàipái, wǒ jiù dǎsuàn zhōumò de shíhòu kāikāi, píngshí shàngxiàbān zuò gōngsī bānchē jiù tǐng fāngbiàn de.",
+    "translation": "B: A placa é de Xangai, então eu planejo dirigir apenas nos fins de semana. Nos dias úteis, ir e voltar do trabalho de ônibus da empresa é bem conveniente.",
+    "tokens": [
+      "上",
+      "外牌",
+      "，",
+      "我",
+      "就",
+      "打算",
+      "周末",
+      "的",
+      "时候",
+      "开开",
+      "，",
+      "平时",
+      "上下班",
+      "坐",
+      "公司",
+      "班车",
+      "就",
+      "挺",
+      "方便",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上外牌",
+        "pinyin": "shàngwàipái",
+        "meaning": "placa de Xangai (Shanghai Wai)"
+      },
+      {
+        "id": 2,
+        "word": "打算",
+        "pinyin": "dǎsuàn",
+        "meaning": "planejar / ter a intenção de"
+      },
+      {
+        "id": 3,
+        "word": "周末",
+        "pinyin": "zhōumò",
+        "meaning": "fim de semana"
+      },
+      {
+        "id": 4,
+        "word": "开开",
+        "pinyin": "kāikāi",
+        "meaning": "dirigir (uso casual)"
+      },
+      {
+        "id": 5,
+        "word": "平时",
+        "pinyin": "píngshí",
+        "meaning": "nos dias úteis / normalmente"
+      },
+      {
+        "id": 6,
+        "word": "上下班",
+        "pinyin": "shàngxiàbān",
+        "meaning": "ir e voltar do trabalho"
+      },
+      {
+        "id": 7,
+        "word": "班车",
+        "pinyin": "bānchē",
+        "meaning": "ônibus da empresa / transporte corporativo"
+      },
+      {
+        "id": 8,
+        "word": "方便",
+        "pinyin": "fāngbiàn",
+        "meaning": "conveniente"
+      }
+    ],
+    "id": "local-1780201553341-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那你喜欢什么样的车型？",
+    "pinyin": "Nà nǐ xǐhuān shénmeyàng de chēxíng?",
+    "translation": "A: Então, que tipo de carro você gosta?",
+    "tokens": [
+      "那",
+      "你",
+      "喜欢",
+      "什么样",
+      "的",
+      "车型",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar de"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual / que"
+      },
+      {
+        "id": 4,
+        "word": "样",
+        "pinyin": "yàng",
+        "meaning": "tipo / estilo"
+      },
+      {
+        "id": 5,
+        "word": "车型",
+        "pinyin": "chēxíng",
+        "meaning": "modelo de carro"
+      }
+    ],
+    "id": "local-1780201553341-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 三厢的吧，空间最好大一点。",
+    "pinyin": "Sānxiāng de ba, kōngjiān zuìhǎo dà yìdiǎn.",
+    "translation": "B: A de sedan, por favor, o espaço precisa ser o maior possível.",
+    "tokens": [
+      "三厢",
+      "的",
+      "吧",
+      "，",
+      "空间",
+      "最好",
+      "大",
       "一点",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "算上",
-        "pinyin": "suànshàng",
-        "meaning": "incluir, contar com"
-      },
-      {
-        "id": 2,
-        "word": "牌照",
-        "pinyin": "páizhào",
-        "meaning": "placa de carro, licença"
-      },
-      {
-        "id": 3,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e"
-      },
-      {
-        "id": 4,
-        "word": "税费",
-        "pinyin": "shuìfèi",
-        "meaning": "taxas e impostos"
-      },
-      {
-        "id": 5,
-        "word": "二十万",
-        "pinyin": "èrshí wàn",
-        "meaning": "200.000 (20 x 10.000)"
-      },
-      {
-        "id": 6,
-        "word": "出头",
-        "pinyin": "chūtóu",
-        "meaning": "um pouco mais que, acima de"
-      },
-      {
-        "id": 7,
-        "word": "一点",
-        "pinyin": "yīdiǎn",
-        "meaning": "um pouco"
-      }
-    ],
-    "id": "local-1772297659975-3",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "你打算上沪牌还是外牌？",
-    "pinyin": "Nǐ dǎsuàn shàng Hùpái háishì wàipái?",
-    "translation": "Você planeja obter uma placa de Xangai ou uma placa de fora?",
-    "tokens": [
-      "你",
-      "打算",
-      "上",
-      "沪牌",
-      "还是",
-      "外牌",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 2,
-        "word": "打算",
-        "pinyin": "dǎsuàn",
-        "meaning": "planejar, pretender"
-      },
-      {
-        "id": 3,
-        "word": "上",
-        "pinyin": "shàng",
-        "meaning": "obter, registrar (neste contexto, 'obter uma placa')"
-      },
-      {
-        "id": 4,
-        "word": "沪牌",
-        "pinyin": "Hùpái",
-        "meaning": "placa de Xangai (沪 Hù é a abreviação de Xangai)"
-      },
-      {
-        "id": 5,
-        "word": "还是",
-        "pinyin": "háishì",
-        "meaning": "ou (em perguntas)"
-      },
-      {
-        "id": 6,
-        "word": "外牌",
-        "pinyin": "wàipái",
-        "meaning": "placa de fora (de outra província/cidade)"
-      }
-    ],
-    "id": "local-1772297659975-4",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "外牌。我打算周末用用。平时上下班都坐公司班车，很方便。",
-    "pinyin": "Wàipái. Wǒ dǎsuàn zhōumò yòngyòng. Píngshí shàngxiàbān dōu zuò gōngsī bānchē, hěn fāngbiàn.",
-    "translation": "Placa de fora. Eu planejo usar nos fins de semana. Durante a semana, para ir e vir do trabalho, eu sempre pego a van da empresa, é muito conveniente.",
-    "tokens": [
-      "外牌",
-      "。",
-      "我",
-      "打算",
-      "周末",
-      "用用",
-      "。",
-      "平时",
-      "上下班",
-      "都",
-      "坐",
-      "公司",
-      "班车",
-      "，",
-      "很",
-      "方便",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "外牌",
-        "pinyin": "wàipái",
-        "meaning": "placa de fora"
-      },
-      {
-        "id": 2,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 3,
-        "word": "打算",
-        "pinyin": "dǎsuàn",
-        "meaning": "planejar, pretender"
-      },
-      {
-        "id": 4,
-        "word": "周末",
-        "pinyin": "zhōumò",
-        "meaning": "fim de semana"
-      },
-      {
-        "id": 5,
-        "word": "用用",
-        "pinyin": "yòngyòng",
-        "meaning": "usar (reduplicado para suavizar ou indicar brevemente)"
-      },
-      {
-        "id": 6,
-        "word": "平时",
-        "pinyin": "píngshí",
-        "meaning": "normalmente, durante a semana"
-      },
-      {
-        "id": 7,
-        "word": "上下班",
-        "pinyin": "shàngxiàbān",
-        "meaning": "ir e vir do trabalho, deslocamento diário"
-      },
-      {
-        "id": 8,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "tudo, ambos, sempre"
-      },
-      {
-        "id": 9,
-        "word": "坐",
-        "pinyin": "zuò",
-        "meaning": "sentar, pegar (um meio de transporte)"
-      },
-      {
-        "id": 10,
-        "word": "公司",
-        "pinyin": "gōngsī",
-        "meaning": "empresa"
-      },
-      {
-        "id": 11,
-        "word": "班车",
-        "pinyin": "bānchē",
-        "meaning": "van, ônibus fretado (da empresa)"
-      },
-      {
-        "id": 12,
-        "word": "很",
-        "pinyin": "hěn",
-        "meaning": "muito"
-      },
-      {
-        "id": 13,
-        "word": "方便",
-        "pinyin": "fāngbiàn",
-        "meaning": "conveniente, prático"
-      }
-    ],
-    "id": "local-1772297659975-5",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "你喜欢什么类型的车？",
-    "pinyin": "Nǐ xǐhuān shénme lèixíng de chē?",
-    "translation": "Que tipo de carro você gosta?",
-    "tokens": [
-      "你",
-      "喜欢",
-      "什么",
-      "类型",
-      "的",
-      "车",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 2,
-        "word": "喜欢",
-        "pinyin": "xǐhuān",
-        "meaning": "gostar"
-      },
-      {
-        "id": 3,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê, qual"
-      },
-      {
-        "id": 4,
-        "word": "类型",
-        "pinyin": "lèixíng",
-        "meaning": "tipo, categoria"
-      },
-      {
-        "id": 5,
-        "word": "车",
-        "pinyin": "chē",
-        "meaning": "carro"
-      }
-    ],
-    "id": "local-1772297659975-6",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "轿车。空间最大。",
-    "pinyin": "Jiàochē. Kōngjiān zuì dà.",
-    "translation": "Sedã. O espaço é o maior.",
-    "tokens": [
-      "轿车",
-      "。",
-      "空间",
-      "最",
-      "大",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "轿车",
-        "pinyin": "jiàochē",
-        "meaning": "sedã"
+        "word": "三厢",
+        "pinyin": "sānxiāng",
+        "meaning": "sedã (três compartimentos)"
       },
       {
         "id": 2,
@@ -459,37 +381,42 @@
       },
       {
         "id": 3,
-        "word": "最",
-        "pinyin": "zuì",
-        "meaning": "mais (superlativo)"
+        "word": "最好",
+        "pinyin": "zuìhǎo",
+        "meaning": "o melhor seria / preferencialmente"
       },
       {
         "id": 4,
         "word": "大",
         "pinyin": "dà",
         "meaning": "grande"
+      },
+      {
+        "id": 5,
+        "word": "一点",
+        "pinyin": "yìdiǎn",
+        "meaning": "um pouco"
       }
     ],
-    "id": "local-1772297659975-7",
+    "id": "local-1780201553341-7",
     "language": "Chinês"
   },
   {
-    "chinese": "看看别克君威、丰田凯美瑞和大众迈腾。这几款车都不错。",
-    "pinyin": "Kànkan Biékè Jūnwēi, Fēngtián Kǎiměiruì hé Dàzhòng Màiténg. Zhè jǐ kuǎn chē dōu búcuò.",
-    "translation": "Dê uma olhada no Buick Regal, Toyota Camry e Volkswagen Magotan. Esses modelos de carro são todos bons.",
+    "chinese": "A: 你看看别克君威，丰田凯美瑞，大众迈腾，这些车都不错。",
+    "pinyin": "Nǐ kànkàn biékèjūnwēi, fēngtián kǎiměiruì, dàzhòng màiténg, zhèxiē chē dōu bùcuò.",
+    "translation": "A: Dê uma olhada no Buick Regal, no Toyota Camry e no Volkswagen Magotan, esses carros são bem bons.",
     "tokens": [
+      "你",
       "看看",
-      "别克",
-      "君威",
-      "、",
+      "别克君威",
+      "，",
       "丰田",
       "凯美瑞",
-      "和",
+      "，",
       "大众",
       "迈腾",
-      "。",
-      "这",
-      "几款",
+      "，",
+      "这些",
       "车",
       "都",
       "不错",
@@ -498,66 +425,30 @@
     "keywords": [
       {
         "id": 1,
-        "word": "看看",
-        "pinyin": "kànkan",
-        "meaning": "dar uma olhada, ver (reduplicado)"
+        "word": "别克君威",
+        "pinyin": "biékèjūnwēi",
+        "meaning": "Buick Regal"
       },
       {
         "id": 2,
-        "word": "别克君威",
-        "pinyin": "Biékè Jūnwēi",
-        "meaning": "Buick Regal (nome do carro)"
+        "word": "丰田凯美瑞",
+        "pinyin": "fēngtiánkǎiměiruì",
+        "meaning": "Toyota Camry"
       },
       {
         "id": 3,
-        "word": "丰田凯美瑞",
-        "pinyin": "Fēngtián Kǎiměiruì",
-        "meaning": "Toyota Camry (nome do carro)"
+        "word": "大众迈腾",
+        "pinyin": "dàzhòngmàiténg",
+        "meaning": "Volkswagen Magotan"
       },
       {
         "id": 4,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e"
-      },
-      {
-        "id": 5,
-        "word": "大众迈腾",
-        "pinyin": "Dàzhòng Màiténg",
-        "meaning": "Volkswagen Magotan (nome do carro)"
-      },
-      {
-        "id": 6,
-        "word": "这",
-        "pinyin": "zhè",
-        "meaning": "este, estes"
-      },
-      {
-        "id": 7,
-        "word": "几款",
-        "pinyin": "jǐ kuǎn",
-        "meaning": "alguns modelos (几 jǐ: alguns, vários; 款 kuǎn: classificador para estilos/modelos)"
-      },
-      {
-        "id": 8,
-        "word": "车",
-        "pinyin": "chē",
-        "meaning": "carro"
-      },
-      {
-        "id": 9,
-        "word": "都",
-        "pinyin": "dōu",
-        "meaning": "todos"
-      },
-      {
-        "id": 10,
         "word": "不错",
-        "pinyin": "búcuò",
-        "meaning": "não é mau, muito bom"
+        "pinyin": "bùcuò",
+        "meaning": "bom, decente"
       }
     ],
-    "id": "local-1772297659975-8",
+    "id": "local-1780201553341-8",
     "language": "Chinês"
   }
 ]

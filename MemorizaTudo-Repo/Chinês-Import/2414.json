@@ -1,0 +1,710 @@
+[
+  {
+    "chinese": "A: 小文，有人送花给你，什么情况?",
+    "pinyin": "Xiǎowén, yǒurén sònghuā gěi nǐ, shénme qíngkuàng?",
+    "translation": "A: Xiao Wen, alguém te mandou flores, qual é a situação?",
+    "tokens": [
+      "小文",
+      "，",
+      "有人",
+      "送花",
+      "给",
+      "你",
+      "，",
+      "什么",
+      "情况",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小文",
+        "pinyin": "xiǎowén",
+        "meaning": "Xiao Wen (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "有人",
+        "pinyin": "yǒurén",
+        "meaning": "alguém"
+      },
+      {
+        "id": 3,
+        "word": "送花",
+        "pinyin": "sònghuā",
+        "meaning": "enviar flores"
+      },
+      {
+        "id": 4,
+        "word": "给",
+        "pinyin": "gěi",
+        "meaning": "para/dar"
+      },
+      {
+        "id": 5,
+        "word": "情况",
+        "pinyin": "qíngkuàng",
+        "meaning": "situação"
+      }
+    ],
+    "id": "local-1780224974166-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 啊呀，就是上次和你说过相亲对象。",
+    "pinyin": "Aya, jiùshì shàngcì hé nǐ shuō guò xiāngqīn duìxiàng.",
+    "translation": "B: Ah, é o candidato ao casamento que te contei na última vez.",
+    "tokens": [
+      "啊呀",
+      "，",
+      "就是",
+      "上次",
+      "和",
+      "你",
+      "说",
+      "过",
+      "相亲",
+      "对象",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "上次",
+        "pinyin": "shàngcì",
+        "meaning": "da última vez"
+      },
+      {
+        "id": 2,
+        "word": "相亲",
+        "pinyin": "xiāngqīn",
+        "meaning": "encontro arranjado"
+      },
+      {
+        "id": 3,
+        "word": "对象",
+        "pinyin": "duìxiàng",
+        "meaning": "par / noivo(a)"
+      }
+    ],
+    "id": "local-1780224974166-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 你们开始交往啦，都不告诉我，太不把我当闺蜜了，感觉怎么样？",
+    "pinyin": "Nǐmen kāishǐ jiāowǎng la, dōu bù gàosù wǒ, tài bù bǎ wǒ dāng guīmì le, gǎnjué zěnmeyàng?",
+    "translation": "A: Vocês começaram a namorar e nem me contaram, não estão me tratando como uma melhor amiga. Como está sendo?",
+    "tokens": [
+      "你们",
+      "开始",
+      "交往",
+      "啦",
+      "，",
+      "都",
+      "不",
+      "告诉",
+      "我",
+      "，",
+      "太",
+      "不",
+      "把",
+      "我",
+      "当",
+      "闺蜜",
+      "了",
+      "，",
+      "感觉",
+      "怎么样",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "开始",
+        "pinyin": "kāishǐ",
+        "meaning": "começar"
+      },
+      {
+        "id": 2,
+        "word": "交往",
+        "pinyin": "jiāowǎng",
+        "meaning": "namorar / ter relacionamento"
+      },
+      {
+        "id": 3,
+        "word": "告诉",
+        "pinyin": "gàosù",
+        "meaning": "contar / informar"
+      },
+      {
+        "id": 4,
+        "word": "闺蜜",
+        "pinyin": "guīmì",
+        "meaning": "melhor amiga"
+      },
+      {
+        "id": 5,
+        "word": "感觉",
+        "pinyin": "gǎnjué",
+        "meaning": "sentir / sensação"
+      }
+    ],
+    "id": "local-1780224974166-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 才见了两次面，第一印象还可以。不过觉得他有点怪，有洁癖。上次去饭店吃饭，拿出湿纸巾把餐桌擦了一遍，还特地去问服务员要来开水烫碗和杯子。",
+    "pinyin": "Cái jiàn le liǎngcì miàn, dìyīyìnxiàng hái kěyǐ. Bùguò juéde tā yǒudiǎn guài, yǒu jiépǐ. Shàngcì qù fàndiàn chīfàn, náchū shīzhǐjīn bǎ cānzhuō cā le yībiàn, hái tèdìqù wèn fúwùyuán yào lái kāishuǐtàng wǎn hé bēizi.",
+    "translation": "B: Nós só nos encontramos duas vezes até agora, e a primeira impressão foi boa. No entanto, acho que ele é um pouco estranho, tem mania de limpeza. Na última vez que fomos jantar ao restaurante, ele tirou lenços umedecidos e limpou a mesa, e ainda foi especialmente pedir ao garçom água fervente para escaldar os pratos e as xícaras.",
+    "tokens": [
+      "才",
+      "见",
+      "了",
+      "两次",
+      "面",
+      "，",
+      "第一印象",
+      "还",
+      "可以",
+      "。",
+      "不过",
+      "觉得",
+      "他",
+      "有点",
+      "怪",
+      "，",
+      "有",
+      "洁癖",
+      "。",
+      "上次",
+      "去",
+      "饭店",
+      "吃饭",
+      "，",
+      "拿出",
+      "湿纸巾",
+      "把",
+      "餐桌",
+      "擦",
+      "了",
+      "一遍",
+      "，",
+      "还",
+      "特地去",
+      "问",
+      "服务员",
+      "要",
+      "来",
+      "开水烫",
+      "碗",
+      "和",
+      "杯子",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "才",
+        "pinyin": "cái",
+        "meaning": "apenas, só"
+      },
+      {
+        "id": 2,
+        "word": "第一印象",
+        "pinyin": "dìyīyìnxiàng",
+        "meaning": "primeira impressão"
+      },
+      {
+        "id": 3,
+        "word": "怪",
+        "pinyin": "guài",
+        "meaning": "estranho, excêntrico"
+      },
+      {
+        "id": 4,
+        "word": "洁癖",
+        "pinyin": "jiépǐ",
+        "meaning": "mania de limpeza"
+      },
+      {
+        "id": 5,
+        "word": "湿纸巾",
+        "pinyin": "shīzhǐjīn",
+        "meaning": "lenço umedecido"
+      },
+      {
+        "id": 6,
+        "word": "开水",
+        "pinyin": "kāishuǐ",
+        "meaning": "água fervente"
+      },
+      {
+        "id": 7,
+        "word": "烫",
+        "pinyin": "tàng",
+        "meaning": "escaldar, lavar com água quente"
+      }
+    ],
+    "id": "local-1780224974166-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 他什么星座的？",
+    "pinyin": "Tā shénme xīngzuò de?",
+    "translation": "A: Qual é o signo dele?",
+    "tokens": [
+      "他",
+      "什么",
+      "星座",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "他",
+        "pinyin": "tā",
+        "meaning": "ele"
+      },
+      {
+        "id": 2,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual"
+      },
+      {
+        "id": 3,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo"
+      }
+    ],
+    "id": "local-1780224974166-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 处女座。",
+    "pinyin": "Chǔnǚzuò.",
+    "translation": "B: Virgem.",
+    "tokens": [
+      "处女座",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "Virgem (signo do zodíaco)"
+      }
+    ],
+    "id": "local-1780224974166-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那就难怪了，处女座是出了名的爱干净。不过处女座老公有很多优点：不会乱发脾气；生病的时候会照顾你；很勤劳，很踏实；婚后会把家庭生活安排得相当有条理，各项家庭计划都预先考虑，让你无后顾之忧。",
+    "pinyin": "Nà jiù nánguài le, chǔnǚzuò shì chūlemíng de ài gānjìng. Bùguò chǔnǚzuò lǎogōng yǒu hěnduō yōudiǎn: búhuì luàn fāpíqì; shēngbìng de shíhòu huì zhàogù nǐ; hěn qínláo, hěn tàshí; hūnhòu huì bǎ jiātíng shēnghuó ānpái dé xiāngdāng yǒutiáolǐ, gèxiàng jiātíngjìhuà dōu yùxiān kǎolǜ, ràng nǐ wú hòugùzhīyōu.",
+    "translation": "A: Então não é de estranhar, os Virgens são famosos por serem limpos. Mas um marido Virgem tem muitas qualidades: não perde a paciência sem motivo; cuida de você quando está doente; é muito trabalhador e confiável; após o casamento, organiza a vida familiar de forma bastante ordenada, planejando tudo com antecedência para que você não tenha preocupações.",
+    "tokens": [
+      "那",
+      "就",
+      "难怪",
+      "了",
+      "，",
+      "处女座",
+      "是",
+      "出了名",
+      "的",
+      "爱",
+      "干净",
+      "。",
+      "不过",
+      "处女座",
+      "老公",
+      "有",
+      "很多",
+      "优点",
+      "：",
+      "不会",
+      "乱",
+      "发脾气",
+      "；",
+      "生病",
+      "的",
+      "时候",
+      "会",
+      "照顾",
+      "你",
+      "；",
+      "很",
+      "勤劳",
+      "，",
+      "很",
+      "踏实",
+      "；",
+      "婚后",
+      "会",
+      "把",
+      "家庭",
+      "生活",
+      "安排",
+      "得",
+      "相当",
+      "有条理",
+      "，",
+      "各项",
+      "家庭计划",
+      "都",
+      "预先",
+      "考虑",
+      "，",
+      "让",
+      "你",
+      "无",
+      "后顾之忧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "难怪",
+        "pinyin": "nánguài",
+        "meaning": "não é de estranhar / não surpreende"
+      },
+      {
+        "id": 2,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "signo de Virgem"
+      },
+      {
+        "id": 3,
+        "word": "爱干净",
+        "pinyin": "àigānjìng",
+        "meaning": "gostar de limpeza"
+      },
+      {
+        "id": 4,
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "meaning": "marido"
+      },
+      {
+        "id": 5,
+        "word": "发脾气",
+        "pinyin": "fāpíqì",
+        "meaning": "perder a paciência / ter acesso de raiva"
+      },
+      {
+        "id": 6,
+        "word": "勤劳",
+        "pinyin": "qínláo",
+        "meaning": "trabalhador"
+      },
+      {
+        "id": 7,
+        "word": "有条理",
+        "pinyin": "yǒutiáolǐ",
+        "meaning": "organizado"
+      },
+      {
+        "id": 8,
+        "word": "后顾之忧",
+        "pinyin": "hòugùzhīyōu",
+        "meaning": "preocupações futuras / receios"
+      }
+    ],
+    "id": "local-1780224974166-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这八字还没一撇呢。你说到哪里去了，我还没确定让他做我老公的人选呢。不过既然你那么了解星座论，那再跟我说说处女座的性格是怎么样的？还有处女座喜欢什么样的人？",
+    "pinyin": "Zhè bāzì hái méi yīpiē ne. Nǐ shuō dào nǎlǐ qù le, wǒ hái méi quèdìng ràng tā zuò wǒ lǎogōng de rénxuǎn ne. Bùguò jìrán nǐ nàme liǎojiě xīngzuò lùn, nà zài gēn wǒ shuō shuō chǔnǚzuò de xìnggé shì zěnmeyàng de? Háiyǒu chǔnǚzuò xǐhuān shénmeyàng de rén?",
+    "translation": "B: Ainda não há nada definido. Você está falando besteira, eu nem decidi quem será meu marido. Mas já que você entende tanto de astrologia, me conte mais: qual é a personalidade de um Virgem? E que tipo de pessoa um Virgem gosta?",
+    "tokens": [
+      "这",
+      "八字",
+      "还",
+      "没",
+      "一撇",
+      "呢",
+      "。",
+      "你",
+      "说",
+      "到",
+      "哪里",
+      "去",
+      "了",
+      "，",
+      "我",
+      "还",
+      "没",
+      "确定",
+      "让",
+      "他",
+      "做",
+      "我",
+      "老公",
+      "的",
+      "人选",
+      "呢",
+      "。",
+      "不过",
+      "既然",
+      "你",
+      "那么",
+      "了解",
+      "星座",
+      "论",
+      "，",
+      "那",
+      "再",
+      "跟",
+      "我",
+      "说",
+      "说",
+      "处女座",
+      "的",
+      "性格",
+      "是",
+      "怎么样",
+      "的",
+      "？",
+      "还有",
+      "处女座",
+      "喜欢",
+      "什么样",
+      "的",
+      "人",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "八字还没一撇",
+        "pinyin": "bāzìháiméiyīpiē",
+        "meaning": "ainda não há nada definido / muito distante de acontecer"
+      },
+      {
+        "id": 2,
+        "word": "老公",
+        "pinyin": "lǎogōng",
+        "meaning": "marido"
+      },
+      {
+        "id": 3,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo do zodíaco"
+      },
+      {
+        "id": 4,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 5,
+        "word": "性格",
+        "pinyin": "xìnggé",
+        "meaning": "personalidade / caráter"
+      }
+    ],
+    "id": "local-1780224974166-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 处女座是完美主义者，他们心思细密、感情内敛、思路清晰。处女座的人，一般都喜欢知识渊博的人。对处女座的男人来说，美丽的头脑比漂亮的脸蛋重要得多，他们比较难以忍受一个无知又粗心大意的女人。",
+    "pinyin": "Chǔnǚzuò shì wánměi zhǔyìzhě, tāmen xīnsī xìmì, gǎnqíng nèiliǎn, sīlùqīngxī. Chǔnǚzuò de rén, yìbān dōu xǐhuān zhīshí yuānbó de rén. Duì chǔnǚzuò de nánrén láishuō, měilì de tóunǎo bǐ piàoliàng de liǎndàn zhòngyào dé duō, tāmen bǐjiào nányǐrěnshòu yígè wúzhī yòu cūxīndàyì de nǚrén.",
+    "translation": "A: As Virgens são perfeccionistas, têm pensamentos detalhistas, emoções contidas e raciocínio claro. As pessoas do signo de Virgem geralmente gostam de pessoas cultas. Para os homens Virgem, uma mente bela é muito mais importante do que um rosto bonito; eles têm dificuldade em suportar mulheres ignorantes e descuidadas.",
+    "tokens": [
+      "处女座",
+      "是",
+      "完美",
+      "主义者",
+      "，",
+      "他们",
+      "心思",
+      "细密",
+      "、",
+      "感情",
+      "内敛",
+      "、",
+      "思路清晰",
+      "。",
+      "处女座",
+      "的",
+      "人",
+      "，",
+      "一般",
+      "都",
+      "喜欢",
+      "知识",
+      "渊博",
+      "的",
+      "人",
+      "。",
+      "对",
+      "处女座",
+      "的",
+      "男人",
+      "来说",
+      "，",
+      "美丽",
+      "的",
+      "头脑",
+      "比",
+      "漂亮",
+      "的",
+      "脸蛋",
+      "重要",
+      "得",
+      "多",
+      "，",
+      "他们",
+      "比较",
+      "难以忍受",
+      "一个",
+      "无知",
+      "又",
+      "粗心大意",
+      "的",
+      "女人",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 2,
+        "word": "完美主义者",
+        "pinyin": "wánměizhǔyìzhě",
+        "meaning": "perfeccionista"
+      },
+      {
+        "id": 3,
+        "word": "心思细密",
+        "pinyin": "xīnsīxìmì",
+        "meaning": "pensamentos detalhistas"
+      },
+      {
+        "id": 4,
+        "word": "感情内敛",
+        "pinyin": "gǎnqíngnèiliǎn",
+        "meaning": "emoções contidas"
+      },
+      {
+        "id": 5,
+        "word": "思路清晰",
+        "pinyin": "sīlùqīngxī",
+        "meaning": "raciocínio claro"
+      },
+      {
+        "id": 6,
+        "word": "知识渊博",
+        "pinyin": "zhīshíyuānbó",
+        "meaning": "culto"
+      },
+      {
+        "id": 7,
+        "word": "无知",
+        "pinyin": "wúzhī",
+        "meaning": "ignorante"
+      },
+      {
+        "id": 8,
+        "word": "粗心大意",
+        "pinyin": "cūxīndàyì",
+        "meaning": "descuidado"
+      }
+    ],
+    "id": "local-1780224974166-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 粗心大意……这不就在说我吗？处女座那么注重细节，生活累不累啊！那你再帮我算算，我的星座和他配不配？",
+    "pinyin": "Cūxīndàyì.. Zhè bù jiù zài shuō wǒ ma? Chǔnǚzuò nàme zhùzhòng xìjié, shēnghuó lèibùlèi a! Nà nǐ zài bāng wǒ suànsuàn, wǒ de xīngzuò hé tā pèi bùpèi?",
+    "translation": "B: Descuidado... isso não está me descrevendo? Virgem é tão detalhista, a vida não é cansativa? Então, me ajude a calcular de novo, se o meu signo combina com o dele?",
+    "tokens": [
+      "粗心大意",
+      "…",
+      "…",
+      "这",
+      "不",
+      "就",
+      "在",
+      "说",
+      "我",
+      "吗",
+      "？",
+      "处女座",
+      "那么",
+      "注重",
+      "细节",
+      "，",
+      "生活",
+      "累不累",
+      "啊",
+      "！",
+      "那",
+      "你",
+      "再",
+      "帮",
+      "我",
+      "算算",
+      "，",
+      "我",
+      "的",
+      "星座",
+      "和",
+      "他",
+      "配",
+      "不配",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "粗心大意",
+        "pinyin": "cūxīndàyì",
+        "meaning": "descuidado / descuidado"
+      },
+      {
+        "id": 2,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "Virgem (signo)"
+      },
+      {
+        "id": 3,
+        "word": "注重",
+        "pinyin": "zhùzhòng",
+        "meaning": "dar importância a / valorizar"
+      },
+      {
+        "id": 4,
+        "word": "细节",
+        "pinyin": "xìjié",
+        "meaning": "detalhes"
+      },
+      {
+        "id": 5,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo (zodíaco)"
+      },
+      {
+        "id": 6,
+        "word": "配",
+        "pinyin": "pèi",
+        "meaning": "combinar / combinar-se"
+      }
+    ],
+    "id": "local-1780224974166-9",
+    "language": "Chinês"
+  }
+]

@@ -1,83 +1,68 @@
 [
   {
-    "chinese": "A: 您好，王经理。您觉得这份设计稿怎么样？",
-    "pinyin": "A: Nín hǎo, Wáng jīnglǐ. Nín juéde zhè fèn shèjìgǎo zěnmeyàng?",
-    "translation": "A: Olá, Gerente Wang. O que você acha desta proposta de design?",
+    "chinese": "A: 王总，您好啊。这次的设计稿您觉得怎么样？",
+    "pinyin": "Wángzǒng, nínhǎo a. Zhècì de shèjì gǎo nín juéde zěnmeyàng?",
+    "translation": "A: Diretor Wang, olá. O que o senhor acha deste projeto de design?",
     "tokens": [
-      "您好",
+      "王总",
       "，",
-      "王",
-      "经理",
+      "您好",
+      "啊",
       "。",
+      "这次",
+      "的",
+      "设计",
+      "稿",
       "您",
       "觉得",
-      "这",
-      "份",
-      "设计稿",
       "怎么样",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "您好",
-        "pinyin": "nín hǎo",
-        "meaning": "Olá (formal)"
+        "word": "王总",
+        "pinyin": "wángzǒng",
+        "meaning": "Diretor Wang / Chefe Wang"
       },
       {
         "id": 2,
-        "word": "经理",
-        "pinyin": "jīnglǐ",
-        "meaning": "gerente"
+        "word": "设计稿",
+        "pinyin": "shèjìgǎo",
+        "meaning": "projeto de design / rascunho de design"
       },
       {
         "id": 3,
         "word": "觉得",
         "pinyin": "juéde",
-        "meaning": "achar, sentir"
+        "meaning": "achar / sentir"
       },
       {
         "id": 4,
-        "word": "这份",
-        "pinyin": "zhè fèn",
-        "meaning": "esta (classificador para documentos/propostas)"
-      },
-      {
-        "id": 5,
-        "word": "设计稿",
-        "pinyin": "shèjìgǎo",
-        "meaning": "proposta de design, rascunho de design"
-      },
-      {
-        "id": 6,
         "word": "怎么样",
         "pinyin": "zěnmeyàng",
-        "meaning": "como está, que tal"
+        "meaning": "como está / que tal"
       }
     ],
-    "id": "local-1772299710968-0",
+    "id": "local-1780202640229-0",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 看起来还不错，但总和我心中所想的不太一样。",
-    "pinyin": "B: Kàn qǐlái hái bùcuò, dàn zǒng hé wǒ xīnzhōng suǒ xiǎng de bù tài yīyàng.",
-    "translation": "B: Parece bom, mas no geral não é bem o que eu tinha em mente.",
+    "chinese": "B: 看起来还行，但是总和我心里想的不一样。",
+    "pinyin": "Kànqǐlái hái xíng, dànshì zǒnghé wǒ xīnlǐ xiǎng de bù yīyàng.",
+    "translation": "B: Parece ok, mas não é exatamente o que eu imaginava.",
     "tokens": [
-      "看",
-      "起来",
+      "看起来",
       "还",
-      "不错",
+      "行",
       "，",
-      "但",
-      "总",
-      "和",
+      "但是",
+      "总和",
       "我",
-      "心中",
-      "所",
+      "心里",
       "想",
       "的",
       "不",
-      "太",
       "一样",
       "。"
     ],
@@ -85,60 +70,54 @@
       {
         "id": 1,
         "word": "看起来",
-        "pinyin": "kàn qǐlái",
-        "meaning": "parece que, à primeira vista"
+        "pinyin": "kànqǐlái",
+        "meaning": "parecer"
       },
       {
         "id": 2,
-        "word": "还不错",
-        "pinyin": "hái bùcuò",
-        "meaning": "não é ruim, bastante bom"
+        "word": "还行",
+        "pinyin": "háixíng",
+        "meaning": "ok / aceitável"
       },
       {
         "id": 3,
-        "word": "但",
-        "pinyin": "dàn",
+        "word": "但是",
+        "pinyin": "dànshì",
         "meaning": "mas"
       },
       {
         "id": 4,
-        "word": "总",
-        "pinyin": "zǒng",
-        "meaning": "sempre, no geral"
+        "word": "心里",
+        "pinyin": "xīnlǐ",
+        "meaning": "no coração / na mente"
       },
       {
         "id": 5,
-        "word": "心中",
-        "pinyin": "xīnzhōng",
-        "meaning": "na mente, no coração"
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "imaginar / pensar"
       },
       {
         "id": 6,
-        "word": "所想",
-        "pinyin": "suǒ xiǎng",
-        "meaning": "o que se pensa, o que se tem em mente"
-      },
-      {
-        "id": 7,
-        "word": "不太一样",
-        "pinyin": "bù tài yīyàng",
-        "meaning": "não muito parecido, diferente"
+        "word": "不一样",
+        "pinyin": "bùyíyàng",
+        "meaning": "diferente"
       }
     ],
-    "id": "local-1772299710968-1",
+    "id": "local-1780202640229-1",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 您有什么想法可以直接告诉我。",
-    "pinyin": "A: Nín yǒu shénme xiǎngfǎ kěyǐ zhíjiē gàosù wǒ.",
-    "translation": "A: Se você tiver alguma ideia, pode me dizer diretamente.",
+    "chinese": "A: 您有什么想法，可以告诉我。",
+    "pinyin": "Nín yǒu shénme xiǎngfǎ, kěyǐ gàosù wǒ.",
+    "translation": "A: Se você tiver alguma ideia, pode me dizer.",
     "tokens": [
       "您",
       "有",
       "什么",
       "想法",
+      "，",
       "可以",
-      "直接",
       "告诉",
       "我",
       "。"
@@ -146,125 +125,136 @@
     "keywords": [
       {
         "id": 1,
-        "word": "有什么",
-        "pinyin": "yǒu shénme",
-        "meaning": "ter o que, haver o que"
+        "word": "您",
+        "pinyin": "nín",
+        "meaning": "você (respeitoso)"
       },
       {
         "id": 2,
-        "word": "想法",
-        "pinyin": "xiǎngfǎ",
-        "meaning": "ideia, pensamento"
+        "word": "有什么",
+        "pinyin": "yǒushénme",
+        "meaning": "ter o que / ter alguma"
       },
       {
         "id": 3,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "poder, conseguir"
+        "word": "想法",
+        "pinyin": "xiǎngfǎ",
+        "meaning": "ideia / pensamento"
       },
       {
         "id": 4,
-        "word": "直接",
-        "pinyin": "zhíjiē",
-        "meaning": "diretamente"
+        "word": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "poder / pode"
       },
       {
         "id": 5,
         "word": "告诉",
         "pinyin": "gàosù",
-        "meaning": "contar, dizer"
+        "meaning": "dizer / contar"
+      },
+      {
+        "id": 6,
+        "word": "我",
+        "pinyin": "wǒ",
+        "meaning": "eu / mim"
       }
     ],
-    "id": "local-1772299710968-2",
+    "id": "local-1780202640229-2",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 我也说不清楚具体是哪里，总觉得少了点什么。",
-    "pinyin": "B: Wǒ yě shuō bu qīngchǔ jùtǐ shì nǎlǐ, zǒng juéde shǎole diǎn shénme.",
-    "translation": "B: Eu também não consigo dizer exatamente onde, mas sempre sinto que falta algo.",
+    "chinese": "B: 这个我也说不清楚。感觉缺点什么。",
+    "pinyin": "Zhège wǒ yě shuōbùqīngchǔ. Gǎnjué quēdiǎn shénme.",
+    "translation": "B: Eu também não consigo explicar isso claramente. Sente que falta algo.",
     "tokens": [
+      "这个",
       "我",
       "也",
       "说不清楚",
-      "具体",
-      "是",
-      "哪里",
-      "，",
-      "总",
-      "觉得",
-      "少",
-      "了",
-      "点",
+      "。",
+      "感觉",
+      "缺点",
       "什么",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "说不清楚",
-        "pinyin": "shuō bu qīngchǔ",
-        "meaning": "não conseguir explicar claramente"
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "isso"
       },
       {
         "id": 2,
-        "word": "具体",
-        "pinyin": "jùtǐ",
-        "meaning": "específico, exato"
+        "word": "也",
+        "pinyin": "yě",
+        "meaning": "também"
       },
       {
         "id": 3,
-        "word": "哪里",
-        "pinyin": "nǎlǐ",
-        "meaning": "onde"
+        "word": "说不清楚",
+        "pinyin": "shuōbùqīngchǔ",
+        "meaning": "não conseguir explicar claramente"
       },
       {
         "id": 4,
-        "word": "总觉得",
-        "pinyin": "zǒng juéde",
-        "meaning": "sempre sentir, ter a sensação"
+        "word": "感觉",
+        "pinyin": "gǎnjué",
+        "meaning": "sentir"
       },
       {
         "id": 5,
-        "word": "少了点什么",
-        "pinyin": "shǎole diǎn shénme",
-        "meaning": "faltar algo"
+        "word": "缺点",
+        "pinyin": "quēdiǎn",
+        "meaning": "faltar"
+      },
+      {
+        "id": 6,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "algo"
       }
     ],
-    "id": "local-1772299710968-3",
+    "id": "local-1780202640229-3",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 上次您说觉得风格太简单，所以我这次加了更多视觉元素，用户交互也更复杂了。您再看看。",
-    "pinyin": "A: Shàngcì nín shuō juéde fēnggé tài jiǎndān, suǒyǐ wǒ zhè cì jiāle gèng duō shìjué yuánsù, yònghù jiāohù yě gèng fùzá le. Nín zài kànkan.",
-    "translation": "A: Da última vez você disse que achava o estilo muito simples, então desta vez adicionei mais elementos visuais e a interação do usuário também ficou mais complexa. Dê uma olhada novamente.",
+    "chinese": "A: 上次您说感觉风格太简单了，所以这次我加入了更多的视觉元素。用户交互也更加复杂。我给您看一下。",
+    "pinyin": "Shàngcì nín shuō gǎnjué fēnggé tài jiǎndān le, suǒyǐ zhècì wǒ jiārù le gèng duō de shìjué yuánsù. Yònghù jiāohù yě gèngjiā fùzá. Wǒ gěi nín kàn yīxià.",
+    "translation": "A: Na última vez, você disse que achou o estilo muito simples, então desta vez adicionei mais elementos visuais. A interação do usuário também ficou mais complexa. Deixa eu mostrar para você.",
     "tokens": [
       "上次",
       "您",
       "说",
-      "觉得",
+      "感觉",
       "风格",
       "太",
       "简单",
+      "了",
       "，",
       "所以",
-      "我",
       "这次",
-      "加",
+      "我",
+      "加入",
       "了",
-      "更多",
+      "更",
+      "多",
+      "的",
       "视觉",
       "元素",
-      "，",
+      "。",
       "用户",
       "交互",
       "也",
-      "更",
+      "更加",
       "复杂",
-      "了",
       "。",
+      "我",
+      "给",
       "您",
-      "再",
-      "看看",
+      "看",
+      "一下",
       "。"
     ],
     "keywords": [
@@ -276,81 +266,50 @@
       },
       {
         "id": 2,
+        "word": "感觉",
+        "pinyin": "gǎnjué",
+        "meaning": "sentir / achar"
+      },
+      {
+        "id": 3,
         "word": "风格",
         "pinyin": "fēnggé",
         "meaning": "estilo"
       },
       {
-        "id": 3,
-        "word": "太简单",
-        "pinyin": "tài jiǎndān",
-        "meaning": "muito simples"
-      },
-      {
         "id": 4,
-        "word": "所以",
-        "pinyin": "suǒyǐ",
-        "meaning": "por isso, então"
-      },
-      {
-        "id": 5,
-        "word": "这次",
-        "pinyin": "zhè cì",
-        "meaning": "desta vez"
-      },
-      {
-        "id": 6,
-        "word": "加了",
-        "pinyin": "jiāle",
-        "meaning": "adicionou"
-      },
-      {
-        "id": 7,
-        "word": "更多",
-        "pinyin": "gèng duō",
-        "meaning": "mais"
-      },
-      {
-        "id": 8,
         "word": "视觉元素",
-        "pinyin": "shìjué yuánsù",
+        "pinyin": "shìjuéyuánsù",
         "meaning": "elementos visuais"
       },
       {
-        "id": 9,
+        "id": 5,
         "word": "用户交互",
-        "pinyin": "yònghù jiāohù",
+        "pinyin": "yònghùjiāohù",
         "meaning": "interação do usuário"
       },
       {
-        "id": 10,
-        "word": "更复杂",
-        "pinyin": "gèng fùzá",
-        "meaning": "mais complexo"
-      },
-      {
-        "id": 11,
-        "word": "再看看",
-        "pinyin": "zài kànkan",
-        "meaning": "dar uma olhada novamente"
+        "id": 6,
+        "word": "复杂",
+        "pinyin": "fùzá",
+        "meaning": "complexo"
       }
     ],
-    "id": "local-1772299710968-4",
+    "id": "local-1780202640229-4",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 太复杂了。用户会不会不喜欢？",
-    "pinyin": "B: Tài fùzá le. Yònghù huì bu huì bù xǐhuān?",
-    "translation": "B: Está muito complicado. Os usuários não gostarão?",
+    "chinese": "B: 太复杂了，用户会不会不喜欢？",
+    "pinyin": "Tài fùzá le, yònghù huì búhuì bù xǐhuān?",
+    "translation": "B: É muito complexo, os usuários não vão gostar?",
     "tokens": [
       "太",
       "复杂",
       "了",
-      "。",
+      "，",
       "用户",
       "会",
-      "不",
-      "会",
+      "不会",
       "不",
       "喜欢",
       "？"
@@ -359,49 +318,45 @@
       {
         "id": 1,
         "word": "太复杂了",
-        "pinyin": "tài fùzá le",
-        "meaning": "está muito complexo"
+        "pinyin": "tàifùzále",
+        "meaning": "muito complexo"
       },
       {
         "id": 2,
         "word": "用户",
         "pinyin": "yònghù",
-        "meaning": "usuário"
+        "meaning": "usuários"
       },
       {
         "id": 3,
         "word": "会不会",
-        "pinyin": "huì bu huì",
-        "meaning": "irá ou não, talvez"
+        "pinyin": "huìbúhuì",
+        "meaning": "será que... / não vai..."
       },
       {
         "id": 4,
         "word": "不喜欢",
-        "pinyin": "bù xǐhuān",
+        "pinyin": "bùxǐhuān",
         "meaning": "não gostar"
       }
     ],
-    "id": "local-1772299710968-5",
+    "id": "local-1780202640229-5",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 那我改一下这部分，这样就能减少一些复杂性。",
-    "pinyin": "A: Nà wǒ gǎi yīxià zhè bùfen, zhèyàng jiù néng jiǎnshǎo yīxiē fùzáxìng.",
-    "translation": "A: Então vou mudar esta parte, assim podemos reduzir um pouco da complexidade.",
+    "chinese": "A: 那我改一下这个部分，删掉一些。",
+    "pinyin": "Nà wǒ gǎi yīxià zhège bùfèn, shāndiào yīxiē.",
+    "translation": "A: Então, vou ajustar essa parte, removendo algumas coisas.",
     "tokens": [
       "那",
       "我",
       "改",
       "一下",
-      "这",
+      "这个",
       "部分",
       "，",
-      "这样",
-      "就",
-      "能",
-      "减少",
+      "删掉",
       "一些",
-      "复杂性",
       "。"
     ],
     "keywords": [
@@ -413,60 +368,48 @@
       },
       {
         "id": 2,
-        "word": "改一下",
-        "pinyin": "gǎi yīxià",
-        "meaning": "mudar um pouco, fazer uma alteração"
+        "word": "改",
+        "pinyin": "gǎi",
+        "meaning": "mudar, alterar"
       },
       {
         "id": 3,
-        "word": "这部分",
-        "pinyin": "zhè bùfen",
-        "meaning": "esta parte"
+        "word": "部分",
+        "pinyin": "bùfèn",
+        "meaning": "parte"
       },
       {
         "id": 4,
-        "word": "这样",
-        "pinyin": "zhèyàng",
-        "meaning": "assim, desta forma"
+        "word": "删掉",
+        "pinyin": "shāndiào",
+        "meaning": "apagar, remover"
       },
       {
         "id": 5,
-        "word": "减少",
-        "pinyin": "jiǎnshǎo",
-        "meaning": "reduzir"
-      },
-      {
-        "id": 6,
         "word": "一些",
         "pinyin": "yīxiē",
-        "meaning": "alguns, um pouco de"
-      },
-      {
-        "id": 7,
-        "word": "复杂性",
-        "pinyin": "fùzáxìng",
-        "meaning": "complexidade"
+        "meaning": "alguns, algumas"
       }
     ],
-    "id": "local-1772299710968-6",
+    "id": "local-1780202640229-6",
     "language": "Chinês"
   },
   {
     "chinese": "B: 这个颜色……",
-    "pinyin": "B: Zhège yánsè……",
-    "translation": "B: Esta cor...",
+    "pinyin": "Zhège yánsè..",
+    "translation": "B: Essa cor...",
     "tokens": [
-      "这",
-      "个",
+      "这个",
       "颜色",
-      "……"
+      "…",
+      "…"
     ],
     "keywords": [
       {
         "id": 1,
         "word": "这个",
         "pinyin": "zhège",
-        "meaning": "este, esta"
+        "meaning": "este/essa"
       },
       {
         "id": 2,
@@ -475,18 +418,18 @@
         "meaning": "cor"
       }
     ],
-    "id": "local-1772299710968-7",
+    "id": "local-1780202640229-7",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 这是橙色。是您喜欢的暖色调。",
-    "pinyin": "A: Zhè shì chéngsè. Shì nín xǐhuān de nuǎnsèdiào.",
-    "translation": "A: Esta é laranja. É o tom quente que você gosta.",
+    "chinese": "A: 这是橘色的，是您喜欢的暖色调。",
+    "pinyin": "Zhèshì júsè de, shì nín xǐhuān de nuǎnsèdiào.",
+    "translation": "A: Esta é a cor laranja, um tom quente do seu agrado.",
     "tokens": [
-      "这",
-      "是",
-      "橙色",
-      "。",
+      "这是",
+      "橘色",
+      "的",
+      "，",
       "是",
       "您",
       "喜欢",
@@ -497,42 +440,47 @@
     "keywords": [
       {
         "id": 1,
-        "word": "橙色",
-        "pinyin": "chéngsè",
+        "word": "橘色",
+        "pinyin": "júsè",
         "meaning": "cor laranja"
       },
       {
         "id": 2,
-        "word": "喜欢",
-        "pinyin": "xǐhuān",
-        "meaning": "gostar"
+        "word": "是",
+        "pinyin": "shì",
+        "meaning": "é"
       },
       {
         "id": 3,
         "word": "暖色调",
         "pinyin": "nuǎnsèdiào",
-        "meaning": "tom quente, cor quente"
+        "meaning": "tom quente"
+      },
+      {
+        "id": 4,
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar"
       }
     ],
-    "id": "local-1772299710968-8",
+    "id": "local-1780202640229-8",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 虽然我喜欢暖色，但这个好像太亮了。",
-    "pinyin": "B: Suīrán wǒ xǐhuān nuǎnsè, dàn zhège hǎoxiàng tài liàng le.",
-    "translation": "B: Embora eu goste de cores quentes, esta parece muito clara (brilhante).",
+    "chinese": "B: 虽然我喜欢暖色，但是这个好像太鲜艳了。",
+    "pinyin": "Suīrán wǒ xǐhuān nuǎnsè, dànshì zhège hǎoxiàng tài xiānyàn le.",
+    "translation": "B: Embora eu goste de cores quentes, essa parece estar muito viva.",
     "tokens": [
       "虽然",
       "我",
       "喜欢",
       "暖色",
       "，",
-      "但",
-      "这",
-      "个",
+      "但是",
+      "这个",
       "好像",
       "太",
-      "亮",
+      "鲜艳",
       "了",
       "。"
     ],
@@ -545,185 +493,171 @@
       },
       {
         "id": 2,
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar de"
+      },
+      {
+        "id": 3,
         "word": "暖色",
         "pinyin": "nuǎnsè",
-        "meaning": "cor quente"
-      },
-      {
-        "id": 3,
-        "word": "好像",
-        "pinyin": "hǎoxiàng",
-        "meaning": "parece que, como se"
+        "meaning": "cores quentes"
       },
       {
         "id": 4,
-        "word": "太亮了",
-        "pinyin": "tài liàng le",
-        "meaning": "muito brilhante/clara"
-      }
-    ],
-    "id": "local-1772299710968-9",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "A: 哦，好的。那我改成更奶油的颜色，您觉得呢？",
-    "pinyin": "A: Ó, hǎo de. Nà wǒ gǎi chéng gèng nǎiyóu de yánsè, nín juéde ne?",
-    "translation": "A: Ah, ok. Então vou mudar para uma cor mais creme, o que você acha?",
-    "tokens": [
-      "哦",
-      "，",
-      "好",
-      "的",
-      "。",
-      "那",
-      "我",
-      "改",
-      "成",
-      "更",
-      "奶油",
-      "的",
-      "颜色",
-      "，",
-      "您",
-      "觉得",
-      "呢",
-      "？"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "哦",
-        "pinyin": "ó",
-        "meaning": "oh (interjeição)"
-      },
-      {
-        "id": 2,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok, tudo bem"
-      },
-      {
-        "id": 3,
-        "word": "改成",
-        "pinyin": "gǎi chéng",
-        "meaning": "mudar para, transformar em"
-      },
-      {
-        "id": 4,
-        "word": "更",
-        "pinyin": "gèng",
-        "meaning": "mais"
+        "word": "但是",
+        "pinyin": "dànshì",
+        "meaning": "mas"
       },
       {
         "id": 5,
-        "word": "奶油",
-        "pinyin": "nǎiyóu",
-        "meaning": "creme, manteiga"
-      },
-      {
-        "id": 6,
-        "word": "觉得呢",
-        "pinyin": "juéde ne",
-        "meaning": "o que você acha?"
+        "word": "鲜艳",
+        "pinyin": "xiānyàn",
+        "meaning": "vivo/brilhante"
       }
     ],
-    "id": "local-1772299710968-10",
+    "id": "local-1780202640229-9",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 算了。这已经是第五版了，我怕时间不够。要不还是用第一版吧？",
-    "pinyin": "B: Suànle. Zhè yǐjīng shì dì wǔ bǎn le, wǒ pà shíjiān bùgòu. Yàobù háishì yòng dì yī bǎn ba?",
-    "translation": "B: Deixa pra lá. Esta já é a quinta versão, tenho medo de que não haja tempo suficiente. Que tal usarmos a primeira versão?",
+    "chinese": "A: 啊，好。那换成米色的，您觉得怎么样？",
+    "pinyin": "A, hǎo. Nà huànchéng mǐsè de, nín juéde zěnmeyàng?",
+    "translation": "A: Ah, tudo bem. Então, vamos trocar por bege, o que acha?",
     "tokens": [
-      "算",
-      "了",
-      "。",
-      "这",
-      "已经",
-      "是",
-      "第",
-      "五",
-      "版",
-      "了",
+      "啊",
       "，",
-      "我",
-      "怕",
-      "时间",
-      "不",
-      "够",
+      "好",
       "。",
-      "要不",
-      "还是",
-      "用",
-      "第",
-      "一",
-      "版",
-      "吧",
+      "那",
+      "换成",
+      "米色",
+      "的",
+      "，",
+      "您",
+      "觉得",
+      "怎么样",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "算了",
-        "pinyin": "suànle",
-        "meaning": "deixa pra lá, esquece"
+        "word": "换成",
+        "pinyin": "huànchéng",
+        "meaning": "trocar por"
       },
       {
         "id": 2,
+        "word": "米色",
+        "pinyin": "mǐsè",
+        "meaning": "bege"
+      },
+      {
+        "id": 3,
+        "word": "觉得",
+        "pinyin": "juéde",
+        "meaning": "achar / sentir"
+      },
+      {
+        "id": 4,
+        "word": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "meaning": "como está? / o que acha?"
+      }
+    ],
+    "id": "local-1780202640229-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 行吧。不过这已经是第五版了，我怕时间来不及，要不我们还是用第一版算了。",
+    "pinyin": "Xíng ba. Bùguò zhè yǐjīng shì dìwǔbǎn le, wǒpà shíjiān láibùjí, yào bù wǒmen háishì yòng dìyībǎn suànle.",
+    "translation": "B: Tá bom. Mas essa já é a quinta versão, tenho medo de que o tempo não seja suficiente. Melhor a gente usar a primeira versão mesmo.",
+    "tokens": [
+      "行",
+      "吧",
+      "。",
+      "不过",
+      "这",
+      "已经",
+      "是",
+      "第五版",
+      "了",
+      "，",
+      "我怕",
+      "时间",
+      "来不及",
+      "，",
+      "要",
+      "不",
+      "我们",
+      "还是",
+      "用",
+      "第一版",
+      "算了",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "行吧",
+        "pinyin": "xíngba",
+        "meaning": "tá bom / ok"
+      },
+      {
+        "id": 2,
+        "word": "不过",
+        "pinyin": "bùguò",
+        "meaning": "mas / contudo"
+      },
+      {
+        "id": 3,
         "word": "已经",
         "pinyin": "yǐjīng",
         "meaning": "já"
       },
       {
-        "id": 3,
-        "word": "第五版",
-        "pinyin": "dì wǔ bǎn",
-        "meaning": "quinta versão/edição"
-      },
-      {
         "id": 4,
-        "word": "怕",
-        "pinyin": "pà",
-        "meaning": "ter medo, temer"
+        "word": "第五版",
+        "pinyin": "dìwǔbǎn",
+        "meaning": "quinta versão"
       },
       {
         "id": 5,
-        "word": "时间不够",
-        "pinyin": "shíjiān bùgòu",
-        "meaning": "não ter tempo suficiente"
+        "word": "怕",
+        "pinyin": "pà",
+        "meaning": "ter medo / recear"
       },
       {
         "id": 6,
-        "word": "要不",
-        "pinyin": "yàobù",
-        "meaning": "que tal, por que não"
+        "word": "时间",
+        "pinyin": "shíjiān",
+        "meaning": "tempo"
       },
       {
         "id": 7,
-        "word": "还是",
-        "pinyin": "háishì",
-        "meaning": "é melhor, ainda (nesse contexto)"
+        "word": "来不及",
+        "pinyin": "láibùjí",
+        "meaning": "não dar tempo / ficar sem tempo"
       },
       {
         "id": 8,
-        "word": "第一版",
-        "pinyin": "dì yī bǎn",
-        "meaning": "primeira versão/edição"
+        "word": "算了",
+        "pinyin": "suànle",
+        "meaning": "deixa pra lá / melhor não"
       }
     ],
-    "id": "local-1772299710968-11",
+    "id": "local-1780202640229-11",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 啊？好好好。",
-    "pinyin": "A: A? Hǎo hǎo hǎo.",
-    "translation": "A: Ah? Ok, ok, ok.",
+    "chinese": "A: 啊？行，行。",
+    "pinyin": "A? Xíng, xíng.",
+    "translation": "A: Ah? Ok, ok.",
     "tokens": [
       "啊",
       "？",
-      "好",
-      "好",
-      "好",
+      "行",
+      "，",
+      "行",
       "。"
     ],
     "keywords": [
@@ -731,16 +665,16 @@
         "id": 1,
         "word": "啊",
         "pinyin": "a",
-        "meaning": "ah (interjeição de surpresa ou resignação)"
+        "meaning": "ah"
       },
       {
         "id": 2,
-        "word": "好好好",
-        "pinyin": "hǎo hǎo hǎo",
-        "meaning": "ok, ok, ok (repetição para indicar concordância relutante/resignada)"
+        "word": "行",
+        "pinyin": "xíng",
+        "meaning": "ok / certo"
       }
     ],
-    "id": "local-1772299710968-12",
+    "id": "local-1780202640229-12",
     "language": "Chinês"
   }
 ]

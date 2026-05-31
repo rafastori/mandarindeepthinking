@@ -1,0 +1,772 @@
+[
+  {
+    "chinese": "A: 小王，欢迎你加入我们的公司。合同你看过了吗，有什么问题？",
+    "pinyin": "Xiǎowáng, huānyíng nǐ jiārù wǒmen de gōngsī. Hétóng nǐ kànguò le ma, yǒu shénme wèntí?",
+    "translation": "A: Xiao Wang, seja bem-vindo à nossa empresa. Você já leu o contrato? Tem alguma dúvida?",
+    "tokens": [
+      "小王",
+      "，",
+      "欢迎",
+      "你",
+      "加入",
+      "我们",
+      "的",
+      "公司",
+      "。",
+      "合同",
+      "你",
+      "看过",
+      "了",
+      "吗",
+      "，",
+      "有",
+      "什么",
+      "问题",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "欢迎",
+        "pinyin": "huānyíng",
+        "meaning": "bem-vindo"
+      },
+      {
+        "id": 2,
+        "word": "加入",
+        "pinyin": "jiārù",
+        "meaning": "juntar-se"
+      },
+      {
+        "id": 3,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "合同",
+        "pinyin": "hétóng",
+        "meaning": "contrato"
+      },
+      {
+        "id": 5,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780226152177-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我想问一下，我们公司的保险是怎么交的？",
+    "pinyin": "Wǒ xiǎng wèn yīxià, wǒmen gōngsī de bǎoxiǎn shì zěnme jiāo de?",
+    "translation": "B: Quero perguntar, como é que o seguro da nossa empresa é pago?",
+    "tokens": [
+      "我",
+      "想",
+      "问",
+      "一下",
+      "，",
+      "我们",
+      "公司",
+      "的",
+      "保险",
+      "是",
+      "怎么",
+      "交",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "保险",
+        "pinyin": "bǎoxiǎn",
+        "meaning": "seguro"
+      },
+      {
+        "id": 2,
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "meaning": "como"
+      },
+      {
+        "id": 3,
+        "word": "交",
+        "pinyin": "jiāo",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1780226152177-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 就是国家规定的“五险一金”。",
+    "pinyin": "Jiùshì guójiā guīdìng de\" wǔxiǎn yījīn\".",
+    "translation": "A: São os chamados \"cinco seguros e um fundo\" estabelecidos pelo Estado.",
+    "tokens": [
+      "就是",
+      "国家",
+      "规定",
+      "的",
+      "“",
+      "五险",
+      "一金",
+      "”",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "国家",
+        "pinyin": "guójiā",
+        "meaning": "Estado"
+      },
+      {
+        "id": 2,
+        "word": "规定",
+        "pinyin": "guīdìng",
+        "meaning": "estabelecido/regulado"
+      },
+      {
+        "id": 3,
+        "word": "五险一金",
+        "pinyin": "wǔxiǎnyījīn",
+        "meaning": "cinco seguros e um fundo (benefícios sociais)"
+      }
+    ],
+    "id": "local-1780226152177-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不好意思，我刚回国，不太明白。",
+    "pinyin": "Bùhǎoyìsī, wǒgāng huíguó, bùtài míngbái.",
+    "translation": "B: Desculpe, acabei de voltar para a China, não entendo muito bem.",
+    "tokens": [
+      "不好意思",
+      "，",
+      "我刚",
+      "回国",
+      "，",
+      "不太",
+      "明白",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不好意思",
+        "pinyin": "bùhǎoyìsī",
+        "meaning": "desculpe / desculpe-me"
+      },
+      {
+        "id": 2,
+        "word": "刚",
+        "pinyin": "gāng",
+        "meaning": "acabar de / recentemente"
+      },
+      {
+        "id": 3,
+        "word": "回国",
+        "pinyin": "huíguó",
+        "meaning": "voltar ao país / retornar à China"
+      },
+      {
+        "id": 4,
+        "word": "不太",
+        "pinyin": "bùtài",
+        "meaning": "não muito / não tanto"
+      },
+      {
+        "id": 5,
+        "word": "明白",
+        "pinyin": "míngbái",
+        "meaning": "entender / compreender"
+      }
+    ],
+    "id": "local-1780226152177-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: “五险一金”是：养老保险、医疗保险、失业保险、工伤保险、生育保险和住房公积金。",
+    "pinyin": "\" Wǔxiǎn yījīn\" shì: yǎnglǎobǎoxiǎn, yīliáobǎoxiǎn, shīyè bǎoxiǎn, gōngshāngbǎoxiǎn, shēngyù bǎoxiǎn hé zhùfáng gōngjījīn.",
+    "translation": "A: \"Os cinco seguros e um fundo\" referem-se ao seguro de aposentadoria, seguro de saúde, seguro de desemprego, seguro de acidentes de trabalho, seguro de maternidade e ao fundo de habitação.",
+    "tokens": [
+      "“",
+      "五险",
+      "一金",
+      "”",
+      "是",
+      "：",
+      "养老保险",
+      "、",
+      "医疗保险",
+      "、",
+      "失业",
+      "保险",
+      "、",
+      "工伤保险",
+      "、",
+      "生育",
+      "保险",
+      "和",
+      "住房",
+      "公积金",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "五险一金",
+        "pinyin": "wǔxiǎnyījīn",
+        "meaning": "os cinco seguros e um fundo (benefícios sociais)"
+      },
+      {
+        "id": 2,
+        "word": "养老保险",
+        "pinyin": "yǎnglǎobǎoxiǎn",
+        "meaning": "seguro de aposentadoria"
+      },
+      {
+        "id": 3,
+        "word": "医疗保险",
+        "pinyin": "yīliáobǎoxiǎn",
+        "meaning": "seguro de saúde"
+      },
+      {
+        "id": 4,
+        "word": "失业保险",
+        "pinyin": "shīyèbǎoxiǎn",
+        "meaning": "seguro de desemprego"
+      },
+      {
+        "id": 5,
+        "word": "工伤保险",
+        "pinyin": "gōngshāngbǎoxiǎn",
+        "meaning": "seguro de acidentes de trabalho"
+      },
+      {
+        "id": 6,
+        "word": "生育保险",
+        "pinyin": "shēngyùbǎoxiǎn",
+        "meaning": "seguro de maternidade"
+      },
+      {
+        "id": 7,
+        "word": "住房公积金",
+        "pinyin": "zhùfánggōngjījīn",
+        "meaning": "fundo de habitação"
+      }
+    ],
+    "id": "local-1780226152177-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这些全部是公司交的吗？",
+    "pinyin": "Zhèxiē quánbù shì gōngsī jiāo de ma?",
+    "translation": "B: Tudo isso foi pago pela empresa?",
+    "tokens": [
+      "这些",
+      "全部",
+      "是",
+      "公司",
+      "交",
+      "的",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "meaning": "estes / essas coisas"
+      },
+      {
+        "id": 2,
+        "word": "全部",
+        "pinyin": "quánbù",
+        "meaning": "tudo / completamente"
+      },
+      {
+        "id": 3,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 4,
+        "word": "交",
+        "pinyin": "jiāo",
+        "meaning": "pagar / entregar"
+      }
+    ],
+    "id": "local-1780226152177-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 养老保险、医疗保险、失业保险和住房公积金是由公司和个人一起交的。",
+    "pinyin": "Yǎnglǎobǎoxiǎn, yīliáobǎoxiǎn, shīyè bǎoxiǎn hé zhùfáng gōngjījīn shì yóu gōngsī hé gèrén yìqǐ jiāo de.",
+    "translation": "A: O seguro previdenciário, o seguro saúde, o seguro desemprego e o fundo de habitação são pagos conjuntamente pela empresa e pelo indivíduo.",
+    "tokens": [
+      "养老保险",
+      "、",
+      "医疗保险",
+      "、",
+      "失业",
+      "保险",
+      "和",
+      "住房",
+      "公积金",
+      "是",
+      "由",
+      "公司",
+      "和",
+      "个人",
+      "一起",
+      "交",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "养老保险",
+        "pinyin": "yǎnglǎobǎoxiǎn",
+        "meaning": "seguro previdenciário"
+      },
+      {
+        "id": 2,
+        "word": "医疗保险",
+        "pinyin": "yīliáobǎoxiǎn",
+        "meaning": "seguro saúde"
+      },
+      {
+        "id": 3,
+        "word": "失业保险",
+        "pinyin": "shīyèbǎoxiǎn",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 4,
+        "word": "住房公积金",
+        "pinyin": "zhùfánggōngjījīn",
+        "meaning": "fundo de habitação"
+      },
+      {
+        "id": 5,
+        "word": "公司",
+        "pinyin": "gōngsī",
+        "meaning": "empresa"
+      },
+      {
+        "id": 6,
+        "word": "个人",
+        "pinyin": "gèrén",
+        "meaning": "indivíduo/pessoa física"
+      },
+      {
+        "id": 7,
+        "word": "一起",
+        "pinyin": "yìqǐ",
+        "meaning": "juntos/conjuntamente"
+      }
+    ],
+    "id": "local-1780226152177-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那要交多少呢？",
+    "pinyin": "Nàyào jiāo duōshǎo ne?",
+    "translation": "B: Então, quanto preciso pagar?",
+    "tokens": [
+      "那要",
+      "交",
+      "多少",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "precisar / ter que"
+      },
+      {
+        "id": 3,
+        "word": "交",
+        "pinyin": "jiāo",
+        "meaning": "pagar / entregar"
+      },
+      {
+        "id": 4,
+        "word": "多少",
+        "pinyin": "duōshǎo",
+        "meaning": "quanto / quantos"
+      }
+    ],
+    "id": "local-1780226152177-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 每个城市不一样。上海的话，养老保险个人交8\\\\%,单位交21\\\\%;医疗保险个人交2\\\\%，单位交11\\\\%；失业保险个人交0.5\\\\%，单位交1.5\\\\%;公积金个人和单位各7\\\\%。",
+    "pinyin": "Měigè chéngshì bù yīyàng. Shànghǎi dehuà, yǎnglǎobǎoxiǎn gèrén jiāo 8 \\ \\ %, dānwèi jiāo 21 \\ \\ %; yīliáobǎoxiǎn gèrén jiāo 2 \\ \\ %, dānwèi jiāo 11 \\ \\ %; shīyè bǎoxiǎn gèrén jiāo 0.5 \\ \\ %, Dānwèi jiāo 1.5 \\ \\ %; Gōngjījīn gèrén hé dānwèi gè 7 \\ \\ %.",
+    "translation": "A: Cada cidade é diferente. Em Xangai, por exemplo, a previdência social tem uma contribuição individual de 8% e da empresa de 21%; o seguro médico tem 2% de contribuição individual e 11% da empresa; o seguro desemprego tem 0,5% de contribuição individual e 1,5% da empresa; e o fundo de habitação tem 7% tanto de contribuição individual quanto da empresa.",
+    "tokens": [
+      "每个",
+      "城市",
+      "不",
+      "一样",
+      "。",
+      "上海",
+      "的话",
+      "，",
+      "养老保险",
+      "个人",
+      "交",
+      "8",
+      "\\",
+      "\\",
+      "%",
+      ",",
+      "单位",
+      "交",
+      "21",
+      "\\",
+      "\\",
+      "%",
+      ";",
+      "医疗保险",
+      "个人",
+      "交",
+      "2",
+      "\\",
+      "\\",
+      "%",
+      "，",
+      "单位",
+      "交",
+      "11",
+      "\\",
+      "\\",
+      "%",
+      "；",
+      "失业",
+      "保险",
+      "个人",
+      "交",
+      "0.5",
+      "\\",
+      "\\",
+      "%",
+      "，",
+      "单位",
+      "交",
+      "1.5",
+      "\\",
+      "\\",
+      "%",
+      ";",
+      "公积金",
+      "个人",
+      "和",
+      "单位",
+      "各",
+      "7",
+      "\\",
+      "\\",
+      "%",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "每个",
+        "pinyin": "měigè",
+        "meaning": "cada"
+      },
+      {
+        "id": 2,
+        "word": "城市",
+        "pinyin": "chéngshì",
+        "meaning": "cidade"
+      },
+      {
+        "id": 3,
+        "word": "上海",
+        "pinyin": "shànghǎi",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "养老保险",
+        "pinyin": "yǎnglǎobǎoxiǎn",
+        "meaning": "previdência social"
+      },
+      {
+        "id": 5,
+        "word": "医疗保险",
+        "pinyin": "yīliáobǎoxiǎn",
+        "meaning": "seguro médico"
+      },
+      {
+        "id": 6,
+        "word": "失业保险",
+        "pinyin": "shīyèbǎoxiǎn",
+        "meaning": "seguro desemprego"
+      },
+      {
+        "id": 7,
+        "word": "公积金",
+        "pinyin": "gōngjījīn",
+        "meaning": "fundo de habitação"
+      }
+    ],
+    "id": "local-1780226152177-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那我的户口不在上海，也要按照上海的标准交吗？",
+    "pinyin": "Nà wǒ de hùkǒu bù zài shànghǎi, yě yào ànzhào shànghǎi de biāozhǔn jiāo ma?",
+    "translation": "B: Então, mesmo que meu registro de residência (hukou) não esteja em Xangai, também preciso pagar conforme o padrão de Xangai?",
+    "tokens": [
+      "那",
+      "我",
+      "的",
+      "户口",
+      "不",
+      "在",
+      "上海",
+      "，",
+      "也",
+      "要",
+      "按照",
+      "上海",
+      "的",
+      "标准",
+      "交",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "户口",
+        "pinyin": "hùkǒu",
+        "meaning": "registro de residência (hukou)"
+      },
+      {
+        "id": 2,
+        "word": "上海",
+        "pinyin": "shànghǎi",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 3,
+        "word": "标准",
+        "pinyin": "biāozhǔn",
+        "meaning": "padrão"
+      },
+      {
+        "id": 4,
+        "word": "交",
+        "pinyin": "jiāo",
+        "meaning": "pagar"
+      }
+    ],
+    "id": "local-1780226152177-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 是的，因为你是在上海工作。",
+    "pinyin": "Shì de, yīnwèi nǐ shì zài shànghǎi gōngzuò.",
+    "translation": "A: Sim, porque você trabalha em Xangai.",
+    "tokens": [
+      "是",
+      "的",
+      "，",
+      "因为",
+      "你",
+      "是",
+      "在",
+      "上海",
+      "工作",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "是的",
+        "pinyin": "shìde",
+        "meaning": "sim"
+      },
+      {
+        "id": 2,
+        "word": "因为",
+        "pinyin": "yīnwèi",
+        "meaning": "porque"
+      },
+      {
+        "id": 3,
+        "word": "上海",
+        "pinyin": "shànghǎi",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 4,
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "meaning": "trabalhar"
+      }
+    ],
+    "id": "local-1780226152177-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 如果我退休了，可以领上海的养老金吗？",
+    "pinyin": "Rúguǒ wǒ tuìxiū le, kěyǐ lǐng shànghǎi de yǎnglǎojīn ma?",
+    "translation": "B: Se eu me aposentar, posso receber a aposentadoria de Xangai?",
+    "tokens": [
+      "如果",
+      "我",
+      "退休",
+      "了",
+      "，",
+      "可以",
+      "领",
+      "上海",
+      "的",
+      "养老金",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "退休",
+        "pinyin": "tuìxiū",
+        "meaning": "aposentar-se"
+      },
+      {
+        "id": 2,
+        "word": "领",
+        "pinyin": "lǐng",
+        "meaning": "receber"
+      },
+      {
+        "id": 3,
+        "word": "养老金",
+        "pinyin": "yǎnglǎojīn",
+        "meaning": "aposentadoria"
+      }
+    ],
+    "id": "local-1780226152177-11",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 这个比较麻烦。如果你退休了，可是户口不在上海，就只能去户口所在地领养老金。",
+    "pinyin": "Zhège bǐjiào máfán. Rúguǒ nǐ tuìxiū le, kěshì hùkǒu bù zài shànghǎi, jiù zhǐnéng qù hùkǒu suǒzàidì lǐng yǎnglǎojīn.",
+    "translation": "A: Isso é um pouco complicado. Se você se aposentar, mas seu registro de residência (hukou) não estiver em Xangai, só poderá receber a pensão no local de origem do seu hukou.",
+    "tokens": [
+      "这个",
+      "比较",
+      "麻烦",
+      "。",
+      "如果",
+      "你",
+      "退休",
+      "了",
+      "，",
+      "可是",
+      "户口",
+      "不",
+      "在",
+      "上海",
+      "，",
+      "就",
+      "只能",
+      "去",
+      "户口",
+      "所在地",
+      "领",
+      "养老金",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "麻烦",
+        "pinyin": "máfán",
+        "meaning": "complicado / trabalhoso"
+      },
+      {
+        "id": 2,
+        "word": "退休",
+        "pinyin": "tuìxiū",
+        "meaning": "aposentar-se"
+      },
+      {
+        "id": 3,
+        "word": "户口",
+        "pinyin": "hùkǒu",
+        "meaning": "registro de residência (hukou)"
+      },
+      {
+        "id": 4,
+        "word": "上海",
+        "pinyin": "shànghǎi",
+        "meaning": "Xangai"
+      },
+      {
+        "id": 5,
+        "word": "只能",
+        "pinyin": "zhǐnéng",
+        "meaning": "só pode / apenas"
+      },
+      {
+        "id": 6,
+        "word": "养老金",
+        "pinyin": "yǎnglǎojīn",
+        "meaning": "pensão / aposentadoria"
+      }
+    ],
+    "id": "local-1780226152177-12",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 真复杂啊。",
+    "pinyin": "Zhēn fùzá a.",
+    "translation": "B: É muito complicado.",
+    "tokens": [
+      "真",
+      "复杂",
+      "啊",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "真",
+        "pinyin": "zhēn",
+        "meaning": "verdadeiramente / realmente"
+      },
+      {
+        "id": 2,
+        "word": "复杂",
+        "pinyin": "fùzá",
+        "meaning": "complexo / complicado"
+      }
+    ],
+    "id": "local-1780226152177-13",
+    "language": "Chinês"
+  }
+]

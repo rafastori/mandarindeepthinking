@@ -1,461 +1,345 @@
 [
   {
-    "chinese": "服务员，我想给我孩子买个生日蛋糕。大概十个人吃。",
-    "pinyin": "fúwùyuán, wǒ xiǎng gěi wǒ háizi mǎi ge shēngrì dàngāo. dàgài shí ge rén chī.",
-    "translation": "A: Garçom/Atendente, eu gostaria de comprar um bolo de aniversário para o meu filho. É para umas dez pessoas comerem.",
+    "chinese": "A: 服务员，我要给孩子买个生日蛋糕，大概10个人吃。",
+    "pinyin": "Fúwùyuán, wǒyào gěi háizi mǎigè shēngrìdàngāo, dàgài 10 gèrén chī.",
+    "translation": "A: Garçom, quero comprar um bolo de aniversário para a criança, para cerca de 10 pessoas comerem.",
     "tokens": [
       "服务员",
       "，",
-      "我",
-      "想",
+      "我要",
       "给",
-      "我",
       "孩子",
-      "买",
-      "个",
-      "生日",
-      "蛋糕",
-      "。",
+      "买个",
+      "生日蛋糕",
+      "，",
       "大概",
-      "十",
-      "个",
-      "人",
+      "10",
+      "个人",
       "吃",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "服务员",
         "pinyin": "fúwùyuán",
-        "meaning": "atendente, garçom"
+        "meaning": "garçom"
       },
       {
         "id": 2,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
+        "word": "孩子",
+        "pinyin": "háizi",
+        "meaning": "criança"
       },
       {
         "id": 3,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar, desejar"
+        "word": "生日蛋糕",
+        "pinyin": "shēngrìdàngāo",
+        "meaning": "bolo de aniversário"
       },
       {
         "id": 4,
-        "word": "给",
-        "pinyin": "gěi",
-        "meaning": "dar, para (preposição)"
-      },
-      {
-        "id": 6,
-        "word": "孩子",
-        "pinyin": "háizi",
-        "meaning": "criança, filho(a)"
-      },
-      {
-        "id": 7,
-        "word": "买",
-        "pinyin": "mǎi",
-        "meaning": "comprar"
-      },
-      {
-        "id": 9,
-        "word": "生日",
-        "pinyin": "shēngrì",
-        "meaning": "aniversário"
-      },
-      {
-        "id": 10,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
-      },
-      {
-        "id": 12,
         "word": "大概",
         "pinyin": "dàgài",
-        "meaning": "aproximadamente, cerca de"
+        "meaning": "cerca de"
       },
       {
-        "id": 13,
-        "word": "十",
-        "pinyin": "shí",
-        "meaning": "dez"
-      },
-      {
-        "id": 16,
-        "word": "吃",
-        "pinyin": "chī",
-        "meaning": "comer"
+        "id": 5,
+        "word": "个人",
+        "pinyin": "gèrén",
+        "meaning": "pessoas"
       }
     ],
-    "id": "local-1772295450822-0",
+    "id": "local-1780200296890-0",
     "language": "Chinês"
   },
   {
-    "chinese": "如果是十个人，一个十二寸的蛋糕应该差不多。",
-    "pinyin": "rúguǒ shì shí ge rén, yī ge shí'èr cùn de dàngāo yīnggāi chàbuduō.",
-    "translation": "B: Se for para dez pessoas, um bolo de doze polegadas deve ser o suficiente.",
+    "chinese": "B: 10个人的话，12寸的蛋糕应该差不多了。",
+    "pinyin": "10 Gèrén dehuà, 12 cùn de dàngāo yīnggāi chàbuduō le.",
+    "translation": "B: Se forem 10 pessoas, um bolo de 12 polegadas deve ser suficiente.",
     "tokens": [
-      "如果",
-      "是",
-      "十",
-      "个",
-      "人",
+      "10",
+      "个人",
+      "的话",
       "，",
-      "一个",
-      "十二",
+      "12",
       "寸",
       "的",
       "蛋糕",
       "应该",
       "差不多",
+      "了",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
-        "word": "如果",
-        "pinyin": "rúguǒ",
-        "meaning": "se (condicional)"
+        "id": 1,
+        "word": "10个人",
+        "pinyin": "10gèrén",
+        "meaning": "10 pessoas"
       },
       {
         "id": 2,
-        "word": "十",
-        "pinyin": "shí",
-        "meaning": "dez"
+        "word": "的话",
+        "pinyin": "dehuà",
+        "meaning": "se / no caso de"
+      },
+      {
+        "id": 3,
+        "word": "12寸",
+        "pinyin": "12cùn",
+        "meaning": "12 polegadas"
       },
       {
         "id": 4,
-        "word": "人",
-        "pinyin": "rén",
-        "meaning": "pessoa"
-      },
-      {
-        "id": 7,
-        "word": "十二",
-        "pinyin": "shí'èr",
-        "meaning": "doze"
-      },
-      {
-        "id": 8,
-        "word": "寸",
-        "pinyin": "cùn",
-        "meaning": "polegada (medida chinesa ou internacional)"
-      },
-      {
-        "id": 10,
         "word": "蛋糕",
         "pinyin": "dàngāo",
         "meaning": "bolo"
       },
       {
-        "id": 11,
+        "id": 5,
         "word": "应该",
         "pinyin": "yīnggāi",
-        "meaning": "deveria, deve"
+        "meaning": "deve / provavelmente"
       },
       {
-        "id": 12,
+        "id": 6,
         "word": "差不多",
         "pinyin": "chàbuduō",
-        "meaning": "quase, aproximadamente, suficiente"
+        "meaning": "suficiente / mais ou menos"
       }
     ],
-    "id": "local-1772295450822-1",
+    "id": "local-1780200296890-1",
     "language": "Chinês"
   },
   {
-    "chinese": "那你们有什么口味的蛋糕？",
-    "pinyin": "nà nǐmen yǒu shénme kǒuwèi de dàngāo?",
-    "translation": "A: Então, vocês têm bolos de que sabores?",
+    "chinese": "A: 那你们有哪些种类的？",
+    "pinyin": "Nà nǐmen yǒu nǎxiē zhǒnglèi de?",
+    "translation": "A: Então, que tipos vocês têm?",
     "tokens": [
       "那",
       "你们",
       "有",
-      "什么",
-      "口味",
+      "哪些",
+      "种类",
       "的",
-      "蛋糕",
       "？"
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "那",
         "pinyin": "nà",
-        "meaning": "então, aquele"
+        "meaning": "então / aquele"
       },
       {
-        "id": 1,
+        "id": 2,
         "word": "你们",
         "pinyin": "nǐmen",
         "meaning": "vocês"
       },
       {
-        "id": 2,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
         "id": 3,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "que, qual"
+        "word": "有哪些",
+        "pinyin": "yǒunǎxiē",
+        "meaning": "tem quais / quais existem"
       },
       {
         "id": 4,
-        "word": "口味",
-        "pinyin": "kǒuwèi",
-        "meaning": "sabor"
+        "word": "种类",
+        "pinyin": "zhǒnglèi",
+        "meaning": "tipo / categoria"
       },
       {
-        "id": 6,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
+        "id": 5,
+        "word": "的",
+        "pinyin": "de",
+        "meaning": "(partícula possessiva/modificadora)"
       }
     ],
-    "id": "local-1772295450822-2",
+    "id": "local-1780200296890-2",
     "language": "Chinês"
   },
   {
-    "chinese": "我们有水果奶油蛋糕、巧克力蛋糕、慕斯蛋糕和芝士蛋糕。",
-    "pinyin": "wǒmen yǒu shuǐguǒ nǎiyóu dàngāo, qiǎokèlì dàngāo, mùsī dàngāo hé zhīshì dàngāo.",
-    "translation": "B: Nós temos bolo de creme de frutas, bolo de chocolate, bolo mousse e bolo de queijo (cheesecake).",
+    "chinese": "B: 鲜奶水果蛋糕，巧克力蛋糕，慕斯蛋糕，芝士蛋糕我们都有。",
+    "pinyin": "Xiānnǎi shuǐguǒ dàngāo, qiǎokèlì dàngāo, mùsī dàngāo, zhīshì dàngāo wǒmen dōu yǒu.",
+    "translation": "B: Temos bolos de frutas com leite fresco, bolos de chocolate, bolos mousse e bolos de queijo.",
     "tokens": [
-      "我们",
-      "有",
+      "鲜奶",
       "水果",
-      "奶油",
       "蛋糕",
-      "、",
+      "，",
       "巧克力",
       "蛋糕",
-      "、",
+      "，",
       "慕斯",
       "蛋糕",
-      "和",
+      "，",
       "芝士",
       "蛋糕",
+      "我们",
+      "都",
+      "有",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
-      },
-      {
         "id": 1,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
+        "word": "鲜奶",
+        "pinyin": "xiānnǎi",
+        "meaning": "leite fresco"
       },
       {
         "id": 2,
         "word": "水果",
         "pinyin": "shuǐguǒ",
-        "meaning": "fruta"
+        "meaning": "fruta(s)"
       },
       {
         "id": 3,
-        "word": "奶油",
-        "pinyin": "nǎiyóu",
-        "meaning": "creme, manteiga"
-      },
-      {
-        "id": 4,
         "word": "蛋糕",
         "pinyin": "dàngāo",
         "meaning": "bolo"
       },
       {
-        "id": 6,
+        "id": 4,
         "word": "巧克力",
         "pinyin": "qiǎokèlì",
         "meaning": "chocolate"
       },
       {
-        "id": 9,
+        "id": 5,
         "word": "慕斯",
         "pinyin": "mùsī",
         "meaning": "mousse"
       },
       {
-        "id": 11,
-        "word": "和",
-        "pinyin": "hé",
-        "meaning": "e"
-      },
-      {
-        "id": 12,
+        "id": 6,
         "word": "芝士",
         "pinyin": "zhīshì",
-        "meaning": "queijo (cheese)"
+        "meaning": "queijo"
       }
     ],
-    "id": "local-1772295450822-3",
+    "id": "local-1780200296890-3",
     "language": "Chinês"
   },
   {
-    "chinese": "慕斯蛋糕是什么口味的？",
-    "pinyin": "mùsī dàngāo shì shénme kǒuwèi de?",
-    "translation": "A: Que sabor tem o bolo mousse?",
+    "chinese": "A: 慕斯蛋糕口感怎么样？",
+    "pinyin": "Mùsī dàngāo kǒugǎn zěnmeyàng?",
+    "translation": "A: Como é a textura do bolo mousse?",
     "tokens": [
       "慕斯",
       "蛋糕",
-      "是",
-      "什么",
-      "口味",
-      "的",
+      "口感",
+      "怎么样",
       "？"
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "慕斯",
         "pinyin": "mùsī",
         "meaning": "mousse"
-      },
-      {
-        "id": 1,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
-      },
-      {
-        "id": 3,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "que, qual"
-      },
-      {
-        "id": 4,
-        "word": "口味",
-        "pinyin": "kǒuwèi",
-        "meaning": "sabor"
-      }
-    ],
-    "id": "local-1772295450822-4",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "慕斯蛋糕的口味比较细腻滑润，清爽不腻。",
-    "pinyin": "mùsī dàngāo de kǒuwèi bǐjiào nìxì huárùn, qīngshuǎng bù nì.",
-    "translation": "B: O sabor do bolo mousse é mais delicado e suave, refrescante e não enjoativo.",
-    "tokens": [
-      "慕斯",
-      "蛋糕",
-      "的",
-      "口味",
-      "比较",
-      "细腻",
-      "滑润",
-      "，",
-      "清爽",
-      "不",
-      "腻",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 0,
-        "word": "慕斯",
-        "pinyin": "mùsī",
-        "meaning": "mousse"
-      },
-      {
-        "id": 1,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
-      },
-      {
-        "id": 3,
-        "word": "口味",
-        "pinyin": "kǒuwèi",
-        "meaning": "sabor"
-      },
-      {
-        "id": 4,
-        "word": "比较",
-        "pinyin": "bǐjiào",
-        "meaning": "relativamente, comparar"
-      },
-      {
-        "id": 5,
-        "word": "细腻",
-        "pinyin": "nìxì",
-        "meaning": "delicado, fino"
-      },
-      {
-        "id": 6,
-        "word": "滑润",
-        "pinyin": "huárùn",
-        "meaning": "suave, macio"
-      },
-      {
-        "id": 8,
-        "word": "清爽",
-        "pinyin": "qīngshuǎng",
-        "meaning": "refrescante"
-      },
-      {
-        "id": 9,
-        "word": "不",
-        "pinyin": "bù",
-        "meaning": "não"
-      },
-      {
-        "id": 10,
-        "word": "腻",
-        "pinyin": "nì",
-        "meaning": "enjoativo, gorduroso"
-      }
-    ],
-    "id": "local-1772295450822-5",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "那我们要买一个十二寸的慕斯蛋糕。",
-    "pinyin": "nà wǒmen yào mǎi yī ge shí'èr cùn de mùsī dàngāo.",
-    "translation": "A: Então, vamos comprar um bolo mousse de doze polegadas.",
-    "tokens": [
-      "那",
-      "我们",
-      "要",
-      "买",
-      "一个",
-      "十二",
-      "寸",
-      "的",
-      "慕斯",
-      "蛋糕",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 0,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então"
-      },
-      {
-        "id": 1,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
       },
       {
         "id": 2,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "querer, precisar, ir (futuro)"
+        "word": "蛋糕",
+        "pinyin": "dàngāo",
+        "meaning": "bolo"
+      },
+      {
+        "id": 3,
+        "word": "口感",
+        "pinyin": "kǒugǎn",
+        "meaning": "textura / sensação na boca"
+      },
+      {
+        "id": 4,
+        "word": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "meaning": "como é? / que tal?"
+      }
+    ],
+    "id": "local-1780200296890-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 慕斯蛋糕口感比较细腻清爽。",
+    "pinyin": "Mùsī dàngāo kǒugǎn bǐjiào xìnì qīngshuǎng.",
+    "translation": "B: A textura do bolo mousse é mais delicada e refrescante.",
+    "tokens": [
+      "慕斯",
+      "蛋糕",
+      "口感",
+      "比较",
+      "细腻",
+      "清爽",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "慕斯蛋糕",
+        "pinyin": "mùsīdàngāo",
+        "meaning": "bolo mousse"
+      },
+      {
+        "id": 2,
+        "word": "口感",
+        "pinyin": "kǒugǎn",
+        "meaning": "textura / sensação na boca"
+      },
+      {
+        "id": 3,
+        "word": "比较",
+        "pinyin": "bǐjiào",
+        "meaning": "comparativamente / mais"
+      },
+      {
+        "id": 4,
+        "word": "细腻",
+        "pinyin": "xìnì",
+        "meaning": "delicado / fino"
+      },
+      {
+        "id": 5,
+        "word": "清爽",
+        "pinyin": "qīngshuǎng",
+        "meaning": "refrescante / leve"
+      }
+    ],
+    "id": "local-1780200296890-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 那我们就买一个12寸慕斯蛋糕吧。",
+    "pinyin": "Nà wǒmen jiù mǎi yígè 12 cùn mùsī dàngāo ba.",
+    "translation": "A: Então vamos comprar um bolo de mousse de 12 polegadas.",
+    "tokens": [
+      "那",
+      "我们",
+      "就",
+      "买",
+      "一个",
+      "12",
+      "寸",
+      "慕斯",
+      "蛋糕",
+      "吧",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
+      },
+      {
+        "id": 2,
+        "word": "就",
+        "pinyin": "jiù",
+        "meaning": "então / apenas"
       },
       {
         "id": 3,
@@ -464,155 +348,94 @@
         "meaning": "comprar"
       },
       {
-        "id": 5,
-        "word": "十二",
-        "pinyin": "shí'èr",
-        "meaning": "doze"
-      },
-      {
-        "id": 6,
+        "id": 4,
         "word": "寸",
         "pinyin": "cùn",
-        "meaning": "polegada"
+        "meaning": "polegada (unidade de medida)"
       },
       {
-        "id": 8,
-        "word": "慕斯",
-        "pinyin": "mùsī",
-        "meaning": "mousse"
-      },
-      {
-        "id": 9,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
+        "id": 5,
+        "word": "慕斯蛋糕",
+        "pinyin": "mùsīdàngāo",
+        "meaning": "bolo de mousse"
       }
     ],
-    "id": "local-1772295450822-6",
+    "id": "local-1780200296890-6",
     "language": "Chinês"
   },
   {
-    "chinese": "好的。不过这个蛋糕需要提前预订。明天十点以后可以来取。",
-    "pinyin": "hǎo de. bùguò zhè ge dàngāo xūyào tíqián yùdìng. míngtiān shí diǎn yǐhòu kěyǐ lái qǔ.",
-    "translation": "B: Certo. No entanto, este bolo precisa ser encomendado com antecedência. Vocês podem vir buscar depois das dez horas da manhã de amanhã.",
+    "chinese": "B: 好的。不过这款蛋糕要预订。明天10点以后才可以拿。",
+    "pinyin": "Hǎo de. Bùguò zhè kuǎn dàngāo yào yùdìng. Míngtiān 10 diǎn yǐhòu cái kěyǐ ná.",
+    "translation": "B: Ok. Mas este bolo precisa ser encomendado. Só poderá ser retirado depois das 10h de amanhã.",
     "tokens": [
-      "好的",
+      "好",
+      "的",
       "。",
       "不过",
-      "这个",
+      "这",
+      "款",
       "蛋糕",
-      "需要",
-      "提前",
+      "要",
       "预订",
       "。",
       "明天",
-      "十",
+      "10",
       "点",
       "以后",
+      "才",
       "可以",
-      "来",
-      "取",
+      "拿",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "certo, ok"
+        "id": 1,
+        "word": "这款",
+        "pinyin": "zhèkuǎn",
+        "meaning": "este tipo / esta variedade"
       },
       {
         "id": 2,
-        "word": "不过",
-        "pinyin": "bùguò",
-        "meaning": "no entanto, mas"
-      },
-      {
-        "id": 3,
-        "word": "这个",
-        "pinyin": "zhè ge",
-        "meaning": "este, este aqui"
-      },
-      {
-        "id": 4,
         "word": "蛋糕",
         "pinyin": "dàngāo",
         "meaning": "bolo"
       },
       {
-        "id": 5,
-        "word": "需要",
-        "pinyin": "xūyào",
-        "meaning": "precisar, necessitar"
-      },
-      {
-        "id": 6,
-        "word": "提前",
-        "pinyin": "tíqián",
-        "meaning": "com antecedência"
-      },
-      {
-        "id": 7,
+        "id": 3,
         "word": "预订",
         "pinyin": "yùdìng",
-        "meaning": "reservar, encomendar"
+        "meaning": "reservar / encomendar"
       },
       {
-        "id": 9,
+        "id": 4,
         "word": "明天",
         "pinyin": "míngtiān",
         "meaning": "amanhã"
       },
       {
-        "id": 10,
-        "word": "十",
-        "pinyin": "shí",
-        "meaning": "dez"
-      },
-      {
-        "id": 11,
-        "word": "点",
-        "pinyin": "diǎn",
-        "meaning": "hora, ponto"
-      },
-      {
-        "id": 12,
+        "id": 5,
         "word": "以后",
         "pinyin": "yǐhòu",
-        "meaning": "depois, mais tarde"
+        "meaning": "depois de"
       },
       {
-        "id": 13,
-        "word": "可以",
-        "pinyin": "kěyǐ",
-        "meaning": "poder, conseguir"
-      },
-      {
-        "id": 14,
-        "word": "来",
-        "pinyin": "lái",
-        "meaning": "vir"
-      },
-      {
-        "id": 15,
-        "word": "取",
-        "pinyin": "qǔ",
-        "meaning": "pegar, buscar, retirar"
+        "id": 6,
+        "word": "拿",
+        "pinyin": "ná",
+        "meaning": "pegar / retirar"
       }
     ],
-    "id": "local-1772295450822-7",
+    "id": "local-1780200296890-7",
     "language": "Chinês"
   },
   {
-    "chinese": "你们的蛋糕是新鲜做的吗？",
-    "pinyin": "nǐmen de dàngāo shì xīnxiān zuò de ma?",
-    "translation": "A: Os bolos de vocês são feitos na hora (frescos)?",
+    "chinese": "A: 你们是现做的吗？",
+    "pinyin": "Nǐmen shì xiàn zuò de ma?",
+    "translation": "A: Vocês fazem isso na hora?",
     "tokens": [
       "你们",
-      "的",
-      "蛋糕",
       "是",
-      "新鲜",
+      "现",
       "做",
       "的",
       "吗",
@@ -620,256 +443,210 @@
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "你们",
         "pinyin": "nǐmen",
         "meaning": "vocês"
       },
       {
         "id": 2,
-        "word": "蛋糕",
-        "pinyin": "dàngāo",
-        "meaning": "bolo"
+        "word": "现做",
+        "pinyin": "xiànzuò",
+        "meaning": "feito na hora"
       },
       {
-        "id": 4,
-        "word": "新鲜",
-        "pinyin": "xīnxiān",
-        "meaning": "fresco"
-      },
-      {
-        "id": 5,
-        "word": "做",
-        "pinyin": "zuò",
-        "meaning": "fazer"
-      },
-      {
-        "id": 7,
+        "id": 3,
         "word": "吗",
         "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "(partícula de pergunta)"
       }
     ],
-    "id": "local-1772295450822-8",
+    "id": "local-1780200296890-8",
     "language": "Chinês"
   },
   {
-    "chinese": "我们师傅每天早上新鲜制作。放心吧。",
-    "pinyin": "wǒmen shīfu měitiān zǎoshang xīnxiān zhìzuò. fàngxīn ba.",
-    "translation": "B: Nossos confeiteiros fazem eles frescos todas as manhãs. Fiquem tranquilos.",
+    "chinese": "B: 都是师傅早上现做的，您放心。",
+    "pinyin": "Dōu shì shīfù zǎoshàng xiànzuò de, nín fàngxīn.",
+    "translation": "B: São todos feitos na hora pelo mestre pela manhã, pode ficar tranquilo.",
     "tokens": [
-      "我们",
+      "都",
+      "是",
       "师傅",
-      "每天",
       "早上",
-      "新鲜",
-      "制作",
-      "。",
+      "现做",
+      "的",
+      "，",
+      "您",
       "放心",
-      "吧",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
-        "word": "我们",
-        "pinyin": "wǒmen",
-        "meaning": "nós"
-      },
-      {
         "id": 1,
-        "word": "师傅",
-        "pinyin": "shīfu",
-        "meaning": "mestre, artesão, confeiteiro"
+        "word": "都是",
+        "pinyin": "dōushì",
+        "meaning": "todos são"
       },
       {
         "id": 2,
-        "word": "每天",
-        "pinyin": "měitiān",
-        "meaning": "todos os dias"
+        "word": "师傅",
+        "pinyin": "shīfù",
+        "meaning": "mestre / artesão"
       },
       {
         "id": 3,
         "word": "早上",
-        "pinyin": "zǎoshang",
-        "meaning": "manhã"
+        "pinyin": "zǎoshàng",
+        "meaning": "pela manhã"
       },
       {
         "id": 4,
-        "word": "新鲜",
-        "pinyin": "xīnxiān",
-        "meaning": "fresco"
+        "word": "现做",
+        "pinyin": "xiànzuò",
+        "meaning": "feito na hora"
       },
       {
         "id": 5,
-        "word": "制作",
-        "pinyin": "zhìzuò",
-        "meaning": "fazer, produzir"
-      },
-      {
-        "id": 7,
         "word": "放心",
         "pinyin": "fàngxīn",
-        "meaning": "ficar tranquilo, despreocupado"
-      },
-      {
-        "id": 8,
-        "word": "吧",
-        "pinyin": "ba",
-        "meaning": "partícula modal (sugestão, suavização)"
+        "meaning": "ficar tranquilo / não se preocupar"
       }
     ],
-    "id": "local-1772295450822-9",
+    "id": "local-1780200296890-9",
     "language": "Chinês"
   },
   {
-    "chinese": "请问您的孩子几岁了？",
-    "pinyin": "qǐngwèn nín de háizi jǐ suì le?",
-    "translation": "B: Por favor, quantos anos tem seu filho(a)?",
+    "chinese": "B: 请问你孩子今年几岁？",
+    "pinyin": "Qǐngwèn nǐ háizi jīnnián jǐsuì?",
+    "translation": "B: Por favor, quantos anos seu filho tem este ano?",
     "tokens": [
       "请问",
-      "您",
-      "的",
+      "你",
       "孩子",
-      "几",
-      "岁",
-      "了",
+      "今年",
+      "几岁",
       "？"
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "请问",
         "pinyin": "qǐngwèn",
-        "meaning": "com licença, posso perguntar"
+        "meaning": "por favor (pergunta educada)"
       },
       {
-        "id": 1,
-        "word": "您",
-        "pinyin": "nín",
-        "meaning": "você (formal)"
+        "id": 2,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "seu/sua"
       },
       {
         "id": 3,
         "word": "孩子",
         "pinyin": "háizi",
-        "meaning": "criança, filho(a)"
+        "meaning": "filho/filha"
       },
       {
         "id": 4,
-        "word": "几",
-        "pinyin": "jǐ",
-        "meaning": "quantos (para números pequenos)"
+        "word": "今年",
+        "pinyin": "jīnnián",
+        "meaning": "este ano"
       },
       {
         "id": 5,
-        "word": "岁",
-        "pinyin": "suì",
-        "meaning": "anos (de idade)"
-      },
-      {
-        "id": 6,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de mudança de estado ou conclusão"
+        "word": "几岁",
+        "pinyin": "jǐsuì",
+        "meaning": "quantos anos"
       }
     ],
-    "id": "local-1772295450822-10",
+    "id": "local-1780200296890-10",
     "language": "Chinês"
   },
   {
-    "chinese": "三岁。",
-    "pinyin": "sān suì.",
+    "chinese": "A: 三岁。",
+    "pinyin": "Sānsuì.",
     "translation": "A: Três anos.",
     "tokens": [
-      "三",
-      "岁",
+      "三岁",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
+        "id": 1,
         "word": "三",
         "pinyin": "sān",
         "meaning": "três"
       },
       {
-        "id": 1,
+        "id": 2,
         "word": "岁",
         "pinyin": "suì",
         "meaning": "anos (de idade)"
       }
     ],
-    "id": "local-1772295450822-11",
+    "id": "local-1780200296890-11",
     "language": "Chinês"
   },
   {
-    "chinese": "好的。我帮您拿三根蜡烛。",
-    "pinyin": "hǎo de. wǒ bāng nín ná sān gēn làzhú.",
-    "translation": "B: Certo. Eu pegarei três velas para você.",
+    "chinese": "B: 好，我帮你拿三根蜡烛。",
+    "pinyin": "Hǎo, wǒ bāng nǐ ná sāngēn làzhú.",
+    "translation": "B: Ok, eu ajudo você a pegar três velas.",
     "tokens": [
-      "好的",
-      "。",
+      "好",
+      "，",
       "我",
       "帮",
-      "您",
+      "你",
       "拿",
-      "三",
-      "根",
+      "三根",
       "蜡烛",
       "。"
     ],
     "keywords": [
       {
-        "id": 0,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "certo, ok"
+        "id": 1,
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "ok / bem"
       },
       {
         "id": 2,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 3,
         "word": "帮",
         "pinyin": "bāng",
         "meaning": "ajudar"
       },
       {
+        "id": 3,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
         "id": 4,
-        "word": "您",
-        "pinyin": "nín",
-        "meaning": "você (formal)"
+        "word": "拿",
+        "pinyin": "ná",
+        "meaning": "pegar / levar"
       },
       {
         "id": 5,
-        "word": "拿",
-        "pinyin": "ná",
-        "meaning": "pegar, levar"
-      },
-      {
-        "id": 6,
         "word": "三",
         "pinyin": "sān",
         "meaning": "três"
       },
       {
-        "id": 7,
+        "id": 6,
         "word": "根",
         "pinyin": "gēn",
-        "meaning": "classificador para objetos finos e longos (como velas)"
+        "meaning": "medida para objetos longos e finos"
       },
       {
-        "id": 8,
+        "id": 7,
         "word": "蜡烛",
         "pinyin": "làzhú",
         "meaning": "vela"
       }
     ],
-    "id": "local-1772295450822-12",
+    "id": "local-1780200296890-12",
     "language": "Chinês"
   }
 ]

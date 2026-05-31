@@ -1,0 +1,761 @@
+[
+  {
+    "chinese": "A: 小王，怎么了？有什么心事儿吗？",
+    "pinyin": "Xiǎowáng, zěnme le? Yǒu shénme xīn shìér ma?",
+    "translation": "A: Xiao Wang, o que houve? Há algo que está te preocupando?",
+    "tokens": [
+      "小王",
+      "，",
+      "怎么",
+      "了",
+      "？",
+      "有",
+      "什么",
+      "心",
+      "事儿",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "小王",
+        "pinyin": "xiǎowáng",
+        "meaning": "Xiao Wang (nome próprio)"
+      },
+      {
+        "id": 2,
+        "word": "怎么了",
+        "pinyin": "zěnmele",
+        "meaning": "o que houve / o que aconteceu"
+      },
+      {
+        "id": 3,
+        "word": "有什么",
+        "pinyin": "yǒushénme",
+        "meaning": "há algo / tem algo"
+      },
+      {
+        "id": 4,
+        "word": "心事",
+        "pinyin": "xīnshì",
+        "meaning": "preocupação / segredo / coisa na mente"
+      }
+    ],
+    "id": "local-1780226291931-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 最近在考虑要不要去读个MBA，你有什么建议吗？",
+    "pinyin": "Zuìjìn zài kǎolǜ yào búyào qù dúgè MBA, nǐ yǒu shénme jiànyì ma?",
+    "translation": "B: Estou pensando se devo ou não fazer um MBA, você tem alguma sugestão?",
+    "tokens": [
+      "最近",
+      "在",
+      "考虑",
+      "要",
+      "不要",
+      "去",
+      "读个",
+      "MBA",
+      "，",
+      "你",
+      "有",
+      "什么",
+      "建议",
+      "吗",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "最近",
+        "pinyin": "zuìjìn",
+        "meaning": "recentemente"
+      },
+      {
+        "id": 2,
+        "word": "考虑",
+        "pinyin": "kǎolǜ",
+        "meaning": "considerar"
+      },
+      {
+        "id": 3,
+        "word": "要不要",
+        "pinyin": "yàobùyào",
+        "meaning": "se deve ou não"
+      },
+      {
+        "id": 4,
+        "word": "读",
+        "pinyin": "dú",
+        "meaning": "estudar"
+      },
+      {
+        "id": 5,
+        "word": "MBA",
+        "pinyin": "MBA",
+        "meaning": "MBA"
+      },
+      {
+        "id": 6,
+        "word": "建议",
+        "pinyin": "jiànyì",
+        "meaning": "sugestão"
+      }
+    ],
+    "id": "local-1780226291931-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 工商管理硕士啊，我有个朋友刚刚读完，现在正在写论文呢。",
+    "pinyin": "Gōngshāngguǎnlǐ shuòshì a, wǒ yǒu gè péngyǒu gānggāng dúwán, xiànzài zhèngzài xiě lùnwén ne.",
+    "translation": "A: MBA, ah? Tenho um amigo que acabou de se formar e agora está escrevendo a tese.",
+    "tokens": [
+      "工商管理",
+      "硕士",
+      "啊",
+      "，",
+      "我",
+      "有",
+      "个",
+      "朋友",
+      "刚刚",
+      "读完",
+      "，",
+      "现在",
+      "正在",
+      "写",
+      "论文",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "工商管理硕士",
+        "pinyin": "gōngshāngguǎnlǐshuòshì",
+        "meaning": "MBA (Mestre em Administração de Empresas)"
+      },
+      {
+        "id": 2,
+        "word": "朋友",
+        "pinyin": "péngyǒu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 3,
+        "word": "刚刚",
+        "pinyin": "gānggāng",
+        "meaning": "acabar de"
+      },
+      {
+        "id": 4,
+        "word": "读完",
+        "pinyin": "dúwán",
+        "meaning": "terminar de ler/estudar"
+      },
+      {
+        "id": 5,
+        "word": "正在",
+        "pinyin": "zhèngzài",
+        "meaning": "no meio de/agora"
+      },
+      {
+        "id": 6,
+        "word": "写论文",
+        "pinyin": "xiělùnwén",
+        "meaning": "escrever tese/dissertação"
+      }
+    ],
+    "id": "local-1780226291931-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 哦？他读的是在职的还是全日制的？",
+    "pinyin": "Ó? Tādú de shì zàizhí de háishì quánrìzhì de?",
+    "translation": "B: Ah? Ele está cursando na modalidade de meio período ou em tempo integral?",
+    "tokens": [
+      "哦",
+      "？",
+      "他读",
+      "的",
+      "是",
+      "在职",
+      "的",
+      "还是",
+      "全日制",
+      "的",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "读",
+        "pinyin": "dú",
+        "meaning": "estudar / cursar"
+      },
+      {
+        "id": 2,
+        "word": "在职",
+        "pinyin": "zàizhí",
+        "meaning": "enquanto trabalha / meio período"
+      },
+      {
+        "id": 3,
+        "word": "全日制",
+        "pinyin": "quánrìzhì",
+        "meaning": "tempo integral / em tempo integral"
+      }
+    ],
+    "id": "local-1780226291931-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 在职的。不过听说全日制的含金量更高一些，而且费用比在职的低。",
+    "pinyin": "Zàizhí de. Bùguò tīngshuō quánrìzhì de hánjīnliàng gènggāo yīxiē, érqiě fèiyòng bǐ zàizhí de dī.",
+    "translation": "A: Estou empregado. Mas ouvi dizer que o diploma de tempo integral tem mais valor e o custo é mais baixo.",
+    "tokens": [
+      "在职",
+      "的",
+      "。",
+      "不过",
+      "听说",
+      "全日制",
+      "的",
+      "含金量",
+      "更高",
+      "一些",
+      "，",
+      "而且",
+      "费用",
+      "比",
+      "在职",
+      "的",
+      "低",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "在职",
+        "pinyin": "zàizhí",
+        "meaning": "empregado / trabalhando"
+      },
+      {
+        "id": 2,
+        "word": "全日制",
+        "pinyin": "quánrìzhì",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "含金量",
+        "pinyin": "hánjīnliàng",
+        "meaning": "valor / prestígio"
+      },
+      {
+        "id": 4,
+        "word": "费用",
+        "pinyin": "fèiyòng",
+        "meaning": "custo / despesas"
+      }
+    ],
+    "id": "local-1780226291931-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 不会吧？全日制上课时间多，费用反而便宜？",
+    "pinyin": "Búhuì ba? Quánrìzhì shàngkè shíjiān duō, fèiyòng fǎnér piányi?",
+    "translation": "B: Não pode ser? O horário de aula em tempo integral é maior, mas o custo é mais barato?",
+    "tokens": [
+      "不会",
+      "吧",
+      "？",
+      "全日制",
+      "上课",
+      "时间",
+      "多",
+      "，",
+      "费用",
+      "反而",
+      "便宜",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "不会吧",
+        "pinyin": "búhuìba",
+        "meaning": "não pode ser / impossível"
+      },
+      {
+        "id": 2,
+        "word": "全日制",
+        "pinyin": "quánrìzhì",
+        "meaning": "tempo integral"
+      },
+      {
+        "id": 3,
+        "word": "上课时间",
+        "pinyin": "shàngkèshíjiān",
+        "meaning": "horário de aula"
+      },
+      {
+        "id": 4,
+        "word": "费用",
+        "pinyin": "fèiyòng",
+        "meaning": "custo / despesas"
+      },
+      {
+        "id": 5,
+        "word": "反而",
+        "pinyin": "fǎnér",
+        "meaning": "ao contrário / em vez disso"
+      },
+      {
+        "id": 6,
+        "word": "便宜",
+        "pinyin": "piányi",
+        "meaning": "barato"
+      }
+    ],
+    "id": "local-1780226291931-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 因为全日制老总读的少，人脉上差一点。你想啊，很多人主要是想通过读MBA结识一些企业老总、高管什么的。一方面可以扩大人脉，另一方面可以跟老总学习经验。所以大多数老总肯定是在职读的，这样不会影响工作。",
+    "pinyin": "Yīnwèi quánrìzhì lǎozǒng dú de shǎo, rénmài shàng chàyìdiǎn. Nǐ xiǎng a, hěnduō rén zhǔyào shì xiǎng tōngguò dú MBA jiéshí yīxiē qǐyè lǎozǒng, gāoguǎn shénme de. Yìfāngmiàn kěyǐ kuòdà rén mài, lìngyìfāngmiàn kěyǐ gēn lǎozǒng xuéxí jīngyàn. Suǒyǐ dàduōshù lǎozǒng kěndìng shì zàizhí dú de, zhèyàng búhuì yǐngxiǎng gōngzuò.",
+    "translation": "A: Como os CEOs que fazem o curso em período integral são poucos, eles têm uma rede de contatos um pouco mais limitada. Pense bem: muitas pessoas principalmente querem fazer o MBA para conhecer alguns CEOs, executivos e outras pessoas do setor. Por um lado, isso amplia a rede de contatos; por outro, permite aprender com a experiência dos CEOs. Por isso, a maioria dos CEOs faz o curso enquanto trabalha, para não afetar o trabalho.",
+    "tokens": [
+      "因为",
+      "全日制",
+      "老总",
+      "读",
+      "的",
+      "少",
+      "，",
+      "人脉",
+      "上",
+      "差一点",
+      "。",
+      "你",
+      "想",
+      "啊",
+      "，",
+      "很多",
+      "人",
+      "主要",
+      "是",
+      "想",
+      "通过",
+      "读",
+      "MBA",
+      "结识",
+      "一些",
+      "企业",
+      "老总",
+      "、",
+      "高管",
+      "什么",
+      "的",
+      "。",
+      "一方面",
+      "可以",
+      "扩大",
+      "人",
+      "脉",
+      "，",
+      "另一方面",
+      "可以",
+      "跟",
+      "老总",
+      "学习",
+      "经验",
+      "。",
+      "所以",
+      "大多数",
+      "老总",
+      "肯定",
+      "是",
+      "在职",
+      "读",
+      "的",
+      "，",
+      "这样",
+      "不会",
+      "影响",
+      "工作",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "全日制",
+        "pinyin": "quánrìzhì",
+        "meaning": "período integral"
+      },
+      {
+        "id": 2,
+        "word": "老总",
+        "pinyin": "lǎozǒng",
+        "meaning": "CEO, chefe"
+      },
+      {
+        "id": 3,
+        "word": "人脉",
+        "pinyin": "rénmài",
+        "meaning": "rede de contatos"
+      },
+      {
+        "id": 4,
+        "word": "MBA",
+        "pinyin": "MBA",
+        "meaning": "MBA"
+      },
+      {
+        "id": 5,
+        "word": "高管",
+        "pinyin": "gāoguǎn",
+        "meaning": "executivo"
+      },
+      {
+        "id": 6,
+        "word": "扩大",
+        "pinyin": "kuòdà",
+        "meaning": "ampliar"
+      },
+      {
+        "id": 7,
+        "word": "在职",
+        "pinyin": "zàizhí",
+        "meaning": "enquanto trabalha"
+      }
+    ],
+    "id": "local-1780226291931-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 有道理。那我就决定读在职的了！那他读的是国内的还是国外的学校呢？",
+    "pinyin": "Yǒu dàolǐ. Nà wǒ jiù juédìng dú zàizhí de le! Nà tā dú de shì guónèi de háishì guówài de xuéxiào ne?",
+    "translation": "B: Faz sentido. Então decidi estudar no período noturno! Ele estuda em uma universidade nacional ou estrangeira?",
+    "tokens": [
+      "有",
+      "道理",
+      "。",
+      "那",
+      "我",
+      "就",
+      "决定",
+      "读",
+      "在职",
+      "的",
+      "了",
+      "！",
+      "那",
+      "他",
+      "读",
+      "的",
+      "是",
+      "国内",
+      "的",
+      "还是",
+      "国外",
+      "的",
+      "学校",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "有道理",
+        "pinyin": "yǒudàolǐ",
+        "meaning": "faz sentido"
+      },
+      {
+        "id": 2,
+        "word": "在职",
+        "pinyin": "zàizhí",
+        "meaning": "no emprego / durante o trabalho"
+      },
+      {
+        "id": 3,
+        "word": "国内",
+        "pinyin": "guónèi",
+        "meaning": "nacional"
+      },
+      {
+        "id": 4,
+        "word": "国外",
+        "pinyin": "guówài",
+        "meaning": "estrangeiro"
+      },
+      {
+        "id": 5,
+        "word": "学校",
+        "pinyin": "xuéxiào",
+        "meaning": "escola / universidade"
+      }
+    ],
+    "id": "local-1780226291931-7",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 听说不管国内还是国外的，学习内容都差不多。而且书本知识用得不是很多，主要还是靠积累人脉和经验交流。",
+    "pinyin": "Tīngshuō bùguǎn guónèi háishì guówài de, xuéxí nèiróng dōu chàbuduō. Érqiě shūběnzhīshí yòng dé búshì hěnduō, zhǔyào háishì kào jīlěi rénmài hé jīngyànjiāoliú.",
+    "translation": "A: Dizem que, tanto no país quanto no exterior, o conteúdo de estudo é bastante semelhante. Além disso, o conhecimento teórico dos livros não é muito utilizado; o principal é acumular contatos e trocar experiências.",
+    "tokens": [
+      "听说",
+      "不管",
+      "国内",
+      "还是",
+      "国外",
+      "的",
+      "，",
+      "学习",
+      "内容",
+      "都",
+      "差不多",
+      "。",
+      "而且",
+      "书本知识",
+      "用",
+      "得",
+      "不是",
+      "很多",
+      "，",
+      "主要",
+      "还是",
+      "靠",
+      "积累",
+      "人脉",
+      "和",
+      "经验交流",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "dizem que / ouvi dizer"
+      },
+      {
+        "id": 2,
+        "word": "不管",
+        "pinyin": "bùguǎn",
+        "meaning": "independentemente de / não importa"
+      },
+      {
+        "id": 3,
+        "word": "国内",
+        "pinyin": "guónèi",
+        "meaning": "no país / doméstico"
+      },
+      {
+        "id": 4,
+        "word": "国外",
+        "pinyin": "guówài",
+        "meaning": "no exterior / estrangeiro"
+      },
+      {
+        "id": 5,
+        "word": "学习内容",
+        "pinyin": "xuéxínèiróng",
+        "meaning": "conteúdo de estudo"
+      },
+      {
+        "id": 6,
+        "word": "书本知识",
+        "pinyin": "shūběnzhīshí",
+        "meaning": "conhecimento de livros / teórico"
+      },
+      {
+        "id": 7,
+        "word": "积累",
+        "pinyin": "jīlěi",
+        "meaning": "acumular"
+      },
+      {
+        "id": 8,
+        "word": "人脉",
+        "pinyin": "rénmài",
+        "meaning": "redes de contato / relacionamentos"
+      },
+      {
+        "id": 9,
+        "word": "经验交流",
+        "pinyin": "jīngyànjiāoliú",
+        "meaning": "troca de experiências"
+      }
+    ],
+    "id": "local-1780226291931-8",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 你朋友MBA读下来花了多少钱啊?",
+    "pinyin": "Nǐ péngyǒu MBA dú xiàlái huā le duōshǎo qián a?",
+    "translation": "B: Quanto dinheiro seu amigo gastou para concluir o MBA?",
+    "tokens": [
+      "你",
+      "朋友",
+      "MBA",
+      "读",
+      "下来",
+      "花",
+      "了",
+      "多少",
+      "钱",
+      "啊",
+      "?"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "朋友",
+        "pinyin": "péngyǒu",
+        "meaning": "amigo"
+      },
+      {
+        "id": 2,
+        "word": "MBA",
+        "pinyin": "MBA",
+        "meaning": "MBA (Mestrado em Administração de Negócios)"
+      },
+      {
+        "id": 3,
+        "word": "读",
+        "pinyin": "dú",
+        "meaning": "estudar"
+      },
+      {
+        "id": 4,
+        "word": "花",
+        "pinyin": "huā",
+        "meaning": "gastar"
+      },
+      {
+        "id": 5,
+        "word": "钱",
+        "pinyin": "qián",
+        "meaning": "dinheiro"
+      }
+    ],
+    "id": "local-1780226291931-9",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 好像七万左右吧。贵的还有十几万到二十万的呢。",
+    "pinyin": "Hǎoxiàng qī wànzuǒyòu ba. Guì de háiyǒu shíjǐwàn dào èrshíwàn de ne.",
+    "translation": "A: Acho que deve ser em torno de 70 mil. Os mais caros chegam a mais de 100 ou 200 mil.",
+    "tokens": [
+      "好像",
+      "七",
+      "万左右",
+      "吧",
+      "。",
+      "贵",
+      "的",
+      "还有",
+      "十几万",
+      "到",
+      "二十万",
+      "的",
+      "呢",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "好像",
+        "pinyin": "hǎoxiàng",
+        "meaning": "parece que / acho que"
+      },
+      {
+        "id": 2,
+        "word": "七万",
+        "pinyin": "qīwàn",
+        "meaning": "70 mil"
+      },
+      {
+        "id": 3,
+        "word": "左右",
+        "pinyin": "zuǒyòu",
+        "meaning": "em torno de / cerca de"
+      },
+      {
+        "id": 4,
+        "word": "贵的",
+        "pinyin": "guìde",
+        "meaning": "caro(s)"
+      },
+      {
+        "id": 5,
+        "word": "十几万",
+        "pinyin": "shíjǐwàn",
+        "meaning": "mais de 100 mil"
+      },
+      {
+        "id": 6,
+        "word": "二十万",
+        "pinyin": "èrshíwàn",
+        "meaning": "200 mil"
+      }
+    ],
+    "id": "local-1780226291931-10",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 看来我最近不能再大手大脚花钱了，下个月开始我要勒紧裤腰带过日子，赶紧开始攒钱了。哈哈！",
+    "pinyin": "Kànlái wǒ zuìjìn bùnéng zài dàshǒudàjiǎo huāqián le, xiàgèyuè kāishǐ wǒyào lēijǐn kùyāodài guòrìzi, gǎnjǐn kāishǐ zǎnqián le. Hāhā!",
+    "translation": "B: Parece que ultimamente não posso mais gastar dinheiro à toa. A partir do próximo mês, vou ter que apertar o cinto e viver com mais economia, então preciso começar a economizar logo. Haha!",
+    "tokens": [
+      "看来",
+      "我",
+      "最近",
+      "不能",
+      "再",
+      "大手大脚",
+      "花钱",
+      "了",
+      "，",
+      "下个月",
+      "开始",
+      "我要",
+      "勒紧",
+      "裤腰带",
+      "过日子",
+      "，",
+      "赶紧",
+      "开始",
+      "攒钱",
+      "了",
+      "。",
+      "哈哈",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "大手大脚",
+        "pinyin": "dàshǒudàjiǎo",
+        "meaning": "gastar sem controle"
+      },
+      {
+        "id": 2,
+        "word": "勒紧裤腰带",
+        "pinyin": "lēijǐnkùyāodài",
+        "meaning": "apertar o cinto (economizar)"
+      },
+      {
+        "id": 3,
+        "word": "攒钱",
+        "pinyin": "zǎnqián",
+        "meaning": "poupar dinheiro"
+      }
+    ],
+    "id": "local-1780226291931-11",
+    "language": "Chinês"
+  }
+]

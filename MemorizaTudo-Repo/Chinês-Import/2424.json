@@ -1,0 +1,549 @@
+[
+  {
+    "chinese": "A: 你是白羊座的。网上说白羊座是火象星座，象征一切事物的开始，属于领导型人才。白羊座的女人几乎都可以成为出色的职业妇女，也同时能做称职的家庭主妇，和你挺像的哦！",
+    "pinyin": "Nǐ shì báiyángzuò de. Wǎngshàng shuō báiyángzuò shì huǒxiàng xīngzuò, xiàngzhēng yīqiè shìwù de kāishǐ, shǔyú lǐngdǎo xíng réncái. Báiyángzuò de nǚrén jīhū dōu kěyǐ chéngwéi chūsè de zhíyèfùnǚ, yě tóngshí néng zuò chènzhí de jiātíngzhǔfù, hé nǐ tǐng xiàng de ó!",
+    "translation": "A: Você é do signo de Áries. Na internet, dizem que Áries é um signo de fogo, simbolizando o início de todas as coisas, e pertence ao tipo de personalidade de liderança. As mulheres de Áries quase sempre podem se tornar mulheres de carreira de sucesso, e ao mesmo tempo podem ser donas de casa competentes. Você é bem parecida com isso!",
+    "tokens": [
+      "你",
+      "是",
+      "白羊座",
+      "的",
+      "。",
+      "网上",
+      "说",
+      "白羊座",
+      "是",
+      "火象",
+      "星座",
+      "，",
+      "象征",
+      "一切",
+      "事物",
+      "的",
+      "开始",
+      "，",
+      "属于",
+      "领导",
+      "型",
+      "人才",
+      "。",
+      "白羊座",
+      "的",
+      "女人",
+      "几乎",
+      "都",
+      "可以",
+      "成为",
+      "出色",
+      "的",
+      "职业妇女",
+      "，",
+      "也",
+      "同时",
+      "能",
+      "做",
+      "称职",
+      "的",
+      "家庭主妇",
+      "，",
+      "和",
+      "你",
+      "挺",
+      "像",
+      "的",
+      "哦",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "白羊座",
+        "pinyin": "báiyángzuò",
+        "meaning": "signo de Áries"
+      },
+      {
+        "id": 2,
+        "word": "火象星座",
+        "pinyin": "huǒxiàngxīngzuò",
+        "meaning": "signo de fogo"
+      },
+      {
+        "id": 3,
+        "word": "开始",
+        "pinyin": "kāishǐ",
+        "meaning": "início"
+      },
+      {
+        "id": 4,
+        "word": "领导型",
+        "pinyin": "lǐngdǎoxíng",
+        "meaning": "tipo de liderança"
+      },
+      {
+        "id": 5,
+        "word": "职业妇女",
+        "pinyin": "zhíyèfùnǚ",
+        "meaning": "mulher de carreira"
+      },
+      {
+        "id": 6,
+        "word": "家庭主妇",
+        "pinyin": "jiātíngzhǔfù",
+        "meaning": "dona de casa"
+      },
+      {
+        "id": 7,
+        "word": "称职",
+        "pinyin": "chènzhí",
+        "meaning": "competente"
+      }
+    ],
+    "id": "local-1780225226634-0",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 还行，那性格呢？",
+    "pinyin": "Hái xíng, nà xìnggé ne?",
+    "translation": "B: Mais ou menos, e a personalidade?",
+    "tokens": [
+      "还",
+      "行",
+      "，",
+      "那",
+      "性格",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "还行",
+        "pinyin": "háixíng",
+        "meaning": "mais ou menos / razoável"
+      },
+      {
+        "id": 2,
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / quanto a"
+      },
+      {
+        "id": 3,
+        "word": "性格",
+        "pinyin": "xìnggé",
+        "meaning": "personalidade"
+      },
+      {
+        "id": 4,
+        "word": "呢",
+        "pinyin": "ne",
+        "meaning": "partícula interrogativa"
+      }
+    ],
+    "id": "local-1780225226634-1",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 白羊座就像年幼的孩子一样，真情流露、坦白、开放，但也十分自我中心和孩子气。她们很善良，不会利用朋友，但是最大的缺点是爱面子，永远不会承认错误。",
+    "pinyin": "Báiyángzuò jiù xiàng niányòu de háizi yīyàng, zhēnqíngliúlù, tǎnbái, kāifàng, dàn yě shífēn zìwǒzhōngxīn hé háiziqì. Tāmen hěn shànliáng, búhuì lìyòng péngyǒu, dànshì zuìdà de quēdiǎn shì àimiànzi, yǒngyuǎn búhuì chéngrèncuòwù.",
+    "translation": "A: Aries é como uma criança pequena: expressa seus sentimentos verdadeiramente, é franca, aberta, mas também muito egocêntrica e infantil. Elas são muito bondosas e não exploram os amigos, mas a maior desvantagem é que se importam demais com a aparência, nunca admitindo seus erros.",
+    "tokens": [
+      "白羊座",
+      "就",
+      "像",
+      "年幼",
+      "的",
+      "孩子",
+      "一样",
+      "，",
+      "真情流露",
+      "、",
+      "坦白",
+      "、",
+      "开放",
+      "，",
+      "但",
+      "也",
+      "十分",
+      "自我中心",
+      "和",
+      "孩子气",
+      "。",
+      "她们",
+      "很",
+      "善良",
+      "，",
+      "不会",
+      "利用",
+      "朋友",
+      "，",
+      "但是",
+      "最大",
+      "的",
+      "缺点",
+      "是",
+      "爱面子",
+      "，",
+      "永远",
+      "不会",
+      "承认错误",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "白羊座",
+        "pinyin": "báiyángzuò",
+        "meaning": "Áries (signo do zodíaco)"
+      },
+      {
+        "id": 2,
+        "word": "真情流露",
+        "pinyin": "zhēnqíngliúlù",
+        "meaning": "expressar sentimentos verdadeiros"
+      },
+      {
+        "id": 3,
+        "word": "坦白",
+        "pinyin": "tǎnbái",
+        "meaning": "franco/a"
+      },
+      {
+        "id": 4,
+        "word": "自我中心",
+        "pinyin": "zìwǒzhōngxīn",
+        "meaning": "egocêntrico/a"
+      },
+      {
+        "id": 5,
+        "word": "孩子气",
+        "pinyin": "háiziqì",
+        "meaning": "infantil"
+      },
+      {
+        "id": 6,
+        "word": "善良",
+        "pinyin": "shànliáng",
+        "meaning": "bondoso/a"
+      },
+      {
+        "id": 7,
+        "word": "爱面子",
+        "pinyin": "àimiànzi",
+        "meaning": "preocupado com a aparência/face"
+      },
+      {
+        "id": 8,
+        "word": "承认错误",
+        "pinyin": "chéngrèncuòwù",
+        "meaning": "admitir erros"
+      }
+    ],
+    "id": "local-1780225226634-2",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 呵呵，这个你懂的……",
+    "pinyin": "Hēhē, zhège nǐ dǒng de..",
+    "translation": "B: Haha, você sabe como é...",
+    "tokens": [
+      "呵呵",
+      "，",
+      "这个",
+      "你",
+      "懂",
+      "的",
+      "…",
+      "…"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "呵呵",
+        "pinyin": "hēhē",
+        "meaning": "haha (risada leve)"
+      },
+      {
+        "id": 2,
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "isso / isso aqui"
+      },
+      {
+        "id": 3,
+        "word": "你",
+        "pinyin": "nǐ",
+        "meaning": "você"
+      },
+      {
+        "id": 4,
+        "word": "懂",
+        "pinyin": "dǒng",
+        "meaning": "entender / compreender"
+      }
+    ],
+    "id": "local-1780225226634-3",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 白羊座的人脾气急，易冲动，不喜欢和慢性子的人交往。如果他们和你吵架，说明他们还没有真的生气。要是真的生气了，根本不会理你！",
+    "pinyin": "Báiyángzuò de rén píqì jí, yì chōngdòng, bù xǐhuān hé mànxìngzi de rén jiāowǎng. Rúguǒ tāmen hé nǐ chǎojià, shuōmíng tāmen hái méiyǒu zhēnde shēngqì. Yàoshì zhēnde shēngqì le, gēnběn búhuì lǐ nǐ!",
+    "translation": "A: As pessoas do signo de Áries têm temperamento rápido e são impulsivas, não gostam de se relacionar com pessoas lentas. Se elas brigam com você, significa que ainda não estão realmente bravas. Se estivessem de verdade, nem dariam atenção a você!",
+    "tokens": [
+      "白羊座",
+      "的",
+      "人",
+      "脾气",
+      "急",
+      "，",
+      "易",
+      "冲动",
+      "，",
+      "不",
+      "喜欢",
+      "和",
+      "慢性子",
+      "的",
+      "人",
+      "交往",
+      "。",
+      "如果",
+      "他们",
+      "和",
+      "你",
+      "吵架",
+      "，",
+      "说明",
+      "他们",
+      "还",
+      "没有",
+      "真的",
+      "生气",
+      "。",
+      "要是",
+      "真的",
+      "生气",
+      "了",
+      "，",
+      "根本",
+      "不会",
+      "理",
+      "你",
+      "！"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "白羊座",
+        "pinyin": "báiyángzuò",
+        "meaning": "signo Áries"
+      },
+      {
+        "id": 2,
+        "word": "脾气急",
+        "pinyin": "píqìjí",
+        "meaning": "temperamento rápido"
+      },
+      {
+        "id": 3,
+        "word": "冲动",
+        "pinyin": "chōngdòng",
+        "meaning": "impulsivo"
+      },
+      {
+        "id": 4,
+        "word": "慢性子",
+        "pinyin": "mànxìngzi",
+        "meaning": "pessoa lenta/paciente"
+      },
+      {
+        "id": 5,
+        "word": "吵架",
+        "pinyin": "chǎojià",
+        "meaning": "brigar"
+      },
+      {
+        "id": 6,
+        "word": "生气",
+        "pinyin": "shēngqì",
+        "meaning": "ficar bravo"
+      },
+      {
+        "id": 7,
+        "word": "理",
+        "pinyin": "lǐ",
+        "meaning": "dar atenção"
+      }
+    ],
+    "id": "local-1780225226634-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 这么看，我和处女座不太配，是吧？",
+    "pinyin": "Zhème kàn, wǒ hé chǔnǚzuò bùtàipèi, shì ba?",
+    "translation": "B: Pensando assim, eu não sou muito compatível com Virgem, né?",
+    "tokens": [
+      "这么",
+      "看",
+      "，",
+      "我",
+      "和",
+      "处女座",
+      "不太配",
+      "，",
+      "是",
+      "吧",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "这么看",
+        "pinyin": "zhèmekàn",
+        "meaning": "pensando assim / considerando assim"
+      },
+      {
+        "id": 2,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "com / junto com"
+      },
+      {
+        "id": 3,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "signo de Virgem"
+      },
+      {
+        "id": 4,
+        "word": "不太",
+        "pinyin": "bùtài",
+        "meaning": "não muito / pouco"
+      },
+      {
+        "id": 5,
+        "word": "配",
+        "pinyin": "pèi",
+        "meaning": "compatível / combinar"
+      }
+    ],
+    "id": "local-1780225226634-5",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "A: 嗯，处女座那么挑剔、还神经质，在一起的话应该会有很多问题的。",
+    "pinyin": "Ń, chǔnǚzuò nàme tiāotī, hái shénjīngzhì, zài yìqǐ dehuà yīnggāi huì yǒu hěnduō wèntí de.",
+    "translation": "A: Hum, Virgem é tão exigente e neurótica, se ficarem juntos, provavelmente haverá muitos problemas.",
+    "tokens": [
+      "嗯",
+      "，",
+      "处女座",
+      "那么",
+      "挑剔",
+      "、",
+      "还",
+      "神经质",
+      "，",
+      "在",
+      "一起",
+      "的话",
+      "应该",
+      "会",
+      "有",
+      "很多",
+      "问题",
+      "的",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "处女座",
+        "pinyin": "chǔnǚzuò",
+        "meaning": "Virgem (signo do zodíaco)"
+      },
+      {
+        "id": 2,
+        "word": "挑剔",
+        "pinyin": "tiāotī",
+        "meaning": "exigente, meticuloso"
+      },
+      {
+        "id": 3,
+        "word": "神经质",
+        "pinyin": "shénjīngzhì",
+        "meaning": "neurótico, nervoso"
+      },
+      {
+        "id": 4,
+        "word": "在一起",
+        "pinyin": "zàiyìqǐ",
+        "meaning": "juntos, namorando"
+      },
+      {
+        "id": 5,
+        "word": "问题",
+        "pinyin": "wèntí",
+        "meaning": "problema"
+      }
+    ],
+    "id": "local-1780225226634-6",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 那我到底和什么星座最配呢？",
+    "pinyin": "Nà wǒ dàodǐ hé shénme xīngzuò zuìpèi ne?",
+    "translation": "B: Então, com qual signo eu sou mais compatível?",
+    "tokens": [
+      "那",
+      "我",
+      "到底",
+      "和",
+      "什么",
+      "星座",
+      "最配",
+      "呢",
+      "？"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "到底",
+        "pinyin": "dàodǐ",
+        "meaning": "no fim das contas / afinal"
+      },
+      {
+        "id": 2,
+        "word": "和",
+        "pinyin": "hé",
+        "meaning": "com"
+      },
+      {
+        "id": 3,
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual / que"
+      },
+      {
+        "id": 4,
+        "word": "星座",
+        "pinyin": "xīngzuò",
+        "meaning": "signo (zodíaco)"
+      },
+      {
+        "id": 5,
+        "word": "最",
+        "pinyin": "zuì",
+        "meaning": "mais"
+      },
+      {
+        "id": 6,
+        "word": "配",
+        "pinyin": "pèi",
+        "meaning": "compatível / combinar"
+      }
+    ],
+    "id": "local-1780225226634-7",
+    "language": "Chinês"
+  }
+]

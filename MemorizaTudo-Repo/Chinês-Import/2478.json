@@ -1,14 +1,12 @@
 [
   {
-    "chinese": "A: 您好，您买酒吗？",
-    "pinyin": "Nín hǎo, nín mǎi jiǔ ma?",
-    "translation": "A: Olá, você está comprando vinho?",
+    "chinese": "A: 您好，买酒吗？",
+    "pinyin": "Nínhǎo, mǎijiǔ ma?",
+    "translation": "A: Olá, quer comprar vinho?",
     "tokens": [
       "您好",
       "，",
-      "您",
-      "买",
-      "酒",
+      "买酒",
       "吗",
       "？"
     ],
@@ -16,8 +14,8 @@
       {
         "id": 1,
         "word": "您好",
-        "pinyin": "nín hǎo",
-        "meaning": "olá"
+        "pinyin": "nínhǎo",
+        "meaning": "olá (formal)"
       },
       {
         "id": 2,
@@ -29,76 +27,63 @@
         "id": 3,
         "word": "酒",
         "pinyin": "jiǔ",
-        "meaning": "vinho; álcool"
-      },
-      {
-        "id": 4,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "vinho / bebida alcoólica"
       }
     ],
-    "id": "local-1772300529258-0",
+    "id": "local-1780203090959-0",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 是的。一个外国朋友在庆祝生日。",
-    "pinyin": "Shì de. Yī gè wàiguó péngyou zài qìngzhù shēngrì.",
-    "translation": "B: Sim. Um amigo estrangeiro está celebrando o aniversário.",
+    "chinese": "B: 是啊，一个外国朋友过生日。",
+    "pinyin": "Shì a, yígè wàiguó péngyǒu guòshēngrì.",
+    "translation": "B: Sim, é o aniversário de um amigo estrangeiro.",
     "tokens": [
-      "是的",
-      "。",
+      "是",
+      "啊",
+      "，",
       "一个",
       "外国",
       "朋友",
-      "在",
-      "庆祝",
-      "生日",
+      "过生日",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "是的",
-        "pinyin": "shì de",
-        "meaning": "sim"
+        "word": "是啊",
+        "pinyin": "shìa",
+        "meaning": "sim, é verdade"
       },
       {
         "id": 2,
         "word": "外国",
         "pinyin": "wàiguó",
-        "meaning": "estrangeiro; país estrangeiro"
+        "meaning": "estrangeiro"
       },
       {
         "id": 3,
         "word": "朋友",
-        "pinyin": "péngyou",
+        "pinyin": "péngyǒu",
         "meaning": "amigo"
       },
       {
         "id": 4,
-        "word": "庆祝",
-        "pinyin": "qìngzhù",
-        "meaning": "celebrar; comemorar"
-      },
-      {
-        "id": 5,
         "word": "生日",
         "pinyin": "shēngrì",
         "meaning": "aniversário"
       }
     ],
-    "id": "local-1772300529258-1",
+    "id": "local-1780203090959-1",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 她喜欢红酒还是白葡萄酒？",
-    "pinyin": "Tā xǐhuan hóngjiǔ háishi bái pútaojiǔ?",
-    "translation": "A: Ela gosta de vinho tinto ou vinho branco?",
+    "chinese": "A: 她喜欢红葡萄酒还是白葡萄酒？",
+    "pinyin": "Tā xǐhuān hóngpútáojiǔ háishì báipútáojiǔ?",
+    "translation": "A: Ela gosta de vinho tinto ou de vinho branco?",
     "tokens": [
       "她",
       "喜欢",
-      "红酒",
+      "红葡萄酒",
       "还是",
       "白葡萄酒",
       "？"
@@ -106,116 +91,117 @@
     "keywords": [
       {
         "id": 1,
-        "word": "喜欢",
-        "pinyin": "xǐhuan",
-        "meaning": "gostar"
+        "word": "她",
+        "pinyin": "tā",
+        "meaning": "ela"
       },
       {
         "id": 2,
-        "word": "红酒",
-        "pinyin": "hóngjiǔ",
-        "meaning": "vinho tinto"
+        "word": "喜欢",
+        "pinyin": "xǐhuān",
+        "meaning": "gostar de"
       },
       {
         "id": 3,
+        "word": "红葡萄酒",
+        "pinyin": "hóngpútáojiǔ",
+        "meaning": "vinho tinto"
+      },
+      {
+        "id": 4,
         "word": "还是",
-        "pinyin": "háishi",
+        "pinyin": "háishì",
         "meaning": "ou (em perguntas)"
       },
       {
-        "id": 4,
+        "id": 5,
         "word": "白葡萄酒",
-        "pinyin": "bái pútaojiǔ",
+        "pinyin": "báipútáojiǔ",
         "meaning": "vinho branco"
       }
     ],
-    "id": "local-1772300529258-2",
+    "id": "local-1780203090959-2",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 红酒。",
-    "pinyin": "Hóngjiǔ.",
-    "translation": "B: Vinho tinto.",
+    "chinese": "B: 红葡萄酒吧。",
+    "pinyin": "Hóngpútáojiǔ ba.",
+    "translation": "B: Vinho tinto, por favor.",
     "tokens": [
-      "红酒",
+      "红葡萄酒",
+      "吧",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "红酒",
-        "pinyin": "hóngjiǔ",
+        "word": "红葡萄酒",
+        "pinyin": "hóngpútáojiǔ",
         "meaning": "vinho tinto"
-      }
-    ],
-    "id": "local-1772300529258-3",
-    "language": "Chinês"
-  },
-  {
-    "chinese": "A: 好的。我们这里有新世界葡萄酒和旧世界葡萄酒。",
-    "pinyin": "Hǎo de. Wǒmen zhèlǐ yǒu xīn shìjiè pútaojiǔ hé jiù shìjiè pútaojiǔ.",
-    "translation": "A: Ok. Nós temos aqui vinhos do Novo Mundo e vinhos do Velho Mundo.",
-    "tokens": [
-      "好的",
-      "。",
-      "我们",
-      "这里",
-      "有",
-      "新世界葡萄酒",
-      "和",
-      "旧世界葡萄酒",
-      "。"
-    ],
-    "keywords": [
-      {
-        "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok; certo"
       },
       {
         "id": 2,
-        "word": "这里",
-        "pinyin": "zhèlǐ",
-        "meaning": "aqui"
-      },
-      {
-        "id": 3,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 4,
-        "word": "新世界葡萄酒",
-        "pinyin": "xīn shìjiè pútaojiǔ",
-        "meaning": "vinho do Novo Mundo"
-      },
-      {
-        "id": 5,
-        "word": "旧世界葡萄酒",
-        "pinyin": "jiù shìjiè pútaojiǔ",
-        "meaning": "vinho do Velho Mundo"
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "partícula sugerindo escolha ou pedido"
       }
     ],
-    "id": "local-1772300529258-4",
+    "id": "local-1780203090959-3",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 我平时不怎么喝酒，所以不太懂。",
-    "pinyin": "Wǒ píngshí bù zěnme hē jiǔ, suǒyǐ bù tài dǒng.",
-    "translation": "B: Eu geralmente não bebo muito, então não entendo muito.",
+    "chinese": "A: 好的，我们这里新世界和旧世界的都有。",
+    "pinyin": "Hǎo de, wǒmen zhèlǐ xīnshìjiè hé jiù shìjiè de dōu yǒu.",
+    "translation": "A: Ok, temos tanto do Novo Mundo quanto do Velho Mundo aqui.",
+    "tokens": [
+      "好",
+      "的",
+      "，",
+      "我们",
+      "这里",
+      "新世界",
+      "和",
+      "旧",
+      "世界",
+      "的",
+      "都",
+      "有",
+      "。"
+    ],
+    "keywords": [
+      {
+        "id": 1,
+        "word": "新世界",
+        "pinyin": "xīnshìjiè",
+        "meaning": "Novo Mundo"
+      },
+      {
+        "id": 2,
+        "word": "旧世界",
+        "pinyin": "jiùshìjiè",
+        "meaning": "Velho Mundo"
+      },
+      {
+        "id": 3,
+        "word": "都",
+        "pinyin": "dōu",
+        "meaning": "ambos/todos"
+      }
+    ],
+    "id": "local-1780203090959-4",
+    "language": "Chinês"
+  },
+  {
+    "chinese": "B: 我平时不喝酒，不太懂。",
+    "pinyin": "Wǒ píngshí bù hējiǔ, bùtàidǒng.",
+    "translation": "B: Eu normalmente não bebo, então não entendo muito bem.",
     "tokens": [
       "我",
       "平时",
       "不",
-      "怎么",
       "喝酒",
       "，",
-      "所以",
-      "不",
-      "太",
-      "懂",
+      "不太懂",
       "。"
     ],
     "keywords": [
@@ -223,45 +209,34 @@
         "id": 1,
         "word": "平时",
         "pinyin": "píngshí",
-        "meaning": "normalmente; geralmente"
+        "meaning": "normalmente / de costume"
       },
       {
         "id": 2,
-        "word": "不怎么",
-        "pinyin": "bù zěnme",
-        "meaning": "não muito; não com frequência"
+        "word": "不喝酒",
+        "pinyin": "bùhējiǔ",
+        "meaning": "não bebe álcool"
       },
       {
         "id": 3,
-        "word": "喝酒",
-        "pinyin": "hē jiǔ",
-        "meaning": "beber álcool"
-      },
-      {
-        "id": 4,
-        "word": "所以",
-        "pinyin": "suǒyǐ",
-        "meaning": "então; portanto"
-      },
-      {
-        "id": 5,
         "word": "不太懂",
-        "pinyin": "bù tài dǒng",
-        "meaning": "não entender muito"
+        "pinyin": "bùtàidǒng",
+        "meaning": "não entende muito / não sabe muito"
       }
     ],
-    "id": "local-1772300529258-5",
+    "id": "local-1780203090959-5",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 没问题。“旧世界”主要指法国、意大利、西班牙等拥有数百年传统酿酒历史的国家。而“新世界”则指美国、加拿大、阿根廷、澳大利亚等新兴酿酒国家。",
-    "pinyin": "Méi wèntí. “Jiù Shìjiè” zhǔyào zhǐ Fàguó, Yìdàlì, Xībānyá děng yōngyǒu shù bǎi nián chuántǒng niàngjiǔ lìshǐ de guójiā. Ér “Xīn Shìjiè” zé zhǐ Měiguó, Jiānádà, Āgēntíng, Àodàlìyà děng xīnxīng niàngjiǔ guójiā.",
-    "translation": "A: Sem problemas. \"Velho Mundo\" refere-se principalmente a países como França, Itália, Espanha, que têm centenas de anos de história na produção tradicional de vinho. Enquanto \"Novo Mundo\" refere-se a países produtores de vinho emergentes como Estados Unidos, Canadá, Argentina, Austrália, etc.",
+    "chinese": "A: 没事，“旧世界”主要指法国、意大利、西班牙等有着几百年历史的传统葡萄酒酿造国家。而“新世界”则指美国、加拿大、阿根廷、澳大利亚等新兴的葡萄酒酿造国家。",
+    "pinyin": "Méishì,\" jiù shìjiè\" zhǔyào zhǐ fǎguó, yìdàlì, xībānyá děng yǒuzhe jǐbǎinián lìshǐ de chuántǒng pútáojiǔ niàngzào guójiā. Ér\" xīnshìjiè\" zé zhǐ měiguó, jiānádà, āgēntíng, àodàlìyà děng xīnxīng de pútáojiǔ niàngzào guójiā.",
+    "translation": "A: Não há problema. O \"Velho Mundo\" refere-se principalmente a países tradicionais de produção de vinho com séculos de história, como França, Itália e Espanha. Já o \"Novo Mundo\" refere-se a países emergentes na produção de vinho, como Estados Unidos, Canadá, Argentina e Austrália.",
     "tokens": [
-      "没问题",
-      "。",
+      "没事",
+      "，",
       "“",
-      "旧世界",
+      "旧",
+      "世界",
       "”",
       "主要",
       "指",
@@ -271,12 +246,13 @@
       "、",
       "西班牙",
       "等",
-      "拥有",
-      "数百年",
-      "传统",
-      "酿酒",
+      "有着",
+      "几百年",
       "历史",
       "的",
+      "传统",
+      "葡萄酒",
+      "酿造",
       "国家",
       "。",
       "而",
@@ -294,450 +270,306 @@
       "澳大利亚",
       "等",
       "新兴",
-      "酿酒",
+      "的",
+      "葡萄酒",
+      "酿造",
       "国家",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "没问题",
-        "pinyin": "méi wèntí",
-        "meaning": "sem problemas"
-      },
-      {
-        "id": 2,
         "word": "旧世界",
-        "pinyin": "jiù shìjiè",
+        "pinyin": "jiùshìjiè",
         "meaning": "Velho Mundo"
       },
       {
+        "id": 2,
+        "word": "葡萄酒",
+        "pinyin": "pútáojiǔ",
+        "meaning": "vinho"
+      },
+      {
         "id": 3,
-        "word": "主要",
-        "pinyin": "zhǔyào",
-        "meaning": "principalmente"
+        "word": "酿造",
+        "pinyin": "niàngzào",
+        "meaning": "produção / fabricação"
       },
       {
         "id": 4,
-        "word": "指",
-        "pinyin": "zhǐ",
-        "meaning": "referir-se a; indicar"
-      },
-      {
-        "id": 5,
-        "word": "法国",
-        "pinyin": "Fàguó",
-        "meaning": "França"
-      },
-      {
-        "id": 6,
-        "word": "意大利",
-        "pinyin": "Yìdàlì",
-        "meaning": "Itália"
-      },
-      {
-        "id": 7,
-        "word": "西班牙",
-        "pinyin": "Xībānyá",
-        "meaning": "Espanha"
-      },
-      {
-        "id": 8,
-        "word": "拥有",
-        "pinyin": "yōngyǒu",
-        "meaning": "possuir; ter"
-      },
-      {
-        "id": 9,
-        "word": "数百年",
-        "pinyin": "shù bǎi nián",
-        "meaning": "centenas de anos"
-      },
-      {
-        "id": 10,
-        "word": "传统",
-        "pinyin": "chuántǒng",
-        "meaning": "tradição; tradicional"
-      },
-      {
-        "id": 11,
-        "word": "酿酒",
-        "pinyin": "niàngjiǔ",
-        "meaning": "produzir vinho; vinificação"
-      },
-      {
-        "id": 12,
-        "word": "历史",
-        "pinyin": "lìshǐ",
-        "meaning": "história"
-      },
-      {
-        "id": 13,
         "word": "国家",
         "pinyin": "guójiā",
         "meaning": "país"
       },
       {
-        "id": 14,
-        "word": "而",
-        "pinyin": "ér",
-        "meaning": "e; mas; enquanto"
-      },
-      {
-        "id": 15,
+        "id": 5,
         "word": "新世界",
-        "pinyin": "xīn shìjiè",
+        "pinyin": "xīnshìjiè",
         "meaning": "Novo Mundo"
       },
       {
-        "id": 16,
-        "word": "美国",
-        "pinyin": "Měiguó",
-        "meaning": "Estados Unidos"
-      },
-      {
-        "id": 17,
-        "word": "加拿大",
-        "pinyin": "Jiānádà",
-        "meaning": "Canadá"
-      },
-      {
-        "id": 18,
-        "word": "阿根廷",
-        "pinyin": "Āgēntíng",
-        "meaning": "Argentina"
-      },
-      {
-        "id": 19,
-        "word": "澳大利亚",
-        "pinyin": "Àodàlìyà",
-        "meaning": "Austrália"
-      },
-      {
-        "id": 20,
+        "id": 6,
         "word": "新兴",
         "pinyin": "xīnxīng",
-        "meaning": "emergente; novo"
+        "meaning": "emergente"
       }
     ],
-    "id": "local-1772300529258-6",
+    "id": "local-1780203090959-6",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 那口味上有什么不同吗？",
-    "pinyin": "Nà kǒuwèi shàng yǒu shénme bùtóng ma?",
-    "translation": "B: Então há alguma diferença no sabor?",
+    "chinese": "B: 那口味上有什么区别吗？",
+    "pinyin": "Nà kǒuwèi shàng yǒu shénme qūbié ma?",
+    "translation": "B: Então, há alguma diferença no sabor?",
     "tokens": [
       "那",
       "口味",
       "上",
       "有",
       "什么",
-      "不同",
+      "区别",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "口味",
-        "pinyin": "kǒuwèi",
-        "meaning": "sabor"
+        "word": "那",
+        "pinyin": "nà",
+        "meaning": "então / nesse caso"
       },
       {
         "id": 2,
-        "word": "有什么不同",
-        "pinyin": "yǒu shénme bùtóng",
-        "meaning": "há alguma diferença"
+        "word": "口味",
+        "pinyin": "kǒuwèi",
+        "meaning": "sabor / gosto"
+      },
+      {
+        "id": 3,
+        "word": "区别",
+        "pinyin": "qūbié",
+        "meaning": "diferença"
       }
     ],
-    "id": "local-1772300529258-7",
+    "id": "local-1780203090959-7",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 是的。旧世界葡萄酒酸度较高，因为单宁含量高。新世界葡萄酒相对甜一些，因为单宁较少。",
-    "pinyin": "Shì de. Jiù shìjiè pútaojiǔ suāndù jiào gāo, yīnwèi dānníng hánliàng gāo. Xīn shìjiè pútaojiǔ xiāngduì tián yīxiē, yīnwèi dānníng jiào shǎo.",
-    "translation": "A: Sim. Os vinhos do Velho Mundo têm maior acidez, porque o teor de taninos é alto. Os vinhos do Novo Mundo são relativamente mais doces, porque têm menos taninos.",
+    "chinese": "A: 是的，旧世界的比较酸涩，因为单宁含量多。新世界比较香甜，单宁少。",
+    "pinyin": "Shì de, jiù shìjiè de bǐjiào suānsè, yīnwèi dānníng hánliàng duō. Xīnshìjiè bǐjiào xiāngtián, dānníng shǎo.",
+    "translation": "A: Sim, o vinho do Velho Mundo é mais ácido e adstringente devido ao maior teor de taninos. O do Novo Mundo é mais doce e suave, com menos taninos.",
     "tokens": [
-      "是的",
-      "。",
-      "旧世界葡萄酒",
-      "酸度",
-      "较",
-      "高",
+      "是",
+      "的",
+      "，",
+      "旧",
+      "世界",
+      "的",
+      "比较",
+      "酸涩",
       "，",
       "因为",
       "单宁",
       "含量",
-      "高",
+      "多",
       "。",
-      "新世界葡萄酒",
-      "相对",
-      "甜",
-      "一些",
+      "新世界",
+      "比较",
+      "香甜",
       "，",
-      "因为",
       "单宁",
-      "较",
       "少",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "是的",
-        "pinyin": "shì de",
-        "meaning": "sim"
+        "word": "旧世界",
+        "pinyin": "jiùshìjiè",
+        "meaning": "Velho Mundo"
       },
       {
         "id": 2,
-        "word": "旧世界葡萄酒",
-        "pinyin": "jiù shìjiè pútaojiǔ",
-        "meaning": "vinho do Velho Mundo"
+        "word": "酸涩",
+        "pinyin": "suānsè",
+        "meaning": "ácido e adstringente"
       },
       {
         "id": 3,
-        "word": "酸度",
-        "pinyin": "suāndù",
-        "meaning": "acidez"
-      },
-      {
-        "id": 4,
-        "word": "较高",
-        "pinyin": "jiào gāo",
-        "meaning": "relativamente alto"
-      },
-      {
-        "id": 5,
-        "word": "因为",
-        "pinyin": "yīnwèi",
-        "meaning": "porque"
-      },
-      {
-        "id": 6,
         "word": "单宁",
         "pinyin": "dānníng",
         "meaning": "tanino"
       },
       {
-        "id": 7,
+        "id": 4,
         "word": "含量",
         "pinyin": "hánliàng",
-        "meaning": "teor; conteúdo"
+        "meaning": "teor / conteúdo"
       },
       {
-        "id": 8,
-        "word": "新世界葡萄酒",
-        "pinyin": "xīn shìjiè pútaojiǔ",
-        "meaning": "vinho do Novo Mundo"
-      },
-      {
-        "id": 9,
-        "word": "相对",
-        "pinyin": "xiāngduì",
-        "meaning": "relativamente"
-      },
-      {
-        "id": 10,
-        "word": "甜",
-        "pinyin": "tián",
-        "meaning": "doce"
-      },
-      {
-        "id": 11,
-        "word": "一些",
-        "pinyin": "yīxiē",
-        "meaning": "um pouco"
-      },
-      {
-        "id": 12,
-        "word": "较少",
-        "pinyin": "jiào shǎo",
-        "meaning": "relativamente pouco"
+        "id": 5,
+        "word": "香甜",
+        "pinyin": "xiāngtián",
+        "meaning": "doce e aromático"
       }
     ],
-    "id": "local-1772300529258-8",
+    "id": "local-1780203090959-8",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 哦，我听说女孩子更喜欢果味浓郁的葡萄酒。",
-    "pinyin": "Ò, wǒ tīngshuō nǚ háizi gèng xǐhuan guǒwèi nóngyù de pútaojiǔ.",
-    "translation": "B: Ah, ouvi dizer que as meninas gostam mais de vinhos com sabor de fruta mais intenso.",
+    "chinese": "B: 哦，我听说果香味的女孩子比较喜欢。",
+    "pinyin": "Ó, wǒ tīngshuō guǒ xiāngwèi de nǚháizi bǐjiào xǐhuān.",
+    "translation": "B: Ah, ouvi dizer que as meninas gostam mais de fragrâncias frutadas.",
     "tokens": [
       "哦",
       "，",
       "我",
       "听说",
-      "女孩子",
-      "更",
-      "喜欢",
-      "果味",
-      "浓郁",
+      "果",
+      "香味",
       "的",
-      "葡萄酒",
+      "女孩子",
+      "比较",
+      "喜欢",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ò",
-        "meaning": "oh; ah (interjeição)"
-      },
-      {
-        "id": 2,
         "word": "听说",
         "pinyin": "tīngshuō",
         "meaning": "ouvir dizer"
       },
       {
+        "id": 2,
+        "word": "果香",
+        "pinyin": "guǒxiāng",
+        "meaning": "aroma frutado"
+      },
+      {
         "id": 3,
         "word": "女孩子",
-        "pinyin": "nǚ háizi",
-        "meaning": "menina; moça"
+        "pinyin": "nǚháizi",
+        "meaning": "meninas"
       },
       {
         "id": 4,
-        "word": "更",
-        "pinyin": "gèng",
-        "meaning": "ainda mais; mais"
+        "word": "比较",
+        "pinyin": "bǐjiào",
+        "meaning": "comparativamente / mais"
       },
       {
         "id": 5,
         "word": "喜欢",
-        "pinyin": "xǐhuan",
+        "pinyin": "xǐhuān",
         "meaning": "gostar"
-      },
-      {
-        "id": 6,
-        "word": "果味",
-        "pinyin": "guǒwèi",
-        "meaning": "sabor de fruta"
-      },
-      {
-        "id": 7,
-        "word": "浓郁",
-        "pinyin": "nóngyù",
-        "meaning": "rico; encorpado; intenso (sabor/aroma)"
-      },
-      {
-        "id": 8,
-        "word": "葡萄酒",
-        "pinyin": "pútaojiǔ",
-        "meaning": "vinho"
       }
     ],
-    "id": "local-1772300529258-9",
+    "id": "local-1780203090959-9",
     "language": "Chinês"
   },
   {
-    "chinese": "A: 嗯。我们这款酒特别适合女孩子，卖得非常好。",
-    "pinyin": "Ńg. Wǒmen zhè kuǎn jiǔ tèbié shìhé nǚ háizi, mài de fēicháng hǎo.",
-    "translation": "A: Hm. Este vinho nosso é especialmente adequado para meninas e vende muito bem.",
+    "chinese": "A: 嗯，我们这款酒特别适合女孩子，卖得特别好。",
+    "pinyin": "Ń, wǒmen zhèkuǎn jiǔ tèbié shìhé nǚháizi, màidé tèbié hǎo.",
+    "translation": "A: Sim, este vinho é especialmente adequado para mulheres e está vendendo muito bem.",
     "tokens": [
       "嗯",
-      "。",
+      "，",
       "我们",
-      "这",
-      "款",
+      "这款",
       "酒",
       "特别",
       "适合",
       "女孩子",
       "，",
-      "卖得非常好",
+      "卖得",
+      "特别",
+      "好",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "嗯",
-        "pinyin": "ńg",
-        "meaning": "hum; sim (som de aprovação)"
+        "word": "适合",
+        "pinyin": "shìhé",
+        "meaning": "adequado para"
       },
       {
         "id": 2,
-        "word": "这款",
-        "pinyin": "zhè kuǎn",
-        "meaning": "este (para tipo, estilo)"
+        "word": "女孩子",
+        "pinyin": "nǚháizi",
+        "meaning": "meninas/mulheres"
       },
       {
         "id": 3,
-        "word": "酒",
-        "pinyin": "jiǔ",
-        "meaning": "vinho; álcool"
+        "word": "卖",
+        "pinyin": "mài",
+        "meaning": "vender"
       },
       {
         "id": 4,
         "word": "特别",
         "pinyin": "tèbié",
-        "meaning": "especialmente; particular"
+        "meaning": "especialmente"
       },
       {
         "id": 5,
-        "word": "适合",
-        "pinyin": "shìhé",
-        "meaning": "adequado; apropriado"
-      },
-      {
-        "id": 6,
-        "word": "女孩子",
-        "pinyin": "nǚ háizi",
-        "meaning": "menina; moça"
-      },
-      {
-        "id": 7,
-        "word": "卖得非常好",
-        "pinyin": "mài de fēicháng hǎo",
-        "meaning": "vende muito bem"
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "bem"
       }
     ],
-    "id": "local-1772300529258-10",
+    "id": "local-1780203090959-10",
     "language": "Chinês"
   },
   {
-    "chinese": "B: 好的，那就这瓶吧。谢谢！",
-    "pinyin": "Hǎo de, nà jiù zhè píng ba. Xièxie!",
-    "translation": "B: Ok, então será esta garrafa. Obrigado!",
+    "chinese": "B: 好，那就这瓶吧，谢谢！",
+    "pinyin": "Hǎo, nà jiù zhèpíng ba, xièxiè!",
+    "translation": "B: Ok, então leva esta garrafa, obrigado!",
     "tokens": [
-      "好的",
+      "好",
       "，",
       "那",
       "就",
-      "这",
-      "瓶",
+      "这瓶",
       "吧",
-      "。",
+      "，",
       "谢谢",
       "！"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "好的",
-        "pinyin": "hǎo de",
-        "meaning": "ok; certo"
+        "word": "好",
+        "pinyin": "hǎo",
+        "meaning": "ok / bem"
       },
       {
         "id": 2,
         "word": "那就",
-        "pinyin": "nà jiù",
-        "meaning": "então"
+        "pinyin": "nàjiù",
+        "meaning": "então / nesse caso"
       },
       {
         "id": 3,
         "word": "这瓶",
-        "pinyin": "zhè píng",
+        "pinyin": "zhèpíng",
         "meaning": "esta garrafa"
       },
       {
         "id": 4,
+        "word": "吧",
+        "pinyin": "ba",
+        "meaning": "sugestão / concordância"
+      },
+      {
+        "id": 5,
         "word": "谢谢",
-        "pinyin": "xièxie",
+        "pinyin": "xièxiè",
         "meaning": "obrigado"
       }
     ],
-    "id": "local-1772300529258-11",
+    "id": "local-1780203090959-11",
     "language": "Chinês"
   }
 ]

@@ -1,96 +1,71 @@
 [
   {
-    "chinese": "莉莉，下班后能陪我去购物中心逛逛吗？",
-    "pinyin": "Lìlì, xiàbān hòu néng péi wǒ qù gòuwù zhōngxīn guàngguang ma?",
-    "translation": "Lily, você pode me acompanhar ao shopping depois do trabalho?",
+    "chinese": "A: 莉莉，下班以后陪我去商场转转吧。",
+    "pinyin": "Lìlì, xiàbān yǐhòu péi wǒ qù shāngchǎng zhuǎnzhuǎn ba.",
+    "translation": "A: Lily, depois do trabalho, me acompanhe para dar uma volta no shopping.",
     "tokens": [
       "莉莉",
       "，",
       "下班",
-      "后",
-      "能",
+      "以后",
       "陪",
       "我",
       "去",
-      "购物中心",
-      "逛逛",
-      "吗",
-      "？"
+      "商场",
+      "转转",
+      "吧",
+      "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "莉莉",
-        "pinyin": "Lìlì",
-        "meaning": "Lily (nome próprio)"
+        "word": "下班",
+        "pinyin": "xiàbān",
+        "meaning": "sair do trabalho / fim do expediente"
       },
       {
         "id": 2,
-        "word": "下班",
-        "pinyin": "xiàbān",
-        "meaning": "sair do trabalho, terminar o expediente"
+        "word": "以后",
+        "pinyin": "yǐhòu",
+        "meaning": "depois de"
       },
       {
         "id": 3,
-        "word": "后",
-        "pinyin": "hòu",
-        "meaning": "depois, após"
-      },
-      {
-        "id": 4,
-        "word": "能",
-        "pinyin": "néng",
-        "meaning": "poder, ser capaz de"
-      },
-      {
-        "id": 5,
         "word": "陪",
         "pinyin": "péi",
         "meaning": "acompanhar"
       },
       {
-        "id": 6,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 7,
+        "id": 4,
         "word": "去",
         "pinyin": "qù",
         "meaning": "ir"
       },
       {
-        "id": 8,
-        "word": "购物中心",
-        "pinyin": "gòuwù zhōngxīn",
-        "meaning": "shopping center"
+        "id": 5,
+        "word": "商场",
+        "pinyin": "shāngchǎng",
+        "meaning": "shopping center / centro comercial"
       },
       {
-        "id": 9,
-        "word": "逛逛",
-        "pinyin": "guàngguang",
-        "meaning": "passear, dar uma volta (reduplicação de 逛)"
-      },
-      {
-        "id": 10,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "id": 6,
+        "word": "转转",
+        "pinyin": "zhuǎnzhuǎn",
+        "meaning": "dar uma volta / passear"
       }
     ],
-    "id": "local-1772299501714-0",
+    "id": "local-1780202523440-0",
     "language": "Chinês"
   },
   {
-    "chinese": "当然。你想买什么？",
-    "pinyin": "Dāngrán. Nǐ xiǎng mǎi shénme?",
-    "translation": "Claro. O que você quer comprar?",
+    "chinese": "B: 好哇，你要买什么？",
+    "pinyin": "Hǎowa, nǐ yào mǎi shénme?",
+    "translation": "B: Claro, o que você quer comprar?",
     "tokens": [
-      "当然",
-      "。",
+      "好哇",
+      "，",
       "你",
-      "想",
+      "要",
       "买",
       "什么",
       "？"
@@ -98,188 +73,131 @@
     "keywords": [
       {
         "id": 1,
-        "word": "当然",
-        "pinyin": "dāngrán",
-        "meaning": "claro, naturalmente"
+        "word": "好哇",
+        "pinyin": "hǎowa",
+        "meaning": "combinado / claro"
       },
       {
         "id": 2,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "要",
+        "pinyin": "yào",
+        "meaning": "querer / precisar"
       },
       {
         "id": 3,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, pensar, desejar"
-      },
-      {
-        "id": 4,
         "word": "买",
         "pinyin": "mǎi",
         "meaning": "comprar"
       },
       {
-        "id": 5,
+        "id": 4,
         "word": "什么",
         "pinyin": "shénme",
-        "meaning": "o quê, qual"
+        "meaning": "o quê"
       }
     ],
-    "id": "local-1772299501714-1",
+    "id": "local-1780202523440-1",
     "language": "Chinês"
   },
   {
-    "chinese": "我的好朋友要结婚了。我想挑一份结婚礼物。",
-    "pinyin": "Wǒ de hǎo péngyou yào jiéhūn le. Wǒ xiǎng tiāo yī fèn jiéhūn lǐwù.",
-    "translation": "Minha boa amiga vai se casar. Eu quero escolher um presente de casamento.",
+    "chinese": "A: 我好朋友结婚，我想去挑个结婚礼物。",
+    "pinyin": "Wǒ hǎo péngyǒu jiéhūn, wǒ xiǎng qù tiāogè jiéhūn lǐwù.",
+    "translation": "A: Meu bom amigo vai se casar, quero escolher um presente de casamento.",
     "tokens": [
       "我",
-      "的",
-      "好朋友",
-      "要",
+      "好",
+      "朋友",
       "结婚",
-      "了",
-      "。",
+      "，",
       "我",
       "想",
-      "挑",
-      "一",
-      "份",
-      "结婚礼物",
+      "去",
+      "挑个",
+      "结婚",
+      "礼物",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu, meu"
+        "word": "好朋友",
+        "pinyin": "hǎopéngyǒu",
+        "meaning": "bom amigo"
       },
       {
         "id": 2,
-        "word": "好朋友",
-        "pinyin": "hǎo péngyou",
-        "meaning": "bom amigo, melhor amigo"
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casar-se"
       },
       {
         "id": 3,
-        "word": "要...了",
-        "pinyin": "yào...le",
-        "meaning": "estrutura que indica que algo vai acontecer em breve"
+        "word": "礼物",
+        "pinyin": "lǐwù",
+        "meaning": "presente"
       },
       {
         "id": 4,
-        "word": "结婚",
-        "pinyin": "jiéhūn",
-        "meaning": "casar, casar-se"
-      },
-      {
-        "id": 5,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, desejar"
-      },
-      {
-        "id": 6,
         "word": "挑",
         "pinyin": "tiāo",
-        "meaning": "escolher, selecionar"
-      },
-      {
-        "id": 7,
-        "word": "一份",
-        "pinyin": "yī fèn",
-        "meaning": "um (classificador para presentes, documentos, etc.)"
-      },
-      {
-        "id": 8,
-        "word": "结婚礼物",
-        "pinyin": "jiéhūn lǐwù",
-        "meaning": "presente de casamento"
+        "meaning": "escolher"
       }
     ],
-    "id": "local-1772299501714-2",
+    "id": "local-1780202523440-2",
     "language": "Chinês"
   },
   {
-    "chinese": "直接给她一个红包不就好了吗？",
-    "pinyin": "Zhíjiē gěi tā yī gè hóngbāo bù jiù hǎo le ma?",
-    "translation": "Não seria melhor dar a ela um envelope vermelho diretamente?",
+    "chinese": "B: 包个红包不就行了吗？",
+    "pinyin": "Bāogè hóngbāo bù jiùxíngle ma?",
+    "translation": "B: Não basta dar um envelope vermelho?",
     "tokens": [
-      "直接",
-      "给",
-      "她",
-      "一个",
+      "包个",
       "红包",
       "不",
-      "就",
-      "好",
-      "了",
+      "就行了",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "直接",
-        "pinyin": "zhíjiē",
-        "meaning": "diretamente"
+        "word": "包",
+        "pinyin": "bāo",
+        "meaning": "envolver / embrulhar"
       },
       {
         "id": 2,
-        "word": "给",
-        "pinyin": "gěi",
-        "meaning": "dar, para"
+        "word": "红包",
+        "pinyin": "hóngbāo",
+        "meaning": "envelope vermelho (presente em dinheiro)"
       },
       {
         "id": 3,
-        "word": "她",
-        "pinyin": "tā",
-        "meaning": "ela"
-      },
-      {
-        "id": 4,
-        "word": "一个",
-        "pinyin": "yī gè",
-        "meaning": "um (classificador)"
-      },
-      {
-        "id": 5,
-        "word": "红包",
-        "pinyin": "hóngbāo",
-        "meaning": "envelope vermelho (com dinheiro, geralmente para ocasiões festivas)"
-      },
-      {
-        "id": 6,
-        "word": "不就好了吗",
-        "pinyin": "bù jiù hǎo le ma",
-        "meaning": "estrutura retórica, 'não seria melhor...?'"
+        "word": "不就行了吗",
+        "pinyin": "bùjiùxínglema",
+        "meaning": "não bastaria / não seria suficiente"
       }
     ],
-    "id": "local-1772299501714-3",
+    "id": "local-1780202523440-3",
     "language": "Chinês"
   },
   {
-    "chinese": "她是我最好的朋友。我想送她一份与众不同的礼物。",
-    "pinyin": "Tā shì wǒ zuì hǎo de péngyou. Wǒ xiǎng sòng tā yī fèn yǔ zhòng bù tóng de lǐwù.",
-    "translation": "Ela é minha melhor amiga. Eu quero dar a ela um presente único/diferente.",
+    "chinese": "A: 她是我最好的闺蜜，我想送不一样的礼物。",
+    "pinyin": "Tā shì wǒ zuìhǎo de guīmì, wǒ xiǎng sòng bù yīyàng de lǐwù.",
+    "translation": "A: Ela é minha melhor amiga íntima, quero dar um presente diferente.",
     "tokens": [
       "她",
       "是",
       "我",
-      "最",
-      "好",
+      "最好",
       "的",
-      "朋友",
-      "。",
+      "闺蜜",
+      "，",
       "我",
       "想",
       "送",
-      "她",
-      "一份",
-      "与众不同",
+      "不",
+      "一样",
       "的",
       "礼物",
       "。"
@@ -287,459 +205,296 @@
     "keywords": [
       {
         "id": 1,
-        "word": "她",
-        "pinyin": "tā",
-        "meaning": "ela"
+        "word": "闺蜜",
+        "pinyin": "guīmì",
+        "meaning": "melhor amiga íntima"
       },
       {
         "id": 2,
-        "word": "是",
-        "pinyin": "shì",
-        "meaning": "ser, estar"
+        "word": "送",
+        "pinyin": "sòng",
+        "meaning": "dar (de presente)"
       },
       {
         "id": 3,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu, meu"
-      },
-      {
-        "id": 4,
-        "word": "最好",
-        "pinyin": "zuì hǎo",
-        "meaning": "o melhor"
-      },
-      {
-        "id": 5,
-        "word": "朋友",
-        "pinyin": "péngyou",
-        "meaning": "amigo"
-      },
-      {
-        "id": 6,
-        "word": "想",
-        "pinyin": "xiǎng",
-        "meaning": "querer, desejar"
-      },
-      {
-        "id": 7,
-        "word": "送",
-        "pinyin": "sòng",
-        "meaning": "dar (um presente), entregar"
-      },
-      {
-        "id": 8,
-        "word": "一份",
-        "pinyin": "yī fèn",
-        "meaning": "um (classificador)"
-      },
-      {
-        "id": 9,
-        "word": "与众不同",
-        "pinyin": "yǔ zhòng bù tóng",
-        "meaning": "diferente do comum, único"
-      },
-      {
-        "id": 10,
         "word": "礼物",
         "pinyin": "lǐwù",
         "meaning": "presente"
+      },
+      {
+        "id": 4,
+        "word": "不一样",
+        "pinyin": "bùyíyàng",
+        "meaning": "diferente"
       }
     ],
-    "id": "local-1772299501714-4",
+    "id": "local-1780202523440-4",
     "language": "Chinês"
   },
   {
-    "chinese": "你想好要买什么了吗？",
-    "pinyin": "Nǐ xiǎng hǎo yào mǎi shénme le ma?",
-    "translation": "Você já decidiu o que quer comprar?",
+    "chinese": "B: 你想好了要买什么吗？",
+    "pinyin": "Nǐ xiǎng hǎo le yào mǎi shénme ma?",
+    "translation": "B: Você já decidiu o que quer comprar?",
     "tokens": [
       "你",
-      "想好",
+      "想",
+      "好",
+      "了",
       "要",
       "买",
       "什么",
-      "了",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
+        "word": "想",
+        "pinyin": "xiǎng",
+        "meaning": "pensar / querer"
       },
       {
         "id": 2,
-        "word": "想好",
-        "pinyin": "xiǎng hǎo",
-        "meaning": "decidir, ter uma ideia clara (ter pensado bem)"
+        "word": "好了",
+        "pinyin": "hǎole",
+        "meaning": "terminado / pronto"
       },
       {
         "id": 3,
-        "word": "要",
-        "pinyin": "yào",
-        "meaning": "querer, precisar"
-      },
-      {
-        "id": 4,
         "word": "买",
         "pinyin": "mǎi",
         "meaning": "comprar"
       },
       {
-        "id": 5,
+        "id": 4,
         "word": "什么",
         "pinyin": "shénme",
-        "meaning": "o quê, qual"
-      },
-      {
-        "id": 6,
-        "word": "了",
-        "pinyin": "le",
-        "meaning": "partícula de conclusão"
-      },
-      {
-        "id": 7,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "meaning": "o que"
       }
     ],
-    "id": "local-1772299501714-5",
+    "id": "local-1780202523440-5",
     "language": "Chinês"
   },
   {
-    "chinese": "还没有。你有什么好主意吗？",
-    "pinyin": "Hái méiyǒu. Nǐ yǒu shénme hǎo zhǔyì ma?",
-    "translation": "Ainda não. Você tem alguma boa ideia?",
+    "chinese": "A: 还没呢，你有什么好主意吗？",
+    "pinyin": "Hái méi ne, nǐ yǒu shénme hǎo zhǔyì ma?",
+    "translation": "A: Ainda não, você tem alguma boa ideia?",
     "tokens": [
       "还",
-      "没有",
-      "。",
+      "没",
+      "呢",
+      "，",
       "你",
       "有",
       "什么",
-      "好主意",
+      "好",
+      "主意",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "还",
-        "pinyin": "hái",
-        "meaning": "ainda"
+        "word": "还没",
+        "pinyin": "háiméi",
+        "meaning": "ainda não"
       },
       {
         "id": 2,
-        "word": "没有",
-        "pinyin": "méiyǒu",
-        "meaning": "não ter, ainda não"
+        "word": "什么",
+        "pinyin": "shénme",
+        "meaning": "qual / que"
       },
       {
         "id": 3,
-        "word": "你",
-        "pinyin": "nǐ",
-        "meaning": "você"
-      },
-      {
-        "id": 4,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 5,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê, qual"
-      },
-      {
-        "id": 6,
-        "word": "好主意",
-        "pinyin": "hǎo zhǔyì",
-        "meaning": "boa ideia"
-      },
-      {
-        "id": 7,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "word": "主意",
+        "pinyin": "zhǔyì",
+        "meaning": "ideia"
       }
     ],
-    "id": "local-1772299501714-6",
+    "id": "local-1780202523440-6",
     "language": "Chinês"
   },
   {
-    "chinese": "送餐具之类的结婚礼物很常见。",
-    "pinyin": "Sòng cānjù zhī lèi de jiéhūn lǐwù hěn chángjiàn.",
-    "translation": "Presentes de casamento como utensílios de mesa são muito comuns.",
+    "chinese": "B: 结婚送餐具啊什么的比较常见吧。",
+    "pinyin": "Jiéhūn sòng cānjù a shénme de bǐjiào chángjiàn ba.",
+    "translation": "B: É mais comum dar utensílios de mesa, como talheres, como presente de casamento.",
     "tokens": [
+      "结婚",
       "送",
       "餐具",
-      "之类",
+      "啊",
+      "什么",
       "的",
-      "结婚礼物",
-      "很",
+      "比较",
       "常见",
+      "吧",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "送",
-        "pinyin": "sòng",
-        "meaning": "dar (presente)"
+        "word": "结婚",
+        "pinyin": "jiéhūn",
+        "meaning": "casamento"
       },
       {
         "id": 2,
         "word": "餐具",
         "pinyin": "cānjù",
-        "meaning": "talheres, utensílios de mesa"
+        "meaning": "utensílios de mesa"
       },
       {
         "id": 3,
-        "word": "之类",
-        "pinyin": "zhī lèi",
-        "meaning": "e assim por diante, desse tipo, etc."
+        "word": "常见",
+        "pinyin": "chángjiàn",
+        "meaning": "comum"
       },
       {
         "id": 4,
-        "word": "结婚礼物",
-        "pinyin": "jiéhūn lǐwù",
-        "meaning": "presente de casamento"
-      },
-      {
-        "id": 5,
-        "word": "很",
-        "pinyin": "hěn",
-        "meaning": "muito"
-      },
-      {
-        "id": 6,
-        "word": "常见",
-        "pinyin": "chángjiàn",
-        "meaning": "comum, frequente"
+        "word": "送",
+        "pinyin": "sòng",
+        "meaning": "dar (de presente)"
       }
     ],
-    "id": "local-1772299501714-7",
+    "id": "local-1780202523440-7",
     "language": "Chinês"
   },
   {
-    "chinese": "那太普通了。我想要一些更特别的。",
-    "pinyin": "Nà tài pǔtōng le. Wǒ xiǎng yào yī xiē gèng tèbié de.",
-    "translation": "Isso é muito comum. Eu queria algo mais especial.",
+    "chinese": "A: 那些太普通了，我想再特别一些。",
+    "pinyin": "Nàxiē tàipǔtōng le, wǒ xiǎng zài tèbié yīxiē.",
+    "translation": "A: Aqueles são muito comuns, quero algo mais especial.",
     "tokens": [
-      "那",
-      "太",
-      "普通",
+      "那些",
+      "太普通",
       "了",
-      "。",
+      "，",
       "我",
       "想",
-      "要",
-      "一些",
-      "更",
+      "再",
       "特别",
-      "的",
+      "一些",
       "。"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "isso, aquilo"
+        "word": "那些",
+        "pinyin": "nàxiē",
+        "meaning": "aqueles"
       },
       {
         "id": 2,
-        "word": "太...了",
-        "pinyin": "tài...le",
-        "meaning": "muito, demais (expressando grau excessivo)"
+        "word": "普通",
+        "pinyin": "pǔtōng",
+        "meaning": "comum"
       },
       {
         "id": 3,
-        "word": "普通",
-        "pinyin": "pǔtōng",
-        "meaning": "comum, ordinário"
-      },
-      {
-        "id": 4,
-        "word": "我",
-        "pinyin": "wǒ",
-        "meaning": "eu"
-      },
-      {
-        "id": 5,
-        "word": "想要",
-        "pinyin": "xiǎng yào",
-        "meaning": "querer, desejar"
-      },
-      {
-        "id": 6,
-        "word": "一些",
-        "pinyin": "yī xiē",
-        "meaning": "alguns, um pouco de"
-      },
-      {
-        "id": 7,
-        "word": "更",
-        "pinyin": "gèng",
-        "meaning": "mais, ainda mais"
-      },
-      {
-        "id": 8,
         "word": "特别",
         "pinyin": "tèbié",
         "meaning": "especial"
       }
     ],
-    "id": "local-1772299501714-8",
+    "id": "local-1780202523440-8",
     "language": "Chinês"
   },
   {
-    "chinese": "那就送一些传统的吧。漆梳怎么样？",
-    "pinyin": "Nà jiù sòng yī xiē chuántǒng de ba. Qī shū zěnmeyàng?",
-    "translation": "Então, dê algo tradicional. Que tal um pente de laca?",
+    "chinese": "B: 那来个传统的吧，漆艺的梳子怎么样？",
+    "pinyin": "Nàlái gè chuántǒng de ba, qīyì de shūzi zěnmeyàng?",
+    "translation": "B: Então vamos com algo tradicional, que tal um pente de arte lacar?",
     "tokens": [
-      "那",
-      "就",
-      "送",
-      "一些",
+      "那来",
+      "个",
       "传统",
       "的",
       "吧",
-      "。",
-      "漆梳",
+      "，",
+      "漆艺",
+      "的",
+      "梳子",
       "怎么样",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "那",
-        "pinyin": "nà",
-        "meaning": "então, nesse caso"
-      },
-      {
-        "id": 2,
-        "word": "就",
-        "pinyin": "jiù",
-        "meaning": "então, precisamente"
-      },
-      {
-        "id": 3,
-        "word": "送",
-        "pinyin": "sòng",
-        "meaning": "dar (presente)"
-      },
-      {
-        "id": 4,
-        "word": "一些",
-        "pinyin": "yī xiē",
-        "meaning": "alguns"
-      },
-      {
-        "id": 5,
         "word": "传统",
         "pinyin": "chuántǒng",
         "meaning": "tradicional"
       },
       {
-        "id": 6,
-        "word": "吧",
-        "pinyin": "ba",
-        "meaning": "partícula de sugestão"
+        "id": 2,
+        "word": "漆艺",
+        "pinyin": "qīyì",
+        "meaning": "arte lacar"
       },
       {
-        "id": 7,
-        "word": "漆梳",
-        "pinyin": "qī shū",
-        "meaning": "pente de laca"
+        "id": 3,
+        "word": "梳子",
+        "pinyin": "shūzi",
+        "meaning": "pente"
       },
       {
-        "id": 8,
+        "id": 4,
         "word": "怎么样",
         "pinyin": "zěnmeyàng",
-        "meaning": "que tal?, como é?"
+        "meaning": "que tal"
       }
     ],
-    "id": "local-1772299501714-9",
+    "id": "local-1780202523440-9",
     "language": "Chinês"
   },
   {
-    "chinese": "哦？它有什么寓意吗？",
-    "pinyin": "Ó? Tā yǒu shénme yùyì ma?",
-    "translation": "Ah? Tem algum significado simbólico?",
+    "chinese": "A: 哦？这个有什么意义吗？",
+    "pinyin": "Ó? Zhège yǒu shénme yìyì ma?",
+    "translation": "A: Oh? Qual é o significado disso?",
     "tokens": [
       "哦",
       "？",
-      "它",
+      "这个",
       "有",
       "什么",
-      "寓意",
+      "意义",
       "吗",
       "？"
     ],
     "keywords": [
       {
         "id": 1,
-        "word": "哦",
-        "pinyin": "ó",
-        "meaning": "oh! (interjeição)"
+        "word": "这个",
+        "pinyin": "zhège",
+        "meaning": "este / isso"
       },
       {
         "id": 2,
-        "word": "它",
-        "pinyin": "tā",
-        "meaning": "ele/ela (para objetos/animais)"
+        "word": "有什么",
+        "pinyin": "yǒushénme",
+        "meaning": "tem o que / há algum"
       },
       {
         "id": 3,
-        "word": "有",
-        "pinyin": "yǒu",
-        "meaning": "ter"
-      },
-      {
-        "id": 4,
-        "word": "什么",
-        "pinyin": "shénme",
-        "meaning": "o quê, qual"
-      },
-      {
-        "id": 5,
-        "word": "寓意",
-        "pinyin": "yùyì",
-        "meaning": "significado simbólico, conotação"
-      },
-      {
-        "id": 6,
-        "word": "吗",
-        "pinyin": "ma",
-        "meaning": "partícula interrogativa"
+        "word": "意义",
+        "pinyin": "yìyì",
+        "meaning": "significado"
       }
     ],
-    "id": "local-1772299501714-10",
+    "id": "local-1780202523440-10",
     "language": "Chinês"
   },
   {
-    "chinese": "在中国，这寓意着两个人会永远在一起。",
-    "pinyin": "Zài Zhōngguó, zhè yùyì zhe liǎng gè rén huì yǒngyuǎn zài yīqǐ.",
-    "translation": "Na China, isso simboliza que duas pessoas estarão juntas para sempre.",
+    "chinese": "B: 在中国，这代表两个人会一直在一起。",
+    "pinyin": "Zài zhōngguó, zhè dàibiǎo liǎnggè rénhuì yìzhí zài yìqǐ.",
+    "translation": "B: Na China, isso representa que duas pessoas ficarão juntas para sempre.",
     "tokens": [
       "在",
       "中国",
       "，",
       "这",
-      "寓意",
-      "着",
-      "两",
-      "个",
-      "人",
-      "会",
-      "永远",
+      "代表",
+      "两个",
+      "人会",
+      "一直",
       "在",
       "一起",
       "。"
@@ -747,71 +502,45 @@
     "keywords": [
       {
         "id": 1,
-        "word": "在",
-        "pinyin": "zài",
-        "meaning": "em, na"
-      },
-      {
-        "id": 2,
         "word": "中国",
-        "pinyin": "Zhōngguó",
+        "pinyin": "zhōngguó",
         "meaning": "China"
       },
       {
+        "id": 2,
+        "word": "代表",
+        "pinyin": "dàibiǎo",
+        "meaning": "representar"
+      },
+      {
         "id": 3,
-        "word": "这",
-        "pinyin": "zhè",
-        "meaning": "este, isto"
+        "word": "两个人",
+        "pinyin": "liǎnggèrén",
+        "meaning": "duas pessoas"
       },
       {
         "id": 4,
-        "word": "寓意着",
-        "pinyin": "yùyì zhe",
-        "meaning": "simboliza que, significa que"
+        "word": "一直",
+        "pinyin": "yìzhí",
+        "meaning": "sempre / continuamente"
       },
       {
         "id": 5,
-        "word": "两",
-        "pinyin": "liǎng",
-        "meaning": "dois"
-      },
-      {
-        "id": 6,
-        "word": "个人",
-        "pinyin": "gè rén",
-        "meaning": "pessoa (com classificador)"
-      },
-      {
-        "id": 7,
-        "word": "会",
-        "pinyin": "huì",
-        "meaning": "irá (auxiliar de futuro)"
-      },
-      {
-        "id": 8,
-        "word": "永远",
-        "pinyin": "yǒngyuǎn",
-        "meaning": "para sempre, eternamente"
-      },
-      {
-        "id": 9,
         "word": "在一起",
-        "pinyin": "zài yīqǐ",
-        "meaning": "juntos"
+        "pinyin": "zàiyìqǐ",
+        "meaning": "juntas / junto"
       }
     ],
-    "id": "local-1772299501714-11",
+    "id": "local-1780202523440-11",
     "language": "Chinês"
   },
   {
-    "chinese": "太好了。我们去看看吧。",
-    "pinyin": "Tài hǎo le. Wǒmen qù kànkan ba.",
-    "translation": "Que ótimo! Vamos dar uma olhada.",
+    "chinese": "A: 真不错，我们去看看吧。",
+    "pinyin": "Zhēnbùcuò, wǒmen qù kànkàn ba.",
+    "translation": "A: Está muito bom, vamos dar uma olhada.",
     "tokens": [
-      "太",
-      "好",
-      "了",
-      "。",
+      "真不错",
+      "，",
       "我们",
       "去",
       "看看",
@@ -821,42 +550,30 @@
     "keywords": [
       {
         "id": 1,
-        "word": "太...了",
-        "pinyin": "tài...le",
-        "meaning": "muito, demais (para expressar admiração/grau)"
+        "word": "真不错",
+        "pinyin": "zhēnbùcuò",
+        "meaning": "muito bom / excelente"
       },
       {
         "id": 2,
-        "word": "好",
-        "pinyin": "hǎo",
-        "meaning": "bom, bem"
-      },
-      {
-        "id": 3,
         "word": "我们",
         "pinyin": "wǒmen",
         "meaning": "nós"
       },
       {
-        "id": 4,
+        "id": 3,
         "word": "去",
         "pinyin": "qù",
         "meaning": "ir"
       },
       {
-        "id": 5,
+        "id": 4,
         "word": "看看",
-        "pinyin": "kànkan",
-        "meaning": "dar uma olhada (reduplicação de 看)"
-      },
-      {
-        "id": 6,
-        "word": "吧",
-        "pinyin": "ba",
-        "meaning": "partícula de sugestão"
+        "pinyin": "kànkàn",
+        "meaning": "dar uma olhada / verificar"
       }
     ],
-    "id": "local-1772299501714-12",
+    "id": "local-1780202523440-12",
     "language": "Chinês"
   }
 ]
