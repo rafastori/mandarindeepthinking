@@ -822,8 +822,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             ) : (
                 <>
                     {/* Header com botões */}
-                    <div className="flex items-center justify-between mb-4 gap-2">
-                        <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-between mb-4 gap-2 flex-wrap">
+                        <div className="flex items-center gap-2 min-w-0">
                             <h2 className="font-bold text-slate-800 text-lg flex items-center gap-2">
                                 <Icon name="book-open" size={20} className="text-brand-600" />
                                 Leitura ({filteredData.length})
@@ -884,11 +884,11 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
 
                         {!selectionMode && !reorderMode ? (
-                            <div className="flex gap-2 items-center">
+                            <div className="flex gap-1.5 items-center shrink-0">
                                 {/* Toggle Estudo / Leitura Simples */}
                                 <button
                                     onClick={() => setReadingMode(readingMode === 'study' ? 'simple' : 'study')}
-                                    className={`px-2.5 py-1.5 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border ${readingMode === 'simple'
+                                    className={`px-2.5 py-1.5 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${readingMode === 'simple'
                                         ? 'bg-amber-500 text-white border-amber-500'
                                         : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'
                                     }`}
@@ -904,16 +904,18 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                             setLocalReorderData([...filteredData]);
                                             setReorderMode(true);
                                         }}
-                                        className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+                                        className="p-1.5 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors shrink-0"
+                                        title="Reordenar textos"
                                     >
-                                        <Icon name="arrow-up-right" size={16} /> Reordenar
+                                        <Icon name="arrow-up-down" size={18} />
                                     </button>
                                 )}
                                 <button
                                     onClick={() => setSelectionMode(true)}
-                                    className="px-3 py-1.5 text-sm font-semibold text-slate-500 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors"
+                                    className="p-1.5 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-colors shrink-0"
+                                    title="Selecionar textos"
                                 >
-                                    Selecionar
+                                    <Icon name="list-checks" size={18} />
                                 </button>
                             </div>
                         ) : (

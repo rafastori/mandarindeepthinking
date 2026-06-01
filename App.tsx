@@ -730,7 +730,7 @@ const App: React.FC = () => {
                 />
 
             )}
-            <main className={`flex-1 overflow-y-auto w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
+            <main className={`flex-1 overflow-y-auto overflow-x-hidden w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
                     {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Carregando dados locais...</div> : renderView()}
                 </div>
