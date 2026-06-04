@@ -83,9 +83,20 @@ export const useUserProfile = (userId: string | null | undefined) => {
         return () => { cancelled = true; };
     }, [userId]);
 
-    // Atualiza favoritos
-    const updateFavorites = useCallback(async (newIds: string[]) => {
+    // Atualiza favoritos (savedIds).
+    // Aceita um array OU uma função updater (prev => next). A forma de função lê a
+    // ÚLTIMA versão persistida em disco antes de aplicar — evita perder ids quando
+    // várias palavras são salvas em sequência rápida e o closure de quem chama ainda
+    // carrega um savedIds desatualizado (mesma proteção que updateStats já faz).
+    const updateFavorites = useCallback(async (update: string[] | ((prev: string[]) => string[])) => {
         if (!userId) return;
+        let newIds: string[];
+        if (typeof update === 'function') {
+            const currentProfile = await localDB.getProfile();
+            newIds = update(currentProfile.savedIds || []);
+        } else {
+            newIds = update;
+        }
         setSavedIds(newIds);
         await localDB.updateProfile({ savedIds: newIds });
     }, [userId]);

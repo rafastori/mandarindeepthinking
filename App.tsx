@@ -301,14 +301,18 @@ const App: React.FC = () => {
     };
 
     const toggleSave = (id: string) => {
-        const newIds = activeSavedIds.includes(id)
-            ? activeSavedIds.filter(i => i !== id)
-            : [...activeSavedIds, id];
+        // Usa updater funcional para evitar perder ids salvos em sequência rápida
+        // (closure de activeSavedIds podia estar desatualizado entre renders).
+        const toggle = (prev: string[]) =>
+            prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id];
 
-        if (user) updateCloudFavorites(newIds);
+        if (user) updateCloudFavorites(toggle);
         else {
-            setLocalSavedIds(newIds);
-            localStorage.setItem('mandarin_hsk_recovery', JSON.stringify(newIds));
+            setLocalSavedIds(prev => {
+                const newIds = toggle(prev);
+                localStorage.setItem('mandarin_hsk_recovery', JSON.stringify(newIds));
+                return newIds;
+            });
         }
     };
 
@@ -485,10 +489,18 @@ const App: React.FC = () => {
     /** Apaga vários itens de uma vez. NÃO pede confirmação aqui — caller já confirma. */
     const handleDeleteMany = async (ids: (string | number)[]) => {
         if (ids.length === 0) return;
-        // Remove dos savedIds qualquer um que estivesse marcado
-        const stringIds = ids.filter((id): id is string => typeof id === 'string');
-        for (const sid of stringIds) {
-            if (activeSavedIds.includes(sid)) toggleSave(sid);
+        // Remove dos savedIds, de uma vez, qualquer um que estivesse marcado.
+        // Uma única atualização funcional (em vez de um loop de toggleSave) evita
+        // race condition entre escritas concorrentes que poderiam perder remoções.
+        const removeSet = new Set(ids.filter((id): id is string => typeof id === 'string'));
+        if (removeSet.size > 0) {
+            const removeMany = (prev: string[]) => prev.filter(i => !removeSet.has(i));
+            if (user) updateCloudFavorites(removeMany);
+            else setLocalSavedIds(prev => {
+                const newIds = removeMany(prev);
+                localStorage.setItem('mandarin_hsk_recovery', JSON.stringify(newIds));
+                return newIds;
+            });
         }
         await deleteManyItems(ids);
     };

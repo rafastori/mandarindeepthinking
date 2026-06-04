@@ -126,8 +126,15 @@ const ReviewView: React.FC<ReviewViewProps> = ({
         });
 
         filteredData.forEach(item => {
-            // CASO 1: A palavra é um item importado (Novo sistema Firebase)
-            if (savedIds.includes(item.id.toString())) {
+            // CASO 1: A palavra é um card de palavra (type === 'word') OU está marcada em savedIds.
+            //
+            // IMPORTANTE: a aba de Leitura destaca QUALQUER item `type === 'word'`
+            // (ver savedWordsMap/wordColorMap em ReadingView), independente de savedIds.
+            // Se a Revisão exigisse savedIds, um card de palavra cujo id sumiu de
+            // savedIds (ex.: race condition ao salvar várias palavras em sequência)
+            // continuaria destacado na Leitura porém desapareceria da Revisão.
+            // Tratar todo card de palavra como salvo mantém as duas abas consistentes.
+            if (item.type === 'word' || savedIds.includes(item.id.toString())) {
                 items.push({
                     id: item.id.toString(),
                     word: item.chinese,
