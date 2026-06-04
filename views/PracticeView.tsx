@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, Variants, PanInfo, useMotionValue, useTransform } from 'framer-motion';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
@@ -142,7 +143,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
     const mins = Math.floor(totalSecs / 60);
     const secs = totalSecs % 60;
 
-    return (
+    return createPortal(
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -260,7 +261,8 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                     </motion.button>
                 </div>
             </motion.div>
-        </motion.div>
+        </motion.div>,
+        document.body
     );
 };
 
@@ -555,6 +557,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         const snapshot = dataSnapshotRef.current || { data, savedIds };
         const currentData = snapshot.data;
         const list: any[] = [];
+        const coveredWords = new Set<string>();
 
         currentData.forEach(item => {
             if (item.type === 'word') return;
@@ -565,6 +568,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 if (!cleanToken) return;
                 const savedWord = savedWordsMap.get(cleanToken);
                 if (savedWord) {
+                    coveredWords.add(cleanToken);
                     list.push({
                         id: savedWord.id, word: savedWord.word,
                         wordMeaning: savedWord.meaning, sentence,
@@ -572,6 +576,24 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                         language: item.language || savedWord.language
                     });
                 }
+            });
+        });
+
+        // Segundo passo: garante que TODA palavra salva tenha ao menos uma questão
+        // (paridade com a Revisão), incluindo cards de palavra que não aparecem
+        // dentro de nenhuma frase salva. Sem isso, vocabulário avulso some da Prática.
+        const itemById = new Map(currentData.map(d => [d.id.toString(), d]));
+        savedWordsMap.forEach((savedWord, key) => {
+            if (coveredWords.has(key)) return;
+            coveredWords.add(key);
+            const source = itemById.get(savedWord.id);
+            list.push({
+                id: savedWord.id, word: savedWord.word,
+                wordMeaning: savedWord.meaning,
+                sentence: source?.originalSentence || savedWord.word,
+                translation: source?.translation || savedWord.meaning,
+                pinyin: savedWord.pinyin,
+                language: savedWord.language
             });
         });
 
@@ -730,7 +752,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             <div className="flex flex-col items-center justify-center h-full text-center p-6">
                 <EmptyState msg="Prática indisponível" icon="edit-3" />
                 <p className="text-slate-400 text-sm mt-2">
-                    Salve pelo menos 4 palavras com frases de contexto para liberar a prática.
+                    Salve pelo menos 4 palavras na Leitura para liberar a prática.
                 </p>
             </div>
         );
