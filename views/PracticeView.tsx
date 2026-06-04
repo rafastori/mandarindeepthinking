@@ -147,7 +147,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-4 pb-0 sm:pb-4"
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
         >
             {/* Confetti layer */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden z-[51]">
@@ -172,8 +172,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                 initial={{ y: 80, scale: 0.88, opacity: 0 }}
                 animate={{ y: 0, scale: 1, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 135, damping: 16, delay: 0.1 }}
-                className="relative bg-white rounded-t-3xl sm:rounded-3xl p-7 w-full max-w-sm shadow-2xl z-[52] max-h-[92vh] overflow-y-auto"
-                style={{ paddingBottom: 'calc(1.75rem + env(safe-area-inset-bottom))' }}
+                className="relative bg-white rounded-3xl p-7 w-full max-w-sm shadow-2xl z-[52] max-h-[90vh] overflow-y-auto"
             >
                 {/* Decorative top gradient */}
                 <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-brand-50 to-transparent rounded-t-3xl pointer-events-none" />
