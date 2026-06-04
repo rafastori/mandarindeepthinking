@@ -580,18 +580,40 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         });
 
         // Segundo passo: garante que TODA palavra salva tenha ao menos uma questão
-        // (paridade com a Revisão), incluindo cards de palavra que não aparecem
-        // dentro de nenhuma frase salva. Sem isso, vocabulário avulso some da Prática.
-        const itemById = new Map(currentData.map(d => [d.id.toString(), d]));
+        // (paridade com a Revisão). As palavras salvas na Leitura viram itens
+        // `type: 'word'` (que o laço acima ignora) e guardam a frase de origem em
+        // `originalSentence`, então nunca geravam questão. Aqui recuperamos a frase
+        // de contexto de cada palavra salva e criamos a questão que faltava.
+        const contextByKey = new Map<string, { sentence: string; translation: string }>();
+        currentData.forEach(item => {
+            // Card de palavra: usa a frase original de onde a palavra foi salva.
+            if (item.type === 'word' || item.tokens?.length === 1) {
+                const wk = (item.chinese || '').toLowerCase().trim();
+                if (wk && !contextByKey.has(wk)) {
+                    contextByKey.set(wk, {
+                        sentence: item.originalSentence || item.chinese,
+                        translation: item.translation,
+                    });
+                }
+            }
+            // Palavra-chave dentro de um texto: usa a frase do texto como contexto.
+            item.keywords?.forEach(k => {
+                const kk = k.word.toLowerCase().trim();
+                if (kk && !contextByKey.has(kk)) {
+                    contextByKey.set(kk, { sentence: item.chinese, translation: item.translation });
+                }
+            });
+        });
+
         savedWordsMap.forEach((savedWord, key) => {
             if (coveredWords.has(key)) return;
             coveredWords.add(key);
-            const source = itemById.get(savedWord.id);
+            const ctx = contextByKey.get(key);
             list.push({
                 id: savedWord.id, word: savedWord.word,
                 wordMeaning: savedWord.meaning,
-                sentence: source?.originalSentence || savedWord.word,
-                translation: source?.translation || savedWord.meaning,
+                sentence: ctx?.sentence || savedWord.word,
+                translation: ctx?.translation || savedWord.meaning,
                 pinyin: savedWord.pinyin,
                 language: savedWord.language
             });
