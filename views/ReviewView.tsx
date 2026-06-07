@@ -229,6 +229,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
         setSelectionMode(false);
         setSelectedIds(new Set());
         setShowBulkLangDropdown(false);
+        setEditingLangId(null);
     };
 
     const handleLanguageChange = (itemId: string, newLang: SupportedLanguage) => {
@@ -528,7 +529,8 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                             {item.word}
                                         </h3>
                                         <div className="flex items-center gap-1 relative">
-                                            {/* Tag de idioma clicável */}
+                                            {/* Tag de idioma — visível apenas no modo Seleção */}
+                                            {selectionMode && (<>
                                             <button
                                                 onClick={(e) => {
                                                     e.stopPropagation();
@@ -558,6 +560,7 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                                     ))}
                                                 </div>
                                             )}
+                                            </>)}
 
                                             {!selectionMode && (
                                                 <button
@@ -740,7 +743,6 @@ const ReviewView: React.FC<ReviewViewProps> = ({
                                             <h3 className={`${isGerman ? 'font-sans' : 'font-chinese'} text-xl font-bold text-violet-700 truncate`}>
                                                 {item.word}
                                             </h3>
-                                            <span className="text-[10px] font-bold text-violet-400 uppercase">{item.language || item.sentence.language || 'zh'}</span>
                                             <button
                                                 onClick={(e) => {
                                                     e.stopPropagation();

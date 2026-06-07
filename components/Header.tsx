@@ -64,12 +64,7 @@ const Header: React.FC<HeaderProps> = ({
     activeTab
 }) => {
     return (
-        <header className="bg-brand-700 text-white px-4 py-3 flex justify-between items-center shadow-md flex-shrink-0 z-20">
-            <div className="flex items-center gap-2">
-                <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain rounded-lg shadow-sm" />
-                <h1 className="text-lg font-bold tracking-tight"></h1>
-            </div>
-
+        <header className="bg-brand-700 text-white px-4 py-3 flex justify-end items-center shadow-md flex-shrink-0 z-20">
             <div className="flex items-center gap-3">
                 {/* Gamification Stats */}
                 <div className="flex items-center gap-1 bg-amber-500/20 px-2 py-1 rounded-full" title={`${points} pontos`}>

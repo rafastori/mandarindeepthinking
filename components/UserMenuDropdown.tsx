@@ -25,8 +25,13 @@ interface UserMenuDropdownProps {
 }
 
 /**
- * Menu dropdown exibido ao clicar no avatar do usuário
- * Contém opções: Conectar Puter, Exportar, Importar, Limpar Dados, Sair
+ * Menu dropdown exibido ao clicar no avatar do usuário.
+ * Organizado em 3 grupos para ocupar menos espaço:
+ *  - Tutorial / Dicas (item)
+ *  - Áudio (seção): Puter + Reconhecimento de voz (Nativo/Whisper)
+ *  - Dados (seção): Exportar/Importar Dados, Exportar/Importar Texto/Pasta, Backup/Restaurar na Nuvem, Limpar
+ *  - Sair da Conta (item)
+ * TODO: adicionar aqui o toggle "Beta" para reativar a aba Jogo.
  */
 export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     user,
@@ -48,6 +53,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     onOpenTutorial
 }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [openSection, setOpenSection] = useState<'audio' | 'dados' | null>(null);
     const [showImportModal, setShowImportModal] = useState(false);
     const [importFile, setImportFile] = useState<File | null>(null);
     const [importing, setImporting] = useState(false);
@@ -130,6 +136,9 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
         setImportFile(null);
     };
 
+    // Estilo base dos itens dentro de uma seção (sub-itens compactos)
+    const subItem = "w-full flex items-center gap-3 px-3 py-2 text-left rounded-lg text-slate-700 transition-colors disabled:opacity-50";
+
     return (
         <>
             <div className="relative" ref={menuRef}>
@@ -187,190 +196,206 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
 
                             <div className="h-px bg-slate-100 my-2" />
 
-                            {/* Conectar ao Puter */}
-                            {!isPuterConnected && (
-                                <button
-                                    onClick={() => handleAction(onConnectPuter)}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-blue-50 text-slate-700 hover:text-blue-700 transition-colors"
-                                >
+                            {/* ===== Seção: Áudio ===== */}
+                            <button
+                                onClick={() => setOpenSection(openSection === 'audio' ? null : 'audio')}
+                                className="w-full flex items-center justify-between gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-slate-50 text-slate-700 transition-colors"
+                            >
+                                <div className="flex items-center gap-3">
                                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                                         <Icon name="volume-2" size={16} className="text-blue-600" />
                                     </div>
                                     <div>
-                                        <p className="text-sm font-medium">Conectar ao Puter</p>
-                                        <p className="text-xs text-slate-500">Áudio com IA</p>
+                                        <p className="text-sm font-semibold">Áudio</p>
+                                        <p className="text-xs text-slate-500">Puter e reconhecimento de voz</p>
                                     </div>
-                                </button>
-                            )}
+                                </div>
+                                <Icon name={openSection === 'audio' ? 'chevron-up' : 'chevron-down'} size={18} className="text-slate-400" />
+                            </button>
 
-                            {isPuterConnected && (
-                                <button
-                                    onClick={() => {
-                                        if (window.confirm("Deseja sair da conta Puter?")) {
-                                            handleAction(onDisconnectPuter);
-                                        }
-                                    }}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-orange-50 text-slate-700 hover:text-orange-700 transition-colors"
-                                >
-                                    <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
-                                        <Icon name="log-out" size={16} className="text-orange-600" />
+                            {openSection === 'audio' && (
+                                <div className="mt-1 ml-3 pl-3 border-l-2 border-slate-100 space-y-1 animate-in fade-in slide-in-from-top-1">
+                                    {/* Conectar / Sair do Puter */}
+                                    {!isPuterConnected ? (
+                                        <button
+                                            onClick={() => handleAction(onConnectPuter)}
+                                            className={`${subItem} hover:bg-blue-50 hover:text-blue-700`}
+                                        >
+                                            <Icon name="zap" size={16} className="text-blue-600 flex-shrink-0" />
+                                            <div>
+                                                <p className="text-sm font-medium">Conectar ao Puter</p>
+                                                <p className="text-xs text-slate-500">Áudio com IA</p>
+                                            </div>
+                                        </button>
+                                    ) : (
+                                        <button
+                                            onClick={() => {
+                                                if (window.confirm("Deseja sair da conta Puter?")) {
+                                                    handleAction(onDisconnectPuter);
+                                                }
+                                            }}
+                                            className={`${subItem} hover:bg-orange-50 hover:text-orange-700`}
+                                        >
+                                            <Icon name="log-out" size={16} className="text-orange-600 flex-shrink-0" />
+                                            <div>
+                                                <p className="text-sm font-medium">Sair do Puter</p>
+                                                <p className="text-xs text-slate-500">Desconectar áudio IA</p>
+                                            </div>
+                                        </button>
+                                    )}
+
+                                    {/* Reconhecimento de voz */}
+                                    <div className="px-3 py-2">
+                                        <p className="text-[10px] text-slate-400 uppercase font-bold mb-2 flex items-center gap-1">
+                                            <Icon name="mic" size={12} /> Reconhecimento de Voz
+                                        </p>
+                                        <div className="flex bg-slate-100 p-1 rounded-lg">
+                                            <button
+                                                onClick={() => onEngineChange('native')}
+                                                className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'native' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                            >
+                                                <Icon name="chrome" size={10} /> Nativo
+                                            </button>
+                                            <button
+                                                onClick={() => onEngineChange('whisper')}
+                                                className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'whisper' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                            >
+                                                <Icon name="zap" size={10} /> Whisper
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="text-sm font-medium">Sair do Puter</p>
-                                        <p className="text-xs text-slate-500">Desconectar áudio IA</p>
-                                    </div>
-                                </button>
+                                </div>
                             )}
 
                             <div className="h-px bg-slate-100 my-2" />
 
-                            {/* Configurações de Voz */}
-                            <div className="px-3 py-2">
-                                <p className="text-[10px] text-slate-400 uppercase font-bold mb-2 flex items-center gap-1">
-                                    <Icon name="mic" size={12} /> Reconhecimento de Voz
-                                </p>
-                                <div className="flex bg-slate-100 p-1 rounded-lg">
+                            {/* ===== Seção: Dados ===== */}
+                            <button
+                                onClick={() => setOpenSection(openSection === 'dados' ? null : 'dados')}
+                                className="w-full flex items-center justify-between gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-slate-50 text-slate-700 transition-colors"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
+                                        <Icon name="save" size={16} className="text-emerald-600" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-semibold">Dados</p>
+                                        <p className="text-xs text-slate-500">Backup, exportar, importar, limpar</p>
+                                    </div>
+                                </div>
+                                <Icon name={openSection === 'dados' ? 'chevron-up' : 'chevron-down'} size={18} className="text-slate-400" />
+                            </button>
+
+                            {openSection === 'dados' && (
+                                <div className="mt-1 ml-3 pl-3 border-l-2 border-slate-100 space-y-1 animate-in fade-in slide-in-from-top-1">
+                                    {/* Exportar Dados (backup completo) */}
                                     <button
-                                        onClick={() => onEngineChange('native')}
-                                        className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'native' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                        onClick={() => handleAction(onExportData)}
+                                        className={`${subItem} hover:bg-emerald-50 hover:text-emerald-700`}
                                     >
-                                        <Icon name="chrome" size={10} /> Nativo
+                                        <Icon name="download" size={16} className="text-emerald-600 flex-shrink-0" />
+                                        <div>
+                                            <p className="text-sm font-medium">Exportar Dados</p>
+                                            <p className="text-xs text-slate-500">Backup completo (JSON)</p>
+                                        </div>
                                     </button>
+
+                                    {/* Importar Dados */}
                                     <button
-                                        onClick={() => onEngineChange('whisper')}
-                                        className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-[10px] font-bold transition-all ${engine === 'whisper' ? 'bg-white text-brand-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                                        onClick={() => fileInputRef.current?.click()}
+                                        className={`${subItem} hover:bg-purple-50 hover:text-purple-700`}
                                     >
-                                        <Icon name="zap" size={10} /> Whisper
+                                        <Icon name="upload" size={16} className="text-purple-600 flex-shrink-0" />
+                                        <div>
+                                            <p className="text-sm font-medium">Importar Dados</p>
+                                            <p className="text-xs text-slate-500">Restaurar backup</p>
+                                        </div>
+                                    </button>
+
+                                    {/* Exportar Texto/Pasta App */}
+                                    {onExportTextApp && (
+                                        <button
+                                            onClick={() => handleAction(onExportTextApp)}
+                                            className={`${subItem} hover:bg-teal-50 hover:text-teal-700`}
+                                        >
+                                            <Icon name="file-text" size={16} className="text-teal-600 flex-shrink-0" />
+                                            <div>
+                                                <p className="text-sm font-medium">Exportar Texto/Pasta</p>
+                                                <p className="text-xs text-slate-500">Selecionados (sem stats)</p>
+                                            </div>
+                                        </button>
+                                    )}
+
+                                    {/* Importar Texto/Pasta */}
+                                    {onImportTextFile && (
+                                        <button
+                                            onClick={() => textFileInputRef.current?.click()}
+                                            disabled={importingText}
+                                            className={`${subItem} hover:bg-cyan-50 hover:text-cyan-700`}
+                                        >
+                                            {importingText ? (
+                                                <div className="w-4 h-4 border-2 border-cyan-200 border-t-cyan-600 rounded-full animate-spin flex-shrink-0" />
+                                            ) : (
+                                                <Icon name="file" size={16} className="text-cyan-600 flex-shrink-0" />
+                                            )}
+                                            <div>
+                                                <p className="text-sm font-medium">Importar Texto/Pasta</p>
+                                                <p className="text-xs text-slate-500">JSON (sem stats)</p>
+                                            </div>
+                                        </button>
+                                    )}
+
+                                    {/* Backup na Nuvem */}
+                                    {onBackupToCloud && (
+                                        <button
+                                            onClick={() => handleAction(onBackupToCloud)}
+                                            disabled={isSyncing}
+                                            className={`${subItem} hover:bg-sky-50 hover:text-sky-700`}
+                                        >
+                                            {isSyncing ? (
+                                                <div className="w-4 h-4 border-2 border-sky-200 border-t-sky-600 rounded-full animate-spin flex-shrink-0" />
+                                            ) : (
+                                                <Icon name="upload" size={16} className="text-sky-600 flex-shrink-0" />
+                                            )}
+                                            <div>
+                                                <p className="text-sm font-medium">Backup na Nuvem</p>
+                                                <p className="text-xs text-slate-500">Salvar dados online</p>
+                                            </div>
+                                        </button>
+                                    )}
+
+                                    {/* Restaurar da Nuvem */}
+                                    {onRestoreFromCloud && (
+                                        <button
+                                            onClick={() => handleAction(onRestoreFromCloud)}
+                                            disabled={isSyncing}
+                                            className={`${subItem} hover:bg-indigo-50 hover:text-indigo-700`}
+                                        >
+                                            {isSyncing ? (
+                                                <div className="w-4 h-4 border-2 border-indigo-200 border-t-indigo-600 rounded-full animate-spin flex-shrink-0" />
+                                            ) : (
+                                                <Icon name="download" size={16} className="text-indigo-600 flex-shrink-0" />
+                                            )}
+                                            <div>
+                                                <p className="text-sm font-medium">Restaurar da Nuvem</p>
+                                                <p className="text-xs text-slate-500">Baixar último backup</p>
+                                            </div>
+                                        </button>
+                                    )}
+
+                                    {/* Limpar Dados */}
+                                    <button
+                                        onClick={() => handleAction(onResetAccount)}
+                                        className={`${subItem} hover:bg-red-50 hover:text-red-700`}
+                                    >
+                                        <Icon name="trash-2" size={16} className="text-red-500 flex-shrink-0" />
+                                        <div>
+                                            <p className="text-sm font-medium">Limpar Dados</p>
+                                            <p className="text-xs text-slate-500">Resetar progresso</p>
+                                        </div>
                                     </button>
                                 </div>
-                            </div>
-
-                            <div className="h-px bg-slate-100 my-2" />
-
-                            {/* Exportar Dados */}
-                            <button
-                                onClick={() => handleAction(onExportData)}
-                                className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 transition-colors"
-                            >
-                                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                                    <Icon name="download" size={16} className="text-emerald-600" />
-                                </div>
-                                <div>
-                                    <p className="text-sm font-medium">Exportar Dados</p>
-                                    <p className="text-xs text-slate-500">Baixar backup JSON</p>
-                                </div>
-                            </button>
-
-                            {/* Importar Dados */}
-                            <button
-                                onClick={() => fileInputRef.current?.click()}
-                                className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-purple-50 text-slate-700 hover:text-purple-700 transition-colors"
-                            >
-                                <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                                    <Icon name="upload" size={16} className="text-purple-600" />
-                                </div>
-                                <div>
-                                    <p className="text-sm font-medium">Importar Dados</p>
-                                    <p className="text-xs text-slate-500">Restaurar backup</p>
-                                </div>
-                            </button>
-
-                            <div className="h-px bg-slate-100 my-2" />
-
-                            {/* Exportar Texto/Pasta App */}
-                            {onExportTextApp && (
-                                <button
-                                    onClick={() => handleAction(onExportTextApp)}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-teal-50 text-slate-700 hover:text-teal-700 transition-colors"
-                                >
-                                    <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
-                                        <Icon name="file-text" size={16} className="text-teal-600" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-medium">Exportar Texto/Pasta App</p>
-                                        <p className="text-xs text-slate-500">Selecionados (sem stats)</p>
-                                    </div>
-                                </button>
                             )}
-
-                            {/* Importar Texto/Pasta */}
-                            {onImportTextFile && (
-                                <button
-                                    onClick={() => textFileInputRef.current?.click()}
-                                    disabled={importingText}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-cyan-50 text-slate-700 hover:text-cyan-700 transition-colors disabled:opacity-50"
-                                >
-                                    <div className="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center">
-                                        {importingText ? (
-                                            <div className="w-4 h-4 border-2 border-cyan-200 border-t-cyan-600 rounded-full animate-spin" />
-                                        ) : (
-                                            <Icon name="file-plus" size={16} className="text-cyan-600" />
-                                        )}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-medium">Importar Texto/Pasta</p>
-                                        <p className="text-xs text-slate-500">JSON (sem stats)</p>
-                                    </div>
-                                </button>
-                            )}
-
-                            <div className="h-px bg-slate-100 my-2" />
-
-                            {/* ☁️ Backup na Nuvem */}
-                            {onBackupToCloud && (
-                                <button
-                                    onClick={() => handleAction(onBackupToCloud)}
-                                    disabled={isSyncing}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-sky-50 text-slate-700 hover:text-sky-700 transition-colors disabled:opacity-50"
-                                >
-                                    <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center">
-                                        {isSyncing ? (
-                                            <div className="w-4 h-4 border-2 border-sky-200 border-t-sky-600 rounded-full animate-spin" />
-                                        ) : (
-                                            <Icon name="upload" size={16} className="text-sky-600" />
-                                        )}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-medium">Backup na Nuvem</p>
-                                        <p className="text-xs text-slate-500">Salvar dados online</p>
-                                    </div>
-                                </button>
-                            )}
-
-                            {/* ☁️ Restaurar da Nuvem */}
-                            {onRestoreFromCloud && (
-                                <button
-                                    onClick={() => handleAction(onRestoreFromCloud)}
-                                    disabled={isSyncing}
-                                    className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 transition-colors disabled:opacity-50"
-                                >
-                                    <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
-                                        {isSyncing ? (
-                                            <div className="w-4 h-4 border-2 border-indigo-200 border-t-indigo-600 rounded-full animate-spin" />
-                                        ) : (
-                                            <Icon name="download" size={16} className="text-indigo-600" />
-                                        )}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-medium">Restaurar da Nuvem</p>
-                                        <p className="text-xs text-slate-500">Baixar último backup</p>
-                                    </div>
-                                </button>
-                            )}
-
-                            {/* Limpar Dados */}
-                            <button
-                                onClick={() => handleAction(onResetAccount)}
-                                className="w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg hover:bg-red-50 text-slate-700 hover:text-red-700 transition-colors"
-                            >
-                                <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center">
-                                    <Icon name="trash-2" size={16} className="text-slate-500" />
-                                </div>
-                                <div>
-                                    <p className="text-sm font-medium">Limpar Dados</p>
-                                    <p className="text-xs text-slate-500">Resetar progresso</p>
-                                </div>
-                            </button>
 
                             <div className="h-px bg-slate-100 my-2" />
 
@@ -488,4 +513,3 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
 };
 
 export default UserMenuDropdown;
-

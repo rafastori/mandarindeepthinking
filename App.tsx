@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import { auth, googleProvider } from './services/firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';
 import Header from './components/Header';
@@ -9,10 +9,6 @@ import PuterSuggestionModal from './components/PuterSuggestionModal';
 import ReadingView from './views/ReadingView';
 import ReviewView from './views/ReviewView';
 import PracticeView from './views/PracticeView';
-import LingoArenaView from './views/LingoArenaView';
-import PolyQuestView from './views/PolyQuestView';
-import DominoView from './views/DominoView';
-import GameSelector from './components/GameSelector';
 import LabView from './views/LabView';
 import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
@@ -39,6 +35,13 @@ import { useVoiceRecording } from './hooks/useVoiceRecording';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword, SessionStats, StatsHistory } from './types';
 
+// Views de jogo carregadas sob demanda (lazy) — ficam FORA do bundle inicial.
+// A aba Jogo está temporariamente desativada (removida do footer); reativar via toggle Beta.
+const LingoArenaView = lazy(() => import('./views/LingoArenaView'));
+const PolyQuestView = lazy(() => import('./views/PolyQuestView'));
+const DominoView = lazy(() => import('./views/DominoView'));
+const GameSelector = lazy(() => import('./components/GameSelector'));
+
 const PUTER_SUGGESTION_KEY = 'puter_suggestion_shown';
 
 const App: React.FC = () => {
@@ -57,6 +60,7 @@ const App: React.FC = () => {
     const [showGlobalFolderTree, setShowGlobalFolderTree] = useState(false);
     const [finalSessionStats, setFinalSessionStats] = useState<SessionStats | null>(null);
     const sessionCorrectWordsRef = useRef<string[]>([]);
+    const currentSessionIdRef = useRef<string>('');
     const [showTutorial, setShowTutorial] = useState(false);
     const [showNeuralSelect, setShowNeuralSelect] = useState(false);
     const [neuralWord, setNeuralWord] = useState<string | null>(null);
@@ -71,9 +75,9 @@ const App: React.FC = () => {
     }, [isColorHighlightEnabled]);
     const [showFullStats, setShowFullStats] = useState(false);
 
-    const { items: localItems, addItem, deleteItem, deleteManyItems, updateItem, reorderItems, clearLibrary, exportData, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
+    const { items: localItems, addItem, deleteItem, deleteManyItems, updateItem, reorderItems, clearLibrary, exportData, exportFullBackup, importData, loading: itemsLoading, renameFolderLocal, deleteFolderLocal, uncategorizeFolderLocal } = useStudyItems(user?.uid);
     const detailedStats = useDetailedStats();
-    const { savedIds: cloudSavedIds, stats: cloudStats, totalScore: cloudTotalScore, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
+    const { savedIds: cloudSavedIds, stats: cloudStats, activeFolderFilters, profileLoaded, updateFavorites: updateCloudFavorites, updateStats: updateCloudStats, updateFolderFilters, updateFavoriteConfig: updateCloudFavoriteConfig } = useUserProfile(user?.uid);
     const { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing } = useCloudSync(user?.uid);
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername, speak } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
@@ -505,13 +509,9 @@ const App: React.FC = () => {
         await deleteManyItems(ids);
     };
 
-    // Wrapper para exportar dados completos (inclui profile)
+    // Wrapper para exportar backup completo (itens + profile + comentários + sessões)
     const handleExportData = () => {
-        exportData({
-            savedIds: cloudSavedIds,
-            stats: cloudStats,
-            totalScore: cloudTotalScore
-        });
+        exportFullBackup();
     };
 
     // Wrapper para importar dados e processar profile
@@ -557,22 +557,49 @@ const App: React.FC = () => {
         }
     };
 
-    // Handle ending session (shows summary)
+    // Garante um id de sessão estável (gera sob demanda se ainda não existir).
+    const ensureSessionId = useCallback(() => {
+        if (!currentSessionIdRef.current) {
+            currentSessionIdRef.current = (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString());
+        }
+        return currentSessionIdRef.current;
+    }, []);
+
+    // Persiste (append/upsert) a sessão ATUAL no IndexedDB usando o id estável.
+    // NÃO encerra a sessão — grava o acumulado (Leitura + Revisão + ...). Chamado a cada
+    // troca de aba e quando o app vai para segundo plano. Como o id é estável, regravar
+    // atualiza o MESMO registro (não cria sessões novas).
+    const saveCurrentSessionLocally = useCallback(() => {
+        const s = gamification.sessionStats;
+        const hasRealData = s.wordsReviewed > 0 || Object.values(s.tabTime).some(t => t > 0);
+        if (!hasRealData) return;
+
+        const sessionErrors = (activeStats.history || []).slice(0, s.wrongAnswers);
+        detailedStats.saveSession({
+            id: ensureSessionId(),
+            date: new Date(s.startTime).toLocaleDateString('sv-SE'),
+            startTime: s.startTime,
+            endTime: Date.now(),
+            wordsReviewed: s.wordsReviewed,
+            correctAnswers: s.correctAnswers,
+            wrongAnswers: s.wrongAnswers,
+            tabTime: s.tabTime,
+            pointsEarned: s.pointsEarned,
+            wordsStudied: [],
+            errorsLog: sessionErrors
+        });
+    }, [gamification.sessionStats, activeStats.history, detailedStats, ensureSessionId]);
+
+    // Encerra a sessão (sair do app / logout): faz o flush dos stats e grava o registro FINAL
+    // com o MESMO id estável da gravação incremental (upsert — não cria sessão nova).
     const handleEndSession = useCallback(() => {
         const stats = gamification.endSession();
-        setFinalSessionStats(stats);
-        setShowSessionSummary(true);
 
-        // Somente salva se houver dados reais de estudo (evita spans vazios poluindo o db e os gráficos)
-        if (stats.wordsReviewed > 0 || stats.tabTime['leitura'] > 0 || Object.values(stats.tabTime).some(t => t > 60)) {
-            const id = crypto.randomUUID ? crypto.randomUUID() : Date.now().toString();
-            const date = new Date(stats.startTime).toLocaleDateString('sv-SE');
-
+        if (stats.wordsReviewed > 0 || Object.values(stats.tabTime).some(t => t > 0)) {
             const sessionErrors = (activeStats.history || []).slice(0, stats.wrongAnswers);
-
             detailedStats.saveSession({
-                id,
-                date,
+                id: ensureSessionId(),
+                date: new Date(stats.startTime).toLocaleDateString('sv-SE'),
                 startTime: stats.startTime,
                 endTime: stats.endTime || Date.now(),
                 wordsReviewed: stats.wordsReviewed,
@@ -584,20 +611,37 @@ const App: React.FC = () => {
                 errorsLog: sessionErrors
             });
         }
-    }, [gamification, activeStats.history, detailedStats]);
+    }, [gamification, activeStats.history, detailedStats, ensureSessionId]);
 
-    // Safety net: Save session when the app is closed/reloaded
+    // Refs estáveis para os handlers de sessão (evita re-subscrever listeners a cada render).
+    const endSessionRef = useRef(handleEndSession);
+    const saveSessionRef = useRef(saveCurrentSessionLocally);
+    endSessionRef.current = handleEndSession;
+    saveSessionRef.current = saveCurrentSessionLocally;
+
+    // Persiste a sessão (append/upsert) ao TROCAR de aba — não encerra a sessão.
+    useEffect(() => {
+        if (!currentSessionIdRef.current) return; // a sessão ainda não começou
+        saveSessionRef.current();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [tab]);
+
+    // Safety net: persiste ao ir para 2º plano (mais confiável no mobile) e finaliza ao
+    // fechar/recarregar o app. A sessão só é encerrada de fato ao sair do app.
     useEffect(() => {
         const handleBeforeUnload = () => {
-            if (!showIntro && gamification.sessionStats.wordsReviewed > 0) {
-                // Síncrono para tentar salvar antes do unload
-                handleEndSession();
-            }
+            if (!showIntro) endSessionRef.current();
         };
-
+        const handleVisibility = () => {
+            if (document.hidden && !showIntro) saveSessionRef.current();
+        };
         window.addEventListener('beforeunload', handleBeforeUnload);
-        return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-    }, [showIntro, gamification.sessionStats.wordsReviewed, handleEndSession]);
+        document.addEventListener('visibilitychange', handleVisibility);
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+            document.removeEventListener('visibilitychange', handleVisibility);
+        };
+    }, [showIntro]);
 
     if (authLoading) return <div className="h-screen w-full flex items-center justify-center text-slate-400">Carregando...</div>;
 
@@ -681,10 +725,13 @@ const App: React.FC = () => {
     const handleStartSession = () => {
         gamification.startSession();
         sessionCorrectWordsRef.current = [];
+        // Novo id estável para a sessão desta abertura do app (uma sessão por abertura).
+        currentSessionIdRef.current = (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString());
         setShowIntro(false);
     };
 
     const handleOpenSessionSummary = () => {
+        saveCurrentSessionLocally(); // upsert do estado atual (não encerra a sessão)
         setFinalSessionStats({
             ...gamification.sessionStats,
             endTime: Date.now()
@@ -744,7 +791,11 @@ const App: React.FC = () => {
             )}
             <main className={`flex-1 overflow-y-auto overflow-x-hidden w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
-                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Carregando dados locais...</div> : renderView()}
+                    {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Carregando dados locais...</div> : (
+                        <Suspense fallback={<div className="p-10 text-center text-slate-300">Carregando…</div>}>
+                            {renderView()}
+                        </Suspense>
+                    )}
                 </div>
             </main>
             {!isFullscreenGame && <Navigation activeTab={tab} onTabChange={setTab} />}
@@ -794,10 +845,11 @@ const App: React.FC = () => {
                     ignoredReviewWords={activeStats.ignoredReviewWords || []}
                     onToggleIgnore={handleToggleIgnoreWord}
                     onClose={() => {
-                        handleEndSession(); // Salva a sessão no momento em que a fecha (para não perder os dados e contar no tempo de permanência final)
+                        // Sessão é contínua (uma por abertura do app): apenas fecha o resumo e
+                        // persiste o estado atual. Não encerra nem reinicia a sessão.
+                        saveCurrentSessionLocally();
                         setShowSessionSummary(false);
                         setFinalSessionStats(null);
-                        handleStartSession(); // Reinicia uma nova
                     }}
                 />
             )}

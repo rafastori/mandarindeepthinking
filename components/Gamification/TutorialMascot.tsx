@@ -14,37 +14,61 @@ interface TutorialMascotProps {
 
 const steps: TutorialStep[] = [
     {
-        title: "Bem-vindo!",
-        content: "Olá! Eu sou o seu guia. Vou te mostrar como aproveitar o app ao máximo para aprender mandarim (ou qualquer idioma) de um jeito divertido!",
+        title: "Bem-vindo! 👋",
+        content: "Olá! Eu sou o seu guia. Em poucos passos vou te mostrar tudo o que o app faz para você aprender mandarim (ou qualquer idioma) lendo textos de verdade e memorizando de forma inteligente. Vamos lá!",
         position: 'center'
     },
     {
         targetId: 'nav-leitura',
-        title: "Aba de Leitura",
-        content: "Aqui é onde a mágica acontece! Leia textos interessantes e, se encontrar uma palavra que não conhece, basta clicar nela para ver a tradução e salvá-la!",
+        title: "📖 Leitura — o coração do app",
+        content: "Cole ou importe um texto e leia. Toque em qualquer palavra para ver pinyin, tradução e ouvir a pronúncia — e salve-a com um clique. Ao salvar, a frase fica colorida automaticamente para fixar o que você aprendeu. Há ainda o Modo Simples (leitura limpa) onde você pode deixar comentários nas palavras e frases.",
         position: 'top'
     },
     {
         targetId: 'nav-revisao',
-        title: "Hora de Praticar",
-        content: "As abas Revisão, Cards e Prática usam as palavras que você salvou. O app foca nas suas dificuldades para você nunca mais esquecer!",
+        title: "🔖 Revisão — suas palavras salvas",
+        content: "Tudo o que você salvou aparece aqui. Use a 🔍 busca, filtre só as palavras que você errou e veja as “Pendentes” da revisão programada. Toque na ⭐ estrela para definir a frequência (repetição espaçada) e no 🎙️ microfone para gravar e comparar a sua pronúncia. Em “Selecionar” você gerencia idioma e exclui várias de uma vez.",
         position: 'top'
     },
     {
-        targetId: 'nav-jogo',
-        title: "Diversão e Jogos",
-        content: "Quer dar um tempo nos estudos sérios? No botão de Jogo, você encontra minigames para testar seu vocabulário de forma competitiva!",
+        targetId: 'nav-cards',
+        title: "🃏 Cards de memorização",
+        content: "Os Cards transformam suas palavras salvas em flashcards. Vire o card, diga se acertou e o app prioriza o que você ainda tem dificuldade — do jeitinho da curva do esquecimento.",
         position: 'top'
     },
     {
-        targetId: 'header-avatar',
-        title: "Sincronize seu Progresso",
-        content: "Não esqueça de clicar aqui para entrar com sua conta Google. Assim seus dados ficam salvos na nuvem e você pode estudar em qualquer lugar!",
+        targetId: 'nav-treino',
+        title: "🎯 Treino (Pronúncia, Prática e Lab)",
+        content: "Toque em “Treino” para abrir mais exercícios: Pronúncia (fale e receba feedback), Prática (escrita/digitação) e Lab (experimentos com IA). Todos focam nas palavras que você salvou e nos seus erros.",
+        position: 'top'
+    },
+    {
+        targetId: 'header-neural',
+        title: "🧠 Mapa Neural",
+        content: "Aqui você visualiza as conexões entre as suas palavras num mapa interativo (2D e 3D). É ótimo para enxergar relações de significado e descobrir vizinhos de uma palavra que você está estudando.",
         position: 'bottom'
     },
     {
-        title: "Tudo Pronto!",
-        content: "Agora é com você! Explore as abas, salve suas primeiras palavras e comece sua jornada. Bons estudos!",
+        targetId: 'header-folders',
+        title: "🗂️ Pastas",
+        content: "Organize seus textos e palavras em pastas por aula, livro ou tema. Ao selecionar pastas, TODAS as abas (Leitura, Revisão, Cards, Treino) passam a focar só naquele conteúdo.",
+        position: 'bottom'
+    },
+    {
+        targetId: 'header-stats',
+        title: "📊 Estatísticas e Sessão",
+        content: "Acompanhe seu progresso: tempo de estudo, precisão, sequência de dias e suas palavras mais difíceis. O troféu da Sessão mostra um resumo do que você fez — e sua sessão vai sendo salva sozinha enquanto você navega entre as abas.",
+        position: 'bottom'
+    },
+    {
+        targetId: 'header-avatar',
+        title: "👤 Conta, Áudio e Dados",
+        content: "Entre com sua conta Google para guardar tudo na nuvem e estudar em qualquer lugar. Neste menu você também ativa o Áudio com IA (Puter / Whisper) e, em “Dados”, faz Backup na nuvem, exporta e importa todo o seu progresso.",
+        position: 'bottom'
+    },
+    {
+        title: "Tudo pronto! 🚀",
+        content: "Agora é com você: importe um texto, salve suas primeiras palavras e volte aqui sempre que precisar (Menu → Tutorial / Dicas). Bons estudos!",
         position: 'center'
     }
 ];

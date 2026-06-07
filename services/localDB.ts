@@ -236,18 +236,19 @@ export const localDB = {
 
     // --- Backup/Restore Helpers ---
 
-    /** Exporta TUDO como um único objeto JSON (para backup na nuvem) */
-    async exportAll(): Promise<{ items: StudyItem[]; profile: LocalProfile; comments: UserComment[] }> {
-        const [items, profile, comments] = await Promise.all([
+    /** Exporta TUDO como um único objeto JSON (para backup na nuvem / arquivo) */
+    async exportAll(): Promise<{ items: StudyItem[]; profile: LocalProfile; comments: UserComment[]; sessions: SessionRecord[] }> {
+        const [items, profile, comments, sessions] = await Promise.all([
             this.getAllItems(),
             this.getProfile(),
-            this.getAllComments()
+            this.getAllComments(),
+            this.getAllSessions()
         ]);
-        return { items, profile, comments };
+        return { items, profile, comments, sessions };
     },
 
     /** Importa dados de um backup (substitui tudo localmente) */
-    async importAll(data: { items: StudyItem[]; profile: LocalProfile; comments?: UserComment[] }): Promise<void> {
+    async importAll(data: { items: StudyItem[]; profile: LocalProfile; comments?: UserComment[]; sessions?: SessionRecord[] }): Promise<void> {
         await this.clearItems();
         if (data.items.length > 0) {
             await this.bulkPutItems(data.items);
@@ -260,6 +261,18 @@ export const localDB = {
                 const tx = db.transaction(COMMENTS_STORE, 'readwrite');
                 const store = tx.objectStore(COMMENTS_STORE);
                 for (const c of data.comments!) store.put(c);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+        // Sessões (estatísticas detalhadas) — substitui o histórico local
+        await this.clearSessions();
+        if (data.sessions && data.sessions.length > 0) {
+            const db = await openDB();
+            await new Promise<void>((resolve, reject) => {
+                const tx = db.transaction(SESSIONS_STORE, 'readwrite');
+                const store = tx.objectStore(SESSIONS_STORE);
+                for (const s of data.sessions!) store.put(s);
                 tx.oncomplete = () => resolve();
                 tx.onerror = () => reject(tx.error);
             });

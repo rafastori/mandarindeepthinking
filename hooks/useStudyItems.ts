@@ -332,6 +332,49 @@ export const useStudyItems = (userId: string | null | undefined) => {
     URL.revokeObjectURL(url);
   }, [userId, items]);
 
+  // EXPORTAR BACKUP COMPLETO: paridade total com o backup na nuvem.
+  // Inclui itens + profile completo (favoritos, stats, cores das frases, prefs de leitura)
+  // + comentários + histórico de sessões. Gravações de voz (blobs) ficam de fora.
+  const exportFullBackup = useCallback(async () => {
+    if (!userId) {
+      alert('Faça login para exportar seus dados.');
+      return;
+    }
+
+    const { items: allItems, profile, comments, sessions } = await localDB.exportAll();
+
+    if (allItems.length === 0 && (profile.savedIds?.length ?? 0) === 0) {
+      alert('Nenhum dado para exportar!');
+      return;
+    }
+
+    const defaultName = `backup-memorizatudo-${new Date().toISOString().slice(0, 10)}`;
+    const fileName = prompt('Nome do arquivo de backup:', defaultName);
+    if (fileName === null) return;
+
+    const payload = {
+      version: '2.2.0',
+      exportedAt: new Date().toISOString(),
+      userId,
+      itemCount: allItems.length,
+      data: allItems,   // itens completos (todos os campos do StudyItem)
+      profile,          // LocalProfile completo (savedIds, stats, colorCorrections, readingPrefs, ...)
+      comments,         // comentários do usuário
+      sessions,         // histórico de sessões (estatísticas detalhadas)
+    };
+
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${fileName || defaultName}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, [userId]);
+
   // IMPORTAR DADOS: Carrega arquivo JSON e insere no IndexedDB local
   const importData = useCallback(async (file: File, mode: 'merge' | 'replace'): Promise<{
     success: boolean;
@@ -381,6 +424,38 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
       await localDB.bulkPutItems(itemsToInsert);
 
+      // --- Backup completo (v2.1+): restaura também comentários, sessões, cores e prefs de leitura ---
+      const richProfile = (payload.profile && typeof payload.profile === 'object') ? payload.profile : null;
+
+      // Comentários
+      if (Array.isArray(payload.comments) && payload.comments.length > 0) {
+        if (mode === 'replace') await localDB.clearComments();
+        for (const c of payload.comments) {
+          if (c && c.id) await localDB.putComment(c);
+        }
+      }
+
+      // Sessões (estatísticas detalhadas)
+      if (Array.isArray(payload.sessions) && payload.sessions.length > 0) {
+        if (mode === 'replace') await localDB.clearSessions();
+        for (const s of payload.sessions) {
+          if (s && s.id) await localDB.saveSession(s);
+        }
+      }
+
+      // Cores das frases + preferências de leitura (só presentes no backup completo)
+      if (richProfile && (richProfile.colorCorrections || richProfile.readingMode || richProfile.readingPrefs)) {
+        const current = await localDB.getProfile();
+        const mergedColors = mode === 'replace'
+          ? (richProfile.colorCorrections || {})
+          : { ...(current.colorCorrections || {}), ...(richProfile.colorCorrections || {}) };
+        await localDB.updateProfile({
+          colorCorrections: mergedColors,
+          readingMode: richProfile.readingMode ?? current.readingMode,
+          readingPrefs: richProfile.readingPrefs ?? current.readingPrefs,
+        });
+      }
+
       // Recarrega do banco para refletir tudo
       const allItems = await localDB.getAllItems();
       allItems.sort(compareCreatedAtDesc);
@@ -388,10 +463,20 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
       console.log(`Importação local concluída: ${itemsToInsert.length} itens`);
 
+      // Normaliza o profile retornado para o App (savedIds, stats, totalScore).
+      // O App sincroniza o React state via updateCloudFavorites/updateCloudStats.
+      const returnedProfile = richProfile
+        ? {
+          savedIds: richProfile.savedIds || [],
+          stats: richProfile.stats || null,
+          totalScore: richProfile.totalScore || 0,
+        }
+        : (payload.profile || null);
+
       return {
         success: true,
         count: itemsToInsert.length,
-        profile: payload.profile || null
+        profile: returnedProfile
       };
 
     } catch (error: any) {
@@ -410,6 +495,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
     reorderItems,
     clearLibrary,
     exportData,
+    exportFullBackup,
     importData,
     renameFolderLocal,
     deleteFolderLocal,

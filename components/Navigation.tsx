@@ -95,28 +95,8 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
                         </button>
                     ))}
 
-                    {/* Botão "Jogo" com DESTAQUE colorido */}
-                    <button
-                        id="nav-jogo"
-                        onClick={() => handleMainClick('jogo')}
-                        className={`flex flex-col items-center p-2 rounded-xl transition-all min-w-[64px] ${activeTab === 'jogo'
-                            ? '-translate-y-1'
-                            : 'active:bg-slate-50'
-                            }`}
-                    >
-                        <div className={`p-2 rounded-xl transition-all ${activeTab === 'jogo'
-                            ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 shadow-lg shadow-emerald-200 scale-110'
-                            : 'bg-gradient-to-r from-emerald-400 to-cyan-400'
-                            }`}>
-                            <Icon
-                                name="gamepad-2"
-                                size={20}
-                                className="text-white"
-                            />
-                        </div>
-                        <span className={`text-[10px] font-bold tracking-wide mt-1 ${activeTab === 'jogo' ? 'text-emerald-600' : 'text-slate-500'
-                            }`}>Jogo</span>
-                    </button>
+                    {/* Aba "Jogo" temporariamente desativada (beta) — removida do footer.
+                        TODO: reativar via toggle Beta no menu do usuário. */}
 
                     {/* Botão "Treino" (Mais) */}
                     <button

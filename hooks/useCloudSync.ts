@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { doc, setDoc, getDoc, collection, query, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { localDB, LocalProfile, UserComment } from '../services/localDB';
-import { StudyItem } from '../types';
+import { StudyItem, SessionRecord } from '../types';
 
 const MIGRATION_KEY = 'localFirstMigrated';
 
@@ -45,15 +45,16 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
 
         setIsSyncing(true);
         try {
-            const { items, profile, comments } = await localDB.exportAll();
+            const { items, profile, comments, sessions } = await localDB.exportAll();
 
             const backupData = {
-                version: '2.1.0',
+                version: '2.2.0',
                 backedUpAt: new Date().toISOString(),
                 itemCount: items.length,
                 items: items,
                 profile: profile,
                 comments: comments,
+                sessions: sessions,
             };
 
             const backupRef = doc(db, 'users', userId, 'backups', 'data');
@@ -96,11 +97,12 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
             const items: StudyItem[] = backupData.items || [];
             const profile: LocalProfile = backupData.profile || localDB.getDefaultProfile();
             const comments: UserComment[] = backupData.comments || [];
+            const sessions: SessionRecord[] = backupData.sessions || [];
 
             const timestamp = new Date().toISOString();
             profile.lastRestoreAt = timestamp;
 
-            await localDB.importAll({ items, profile, comments });
+            await localDB.importAll({ items, profile, comments, sessions });
 
             setLastRestoreAt(timestamp);
             setLastBackupAt(profile.lastBackupAt || null);
@@ -133,6 +135,7 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
             let items: StudyItem[] = [];
             let profile: LocalProfile = localDB.getDefaultProfile();
             let comments: UserComment[] = [];
+            let sessions: SessionRecord[] = [];
             let source = 'none';
 
             // 1. Tenta restaurar do backup blob (dados mais recentes)
@@ -145,6 +148,7 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
                     items = backupData.items || [];
                     profile = backupData.profile || localDB.getDefaultProfile();
                     comments = backupData.comments || [];
+                    sessions = backupData.sessions || [];
                     source = 'backup-blob';
                     console.log(`📦 Backup blob encontrado: ${items.length} itens, ${profile.stats?.points || 0} pontos`);
                 }
@@ -196,17 +200,18 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
             }
 
             // 4. Salva no IndexedDB local
-            await localDB.importAll({ items, profile, comments });
+            await localDB.importAll({ items, profile, comments, sessions });
 
             // 5. Se veio do Firebase legado, cria backup blob para próximo dispositivo
             if (source === 'firebase-legacy') {
                 const backupData = {
-                    version: '2.1.0',
+                    version: '2.2.0',
                     backedUpAt: new Date().toISOString(),
                     itemCount: items.length,
                     items: items,
                     profile: profile,
                     comments: comments,
+                    sessions: sessions,
                     migratedFrom: source,
                 };
                 const backupRef = doc(db, 'users', userId, 'backups', 'data');
