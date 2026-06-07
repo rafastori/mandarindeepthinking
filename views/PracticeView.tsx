@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, Variants, PanInfo, useMotionValue, useTransform } from 'framer-motion';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
@@ -142,11 +143,11 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
     const mins = Math.floor(totalSecs / 60);
     const secs = totalSecs % 60;
 
-    return (
+    return createPortal(
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-4 pb-0 sm:pb-4"
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
         >
             {/* Confetti layer */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden z-[51]">
@@ -171,7 +172,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                 initial={{ y: 80, scale: 0.88, opacity: 0 }}
                 animate={{ y: 0, scale: 1, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 135, damping: 16, delay: 0.1 }}
-                className="relative bg-white rounded-t-3xl sm:rounded-3xl p-7 w-full max-w-sm shadow-2xl z-[52] max-h-[92vh] overflow-y-auto"
+                className="relative bg-white rounded-3xl p-7 w-full max-w-sm shadow-2xl z-[52] max-h-[90vh] overflow-y-auto"
             >
                 {/* Decorative top gradient */}
                 <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-brand-50 to-transparent rounded-t-3xl pointer-events-none" />
@@ -259,7 +260,8 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                     </motion.button>
                 </div>
             </motion.div>
-        </motion.div>
+        </motion.div>,
+        document.body
     );
 };
 
@@ -554,6 +556,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         const snapshot = dataSnapshotRef.current || { data, savedIds };
         const currentData = snapshot.data;
         const list: any[] = [];
+        const coveredWords = new Set<string>();
 
         currentData.forEach(item => {
             if (item.type === 'word') return;
@@ -564,6 +567,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 if (!cleanToken) return;
                 const savedWord = savedWordsMap.get(cleanToken);
                 if (savedWord) {
+                    coveredWords.add(cleanToken);
                     list.push({
                         id: savedWord.id, word: savedWord.word,
                         wordMeaning: savedWord.meaning, sentence,
@@ -571,6 +575,46 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                         language: item.language || savedWord.language
                     });
                 }
+            });
+        });
+
+        // Segundo passo: garante que TODA palavra salva tenha ao menos uma questão
+        // (paridade com a Revisão). As palavras salvas na Leitura viram itens
+        // `type: 'word'` (que o laço acima ignora) e guardam a frase de origem em
+        // `originalSentence`, então nunca geravam questão. Aqui recuperamos a frase
+        // de contexto de cada palavra salva e criamos a questão que faltava.
+        const contextByKey = new Map<string, { sentence: string; translation: string }>();
+        currentData.forEach(item => {
+            // Card de palavra: usa a frase original de onde a palavra foi salva.
+            if (item.type === 'word' || item.tokens?.length === 1) {
+                const wk = (item.chinese || '').toLowerCase().trim();
+                if (wk && !contextByKey.has(wk)) {
+                    contextByKey.set(wk, {
+                        sentence: item.originalSentence || item.chinese,
+                        translation: item.translation,
+                    });
+                }
+            }
+            // Palavra-chave dentro de um texto: usa a frase do texto como contexto.
+            item.keywords?.forEach(k => {
+                const kk = k.word.toLowerCase().trim();
+                if (kk && !contextByKey.has(kk)) {
+                    contextByKey.set(kk, { sentence: item.chinese, translation: item.translation });
+                }
+            });
+        });
+
+        savedWordsMap.forEach((savedWord, key) => {
+            if (coveredWords.has(key)) return;
+            coveredWords.add(key);
+            const ctx = contextByKey.get(key);
+            list.push({
+                id: savedWord.id, word: savedWord.word,
+                wordMeaning: savedWord.meaning,
+                sentence: ctx?.sentence || savedWord.word,
+                translation: ctx?.translation || savedWord.meaning,
+                pinyin: savedWord.pinyin,
+                language: savedWord.language
             });
         });
 
@@ -729,7 +773,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             <div className="flex flex-col items-center justify-center h-full text-center p-6">
                 <EmptyState msg="Prática indisponível" icon="edit-3" />
                 <p className="text-slate-400 text-sm mt-2">
-                    Salve pelo menos 4 palavras com frases de contexto para liberar a prática.
+                    Salve pelo menos 4 palavras na Leitura para liberar a prática.
                 </p>
             </div>
         );
