@@ -614,16 +614,14 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             const lang = sentence.language || 'zh';
             const translation = (sentence.translation || '').trim();
 
-            // Sem tradução para colorir: mantém o fluxo simples (só gera o card).
-            if (!translation) {
-                const newCard = await generateWordCard(word, sentence.chinese, lang);
-                onSaveGeneratedCard(newCard, sentence.chinese);
-                speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
-                return;
-            }
+            // Tradução do card primeiro (chamada rápida). Colorir a frase não pode
+            // bloquear nem derrubar o salvamento — no DeepSeek isso chega a ~90s e falhava.
+            const newCard = await generateWordCard(word, sentence.chinese, lang);
+            onSaveGeneratedCard(newCard, sentence.chinese);
+            speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
 
-            // Palavras já salvas DESTA frase, com seus índices de cor atuais — para a IA
-            // recolorir a frase inteira de forma consistente (não só a palavra nova).
+            if (!translation) return;
+
             const sentenceSavedWords: { word: string; meaning: string; colorIndex: number }[] = [];
             const seen = new Set<string>();
             sentence.tokens.forEach(token => {
@@ -636,34 +634,27 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 }
             });
 
-            // Cores são estáveis (wordColorMap por ordem de criação): a palavra nova
-            // recebe o próximo índice livre — o mesmo que o texto original vai usar.
             const newWordColorIndex = wordColorMap.size % HIGHLIGHT_COLORS.length;
+            sentenceSavedWords.push({
+                word: newCard.word,
+                meaning: newCard.meaning,
+                colorIndex: newWordColorIndex
+            });
 
-            const result = await generateWordCardWithColor(
+            generateWordCardWithColor(
                 word, sentence.chinese, translation, lang, sentenceSavedWords, newWordColorIndex
-            );
-
-            const newCard: Keyword = {
-                id: `card-${Date.now()}`,
-                word: result.word,
-                pinyin: result.pinyin,
-                meaning: result.meaning,
-                language: lang
-            };
-            onSaveGeneratedCard(newCard, sentence.chinese);
-
-            // Aplica a correção de cor desta frase imediatamente (sem o botão manual).
-            if (result.coloredTranslation.length > 0) {
-                setColorCorrections(prev => {
-                    const merged = new Map(prev);
-                    merged.set(sentence.id.toString(), result.coloredTranslation);
-                    return merged;
-                });
-                if (!isColorHighlightEnabled) setIsColorHighlightEnabled(true);
-            }
-
-            speak(result.word, lang as 'zh' | 'de' | 'pt' | 'en');
+            ).then(result => {
+                if (result.coloredTranslation.length > 0) {
+                    setColorCorrections(prev => {
+                        const merged = new Map(prev);
+                        merged.set(sentence.id.toString(), result.coloredTranslation);
+                        return merged;
+                    });
+                    if (!isColorHighlightEnabled) setIsColorHighlightEnabled(true);
+                }
+            }).catch(err => {
+                console.error('[Color after translate]', err);
+            });
         } catch (error) {
             console.error(error);
             alert("Erro ao processar. Verifique sua conexão.");
