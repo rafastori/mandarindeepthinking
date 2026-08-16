@@ -1,6 +1,6 @@
 // Texto via OpenRouter (DeepSeek); embeddings continuam no Gemini
 import { GoogleGenAI } from "@google/genai";
-import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult } from "../lib/openrouter.js";
+import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult, splitTextChunks } from "../lib/openrouter.js";
 
 // expectJson=false: retorna { text } (Markdown/texto livre)
 // expectJson=true (default): parseia JSON
@@ -448,9 +448,19 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
         - tokens: array de strings com as palavras segmentadas
         - keywords: array vazio []`;
 
-    const userPrompt = `Texto para analisar: "${text}"`;
-    const result = await callTextLLM(userPrompt, systemPrompt);
-    return res.status(200).json(result);
+    const runAnalysis = async (chunk) => {
+      const userPrompt = `Texto para analisar: "${chunk}"`;
+      const result = await callTextLLM(userPrompt, systemPrompt);
+      return normalizeArrayResult(result);
+    };
+
+    const textChunks = splitTextChunks(text || '', 600);
+    if (textChunks.length <= 1) {
+      return res.status(200).json(await runAnalysis(textChunks[0] || text || ''));
+    }
+
+    const chunkResults = await mapChunks(textChunks, 2, runAnalysis);
+    return res.status(200).json(chunkResults.flat());
 
   } catch (error) {
     // Log detalhado APENAS no servidor para debug

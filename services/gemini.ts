@@ -302,7 +302,7 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
         const systemPrompt = getSystemInstruction('analysis', targetLanguage, mode);
         const userPrompt = `Texto para analisar: "${text}"`;
 
-        const rawData = await callLocalLLM(userPrompt, systemPrompt);
+        const rawData = normalizeArrayResult(await callLocalLLM(userPrompt, systemPrompt));
         const timestamp = Date.now();
 
         // Normalização básica para garantir compatibilidade com a UI
@@ -329,7 +329,7 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
             throw new Error(err.error || "Erro ao conectar com a IA");
         }
 
-        const rawData = await response.json();
+        const rawData = normalizeArrayResult(await response.json());
         const timestamp = Date.now();
 
         return rawData.map((item: any, index: number) => ({
