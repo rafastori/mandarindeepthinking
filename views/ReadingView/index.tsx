@@ -12,6 +12,13 @@ import { localDB, ColorCorrectionToken } from '../../services/localDB';
 import SimpleReadingMode from './SimpleReadingMode';
 import { useReadingComments } from './useReadingComments';
 import CommentDialog from './CommentDialog';
+import SentenceMicroQuiz from './SentenceMicroQuiz';
+import {
+    analyzeSentenceWords,
+    DIFFICULTY_META,
+    DifficultyLevel,
+    SentenceWordAnalysis,
+} from './newWordsUtils';
 
 // Estilos para PDF (invisível na tela)
 const PDF_STYLES = {
@@ -161,6 +168,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         showTranslation: true,
         fontSize: 'md',
     });
+    /** Destaca só palavras novas e suaviza as já salvas */
+    const [focusNewWords, setFocusNewWords] = useState(true);
+    /** Filtro opcional por carga de palavras novas */
+    const [difficultyFilter, setDifficultyFilter] = useState<DifficultyLevel | 'all'>('all');
+    /** Micro-desafios concluídos nesta sessão */
+    const [completedQuizzes, setCompletedQuizzes] = useState<Set<string>>(() => new Set());
     const readingPrefsHydrated = useRef(false);
 
     useEffect(() => {
@@ -586,6 +599,49 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         return map;
     }, [data, savedIds]);
 
+    /** Pool de significados para distratores do micro-desafio */
+    const meaningPool = useMemo(() => {
+        const meanings: string[] = [];
+        savedWordsMap.forEach(kw => {
+            if (kw.meaning?.trim()) meanings.push(kw.meaning.trim());
+        });
+        data.forEach(item => {
+            item.keywords?.forEach(k => {
+                if (k.meaning?.trim()) meanings.push(k.meaning.trim());
+            });
+        });
+        return Array.from(new Set(meanings));
+    }, [data, savedWordsMap]);
+
+    const sentenceAnalysisMap = useMemo(() => {
+        const map = new Map<string, SentenceWordAnalysis>();
+        filteredData.forEach(item => {
+            map.set(item.id.toString(), analyzeSentenceWords(item, savedWordsMap));
+        });
+        return map;
+    }, [filteredData, savedWordsMap]);
+
+    const difficultyCounts = useMemo(() => {
+        const counts = { easy: 0, medium: 0, hard: 0 };
+        sentenceAnalysisMap.forEach(a => { counts[a.difficulty] += 1; });
+        return counts;
+    }, [sentenceAnalysisMap]);
+
+    const studyList = useMemo(() => {
+        const base = reorderMode ? localReorderData : filteredData;
+        if (difficultyFilter === 'all' || reorderMode || selectionMode) return base;
+        return base.filter(item => sentenceAnalysisMap.get(item.id.toString())?.difficulty === difficultyFilter);
+    }, [reorderMode, localReorderData, filteredData, difficultyFilter, selectionMode, sentenceAnalysisMap]);
+
+    const markQuizCompleted = (sentenceId: string) => {
+        setCompletedQuizzes(prev => {
+            if (prev.has(sentenceId)) return prev;
+            const next = new Set(prev);
+            next.add(sentenceId);
+            return next;
+        });
+    };
+
     const cleanPunctuation = (text: string) => text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
 
     const handleTokenClick = (token: string, contextSentence: StudyItem) => {
@@ -761,13 +817,42 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         return sentence.tokens.map((token, i) => {
             const cleanToken = cleanPunctuation(token);
             const cleanLower = cleanToken.toLowerCase();
-            const isSaved = !!savedWordsMap.get(cleanLower);
+            const isContent = cleanLower.length > 0;
+            const isSaved = isContent && !!savedWordsMap.get(cleanLower);
+            const isNew = isContent && !isSaved;
             const isLoading = loadingWord === cleanToken;
             const colorIdx = wordColorMap.get(cleanLower);
             const color = colorIdx !== undefined ? HIGHLIGHT_COLORS[colorIdx] : null;
             const hasComment = cleanLower.length > 0 && commentedWords.has(cleanLower);
 
-            const useMultiColor = isSaved && isColorHighlightEnabled && color;
+            const useMultiColor = isSaved && isColorHighlightEnabled && color && !focusNewWords;
+
+            let className = 'inline-block px-1 mx-0.5 rounded transition-all border-b-2 mb-1 relative cursor-pointer';
+            if (isLoading) className += ' opacity-70 cursor-wait';
+
+            if (focusNewWords && isContent) {
+                if (isNew) {
+                    className += ' bg-amber-50 text-slate-800 border-amber-400 border-dashed font-semibold shadow-[0_0_0_1px_rgba(251,191,36,0.25)]';
+                } else if (isSaved) {
+                    className += useMultiColor
+                        ? ' font-medium opacity-70'
+                        : ' text-slate-400 border-transparent font-medium opacity-60 hover:opacity-100 hover:text-brand-700 hover:bg-brand-50';
+                } else {
+                    className += ' border-transparent text-slate-500';
+                }
+            } else if (isSaved && !useMultiColor) {
+                className += ' bg-brand-100 text-brand-800 border-brand-500 font-bold';
+            } else if (!isSaved && isContent) {
+                className += ' hover:bg-brand-50 border-slate-300 border-dotted hover:border-brand-300 text-slate-700';
+            } else if (isSaved) {
+                className += ' font-bold';
+            } else {
+                className += ' border-transparent';
+            }
+
+            const style = useMultiColor
+                ? { color: color!.text, backgroundColor: color!.bg, borderBottomColor: color!.text }
+                : undefined;
 
             return (
                 <span
@@ -779,17 +864,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             setCommentTarget({ type: 'word', key: cleanLower, preview: cleanToken });
                         }
                     }}
-                    className={`
-                        inline-block px-1 mx-0.5 rounded transition-all border-b-2 mb-1 relative cursor-pointer
-                        ${isSaved && !useMultiColor
-                            ? 'bg-brand-100 text-brand-800 border-brand-500 font-bold'
-                            : !isSaved
-                                ? 'hover:bg-brand-50 border-slate-300 border-dotted hover:border-brand-300 text-slate-700'
-                                : 'font-bold'
-                        }
-                        ${isLoading ? 'opacity-70 cursor-wait' : ''}
-                    `}
-                    style={useMultiColor ? { color: color.text, backgroundColor: color.bg, borderBottomColor: color.text } : undefined}
+                    className={className}
+                    style={style}
+                    title={isNew ? 'Palavra nova — toque para salvar' : isSaved ? 'Já salva' : undefined}
                 >
                     {isLoading && (
                         <span className="absolute inset-0 flex items-center justify-center">
@@ -888,6 +965,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                     <Icon name="book-open" size={14} />
                                     {readingMode === 'simple' ? 'Estudo' : 'Leitura'}
                                 </button>
+                                {readingMode === 'study' && (
+                                    <button
+                                        onClick={() => setFocusNewWords(v => !v)}
+                                        className={`px-2.5 py-1.5 text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${focusNewWords
+                                            ? 'bg-emerald-600 text-white border-emerald-600'
+                                            : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'
+                                        }`}
+                                        title="Destacar só palavras novas"
+                                    >
+                                        <Icon name="sparkles" size={14} />
+                                        Novas
+                                    </button>
+                                )}
                                 {/* Mostrar reordenar apenas se houver exatamente uma pasta selecionada (não "__uncategorized__") */}
                                 {activeFolderFilters.length === 1 && activeFolderFilters[0] !== '__uncategorized__' && filteredData.length > 1 && (
                                     <button
@@ -950,6 +1040,50 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             >
                                 <Icon name="x" size={14} />
                             </button>
+                        </div>
+                    )}
+
+                    {/* Carga de palavras novas — protege o sensor de recompensa */}
+                    {readingMode === 'study' && !selectionMode && !reorderMode && filteredData.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-2 mb-4 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <span className="text-[11px] font-bold uppercase tracking-wide text-slate-400 mr-1">
+                                Carga
+                            </span>
+                            <button
+                                type="button"
+                                onClick={() => setDifficultyFilter('all')}
+                                className={`px-2.5 py-1 rounded-full text-xs font-semibold border transition-colors ${difficultyFilter === 'all'
+                                    ? 'bg-slate-800 text-white border-slate-800'
+                                    : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100'
+                                }`}
+                            >
+                                Todas ({filteredData.length})
+                            </button>
+                            {(['easy', 'medium', 'hard'] as DifficultyLevel[]).map(level => {
+                                const meta = DIFFICULTY_META[level];
+                                const count = difficultyCounts[level];
+                                const active = difficultyFilter === level;
+                                return (
+                                    <button
+                                        key={level}
+                                        type="button"
+                                        onClick={() => setDifficultyFilter(active ? 'all' : level)}
+                                        disabled={count === 0}
+                                        title={meta.hint}
+                                        className={`px-2.5 py-1 rounded-full text-xs font-semibold border transition-colors disabled:opacity-40 ${active
+                                            ? meta.className + ' ring-2 ring-offset-1 ring-slate-300'
+                                            : meta.className + ' opacity-80 hover:opacity-100'
+                                        }`}
+                                    >
+                                        {meta.label} · {count}
+                                    </button>
+                                );
+                            })}
+                            {focusNewWords && (
+                                <span className="text-[11px] text-slate-400 ml-auto hidden sm:inline">
+                                    Novas em destaque
+                                </span>
+                            )}
                         </div>
                     )}
 
@@ -1021,13 +1155,26 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     {/* Empty state quando filtro não retorna resultados */}
                     {filteredData.length === 0 && activeFolderFilters.length > 0 && (
                         <div className="flex flex-col items-center justify-center py-12 text-center">
-                            <Icon name="folder-open" size={48} className="text-slate-300 mb-4" />
+                            <Icon name="folder" size={48} className="text-slate-300 mb-4" />
                             <p className="text-slate-500">Nenhum texto nesta pasta.</p>
                             <button
                                 onClick={() => onUpdateFolderFilters([])}
                                 className="mt-3 text-brand-600 font-medium hover:underline"
                             >
                                 Ver todos os textos
+                            </button>
+                        </div>
+                    )}
+
+                    {readingMode === 'study' && !selectionMode && !reorderMode && filteredData.length > 0 && studyList.length === 0 && (
+                        <div className="flex flex-col items-center justify-center py-10 text-center">
+                            <Icon name="sparkles" size={36} className="text-slate-300 mb-3" />
+                            <p className="text-slate-500 text-sm">Nenhuma frase neste nível de carga.</p>
+                            <button
+                                onClick={() => setDifficultyFilter('all')}
+                                className="mt-3 text-brand-600 font-medium hover:underline text-sm"
+                            >
+                                Ver todas as frases
                             </button>
                         </div>
                     )}
@@ -1050,15 +1197,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         />
                     ) : null}
 
-                    {readingMode === 'simple' && !selectionMode && !reorderMode ? null : (reorderMode ? localReorderData : filteredData).map((item, index) => {
+                    {readingMode === 'simple' && !selectionMode && !reorderMode ? null : studyList.map((item, index) => {
                         const isImported = typeof item.id === 'string';
                         const isGerman = item.language === 'de';
                         const isSelected = selectedIds.has(item.id.toString());
+                        const analysis = sentenceAnalysisMap.get(item.id.toString());
+                        const difficulty = analysis?.difficulty || 'easy';
+                        const diffMeta = DIFFICULTY_META[difficulty];
+                        const quizDone = completedQuizzes.has(item.id.toString());
 
                         return (
                             <div
                                 key={item.id}
-                                className={`bg-white rounded-xl p-3 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : reorderMode ? 'border-brand-200 bg-slate-50/50' : 'border-slate-100'
+                                className={`bg-white rounded-xl p-3 shadow-sm border-2 w-full transition-all duration-200 ${isSelected ? 'border-emerald-400 bg-emerald-50' : reorderMode ? 'border-brand-200 bg-slate-50/50' : quizDone ? 'border-emerald-200' : 'border-slate-100'
                                     }`}
                                 onClick={() => {
                                     if (selectionMode) {
@@ -1069,7 +1220,16 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 <div className="flex flex-col gap-2">
                                     {/* Top bar: folder + actions */}
                                     <div className="flex items-center justify-between gap-2">
-                                        <div className="flex items-center gap-1 text-xs text-slate-400 min-w-0 flex-1">
+                                        <div className="flex items-center gap-1.5 text-xs text-slate-400 min-w-0 flex-1 flex-wrap">
+                                            {analysis && !selectionMode && !reorderMode && (
+                                                <span
+                                                    className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold border ${diffMeta.className}`}
+                                                    title={diffMeta.hint}
+                                                >
+                                                    {analysis.newCount === 0 ? '0 novas' : `${analysis.newCount} nova${analysis.newCount === 1 ? '' : 's'}`}
+                                                    <span className="opacity-70 font-semibold">· {diffMeta.label}</span>
+                                                </span>
+                                            )}
                                             {item.folderPath && (
                                                 <>
                                                     <Icon name="folder" size={12} className="flex-shrink-0" />
@@ -1232,6 +1392,15 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                 });
                                             })() : item.translation}
                                         </p>
+                                        {!selectionMode && !reorderMode && (
+                                            <SentenceMicroQuiz
+                                                item={item}
+                                                savedWordsMap={savedWordsMap}
+                                                meaningPool={meaningPool}
+                                                completed={quizDone}
+                                                onCompleted={markQuizCompleted}
+                                            />
+                                        )}
                                     </div>
                                 </div>
                             </div>
