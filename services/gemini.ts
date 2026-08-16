@@ -2,15 +2,15 @@
 
 import { GoogleGenAI } from "@google/genai";
 import { StudyItem, Keyword, GameCard, SupportedLanguage } from "../types";
+import { callOpenRouterText } from "../lib/openrouter.js";
 
 // Exportamos a interface também daqui se precisar, ou usamos a do types.ts
 export { type GameCard } from "../types";
 
-// Configuração do cliente local
-const API_KEY = process.env.API_KEY || '';
-console.log('[Gemini] API Key status:', API_KEY ? `Loaded (${API_KEY.substring(0, 8)}...)` : 'MISSING!');
-const genAI = new GoogleGenAI({ apiKey: API_KEY });
-const MODEL_NAME = 'gemini-2.5-flash';
+// Gemini só é usado para embeddings (mapa neural). Texto vai pelo OpenRouter.
+const GEMINI_API_KEY = process.env.API_KEY || process.env.GEMINI_API_KEY || '';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '';
+const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
 // URL de produção (Vercel Functions)
 const API_URL = '/api/generate';
@@ -276,30 +276,11 @@ FORMATO — APENAS este JSON:
     return '';
 };
 
-const callLocalGemini = async (prompt: string, systemInstruction: string, expectJson: boolean = true) => {
+const callLocalLLM = async (prompt: string, systemInstruction: string, expectJson: boolean = true) => {
     try {
-        const response = await (genAI as any).models.generateContent({
-            model: MODEL_NAME,
-            contents: prompt,
-            config: {
-                systemInstruction: systemInstruction,
-                ...(expectJson ? { responseMimeType: "application/json" } : {})
-            }
-        });
-
-        const text = response.text;
-        if (!text) throw new Error("Sem resposta da IA");
-
-        if (!expectJson) {
-            return text;
-        }
-
-        // Clean JSON formatting se necessário (as vezes a IA retorna markdown de código msm forçando JSON)
-        const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-
-        return JSON.parse(cleanText);
+        return await callOpenRouterText(prompt, systemInstruction, expectJson, OPENROUTER_API_KEY);
     } catch (error) {
-        console.error("Local Gemini Error:", error);
+        console.error("Local OpenRouter Error:", error);
         throw error;
     }
 };
@@ -318,11 +299,11 @@ const getLangName = (code: string) => {
 export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: SupportedLanguage = 'zh'): Promise<StudyItem[]> => {
     // DEV MODE: Usa SDK local
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Text Analysis");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Text Analysis");
         const systemPrompt = getSystemInstruction('analysis', targetLanguage, mode);
         const userPrompt = `Texto para analisar: "${text}"`;
 
-        const rawData = await callLocalGemini(userPrompt, systemPrompt);
+        const rawData = await callLocalLLM(userPrompt, systemPrompt);
         const timestamp = Date.now();
 
         // Normalização básica para garantir compatibilidade com a UI
@@ -368,11 +349,11 @@ export const processTextWithGemini = async (text: string, mode: 'direct' | 'tran
 export const generateWordCard = async (word: string, contextSentence: string, targetLanguage: SupportedLanguage = 'zh'): Promise<Keyword> => {
     // DEV MODE
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Word Card");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Word Card");
         const systemPrompt = getSystemInstruction('card', targetLanguage);
         const userPrompt = `Palavra: "${word}". Contexto: "${contextSentence}"`;
 
-        const data = await callLocalGemini(userPrompt, systemPrompt);
+        const data = await callLocalLLM(userPrompt, systemPrompt);
         return {
             id: `card-${Date.now()}`,
             word: data.word,
@@ -454,9 +435,9 @@ ${savedWordsJson}`;
 
     // DEV MODE
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Word Card + Color");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Word Card + Color");
         const systemPrompt = getSystemInstruction('card_with_color', targetLanguage);
-        const data = await callLocalGemini(userPrompt, systemPrompt);
+        const data = await callLocalLLM(userPrompt, systemPrompt);
         return normalize(data);
     }
 
@@ -492,11 +473,11 @@ export const generateGameDeck = async (
 ): Promise<GameCard[]> => {
     // DEV MODE
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Game Deck");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Game Deck");
         const systemPrompt = getSystemInstruction('game', targetLanguage);
         const userPrompt = `Tópico: ${topic}. Dificuldade: ${difficulty}. (Excluir: ${excludeWords.join(', ')})`;
 
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     // PROD MODE
@@ -549,11 +530,11 @@ export const generateEnigmas = async (
 
     // DEV MODE
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Enigmas");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Enigmas");
         const systemPrompt = getSystemInstruction('enigmas', sourceLang, targetLang, difficulty);
         const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
 
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     // PROD MODE - Usa endpoint seguro
@@ -600,11 +581,11 @@ export const generateIntruder = async (
     const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Intruder");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Intruder");
         const systemPrompt = getSystemInstruction('intruder', contentLang, 'direct', difficulty);
         const userPrompt = `Contexto (palavras do texto): ${contextWords.slice(0, 20).join(', ')}...`;
 
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     // PROD MODE - Usa endpoint seguro
@@ -641,11 +622,11 @@ export const generateBossLevel = async (
     const langName = getLangName(contentLang);
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Boss");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Boss");
         const systemPrompt = getSystemInstruction('boss', contentLang, 'direct', difficulty);
         const userPrompt = `Texto base: ${fullText}`;
 
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     // PROD MODE - Usa endpoint seguro
@@ -687,10 +668,10 @@ export const generateRawText = async (contentLang: string, customPrompt?: string
     console.log('[generateRawText] userPrompt final:', userPrompt);
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Raw Text");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Raw Text");
         const systemPrompt = getSystemInstruction('raw_text', contentLang);
 
-        const data = await callLocalGemini(userPrompt, systemPrompt);
+        const data = await callLocalLLM(userPrompt, systemPrompt);
         return data.text;
     }
 
@@ -716,7 +697,7 @@ export const generateRawText = async (contentLang: string, customPrompt?: string
 };
 
 /**
- * Tokeniza texto usando IA (Gemini) para segmentação PALAVRA POR PALAVRA.
+ * Tokeniza texto usando IA para segmentação PALAVRA POR PALAVRA.
  * Especialmente importante para idiomas CJK (Chinês, Japonês, Coreano) que não usam espaços.
  * 
  * RETORNO ESPERADO: Array de strings onde cada elemento é UMA palavra clicável.
@@ -769,8 +750,8 @@ NÃO inclua explicações, apenas o JSON.`;
 "${text}"`;
 
     if (import.meta.env.DEV) {
-        console.log("[Tokenization] Using Local Gemini SDK");
-        const data = await callLocalGemini(userPrompt, systemPrompt);
+        console.log("[Tokenization] Using OpenRouter (DeepSeek V4 Flash)");
+        const data = await callLocalLLM(userPrompt, systemPrompt);
         console.log("[Tokenization] Result:", data.tokens?.slice(0, 15), "...");
         return data.tokens || [];
     }
@@ -810,15 +791,15 @@ export const generateDominoTerms = async (
         ...config
     };
 
-    // Debug: Log what's being sent to Gemini
+    // Debug: payload enviado à LLM de texto
     console.log('[generateDominoTerms] Payload:', payload);
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Domino Terms");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Domino Terms");
         const systemPrompt = getSystemInstruction('domino_terms', 'pt', payload as any);
         console.log('[generateDominoTerms] System prompt:', systemPrompt);
         const userPrompt = `Gere os 13 termos para o contexto ${context}.`;
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     try {
@@ -852,10 +833,10 @@ export const summarizeDominoTranslations = async (
     };
 
     if (import.meta.env.DEV) {
-        console.log("Using Local Gemini SDK for Domino Summarize");
+        console.log("Using OpenRouter (DeepSeek V4 Flash) for Domino Summarize");
         const systemPrompt = getSystemInstruction('domino_summarize', targetLang);
         const userPrompt = `Abaixo estão os pares a serem reduzidos (MAX 1 a 3 PALAVRAS na definição):\n${JSON.stringify(pairs)}`;
-        return await callLocalGemini(userPrompt, systemPrompt);
+        return await callLocalLLM(userPrompt, systemPrompt);
     }
 
     try {
@@ -873,7 +854,7 @@ export const summarizeDominoTranslations = async (
     }
 };
 
-// Analisa estatísticas de estudo usando IA (Gemini)
+// Analisa estatísticas de estudo usando IA
 export async function analyzeStudyStats(statsData: {
     totalSessions: number;
     totalDays: number;
@@ -899,8 +880,8 @@ Retorne a resposta em Markdown. Use emojis. Mantenha um tom de tutor, encorajado
 
     try {
         if (import.meta.env.DEV) {
-            console.log("Using Local Gemini SDK for Study Stats Analysis");
-            return await callLocalGemini(prompt, systemInstruction, false);
+            console.log("Using OpenRouter (DeepSeek V4 Flash) for Study Stats Analysis");
+            return await callLocalLLM(prompt, systemInstruction, false);
         }
 
         const response = await fetch(API_URL, {
@@ -917,7 +898,7 @@ Retorne a resposta em Markdown. Use emojis. Mantenha um tom de tutor, encorajado
         const data = await response.json();
         return data.text;
     } catch (error) {
-        console.error("Gemini Analyze Error:", error);
+        console.error("Stats Analyze Error:", error);
         return "⚠️ Não foi possível gerar a análise no momento pela IA. Tente novamente mais tarde.";
     }
 }
@@ -937,7 +918,7 @@ export interface ColorCorrectionOutput {
 }
 
 /**
- * Usa Gemini para corrigir o mapeamento de cores nas traduções.
+ * Usa a LLM de texto para corrigir o mapeamento de cores nas traduções.
  * Analisa cada frase e identifica exatamente quais palavras da tradução
  * correspondem a cada palavra salva, atribuindo o colorIndex correto.
  */
@@ -959,8 +940,8 @@ ${JSON.stringify(sentences.map(s => ({
     })), null, 2)}`;
 
     if (import.meta.env.DEV) {
-        console.log("[ColorCorrection] Using Local Gemini SDK");
-        const result = await callLocalGemini(userPrompt, systemPrompt);
+        console.log("[ColorCorrection] Using OpenRouter (DeepSeek V4 Flash)");
+        const result = await callLocalLLM(userPrompt, systemPrompt);
         console.log("[ColorCorrection] Result:", result);
         return result;
     }

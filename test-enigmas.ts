@@ -1,31 +1,24 @@
 
-import { GoogleGenAI } from "@google/genai";
 import dotenv from 'dotenv';
 import fs from 'fs';
-import path from 'path';
+import { callOpenRouterText, TEXT_MODEL } from './lib/openrouter.js';
 
-// Manual Load of .env.local because standard dotenv doesn't look there by default
 const envConfig = dotenv.parse(fs.readFileSync('.env.local'));
 for (const k in envConfig) {
     process.env[k] = envConfig[k];
 }
 
-async function testGemini() {
-    console.log("--- Testing Gemini API (Enigmas) ---");
-    const apiKey = process.env.GEMINI_API_KEY;
+async function testEnigmas() {
+    console.log("--- Testing OpenRouter API (Enigmas) ---");
+    const apiKey = process.env.OPENROUTER_API_KEY;
 
     if (!apiKey) {
-        console.error("❌ CRITICAL: GEMINI_API_KEY not found in .env.local");
+        console.error("❌ CRITICAL: OPENROUTER_API_KEY not found in .env.local");
         return;
     }
     const last4 = apiKey.slice(-4);
     console.log(`✅ API Key loaded. Ends with: ...${last4} (Length: ${apiKey.length})`);
-
-    const genAI = new GoogleGenAI({ apiKey: apiKey });
-
-    // Changing model to 1.5-flash to see if it bypasses the specific model quota
-    const modelName = "gemini-1.5-flash";
-    console.log(`Using Model: ${modelName}`);
+    console.log(`Using Model: ${TEXT_MODEL}`);
 
     const words = ["Haus", "Katze", "Hund", "Schule"];
     const sourceLang = "Alemão";
@@ -43,33 +36,18 @@ async function testGemini() {
     Retorne APENAS o JSON.
     Palavras: ${JSON.stringify(words)}`;
 
-    console.log("\n📡 Sending Request to Gemini...");
+    console.log("\n📡 Sending Request to OpenRouter...");
 
     try {
-        const response = await genAI.models.generateContent({
-            model: modelName,
-            contents: prompt,
-            config: {
-                responseMimeType: "application/json",
-            }
-        });
-
-        const text = response.text;
+        const data = await callOpenRouterText(prompt, "", true, apiKey);
+        const preview = JSON.stringify(data).substring(0, 200);
         console.log("📩 Response received:");
-        console.log(text ? text.substring(0, 200) + "..." : "EMPTY RESPONSE");
+        console.log(preview + "...");
 
     } catch (error) {
         console.error("❌ API Call Failed.");
-        // @ts-ignore
-        if (error.response) {
-            // @ts-ignore
-            console.error("Status:", error.status);
-            // @ts-ignore
-            console.error("Details:", JSON.stringify(error.response, null, 2));
-        } else {
-            console.error(error);
-        }
+        console.error(error);
     }
 }
 
-testGemini();
+testEnigmas();

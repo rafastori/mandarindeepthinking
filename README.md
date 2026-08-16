@@ -15,6 +15,8 @@ View your app in AI Studio: https://ai.studio/apps/drive/1BFT5dk9zGAUJF2Vfp0sp7S
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. In [.env.local](.env.local) set:
+   - `OPENROUTER_API_KEY` — text generation (DeepSeek V4 Flash via OpenRouter)
+   - `GEMINI_API_KEY` — embeddings only (Neural Map)
 3. Run the app:
    `npm run dev`

@@ -1,29 +1,15 @@
-// API Gemini - Usando sintaxe correta do @google/genai
+// Texto via OpenRouter (DeepSeek); embeddings continuam no Gemini
 import { GoogleGenAI } from "@google/genai";
+import { callOpenRouterText } from "../lib/openrouter.js";
 
-// Helper para chamar o modelo Gemini
-// expectJson=false: retorna { text } diretamente (para respostas Markdown/texto livre)
-// expectJson=true (default): força JSON e faz JSON.parse
-const callGemini = async (genAI, prompt, systemInstruction = "", expectJson = true) => {
-  const response = await genAI.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-    config: {
-      systemInstruction: systemInstruction,
-      ...(expectJson ? { responseMimeType: "application/json" } : {})
-    }
-  });
-
-  const text = response.text;
-  if (!text) throw new Error("Sem resposta da IA");
-
+// expectJson=false: retorna { text } (Markdown/texto livre)
+// expectJson=true (default): parseia JSON
+const callTextLLM = async (prompt, systemInstruction = "", expectJson = true) => {
+  const result = await callOpenRouterText(prompt, systemInstruction, expectJson);
   if (!expectJson) {
-    return { text };
+    return { text: result };
   }
-
-  // Limpa formatação markdown se houver
-  const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
-  return JSON.parse(cleanText);
+  return result;
 };
 
 export default async function handler(req, res) {
@@ -53,11 +39,36 @@ export default async function handler(req, res) {
       words = [], sourceLang, targetLang
     } = req.body;
 
-    // PRIORIDADE: GEMINI_API_KEY (segura) -> API_KEY -> VITE_API_KEY
-    const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY || process.env.VITE_API_KEY;
-    if (!apiKey) return res.status(500).json({ error: 'API Key missing' });
+    // --- EMBEDDINGS (Cosmos Semântico) — permanece no Gemini ---
+    if (type === 'embeddings') {
+      const geminiKey = process.env.GEMINI_API_KEY || process.env.API_KEY || process.env.VITE_API_KEY;
+      if (!geminiKey) return res.status(500).json({ error: 'GEMINI_API_KEY missing' });
 
-    const genAI = new GoogleGenAI({ apiKey });
+      const genAI = new GoogleGenAI({ apiKey: geminiKey });
+      const { texts, taskType } = req.body;
+      if (!texts || !Array.isArray(texts)) {
+        return res.status(400).json({ error: "O campo 'texts' é obrigatório e deve ser um array." });
+      }
+
+      const result = await genAI.models.embedContent({
+        model: 'gemini-embedding-2-preview',
+        contents: texts,
+        config: { taskType: taskType || 'RETRIEVAL_DOCUMENT' }
+      });
+
+      let embeddings = [];
+      if (result.embeddings) {
+        embeddings = result.embeddings.map(e => e.values || e);
+      } else if (result.embedding) {
+        embeddings = [result.embedding.values || result.embedding];
+      }
+
+      return res.status(200).json(embeddings);
+    }
+
+    if (!process.env.OPENROUTER_API_KEY) {
+      return res.status(500).json({ error: 'OPENROUTER_API_KEY missing' });
+    }
 
     // --- 1. GERAÇÃO DE CARD ---
     if (type === 'card') {
@@ -76,7 +87,7 @@ export default async function handler(req, res) {
         O significado (meaning) deve ser em Português.`;
 
       const userPrompt = `Palavra: "${word}". Contexto: "${context}"`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -134,7 +145,7 @@ TRADUÇÃO (Português) a tokenizar: "${translation}"
 PALAVRAS JÁ SALVAS nesta frase (marque cada uma na tradução com seu colorIndex):
 ${savedWordsJson}`;
 
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -157,7 +168,7 @@ ${savedWordsJson}`;
         Os significados e distratores devem ser em Português.`;
 
       const userPrompt = `Tópico: ${topic}. Dificuldade: ${difficulty}. Gere 5 palavras distintas. ${excludeInstruction}`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -179,7 +190,7 @@ ${savedWordsJson}`;
         Retorne APENAS o JSON Array.`;
 
       const userPrompt = `Palavras para criar enigmas: ${JSON.stringify(words)}`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -200,7 +211,7 @@ ${savedWordsJson}`;
         }`;
 
       const userPrompt = `Contexto (palavras do texto em ${targetLang}): ${Array.isArray(context) ? context.slice(0, 20).join(', ') : context}`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -240,7 +251,7 @@ ${savedWordsJson}`;
         3. As definições devem ser curtas (1-3 palavras).
         4. Retorne APENAS um JSON Array: [{ "term": "...", "definition": "..." }, ...]`;
 
-      const result = await callGemini(genAI, `Gere os 13 termos para o contexto ${context}.`, systemPrompt);
+      const result = await callTextLLM(`Gere os 13 termos para o contexto ${context}.`, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -267,7 +278,7 @@ REGRAS RÍGIDAS:
 4. Retorne APENAS um array JSON: [{"term": "termo original", "definition": "resumo curto"}, ...]`;
 
       const userPrompt = `Abaixo estão os pares a serem reduzidos (MAX 1 a 3 PALAVRAS na definição):\n${JSON.stringify(pairs)}`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -291,7 +302,7 @@ REGRAS RÍGIDAS:
         4. NÃO inclua tradução.`;
 
       const userPrompt = `Texto base em ${targetLang}: ${context}`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -316,7 +327,7 @@ REGRAS RÍGIDAS:
         ? `Gere um texto em ${langName} sobre: ${customPrompt.trim()}`
         : `Gere um texto em ${langName}. O tema deve ser variado (cultura, cotidiano, curiosidades, história).`;
 
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -354,7 +365,7 @@ FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
 Dados:
 ${JSON.stringify(sentences, null, 2)}`;
 
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
     }
 
@@ -377,37 +388,14 @@ IMPORTANTE: Preserve espaços como tokens separados (" ") para manter a formata�
 Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
 
       const userPrompt = `Idioma: ${langName}. Texto: "${text}"`;
-      const result = await callGemini(genAI, userPrompt, systemPrompt);
+      const result = await callTextLLM(userPrompt, systemPrompt);
       return res.status(200).json(result);
-    }
-
-    // --- EMBEDDINGS (Cosmos Semântico) ---
-    if (type === 'embeddings') {
-      const { texts, taskType } = req.body;
-      if (!texts || !Array.isArray(texts)) {
-        return res.status(400).json({ error: "O campo 'texts' é obrigatório e deve ser um array." });
-      }
-      
-      const result = await genAI.models.embedContent({
-        model: 'gemini-embedding-2-preview',
-        contents: texts,
-        config: { taskType: taskType || 'RETRIEVAL_DOCUMENT' }
-      });
-      
-      let embeddings = [];
-      if (result.embeddings) {
-        embeddings = result.embeddings.map(e => e.values || e);
-      } else if (result.embedding) {
-        embeddings = [result.embedding.values || result.embedding];
-      }
-      
-      return res.status(200).json(embeddings);
     }
 
     // --- 9. ANÁLISE INTELIGENTE DE ESTATÍSTICAS ---
     if (type === 'analyze_stats') {
       const { prompt, systemInstruction } = req.body;
-      const result = await callGemini(genAI, prompt, systemInstruction || "", false);
+      const result = await callTextLLM(prompt, systemInstruction || "", false);
       return res.status(200).json(result);
     }
 
@@ -443,12 +431,12 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
         - keywords: array vazio []`;
 
     const userPrompt = `Texto para analisar: "${text}"`;
-    const result = await callGemini(genAI, userPrompt, systemPrompt);
+    const result = await callTextLLM(userPrompt, systemPrompt);
     return res.status(200).json(result);
 
   } catch (error) {
     // Log detalhado APENAS no servidor para debug
-    console.error("ERRO API GEMINI NA VERCEL:", {
+    console.error("ERRO API LLM NA VERCEL:", {
       message: error.message,
       name: error.name,
       status: error.status,
