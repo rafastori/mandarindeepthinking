@@ -16,6 +16,8 @@ export default defineConfig(({ mode }) => {
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      // Só no DEV: produção usa /api/generate com a chave no servidor
+      'process.env.OPENROUTER_API_KEY': JSON.stringify(mode === 'development' ? env.OPENROUTER_API_KEY : ''),
       'process.env.APP_VERSION': JSON.stringify(pkg.version)
     },
     resolve: {

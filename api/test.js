@@ -1,8 +1,7 @@
-// Arquivo de teste simples para diagnosticar a API do Gemini na Vercel
-import { GoogleGenAI } from "@google/genai";
+// Diagnóstico da API de texto (OpenRouter) na Vercel
+import { callOpenRouterText, TEXT_MODEL } from "../lib/openrouter.js";
 
 export default async function handler(req, res) {
-    // Headers CORS
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -10,40 +9,33 @@ export default async function handler(req, res) {
     if (req.method === 'OPTIONS') return res.status(200).end();
 
     try {
-        // Diagnóstico das variáveis de ambiente
         const envStatus = {
+            OPENROUTER_API_KEY: !!process.env.OPENROUTER_API_KEY,
             GEMINI_API_KEY: !!process.env.GEMINI_API_KEY,
             API_KEY: !!process.env.API_KEY,
             VITE_API_KEY: !!process.env.VITE_API_KEY,
             NODE_ENV: process.env.NODE_ENV
         };
 
-        const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY || process.env.VITE_API_KEY;
-
-        if (!apiKey) {
+        if (!process.env.OPENROUTER_API_KEY) {
             return res.status(500).json({
                 status: "error",
                 step: "env_check",
-                message: "Nenhuma API Key encontrada nas variáveis de ambiente",
+                message: "OPENROUTER_API_KEY não encontrada nas variáveis de ambiente",
                 envStatus
             });
         }
 
-        // Inicializa o cliente (sintaxe correta para @google/genai)
-        const genAI = new GoogleGenAI({ apiKey });
-
-        // Teste simples usando a sintaxe correta do @google/genai
-        const response = await genAI.models.generateContent({
-            model: "gemini-2.5-flash",
-            contents: "Responda apenas com a palavra: FUNCIONOU",
-        });
-
-        const text = response.text;
+        const text = await callOpenRouterText(
+            "Responda apenas com a palavra: FUNCIONOU",
+            "",
+            false
+        );
 
         return res.status(200).json({
             status: "success",
-            message: "Conexão com Gemini estabelecida!",
-            apiKeyPrefix: apiKey.substring(0, 8) + "...",
+            message: "Conexão com OpenRouter estabelecida!",
+            model: TEXT_MODEL,
             resposta_ia: text,
             envStatus
         });
@@ -57,7 +49,7 @@ export default async function handler(req, res) {
 
         return res.status(500).json({
             status: "error",
-            step: "gemini_call",
+            step: "openrouter_call",
             message: "Ocorreu um erro interno ao conectar com a API."
         });
     }
