@@ -7,7 +7,14 @@
   ],
   "functions": {
     "api/generate.js": {
-      "maxDuration": 60
+      "maxDuration": 60,
+      "includeFiles": "lib/**"
+    },
+    "api/test.js": {
+      "includeFiles": "lib/**"
+    },
+    "api/debug.js": {
+      "includeFiles": "lib/**"
     }
   }
 }
