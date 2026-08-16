@@ -111,11 +111,11 @@ export const useStudyItems = (userId: string | null | undefined) => {
     const newItem: StudyItem = {
       ...data,
       id,
-      createdAt: new Date().toISOString(),
+      createdAt: data.createdAt || new Date().toISOString(),
     };
 
     await localDB.putItem(newItem);
-    setItems(prev => [newItem, ...prev]);
+    setItems(prev => [newItem, ...prev].sort(compareCreatedAtDesc));
     return id;
   }, [userId]);
 
@@ -143,7 +143,7 @@ export const useStudyItems = (userId: string | null | undefined) => {
 
     // 1. Buscar item DIRETAMENTE do IndexedDB (fonte de verdade)
     const allItemsFromDB = await localDB.getAllItems();
-    const currentItem = allItemsFromDB.find(item => item.id === id);
+    const currentItem = allItemsFromDB.find(item => String(item.id) === String(id));
 
     if (!currentItem) {
       console.warn(`[updateItem] Item ${id} não encontrado no IndexedDB`);
@@ -151,14 +151,14 @@ export const useStudyItems = (userId: string | null | undefined) => {
     }
 
     // 2. Construir item atualizado com os novos dados
-    const updatedItem = { ...currentItem, ...data };
+    const updatedItem = { ...currentItem, ...data, id: currentItem.id };
 
     // 3. Persistir no IndexedDB PRIMEIRO (a fonte de verdade deve ser atualizada primeiro)
     await localDB.putItem(updatedItem);
 
     // 4. Atualizar state React para refletir a mudança na UI
     setItems(prev => {
-      const newItems = prev.map(item => item.id === id ? updatedItem : item);
+      const newItems = prev.map(item => String(item.id) === String(id) ? updatedItem : item);
       // Reordenar se createdAt foi alterado (usado na reordenação manual)
       if (data.createdAt !== undefined) {
         newItems.sort(compareCreatedAtDesc);

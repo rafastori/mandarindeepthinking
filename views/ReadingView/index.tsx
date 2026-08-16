@@ -13,11 +13,14 @@ import SimpleReadingMode from './SimpleReadingMode';
 import { useReadingComments } from './useReadingComments';
 import CommentDialog from './CommentDialog';
 import SentenceMicroQuiz from './SentenceMicroQuiz';
+import SplitSentenceModal from './SplitSentenceModal';
 import {
     analyzeSentenceWords,
     DIFFICULTY_META,
     DifficultyLevel,
+    proposeSentenceSplit,
     SentenceWordAnalysis,
+    SplitProposal,
 } from './newWordsUtils';
 
 // Estilos para PDF (invisível na tela)
@@ -80,6 +83,7 @@ interface ReadingViewProps {
     onSaveGeneratedCard: (card: Keyword, context: string) => void;
     onUpdateItem?: (id: string, data: Partial<StudyItem>) => void;
     onReorderItems?: (updates: { id: string | number; createdAt?: string }[]) => Promise<void>;
+    onSplitSentence?: (originalId: string | number, chunks: Omit<StudyItem, 'id'>[]) => Promise<void>;
     activeFolderFilters: string[];
     onUpdateFolderFilters: (filters: string[]) => void;
     userId?: string;
@@ -100,6 +104,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onSaveGeneratedCard,
     onUpdateItem,
     onReorderItems,
+    onSplitSentence,
     activeFolderFilters,
     onUpdateFolderFilters,
     userId,
@@ -174,6 +179,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     const [difficultyFilter, setDifficultyFilter] = useState<DifficultyLevel | 'all'>('all');
     /** Micro-desafios concluídos nesta sessão */
     const [completedQuizzes, setCompletedQuizzes] = useState<Set<string>>(() => new Set());
+    const [splitPreview, setSplitPreview] = useState<{ item: StudyItem; proposal: SplitProposal } | null>(null);
+    const [splitBusy, setSplitBusy] = useState(false);
     const readingPrefsHydrated = useRef(false);
 
     useEffect(() => {
@@ -640,6 +647,26 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             next.add(sentenceId);
             return next;
         });
+    };
+
+    const confirmSplit = async () => {
+        if (!splitPreview || !onSplitSentence) return;
+        setSplitBusy(true);
+        try {
+            const id = splitPreview.item.id;
+            await onSplitSentence(id, splitPreview.proposal.chunks);
+            setColorCorrections(prev => {
+                const next = new Map(prev);
+                next.delete(String(id));
+                return next;
+            });
+            setSplitPreview(null);
+        } catch (e) {
+            console.error('[SplitSentence]', e);
+            alert('Erro ao dividir a frase. Tente novamente.');
+        } finally {
+            setSplitBusy(false);
+        }
     };
 
     const cleanPunctuation = (text: string) => text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'´]/g, "").trim();
@@ -1205,6 +1232,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         const difficulty = analysis?.difficulty || 'easy';
                         const diffMeta = DIFFICULTY_META[difficulty];
                         const quizDone = completedQuizzes.has(item.id.toString());
+                        const canSplit = difficulty === 'hard' && !!onSplitSentence
+                            ? proposeSentenceSplit(item, savedWordsMap)
+                            : null;
 
                         return (
                             <div
@@ -1393,6 +1423,21 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                             })() : item.translation}
                                         </p>
                                         {!selectionMode && !reorderMode && (
+                                            <div className="flex flex-wrap items-center gap-2 mt-1">
+                                                {canSplit && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={(e) => { e.stopPropagation(); setSplitPreview({ item, proposal: canSplit }); }}
+                                                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border border-rose-200 bg-rose-50 text-rose-700 hover:bg-rose-100 transition-colors"
+                                                        title="Dividir em pedaços com poucas palavras novas"
+                                                    >
+                                                        <Icon name="scissors" size={12} />
+                                                        Dividir frase
+                                                    </button>
+                                                )}
+                                            </div>
+                                        )}
+                                        {!selectionMode && !reorderMode && (
                                             <SentenceMicroQuiz
                                                 item={item}
                                                 savedWordsMap={savedWordsMap}
@@ -1425,6 +1470,17 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     <Icon name="plus" size={24} />
                 </button>
             </div>
+
+            {splitPreview && (
+                <SplitSentenceModal
+                    item={splitPreview.item}
+                    proposal={splitPreview.proposal}
+                    savedWordsMap={savedWordsMap}
+                    busy={splitBusy}
+                    onCancel={() => !splitBusy && setSplitPreview(null)}
+                    onConfirm={confirmSplit}
+                />
+            )}
 
             {/* MODAL CONFIRMAÇÃO TRADUÇÃO */}
             {confirmModal && (

@@ -34,6 +34,7 @@ import { useCloudSync } from './hooks/useCloudSync';
 import { useVoiceRecording } from './hooks/useVoiceRecording';
 import { studyData as staticData } from './constants';
 import { StudyItem, Stats, Keyword, SessionStats, StatsHistory } from './types';
+import { getTimestamp } from './utils/dateUtils';
 
 // Views de jogo carregadas sob demanda (lazy) — ficam FORA do bundle inicial.
 // A aba Jogo está temporariamente desativada (removida do footer); reativar via toggle Beta.
@@ -483,6 +484,42 @@ const App: React.FC = () => {
         await addItem(data);
     };
 
+    /** Substitui uma frase pesada por pedaços leves, preservando a ordem de leitura. */
+    const handleSplitSentence = async (originalId: string | number, chunks: Omit<StudyItem, 'id'>[]) => {
+        if (!user) {
+            alert('Faça login para dividir frases.');
+            return;
+        }
+        if (!chunks.length) return;
+
+        const original = libraryData.find(i => String(i.id) === String(originalId));
+        if (!original) throw new Error('Frase original não encontrada');
+
+        const baseMs = getTimestamp(original.createdAt) || Date.now();
+        const first = chunks[0];
+
+        await updateItem(String(original.id), {
+            chinese: first.chinese,
+            pinyin: first.pinyin,
+            translation: first.translation,
+            tokens: first.tokens,
+            keywords: first.keywords,
+            type: 'text',
+            originalSentence: first.originalSentence || original.chinese,
+            folderPath: first.folderPath ?? original.folderPath,
+            language: first.language || original.language,
+        });
+
+        for (let i = 1; i < chunks.length; i++) {
+            await addItem({
+                ...chunks[i],
+                folderPath: chunks[i].folderPath ?? original.folderPath,
+                language: chunks[i].language || original.language,
+                createdAt: new Date(baseMs - i * 1000).toISOString(),
+            });
+        }
+    };
+
     const handleDelete = async (id: string | number) => {
         if (window.confirm("Tem certeza que deseja excluir permanentemente esta palavra/texto?")) {
             if (typeof id === 'string') toggleSave(id);
@@ -670,6 +707,7 @@ const App: React.FC = () => {
                         onSaveGeneratedCard={handleSaveGeneratedCard}
                         onUpdateItem={updateItem}
                         onReorderItems={reorderItems}
+                        onSplitSentence={handleSplitSentence}
                         activeFolderFilters={activeFolderFilters}
                         onUpdateFolderFilters={updateFolderFilters}
                         userId={user?.uid}

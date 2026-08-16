@@ -112,7 +112,8 @@ import {
     Megaphone,
     Lightbulb,
     Globe,
-    Award
+    Award,
+    Scissors
 } from 'lucide-react';
 
 export interface IconProps {
@@ -235,7 +236,8 @@ const icons: Record<string, React.ElementType<any>> = {
     'megaphone': Megaphone,
     'lightbulb': Lightbulb,
     'globe': Globe,
-    'award': Award
+    'award': Award,
+    'scissors': Scissors
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {
