@@ -2,7 +2,7 @@
 
 import { GoogleGenAI } from "@google/genai";
 import { StudyItem, Keyword, GameCard, SupportedLanguage } from "../types";
-import { callOpenRouterText } from "../lib/openrouter.js";
+import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult } from "../lib/openrouter.js";
 
 // Exportamos a interface também daqui se precisar, ou usamos a do types.ts
 export { type GameCard } from "../types";
@@ -226,14 +226,13 @@ REGRAS:
 4. Seja PRECISO: somente marque palavras que são traduções DIRETAS ou SINÔNIMOS PRÓXIMOS da palavra salva.
 5. Palavras funcionais (artigos, preposições) NÃO devem receber cor, a menos que sejam parte integral da tradução de uma palavra salva.
 
-FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
+FORMATO DE RESPOSTA — retorne APENAS um JSON Array válido, sem reticências e sem markdown:
 [
   {
     "sentenceId": "id-da-frase",
     "coloredTranslation": [
       { "word": "palavra-da-tradução", "colorIndex": 0 },
-      { "word": "outra", "colorIndex": null },
-      ...
+      { "word": "outra", "colorIndex": null }
     ]
   }
 ]`;
@@ -922,44 +921,52 @@ export interface ColorCorrectionOutput {
  * Analisa cada frase e identifica exatamente quais palavras da tradução
  * correspondem a cada palavra salva, atribuindo o colorIndex correto.
  */
+const COLOR_CHUNK_SIZE = 4;
+const COLOR_CONCURRENCY = 2;
+
 export const correctColorHighlights = async (
     sentences: ColorCorrectionInput[],
     targetLanguage: SupportedLanguage = 'zh'
 ): Promise<ColorCorrectionOutput[]> => {
     if (sentences.length === 0) return [];
 
-    const systemPrompt = getSystemInstruction('color_correction', targetLanguage);
-    const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
-
-Dados:
-${JSON.stringify(sentences.map(s => ({
+    const payloadFor = (batch: ColorCorrectionInput[]) => batch.map(s => ({
         sentenceId: s.sentenceId,
         originalText: s.originalText,
         translation: s.translation,
         savedWords: s.savedWords.map(w => ({ word: w.word, meaning: w.meaning, colorIndex: w.colorIndex }))
-    })), null, 2)}`;
+    }));
 
-    if (import.meta.env.DEV) {
-        console.log("[ColorCorrection] Using OpenRouter (DeepSeek V4 Flash)");
-        const result = await callLocalLLM(userPrompt, systemPrompt);
-        console.log("[ColorCorrection] Result:", result);
-        return result;
-    }
+    const runBatch = async (batch: ColorCorrectionInput[]): Promise<ColorCorrectionOutput[]> => {
+        if (import.meta.env.DEV) {
+            console.log(`[ColorCorrection] Using OpenRouter (DeepSeek V4 Flash) — ${batch.length} frases`);
+            const systemPrompt = getSystemInstruction('color_correction', targetLanguage);
+            const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
 
-    // PROD MODE
-    try {
+Dados:
+${JSON.stringify(payloadFor(batch), null, 2)}`;
+            const result = await callLocalLLM(userPrompt, systemPrompt);
+            return normalizeArrayResult(result);
+        }
+
         const response = await fetch(API_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 type: 'color_correction',
-                sentences,
+                sentences: batch,
                 targetLanguage
             }),
         });
 
         if (!response.ok) throw new Error("Erro ao corrigir cores");
-        return await response.json();
+        return normalizeArrayResult(await response.json());
+    };
+
+    try {
+        const chunks = chunkArray(sentences, COLOR_CHUNK_SIZE);
+        const parts = await mapChunks(chunks, COLOR_CONCURRENCY, runBatch);
+        return parts.flat();
     } catch (error) {
         console.error("Color Correction Error:", error);
         throw error;

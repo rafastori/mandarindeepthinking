@@ -1,6 +1,6 @@
 // Texto via OpenRouter (DeepSeek); embeddings continuam no Gemini
 import { GoogleGenAI } from "@google/genai";
-import { callOpenRouterText } from "../lib/openrouter.js";
+import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult } from "../lib/openrouter.js";
 
 // expectJson=false: retorna { text } (Markdown/texto livre)
 // expectJson=true (default): parseia JSON
@@ -334,6 +334,10 @@ REGRAS RÍGIDAS:
     // --- 7. COLOR CORRECTION ---
     if (type === 'color_correction') {
       const { sentences, targetLanguage } = req.body;
+      if (!Array.isArray(sentences) || sentences.length === 0) {
+        return res.status(400).json({ error: "O campo 'sentences' é obrigatório." });
+      }
+
       const langNames = { 'de': 'Alemão', 'zh': 'Chinês', 'pt': 'Português', 'en': 'Inglês', 'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano' };
       const langName = langNames[targetLanguage] || targetLanguage;
 
@@ -348,25 +352,39 @@ REGRAS:
 4. Seja PRECISO: somente marque palavras que são traduções DIRETAS ou SINÔNIMOS PRÓXIMOS da palavra salva.
 5. Palavras funcionais (artigos, preposições) NÃO devem receber cor, a menos que sejam parte integral da tradução de uma palavra salva.
 
-FORMATO DE RESPOSTA — retorne APENAS um JSON Array:
+FORMATO DE RESPOSTA — retorne APENAS um JSON Array válido, sem reticências e sem markdown:
 [
   {
     "sentenceId": "id-da-frase",
     "coloredTranslation": [
       { "word": "palavra-da-tradução", "colorIndex": 0 },
-      { "word": "outra", "colorIndex": null },
-      ...
+      { "word": "outra", "colorIndex": null }
     ]
   }
 ]`;
 
-      const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
+      const runChunk = async (chunk) => {
+        const userPrompt = `Analise as seguintes frases e suas traduções. Para cada frase, identifique quais palavras da tradução correspondem às palavras salvas (com seus colorIndex).
 
 Dados:
-${JSON.stringify(sentences, null, 2)}`;
+${JSON.stringify(chunk, null, 2)}`;
+        const result = await callTextLLM(userPrompt, systemPrompt);
+        return normalizeArrayResult(result);
+      };
 
-      const result = await callTextLLM(userPrompt, systemPrompt);
-      return res.status(200).json(result);
+      // Lotes pequenos: o DeepSeek estoura o timeout da function com muitas frases de uma vez
+      const COLOR_CHUNK = 4;
+      const COLOR_CONCURRENCY = 2;
+      if (sentences.length <= COLOR_CHUNK) {
+        return res.status(200).json(await runChunk(sentences));
+      }
+
+      const chunkResults = await mapChunks(
+        chunkArray(sentences, COLOR_CHUNK),
+        COLOR_CONCURRENCY,
+        runChunk
+      );
+      return res.status(200).json(chunkResults.flat());
     }
 
     // --- 8. POLYQUEST: TOKENIZAÇÃO ---
