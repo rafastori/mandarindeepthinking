@@ -9,6 +9,7 @@ interface Props {
     meaningPool: string[];
     completed: boolean;
     onCompleted: (sentenceId: string) => void;
+    onResult?: (isCorrect: boolean, word: string) => void;
 }
 
 type Phase = 'idle' | 'quiz' | 'correct' | 'wrong';
@@ -19,6 +20,7 @@ const SentenceMicroQuiz: React.FC<Props> = ({
     meaningPool,
     completed,
     onCompleted,
+    onResult,
 }) => {
     const [phase, setPhase] = useState<Phase>(completed ? 'correct' : 'idle');
     const [question, setQuestion] = useState<MicroQuizQuestion | null>(null);
@@ -50,14 +52,16 @@ const SentenceMicroQuiz: React.FC<Props> = ({
         setPicked(option);
         if (option === question.correctMeaning) {
             setPhase('correct');
+            onResult?.(true, question.word);
             onCompleted(item.id.toString());
         } else {
             setPhase('wrong');
+            onResult?.(false, question.word);
         }
     };
 
     const retry = () => {
-        const q = buildMicroQuiz(analysis, meaningPool);
+        const q = buildMicroQuiz(analysis, meaningPool, question?.word);
         if (!q) return;
         setQuestion(q);
         setPicked(null);
@@ -154,7 +158,7 @@ const SentenceMicroQuiz: React.FC<Props> = ({
                     {phase === 'correct' && (
                         <p className="mt-2 text-xs text-emerald-700 font-medium flex items-center gap-1">
                             <Icon name="zap" size={12} />
-                            Recompensa desbloqueada — frase leve na memória
+                            +10 pts na sua pontuação
                         </p>
                     )}
                 </>

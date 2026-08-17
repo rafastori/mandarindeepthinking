@@ -273,7 +273,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
 
             {/* Versão */}
             <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-white/40 font-mono pointer-events-none select-none">
-                v{process.env.APP_VERSION || '0.1.2'}
+                v{process.env.APP_VERSION || '0.1.3'}
             </span>
         </div>
     );

@@ -708,6 +708,7 @@ const App: React.FC = () => {
                         onUpdateItem={updateItem}
                         onReorderItems={reorderItems}
                         onSplitSentence={handleSplitSentence}
+                        onResult={handleRecordResult}
                         activeFolderFilters={activeFolderFilters}
                         onUpdateFolderFilters={updateFolderFilters}
                         userId={user?.uid}

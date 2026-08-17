@@ -90,6 +90,7 @@ interface ReadingViewProps {
     voiceRecording?: ReturnType<typeof useVoiceRecording>;
     isColorHighlightEnabled: boolean;
     setIsColorHighlightEnabled: (enabled: boolean) => void;
+    onResult?: (isCorrect: boolean, word: string) => void;
 }
 
 const ReadingView: React.FC<ReadingViewProps> = ({
@@ -110,7 +111,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     userId,
     voiceRecording,
     isColorHighlightEnabled,
-    setIsColorHighlightEnabled
+    setIsColorHighlightEnabled,
+    onResult
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
@@ -1444,6 +1446,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                 meaningPool={meaningPool}
                                                 completed={quizDone}
                                                 onCompleted={markQuizCompleted}
+                                                onResult={onResult}
                                             />
                                         )}
                                     </div>

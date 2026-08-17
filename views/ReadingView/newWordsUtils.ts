@@ -137,18 +137,35 @@ const shuffle = <T,>(arr: T[]): T[] => {
     return copy;
 };
 
+const pickRandomWord = (
+    pool: TokenWordInfo[],
+    excludeWord?: string
+): TokenWordInfo | undefined => {
+    if (pool.length === 0) return undefined;
+    const exclude = excludeWord?.toLowerCase();
+    const choices = exclude
+        ? pool.filter(w => w.cleanLower !== exclude && w.clean.toLowerCase() !== exclude)
+        : pool;
+    if (choices.length === 0) return undefined;
+    return choices[Math.floor(Math.random() * choices.length)];
+};
+
 /**
  * Builds a one-tap meaning quiz for a sentence.
- * Prefers a new word that already has a meaning (keywords);
- * falls back to a known saved word.
+ * Sorteia entre palavras novas que já têm significado (keywords/cards);
+ * se não houver, sorteia entre as já salvas da mesma frase.
  */
 export const buildMicroQuiz = (
     analysis: SentenceWordAnalysis,
-    meaningPool: string[]
+    meaningPool: string[],
+    excludeWord?: string
 ): MicroQuizQuestion | null => {
     const withMeaningNew = analysis.newWords.filter(w => w.meaning && w.meaning.trim().length > 0);
     const withMeaningKnown = analysis.knownWords.filter(w => w.meaning && w.meaning.trim().length > 0);
-    const target = withMeaningNew[0] || withMeaningKnown[0];
+    const target = pickRandomWord(withMeaningNew, excludeWord)
+        || pickRandomWord(withMeaningKnown, excludeWord)
+        || pickRandomWord(withMeaningNew)
+        || pickRandomWord(withMeaningKnown);
     if (!target?.meaning) return null;
 
     const correct = target.meaning.trim();
