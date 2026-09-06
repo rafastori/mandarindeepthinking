@@ -82,7 +82,11 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
         setAlignment(next);
     }, []);
 
-    const runAutoAlign = useCallback(async (audioFileId: string, language?: StudyItem['language']) => {
+    const runAutoAlign = useCallback(async (
+        audioFileId: string,
+        language?: StudyItem['language'],
+        introSkipSeconds?: number
+    ) => {
         if (!lessonId) return null;
         const file = await nativeAudioLibrary.getFile(audioFileId);
         if (!file) throw new Error('MP3 nativo não encontrado. Vincule o digestivo primeiro.');
@@ -97,6 +101,7 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
                 blob: file.blob,
                 sentences,
                 language: language || 'zh',
+                introSkipSeconds,
                 onProgress: (value, message) => {
                     setProgress(value);
                     if (message) setProgressMessage(message);

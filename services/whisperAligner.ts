@@ -1,4 +1,15 @@
-import { AlignSentenceInput, LessonAlignment, parseWhisperChunks, TimedChunk, alignSentencesToChunks, hashLessonContent } from '../utils/audioAlignment';
+import {
+    AlignSentenceInput,
+    DEFAULT_INTRO_SKIP_SECONDS,
+    LessonAlignment,
+    TimedChunk,
+    alignSentencesToChunks,
+    clampIntroSkip,
+    extraSkipFromLatinIntro,
+    hashLessonContent,
+    offsetChunks,
+    parseWhisperChunks,
+} from '../utils/audioAlignment';
 import { SupportedLanguage } from '../types';
 
 const whisperLangMap: Record<string, string> = {
@@ -90,30 +101,54 @@ export function transcribeAudioWithTimestamps(
     });
 }
 
+function sliceFromSeconds(samples: Float32Array, skipSeconds: number, sampleRate = 16000): Float32Array {
+    const start = Math.min(Math.floor(skipSeconds * sampleRate), Math.max(samples.length - sampleRate, 0));
+    return samples.subarray(Math.max(start, 0));
+}
+
 export async function autoAlignLesson(options: {
     lessonId: string;
     audioFileId: string;
     blob: Blob;
     sentences: AlignSentenceInput[];
     language?: SupportedLanguage;
+    introSkipSeconds?: number;
     onProgress?: (progress: number, message?: string) => void;
 }): Promise<LessonAlignment> {
     const { samples, duration } = await decodeBlobToMono16k(options.blob);
-    options.onProgress?.(5, 'Áudio decodificado');
+    const requestedSkip = clampIntroSkip(
+        options.introSkipSeconds ?? DEFAULT_INTRO_SKIP_SECONDS,
+        duration
+    );
+    options.onProgress?.(5, requestedSkip > 0
+        ? `Pulando intro de ${requestedSkip.toFixed(1).replace('.', ',')}s…`
+        : 'Áudio decodificado');
 
+    const sliced = requestedSkip > 0 ? sliceFromSeconds(samples, requestedSkip) : samples;
     let chunks: TimedChunk[] = [];
+    let effectiveSkip = requestedSkip;
     try {
         const result = await transcribeAudioWithTimestamps(
-            samples,
+            sliced,
             options.language || 'zh',
             options.onProgress
         );
-        chunks = result.chunks;
+        const relative = result.chunks;
+        const leftover = extraSkipFromLatinIntro(relative);
+        effectiveSkip = clampIntroSkip(requestedSkip + leftover, duration);
+        chunks = offsetChunks(
+            leftover > 0 ? relative.filter(c => c.end > leftover + 0.05).map(c => ({
+                ...c,
+                start: c.start - leftover,
+                end: c.end - leftover,
+            })) : relative,
+            effectiveSkip
+        );
     } catch (error) {
         console.warn('Whisper alignment falhou, usando divisão proporcional:', error);
     }
 
-    const aligned = alignSentencesToChunks(options.sentences, chunks, duration);
+    const aligned = alignSentencesToChunks(options.sentences, chunks, duration, effectiveSkip);
     return {
         lessonId: options.lessonId,
         audioFileId: options.audioFileId,
@@ -123,6 +158,7 @@ export async function autoAlignLesson(options: {
         whisperChunks: chunks,
         method: aligned.method,
         averageScore: aligned.averageScore,
+        introSkipSeconds: effectiveSkip,
         updatedAt: new Date().toISOString(),
     };
 }

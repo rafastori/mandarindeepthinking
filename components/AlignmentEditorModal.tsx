@@ -1,9 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Icon from './Icon';
 import { StudyItem } from '../types';
 import { useLessonAlignment } from '../hooks/useLessonAlignment';
-import { formatClockPrecise } from '../utils/audioAlignment';
+import { DEFAULT_INTRO_SKIP_SECONDS, INTRO_SKIP_PRESETS, formatClockPrecise } from '../utils/audioAlignment';
 import { formatClock } from '../utils/chinesePodAudio';
+import { nativeAudioLibrary } from '../services/nativeAudioLibrary';
 
 interface Props {
     lessonId: string;
@@ -40,6 +41,21 @@ const AlignmentEditorModal: React.FC<Props> = ({
 }) => {
     const align = useLessonAlignment(lessonId, items);
     const [selectedId, setSelectedId] = useState(items[0]?.id.toString() || '');
+    const [introSkip, setIntroSkip] = useState(DEFAULT_INTRO_SKIP_SECONDS);
+
+    useEffect(() => {
+        let cancelled = false;
+        (async () => {
+            try {
+                const summary = await nativeAudioLibrary.getSummary();
+                const stored = align.alignment?.introSkipSeconds ?? summary.introSkipSeconds;
+                if (!cancelled && typeof stored === 'number') setIntroSkip(stored);
+            } catch {
+                if (align.alignment?.introSkipSeconds != null) setIntroSkip(align.alignment.introSkipSeconds);
+            }
+        })();
+        return () => { cancelled = true; };
+    }, [align.alignment?.introSkipSeconds]);
 
     const selectedCue = useMemo(
         () => align.alignment?.cues.find(c => c.itemId === selectedId) || null,
@@ -55,10 +71,19 @@ const AlignmentEditorModal: React.FC<Props> = ({
 
     const handleAuto = async () => {
         try {
-            await align.runAutoAlign(audioFileId, language);
+            await nativeAudioLibrary.setIntroSkipSeconds(introSkip);
+            await align.runAutoAlign(audioFileId, language, introSkip);
         } catch {
             // error already stored
         }
+    };
+
+    const applySkipToCurrentCues = async () => {
+        if (!align.alignment || align.alignment.cues.length === 0) return;
+        const first = align.alignment.cues[0].start;
+        const delta = introSkip - first;
+        if (Math.abs(delta) < 0.05) return;
+        await align.shiftAll(delta);
     };
 
     return (
@@ -80,6 +105,55 @@ const AlignmentEditorModal: React.FC<Props> = ({
                 </div>
 
                 <div className="p-4 space-y-3">
+                    <div className="rounded-xl border border-amber-200 bg-amber-50 p-3">
+                        <p className="text-xs font-bold text-amber-900">Pular introdução em inglês</p>
+                        <p className="text-[11px] text-amber-800/80 mt-0.5">
+                            Os DG do ChinesePod começam com ~6s de inglês. O Whisper só ouve o diálogo depois disso — senão as frases ficam adiantadas.
+                        </p>
+                        <div className="mt-2 flex flex-wrap gap-1">
+                            {INTRO_SKIP_PRESETS.map(value => (
+                                <button
+                                    key={value}
+                                    type="button"
+                                    onClick={() => setIntroSkip(value)}
+                                    className={`px-2.5 py-1 rounded-lg text-[11px] font-bold border ${introSkip === value
+                                        ? 'bg-amber-600 text-white border-amber-600'
+                                        : 'bg-white text-amber-900 border-amber-200'
+                                    }`}
+                                >
+                                    {String(value).replace('.', ',')}s
+                                </button>
+                            ))}
+                        </div>
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                            <button
+                                type="button"
+                                onClick={() => onPlaySegment(0, introSkip, 'intro')}
+                                className="px-2.5 py-1.5 rounded-lg border border-amber-200 bg-white text-[11px] font-semibold text-amber-900"
+                            >
+                                Ouvir intro
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    onSeekTo(introSkip);
+                                    onPlaySegment(introSkip, introSkip + 4, 'dialogue-start');
+                                }}
+                                className="px-2.5 py-1.5 rounded-lg border border-amber-200 bg-white text-[11px] font-semibold text-amber-900"
+                            >
+                                Ouvir início do diálogo
+                            </button>
+                            <button
+                                type="button"
+                                disabled={!align.alignment || align.busy}
+                                onClick={applySkipToCurrentCues}
+                                className="px-2.5 py-1.5 rounded-lg border border-amber-200 bg-white text-[11px] font-semibold text-amber-900 disabled:opacity-40"
+                            >
+                                Aplicar {String(introSkip).replace('.', ',')}s nas frases atuais
+                            </button>
+                        </div>
+                    </div>
+
                     <div className="flex flex-wrap gap-2">
                         <button
                             type="button"
@@ -127,6 +201,9 @@ const AlignmentEditorModal: React.FC<Props> = ({
                                 : align.alignment.method === 'proportional'
                                     ? 'Divisão proporcional (o texto não bateu com o falado — ajuste na mão)'
                                     : 'Alinhamento manual'}
+                            {align.alignment.introSkipSeconds
+                                ? ` · intro ${String(align.alignment.introSkipSeconds).replace('.', ',')}s pulada`
+                                : ''}
                             {align.stale ? ' · texto da pasta mudou; vale realinhar.' : ''}
                         </p>
                     )}

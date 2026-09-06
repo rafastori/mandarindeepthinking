@@ -28,8 +28,16 @@ export interface LessonAlignment {
     whisperChunks?: TimedChunk[];
     method?: 'whisper' | 'proportional' | 'manual';
     averageScore?: number;
+    /** Segundos ignorados no começo (intro em inglês do ChinesePod). */
+    introSkipSeconds?: number;
     updatedAt: string;
 }
+
+/** Intro em inglês no início dos DG ChinesePod — típico ~6s. */
+export const DEFAULT_INTRO_SKIP_SECONDS = 6;
+export const INTRO_SKIP_PRESETS = [5, 6, 6.5, 7, 8] as const;
+
+const CJK_RE = /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/;
 
 export interface AlignSentenceInput {
     id: string;
@@ -105,19 +113,59 @@ export function shiftCues(
     );
 }
 
+export function offsetChunks(chunks: TimedChunk[], offset: number): TimedChunk[] {
+    if (!offset) return chunks;
+    return chunks.map(chunk => ({
+        ...chunk,
+        start: chunk.start + offset,
+        end: chunk.end + offset,
+    }));
+}
+
+export function isLatinHeavy(text: string): boolean {
+    const letters = (text || '').replace(/[^a-zA-Z\u00C0-\u024F]/g, '');
+    const cjk = (text || '').match(CJK_RE) || [];
+    return letters.length >= 6 && cjk.length < 2;
+}
+
+export function hasCjk(text: string): boolean {
+    return CJK_RE.test(text || '');
+}
+
+/** Se o começo ainda for inglês, devolve quantos segundos extras pular (relativo aos chunks). */
+export function extraSkipFromLatinIntro(chunks: TimedChunk[], searchUntil = 5): number {
+    let extra = 0;
+    const ordered = [...chunks].sort((a, b) => a.start - b.start);
+    for (const chunk of ordered) {
+        if (chunk.start > searchUntil) break;
+        if (isLatinHeavy(chunk.text)) extra = Math.max(extra, chunk.end);
+        else if (hasCjk(chunk.text)) break;
+    }
+    return extra;
+}
+
+export function clampIntroSkip(seconds: number, duration: number): number {
+    if (!Number.isFinite(seconds) || seconds <= 0) return 0;
+    const max = Math.max(duration - 1, 0);
+    return Math.min(Math.max(seconds, 0), Math.min(max, 15));
+}
+
 export function proportionalAlign(
     sentences: AlignSentenceInput[],
-    duration: number
+    duration: number,
+    startOffset = 0
 ): SentenceAlignment[] {
     if (sentences.length === 0 || duration <= 0) return [];
+    const offset = clampIntroSkip(startOffset, duration);
+    const usable = Math.max(duration - offset, 0.5);
     const weights = sentences.map(s => Math.max(normalizeAlignText(s.text).length, 4));
     const total = weights.reduce((sum, w) => sum + w, 0);
     let cursor = 0;
     return sentences.map((sentence, index) => {
-        const span = (weights[index] / total) * duration;
-        const start = cursor;
-        const end = index === sentences.length - 1 ? duration : cursor + span;
-        cursor = end;
+        const span = (weights[index] / total) * usable;
+        const start = offset + cursor;
+        const end = index === sentences.length - 1 ? duration : offset + cursor + span;
+        cursor = end - offset;
         return {
             itemId: sentence.id,
             start,
@@ -178,9 +226,12 @@ function timeAt(times: number[], index: number, duration: number, end: boolean):
 export function alignSentencesToChunks(
     sentences: AlignSentenceInput[],
     chunks: TimedChunk[],
-    duration: number
+    duration: number,
+    startOffset = 0
 ): { cues: SentenceAlignment[]; averageScore: number; method: 'whisper' | 'proportional' } {
-    const proportional = proportionalAlign(sentences, duration);
+    const offset = clampIntroSkip(startOffset, duration);
+    const usableChunks = chunks.filter(chunk => chunk.end > offset + 0.05);
+    const proportional = proportionalAlign(sentences, duration, offset);
     if (sentences.length === 0) {
         return { cues: [], averageScore: 0, method: 'proportional' };
     }
@@ -188,7 +239,7 @@ export function alignSentencesToChunks(
         return { cues: proportional, averageScore: 0, method: 'proportional' };
     }
 
-    const { chars, times } = buildCharTimeline(chunks);
+    const { chars, times } = buildCharTimeline(usableChunks);
     if (chars.length < 4) {
         return { cues: proportional, averageScore: 0, method: 'proportional' };
     }
@@ -251,8 +302,14 @@ export function alignSentencesToChunks(
         return { cues: proportional, averageScore, method: 'proportional' };
     }
 
+    const lifted = cues.map(cue => ({
+        ...cue,
+        start: Math.max(cue.start, offset),
+        end: Math.max(cue.end, offset + MIN_SEG),
+    }));
+
     return {
-        cues: clampCues(cues, duration),
+        cues: clampCues(lifted, duration),
         averageScore,
         method: 'whisper',
     };

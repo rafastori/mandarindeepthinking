@@ -17,17 +17,34 @@ function hashLessonContent(items) {
     return (h >>> 0).toString(16);
 }
 
-function proportionalAlign(sentences, duration) {
+function proportionalAlign(sentences, duration, startOffset = 0) {
+    const usable = Math.max(duration - startOffset, 0.5);
     const weights = sentences.map(s => Math.max(normalizeAlignText(s.text).length, 4));
     const total = weights.reduce((sum, w) => sum + w, 0);
     let cursor = 0;
     return sentences.map((sentence, index) => {
-        const span = (weights[index] / total) * duration;
-        const start = cursor;
-        const end = index === sentences.length - 1 ? duration : cursor + span;
-        cursor = end;
+        const span = (weights[index] / total) * usable;
+        const start = startOffset + cursor;
+        const end = index === sentences.length - 1 ? duration : startOffset + cursor + span;
+        cursor = end - startOffset;
         return { itemId: sentence.id, start, end, source: 'proportional' };
     });
+}
+
+function isLatinHeavy(text) {
+    const letters = (text || '').replace(/[^a-zA-Z\u00C0-\u024F]/g, '');
+    const cjk = (text || '').match(/[\u3400-\u9fff]/) || [];
+    return letters.length >= 6 && cjk.length < 2;
+}
+
+function extraSkipFromLatinIntro(chunks, searchUntil = 5) {
+    let extra = 0;
+    for (const chunk of [...chunks].sort((a, b) => a.start - b.start)) {
+        if (chunk.start > searchUntil) break;
+        if (isLatinHeavy(chunk.text)) extra = Math.max(extra, chunk.end);
+        else if (/[\u3400-\u9fff]/.test(chunk.text)) break;
+    }
+    return extra;
 }
 
 function shiftCues(cues, delta, duration) {
@@ -98,6 +115,17 @@ assert(aligned.hits === 2, 'both sentences matched');
 
 const miss = alignExact(sents, [{ start: 0, end: 4, text: 'totally different' }], 4);
 assert(miss.method === 'proportional', 'mismatch falls back to proportional');
+
+const withIntro = proportionalAlign(sents, 16, 6);
+assert(Math.abs(withIntro[0].start - 6) < 1e-9, 'proportional starts after 6s intro');
+assert(Math.abs(withIntro[1].end - 16) < 1e-9, 'last still ends at duration');
+
+assert(isLatinHeavy('Welcome to ChinesePod'), 'english intro is latin-heavy');
+assert(!isLatinHeavy('你好吗'), 'chinese is not latin-heavy');
+assert(extraSkipFromLatinIntro([
+    { start: 0, end: 1.4, text: 'Welcome back' },
+    { start: 1.4, end: 3, text: '你好' },
+]) === 1.4, 'extra skip until first CJK');
 
 if (failed) {
     console.error(failed, 'failed');

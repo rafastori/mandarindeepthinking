@@ -16,7 +16,7 @@ import {
     selectImportCandidates,
     suffixPriority,
 } from '../utils/chinesePodAudio';
-import { LessonAlignment } from '../utils/audioAlignment';
+import { DEFAULT_INTRO_SKIP_SECONDS, LessonAlignment } from '../utils/audioAlignment';
 
 const DB_NAME = 'MemorizaTudoNativeAudioDB';
 const DB_VERSION = 2;
@@ -46,6 +46,7 @@ export interface NativeAudioLibraryMeta {
     preferredSuffix: ChinesePodSuffix;
     keepLargeFiles: boolean;
     importMode: NativeImportMode;
+    introSkipSeconds?: number;
     sourceLabel?: string;
     updatedAt?: string;
     directoryHandle?: FileSystemDirectoryHandle;
@@ -55,6 +56,7 @@ export interface NativeAudioLibrarySummary {
     preferredSuffix: ChinesePodSuffix;
     keepLargeFiles: boolean;
     importMode: NativeImportMode;
+    introSkipSeconds: number;
     sourceLabel?: string;
     updatedAt?: string;
     fileCount: number;
@@ -81,6 +83,7 @@ const defaultMeta: NativeAudioLibraryMeta = {
     preferredSuffix: DEFAULT_PREFERRED_SUFFIX,
     keepLargeFiles: false,
     importMode: 'dg-only',
+    introSkipSeconds: DEFAULT_INTRO_SKIP_SECONDS,
 };
 
 let dbInstance: IDBDatabase | null = null;
@@ -224,6 +227,7 @@ export const nativeAudioLibrary = {
             preferredSuffix: meta.preferredSuffix,
             keepLargeFiles: meta.keepLargeFiles,
             importMode: meta.importMode || 'dg-only',
+            introSkipSeconds: meta.introSkipSeconds ?? DEFAULT_INTRO_SKIP_SECONDS,
             sourceLabel: meta.sourceLabel,
             updatedAt: meta.updatedAt,
             fileCount: files.length,
@@ -370,6 +374,11 @@ export const nativeAudioLibrary = {
 
     async setImportMode(importMode: NativeImportMode): Promise<void> {
         await this.saveMeta({ importMode });
+        notifyLibraryChange();
+    },
+
+    async setIntroSkipSeconds(introSkipSeconds: number): Promise<void> {
+        await this.saveMeta({ introSkipSeconds });
         notifyLibraryChange();
     },
 
