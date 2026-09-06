@@ -16,6 +16,11 @@ import AlignmentEditorModal from '../../components/AlignmentEditorModal';
 import { useNativeLessonPlayer } from '../../hooks/useNativeLessonAudio';
 import { useLessonAlignment } from '../../hooks/useLessonAlignment';
 import { resolveLessonIdForView } from '../../utils/chinesePodAudio';
+import {
+    cuesLookUnshifted,
+    effectiveCueTimes,
+    resolveIntroSkip,
+} from '../../utils/audioAlignment';
 import { useReadingComments } from './useReadingComments';
 import CommentDialog from './CommentDialog';
 import SentenceMicroQuiz from './SentenceMicroQuiz';
@@ -359,16 +364,28 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         const key = id.startsWith('reading-') ? id.slice('reading-'.length) : id;
         return lessonAlignment.alignment.cues.find(cue => cue.itemId === key) || null;
     }, [lessonAlignment.alignment]);
+    const introSkip = resolveIntroSkip(lessonAlignment.alignment, nativeAudio.summary?.introSkipSeconds);
     const speakText = useCallback(async (text: string, language: SupportedLanguage, id?: string) => {
         const cue = cueForId(id);
         if (cue && nativeAudio.match) {
-            stop();
-            await nativeAudio.playSegment(cue.start, cue.end, cue.itemId);
-            return;
+            const times = effectiveCueTimes(
+                cue,
+                introSkip,
+                nativeAudio.duration || lessonAlignment.alignment?.duration,
+                {
+                    legacyUnshifted: cuesLookUnshifted(lessonAlignment.alignment?.cues, introSkip)
+                        && lessonAlignment.alignment?.introSkipSeconds == null,
+                }
+            );
+            if (times) {
+                stop();
+                await nativeAudio.playSegment(times.start, times.end, cue.itemId);
+                return;
+            }
         }
         nativeAudio.stop();
         return speak(text, language, id);
-    }, [cueForId, nativeAudio, speak, stop]);
+    }, [cueForId, introSkip, lessonAlignment.alignment, nativeAudio, speak, stop]);
 
     // Função para formatar tokens em texto legível
     const formatTokensToText = (tokens: string[]): string => {
@@ -1111,10 +1128,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             isLooping={nativeAudio.isLooping}
                             currentTime={nativeAudio.currentTime}
                             duration={nativeAudio.duration}
-                            onPlay={nativeAudio.play}
+                            onPlay={() => nativeAudio.play(introSkip)}
                             onPause={nativeAudio.pause}
                             onStop={nativeAudio.stop}
-                            onReplay={nativeAudio.replay}
+                            onReplay={() => nativeAudio.replay(introSkip)}
                             onToggleLoop={() => nativeAudio.setLooping(!nativeAudio.isLooping)}
                             onSeek={nativeAudio.seek}
                             onOpenLibrary={() => setShowNativeAudioModal(true)}
@@ -1281,7 +1298,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                 available: true,
                                 hasAlignment: (lessonAlignment.alignment?.cues.length || 0) > 0,
                                 isPlaying: nativeAudio.isPlaying,
-                                onPlay: nativeAudio.play,
+                                onPlay: () => nativeAudio.play(introSkip),
                                 onStop: nativeAudio.stop,
                             } : undefined}
                         />

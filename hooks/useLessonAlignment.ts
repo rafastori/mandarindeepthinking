@@ -6,8 +6,11 @@ import { autoAlignLesson } from '../services/whisperAligner';
 import {
     AlignSentenceInput,
     LessonAlignment,
+    clampIntroSkip,
     hashLessonContent,
     realignOneSentence,
+    rebaseCuesForIntroSkip,
+    resolveIntroSkip,
     shiftCues,
     updateCueTimes,
 } from '../utils/audioAlignment';
@@ -82,7 +85,11 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
         setAlignment(next);
     }, []);
 
-    const runAutoAlign = useCallback(async (audioFileId: string, language?: StudyItem['language']) => {
+    const runAutoAlign = useCallback(async (
+        audioFileId: string,
+        language?: StudyItem['language'],
+        introSkipSeconds?: number
+    ) => {
         if (!lessonId) return null;
         const file = await nativeAudioLibrary.getFile(audioFileId);
         if (!file) throw new Error('MP3 nativo não encontrado. Vincule o digestivo primeiro.');
@@ -97,6 +104,7 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
                 blob: file.blob,
                 sentences,
                 language: language || 'zh',
+                introSkipSeconds,
                 onProgress: (value, message) => {
                     setProgress(value);
                     if (message) setProgressMessage(message);
@@ -133,10 +141,31 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
 
     const shiftAll = useCallback(async (deltaSeconds: number) => {
         if (!alignment) return;
+        const minStart = alignment.introSkipSeconds != null
+            ? clampIntroSkip(alignment.introSkipSeconds, alignment.duration)
+            : 0;
         await save({
             ...alignment,
             method: 'manual',
-            cues: shiftCues(alignment.cues, deltaSeconds, alignment.duration),
+            cues: shiftCues(alignment.cues, deltaSeconds, alignment.duration, minStart),
+            updatedAt: new Date().toISOString(),
+        });
+    }, [alignment, save]);
+
+    const applyIntroSkip = useCallback(async (seconds: number, rebaseCues = true) => {
+        const duration = alignment?.duration ?? 999;
+        const nextSkip = clampIntroSkip(seconds, duration);
+        await nativeAudioLibrary.setIntroSkipSeconds(nextSkip);
+        if (!alignment) return;
+        const previous = alignment.cues[0]?.start ?? alignment.introSkipSeconds ?? 0;
+        const cues = rebaseCues
+            ? rebaseCuesForIntroSkip(alignment.cues, previous, nextSkip, alignment.duration)
+            : alignment.cues;
+        await save({
+            ...alignment,
+            method: 'manual',
+            introSkipSeconds: nextSkip,
+            cues,
             updatedAt: new Date().toISOString(),
         });
     }, [alignment, save]);
@@ -184,7 +213,9 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
         applyCues,
         markTimes,
         shiftAll,
+        applyIntroSkip,
         realignOne,
         clearAlignment,
+        introSkip: resolveIntroSkip(alignment),
     };
 }

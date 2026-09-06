@@ -26,6 +26,7 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
         setPreferredSuffix,
         setKeepLargeFiles,
         setImportMode,
+        setIntroSkipSeconds,
     } = useNativeAudioLibrary();
 
     const filesInputRef = useRef<HTMLInputElement>(null);
@@ -264,6 +265,26 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                             Reconectar pasta (permissão do navegador)
                         </button>
                     )}
+
+                    <div className="rounded-xl border border-amber-200 bg-amber-50 p-3">
+                        <label className="block text-xs font-bold text-amber-900" htmlFor="library-intro-skip">
+                            Pular intro (segundos)
+                        </label>
+                        <p className="text-[11px] text-amber-800/80 mt-1">
+                            Padrão 6s — intro em inglês dos DG ChinesePod. Cada aula pode ajustar no alinhamento.
+                        </p>
+                        <input
+                            id="library-intro-skip"
+                            type="number"
+                            min={0}
+                            max={30}
+                            step={0.5}
+                            value={summary?.introSkipSeconds ?? 6}
+                            disabled={busy}
+                            onChange={(e) => setIntroSkipSeconds(Math.max(0, Number(e.target.value) || 0))}
+                            className="mt-2 w-24 px-2 py-1.5 rounded-lg border border-amber-200 bg-white text-sm tabular-nums text-amber-950 disabled:opacity-50"
+                        />
+                    </div>
 
                     <p className="text-[11px] text-slate-400 leading-relaxed">
                         No Android, selecione a pasta ou os arquivos mistos — o app filtra os *dg.mp3.

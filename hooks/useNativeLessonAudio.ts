@@ -133,6 +133,11 @@ export function useNativeAudioLibrary() {
         await refresh();
     }, [refresh]);
 
+    const setIntroSkipSeconds = useCallback(async (seconds: number) => {
+        await nativeAudioLibrary.setIntroSkipSeconds(seconds);
+        await refresh();
+    }, [refresh]);
+
     return {
         summary,
         loading,
@@ -148,6 +153,7 @@ export function useNativeAudioLibrary() {
         setPreferredSuffix,
         setKeepLargeFiles,
         setImportMode,
+        setIntroSkipSeconds,
     };
 }
 
@@ -163,6 +169,7 @@ export function useNativeLessonPlayer(
     onBeforePlayRef.current = options?.onBeforePlay;
     const segmentEndRef = useRef<number | null>(null);
     const segmentResolveRef = useRef<(() => void) | null>(null);
+    const playbackStartRef = useRef(0);
     const [playingSegmentId, setPlayingSegmentId] = useState<string | null>(null);
 
     const match = useMemo<NativeLessonMatch | null>(() => {
@@ -221,9 +228,19 @@ export function useNativeLessonPlayer(
                 return;
             }
             setPlayingSegmentId(null);
-            setPlayer(prev => looping || audio.loop
-                ? prev
-                : { ...prev, isPlaying: false, currentTime: 0 });
+            if (looping || audio.loop) {
+                const restart = playbackStartRef.current || 0;
+                if (restart > 0.05) {
+                    audio.loop = false;
+                    audio.currentTime = restart;
+                    audio.play().catch(() => undefined);
+                    setPlayer(prev => ({ ...prev, isPlaying: true, currentTime: restart }));
+                    return;
+                }
+                setPlayer(prev => prev);
+                return;
+            }
+            setPlayer(prev => ({ ...prev, isPlaying: false, currentTime: 0 }));
         };
         audio.addEventListener('timeupdate', onTime);
         audio.addEventListener('loadedmetadata', onMeta);
@@ -260,16 +277,26 @@ export function useNativeLessonPlayer(
         return () => teardown();
     }, [teardown]);
 
-    const play = useCallback(async () => {
+    const play = useCallback(async (startAtIfIdle?: number) => {
         if (!match) return;
         onBeforePlayRef.current?.();
         const audio = await ensureAudio();
         if (!audio) return;
         segmentEndRef.current = null;
         setPlayingSegmentId(null);
+        const idle = !Number.isFinite(audio.currentTime) || audio.currentTime < 0.15;
+        if (idle && startAtIfIdle != null && startAtIfIdle > 0) {
+            playbackStartRef.current = startAtIfIdle;
+            audio.currentTime = startAtIfIdle;
+        } else if (idle) {
+            playbackStartRef.current = 0;
+        }
+        if (audio.loop && playbackStartRef.current > 0.05) {
+            audio.loop = false;
+        }
         try {
             await audio.play();
-            setPlayer(prev => ({ ...prev, isPlaying: true }));
+            setPlayer(prev => ({ ...prev, isPlaying: true, currentTime: audio.currentTime || prev.currentTime }));
         } catch (e) {
             console.warn('Falha ao tocar áudio nativo:', e);
         }
@@ -298,21 +325,27 @@ export function useNativeLessonPlayer(
         else play();
     }, [pause, play, player.isPlaying]);
 
-    const replay = useCallback(async () => {
+    const replay = useCallback(async (startAt = 0) => {
         onBeforePlayRef.current?.();
         const audio = await ensureAudio();
         if (!audio) return;
-        audio.currentTime = 0;
+        playbackStartRef.current = Math.max(0, startAt);
+        audio.currentTime = playbackStartRef.current;
+        if (audio.loop && playbackStartRef.current > 0.05) {
+            audio.loop = false;
+        }
         try {
             await audio.play();
-            setPlayer(prev => ({ ...prev, isPlaying: true, currentTime: 0 }));
+            setPlayer(prev => ({ ...prev, isPlaying: true, currentTime: playbackStartRef.current }));
         } catch (e) {
             console.warn('Falha ao repetir áudio nativo:', e);
         }
     }, [ensureAudio]);
 
     const setLooping = useCallback((isLooping: boolean) => {
-        if (audioRef.current) audioRef.current.loop = isLooping;
+        if (audioRef.current) {
+            audioRef.current.loop = isLooping && playbackStartRef.current <= 0.05;
+        }
         setPlayer(prev => ({ ...prev, isLooping }));
     }, []);
 
