@@ -6,6 +6,7 @@ import { autoAlignLesson } from '../services/whisperAligner';
 import {
     AlignSentenceInput,
     LessonAlignment,
+    LiveMarkEndError,
     applyLiveEnd,
     applyLiveStart,
     clampIntroSkip,
@@ -166,9 +167,9 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
         itemId: string,
         nextItemId: string | undefined,
         time: number
-    ) => {
+    ): Promise<{ ok: true; end: number } | { ok: false; reason: LiveMarkEndError | 'no_alignment' }> => {
         const current = alignmentRef.current;
-        if (!current) return { ok: false as const, reason: 'no_alignment' as const };
+        if (!current) return { ok: false, reason: 'no_alignment' };
         const result = applyLiveEnd(
             current.cues,
             itemId,
@@ -176,7 +177,7 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
             time,
             current.duration || time + 1
         );
-        if (!result.ok) return result;
+        if (result.ok === false) return { ok: false, reason: result.reason };
         await save({
             ...current,
             method: 'manual',
@@ -184,7 +185,7 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
             cues: result.cues,
             updatedAt: new Date().toISOString(),
         });
-        return { ok: true as const, end: result.end };
+        return { ok: true, end: result.end };
     }, [save]);
 
     const runAutoAlign = useCallback(async (

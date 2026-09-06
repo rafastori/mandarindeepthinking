@@ -148,7 +148,7 @@ const AlignmentEditorModal: React.FC<Props> = ({
         const index = items.findIndex(item => item.id.toString() === id);
         const following = index >= 0 ? items[index + 1] : undefined;
         const result = await align.markLiveEnd(id, following?.id.toString(), time);
-        if (!result.ok) {
+        if (result.ok === false) {
             if (result.reason === 'no_start') {
                 showLiveHint('error', 'Marque o início primeiro.');
             } else if (result.reason === 'end_before_start') {
