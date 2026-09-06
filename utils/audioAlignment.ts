@@ -28,8 +28,16 @@ export interface LessonAlignment {
     whisperChunks?: TimedChunk[];
     method?: 'whisper' | 'proportional' | 'manual';
     averageScore?: number;
+    /** Segundos ignorados no começo (intro em inglês do ChinesePod). */
+    introSkipSeconds?: number;
     updatedAt: string;
 }
+
+/** Intro em inglês no início dos DG ChinesePod — típico ~6s. */
+export const DEFAULT_INTRO_SKIP_SECONDS = 6;
+export const INTRO_SKIP_PRESETS = [0, 5, 6, 6.5, 7, 8] as const;
+
+const CJK_RE = /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/;
 
 export interface AlignSentenceInput {
     id: string;
@@ -69,9 +77,14 @@ export function clampTime(value: number, duration: number): number {
     return Math.min(Math.max(value, 0), Math.max(duration, 0));
 }
 
-export function clampCues(cues: SentenceAlignment[], duration: number): SentenceAlignment[] {
+export function clampCues(
+    cues: SentenceAlignment[],
+    duration: number,
+    minStart = 0
+): SentenceAlignment[] {
+    const floor = Math.max(0, minStart);
     const next = cues.map(cue => {
-        let start = clampTime(cue.start, duration);
+        let start = Math.max(clampTime(cue.start, duration), Math.min(floor, duration));
         let end = clampTime(cue.end, duration);
         if (end < start + MIN_SEG) end = Math.min(duration, start + MIN_SEG);
         if (end <= start) end = Math.min(duration, start + MIN_SEG);
@@ -92,7 +105,8 @@ export function clampCues(cues: SentenceAlignment[], duration: number): Sentence
 export function shiftCues(
     cues: SentenceAlignment[],
     deltaSeconds: number,
-    duration: number
+    duration: number,
+    minStart = 0
 ): SentenceAlignment[] {
     return clampCues(
         cues.map(cue => ({
@@ -101,23 +115,123 @@ export function shiftCues(
             end: cue.end + deltaSeconds,
             source: cue.source === 'auto' || cue.source === 'proportional' ? 'mixed' : cue.source,
         })),
-        duration
+        duration,
+        minStart
     );
+}
+
+export function clampIntroSkip(seconds: number | undefined, duration: number): number {
+    if (seconds == null || !Number.isFinite(seconds)) return DEFAULT_INTRO_SKIP_SECONDS;
+    if (seconds <= 0) return 0;
+    const max = Math.max(duration - 1, 0);
+    return Math.min(Math.max(seconds, 0), Math.min(max, 30));
+}
+
+export function resolveIntroSkip(
+    alignment?: { introSkipSeconds?: number } | null,
+    globalDefault?: number
+): number {
+    if (alignment?.introSkipSeconds != null && Number.isFinite(alignment.introSkipSeconds)) {
+        return Math.max(0, alignment.introSkipSeconds);
+    }
+    if (globalDefault != null && Number.isFinite(globalDefault)) {
+        return Math.max(0, globalDefault);
+    }
+    return DEFAULT_INTRO_SKIP_SECONDS;
+}
+
+export function offsetChunks(chunks: TimedChunk[], offset: number): TimedChunk[] {
+    if (!offset) return chunks;
+    return chunks.map(chunk => ({
+        ...chunk,
+        start: chunk.start + offset,
+        end: chunk.end + offset,
+    }));
+}
+
+export function isLatinHeavy(text: string): boolean {
+    const letters = (text || '').replace(/[^a-zA-Z\u00C0-\u024F]/g, '');
+    const cjk = (text || '').match(CJK_RE) || [];
+    return letters.length >= 6 && cjk.length < 2;
+}
+
+export function hasCjk(text: string): boolean {
+    return CJK_RE.test(text || '');
+}
+
+/** Se o começo ainda for inglês, devolve quantos segundos extras pular (relativo aos chunks). */
+export function extraSkipFromLatinIntro(chunks: TimedChunk[], searchUntil = 5): number {
+    let extra = 0;
+    const ordered = [...chunks].sort((a, b) => a.start - b.start);
+    for (const chunk of ordered) {
+        if (chunk.start > searchUntil) break;
+        if (isLatinHeavy(chunk.text)) extra = Math.max(extra, chunk.end);
+        else if (hasCjk(chunk.text)) break;
+    }
+    return extra;
+}
+
+/** Alinhamentos antigos começam em 0 e incluem a intro — deslocar em vez de só cortar. */
+export function cuesLookUnshifted(
+    cues: SentenceAlignment[] | undefined,
+    introSkipSeconds: number
+): boolean {
+    if (!cues?.length || introSkipSeconds <= 0.2) return false;
+    return cues[0].start < introSkipSeconds * 0.5;
+}
+
+export function effectiveCueTimes(
+    cue: SentenceAlignment | undefined,
+    introSkipSeconds: number,
+    duration?: number,
+    options?: { legacyUnshifted?: boolean }
+): { start: number; end: number } | null {
+    if (!cue) return null;
+    const skip = Math.max(0, introSkipSeconds);
+    let start = cue.start;
+    let end = cue.end;
+    if (options?.legacyUnshifted && cue.start < skip - 0.35) {
+        start = cue.start + skip;
+        end = cue.end + skip;
+    } else {
+        start = Math.max(cue.start, skip);
+        end = Math.max(cue.end, start + MIN_SEG);
+    }
+    if (end < start + MIN_SEG) end = start + MIN_SEG;
+    if (duration != null && duration > 0) {
+        if (start >= duration - 0.05) return null;
+        end = Math.min(end, duration);
+    }
+    return { start, end };
+}
+
+export function rebaseCuesForIntroSkip(
+    cues: SentenceAlignment[],
+    previousSkip: number,
+    nextSkip: number,
+    duration: number
+): SentenceAlignment[] {
+    const delta = nextSkip - previousSkip;
+    if (Math.abs(delta) < 0.01) return clampCues(cues, duration, nextSkip);
+    return shiftCues(cues, delta, duration, nextSkip);
 }
 
 export function proportionalAlign(
     sentences: AlignSentenceInput[],
-    duration: number
+    duration: number,
+    startOffset = 0
 ): SentenceAlignment[] {
     if (sentences.length === 0 || duration <= 0) return [];
+    const offset = clampIntroSkip(startOffset === 0 ? 0 : startOffset, duration);
+    const usable = Math.max(duration - offset, 0.5);
     const weights = sentences.map(s => Math.max(normalizeAlignText(s.text).length, 4));
     const total = weights.reduce((sum, w) => sum + w, 0);
     let cursor = 0;
     return sentences.map((sentence, index) => {
-        const span = (weights[index] / total) * duration;
-        const start = cursor;
-        const end = index === sentences.length - 1 ? duration : cursor + span;
-        cursor = end;
+        const span = (weights[index] / total) * usable;
+        const start = offset + cursor;
+        const end = index === sentences.length - 1 ? duration : offset + cursor + span;
+        cursor = end - offset;
         return {
             itemId: sentence.id,
             start,
@@ -178,17 +292,20 @@ function timeAt(times: number[], index: number, duration: number, end: boolean):
 export function alignSentencesToChunks(
     sentences: AlignSentenceInput[],
     chunks: TimedChunk[],
-    duration: number
+    duration: number,
+    startOffset = 0
 ): { cues: SentenceAlignment[]; averageScore: number; method: 'whisper' | 'proportional' } {
-    const proportional = proportionalAlign(sentences, duration);
+    const offset = clampIntroSkip(startOffset === 0 ? 0 : startOffset, duration);
+    const usableChunks = chunks.filter(chunk => chunk.end > offset + 0.05);
+    const proportional = proportionalAlign(sentences, duration, offset);
     if (sentences.length === 0) {
         return { cues: [], averageScore: 0, method: 'proportional' };
     }
-    if (!chunks.length) {
+    if (!usableChunks.length) {
         return { cues: proportional, averageScore: 0, method: 'proportional' };
     }
 
-    const { chars, times } = buildCharTimeline(chunks);
+    const { chars, times } = buildCharTimeline(usableChunks);
     if (chars.length < 4) {
         return { cues: proportional, averageScore: 0, method: 'proportional' };
     }
@@ -251,8 +368,14 @@ export function alignSentencesToChunks(
         return { cues: proportional, averageScore, method: 'proportional' };
     }
 
+    const lifted = cues.map(cue => ({
+        ...cue,
+        start: Math.max(cue.start, offset),
+        end: Math.max(cue.end, offset + MIN_SEG),
+    }));
+
     return {
-        cues: clampCues(cues, duration),
+        cues: clampCues(lifted, duration, offset),
         averageScore,
         method: 'whisper',
     };
@@ -270,7 +393,7 @@ export function realignOneSentence(
     const sentence = sentences.find(s => s.id === itemId);
     if (!sentence) return cues;
 
-    const windowStart = index > 0 ? Math.max(0, cues[index - 1].end - 0.15) : 0;
+    const windowStart = index > 0 ? Math.max(0, cues[index - 1].end - 0.15) : Math.max(0, cues[0]?.start ?? 0);
     const windowEnd = index < cues.length - 1
         ? Math.min(duration, cues[index + 1].start + 0.15)
         : duration;

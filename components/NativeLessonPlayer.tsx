@@ -124,7 +124,7 @@ const NativeLessonPlayer: React.FC<Props> = ({
                     type="button"
                     onClick={onReplay}
                     className="w-8 h-8 rounded-full bg-white text-emerald-700 border border-emerald-200 flex items-center justify-center hover:bg-emerald-100"
-                    title="Repetir do início"
+                    title="Repetir do diálogo (pula a intro)"
                 >
                     <Icon name="rotate-ccw" size={14} />
                 </button>
