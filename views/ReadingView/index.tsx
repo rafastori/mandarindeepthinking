@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useRef, useEffect } from 'react';
+import React, { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import Icon from '../../components/Icon';
 import EmptyState from '../../components/EmptyState';
 import { StudyItem, Keyword, SupportedLanguage } from '../../types';
@@ -10,6 +10,12 @@ import VoiceMicButton from '../../components/VoiceMicButton';
 import type { useVoiceRecording } from '../../hooks/useVoiceRecording';
 import { localDB, ColorCorrectionToken } from '../../services/localDB';
 import SimpleReadingMode from './SimpleReadingMode';
+import NativeLessonPlayer from '../../components/NativeLessonPlayer';
+import NativeAudioLibraryModal from '../../components/NativeAudioLibraryModal';
+import AlignmentEditorModal from '../../components/AlignmentEditorModal';
+import { useNativeLessonPlayer } from '../../hooks/useNativeLessonAudio';
+import { useLessonAlignment } from '../../hooks/useLessonAlignment';
+import { resolveLessonIdForView } from '../../utils/chinesePodAudio';
 import { useReadingComments } from './useReadingComments';
 import CommentDialog from './CommentDialog';
 import SentenceMicroQuiz from './SentenceMicroQuiz';
@@ -115,6 +121,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onResult
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
+    const [showNativeAudioModal, setShowNativeAudioModal] = useState(false);
+    const [showAlignmentModal, setShowAlignmentModal] = useState(false);
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
 
     // Estados para popover de cores e correção via IA
@@ -339,6 +347,28 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
         return result;
     }, [data, activeFolderFilters]);
+
+    const nativeLessonId = useMemo(
+        () => resolveLessonIdForView(activeFolderFilters, filteredData.map(item => item.folderPath)),
+        [activeFolderFilters, filteredData]
+    );
+    const nativeAudio = useNativeLessonPlayer(nativeLessonId, { onBeforePlay: stop });
+    const lessonAlignment = useLessonAlignment(nativeLessonId, filteredData);
+    const cueForId = useCallback((id?: string) => {
+        if (!id || !lessonAlignment.alignment) return null;
+        const key = id.startsWith('reading-') ? id.slice('reading-'.length) : id;
+        return lessonAlignment.alignment.cues.find(cue => cue.itemId === key) || null;
+    }, [lessonAlignment.alignment]);
+    const speakText = useCallback(async (text: string, language: SupportedLanguage, id?: string) => {
+        const cue = cueForId(id);
+        if (cue && nativeAudio.match) {
+            stop();
+            await nativeAudio.playSegment(cue.start, cue.end, cue.itemId);
+            return;
+        }
+        nativeAudio.stop();
+        return speak(text, language, id);
+    }, [cueForId, nativeAudio, speak, stop]);
 
     // Função para formatar tokens em texto legível
     const formatTokensToText = (tokens: string[]): string => {
@@ -682,7 +712,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         const savedKw = savedWordsMap.get(cleanToken.toLowerCase());
 
         if (savedKw) {
-            speak(savedKw.word, (savedKw.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+            speakText(savedKw.word, (savedKw.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
             return;
         }
 
@@ -703,7 +733,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             // bloquear nem derrubar o salvamento — no DeepSeek isso chega a ~90s e falhava.
             const newCard = await generateWordCard(word, sentence.chinese, lang);
             onSaveGeneratedCard(newCard, sentence.chinese);
-            speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
+            speakText(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
 
             if (!translation) return;
 
@@ -1072,6 +1102,30 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
+                    {nativeLessonId && !selectionMode && !reorderMode && (
+                        <NativeLessonPlayer
+                            match={nativeAudio.match}
+                            hasLibrary={(nativeAudio.summary?.fileCount || 0) > 0}
+                            canSuggestLink
+                            isPlaying={nativeAudio.isPlaying}
+                            isLooping={nativeAudio.isLooping}
+                            currentTime={nativeAudio.currentTime}
+                            duration={nativeAudio.duration}
+                            onPlay={nativeAudio.play}
+                            onPause={nativeAudio.pause}
+                            onStop={nativeAudio.stop}
+                            onReplay={nativeAudio.replay}
+                            onToggleLoop={() => nativeAudio.setLooping(!nativeAudio.isLooping)}
+                            onSeek={nativeAudio.seek}
+                            onOpenLibrary={() => setShowNativeAudioModal(true)}
+                            onOpenAlignment={() => {
+                                nativeAudio.ensureAudio();
+                                setShowAlignmentModal(true);
+                            }}
+                            alignmentCount={lessonAlignment.alignment?.cues.length || 0}
+                        />
+                    )}
+
                     {/* Carga de palavras novas — protege o sensor de recompensa */}
                     {readingMode === 'study' && !selectionMode && !reorderMode && filteredData.length > 0 && (
                         <div className="flex flex-wrap items-center gap-2 mb-4 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
@@ -1216,13 +1270,20 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             colorCorrections={colorCorrections}
                             isCorrectingColors={isCorrectingColors}
                             onRequestColorCorrection={(ids) => handleCorrectColors(ids)}
-                            speak={speak}
-                            stopSpeak={stop}
-                            playingId={playingId}
+                            speak={speakText}
+                            stopSpeak={() => { nativeAudio.stop(); stop(); }}
+                            playingId={playingId || nativeAudio.playingSegmentId}
                             comments={commentsApi.comments}
                             onAddComment={commentsApi.addComment}
                             onUpdateComment={commentsApi.updateComment}
                             onDeleteComment={commentsApi.deleteComment}
+                            nativeAudio={nativeAudio.match ? {
+                                available: true,
+                                hasAlignment: (lessonAlignment.alignment?.cues.length || 0) > 0,
+                                isPlaying: nativeAudio.isPlaying,
+                                onPlay: nativeAudio.play,
+                                onStop: nativeAudio.stop,
+                            } : undefined}
                         />
                     ) : null}
 
@@ -1276,15 +1337,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                 <button
                                                     onClick={() => {
                                                         const audioId = `reading-${item.id}`;
-                                                        if (playingId === audioId) {
+                                                        const sentenceId = item.id.toString();
+                                                        const isThis = playingId === audioId || nativeAudio.playingSegmentId === sentenceId;
+                                                        if (isThis) {
+                                                            nativeAudio.stop();
                                                             stop();
                                                         } else {
-                                                            speak(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
+                                                            speakText(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
                                                         }
                                                     }}
-                                                    className={`p-1.5 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
+                                                    className={`p-1.5 rounded-full transition-all ${(playingId === `reading-${item.id}` || nativeAudio.playingSegmentId === item.id.toString()) ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
+                                                    title={cueForId(item.id.toString()) ? 'Ouvir trecho nativo' : 'Ouvir (TTS ou aula nativa)'}
                                                 >
-                                                    <Icon name={playingId === `reading-${item.id}` ? 'square' : 'volume-2'} size={16} />
+                                                    <Icon name={(playingId === `reading-${item.id}` || nativeAudio.playingSegmentId === item.id.toString()) ? 'square' : 'volume-2'} size={16} />
                                                 </button>
                                                 <button
                                                     onClick={(e) => {
@@ -1628,6 +1693,29 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     onAdd={(text) => commentsApi.addComment(commentTarget.type, commentTarget.key, text)}
                     onUpdate={commentsApi.updateComment}
                     onDelete={commentsApi.deleteComment}
+                />
+            )}
+
+            {showNativeAudioModal && (
+                <NativeAudioLibraryModal onClose={() => setShowNativeAudioModal(false)} />
+            )}
+
+            {showAlignmentModal && nativeLessonId && nativeAudio.match && (
+                <AlignmentEditorModal
+                    lessonId={nativeLessonId}
+                    audioFileId={nativeAudio.match.file.id}
+                    items={filteredData}
+                    language={filteredData[0]?.language}
+                    currentTime={nativeAudio.currentTime}
+                    duration={nativeAudio.duration || lessonAlignment.alignment?.duration || 0}
+                    isPlaying={nativeAudio.isPlaying}
+                    playingSegmentId={nativeAudio.playingSegmentId}
+                    onPlay={() => { nativeAudio.ensureAudio().then(() => nativeAudio.play()); }}
+                    onPause={nativeAudio.pause}
+                    onStop={nativeAudio.stop}
+                    onSeekTo={(seconds) => { nativeAudio.ensureAudio().then(() => nativeAudio.seekTo(seconds)); }}
+                    onPlaySegment={nativeAudio.playSegment}
+                    onClose={() => setShowAlignmentModal(false)}
                 />
             )}
 

@@ -113,7 +113,11 @@ import {
     Lightbulb,
     Globe,
     Award,
-    Scissors
+    Scissors,
+    Repeat,
+    FolderOpen,
+    Link2,
+    Unlink
 } from 'lucide-react';
 
 export interface IconProps {
@@ -237,7 +241,11 @@ const icons: Record<string, React.ElementType<any>> = {
     'lightbulb': Lightbulb,
     'globe': Globe,
     'award': Award,
-    'scissors': Scissors
+    'scissors': Scissors,
+    'repeat': Repeat,
+    'folder-open': FolderOpen,
+    'link-2': Link2,
+    'unlink': Unlink
 };
 
 const Icon: React.FC<IconProps> = ({ name, size = 24, className = '', fill = 'none' }) => {

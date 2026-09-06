@@ -20,6 +20,13 @@ interface Props {
     onAddComment: (targetType: 'word' | 'sentence', targetKey: string, text: string) => Promise<UserComment>;
     onUpdateComment: (id: string, text: string) => Promise<void>;
     onDeleteComment: (id: string) => Promise<void>;
+    nativeAudio?: {
+        available: boolean;
+        hasAlignment?: boolean;
+        isPlaying: boolean;
+        onPlay: () => void;
+        onStop: () => void;
+    };
 }
 
 const FONT_SIZE_CLASS: Record<ReadingFontSize, string> = {
@@ -45,6 +52,7 @@ const SimpleReadingMode: React.FC<Props> = ({
     onAddComment,
     onUpdateComment,
     onDeleteComment,
+    nativeAudio,
 }) => {
     // Estado: palavra clicada (pair-highlight)
     const [activeToken, setActiveToken] = useState<{ sentenceId: string; tokenIndex: number } | null>(null);
@@ -139,12 +147,39 @@ const SimpleReadingMode: React.FC<Props> = ({
                 </div>
 
                 <button
-                    onClick={() => sequence.status === 'idle' ? sequence.start(speechItems) : sequence.stop()}
-                    className="px-3 py-1.5 rounded-full text-xs font-medium border bg-emerald-50 text-emerald-700 border-emerald-300 flex items-center gap-1.5"
-                    title="Ouvir todo o texto"
+                    onClick={() => {
+                        if (nativeAudio?.hasAlignment) {
+                            if (sequence.status === 'idle') sequence.start(speechItems);
+                            else sequence.stop();
+                            return;
+                        }
+                        if (nativeAudio?.available) {
+                            if (nativeAudio.isPlaying) nativeAudio.onStop();
+                            else {
+                                sequence.stop();
+                                nativeAudio.onPlay();
+                            }
+                            return;
+                        }
+                        if (sequence.status === 'idle') sequence.start(speechItems);
+                        else sequence.stop();
+                    }}
+                    className={`px-3 py-1.5 rounded-full text-xs font-medium border flex items-center gap-1.5 ${nativeAudio?.available
+                        ? 'bg-emerald-600 text-white border-emerald-600'
+                        : 'bg-emerald-50 text-emerald-700 border-emerald-300'
+                    }`}
+                    title={nativeAudio?.hasAlignment
+                        ? 'Ouvir frase a frase (áudio nativo alinhado)'
+                        : nativeAudio?.available
+                            ? 'Ouvir o MP3 nativo da aula'
+                            : 'Ouvir todo o texto (TTS)'}
                 >
-                    <Icon name={sequence.status === 'idle' ? 'play' : 'square'} size={14} />
-                    {sequence.status === 'idle' ? 'Ouvir tudo' : 'Parar'}
+                    <Icon name={(nativeAudio?.hasAlignment ? sequence.status !== 'idle' : (nativeAudio?.available ? nativeAudio.isPlaying : sequence.status !== 'idle')) ? 'square' : 'play'} size={14} />
+                    {nativeAudio?.hasAlignment
+                        ? (sequence.status === 'idle' ? 'Ouvir tudo' : 'Parar')
+                        : nativeAudio?.available
+                            ? (nativeAudio.isPlaying ? 'Parar aula' : 'Ouvir aula')
+                            : (sequence.status === 'idle' ? 'Ouvir tudo' : 'Parar')}
                 </button>
 
                 {sentencesWithoutCorrection.length > 0 && (
@@ -179,7 +214,7 @@ const SimpleReadingMode: React.FC<Props> = ({
                             <button
                                 onClick={() => speak(formatTokensToText(item.tokens), (item.language || 'zh') as SupportedLanguage, sentenceId)}
                                 className="mr-2 inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 hover:bg-emerald-100 text-slate-500 hover:text-emerald-700 align-middle"
-                                title="Ouvir esta frase"
+                                title={nativeAudio?.hasAlignment ? 'Ouvir esta frase (nativo)' : nativeAudio?.available ? 'Ouvir esta frase (TTS)' : 'Ouvir esta frase'}
                             >
                                 <Icon name={playingId === sentenceId ? 'square' : 'volume-2'} size={12} />
                             </button>
