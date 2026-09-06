@@ -105,6 +105,54 @@ export function suffixPriority(preferred: ChinesePodSuffix): ChinesePodSuffix[] 
     return [preferred, ...rest];
 }
 
+export type NativeImportMode = 'dg-only' | 'include-other';
+
+export interface ImportCandidate<T> {
+    file: T;
+    parsed: ParsedChinesePodFile;
+}
+
+export interface ImportSelection<T> {
+    selected: ImportCandidate<T>[];
+    skippedUnknown: number;
+    skippedOtherSuffix: number;
+    lessonIds: string[];
+}
+
+/**
+ * Default import path: keep only digestivo (dg). Mixed Baixados folders
+ * also contain pr/rv/PDF — those are ignored unless the user opts in.
+ */
+export function selectImportCandidates<T>(
+    entries: ImportCandidate<T>[],
+    mode: NativeImportMode = 'dg-only'
+): ImportSelection<T> {
+    const selected: ImportCandidate<T>[] = [];
+    let skippedOtherSuffix = 0;
+    const lessons = new Set<string>();
+
+    for (const entry of entries) {
+        if (mode === 'dg-only') {
+            if (entry.parsed.suffix === 'dg') {
+                selected.push(entry);
+                lessons.add(entry.parsed.lessonId);
+            } else {
+                skippedOtherSuffix += 1;
+            }
+            continue;
+        }
+        selected.push(entry);
+        lessons.add(entry.parsed.lessonId);
+    }
+
+    return {
+        selected,
+        skippedUnknown: 0,
+        skippedOtherSuffix,
+        lessonIds: Array.from(lessons).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })),
+    };
+}
+
 export function pickPreferredRecord<T extends { lessonId: string; suffix: ChinesePodSuffix | null }>(
     records: T[],
     lessonId: string,

@@ -9,18 +9,23 @@ import {
     ChinesePodSuffix,
     DEFAULT_PREFERRED_SUFFIX,
     LARGE_FILE_BYTES,
+    NativeImportMode,
     ParsedChinesePodFile,
     parseChinesePodFilename,
     pickPreferredRecord,
+    selectImportCandidates,
     suffixPriority,
 } from '../utils/chinesePodAudio';
+import { LessonAlignment } from '../utils/audioAlignment';
 
 const DB_NAME = 'MemorizaTudoNativeAudioDB';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 const FILES_STORE = 'files';
 const META_STORE = 'meta';
+const ALIGN_STORE = 'alignments';
 const META_KEY = 'library';
 export const NATIVE_LIBRARY_CHANGE_EVENT = 'nativelibrarychange';
+export const NATIVE_ALIGNMENT_CHANGE_EVENT = 'nativealignmentchange';
 
 export interface NativeAudioFileMeta {
     id: string;
@@ -40,6 +45,7 @@ export interface NativeAudioLibraryMeta {
     key: typeof META_KEY;
     preferredSuffix: ChinesePodSuffix;
     keepLargeFiles: boolean;
+    importMode: NativeImportMode;
     sourceLabel?: string;
     updatedAt?: string;
     directoryHandle?: FileSystemDirectoryHandle;
@@ -48,10 +54,12 @@ export interface NativeAudioLibraryMeta {
 export interface NativeAudioLibrarySummary {
     preferredSuffix: ChinesePodSuffix;
     keepLargeFiles: boolean;
+    importMode: NativeImportMode;
     sourceLabel?: string;
     updatedAt?: string;
     fileCount: number;
     lessonCount: number;
+    dgCount: number;
     totalBytes: number;
     hasDirectoryHandle: boolean;
     files: NativeAudioFileMeta[];
@@ -60,20 +68,28 @@ export interface NativeAudioLibrarySummary {
 export interface ImportAudioResult {
     imported: number;
     lessons: number;
+    lessonIds: string[];
     skippedUnknown: number;
+    skippedOtherSuffix: number;
     skippedLarge: number;
     skippedNoBlob: number;
+    importMode: NativeImportMode;
 }
 
 const defaultMeta: NativeAudioLibraryMeta = {
     key: META_KEY,
     preferredSuffix: DEFAULT_PREFERRED_SUFFIX,
     keepLargeFiles: false,
+    importMode: 'dg-only',
 };
 
 let dbInstance: IDBDatabase | null = null;
 
 function openDB(): Promise<IDBDatabase> {
+    if (dbInstance && dbInstance.version < DB_VERSION) {
+        dbInstance.close();
+        dbInstance = null;
+    }
     if (dbInstance) return Promise.resolve(dbInstance);
 
     return new Promise((resolve, reject) => {
@@ -87,6 +103,9 @@ function openDB(): Promise<IDBDatabase> {
             }
             if (!db.objectStoreNames.contains(META_STORE)) {
                 db.createObjectStore(META_STORE, { keyPath: 'key' });
+            }
+            if (!db.objectStoreNames.contains(ALIGN_STORE)) {
+                db.createObjectStore(ALIGN_STORE, { keyPath: 'lessonId' });
             }
         };
 
@@ -116,6 +135,12 @@ function withStore<T>(
 function notifyLibraryChange() {
     if (typeof window !== 'undefined') {
         window.dispatchEvent(new Event(NATIVE_LIBRARY_CHANGE_EVENT));
+    }
+}
+
+function notifyAlignmentChange() {
+    if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event(NATIVE_ALIGNMENT_CHANGE_EVENT));
     }
 }
 
@@ -198,10 +223,12 @@ export const nativeAudioLibrary = {
         return {
             preferredSuffix: meta.preferredSuffix,
             keepLargeFiles: meta.keepLargeFiles,
+            importMode: meta.importMode || 'dg-only',
             sourceLabel: meta.sourceLabel,
             updatedAt: meta.updatedAt,
             fileCount: files.length,
             lessonCount: lessons.size,
+            dgCount: files.filter(f => f.suffix === 'dg').length,
             totalBytes: files.reduce((sum, f) => sum + (f.size || 0), 0),
             hasDirectoryHandle: !!meta.directoryHandle,
             files,
@@ -218,11 +245,13 @@ export const nativeAudioLibrary = {
         options?: {
             sourceLabel?: string;
             keepLargeFiles?: boolean;
+            importMode?: NativeImportMode;
             directoryHandle?: FileSystemDirectoryHandle;
         }
     ): Promise<ImportAudioResult> {
         const meta = await this.getMeta();
         const keepLargeFiles = options?.keepLargeFiles ?? meta.keepLargeFiles;
+        const importMode: NativeImportMode = options?.importMode ?? meta.importMode ?? 'dg-only';
         const preferred = meta.preferredSuffix;
         const now = new Date().toISOString();
 
@@ -238,32 +267,35 @@ export const nativeAudioLibrary = {
             parsedFiles.push({ file, parsed });
         }
 
-        // If the user did not opt into large copies, keep only the preferred
-        // (or fallback) file per lesson so 12MB podcasts are not stored by default.
+        const filtered = selectImportCandidates(parsedFiles, importMode);
         const selected = new Map<string, { file: File; parsed: ParsedChinesePodFile }>();
-        const byLesson = new Map<string, Array<{ file: File; parsed: ParsedChinesePodFile }>>();
-        for (const entry of parsedFiles) {
-            const list = byLesson.get(entry.parsed.lessonId) || [];
-            list.push(entry);
-            byLesson.set(entry.parsed.lessonId, list);
-        }
 
-        for (const entries of byLesson.values()) {
-            if (keepLargeFiles) {
-                for (const entry of entries) selected.set(fileId(entry.parsed.lessonId, entry.parsed.suffix), entry);
-                continue;
+        if (importMode === 'dg-only') {
+            for (const entry of filtered.selected) {
+                selected.set(fileId(entry.parsed.lessonId, entry.parsed.suffix), entry);
             }
-
-            const ranked = suffixPriority(preferred)
-                .map(suffix => entries.find(e => e.parsed.suffix === suffix))
-                .filter(Boolean) as Array<{ file: File; parsed: ParsedChinesePodFile }>;
-            const fallback = entries.find(e => e.parsed.suffix == null);
-            const chosen = ranked[0] || fallback;
-            if (chosen) selected.set(fileId(chosen.parsed.lessonId, chosen.parsed.suffix), chosen);
-            // Also keep extra small files (other suffixes under the size cap).
-            for (const entry of entries) {
-                if (entry.file.size <= LARGE_FILE_BYTES) {
-                    selected.set(fileId(entry.parsed.lessonId, entry.parsed.suffix), entry);
+        } else {
+            const byLesson = new Map<string, Array<{ file: File; parsed: ParsedChinesePodFile }>>();
+            for (const entry of filtered.selected) {
+                const list = byLesson.get(entry.parsed.lessonId) || [];
+                list.push(entry);
+                byLesson.set(entry.parsed.lessonId, list);
+            }
+            for (const entries of byLesson.values()) {
+                if (keepLargeFiles) {
+                    for (const entry of entries) selected.set(fileId(entry.parsed.lessonId, entry.parsed.suffix), entry);
+                    continue;
+                }
+                const ranked = suffixPriority(preferred)
+                    .map(suffix => entries.find(e => e.parsed.suffix === suffix))
+                    .filter(Boolean) as Array<{ file: File; parsed: ParsedChinesePodFile }>;
+                const fallback = entries.find(e => e.parsed.suffix == null);
+                const chosen = ranked[0] || fallback;
+                if (chosen) selected.set(fileId(chosen.parsed.lessonId, chosen.parsed.suffix), chosen);
+                for (const entry of entries) {
+                    if (entry.file.size <= LARGE_FILE_BYTES) {
+                        selected.set(fileId(entry.parsed.lessonId, entry.parsed.suffix), entry);
+                    }
                 }
             }
         }
@@ -304,30 +336,41 @@ export const nativeAudioLibrary = {
             tx.onerror = () => reject(tx.error);
         });
 
-        const lessons = new Set(Array.from(selected.values()).map(e => e.parsed.lessonId));
+        const lessonIds = Array.from(new Set(Array.from(selected.values()).map(e => e.parsed.lessonId)))
+            .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
         await this.saveMeta({
             keepLargeFiles,
-            sourceLabel: options?.sourceLabel || meta.sourceLabel || `${imported} arquivo(s)`,
+            importMode,
+            sourceLabel: options?.sourceLabel || meta.sourceLabel || `${imported} digestivo(s)`,
             directoryHandle: options?.directoryHandle ?? meta.directoryHandle,
         });
         notifyLibraryChange();
 
         return {
             imported,
-            lessons: lessons.size,
+            lessons: lessonIds.length,
+            lessonIds,
             skippedUnknown,
+            skippedOtherSuffix: filtered.skippedOtherSuffix,
             skippedLarge,
             skippedNoBlob,
+            importMode,
         };
     },
 
-    async importDirectory(dir: FileSystemDirectoryHandle, options?: { keepLargeFiles?: boolean }): Promise<ImportAudioResult> {
+    async importDirectory(dir: FileSystemDirectoryHandle, options?: { keepLargeFiles?: boolean; importMode?: NativeImportMode }): Promise<ImportAudioResult> {
         const files = await collectDirectoryFiles(dir);
         return this.importFiles(files, {
             sourceLabel: dir.name || 'Pasta local',
             keepLargeFiles: options?.keepLargeFiles,
+            importMode: options?.importMode,
             directoryHandle: dir,
         });
+    },
+
+    async setImportMode(importMode: NativeImportMode): Promise<void> {
+        await this.saveMeta({ importMode });
+        notifyLibraryChange();
     },
 
     async setPreferredSuffix(suffix: ChinesePodSuffix): Promise<void> {
@@ -369,7 +412,42 @@ export const nativeAudioLibrary = {
             if (state !== 'granted') return null;
         }
 
-        return this.importDirectory(handle, { keepLargeFiles: meta.keepLargeFiles });
+        return this.importDirectory(handle, { keepLargeFiles: meta.keepLargeFiles, importMode: meta.importMode });
+    },
+
+    async getAlignment(lessonId: string): Promise<LessonAlignment | null> {
+        try {
+            const record = await withStore<LessonAlignment | undefined>(
+                ALIGN_STORE, 'readonly', store => store.get(lessonId)
+            );
+            return record || null;
+        } catch {
+            return null;
+        }
+    },
+
+    async listAlignments(): Promise<LessonAlignment[]> {
+        try {
+            const all = await withStore<LessonAlignment[]>(
+                ALIGN_STORE, 'readonly', store => store.getAll()
+            );
+            return all || [];
+        } catch {
+            return [];
+        }
+    },
+
+    async saveAlignment(alignment: LessonAlignment): Promise<void> {
+        await withStore(ALIGN_STORE, 'readwrite', store => store.put({
+            ...alignment,
+            updatedAt: new Date().toISOString(),
+        }));
+        notifyAlignmentChange();
+    },
+
+    async deleteAlignment(lessonId: string): Promise<void> {
+        await withStore(ALIGN_STORE, 'readwrite', store => store.delete(lessonId));
+        notifyAlignmentChange();
     },
 
     supportsDirectoryPicker(): boolean {

@@ -6,7 +6,7 @@ import {
     nativeAudioLibrary,
     NATIVE_LIBRARY_CHANGE_EVENT,
 } from '../services/nativeAudioLibrary';
-import { ChinesePodSuffix, pickPreferredRecord } from '../utils/chinesePodAudio';
+import { ChinesePodSuffix, NativeImportMode, pickPreferredRecord } from '../utils/chinesePodAudio';
 
 export interface NativeLessonMatch {
     lessonId: string;
@@ -69,6 +69,11 @@ export function useNativeAudioLibrary() {
         } finally {
             setBusy(false);
         }
+    }, [refresh]);
+
+    const setImportMode = useCallback(async (mode: NativeImportMode) => {
+        await nativeAudioLibrary.setImportMode(mode);
+        await refresh();
     }, [refresh]);
 
     const importDirectory = useCallback(async () => {
@@ -142,6 +147,7 @@ export function useNativeAudioLibrary() {
         clearLibrary,
         setPreferredSuffix,
         setKeepLargeFiles,
+        setImportMode,
     };
 }
 
@@ -155,6 +161,9 @@ export function useNativeLessonPlayer(
     const urlRef = useRef<string | null>(null);
     const onBeforePlayRef = useRef(options?.onBeforePlay);
     onBeforePlayRef.current = options?.onBeforePlay;
+    const segmentEndRef = useRef<number | null>(null);
+    const segmentResolveRef = useRef<(() => void) | null>(null);
+    const [playingSegmentId, setPlayingSegmentId] = useState<string | null>(null);
 
     const match = useMemo<NativeLessonMatch | null>(() => {
         if (!lessonId || !library.summary) return null;
@@ -179,6 +188,16 @@ export function useNativeLessonPlayer(
         setPlayer(prev => ({ ...idlePlayer, isLooping: prev.isLooping }));
     }, []);
 
+    const finishSegment = useCallback((audio: HTMLAudioElement) => {
+        audio.pause();
+        segmentEndRef.current = null;
+        setPlayingSegmentId(null);
+        setPlayer(prev => ({ ...prev, isPlaying: false }));
+        const resolve = segmentResolveRef.current;
+        segmentResolveRef.current = null;
+        resolve?.();
+    }, []);
+
     const attach = useCallback((audio: HTMLAudioElement, looping: boolean) => {
         const onTime = () => {
             setPlayer(prev => ({
@@ -186,6 +205,9 @@ export function useNativeLessonPlayer(
                 currentTime: audio.currentTime || 0,
                 duration: Number.isFinite(audio.duration) ? audio.duration : prev.duration,
             }));
+            if (segmentEndRef.current != null && audio.currentTime >= segmentEndRef.current) {
+                finishSegment(audio);
+            }
         };
         const onMeta = () => {
             setPlayer(prev => ({
@@ -194,6 +216,11 @@ export function useNativeLessonPlayer(
             }));
         };
         const onEnded = () => {
+            if (segmentResolveRef.current) {
+                finishSegment(audio);
+                return;
+            }
+            setPlayingSegmentId(null);
             setPlayer(prev => looping || audio.loop
                 ? prev
                 : { ...prev, isPlaying: false, currentTime: 0 });
@@ -207,7 +234,7 @@ export function useNativeLessonPlayer(
             audio.removeEventListener('loadedmetadata', onMeta);
             audio.removeEventListener('ended', onEnded);
         };
-    }, []);
+    }, [finishSegment]);
 
     const ensureAudio = useCallback(async () => {
         if (!match) return null;
@@ -238,6 +265,8 @@ export function useNativeLessonPlayer(
         onBeforePlayRef.current?.();
         const audio = await ensureAudio();
         if (!audio) return;
+        segmentEndRef.current = null;
+        setPlayingSegmentId(null);
         try {
             await audio.play();
             setPlayer(prev => ({ ...prev, isPlaying: true }));
@@ -256,6 +285,11 @@ export function useNativeLessonPlayer(
             audioRef.current.pause();
             audioRef.current.currentTime = 0;
         }
+        segmentEndRef.current = null;
+        const resolve = segmentResolveRef.current;
+        segmentResolveRef.current = null;
+        resolve?.();
+        setPlayingSegmentId(null);
         setPlayer(prev => ({ ...prev, isPlaying: false, currentTime: 0 }));
     }, []);
 
@@ -290,6 +324,36 @@ export function useNativeLessonPlayer(
         setPlayer(prev => ({ ...prev, currentTime: next }));
     }, []);
 
+    const seekTo = useCallback((seconds: number) => {
+        const audio = audioRef.current;
+        if (!audio) return;
+        const next = Math.min(Math.max(seconds, 0), Number.isFinite(audio.duration) ? audio.duration : seconds);
+        audio.currentTime = next;
+        setPlayer(prev => ({ ...prev, currentTime: next }));
+    }, []);
+
+    const playSegment = useCallback(async (start: number, end: number, id?: string) => {
+        if (!match) return;
+        onBeforePlayRef.current?.();
+        const audio = await ensureAudio();
+        if (!audio) return;
+        if (segmentResolveRef.current) {
+            segmentResolveRef.current();
+            segmentResolveRef.current = null;
+        }
+        audio.loop = false;
+        segmentEndRef.current = Math.max(end, start + 0.08);
+        audio.currentTime = Math.max(0, start);
+        setPlayingSegmentId(id || null);
+        setPlayer(prev => ({ ...prev, isPlaying: true, isLooping: false, currentTime: start }));
+        await new Promise<void>((resolve) => {
+            segmentResolveRef.current = resolve;
+            audio.play().catch(() => {
+                finishSegment(audio);
+            });
+        });
+    }, [ensureAudio, finishSegment, match]);
+
     return {
         ...library,
         match,
@@ -297,6 +361,7 @@ export function useNativeLessonPlayer(
         isLooping: player.isLooping,
         currentTime: player.currentTime,
         duration: player.duration,
+        playingSegmentId,
         play,
         pause,
         stop,
@@ -304,5 +369,8 @@ export function useNativeLessonPlayer(
         replay,
         setLooping,
         seek,
+        seekTo,
+        playSegment,
+        ensureAudio,
     };
 }

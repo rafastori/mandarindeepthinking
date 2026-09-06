@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
 import { useNativeAudioLibrary } from '../hooks/useNativeLessonAudio';
 import {
@@ -25,10 +25,14 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
         clearLibrary,
         setPreferredSuffix,
         setKeepLargeFiles,
+        setImportMode,
     } = useNativeAudioLibrary();
 
     const filesInputRef = useRef<HTMLInputElement>(null);
     const folderInputRef = useRef<HTMLInputElement>(null);
+    const [showAdvanced, setShowAdvanced] = useState(false);
+
+    const dgOnly = (summary?.importMode || 'dg-only') === 'dg-only';
 
     useEffect(() => {
         const input = folderInputRef.current;
@@ -47,7 +51,7 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
     };
 
     const handleClear = async () => {
-        if (!window.confirm('Remover os MP3 nativos deste aparelho? Os textos e o TTS continuam iguais.')) {
+        if (!window.confirm('Remover os MP3 nativos deste aparelho? Os textos, o TTS e os timestamps continuam.')) {
             return;
         }
         await clearLibrary();
@@ -78,11 +82,31 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                 </div>
 
                 <div className="p-4 space-y-4">
-                    <p className="text-sm text-slate-600">
-                        Selecione a pasta <span className="font-semibold">Baixados</span> ou os arquivos
-                        {' '}<code className="text-[11px] bg-slate-100 px-1 rounded">chinesepod_C2458dg.mp3</code>.
-                        O digestivo (<span className="font-semibold">dg</span>) é o que combina com a pasta do texto.
-                    </p>
+                    <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-3">
+                        <p className="text-sm font-bold text-emerald-900">Só digestivo (dg)</p>
+                        <p className="text-xs text-emerald-800/80 mt-1">
+                            Da pasta Baixados, o app guarda só <code className="bg-white/70 px-1 rounded">chinesepod_C2458dg.mp3</code>
+                            {' '}(~400 KB). Podcasts, revisões e PDFs são ignorados — o navegador não reescreve a pasta do Android.
+                        </p>
+                        <div className="mt-2 flex gap-1 bg-white p-1 rounded-lg border border-emerald-100">
+                            <button
+                                type="button"
+                                disabled={busy}
+                                onClick={() => setImportMode('dg-only')}
+                                className={`flex-1 py-1.5 rounded-md text-[11px] font-bold ${dgOnly ? 'bg-emerald-600 text-white' : 'text-slate-500'}`}
+                            >
+                                Só digestivo (dg)
+                            </button>
+                            <button
+                                type="button"
+                                disabled={busy}
+                                onClick={() => { setImportMode('include-other'); setShowAdvanced(true); }}
+                                className={`flex-1 py-1.5 rounded-md text-[11px] font-bold ${!dgOnly ? 'bg-slate-800 text-white' : 'text-slate-500'}`}
+                            >
+                                Incluir pr/rv
+                            </button>
+                        </div>
+                    </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {supportsDirectoryPicker && (
@@ -138,41 +162,50 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                         }}
                     />
 
-                    <div className="rounded-xl bg-slate-50 border border-slate-100 p-3 space-y-3">
-                        <div>
-                            <p className="text-[10px] uppercase font-bold text-slate-400 mb-1.5">Preferir tipo</p>
-                            <div className="flex gap-1 bg-white p-1 rounded-lg border border-slate-200">
-                                {CHINESEPOD_SUFFIXES.map(suffix => (
-                                    <button
-                                        key={suffix}
-                                        type="button"
-                                        disabled={busy}
-                                        onClick={() => setPreferredSuffix(suffix as ChinesePodSuffix)}
-                                        className={`flex-1 py-1.5 rounded-md text-[11px] font-bold transition-all ${summary?.preferredSuffix === suffix
-                                            ? 'bg-emerald-600 text-white shadow-sm'
-                                            : 'text-slate-500 hover:text-slate-700'
-                                        }`}
-                                    >
-                                        {SUFFIX_LABELS[suffix]}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
+                    <button
+                        type="button"
+                        onClick={() => setShowAdvanced(v => !v)}
+                        className="text-[11px] font-semibold text-slate-500 hover:text-slate-700"
+                    >
+                        {showAdvanced ? '▾ Avançado' : '▸ Avançado (podcast / revisão)'}
+                    </button>
 
-                        <label className="flex items-start gap-2 text-xs text-slate-600">
-                            <input
-                                type="checkbox"
-                                className="mt-0.5"
-                                checked={!!summary?.keepLargeFiles}
-                                disabled={busy}
-                                onChange={(e) => setKeepLargeFiles(e.target.checked)}
-                            />
-                            <span>
-                                Também guardar podcasts/revisões grandes (~12&nbsp;MB).
-                                Por padrão só copiamos o digestivo (~400&nbsp;KB).
-                            </span>
-                        </label>
-                    </div>
+                    {showAdvanced && (
+                        <div className="rounded-xl bg-slate-50 border border-slate-100 p-3 space-y-3">
+                            <div>
+                                <p className="text-[10px] uppercase font-bold text-slate-400 mb-1.5">Preferir tipo (modo avançado)</p>
+                                <div className="flex gap-1 bg-white p-1 rounded-lg border border-slate-200">
+                                    {CHINESEPOD_SUFFIXES.map(suffix => (
+                                        <button
+                                            key={suffix}
+                                            type="button"
+                                            disabled={busy || dgOnly}
+                                            onClick={() => setPreferredSuffix(suffix as ChinesePodSuffix)}
+                                            className={`flex-1 py-1.5 rounded-md text-[11px] font-bold transition-all ${summary?.preferredSuffix === suffix
+                                                ? 'bg-emerald-600 text-white shadow-sm'
+                                                : 'text-slate-500 hover:text-slate-700'
+                                            }`}
+                                        >
+                                            {SUFFIX_LABELS[suffix]}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <label className="flex items-start gap-2 text-xs text-slate-600">
+                                <input
+                                    type="checkbox"
+                                    className="mt-0.5"
+                                    checked={!!summary?.keepLargeFiles}
+                                    disabled={busy || dgOnly}
+                                    onChange={(e) => setKeepLargeFiles(e.target.checked)}
+                                />
+                                <span>
+                                    Também guardar podcasts/revisões grandes (~12&nbsp;MB).
+                                </span>
+                            </label>
+                        </div>
+                    )}
 
                     {error && (
                         <p className="text-sm text-rose-600 bg-rose-50 border border-rose-100 rounded-lg px-3 py-2">
@@ -182,8 +215,10 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
 
                     {lastImport && (
                         <p className="text-xs text-emerald-800 bg-emerald-50 border border-emerald-100 rounded-lg px-3 py-2">
-                            Importados {lastImport.imported} arquivo(s) em {lastImport.lessons} aula(s).
-                            {lastImport.skippedUnknown > 0 ? ` ${lastImport.skippedUnknown} ignorado(s).` : ''}
+                            Salvos {lastImport.imported} digestivo(s) · {lastImport.lessons} aula(s)
+                            {lastImport.lessonIds.length > 0 ? ` (${lastImport.lessonIds.map(id => `C${id}`).join(', ')})` : ''}.
+                            {lastImport.skippedOtherSuffix > 0 ? ` ${lastImport.skippedOtherSuffix} pr/rv ignorado(s).` : ''}
+                            {lastImport.skippedUnknown > 0 ? ` ${lastImport.skippedUnknown} outro(s) ignorado(s).` : ''}
                             {lastImport.skippedLarge > 0 ? ` ${lastImport.skippedLarge} grande(s) não copiado(s).` : ''}
                         </p>
                     )}
@@ -193,7 +228,7 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                             <>
                                 <div className="flex items-center justify-between gap-2 mb-2">
                                     <p className="text-sm font-semibold text-slate-800">
-                                        {summary.lessonCount} aula{summary.lessonCount === 1 ? '' : 's'} · {summary.fileCount} arquivo{summary.fileCount === 1 ? '' : 's'}
+                                        {summary.dgCount} digestivo{summary.dgCount === 1 ? '' : 's'} · {summary.lessonCount} aula{summary.lessonCount === 1 ? '' : 's'}
                                     </p>
                                     <p className="text-[11px] text-slate-400">{formatBytes(summary.totalBytes)}</p>
                                 </div>
@@ -214,7 +249,7 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                                 </ul>
                             </>
                         ) : (
-                            <p className="text-sm text-slate-500">Nenhum MP3 vinculado ainda.</p>
+                            <p className="text-sm text-slate-500">Nenhum digestivo na biblioteca ainda.</p>
                         )}
                     </div>
 
@@ -231,10 +266,8 @@ const NativeAudioLibraryModal: React.FC<Props> = ({ onClose }) => {
                     )}
 
                     <p className="text-[11px] text-slate-400 leading-relaxed">
-                        No Android, &quot;Selecionar arquivos&quot; é o mais confiável: escolha os
-                        {' '}<span className="font-semibold">*dg.mp3</span> (os menores).
-                        Pastas via File System Access costumam funcionar no Chrome de computador;
-                        no celular os arquivos são copiados para o IndexedDB deste PWA.
+                        No Android, selecione a pasta ou os arquivos mistos — o app filtra os *dg.mp3.
+                        Os arquivos originais em Baixados não são alterados.
                     </p>
 
                     {summary && summary.fileCount > 0 && (

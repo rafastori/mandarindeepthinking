@@ -6,6 +6,7 @@
  */
 
 import { StudyItem, Stats, SessionRecord } from '../types';
+import type { LessonAlignment } from '../utils/audioAlignment';
 
 const DB_NAME = 'MandarinDeepThinkingDB';
 const DB_VERSION = 4;
@@ -53,6 +54,8 @@ export interface LocalProfile {
     readingMode?: ReadingMode;
     readingPrefs?: ReadingPrefs;
     legacyIdsMigratedAt?: string; // marca a migração one-time de IDs numéricos para string
+    /** Timestamps frase↔DG (JSON pequeno; sem blobs de áudio). */
+    nativeAlignments?: Record<string, LessonAlignment>;
 }
 
 export interface VoiceRecording {

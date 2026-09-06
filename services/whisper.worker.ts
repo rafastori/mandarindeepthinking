@@ -38,7 +38,7 @@ const loadModel = async (model: string = 'Xenova/whisper-base') => {
 
 // Processa mensagens do thread principal
 self.onmessage = async (event: any) => {
-    const { type, audio, language, model, prompt } = event.data;
+    const { type, audio, language, model, prompt, returnTimestamps } = event.data;
 
     if (type === 'load') {
         await loadModel(model);
@@ -56,10 +56,16 @@ self.onmessage = async (event: any) => {
                 language: language || 'chinese',
                 task: 'transcribe',
                 prompt: prompt, // Passa o texto esperado como dica para o modelo
-                return_timestamps: false
+                return_timestamps: returnTimestamps === 'word' || returnTimestamps === true
+                    ? returnTimestamps
+                    : false
             });
 
-            self.postMessage({ status: 'result', transcript: output.text });
+            self.postMessage({
+                status: 'result',
+                transcript: output.text,
+                chunks: output.chunks || [],
+            });
         } catch (err: any) {
             self.postMessage({ status: 'error', error: err.message });
         }

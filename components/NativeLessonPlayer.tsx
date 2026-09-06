@@ -17,6 +17,8 @@ interface Props {
     onToggleLoop: () => void;
     onSeek: (ratio: number) => void;
     onOpenLibrary: () => void;
+    onOpenAlignment?: () => void;
+    alignmentCount?: number;
     canSuggestLink?: boolean;
 }
 
@@ -34,6 +36,8 @@ const NativeLessonPlayer: React.FC<Props> = ({
     onToggleLoop,
     onSeek,
     onOpenLibrary,
+    onOpenAlignment,
+    alignmentCount = 0,
     canSuggestLink = false,
 }) => {
     if (!match && !hasLibrary && canSuggestLink) {
@@ -88,6 +92,15 @@ const NativeLessonPlayer: React.FC<Props> = ({
                     C{match.lessonId} · {suffixLabel}
                     <span className="text-emerald-700/70"> · {match.file.fileName}</span>
                 </p>
+                {onOpenAlignment && (
+                    <button
+                        type="button"
+                        onClick={onOpenAlignment}
+                        className="text-[11px] font-semibold text-emerald-800 hover:underline flex-shrink-0"
+                    >
+                        {alignmentCount > 0 ? `Alinhar (${alignmentCount})` : 'Alinhar frases'}
+                    </button>
+                )}
                 <button
                     type="button"
                     onClick={onOpenLibrary}

@@ -102,6 +102,35 @@ const picked = pickPreferredRecord([
 ], '2458', 'dg');
 assertEqual(picked?.fileName, 'dg', 'prefer digestivo');
 
+function selectImportCandidates(entries, mode = 'dg-only') {
+    const selected = [];
+    let skippedOtherSuffix = 0;
+    const lessons = new Set();
+    for (const entry of entries) {
+        if (mode === 'dg-only') {
+            if (entry.parsed.suffix === 'dg') {
+                selected.push(entry);
+                lessons.add(entry.parsed.lessonId);
+            } else skippedOtherSuffix += 1;
+            continue;
+        }
+        selected.push(entry);
+        lessons.add(entry.parsed.lessonId);
+    }
+    return { selected, skippedOtherSuffix, lessonIds: [...lessons].sort() };
+}
+
+const mixed = [
+    { file: 'a', parsed: { lessonId: '2458', suffix: 'dg', fileName: 'chinesepod_C2458dg.mp3' } },
+    { file: 'b', parsed: { lessonId: '2458', suffix: 'pr', fileName: 'chinesepod_C2458pr.mp3' } },
+    { file: 'c', parsed: { lessonId: '2463', suffix: 'rv', fileName: 'chinesepod_C2463rv.mp3' } },
+    { file: 'd', parsed: { lessonId: '2463', suffix: 'dg', fileName: 'chinesepod_C2463dg.mp3' } },
+];
+const dgOnly = selectImportCandidates(mixed, 'dg-only');
+assertEqual(dgOnly.selected.map(e => e.parsed.fileName), ['chinesepod_C2458dg.mp3', 'chinesepod_C2463dg.mp3'], 'dg-only keeps digestivos');
+assertEqual(dgOnly.skippedOtherSuffix, 2, 'dg-only skips pr/rv');
+assertEqual(dgOnly.lessonIds, ['2458', '2463'], 'dg-only lesson ids');
+
 if (failed > 0) {
     console.error(`\n${failed} failed`);
     process.exit(1);

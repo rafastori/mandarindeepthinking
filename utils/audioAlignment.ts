@@ -1,0 +1,328 @@
+/**
+ * Sentence ↔ audio alignment helpers (no I/O).
+ * Used to map StudyItem sentences onto a ChinesePod DG track.
+ */
+
+export type AlignmentSource = 'auto' | 'manual' | 'mixed' | 'proportional';
+
+export interface TimedChunk {
+    start: number;
+    end: number;
+    text: string;
+}
+
+export interface SentenceAlignment {
+    itemId: string;
+    start: number;
+    end: number;
+    score?: number;
+    source: AlignmentSource;
+}
+
+export interface LessonAlignment {
+    lessonId: string;
+    audioFileId: string;
+    contentHash: string;
+    duration: number;
+    cues: SentenceAlignment[];
+    whisperChunks?: TimedChunk[];
+    method?: 'whisper' | 'proportional' | 'manual';
+    averageScore?: number;
+    updatedAt: string;
+}
+
+export interface AlignSentenceInput {
+    id: string;
+    text: string;
+}
+
+const MIN_SEG = 0.18;
+
+export function normalizeAlignText(text: string): string {
+    return (text || '')
+        .normalize('NFKC')
+        .toLowerCase()
+        .replace(/[\s\p{P}\p{S}0-9]/gu, '');
+}
+
+export function hashLessonContent(items: Array<{ id: string | number; text: string }>): string {
+    const payload = items.map(item => `${item.id}\t${normalizeAlignText(item.text)}`).join('\n');
+    let h = 2166136261;
+    for (let i = 0; i < payload.length; i++) {
+        h ^= payload.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0).toString(16);
+}
+
+export function formatClockPrecise(seconds: number): string {
+    if (!Number.isFinite(seconds) || seconds < 0) return '0:00.0';
+    const m = Math.floor(seconds / 60);
+    const s = seconds - m * 60;
+    const whole = Math.floor(s);
+    const tenth = Math.floor((s - whole) * 10);
+    return `${m}:${whole.toString().padStart(2, '0')}.${tenth}`;
+}
+
+export function clampTime(value: number, duration: number): number {
+    if (!Number.isFinite(value)) return 0;
+    return Math.min(Math.max(value, 0), Math.max(duration, 0));
+}
+
+export function clampCues(cues: SentenceAlignment[], duration: number): SentenceAlignment[] {
+    const next = cues.map(cue => {
+        let start = clampTime(cue.start, duration);
+        let end = clampTime(cue.end, duration);
+        if (end < start + MIN_SEG) end = Math.min(duration, start + MIN_SEG);
+        if (end <= start) end = Math.min(duration, start + MIN_SEG);
+        return { ...cue, start, end };
+    });
+
+    for (let i = 1; i < next.length; i++) {
+        if (next[i].start < next[i - 1].end) {
+            next[i] = { ...next[i], start: next[i - 1].end };
+            if (next[i].end < next[i].start + MIN_SEG) {
+                next[i] = { ...next[i], end: Math.min(duration, next[i].start + MIN_SEG) };
+            }
+        }
+    }
+    return next;
+}
+
+export function shiftCues(
+    cues: SentenceAlignment[],
+    deltaSeconds: number,
+    duration: number
+): SentenceAlignment[] {
+    return clampCues(
+        cues.map(cue => ({
+            ...cue,
+            start: cue.start + deltaSeconds,
+            end: cue.end + deltaSeconds,
+            source: cue.source === 'auto' || cue.source === 'proportional' ? 'mixed' : cue.source,
+        })),
+        duration
+    );
+}
+
+export function proportionalAlign(
+    sentences: AlignSentenceInput[],
+    duration: number
+): SentenceAlignment[] {
+    if (sentences.length === 0 || duration <= 0) return [];
+    const weights = sentences.map(s => Math.max(normalizeAlignText(s.text).length, 4));
+    const total = weights.reduce((sum, w) => sum + w, 0);
+    let cursor = 0;
+    return sentences.map((sentence, index) => {
+        const span = (weights[index] / total) * duration;
+        const start = cursor;
+        const end = index === sentences.length - 1 ? duration : cursor + span;
+        cursor = end;
+        return {
+            itemId: sentence.id,
+            start,
+            end,
+            score: 0,
+            source: 'proportional' as const,
+        };
+    });
+}
+
+function overlapScore(a: string, b: string): number {
+    if (!a || !b) return 0;
+    const [short, long] = a.length <= b.length ? [a, b] : [b, a];
+    if (long.includes(short) && short.length >= 2) {
+        return short.length / long.length;
+    }
+    let best = 0;
+    const window = short.length;
+    if (window === 0) return 0;
+    for (let i = 0; i <= long.length - window; i++) {
+        let hit = 0;
+        for (let j = 0; j < window; j++) {
+            if (long[i + j] === short[j]) hit += 1;
+        }
+        best = Math.max(best, hit / window);
+    }
+    return best;
+}
+
+function buildCharTimeline(chunks: TimedChunk[]): { chars: string; times: number[] } {
+    let chars = '';
+    const times: number[] = [];
+    for (const chunk of chunks) {
+        const norm = normalizeAlignText(chunk.text);
+        if (!norm) continue;
+        const span = Math.max(chunk.end - chunk.start, 0.05);
+        for (let i = 0; i < norm.length; i++) {
+            chars += norm[i];
+            times.push(chunk.start + (i / norm.length) * span);
+        }
+    }
+    return { chars, times };
+}
+
+function timeAt(times: number[], index: number, duration: number, end: boolean): number {
+    if (times.length === 0) return end ? duration : 0;
+    const i = Math.min(Math.max(index, 0), times.length - 1);
+    const t = times[i];
+    if (!end) return t;
+    const next = times[i + 1];
+    return next != null ? next : Math.min(duration, t + 0.2);
+}
+
+/**
+ * Sequential alignment of known sentences onto timestamped ASR chunks.
+ * Falls back to proportional split when the transcript does not match the text.
+ */
+export function alignSentencesToChunks(
+    sentences: AlignSentenceInput[],
+    chunks: TimedChunk[],
+    duration: number
+): { cues: SentenceAlignment[]; averageScore: number; method: 'whisper' | 'proportional' } {
+    const proportional = proportionalAlign(sentences, duration);
+    if (sentences.length === 0) {
+        return { cues: [], averageScore: 0, method: 'proportional' };
+    }
+    if (!chunks.length) {
+        return { cues: proportional, averageScore: 0, method: 'proportional' };
+    }
+
+    const { chars, times } = buildCharTimeline(chunks);
+    if (chars.length < 4) {
+        return { cues: proportional, averageScore: 0, method: 'proportional' };
+    }
+
+    const cues: SentenceAlignment[] = [];
+    let cursor = 0;
+    let scoreSum = 0;
+
+    for (let s = 0; s < sentences.length; s++) {
+        const needle = normalizeAlignText(sentences[s].text);
+        const remaining = chars.slice(cursor);
+        let startIdx = cursor;
+        let endIdx = cursor;
+        let score = 0;
+
+        if (needle.length >= 2) {
+            const exact = remaining.indexOf(needle);
+            if (exact >= 0) {
+                startIdx = cursor + exact;
+                endIdx = startIdx + needle.length - 1;
+                score = 1;
+            } else {
+                const window = Math.max(needle.length, 2);
+                let best = 0;
+                let bestAt = 0;
+                const limit = Math.max(remaining.length - window, 0);
+                const scan = Math.min(limit, window * 8);
+                for (let i = 0; i <= scan; i++) {
+                    const slice = remaining.slice(i, i + window);
+                    const local = overlapScore(needle, slice);
+                    if (local > best) {
+                        best = local;
+                        bestAt = i;
+                    }
+                }
+                startIdx = cursor + bestAt;
+                endIdx = startIdx + window - 1;
+                score = best;
+            }
+        }
+
+        const start = timeAt(times, startIdx, duration, false);
+        const end = s === sentences.length - 1
+            ? duration
+            : timeAt(times, endIdx, duration, true);
+
+        cues.push({
+            itemId: sentences[s].id,
+            start,
+            end: Math.max(end, start + MIN_SEG),
+            score,
+            source: 'auto',
+        });
+        scoreSum += score;
+        cursor = Math.max(endIdx + 1, cursor + 1);
+    }
+
+    const averageScore = cues.length ? scoreSum / cues.length : 0;
+    if (averageScore < 0.28) {
+        return { cues: proportional, averageScore, method: 'proportional' };
+    }
+
+    return {
+        cues: clampCues(cues, duration),
+        averageScore,
+        method: 'whisper',
+    };
+}
+
+export function realignOneSentence(
+    cues: SentenceAlignment[],
+    itemId: string,
+    sentences: AlignSentenceInput[],
+    chunks: TimedChunk[] | undefined,
+    duration: number
+): SentenceAlignment[] {
+    const index = cues.findIndex(c => c.itemId === itemId);
+    if (index < 0) return cues;
+    const sentence = sentences.find(s => s.id === itemId);
+    if (!sentence) return cues;
+
+    const windowStart = index > 0 ? Math.max(0, cues[index - 1].end - 0.15) : 0;
+    const windowEnd = index < cues.length - 1
+        ? Math.min(duration, cues[index + 1].start + 0.15)
+        : duration;
+    const windowChunks = (chunks || []).filter(c => c.end >= windowStart && c.start <= windowEnd);
+    const local = alignSentencesToChunks([sentence], windowChunks, windowEnd - windowStart);
+    const cue = local.cues[0];
+    if (!cue) return cues;
+
+    const next = cues.slice();
+    next[index] = {
+        ...cue,
+        start: clampTime(windowStart + cue.start, duration),
+        end: clampTime(windowStart + cue.end, duration),
+        source: local.method === 'whisper' ? 'auto' : 'proportional',
+    };
+    return clampCues(next, duration);
+}
+
+export function updateCueTimes(
+    cues: SentenceAlignment[],
+    itemId: string,
+    patch: { start?: number; end?: number },
+    duration: number
+): SentenceAlignment[] {
+    return clampCues(
+        cues.map(cue => cue.itemId === itemId
+            ? {
+                ...cue,
+                start: patch.start ?? cue.start,
+                end: patch.end ?? cue.end,
+                source: 'manual',
+            }
+            : cue),
+        duration
+    );
+}
+
+export function parseWhisperChunks(raw: unknown): TimedChunk[] {
+    if (!Array.isArray(raw)) return [];
+    const chunks: TimedChunk[] = [];
+    for (const item of raw) {
+        if (!item || typeof item !== 'object') continue;
+        const rec = item as { text?: string; timestamp?: [number | null, number | null] };
+        const ts = rec.timestamp;
+        if (!ts || typeof ts[0] !== 'number') continue;
+        const start = ts[0];
+        const end = typeof ts[1] === 'number' ? ts[1] : start + 0.4;
+        chunks.push({
+            start,
+            end: Math.max(end, start + 0.05),
+            text: String(rec.text || ''),
+        });
+    }
+    return chunks;
+}
