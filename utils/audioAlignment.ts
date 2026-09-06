@@ -44,7 +44,7 @@ export interface AlignSentenceInput {
     text: string;
 }
 
-const MIN_SEG = 0.18;
+export const MIN_SEG = 0.18;
 
 export function normalizeAlignText(text: string): string {
     return (text || '')
@@ -418,6 +418,15 @@ export function updateCueTimes(
     patch: { start?: number; end?: number },
     duration: number
 ): SentenceAlignment[] {
+    const exists = cues.some(cue => cue.itemId === itemId);
+    if (!exists) {
+        const start = patch.start ?? 0;
+        const end = patch.end ?? start + MIN_SEG;
+        return clampCues(
+            [...cues, { itemId, start, end, source: 'manual' }],
+            duration
+        );
+    }
     return clampCues(
         cues.map(cue => cue.itemId === itemId
             ? {
@@ -429,6 +438,77 @@ export function updateCueTimes(
             : cue),
         duration
     );
+}
+
+export function emptyManualAlignment(options: {
+    lessonId: string;
+    audioFileId: string;
+    contentHash: string;
+    duration: number;
+    introSkipSeconds?: number;
+}): LessonAlignment {
+    return {
+        lessonId: options.lessonId,
+        audioFileId: options.audioFileId,
+        contentHash: options.contentHash,
+        duration: Math.max(options.duration, 0),
+        cues: [],
+        method: 'manual',
+        introSkipSeconds: clampIntroSkip(
+            options.introSkipSeconds ?? DEFAULT_INTRO_SKIP_SECONDS,
+            options.duration || 999
+        ),
+        updatedAt: new Date().toISOString(),
+    };
+}
+
+export function isLiveCueComplete(cue: SentenceAlignment | undefined): boolean {
+    if (!cue) return false;
+    return cue.end - cue.start > MIN_SEG + 0.02;
+}
+
+export function applyLiveStart(
+    cues: SentenceAlignment[],
+    itemId: string,
+    time: number,
+    duration: number,
+    introSkipSeconds = 0
+): { cues: SentenceAlignment[]; start: number; clampedToIntro: boolean } {
+    const skip = Math.max(0, introSkipSeconds);
+    const start = Math.max(time, skip);
+    const existing = cues.find(cue => cue.itemId === itemId);
+    const end = existing && existing.end > start + MIN_SEG
+        ? existing.end
+        : start + MIN_SEG;
+    return {
+        cues: updateCueTimes(cues, itemId, { start, end }, duration),
+        start,
+        clampedToIntro: time < skip - 0.05,
+    };
+}
+
+export type LiveMarkEndError = 'no_start' | 'end_before_start';
+
+export function applyLiveEnd(
+    cues: SentenceAlignment[],
+    itemId: string,
+    nextItemId: string | undefined,
+    time: number,
+    duration: number
+): { ok: true; cues: SentenceAlignment[]; end: number } | { ok: false; reason: LiveMarkEndError } {
+    const current = cues.find(cue => cue.itemId === itemId);
+    if (!current) return { ok: false, reason: 'no_start' };
+    if (time <= current.start + 0.04) return { ok: false, reason: 'end_before_start' };
+    const end = Math.max(time, current.start + MIN_SEG);
+    let next = updateCueTimes(cues, itemId, { end }, duration);
+    if (nextItemId) {
+        const following = next.find(cue => cue.itemId === nextItemId);
+        const nextEnd = following && following.end > end + MIN_SEG
+            ? following.end
+            : end + MIN_SEG;
+        next = updateCueTimes(next, nextItemId, { start: end, end: nextEnd }, duration);
+    }
+    return { ok: true, cues: next, end };
 }
 
 export function parseWhisperChunks(raw: unknown): TimedChunk[] {

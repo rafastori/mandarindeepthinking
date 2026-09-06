@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Icon from './Icon';
 import { StudyItem } from '../types';
 import { useLessonAlignment } from '../hooks/useLessonAlignment';
@@ -7,6 +7,7 @@ import {
     INTRO_SKIP_PRESETS,
     effectiveCueTimes,
     formatClockPrecise,
+    isLiveCueComplete,
 } from '../utils/audioAlignment';
 import { formatClock } from '../utils/chinesePodAudio';
 import { nativeAudioLibrary } from '../services/nativeAudioLibrary';
@@ -20,7 +21,7 @@ interface Props {
     duration: number;
     isPlaying: boolean;
     playingSegmentId: string | null;
-    onPlay: () => void;
+    onPlay: (startAtIfIdle?: number) => void;
     onPause: () => void;
     onStop: () => void;
     onSeekTo: (seconds: number) => void;
@@ -47,6 +48,12 @@ const AlignmentEditorModal: React.FC<Props> = ({
     const align = useLessonAlignment(lessonId, items);
     const [selectedId, setSelectedId] = useState(items[0]?.id.toString() || '');
     const [introSkip, setIntroSkip] = useState(DEFAULT_INTRO_SKIP_SECONDS);
+    const [liveMode, setLiveMode] = useState(false);
+    const [liveHint, setLiveHint] = useState<{ type: 'error' | 'ok' | 'info'; text: string } | null>(null);
+    const playheadRef = useRef(currentTime);
+    playheadRef.current = currentTime;
+    const selectedIdRef = useRef(selectedId);
+    selectedIdRef.current = selectedId;
 
     useEffect(() => {
         let cancelled = false;
@@ -88,6 +95,99 @@ const AlignmentEditorModal: React.FC<Props> = ({
         const times = effectiveCueTimes(selectedCue, introSkip, duration || align.alignment?.duration);
         if (times) onPlaySegment(times.start, times.end, selectedCue.itemId);
     };
+
+    const showLiveHint = useCallback((type: 'error' | 'ok' | 'info', text: string) => {
+        setLiveHint({ type, text });
+        window.setTimeout(() => {
+            setLiveHint(prev => (prev?.text === text ? null : prev));
+        }, 2200);
+    }, []);
+
+    const selectedIndex = items.findIndex(item => item.id.toString() === selectedId);
+    const currentHasStart = !!selectedCue;
+    const markedCount = items.filter(item =>
+        isLiveCueComplete(align.alignment?.cues.find(cue => cue.itemId === item.id.toString()))
+    ).length;
+    const allMarked = items.length > 0 && markedCount === items.length;
+
+    const startLiveListening = async () => {
+        const total = duration || align.alignment?.duration || 0;
+        const ensured = await align.ensureManualAlignment(audioFileId, total, introSkip);
+        const firstOpen = items.find(item =>
+            !isLiveCueComplete(ensured?.cues.find(cue => cue.itemId === item.id.toString()))
+        );
+        if (firstOpen) setSelectedId(firstOpen.id.toString());
+        setLiveMode(true);
+        setLiveHint(null);
+        if (currentTime < introSkip - 0.05) onSeekTo(introSkip);
+        if (!isPlaying) onPlay(introSkip);
+        showLiveHint('info', 'Ouça o diálogo e toque em Início / Fim. O áudio continua.');
+    };
+
+    const handleLiveStart = useCallback(async () => {
+        const id = selectedIdRef.current;
+        if (!id) return;
+        const time = playheadRef.current;
+        await align.ensureManualAlignment(audioFileId, duration || align.alignment?.duration || 0, introSkip);
+        const result = await align.markLiveStart(id, time, introSkip);
+        if (!result.ok) {
+            showLiveHint('error', 'Não há alinhamento para gravar. Toque em Marcar enquanto ouve.');
+            return;
+        }
+        if (result.clampedToIntro) {
+            showLiveHint('info', `Início ajustado para depois da intro (${formatClockPrecise(result.start)}).`);
+        } else {
+            showLiveHint('ok', `Início em ${formatClockPrecise(result.start)}.`);
+        }
+    }, [align, audioFileId, duration, introSkip, showLiveHint]);
+
+    const handleLiveEnd = useCallback(async () => {
+        const id = selectedIdRef.current;
+        if (!id) return;
+        const time = playheadRef.current;
+        const index = items.findIndex(item => item.id.toString() === id);
+        const following = index >= 0 ? items[index + 1] : undefined;
+        const result = await align.markLiveEnd(id, following?.id.toString(), time);
+        if (result.ok === false) {
+            if (result.reason === 'no_start') {
+                showLiveHint('error', 'Marque o início primeiro.');
+            } else if (result.reason === 'end_before_start') {
+                showLiveHint('error', 'O fim precisa ser depois do início.');
+            } else {
+                showLiveHint('error', 'Toque em Marcar enquanto ouve para começar.');
+            }
+            return;
+        }
+        if (following) {
+            setSelectedId(following.id.toString());
+            showLiveHint('ok', `Fim em ${formatClockPrecise(result.end)}. Próxima frase…`);
+        } else {
+            showLiveHint('ok', 'Todas as frases marcadas.');
+        }
+    }, [align, items, showLiveHint]);
+
+    useEffect(() => {
+        if (!liveMode || duration <= 0) return;
+        if ((align.alignment?.duration || 0) >= duration - 0.05) return;
+        align.ensureManualAlignment(audioFileId, duration, introSkip);
+    }, [align, audioFileId, duration, introSkip, liveMode]);
+
+    useEffect(() => {
+        if (!liveMode) return;
+        const onKey = (event: KeyboardEvent) => {
+            const tag = (event.target as HTMLElement | null)?.tagName;
+            if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+            if (event.code === 'Space' || event.key === ' ') {
+                event.preventDefault();
+                handleLiveEnd();
+            } else if (event.key === 'i' || event.key === 'I') {
+                event.preventDefault();
+                handleLiveStart();
+            }
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+    }, [liveMode, handleLiveEnd, handleLiveStart]);
 
     return (
         <div className="fixed inset-0 z-[85] flex items-end sm:items-center justify-center bg-black/50 p-0 sm:p-4 backdrop-blur-sm">
@@ -199,6 +299,87 @@ const AlignmentEditorModal: React.FC<Props> = ({
                         </button>
                     </div>
 
+                    <div className={`rounded-xl border p-3 space-y-2 ${liveMode ? 'border-emerald-300 bg-emerald-50' : 'border-slate-200 bg-slate-50'}`}>
+                        <div className="flex items-start justify-between gap-2">
+                            <div>
+                                <p className="text-sm font-bold text-slate-800 flex items-center gap-1.5">
+                                    <Icon name="target" size={16} className="text-emerald-600" />
+                                    Marcar enquanto ouve
+                                </p>
+                                <p className="text-[11px] text-slate-500 mt-0.5">
+                                    Uma escuta só: Início na 1ª frase, depois só Fim. A próxima começa onde a anterior termina.
+                                </p>
+                            </div>
+                            {liveMode ? (
+                                <button
+                                    type="button"
+                                    onClick={() => setLiveMode(false)}
+                                    className="px-2.5 py-1 rounded-lg text-[11px] font-bold border border-slate-200 bg-white text-slate-600"
+                                >
+                                    Sair
+                                </button>
+                            ) : (
+                                <button
+                                    type="button"
+                                    disabled={align.busy || items.length === 0}
+                                    onClick={startLiveListening}
+                                    className="px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-emerald-600 text-white disabled:opacity-40"
+                                >
+                                    Começar
+                                </button>
+                            )}
+                        </div>
+
+                        {liveMode && (
+                            <>
+                                <p className="text-[11px] font-semibold text-emerald-900 tabular-nums">
+                                    Frase {Math.max(selectedIndex, 0) + 1} de {items.length}
+                                    {allMarked ? ' · todas marcadas' : ` · ${markedCount} pronta${markedCount === 1 ? '' : 's'}`}
+                                    {' · '}{formatClockPrecise(currentTime)}
+                                    {currentTime < introSkip - 0.05 ? ' · ainda na intro' : ''}
+                                </p>
+                                {selectedItem && (
+                                    <p className="text-lg leading-snug text-slate-900 font-medium">
+                                        {selectedItem.chinese}
+                                    </p>
+                                )}
+                                <div className="grid grid-cols-2 gap-2">
+                                    <button
+                                        type="button"
+                                        onClick={handleLiveStart}
+                                        className={`min-h-[3.25rem] rounded-xl text-sm font-bold border ${currentHasStart
+                                            ? 'bg-white text-slate-700 border-slate-200'
+                                            : 'bg-slate-800 text-white border-slate-800'
+                                        }`}
+                                    >
+                                        {currentHasStart ? 'Remarcar início' : 'Início'}
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={handleLiveEnd}
+                                        className="min-h-[3.25rem] rounded-xl text-sm font-bold bg-emerald-600 text-white border border-emerald-600"
+                                    >
+                                        Fim
+                                    </button>
+                                </div>
+                                <p className="text-[10px] text-slate-500">
+                                    No computador: espaço = Fim, I = Início. O áudio não para.
+                                </p>
+                            </>
+                        )}
+                    </div>
+
+                    {liveHint && (
+                        <p className={`text-sm rounded-lg px-3 py-2 border ${liveHint.type === 'error'
+                            ? 'text-rose-700 bg-rose-50 border-rose-100'
+                            : liveHint.type === 'ok'
+                                ? 'text-emerald-800 bg-emerald-50 border-emerald-100'
+                                : 'text-slate-700 bg-slate-50 border-slate-200'
+                        }`}>
+                            {liveHint.text}
+                        </p>
+                    )}
+
                     {align.busy && (
                         <div>
                             <p className="text-xs text-slate-500 mb-1">{align.progressMessage || 'Processando…'}</p>
@@ -228,7 +409,7 @@ const AlignmentEditorModal: React.FC<Props> = ({
 
                     <div className="rounded-xl border border-slate-200 p-3 space-y-2">
                         <div className="flex items-center gap-2">
-                            <button type="button" onClick={isPlaying ? onPause : onPlay} className="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center">
+                            <button type="button" onClick={isPlaying ? onPause : () => onPlay(liveMode ? introSkip : undefined)} className="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center">
                                 <Icon name={isPlaying ? 'pause' : 'play'} size={16} />
                             </button>
                             <button type="button" onClick={onStop} className="w-8 h-8 rounded-full border border-slate-200 text-slate-600 flex items-center justify-center">
@@ -308,6 +489,7 @@ const AlignmentEditorModal: React.FC<Props> = ({
                             const cue = align.alignment?.cues.find(c => c.itemId === id);
                             const active = selectedId === id;
                             const playing = playingSegmentId === id;
+                            const complete = isLiveCueComplete(cue);
                             return (
                                 <li key={id}>
                                     <button
@@ -318,8 +500,10 @@ const AlignmentEditorModal: React.FC<Props> = ({
                                         <div className="flex items-center justify-between gap-2">
                                             <span className="text-[10px] font-bold text-slate-400">{index + 1}</span>
                                             <span className="flex-1 truncate text-slate-800">{item.chinese}</span>
-                                            <span className="text-[10px] tabular-nums text-slate-400">
-                                                {cue ? `${formatClockPrecise(cue.start)}–${formatClockPrecise(cue.end)}` : '—'}
+                                            <span className={`text-[10px] tabular-nums ${complete ? 'text-emerald-700' : 'text-slate-400'}`}>
+                                                {cue
+                                                    ? `${formatClockPrecise(cue.start)}–${complete ? formatClockPrecise(cue.end) : '…'}`
+                                                    : '—'}
                                             </span>
                                         </div>
                                     </button>

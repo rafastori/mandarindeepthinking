@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { StudyItem } from '../types';
 import { localDB } from '../services/localDB';
 import { nativeAudioLibrary, NATIVE_ALIGNMENT_CHANGE_EVENT } from '../services/nativeAudioLibrary';
@@ -6,7 +6,11 @@ import { autoAlignLesson } from '../services/whisperAligner';
 import {
     AlignSentenceInput,
     LessonAlignment,
+    LiveMarkEndError,
+    applyLiveEnd,
+    applyLiveStart,
     clampIntroSkip,
+    emptyManualAlignment,
     hashLessonContent,
     realignOneSentence,
     rebaseCuesForIntroSkip,
@@ -50,6 +54,9 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
 
     const sentences = sentencesFromItems(items);
     const contentHash = hashLessonContent(sentences);
+    const alignmentRef = useRef<LessonAlignment | null>(null);
+    const pendingSaves = useRef(0);
+    alignmentRef.current = alignment;
 
     const refresh = useCallback(async () => {
         if (!lessonId) {
@@ -63,6 +70,10 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
                 const profile = await localDB.getProfile();
                 stored = profile.nativeAlignments?.[lessonId] || null;
                 if (stored) await nativeAudioLibrary.saveAlignment(stored);
+            }
+            if (pendingSaves.current > 0 && alignmentRef.current) {
+                setError(null);
+                return;
             }
             setAlignment(stored);
             setError(null);
@@ -81,9 +92,101 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
     }, [refresh]);
 
     const save = useCallback(async (next: LessonAlignment) => {
-        await persistAlignment(next);
+        alignmentRef.current = next;
         setAlignment(next);
+        pendingSaves.current += 1;
+        try {
+            await persistAlignment(next);
+        } finally {
+            pendingSaves.current -= 1;
+        }
     }, []);
+
+    const ensureManualAlignment = useCallback(async (
+        audioFileId: string,
+        duration: number,
+        introSkipSeconds?: number
+    ) => {
+        if (!lessonId) return null;
+        const current = alignmentRef.current;
+        if (current) {
+            const skip = introSkipSeconds != null
+                ? clampIntroSkip(introSkipSeconds, duration || current.duration)
+                : current.introSkipSeconds;
+            if (
+                (duration > 0 && duration > (current.duration || 0) + 0.05) ||
+                (skip != null && skip !== current.introSkipSeconds)
+            ) {
+                const next: LessonAlignment = {
+                    ...current,
+                    duration: duration > 0 ? duration : current.duration,
+                    introSkipSeconds: skip,
+                    updatedAt: new Date().toISOString(),
+                };
+                await save(next);
+                return next;
+            }
+            return current;
+        }
+        const created = emptyManualAlignment({
+            lessonId,
+            audioFileId,
+            contentHash,
+            duration,
+            introSkipSeconds,
+        });
+        await save(created);
+        return created;
+    }, [contentHash, lessonId, save]);
+
+    const markLiveStart = useCallback(async (
+        itemId: string,
+        time: number,
+        introSkipSeconds = 0
+    ) => {
+        const current = alignmentRef.current;
+        if (!current) return { ok: false as const, reason: 'no_alignment' as const };
+        const result = applyLiveStart(
+            current.cues,
+            itemId,
+            time,
+            current.duration || time + 1,
+            introSkipSeconds
+        );
+        await save({
+            ...current,
+            method: 'manual',
+            duration: Math.max(current.duration, time + 1),
+            cues: result.cues,
+            updatedAt: new Date().toISOString(),
+        });
+        return { ok: true as const, start: result.start, clampedToIntro: result.clampedToIntro };
+    }, [save]);
+
+    const markLiveEnd = useCallback(async (
+        itemId: string,
+        nextItemId: string | undefined,
+        time: number
+    ): Promise<{ ok: true; end: number } | { ok: false; reason: LiveMarkEndError | 'no_alignment' }> => {
+        const current = alignmentRef.current;
+        if (!current) return { ok: false, reason: 'no_alignment' };
+        const result = applyLiveEnd(
+            current.cues,
+            itemId,
+            nextItemId,
+            time,
+            current.duration || time + 1
+        );
+        if (result.ok === false) return { ok: false, reason: result.reason };
+        await save({
+            ...current,
+            method: 'manual',
+            duration: Math.max(current.duration, time + 1),
+            cues: result.cues,
+            updatedAt: new Date().toISOString(),
+        });
+        return { ok: true, end: result.end };
+    }, [save]);
 
     const runAutoAlign = useCallback(async (
         audioFileId: string,
@@ -212,6 +315,9 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
         runAutoAlign,
         applyCues,
         markTimes,
+        markLiveStart,
+        markLiveEnd,
+        ensureManualAlignment,
         shiftAll,
         applyIntroSkip,
         realignOne,
