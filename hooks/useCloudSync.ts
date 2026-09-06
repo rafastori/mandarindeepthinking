@@ -1,18 +1,39 @@
 import { useState, useCallback } from 'react';
-import { doc, setDoc, getDoc, collection, query, orderBy, getDocs } from 'firebase/firestore';
+import {
+    doc,
+    setDoc,
+    getDoc,
+    collection,
+    query,
+    orderBy,
+    getDocs,
+    writeBatch,
+} from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { localDB, LocalProfile, UserComment } from '../services/localDB';
 import { StudyItem, SessionRecord } from '../types';
+import {
+    BACKUP_VERSION,
+    FIRESTORE_SAFE_BYTES,
+    assembleChunks,
+    buildBackupPayload,
+    formatBackupError,
+    normalizeBackupGraph,
+    parseBackupPayload,
+    splitUtf8,
+} from '../services/backupService';
 
 const MIGRATION_KEY = 'localFirstMigrated';
+const CHUNK_PREFIX = 'chunk_';
 
 /**
  * useCloudSync - Hook para backup/restore manual na nuvem.
- * 
- * Salva TODOS os dados locais como um único documento JSON no Firestore.
- * Custo: 1 escrita por backup, 1 leitura por restore.
- * 
- * Também inclui migração one-time do Firebase legado para IndexedDB.
+ *
+ * O payload é o mesmo do export JSON (itens + perfil + comentários + sessões).
+ * Gravações de voz ficam só no arquivo local (blobs estouram o Firestore).
+ *
+ * Bibliotecas grandes são fatiadas em documentos `chunk_N` para não passar
+ * do limite de 1 MiB por documento do Firestore.
  */
 
 export interface CloudSyncResult {
@@ -25,18 +46,169 @@ export interface CloudSyncResult {
     lastRestoreAt: string | null;
 }
 
+interface RestoredBackup {
+    items: StudyItem[];
+    profile: LocalProfile;
+    comments: UserComment[];
+    sessions: SessionRecord[];
+    source: 'json-inline' | 'json-chunks' | 'legacy-blob' | 'none';
+}
+
+async function commitBatches(
+    ops: Array<(batch: ReturnType<typeof writeBatch>) => void>
+): Promise<void> {
+    const CHUNK = 450;
+    for (let i = 0; i < ops.length; i += CHUNK) {
+        const batch = writeBatch(db);
+        for (const op of ops.slice(i, i + CHUNK)) op(batch);
+        await batch.commit();
+    }
+}
+
+async function listBackupDocs(userId: string) {
+    const col = collection(db, 'users', userId, 'backups');
+    return getDocs(col);
+}
+
+async function deleteExtraChunks(userId: string, keepCount: number): Promise<void> {
+    const snap = await listBackupDocs(userId);
+    const toDelete: string[] = [];
+    snap.forEach(d => {
+        if (!d.id.startsWith(CHUNK_PREFIX)) return;
+        const idx = Number(d.id.slice(CHUNK_PREFIX.length));
+        if (!Number.isFinite(idx) || idx >= keepCount) {
+            toDelete.push(d.id);
+        }
+    });
+    if (toDelete.length === 0) return;
+    await commitBatches(toDelete.map(id => (batch) => {
+        batch.delete(doc(db, 'users', userId, 'backups', id));
+    }));
+}
+
+async function writeCloudBackup(userId: string, payload: ReturnType<typeof buildBackupPayload>): Promise<void> {
+    const json = JSON.stringify(payload);
+    const dataRef = doc(db, 'users', userId, 'backups', 'data');
+    const metaBase = {
+        version: BACKUP_VERSION,
+        backedUpAt: payload.exportedAt,
+        itemCount: payload.itemCount,
+        commentCount: payload.comments.length,
+        sessionCount: payload.sessions.length,
+    };
+
+    if (new TextEncoder().encode(json).length <= FIRESTORE_SAFE_BYTES) {
+        await setDoc(dataRef, {
+            ...metaBase,
+            format: 'json-inline',
+            chunkCount: 0,
+            payloadJson: json,
+        });
+        await deleteExtraChunks(userId, 0);
+        return;
+    }
+
+    const chunks = splitUtf8(json, FIRESTORE_SAFE_BYTES);
+    await setDoc(dataRef, {
+        ...metaBase,
+        format: 'json-chunks',
+        chunkCount: chunks.length,
+    });
+
+    await commitBatches(chunks.map((text, i) => (batch) => {
+        batch.set(doc(db, 'users', userId, 'backups', `${CHUNK_PREFIX}${i}`), { i, t: text });
+    }));
+    await deleteExtraChunks(userId, chunks.length);
+}
+
+async function readChunkedPayload(userId: string, chunkCount: number): Promise<string> {
+    const pieces: Array<{ i: number; t: string }> = [];
+    for (let i = 0; i < chunkCount; i++) {
+        const snap = await getDoc(doc(db, 'users', userId, 'backups', `${CHUNK_PREFIX}${i}`));
+        if (!snap.exists()) {
+            throw new Error(`Chunk ${i}/${chunkCount} ausente no backup da nuvem.`);
+        }
+        const data = snap.data();
+        pieces.push({ i: typeof data.i === 'number' ? data.i : i, t: String(data.t || '') });
+    }
+    return assembleChunks(pieces);
+}
+
+async function readCloudBackup(userId: string): Promise<RestoredBackup> {
+    const backupRef = doc(db, 'users', userId, 'backups', 'data');
+    const backupSnap = await getDoc(backupRef);
+    if (!backupSnap.exists()) {
+        return {
+            items: [],
+            profile: localDB.getDefaultProfile(),
+            comments: [],
+            sessions: [],
+            source: 'none',
+        };
+    }
+
+    const backupData = backupSnap.data();
+    const format = backupData.format as string | undefined;
+
+    if (format === 'json-inline' && typeof backupData.payloadJson === 'string') {
+        const parsed = parseBackupPayload(JSON.parse(backupData.payloadJson));
+        const normalized = normalizeBackupGraph({
+            items: parsed.data,
+            profile: parsed.profile,
+            comments: parsed.comments,
+        });
+        return {
+            items: normalized.items,
+            profile: normalized.profile || localDB.getDefaultProfile(),
+            comments: normalized.comments,
+            sessions: parsed.sessions,
+            source: 'json-inline',
+        };
+    }
+
+    if (format === 'json-chunks' && Number(backupData.chunkCount) > 0) {
+        const json = await readChunkedPayload(userId, Number(backupData.chunkCount));
+        const parsed = parseBackupPayload(JSON.parse(json));
+        const normalized = normalizeBackupGraph({
+            items: parsed.data,
+            profile: parsed.profile,
+            comments: parsed.comments,
+        });
+        return {
+            items: normalized.items,
+            profile: normalized.profile || localDB.getDefaultProfile(),
+            comments: normalized.comments,
+            sessions: parsed.sessions,
+            source: 'json-chunks',
+        };
+    }
+
+    // Formato legado (v2.2): itens inline no documento único
+    const legacyItems = (backupData.items || backupData.data || []) as StudyItem[];
+    const normalized = normalizeBackupGraph({
+        items: legacyItems,
+        profile: (backupData.profile || localDB.getDefaultProfile()) as LocalProfile,
+        comments: (backupData.comments || []) as UserComment[],
+    });
+    return {
+        items: normalized.items,
+        profile: normalized.profile || localDB.getDefaultProfile(),
+        comments: normalized.comments,
+        sessions: (backupData.sessions || []) as SessionRecord[],
+        source: 'legacy-blob',
+    };
+}
+
 export function useCloudSync(userId: string | null | undefined): CloudSyncResult {
     const [isSyncing, setIsSyncing] = useState(false);
     const [lastBackupAt, setLastBackupAt] = useState<string | null>(null);
     const [lastRestoreAt, setLastRestoreAt] = useState<string | null>(null);
 
-    // Verifica se precisa migrar (primeira vez após atualização)
     const needsMigration = useCallback((): boolean => {
         if (!userId) return false;
         return !localStorage.getItem(`${MIGRATION_KEY}_${userId}`);
     }, [userId]);
 
-    // Backup: Local -> Cloud (1 escrita no Firestore)
     const backupToCloud = useCallback(async (): Promise<boolean> => {
         if (!userId) {
             alert('Faça login para fazer backup na nuvem.');
@@ -46,37 +218,24 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
         setIsSyncing(true);
         try {
             const { items, profile, comments, sessions } = await localDB.exportAll();
+            const payload = buildBackupPayload({ items, profile, comments, sessions, userId });
+            await writeCloudBackup(userId, payload);
 
-            const backupData = {
-                version: '2.2.0',
-                backedUpAt: new Date().toISOString(),
-                itemCount: items.length,
-                items: items,
-                profile: profile,
-                comments: comments,
-                sessions: sessions,
-            };
-
-            const backupRef = doc(db, 'users', userId, 'backups', 'data');
-            await setDoc(backupRef, backupData);
-
-            const timestamp = new Date().toISOString();
+            const timestamp = payload.exportedAt;
             setLastBackupAt(timestamp);
             await localDB.updateProfile({ lastBackupAt: timestamp });
 
             console.log(`Backup realizado: ${items.length} itens salvos na nuvem.`);
             return true;
-
         } catch (error) {
             console.error('Erro ao fazer backup:', error);
-            alert('Erro ao fazer backup. Tente novamente.');
+            alert(`Erro ao fazer backup. ${formatBackupError(error)}`);
             return false;
         } finally {
             setIsSyncing(false);
         }
     }, [userId]);
 
-    // Restore: Cloud -> Local (1 leitura do Firestore)
     const restoreFromCloud = useCallback(async (): Promise<{ success: boolean; itemCount: number }> => {
         if (!userId) {
             alert('Faça login para restaurar backup da nuvem.');
@@ -85,34 +244,30 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
 
         setIsSyncing(true);
         try {
-            const backupRef = doc(db, 'users', userId, 'backups', 'data');
-            const backupSnap = await getDoc(backupRef);
-
-            if (!backupSnap.exists()) {
+            const restored = await readCloudBackup(userId);
+            if (restored.source === 'none') {
                 alert('Nenhum backup encontrado na nuvem.');
                 return { success: false, itemCount: 0 };
             }
 
-            const backupData = backupSnap.data();
-            const items: StudyItem[] = backupData.items || [];
-            const profile: LocalProfile = backupData.profile || localDB.getDefaultProfile();
-            const comments: UserComment[] = backupData.comments || [];
-            const sessions: SessionRecord[] = backupData.sessions || [];
-
             const timestamp = new Date().toISOString();
-            profile.lastRestoreAt = timestamp;
+            restored.profile.lastRestoreAt = timestamp;
 
-            await localDB.importAll({ items, profile, comments, sessions });
+            await localDB.importAll({
+                items: restored.items,
+                profile: restored.profile,
+                comments: restored.comments,
+                sessions: restored.sessions,
+            });
 
             setLastRestoreAt(timestamp);
-            setLastBackupAt(profile.lastBackupAt || null);
+            setLastBackupAt(restored.profile.lastBackupAt || null);
 
-            console.log(`Restauração concluída: ${items.length} itens restaurados da nuvem.`);
-            return { success: true, itemCount: items.length };
-
+            console.log(`Restauração concluída (${restored.source}): ${restored.items.length} itens.`);
+            return { success: true, itemCount: restored.items.length };
         } catch (error) {
             console.error('Erro ao restaurar backup:', error);
-            alert('Erro ao restaurar backup. Tente novamente.');
+            alert(`Erro ao restaurar backup. ${formatBackupError(error)}`);
             return { success: false, itemCount: 0 };
         } finally {
             setIsSyncing(false);
@@ -121,9 +276,7 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
 
     /**
      * Migração para dispositivo novo ou primeira vez após atualização local-first.
-     * 
-     * Estratégia: Tenta backup blob PRIMEIRO (mais recente), senão lê Firebase legado.
-     * Isso garante que dados novos (criados após a primeira migração) não se percam.
+     * Tenta o backup blob (qualquer formato) primeiro; senão lê o Firebase legado.
      */
     const migrateFromFirebase = useCallback(async (): Promise<{ success: boolean; itemCount: number; hasData: boolean }> => {
         if (!userId) return { success: false, itemCount: 0, hasData: false };
@@ -138,25 +291,20 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
             let sessions: SessionRecord[] = [];
             let source = 'none';
 
-            // 1. Tenta restaurar do backup blob (dados mais recentes)
             try {
-                const backupRef = doc(db, 'users', userId, 'backups', 'data');
-                const backupSnap = await getDoc(backupRef);
-
-                if (backupSnap.exists()) {
-                    const backupData = backupSnap.data();
-                    items = backupData.items || [];
-                    profile = backupData.profile || localDB.getDefaultProfile();
-                    comments = backupData.comments || [];
-                    sessions = backupData.sessions || [];
-                    source = 'backup-blob';
-                    console.log(`📦 Backup blob encontrado: ${items.length} itens, ${profile.stats?.points || 0} pontos`);
+                const restored = await readCloudBackup(userId);
+                if (restored.source !== 'none') {
+                    items = restored.items;
+                    profile = restored.profile;
+                    comments = restored.comments;
+                    sessions = restored.sessions;
+                    source = restored.source;
+                    console.log(`📦 Backup encontrado (${source}): ${items.length} itens, ${profile.stats?.points || 0} pontos`);
                 }
             } catch (e) {
                 console.warn('Erro ao ler backup blob, tentando Firebase legado...', e);
             }
 
-            // 2. Se não encontrou backup blob, tenta Firebase legado
             if (source === 'none') {
                 try {
                     const itemsQuery = query(
@@ -182,12 +330,16 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
 
                     source = 'firebase-legacy';
                     console.log(`📂 Firebase legado: ${items.length} itens, ${profile.stats?.points || 0} pontos`);
+
+                    const normalized = normalizeBackupGraph({ items, profile, comments });
+                    items = normalized.items;
+                    profile = normalized.profile || profile;
+                    comments = normalized.comments;
                 } catch (e) {
                     console.warn('Erro ao ler Firebase legado:', e);
                 }
             }
 
-            // 3. Verifica se há dados para migrar (itens OU stats com progresso)
             const hasData = items.length > 0 ||
                 (profile.stats?.correct || 0) > 0 ||
                 (profile.stats?.points || 0) > 0 ||
@@ -199,26 +351,13 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
                 return { success: true, itemCount: 0, hasData: false };
             }
 
-            // 4. Salva no IndexedDB local
             await localDB.importAll({ items, profile, comments, sessions });
 
-            // 5. Se veio do Firebase legado, cria backup blob para próximo dispositivo
             if (source === 'firebase-legacy') {
-                const backupData = {
-                    version: '2.2.0',
-                    backedUpAt: new Date().toISOString(),
-                    itemCount: items.length,
-                    items: items,
-                    profile: profile,
-                    comments: comments,
-                    sessions: sessions,
-                    migratedFrom: source,
-                };
-                const backupRef = doc(db, 'users', userId, 'backups', 'data');
-                await setDoc(backupRef, backupData);
+                const payload = buildBackupPayload({ items, profile, comments, sessions, userId });
+                await writeCloudBackup(userId, payload);
             }
 
-            // 6. Marca como migrado
             localStorage.setItem(`${MIGRATION_KEY}_${userId}`, new Date().toISOString());
 
             console.log(`✅ Migração concluída (${source}): ${items.length} itens, ${profile.stats?.points || 0} pontos.`);
@@ -235,4 +374,3 @@ export function useCloudSync(userId: string | null | undefined): CloudSyncResult
 
     return { backupToCloud, restoreFromCloud, migrateFromFirebase, needsMigration, isSyncing, lastBackupAt, lastRestoreAt };
 }
-

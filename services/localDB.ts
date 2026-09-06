@@ -236,19 +236,32 @@ export const localDB = {
 
     // --- Backup/Restore Helpers ---
 
-    /** Exporta TUDO como um único objeto JSON (para backup na nuvem / arquivo) */
-    async exportAll(): Promise<{ items: StudyItem[]; profile: LocalProfile; comments: UserComment[]; sessions: SessionRecord[] }> {
-        const [items, profile, comments, sessions] = await Promise.all([
+    /** Exporta TUDO (para backup na nuvem / arquivo). Inclui gravações de voz (blobs). */
+    async exportAll(): Promise<{
+        items: StudyItem[];
+        profile: LocalProfile;
+        comments: UserComment[];
+        sessions: SessionRecord[];
+        voiceRecordings: VoiceRecording[];
+    }> {
+        const [items, profile, comments, sessions, voiceRecordings] = await Promise.all([
             this.getAllItems(),
             this.getProfile(),
             this.getAllComments(),
-            this.getAllSessions()
+            this.getAllSessions(),
+            this.getAllVoiceRecordings(),
         ]);
-        return { items, profile, comments, sessions };
+        return { items, profile, comments, sessions, voiceRecordings };
     },
 
     /** Importa dados de um backup (substitui tudo localmente) */
-    async importAll(data: { items: StudyItem[]; profile: LocalProfile; comments?: UserComment[]; sessions?: SessionRecord[] }): Promise<void> {
+    async importAll(data: {
+        items: StudyItem[];
+        profile: LocalProfile;
+        comments?: UserComment[];
+        sessions?: SessionRecord[];
+        voiceRecordings?: VoiceRecording[];
+    }): Promise<void> {
         await this.clearItems();
         if (data.items.length > 0) {
             await this.bulkPutItems(data.items);
@@ -276,6 +289,13 @@ export const localDB = {
                 tx.oncomplete = () => resolve();
                 tx.onerror = () => reject(tx.error);
             });
+        }
+        // Gravações de voz: só substitui se o backup trouxe o campo (mesmo vazio)
+        if (data.voiceRecordings !== undefined) {
+            await this.clearVoiceRecordings();
+            if (data.voiceRecordings.length > 0) {
+                await this.bulkPutVoiceRecordings(data.voiceRecordings);
+            }
         }
     },
 
@@ -315,6 +335,31 @@ export const localDB = {
 
             request.onsuccess = () => resolve(request.result as string[]);
             request.onerror = () => reject(request.error);
+        });
+    },
+
+    /** Retorna todas as gravações (incluindo blobs) — usado no backup local */
+    async getAllVoiceRecordings(): Promise<VoiceRecording[]> {
+        return withStore<VoiceRecording[]>(VOICE_STORE, 'readonly', (store) => store.getAll());
+    },
+
+    /** Remove todas as gravações de voz */
+    async clearVoiceRecordings(): Promise<void> {
+        await withStore(VOICE_STORE, 'readwrite', (store) => store.clear());
+    },
+
+    /** Insere várias gravações de uma vez */
+    async bulkPutVoiceRecordings(recordings: VoiceRecording[]): Promise<void> {
+        if (recordings.length === 0) return;
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction(VOICE_STORE, 'readwrite');
+            const store = tx.objectStore(VOICE_STORE);
+            for (const rec of recordings) {
+                store.put(rec);
+            }
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => reject(tx.error);
         });
     },
 

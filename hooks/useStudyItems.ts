@@ -1,7 +1,19 @@
 import { useState, useEffect, useCallback } from 'react';
-import { localDB } from '../services/localDB';
-import { StudyItem } from '../types';
-import { compareCreatedAtDesc, normalizeCreatedAt, getTimestamp } from '../utils/dateUtils';
+import { localDB, LocalProfile } from '../services/localDB';
+import { StudyItem, SessionRecord } from '../types';
+import { compareCreatedAtDesc, normalizeCreatedAt } from '../utils/dateUtils';
+import {
+  buildBackupPayload,
+  deserializeVoiceRecordings,
+  downloadJsonFile,
+  extractItems,
+  hasBackupExtras,
+  mergeProfiles,
+  normalizeBackupGraph,
+  parseBackupPayload,
+  payloadHasContent,
+  serializeVoiceRecordings,
+} from '../services/backupService';
 
 /**
  * useStudyItems - Hook LOCAL-FIRST para gerenciar itens de estudo.
@@ -284,66 +296,52 @@ export const useStudyItems = (userId: string | null | undefined) => {
     return { success: true, movedCount: updatedItems.length };
   }, [userId, items]);
 
-  // EXPORTAR DADOS: Gera arquivo JSON para download
-  const exportData = useCallback((profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
+  // EXPORTAR TEXTO/PASTA: biblioteca completa (todos os campos do item), sem stats/perfil.
+  const exportData = useCallback((_profileData?: { savedIds: string[]; stats: any; totalScore: number }) => {
     if (!userId || items.length === 0) {
       alert('Nenhum dado para exportar!');
       return;
     }
 
-    const defaultName = `backup-memorizatudo-${new Date().toISOString().slice(0, 10)}`;
-    const fileName = prompt('Nome do arquivo de backup:', defaultName);
+    const defaultName = `textos-memorizatudo-${new Date().toISOString().slice(0, 10)}`;
+    const fileName = prompt('Nome do arquivo:', defaultName);
     if (fileName === null) return;
 
     const payload = {
-      version: '2.0.0', // Nova versão local-first
+      version: '2.0.0',
+      kind: 'library-only',
       exportedAt: new Date().toISOString(),
-      userId: userId,
+      userId,
       itemCount: items.length,
       data: items.map(item => ({
-        id: item.id,
-        chinese: item.chinese,
-        pinyin: item.pinyin,
-        translation: item.translation,
-        language: item.language,
-        tokens: item.tokens || [],
-        keywords: item.keywords || [],
-        originalSentence: item.originalSentence || null,
-        type: item.type || 'text',
-        folderPath: item.folderPath || null,
-        createdAt: item.createdAt || null,
+        ...item,
+        createdAt: normalizeCreatedAt(item.createdAt),
       })),
-      profile: profileData ? {
-        savedIds: profileData.savedIds || [],
-        stats: profileData.stats || { correct: 0, wrong: 0, history: [], wordCounts: {} },
-        totalScore: profileData.totalScore || 0
-      } : null
+      profile: null,
     };
 
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${fileName || defaultName}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    downloadJsonFile(payload, fileName || defaultName);
   }, [userId, items]);
 
-  // EXPORTAR BACKUP COMPLETO: paridade total com o backup na nuvem.
-  // Inclui itens + profile completo (favoritos, stats, cores das frases, prefs de leitura)
-  // + comentários + histórico de sessões. Gravações de voz (blobs) ficam de fora.
+  // EXPORTAR BACKUP COMPLETO: paridade com a nuvem + gravações de voz (base64).
   const exportFullBackup = useCallback(async () => {
     if (!userId) {
       alert('Faça login para exportar seus dados.');
       return;
     }
 
-    const { items: allItems, profile, comments, sessions } = await localDB.exportAll();
+    const { items: allItems, profile, comments, sessions, voiceRecordings } = await localDB.exportAll();
+    const serializedVoice = await serializeVoiceRecordings(voiceRecordings);
+    const payload = buildBackupPayload({
+      items: allItems,
+      profile,
+      comments,
+      sessions,
+      voiceRecordings: serializedVoice,
+      userId,
+    });
 
-    if (allItems.length === 0 && (profile.savedIds?.length ?? 0) === 0) {
+    if (!payloadHasContent(payload)) {
       alert('Nenhum dado para exportar!');
       return;
     }
@@ -352,131 +350,114 @@ export const useStudyItems = (userId: string | null | undefined) => {
     const fileName = prompt('Nome do arquivo de backup:', defaultName);
     if (fileName === null) return;
 
-    const payload = {
-      version: '2.2.0',
-      exportedAt: new Date().toISOString(),
-      userId,
-      itemCount: allItems.length,
-      data: allItems,   // itens completos (todos os campos do StudyItem)
-      profile,          // LocalProfile completo (savedIds, stats, colorCorrections, readingPrefs, ...)
-      comments,         // comentários do usuário
-      sessions,         // histórico de sessões (estatísticas detalhadas)
-    };
-
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${fileName || defaultName}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    downloadJsonFile(payload, fileName || defaultName);
   }, [userId]);
 
-  // IMPORTAR DADOS: Carrega arquivo JSON e insere no IndexedDB local
   const importData = useCallback(async (file: File, mode: 'merge' | 'replace'): Promise<{
     success: boolean;
     count: number;
     error?: string;
     profile?: { savedIds: string[]; stats: any; totalScore: number } | null;
+    reload?: boolean;
   }> => {
     if (!userId) return { success: false, count: 0, error: 'Usuário não autenticado' };
 
     try {
-      const text = await file.text();
-      const payload = JSON.parse(text);
+      const raw = JSON.parse(await file.text());
+      const parsed = parseBackupPayload(raw);
+      const rawItems = extractItems(raw);
+      const isFullBackup = hasBackupExtras(raw);
 
-      if (!payload.data || !Array.isArray(payload.data)) {
-        return { success: false, count: 0, error: 'Arquivo inválido: formato incorreto' };
+      if (rawItems.length === 0 && !isFullBackup) {
+        return { success: false, count: 0, error: 'Arquivo inválido: nenhum item ou backup encontrado' };
       }
 
-      const validItems = payload.data.filter((item: any) =>
-        item.chinese && item.translation
-      );
+      const normalized = normalizeBackupGraph({
+        items: rawItems,
+        profile: parsed.profile,
+        comments: parsed.comments,
+        voiceRecordings: parsed.voiceRecordings,
+      });
+      const itemsToInsert = normalized.items;
+      const comments = normalized.comments.filter(c => c && c.id);
+      const sessions: SessionRecord[] = Array.isArray(parsed.sessions)
+        ? parsed.sessions.filter((s): s is SessionRecord => !!(s && s.id))
+        : [];
+      const voiceRecordings = deserializeVoiceRecordings(normalized.voiceRecordings);
 
-      if (validItems.length === 0) {
+      if (itemsToInsert.length === 0 && !isFullBackup) {
         return { success: false, count: 0, error: 'Nenhum item válido encontrado no arquivo' };
       }
 
-      // Se modo 'replace', limpa biblioteca primeiro
-      if (mode === 'replace') {
-        await localDB.clearItems();
-      }
+      const currentProfile = await localDB.getProfile();
+      const incomingProfile: LocalProfile | null = normalized.profile;
+      const finalProfile = isFullBackup
+        ? mergeProfiles(currentProfile, incomingProfile, mode)
+        : currentProfile;
 
-      // Prepara itens para inserção local
-      const itemsToInsert: StudyItem[] = validItems.map((item: any) => ({
-        id: item.id && typeof item.id === 'string'
-          ? item.id
-          : `imported_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-        chinese: item.chinese,
-        pinyin: item.pinyin || '',
-        translation: item.translation,
-        language: item.language || 'zh',
-        tokens: item.tokens || [],
-        keywords: item.keywords || [],
-        originalSentence: item.originalSentence || null,
-        type: item.type || 'text',
-        folderPath: item.folderPath || null,
-        createdAt: item.createdAt || new Date().toISOString(),
-      }));
-
-      await localDB.bulkPutItems(itemsToInsert);
-
-      // --- Backup completo (v2.1+): restaura também comentários, sessões, cores e prefs de leitura ---
-      const richProfile = (payload.profile && typeof payload.profile === 'object') ? payload.profile : null;
-
-      // Comentários
-      if (Array.isArray(payload.comments) && payload.comments.length > 0) {
-        if (mode === 'replace') await localDB.clearComments();
-        for (const c of payload.comments) {
-          if (c && c.id) await localDB.putComment(c);
-        }
-      }
-
-      // Sessões (estatísticas detalhadas)
-      if (Array.isArray(payload.sessions) && payload.sessions.length > 0) {
-        if (mode === 'replace') await localDB.clearSessions();
-        for (const s of payload.sessions) {
-          if (s && s.id) await localDB.saveSession(s);
-        }
-      }
-
-      // Cores das frases + preferências de leitura (só presentes no backup completo)
-      if (richProfile && (richProfile.colorCorrections || richProfile.readingMode || richProfile.readingPrefs)) {
-        const current = await localDB.getProfile();
-        const mergedColors = mode === 'replace'
-          ? (richProfile.colorCorrections || {})
-          : { ...(current.colorCorrections || {}), ...(richProfile.colorCorrections || {}) };
-        await localDB.updateProfile({
-          colorCorrections: mergedColors,
-          readingMode: richProfile.readingMode ?? current.readingMode,
-          readingPrefs: richProfile.readingPrefs ?? current.readingPrefs,
+      if (mode === 'replace' && isFullBackup) {
+        await localDB.importAll({
+          items: itemsToInsert,
+          profile: finalProfile,
+          comments,
+          sessions,
+          voiceRecordings: parsed.voiceRecordings !== undefined ? voiceRecordings : undefined,
         });
+      } else {
+        if (mode === 'replace') {
+          await localDB.clearItems();
+        }
+        if (itemsToInsert.length > 0) {
+          await localDB.bulkPutItems(itemsToInsert);
+        }
+
+        if (isFullBackup) {
+          await localDB.saveProfile(finalProfile);
+
+          if (mode === 'replace') await localDB.clearComments();
+          for (const c of comments) {
+            await localDB.putComment(c);
+          }
+
+          if (mode === 'replace') await localDB.clearSessions();
+          for (const s of sessions) {
+            await localDB.saveSession(s);
+          }
+
+          if (parsed.voiceRecordings !== undefined) {
+            if (mode === 'replace') {
+              await localDB.clearVoiceRecordings();
+              await localDB.bulkPutVoiceRecordings(voiceRecordings);
+            } else {
+              const existingIds = new Set(await localDB.getAllVoiceRecordingIds());
+              const toAdd = voiceRecordings.filter(v => !existingIds.has(v.wordId));
+              await localDB.bulkPutVoiceRecordings(toAdd);
+            }
+          }
+        }
       }
 
-      // Recarrega do banco para refletir tudo
       const allItems = await localDB.getAllItems();
       allItems.sort(compareCreatedAtDesc);
       setItems(allItems);
 
-      console.log(`Importação local concluída: ${itemsToInsert.length} itens`);
+      console.log(`Importação local concluída: ${itemsToInsert.length} itens (mode=${mode}, full=${isFullBackup})`);
 
-      // Normaliza o profile retornado para o App (savedIds, stats, totalScore).
-      // O App sincroniza o React state via updateCloudFavorites/updateCloudStats.
-      const returnedProfile = richProfile
+      const returnedProfile = isFullBackup
         ? {
-          savedIds: richProfile.savedIds || [],
-          stats: richProfile.stats || null,
-          totalScore: richProfile.totalScore || 0,
+          savedIds: finalProfile.savedIds || [],
+          stats: finalProfile.stats || null,
+          totalScore: finalProfile.totalScore || 0,
         }
-        : (payload.profile || null);
+        : null;
+
+      const voiceImported = parsed.voiceRecordings !== undefined && voiceRecordings.length > 0;
 
       return {
         success: true,
         count: itemsToInsert.length,
-        profile: returnedProfile
+        profile: returnedProfile,
+        reload: mode === 'replace' || voiceImported,
       };
 
     } catch (error: any) {

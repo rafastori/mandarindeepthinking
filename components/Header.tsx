@@ -20,7 +20,7 @@ interface HeaderProps {
     onDisconnectPuter: () => void;
     // Props para Export/Import
     onExportData: () => void;
-    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
+    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null; reload?: boolean }>;
     onExportTextApp?: () => void;
     onImportTextFile?: (file: File) => Promise<{ success: boolean; count: number; error?: string }>;
     // Configurações de Voz

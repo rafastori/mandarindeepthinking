@@ -551,24 +551,22 @@ const App: React.FC = () => {
         exportFullBackup();
     };
 
-    // Wrapper para importar dados e processar profile
+    // Wrapper para importar dados e sincronizar o React state com o perfil já persistido.
     const handleImportData = async (file: File, mode: 'merge' | 'replace') => {
         const result = await importData(file, mode);
 
-        // Se importação bem sucedida e tem profile, restaura dados de perfil localmente
         if (result.success && result.profile) {
             const { savedIds: importedSavedIds, stats: importedStats, totalScore: importedTotalScore } = result.profile;
 
-            if (importedSavedIds?.length) {
-                const mergedIds = [...new Set([...cloudSavedIds, ...importedSavedIds])];
-                await updateCloudFavorites(mergedIds);
+            // importData já gravou o perfil final (merge ou replace). Aqui só atualiza o state.
+            if (mode === 'replace' || importedSavedIds) {
+                await updateCloudFavorites(importedSavedIds || []);
             }
-
             if (importedStats) {
                 await updateCloudStats(importedStats);
             }
 
-            console.log('Profile restaurado localmente:', { importedSavedIds, importedStats, importedTotalScore });
+            console.log('Profile restaurado localmente:', { importedSavedIds, importedStats, importedTotalScore, mode });
         }
 
         return result;

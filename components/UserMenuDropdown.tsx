@@ -12,7 +12,7 @@ interface UserMenuDropdownProps {
     onDisconnectPuter: () => void;
     onResetAccount: () => void;
     onExportData: () => void;
-    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null }>;
+    onImportData: (file: File, mode: 'merge' | 'replace') => Promise<{ success: boolean; count: number; error?: string; profile?: { savedIds: string[]; stats: any; totalScore: number } | null; reload?: boolean }>;
     onExportTextApp?: () => void;
     onImportTextFile?: (file: File) => Promise<{ success: boolean; count: number; error?: string }>;
     engine: RecognitionEngine;
@@ -127,7 +127,14 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                     msg += `\n\n📊 Perfil restaurado: ${extras.join(', ')}`;
                 }
             }
+            if (result.reload) {
+                msg += '\n\nRecarregando o app...';
+            }
             alert(msg);
+            if (result.reload) {
+                window.location.reload();
+                return;
+            }
         } else {
             alert(`❌ Erro: ${result.error}`);
         }
@@ -296,7 +303,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                         <Icon name="download" size={16} className="text-emerald-600 flex-shrink-0" />
                                         <div>
                                             <p className="text-sm font-medium">Exportar Dados</p>
-                                            <p className="text-xs text-slate-500">Backup completo (JSON)</p>
+                                            <p className="text-xs text-slate-500">Tudo: textos, progresso, áudios</p>
                                         </div>
                                     </button>
 
@@ -359,7 +366,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                             )}
                                             <div>
                                                 <p className="text-sm font-medium">Backup na Nuvem</p>
-                                                <p className="text-xs text-slate-500">Salvar dados online</p>
+                                                <p className="text-xs text-slate-500">Textos, progresso e comentários</p>
                                             </div>
                                         </button>
                                     )}
