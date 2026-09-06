@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { User } from 'firebase/auth';
 import Icon from './Icon';
 import { RecognitionEngine } from '../hooks/useSpeechRecognition';
+import NativeAudioLibraryModal from './NativeAudioLibraryModal';
 
 interface UserMenuDropdownProps {
     user: User;
@@ -55,6 +56,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
     const [isOpen, setIsOpen] = useState(false);
     const [openSection, setOpenSection] = useState<'audio' | 'dados' | null>(null);
     const [showImportModal, setShowImportModal] = useState(false);
+    const [showNativeAudioModal, setShowNativeAudioModal] = useState(false);
     const [importFile, setImportFile] = useState<File | null>(null);
     const [importing, setImporting] = useState(false);
     const [importingText, setImportingText] = useState(false);
@@ -214,7 +216,7 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                     </div>
                                     <div>
                                         <p className="text-sm font-semibold">Áudio</p>
-                                        <p className="text-xs text-slate-500">Puter e reconhecimento de voz</p>
+                                        <p className="text-xs text-slate-500">Puter, ChinesePod e voz</p>
                                     </div>
                                 </div>
                                 <Icon name={openSection === 'audio' ? 'chevron-up' : 'chevron-down'} size={18} className="text-slate-400" />
@@ -250,6 +252,20 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                                             </div>
                                         </button>
                                     )}
+
+                                    <button
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                            setShowNativeAudioModal(true);
+                                        }}
+                                        className={`${subItem} hover:bg-emerald-50 hover:text-emerald-700`}
+                                    >
+                                        <Icon name="music" size={16} className="text-emerald-600 flex-shrink-0" />
+                                        <div>
+                                            <p className="text-sm font-medium">Áudio nativo ChinesePod</p>
+                                            <p className="text-xs text-slate-500">MP3 local no lugar do TTS</p>
+                                        </div>
+                                    </button>
 
                                     {/* Reconhecimento de voz */}
                                     <div className="px-3 py-2">
@@ -514,6 +530,10 @@ export const UserMenuDropdown: React.FC<UserMenuDropdownProps> = ({
                         </div>
                     </div>
                 </div>
+            )}
+
+            {showNativeAudioModal && (
+                <NativeAudioLibraryModal onClose={() => setShowNativeAudioModal(false)} />
             )}
         </>
     );

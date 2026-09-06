@@ -32,7 +32,9 @@ export interface StudyItem {
     createdAt?: any;
     type?: 'text' | 'word';
     originalSentence?: string;
-    folderPath?: string; // Ex: "Aula 1" ou "Curso/Aula 1/Gramática"
+    folderPath?: string; // Ex: "2458" ou "Curso/Aula 1/Gramática"
+    // Áudio nativo ChinesePod NÃO entra aqui: fica em IndexedDB local
+    // (MemorizaTudoNativeAudioDB) para não ir no backup/Firebase.
 }
 
 export interface StatsHistory {

@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useRef, useEffect } from 'react';
+import React, { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import Icon from '../../components/Icon';
 import EmptyState from '../../components/EmptyState';
 import { StudyItem, Keyword, SupportedLanguage } from '../../types';
@@ -10,6 +10,10 @@ import VoiceMicButton from '../../components/VoiceMicButton';
 import type { useVoiceRecording } from '../../hooks/useVoiceRecording';
 import { localDB, ColorCorrectionToken } from '../../services/localDB';
 import SimpleReadingMode from './SimpleReadingMode';
+import NativeLessonPlayer from '../../components/NativeLessonPlayer';
+import NativeAudioLibraryModal from '../../components/NativeAudioLibraryModal';
+import { useNativeLessonPlayer } from '../../hooks/useNativeLessonAudio';
+import { resolveLessonIdForView } from '../../utils/chinesePodAudio';
 import { useReadingComments } from './useReadingComments';
 import CommentDialog from './CommentDialog';
 import SentenceMicroQuiz from './SentenceMicroQuiz';
@@ -115,6 +119,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     onResult
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
+    const [showNativeAudioModal, setShowNativeAudioModal] = useState(false);
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
 
     // Estados para popover de cores e correção via IA
@@ -339,6 +344,16 @@ const ReadingView: React.FC<ReadingViewProps> = ({
 
         return result;
     }, [data, activeFolderFilters]);
+
+    const nativeLessonId = useMemo(
+        () => resolveLessonIdForView(activeFolderFilters, filteredData.map(item => item.folderPath)),
+        [activeFolderFilters, filteredData]
+    );
+    const nativeAudio = useNativeLessonPlayer(nativeLessonId, { onBeforePlay: stop });
+    const speakText = useCallback(async (text: string, language: SupportedLanguage, id?: string) => {
+        nativeAudio.stop();
+        return speak(text, language, id);
+    }, [nativeAudio.stop, speak]);
 
     // Função para formatar tokens em texto legível
     const formatTokensToText = (tokens: string[]): string => {
@@ -682,7 +697,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         const savedKw = savedWordsMap.get(cleanToken.toLowerCase());
 
         if (savedKw) {
-            speak(savedKw.word, (savedKw.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+            speakText(savedKw.word, (savedKw.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
             return;
         }
 
@@ -703,7 +718,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
             // bloquear nem derrubar o salvamento — no DeepSeek isso chega a ~90s e falhava.
             const newCard = await generateWordCard(word, sentence.chinese, lang);
             onSaveGeneratedCard(newCard, sentence.chinese);
-            speak(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
+            speakText(newCard.word, lang as 'zh' | 'de' | 'pt' | 'en');
 
             if (!translation) return;
 
@@ -1072,6 +1087,25 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
+                    {nativeLessonId && !selectionMode && !reorderMode && (
+                        <NativeLessonPlayer
+                            match={nativeAudio.match}
+                            hasLibrary={(nativeAudio.summary?.fileCount || 0) > 0}
+                            canSuggestLink
+                            isPlaying={nativeAudio.isPlaying}
+                            isLooping={nativeAudio.isLooping}
+                            currentTime={nativeAudio.currentTime}
+                            duration={nativeAudio.duration}
+                            onPlay={nativeAudio.play}
+                            onPause={nativeAudio.pause}
+                            onStop={nativeAudio.stop}
+                            onReplay={nativeAudio.replay}
+                            onToggleLoop={() => nativeAudio.setLooping(!nativeAudio.isLooping)}
+                            onSeek={nativeAudio.seek}
+                            onOpenLibrary={() => setShowNativeAudioModal(true)}
+                        />
+                    )}
+
                     {/* Carga de palavras novas — protege o sensor de recompensa */}
                     {readingMode === 'study' && !selectionMode && !reorderMode && filteredData.length > 0 && (
                         <div className="flex flex-wrap items-center gap-2 mb-4 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
@@ -1216,13 +1250,19 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             colorCorrections={colorCorrections}
                             isCorrectingColors={isCorrectingColors}
                             onRequestColorCorrection={(ids) => handleCorrectColors(ids)}
-                            speak={speak}
+                            speak={speakText}
                             stopSpeak={stop}
                             playingId={playingId}
                             comments={commentsApi.comments}
                             onAddComment={commentsApi.addComment}
                             onUpdateComment={commentsApi.updateComment}
                             onDeleteComment={commentsApi.deleteComment}
+                            nativeAudio={nativeAudio.match ? {
+                                available: true,
+                                isPlaying: nativeAudio.isPlaying,
+                                onPlay: nativeAudio.play,
+                                onStop: nativeAudio.stop,
+                            } : undefined}
                         />
                     ) : null}
 
@@ -1279,7 +1319,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                                                         if (playingId === audioId) {
                                                             stop();
                                                         } else {
-                                                            speak(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
+                                                            speakText(item.chinese, (item.language || 'zh') as SupportedLanguage, audioId);
                                                         }
                                                     }}
                                                     className={`p-1.5 rounded-full transition-all ${playingId === `reading-${item.id}` ? 'text-white bg-brand-600 animate-pulse' : 'text-brand-600 bg-brand-50'}`}
@@ -1629,6 +1669,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     onUpdate={commentsApi.updateComment}
                     onDelete={commentsApi.deleteComment}
                 />
+            )}
+
+            {showNativeAudioModal && (
+                <NativeAudioLibraryModal onClose={() => setShowNativeAudioModal(false)} />
             )}
 
             {/* Container Invisível para PDF */}
