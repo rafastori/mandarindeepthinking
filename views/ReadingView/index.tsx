@@ -1727,7 +1727,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                     duration={nativeAudio.duration || lessonAlignment.alignment?.duration || 0}
                     isPlaying={nativeAudio.isPlaying}
                     playingSegmentId={nativeAudio.playingSegmentId}
-                    onPlay={() => { nativeAudio.ensureAudio().then(() => nativeAudio.play()); }}
+                    onPlay={(startAt) => { nativeAudio.ensureAudio().then(() => nativeAudio.play(startAt)); }}
                     onPause={nativeAudio.pause}
                     onStop={nativeAudio.stop}
                     onSeekTo={(seconds) => { nativeAudio.ensureAudio().then(() => nativeAudio.seekTo(seconds)); }}

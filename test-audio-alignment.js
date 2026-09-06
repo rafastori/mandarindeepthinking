@@ -158,6 +158,59 @@ assert(Math.abs(already.start - 6.2) < 1e-9, 'cues after intro stay put');
 assert(cuesLookUnshifted([{ start: 0, end: 3 }], 6), '0-based alignment looks unshifted');
 assert(!cuesLookUnshifted([{ start: 6, end: 9 }], 6), 'post-intro alignment is not unshifted');
 
+function updateCueTimes(cues, itemId, patch, duration) {
+    const exists = cues.some(c => c.itemId === itemId);
+    if (!exists) {
+        const start = patch.start ?? 0;
+        const end = patch.end ?? start + 0.18;
+        return [...cues, { itemId, start, end, source: 'manual' }];
+    }
+    return cues.map(c => c.itemId === itemId
+        ? { ...c, start: patch.start ?? c.start, end: patch.end ?? c.end, source: 'manual' }
+        : c);
+}
+
+function applyLiveStart(cues, itemId, time, duration, introSkip = 0) {
+    const start = Math.max(time, introSkip);
+    const existing = cues.find(c => c.itemId === itemId);
+    const end = existing && existing.end > start + 0.18 ? existing.end : start + 0.18;
+    return {
+        cues: updateCueTimes(cues, itemId, { start, end }, duration),
+        start,
+        clampedToIntro: time < introSkip - 0.05,
+    };
+}
+
+function applyLiveEnd(cues, itemId, nextItemId, time) {
+    const current = cues.find(c => c.itemId === itemId);
+    if (!current) return { ok: false, reason: 'no_start' };
+    if (time <= current.start + 0.04) return { ok: false, reason: 'end_before_start' };
+    const end = Math.max(time, current.start + 0.18);
+    let next = updateCueTimes(cues, itemId, { end }, 30);
+    if (nextItemId) {
+        next = updateCueTimes(next, nextItemId, { start: end, end: end + 0.18 }, 30);
+    }
+    return { ok: true, cues: next, end };
+}
+
+const fimFirst = applyLiveEnd([], '1', '2', 8);
+assert(fimFirst.ok === false && fimFirst.reason === 'no_start', 'live Fim before Início is an error');
+
+const started = applyLiveStart([], '1', 2, 30, 6);
+assert(Math.abs(started.start - 6) < 1e-9 && started.clampedToIntro, 'first Início clamps to intro skip');
+
+const tooSoon = applyLiveEnd(started.cues, '1', '2', 6.02);
+assert(tooSoon.ok === false && tooSoon.reason === 'end_before_start', 'end <= start is rejected');
+
+const ended = applyLiveEnd(started.cues, '1', '2', 9.5);
+assert(ended.ok === true, 'live Fim after Início works');
+assert(Math.abs(ended.cues.find(c => c.itemId === '1').end - 9.5) < 1e-9, 'first end is playhead');
+assert(Math.abs(ended.cues.find(c => c.itemId === '2').start - 9.5) < 1e-9, 'next start equals previous end');
+
+const secondEnd = applyLiveEnd(ended.cues, '2', undefined, 12);
+assert(secondEnd.ok === true, 'chained Fim does not need a new Início');
+assert(Math.abs(secondEnd.cues.find(c => c.itemId === '2').end - 12) < 1e-9, 'second end is playhead');
+
 if (failed) {
     console.error(failed, 'failed');
     process.exit(1);
