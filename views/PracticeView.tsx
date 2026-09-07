@@ -455,7 +455,6 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     const audioCommittedRef = useRef(false);
     const goToNextCardRef = useRef<() => void>(() => {});
     const recordAudioGradeRef = useRef<(grade: PracticeGrade) => void>(() => {});
-    const advanceTimerRef = useRef<number | null>(null);
 
     // ─── Combo & XP ──────────────────────────
     const [streak, setStreak]           = useState(0);
@@ -806,6 +805,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         const xp = correct ? practiceComboXp(streak + 1) : undefined;
         onResult(correct, currentQ.word, 'general', xp);
         recordResult(correct);
+        setShowResult(true);
     };
 
     const finishSession = () => {
@@ -825,10 +825,6 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         if (isAudioSession && showResult && !audioCommittedRef.current && audioResult) {
             recordAudioGradeRef.current(audioResult.grade);
         }
-        if (advanceTimerRef.current != null) {
-            window.clearTimeout(advanceTimerRef.current);
-            advanceTimerRef.current = null;
-        }
         goToNextCardRef.current();
     };
 
@@ -836,10 +832,6 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         if (currentIndex > 0) {
             if (isAudioSession && showResult && !audioCommittedRef.current && audioResult) {
                 recordAudioGradeRef.current(audioResult.grade);
-            }
-            if (advanceTimerRef.current != null) {
-                window.clearTimeout(advanceTimerRef.current);
-                advanceTimerRef.current = null;
             }
             stop();
             setSelectedOption(null);
@@ -906,10 +898,6 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     };
 
     const goToNextCard = () => {
-        if (advanceTimerRef.current != null) {
-            window.clearTimeout(advanceTimerRef.current);
-            advanceTimerRef.current = null;
-        }
         stop();
         setSelectedOption(null);
         setShowResult(false);
@@ -956,11 +944,6 @@ const PracticeView: React.FC<PracticeViewProps> = ({
 
     const commitAudioGrade = useCallback((grade: PracticeGrade) => {
         recordAudioGradeRef.current(grade);
-        if (advanceTimerRef.current != null) window.clearTimeout(advanceTimerRef.current);
-        advanceTimerRef.current = window.setTimeout(() => {
-            advanceTimerRef.current = null;
-            goToNextCardRef.current();
-        }, 450);
     }, []);
 
     const handleAudioSubmit = async () => {
@@ -977,7 +960,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             });
             setAudioResult(scored);
             setShowResult(true);
-            // XP/stats só no override Anki (toque ou auto-avanço com a sugestão).
+            // XP/stats só no override Anki (toque ou Continuar com a sugestão).
         } catch (err) {
             console.error('[Practice audio score]', err);
         } finally {
@@ -1090,7 +1073,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     const isGerman = currentQ?.language === 'de';
     const progressPercent = activeQuestions.length ? (currentIndex / activeQuestions.length) * 100 : 0;
     const comboMultiplier = getComboMultiplier(streak);
-    const canAdvance = showResult || (!isAudioSession && practiceMode === 'swipe');
+    const canAdvance = showResult;
 
     const sentenceParts = !isAudioSession && currentQ?.sentence?.includes(currentQ.word)
         ? currentQ.sentence.split(currentQ.word)
@@ -1448,7 +1431,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                     }`}
                     style={canAdvance ? { boxShadow: '0 4px 14px rgba(5,150,105,0.25)' } : {}}
                 >
-                    {currentIndex < activeQuestions.length - 1 ? 'Próximo' : 'Concluir'}
+                    {currentIndex < activeQuestions.length - 1 ? 'Continuar' : 'Concluir'}
                     <ArrowRight size={15} />
                 </motion.button>
             </div>

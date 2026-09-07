@@ -134,12 +134,14 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
 
     const handleSelect = (tokenObj: { id: number, text: string }) => {
         if (status !== 'playing' || isLabPunctToken(tokenObj.text)) return;
+        setMissHint(false);
         setSelectedTokens([...selectedTokens, tokenObj]);
         setShuffledTokens(shuffledTokens.filter(t => t.id !== tokenObj.id));
     };
 
     const handleUndo = (tokenObj: { id: number, text: string }) => {
         if (status !== 'playing') return;
+        setMissHint(false);
         setSelectedTokens(selectedTokens.filter(t => t.id !== tokenObj.id));
         setShuffledTokens([...shuffledTokens, tokenObj]);
     };
@@ -168,20 +170,13 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             setLabStreak(nextStreak);
             setLabCorrect(n => n + 1);
             setLabXP(x => x + xp);
-            setTimeout(() => {
-                if (currentIdx < sentences.length - 1) {
-                    setCurrentIdx(prev => prev + 1);
-                } else {
-                    setLabFinished(true);
-                }
-            }, 2000);
+            // Sem auto-avanço: o áudio da frase pode tocar até o usuário tocar Continuar.
             return;
         }
 
         // Errou a ordem das palavras: sem XP, sem travar, sem gravar erro global.
         setLabStreak(0);
         setMissHint(true);
-        window.setTimeout(() => setMissHint(false), 1600);
     };
 
     const skipSentence = () => {
@@ -190,6 +185,16 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         setLabStreak(0);
         setMissHint(false);
         setLabWrong(n => n + 1);
+        if (currentIdx < sentences.length - 1) {
+            setCurrentIdx(prev => prev + 1);
+        } else {
+            setLabFinished(true);
+        }
+    };
+
+    const continueAfterCorrect = () => {
+        if (status !== 'correct') return;
+        stop();
         if (currentIdx < sentences.length - 1) {
             setCurrentIdx(prev => prev + 1);
         } else {
@@ -321,7 +326,12 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                         Quase! Sem pontos desta vez — ajuste a ordem das palavras. Acentos e pontuação não importam.
                     </p>
                 )}
-                {!(missHint && status === 'playing') && (
+                {status === 'correct' && (
+                    <p className="text-center text-xs font-bold text-brand-700 mb-4">
+                        Muito bem! Ouça à vontade — toque Continuar quando quiser.
+                    </p>
+                )}
+                {!(missHint && status === 'playing') && status !== 'correct' && (
                     <div className="mb-4" />
                 )}
 
@@ -367,18 +377,21 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                 <div className="flex gap-3">
                     <button
                         onClick={initGame}
-                        className="p-4 text-slate-400 hover:text-slate-600 rounded-xl bg-slate-50 active:bg-slate-200 transition-colors"
+                        disabled={status === 'correct'}
+                        className="p-4 text-slate-400 hover:text-slate-600 rounded-xl bg-slate-50 active:bg-slate-200 transition-colors disabled:opacity-30"
                         title="Embaralhar de novo"
                     >
                         <Icon name="rotate-ccw" size={24} />
                     </button>
 
                     <button
-                        onClick={checkAnswer}
-                        disabled={contentLeft > 0 || status === 'correct'}
+                        onClick={status === 'correct' ? continueAfterCorrect : checkAnswer}
+                        disabled={status === 'playing' && contentLeft > 0}
                         className="flex-1 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 disabled:opacity-50 disabled:shadow-none transition-all py-4"
                     >
-                        {status === 'correct' ? 'Muito Bem!' : 'Verificar'}
+                        {status === 'correct'
+                            ? (currentIdx < sentences.length - 1 ? 'Continuar' : 'Concluir')
+                            : 'Verificar'}
                     </button>
                 </div>
                 {status === 'playing' && (

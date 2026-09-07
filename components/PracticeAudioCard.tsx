@@ -46,8 +46,6 @@ const GRADE_UI = {
     wrong: { label: 'Errado', bar: 'bg-red-400', chip: 'bg-red-50 text-red-700 border-red-200' },
 } as const;
 
-const AUTO_COMMIT_MS = 2800;
-
 const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
     question, index, mode, playingId, speak, stop, hasNativeAlignment,
     enableAiHelp, showResult, result, scoring, userInput, onUserInput, onSubmit,
@@ -81,22 +79,6 @@ const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
 
     const displayGrade = picked || result?.grade || 'wrong';
     const gradeUi = result ? GRADE_UI[displayGrade] : null;
-    const [secondsLeft, setSecondsLeft] = useState(Math.ceil(AUTO_COMMIT_MS / 1000));
-
-    useEffect(() => {
-        if (!showResult || !result || ratingCommitted) return;
-        setSecondsLeft(Math.ceil(AUTO_COMMIT_MS / 1000));
-        const started = Date.now();
-        const tick = window.setInterval(() => {
-            const left = Math.max(0, AUTO_COMMIT_MS - (Date.now() - started));
-            setSecondsLeft(Math.ceil(left / 1000));
-            if (left <= 0) {
-                window.clearInterval(tick);
-                onCommitRating(result.grade);
-            }
-        }, 200);
-        return () => window.clearInterval(tick);
-    }, [showResult, result, ratingCommitted, onCommitRating]);
 
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 mb-3 flex-1 flex flex-col">
@@ -260,7 +242,12 @@ const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
                         </div>
                         {!ratingCommitted && (
                             <p className="text-[10px] text-center text-slate-400 mt-1.5">
-                                Continua em {secondsLeft}s com a sugestão · toque para mudar
+                                Sugestão em destaque · toque para mudar · Continuar quando quiser
+                            </p>
+                        )}
+                        {ratingCommitted && (
+                            <p className="text-[10px] text-center text-slate-400 mt-1.5">
+                                Ouça de novo se quiser · toque Continuar abaixo para avançar
                             </p>
                         )}
                     </div>
