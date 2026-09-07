@@ -233,14 +233,15 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
     }, [alignment, save]);
 
     const markTimes = useCallback(async (itemId: string, patch: { start?: number; end?: number }) => {
-        if (!alignment) return;
+        const current = alignmentRef.current;
+        if (!current) return;
         await save({
-            ...alignment,
+            ...current,
             method: 'manual',
-            cues: updateCueTimes(alignment.cues, itemId, patch, alignment.duration),
+            cues: updateCueTimes(current.cues, itemId, patch, current.duration),
             updatedAt: new Date().toISOString(),
         });
-    }, [alignment, save]);
+    }, [save]);
 
     const shiftAll = useCallback(async (deltaSeconds: number) => {
         if (!alignment) return;

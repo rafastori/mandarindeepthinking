@@ -11,6 +11,7 @@ import {
 } from '../utils/audioAlignment';
 import { formatClock } from '../utils/chinesePodAudio';
 import { nativeAudioLibrary } from '../services/nativeAudioLibrary';
+import PhraseTrimEditor from './PhraseTrimEditor';
 
 interface Props {
     lessonId: string;
@@ -94,6 +95,12 @@ const AlignmentEditorModal: React.FC<Props> = ({
         if (!selectedCue) return;
         const times = effectiveCueTimes(selectedCue, introSkip, duration || align.alignment?.duration);
         if (times) onPlaySegment(times.start, times.end, selectedCue.itemId);
+    };
+
+    const applyCuePatch = async (patch: { start?: number; end?: number }) => {
+        if (!selectedId) return;
+        await align.ensureManualAlignment(audioFileId, duration || align.alignment?.duration || 0, introSkip);
+        await align.markTimes(selectedId, patch);
     };
 
     const showLiveHint = useCallback((type: 'error' | 'ok' | 'info', text: string) => {
@@ -439,6 +446,16 @@ const AlignmentEditorModal: React.FC<Props> = ({
                             </p>
                         )}
 
+                        <PhraseTrimEditor
+                            start={selectedCue?.start}
+                            end={selectedCue?.end}
+                            currentTime={currentTime}
+                            duration={duration || align.alignment?.duration || 0}
+                            disabled={!selectedId}
+                            onSeekTo={onSeekTo}
+                            onChangeRange={applyCuePatch}
+                        />
+
                         <div className="flex flex-wrap gap-1.5">
                             <button
                                 type="button"
@@ -475,12 +492,6 @@ const AlignmentEditorModal: React.FC<Props> = ({
                             <button type="button" onClick={() => goNeighbor(-1)} className="px-2 py-1.5 text-[11px] text-slate-600">←</button>
                             <button type="button" onClick={() => goNeighbor(1)} className="px-2 py-1.5 text-[11px] text-slate-600">→</button>
                         </div>
-
-                        {selectedCue && (
-                            <p className="text-[11px] text-slate-500 tabular-nums">
-                                Trecho: {formatClockPrecise(selectedCue.start)} → {formatClockPrecise(selectedCue.end)}
-                            </p>
-                        )}
                     </div>
 
                     <ul className="max-h-56 overflow-y-auto divide-y divide-slate-100 rounded-xl border border-slate-100">

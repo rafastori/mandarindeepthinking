@@ -211,6 +211,35 @@ const secondEnd = applyLiveEnd(ended.cues, '2', undefined, 12);
 assert(secondEnd.ok === true, 'chained Fim does not need a new Início');
 assert(Math.abs(secondEnd.cues.find(c => c.itemId === '2').end - 12) < 1e-9, 'second end is playhead');
 
+function formatClockPrecise(seconds) {
+    if (!Number.isFinite(seconds) || seconds < 0) return '0:00.0';
+    const m = Math.floor(seconds / 60);
+    const s = seconds - m * 60;
+    const whole = Math.floor(s);
+    const tenth = Math.floor((s - whole) * 10);
+    return `${m}:${String(whole).padStart(2, '0')}.${tenth}`;
+}
+
+function parseClockPrecise(input) {
+    const raw = String(input || '').trim().replace(',', '.');
+    if (!raw) return null;
+    if (/^\d+(\.\d+)?$/.test(raw)) {
+        const n = Number(raw);
+        return Number.isFinite(n) ? n : null;
+    }
+    const match = raw.match(/^(\d+):([0-5]?\d)(?:\.(\d{1,3}))?$/);
+    if (!match) return null;
+    return Number(match[1]) * 60 + Number(match[2]) + (match[3] ? Number(`0.${match[3]}`) : 0);
+}
+
+assert(parseClockPrecise('16.6') === 16.6, 'bare seconds');
+assert(parseClockPrecise('0:16.6') === 16.6, 'm:ss.t');
+assert(Math.abs(parseClockPrecise('1:02.3') - 62.3) < 1e-9, 'minute + seconds');
+assert(parseClockPrecise('0:17,7') === 17.7, 'comma decimal');
+assert(parseClockPrecise('1:99') == null, 'invalid seconds');
+assert(parseClockPrecise('abc') == null, 'garbage');
+assert(formatClockPrecise(16.6) === '0:16.6', 'format tenth');
+
 if (failed) {
     console.error(failed, 'failed');
     process.exit(1);
