@@ -770,6 +770,13 @@ const App: React.FC = () => {
                         isColorHighlightEnabled={isColorHighlightEnabled}
                         setIsColorHighlightEnabled={setIsColorHighlightEnabled}
                         splitAudioCue={splitAudioCue}
+                        onAttachFolderAudio={async (file) => {
+                            const path = activeFolderFilters.length === 1 ? activeFolderFilters[0] : null;
+                            if (!path || path === '__uncategorized__') {
+                                throw new Error('Selecione uma pasta para ligar o áudio.');
+                            }
+                            await splitImport.attachAudioToFolder(path, file);
+                        }}
                     />
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;
@@ -954,6 +961,13 @@ const App: React.FC = () => {
                 onDeleteFolder={handleDeleteFolder}
                 pendingFolders={pendingSplitFolders}
                 generatingPath={generatingSplitPath}
+                onAttachAudio={async (path, file) => {
+                    try {
+                        await splitImport.attachAudioToFolder(path, file);
+                    } catch (error: any) {
+                        alert(error?.message || 'Falha ao adicionar o áudio.');
+                    }
+                }}
                 onGeneratePending={async (path) => {
                     try {
                         const result = await splitImport.generateChunkByPath(path, splitSaveOptions);

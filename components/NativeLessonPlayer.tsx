@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Icon from './Icon';
 import { formatClock, SUFFIX_LABELS } from '../utils/chinesePodAudio';
 import { NativeLessonMatch } from '../hooks/useNativeLessonAudio';
@@ -22,7 +22,12 @@ interface Props {
     canSuggestLink?: boolean;
     clipStart?: number;
     clipEnd?: number;
+    onAttachAudio?: (file: File) => void;
+    attachingAudio?: boolean;
+    folderLabel?: string;
 }
+
+const AUDIO_ACCEPT = 'audio/*,.mp3,.m4a,.wav,.aac';
 
 const NativeLessonPlayer: React.FC<Props> = ({
     match,
@@ -43,26 +48,78 @@ const NativeLessonPlayer: React.FC<Props> = ({
     canSuggestLink = false,
     clipStart,
     clipEnd,
+    onAttachAudio,
+    attachingAudio = false,
+    folderLabel,
 }) => {
-    if (!match && !hasLibrary && canSuggestLink) {
-        return (
-            <div className="mb-4 flex items-center gap-2 p-2.5 rounded-xl border border-dashed border-amber-300 bg-amber-50 text-amber-800">
-                <Icon name="music" size={16} className="flex-shrink-0" />
-                <p className="text-xs flex-1">
-                    Esta pasta parece uma aula ChinesePod. Vincule os MP3 locais para ouvir o áudio nativo em vez do TTS.
-                </p>
-                <button
-                    type="button"
-                    onClick={onOpenLibrary}
-                    className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-600 text-white hover:bg-amber-700"
-                >
-                    Vincular
-                </button>
-            </div>
-        );
-    }
+    const fileRef = useRef<HTMLInputElement>(null);
+
+    const pickFile = () => fileRef.current?.click();
+    const handleFile = (list: FileList | null) => {
+        const file = list?.[0];
+        if (file) onAttachAudio?.(file);
+        if (fileRef.current) fileRef.current.value = '';
+    };
+
+    const fileInput = onAttachAudio ? (
+        <input
+            ref={fileRef}
+            type="file"
+            accept={AUDIO_ACCEPT}
+            className="hidden"
+            onChange={(e) => handleFile(e.target.files)}
+        />
+    ) : null;
 
     if (!match) {
+        if (onAttachAudio) {
+            return (
+                <div className="mb-4 flex items-center gap-2 p-2.5 rounded-xl border border-dashed border-emerald-300 bg-emerald-50 text-emerald-900">
+                    {fileInput}
+                    <Icon name="music" size={16} className="flex-shrink-0 text-emerald-700" />
+                    <p className="text-xs flex-1">
+                        {folderLabel ? <span className="font-semibold">{folderLabel}</span> : 'Esta pasta'}
+                        {' '}não casa com ChinesePod. Escolha o MP3/WAV na mão.
+                    </p>
+                    <button
+                        type="button"
+                        onClick={pickFile}
+                        disabled={attachingAudio}
+                        className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 disabled:opacity-50"
+                    >
+                        {attachingAudio ? 'Anexando…' : 'Escolher áudio'}
+                    </button>
+                    {canSuggestLink && (
+                        <button
+                            type="button"
+                            onClick={onOpenLibrary}
+                            className="text-[11px] font-semibold text-emerald-800 hover:underline flex-shrink-0"
+                        >
+                            Biblioteca
+                        </button>
+                    )}
+                </div>
+            );
+        }
+
+        if (!hasLibrary && canSuggestLink) {
+            return (
+                <div className="mb-4 flex items-center gap-2 p-2.5 rounded-xl border border-dashed border-amber-300 bg-amber-50 text-amber-800">
+                    <Icon name="music" size={16} className="flex-shrink-0" />
+                    <p className="text-xs flex-1">
+                        Esta pasta parece uma aula ChinesePod. Vincule os MP3 locais para ouvir o áudio nativo em vez do TTS.
+                    </p>
+                    <button
+                        type="button"
+                        onClick={onOpenLibrary}
+                        className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-600 text-white hover:bg-amber-700"
+                    >
+                        Vincular
+                    </button>
+                </div>
+            );
+        }
+
         if (!hasLibrary) return null;
         return (
             <div className="mb-4 flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-600">
@@ -94,6 +151,7 @@ const NativeLessonPlayer: React.FC<Props> = ({
 
     return (
         <div className="mb-4 rounded-xl border border-emerald-200 bg-emerald-50/80 p-2.5">
+            {fileInput}
             <div className="flex items-center gap-2 mb-2">
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wide">
                     <Icon name="music" size={10} />
@@ -112,12 +170,22 @@ const NativeLessonPlayer: React.FC<Props> = ({
                         {alignmentCount > 0 ? `Alinhar (${alignmentCount})` : 'Alinhar frases'}
                     </button>
                 )}
+                {onAttachAudio && (
+                    <button
+                        type="button"
+                        onClick={pickFile}
+                        disabled={attachingAudio}
+                        className="text-[11px] font-semibold text-emerald-800 hover:underline flex-shrink-0 disabled:opacity-50"
+                    >
+                        {attachingAudio ? 'Anexando…' : 'Trocar arquivo'}
+                    </button>
+                )}
                 <button
                     type="button"
                     onClick={onOpenLibrary}
                     className="text-[11px] font-semibold text-emerald-800 hover:underline flex-shrink-0"
                 >
-                    Trocar
+                    Biblioteca
                 </button>
             </div>
 

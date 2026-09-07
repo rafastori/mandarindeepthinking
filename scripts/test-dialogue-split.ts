@@ -11,6 +11,7 @@ import {
     folderPrefix,
     isLargeImportText,
     makeSubfolderName,
+    manualAudioLessonCandidates,
     packTurns,
 } from '../utils/dialogueSplit';
 
@@ -60,6 +61,8 @@ function run() {
     assert('NLM01', makeSubfolderName('NLM', 0, 20) === 'NLM01');
     assert('NLM20', makeSubfolderName('NLM', 19, 20) === 'NLM20');
     assert('3 dígitos se >= 100', makeSubfolderName('NLM', 0, 100) === 'NLM001');
+    assert('candidatos NLM/NLM01', JSON.stringify(manualAudioLessonCandidates('NLM/NLM01')) === JSON.stringify(['NLM01', 'NLM']));
+    assert('candidato pasta simples', JSON.stringify(manualAudioLessonCandidates('NLM')) === JSON.stringify(['NLM']));
 
     console.log('buildSplitPreview');
     const preview = buildSplitPreview(long, 'NLM', 12);

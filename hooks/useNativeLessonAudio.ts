@@ -158,7 +158,7 @@ export function useNativeAudioLibrary() {
 }
 
 export function useNativeLessonPlayer(
-    lessonId: string | null,
+    lessonId: string | string[] | null,
     options?: { onBeforePlay?: () => void }
 ) {
     const library = useNativeAudioLibrary();
@@ -172,15 +172,23 @@ export function useNativeLessonPlayer(
     const playbackStartRef = useRef(0);
     const [playingSegmentId, setPlayingSegmentId] = useState<string | null>(null);
 
+    const lessonIds = useMemo(
+        () => (Array.isArray(lessonId) ? lessonId : [lessonId]).filter((id): id is string => !!id),
+        [lessonId]
+    );
+
     const match = useMemo<NativeLessonMatch | null>(() => {
-        if (!lessonId || !library.summary) return null;
-        const file = pickPreferredRecord(
-            library.summary.files,
-            lessonId,
-            library.summary.preferredSuffix
-        );
-        return file ? { lessonId, file } : null;
-    }, [lessonId, library.summary]);
+        if (!library.summary || lessonIds.length === 0) return null;
+        for (const id of lessonIds) {
+            const file = pickPreferredRecord(
+                library.summary.files,
+                id,
+                library.summary.preferredSuffix
+            );
+            if (file) return { lessonId: id, file };
+        }
+        return null;
+    }, [lessonIds, library.summary]);
 
     const teardown = useCallback(() => {
         if (audioRef.current) {

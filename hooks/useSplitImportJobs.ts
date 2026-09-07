@@ -210,6 +210,41 @@ export function useSplitImportJobs() {
         await refresh();
     }, [refresh]);
 
+    /** Liga um MP3/WAV escolhido à pasta. Se houver split, o arquivo é o diálogo inteiro e cada subpasta ganha o recorte. */
+    const attachAudioToFolder = useCallback(async (folderPath: string, file: File) => {
+        const path = folderPath.trim().replace(/\/+$/, '');
+        if (!path || path === '__uncategorized__') {
+            throw new Error('Selecione uma pasta para ligar o áudio.');
+        }
+
+        const list = await localDB.getSplitImportJobs();
+        const job = list.find(j =>
+            j.parentFolder === path || j.chunks.some(c => c.folderPath === path)
+        );
+
+        if (job) {
+            const audioLessonId = folderPrefix(job.parentFolder);
+            const audioDuration = await getAudioDuration(file);
+            await nativeAudioLibrary.putGenericFile(audioLessonId, file, file.name);
+            const ranged = allocateAudioRanges(
+                job.chunks.map(chunk => ({ ...chunk, charCount: (chunk.text || '').length })),
+                audioDuration
+            );
+            await localDB.putSplitImportJob({
+                ...job,
+                audioLessonId,
+                audioDuration,
+                chunks: ranged.map(({ charCount: _ignored, ...chunk }) => chunk),
+            });
+            await refresh();
+            return { audioLessonId, shared: true as const };
+        }
+
+        const audioLessonId = folderPrefix(path);
+        await nativeAudioLibrary.putGenericFile(audioLessonId, file, file.name);
+        return { audioLessonId, shared: false as const };
+    }, [refresh]);
+
     const folderCues = useMemo<SplitFolderCue[]>(() => {
         const cues: SplitFolderCue[] = [];
         for (const job of jobs) {
@@ -249,6 +284,7 @@ export function useSplitImportJobs() {
         generateAllRemaining,
         stopGenerateAll,
         dismissJob,
+        attachAudioToFolder,
         getFolderAudioCue,
         refresh,
     };

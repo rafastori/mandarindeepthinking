@@ -1,12 +1,14 @@
 import React, { useMemo, useRef, useState } from 'react';
 import Icon from './Icon';
 import { processTextWithGemini, generateRawText } from '../services/gemini';
+import { nativeAudioLibrary } from '../services/nativeAudioLibrary';
 import { StudyItem, SupportedLanguage, STUDY_LANGUAGES } from '../types';
 import { extractFolderPaths } from '../services/folderService';
 import {
     buildSplitPreview,
     DEFAULT_TURNS_PER_FOLDER,
     estimateDurationMs,
+    folderPrefix,
     formatMinutes,
     isLargeImportText,
 } from '../utils/dialogueSplit';
@@ -136,6 +138,13 @@ const ImportModal: React.FC<ImportModalProps> = ({
             }
 
             const results = await processTextWithGemini(text, mode, language);
+            if (audioFile) {
+                await nativeAudioLibrary.putGenericFile(
+                    folderPrefix(folderPath.trim()),
+                    audioFile,
+                    audioFile.name
+                );
+            }
             await onImport(results, folderPath.trim());
             onClose();
         } catch (error) {
@@ -347,28 +356,42 @@ const ImportModal: React.FC<ImportModalProps> = ({
                                     </button>
                                 </div>
                             </div>
-                            <div>
-                                <input
-                                    ref={audioFileRef}
-                                    type="file"
-                                    accept="audio/*,.mp3,.m4a,.wav,.aac"
-                                    className="hidden"
-                                    onChange={(e) => {
-                                        setAudioFile(e.target.files?.[0] || null);
-                                        e.target.value = '';
-                                    }}
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => audioFileRef.current?.click()}
-                                    className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg border border-dashed border-slate-300 text-slate-600 hover:border-brand-400 text-xs font-medium"
-                                >
-                                    <Icon name="music" size={14} />
-                                    {audioFile ? audioFile.name : 'Áudio original (opcional) — será cortado por pasta'}
-                                </button>
-                            </div>
                         </div>
                     )}
+
+                    <div className="mt-3">
+                        <input
+                            ref={audioFileRef}
+                            type="file"
+                            accept="audio/*,.mp3,.m4a,.wav,.aac"
+                            className="hidden"
+                            onChange={(e) => {
+                                setAudioFile(e.target.files?.[0] || null);
+                                e.target.value = '';
+                            }}
+                        />
+                        <button
+                            type="button"
+                            onClick={() => audioFileRef.current?.click()}
+                            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl border-2 border-dashed border-slate-200 text-slate-600 hover:border-emerald-400 hover:bg-emerald-50 text-sm font-medium"
+                        >
+                            <Icon name="music" size={16} />
+                            {audioFile
+                                ? audioFile.name
+                                : (splitEnabled
+                                    ? 'Escolher áudio (opcional) — cortado por subpasta'
+                                    : 'Escolher áudio desta pasta (opcional)')}
+                        </button>
+                        {audioFile && (
+                            <button
+                                type="button"
+                                onClick={() => setAudioFile(null)}
+                                className="mt-1 text-[11px] text-slate-400 hover:text-slate-600"
+                            >
+                                Remover áudio
+                            </button>
+                        )}
+                    </div>
 
                     <div className="mt-3">
                         <input

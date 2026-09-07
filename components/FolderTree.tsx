@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Icon from './Icon';
 import { StudyItem } from '../types';
 import { buildFolderTree, FolderNode, countItemsInFolder, injectPendingFolders } from '../services/folderService';
@@ -14,6 +14,7 @@ interface FolderTreeProps {
     pendingFolders?: Array<{ path: string; status: FolderNode['pendingStatus'] }>;
     onGeneratePending?: (path: string) => void;
     generatingPath?: string | null;
+    onAttachAudio?: (path: string, file: File) => void;
     isOpen: boolean;
     onClose: () => void;
 }
@@ -29,6 +30,7 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     pendingFolders = [],
     onGeneratePending,
     generatingPath,
+    onAttachAudio,
     isOpen,
     onClose
 }) => {
@@ -37,6 +39,8 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     const [editValue, setEditValue] = useState('');
     // Qual pasta está com os botões de ação a mostra
     const [activeActionPath, setActiveActionPath] = useState<string | null>(null);
+    const audioInputRef = useRef<HTMLInputElement>(null);
+    const audioTargetRef = useRef<string | null>(null);
 
     // Conta itens sem pasta
     const uncategorizedCount = useMemo(() => {
@@ -126,6 +130,12 @@ const FolderTree: React.FC<FolderTreeProps> = ({
 
     const clearSelection = () => {
         onSelect([]);
+    };
+
+    const pickFolderAudio = (path: string, e: React.MouseEvent) => {
+        e.stopPropagation();
+        audioTargetRef.current = path;
+        audioInputRef.current?.click();
     };
 
     const startRename = (path: string, e: React.MouseEvent) => {
@@ -256,6 +266,15 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                                     <Icon name="plus" size={18} />
                                 </button>
                             )}
+                            {onAttachAudio && (
+                                <button
+                                    onClick={(e) => pickFolderAudio(node.path, e)}
+                                    className="p-2 bg-emerald-50 hover:bg-emerald-100 rounded-lg text-emerald-600 transition-colors"
+                                    title="Escolher áudio desta pasta"
+                                >
+                                    <Icon name="music" size={18} />
+                                </button>
+                            )}
                             {onRenameFolder && (
                                 <button
                                     onClick={(e) => startRename(node.path, e)}
@@ -333,6 +352,21 @@ const FolderTree: React.FC<FolderTreeProps> = ({
 
     return (
         <div className="fixed inset-0 z-[100] flex flex-col bg-slate-100/95 backdrop-blur-sm animate-in fade-in zoom-in-95 duration-200" onClick={() => setActiveActionPath(null)}>
+            {onAttachAudio && (
+                <input
+                    ref={audioInputRef}
+                    type="file"
+                    accept="audio/*,.mp3,.m4a,.wav,.aac"
+                    className="hidden"
+                    onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        const path = audioTargetRef.current;
+                        if (file && path) onAttachAudio(path, file);
+                        audioTargetRef.current = null;
+                        e.target.value = '';
+                    }}
+                />
+            )}
             {/* Header / Top Bar */}
             <div className="flex items-center justify-between p-4 bg-white border-b border-slate-200 shadow-sm shrink-0" onClick={e => e.stopPropagation()}>
                 <div className="flex items-center gap-3">

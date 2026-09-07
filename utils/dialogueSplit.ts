@@ -74,6 +74,20 @@ export function folderPrefix(parentPath: string): string {
     return cleaned || 'Aula';
 }
 
+/** IDs de áudio manual: a própria pasta, depois a pasta-mãe (ex.: NLM01 e NLM). */
+export function manualAudioLessonCandidates(folderPath?: string | null): string[] {
+    const path = String(folderPath || '').trim().replace(/\/+$/, '');
+    if (!path || path === '__uncategorized__') return [];
+    const last = folderPrefix(path);
+    const parts = path.split('/').filter(Boolean);
+    const ids = [last];
+    if (parts.length > 1) {
+        const parent = folderPrefix(parts.slice(0, -1).join('/'));
+        if (parent && parent !== last) ids.push(parent);
+    }
+    return ids;
+}
+
 export function makeSubfolderName(parentPath: string, index: number, total: number): string {
     const width = Math.max(2, String(Math.max(total, 1)).length);
     return `${folderPrefix(parentPath)}${String(index + 1).padStart(width, '0')}`;

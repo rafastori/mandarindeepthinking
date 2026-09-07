@@ -16,6 +16,7 @@ import AlignmentEditorModal from '../../components/AlignmentEditorModal';
 import { useNativeLessonPlayer } from '../../hooks/useNativeLessonAudio';
 import { useLessonAlignment } from '../../hooks/useLessonAlignment';
 import { resolveLessonIdForView } from '../../utils/chinesePodAudio';
+import { manualAudioLessonCandidates } from '../../utils/dialogueSplit';
 import {
     cuesLookUnshifted,
     effectiveCueTimes,
@@ -103,6 +104,7 @@ interface ReadingViewProps {
     setIsColorHighlightEnabled: (enabled: boolean) => void;
     onResult?: (isCorrect: boolean, word: string) => void;
     splitAudioCue?: { audioLessonId: string; start: number; end: number } | null;
+    onAttachFolderAudio?: (file: File) => Promise<void>;
 }
 
 const ReadingView: React.FC<ReadingViewProps> = ({
@@ -126,10 +128,12 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     setIsColorHighlightEnabled,
     onResult,
     splitAudioCue = null,
+    onAttachFolderAudio,
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [showNativeAudioModal, setShowNativeAudioModal] = useState(false);
     const [showAlignmentModal, setShowAlignmentModal] = useState(false);
+    const [attachingAudio, setAttachingAudio] = useState(false);
     const [loadingWord, setLoadingWord] = useState<string | null>(null);
 
     // Estados para popover de cores e correção via IA
@@ -355,13 +359,26 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         return result;
     }, [data, activeFolderFilters]);
 
+    const selectedStudyFolder = useMemo(() => {
+        if (activeFolderFilters.length !== 1) return null;
+        const path = activeFolderFilters[0];
+        return path && path !== '__uncategorized__' ? path : null;
+    }, [activeFolderFilters]);
+
     const nativeLessonId = useMemo(
         () => resolveLessonIdForView(activeFolderFilters, filteredData.map(item => item.folderPath)),
         [activeFolderFilters, filteredData]
     );
-    const playerLessonId = splitAudioCue?.audioLessonId || nativeLessonId;
-    const nativeAudio = useNativeLessonPlayer(playerLessonId, { onBeforePlay: stop });
-    const lessonAlignment = useLessonAlignment(playerLessonId, filteredData);
+    const audioLessonCandidates = useMemo(() => {
+        const ids: string[] = [];
+        if (splitAudioCue?.audioLessonId) ids.push(splitAudioCue.audioLessonId);
+        if (nativeLessonId) ids.push(nativeLessonId);
+        if (selectedStudyFolder) ids.push(...manualAudioLessonCandidates(selectedStudyFolder));
+        return [...new Set(ids)];
+    }, [splitAudioCue?.audioLessonId, nativeLessonId, selectedStudyFolder]);
+    const nativeAudio = useNativeLessonPlayer(audioLessonCandidates, { onBeforePlay: stop });
+    const alignedLessonId = nativeAudio.match?.lessonId || audioLessonCandidates[0] || null;
+    const lessonAlignment = useLessonAlignment(alignedLessonId, filteredData);
     const cueForId = useCallback((id?: string) => {
         if (!id || !lessonAlignment.alignment) return null;
         const key = id.startsWith('reading-') ? id.slice('reading-'.length) : id;
@@ -393,6 +410,18 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         nativeAudio.stop();
         stop();
     }, [nativeAudio, stop]);
+
+    const handleAttachFolderAudio = async (file: File) => {
+        if (!onAttachFolderAudio) return;
+        setAttachingAudio(true);
+        try {
+            await onAttachFolderAudio(file);
+        } catch (error: any) {
+            alert(error?.message || 'Falha ao adicionar o áudio.');
+        } finally {
+            setAttachingAudio(false);
+        }
+    };
 
     // Função para formatar tokens em texto legível
     const formatTokensToText = (tokens: string[]): string => {
@@ -1126,13 +1155,16 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
-                    {playerLessonId && !selectionMode && !reorderMode && (
+                    {(selectedStudyFolder || nativeLessonId) && !selectionMode && !reorderMode && (
                         <NativeLessonPlayer
                             match={nativeAudio.match}
                             hasLibrary={(nativeAudio.summary?.fileCount || 0) > 0}
                             canSuggestLink={!!nativeLessonId}
+                            folderLabel={selectedStudyFolder || undefined}
                             clipStart={splitAudioCue?.start}
                             clipEnd={splitAudioCue?.end}
+                            attachingAudio={attachingAudio}
+                            onAttachAudio={onAttachFolderAudio ? handleAttachFolderAudio : undefined}
                             isPlaying={nativeAudio.isPlaying}
                             isLooping={nativeAudio.isLooping}
                             currentTime={nativeAudio.currentTime}
@@ -1745,9 +1777,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 <NativeAudioLibraryModal onClose={() => setShowNativeAudioModal(false)} />
             )}
 
-            {showAlignmentModal && playerLessonId && nativeAudio.match && (
+            {showAlignmentModal && alignedLessonId && nativeAudio.match && (
                 <AlignmentEditorModal
-                    lessonId={playerLessonId!}
+                    lessonId={alignedLessonId}
                     audioFileId={nativeAudio.match.file.id}
                     items={filteredData}
                     language={filteredData[0]?.language}
