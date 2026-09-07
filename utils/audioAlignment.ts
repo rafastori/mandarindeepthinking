@@ -72,6 +72,23 @@ export function formatClockPrecise(seconds: number): string {
     return `${m}:${whole.toString().padStart(2, '0')}.${tenth}`;
 }
 
+/** Aceita `16.6`, `0:16.6`, `1:02.35` ou vírgula decimal. */
+export function parseClockPrecise(input: string): number | null {
+    const raw = String(input || '').trim().replace(',', '.');
+    if (!raw) return null;
+    if (/^\d+(\.\d+)?$/.test(raw)) {
+        const n = Number(raw);
+        return Number.isFinite(n) ? n : null;
+    }
+    const match = raw.match(/^(\d+):([0-5]?\d)(?:\.(\d{1,3}))?$/);
+    if (!match) return null;
+    const minutes = Number(match[1]);
+    const seconds = Number(match[2]);
+    const frac = match[3] ? Number(`0.${match[3]}`) : 0;
+    const total = minutes * 60 + seconds + frac;
+    return Number.isFinite(total) ? total : null;
+}
+
 export function clampTime(value: number, duration: number): number {
     if (!Number.isFinite(value)) return 0;
     return Math.min(Math.max(value, 0), Math.max(duration, 0));
