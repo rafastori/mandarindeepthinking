@@ -9,3 +9,7 @@ export function practiceComboMultiplier(streak: number): number {
 export function practiceComboXp(streakAfterCorrect: number): number {
     return Math.round(10 * practiceComboMultiplier(streakAfterCorrect));
 }
+
+export function practiceHalfXp(streakAfterCorrect: number): number {
+    return Math.round(practiceComboXp(streakAfterCorrect) / 2);
+}

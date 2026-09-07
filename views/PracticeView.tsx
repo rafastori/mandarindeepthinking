@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, Variants, PanInfo, useMotionValue, useTransform } from 'framer-motion';
 import EmptyState from '../components/EmptyState';
@@ -10,7 +10,8 @@ import PracticeModePicker from '../components/PracticeModePicker';
 import PracticeAudioCard, { AudioPracticeQuestion } from '../components/PracticeAudioCard';
 import { scorePracticeAnswer, PracticeScoreResult } from '../utils/practiceScoring';
 import { getPracticeAiHelp } from '../services/gemini';
-import { practiceComboMultiplier, practiceComboXp } from '../utils/playableXp';
+import { practiceComboMultiplier, practiceComboXp, practiceHalfXp } from '../utils/playableXp';
+import { PracticeGrade } from '../utils/textSimilarity';
 
 // ══════════════════════════════════════════════
 //  INTERFACES
@@ -19,7 +20,7 @@ import { practiceComboMultiplier, practiceComboXp } from '../utils/playableXp';
 interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
-    onResult: (correct: boolean, word: string, type?: 'general' | 'pronunciation', points?: number) => void;
+    onResult: (correct: boolean, word: string, type?: 'general' | 'pronunciation', points?: number, outcome?: 'correct' | 'partial' | 'wrong') => void;
     activeFolderFilters?: string[];
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
@@ -31,6 +32,7 @@ interface SessionStats {
     totalAttempts: number;
     correctAnswers: number;
     incorrectAnswers: number;
+    partialAnswers?: number;
     startTime: number;
     maxStreak: number;
     totalTimeMs?: number;
@@ -139,8 +141,10 @@ interface CompletionProps {
 const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, totalQuestions, onRestart }) => {
     const [particles] = useState(generateParticles);
 
+    const partial = sessionStats.partialAnswers || 0;
+    // Acurácia: acerto cheio = 1, meio certo = ½ — sem inflar o contador de acertos.
     const accuracy = sessionStats.totalAttempts > 0
-        ? Math.round((sessionStats.correctAnswers / sessionStats.totalAttempts) * 100)
+        ? Math.round(((sessionStats.correctAnswers + partial * 0.5) / sessionStats.totalAttempts) * 100)
         : 0;
     const earnedStars = accuracy >= 90 ? 3 : accuracy >= 70 ? 2 : accuracy >= 50 ? 1 : 0;
     const totalSecs = sessionStats.totalTimeMs ? Math.floor(sessionStats.totalTimeMs / 1000) : 0;
@@ -219,7 +223,9 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                     <div className="grid grid-cols-2 gap-3 mb-4">
                         <div className="bg-brand-50 rounded-2xl p-4 text-center">
                             <div className="text-3xl font-extrabold text-brand-600">{accuracy}%</div>
-                            <div className="text-xs text-slate-500 mt-0.5 font-medium">Acurácia</div>
+                            <div className="text-xs text-slate-500 mt-0.5 font-medium">
+                                Acurácia{partial > 0 ? ' (½)' : ''}
+                            </div>
                         </div>
                         <div className="bg-slate-50 rounded-2xl p-4 text-center">
                             <div className="text-3xl font-extrabold text-slate-700">
@@ -233,6 +239,9 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                     <div className="bg-slate-50 rounded-2xl p-4 mb-5 divide-y divide-slate-200">
                         {[
                             { icon: '✅', label: 'Acertos', value: `${sessionStats.correctAnswers}/${totalQuestions}` },
+                            ...(partial > 0
+                                ? [{ icon: '◐', label: 'Meio certo', value: `${partial}/${totalQuestions}` }]
+                                : []),
                             { icon: '❌', label: 'Erros', value: `${sessionStats.incorrectAnswers}/${totalQuestions}` },
                             { icon: '🔥', label: 'Streak máximo', value: String(sessionStats.maxStreak) },
                         ].map(row => (
@@ -442,6 +451,11 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     const [aiHint, setAiHint]               = useState<string | null>(null);
     const [aiExplain, setAiExplain]         = useState<string | null>(null);
     const [aiBusy, setAiBusy]               = useState<'hint' | 'explain' | null>(null);
+    const [audioCommitted, setAudioCommitted] = useState(false);
+    const audioCommittedRef = useRef(false);
+    const goToNextCardRef = useRef<() => void>(() => {});
+    const recordAudioGradeRef = useRef<(grade: PracticeGrade) => void>(() => {});
+    const advanceTimerRef = useRef<number | null>(null);
 
     // ─── Combo & XP ──────────────────────────
     const [streak, setStreak]           = useState(0);
@@ -450,10 +464,11 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     const floatingXPCounter             = useRef(0);
 
     // ─── Session Stats ───────────────────────
-    const [sessionStats, setSessionStats] = useState<SessionStats>({
+    const emptySessionStats = (): SessionStats => ({
         totalAttempts: 0, correctAnswers: 0, incorrectAnswers: 0,
-        startTime: Date.now(), maxStreak: 0,
+        partialAnswers: 0, startTime: Date.now(), maxStreak: 0,
     });
+    const [sessionStats, setSessionStats] = useState<SessionStats>(emptySessionStats);
     const sessionStartRef = useRef(Date.now());
 
     // ─── Favorites ──────────────────────────
@@ -807,20 +822,25 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     };
 
     const handleNext = () => {
-        stop();
-        setSelectedOption(null);
-        setShowResult(false);
-        setCardAnimState('animate');
-        resetCardExtras();
-        if (currentIndex < activeQuestions.length - 1) {
-            setCurrentIndex(prev => prev + 1);
-        } else {
-            finishSession();
+        if (isAudioSession && showResult && !audioCommittedRef.current && audioResult) {
+            recordAudioGradeRef.current(audioResult.grade);
         }
+        if (advanceTimerRef.current != null) {
+            window.clearTimeout(advanceTimerRef.current);
+            advanceTimerRef.current = null;
+        }
+        goToNextCardRef.current();
     };
 
     const handlePrevious = () => {
         if (currentIndex > 0) {
+            if (isAudioSession && showResult && !audioCommittedRef.current && audioResult) {
+                recordAudioGradeRef.current(audioResult.grade);
+            }
+            if (advanceTimerRef.current != null) {
+                window.clearTimeout(advanceTimerRef.current);
+                advanceTimerRef.current = null;
+            }
             stop();
             setSelectedOption(null);
             setShowResult(false);
@@ -840,11 +860,13 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         setAudioResult(null);
         setAiHint(null);
         setAiExplain(null);
+        audioCommittedRef.current = false;
+        setAudioCommitted(false);
         setSessionKey(prev => prev + 1);
         setStreak(0);
         setSessionXP(0);
         setFloatingXPs([]);
-        setSessionStats({ totalAttempts: 0, correctAnswers: 0, incorrectAnswers: 0, startTime: Date.now(), maxStreak: 0 });
+        setSessionStats(emptySessionStats());
         sessionStartRef.current = Date.now();
     };
 
@@ -862,11 +884,13 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         setAiHint(null);
         setAiExplain(null);
         setScoring(false);
+        audioCommittedRef.current = false;
+        setAudioCommitted(false);
         setSessionKey(prev => prev + 1);
         setStreak(0);
         setSessionXP(0);
         setFloatingXPs([]);
-        setSessionStats({ totalAttempts: 0, correctAnswers: 0, incorrectAnswers: 0, startTime: Date.now(), maxStreak: 0 });
+        setSessionStats(emptySessionStats());
         sessionStartRef.current = Date.now();
     };
 
@@ -877,7 +901,67 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         setAiExplain(null);
         setAiBusy(null);
         setScoring(false);
+        audioCommittedRef.current = false;
+        setAudioCommitted(false);
     };
+
+    const goToNextCard = () => {
+        if (advanceTimerRef.current != null) {
+            window.clearTimeout(advanceTimerRef.current);
+            advanceTimerRef.current = null;
+        }
+        stop();
+        setSelectedOption(null);
+        setShowResult(false);
+        setCardAnimState('animate');
+        resetCardExtras();
+        if (currentIndex < activeQuestions.length - 1) {
+            setCurrentIndex(prev => prev + 1);
+        } else {
+            finishSession();
+        }
+    };
+    goToNextCardRef.current = goToNextCard;
+
+    recordAudioGradeRef.current = (grade: PracticeGrade) => {
+        if (audioCommittedRef.current) return;
+        const currentQ = audioQuestions[currentIndex];
+        if (!currentQ) return;
+        audioCommittedRef.current = true;
+        setAudioCommitted(true);
+
+        if (grade === 'correct') {
+            const xp = practiceComboXp(streak + 1);
+            onResult(true, currentQ.word, 'general', xp, 'correct');
+            recordResult(true);
+            return;
+        }
+        if (grade === 'almost') {
+            const xp = practiceHalfXp(streak + 1);
+            onResult(false, currentQ.word, 'general', xp, 'partial');
+            setSessionXP(prev => prev + xp);
+            spawnFloatingXP(xp);
+            setCardAnimState('bounce');
+            setTimeout(() => setCardAnimState('animate'), 560);
+            setSessionStats(prev => ({
+                ...prev,
+                totalAttempts: prev.totalAttempts + 1,
+                partialAnswers: (prev.partialAnswers || 0) + 1,
+            }));
+            return;
+        }
+        onResult(false, currentQ.word, 'general', undefined, 'wrong');
+        recordResult(false);
+    };
+
+    const commitAudioGrade = useCallback((grade: PracticeGrade) => {
+        recordAudioGradeRef.current(grade);
+        if (advanceTimerRef.current != null) window.clearTimeout(advanceTimerRef.current);
+        advanceTimerRef.current = window.setTimeout(() => {
+            advanceTimerRef.current = null;
+            goToNextCardRef.current();
+        }, 450);
+    }, []);
 
     const handleAudioSubmit = async () => {
         if (showResult || scoring || sessionKind === 'tradicional') return;
@@ -893,10 +977,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             });
             setAudioResult(scored);
             setShowResult(true);
-            const isCorrect = scored.grade === 'correct';
-            const xp = isCorrect ? practiceComboXp(streak + 1) : undefined;
-            onResult(isCorrect, currentQ.word, 'general', xp);
-            recordResult(isCorrect);
+            // XP/stats só no override Anki (toque ou auto-avanço com a sugestão).
         } catch (err) {
             console.error('[Practice audio score]', err);
         } finally {
@@ -1161,6 +1242,8 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                     explainText={aiExplain}
                     aiBusy={aiBusy}
                     isCjk={!isGerman}
+                    ratingCommitted={audioCommitted}
+                    onCommitRating={commitAudioGrade}
                 />
             ) : practiceMode === 'multiple-choice' ? (
 

@@ -17,8 +17,13 @@ export const useStats = () => {
         }
     }, []);
 
-    const recordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general') => {
+    const recordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general', outcome?: 'correct' | 'partial' | 'wrong') => {
         setStats(prev => {
+            if (outcome === 'partial') {
+                const newStats: Stats = { ...prev, partial: (prev.partial || 0) + 1 };
+                localStorage.setItem('mandarin_hsk_stats', JSON.stringify(newStats));
+                return newStats;
+            }
             const currentCounts = prev.wordCounts || {};
             const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
 
@@ -55,7 +60,7 @@ export const useStats = () => {
     };
 
     const clearStats = () => {
-        const empty: Stats = { correct: 0, wrong: 0, history: [], wordCounts: {}, ignoredReviewWords: [] };
+        const empty: Stats = { correct: 0, wrong: 0, partial: 0, history: [], wordCounts: {}, ignoredReviewWords: [] };
         setStats(empty);
         localStorage.setItem('mandarin_hsk_stats', JSON.stringify(empty));
     };

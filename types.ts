@@ -55,6 +55,8 @@ export interface FavoriteConfig {
 export interface Stats {
     correct: number;
     wrong: number;
+    /** Meio certo (override Anki): XP pela metade, não conta como acerto cheio nem erro. */
+    partial?: number;
     history: StatsHistory[];
     wordCounts: Record<string, number>;
     // Gamification fields
@@ -95,6 +97,8 @@ export interface SessionStats {
     wordsReviewed: number;
     correctAnswers: number;
     wrongAnswers: number;
+    /** Quantidade de “meio certo” nesta sessão (não entra em acertos cheios). */
+    partialAnswers?: number;
     tabTime: Record<string, number>;
     pointsEarned: number;
 }
@@ -169,6 +173,7 @@ export interface SessionRecord {
     wordsReviewed: number;  // palavras estudadas
     correctAnswers: number;
     wrongAnswers: number;
+    partialAnswers?: number; // meio certo — bucket próprio
     tabTime: Record<string, number>;  // tempo por aba em segundos
     pointsEarned: number;
     wordsStudied: string[]; // lista de palavras estudadas na sessão
@@ -182,6 +187,7 @@ export interface DayStats {
     totalTime: number;      // soma de tempos de todas as sessões
     totalCorrect: number;
     totalWrong: number;
+    totalPartial?: number;
     totalWordsReviewed: number;
     totalPoints: number;
     firstSessionStart: number; // horário da 1ª sessão

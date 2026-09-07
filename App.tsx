@@ -342,36 +342,50 @@ const App: React.FC = () => {
         if (newId) toggleSave(newId);
     };
 
-    const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general', points?: number) => {
-        if (isCorrect) {
-            sessionCorrectWordsRef.current = [word, ...sessionCorrectWordsRef.current].slice(0, 100);
+    const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general', points?: number, outcome?: 'correct' | 'partial' | 'wrong') => {
+        const kind = outcome || (isCorrect ? 'correct' : 'wrong');
+
+        if (kind === 'partial') {
+            gamification.recordPartial(points);
+            if (user) {
+                const prev = activeStats;
+                updateCloudStats({
+                    ...prev,
+                    partial: (prev.partial || 0) + 1,
+                    ...gamification.getUpdatedStats(),
+                });
+            } else {
+                recordLocalResult(false, word, type, 'partial');
+            }
+            return;
         }
-        // Track in gamification
-        if (isCorrect) {
+
+        if (kind === 'correct') {
+            sessionCorrectWordsRef.current = [word, ...sessionCorrectWordsRef.current].slice(0, 100);
             gamification.recordCorrect(points);
         } else {
             gamification.recordWrong();
         }
 
+        const isFullCorrect = kind === 'correct';
         if (user) {
             const prev = activeStats;
             const currentCounts = prev.wordCounts || {};
-            const newCount = !isCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
+            const newCount = !isFullCorrect ? (currentCounts[word] || 0) + 1 : (currentCounts[word] || 0);
 
             const newStats: Stats = {
-                ...prev, // Preserva todos os campos existentes (lastLoginDate, studyMoreIds, etc.)
-                correct: (prev.correct || 0) + (isCorrect ? 1 : 0),
-                wrong: (prev.wrong || 0) + (!isCorrect ? 1 : 0),
-                history: !isCorrect
+                ...prev,
+                correct: (prev.correct || 0) + (isFullCorrect ? 1 : 0),
+                wrong: (prev.wrong || 0) + (isFullCorrect ? 0 : 1),
+                history: !isFullCorrect
                     ? [{ word, date: new Date().toLocaleDateString('pt-BR'), time: new Date().toLocaleTimeString('pt-BR'), type }, ...prev.history].slice(0, 50)
                     : prev.history,
                 wordCounts: { ...currentCounts, [word]: newCount },
-                // Sobrescreve com campos de gamification atualizados
                 ...gamification.getUpdatedStats()
             };
             updateCloudStats(newStats);
         } else {
-            recordLocalResult(isCorrect, word, type);
+            recordLocalResult(isFullCorrect, word, type);
         }
     };
 
@@ -618,6 +632,7 @@ const App: React.FC = () => {
             wordsReviewed: s.wordsReviewed,
             correctAnswers: s.correctAnswers,
             wrongAnswers: s.wrongAnswers,
+            partialAnswers: s.partialAnswers || 0,
             tabTime: s.tabTime,
             pointsEarned: s.pointsEarned,
             wordsStudied: sessionCorrectWordsRef.current.slice(0, 100),
@@ -640,6 +655,7 @@ const App: React.FC = () => {
                 wordsReviewed: stats.wordsReviewed,
                 correctAnswers: stats.correctAnswers,
                 wrongAnswers: stats.wrongAnswers,
+                partialAnswers: stats.partialAnswers || 0,
                 tabTime: stats.tabTime,
                 pointsEarned: stats.pointsEarned,
                 wordsStudied: sessionCorrectWordsRef.current.slice(0, 100),
@@ -671,6 +687,7 @@ const App: React.FC = () => {
         gamification.sessionStats.correctAnswers,
         gamification.sessionStats.wrongAnswers,
         gamification.sessionStats.pointsEarned,
+        gamification.sessionStats.partialAnswers,
         showIntro,
     ]);
 
