@@ -386,6 +386,10 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         nativeAudio.stop();
         return speak(text, language, id);
     }, [cueForId, introSkip, lessonAlignment.alignment, nativeAudio, speak, stop]);
+    const stopAllSpeech = useCallback(() => {
+        nativeAudio.stop();
+        stop();
+    }, [nativeAudio, stop]);
 
     // Função para formatar tokens em texto legível
     const formatTokensToText = (tokens: string[]): string => {
@@ -1288,7 +1292,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                             isCorrectingColors={isCorrectingColors}
                             onRequestColorCorrection={(ids) => handleCorrectColors(ids)}
                             speak={speakText}
-                            stopSpeak={() => { nativeAudio.stop(); stop(); }}
+                            stopSpeak={stopAllSpeech}
                             playingId={playingId || nativeAudio.playingSegmentId}
                             comments={commentsApi.comments}
                             onAddComment={commentsApi.addComment}
