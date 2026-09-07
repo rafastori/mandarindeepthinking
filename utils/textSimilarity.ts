@@ -81,9 +81,61 @@ export function labTokenKey(text: string): string {
         .toLowerCase();
 }
 
+/** True when the token is only punctuation/symbols (。，、！？；： quotes, Latin punct…). */
+export function isLabPunctToken(text: string): boolean {
+    return labTokenKey(text) === '';
+}
+
+export function labContentTokens(tokens: string[]): string[] {
+    return (tokens || []).filter(t => !isLabPunctToken(t));
+}
+
+export type LabDisplayToken = {
+    text: string;
+    kind: 'content' | 'punct';
+    contentId?: number;
+    sourceIndex: number;
+};
+
+/**
+ * Rebuild the answer row: user-chosen content words in their order,
+ * with original punctuation auto-inserted at the matching slots.
+ */
+export function weaveLabDisplayTokens(
+    original: string[],
+    selectedContent: { id: number; text: string }[]
+): LabDisplayToken[] {
+    const n = selectedContent.length;
+    if (n === 0) return [];
+    const out: LabDisplayToken[] = [];
+    let used = 0;
+    let origContentSeen = 0;
+    for (let i = 0; i < original.length; i++) {
+        const t = original[i];
+        if (isLabPunctToken(t)) {
+            if (origContentSeen <= n) {
+                out.push({ text: t, kind: 'punct', sourceIndex: i });
+            }
+        } else {
+            origContentSeen += 1;
+            if (used < n) {
+                const sel = selectedContent[used];
+                out.push({ text: sel.text, kind: 'content', contentId: sel.id, sourceIndex: i });
+                used += 1;
+            } else {
+                break;
+            }
+        }
+    }
+    return out;
+}
+
+/** Compare Lab order by content words only (accents and punctuation ignored). */
 export function labTokenSequenceMatch(attempt: string[], target: string[]): boolean {
-    if (attempt.length !== target.length) return false;
-    return attempt.every((tok, i) => labTokenKey(tok) === labTokenKey(target[i] || ''));
+    const a = labContentTokens(attempt);
+    const b = labContentTokens(target);
+    if (a.length !== b.length) return false;
+    return a.every((tok, i) => labTokenKey(tok) === labTokenKey(b[i] || ''));
 }
 
 export function levenshtein(a: string, b: string): number {

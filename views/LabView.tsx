@@ -8,7 +8,12 @@ import LabModePicker from '../components/LabModePicker';
 import CombinePhrasesGame from '../components/CombinePhrasesGame';
 import PlayableRoundSummary from '../components/PlayableRoundSummary';
 import { practiceComboXp } from '../utils/playableXp';
-import { labTokenSequenceMatch } from '../utils/textSimilarity';
+import {
+    isLabPunctToken,
+    labContentTokens,
+    labTokenSequenceMatch,
+    weaveLabDisplayTokens,
+} from '../utils/textSimilarity';
 import { Zap } from 'lucide-react';
 
 interface LabViewProps {
@@ -50,7 +55,8 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             });
         }
 
-        return filteredData.filter(item => item.tokens && item.tokens.length > 1)
+        return filteredData
+            .filter(item => labContentTokens(item.tokens || []).length > 1)
             .sort(() => 0.5 - Math.random());
     }, [data, activeFolderFilters]);
 
@@ -80,8 +86,10 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     const initGame = () => {
         if (!currentSentence) return;
 
-        const tokens = currentSentence.tokens.map((t, i) => ({ id: i, text: t }));
-        setShuffledTokens([...tokens].sort(() => 0.5 - Math.random()));
+        const content = currentSentence.tokens
+            .map((t, i) => ({ id: i, text: t }))
+            .filter(t => !isLabPunctToken(t.text));
+        setShuffledTokens([...content].sort(() => 0.5 - Math.random()));
         setSelectedTokens([]);
         setStatus('playing');
         setMissHint(false);
@@ -125,7 +133,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     };
 
     const handleSelect = (tokenObj: { id: number, text: string }) => {
-        if (status !== 'playing') return;
+        if (status !== 'playing' || isLabPunctToken(tokenObj.text)) return;
         setSelectedTokens([...selectedTokens, tokenObj]);
         setShuffledTokens(shuffledTokens.filter(t => t.id !== tokenObj.id));
     };
@@ -140,7 +148,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         if (!currentSentence || status !== 'playing') return;
         const ok = labTokenSequenceMatch(
             selectedTokens.map(t => t.text),
-            currentSentence.tokens
+            labContentTokens(currentSentence.tokens)
         );
 
         if (ok) {
@@ -170,8 +178,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             return;
         }
 
-        // Errou a ordem: sem XP, sem travar, sem gravar erro global.
-        // Acentos não entram na comparação (labTokenSequenceMatch).
+        // Errou a ordem das palavras: sem XP, sem travar, sem gravar erro global.
         setLabStreak(0);
         setMissHint(true);
         window.setTimeout(() => setMissHint(false), 1600);
@@ -240,7 +247,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                 </div>
                 <PlayableRoundSummary
                     title="Frases ordenadas"
-                    subtitle="Acertos valem XP. Erros de ordem não travam o jogo (só ficam sem pontos). Pular conta no resumo da rodada, sem erro global."
+                    subtitle="Acertos valem XP. Só a ordem das palavras conta (acentos e pontuação não). Erros não travam o jogo."
                     correct={labCorrect}
                     total={sentences.length}
                     wrong={labWrong}
@@ -252,6 +259,8 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     }
 
     const isGerman = currentSentence.language === 'de';
+    const displayTokens = weaveLabDisplayTokens(currentSentence.tokens, selectedTokens);
+    const contentLeft = shuffledTokens.length;
 
     return (
         <div className="p-6 h-full flex flex-col pb-24 max-w-md mx-auto">
@@ -278,22 +287,38 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                     status === 'correct' ? 'border-green-400 bg-green-50' :
                     missHint ? 'border-amber-300 bg-amber-50' : 'border-slate-200'
                 }`}>
-                    {selectedTokens.map((token) => (
-                        <button
-                            key={token.id}
-                            onClick={() => handleUndo(token)}
-                            className={`bg-white px-3 py-2 rounded-lg shadow-sm font-medium ${isGerman ? 'font-sans' : 'font-chinese'} animate-pop hover:bg-red-50 hover:text-red-500`}
-                        >
-                            {token.text}
-                        </button>
-                    ))}
-                    {selectedTokens.length === 0 && (
-                        <span className="text-slate-400 text-sm w-full text-center mt-8 self-center">Toque nas palavras abaixo...</span>
-                    )}
+                    {displayTokens.length === 0 ? (
+                        <span className="text-slate-400 text-sm w-full text-center mt-8 self-center">
+                            Toque nas palavras abaixo — a pontuação entra sozinha
+                        </span>
+                    ) : displayTokens.map((token, i) => {
+                        if (token.kind === 'punct') {
+                            return (
+                                <span
+                                    key={`p-${token.sourceIndex}-${i}`}
+                                    className={`px-1.5 py-2 text-slate-400 select-none ${isGerman ? 'font-sans' : 'font-chinese'} text-lg`}
+                                    aria-hidden="true"
+                                >
+                                    {token.text}
+                                </span>
+                            );
+                        }
+                        const contentTok = selectedTokens.find(t => t.id === token.contentId);
+                        return (
+                            <button
+                                key={token.contentId}
+                                type="button"
+                                onClick={() => contentTok && handleUndo(contentTok)}
+                                className={`bg-white px-3 py-2 rounded-lg shadow-sm font-medium ${isGerman ? 'font-sans' : 'font-chinese'} animate-pop hover:bg-red-50 hover:text-red-500`}
+                            >
+                                {token.text}
+                            </button>
+                        );
+                    })}
                 </div>
                 {missHint && status === 'playing' && (
                     <p className="text-center text-xs font-bold text-amber-700 mb-4">
-                        Quase! Sem pontos desta vez — ajuste a ordem e tente de novo. Acentos não importam.
+                        Quase! Sem pontos desta vez — ajuste a ordem das palavras. Acentos e pontuação não importam.
                     </p>
                 )}
                 {!(missHint && status === 'playing') && (
@@ -332,6 +357,9 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                         </button>
                     ))}
                 </div>
+                <p className="text-center text-[10px] text-slate-400 mt-2 mb-1">
+                    Só as palavras — pontuação entra sozinha
+                </p>
             </div>
 
             {/* Controles */}
@@ -347,7 +375,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
 
                     <button
                         onClick={checkAnswer}
-                        disabled={shuffledTokens.length > 0 || status === 'correct'}
+                        disabled={contentLeft > 0 || status === 'correct'}
                         className="flex-1 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 disabled:opacity-50 disabled:shadow-none transition-all py-4"
                     >
                         {status === 'correct' ? 'Muito Bem!' : 'Verificar'}
