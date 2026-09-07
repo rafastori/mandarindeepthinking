@@ -107,6 +107,9 @@ export interface Player {
     isBot?: boolean;
 }
 
+/** Modo da sessão em Treino → Lab. Ordenar tokens permanece uma das opções. */
+export type LabSessionKind = 'ordenar' | 'combinar';
+
 /** Modo da sessão em Treino → Prática. Tradicional permanece o default. */
 export type PracticeSessionKind = 'tradicional' | 'audio-traducao' | 'audio-escrita';
 

@@ -10,6 +10,7 @@ import PracticeModePicker from '../components/PracticeModePicker';
 import PracticeAudioCard, { AudioPracticeQuestion } from '../components/PracticeAudioCard';
 import { scorePracticeAnswer, PracticeScoreResult } from '../utils/practiceScoring';
 import { getPracticeAiHelp } from '../services/gemini';
+import { practiceComboMultiplier, practiceComboXp } from '../utils/playableXp';
 
 // ══════════════════════════════════════════════
 //  INTERFACES
@@ -18,7 +19,7 @@ import { getPracticeAiHelp } from '../services/gemini';
 interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
-    onResult: (correct: boolean, word: string) => void;
+    onResult: (correct: boolean, word: string, type?: 'general' | 'pronunciation', points?: number) => void;
     activeFolderFilters?: string[];
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
@@ -191,7 +192,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                         >
                             Sessão Concluída! 🎉
                         </motion.p>
-                        <p className="text-sm text-slate-500 mt-1">Continue praticando para manter o ritmo!</p>
+                        <p className="text-sm text-slate-500 mt-1">XP e acertos já entram no resumo da sessão e nas estatísticas.</p>
                     </div>
 
                     {/* Stars */}
@@ -472,7 +473,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
 
     const filtersKey = useMemo(() => [...activeFolderFilters].sort().join(','), [activeFolderFilters]);
 
-    const getComboMultiplier = (s: number) => s < 3 ? 1 : s < 5 ? 1.5 : s < 10 ? 2 : 3;
+    const getComboMultiplier = (s: number) => practiceComboMultiplier(s);
 
     // ═══════════════════════════════════════
     //  SAVED WORDS MAP (original logic preserved)
@@ -748,8 +749,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         if (isCorrect) {
             const newStreak = streak + 1;
             setStreak(newStreak);
-            const multiplier = getComboMultiplier(newStreak);
-            const xp = Math.round(10 * multiplier);
+            const xp = practiceComboXp(newStreak);
             setSessionXP(prev => prev + xp);
             spawnFloatingXP(xp);
 
@@ -781,13 +781,15 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         const isCorrect = option === currentQ.word;
         setSelectedOption(option);
         setShowResult(true);
-        onResult(isCorrect, currentQ.word);
+        const xp = isCorrect ? practiceComboXp(streak + 1) : undefined;
+        onResult(isCorrect, currentQ.word, 'general', xp);
         recordResult(isCorrect);
     };
 
     const handleSelfAssess = (correct: boolean) => {
         const currentQ = questions[currentIndex];
-        onResult(correct, currentQ.word);
+        const xp = correct ? practiceComboXp(streak + 1) : undefined;
+        onResult(correct, currentQ.word, 'general', xp);
         recordResult(correct);
     };
 
@@ -892,21 +894,9 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             setAudioResult(scored);
             setShowResult(true);
             const isCorrect = scored.grade === 'correct';
-            onResult(isCorrect, currentQ.word);
-            if (scored.grade === 'almost') {
-                setStreak(0);
-                setSessionXP(prev => prev + 5);
-                spawnFloatingXP(5);
-                setCardAnimState('shake');
-                setTimeout(() => setCardAnimState('animate'), 500);
-                setSessionStats(prev => ({
-                    ...prev,
-                    totalAttempts: prev.totalAttempts + 1,
-                    incorrectAnswers: prev.incorrectAnswers + 1,
-                }));
-            } else {
-                recordResult(isCorrect);
-            }
+            const xp = isCorrect ? practiceComboXp(streak + 1) : undefined;
+            onResult(isCorrect, currentQ.word, 'general', xp);
+            recordResult(isCorrect);
         } catch (err) {
             console.error('[Practice audio score]', err);
         } finally {

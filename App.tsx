@@ -342,13 +342,13 @@ const App: React.FC = () => {
         if (newId) toggleSave(newId);
     };
 
-    const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general') => {
+    const handleRecordResult = (isCorrect: boolean, word: string, type: 'general' | 'pronunciation' = 'general', points?: number) => {
         if (isCorrect) {
             sessionCorrectWordsRef.current = [word, ...sessionCorrectWordsRef.current].slice(0, 100);
         }
         // Track in gamification
         if (isCorrect) {
-            gamification.recordCorrect();
+            gamification.recordCorrect(points);
         } else {
             gamification.recordWrong();
         }
@@ -620,7 +620,7 @@ const App: React.FC = () => {
             wrongAnswers: s.wrongAnswers,
             tabTime: s.tabTime,
             pointsEarned: s.pointsEarned,
-            wordsStudied: [],
+            wordsStudied: sessionCorrectWordsRef.current.slice(0, 100),
             errorsLog: sessionErrors
         });
     }, [gamification.sessionStats, activeStats.history, detailedStats, ensureSessionId]);
@@ -642,7 +642,7 @@ const App: React.FC = () => {
                 wrongAnswers: stats.wrongAnswers,
                 tabTime: stats.tabTime,
                 pointsEarned: stats.pointsEarned,
-                wordsStudied: [],
+                wordsStudied: sessionCorrectWordsRef.current.slice(0, 100),
                 errorsLog: sessionErrors
             });
         }
@@ -660,6 +660,19 @@ const App: React.FC = () => {
         saveSessionRef.current();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tab]);
+
+    // Grava o registro da sessão também a cada acerto/erro, para FullStats e o
+    // histórico refletirem Prática/Lab/Pronúncia sem precisar trocar de aba.
+    useEffect(() => {
+        if (!currentSessionIdRef.current || showIntro) return;
+        saveSessionRef.current();
+    }, [
+        gamification.sessionStats.wordsReviewed,
+        gamification.sessionStats.correctAnswers,
+        gamification.sessionStats.wrongAnswers,
+        gamification.sessionStats.pointsEarned,
+        showIntro,
+    ]);
 
     // Safety net: persiste ao ir para 2º plano (mais confiável no mobile) e finaliza ao
     // fechar/recarregar o app. A sessão só é encerrada de fato ao sair do app.

@@ -48,7 +48,7 @@ export interface UseGamificationResult {
     currentAvatar: InventoryItem | null;
     startSession: () => void;
     endSession: () => SessionStats;
-    recordCorrect: () => void;
+    recordCorrect: (basePoints?: number) => void;
     recordWrong: () => void;
     setActiveTab: (tab: string) => void;
     checkAndUpdateStreak: (stats: Stats) => Stats;
@@ -223,12 +223,11 @@ export function useGamification(
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [checkAndUpdateStreak, persistedStats.lastLoginDate, persistedStats.streak, onStatsUpdate]);
 
-    const recordCorrect = useCallback(() => {
+    const recordCorrect = useCallback((basePoints: number = 10) => {
         consecutiveCorrectRef.current += 1;
         const consecutive = consecutiveCorrectRef.current;
 
-        // Base points
-        let pointsGained = 10;
+        let pointsGained = Number.isFinite(basePoints) ? Math.max(0, Math.round(basePoints)) : 10;
         let bonusType: BonusType = null;
         let bonusPoints = 0;
 
