@@ -36,22 +36,28 @@ interface PracticeAudioCardProps {
     explainText: string | null;
     aiBusy: 'hint' | 'explain' | null;
     isCjk: boolean;
+    ratingCommitted: boolean;
+    onCommitRating: (grade: 'correct' | 'almost' | 'wrong') => void;
 }
 
 const GRADE_UI = {
-    correct: { label: 'Acertou', bar: 'bg-brand-500', chip: 'bg-brand-50 text-brand-700 border-brand-200' },
-    almost: { label: 'Quase', bar: 'bg-amber-500', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
-    wrong: { label: 'Ainda não', bar: 'bg-red-400', chip: 'bg-red-50 text-red-700 border-red-200' },
+    correct: { label: 'Certo', bar: 'bg-brand-500', chip: 'bg-brand-50 text-brand-700 border-brand-200' },
+    almost: { label: 'Meio certo', bar: 'bg-amber-500', chip: 'bg-amber-50 text-amber-800 border-amber-200' },
+    wrong: { label: 'Errado', bar: 'bg-red-400', chip: 'bg-red-50 text-red-700 border-red-200' },
 } as const;
+
+const AUTO_COMMIT_MS = 2800;
 
 const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
     question, index, mode, playingId, speak, stop, hasNativeAlignment,
     enableAiHelp, showResult, result, scoring, userInput, onUserInput, onSubmit,
     onHint, onExplain, hintText, explainText, aiBusy, isCjk,
+    ratingCommitted, onCommitRating,
 }) => {
     const audioId = `practice-audio-${index}`;
     const playedForIndex = useRef<number | null>(null);
     const [showFormula, setShowFormula] = useState(false);
+    const [picked, setPicked] = useState<'correct' | 'almost' | 'wrong' | null>(null);
 
     const lang = (question.language || 'zh') as SupportedLanguage;
     const isTranslation = mode === 'audio-traducao';
@@ -62,6 +68,7 @@ const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
     useEffect(() => {
         if (playedForIndex.current === index) return;
         playedForIndex.current = index;
+        setPicked(null);
         speak(question.sentence, lang, audioId, question.sentenceItemId);
         // speak identity changes often; autoplay once per card index
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -72,7 +79,24 @@ const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
         else speak(question.sentence, lang, audioId, question.sentenceItemId);
     };
 
-    const gradeUi = result ? GRADE_UI[result.grade] : null;
+    const displayGrade = picked || result?.grade || 'wrong';
+    const gradeUi = result ? GRADE_UI[displayGrade] : null;
+    const [secondsLeft, setSecondsLeft] = useState(Math.ceil(AUTO_COMMIT_MS / 1000));
+
+    useEffect(() => {
+        if (!showResult || !result || ratingCommitted) return;
+        setSecondsLeft(Math.ceil(AUTO_COMMIT_MS / 1000));
+        const started = Date.now();
+        const tick = window.setInterval(() => {
+            const left = Math.max(0, AUTO_COMMIT_MS - (Date.now() - started));
+            setSecondsLeft(Math.ceil(left / 1000));
+            if (left <= 0) {
+                window.clearInterval(tick);
+                onCommitRating(result.grade);
+            }
+        }, 200);
+        return () => window.clearInterval(tick);
+    }, [showResult, result, ratingCommitted, onCommitRating]);
 
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 mb-3 flex-1 flex flex-col">
@@ -189,14 +213,57 @@ const PracticeAudioCard: React.FC<PracticeAudioCardProps> = ({
                             {result.semantic != null
                                 ? ` + embeddings ${Math.round(result.semantic * 100)}% × ${result.semanticWeight.toFixed(2)}`
                                 : ' (sem embeddings — só comparação local)'}
-                            . Acerto ≥ 80%, quase ≥ 55%.
+                            . Acerto automático ≥ {isTranslation ? '65%' : '75%'}
+                            {isTranslation ? '; meio certo 45–64%' : '; meio certo 50–74%'}.
                             {isTranslation
                                 ? ' Na tradução o embedding (sentido) pesa mais que o wording.'
-                                : ' Na escrita, pontuação/espaços/largura são normalizados antes da nota.'}
+                                : ' Na escrita, pontuação/espaços/largura/acentos são normalizados; a sequência conta mais.'}
                         </p>
                     )}
 
                     <PracticeTextDiff expected={result.expectedDiff} actual={result.actualDiff} unit={result.unit} />
+
+                    <div className="mt-3">
+                        <p className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 mb-2 text-center">
+                            {ratingCommitted ? 'Registrado' : 'Como você avalia?'}
+                        </p>
+                        <div className="grid grid-cols-3 gap-1.5">
+                            {([
+                                { id: 'wrong' as const, label: 'Errado', cls: 'bg-red-50 text-red-700 border-red-200' },
+                                { id: 'almost' as const, label: 'Meio certo', cls: 'bg-amber-50 text-amber-800 border-amber-200' },
+                                { id: 'correct' as const, label: 'Certo', cls: 'bg-brand-50 text-brand-700 border-brand-200' },
+                            ]).map(btn => {
+                                const suggested = result.grade === btn.id;
+                                const chosen = (picked || (ratingCommitted ? displayGrade : null)) === btn.id;
+                                return (
+                                    <button
+                                        key={btn.id}
+                                        type="button"
+                                        disabled={ratingCommitted}
+                                        onClick={() => {
+                                            setPicked(btn.id);
+                                            onCommitRating(btn.id);
+                                        }}
+                                        className={`py-2.5 rounded-xl border-2 text-[11px] font-extrabold ${btn.cls} ${
+                                            suggested && !ratingCommitted && !picked ? 'ring-2 ring-offset-1 ring-slate-400' : ''
+                                        } ${chosen ? 'ring-2 ring-offset-1 ring-slate-700' : ''} ${
+                                            ratingCommitted && !chosen ? 'opacity-40' : ''
+                                        }`}
+                                    >
+                                        {btn.label}
+                                        {suggested && !ratingCommitted && !picked && (
+                                            <span className="block text-[9px] font-bold opacity-70">sugestão</span>
+                                        )}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                        {!ratingCommitted && (
+                            <p className="text-[10px] text-center text-slate-400 mt-1.5">
+                                Continua em {secondsLeft}s com a sugestão · toque para mudar
+                            </p>
+                        )}
+                    </div>
 
                     {isTranslation && (
                         <p className={`mt-2 text-sm text-slate-700 ${isCjk ? 'font-chinese' : ''}`}>

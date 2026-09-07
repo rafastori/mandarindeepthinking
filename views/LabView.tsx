@@ -8,6 +8,7 @@ import LabModePicker from '../components/LabModePicker';
 import CombinePhrasesGame from '../components/CombinePhrasesGame';
 import PlayableRoundSummary from '../components/PlayableRoundSummary';
 import { practiceComboXp } from '../utils/playableXp';
+import { labTokenSequenceMatch } from '../utils/textSimilarity';
 import { Zap } from 'lucide-react';
 
 interface LabViewProps {
@@ -30,6 +31,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     const [labXP, setLabXP] = useState(0);
     const [labStreak, setLabStreak] = useState(0);
     const [labFinished, setLabFinished] = useState(false);
+    const [missHint, setMissHint] = useState(false);
 
     // Filtra apenas frases longas (com mais de 1 token) para o jogo fazer sentido
     const sentences = useMemo(() => {
@@ -82,6 +84,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         setShuffledTokens([...tokens].sort(() => 0.5 - Math.random()));
         setSelectedTokens([]);
         setStatus('playing');
+        setMissHint(false);
         stop();
     };
 
@@ -95,6 +98,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         setSessionStarted(false);
         setCurrentIdx(0);
         setStatus('playing');
+        setMissHint(false);
         setSelectedTokens([]);
         setShuffledTokens([]);
         setLabCorrect(0);
@@ -110,6 +114,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         stop();
         setCurrentIdx(0);
         setStatus('playing');
+        setMissHint(false);
         setLabCorrect(0);
         setLabWrong(0);
         setLabXP(0);
@@ -132,13 +137,14 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     };
 
     const checkAnswer = () => {
-        if (!currentSentence) return;
-        const normalize = (str: string) => str.replace(/\s+/g, '').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
+        if (!currentSentence || status !== 'playing') return;
+        const ok = labTokenSequenceMatch(
+            selectedTokens.map(t => t.text),
+            currentSentence.tokens
+        );
 
-        const attempt = normalize(selectedTokens.map(t => t.text).join(''));
-        const target = normalize(currentSentence.tokens.join(''));
-
-        if (attempt === target) {
+        if (ok) {
+            setMissHint(false);
             setStatus('correct');
 
             speak(
@@ -161,11 +167,26 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                     setLabFinished(true);
                 }
             }, 2000);
+            return;
+        }
+
+        // Errou a ordem: sem XP, sem travar, sem gravar erro global.
+        // Acentos não entram na comparação (labTokenSequenceMatch).
+        setLabStreak(0);
+        setMissHint(true);
+        window.setTimeout(() => setMissHint(false), 1600);
+    };
+
+    const skipSentence = () => {
+        if (status === 'correct') return;
+        stop();
+        setLabStreak(0);
+        setMissHint(false);
+        setLabWrong(n => n + 1);
+        if (currentIdx < sentences.length - 1) {
+            setCurrentIdx(prev => prev + 1);
         } else {
-            setStatus('wrong');
-            onResult(false, currentSentence.chinese);
-            setLabStreak(0);
-            setLabWrong(n => n + 1);
+            setLabFinished(true);
         }
     };
 
@@ -219,7 +240,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                 </div>
                 <PlayableRoundSummary
                     title="Frases ordenadas"
-                    subtitle="Cada acerto já valeu XP no resumo da sessão e nas estatísticas."
+                    subtitle="Acertos valem XP. Erros de ordem não travam o jogo (só ficam sem pontos). Pular conta no resumo da rodada, sem erro global."
                     correct={labCorrect}
                     total={sentences.length}
                     wrong={labWrong}
@@ -253,9 +274,10 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             <div className="flex-1 flex flex-col justify-center">
 
                 {/* Área da Resposta */}
-                <div className={`min-h-[120px] bg-slate-100 rounded-2xl p-4 mb-6 flex flex-wrap gap-2 content-start border-2 transition-colors ${status === 'correct' ? 'border-green-400 bg-green-50' :
-                    status === 'wrong' ? 'border-red-400 bg-red-50' : 'border-slate-200'
-                    }`}>
+                <div className={`min-h-[120px] bg-slate-100 rounded-2xl p-4 mb-2 flex flex-wrap gap-2 content-start border-2 transition-colors ${
+                    status === 'correct' ? 'border-green-400 bg-green-50' :
+                    missHint ? 'border-amber-300 bg-amber-50' : 'border-slate-200'
+                }`}>
                     {selectedTokens.map((token) => (
                         <button
                             key={token.id}
@@ -269,6 +291,14 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                         <span className="text-slate-400 text-sm w-full text-center mt-8 self-center">Toque nas palavras abaixo...</span>
                     )}
                 </div>
+                {missHint && status === 'playing' && (
+                    <p className="text-center text-xs font-bold text-amber-700 mb-4">
+                        Quase! Sem pontos desta vez — ajuste a ordem e tente de novo. Acentos não importam.
+                    </p>
+                )}
+                {!(missHint && status === 'playing') && (
+                    <div className="mb-4" />
+                )}
 
                 {/* Tradução — a frase em chinês continua oculta */}
                 <p className="text-center text-slate-500 italic mb-4 text-sm px-4">
@@ -305,29 +335,31 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             </div>
 
             {/* Controles */}
-            <div className="flex gap-3 mt-auto pt-6">
-                <button
-                    onClick={initGame}
-                    className="p-4 text-slate-400 hover:text-slate-600 rounded-xl bg-slate-50 active:bg-slate-200 transition-colors"
-                    title="Reiniciar Frase"
-                >
-                    <Icon name="rotate-ccw" size={24} />
-                </button>
-
-                {status === 'wrong' ? (
+            <div className="flex flex-col gap-2 mt-auto pt-6">
+                <div className="flex gap-3">
                     <button
                         onClick={initGame}
-                        className="flex-1 bg-red-500 text-white font-bold rounded-xl shadow-lg hover:bg-red-600 transition-all py-4 animate-pulse"
+                        className="p-4 text-slate-400 hover:text-slate-600 rounded-xl bg-slate-50 active:bg-slate-200 transition-colors"
+                        title="Embaralhar de novo"
                     >
-                        Tentar Novamente
+                        <Icon name="rotate-ccw" size={24} />
                     </button>
-                ) : (
+
                     <button
                         onClick={checkAnswer}
                         disabled={shuffledTokens.length > 0 || status === 'correct'}
                         className="flex-1 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 disabled:opacity-50 disabled:shadow-none transition-all py-4"
                     >
                         {status === 'correct' ? 'Muito Bem!' : 'Verificar'}
+                    </button>
+                </div>
+                {status === 'playing' && (
+                    <button
+                        type="button"
+                        onClick={skipSentence}
+                        className="text-[11px] font-bold text-slate-400 hover:text-slate-600 py-1"
+                    >
+                        Pular sem XP
                     </button>
                 )}
             </div>

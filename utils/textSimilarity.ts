@@ -9,8 +9,13 @@
  */
 
 export const PRACTICE_SCORE = {
-    CORRECT: 0.80,
-    ALMOST: 0.55,
+    /** Áudio → tradução (L1): acerto automático do sistema */
+    TRANSLATION_CORRECT: 0.65,
+    /** Faixa média → sugestão “meio certo” */
+    TRANSLATION_PARTIAL: 0.45,
+    /** Áudio → escrita (L2): um pouco mais rígido na sequência */
+    WRITING_CORRECT: 0.75,
+    WRITING_PARTIAL: 0.50,
 } as const;
 
 export type PracticeGrade = 'correct' | 'almost' | 'wrong';
@@ -19,6 +24,11 @@ export type DiffMark = { text: string; kind: DiffKind };
 
 const CJK_RE = /[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\uac00-\ud7af]/;
 const PUNCT_RE = /[\u2000-\u206f\u3000-\u303f\uff00-\uff0f\uff1a-\uff20\uff3b-\uff40\uff5b-\uff65\p{P}\p{S}]/gu;
+
+/** Remove combining marks so está ≈ esta. Accents do not affect Lab/escrita checks. */
+export function stripDiacritics(text: string): string {
+    return (text || '').normalize('NFD').replace(/\p{M}/gu, '');
+}
 
 export function clamp01(n: number): number {
     if (Number.isNaN(n)) return 0;
@@ -45,22 +55,35 @@ export function normalizeForDiff(text: string): string {
     return collapseSpaces(toHalfWidth((text || '').normalize('NFKC')));
 }
 
-/** Strict normalize for scoring L2 writing: also drop punctuation and case. */
+/** Strict normalize for scoring L2 writing: punct, case, width, and diacritics. */
 export function normalizeForWriting(text: string): string {
     return collapseSpaces(
-        toHalfWidth((text || '').normalize('NFKC'))
+        stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
             .replace(PUNCT_RE, ' ')
             .toLowerCase()
     ).replace(/\s+/g, '');
 }
 
-/** Token normalize for L1 translation: keep words, drop punct, lowercase. */
+/** Token normalize for L1 translation: keep words, drop punct, case and accents. */
 export function normalizeForTranslation(text: string): string {
     return collapseSpaces(
-        toHalfWidth((text || '').normalize('NFKC'))
+        stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
             .replace(PUNCT_RE, ' ')
             .toLowerCase()
     );
+}
+
+/** Accent-insensitive token key for Lab sequence checks. */
+export function labTokenKey(text: string): string {
+    return stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
+        .replace(PUNCT_RE, '')
+        .replace(/\s+/g, '')
+        .toLowerCase();
+}
+
+export function labTokenSequenceMatch(attempt: string[], target: string[]): boolean {
+    if (attempt.length !== target.length) return false;
+    return attempt.every((tok, i) => labTokenKey(tok) === labTokenKey(target[i] || ''));
 }
 
 export function levenshtein(a: string, b: string): number {
@@ -169,9 +192,18 @@ export function blendPracticeScore(opts: {
     };
 }
 
-export function gradeFromSimilarity(similarity: number): PracticeGrade {
-    if (similarity >= PRACTICE_SCORE.CORRECT) return 'correct';
-    if (similarity >= PRACTICE_SCORE.ALMOST) return 'almost';
+export function gradeFromSimilarity(
+    similarity: number,
+    mode: 'audio-traducao' | 'audio-escrita' = 'audio-traducao'
+): PracticeGrade {
+    const correctAt = mode === 'audio-escrita'
+        ? PRACTICE_SCORE.WRITING_CORRECT
+        : PRACTICE_SCORE.TRANSLATION_CORRECT;
+    const partialAt = mode === 'audio-escrita'
+        ? PRACTICE_SCORE.WRITING_PARTIAL
+        : PRACTICE_SCORE.TRANSLATION_PARTIAL;
+    if (similarity >= correctAt) return 'correct';
+    if (similarity >= partialAt) return 'almost';
     return 'wrong';
 }
 

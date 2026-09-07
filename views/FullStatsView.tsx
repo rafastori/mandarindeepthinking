@@ -69,7 +69,10 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
     const totalTimeMinutes = Math.round(dayStats.reduce((acc, d) => acc + d.totalTime, 0) / 60);
     const totalCorrect = dayStats.reduce((acc, d) => acc + d.totalCorrect, 0);
     const totalWrong = dayStats.reduce((acc, d) => acc + d.totalWrong, 0);
-    const globalAccuracy = (totalCorrect + totalWrong) > 0 ? Math.round((totalCorrect / (totalCorrect + totalWrong)) * 100) : 0;
+    const totalPartial = dayStats.reduce((acc, d) => acc + (d.totalPartial || 0), 0);
+    const graded = totalCorrect + totalWrong + totalPartial;
+    // Acurácia = só acertos cheios no numerador; meio certo entra no denominador (não infla).
+    const globalAccuracy = graded > 0 ? Math.round((totalCorrect / graded) * 100) : 0;
 
     const weeklyFormat = useMemo(() => getWeeklyComparison(), [dayStats]);
     const retentionFormat = useMemo(() => getRetentionRate(), [sessions]);
@@ -119,6 +122,7 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                     totalMinutes: Math.round(ds.totalTime / 60),
                     correct: ds.totalCorrect,
                     wrong: ds.totalWrong,
+                    partial: ds.totalPartial || 0,
                     sessionsCount: ds.sessions.length
                 }))
             };
@@ -399,14 +403,16 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                                                 <div className="flex gap-2 text-xs font-bold text-slate-600 uppercase tracking-wider items-center flex-wrap">
                                                     <span className="bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">{Math.round(ds.totalTime / 60)} Min</span>
                                                     <span className={`px-2 py-1 rounded-md shadow-sm border ${ds.totalWrong === 0 && ds.totalCorrect > 0 ? "bg-emerald-50 text-emerald-600 border-emerald-100" : "bg-white border-slate-100"}`}>
-                                                        {ds.totalCorrect} Acertos / {ds.totalWrong} Erros
+                                                        {ds.totalCorrect} Acertos / {ds.totalWrong} Erros{(ds.totalPartial || 0) > 0 ? ` / ${ds.totalPartial} meio certo` : ''}
                                                     </span>
                                                 </div>
                                             </div>
                                             <div className="divide-y divide-slate-50">
                                                 {ds.sessions.map((s, sIdx) => {
                                                     const duration = s.endTime ? Math.floor((s.endTime - s.startTime) / 1000) : 0;
-                                                    const sAcc = (s.correctAnswers + s.wrongAnswers) > 0 ? Math.round((s.correctAnswers / (s.correctAnswers + s.wrongAnswers)) * 100) : 0;
+                                                    const sPartial = s.partialAnswers || 0;
+                                                    const sGraded = s.correctAnswers + s.wrongAnswers + sPartial;
+                                                    const sAcc = sGraded > 0 ? Math.round((s.correctAnswers / sGraded) * 100) : 0;
                                                     return (
                                                         <div key={sIdx} className="p-5 hover:bg-brand-50/30 transition-colors">
                                                             <div className="flex justify-between items-center mb-4">
@@ -421,6 +427,11 @@ const FullStatsView: React.FC<FullStatsViewProps> = ({ detailedStats, libraryDat
                                                                     {sAcc}% Precisão
                                                                 </div>
                                                             </div>
+                                                            {sPartial > 0 && (
+                                                                <p className="text-[11px] text-amber-700 font-bold mb-3 text-center">
+                                                                    {sPartial} meio certo (½ XP · não conta como acerto cheio)
+                                                                </p>
+                                                            )}
                                                             <div className="grid grid-cols-3 gap-3 md:gap-4 text-center text-xs">
                                                                 <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
                                                                     <p className="font-black text-lg text-slate-700 mb-0.5">{Math.round(duration / 60)}<span className="text-xs font-medium text-slate-400">m</span></p>

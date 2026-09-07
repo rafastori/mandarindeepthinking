@@ -118,6 +118,15 @@ const SessionSummary: React.FC<SessionSummaryProps> = ({
                     </button>
                 </div>
 
+                {(sessionStats.partialAnswers || 0) > 0 && (
+                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-3 mb-6 text-center">
+                        <p className="text-2xl font-bold text-amber-300">{sessionStats.partialAnswers}</p>
+                        <p className="text-xs text-amber-200/90">
+                            Meio certo — ½ XP, bucket próprio (não infla acertos nem erros)
+                        </p>
+                    </div>
+                )}
+
                 {/* Tab Time Breakdown */}
                 {tabTimeEntries.length > 0 && (
                     <div className="bg-white/5 rounded-xl p-4 mb-6">

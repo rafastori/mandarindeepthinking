@@ -25,6 +25,7 @@ export const useDetailedStats = () => {
                         totalTime: 0,
                         totalCorrect: 0,
                         totalWrong: 0,
+                        totalPartial: 0,
                         totalWordsReviewed: 0,
                         totalPoints: 0,
                         firstSessionStart: session.startTime,
@@ -36,6 +37,7 @@ export const useDetailedStats = () => {
                 day.totalTime += (session.endTime - session.startTime) / 1000;
                 day.totalCorrect += session.correctAnswers;
                 day.totalWrong += session.wrongAnswers;
+                day.totalPartial = (day.totalPartial || 0) + (session.partialAnswers || 0);
                 day.totalWordsReviewed += session.wordsReviewed;
                 day.totalPoints += session.pointsEarned;
                 if (session.startTime < day.firstSessionStart) day.firstSessionStart = session.startTime;
@@ -202,7 +204,9 @@ export const useDetailedStats = () => {
             tempo: Math.round(d.totalTime / 60),
             acertos: d.totalCorrect,
             erros: d.totalWrong,
-            precisao: (d.totalCorrect + d.totalWrong) > 0 ? Math.round((d.totalCorrect / (d.totalCorrect + d.totalWrong)) * 100) : 0,
+            precisao: (d.totalCorrect + d.totalWrong + (d.totalPartial || 0)) > 0
+                ? Math.round((d.totalCorrect / (d.totalCorrect + d.totalWrong + (d.totalPartial || 0))) * 100)
+                : 0,
         }));
     };
 

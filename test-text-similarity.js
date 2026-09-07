@@ -24,9 +24,13 @@ function normalizeForDiff(text) {
     return collapseSpaces(toHalfWidth((text || '').normalize('NFKC')));
 }
 
+function stripDiacritics(text) {
+    return (text || '').normalize('NFD').replace(/\p{M}/gu, '');
+}
+
 function normalizeForWriting(text) {
     return collapseSpaces(
-        toHalfWidth((text || '').normalize('NFKC'))
+        stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
             .replace(PUNCT_RE, ' ')
             .toLowerCase()
     ).replace(/\s+/g, '');
@@ -34,10 +38,22 @@ function normalizeForWriting(text) {
 
 function normalizeForTranslation(text) {
     return collapseSpaces(
-        toHalfWidth((text || '').normalize('NFKC'))
+        stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
             .replace(PUNCT_RE, ' ')
             .toLowerCase()
     );
+}
+
+function labTokenKey(text) {
+    return stripDiacritics(toHalfWidth((text || '').normalize('NFKC')))
+        .replace(PUNCT_RE, '')
+        .replace(/\s+/g, '')
+        .toLowerCase();
+}
+
+function labTokenSequenceMatch(attempt, target) {
+    if (attempt.length !== target.length) return false;
+    return attempt.every((tok, i) => labTokenKey(tok) === labTokenKey(target[i] || ''));
 }
 
 function levenshtein(a, b) {
@@ -119,9 +135,11 @@ function blendPracticeScore({ mode, local, semantic }) {
     return { similarity: clamp01(0.25 * local + 0.75 * semantic), localWeight: 0.25, semanticWeight: 0.75 };
 }
 
-function gradeFromSimilarity(similarity) {
-    if (similarity >= 0.80) return 'correct';
-    if (similarity >= 0.55) return 'almost';
+function gradeFromSimilarity(similarity, mode) {
+    const correctAt = mode === 'audio-escrita' ? 0.75 : 0.65;
+    const partialAt = mode === 'audio-escrita' ? 0.50 : 0.45;
+    if (similarity >= correctAt) return 'correct';
+    if (similarity >= partialAt) return 'almost';
     return 'wrong';
 }
 
@@ -180,9 +198,22 @@ const blendTr = blendPracticeScore({ mode: 'audio-traducao', local: 0.4, semanti
 assert(Math.abs(blendTr.similarity - (0.25 * 0.4 + 0.75 * 0.9)) < 1e-9, 'translation weights 25/75');
 assert(blendTr.semanticWeight === 0.75, 'translation semantic weight');
 
-assert(gradeFromSimilarity(0.80) === 'correct', 'threshold correct');
-assert(gradeFromSimilarity(0.79) === 'almost', 'threshold almost');
-assert(gradeFromSimilarity(0.54) === 'wrong', 'threshold wrong');
+assert(gradeFromSimilarity(0.65) === 'correct', 'translation 65% = certo');
+assert(gradeFromSimilarity(0.64) === 'almost', 'translation 64% = meio certo');
+assert(gradeFromSimilarity(0.45) === 'almost', 'translation 45% = meio certo');
+assert(gradeFromSimilarity(0.44) === 'wrong', 'translation 44% = errado');
+assert(gradeFromSimilarity(0.75, 'audio-escrita') === 'correct', 'writing 75% = certo');
+assert(gradeFromSimilarity(0.74, 'audio-escrita') === 'almost', 'writing 74% = meio certo');
+assert(gradeFromSimilarity(0.50, 'audio-escrita') === 'almost', 'writing 50% = meio certo');
+assert(gradeFromSimilarity(0.49, 'audio-escrita') === 'wrong', 'writing 49% = errado');
+
+assert(stripDiacritics('está') === stripDiacritics('esta'), 'diacritics: está ≈ esta');
+assert(normalizeForWriting('café') === normalizeForWriting('cafe'), 'writing ignores accents');
+assert(normalizeForTranslation('Você está bem') === normalizeForTranslation('Voce esta bem'), 'translation ignores accents');
+assert(labTokenSequenceMatch(['está', 'bem'], ['esta', 'bem']), 'lab sequence ignores accents');
+assert(labTokenSequenceMatch(['esta', 'bem'], ['está', 'bem']), 'lab sequence reverse accents');
+assert(!labTokenSequenceMatch(['bem', 'está'], ['está', 'bem']), 'lab sequence order still matters');
+assert(!labTokenSequenceMatch(['está'], ['está', 'bem']), 'lab sequence length matters');
 
 const marks = diffTokens(['eu', 'estou', 'bem'], ['eu', 'fico', 'bem']);
 assert(marks.some(m => m.text === 'estou' && m.kind === 'del'), 'diff del expected token');

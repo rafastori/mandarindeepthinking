@@ -68,7 +68,7 @@ export async function scorePracticeAnswer(opts: {
     return {
         similarity: blended.similarity,
         percent: Math.round(blended.similarity * 100),
-        grade: gradeFromSimilarity(blended.similarity),
+        grade: gradeFromSimilarity(blended.similarity, opts.mode),
         local: blended.local,
         semantic: blended.semantic,
         localWeight: blended.localWeight,

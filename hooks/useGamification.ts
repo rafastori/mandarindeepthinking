@@ -50,6 +50,7 @@ export interface UseGamificationResult {
     endSession: () => SessionStats;
     recordCorrect: (basePoints?: number) => void;
     recordWrong: () => void;
+    recordPartial: (basePoints?: number) => void;
     setActiveTab: (tab: string) => void;
     checkAndUpdateStreak: (stats: Stats) => Stats;
     getUpdatedStats: () => Partial<Stats>;
@@ -69,6 +70,7 @@ export function useGamification(
         wordsReviewed: 0,
         correctAnswers: 0,
         wrongAnswers: 0,
+        partialAnswers: 0,
         tabTime: {},
         pointsEarned: 0,
     });
@@ -267,6 +269,18 @@ export function useGamification(
         }));
     }, []);
 
+    /** Meio certo: metade do XP, bucket próprio — não infla acertos nem erros. */
+    const recordPartial = useCallback((basePoints: number = 5) => {
+        const pointsGained = Number.isFinite(basePoints) ? Math.max(0, Math.round(basePoints)) : 5;
+        setSessionStats(prev => ({
+            ...prev,
+            wordsReviewed: prev.wordsReviewed + 1,
+            partialAnswers: (prev.partialAnswers || 0) + 1,
+            pointsEarned: prev.pointsEarned + pointsGained,
+        }));
+        setSessionPoints(prev => prev + pointsGained);
+    }, []);
+
     const startSession = useCallback(() => {
         // Update baseline to current persisted stats when starting a new session
         baselineStatsRef.current = persistedStats;
@@ -276,6 +290,7 @@ export function useGamification(
             wordsReviewed: 0,
             correctAnswers: 0,
             wrongAnswers: 0,
+            partialAnswers: 0,
             tabTime: {},
             pointsEarned: 0,
         });
@@ -304,6 +319,7 @@ export function useGamification(
             ...persistedStats, // Keep other fields like favoriteConfigs and ignoredReviewWords
             correct: (baselineStatsRef.current.correct || 0) + sessionStats.correctAnswers,
             wrong: (baselineStatsRef.current.wrong || 0) + sessionStats.wrongAnswers,
+            partial: (baselineStatsRef.current.partial || 0) + (sessionStats.partialAnswers || 0),
             history: persistedStats.history || [],
             wordCounts: persistedStats.wordCounts || {},
             totalTime: (baselineStatsRef.current.totalTime || 0) + totalSessionTime,
@@ -342,6 +358,7 @@ export function useGamification(
             }, {} as Record<string, number>),
             inventory: [...(persistedStats.inventory || []), ...sessionInventory],
             achievements: persistedStats.achievements || [],
+            partial: (baselineStatsRef.current.partial || 0) + (sessionStats.partialAnswers || 0),
         };
     }, [sessionStats, persistedStats, sessionPoints, sessionInventory]);
 
@@ -364,6 +381,7 @@ export function useGamification(
         endSession,
         recordCorrect,
         recordWrong,
+        recordPartial,
         setActiveTab,
         checkAndUpdateStreak,
         getUpdatedStats,
