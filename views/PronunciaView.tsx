@@ -3,7 +3,7 @@ import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import AudioVisualizer from '../components/AudioVisualizer';
 import { StudyItem, SupportedLanguage } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
 import { useAudioRecorder } from '../hooks/useAudioRecorder';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 
@@ -28,7 +28,7 @@ const isCJKLanguage = (lang: SupportedLanguage): boolean => {
 };
 
 const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop, playingId } = useAlignedNativeSpeech(data, activeFolderFilters);
     const {
         isRecording,
         recordingTime,
@@ -133,8 +133,13 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult,
 
     const handleListen = useCallback(() => {
         if (!currentItem) return;
-        speak(currentItem.text, currentItem.language);
-    }, [currentItem, speak]);
+        const audioId = `pronuncia-${currentItem.id}`;
+        if (playingId === audioId) {
+            stop();
+            return;
+        }
+        speak(currentItem.text, currentItem.language, audioId, currentItem.id);
+    }, [currentItem, playingId, speak, stop]);
 
     const handleRecord = useCallback(() => {
         if (isRecording) {

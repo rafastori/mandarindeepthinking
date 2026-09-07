@@ -4,7 +4,7 @@ import { motion, AnimatePresence, Variants, PanInfo, useMotionValue, useTransfor
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import { StudyItem, Keyword } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
 import { Star, Flame, RotateCcw, Volume2, Square, ArrowLeftRight, Zap, ArrowRight } from 'lucide-react';
 import FavoriteModal from '../components/FavoriteModal';
 
@@ -274,7 +274,7 @@ interface SwipeCardProps {
     isGerman: boolean;
     onSelfAssess: (correct: boolean) => void;
     playingId: string | null;
-    speak: (text: string, lang: any, id: string) => void;
+    speak: (text: string, lang: any, id: string, sentenceItemId?: string) => void;
     stop: () => void;
     audioId: string;
 }
@@ -361,7 +361,7 @@ const SwipeCard: React.FC<SwipeCardProps> = ({ question, isGerman, onSelfAssess,
                                 )}
                                 {/* Audio button */}
                                 <button
-                                    onClick={() => playingId === audioId ? stop() : speak(question.sentence, (question.language || 'zh') as any, audioId)}
+                                    onClick={() => playingId === audioId ? stop() : speak(question.sentence, (question.language || 'zh') as any, audioId, question.sentenceItemId)}
                                     className="mt-2 flex items-center gap-1.5 text-xs text-slate-400 hover:text-brand-600 transition-colors"
                                 >
                                     {playingId === audioId
@@ -418,7 +418,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     activeFolderFilters = [], showOnlyErrors = false,
     wordCounts = {}, stats, updateFavoriteConfig
 }) => {
-    const { speak, stop, playingId } = usePuterSpeech();
+    const { speak, stop, playingId } = useAlignedNativeSpeech(data, activeFolderFilters);
 
     // ─── Game States ─────────────────────────
     const [currentIndex, setCurrentIndex]   = useState(0);
@@ -571,6 +571,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                     list.push({
                         id: savedWord.id, word: savedWord.word,
                         wordMeaning: savedWord.meaning, sentence,
+                        sentenceItemId: item.id.toString(),
                         translation: item.translation, pinyin: savedWord.pinyin,
                         language: item.language || savedWord.language
                     });
@@ -583,15 +584,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         // `type: 'word'` (que o laço acima ignora) e guardam a frase de origem em
         // `originalSentence`, então nunca geravam questão. Aqui recuperamos a frase
         // de contexto de cada palavra salva e criamos a questão que faltava.
-        const contextByKey = new Map<string, { sentence: string; translation: string }>();
+        const contextByKey = new Map<string, { sentence: string; translation: string; sentenceItemId?: string }>();
         currentData.forEach(item => {
             // Card de palavra: usa a frase original de onde a palavra foi salva.
             if (item.type === 'word' || item.tokens?.length === 1) {
                 const wk = (item.chinese || '').toLowerCase().trim();
                 if (wk && !contextByKey.has(wk)) {
+                    const sourceSentence = currentData.find(other =>
+                        other.type !== 'word'
+                        && other.chinese
+                        && (other.chinese === item.originalSentence || other.chinese === item.chinese)
+                    );
                     contextByKey.set(wk, {
                         sentence: item.originalSentence || item.chinese,
                         translation: item.translation,
+                        sentenceItemId: sourceSentence?.id.toString(),
                     });
                 }
             }
@@ -599,7 +606,11 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             item.keywords?.forEach(k => {
                 const kk = k.word.toLowerCase().trim();
                 if (kk && !contextByKey.has(kk)) {
-                    contextByKey.set(kk, { sentence: item.chinese, translation: item.translation });
+                    contextByKey.set(kk, {
+                        sentence: item.chinese,
+                        translation: item.translation,
+                        sentenceItemId: item.type !== 'word' ? item.id.toString() : undefined,
+                    });
                 }
             });
         });
@@ -612,6 +623,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 id: savedWord.id, word: savedWord.word,
                 wordMeaning: savedWord.meaning,
                 sentence: ctx?.sentence || savedWord.word,
+                sentenceItemId: ctx?.sentenceItemId,
                 translation: ctx?.translation || savedWord.meaning,
                 pinyin: savedWord.pinyin,
                 language: savedWord.language
@@ -977,7 +989,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                                     <button
                                         onClick={() => {
                                             const aid = `practice-sentence-${currentIndex}`;
-                                            playingId === aid ? stop() : speak(currentQ.sentence, (currentQ.language || 'zh') as any, aid);
+                                            playingId === aid ? stop() : speak(currentQ.sentence, (currentQ.language || 'zh') as any, aid, currentQ.sentenceItemId);
                                         }}
                                         className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-brand-600 transition-colors"
                                     >
