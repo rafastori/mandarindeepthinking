@@ -447,6 +447,7 @@ const AlignmentEditorModal: React.FC<Props> = ({
                         )}
 
                         <PhraseTrimEditor
+                            key={selectedId}
                             start={selectedCue?.start}
                             end={selectedCue?.end}
                             currentTime={currentTime}

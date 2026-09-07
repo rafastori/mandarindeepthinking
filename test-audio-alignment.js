@@ -158,6 +158,42 @@ assert(Math.abs(already.start - 6.2) < 1e-9, 'cues after intro stay put');
 assert(cuesLookUnshifted([{ start: 0, end: 3 }], 6), '0-based alignment looks unshifted');
 assert(!cuesLookUnshifted([{ start: 6, end: 9 }], 6), 'post-intro alignment is not unshifted');
 
+function setManualCueTimes(cues, itemId, patch, duration) {
+    const MIN = 0.18;
+    const dur = Math.max(duration, 0);
+    const existing = cues.find(c => c.itemId === itemId);
+    let start = patch.start ?? existing?.start ?? 0;
+    let end = patch.end ?? existing?.end ?? start + MIN;
+    if (!dur) {
+        start = Math.max(0, start);
+        end = Math.max(start + MIN, end);
+    } else {
+        start = Math.min(Math.max(start, 0), dur);
+        end = Math.min(Math.max(end, 0), dur);
+        if (end < start + MIN) end = Math.min(dur, start + MIN);
+        if (end <= start) start = Math.max(0, end - MIN);
+    }
+    const cue = { itemId, start, end, source: 'manual' };
+    let found = false;
+    const next = cues.map(c => {
+        if (c.itemId === itemId) {
+            found = true;
+            return cue;
+        }
+        const overlaps = c.start < cue.end && c.end > cue.start;
+        if (!overlaps) return c;
+        if (c.start < cue.start) {
+            return { ...c, end: Math.max(c.start, cue.start), source: 'mixed' };
+        }
+        const trimmedStart = Math.max(c.start, cue.end);
+        let trimmedEnd = Math.max(c.end, trimmedStart + MIN);
+        if (dur > 0) trimmedEnd = Math.min(trimmedEnd, dur);
+        return { ...c, start: trimmedStart, end: trimmedEnd, source: 'mixed' };
+    });
+    if (!found) next.push(cue);
+    return next;
+}
+
 function updateCueTimes(cues, itemId, patch, duration) {
     const exists = cues.some(c => c.itemId === itemId);
     if (!exists) {
@@ -239,6 +275,28 @@ assert(parseClockPrecise('0:17,7') === 17.7, 'comma decimal');
 assert(parseClockPrecise('1:99') == null, 'invalid seconds');
 assert(parseClockPrecise('abc') == null, 'garbage');
 assert(formatClockPrecise(16.6) === '0:16.6', 'format tenth');
+
+const phrases = [
+    { itemId: '1', start: 10, end: 16.6, source: 'auto' },
+    { itemId: '2', start: 16.6, end: 17.7, source: 'auto' },
+    { itemId: '3', start: 17.7, end: 20, source: 'auto' },
+];
+const pulledLeft = setManualCueTimes(phrases, '2', { start: 15 }, 30);
+assert(pulledLeft[0].itemId === '1' && pulledLeft[1].itemId === '2' && pulledLeft[2].itemId === '3', 'manual edit keeps phrase order');
+assert(Math.abs(pulledLeft[1].start - 15) < 1e-9, 'start dragged left is kept (not pulled back to previous end)');
+assert(Math.abs(pulledLeft[0].end - 15) < 1e-9, 'previous phrase is shortened instead');
+assert(Math.abs(pulledLeft[1].end - 17.7) < 1e-9, 'this phrase end stays put');
+
+const pushedRight = setManualCueTimes(phrases, '2', { end: 19 }, 30);
+assert(Math.abs(pushedRight[1].end - 19) < 1e-9, 'end dragged right is kept');
+assert(Math.abs(pushedRight[2].start - 19) < 1e-9, 'next phrase start is pushed forward');
+
+const typed = setManualCueTimes(phrases, '2', { start: 15.2, end: 18.4 }, 30);
+assert(Math.abs(typed[1].start - 15.2) < 1e-9 && Math.abs(typed[1].end - 18.4) < 1e-9, 'typed range wins');
+assert(Math.abs(typed[0].end - 15.2) < 1e-9 && Math.abs(typed[2].start - 18.4) < 1e-9, 'neighbors yield to typed range');
+
+const noDuration = setManualCueTimes(phrases, '2', { start: 14.5 }, 0);
+assert(Math.abs(noDuration[1].start - 14.5) < 1e-9, 'duration 0 does not clamp typed/dragged start to 0');
 
 if (failed) {
     console.error(failed, 'failed');
