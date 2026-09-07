@@ -3,8 +3,10 @@ import fs from 'fs';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { formatSaoPauloBuildTime } from './utils/appBuildTime';
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
+const APP_BUILD_TIME = formatSaoPauloBuildTime();
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
@@ -18,7 +20,8 @@ export default defineConfig(({ mode }) => {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       // Só no DEV: produção usa /api/generate com a chave no servidor
       'process.env.OPENROUTER_API_KEY': JSON.stringify(mode === 'development' ? env.OPENROUTER_API_KEY : ''),
-      'process.env.APP_VERSION': JSON.stringify(pkg.version)
+      'process.env.APP_VERSION': JSON.stringify(pkg.version),
+      'process.env.APP_BUILD_TIME': JSON.stringify(APP_BUILD_TIME),
     },
     resolve: {
       alias: {
