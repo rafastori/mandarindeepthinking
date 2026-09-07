@@ -1,14 +1,12 @@
 import React, { useMemo, useRef, useState } from 'react';
 import Icon from './Icon';
-import { processTextWithGemini, generateRawText } from '../services/gemini';
-import { nativeAudioLibrary } from '../services/nativeAudioLibrary';
+import { generateRawText } from '../services/gemini';
 import { StudyItem, SupportedLanguage, STUDY_LANGUAGES } from '../types';
 import { extractFolderPaths } from '../services/folderService';
 import {
     buildSplitPreview,
     DEFAULT_TURNS_PER_FOLDER,
     estimateDurationMs,
-    folderPrefix,
     formatMinutes,
     isLargeImportText,
 } from '../utils/dialogueSplit';
@@ -17,7 +15,6 @@ import 'flag-icons/css/flag-icons.min.css';
 
 interface ImportModalProps {
     onClose: () => void;
-    onImport: (items: StudyItem[], folderPath: string, timeBase?: number) => void | Promise<void>;
     existingItems?: StudyItem[];
     initialFolder?: string;
     onCreateSplitJob?: (input: {
@@ -27,19 +24,17 @@ interface ImportModalProps {
         mode: 'direct' | 'translate';
         turnsPerFolder: number;
         audioFile?: File | null;
+        split?: boolean;
     }) => Promise<SplitImportJob>;
-    onGenerateSplitChunk?: (jobId: string, index: number) => Promise<void>;
-    onGenerateAllSplit?: (jobId: string) => Promise<void>;
+    onQueueJob?: (job: SplitImportJob, mode: 'first' | 'all') => void;
 }
 
 const ImportModal: React.FC<ImportModalProps> = ({
     onClose,
-    onImport,
     existingItems = [],
     initialFolder = '',
     onCreateSplitJob,
-    onGenerateSplitChunk,
-    onGenerateAllSplit,
+    onQueueJob,
 }) => {
     const [text, setText] = useState('');
     const [aiPrompt, setAiPrompt] = useState('');
@@ -104,53 +99,29 @@ const ImportModal: React.FC<ImportModalProps> = ({
             return;
         }
         if (!text.trim()) return;
+        if (!onCreateSplitJob || !onQueueJob) {
+            alert('Importação em segundo plano indisponível. Recarregue o app.');
+            return;
+        }
 
         setLoading(true);
-        setProgress('');
+        setProgress('Enfileirando…');
         try {
-            if (splitEnabled && preview.length > 1 && onCreateSplitJob) {
-                setProgress(`Preparando ${preview.length} subpastas…`);
-                const job = await onCreateSplitJob({
-                    parentFolder: folderPath.trim(),
-                    text,
-                    language,
-                    mode,
-                    turnsPerFolder,
-                    audioFile,
-                });
-
-                if (generateMode === 'all' && onGenerateAllSplit) {
-                    onClose();
-                    await onGenerateAllSplit(job.id);
-                    return;
-                }
-
-                setProgress(`Gerando ${job.chunks[0]?.folderName} com DeepSeek…`);
-                await onGenerateSplitChunk?.(job.id, 0);
-                const rest = job.chunks.length - 1;
-                alert(
-                    rest > 0
-                        ? `✅ ${job.chunks[0].folderName} pronta. Faltam ${rest} subpasta(s) — gere a próxima no menu de pastas quando quiser.`
-                        : `✅ ${job.chunks[0].folderName} importada.`
-                );
-                onClose();
-                return;
-            }
-
-            const results = await processTextWithGemini(text, mode, language);
-            if (audioFile) {
-                await nativeAudioLibrary.putGenericFile(
-                    folderPrefix(folderPath.trim()),
-                    audioFile,
-                    audioFile.name
-                );
-            }
-            await onImport(results, folderPath.trim());
+            const split = splitEnabled && preview.length > 1;
+            const job = await onCreateSplitJob({
+                parentFolder: folderPath.trim(),
+                text,
+                language,
+                mode,
+                turnsPerFolder,
+                audioFile,
+                split,
+            });
             onClose();
+            onQueueJob(job, split && generateMode === 'all' ? 'all' : 'first');
         } catch (error) {
             console.error(error);
-            alert('Falha ao processar texto. Tente novamente.');
-        } finally {
+            alert('Falha ao preparar a importação. Tente novamente.');
             setLoading(false);
             setProgress('');
         }
@@ -345,14 +316,14 @@ const ImportModal: React.FC<ImportModalProps> = ({
                                         onClick={() => setGenerateMode('first')}
                                         className={`p-2 rounded-lg border-2 text-xs font-medium ${generateMode === 'first' ? 'border-brand-500 bg-brand-50 text-brand-700' : 'border-slate-200 text-slate-600'}`}
                                     >
-                                        Só a primeira agora
+                                        Só a 1ª em segundo plano
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => setGenerateMode('all')}
                                         className={`p-2 rounded-lg border-2 text-xs font-medium ${generateMode === 'all' ? 'border-brand-500 bg-brand-50 text-brand-700' : 'border-slate-200 text-slate-600'}`}
                                     >
-                                        Todas em sequência
+                                        Todas em segundo plano
                                     </button>
                                 </div>
                             </div>
@@ -406,7 +377,7 @@ const ImportModal: React.FC<ImportModalProps> = ({
                     <div className="mt-3 flex items-center gap-3">
                         <div className="flex-1 flex items-start gap-2 text-xs text-slate-400 bg-slate-50 p-2 rounded-lg">
                             <Icon name="info" size={14} className="mt-0.5 flex-shrink-0" />
-                            <p>Cole um texto, carregue um .txt ou use o botão mágico ✨.</p>
+                            <p>A IA roda em segundo plano. Você pode fechar e continuar estudando.</p>
                         </div>
                         <button
                             onClick={handleGenerateText}
@@ -438,14 +409,14 @@ const ImportModal: React.FC<ImportModalProps> = ({
                         {loading ? (
                             <>
                                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                                Processando...
+                                Enfileirando…
                             </>
                         ) : (
                             <>
                                 <Icon name="sparkles" size={20} />
                                 {splitEnabled && preview.length > 1
-                                    ? (generateMode === 'first' ? `Processar ${preview[0]?.folderName || '1ª pasta'}` : `Processar ${preview.length} pastas`)
-                                    : 'Processar Texto'}
+                                    ? (generateMode === 'first' ? `Gerar ${preview[0]?.folderName} em segundo plano` : `Gerar ${preview.length} pastas em segundo plano`)
+                                    : 'Gerar em segundo plano'}
                             </>
                         )}
                     </button>

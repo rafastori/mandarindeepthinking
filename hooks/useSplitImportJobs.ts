@@ -8,6 +8,8 @@ import {
     applyChunkAudioOffset,
     buildSplitPreview,
     DEFAULT_TURNS_PER_FOLDER,
+    estimateDurationMs,
+    extractDialogueTurns,
     folderPrefix,
     getAudioDuration,
 } from '../utils/dialogueSplit';
@@ -28,6 +30,15 @@ interface CreateJobInput {
     mode: 'direct' | 'translate';
     turnsPerFolder?: number;
     audioFile?: File | null;
+    split?: boolean;
+}
+
+export interface ReadyFolder {
+    jobId: string;
+    folderPath: string;
+    folderName: string;
+    parentFolder: string;
+    remaining: number;
 }
 
 interface GenerateOptions {
@@ -38,6 +49,7 @@ export function useSplitImportJobs() {
     const [jobs, setJobs] = useState<SplitImportJob[]>([]);
     const [busyJobId, setBusyJobId] = useState<string | null>(null);
     const [busyIndex, setBusyIndex] = useState<number | null>(null);
+    const [lastReady, setLastReady] = useState<ReadyFolder | null>(null);
     const cancelAllRef = useRef(false);
     const busyRef = useRef(false);
 
@@ -56,7 +68,18 @@ export function useSplitImportJobs() {
     const createJob = useCallback(async (input: CreateJobInput): Promise<SplitImportJob> => {
         const parent = input.parentFolder.trim().replace(/\/+$/, '');
         const turnsPerFolder = input.turnsPerFolder || DEFAULT_TURNS_PER_FOLDER;
-        const preview = buildSplitPreview(input.text, parent, turnsPerFolder);
+        const useSplit = input.split !== false;
+        const preview = useSplit
+            ? buildSplitPreview(input.text, parent, turnsPerFolder)
+            : [{
+                index: 0,
+                folderName: folderPrefix(parent),
+                folderPath: parent,
+                text: input.text.trim(),
+                turnCount: extractDialogueTurns(input.text).length || 1,
+                estimatedMs: estimateDurationMs(input.text),
+                charCount: input.text.trim().length,
+            }];
         if (preview.length === 0) {
             throw new Error('Não foi possível dividir o texto.');
         }
@@ -73,7 +96,9 @@ export function useSplitImportJobs() {
             audioLessonId = folderPrefix(parent);
             audioDuration = await getAudioDuration(input.audioFile);
             await nativeAudioLibrary.putGenericFile(audioLessonId, input.audioFile, input.audioFile.name);
-            withAudio = allocateAudioRanges(preview, audioDuration);
+            withAudio = useSplit && preview.length > 1
+                ? allocateAudioRanges(preview, audioDuration)
+                : withAudio.map(chunk => ({ ...chunk, audioStart: 0, audioEnd: audioDuration }));
         }
 
         const job: SplitImportJob = {
@@ -145,6 +170,14 @@ export function useSplitImportJobs() {
             );
             await localDB.putSplitImportJob({ ...latest, chunks: doneChunks });
             await refresh();
+            const remaining = doneChunks.filter(c => c.status !== 'done').length;
+            setLastReady({
+                jobId,
+                folderPath: chunk.folderPath,
+                folderName: chunk.folderName,
+                parentFolder: latest.parentFolder,
+                remaining,
+            });
             return { itemCount: items.length, folderPath: chunk.folderPath };
         } catch (error: any) {
             const latest = await localDB.getSplitImportJob(jobId);
@@ -209,6 +242,8 @@ export function useSplitImportJobs() {
         await localDB.deleteSplitImportJob(jobId);
         await refresh();
     }, [refresh]);
+
+    const clearLastReady = useCallback(() => setLastReady(null), []);
 
     /** Liga um MP3/WAV escolhido à pasta. Se houver split, o arquivo é o diálogo inteiro e cada subpasta ganha o recorte. */
     const attachAudioToFolder = useCallback(async (folderPath: string, file: File) => {
@@ -286,6 +321,8 @@ export function useSplitImportJobs() {
         dismissJob,
         attachAudioToFolder,
         getFolderAudioCue,
+        lastReady,
+        clearLastReady,
         refresh,
     };
 }

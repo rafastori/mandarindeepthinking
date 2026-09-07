@@ -273,7 +273,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({
 
             {/* Versão + data/hora de build (America/Sao_Paulo) */}
             <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-white/40 font-mono pointer-events-none select-none">
-                v{process.env.APP_VERSION || '0.1.11'}
+                v{process.env.APP_VERSION || '0.1.12'}
                 {process.env.APP_BUILD_TIME ? ` · ${process.env.APP_BUILD_TIME}` : ''}
             </span>
         </div>

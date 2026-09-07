@@ -86,6 +86,18 @@ const App: React.FC = () => {
     const { engine, setEngine } = useSpeechRecognition();
     const voiceRecording = useVoiceRecording();
     const splitImport = useSplitImportJobs();
+    const importRunRef = useRef(Promise.resolve());
+
+    const runImportJob = useCallback((fn: () => Promise<unknown>) => {
+        importRunRef.current = importRunRef.current.then(async () => {
+            try {
+                await fn();
+            } catch (error) {
+                console.error(error);
+            }
+        });
+        return importRunRef.current;
+    }, []);
 
     // Bloqueia operações de stats até migração completar (evita zerar dados em dispositivo novo)
     const [migrationDone, setMigrationDone] = useState(false);
@@ -895,23 +907,20 @@ const App: React.FC = () => {
                     jobs={splitImport.activeJobs}
                     busyJobId={splitImport.busyJobId}
                     busyIndex={splitImport.busyIndex}
-                    onGenerateNext={async (jobId) => {
-                        try {
-                            const result = await splitImport.generateNext(jobId, splitSaveOptions);
-                            if (result.folderPath) updateFolderFilters([result.folderPath]);
-                        } catch (error: any) {
-                            alert(error?.message || 'Falha ao gerar a próxima pasta.');
-                        }
+                    lastReady={splitImport.lastReady}
+                    onGenerateNext={(jobId) => {
+                        runImportJob(() => splitImport.generateNext(jobId, splitSaveOptions));
                     }}
-                    onGenerateAll={async (jobId) => {
-                        try {
-                            await splitImport.generateAllRemaining(jobId, splitSaveOptions);
-                        } catch (error: any) {
-                            alert(error?.message || 'Falha ao gerar as pastas.');
-                        }
+                    onGenerateAll={(jobId) => {
+                        runImportJob(() => splitImport.generateAllRemaining(jobId, splitSaveOptions));
                     }}
                     onStop={splitImport.stopGenerateAll}
                     onDismiss={(jobId) => { void splitImport.dismissJob(jobId); }}
+                    onOpenFolder={(path) => {
+                        updateFolderFilters([path]);
+                        setTab('leitura');
+                    }}
+                    onClearReady={splitImport.clearLastReady}
                 />
             )}
             <main className={`flex-1 overflow-y-auto overflow-x-hidden w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
@@ -929,16 +938,17 @@ const App: React.FC = () => {
             {showImport && (
                 <ImportModal
                     onClose={() => { setShowImport(false); setInitialImportFolder(''); }}
-                    onImport={handleImportBatch}
                     existingItems={libraryData}
                     initialFolder={initialImportFolder}
                     onCreateSplitJob={splitImport.createJob}
-                    onGenerateSplitChunk={async (jobId, index) => {
-                        const result = await splitImport.generateChunk(jobId, index, splitSaveOptions);
-                        if (result.folderPath) updateFolderFilters([result.folderPath]);
-                    }}
-                    onGenerateAllSplit={async (jobId) => {
-                        await splitImport.generateAllRemaining(jobId, splitSaveOptions);
+                    onQueueJob={(job, mode) => {
+                        runImportJob(async () => {
+                            if (mode === 'all') {
+                                await splitImport.generateAllRemaining(job.id, splitSaveOptions);
+                            } else {
+                                await splitImport.generateNext(job.id, splitSaveOptions);
+                            }
+                        });
                     }}
                 />
             )}
@@ -968,13 +978,8 @@ const App: React.FC = () => {
                         alert(error?.message || 'Falha ao adicionar o áudio.');
                     }
                 }}
-                onGeneratePending={async (path) => {
-                    try {
-                        const result = await splitImport.generateChunkByPath(path, splitSaveOptions);
-                        if (result.folderPath) updateFolderFilters([result.folderPath]);
-                    } catch (error: any) {
-                        alert(error?.message || 'Falha ao gerar esta pasta.');
-                    }
+                onGeneratePending={(path) => {
+                    runImportJob(() => splitImport.generateChunkByPath(path, splitSaveOptions));
                 }}
                 isOpen={showGlobalFolderTree}
                 onClose={() => setShowGlobalFolderTree(false)}
