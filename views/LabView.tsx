@@ -1,8 +1,8 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
-import { StudyItem } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech'; // Atualizado para Puter TTS
+import { StudyItem, SupportedLanguage } from '../types';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
 
 interface LabViewProps {
     data: StudyItem[];
@@ -11,7 +11,7 @@ interface LabViewProps {
 }
 
 const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters = [] }) => {
-    const { speak } = usePuterSpeech(); // Usando Puter TTS
+    const { speak, stop, playingId, hasNativeAlignment } = useAlignedNativeSpeech(data, activeFolderFilters);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedTokens, setSelectedTokens] = useState<{ id: number, text: string }[]>([]);
     const [shuffledTokens, setShuffledTokens] = useState<{ id: number, text: string }[]>([]);
@@ -39,6 +39,22 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     }, [data, activeFolderFilters]);
 
     const currentSentence = sentences[currentIdx];
+    const audioId = currentSentence ? `lab-${currentSentence.id}` : '';
+    const isListening = !!audioId && playingId === audioId;
+
+    const handleListen = useCallback(() => {
+        if (!currentSentence) return;
+        if (playingId === audioId) {
+            stop();
+            return;
+        }
+        speak(
+            currentSentence.chinese,
+            (currentSentence.language || 'zh') as SupportedLanguage,
+            audioId,
+            currentSentence.id.toString()
+        );
+    }, [audioId, currentSentence, playingId, speak, stop]);
 
     // Reinicia o jogo para a frase atual
     const initGame = () => {
@@ -48,6 +64,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         setShuffledTokens([...tokens].sort(() => 0.5 - Math.random()));
         setSelectedTokens([]);
         setStatus('playing');
+        stop();
     };
 
     useEffect(() => {
@@ -75,8 +92,12 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         if (attempt === target) {
             setStatus('correct');
 
-            // <--- 3. FALA A FRASE AO ACERTAR
-            speak(currentSentence.chinese, (currentSentence.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+            speak(
+                currentSentence.chinese,
+                (currentSentence.language || 'zh') as SupportedLanguage,
+                audioId,
+                currentSentence.id.toString()
+            );
 
             setTimeout(() => {
                 onResult(true, "sentence_builder");
@@ -129,10 +150,25 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                     )}
                 </div>
 
-                {/* Tradução */}
-                <p className="text-center text-slate-500 italic mb-8 text-sm px-4">
+                {/* Tradução — a frase em chinês continua oculta */}
+                <p className="text-center text-slate-500 italic mb-4 text-sm px-4">
                     "{currentSentence.translation}"
                 </p>
+
+                <button
+                    type="button"
+                    onClick={handleListen}
+                    className={`mx-auto mb-8 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${isListening
+                        ? 'bg-emerald-600 text-white border-emerald-600'
+                        : hasNativeAlignment
+                            ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
+                            : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'
+                    }`}
+                    title={hasNativeAlignment ? 'Ouvir o trecho nativo da aula' : 'Ouvir a frase (TTS)'}
+                >
+                    <Icon name={isListening ? 'square' : 'volume-2'} size={14} />
+                    {isListening ? 'Parar' : 'Ouvir'}
+                </button>
 
                 {/* Área das Peças */}
                 <div className="flex flex-wrap gap-2 justify-center content-center min-h-[100px]">
