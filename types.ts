@@ -107,6 +107,9 @@ export interface Player {
     isBot?: boolean;
 }
 
+/** Modo da sessão em Treino → Prática. Tradicional permanece o default. */
+export type PracticeSessionKind = 'tradicional' | 'audio-traducao' | 'audio-escrita';
+
 // ATUALIZAÇÃO: Card agora tem distratores
 export interface GameCard {
     word: string;

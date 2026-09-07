@@ -984,12 +984,12 @@ const EMBEDDING_MODEL = 'gemini-embedding-2-preview';
  * Used by the Neural Map "Cosmos Semântico" feature for semantic galaxy discovery.
  *
  * @param texts - Array of strings to embed (e.g., "结婚 (jiéhūn) - casar")
- * @param taskType - RETRIEVAL_DOCUMENT for indexing, RETRIEVAL_QUERY for searching
+ * @param taskType - RETRIEVAL_DOCUMENT for indexing, RETRIEVAL_QUERY for searching, SEMANTIC_SIMILARITY for comparing two texts
  * @returns Array of number arrays (768D vectors), one per input text
  */
 export async function generateWordEmbeddings(
     texts: string[],
-    taskType: 'RETRIEVAL_DOCUMENT' | 'RETRIEVAL_QUERY' = 'RETRIEVAL_DOCUMENT'
+    taskType: 'RETRIEVAL_DOCUMENT' | 'RETRIEVAL_QUERY' | 'SEMANTIC_SIMILARITY' = 'RETRIEVAL_DOCUMENT'
 ): Promise<number[][]> {
     if (texts.length === 0) return [];
 
@@ -1040,6 +1040,78 @@ export async function generateWordEmbeddings(
         return await response.json();
     } catch (error) {
         console.error('[Embeddings] PROD Error:', error);
+        throw error;
+    }
+}
+
+export type PracticeHelpPhase = 'hint' | 'explain';
+
+const LANG_LABEL: Record<string, string> = {
+    de: 'Alemão', zh: 'Chinês (Mandarim)', pt: 'Português', en: 'Inglês',
+    fr: 'Francês', es: 'Espanhol', it: 'Italiano', ja: 'Japonês', ko: 'Coreano',
+};
+
+/**
+ * Dica (pré) ou explicação do erro (pós) na Prática de áudio.
+ * OpenRouter/DeepSeek — não é chamado automaticamente; só no botão do cartão.
+ */
+export async function getPracticeAiHelp(opts: {
+    phase: PracticeHelpPhase;
+    mode: 'audio-traducao' | 'audio-escrita';
+    studyLang?: string;
+    sentence: string;
+    expected: string;
+    userAnswer?: string;
+}): Promise<string> {
+    const studyName = LANG_LABEL[opts.studyLang || 'zh'] || opts.studyLang || 'o idioma de estudo';
+    const isTranslation = opts.mode === 'audio-traducao';
+
+    const systemInstruction = opts.phase === 'hint'
+        ? `Você é um tutor de ${studyName}. Dê UMA dica curta (2–4 frases) em Português do Brasil.
+NÃO revele a resposta completa. Não escreva a frase esperada por extenso.
+${isTranslation
+    ? 'O aluno ouviu um áudio na língua de estudo e vai escrever a TRADUÇÃO em português (L1). Dê uma pista de sentido (tema, tom, tipo de frase) sem entregar a tradução.'
+    : 'O aluno ouviu um áudio e vai ESCREVER o que ouviu na língua de estudo (L2, ditado). Dê uma pista de estrutura (nº de sílabas/caracteres aproximado, primeira palavra, padrão gramatical) sem copiar a frase inteira.'}
+Responda só a dica, sem título.`
+        : `Você é um tutor de ${studyName}. Explique o ERRO do aluno em Português do Brasil (3–6 frases).
+Compare a resposta dele com o esperado. Seja específico e encorajador.
+${isTranslation
+    ? 'Modo tradução (L1): foque no sentido. Sinônimos próximos não são erro grave; explique o que faltou ou distorceu.'
+    : 'Modo escrita/ditado (L2): aponte caracteres/palavras trocados, ordem e pontuação só se mudarem o sentido.'}
+Não use markdown pesado. Sem lista longa.`;
+
+    const userPrompt = opts.phase === 'hint'
+        ? `Modo: ${isTranslation ? 'áudio → tradução (L1/PT)' : 'áudio → escrita (L2)'}
+Frase ouvida (L2, só para você — NÃO copie inteira na dica): ${opts.sentence}
+Referência esperada (só para você): ${opts.expected}`
+        : `Modo: ${isTranslation ? 'áudio → tradução (L1/PT)' : 'áudio → escrita (L2)'}
+Frase ouvida (L2): ${opts.sentence}
+Esperado: ${opts.expected}
+Resposta do aluno: ${opts.userAnswer || '(vazio)'}`;
+
+    try {
+        if (import.meta.env.DEV) {
+            return await callLocalLLM(userPrompt, systemInstruction, false);
+        }
+
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                type: 'practice_help',
+                phase: opts.phase,
+                mode: opts.mode,
+                studyLang: opts.studyLang || 'zh',
+                sentence: opts.sentence,
+                expected: opts.expected,
+                userAnswer: opts.userAnswer || '',
+            }),
+        });
+        if (!response.ok) throw new Error(`API error: ${response.status}`);
+        const data = await response.json();
+        return typeof data === 'string' ? data : (data.text || '');
+    } catch (error) {
+        console.error('[Practice AI help]', error);
         throw error;
     }
 }
