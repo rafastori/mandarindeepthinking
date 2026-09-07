@@ -30,6 +30,10 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
     const cancelRef = useRef(false);
     const pausedRef = useRef(false);
     const indexRef = useRef(-1);
+    const speakRef = useRef(speak);
+    const stopRef = useRef(stop);
+    speakRef.current = speak;
+    stopRef.current = stop;
 
     // Espera até pausedRef voltar a false. Usa polling leve.
     const waitWhilePaused = useCallback(async () => {
@@ -49,7 +53,7 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
             setCurrentIndex(i);
             const item = queue[i];
             try {
-                await speak(item.text, item.language, item.id);
+                await speakRef.current(item.text, item.language, item.id);
             } catch {
                 // Continua mesmo se uma frase falhar
             }
@@ -64,12 +68,12 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
         indexRef.current = -1;
         setCurrentIndex(-1);
         setStatus('idle');
-    }, [speak, waitWhilePaused]);
+    }, [waitWhilePaused]);
 
     const start = useCallback((items: SpeechItem[]) => {
         // Cancela qualquer execução anterior
         cancelRef.current = true;
-        stop();
+        stopRef.current();
 
         // Inicia nova
         queueRef.current = items;
@@ -77,14 +81,14 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
         pausedRef.current = false;
         setStatus('playing');
         runFromIndex(0);
-    }, [runFromIndex, stop]);
+    }, [runFromIndex]);
 
     const pause = useCallback(() => {
         if (status !== 'playing') return;
         pausedRef.current = true;
-        stop(); // interrompe áudio em curso
+        stopRef.current();
         setStatus('paused');
-    }, [status, stop]);
+    }, [status]);
 
     const resume = useCallback(() => {
         if (status !== 'paused') return;
@@ -97,11 +101,11 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
     const stopAll = useCallback(() => {
         cancelRef.current = true;
         pausedRef.current = false;
-        stop();
+        stopRef.current();
         indexRef.current = -1;
         setCurrentIndex(-1);
         setStatus('idle');
-    }, [stop]);
+    }, []);
 
     const next = useCallback(() => {
         if (queueRef.current.length === 0) return;
@@ -112,7 +116,7 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
             return;
         }
         cancelRef.current = true;
-        stop();
+        stopRef.current();
         // micro-task para deixar a corrida atual encerrar
         setTimeout(() => {
             cancelRef.current = false;
@@ -120,28 +124,28 @@ export function useSequentialSpeech(speak: SpeakFn, stop: StopFn) {
             setStatus('playing');
             runFromIndex(target);
         }, 50);
-    }, [runFromIndex, stop, stopAll]);
+    }, [runFromIndex, stopAll]);
 
     const prev = useCallback(() => {
         if (queueRef.current.length === 0) return;
         const target = Math.max(indexRef.current - 1, 0);
         cancelRef.current = true;
-        stop();
+        stopRef.current();
         setTimeout(() => {
             cancelRef.current = false;
             pausedRef.current = false;
             setStatus('playing');
             runFromIndex(target);
         }, 50);
-    }, [runFromIndex, stop]);
+    }, [runFromIndex]);
 
-    // Cleanup no unmount
+    // Só no unmount — stop/speak mudam a cada timeupdate do player nativo
     useEffect(() => {
         return () => {
             cancelRef.current = true;
-            stop();
+            stopRef.current();
         };
-    }, [stop]);
+    }, []);
 
     return {
         status,

@@ -3,14 +3,14 @@ import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
 import AudioVisualizer from '../components/AudioVisualizer';
 import { StudyItem, SupportedLanguage } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
 import { useAudioRecorder } from '../hooks/useAudioRecorder';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 
 interface PronunciaViewProps {
     data: StudyItem[];
     savedIds: string[];
-    onResult?: (isCorrect: boolean, word: string, type: 'pronunciation') => void;
+    onResult?: (isCorrect: boolean, word: string, type: 'pronunciation', points?: number) => void;
     activeFolderFilters?: string[];
 }
 
@@ -28,7 +28,7 @@ const isCJKLanguage = (lang: SupportedLanguage): boolean => {
 };
 
 const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult, activeFolderFilters = [] }) => {
-    const { speak } = usePuterSpeech();
+    const { speak, stop, playingId } = useAlignedNativeSpeech(data, activeFolderFilters);
     const {
         isRecording,
         recordingTime,
@@ -133,8 +133,13 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult,
 
     const handleListen = useCallback(() => {
         if (!currentItem) return;
-        speak(currentItem.text, currentItem.language);
-    }, [currentItem, speak]);
+        const audioId = `pronuncia-${currentItem.id}`;
+        if (playingId === audioId) {
+            stop();
+            return;
+        }
+        speak(currentItem.text, currentItem.language, audioId, currentItem.id);
+    }, [currentItem, playingId, speak, stop]);
 
     const handleRecord = useCallback(() => {
         if (isRecording) {
@@ -167,7 +172,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult,
     const handleSelfEvaluate = (correct: boolean) => {
         setSelfEvaluation(correct ? 'correct' : 'wrong');
         if (onResult) {
-            onResult(correct, currentItem.text, 'pronunciation');
+            onResult(correct, currentItem.text, 'pronunciation', correct ? 10 : undefined);
         }
     };
 
@@ -304,7 +309,7 @@ const PronunciaView: React.FC<PronunciaViewProps> = ({ data, savedIds, onResult,
                         {selfEvaluation && (
                             <div className={`mt-3 p-2 rounded-lg text-center font-semibold ${selfEvaluation === 'correct' ? 'bg-emerald-100 text-emerald-700' : 'bg-orange-100 text-orange-700'
                                 }`}>
-                                {selfEvaluation === 'correct' ? '✅ Ótimo trabalho!' : '🔄 Continue praticando!'}
+                                {selfEvaluation === 'correct' ? '✅ Ótimo trabalho! +10 XP' : '🔄 Continue praticando!'}
                             </div>
                         )}
                     </div>

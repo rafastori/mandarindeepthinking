@@ -417,6 +417,51 @@ Retorne APENAS um JSON: { "tokens": ["token1", " ", "token2", ...] }`;
       return res.status(200).json(result);
     }
 
+    // --- 10. PRÁTICA: dica pré / explicação pós (DeepSeek via OpenRouter) ---
+    if (type === 'practice_help') {
+      const {
+        phase = 'hint',
+        mode = 'audio-traducao',
+        studyLang = 'zh',
+        sentence = '',
+        expected = '',
+        userAnswer = '',
+      } = req.body;
+      const langNames = {
+        'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',
+        'fr': 'Francês', 'es': 'Espanhol', 'it': 'Italiano', 'ja': 'Japonês', 'ko': 'Coreano',
+      };
+      const studyName = langNames[studyLang] || studyLang;
+      const isTranslation = mode === 'audio-traducao';
+      const isHint = phase !== 'explain';
+
+      const systemPrompt = isHint
+        ? `Você é um tutor de ${studyName}. Dê UMA dica curta (2–4 frases) em Português do Brasil.
+NÃO revele a resposta completa. Não escreva a frase esperada por extenso.
+${isTranslation
+    ? 'O aluno ouviu um áudio na língua de estudo e vai escrever a TRADUÇÃO em português (L1). Dê uma pista de sentido (tema, tom, tipo de frase) sem entregar a tradução.'
+    : 'O aluno ouviu um áudio e vai ESCREVER o que ouviu na língua de estudo (L2, ditado). Dê uma pista de estrutura (nº de sílabas/caracteres aproximado, primeira palavra, padrão gramatical) sem copiar a frase inteira.'}
+Responda só a dica, sem título.`
+        : `Você é um tutor de ${studyName}. Explique o ERRO do aluno em Português do Brasil (3–6 frases).
+Compare a resposta dele com o esperado. Seja específico e encorajador.
+${isTranslation
+    ? 'Modo tradução (L1): foque no sentido. Sinônimos próximos não são erro grave; explique o que faltou ou distorceu.'
+    : 'Modo escrita/ditado (L2): aponte caracteres/palavras trocados, ordem e pontuação só se mudarem o sentido.'}
+Não use markdown pesado. Sem lista longa.`;
+
+      const userPrompt = isHint
+        ? `Modo: ${isTranslation ? 'áudio → tradução (L1/PT)' : 'áudio → escrita (L2)'}
+Frase ouvida (L2, só para você — NÃO copie inteira na dica): ${sentence}
+Referência esperada (só para você): ${expected}`
+        : `Modo: ${isTranslation ? 'áudio → tradução (L1/PT)' : 'áudio → escrita (L2)'}
+Frase ouvida (L2): ${sentence}
+Esperado: ${expected}
+Resposta do aluno: ${userAnswer || '(vazio)'}`;
+
+      const result = await callTextLLM(userPrompt, systemPrompt, false);
+      return res.status(200).json(result);
+    }
+
     // --- DEFAULT: IMPORTAÇÃO DE TEXTO ---
     const langNames = {
       'de': 'Alemão', 'zh': 'Chinês (Mandarim)', 'pt': 'Português', 'en': 'Inglês',

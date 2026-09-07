@@ -1,12 +1,16 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, Variants, PanInfo, useMotionValue, useTransform } from 'framer-motion';
-import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
-import { StudyItem, Keyword } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech';
+import { StudyItem, Keyword, PracticeSessionKind } from '../types';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
 import { Star, Flame, RotateCcw, Volume2, Square, ArrowLeftRight, Zap, ArrowRight } from 'lucide-react';
 import FavoriteModal from '../components/FavoriteModal';
+import PracticeModePicker from '../components/PracticeModePicker';
+import PracticeAudioCard, { AudioPracticeQuestion } from '../components/PracticeAudioCard';
+import { scorePracticeAnswer, PracticeScoreResult } from '../utils/practiceScoring';
+import { getPracticeAiHelp } from '../services/gemini';
+import { practiceComboMultiplier, practiceComboXp } from '../utils/playableXp';
 
 // ══════════════════════════════════════════════
 //  INTERFACES
@@ -15,7 +19,7 @@ import FavoriteModal from '../components/FavoriteModal';
 interface PracticeViewProps {
     data: StudyItem[];
     savedIds: string[];
-    onResult: (correct: boolean, word: string) => void;
+    onResult: (correct: boolean, word: string, type?: 'general' | 'pronunciation', points?: number) => void;
     activeFolderFilters?: string[];
     showOnlyErrors?: boolean;
     wordCounts?: Record<string, any>;
@@ -188,7 +192,7 @@ const CompletionScreen: React.FC<CompletionProps> = ({ sessionStats, xpGained, t
                         >
                             Sessão Concluída! 🎉
                         </motion.p>
-                        <p className="text-sm text-slate-500 mt-1">Continue praticando para manter o ritmo!</p>
+                        <p className="text-sm text-slate-500 mt-1">XP e acertos já entram no resumo da sessão e nas estatísticas.</p>
                     </div>
 
                     {/* Stars */}
@@ -274,7 +278,7 @@ interface SwipeCardProps {
     isGerman: boolean;
     onSelfAssess: (correct: boolean) => void;
     playingId: string | null;
-    speak: (text: string, lang: any, id: string) => void;
+    speak: (text: string, lang: any, id: string, sentenceItemId?: string) => void;
     stop: () => void;
     audioId: string;
 }
@@ -361,7 +365,7 @@ const SwipeCard: React.FC<SwipeCardProps> = ({ question, isGerman, onSelfAssess,
                                 )}
                                 {/* Audio button */}
                                 <button
-                                    onClick={() => playingId === audioId ? stop() : speak(question.sentence, (question.language || 'zh') as any, audioId)}
+                                    onClick={() => playingId === audioId ? stop() : speak(question.sentence, (question.language || 'zh') as any, audioId, question.sentenceItemId)}
                                     className="mt-2 flex items-center gap-1.5 text-xs text-slate-400 hover:text-brand-600 transition-colors"
                                 >
                                     {playingId === audioId
@@ -418,7 +422,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     activeFolderFilters = [], showOnlyErrors = false,
     wordCounts = {}, stats, updateFavoriteConfig
 }) => {
-    const { speak, stop, playingId } = usePuterSpeech();
+    const { speak, stop, playingId, hasNativeAlignment } = useAlignedNativeSpeech(data, activeFolderFilters);
 
     // ─── Game States ─────────────────────────
     const [currentIndex, setCurrentIndex]   = useState(0);
@@ -429,6 +433,15 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     const [invertPractice, setInvertPractice] = useState(false);
     const [practiceMode, setPracticeMode]   = useState<'multiple-choice' | 'swipe'>('multiple-choice');
     const [cardAnimState, setCardAnimState] = useState<'animate' | 'shake' | 'bounce'>('animate');
+    const [sessionStarted, setSessionStarted] = useState(false);
+    const [sessionKind, setSessionKind]     = useState<PracticeSessionKind>('tradicional');
+    const [enableAiHelp, setEnableAiHelp]   = useState(false);
+    const [userInput, setUserInput]         = useState('');
+    const [audioResult, setAudioResult]     = useState<PracticeScoreResult | null>(null);
+    const [scoring, setScoring]             = useState(false);
+    const [aiHint, setAiHint]               = useState<string | null>(null);
+    const [aiExplain, setAiExplain]         = useState<string | null>(null);
+    const [aiBusy, setAiBusy]               = useState<'hint' | 'explain' | null>(null);
 
     // ─── Combo & XP ──────────────────────────
     const [streak, setStreak]           = useState(0);
@@ -460,7 +473,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
 
     const filtersKey = useMemo(() => [...activeFolderFilters].sort().join(','), [activeFolderFilters]);
 
-    const getComboMultiplier = (s: number) => s < 3 ? 1 : s < 5 ? 1.5 : s < 10 ? 2 : 3;
+    const getComboMultiplier = (s: number) => practiceComboMultiplier(s);
 
     // ═══════════════════════════════════════
     //  SAVED WORDS MAP (original logic preserved)
@@ -571,6 +584,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                     list.push({
                         id: savedWord.id, word: savedWord.word,
                         wordMeaning: savedWord.meaning, sentence,
+                        sentenceItemId: item.id.toString(),
                         translation: item.translation, pinyin: savedWord.pinyin,
                         language: item.language || savedWord.language
                     });
@@ -583,15 +597,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         // `type: 'word'` (que o laço acima ignora) e guardam a frase de origem em
         // `originalSentence`, então nunca geravam questão. Aqui recuperamos a frase
         // de contexto de cada palavra salva e criamos a questão que faltava.
-        const contextByKey = new Map<string, { sentence: string; translation: string }>();
+        const contextByKey = new Map<string, { sentence: string; translation: string; sentenceItemId?: string }>();
         currentData.forEach(item => {
             // Card de palavra: usa a frase original de onde a palavra foi salva.
             if (item.type === 'word' || item.tokens?.length === 1) {
                 const wk = (item.chinese || '').toLowerCase().trim();
                 if (wk && !contextByKey.has(wk)) {
+                    const sourceSentence = currentData.find(other =>
+                        other.type !== 'word'
+                        && other.chinese
+                        && (other.chinese === item.originalSentence || other.chinese === item.chinese)
+                    );
                     contextByKey.set(wk, {
                         sentence: item.originalSentence || item.chinese,
                         translation: item.translation,
+                        sentenceItemId: sourceSentence?.id.toString(),
                     });
                 }
             }
@@ -599,7 +619,11 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             item.keywords?.forEach(k => {
                 const kk = k.word.toLowerCase().trim();
                 if (kk && !contextByKey.has(kk)) {
-                    contextByKey.set(kk, { sentence: item.chinese, translation: item.translation });
+                    contextByKey.set(kk, {
+                        sentence: item.chinese,
+                        translation: item.translation,
+                        sentenceItemId: item.type !== 'word' ? item.id.toString() : undefined,
+                    });
                 }
             });
         });
@@ -612,6 +636,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 id: savedWord.id, word: savedWord.word,
                 wordMeaning: savedWord.meaning,
                 sentence: ctx?.sentence || savedWord.word,
+                sentenceItemId: ctx?.sentenceItemId,
                 translation: ctx?.translation || savedWord.meaning,
                 pinyin: savedWord.pinyin,
                 language: savedWord.language
@@ -636,6 +661,54 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         }
         return shuffled;
     }, [sessionKey, savedWordsMap, filtersKey, stats?.favoriteConfigs]);
+
+    const audioQuestions = useMemo<AudioPracticeQuestion[]>(() => {
+        const snapshot = dataSnapshotRef.current || { data, savedIds };
+        const currentData = snapshot.data;
+        const seen = new Set<string>();
+        const list: AudioPracticeQuestion[] = [];
+
+        currentData.forEach(item => {
+            if (item.type === 'word') return;
+            const sentence = (item.chinese || '').trim();
+            const translation = (item.translation || '').trim();
+            if (!sentence || !translation) return;
+
+            if (activeFolderFilters.length > 0) {
+                const inFolder = activeFolderFilters.some(filterPath => {
+                    if (filterPath === '__uncategorized__' && !item.folderPath) return true;
+                    return item.folderPath === filterPath || item.folderPath?.startsWith(filterPath + '/');
+                });
+                if (!inFolder) return;
+            }
+
+            const key = sentence.normalize('NFKC');
+            if (seen.has(key)) return;
+            seen.add(key);
+
+            list.push({
+                id: item.id.toString(),
+                word: sentence,
+                sentence,
+                translation,
+                pinyin: item.pinyin,
+                language: item.language,
+                sentenceItemId: item.id.toString(),
+            });
+        });
+
+        const shuffled = [...list];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }, [sessionKey, filtersKey]);
+
+    const isAudioSession = sessionKind !== 'tradicional';
+    const activeQuestions = isAudioSession ? audioQuestions : questions;
+    const tradicionalReady = questions.length >= 4;
+    const audioReady = audioQuestions.length >= 1;
 
     // ═══════════════════════════════════════
     //  OPTIONS (original logic preserved)
@@ -676,8 +749,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         if (isCorrect) {
             const newStreak = streak + 1;
             setStreak(newStreak);
-            const multiplier = getComboMultiplier(newStreak);
-            const xp = Math.round(10 * multiplier);
+            const xp = practiceComboXp(newStreak);
             setSessionXP(prev => prev + xp);
             spawnFloatingXP(xp);
 
@@ -709,19 +781,21 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         const isCorrect = option === currentQ.word;
         setSelectedOption(option);
         setShowResult(true);
-        onResult(isCorrect, currentQ.word);
+        const xp = isCorrect ? practiceComboXp(streak + 1) : undefined;
+        onResult(isCorrect, currentQ.word, 'general', xp);
         recordResult(isCorrect);
     };
 
     const handleSelfAssess = (correct: boolean) => {
         const currentQ = questions[currentIndex];
-        onResult(correct, currentQ.word);
+        const xp = correct ? practiceComboXp(streak + 1) : undefined;
+        onResult(correct, currentQ.word, 'general', xp);
         recordResult(correct);
     };
 
     const finishSession = () => {
         const now = Date.now();
-        const practicedIds = new Set(questions.map((q: any) => q.id));
+        const practicedIds = new Set(activeQuestions.map((q: any) => q.id));
         practicedIds.forEach(id => {
             const config = stats?.favoriteConfigs?.[id] as any;
             if (config?.mode === 'absolute') {
@@ -737,7 +811,8 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         setSelectedOption(null);
         setShowResult(false);
         setCardAnimState('animate');
-        if (currentIndex < questions.length - 1) {
+        resetCardExtras();
+        if (currentIndex < activeQuestions.length - 1) {
             setCurrentIndex(prev => prev + 1);
         } else {
             finishSession();
@@ -749,13 +824,22 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             stop();
             setSelectedOption(null);
             setShowResult(false);
+            resetCardExtras();
             setCurrentIndex(prev => prev - 1);
         }
     };
 
     const handleRestart = () => {
+        stop();
         setIsFinished(false);
+        setSessionStarted(false);
         setCurrentIndex(0);
+        setSelectedOption(null);
+        setShowResult(false);
+        setUserInput('');
+        setAudioResult(null);
+        setAiHint(null);
+        setAiExplain(null);
         setSessionKey(prev => prev + 1);
         setStreak(0);
         setSessionXP(0);
@@ -764,24 +848,108 @@ const PracticeView: React.FC<PracticeViewProps> = ({
         sessionStartRef.current = Date.now();
     };
 
+    const handleStartSession = () => {
+        if (sessionKind === 'tradicional' && !tradicionalReady) return;
+        if (sessionKind !== 'tradicional' && !audioReady) return;
+        stop();
+        setSessionStarted(true);
+        setIsFinished(false);
+        setCurrentIndex(0);
+        setSelectedOption(null);
+        setShowResult(false);
+        setUserInput('');
+        setAudioResult(null);
+        setAiHint(null);
+        setAiExplain(null);
+        setScoring(false);
+        setSessionKey(prev => prev + 1);
+        setStreak(0);
+        setSessionXP(0);
+        setFloatingXPs([]);
+        setSessionStats({ totalAttempts: 0, correctAnswers: 0, incorrectAnswers: 0, startTime: Date.now(), maxStreak: 0 });
+        sessionStartRef.current = Date.now();
+    };
+
+    const resetCardExtras = () => {
+        setUserInput('');
+        setAudioResult(null);
+        setAiHint(null);
+        setAiExplain(null);
+        setAiBusy(null);
+        setScoring(false);
+    };
+
+    const handleAudioSubmit = async () => {
+        if (showResult || scoring || sessionKind === 'tradicional') return;
+        const currentQ = audioQuestions[currentIndex];
+        if (!currentQ) return;
+        const expected = sessionKind === 'audio-traducao' ? currentQ.translation : currentQ.sentence;
+        setScoring(true);
+        try {
+            const scored = await scorePracticeAnswer({
+                mode: sessionKind,
+                expected,
+                actual: userInput,
+            });
+            setAudioResult(scored);
+            setShowResult(true);
+            const isCorrect = scored.grade === 'correct';
+            const xp = isCorrect ? practiceComboXp(streak + 1) : undefined;
+            onResult(isCorrect, currentQ.word, 'general', xp);
+            recordResult(isCorrect);
+        } catch (err) {
+            console.error('[Practice audio score]', err);
+        } finally {
+            setScoring(false);
+        }
+    };
+
+    const handlePracticeAi = async (phase: 'hint' | 'explain') => {
+        if (!enableAiHelp || sessionKind === 'tradicional' || aiBusy) return;
+        const currentQ = audioQuestions[currentIndex];
+        if (!currentQ) return;
+        if (phase === 'explain' && !showResult) return;
+        setAiBusy(phase);
+        try {
+            const text = await getPracticeAiHelp({
+                phase,
+                mode: sessionKind,
+                studyLang: currentQ.language || 'zh',
+                sentence: currentQ.sentence,
+                expected: sessionKind === 'audio-traducao' ? currentQ.translation : currentQ.sentence,
+                userAnswer: userInput,
+            });
+            if (phase === 'hint') setAiHint(text);
+            else setAiExplain(text);
+        } catch {
+            const fallback = 'Não deu para falar com a IA agora. Tente de novo em instantes.';
+            if (phase === 'hint') setAiHint(fallback);
+            else setAiExplain(fallback);
+        } finally {
+            setAiBusy(null);
+        }
+    };
+
     // ═══════════════════════════════════════
-    //  EMPTY STATE
+    //  MODE PICKER / EMPTY / COMPLETION
     // ═══════════════════════════════════════
 
-    if (questions.length < 4) {
+    if (!sessionStarted && !isFinished) {
         return (
-            <div className="flex flex-col items-center justify-center h-full text-center p-6">
-                <EmptyState msg="Prática indisponível" icon="edit-3" />
-                <p className="text-slate-400 text-sm mt-2">
-                    Salve pelo menos 4 palavras na Leitura para liberar a prática.
-                </p>
-            </div>
+            <PracticeModePicker
+                selected={sessionKind}
+                onSelect={setSessionKind}
+                onStart={handleStartSession}
+                tradicionalReady={tradicionalReady}
+                audioReady={audioReady}
+                tradicionalCount={questions.length}
+                audioCount={audioQuestions.length}
+                enableAiHelp={enableAiHelp}
+                onToggleAiHelp={setEnableAiHelp}
+                hasNativeAlignment={hasNativeAlignment}
+            />
         );
     }
-
-    // ═══════════════════════════════════════
-    //  COMPLETION SCREEN
-    // ═══════════════════════════════════════
 
     if (isFinished) {
         return (
@@ -790,10 +958,46 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 <CompletionScreen
                     sessionStats={sessionStats}
                     xpGained={sessionXP}
-                    totalQuestions={questions.length}
+                    totalQuestions={activeQuestions.length}
                     onRestart={handleRestart}
                 />
             </>
+        );
+    }
+
+    if (!isAudioSession && questions.length < 4) {
+        return (
+            <div className="flex flex-col items-center justify-center h-full text-center p-6">
+                <EmptyState msg="Prática indisponível" icon="edit-3" />
+                <p className="text-slate-400 text-sm mt-2">
+                    Salve pelo menos 4 palavras na Leitura para liberar a prática tradicional.
+                </p>
+                <button
+                    type="button"
+                    onClick={handleRestart}
+                    className="mt-4 text-sm font-bold text-brand-600"
+                >
+                    Voltar aos modos
+                </button>
+            </div>
+        );
+    }
+
+    if (isAudioSession && audioQuestions.length === 0) {
+        return (
+            <div className="flex flex-col items-center justify-center h-full text-center p-6">
+                <EmptyState msg="Sem frases para ouvir" icon="edit-3" />
+                <p className="text-slate-400 text-sm mt-2">
+                    Este modo precisa de frases com texto e tradução nas pastas filtradas.
+                </p>
+                <button
+                    type="button"
+                    onClick={handleRestart}
+                    className="mt-4 text-sm font-bold text-brand-600"
+                >
+                    Voltar aos modos
+                </button>
+            </div>
         );
     }
 
@@ -801,14 +1005,15 @@ const PracticeView: React.FC<PracticeViewProps> = ({
     //  RENDER
     // ═══════════════════════════════════════
 
-    const currentQ        = questions[currentIndex];
-    const isGerman        = currentQ.language === 'de';
-    const progressPercent = (currentIndex / questions.length) * 100;
+    const currentQ = activeQuestions[currentIndex];
+    const isGerman = currentQ?.language === 'de';
+    const progressPercent = activeQuestions.length ? (currentIndex / activeQuestions.length) * 100 : 0;
     const comboMultiplier = getComboMultiplier(streak);
+    const canAdvance = showResult || (!isAudioSession && practiceMode === 'swipe');
 
-    const sentenceParts = currentQ.sentence?.includes(currentQ.word)
+    const sentenceParts = !isAudioSession && currentQ?.sentence?.includes(currentQ.word)
         ? currentQ.sentence.split(currentQ.word)
-        : [currentQ.sentence, ''];
+        : [currentQ?.sentence, ''];
 
     return (
         <div className="p-4 h-full flex flex-col max-w-md mx-auto pb-20 relative">
@@ -816,8 +1021,26 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             {/* ══ HEADER ══ */}
             <div className="flex items-center justify-between mb-3 flex-shrink-0">
                 <div className="flex items-center gap-2">
+                    <button
+                        type="button"
+                        onClick={handleRestart}
+                        className="text-[11px] font-bold text-slate-400 hover:text-brand-600"
+                        title="Voltar aos modos"
+                    >
+                        ←
+                    </button>
                     <span className="text-sm font-extrabold text-slate-700">Prática</span>
-                    {practiceMode === 'swipe' && (
+                    {sessionKind === 'audio-traducao' && (
+                        <span className="text-[9px] font-extrabold bg-brand-100 text-brand-700 px-1.5 py-0.5 rounded-md uppercase tracking-wide">
+                            Tradução L1
+                        </span>
+                    )}
+                    {sessionKind === 'audio-escrita' && (
+                        <span className="text-[9px] font-extrabold bg-brand-100 text-brand-700 px-1.5 py-0.5 rounded-md uppercase tracking-wide">
+                            Escrita L2
+                        </span>
+                    )}
+                    {!isAudioSession && practiceMode === 'swipe' && (
                         <span className="text-[9px] font-extrabold bg-brand-100 text-brand-700 px-1.5 py-0.5 rounded-md uppercase tracking-wide">
                             Swipe
                         </span>
@@ -835,18 +1058,19 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                         <Zap size={11} className="fill-current" />
                         {sessionXP} XP
                     </motion.div>
-                    {/* Mode Toggle */}
-                    <button
-                        onClick={() => { setPracticeMode(m => m === 'multiple-choice' ? 'swipe' : 'multiple-choice'); }}
-                        title={practiceMode === 'multiple-choice' ? 'Ativar modo Swipe' : 'Ativar Múltipla Escolha'}
-                        className={`flex items-center gap-1 text-xs px-2.5 py-1 rounded-full font-bold border transition-colors ${
-                            practiceMode === 'swipe'
-                                ? 'bg-brand-100 text-brand-700 border-brand-200'
-                                : 'bg-white text-slate-400 border-slate-200 hover:bg-slate-50'
-                        }`}
-                    >
-                        <ArrowLeftRight size={12} />
-                    </button>
+                    {!isAudioSession && (
+                        <button
+                            onClick={() => { setPracticeMode(m => m === 'multiple-choice' ? 'swipe' : 'multiple-choice'); }}
+                            title={practiceMode === 'multiple-choice' ? 'Ativar modo Swipe' : 'Ativar Múltipla Escolha'}
+                            className={`flex items-center gap-1 text-xs px-2.5 py-1 rounded-full font-bold border transition-colors ${
+                                practiceMode === 'swipe'
+                                    ? 'bg-brand-100 text-brand-700 border-brand-200'
+                                    : 'bg-white text-slate-400 border-slate-200 hover:bg-slate-50'
+                            }`}
+                        >
+                            <ArrowLeftRight size={12} />
+                        </button>
+                    )}
                 </div>
             </div>
 
@@ -883,22 +1107,25 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 <div className="flex justify-between items-center mb-1.5">
                     <div className="flex items-center gap-2">
                         <span className="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">
-                            {invertPractice ? 'PT → ' + (isGerman ? 'DE' : 'ZH') : 'Complete a frase'}
+                            {isAudioSession
+                                ? (sessionKind === 'audio-traducao' ? 'Áudio → tradução (L1)' : 'Áudio → escrita (L2)')
+                                : invertPractice ? 'PT → ' + (isGerman ? 'DE' : 'ZH') : 'Complete a frase'}
                         </span>
-                        {/* Invert toggle */}
-                        <button
-                            onClick={() => setInvertPractice(p => !p)}
-                            className={`flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded border transition-colors ${
-                                invertPractice
-                                    ? 'bg-brand-100 text-brand-600 border-brand-200'
-                                    : 'text-slate-400 border-slate-200 hover:bg-slate-50'
-                            }`}
-                        >
-                            <ArrowLeftRight size={10} />
-                        </button>
+                        {!isAudioSession && (
+                            <button
+                                onClick={() => setInvertPractice(p => !p)}
+                                className={`flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded border transition-colors ${
+                                    invertPractice
+                                        ? 'bg-brand-100 text-brand-600 border-brand-200'
+                                        : 'text-slate-400 border-slate-200 hover:bg-slate-50'
+                                }`}
+                            >
+                                <ArrowLeftRight size={10} />
+                            </button>
+                        )}
                     </div>
                     <span className="text-[11px] font-extrabold text-slate-500 tabular-nums">
-                        {currentIndex + 1} / {questions.length}
+                        {currentIndex + 1} / {activeQuestions.length}
                     </span>
                 </div>
                 <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
@@ -911,7 +1138,31 @@ const PracticeView: React.FC<PracticeViewProps> = ({
             </div>
 
             {/* ══ MAIN CONTENT ══ */}
-            {practiceMode === 'multiple-choice' ? (
+            {isAudioSession ? (
+                <PracticeAudioCard
+                    key={`audio-${currentIndex}-${sessionKey}`}
+                    question={currentQ as AudioPracticeQuestion}
+                    index={currentIndex}
+                    mode={sessionKind === 'audio-escrita' ? 'audio-escrita' : 'audio-traducao'}
+                    playingId={playingId}
+                    speak={speak}
+                    stop={stop}
+                    hasNativeAlignment={hasNativeAlignment}
+                    enableAiHelp={enableAiHelp}
+                    showResult={showResult}
+                    result={audioResult}
+                    scoring={scoring}
+                    userInput={userInput}
+                    onUserInput={setUserInput}
+                    onSubmit={handleAudioSubmit}
+                    onHint={() => handlePracticeAi('hint')}
+                    onExplain={() => handlePracticeAi('explain')}
+                    hintText={aiHint}
+                    explainText={aiExplain}
+                    aiBusy={aiBusy}
+                    isCjk={!isGerman}
+                />
+            ) : practiceMode === 'multiple-choice' ? (
 
                 /* ─── MULTIPLE CHOICE ─── */
                 <>
@@ -977,7 +1228,7 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                                     <button
                                         onClick={() => {
                                             const aid = `practice-sentence-${currentIndex}`;
-                                            playingId === aid ? stop() : speak(currentQ.sentence, (currentQ.language || 'zh') as any, aid);
+                                            playingId === aid ? stop() : speak(currentQ.sentence, (currentQ.language || 'zh') as any, aid, currentQ.sentenceItemId);
                                         }}
                                         className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-brand-600 transition-colors"
                                     >
@@ -1105,16 +1356,16 @@ const PracticeView: React.FC<PracticeViewProps> = ({
                 </button>
                 <motion.button
                     onClick={handleNext}
-                    disabled={!showResult && practiceMode === 'multiple-choice'}
-                    whileTap={(showResult || practiceMode === 'swipe') ? { scale: 0.97 } : {}}
+                    disabled={!canAdvance}
+                    whileTap={canAdvance ? { scale: 0.97 } : {}}
                     className={`flex-1 py-2.5 text-sm font-bold rounded-xl flex items-center justify-center gap-2 transition-all ${
-                        (showResult || practiceMode === 'swipe')
+                        canAdvance
                             ? 'bg-brand-600 text-white hover:bg-brand-700'
                             : 'bg-slate-100 text-slate-400 cursor-not-allowed'
                     }`}
-                    style={(showResult || practiceMode === 'swipe') ? { boxShadow: '0 4px 14px rgba(5,150,105,0.25)' } : {}}
+                    style={canAdvance ? { boxShadow: '0 4px 14px rgba(5,150,105,0.25)' } : {}}
                 >
-                    {currentIndex < questions.length - 1 ? 'Próximo' : 'Concluir'}
+                    {currentIndex < activeQuestions.length - 1 ? 'Próximo' : 'Concluir'}
                     <ArrowRight size={15} />
                 </motion.button>
             </div>

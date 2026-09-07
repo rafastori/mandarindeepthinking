@@ -1,21 +1,35 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import Icon from '../components/Icon';
 import EmptyState from '../components/EmptyState';
-import { StudyItem } from '../types';
-import { usePuterSpeech } from '../hooks/usePuterSpeech'; // Atualizado para Puter TTS
+import { StudyItem, SupportedLanguage, LabSessionKind } from '../types';
+import { useAlignedNativeSpeech } from '../hooks/useAlignedNativeSpeech';
+import { collectPhrasePairs } from '../utils/combinePhrases';
+import LabModePicker from '../components/LabModePicker';
+import CombinePhrasesGame from '../components/CombinePhrasesGame';
+import PlayableRoundSummary from '../components/PlayableRoundSummary';
+import { practiceComboXp } from '../utils/playableXp';
+import { Zap } from 'lucide-react';
 
 interface LabViewProps {
     data: StudyItem[];
-    onResult: (correct: boolean, word: string) => void;
+    onResult: (correct: boolean, word: string, type?: 'general' | 'pronunciation', points?: number) => void;
     activeFolderFilters?: string[];
 }
 
 const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters = [] }) => {
-    const { speak } = usePuterSpeech(); // Usando Puter TTS
+    const { speak, stop, playingId, hasNativeAlignment } = useAlignedNativeSpeech(data, activeFolderFilters);
+    const [labKind, setLabKind] = useState<LabSessionKind>('ordenar');
+    const [sessionStarted, setSessionStarted] = useState(false);
+    const [sessionKey, setSessionKey] = useState(0);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedTokens, setSelectedTokens] = useState<{ id: number, text: string }[]>([]);
     const [shuffledTokens, setShuffledTokens] = useState<{ id: number, text: string }[]>([]);
     const [status, setStatus] = useState<'playing' | 'correct' | 'wrong'>('playing');
+    const [labCorrect, setLabCorrect] = useState(0);
+    const [labWrong, setLabWrong] = useState(0);
+    const [labXP, setLabXP] = useState(0);
+    const [labStreak, setLabStreak] = useState(0);
+    const [labFinished, setLabFinished] = useState(false);
 
     // Filtra apenas frases longas (com mais de 1 token) para o jogo fazer sentido
     const sentences = useMemo(() => {
@@ -38,9 +52,29 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
             .sort(() => 0.5 - Math.random());
     }, [data, activeFolderFilters]);
 
-    const currentSentence = sentences[currentIdx];
+    const phrasePairs = useMemo(
+        () => collectPhrasePairs(data, activeFolderFilters),
+        [data, activeFolderFilters]
+    );
 
-    // Reinicia o jogo para a frase atual
+    const currentSentence = sentences[currentIdx];
+    const audioId = currentSentence ? `lab-${currentSentence.id}` : '';
+    const isListening = !!audioId && playingId === audioId;
+
+    const handleListen = useCallback(() => {
+        if (!currentSentence) return;
+        if (playingId === audioId) {
+            stop();
+            return;
+        }
+        speak(
+            currentSentence.chinese,
+            (currentSentence.language || 'zh') as SupportedLanguage,
+            audioId,
+            currentSentence.id.toString()
+        );
+    }, [audioId, currentSentence, playingId, speak, stop]);
+
     const initGame = () => {
         if (!currentSentence) return;
 
@@ -48,11 +82,42 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         setShuffledTokens([...tokens].sort(() => 0.5 - Math.random()));
         setSelectedTokens([]);
         setStatus('playing');
+        stop();
     };
 
     useEffect(() => {
+        if (!sessionStarted || labKind !== 'ordenar') return;
         initGame();
-    }, [currentSentence]);
+    }, [currentSentence, sessionStarted, labKind]);
+
+    const handleExitToPicker = () => {
+        stop();
+        setSessionStarted(false);
+        setCurrentIdx(0);
+        setStatus('playing');
+        setSelectedTokens([]);
+        setShuffledTokens([]);
+        setLabCorrect(0);
+        setLabWrong(0);
+        setLabXP(0);
+        setLabStreak(0);
+        setLabFinished(false);
+    };
+
+    const handleStart = () => {
+        if (labKind === 'ordenar' && sentences.length === 0) return;
+        if (labKind === 'combinar' && phrasePairs.length === 0) return;
+        stop();
+        setCurrentIdx(0);
+        setStatus('playing');
+        setLabCorrect(0);
+        setLabWrong(0);
+        setLabXP(0);
+        setLabStreak(0);
+        setLabFinished(false);
+        setSessionKey(k => k + 1);
+        setSessionStarted(true);
+    };
 
     const handleSelect = (tokenObj: { id: number, text: string }) => {
         if (status !== 'playing') return;
@@ -67,6 +132,7 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
     };
 
     const checkAnswer = () => {
+        if (!currentSentence) return;
         const normalize = (str: string) => str.replace(/\s+/g, '').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
 
         const attempt = normalize(selectedTokens.map(t => t.text).join(''));
@@ -75,29 +141,91 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
         if (attempt === target) {
             setStatus('correct');
 
-            // <--- 3. FALA A FRASE AO ACERTAR
-            speak(currentSentence.chinese, (currentSentence.language || 'zh') as 'zh' | 'de' | 'pt' | 'en');
+            speak(
+                currentSentence.chinese,
+                (currentSentence.language || 'zh') as SupportedLanguage,
+                audioId,
+                currentSentence.id.toString()
+            );
 
+            const nextStreak = labStreak + 1;
+            const xp = practiceComboXp(nextStreak);
+            onResult(true, currentSentence.chinese, 'general', xp);
+            setLabStreak(nextStreak);
+            setLabCorrect(n => n + 1);
+            setLabXP(x => x + xp);
             setTimeout(() => {
-                onResult(true, "sentence_builder");
                 if (currentIdx < sentences.length - 1) {
                     setCurrentIdx(prev => prev + 1);
                 } else {
-                    alert("Parabéns! Você completou todas as frases.");
-                    setCurrentIdx(0);
+                    setLabFinished(true);
                 }
-            }, 2000); // Tempo aumentado para 2s para ouvir o áudio
+            }, 2000);
         } else {
             setStatus('wrong');
-            onResult(false, "sentence_builder");
+            onResult(false, currentSentence.chinese);
+            setLabStreak(0);
+            setLabWrong(n => n + 1);
         }
     };
+
+    if (!sessionStarted) {
+        return (
+            <LabModePicker
+                selected={labKind}
+                onSelect={setLabKind}
+                onStart={handleStart}
+                ordenarReady={sentences.length > 0}
+                combinableReady={phrasePairs.length > 0}
+                ordenarCount={sentences.length}
+                combinableCount={phrasePairs.length}
+            />
+        );
+    }
+
+    if (labKind === 'combinar') {
+        return (
+            <CombinePhrasesGame
+                key={sessionKey}
+                pairs={phrasePairs}
+                onResult={onResult}
+                onExit={handleExitToPicker}
+                speak={speak}
+                stop={stop}
+                playingId={playingId}
+            />
+        );
+    }
 
     if (sentences.length === 0) {
         return (
             <div className="flex flex-col items-center justify-center h-full text-center p-6">
                 <EmptyState msg="Laboratório de Frases" icon="flask-conical" />
                 <p className="text-slate-400 text-sm mt-2">Adicione textos com frases completas para desbloquear este laboratório.</p>
+                <button type="button" onClick={handleExitToPicker} className="mt-4 text-sm font-bold text-brand-600">
+                    Voltar aos modos
+                </button>
+            </div>
+        );
+    }
+
+    if (labFinished) {
+        return (
+            <div className="h-full flex flex-col max-w-md mx-auto">
+                <div className="p-4">
+                    <button type="button" onClick={handleExitToPicker} className="text-[11px] font-bold text-slate-400 hover:text-brand-600">
+                        ← Modos
+                    </button>
+                </div>
+                <PlayableRoundSummary
+                    title="Frases ordenadas"
+                    subtitle="Cada acerto já valeu XP no resumo da sessão e nas estatísticas."
+                    correct={labCorrect}
+                    total={sentences.length}
+                    wrong={labWrong}
+                    xp={labXP}
+                    onDone={handleExitToPicker}
+                />
             </div>
         );
     }
@@ -106,10 +234,23 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
 
     return (
         <div className="p-6 h-full flex flex-col pb-24 max-w-md mx-auto">
-            <div className="flex-1 flex flex-col justify-center">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 text-center block">
+            <div className="flex items-center justify-between mb-2 flex-shrink-0">
+                <button
+                    type="button"
+                    onClick={handleExitToPicker}
+                    className="text-[11px] font-bold text-slate-400 hover:text-brand-600"
+                >
+                    ← Modos
+                </button>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
                     Frase {currentIdx + 1} de {sentences.length}
                 </span>
+                <span className="flex items-center gap-0.5 text-[11px] font-extrabold text-brand-700">
+                    <Zap size={11} className="fill-current" />
+                    {labXP}
+                </span>
+            </div>
+            <div className="flex-1 flex flex-col justify-center">
 
                 {/* Área da Resposta */}
                 <div className={`min-h-[120px] bg-slate-100 rounded-2xl p-4 mb-6 flex flex-wrap gap-2 content-start border-2 transition-colors ${status === 'correct' ? 'border-green-400 bg-green-50' :
@@ -129,10 +270,25 @@ const LabView: React.FC<LabViewProps> = ({ data, onResult, activeFolderFilters =
                     )}
                 </div>
 
-                {/* Tradução */}
-                <p className="text-center text-slate-500 italic mb-8 text-sm px-4">
+                {/* Tradução — a frase em chinês continua oculta */}
+                <p className="text-center text-slate-500 italic mb-4 text-sm px-4">
                     "{currentSentence.translation}"
                 </p>
+
+                <button
+                    type="button"
+                    onClick={handleListen}
+                    className={`mx-auto mb-8 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${isListening
+                        ? 'bg-emerald-600 text-white border-emerald-600'
+                        : hasNativeAlignment
+                            ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
+                            : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'
+                    }`}
+                    title={hasNativeAlignment ? 'Ouvir o trecho nativo da aula' : 'Ouvir a frase (TTS)'}
+                >
+                    <Icon name={isListening ? 'square' : 'volume-2'} size={14} />
+                    {isListening ? 'Parar' : 'Ouvir'}
+                </button>
 
                 {/* Área das Peças */}
                 <div className="flex flex-wrap gap-2 justify-center content-center min-h-[100px]">
