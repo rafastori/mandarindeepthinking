@@ -457,6 +457,59 @@ export function updateCueTimes(
     );
 }
 
+/**
+ * Ajuste manual de UMA frase: o tempo que o usuário escolheu prevalece.
+ * Se encostar na vizinha, encurta a vizinha em vez de puxar esta de volta.
+ * Preserva a ordem original das cues (ordem das frases).
+ */
+export function setManualCueTimes(
+    cues: SentenceAlignment[],
+    itemId: string,
+    patch: { start?: number; end?: number },
+    duration: number
+): SentenceAlignment[] {
+    const dur = Math.max(duration, 0);
+    const existing = cues.find(cue => cue.itemId === itemId);
+    let start = patch.start ?? existing?.start ?? 0;
+    let end = patch.end ?? existing?.end ?? start + MIN_SEG;
+    if (!Number.isFinite(dur) || dur <= 0) {
+        start = Math.max(0, start);
+        end = Math.max(start + MIN_SEG, end);
+    } else {
+        start = clampTime(start, dur);
+        end = clampTime(end, dur);
+        if (end < start + MIN_SEG) end = Math.min(dur, start + MIN_SEG);
+        if (end <= start) start = Math.max(0, end - MIN_SEG);
+    }
+
+    const cue: SentenceAlignment = {
+        itemId,
+        start,
+        end,
+        source: 'manual',
+        score: existing?.score,
+    };
+
+    let found = false;
+    const next = cues.map(c => {
+        if (c.itemId === itemId) {
+            found = true;
+            return cue;
+        }
+        const overlaps = c.start < cue.end && c.end > cue.start;
+        if (!overlaps) return c;
+        if (c.start < cue.start) {
+            return { ...c, end: Math.max(c.start, cue.start), source: 'mixed' as const };
+        }
+        const trimmedStart = Math.max(c.start, cue.end);
+        let trimmedEnd = Math.max(c.end, trimmedStart + MIN_SEG);
+        if (dur > 0) trimmedEnd = Math.min(trimmedEnd, dur);
+        return { ...c, start: trimmedStart, end: trimmedEnd, source: 'mixed' as const };
+    });
+    if (!found) next.push(cue);
+    return next;
+}
+
 export function emptyManualAlignment(options: {
     lessonId: string;
     audioFileId: string;

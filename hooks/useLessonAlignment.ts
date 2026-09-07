@@ -17,6 +17,7 @@ import {
     resolveIntroSkip,
     shiftCues,
     updateCueTimes,
+    setManualCueTimes,
 } from '../utils/audioAlignment';
 import { formatTokensToText } from '../views/ReadingView/shared';
 
@@ -235,10 +236,11 @@ export function useLessonAlignment(lessonId: string | null, items: StudyItem[]) 
     const markTimes = useCallback(async (itemId: string, patch: { start?: number; end?: number }) => {
         const current = alignmentRef.current;
         if (!current) return;
+        const duration = Math.max(current.duration, 0);
         await save({
             ...current,
             method: 'manual',
-            cues: updateCueTimes(current.cues, itemId, patch, current.duration),
+            cues: setManualCueTimes(current.cues, itemId, patch, duration),
             updatedAt: new Date().toISOString(),
         });
     }, [save]);

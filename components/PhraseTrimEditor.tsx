@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
-import { MIN_SEG, clampTime, formatClockPrecise, parseClockPrecise } from '../utils/audioAlignment';
+import { MIN_SEG, formatClockPrecise, parseClockPrecise } from '../utils/audioAlignment';
 
 interface Props {
     start?: number;
@@ -9,25 +9,49 @@ interface Props {
     duration: number;
     disabled?: boolean;
     onSeekTo: (seconds: number) => void;
-    onChangeRange: (patch: { start?: number; end?: number }) => void;
+    onChangeRange: (patch: { start?: number; end?: number }) => void | Promise<void>;
 }
 
 const WINDOW_PRESETS = [4, 8, 16] as const;
+
+type DragKind = 'start' | 'end' | 'playhead';
 
 function ratioInView(time: number, viewStart: number, viewEnd: number): number {
     const span = Math.max(viewEnd - viewStart, 0.01);
     return Math.min(Math.max((time - viewStart) / span, 0), 1);
 }
 
+function clampRange(nextStart: number, nextEnd: number, duration: number): { start: number; end: number } {
+    const cap = duration > 0 ? duration : Math.max(nextEnd, nextStart + MIN_SEG, 1);
+    let s = Number.isFinite(nextStart) ? Math.max(0, nextStart) : 0;
+    let e = Number.isFinite(nextEnd) ? Math.max(0, nextEnd) : s + MIN_SEG;
+    s = Math.min(s, Math.max(0, cap - MIN_SEG));
+    e = Math.min(Math.max(e, s + MIN_SEG), cap);
+    if (e - s < MIN_SEG) e = Math.min(cap, s + MIN_SEG);
+    return { start: s, end: e };
+}
+
+function defaultRange(start: number | undefined, end: number | undefined, currentTime: number, duration: number) {
+    if (start != null && end != null) return { start, end };
+    const s = Math.max(0, currentTime);
+    const e = Math.min(duration > 0 ? duration : s + 1, s + Math.max(MIN_SEG, 0.8));
+    return { start: s, end: e };
+}
+
+function viewStartFor(mid: number, windowSec: number, duration: number) {
+    if (duration > 0) {
+        return Math.max(0, Math.min(mid - windowSec / 2, Math.max(duration - windowSec, 0)));
+    }
+    return Math.max(0, mid - windowSec / 2);
+}
+
 function TimeField({
     label,
     value,
-    duration,
     onCommit,
 }: {
     label: string;
     value: number;
-    duration: number;
     onCommit: (seconds: number) => void;
 }) {
     const [text, setText] = useState(formatClockPrecise(value));
@@ -48,7 +72,7 @@ function TimeField({
             return;
         }
         setInvalid(false);
-        onCommit(clampTime(parsed, duration));
+        onCommit(parsed);
     };
 
     return (
@@ -56,7 +80,11 @@ function TimeField({
             <span className="block text-[10px] font-bold uppercase tracking-wide text-slate-400 mb-1">{label}</span>
             <input
                 type="text"
-                inputMode="decimal"
+                inputMode="text"
+                autoCapitalize="off"
+                autoCorrect="off"
+                spellCheck={false}
+                enterKeyHint="done"
                 value={text}
                 onChange={(e) => {
                     setText(e.target.value);
@@ -91,140 +119,158 @@ const PhraseTrimEditor: React.FC<Props> = ({
     onSeekTo,
     onChangeRange,
 }) => {
+    const initial = defaultRange(start, end, currentTime, duration);
     const [windowSec, setWindowSec] = useState<number>(8);
-    const [draft, setDraft] = useState<{ start: number; end: number } | null>(null);
+    const [range, setRange] = useState(initial);
+    const [viewStart, setViewStart] = useState(() => viewStartFor((initial.start + initial.end) / 2, 8, duration));
     const [jogOffset, setJogOffset] = useState(0);
+
     const barRef = useRef<HTMLDivElement>(null);
-    const dragRef = useRef<'start' | 'end' | 'playhead' | null>(null);
+    const rangeRef = useRef(range);
     const viewRef = useRef({ start: 0, end: 8 });
-    const jogRef = useRef({ holding: false, originX: 0, lastTs: 0, time: 0, disp: 0, raf: 0 });
+    const dragRef = useRef<{ kind: DragKind; pointerId: number } | null>(null);
+    const dirtyRef = useRef(false);
+    const persistSeq = useRef(0);
+    const jogRef = useRef({ holding: false, originX: 0, originT: 0 });
 
-    const hasRange = start != null && end != null;
-    const liveStart = draft?.start ?? start ?? Math.max(0, currentTime);
-    const liveEnd = draft?.end ?? end ?? Math.min(duration || liveStart + 1, liveStart + Math.max(MIN_SEG, 0.8));
-
-    const mid = (liveStart + liveEnd) / 2;
-    const derivedViewStart = duration > 0
-        ? Math.max(0, Math.min(mid - windowSec / 2, Math.max(duration - windowSec, 0)))
-        : 0;
-    const derivedViewEnd = Math.min(duration || derivedViewStart + windowSec, derivedViewStart + windowSec);
-    const viewStart = dragRef.current ? viewRef.current.start : derivedViewStart;
-    const viewEnd = dragRef.current ? viewRef.current.end : derivedViewEnd;
+    const viewEnd = viewStart + windowSec;
     viewRef.current = { start: viewStart, end: viewEnd };
+
+    useEffect(() => {
+        if (dragRef.current) return;
+        if (dirtyRef.current) return;
+        if (start == null || end == null) return;
+        const next = { start, end };
+        rangeRef.current = next;
+        setRange(next);
+    }, [start, end]);
+
+    useEffect(() => {
+        setViewStart(viewStartFor((rangeRef.current.start + rangeRef.current.end) / 2, windowSec, duration));
+    }, [windowSec, duration]);
+
+    const persist = (nextStart: number, nextEnd: number, seek?: 'start' | 'end') => {
+        const clamped = clampRange(nextStart, nextEnd, duration);
+        dirtyRef.current = true;
+        persistSeq.current += 1;
+        const token = persistSeq.current;
+        rangeRef.current = clamped;
+        setRange(clamped);
+        const result = onChangeRange({ start: clamped.start, end: clamped.end });
+        void Promise.resolve(result).finally(() => {
+            if (persistSeq.current === token) dirtyRef.current = false;
+        });
+        if (seek) onSeekTo(seek === 'start' ? clamped.start : clamped.end);
+        return clamped;
+    };
 
     const timeFromX = (clientX: number) => {
         const rect = barRef.current?.getBoundingClientRect();
-        if (!rect || rect.width <= 0) return currentTime;
+        const vs = viewRef.current.start;
+        const ve = viewRef.current.end;
+        if (!rect || rect.width <= 0) return rangeRef.current.start;
         const ratio = (clientX - rect.left) / rect.width;
-        return clampTime(viewStart + ratio * (viewEnd - viewStart), duration || viewEnd);
+        const t = vs + ratio * (ve - vs);
+        if (duration > 0) return Math.min(Math.max(t, 0), duration);
+        return Math.max(t, 0);
     };
 
-    const persist = (nextStart: number, nextEnd: number) => {
-        let s = clampTime(nextStart, duration || nextStart);
-        let e = clampTime(nextEnd, duration || nextEnd);
-        if (e < s + MIN_SEG) e = Math.min(duration || e, s + MIN_SEG);
-        onChangeRange({ start: s, end: e });
+    const secondsPerPx = () => {
+        const width = barRef.current?.getBoundingClientRect().width || 0;
+        return width > 0 ? windowSec / width : 0.04;
     };
 
-    const nudge = (which: 'start' | 'end' | 'playhead', delta: number) => {
-        if (which === 'playhead') {
-            onSeekTo(clampTime(currentTime + delta, duration || currentTime + delta));
-            return;
-        }
-        if (which === 'start') persist(liveStart + delta, liveEnd);
-        else persist(liveStart, liveEnd + delta);
-    };
-
-    const onBarPointerDown = (kind: 'start' | 'end' | 'playhead') => (event: React.PointerEvent) => {
-        if (disabled) return;
-        event.preventDefault();
-        event.currentTarget.setPointerCapture(event.pointerId);
-        dragRef.current = kind;
-        viewRef.current = { start: derivedViewStart, end: derivedViewEnd };
-        const t = timeFromX(event.clientX);
+    const applyDrag = (kind: DragKind, clientX: number) => {
+        const t = timeFromX(clientX);
         if (kind === 'playhead') {
             onSeekTo(t);
-        } else {
-            const nextStart = kind === 'start' ? Math.min(t, liveEnd - MIN_SEG) : liveStart;
-            const nextEnd = kind === 'end' ? Math.max(t, liveStart + MIN_SEG) : liveEnd;
-            setDraft({ start: nextStart, end: nextEnd });
-            onSeekTo(kind === 'start' ? nextStart : nextEnd);
+            return;
         }
+        const current = rangeRef.current;
+        const nextStart = kind === 'start' ? Math.min(t, current.end - MIN_SEG) : current.start;
+        const nextEnd = kind === 'end' ? Math.max(t, current.start + MIN_SEG) : current.end;
+        const clamped = clampRange(nextStart, nextEnd, duration);
+        dirtyRef.current = true;
+        rangeRef.current = clamped;
+        setRange(clamped);
+        onSeekTo(kind === 'start' ? clamped.start : clamped.end);
+    };
+
+    const onBarPointerDown = (kind: DragKind) => (event: React.PointerEvent) => {
+        if (disabled) return;
+        event.preventDefault();
+        event.stopPropagation();
+        event.currentTarget.setPointerCapture(event.pointerId);
+        dragRef.current = { kind, pointerId: event.pointerId };
+        applyDrag(kind, event.clientX);
     };
 
     const onBarPointerMove = (event: React.PointerEvent) => {
-        const kind = dragRef.current;
-        if (!kind) return;
-        const t = timeFromX(event.clientX);
-        if (kind === 'playhead') {
-            onSeekTo(t);
-            return;
-        }
-        const nextStart = kind === 'start' ? Math.min(t, liveEnd - MIN_SEG) : liveStart;
-        const nextEnd = kind === 'end' ? Math.max(t, liveStart + MIN_SEG) : liveEnd;
-        setDraft({ start: nextStart, end: nextEnd });
-        onSeekTo(kind === 'start' ? nextStart : nextEnd);
+        const drag = dragRef.current;
+        if (!drag || drag.pointerId !== event.pointerId) return;
+        applyDrag(drag.kind, event.clientX);
     };
 
-    const onBarPointerUp = () => {
-        const kind = dragRef.current;
+    const onBarPointerUp = (event: React.PointerEvent) => {
+        const drag = dragRef.current;
+        if (!drag || drag.pointerId !== event.pointerId) return;
         dragRef.current = null;
-        if (!kind || kind === 'playhead') return;
-        if (draft) persist(draft.start, draft.end);
-        setDraft(null);
-    };
-
-    const tickJog = (ts: number) => {
-        const jog = jogRef.current;
-        if (!jog.holding) return;
-        const dt = jog.lastTs ? Math.min((ts - jog.lastTs) / 1000, 0.05) : 0.016;
-        jog.lastTs = ts;
-        const rate = (jog.disp / 72) * 1.4;
-        jog.time = clampTime(jog.time + rate * dt, duration || jog.time);
-        onSeekTo(jog.time);
-        jog.raf = requestAnimationFrame(tickJog);
+        if (drag.kind === 'start' || drag.kind === 'end') {
+            persist(rangeRef.current.start, rangeRef.current.end, drag.kind);
+        }
     };
 
     const onJogDown = (event: React.PointerEvent) => {
         if (disabled) return;
         event.preventDefault();
         event.currentTarget.setPointerCapture(event.pointerId);
-        const jog = jogRef.current;
-        jog.holding = true;
-        jog.originX = event.clientX;
-        jog.lastTs = 0;
-        jog.time = currentTime;
-        jog.disp = 0;
+        jogRef.current = { holding: true, originX: event.clientX, originT: currentTime };
         setJogOffset(0);
-        jog.raf = requestAnimationFrame(tickJog);
     };
 
     const onJogMove = (event: React.PointerEvent) => {
         if (!jogRef.current.holding) return;
-        const disp = event.clientX - jogRef.current.originX;
-        jogRef.current.disp = Math.max(-140, Math.min(140, disp));
-        setJogOffset(jogRef.current.disp);
+        const dx = event.clientX - jogRef.current.originX;
+        setJogOffset(Math.max(-140, Math.min(140, dx)));
+        onSeekTo(Math.max(0, jogRef.current.originT + dx * secondsPerPx()));
     };
 
     const onJogUp = () => {
-        const jog = jogRef.current;
-        jog.holding = false;
-        jog.disp = 0;
-        if (jog.raf) cancelAnimationFrame(jog.raf);
+        jogRef.current.holding = false;
         setJogOffset(0);
     };
 
-    const startPct = ratioInView(liveStart, viewStart, viewEnd) * 100;
-    const endPct = ratioInView(liveEnd, viewStart, viewEnd) * 100;
+    const nudge = (which: 'start' | 'end' | 'playhead', delta: number) => {
+        if (which === 'playhead') {
+            const cap = duration > 0 ? duration : currentTime + Math.abs(delta);
+            onSeekTo(Math.min(Math.max(currentTime + delta, 0), cap));
+            return;
+        }
+        if (which === 'start') persist(range.start + delta, range.end, 'start');
+        else persist(range.start, range.end + delta, 'end');
+    };
+
+    const startPct = ratioInView(range.start, viewStart, viewEnd) * 100;
+    const endPct = ratioInView(range.end, viewStart, viewEnd) * 100;
     const playPct = ratioInView(currentTime, viewStart, viewEnd) * 100;
     const widthPct = Math.max(endPct - startPct, 1.2);
+    const pointerBind = {
+        onPointerMove: onBarPointerMove,
+        onPointerUp: onBarPointerUp,
+        onPointerCancel: onBarPointerUp,
+    };
 
     return (
         <div className="space-y-3">
             <div>
-                <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400 mb-1.5">
-                    Recorte da frase
-                </p>
+                <div className="mb-1.5 flex items-center justify-between gap-2">
+                    <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">
+                        Recorte da frase
+                    </p>
+                    <p className="text-[11px] font-bold tabular-nums text-slate-700">
+                        {formatClockPrecise(range.start)} → {formatClockPrecise(range.end)}
+                    </p>
+                </div>
                 <div className="flex items-center justify-between mb-1">
                     <span className="text-[10px] tabular-nums text-slate-400">{formatClockPrecise(viewStart)}</span>
                     <div className="flex gap-1">
@@ -246,9 +292,7 @@ const PhraseTrimEditor: React.FC<Props> = ({
                 <div
                     ref={barRef}
                     className="relative h-12 rounded-lg bg-slate-800 overflow-hidden touch-none select-none"
-                    onPointerMove={onBarPointerMove}
-                    onPointerUp={onBarPointerUp}
-                    onPointerCancel={onBarPointerUp}
+                    {...pointerBind}
                 >
                     <div className="absolute inset-0 opacity-30 bg-[repeating-linear-gradient(90deg,#64748b_0_2px,transparent_2px_18px)]" />
                     <button
@@ -256,13 +300,12 @@ const PhraseTrimEditor: React.FC<Props> = ({
                         className="absolute inset-0 z-0"
                         aria-label="Posição do áudio"
                         onPointerDown={onBarPointerDown('playhead')}
+                        {...pointerBind}
                     />
-                    {hasRange || draft ? (
-                        <div
-                            className="absolute top-1 bottom-1 rounded-md bg-emerald-400/35 border-2 border-emerald-400 z-10 pointer-events-none"
-                            style={{ left: `${startPct}%`, width: `${widthPct}%` }}
-                        />
-                    ) : null}
+                    <div
+                        className="absolute top-1 bottom-1 rounded-md bg-emerald-400/35 border-2 border-emerald-400 z-10 pointer-events-none"
+                        style={{ left: `${startPct}%`, width: `${widthPct}%` }}
+                    />
                     <div
                         className="absolute top-0 bottom-0 w-0.5 bg-white z-20 pointer-events-none"
                         style={{ left: `${playPct}%` }}
@@ -272,6 +315,7 @@ const PhraseTrimEditor: React.FC<Props> = ({
                         aria-label="Início do trecho"
                         disabled={disabled}
                         onPointerDown={onBarPointerDown('start')}
+                        {...pointerBind}
                         className="absolute top-0 bottom-0 w-4 -ml-2 z-30 rounded-sm bg-emerald-400 flex items-center justify-center touch-none"
                         style={{ left: `${startPct}%` }}
                     >
@@ -282,6 +326,7 @@ const PhraseTrimEditor: React.FC<Props> = ({
                         aria-label="Fim do trecho"
                         disabled={disabled}
                         onPointerDown={onBarPointerDown('end')}
+                        {...pointerBind}
                         className="absolute top-0 bottom-0 w-4 -ml-2 z-30 rounded-sm bg-emerald-400 flex items-center justify-center touch-none"
                         style={{ left: `${endPct}%` }}
                     >
@@ -301,7 +346,7 @@ const PhraseTrimEditor: React.FC<Props> = ({
                     onPointerUp={onJogUp}
                     onPointerCancel={onJogUp}
                     role="slider"
-                    aria-label="Arraste para a esquerda para recuar e para a direita para avançar"
+                    aria-label="Arraste: o tempo fica onde você soltar"
                     aria-valuemin={0}
                     aria-valuemax={duration || 0}
                     aria-valuenow={currentTime}
@@ -342,15 +387,13 @@ const PhraseTrimEditor: React.FC<Props> = ({
             <div className="flex gap-2">
                 <TimeField
                     label="Início (digite)"
-                    value={liveStart}
-                    duration={duration || liveStart}
-                    onCommit={(seconds) => persist(seconds, liveEnd)}
+                    value={range.start}
+                    onCommit={(seconds) => persist(seconds, rangeRef.current.end, 'start')}
                 />
                 <TimeField
                     label="Fim (digite)"
-                    value={liveEnd}
-                    duration={duration || liveEnd}
-                    onCommit={(seconds) => persist(liveStart, seconds)}
+                    value={range.end}
+                    onCommit={(seconds) => persist(rangeRef.current.start, seconds, 'end')}
                 />
             </div>
             <div className="flex gap-2">
@@ -388,7 +431,7 @@ const PhraseTrimEditor: React.FC<Props> = ({
                 </button>
             </div>
             <p className="text-[10px] text-slate-400">
-                Arraste as alças verdes como no recorte de vídeo. Ou digite o tempo, por exemplo 0:16.6
+                Arraste as alças verdes. Digite 0:16.6 ou 16.6. Arrastar o início para a esquerda encurta a frase anterior, se precisar.
             </p>
         </div>
     );
