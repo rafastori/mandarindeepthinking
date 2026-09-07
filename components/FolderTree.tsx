@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Icon from './Icon';
 import { StudyItem } from '../types';
-import { buildFolderTree, FolderNode, countItemsInFolder } from '../services/folderService';
+import { buildFolderTree, FolderNode, countItemsInFolder, injectPendingFolders } from '../services/folderService';
 
 interface FolderTreeProps {
     data: StudyItem[];
@@ -11,6 +11,9 @@ interface FolderTreeProps {
     onRenameFolder?: (oldPath: string, newPath: string) => void;
     onDeleteFolder?: (path: string) => void;
     onMoveFolder?: (path: string) => void;
+    pendingFolders?: Array<{ path: string; status: FolderNode['pendingStatus'] }>;
+    onGeneratePending?: (path: string) => void;
+    generatingPath?: string | null;
     isOpen: boolean;
     onClose: () => void;
 }
@@ -23,6 +26,9 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     onRenameFolder,
     onDeleteFolder,
     onMoveFolder,
+    pendingFolders = [],
+    onGeneratePending,
+    generatingPath,
     isOpen,
     onClose
 }) => {
@@ -38,7 +44,26 @@ const FolderTree: React.FC<FolderTreeProps> = ({
     }, [data]);
 
     // Constrói árvore de pastas
-    const folderTree = useMemo(() => buildFolderTree(data), [data]);
+    const folderTree = useMemo(() => {
+        const base = buildFolderTree(data);
+        return injectPendingFolders(base, pendingFolders);
+    }, [data, pendingFolders]);
+
+    useEffect(() => {
+        if (pendingFolders.length === 0) return;
+        setExpandedPaths(prev => {
+            const next = new Set(prev);
+            pendingFolders.forEach(p => {
+                const parts = p.path.split('/');
+                let acc = '';
+                parts.slice(0, -1).forEach(part => {
+                    acc = acc ? `${acc}/${part}` : part;
+                    next.add(acc);
+                });
+            });
+            return next;
+        });
+    }, [pendingFolders]);
 
     const toggleExpanded = (path: string, e?: React.MouseEvent) => {
         if (e) e.stopPropagation();
@@ -212,6 +237,16 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                                     <Icon name={isExpanded ? "chevron-down" : "chevron-right"} size={18} />
                                 </button>
                             )}
+                            {(node.pendingStatus === 'pending' || node.pendingStatus === 'error') && onGeneratePending && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onGeneratePending(node.path); }}
+                                    disabled={generatingPath === node.path}
+                                    className="p-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg text-indigo-600 transition-colors disabled:opacity-50"
+                                    title="Gerar esta subpasta com DeepSeek"
+                                >
+                                    <Icon name="sparkles" size={18} />
+                                </button>
+                            )}
                             {onImportInFolder && (
                                 <button
                                     onClick={(e) => { e.stopPropagation(); onImportInFolder(node.path); }}
@@ -250,13 +285,30 @@ const FolderTree: React.FC<FolderTreeProps> = ({
                             )}
                         </div>
                     ) : (
-                        /* Item Count (visible when actions are NOT visible, or always) */
+                        <div className="flex items-center gap-1 shrink-0">
+                            {(node.pendingStatus === 'pending' || node.pendingStatus === 'error') && onGeneratePending && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onGeneratePending(node.path); }}
+                                    disabled={generatingPath === node.path}
+                                    className="p-1.5 bg-indigo-50 hover:bg-indigo-100 rounded-lg text-indigo-600 disabled:opacity-50"
+                                    title="Gerar esta subpasta"
+                                >
+                                    <Icon name="sparkles" size={16} />
+                                </button>
+                            )}
                         <span
-                            className={`text-xs font-bold px-2 py-0.5 rounded-full shrink-0 ${hasChildren ? 'bg-purple-500 text-white shadow-sm' : 'bg-slate-100 text-slate-500'}`}
-                            title={hasChildren ? "Possui subpastas (duplo clique para expandir)" : `${node.itemCount} itens`}
+                            className={`text-xs font-bold px-2 py-0.5 rounded-full shrink-0 ${
+                                node.pendingStatus === 'pending' || node.pendingStatus === 'error'
+                                    ? 'bg-indigo-100 text-indigo-700'
+                                    : node.pendingStatus === 'processing'
+                                        ? 'bg-amber-100 text-amber-700'
+                                        : hasChildren ? 'bg-purple-500 text-white shadow-sm' : 'bg-slate-100 text-slate-500'
+                            }`}
+                            title={node.pendingStatus === 'pending' ? 'Aguardando geração' : hasChildren ? "Possui subpastas (duplo clique para expandir)" : `${node.itemCount} itens`}
                         >
-                            {node.itemCount}
+                            {node.pendingStatus === 'pending' ? 'fila' : node.pendingStatus === 'processing' ? '…' : node.pendingStatus === 'error' ? 'erro' : node.itemCount}
                         </span>
+                        </div>
                     )}
                 </div>
 

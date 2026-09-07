@@ -20,6 +20,8 @@ interface Props {
     onOpenAlignment?: () => void;
     alignmentCount?: number;
     canSuggestLink?: boolean;
+    clipStart?: number;
+    clipEnd?: number;
 }
 
 const NativeLessonPlayer: React.FC<Props> = ({
@@ -39,6 +41,8 @@ const NativeLessonPlayer: React.FC<Props> = ({
     onOpenAlignment,
     alignmentCount = 0,
     canSuggestLink = false,
+    clipStart,
+    clipEnd,
 }) => {
     if (!match && !hasLibrary && canSuggestLink) {
         return (
@@ -78,8 +82,15 @@ const NativeLessonPlayer: React.FC<Props> = ({
         );
     }
 
-    const suffixLabel = match.file.suffix ? SUFFIX_LABELS[match.file.suffix] : 'Áudio';
-    const progress = duration > 0 ? Math.min(currentTime / duration, 1) : 0;
+    const isNumericLesson = /^\d{3,6}$/.test(match.lessonId);
+    const suffixLabel = (isNumericLesson && match.file.suffix)
+        ? SUFFIX_LABELS[match.file.suffix]
+        : 'Áudio';
+    const windowStart = clipStart != null ? clipStart : 0;
+    const windowEnd = clipEnd != null ? clipEnd : duration;
+    const windowDur = Math.max(0.01, windowEnd - windowStart);
+    const clamped = Math.min(Math.max(currentTime, windowStart), windowEnd);
+    const progress = duration > 0 ? (clamped - windowStart) / windowDur : 0;
 
     return (
         <div className="mb-4 rounded-xl border border-emerald-200 bg-emerald-50/80 p-2.5">
@@ -89,7 +100,7 @@ const NativeLessonPlayer: React.FC<Props> = ({
                     Nativo
                 </span>
                 <p className="text-xs text-emerald-900 min-w-0 truncate flex-1" title={match.file.fileName}>
-                    C{match.lessonId} · {suffixLabel}
+                    {isNumericLesson ? `C${match.lessonId}` : match.lessonId} · {suffixLabel}
                     <span className="text-emerald-700/70"> · {match.file.fileName}</span>
                 </p>
                 {onOpenAlignment && (
@@ -124,7 +135,7 @@ const NativeLessonPlayer: React.FC<Props> = ({
                     type="button"
                     onClick={onReplay}
                     className="w-8 h-8 rounded-full bg-white text-emerald-700 border border-emerald-200 flex items-center justify-center hover:bg-emerald-100"
-                    title="Repetir do diálogo (pula a intro)"
+                    title={clipStart != null ? 'Repetir este trecho' : 'Repetir do diálogo (pula a intro)'}
                 >
                     <Icon name="rotate-ccw" size={14} />
                 </button>
@@ -165,7 +176,7 @@ const NativeLessonPlayer: React.FC<Props> = ({
                         />
                     </button>
                     <p className="mt-1 text-[10px] text-emerald-800/80 tabular-nums">
-                        {formatClock(currentTime)} / {formatClock(duration)}
+                        {formatClock(clipStart != null ? Math.max(0, clamped - windowStart) : currentTime)} / {formatClock(clipEnd != null ? windowDur : duration)}
                     </p>
                 </div>
             </div>

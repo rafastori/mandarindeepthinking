@@ -2,7 +2,7 @@
 
 import { GoogleGenAI } from "@google/genai";
 import { StudyItem, Keyword, GameCard, SupportedLanguage } from "../types";
-import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult } from "../lib/openrouter.js";
+import { callOpenRouterText, chunkArray, mapChunks, normalizeArrayResult, splitTextChunks } from "../lib/openrouter.js";
 
 // Exportamos a interface também daqui se precisar, ou usamos a do types.ts
 export { type GameCard } from "../types";
@@ -296,24 +296,27 @@ const getLangName = (code: string) => {
 // --- IMPLEMENTAÇÃO HÍBRIDA (LOCAL vs PROD) ---
 
 export const processTextWithGemini = async (text: string, mode: 'direct' | 'translate' = 'direct', targetLanguage: SupportedLanguage = 'zh'): Promise<StudyItem[]> => {
-    // DEV MODE: Usa SDK local
+    const stampItem = (item: any, index: number, prefix: string) => ({
+        ...item,
+        id: `${prefix}-${Date.now()}-${index}`,
+        language: targetLanguage,
+        tokens: item.tokens || [],
+        keywords: item.keywords || [],
+    });
+
+    // DEV MODE: Usa SDK local (DeepSeek V4 Flash via OpenRouter)
     if (import.meta.env.DEV) {
         console.log("Using OpenRouter (DeepSeek V4 Flash) for Text Analysis");
         const systemPrompt = getSystemInstruction('analysis', targetLanguage, mode);
-        const userPrompt = `Texto para analisar: "${text}"`;
-
-        const rawData = normalizeArrayResult(await callLocalLLM(userPrompt, systemPrompt));
-        const timestamp = Date.now();
-
-        // Normalização básica para garantir compatibilidade com a UI
-        return rawData.map((item: any, index: number) => ({
-            ...item,
-            id: `local-${timestamp}-${index}`,
-            language: targetLanguage,
-            // Garante campos mínimos se a IA falhar
-            tokens: item.tokens || [],
-            keywords: item.keywords || []
-        }));
+        const textChunks = splitTextChunks(text, 600);
+        const rawNested = await mapChunks(textChunks, 2, async (chunk: string) => {
+            const rawData = normalizeArrayResult(
+                await callLocalLLM(`Texto para analisar: "${chunk}"`, systemPrompt)
+            );
+            return rawData;
+        });
+        const rawData = rawNested.flat();
+        return rawData.map((item: any, index: number) => stampItem(item, index, 'local'));
     }
 
     // PROD MODE: Usa Fetch API

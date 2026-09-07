@@ -102,6 +102,7 @@ interface ReadingViewProps {
     isColorHighlightEnabled: boolean;
     setIsColorHighlightEnabled: (enabled: boolean) => void;
     onResult?: (isCorrect: boolean, word: string) => void;
+    splitAudioCue?: { audioLessonId: string; start: number; end: number } | null;
 }
 
 const ReadingView: React.FC<ReadingViewProps> = ({
@@ -123,7 +124,8 @@ const ReadingView: React.FC<ReadingViewProps> = ({
     voiceRecording,
     isColorHighlightEnabled,
     setIsColorHighlightEnabled,
-    onResult
+    onResult,
+    splitAudioCue = null,
 }) => {
     const { speak, stop, playingId } = usePuterSpeech();
     const [showNativeAudioModal, setShowNativeAudioModal] = useState(false);
@@ -357,8 +359,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
         () => resolveLessonIdForView(activeFolderFilters, filteredData.map(item => item.folderPath)),
         [activeFolderFilters, filteredData]
     );
-    const nativeAudio = useNativeLessonPlayer(nativeLessonId, { onBeforePlay: stop });
-    const lessonAlignment = useLessonAlignment(nativeLessonId, filteredData);
+    const playerLessonId = splitAudioCue?.audioLessonId || nativeLessonId;
+    const nativeAudio = useNativeLessonPlayer(playerLessonId, { onBeforePlay: stop });
+    const lessonAlignment = useLessonAlignment(playerLessonId, filteredData);
     const cueForId = useCallback((id?: string) => {
         if (!id || !lessonAlignment.alignment) return null;
         const key = id.startsWith('reading-') ? id.slice('reading-'.length) : id;
@@ -1123,21 +1126,42 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                         </div>
                     )}
 
-                    {nativeLessonId && !selectionMode && !reorderMode && (
+                    {playerLessonId && !selectionMode && !reorderMode && (
                         <NativeLessonPlayer
                             match={nativeAudio.match}
                             hasLibrary={(nativeAudio.summary?.fileCount || 0) > 0}
-                            canSuggestLink
+                            canSuggestLink={!!nativeLessonId}
+                            clipStart={splitAudioCue?.start}
+                            clipEnd={splitAudioCue?.end}
                             isPlaying={nativeAudio.isPlaying}
                             isLooping={nativeAudio.isLooping}
                             currentTime={nativeAudio.currentTime}
                             duration={nativeAudio.duration}
-                            onPlay={() => nativeAudio.play(introSkip)}
+                            onPlay={() => {
+                                if (splitAudioCue) {
+                                    void nativeAudio.playSegment(splitAudioCue.start, splitAudioCue.end);
+                                    return;
+                                }
+                                nativeAudio.play(introSkip);
+                            }}
                             onPause={nativeAudio.pause}
                             onStop={nativeAudio.stop}
-                            onReplay={() => nativeAudio.replay(introSkip)}
+                            onReplay={() => {
+                                if (splitAudioCue) {
+                                    void nativeAudio.playSegment(splitAudioCue.start, splitAudioCue.end);
+                                    return;
+                                }
+                                nativeAudio.replay(introSkip);
+                            }}
                             onToggleLoop={() => nativeAudio.setLooping(!nativeAudio.isLooping)}
-                            onSeek={nativeAudio.seek}
+                            onSeek={(ratio) => {
+                                if (splitAudioCue && nativeAudio.duration > 0) {
+                                    const span = Math.max(0.01, splitAudioCue.end - splitAudioCue.start);
+                                    nativeAudio.seek((splitAudioCue.start + ratio * span) / nativeAudio.duration);
+                                    return;
+                                }
+                                nativeAudio.seek(ratio);
+                            }}
                             onOpenLibrary={() => setShowNativeAudioModal(true)}
                             onOpenAlignment={() => {
                                 nativeAudio.ensureAudio();
@@ -1721,9 +1745,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({
                 <NativeAudioLibraryModal onClose={() => setShowNativeAudioModal(false)} />
             )}
 
-            {showAlignmentModal && nativeLessonId && nativeAudio.match && (
+            {showAlignmentModal && playerLessonId && nativeAudio.match && (
                 <AlignmentEditorModal
-                    lessonId={nativeLessonId}
+                    lessonId={playerLessonId!}
                     audioFileId={nativeAudio.match.file.id}
                     items={filteredData}
                     language={filteredData[0]?.language}

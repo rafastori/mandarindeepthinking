@@ -14,6 +14,8 @@ import CardsView from './views/CardsView';
 import PronunciaView from './views/PronunciaView';
 import EmptyState from './components/EmptyState';
 import FolderTree from './components/FolderTree';
+import SplitImportBanner from './components/SplitImportBanner';
+import { useSplitImportJobs } from './hooks/useSplitImportJobs';
 import IntroScreen from './components/Gamification/IntroScreen';
 import SessionSummary from './components/Gamification/SessionSummary';
 import BonusCelebration from './components/Gamification/BonusCelebration';
@@ -83,6 +85,7 @@ const App: React.FC = () => {
     const { isPuterConnected, connectPuter, disconnectPuter, puterUsername, speak } = usePuterSpeech();
     const { engine, setEngine } = useSpeechRecognition();
     const voiceRecording = useVoiceRecording();
+    const splitImport = useSplitImportJobs();
 
     // Bloqueia operações de stats até migração completar (evita zerar dados em dispositivo novo)
     const [migrationDone, setMigrationDone] = useState(false);
@@ -409,7 +412,7 @@ const App: React.FC = () => {
         }
     };
 
-    const handleImportBatch = async (newItems: StudyItem[], folderPath: string) => {
+    const handleImportBatch = async (newItems: StudyItem[], folderPath: string, timeBase?: number) => {
         if (!user) {
             alert("Você precisa estar logado para salvar textos.");
             return;
@@ -417,15 +420,38 @@ const App: React.FC = () => {
 
         const itemsToSave = [...newItems].reverse();
 
-        for (const item of itemsToSave) {
+        for (let i = 0; i < itemsToSave.length; i++) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const { id, ...dataToSave } = item;
-            await addItem({ ...dataToSave, folderPath });
+            const { id, ...dataToSave } = itemsToSave[i];
+            const createdAt = timeBase != null
+                ? new Date(timeBase + i * 1000).toISOString()
+                : dataToSave.createdAt;
+            await addItem({ ...dataToSave, folderPath, createdAt });
         }
 
-        // Limpa o folder inicial após import
         setInitialImportFolder('');
     };
+
+    const splitSaveOptions = { saveItems: handleImportBatch };
+
+    const pendingSplitFolders = useMemo(
+        () => splitImport.jobs.flatMap(job =>
+            job.chunks
+                .filter(chunk => chunk.status !== 'done')
+                .map(chunk => ({ path: chunk.folderPath, status: chunk.status }))
+        ),
+        [splitImport.jobs]
+    );
+
+    const generatingSplitPath = useMemo(() => {
+        if (!splitImport.busyJobId || splitImport.busyIndex == null) return null;
+        const job = splitImport.jobs.find(j => j.id === splitImport.busyJobId);
+        return job?.chunks[splitImport.busyIndex]?.folderPath ?? null;
+    }, [splitImport.busyJobId, splitImport.busyIndex, splitImport.jobs]);
+
+    const splitAudioCue = splitImport.getFolderAudioCue(
+        activeFolderFilters.length === 1 ? activeFolderFilters[0] : null
+    );
 
     // Abre modal de importação com pasta pré-selecionada
     const handleOpenImportInFolder = (folderPath: string) => {
@@ -743,6 +769,7 @@ const App: React.FC = () => {
                         voiceRecording={voiceRecording}
                         isColorHighlightEnabled={isColorHighlightEnabled}
                         setIsColorHighlightEnabled={setIsColorHighlightEnabled}
+                        splitAudioCue={splitAudioCue}
                     />
                 );
             case 'revisao': return <ReviewView data={libraryData} savedIds={activeSavedIds} onRemove={handleDelete} onUpdateLanguage={updateItem} activeFolderFilters={activeFolderFilters} wordCounts={activeStats.wordCounts || {}} ignoredReviewWords={activeStats.ignoredReviewWords || []} showOnlyErrors={showOnlyErrors} setShowOnlyErrors={setShowOnlyErrors} voiceRecording={voiceRecording} stats={activeStats} updateFavoriteConfig={updateCloudFavoriteConfig} />;
@@ -856,6 +883,30 @@ const App: React.FC = () => {
                 />
 
             )}
+            {!isFullscreenGame && (
+                <SplitImportBanner
+                    jobs={splitImport.activeJobs}
+                    busyJobId={splitImport.busyJobId}
+                    busyIndex={splitImport.busyIndex}
+                    onGenerateNext={async (jobId) => {
+                        try {
+                            const result = await splitImport.generateNext(jobId, splitSaveOptions);
+                            if (result.folderPath) updateFolderFilters([result.folderPath]);
+                        } catch (error: any) {
+                            alert(error?.message || 'Falha ao gerar a próxima pasta.');
+                        }
+                    }}
+                    onGenerateAll={async (jobId) => {
+                        try {
+                            await splitImport.generateAllRemaining(jobId, splitSaveOptions);
+                        } catch (error: any) {
+                            alert(error?.message || 'Falha ao gerar as pastas.');
+                        }
+                    }}
+                    onStop={splitImport.stopGenerateAll}
+                    onDismiss={(jobId) => { void splitImport.dismissJob(jobId); }}
+                />
+            )}
             <main className={`flex-1 overflow-y-auto overflow-x-hidden w-full no-scrollbar ${isFullscreenGame ? '' : ''}`}>
                 <div className={`${isFullscreenGame ? 'h-full' : 'max-w-3xl mx-auto h-full'}`}>
                     {itemsLoading && user ? <div className="p-10 text-center text-slate-300">Carregando dados locais...</div> : (
@@ -874,6 +925,14 @@ const App: React.FC = () => {
                     onImport={handleImportBatch}
                     existingItems={libraryData}
                     initialFolder={initialImportFolder}
+                    onCreateSplitJob={splitImport.createJob}
+                    onGenerateSplitChunk={async (jobId, index) => {
+                        const result = await splitImport.generateChunk(jobId, index, splitSaveOptions);
+                        if (result.folderPath) updateFolderFilters([result.folderPath]);
+                    }}
+                    onGenerateAllSplit={async (jobId) => {
+                        await splitImport.generateAllRemaining(jobId, splitSaveOptions);
+                    }}
                 />
             )}
             {showRepository && (
@@ -893,6 +952,16 @@ const App: React.FC = () => {
                 onRenameFolder={handleRenameFolder}
                 onMoveFolder={handleMoveFolder}
                 onDeleteFolder={handleDeleteFolder}
+                pendingFolders={pendingSplitFolders}
+                generatingPath={generatingSplitPath}
+                onGeneratePending={async (path) => {
+                    try {
+                        const result = await splitImport.generateChunkByPath(path, splitSaveOptions);
+                        if (result.folderPath) updateFolderFilters([result.folderPath]);
+                    } catch (error: any) {
+                        alert(error?.message || 'Falha ao gerar esta pasta.');
+                    }
+                }}
                 isOpen={showGlobalFolderTree}
                 onClose={() => setShowGlobalFolderTree(false)}
             />
