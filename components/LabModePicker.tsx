@@ -19,7 +19,7 @@ const LabModePicker: React.FC<LabModePickerProps> = ({
 }) => {
     const canStart = selected === 'ordenar' ? ordenarReady : combinableReady;
     const blocked = selected === 'ordenar'
-        ? 'Adicione textos com frases tokenizadas para ordenar as peças.'
+        ? 'Adicione textos com frases tokenizadas (pelo menos duas palavras) para ordenar as peças.'
         : 'Precisa de frases com texto e tradução nas pastas filtradas.';
 
     const modes: { id: LabSessionKind; title: string; subtitle: string; detail: string; count: number; ready: boolean; icon: React.ReactNode }[] = [
@@ -27,8 +27,8 @@ const LabModePicker: React.FC<LabModePickerProps> = ({
             id: 'ordenar',
             icon: <AlignLeft size={18} />,
             title: 'Ordenar tokens',
-            subtitle: 'Monte a frase com as peças',
-            detail: 'O Lab atual: ouça (opcional), veja a tradução e reordene os tokens da língua de estudo.',
+            subtitle: 'Monte a frase com as palavras',
+            detail: 'Ouça (opcional), veja a tradução e reordene só as palavras. Pontuação entra sozinha; acentos não contam.',
             count: ordenarCount,
             ready: ordenarReady,
         },

@@ -51,9 +51,41 @@ function labTokenKey(text) {
         .toLowerCase();
 }
 
+function isLabPunctToken(text) {
+    return labTokenKey(text) === '';
+}
+
+function labContentTokens(tokens) {
+    return (tokens || []).filter(t => !isLabPunctToken(t));
+}
+
+function weaveLabDisplayTokens(original, selectedContent) {
+    const n = selectedContent.length;
+    if (n === 0) return [];
+    const out = [];
+    let used = 0;
+    let origContentSeen = 0;
+    for (let i = 0; i < original.length; i++) {
+        const t = original[i];
+        if (isLabPunctToken(t)) {
+            if (origContentSeen <= n) out.push({ text: t, kind: 'punct', sourceIndex: i });
+        } else {
+            origContentSeen += 1;
+            if (used < n) {
+                const sel = selectedContent[used];
+                out.push({ text: sel.text, kind: 'content', contentId: sel.id, sourceIndex: i });
+                used += 1;
+            } else break;
+        }
+    }
+    return out;
+}
+
 function labTokenSequenceMatch(attempt, target) {
-    if (attempt.length !== target.length) return false;
-    return attempt.every((tok, i) => labTokenKey(tok) === labTokenKey(target[i] || ''));
+    const a = labContentTokens(attempt);
+    const b = labContentTokens(target);
+    if (a.length !== b.length) return false;
+    return a.every((tok, i) => labTokenKey(tok) === labTokenKey(b[i] || ''));
 }
 
 function levenshtein(a, b) {
@@ -214,6 +246,32 @@ assert(labTokenSequenceMatch(['está', 'bem'], ['esta', 'bem']), 'lab sequence i
 assert(labTokenSequenceMatch(['esta', 'bem'], ['está', 'bem']), 'lab sequence reverse accents');
 assert(!labTokenSequenceMatch(['bem', 'está'], ['está', 'bem']), 'lab sequence order still matters');
 assert(!labTokenSequenceMatch(['está'], ['está', 'bem']), 'lab sequence length matters');
+
+assert(isLabPunctToken('。') && isLabPunctToken('，') && isLabPunctToken('、'), 'cjk punct tokens');
+assert(isLabPunctToken('!') && isLabPunctToken('?') && isLabPunctToken(';') && isLabPunctToken(':'), 'latin punct tokens');
+assert(isLabPunctToken('“') && isLabPunctToken('「') && isLabPunctToken('"'), 'quote punct tokens');
+assert(!isLabPunctToken('宝宝') && !isLabPunctToken('está'), 'words are not punct');
+
+const withPunct = ['有', '。', '噢', '，', '还', '要', '买', '宝宝', '的', '奶粉', '、', '尿布', '。'];
+const contentOnly = ['有', '噢', '还', '要', '买', '宝宝', '的', '奶粉', '尿布'];
+assert(labTokenSequenceMatch(contentOnly, withPunct), 'lab match ignores punct in target');
+assert(labTokenSequenceMatch(withPunct, contentOnly), 'lab match ignores punct in attempt');
+assert(!labTokenSequenceMatch(['噢', '有', ...contentOnly.slice(2)], withPunct), 'lab still requires word order');
+
+const emptyWeave = weaveLabDisplayTokens(withPunct, []);
+assert(emptyWeave.length === 0, 'weave empty until a word is placed');
+
+const firstTwo = weaveLabDisplayTokens(withPunct, [{ id: 0, text: '有' }, { id: 2, text: '噢' }]);
+assert(firstTwo.map(t => t.text).join('') === '有。噢，', 'weave auto-places punct after placed words');
+assert(firstTwo.filter(t => t.kind === 'punct').every(t => t.kind === 'punct'), 'punct marks are punct kind');
+assert(firstTwo.filter(t => t.kind === 'content').length === 2, 'two content chips');
+
+const allWoven = weaveLabDisplayTokens(
+    withPunct,
+    contentOnly.map((text, id) => ({ id, text }))
+);
+assert(allWoven.map(t => t.text).join('') === withPunct.join(''), 'full weave restores original incl. punct');
+assert(labContentTokens(withPunct).join(',') === contentOnly.join(','), 'labContentTokens drops punct');
 
 const marks = diffTokens(['eu', 'estou', 'bem'], ['eu', 'fico', 'bem']);
 assert(marks.some(m => m.text === 'estou' && m.kind === 'del'), 'diff del expected token');
