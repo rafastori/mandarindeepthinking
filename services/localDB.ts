@@ -5,11 +5,11 @@
  * O Firebase é usado apenas para backup manual e features online (Leaderboard).
  */
 
-import { StudyItem, Stats, SessionRecord } from '../types';
+import { StudyItem, Stats, SessionRecord, SupportedLanguage } from '../types';
 import type { LessonAlignment } from '../utils/audioAlignment';
 
 const DB_NAME = 'MandarinDeepThinkingDB';
-const DB_VERSION = 4;
+const DB_VERSION = 5;
 
 // Store names
 const ITEMS_STORE = 'items';
@@ -17,6 +17,7 @@ const PROFILE_STORE = 'profile';
 const VOICE_STORE = 'voiceRecordings';
 const SESSIONS_STORE = 'sessions';
 const COMMENTS_STORE = 'comments';
+const SPLIT_JOBS_STORE = 'splitImportJobs';
 
 // Profile keys
 const PROFILE_KEY = 'userProfile';
@@ -66,6 +67,33 @@ export interface VoiceRecording {
     updatedAt: string;  // ISO date
 }
 
+export type SplitChunkStatus = 'pending' | 'processing' | 'done' | 'error';
+
+export interface SplitImportChunk {
+    index: number;
+    folderName: string;
+    folderPath: string;
+    text: string;
+    turnCount: number;
+    status: SplitChunkStatus;
+    error?: string;
+    itemCount?: number;
+    audioStart?: number;
+    audioEnd?: number;
+}
+
+export interface SplitImportJob {
+    id: string;
+    parentFolder: string;
+    language: SupportedLanguage;
+    mode: 'direct' | 'translate';
+    turnsPerFolder: number;
+    createdAt: string;
+    audioLessonId?: string;
+    audioDuration?: number;
+    chunks: SplitImportChunk[];
+}
+
 const defaultProfile: LocalProfile = {
     savedIds: [],
     stats: { correct: 0, wrong: 0, history: [], wordCounts: {}, studyMoreIds: [] },
@@ -83,6 +111,10 @@ const defaultProfile: LocalProfile = {
 let dbInstance: IDBDatabase | null = null;
 
 function openDB(): Promise<IDBDatabase> {
+    if (dbInstance && dbInstance.version < DB_VERSION) {
+        dbInstance.close();
+        dbInstance = null;
+    }
     if (dbInstance) return Promise.resolve(dbInstance);
 
     return new Promise((resolve, reject) => {
@@ -117,6 +149,11 @@ function openDB(): Promise<IDBDatabase> {
                 const commentsStore = db.createObjectStore(COMMENTS_STORE, { keyPath: 'id' });
                 commentsStore.createIndex('targetKey', 'targetKey', { unique: false });
                 commentsStore.createIndex('targetType', 'targetType', { unique: false });
+            }
+
+            // Split import jobs (v5) — textos grandes gerados pasta a pasta
+            if (!db.objectStoreNames.contains(SPLIT_JOBS_STORE)) {
+                db.createObjectStore(SPLIT_JOBS_STORE, { keyPath: 'id' });
             }
         };
 
@@ -430,6 +467,32 @@ export const localDB = {
     /** Limpa todos os comentários */
     async clearComments(): Promise<void> {
         await withStore(COMMENTS_STORE, 'readwrite', (store) => store.clear());
+    },
+
+    // --- Split import jobs (v5) ---
+
+    async getSplitImportJobs(): Promise<SplitImportJob[]> {
+        const all = await withStore<SplitImportJob[]>(SPLIT_JOBS_STORE, 'readonly', store => store.getAll());
+        return (all || []).sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''));
+    },
+
+    async getSplitImportJob(id: string): Promise<SplitImportJob | null> {
+        const job = await withStore<SplitImportJob | undefined>(SPLIT_JOBS_STORE, 'readonly', store => store.get(id));
+        return job || null;
+    },
+
+    async putSplitImportJob(job: SplitImportJob): Promise<void> {
+        await withStore(SPLIT_JOBS_STORE, 'readwrite', store => store.put(job));
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new Event('splitimportjobs-change'));
+        }
+    },
+
+    async deleteSplitImportJob(id: string): Promise<void> {
+        await withStore(SPLIT_JOBS_STORE, 'readwrite', store => store.delete(id));
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new Event('splitimportjobs-change'));
+        }
     }
 };
 

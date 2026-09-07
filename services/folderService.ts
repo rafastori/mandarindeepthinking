@@ -231,6 +231,50 @@ export interface FolderNode {
     path: string;
     itemCount: number;
     children: FolderNode[];
+    pendingStatus?: 'pending' | 'processing' | 'error' | 'done';
+}
+
+export function injectPendingFolders(
+    tree: FolderNode[],
+    pending: Array<{ path: string; status: FolderNode['pendingStatus'] }>
+): FolderNode[] {
+    if (!pending.length) return tree;
+
+    const cloneWalk = (nodes: FolderNode[]): FolderNode[] =>
+        nodes.map(node => ({ ...node, children: cloneWalk(node.children) }));
+    const cloned = cloneWalk(tree);
+
+    const nodeMap = new Map<string, FolderNode>();
+    const fill = (node: FolderNode) => {
+        nodeMap.set(node.path, node);
+        node.children.forEach(fill);
+    };
+    cloned.forEach(fill);
+
+    for (const item of pending) {
+        const parts = item.path.split('/').filter(Boolean);
+        let currentPath = '';
+        parts.forEach((part, index) => {
+            const parentPath = currentPath;
+            currentPath = currentPath ? `${currentPath}/${part}` : part;
+            let node = nodeMap.get(currentPath);
+            if (!node) {
+                node = {
+                    name: part,
+                    path: currentPath,
+                    itemCount: 0,
+                    children: [],
+                    pendingStatus: index === parts.length - 1 ? item.status : undefined,
+                };
+                nodeMap.set(currentPath, node);
+                if (index === 0) cloned.push(node);
+                else nodeMap.get(parentPath)?.children.push(node);
+            } else if (index === parts.length - 1 && item.status) {
+                node.pendingStatus = item.status;
+            }
+        });
+    }
+    return cloned;
 }
 
 export const buildFolderTree = (items: { folderPath?: string | null }[]): FolderNode[] => {

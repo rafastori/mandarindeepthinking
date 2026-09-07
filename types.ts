@@ -33,6 +33,8 @@ export interface StudyItem {
     type?: 'text' | 'word';
     originalSentence?: string;
     folderPath?: string; // Ex: "2458" ou "Curso/Aula 1/Gramática"
+    audioStart?: number;
+    audioEnd?: number;
     // Áudio nativo ChinesePod NÃO entra aqui: fica em IndexedDB local
     // (MemorizaTudoNativeAudioDB) para não ir no backup/Firebase.
 }

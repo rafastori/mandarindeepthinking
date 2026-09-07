@@ -220,6 +220,24 @@ export const nativeAudioLibrary = {
         return record || null;
     },
 
+    /** Grava um MP3/WAV genérico associado a uma pasta (não precisa do nome ChinesePod). */
+    async putGenericFile(lessonId: string, file: Blob, fileName: string): Promise<NativeAudioFileMeta> {
+        const id = fileId(lessonId, 'dg');
+        const record: NativeAudioFileRecord = {
+            id,
+            lessonId,
+            suffix: 'dg',
+            fileName: fileName || `${lessonId}.mp3`,
+            mimeType: (file as File).type || file.type || 'audio/mpeg',
+            size: file.size,
+            importedAt: new Date().toISOString(),
+            blob: file,
+        };
+        await withStore(FILES_STORE, 'readwrite', store => store.put(record));
+        notifyLibraryChange();
+        return stripBlob(record);
+    },
+
     async getSummary(): Promise<NativeAudioLibrarySummary> {
         const [meta, files] = await Promise.all([this.getMeta(), this.listFiles()]);
         const lessons = new Set(files.map(f => f.lessonId));
