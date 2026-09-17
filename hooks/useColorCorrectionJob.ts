@@ -5,7 +5,7 @@ import {
     getColorJobState,
     startColorCorrectionJob,
 } from '../services/colorCorrectionJob';
-import { ColorCorrectionInput } from '../services/colorCorrectionLLM';
+import type { ColorCorrectionInput } from '../services/colorCorrectionLLM';
 import { SupportedLanguage } from '../types';
 
 export function useColorCorrectionJob() {
