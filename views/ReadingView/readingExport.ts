@@ -1,8 +1,8 @@
 import { StudyItem } from '../../types';
 import { ExportConfig } from '../../components/ExportModal';
 
-const NO_SPACE_BEFORE = ',.-!?;:)]}"'»›…。，！？；：）】」』、';
-const NO_SPACE_AFTER = '([{"'«‹（【「『';
+const NO_SPACE_BEFORE = ',.-!?;:)]}\u0022\u0027»›…。，！？；：）】」』、';
+const NO_SPACE_AFTER = '([{\u0022\u0027«‹（【「『';
 
 export function formatTokensToText(tokens: string[]): string {
     if (!tokens || tokens.length === 0) return '';
