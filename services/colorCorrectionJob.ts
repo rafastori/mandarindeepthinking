@@ -1,4 +1,4 @@
-import { correctColorHighlights, ColorCorrectionInput, ColorCorrectionOutput } from './gemini';
+import { correctColorHighlights, ColorCorrectionInput, ColorCorrectionOutput } from './colorCorrectionLLM';
 import { localDB, ColorCorrectionToken } from './localDB';
 import { SupportedLanguage } from '../types';
 
