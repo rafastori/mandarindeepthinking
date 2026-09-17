@@ -126,7 +126,8 @@ export function renderColoredTranslation(
 
     return (item.translation || '').split(/\s+/).map((word, wi) => {
         let matchColor: { text: string; bg: string } | null = null;
-        const cleanWord = word.replace(/[.,!?;:()\\[\\]{}"']/g, '').toLowerCase();
+        const punct = '.,!?;:()[]{}"\'';
+        const cleanWord = word.split('').filter(ch => !punct.includes(ch)).join('').toLowerCase();
         if (cleanWord.length > 1) {
             for (const sw of sentenceSavedWords) {
                 const meanings = sw.meaning.toLowerCase().split(/[,;/]/).map(m => m.trim());

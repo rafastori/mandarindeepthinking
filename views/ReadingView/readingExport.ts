@@ -1,18 +1,21 @@
 import { StudyItem } from '../../types';
 import { ExportConfig } from '../../components/ExportModal';
 
+const NO_SPACE_BEFORE = ',.-!?;:)]}"'»›…。，！？；：）】」』、';
+const NO_SPACE_AFTER = '([{"'«‹（【「『';
+
 export function formatTokensToText(tokens: string[]): string {
     if (!tokens || tokens.length === 0) return '';
-
-    const punctuationNoBefore = /^[,.\\-!?;:)\\]}"'»›…。，！？；：）】」』、]/;
-    const punctuationNoAfter = /[(\[{"'<\u00ab\u2039\uff08\u3010\u300c\u300e]$/;
 
     let result = '';
     for (let i = 0; i < tokens.length; i++) {
         const token = tokens[i];
         const prevToken = i > 0 ? tokens[i - 1] : '';
-
-        if (i > 0 && !punctuationNoBefore.test(token) && !punctuationNoAfter.test(prevToken)) {
+        const skipSpace = i > 0 && (
+            (token.length > 0 && NO_SPACE_BEFORE.includes(token[0])) ||
+            (prevToken.length > 0 && NO_SPACE_AFTER.includes(prevToken[prevToken.length - 1]))
+        );
+        if (i > 0 && !skipSpace) {
             result += ' ';
         }
         result += token;

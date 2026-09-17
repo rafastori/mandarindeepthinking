@@ -6,8 +6,18 @@
     }
   ],
   "functions": {
-    "api/*.js": {
+    "api/generate.js": {
       "maxDuration": 300,
+      "includeFiles": "lib/**"
+    },
+    "api/color-correction.js": {
+      "maxDuration": 300,
+      "includeFiles": "lib/**"
+    },
+    "api/test.js": {
+      "includeFiles": "lib/**"
+    },
+    "api/debug.js": {
       "includeFiles": "lib/**"
     }
   }
