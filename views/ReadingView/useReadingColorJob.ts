@@ -21,6 +21,7 @@ export function useReadingColorJob(opts: {
 }) {
     const { isRunning: isCorrectingColors } = useColorCorrectionJob();
     const [colorCorrections, setColorCorrections] = useState<Map<string, ColorCorrectionToken[]>>(new Map());
+    const colorCorrectionsHydrated = useRef(false);
 
     useEffect(() => {
         let cancelled = false;
@@ -52,6 +53,8 @@ export function useReadingColorJob(opts: {
                 }
             } catch (e) {
                 console.error('Erro ao hidratar colorCorrections do localDB:', e);
+            } finally {
+                colorCorrectionsHydrated.current = true;
             }
         })();
         return () => { cancelled = true; };
@@ -69,6 +72,7 @@ export function useReadingColorJob(opts: {
 
     const handleCorrectColors = async (sentenceIdsSubset?: string[]) => {
         if (isColorJobRunning() || isCorrectingColors) return;
+
         const subsetSet = sentenceIdsSubset ? new Set(sentenceIdsSubset) : null;
         const sentencesForAI = opts.filteredData
             .filter(item => item.translation)
@@ -93,21 +97,33 @@ export function useReadingColorJob(opts: {
                 };
             })
             .filter(s => s.savedWords.length > 0);
+
         if (sentencesForAI.length === 0) {
             alert('Nenhuma palavra salva encontrada nos textos filtrados.');
             return;
         }
-        const counts: Record<string, number> = {};
+
+        const langCounts: Record<string, number> = {};
         opts.filteredData.forEach(item => {
             const lang = item.language || 'zh';
-            counts[lang] = (counts[lang] || 0) + 1;
+            langCounts[lang] = (langCounts[lang] || 0) + 1;
         });
-        const predominantLang = (Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] as SupportedLanguage) || 'zh';
-        if (!opts.isColorHighlightEnabled) opts.setIsColorHighlightEnabled(true);
+        const predominantLang = (Object.entries(langCounts).sort((a, b) => b[1] - a[1])[0]?.[0] as SupportedLanguage) || 'zh';
+
+        if (!opts.isColorHighlightEnabled) {
+            opts.setIsColorHighlightEnabled(true);
+        }
+
         startColorCorrectionJob(sentencesForAI, predominantLang).catch(error => {
             console.error('[ColorCorrection] Erro:', error);
         });
     };
 
-    return { isCorrectingColors, colorCorrections, handleCorrectColors, applyColorCorrectionPatch };
+    return {
+        isCorrectingColors,
+        colorCorrections,
+        handleCorrectColors,
+        applyColorCorrectionPatch,
+        colorCorrectionsHydrated,
+    };
 }
