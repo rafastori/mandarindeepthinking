@@ -7,6 +7,7 @@ import {
   sanitizeColorOutputs,
 } from '../lib/openrouter.js';
 
+export const maxDuration = 300;
 export const COLOR_CHUNK = 3;
 export const COLOR_LLM_OPTIONS = {
   jsonObject: true,
