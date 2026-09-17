@@ -4,7 +4,7 @@ import StudySentenceCard from './StudySentenceCard';
 import ReadingModals from './ReadingModals';
 import { proposeSentenceSplit } from './newWordsUtils';
 
-export default function ReadingViewLayout(vm: any) {
+export default function ReadingViewLayout({ vm }: { vm: any }) {
     const {
         filteredData, studyList, activeFolderFilters, onUpdateFolderFilters,
         readingMode, setReadingMode, readingPrefs, setReadingPrefs,
@@ -35,7 +35,7 @@ export default function ReadingViewLayout(vm: any) {
         <div className="p-4 space-y-4 pb-24 relative min-h-full">
             <ReadingChrome
                 filteredData={filteredData}
-                studyListLength={studyList.length}
+                studyListLength={studyList?.length || 0}
                 activeFolderFilters={activeFolderFilters}
                 onUpdateFolderFilters={onUpdateFolderFilters}
                 readingMode={readingMode}
@@ -62,7 +62,7 @@ export default function ReadingViewLayout(vm: any) {
                 splitAudioCue={splitAudioCue}
                 attachingAudio={attachingAudio}
                 introSkip={introSkip}
-                alignmentCount={lessonAlignment.alignment?.cues.length || 0}
+                alignmentCount={lessonAlignment?.alignment?.cues?.length || 0}
                 commentsApi={commentsApi}
                 speakText={speakText}
                 stopAllSpeech={stopAllSpeech}
@@ -89,7 +89,7 @@ export default function ReadingViewLayout(vm: any) {
                 onDeleteMany={onDeleteMany}
             />
 
-            {readingMode === 'simple' && !selectionMode && !reorderMode ? null : studyList.map((item, index) => {
+            {readingMode === 'simple' && !selectionMode && !reorderMode ? null : (studyList || []).map((item, index) => {
                 const analysis = sentenceAnalysisMap.get(item.id.toString());
                 const difficulty = analysis?.difficulty || 'easy';
                 const canSplit = difficulty === 'hard' && !!onSplitSentence
@@ -109,14 +109,14 @@ export default function ReadingViewLayout(vm: any) {
                         focusNewWords={focusNewWords}
                         selectionMode={selectionMode}
                         reorderMode={reorderMode}
-                        isSelected={selectedIds.has(item.id.toString())}
-                        quizDone={completedQuizzes.has(item.id.toString())}
+                        isSelected={selectedIds?.has(item.id.toString())}
+                        quizDone={completedQuizzes?.has(item.id.toString())}
                         loadingWord={loadingWord}
                         commentedWords={commentedWords}
                         commentedSentences={commentedSentences}
                         playingId={playingId}
-                        playingSegmentId={nativeAudio.playingSegmentId}
-                        localReorderLength={localReorderData.length}
+                        playingSegmentId={nativeAudio?.playingSegmentId}
+                        localReorderLength={localReorderData?.length || 0}
                         canSplit={canSplit}
                         voiceRecording={voiceRecording}
                         onDeleteText={onDeleteText}
@@ -124,7 +124,7 @@ export default function ReadingViewLayout(vm: any) {
                         onResult={onResult}
                         speakText={speakText}
                         stop={stop}
-                        nativeStop={nativeAudio.stop}
+                        nativeStop={nativeAudio?.stop || (() => undefined)}
                         cueForId={cueForId}
                         onToggleSelection={toggleSelection}
                         onTokenClick={handleTokenClick}
@@ -156,7 +156,7 @@ export default function ReadingViewLayout(vm: any) {
                 showExportModal={showExportModal}
                 setShowExportModal={setShowExportModal}
                 handleExport={handleExport}
-                selectedCount={selectedIds.size}
+                selectedCount={selectedIds?.size || 0}
                 editModal={editModal}
                 setEditModal={setEditModal}
                 handleSaveEdit={handleSaveEdit}
@@ -167,10 +167,10 @@ export default function ReadingViewLayout(vm: any) {
                 setShowNativeAudioModal={setShowNativeAudioModal}
                 showAlignmentModal={showAlignmentModal}
                 alignedLessonId={alignedLessonId}
-                nativeMatch={nativeAudio.match}
+                nativeMatch={nativeAudio?.match}
                 filteredData={filteredData}
                 nativeAudio={nativeAudio}
-                alignmentDuration={lessonAlignment.alignment?.duration}
+                alignmentDuration={lessonAlignment?.alignment?.duration}
                 setShowAlignmentModal={setShowAlignmentModal}
                 pdfContainerRef={pdfContainerRef}
             />

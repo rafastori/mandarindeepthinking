@@ -6,7 +6,7 @@ import ReadingStudyToolbar from './ReadingStudyToolbar';
 import { ReadingChromeProps } from './readingChromeTypes';
 
 const ReadingChrome: React.FC<ReadingChromeProps> = (p) => {
-    const emptyLibrary = p.filteredData.length === 0 && p.activeFolderFilters.length === 0;
+    const emptyLibrary = (p.filteredData?.length || 0) === 0 && (p.activeFolderFilters?.length || 0) === 0;
     if (emptyLibrary) {
         return (
             <div className="flex flex-col items-center justify-center h-[60vh] text-center">

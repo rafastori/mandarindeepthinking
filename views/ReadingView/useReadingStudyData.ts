@@ -17,7 +17,7 @@ export function useReadingStudyData(opts: {
         const map = new Map<string, number>();
         let colorIndex = 0;
         const consider = (rawWord: string) => {
-            const key = rawWord.toLowerCase().trim();
+            const key = (rawWord || '').toLowerCase().trim();
             if (key && !map.has(key)) {
                 map.set(key, colorIndex % HIGHLIGHT_COLORS.length);
                 colorIndex++;
@@ -28,7 +28,8 @@ export function useReadingStudyData(opts: {
             item.keywords?.forEach(k => {
                 if (opts.savedIds.includes(k.id)) consider(k.word);
             });
-            const isWordCard = item.type === 'word' || (item.tokens.length === 1 && opts.savedIds.includes(item.id.toString()));
+            const tokenCount = item.tokens?.length || 0;
+            const isWordCard = item.type === 'word' || (tokenCount === 1 && opts.savedIds.includes(item.id.toString()));
             if (isWordCard) consider(item.chinese);
         }
         return map;
@@ -52,10 +53,10 @@ export function useReadingStudyData(opts: {
         const map = new Map<string, Keyword>();
         opts.data.forEach(item => {
             item.keywords?.forEach(k => {
-                if (opts.savedIds.includes(k.id)) map.set(k.word.toLowerCase().trim(), k);
+                if (opts.savedIds.includes(k.id) && k.word) map.set(k.word.toLowerCase().trim(), k);
             });
-            const isWordCard = item.type === 'word' || (item.tokens.length === 1 && opts.savedIds.includes(item.id.toString()));
-            if (isWordCard) {
+            const isWordCard = item.type === 'word' || ((item.tokens?.length || 0) === 1 && opts.savedIds.includes(item.id.toString()));
+            if (isWordCard && item.chinese) {
                 map.set(item.chinese.toLowerCase().trim(), {
                     id: item.id.toString(),
                     word: item.chinese,
