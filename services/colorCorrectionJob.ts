@@ -1,6 +1,6 @@
-import { correctColorHighlights, ColorCorrectionInput, ColorCorrectionOutput } from './colorCorrectionLLM';
 import { localDB, ColorCorrectionToken } from './localDB';
 import { SupportedLanguage } from '../types';
+import type { ColorCorrectionInput, ColorCorrectionOutput } from './colorCorrectionLLM';
 
 export const COLOR_JOB_EVENT = 'color-correction-job';
 export const COLOR_CORRECTIONS_CHANGE_EVENT = 'colorcorrections-change';
@@ -132,6 +132,7 @@ export async function startColorCorrectionJob(
     emitJob();
 
     try {
+        const { correctColorHighlights } = await import('./colorCorrectionLLM');
         const results = await correctColorHighlights(sentences, targetLanguage, {
             onBatch: async (batchResults) => {
                 const patch = outputsToPatch(batchResults);
